@@ -99,24 +99,17 @@ pacs:
 
 pm:
   - text: FICAM PM Guide
-    subfolderitems: 
-      - page: Introduction
-        url: /intro-pm/
-      - page: What is ICAM Program Management
-        url: /ficampm/overview/
-      - page: Program Governance and Leadership
-        url: /ficampm/governance/
-        subsubfolderitems:
-          - page: Program Governance Body
-            url: /ficampm/governance/pgb/
-          - page: Program Management Office
-            url: /ficampm/governance/pmo/
-      - page: Workstreams
-        url: /ficampm/workstreams/
-      - page: Stakeholder Management
-        url: /ficampm/stakeholders/
-      - page: Communications Plan
-        url: /ficampm/comm/
+    href: /intro-pm/
+  - text: What is ICAM Program Management
+    href: /ficampm/overview/
+  - text: Program Governance and Leadership
+    href: /ficampm/governance/
+  - text: Workstreams
+    href: /ficampm/workstreams/
+  - page: Stakeholder Management
+    url: /ficampm/stakeholders/
+  - page: Communications Plan
+    url: /ficampm/comm/
       - page: Performance Management
         url: /ficampm/performance/
       - page: Privacy Considerations
