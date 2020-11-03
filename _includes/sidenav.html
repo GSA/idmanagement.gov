@@ -3,34 +3,31 @@ The sidenav is not loaded by default on the main pages. To include this navigati
 _layouts/page.html layout template, or you can add "sidenav: true" in the front-matter of your pages
 {% endcomment %}
 
+<nav aria-label="Secondary navigation">
+  <ul class="usa-sidenav">
+    {% for link in include.links %}
+      {% assign _href = link.href %}
+      {% assign _current = false %}
+      {% if link.href == page.url or link.href == page.permalink %}
+        {% assign _current = true %}
+      {% endif %}
+    <li class="usa-sidenav__item">
+      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | relative_url }}{% endif %}"
+         {% if _current %} class="usa-current" {% endif %}
+         {% if link.class %}class="{{ link.class }}" {% endif %} >
+         {{ link.text }}
+      </a>
+      {% if _current and page.subnav %}
+      <ul class="usa-sidenav__sublist">
+        {% include subnav.html links=page.subnav %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
 <!--
-<aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4">
-  <nav>
-    {% if site.data.navigation.[page.subnav] %}
-      {% for item in site.data.navigation.[page.subnav] %}
-      <h3>{{ item.title }}</h3>
-      {% if item.subfolderitems %}
-        <ul class="usa-sidenav">
-        {% for entry in item.subfolderitems %}
-          <li class="usa-sidenav__item">
-          <a href="{{ entry.url }}">{{ entry.page }}</a>
-            {% if entry.subsubfolderitems %}
-              <ul class="usa-sidenav">
-              {% for subentry in entry.subsubfolderitems %}
-                <li class="usa-sidenav__item">
-                <a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-              {% endfor %}
-              </ul>
-            {% endif %}
-            </li>
-          {% endfor %}
-          </ul>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  </nav>
-</aside>
--->
 <aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4">
   <nav>
     <ul class="usa-sidenav">
@@ -77,3 +74,4 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
     </ul>
   </nav>
 </aside>
+-->
