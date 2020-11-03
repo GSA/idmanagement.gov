@@ -101,7 +101,7 @@ pm:
   - title: FICAM PM Guide
     subfolderitems: 
       - page: Introduction
-        url: /intro_pm/
+        url: /intro-pm/
       - page: What is ICAM Program Management
         url: /overview/
       - page: Program Governance and Leadership
