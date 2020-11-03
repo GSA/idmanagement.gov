@@ -73,7 +73,7 @@ primary_navigation:
   - name: Guides
     children:
       - name: FICAM Program Management
-        url: /ficampm/intro-pm/
+        url: /intro-pm/
       - name: Federal PKI (FPKI)
         url: /intro-fpki/
       - name: Personal Identity Verification (PIV)
