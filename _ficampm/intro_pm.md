@@ -2,7 +2,7 @@
 layout: default
 collection: ficampm
 title: FICAM Program Management Guide Introduction
-permalink: /intro_pm/
+permalink: /intro-pm/
 subnav: pm
 ---
 
