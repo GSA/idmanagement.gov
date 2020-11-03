@@ -106,13 +106,13 @@ pm:
     href: /ficampm/governance/
   - text: Workstreams
     href: /ficampm/workstreams/
-  - page: Stakeholder Management
-    url: /ficampm/stakeholders/
-  - page: Communications Plan
-    url: /ficampm/comm/
-      - page: Performance Management
-        url: /ficampm/performance/
-      - page: Privacy Considerations
-        url: /ficampm/privacy/
-      - page: Examples and Guideance
-        url: /ficampm/examples/
+  - text: Stakeholder Management
+    href: /ficampm/stakeholders/
+  - text: Communications Plan
+    href: /ficampm/comm/
+  - text: Performance Management
+    href: /ficampm/performance/
+  - text: Privacy Considerations
+    href: /ficampm/privacy/
+  - text: Examples and Guideance
+    href: /ficampm/examples/
