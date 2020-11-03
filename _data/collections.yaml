@@ -8,16 +8,16 @@
 
 - name: Federal PKI Guide
   url: https://idmanagement.gov/fpki
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
+  description: The Federal Public Key Infrastructure Guides are inteneded to help you understand and use the Federal PKI.
 
 - name: FICAM Program Management Guide
   url: https://idmanagement.gov/ficampm
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
+  description: The FICAM Program Management Guide explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program as outlined in the FICAM Architecture Guide.
 
 - name: Physical Access Control Systems Guide
   url: https://idmanagement.gov/pacs
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
+  description: The Physical Access Control System (PACS) Guide will help you understand concepts related to Federal Identity, Credential, and Access Management-compliant PACSs.
   
 - name: Personal Identity Verification Guide
   url: https://idmanagement.gov/piv
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus. 
+  description: The Personal Identity Verification (PIV) Guides are intended to help you implement common PIV configurations at your Agency. 
