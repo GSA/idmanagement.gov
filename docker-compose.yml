@@ -1,0 +1,15 @@
+version: '3'
+services:
+  node:
+    image: node:12
+    working_dir: /app
+    volumes:
+      - .:/app:delegated
+  ruby:
+    build: .
+    working_dir: /app
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app:delegated
+    command: bundle exec jekyll serve --host 0.0.0.0
