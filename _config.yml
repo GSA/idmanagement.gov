@@ -89,9 +89,11 @@ primary_navigation:
 
 secondary_navigation:
   - name: Contact Us
-    url: "#main-content"
+    url: /contact/
   - name: About Us
-    url: "#main-content"
+    url: /about/
+  - name: Contribute
+    url: /contribute/
 
 # Search.gov configuration
 #
@@ -118,6 +120,9 @@ searchgov:
 ##########################################################################################
 
 collections:
+  ficampm:
+    output: true
+    permalink: /ficampm/:path/
   pages:
     output: true
     permalink: /:path/
