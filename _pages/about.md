@@ -1,6 +1,6 @@
 ---
 title: Contact Us
-layout: page
+layout: wide
 sidenav: false
 ---
 
