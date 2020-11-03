@@ -23,14 +23,6 @@
               {% endif %}
             {% endfor %}
         {% endif %}
- 
-	   {% for notification in site.data.notifications reversed %}
-		{% if forloop.index == 1 %}
-		    <a href="{{site.baseurl}}/notifications/#notifications" class="btn btn-primary">Latest System Notification: {{ notification.notice_date }}</a>
-                   {% break %}
-		{% endif %}
-	   {% endfor %}
     </ul>
   </nav>
-  <a href="{{site.repo_url}}/issues" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit Issues Here</a>
 </aside>
