@@ -103,23 +103,23 @@ pm:
       - page: Introduction
         url: /intro-pm/
       - page: What is ICAM Program Management
-        url: /overview/
+        url: /ficampm/overview/
       - page: Program Governance and Leadership
-        url: /governance/
+        url: /ficampm/governance/
         subsubfolderitems:
           - page: Program Governance Body
-            url: /governance/pgb/
+            url: /ficampm/governance/pgb/
           - page: Program Management Office
-            url: /governance/pmo/
+            url: /ficampm/governance/pmo/
       - page: Workstreams
-        url: /workstreams/
+        url: /ficampm/workstreams/
       - page: Stakeholder Management
-        url: /stakeholders/
+        url: /ficampm/stakeholders/
       - page: Communications Plan
-        url: /comm/
+        url: /ficampm/comm/
       - page: Performance Management
-        url: /performance/
+        url: /ficampm/performance/
       - page: Privacy Considerations
-        url: /privacy/
+        url: /ficampm/privacy/
       - page: Examples and Guideance
-        url: /examples/
+        url: /ficampm/examples/
