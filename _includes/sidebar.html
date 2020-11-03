@@ -1,0 +1,36 @@
+{% assign current = page.url | downcase | remove: '/' %}
+
+<aside class="sidenav" id="menu-content">
+  <nav>
+    <ul class="usa-sidenav">
+        {% if site.data.navigation.[page.subnav] %}
+          {% for item in site.data.navigation.[page.subnav] %}
+            <h3>{{ item.title }}</h3>
+              {% if item.subfolderitems %}
+                <ul>
+                  {% for entry in item.subfolderitems %}
+                      <li><a href="{{ entry.url }}">{{ entry.page }}</a>
+                        {% if entry.subsubfolderitems %}
+                          <ul>
+                          {% for subentry in entry.subsubfolderitems %}
+                              <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                          {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endfor %}
+        {% endif %}
+ 
+	   {% for notification in site.data.notifications reversed %}
+		{% if forloop.index == 1 %}
+		    <a href="{{site.baseurl}}/notifications/#notifications" class="btn btn-primary">Latest System Notification: {{ notification.notice_date }}</a>
+                   {% break %}
+		{% endif %}
+	   {% endfor %}
+    </ul>
+  </nav>
+  <a href="{{site.repo_url}}/issues" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit Issues Here</a>
+</aside>
