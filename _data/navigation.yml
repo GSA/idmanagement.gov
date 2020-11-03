@@ -123,13 +123,3 @@ pm:
         url: /privacy/
       - page: Examples and Guideance
         url: /examples/
-
-contribute:
-  - title: Contribute to the FICAM Guides and Playbooks
-    subfolderitems:
-      - page: Open an Issue
-        url:
-      - page: Add a Page
-        url: 
-      - page: Edit a Page
-        url:
