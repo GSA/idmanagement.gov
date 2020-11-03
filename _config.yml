@@ -86,7 +86,7 @@ primary_navigation:
         url: /ficamarch/services/
       - name: Use Cases
         url: /ficamarch/usecases/
-       - name: Component Examples
+      - name: Component Examples
         url: /ficamarch/component/
       - name: Standards & Policies
         url: /ficamarch/standards/
