@@ -4,7 +4,6 @@ collection: ficampm
 title: FICAM Program Management Guide Introduction
 permalink: /intro-pm/
 subnav: pm
-sidenav: true
 ---
 # FICAM Program Management Guide
 
