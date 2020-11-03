@@ -1,6 +1,10 @@
 ---
-
+title: Website Policy and Procedures
+layout: page
+permalink: /web-policy/
+sidenav: true
 ---
+
 # Website Policies and Procedures
 
 This page explains website policies, procedures, and required links for the IDManagement.gov website.
