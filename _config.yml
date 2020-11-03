@@ -79,29 +79,19 @@ primary_navigation:
   - name: Blog
     url: /blog/
   - name: FICAM Architecture
-    children:
-      - name: Introduction
-        url: /ficamarch/introduction/
-      - name: Goals & Objective
-        url: /ficamarch/services/
-      - name: Use Cases
-        url: /ficamarch/usecases/
-      - name: Component Examples
-        url: /ficamarch/component/
-      - name: Standards & Policies
-        url: /ficamarch/standards/
-  - name: FICAM PM Guide
-    url: /intro-pm/
-  - name: FPKI Guide
-    url: /intro-fpki/
-  - name: PIV Guide
-    url: /intro-fpki/
-  - name: PACS Guide
-    url: /intro-fpki/
-  - name: Playbooks
+    url: /intro-arch/
+  - name: Guides
     children:
       - name: FICAM Program Management
-        url: /playbooks/ficampm/
+        url: /intro-pm/
+      - name: Federal PKI (FPKI)
+        url: /intro-fpki/
+      - name: Personal Identity Verification (PIV)
+        url: /intro-piv/
+      - name: Physical Access Control Systems (PACS)
+        url: /intro-pacs/
+  - name: Playbooks
+    children:
       - name: Digitial Identity Risk Assessment
         url: /playbooks/dira/
       - name: Digital Worker
