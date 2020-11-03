@@ -9,8 +9,8 @@ This template is for a single page that does not have a date associated with it.
 <div id="main-content" class="usa-layout-docs usa-section">
   <div class="grid-container">
     <div class="grid-row grid-gap">
-      {% if page.sidebar == true %}
-      {% include sidenav.html %} 
+      {% if page.sidenav == true %}
+        {% include sidenav.html %} 
       {% endif %}
       <main>
         <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
