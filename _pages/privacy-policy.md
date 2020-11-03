@@ -1,5 +1,8 @@
 ---
-
+title: Privacy Policy
+layout: page
+permalink: /privacy-policy/
+sidenav: true
 ---
 
 ## Privacy Policy
