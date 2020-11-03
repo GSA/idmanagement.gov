@@ -80,19 +80,19 @@ primary_navigation:
     url: /blog/
   - name: FICAM Architecture
     url: /intro-arch/
-    children:
-      - name: Goals & Objectives
-        url: ficam-goals
   - name: FICAM PM Guide
     url: /intro-pm/
+  - name: FPKI Guide
+    url: /intro-fpki/
+  - name: PIV Guide
+    url: /intro-fpki/
+  - name: PACS Guide
+    url: /intro-fpki/
+  - name: Playbooks
     children:
-      - name: Goals & Objectives
-        url: ficam-goals
-  - name: Document submenu
-    children:
-      - name: Navigation link
+      - name: Digitial Identity Risk Assessment
         url: "#main-content"
-      - name: Navigation link
+      - name: Digital Worker
         url: "#main-content"
       - name: Navigation link
         url: "#main-content"
