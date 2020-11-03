@@ -98,7 +98,7 @@ pacs:
       url: /guidepacs/glossary/
 
 pm:
-  - title: FICAM PM Guide
+  - text: FICAM PM Guide
     subfolderitems: 
       - page: Introduction
         url: /intro-pm/
