@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Program Governance and Leadership
 permalink: /governance/
