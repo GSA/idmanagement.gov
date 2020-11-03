@@ -1,9 +1,15 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Examples and Guidance
 permalink: /examples/
 subnav: pm
+
+sidenav:
+  - text: Agency Examples
+    href: '#agency-examples'
+  - text: Authorities to Consider
+    href: '#authorities-to-consider'
 ---
 
 We recommend leveraging existing resources to establish your Identity, Credential, and Access Management (ICAM) program and define roles and responsibilities across the enterprise.
