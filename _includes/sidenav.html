@@ -5,6 +5,33 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
 
 <aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4">
   <nav>
+    {% if site.data.navigation.[page.subnav] %}
+      {% for item in site.data.navigation.[page.subnav] %}
+      <h3>{{ item.title }}</h3>
+      {% if item.subfolderitems %}
+        <ul class="usa-sidenav">
+        {% for entry in item.subfolderitems %}
+          <li class="usa-sidenav__item">
+          <a href="{{ entry.url }}">{{ entry.page }}</a>
+            {% if entry.subsubfolderitems %}
+              <ul class="usa-sidenav">
+              {% for subentry in entry.subsubfolderitems %}
+                <li class="usa-sidenav__item">
+                <a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </nav>
+</aside>
+<!--
+<aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4">
+  <nav>
     <ul class="usa-sidenav">
       <li class="usa-sidenav__item">
         <a href="">Parent link</a>
@@ -48,4 +75,4 @@ _layouts/page.html layout template, or you can add "sidenav: true" in the front-
       </li>
     </ul>
   </nav>
-</aside>
+</aside> -->
