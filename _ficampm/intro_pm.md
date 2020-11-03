@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: FICAM Program Management Guide Introduction
 permalink: /intro-pm/
