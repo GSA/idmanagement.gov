@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 collection: ficampm
 title: Communication Plan
 permalink: /comm/
