@@ -12,7 +12,7 @@ A quick check of some common resources may answer your question more quickly tha
 - Find information for FICAM developers
 - Find information for FICAM program managers
 
-If none of these resources answer your question, or you wish to report an issue with the IDManagement.gov website, please email us at ICAM@gsa.gov. Thank you!
+If none of these resources answer your question, or you wish to report an issue with the IDManagement.gov website, please email ICAM at gsa dot gov. Thank you!
 
 ## Our Email Policy
 We’ll make every effort to respond to your email within two business days (much more quickly if possible). If our response will take longer to prepare, we’ll let you know when you can expect it.
