@@ -3,7 +3,7 @@ layout: page
 collection: ficampm
 title: Communication Plan
 permalink: ficampm/comm/
-subnav: pm
+sidenav: pm
 ---
 
 A communication plan outlines an Identity, Credential, and Access Management (ICAM) program's objectives, goals, themes, and approach. You should create a communication plan early in the life cycle to communicate consistently and effectively with users and stakeholders.

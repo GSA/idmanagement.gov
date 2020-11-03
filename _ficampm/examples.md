@@ -2,10 +2,10 @@
 layout: page
 collection: ficampm
 title: Examples and Guidance
-permalink: /examples/
-subnav: pm
+permalink: ficampm/examples/
+sidenav: pm
 
-sidenav:
+subnav:
   - text: Agency Examples
     href: '#agency-examples'
   - text: Authorities to Consider
