@@ -1,5 +1,7 @@
 ---
-
+title: Contact Us
+layout: page
+sidenav: false
 ---
 
 ## About Us
