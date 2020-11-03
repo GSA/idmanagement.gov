@@ -74,10 +74,12 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: Home
-    url: /
-  - name: Blog
-    url: /blog/
+  - name: Buy
+    url: /buy/
+  - name: Sell
+    url: /sell/  
+  - name: Manage
+    url: /manage/
   - name: FICAM Architecture
     url: /intro-arch/
   - name: Guides
