@@ -1,6 +1,5 @@
 ---
 layout: page
-collections: contribute
 title: Contribute
 permalink: /contribute/
 sidenav: contribute

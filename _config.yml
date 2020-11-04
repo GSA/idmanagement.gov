@@ -33,8 +33,6 @@ primary_navigation:
     url: /buy/
   - name: Sell
     url: /sell/  
-  - name: Manage
-    url: /manage/
   - name: FICAM Architecture
     url: /intro-arch/
   - name: Guides
@@ -49,7 +47,7 @@ primary_navigation:
         url: /intro-pacs/
   - name: Playbooks
     children:
-      - name: Digitial Identity Risk Assessment
+      - name: Digitial Identity Risk Assessment (DIRA)
         url: /playbooks/dira/
       - name: Digital Worker
         url: /playboks/dw/
@@ -90,6 +88,18 @@ collections:
   ficampm:
     output: true
     permalink: /ficampm/:path/
+  arch:
+    output: true
+    permalink: /arch/:path/
+  fpki:
+    output: true
+    permalink: /fpki/:path/
+  pacs:
+    output: true
+    permalink: /pacs/:path/
+  piv:
+    output: true
+    permalink: /piv/:path/
   pages:
     output: true
     permalink: /:path/
