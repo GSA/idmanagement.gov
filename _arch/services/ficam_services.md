@@ -7,7 +7,7 @@ sidenav: arch
 
 subnav:
     - text: Identity Management
-      href: /arch/services/identity/
+      href: arch/services/identity/
     - text: Credential Management
       href: /arch/services/credential/
     - text: Access Management

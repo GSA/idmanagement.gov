@@ -51,6 +51,8 @@ primary_navigation:
         url: /playbooks/dira/
       - name: Digital Worker
         url: /playboks/dw/
+      - name: Enterprise Single Sign-On
+        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
@@ -103,6 +105,9 @@ collections:
   buy:
     output: true
     permalink: /buy/:path/
+  playbook:
+    output: true
+    permalink: /playbook/:path/
   pages:
     output: true
     permalink: /:path/

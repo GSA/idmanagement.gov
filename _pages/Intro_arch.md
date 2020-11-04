@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: arch
-title: FICAM Architecture Introduction
+title: Introduction
 permalink: /intro-arch/
 sidenav: arch
 ---

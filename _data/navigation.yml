@@ -1,6 +1,6 @@
 arch:
   - text: FICAM Architecture Introduction
-    href: /intro_arch/
+    href: /intro-arch/
   - text: Goals & Objectives
     href: /arch/goals/
   - text: Services Framework
