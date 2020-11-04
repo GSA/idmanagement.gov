@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Federal Public Key Infrastructure Guide Introduction
-permalink: /intro_fpki/
+permalink: /intro-fpki/
 sidenav: fpki
 ---
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
