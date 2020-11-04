@@ -2,8 +2,12 @@
 layout: page
 collection: ficampm
 title: Privacy Considerations
-permalink: /privacy/
+permalink: ficampm/privacy/
 sidenav: pm
+
+subnav:
+    - text: Apply Fair Information Practice Principles
+      href: '#apply-fair-information-practice-principles'
 ---
 
 All federal agencies and programs that collect, retain, or use personally identifiable information (PII) are required to complete and maintain program documents to support these activities.
