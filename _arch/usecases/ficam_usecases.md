@@ -7,7 +7,7 @@ sidenav: arch
 
 subnav:
     - text: 1. Create and Maintain an Identity
-      href: /arch/usecases/createidentity/
+      href: /createidentity/
     - text: 2. Proof an Identity
       href: /arch/usecases/proofidentity/
     - text: 3. Manage the Entitlements Lifecycle
