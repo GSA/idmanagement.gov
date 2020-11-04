@@ -1,9 +1,17 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Workstreams
-permalink: /workstreams/
-subnav: pm
+permalink: ficampm/workstreams/
+sidenav: pm
+
+subnav:
+    - text: Administrative Workstreams
+      href: '#administrative-workstreams'
+    - text: Project Workstreams
+      href: '#agency-workstreams'
+    - text: Agency Example
+      href: '#agency-example'
 ---
 
 In the context of this playbook, workstreams are the focus areas or projects within an Identity, Credential, and Access Management (ICAM) framework.

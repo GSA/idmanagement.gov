@@ -1,9 +1,15 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Stakeholder Management
-permalink: /stakeholders/
-subnav: pm
+permalink: ficampm/stakeholders/
+sidenav: pm
+
+subnav:
+    - text: Identify Stakeholders
+      href: '#identify-stakeholders'
+    - text: Manage Stakeholders
+      href: '#manage-stakeholders'
 ---
 
 A stakeholder is an individual or organization that has an interest in the program, either because the stakeholder is actively involved in the program, or might be affected by the program’s outcome.

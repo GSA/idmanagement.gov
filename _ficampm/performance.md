@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Performance Management
-permalink: /performance/
-subnav: pm
+permalink: ficampm/performance/
+sidenav: pm
 ---
 
 Program leadership and stakeholders need tools to monitor progress, determine program effectiveness, and identify areas of improvement. To accomplish this, you should assign performance measurements to your agency's Identity, Credential, and Access Management (ICAM) program.

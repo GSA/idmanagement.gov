@@ -1,9 +1,23 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Risk Management
-permalink: /risk/
-subnav: pm
+permalink: ficampm/risk/
+sidenav: pm
+
+subnav:
+    - text: Develop a Risk Management Program
+      href: '#develop-a-risk-management-program'
+    - text: Develop a Risk Management Plan
+      href: '#develop-a-risk-management-plan'
+    - text: Develop a Risk Registry
+      href: '#develop-a-risk-registry'
+    - text: Perform a Security and Risk Management Assessment
+      href: '#perform-a-security-and-risk-management-assessment'
+    - text: Apply the Risk Management Framework
+      href: '#apply-the-risk-management-framework'
+    - text: Manage Accountability and Control
+      href: '#manage-accountability-and-control'
 ---
 
 You'll need to actively identify and mitigate threats to program operations, and involve the entire program management team in this process. Follow the recommendations below to learn how to develop an Identity, Credential, and Access Management (ICAM) risk management program.

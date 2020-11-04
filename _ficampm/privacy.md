@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 collection: ficampm
 title: Privacy Considerations
 permalink: /privacy/
-subnav: pm
+sidenav: pm
 ---
 
 All federal agencies and programs that collect, retain, or use personally identifiable information (PII) are required to complete and maintain program documents to support these activities.
