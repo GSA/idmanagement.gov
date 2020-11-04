@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 layout: page
-sidenav: false
+sidenav: true
 ---
 
 ## Have a Question or Comment?

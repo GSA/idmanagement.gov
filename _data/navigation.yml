@@ -1,101 +1,72 @@
 arch:
-  - title: FICAM Architecture
-    subfolderitems:
-      - page: Introduction
-        url: /intro_arch/
-      - page: Goals & Objectives
-        url: /arch/goals/
-      - page: Services Framework
-        url: /arch/services/
-        subsubfolderitems:
-          - page: Identity Management
-            url: /arch/services/identity/
-          - page: Credential Management
-            url: /arch/services/credential/
-          - page: Access Management
-            url: /arch/services/access/
-          - page: Federation
-            url: /arch/services/federation/
-          - page: Governance
-            url: /arch/services/governance/
-      - page: Use Cases
-        url: /arch/usecases/
-      - page: Component Examples
-        url: /arch/components/
-      - page: Standards & Policies
-        url: /arch/standards/
+  - text: FICAM Architecture
+    href: /intro_arch/
+  - text: Goals & Objectives
+    href: /arch/goals/
+  - text: Services Framework
+    href: /arch/services/
+  - text: Use Cases
+    href: /arch/usecases/
+  - text: Component Examples
+    href: /arch/components/
+  - text: Standards & Policies
+    href: /arch/standards/
 
 piv:
-  - title: PIV Guide
-    subfolderitems:
-      - page: Introduction
-        url: /intro_piv/
-      - page: Basics of a PIV
-        url: /guidepiv/basics/
-      - page: Getting Started
-        url: /guidepiv/gettingstarted/
-      - page: Details of a PIV
-        url: /guidepiv/details/
-      - page: Identifiers in a PIV
-        url: /guidepiv/identifiers/
-      - page: Certificate Trust
-        url: /guidepiv/certrust/
-      - page: Network Authentication
-        url: /guidepiv/netauth/
-      - page: Engineering Guides
-        url: /guidepiv/engineeringguides/
-      - page: User Guides
-        url: /guidepiv/userguides/
+  - text: PIV Guide
+    href: /intro_piv/
+  - text: Basics of a PIV
+    href: /piv/basics/
+  - text: Getting Started
+    href: /piv/gettingstarted/
+  - text: Details of a PIV
+    href: /piv/details/
+  - text: Identifiers in a PIV
+    href: /piv/identifiers/
+  - text: Certificate Trust
+    href: /piv/certrust/
+  - text: Network Authentication
+    href: /piv/netauth/
+  - text: Engineering Guides
+    href: /piv/engineeringguides/
+  - text: User Guides
+    href: /piv/userguides/
 
 fpki:
-  - title: FPKI Guide
-    subfolderitems:
-    - page: Introduction
-      url: /intro_fpki/
-    - page: Certification Authorities
-      url: /guidefpki/ca/
-    - page: Certificates and CRLs
-      url: /guidefpki/certsandcrls/
-      subsubfolderitems:
-        - page: PIV CAs and Agencies
-          url: /guidefpki/certsandcrls/pivcas/
-    - page: Trust Stores
-      url: /guidefpki/truststores/
-    - page: Useful Tools
-      url: /guidefpki/tools/
-      subsubfolderitems:
-        - page: Federal PKI Graph
-          url: /guidefpki/tools/fpkigraph/
-        - page: Federal PKI Activity Report
-          url: /guidefpki/tools/fpkiar/
-        - page: CITE Participation Guide
-          url: /guidefpki/tools/cite/
-    - page: Announcements
-      url: /guidefpki/announcements/
-    - page: System Notifications
-      url: /guidefpki/notifications/
+  - text: FPKI Guide
+    href: /intro_fpki/
+  - text: Certification Authorities
+    href: /fpki/ca/
+  - text: Certificates and CRLs
+    href: /fpki/certsandcrls/
+  - text: Trust Stores
+    href: /fpki/truststores/
+  - text: Useful Tools
+    href: /fpki/tools/
+  - text: Announcements
+    href: /fpki/announcements/
+  - text: System Notifications
+    href: /fpki/notifications/
 
 pacs:
-  - title: PACS Guide
-    subfolderitems:
-    - page: Introduction
-      url: /intro_pacs/
-    - page: What is a Physical Access Control System?
-      url: /guidepacs/what-is-pacs/
-    - page: Physical Access Control System Deployment Models
-      url: /guidepacs/pacs/
-    - page: Aligning Facility Security Level and Authentication
-      url: /guidepacs/alignfslandauth/
-    - page: Procurements
-      url: /guidepacs/procure/
-    - page: Training
-      url: /guidepacs/train/
-    - page: Lessons Learned
-      url: /guidepacs/lessonslearned/
-    - page: Standards, Policies, and Guidance
-      url: /guidepacs/standards/
-    - page: Glossary
-      url: /guidepacs/glossary/
+  - text: PACS Guide
+    href: /intro_pacs/
+  - text: What is a Physical Access Control System?
+    href: /pacs/what-is-pacs/
+  - text: Physical Access Control System Deployment Models
+    href: /pacs/pacs/
+  - text: Aligning Facility Security Level and Authentication
+    href: /pacs/alignfslandauth/
+  - text: Procurements
+    href: /pacs/procure/
+  - text: Training
+    href: /pacs/train/
+  - text: Lessons Learned
+    href: /pacs/lessonslearned/
+  - text: Standards, Policies, and Guidance
+    href: /pacs/standards/
+  - text: Glossary
+    href: /pacs/glossary/
 
 pm:
   - text: FICAM PM Guide

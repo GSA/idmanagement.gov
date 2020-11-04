@@ -1,9 +1,21 @@
 ---
-layout: default
+layout: page
 collections: contribute
 title: Contribute
 permalink: /contribute/
-subnav: contribute
+sidenav: contribute
+
+subnav:
+	- text: Introduction
+	  href: '#introduction'
+	- text: Open an Issue
+	  href: '#open-an-issue'
+	- text: Add a Page
+	  href: '#add-a-page'
+	- text: Submit a Page
+	  href: '#submit-a-page'
+	- text: Edit a Page
+	  href: '#edit-a-page'
 ---
 # Introduction
 
