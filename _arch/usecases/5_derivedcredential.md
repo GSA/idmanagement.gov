@@ -1,9 +1,27 @@
 ---
-layout: default
+layout: page
 title: 5. Issue a Derived Credential
 collection: arch
 permalink: arch/usecases/derivecredential/
-subnav: arch
+sidenav: arch
+
+subnav:
+    - text: 1. Create and Maintain an Identity
+      href: /arch/usecases/createidentity/
+    - text: 2. Proof an Identity
+      href: /arch/usecases/proofidentity/
+    - text: 3. Manage the Entitlements Lifecycle
+      href: /arch/usecases/manageaccess/
+    - text: 4. Create and Issue a Credential
+      href: /arch/usecases/credential/
+    - text: 5. Issue a Derived Credential
+      href: /arch/usecases/derivecredential/
+    - text: 6. Manage the Credential Lifecycle
+      href: /arch/usecases/managecredential/
+    - text: 7. Grant Access
+      href: /arch/usecases/grantaccess/
+    - text: 8. Accept Federation Assertions
+      href: /arch/usecases/federate/
 ---
 
 ![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service.]({{site.baseurl}}/assets/arch/usecases/Credential-Maintenance.png){:align="right" style="padding-left:15px"}

@@ -7,15 +7,15 @@ sidenav: arch
 
 subnav:
     - text: Identity Management
-      href: ({{site.baseurl}}{{page.url}}identity)
+      href: /arch/services/identity/
     - text: Credential Management
-      href: ({{site.baseurl}}{{page.url}}credential)
+      href: /arch/services/credential/
     - text: Access Management
-      href: ({{site.baseurl}}{{page.url}}access)
+      href: /arch/services/access/
     - text: Federation
-      href: ({{site.baseurl}}{{page.url}}federation)
+      href: /arch/services/federation/
     - text: Governance
-      href: ({{site.baseurl}}{{page.url}}governance)
+      href: /arch/services/governance/
 ---
 
 ![A blue box with the list of Access Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/AccessManagementServices.png){:align="right" style="padding-left:30px"}

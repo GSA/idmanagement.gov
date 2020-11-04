@@ -7,28 +7,20 @@ sidenav: arch
 
 subnav:
     - text: Identity Management
-      href: ({{site.baseurl}}{{page.url}}identity)
+      href: /arch/services/identity/
     - text: Credential Management
-      href: ({{site.baseurl}}{{page.url}}credential)
+      href: /arch/services/credential/
     - text: Access Management
-      href: ({{site.baseurl}}{{page.url}}access)
+      href: /arch/services/access/
     - text: Federation
-      href: ({{site.baseurl}}{{page.url}}federation)
+      href: /arch/services/federation/
     - text: Governance
-      href: ({{site.baseurl}}{{page.url}}governance)
+      href: /arch/services/governance/
 ---
 
 The Services Framework identifies the services that provide functionality within the scope of ICAM. The Services Framework is a tool for you to help translate between business requirements and technical solutions.
 
 The Services Framework is designed for ICAM Program Managers and Information Technology Enterprise Architects.
-
-This page describes the services that support each ICAM practice area and supporting element, with descriptions and simple graphics for you to use:
-
-* [Identity Management]({{site.baseurl}}{{page.url}}identity)
-* [Credential Management]({{site.baseurl}}{{page.url}}credential)
-* [Access Management]({{site.baseurl}}{{page.url}}access)
-* [Federation]({{site.baseurl}}{{page.url}}federation)
-* [Governance]({{site.baseurl}}{{page.url}}governance)
 
 ## FICAM Practice Areas
 

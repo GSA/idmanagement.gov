@@ -79,8 +79,7 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | Exostar | info@exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/)	| Other PKI Credentials |
 | Foundation for Trusted Identity (FTI)	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
 | IdenTrust	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
-| InCommon-Affiliated Universities (hundreds of organizations)	| admin@incommon.
-org	| admin@incommon.org | Non-PKI<br/>InCommon Bronze and Silver |
+| InCommon-Affiliated Universities (hundreds of organizations)	| admin@incommon.org	| admin@incommon.org | Non-PKI<br/>InCommon Bronze and Silver |
 | NextgenID	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
 | Fortior Solutions	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
 | WidePoint	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy@ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
@@ -109,7 +108,7 @@ Services operating within these Trust Frameworks may be used by U.S. Government 
 Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
 
 - Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA (PDF, December 2017)
-- 
+
 Then, fill out the application contained in this document:
 
 - FPKI Bridge Application Process Overview (PDF, May 2017)
