@@ -87,3 +87,9 @@ pm:
     href: /ficampm/privacy/
   - text: Examples and Guideance
     href: /ficampm/examples/
+
+buy:
+  - text: Buy Identity Products and Services
+    href: /buy/
+  - text: Trust Services
+    href: /buy/trust-services/
