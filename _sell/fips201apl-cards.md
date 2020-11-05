@@ -7,9 +7,9 @@ sidenav: sell
 
 subnav:
     - text: Approved PIV Cards
-      url: '#piv-cards-approved'
+      href: '#piv-cards-approved'
     - text: Legacy PIV Cards
-      url: '#piv-cards-legacy'
+      href: '#piv-cards-legacy'
 ---
 
 The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL).
