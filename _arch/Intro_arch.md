@@ -4,6 +4,7 @@ collection: arch
 title: Introduction
 permalink: arch/intro-arch/
 sidenav: arch
+sticky_sidenav: true
 
 subnav:
   - text: What is the FICAM Architecture?
