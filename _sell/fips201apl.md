@@ -7,13 +7,13 @@ sidenav: sell
 
 subnav:
     - text: PIV Cards
-      href: /sell/piv/
+      href: ../piv/
     - text: Card Holders
-      href: /sell/holders/
+      href: ../holders/
     - text: Physical Access Control System (PACS) Components
-      href: /sell/pacs/
+      href: ../pacs/
     - text: Removed Products List
-      href: /sell/rpl/
+      href: ../rpl/
 ---
 
 The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program.

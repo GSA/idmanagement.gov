@@ -5,23 +5,23 @@ collection: arch
 permalink: arch/manageaccess/
 sidenav: arch
 
-ssubnav:
+subnav:
     - text: 1. Create and Maintain an Identity
-      href: arch/createidentity/
+      href: ../createidentity/
     - text: 2. Proof an Identity
-      href: /arch/proofidentity/
+      href: ../proofidentity/
     - text: 3. Manage the Entitlements Lifecycle
-      href: /arch/manageaccess/
+      href: ../manageaccess/
     - text: 4. Create and Issue a Credential
-      href: /arch/credential/
+      href: ../credential/
     - text: 5. Issue a Derived Credential
-      href: /arch/derivecredential/
+      href: ../derivecredential/
     - text: 6. Manage the Credential Lifecycle
-      href: /arch/managecredential/
+      href: ../managecredential/
     - text: 7. Grant Access
-      href: /arch/grantaccess/
+      href: ../grantaccess/
     - text: 8. Accept Federation Assertions
-      href: /arch/federate/
+      href: ../federate/
 ---
 
 ![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Provisioning service. ]({{site.baseurl}}/assets/arch/usecases/Identity-Provisioning.png){:align="right" style="padding-left:15px"}

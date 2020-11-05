@@ -7,13 +7,13 @@ sidenav: sell
 
 subnav:
     - text: PIV Cards
-      href: /sell/piv/
+      href: ../piv/
     - text: Card Holders
-      href: /sell/holders/
+      href: ../holders/
     - text: Physical Access Control System (PACS) Components
-      href: /sell/pacs/
+      href: ../pacs/
     - text: Removed Products List
-      href: /sell/rpl/
+      href: ../rpl/
 ---
 
 <p>The card holders listed below have met the security and functional requirements under GSA’s FIPS 201 Evaluation program and have been approved for use by the Federal government.</p>

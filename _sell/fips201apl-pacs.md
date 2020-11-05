@@ -7,13 +7,13 @@ sidenav: sell
 
 subnav:
     - text: PIV Cards
-      href: /sell/piv/
+      href: ../piv/
     - text: Card Holders
-      href: /sell/holders/
+      href: ../holders/
     - text: Physical Access Control System (PACS) Components
-      href: /sell/pacs/
+      href: ../pacs/
     - text: Removed Products List
-      href: /sell/rpl/
+      href: ../rpl/
 ---
 
 Text

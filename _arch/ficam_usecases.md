@@ -9,19 +9,19 @@ subnav:
     - text: 1. Create and Maintain an Identity
       href: ../createidentity/
     - text: 2. Proof an Identity
-      href: /arch/proofidentity/
+      href: ../proofidentity/
     - text: 3. Manage the Entitlements Lifecycle
-      href: /arch/manageaccess/
+      href: ../manageaccess/
     - text: 4. Create and Issue a Credential
-      href: '/arch/credential/'
+      href: ../credential/
     - text: 5. Issue a Derived Credential
-      href: /arch/derivecredential/
+      href: ../derivecredential/
     - text: 6. Manage the Credential Lifecycle
-      href: /arch/managecredential/
+      href: ../managecredential/
     - text: 7. Grant Access
-      href: /arch/grantaccess/
+      href: ../grantaccess/
     - text: 8. Accept Federation Assertions
-      href: /arch/federate/
+      href: ../federate/
 ---
 
 These use cases are designed for ICAM Enterprise Architects and business owners, and describe some of the most common ICAM business processes.

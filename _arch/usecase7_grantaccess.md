@@ -7,21 +7,21 @@ sidenav: arch
 
 subnav:
     - text: 1. Create and Maintain an Identity
-      href: arch/createidentity/
+      href: ../createidentity/
     - text: 2. Proof an Identity
-      href: /arch/proofidentity/
+      href: ../proofidentity/
     - text: 3. Manage the Entitlements Lifecycle
-      href: /arch/manageaccess/
+      href: ../manageaccess/
     - text: 4. Create and Issue a Credential
-      href: /arch/credential/
+      href: ../credential/
     - text: 5. Issue a Derived Credential
-      href: /arch/derivecredential/
+      href: ../derivecredential/
     - text: 6. Manage the Credential Lifecycle
-      href: /arch/managecredential/
+      href: ../managecredential/
     - text: 7. Grant Access
-      href: /arch/grantaccess/
+      href: ../grantaccess/
     - text: 8. Accept Federation Assertions
-      href: /arch/federate/
+      href: ../federate/
 ---
 
 ![This use case corresponds to the Authentication and Authorization service areas of Access Management.]({{site.baseurl}}/assets/arch/usecases/Access-AuthnAuthz.png){:align="right" style="padding-left:15px"}
