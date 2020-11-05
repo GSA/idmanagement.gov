@@ -1,0 +1,6 @@
+# List of playbooks to include on the Playbooks page in additon to the
+# FICAM-produced playbooks located in the /_playbooks/ folder.
+
+- title: Identity Playbook
+  description: Login.gov's playbook on identity management.
+  url: https://www.login.gov/playbook/
