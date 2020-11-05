@@ -18,20 +18,16 @@ subnav:
 
 The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program.
 
+## Product Categories
+Categories of products that have been testing and approved for use include:
 
-<table class="usa-table--borderless playbooks-table">
-  <thead class="usa-sr-only">
-    <tr>
-      <th id="playbooks-table-heading-title" scope="col">Title</th>
-      <th id="playbooks-table-heading-description" scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign playbooks = site.sell.cardholders| sort: "title" %}
-    {% for holder in cardholders %}
-        <tr class="cardholder-table-row">
-          <td><a href="{{ holder.url | relative_url }}">{{ holder.title }}</a></td>
-        </tr>
-    {% endfor %}
-  </tbody>
-</table>
+- [Cards](/sell/cards/): Smart cards used for physical and/or logical access to federal systems and facilities.
+- [Card Holders](/sell/holders/): Protective casings used to keep PIV cards safe from damage and digital theft.
+- [Physical Access Control System (PACS) Components](/sell/pacs/): Software and hardware products used to restrict physical access to authorized personnel for buildings, property, or rooms.
+
+## Make a Purchase
+Once you’ve identified the product you want, learn [how to purchase it through GSA Schedules](/buy/buy/) or other procurement vehicles.
+
+## Removed Products List
+
+Products and services that have lost their FIPS 201 certification are placed on the [Removed Products List (RPL)](/sell/rpl/). If you’re looking for a specific product on the APL and can’t find it, it may no longer be approved for use. Due to security concerns, products on the RPL are not recommended for government procurement. Products will be removed from the RPL after 3 years.
