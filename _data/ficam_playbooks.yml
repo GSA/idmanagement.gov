@@ -1,0 +1,17 @@
+---
+layout: base
+description: >
+  This layout is used by CTO Guide pages.
+---
+
+<div class="usa-grid">
+
+  <h1>GSA Tech Guides</h1>
+
+  <div class="guide-content">
+    <p class="guide-category"><a href="{{ site.baseurl }}/guides/">All guides</a> &raquo; {{ page.category }} guides</p>
+    <h2>{{ page.title }}</h2>
+    {{ content }}
+  </div>
+
+</div>
