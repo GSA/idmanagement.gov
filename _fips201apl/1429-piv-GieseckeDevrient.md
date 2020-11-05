@@ -1,8 +1,9 @@
 ---
-title: G&D Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5 – 1429
+title: G&D Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
 category: PIV Card
 apl: 1429
 ---
+
 | Product Information | |
 |:------------------- |:--------------|
 | Product Name | Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5 |
