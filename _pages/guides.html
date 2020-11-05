@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Guides
+title: FICAM Guides
 permalink: /guides/
 ---
-
-<h1>FICAM Guides</h1>
 
 <p>A guide includes information on various topics and aimed to assist your agency in operating, maintinaing, and modernizing your identity systems.</p>
 
@@ -18,9 +16,9 @@ permalink: /guides/
   <tbody>
     {% assign guides = site.guides | concat: site.data.guides | sort: "title" %}
     {% for playbook in playbooks %}
-        <tr class="playbooks-table-row">
-          <td><a href="{{ playbook.url | relative_url }}">{{ playbook.title }}</a></td>
-          <td>{{ playbook.description }}</td>
+        <tr class="guides-table-row">
+          <td><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></td>
+          <td>{{ guide.description }}</td>
         </tr>
     {% endfor %}
   </tbody>
