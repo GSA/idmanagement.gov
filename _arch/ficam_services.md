@@ -30,7 +30,7 @@ The Services Framework is designed for ICAM Program Managers and Information Tec
 
 ![Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages.]({{site.baseurl}}/assets/arch/services/ServicesDefinitions.png)
 
-## Identity Management
+# Identity Management
 
 ![A red box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}
 
@@ -56,7 +56,7 @@ An identifier is a unique attribute used to locate an identity in a system:
 - While your agency may issue Personal Identification Verification (PIV) cards to multiple people named John Smith, each has a different PIV card number.
 - While your agency may have more than one employee named Jane Smith, each employee has a unique email address tied only to their identity.
 
-### Identity Management Services
+## Identity Management Services
 
 The Identity Management services in the Federal ICAM architecture include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are sometimes collectively known as Identity Lifecycle Management.
 
@@ -98,7 +98,7 @@ The Identity Management services in the Federal ICAM architecture include Creati
 
 > *Keywords*: Identity Lifecycle Management, Suspension, Archiving, Deletion
 
-## Credential Management
+# Credential Management
 
 ![A green box with the list of Credential Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:align="right" style="padding-left:30px"}
 
@@ -159,7 +159,7 @@ The Credential Management services in the Federal ICAM architecture include Spon
 
 > *Keywords*: Termination
 
-## Access Management
+# Access Management
 
 ![A blue box with the list of Access Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/AccessManagementServices.png){:align="right" style="padding-left:30px"}
 
@@ -171,7 +171,7 @@ Policy administration is a combination of laws, regulations, rules, and agency p
 - “Grant access to any agency employee or contractor with an authenticated PIV card.”
 - “Grant access to anyone who is a federal employee, GS-12 or higher, cleared Top Secret, trained in first aid, and certified as a project manager.”
 
-<p style="font-size: 2rem; font-weight: 700;">Authentication</p>
+## Authentication
  
 Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential.
 
@@ -184,7 +184,7 @@ Authentication is generally a two-step process:
 
 > *Step 2.* Use an authenticator mentioned in Credential Management to validate the credential holder.
 
-### Authorization
+## Authorization
 
 Authorization is how you decide whether you should allow someone to access an agency resource. Access requirements usually dictate whether you’ll allow someone to:
 
@@ -226,7 +226,7 @@ The Access Management services in the Federal ICAM architecture include Policy A
 
 > *Keywords*: Privileged Identity Management, Privileged Account Management, Administration, Superuser
 
-## Federation
+# Federation
 
 ![A gray box with the list of Federation services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/FederationServices.png){:align="right" style="padding-left:30px"}
 
@@ -265,7 +265,7 @@ The Federation services in the Federal ICAM architecture include Policy Alignmen
 
 > *Keywords*: Attribute Definition, ARS
 
-## Governance
+# Governance
 
 ![A navy box with the list of Governance services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/GovernanceServices.png){:align="right" style="padding-left:30px"}
 
@@ -275,9 +275,7 @@ To perform effective governance, agencies must collect data about ICAM functions
 
 If your agency identifies problems during data collection and analysis, you should remediate these issues as quickly as possible. Real-time monitoring and risk mitigation is crucial to ensure employees and contractors have only the appropriate access, following the principle of least privilege.
 
-<br>
-
-<p style="font-size: 3rem; font-weight: 700;">Governance Services</p>
+## Governance Services
 
 The Governance services in the Federal ICAM architecture include Identity Governance, Analytics, and Mitigation.
 

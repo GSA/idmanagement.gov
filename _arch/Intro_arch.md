@@ -29,13 +29,6 @@ The following diagram is a high-level view of the ICAM practice areas and suppor
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
 
-These are the views you’ll find in this playbook:
-- [**Goals and Objectives**](/arch/goals/) - The aims and outcomes of enterprise Federal ICAM.
-- [**Services Framework**](/arch/services/) - Descriptions of the services within each ICAM practice area that support enterprise ICAM.
-- [**Use Cases**](/arch/usecases/) - High-level summaries and examples of the common procedures in ICAM.
-- [**Component Examples**](/arch/components/) - A list of example enterprise ICAM tools, aligned to each ICAM service area. These tools, such as solutions, applications, and software, are representative examples that illustrate ICAM functionality within an agency.
-- [**Standards and Policies**](/arch/standards/) - The federal policies and standards that shape the implementation of enterprise ICAM.
-
 Copy the graphics and text throughout this playbook to use at your agency to drive ICAM awareness, strategy developments, and communications.
 
 ## What is the FICAM Architecture?
