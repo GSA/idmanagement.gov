@@ -2,21 +2,25 @@
 layout: page
 collection: fpki
 title: Federal Public Key Infrastructure Guide Introduction
-permalink: /intro-fpki/
+permalink: fpki/intro-fpki/
 sidenav: fpki
+
+subnav:
+    - text: What is the Federal PKI?
+      href: '#what-is-the-federal-pki'
+    - text: What is an example of an identity certificate?
+      href: '#what-is-an-example-of-an-identity-certificate'
+    - text: Why should agencies use certificates from the Federal PKI?
+      href: '#why-should-agencies-use-certificates-from-the-federal-pki'
+    - text: Why is the Federal PKI important?
+      href: '#why-is-the-federal-pki-important'
+    - text: Where can I find the Policies and Standards?
+      href: '#where-can-i-find-the-policies-and-standards'
 ---
+
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
 
 These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
-
-This page provides introductory information that answers the following questions:
-
-- [What is the Federal PKI?](#what-is-the-federal-pki)
-- [What is an example of an identity certificate?](#what-is-an-example-of-an-identity-certificate)
-- [Why should agencies use certificates from the Federal PKI?](#why-should-agencies-use-certificates-from-the-federal-pki)
-- [Why is the Federal PKI important?](#why-is-the-federal-pki-important)
-- [Where can I find the Policies and Standards?](#where-can-i-find-the-policies-and-standards)
-
 
 ### What is the Federal PKI?
 ![Image of the Federal PKI Certification Authorities]({{site.baseurl}}/assets/guidefpki/intro_Intro-image3.png){:style="width:40%;float:right;"}

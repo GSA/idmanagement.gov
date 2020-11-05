@@ -1,8 +1,12 @@
 ---
+layout: page
 title: CardProtectors Rigid Shielded Holder 
+collection: sell
+permalink: sell/fips201apl/1277/
 category: Card Holder
 apl: 1277
 ---
+
 | Product Information | |
 |:------------------- |:--------------|
 | Product Name | CardProtectors Rigid Shielded Holder |

@@ -2,8 +2,18 @@
 layout: page
 collection: arch
 title: Introduction
-permalink: /intro-arch/
+permalink: arch/intro-arch/
 sidenav: arch
+
+subnav:
+  - text: What is the FICAM Architecture?
+    href: '#what-is-the-ficam-architecture'
+  - text: What is ICAM?
+    href: '#what-is-icam'
+  - text: Who is the FICAM Architecture for?
+    href: '#who-is-the-ficam-architecture-for'
+  - text: FICAM Architecture Background
+    href: '#ficam-architecture-background'
 ---
 
 This playbook describes the **Federal Identity, Credential, and Access Management (FICAM) Architecture**. FICAM is the Federal Government’s implementation of **Identity, Credential, and Access Management (ICAM)**.
@@ -11,10 +21,6 @@ This playbook describes the **Federal Identity, Credential, and Access Managemen
 > **ICAM** enables the **_right individual_** to access the **_right resource_**, at the **_right time_**, for the **_right reason_** in support of **_federal business objectives_**.
 
 This page describes the basics of ICAM, the FICAM Architecture, and how you can use this playbook to facilitate ICAM practices at your agency.
-- [What is the FICAM Architecture?](#what-is-the-ficam-architecture)
-- [What is ICAM?](#what-is-icam)
-- [Who is the FICAM Architecture for?](#who-is-the-ficam-architecture-for)
-- [FICAM Architecture Background](#ficam-architecture-background)
 
 The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
 

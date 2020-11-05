@@ -1,5 +1,8 @@
 ---
+layout: page
 title: PACS Infrastructure for AMAG Symmetry
+collection: sell
+permalink: sell/fips201apl/10047/
 category: PACS Component
 apl: 10047
 audience:

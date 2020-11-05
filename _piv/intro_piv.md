@@ -2,8 +2,20 @@
 layout: page
 title:  Personal Identity Verification Guide Introduction
 collection: piv
-permalink: /intro-piv/
+permalink: piv/intro-piv/
 sidenav: piv
+
+subnav:
+    - text: What is PIV?
+      href: '#what-is-piv'
+    - text: What is in the PIV Guides?
+      href: '#what-is-in-the-piv-guides'
+    - text: Why is PIV usage important?
+      href: '#why-is-piv-usage-important'
+    - text: What systems should use PIV?
+      href: '#what-systems-should-use-piv'
+    - text: Where can I find the Standards?
+      href: '#where-can-i-find-the-standards'
 ---
 
 These **Personal Identity Verification** (PIV) Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repo_url }}) and a _work in progress_ and we [welcome contributions](contribute/) from our colleagues.
@@ -13,12 +25,6 @@ The guides focus on using PIV credentials for _logical access_ such as authentic
 If you cannot find a particular topic, it may still be in development. Review the [Issues]({{ site.repo_url }}/issues) for questions and lessons that are in progress. Create a new [Issue]({{ site.repo_url }}/issues) to ask a question or share information with others.  
 
 Read on to learn more about PIV credentials.
-
-1. [What is PIV?](#what-is-piv)
-1. [What is in the PIV Guides?](#what-is-in-the-piv-guides)
-1. [Why is PIV usage important?](#why-is-piv-usage-important)
-1. [What systems should use PIV?](#what-systems-should-use-piv)
-1. [Where can I find the Standards?](#where-can-i-find-the-standards)
 
 ## What is PIV?
 

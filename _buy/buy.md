@@ -2,7 +2,7 @@
 layout: page
 collection: buy
 title:  Buy Products and Services
-permalink: /buy/
+permalink: buy/buy/
 sidenav: buy
 
 subnav:

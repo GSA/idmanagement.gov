@@ -2,7 +2,7 @@
 layout: page
 title:  Sell FICAM Products and Services
 collection: sell
-permalink: /sell/
+permalink: sell/sell/
 sidenav: sell
 
 subnav:

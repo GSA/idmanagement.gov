@@ -1,7 +1,15 @@
 ---
 layout: page
 title: Digital Worker Playbook
-sidenav: true
+collection: playbooks
+permalink: playbooks/dw/
+sidenav: dw
+
+subnav:
+    - text: Introduction
+      href: '#title'
 ---
 
 Placeholder
+
+# Title

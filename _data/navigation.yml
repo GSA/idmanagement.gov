@@ -90,13 +90,13 @@ pm:
 
 buy:
   - text: Buy Identity Products and Services
-    href: /buy/
+    href: /buy/buy/
   - text: Trust Services
     href: /buy/trust-services/
 
 sell:
   - text: Sell Identity Products and Services
-    href: /sell/
+    href: /sell/sell/
   - text: FIPS 201 Evaluation Program
     href: /sell/fips201ep/
   - text: FIPS 201 Approved Product List
@@ -105,3 +105,15 @@ sell:
 contribue:
   - text: Help us Improve our Content
     href: /contribute/
+
+dira:
+  - text: Digital Identity Risk Assessment (DIRA) Playbook
+    href: /playbooks/dira/
+
+sso:
+  - text: Single Sign On (SSO) Playbook
+    href: /playbooks/sso/
+
+dw:
+  - text: Digital Worker Playbook
+    href: /playbooks/dw/
