@@ -7,9 +7,9 @@ sidenav: arch
 
 subnav:
     - text: 1. Create and Maintain an Identity
-      href: {{ site.baseurl }}/arch/createidentity/
+      href: "{{ site.baseurl }}/arch/createidentity/"
     - text: 2. Proof an Identity
-      href: {{ site.baseurl }}/arch/proofidentity/
+      href: '{{ site.baseurl }}/arch/proofidentity/'
     - text: 3. Manage the Entitlements Lifecycle
       href: {{ site.baseurl }}/arch/manageaccess/
     - text: 4. Create and Issue a Credential
