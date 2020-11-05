@@ -1,8 +1,8 @@
 ---
 layout: page
 title:  Sell FICAM Products and Services
-collection: piv
-permalink: /intro-piv/
+collection: sell
+permalink: /sell/
 sidenav: sell
 
 subnav:
