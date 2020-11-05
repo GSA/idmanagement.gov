@@ -1,7 +1,7 @@
 ---
 layout: page
-collection: arch
 title: Services Framework
+collection: arch
 permalink: arch/services/
 sidenav: arch
 
@@ -9,7 +9,7 @@ subnav:
   - text: Identity Management
     href: ../identity/
   - text: Credential Management
-    href: ../credential/    
+    href: ../credential/
   - text: Access Management
     href: ../access/
   - text: Federation
