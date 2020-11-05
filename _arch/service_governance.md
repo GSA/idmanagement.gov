@@ -2,7 +2,7 @@
 layout: page
 title: Governance
 collection: arch
-permalink: arch/services/governance/
+permalink: arch/governance/
 sidenav: arch
 
 subnav:

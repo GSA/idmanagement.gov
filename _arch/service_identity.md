@@ -2,12 +2,12 @@
 layout: page
 title: Identity Management
 collection: arch
-permalink: arch/services/identity/
+permalink: arch/identity/
 sidenav: arch
 
 subnav:
-    - text: Identity Management
-      href: ../identity/
+    - text: Identity Management Services
+      href: '#identity-management-services'
     - text: Credential Management
       href: ../credential/
     - text: Access Management
