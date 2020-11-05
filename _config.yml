@@ -30,13 +30,15 @@ ga:
 # Site Navigation
 primary_navigation:
   - name: Buy
-    url: /buy/
     children:
+      - name: Buy Overview
+        url: /buy/
       - name: Trust Services
         url: /buy/trust-services/
   - name: Sell
-    url: /sell/
     children:
+      - name: Sell Overview
+        url: /sell/
       - name: FIPS 201 Evaluation Program
         url: /sell/fips201ep/
       - name: FIPS 201 Approved Product List
@@ -44,8 +46,9 @@ primary_navigation:
   - name: FICAM Architecture
     url: /intro-arch/
   - name: Guides
-    url: /guides/
     children:
+      - name: FICAM Guides Overview
+        url: /guides/
       - name: FICAM Program Management
         url: /intro-pm/
       - name: Federal PKI (FPKI)
@@ -55,8 +58,9 @@ primary_navigation:
       - name: Physical Access Control Systems (PACS)
         url: /intro-pacs/
   - name: Playbooks
-    url: /playbooks/
     children:
+      - name: Playbooks Overview
+        url: /playbooks/
       - name: Digitial Identity Risk Assessment (DIRA)
         url: /playbooks/dira/
       - name: Digital Worker
@@ -115,9 +119,14 @@ collections:
   buy:
     output: true
     permalink: /buy/:path/
-  playbook:
+  playbooks:
     output: true
-    permalink: /playbook/:path/
+    permalink: /playbooks/:path/
+  sell:
+    output: true
+    permalink: /sell/:path/
+  guides:
+    output: true
   pages:
     output: true
     permalink: /:path/
