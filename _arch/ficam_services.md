@@ -6,16 +6,16 @@ permalink: arch/services/
 sidenav: arch
 
 subnav:
-    - text: Identity Management
-      href: ../identity/
-    - text: Credential Management
-      href: ../credential/
-    - text: Access Management
-      href: ../access/
-    - text: Federation
-      href: ../federation/
-    - text: Governance
-      href: ../governance/
+  - text: Identity Management
+    href: ../identity/
+  - text: Credential Management
+    href: ../credential/    
+  - text: Access Management
+    href: ../access/
+  - text: Federation
+    href: ../federation/
+  - text: Governance
+    href: ../governance/
 ---
 
 The Services Framework identifies the services that provide functionality within the scope of ICAM. The Services Framework is a tool for you to help translate between business requirements and technical solutions.

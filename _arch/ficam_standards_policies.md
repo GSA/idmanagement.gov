@@ -6,14 +6,14 @@ permalink: arch/standards/
 sidenav: arch
 
 subnav:
-    - text: Laws
-      href: '#laws'
-    - text: Policies
-      href: '#policies'
-    - text: Standards
-      href: '#standards'
-    - text: Additional Resources
-      href: '#additional-resources'
+  - text: Laws
+    href: '#laws'
+  - text: Policies
+    href: '#policies'
+  - text: Standards
+    href: '#standards'
+  - text: Additional Resources
+    href: '#additional-resources'
 ---
 
 Review the federal policies and standards that impact and shape the implementations of ICAM programs and systems.

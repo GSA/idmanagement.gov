@@ -6,16 +6,16 @@ permalink: arch/credential/
 sidenav: arch
 
 subnav:
-    - text: Identity Management
-      href: ../identity/
-    - text: Credential Management
-      href: ../credential/
-    - text: Access Management
-      href: ../access/
-    - text: Federation
-      href: ../federation/
-    - text: Governance
-      href: ../governance/
+  - text: Identity Management
+    href: ../identity/
+  - text: Credential Management
+    href: ../credential/
+  - text: Access Management
+    href: ../access/
+  - text: Federation
+    href: ../federation/
+  - text: Governance
+    href: ../governance/
 ---
 
 ![A green box with the list of Credential Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:align="right" style="padding-left:30px"}
