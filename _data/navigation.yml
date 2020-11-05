@@ -94,6 +94,14 @@ buy:
   - text: Trust Services
     href: /buy/trust-services/
 
+sell:
+  - text: Sell Identity Products and Services
+    href: /sell/
+  - text: FIPS 201 Evaluation Program
+    href: /sell/fips201ep/
+  - text: FIPS 201 Approved Product List
+    href: /sell/fips201apl/
+
 contribue:
   - text: Help us Improve our Content
     href: /contribute/
