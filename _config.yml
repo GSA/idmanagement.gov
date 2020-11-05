@@ -34,17 +34,17 @@ primary_navigation:
   - name: Sell
     url: /sell/  
   - name: FICAM Architecture
-    url: /intro-arch/
+    url: /arch/intro-arch/
   - name: Guides
     children:
       - name: FICAM Program Management
-        url: /intro-pm/
+        url: /ficampm/intro-pm/
       - name: Federal PKI (FPKI)
-        url: /intro-fpki/
+        url: /fpki/intro-fpki/
       - name: Personal Identity Verification (PIV)
-        url: /intro-piv/
+        url: /piv/intro-piv/
       - name: Physical Access Control Systems (PACS)
-        url: /intro-pacs/
+        url: /pacs/intro-pacs/
   - name: Playbooks
     children:
       - name: Digitial Identity Risk Assessment (DIRA)

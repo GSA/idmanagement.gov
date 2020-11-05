@@ -7,11 +7,11 @@ sidenav: arch
 
 subnav:
     - text: Identity Management
-      href: /services/identity/
+      href: /arch/services/identity/
     - text: Credential Management
-      href: /credential/
+      href: /arch/services/credential/
     - text: Access Management
-      href: /services/access/
+      href: /arch/services/access/
     - text: Federation
       href: /arch/services/federation/
     - text: Governance
