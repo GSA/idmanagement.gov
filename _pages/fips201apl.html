@@ -15,9 +15,11 @@ custom_js:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-<p>The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program. Use this page to filter by product category. Products and services that have lost their FIPS 201 certification are placed on the Removed Products List (RPL). If you’re looking for a specific product on the APL and can’t find it, it may no longer be approved for use. Due to security concerns, products on the RPL are not recommended for government procurement. Products will be removed from the RPL after 3 years.</p>
+<p>The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program. 
 
-<p>Once you’ve identified the product you want, learn how to purchase it through GSA Schedules or other procurement vehicles on our <a href="/buy/">Buy Overview Page</a></p>
+Products and services that have lost their FIPS 201 certification are placed on the Removed Products List (RPL). If you’re looking for a specific product on the APL and can’t find it, it may no longer be approved for use. Due to security concerns, products on the RPL are not recommended for government procurement. Products will be removed from the RPL after 3 years.</p>
+
+<p>Once you’ve identified the product you want, learn how to purchase it through GSA Schedules or other procurement vehicles on our <a href="/buy/">Buy Overview </a> page.</p>
 
 <p>We encourage comments via opening an issue at our <a href="https://github.com/GSA/playbooks-wdsv2/issues">GitHub repo</a>.</p>
 
@@ -32,6 +34,8 @@ custom_js:
       </li>
       {% endfor %}
     </ul>
+  </fieldset>
+   <fieldset class="usa-fieldset-inputs fips201apl-filter">
     <legend>PACS Topology</legend>
     <ul class="usa-unstyled-list">
       {% for topology in topologies %}
