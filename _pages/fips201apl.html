@@ -7,9 +7,11 @@ custom_js:
 ---
 
 {% assign categories = "" | split: "" %}
-{% for guide in site.guides %}
-  {% assign categoryName = guide.category | strip %}
+{% for apl in site.fips201apl %}
+  {% assign categoryName = apl.category | strip %}
   {% assign categories = categories | push: categoryName | uniq | sort %}
+  {% assign topologyName = apl.topology | strip %}
+  {% assign topologies = topologies | push: topologyName | uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
@@ -19,14 +21,23 @@ custom_js:
 
 <p>We encourage comments via opening an issue at our <a href="https://github.com/GSA/playbooks-wdsv2/issues">GitHub repo</a>.</p>
 
-<div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs guides-filter">
+<div class="grid-col-3">
+  <fieldset class="usa-fieldset-inputs fips201apl-filter">
     <legend>Categories</legend>
     <ul class="usa-unstyled-list">
       {% for category in categories %}
       <li>
-        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <input class="fips201apl-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
         <label for="category-{{ category | slugify }}">{{ category }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+    <legend>PACS Topology</legend>
+    <ul class="usa-unstyled-list">
+      {% for topology in topologies %}
+      <li>
+        <input class="fips201apl-filter-category" id="topology-{{ topology | slugify }}" type="checkbox" name="topologies" value="{{ toplogy }}" checked>
+        <label for="category-{{ topology | slugify }}">{{ topology }}</label>
       </li>
       {% endfor %}
     </ul>
@@ -37,23 +48,24 @@ custom_js:
   <table class="usa-table-borderless">
     <thead class="usa-sr-only">
       <tr>
-        <th id="guides-table-heading-title" scope="col">Title</th>
-        <th id="guides-table-heading-description" scope="col">Description</th>
+        <th id="fips201apl-table-heading-title" scope="col">Title</th>
+        <th id="fips201apl-table-heading-category" scope="col">Category</th>
+        <th id="fips201apl-table-heading-audience" scope="col">PACS Topology</th>
       </tr>
     </thead>
     <tbody>
       {% for category in categories %}
-        <tr class="guides-table-category-heading" data-category="{{ category }}">
-          <th colspan="2" class="guides-table-heading" id="guides-table-heading-{{ category | slugify }}"><b>{{ category }} Guides</b></th>
+        <tr class="fips201apl-table-category-heading" data-category="{{ category }}">
+          <th colspan="2" class="fips201apl-table-heading" id="fips201apl-table-heading-{{ category | slugify }}"><b>{{ category }} Guides</b></th>
         </tr>
-        {% for guide in site.guides %}
-          {% if guide.category == category %}
-            <tr class="guides-table-row" data-category="{{ guide.category }}">
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-title"><a href="{{ guide.url | prepend: site.baseurl }}">{{ guide.title }}</a></td>
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-description">{{ guide.description }}</td>
+        {% for apl in site.fips201apl %}
+          {% if apl.category == category %}
+            <tr class="fips201apl-table-row" data-category="{{ apl.category }}">
+              <td headers="fips201apl-table-heading-{{ category | slugify }} fips201apl-table-heading-title"><a href="{{ apl.url | prepend: site.baseurl }}">{{ apl.title }}</a></td>
+              <td headers="fips201apl-table-heading-{{ category | slugify }} fips201apl-table-heading-category">{{ apl.category }}</td>
             </tr>
           {% endif %}
-        {% endfor %} <!--guide-->
+        {% endfor %} <!--fips201apl-->
       {% endfor %}<!--category-->
     </tbody>
   </table>
