@@ -6,10 +6,10 @@ permalink: /sell/
 sidenav: sell
 
 subnav:
-  - name: Product Approval Process
-    url: '#product-approval-process'
-  - name: Consulting Services
-    url: '#consulting-services'
+  - text: Product Approval Process
+    href: '#product-approval-process'
+  - text: Consulting Services
+    href: '#consulting-services'
 ---
 
 If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the federal government, learn how to get your product or service tested and approved.
