@@ -105,14 +105,14 @@ policy:
     href: /contact/
   - text: About Us
     href: /about/
+  - text: Help Us Improve Our Content
+    href: /contribute/
   - text: Privacy Policy
     href: /privacy-policy/
   - text: Website Policy and Procedures
     href: /website-policy/
   - text: Public Domain License
     href: /license/
-  - text: Help Us Improve Our Content
-    href: /contribute/
 
 dira:
   - text: Digital Identity Risk Assessment (DIRA) Playbook
