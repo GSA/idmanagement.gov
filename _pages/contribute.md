@@ -2,7 +2,7 @@
 title: Contribute
 layout: page
 permalink: /contribute/
-sidenav: contribute
+sidenav: policy
 
 subnav:
   - text: About this Repository
