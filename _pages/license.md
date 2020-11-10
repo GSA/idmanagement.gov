@@ -2,7 +2,8 @@
 layout: page
 title: License
 permalink: /license/
-sticky_nav: true
+sidenav: license
+sticky_sidenav: true
 
 subnav:
     - text: CC0 1.0 Universal Summary
