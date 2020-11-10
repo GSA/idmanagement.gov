@@ -88,11 +88,13 @@ pm:
   - text: Examples and Guideance
     href: /ficampm/examples/
 
-buyandsell:
+buy:
   - text: Buy Identity Products and Services
     href: /buy/buy/
   - text: Trust Services
     href: /buy/trust-services/
+    
+sell:
   - text: Sell Identity Products and Services
     href: /sell/sell/
   - text: FIPS 201 Evaluation Program
