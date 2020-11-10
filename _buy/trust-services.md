@@ -3,7 +3,7 @@ layout: page
 collection: buy
 title:  Trust Services
 permalink: buy/trust-services/
-sidenav: buyandsell
+sidenav: buy
 
 subnav:
   - text: Overview
