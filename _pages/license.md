@@ -2,7 +2,7 @@
 layout: page
 title: License
 permalink: /license/
-sidenav: license
+sidenav: policy
 sticky_sidenav: true
 
 subnav:
