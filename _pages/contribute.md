@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Contribute
+layout: page
 permalink: /contribute/
 sidenav: contribute
 

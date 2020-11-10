@@ -1,7 +1,7 @@
 ---
 title: Website Policy and Procedures
 layout: page
-permalink: /web-policy/
+permalink: /website-policy/
 sidenav: true
 ---
 
