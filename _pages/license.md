@@ -1,6 +1,6 @@
 ---
 layout: page
-title: License
+title: Public Domain License
 permalink: /license/
 sidenav: policy
 sticky_sidenav: true
