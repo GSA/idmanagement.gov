@@ -101,6 +101,10 @@ buyandsell:
     href: /sell/fips201apl/
     
 policy:
+  - text: Contact Us
+    href: /contact/
+  - text: About Us
+    href: /about/
   - text: Privacy Policy
     href: /privacy-policy/
   - text: Website Policy and Procedures
