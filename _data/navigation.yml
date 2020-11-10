@@ -88,22 +88,26 @@ pm:
   - text: Examples and Guideance
     href: /ficampm/examples/
 
-buy:
+buyandsell:
   - text: Buy Identity Products and Services
     href: /buy/buy/
   - text: Trust Services
     href: /buy/trust-services/
-
-sell:
   - text: Sell Identity Products and Services
     href: /sell/sell/
   - text: FIPS 201 Evaluation Program
     href: /sell/fips201ep/
   - text: FIPS 201 Approved Product List
     href: /sell/fips201apl/
-
-contribue:
-  - text: Help us Improve our Content
+    
+policy:
+  - text: Privacy Policy
+    href: /privacy-policy/
+  - text: Website Policy and Procedures
+    href: /website-policy/
+  - text: Public Domain License
+    href: /license/
+  - text: How to Improve our Content
     href: /contribute/
 
 dira:
