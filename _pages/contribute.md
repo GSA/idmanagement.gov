@@ -1,5 +1,5 @@
 ---
-title: Contribute
+title: Help Us Improve Our Content
 layout: page
 permalink: /contribute/
 sidenav: policy
