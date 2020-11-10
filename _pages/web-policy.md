@@ -2,7 +2,7 @@
 title: Website Policy and Procedures
 layout: page
 permalink: /website-policy/
-sidenav: true
+sidenav: policy
 ---
 
 # Website Policies and Procedures
