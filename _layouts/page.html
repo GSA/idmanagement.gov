@@ -13,11 +13,11 @@ This template is for a single page that does not have a date associated with it.
         {% if sidenav %}
           {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
             {% include sidenav.html links=sidenav %}
-            <div class="usa-layout-docs__sidenav" desktop:grid-col-3>
+            <!-- <div class="usa-layout-docs__sidenav" desktop:grid-col-3> -->
               {% if page.sticky_sidenav == true %} 
                 usa-sticky-sidenav
               {% endif %}
-            </div>
+            <!-- </div> -->
         {% endif %}
       <main class="usa-layout-docs usa-layout-docs__main usa-prose{% if sidenav %} desktop:grid-col-9{% endif %}" id="main-content">
         {% if page.title %}
