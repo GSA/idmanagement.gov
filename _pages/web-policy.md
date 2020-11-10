@@ -5,8 +5,6 @@ permalink: /website-policy/
 sidenav: policy
 ---
 
-# Website Policies and Procedures
-
 This page explains website policies, procedures, and required links for the IDManagement.gov website.
 
 ## Accessibility Policy
