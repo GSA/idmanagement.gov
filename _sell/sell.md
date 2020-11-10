@@ -3,7 +3,7 @@ layout: page
 title:  Sell FICAM Products and Services
 collection: sell
 permalink: sell/sell/
-sidenav: sell
+sidenav: buyandsell
 
 subnav:
   - text: Product Approval Process
