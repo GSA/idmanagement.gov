@@ -3,7 +3,7 @@ layout: page
 collection: buy
 title:  Buy Products and Services
 permalink: buy/buy/
-sidenav: buyandsell
+sidenav: buy
 
 subnav:
   - text: Products
