@@ -22,7 +22,7 @@ This page is for agencies to view the current service providers that have an ide
 
 The services provided rely upon a level of trust to be established with the U.S. Government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI) or Trust Framework Services (TFS) initiatives.
 
-If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [FPKI Graph]({{ site.baseurl }}/fpki/tools/fpkigraph)
+If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies](../../fpki/crls/pivcas/) or the [FPKI Graph](../../fpki/tools/fpkigraph/).
 
 ## Overview
 
@@ -50,7 +50,7 @@ A subset of the Federal PKI SSPs also issue and manage:
 
 - Government enterprise device certificates
 
-Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/).
+Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 | Organization | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|  
@@ -69,20 +69,20 @@ For each, we identify whether the services include:
 - Person identity using PKI for business-to-government digital signatures
 - Person identity using non-PKI federation technologies
 
-Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this HTTPS guidance website.
+Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
-| Carillon Information Security	| Marc St-Jacques>br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
-| DigiCert	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund@digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green@digicert.com| Other PKI Credentials |
+| [Carillon Information Security](https://www.carillon.ca/){:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques>br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
+| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund@digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green@digicert.com| Other PKI Credentials |
 | Entrust	| Patrick Garritty<br/>(703) 901-1388	| support@entrustdatacard.com	| PIV-I Credentials<br/>Other PKI Credentials |
-| Exostar | info@exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/)	| Other PKI Credentials |
-| Foundation for Trusted Identity (FTI)	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
-| IdenTrust	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
+| [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info@exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
+| [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
+| [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
 | InCommon-Affiliated Universities (hundreds of organizations)	| admin@incommon.org	| admin@incommon.org | Non-PKI<br/>InCommon Bronze and Silver |
-| NextgenID	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
-| Fortior Solutions	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
-| WidePoint	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy@ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
+| [NextgenID](https://www.nextgenid.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
+| [Fortior Solutions](https://www.fortiorsolutions.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
+| [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy@ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
 
 ## Consumer Identity and Credentials
 
@@ -107,18 +107,18 @@ Services operating within these Trust Frameworks may be used by U.S. Government 
 
 Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
 
-- Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA (PDF, December 2017)
+- [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA (PDF, December 2017)](../../assets/docs/fpkitestguidev1-0.pdf/)
 
 Then, fill out the application contained in this document:
 
-- FPKI Bridge Application Process Overview (PDF, May 2017)
+- [FPKI Bridge Application Process Overview (PDF, May 2017)](../../assets/docs/fpkibridgeappprocessv1-1.pdf/)
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
-| CertiPath | Judith Spencer<br/>(301) 974-4227	| support@certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
+| [CertiPath](https://www.certipath.com/FederatedTrust_TrustCommunity.html){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support@certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
 | InCommon | admin@incommon.org	| admin@incommon.org | Non-PKI | Higher Education |
 | Kantara |	Ruth Puente<br/>ruth@kantarainitiative.org	| Ruth Puente<br/>ruth@kantarainitiative.org | Non-PKI | General |
 | National Identity Exchange Foundation (NIEF) | John Wandelt<br/>john.wandelt@gtri.gatech.edu	| John Wandelt<br/>john.wandelt@gtri.gatech.edu	| Non-PKI | Law Enforcement |
-| SAFE-BioPharma | Kyle Neuman<br/>(301) 943-7583 | support@safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
-| STRAC | Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 |	PKI Bridge | State and Local |
-| TSCP, Inc. | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | PKI Bridge | Aerospace and Defense<br/>International |
+| [SAFE-BioPharma](https://www.safe-biopharma.org/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support@safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
+| [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 |	PKI Bridge | State and Local |
+| [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | PKI Bridge | Aerospace and Defense<br/>International |

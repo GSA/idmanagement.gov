@@ -2,10 +2,18 @@
 title: Privacy Policy
 layout: page
 permalink: /privacy-policy/
-sidenav: true
----
+sidenav: policy
 
-## Privacy Policy
+subnav:
+  - text: Information You Send Us
+    href: '#information-you-send-us'
+  - text: Use of Cookies
+    href: '#use-of-cookies'
+  - text: Site Security
+    href: '#site-security'
+  - text: Other Website Policies
+    href: '#other-website-policies'
+---
 
 Information Collected and Stored Automatically
 This website automatically collects some basic system information to help us measure site performance and visitor volume. We also use this information to help us develop the site, analyze patterns of usage, address problem areas, and make the site more useful for you.

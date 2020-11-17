@@ -1,7 +1,8 @@
 ---
 title: Contact Us
 layout: page
-sidenav: true
+permalink: /contact/
+sidenav: policy
 ---
 
 ## Have a Question or Comment?

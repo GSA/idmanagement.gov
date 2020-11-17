@@ -15,7 +15,7 @@ permalink: /guides/
   </thead>
   <tbody>
     {% assign guides = site.guides | concat: site.data.guides | sort: "title" %}
-    {% for playbook in playbooks %}
+    {% for guide in guides %}
         <tr class="guides-table-row">
           <td><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></td>
           <td>{{ guide.description }}</td>

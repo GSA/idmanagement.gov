@@ -1,16 +1,9 @@
 ---
 layout: page
-title: License
+title: Public Domain License
 permalink: /license/
-sticky_nav: true
-
-subnav:
-    - text: CC0 1.0 Universal Summary
-      href: '#cc0-1.0-universal-summary'
-    - text: No Copyright
-      href: '#no-copyright'
-    - text: Other Information
-      href: '#other-information'
+sidenav: policy
+sticky_sidenav: true
 ---
 
 This project is in the public domain within the United States.
@@ -22,7 +15,7 @@ worldwide through the CC0 1.0 Universal public domain dedication.
 
 This is a human-readable summary of the [Legal Code (read the full text)](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
 
-### No Copyright
+## No Copyright
 
 The person who associated a work with this deed has dedicated the work to
 the public domain by waiving all of his or her rights to the work worldwide
@@ -32,7 +25,7 @@ extent allowed by law.
 You can copy, modify, distribute and perform the work, even for commercial
 purposes, all without asking permission.
 
-### Other Information
+## Other Information
 
 In no way are the patent or trademark rights of any person affected by CC0,
 nor are the rights that other persons may have in the work or in how the

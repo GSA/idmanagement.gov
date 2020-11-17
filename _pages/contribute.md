@@ -1,22 +1,21 @@
 ---
-title: Contribute
+title: Help Us Improve Our Content
 layout: page
 permalink: /contribute/
-sidenav: contribute
+sidenav: policy
 
 subnav:
-	- text: Introduction
-	  href: '#introduction'
-	- text: Open an Issue
-	  href: '#open-an-issue'
-	- text: Add a Page
-	  href: '#add-a-page'
-	- text: Submit a Page
-	  href: '#submit-a-page'
-	- text: Edit a Page
-	  href: '#edit-a-page'
+  - text: About this Repository
+    href: '#about-this-repository'
+  - text: Open an Issue
+    href: '#open-an-issue'
+  - text: Add a Page
+    href: '#add-a-page'
+  - text: Submit a Page
+    href: '#submit-a-page'
+  - text: Edit a Page
+    href: '#edit-a-page'
 ---
-# Introduction
 
 Thank you for contributing to our development of an open and transparent Federal Identity, Credential, and Access Management (FICAM) website
 

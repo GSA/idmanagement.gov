@@ -6,19 +6,16 @@ layout: base
 This template is for a single page that does not have a date associated with it. For example, an about page.
 {% endcomment %}
 
-<div id="main-content" class="usa-layout-docs usa-section">
+<div class="usa-section">
   <div class="grid-container">
-    <div class="grid-row grid-gap">
-      <div class="grid-row grid-gap flex-align-start">
-        {% if sidenav %}
-          {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
-            {% include sidenav.html links=sidenav %}
-            <div class="usa-layout-docs__sidenav" desktop:grid-col-3>
-              {% if page.sticky_sidenav == true %} 
-                usa-sticky-sidenav
-              {% endif %}
-            </div>
-        {% endif %}
+    <div class="grid-row grid-gap flex-align-start">
+      {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+      {% if sidenav %}
+        <div class="usa-layout-docs__sidenav desktop:grid-col-3{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
+          {% include sidenav.html links=sidenav %}
+        </div>
+      {% endif %}
+
       <main class="usa-layout-docs usa-layout-docs__main usa-prose{% if sidenav %} desktop:grid-col-9{% endif %}" id="main-content">
         {% if page.title %}
           <h1>{{ page.title }}</h1>

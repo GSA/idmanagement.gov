@@ -2,10 +2,16 @@
 title: Website Policy and Procedures
 layout: page
 permalink: /website-policy/
-sidenav: true
----
+sidenav: policy
 
-# Website Policies and Procedures
+subnav:
+  - text: Accessibility Policy
+    href: '#accessibility-policy'
+  - text: Linking Policy
+    href: '#linking-policy'
+  - text: Social Media Sites
+    href: '#social-media-sites'
+---
 
 This page explains website policies, procedures, and required links for the IDManagement.gov website.
 

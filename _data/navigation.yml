@@ -93,7 +93,7 @@ buy:
     href: /buy/buy/
   - text: Trust Services
     href: /buy/trust-services/
-
+    
 sell:
   - text: Sell Identity Products and Services
     href: /sell/sell/
@@ -101,10 +101,20 @@ sell:
     href: /sell/fips201ep/
   - text: FIPS 201 Approved Product List
     href: /sell/fips201apl/
-
-contribue:
-  - text: Help us Improve our Content
+    
+policy:
+  - text: Contact Us
+    href: /contact/
+  - text: About Us
+    href: /about/
+  - text: Help Us Improve Our Content
     href: /contribute/
+  - text: Privacy Policy
+    href: /privacy-policy/
+  - text: Website Policy and Procedures
+    href: /website-policy/
+  - text: Public Domain License
+    href: /license/
 
 dira:
   - text: Digital Identity Risk Assessment (DIRA) Playbook
