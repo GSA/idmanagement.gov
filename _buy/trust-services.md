@@ -50,7 +50,7 @@ A subset of the Federal PKI SSPs also issue and manage:
 
 - Government enterprise device certificates
 
-Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/).
+Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 | Organization | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|  
@@ -69,20 +69,20 @@ For each, we identify whether the services include:
 - Person identity using PKI for business-to-government digital signatures
 - Person identity using non-PKI federation technologies
 
-Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this HTTPS guidance website.
+Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
-| Carillon Information Security	| Marc St-Jacques>br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
-| DigiCert	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund@digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green@digicert.com| Other PKI Credentials |
+| Carillon Information Security{:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques>br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
+| DigiCert{:target="_blank"}{:rel="noopener noreferrer"}	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund@digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green@digicert.com| Other PKI Credentials |
 | Entrust	| Patrick Garritty<br/>(703) 901-1388	| support@entrustdatacard.com	| PIV-I Credentials<br/>Other PKI Credentials |
-| Exostar | info@exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/)	| Other PKI Credentials |
-| Foundation for Trusted Identity (FTI)	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
-| IdenTrust	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
+| Exostar{:target="_blank"}{:rel="noopener noreferrer"} | info@exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
+| Foundation for Trusted Identity (FTI){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
+| IdenTrust{:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
 | InCommon-Affiliated Universities (hundreds of organizations)	| admin@incommon.org	| admin@incommon.org | Non-PKI<br/>InCommon Bronze and Silver |
-| NextgenID	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
-| Fortior Solutions	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
-| WidePoint	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy@ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
+| [NextgenID](https://www.nextgenid.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
+| Fortior Solutions{:target="_blank"}{:rel="noopener noreferrer"}	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
+| [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy@ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
 
 ## Consumer Identity and Credentials
 
