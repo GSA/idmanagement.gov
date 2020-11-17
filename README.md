@@ -23,13 +23,13 @@ This content is Vendor neutral. Marketing materials for Commercial Products shou
 Contributors should consider the audience when submitting content. Plain language benefits a broad audience. Review your proposed content for use of acronyms and specialized jargon before submitting.
 
 ## How to Contribute
-For information on how to contribute to the site, visit the Contribute page [here](../contribute.md/).
+For information on how to contribute to the site, visit the Contribute page [here](/_pages/contribute.md/).
 
 Direct changes and line edits to the content may be submitted by clicking 'Edit this page'. You do not need to install any software to submit content. You can use GitHub's in-browser editor to edit files and submit a request for your changes to be merged.
 
 ### Public domain
 
-This project is in the worldwide [public domain](../license.md). 
+This project is in the worldwide [public domain](/_pages/license.md/). 
 
 > This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 >
