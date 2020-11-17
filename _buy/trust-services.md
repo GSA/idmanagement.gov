@@ -107,11 +107,11 @@ Services operating within these Trust Frameworks may be used by U.S. Government 
 
 Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
 
-- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../assets/buy/fpkitestguidev1-0.pdf)(PDF, December 2017).
+- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../assets/buy/fpkitestguidev1-0.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, December 2017).
 
 Then, fill out the application contained in this document:
 
-- Download the [FPKI Bridge Application Process Overview](../../assets/buy/fpkibridgeappprocessv1-1.pdf) (PDF, May 2017).
+- Download the [FPKI Bridge Application Process Overview](../../assets/buy/fpkibridgeappprocessv1-1.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, May 2017).
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
