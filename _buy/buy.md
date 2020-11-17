@@ -24,7 +24,7 @@ The Approved Products List (APL) contains the official list of these tested prod
 
 - Visit the [Approved Products List](../../sell/fips201apl/) page.
 
-Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../contact/) if you’re unsure if a product is fit for government use.
+Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../../contact/) if you’re unsure if a product is fit for government use.
 
 ## Services
 
