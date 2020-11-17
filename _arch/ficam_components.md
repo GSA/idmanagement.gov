@@ -26,7 +26,7 @@ The components are representative examples only. Some solutions chosen by your a
 
 The following figure is an examples for a small selection of components only.  You should modify the graphic and incorporate as-is and target state components for enterprise roadmap planning.
 
-![A diagram that shows example components for each service area, and relationships between practice areas.](/../../_assets/images/arch/ComponentExamples.pngarch/ComponentExamples.png)
+![A diagram that shows example components for each service area, and relationships between practice areas.](/../../assets/arch/ComponentExamples.pngarch/ComponentExamples.png)
 
 ## Authoritative Sources
 An authoritative source is a repository of identity attribute data.  It’s possible to have multiple authoritative sources for attributes.
