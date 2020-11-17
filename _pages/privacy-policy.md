@@ -3,6 +3,16 @@ title: Privacy Policy
 layout: page
 permalink: /privacy-policy/
 sidenav: policy
+
+subnav:
+  - text: Information You Send Us
+    href: '#information-you-send-us'
+  - text: Use of Cookies
+    href: '#use-of-cookies'
+  - text: Site Security
+    href: '#site-security'
+  - text: Other Website Policies
+    href: '#other-website-policies'
 ---
 
 Information Collected and Stored Automatically
