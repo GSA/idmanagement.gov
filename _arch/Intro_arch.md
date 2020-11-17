@@ -67,14 +67,14 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
     <td class="tg-0pky"><span style="font-weight:bold">Credential Management</span> is how an agency issues, manages, and revokes credentials bound to enterprise identities.</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Access.png" alt="Three hexagons with the letters I, C, and A. The A is highlighted in blue, for Access Management." width="125"><br></td>
+    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/Intro_ICAM-Access.png" alt="Three hexagons with the letters I, C, and A. The A is highlighted in blue, for Access Management." width="125"><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Access Management</span> is how an agency authenticates enterprise identities and authorizes appropriate access to protected services.</td>
   </tr>
   <tr>
     <td class="tg-yj5y" colspan="2"><span style="font-weight:bold">ICAM Supporting Elements</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Federation.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for Federation." width="125"><br></td>
+    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/Intro_ICAM-Federation.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for Federation." width="125"><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Federation</span> is the technology, policies, standards, and processes that allow an agency to accept digital identities, attributes, and credentials managed by other agencies.</td>
   </tr>
   <tr>
