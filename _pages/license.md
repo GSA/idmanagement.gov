@@ -4,14 +4,6 @@ title: Public Domain License
 permalink: /license/
 sidenav: policy
 sticky_sidenav: true
-
-subnav:
-    - text: CC0 1.0 Universal Summary
-      href: '#cc0-1.0-universal-summary'
-    - text: No Copyright
-      href: '#no-copyright'
-    - text: Other Information
-      href: '#other-information'
 ---
 
 This project is in the public domain within the United States.
