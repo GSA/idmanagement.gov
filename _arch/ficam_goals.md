@@ -12,7 +12,7 @@ The goals are aspirational statements designed for senior government leaders, ag
 
 The visual includes three goals, each with its own objectives. 
 
-![Three boxes that define the goals and their corresponding objectives.]({{site.baseurl}}/assets/arch/goals_GoalsAndObjectives.png)
+![Three boxes that define the goals and their corresponding objectives.](../../assets/images/arch/goals_GoalsAndObjectives.png)
 
 
 **Goal 1: Modernize security policies and solutions to make risk-based decisions, automate identity and access management processes, and move access protections closer to government data.**
