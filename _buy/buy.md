@@ -22,7 +22,7 @@ The FICAM testing program – also known as the [Federal Information Processing 
 
 The Approved Products List (APL) contains the official list of these tested products.
 
-- Visit the [Approved Products List](../sell/fips201apl/) page.
+- Visit the [Approved Products List](../../sell/fips201apl/) page.
 
 Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us] (../contact/) if you’re unsure if a product is fit for government use.
 
@@ -34,7 +34,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [Federal PKI Shared Service Providers](../trust-services) – Digital certificates for Federal agencies.
+- [Federal PKI Shared Service Providers](../trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
 
 ### Business Identity, Credentials and Authentication
 
