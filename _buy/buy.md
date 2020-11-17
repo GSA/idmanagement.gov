@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: buy
-title:  Buy Products and Services
+title:  Buy Identity Products and Services
 permalink: buy/buy/
 sidenav: buy
 
