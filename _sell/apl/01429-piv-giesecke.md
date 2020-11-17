@@ -1,9 +1,10 @@
 ---
 layout: page
-title: G&D Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
+title: CG&D Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5 
 collection: sell
 permalink: sell/fips201apl/1429/
 category: PIV Card
+status: approved
 apl: 1429
 ---
 
