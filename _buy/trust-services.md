@@ -109,11 +109,11 @@ Each Trust Framework is identified by the category of federation technology and 
 
 - Download the <a href="{{ site.baseurl }}/_assets/docs/fpkitestguidev1-0.pdf">Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA</a> 
 
-[(PDF, December 2017)]({{ site.baseurl }}/assets/docs/fpkitestguidev1-0.pdf).
+[(PDF, December 2017)]({{site.baseurl}}/assets/docs/fpkitestguidev1-0.pdf).
 
 Then, fill out the application contained in this document:
 
-- Download the [FPKI Bridge Application Process Overview]({{ site.baseurl }}/_assets/docs/fpkibridgeappprocessv1-1.pdf) (PDF, May 2017).
+- Download the [FPKI Bridge Application Process Overview]({{site.baseurl}}/_assets/docs/fpkibridgeappprocessv1-1.pdf) (PDF, May 2017).
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
