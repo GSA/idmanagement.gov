@@ -8,7 +8,7 @@
 
 - title: Federal Public Key Infrastructure Guide
   url: /fpki/intro-fpki/
-  description: The Federal Public Key Infrastructure Guides are inteneded to help you understand and use the Federal PKI.
+  description: The Federal Public Key Infrastructure Guide is inteneded to help you understand and use the Federal PKI.
 
 - title: FICAM Program Management Guide
   url: /ficampm/intro-pm/
@@ -20,4 +20,4 @@
   
 - title: Personal Identity Verification Guide
   url: /piv/intro-piv/
-  description: The Personal Identity Verification (PIV) Guides are intended to help you implement common PIV configurations at your Agency. 
+  description: The Personal Identity Verification (PIV) Guide is intended to help you implement common PIV configurations at your Agency. 
