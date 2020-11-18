@@ -63,4 +63,4 @@ Each project workstream is responsible for ICAM processes and systems related to
 
 The following image depicts a series of ICAM administrative workstreams, adapted from the Department of Health and Human Services. 
 
-![ICAM Governance Responsibilities]({{site.baseurl}}/assets/guidepm/workstreams_ICAMGovResponsibilities.png)
+![ICAM Governance Responsibilities](../../assets/ficampm/workstreams_ICAMGovResponsibilities.png)
