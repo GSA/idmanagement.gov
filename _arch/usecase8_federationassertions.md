@@ -36,7 +36,7 @@ Agencies can pass assertions to share attributes about employees and contractors
 
 In this use case, an employee or contractor from Agency A attempts to access a federated service at Agency B. This use case assumes the employee or contractor already has an account or entitlements to access resources at Agency B, or that they will be provisioned.
 
-For more information about granting access to protected resources, see [Grant Access](../7_grantaccess).
+For more information about granting access to protected resources, see [Grant Access](../grantaccess).
 
 ![Icon Key for the diagrams that follow.](../../assets/arch/usecases/8-IconKey.png)
 
