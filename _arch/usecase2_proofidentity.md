@@ -56,11 +56,11 @@ td {
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Collect identity information</strong> <br> <img src="/assets/arch/usecases/2-1.png" width="250" alt="A diagram showing an employee or contractor presenting information or data to an administrator."></td>
+    <td style="width:250px;border:0px;"><strong>1. Collect identity information</strong> <br> <img src="../../assets/arch/usecases/2-1.png" width="250" alt="A diagram showing an employee or contractor presenting information or data to an administrator."></td>
     <td style="border:0px;"><strong>IAL2</strong> <i>(In-person or remote)</i> - The employee or contractor presents identity information, like first name, last name, and address of record.<br><br><strong>IAL3</strong> <i>(In-person or supervised remote)</i> - The employee or contractor presents identity information, like first name, last name, and address of record, and biometric data like fingerprints.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br> <img src="/assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor."></td>
+    <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br> <img src="../../assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor."></td>
     <td style="border:0px;"><strong>IAL2</strong> - The administrator confirms the information provided is valid and current by comparing photo identification to the individual, or confirming contact information, ensuring it matches the provided documentation. <br><br><strong>IAL3</strong> - The administrator verifies all information with the issuing organization. <br> <i>Result:</i> The individual’s identity has been successfully proofed at IAL2, or IAL3.
 </td>
   </tr>
