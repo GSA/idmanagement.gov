@@ -27,7 +27,7 @@ The pages that follow explain how to establish a formal identity management gove
 - [Create a Governance Body](#program-governance-body)
 - [Create a Program Management Office (PMO)](#program-management-office)
 
-You don't have to start from scratch. Instead, model your agency's ICAM governance structure after existing programs. See the [Governance Examples and Guidance](/guidepm/examples/) section for agency steering committee and PMO examples, as well as other authorities to consider.
+You don't have to start from scratch. Instead, model your agency's ICAM governance structure after existing programs. See the [Governance Examples and Guidance](../examples/) section for agency steering committee and PMO examples, as well as other authorities to consider.
 
 {% include alert-info.html heading="Governance Body vs. Program Management Office" content="Governance bodies provide top-down leadership support and guidance across the programs within an agency, while Program Management Offices provide operational support for the day-to-day execution of the tasks within the program." %}
 
@@ -112,4 +112,4 @@ PMOs generally follow standardized project management policies, processes, and m
 
 The figure below represents a sample ICAM PMO structure. An agency should design this structure in a way that fosters communication, coordinates efforts, and aligns appropriately with the agency's overall organizational structure.
 
-![Sample ICAM PMO Structure]({{site.baseurl}}/assets/guidepm/pmo_Sample_ICAM_PMO_Structure.png)
+![Sample ICAM PMO Structure](../../assets/ficampm/pmo_Sample_ICAM_PMO_Structure.png)
