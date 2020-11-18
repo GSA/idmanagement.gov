@@ -1,8 +1,8 @@
 ---
-layout: default
-collection: guidefpki
+layout: page
+collection: fpki
 title: Announcements
-permalink: guidefpki/announcements/
+permalink: fpki/announcements/
 subnav: fpki
 ---
 
