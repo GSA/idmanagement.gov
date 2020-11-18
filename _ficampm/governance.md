@@ -11,7 +11,7 @@ subnav:
   - text: Program Governance Body
     href: '#program-governance-body'
   - text: Program Management Office
-    href: '#program-management-office-(pmo)'
+    href: '#program-management-office'
 ---
 
 In any Identity, Credential, and Access Management (ICAM) program, you'll need someone to develop, manage, and enforce agency-specific policies, processes, and performance measures.
@@ -75,7 +75,7 @@ These groups leverage their experience and business context to provide the gover
 - Impact of decisions on program executors.
 - Improved buy-in across the agency.
 
-## Program Management Office (PMO)
+## Program Management Office
 
 In addition to a program governance body, you can support the execution and operation of projects and workstreams with a Program Management Office (PMO).
 
