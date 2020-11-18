@@ -12,7 +12,7 @@ subnav:
 
 Program leadership and stakeholders need tools to monitor progress, determine program effectiveness, and identify areas of improvement. To accomplish this, you should assign performance measurements to your agency's Identity, Credential, and Access Management (ICAM) program.
 
-[OMB Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"} identifies two key performance measurements that help agencies establish effective ICAM governance:
+[OMB Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"} identifies two key performance measurements that help agencies establish effective ICAM governance:
 
 - Outline enterprise-level performance expectations for cybersecurity and risk management through each user's lifecycle, including changes in the user' s access privileges.
 - Streamline and automate enterprise-level performance reporting, aligned with existing and planned reporting and analytics structures and tools, such as the Continuous Diagnostics and Mitigation (CDM) dashboards and Federal Information Security Management Act (FISMA) reporting.
