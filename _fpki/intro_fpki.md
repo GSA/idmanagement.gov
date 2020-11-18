@@ -20,10 +20,8 @@ subnav:
 
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
 
-These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
-
 ### What is the Federal PKI?
-![Image of the Federal PKI Certification Authorities]({{site.baseurl}}/assets/guidefpki/intro_Intro-image3.png){:style="width:40%;float:right;"}
+![Image of the Federal PKI Certification Authorities](../../assets/fpki/intro_Intro-image3.png){:style="width:40%;float:right;"}
 *High-level Illustration of the Federal PKI Certification Authorities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 The Federal PKI is a network of Certification Authorities (CAs) that issue:
@@ -45,13 +43,13 @@ A PIV certificate is a simple example.  Although there are many types of identit
 * The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certification Authority_. The _Intermediate Certification Authority's certificate_ was issued by another _Certification Authority_.  
 * This process of issuing and signing continues until there is one _Certification Authority_ that is called the _Root Certification Authority_.
 
-![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/guidefpki/intro_pivcertificatechain_small.png){:style="float:center"}
+![Example of an identity certificate with intermediate and root](../../assets/fpki/intro_pivcertificatechain_small.png){:style="float:center"}
 
 The full process of proving identity when issuing certificates, auditing the Certification Authorities, and the cryptographic protections of the digital signatures establish the _basis of Trust_.
 
 For the U.S. Federal Government Executive Branch agencies, there is one Root Certification Authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of Intermediate Certification Authorities and Bridged Certification Authorities.  
 
-*  [A graph of the Federal PKI, including the business communities]({{site.baseurl}}/guidefpki/tools/graph/){:target="_blank"}
+*  [A graph of the Federal PKI, including the business communities](../../fpki/tools/graph/){:target="_blank"}
 
 
 ### Why should agencies use certificates from the Federal PKI?
@@ -63,7 +61,7 @@ All federal agencies should use the Federal PKI for:
 * Signed and encrypted email communications across federal agencies
 
 The Federal PKI provides four core technical capabilities:
-![Illustration of the four core FPKI capabilities]({{site.baseurl}}/assets/guidefpki/intro_fpki-core.png){:style="width:40%;float:right;"}
+![Illustration of the four core FPKI capabilities](../../assets/fpki/intro_fpki-core.png){:style="width:40%;float:right;"}
 *The Four Core Federal PKI Capabilities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 * Trust with federal agencies and industry
