@@ -41,6 +41,8 @@ fpki:
     href: /fpki/certsandcrls/
   - text: Trust Stores
     href: /fpki/truststores/
+  - text: Federal Common Policy CA Update (FY21)
+    href: /fpki/common/
   - text: Useful Tools
     href: /fpki/tools/
   - text: Announcements
