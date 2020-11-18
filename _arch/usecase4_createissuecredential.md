@@ -2,29 +2,11 @@
 layout: page
 title: 4. Create and Issue a Credential
 collection: arch
-permalink: arch/credential/
+permalink: arch/useredential/
 sidenav: arch
-
-subnav:
-    - text: 1. Create and Maintain an Identity
-      href: ../createidentity/
-    - text: 2. Proof an Identity
-      href: ../proofidentity/
-    - text: 3. Manage the Entitlements Lifecycle
-      href: ../manageaccess/
-    - text: 4. Create and Issue a Credential
-      href: ../credential/
-    - text: 5. Issue a Derived Credential
-      href: ../derivecredential/
-    - text: 6. Manage the Credential Lifecycle
-      href: ../managecredential/
-    - text: 7. Grant Access
-      href: ../grantaccess/
-    - text: 8. Accept Federation Assertions
-      href: ../federate/
 ---
 
-![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. ]({{site.baseurl}}/assets/arch/usecases/Credential-Issuance.png){:align="right" style="padding-left:15px"}
+![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. ](../../assets/arch/usecases/Credential-Issuance.png){:align="right" style="padding-left:15px"}
 
 After you identity proof an individual, you’ll issue some proof of that individual’s claimed identity. A credential (like a physical card) is a type of authenticator that serves as a tool for an employee or contractor to gain access to agency services.
 
@@ -36,7 +18,7 @@ In this use case, an administrator needs to issue a credential to an employee or
 
 **Note:** The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an AAL2 credential.
 
-![Icon Key for the diagrams that follow.]({{site.baseurl}}/assets/arch/usecases/4-IconKey.png)
+![Icon Key for the diagrams that follow.](../../assets/arch/usecases/4-IconKey.png)
 
 <style>
 
