@@ -4,27 +4,9 @@ title: 3. Manage the Entitlements Lifecycle
 collection: arch
 permalink: arch/manageaccess/
 sidenav: arch
-
-subnav:
-    - text: 1. Create and Maintain an Identity
-      href: ../createidentity/
-    - text: 2. Proof an Identity
-      href: ../proofidentity/
-    - text: 3. Manage the Entitlements Lifecycle
-      href: ../manageaccess/
-    - text: 4. Create and Issue a Credential
-      href: ../credential/
-    - text: 5. Issue a Derived Credential
-      href: ../derivecredential/
-    - text: 6. Manage the Credential Lifecycle
-      href: ../managecredential/
-    - text: 7. Grant Access
-      href: ../grantaccess/
-    - text: 8. Accept Federation Assertions
-      href: ../federate/
 ---
 
-![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Provisioning service. ]({{site.baseurl}}/assets/arch/usecases/Identity-Provisioning.png){:align="right" style="padding-left:15px"}
+![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Provisioning service. ](/assets/arch/usecases/Identity-Provisioning.png){:align="right" style="padding-left:15px"}
 
 You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.
 
@@ -34,7 +16,7 @@ You can assign access entitlements to individuals, roles, and groups. These enti
 
 In this use case, an administrator needs to assign entitlements to an employee or contractor.
 
-![Icon Key for the diagrams that follow.]({{site.baseurl}}/assets/arch/usecases/3-IconKey.png)
+![Icon Key for the diagrams that follow.](/assets/arch/usecases/3-IconKey.png)
 
 <style>
 
@@ -67,4 +49,4 @@ td {
 
 ## Next Steps
 
-[Create and issue a credential](../credential), and [grant access to agency services](../grantaccess).
+[Create and issue a credential](../usecredential), and [grant access to agency services](../grantaccess).
