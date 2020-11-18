@@ -59,15 +59,15 @@ td {
     <td style="border:0px;">The following steps describe identity maintenance your agency should perform on a regular basis.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>3a. Identify and aggregate identity data</strong> <br> <img src="/assets/arch/usecases/1-3a.png" width="250" alt="A diagram showing the data repository with multiple enterprise identities for one individual, and an arrow indicating the change to a single consolidated enterprise identity."></td>
+    <td style="width:250px;border:0px;"><strong>3a. Identify and aggregate identity data</strong> <br> <img src="../../assets/arch/usecases/1-3a.png" width="250" alt="A diagram showing the data repository with multiple enterprise identities for one individual, and an arrow indicating the change to a single consolidated enterprise identity."></td>
     <td style="border:0px;">Query your data repositories for any existing identities for an individual. Aggregate these attributes as a single enterprise identity for the individual.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br> <img src="/assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source."></td>
+    <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source."></td>
     <td style="border:0px;">If an individual has updated personal information, there are two ways to update the enterprise identity: <ol> <li> The administrator updates the individual’s enterprise identity attributes directly in the authoritative sources.</li> <li>The individual uses an agency application to update their personal information, and the application updates the individual’s enterprise identity attributes in the authoritative sources.</li></ol></td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br> <img src="/assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity."></td>
+    <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity."></td>
     <td style="border:0px;">When you need to delete an enterprise identity, delete the identity attributes in the authoritative source.</td>
   </tr>
 </table>
