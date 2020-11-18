@@ -24,7 +24,7 @@ subnav:
       href: ../federate/
 ---
 
-![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Identity Proofing service. ]({{site.baseurl}}/assets/arch/usecases/Identity-IdentityProofing.png){:align="right" style="padding-left:15px"}
+![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Identity Proofing service. ](../../assets/arch/usecases/Identity-IdentityProofing.png){:align="right" style="padding-left:15px"}
 
 Before you can create a credential and assign it to an individual, that person must provide proof of their claimed identity. Identity proofing is the process by which a federal agency collects and verifies information about a person to establish an enterprise identity.
 
@@ -43,7 +43,7 @@ For more information about identity proofing and IALs, see <a href="https://page
 
 In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.
 
-![Icon Key for the diagrams that follow.]({{site.baseurl}}/assets/arch/usecases/2-IconKey.png)
+![Icon Key for the diagrams that follow.](../../assets/arch/usecases/2-IconKey.png)
 
 <style>
 
@@ -73,4 +73,4 @@ td {
 
 ## Next Steps
 
-[Create and issue a credential](../credential) and [manage access entitlements](../manageaccess).
+[Create and issue a credential](../usecredential) and [manage access entitlements](../manageaccess).
