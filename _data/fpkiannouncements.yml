@@ -2,6 +2,12 @@
 
 - title: TLS Certificate Lifetime Requirement
   pubDate: May 10, 2018
-  href: fpki/announcements/2018tlslifetime/
+  href: /fpki/announcements/2018tlslifetime/
   description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
   status: Archived
+
+- title: Federal Common <br> Policy CA G2 Update
+  pubDate: October 12, 2020
+  href: /fpki/announcements/common-g2-update/
+  description: In October 2020, the Federal Government will establish a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA).  This new root is named the Federal Common Policy CA G2.  This announcement details the CA update timeline and actions agencies need to perform.
+  status: Active
