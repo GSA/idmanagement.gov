@@ -3,9 +3,9 @@ layout: page
 collection: fpki
 title: Trust Stores
 permalink: fpki/truststores/
-subnav: fpki
+sidenav: fpki
 
-sidenav:
+subnav:
   - text: Trust Store
     href: '#what-is-a-trust-store'
   - text: Commonly Used Trust Stores

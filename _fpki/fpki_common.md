@@ -4,27 +4,25 @@ navtitle: Federal Common Policy CA Update
 title: Federal Common Policy CA Update
 collection: fpki
 permalink: fpki/common/
-subnav: fpki
+sidenav: fpki
 
-sidenav:
-   - text: Prepare to migrate to the Federal Common Policy CA G2
-     href: ../common/prepare-to-migrate/
-   - text: Obtain and verify a copy of the Federal Common Policy CA G2 certificate
-     href: ../common/obtain-and-verify/
-   - text: Distribute the certificate to operating systems
-     href: ../common/distribute-os/
-   - text: Verify operating system distribution
-     href: ../common/verify-os-distribution/
-   - text: Distribute the certificate to applications
-     href: ../common/distribute-apps/
-   - text: Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
-     href: ../common/certificates)
----
-    
-**Recommended steps to complete by April 20th, 2021:**
-
-  1. [Migrate to the Federal Common Policy CA G2](../common/migrate)
-  2. [Verify migration to the Federal Common Policy CA G2](../common/verify-migration)
+subnav:
+   - text: 1. Prepare to migrate to the Federal Common Policy CA G2
+     href: ../prepare-to-migrate/
+   - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
+     href: ../obtain-and-verify/
+   - text: 3. Distribute the certificate to operating systems
+     href: ../distribute-os/
+   - text: 4. Verify operating system distribution
+     href: ../verify-os-distribution/
+   - text: 5. Distribute the certificate to applications
+     href: ../distribute-apps/
+   - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
+     href: ../certificates)
+   - text: 7. Migrate to the Federal Common Policy CA G2
+     href: ../common/migrate
+   - text: 8. Verify migration to the Federal Common Policy CA G2
+     href: ../common/verify-migration
 
 ---
 

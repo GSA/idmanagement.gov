@@ -3,9 +3,9 @@ layout: page
 collection: fpki
 title: Certificates and CRLs
 permalink: fpki/certsandcrls/
-subnav: fpki
+sidenav: fpki
 
-sidenav:
+subnav:
 	- text: Federal Common Policy CA
 	  href: '#federal-common-policy-ca'
 	- text: Federal Bridge CA 2016

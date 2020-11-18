@@ -3,7 +3,7 @@ layout: page
 collection: fpki
 title: Announcements
 permalink: fpki/announcements/
-subnav: fpki
+sidenav: fpki
 ---
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year.
@@ -20,3 +20,25 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
       </li>
     {% endfor %}
 </ul>
+
+<table class="usa-table--borderless playbooks-table">
+  <thead class="usa-sr-only">
+    <tr>
+      <th id="playbooks-table-heading-title" scope="col">Title</th>
+      <th id="playbooks-table-heading-status" scope="col">Status</th>
+      <th id="playbooks-table-heading-date" scope="col">Date</th>
+      <th id="playbooks-table-heading-description" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign announcements = site.data.fpkiannouncements | concat: site.data.fpkiannouncements | sort: "title" %}
+    {% for announcement in announcements %}
+        <tr class="playbooks-table-row">
+          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
+          <td>{{ announcement.status }}</td>
+          <td>{{ announcement.pubDate }}</td>
+          <td>{{ announcement.description }}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>

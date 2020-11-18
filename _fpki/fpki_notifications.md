@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 collection: fpki
 title: System Changes and Notifications
-permalink: guidefpki/notifications/
+permalink: fpki/notifications/
 subnav: fpki
 ---
 
