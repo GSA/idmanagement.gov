@@ -32,44 +32,41 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Buy
-    children:
-      - name: Buy Overview
-        url: /buy/buy/
-      - name: Trust Services
-        url: /buy/trust-services/
-  - name: Sell
-    children:
-      - name: Sell Overview
-        url: /sell/sell/
-      - name: FIPS 201 Evaluation Program
-        url: /sell/fips201ep/
-      - name: FIPS 201 Approved Product List
-        url: /sell/fips201apl/
+
+#  - name: Buy
+#    children:
+#      - name: Buy Overview
+#        url: /buy/buy/
+#      - name: Trust Services
+#        url: /buy/trust-services/
+#  - name: Sell
+#    children:
+#      - name: Sell Overview
+#        url: /sell/sell/
+#      - name: FIPS 201 Evaluation Program
+#        url: /sell/fips201ep/
+#      - name: FIPS 201 Approved Product List
+#        url: /sell/fips201apl/
   - name: FICAM Architecture
     url: /arch/intro-arch/
-  - name: Guides
-    children:
-      - name: Guides Overview
-        url: /guides/
-      - name: FICAM Program Management
-        url: /ficampm/intro-pm/
-      - name: Federal PKI (FPKI)
-        url: /fpki/intro-fpki/
-      - name: Personal Identity Verification (PIV)
-        url: /piv/intro-piv/
-      - name: Physical Access Control Systems (PACS)
-        url: /pacs/intro-pacs/
-  - name: Playbooks
-    children:
-      - name: Playbooks Overview
-        url: /playbooks/
-      - name: Digitial Identity Risk Assessment (DIRA)
-        url: /playbooks/dira/
-      - name: Digital Worker
-        url: /playbooks/dw/
-      - name: Enterprise Single Sign-On
-        url: /playbooks/sso/
+  - name: FICAM Program Management
+    url: /ficampm/intro-pm/
+  - name: Federal PKI (FPKI)
+    url: /fpki/intro-fpki/
+  - name: Personal Identity Verification (PIV)
+    url: /piv/intro-piv/
+  - name: Physical Access Control Systems (PACS)
+    url: /pacs/intro-pacs/
+#  - name: Playbooks
+#    children:
+#      - name: Playbooks Overview
+#        url: /playbooks/
+#      - name: Digitial Identity Risk Assessment (DIRA)
+#        url: /playbooks/dira/
+#      - name: Digital Worker
+#        url: /playbooks/dw/
+#      - name: Enterprise Single Sign-On
+#        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
