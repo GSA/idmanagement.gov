@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Trust Stores
 permalink: piv/network/trust/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

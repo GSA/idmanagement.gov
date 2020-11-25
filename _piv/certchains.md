@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Certificate Trust
 permalink: piv/certtrust/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: piv
 
 subnav:

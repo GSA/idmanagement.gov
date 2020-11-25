@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Basics of a PIV Credential
 permalink: piv/basics/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: piv
 
 subnav:

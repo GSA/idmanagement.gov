@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Network Tuning
 permalink: piv/network/tuning/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

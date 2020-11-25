@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Introduction to Network Authentication Guides
 permalink: piv/network/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

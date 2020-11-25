@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Authentication Assurance
 permalink: piv/network/auth/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

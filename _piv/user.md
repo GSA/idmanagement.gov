@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: PIV Playbooks
 permalink: piv/user/
-sticky_nav: true
+sticky_sidenav: true
 ---
 
 These user playbooks will help agency users with PIV related tasks.

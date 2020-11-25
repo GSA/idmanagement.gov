@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Domain Controllers
 permalink: piv/network/dc/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

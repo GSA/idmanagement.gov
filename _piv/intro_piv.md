@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title:  Personal Identity Verification Guide Introduction
 permalink: piv/intro-piv/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: piv
 
 subnav:

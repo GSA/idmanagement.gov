@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Details of a PIV Credential
 permalink: piv/details/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: piv
 
 subnav:

@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Getting Started
 permalink: piv/gettingstarted/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: piv
 
 subnav:

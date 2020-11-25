@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Introduction to PIV Engineering Guides
-sticky_nav: true
+sticky_sidenav: true
 sidenav: piv
 
 subnav:

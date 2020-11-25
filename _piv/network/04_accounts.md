@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Account Linking
 permalink: piv/network/account/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

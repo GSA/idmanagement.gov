@@ -3,7 +3,7 @@ layout: layout: page
 collection: piv
 title: Group Policies and Enforcement
 permalink: piv/network/group/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:

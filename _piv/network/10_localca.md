@@ -3,7 +3,7 @@ layout: page
 collection: piv
 title: Local Certification Authority
 permalink: piv/network/localca/
-sticky_nav: true
+sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:
