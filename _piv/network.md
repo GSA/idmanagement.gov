@@ -4,25 +4,13 @@ collection: piv
 title: Introduction to Network Authentication Guides
 permalink: piv/network/
 sticky_sidenav: true
-sidenav: pivnetwork
+sidenav: piv
 
 subnav:
-    - text: Ports and Protocols
-      href: /piv/network/ports/
-    - text: Domain Controllers
-      href: /piv/network/dc/
-    - text: Trust Stores
-      href: /piv/network/trust/
-    - text: Account Linking
-      href: /piv/network/account/
-    - text: Group Policies and Enforcement
-      href: /piv/network/group/
-    - text: Network Tuning
-      href: /piv/network/tuning/
-    - text: Local Certification Authority
-      href: /piv/network/localca/
-    - text: Authentication Assurance
-      href: /piv/network/auth/
+    - text: Pre-Launch Checklist
+      href: '#prelaunch-checklist'
+    - text: Configuration Checklist
+      href: 'configuration-checklist'
 ---
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smartcard logon using PIV credentials.
@@ -44,17 +32,17 @@ Check the following items **before** reviewing these network guides and lessons 
 
 There are five configuration categories to review with your colleagues.  All five includes steps that must be completed and it's best to review and complete in this order:    
 
-- [Network Ports and Protocols](../piv//network/ports/)
-- [Domain Controllers](../piv/network/dc/)
-- [Trust Stores](../piv/network/trust/)
-- [Account Linking: Associating PIV credentials with User Accounts](..piv//network/account/)
-- [Group Policies and Enforcement](../piv/network/group/)
+- [Network Ports and Protocols](../network/ports/)
+- [Domain Controllers](../network/dc/)
+- [Trust Stores](../network/trust/)
+- [Account Linking: Associating PIV credentials with User Accounts](../network/account/)
+- [Group Policies and Enforcement](../network/group/)
 
 There are three additional guides:
 
-- [Network Tuning](../piv/network/tuning/)
-- [Local Certification Authority](../piv/network/localca/)
-- [Authentication Assurance](../piv/network/auth/)
+- [Network Tuning](../network/tuning/)
+- [Local Certification Authority](../network/localca/)
+- [Authentication Assurance](../network/auth/)
 
 We want to add additional information for installing online certificate status protocol (OCSP) services, common errors and troubleshooting, and configuring MacOSX and other operating systems.  
 
