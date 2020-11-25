@@ -1,16 +1,21 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Trust Stores
-collection: networkconfig
-permalink: networkconfig/trustedroots/
+permalink: piv/network/trust/
+sticky_nav: true
+sidenav: pivnetwork
+
+subnav:
+  - text: Trusted Root Certification Authorities Trust Store
+    href: '#trusted-root-certification-authorities-trust-store'
+  - text: Enterprise NTAuth Trust Store
+    href: '#enterprise-ntauth-trust-store'
 ---
 
 You want your Active Directory domain, including servers and workstations, to trust user's PIV credentials for authentication.  Trust and certificate chains are reviewed in the [Certificate Trust](../../pivcertchains) overview, and this page includes information on configuring your Active Directory domain.
 
 There are two trust stores to consider for your Active Directory domain:
-
-- [Trusted Root Certification Authorities Trust Store](#trusted-root-certification-authorities-trust-store)
-- [Enterprise NTAuth Trust Store](#enterprise-ntauth-trust-store)
 
 ##  Trusted Root Certification Authorities Trust Store
 You need to publish the Federal Common Policy Certification Authority (COMMON) [root certificate]({{site.baseurl}}/pivcertchains/#download-root-and-intermediate-certificates) to the Trusted Root Certification Authorities trust stores on all your workstations, devices, servers, and domain controllers.   

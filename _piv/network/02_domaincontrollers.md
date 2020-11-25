@@ -1,8 +1,16 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Domain Controllers
-collection: networkconfig
-permalink: networkconfig/domaincontrollers/
+permalink: piv/network/dc/
+sticky_nav: true
+sidenav: pivnetwork
+
+subnav:
+  - text: Domain controller certificate profiles
+    href: '#domain-controller-certificate-profiles)'
+  - text: Issue Domain Controller certificates
+    href: '#issue-domain-controller-certificates'
 ---
 
 To use smartcards and PIV credentials for network authentication, all Domain Controllers need to have Domain Controller authentication certificates.
@@ -10,9 +18,6 @@ To use smartcards and PIV credentials for network authentication, all Domain Con
 {% include alert-info.html heading = "Devices authenticate too!" content="When your users are using certificates to authenticate to the network, the Domain Controllers are also authenticating as devices using certificates. Each works together to create secure connections. To learn more, search for online resources that discuss Public Key Cryptography for Initial Authentication (PKINIT) protocols." %}
 
 This page contains information on domain controller certificate profiles, and issuing domain controller certificates.
-
-- [Domain Controller certificate profiles](#domain-controller-certificate-profiles)
-- [Issue Domain Controller certificates](#issue-domain-controller-certificates)
 
 ## Domain controller certificate profiles
 
@@ -50,5 +55,5 @@ It is not recommended to set up a local enterprise certificate authority just to
 
 Collaborate with your Chief Information Security Officer (CISO) or Information Security office for a definitive answer and direction.
 
-If you do have a local enterprise Certification Authority, [here are some tips.]({{site.baseurl}}/networkconfig/localca/)
+If you do have a local enterprise Certification Authority, [here are some tips.](../piv/network/localca/)
 

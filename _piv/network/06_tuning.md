@@ -1,16 +1,23 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Network Tuning
-collection: networkconfig
-permalink: networkconfig/tuning/
+permalink: piv/network/tuning/
+sticky_nav: true
+sidenav: pivnetwork
+
+subnav:
+    - text: Cached Logon Credential Limit
+      href: '#cached-logon-credential-limit'
+    - text: CRL Retrieval Timeout Settings
+      href: '#crl-retrieval-timeout-settings'
+    - text: OCSP Response Caching Behavior
+      href: '#ocsp-response-caching-behavior'
+    - text: Windows 2008 R2 Server and Large CRLs
+      href: '#windows-2008-r2-server-and-large-crls'
 ---
 
 You can tune the network domain settings to help you and your users have a better experience and reduce errors.  This section highlights some of the _common_ tuning configurations for network domain logon.  There are additional tuning configurations and we encourage you to start with these first and contribute others.      
-
--   [Cached Logon Credential Limit](#cached-logon-credential-limit)
--   [CRL Retrieval Timeout Settings](#crl-retrieval-timeout-settings)
--   [OCSP Response Caching Behavior](#ocsp-response-caching-behavior)
--   [Windows 2008 R2 Server Patch](#windows-2008-r2-server-and-large-crls)
 
 You can also send questions to the ICAM Technology listserve (email to ICAM-COMMUNITY-TECH at listserv.gsa.gov) to ask your government colleagues for their additional tips and tricks!
 

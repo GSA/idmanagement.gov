@@ -1,16 +1,21 @@
 ---
-layout: default
+layout: layout: page
+collection: piv
 title: Group Policies and Enforcement
-collection: networkconfig
-permalink: networkconfig/grouppolicies/
+permalink: piv/network/group/
+sticky_nav: true
+sidenav: pivnetwork
+
+subnav:
+    - text: Machine Based Enforcement versus User Based Enforcement
+      href: '#machine-based-enforcement-versus-user-based-enforcement'
+    - text: Defining the policies for Machine Based Enforcement or User Based Enforcement
+      href: '#defining-the-policies-for-machine-based-enforcement-or-user-based-enforcement'
 ---
 
 The US Government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"} for use by Executive Branch agencies to promote uniform configurations for [commonly used operating systems](https://cio.gov/cio-council-streamlines-configuration-baseline-process/){:target="_blank"}{:rel="noopener noreferrer"}.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smartcard (PIV) logon and should be referenced first.
 
 The information on this page is to answer questions and identify the most commonly used configuration options.  For a full reference of options for each operating system, please refer to configurations guides published by other sources online.
-
-* [Machine Based Enforcement versus User Based Enforcement](#machine-based-enforcement-versus-user-based-enforcement)
-* [Defining the policies for Machine Based Enforcement or User Based Enforcement](#defining-the-policies-for-machine-based-enforcement-or-user-based-enforcement)
 
 ## Machine Based Enforcement versus User Based Enforcement
 

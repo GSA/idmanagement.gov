@@ -1,8 +1,20 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Authentication Assurance
-collection: networkconfig
-permalink: networkconfig/ama/
+permalink: piv/network/auth/
+sticky_nav: true
+sidenav: pivnetwork
+
+subnav:
+  - text: Implementation
+    href: '#implementation'
+  - text: Testing
+    href: '#testing'
+  - text: Use Case Scenarios
+    href: '#use-case-scenarios'
+  - text: Other Considerations
+    href: '#other-considerations'
 ---
 
 When a user authenticates to your network and you've enabled Single Sign-on to applications inside your network domain, you need to know which of these authenticators was used: 
@@ -18,11 +30,6 @@ To grant a user access, based on the type of authenticator used, you can use a W
 {% include alert-warning.html content="Do not use AMA to provide privileged user access." %}
 
 AMA is available for domains operating on Windows Server 2008 R2 and later versions. 
-
-- [Implementation](#implementation)
-- [Testing](#testing)
-- [Use Case Scenarios](#use-case-scenarios)
-- [Other Considerations](#other-considerations)
 
 ## Implementation
 You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"} to import and set up a list of certificate issuance policies. This script:

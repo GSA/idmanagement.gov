@@ -2,8 +2,9 @@
 layout: page
 collection: piv
 title: Network Ports and Protocols
-permalink: /piv/network/ports/
-sidenav: pivsub
+permalink: piv/network/ports/
+sticky_nav: true
+sidenav: pivnetwork
 
 subnav:
   - text: Verifying and Troubleshooting

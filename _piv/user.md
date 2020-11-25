@@ -1,13 +1,14 @@
 ---
-layout: default
-title: PIV User Guides
-collection: userguides
-permalink: /userguides/
+layout: page
+collection: piv
+title: PIV Playbooks
+permalink: piv/user/
+sticky_nav: true
 ---
 
-These user guides will help agency users with PIV related tasks.
+These user playbooks will help agency users with PIV related tasks.
 
-{% for item in site.userguides reversed %}
+{% for item in site.piv.user reversed %}
   {% assign link = item.permalink | remove: '/' %}
   {% if link != item.collection %}
   <hr/>

@@ -1,17 +1,25 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Local Certification Authority
-permalink: networkconfig/localca/
+permalink: piv/network/localca/
+sticky_nav: true
+sidenav: pivnetwork
+
+subnav:
+   - text: Prerequisites
+     href: '#prerequisites'
+   - text: Install CA Role
+     href: '#install-ca-role'
+   - text: Configure Certificate Template for Domain Controller
+     href: '#configure-certificate-template-for-domain-controller'
+   - text: Auto-Enroll Domain Controllers Using Group Policy Object (GPO)
+     href: '#auto-enroll-domain-controllers-using-group-policy-object'
 ---
 
 This page provides some tips for using a local certification authority to issue a domain controller certificate.  This is for local Microsoft CAs. Other platforms may be used and have different procedures.    
 
 {% include alert-info.html content="These procedures are accurate for using Microsoft 2012 Server, Standard Edition, for CA and Domain Controller servers as of March 2017." %}  
-
-* [Prerequisites](#prerequisites)
-* [Install CA Role](#install-ca-role)
-* [Configure Certificate Template for Domain Controller](#configure-certificate-template-for-domain-controller)
-* [Auto-Enroll Domain Controllers Using Group Policy Object (GPO)](#auto-enroll-domain-controllers-using-group-policy-object)
 
 ## Prerequisites  
 
