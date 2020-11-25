@@ -4,6 +4,7 @@ collection: piv
 title: PIV Playbooks
 permalink: piv/user/
 sticky_sidenav: true
+sidenav: piv
 ---
 
 These user playbooks will help agency users with PIV related tasks.
