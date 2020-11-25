@@ -3,6 +3,7 @@ layout: page
 collection: pacs
 title: Procurements
 permalink: pacs/procure/
+sticky_sidenav: true
 sidenav: pacs
 
 subnav:

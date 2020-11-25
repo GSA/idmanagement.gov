@@ -3,6 +3,7 @@ layout: page
 collection: pacs
 title: PACS Deployment Models
 permalink: pacs/pacs/
+sticky_sidenav: true
 sidenav: pacs
 
 subnav:

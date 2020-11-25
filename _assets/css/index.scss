@@ -9,6 +9,11 @@
   background-size: cover;
 }
 
+.usa-sticky-sidenav {
+  position: sticky;
+  top: units(1.5);
+}
+
 // default mode hide banner
 .usa-banner__content {
   display: hidden;

@@ -3,6 +3,7 @@ layout: page
 collection: pacs
 title: Training
 permalink: pacs/train/
+sticky_sidenav: true
 sidenav: pacs
 
 subnav:
