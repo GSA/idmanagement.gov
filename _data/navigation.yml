@@ -53,7 +53,7 @@ fpki:
 pacs:
   - title: PACS Guide
     - text: PACS Introduction
-      href: /pacs/intro_pacs/
+      href: /pacs/intro-pacs/
     - text: What is a Physical Access Control System?
       href: /pacs/what-is-pacs/
     - text: Physical Access Control System Deployment Models

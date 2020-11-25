@@ -4,6 +4,14 @@ collection: pacs
 title: Procurements
 permalink: pacs/procure/
 sidenav: pacs
+
+subnav:
+  - text: PACS Procurement Checklist 
+    href: '#pacs-procurement-checklist'
+  - text: Why Can We Buy Only GSA-Approved Products and Services?
+    href: '#why-can-we-buy-only-gsa-approved-products-and-services?'
+  - text: What Other GSA Resources Can Help Us?
+    href: '#what-other-gsa-resources-can-help-us?'
 ---
 
 {% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a href=\"https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf\" target=\"_blank\">PACS Customer Ordering Guide. </a>" %}
@@ -342,5 +350,5 @@ Agency staff are encouraged to participate in steps where their roles are listed
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
-The next section, *[Training]({{site.baseurl}}/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
+The next section, *[Training]({{site.baseurl}}/pacs/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
 

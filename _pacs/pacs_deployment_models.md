@@ -4,14 +4,19 @@ collection: pacs
 title: PACS Deployment Models
 permalink: pacs/pacs/
 sidenav: pacs
+
+subnav:
+  - text: What Is a Standalone PACS?
+    href: '#what-is-a-standalone-pacs'
+  - text:  Standalone PACS Operational Challenges
+    href: '#standalone-pacs-operational-challenges'
+  - text: What Is an Enterprise PACS?
+    href: '#what-is-an-enterprise-pacs'
+  - text: Would an Enterprise PACS Work for Our Agency?
+    href: '#would-an-enterprise-pacs-work-for-our-agency'
 ---
 
 This page will give you a basic understanding of Physical Access Control System (PACS) deployment models. 
-
-- [What Is a Standalone PACS?](#what-is-a-standalone-pacs)
-  - [Standalone PACS' Operational Challenges](#standalone-pacs-operational-challenges)
-- [What Is an Enterprise PACS?](#what-is-an-enterprise-pacs)
-  - [Would an Enterprise PACS Work for Our Agency?](#would-an-enterprise-pacs-work-for-our-agency)
 
 ## What Is a Standalone PACS?
 
@@ -53,4 +58,4 @@ Here are some key E-PACS advantages to consider:
     * System security assessment and accreditation
 
 	
-The next section, *[Aligning Facility Security Level (FSL) and Authentication]({{site.baseurl}}/alignfslandauth/)*, explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
+The next section, *[Aligning Facility Security Level (FSL) and Authentication]({{site.baseurl}}/pacs/alignfslandauth/)*, explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.

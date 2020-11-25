@@ -4,15 +4,17 @@ collection: pacs
 title: Training
 permalink: pacs/train/
 sidenav: pacs
+
+subnav:
+    - text: Technical Roles and Responsibilities
+      href: '#technical-roles-and-responsibilities'
+    - text: Recommended Technical Training
+      href: '#recommended-technical-training'
+    - text: Training Opportunities
+      href: '#training-opportunities'
 ---
 
 Specialized training is essential for Physical Access Control System (PACS) technical leads and team members. This page describes roles, responsibilities, and training opportunities. 
-
-
-* [Technical Roles and Responsibilities](#technical-roles-and-responsibilities)
-* [Recommended Technical Training](#recommended-technical-training)
-* [Training Opportunities](#training-opportunities)
-
 
 ## Technical Roles and Responsibilities
 

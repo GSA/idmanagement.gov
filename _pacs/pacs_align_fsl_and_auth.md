@@ -4,6 +4,16 @@ collection: pacs
 title: Aligning Facility Security Level (FSL) and Authentication
 permalink: pacs/alignfslandauth/
 sidenav: pacs
+
+subnav:
+    - text: Assess Facility Security Level
+      href: '#assess-facility-security-level'
+    - text: Categorize Security Areas
+      href: '#categorize-security-areas'
+    - text: Determine Authentication Factors
+      href: '#determine-authentication-factors'
+    - text: Select Authentication Mechanisms
+      href: '#select-authentication-mechanisms'
 ---
 
 Federal agencies rely on Physical Access Control Systems (PACSs) and Personal Identity Verification (PIV) credentials to confirm that an employee, contractor, or visitor _is_ or _is not_ authorized to access a site and its critical assets, such as systems, information, and people. 
@@ -11,11 +21,6 @@ Federal agencies rely on Physical Access Control Systems (PACSs) and Personal Id
 To protect your agency's critical assets, you must assess each site's risk level (called *Facility Security Level*) and decide what level of PIV credential authentication is required (called *authentication mechanism*). 
 
 The FSL and Authentication checklist below will help you:
-
-- [Assess Facility Security Level](#assess-facility-security-level)
-- [Categorize Security Areas](#categorize-security-areas)
-- [Determine Authentication Factors](#determine-authentication-factors)
-- [Select Authentication Mechanisms](#select-authentication-mechanisms)
 
 ## Assess Facility Security Level
 
@@ -106,13 +111,13 @@ The FSL and Authentication checklist below will help you:
 
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/glossary/#pki-auth){:target="_blank"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/glossary/#pki-cak){:target="_blank"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/glossary/#sym-cak){:target="_blank"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/glossary/#bio){:target="_blank"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/glossary/#bio-a){:target="_blank"} 
-    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/glossary/#bio-a){:target="_blank"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/glossary/#occ-auth){:target="_blank"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/pacs/glossary/#pki-auth){:target="_blank"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/pacs/glossary/#pki-cak){:target="_blank"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/pacs/glossary/#sym-cak){:target="_blank"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/pacs/glossary/#bio){:target="_blank"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"} 
+    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/pacs/glossary/#occ-auth){:target="_blank"} 
 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
@@ -129,4 +134,4 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 <br>
 
-The next section, *[Procurements]({{site.baseurl}}/procure/)*, describes the processes and resources needed for a PACS procurement.
+The next section, *[Procurements]({{site.baseurl}}/pacs/procure/)*, describes the processes and resources needed for a PACS procurement.

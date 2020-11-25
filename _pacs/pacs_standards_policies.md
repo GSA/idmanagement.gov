@@ -4,14 +4,21 @@ collection: pacs
 title: Standards, Policies, and Guidance
 permalink: pacs/standards/
 sidenav: pacs
----
 
-- [Public Law](#public-law)
-- [Policies](#policies)
-- [Regulations](#regulations)
-- [Standards](#standards)
-- [Guidance and Best Practices](#guidance-and-best-practices)
-- [Other Relevant Publications](#other-relevant-publications)
+subnav:
+    - text: Public Law
+      href: '#public-law'
+    - text: Policies
+      href: '#policies'
+    - text: Regulations
+      href: '#regulations'
+    - text: Standards
+      href: '#standards'
+    - text: Guidance and Best Practices
+      href: '#guidance-and-best-practices'
+    - text: Other Relevant Publications
+      href: '#other-relevant-publications'
+---
 
 ## Public Law
 

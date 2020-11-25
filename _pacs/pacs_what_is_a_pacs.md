@@ -4,10 +4,17 @@ collection: pacs
 title: What is a Physical Access Control System?
 permalink: pacs/what-is-pacs/
 sidenav: pacs
+
+subnav:
+    - text: PACS Components
+      href: '#pacs-components'
+    - text: Characteristics of a FICAM-Compliant PACS
+      href: '#characteristics-of-a-fICAM-compliant-pacs'
 ---
 
 A Physical Access Control System (PACS) grants access to employees and contractors who work at or visit a site by electronically authenticating their PIV credentials. Although PACSs are Information Technology systems, they must be designed, deployed, and operated in cooperation with Physical Security teams to successfully meet agency mission needs. 
 
+## PACS Components
 
 The following table defines common PACS components: 
 
@@ -38,4 +45,4 @@ Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but a
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
 
 
-The next section, *[PACS Deployment Models]({{site.baseurl}}/pacs/)*, describes common deployment models for PACS.
+The next section, *[PACS Deployment Models]({{site.baseurl}}/pacs/pacs/)*, describes common deployment models for PACS.
