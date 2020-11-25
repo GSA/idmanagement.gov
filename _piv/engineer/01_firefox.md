@@ -1,16 +1,27 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Configure Firefox
-collection: engineering
-permalink: engineering/firefox/
+permalink: piv/engineer/firefox/
+sticky_sidenav: true
+sidenav: pivengineer
+
+subnav:
+    - text: Install and Test OpenSC
+      href: '#install-and-test-opensc'
+    - text: Configure Firefox
+      href: '#configure-firefox'
+    - text: Load New Security Device
+      href: '#load-new-security-device'
+    - text: Import PIV Issuer Certificate
+      href: '#import-piv-issuer-certificate'
+    - text: Test Authentication
+      href: '#test-authentication'
 ---
 
 You may need to configure Firefox to enable your agency users to log into web applications using their PIV credentials. This can be tricky because Firefox supports a protocol (PKCS #11) that is not always natively supported by operating systems or OS default drivers. 
 
 This guide will help you to configure Firefox by using an open source software package.  In addition to open source solutions, commercial software may be used. 
-
-* [Install and Test OpenSC](#install-and-test-opensc)
-* [Configure Firefox](#configure-firefox)
 
 {% include alert-info.html heading="PKCS #11" content="You are interested in learning more? Search for PKCS #11 for other resources available." %} 
 

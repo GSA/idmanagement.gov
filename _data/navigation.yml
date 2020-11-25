@@ -55,7 +55,18 @@ pivnetwork:
 pivengineer:
   - text: Back to PIV Guide
     href: /piv/engineer/
-    href: 
+  - text: Configure Firefox
+    href: /piv/engineer/firefox
+  - text: Enable SSH
+    href: /piv/engineer/ssh/
+
+pivuser:
+  - text: Back to PIV Guide
+    href: /piv/user/
+  - text: Digitally Signing in Microsoft Word
+    href: /piv/user/signword/
+  - text: Digitally Signing Documents for Submission to the Office of the Federal Register
+    href: /piv/user/signfedregister/
 
 fpki:
   - text: FPKI Introduction
