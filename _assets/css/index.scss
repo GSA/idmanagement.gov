@@ -3,6 +3,11 @@
 @import "uswds";
 
 // Add your SASS/CSS here
+.usa-hero {
+  background-image: asset_url("hero-image.png");
+  background-position: 50%;
+  background-size: cover;
+}
 
 // default mode hide banner
 .usa-banner__content {
