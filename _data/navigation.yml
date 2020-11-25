@@ -26,11 +26,31 @@ piv:
   - text: Certificate Trust
     href: /piv/certrust/
   - text: Network Authentication
-    href: /piv/netauth/
+    href: /piv/network/
   - text: Engineering Guides
-    href: /piv/engineeringguides/
+    href: /piv/engineer/
   - text: User Guides
-    href: /piv/userguides/
+    href: /piv/user/
+
+pivnetwork:
+  - text: Back to PIV Guide
+    href: /piv/network/
+  - text: Ports and Protocols
+    href: /piv/network/ports/
+  - text: Domain Controllers
+    href: /piv/network/dc/
+  - text: Trust Stores
+    href: /piv/network/trust/
+  - text: Account Linking
+    href: /piv/network/account/
+  - text: Group Policies and Enforcement
+    href: /piv/network/group/
+  - text: Network Tuning
+    href: /piv/network/tuning/
+  - text: Local Certification Authority
+    href: /piv/network/localca/
+  - text: Authentication Assurance
+    href: /piv/network/auth/
 
 fpki:
   - text: FPKI Introduction

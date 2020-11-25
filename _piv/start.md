@@ -1,7 +1,20 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Getting Started
-permalink: /start/
+permalink: piv/gettingstarted/
+sticky_nav: true
+sidenav: piv
+
+subnav:
+    - text: Card Readers
+      href: '#card-readers'
+    - text: Middleware
+      href: '#middleware'
+    - text: Middleware definitions
+      href: '#middleware-definitions'
+    - text: Next Steps
+      href: '#next-steps'
 ---
 
 You need two items to begin using your PIV credential:
@@ -63,4 +76,4 @@ For common PIV credential usage scenarios, we outline the _general smartcard mid
 ## Next Steps
 You have a PIV credential, you have a card reader, and you have middleware for your computer. **Now what?**
 
-If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, the next [section](../details) is for you.
+If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, the next [section](../piv/details) is for you.

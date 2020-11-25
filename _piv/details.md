@@ -1,14 +1,21 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Details of a PIV Credential
-permalink: /details/
+permalink: piv/details/
+sticky_nav: true
+sidenav: piv
+
+subnav:
+    - text: View Your PIV Credential Certificates
+      href: '#view-your-piv-credential-certificates'
+    - text: Export PIV Certificates
+      href: '#export-piv-certificates'
+    - text: Understand PIV Certificates
+      href: '#understand-piv-certificates'
 ---
 
 You can use these simple methods to view, export, and understand the information stored on a PIV credential.
-
--   [View Your PIV Credential Certificates](#view-your-piv-credential-certificates)
--   [Export PIV Certificates](#export-piv-certificates)
--   [Understand PIV Certificates](#understand-piv-certificates)
 
 ## View Your PIV Credential Certificates
 Almost **all** of the methods for using your PIV credential for networks, applications, digital signatures, and encryption involve the certificates and key pairs stored on your PIV credential.  There are also scenarios where additional information (such as biometrics) is also accessed and used. 
@@ -40,7 +47,7 @@ Viewing the certificate information on your PIV credential may be interesting if
 
 Within the U.S. Federal Government, the certificate and PIV credential information is governed by standards, policies, and implementation-specific choices (options) across all agency credential providers.
 
-Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [Basics of a PIV Credential](../elements/) to view the four pairs and purposes.
+Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [Basics of a PIV Credential](../piv//elements/) to view the four pairs and purposes.
 
 The table below outlines the general information for the PIV credential certificates, certificate extensions, and design considerations. 
 

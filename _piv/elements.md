@@ -1,14 +1,23 @@
 ---
-layout: default
+layout: page
+collection: piv
 title: Basics of a PIV Credential
-permalink: /elements/
+permalink: piv/basics/
+sticky_nav: true
+sidenav: piv
+
+subnav:
+    - text: Physical Features
+      href: '#physical-features'
+    - text: Electronic Features
+      href: '#electronic-features'
 ---
 
 There are two main categories for the features of a PIV credential: [_physical_ features](#physical-features) and [_electronic_ features](#electronic-features).
 
 ## Physical Features
 
-![Example of a PIV credential and its physical components]({{site.baseurl}}/img/elements.png){:style="float:left"}
+![Example of a PIV credential and its physical components]({{site.baseurl}}/assets/piv/elements.png){:style="float:left"}
 
 An example of a PIV credential can be seen to the left.
 
