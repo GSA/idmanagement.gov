@@ -24,7 +24,7 @@ piv:
   - text: Identifiers in a PIV
     href: /piv/identifiers/
   - text: Certificate Trust
-    href: /piv/trust/
+    href: /piv/certtrust/
   - text: Network Authentication
     href: /piv/network/
   - text: Engineering Guides
@@ -40,7 +40,7 @@ pivnetwork:
   - text: Domain Controllers
     href: /piv/network/dc/
   - text: Trust Stores
-    href: /piv/network/trust/
+    href: /piv/network/truststores/
   - text: Account Linking
     href: /piv/network/account/
   - text: Group Policies and Enforcement
