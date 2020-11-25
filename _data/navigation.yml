@@ -56,7 +56,7 @@ pivengineer:
   - text: Back to PIV Guide
     href: /piv/engineer/
   - text: Configure Firefox
-    href: /piv/engineer/firefox
+    href: /piv/engineer/firefox/
   - text: Enable SSH
     href: /piv/engineer/ssh/
 
