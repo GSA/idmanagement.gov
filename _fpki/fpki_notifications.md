@@ -3,7 +3,7 @@ layout: page
 collection: fpki
 title: System Changes and Notifications
 permalink: fpki/notifications/
-subnav: fpki
+sidenav: fpki
 ---
 
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  

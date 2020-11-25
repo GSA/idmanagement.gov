@@ -51,24 +51,25 @@ fpki:
     href: /fpki/notifications/
 
 pacs:
-  - text: PACS Introduction
-    href: /pacs/intro_pacs/
-  - text: What is a Physical Access Control System?
-    href: /pacs/what-is-pacs/
-  - text: Physical Access Control System Deployment Models
-    href: /pacs/pacs/
-  - text: Aligning Facility Security Level and Authentication
-    href: /pacs/alignfslandauth/
-  - text: Procurements
-    href: /pacs/procure/
-  - text: Training
-    href: /pacs/train/
-  - text: Lessons Learned
-    href: /pacs/lessonslearned/
-  - text: Standards, Policies, and Guidance
-    href: /pacs/standards/
-  - text: Glossary
-    href: /pacs/glossary/
+  - title: PACS Guide
+    - text: PACS Introduction
+      href: /pacs/intro_pacs/
+    - text: What is a Physical Access Control System?
+      href: /pacs/what-is-pacs/
+    - text: Physical Access Control System Deployment Models
+      href: /pacs/pacs/
+    - text: Aligning Facility Security Level and Authentication
+      href: /pacs/alignfslandauth/
+    - text: Procurements
+      href: /pacs/procure/
+    - text: Training
+      href: /pacs/train/
+    - text: Lessons Learned
+      href: /pacs/lessonslearned/
+    - text: Standards, Policies, and Guidance
+      href: /pacs/standards/
+    - text: Glossary
+      href: /pacs/glossary/
 
 pm:
   - text: FICAM Program Management Introduction

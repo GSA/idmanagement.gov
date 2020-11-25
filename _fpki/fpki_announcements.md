@@ -31,7 +31,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.data.fpkiannouncements | concat: site.data.fpkiannouncements | sort: "title" %}
+    {% assign announcements = site.data.fpkiannouncements | sort: "pubDate" %}
     {% for announcement in announcements %}
         <tr class="playbooks-table-row">
           <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
