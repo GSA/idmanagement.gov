@@ -3,6 +3,7 @@ title: Privacy Policy
 layout: page
 permalink: /privacy-policy/
 sidenav: policy
+sticky_sidenav: true
 
 subnav:
   - text: Information You Send Us

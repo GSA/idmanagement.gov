@@ -3,6 +3,7 @@ title: About Us
 layout: page
 permalink: /about/
 sidenav: policy
+sticky_sidenav: true
 ---
 
 IDManagement.gov is a website about the Federal Identity, Credential, and Access Management (FICAM) program, which helps federal agencies enable access to systems and facilities for the right person, at the right time, for the right reason.

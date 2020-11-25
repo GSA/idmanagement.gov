@@ -3,6 +3,7 @@ title: Contact Us
 layout: page
 permalink: /contact/
 sidenav: policy
+sticky_sidenav: true
 ---
 
 ## Have a Question or Comment?

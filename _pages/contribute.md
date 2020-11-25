@@ -3,6 +3,7 @@ title: Help Us Improve Our Content
 layout: page
 permalink: /contribute/
 sidenav: policy
+sticky_sidenav: true
 
 subnav:
   - text: About this Repository

@@ -24,7 +24,7 @@ piv:
   - text: Identifiers in a PIV
     href: /piv/identifiers/
   - text: Certificate Trust
-    href: /piv/certrust/
+    href: /piv/trust/
   - text: Network Authentication
     href: /piv/network/
   - text: Engineering Guides

@@ -3,6 +3,7 @@ title: Website Policy and Procedures
 layout: page
 permalink: /website-policy/
 sidenav: policy
+sticky_sidenav: true
 
 subnav:
   - text: Accessibility Policy
