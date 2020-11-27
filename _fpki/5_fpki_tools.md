@@ -8,11 +8,11 @@ sidenav: fpki
 
 subnav:
     - text: Federal PKI Graph
-      href: ../graph/
+      href: ../tools/fpkigraph/
     - text: Federal PKI Activity Report
-      href: ../fpkiar/
+      href: ../tools/fpkiar/
     - text: CITE Participation Guide
-      href: ../citeguide/
+      href: ../tools/citeguide/
 ---
 
 We are always collecting useful tools and links that will help you understand and use the Federal Public Key Infrastructure. The table below provides a list of useful tools.

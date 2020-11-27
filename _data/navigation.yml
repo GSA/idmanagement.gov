@@ -106,17 +106,17 @@ fpkicommon:
   - text: 5. Distribute the certificate to applications
     href: /fpki/common/distribute-apps/
   - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
-    href: /fpki/common/certificates)
+    href: /fpki/common/certificates/
   - text: 7. Migrate to the Federal Common Policy CA G2
-    href: /fpki/common/migrate
+    href: /fpki/common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
-    href: /fpki/common/verify-migration
+    href: /fpki/common/verify-migration/
 
 fpkitools:
   - text: Back to FPKI Guide
     href: /fpki/tools/
   - text: Federal PKI Graph
-    href: /fpki/tools/graph/
+    href: /fpki/tools/fpkigraph/
   - text: Federal PKI Activity Report
     href: /fpki/tools/fpkiar/
   - text: CITE Participation Guide
