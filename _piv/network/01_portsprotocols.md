@@ -15,7 +15,7 @@ subnav:
     href: '#web-services-for-the-federal-public-key-infrastructure'
 ---
 
-Your workstations, servers, network domain controllers and applications need to validate the [revocation](../../piv/trust#revocation) status of the PIV certificates and all intermediate certificate authority certificates.  In addition, the [certificate chain](../../piv/trust#certificate-chains) path building may retrieve and download the intermediate certificate authority certificates.
+Your workstations, servers, network domain controllers and applications need to validate the [revocation](../../piv/certchains#revocation) status of the PIV certificates and all intermediate certificate authority certificates.  In addition, the [certificate chain](../../piv/certchains#certificate-chains) path building may retrieve and download the intermediate certificate authority certificates.
 
 The validation occurs in real-time (with some caching) and requires ensuring network traffic is open and available to the destination web services, ports, and protocols.  Many US Federal agencies implement a layered network security model with demilitarized zones (DMZs), proxies and Trusted Internet Connections (TICs) to monitor, defend and protect the networks, applications and users.
 
@@ -53,7 +53,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web services for validating PIV certificates
 
-[Revocation]({{site.baseurl}}/pivcertchains#revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Authentication certificates]({{site.baseurl}}/details/#viewing-your-piv-credential) are accessible from all workstations and domain controllers.
+[Revocation](../../piv/certchains#revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Authentication certificates](../../#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|

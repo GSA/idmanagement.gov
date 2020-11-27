@@ -2,19 +2,19 @@
 layout: page
 collection: piv
 title: Certificate Trust
-permalink: piv/certchains/
+permalink: piv/cert-trust/
 sticky_sidenav: true
 sidenav: piv
 
 subnav:
-	- text: Certificate Trust
-	  href: '#trust'
-	- text: Certificate Chains
-	  href: '#certificate-chains'
-	- text: Revocation
-	  href: '#revocation'
-	- text: Download root and intermediate certificates
-  	  href: '#download-root-and-intermediate-certificates'
+  - text: Certificate Trust
+	href: '#trust'
+  - text: Certificate Chains
+	href: '#certificate-chains'
+  - text: Revocation
+	href: '#revocation'
+  - text: Download root and intermediate certificates
+  	href: '#download-root-and-intermediate-certificates'
 ---
 
 One of the most common questions is "What are all these certificates and how do I configure my applications to use them?"  Answering this question involves explaining Trust, Certificate chains and Revocation.  
