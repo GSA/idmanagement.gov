@@ -141,13 +141,11 @@ fpkiannouncements:
     href: /fpki/announcements/2019removal/
   - text: Federal Common Policy CA Removal from Apple Trust Stores Impact (Archived)
     href: /fpki/announcements/2018applepkichanges/
-  - text: Removal of CAs from Federal PKI (Archived)
-    href: /fpki/announcements/2019removal/
   - text: Chrome Certificate Transparency Requirements (Archived)
     href: /fpki/announcements/2018chromect/
   - text: Federal Common Policy CA Removal from Microsoft Trust Store Impact (Archived)
     href: /fpki/announcements/2018mspkichanges/
-  - text: TLS Certificate Lifetime Requirement (Archived)
+  - text: Chrome TLS Certificate Lifetime Requirement (Archived)
     href: /fpki/announcements/2018tlslifetime/
 
 #PACS Navigation

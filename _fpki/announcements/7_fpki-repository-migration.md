@@ -13,15 +13,15 @@ status: Archived
 
 subnav:
     - text: What will be impacted?
-      href: '#what-will-be-impacted?'
+      href: '#what-will-be-impacted'
     - text: When will this change take place?
-      href: '#when-will-this-change-take-place?'
+      href: '#when-will-this-change-take-place'
     - text: What should I do?
-      href: '#what-should-i-do?'
+      href: '#what-should-i-do'
     - text: Who can I contact for help or more information?
-      href: '#who-can-i-contact-for-help-or-more-information?'
+      href: '#who-can-i-contact-for-help-or-more-information'
     - text: What Will Be Impacted?
-      href: '#what-will-be-impacted?'
+      href: '#what-will-be-impacted'
 ---
 
 {% include alert-info.html content="Upcoming changes to the hosting of Federal Public Key Infrastructure Certification Authority (CA) data repositories could impact your agency." %}

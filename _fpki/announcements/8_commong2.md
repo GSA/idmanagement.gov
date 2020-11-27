@@ -1,6 +1,6 @@
 ---
 layout: page
-navtitle: Federal Common <br> Policy CA Update
+navtitle: Federal Common Policy CA Update
 title: Federal Common Policy CA Update
 pubDate: October 12, 2020
 collection: fpki
@@ -12,13 +12,13 @@ sidenav: fpkiannouncements
 
 subnav:
     - text: What will be impacted?
-      href: '#what-will-be-impacted?'
+      href: '#what-will-be-impacted'
     - text: When will this change take place?
-      href: '#when-will-this-change-take-place?'
+      href: '#when-will-this-change-take-place'
     - text: What should I do?
-      href: '#what-should-i-do?'
+      href: '#what-should-i-do'
     - text: Who can I contact for help or more information?
-      href: '#who-can-i-contact-for-help-or-more-information?'
+      href: '#who-can-i-contact-for-help-or-more-information'
 ---
 
 {% include alert-info.html content="Upcoming changes to the Federal Common Policy Certification Authority (CA) will impact your agency.  This announcement will be updated as more information is available." %}

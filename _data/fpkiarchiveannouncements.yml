@@ -36,7 +36,7 @@
   description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available. 
   status: Archived
 
-- title: TLS Certificate Lifetime Requirement
+- title: Chrome TLS Certificate Lifetime Requirement
   pubDate: May 10, 2018
   href: /fpki/announcements/2018tlslifetime/
   description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
