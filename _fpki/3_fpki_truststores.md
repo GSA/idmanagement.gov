@@ -4,6 +4,7 @@ collection: fpki
 title: Trust Stores
 permalink: fpki/truststores/
 sidenav: fpki
+sticky_sidenav: true
 
 subnav:
   - text: Trust Store

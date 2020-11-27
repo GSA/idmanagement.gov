@@ -1,16 +1,23 @@
 ---
 layout: page
 collection: fpki
-title: Certification Authorities
+title: FPKI Certification Authorities Overview
 permalink: fpki/ca/
+sticky_sidenav: true
 sidenav: fpki
 
 subnav:
-    - text: Federal Common Policy Certification Authority
-      href: '#federal-common-policy-certification-authority'
-    - text: Federal Bridge Certification Authority
-      href: '#federal-bridge-certification-authority'
+  - text: Federal Common Policy Certification Authority
+    href: '#federal-common-policy-certification-authority'
+  - text: Federal Bridge Certification Authority
+    href: '#federal-bridge-certification-authority'
+  - text: Federal Common and Federal Bridge Certificate Details
+    href: ../certsandcrls/
+	- text: PIV CAs and Agencies
+	  href: ../pivcas-and-agencies/
 ---
+
+{% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
 
 A **_certification authority_** is a system that issues digital certificates. These digital certificates are based on _cryptography_ and follow the X.509 standards defined for information security.
 
@@ -20,13 +27,9 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest lev
 
 ![FPKI Trust Infrastructure](../../assets/fpki/intro_fpki_trust_cas.png){:style="width:35%;float:right;"}
 
-
 The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by:  
 
 - Federal Government Executive Branch Agencies  
-
-{% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
-
 
 ### Federal Common Policy Certification Authority
 

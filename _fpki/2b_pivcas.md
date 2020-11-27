@@ -1,76 +1,23 @@
 ---
 layout: page
 collection: fpki
-title: Certificates and CRLs
-permalink: fpki/certsandcrls/
-sidenav: fpki
+title: PIV CAs and Agencies
+permalink: fpki/pivcas-and-agencies/
+sticky_sidenav: true
+sidenav: fpkicas
 
 subnav:
-	- text: Federal Common Policy CA
-	  href: '#federal-common-policy-ca'
-	- text: Federal Bridge CA 2016
-	  href: '#federal-bridge-ca-2016'
-	- text: Federal Bridge CA G4
-	  href: '#federal-bridge-ca-g4'
-	- text: Verify a hash
-	  href: '#verify-a-hash'
-	- text: PIV CAs and Agencies
-	  href: '#pivcas-and-agencies'
+	- text: PIV Issuer Information
+	  href: '#piv-issuer-information'
+	- text: Active Issuing CA Certificate Details 
+	  href: '#active-issuing-ca-certificate-details'
+	- text: Maintenance Mode Issuing CA Certificate Details
+	  href: '#maintenance-mode-issuing-ca-certificate-details'
 ---
-
-This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI. 
-
-When downloading **any** Certificate file from the list below, please verify the thumbprint (hash) on the downloaded file.  You can [verify the hash](#verify-a-hash) using common utilities on operating systems. 
-
-### Federal Common Policy CA
-
-|**Federal Common Policy CA**|**Information**|
-|-----------|---------------|
-| Federal Common Policy CA Root Certificate | http://http.fpki.gov/fcpca/fcpca.crt |
-| Distinguished Name 						| **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
-| sha1 Thumbprint							| 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
-| Certificate Revocation List				| http://http.fpki.gov/fcpca/fcpca.crl							|
-| P7C file - Issued By						| http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c	|
-
-
-### Federal Bridge CA 2016
-
-|**Federal Bridge CA 2016**|**Information**|
-|-----------|---------------|
-| Certificate Revocation List				| http://http.fpki.gov/bridge/fbca2016.crl					|
-| P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c	|
-
-### Federal Bridge CA G4
-
-|**Federal Bridge CA G4**|**Information**|
-|-----------|---------------|
-| Certificate Revocation List				| http://repo.fpki.gov/bridge/fbcag4.crl				|
-| P7C file - Issued By						| http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c	|
-| P7C file - Issued To						| http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c	|
-
-	 
-
-### Verify a hash
-You can verify the hash on files, including certificate files, using common utilities on operating systems.  Examples:
-
-```
-		certutil -hashfile <filename>.crt SHA1
-```
-
-```
-		openssl dgst -sha1 <filename>.crt
-```	
-
-```
-		sha1sum <filename>.crt
-```
-
-## PIV CAs and Agenices
 
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates. 
 
+## PIV Issuer Information
 
 {% include alert-info.html content="This table was last updated on <b>January 6, 2020</b>. Please email fpki at gsa dot gov to suggest an update or correction." %} 
 
@@ -107,7 +54,6 @@ The page lists the certification authorities *currently* used for Personal Ident
 {% endfor %}
 
 </table>
-
 
 
 ## Active Issuing CA Certificate Details 
@@ -397,7 +343,3 @@ These CA certificates have issued PIV authentication certificates previously and
 - Serial #: 61a90f3e5ff532f9fe6209d931279a82
 - Validity: December 10, 2014 to November 11, 2024
 - SHA-1 Hash: dc5b590800765864587902af983c21a7209be320
-
-	 
-	 
-	 

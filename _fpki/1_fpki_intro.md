@@ -3,6 +3,7 @@ layout: page
 collection: fpki
 title: Federal Public Key Infrastructure Guide Introduction
 permalink: fpki/intro-fpki/
+sticky_sidenav: true
 sidenav: fpki
 
 subnav:
