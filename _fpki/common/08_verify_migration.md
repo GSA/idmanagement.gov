@@ -6,7 +6,7 @@ permalink: fpki/common/verify-migration/
 sticky_sidenav: true
 sidenav: fpkicommon
 
-submav:
+subnav:
 	- text: Verify Migration on Windows
 	  href: '#verify-migration-on-windows'
 	- text: Verify Migration on macOS

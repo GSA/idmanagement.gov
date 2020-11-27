@@ -6,7 +6,7 @@ permalink: fpki/common/migrate/
 sticky_sidenav: true
 sidenav: fpkicommon
 
-submav:
+subnav:
   - text: Disable distribution of the FCPCA G1
     href: '#disable-distribution-of-the-fcpca-g1'
   - text: Distrust the FCPCA G1

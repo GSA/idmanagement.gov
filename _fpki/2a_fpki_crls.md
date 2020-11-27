@@ -7,8 +7,6 @@ sticky_sidenav: true
 sidenav: fpkicas
 
 subnav:
-  - text: Back to FPKI Guide
-    href: ../fpki/ca/
   - text: Federal Common Policy CA
     href: '#federal-common-policy-ca'
   - text: Federal Bridge CA 2016

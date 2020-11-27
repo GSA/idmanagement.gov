@@ -6,7 +6,7 @@ permalink: fpki/common/verify-os-distribution/
 sticky_sidenav: true
 sidenav: fpkicommon
 
-submav:
+subnav:
 	- text: Microsoft Solutions
 	  href: '#microsoft-solutions'
 	- text: macOS Solutions

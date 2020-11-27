@@ -6,15 +6,15 @@ permalink: fpki/common/distribute-os/
 sticky_sidenav: true
 sidenav: fpkicommon
 
-submav:
-	- text: Microsoft Solutions
-	  href: '#microsoft-solutions'
-	- text: macOS Solutions
-	  href: '#macos-solutions'
-	- text: iOS Solutions
-	  href: '#ios-solutions'
-	- text: Linux/Unix Solutions
-	  href: '#linux/unix-solutions'
+subnav:
+  - text: Microsoft Solutions
+	href: '#microsoft-solutions'
+  - text: macOS Solutions
+	href: '#macos-solutions'
+  - text: iOS Solutions
+	href: '#ios-solutions'
+  - text: Linux/Unix Solutions
+	href: '#linux/unix-solutions'
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}

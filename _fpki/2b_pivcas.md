@@ -55,8 +55,8 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 </table>
 
-
 ## Active Issuing CA Certificate Details 
+
 These CA certificates are actively issuing PIV authentication certificates.  
 
 #### Department of Veterans Affairs CA

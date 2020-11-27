@@ -6,7 +6,7 @@ permalink: fpki/common/certificates/
 sticky_sidenav: true
 sidenav: fpkicommon
 
-submav:
+subnav:
 	- text: Use Microsoft Group Policy Object (GPO)
     href: '#use-microsoft-group-policy-object-gpo'
   - text: Use macOS/iOS Configuration Profile

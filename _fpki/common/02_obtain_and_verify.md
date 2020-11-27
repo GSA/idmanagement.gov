@@ -6,11 +6,11 @@ permalink: fpki/common/obtain-and-verify/
 sticky_sidenav: true
 sidenav: fpkicommon
 
-submav:
-    - text: Download a Copy of FCPCA G2
-      href: '#download-a-copy-of-fcpca-g2'
-    - text: Verify Your Copy of FCPCA G2
-      href: '#verify-your-copy-of-fcpca-g2'
+subnav:
+  - text: Download a Copy of FCPCA G2
+    href: '#download-a-copy-of-fcpca-g2'
+  - text: Verify Your Copy of FCPCA G2
+    href: '#verify-your-copy-of-fcpca-g2'
 ---
 
 To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
