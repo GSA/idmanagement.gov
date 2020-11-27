@@ -8,13 +8,13 @@ sidenav: piv
 
 subnav:
   - text: Certificate Trust
-	href: '#trust'
+    href: '#trust'
   - text: Certificate Chains
-	href: '#certificate-chains'
+    href: '#certificate-chains'
   - text: Revocation
-	href: '#revocation'
+    href: '#revocation'
   - text: Download root and intermediate certificates
-  	href: '#download-root-and-intermediate-certificates'
+    href: '#download-root-and-intermediate-certificates'
 ---
 
 One of the most common questions is "What are all these certificates and how do I configure my applications to use them?"  Answering this question involves explaining Trust, Certificate chains and Revocation.  
