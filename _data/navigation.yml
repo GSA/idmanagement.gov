@@ -125,6 +125,14 @@ fpkitools:
 fpkiannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
+  - text: Federal Common <br> Policy CA G2 Update
+    href: /fpki/announcements/common-g2-update/
+  - text: Upcoming Migration of Federal PKI Certificate Repository Services (Archived)
+    href: /fpki/announcements/2019fpkimigration/
+  - text: DigiCert CA Decommissioning (Archived)
+    href: /fpki/announcements/2019digicert/
+  - text: Removal of Health CAs from Federal PKI (Archived)
+    href: /fpki/announcements/2019removal/
   - text: Federal Common Policy CA Removal from Apple Trust Stores Impact (Archived)
     href: /fpki/announcements/2018applepkichanges/
   - text: Removal of CAs from Federal PKI (Archived)
