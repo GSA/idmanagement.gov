@@ -1,5 +1,5 @@
 ---
-layout: layout: page
+layout: page
 collection: piv
 title: Group Policies and Enforcement
 permalink: piv/network/group/
