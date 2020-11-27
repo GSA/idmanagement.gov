@@ -2,7 +2,7 @@
 layout: page
 collection: fpki
 title: Trust Stores
-permalink: fpki/truststores/
+permalink: fpki/trust-stores/
 sidenav: fpki
 sticky_sidenav: true
 

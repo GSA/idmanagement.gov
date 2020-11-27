@@ -70,7 +70,7 @@ pivuser:
 
 fpki:
   - text: Introduction
-    href: /fpki/intro_fpki/
+    href: /fpki/intro-fpki/
   - text: Certification Authorities
     href: /fpki/ca/
   - text: Trust Stores

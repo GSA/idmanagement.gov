@@ -6,7 +6,7 @@ permalink: fpki/tools/
 sticky_sidenav: true
 sidenav: fpki
 
-submav:
+subnav:
     - text: Federal PKI Graph
       href: ../graph/
     - text: Federal PKI Activity Report

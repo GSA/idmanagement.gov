@@ -7,16 +7,16 @@ sticky_sidenav: true
 sidenav: fpki
 
 subnav:
-    - text: What is the Federal PKI?
-      href: '#what-is-the-federal-pki'
-    - text: What is an example of an identity certificate?
-      href: '#what-is-an-example-of-an-identity-certificate'
-    - text: Why should agencies use certificates from the Federal PKI?
-      href: '#why-should-agencies-use-certificates-from-the-federal-pki'
-    - text: Why is the Federal PKI important?
-      href: '#why-is-the-federal-pki-important'
-    - text: Where can I find the Policies and Standards?
-      href: '#where-can-i-find-the-policies-and-standards'
+  - text: What is the Federal PKI?
+    href: '#what-is-the-federal-pki'
+  - text: What is an example of an identity certificate?
+    href: '#what-is-an-example-of-an-identity-certificate'
+  - text: Why should agencies use certificates from the Federal PKI?
+    href: '#why-should-agencies-use-certificates-from-the-federal-pki'
+  - text: Why is the Federal PKI important?
+    href: '#why-is-the-federal-pki-important'
+  - text: Where can I find the Policies and Standards?
+    href: '#where-can-i-find-the-policies-and-standards'
 ---
 
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
