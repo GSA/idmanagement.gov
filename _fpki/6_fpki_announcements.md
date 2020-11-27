@@ -32,9 +32,9 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     {% assign announcements = site.data.fpkiactiveannouncements %}
     {% for announcement in announcements %}
         <tr class="playbooks-table-row">
-          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
-          <td>{{ announcement.pubDate }}</td>
-          <td>{{ announcement.description }}</td>
+          <li><td><a href="{{ announcement.href | relative_url }}">{{ announcement.title }}</a></td></li>
+          <li><td>{{ announcement.pubDate }}</td><li>
+          <li><td>{{ announcement.description }}</td></li>
         </tr>
     {% endfor %}
   </tbody>
