@@ -7,10 +7,22 @@ sticky_sidenav: true
 sidenav: piv
 
 subnav:
-    - text: Pre-Launch Checklist
-      href: '#pre--launch-checklist'
-    - text: Configuration Checklist
-      href: '#configuration-checklist'
+  - text: Ports and Protocols
+    href: ../../piv/network/ports/
+  - text: Domain Controllers
+    href: ../../piv/network/dc/
+  - text: Trust Stores
+    href: ../../piv/network/trust-stores/
+  - text: Account Linking
+    href: ../../piv/network/account/
+  - text: Group Policies and Enforcement
+    href: ../../piv/network/group/
+  - text: Network Tuning
+    href: ../../piv/network/tuning/
+  - text: Local Certification Authority
+    href: ../../piv/network/localca/
+  - text: Authentication Assurance
+    href: ../../piv/network/auth/
 ---
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smartcard logon using PIV credentials.

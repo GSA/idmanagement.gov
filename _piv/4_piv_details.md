@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: piv
-title: Details of a PIV Credential
+title: Details
 permalink: piv/details/
 sticky_sidenav: true
 sidenav: piv
@@ -47,7 +47,7 @@ Viewing the certificate information on your PIV credential may be interesting if
 
 Within the U.S. Federal Government, the certificate and PIV credential information is governed by standards, policies, and implementation-specific choices (options) across all agency credential providers.
 
-Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [Basics of a PIV Credential](../piv//elements/) to view the four pairs and purposes.
+Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [Basics of a PIV Credential](../basics/) to view the four pairs and purposes.
 
 The table below outlines the general information for the PIV credential certificates, certificate extensions, and design considerations. 
 
@@ -68,5 +68,5 @@ Additional useful information:
 -   There has been testing in some infrastructures to migrate to Elliptic Curve Cryptography (ECC), but there are no ECC certificates for users in production as of the date of this guide
 -   There has been testing in some infrastructures to migrate to 3072-bit (RSA) certificates, but there are no 3072-bit certificates for users in production as of the date of this guide
 
-In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [Federal Public Key Infrastructure page](https://www.idmanagement.gov/fpki/#certificate-policies){:target="_blank"}.
+In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [Federal Public Key Infrastructure page](https://www.idmanagement.gov/topics/fpki/#certificate-policies)){:target="_blank"}.
 
