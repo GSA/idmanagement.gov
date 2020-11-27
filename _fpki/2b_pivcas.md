@@ -22,7 +22,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 {% include alert-info.html content="This table was last updated on <b>January 6, 2020</b>. Please email fpki at gsa dot gov to suggest an update or correction." %} 
 
 <style>
-	.title {font-size: 16px; color: white; background-color: #112e51; font-weight: 900;text-align: center;}
+	.title {font-size: 16px; color: white; background-color: #2491ff; font-weight: 900; text-align: center;}
 	.body {font-size: 14px;text-align: center;}
 
 	h4:before {

@@ -10,7 +10,7 @@ subnav:
   - text: Active
     href: '#active-announcements'
   - text: Archived
-    href: '#archvied-announcements'
+    href: '#archvied-annoucements'
 ---
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year.
@@ -32,9 +32,9 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     {% assign announcements = site.data.fpkiactiveannouncements %}
     {% for announcement in announcements %}
         <tr class="playbooks-table-row">
-          <li><td><a href="{{ announcement.href | relative_url }}">{{ announcement.title }}</a></td></li>
-          <li><td>{{ announcement.pubDate }}</td><li>
-          <li><td>{{ announcement.description }}</td></li>
+          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
+          <td>{{ announcement.pubDate }}</td>
+          <td>{{ announcement.description }}</td>
         </tr>
     {% endfor %}
   </tbody>
