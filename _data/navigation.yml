@@ -1,3 +1,5 @@
+## Architecture Navigation
+
 arch:
   - text: Introduction
     href: /arch/intro-arch/
@@ -11,6 +13,8 @@ arch:
     href: /arch/components/
   - text: Standards & Policies
     href: /arch/standards/
+
+## PIV Navigation
 
 piv:
   - text: Introduction
@@ -67,6 +71,8 @@ pivuser:
     href: /piv/user/signword/
   - text: Digitally Signing Documents for Submission to the Office of the Federal Register
     href: /piv/user/signfedregister/
+
+## FPKI Navigation
 
 fpki:
   - text: Introduction
@@ -144,6 +150,8 @@ fpkiannouncements:
   - text: TLS Certificate Lifetime Requirement (Archived)
     href: /fpki/announcements/2018tlslifetime/
 
+#PACS Navigation
+
 pacs:
   - text: Introduction
     href: /pacs/intro-pacs/
@@ -164,6 +172,8 @@ pacs:
   - text: Glossary
     href: /pacs/glossary/
 
+# FICAM PM Navigation
+
 pm:
   - text: Introduction
     href: /ficampm/intro-pm/
@@ -183,6 +193,8 @@ pm:
     href: /ficampm/privacy/
   - text: Examples and Guideance
     href: /ficampm/examples/
+
+## Other Site Navigation
 
 buy:
   - text: Buy Identity Products and Services
@@ -211,6 +223,8 @@ policy:
     href: /website-policy/
   - text: Public Domain License
     href: /license/
+
+# Playbooks Navigation
 
 dira:
   - text: Digital Identity Risk Assessment (DIRA) Playbook

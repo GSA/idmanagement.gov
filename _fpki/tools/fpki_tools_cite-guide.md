@@ -2,7 +2,7 @@
 layout: page
 title: CITE Participation Guide
 collection: fpki
-permalink: fpki/tools/cite/
+permalink: fpki/tools/citeguide/
 sticky_sidenav: true
 sidenav: fpkitools
 
