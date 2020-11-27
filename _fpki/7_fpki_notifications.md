@@ -4,6 +4,13 @@ collection: fpki
 title: System Changes and Notifications
 permalink: fpki/notifications/
 sidenav: fpki
+sticky_sidenav: true
+
+subnav:
+  - text: Notifications
+    href: '#notifications'
+  - text: How to Add a New Notification
+    href: '#how-to-add-a-new-notification'
 ---
 
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
