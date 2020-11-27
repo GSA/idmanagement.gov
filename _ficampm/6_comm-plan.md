@@ -3,6 +3,7 @@ layout: page
 collection: ficampm
 title: Communication Plan
 permalink: ficampm/comm/
+sticky_sidenav: true
 sidenav: pm
 ---
 

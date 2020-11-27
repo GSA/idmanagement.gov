@@ -23,11 +23,14 @@ subnav:
 You'll need to actively identify and mitigate threats to program operations, and involve the entire program management team in this process. Follow the recommendations below to learn how to develop an Identity, Credential, and Access Management (ICAM) risk management program.
 
 - [Develop a Risk Management Program](#develop-a-risk-management-program)
+  - [Characteristics of a Risk Management Program](#characteristics-of-a-risk-management-program)
 - [Develop a Risk Management Plan](#develop-a-risk-management-plan)
 - [Develop a Risk Registry](#develop-a-risk-registry)
+  - [Common Program Risks](#common-program-risks)
 - [Perform a Security and Risk Management Assessment](#perform-a-security-and-risk-management-assessment)
 - [Apply the Risk Management Framework](#apply-the-risk-management-framework)
 - [Manage Accountability and Control](#manage-accountability-and-control)
+  - [Use ICAM-Specific Evaluation Criteria](#use-icam-specific-evaluation-criteria)
 
 ## Develop a Risk Management Program
 
@@ -97,3 +100,5 @@ Use the following criteria as a starting point to evaluate your ICAM program:
 - Coordination of ICAM program management and investment across supporting projects.
 
 [OMB Memorandum M-16-17](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2016/m-16-17.pdf){:target="_blank"} includes, as a control, separation of duties for various functions. An enterprise Logical Access Control System (LACS) service can detect conflicts and recommend corrective actions. You can also use your LACS as an enterprise auditor, providing more visibility to control access to systems and sensitive information and to evaluate compliance with policy and applicable law across the enterprise.
+
+[Back to top](#)

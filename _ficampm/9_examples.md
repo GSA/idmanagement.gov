@@ -3,6 +3,7 @@ layout: page
 collection: ficampm
 title: Examples and Guidance
 permalink: ficampm/examples/
+sticky_sidenav: true
 sidenav: pm
 
 subnav:
@@ -16,7 +17,12 @@ We recommend leveraging existing resources to establish your Identity, Credentia
 
 On this page, you'll find guidance to help you implement your ICAM program:
 - [Agency Examples](#agency-examples)
+  - [Governance Structure](#governance-structure)
+  - [ICAM PMO Charter](#icam-pmo-charter)
 - [Authorities to Consider](#authorities-to-consider)
+  - [Executive Order (EO) 13800 – Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure](#executive-order-eo-13800--strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure)
+  - [NIST Risk Management Framework](#nist-risk-management-framework)
+  - [Federal Information Technology Acquisition Reform Act (FITARA) and OMB M-15-14](#federal-information-technology-acquisition-reform-act-fitara-and-omb-m-15-14)
 
 ## Agency Examples
 

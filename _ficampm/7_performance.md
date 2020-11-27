@@ -3,6 +3,7 @@ layout: page
 collection: ficampm
 title: Performance Management
 permalink: ficampm/performance/
+sticky_sidenav: true
 sidenav: pm
 
 subnav:
