@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: fpkicommon
 
 subnav:
-	- text: Use Microsoft Group Policy Object (GPO)
+  - text: Use Microsoft Group Policy Object (GPO)
     href: '#use-microsoft-group-policy-object-gpo'
   - text: Use macOS/iOS Configuration Profile
     href: '#use-macos/ios-configuration-profile'
