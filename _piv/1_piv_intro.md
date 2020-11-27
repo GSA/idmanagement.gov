@@ -21,7 +21,7 @@ subnav:
 
 These **Personal Identity Verification** (PIV) Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repo_url }}) and a _work in progress_ and we [welcome contributions](../contribute/) from our colleagues.
 
-The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications, or digitally signing and encrypting. Using PIV for _physical access_ is avaiable in the [PIV Guide](../../pacs/intro-pacs/)
+The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications, or digitally signing and encrypting. Using PIV for _physical access_ is avaiable in the [PACS Guide](../../pacs/intro-pacs/)
 
 If you cannot find a particular topic, it may still be in development. Review the [Issues]({{ site.repo_url }}/issues) for questions and lessons that are in progress. Create a new [Issue]({{ site.repo_url }}/issues) to ask a question or share information with others.  
 

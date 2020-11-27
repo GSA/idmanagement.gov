@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Certificate Trust
-permalink: piv/certtrust/
+permalink: piv/cert-trust/
 sticky_sidenav: true
 sidenav: piv
 

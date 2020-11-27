@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title: Trust Stores
-permalink: piv/network/truststores/
+permalink: piv/network/trust-stores/
 sticky_sidenav: true
 sidenav: pivnetwork
 
