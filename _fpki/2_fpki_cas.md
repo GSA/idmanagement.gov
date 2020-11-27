@@ -13,8 +13,8 @@ subnav:
     href: '#federal-bridge-certification-authority'
   - text: Federal Common and Federal Bridge Certificate Details
     href: ../certsandcrls/
-	- text: PIV CAs and Agencies
-	  href: ../pivcas-and-agencies/
+  - text: PIV CAs and Agencies
+    href: ../pivcas-and-agencies/
 ---
 
 {% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
