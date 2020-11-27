@@ -23,7 +23,7 @@ These user playbooks will help agency users with PIV related tasks.
       <strong>Date:</strong> {{ item.pubDate }}<br />
       <strong>Description:</strong> {{ item.description }}
     </li>
-  {% endfor}
+  {% endfor %}
 </ul>
 
 {% for item in site.piv.user reversed %}
