@@ -7,12 +7,12 @@ sticky_sidenav: true
 sidenav: fpkicommon
 
 subnav:
-	- text: Verify Migration on Windows
-	  href: '#verify-migration-on-windows'
-	- text: Verify Migration on macOS
-	  href: '#verify-migration-on-macos'
-	- text: Troubleshooting
-	  href: '#troubleshooting'
+  - text: Verify Migration on Windows
+    href: '#verify-migration-on-windows'
+  - text: Verify Migration on macOS
+    href: '#verify-migration-on-macos'
+  - text: Troubleshooting
+    href: '#troubleshooting'
 ---
 
 The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) G2 is to validate one of your PIV credential certificates.
