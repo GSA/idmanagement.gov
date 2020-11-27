@@ -27,7 +27,6 @@ This page provides some tips for using a local certification authority to issue 
   * The CA should **never** reside on the same server(s) that are acting as Domain Controller(s).
   * You must be an Enterprise Administrator in the domain to perform these steps.
 
-  
 ## Install CA Role
 
   1. Log into the **CA server** as a member of the **Enterprise Administrators** group.

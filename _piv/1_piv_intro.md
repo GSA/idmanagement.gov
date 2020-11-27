@@ -19,7 +19,7 @@ subnav:
       href: '#where-can-i-find-the-standards'
 ---
 
-These **Personal Identity Verification** (PIV) Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}) and a _work in progress_ and we [welcome contributions](/contribute/) from our colleagues.
+These **Personal Identity Verification** (PIV) Guides are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}) and a _work in progress_ and we [welcome contributions](../../contribute/) from our colleagues.
 
 The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications, or digitally signing and encrypting. Using PIV for _physical access_ is avaiable in the [PACS Guide](../../pacs/intro-pacs/)
 
