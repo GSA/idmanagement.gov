@@ -58,6 +58,6 @@ There are three additional guides:
 
 We want to add additional information for installing online certificate status protocol (OCSP) services, common errors and troubleshooting, and configuring MacOSX and other operating systems.  
 
-Submit an [Issue]({{site.repourl}}/issues) to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.   
+Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.   
 
 
