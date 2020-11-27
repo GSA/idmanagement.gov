@@ -73,8 +73,6 @@ fpki:
     href: /fpki/intro_fpki/
   - text: Certification Authorities
     href: /fpki/ca/
-  - text: Certificates and CRLs
-    href: /fpki/certsandcrls/
   - text: Trust Stores
     href: /fpki/trust-stores/
   - text: Federal Common Policy CA Update (FY21)
