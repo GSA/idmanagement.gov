@@ -51,7 +51,7 @@ Here are some key E-PACS advantages to consider:
 * One employee and contractor enrollment system that connects multiple enrollment locations.
 * One credential registration and provisioning point.
 * One enterprise-wide system for administrators to modify or terminate access privileges.
-* One enterprise-wide system that regularly polls for [Certificate Revocation List](../../piv/certtrust/#revocation){:target="_blank"} (CRL) updates and maintains revocation data.
+* One enterprise-wide system that regularly polls for [Certificate Revocation List](../../piv/cert-trust#revocation){:target="_blank"} (CRL) updates and maintains revocation data.
 * Reduced costs for system management, such as patching, server system administration, and software updates.
 * Reduced costs for reporting , such as Federal Information Security Modernization Act [FISMA] reporting.
 * Reduced costs for:
