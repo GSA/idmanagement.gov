@@ -3,19 +3,12 @@ layout: page
 title: Governance
 collection: arch
 permalink: arch/governance/
-sidenav: arch
+sidenav: archservices
+sticky_sidenav: true
 
 subnav:
-    - text: Identity Management
-      href: ../identity/
-    - text: Credential Management
-      href: ../credential/
-    - text: Access Management
-      href: ../access/
-    - text: Federation
-      href: ../federation/
-    - text: Governance
-      href: ../governance/
+   - text: Governance Services
+     href: '#governance-services'
 ---
 
 ![A navy box with the list of Governance services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/GovernanceServices.png){:align="right" style="padding-left:30px"}

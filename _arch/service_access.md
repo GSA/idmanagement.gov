@@ -3,19 +3,14 @@ layout: page
 title: Access Management
 collection: arch
 permalink: arch/access/
-sidenav: arch
+sidenav: archservices
+sticky_sidenav: true
 
 subnav:
-  - text: Identity Management
-    href: ../identity/
-  - text: Credential Management
-    href: ../credential/
-  - text: Access Management
-    href: ../access/
-  - text: Federation
-    href: ../federation/
-  - text: Governance
-    href: ../governance/
+  - text: Authorization
+    href: '#authorization'
+  - text: Access Management Services
+    href: '#access-management-services'
 ---
 
 ![A blue box with the list of Access Management services defined later in the body text of this page.](../../assets/arch/services/AccessManagementServices.png){:align="right" style="padding-left:30px"}

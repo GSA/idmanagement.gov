@@ -3,19 +3,12 @@ layout: page
 title: Federation
 collection: arch
 permalink: arch/federation/
-sidenav: arch
+sidenav: archservices
+sticky_sidenav:
 
 subnav:
-    - text: Identity Management
-      href: ../identity/
-    - text: Credential Management
-      href: ../credential/
-    - text: Access Management
-      href: ../access/
-    - text: Federation
-      href: ../federation/
-    - text: Governance
-      href: ../governance/
+    - text: Federation Services
+      href: '#federation-services'
 ---
 
 ![A gray box with the list of Federation services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/FederationServices.png){:align="right" style="padding-left:30px"}

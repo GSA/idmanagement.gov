@@ -3,25 +3,16 @@ layout: page
 title: 7. Grant Access
 collection: arch
 permalink: arch/grantaccess/
-sidenav: arch
+sidenav: archusecases
+sticky_sidenav: true
 
 subnav:
-    - text: 1. Create and Maintain an Identity
-      href: ../createidentity/
-    - text: 2. Proof an Identity
-      href: ../proofidentity/
-    - text: 3. Manage the Entitlements Lifecycle
-      href: ../manageaccess/
-    - text: 4. Create and Issue a Credential
-      href: ../credential/
-    - text: 5. Issue a Derived Credential
-      href: ../derivecredential/
-    - text: 6. Manage the Credential Lifecycle
-      href: ../managecredential/
-    - text: 7. Grant Access
-      href: ../grantaccess/
-    - text: 8. Accept Federation Assertions
-      href: ../federate/
+  - text: Use Case
+    href: '#use-case'
+  - text: Example
+    href: '#example'
+  - text: Next Steps
+    href: '#next-steps'
 ---
 
 ![This use case corresponds to the Authentication and Authorization service areas of Access Management.](../../assets/arch/usecases/Access-AuthnAuthz.png){:align="right" style="padding-left:15px"}

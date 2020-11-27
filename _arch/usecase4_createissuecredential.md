@@ -3,7 +3,16 @@ layout: page
 title: 4. Create and Issue a Credential
 collection: arch
 permalink: arch/usecredential/
-sidenav: arch
+sidenav: archusecases
+sticky_sidenav: true
+
+subnav:
+  - text: Use Case
+    href: '#use-case'
+  - text: Example
+    href: '#example'
+  - text: Next Steps
+    href: '#next-steps'
 ---
 
 ![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. ](../../assets/arch/usecases/Credential-Issuance.png){:align="right" style="padding-left:15px"}

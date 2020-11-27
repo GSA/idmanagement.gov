@@ -3,19 +3,12 @@ layout: page
 title: Identity Management
 collection: arch
 permalink: arch/identity/
-sidenav: arch
+sidenav: archservices
+sticky_sidenav: true
 
 subnav:
     - text: Identity Management Services
       href: '#identity-management-services'
-    - text: Credential Management
-      href: ../credential/
-    - text: Access Management
-      href: ../access/
-    - text: Federation
-      href: ../federation/
-    - text: Governance
-      href: ../governance/
 ---
 ![A red box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}
 

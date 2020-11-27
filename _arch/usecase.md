@@ -4,6 +4,7 @@ title:  Use Cases
 collection: arch
 permalink: arch/usecases/
 sidenav: arch
+sticky_sidenav: true
 
 subnav:
   - text: 1. Create and Maintain an Identity

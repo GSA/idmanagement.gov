@@ -14,6 +14,40 @@ arch:
   - text: Standards & Policies
     href: /arch/standards/
 
+archservices:
+  - text: Back to FICAM Architecture
+    href: /arch/services/
+  - text: Identity Management
+    href: /arch/identity/
+  - text: Credential Management
+    href: /arch/credential/
+  - text: Access Management
+    href: /arch/access/
+  - text: Federation
+    href: /arch/federation/
+  - text: Governance
+    href: /arch/governance/
+
+archusecases:
+  - text: Back to FICAM Architecture
+    href: /arch/usecases/
+  - text: 1. Create and Maintain an Identity
+    href: /arch/createidentity/
+  - text: 2. Proof an Identity
+    href: /arch/proofidentity/
+  - text: 3. Manage the Entitlements Lifecycle
+    href: /arch/manageaccess/
+  - text: 4. Create and Issue a Credential
+    href: /arch/credential/
+  - text: 5. Issue a Derived Credential
+    href: /arch/derivecredential/
+  - text: 6. Manage the Credential Lifecycle
+    href: /arch/managecredential/
+  - text: 7. Grant Access
+    href: /arch/grantaccess/
+  - text: 8. Accept Federation Assertions
+    href: /arch/federate/
+
 ## PIV Navigation
 
 piv:

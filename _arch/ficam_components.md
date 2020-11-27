@@ -4,6 +4,7 @@ collection: arch
 title: Component Examples
 permalink: arch/components/
 sidenav: arch
+sticky_sidenav: true
 
 subnav:
     - text: Authoritative Sources
