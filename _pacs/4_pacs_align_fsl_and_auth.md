@@ -112,13 +112,13 @@ The FSL and Authentication checklist below will help you:
 
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/pacs/glossary/#pki-auth){:target="_blank"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/pacs/glossary/#pki-cak){:target="_blank"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/pacs/glossary/#sym-cak){:target="_blank"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/pacs/glossary/#bio){:target="_blank"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"} 
-    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/pacs/glossary/#occ-auth){:target="_blank"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)](../glossary/#pki-auth){:target="_blank"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)](../glossary/#pki-cak){:target="_blank"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)](../glossary/#sym-cak){:target="_blank"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)](../glossary/#bio){:target="_blank"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)](../glossary/#bio-a){:target="_blank"} 
+    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))](../glossary/#bio-a){:target="_blank"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)](../glossary/#occ-auth){:target="_blank"} 
 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
@@ -131,7 +131,7 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 **Note:** Some authentication mechanisms defined by NIST SP 800-116, Revision 1 might not be available on all user-population cards (for example, on-card biometric comparison or PKI-CAK). 
 
-{% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA). Visit [PIV Guides](../../piv/certtrust)</a> to learn more about certificate trust." %}
+{% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA). Visit [PIV Guides](../../piv/certtrust){:target="_blank"} to learn more about certificate trust." %}
 
 <br>
 
