@@ -15,7 +15,7 @@ subnav:
       href: '#agency-example'
 ---
 
-In the context of this playbook, workstreams are the focus areas or projects within an Identity, Credential, and Access Management (ICAM) framework.
+In the context of this guide, workstreams are the focus areas or projects within an Identity, Credential, and Access Management (ICAM) framework.
 
 Many ICAM workstreams overlap with various divisions existing responsibilities. To promote the successful execution of your agency ICAM initiatives, divide and assign each workstream to employees already actively involved in a related area. Each workstream requires a task lead who manages the day-to-day activities of the workstream and provides the ICAM Program Management Office (PMO) with critical information about planning, development, deployment, and operations. 
 

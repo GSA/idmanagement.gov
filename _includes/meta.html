@@ -9,11 +9,13 @@ site, this is the place to do it.
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="robots" content="noindex, nofollow">
+
   <!-- Mobile Specific Metas
     ================================================== -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Title and meta description
     ================================================== -->
   <title>{{site.title}}</title>
@@ -29,14 +31,14 @@ site, this is the place to do it.
   <meta property="og:type" content="article">
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
+
   <!-- Favicons
     ================================================== -->
+
   <!-- 128x128 -->
   <link rel="shortcut icon" type="image/ico" href="{% asset favicons/favicon.ico @path %}">
   <link rel="icon" type="image/png" href="{% asset favicons/favicon.png @path %}">
-  <!-- 192x192, as recommended for Android
-    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
-    -->
+  <!-- 192x192, as recommended for Android http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android-->
   <link rel="icon" type="image/png" sizes="192x192" href="{% asset favicons/favicon-192.png @path %}">
   <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
   <link rel="apple-touch-icon-precomposed" href="{% asset favicons/favicon-57.png @path %}">
@@ -46,7 +48,13 @@ site, this is the place to do it.
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset favicons/favicon-114.png @path %}">
   <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% asset favicons/favicon-144.png @path %}">
+
   <!-- CSS
     ================================================== -->
   {% asset index.scss %}
+
+  <!-- FPKI Graph Styles -->
+  <link rel="stylesheet" type="text/css" href="{% asset js/gexfjs.js @path %}">
+  <link rel="stylesheet" type="text/css" href="{% asset js/jquery-ui-1.10.3.custom.min.css @path">
+  <!-- End FPKI Graph Styles -->
 </head>
