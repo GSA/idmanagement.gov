@@ -8,9 +8,9 @@ sidenav: piv
 
 subnav:
     - text: Pre-Launch Checklist
-      href: '#prelaunch-checklist'
+      href: '#pre--launch-checklist'
     - text: Configuration Checklist
-      href: 'configuration-checklist'
+      href: '#configuration-checklist'
 ---
 
 These Network Authentication guides will help you configure your Windows _network domain_ for smartcard logon using PIV credentials.

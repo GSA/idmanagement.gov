@@ -2,14 +2,15 @@
 layout: page
 collection: piv
 title: Introduction to PIV Engineering Guides
+permalink: piv/engineer/
 sticky_sidenav: true
 sidenav: piv
 
 subnav:
   - text: Configure Firefox
-    href: /piv/engineer/firefox
+    href: ../../piv/engineer/firefox
   - text: Enable SSH
-    href: /piv/engineer/ssh/
+    href: ../../piv/engineer/ssh/
 ---
 
 PIV engineering guides are for engineers configuring agency infrastructure, servers and enterprise applications for authentication. The guides are focused on US Federal Government implementations. 

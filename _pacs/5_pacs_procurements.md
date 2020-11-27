@@ -170,7 +170,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>For details, see <a href="{{site.baseurl}}/alignfslandauth/" target="_blank">Aligning FSL and Authentication Mechanism</a>.</li>
+	<li>For details, see <a href="{{site.baseurl}}/pacs/alignfslandauth/" target="_blank">Aligning FSL and Authentication Mechanism</a>.</li>
 	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification, as well as affect the SOW and project costs.</li>
 	<li>The sample survey questions below will help you assess the FSL of each facility and select the right PIV authentication mechanisms:
 	<ul>
@@ -351,5 +351,5 @@ Agency staff are encouraged to participate in steps where their roles are listed
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
-The next section, *[Training]({{site.baseurl}}/pacs/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
+The next section, *[Training](../train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
 

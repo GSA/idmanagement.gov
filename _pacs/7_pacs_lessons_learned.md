@@ -69,4 +69,4 @@ Federal agencies have shared these PACS lessons learned:
 - Create and maintain a training plan that formally documents training requirements.
 - Provide role-specific training to agency stakeholders, such as HR, IT, or Security.
 
-The next section, [Standards, Policies, and Guidance]({{site.baseurl}}/pacs/standards/) lists relevant public law, policies, regulations, standards, guidance, and publications relevant to PACSs.
+The next section, [Standards, Policies, and Guidance](../standards/) lists relevant public law, policies, regulations, standards, guidance, and publications relevant to PACSs.

@@ -13,3 +13,5 @@ This _Physical Access Control System (PACS) Guide_ will help you understand conc
 
 ## Acknowledgment
 We want to thank the Secure Technology Alliance, especially the members of the Access Control Council, for contributions to the *PACS Playbook* and permission to reuse content from their presentations and the *How to Plan, Procure and Deploy a pacs-Enabled Physical Access Control System* webinar training.  
+
+Lets get started with, *[What is a PACS](../what-is-pacs/)*, describes physcial access control system components and compliance.

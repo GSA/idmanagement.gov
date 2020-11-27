@@ -73,3 +73,4 @@ In 2018, GSA hosted a _PACS Reverse Industry Day_ conference that featured gover
 - [Morning Session](https://www.youtube.com/watch?v=r9X1XtrLjMg){:target="_blank"}{:rel="noopener noreferrer"}
 - [Afternoon Session](https://www.youtube.com/watch?v=bS8jdkW_WUI){:target="_blank"}{:rel="noopener noreferrer"}
 
+The next section, *[Lessons Learned](../lessonslearned/)*, shares lessons learned from various federal agenices.
