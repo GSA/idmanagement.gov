@@ -55,5 +55,5 @@ It is not recommended to set up a local enterprise certificate authority just to
 
 Collaborate with your Chief Information Security Officer (CISO) or Information Security office for a definitive answer and direction.
 
-If you do have a local enterprise Certification Authority, [here are some tips.](../piv/network/localca/)
+If you do have a local enterprise Certification Authority, [here are some tips.](../localca/)
 

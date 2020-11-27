@@ -112,7 +112,7 @@ You can verify the hash using common utilities on operating systems, including:
 
 You can contact your agency's information security teams for help on additional intermediate certificates, or find the intermediate certificates by using information in your PIV certificates directly.
 
-- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate go to the [Details of a PIV Credential](../piv/details)
+- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate go to the [Details of a PIV Credential](../details)
 - In the **Authority Information Access (AIA)** extension, there is a URL (http://) which references a file with a .p7b or .p7c extension
 - Download the file, open it, and view the intermediate certificate authority certificates
 - Repeat the process using the AIA extension of the intermediate certificate authority certificates until the final reference finds an intermediate certificate authority certificate that is issued and signed by COMMON

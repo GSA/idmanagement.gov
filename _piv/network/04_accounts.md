@@ -13,7 +13,7 @@ subnav:
     href: '#implementing-altsecurityidentities-and-piv-certificate-mapping'
 ---
 
-For your network domains, you will need to associate the PIV credential to the user accounts.  This is the [account linking](../piv/identifiers) information discussed in the Identifiers section. The most common questions for US Federal Government and using PIV for network authentication are related to linking a PIV credential to network user accounts.  
+For your network domains, you will need to associate the PIV credential to the user accounts.  This is the [account linking](../../identifiers) information discussed in the Identifiers section. The most common questions for US Federal Government and using PIV for network authentication are related to linking a PIV credential to network user accounts.  
 
 This page includes the information on the Identifiers for account linking in network authentication:
 
@@ -49,12 +49,9 @@ If you have a large network with many domains, you will want to carefully plan f
 You may find that you have many applications that rely upon the Principal Name values only.  You can still populate the Principal Name with the PIV Authentication certificate User Principal Name value for one of the user accounts (the non-privileged accounts) to maintain those applications but disable user principal name mapping for _network authentication_.
 
 You have three steps to implement altSecurityIdentities and PIV certificate mapping:
-
-- [Comparing Principal Name versus altSecurityIdentities options](#comparing-principal-name-versus-altsecurityidentities-options)
-- [Implementing altSecurityIdentities and PIV certificate mapping](#implementing-altsecurityidentities-and-piv-certificate-mapping)
-    - [Disable User Principal Name Mapping](#disable-user-principal-name-mapping)
-    - [Link the PIV Authentication Certificate](#link-the-piv-authentication-certificate)
-    - [Enable User Name Hints](#enable-user-name-hints)
+  1. [Disable User Principal Name Mapping](#disable-user-principal-name-mapping)
+  2. [Link the PIV Authentication Certificate](#link-the-piv-authentication-certificate)
+  3. [Enable User Name Hints](#enable-user-name-hints)
 
 #### Disable User Principal Name Mapping
 To implement the altSecurityIdentities approach, you will need to disable _subject alternate name_ for the network domain.  This setting simply tells your network domain: _I don't always want to use the Subject Alternate Name values for my user certificates._
