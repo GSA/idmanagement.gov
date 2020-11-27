@@ -7,12 +7,12 @@ sticky_sidenav: true
 sidenav: fpkicas
 
 subnav:
-	- text: PIV Issuer Information
-	  href: '#piv-issuer-information'
-	- text: Active Issuing CA Certificate Details 
-	  href: '#active-issuing-ca-certificate-details'
-	- text: Maintenance Mode Issuing CA Certificate Details
-	  href: '#maintenance-mode-issuing-ca-certificate-details'
+  - text: PIV Issuer Information
+    href: '#piv-issuer-information'
+  - text: Active Issuing CA Certificate Details 
+    href: '#active-issuing-ca-certificate-details'
+  - text: Maintenance Mode Issuing CA Certificate Details
+    href: '#maintenance-mode-issuing-ca-certificate-details'
 ---
 
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates. 

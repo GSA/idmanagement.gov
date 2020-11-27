@@ -7,16 +7,16 @@ sticky_sidenav: true
 sidenav: fpkicas
 
 subnav:
-	- text: Back to FPKI Guide
-	  href: ../fpki/ca/
-	- text: Federal Common Policy CA
-	  href: '#federal-common-policy-ca'
-	- text: Federal Bridge CA 2016
-	  href: '#federal-bridge-ca-2016'
-	- text: Federal Bridge CA G4
-	  href: '#federal-bridge-ca-g4'
-	- text: Verify a hash
-	  href: '#verify-a-hash'
+  - text: Back to FPKI Guide
+    href: ../fpki/ca/
+  - text: Federal Common Policy CA
+    href: '#federal-common-policy-ca'
+  - text: Federal Bridge CA 2016
+    href: '#federal-bridge-ca-2016'
+  - text: Federal Bridge CA G4
+    href: '#federal-bridge-ca-g4'
+  - text: Verify a hash
+    href: '#verify-a-hash'
 ---
 
 This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI. 
