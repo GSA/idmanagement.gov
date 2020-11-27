@@ -1,13 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -18,52 +8,18 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Agency Name
-email: contact@example.gov
+title: Federal ICAM Guides
+email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
-  Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.
-baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://example.gov" # the base hostname & protocol for your site, e.g. http://example.com
+  Modernizing and operationalizing the FICAM Roadmap.
+baseurl: "https://idmanagement.gov"
+repourl: "https://github.com/GSA/playbooks-wdsv2"
 
 # Twitter handle. Only the handle, not the URL.
-twitter: 18F
+# twitter: 18F
 
-#################################################################
-#
-# Digital Analytics Program (DAP) configuration
-#
-# USAID   - Agency for International Development
-# USDA    - Department of Agriculture
-# DOC     - Department of Commerce
-# DOD     - Department of Defense
-# ED      - Department of Education
-# DOE     - Department of Energy
-# HHS     - Department of Health and Human Services
-# DHS     - Department of Homeland Security
-# HUD     - Department of Housing and Urban Development
-# DOJ     - Department of Justice
-# DOL     - Department of Labor
-# DOS     - Department of State
-# DOI     - Department of the Interior
-# TREAS   - Department of the Treasury
-# DOT     - Department of Transportation
-# VA      - Department of Veterans Affairs
-# EPA     - Environmental Protection Agency
-# EOP     - Executive Office of the President
-# GSA     - General Services Administration
-# NASA    - National Aeronautics and Space Administration
-# NARA    - National Archives and Records Administration
-# NSF     - National Science Foundation
-# NRC     - Nuclear Regulatory Commission
-# OPM     - Office of Personnel Management
-# USPS    - Postal Service
-# SBA     - Small Business Administration
-# SSA     - Social Security Administration
-#
-#################################################################
 dap:
-  # agency: your-agency
+  agency: GSA
 
   # Optional
   # subagency: your-subagency
@@ -76,26 +32,49 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Blog
-    url: /blog/
-  - name: Document
-    url: /document/
-  - name: Document with sidenav
-    url: /document-with-sidenav/
-  - name: Document submenu
-    children:
-      - name: Navigation link
-        url: "#main-content"
-      - name: Navigation link
-        url: "#main-content"
-      - name: Navigation link
-        url: "#main-content"
+
+#  - name: Buy
+#    children:
+#      - name: Buy Overview
+#        url: /buy/buy/
+#      - name: Trust Services
+#        url: /buy/trust-services/
+#  - name: Sell
+#    children:
+#      - name: Sell Overview
+#        url: /sell/sell/
+#      - name: FIPS 201 Evaluation Program
+#        url: /sell/fips201ep/
+#      - name: FIPS 201 Approved Product List
+#        url: /sell/fips201apl/
+  - name: FICAM Architecture
+    url: /arch/intro-arch/
+  - name: FICAM Program Management
+    url: /ficampm/intro-pm/
+  - name: Federal PKI (FPKI)
+    url: /fpki/intro-fpki/
+  - name: Personal Identity Verification (PIV)
+    url: /piv/intro-piv/
+  - name: Physical Access Control Systems (PACS)
+    url: /pacs/intro-pacs/
+#  - name: Playbooks
+#    children:
+#      - name: Playbooks Overview
+#        url: /playbooks/
+#      - name: Digitial Identity Risk Assessment (DIRA)
+#        url: /playbooks/dira/
+#      - name: Digital Worker
+#        url: /playbooks/dw/
+#      - name: Enterprise Single Sign-On
+#        url: /playbooks/sso/
 
 secondary_navigation:
-  - name: Secondary link
-    url: "#main-content"
-  - name: Another secondary link
-    url: "#main-content"
+  - name: Contact Us
+    url: /contact/
+  - name: About Us
+    url: /about/
+  - name: Contribute
+    url: /contribute/
 
 # Search.gov configuration
 #
@@ -122,6 +101,32 @@ searchgov:
 ##########################################################################################
 
 collections:
+  ficampm:
+    output: true
+    permalink: /ficampm/:path/
+  arch:
+    output: true
+    permalink: /arch/:path/
+  fpki:
+    output: true
+    permalink: /fpki/:path/
+  pacs:
+    output: true
+    permalink: /pacs/:path/
+  piv:
+    output: true
+    permalink: /piv/:path/
+  buy:
+    output: true
+    permalink: /buy/:path/
+  playbooks:
+    output: true
+    permalink: /playbooks/:path/
+  sell:
+    output: true
+    permalink: /sell/:path/
+  guides:
+    output: true
   pages:
     output: true
     permalink: /:path/

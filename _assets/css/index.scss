@@ -3,6 +3,16 @@
 @import "uswds";
 
 // Add your SASS/CSS here
+.usa-hero {
+  background-image: asset_url("hero-image.png");
+  background-position: 50%;
+  background-size: cover;
+}
+
+.usa-sticky-sidenav {
+  position: sticky;
+  top: units(1.5);
+}
 
 // default mode hide banner
 .usa-banner__content {
