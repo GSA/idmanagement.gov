@@ -8,7 +8,7 @@ sidenav: pivnetwork
 
 subnav:
   - text: Domain controller certificate profiles
-    href: '#domain-controller-certificate-profiles)'
+    href: '#domain-controller-certificate-profiles'
   - text: Issue Domain Controller certificates
     href: '#issue-domain-controller-certificates'
 ---

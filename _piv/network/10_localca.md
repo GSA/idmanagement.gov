@@ -14,7 +14,7 @@ subnav:
    - text: Configure Certificate Template for Domain Controller
      href: '#configure-certificate-template-for-domain-controller'
    - text: Auto-Enroll Domain Controllers Using Group Policy Object (GPO)
-     href: '#auto-enroll-domain-controllers-using-group-policy-object'
+     href: '#auto-enroll-domain-controllers-using-group-policy-object-(gpo)'
 ---
 
 This page provides some tips for using a local certification authority to issue a domain controller certificate.  This is for local Microsoft CAs. Other platforms may be used and have different procedures.    

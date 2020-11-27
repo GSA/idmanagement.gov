@@ -13,8 +13,8 @@ subnav:
     href: '#testing'
   - text: Use Case Scenarios
     href: '#use-case-scenarios'
-  - text: Other Considerations
-    href: '#other-considerations'
+  - text: Other Considerations and References
+    href: '#other-considerations-and-references'
 ---
 
 When a user authenticates to your network and you've enabled Single Sign-on to applications inside your network domain, you need to know which of these authenticators was used: 

@@ -11,10 +11,14 @@ subnav:
        href: '#ssh-using-putty-cac'
      - text: SSH from Windows - Using WinSCP and Pageant
        href: '#ssh-using-winscp-and-pageant'
-     - text: SSH from macOS
-       href: '#ssh-from-macos'
+     - text: SSH from macOS - Built-In Support
+       href: '#built-in-piv/cac-support'
+     - text: SSH from maxOS - OpenSC
+       href: '#opensc'
      - text: Configure a Linux Server
        href: '#configure-a-linux-server'
+     - text: Special Thanks
+       href: 'special-thanks'
 ---
 
 For network engineers, this guide will help you authenticate with your PIV/CAC credential and use SSH to access a remote Linux server from a Windows or macOS computer. For server administrators, this guide will help you configure a Linux server for remote access.
@@ -127,7 +131,9 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 
 There are two options for configuring SSH clients to use a PIV/CAC device as the SSH key store:
 
-### Built-in PIV/CAC support (macOS High Sierra and later)
+### Built-in PIV/CAC support
+
+**Only applicable for macOS High Sierra and later.**
 
 1. Insert your PIV/CAC into your card reader.
 2. Use ` ssh-keygen -D /usr/lib/ssh-keychain.dylib` to get the OpenSSH-format public key fingerprint which can be added to your `authorized_keys` file, account profiles, etc.

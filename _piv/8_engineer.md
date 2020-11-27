@@ -27,4 +27,4 @@ If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issu
 
 {% include alert-info.html heading="Application integrations using federation protocols" content="We will be migrating the application integration patterns from the Federal ICAM Roadmap and working group documentation - including the use of Security Assertion Markup Language and Open ID Connect - to a set of guides soon!" %}
 
-Your contributions are encouraged and welcome! You can [contribute](/contribute/) to this effort or open an [Issue]({{site.repourl}}/issues/new) to discuss a need you may have for a guide.
+Your contributions are encouraged and welcome! You can [contribute](../../contribute/) to this effort or open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}. to discuss a need you may have for a guide.

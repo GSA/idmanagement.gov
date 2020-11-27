@@ -13,7 +13,7 @@ subnav:
     href: '#enterprise-ntauth-trust-store'
 ---
 
-You want your Active Directory domain, including servers and workstations, to trust user's PIV credentials for authentication.  Trust and certificate chains are reviewed in the [Certificate Trust](../../piv/trust/) overview, and this page includes information on configuring your Active Directory domain.
+You want your Active Directory domain, including servers and workstations, to trust user's PIV credentials for authentication.  Trust and certificate chains are reviewed in the [Certificate Trust](../../cert-trust/) overview, and this page includes information on configuring your Active Directory domain.
 
 There are two trust stores to consider for your Active Directory domain:
 

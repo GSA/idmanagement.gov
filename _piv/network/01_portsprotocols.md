@@ -53,7 +53,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web services for validating PIV certificates
 
-[Revocation](../../cert-trust/revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Authentication certificates](../../details/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
+[Revocation](../../cert-trust/#revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Authentication certificates](../../details/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|
