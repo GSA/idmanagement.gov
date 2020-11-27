@@ -7,8 +7,21 @@ collection: fpki
 category: Apple
 permalink: guidefpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
-subnav: fpki
+sidenav: fpkiannouncements
 status: Archived
+sticky_sidenav: true
+
+subnav:
+  - text: How Does This Work?
+    href: '#how-does-this-work'
+  - text: What Will Be Impacted?
+    href: '#what-will-be-impacted'
+  - text: What Should I Do?
+    href: '#what-should-i-do'
+  - text: Frequently Asked Questions
+    href: '#frequently-asked-questions'
+  - text: Additional Resources
+    href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}
@@ -24,14 +37,6 @@ Starting in the release of macOS Mojave, iOS 12, and tvOS 12, government users o
 - macOS Mojave: September 24, 2018
 
 {% include alert-info.html content="The FPKIPA has also elected to remove the Federal Common Policy CA root certificate from Microsoft's Trust Store." %}
-
-- [How Does This Work?](#how-does-this-work)
-- [What Will Be Impacted?](#what-will-be-impacted)
-- [What Should I Do?](#what-should-i-do)
-- [Frequently Asked Questions](#frequently-asked-questions)
-  - [1.&nbsp;&nbsp;Is PIV network login impacted?](#1is-piv-network-login-impacted)
-  - [2.&nbsp;&nbsp;What versions are affected?](#2what-versions-are-affected)
-- [Additional Resources](#additional-resources)
 
 ## How Does This Work?
 

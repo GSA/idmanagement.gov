@@ -7,19 +7,25 @@ collection: fpki
 permalink: fpki/announcements/2018tlslifetime/
 tag: announcement
 description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
-subnav: fpki
+sidenav: fpkiannouncements
+sticky_sidenav: true
 status: Archived
+
+subnav: 
+    - text: What Will Be Impacted?
+      href: '#what-will-be-impacted'
+    - text: What Other Browsers Enforce This Requirement?
+      href: '#what-other-browsers-enforce-this-requirement'
+    - text: What Should I Do?
+      href: '#what-should-i-do'
+    - text: Additional Resources
+      href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}
 
 
 Recent changes to Chrome could affect your agency. Chrome now requires that TLS/SSL certificates issued on or after **March 1, 2018**, have a maximum lifetime of 825 days. Google is enforcing this change for Chrome as a result of the Certification Authority/Browser (CA/B) Forum's Ballot 193 to promote increased web security.<sup>[1](#1)</sup>  
-
-- [What Will Be Impacted?](#what-will-be-impacted)
-- [What Other Browsers Enforce This Requirement?](#what-other-browsers-enforce-this-requirement)
-- [What Should I Do?](#what-should-i-do)
-- [Additional Resources](#additional-resources)
 
 ## What Will Be Impacted?
 A government user will receive an "untrusted site" error when browsing to an intranet website or application if all of the following are true: 

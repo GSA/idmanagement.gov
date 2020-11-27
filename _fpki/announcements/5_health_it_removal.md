@@ -5,21 +5,28 @@ pubDate: March 5, 2019
 archDate: March 4, 2020
 collection: fpki
 category: Removal
-permalink: guidefpki/announcements/2019removal/
+permalink: fpki/announcements/2019removal/
 description: Federal PKI teams recently performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is related to efforts to assess and maintain the mission scope for Federal PKI and reduce burden for commercial and non-profit organizations.  This change is not a distrust action. This announcement provides information related to the CAs affected by this change.
-subnav: fpki
+sidenav: fpkiannouncemenmts
+sticky_sidenav: true
 status: Archive
+
+subnav: 
+  - text: What was the change?
+    href: '#what-was-the-change'
+  - text: What certification authorities were impacted?
+    href: '#what-certification-authorities-were-impacted'
+  - text: What should I do?
+    href: '#what-should-i-do'
+  - text: Who can I contact for help or more information?
+    href: '#who-can-i-contact-for-help-or-more-information'
+  - text: Additional Resources
+    href: '#additional-resources'
 ---
 
 Federal PKI teams performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is related to efforts to assess and maintain the mission scope for Federal PKI and reduce burden for commercial and non-profit organizations. This change is **not a distrust** action. 
 
 This announcement provides details related to the CAs affected by this change. 
-
-- [What was the change?](#what-was-the-change)
-- [What certification authorities were impacted?](#what-certification-authorities-were-impacted)
-- [What should I do?](#what-should-i-do)
-- [Who can I contact for help or more information?](#who-can-i-contact-for-help-or-more-information)
-- [Additional Resources](#additional-resources)
 
 ## What was the change?
 

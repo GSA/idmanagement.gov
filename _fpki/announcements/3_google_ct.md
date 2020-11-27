@@ -4,30 +4,32 @@ title: Chrome Certificate Transparency Requirements
 pubDate: August 10, 2018
 archDate: October 21, 2019
 collection: fpki
-permalink: guidefpki/announcements/2018chromect/
+permalink: fpki/announcements/2018chromect/
 category: Google
 description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
-subnav: fpki
+sidenav: fpkiannoucements
 status: Archived
+sticky_sidenav: true
+
+subnav:
+   - text: How Does This Work?
+     href: '#how-does-this-work'
+   - text: What Will Be Impacted?
+     href: '#what-will-be-impacted'
+   - text: When Will This Start?
+     href: '#when-will-this-start'
+   - text: What Should I Do?
+     href: '#what-should-i-do'
+   - text: Frequently Asked Questions
+     href: '#frequently-asked-questions'
+   - text: Additional Resources
+     href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}
 
 
 As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. In addition, websites must serve proof of certificate inclusion in the CT log through a Signed Certificate Timestamp (SCT). Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
-
-- [How Does This Work?](#how-does-this-work)
-- [What Will Be Impacted?](#what-will-be-impacted)
-- [When Will This Start?](#when-will-this-start)
-- [What Should I Do?](#what-should-i-do)
-  - [Disable CT Enforcement for Government-Furnished Equipment](#disable-ct-enforcement-for-government-furnished-equipment)
-    - [Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (Recommended Configuration)](#option-1disable-ct-enforcement-for-legacy-cas-recommended-configuration)
-    - [Option 2:&nbsp;&nbsp;Disable CT Enforcement for Domains and Sub-Domains](#option-2disable-ct-enforcement-for-domains-and-sub-domains)
-- [Frequently Asked Questions](#frequently-asked-questions)
-  - [1. Will Google's use of CT in Chrome impact my agency's internal, only locally trusted CA TLS/SSL certificates?](#1-will-googles-use-of-ct-in-chrome-impact-my-agencys-internal-only-locally-trusted-ca-tlsssl-certificates)
-  - [2. Why is Google enforcing CT in Chrome?](#2-why-is-google-enforcing-ct-in-chrome)
-  - [3. How do I know whether my intranet website is compliant with CT?](#3-how-do-i-know-whether-my-intranet-website-is-compliant-with-ct)
-- [Additional Resources](#additional-resources)
 
 {% include alert-info.html content="Many popular browsers plan to deploy CT in their product roadmaps. Timelines will be updated on this site as browser deployment dates become known." %}
 

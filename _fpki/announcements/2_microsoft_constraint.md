@@ -8,7 +8,22 @@ permalink: fpki/announcements/2018mspkichanges/
 category: Microsoft
 description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available. 
 status: Archived
-subnav: fpki  
+sidenav: fpkiannouncements
+stikcy_sidenav: true
+
+subnav: 
+    - text: How Does this Work?
+      href: '#how-does-this-work'
+    - text: What Will Be Impacted?
+      href: '#what-will-be-impacted'
+    - text: What Should I Do?
+      href: '#what-should-i-do'
+    - text: How Can I Test?
+      href: '#how-can-i-test'
+    - text: Frequently Asked Questions
+      href: '#frequently-asked-questions'
+    - text: Additional Resources
+      href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}
@@ -17,13 +32,6 @@ subnav: fpki
 Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency. The Federal PKI Policy Authority has requested that Microsoft **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL).
 
 {% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on the timeline for removing COMMON. As more information and additional procedures become available, this announcement will be updated. Please watch for updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %} 
-
-- [How Does this Work?](#how-does-this-work)
-- [What Will Be Impacted?](#what-will-be-impacted)
-- [What Should I Do?](#what-should-i-do)
-- [How Can I Test?](#how-can-i-test)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Additional Resources](#additional-resources)
 
 ## How Does This Work?
 Today, Microsoft distributes hundreds of trusted root CA certificates, including COMMON, through its _Certificate Trust List (CTL)_. Microsoft distributes two CTLs for Windows operating systems: which root CAs are trusted, and which CAs are untrusted. The _Trusted CTL_ (*authrootstl.cab*) adds certificates to the Microsoft Trusted Root Certification Authorities certificate store, and the _Untrusted CTL_ (*disallowedcertstl.cab*) adds certificates to the Untrusted Certificates store. 

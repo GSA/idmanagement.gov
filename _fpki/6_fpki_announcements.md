@@ -5,12 +5,19 @@ title: Announcements
 permalink: fpki/announcements/
 sticky_sidenav: true
 sidenav: fpki
+
+subnav: 
+  - text: Active
+    href: '#active'
+  - text: Archived
+    href: '#archvied'
 ---
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year.
 
 {% include alert-warning.html content="Archived announcements are listed below for historical reference only. These announcements are no longer being updated or maintained." %}
 
+## Active Announcements
 <ul>
     {% for item in site.data.fpkiannoucements reversed %}
       <li>
@@ -23,6 +30,8 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 </ul>
 
 Test Table 2
+
+## Archived Announcements
 
 <table class="usa-table--borderless playbooks-table">
   <thead class="usa-sr-only">
@@ -45,3 +54,16 @@ Test Table 2
     {% endfor %}
   </tbody>
 </table>
+
+Test Table 3
+
+{% for tag in site.fpki.announcements.status %}
+  <h3>{{ status[0] }}</h3>
+  <ul>
+    {% for post in status[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <td>{{ announcement.pubDate }}</td>
+      <td>{{ announcement.description }}</td>
+    {% endfor %}
+  </ul>
+{% endfor %}
