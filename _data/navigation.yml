@@ -1,5 +1,5 @@
 arch:
-  - text: FICAM Architecture Introduction
+  - text: Introduction
     href: /arch/intro-arch/
   - text: Goals & Objectives
     href: /arch/goals/
@@ -13,7 +13,7 @@ arch:
     href: /arch/standards/
 
 piv:
-  - text: PIV Introduction
+  - text: Introduction
     href: /piv/intro-piv/
   - text: Basics of a PIV
     href: /piv/basics/
@@ -69,7 +69,7 @@ pivuser:
     href: /piv/user/signfedregister/
 
 fpki:
-  - text: FPKI Introduction
+  - text: Introduction
     href: /fpki/intro_fpki/
   - text: Certification Authorities
     href: /fpki/ca/
@@ -87,7 +87,7 @@ fpki:
     href: /fpki/notifications/
 
 pacs:
-  - text: PACS Introduction
+  - text: Introduction
     href: /pacs/intro-pacs/
   - text: What is a Physical Access Control System?
     href: /pacs/what-is-pacs/
@@ -107,7 +107,7 @@ pacs:
     href: /pacs/glossary/
 
 pm:
-  - text: FICAM Program Management Introduction
+  - text: Introduction
     href: /ficampm/intro-pm/
   - text: What is ICAM Program Management
     href: /ficampm/overview/

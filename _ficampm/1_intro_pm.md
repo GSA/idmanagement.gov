@@ -3,6 +3,7 @@ layout: page
 collection: ficampm
 title: FICAM Program Management Guide Introduction
 permalink: ficampm/intro-pm/
+sticky_sidenav: true
 sidenav: pm
 ---
 

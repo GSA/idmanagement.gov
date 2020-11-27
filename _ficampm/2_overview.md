@@ -3,6 +3,7 @@ layout: page
 collection: ficampm
 title: What is ICAM Program Management?
 permalink: ficampm/overview/
+sticky_sidenav: true
 sidenav: pm
 ---
 
