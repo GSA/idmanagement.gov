@@ -4,7 +4,7 @@ collection: piv
 title: PIV Playbooks
 permalink: piv/user/
 sticky_sidenav: true
-sidenav: pivuser
+sidenav: piv
 
 subnav:
   - text: Digitally Signing in Microsoft Word
@@ -26,12 +26,12 @@ These user playbooks will help agency users with PIV related tasks.
   {% endfor %}
 </ul>
 
+Test #2
+
 {% for item in site.piv.user reversed %}
   {% assign link = item.permalink | remove: '/' %}
-  {% if link != item.collection %}
   <hr/>
   <h3><a href="{{site.baseurl}}/{{ item.permalink }}"  title="{{ item.title }}">{{ item.title }}</a></h3>
   <strong>Date:</strong> {{ item.pubDate }}<br />
   <strong>Description:</strong> {{ item.description }}
-  {% endif %}
 {% endfor %}
