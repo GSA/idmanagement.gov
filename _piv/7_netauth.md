@@ -46,7 +46,7 @@ There are five configuration categories to review with your colleagues.  All fiv
 
 - [Network Ports and Protocols](../network/ports/)
 - [Domain Controllers](../network/dc/)
-- [Trust Stores](../network/trust/)
+- [Trust Stores](../network/trust-stores/)
 - [Account Linking: Associating PIV credentials with User Accounts](../network/account/)
 - [Group Policies and Enforcement](../network/group/)
 

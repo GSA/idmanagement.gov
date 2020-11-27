@@ -68,5 +68,5 @@ Additional useful information:
 -   There has been testing in some infrastructures to migrate to Elliptic Curve Cryptography (ECC), but there are no ECC certificates for users in production as of the date of this guide
 -   There has been testing in some infrastructures to migrate to 3072-bit (RSA) certificates, but there are no 3072-bit certificates for users in production as of the date of this guide
 
-In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [Federal Public Key Infrastructure page](https://www.idmanagement.gov/topics/fpki/#certificate-policies)){:target="_blank"}.
+In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [Federal Public Key Infrastructure page](https://www.idmanagement.gov/topics/fpki/#certificate-policies){:target="_blank"}.
 
