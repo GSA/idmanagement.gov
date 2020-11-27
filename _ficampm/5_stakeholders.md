@@ -4,6 +4,7 @@ collection: ficampm
 title: Stakeholder Management
 permalink: ficampm/stakeholders/
 sidenav: pm
+sticky_sidenav: true
 
 subnav:
     - text: Identify Stakeholders
@@ -30,10 +31,12 @@ Stakeholders can be internal or external to the agency. Internal stakeholders ma
 
 To understand the impacts of program decisions, you’ll need to identify all stakeholders for your mission delivery, not just those who may be positively affected by the project. The following tables provide a starting point to identify key ICAM stakeholders at the federal and agency levels.
 
-- [Federal Governance Bodies](#federal-governance-bodies)
-- [Internal Standards Body](#internal-standards-body)
-- [External Service Customers](#external-service-customers)
-- [Agency-Level Stakeholders](#agency-level-stakeholders)
+- [Identify Stakeholders](#identify-stakeholders)
+  - [Federal Governance Bodies](#federal-governance-bodies)
+  - [Internal Standards Body](#internal-standards-body)
+  - [External Service Customers](#external-service-customers)
+  - [Agency-Level Stakeholders](#agency-level-stakeholders)
+- [Manage Stakeholders](#manage-stakeholders)
 
 ### Federal Governance Bodies
 

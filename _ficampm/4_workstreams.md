@@ -4,6 +4,7 @@ collection: ficampm
 title: Workstreams
 permalink: ficampm/workstreams/
 sidenav: pm
+sticky_sidenav: true
 
 subnav:
     - text: Administrative Workstreams
