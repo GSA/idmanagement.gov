@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: arch
-title: Introduction
+title: Federal IAM Architecture Introduction
 permalink: arch/intro-arch/
 sidenav: arch
 sticky_sidenav: true
@@ -17,11 +17,11 @@ subnav:
     href: '#ficam-architecture-background'
 ---
 
-This playbook describes the **Federal Identity, Credential, and Access Management (FICAM) Architecture**. FICAM is the Federal Government’s implementation of **Identity, Credential, and Access Management (ICAM)**.
+This guide describes the **Federal Identity, Credential, and Access Management (FICAM) Architecture**. FICAM is the Federal Government’s implementation of **Identity, Credential, and Access Management (ICAM)**.
 
 > **ICAM** enables the **_right individual_** to access the **_right resource_**, at the **_right time_**, for the **_right reason_** in support of **_federal business objectives_**.
 
-This page describes the basics of ICAM, the FICAM Architecture, and how you can use this playbook to facilitate ICAM practices at your agency.
+This page describes the basics of ICAM, the FICAM Architecture, and how you can use this guide to facilitate ICAM practices at your agency.
 
 The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
 
@@ -29,7 +29,7 @@ The following diagram is a high-level view of the ICAM practice areas and suppor
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
 
-Copy the graphics and text throughout this playbook to use at your agency to drive ICAM awareness, strategy developments, and communications.
+Copy the graphics and text throughout this guide to use at your agency to drive ICAM awareness, strategy developments, and communications.
 
 ## What is the FICAM Architecture?
 > **FICAM** is the Federal Government’s enterprise approach to design, plan, and execute common ICAM processes.
