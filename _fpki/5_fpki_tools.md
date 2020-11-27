@@ -3,7 +3,16 @@ layout: page
 collection: fpki
 title: Useful Tools
 permalink: fpki/tools/
+sticky_sidenav: true
 sidenav: fpki
+
+submav:
+    - text: Federal PKI Graph
+      href: ../graph/
+    - text: Federal PKI Activity Report
+      href: ../fpkiar/
+    - text: CITE Participation Guide
+      href: ../citeguide/
 ---
 
 We are always collecting useful tools and links that will help you understand and use the Federal Public Key Infrastructure. The table below provides a list of useful tools.

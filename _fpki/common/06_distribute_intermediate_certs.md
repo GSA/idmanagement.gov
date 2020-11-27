@@ -3,7 +3,14 @@ layout: page
 title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
 collection: fpki
 permalink: fpki/common/certificates/
-subnav: fpki
+sticky_sidenav: true
+sidenav: fpkicommon
+
+submav:
+	- text: Use Microsoft Group Policy Object (GPO)
+    href: '#use-microsoft-group-policy-object-gpo'
+  - text: Use macOS/iOS Configuration Profile
+    href: '#use-macos/ios-configuration-profile'
 ---
 
 To simplify certificate path building within your enterprise, you can *optionally* distribute the CA certificates [issued by the Federal Common Policy CA (FCPCA) G2](#certificates-issued-by-the-federal-common-policy-ca-g2). Sample procedures for the distribution of intermediate CA certificates are below:

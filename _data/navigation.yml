@@ -87,9 +87,9 @@ fpki:
 fpkicas:
   - text: Back to FPKI Guide
     href: /fpki/ca/
-	- text: Federal Common and Federal Bridge Certificate Details
+  - text: Federal Common and Federal Bridge Certificate Details
     href: /fpki/certsandcrls/
-	- text: PIV CAs and Agencies
+  - text: PIV CAs and Agencies
     href: /fpki/pivcas-and-agencies/
     
 fpkicommon:
@@ -111,6 +111,16 @@ fpkicommon:
     href: /fpki/common/migrate
   - text: 8. Verify migration to the Federal Common Policy CA G2
     href: /fpki/common/verify-migration
+
+fpkitools:
+  - text: Back to FPKI Guide
+    href: /fpki/tools/
+  - text: Federal PKI Graph
+    href: /fpki/tools/graph/
+  - text: Federal PKI Activity Report
+    href: /fpki/tools/fpkiar/
+  - text: CITE Participation Guide
+    href: /fpki/tools/citeguide/
 
 pacs:
   - text: Introduction

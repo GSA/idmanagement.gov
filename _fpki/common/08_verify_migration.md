@@ -3,7 +3,16 @@ layout: page
 title: 8. Verify migration to the Federal Common Policy CA G2
 collection: fpki
 permalink: fpki/common/verify-migration/
-subnav: fpki
+sticky_sidenav: true
+sidenav: fpkicommon
+
+submav:
+	- text: Verify Migration on Windows
+	  href: '#verify-migration-on-windows'
+	- text: Verify Migration on macOS
+	  href: '#verify-migration-on-macos'
+	- text: Troubleshooting
+	  href: '#troubleshooting'
 ---
 
 The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) G2 is to validate one of your PIV credential certificates.
@@ -21,8 +30,6 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 ![verify_common_migration](../../assets/fpki/verify-migration-windows.png){:style="width:40%;"}
 
 
-
-
 ### Verify Migration on macOS
 
 1. Click the **Spotlight** icon and search for *Keychain Access*.
@@ -35,6 +42,7 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 
 
 ### Troubleshooting
+
 - If you're building a path to the FCPCA G1
 	- [Verify you have distrusted the FCPCA G1](../common/migrate/#2-distrust-the-federal-common-policy-ca)
 - If a path isn't building at all

@@ -3,7 +3,14 @@ layout: page
 title: 7. Migrate to the Federal Common Policy CA G2
 collection: fpki
 permalink: fpki/common/migrate/
-subnav: fpki
+sticky_sidenav: true
+sidenav: fpkicommon
+
+submav:
+  - text: Disable distribution of the FCPCA G1
+    href: '#disable-distribution-of-the-fcpca-g1'
+  - text: Distrust the FCPCA G1
+    href: '#distrust-the=fcpca-g1'
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
@@ -12,7 +19,7 @@ For the purpose of these steps, we refer to the existing Federal Common Policy C
 
 To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal trust anchor, you'll need to:
 1. [**disable enterprise distribution**](#disable-distribution-of-the-fcpca-g1) of the FCPCA G1 as a _trusted root_ CA certificate, and
-1. [**distrust**](#distrust-the-fcpca-g1) the FCPCA G1.
+2. [**distrust**](#distrust-the-fcpca-g1) the FCPCA G1.
 
 {% include alert-warning.html content="<strong>Heads up!</strong> Test the following steps in a controlled environment <strong>before</strong> you deploy them across your enterprise. If you do not successfully distribute the FCPCA G2 certificate before you begin these steps, you may cause a <strong>denial-of-service</strong>, impacting smartcard logon for your applications and systems." %}
 

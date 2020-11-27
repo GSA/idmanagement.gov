@@ -3,6 +3,7 @@ layout: page
 collection: fpki
 title: Announcements
 permalink: fpki/announcements/
+sticky_sidenav: true
 sidenav: fpki
 ---
 
@@ -21,6 +22,8 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     {% endfor %}
 </ul>
 
+Test Table 2
+
 <table class="usa-table--borderless playbooks-table">
   <thead class="usa-sr-only">
     <tr>
@@ -31,7 +34,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.data.fpkiannouncements | sort: "pubDate" %}
+    {% assign announcements = site.data.fpkiannouncements | sort: "pubDate" reversed%}
     {% for announcement in announcements %}
         <tr class="playbooks-table-row">
           <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>

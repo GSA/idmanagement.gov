@@ -3,7 +3,26 @@ layout: page
 title: CITE Participation Guide
 collection: fpki
 permalink: fpki/tools/cite/
-subnav: fpki
+sticky_sidenav: true
+sidenav: fpkitools
+
+subnav:
+    - text: Overview
+      href: '#overview'
+    - text: Testing Use Cases
+      href: '#testing-use-cases'
+    - text: Technical Specifications
+      href: '#technical-specifications'
+    - text: Scheduled and Unscheduled Testing
+      href: '#scheduled-and-unscheduled-testing'
+    - text: Repository Availability
+      href: '#repository-availability'
+    - text: Technical Support Availability
+      href: '#technical-support-availability'
+    - text: Test Websites
+      href: '#test-websites'
+    - text: Test Policy Object Identifiers
+      href: '#appendix-a-test-policy-object-identiers'
 ---
 
 Prepared By: The FPKI Technical Working Group (TWG)  <br>

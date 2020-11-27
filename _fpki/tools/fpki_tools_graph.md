@@ -3,7 +3,8 @@ layout: page
 title: Federal PKI Graph
 collection: fpki
 permalink: fpki/tools/fpkigraph/
-subnav: fpki
+sticky_sidenav: true
+sidenav: fpkitools
 ---
 **Last Update**: October 19, 2020
 {% include graph.html %}

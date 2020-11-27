@@ -3,6 +3,8 @@ layout: page
 title: Frequently Asked Questions
 collection: fpki
 permalink: fpki/common/faq/
+sticky_sidenav: true
+sidenav: fpkicommon
 ---
  
 ### Will my PIV credentials break or need to be updated or replaced when this change occurs?

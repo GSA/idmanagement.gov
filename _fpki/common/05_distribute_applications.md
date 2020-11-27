@@ -3,7 +3,8 @@ layout: page
 title: 5. Distribute the certificate to applications
 collection: fpki
 permalink: fpki/common/distribute-apps/
-sidenav: fpki
+sticky_sidenav: true
+sidenav: fpkicommon
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
