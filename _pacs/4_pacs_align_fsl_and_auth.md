@@ -131,7 +131,7 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 **Note:** Some authentication mechanisms defined by NIST SP 800-116, Revision 1 might not be available on all user-population cards (for example, on-card biometric comparison or PKI-CAK). 
 
-{% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA). Visit <a href="{{site.baseurl}}/piv/cert-trust/" target=\"_blank\">PIV Guides</a>to learn more about certificate trust." %}
+{% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA). Visit <a href="{{site.baseurl}}/piv/cert-trust/"> target=\"_blank\">PIV Guides</a>to learn more about certificate trust." %}
 
 <br>
 
