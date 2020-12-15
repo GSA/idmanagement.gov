@@ -3,7 +3,7 @@
 # Configuration for type of footer.
 # Footer types can be 'slim', 'default', or 'big'.
 # https://designsystem.digital.gov/components/footers/
-type: default
+type: slim
 
 # Configuration for "Return to top" link.
 # Customize with 'text' and 'href' properties.
@@ -24,7 +24,7 @@ last_updated: true
 
 # Configuration for which links show at the top of the footer.
 # this is a key into _data/navigation.yml
-links: footer
+# links: footer
 
 # Configuration for the big footer's email sign-up form.
 # Set to true to make the form visible.
@@ -32,15 +32,15 @@ links: footer
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: federal Identity, Credential, and Access Management
+heading: Federal Identity, Credential, and Access Management
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: /assets/images/logo-gsa.png
+  - src: https://github.com/GSA/playbooks-wdsv2/blob/staging/_assets/images/logo-gsa.png
     alt: GSA
     external: false
-  - src: /assets/images/logo-cio.png
+  - src: https://github.com/GSA/playbooks-wdsv2/blob/staging/_assets/images/logo-cio.png
     alt": Federal CIO Council
     external: false
 
