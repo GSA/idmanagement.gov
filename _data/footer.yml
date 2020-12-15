@@ -17,7 +17,6 @@ top:
 # Uncomment the following lines to show.
 edit_page:
   text: Edit this page
-  href: {{site.repourl}}/tree/{{ site.editbranch }}/{{ page.path }}
 
 # Configuration for "Last updated" date and time.
 # Uncomment the following line to show.
