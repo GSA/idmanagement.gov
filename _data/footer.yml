@@ -67,12 +67,12 @@ contact:
   #   external: true
   #   type: rss
   heading: Privacy and Website Policy
-    - text: Privacy
-      href: /privacy-policy/
-    - text: Website
-      href: /website-policy/
-    - text: License
-      href: /license/
+     - text: Privacy
+       href: /privacy-policy/
+     - text: Website
+       href: /website-policy/
+     - text: License
+       href: /license/
   # Configuration for contact links for email, phone, etc...
   # contact_links:
   #  - text: (800) CALL-GOVT
