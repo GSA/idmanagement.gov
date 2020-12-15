@@ -17,7 +17,7 @@ top:
 # Uncomment the following lines to show.
 edit_page:
   text: Edit this page
-  href: 
+  href: {{site.repourl}}/tree/{{ site.editbranch }}/{{ page.path }}
 
 # Configuration for "Last updated" date and time.
 # Uncomment the following line to show.
@@ -33,15 +33,15 @@ links: footer
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: General Services Administration
+heading: federal Identity, Credential, and Access Management
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
+  - src: /assets/images/logo-gsa.png
     alt: GSA
     external: false
-  - src: 
+  - src: /assets/images/logo-cio.png
     alt": Federal CIO Council
     external: false
 
@@ -67,12 +67,13 @@ contact:
   #   external: true
   #   type: rss
   # Configuration for contact links for email, phone, etc...
-  heading: Privacy and Website Policy
+  heading: How we use your data
   contact_links:
-     - text: Privacy
+     - text: Privacy Policy
        href: /privacy-policy/
-     - text: Website
+     - text: Website Policy
        href: /website-policy/
+  heading: How you can use our data
      - text: License
        href: /license/
   #  - text: (800) CALL-GOVT
