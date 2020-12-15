@@ -48,6 +48,7 @@ primary_navigation:
       - name: FIPS 201 Approved Product List
         url: /sell/fips201apl/
   - name: Guides
+    children:
       - name: FICAM Architecture
         url: /arch/intro-arch/
       - name: FICAM Program Management
