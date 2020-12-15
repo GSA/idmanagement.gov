@@ -66,6 +66,7 @@ contact:
   #   href: https://usa.gov/
   #   external: true
   #   type: rss
+  # Configuration for contact links for email, phone, etc...
   heading: Privacy and Website Policy
   contact_links:
      - text: Privacy
@@ -74,8 +75,6 @@ contact:
        href: /website-policy/
      - text: License
        href: /license/
-  # Configuration for contact links for email, phone, etc...
-  # contact_links:
   #  - text: (800) CALL-GOVT
   #    href: tel:1-800-555-5555
   #  - text: info@agency.gov
