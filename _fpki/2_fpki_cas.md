@@ -13,7 +13,7 @@ subnav:
     href: '#federal-bridge-certification-authority'
   - text: All Federal PKI Certification Authorities
     href: '#all-federal-pki-certification-authorities'
-  - text: Federal Common and Federal Bridge Certificate Details'
+  - text: Federal Common and Federal Bridge Certificate Details
     href: ../certsandcrls/
   - text: PIV CAs and Agencies
     href: ../pivcas-and-agencies/
