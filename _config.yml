@@ -47,16 +47,17 @@ primary_navigation:
         url: /sell/fips201ep/
       - name: FIPS 201 Approved Product List
         url: /sell/fips201apl/
-  - name: FICAM Architecture
-    url: /arch/intro-arch/
-  - name: FICAM Program Management
-    url: /ficampm/intro-pm/
-  - name: Federal PKI (FPKI)
-    url: /fpki/intro-fpki/
-  - name: Personal Identity Verification (PIV)
-    url: /piv/intro-piv/
-  - name: Physical Access Control Systems (PACS)
-    url: /pacs/intro-pacs/
+  - name: Guides
+      - name: FICAM Architecture
+        url: /arch/intro-arch/
+      - name: FICAM Program Management
+        url: /ficampm/intro-pm/
+      - name: Federal PKI (FPKI)
+        url: /fpki/intro-fpki/
+      - name: Personal Identity Verification (PIV)
+        url: /piv/intro-piv/
+      - name: Physical Access Control Systems (PACS)
+        url: /pacs/intro-pacs/
   - name: Playbooks
     children:
       - name: Playbooks Overview
