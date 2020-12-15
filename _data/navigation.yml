@@ -13,8 +13,6 @@ arch:
     href: /arch/components/
   - text: Standards & Policies
     href: /arch/standards/
-  - text: Return to Top
-    href: "#"
 
 archservices:
   - text: Back to FICAM Architecture
@@ -29,8 +27,6 @@ archservices:
     href: /arch/federation/
   - text: Governance
     href: /arch/governance/
-  - text: Return to Top
-    href: "#"
 
 archusecases:
   - text: Back to FICAM Architecture
@@ -51,8 +47,6 @@ archusecases:
     href: /arch/grantaccess/
   - text: 8. Accept Federation Assertions
     href: /arch/federate/
-  - text: Return to Top
-    href: "#"
 
 ## PIV Navigation
 
