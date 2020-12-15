@@ -67,6 +67,7 @@ contact:
   #   external: true
   #   type: rss
   heading: Privacy and Website Policy
+  contact_links:
      - text: Privacy
        href: /privacy-policy/
      - text: Website
