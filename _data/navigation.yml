@@ -250,6 +250,18 @@ policy:
   - text: Public Domain License
     href: /license/
 
+footer:
+  - text: FICAM Architecture
+    href: /arch/intro-arch/
+  - text: FICAM Program Management
+    href: /ficampm/intro-pm/
+  - text: Federal PKI (FPKI)
+    href: /fpki/intro-fpki/
+  - text: Personal Identity Verification (PIV)
+    href: /piv/intro-piv/
+  - text: Physical Access Control Systems (PACS)
+    href: /pacs/intro-pacs/
+
 # Playbooks Navigation
 
 dira:
