@@ -5,10 +5,6 @@ collection: arch
 permalink: arch/credential/
 sidenav: archservices
 sticky_sidenav: true
-
-subnav:
-  - text: Credential Management Services
-    href: '#credential-management-services'
 ---
 
 ![A green box with the list of Credential Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:align="right" style="padding-left:30px"}
