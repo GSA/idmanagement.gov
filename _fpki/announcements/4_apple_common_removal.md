@@ -6,7 +6,7 @@ archDate: October 21, 2019
 collection: fpki
 category: Apple
 permalink: guidefpki/announcements/2018applepkichanges/
-description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
+description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
 sidenav: fpkiannouncements
 status: Archived
 sticky_sidenav: true
