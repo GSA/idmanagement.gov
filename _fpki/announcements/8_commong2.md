@@ -1,6 +1,5 @@
 ---
 layout: page
-navtitle: Federal Common Policy CA Update
 title: Federal Common Policy CA Update
 pubDate: October 12, 2020
 collection: fpki

@@ -5,6 +5,7 @@ description: The Digital Identity Risk Assessment playbook is a six-step playboo
 collection: playbooks
 permalink: playbooks/dira/
 sidenav: dira
+sticky_sidenav: true
 
 subenav:
     - text: Introduction
