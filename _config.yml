@@ -8,11 +8,11 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Federal ICAM Guides
+title: Federal Identity, Credential, and Access Management
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing the FICAM Roadmap.
-baseurl: "https://idmanagement.gov"
+baseurl: "https://playbooks.idmanagement.gov"
 repourl: "https://github.com/GSA/playbooks-wdsv2"
 
 # GitHub information
