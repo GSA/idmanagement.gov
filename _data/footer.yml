@@ -41,6 +41,9 @@ logos:
     alt: GSA
   - src: https://github.com/GSA/playbooks-wdsv2/blob/staging/_assets/images/logo-cio.png
     alt: Federal CIO Council
+  - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
+    alt: Test
+    external: true
 
 # Configuration for footer contact links
 contact:
