@@ -8,7 +8,7 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Federal Identity, Credential, and Access Management
+title: FICAM
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing the FICAM Roadmap.
