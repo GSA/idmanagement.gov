@@ -5,10 +5,6 @@ collection: arch
 permalink: arch/identity/
 sidenav: archservices
 sticky_sidenav: true
-
-subnav:
-    - text: Identity Management Services
-      href: '#identity-management-services'
 ---
 ![A red box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}
 
