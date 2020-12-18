@@ -1,0 +1,25 @@
+---
+layout: page
+title: FICAM Guides
+permalink: /guides/
+---
+
+<p>A guide includes information on various topics and aimed to assist your agency in operating, maintinaing, and modernizing your identity systems.</p>
+
+<table class="usa-table--borderless guides-table">
+  <thead class="usa-sr-only">
+    <tr>
+      <th id="guides-table-heading-title" scope="col">Title</th>
+      <th id="guides-table-heading-description" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign guides = site.guides | concat: site.data.guides | sort: "title" %}
+    {% for guide in guides %}
+        <tr class="guides-table-row">
+          <td><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></td>
+          <td>{{ guide.description }}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>
