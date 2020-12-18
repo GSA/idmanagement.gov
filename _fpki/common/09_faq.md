@@ -24,7 +24,7 @@ sidenav: fpkicommon
 
 No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
 <br>
-![current_and_future_state]({{site.baseurl}}/img/FCPCA_G2_Transition.jpg) 
+![current_and_future_state](../../assets/fpki/FCPCA_G2_Transition.jpg) 
 
 ## Is the Federal Common Policy CA changing?
 

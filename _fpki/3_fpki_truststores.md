@@ -20,7 +20,7 @@ subnav:
 This is a high-level overview of trust stores (also called *certificate stores*) and a list of commonly used trust stores and settings. 
 
 ### What is a trust store?
-There are millions of identity certificates issued to people and devices around the world.  Certificates constantly change as some are revoked and others are issued, far too many for your computer to maintain an up-to-date list.  
+There are millions of identity certificates issued to people and devices around the world.  Certificates constantly change as some are revoked and others are issued&mdash;far too many for your computer to maintain an up-to-date list.  
 
 Instead, a trust store (a list of **trusted root certificates**) is maintained.  When you are presented with a person or device certificate from a PIV credential, website, email, or some other digital item, your operating system or application will check to see whether the certificate has a valid path to one of the trusted root certificates in its trust store.
 
@@ -29,16 +29,14 @@ Operating systems, browsers, and some commercial software use trust stores to ve
 
 Here are some common trust stores. If the Federal Common Policy CA (FCPCA) (i.e., COMMON) root certificate is included in a trust store and distributed by _default_, the _Includes FCPCA (COMMON)?_ column below will say _Yes_.  
 
-{% include alert-info.html content="The Federal Common Policy CA root certificate will be removed from the Microsoft trust store. It has already been removed from the Apple trust store.  Please see the Announcements for more informations and Solutions sections for mitigation actions that you should take as soon as possible. " %} 
-
-Trust Store|Includes FCPCA<br>(COMMON)?|Trust Store Manager|Platforms Serviced|Program Information Location
----|---|---|---|---
-Microsoft Trusted Root Certificate Program|Yes (COMMON removal pending)|Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
-Apple Root Certificate Program|No|Keychain Access Utility|macOS, iOS, tvOS, WatchOS, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
-Mozilla Network Security Services (NSS)|No |Browser trust store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
-Adobe Approved Trust List|Yes|Application trust store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html
-Java Root Certificate Program|No|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
-Google|No|Google Admin Console|Android OS, Chromium OS|https://www.chromium.org/Home/chromium-security/root-ca-policy
+Trust Store|Includes FCPCA<br>(COMMON)?|Includes FCPCA G2|Trust Store Manager|Platforms Serviced|Program Information Location
+---|---|---|---|---|---
+Microsoft Trusted Root Certificate Program|Yes (COMMON removal pending)| No |Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
+Apple Root Certificate Program|No|No|Keychain Access Utility|macOS, iOS, tvOS, WatchOS, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
+Mozilla Network Security Services (NSS)|No |No|Browser trust store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
+Adobe Approved Trust List|Yes|No|Application trust store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html
+Java Root Certificate Program|No|No|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
+Google|No|No|Google Admin Console|Android OS, Chromium OS|https://www.chromium.org/Home/chromium-security/root-ca-policy
 Opera|Uses Mozilla
 
 {% include alert-info.html content="Google Chrome uses the trust store of the operating system on Microsoft, Apple, and Android systems. Linux-based systems distribute the Mozilla NSS Library, which may be modified by each version of Linux." %}
@@ -57,11 +55,20 @@ Dynamic path validation is a registry setting:
 
 All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency. 
 
-### How do I see which Federal PKI certificate policies are trusted by Adobe?
+### What Federal PKI certificate policies are trusted by Adobe and how do I see them?
+
+A common question is *which certificate policy object identifiers (OIDs) are trusted?* The Federal PKI certificate policy OIDs trusted by Adobe are:
+
+| Certificate Policies | OIDs | Certificate Use |
+|:---------------------|:-----|:----------------|
+| Common Hardware                               | 2.16.840.1.101.3.2.1.3.7  | PIV and Federal Bridge Medium Hardware Token                                      |
+| Federal Bridge Medium Hardware Commercial Best Practice | 2.16.840.1.101.3.2.1.3.15 | Federal Bridge Medium Hardware Token (PKI Trusted Roles may not be U.S. citizens) |
+| Common High                                   | 2.16.840.1.101.3.2.1.3.16 | High Assurance Policy                                                             |
+| PIV-I Hardware                                | 2.16.840.1.101.3.2.1.3.18 | PIV-Interoperable                                                                 |
 
 Federal PKI certificates may be used for digitally signing documents between federal agencies and with business partners.  Adobe is just one option used for digital signatures.
 
-A common question is *which certificate policy object identifiers (OIDs) are trusted?* To see the certificate policy OIDs trusted by Adobe Acrobat:
+To see and verify which Federal PKI certificate policy OIDs are trusted by Adobe Acrobat:
 
   1. Open Adobe Acrobat.  
   1. _Edit_ > _Preferences_ > _Signatures_ > _Identities & Trusted Certificates_ > _More_.
@@ -69,16 +76,3 @@ A common question is *which certificate policy object identifiers (OIDs) are tru
   3. Choose _Federal Common Policy CA_ and then the _Certificate Details_ tab.
   3. Choose the _Certificate Viewer_ window, and click the _Policies_ tab to see _Policy Restrictions_. 
   4. In _Certificate Policies_, you will see a comma-separated list of policy OIDs.
-
-### What certificate policy OIDs are included in COMMON?
-
-The certificate policy OIDs defined in the *X.509 Certicate Policy for the U.S. Federal PKI Common Policy Framework* are:
-
-| Certificate Policies                                 | OIDs                | Certificate Use                                       |
-|:-----------------------------------------------|:---------------------------|:-----------------------------------------------------------------------------------|
-| Common Hardware                               | 2.16.840.1.101.3.2.1.3.7  | PIV and Federal Bridge Medium Hardware Token                                      |
-| Federal Bridge Medium Hardware Commercial Best Practice* | 2.16.840.1.101.3.2.1.3.15 | Federal Bridge Medium Hardware Token (PKI Trusted Roles may not be U.S. citizens) |
-| Common High                                   | 2.16.840.1.101.3.2.1.3.16 | High Assurance Policy                                                             |
-| PIV-I Hardware                                | 2.16.840.1.101.3.2.1.3.18 | PIV-Interoperable                                                                 |
-| SHA-1 Hardware                                | 2.16.840.1.101.3.2.1.3.24 | SHA-1 Medium Hardware Tokens through SHA-1 Federal Root CA                |
-
