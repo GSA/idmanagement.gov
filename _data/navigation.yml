@@ -151,6 +151,8 @@ fpkicommon:
     href: /fpki/common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
     href: /fpki/common/verify-migration/
+  - text: 9. Frequently Asked Questions
+    href: /fpki/common/faq/
 
 fpkitools:
   - text: Back to FPKI Guide
