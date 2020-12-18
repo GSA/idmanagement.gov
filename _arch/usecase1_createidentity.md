@@ -5,14 +5,6 @@ collection: arch
 permalink: arch/createidentity/
 sidenav: archusecases
 sticky_sidenav: true
-
-subnav:
-  - text: Use Case
-    href: '#use-case'
-  - text: Example
-    href: '#example'
-  - text: Next Steps
-    href: '#next-steps'
 ---
 
 ![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service.](../../assets/arch/usecases/Identity-Creation.png){:align="right" style="padding-left:15px"}

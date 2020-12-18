@@ -5,14 +5,6 @@ collection: arch
 permalink: arch/grantaccess/
 sidenav: archusecases
 sticky_sidenav: true
-
-subnav:
-  - text: Use Case
-    href: '#use-case'
-  - text: Example
-    href: '#example'
-  - text: Next Steps
-    href: '#next-steps'
 ---
 
 ![This use case corresponds to the Authentication and Authorization service areas of Access Management.](../../assets/arch/usecases/Access-AuthnAuthz.png){:align="right" style="padding-left:15px"}

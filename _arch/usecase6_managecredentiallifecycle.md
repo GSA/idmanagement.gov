@@ -5,18 +5,6 @@ collection: arch
 permalink: arch/managecredential/
 sidenav: archusecases
 sticky_sidenav: true
-
-subnav:
-  - text: Reset a Credential
-    href: '#reset-a-credential'
-  - text: Renew a Credential
-    href: '#renew-a-credential'
-  - text: Revoke a Credential
-    href: '#revoke-a-credential'
-  - text: Example
-    href: '#example'
-  - text: Next Steps
-    href: '#next-steps'
 ---
 
 ![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. ](../../assets/arch/usecases/Credential-MaintenanceRevocation.png){:align="right" style="padding-left:15px"}

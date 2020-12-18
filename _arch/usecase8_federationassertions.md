@@ -5,14 +5,6 @@ collection: arch
 permalink: arch/federate/
 sidenav: archusecases
 sticky_sidenav: true
-
-subnav:
-  - text: Use Case
-    href: '#use-case'
-  - text: Example
-    href: '#example'
-  - text: Next Steps
-    href: '#next-steps'
 ---
 
 ![Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation.](../../assets/arch/usecases/Federation-AttributeExchange.png){:align="right" style="padding-left:15px"}
