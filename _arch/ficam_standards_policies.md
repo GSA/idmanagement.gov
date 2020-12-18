@@ -4,6 +4,7 @@ collection: arch
 title: Standards and Policies
 permalink: arch/standards/
 sidenav: arch
+sticky_sidenav: true
 
 subnav:
   - text: Laws
