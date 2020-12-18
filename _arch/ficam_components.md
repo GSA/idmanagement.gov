@@ -14,7 +14,7 @@ subnav:
     - text: Access Control Systems
       href: '#access-control-systems'
     - text: Credential Management Systems
-      href: '#credential-managemenmt-systems'
+      href: '#credential-management-systems'
     - text: Governance Systems
       href: '#governance-systems'
     - text: Agency Endpoints
