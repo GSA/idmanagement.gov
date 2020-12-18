@@ -38,7 +38,7 @@ archusecases:
   - text: 3. Manage the Entitlements Lifecycle
     href: /arch/manageaccess/
   - text: 4. Create and Issue a Credential
-    href: /arch/credential/
+    href: /arch/usecredential/
   - text: 5. Issue a Derived Credential
     href: /arch/derivecredential/
   - text: 6. Manage the Credential Lifecycle
