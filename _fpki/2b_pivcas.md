@@ -15,10 +15,14 @@ subnav:
     href: '#maintenance-mode-issuing-ca-certificate-details'
 ---
 
-tent="This table was last updated on <b>November 9, 2020</b>. Please email fpki@gsa.gov to suggest an update or correction." %} 
+The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
+
+## PIV Issuer Information
+
+{% include alert-info.html content="This table was last updated on <b>November 9, 2020</b>. Please email fpki@gsa.gov to suggest an update or correction." %}
 
 <style>
-	.title {font-size: 16px; color: white; background-color: #112e51; font-weight: 900;text-align: center;}
+	.title {font-size: 16px; color: white; background-color: #2491ff; font-weight: 900; text-align: center;}
 	.body {font-size: 14px;text-align: center;}
 
 	h4:before {

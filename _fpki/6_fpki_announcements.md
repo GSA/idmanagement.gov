@@ -25,7 +25,8 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     {% assign announcements = site.data.fpkiactiveannouncements %}
     {% for announcement in announcements %}
         <tr class="playbooks-table-row">
-          <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
+          <td><a href="{{ announcement.url }}">{{ announcement.title }}</a></td>
+          <td>[[ announcement.status }}</td>
           <td>{{ announcement.pubDate }}</td>
           <td>{{ announcement.description }}</td>
         </tr>
@@ -45,7 +46,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.data.fpkieannouncements %}
+    {% assign announcements = site.data.fpkiarchiveeannouncements %}
     {% for announcement in announcements %}
         <tr class="announcement-table-row">
           <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
