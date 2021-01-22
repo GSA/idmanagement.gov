@@ -24,6 +24,8 @@ subnav:
     href: ../common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
     href: ../common/verify-migration/
+  - text: Frequently Asked Questions
+    href: ../common/faq/
 ---
 
 The Federal Government recently deployed the **Federal Common Policy CA (FCPCA) G2**, a new Federal Public Key Infrastructure (FPKI) root Certification Authority (CA). As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCA G2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you'll find important dates and steps for a successful operational transition to the FCPCA G2 trust anchor.

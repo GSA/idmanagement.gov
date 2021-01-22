@@ -38,7 +38,7 @@ archusecases:
   - text: 3. Manage the Entitlements Lifecycle
     href: /arch/manageaccess/
   - text: 4. Create and Issue a Credential
-    href: /arch/credential/
+    href: /arch/usecredential/
   - text: 5. Issue a Derived Credential
     href: /arch/derivecredential/
   - text: 6. Manage the Credential Lifecycle
@@ -151,6 +151,8 @@ fpkicommon:
     href: /fpki/common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
     href: /fpki/common/verify-migration/
+  - text: 9. Frequently Asked Questions
+    href: /fpki/common/faq/
 
 fpkitools:
   - text: Back to FPKI Guide
