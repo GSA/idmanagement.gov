@@ -9,7 +9,7 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "dependencies": {
-    "uswds": "~2.9.0"
+    "uswds": "~2.9.0",
     "immer": ">=8.0.1"
   },
   "devDependencies": {
