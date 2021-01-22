@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "uswds": "~2.9.0"
+    "immer": ">=8.0.1"
   },
   "devDependencies": {
     "a11y": "^0.5.1",
