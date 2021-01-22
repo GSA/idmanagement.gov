@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "uswds": "~2.9.0",
-    "immer": ">=8.0.1"
+    "netlify-cms": "^2.10.65"
   },
   "devDependencies": {
     "a11y": "^0.5.1",
