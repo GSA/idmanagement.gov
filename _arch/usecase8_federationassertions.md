@@ -48,7 +48,7 @@ td {
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>4. Agency B grants access</strong> <br> <img src="../../assets/arch/usecases/8-4.png" width="250" alt="A diagram showing Agency B access control system granting access to an employee or contractor from Agency A."></td>
-    <td style="border:0px;"> Agency B consumes the assertion data, correlating it with an established account or local identity and makes an access control decision.<br><br>The Agency B system redirects the employee or contractor to the federated service.</td>
+    <td style="border:0px;"> Agency B consumes the assertion data, optionally correlating it with an established account or local identity and makes an access control decision.<br><br>The Agency B system redirects the employee or contractor to the federated service.</td>
   </tr>
 </table>
 
