@@ -31,11 +31,11 @@ td {
 <table>
   <tr>
     <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br> <img src="../../assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source."></td>
-    <td style="border:0px;">The administrator collects identity information from the employee or contractor.<br><i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
+    <td style="border:0px;">The administrator collects identity information from the employee or contractor.<br><br><i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>2. Create an enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-2.png" width="250" alt="A diagram showing the authoritative source populating the identity information into a data repository, creating an enterprise identity in the authoritative source."></td>
-    <td style="border:0px;">The authoritative source sends the information to the system’s data repository. <br> Result: An enterprise identity in the authoritative source for the employee or contractor.</td>
+    <td style="border:0px;">The administrator adds the identity information to the authoritative source, a data repository. <br><br> Result: An enterprise identity in the authoritative source for the employee or contractor.</td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>3. Maintain the enterprise identity</strong></td>
@@ -47,7 +47,7 @@ td {
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source."></td>
-    <td style="border:0px;">If an individual has updated personal information, there are two ways to update the enterprise identity: <ol> <li> The administrator updates the individual’s enterprise identity attributes directly in the authoritative sources.</li> <li>The individual uses an agency application to update their personal information, and the application updates the individual’s enterprise identity attributes in the authoritative sources.</li></ol></td>
+    <td style="border:0px;">If an individual has updated personal information, there are two ways to update the enterprise identity: <br> <br> <ul> <li> The administrator updates the individual’s enterprise identity attributes directly in the authoritative sources.</li> <li>The individual uses an agency application to update their personal information, and the application updates the individual’s enterprise identity attributes in the authoritative sources.</li></ul></td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity."></td>
