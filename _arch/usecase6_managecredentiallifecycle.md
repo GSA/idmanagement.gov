@@ -67,7 +67,7 @@ In this use case, an administrator needs to issue a new credential to replace on
   </tr>
     <tr>
     <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br> <img src="../../assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter."></td>
-    <td style="border:0px;">The system issues a new credential to the employee or contractor.</td>
+    <td style="border:0px;">The system issues a new credential to the employee or contractor, and updates the associated enterprise identity record.</td>
   </tr>
 </table>
 
@@ -97,7 +97,3 @@ In this use case, an administrator needs to revoke an active credential.
 - *Reset* - I want to verify the identity of an employee or contractor that has already been issued a credential, and reset their PIN or password so that they can continue to access enterprise resources.
 - *Renew* - I want to verify the identity and eligibility of an employee or contractor, with a previously issued credential that is near expiration, so that they may be issued a new enterprise credential to keep their ability to access enterprise resources.
 - *Revoke* - I want to remove access to enterprise resources for an employee or contractor, so that they can no longer use the protected resource. 
-
-## Next Steps
-
-[Manage the entitlements lifecycle](../manageaccess) of the person and credential.
