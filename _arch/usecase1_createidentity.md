@@ -31,11 +31,11 @@ td {
 <table>
   <tr>
     <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br> <img src="../../assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source."></td>
-    <td style="border:0px;">The administrator collects identity information from the employee or contractor, and adds this information to the authoritative source.<i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
+    <td style="border:0px;">The administrator collects identity information from the employee or contractor.<br><i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>2. Create an enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-2.png" width="250" alt="A diagram showing the authoritative source populating the identity information into a data repository, creating an enterprise identity in the authoritative source."></td>
-    <td style="border:0px;">The authoritative source sends the information to the system’s data repository. <br><br> Result: An enterprise identity in the authoritative source for the employee or contractor.</td>
+    <td style="border:0px;">The authoritative source sends the information to the system’s data repository. <br> Result: An enterprise identity in the authoritative source for the employee or contractor.</td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>3. Maintain the enterprise identity</strong></td>
