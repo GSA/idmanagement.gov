@@ -13,7 +13,7 @@ You can assign access entitlements to individuals, roles, and groups. These enti
 
 ---
 
-<p style="font-size: 3rem; font-weight: 700;">Use Case</p>
+## Use Case
 
 In this use case, an administrator needs to assign entitlements to an employee or contractor.
 
@@ -46,8 +46,4 @@ td {
 ## Examples
 
 - I want to indicate that an employee or contractor requires and is allowed access to an agency service, so that they can access the service when needed.
-- An employee is hired to be part of the financial review team and requires access to financial applications. The employee may have a specific role assigned to their enterprise identity record. 
-
-## Next Steps
-
-[Create and issue a credential](../usecredential), and [grant access to agency services](../grantaccess).
+- An employee is hired to be part of the financial review team and requires access to financial applications. The employee has a role assigned to their enterprise identity record, and associated with their identity attributes. 
