@@ -45,7 +45,6 @@ td {
   </tr>
 </table>
 
-
 ## Examples
 
 - I want to provide an employee or contractor, who has already been issued an enterprise credential, a derived credential so that they can authenticate to enterprise applications.
