@@ -13,7 +13,7 @@ When you onboard an employee or contractor at your agency, you collect identity 
 
 ---
 
-### Use Case
+## Use Case
 
 In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.
 
@@ -55,13 +55,6 @@ td {
   </tr>
 </table>
 
-
-
-
 ## Example
 
 I want to create a new enterprise identity, so that an individual may be established as a federal employee or contractor that will need to be identity proofed, credentialed, and granted access to agency services.
-
-## Next Steps
-
-[Proof the identity](../proofidentity) and [assign appropriate access entitlements](../manageaccess).
