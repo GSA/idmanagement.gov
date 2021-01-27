@@ -41,7 +41,7 @@ td {
   </tr>
     <tr>
     <td style="width:250px;border:0px;"><strong>3. Generate the derived credential</strong> <br> <img src="../../assets/arch/usecases/5-3.png" width="250" alt="A diagram showing an enterprise identity management system generating a derived credential for an employee or contracter."></td>
-    <td style="border:0px;">Aggregate identity data to create a complete identity profile.</td>
+    <td style="border:0px;">Generate the derived authenticator and note the change in the user's enterprise identity record.</td>
   </tr>
 </table>
 
