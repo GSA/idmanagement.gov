@@ -43,7 +43,7 @@ td {
   </tr>
     <tr>
     <td style="width:250px;border:0px;"><strong>3. Generate and assign the authenticator(s)</strong> <br> <img src="../../assets/arch/usecases/4-3.png" width="250" alt="A diagram showing an administrator generating and assigning an authenticator to the employee or contractor."></td>
-    <td style="border:0px;">The individual presents a second form of government ID or an account number.</td>
+    <td style="border:0px;">Generate and assign the authenticator to the individual.</td>
   </tr>
 </table>
 
