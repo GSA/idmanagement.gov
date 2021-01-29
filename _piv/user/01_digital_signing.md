@@ -66,8 +66,6 @@ This guide will walk you through the steps for digitally signing a document in M
 
 {% include alert-info.html content="Once you've digitally signed your document, if you edit it, Word will remove the digital signature. Don't worry. You can always go back to Step 1 and digitally sign it again." %}
 
-<br/>
-
 ## Add an Invisible Digital Signature
 
 You can add an _invisible digital signature_ to prevent your name from appearing in a document.  
@@ -87,8 +85,6 @@ You can add an _invisible digital signature_ to prevent your name from appearing
 
 6. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**.<br/>
 ![Signature Confirm]({{site.baseurl}}/assets/piv/word-signature-6.png)
-
-<br/>
 
 ## Add Multiple Digital Signatures Using Signature Lines
 
@@ -125,26 +121,22 @@ Multiple approvers may digitally sign a document. Use the same procedures as you
 _The final approver will see multiple "invisible" signatures in the document._<br/>
 ![View Signature]({{site.baseurl}}/assets/piv/word-signature-12.png)
 
-<br/>
-
 ## View Digital Signatures
 
 {% include alert-warning.html content="If you use Word 2013 and open a digitally signed Word 2007 or 2010 document, you may have compatibility issues." %} 
 <br/>
 You can view digital signatures in an incompatible Word document in one of two ways:
 
-1. Click the **View Signatures** button just below the Word ribbon.<br/>
+Click the **View Signatures** button just below the Word ribbon.<br/>
 ![View Signature]({{site.baseurl}}/assets/piv/word-signature-16.png)
 
 **_OR_**
 
-2. Click the **File** tab and select **Info**. Then click **View Signatures**.<br/>
+Click the **File** tab and select **Info**. Then click **View Signatures**.<br/>
 ![View Signature]({{site.baseurl}}/assets/piv/word-signature-11.png)
 
 For either option, you will be able to see the digital signature details in the **Signatures** box.<br/>
 ![View Signature]({{site.baseurl}}/assets/piv/word-signature-17.png)
-
-<br/>
 
 ## Remove a Digital Signature
 
@@ -156,8 +148,6 @@ For either option, you will be able to see the digital signature details in the 
 4. Right-click on the signature and then click **Remove Signature**.  
 5. When prompted, click **Yes**.<br/>
 ![Remove Signature]({{site.baseurl}}/assets/piv/word-signature-8.png)
-
-<br/>
 
 ## Verify Digital Signature Settings
 
