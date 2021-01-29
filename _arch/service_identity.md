@@ -23,7 +23,7 @@ Agencies should manage identity attributes as centrally as possible and distribu
 - *Contact attributes* - Physical location, government phone number, and government email address.
 - *Authorization attributes* - Clearance, training, and job codes.
 
-Identity proofing is how an agency verifies an enterprise identity. The complexity of this process depends on the Identity Assurance Level (IAL) you require for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver's licesne or utility bill. The agency verifies the identity documents and the individual's photo (biometric).
+Identity proofing is how an agency verifies an enterprise identity. The complexity of this process depends on the Identity Assurance Level (IAL) you require for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver's license or utility bill. The agency verifies the identity documents and the individual's photo (biometric).
 
 An identifier is a unique attribute used to locate an identity in a system:
 
