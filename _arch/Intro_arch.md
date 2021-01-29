@@ -17,13 +17,13 @@ subnav:
     href: '#ficam-architecture-background'
 ---
 
-This site is the home of the Federal Identity, Credential, and Access Management (FICAM) Architecture.  These pages describe the basics of ICAM, the FICAM Architecture, and how you can use this information to facilitate enterprise ICAM practices at your agency. 
+This site is the home of the Federal Identity, Credential, and Access Management (FICAM) Architecture. These pages describe the basics of ICAM, the FICAM Architecture, and how you can use this information to facilitate enterprise ICAM practices at your agency. 
 
 FICAM is the Federal Government’s implementation of Identity, Credential, and Access Management (ICAM).
 
 > **_ICAM_** is the set of tools, policies, and systems that an agency uses to enable the **_right individual_** to access the **_right resource_**, at the **_right time_**, for the **_right reason_** in support of **_federal business objectives_**.
 
-This version of the FICAM Architecture encompasses the **enterprise** ICAM policies, technologies and system approaches for government employees, contractors, and authorized partners. Citizen interactions with the federal government - or consumer ICAM -  are not covered under this version of the FICAM Architecture.
+This version of the FICAM Architecture encompasses the **enterprise** ICAM policies, technologies and system approaches for government employees, contractors, and authorized partners. Citizen interactions with the federal government - or consumer ICAM - are not covered under this version of the FICAM Architecture.
 
 - [What is ICAM?](#what-is-icam)
 - [What is the FICAM Architecture?](#what-is-the-ficam-architecture)
@@ -66,8 +66,8 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky"><img src="../../assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management." width="125"><br></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency uses attributes to establish and maintain enterprise identities for employees and contractors.</td>
+    <td class="tg-0pky"><img src="../../assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125"><br></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees and contractors.</td>
   </tr>
   <tr>
     <td class="tg-0pky"><img src="../../assets/arch/intro_ICAM-Credential.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management." width="125"><br></td>
@@ -81,11 +81,11 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
     <td class="tg-yj5y" colspan="2"><span style="font-weight:bold">ICAM Supporting Elements</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><img src="../../assets/arch/Intro_ICAM-Federation.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for Federation." width="125"><br></td>
+    <td class="tg-0pky"><img src="../../assets/arch/Intro_ICAM-Federation.png" alt="Three hexagons with the letters I in orange, C in green, and A in blue, with a gray banner for Federation." width="125"><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Federation</span> is the technology, policies, standards, and processes that allow an agency to accept digital identities, attributes, and credentials managed by other agencies.</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><img src="../../assets/arch/intro_ICAM-Governance.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a navy banner for Governance." width="125"><br></td>
+    <td class="tg-0pky"><img src="../../assets/arch/intro_ICAM-Governance.png" alt="Three hexagons with the letters I in orange, C in green, and A in blue, with a navy banner for Governance." width="125"><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Governance</span> is the set of practices and systems that guides ICAM functions, activities, and outcomes.</td>
   </tr>
 </tbody>
