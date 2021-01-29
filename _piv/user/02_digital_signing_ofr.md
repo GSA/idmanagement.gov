@@ -145,7 +145,7 @@ If you are using purchased certificates, such as from an Entrust vendor, you can
 
 ### How do I identify the Purchased Certificates and PIV Card Certificates when signing a document?
 When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) instructions above, note the different icons for the PIV and purchased certificates:<br/>
-![Certificate Type Icons]({../../assets/piv/ofr_certificate_types.png){:style="width:40%;"}
+![Certificate Type Icons]({{site.baseurl}}/assets/piv/ofr_certificate_types.png){:style="width:40%;"}
 
 ### Some of our signers use MS Word for Apple on iPad.  Will this work for PKI submission?
 Microsoft has not put that function (PKI-based digital signature) into the MS Word for Mac (Office for Mac) software.  We recognize that some agencies have signers who use the Mac platform. We expect to run testing when this function becomes available.  
