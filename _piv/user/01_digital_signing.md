@@ -36,7 +36,7 @@ This guide will walk you through the steps for digitally signing a document in M
 
 1. To add a digital signature, open your Microsoft Word document and click where you'd like to add your signature line. 
 2. From the Word ribbon, select the **Insert** tab and then click **Signature Line** in the **Text** group.<br/>
-![Insert Signature Line](../assets/piv/word-signature-1.png)
+![Insert Signature Line]({{site.baseurl}}/assets/piv/word-signature-1.png)
 
 3. _A **Signature Setup** pop-up box appears._ Enter your information in the text fields and click **OK**.<br/>
 ![Signature Setup Box](../../assets/piv/word-signature-2.png)
