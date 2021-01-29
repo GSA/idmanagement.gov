@@ -25,7 +25,7 @@ The Services Framework is designed for ICAM program managers and information tec
 
 These pages describe the services that support each ICAM practice area and supporting element, with descriptions and simple graphics for you to use:
 
-* [Identity Management]({{site.baseurl}}{{page.url}}identity)
+* [Identity Management](../identity)
 * [Credential Management]({{site.baseurl}}{{page.url}}credentials)
 * [Access Management]({{site.baseurl}}{{page.url}}access)
 * [Federation]({{site.baseurl}}{{page.url}}federation)
