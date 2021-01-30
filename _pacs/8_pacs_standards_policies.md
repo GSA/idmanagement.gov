@@ -52,7 +52,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FICAM_Roadmap_and_Implem_Guid.pdf){:target="_blank"}, Version 2.0, Executive Office of the President (EOP) and Federal Chief Information Officers (CIO) Council, December 2, 2011.
 
-[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FPKI-Overlay-of-SP-800-53.pdf){:target="_blank"}, v2.0.0, April 24, 2014.
+[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-overlay-sp-800-53.pdf){:target="_blank"}, v2.0.0, April 24, 2014.
 
 [FIPS PUB 199, _Standards for Security Categorization of Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"}, NIST, February 2004.
 
@@ -60,7 +60,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [FIPS 201-2, _Personal Identity Verification (PIV) of Federal Employees and Contractors_](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}, NIST, August 2013.
 
-[NIST SP 800-53, Revision 4, _Recommended Security Controls for Federal Information Systems and Organizations_](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf){:target="_blank"}, April 2013.
+[NIST SP 800-53, Revision 5, _Recommended Security Controls for Federal Information Systems and Organizations_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf){:target="_blank"}, September 2020.
 
 [NIST SP 800-60, Volume 1, Revision 1, _Guide for Mapping Types of Information and Information Systems to Security Categories_](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v1r1.pdf ){:target="_blank"}, August 2008.
 
@@ -70,7 +70,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [NIST SP 800-116, Revision 1, _Guidelines for the Use of PIV Credentials in Facility Access_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf){:target="_blank"}, June 2018. 
 
-[NIST SP 800-171, Revision 1, _Protecting Controlled Unclassified Information in Nonfederal Information Systems and Organizations_](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r1.pdf){:target="_blank"}, December 2016.
+[NIST SP 800-171, Revision 2, _Protecting Controlled Unclassified Information in Nonfederal Information Systems and Organizations_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf){:target="_blank"}, February 2020.
 
 ## Guidance and Best Practices
 
