@@ -74,7 +74,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 ## Guidance and Best Practices
 
-[_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.dhs.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}, Interagency Security Council (ISC), December 2015.
+[_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}, Interagency Security Council (ISC), December 2015.
 
 [_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/Procurement-Language-1.1.0.pdf){:target="_blank"}, v1.1.0, GSA, February 24, 2015.
 
@@ -84,7 +84,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf){:target="_blank"}, Version 2.0.1, July 27, 2017.
 
-[_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.dhs.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}, ISC, 2nd Edition, November 2016.
+[_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}, ISC, 2nd Edition, November 2016.
 
 ## Other Relevant Publications
 
