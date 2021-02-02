@@ -920,7 +920,7 @@ $(document).ready(function() {
         var _cG = $("#leftcolumn");
         if (_cG.offset().left < 0) {
             _cG.animate({
-                "left" : "0px"
+                "left" : "-200px"
             }, function() {
                 $("#aUnfold").attr("class","leftarrow");
                 $("#zonecentre").css({
