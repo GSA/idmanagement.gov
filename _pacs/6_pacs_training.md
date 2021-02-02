@@ -17,6 +17,10 @@ subnav:
 
 Specialized training is essential for Physical Access Control System (PACS) technical leads and team members. This page describes roles, responsibilities, and training opportunities. 
 
+* [Technical Roles and Responsibilities](#technical-roles-and-responsibilities)
+* [Recommended Technical Training](#recommended-technical-training)
+* [Training Opportunities](#training-opportunities)
+
 ## Technical Roles and Responsibilities
 
 PACS project teams consist of both agency employees and contractors. Teams include an IT Architect, Engineers, Technicians, Operators, System Administrators, Physical Security Specialists, Facility Managers, a variety of technical services team members, etc. The table below describes the most common PACS technical roles: 
