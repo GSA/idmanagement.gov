@@ -353,10 +353,10 @@ a:hover {
     border-width: 1px;
     top: -665px; 
     bottom: 0px; 
-    right: -285px;
-    width: 300px;
+    right: -250px;
+    width: 265;
     height: 40px;
-	float: right;
+    float: right;
 }
 
 #autocomplete div {
