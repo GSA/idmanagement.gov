@@ -42,7 +42,7 @@ logos:
     external: true
   - src: /assets/img/logo-gsa.png
     alt: GSA
-  - src: /assets/img/icon-cio.png
+  - src: /assets/img/logo-cio.png
     alt: Federal CIO Council
 
 # Configuration for footer contact links
