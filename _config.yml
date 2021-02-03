@@ -64,16 +64,16 @@ primary_navigation:
     url: /piv/intro-piv/
   - name: Physical Access Control Systems (PACS)
     url: /pacs/intro-pacs/
-#  - name: Playbooks
-#    children:
-#      - name: Playbooks Overview
-#        url: /playbooks/
-#      - name: Digitial Identity Risk Assessment (DIRA)
-#        url: /playbooks/dira/
-#      - name: Digital Worker
-#        url: /playbooks/dw/
-#      - name: Enterprise Single Sign-On
-#        url: /playbooks/sso/
+  - name: Playbooks
+    children:
+      - name: Playbooks Overview
+        url: /playbooks/
+      - name: Digitial Identity Risk Assessment (DIRA)
+        url: /playbooks/dira/
+      - name: Digital Worker
+        url: /playbooks/dw/
+      - name: Enterprise Single Sign-On
+        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
