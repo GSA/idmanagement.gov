@@ -40,7 +40,7 @@ logos:
   - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
     alt: Test
     external: true
-  - src: /assets/img/logo.gsa.png
+  - src: /assets/img/logo-gsa.png
     alt: GSA
   - src: /assets/img/icon-cio.png
     alt: Federal CIO Council
