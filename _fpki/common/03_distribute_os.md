@@ -66,11 +66,11 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
     ```
 
 1. Confirm that the output details include FCPCA G2.
-1. Verify the certificate details against the [expected values]({{site.baseurl}}/_fpki/common/obtain-and-verify) (for example, serial number, hash, etc.).
+1. Verify the certificate details against the [expected values]({site.baseurl}/_fpki/common/obtain-and-verify) (for example, serial number, hash, etc.).
 
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 using Microsoft Certutil.
-<br>![A .gif that shows the distribution and verification steps performed using Microsoft Certutil](../../assets/fpki/certutil.gif){:style="width:85%;"}
+<br>![A .gif that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}
 
 
 ### Use Microsoft Group Policy Object (GPO)
@@ -103,7 +103,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 with Microsoft GPO.
 <br>
-![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)](../../assets/fpki/gpo.gif){:style="width:85%;"}
+![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}
 
 ### Use third-party configuration management tools
 
