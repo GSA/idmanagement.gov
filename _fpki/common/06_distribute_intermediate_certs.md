@@ -66,7 +66,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/fpki/create_profile.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/assets/fpki/create_profile.mp4" type="video/mp4">
 </video>
 <br>
 
