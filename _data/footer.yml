@@ -37,12 +37,9 @@ heading: Federal Identity, Credential, and Access Management
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
-    alt: Test
-    external: true
-  - src: /assets/img/logo.gsa.png
+  - src: /assets/img/logo-gsa.png
     alt: GSA
-  - src: /assets/img/icon-cio.png
+  - src: /assets/img/logo-cio.png
     alt: Federal CIO Council
 
 # Configuration for footer contact links
@@ -67,6 +64,10 @@ contact:
   #   external: true
   #   type: rss
   # Configuration for contact links for email, phone, etc...
+  heading: 
+    - text: IDManagement.gov
+      href: https://www.idmanagement.gov
+      external: true
   heading: How We Use Your Data
   contact_links:
      - text: Privacy Policy
