@@ -8,7 +8,7 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Federal ICAM Playbooks
+title: Federal ICAM
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing the FICAM Roadmap.
@@ -54,26 +54,26 @@ primary_navigation:
 #        url: /sell/fips201ep/
 #      - name: FIPS 201 Approved Product List
 #        url: /sell/fips201apl/
-  - name: FICAM Architecture
-    url: /arch/intro-arch/
+#  - name: FICAM Architecture
+#    url: /arch/intro-arch/
   - name: FICAM Program Management
     url: /ficampm/intro-pm/
-  - name: Federal PKI (FPKI)
-    url: /fpki/intro-fpki/
-  - name: Personal Identity Verification (PIV)
-    url: /piv/intro-piv/
-  - name: Physical Access Control Systems (PACS)
-    url: /pacs/intro-pacs/
-  - name: Playbooks
+#  - name: Federal PKI (FPKI)
+#    url: /fpki/intro-fpki/
+#  - name: Personal Identity Verification (PIV)
+#    url: /piv/intro-piv/
+#  - name: Physical Access Control Systems (PACS)
+#    url: /pacs/intro-pacs/
+  - name: Other Playbooks
     children:
-      - name: Playbooks Overview
-        url: /playbooks/
-      - name: Digitial Identity Risk Assessment (DIRA)
+#      - name: Playbooks Overview
+#        url: /playbooks/
+      - name: Digital Identity Risk Assessment (DIRA)
         url: /playbooks/dira/
       - name: Digital Worker
         url: /playbooks/dw/
-      - name: Enterprise Single Sign-On
-        url: /playbooks/sso/
+#      - name: Enterprise Single Sign-On
+#        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
