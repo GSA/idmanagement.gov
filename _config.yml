@@ -72,10 +72,10 @@ primary_navigation:
         url: /playbooks/dira/
       - name: Digital Worker
         url: /playbooks/dw/
-      - name: All Playbooks
-        url: https://www.idmanagement.gov/playbooks/
 #      - name: Enterprise Single Sign-On
 #        url: /playbooks/sso/
+      - name: All Other Playbooks
+        url: "https://www.idmanagement.gov/playbooks/"
 
 secondary_navigation:
   - name: Contact Us
