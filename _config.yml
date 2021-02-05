@@ -64,7 +64,8 @@ primary_navigation:
 #    url: /piv/intro-piv/
 #  - name: Physical Access Control Systems (PACS)
 #    url: /pacs/intro-pacs/
-#  - name: Other Playbooks
+  - name: Other Playbooks
+    url: /playbooks/
 #    children:
 #      - name: Playbooks Overview
 #        url: /playbooks/
