@@ -9,10 +9,10 @@
   description: The FICAM Roadmap, developed by working groups under the Federal CIO Council, contains processes, procedures, and considerations for planning and managing logical access, physical access, enterprise identity management, and federation within federal agencies. (Note, the enterprise architecture section of the Roadmap has been superceded by the FICAM Architecture Playbook.)
   url: /assets/playbooks/Roadmap-FICAM-v2-20111202.pdf
 
-- title: Digital identity Risk Assessment Playbook (PDF, Sep 2020)
-  descriptin: The Digital Identity Risk Assessment playbook is a six-step playbook to complete a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
+- title: Digital Identity Risk Assessment Playbook (PDF, Sep 2020)
+  description: The Digital Identity Risk Assessment playbook is a six-step playbook to complete a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
   url: /assets/playbooks/Playbook-DIRA-v1-1-20200914.pdf
   
 - title: Digital Worker Identity Playbook (PDF, Jan 2021)
-  descriptin: The Digital Worker Identity Playbook is a practical guide to manage digital worker identities. This playbook helps Federal Agency ICAM Governance Structure, CIO, and CISO offices determine the risk of and define a process for digital worker identity management.
+  description: The Digital Worker Identity Playbook is a practical guide to manage digital worker identities. This playbook helps Federal Agency ICAM Governance Structure, CIO, and CISO offices determine the risk of and define a process for digital worker identity management.
   url: /assets/playbooks/Playbook-Digital-Worker-v1-20210105.pdf
