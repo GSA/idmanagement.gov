@@ -64,18 +64,16 @@ primary_navigation:
 #    url: /piv/intro-piv/
 #  - name: Physical Access Control Systems (PACS)
 #    url: /pacs/intro-pacs/
-  - name: Other Playbooks
-    children:
+#  - name: Other Playbooks
+#    children:
 #      - name: Playbooks Overview
 #        url: /playbooks/
-      - name: Digital Identity Risk Assessment (DIRA)
-        url: /playbooks/dira/
-      - name: Digital Worker
-        url: /playbooks/dw/
+#      - name: Digital Identity Risk Assessment (DIRA)
+#        url: /playbooks/dira/
+#      - name: Digital Worker
+#        url: /playbooks/dw/
 #      - name: Enterprise Single Sign-On
 #        url: /playbooks/sso/
-      - name: All Other Playbooks
-        url: <a href="https://www.idmanagement.gov/playbooks/" target="_blank">
 
 secondary_navigation:
   - name: Contact Us
