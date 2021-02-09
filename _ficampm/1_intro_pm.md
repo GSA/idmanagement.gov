@@ -21,7 +21,7 @@ The content for this guide is based on the [Federal Identity, Credential, and Ac
 
 > "The interwoven technical architecture of the Federal Government creates complexity in managing access to resources, safeguarding networks, and protecting information...each agency must harmonize its enterprise-wide approach to governance, architecture, and acquisition." - *OMB Memorandum M-19-17*
 
-An agency Identity, Credential, and Access Management (ICAM) program requires leadership to manage and oversee the program's complex requirements, engage and collaborate with stakeholders, and apply proven risk management strategies to support the agency.
+An agency's Identity, Credential, and Access Management (ICAM) program requires leadership to manage and oversee the program's complex requirements, engage and collaborate with stakeholders, and apply proven risk management strategies to support the agency.
 
 ## Primary Components
 
