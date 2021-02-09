@@ -37,9 +37,6 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  - name: IDMANAGEMENT.Gov
-    url: https://wwww.idmanageement.gov
-    external: true
   - name: Playbooks Home
     url: /
 #  - name: Buy
