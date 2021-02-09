@@ -21,6 +21,6 @@ The following table includes a summary of some common communication activities y
 | Lessons-learned workshops | ICAM implementers | Meeting, teleconference, webinar |
 | Large-scale gathering (agency ICAM conference or all-hands) | ICAM implementers, User population | Meeting, teleconference, webinar |
 
-You should tailor the messages and delivery methods to the stakeholders. The goal of this plan is to inform and involve stakeholders by providing regular and well-structured communications, to foster and maintain stakeholder support and reduce risk.
+You should tailor the messages and delivery methods to the stakeholders. The goal of this plan is to inform and involve stakeholders by providing regular and well-structured communications, to foster and maintain stakeholder support, and reduce risk.
 
-{% include alert-success.html heading = "Lesson Learned" content="Communicate about changes that will impact users early and often, and across multiple messaging vehicles." %}
+{% include alert-success.html heading = "Lesson Learned" content="Communicate changes that impact users early and often, and across multiple messaging vehicles." %}
