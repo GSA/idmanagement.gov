@@ -32,8 +32,7 @@ edit_page:
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading:
-    - text: IDManagement.gov
+heading: IDManagement.gov
       href: https://www.idmanagement.gov
       external: true
 
@@ -41,7 +40,7 @@ heading:
 # If the logo is external add external: true
 logos:
   - src: /assets/img/logo-gsa.png
-    alt: GSA
+    alt: General Services Administration
   - src: /assets/img/logo-cio.png
     alt: Federal CIO Council
 
