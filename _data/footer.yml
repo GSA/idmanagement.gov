@@ -65,6 +65,7 @@ contact:
   #   type: rss
   # Configuration for contact links for email, phone, etc...
   heading: IDmanagement.gov
+  contact_links:
     - href: https://www.idmanagement.gov
       external: true
   heading: How We Use Your Data
