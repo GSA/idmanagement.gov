@@ -33,7 +33,6 @@ The FSL and Authentication checklist below will help you:
 {% include alert-info.html content="These federal standards give guidance for assessing FSL, including how to categorize site risks:<br> - <a href=\"https://www.dhs.gov/publication/isc-risk-management-process\" target=\"_blank\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
 
 ![](../../assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
-![](../../assets/img/check-box.png) &nbsp; **Inventory critical assets for each agency site**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
@@ -46,6 +45,8 @@ The FSL and Authentication checklist below will help you:
     - Security classification level
     - Impact on national security from potential asset loss, compromise, or damage
     - Cost of replacing the asset
+    
+![](../../assets/img/check-box.png){:style="float:center"} &nbsp; **Assess site and critical asset risks, as well as risks to tenant agencies' assets**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Assess site and critical asset risks, as well as risks to tenant agencies' assets**
 - Examples of potential risks to a site and its critical assets include: 
@@ -61,6 +62,8 @@ The FSL and Authentication checklist below will help you:
     - Criticality - Is it mission-critical?
     - Sensitivity - Does it contain classified or sensitive information?
     - Likelihood - What is the probability of loss, compromise, or damage?
+    
+![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize each asset by risk impact level**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Categorize each asset by risk impact level**
 - [FIPS 199](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"} defines three (3) impact levels on organizations and people (that is, a loss of confidentiality, integrity, or availability): 
@@ -70,6 +73,8 @@ The FSL and Authentication checklist below will help you:
 | *Low*| The loss of confidentiality, integrity, or availability could have a **limited** adverse effect on organizational operations, organizational assets, or individuals.|
 | *Moderate* | The loss of confidentiality, integrity, or availability could have a **serious** adverse effect on organizational operations, organizational assets, or individuals.| 
 |*High* | The loss of confidentiality, integrity, or availability could have a **severe or catastrophic** adverse effect on organizational operations, organizational assets, or individuals. |
+
+![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
@@ -82,6 +87,8 @@ The FSL and Authentication checklist below will help you:
 ## Categorize Security Areas
 
 {% include alert-info.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>." %}
+
+![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Categorize security areas** 
 - Once you've inventoried and mapped assets by risk and impact level, it's time to categorize security areas.
@@ -101,6 +108,8 @@ The FSL and Authentication checklist below will help you:
 
 {% include alert-info.html content="<a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a> recommends the following method to determine authentication factors for Exclusion, Limited and Controlled security areas." %}
 
+![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
+
 <i class="fa fa-check-square-o"></i> &nbsp;**Determine authentication factors required for security area categories** 
 
 - Once you have categorized all security area categories, you will select the minimum number of authentication factors (1, 2, or 3) needed to access and safeguard the facility:
@@ -115,6 +124,8 @@ The FSL and Authentication checklist below will help you:
 ## Select Authentication Mechanisms 
 
 {% include alert-info.html content="<a href=\"https://csrc.nist.gov/publications/detail/fips/201/2/final\" target=\"_blank\">FIPS 201-2</a>, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
+
+![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Select authentication mechanism for each security area** 
 
