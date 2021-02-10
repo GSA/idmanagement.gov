@@ -32,7 +32,7 @@ The FSL and Authentication checklist below will help you:
 
 {% include alert-info.html content="These federal standards give guidance for assessing FSL, including how to categorize site risks:<br> - <a href=\"https://www.dhs.gov/publication/isc-risk-management-process\" target=\"_blank\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
 
-![Checkmark TEST](../../assets/img/check-box.png =20x20){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
+![Checkmark TEST](../../assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 
 <i class="fa fa-check-square-o"></i> &nbsp;**Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
