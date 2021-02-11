@@ -11,7 +11,7 @@
 title: Federal ICAM Playbooks
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
-  Modernizing and operationalizing the Federal Enterprise Identities.
+  Modernizing and operationalizing Federal Enterprise Identities.
 baseurl: "https://playbooks.idmanagement.gov"
 repourl: "https://github.com/GSA/ficam-playbooks"
 
