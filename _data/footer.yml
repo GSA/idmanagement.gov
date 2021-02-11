@@ -32,17 +32,15 @@ edit_page:
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: General Services Administration
+heading: Federal Identity, Credential, and Access Management
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: https://github.com/GSA/playbooks-wdsv2/blob/staging/_assets/images/logo-gsa.png
-    alt: GSA
-    external: true
-  - src: https://github.com/GSA/playbooks-wdsv2/blob/staging/_assets/images/logo-cio.png
-    alt": Federal CIO Council
-    external: true
+  - src: /assets/img/logo-gsa.png
+    alt: General Services Administration
+  - src: /assets/img/logo-cio.png
+    alt: Federal CIO Council
 
 # Configuration for footer contact links
 contact:
@@ -66,7 +64,11 @@ contact:
   #   external: true
   #   type: rss
   # Configuration for contact links for email, phone, etc...
-  heading: How we use your data
+  heading: IDmanagement.gov
+  contact_links:
+    - href: https://www.idmanagement.gov
+      external: true
+  heading: How We Use Your Data
   contact_links:
      - text: Privacy Policy
        href: /privacy-policy/

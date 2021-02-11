@@ -22,7 +22,7 @@ subnav:
     - text: Test Websites
       href: '#test-websites'
     - text: Test Policy Object Identifiers
-      href: '#appendix-a-test-policy-object-identiers'
+      href: '#appendix-a--test-policy-object-identiers'
 ---
 
 Prepared By: The FPKI Technical Working Group (TWG)  <br>

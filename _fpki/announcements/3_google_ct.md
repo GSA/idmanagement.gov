@@ -6,7 +6,7 @@ archDate: October 21, 2019
 collection: fpki
 permalink: fpki/announcements/2018chromect/
 category: Google
-description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
+description: All TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
 sidenav: fpkiannoucements
 status: Archived
 sticky_sidenav: true

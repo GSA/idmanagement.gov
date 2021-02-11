@@ -6,7 +6,7 @@ archDate: March 4, 2020
 collection: fpki
 category: Removal
 permalink: fpki/announcements/2019removal/
-description: Federal PKI teams recently performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is related to efforts to assess and maintain the mission scope for Federal PKI and reduce burden for commercial and non-profit organizations.  This change is not a distrust action. This announcement provides information related to the CAs affected by this change.
+description: This announcement provides information related to the Health IT CAs removed from the Federal PKI.
 sidenav: fpkiannouncements
 sticky_sidenav: true
 status: Archive

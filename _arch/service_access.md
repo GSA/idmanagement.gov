@@ -5,12 +5,6 @@ collection: arch
 permalink: arch/access/
 sidenav: archservices
 sticky_sidenav: true
-
-subnav:
-  - text: Authorization
-    href: '#authorization'
-  - text: Access Management Services
-    href: '#access-management-services'
 ---
 
 ![A blue box with the list of Access Management services defined later in the body text of this page.](../../assets/arch/services/AccessManagementServices.png){:align="right" style="padding-left:30px"}

@@ -4,11 +4,7 @@ title: Federation
 collection: arch
 permalink: arch/federation/
 sidenav: archservices
-sticky_sidenav:
-
-subnav:
-    - text: Federation Services
-      href: '#federation-services'
+sticky_sidenav: true
 ---
 
 ![A gray box with the list of Federation services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/FederationServices.png){:align="right" style="padding-left:30px"}
