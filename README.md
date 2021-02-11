@@ -9,10 +9,10 @@
 
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=18F/federalist-uswds-jekyll)](https://dependabot.com)
 
-This work is in Beta stage and is led by the GSA FICAM Program in coordination with the ICAM Subcommittee of the Federal CIO Council.
+This work is in Beta stage and is led by the GSA Identity and Trusted Access Division FICAM Program in coordination with the ICAM Subcommittee of the Federal CIO Council.
 
-# FICAM Architecture
-This repository is for the collaborative development of FICAM Playbooks. The content is supporting the creation of Version 3.0 (and future revisions) of the FICAM Roadmap and Implementation Guidance v2.0:  http://www.idmanagement.gov/sites/default/files/documents/FICAM_Roadmap_and_Implementation_Guidance_v2%200_20111202_0.pdf
+# FICAM Playbooks
+This repository is a governmentwide collaboration. The content is advancing the maturity of Federal Identity, Credential, and Access Management systems which was previously envisioned in the FICAM Roadmap and Implementation Guidance v2.0: https://playbooks.idmanagement.gov/assets/playbooks/Roadmap-FICAM-v2-20111202.pdf
 
 Additional repositories are under development for contributors to share ICAM implementation guides, code, reference implementations, and solutions.
 

@@ -47,7 +47,7 @@ var GexfJS = {
             "edgeOff" : "Î‘Ï€ÏŒÎºÏ$Ï…ÏˆÎ· Î±ÎºÎ¼ÏŽÎ½",
             "zoomIn" : "ÎœÎµÎ³Î­Î¸Ï…Î½ÏƒÎ·",
             "zoomOut" : "Î£Î¼Î¯ÎºÏ$Ï…Î½ÏƒÎ·",
-            "browserErr" : 'ÎŸ Ï€ÎµÏ$Î¹Î·Î³Î·Ï„Î®Ï‚ ÏƒÎ±Ï‚ Î´ÎµÎ½ Î¼Ï€Î¿Ï$ÎµÎ¯ Î½Î± ÎµÎ¼Ï†Î±Î½Î¯ÏƒÎµÎ¹ ÏƒÏ‰ÏƒÏ„Î¬ Î±Ï…Ï„Î® Ï„Î· ÏƒÎµÎ»Î¯Î´Î±.<br />Î£Î±Ï‚ Ï€Ï$Î¿Ï„ÎµÎ¯Î½Î¿Ï…Î¼Îµ Î½Î± Ï‡Ï$Î·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ„Îµ Ï„Î·Î½ Ï„ÎµÎ»ÎµÏ…Ï„Î±Î¯Î± Î­ÎºÎ´Î¿ÏƒÎ· Ï„Î¿Ï… <a href="http://www.mozilla.com/" target="_blank">Firefox</a> Î® Ï„Î¿Ï… <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>'
+            "browserErr" : 'ÎŸ Ï€ÎµÏ$Î¹Î·Î³Î·Ï„Î®Ï‚ ÏƒÎ±Ï‚ Î´ÎµÎ½ Î¼Ï€Î¿Ï$ÎµÎ¯ Î½Î± ÎµÎ¼Ï†Î±Î½Î¯ÏƒÎµÎ¹ ÏƒÏ‰ÏƒÏ„Î¬ Î±Ï…Ï„Î® Ï„Î· ÏƒÎµÎ»Î¯Î´Î±.<br />Î£Î±Ï‚ Ï€Ï$Î¿Ï„ÎµÎ¯Î½Î¿Ï…Î¼Îµ Î½Î± Ï‡Ï$Î·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î®ÏƒÎµÏ„Îµ Ï„Î·Î½ Ï„ÎµÎ»ÎµÏ…Ï„Î±Î¯Î± Î­ÎºÎ´Î¿ÏƒÎ· Ï„Î¿Ï… <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> Î® Ï„Î¿Ï… <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>'
         },
         "en" : {
             "search" : "Search nodes",
@@ -62,7 +62,7 @@ var GexfJS = {
             "edgeOff" : "Hide edges",
             "zoomIn" : "Zoom In",
             "zoomOut" : "Zoom Out",
-            "browserErr" : 'Your browser cannot properly display this page.<br />We recommend you use the latest <a href="http://www.mozilla.com/" target="_blank">Firefox</a> or <a href="http://www.google.com/chrome/" target="_blank">Chrome</a> version'
+            "browserErr" : 'Your browser cannot properly display this page.<br />We recommend you use the latest <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> or <a href="http://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a> version'
         },
         "es" : {
             "search" : "Buscar un nodo",
@@ -77,7 +77,7 @@ var GexfJS = {
             "edgeOff" : "Ocultar aristas",
             "zoomIn" : "Acercar",
             "zoomOut" : "Alejar",
-            "browserErr" : 'Tu navegador no es capaz de mostrar esta p&aacute;gina correctamente.<br />Le recomendamos utilizar la &uacute;ltima versi&oacute;n de <a href="http://www.mozilla.com/" target="_blank">Firefox</a> o <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>',
+            "browserErr" : 'Tu navegador no es capaz de mostrar esta p&aacute;gina correctamente.<br />Le recomendamos utilizar la &uacute;ltima versi&oacute;n de <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> o <a href="http://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a>',
             "modularity_class" : "Clase de modularidad",
             "degree" : "Grado",
             "indegree" : "Grado de entrada",
@@ -104,7 +104,7 @@ var GexfJS = {
             "edgeOff" : "NÃ¤ytÃ¤ vain valitun solmun yhteydet",
             "zoomIn" : "Suurenna",
             "zoomOut" : "PienennÃ¤",
-            "browserErr" : 'Selaimesi ei voi nÃ¤yttÃ¤Ã¤ tÃ¤tÃ¤ sivua.<br />Suosittelemme kÃ¤yttÃ¤mÃ¤Ã¤n uusinta versiota <a href="http://www.mozilla.com/" target="_blank">Firefox</a>- tai <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>-selaimesta'
+            "browserErr" : 'Selaimesi ei voi nÃ¤yttÃ¤Ã¤ tÃ¤tÃ¤ sivua.<br />Suosittelemme kÃ¤yttÃ¤mÃ¤Ã¤n uusinta versiota <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a>- tai <a href="http://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a>-selaimesta'
         },
         "fr" : {
             "search" : "Rechercher un n&oelig;ud",
@@ -119,7 +119,7 @@ var GexfJS = {
             "edgeOff" : "Cacher les sommets",
             "zoomIn" : "S'approcher",
             "zoomOut" : "S'Ã©loigner",
-            "browserErr" : 'Votre navigateur n\'est malheureusement pas compatible avec les fonctionnalitÃ©s de ce site<br />Nous vous suggÃ©rons d\'utiliser une version rÃ©cente de <a href="http://www.mozilla.com/" target="_blank">Firefox</a> ou <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>',
+            "browserErr" : 'Votre navigateur n\'est malheureusement pas compatible avec les fonctionnalitÃ©s de ce site<br />Nous vous suggÃ©rons d\'utiliser une version rÃ©cente de <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> ou <a href="http://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a>',
             "modularity_class" : "Classe de modularitÃ©",
             "degree" : "Degr&eacute;",
             "indegree" : "&frac12; degr&eacute; int&eacute;rieur",
@@ -146,7 +146,7 @@ var GexfJS = {
             "edgeOff" : "Nascondi gli spigoli",
             "zoomIn" : "Zoom in avanti",
             "zoomOut" : "Zoom indietro",
-            "browserErr" : 'Il tuo browser non pu&ograve; visualizzare correttamente questa pagina.<br />Ti raccomandiamo l\'uso dell\'ultima versione di  <a href="http://www.mozilla.com/" target="_blank">Firefox</a> o <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>'
+            "browserErr" : 'Il tuo browser non pu&ograve; visualizzare correttamente questa pagina.<br />Ti raccomandiamo l\'uso dell\'ultima versione di  <a href="http://www.mozilla.com/" target="_blank" rel="noopener noreferrer">Firefox</a> o <a href="http://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a>'
         },
         "tr" : {
             "search" : "DÃ¼ÄŸÃ¼m ara",
@@ -179,7 +179,7 @@ function replaceURLWithHyperlinks(text) {
         return text.replace(_urlExp, function(_found) {
             return '<a href="'
                 + ( _protocolExp.test(_found) ? '' : 'http://' )
-                + _found + '" target="_blank">'
+                + _found + '" target="_blank" rel="noopener noreferrer"> '
                 + _found.replace(_protocolExp,'')
                 + "</a>";
         });

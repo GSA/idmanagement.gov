@@ -11,7 +11,7 @@
 title: Federal ICAM Playbooks
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
-  Modernizing and operationalizing the Federal Enterprise Identities.
+  Modernizing and operationalizing Federal Enterprise Identities.
 baseurl: "https://playbooks.idmanagement.gov"
 repourl: "https://github.com/GSA/ficam-playbooks"
 
@@ -94,10 +94,10 @@ searchgov:
   endpoint: https://search.usa.gov
 
   # replace this with your search.gov account
-  affiliate: federalist-uswds-example
+  affiliate: idmanagement.gov
 
   # replace with your access key
-  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
+  access_key: B1dV_F4sFomL1Qmb-qsoO8xccBkWQiwDUsj5v72c4K8=
 
   # this renders the results within the page instead of sending to user to search.gov
   inline: true
