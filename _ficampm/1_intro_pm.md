@@ -19,6 +19,8 @@ The guide is organized by sections, each of which describes an essential feature
 
 The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FICAM_Roadmap_and_Implem_Guid.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 
+## What is ICAM Program Management?
+
 > "The interwoven technical architecture of the Federal Government creates complexity in managing access to resources, safeguarding networks, and protecting information...each agency must harmonize its enterprise-wide approach to governance, architecture, and acquisition." - *OMB Memorandum M-19-17*
 
 An agency Identity, Credential, and Access Management (ICAM) program requires leadership to manage and oversee the program's complex requirements, engage and collaborate with stakeholders, and apply proven risk management strategies to support the agency.
