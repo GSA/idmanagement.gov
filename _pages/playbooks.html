@@ -10,6 +10,8 @@ permalink: /playbooks/
   <thead class="usa-sr-only">
     <tr>
       <th id="playbooks-table-heading-title" scope="col">Title</th>
+      <th id="playbooks-table-heading-type" scope="col">Type</th>
+      <th id="playbooks-table-heading-date" scope="col">Latest Update</th>
       <th id="playbooks-table-heading-description" scope="col">Description</th>
     </tr>
   </thead>
@@ -18,6 +20,8 @@ permalink: /playbooks/
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
           <td><a href="{{ playbook.url | relative_url }}">{{ playbook.title }}</a></td>
+          <td>{{ playbook.type }}</td>
+          <td>{{ playbook.date }}</td>
           <td>{{ playbook.description }}</td>
         </tr>
     {% endfor %}
