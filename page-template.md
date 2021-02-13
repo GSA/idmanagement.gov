@@ -35,6 +35,11 @@ permalink: /template/
 
 This block at the top of the page, called Front Matter, is used for website navigation when your guide is posted.  Update the _Title of the Page_ and the _/template/_ 
 
+For more information on using different jekyll format or web design features:
+- Federalist Jekyll - https://github.com/18F/federalist-uswds-jekyll/blob/main/README.md
+- U.S. Web Design Standard - https://designsystem.digital.gov
+- U.S. Web Design Standard Jekyll - https://github.com/18F/uswds-jekyll
+
 ## Overview
 
 To begin your guide, briefly state its purpose in one to two sentences for an Overview.  You may include information on the intended audience, the intended outcome of the guide, and any other information that would help the user to understand the guide.
