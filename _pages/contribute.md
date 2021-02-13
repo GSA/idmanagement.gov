@@ -32,9 +32,7 @@ Using GitHub as a first-time user can be overwhelming. An introduction video is 
 
 ### About This Repository
 
-In the GitHub repository, on the Code tab, you can view the folder structure of this website:
-
-![Code tab]({{site.baseurl}}/assets/img/contribute_code_tab.png)
+In the GitHub repository, on the Code tab, you can view the folder structure.
 
 The following folders contain content and diagrams:
 
@@ -74,7 +72,7 @@ Issues are the primary method to share information and discussions with the broa
 - *Suggestions* - you want to suggest a change or addition to the content on this site.
 - *Corrections* - you identified a problem with content on this site and want to discuss a correction.
 
-To submit an issue, you must first [create a GitHub account](https://github.com/join){:target="_blank"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"} for your GitHub account.
+To submit an issue, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
 
 1. If you identify an issue while you're reading this guide, in the left navigation, click **Submit Issues Here**.
 
@@ -92,11 +90,11 @@ You can track your issue and comments from your colleagues on the **Issues** tab
 
 Before you add a new page, see the list of existing issues. You can add a new issue to propose a topic, or comment on an existing issue. By creating or discussing an issue, you can clarify a problem, identify a solution, and propose a format for a new page. When you’re ready, comment on the related issue that you want to write the new page.
 
-To add a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"} for your GitHub account.
+To add a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
 
 First you must **create a page**.
 
-1. (Optional) If you want to begin with a template page, navigate to the [template.md](https://github.com/GSA/ficam-management/blob/staging/template.md) file.
+1. (Optional) If you want to begin with a template page, navigate to the [template.md]
 
 	The template file includes some instructions for how to organize a page.
 
@@ -118,8 +116,6 @@ First you must **create a page**.
 
 1. Scroll to the **Commit new file** box.
 
-	![Commit new file]({{site.baseurl}}/assets/img/contribute_CommitNewFile.png)
-
 2. Enter a name and description for your new page.
 
 3. Select the **Create a new branch for this commit and start a pull request** radio button.
@@ -138,7 +134,7 @@ First you must **create a page**.
 
 ## Edit a Page
 
-To modify a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"} for your GitHub account.
+To modify a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
 
 1. In the upper right corner of a page you want to modify (like this page), click **Edit this page**.
 
