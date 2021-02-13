@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 collection: pacs
 title: Procurements
 permalink: pacs/procure/
