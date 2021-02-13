@@ -4,7 +4,7 @@ title: FICAM Playbooks
 permalink: /playbooks/
 ---
 
-<p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches.</p>
+<p>A playbook is a comprehensive guide on a technical topic, describing both overarching strategy and tactical approaches. The below table is sorted by title.</p>
 
 <table class="usa-table--borderless playbooks-table">
   <thead class="usa-sr-only">
@@ -16,7 +16,7 @@ permalink: /playbooks/
     </tr>
   </thead>
   <tbody>
-    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks | sort: "date" %}
+    {% assign playbooks = site.playbooks | concat: site.data.external_playbooks | sort: "title" %}
     {% for playbook in playbooks %}
         <tr class="playbooks-table-row">
           <td><a href="{{ playbook.url | relative_url }}">{{ playbook.title }}</a></td>
