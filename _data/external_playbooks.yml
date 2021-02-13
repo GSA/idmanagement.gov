@@ -1,11 +1,6 @@
 # List of playbooks to include on the Playbooks page in additon to the
 # FICAM-produced playbooks located in the /_playbooks/ folder.
 
-- title: Citizen Identity Playbook
-  type: External Website
-  description: Login.gov's playbook on citizen identity management.
-  url: https://www.login.gov/playbook/
-
 - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0
   type: PDF
   date: 12/2011
