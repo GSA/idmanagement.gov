@@ -94,7 +94,7 @@ To add a page and open a pull request, you must first [create a GitHub account](
 
 First you must **create a page**.
 
-1. (Optional) If you want to begin with a template page, navigate to the [template.md]
+1. (Optional) If you want to begin with a template page, navigate to the [page-template.md]
 
 	The template file includes some instructions for how to organize a page.
 
