@@ -5,6 +5,19 @@ title: Page title - Example: FICAM Program Management Guide Introduction
 permalink: Page Link - Exmple: ficampm/intro-pm/
 sticky_sidenav: true
 sidenav: Look at _data/navigation.yml to create sidenav - Example: pm
+
+If you have headers in your doc, you can create a 2nd level navigation with subnav:
+subnav:
+  - text: About this Repository
+    href: '#about-this-repository'
+  - text: Open an Issue
+    href: '#open-an-issue'
+  - text: Add a Page
+    href: '#add-a-page'
+  - text: Submit a Page
+    href: '#submit-a-page'
+  - text: Edit a Page
+    href: '#edit-a-page'
 ---
 
 Markdown is a simple way of writing and formatting.  The formats can be used across many different platforms including for websites and documents.  We created a sample template to help you with your page. 
