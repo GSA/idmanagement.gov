@@ -18,9 +18,9 @@
       <div class="grid-row grid-gap">
         <div class="logo-links">
           <a class="footer-logo media_link" href="https://www.gsa.gov">
-            {% asset logo-gsa.png width="100" alt="GSA Logo" %}</a>
+            {% asset logo-gsa.png width="75" alt="GSA Logo" %}</a>
           <a class="footer-logo media_link" href="https://cio.gov">
-            {% asset logo-cio.png width="100" alt="Federal CIO Council Logo" %}</a>
+            {% asset logo-cio.png width="75" alt="Federal CIO Council Logo" %}</a>
         </div>
 
 <!-- Footer Logo -->
@@ -29,11 +29,9 @@
           </div>
         </div>
 
-        {% if footer.contact %}
         <div class="usa-footer__contact-links mobile-lg:grid-col-6">
           <h3 class="usa-footer__logo-heading" href="https://www.idmanagement.gov">IDManagement.gov</h3>
           {% assign social_links = site.data.footer.contact.social_links %}
-          {% if footer.contact.contact_links %}
             <div class="usa-footer__social-links grid-row grid-gap-1">
               <div class="grid-col-auto">
                 {% for _link in social_links %}
@@ -43,11 +41,8 @@
                 {% endfor %}
               </div>
             </div>
-          {% endif %}
-          {% if footer.contact.heading %}
+
             <h3 class="usa-footer__contact-heading">{{ footer.contact.heading }}</h3>
-            {% endif %}
-            {% if footer.contact.contact_links %}
               <address class="usa-footer__address">
                 {% assign contact_links = site.data.footer.contact.contact_links %}
                 <div class="usa-footer__contact-info grid-row grid-gap">
@@ -60,12 +55,8 @@
                 {% endfor %}
                 </div>
               </address>
-          {% endif %}
-        {% endif %}
       </div>
-      {% if footer.edit_page %}
         {% include components/github-edit.html footer=footer path=page.path %}
-      {% endif %}
       </div>
     </div>
   </div>
