@@ -32,7 +32,7 @@ edit_page:
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: Federal ICAM content is managed under [idmanagment.gov](https://www.idmanagement.gov) and as a collaboration between the Federal CIO Council and General Services Administration
+heading:
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
