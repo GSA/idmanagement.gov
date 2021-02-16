@@ -1,63 +1,10 @@
-<footer class="usa-footer">
-<!--
-  {% if footer.last_updated %}
-    <div class="grid-container ">
-      <p>Last updated: {{ page.last_modified_at | date: '%B %d, %Y at %I:%M %p' }}</p>
-    </div>
-  {% endif %}
--->
-  
-<!-- Footer return to top -->
-    <div class="grid-container usa-footer__return-to-top">
-      <a href="{{ footer.top.href | default: '#' }}">{{ footer.top.text | default: 'Return to top' }}</a>
-    </div>
-  
-<!-- Footer logo link -->
-   <div class="usa-footer__secondary-section">
-    <div class="grid-container">
-      <div class="grid-row grid-gap">
-        <div class="logo-links">
-          <a class="footer-logo media_link" href="https://www.gsa.gov">
-            {% asset logo-gsa.png width="75" alt="GSA Logo" %}</a>
-          <a class="footer-logo media_link" href="https://cio.gov">
-            {% asset logo-cio.png width="75" alt="Federal CIO Council Logo" %}</a>
-        </div>
 
-<!-- Footer Logo -->
-          <div class="mobile-lg:grid-col-auto">
-            <h3 class="usa-footer__logo-heading" href="https://www.idmanagement.gov">Federal Identity, Credential, and Access Management (FICAM)</h3>
-          </div>
-        </div>
+{% assign footer = site.data.footer %}
 
-        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-          <h3 class="usa-footer__logo-heading" href="https://www.idmanagement.gov">IDManagement.gov</h3>
-          {% assign social_links = site.data.footer.contact.social_links %}
-            <div class="usa-footer__social-links grid-row grid-gap-1">
-              <div class="grid-col-auto">
-                {% for _link in social_links %}
-                  <a class="usa-social-link usa-social-link--{{ _link.type | default: 'generic' }}" href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
-                    <span>{{ _link.text }}</span>
-                  </a>
-                {% endfor %}
-              </div>
-            </div>
-
-            <h3 class="usa-footer__contact-heading">{{ footer.contact.heading }}</h3>
-              <address class="usa-footer__address">
-                {% assign contact_links = site.data.footer.contact.contact_links %}
-                <div class="usa-footer__contact-info grid-row grid-gap">
-                {% for _link in contact_links %}
-                    <div class="grid-col-auto">
-                      <a href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">
-                        {{ _link.text }}
-                      </a>
-                    </div>
-                {% endfor %}
-                </div>
-              </address>
-      </div>
-        {% include components/github-edit.html footer=footer path=page.path %}
-      </div>
-    </div>
-  </div>
-</footer>
+{% if footer.type == 'slim' %}
+  {% include components/footer--slim.html %}
+{% elsif footer.type == 'default' or footer.type == 'medium' %}
+  {% include components/footer--default.html %}
+{% elsif footer.type == 'big' %}
+  {% include components/footer--big.html %}
+{% endif %}
