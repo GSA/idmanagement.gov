@@ -1,9 +1,26 @@
-{% assign footer = site.data.footer %}
-
-{% if footer.type == 'slim' %}
-  {% include components/footer--slim.html %}
-{% elsif footer.type == 'default' or footer.type == 'medium' %}
-  {% include components/footer--default.html %}
-{% elsif footer.type == 'big' %}
-  {% include components/footer--big.html %}
-{% endif %}
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lighter">
+    <div class="grid-container">
+      <div class="grid-row padding-3">
+        <div class="tablet:grid-col">
+          <div class="logo-links">
+            <a class="footer-logo media_link" href="https://www.gsa.gov">
+              {% asset logo-gsa.png width="50" alt="GSA Logo" %}
+            </a>
+            <a class="footer-logo media_link" href="https://cio.gov">
+              {% asset logo-cio.png width="50" alt="Federal CIO Council Logo" %}
+            </a>
+          </div>
+        </div>
+        <div class="tablet:grid-col"></div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="{{ site.baseurl }}/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="{{ site.baseurl }}/website-policy/">Website Policy</a></li>
+            <li><a href="{{ site.baseurl }}/license/">License</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
