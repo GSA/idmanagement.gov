@@ -32,7 +32,10 @@ edit_page:
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-# heading: 
+heading:
+  - text: IDmanagement.gov
+    href: https://www.idmanagement.gov
+    external: true
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
@@ -68,12 +71,6 @@ contact:
   #   external: true
   #   type: rss
   # Configuration for contact links for email, phone, etc...
-  heading: Contact Us
-    - text: IDmanagement.gov
-      href: https://idmanagement.gov
-      external: true
-    - text: Email
-      href: mailto:icam@gsa.gov
   heading: How We Use Your Data
   contact_links:
      - text: Privacy Policy
