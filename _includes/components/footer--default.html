@@ -44,17 +44,19 @@
                 {% if logo.url %}
                   <a href="{{ logo.url }}">
                 {% endif %}
-                  <img class="usa-footer__logo-img" src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %} href="{{ logo.href }}">
+                  <a href="{{ logo.href }}"><img class="usa-footer__logo-img" src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %}></a>
                 {% if logo.url %}
                   </a>
                 {% endif %}
               </div>
             {% endfor %}
           {% endif %}
-
+          
+         {% for footer in footer.heading -%}
           <div class="mobile-lg:grid-col-auto">
-            <h3 class="usa-footer__logo-heading"><a href="{{ footer.href }}">{{ footer.text }}</a></h3>
+            <a href="{{ heading.href }}"><h3 class="usa-footer__logo-heading">{{ heading.text }}</a></h3>
           </div>
+         {% endfor %}
         </div>
 
         {% if footer.contact %}
