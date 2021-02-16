@@ -17,7 +17,7 @@ This guide answers the most common ICAM program organization and management ques
 
 The guide is organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
 
-The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FICAM_Roadmap_and_Implem_Guid.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](../../assets/playbooks/Roadmap-FICAM-v2-20111202.pdf)
 
 > "The interwoven technical architecture of the Federal Government creates complexity in managing access to resources, safeguarding networks, and protecting information...each agency must harmonize its enterprise-wide approach to governance, architecture, and acquisition." - *OMB Memorandum M-19-17*
 

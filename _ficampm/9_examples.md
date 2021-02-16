@@ -39,7 +39,7 @@ For an example of an ICAM Program Management Office (PMO) charter, download the 
 
 ### Executive Order (EO) 13800 – Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure
 
-[EO 13800](https://www.whitehouse.gov/presidential-actions/presidential-executive-order-strengthening-cybersecurity-federal-networks-critical-infrastructure/){:target="_blank"}{:rel="noopener noreferrer"} provides requirements to strengthen the cybersecurity of federal networks, including holding agency heads accountable for managing cybersecurity risk to their enterprises. 
+[EO 13800](https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure){:target="_blank"}{:rel="noopener noreferrer"} provides requirements to strengthen the cybersecurity of federal networks, including holding agency heads accountable for managing cybersecurity risk to their enterprises. 
 
 > "Effective risk management requires agency heads to lead integrated teams of senior executives with expertise in IT, security, budgeting, acquisition, law, privacy, and human resources." - *EO 13800 - Section 1,b,v.*
 
