@@ -43,11 +43,9 @@ logos:
   - src: /assets/img/logo-gsa.png
     alt: General Services Administration
     href: https://www.gsa.gov
-    external: true
-  - src: https://www.cio.gov
+  - src: /assets/img/logo-cio.png
     alt: Federal CIO Council
     href: https://www.cio.gov
-    external: true
 
 # Configuration for footer contact links
 contact:
