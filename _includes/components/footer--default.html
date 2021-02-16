@@ -44,7 +44,7 @@
                 {% if logo.url %}
                   <a href="{{ logo.url }}">
                 {% endif %}
-                  <img class="usa-footer__logo-img" src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %} href="{% if _link.external == true %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}"><br>
+                  <img class="usa-footer__logo-img" src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %} href="{{ logo.href }}"><br>
                 {% if logo.url %}
                   </a>
                 {% endif %}
@@ -54,7 +54,7 @@
 
           {% if footer.heading %}
           <div class="mobile-lg:grid-col-auto">
-            <h3 class="usa-footer__logo-heading"><a href="{{ _link.href }}">{{ footer.heading }}</a></h3>
+            <h3 class="usa-footer__logo-heading"><a href="{{ footer.href }}">{{ footer.text }}</a></h3>
           </div>
           {% endif %}
         </div>
