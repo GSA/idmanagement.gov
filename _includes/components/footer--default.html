@@ -52,9 +52,12 @@
             {% endfor %}
           {% endif %}
           
+      {% if footer.heading %}
+          <br>
           <div class="mobile-lg:grid-col-auto">
-            <a href="{{ footer.heading.href }}" target="_blank" rel="noopener noreferrer"><h3 class="usa-footer__logo-heading">{{ footer.heading.text }}</a></h3>
+            <h3 class="usa-footer__logo-heading">{{ footer.heading }}</h3>
           </div>
+          {% endif %}
         </div>
 
         {% if footer.contact %}
