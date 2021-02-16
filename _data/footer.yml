@@ -37,11 +37,13 @@ heading: Federal Identity, Credential, and Access Management
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: https://www.gsa.gov
+  - src: /assets/img/logo-gsa.png
     alt: General Services Administration
+    href: https://www.gsa.gov
     external: true
   - src: https://www.cio.gov
     alt: Federal CIO Council
+    href: https://www.cio.gov
     external: true
 
 # Configuration for footer contact links
