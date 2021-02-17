@@ -21,9 +21,6 @@ To learn more:
 1. [Standards, Policies, and Guidance](../standards/)
 1. [Glossary](../glossary/)
 
-## Questions and Contributions
-This guide is open source and a _work in progress_, and we [welcome contributions]({{site.baseurl}}/contribute/) from our colleagues. Some topics may still be under development. If you have questions, please review the [GitHub Issues]({{ site.repo_url }}/issues) for in-progress information. If you would like to contribute or add a question, create a new [Issue]({{ site.repo_url }}/issues) or add a comment to an existing one. 
-
 ## Acknowledgment
 We want to thank the Secure Technology Alliance, especially the members of the Access Control Council, for contributions to the *PACS Guide* and permission to reuse content from their presentations and the *How to Plan, Procure and Deploy a pacs-Enabled Physical Access Control System* webinar training.  
 
