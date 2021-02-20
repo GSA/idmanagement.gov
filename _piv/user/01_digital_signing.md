@@ -36,37 +36,35 @@ This guide will walk you through the steps for digitally signing a document in M
 
 1. To add a digital signature, open your Microsoft Word document and click where you'd like to add your signature line. 
 2. From the Word ribbon, select the **Insert** tab and then click **Signature Line** in the **Text** group.<br/>
-![Insert Signature Line]({../../assets/piv/word-signature-1.png)
+![Insert Signature Line]({{site.baseurl}}/assets/piv/word-signature-1.png)
 
 3. _A **Signature Setup** pop-up box appears._ Enter your information in the text fields and click **OK**.<br/>
-![Signature Setup Box]({../../assets/piv/word-signature-2.png)
+![Signature Setup Box]({{site.baseurl}}/assets/piv/word-signature-2.png)
 
 4. Double-click the _signature line_.<br/>
-![Signature Line]({../../assets/piv/word-signature-3.png)
+![Signature Line]({{site.baseurl}}/assets/piv/word-signature-3.png)
 
 5. _A **Sign** pop-up box appears._ At the **X**, type your name. Next, look at the **Signing as:** field. Select the signing certificate. To ensure that this is the correct certificate, click the **Change** button. <br/>
-![Sign Box]({../../assets/piv/word-signature-4.png)
+![Sign Box]({{site.baseurl}}/assets/piv/word-signature-4.png)
 
 6. Click on **Click here to view certificate properties**. <br/>
-![Sign Box]({../../assets/piv/word-signature-18.png)
+![Sign Box]({{site.baseurl}}/assets/piv/word-signature-18.png)
 
 7. _The **Certificate Details** box appears._ Go to the **Details** tab and scroll down to **Key Usage**. Single-click on it. The lower text box should now display _Digital Signature, Non-Repudiation_. If it does, then this is the right certificate. Click **OK**.<br/>
-![Sign Box]({../../assets/piv/word-signature-20.png)
+![Sign Box]({{site.baseurl}}/assets/piv/word-signature-20.png)
 
 8. If this is the _wrong_ certificate, click **OK**. Then click **More Choices** to see other certificates. Select another certificate and repeat these steps until you find the correct certificate. <br/> 
-![Sign Box]({../../assets/piv/word-signature-19.png)
+![Sign Box]({{site.baseurl}}/assets/piv/word-signature-19.png)
 
 9. Click the **Sign** button to sign the document. Insert your PIV card into the card reader. Enter your Smart Card (PIV) PIN and click **OK**.<br/>
-![PIV PIN]({../../assets/piv/word-signature-5.png)
+![PIV PIN]({{site.baseurl}}/assets/piv/word-signature-5.png)
 
 10. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**. <br/>
-![Signature Confirm]({../../assets/piv/word-signature-6.png)
+![Signature Confirm]({{site.baseurl}}/assets/piv/word-signature-6.png)
 
-![Marked as final]({../../assets/piv/word-signature-7.png)
+![Marked as final]({{site.baseurl}}/assets/piv/word-signature-7.png)
 
 {% include alert-info.html content="Once you've digitally signed your document, if you edit it, Word will remove the digital signature. Don't worry. You can always go back to Step 1 and digitally sign it again." %}
-
-<br/>
 
 ## Add an Invisible Digital Signature
 
@@ -75,44 +73,42 @@ You can add an _invisible digital signature_ to prevent your name from appearing
 1. Open your document and click the **File** tab.
 
 2. Click **Info** and then click **Protect Document**.<br/>
-![Protect Document]({../../assets/piv/word-signature-9.png)
+![Protect Document]({{site.baseurl}}/assets/piv/word-signature-9.png)
 
 3. From the **Protect Document** drop-down menu, click **Add a Digital Signature**.
 
 4. Select a **Commitment Type**, such as _created and approved this document_, and then click **Sign**.<br/>
-![Sign Document]({../../assets/piv/word-signature-10.png)
+![Sign Document]({{site.baseurl}}/assets/piv/word-signature-10.png)
 
 5. Insert your PIV card into the card reader. Enter your Smart Card (PIV) PIN and click **OK**.<br/>
-![PIV PIN]({../../assets/piv/word-signature-5.png)
+![PIV PIN]({{site.baseurl}}/assets/piv/word-signature-5.png)
 
 6. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**.<br/>
-![Signature Confirm]({../../assets/piv/word-signature-6.png)
-
-<br/>
+![Signature Confirm]({{site.baseurl}}/assets/piv/word-signature-6.png)
 
 ## Add Multiple Digital Signatures Using Signature Lines
 
 Once you digitally sign a document, you can have others also digitally sign it. (**Note:**&nbsp;&nbsp; If you are the first approver, you should create the signature lines for all of the approvers. Then, send the document to the second approver.)
 
 1. If you are the second (or other) approver, open the document you've received. Double-click your signature line to sign. Follow Steps 4-10 from [Add a Digital Signature Using a Signature Line](#add-a-digital-signature-using-a-signature-line). <br/>
-![Signature Line]({../../assets/piv/word-signature-1.png) 
+![Signature Line]({{site.baseurl}}/assets/piv/word-signature-1.png) 
 
 3. _A **Signature Setup** pop-up box appears._ Enter your information in the text fields and click **OK**<br/>
-![Signature Setup]({../../assets/piv/word-signature-13.png)
+![Signature Setup]({{site.baseurl}}/assets/piv/word-signature-13.png)
 
 4. Double-click your _signature line_.<br/> 
-![Signature Line]({../../assets/piv/word-signature-14.png)
+![Signature Line]({{site.baseurl}}/assets/piv/word-signature-14.png)
 
 5. _A **Sign** pop-up box appears._ At the **X**, type your name. 
 
 6. Next, look at the **Signing as:** field. _You should see your name and certificate information._ If you don't, click the **Change** button to select a different certificate and click **Sign**.<br/>
-![Signature Box]({../../assets/piv/word-signature-4.png)
+![Signature Box]({{site.baseurl}}/assets/piv/word-signature-4.png)
 
 7. Insert your PIV card and enter your Smart Card (PIV) PIN. Click **OK**.<br/>
-![Certificate PIN]({../../assets/piv/word-signature-5.png)
+![Certificate PIN]({{site.baseurl}}/assets/piv/word-signature-5.png)
 
 8. _The **Signature Confirmation** box tells you that Word saved your digital signature._ Click **OK**. <br/>
-![Signature Confirm]({../../assets/piv/word-signature-6.png)
+![Signature Confirm]({{site.baseurl}}/assets/piv/word-signature-6.png)
 
 9. Send the digitally signed document to the next approver. 
 
@@ -123,9 +119,7 @@ _Each successive approver will be able to open the document and double-click the
 Multiple approvers may digitally sign a document. Use the same procedures as you would to add one invisibile digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature). 
 
 _The final approver will see multiple "invisible" signatures in the document._<br/>
-![View Signature]({../../assets/piv/word-signature-12.png)
-
-<br/>
+![View Signature]({{site.baseurl}}/assets/piv/word-signature-12.png)
 
 ## View Digital Signatures
 
@@ -133,31 +127,27 @@ _The final approver will see multiple "invisible" signatures in the document._<b
 <br/>
 You can view digital signatures in an incompatible Word document in one of two ways:
 
-1. Click the **View Signatures** button just below the Word ribbon.<br/>
-![View Signature]({../../assets/piv/word-signature-16.png)
+Click the **View Signatures** button just below the Word ribbon.<br/>
+![View Signature]({{site.baseurl}}/assets/piv/word-signature-16.png)
 
 **_OR_**
 
-2. Click the **File** tab and select **Info**. Then click **View Signatures**.<br/>
-![View Signature]({../../assets/piv/word-signature-11.png)
+Click the **File** tab and select **Info**. Then click **View Signatures**.<br/>
+![View Signature]({{site.baseurl}}/assets/piv/word-signature-11.png)
 
 For either option, you will be able to see the digital signature details in the **Signatures** box.<br/>
-![View Signature]({../../assets/piv/word-signature-17.png)
-
-<br/>
+![View Signature]({{site.baseurl}}/assets/piv/word-signature-17.png)
 
 ## Remove a Digital Signature
 
 1. If you want to remove a digital signature, open your Word document and go to the signature line. 
 2. If there is no signature line, click the **View Signatures** button just below the Word ribbon.
 3. From the **Signatures** box, select the signature you want to to delete.<br/>
-![View Signature]({../../assets/piv/word-signature-17.png)
+![View Signature]({{site.baseurl}}/assets/piv/word-signature-17.png)
 <br/>
 4. Right-click on the signature and then click **Remove Signature**.  
 5. When prompted, click **Yes**.<br/>
-![Remove Signature]({../../assets/piv/word-signature-8.png)
-
-<br/>
+![Remove Signature]({{site.baseurl}}/assets/piv/word-signature-8.png)
 
 ## Verify Digital Signature Settings
 
