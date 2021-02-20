@@ -356,7 +356,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 3. Click **Allow**.<br>
 > The FCPCA G2 configuration profile appears.<br> 
 4. Click **More Details**, and then select the FCPCA G2 certificate entry.
-5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](../common/obtain-and-verify).
+5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](../obtain-and-verify).
 6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
 7. When prompted, enter your device **passcode**.
 8. Click **Install** in the upper right corner, and **Install** again.
