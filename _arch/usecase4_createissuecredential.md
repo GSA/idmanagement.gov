@@ -13,11 +13,13 @@ After you identity proof an individual, you’ll issue some proof of that indivi
 
 ---
 
-<p style="font-size: 3rem; font-weight: 700;">Use Case</p>
+## Use Case
 
 In this use case, an administrator needs to issue a credential to an employee or contractor.
 
-**Note:** The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an AAL2 credential.
+**Note:** The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an Authenticator Assurance Level 2 (AAL2) credential.
+
+For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/" target="_blank">NIST SP 800-63-B</a> (Section 4).
 
 ![Icon Key for the diagrams that follow.](../../assets/arch/usecases/4-IconKey.png)
 
@@ -41,14 +43,10 @@ td {
   </tr>
     <tr>
     <td style="width:250px;border:0px;"><strong>3. Generate and assign the authenticator(s)</strong> <br> <img src="../../assets/arch/usecases/4-3.png" width="250" alt="A diagram showing an administrator generating and assigning an authenticator to the employee or contractor."></td>
-    <td style="border:0px;">The individual presents a second form of government ID or an account number.</td>
+    <td style="border:0px;">Generate and assign the authenticator to the individual.</td>
   </tr>
 </table>
 
 ## Example
 
 I want to issue an enterprise credential, unique to an employee or contractor, so that they are able to access federal buildings and protected resources to which they require access.
-
-## Next Steps
-
-[Assign access entitlements](../manageaccess) and [maintain the credential](../managecredential).

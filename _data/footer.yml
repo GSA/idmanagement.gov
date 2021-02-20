@@ -32,15 +32,17 @@ edit_page:
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: Federal Identity, Credential, and Access Management
+heading:
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
   - src: /assets/img/logo-gsa.png
     alt: General Services Administration
+    href: https://www.gsa.gov
   - src: /assets/img/logo-cio.png
     alt: Federal CIO Council
+    href: https://www.cio.gov
 
 # Configuration for footer contact links
 contact:
@@ -64,10 +66,6 @@ contact:
   #   external: true
   #   type: rss
   # Configuration for contact links for email, phone, etc...
-  heading: IDmanagement.gov
-  contact_links:
-    - href: https://www.idmanagement.gov
-      external: true
   heading: How We Use Your Data
   contact_links:
      - text: Privacy Policy

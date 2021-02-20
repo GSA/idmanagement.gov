@@ -13,13 +13,13 @@ Federation is the technology, policies, standards, and processes that allow an a
 
 Federation has many different applications, including:
 
-*Accepting an authentication transaction from another organization:*
+- *Accepting an authentication transaction from another organization:*
 
-> Agency A authenticates one of its users and passes identity attributes and transaction details to Agency B. Agency B grants access to an application for that identity.
+> Agency A authenticates one of its users and passes identity attributes and transaction details to Agency B. Agency B grants access to an application        for that identity.
 
-*Accepting specific characteristics (i.e., attributes such as identifiers) describing an individual from another organization:*
+- *Accepting specific characteristics (i.e., attributes such as identifiers) describing an individual from another organization:*
 
-> An individual can use their agency-issued credential containing an internal identifier(s) to directly log in to a different agency’s online service. The online service registers the identifier(s) in their system for future use.
+> An individual can use their agency-issued credential containing an internal identifier(s) to directly log in to a different agency’s online service. The    online service registers the identifier(s) in their system for future use.
 
 ## Federation Services
 The Federation services in the Federal ICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
@@ -30,7 +30,7 @@ The Federation services in the Federal ICAM architecture include Policy Alignmen
 
 > Develop relationships and a common understanding between parties by establishing authorities, policies, standards, and principles.
 
-> *Keywords*: Trust Relationship
+> *Keyword*: Trust Relationship
 
 ### Authentication Broker
 
@@ -42,4 +42,4 @@ The Federation services in the Federal ICAM architecture include Policy Alignmen
 
 > Discover and acquire identity or other attributes between different systems to promote access decisions and interoperability.
 
-> *Keywords*: Attribute Definition, ARS
+> *Keyword*: Attribute Definition

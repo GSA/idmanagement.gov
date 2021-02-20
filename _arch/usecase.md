@@ -35,7 +35,7 @@ While each use case describes a particular ICAM business process, the use cases 
 
 You can combine or build upon the ICAM use cases to support your agency’s scenarios and needs.
 
-See the use cases:
+See the use cases here:
   1. [Create and Maintain an Identity](../createidentity/)
   2. [Proof an Identity](../proofidentity/)
   3. [Manage the Entitlements Lifecycle](../manageaccess/)
