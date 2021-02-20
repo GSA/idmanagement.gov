@@ -66,7 +66,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
     ```
 
 1. Confirm that the output details include FCPCA G2.
-1. Verify the certificate details against the [expected values](../common/obtain-and-verify) (for example, serial number, hash, etc.).
+1. Verify the certificate details against the [expected values](../obtain-and-verify) (for example, serial number, hash, etc.).
 
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 using Microsoft Certutil.
