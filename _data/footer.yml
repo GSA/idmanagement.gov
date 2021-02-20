@@ -32,18 +32,17 @@ edit_page:
 big_footer_signup_form: false
 
 # Configuration for footer heading. (optional)
-heading: Federal Identity, Credential, and Access Management
+heading:
 
 # Configuration for agency logo(s) (shown side by side).
 # If the logo is external add external: true
 logos:
-  - src: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
-    alt: Test
-    external: true
-  - src: /assets/images/logo.gsa.png
-    alt: GSA
-  - src: /_assets/images/icon-cio.png
+  - src: /assets/img/logo-gsa.png
+    alt: General Services Administration
+    href: https://www.gsa.gov
+  - src: /assets/img/logo-cio.png
     alt: Federal CIO Council
+    href: https://www.cio.gov
 
 # Configuration for footer contact links
 contact:

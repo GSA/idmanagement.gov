@@ -44,15 +44,16 @@
                 {% if logo.url %}
                   <a href="{{ logo.url }}">
                 {% endif %}
-                  <img class="usa-footer__logo-img" src="{% if logo.external %}{{ logo.src }}{% else %}{{ logo.src | relative_url }}{% endif %}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %}>
+                  <a href="{{ logo.href }}" target="_blank" rel="noopener noreferrer"><img class="usa-footer__logo-img" src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}"{% if logo.width %}width="{{ logo.width }}"{% endif %}{% if logo.height %}height="{{ logo.height }}"{% endif %}></a>
                 {% if logo.url %}
                   </a>
                 {% endif %}
               </div>
             {% endfor %}
+           <p class="footer-logo-text"><strong><a href="https://www.idmanagement.gov" target="_blank" rel="noopener noreferrer">IDManagement.gov</a></strong> is a collaboration between GSA and the Federal CIO Council, and managed by the GSA Office of Governmentwide Policy, Identity and Trusted Access Division.</p>
           {% endif %}
-
-          {% if footer.heading %}
+          
+      {% if footer.heading %}
           <div class="mobile-lg:grid-col-auto">
             <h3 class="usa-footer__logo-heading">{{ footer.heading }}</h3>
           </div>
