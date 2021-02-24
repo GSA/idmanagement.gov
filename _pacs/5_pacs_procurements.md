@@ -42,7 +42,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <col width="200">
 
  <tr>
-  <th colspan="2" class="title">PACS Procurement Checklist</th>
+  <th colspan="2" class="title"><b>PACS Procurement Checklist</b></th>
   <th colspan="5" class="header"><b>Recommended Participants</b></th>
  </tr>
 
@@ -69,10 +69,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what">2. Develop a PACS project charter.</td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
-  <td class="who" id="whoactive">CIO</td>
-  <td class="who" id="whoactive">CSO</td>
+  <td class="who"><b>CIO</b></td>
+  <td class="who"><b>CSO</b></td>
  </tr>
 
 <tr>
