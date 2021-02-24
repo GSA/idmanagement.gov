@@ -43,11 +43,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <th colspan="2" class="title" style="font-weight: 900;">PACS Procurement Checklist</th>
-  <th colspan="5" class="header">Recommended Participants</th>
+	<th colspan="5" class="header"><b>Recommended Participants</b></th>
  </tr>
 
  <tr>
-  <td colspan="2" class="what">1. Identify agency’s need to procure or upgrade a PACS.</td>
+  <td colspan="2" class="what">**1. Identify agency’s need to procure or upgrade a PACS.**</td>
   <td class="who">ENG</td>
   <td class="who" id="whoactive">PM</td>
   <td class="who" id="whoactive">PO</td>
