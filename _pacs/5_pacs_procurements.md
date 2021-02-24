@@ -198,12 +198,12 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">7. Develop a PACS requirements document or specification.</td>
-  <td class="who" id="whoactive">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td colspan="2" class="what"><b>7. Develop a PACS requirements document or specification.</b></td>
+  <td class="who"><b>ENG</b></td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
-  <td class="who" id="whoactive">CIO</td>
-  <td class="who" id="whoactive">CSO</td>
+  <td class="who"><b>CIO</b></td>
+  <td class="who"><b>CSO</b></td>
  </tr>
 
 <tr>
@@ -216,10 +216,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">8. Release a Request for Information (RFI) to potential service providers.</td>
+  <td colspan="2" class="what"><b>8. Release a Request for Information (RFI) to potential service providers.</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
-  <td class="who" id="whoactive">PO</td>
+  <td class="who"><b>PM</b></td>
+  <td class="who"><b>PO</b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
@@ -234,10 +234,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 
  <tr>
-  <td colspan="2" class="what">9. Submit an IT funding proposal following your agency’s budgetary process.</td>
+  <td colspan="2" class="what"><b>9. Submit an IT funding proposal following your agency’s budgetary process.</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
-  <td class="who" id="whoactive">PO</td>
+  <td class="who"><b>PM</b></td>
+  <td class="who"><b>PO</b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
@@ -251,10 +251,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">10. Develop an RFP and SOW to solicit GSA-approved integrator bids.</td>
+  <td colspan="2" class="what"><b>10. Develop an RFP and SOW to solicit GSA-approved integrator bids.</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
-  <td class="who" id="whoactive">PO</td>
+  <td class="who" id="whoactive"><b>PM</b></td>
+  <td class="who" id="whoactive"><b>PO</b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
