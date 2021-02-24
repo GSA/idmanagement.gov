@@ -17,7 +17,7 @@ A stakeholder is an individual or organization that has an interest in the progr
 
 This page describes how to work with stakeholders by doing the following:
 
-- [Identify Stakeholders](#identify-stakeholders) - determine the individuals or agencies that will be involved or actively interested in your Identity, Credential, and Access Management (ICAM) program.
+- [Identify Stakeholders](#identify-stakeholders) - determine the individuals or agencies that will be involved or actively interested in your Identity, Credential, and Access Management (ICAM) program. The tables on this page provide a starting point to identify key ICAM stakeholders at the federal and agency levels.
 
     - [Federal Governance Bodies](#federal-governance-bodies)
     - [Internal Standards Body](#internal-standards-body)
@@ -29,14 +29,7 @@ This page describes how to work with stakeholders by doing the following:
 
 Stakeholders can be internal or external to the agency. Internal stakeholders may include the program sponsor, steering committee, or governance board, and external stakeholders may include suppliers, investors, community groups, and other government organizations.
 
-To understand the impacts of program decisions, you’ll need to identify all stakeholders for your mission delivery, not just those who may be positively affected by the project. The following tables provide a starting point to identify key ICAM stakeholders at the federal and agency levels.
-
-- [Identify Stakeholders](#identify-stakeholders)
-  - [Federal Governance Bodies](#federal-governance-bodies)
-  - [Internal Standards Body](#internal-standards-body)
-  - [External Service Customers](#external-service-customers)
-  - [Agency-Level Stakeholders](#agency-level-stakeholders)
-- [Manage Stakeholders](#manage-stakeholders)
+To understand the impacts of program decisions, you’ll need to identify all stakeholders for your mission delivery, not just those who may be positively affected by the project.
 
 ### Federal Governance Bodies
 
