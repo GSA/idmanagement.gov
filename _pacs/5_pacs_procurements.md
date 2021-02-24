@@ -88,12 +88,12 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">3. Identify and obtain support from PACS stakeholders (iterative).</td>
+  <td colspan="2" class="what"><b>3. Identify and obtain support from PACS stakeholders (iterative).</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td class="who" id="whoactive"><b>PM</b></td>
   <td class="who">PO</td>
-  <td class="who" id="whoactive">CIO</td>
-  <td class="who" id="whoactive">CSO</td>
+  <td class="who" id="whoactive"><b>CIO</b></td>
+  <td class="who" id="whoactive"><b>CSO</b></td>
  </tr>
 
 <tr>
