@@ -41,8 +41,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <col width="400">
  <col width="200">
 
- <tr style="background-color:#112e51;font-size:20px">
-  <th colspan="2"><b>PACS Procurement Checklist</b></th>
+ <tr>
+  <th colspan="2" style="background-color:#112e51;font-size:20px;"><b>PACS Procurement Checklist</b></th>
   <th colspan="5"><b>Recommended Participants</b></th>
  </tr>
 
