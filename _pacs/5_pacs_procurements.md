@@ -48,11 +48,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>1. Identify agency’s need to procure or upgrade a PACS.</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
-  <td class="who"><b>PO</b></td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td>ENG</td>
+  <td><p style="color:##0071bc"><b>PM</b></td>
+  <td style="color:##0071bc"><b>PO</b></td>
+  <td style="color:##0071bc;"><b>CIO</b></td>
+  <td><b>CSO</b></td>
  </tr>
 
 <tr>
