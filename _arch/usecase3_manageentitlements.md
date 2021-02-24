@@ -7,13 +7,13 @@ sidenav: archusecases
 sticky_sidenav: true
 ---
 
-![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Provisioning service. ](../../assets/arch/usecases/Identity-Provisioning.png){:align="right" style="padding-left:15px"}
+![Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. ](../../assets/arch/usecases/Identity-Provisioning.png){:align="right" style="padding-left:15px"}
 
 You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.
 
 ---
 
-<p style="font-size: 3rem; font-weight: 700;">Use Case</p>
+## Use Case
 
 In this use case, an administrator needs to assign entitlements to an employee or contractor.
 
@@ -31,7 +31,7 @@ td {
 <table>
   <tr>
     <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <img src="../../assets/arch/usecases/3-1.png" width="250" alt="A diagram showing an employee or contractor requesting entitlements from an administrator."></td>
-    <td style="border:0px;">An individual requests entitlements, or joins a team with specific access requirements.<br><br>This individual may be the employee or contractor, their supervisor, HR, or a security team member.</td>
+    <td style="border:0px;">An individual requests entitlements, or joins a team with specific access requirements.<br><br>The requestor may be the employee or contractor, their supervisor, HR, or a security team member.</td>
   </tr>
   <tr>
     <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br> <img src="../../assets/arch/usecases/3-2.png" width="250" alt="A diagram showing an administrator comparing an entitlement request with access requirements."></td>
@@ -46,8 +46,4 @@ td {
 ## Examples
 
 - I want to indicate that an employee or contractor requires and is allowed access to an agency service, so that they can access the service when needed.
-- An employee is hired to be part of the financial review team and requires access to financial applications. The employee may have a specific role assigned to their enterprise identity record. 
-
-## Next Steps
-
-[Create and issue a credential](../usecredential), and [grant access to agency services](../grantaccess).
+- An employee is hired to be part of the financial review team and requires access to financial applications. The employee has a role assigned to their enterprise identity record, and associated with their identity attributes. 

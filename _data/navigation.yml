@@ -9,7 +9,7 @@ arch:
     href: /arch/services/
   - text: Use Cases
     href: /arch/usecases/
-  - text: Component Examples
+  - text: System Component Examples
     href: /arch/components/
   - text: Standards & Policies
     href: /arch/standards/
@@ -205,8 +205,6 @@ pacs:
 pm:
   - text: Introduction
     href: /ficampm/intro-pm/
-  - text: What is ICAM Program Management
-    href: /ficampm/overview/
   - text: Program Governance and Leadership
     href: /ficampm/governance/
   - text: Workstreams
@@ -219,7 +217,7 @@ pm:
     href: /ficampm/performance/
   - text: Privacy Considerations
     href: /ficampm/privacy/
-  - text: Examples and Guideance
+  - text: Examples and Guidance
     href: /ficampm/examples/
 
 ## Other Site Navigation

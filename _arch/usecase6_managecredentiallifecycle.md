@@ -12,20 +12,20 @@ sticky_sidenav: true
 Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:
 
 - **[Reset a credential](#reset-a-credential)** - An employee or contractor forgets the password or PIN associated with a credential, and requests a reset.
-- **[Renew a credential](#renew-a-credential)** - An employee or contractor’s credential is expiring or their personal information changes, so they request a replacement credential. You must renew a credential prior to the expiration date, otherwise the employee or contractor must go through the issuance process again.
+- **[Renew a credential](#renew-a-credential)** - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date, otherwise the employee or contractor must go through the issuance process again.
 - **[Revoke a credential](#revoke-a-credential)** - An employee or contractor is no longer eligible for their credential (like separating from the issuing agency). The sponsor, supervisor, or administrator requests a revocation of all associated credentials and enterprise accounts.
 
 You should periodically review your employee or contractors’ eligibility for credentials to identify potential orphaned data.
 
 ---
 
-<p style="font-size: 3rem; font-weight: 700;">Use Cases</p>
+## Use Cases
 
 ![Icon Key for the diagrams that follow.](../../assets/arch/usecases/6-IconKey.png)
 
 ### Reset a Credential
 
-In this use case, an employee or contractor interacts with the agency services to register or request a derived credential.
+In this use case, an administrator needs to reset a password or PIN for an employee or contractor credential.
 
 <style>
 
@@ -67,15 +67,14 @@ In this use case, an administrator needs to issue a new credential to replace on
   </tr>
     <tr>
     <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br> <img src="../../assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter."></td>
-    <td style="border:0px;">The system issues a new credential to the employee or contractor.</td>
+    <td style="border:0px;">The system issues a new credential to the employee or contractor, and updates the associated enterprise identity record.</td>
   </tr>
 </table>
 
 
 ### Revoke a Credential
 
-In this use case, you are an administrator who needs to revoke an active credential.
-
+In this use case, an administrator needs to revoke an active credential.
 
 <table>
   <tr>
@@ -92,15 +91,9 @@ In this use case, you are an administrator who needs to revoke an active credent
   </tr>
 </table>
 
-
-
 ## Examples
 
-- An employee or contractor may have attempted to use a credential and input the PIN information incorrectly several times up to an agency defined limit, and has locked their account or credential.  The employee or contractor requests a PIN reset.  The employee or contractor is directed to an unlock service; has to verify information again to prove they are the same person issued the original credential; and follows prompts to unlock their credential, generating a new PIN information in the process.
+- An employee or contractor may have attempted to use a credential and input the PIN information incorrectly several times up to an agency defined limit, and has locked their account or credential.  The employee or contractor requests a PIN reset.  The employee or contractor is directed to an unlock service; has to verify information again to prove they are the same person issued the original credential; and follows prompts to unlock their credential, generating a new PIN in the process.
 - *Reset* - I want to verify the identity of an employee or contractor that has already been issued a credential, and reset their PIN or password so that they can continue to access enterprise resources.
 - *Renew* - I want to verify the identity and eligibility of an employee or contractor, with a previously issued credential that is near expiration, so that they may be issued a new enterprise credential to keep their ability to access enterprise resources.
 - *Revoke* - I want to remove access to enterprise resources for an employee or contractor, so that they can no longer use the protected resource. 
-
-## Next Steps
-
-[Manage the entitlements lifecycle](../manageaccess) of the person and credential.

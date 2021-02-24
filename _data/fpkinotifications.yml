@@ -171,7 +171,7 @@
   start_datetime: November 3, 2017
   system: TSCP SHA256 Bridge CA
   change_description: Issuance of a cross certificate to Alexion Pharmaceuticals, Inc
-  contact: shauna.russell@tscp.org, fpki at gsa dot gov
+  contact: shauna dot russell at tscp dot org, fpki at gsa dot gov
 
 - notice_date: November 16, 2017
   change_type: CA Certificate Issuance
