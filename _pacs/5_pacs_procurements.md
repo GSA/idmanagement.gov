@@ -49,10 +49,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>1. Identify agency’s need to procure or upgrade a PACS.</b></td>
   <td>ENG</td>
-	<td><p style="color:##0071bc;weight:bold;">PM</p></td>
-  <td style="color:##0071bc"><b>PO</b></td>
-  <td><b>CIO</b></td>
-  <td><b>CSO</b></td>
+  <td><b><u>PM</u></b></td>
+  <td><b><u>PO</u></b></td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -69,10 +69,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>2. Develop a PACS project charter.</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td class="who"><b><u>CIO</u></b></td>
+  <td class="who"><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -90,10 +90,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>3. Identify and obtain support from PACS stakeholders (iterative).</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td class="who"><b><u>CIO</u></b></td>
+  <td class="who"><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -109,8 +109,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>4. Identify PACS project phases and tasks (iterative).</b></td>
-  <td class="who"><b>ENG</b></td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>ENG</u></b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
@@ -143,7 +143,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>5. Develop a project schedule (iterative).</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
@@ -160,11 +160,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>6. Conduct a Facility Security Level (FSL) assessment of project-related agency sites and determine Personal Identity Verification (PIV) authentication mechanisms for each site.</b></td>
-  <td class="who"><b>ENG</b></td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>ENG</u></b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td class="who"><b><u>CIO</u></b></td>
+  <td class="who"><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -199,11 +199,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>7. Develop a PACS requirements document or specification.</b></td>
-  <td class="who"><b>ENG</b></td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>ENG</u></b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td class="who"><b><u>CIO</u></b></td>
+  <td class="who"><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -218,8 +218,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>8. Release a Request for Information (RFI) to potential service providers.</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
-  <td class="who"><b>PO</b></td>
+  <td class="who"><b><u>PM</u></b></td>
+  <td class="who"><b><u>PO</u></b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
@@ -236,8 +236,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>9. Submit an IT funding proposal following your agency’s budgetary process.</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
-  <td class="who"><b>PO</b></td>
+  <td class="who"><b><u>PM</u></b></td>
+  <td class="who"><b><u>PO</u></b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
@@ -253,8 +253,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>10. Develop an RFP and SOW to solicit GSA-approved integrator bids.</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
-  <td class="who"><b>PO</b></td>
+  <td class="who"><b><u>PM</u></b></td>
+  <td class="who"><b><u>PO</u></b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
@@ -269,11 +269,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>11. Solicit bids, evaluate, and award integrator contract.</b></td>
-  <td class="who"><b>ENG</b></td>
-  <td class="who"><b>PM</b></td>
-  <td class="who"><b>PO</b></td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td class="who"><b><u>ENG</u></b></td>
+  <td class="who"><b><u>PM</u></b></td>
+  <td class="who"><b><u>PO</u></b></td>
+  <td class="who"><b><u>CIO</u></b></td>
+  <td class="who"><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -294,11 +294,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>12. Develop a PACS architecture and migration strategy.</b></td>
-  <td class="who"><b>ENG</b></td>
-  <td class="who"><b>PM</b></td>
+  <td class="who"><b><u>ENG</u></b></td>
+  <td class="who"><b><u>PM</u></b></td>
   <td class="who">PO</td>
-  <td class="who"><b>CIO</b></td>
-  <td class="who"><b>CSO</b></td>
+  <td class="who"><b><u>CIO</u></b></td>
+  <td class="who"><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
@@ -312,8 +312,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>13. Buy products listed on the GSA PACS APL.</b></td>
   <td class="who">ENG</td>
-  <td class="who"><b>PM</b></td>
-  <td class="who"><b>PO</b></td>
+  <td class="who"><b><u>PM</u></b></td>
+  <td class="who"><b><u>PO</u></b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
