@@ -28,15 +28,6 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 ## PACS Procurement Checklist 
 
-<style>
-.title {font-size: 20px; color: white; background-color: #112e51; font-weight: 900;}
-.header {text-align: center; font-size: 20px; color: white; background-color: #112e51; font-weight: 900;}
-
-.what {  text-align: left; font-weight: 900; background-color: #f2f2f2; font size="5";}
-.who { text-align: center; min-width: 55px; max-width: 55px; font-size: 12px; font-weight: 300; padding: 3px; background-color: #f2f2f2;}
-#whoactive { font-weight: 800; color: #0071bc; }
-</style>
-
 <table>
  <col width="400">
  <col width="200">
