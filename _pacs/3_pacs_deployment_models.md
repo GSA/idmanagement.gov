@@ -9,18 +9,11 @@ sidenav: pacs
 subnav:
   - text: What Is a Standalone PACS?
     href: '#what-is-a-standalone-pacs'
-  - text:  Standalone PACS Operational Challenges
-    href: '#standalone-pacs-operational-challenges'
   - text: What Is an Enterprise PACS?
     href: '#what-is-an-enterprise-pacs'
-  - text: Would an Enterprise PACS Work for Our Agency?
-    href: '#would-an-enterprise-pacs-work-for-our-agency'
 ---
 
 This page will give you a basic understanding of Physical Access Control System (PACS) deployment models. 
-
-- [What Is a Standalone Physical Access Control System?](#what-is-a-standalone-pacs)
-- [What Is an Enterprise Physical Access Control System?](#what-is-an-enterprise-pacs)
 
 ## What Is a Standalone PACS?
 
