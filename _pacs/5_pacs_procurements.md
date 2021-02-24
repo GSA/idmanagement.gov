@@ -24,7 +24,7 @@ This page provides a sample PACS Procurement Checklist. You can reuse or tailor 
 - Chief Information Officers (CIO)
 - Chief Security Officers (CSO)
 
-Agency staff are encouraged to participate in steps where their roles are listed in blue, bold font.
+Agency staff are encouraged to participate in steps where their roles are listed in bold underlined font.
 
 ## PACS Procurement Checklist 
 
@@ -41,9 +41,9 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <col width="400">
  <col width="200">
 
- <tr>
-  <th colspan="2" style="background-color:#112e51;color:#ffffff;"><b>PACS Procurement Checklist</b></th>
-  <th colspan="5" style="background-color:#112e51"><b>Recommended Participants</b></th>
+ <tr style="background-color:#112e51;color:#ffffff">
+  <th colspan="2"><b>PACS Procurement Checklist</b></th>
+  <th colspan="5"><b>Recommended Participants</b></th>
  </tr>
 
  <tr>
