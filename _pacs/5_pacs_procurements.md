@@ -51,7 +51,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <td>ENG</td>
   <td><p style="color:##0071bc"><b>PM</b></td>
   <td style="color:##0071bc"><b>PO</b></td>
-  <td style="color:##0071bc;"><b>CIO</b></td>
+  <td><b>CIO</b></td>
   <td><b>CSO</b></td>
  </tr>
 
