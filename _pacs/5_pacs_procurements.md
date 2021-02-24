@@ -324,7 +324,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 	<li>After contract award, your integrator will help you:
 	<ul>
 	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="https://www.idmanagement.gov/approved-products-list-pacs-products/" target="_blank">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
-	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedules-news-and-updates" target="_blank">GSA MAS</a>, <a href="https://www.gsa.gov/technology/technology-purchasing-programs/it-schedule-70" target="_blank">GSA Schedule 70</a>, or <a href="https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/list-of-gsa-schedules/schedule-84security-fire-law-enforcement" target="_blank">GSA Schedule 84</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
+	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
 	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer.service@gsa.gov or call 1-800-488-3111.</li>
@@ -345,9 +345,9 @@ Agency staff are encouraged to participate in steps where their roles are listed
 ## What Other GSA Resources Can Help Us?
 - [GSA Schedules - General Information](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedule-buyers){:target="_blank"}
 - [GSA Schedules - Tools and Resources](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/we-are-here-to-help){:target="_blank"}
-- [GSA Multiple Awards Schedule (MAS)](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedules-news-and-updates){:target="_blank"}
-- [GSA Schedule 70]( https://www.gsa.gov/technology/technology-purchasing-programs/it-schedule-70){:target="_blank"} offers GSA-approved integrators and HSPD-12 products and services.  
-- [GSA Schedule 84](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/list-of-gsa-schedules/schedule-84security-fire-law-enforcement){:target="_blank"} offers FIPS 201-compliant, GSA-approved, HSPD-12 PACS components and services.
+- [GSA Multiple Awards Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}
+- [GSA Multiple Awards Schedule (MAS) Categories](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/gsa-schedule-offerings/mas-categories){:target="_blank"}
+- [GSA Multiple Awards Schedule (MAS) News and Updates](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedules-news-and-updates){:target="_blank"}
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 

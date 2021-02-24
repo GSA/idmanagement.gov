@@ -17,6 +17,10 @@ subnav:
 
 Specialized training is essential for Physical Access Control System (PACS) technical leads and team members. This page describes roles, responsibilities, and training opportunities. 
 
+* [Technical Roles and Responsibilities](#technical-roles-and-responsibilities)
+* [Recommended Technical Training](#recommended-technical-training)
+* [Training Opportunities](#training-opportunities)
+
 ## Technical Roles and Responsibilities
 
 PACS project teams consist of both agency employees and contractors. Teams include an IT Architect, Engineers, Technicians, Operators, System Administrators, Physical Security Specialists, Facility Managers, a variety of technical services team members, etc. The table below describes the most common PACS technical roles: 
@@ -56,10 +60,10 @@ The [Interagency Security Committee](https://www.dhs.gov/interagency-security-co
 ### Equipment Manufacturers
 [GSA PACS APL](https://www.idmanagement.gov/approved-products-list-pacs-products/){:target="_blank"}{:rel="noopener noreferrer"} PACS manufacturers whose products are listed on the GSA PACS APL offer product-specific courses for Operators and Technicians directly or through authorized service providers. Operators and Technicians may obtain certifications for completing some series of courses.
 
->**Note:** Manufacturer training may not address unique operational requirements or site-specific configurations, so authorized service providers should conduct this training:  [GSA Schedule 84](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/list-of-gsa-schedules/schedule-84security-fire-law-enforcement){:target="_blank"}{:rel="noopener noreferrer"}, and/or [GSA Schedule 70](https://www.gsa.gov/technology/technology-purchasing-programs/it-schedule-70){:target="_blank"}{:rel="noopener noreferrer"}. 
+>**Note:** Manufacturer training may not address unique operational requirements or site-specific configurations, so authorized service providers should conduct this training:  [GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}. 
 
 ### Authorized Service Providers
-Authorized service providers offer manufacturer training for installing, configuring, and maintaining PACSs: [GSA Schedule 84](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/list-of-gsa-schedules/schedule-84security-fire-law-enforcement){:target="_blank"}{:rel="noopener noreferrer"} and [GSA Schedule 70](https://www.gsa.gov/technology/technology-purchasing-programs/it-schedule-70){:target="_blank"}{:rel="noopener noreferrer"}. This training can be tailored to your agency, facility, implementation features, operational policies, and procedures. This training should be planned during the Procurements phase. 
+Authorized service providers offer manufacturer training for installing, configuring, and maintaining PACSs: [GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}. This training can be tailored to your agency, facility, implementation features, operational policies, and procedures. This training should be planned during the Procurements phase. 
 
 ### Industry Certifications
 Industry certifications are vendor-neutral and standards-based. GSA requires that all work performed on approved PACS for GSA-managed facilities must be designed and installed by a Certified System Engineer for ICAM PACS (CSEIP).  The [CSEIP Program](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"} trains those who implement solutions related to OMB M-05-24 and OMB M-19-17.

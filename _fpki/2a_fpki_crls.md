@@ -19,7 +19,7 @@ subnav:
 
 This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI. 
 
-When downloading **any** certificate file from the list below, please verify the thumbprint (hash) on the downloaded file.  You can [verify the hash](#verify-a-hash) using common utilities on operating systems. 
+When downloading **any** certificate file from the list below, please verify the thumbprint (hash) on the downloaded file.  You can [verify the hash](#verify-a-hash) using standard utilities on operating systems. 
 
 ### Federal Common Policy CA G2
 

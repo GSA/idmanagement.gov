@@ -21,6 +21,13 @@ subnav:
       href: '#other-relevant-publications'
 ---
 
+- [Public Law](#public-law)
+- [Policies](#policies)
+- [Regulations](#regulations)
+- [Standards](#standards)
+- [Guidance and Best Practices](#guidance-and-best-practices)
+- [Other Relevant Publications](#other-relevant-publications)
+
 ## Public Law
 
 [Federal Information Security Modernization Act (FISMA) of 2014](https://www.dhs.gov/fisma){:target="_blank"}{:rel="noopener noreferrer"}, Public Law No: 113-283. 
@@ -53,7 +60,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [FIPS 201-2, _Personal Identity Verification (PIV) of Federal Employees and Contractors_](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, August 2013.
 
-[NIST SP 800-53, Revision 4, _Recommended Security Controls for Federal Information Systems and Organizations_](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf){:target="_blank"}{:rel="noopener noreferrer"}, April 2013.
+[NIST SP 800-53, Revision 5, _Recommended Security Controls for Federal Information Systems and Organizations_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf){:target="_blank"}{:rel="noopener noreferrer"}, September 2020.
 
 [NIST SP 800-60, Volume 1, Revision 1, _Guide for Mapping Types of Information and Information Systems to Security Categories_](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v1r1.pdf ){:target="_blank"}{:rel="noopener noreferrer"}, August 2008.
 
@@ -63,7 +70,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [NIST SP 800-116, Revision 1, _Guidelines for the Use of PIV Credentials in Facility Access_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf){:target="_blank"}{:rel="noopener noreferrer"}, June 2018. 
 
-[NIST SP 800-171, Revision 1, _Protecting Controlled Unclassified Information in Nonfederal Information Systems and Organizations_](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r1.pdf){:target="_blank"}{:rel="noopener noreferrer"}, December 2016.
+[NIST SP 800-171, Revision 2, _Protecting Controlled Unclassified Information in Nonfederal Information Systems and Organizations_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf){:target="_blank"}{:rel="noopener noreferrer"}, February 2020.
 
 ## Guidance and Best Practices
 
