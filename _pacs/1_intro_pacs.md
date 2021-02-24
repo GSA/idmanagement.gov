@@ -11,16 +11,6 @@ This _Physical Access Control System (PACS) Guide_ will help you understand conc
 
 {% include alert-info.html content="The contents of this guide are meant to be informative and do not serve as the basis for determining PACS compliance. Agency-specific guidance should supersede the recommendations within this guide, where appropriate." %}
 
-To learn more:
-1. [What is a Physical Access Control System?](../what-is-pacs/)
-1. [Physical Access Control System Deployment Models](../pacs/)
-1. [Aligning Facility Security Level and Authentication](../alignfslandauth/)
-1. [Procurements](../procure/)
-1. [Training](../train/)
-1. [Lessons Learned](../lessonslearned/)
-1. [Standards, Policies, and Guidance](../standards/)
-1. [Glossary](../glossary/)
-
 ## Acknowledgment
 We want to thank the Secure Technology Alliance, especially the members of the Access Control Council, for contributions to the *PACS Guide* and permission to reuse content from their presentations and the *How to Plan, Procure and Deploy a pacs-Enabled Physical Access Control System* webinar training.  
 
