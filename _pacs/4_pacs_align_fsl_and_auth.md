@@ -60,7 +60,7 @@ The FSL and Authentication checklist below will help you:
     - Likelihood - What is the probability of loss, compromise, or damage?
     
 ![](../../assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize each asset by risk impact level**
-- [FIPS 199](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"} defines three (3) impact levels on organizations and people (that is, a loss of confidentiality, integrity, or availability): 
+- [FIPS 199](https://csrc.nist.gov/publications/detail/fips/199/final){:target="_blank"} defines three (3) impact levels on organizations and people (that is, a loss of confidentiality, integrity, or availability): 
    
 |Impact Level | Description |
 |:---------|:------------|
