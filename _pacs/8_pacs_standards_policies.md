@@ -21,13 +21,6 @@ subnav:
       href: '#other-relevant-publications'
 ---
 
-- [Public Law](#public-law)
-- [Policies](#policies)
-- [Regulations](#regulations)
-- [Standards](#standards)
-- [Guidance and Best Practices](#guidance-and-best-practices)
-- [Other Relevant Publications](#other-relevant-publications)
-
 ## Public Law
 
 [Federal Information Security Modernization Act (FISMA) of 2014](https://www.dhs.gov/fisma){:target="_blank"}{:rel="noopener noreferrer"}, Public Law No: 113-283. 
@@ -40,7 +33,7 @@ OMB M-05-24, ["Implementation of Homeland Security Presidential Directive (HSPD)
 
 OMB M-19-17, [Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, May 21, 2019.
 
-E.O. 13800, ["Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure"](https://www.whitehouse.gov/presidential-actions/presidential-executive-order-strengthening-cybersecurity-federal-networks-critical-infrastructure/){:target="_blank"}{:rel="noopener noreferrer"}, May 11, 2017.
+E.O. 13800, ["Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure"](https://www.cio.gov/2018/05/30/it-modernization/){:target="_blank"}{:rel="noopener noreferrer"}, May 11, 2017.
 
 E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cybersecurity and Critical Infrastructure Security and Resilience")](https://www.dhs.gov/publication/eo-13636-ppd-21-fact-sheet){:target="_blank"}{:rel="noopener noreferrer"}, March 2013.
 
@@ -50,9 +43,9 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 ## Standards
 
-[_Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FICAM_Roadmap_and_Implem_Guid.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0, Executive Office of the President (EOP) and Federal Chief Information Officers (CIO) Council, December 2, 2011.
+[_Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance_](../../assets/playbooks/Roadmap-FICAM-v2-20111202.pdf){:target="_blank"}, Version 2.0, Executive Office of the President (EOP) and Federal Chief Information Officers (CIO) Council, December 2, 2011.
 
-[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FPKI-Overlay-of-SP-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}, v2.0.0, April 24, 2014.
+[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](../../assets/FPKI-Overlay-800-53-v2.pdf){:target="_blank"}, Version 2.0, April 24, 2014.
 
 [FIPS PUB 199, _Standards for Security Categorization of Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, February 2004.
 
@@ -74,17 +67,17 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 ## Guidance and Best Practices
 
-[_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.dhs.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Council (ISC), December 2015.
+[_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Council (ISC), December 2015.
 
-[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/Procurement-Language-1.1.0.pdf){:target="_blank"}{:rel="noopener noreferrer"}, v1.1.0, GSA, February 24, 2015.
+[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](../..//assets/pacs/PKI-in-PACS-Procurement-Language-v1-1.pdf){:target="_blank"}, v1.1.0, GSA, February 24, 2015.
 
 [_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf){:target="_blank"}{:rel="noopener noreferrer"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018.
 
-[_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-in-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.1, March 26, 2014.
+[_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](../../assets/pacs/PIV-in-EPACS-v3.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014.
 
 [_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017.
 
-[_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.dhs.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
+[_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
 
 ## Other Relevant Publications
 
