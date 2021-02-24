@@ -56,7 +56,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Determine whether your agency has a similar effort underway or other projects that could impact the procurement.</li>
 	<li>Determine why the agency needs to procure or upgrade a PACS.</li>
@@ -67,16 +67,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 
  <tr>
-  <td colspan="2" class="what"><b>2. Develop a PACS project charter.</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who"><b><u>CIO</u></b></td>
-  <td class="who"><b><u>CSO</u></b></td>
+  <td colspan="2"><b>2. Develop a PACS project charter.</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Identify the PACS project’s executive sponsor.</li>
 	<li>Document a high-level project purpose, scope, and goals.</li>
@@ -88,16 +88,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>3. Identify and obtain support from PACS stakeholders (iterative).</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who"><b><u>CIO</u></b></td>
-  <td class="who"><b><u>CSO</u></b></td>
+  <td colspan="2"><b>3. Identify and obtain support from PACS stakeholders (iterative).</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Identify your required and optional stakeholders and request their participation.</li>
 	<li>Include national, regional, state, and local stakeholders.</li>
@@ -108,16 +108,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>4. Identify PACS project phases and tasks (iterative).</b></td>
-  <td class="who"><b><u>ENG</u></b></td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who">CIO</td>
-  <td class="who">CSO</td>
+  <td colspan="2"><b>4. Identify PACS project phases and tasks (iterative).</b></td>
+  <td><b><u>ENG</u></b></td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td>CIO</td>
+  <td>CSO</td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Document the project’s phases and required tasks. Samples can include:
 		<ul>
@@ -141,16 +141,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>5. Develop a project schedule (iterative).</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who">CIO</td>
-  <td class="who">CSO</td>
+  <td colspan="2"><b>5. Develop a project schedule (iterative).</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td>CIO</td>
+  <td>CSO</td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Use automated tools or agency software to create a project schedule (that is, project tasks, dependencies, durations, and resources).</li>
 	<li>Share the project schedule with stakeholders to ensure its accuracy and completeness.</li>
@@ -159,16 +159,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>6. Conduct a Facility Security Level (FSL) assessment of project-related agency sites and determine Personal Identity Verification (PIV) authentication mechanisms for each site.</b></td>
-  <td class="who"><b><u>ENG</u></b></td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who"><b><u>CIO</u></b></td>
-  <td class="who"><b><u>CSO</u></b></td>
+  <td colspan="2"><b>6. Conduct a Facility Security Level (FSL) assessment of project-related agency sites and determine Personal Identity Verification (PIV) authentication mechanisms for each site.</b></td>
+  <td><b><u>ENG</u></b></td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>For details, see <a href="{{site.baseurl}}/pacs/alignfslandauth/" target="_blank">Aligning FSL and Authentication Mechanism</a>.</li>
 	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification, as well as affect the SOW and project costs.</li>
@@ -198,16 +198,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>7. Develop a PACS requirements document or specification.</b></td>
-  <td class="who"><b><u>ENG</u></b></td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who"><b><u>CIO</u></b></td>
-  <td class="who"><b><u>CSO</u></b></td>
+  <td colspan="2"><b>7. Develop a PACS requirements document or specification.</b></td>
+  <td><b><u>ENG</u></b></td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>When documenting PACS requirements, it’s critical to solicit input from your stakeholders.</li>
 	<li>Organize requirements into clear categories (for example, technical, performance, and operational) to help stakeholder’s give targeted feedback.</li>
@@ -216,16 +216,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>8. Release a Request for Information (RFI) to potential service providers.</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who"><b><u>PO</u></b></td>
-  <td class="who">CIO</td>
-  <td class="who">CSO</td>
+  <td colspan="2"><b>8. Release a Request for Information (RFI) to potential service providers.</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td><b><u>PO</u></b></td>
+  <td>CIO</td>
+  <td>CSO</td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Create and issue an RFI to vendors that requests specific qualifications and capabilities against PACS requirements.</li>
   </ul>
@@ -234,16 +234,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 
  <tr>
-  <td colspan="2" class="what"><b>9. Submit an IT funding proposal following your agency’s budgetary process.</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who"><b><u>PO</u></b></td>
-  <td class="who">CIO</td>
-  <td class="who">CSO</td>
+  <td colspan="2"><b>9. Submit an IT funding proposal following your agency’s budgetary process.</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td><b><u>PO</u></b></td>
+  <td>CIO</td>
+  <td>CSO</td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Follow your agency's existing budgetary procedures to submit a funding proposal for the project.</li>
   </ul>
@@ -251,16 +251,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>10. Develop an RFP and SOW to solicit GSA-approved integrator bids.</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who"><b><u>PO</u></b></td>
-  <td class="who">CIO</td>
-  <td class="who">CSO</td>
+  <td colspan="2"><b>10. Develop an RFP and SOW to solicit GSA-approved integrator bids.</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td><b><u>PO</u></b></td>
+  <td>CIO</td>
+  <td>CSO</td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/Procurement-Language-1.1.0.pdf" target="_blank"> Enabling Strong Authentication with PIV Cards: PKI in PACS Recommended Procurement Language for RFPs</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
@@ -268,16 +268,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>11. Solicit bids, evaluate, and award integrator contract.</b></td>
-  <td class="who"><b><u>ENG</u></b></td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who"><b><u>PO</u></b></td>
-  <td class="who"><b><u>CIO</u></b></td>
-  <td class="who"><b><u>CSO</u></b></td>
+  <td colspan="2"><b>11. Solicit bids, evaluate, and award integrator contract.</b></td>
+  <td><b><u>ENG</u></b></td>
+  <td><b><u>PM</u></b></td>
+  <td><b><u>PO</u></b></td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Include these steps during your bid and evaluation process:
 	<ul>
@@ -293,16 +293,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>12. Develop a PACS architecture and migration strategy.</b></td>
-  <td class="who"><b><u>ENG</u></b></td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who">PO</td>
-  <td class="who"><b><u>CIO</u></b></td>
-  <td class="who"><b><u>CSO</u></b></td>
+  <td colspan="2"><b>12. Develop a PACS architecture and migration strategy.</b></td>
+  <td><b><u>ENG</u></b></td>
+  <td><b><u>PM</u></b></td>
+  <td>PO</td>
+  <td><b><u>CIO</u></b></td>
+  <td><b><u>CSO</u></b></td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>Define a migration strategy to transition facilities to the new PACS solution.</li>
   </ul>
@@ -310,16 +310,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what"><b>13. Buy products listed on the GSA PACS APL.</b></td>
-  <td class="who">ENG</td>
-  <td class="who"><b><u>PM</u></b></td>
-  <td class="who"><b><u>PO</u></b></td>
-  <td class="who">CIO</td>
-  <td class="who">CSO</td>
+  <td colspan="2"><b>13. Buy products listed on the GSA PACS APL.</b></td>
+  <td>ENG</td>
+  <td><b><u>PM</u></b></td>
+  <td><b><u>PO</u></b></td>
+  <td>CIO</td>
+  <td>CSO</td>
  </tr>
 
 <tr>
-  <td colspan="7" class="desc">
+  <td colspan="7">
   <ul>
 	<li>After contract award, your integrator will help you:
 	<ul>
