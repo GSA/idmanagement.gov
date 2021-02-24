@@ -31,7 +31,7 @@ The following table defines common PACS components:
 | **Auxiliary Systems** | Agencies may integrate the PACS with additional facility monitoring systems such as surveillance systems, fire alarm systems, and evacuation systems. |
 
 
-{% include alert-info.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href="https://www.idmanagement.gov/approved-products-list-pacs-products/" target="_blank" rel="noopener noreferrer">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
+{% include alert-info.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"https://www.idmanagement.gov/approved-products-list-pacs-products/\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
 
 
 ## FICAM Compliant PACS Characteristics
