@@ -15,7 +15,7 @@ subnav:
     href: '#what-other-gsa-resources-can-help-us?'
 ---
 
-{% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a href=\"https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf\" target=\"_blank\">PACS Customer Ordering Guide. </a>" %}
+{% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a href=\"https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
 
 This page provides a sample PACS Procurement Checklist. You can reuse or tailor this checklist according to your agency’s practices. The checklist highlights common procurement activities as they relate to the following roles:
 - Information Technology or Physical Security Engineers (ENG)
@@ -253,7 +253,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/Procurement-Language-1.1.0.pdf" target="_blank"> Enabling Strong Authentication with PIV Cards: PKI in PACS Recommended Procurement Language for RFPs</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="{{site.baseurl}}/assets/pacs/PKI-in-PACS-Procurement-Language-v1-1.pdf" target="_blank">Enabling Strong Authentication with PIV Cards: PKI in PACS Recommended Procurement Language for RFPs Version 1.1</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" :rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
@@ -314,11 +314,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <ul>
 	<li>After contract award, your integrator will help you:
 	<ul>
-	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="https://www.idmanagement.gov/approved-products-list-pacs-products/" target="_blank">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
-	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
+	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="https://www.idmanagement.gov/approved-products-list-pacs-products/" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
+	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank" rel="noopener noreferrer">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
-	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer.service@gsa.gov or call 1-800-488-3111.</li>
+	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer.service@gsa.gov or call 1-800-488-3111.</li>
   </ul>
   </td>
 </tr>
@@ -331,16 +331,16 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 
 ## Why Can We Buy Only GSA-Approved Products and Services?
-[GSA’s FIPS 201 Evaluation Program](https://www.idmanagement.gov/fips201/){:target="_blank"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201-2 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201-2, secure operations, and interoperability.   
+[GSA’s FIPS 201 Evaluation Program](https://www.idmanagement.gov/fips201/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201-2 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201-2, secure operations, and interoperability.   
 
 ## What Other GSA Resources Can Help Us?
-- [GSA Schedules - General Information](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedule-buyers){:target="_blank"}
-- [GSA Schedules - Tools and Resources](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/we-are-here-to-help){:target="_blank"}
-- [GSA Multiple Awards Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}
-- [GSA Multiple Awards Schedule (MAS) Categories](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/gsa-schedule-offerings/mas-categories){:target="_blank"}
-- [GSA Multiple Awards Schedule (MAS) News and Updates](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedules-news-and-updates){:target="_blank"}
-- [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
-- Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
+- [GSA Schedules - General Information](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedule-buyers){:target="_blank"}{:rel="noopener noreferrer"}
+- [GSA Schedules - Tools and Resources](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/we-are-here-to-help){:target="_blank"}{:rel="noopener noreferrer"}
+- [GSA Multiple Awards Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}
+- [GSA Multiple Awards Schedule (MAS) Categories](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/gsa-schedule-offerings/mas-categories){:target="_blank"}{:rel="noopener noreferrer"}
+- [GSA Multiple Awards Schedule (MAS) News and Updates](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedules-news-and-updates){:target="_blank"}{:rel="noopener noreferrer"}
+- [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"}{:rel="noopener noreferrer"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
+- Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
 The next section, *[Training](../train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
 
