@@ -67,7 +67,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 
  <tr>
-  <td colspan="2" class="what">2. Develop a PACS project charter.</td>
+  <td colspan="2" class="what"><b>2. Develop a PACS project charter.</b></td>
   <td class="who">ENG</td>
   <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
@@ -90,10 +90,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>3. Identify and obtain support from PACS stakeholders (iterative).</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive"><b>PM</b></td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
-  <td class="who" id="whoactive"><b>CIO</b></td>
-  <td class="who" id="whoactive"><b>CSO</b></td>
+  <td class="who"><b>CIO</b></td>
+  <td class="who"><b>CSO</b></td>
  </tr>
 
 <tr>
@@ -108,9 +108,9 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">4. Identify PACS project phases and tasks (iterative).</td>
-  <td class="who" id="whoactive">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td colspan="2" class="what"><b>4. Identify PACS project phases and tasks (iterative).</b></td>
+  <td class="who"><b>ENG</b></td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
@@ -141,9 +141,9 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">5. Develop a project schedule (iterative).</td>
+  <td colspan="2" class="what"><b>5. Develop a project schedule (iterative).</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
@@ -159,12 +159,12 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">6. Conduct a Facility Security Level (FSL) assessment of project-related agency sites and determine Personal Identity Verification (PIV) authentication mechanisms for each site.</td>
-  <td class="who" id="whoactive">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td colspan="2" class="what"><b>6. Conduct a Facility Security Level (FSL) assessment of project-related agency sites and determine Personal Identity Verification (PIV) authentication mechanisms for each site.</b></td>
+  <td class="who"><b>ENG</b></td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
-  <td class="who" id="whoactive">CIO</td>
-  <td class="who" id="whoactive">CSO</td>
+  <td class="who"><b>CIO</b></td>
+  <td class="who"><b>CSO</b></td>
  </tr>
 
 <tr>
