@@ -253,8 +253,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <tr>
   <td colspan="2" class="what"><b>10. Develop an RFP and SOW to solicit GSA-approved integrator bids.</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive"><b>PM</b></td>
-  <td class="who" id="whoactive"><b>PO</b></td>
+  <td class="who"><b>PM</b></td>
+  <td class="who"><b>PO</b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
@@ -268,12 +268,12 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">11. Solicit bids, evaluate, and award integrator contract.</td>
-  <td class="who" id="whoactive">ENG</td>
-  <td class="who" id="whoactive">PM</td>
-  <td class="who" id="whoactive">PO</td>
-  <td class="who" id="whoactive">CIO</td>
-  <td class="who" id="whoactive">CSO</td>
+  <td colspan="2" class="what"><b>11. Solicit bids, evaluate, and award integrator contract.</b></td>
+  <td class="who"><b>ENG</b></td>
+  <td class="who"><b>PM</b></td>
+  <td class="who"><b>PO</b></td>
+  <td class="who"><b>CIO</b></td>
+  <td class="who"><b>CSO</b></td>
  </tr>
 
 <tr>
@@ -293,12 +293,12 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">12. Develop a PACS architecture and migration strategy.</td>
-  <td class="who" id="whoactive">ENG</td>
-  <td class="who" id="whoactive">PM</td>
+  <td colspan="2" class="what"><b>12. Develop a PACS architecture and migration strategy.</b></td>
+  <td class="who"><b>ENG</b></td>
+  <td class="who"><b>PM</b></td>
   <td class="who">PO</td>
-  <td class="who" id="whoactive">CIO</td>
-  <td class="who" id="whoactive">CSO</td>
+  <td class="who"><b>CIO</b></td>
+  <td class="who"><b>CSO</b></td>
  </tr>
 
 <tr>
@@ -310,10 +310,10 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </tr>
 
  <tr>
-  <td colspan="2" class="what">13. Buy products listed on the GSA PACS APL.</td>
+  <td colspan="2" class="what"><b>13. Buy products listed on the GSA PACS APL.</b></td>
   <td class="who">ENG</td>
-  <td class="who" id="whoactive">PM</td>
-  <td class="who" id="whoactive">PO</td>
+  <td class="who"><b>PM</b></td>
+  <td class="who"><b>PO</b></td>
   <td class="who">CIO</td>
   <td class="who">CSO</td>
  </tr>
