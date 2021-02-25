@@ -15,6 +15,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "https://playbooks.idmanagement.gov"
 repourl: "https://github.com/GSA/ficam-playbooks"
 
+#for site map search
+url: https://playbooks.idmanagement.gov
+
 # GitHub information
 # This is used for adding an edit this page link to the footer
 github_info:
