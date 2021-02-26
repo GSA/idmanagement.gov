@@ -9,19 +9,15 @@ sidenav: pacs
 subnav:
   - text: What Is a Standalone PACS?
     href: '#what-is-a-standalone-pacs'
-  - text:  Standalone PACS Operational Challenges
-    href: '#standalone-pacs-operational-challenges'
   - text: What Is an Enterprise PACS?
     href: '#what-is-an-enterprise-pacs'
-  - text: Would an Enterprise PACS Work for Our Agency?
-    href: '#would-an-enterprise-pacs-work-for-our-agency'
 ---
 
 This page will give you a basic understanding of Physical Access Control System (PACS) deployment models. 
 
 ## What Is a Standalone PACS?
 
-A standalone PACS is a local system that controls physical access to a facility or specific areas within it, for example, a Sensitive Compartmented Information Facility (SCIF). Standalone PACSs are facility-centric, and consequently, these systems typically do not connect to enterprise networks. While this deployment model tends to be the most common and uncomplicated method of managing access to controlled areas, it has several challenges.
+A standalone PACS is a local system that controls physical access to a facility or specific areas within it -- for example, a Sensitive Compartmented Information Facility (SCIF). Standalone PACSs are facility-centric, and consequently, these systems typically do not connect to enterprise networks. While this deployment model tends to be the most common and uncomplicated method of managing access to controlled areas, it has several challenges.
 
 ### Standalone PACS' Operational Challenges
 
