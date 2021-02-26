@@ -10,9 +10,9 @@ subnav:
   - text: PACS Procurement Checklist 
     href: '#pacs-procurement-checklist'
   - text: Why Can We Buy Only GSA-Approved Products and Services?
-    href: '#why-can-we-buy-only-gsa-approved-products-and-services?'
+    href: '#why-can-we-buy-only-gsa-approved-products-and-services'
   - text: What Other GSA Resources Can Help Us?
-    href: '#what-other-gsa-resources-can-help-us?'
+    href: '#what-other-gsa-resources-can-help-us'
 ---
 
 {% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a href=\"https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
