@@ -12,11 +12,12 @@ title: Federal ICAM Guides
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing the FICAM Roadmap.
-baseurl: "https://idmanagement.gov"
+baseurl: "https://www.idmanagement.gov"
 repourl: "https://github.com/GSA/playbooks-wdsv2"
 
 # Twitter handle. Only the handle, not the URL.
 # twitter: 18F
+url: "https://www.idmanagement.gov"
 
 dap:
   agency: GSA
