@@ -57,8 +57,9 @@ primary_navigation:
 #        url: /sell/fips201ep/
 #      - name: FIPS 201 Approved Product List
 #        url: /sell/fips201apl/
-#  - name: FICAM Architecture
-#    url: /arch/intro-arch/
+  - name: Architecture
+    description: FICAM Archtecture
+    url: /arch/intro-arch/
   - name: Program Management
     description: FICAM Program Management Guide
     url: /ficampm/intro-pm/
