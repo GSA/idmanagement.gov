@@ -36,8 +36,11 @@ In the GitHub repository, on the Code tab, you can view the folder structure.
 
 The following folders contain content and diagrams:
 
-- **/pages** - includes page source files.
-- **/_collectionname** - includes pages related to a specific collection. A list of collections is available at xxxx
+- **/_arch** - includes page source files for the FICAM Architecture.
+- **/_ficampm** - includes page source files for the FICAM Program Management Playbook.
+- **/_fpki** - includes page source files for the FPKI Playbook.
+- **/_pacs** - includes page source files for the PACS Playbook.
+- **/_piv** - includes page source files for the PIV Playbook.
 - **/assets** - includes all diagrams and images, which are available for download and reuse anywhere.
 
 We encourage you to read *LICENSE.md* and *README.md* at the top level of this repository.
@@ -94,7 +97,7 @@ To add a page and open a pull request, you must first [create a GitHub account](
 
 First you must **create a page**.
 
-1. (Optional) If you want to begin with a template page, navigate to the [Page Template](/page-template.md)
+1. (Optional) If you want to begin with a template page, navigate to the [Page Template](https://github.com/GSA/ficam-playbooks/blob/staging/page-template.md){:target="_blank"}{:rel="noopener noreferrer"}.
 
 	The template file includes some instructions for how to organize a page.
 
