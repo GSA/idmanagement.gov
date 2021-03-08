@@ -16,6 +16,8 @@ subnav:
     href: '#submit-a-page'
   - text: Edit a Page
     href: '#edit-a-page'
+  - text: Submit an Issue Here
+    href: 'https://github.com/GSA/ficam-playbooks/issues'
 ---
 
 Thank you for contributing to our development of an open and transparent Federal Identity, Credential, and Access Management (FICAM) website
