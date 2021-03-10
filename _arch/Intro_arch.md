@@ -32,7 +32,7 @@ This version of the FICAM Architecture encompasses the **enterprise** ICAM polic
 
 The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
 
-![A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance.](../../assets/arch/intro_ConceptualDiagram.png)
+[![A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance.](../../assets/arch/intro_ConceptualDiagram.png)](../../assets/arch/intro_ConceptualDiagram.png)
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
 
