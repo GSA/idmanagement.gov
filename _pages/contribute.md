@@ -75,7 +75,7 @@ Issues are the primary method to share information and discussions with the broa
 
 To submit an issue, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
 
-1. If you identify an issue while you're reading this guide, in the left navigation, click **Submit Issues Here**.
+1. If you identify an issue while you're reading this guide, in the left navigation, click **Submit an Issue Here**.
 
 	GitHub opens, and the **Issues** tab appears. Review the existing issues to determine if someone else has already addressed your topic.
 
