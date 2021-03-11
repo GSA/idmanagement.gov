@@ -66,7 +66,7 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky"><img src="../../assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125"><br></td>
+    <td class="tg-0pky"><a href="../../assets/arch/intro_ICAM-Identity.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125"></a><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees and contractors.</td>
   </tr>
   <tr>
@@ -78,7 +78,7 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
     <td class="tg-0pky"><span style="font-weight:bold">Access Management</span> is how an agency authenticates enterprise identities and authorizes appropriate access to protected services.</td>
   </tr>
   <tr>
-    <td class="tg-yj5y" colspan="2"><span style="font-weight:bold">ICAM Supporting Elements</span></td>
+    <td class="tg-yj5y" colspan="2"><b>ICAM Supporting Elements</b></td>
   </tr>
   <tr>
     <td class="tg-0pky"><img src="../../assets/arch/Intro_ICAM-Federation.png" alt="Three hexagons with the letters I in orange, C in green, and A in blue, with a gray banner for Federation." width="125"><br></td>
