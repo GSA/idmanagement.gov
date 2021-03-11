@@ -20,9 +20,7 @@ subnav:
     href: 'https://github.com/GSA/ficam-playbooks/issues'
 ---
 
-Thank you for contributing to our development of an open and transparent Federal Identity, Credential, and Access Management (FICAM) website
-
-Everyone has tips and tricks and we want to share these with our colleagues!
+Thank you for contributing to our development of an open and transparent Federal Identity, Credential, and Access Management (FICAM) website. Everyone has tips and tricks and we want to share these with our colleagues!
 
 To contribute to this site, you can:
 
@@ -34,9 +32,7 @@ Using GitHub as a first-time user can be overwhelming. An introduction video is 
 
 ### About This Repository
 
-In the GitHub repository, on the Code tab, you can view the folder structure.
-
-The following folders contain content and diagrams:
+In the [GitHub repository](https://github.com/GSA/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"}, on the **Code** tab, you can view the content and diagrams on this website:
 
 - **/_arch** - includes page source files for the FICAM Architecture.
 - **/_ficampm** - includes page source files for the FICAM Program Management Playbook.
