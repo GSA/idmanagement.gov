@@ -7,7 +7,7 @@ sidenav: archusecases
 sticky_sidenav: true
 ---
 
-![Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. ](../../assets/arch/usecases/Identity-IdentityProofing.png){:align="right" style="padding-left:15px"}
+[![Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. ](../../assets/arch/usecases/Identity-IdentityProofing.png){:align="right" style="padding-left:15px"}](../../assets/arch/usecases/Identity-IdentityProofing.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Before you can create a credential and assign it to an individual, that person must provide proof of their claimed identity. Identity proofing is the process by which a federal agency collects and verifies information about a person to establish an enterprise identity.
 
@@ -26,7 +26,7 @@ For more information about identity proofing and IALs, see <a href="https://page
 
 In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.
 
-![Icon Key for the diagrams that follow.](../../assets/arch/usecases/2-IconKey.png)
+[![Icon Key for the diagrams that follow.](../../assets/arch/usecases/2-IconKey.png)](../../assets/arch/usecases/2-IconKey.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 <style>
 
@@ -39,11 +39,11 @@ td {
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Collect identity information</strong> <br> <img src="../../assets/arch/usecases/2-1.png" width="250" alt="A diagram showing an employee or contractor presenting information or data to an administrator."></td>
+    <td style="width:250px;border:0px;"><strong>1. Collect identity information</strong> <br> <a href="../../assets/arch/usecases/2-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/2-1.png" width="250" alt="A diagram showing an employee or contractor presenting information or data to an administrator."></a></td>
     <td style="border:0px;"><strong>IAL2</strong> <i>(In-person or remote)</i> - The employee or contractor presents identity information, like first name, last name, and address of record.<br><br><strong>IAL3</strong> <i>(In-person or supervised remote)</i> - The employee or contractor presents identity information, like first name, last name, and address of record, and biometric data like fingerprints.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br> <img src="../../assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor."></td>
+    <td style="width:250px;border:0px;"><strong>2. Verify the identity information</strong> <br> <a href="../../assets/arch/usecases/2-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/2-2.png" width="250" alt="A diagram showing an administrator verifying information presented by an employee or contractor."></a></td>
     <td style="border:0px;"><strong>IAL2</strong> - The administrator confirms the information provided is valid and current by comparing photo identification to the individual, or confirming contact information, ensuring it matches the provided documentation. <br><br><strong>IAL3</strong> - The administrator verifies all information with the issuing organization. <br> <i>Result:</i> The individual’s identity has been successfully proofed at IAL2, or IAL3. </td>
   </tr>
 </table>
