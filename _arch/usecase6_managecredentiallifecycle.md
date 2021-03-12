@@ -7,7 +7,7 @@ sidenav: archusecases
 sticky_sidenav: true
 ---
 
-![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. ](../../assets/arch/usecases/Credential-MaintenanceRevocation.png){:align="right" style="padding-left:15px"}
+[![Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. ](../../assets/arch/usecases/Credential-MaintenanceRevocation.png){:align="right" style="padding-left:15px"}](../../assets/arch/usecases/Credential-MaintenanceRevocation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:
 
@@ -21,7 +21,7 @@ You should periodically review your employee or contractors’ eligibility for c
 
 ## Use Cases
 
-![Icon Key for the diagrams that follow.](../../assets/arch/usecases/6-IconKey.png)
+[![Icon Key for the diagrams that follow.](../../assets/arch/usecases/6-IconKey.png)](../../assets/arch/usecases/6-IconKey.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Reset a Credential
 
@@ -38,15 +38,15 @@ td {
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <img src="../../assets/arch/usecases/6-Reset-1.png" width="250" alt="A diagram showing an employee or contractor initiating a password or pin reset request to an enterprise identity management system."></td>
+    <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <a href="../../assets/arch/usecases/6-Reset-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Reset-1.png" width="250" alt="A diagram showing an employee or contractor initiating a password or pin reset request to an enterprise identity management system."></a></td>
     <td style="border:0px;">An employee or contractor forgets their password or PIN, and requests a reset.<br><br>If the request is valid, the identity management system approves the request.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>2. Issue a reset</strong> <br> <img src="../../assets/arch/usecases/6-Reset-2.png" width="250" alt="A diagram showing an enterprise identity management system issueing a password or pin reset to an employee or contracter."></td>
+    <td style="width:250px;border:0px;"><strong>2. Issue a reset</strong> <br> <a href="../../assets/arch/usecases/6-Reset-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Reset-2.png" width="250" alt="A diagram showing an enterprise identity management system issueing a password or pin reset to an employee or contracter."></a></td>
     <td style="border:0px;">The system issues a password/PIN reset, which may be a temporary password or a link to a web-based reset form.</td>
   </tr>
     <tr>
-    <td style="width:250px;border:0px;"><strong>3. Reset the credential</strong> <br> <img src="../../assets/arch/usecases/6-Reset-3.png" width="250" alt="A diagram showing an employee or contractor resetting a password or PIN."></td>
+    <td style="width:250px;border:0px;"><strong>3. Reset the credential</strong> <br> <a href="../../assets/arch/usecases/6-Reset-3.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Reset-3.png" width="250" alt="A diagram showing an employee or contractor resetting a password or PIN."></a></td>
     <td style="border:0px;">The employee or contractor resets their password or PIN.</td>
   </tr>
 </table>
@@ -58,15 +58,15 @@ In this use case, an administrator needs to issue a new credential to replace on
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <img src="../../assets/arch/usecases/6-Renew-1.png" width="250" alt="A diagram showing an employee or contractor initiating a credential renewal request to an enterprise identity management system."></td>
+    <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <a href="../../assets/arch/usecases/6-Renew-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Renew-1.png" width="250" alt="A diagram showing an employee or contractor initiating a credential renewal request to an enterprise identity management system."></a></td>
     <td style="border:0px;">An individual requests a renewal for an employee or contractor’s credential.<br><br>This individual may be the employee or contractor, their supervisor, or an administrator with approval authority.<br><br>This could also be an automated process triggered by schedules or specific events.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br> <img src="../../assets/arch/usecases/6-Renew-2.png" width="250" alt="A diagram showing an enterprise identity management system reviewing a credential renewal request for an employee or contracter."></td>
+    <td style="width:250px;border:0px;"><strong>2. Review the request</strong> <br> <a href="../../assets/arch/usecases/6-Renew-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Renew-2.png" width="250" alt="A diagram showing an enterprise identity management system reviewing a credential renewal request for an employee or contracter."></a></td>
     <td style="border:0px;">The identity management system reviews the request and verifies that the employee or contractor qualifies for a renewed credential. If so, approve the request.</td>
   </tr>
     <tr>
-    <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br> <img src="../../assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter."></td>
+    <td style="width:250px;border:0px;"><strong>3. Replace the credential</strong> <br> <a href="../../assets/arch/usecases/6-Renew-3.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Renew-3.png" width="250" alt="A diagram showing an enterprise identity management system issueing a new credential to an employee or contracter."></a></td>
     <td style="border:0px;">The system issues a new credential to the employee or contractor, and updates the associated enterprise identity record.</td>
   </tr>
 </table>
@@ -78,15 +78,15 @@ In this use case, an administrator needs to revoke an active credential.
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <img src="../../assets/arch/usecases/6-Revoke-1.png" width="250" alt="A diagram showing an employee or contractor or a sponsor or supervisor initiating a credential revocation request to an enterprise identity management system."></td>
+    <td style="width:250px;border:0px;"><strong>1. Initiate the request</strong> <br> <a href="../../assets/arch/usecases/6-Revoke-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Revoke-1.png" width="250" alt="A diagram showing an employee or contractor or a sponsor or supervisor initiating a credential revocation request to an enterprise identity management system."></a></td>
     <td style="border:0px;">An individual sends a separation notification or a notice of a lost or compromised credential, requesting revocation.<br><br>This individual may be the employee or contractor, their supervisor, HR, or a security team member.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>2. Disable the credential</strong> <br> <img src="../../assets/arch/usecases/6-Revoke-2.png" width="250" alt="A diagram showing an administrator of an enterprise identity management system invalidates the credential."></td>
+    <td style="width:250px;border:0px;"><strong>2. Disable the credential</strong> <br> <a href="../../assets/arch/usecases/6-Revoke-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Revoke-2.png" width="250" alt="A diagram showing an administrator of an enterprise identity management system invalidates the credential."></a></td>
     <td style="border:0px;">The administrator invalidates the credential.<br/>Depending on your agency, an individual or a system may perform this task. </td>
   </tr>
     <tr>
-    <td style="width:250px;border:0px;"><strong>3. Return the credential</strong> <br> <img src="../../assets/arch/usecases/6-Revoke-3.png" width="250" alt="A diagram showing an administrator returning the invalidated hardware or physical credential to the supervisor or sponsor."></td>
+    <td style="width:250px;border:0px;"><strong>3. Return the credential</strong> <br> <a href="../../assets/arch/usecases/6-Revoke-3.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/6-Revoke-3.png" width="250" alt="A diagram showing an administrator returning the invalidated hardware or physical credential to the supervisor or sponsor."></a></td>
     <td style="border:0px;">If the revoked credential is physical or hardware-based, the administrator returns the credential to the appropriate individual.<br><br>This individual may be a supervisor, HR, or security team member.</td>
   </tr>
 </table>
