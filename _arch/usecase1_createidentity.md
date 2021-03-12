@@ -7,7 +7,7 @@ sidenav: archusecases
 sticky_sidenav: true
 ---
 
-![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service.](../../assets/arch/usecases/Identity-Creation.png){:align="right" style="padding-left:15px"}
+[![Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service.](../../assets/arch/usecases/Identity-Creation.png){:align="right" style="padding-left:15px"}](../../assets/arch/usecases/Identity-Creation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 When you onboard an employee or contractor at your agency, you collect identity information from the individual, and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.
 
@@ -17,7 +17,7 @@ When you onboard an employee or contractor at your agency, you collect identity 
 
 In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.
 
-![Icon Key for the diagrams that follow.](../../assets/arch/usecases/1-IconKey.png)
+[![Icon Key for the diagrams that follow.](../../assets/arch/usecases/1-IconKey.png)](../../assets/arch/usecases/1-IconKey.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 <style>
 
@@ -30,11 +30,11 @@ td {
 
 <table>
   <tr>
-    <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br> <img src="../../assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source."></td>
+    <td style="width:250px;border:0px;"><strong>1. Collect information</strong> <br> <a href="../../assets/arch/usecases/1-1.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/1-1.png" width="250" alt="A diagram showing an employee or contractor providing identity information to an administrator with the authoritative source."></a></td>
     <td style="border:0px;">The administrator collects identity information from the employee or contractor.<br><br><i>This identity information may come from the individual, onboarding documents, or HR systems.</i></td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>2. Create an enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-2.png" width="250" alt="A diagram showing the authoritative source populating the identity information into a data repository, creating an enterprise identity in the authoritative source."></td>
+    <td style="width:250px;border:0px;"><strong>2. Create an enterprise identity</strong> <br> <a href="../../assets/arch/usecases/1-2.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/1-2.png" width="250" alt="A diagram showing the authoritative source populating the identity information into a data repository, creating an enterprise identity in the authoritative source."></a></td>
     <td style="border:0px;">The administrator adds the identity information to the authoritative source, a data repository. <br><br> Result: An enterprise identity in the authoritative source for the employee or contractor.</td>
   </tr>
   <tr>
@@ -42,15 +42,15 @@ td {
     <td style="border:0px;">The following steps describe identity maintenance your agency should perform on a regular basis.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>3a. Identify and aggregate identity data</strong> <br> <img src="../../assets/arch/usecases/1-3a.png" width="250" alt="A diagram showing the data repository with multiple enterprise identities for one individual, and an arrow indicating the change to a single consolidated enterprise identity."></td>
+    <td style="width:250px;border:0px;"><strong>3a. Identify and aggregate identity data</strong> <br> <a href="../../assets/arch/usecases/1-3a.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/1-3a.png" width="250" alt="A diagram showing the data repository with multiple enterprise identities for one individual, and an arrow indicating the change to a single consolidated enterprise identity."></a></td>
     <td style="border:0px;">Query your data repositories for any existing identities for an individual. Aggregate these attributes as a single enterprise identity for the individual.</td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source."></td>
+    <td style="width:250px;border:0px;"><strong>3b. Update the enterprise identity</strong> <br> <a href="../../assets/arch/usecases/1-3b.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/1-3b.png" width="250" alt="A diagram showing two paths to update an identity. Path 1 is the administrator updating the enterprise identity directly in the authoritative source. Path 2 is the employee or contractor updating their personal information in an agency application, and the application updating the enterprise identity in the authoritative source."></a></td>
     <td style="border:0px;">If an individual has updated personal information, there are two ways to update the enterprise identity: <br> <br> <ul> <li> The administrator updates the individual’s enterprise identity attributes directly in the authoritative sources.</li> <li>The individual uses an agency application to update their personal information, and the application updates the individual’s enterprise identity attributes in the authoritative sources.</li></ul></td>
   </tr>
   <tr>
-    <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br> <img src="../../assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity."></td>
+    <td style="width:250px;border:0px;"><strong>3c. Delete the enterprise identity</strong> <br> <a href="../../assets/arch/usecases/1-3c.png" target="_blank" rel="noopener noreferrer"><img src="../../assets/arch/usecases/1-3c.png" width="250" alt="A diagram showing an administrator deleting an enterprise identity."></a></td>
     <td style="border:0px;">When you need to delete an enterprise identity, delete the identity attributes in the authoritative source.</td>
   </tr>
 </table>

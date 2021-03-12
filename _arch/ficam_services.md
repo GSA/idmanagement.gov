@@ -33,8 +33,8 @@ These pages describe the services that support each ICAM practice area and suppo
 
 ## FICAM Practice Areas
 
-![Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages.](../../assets/arch/services/ServicesOverview.png)
+[![Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages.](../../assets/arch/services/ServicesOverview.png)](../../assets/arch/services/ServicesOverview.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## FICAM Services
 
-![Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages.](../../assets/arch/services/ServicesDefinitions.png)
+[![Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages.](../../assets/arch/services/ServicesDefinitions.png)](../../assets/arch/services/ServicesDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
