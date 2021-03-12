@@ -66,7 +66,7 @@ primary_navigation:
 #    url: /fpki/intro-fpki/
 #  - name: Personal Identity Verification (PIV)
 #    url: /piv/intro-piv/
-  - name: Physical Access Control Systems (PACS)
+  - name: PACS
     description: Physical Access Control Systems Guide
     url: /pacs/intro-pacs/
   - name: Other Playbooks
