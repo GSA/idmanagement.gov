@@ -25,23 +25,11 @@ FICAM is the Federal Government’s implementation of Identity, Credential, and 
 
 This version of the FICAM Architecture encompasses the **enterprise** ICAM policies, technologies and system approaches for government employees, contractors, and authorized partners. Citizen interactions with the federal government - or consumer ICAM - are not covered under this version of the FICAM Architecture.
 
-- [What is ICAM?](#what-is-icam)
-- [What is the FICAM Architecture?](#what-is-the-ficam-architecture)
-- [Who is the FICAM Architecture for?](#who-is-the-ficam-architecture-for)
-- [What is the history of the FICAM Architecture?](#what-is-the-history-of-the-ficam-architecture)
-
 The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
 
 [![A color-coded diagram that has three large connected boxes and two small auxillary boxes. The three large boxes include definitions and diagrams for Identity, Credential, and Access Management, and the two small boxes include definitions for Federation and Governance.](../../assets/arch/intro_ConceptualDiagram.png)](../../assets/arch/intro_ConceptualDiagram.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
-
-These are the views you’ll find in this playbook:
-- [**Goals and Objectives**](goals) - The aims and outcomes of enterprise Federal ICAM.
-- [**Services Framework**](services) - Descriptions of the services within each ICAM practice area that support enterprise ICAM.
-- [**Use Cases**](usecases) - High-level summaries and examples of the common procedures in ICAM.
-- [**Component Examples**](components) - A list of example enterprise ICAM tools, aligned to each ICAM service area. These tools, such as solutions, applications, and software, are representative examples that illustrate ICAM functionality within an agency.
-- [**Standards and Policies**](standards) - The federal policies and standards that shape the implementation of enterprise ICAM.
 
 Copy the graphics and text throughout this playbook to use at your agency to drive ICAM awareness, strategy developments, and communications.
 
