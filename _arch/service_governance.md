@@ -17,7 +17,7 @@ If your agency identifies problems during data collection and analysis, you shou
 
 <br>
 
-<p style="font-size: 3rem; font-weight: 700;">Governance Services</p>
+## Governance Services
 
 The Governance services in the Federal ICAM architecture include Identity Governance, Analytics, and Mitigation.
 
