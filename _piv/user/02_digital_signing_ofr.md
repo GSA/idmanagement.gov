@@ -100,13 +100,14 @@ You can check the details of the digital certificate(s) used to sign an MS Word 
 
 Open the signed MS Word document containing the certificate(s) you want to check, or have the signer sign a document via the instructions provided in the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) section above.
 
-1. In the header, you may see the option to **View Signatures**.  Click that button and proceed to Step 5. Otherwise:
-3. Click **Info**.
-4. Click **View Signatures**. The **Signatures** pane appears.
-5. In the **Signatures** pane, hover on the name of the signer you want to check; then click the small down arrow.
-6. Click on **Signature Details**. 
-7. The signer’s name as applied to the certificate is listed, along with the Certification Authority (CA). Click the **View** button.  
-8. A pop-up window appears. Be sure that the **General** tab is selected. The valid dates of the certificate are listed. More technical details, such as the certification path and key usage values, are shown under other tabs.  
+1. In the header, you may see the option to **View Signatures**.<br />
+   ![Doc Invisible Signatures]({{site.baseurl}}/assets/piv/ofr_remove_invisible_sign_4.png){:style="width:90%;"}
+2. Click **View Signatures** in the header or click **Info** > **View Signatures** in the Word ribbon. The **Signatures** pane appears.<br />
+   ![Signatures Pane]({{site.baseurl}}/assets/piv/ofr_signatures_pane_5.png){:style="width:120%;"}
+3. In the **Signatures** pane, hover on the name of the signer you want to check; then click the small down arrow.
+4. Click on **Signature Details**. 
+5. The signer’s name as applied to the certificate is listed, along with the Certification Authority (CA). Click the **View** button.  
+6. A pop-up window appears. Be sure that the **General** tab is selected. The valid dates of the certificate are listed. More technical details, such as the certification path and key usage values, are shown under other tabs.  
 
 ## FAQs
 
