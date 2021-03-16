@@ -60,7 +60,7 @@ The full process of proving identity when issuing certificates, auditing the Cer
 
 For the U.S. Federal Government Executive Branch agencies, there is one Root Certification Authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of Intermediate Certification Authorities and Bridged Certification Authorities.  
 
-*  [A graph of the Federal PKI, including the business communities](https://fpki.idmanagement.gov/tools/fpkigraph/){:target="_blank"}
+*  [A graph of the Federal PKI, including the business communities](../tools/fpkigraph/)
 
 
 ### Why should agencies use certificates from the Federal PKI?
