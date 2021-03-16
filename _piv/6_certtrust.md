@@ -26,7 +26,7 @@ Identity certificates are issued and digitally signed by a _Certificate Authorit
 
 The full process of proving identity when issuing the certificates, auditing the certificate authorities, and the cryptographic protections of the digital signatures establish the basis of Trust for PIV credentials and certificates.
 
-![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}
+[![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/certificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority (COMMON)_, and dozens of Intermediate Certificate Authorities.  The US Federal Government has also established Trust with other Certificate Authorities which serve business communities, State and Local government communities, and international government communities.
 
