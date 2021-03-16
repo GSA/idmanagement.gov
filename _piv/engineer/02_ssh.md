@@ -46,7 +46,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 <br><br>
 ![PuTTY Configuration Window]({{site.baseurl}}/assets/piv/ssh-putty-cac-1.png){:style="float:left"}
 <br><br>
-4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates](../../piv/details/#understanding-piv-certificates/)
+4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates](../../piv/details/#understanding-piv-certificates/).
 <br><br>
 ![Add CAPI Cert - #2]({{site.baseurl}}/assets/piv/winSCP-5.PNG)
 <br>
@@ -57,10 +57,10 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
       CAPI:05bf4653b3098a87b67816d81049f489d5b5ffb4
    ```    
 6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.)<br>
-7. While waiting for an account, you can create SSH session profiles for target remote servers:<br><br> 
-     o Click _Session_ and enter a remote server's _hostname_ or _IP address_.<br> 
-     o For _Connection type_, click _SSH_. (Notice that under _Port_, _22_ appears.)<br>
-     o Enter a session name in _Saved Sessions_ and click _Save_.<br>
+7. While waiting for an account, you can create SSH session profiles for target remote servers:<br>
+	- Click _Session_ and enter a remote server's _hostname_ or _IP address_.<br> 
+	- For _Connection type_, click _SSH_. (Notice that under _Port_, _22_ appears.)<br>
+	- Enter a session name in _Saved Sessions_ and click _Save_.<br>
 8. Once you have an account, open PuTTY-CAC and insert your PIV/CAC card into your card reader. 
 9. Click a _Saved Session_ and _Load_. 
 10. Click _Open_ to connect to the remote server. (A dialog box displays the server's key thumbprint.) 
