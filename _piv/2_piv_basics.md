@@ -17,7 +17,7 @@ There are two main categories for the features of a PIV credential: [_physical_ 
 
 ## Physical Features
 
-![Example of a PIV credential and its physical components]({{site.baseurl}}/assets/piv/elements.png){:style="float:left"}
+[![Example of a PIV credential and its physical components]({{site.baseurl}}/assets/piv/elements.png){:style="float:left"}]({{site.baseurl}}/assets/piv/elements.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 An example of a PIV credential can be seen above.
 
