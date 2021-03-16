@@ -19,7 +19,7 @@ There are two main categories for the features of a PIV credential: [_physical_ 
 
 ![Example of a PIV credential and its physical components]({{site.baseurl}}/assets/piv/elements.png){:style="float:left"}
 
-An example of a PIV credential can be seen to the left.
+An example of a PIV credential can be seen above.
 
 The image shows the standard placement for information such as photograph, name, affiliation, expiration date, organization, and the **chip**.   
 
