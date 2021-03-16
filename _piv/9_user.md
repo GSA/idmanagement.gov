@@ -15,23 +15,5 @@ subnav:
 
 These user playbooks will help agency users with PIV related tasks.
 
-<ul>
-  {% for playbook in site.piv.user reversed %}
-    {% assign link = item.permalik | remove: '/' %}
-    <li>
-      <h3><a href="{{site.baseurl}}/{{ item.permalink }}">{{ playbook.title }}</a></h3>
-      <strong>Date:</strong> {{ item.pubDate }}<br />
-      <strong>Description:</strong> {{ item.description }}
-    </li>
-  {% endfor %}
-</ul>
-
-Test #2
-
-{% for item in site.piv.user reversed %}
-  {% assign link = item.permalink | remove: '/' %}
-  <hr/>
-  <h3><a href="{{site.baseurl}}/{{ item.permalink }}"  title="{{ item.title }}">{{ item.title }}</a></h3>
-  <strong>Date:</strong> {{ item.pubDate }}<br />
-  <strong>Description:</strong> {{ item.description }}
-{% endfor %}
+- **Digitally Signing Documentas for Submission to the Office of the Federal Register** (July 17, 2018) - This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+- **Digitally Sign a Word Document** (March 23, 2018) - This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
