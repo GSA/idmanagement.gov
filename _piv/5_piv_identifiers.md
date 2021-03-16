@@ -11,7 +11,7 @@ In applications including network domains, you will associate the PIV credential
 
 {% include alert-info.html content="Associating a credential with an account is called Account Linking." %}
 
-_Identifiers_ are the values in credentials that are used for account linking.  We focus on the **PIV Authentication** certificate and identifiers in this section to help you understand the options, and design and implement for using PIV to authenticate to networks and applications. For more information on account linking, go to [Account linking in the network section](../network/accounts/).
+_Identifiers_ are the values in credentials that are used for account linking.  We focus on the **PIV Authentication** certificate and identifiers in this section to help you understand the options, and design and implement for using PIV to authenticate to networks and applications. For more information on account linking, see [Account Linking](../network/account/).
 
 The table below outlines identifiers available in the PIV Authentication certificate and design considerations for implementations.
 
