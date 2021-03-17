@@ -30,7 +30,7 @@ OpenSC will enable a user's PIV credential to work with Firefox and some signing
 
 First, you will need to install and test **OpenSC**. OpenSC has installers for multiple operating systems, including Windows, macOS, and Linux flavors. The installers can be downloaded directly from GitHub and the OpenSC wiki:
 
-* [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}
+* [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}{:rel="noopener noreferrer"}
 
 When installing OpenSC, you need to consider some items that are specific for the U.S. Government: 
 
@@ -65,5 +65,5 @@ Launch **_Firefox_** and load a new _Security Device_ (i.e., the Security Device
 * Click _OK_ and restart _Firefox_.
 
 ### Test Authentication
-* Browse to a web application that requires authentication with a PIV credential.  A common web application to use as a test is [MAX.gov](https://max.gov/maxportal/home.action){:target="_blank"}. (**Note:** You'll need to have an existing MAX.gov account for this to work.)
+* Browse to a web application that requires authentication with a PIV credential.  A common web application to use as a test is [MAX.gov](https://max.gov/maxportal/home.action){:target="_blank"}{:rel="noopener noreferrer"}. (**Note:** You'll need to have an existing MAX.gov account for this to work.)
 * Firefox will prompt you to enter your PIV credential PIN and select a certificate for authentication.
