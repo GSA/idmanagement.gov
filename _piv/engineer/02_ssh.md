@@ -18,7 +18,7 @@ subnav:
      - text: Configure a Linux Server
        href: '#configure-a-linux-server'
      - text: Special Thanks
-       href: 'special-thanks'
+       href: '#special-thanks'
 ---
 
 For network engineers, this guide will help you authenticate with your PIV/CAC credential and use SSH to access a remote Linux server from a Windows or macOS computer. For server administrators, this guide will help you configure a Linux server for remote access.
