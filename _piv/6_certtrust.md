@@ -32,7 +32,7 @@ For the US Federal Government Executive branch agencies, there is one Root Certi
 
 * [CLICK HERE: A graph of the federal public key infrastructure, including the business communities](../../fpki/tools/fpkigraph/){:target="_blank"}
 
-The participating Certificate Authorities and the policies, processes, and auditing is referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/community/twg/fpki-cas-audit-info/){:target="_blank"}
+The participating Certificate Authorities and the policies, processes, and auditing is referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/community/twg/fpki-cas-audit-info/){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Certificate Chains
 To digitally trust YOU and your PIV credential certificates, the workstations, servers, applications and network domains will be configured. Understanding and managing certificate chains are one of the methods to configure trust.
@@ -52,7 +52,7 @@ General recommendations for trust and certificate chain management include:
 
 - COMMON should be used as the trusted root certificate authority
 - Management of root and intermediate certificate authority certificates and distribution to network domains, workstations, servers and applications should be managed with group policy objects, secure automated distributions mechanisms, and enterprise policies and procedures to ensure updates are managed effectively.
-- NIST published an [Information Technology Laboratory (ITL) bulletin](http://csrc.nist.gov/publications/nistbul/july-2012_itl-bulletin.pdf){:target="_blank"} in July 2012 which includes general practices to consider.
+- NIST published an [Information Technology Laboratory (ITL) bulletin](http://csrc.nist.gov/publications/nistbul/july-2012_itl-bulletin.pdf){:target="_blank"}{:rel="noopener noreferrer"} in July 2012 which includes general practices to consider.
 
 Installation of the trusted root certificate and intermediate certificates is dependent upon operating systems and applications. Instructions for [downloading](#download-root-and-intermediate-certificates) are at the end of this page.
 
