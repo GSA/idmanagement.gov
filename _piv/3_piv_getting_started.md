@@ -76,4 +76,4 @@ For common PIV credential usage scenarios, we outline the _general smartcard mid
 ## Next Steps
 You have a PIV credential, you have a card reader, and you have middleware for your computer. **Now what?**
 
-If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, the next [section](../details) is for you.
+If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, see the [PIV Details](../details) section.
