@@ -39,7 +39,7 @@ To digitally trust YOU and your PIV credential certificates, the workstations, s
 
 The certificate chain includes the Intermediate Certificate Authorities certificates and the Federal Common Policy Certificate Authority (COMMON) root certificate.
 
-![Example of a PIV certificate chain to Common]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:style="float:center"}
+[![Example of a PIV certificate chain to Common]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 {% include alert-info.html heading = "Federal PKI Person Root - COMMON" content="The Federal Common Policy Certificate Authority (COMMON) root certificate is included in Microsoft, Adobe and some Apple trust stores by default.  It is not included by default in Mozilla, java, all mobile device operating systems, or Linux based operating systems." %}
