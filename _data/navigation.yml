@@ -67,8 +67,6 @@ piv:
     href: /piv/network/
   - text: Engineering Guides
     href: /piv/engineer/
-  - text: User Guides
-    href: /piv/user/
 
 pivnetwork:
   - text: Back to PIV Guide
@@ -97,14 +95,6 @@ pivengineer:
     href: /piv/engineer/firefox/
   - text: Enable SSH
     href: /piv/engineer/ssh/
-
-pivuser:
-  - text: Back to PIV Guide
-    href: /piv/user/
-  - text: Digitally Signing in Microsoft Word
-    href: /piv/user/signword/
-  - text: Digitally Signing Documents for Submission to the Office of the Federal Register
-    href: /piv/user/signfedregister/
 
 ## FPKI Navigation
 
