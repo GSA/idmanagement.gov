@@ -6,31 +6,20 @@ title: Digitally Sign a Microsoft Word Document
 pubDate: March 23, 2018
 permalink: /signword/
 description: This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
-sticky_sidenav: true
-sidenav: true
 
-subnav:
-    - text: Add a Digital Signature Using a Signature Line
-      href: '#add-a-digital-signature-using-a-signature-line'
-    - text: Add an Invisible Digital Signature
-      href: '#add-an-invisible-digital-signature'
-    - text: Add Multiple Digital Signatures Using Signature Lines
-      href: '#add-multiple-digital-signatures-using-signature-lines'
-    - text: Add Multiple Invisible Digital Signatures
-      href: '#add-multiple-invisible-digital-signatures'
-    - text: View Digital Signatures
-      href: '#view-digital-signatures'
-    - text: Remove a Digital Signature
-      href: '#remove-a-digital-signature'
-    - text: Verify Digital Signature Settings
-      href: '#verify-digital-signature-settings'
-    - text: Additional Resources
-      href: '#additional-resources'
 ---
 
 {% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the Verify Digital Signature Settings section below." %}
 
-This guide will walk you through the steps for digitally signing a document in Microsoft Word 2010, 2013, or 2016 using your PIV credential or digital certificate.
+This guide will walk you through the steps for digitally signing a document in Microsoft Word 2010, 2013, or 2016 using your PIV credential or digital certificate:
+- [Add a Digital Signature Using a Signature Line](#add-a-digital-signature-using-a-signature-line)
+- [Add an Invisible Digital Signature](#add-an-invisible-digital-signature)
+- [Add Multiple Digital Signatures Using Signature Lines](#add-multiple-digital-signatures-using-signature-lines)
+- [Add Multiple Invisible Digital Signatures](#add-multiple-invisible-digital-signatures)
+- [View Digital Signatures](#view-digital-signatures)
+- [Remove a Digital Signature](#remove-a-digital-signature)
+- [Verify Digital Signature Settings](#verify-digital-signature-settings)
+- [Additional Resources](#additional-resources)
 
 ## Add a Digital Signature Using a Signature Line
 
