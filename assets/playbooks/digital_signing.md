@@ -4,7 +4,7 @@ collection: piv
 navtitle: Digitally Signing in Microsoft Word
 title: Digitally Sign a Microsoft Word Document
 pubDate: March 23, 2018
-permalink: /signword
+permalink: /signword/
 description: This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
 sticky_sidenav: true
 sidenav: true
