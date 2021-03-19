@@ -12,15 +12,7 @@ sidenav: signword
 
 {% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the Verify Digital Signature Settings section below." %}
 
-This guide will walk you through the steps for digitally signing a document in Microsoft Word 2010, 2013, or 2016 using your PIV credential or digital certificate:
-- [Add a Digital Signature Using a Signature Line](#add-a-digital-signature-using-a-signature-line)
-- [Add an Invisible Digital Signature](#add-an-invisible-digital-signature)
-- [Add Multiple Digital Signatures Using Signature Lines](#add-multiple-digital-signatures-using-signature-lines)
-- [Add Multiple Invisible Digital Signatures](#add-multiple-invisible-digital-signatures)
-- [View Digital Signatures](#view-digital-signatures)
-- [Remove a Digital Signature](#remove-a-digital-signature)
-- [Verify Digital Signature Settings](#verify-digital-signature-settings)
-- [Additional Resources](#additional-resources)
+This guide will walk you through the steps for digitally signing a document in Microsoft Word 2010, 2013, or 2016 using your PIV credential or digital certificate.
 
 ## Add a Digital Signature Using a Signature Line
 
