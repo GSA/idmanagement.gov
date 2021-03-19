@@ -11,12 +11,6 @@ sidenav: signwordofr
 
 This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
 
-- [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word)
-- [Multiple Digital Signatories in MS Word](#multiple-digital-signatories-in-ms-word)
-- [Remove Invisible Digital Signatures in MS Word](#remove-invisible-digital-signatures-in-ms-word)
-- [View Signature Certificate in MS Word](#view-signature-certificate-in-ms-word)
-- [FAQs](#faqs)
-
 The digital signatory of a document MUST be the same person whose name is typed in the signature block.  The names must match exactly or meet the accepted standards listed in the DDH, Ch. 1.  To verify the name as applied to the digital certificate, follow the instructions below in the [View Signature Certificate in MS Word](#view-signature-certificate-in-ms-word) section.
 
 Using the native Microsoft (MS) Word signing capability applies your Public Key Infrastructure (PKI) certificate to the document, guaranteeing the authenticity of the signer and the document.  Once applied, your document is protected and cannot be edited without removing the digital signature. The MS Word signing process saves the signed document _under the same filename_!
