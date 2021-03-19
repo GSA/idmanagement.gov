@@ -108,7 +108,7 @@ searchgov:
   access_key: B1dV_F4sFomL1Qmb-qsoO8xccBkWQiwDUsj5v72c4K8=
 
   # this renders the results within the page instead of sending to user to search.gov
-  inline: true
+  inline: false
 
 ##########################################################################################
 # The values below here are more advanced and should only be
