@@ -21,7 +21,7 @@ You can find additional guides across agency websites by using a few simple meth
 
 1. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+PIV +CAC"
 2. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+x509"
-3. Search on Max.gov:  [Max.gov](https://max.gov){:target="_blank"} requires you to login.  Try searching for the topic or guide.   
+3. Search on Max.gov:  [Max.gov](https://max.gov){:target="_blank"}{:rel="noopener noreferrer"} requires you to login.  Try searching for the topic or guide.   
 
 If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}.  We can help look through the archives of guides that haven't been posted yet or help you send a request to the government listserves.  
 

@@ -32,7 +32,7 @@ To grant a user access, based on the type of authenticator used, you can use a W
 AMA is available for domains operating on Windows Server 2008 R2 and later versions. 
 
 ## Implementation
-You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"} to import and set up a list of certificate issuance policies. This script:
+You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"}{:rel="noopener noreferrer"} to import and set up a list of certificate issuance policies. This script:
 
 - Contains a list of certificate issuance policy object identifiers (OIDs) used by U.S. Federal Government agencies
 - Creates security groups with the same names as the policies 
@@ -45,7 +45,7 @@ You can run the script with a few simple steps.
   - `CertificateIssuanceOIDs.ps1 -GroupDN \<group DN string>`
   - For example: `CertificateIssuanceOIDs.ps1 -GroupDN 'OU=Groups,OU=Administrators,DC=agency,DC=gov'`
 
-- After downloading this script, you may need to change the [PowerShell script execution policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core){:target="_blank"} to execute the script or sign the script to execute it.
+- After downloading this script, you may need to change the [PowerShell script execution policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core){:target="_blank"}{:rel="noopener noreferrer"} to execute the script or sign the script to execute it.
 
 A sample output from the script is shown below: 
 
@@ -142,5 +142,5 @@ Use the Windows Registry Editor to set the _AMA Priority_ above _Most Recently I
 - `"ChainWithIssuancePolicyOIDs"=dword:00000001`
 
 
-Refer to [AMA Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=WS.10).aspx){:target=_"blank"} to understand the implementation of AMA.
+Refer to [AMA Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"} to understand the implementation of AMA.
 
