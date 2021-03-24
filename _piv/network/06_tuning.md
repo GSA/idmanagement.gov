@@ -13,8 +13,6 @@ subnav:
       href: '#crl-retrieval-timeout-settings'
     - text: OCSP Response Caching Behavior
       href: '#ocsp-response-caching-behavior'
-    - text: Windows 2008 R2 Server and Large CRLs
-      href: '#windows-2008-r2-server-and-large-crls'
 ---
 
 You can tune the network domain settings to help you and your users have a better experience and reduce errors.  This section highlights some of the _common_ tuning configurations for network domain logon.  There are additional tuning configurations and we encourage you to start with these first and contribute others.      

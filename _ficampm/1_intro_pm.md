@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: pm
 ---
 
-The *FICAM Program Management Guide* explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](https://arch.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}. In this guide, you'll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations, as well as how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The *FICAM Program Management Guide* explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](../../arch/intro-arch){:target="_blank"}{:rel="noopener noreferrer"}. In this guide, you'll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations, as well as how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
 This guide answers the most common ICAM program organization and management questions, including:
 
@@ -17,7 +17,7 @@ This guide answers the most common ICAM program organization and management ques
 
 The guide is organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
 
-The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](../../assets/playbooks/Roadmap-FICAM-v2-20111202.pdf)
+The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](../../docs/roadmap-ficam.pdf)
 
 ## What is ICAM Program Management?
 

@@ -12,7 +12,7 @@ subnav:
     - text: What is in the PIV Guides?
       href: '#what-information-is-in-these-piv-guides'
     - text: Why is PIV usage important?
-      href: '#why-is-piv-usage-important?'
+      href: '#why-is-piv-usage-important'
     - text: What systems should use PIV?
       href: '#what-systems-should-use-piv'
     - text: Where can I find the Standards?

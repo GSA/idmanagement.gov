@@ -5,14 +5,15 @@
 
   https://circleci.com/
 -->
-[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
+<!--[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
 
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=18F/federalist-uswds-jekyll)](https://dependabot.com)
+-->
 
 This work is in Beta stage and is led by the GSA Identity and Trusted Access Division FICAM Program in coordination with the ICAM Subcommittee of the Federal CIO Council.
 
 # FICAM Playbooks
-This repository is a governmentwide collaboration. The content is advancing the maturity of Federal Identity, Credential, and Access Management systems which was previously envisioned in the FICAM Roadmap and Implementation Guidance v2.0: https://playbooks.idmanagement.gov/assets/playbooks/Roadmap-FICAM-v2-20111202.pdf
+This repository is a governmentwide collaboration. The content is advancing the maturity of Federal Identity, Credential, and Access Management systems which was previously envisioned in the [FICAM Roadmap and Implementation Guidance v2.0](../../docs/roadmap-ficam.pdf)
 
 Additional repositories are under development for contributors to share ICAM implementation guides, code, reference implementations, and solutions.
 
