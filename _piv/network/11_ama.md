@@ -50,7 +50,8 @@ You can run the script with a few simple steps.
 A sample output from the script is shown below: 
 
 ```
-  PS C:\> C:\AMA\Script\CertificateIssuanceOIDs.ps1 -GroupDN 'ou=groups,ou=security,dc=agency,dc=gov'
+  PS C:\> C:\AMA\Script\CertificateIssuanceOIDs.ps1 
+  -GroupDN 'ou=groups,ou=security,dc=agency,dc=gov'
   
   Created CN=id-fpki-common-authentication,ou=groups,
   ou=security,dc=agency,dc=gov  
