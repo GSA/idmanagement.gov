@@ -52,14 +52,17 @@ A sample output from the script is shown below:
 ```
   PS C:\> C:\AMA\Script\CertificateIssuanceOIDs.ps1 -GroupDN 'ou=groups,ou=security,dc=agency,dc=gov'
   
-  Created CN=id-fpki-common-authentication,ou=groups,ou=security,dc=agency,dc=gov  
+  Created CN=id-fpki-common-authentication,ou=groups,
+  ou=security,dc=agency,dc=gov  
   2.16.840.1.101.3.2.1.3.13 -- Unknown ObjectId  
   
   Localized name added to DS store.
   0: 1033,id-fpki-common-authentication  
   CertUtil: -oid command completed successfully.
   
-  Created CN=13.255922318A2AF32EC47D5B70735D4DB3,CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=agency,DC=gov  
+  Created CN=13.255922318A2AF32EC47D5B70735D4DB3,
+  CN=OID,CN=Public Key Services,CN=Services,
+  CN=Configuration,DC=agency,DC=gov  
   AD AMA set for 2.16.840.1.101.3.2.1.3.13  id-fpki-common-authentication  
 ```
 
@@ -82,7 +85,8 @@ To test the output on your network domain, log in with your PIV credential and c
 - From the command line: `C:\whoami /groups`
 
 ```
-  agency\id-fpki-common-authentication   Group  S-1-5-21-179144328 1-1764752353-2202401552-1113   
+  agency\id-fpki-common-authentication   Group  S-1-5-21-179144328 
+  1-1764752353-2202401552-1113   
   Mandatory group, Enabled by default, Enabled group
 ```
 

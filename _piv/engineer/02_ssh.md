@@ -12,7 +12,7 @@ subnav:
      - text: SSH from Windows - Using WinSCP and Pageant
        href: '#ssh-using-winscp-and-pageant'
      - text: SSH from macOS - Built-In Support
-       href: '#built-in-piv/cac-support'
+       href: '#built-in-piv-cac-support'
      - text: SSH from maxOS - OpenSC
        href: '#opensc'
      - text: Configure a Linux Server
