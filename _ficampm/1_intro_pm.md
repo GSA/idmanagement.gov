@@ -17,7 +17,7 @@ This guide answers the most common ICAM program organization and management ques
 
 The guide is organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
 
-The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](../../assets/playbooks/Roadmap-FICAM-v2-20111202.pdf)
+The content for this guide is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](../../docs/roadmap-ficam-v2-20111202.pdf)
 
 ## What is ICAM Program Management?
 
