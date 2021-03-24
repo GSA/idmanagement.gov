@@ -68,7 +68,6 @@ primary_navigation:
   - name: PIV
     url: /piv/intro-piv/
   - name: PACS
-  - name: PACS
     description: Physical Access Control Systems Guide
     url: /pacs/intro-pacs/
   - name: Other Playbooks
