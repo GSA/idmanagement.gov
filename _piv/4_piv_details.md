@@ -18,6 +18,7 @@ subnav:
 You can use these simple methods to view, export, and understand the information stored on a PIV credential.
 
 ## View Your PIV Credential Certificates
+
 Almost **all** of the methods for using your PIV credential for networks, applications, digital signatures, and encryption involve the certificates and key pairs stored on your PIV credential.  There are also scenarios where additional information (such as biometrics) is also accessed and used. 
 
 To view your certificate information:
@@ -36,14 +37,15 @@ To view your certificate information:
 {% include alert-info.html heading = "View" content="You may see many certificates.  To open and view the certificate details, double-click on any certificate." %}
 
 ## Export PIV Certificates
-We won't always be using graphical user interfaces to view the PIV credential certificates.  Throughout the _PIV_ and _Federal PKI (FPKI) Guides_, we're continuing to add useful procedures for network engineers and examples of code, tools, and common _command line_ options for viewing and troubleshooting configurations.  (**Note:** These examples may use files representing _public_ certificates.)
+We won’t always use graphical user interfaces to view the PIV credential certificates. Throughout the _PIV_ and _Federal PKI (FPKI) Guides_, we're continuing to add useful procedures for network engineers and examples of code, tools, and common _command line_ options for viewing and troubleshooting configurations.  (**Note:** These examples may use files representing _public_ certificates.)
 
 {% include alert-info.html heading = "Export" content="Look for an Export button and save the file as DER or PEM-encoded, with a file extension of cer (.cer)." %}
 
 {% include alert-warning.html heading = "Keys are safe!" content="Don't worry - the public certificates are public.  The private keys are always stored safely on your PIV credential and can never be exported. " %}
 
 ## Understand PIV Certificates
-Viewing the certificate information on your PIV credential may be interesting if you are a general user.  Understanding the certificate information is a **must** if you are a program manager or engineer developing applications and designing solutions for using PIV credentials.
+
+Viewing the certificate information on your PIV credential may be interesting if you are a general user.  You **must** understand certificate information as a program manager or engineer developing applications and designing solutions for using PIV credentials.
 
 Within the U.S. Federal Government, the certificate and PIV credential information is governed by standards, policies, and implementation-specific choices (options) across all agency credential providers.
 

@@ -15,7 +15,7 @@ subnav:
 
 PIV engineering guides are for engineers configuring agency infrastructure, servers and enterprise applications for authentication. The guides are focused on US Federal Government implementations. 
 
-{% include alert-info.html heading="Are you trying to solve a problem?" content="The same problem has likley been encountered or solved by your colleagues.  Engineering guides exist across government.  The purpose for this site is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
+{% include alert-info.html heading="Are you trying to solve a problem?" content="Your colleagues have likely encountered or solved the same problem.  Engineering guides exist across government.  The purpose for this site is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
 
 You can find additional guides across agency websites by using a few simple methods: 
 
