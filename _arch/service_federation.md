@@ -7,7 +7,7 @@ sidenav: archservices
 sticky_sidenav: true
 ---
 
-![A gray box with the list of Federation services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/FederationServices.png){:align="right" style="padding-left:30px"}
+[![A gray box with the list of Federation services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/FederationServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/FederationServices.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Federation is the technology, policies, standards, and processes that allow an agency to accept digital identities, attributes, and credentials managed by other agencies.
 
@@ -24,7 +24,7 @@ Federation has many different applications, including:
 ## Federation Services
 The Federation services in the Federal ICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
 
-![A gray box with the Federation service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:align="center"}
+[![A gray box with the Federation service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Policy Alignment
 

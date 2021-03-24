@@ -34,13 +34,3 @@ For details about ICAM services, see the [Services Framework](../services).
 While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies. The use cases don’t include agency-specific functions and process details because your agency should analyze your systems and processes to align with these broad use cases.
 
 You can combine or build upon the ICAM use cases to support your agency’s scenarios and needs.
-
-See the use cases here:
-  1. [Create and Maintain an Identity](../createidentity/)
-  2. [Proof an Identity](../proofidentity/)
-  3. [Manage the Entitlements Lifecycle](../manageaccess/)
-  4. [Create and Issue a Credential](../usecredential/)
-  5. [Issue a Derived Credential](../derivecredential/)
-  6. [Manage the Credential Lifecycle](../managecredential/)
-  7. [Grant Access](../grantaccess/)
-  8. [Accept Federation Assertions](../federate/)
