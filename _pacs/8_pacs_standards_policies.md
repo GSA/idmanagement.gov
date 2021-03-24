@@ -43,9 +43,9 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 ## Standards
 
-[_Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance_](../../docs/roadmap-ficam-v2-20111202.pdf){:target="_blank"}, Version 2.0, Executive Office of the President (EOP) and Federal Chief Information Officers (CIO) Council, December 2, 2011.
+[_Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance_](../../docs/roadmap-ficam.pdf){:target="_blank"}, Version 2.0, Executive Office of the President (EOP) and Federal Chief Information Officers (CIO) Council, December 2, 2011.
 
-[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](../../docs/fpki-overlay-800-53-v2-20140414.pdf){:target="_blank"}, Version 2.0, April 24, 2014.
+[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](../../docs/fpki-overlay-800-53.pdf){:target="_blank"}, Version 3.0, February 26, 2021.
 
 [FIPS PUB 199, _Standards for Security Categorization of Federal Information and Information Systems_](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf){:target="_blank"}{:rel="noopener noreferrer"}, NIST, February 2004.
 
@@ -69,13 +69,13 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Council (ISC), December 2015.
 
-[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](../../docs/pacs-pki-epacs-procurement-v1-1-20150224.pdf){:target="_blank"}, v1.1.0, GSA, February 24, 2015.
+[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](../../docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}, v1.1.0, GSA, February 24, 2015.
 
 [_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf){:target="_blank"}{:rel="noopener noreferrer"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018.
 
-[_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](../../docs/pacs-piv-epacs-v3-20140326.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014.
+[_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](../../docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014.
 
-[_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/piv-i-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017.
+[_Personal Identity Verification Interoperability for Issuers_](../../docs/pacs-piv-i-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017.
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
 

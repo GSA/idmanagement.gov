@@ -33,7 +33,7 @@ The figure below provides an example of an ICAM governance and program managemen
 [![HHS ICAM Governance Structure](../../assets/ficampm/examples_HHS-ICAM-Structure.png)](../../assets/ficampm/examples_HHS-ICAM-Structure.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### ICAM PMO Charter
-For an example of an ICAM Program Management Office (PMO) charter, download the [HHS ICAM PMO Governance Charter](../../docs/ficampm-hhs-governance-charter-v1-20091014.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, May 2019)
+For an example of an ICAM Program Management Office (PMO) charter, download the [HHS ICAM PMO Governance Charter](../../docs/ficampm-hhs-governance-charter.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, May 2019)
 
 ## Authorities to Consider
 
