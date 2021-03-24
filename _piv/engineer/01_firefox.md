@@ -23,7 +23,7 @@ You may need to configure Firefox to enable your agency users to log into web ap
 
 This guide will help you to configure Firefox by using an open source software package.  In addition to open source solutions, commercial software may be used. 
 
-{% include alert-info.html heading="PKCS #11" content="You are interested in learning more? Search for PKCS #11 for other resources available." %} 
+{% include alert-info.html heading="PKCS #11" content="Are you interested in learning more? Search for PKCS #11 for other resources available." %} 
 
 ## Install and Test OpenSC
 OpenSC will enable a user's PIV credential to work with Firefox and some signing and encryption applications.
