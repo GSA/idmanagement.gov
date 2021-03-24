@@ -7,7 +7,7 @@ sidenav: archservices
 sticky_sidenav: true
 ---
 
-![A green box with the list of Credential Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:align="right" style="padding-left:30px"}
+[![A green box with the list of Credential Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/CredentialManagementServices.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Credential Management is how an agency issues, manages, and revokes credentials bound to enterprise identities.
 
@@ -34,7 +34,7 @@ Unlike identities, credentials can expire. If an enterprise identity continues p
 
 The Credential Management services in the Federal ICAM architecture include Sponsorship, Registration, Generation & Issuance, Maintenance, and Revocation.
 
-![A green box with the Credential Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png){:align="center"}
+[![A green box with the Credential Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Sponsorship
 
