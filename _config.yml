@@ -63,11 +63,11 @@ primary_navigation:
   - name: Program Management
     description: FICAM Program Management Guide
     url: /ficampm/intro-pm/
-#  - name: Federal PKI (FPKI)
+#  - name: FPKI
 #    url: /fpki/intro-fpki/
-  - name: Personal Identity Verification (PIV)
+  - name: PIV
     url: /piv/intro-piv/
-  - name: Physical Access Control Systems (PACS)
+  - name: PACS
   - name: PACS
     description: Physical Access Control Systems Guide
     url: /pacs/intro-pacs/
