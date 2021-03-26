@@ -17,9 +17,9 @@ There are two main categories for the features of a PIV credential: [_physical_ 
 
 ## Physical Features
 
-![Example of a PIV credential and its physical components]({{site.baseurl}}/assets/piv/elements.png){:style="float:left"}
+[![Example of a PIV credential and its physical components]({{site.baseurl}}/assets/piv/elements.png){:style="float:left"}]({{site.baseurl}}/assets/piv/elements.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-An example of a PIV credential can be seen to the left.
+An example of a PIV credential can be seen above.
 
 The image shows the standard placement for information such as photograph, name, affiliation, expiration date, organization, and the **chip**.   
 
@@ -27,13 +27,13 @@ PIV credentials also contain at least one security feature that aids in reducing
 
 
 ## Electronic Features
-What is the chip on your PIV credential?  In the easiest terms: it is a computer.  It holds information **very securely** and can process data.  The chip is also called a _secure element_.
+What is the chip on your PIV credential?  In the easiest terms: it's a computer.  It holds information **very securely** and can process data.  The chip is also called a _secure element_.
 
 {% include alert-info.html heading = "Do you have a debit card with a chip or a smartphone with a SIM card?" content="These are both examples of similar technology that we use every day in our daily lives and help us secure information.  You can't use your PIV credential to withdraw money, nor do you use your debit card to login to your computer or Federal applications - but you can see how similar technology is used every day." %}
 
-Most applications that use PIV credentials leverage information stored on the chip and we call this information the _logical elements_.  These elements are defined in the [NIST Special Publication 800-73 series document.](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}
+Most applications that use PIV credentials leverage information stored on the chip and we call this information the _logical elements_.  These elements are defined in the [NIST Special Publication 800-73 series document.](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-The following electronic elements authenticate the PIV credential as a Device:  
+The following electronic elements authenticate the PIV credential as a device:  
 
 - **Cardholder Unique Identifier (CHUID)**, which is a digitally signed Federal Agency Smart Card Number (FASC-N) plus other data that can be used.
 - **Card Authentication**, which is a certificate and key pair that can be used to verify that the PIV credential was issued by an authorized entity, has not expired, and has not been revoked.

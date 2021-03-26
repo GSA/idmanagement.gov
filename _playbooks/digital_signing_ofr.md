@@ -1,27 +1,17 @@
 ---
 layout: page
-collection: piv
 navtitle: Digitally Signing Documents for Submission to Office of the Federal Register
 title: Digitally Signing Documents for Submission to Office of the Federal Register
-pubDate: July 17, 2018
-permalink: piv/user/signfedregister/
+pubdate: 07/2018
+date: July, 17, 2018
+type: Markdown
+permalink: /signfedregister/
 description: This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
 sticky_sidenav: true
-sidenav: pivuser
-
-subnav:
-    - text: Add Invisible Digital Signatures in MS Word
-      href: '#add-invisible-digital-signatures-in-ms-word'
-    - text: Multiple Digital Signatories in MS Word
-      href: '#multiple-digital-signatories-in-ms-word'
-    - text: Remove Invisible Digital Signatures in MS Word
-      href: '#remove-invisible-digital-signatures-in-ms-word'
-    - text: View Signature Certificate in MS Word
-      href: '#view-signature-certificate-in-ms-word'
-    - text: FAQs
-      href: '#faqs'
-
+sidenav: signwordofr
 ---
+
+This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
 
 The digital signatory of a document MUST be the same person whose name is typed in the signature block.  The names must match exactly or meet the accepted standards listed in the DDH, Ch. 1.  To verify the name as applied to the digital certificate, follow the instructions below in the [View Signature Certificate in MS Word](#view-signature-certificate-in-ms-word) section.
 
@@ -38,25 +28,25 @@ Do NOT use the _Insert Signature_ function (under the **INSERT** tab in the **Wo
 1. Open your MS Word document in Word. Any changes must be saved before signing.
 2. If you have a purchased PKI credential installed on your computer, proceed to Step 3. Otherwise, insert your Federal Government-issued Personal Identity Verification (PIV) card into your card reader.
 3. Click the **File** tab.<br />
-   ![Add Dig Sign]({{site.baseurl}}/assets/piv/ofr_word_add_digital_signature_1.PNG){:style="width:70%;"}
+   [![Add Dig Sign]({{site.baseurl}}/assets/piv/ofr_word_add_digital_signature_1.PNG){:style="width:70%;"}]({{site.baseurl}}/assets/piv/ofr_word_add_digital_signature_1.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 4. Click **Info**.
 5. Click **Protect Document**.
 6. Click **Add a Digital Signature**.
 7. In the **Sign** dialog box:<br />
-   ![OFR Sign Box]({{site.baseurl}}/assets/piv/ofr_sign_box_with_name_appears_here_3.png){:style="width:75%;"}
+   [![OFR Sign Box]({{site.baseurl}}/assets/piv/ofr_sign_box_with_name_appears_here_3.png){:style="width:75%;"}]({{site.baseurl}}/assets/piv/ofr_sign_box_with_name_appears_here_3.png){:target="_blank"}{:rel="noopener noreferrer"}
 8. Select a **Commitment Type** from the pull-down menu.
 9. In the **Purpose for signing this document**, type the purpose or leave blank.
 10. To ensure the correct certificate is used, click the **Change** button.
 11. In the Certification Selection box, there may be multiple certificates.  Select the first **unexpired** certificate with your name;  then _Click here to view the certificate properties_.<br />
-    ![OFR Windows Security Certificate Type]({{site.baseurl}}/assets/piv/ofr_windows_sec_piv_or_purch_cert.png){:style="width:80%;"}  
+    [![OFR Windows Security Certificate Type]({{site.baseurl}}/assets/piv/ofr_windows_sec_piv_or_purch_cert.png){:style="width:80%;"}]({{site.baseurl}}/assets/piv/ofr_windows_sec_piv_or_purch_cert.png){:target="_blank"}{:rel="noopener noreferrer"}
 12. The **Certificate Details** box appears. Go to the _Details_ tab and scroll down to _Key Usage_.  Single-click on it.  The lower text box should now display “Digital Signature, Non-Repudiation” (for PIV card certificate) or “Digital Signature” (for a purchased certificate).  If it does, then this is the right certificate. Click **OK** to close the window and proceed with signing.<br />
-    ![OFR Certificate Details]({{site.baseurl}}/assets/piv/ofr_certificate_details.png){:style="width:60%;"} 
+    [![OFR Certificate Details]({{site.baseurl}}/assets/piv/ofr_certificate_details.png){:style="width:60%;"}]({{site.baseurl}}/assets/piv/ofr_certificate_details.png){:target="_blank"}{:rel="noopener noreferrer"}
 13. If this is the wrong certificate, click **OK**. Then select another certificate and repeat these steps until you find the correct certificate.
 14. Click **Sign**.
 15. Follow the prompt to enter your **PIN**; then click **OK**.<br />
-    ![OFR Enter Your PIN]({{site.baseurl}}/assets/piv/ofr_enter_your_pin_3.png){:style="width:58%;"}
+    [![OFR Enter Your PIN]({{site.baseurl}}/assets/piv/ofr_enter_your_pin_3.png){:style="width:58%;"}]({{site.baseurl}}/assets/piv/ofr_enter_your_pin_3.png){:target="_blank"}{:rel="noopener noreferrer"}
 16. If the digital signature certificate and PIN are valid, the document is signed and automatically saved _under the same filename!_  This is the file you submit to OFR via the web portal.<br />
-    ![OFR Signature Confirmation]({{site.baseurl}}/assets/piv/ofr_signature_confirmation.png){:style="width:58%;"}
+    [![OFR Signature Confirmation]({{site.baseurl}}/assets/piv/ofr_signature_confirmation.png){:style="width:58%;"}]({{site.baseurl}}/assets/piv/ofr_signature_confirmation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 If you are signing multiple documents, leave MS Word open and your PIV card inserted to sign without having to re-enter your PIN for each file.
 
@@ -84,12 +74,12 @@ One of the issuing agencies should serve as the primary or lead coordinating age
 ## Remove Invisible Digital Signatures in MS Word
 
 1. Open the MS Word document that contains the invisible signature you want to remove.<br />
-   ![Doc Invisible Signatures]({{site.baseurl}}/assets/piv/ofr_remove_invisible_sign_4.png){:style="width:90%;"}
+   [![Doc Invisible Signatures]({{site.baseurl}}/assets/piv/ofr_remove_invisible_sign_4.png){:style="width:90%;"}]({{site.baseurl}}/assets/piv/ofr_remove_invisible_sign_4.png){:target="_blank"}{:rel="noopener noreferrer"}
 2. In the header, you may see the option to **View Signatures**.  Click that button and proceed to Step 5. Otherwise:
 3. Click the **File** tab.
 4. Click **Info**.
 5. Click **View Signatures**. The **Signatures** pane appears.<br />
-   ![Signatures Pane]({{site.baseurl}}/assets/piv/ofr_signatures_pane_5.png){:style="width:120%;"}
+   [![Signatures Pane]({{site.baseurl}}/assets/piv/ofr_signatures_pane_5.png){:style="width:120%;"}]({{site.baseurl}}/assets/piv/ofr_signatures_pane_5.png){:target="_blank"}{:rel="noopener noreferrer"}
 6. Next to the signature name, click the arrow.
 7. Click **Remove Signature**.
 8. Click **Yes**.
@@ -100,13 +90,14 @@ You can check the details of the digital certificate(s) used to sign an MS Word 
 
 Open the signed MS Word document containing the certificate(s) you want to check, or have the signer sign a document via the instructions provided in the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) section above.
 
-1. In the header, you may see the option to **View Signatures**.  Click that button and proceed to Step 5. Otherwise:
-3. Click **Info**.
-4. Click **View Signatures**. The **Signatures** pane appears.
-5. In the **Signatures** pane, hover on the name of the signer you want to check; then click the small down arrow.
-6. Click on **Signature Details**. 
-7. The signer’s name as applied to the certificate is listed, along with the Certification Authority (CA). Click the **View** button.  
-8. A pop-up window appears. Be sure that the **General** tab is selected. The valid dates of the certificate are listed. More technical details, such as the certification path and key usage values, are shown under other tabs.  
+1. In the header, you may see the option to **View Signatures**.<br />
+   [![Doc Invisible Signatures]({{site.baseurl}}/assets/piv/ofr_remove_invisible_sign_4.png){:style="width:90%;"}]({{site.baseurl}}/assets/piv/ofr_remove_invisible_sign_4.png){:target="_blank"}{:rel="noopener noreferrer"}
+2. Click **View Signatures** in the header or click **Info** > **View Signatures** in the Word ribbon. The **Signatures** pane appears.<br />
+   [![Signatures Pane]({{site.baseurl}}/assets/piv/ofr_signatures_pane_5.png){:style="width:120%;"}]({{site.baseurl}}/assets/piv/ofr_signatures_pane_5.png){:target="_blank"}{:rel="noopener noreferrer"}
+3. In the **Signatures** pane, hover on the name of the signer you want to check; then click the small down arrow.
+4. Click on **Signature Details**. 
+5. The signer’s name as applied to the certificate is listed, along with the Certification Authority (CA). Click the **View** button.  
+6. A pop-up window appears. Be sure that the **General** tab is selected. The valid dates of the certificate are listed. More technical details, such as the certification path and key usage values, are shown under other tabs.  
 
 ## FAQs
 
@@ -145,7 +136,7 @@ If you are using purchased certificates, such as from an Entrust vendor, you can
 
 ### How do I identify the Purchased Certificates and PIV Card Certificates when signing a document?
 When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) instructions above, note the different icons for the PIV and purchased certificates:<br/>
-![Certificate Type Icons]({{site.baseurl}}/assets/piv/ofr_certificate_types.png){:style="width:40%;"}
+[![Certificate Type Icons]({{site.baseurl}}/assets/piv/ofr_certificate_types.png){:style="width:40%;"}]({{site.baseurl}}/assets/piv/ofr_certificate_types.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Some of our signers use MS Word for Apple on iPad.  Will this work for PKI submission?
 Microsoft has not put that function (PKI-based digital signature) into the MS Word for Mac (Office for Mac) software.  We recognize that some agencies have signers who use the Mac platform. We expect to run testing when this function becomes available.  

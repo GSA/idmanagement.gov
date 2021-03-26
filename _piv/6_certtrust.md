@@ -26,20 +26,20 @@ Identity certificates are issued and digitally signed by a _Certificate Authorit
 
 The full process of proving identity when issuing the certificates, auditing the certificate authorities, and the cryptographic protections of the digital signatures establish the basis of Trust for PIV credentials and certificates.
 
-![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}
+[![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/piv/certificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/certificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority (COMMON)_, and dozens of Intermediate Certificate Authorities.  The US Federal Government has also established Trust with other Certificate Authorities which serve business communities, State and Local government communities, and international government communities.
+For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority (COMMON)_, and dozens of Intermediate Certificate Authorities.  The US Federal Government has also established Trust with other Certificate Authorities which serve business communities, state and local government communities, and international government communities.
 
-* [CLICK HERE: A graph of the federal public key infrastructure, including the business communities](../../fpki/tools/fpkigraph/){:target="_blank"}
+* [CLICK HERE: A graph of the federal public key infrastructure, including the business communities](../../fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}
 
-The participating Certificate Authorities and the policies, processes, and auditing is referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/community/twg/fpki-cas-audit-info/){:target="_blank"}
+The participating Certificate Authorities and the policies, processes, and auditing is referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/community/twg/fpki-cas-audit-info/){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Certificate Chains
 To digitally trust YOU and your PIV credential certificates, the workstations, servers, applications and network domains will be configured. Understanding and managing certificate chains are one of the methods to configure trust.
 
 The certificate chain includes the Intermediate Certificate Authorities certificates and the Federal Common Policy Certificate Authority (COMMON) root certificate.
 
-![Example of a PIV certificate chain to Common]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:style="float:center"}
+[![Example of a PIV certificate chain to Common]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/piv/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 {% include alert-info.html heading = "Federal PKI Person Root - COMMON" content="The Federal Common Policy Certificate Authority (COMMON) root certificate is included in Microsoft, Adobe and some Apple trust stores by default.  It is not included by default in Mozilla, java, all mobile device operating systems, or Linux based operating systems." %}
@@ -52,12 +52,12 @@ General recommendations for trust and certificate chain management include:
 
 - COMMON should be used as the trusted root certificate authority
 - Management of root and intermediate certificate authority certificates and distribution to network domains, workstations, servers and applications should be managed with group policy objects, secure automated distributions mechanisms, and enterprise policies and procedures to ensure updates are managed effectively.
-- NIST published an [Information Technology Laboratory (ITL) bulletin](http://csrc.nist.gov/publications/nistbul/july-2012_itl-bulletin.pdf){:target="_blank"} in July 2012 which includes general practices to consider.
+- NIST published an [Information Technology Laboratory (ITL) bulletin](http://csrc.nist.gov/publications/nistbul/july-2012_itl-bulletin.pdf){:target="_blank"}{:rel="noopener noreferrer"} in July 2012 which includes general practices to consider.
 
 Installation of the trusted root certificate and intermediate certificates is dependent upon operating systems and applications. Instructions for [downloading](#download-root-and-intermediate-certificates) are at the end of this page.
 
 ## Revocation
-Revocation is the process and technology to identify a certificate as no longer valid - to tell computers and applications _"do not trust this certificate anymore"_.
+Revocation is the process and technology to identify a certificate as no longer valid - to tell computers and applications _"do not trust this certificate anymore."_
 
 PIV credential certificates will be _revoked_ when a user terminates employment or a contract with an agency, is issued a new credential, is issued an updated PIV credential, or has a lost, stolen or damaged PIV credential.  The revocation of PIV credential certificates occurs with the PIV credential issuer and certificate authority.
 
@@ -79,40 +79,15 @@ For a portion of your implementations such as network authentication, the _revoc
 
 ## Download root and intermediate certificates
 
-The Federal Common Policy Certificate Authority (COMMON) root certificate can be retrieved via two methods: online or out of band.  We recommend requesting the root certificate using the out of band (email) method for engineers working in production environments.
+The Federal Government recently deployed the Federal Common Policy CA (FCPCA) G2, a new Federal Public Key Infrastructure (FPKI) root Certification Authority (CA). As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCA G2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you’ll find important dates and steps for a successful operational transition to the FCPCA G2 trust anchor.
 
-#### Download root using out-of-band email
-- Send an email to: _fpki-help at gsa dot gov_
-- Subject line: _Common root needed_
-- Please _digitally sign_ the email if you have the capabilities available; if not, the request will still be received and processed
-- A signed version of the certificate or email will be sent back to you
-
-#### Download root using online site
-- http://http.fpki.gov/fcpca/fcpca.crt
-- cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US
-- SHA1 Hash: 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1
-
-{% include alert-warning.html heading = "Verify the hash of the files" content="Verify the hash of the fcpca.crt file matches the one listed above before using.  If the hash does not match, do NOT use the certificate file and please use the out-of-band email method." %}
-
-You can verify the hash using common utilities on operating systems, including:
-
-```
-	certutil -hashfile fcpca.crt SHA1
-```
-
-```
-	openssl dgst -sha1 fcpca.crt
-```
-
-```
-	sha1sum fcpca.crt
-```
+For instructions on how to download the new root and intermediate certificates, go to [the FPKI guide on the Federal Common Policy G2 Update](https://fpki.idmanagement.gov/common/obtain-and-verify/){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Download any additional Intermediate Certificate Authority certificates
 
 You can contact your agency's information security teams for help on additional intermediate certificates, or find the intermediate certificates by using information in your PIV certificates directly.
 
-- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate go to the [Details of a PIV Credential](../details)
+- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate go to the [Details of a PIV Credential](../details){:target="_blank"}{:rel="noopener noreferrer"}
 - In the **Authority Information Access (AIA)** extension, there is a URL (http://) which references a file with a .p7b or .p7c extension
 - Download the file, open it, and view the intermediate certificate authority certificates
 - Repeat the process using the AIA extension of the intermediate certificate authority certificates until the final reference finds an intermediate certificate authority certificate that is issued and signed by COMMON
