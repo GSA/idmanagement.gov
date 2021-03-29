@@ -15,13 +15,13 @@ subnav:
 
 PIV engineering guides are for engineers configuring agency infrastructure, servers and enterprise applications for authentication. The guides are focused on US Federal Government implementations. 
 
-{% include alert-info.html heading="Are you trying to solve a problem?" content="The same problem has likley been encountered or solved by your colleagues.  Engineering guides exist across government.  The purpose for this site is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
+{% include alert-info.html heading="Are you trying to solve a problem?" content="Your colleagues have likely encountered or solved the same problem.  Engineering guides exist across government.  The purpose for this site is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
 
 You can find additional guides across agency websites by using a few simple methods: 
 
 1. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+PIV +CAC"
 2. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+x509"
-3. Search on Max.gov:  [Max.gov](https://max.gov){:target="_blank"} requires you to login.  Try searching for the topic or guide.   
+3. Search on Max.gov:  [Max.gov](https://max.gov){:target="_blank"}{:rel="noopener noreferrer"} requires you to login.  Try searching for the topic or guide.   
 
 If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}.  We can help look through the archives of guides that haven't been posted yet or help you send a request to the government listserves.  
 

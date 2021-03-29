@@ -21,7 +21,7 @@ In any Identity, Credential, and Access Management (ICAM) program, you'll need s
 
 Governance is the set of practices that help your agency ensure that ICAM operations are successful. Governance helps your agency make decisions, manage enterprise policies, and improve efficiency.
 
-An enterprise governance body develops and implements policies, rules, and procedures to manage the program. They collect data to monitor, analyze, and report on how well your ICAM program conforms with these policies, rules, and procedures. They also serve an important security role, to quickly remediate any problems or vulnerabilities within the program before a security or privacy breach occurs. You'll need to establish a recovery plan to ensure continuity of service to prepare for such an occurrence.
+An enterprise governance body develops and implements policies, rules, and procedures to manage the program. They collect data to monitor, analyze, and report on how well your ICAM program conforms with these policies, rules, and procedures. They also serve an important security role to quickly remediate any problems or vulnerabilities within the program before a security or privacy breach occurs. You'll need to establish a recovery plan to ensure continuity of service to prepare for such an occurrence.
 
 The pages that follow explain how to establish a formal identity management governance structure within your agency.
 
@@ -80,7 +80,7 @@ These groups leverage their experience and business context to provide the gover
 
 In addition to a program governance body, you can support the execution and operation of projects and workstreams with a Program Management Office (PMO).
 
-An Identity, Credential, and Access Management (ICAM) PMO complements the program governance body. Some agencies may not require both a program governance body and a PMO; however, larger agencies may need to separate governance and operational responsibility for effective ICAM operations. A PMO helps ensure that the individual components of the ICAM program operate efficiently and achieve the expected results within the defined budget and schedule.
+An Identity, Credential, and Access Management (ICAM) PMO complements the program governance body. Some agencies may not require both a program governance body and a PMO; however, larger agencies may need to separate governance and operational responsibility for effective ICAM operations. A PMO ensures individual components of the ICAM program operate efficiently and achieve the expected results within the defined budget and schedule.
 
 For a PMO to be effective, it must:
 
@@ -113,4 +113,4 @@ PMOs generally follow standardized project management policies, processes, and m
 
 The figure below represents a sample ICAM PMO structure. An agency should design this structure in a way that fosters communication, coordinates efforts, and aligns appropriately with the agency's overall organizational structure.
 
-![Sample ICAM PMO Structure](../../assets/ficampm/pmo_Sample_ICAM_PMO_Structure.png)
+[![Sample ICAM PMO Structure](../../assets/ficampm/pmo_Sample_ICAM_PMO_Structure.png)](../../assets/ficampm/pmo_Sample_ICAM_PMO_Structure.png){:target="_blank"}{:rel="noopener noreferrer"}

@@ -5,13 +5,9 @@ collection: arch
 permalink: arch/governance/
 sidenav: archservices
 sticky_sidenav: true
-
-subnav:
-   - text: Governance Services
-     href: '#governance-services'
 ---
 
-![A navy box with the list of Governance services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/GovernanceServices.png){:align="right" style="padding-left:30px"}
+[![A navy box with the list of Governance services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/GovernanceServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/GovernanceServices.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Governance is the set of practices and systems that guides ICAM functions, activities, and outcomes.
 
@@ -21,17 +17,17 @@ If your agency identifies problems during data collection and analysis, you shou
 
 <br>
 
-<p style="font-size: 3rem; font-weight: 700;">Governance Services</p>
+## Governance Services
 
 The Governance services in the Federal ICAM architecture include Identity Governance, Analytics, and Mitigation.
 
-![A navy box with the Governance service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png){:align="center"}
+[![A navy box with the Governance service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Identity Governance
 
-> The systems, solutions, and rules that link enterprise personnel, applications, and data to help agencies manage access, risk, and mitigation needs.
+> The systems, solutions, and rules that link enterprise personnel, applications, and data to help agencies manage access and risk.
 
-> *Keywords*: Management Framework, Rules and Procedures
+> *Keywords*: Management Framework, Rules and Procedures, Access Reviews and Recertifications
 
 ### Analytics
 

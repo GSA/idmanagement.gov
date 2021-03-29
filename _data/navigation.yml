@@ -9,7 +9,7 @@ arch:
     href: /arch/services/
   - text: Use Cases
     href: /arch/usecases/
-  - text: Component Examples
+  - text: System Component Examples
     href: /arch/components/
   - text: Standards & Policies
     href: /arch/standards/
@@ -38,7 +38,7 @@ archusecases:
   - text: 3. Manage the Entitlements Lifecycle
     href: /arch/manageaccess/
   - text: 4. Create and Issue a Credential
-    href: /arch/credential/
+    href: /arch/usecredential/
   - text: 5. Issue a Derived Credential
     href: /arch/derivecredential/
   - text: 6. Manage the Credential Lifecycle
@@ -67,8 +67,6 @@ piv:
     href: /piv/network/
   - text: Engineering Guides
     href: /piv/engineer/
-  - text: User Guides
-    href: /piv/user/
 
 pivnetwork:
   - text: Back to PIV Guide
@@ -97,14 +95,6 @@ pivengineer:
     href: /piv/engineer/firefox/
   - text: Enable SSH
     href: /piv/engineer/ssh/
-
-pivuser:
-  - text: Back to PIV Guide
-    href: /piv/user/
-  - text: Digitally Signing in Microsoft Word
-    href: /piv/user/signword/
-  - text: Digitally Signing Documents for Submission to the Office of the Federal Register
-    href: /piv/user/signfedregister/
 
 ## FPKI Navigation
 
@@ -151,6 +141,8 @@ fpkicommon:
     href: /fpki/common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
     href: /fpki/common/verify-migration/
+  - text: 9. Frequently Asked Questions
+    href: /fpki/common/faq/
 
 fpkitools:
   - text: Back to FPKI Guide
@@ -203,8 +195,6 @@ pacs:
 pm:
   - text: Introduction
     href: /ficampm/intro-pm/
-  - text: What is ICAM Program Management
-    href: /ficampm/overview/
   - text: Program Governance and Leadership
     href: /ficampm/governance/
   - text: Workstreams
@@ -217,7 +207,7 @@ pm:
     href: /ficampm/performance/
   - text: Privacy Considerations
     href: /ficampm/privacy/
-  - text: Examples and Guideance
+  - text: Examples and Guidance
     href: /ficampm/examples/
 
 ## Other Site Navigation
@@ -250,6 +240,18 @@ policy:
   - text: Public Domain License
     href: /license/
 
+footer:
+  - text: FICAM Architecture
+    href: /arch/intro-arch/
+  - text: FICAM Program Management
+    href: /ficampm/intro-pm/
+  - text: Federal PKI (FPKI)
+    href: /fpki/intro-fpki/
+  - text: Personal Identity Verification (PIV)
+    href: /piv/intro-piv/
+  - text: Physical Access Control Systems (PACS)
+    href: /pacs/intro-pacs/
+
 # Playbooks Navigation
 
 dira:
@@ -263,3 +265,40 @@ sso:
 dw:
   - text: Digital Worker Playbook
     href: /playbooks/dw/
+    
+# Digital Signature Guides Navigation
+
+signword:
+  - text: Digitally Sign a Microsoft Word Document
+    href: /signword/
+  - text: Add a Digital Signature Using a Signature Line
+    href: /signword/#add-a-digital-signature-using-a-signature-line
+  - text: Add an Invisible Digital Signature
+    href: /signword/#add-an-invisible-digital-signature
+  - text: Add Multiple Digital Signatures Using Signature Lines
+    href: /signword/#add-multiple-digital-signatures-using-signature-lines
+  - text: Add Multiple Invisible Digital Signatures
+    href: /signword/#add-multiple-invisible-digital-signatures
+  - text: View Digital Signatures
+    href: /signword/#view-digital-signatures
+  - text: Remove a Digital Signature
+    href: /signword/#remove-a-digital-signature
+  - text: Verify Digital Signature Settings
+    href: /signword/#verify-digital-signature-settings
+  - text: Additional Resources
+    href: /signword/#additional-resources
+    
+    
+signwordofr:
+  - text: Digitally Signing Documents for Submission to Office of the Federal Register
+    href: /signfedregister/
+  - text: Add Invisible Digital Signatures in MS Word
+    href: /signfedregister/#add-invisible-digital-signatures-in-ms-word
+  - text: Multiple Digital Signatories in MS Word
+    href: /signfedregister/#multiple-digital-signatories-in-ms-word
+  - text: Remove Invisible Digital Signatures in MS Word
+    href: /signfedregister/#remove-invisible-digital-signatures-in-ms-word
+  - text: View Signature Certificate in MS Word
+    href: /signfedregister/#view-signature-certificate-in-ms-word
+  - text: FAQs
+    href: /signfedregister/#faqs

@@ -30,16 +30,16 @@ On this page, you'll find guidance to help you implement your ICAM program:
 
 The figure below provides an example of an ICAM governance and program management structure implemented by the Department of Health and Human Services (HHS).
 
-![HHS ICAM Governance Structure](../../assets/ficampm/examples_HHS-ICAM-Structure.png)
+[![HHS ICAM Governance Structure](../../assets/ficampm/examples_HHS-ICAM-Structure.png)](../../assets/ficampm/examples_HHS-ICAM-Structure.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### ICAM PMO Charter
-For an example of an ICAM Program Management Office (PMO) charter, download the [HHS ICAM PMO Governance Charter](../../assets/ficampm/HHS-Governance-Charter.doc){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, May 2019)
+For an example of an ICAM Program Management Office (PMO) charter, download the [HHS ICAM PMO Governance Charter](../../docs/ficampm-hhs-governance-charter.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, May 2019)
 
 ## Authorities to Consider
 
 ### Executive Order (EO) 13800 – Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure
 
-[EO 13800](https://www.whitehouse.gov/presidential-actions/presidential-executive-order-strengthening-cybersecurity-federal-networks-critical-infrastructure/){:target="_blank"}{:rel="noopener noreferrer"} provides requirements to strengthen the cybersecurity of federal networks, including holding agency heads accountable for managing cybersecurity risk to their enterprises. 
+[EO 13800](https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure){:target="_blank"}{:rel="noopener noreferrer"} provides requirements to strengthen the cybersecurity of federal networks, including holding agency heads accountable for managing cybersecurity risk to their enterprises. 
 
 > "Effective risk management requires agency heads to lead integrated teams of senior executives with expertise in IT, security, budgeting, acquisition, law, privacy, and human resources." - *EO 13800 - Section 1,b,v.*
 

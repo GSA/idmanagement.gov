@@ -13,39 +13,42 @@ subnav:
     href: '#federal-bridge-certification-authority'
   - text: All Federal PKI Certification Authorities
     href: '#all-federal-pki-certification-authorities'
-  - text: Federal Common and Federal Bridge Certificate Details'
+  - text: Federal Common and Federal Bridge Certificate Details
     href: ../certsandcrls/
   - text: PIV CAs and Agencies
     href: ../pivcas-and-agencies/
 ---
 
-{% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
-
 A **_certification authority_** is a system that issues digital certificates. These digital certificates are based on _cryptography_ and follow the X.509 standards defined for information security.
 
 The Federal PKI (FPKI) is a network of certification authorities (CAs) that are either _root_, _intermediate_, or _issuing_ CAs.
 
-Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest level CAs in the FPKI hierarchy are the **_FPKI Trust Infrastructure CAs_**, which are operated and managed by the Federal PKI Management Authority (FPKIMA) Program Office:
+Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest level CAs in the FPKI hierarchy are the **_FPKI Trust Infrastructure CAs_**, which are operated and managed by the [Federal PKI Management Authority (FPKIMA)](https://www.idmanagement.gov/community/fpkima/){:target="_blank"}{:rel="noopener noreferrer"} Program Office:
 
-![FPKI Trust Infrastructure](../../assets/fpki/intro_fpki_trust_cas.png){:style="width:35%;float:right;"}
+- [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
+- [Federal Bridge Certification Authority](#federal-bridge-certification-authority)
+- [All Federal PKI Certification Authorities](#all-federal-pki-certification-authorities)
 
-The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by:  
+The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by Federal Government Executive Branch Agencies.
 
-- Federal Government Executive Branch Agencies  
+{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
 
 ### Federal Common Policy Certification Authority
 
-The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
+<!--- ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
+*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} --->
 
-A few commercial vendors include the FCPCA root certificate in the commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/truststores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
+The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](../../piv/intro-piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
+
+A few commercial vendors include the FCPCA root certificate in the commercial-off-the-shelf (COTS) products' [Trust Stores](../trust-stores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
 {% include alert-warning.html content="The FCPCA root certificate is included in the trust stores for some platforms such as Microsoft and Adobe. Other platforms, such as Mozilla and Apple, do not include the FCPCA by default. " %}
 
 ### Federal Bridge Certification Authority
 
-The FBCA is the _**Federal Bridge CA 2016**_ or the new _**Federal Bridge CA G4**_
+The current Federal Bridge Certification Authority (FBCA) is the _**Federal Bridge CA G4**_.
 
-![FPKI Federal Bridge Logo](../..assets/fpki/intro_fbca-logo.png){:style="float:left;width:15%;"}
+![FPKI Federal Bridge Logo](../../assets/fpki/intro_fbca-logo.png){:style="float:left;width:15%;"}
 The FBCA is a PKI Bridge or link between the FCPCA and other CAs that comprise the FPKI network and that may operate under comparable but _different_ certificate policies.  
 
 The FBCA provides a means to map these certificate policies and CAs and allow certificates to validate to the FCPCA root certificate.
@@ -53,7 +56,7 @@ The FBCA provides a means to map these certificate policies and CAs and allow ce
 <!--- ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
 *Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} -->
 
-The CAs with certificates signed by the Federal Bridge CA 2016 or Federal Bridge CA G4 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
+The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
 
 
 ### All Federal PKI Certification Authorities

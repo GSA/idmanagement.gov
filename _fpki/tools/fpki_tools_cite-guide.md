@@ -22,7 +22,7 @@ subnav:
     - text: Test Websites
       href: '#test-websites'
     - text: Test Policy Object Identifiers
-      href: '#appendix-a-test-policy-object-identiers'
+      href: '#appendix-a--test-policy-object-identiers'
 ---
 
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
@@ -32,7 +32,7 @@ Updated: August 11, 2020 <br>
 
 ## Overview
 
-The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that tries to mimics the production FPKI hierarchy and is managed by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
+The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that tries to mimic the production FPKI hierarchy and is managed by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
 
 - [Testing Use Cases](#testing-use-cases)
 - [Technical Specifications](#technical-specifications)
@@ -80,7 +80,7 @@ The FPKI Community can use CITE to evaluate PKI or application changes in a test
     4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A - Test Policy Object Identifiers](#appendix-a---test-policy-object-identifiers) for test OIDs and their production equivalent.
     5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates shall correspond to appropriately functional repositories.
 
-{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs." %} <br>
+{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs." %}
 
 ## Scheduled and Unscheduled Testing
 
@@ -102,7 +102,7 @@ CITE Participant repositories should be available during regular business hours 
 | Mon - Fri | 1700 - 0900 EST | Non-Business hours | No requirement |
 | Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement |
 
-{% include alert-warning.html content="CITE Test Common Policy and Test Federal Bridge, at a minimum, will provide 20% availability per month. CITE should not be used or relied upon for near-production availability." %} <br>
+{% include alert-warning.html content="CITE Test Common Policy and Test Federal Bridge, at a minimum, will provide 20% availability per month. CITE should not be used or relied upon for near-production availability." %}
 
 ## Technical Support Availability
 

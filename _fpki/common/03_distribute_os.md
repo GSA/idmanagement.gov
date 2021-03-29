@@ -66,11 +66,11 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
     ```
 
 1. Confirm that the output details include FCPCA G2.
-1. Verify the certificate details against the [expected values](../common/obtain-and-verify) (for example, serial number, hash, etc.).
+1. Verify the certificate details against the [expected values](../obtain-and-verify) (for example, serial number, hash, etc.).
 
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 using Microsoft Certutil.
-<br>![A .gif that shows the distribution and verification steps performed using Microsoft Certutil](../../assets/fpki/certutil.gif){:style="width:85%;"}
+<br>![A .gif that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}
 
 
 ### Use Microsoft Group Policy Object (GPO)
@@ -103,7 +103,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 with Microsoft GPO.
 <br>
-![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)](../../assets/fpki/gpo.gif){:style="width:85%;"}
+![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}
 
 ### Use third-party configuration management tools
 
@@ -163,7 +163,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 **Note:** The following video shows you how to create an Apple configuration profile.
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4" alt="A video that shows the steps to create an Apple configuration profile.">
+  <source src="{{site.baseurl}}/assets/fpki/create_profile.mp4" type="video/mp4" alt="A video that shows the steps to create an Apple configuration profile.">
 </video>
 <br>
 
@@ -272,7 +272,7 @@ You can also manually install a profile.
 **Note:**&nbsp;&nbsp;The following video shows you how to manually install an Apple configuration profile on **macOS**.
 <br>
 <video width="85%" controls>
-  <source src="../../assets/fpki/manual_install_profile.mp4" type="video/mp4"  alt="A video that shows the steps to manually install an Apple configuration profile.">
+  <source src="{{site.baseurl}}/assets/fpki/manual_install_profile.mp4" type="video/mp4"  alt="A video that shows the steps to manually install an Apple configuration profile.">
 </video>
 <br>
 
@@ -291,7 +291,7 @@ You can also manually install a profile.
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the command line.
 <br>
 <video width="85%" controls>
-  <source src="../../assets/fpki/install_command_line.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 using the macOS command line.">
+  <source src="{{site.baseurl}}/assets/fpki/install_command_line.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 using the macOS command line.">
 </video>
 <br>
 
@@ -313,7 +313,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 **Note:**&nbsp;&nbsp;The following video shows administrators how to install FCPCA G2 by using the Apple Keychain Access import process.
 <br>
 <video width="85%" controls>
-  <source src="../../assets/fpki/keychain_gui_admin.mp4" type="video/mp4"  alt="A video that shows the steps for administrators to install FCPCA G2 using the Apple Keychain Access import process.">
+  <source src="{{site.baseurl}}/assets/fpki/keychain_gui_admin.mp4" type="video/mp4"  alt="A video that shows the steps for administrators to install FCPCA G2 using the Apple Keychain Access import process.">
 </video>
 <br>
 #### Login Keychain
@@ -328,7 +328,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 **Note:**&nbsp;&nbsp;The following video shows non-administrators how to install FCPCA G2 using the Apple Keychain Access import process.
 <br>
 <video width="85%" controls>
-  <source src="../../assets/fpki/keychain_gui_non_admin.mp4" type="video/mp4"  alt="A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.">
+  <source src="{{site.baseurl}}/assets/fpki/keychain_gui_non_admin.mp4" type="video/mp4"  alt="A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.">
 </video>
 <br>
 
@@ -356,7 +356,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 3. Click **Allow**.<br>
 > The FCPCA G2 configuration profile appears.<br> 
 4. Click **More Details**, and then select the FCPCA G2 certificate entry.
-5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](../common/obtain-and-verify).
+5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](../obtain-and-verify).
 6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
 7. When prompted, enter your device **passcode**.
 8. Click **Install** in the upper right corner, and **Install** again.
@@ -366,7 +366,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the Safari web browser.
 <br>
 <video width="300" controls>
-  <source src="../../assets/fpki/ios_safari_configuration-g2.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 in the Safari web browser.">
+  <source src="{{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 in the Safari web browser.">
 </video>
 <br>
 
@@ -382,7 +382,7 @@ This option works for **iOS** devices only.
 
 	You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-<img src="../../assets/fpki/ios_full_trust-g2.jpg" alt="iOS full trust" width="300">
+<img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" alt="iOS full trust" width="300">
 
 
 <br>
