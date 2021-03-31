@@ -1,6 +1,6 @@
 # list of APL products
 
-- productnaem: Identiv uTrust TS Reader with Keypad – OSDP
+- productname: Identiv uTrust TS Reader with Keypad – OSDP
   productnumber: 8232-OSDP
   category: PACS PIV Reader
   supplier: Identiv, Inc.
@@ -9,7 +9,7 @@
   compliantwithtaa: Yes
   url: /docs/apl-10106-identiv-reader-keypad.pdf
 
-- productnaem: Identiv uTrust TS Reader with Wall Mount – OSDP
+- productname: Identiv uTrust TS Reader with Wall Mount – OSDP
   productnumber: 8132-OSDP
   category: PACS PIV Reader
   supplier: Identiv, Inc.
@@ -18,7 +18,7 @@
   compliantwithtaa: Yes
   url: /docs/apl-10105-identiv-reader-wall-mount.pdf
 
-- productnaem: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
+- productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
   productnumber: 50192769
   category: PACS Card
   supplier: Giesecke+Devrient
