@@ -16,5 +16,14 @@
   aplnumber: 10105
   validdate: 02/01/2017
   compliantwithtaa: Yes
+  url: /docs/apl-10105-identiv-reader-wall-mount.pdf
+
+- productnaem: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
+  productnumber: 50192769
+  category: PACS Card
+  supplier: Giesecke+Devrient
+  aplnumber: 1429
+  validdate: 11/09/2017
+  compliantwithtaa: Yes
   url: /docs/apl-10105-identiv-reader-wall-mount.pdf 
   
