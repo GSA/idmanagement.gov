@@ -61,7 +61,7 @@ How To Purchase
         <tr class="apl-table-category-heading" data-category="{{ category }}">
           <th colspan="2" class="apl-table-heading" id="apl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
         </tr>
-        {% for aple in site.data.fips201apl %}
+        {% for apl in site.data.fips201apl %}
           {% if apl.category == category %}
             <tr class="apl-table-row" data-category="{{ apl.category }}">
               <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-title"><a href="{{ apl.url | prepend: site.baseurl }}">{{ apl.title }}</a></td>
