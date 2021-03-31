@@ -3,6 +3,7 @@ layout: page
 title: FIPS 201 Approved Products List - PIV Cards
 permalink: sell/piv/
 collection: sell
+sticky_sidenav: true
 sidenav: sell
 
 subnav:
@@ -11,6 +12,13 @@ subnav:
     - text: Legacy PIV Cards
       href: '#piv-cards-legacy'
 ---
+
+{% assign categories = "" | split: "" %}
+{% for apl in site.data.fips201apl %}
+  {% assign categoryName = apl.category | strip %}
+  {% assign categories = categories | push: categoryName | uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
 
 The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL).
 Please Note:
@@ -25,18 +33,47 @@ How To Purchase
 
 ### Approved PIV Cards
 
-- G&D Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
-- G&D Mobile Security SmartCafe Expert 7.0 with StarSign PIV Applet v1.0
-- Gemalto IDPrime PIV v2.1
-- Gemalto Safenet IDPrime PIV v3.0
-- Gemalto TOP DL v2.1 with HID Global ActivID Applet v2.7.4
-- HID Global Crescendo PIV
-- IDEMIA HID Global PIV 2.7.4 on Cosmo v8.0
-- IDEMIA ID-One PIV 2.3 on Cosmo v8.0
-- IDEMIA ID-One PIV 2.3 on Cosmo v8.0 (High Speed)
-- IDEMIA ID-One PIV 2.4 on Cosmo v8.1 (PIV Applet 2.4.1 in EEPROM)
-- IDEMIA ID-One PIV 2.4 on Cosmo v8.1 (PIV Applet 2.4.1 in ROM)
-- IDEMIA ID-One PIV 2.4 on Cosmo v8.1 (PIV Applet 2.4.0)
+<div class="usa-width-one-fourth">
+  <fieldset class="usa-fieldset-inputs guides-filter">
+    <legend>Categories</legend>
+    <ul class="usa-unstyled-list">
+      {% for category in categories %}
+      <li>
+        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <label for="category-{{ category | slugify }}">{{ category }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+</div>
+
+<div class="usa-width-three-fourths">
+  <table class="usa-table-borderless">
+    <thead class="usa-sr-only">
+      <tr>
+        <th id="apl-table-heading-title" scope="col">Title</th>
+        <th id="apl-table-heading-number" scope="col">APL Number</th>
+        <th id="apl-table-heading-date" scope="col">Valid Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category in categories %}
+        <tr class="apl-table-category-heading" data-category="{{ category }}">
+          <th colspan="2" class="apl-table-heading" id="apl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
+        </tr>
+        {% for aple in site.data.fips201apl %}
+          {% if apl.category == category %}
+            <tr class="apl-table-row" data-category="{{ apl.category }}">
+              <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-title"><a href="{{ apl.url | prepend: site.baseurl }}">{{ apl.title }}</a></td>
+              <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
+              <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
+            </tr>
+          {% endif %}
+        {% endfor %} <!--guide-->
+      {% endfor %}<!--category-->
+    </tbody>
+  </table>
+</div>
 
 ## PIV Cards – Legacy
 
