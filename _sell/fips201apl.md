@@ -3,19 +3,21 @@ layout: page
 title: FIPS 201 Approved Products List
 collection: sell
 permalink: sell/fips201apl/
+sticky_sidenav: true
 sidenav: sell
 ---
 
 The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program.
 
 ## Product Categories
+
 Categories of products that have been testing and approved for use include:
 
-- [PIV Cards]({{ site.baseurl }}/sell/piv/): Smart cards used for physical and/or logical access to federal systems and facilities.
-- [Card Holders]({{ site.baseurl }}/sell/holders/): Protective casings used to keep PIV cards safe from damage and digital theft.
-- [Physical Access Control System (PACS) Components]({{ site.baseurl }}/sell/pacs/): Software and hardware products used to restrict physical access to authorized personnel for buildings, property, or rooms.
+- [PIV Cards](../sell/piv/): Smart cards used for physical and/or logical access to federal systems and facilities.
+- [Physical Access Control System (PACS) Components](../sell/pacs/): Software and hardware products used to restrict physical access to authorized personnel for buildings, property, or rooms.
 
 ## Make a Purchase
+
 Once you’ve identified the product you want, learn [how to purchase it through GSA Schedules]({{ site.baseurl }}/buy/buy/) or other procurement vehicles.
 
 ## Removed Products List
