@@ -8,7 +8,7 @@ sidenav: sell
 
 The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program.
 
-## Product Categories
+## Product Categories and Stuff
 Categories of products that have been testing and approved for use include:
 
 - [PIV Cards]({{ site.baseurl }}/sell/piv/): Smart cards used for physical and/or logical access to federal systems and facilities.
