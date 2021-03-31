@@ -3,6 +3,7 @@ layout: page
 title:  Sell Identity Products and Services
 collection: sell
 permalink: sell/sell/
+sticky_sidenav: true
 sidenav: sell
 
 subnav:
