@@ -13,7 +13,7 @@ Categories of products that have been testing and approved for use include:
 
 - [PIV Cards](../piv/): Smart cards used for physical and/or logical access to federal systems and facilities.
 - [Physical Access Control System (PACS) Components](../pacs/): Software and hardware products used to restrict physical access to authorized personnel for buildings, property, or rooms.
-- [PIV Card holders](../holder): Card Holders
+- [PIV Card holders](../holders): Card Holders
 
 ## Make a Purchase
 Once you’ve identified the product you want, learn [how to purchase it through GSA Schedules]({{ site.baseurl }}/buy/buy/) or other procurement vehicles.
