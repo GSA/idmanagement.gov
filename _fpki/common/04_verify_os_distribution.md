@@ -180,7 +180,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
      
 2. Verify that _Federal Common Policy CA G2_ has full trust enabled.
 
-![verify_common_iOS](../../../assets/fpki/ios_full_trust-g2.jpg){:style="width:30%;"}
+<img src="../../../assets/fpki/ios_full_trust-g2.jpg" alt="iOS full trust" width="300">
 
 <br>
 
