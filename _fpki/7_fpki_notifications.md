@@ -15,8 +15,8 @@ subnav:
 
 {% assign categories = "" | split: "" %}
 {% for notifcation in site.data.fpkinotifications %}
-  {% assign category = notification.system | strip %}
-  {% assign categories = categories | push: system| uniq | sort %}
+  {% assign system = notification.system | strip %}
+  {% assign categories = categories | push: system | uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
@@ -105,7 +105,7 @@ To report a change **or** system outage not listed below, please email fpki at g
 
 {% if notification.ocsp_uri %}
 	<ul class="usa-unstyled-list">
-		<<li>strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+		<li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
 	</ul>
 {% endif %}
 
