@@ -416,4 +416,4 @@ This option works for **iOS** devices only.
 
 
 
-Next, [verify distribution of the FCPCA G2 certificate as an operating system trusted root](../common/verify-os-distribution/).
+Next, [verify distribution of the FCPCA G2 certificate as an operating system trusted root](../fpki/common/verify-os-distribution/).
