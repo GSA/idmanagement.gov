@@ -13,11 +13,14 @@ subnav:
     href: '#how-to-add-a-new-notification'
 ---
 
-This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
+{% assign categories = "" | split: "" %}
+{% for notifcation in site.data.fpkinotifications %}
+  {% assign system = notification.system | strip %}
+  {% assign categories = categories | push: system| uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
 
-- [List of Notifications](#notifications)
-- [Add New Notification](https://github.com/GSA/fpki-guides/issues/new?title=System%20Notification%20for%3A%20<Your%20Organization>&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}
-- [How to Add a New Notification](#how-to-add-a-new-notification)
+This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
 
 The communication of changes, and planned or unplanned system outages, is required by the certificate policies and the incident management process.  Strong communication allows for planning and response and benefits the Federal PKI community as a whole.  Planned changes of the these types require notifications two (2) weeks in advance:
 
@@ -31,6 +34,21 @@ System **outages** - either through a planned maintenance activity or unplanned 
 To report a change **or** system outage not listed below, please email fpki at gsa dot gov.
 
 ## Notifications
+
+<div class="usa-width-one-fourth">
+  <fieldset class="usa-fieldset-inputs guides-filter">
+    <legend>Notification Year</legend>
+    <ul class="usa-unstyled-list">
+      {% for category in categories %}
+      <li>
+        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <label for="category-{{ category | slugify }}">{{ category }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+</div>
+
 <!-- This block loops through the notifications yml file under the data directory. -->
 
 <div class="usa-width-one-whole">
@@ -102,7 +120,7 @@ System notifications can be submitted via either GitHub or email.
 
 #### Submit Notification via GitHub Issue 
 
-  - Select [Add New Notification](https://github.com/GSA/fpki-guides/issues/new?title=System%20Notification%20for%3A%20<Your%20Organization>&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}
+  - Select [Add New Notification](https://github.com/GSA/ficam-playbooks/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}
 
   - This will open a new Issue form with input information for notification information.
   - Enter the information and click 'Submit new issue' to submit the notification.
