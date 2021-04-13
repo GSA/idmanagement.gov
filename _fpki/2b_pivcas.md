@@ -47,7 +47,6 @@ The page lists the certification authorities *currently* used for Personal Ident
     <thead class="usa-sr-only">
       <tr>
         <th id="piv-table-heading-agency" scope="col">Department/Agency</th>
-        <th id="piv-table-heading-ssp" scope="col">FPKI Shared Service Provider</th>
         <th id="piv-table-heading-ca" scope="col">PIV Authentication Issuing CA</th>
       </tr>
     </thead>
@@ -59,9 +58,8 @@ The page lists the certification authorities *currently* used for Personal Ident
         {% for piv in site.data.fpkicustomers %}
           {% if piv.branch == branch %}
             <tr class="piv-table-row" data-branch="{{ piv.branch }}">
-              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency }}</a></td>
-              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ssp">{{ piv.ssp }}</td>
-              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}">{{ piv.ca }}</td>
+              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency }}</td>
+              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}">{{ piv.ca }}</a></td>
             </tr>
           {% endif %}
         {% endfor %} <!--piv-->
