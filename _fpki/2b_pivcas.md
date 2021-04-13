@@ -22,15 +22,21 @@ The page lists the certification authorities *currently* used for Personal Ident
 {% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <style>
-	.title {font-size: 16px; color: white; background-color: #2491ff; font-weight: 900; text-align: center;}
-	.body {font-size: 14px;text-align: center;}
+table {
+	font-family: arial, sans-serif;
+ 	border-collapse: collapse;
+  	width: 100%;
+}
 
-	h4:before {
-	content: "";
-	display: block;
-	padding-top: 125px;
-	margin-top: -110px;
-	}
+td, th {
+  	border: 1px solid #dddddd;
+  	text-align: center;
+  	padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #2491ff;
+}
 	
 </style>
 
