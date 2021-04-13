@@ -30,7 +30,7 @@ sidenav: fpkicommon
 
 No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
 <br>
-![current_and_future_state]({{site.baseurl}}/img/FCPCA_G2_Transition.jpg) 
+![current_and_future_state](../../assets/fpki/FCPCA_G2_Transition.jpg) 
 
 ## Is the Federal Common Policy CA changing?
 
@@ -178,48 +178,48 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![error_navigation]({{site.baseurl}}/img/error_navigation.png)
+     ![error_navigation](../../assets/fpki/error_navigation.png)
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![error_piv_auth]({{site.baseurl}}/img/error_piv_auth.png)
+     ![error_piv_auth](../../assets/fpki/error_piv_auth.png)
 
 *Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain<br>to a trusted root CA:*
      <br>
      <br>
-     ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
+     ![error_sig_val](../../assets/fpki/error_sig_val.png)
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![safari_untrusted_ssl]({{site.baseurl}}/img/safari_untrusted_ssl.png){:style="width:85%;"}
+     ![safari_untrusted_ssl](../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}
 
 *Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![safari_untrusted_auth]({{site.baseurl}}/img/safari_untrusted_auth.png){:style="width:85%;"}
+     ![safari_untrusted_auth](../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![chrome_untrusted_ssl]({{site.baseurl}}/img/chrome_untrusted_ssl.png){:style="width:85%;"}
+     ![chrome_untrusted_ssl](../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}
 
 *Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![chrome_untrusted_auth]({{site.baseurl}}/img/chrome_untrusted_auth.png){:style="width:85%;"}
+     ![chrome_untrusted_auth](../../assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_safari_untrusted_ssl]({{site.baseurl}}/img/ios_safari_untrusted_ssl.png){:style="width:30%;"}
+     ![ios_safari_untrusted_ssl](../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:30%;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_chrome_untrusted_ssl]({{site.baseurl}}/img/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
+     ![ios_chrome_untrusted_ssl](../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
-Please review the steps to [verify distribution of the FCPCA G2]({{site.baseurl}}/common/verify-os-distribution/).
+Please review the steps to [verify distribution of the FCPCA G2](../common/verify-os-distribution/).
 
 ## My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
 
@@ -231,11 +231,11 @@ This change *does* affect how federal enterprise workstations and devices valida
 
 Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued before August 13, 2019, chain through an older version of the Entrust Managed Services Root CA on their way to the Federal Common Policy CA than certificates issued since.  This older version of the Entrust Managed Services Root CA will not receive a certificate from the Federal Common Policy CA G2.
 
-To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this](../../certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here]({{site.baseurl}}/common/certificates/).
+To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this](../../certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here](../common/certificates/).
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
-![Link Certificate Path]({{site.baseurl}}/img/link-cert-path.png) 
+![Link Certificate Path](../../assets/fpki/link-cert-path.png) 
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
@@ -259,4 +259,4 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 
 **Note:** The following .gif demonstrates the steps outlined above.
 
-![configure unmanaged device]({{site.baseurl}}/img/unmanaged-device.gif){:style="width:85%;"}
+![configure unmanaged device](../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}
