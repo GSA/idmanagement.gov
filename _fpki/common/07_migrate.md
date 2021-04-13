@@ -129,7 +129,7 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 **Note:**&nbsp;&nbsp;This video shows you how to remove the FCPCA G1 certificate using the command line.
 <br>
 <video width="85%" controls>
-  <source src="../../../asssets/fpki/remove_command_line.mp4" type="video/mp4">
+  <source src="../../../assets/fpki/remove_command_line.mp4" type="video/mp4">
 </video>
 <br>
 
