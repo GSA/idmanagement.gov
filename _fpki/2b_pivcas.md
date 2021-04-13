@@ -34,8 +34,8 @@ The page lists the certification authorities *currently* used for Personal Ident
     <ul class="usa-unstyled-list">
       {% for branch in branches %}
       <li>
-        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
-        <label for="category-{{ category | slugify }}">{{ category }}</label>
+        <input class="piv-filter-branch" id="branch-{{ branch | slugify }}" type="checkbox" name="branches" value="{{ branch }}" checked>
+        <label for="branch-{{ branch | slugify }}">{{ branch }}</label>
       </li>
       {% endfor %}
     </ul>
@@ -53,15 +53,15 @@ The page lists the certification authorities *currently* used for Personal Ident
     </thead>
     <tbody>
       {% for category in categories %}
-        <tr class="piv-table-category-heading" data-category="{{ category }}">
-          <th colspan="2" class="piv-table-heading" id="piv-table-heading-{{ category | slugify }}"><b>{{ branch }} Branch</b></th>
+        <tr class="piv-table-category-heading" data-branches="{{ branch }}">
+          <th colspan="3" class="piv-table-heading" id="piv-table-heading-{{ branch | slugify }}"><b>{{ branch }} Branch</b></th>
         </tr>
         {% for piv in site.data.fpkicustomers %}
           {% if piv.branch == branch %}
-            <tr class="piv-table-row" data-category="{{ piv.branch }}">
+            <tr class="piv-table-row" data-branch="{{ piv.branch }}">
               <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency}}</a></td>
-              <td headers="piv-table-heading-{{ category | slugify }} piv-table-heading-ssp">{{ piv.ssp }}</td>
-              <td headers="piv-table-heading-{{ category | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}"{{ piv.ca }}</td>
+              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ssp">{{ piv.ssp }}</td>
+              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}">{{ piv.ca }}</td>
             </tr>
           {% endif %}
         {% endfor %} <!--piv-->
