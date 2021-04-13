@@ -42,23 +42,23 @@ This change affects *all federal agencies* and the following services:
 **Recommended steps to complete by December 31st, 2020:**
 
 <ol>
-   <li><a href=\"../common/prepare-to-migrate/\">Prepare to migrate to the Federal Common Policy CA G2</a></li>
-   <li><a href=\"../common/obtain-and-verify/\">Obtain and verify a copy of the Federal Common Policy CA G2 certificate</a></li>
-   <li><a href=\"../common/distribute-os/\">Distribute the certificate to operating systems</a></li>
-   <li><a href=\"../common/verify-os-distribution/\">Verify operating system distribution</a></li>
-   <li><a href=\"../common/distribute-apps/\">Distribute the certificate to applications</a></li>
-   <li><a href=\"../common/certificates/\">Distribute the CA certificates issued by the Federal Common Policy CA G2</a></li>
+   <li><a href="../common/prepare-to-migrate/">Prepare to migrate to the Federal Common Policy CA G2</a></li>
+   <li><a href="../common/obtain-and-verify/">Obtain and verify a copy of the Federal Common Policy CA G2 certificate</a></li>
+   <li><a href="../common/distribute-os/">Distribute the certificate to operating systems</a></li>
+   <li><a href="../common/verify-os-distribution/">Verify operating system distribution</a></li>
+   <li><a href="../common/distribute-apps/">Distribute the certificate to applications</a></li>
+   <li><a href="../common/certificates/">Distribute the CA certificates issued by the Federal Common Policy CA G2</a></li>
 </ol>
     
 **Recommended steps to complete by April 20th, 2021:**
 
 <ol>
-   <li value="7"><a href=\"../common/migrate/\">Migrate to the Federal Common Policy CA G2</a></li>
-   <li value="8"><a href=\"../common/verify-migration/\">Verify migration to the Federal Common Policy CA G2</a></li>
+   <li value="7"><a href="../common/migrate/">Migrate to the Federal Common Policy CA G2</a></li>
+   <li value="8"><a href="../common/verify-migration/">Verify migration to the Federal Common Policy CA G2</a></li>
 </ol>
 
 
-{% include alert-warning.html content="Heads-up! The Federal PKI Management Authority is working with CA operators to plan the revocation of the certificates issued by the Federal Common Policy CA.  Follow our <a href="https://github.com/GSA/ficam-playbooks/issues/99\" target="_blank">GitHub issue page or <a href=\"../notifications/#notifications\" target=\"_blank\">System Notifications</a> page for more information related to the planned revocation schedule." %} 
+{% include alert-warning.html content="Heads-up! The Federal PKI Management Authority is working with CA operators to plan the revocation of the certificates issued by the Federal Common Policy CA.  Follow our <a href=\"https://github.com/GSA/ficam-playbooks/issues/99\" target="_blank">GitHub issue page or <a href=\"../notifications/#notifications\" target=\"_blank\">System Notifications</a> page for more information related to the planned revocation schedule." %} 
 
 ## Need Help?
 
