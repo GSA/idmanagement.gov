@@ -13,7 +13,7 @@ subnav:
     href: '#verify-your-copy-of-fcpca-g2'
 ---
 
-To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
+To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all affected government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
 
 ## Download a Copy of FCPCA G2
 
