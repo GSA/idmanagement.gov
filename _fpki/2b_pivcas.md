@@ -28,20 +28,6 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 {% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
-<div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs guides-filter">
-    <legend>Branches</legend>
-    <ul class="usa-unstyled-list">
-      {% for branch in branches %}
-      <li>
-        <input class="piv-filter-branch" id="branch-{{ branch | slugify }}" type="checkbox" name="branches" value="{{ branch }}" checked>
-        <label for="branch-{{ branch | slugify }}">{{ branch }}</label>
-      </li>
-      {% endfor %}
-    </ul>
-  </fieldset>
-</div>
-
 <div class="usa-width-three-fourths">
   <table class="usa-table-borderless">
     <thead class="usa-sr-only">
