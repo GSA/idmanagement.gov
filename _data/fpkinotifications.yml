@@ -3755,6 +3755,20 @@
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c 
   sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c
   ocsp_uri:
+  
+- notice_date: April 12, 2021
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: CertiPath Bridge CA
+  change_description: CertiPath Bridge CA - G3 intends to issue a modified cross certificate to the Federal Bridge CA G4.
+  contact: support at certipath dot com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: 
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
