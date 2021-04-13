@@ -37,7 +37,7 @@ To report a change **or** system outage not listed below, please email fpki at g
 
 <div class="usa-width-one-fourth">
   <fieldset class="usa-fieldset-inputs guides-filter">
-    <legend>Notification Year</legend>
+    <legend>Filter by System</legend>
     <ul class="usa-unstyled-list">
       {% for category in categories %}
       <li>
