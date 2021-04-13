@@ -160,7 +160,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 **Note:** The following video shows you how to create an Apple configuration profile.
 <br>
 <video width="85%" controls>
-  <source src="{../../../assets/fpki/create_profile.mp4" type="video/mp4" alt="A video that shows the steps to create an Apple configuration profile.">
+  <source src="../../../assets/fpki/create_profile.mp4" type="video/mp4" alt="A video that shows the steps to create an Apple configuration profile.">
 </video>
 <br>
 
