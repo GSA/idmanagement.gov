@@ -19,7 +19,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 ## PIV Issuer Information
 
-{% include alert-info.html content="This table was last updated on <b>November 9, 2020</b>. Please email fpki@gsa.gov to suggest an update or correction." %}
+{% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <style>
 	.title {font-size: 16px; color: white; background-color: #2491ff; font-weight: 900; text-align: center;}
@@ -73,6 +73,14 @@ These CA certificates are actively issuing PIV authentication certificates.
 - SHA-1 Hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f 
 
 #### DoD Issuing CAs
+**DoD ID CA-59**
+- Subject: CN = DOD ID CA-59, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: 0305  
+- Validity: April 2, 2019 to April 2, 2025
+- SHA-1 Hash: 1907fc2b223ee0301b45745bdb59aad90fe7c5d7  
+
+<br>
 **DoD ID CA-52**
 - Subject: CN = DOD ID CA-52, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
@@ -184,23 +192,23 @@ These CA certificates are actively issuing PIV authentication certificates.
 #### U.S. Department of State PIV CA2
 - Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
 - Issuer: CN = U.S. Department of State AD Root CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu, 
-- Serial #: 51b02402
-- Validity: August 3, 2016 to August 3, 2026
-- SHA-1 Hash: ffe07fb428bcef4bf38ebbfae1e42339e03e7756 
+- Serial #: 51b0b97f 
+- Validity: January 24, 2020 to January 24, 2030
+- SHA-1 Hash: 68A4E9AB7A1FB8FB85316A770FF9CA874C020724
 
 #### U.S. Department of Transportation Agency CA G5
-- Subject: CN = U.S. Department of Transportation Device CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US 
+- Subject: CN = U.S. Department of Transportation CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US 
 - Issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
-- Serial #: 133fa9cc68370c5da2a6d204c503455c
+- Serial #: 0ed81c303ea3566787faca36899a931a
 - Validity: March 4, 2019 to December 12, 2028
-- SHA-1 Hash: 263a035b50fc26368dd9a38894764b3f3592fb17
+- SHA-1 Hash: b1d05e5b9e025ea4b3b3e30dc3f45a19f9ec51f6
 
 #### USPTO INTR CA1
-- Subject: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov  
+- Subject: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
 - Issuer: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
-- Serial #: 189a971b30cc79b60b35e21789db1c479cd949f0 
-- Validity: December 12, 2019 to December 12, 2022 
-- SHA-1 Hash: 978ec2f323452f8f46932b8550663d68b6e96af7 
+- Serial #: 10f82e9132e31f62dba620ab66f6e7f836e663c7
+- Validity: November 12, 2020 to December 12, 2022
+- SHA-1 Hash: edd7e56da5147cf98ea580a176a27bc990b243ce
 
 #### Veterans Affairs User CA B1
 - Subject: CN = Veterans Affairs User CA B1, OU = PKI, OU = Services, DC = va, DC = gov
@@ -227,19 +235,12 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: August 28, 2012 to August 28, 2022 
 - SHA-1 Hash: 519d3222a15eee034980fc0da727314f70af78c0 
 
-#### DHS CA4 (1 of 2)
+#### DHS CA4
 - Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 4e398128 
 - Validity: June 13, 2015 to June 13, 2025
 - SHA-1 Hash: a31a5df2f1c1019b9cf5b7ca4e3b26650b9ca93f 
-
-#### DHS CA4 (2 of 2)
-- Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-- Serial #: 4a61d293 
-- Validity: January 21, 2011 to January 21, 2021
-- SHA-1 Hash: 49ae4f027419a3eb227e4cd4ccf4ff1bc75213b6
 
 #### DoD Issuing CAs (several CAs in maintenance mode)
 **DoD ID CA-44**
@@ -280,19 +281,12 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: July 30, 2015 to July 23, 2025 
 - SHA-1 Hash: dec01bf40c153fbc38bf2ca766b04f9dfbda3064 
 
-#### NASA Operational CA (1 of 2)
+#### NASA Operational CA
 - Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
 - Serial #: 4e398116   
 - Validity: June 13, 2015 to June 13, 2025 
 - SHA-1 Hash: fe7572bbde7b7f44152acc8e1715c18714dc9d63   
-
-#### NASA Operational CA (2 of 2)
-- Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-- Serial #: 4a61d2a5
-- Validity: January 22, 2011 to January 22, 2021 
-- SHA-1 Hash: 76a6eaa852710e00b368c41080e6131140aaf189   
 
 #### NRC SSP Agency CA G3
 - Subject: CN = NRC SSP Agency CA G3, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
@@ -301,19 +295,12 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: November 24, 2014 to November 11, 2024 
 - SHA-1 Hash: e40bee41cf7afa2ddba4eb10ff3a39f81ec48d20 
 
-#### Social Security Administration Certification Authority (1 of 2)
+#### Social Security Administration Certification Authority
 - Subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 4e3980ef  
 - Validity: April 19, 2015 to April 19, 2025 
 - SHA-1 Hash: bb6c62e648d503f1beab75ef5f69b17256175993 
-
-#### Social Security Administration Certification Authority (2 of 2)
-- Subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-- Serial #: 4a61d2ba  
-- Validity: February 16, 2011 to February 16, 2021 
-- SHA-1 Hash: b4b209aade830834c9b5c2f815021d28dc381fe1 
 
 #### Treasury OCIO CA 
 - Subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
@@ -321,6 +308,13 @@ These CA certificates have issued PIV authentication certificates previously and
 - Serial #: 4e398101 
 - Validity: April 19, 2015 to April 19, 2025 
 - SHA-1 Hash: 5ad254c3ecebb5b7e108caa0cc8030598a7b7709 
+
+#### U.S. Department of State PIV CA2
+- Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
+- Issuer: CN = U.S. Department of State AD Root CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu, 
+- Serial #: 51b02402
+- Validity: August 3, 2016 to August 3, 2026
+- SHA-1 Hash: ffe07fb428bcef4bf38ebbfae1e42339e03e7756 
 
 #### U.S. Department of Transportation Agency CA G4
 - Subject: CN = U.S. Department of Transportation Agency CA G4, OU = U.S. Department of Transportation, O = U.S. Government, C = US
