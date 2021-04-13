@@ -30,7 +30,7 @@ sidenav: fpkicommon
 
 No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
 <br>
-![current_and_future_state](../../assets/fpki/FCPCA_G2_Transition.jpg) 
+![current_and_future_state](../../../assets/fpki/FCPCA_G2_Transition.jpg) 
 
 ## Is the Federal Common Policy CA changing?
 
@@ -50,7 +50,7 @@ Timeline:
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** This table was last updated on **April 7, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **April 7, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -178,44 +178,44 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![error_navigation](../../assets/fpki/error_navigation.png)
+     ![error_navigation](../../../assets/fpki/error_navigation.png)
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![error_piv_auth](../../assets/fpki/error_piv_auth.png)
+     ![error_piv_auth](../../../assets/fpki/error_piv_auth.png)
 
 *Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain<br>to a trusted root CA:*
      <br>
      <br>
-     ![error_sig_val](../../assets/fpki/error_sig_val.png)
+     ![error_sig_val](../../../assets/fpki/error_sig_val.png)
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![safari_untrusted_ssl](../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}
+     ![safari_untrusted_ssl](../../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}
 
 *Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![safari_untrusted_auth](../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}
+     ![safari_untrusted_auth](../../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![chrome_untrusted_ssl](../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}
+     ![chrome_untrusted_ssl](../../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}
 
 *Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![chrome_untrusted_auth](../../assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}
+     ![chrome_untrusted_auth](../../../assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_safari_untrusted_ssl](../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:30%;"}
+     ![ios_safari_untrusted_ssl](../../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:30%;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_chrome_untrusted_ssl](../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
+     ![ios_chrome_untrusted_ssl](../../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
@@ -235,7 +235,7 @@ To ensure PIV credential certificates issued by the Entrust Federal SSP before A
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
-![Link Certificate Path](../../assets/fpki/link-cert-path.png) 
+![Link Certificate Path](../../../assets/fpki/link-cert-path.png) 
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
@@ -259,4 +259,4 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 
 **Note:** The following .gif demonstrates the steps outlined above.
 
-![configure unmanaged device](../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}
+![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}
