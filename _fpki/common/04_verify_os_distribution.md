@@ -203,10 +203,14 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 3. Verify the file hash matches the one listed [here]({../common/):
 
     ```
-        79ad978be60d0ea0c62d16f6d8f0269a04c428fc9258911d8d84ef6a88cbc60a  fcpcag2.pem
+        5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC  fcpcag2.crt
     ```
 	
-
+4. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
+   
+   ```
+        trust list | grep Federal
+    ```
 
 
 <br>
