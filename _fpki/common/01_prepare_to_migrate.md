@@ -17,6 +17,8 @@ Use the checklist below to prepare your agency for the migration to the Federal 
 
 We encourage agency staff to participate in steps where their roles appear in blue, bold font.
 
+<html>
+	
 <style>
 .title {font-size: 20px; color: white; background-color: #112e51; font-weight: 900;}
 .header {text-align: center; font-size: 20px; color: white; background-color: #112e51; font-weight: 900;}
@@ -130,5 +132,7 @@ We encourage agency staff to participate in steps where their roles appear in bl
 
 
 </table>
+
+</html> 
 
 Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../fpki/common/obtain-and-verify/).
