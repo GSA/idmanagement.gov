@@ -194,7 +194,7 @@ These CA certificates are actively issuing PIV authentication certificates.
 - Serial #: 51b0b97f 
 - Validity: January 24, 2020 to January 24, 2030
 - SHA-1 Hash: 68A4E9AB7A1FB8FB85316A770FF9CA874C020724
-
+ 
 #### U.S. Department of Transportation Agency CA G5
 - Subject: CN = U.S. Department of Transportation CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US 
 - Issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
@@ -286,7 +286,7 @@ These CA certificates have issued PIV authentication certificates previously and
 - Serial #: 4e398116   
 - Validity: June 13, 2015 to June 13, 2025 
 - SHA-1 Hash: fe7572bbde7b7f44152acc8e1715c18714dc9d63   
-
+   
 #### NRC SSP Agency CA G3
 - Subject: CN = NRC SSP Agency CA G3, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
 - Issuer: CN = Symantec SSP Intermediate CA - G4, O = Symantec Corporation, C = US  
