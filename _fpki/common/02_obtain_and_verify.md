@@ -44,7 +44,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on Microsoft Server 2016.
 <br>
-![A .gif that shows the verification steps performed on Microsoft Server 2016](../../assets/fpki/verify.gif){:style="width:85%;"}
+![A .gif that shows the verification steps performed on Microsoft Server 2016](../../../assets/fpki/verify.gif){:style="width:85%;"}
 
 <br>
 
