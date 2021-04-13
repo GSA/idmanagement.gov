@@ -58,7 +58,7 @@ This change affects *all federal agencies* and the following services:
 </ol>
 
 
-{% include alert-warning.html content="Heads-up! The Federal PKI Management Authority is working with CA operators to plan the revocation of the certificates issued by the Federal Common Policy CA.  Follow our <a href=\"https://github.com/GSA/ficam-playbooks/issues/99\" target=\"_blank\">GitHub issue page or <a href=\"../notifications/#notifications\" target=\"_blank\">System Notifications</a> page for more information related to the planned revocation schedule." %} 
+{% include alert-warning.html content="Heads-up! The Federal PKI Management Authority is working with CA operators to plan the revocation of the certificates issued by the Federal Common Policy CA.  Follow our <a href=\"https://github.com/GSA/ficam-playbooks/issues/99\" target=\"_blank\">GitHub</a> issue page or <a href=\"../notifications/#notifications\" target=\"_blank\">System Notifications</a> page for more information related to the planned revocation schedule." %} 
 
 ## Need Help?
 
