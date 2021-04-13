@@ -131,4 +131,4 @@ We encourage agency staff to participate in steps where their roles appear in bl
 
 </table>
 
-Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../obtain-and-verify/).
+Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../common/obtain-and-verify/).
