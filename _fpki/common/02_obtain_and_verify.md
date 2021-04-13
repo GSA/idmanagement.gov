@@ -61,7 +61,7 @@ To verify your copy of FCPCA G2, use one of these options:
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina (10.15).
 <br>
 <video width="85%" controls>
-  <source src="(../../../assets/fpki/download_and_verify.mp4" type="video/mp4" alt="A video that shows the verification steps performed on macOS Catalina (10.15)">
+  <source src="../../../assets/fpki/download_and_verify.mp4" type="video/mp4" alt="A video that shows the verification steps performed on macOS Catalina (10.15)">
 </video>
 <br>
 
