@@ -19,11 +19,6 @@ subnav:
 
 This is a high-level overview of trust stores (also called *certificate stores*) and a list of commonly used trust stores and settings. 
 
-* [What is a trust store?](#what-is-a-trust-store)
-* [What are the most commonly used trust stores?](#what-are-the-most-commonly-used-trust-stores)
-* [How do I set dynamic path validation for the Microsoft trust store in Windows operating systems?](#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems)
-* [What Federal PKI certificate policies are trusted by Adobe and how do I see them?](#what-federal-pki-certificate-policies-are-trusted-by-adobe-and-how-do-i-see-them)
-
 ### What is a trust store?
 There are millions of identity certificates issued to people and devices around the world.  Certificates constantly change as some are revoked and others are issued&mdash;far too many for your computer to maintain an up-to-date list.  
 
@@ -45,20 +40,6 @@ Google|No|No|Google Admin Console|Android OS, Chromium OS|https://www.chromium.o
 Opera|Uses Mozilla
 
 {% include alert-info.html content="Google Chrome uses the trust store of the operating system on Microsoft, Apple, and Android systems. Linux-based systems distribute the Mozilla NSS Library, which may be modified by each version of Linux." %}
-
-### How do I set dynamic path validation for the Microsoft trust store in Windows operating systems?
-
-With dynamic path validation (as opposed to static path validation), the certificate validation libraries will build the certificate chain based on the Authority Information Access (AIA) entry in the certificate.  
-
-Dynamic path validation is a registry setting:
-
-  1. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\ CertDllCreateCertificateChainEngine\Config
-  1. Create a new DWORD entry.
-  2. Add **_MaxAIAUrlRetrievalCertCount_** as the **name**.
-  3. Set the value to **30**.
-  4. Reboot your system (required). 
-
-All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency. 
 
 ### What Federal PKI certificate policies are trusted by Adobe and how do I see them?
 
