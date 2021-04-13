@@ -53,6 +53,11 @@ This change affects *all federal agencies* and the following services:
   7. [Migrate to the Federal Common Policy CA G2](../common/migrate)
   8. [Verify migration to the Federal Common Policy CA G2](../common/verify-migration)
 
+{% include alert-warning.html content="Heads-up! The Federal PKI Management Authority is working with CA operators to plan the revocation of the certificates issued by the Federal Common Policy CA.  Follow our <a href=\"https://github.com/GSA/ficam-playbooks/issues/841\" target=\"_blank\">GitHub</a> issue page or the <a href=\"../notifications/#notifications\" target=\"_blank\">System Notifications</a> page for more information related to the planned revocation schedule." %} 
+
 ## Need Help?
 
 View the [Frequently Asked Questions](../common/faq/) page for more information, or email us at fpkirootupdate at gsa dot gov.
+
+{% include alert-info.html content="We're collaborating with CISA on a series of virtual \"office hours\" sessions to answer your questions in real-time.  Email fpkirootupdate@gsa.gov to be notified once the sessions are scheduled." %} 
+
