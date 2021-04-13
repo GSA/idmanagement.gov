@@ -75,4 +75,4 @@ To verify your copy of FCPCA G2, use one of these options:
 
 <br>
 
-Next, [distribute the Federal Common Policy CA G2 certificate as an operating system trusted root](../common/obtain-and-verify/).
+Next, [distribute the Federal Common Policy CA G2 certificate as an operating system trusted root](../fpki/common/distribute-os/).
