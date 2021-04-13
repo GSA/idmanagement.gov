@@ -11,8 +11,6 @@ subnav:
     href: '#what-is-a-trust-store'
   - text: Commonly Used Trust Stores
     href: '#what-are-the-most-commonly-used-trust-stores'
-  - text: Set Dynamic Path Validation for the Microsoft
-    href: '#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems'
   - text: Adobe Trust Store
     href: '#what-federal-pki-certificate-policies-are-trusted-by-adobe-and-how-do-i-see-them'
 ---
