@@ -15,7 +15,7 @@ Use the checklist below to prepare your agency for the migration to the Federal 
 - **CIO** - Chief information officers
 - **CSO** - Chief security officers
 
-We encourage agency staff to participate in steps where their roles appear in blue, bold font.
+Agency staff are encouraged to participate in steps where their roles are listed in bold underlined font.
 
 {% include prepare-to-migrate.html %}
 
