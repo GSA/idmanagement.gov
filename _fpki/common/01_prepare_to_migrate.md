@@ -87,7 +87,7 @@ We encourage agency staff to participate in steps where their roles appear in bl
   <td colspan="7" class="desc">
   <ul>
 	<li>Inventory your agency's systems and applications.</li>
-	<li>Identify how you will deliver the updated FCPCA G2 CA certificate to each system or application. For example, you might distribute the certificate through a Group Policy Object (GPO) or Mobile Device Management (MDM) tool.</li>
+	<li>Identify how you will deliver the updated FCPCA G2 CA certificate to affected systems or applications. For example, you might distribute the certificate through a Group Policy Object (GPO) or Mobile Device Management (MDM) tool.</li>
   </ul>
   </td>
 </tr>
@@ -104,7 +104,7 @@ We encourage agency staff to participate in steps where their roles appear in bl
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Work with your colleagues to develop, execute, and test a plan to distribute the FCPCA G2 certificate (and, optionally, the CA certificates issued by the FCPCA G2) to operating systems and applications across your enterprise.</li>
+	<li>Work with your colleagues to develop, execute, and test a plan to distribute the FCPCA G2 certificate (and, possibly, the CA certificates issued by the FCPCA G2) to affected operating systems and applications across your enterprise.</li>
 	<li>Communication is key! Collaborate with both colleagues and stakeholders across your agency.</li> 
   </ul>
   </td>
