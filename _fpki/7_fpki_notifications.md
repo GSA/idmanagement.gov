@@ -37,57 +37,57 @@ To report a change **or** system outage not listed below, please email fpki at g
 <hr>
 {% for notification in site.data.fpkinotifications reversed %}
   <ul class="usa-unstyled-list">
-    <li><strong>Notice Date: </strong> {{ notification.notice_date }}</li>
-    <li><strong>System:</strong> {{ notification.system }}</li>
-    <li><strong>Type:</strong> {{ notification.change_type }}</li>
+    <strong>Notice Date: </strong> {{ notification.notice_date }}</br>
+    <strong>System:</strong> {{ notification.system }}</br>
+    <strong>Type:</strong> {{ notification.change_type }} </br>
   </ul>
 
 {% if notification.notification.start_datetime %}
 	<ul class="usa-unstyled-list">
-		<li><strong>Start Date:</strong> {{ notification.start_datetime }}</li>
+		<strong>Start Date:</strong> {{ notification.start_datetime }}</br>
 	</ul>
 {% endif %}
 
 {% if notification.notification.end_datetime %}
 	<ul class="usa-unstyled-list">
-		<li><strong>End Date and Time:</strong> {{ notification.end_datetime }}</li>
+		<strong>End Date and Time:</strong> {{ notification.end_datetime }}</br>
 	</ul>
 {% endif %}
 
 <ul class="usa-unstyled-list">
-    <li><strong>Change Description:</strong> {{ notification.change_description }}</li>
-    <li><strong>Contact:</strong> {{ notification.contact }}</li>
+    <strong>Change Description:</strong> {{ notification.change_description }}</br>
+    <strong>Contact:</strong> {{ notification.contact }}</br>
 </ul>  
 
 {% if notification.ca_certificate_issuer %}
 	<ul class="usa-unstyled-list">
-		<li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
-		<li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
-		<li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li>  
+		<strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</rb>
+		<strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</br>
+		<strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</br>  
 	</ul>
 {% endif %}
 
 {% if notification.cdp_uri %}
 	<ul class="usa-unstyled-list">
-		<li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
+		<strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</br>
 	</ul>
 {% endif %}
 
 {% if notification.aia_uri %}
 	<ul class="usa-unstyled-list">
-		<li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
+		<strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</br>
 	</ul>
 {% endif %}
 
 {% if notification.sia_uri %}
 	<ul class="usa-unstyled-list">
-		<li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
+		<strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</br>
 	</ul>
 {% endif %}
 
 {% if notification.ocsp_uri %}
 	<ul class="usa-unstyled-list">
-		<li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+		<strong>OCSP:</strong> {{ notification.ocsp_uri }}</br>
 	</ul>
 {% endif %}
 
