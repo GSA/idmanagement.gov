@@ -13,8 +13,8 @@ The Approved Products List (APL) provides federal agencies with products and ser
 
 Categories of products that have been testing and approved for use include:
 
-- [PIV Cards](../sell/piv/): Smart cards used for physical and/or logical access to federal systems and facilities.
-- [Physical Access Control System (PACS) Components](../sell/pacs/): Software and hardware products used to restrict physical access to authorized personnel for buildings, property, or rooms.
+- [PIV Cards](../piv/): Smart cards used for physical and/or logical access to federal systems and facilities.
+- [Physical Access Control System (PACS) Components](../pacs/): Software and hardware products used to restrict physical access to authorized personnel for buildings, property, or rooms.
 
 ## Make a Purchase
 
