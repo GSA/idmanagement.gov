@@ -38,10 +38,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 - [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2)
 
 ## Linux/Unix Solutions
-- [Use the command line](#use-the-command-line)
-
-
-{% include alert-warning.html content="<strong>Important!</strong> If your enterprise systems do not have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled, you may also need to distribute the <a href=\"../certificates\">intermediate CA certificates</a> issued by the FCPCA G2.  These certificates will be available after November 18, 2020." %}
+- [Use the command line](#linux-and-unix-solutions)
 
 <br>
 
@@ -390,11 +387,14 @@ This option works for **iOS** devices only.
 ---------------------------------------------------
 
 
-## Linux/Unix Solutions
+## Linux and Unix Solutions
+
+### Debian-based kernels
 
 1. Launch the command line.
 
 1. Change directory with the following command:
+
     ```
         cd /usr/local/share/ca-certificates/
     ```
@@ -407,12 +407,41 @@ This option works for **iOS** devices only.
     ```
 
 1. Update Trusted Certificates with the following command:
+
     ```
         sudo update-ca-certificates
     ```
 
 
 <br>
+
+
+### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+
+1. Launch the command line.
+
+1. Change directory with the following command:
+
+    ```
+        cd /etc/pki/ca-trust/source/anchors/
+    ```
+
+1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
+
+    ```
+        sudo cp [PATH\]fcpcag2.crt .
+        sudo chown root.root fcpcag2.crt
+        sudo chmod 644 fcpcag2.crt
+    ```
+
+1. Update Trusted Certificates with the following command:
+
+    ```
+        sudo /bin/update-ca-trust extract
+    ```
+
+<br>
+
 
 
 
