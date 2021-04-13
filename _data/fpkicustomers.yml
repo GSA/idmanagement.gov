@@ -14,7 +14,7 @@
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
 -
  branch: Executive
- agency: Department of Commerce (all components except National Oceanic and Atmospheric Administration and United States Patent and Trademark Office)
+ agency: Department of Commerce
  credentialProvider: USAccess
  ssp: Entrust Federal SSP
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
@@ -23,7 +23,7 @@
  agency: Department of Commerce - National Oceanic and Atmospheric Administration
  credentialProvider: Defense Manpower Data Center
  ssp: Defense Information Systems Agency
- ca: <a href="#dod-issuing-cas">DOD ID CA-59<br>DOD ID CA-52<br>DOD ID CA-51<br>DOD ID CA-50<br>DOD ID CA-49</a>
+ ca: <a href="#dod-issuing-cas">DoD Issuing CAs</a>
 -
  branch: Executive
  agency: Department of Commerce - United States Patent and Trademark Office
@@ -33,12 +33,12 @@
 -
  branch: Executive
  agency: Department of Education
- credentialProvider: Internal <br> (migrating to USAccess)
+ credentialProvider: Internal (migrating to USAccess)
  ssp: DigiCert Federal SSP and Entrust Federal SSP
  ca: <a href="#us-department-of-education-agency-ca---g4">U.S. Department of Education Agency CA - G4</a> and <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a>
 -
  branch: Executive
- agency: Department of Energy <br><br> (all components except Naval Reactors)
+ agency: Department of Energy
  credentialProvider: USAccess
  ssp: Entrust Federal SSP
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
@@ -50,7 +50,7 @@
  ca: <a href="#naval-reactors-ssp-agency-ca-g3">Naval Reactors SSP Agency CA G3</a>
 -
  branch: Executive
- agency: Department of Health and Human Services <br><br>(all components except Office of Inspector General and Centers for Medicare and Medicaid Services) 
+ agency: Department of Health and Human Services
  credentialProvider: Health and Human Services
  ssp: Entrust Federal SSP
  ca: <a href="#hhs-fpki-intermediate-ca-e1">HHS-FPKI-Intermediate-CA-E1</a>
@@ -62,7 +62,7 @@
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
 -
  branch: Executive
- agency: Department of Homeland Security <br> <br> (all components except US Coast Guard)
+ agency: Department of Homeland Security
  credentialProvider: Department of Homeland Security
  ssp: Treasury
  ca: <a href="#dhs-ca4">DHS CA4</a>
@@ -71,7 +71,7 @@
  agency: Department of Homeland Security - US Coast Guard 
  credentialProvider: Defense Manpower Data Center
  ssp: Defense Information Systems Agency
- ca: <a href="#dod-issuing-cas">DOD ID CA-59<br>DOD ID CA-52<br>DOD ID CA-51<br>DOD ID CA-50<br>DOD ID CA-49</a>
+ ca: <a href="#dod-issuing-cas">DoD Issuing CAs</a>
 -
  branch: Executive
  agency: Department of Housing and Urban Development
@@ -98,7 +98,7 @@
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
 -
  branch: Executive
- agency: Department of State <br><br>(all components except Office of Inspect General)
+ agency: Department of State
  credentialProvider: Department of State
  ssp: Department of State
  ca: <a href="#us-department-of-state-piv-ca2">U.S. Department of State PIV CA2</a>
@@ -137,7 +137,7 @@
  agency: Department of Defense
  credentialProvider: Defense Manpower Data Center
  ssp: Defense Information Systems Agency
- ca: <a href="#dod-issuing-cas">DOD ID CA-59<br>DOD ID CA-52<br>DOD ID CA-51<br>DOD ID CA-50<br>DOD ID CA-49</a>
+ ca: <a href="#dod-issuing-cas">DoD Issuing CAs</a>
 -
  branch: Executive
  agency: Environmental Protection Agency
