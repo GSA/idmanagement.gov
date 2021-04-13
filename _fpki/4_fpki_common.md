@@ -42,19 +42,19 @@ This change affects *all federal agencies* and the following services:
 **Recommended steps to complete by December 31st, 2020:**
 
 <ol>
-   <li><a href="../common/prepare-to-migrate/">Prepare to migrate to the Federal Common Policy CA G2</a></li>
-   <li><a href="../common/obtain-and-verify/">Obtain and verify a copy of the Federal Common Policy CA G2 certificate</a></li>
-   <li><a href="../common/distribute-os/">Distribute the certificate to operating systems</a></li>
-   <li><a href="../common/verify-os-distribution/">Verify operating system distribution</a></li>
-   <li><a href="../common/distribute-apps/">Distribute the certificate to applications</a></li>
-   <li><a href="../common/certificates/">Distribute the CA certificates issued by the Federal Common Policy CA G2</a></li>
+   <li><a href=\"../common/prepare-to-migrate/\">Prepare to migrate to the Federal Common Policy CA G2</a></li>
+   <li><a href=\"../common/obtain-and-verify/\">Obtain and verify a copy of the Federal Common Policy CA G2 certificate</a></li>
+   <li><a href=\"../common/distribute-os/\">Distribute the certificate to operating systems</a></li>
+   <li><a href=\"../common/verify-os-distribution/\">Verify operating system distribution</a></li>
+   <li><a href=\"../common/distribute-apps/\">Distribute the certificate to applications</a></li>
+   <li><a href=\"../common/certificates/\">Distribute the CA certificates issued by the Federal Common Policy CA G2</a></li>
 </ol>
     
 **Recommended steps to complete by April 20th, 2021:**
 
 <ol>
-   <li value="7"><a href="../common/migrate/">Migrate to the Federal Common Policy CA G2</a></li>
-   <li value="8"><a href="../common/verify-migration/">Verify migration to the Federal Common Policy CA G2</a></li>
+   <li value="7"><a href=\"../common/migrate/\">Migrate to the Federal Common Policy CA G2</a></li>
+   <li value="8"><a href=\"../common/verify-migration/\">Verify migration to the Federal Common Policy CA G2</a></li>
 </ol>
 
 
