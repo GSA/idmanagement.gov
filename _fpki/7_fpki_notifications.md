@@ -15,7 +15,7 @@ subnav:
 
 {% assign categories = "" | split: "" %}
 {% for notifcation in site.data.fpkinotifications %}
-  {% assign system = notification.system | strip %}
+  {% assign category = notification.system | strip %}
   {% assign categories = categories | push: system| uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
@@ -55,57 +55,57 @@ To report a change **or** system outage not listed below, please email fpki at g
 <hr>
 {% for notification in site.data.fpkinotifications reversed %}
   <ul class="usa-unstyled-list">
-    <strong>Notice Date: </strong> {{ notification.notice_date }}</br>
-    <strong>System:</strong> {{ notification.system }}</br>
-    <strong>Type:</strong> {{ notification.change_type }} </br>
+    <li><strong>Notice Date: </strong> {{ notification.notice_date }} </li>
+    <li><strong>System:</strong> {{ notification.system }} </li>
+    <li><strong>Type:</strong> {{ notification.change_type }} </li>
   </ul>
 
 {% if notification.notification.start_datetime %}
 	<ul class="usa-unstyled-list">
-		<strong>Start Date:</strong> {{ notification.start_datetime }}</br>
+		<li><strong>Start Date:</strong> {{ notification.start_datetime }}</li>
 	</ul>
 {% endif %}
 
 {% if notification.notification.end_datetime %}
 	<ul class="usa-unstyled-list">
-		<strong>End Date and Time:</strong> {{ notification.end_datetime }}</br>
+		<li><strong>End Date and Time:</strong> {{ notification.end_datetime }}</li>
 	</ul>
 {% endif %}
 
 <ul class="usa-unstyled-list">
-    <strong>Change Description:</strong> {{ notification.change_description }}</br>
-    <strong>Contact:</strong> {{ notification.contact }}</br>
+    <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+    <li><strong>Contact:</strong> {{ notification.contact }}</li>
 </ul>  
 
 {% if notification.ca_certificate_issuer %}
 	<ul class="usa-unstyled-list">
-		<strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</rb>
-		<strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</br>
-		<strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</br>  
+		<li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+		<li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+		<li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li> 
 	</ul>
 {% endif %}
 
 {% if notification.cdp_uri %}
 	<ul class="usa-unstyled-list">
-		<strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</br>
+		<li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
 	</ul>
 {% endif %}
 
 {% if notification.aia_uri %}
 	<ul class="usa-unstyled-list">
-		<strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</br>
+		<li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
 	</ul>
 {% endif %}
 
 {% if notification.sia_uri %}
 	<ul class="usa-unstyled-list">
-		<strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</br>
+		<li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
 	</ul>
 {% endif %}
 
 {% if notification.ocsp_uri %}
 	<ul class="usa-unstyled-list">
-		<strong>OCSP:</strong> {{ notification.ocsp_uri }}</br>
+		<<li>strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
 	</ul>
 {% endif %}
 
