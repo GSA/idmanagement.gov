@@ -14,7 +14,7 @@
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
 -
  branch: Executive
- agency: Department of Commerce <br><br>(all components except National Oceanic and Atmospheric Administration and United States Patent and Trademark Office)
+ agency: Department of Commerce (all components except National Oceanic and Atmospheric Administration and United States Patent and Trademark Office)
  credentialProvider: USAccess
  ssp: Entrust Federal SSP
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> 
