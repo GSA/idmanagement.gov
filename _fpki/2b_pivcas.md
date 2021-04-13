@@ -15,51 +15,60 @@ subnav:
     href: '#maintenance-mode-issuing-ca-certificate-details'
 ---
 
+{% assign branches = "" | split: "" %}
+{% for piv in site.data.fpkicustomers %}
+  {% assign branch = piv.branch | strip %}
+  {% assign branches = branches | push: branch | uniq | sort %}
+{% endfor %}
+{% assign branches = branches | uniq | sort %}
+
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates.
 
 ## PIV Issuer Information
 
 {% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
-<style>
-table {
-	font-family: arial, sans-serif;
- 	border-collapse: collapse;
-  	width: 100%;
-}
+<div class="usa-width-one-fourth">
+  <fieldset class="usa-fieldset-inputs guides-filter">
+    <legend>Branches</legend>
+    <ul class="usa-unstyled-list">
+      {% for branch in branches %}
+      <li>
+        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <label for="category-{{ category | slugify }}">{{ category }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+</div>
 
-td, th {
-  	border: 1px solid #dddddd;
-  	text-align: center;
-  	padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #2491ff;
-}
-	
-</style>
-
-<table style="width:100%">
-	<tr>
-		<th class="title">Branch</th>
-		<th class="title">Department/Agency</th>
-		<th class="title">Federal PKI Shared Service Provider</th>		
-		<th class="title">PIV Authentication <br>Certificate Issuing CA</th>
-	</tr>
-
-{% for customer in site.data.fpkicustomers %}  
-  
-  <tr>
-	<td class="body">{{customer.branch}}</td>
-	<td class="body">{{customer.agency}}</td>
-	<td class="body">{{customer.ssp}}</td>
-	<td class="body">{{customer.ca}}</td>
-  </tr>
-  
-{% endfor %}
-
-</table>
+<div class="usa-width-three-fourths">
+  <table class="usa-table-borderless">
+    <thead class="usa-sr-only">
+      <tr>
+        <th id="piv-table-heading-agency" scope="col">Department/Agency</th>
+        <th id="piv-table-heading-ssp" scope="col">FPKI Shared Service Provider</th>
+        <th id="piv-table-heading-ca" scope="col">PIV Authentication Issuing CA</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category in categories %}
+        <tr class="piv-table-category-heading" data-category="{{ category }}">
+          <th colspan="2" class="piv-table-heading" id="piv-table-heading-{{ category | slugify }}"><b>{{ branch }} Branch</b></th>
+        </tr>
+        {% for piv in site.data.fpkicustomers %}
+          {% if piv.branch == branch %}
+            <tr class="piv-table-row" data-category="{{ piv.branch }}">
+              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency}}</a></td>
+              <td headers="piv-table-heading-{{ category | slugify }} piv-table-heading-ssp">{{ piv.ssp }}</td>
+              <td headers="piv-table-heading-{{ category | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}"{{ piv.ca }}</td>
+            </tr>
+          {% endif %}
+        {% endfor %} <!--piv-->
+      {% endfor %}<!--category-->
+    </tbody>
+  </table>
+</div>
 
 ## Active Issuing CA Certificate Details 
 These CA certificates are actively issuing PIV authentication certificates.  
