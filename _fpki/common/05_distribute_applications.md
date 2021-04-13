@@ -19,7 +19,7 @@ Collaborate across agency teams to identify applications that rely on custom tru
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
 
-{% include alert-warning.html content="<strong>Important!</strong> Depending on how these applications are configured, it's likely you'll also need to distribute the <a href=\"../certificates\">intermediate CA certificates</a> issued by the FCPCA G2.  These certificates will available after November 18, 2020." %}
+{% include alert-warning.html content="<strong>Important!</strong> Depending on how these applications are configured, it's likely you'll also need to distribute the <a href=\"../certificates\">intermediate CA certificates</a> issued by the FCPCA G2." %}
 
 <br>
 
