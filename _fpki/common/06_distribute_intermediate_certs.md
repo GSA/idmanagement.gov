@@ -105,7 +105,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
+  <source src="../../../assets/fpki/create_profile.mp4" type="video/mp4">
 </video>
 <br>
 
