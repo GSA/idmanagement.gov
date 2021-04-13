@@ -98,7 +98,7 @@ Note that GSA will provide the Office of the Federal Chief Information Officer (
 
 Based on agency-provided transition plans, GSA OGP will review the products on the legacy list in 12 months (May 2020) for removal.
 
-Please email icam@gsa.gov with questions.
+Please email icam at gsa.gov with questions.
 
 How To Purchase
 Visit the Buy Page to view FICAM products, services and purchasing guidance.
