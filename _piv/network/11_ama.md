@@ -32,7 +32,7 @@ To grant a user access, based on the type of authenticator used, you can use a W
 AMA is available for domains operating on Windows Server 2008 R2 and later versions. 
 
 ## Implementation
-You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"} to import and set up a list of certificate issuance policies. This script:
+You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"}{:rel="noopener noreferrer"} to import and set up a list of certificate issuance policies. This script:
 
 - Contains a list of certificate issuance policy object identifiers (OIDs) used by U.S. Federal Government agencies
 - Creates security groups with the same names as the policies 
@@ -45,21 +45,25 @@ You can run the script with a few simple steps.
   - `CertificateIssuanceOIDs.ps1 -GroupDN \<group DN string>`
   - For example: `CertificateIssuanceOIDs.ps1 -GroupDN 'OU=Groups,OU=Administrators,DC=agency,DC=gov'`
 
-- After downloading this script, you may need to change the [PowerShell script execution policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core){:target="_blank"} to execute the script or sign the script to execute it.
+- After downloading this script, you may need to change the [PowerShell script execution policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core){:target="_blank"}{:rel="noopener noreferrer"} to execute the script or sign the script to execute it.
 
 A sample output from the script is shown below: 
 
 ```
-  PS C:\> C:\AMA\Script\CertificateIssuanceOIDs.ps1 -GroupDN 'ou=groups,ou=security,dc=agency,dc=gov'
+  PS C:\> C:\AMA\Script\CertificateIssuanceOIDs.ps1 
+  -GroupDN 'ou=groups,ou=security,dc=agency,dc=gov'
   
-  Created CN=id-fpki-common-authentication,ou=groups,ou=security,dc=agency,dc=gov  
+  Created CN=id-fpki-common-authentication,ou=groups,
+  ou=security,dc=agency,dc=gov  
   2.16.840.1.101.3.2.1.3.13 -- Unknown ObjectId  
   
   Localized name added to DS store.
   0: 1033,id-fpki-common-authentication  
   CertUtil: -oid command completed successfully.
   
-  Created CN=13.255922318A2AF32EC47D5B70735D4DB3,CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=agency,DC=gov  
+  Created CN=13.255922318A2AF32EC47D5B70735D4DB3,
+  CN=OID,CN=Public Key Services,CN=Services,
+  CN=Configuration,DC=agency,DC=gov  
   AD AMA set for 2.16.840.1.101.3.2.1.3.13  id-fpki-common-authentication  
 ```
 
@@ -82,7 +86,8 @@ To test the output on your network domain, log in with your PIV credential and c
 - From the command line: `C:\whoami /groups`
 
 ```
-  agency\id-fpki-common-authentication   Group  S-1-5-21-179144328 1-1764752353-2202401552-1113   
+  agency\id-fpki-common-authentication   Group  S-1-5-21-179144328 
+  1-1764752353-2202401552-1113   
   Mandatory group, Enabled by default, Enabled group
 ```
 
@@ -142,5 +147,5 @@ Use the Windows Registry Editor to set the _AMA Priority_ above _Most Recently I
 - `"ChainWithIssuancePolicyOIDs"=dword:00000001`
 
 
-Refer to [AMA Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=WS.10).aspx){:target=_"blank"} to understand the implementation of AMA.
+Refer to [AMA Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"} to understand the implementation of AMA.
 

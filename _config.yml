@@ -8,7 +8,7 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Federal ICAM Playbooks
+title: FICAM Playbooks
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing Federal Enterprise Identities.
@@ -58,8 +58,9 @@ primary_navigation:
 #      - name: FIPS 201 Approved Product List
 #        url: /sell/fips201apl/
   - name: FICAM Architecture
+    description: FICAM Archtecture
     url: /arch/intro-arch/
-  - name: Program Management
+  - name: ICAM Program Management
     description: ICAM Program Management
     url: /ficampm/intro-pm/
   - name: Federal PKI (FPKI)
@@ -101,13 +102,13 @@ searchgov:
   endpoint: https://search.usa.gov
 
   # replace this with your search.gov account
-  affiliate: idmanagement.gov
+  affiliate: idmprod
 
   # replace with your access key
-  access_key: B1dV_F4sFomL1Qmb-qsoO8xccBkWQiwDUsj5v72c4K8=
+  access_key: zCEoL5u4U5XFzfFSxy8y4Iz6vdtTjsb4U539L_rgDTM=
 
   # this renders the results within the page instead of sending to user to search.gov
-  inline: true
+  inline: false
 
 ##########################################################################################
 # The values below here are more advanced and should only be

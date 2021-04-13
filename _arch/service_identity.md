@@ -6,7 +6,7 @@ permalink: arch/identity/
 sidenav: archservices
 sticky_sidenav: true
 ---
-![An orange box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}
+[![An orange box with the list of Identity Management services defined later in the body text of this page.]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:align="right" style="padding-left:30px"}]({{site.baseurl}}/assets/arch/services/IdentityManagementServices.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Identity Management is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
 
@@ -34,7 +34,7 @@ An identifier is a unique attribute used to locate an identity in a system:
 
 The Identity Management services in the Federal ICAM architecture include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are sometimes collectively known as Identity Lifecycle Management.
 
-![An orange box with the Identity Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/IdentityManagementServiceDefinitions.png){:align="center"}
+[![An orange box with the Identity Management service definitions, which are listed in the following body text.]({{site.baseurl}}/assets/arch/services/IdentityManagementServiceDefinitions.png){:align="center"}]({{site.baseurl}}/assets/arch/services/IdentityManagementServiceDefinitions.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Creation
 

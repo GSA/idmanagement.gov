@@ -67,8 +67,6 @@ piv:
     href: /piv/network/
   - text: Engineering Guides
     href: /piv/engineer/
-  - text: User Guides
-    href: /piv/user/
 
 pivnetwork:
   - text: Back to PIV Guide
@@ -97,14 +95,6 @@ pivengineer:
     href: /piv/engineer/firefox/
   - text: Enable SSH
     href: /piv/engineer/ssh/
-
-pivuser:
-  - text: Back to PIV Guide
-    href: /piv/user/
-  - text: Digitally Signing in Microsoft Word
-    href: /piv/user/signword/
-  - text: Digitally Signing Documents for Submission to the Office of the Federal Register
-    href: /piv/user/signfedregister/
 
 ## FPKI Navigation
 
@@ -275,3 +265,40 @@ sso:
 dw:
   - text: Digital Worker Playbook
     href: /playbooks/dw/
+    
+# Digital Signature Guides Navigation
+
+signword:
+  - text: Digitally Sign a Microsoft Word Document
+    href: /signword/
+  - text: Add a Digital Signature Using a Signature Line
+    href: /signword/#add-a-digital-signature-using-a-signature-line
+  - text: Add an Invisible Digital Signature
+    href: /signword/#add-an-invisible-digital-signature
+  - text: Add Multiple Digital Signatures Using Signature Lines
+    href: /signword/#add-multiple-digital-signatures-using-signature-lines
+  - text: Add Multiple Invisible Digital Signatures
+    href: /signword/#add-multiple-invisible-digital-signatures
+  - text: View Digital Signatures
+    href: /signword/#view-digital-signatures
+  - text: Remove a Digital Signature
+    href: /signword/#remove-a-digital-signature
+  - text: Verify Digital Signature Settings
+    href: /signword/#verify-digital-signature-settings
+  - text: Additional Resources
+    href: /signword/#additional-resources
+    
+    
+signwordofr:
+  - text: Digitally Signing Documents for Submission to Office of the Federal Register
+    href: /signfedregister/
+  - text: Add Invisible Digital Signatures in MS Word
+    href: /signfedregister/#add-invisible-digital-signatures-in-ms-word
+  - text: Multiple Digital Signatories in MS Word
+    href: /signfedregister/#multiple-digital-signatories-in-ms-word
+  - text: Remove Invisible Digital Signatures in MS Word
+    href: /signfedregister/#remove-invisible-digital-signatures-in-ms-word
+  - text: View Signature Certificate in MS Word
+    href: /signfedregister/#view-signature-certificate-in-ms-word
+  - text: FAQs
+    href: /signfedregister/#faqs
