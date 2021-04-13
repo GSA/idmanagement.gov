@@ -30,9 +30,9 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
  <tr>
   <td colspan="2" class="what"><b>1. Attend a webinar.</b></td>
-  <td><b><u>ENG</b></u></td>
-  <td><b><u>APP</b></u></td>
-  <td><b><u>PM</b></u></td>
+  <td><b><u>ENG</td>
+  <td><b><u>APP</td>
+  <td><b><u>PM></td>
   <td>CIO</td>
   <td>CSO</td>
  </tr>
