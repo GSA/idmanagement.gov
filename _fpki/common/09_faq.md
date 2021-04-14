@@ -211,13 +211,13 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     ![ios_safari_untrusted_ssl](../../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:10%;"}
-     <img src="../../../assets/fpki/ios_safari_untrusted_ssl.png" alt="ios_safari_untrusted_ssl" height="300">
+     <img src="../../../assets/fpki/ios_safari_untrusted_ssl.png" alt="ios_safari_untrusted_ssl" height="600">
 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     ![ios_chrome_untrusted_ssl](../../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:10%;"}
+     <img src="../../../assets/fpki/ios_chrome_untrusted_ssl.png" alt="ios_chrome_untrusted_ssl" height="600">
+
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
