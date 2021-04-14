@@ -28,6 +28,8 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 {% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
+<br>
+
 <div class="usa-width-three-fourths">
   <table class="usa-table-borderless">
     <thead class="usa-sr-only">
