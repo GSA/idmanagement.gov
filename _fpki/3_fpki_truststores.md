@@ -30,11 +30,11 @@ Here are some common trust stores. If the Federal Common Policy CA (FCPCA) (i.e.
 Trust Store|Includes FCPCA<br>(COMMON)?|Includes FCPCA G2|Trust Store Manager|Platforms Serviced|Program Information Location
 ---|---|---|---|---|---
 Microsoft Trusted Root Certificate Program| Yes | No |Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|[Microsoft Trusted Root Program](http://aka.ms/RootCert){:target="_blank"}{:rel="noopener noreferrer"} 
-Apple Root Certificate Program|No|No|Keychain Access Utility|macOS, iOS, tvOS, WatchOS, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
-Mozilla Network Security Services (NSS)|No |No|Browser trust store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
-Adobe Approved Trust List|Yes|Yes|Application trust store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html
-Java Root Certificate Program|No|No|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
-Google|No|No|Google Admin Console|Android OS, Chromium OS|https://www.chromium.org/Home/chromium-security/root-ca-policy
+Apple Root Certificate Program|No|No|Keychain Access Utility|macOS, iOS, tvOS, WatchOS, Safari Browser|[Apple Root Certificate Program](https://www.apple.com/certificateauthority/ca_program.html){:target="_blank"}{:rel="noopener noreferrer"} 
+Mozilla Network Security Services (NSS)|No |No|Browser trust store|Firefox, Thunderbird, Linux Operating Systems|[Mozilla Root Store Policy](https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/){:target="_blank"}{:rel="noopener noreferrer"} 
+Adobe Approved Trust List|Yes|Yes|Application trust store|Adobe Acrobat|[Adobe Approved Trust List](https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html){:target="_blank"}{:rel="noopener noreferrer"} 
+Java Root Certificate Program|No|No|Java Applet|Java Distributions|[Including Certificate Authority Root Certificates in Java](http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html){:target="_blank"}{:rel="noopener noreferrer"} 
+Google|No|No|Google Admin Console|Android OS, Chromium OS|[Chrome Root Program](https://www.chromium.org/Home/chromium-security/root-ca-policy){:target="_blank"}{:rel="noopener noreferrer"} 
 Opera|Uses Mozilla
 
 {% include alert-info.html content="Google Chrome uses the trust store of the operating system on Microsoft, Apple, and Android systems. Linux-based systems distribute the Mozilla NSS Library, which may be modified by each version of Linux." %}
