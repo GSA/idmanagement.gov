@@ -240,7 +240,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 ### Certificates issued to the Federal Common Policy CA G2
 
-Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.  For more on how to distrust a certificate, click [here](../common/migrate/#distrust-the-fcpca-g1).
+Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.  For more on how to distrust a certificate, click [here](../migrate/#distrust-the-fcpca-g1).
 
 #### Issued by: Federal Bridge CA G4
 
