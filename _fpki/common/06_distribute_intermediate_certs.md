@@ -256,4 +256,4 @@ Distrusting the certificate below will prevent workstations from building a path
 <br>
 
 
-Next, [migrate to the FCPCA G2](../common/migrate/).
+Next, [migrate to the FCPCA G2](../migrate/).
