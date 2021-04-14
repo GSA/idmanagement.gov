@@ -112,7 +112,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 
 ### Linux - Use command line
 
-The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate]({{site.baseurl}}/common/distribute-os/#linux-and-unix-solutions).
+The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate](../distribute-os/#linux-and-unix-solutions).
 
 <br>
 
