@@ -147,7 +147,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 
 ### Create an Apple configuration profile
 
-1. As an administrator, [download and verify](../common/obtain-and-verify/) a copy of the FCPCA G2 to your device.   
+1. As an administrator, [download and verify](../obtain-and-verify/) a copy of the FCPCA G2 to your device.   
 2. Download and install *Configurator 2* from the Apple App Store.
 3. Open *Configurator 2* and click **File** > **New Profile**.
 4. On the **General** tab, enter a unique profile **Name** (for example, *FCPCA G2 Profile*) and **Identifier** (for example, *FCPCAG2-0001*).
