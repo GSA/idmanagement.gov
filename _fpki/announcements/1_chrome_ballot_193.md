@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Chrome TLS Certificate Lifetime Requirement
-pubDate: May 10, 2018
-archDate: October 21, 2019
+pubDate: 05/10/2018
+archiveDate: 05/09/2019
+removeDate: 05/09/2021
 collection: fpki
 permalink: fpki/announcements/2018tlslifetime/
 tag: announcement
