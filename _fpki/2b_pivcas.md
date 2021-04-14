@@ -29,32 +29,30 @@ The page lists the certification authorities *currently* used for Personal Ident
 {% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <br>
-
-<div class="usa-width-three-fourths">
-  <table class="usa-table--borderless piv-table">
-    <thead class="usa-sr-only">
-      <tr>
-        <th id="piv-table-heading-agency" scope="col">Department/Agency</th>
-        <th id="piv-table-heading-ca" scope="col">PIV Authentication Issuing CA</th>
+  
+<table class="usa-table--borderless piv-table">
+  <thead class="usa-sr-only">
+    <tr>
+      <th id="piv-table-heading-agency" scope="col">Department/Agency</th>
+      <th id="piv-table-heading-ca" scope="col">PIV Authentication Issuing CA</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for branch in branches %}
+      <tr class="piv-table-category-heading" data-branches="{{ branch }}">
+        <th colspan="3" class="piv-table-heading" id="piv-table-heading-{{ branch | slugify }}"><b>{{ branch }} Branch</b></th>
       </tr>
-    </thead>
-    <tbody>
-      {% for branch in branches %}
-        <tr class="piv-table-category-heading" data-branches="{{ branch }}">
-          <th colspan="3" class="piv-table-heading" id="piv-table-heading-{{ branch | slugify }}"><b>{{ branch }} Branch</b></th>
-        </tr>
-        {% for piv in site.data.fpkicustomers %}
-          {% if piv.branch == branch %}
-            <tr class="piv-table-row" data-branch="{{ piv.branch }}">
-              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency }}</td>
-              <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}">{{ piv.ca }}</a></td>
-            </tr>
-          {% endif %}
-        {% endfor %} <!--piv-->
-      {% endfor %}<!--category-->
-    </tbody>
-  </table>
-</div>
+      {% for piv in site.data.fpkicustomers %}
+        {% if piv.branch == branch %}
+          <tr class="piv-table-row" data-branch="{{ piv.branch }}">
+            <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency }}</td>
+            <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca"><a href="{{ piv.url | prepend: site.baseurl }}">{{ piv.ca }}</a></td>
+          </tr>
+        {% endif %}
+      {% endfor %} <!--piv-->
+    {% endfor %}<!--category-->
+  </tbody>
+</table>
 
 ## Active Issuing CA Certificate Details 
 These CA certificates are actively issuing PIV authentication certificates.  
