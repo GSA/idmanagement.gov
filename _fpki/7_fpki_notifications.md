@@ -13,13 +13,6 @@ subnav:
     href: '#how-to-add-a-new-notification'
 ---
 
-{% assign categories = "" | split: "" %}
-{% for notifcation in site.data.fpkinotifications %}
-  {% assign system = notification.system | strip %}
-  {% assign categories = categories | push: system | uniq | sort %}
-{% endfor %}
-{% assign categories = categories | uniq | sort %}
-
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
 
 The communication of changes, and planned or unplanned system outages, is required by the certificate policies and the incident management process.  Strong communication allows for planning and response and benefits the Federal PKI community as a whole.  Planned changes of the these types require notifications two (2) weeks in advance:
@@ -34,20 +27,6 @@ System **outages** - either through a planned maintenance activity or unplanned 
 To report a change **or** system outage not listed below, please email fpki at gsa dot gov.
 
 ## Notifications
-
-<div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs guides-filter">
-    <legend>Filter by System</legend>
-    <ul class="usa-unstyled-list">
-      {% for category in categories %}
-      <li>
-        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
-        <label for="category-{{ category | slugify }}">{{ category }}</label>
-      </li>
-      {% endfor %}
-    </ul>
-  </fieldset>
-</div>
 
 <!-- This block loops through the notifications yml file under the data directory. -->
 
