@@ -8,9 +8,9 @@ sidenav: fpki
 
 subnav:
   - text: Active
-    href: ../fpki/announcements/common-g2-update/
+    href: ../announcements/common-g2-update/
   - text: Archived
-    href: ../fpki/announcements/2019fpkimigration/
+    href: ../announcements/2019fpkimigration/
 ---
 
 These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
