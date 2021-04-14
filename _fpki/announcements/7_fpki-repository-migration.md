@@ -2,7 +2,7 @@
 layout: page
 title: Upcoming Migration of Federal PKI Certificate Repository Services
 pubDate: April 1, 2019
-archDate: March 30, 2020
+archiveDate: March 30, 2020
 collection: fpki
 category: Migration
 permalink: fpki/announcements/2019fpkimigration/
