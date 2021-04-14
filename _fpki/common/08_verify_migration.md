@@ -44,11 +44,11 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 ### Troubleshooting
 
 - If you're building a path to the FCPCA G1
-	- [Verify you have distrusted the FCPCA G1](../common/migrate/#2-distrust-the-federal-common-policy-ca)
+	- [Verify you have distrusted the FCPCA G1](../migrate/#2-distrust-the-federal-common-policy-ca)
 - If a path isn't building at all
-	- [Verify your distribution of the FCPCA G2](../common/verify-os-distribution/)
-	- [Distribute the CA certificates issued by the FCPCA G2](../common/certificates/)
+	- [Verify your distribution of the FCPCA G2](../verify-os-distribution/)
+	- [Distribute the CA certificates issued by the FCPCA G2](../certificates/)
 
 ## Need Help?
 
-View the [Frequently Asked Questions](../common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov.
+View the [Frequently Asked Questions](../faq/) page for more information, or email us at fpkirootupdate@gsa.gov.
