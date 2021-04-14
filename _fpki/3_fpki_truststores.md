@@ -7,7 +7,7 @@ sidenav: fpki
 sticky_sidenav: true
 
 subnav:
-  - text: Trust Store
+  - text: What is a Trust Store?
     href: '#what-is-a-trust-store'
   - text: Commonly Used Trust Stores
     href: '#what-are-the-most-commonly-used-trust-stores'
