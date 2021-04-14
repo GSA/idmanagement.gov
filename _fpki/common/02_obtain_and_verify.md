@@ -46,7 +46,7 @@ To verify your copy of FCPCA G2, use one of these options:
 <br>
 ![A .gif that shows the verification steps performed on Microsoft Server 2016](../../../assets/fpki/verify.gif){:style="width:100%;"}
 
-<img src="../../../assets/fpki/verify.gif" alt="A .gif that shows the verification steps performed on Microsoft Server 2016" style="width:85%;">
+<img src="../../../assets/fpki/verify.gif" alt="A .gif that shows the verification steps performed on Microsoft Server 2016" style="width:100%;">
 
 
 <br>
