@@ -74,13 +74,16 @@ To report a change **or** system outage not listed below, please email fpki at g
 
 <ul class="usa-unstyled-list">
     <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+	<br>
     <li><strong>Contact:</strong> {{ notification.contact }}</li>
 </ul>  
 
 {% if notification.ca_certificate_issuer %}
 	<ul class="usa-unstyled-list">
 		<li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+		<br>
 		<li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+		<br>
 		<li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li> 
 	</ul>
 {% endif %}
