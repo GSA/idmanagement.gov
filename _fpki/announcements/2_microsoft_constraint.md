@@ -9,7 +9,7 @@ permalink: fpki/announcements/2018mspkichanges/
 category: Microsoft
 description: UUpcoming changes regarding Microsoft's remove of the U.S. Government Root CA.
 status: Archived
-sidenav: fpkiannouncements
+sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 
 subnav: 
