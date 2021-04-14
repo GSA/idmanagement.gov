@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
-pubDate: May 18, 2018
-archDate: October 21, 2019
+pubDate: 05/18/2018
+archiveDate: 05/19/2019
+removeDate: 05/19/2021
 collection: fpki
 permalink: fpki/announcements/2018mspkichanges/
 category: Microsoft
