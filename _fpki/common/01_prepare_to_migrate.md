@@ -127,4 +127,4 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </table>
 
 
-Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../fpki/common/obtain-and-verify/).
+Get started today! [Obtain and verify a copy of the FCPCA G2 certificate](../obtain-and-verify/).
