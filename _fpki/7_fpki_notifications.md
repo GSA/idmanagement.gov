@@ -34,6 +34,7 @@ To report a change **or** system outage not listed below, please email fpki at g
  
 {% for notification in site.data.fpkinotifications reversed %}
   <ul class="usa-unstyled-list">
+    <br>
     <li><strong>Notice Date: </strong> {{ notification.notice_date }} </li>
     <li><strong>System:</strong> {{ notification.system }} </li>
     <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -46,7 +47,6 @@ To report a change **or** system outage not listed below, please email fpki at g
     <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
     <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
     <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
-    <hr>
   </ul>
 
 {% endfor %}
