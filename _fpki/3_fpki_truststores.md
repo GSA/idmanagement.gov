@@ -29,7 +29,7 @@ Here are some common trust stores. If the Federal Common Policy CA (FCPCA) (i.e.
 
 Trust Store|Includes FCPCA<br>(COMMON)?|Includes FCPCA G2|Trust Store Manager|Platforms Serviced|Program Information Location
 ---|---|---|---|---|---
-Microsoft Trusted Root Certificate Program|Yes (COMMON removal pending)| No |Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
+Microsoft Trusted Root Certificate Program| Yes | No |Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|[Microsoft Trusted Root Program](http://aka.ms/RootCert){:target="_blank"}{:rel="noopener noreferrer"} 
 Apple Root Certificate Program|No|No|Keychain Access Utility|macOS, iOS, tvOS, WatchOS, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
 Mozilla Network Security Services (NSS)|No |No|Browser trust store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
 Adobe Approved Trust List|Yes|Yes|Application trust store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html
