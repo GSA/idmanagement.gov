@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Chrome Certificate Transparency Requirements
-pubDate: August 10, 2018
-archDate: October 21, 2019
+pubDate: 08/10/2018
+archiveDate: 08/09/2019
+removeDate: 08/09/2021
 collection: fpki
 permalink: fpki/announcements/2018chromect/
 category: Google
