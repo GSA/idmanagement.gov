@@ -52,7 +52,8 @@ The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certifie
 
 ### All Federal PKI Certification Authorities
 
-<img src="../../assets/fpki/intro_participatingCAsV3.png" alt="FPKI Participating CAs" width="250" align="left" padding-right"10">
+<img src="../../assets/fpki/intro_participatingCAsV3.png" alt="FPKI Participating CAs" width="200" align="left" padding-right="25">
+
 
 A CA that is part of the FPKI is called a _participating certification authority_. 
 
