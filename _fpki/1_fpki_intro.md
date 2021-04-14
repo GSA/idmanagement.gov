@@ -45,7 +45,7 @@ A PIV certificate is a simple example.  Although there are many types of identit
 * The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certification Authority_. The _Intermediate Certification Authority's certificate_ was issued by another _Certification Authority_.  
 * This process of issuing and signing continues until there is one _Certification Authority_ that is called the _Root Certification Authority_.
 
-![Example of an identity certificate with intermediate and root]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="float:center"}
+![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:style="float:center"}
 
 The full process of proving identity when issuing certificates, auditing the Certification Authorities, and the cryptographic protections of the digital signatures establish the _basis of Trust_.
 
@@ -87,7 +87,7 @@ The Federal PKI is important to federal agencies, other government entities, and
 ### Where can I find the Policies and Standards?
 
 * [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the U.S. Federal Root Certification Authority.
-* [X.509 Certificate and CRL Profiles for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-profiles-common/){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
+* [X.509 Certificate and CRL Profiles for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-profiles-common.pdf/){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
 * [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the FBCA.
 * [X.509 Certificate and CRL Extensions Profile for the FBCA](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for Federal PKI infrastructure systems.
 * [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
