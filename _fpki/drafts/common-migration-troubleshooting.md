@@ -2,9 +2,7 @@
 layout: page 
 title: Troubleshooting Procedures
 permalink: fpki/common/troubleshooting/
-sidenav: fpki
-
-subnav:
+sidenav:
   - text: 1. Prepare to migrate to the Federal Common Policy CA G2
     href: ../common/prepare-to-migrate/
   - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
