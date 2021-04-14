@@ -25,7 +25,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 - [Use Microsoft Certutil](#use-microsoft-certutil)
 - [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object-gpo)
 - [Use third-party configuration management tools](#use-third-party-configuration-management-tools)
-- [Use Microsoft Certificate Manager for unmanaged devices](#manually-use-microsoft-certificate-manager-for-unmanaged-devices)
+- [Use Microsoft Certificate Manager for unmanaged devices](#use-microsoft-certificate-manager-for-unmanaged-devices)
 
 ## macOS Solutions
 - [Use an Apple configuration profile](#create-distribute-and-install-an-apple-configuration-profile)
