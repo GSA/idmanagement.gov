@@ -8,7 +8,7 @@ collection: fpki
 category: Decommission
 permalink: fpki/announcements/2019digicert/
 description: Information related to the DigiCert CAs affected by this change.
-sidenav: fpkiannouncements
+sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 status: Archived
 ---
