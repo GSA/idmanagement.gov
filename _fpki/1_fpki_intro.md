@@ -87,7 +87,7 @@ The Federal PKI is important to federal agencies, other government entities, and
 ### Where can I find the Policies and Standards?
 
 * [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the U.S. Federal Root Certification Authority.
-* [X.509 Certificate and CRL Profiles for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-profiles-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
+* [X.509 Certificate and CRL Profiles for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
 * [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the FBCA.
 * [X.509 Certificate and CRL Extensions Profile for the FBCA](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for Federal PKI infrastructure systems.
 * [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
