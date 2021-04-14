@@ -211,15 +211,15 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_safari_untrusted_ssl](../../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:30%;"}
+     ![ios_safari_untrusted_ssl](../../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:10%;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_chrome_untrusted_ssl](../../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
+     ![ios_chrome_untrusted_ssl](../../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:10%;"}
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
-Please review the steps to [verify distribution of the FCPCA G2](../common/verify-os-distribution/).
+Please review the steps to [verify distribution of the FCPCA G2](../verify-os-distribution/).
 
 ## My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
 
@@ -231,7 +231,7 @@ This change *does* affect how federal enterprise workstations and devices valida
 
 Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued before August 13, 2019, chain through an older version of the Entrust Managed Services Root CA on their way to the Federal Common Policy CA than certificates issued since.  This older version of the Entrust Managed Services Root CA will not receive a certificate from the Federal Common Policy CA G2.
 
-To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this](../../certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here](../common/certificates/).
+To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this](../../certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here](../certificates/).
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
