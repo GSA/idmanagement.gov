@@ -61,7 +61,7 @@ All federal agencies should use the Federal PKI for:
 * Signed and encrypted email communications across federal agencies
 
 The Federal PKI provides four core technical capabilities:
-![Illustration of the four core FPKI capabilities](../../assets/fpki/intro/fpki-core.png){:style="width:40%;float:right;"}
+![Illustration of the four core FPKI capabilities]({{site.baseurl}}/assets/fpki/fpki-core.png){:style="width:40%;float:right;"}
 *The Four Core Federal PKI Capabilities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 * Trust with federal agencies and industry
