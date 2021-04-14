@@ -31,9 +31,7 @@ To report a change **or** system outage not listed below, please email fpki at g
 <!-- This block loops through the notifications yml file under the data directory. -->
 
 <div class="usa-width-one-whole">
-  
-<hr>
-
+ 
 {% for notification in site.data.fpkinotifications reversed %}
   <ul class="usa-unstyled-list">
     <li><strong>Notice Date: </strong> {{ notification.notice_date }} </li>
@@ -48,11 +46,11 @@ To report a change **or** system outage not listed below, please email fpki at g
     <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
     <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
     <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+    <hr>
   </ul>
 
 {% endfor %}
 
-</hr>
 </div>
 
 
