@@ -42,7 +42,7 @@ A few commercial vendors include the FCPCA root certificate in the commercial-of
 
 ### Federal Bridge Certification Authority
 
-<img src="../../assets/fpki/intro_fbca-logo.png" alt="FPKI Federal Bridge Logo" width="150">
+<img src="../../assets/fpki/intro_fbca-logo.png" alt="FPKI Federal Bridge Logo" width="200">
 
 The current Federal Bridge Certification Authority (FBCA) is the _**Federal Bridge CA G4**_.
 
@@ -52,7 +52,7 @@ The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certifie
 
 ### All Federal PKI Certification Authorities
 
-<img src="../../assets/fpki/intro_participatingCAsV3.png" alt="FPKI Participating CAs" width="150">
+<img src="../../assets/fpki/intro_participatingCAsV3.png" alt="FPKI Participating CAs" width="200">
 
 A CA that is part of the FPKI is called a _participating certification authority_. 
 
