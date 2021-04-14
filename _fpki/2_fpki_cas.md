@@ -44,25 +44,15 @@ A few commercial vendors include the FCPCA root certificate in the commercial-of
 
 The current Federal Bridge Certification Authority (FBCA) is the _**Federal Bridge CA G4**_.
 
-<p><img src="../../assets/fpki/intro_fbca-logo.png" alt="FPKI Federal Bridge Logo" style="float:right;width:200">
-The FBCA is a PKI Bridge or link between the FCPCA and other CAs that comprise the FPKI network and that may operate under comparable but _different_ certificate policies.  
-
-The FBCA provides a means to map these certificate policies and CAs and allow certificates to validate to the FCPCA root certificate.
-
-The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.</p>
-
-
-
+<p><img src="../../assets/fpki/intro_fbca-logo.png" alt="FPKI Federal Bridge Logo" style="float:right;width:125">
+The FBCA is a PKI Bridge or link between the FCPCA and other CAs that comprise the FPKI network and that may operate under comparable but _different_ certificate policies. <br> The FBCA provides a means to map these certificate policies and CAs and allow certificates to validate to the FCPCA root certificate. <br> The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.</p>
 
 ### All Federal PKI Certification Authorities
 
-![FPKI Participating CAs](../../assets/fpki/intro_participatingCAsV3.png){:style="width:35%;float:right;"}
+<p><img src="../../assets/fpki/intro_participatingCAsV3.png" alt="FPKI Participating CAs" style="float:right;width:125">
+A CA that is part of the FPKI is called a _participating certification authority_. <br> For historical records, we might _label_ or identify CA systems using a category that shows _when_ the system was established and for what types of _communities_ it is or was used. <br> We realize all the acronyms and labels may be confusing and welcome your input to help us improve, add information over time, and simplify where needed. </p>
 
-A CA that is part of the FPKI is called a _participating certification authority_.  Over a hundred participating CAs form the FPKI network.<!--We say in 2nd para at top: "The Federal PKI is a network of hundreds of certification authorities (CAs)" (redundant idea).-->  
 
-For historical records, we might _label_ or identify CA systems using a category that shows _when_ the system was established and for what types of _communities_ it is or was used.  
-
-We realize all the acronyms and labels may be confusing and welcome your input to help us improve, add information over time, and simplify where needed. 
 
 |**Certification Authority Category**|**Description**|
 |-----------|---------------|
