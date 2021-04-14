@@ -13,7 +13,7 @@ subnav:
     href: '#distrust-the=fcpca-g1'
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
 
 For the purpose of these steps, we refer to the existing Federal Common Policy CA (FCPCA) as *FCPCA G1*.
 
@@ -37,7 +37,7 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 
 ## Disable distribution of the FCPCA G1
 
-Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
+Reference the distribution mechanisms [here](../distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
 
 - [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
 - [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
