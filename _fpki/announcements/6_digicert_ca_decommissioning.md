@@ -1,8 +1,8 @@
 ---
 layout: page
 title: DigiCert CA Decommissioning 
-pubDate: April 1, 2019
-archDate: March 30, 2020
+pubDate: 04/01/2019
+archDate: 03/20/2020
 collection: fpki
 category: Decommission
 permalink: fpki/announcements/2019digicert/
