@@ -1,7 +1,7 @@
 ---
 layout: default 
 title: Troubleshooting Procedures
-permalink: common/troubleshooting/
+permalink: fpki/common/troubleshooting/
 ---
 
 {% include alert-success.html content="This page presents common issues and troubleshooting procedures related to the Federal PKI Root CA migration.  We encourage <b>only</b> Domain or System Administrators follow the procedures listed on this page.  If you need help or have any questions, email us at fpkirootupdate@gsa.gov." %} 
