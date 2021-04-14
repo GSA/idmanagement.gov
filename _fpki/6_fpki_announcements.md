@@ -18,14 +18,14 @@ These announcements and hot topic concern Federal Public Key Infrastructure chan
 <table class="usa-table--borderless announce-table">
   <thead class="usa-sr-only">
     <tr>
-      <th id="announce-table-heading-title" scope"col">Title</th>
+      <th id="announce-table-heading-title" scope="col">Title</th>
       <th id="announce-table-heading-status" scope="col">status</th>
       <th id="announce-table-heading-date" scope="col">Date</th>
       <th id="announce-table-heading-description" scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "status" %}%}
+    {% assign announcements = site.fpki.announcements | concat: site.data.fpkiannouncements| sort: "status" %}
     {% for announcement in announcements %}
         <tr class="announce-table-row">
           <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
