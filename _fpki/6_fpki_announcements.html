@@ -18,7 +18,7 @@ sidenav: fpki
     </tr>
   </thead>
   <tbody>
-    {% assign announcements = site.fpki.announcements | sort: "pubDate" %}
+    {% assign announcements = site.fpki.announcements | sort: "status" %}
     {% for announcement in announcements %}
         <tr class="announce-table-row">
           <td><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></td>
