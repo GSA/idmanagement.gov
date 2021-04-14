@@ -8,7 +8,7 @@ collection: fpki
 category: Removal
 permalink: fpki/announcements/2019removal/
 description: This announcement provides information related to the Health IT CAs removed from the Federal PKI.
-sidenav: fpkiannouncements
+sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 status: Archive
 
