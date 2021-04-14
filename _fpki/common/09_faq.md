@@ -66,7 +66,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 
 | Certificate Attribute | Value                                              |
 | :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services,<br> CN=Services, CN=Configuration, DC=state, DC=sbu |
+| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | December 18, 2019 to December 18, 2022   |
 | Serial Number | 79f9    |
 | SHA-1 Thumbprint | ce11590010562a39ad8b1455acf76c03737aebf6  |
@@ -76,7 +76,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 
 | Certificate Attribute (1 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
+| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | August 14, 2019 to August 14, 2022  |
 | Serial Number | 734b   |
 | SHA-1 Thumbprint | 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2   |
@@ -84,7 +84,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 
 | Certificate Attribute (2 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
+| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | August 29, 2018 to August 29, 2021   |
 | Serial Number | 6405    |
 | SHA-1 Thumbprint | 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  |
@@ -114,7 +114,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 
 | Certificate Attribute (1 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | August 14, 2019 to August 14, 2029  |
 | Serial Number | 734a   |
 | SHA-1 Thumbprint | a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  |
@@ -122,7 +122,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 
 | Certificate Attribute (2 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | July 30, 2015 to July 30, 2025  |
 | Serial Number | 2e26   |
 | SHA-1 Thumbprint | 39c1d3b64e756a3267bfe5fecb103da892ca0611  |
@@ -176,22 +176,22 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 ## What errors can occur in Windows if I don't distribute the FCPCA G2?
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
      ![error_navigation](../../../assets/fpki/error_navigation.png)
 
-*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain<br>to a trusted root CA:*
+*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
      <br>
      ![error_piv_auth](../../../assets/fpki/error_piv_auth.png)
 
-*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain<br>to a trusted root CA:*
+*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
      <br>
      <br>
      ![error_sig_val](../../../assets/fpki/error_sig_val.png)
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
-*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
+*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
      ![safari_untrusted_ssl](../../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}
 
@@ -199,7 +199,7 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
      <br>
      ![safari_untrusted_auth](../../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
      ![chrome_untrusted_ssl](../../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}
 
@@ -209,11 +209,11 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
-*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
+*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
      ![ios_safari_untrusted_ssl](../../../assets/fpki/ios_safari_untrusted_ssl.png){:style="width:10%;"}
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
      ![ios_chrome_untrusted_ssl](../../../assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:10%;"}
 
