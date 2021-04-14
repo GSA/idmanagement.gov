@@ -35,7 +35,7 @@
  agency: Department of Education
  credentialProvider: Internal (migrating to USAccess)
  ssp: DigiCert Federal SSP and Entrust Federal SSP
- ca: <a href="#us-department-of-education-agency-ca---g4">U.S. Department of Education Agency CA - G4</a> and <br> <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a>
+ ca: <a href="#us-department-of-education-agency-ca---g4">U.S. Department of Education Agency CA - G4</a> and <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a>
 -
  branch: Executive
  agency: Department of Energy
