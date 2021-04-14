@@ -31,7 +31,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 <br>
 
 <div class="usa-width-three-fourths">
-  <table class="usa-table-borderless">
+  <table class="usa-table--borderless playbooks-table">
     <thead class="usa-sr-only">
       <tr>
         <th id="piv-table-heading-agency" scope="col">Department/Agency</th>
