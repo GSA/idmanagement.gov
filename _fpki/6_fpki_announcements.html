@@ -29,14 +29,3 @@ sidenav: fpki
     {% endfor %}
   </tbody>
 </table>
-
-<ul>
-  {% for announcement in site.fpki.announcements %}
-    <li>
-      <h2><a href="{{ announcement.url }}">{{ announcement.title }}</a></h2>
-      {{ announcement.status }}
-      {{ announcement.pubDate }}
-      {{ announcement.description }}
-    </li>
-  {% endfor %}
-</ul>
