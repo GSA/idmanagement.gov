@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Removal of CAs from Federal PKI
-pubDate: March 5, 2019
-archDate: March 4, 2020
+pubDate: 03/05/2019
+archiveDate: 03/04/2020
+removeDate: 03/04/2022
 collection: fpki
 category: Removal
 permalink: fpki/announcements/2019removal/
