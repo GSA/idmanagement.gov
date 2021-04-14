@@ -134,6 +134,6 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 <br>
 
 
-Finally, [verify migration to the FCPCA G2](../common/verify-migration/).
+Finally, [verify migration to the FCPCA G2](../verify-migration/).
 
 
