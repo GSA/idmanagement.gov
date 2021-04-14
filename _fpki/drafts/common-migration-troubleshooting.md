@@ -4,23 +4,23 @@ title: Troubleshooting Procedures
 permalink: fpki/common/troubleshooting/
 sidenav:
   - text: 1. Prepare to migrate to the Federal Common Policy CA G2
-    href: ../common/prepare-to-migrate/
+    href: ../prepare-to-migrate/
   - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
-    href: ../common/obtain-and-verify/
+    href: ../obtain-and-verify/
   - text: 3. Distribute the certificate to operating systems
-    href: ../common/distribute-os/
+    href: ../distribute-os/
   - text: 4. Verify operating system distribution
-    href: ../common/verify-os-distribution/
+    href: ../verify-os-distribution/
   - text: 5. Distribute the certificate to applications
-    href: ../common/distribute-apps/
+    href: ../distribute-apps/
   - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
-    href: ../common/certificates/
+    href: ../certificates/
   - text: 7. Migrate to the Federal Common Policy CA G2
-    href: ../common/migrate/
+    href: ../migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
-    href: ../common/verify-migration/
+    href: ../verify-migration/
   - text: Frequently Asked Questions
-    href: ../common/faq/
+    href: ../faq/
 ---
 
 {% include alert-success.html content="This page presents common issues and troubleshooting procedures related to the Federal PKI Root CA migration.  We encourage <b>only</b> Domain or System Administrators follow the procedures listed on this page.  If you need help or have any questions, email us at fpkirootupdate@gsa.gov." %} 
