@@ -42,7 +42,7 @@ A few commercial vendors include the FCPCA root certificate in the commercial-of
 
 ### Federal Bridge Certification Authority
 
-<img src="../../assets/fpki/intro_fbca-logo.png" alt="FPKI Federal Bridge Logo" width="200" align="left" padding-right="25">
+<img src="../../assets/fpki/intro_fbca-logo.png" alt="FPKI Federal Bridge Logo" width="200" align="left" padding-right="50">
 
 The current Federal Bridge Certification Authority (FBCA) is the _**Federal Bridge CA G4**_.
 
