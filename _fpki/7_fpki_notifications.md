@@ -34,7 +34,7 @@ To report a change **or** system outage not listed below, please email fpki at g
  
 {% for notification in site.data.fpkinotifications reversed %}
   <ul class="usa-unstyled-list">
-    <br>
+    <hr>
     <li><strong>Notice Date: </strong> {{ notification.notice_date }} </li>
     <li><strong>System:</strong> {{ notification.system }} </li>
     <li><strong>Type:</strong> {{ notification.change_type }} </li>
