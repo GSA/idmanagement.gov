@@ -7,7 +7,7 @@ collection: fpki
 category: Migration
 permalink: fpki/announcements/2019fpkimigration/
 description: Information related to the upcoming migration.
-sidenav: fpkiannouncements
+sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 status: Archived
 
