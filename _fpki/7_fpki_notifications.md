@@ -37,8 +37,6 @@ To report a change **or** system outage not listed below, please email fpki at g
     <li><strong>Notice Date: </strong> {{ notification.notice_date }} </li>
     <li><strong>System:</strong> {{ notification.system }} </li>
     <li><strong>Type:</strong> {{ notification.change_type }} </li>
-    <li><strong>Start Date:</strong> {{ notification.start_datetime }}</li>
-    <li><strong>End Date and Time:</strong> {{ notification.end_datetime }}</li>	
     <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
     <li><strong>Contact:</strong> {{ notification.contact }}</li>
     <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
