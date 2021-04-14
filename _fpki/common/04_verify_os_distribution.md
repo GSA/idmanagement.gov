@@ -200,7 +200,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 	> **Note:** "fcpcag2" was the name of the file distributed to the operating system.
 
 
-3. Verify the file hash matches the one listed [here]({../obtain-and-verify/):
+3. Verify the file hash matches the one listed [here](../obtain-and-verify/):
 
     ```
         5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC  fcpcag2.crt
