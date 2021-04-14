@@ -4,21 +4,21 @@ title: Troubleshooting Procedures
 permalink: fpki/common/troubleshooting/
 sidenav:
   - text: 1. Prepare to migrate to the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/prepare-to-migrate/
+    href: ../common/prepare-to-migrate/
   - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
-    href: {{site.baseurl}}/fpki/common/obtain-and-verify/
+    href: ../common/obtain-and-verify/
   - text: 3. Distribute the certificate to operating systems
-    href: {{site.baseurl}}/fpki/common/distribute-os/
+    href: ../common/distribute-os/
   - text: 4. Verify operating system distribution
-    href: {{site.baseurl}}/fpki/common/verify-os-distribution/
+    href: ../common/verify-os-distribution/
   - text: 5. Distribute the certificate to applications
-    href: {{site.baseurl}}/fpki/common/distribute-apps/
+    href: ../common/distribute-apps/
   - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/certificates/
+    href: ../common/certificates/
   - text: 7. Migrate to the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/migrate/
+    href: ../common/migrate/
   - text: 8. Verify migration to the Federal Common Policy CA G2
-    href: {{site.baseurl}}/fpki/common/verify-migration/
+    href: ../common/verify-migration/
   - text: Frequently Asked Questions
     href: {{site.baseurl}}/fpki/common/common/faq/
 ---
