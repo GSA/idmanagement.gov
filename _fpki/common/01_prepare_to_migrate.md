@@ -81,8 +81,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>We are collaborating with CISA on a series of webinars and virtual "office hours" sessions to communicate upcoming changes and answer your questions.</li>
-	<li>E-mail fpkirootupdate@gsa.gov to join our e-mail distribution, and we'll follow-up once more information is available.</li>
+	<li>Inventory your agency's systems and applications.</li>
+	<li>Identify how you will deliver the updated FCPCA G2 CA certificate to affected systems or applications. For example, you might distribute the certificate through a Group Policy Object (GPO) or Mobile Device Management (MDM) tool.</li>
   </ul>
   </td>
 </tr>
