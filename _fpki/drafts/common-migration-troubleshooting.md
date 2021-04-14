@@ -33,9 +33,9 @@ In some cases, even after distributing the Federal Common Policy CA G2 as a Trus
 ![validation errors]({{site.baseurl}}/assets/fpki/error-distribute-intermediates.png) 
 
 **Recommended Steps:**
-1. Verify the distribution of the Federal Common Policy CA G2 as a [Trusted Root CA Certificate]({{site.baseurl}}/common/distribute-os/){:target="_blank"}
-2. Verify the [distrust of the Federal Common Policy CA]({{site.baseurl}}/common/migrate/#distrust-the-fcpca-g1){:target="_blank"}
-3. Distribute the [intermediate CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/common/certificates/#certificates-issued-by-the-federal-common-policy-ca-g2){:target="_blank"}
+1. Verify the distribution of the Federal Common Policy CA G2 as a [Trusted Root CA Certificate]({{site.baseurl}}/fpki/common/distribute-os/){:target="_blank"}
+2. Verify the [distrust of the Federal Common Policy CA]({{site.baseurl}}/fpki/common/migrate/#distrust-the-fcpca-g1){:target="_blank"}
+3. Distribute the [intermediate CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/fpki/common/certificates/#certificates-issued-by-the-federal-common-policy-ca-g2){:target="_blank"}
 
 If you're still having problems, email us at fpkirootupdate@gsa.gov.
 
@@ -200,7 +200,7 @@ TLS certificate errors presented to the user in Safari are typically caused by e
 2. An intermediate CA certificate is missing from the device's trust store
 
 **Recommended Steps**:
-1. Verify that ["Full Trust"]({{site.baseurl}}/common/distribute-os/#enable-full-trust-for-fcpca-g2){:target="_blank_"} is enabled for the Federal Common Policy CA G2
+1. Verify that ["Full Trust"]({{site.baseurl}}/fpki/common/distribute-os/#enable-full-trust-for-fcpca-g2){:target="_blank_"} is enabled for the Federal Common Policy CA G2
 2. Verify that all required intermediate CA certificates are trusted by the device
      - Settings -> General -> Profile
      - Review the list of Configuration Profiles loaded on the device. Specifically, look at any profile which contains digital certificates. 
