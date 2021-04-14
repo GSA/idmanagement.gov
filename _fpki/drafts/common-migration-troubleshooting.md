@@ -30,7 +30,7 @@ permalink: fpki/common/troubleshooting/
 
 In some cases, even after distributing the Federal Common Policy CA G2 as a Trusted Root CA, Microsoft-based systems may still attempt to build a path to the Federal Common Policy CA.  If the Federal Common Policy CA has been distrusted, that may result in errors as pictured below:
 
-![validation errors]({{site.baseurl}}/img/error-distribute-intermediates.png) 
+![validation errors]({{site.baseurl}}/assets/fpki/error-distribute-intermediates.png) 
 
 **Recommended Steps:**
 1. Verify the distribution of the Federal Common Policy CA G2 as a [Trusted Root CA Certificate]({{site.baseurl}}/common/distribute-os/){:target="_blank"}
