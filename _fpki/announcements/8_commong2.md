@@ -9,7 +9,7 @@ permalink: fpki/announcements/common-g2-update/
 description: Details on the Federal Common Policy CA G2 timeline and actions agencies need to perform.
 status: Active
 sticky_sidenav: true
-sidenav: fpkiannouncements
+sidenav: fpkiactiveannouncements
 
 subnav:
     - text: What will be impacted?
