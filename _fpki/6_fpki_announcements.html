@@ -9,15 +9,15 @@ sidenav: fpki
  These announcements and hot topic concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are archived after one year and removed after three years.
 
 <table class="usa-table--borderless announce-table">
+ <tbody>
   <thead class="usa-sr-only">
     <tr>
-      <th>Title</th>
+      <th id="announce-table-heading-title" scope"col">Title</th>
       <th id="announce-table-heading-status" scope="col">status</th>
       <th id="announce-table-heading-date" scope="col">Date</th>
       <th id="announce-table-heading-description" scope="col">Description</th>
     </tr>
   </thead>
-  <tbody>
     {% assign announcements = site.data.fpkiannouncements %}
     {% for announcement in announcements %}
         <tr class="announce-table-row">
