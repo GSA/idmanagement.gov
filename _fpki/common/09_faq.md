@@ -22,8 +22,9 @@ sidenav: fpkicommon
 - [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
 - [Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?](#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
-- [How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2) 
-
+- [How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2)
+- [How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-macos-device-to-trust-the-new-federal-common-policy-ca-g2) 
+- [How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-ios-device-to-trust-the-new-federal-common-policy-ca-g2) 
 
 
 ## Will my PIV credentials break or need to be updated or replaced when this change occurs?
@@ -246,19 +247,57 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 - validate PIV digital signatures in emails or documents, or
 - navigate to intranet pages whose SSL/TLS certificates chain to the FCPCA G2.
 
+
 ## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
-1. Download the new Federal Common Policy CA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
-2. Download the intermediate CA certificates issued by the Federal Common Policy CA G2 from http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
-3. Rename the extension of the recently downloaded caCertsIssuedByfcpcag2.p7**c** to caCertsIssuedByfcpcag2.p7**b**
-4. Update your Trust Store:
+1. Download a copy of the FCPCA G2 certificate from [http://repo.fpki.gov/fcpca/fcpcag2.crt](http://repo.fpki.gov/fcpca/fcpcag2.crt)
+2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices](../../certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
+3. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
      - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of the FCPCA G2. Click **Next** several times until the certificate import process is complete.
      - When prompted, verify the certificate thumbprint matches *99B4251E2EEE05D8292E8397A90165293D116028* (additional spaces may appear depending on your Windows Version).
      - Click **Yes**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
-     - Browse to and select your copy of caCertsIssuedByfcpcag2.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
+     - Browse to and select your copy of fpki-unmanaged-bundle.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
 
 **Note:** The following .gif demonstrates the steps outlined above.
 
 ![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}
+
+
+## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?
+1. Download a copy of [fpki-unmanaged-bundle.mobileconfig](../../certs/fpki-unmanaged-bundle.mobileconfig)
+2. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig. 
+3. Navigate to **System Preferences** -> **Profiles**
+4. Verify the profile contents and click **Install** (twice) 
+
+**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using an Apple configuration profile on macOS.
+<br>
+<video width="85%" controls>
+  <source src="../../../assets/fpki/macos-unmanaged.mp4" type="video/mp4"  alt="A video that shows the steps to install an Apple configuration profile on macOS.">
+</video>
+<br>
+
+
+## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?
+1. Launch **Safari**.
+2. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig](../../certs/fpki-unmanaged-bundle.mobileconfig)
+> System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
+3. Click **Allow**.<br>
+4. Navigate to **Settings** -> **General** -> **Profile** 
+5. Select the "Distribute FCPCAG2 and Intermediate CA Certificates" profile
+6. Select **More Details** and select the certificate entry for the FCPCA G2
+7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](../obtain-and-verify).
+8. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
+9. When prompted, enter your device **passcode**.
+10. Click **Install** in the upper right corner, and **Install** again.
+11. Click **Done**.
+12. Enable [full trust for the FCPCA G2](../distribute-os/#enable-full-trust-for-fcpca-g2).
+
+**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
+<br>
+<video width="300" controls>
+  <source src="../../../assets/fpki/ios_safari_configuration-unmanaged.mp4" type="video/mp4"  alt="A video that shows the steps to install a mobile configuration file in the Safari web browser.">
+</video>
+<br>
+
