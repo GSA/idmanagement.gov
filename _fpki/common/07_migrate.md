@@ -42,7 +42,6 @@ Reference the distribution mechanisms [here](../distribute-os/) to review the wa
 - [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
 - [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
 - [Apple configuration profile (macOS or iOS)](#if-the-fcpca-was-distributed-using-an-apple-configuration-profile)
-- [Use Linux Command Line](#use-linux-command-line)
 
 
 <br>
@@ -82,6 +81,7 @@ Reference the distribution mechanisms [here](../distribute-os/) to review the wa
 Use one of the methods below to distrust the FCPCA G1.
 - [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object)
 - [Use macOS Terminal](#use-macos-terminal)
+- [Use Linux Command Line](#use-linux-command-line)
 
 ### Use Microsoft Group Policy Object
 
