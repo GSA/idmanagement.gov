@@ -55,10 +55,10 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | Organization | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|  
 | Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
-| DigiCert Federal Shared Service Provider (formerly Symantec)| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund@digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green@digicert.com| 
-| Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support@entrustdatacard.com |
+| DigiCert Federal Shared Service Provider (formerly Symantec)| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund at digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green at digicert.com| 
+| Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrustdatacard.com |
 | Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
-| WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy@ORC.com |
+| WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
 
 ## Business Identity and Credentials
 These organizations operate services for persons who are affiliated with a business, State, Local, Tribal, Territorial, or non-profit. For the PKI credentials, these are often used by a business person to digitally sign documents with the U.S. Government as a business representative or to authenticate to a small number of government applications.
@@ -74,28 +74,14 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
 | [Carillon Information Security](https://www.carillon.ca/){:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques>br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
-| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund@digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green@digicert.com| Other PKI Credentials |
-| Entrust	| Patrick Garritty<br/>(703) 901-1388	| support@entrustdatacard.com	| PIV-I Credentials<br/>Other PKI Credentials |
-| [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info@exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
+| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund at digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green at digicert.com| Other PKI Credentials |
+| Entrust	| Patrick Garritty<br/>(703) 901-1388	| support at entrustdatacard.com	| PIV-I Credentials<br/>Other PKI Credentials |
+| [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info at exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
 | [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
-| [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support@IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
-| InCommon-Affiliated Universities (hundreds of organizations)	| admin@incommon.org	| admin@incommon.org | Non-PKI<br/>InCommon Bronze and Silver |
+| [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
 | [NextgenID](https://www.nextgenid.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
 | [Fortior Solutions](https://www.fortiorsolutions.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
-| [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info@ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy@ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
-
-## Consumer Identity and Credentials
-
-These organizations operate services for consumers—persons acting on their own behalf and not affiliated with a business, the U.S. Government, or an organization. You use these services by integrating and using a federation protocol. The U.S. Government allows three protocols to be used:  PKI, Security Assertion Markup Language (SAML), and OpenID Connect.
-
-Each service is identified by the protocol that it supports and the NIST Special Publication (SP) 800-63 Level of Assurance.
-
-| Organization | Customer Service | Tech Support | Federation Technology and Level of Assurance |
-|-----------|:-----------:|:-----------:|:-----------:|  
-| Google  |  |  | SAML<br/>Level of Assurance 1 |
-| ID.me	| Blake Hall<br/>(703) 992-8380	| Blake Hall<br/>(703) 992-8380	| SAML<br/> Level of Assurance 1<br/>Level of Assurance 2<br/>Level of Assurance 3 |
-| United States Postal Service | Jane.E.Quenk<br/>(202) 268-7098 | Jane.E.Quenk<br/>(202) 268-7098 | SAML<br/> Level of Assurance 1<br/>Level of Assurance 2 |
-| Zentry, A Synchronoss Venture	| Jose Lopez<br/>(790) 191-5581	| Jose Lopez<br/>(790) 191-5581	| SAML<br/> Level of Assurance 1<br/>Level of Assurance 2<br/>Level of Assurance 3 |
+| [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy at ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
 
 ## Trust and Auditing of Services
 
@@ -115,10 +101,7 @@ Then, fill out the application contained in this document:
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
-| [CertiPath](https://www.certipath.com/FederatedTrust_TrustCommunity.html){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support@certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
-| InCommon | admin@incommon.org	| admin@incommon.org | Non-PKI | Higher Education |
-| Kantara |	Ruth Puente<br/>ruth@kantarainitiative.org	| Ruth Puente<br/>ruth@kantarainitiative.org | Non-PKI | General |
-| National Identity Exchange Foundation (NIEF) | John Wandelt<br/>john.wandelt@gtri.gatech.edu	| John Wandelt<br/>john.wandelt@gtri.gatech.edu	| Non-PKI | Law Enforcement |
-| [SAFE-BioPharma](https://www.safe-biopharma.org/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support@safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
+| [CertiPath](https://www.certipath.com/FederatedTrust_TrustCommunity.html){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
+| [SAFE-BioPharma](https://www.safe-biopharma.org/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support at safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
 | [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 |	PKI Bridge | State and Local |
 | [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | PKI Bridge | Aerospace and Defense<br/>International |
