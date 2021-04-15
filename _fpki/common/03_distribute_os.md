@@ -389,8 +389,6 @@ This option works for **iOS** devices only.
 
 ## Linux and Unix Solutions
 
-## Linux and Unix Solutions
-
 ### Debian-based kernels
 
 1. Launch the command line.
@@ -401,11 +399,11 @@ This option works for **iOS** devices only.
         cd /usr/local/share/ca-certificates/
     ```
 
-1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
+1. Convert the FCPCAG2 certificate to PEM and set permissions with the following commands:
 
     ```
-        sudo cp [PATH\]fcpcag2.crt .
-        sudo chmod 644 [PATH\]fcpcag2.crt	
+        sudo openssl x509 -inform der -in [PATH\]fcpcag2.crt -out fcpcag2-pem.crt
+        sudo chmod 644 fcpcag2-pem.crt	
     ```
 
 1. Update Trusted Certificates with the following command:
@@ -425,7 +423,7 @@ This option works for **iOS** devices only.
 1. Change directory with the following command:
 
     ```
-        cd /etc/pki/ca-trust/anchors
+        cd /etc/pki/ca-trust/source/anchors/
     ```
 
 1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
@@ -443,7 +441,6 @@ This option works for **iOS** devices only.
     ```
 
 <br>
-
 
 
 
