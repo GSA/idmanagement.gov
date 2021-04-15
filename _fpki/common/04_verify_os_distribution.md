@@ -186,7 +186,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 --------------------------
 
-## Linux/Unix Solutions
+## Linux and Unix Solutions
 
 ### Debian-based kernels
 
