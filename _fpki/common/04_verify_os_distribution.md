@@ -199,6 +199,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
         trust list | grep "Federal Common Policy CA G2"
    ```
 
+<br>
 
 ### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
 
