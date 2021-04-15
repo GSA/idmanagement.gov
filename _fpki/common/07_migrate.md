@@ -10,7 +10,7 @@ subnav:
   - text: Disable distribution of the FCPCA G1
     href: '#disable-distribution-of-the-fcpca-g1'
   - text: Distrust the FCPCA G1
-    href: '#distrust-the=fcpca-g1'
+    href: '#distrust-the-fcpca-g1'
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
