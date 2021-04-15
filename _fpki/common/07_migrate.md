@@ -42,6 +42,8 @@ Reference the distribution mechanisms [here](../distribute-os/) to review the wa
 - [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
 - [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
 - [Apple configuration profile (macOS or iOS)](#if-the-fcpca-was-distributed-using-an-apple-configuration-profile)
+- [Use Linux Command Line](#use-linux-command-line)
+
 
 <br>
 
@@ -133,6 +135,72 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 </video>
 <br>
 
+
+### Use Linux Command Line
+
+#### Debian-based kernels
+
+1. Launch the command line.
+
+1. Change directory with the following command:
+
+    ```
+        cd /usr/local/share/ca-certificates/
+    ```
+
+1. Remove your copy of the Federal Common Policy CA certificate with the following commands (assumes name of certificate file is known):
+
+    ```
+        sudo rm fcpca.crt
+    ```
+
+1. Update Trusted Certificates with the following command:
+
+    ```
+        sudo update-ca-certificates
+    ```
+    
+ 1. Run the following command to verify the Federal Common Policy CA no longer has an entry in the system’s trust list:
+
+    ```
+        trust list | grep "Federal Common Policy CA"
+    ```
+     
+
+
+<br>
+
+#### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+
+1. Launch the command line.
+
+1. Change directory with the following command:
+
+    ```
+        cd /etc/pki/ca-trust/source/anchors/
+
+    ```
+
+1. Remove your copy of the Federal Common Policy CA certificate with the following commands (assumes name of certificate file is known):
+
+    ```
+        sudo rm fcpca.crt
+    ```
+
+1. Update Trusted Certificates with the following command:
+
+    ```
+        sudo /bin/update-ca-trust extract
+    ```
+
+1. Run the following command to verify the Federal Common Policy CA no longer has an entry in the system’s trust list:
+
+    ```
+        trust list | grep "Federal Common Policy CA"
+    ```
+     
+
+<br>
 
 Finally, [verify migration to the FCPCA G2](../verify-migration/).
 
