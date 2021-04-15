@@ -21,16 +21,7 @@ subnav:
 
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
 
-These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
-
-This page provides introductory information that answers the following questions:
-
-- [What is the Federal PKI?](#what-is-the-federal-pki)
-- [What is an example of an identity certificate?](#what-is-an-example-of-an-identity-certificate)
-- [Why should agencies use certificates from the Federal PKI?](#why-should-agencies-use-certificates-from-the-federal-pki)
-- [Why is the Federal PKI important?](#why-is-the-federal-pki-important)
-- [Where can I find the Policies and Standards?](#where-can-i-find-the-policies-and-standards)
-
+These guides are [open source](https://github.com/gsa/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
 
 ### What is the Federal PKI?
 
@@ -45,7 +36,7 @@ The participating Certification Authorities and the policies, processes, and aud
 
 The Federal PKI includes U.S. Federal, State, Local, Tribal, Territorial, and International Governments, as well as commercial organizations, that work together to provide services for the benefit of the Federal Government.
 
-Use the [FPKI Graph](https://fpki.idmanagement.gov/tools/fpkigraph/) to see the relationships between the Certification Authorities in the Federal PKI ecosystem. It graphically depicts how each Certification Authority links to another, through cross-certificates, subordinate certificates, or Bridge CAs.
+Use the [FPKI Graph](../tools/fpkigraph/) to see the relationships between the Certification Authorities in the Federal PKI ecosystem. It graphically depicts how each Certification Authority links to another, through cross-certificates, subordinate certificates, or Bridge CAs.
 
 ### What is an example of an identity certificate?
 A PIV certificate is a simple example.  Although there are many types of identity certificates, it's easiest to explain **PIV** certificates since you might have one:
@@ -54,13 +45,11 @@ A PIV certificate is a simple example.  Although there are many types of identit
 * The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certification Authority_. The _Intermediate Certification Authority's certificate_ was issued by another _Certification Authority_.  
 * This process of issuing and signing continues until there is one _Certification Authority_ that is called the _Root Certification Authority_.
 
-![Example of an identity certificate with intermediate and root]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="float:center"}
+![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:style="float:center"}
 
 The full process of proving identity when issuing certificates, auditing the Certification Authorities, and the cryptographic protections of the digital signatures establish the _basis of Trust_.
 
-For the U.S. Federal Government Executive Branch agencies, there is one Root Certification Authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of Intermediate Certification Authorities and Bridged Certification Authorities.  
-
-*  [A graph of the Federal PKI, including the business communities](https://fpki.idmanagement.gov/tools/fpkigraph/){:target="_blank"}
+For the U.S. Federal Government Executive Branch agencies, there is one Root Certification Authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of Intermediate Certification Authorities and Bridged Certification Authorities. [A graph of the Federal PKI, including the business communities](../tools/fpkigraph/)
 
 
 ### Why should agencies use certificates from the Federal PKI?
@@ -72,7 +61,7 @@ All federal agencies should use the Federal PKI for:
 * Signed and encrypted email communications across federal agencies
 
 The Federal PKI provides four core technical capabilities:
-![Illustration of the four core FPKI capabilities](img/fpki-core.png){:style="width:40%;float:right;"}
+![Illustration of the four core FPKI capabilities]({{site.baseurl}}/assets/fpki/fpki-core.png){:style="width:40%;float:right;"}
 *The Four Core Federal PKI Capabilities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 * Trust with federal agencies and industry
@@ -97,9 +86,9 @@ The Federal PKI is important to federal agencies, other government entities, and
 
 ### Where can I find the Policies and Standards?
 
-* [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the U.S. Federal Root Certification Authority.
-* [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the FBCA.
-* [Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles](https://www.idmanagement.gov/fpki-x509-cert-profile-common/){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
-* [X.509 Certificate and CRL Extensions Profile](http://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for Federal PKI infrastructure systems.
-* [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](http://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
+* [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the U.S. Federal Root Certification Authority.
+* [X.509 Certificate and CRL Profiles for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for certificates and CRLs issued under COMMON.
+* [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the FBCA.
+* [X.509 Certificate and CRL Extensions Profile for the FBCA](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for Federal PKI infrastructure systems.
+* [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
 * [OMB Circular A-130, Managing Federal Information as a Strategic Resource (2016)](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"} establishes general policy for the planning, budgeting, governance, acquisition, and management of federal information, personnel, equipment, funds, IT resources, and supporting infrastructure and services.

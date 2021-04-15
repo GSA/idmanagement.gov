@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Federal Common Policy CA Removal from Apple Trust Stores Impact
-pubDate: September 13, 2018
-archDate: October 21, 2019
+pubDate: 09/13/2018
+archiveDate: 09/12/2019
+removeDate: 09/12/2021
 collection: fpki
 category: Apple
-permalink: guidefpki/announcements/2018applepkichanges/
+permalink: fpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
-sidenav: fpkiannouncements
+sidenav: fpkiarchivedannouncements
 status: Archived
 sticky_sidenav: true
 

@@ -154,19 +154,31 @@ fpkitools:
   - text: CITE Participation Guide
     href: /fpki/tools/citeguide/
 
-## Remove Announcements older than two years
-
-fpkiannouncements:
+fpkiactiveannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
-  - text: Federal Common Policy CA G2 Update ## Oct 2020
+  - text: Federal Common Policy CA G2 Update (2020) ## Oct 2020
     href: /fpki/announcements/common-g2-update/
-  - text: Upcoming Migration of Federal PKI Certificate Repository Services (Archived) ## Apr 2019
+
+## Remove Announcements older than three years
+
+fpkiarchivedannouncements:
+  - text: Back to FPKI Guide
+    href: /fpki/announcements/
+  - text: Upcoming Migration of Federal PKI Certificate Repository Services (2019) ## Apr 2019
     href: /fpki/announcements/2019fpkimigration/
-  - text: DigiCert CA Decommissioning (Archived) ## Mar 2019
+  - text: DigiCert CA Decommissioning (2019) ## Mar 2019
     href: /fpki/announcements/2019digicert/
-  - text: Removal of Health CAs from Federal PKI (Archived) ##  Mar 2019
+  - text: Removal of Health CAs from Federal PKI (2019) ##  Mar 2019
     href: /fpki/announcements/2019removal/
+  - text: Federal Common Policy CA Removal from Apple Trust Stores Impact (2018)
+    href: /fpki/announcements/2018applepkichanges/
+  - text: Chrome Certificate Transparency Requirements (2018)
+    href: /fpki/announcements/2018chromect/
+  - text: Federal Common Policy CA Removal from Microsoft Trust Store Impact (2018)
+    href: /fpki/announcements/2018mspkichanges/
+  - text: Chrome TLS Certificate Lifetime Requirement (2018)
+    href: /fpki/announcements/2018tlslifetime/
 
 #PACS Navigation
 

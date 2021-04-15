@@ -13,7 +13,7 @@ subnav:
     href: '#distrust-the=fcpca-g1'
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
 
 For the purpose of these steps, we refer to the existing Federal Common Policy CA (FCPCA) as *FCPCA G1*.
 
@@ -37,15 +37,11 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 
 ## Disable distribution of the FCPCA G1
 
-Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
+Reference the distribution mechanisms [here](../distribute-os/) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
 
-- [Disable distribution of the FCPCA G1](#disable-distribution-of-the-fcpca-g1)
-  - [If the FCPCA was distributed using Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
-  - [If the FCPCA was distributed using a Microsoft GPO](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
-  - [If the FCPCA was distributed using an Apple configuration profile](#if-the-fcpca-was-distributed-using-an-apple-configuration-profile)
-- [Distrust the FCPCA G1](#distrust-the-fcpca-g1)
-  - [Use Microsoft Group Policy Object](#use-microsoft-group-policy-object)
-  - [Use macOS Terminal](#use-macos-terminal)
+- [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
+- [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
+- [Apple configuration profile (macOS or iOS)](#if-the-fcpca-was-distributed-using-an-apple-configuration-profile)
 
 <br>
 
@@ -111,14 +107,14 @@ Use one of the methods below to distrust the FCPCA G1.
     ```
 	
 Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Server 2016.
-![Sample Steps](../../assets/fpki/distrust-gpo.gif){:style="width:85%;"}
+![Sample Steps](../../../assets/fpki/distrust-gpo.gif){:style="width:85%;"}
 <br>
 
 <br>
 
 ### Use macOS Terminal
 
-{% include alert-info.html content="Only system administrators should follow these steps to remove the FCPCA G1 certificate from the System and Login Keychains." %}
+{% include alert-info.html content="macOS handles certificate distrust differently than Windows does.  The steps below distrust the FCPCA G1 certificate by deleting it from the System and Login Keychains.  The absence of the FCPCA G1 certificate from the Keychains results in the certificate not being trusted by the workstation. Only system administrators should follow these steps." %}
 
 **Note:** Many Mobile Device Management (MDM) platforms allow administrators to push the command below across an enterprise, rather than running it on individual workstations. _Use automation wherever possible_.
 
@@ -133,11 +129,11 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 **Note:**&nbsp;&nbsp;This video shows you how to remove the FCPCA G1 certificate using the command line.
 <br>
 <video width="85%" controls>
-  <source src="../../asssets/fpki/remove_command_line.mp4" type="video/mp4">
+  <source src="../../../assets/fpki/remove_command_line.mp4" type="video/mp4">
 </video>
 <br>
 
 
-Finally, [verify migration to the FCPCA G2](../common/verify-migration/).
+Finally, [verify migration to the FCPCA G2](../verify-migration/).
 
 
