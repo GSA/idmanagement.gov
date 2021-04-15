@@ -249,7 +249,7 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 
 
 ## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
-1. Download a copy of the FCPCA G2 certificate from [http://repo.fpki.gov/fcpca/fcpcag2.crt](http://repo.fpki.gov/fcpca/fcpcag2.crt)
+1. Download a copy of the FCPCA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
 2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices](../../certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
 3. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
