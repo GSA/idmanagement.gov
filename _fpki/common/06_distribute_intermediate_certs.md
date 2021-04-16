@@ -8,9 +8,11 @@ sidenav: fpkicommon
 
 subnav:
   - text: Use Microsoft Group Policy Object (GPO)
-    href: '#use-microsoft-group-policy-object-gpo'
+    href: '#use-microsoft-group-policy-object'
   - text: Use macOS/iOS Configuration Profile
-    href: '#use-macos/ios-configuration-profile'
+    href: '#use-apple-configuration-profile'
+  - text: Use Linux Command Line
+    href: '#use-linux-command-line'
 ---
 
 {% include alert-success.html content="The intermediate certification authorities (CAs) with certificates issued by the Federal Common Policy CA (FCPCA) were issued new certificates by the Federal Common Policy CA G2 (FCPCA G2) to support the migration to the new Federal PKI trust anchor.  <b>Depending on agency configurations, you might need to distribute these certificates to systems and applications</b>.  <br><br>This page will help you understand <a href=\"#do-i-need-to-distribute-the-intermediate-ca-certificates\">when to distribute the intermediate CA certificates</a>, <a href=\"#which-certificates-do-i-need-to-distribute\">which certificates to distribute</a>, and <a href=\"#how-do-i-distribute-the-intermediate-ca-certificates\">recommended solutions</a>.  This page also lists <a href=\"#certificates-issued-by-the-federal-common-policy-ca-g2
@@ -55,7 +57,7 @@ If you're not sure which [intermediate CA certificates issued by the FCPCA G2](#
 
 Recommended solutions for distributing intermediate CA certificates are listed below.
 
-### Microsoft Windows - Use Group Policy Object (GPO)
+### Use Microsoft Group Policy Object
 
 {% include alert-warning.html content="You must have enterprise administrator privileges for the domain to use these procedures. You must run the commands from an agency domain controller." %}
 
@@ -85,7 +87,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 
 <br>
 
-### macOS and iOS - Use Apple Configuration Profile
+### Use Apple Configuration Profile
 
 {% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %} 
 
@@ -110,7 +112,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 <br>
 
 
-### Linux - Use command line
+### Use Linux command line
 
 The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate](../distribute-os/#linux-and-unix-solutions).
 
