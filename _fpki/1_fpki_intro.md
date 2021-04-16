@@ -45,7 +45,7 @@ A PIV certificate is a simple example.  Although there are many types of identit
 * The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certification Authority_. The _Intermediate Certification Authority's certificate_ was issued by another _Certification Authority_.  
 * This process of issuing and signing continues until there is one _Certification Authority_ that is called the _Root Certification Authority_.
 
-![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:style="float:center"}
+[![Example of an identity certificate with intermediate and root]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:style="float:center"}]({{site.baseurl}}/assets/fpki/pivcertificatechain_small.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 The full process of proving identity when issuing certificates, auditing the Certification Authorities, and the cryptographic protections of the digital signatures establish the _basis of Trust_.
 
@@ -61,7 +61,7 @@ All federal agencies should use the Federal PKI for:
 * Signed and encrypted email communications across federal agencies
 
 The Federal PKI provides four core technical capabilities:
-![Illustration of the four core FPKI capabilities]({{site.baseurl}}/assets/fpki/fpki-core.png){:style="width:40%;float:right;"}
+[![Illustration of the four core FPKI capabilities]({{site.baseurl}}/assets/fpki/fpki-core.png){:style="width:40%;float:right;"}]({{site.baseurl}}/assets/fpki/fpki-core.png){:target="_blank"}{:rel="noopener noreferrer"}
 *The Four Core Federal PKI Capabilities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 * Trust with federal agencies and industry
