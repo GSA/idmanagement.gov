@@ -13,8 +13,8 @@ subnav:
     href: '#macos-solutions'
   - text: iOS Solutions
     href: '#ios-solutions'
-  - text: Linux/Unix Solutions
-    href: '#linux/unix-solutions'
+  - text: Linux and Unix Solutions
+    href: '#linux-and-unix-solutions'
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
@@ -399,11 +399,11 @@ This option works for **iOS** devices only.
         cd /usr/local/share/ca-certificates/
     ```
 
-1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
+1. Convert the FCPCAG2 certificate to PEM and set permissions with the following commands:
 
     ```
-        sudo cp [PATH\]fcpcag2.crt .
-        sudo chmod 644 [PATH\]fcpcag2.crt	
+        sudo openssl x509 -inform der -in [PATH\]fcpcag2.crt -out fcpcag2-pem.crt
+        sudo chmod 644 fcpcag2-pem.crt	
     ```
 
 1. Update Trusted Certificates with the following command:
@@ -441,7 +441,6 @@ This option works for **iOS** devices only.
     ```
 
 <br>
-
 
 
 

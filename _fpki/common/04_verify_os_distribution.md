@@ -13,8 +13,8 @@ subnav:
     href: '#macos-solutions'
   - text: iOS Solutions
     href: '#ios-solutions'
-  - text: Linux/Unix Solutions
-    href: '#linux/unix-solutions'
+  - text: Linux and Unix Solutions
+    href: '#linux-and-unix-solutions'
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
@@ -186,34 +186,34 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 --------------------------
 
-## Linux/Unix Solutions
+## Linux and Unix Solutions
 
-### Use the Command Line
+### Debian-based kernels
+
+#### Use the Command Line
 1. Launch the command line.
-
-2. Run the following command:
-
-    ```
-        sha256sum /etc/ssl/certs/fcpcag2.*
-    ```
-
-	> **Note:** "fcpcag2" was the name of the file distributed to the operating system.
-
-
-3. Verify the file hash matches the one listed [here](../obtain-and-verify/):
-
-    ```
-        5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC  fcpcag2.crt
-    ```
 	
-4. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
+2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
    
    ```
-        trust list | grep Federal
-    ```
-
+        trust list | grep "Federal Common Policy CA G2"
+   ```
 
 <br>
+
+### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+
+#### Use the Command Line
+1. Launch the command line.
+	
+2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
+   
+   ```
+        trust list | grep "Federal Common Policy CA G2"
+   ```
+
+<br>
+
 
 
 Next, [distribute the FCPCA G2 certificate to application trust stores](../distribute-apps/).
