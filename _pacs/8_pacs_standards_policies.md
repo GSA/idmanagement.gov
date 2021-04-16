@@ -79,7 +79,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
 
-[ Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS) ](../../docs/800-53 PACS Overlay.pdf){:target="_blank"}, Version 1.0, December 2020.
+[ Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS) ](../../docs/800-53-PACS-Overlay.pdf){:target="_blank"}, Version 1.0, December 2020.
 
 ## Other Relevant Publications
 
