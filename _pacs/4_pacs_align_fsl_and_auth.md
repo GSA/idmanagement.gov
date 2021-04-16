@@ -28,7 +28,7 @@ The FSL and Authentication checklist below will help you:
 - [Determine authentication factors](#determine-authentication-factors)
 - [Select the authentication mechanisms needed to protect critical assets](#select-authentication-mechanisms)
 
-Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [_Security Control Overlay for Electronic Physical Access Control Systems (ePACS)_](../../pacs-800-53-overlay.pdf){:target="_blank"}. This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
+Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)_](../../docs/pacs-800-53-overlay.pdf){:target="_blank"}. This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
 
 ## Assess Facility Security Level 
 
