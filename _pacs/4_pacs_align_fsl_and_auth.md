@@ -28,6 +28,8 @@ The FSL and Authentication checklist below will help you:
 - [Determine authentication factors](#determine-authentication-factors)
 - [Select the authentication mechanisms needed to protect critical assets](#select-authentication-mechanisms)
 
+{% include alert-info.html content="Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for electronic Physical Access Control Systems (ePACS)](../../docs/800-53 PACS Overlay.pdf){:target="_blank"},.  This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF)." %}
+
 ## Assess Facility Security Level 
 
 {% include alert-info.html content="These federal standards give guidance for assessing FSL, including how to categorize site risks:<br> - <a href=\"https://www.dhs.gov/publication/isc-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
