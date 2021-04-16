@@ -1,10 +1,29 @@
 # list of APL products
 
-- title: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
-  aplCategory: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
-  status: Approved
-  aplNumber: 1429
+- productname: Identiv uTrust TS Reader with Keypad – OSDP
+  productnumber: 8232-OSDP
+  category: PACS PIV Reader
+  supplier: Identiv, Inc.
+  aplnumber: 10106
+  validdate: 11/09/2017
+  compliantwithtaa: Yes
+  url: /docs/apl-10106-identiv-reader-keypad.pdf
+
+- productname: Identiv uTrust TS Reader with Wall Mount – OSDP
+  productnumber: 8132-OSDP
+  category: PACS PIV Reader
+  supplier: Identiv, Inc.
+  aplnumber: 10105
+  validdate: 02/01/2017
+  compliantwithtaa: Yes
+  url: /docs/apl-10105-identiv-reader-wall-mount.pdf
+
+- productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
+  productnumber: 50192769
+  category: PIV Card
   supplier: Giesecke+Devrient
-  validdate: 11/9/2017
-  href: 
+  aplnumber: 1429
+  validdate: 11/09/2017
+  compliantwithtaa: Yes
+  url: /docs/apl-1429-gd-with-hid-applet.pdf
   

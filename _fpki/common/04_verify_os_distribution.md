@@ -13,11 +13,11 @@ subnav:
     href: '#macos-solutions'
   - text: iOS Solutions
     href: '#ios-solutions'
-  - text: Linux/Unix Solutions
-    href: '#linux/unix-solutions'
+  - text: Linux and Unix Solutions
+    href: '#linux-and-unix-solutions'
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been distributed to your agency's workstations and devices, use one of these options:
 
@@ -69,7 +69,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 7. On the left side panel, click **Analyses** to see a list of imported analysis files.
 8. Click *Federal Common Policy CA G2 Distribution Detection* (i.e., *FPKIRootG2Detection.bes*) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**. 
 9. For each workstation or device listed, "*Has FCPCA G2 Been Distributed?*" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at fpkirootupdate@gsa.gov.<br><br /> 
-    ![Sample Output]({{site.baseurl}}/img/bigfix-results.jpg){:style="width:90%;"}
+    [![Sample Output](../../../assets/fpki/bigfix-results.jpg){:style="width:90%;"}](../../../assets/fpki/bigfix-results.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use LANDesk 2016
 
@@ -119,13 +119,13 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 9. For **Boolean**, select **Exists**.
 10. For **Displayed Scanned Values**, click **Insert** and add the *BLOB* value from above.
 11. Double-click the *new query name* to verify FCPCA G2 distribution. The results will be similar to these:<br><br />
-    ![Sample Output](../../assets/fpki/landesk-results.jpg){:style="width:90%;"}
+    [![Sample Output](../../../assets/fpki/landesk-results.jpg){:style="width:90%;"}](../../../assets/fpki/landesk-results.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use Microsoft Certificate Manager
 
 1. Open *Microsoft Certificate Manager*:&nbsp;&nbsp;**Start**; then type **certlm.msc** and press **Enter**.
 2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of *ALL* and a **Friendly Name** of *None*, as shown here:<br><br />
-    ![Trusted Root CA Certificates List](../../assets/fpki/verify_trust.png){:style="width:90%;"}
+    [![Trusted Root CA Certificates List](../../../assets/fpki/verify_trust.png){:style="width:90%;"}](../../../assets/fpki/verify_trust.png){:target="_blank"}{:rel="noopener noreferrer"}
     
 
 ***Optional:***
@@ -165,7 +165,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 3. Ensure that an entry for FCPCA G2 exists in the **login** or **System** Keychain Certificates repository.
 
-![verify_common_macOS](../../assets/fpki/verify_common_macOS.png){:style="width:85%;"}
+[![verify_common_macOS](../../../assets/fpki/verify_common_macOS.png){:style="width:85%;"}](../../../assets/fpki/verify_common_macOS.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 <br>
@@ -180,36 +180,40 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
      
 2. Verify that _Federal Common Policy CA G2_ has full trust enabled.
 
-![verify_common_iOS](../../assets/fpki/ios_full_trust-g2.jpg){:style="width:30%;"}
+<a href="../../../assets/fpki/ios_full_trust-g2.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust"></a>
 
 <br>
 
 --------------------------
 
-## Linux/Unix Solutions
+## Linux and Unix Solutions
 
-### Use the Command Line
+### Debian-based kernels
+
+#### Use the Command Line
 1. Launch the command line.
-
-2. Run the following command:
-
-    ```
-        sha256sum /etc/ssl/certs/fcpcag2.*
-    ```
-
-	> **Note:** "fcpcag2" was the name of the file distributed to the operating system.
-
-
-3. Verify the file hash matches the one listed [here]({../common/):
-
-    ```
-        79ad978be60d0ea0c62d16f6d8f0269a04c428fc9258911d8d84ef6a88cbc60a  fcpcag2.pem
-    ```
 	
-
-
+2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
+   
+   ```
+        trust list | grep "Federal Common Policy CA G2"
+   ```
 
 <br>
+
+### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+
+#### Use the Command Line
+1. Launch the command line.
+	
+2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
+   
+   ```
+        trust list | grep "Federal Common Policy CA G2"
+   ```
+
+<br>
+
 
 
 Next, [distribute the FCPCA G2 certificate to application trust stores](../distribute-apps/).
