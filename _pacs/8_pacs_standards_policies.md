@@ -71,7 +71,7 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](../../docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}, v1.1.0, GSA, February 24, 2015.
 
-[ Facility Access Control: An Interagency Security Committee Best Practice ](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}, 2020 Edition.
+[_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}, 2020 Edition.
 
 [_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf){:target="_blank"}{:rel="noopener noreferrer"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018.
 
