@@ -109,7 +109,7 @@ Use one of the methods below to distrust the FCPCA G1.
     ```
 	
 Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Server 2016.
-![Sample Steps](../../../assets/fpki/distrust-gpo.gif){:style="width:85%;"}
+[![Sample Steps](../../../assets/fpki/distrust-gpo.gif){:style="width:85%;"}](../../../assets/fpki/distrust-gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 <br>
 
 <br>

@@ -67,7 +67,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 using Microsoft Certutil.
-<br>![A .gif that shows the distribution and verification steps performed using Microsoft Certutil](../../../assets/fpki/certutil.gif){:style="width:85%;"}
+<br>[![A .gif that shows the distribution and verification steps performed using Microsoft Certutil](../../../assets/fpki/certutil.gif){:style="width:85%;"}](../../../assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Use Microsoft Group Policy Object (GPO)
@@ -100,7 +100,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 **Note:** The following .gif shows you how to distribute the FCPCA G2 with Microsoft GPO.
 <br>
-![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)](../../../assets/fpki/gpo.gif){:style="width:85%;"}
+[![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)](../../../assets/fpki/gpo.gif){:style="width:85%;"}](../../../assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use third-party configuration management tools
 
@@ -379,8 +379,7 @@ This option works for **iOS** devices only.
 
 	You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-<img src="../../../assets/fpki/ios_full_trust-g2.jpg" alt="iOS full trust" width="300">
-
+<a href="../../../assets/fpki/ios_full_trust-g2.jpg" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust"></a>
 
 <br>
 

@@ -31,7 +31,7 @@ sidenav: fpkicommon
 
 No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
 <br>
-![current_and_future_state](../../../assets/fpki/FCPCA_G2_Transition.jpg) 
+[![current_and_future_state](../../../assets/fpki/FCPCA_G2_Transition.jpg)](../../../assets/fpki/FCPCA_G2_Transition.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Is the Federal Common Policy CA changing?
 
@@ -179,46 +179,44 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     ![error_navigation](../../../assets/fpki/error_navigation.png)
+     [![error_navigation](../../../assets/fpki/error_navigation.png)](../../../assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![error_piv_auth](../../../assets/fpki/error_piv_auth.png)
+     [![error_piv_auth](../../../assets/fpki/error_piv_auth.png)](../../../assets/fpki/error_piv_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
      <br>
      <br>
-     ![error_sig_val](../../../assets/fpki/error_sig_val.png)
+     [![error_sig_val](../../../assets/fpki/error_sig_val.png)](../../../assets/fpki/error_sig_val.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     ![safari_untrusted_ssl](../../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}
+     [![safari_untrusted_ssl](../../../assets/fpki/safari_untrusted_ssl.png){:style="width:85%;"}](../../../assets/fpki/safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![safari_untrusted_auth](../../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}
+     [![safari_untrusted_auth](../../../assets/fpki/safari_untrusted_auth.png){:style="width:85%;"}](../../../assets/fpki/safari_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     ![chrome_untrusted_ssl](../../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}
+     [![chrome_untrusted_ssl](../../../assets/fpki/chrome_untrusted_ssl.png){:style="width:85%;"}](../../../assets/fpki/chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 *Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
      <br>
-     ![chrome_untrusted_auth](../../../assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}
+     [![chrome_untrusted_auth](../../../assets/fpki/chrome_untrusted_auth.png){:style="width:85%;"}](../../../assets/fpki/chrome_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     <img src="../../../assets/fpki/ios_safari_untrusted_ssl.png" alt="ios_safari_untrusted_ssl" height="600">
-
+     <a href="../../../assets/fpki/ios_safari_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="ios_safari_untrusted_ssl"></a>
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
      <br>
-     <img src="../../../assets/fpki/ios_chrome_untrusted_ssl.png" alt="ios_chrome_untrusted_ssl" height="600">
-
+     <a href="../../../assets/fpki/ios_chrome_untrusted_ssl.png" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="ios_chrome_untrusted_ssl"></a>
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
@@ -238,7 +236,7 @@ To ensure PIV credential certificates issued by the Entrust Federal SSP before A
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
-![Link Certificate Path](../../../assets/fpki/link-cert-path.png) 
+[![Link Certificate Path](../../../assets/fpki/link-cert-path.png)](../../../assets/fpki/link-cert-path.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
@@ -262,7 +260,7 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 
 **Note:** The following .gif demonstrates the steps outlined above.
 
-![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}
+[![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}](../../../assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?
@@ -300,4 +298,3 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
   <source src="../../../assets/fpki/ios_safari_configuration-unmanaged.mp4" type="video/mp4"  alt="A video that shows the steps to install a mobile configuration file in the Safari web browser.">
 </video>
 <br>
-
