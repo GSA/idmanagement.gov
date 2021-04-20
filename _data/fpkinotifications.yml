@@ -3792,7 +3792,7 @@
   contact: tammy dot green at digicert dot com
   ca_certificate_hash: 816a2c18db2e5673205d17a98d0fffef8bf4777e
   ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert,Inc., C=US
-  ca_certificate_subject: CN=Senate PIV-I CA G5 PROD, OU=Office of the Sergeant at Arms, OU=U.S. Senate,O =U.S. Government, C=US 
+  ca_certificate_subject: CN=Senate PIV-I CA G5 PROD, OU=Office of the Sergeant at Arms, OU=U.S. Senate, O=U.S. Government, C=US 
   cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl 
   aia_uri: http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c 
   sia_uri: N/A
