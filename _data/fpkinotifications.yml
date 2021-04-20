@@ -3777,7 +3777,7 @@
   change_description: DigiCert Class 3 SSP Intermediate CA - G4 issued a CA certificate to Senate PIV-I Device CA G5 PROD.
   contact: tammy dot green at digicert dot com
   ca_certificate_hash: f75045d06ebf20aafb81dd08a9061ce7e7cece29  
-  ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert,Inc., C=US
+  ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert, Inc., C=US
   ca_certificate_subject: CN=Senate PIV-I Device CA G5 PROD, OU=Office of the Sergeant at Arms, OU=U.S. Senate, O=U.S. Government, C=US
   cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl 
   aia_uri: http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c 
@@ -3791,7 +3791,7 @@
   change_description: DigiCert Class 3 SSP Intermediate CA - G4 issued a CA certificate to Senate PIV-I CA G5 PROD.
   contact: tammy dot green at digicert dot com
   ca_certificate_hash: 816a2c18db2e5673205d17a98d0fffef8bf4777e
-  ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert,Inc., C=US
+  ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert, Inc., C=US
   ca_certificate_subject: CN=Senate PIV-I CA G5 PROD, OU=Office of the Sergeant at Arms, OU=U.S. Senate, O=U.S. Government, C=US 
   cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl 
   aia_uri: http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c 
