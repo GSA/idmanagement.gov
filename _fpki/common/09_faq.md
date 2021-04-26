@@ -256,8 +256,19 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
      - Click **Yes**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of fpki-unmanaged-bundle.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
+ 
+To verify your distribution (assumes **certmgr.msc** is still open): 
+1. Verify an entry for the FCPCA G2
+     - Use the left-hand navigation to browse to **Trusted Root Certification Authorities** > **Certificates**
+     - Press the **F5** key to refresh the folder contents
+     - Verify an entry exists for the Federal Common Policy CA G2 (both the **Issued To** and **Issued By** columns will present "Federal Common Policy CA G2".)
+2. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA G2
+     - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates** 
+     - Press the **F5** key to refresh the folder contents
+     - Sort the data by clicking on the **Issued By** column
+     - Verify nine (9) entries for certificates issued by the Federal Common Policy CA G2
 
-**Note:** The following .gif demonstrates the steps outlined above.
+**Note:** The following .gif demonstrates the distribution steps outlined above.
 
 [![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}](../../../assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
