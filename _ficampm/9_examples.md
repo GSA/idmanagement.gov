@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Examples and Guidance
-permalink: ficampm/examples/
+permalink: pm/examples/
 sticky_sidenav: true
 sidenav: pm
 
