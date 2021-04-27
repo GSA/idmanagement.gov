@@ -62,7 +62,7 @@ primary_navigation:
     url: /arch/intro-arch/
   - name: ICAM Program Management
     description: ICAM Program Management
-    url: /ficampm/intro-pm/
+    url: /pm/
   - name: Federal PKI (FPKI)
     url: /fpki/intro-fpki/
   - name: Personal Identity Verification (PIV)
