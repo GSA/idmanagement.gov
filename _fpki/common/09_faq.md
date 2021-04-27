@@ -51,7 +51,7 @@ Timeline:
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** This table was last updated on **April 7, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **April 26, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -61,7 +61,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | December 12, 2019 to December 12, 2021  |
 | Serial Number | 7994    |
 | SHA-1 Thumbprint | e836f3016bfb6e8df274f27fd8a4a5054517b0f1  |
-| Planned Revocation Date | **April 22, 2021** |
+| Revocation Date | **April 22, 2021** |
 
 #### Issued to: U.S. Department of State AD Root CA
 
@@ -71,7 +71,47 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | December 18, 2019 to December 18, 2022   |
 | Serial Number | 79f9    |
 | SHA-1 Thumbprint | ce11590010562a39ad8b1455acf76c03737aebf6  |
-| Planned Revocation Date | **April 22, 2021** |
+| Revocation Date | **April 22, 2021** |
+
+#### Issued to: DigiCert Federal SSP Intermediate CA - G5
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
+| Validity | December 13, 2018 to December 13, 2028  |
+| Serial Number | 66c0    |
+| SHA-1 Thumbprint | 98b58247ac8a2bc6f348f03e8d22884d8345fc0f  |
+| Revocation Date | **April 22, 2021** |
+
+#### Issued to: Symantec SSP Intermediate CA - G4
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
+| Validity | November 12, 2014 to November 12, 2024   |
+| Serial Number | 258e   |
+| SHA-1 Thumbprint | 6a382438fd21037018daf3f422a2132bea2be817  |
+| Revocation Date | **April 22, 2021** |
+
+#### Issued to: Verizon SSP CA A2
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
+| Validity | December 5, 2018 to December 6, 2026  |
+| Serial Number | 65f8   |
+| SHA-1 Thumbprint | 477bf4017d25cde276cdddf756d40ca591d76f6d  |
+| Revocation Date | **April 22, 2021** |
+
+#### Issued to: ORC SSP 4
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
+| Validity | August 31, 2015 to January 21, 2024  |
+| Serial Number | 2ef9    |
+| SHA-1 Thumbprint | 3a70323069a4c41bc95663152e9ccc7111bb0623  |
+| Revocation Date | **April 22, 2021** |
 
 #### Issued to: US Treasury Root CA
 
@@ -91,26 +131,6 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | SHA-1 Thumbprint | 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  |
 | Planned Revocation Date | **June 10, 2021** |
 
-#### Issued to: DigiCert Federal SSP Intermediate CA - G5
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
-| Validity | December 13, 2018 to December 13, 2028  |
-| Serial Number | 66c0    |
-| SHA-1 Thumbprint | 98b58247ac8a2bc6f348f03e8d22884d8345fc0f  |
-| Planned Revocation Date | **April 22, 2021** |
-
-#### Issued to: Symantec SSP Intermediate CA - G4
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
-| Validity | November 12, 2014 to November 12, 2024   |
-| Serial Number | 258e   |
-| SHA-1 Thumbprint | 6a382438fd21037018daf3f422a2132bea2be817  |
-| Planned Revocation Date | **April 22, 2021** |
-
 #### Issued to: Entrust Managed Services Root CA
 
 | Certificate Attribute (1 of 2) | Value                                              |
@@ -128,27 +148,6 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Serial Number | 2e26   |
 | SHA-1 Thumbprint | 39c1d3b64e756a3267bfe5fecb103da892ca0611  |
 | Planned Revocation Date | **June 17, 2021** (previously April 22, 2021) |
-
-#### Issued to: Verizon SSP CA A2
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
-| Validity | December 5, 2018 to December 6, 2026  |
-| Serial Number | 65f8   |
-| SHA-1 Thumbprint | 477bf4017d25cde276cdddf756d40ca591d76f6d  |
-| Planned Revocation Date | **April 22, 2021** |
-
-#### Issued to: ORC SSP 4
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
-| Validity | August 31, 2015 to January 21, 2024  |
-| Serial Number | 2ef9    |
-| SHA-1 Thumbprint | 3a70323069a4c41bc95663152e9ccc7111bb0623  |
-| Planned Revocation Date | **April 22, 2021** |
-
 
 ## Which types of systems will this change affect?
 
@@ -257,8 +256,19 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
      - Click **Yes**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of fpki-unmanaged-bundle.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
+ 
+To verify your distribution (assumes **certmgr.msc** is still open): 
+1. Verify an entry for the FCPCA G2
+     - Use the left-hand navigation to browse to **Trusted Root Certification Authorities** > **Certificates**
+     - Press the **F5** key to refresh the folder contents
+     - Verify an entry exists for the Federal Common Policy CA G2 (both the **Issued To** and **Issued By** columns will present "Federal Common Policy CA G2".)
+2. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA G2
+     - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates** 
+     - Press the **F5** key to refresh the folder contents
+     - Sort the data by clicking on the **Issued By** column
+     - Verify nine (9) entries for certificates issued by the Federal Common Policy CA G2
 
-**Note:** The following .gif demonstrates the steps outlined above.
+**Note:** The following .gif demonstrates the distribution steps outlined above.
 
 [![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}](../../../assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 

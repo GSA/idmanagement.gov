@@ -3770,6 +3770,146 @@
   sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
   ocsp_uri: 
 
+- notice_date: April 20, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: DigiCert Non-Federal Shared Service Provider	
+  change_description: DigiCert Class 3 SSP Intermediate CA - G4 issued a CA certificate to Senate PIV-I Device CA G5 PROD.
+  contact: tammy dot green at digicert dot com
+  ca_certificate_hash: f75045d06ebf20aafb81dd08a9061ce7e7cece29  
+  ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=Senate PIV-I Device CA G5 PROD, OU=Office of the Sergeant at Arms, OU=U.S. Senate, O=U.S. Government, C=US
+  cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl 
+  aia_uri: http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c 
+  sia_uri: N/A
+  ocsp_uri: http://ssp-ocsp.digicert.com
+  
+- notice_date: April 20, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: DigiCert Non-Federal Shared Service Provider	
+  change_description: DigiCert Class 3 SSP Intermediate CA - G4 issued a CA certificate to Senate PIV-I CA G5 PROD.
+  contact: tammy dot green at digicert dot com
+  ca_certificate_hash: 816a2c18db2e5673205d17a98d0fffef8bf4777e
+  ca_certificate_issuer: CN=DigiCert Class 3 SSP Intermediate CA - G4, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=Senate PIV-I CA G5 PROD, OU=Office of the Sergeant at Arms, OU=U.S. Senate, O=U.S. Government, C=US 
+  cdp_uri: http://ssp-crl.digicert.com/NFSSP/Class3SSPCAG4.crl 
+  aia_uri: http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c 
+  sia_uri: N/A
+  ocsp_uri: http://ssp-ocsp.digicert.com
+ 
+- notice_date: April 26, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: CertiPath Bridge CA
+  change_description: CertiPath Bridge CA - G3 issued a modified cross certificate to the Federal Bridge CA G4.
+  contact: support at certipath dot com
+  ca_certificate_hash: 8c2fc3a433f84cb36fc48317fae89cff38831dee
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+ 
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the Federal Common Policy CA from the Federal Bridge CA G4. An updated certificate was issued to the Federal Common Policy CA G2 on October 15, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: fb3f5e09cac4fe4066f6c48cce31feca02fea677     
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US   
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US     
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl 
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c 
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c  
+  ocsp_uri: N/A 
+ 
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the DigiCert Federal SSP Intermediate CA - G5 from the Federal Common Policy CA. An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 98b58247ac8a2bc6f348f03e8d22884d8345fc0f   
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US   
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c
+  ocsp_uri: N/A
+  
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the Symantec SSP Intermediate CA - G4 from the Federal Common Policy CA. An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 6a382438fd21037018daf3f422a2132bea2be817    
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US  
+  ca_certificate_subject: CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US   
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://ssp-sia.symauth.com/SSP/Certs_issued_by_SYMCSSPCAG4.p7c
+  ocsp_uri: N/A
+  
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the ORC SSP 4 from the Federal Common Policy CA. An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 3a70323069a4c41bc95663152e9ccc7111bb0623   
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=ORC SSP 4, O=ORC PKI, C=US   
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://crlserver.orc.com/caCerts/ORCSSP4.p7c
+  ocsp_uri: N/A
+  
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the Verizon SSP CA A2 from the Federal Common Policy CA. An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 477bf4017d25cde276cdddf756d40ca591d76f6d    
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US    
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://sia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2-SIA.p7c
+  ocsp_uri: N/A
+  
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the U.S. Department of State AD Root CA from the Federal Common Policy CA. An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ce11590010562a39ad8b1455acf76c03737aebf6    
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu    
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri: N/A
+  
+- notice_date: April 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the Federal Bridge CA G4 from the Federal Common Policy CA. An updated certificate was issued by the Federal Common Policy CA G2 on October 15, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: e836f3016bfb6e8df274f27fd8a4a5054517b0f1    
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US  
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US      
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: N/A
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:

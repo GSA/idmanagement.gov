@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Performance Management
-permalink: ficampm/performance/
+permalink: pm/performance/
 sticky_sidenav: true
 sidenav: pm
 

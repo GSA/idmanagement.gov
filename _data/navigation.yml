@@ -206,21 +206,21 @@ pacs:
 
 pm:
   - text: Introduction
-    href: /ficampm/intro-pm/
+    href: /pm/
   - text: Program Governance and Leadership
-    href: /ficampm/governance/
+    href: /pm/governance/
   - text: Workstreams
-    href: /ficampm/workstreams/
+    href: /pm/workstreams/
   - text: Stakeholder Management
-    href: /ficampm/stakeholders/
+    href: /pm/stakeholders/
   - text: Communications Plan
-    href: /ficampm/comm/
+    href: /pm/comm/
   - text: Performance Management
-    href: /ficampm/performance/
+    href: /pm/performance/
   - text: Privacy Considerations
-    href: /ficampm/privacy/
+    href: /pm/privacy/
   - text: Examples and Guidance
-    href: /ficampm/examples/
+    href: /pm/examples/
 
 ## Other Site Navigation
 
@@ -256,7 +256,7 @@ footer:
   - text: FICAM Architecture
     href: /arch/intro-arch/
   - text: FICAM Program Management
-    href: /ficampm/intro-pm/
+    href: /pm/
   - text: Federal PKI (FPKI)
     href: /fpki/intro-fpki/
   - text: Personal Identity Verification (PIV)
