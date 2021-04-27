@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Program Governance and Leadership
-permalink: ficampm/governance/
+permalink: pm/governance/
 sticky_sidenav: true
 sidenav: pm
 
