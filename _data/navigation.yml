@@ -256,7 +256,7 @@ footer:
   - text: FICAM Architecture
     href: /arch/intro-arch/
   - text: FICAM Program Management
-    href: /ficampm/intro-pm/
+    href: /pm/
   - text: Federal PKI (FPKI)
     href: /fpki/intro-fpki/
   - text: Personal Identity Verification (PIV)
