@@ -2,7 +2,7 @@
 layout: page
 collection: ficampm
 title: Communication Plan
-permalink: ficampm/comm/
+permalink: pm/comm/
 sticky_sidenav: true
 sidenav: pm
 ---
