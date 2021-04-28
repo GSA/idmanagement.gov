@@ -1,10 +1,14 @@
 ---
 layout: page
-collection: Collection Name Matching (look at config.yml for collection names)
-title: Page title - Example: FICAM Program Management Guide Introduction
-permalink: Page Link - Exmple: ficampm/intro-pm/
+collection: 
+# Collection Name Matching (look at config.yml for collection names)
+title: Page title 
+# Example: ICAM Program Management Guide Introduction
+permalink: Page Link - 
+# Exmple: pm/ for landing pages choose a friendly permalink which is easy to share and remember
 sticky_sidenav: true
-sidenav: Look at _data/navigation.yml to create sidenav - Example: pm
+sidenav: 
+# Look at _data/navigation.yml to create sidenav - Example: pm
 
 If you have headers in your doc, you can create a 2nd level navigation with subnav:
 subnav:
