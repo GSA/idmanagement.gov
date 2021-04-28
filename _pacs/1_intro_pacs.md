@@ -2,7 +2,7 @@
 layout: page
 collection: pacs
 title: Physical Access Control System Guide Introduction
-permalink: pacs/intro-pacs/
+permalink: pacs/
 sticky_sidenav: true
 sidenav: pacs
 ---
