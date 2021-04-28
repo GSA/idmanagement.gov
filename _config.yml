@@ -59,17 +59,17 @@ primary_navigation:
 #        url: /sell/fips201apl/
   - name: FICAM Architecture
     description: FICAM Archtecture
-    url: /arch/intro-arch/
+    url: /arch/
   - name: ICAM Program Management
     description: ICAM Program Management
     url: /pm/
   - name: Federal PKI (FPKI)
-    url: /fpki/intro-fpki/
+    url: /fpki/
   - name: Personal Identity Verification (PIV)
-    url: /piv/intro-piv/
+    url: /piv/
   - name: Physical Access Control Systems (PACS)
     description: Physical Access Control Systems Guide
-    url: /pacs/intro-pacs/
+    url: /pacs/
   - name: Other FICAM Playbooks
     description: Other FICAM Playbooks
     url: /playbooks/
@@ -118,7 +118,7 @@ searchgov:
 collections:
   ficampm:
     output: true
-    permalink: /ficampm/:path/
+    permalink: /pm/:path/
   arch:
     output: true
     permalink: /arch/:path/
