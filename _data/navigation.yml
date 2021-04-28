@@ -2,7 +2,7 @@
 
 arch:
   - text: Introduction
-    href: /arch/intro-arch/
+    href: /arch/
   - text: Goals & Objectives
     href: /arch/goals/
   - text: Services Framework
@@ -52,7 +52,7 @@ archusecases:
 
 piv:
   - text: Introduction
-    href: /piv/intro-piv/
+    href: /piv/
   - text: Basics of a PIV
     href: /piv/basics/
   - text: Getting Started
@@ -100,7 +100,7 @@ pivengineer:
 
 fpki:
   - text: Introduction
-    href: /fpki/intro-fpki/
+    href: /fpki/
   - text: Certification Authorities
     href: /fpki/ca/
   - text: Trust Stores
@@ -184,7 +184,7 @@ fpkiarchivedannouncements:
 
 pacs:
   - text: Introduction
-    href: /pacs/intro-pacs/
+    href: /pacs/
   - text: What is a Physical Access Control System?
     href: /pacs/what-is-pacs/
   - text: Physical Access Control System Deployment Models
@@ -226,13 +226,13 @@ pm:
 
 buy:
   - text: Buy Identity Products and Services
-    href: /buy/buy/
+    href: /buy/
   - text: Trust Services
     href: /buy/trust-services/
     
 sell:
   - text: Sell Identity Products and Services
-    href: /sell/sell/
+    href: /sell/
   - text: FIPS 201 Evaluation Program
     href: /sell/fips201ep/
   - text: FIPS 201 Approved Product List
@@ -254,15 +254,15 @@ policy:
 
 footer:
   - text: FICAM Architecture
-    href: /arch/intro-arch/
+    href: /arch/
   - text: FICAM Program Management
     href: /pm/
   - text: Federal PKI (FPKI)
-    href: /fpki/intro-fpki/
+    href: /fpki/
   - text: Personal Identity Verification (PIV)
-    href: /piv/intro-piv/
+    href: /piv/
   - text: Physical Access Control Systems (PACS)
-    href: /pacs/intro-pacs/
+    href: /pacs/
 
 # Playbooks Navigation
 
