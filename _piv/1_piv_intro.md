@@ -2,7 +2,7 @@
 layout: page
 collection: piv
 title:  Personal Identity Verification Guide Introduction
-permalink: piv/intro-piv/
+permalink: piv/
 sticky_sidenav: true
 sidenav: piv
 
