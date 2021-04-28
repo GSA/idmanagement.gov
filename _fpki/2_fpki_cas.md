@@ -34,7 +34,7 @@ COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issui
 
 ### Federal Common Policy Certification Authority
 
-The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](../../piv/intro-piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
+The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials](../../piv#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
 
 A few commercial vendors include the FCPCA root certificate in the commercial-off-the-shelf (COTS) products' [Trust Stores](../trust-stores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
