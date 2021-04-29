@@ -41,7 +41,7 @@ It's not possible to configure a domain to use *both* altSecurityIdentities *and
 ## Transitioning from UPN Mapping to altSecurityIdentities Mapping 
 If you have a large network with many domains, you should carefully plan the migration from User Principal Name to the altSecurityIdentities account linking method.  
 
-{% include alert-warning.html heading = "Use of UPN by Applications" content="You may find that you have many applications that rely upon User Principal Name values only.  You can still populate the User Principal Name attribute of user accounts with the PIV Authentication certificate User Principal Name value to maintain those applications while also disabling user Principal Name mapping for <i>network authentication</i>.  There is no need to remove existing User Principal Name values in your transition to altSecurityIdentities." %} 
+{% include alert-warning.html heading = "Use of UPN by Applications" content="You may find that you have many applications that rely upon User Principal Name values.  There is no need to remove existing or stop populating new User Principal Name values in your transition to altSecurityIdentities." %} 
 
 There are three steps to implement altSecurityIdentities account linking:
   1. [Disable User Principal Name Mapping](#1-disable-user-principal-name-mapping)
