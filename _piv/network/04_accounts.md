@@ -110,11 +110,11 @@ You need to enable _user name hints_ for your network domain.  This will modify 
 
 ##### Username Hint Setting:
 
-  **For Windows 2008 R2:**
+  **For Windows Server 2008 R2:**
   - _Computer Configuration_ -> _Policies_-> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
   - Select _Allow user name hint_
 
-  **For Windows 2012:**
+  **For Windows Server 2012 and later:**
   - _Computer Configuration_ -> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
   - Select _Allow user name hint_
 
