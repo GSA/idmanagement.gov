@@ -23,7 +23,7 @@ There are two account linking attributes to choose from:
 It's not possible to configure a domain to use *both* altSecurityIdentities *and* User Principal Name mapping. You must choose **one** of these options and configure its use for *all* domain users.
 
 ### altSecurityIdentities approach:
-- Each PIV credential can be associated with MORE THAN ONE account
+- Each PIV credential can be associated with **more than one** account
      - This flexibility allows for the association of a single PIV credential certificate to an individual's end-user and privileged user account(s)
 - Users are presented with an additional field during network authentication to identify which account the user wants to access. This field is known as the _User Name Hint_.
      - The User Name Hint is what informs Windows which account the user is trying to log into if the mapped certificate is associated with multiple accounts
@@ -32,7 +32,7 @@ It's not possible to configure a domain to use *both* altSecurityIdentities *and
 - There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials
 
 ### User Principal Name approach:
-- Each PIV credential can only be associated with ONE account
+- Each PIV credential can only be associated with **one** account
 - The UPN value from the _Subject Alternate Name_ in the PIV Authentication certificate is required
 - There is no flexibility for associating the PIV credential to separate privileged accounts
 - There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials
