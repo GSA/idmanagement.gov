@@ -62,7 +62,6 @@ The following certificates are planned for a certificate action in the near futu
 | FPKIMA | US Treasury Root CA | Federal Common Policy CA | Serial: 734b Hash: 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2 | 8/14/22| Revocation 6/10 |
 | FPKIMA | Entrust Managed Services Root CA | Federal Common Policy CA | Serial: 2e26 Hash: 39c1d3b64e756a3267bfe5fecb103da892ca0611 | 7/30/25 | Revocation 6/17 |
 | FPKIMA | Entrust Managed Services Root CA | Federal Common Policy CA | Serial: 734a Hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9 | 8/14/29 | Revocation 6/17 |
-| FPKIMA | IdenTrust Global Common Root CA 1 | Federal Bridge CA G4 | Serial: 1659bceb348e6bbd33832c8284c35d7975c8d3c6 Hash: 2800ea6ecdeb8efc1cf4c042d712e8622e0cbb1a | 8/21/21 | Renew |
 
  
 
