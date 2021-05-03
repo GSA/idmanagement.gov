@@ -281,7 +281,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using an Apple configuration profile on macOS.
 <br>
-![A video that shows the steps to install an Apple configuration profile on macOS](../../../assets/fpki/macos-unmanaged.gif)
+[![A video that shows the steps to install an Apple configuration profile on macOS](../../../assets/fpki/macos-unmanaged.gif){:style="width:85%;"}](../../../assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?
@@ -301,4 +301,4 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
 <br>
-![A video that shows the steps to install a mobile configuration file in the Safari web browser.]{:style="width:40%;"}(../../../assets/fpki/ios_safari_configuration-unmanaged.gif)
+[![[A video that shows the steps to install a mobile configuration file in the Safari web browser](../../../assets/fpki/ios_safari_configuration-unmanaged.gif){:style="width:50%;"}](../../../assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
