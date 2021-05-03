@@ -301,4 +301,4 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
 <br>
-[![[A video that shows the steps to install a mobile configuration file in the Safari web browser](../../../assets/fpki/ios_safari_configuration-unmanaged.gif){:style="width:50%;"}](../../../assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A video that shows the steps to install a mobile configuration file in the Safari web browser](../../../assets/fpki/ios_safari_configuration-unmanaged.gif){:style="width:50%;"}](../../../assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
