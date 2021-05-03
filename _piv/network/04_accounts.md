@@ -13,29 +13,29 @@ subnav:
     href: '#transitioning-from-upn-mapping-to-altsecurityidentities-mapping'
 ---
 
-"Account linking" refers to the process of associating a certificate on a user's PIV credential with their domain account.
+*Account linking* refers to the process of associating a certificate on a user's PIV credential with their domain account.
 
-## Background: Comparing altSecurityIdentities and User Principal Name
+## Comparing altSecurityIdentities and User Principal Name
 There are two account linking attributes to choose from:
-- altSecurityIdentities - _recommended_
+- altSecurityIdentities (_Recommended_)
 - User Principal Name (UPN)
 
 It's not possible to configure a domain to use *both* altSecurityIdentities *and* User Principal Name mapping. You must choose **one** of these options and configure its use for *all* domain users.
 
-### altSecurityIdentities approach:
-- Each PIV credential can be associated with **more than one** account
-     - This flexibility allows for the association of a single PIV credential certificate to an individual's end-user and privileged user account(s)
+### altSecurityIdentities approach
+- Each PIV credential can be associated with **more than one** account.
+     - This flexibility allows for the association of a single PIV credential certificate to an individual's end-user and privileged user account(s).
 - Users are presented with an additional field during network authentication to identify which account the user wants to access. This field is known as the _User Name Hint_.
-     - The User Name Hint is what informs Windows which account the user is trying to log into if the mapped certificate is associated with multiple accounts
-     - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows Logon name
-- You can choose from one of [six options](#2-link-the-piv-authentication-certificate) to map a certificate to a given account
-- There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials
+     - The User Name Hint is what informs Windows which account the user is trying to log into if the mapped certificate is associated with multiple accounts.
+     - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows Logon name.
+- You can choose from one of [six options](#2-link-the-piv-authentication-certificate) to map a certificate to a given account.
+- There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials.
 
-### User Principal Name approach:
-- Each PIV credential can only be associated with **one** account
-- The UPN value from the _Subject Alternate Name_ in the PIV Authentication certificate is required
-- There is no flexibility for associating the PIV credential to separate privileged accounts
-- There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials
+### User Principal Name approach
+- Each PIV credential can only be associated with **one** account.
+- The UPN value from the _Subject Alternate Name_ in the PIV Authentication certificate is required.
+- There is no flexibility for associating the PIV credential to separate privileged accounts.
+- There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials.
 
 
 ## Transitioning from UPN Mapping to altSecurityIdentities Mapping 
@@ -78,9 +78,9 @@ There are six mapping options to choose from, but most organizations use **Issue
 ##### Methods for Linking the PIV Authentication Certificate
 System administrators can leverage one of the approaches below to link PIV Authentication certificates with user accounts. These steps should be run from a domain controller with elevated privileges.
 
-{% include alert-warning.html heading = "Heads-up!" content="Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability in advance of implementing changes in their production IT environments." %} 
+{% include alert-warning.html content="**Note:** Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability in advance of implementing changes in their production IT environments." %} 
 
-**1. Use the Active Directory Users and Computers Graphical User Interface**
+#### 1. Use the Active Directory Users and Computers Graphical User Interface
 The following steps are useful if you only need to update a small number of user accounts:
  -  **Start** > **Server Manager**
  -  **Tools** > **Active Directory Users and Computers**
@@ -90,7 +90,7 @@ The following steps are useful if you only need to update a small number of user
  -  Click **Add** and browse to a local copy of the user's PIV Authentication certificate
  -  Click **Apply** and then **OK**
 
-**2. Use Automation** <br>
+#### 2. Use Automation <br>
 If designing an automated process to transition users from Principal Name to altSecurityIdentities mapping, consider the following functionality:  
 - Load and process multiple certificates at once (for example, reading a directory of user certificates)
 - Extract the UPN from each certificate and ensure a corresponding user record exists in Active Directory
@@ -108,7 +108,7 @@ You need to enable _user name hints_ for your network domain.  This will modify 
 
 {% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows Logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
 
-##### Username Hint Setting:
+##### Username Hint Setting
 
   **For Windows Server 2008 R2:**
   - _Computer Configuration_ -> _Policies_-> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
