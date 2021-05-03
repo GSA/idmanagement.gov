@@ -260,9 +260,6 @@ The Safari web browser can be used to install COMMON on **iOS devices only**.
 9. Click **Done**.
 10. Follow the steps below to enable [full trust for COMMON](#enable-full-trust-for-common).
 
-**Note:**&nbsp;&nbsp;This video shows you how to install COMMON using the Safari web browser.
-<br>
-<a href="../../../assets/fpki/ios_safari_configuration.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_configuration.gif" height="600" alt="This video shows you how to install COMMON using the Safari web browser"></a>
 
 #### Enable Full Trust for COMMON 
 This option works for **iOS** devices only.
