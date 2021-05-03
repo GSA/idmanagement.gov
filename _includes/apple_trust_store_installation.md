@@ -37,10 +37,8 @@ Verify that the certificate hash matches the SHA-256 Thumbprint in the certifica
 
 **Note:**&nbsp;&nbsp;This video shows you how to download and verify a copy of COMMON for **macOS**.
 <br>
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/download_and_verify.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows you how to download and verify a copy of COMMON for macOS](../../../assets/fpki/download_and_verify.gif){:style="width:85%;"}](../../../assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 ### Redistribute COMMON
 
@@ -72,10 +70,8 @@ These steps will help you to create, distribute, and install profiles using Appl
 
 **Note:**&nbsp;&nbsp;This video shows you how to create an Apple Configuration Profile. The steps and example below also show you how to do this.<br><br>This profile can be reused.
 <br>
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows you how to create an Apple Configuration Profile. The steps and example below also show you how to do this.](../../../assets/fpki/create_profile.gif){:style="width:85%;"}](../../../assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 <p align="center">
 <b>APPLE CONFIGURATION PROFILE (EXAMPLE)</b>
@@ -177,11 +173,8 @@ We recommend using an automated method to install Apple Configuration Profiles o
 You can also manually install a profile. 
 
 **Note:**&nbsp;&nbsp;This video shows you how to manually install an Apple Configuration Profile on **macOS**.
-<br>
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/manual_install_profile.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows you how to manually install an Apple Configuration Profile on macOS](../../../assets/fpki/manual_install_profile.gif){:style="width:85%;"}](../../../assets/fpki/manual_install_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 #### Install COMMON Using Command Line
 
@@ -197,10 +190,8 @@ You can also manually install a profile.
     
 **Note:**&nbsp;&nbsp;This video shows you how to install COMMON using the command line.
 <br>
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/install_command_line.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows you how to install COMMON using the command line](../../../assets/fpki/install_command_line.gif){:style="width:85%;"}](../../../assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 #### Install COMMON Using Apple Keychain Access
 
@@ -222,10 +213,9 @@ You can use one of these methods to install COMMON by using Apple Keychain Acces
 
 **Note:**&nbsp;&nbsp;This video shows you how to install COMMON by using the Apple Keychain Access import process.
 <br>
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows you how to install COMMON by using the Apple Keychain Access import process.](../../../assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}](../../../assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+
 ##### Login Keychain
 
 {% include alert-info.html content="These steps will install COMMON in the login Keychain. Both system administrators and non-administrators can use these steps." %}
@@ -236,10 +226,7 @@ You can use one of these methods to install COMMON by using Apple Keychain Acces
 
 **Note:**&nbsp;&nbsp;This video shows non-administrators how to install COMMON by using<br>the Apple Keychain Access import process.
 <br>
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows non-administrators how to install COMMON by using<br>the Apple Keychain Access import process.](../../../assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}](../../../assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### iOS Solutions
@@ -275,10 +262,7 @@ The Safari web browser can be used to install COMMON on **iOS devices only**.
 
 **Note:**&nbsp;&nbsp;This video shows you how to install COMMON using the Safari web browser.
 <br>
-<video width="300" controls>
-  <source src="{{site.baseurl}}/video/ios_safari_configuration.mp4" type="video/mp4">
-</video>
-<br>
+[![This video shows you how to install COMMON using the Safari web browser](../../../assets/fpki/ios_safari_configuration.gif){:style="width:85%;"}](../../../assets/fpki/ios_safari_configuration.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 #### Enable Full Trust for COMMON 
