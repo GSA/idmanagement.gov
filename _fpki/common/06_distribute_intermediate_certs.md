@@ -106,10 +106,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 **Note:**&nbsp;&nbsp;The following video shows you how to create an Apple configuration profile. 
 
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/create_profile.mp4" type="video/mp4">
-</video>
-<br>
+[![The following video shows you how to create an Apple configuration profile.](../../../assets/fpki/create_profile.gif){:style="width:85%;"}](../../../assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ### Use Linux command line
