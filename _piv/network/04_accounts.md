@@ -78,7 +78,7 @@ There are six mapping options to choose from, but most organizations use **Issue
 ##### Methods for Linking the PIV Authentication Certificate
 System administrators can leverage one of the approaches below to link PIV Authentication certificates with user accounts. These steps should be run from a domain controller with elevated privileges.
 
-{% include alert-warning.html content="**Note:** Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability in advance of implementing changes in their production IT environments." %} 
+{% include alert-warning.html content="<b>Note:</b> Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability in advance of implementing changes in their production IT environments." %} 
 
 #### 1. Use the Active Directory Users and Computers Graphical User Interface
 The following steps are useful if you only need to update a small number of user accounts:
