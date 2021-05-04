@@ -3909,6 +3909,89 @@
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
   ocsp_uri: N/A
+  
+- notice_date: April 28, 2021
+  change_type: CA Certificate Issuance 
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority issued a cross certificate to the IdenTrust Global Common Root CA 1 from the Federal Bridge CA G4.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 1657e746682699afe77e4f8d89cea6263ccb1f95     
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US   
+  ca_certificate_subject: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US  
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl 
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c 
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c  
+  ocsp_uri: N/A 
+ 
+- notice_date: April 28, 2021
+  change_type: Repository Outage 
+  start_datetime:
+  system: WidePoint Non-Federal Issuer  
+  change_description: Between approximately 9:30 P.M on April 27 and 7:00 P.M on April 28, 2021, users reported errors with the availability of the WidePoint ORC NFI 4 repositories. 
+  contact: PKIPolicy at ORC dot com  
+  ca_certificate_hash: N/A     
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: N/A   
+  cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1.crl  
+  aia_uri: http://aia.xca.xpki.com/AIA/IssuedCertsforXTec_PIVI_CA1.p7c
+  sia_uri: N/A 
+  ocsp_uri: http://ocsp.xca.xpki.com/ocsp 
+ 
+- notice_date: April 29, 2021  
+  change_type: CRL Outage  
+  start_datetime:
+  system: DigiCert Federal Shared Service Provider 
+  change_description: Between approximately 3:30 P.M on April 28 and 6:30 P.M on April 29, 2021, users reported the Symantec SSP Intermediate CA G4 was serving an expired CRL.  
+  contact: enterprise dash pkisupport at digicert dotcom  
+  ca_certificate_hash: N/A       
+  ca_certificate_issuer: N/A  
+  ca_certificate_subject: N/A    
+  cdp_uri: http://ssp-crl.symauth.com/SSP/SSPG4.crl 
+  aia_uri: N/A  
+  sia_uri: N/A  
+  ocsp_uri: N/A
+  
+- notice_date: May 3, 2021
+  change_type: CA Certificate Issuance 
+  start_datetime: 
+  system: CertiPath Bridge CA
+  change_description: CertiPath Bridge CA - G3 issued a renewed cross certificate to the Boeing PCA G3.
+  contact: support at certipath dot com  
+  ca_certificate_hash:      
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US 
+  ca_certificate_subject: CN=Boeing PCA G3, OU=certservers, O=Boeing, C=US    
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl 
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c  
+  sia_uri: N/A 
+  ocsp_uri: N/A
+  
+- notice_date: May 3, 2021
+  change_type: CA Certificate Issuance 
+  start_datetime: 
+  system: CertiPath Bridge CA
+  change_description: CertiPath Bridge CA - G3 issued a renewed cross certificate to the Lockheed Martin Root Certification Authority 2.
+  contact: support at certipath dot com  
+  ca_certificate_hash: ad7a60e254e6aa4bf187cda40f7af928cf18d82d      
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US 
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 2, OU=Certification Authorities, O=Lockheed Martin Corporation, L=Denver, S=Colorado, C=US    
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl 
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c  
+  sia_uri: N/A 
+  ocsp_uri: N/A
+  
+- notice_date: May 3, 2021
+  change_type: CA Certificate Issuance 
+  start_datetime: 
+  system: DoD Root CA 3
+  change_description: DoD Root CA 3 issued a certificate to the DoD ID CA-63.
+  contact: dodpke at mail dot mil  
+  ca_certificate_hash: 67b75160bd8299e2342f46cc8ac634b2afb33768     
+  ca_certificate_issuer: CN=DoD Root CA 3, OU=PKI, OU=DoD, O=U.S. Government, C=US  
+  ca_certificate_subject: CN=DOD ID CA-63, OU=PKI, OU=DoD, O=U.S. Government, C=US    
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl   
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c   
+  sia_uri: N/A  
+  ocsp_uri: http://ocsp.disa.mil
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
