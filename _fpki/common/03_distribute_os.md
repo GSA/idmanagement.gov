@@ -159,10 +159,8 @@ These steps describe how to create, distribute, and install profiles using Apple
 
 **Note:** The following video shows you how to create an Apple configuration profile.
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/create_profile.mp4" type="video/mp4" alt="A video that shows the steps to create an Apple configuration profile.">
-</video>
-<br>
+[![A video that shows the steps to create an Apple configuration profile.](../../../assets/fpki/create_profile.gif){:style="width:85%;"}](../../../assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 <p align="center">
 <b>APPLE CONFIGURATION PROFILE (EXAMPLE)</b>
@@ -268,10 +266,8 @@ You can also manually install a profile.
 
 **Note:**&nbsp;&nbsp;The following video shows you how to manually install an Apple configuration profile on **macOS**.
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/manual_install_profile.mp4" type="video/mp4"  alt="A video that shows the steps to manually install an Apple configuration profile.">
-</video>
-<br>
+[![A video that shows the steps to manually install an Apple configuration profile](../../../assets/fpki/manual_install_profile.gif){:style="width:85%;"}](../../../assets/fpki/manual_install_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 ### Install FCPCA G2 Using Command Line
 
@@ -287,10 +283,8 @@ You can also manually install a profile.
     
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the command line.
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/install_command_line.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 using the macOS command line.">
-</video>
-<br>
+[![A video that shows the steps to install FCPCA G2 using the macOS command line.](../../../assets/fpki/install_command_line.gif){:style="width:85%;"}](../../../assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 ### Install FCPCA G2 Using Apple Keychain Access
 
@@ -309,10 +303,9 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 **Note:**&nbsp;&nbsp;The following video shows administrators how to install FCPCA G2 by using the Apple Keychain Access import process.
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/keychain_gui_admin.mp4" type="video/mp4"  alt="A video that shows the steps for administrators to install FCPCA G2 using the Apple Keychain Access import process.">
-</video>
-<br>
+[![A video that shows the steps for administrators to install FCPCA G2 using the Apple Keychain Access import process.](../../../assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}](../../../assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+
 #### Login Keychain
 
 {% include alert-info.html content="These steps describe how to install FCPCA G2 in the Login Keychain. Both system administrators and non-administrators can perform these steps." %}
@@ -324,13 +317,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 **Note:**&nbsp;&nbsp;The following video shows non-administrators how to install FCPCA G2 using the Apple Keychain Access import process.
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/keychain_gui_non_admin.mp4" type="video/mp4"  alt="A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.">
-</video>
-<br>
-
-
-<br>
+[![A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.](../../../assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}](../../../assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ---------------------------------------------------
 
@@ -362,10 +349,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the Safari web browser.
 <br>
-<video width="300" controls>
-  <source src="../../../assets/fpki/ios_safari_configuration-g2.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 in the Safari web browser.">
-</video>
-<br>
+<a href="../../../assets/fpki/ios_safari_configuration-g2.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_configuration-g2.gif" height="600" alt="A video that shows the steps to install FCPCA G2 in the Safari web browser."></a>
 
 
 ### Enable Full Trust for FCPCA G2 

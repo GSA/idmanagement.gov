@@ -269,7 +269,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
      - Verify nine (9) entries for certificates issued by the Federal Common Policy CA G2
 
 **Note:** The following .gif demonstrates the distribution steps outlined above.
-
+<br>
 [![configure unmanaged device](../../../assets/fpki/unmanaged-device.gif){:style="width:85%;"}](../../../assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
@@ -281,10 +281,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using an Apple configuration profile on macOS.
 <br>
-<video width="85%" controls>
-  <source src="../../../assets/fpki/macos-unmanaged.mp4" type="video/mp4"  alt="A video that shows the steps to install an Apple configuration profile on macOS.">
-</video>
-<br>
+[![A video that shows the steps to install an Apple configuration profile on macOS](../../../assets/fpki/macos-unmanaged.gif){:style="width:85%;"}](../../../assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 ## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?
@@ -304,7 +301,4 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
 <br>
-<video width="300" controls>
-  <source src="../../../assets/fpki/ios_safari_configuration-unmanaged.mp4" type="video/mp4"  alt="A video that shows the steps to install a mobile configuration file in the Safari web browser.">
-</video>
-<br>
+<a href="../../../assets/fpki/ios_safari_configuration-unmanaged.gif" target="_blank" rel="noopener noreferrer"><img src="../../../assets/fpki/ios_safari_configuration-unmanaged.gif" height="600" alt="A video that shows the steps to install a mobile configuration file in the Safari web browser"></a>
