@@ -7,69 +7,63 @@ sticky_sidenav: true
 sidenav: pivnetwork
 
 subnav:
-  - text: Comparing Principal Name versus altSecurityIdentities options for the network
-    href: '#comparing-principal-name-versus-altsecurityidentities-options'
-  - text: Implementing altSecurityIdentities and PIV certificate mapping
-    href: '#implementing-altsecurityidentities-and-piv-certificate-mapping'
+  - text: Comparing altSecurityIdentities and User Principal Name
+    href: '#background-comparing-altsecurityidentities-and-user-principal-name'
+  - text: Transitioning from UPN Mapping to altSecurityIdentities Mapping
+    href: '#transitioning-from-upn-mapping-to-altsecurityidentities-mapping'
 ---
 
-For your network domains, you will need to associate the PIV credential to the user accounts.  This is the [account linking](../../identifiers) information discussed in the Identifiers section. The most common questions for US Federal Government and using PIV for network authentication are related to linking a PIV credential to network user accounts.  
+*Account linking* refers to the process of associating a certificate on a user's PIV credential with their domain account.
 
-This page includes the information on the Identifiers for account linking in network authentication:
+## Comparing altSecurityIdentities and User Principal Name
+There are two account linking attributes to choose from:
+- altSecurityIdentities (_Recommended_)
+- User Principal Name (UPN)
 
-## Comparing Principal Name versus altSecurityIdentities options
-There are two attributes in your network domain directories to choose from:
+It's not possible to configure a domain to use *both* altSecurityIdentities *and* User Principal Name mapping. You must choose **one** of these options and configure its use for *all* domain users.
 
-- Principal Name
-- altSecurityIdentities - _recommended_
+### altSecurityIdentities approach
+- Each PIV credential can be associated with **more than one** account.
+     - This flexibility allows for the association of a single PIV credential certificate to an individual's end-user and privileged user account(s).
+- Users are presented with an additional field during network authentication to identify which account the user wants to access. This field is known as the _User Name Hint_.
+     - The User Name Hint is what informs Windows which account the user is trying to log into if the mapped certificate is associated with multiple accounts.
+     - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows Logon name.
+- You can choose from one of [six options](#2-link-the-piv-authentication-certificate) to map a certificate to a given account.
+- There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials.
 
-For the Principal Name approach:
-
-- Each PIV credential can only be associated with ONE account
-- The User Principal Name value from the _Subject Alternate Name_ in the PIV authentication certificate is required to be populated during PIV credential issuance
-- There is no flexibility for associating the PIV credential to separate privileged accounts
-- There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials
-
-For the altSecurityIdentities approach:
-
-- Each PIV credential can be associated with MORE THAN ONE account
-- Six options from the certificate can be used to map to each account
-- This provides flexibility for managing privileged accounts and using one PIV credential to authenticate to more than one account
-- Users are presented a second _User Name Hint_ field during network authentication to identify which account the user wants to access
-- There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials
-
-
-{% include alert-info.html heading = "PIV Certificates and UPN values" content="It is not required that you update your PIV credentials and certificates to not have a UPN value populated to use the altSecurityIdentities approach. This is a common misconception due to incorrect information found elsewhere online. If your PIV Authentication certificates do contain a UPN value in the <i>Subject Alternative Name</i> extension, altSecurityIdentities will still work for you, your agency, and your users." %}
+### User Principal Name approach
+- Each PIV credential can only be associated with **one** account.
+- The UPN value from the _Subject Alternate Name_ in the PIV Authentication certificate is required.
+- There is no flexibility for associating the PIV credential to separate privileged accounts.
+- There is less flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable credentials.
 
 
-## Implementing altSecurityIdentities and PIV certificate mapping
+## Transitioning from UPN Mapping to altSecurityIdentities Mapping 
+If you have a large network with many domains, you should carefully plan the migration from User Principal Name to the altSecurityIdentities account linking method.  
 
-If you have a large network with many domains, you will want to carefully plan for a migration from solely using Principal Name to the altSecurityIdentities approach.  
+{% include alert-warning.html heading = "Use of UPN by Applications" content="You may find that you have many applications that rely upon User Principal Name values.  There is no need to remove existing or stop populating new User Principal Name values in your transition to altSecurityIdentities." %} 
 
-You may find that you have many applications that rely upon the Principal Name values only.  You can still populate the Principal Name with the PIV Authentication certificate User Principal Name value for one of the user accounts (the non-privileged accounts) to maintain those applications but disable user principal name mapping for _network authentication_.
+There are three steps to implement altSecurityIdentities account linking:
+  1. [Disable User Principal Name Mapping](#1-disable-user-principal-name-mapping)
+  2. [Link the PIV Authentication Certificate](#2-link-the-piv-authentication-certificate)
+  3. [Enable User Name Hints](#3-enable-user-name-hints)
 
-You have three steps to implement altSecurityIdentities and PIV certificate mapping:
-  1. [Disable User Principal Name Mapping](#disable-user-principal-name-mapping)
-  2. [Link the PIV Authentication Certificate](#link-the-piv-authentication-certificate)
-  3. [Enable User Name Hints](#enable-user-name-hints)
+#### 1. Disable User Principal Name Mapping
+To implement altSecurityIdentities, you will need to configure a registry setting on **all** domain controllers.  
 
-#### Disable User Principal Name Mapping
-To implement the altSecurityIdentities approach, you will need to disable _subject alternate name_ for the network domain.  This setting simply tells your network domain: _I don't always want to use the Subject Alternate Name values for my user certificates._
+- Key: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kdc
+- Name: UseSubjectAltName 
+- Type: DWORD
+- Data (Value): 00000000
 
-This is a registry setting and you must disable this setting on all domain controllers:
+This setting tells your network domain: _I don't always want to use the Subject Alternate Name values for my user certificates._  More information on the setting is available [here.](https://technet.microsoft.com/en-us/library/ff520074(WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}
 
-- HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Kdc
-- Change the value of the DWORD UseSubjectAltName to 00000000
-- [LINK to External MSDN Article to Disable UPN Mapping](https://technet.microsoft.com/en-us/library/ff520074(WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}
+Use group policy objects or other centralized management options to manage registry options.
 
-Management of registry settings should use group policy objects or other centralized management options,
+#### 2. Link the PIV Authentication Certificate
+Next, you need to link each user's PIV Authentication certificate to their domain account(s).  This is accomplished by populating data extracted from the user's PIV Authentication certificate into the user's Active Directory record, specifically into the **altSecurityIdentities** attribute.
 
-#### Link the PIV Authentication Certificate
-You need to link the PIV Authentication certificate to each of the user's accounts.  You implement this by populating one of the PIV Authentication certificate identifiers to the altSecurityIdentities attribute for each account.
-
-- You have six options from the certificates to use
-- A common challenge is determining how the certificate values should be mapped.  A table is shown below with options and example values which closely resemble a production format for PIV Authentication.
-
+There are six mapping options to choose from, but most organizations use **Issuer and Subject**.
 
 | Options       | Tag     | Example | Considerations |
 | ------------- |-------------| -----|-----|
@@ -80,16 +74,51 @@ You need to link the PIV Authentication certificate to each of the user's accoun
 | SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Not generally recommended; may be difficult to manage.   |
 | RFC822 name | X509:\<RFC822>      |   Not recommended |    Not recommended; not commonly populated in PIV Authentication certificates. |
 
-#### Enable User Name Hints
+
+##### Methods for Linking the PIV Authentication Certificate
+System administrators can leverage one of the approaches below to link PIV Authentication certificates with user accounts. These steps should be run from a domain controller with elevated privileges.
+
+{% include alert-warning.html content="<b>Note:</b> Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability in advance of implementing changes in their production IT environments." %} 
+
+#### 1. Use the Active Directory Users and Computers Graphical User Interface
+The following steps are useful if you only need to update a small number of user accounts:
+ -  **Start** > **Server Manager**
+ -  **Tools** > **Active Directory Users and Computers**
+ -  **View** > **Advanced Features** 
+ -  Expand your domain to reveal the **Users** directory
+ -  Right click on the user whose certificate you'd like to map and select **Name Mappings**
+ -  Click **Add** and browse to a local copy of the user's PIV Authentication certificate
+ -  Click **Apply** and then **OK**
+
+#### 2. Use Automation <br>
+If designing an automated process to transition users from Principal Name to altSecurityIdentities mapping, consider the following functionality:  
+- Load and process multiple certificates at once (for example, reading a directory of user certificates)
+- Extract the UPN from each certificate and ensure a corresponding user record exists in Active Directory
+- For certificates that contain a UPN that matches a record in Active Directory:
+     - Extract and format the certificate Issuer and Subject attributes in preparation for publishing to Active Directory
+     - Update the user's Active Directory record with the altSecurityIdentities attribute and corresponding Issuer and Subject data
+- For certificates that do not contain a UPN that matches a record in Active Directory:
+     - Set aside for manual review (e.g., it's possible these users are no longer affiliated with your organization)
+- Evaluate accounts in Active Directory that do not contain an altSecurityIdentities attribute after process execution for manual review and further remediation
+ 
+We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above.  Contact us at icam@gsa.gov if you'd like more information or if you'd like to collaborate with us.
+ 
+#### 3. Enable User Name Hints
 You need to enable _user name hints_ for your network domain.  This will modify the logon prompts for _Windows_ workstations and servers joined to the network domain.  Your users will be prompted to provide both the PIV credential PIN value and a User Name Hint value.
 
-Username Hint Setting:
-  For Windows 2008 R2:
+{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows Logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
+
+##### Username Hint Setting
+
+  **For Windows Server 2008 R2:**
   - _Computer Configuration_ -> _Policies_-> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
   - Select _Allow user name hint_
 
-  For Windows 2012:
+  **For Windows Server 2012 and later:**
   - _Computer Configuration_ -> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
   - Select _Allow user name hint_
 
 Management of smart card settings should be deployed using a group policy object for the domain.
+
+
+
