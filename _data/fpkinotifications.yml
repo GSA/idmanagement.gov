@@ -3927,7 +3927,7 @@
   change_type: Repository Outage 
   start_datetime:
   system: WidePoint Non-Federal Issuer  
-  change_description: Between approximately 9:30 P.M on April 27 and 7:00 P.M on April 28, 2021, users reported errors with the availability of the WidePoint ORC NFI 4 repositories. 
+  change_description: Between approximately 9:30 P.M (EDT) on April 27 and 7:00 P.M (EDT) on April 28, 2021, users reported errors with the availability of the WidePoint ORC NFI 4 repositories. 
   contact: PKIPolicy at ORC dot com  
   ca_certificate_hash: N/A     
   ca_certificate_issuer: N/A
@@ -3941,7 +3941,7 @@
   change_type: CRL Outage  
   start_datetime:
   system: DigiCert Federal Shared Service Provider 
-  change_description: Between approximately 3:30 P.M on April 28 and 6:30 P.M on April 29, 2021, users reported the Symantec SSP Intermediate CA G4 was serving an expired CRL.  
+  change_description: Between approximately 3:30 P.M (EDT) on April 28 and 6:30 P.M (EDT) on April 29, 2021, users reported the Symantec SSP Intermediate CA G4 was serving an expired CRL.  
   contact: enterprise dash pkisupport at digicert dotcom  
   ca_certificate_hash: N/A       
   ca_certificate_issuer: N/A  
@@ -3957,7 +3957,7 @@
   system: CertiPath Bridge CA
   change_description: CertiPath Bridge CA - G3 issued a renewed cross certificate to the Boeing PCA G3.
   contact: support at certipath dot com  
-  ca_certificate_hash:      
+  ca_certificate_hash: b0cb311c63c57c0cba33ca192ebd28cec0325fc4      
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US 
   ca_certificate_subject: CN=Boeing PCA G3, OU=certservers, O=Boeing, C=US    
   cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl 
