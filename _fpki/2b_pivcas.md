@@ -26,7 +26,7 @@ The page lists the certification authorities *currently* used for Personal Ident
 
 ## PIV Issuer Information
 
-{% include alert-info.html content="This table was last updated on <b>February 23, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>May 4, 2021</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
 
 <br>
   
@@ -72,6 +72,13 @@ These CA certificates are actively issuing PIV authentication certificates.
 - SHA-1 Hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f 
 
 #### DoD Issuing CAs
+**DoD ID CA-63**
+- Subject: CN = DOD ID CA-63, OU = PKI, OU = DoD, O = U.S. Government, C = US  
+- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+- Serial #: 050f  
+- Validity: April 6, 2021 to April 7, 2027
+- SHA-1 Hash: 67b75160bd8299e2342f46cc8ac634b2afb33768  
+
 **DoD ID CA-59**
 - Subject: CN = DOD ID CA-59, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
