@@ -97,9 +97,9 @@ collections:
   governance:
     output: true
     permalink: /governance/:path/
-  playbooks:
+  pages:
     output: true
-    permalink: /playbooks/:path/
+    permalink: /:path/
 
 permalink: pretty
 
