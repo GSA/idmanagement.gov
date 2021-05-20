@@ -45,11 +45,11 @@ Visit the [Sell](../sell/) page for more on testing and certification.
 
 ## Testing Guidance and Documents
 
-Functional requirements for the products are outlined in each test procedure. Review the testing agreements, and the test procedure for your specific product, and submit the agreement and package to fips201ep@gsa.gov.
+Functional requirements for the products are outlined in each test procedure. Review the testing agreements, and the test procedure for your specific product, and submit the agreement and package to fips201ep at gsa.gov.
 
 ### Testing Agreements
 
-Review the testing agreements, and sign and submit the appropriate agreement with your testing package to fips201ep@gsa.gov.
+Review the testing agreements, and sign and submit the appropriate agreement with your testing package to fips201ep at gsa.gov.
 
 - [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx) – The formal agreement to enter into testing, signed by the vendor and the government official.
 - [Reseller Acknowledgement Form (MS Word, September 2014)](../../docs/fips201ep-resellerform.docx) – If you are reselling another product, this must be disclosed and the signed agreement submitted.
@@ -58,17 +58,17 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 ## Personal Identity Verification (PIV) Credentials
 
-- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf) – If you are an agency or organization applying for your annual Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep@gsa.gov with available dates and times to visit the GSA testing labs.
+- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf) – If you are an agency or organization applying for your annual Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov with available dates and times to visit the GSA testing labs.
 - [Personal Identity Verification (PIV) Credential (PDF, January 2010)](../../docs/fips201ep-pivtestprocedures.pdf) – These test procedures are used by the independent, third-party labs to test card stock.
 
 ## Derived PIV (D-PIV) Credentials
 
-- [Annual Derived PIV Credential Issuer (DPCI) Testing Application Form (MS Word, September 2017)](../../docs/fips201ep-dpcitestform.docx) – If you are an agency or organization that currently issues D-PIV credentials and need to complete credential testing for your annual FPKI Audit, submit this form to fips201ep@gsa.gov.
+- [Annual Derived PIV Credential Issuer (DPCI) Testing Application Form (MS Word, September 2017)](../../docs/fips201ep-dpcitestform.docx) – If you are an agency or organization that currently issues D-PIV credentials and need to complete credential testing for your annual FPKI Audit, submit this form to fips201ep at gsa.gov.
 
 Agencies that wish to issue D-PIV credentials should follow these steps:
 1. Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO)
 2. Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs)
-3. Submit the Annual DPCI Testing Application Form (linked above) to fips201ep@gsa.gov
+3. Submit the Annual DPCI Testing Application Form (linked above) to fips201ep at gsa.gov
 4. Submit sample D-PIV credentials for testing
 
 Upon successful completion of DPCI testing, the agency or organization will be granted approval to issue D-PIV credentials.
