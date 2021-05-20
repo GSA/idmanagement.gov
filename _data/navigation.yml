@@ -29,8 +29,8 @@ sell:
 governance:
   - text: Governance Overview
     href: /governance/
-  - text: Federal Identity Governance
-    href: /governance/fedidentity/
+  - text: FICAM Governance
+    href: /governance/ficamgovernance/
   - text: Federal PKI Compliance Audit
     href: /governance/fpkiaudit
     
