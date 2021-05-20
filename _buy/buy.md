@@ -18,11 +18,12 @@ Find approved products and services for Federal Identity, Credential, and Access
 
 ## Products
 
-The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../../sell/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
+The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](/sell/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
 
-The Approved Products List (APL) contains the official list of these tested products.
+The Approved Products List (APL) contains the official list of these tested products. There are currently two approved product cagtegories:
 
-- Visit the [Approved Products List](../../sell/fips201apl/) page.
+1. [PIV Cards](/buy/apl-piv)
+2. [Physical Access Control Systems](/buy/apl-pacs)
 
 Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../../contact/) if you’re unsure if a product is fit for government use.
 
