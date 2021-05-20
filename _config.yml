@@ -50,6 +50,12 @@ primary_navigation:
         url: /buy/
       - name: Trust Services
         url: /buy/trust-services/
+      - name: FIPS 201 Approved Product List - PIV Cards
+        url: /buy/apl-piv/
+      - name: FIPS 201 Approved Product List - PACS
+        url: /buy/apl-pacs/
+      - name: FIPS 201 Removed product List
+        url: /buy/rpl/
   - name: Sell
     children:
       - name: Sell Overview
@@ -58,12 +64,16 @@ primary_navigation:
         url: /sell/fips201ep/
       - name: FIPS 201 Approved Product List
         url: /sell/fips201apl/
+      - name: FIPS 201 Announcements
+        href: /sell/fipsannouncements
+      - text: FRTC 1.3.3 Rev. G Errata
+        href: /sell/frcterrata/
   - name: Governance and Compliance
     children:
       - name: Governance and Compliance Overview
         url: /governance/
-      - name: Federal Identity Governance
-        url: /governance/fedidentity/
+      - name: FICAM Governance
+        url: /governance/ficamgovernance/
       - name: Federal PKI Compliance Audit
         url: /governance/fpkiaudit
   - name: Plan, Operate, and Maintain
