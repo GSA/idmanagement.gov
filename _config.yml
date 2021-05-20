@@ -45,7 +45,7 @@ primary_navigation:
     description: IDmanagement.gov
     url: /
   - name: About Us
-    href: /about/
+    url: /about/
   - name: Partners
     children:
       - name: Vendors
@@ -55,7 +55,7 @@ primary_navigation:
       - name: Program Managers
         url: /governance/
   - name: Resources
-    href: /playbooks/
+    url: /playbooks/
 
 secondary_navigation:
   - name: Contact Us
