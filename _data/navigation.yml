@@ -5,8 +5,10 @@ buy:
     href: /buy/
   - text: Trust Services
     href: /buy/trust-services/
-  - text: FIPS 201 Approved Product List
-    href: /buy/fips201apl/
+  - text: FIPS 201 Approved Product List - PIV Cards
+    href: /buy/fips201apl-pivcards/
+  - text: FIPS 201 Approved Product List - PACS
+    href: /buy/fips201apl-pacs/
   - text: FIPS 201 Removed Product list
     href: /buy/fips201rpl/
     
