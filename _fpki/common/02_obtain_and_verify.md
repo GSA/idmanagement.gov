@@ -13,7 +13,7 @@ subnav:
     href: '#verify-your-copy-of-fcpca-g2'
 ---
 
-To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
+To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all affected government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
 
 ## Download a Copy of FCPCA G2
 
@@ -44,7 +44,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on Microsoft Server 2016.
 <br>
-![A .gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/img/verify.gif){:style="width:85%;"}
+[![A .gif that shows the verification steps performed on Microsoft Server 2016](../../../assets/fpki/verify.gif){:style="width:100%;"}](../../../assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 <br>
 
@@ -60,10 +60,8 @@ To verify your copy of FCPCA G2, use one of these options:
 
 **Note:** The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina (10.15).
 <br>
-<video width="85%" controls>
-  <source src="../../assets/fpki/download_and_verify.mp4" type="video/mp4" alt="A video that shows the verification steps performed on macOS Catalina (10.15)">
-</video>
-<br>
+[![The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10.15](../../../assets/fpki/download_and_verify.gif){:style="width:85%;"}](../../../assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 
 ### On Linux/Unix: Use the Command Line
 1. Open the command line.
@@ -75,4 +73,4 @@ To verify your copy of FCPCA G2, use one of these options:
 
 <br>
 
-Next, [distribute the Federal Common Policy CA G2 certificate as an operating system trusted root](../common/distribute-os/).
+Next, [distribute the Federal Common Policy CA G2 certificate as an operating system trusted root](../distribute-os/).

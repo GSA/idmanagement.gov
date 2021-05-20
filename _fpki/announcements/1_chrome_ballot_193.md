@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Chrome TLS Certificate Lifetime Requirement
-pubDate: May 10, 2018
-archDate: October 21, 2019
+pubDate: 05/10/2018
+archiveDate: 05/09/2019
+removeDate: 05/09/2021
 collection: fpki
 permalink: fpki/announcements/2018tlslifetime/
-tag: announcement
+tag: Chrome
 description: tarting March 1, 2018, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
-sidenav: fpkiannouncements
+sidenav: fpkiarchivedannouncements
 sticky_sidenav: true
 status: Archived
 

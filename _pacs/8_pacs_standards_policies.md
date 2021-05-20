@@ -71,6 +71,8 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](../../docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}, v1.1.0, GSA, February 24, 2015.
 
+[_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}, 2020 Edition.
+
 [_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf){:target="_blank"}{:rel="noopener noreferrer"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018.
 
 [_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](../../docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014.
@@ -78,6 +80,8 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 [_Personal Identity Verification Interoperability for Issuers_](../../docs/pacs-piv-i-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017.
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016.
+
+[_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)_](../../docs/pacs-800-53-overlay.pdf){:target="_blank"}, Version 1.0, December 2020.
 
 ## Other Relevant Publications
 

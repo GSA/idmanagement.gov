@@ -59,7 +59,7 @@ How To Purchase
     <tbody>
       {% for category in categories %}
         <tr class="apl-table-category-heading" data-category="{{ category }}">
-          <th colspan="2" class="apl-table-heading" id="apl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
+          <th colspan="3" class="apl-table-heading" id="apl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
         </tr>
         {% for apl in site.data.fips201apl %}
           {% if apl.category == category %}

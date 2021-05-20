@@ -2,7 +2,7 @@
 
 arch:
   - text: Introduction
-    href: /arch/intro-arch/
+    href: /arch/
   - text: Goals & Objectives
     href: /arch/goals/
   - text: Services Framework
@@ -52,7 +52,7 @@ archusecases:
 
 piv:
   - text: Introduction
-    href: /piv/intro-piv/
+    href: /piv/
   - text: Basics of a PIV
     href: /piv/basics/
   - text: Getting Started
@@ -100,7 +100,7 @@ pivengineer:
 
 fpki:
   - text: Introduction
-    href: /fpki/intro-fpki/
+    href: /fpki/
   - text: Certification Authorities
     href: /fpki/ca/
   - text: Trust Stores
@@ -154,25 +154,37 @@ fpkitools:
   - text: CITE Participation Guide
     href: /fpki/tools/citeguide/
 
-## Remove Announcements older than two years
-
-fpkiannouncements:
+fpkiactiveannouncements:
   - text: Back to FPKI Guide
     href: /fpki/announcements/
-  - text: Federal Common Policy CA G2 Update ## Oct 2020
+  - text: Federal Common Policy CA G2 Update (2020) ## Oct 2020
     href: /fpki/announcements/common-g2-update/
-  - text: Upcoming Migration of Federal PKI Certificate Repository Services (Archived) ## Apr 2019
+
+## Remove Announcements older than three years
+
+fpkiarchivedannouncements:
+  - text: Back to FPKI Guide
+    href: /fpki/announcements/
+  - text: Upcoming Migration of Federal PKI Certificate Repository Services (2019) ## Apr 2019
     href: /fpki/announcements/2019fpkimigration/
-  - text: DigiCert CA Decommissioning (Archived) ## Mar 2019
+  - text: DigiCert CA Decommissioning (2019) ## Mar 2019
     href: /fpki/announcements/2019digicert/
-  - text: Removal of Health CAs from Federal PKI (Archived) ##  Mar 2019
+  - text: Removal of Health CAs from Federal PKI (2019) ##  Mar 2019
     href: /fpki/announcements/2019removal/
+  - text: Federal Common Policy CA Removal from Apple Trust Stores Impact (2018)
+    href: /fpki/announcements/2018applepkichanges/
+  - text: Chrome Certificate Transparency Requirements (2018)
+    href: /fpki/announcements/2018chromect/
+  - text: Federal Common Policy CA Removal from Microsoft Trust Store Impact (2018)
+    href: /fpki/announcements/2018mspkichanges/
+  - text: Chrome TLS Certificate Lifetime Requirement (2018)
+    href: /fpki/announcements/2018tlslifetime/
 
 #PACS Navigation
 
 pacs:
   - text: Introduction
-    href: /pacs/intro-pacs/
+    href: /pacs/
   - text: What is a Physical Access Control System?
     href: /pacs/what-is-pacs/
   - text: Physical Access Control System Deployment Models
@@ -194,33 +206,33 @@ pacs:
 
 pm:
   - text: Introduction
-    href: /ficampm/intro-pm/
+    href: /pm/
   - text: Program Governance and Leadership
-    href: /ficampm/governance/
+    href: /pm/governance/
   - text: Workstreams
-    href: /ficampm/workstreams/
+    href: /pm/workstreams/
   - text: Stakeholder Management
-    href: /ficampm/stakeholders/
+    href: /pm/stakeholders/
   - text: Communications Plan
-    href: /ficampm/comm/
+    href: /pm/comm/
   - text: Performance Management
-    href: /ficampm/performance/
+    href: /pm/performance/
   - text: Privacy Considerations
-    href: /ficampm/privacy/
+    href: /pm/privacy/
   - text: Examples and Guidance
-    href: /ficampm/examples/
+    href: /pm/examples/
 
 ## Other Site Navigation
 
 buy:
   - text: Buy Identity Products and Services
-    href: /buy/buy/
+    href: /buy/
   - text: Trust Services
     href: /buy/trust-services/
     
 sell:
   - text: Sell Identity Products and Services
-    href: /sell/sell/
+    href: /sell/
   - text: FIPS 201 Evaluation Program
     href: /sell/fips201ep/
   - text: FIPS 201 Approved Product List
@@ -242,15 +254,15 @@ policy:
 
 footer:
   - text: FICAM Architecture
-    href: /arch/intro-arch/
+    href: /arch/
   - text: FICAM Program Management
-    href: /ficampm/intro-pm/
+    href: /pm/
   - text: Federal PKI (FPKI)
-    href: /fpki/intro-fpki/
+    href: /fpki/
   - text: Personal Identity Verification (PIV)
-    href: /piv/intro-piv/
+    href: /piv/
   - text: Physical Access Control Systems (PACS)
-    href: /pacs/intro-pacs/
+    href: /pacs/
 
 # Playbooks Navigation
 

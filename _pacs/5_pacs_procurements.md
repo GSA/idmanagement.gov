@@ -318,7 +318,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank" rel="noopener noreferrer">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
-	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer.service@gsa.gov or call 1-800-488-3111.</li>
+	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer.service at gsa.gov or call 1-800-488-3111.</li>
   </ul>
   </td>
 </tr>
