@@ -1,8 +1,8 @@
 ---
 layout: page
 collection: governance
-title:  Federal Identity Governance
-permalink: governance/fedidentity/
+title:  FICAM Governance
+permalink: governance/ficamgovernance/
 sidenav: governance
 
 subnav:
