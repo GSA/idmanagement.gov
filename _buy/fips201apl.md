@@ -1,10 +1,11 @@
 ---
 layout: page
 title: FIPS 201 Approved Products List
-collection: sell
-permalink: sell/fips201apl/
+collection: buy
+permalink: buy/fips201apl/
 sticky_sidenav: true
-sidenav: sell
+sidenav: buy
+
 ---
 
 The Approved Products List (APL) provides federal agencies with products and services that have been approved for FICAM implementation based on rigorous security vulnerability and interoperability testing performed by the FIPS 201 Evaluation Program.
