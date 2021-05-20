@@ -26,7 +26,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
         <th colspan="6" class="rpl-table-heading" id="rpl-table-heading-{{ category | slugify }}"><b>{{ category }} APL Category</b></th>
       </tr>
       {% for rpl in site.data.fips201rpl %}
-        {% if rpl.categoryApl == category %}
+        {% if rpl.category == category %}
           <tr class="rpl-table-row" data-category="{{ rpl.category }}">
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-supplier">{{ rpl.supplier }}</td>
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-nameProduct">{{ rpl.nameProduct}}</a></td>
