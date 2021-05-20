@@ -1,10 +1,10 @@
 ---
 layout: page
 title: FIPS 201 Approved Products List - PIV Cards
-permalink: sell/piv/
-collection: sell
+permalink: buy/piv/
+collection: buy
 sticky_sidenav: true
-sidenav: sell
+sidenav: buy
 
 subnav:
     - text: Approved PIV Cards
