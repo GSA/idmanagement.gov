@@ -18,12 +18,12 @@ Find approved products and services for Federal Identity, Credential, and Access
 
 ## Products
 
-The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](/sell/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
+The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../sell/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
 
 The Approved Products List (APL) contains the official list of these tested products. There are currently two approved product cagtegories:
 
-1. [PIV Cards](/buy/apl-piv)
-2. [Physical Access Control Systems](/buy/apl-pacs)
+1. [PIV Cards](../apl-piv/)
+2. [Physical Access Control Systems](../apl-pacs/)
 
 Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../../contact/) if you’re unsure if a product is fit for government use.
 
@@ -59,4 +59,4 @@ GSA Schedules provide access to long-term government-wide contracts with commerc
 - [Buy from Schedule 70](https://www.gsa.gov/portal/content/104506){:target="_blank"}{:rel="noopener noreferrer"}
 - [IT Schedule 70 IT Services](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"}– scroll down to “Cybersecurity – ICAM” for links to specific items
 
-Note that the purchasing process may differ, depending on the particular product or service you want. If you need help, please contact us.
+Note that the purchasing process may differ, depending on the particular product or service you want. If you need help, please contact icam at gsa.gov.
