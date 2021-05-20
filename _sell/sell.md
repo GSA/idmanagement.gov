@@ -2,7 +2,7 @@
 layout: page
 title:  Sell Identity Products and Services
 collection: sell
-permalink: sell/sell/
+permalink: sell/
 sticky_sidenav: true
 sidenav: sell
 
