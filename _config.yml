@@ -66,7 +66,7 @@ primary_navigation:
         url: /governance/fedidentity/
       - name: Federal PKI Compliance Audit
         url: /governance/fpkiaudit
-  - name: Plan, Execute, and Operate
+  - name: Plan, Operate, and Maintain
         url: /playbooks/
 
 secondary_navigation:
