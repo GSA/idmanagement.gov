@@ -37,7 +37,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
       <th id="rpl-table-heading-nameProduct" scope="col">Product Name(s)</th>
       <th id="rpl-table-heading-numberProduct" scope="col">Product Number</th>
       <th id="rpl-table-heading-dateRemoval" scope="col">Removal Date</th>
-      <th id="rpl-table-heading-numberAPL" scope="col">APL #</th>
+      <th id="rpl-table-heading-numberApl" scope="col">APL #</th>
       <th id="rpl-table-heading-reason" scope="col">Reason For Removal</th>
     </tr>
   </thead>
@@ -53,7 +53,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-nameProduct">{{ rpl.nameProduct}}</a></td>
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberProduct">{{ rpl.numberProduct }}</td>
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-dateRemoval">{{ rpl.dateRemoval}}</a></td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberAPL">{{ rpl.numberAPL }}</td>
+            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberApl">{{ rpl.numberApl}}</td>
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-reason">{{ rpl.reason}}</a></td>
           </tr>
         {% endif %}
