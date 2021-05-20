@@ -1,12 +1,12 @@
 # FIPS 201 Removed Product List
 
--   category: 'PACS and Validation Infrastructure'
-    supplier: Vicount
-    nameProduct: 'PACS and Validation Software for Viscount Freedom 1302'
-    numberProduct: '30-1302-PVS,50-1302-PIV,30-1302-FCM,50-1302-1'
-    dateRemoval: 'Wednesday, November 25, 2020'
-    numberApl: '10029'
-    reason: 'Not approved for FRTC 1.3.3'
+-  category: 'PACS and Validation Infrastructure'
+   supplier: Vicount
+   nameProduct: 'PACS and Validation Software for Viscount Freedom 1302'
+   numberProduct: '30-1302-PVS,50-1302-PIV,30-1302-FCM,50-1302-1'
+   dateRemoval: 'Wednesday, November 25, 2020'
+   numberApl: '10029'
+   reason: 'Not approved for FRTC 1.3.3'
     
 -   category: 'PACS Infrastructure'
     supplier: 'Galaxy Control Systems'
