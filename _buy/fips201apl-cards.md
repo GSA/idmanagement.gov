@@ -7,6 +7,8 @@ sticky_sidenav: true
 sidenav: buy
 
 subnav:
+    - text: How to Purchase PIV Cards
+      href: '#how-to-purchase'
     - text: Approved PIV Cards
       href: '#piv-cards-approved'
     - text: Legacy PIV Cards
@@ -20,18 +22,21 @@ subnav:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL).
+The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
+
+If you do not see a card below, it's possible it's on the [Removed Product List](../fips201rpl/)
+
 Please Note:
 
-Tri-Interface cards are not approved for Federal Government PIV or CAC card use. Agencies should not procure them. They are listed on the APL for industry-only procurement.
-Manufacturers may call Tri-Interface cards by different names (for example, Dual Hybrid). The prohibited feature of Tri-Interface cards is a prox interface (a 125 kHz antenna).
-Agencies should procure only cards validated by the NIST Personal Identity Verification Program (NPIVP).
+- Tri-Interface cards are not approved for Federal Government PIV or CAC card use. Agencies should not procure them. They are listed on the APL for industry-only procurement.
+- Manufacturers may call Tri-Interface cards by different names (for example, Dual Hybrid). The prohibited feature of Tri-Interface cards is a prox interface (a 125 kHz antenna).
+- Agencies should procure only cards validated by the NIST Personal Identity Verification Program (NPIVP).
 
-## PIV Cards – Approved
+## How To Purchase
 
-How To Purchase
+Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing guidance.
 
-### Approved PIV Cards
+## Approved PIV Cards
 
 <div class="usa-width-one-fourth">
   <fieldset class="usa-fieldset-inputs guides-filter">
@@ -75,11 +80,10 @@ How To Purchase
   </table>
 </div>
 
-## PIV Cards – Legacy
+## Legacy PIV Cards
 
 Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program, and any cardstock designated as “legacy” is placed on this legacy list. However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by June 30, 2024.
 
-### Legacy PIV Cards
 - Gemalto IDCore 3020 v1, 128k dual-interface with ActivIdentity Digital Identity Applet Suite – APL# 1244
 - Giesecke & Devrient StarSign(R) SmartCafe(R) Expert 144K with PIV Applet – APL# 525
 - IDEMIA ID-One (Type A) Large D – APL# 587
@@ -88,17 +92,15 @@ Agencies procuring cardstock from the legacy list assume all risks associated wi
 
 If your agency needs to purchase cardstock from this legacy list, you must submit an Assumption of Risk Memorandum (memo) from the agency Chief Information Officer(s) to the General Services Administration (GSA). The memo must contain the following information:
 
-Acknowledgement of the assumption of all associated security risks;
-Acknowledgement of non-compliance with NIST standards;
-A transition plan specifying major milestones to achieve full compliance by the 2024 deadline; and
-Implications resulting from non-compliance with federal policy related to this purchase.
-Submit the memo to GSA’s Associate Administrator for Government-wide Policy (OGP) (regardless of the procurement vehicle used). If using GSA Schedules as the procurement vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
+- Acknowledgement of the assumption of all associated security risks;
+- Acknowledgement of non-compliance with NIST standards;
+- A transition plan specifying major milestones to achieve full compliance by the 2024 deadline; and
+- Implications resulting from non-compliance with federal policy related to this purchase.
+
+Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory) (regardless of the procurement vehicle used). If using [GSA Schedules](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules) as the procurement vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
 
 Note that GSA will provide the Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB) with copies of all memos submitted.
 
 Based on agency-provided transition plans, GSA OGP will review the products on the legacy list in 12 months (May 2020) for removal.
 
-Please email icam at gsa.gov with questions.
-
-How To Purchase
-Visit the Buy Page to view FICAM products, services and purchasing guidance.
+Please email fips201ep at gsa.gov with questions.
