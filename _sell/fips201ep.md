@@ -58,12 +58,12 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 ## Personal Identity Verification (PIV) Credentials
 
-- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pciform.pdf) – If you are an agency or organization applying for your annual Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep@gsa.gov with available dates and times to visit the GSA testing labs.
-- [Personal Identity Verification (PIV) Credential (PDF, January 2010)](../../docs/fips201ep-pivform.pdf) – These test procedures are used by the independent, third-party labs to test card stock.
+- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf) – If you are an agency or organization applying for your annual Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep@gsa.gov with available dates and times to visit the GSA testing labs.
+- [Personal Identity Verification (PIV) Credential (PDF, January 2010)](../../docs/fips201ep-pivtestprocedures.pdf) – These test procedures are used by the independent, third-party labs to test card stock.
 
 ## Derived PIV (D-PIV) Credentials
 
-- [Annual Derived PIV Credential Issuer (DPCI) Testing Application Form (MS Word, September 2017)](../../docs/fips201ep-dpciform.docx) – If you are an agency or organization that currently issues D-PIV credentials and need to complete credential testing for your annual FPKI Audit, submit this form to fips201ep@gsa.gov.
+- [Annual Derived PIV Credential Issuer (DPCI) Testing Application Form (MS Word, September 2017)](../../docs/fips201ep-dpcitestform.docx) – If you are an agency or organization that currently issues D-PIV credentials and need to complete credential testing for your annual FPKI Audit, submit this form to fips201ep@gsa.gov.
 
 Agencies that wish to issue D-PIV credentials should follow these steps:
 1. Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO)
@@ -92,7 +92,7 @@ Vendors, please complete the following steps.
 
 1. Review the [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx).
 2. Include one or both of the following, signed by a C- or VP-level individual:
-    - [Product/Service Self-Attestation Form (MS Word, August 2018)](../../docs/pacsapp-productattestationform.docx)
+    - [Product/Service Self-Attestation Form (MS Word, August 2018)](../../docs/pacsapp-attestationform.docx)
     - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx)
     - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx)
 3. Complete the [Applicant Product Equipment List (MS Word, September 2017)](../../docs/pacsapp-equipmentlist.docx).
