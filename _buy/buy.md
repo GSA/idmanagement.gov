@@ -2,7 +2,7 @@
 layout: page
 collection: buy
 title:  Buy Identity Products and Services
-permalink: buy/buy/
+permalink: buy/
 sidenav: buy
 
 subnav:
