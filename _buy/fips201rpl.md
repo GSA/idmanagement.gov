@@ -7,10 +7,31 @@ sidenav: buy
 
 ---
 
+{% assign categories = "" | split: "" %}
+{% for rpl in site.data.fips201rpl %}
+  {% assign category = rpl.category | strip %}
+  {% assign categories = categories | push: category | uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
+
 The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were at one time on the Approved Products List but are no longer approved for government use. Due to security concerns, products on the RPL are not recommended for government procurement. Products will be removed from the RPL after 3 years.
 
+<div class="usa-width-one-fourth">
+  <fieldset class="usa-fieldset-inputs rpl-filter">
+    <legend>APL Categories</legend>
+    <ul class="usa-unstyled-list">
+      {% for category in categories %}
+      <li>
+        <input class="rpl-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <label for="category-{{ category | slugify }}">{{ category }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+</div>
+
 <table class="usa-table--borderless rpl-table">
-  <thead class="usa-sr-only">
+  <thead class="usa-sr">
     <tr>
       <th id="rpl-table-heading-supplier" scope="col">Supplier</th>
       <th id="rpl-table-heading-nameProduct" scope="col">Product Name(s)</th>
@@ -23,7 +44,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
   <tbody>
     {% for category in categories %}
       <tr class="rpl-table-category-heading" data-category="{{ category }}">
-        <th colspan="6" class="rpl-table-heading" id="rpl-table-heading-{{ category | slugify }}"><b>{{ category }} APL Category</b></th>
+        <th colspan="6" class="rpl-table-heading" id="rpl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
       </tr>
       {% for rpl in site.data.fips201rpl %}
         {% if rpl.category == category %}
