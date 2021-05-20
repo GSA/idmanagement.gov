@@ -113,23 +113,23 @@ The FIPS 201 Evaluation Program has removed the following categories, displayed 
 
 Below are some resources that provide information, guidance, or a replacement certification list for some of the removed FIPS 201 categories:
 
-- Guidance through the [FICAM Playbooks](https://playbooks.idmanagement.gov)
+- Guidance through the [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}
 - Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
-- New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fpki-pivtesting.pdf); Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
+- New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fips201ep-pcitestform.pdf); Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
 Please note the removal of these categories should not impact any procurements. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
 
 | Categories Removed	| Replacement |
 | ------------------- | ----------- |
-| Card Printer Station	| FPKIPA Annual PIV Credential Issuer Testing |
+| Card Printer Station	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf) |
 | Certificate Validator	| Server-based Certificate Validation Protocol Category |
 | Cryptographic Module	| [NIST FIPS 140-2 Validation List](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"} |
-| Electronic Personalization	| FPKIPA Annual PIV Credential Issuer Testing |
-| Facial Image Capturing Camera	| FPKIPA Annual PIV Credential Issuer Testing |
-| Facial Image Capturing Camera (Middleware) | FPKIPA Annual PIV Credential Issuer Testing |
-| Graphical Representation	| FPKIPA Annual PIV Credential Issuer Testing |
+| Electronic Personalization	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf) |
+| Facial Image Capturing Camera	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf) |
+| Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf)|
+| Graphical Representation	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf) |
 | LACS Caching Status Proxy	| Server-based Certificate Validation Protocol Category |
-| LACS Mobile Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov) |
-| LACS Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov) |
+| LACS Mobile Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} |
+| LACS Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} |
 | PIV Middleware	| [NIST PIV Middleware Certification List](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} |
 | Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://www.fbibiospecs.cjis.gov/Certifications){:target="_blank"}{:rel="noopener noreferrer"} |
 | Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
