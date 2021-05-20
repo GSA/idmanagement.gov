@@ -1,40 +1,6 @@
 {% comment %}
 Use this section to highlight key elements of your site. Some sites will only have two while others may have six to
 eight.
-<section class="usa-graphic-list usa-section usa-section--dark">
-  <div class="grid-container">
-    <div class="usa-graphic-list__row grid-row grid-gap">
-       <div class="usa-media-block tablet:grid-col">
-        {% asset arch-icon.png class="usa-media-block__img" alt="Buy Products and Services" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/buy/">Buy Products and Services</a></h3>
-          <p>For Government Agencies, Find approved Federal Identity, Credential, and Access Management (FICAM) products and services and helpful links to purchase items from a GSA Schedule.</p>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        {% asset ficampm-icon.png class="usa-media-block__img" alt="Sell Products and Services" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/sell/">Sell Products and Services</a></h3>
-          <p> For Vendors, learn how to get your Federal Identity, Credential, and Access Management (FICAM) product or service tested, approved, and added to a GSA Schedule.</p>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        {% asset pki-icon.png class="usa-media-block__img" alt="Governance and Compliance" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/governance/">Governance and Compliance</a></h3>
-          <p>Information about Government-wide Identity Governance and Federal Public Key Infrastructure (FPKI) Compliance.</p>
-        </div>
-       </div>
-      <div class="usa-media-block tablet:grid-col">
-        {% asset piv-icon.png class="usa-media-block__img" alt="Plan, Operate, and Maintain" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="https://playbooks.idmanagement.gov">Plan, Operate, and Maintain</a></h3>
-          <p>The Federal Identity, Credential, and Access Management (FICAM) Playbooks are a government-wide collaboration to develop and share the best management practices related to planning, operating, and maintaining federally-compliant identity systems.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 {% endcomment %}
 
 <section class="ficam-page-container">
@@ -50,7 +16,7 @@ eight.
 			<div class="desktop:grid-col-4 padding-2">
 				<div class="grid-row">
 					<div class="tablet:grid-col-3 home-partners-icon-container">
-						<img class="home-partners-icon" src="{{site.baseurl}}/assets/images/ficampm-icon.png" alt="">
+						<img class="home-partners-icon" src="{{site.baseurl}}/_assets/images/ficampm-icon.png" alt="">
 					</div>
 					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
 						<div class="home-partners-text">
@@ -66,13 +32,13 @@ eight.
 			<div class="desktop:grid-col-4 padding-2">
 				<div class="grid-row">
 					<div class="tablet:grid-col-3 home-partners-icon-container">
-						<img class="home-partners-icon" src="{{site.baseurl}}/assets/images/arch-icon.png" alt="">
+						<img class="home-partners-icon" src="{{site.baseurl}}/_assets/images/arch-icon.png" alt="">
 					</div>
 					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
 						<div class="home-partners-text">
 							<h3>Federal Procurement Professionals</h3>
 							<p class="margin-bottom-4">Adopt innovative Identity, Credential, and Access Management (ICAM) products and services to meet your agency’s mission needs</p>
-							<a href="{{site.baseurl}}/buy/" class="partner-learn-more">Learn How</a>
+							<a href="{{site.baseurl}}/buy/" class="partner-learn-more">Start Research</a>
 						</div>
 					</div>
 				</div>
@@ -83,18 +49,33 @@ eight.
 			<div class="desktop:grid-col-4 padding-2">
 				<div class="grid-row">
 					<div class="tablet:grid-col-3 home-partners-icon-container">
-						<img class="home-partners-icon" src="{{site.baseurl}}/assets/images/playbook-icon.png" alt="">
+						<img class="home-partners-icon" src="{{site.baseurl}}/_assets/images/playbook-icon.png" alt="">
 					</div>
 					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
 						<div class="home-partners-text">
-							<h3>Federal ICAM Professionals</h3>
-							<p class="margin-bottom-4">Plan, govern, operate, and maintain ICAM-compliant systems.</p>
+							<h3>Federal ICAM Program Managers</h3>
+							<p class="margin-bottom-4">Learn about government-wide ICAM governance processes and bodies.</p>
 							<a href="{{site.baseurl}}/governance/" class="partner-learn-more">Collaborate with Us</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
+			
+			
+			<div class="desktop:grid-col-4 padding-2">
+				<div class="grid-row">
+					<div class="tablet:grid-col-3 home-partners-icon-container">
+						<img class="home-partners-icon" src="{{site.baseurl}}/_assets/images/pki-icon.png" alt="">
+					</div>
+					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
+						<div class="home-partners-text">
+							<h3>Federal ICAM Professionals</h3>
+							<p class="margin-bottom-4">Plan, operate, and maintain FICAM-compliant systems and services.</p>
+							<a href="{{site.baseurl}}/governance/" class="partner-learn-more">Learn How</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>	
 </section>
