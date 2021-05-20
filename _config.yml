@@ -47,26 +47,28 @@ primary_navigation:
   - name: Buy
     children:
       - name: Buy Overview
-        url: /buy/buy/
+        url: /buy/
       - name: Trust Services
         url: /buy/trust-services/
   - name: Sell
     children:
       - name: Sell Overview
-        url: /sell/sell/
+        url: /sell/
       - name: FIPS 201 Evaluation Program
         url: /sell/fips201ep/
       - name: FIPS 201 Approved Product List
         url: /sell/fips201apl/
   - name: Governance and Compliance
     children:
+      - name: Governance and Compliance Overview
+        url: /governance/
       - name: Federal Identity Governance
         url: /governance/fedidentity/
       - name: Federal PKI Compliance Audit
-        url: /governance/fpkiaudit/
+        url: /governance/fpkiaudit
   - name: Plan and Execute
-      - name: FICAM Playbooks (external site)
-        url: https://playbooks.idmanagement.gov
+      - name: FICAM Playbooks
+        url: /playbooks/
 
 secondary_navigation:
   - name: Contact Us
@@ -110,9 +112,9 @@ collections:
   governance:
     output: true
     permalink: /governance/:path/
-  pages:
+  playbooks:
     output: true
-    permalink: /:path/
+    permalink: /playbooks/:path/
 
 permalink: pretty
 
