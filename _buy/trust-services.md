@@ -96,7 +96,7 @@ Each Trust Framework is identified by the category of federation technology and 
 
 Then, fill out the application contained in this document:
 
-- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdfs){:target="_blank"}(PDF, May 2017).
+- Download the [FPKI Bridge Application Process Overview](../docs/fpki-bridge-app-process.pdf){:target="_blank"}(PDF, May 2017).
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
