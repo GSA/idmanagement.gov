@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: buy
-title:  Buy Identity Products and Services
+title:  Buy FICAM Products and Services
 permalink: buy/
 sidenav: buy
 
@@ -16,18 +16,18 @@ subnav:
 
 Find approved products and services for Federal Identity, Credential, and Access Management (FICAM) implementations, and helpful links for purchasing these items using GSA Schedules.
 
-## Products
+# Products
 
 The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../sell/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
 
 The Approved Products List (APL) contains the official list of these tested products. There are currently two approved product cagtegories:
 
-1. [PIV Cards](../apl-piv/)
-2. [Physical Access Control Systems](../apl-pacs/)
+1. [PIV Cards](../buy/apl-piv/)
+2. [Physical Access Control Systems](../buy/apl-pacs/)
 
 Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../../contact/) if you’re unsure if a product is fit for government use.
 
-## Services
+# Services
 
 The following organizations offer Identity, Credential, and Authentication services to the Federal government. If your organization has a relevant Identity, Credential, or Authentication service, contact us so we can add it to the list.
 
@@ -47,7 +47,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 - [Login.gov](https://www.login.gov){:target="_blank"}{:rel="noopener noreferrer"} – Shared government single sign on service to allow public consumers to securely access federal government services.
 - [Trust Services for Citizens](../trust-services#consumer-identity-and-credentials) – Approved identity and credentialing services for individual citizens, and which the government has approved for federated identity services.
 
-## GSA Schedules
+# GSA Schedules
 
 GSA Schedules provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. IT Schedule 70 offers tools and expertise to shorten procurement cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 

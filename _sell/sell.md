@@ -27,11 +27,11 @@ It takes just three steps to get a product approved for use by federal agencies:
 
 ### Step 1 – Review Testing Documents
 
-The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../fips201ep/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
+The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../sell/fips201ep/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
 
 Review the applicable testing document(s) for the product(s) you wish to have tested. Products we test include PIV cards and Physical Access Control Systems (PACS).
 
-[Review testing documents and procedures]((../fips201ep/)
+[Review testing documents and procedures](../sell/fips201ep/)
 
 ### Step 2 – Contact a Testing Lab
 
@@ -53,7 +53,7 @@ GSA manages testing and certification for Physical Access Control Systems (PACS)
 - GSA FICAM Testing Lab
   - Contact: fips201ep at gsa.gov
 
-After your product passes testing, you’ll receive a signed document showing the approval, and your product will be listed on the [Approved Products List (APL)](../fips201apl).
+After your product passes testing, you’ll receive a signed document showing the approval, and your product will be listed on the [Approved Products List (APL)](../buy/fips201apl).
 
 ### Step 3 – Get on a GSA Schedule
 
