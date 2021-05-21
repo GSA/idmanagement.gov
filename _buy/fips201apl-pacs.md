@@ -9,14 +9,19 @@ sidenav: buy
 subnav:
     - text: How to Purchase
       href: '#how-to-purchase'
-    - text: Approved PACS Products - 13.01 Topology
-      href: '#approved-pacs-products--13.01-topology'
-    - text: Approved PACS Products - 13.02 Topology
-      href: '#approved-pacs-products--13.02-topology'
+    - text: Approved PACS Products
+      href: '#approved-pacs-products'
     - text: PACS Products Awaiting Approval
       href: '#pacs-products-awaiting-approval'
 
 ---
+
+{% assign category = "" | split: "" %}
+{% for pacs in site.data.fips201pacs1301 %}
+  {% assign category = pacs.category | strip %}
+  {% assign categories = categories | push: category | uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
@@ -27,13 +32,14 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 
 Visit the [Buy Page](../) to view FICAM products, services and purchasing guidance.
 
-# Approved PACS Products - 13.01 Topology
+# Approved PACS Products
 
-<div class="usa-width-three-fourths">
+<table class="usa-table--borderless pacs-table">
   {% for category in categories %}
     <tr class="pacs-table-category-heading" data-category="{{ category }}">
       <th colspan="1" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} </b></th>
     </tr>
+  <tbody>
     {% for pacs in site.data.fips201pacs1301 %}
       {% if pacs.category == category %}
         <tr class="pacs-table-row" data-branch="{{ pacs.category }}">
@@ -76,8 +82,8 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
       {% endif %} <!-- end category loop -->
     {% endfor %} <!-- end data loop -->
   {% endfor %} <!-- end header loop -->
-</div>
-
+  </tbody>
+</table>
 
 # PACS Solutions Awaiting Approval
 
