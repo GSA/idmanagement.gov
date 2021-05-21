@@ -28,6 +28,7 @@ If you seek a document that is older than three years or not listed here, please
   <thead class="usa-sr-only">
     <tr>
       <th id="fpkidocs-table-heading-name" scope="col">Document Name</th>
+            <th id="fpkidocs-table-heading-date" scope="col">Date</th>
       <th id="fpkidocs-table-heading-description" scope="col">Document Description</th>
     </tr>
   </thead>
@@ -40,7 +41,8 @@ If you seek a document that is older than three years or not listed here, please
         {% if fpkidocs.category == category %}
           <tr class="fpkidocs-table-row" data-category="{{ fpkidocs.category }}">
             <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-name"><a href="{{ fpkidocs.url | prepend: site.baseurl }}">{{ fpkidocs.name }}</td>
-            <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-description">{{ fpkidocs.ca }}</a></td>
+            <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-date">{{ fpkidocs.date }}</a></td>
+            <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-description">{{ fpkidocs.description }}</a></td>
           </tr>
         {% endif %}
       {% endfor %} <!--fpkidocs-->
