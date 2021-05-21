@@ -48,7 +48,6 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
               <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
             </tr>
         {% endfor %} <!--apl-->
-      {% endfor %}<!--category-->
     </tbody>
   </table>
 </div>
