@@ -1,5 +1,5 @@
 ---
-layout: pagewide
+layout: page
 collection: buy
 title:  GSA ICAM Solutions Catalog
 permalink: buy/icamsolutions/
