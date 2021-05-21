@@ -53,7 +53,7 @@ Visit the [Buy Page](../buy) to view FICAM products, services and purchasing gui
                 </ul>
               <li><strong>Use with FIPS 201-2 Credential Status:</strong> {{ pacs.fipsstatus }} </li>
             </ul>
-          {% endif % }
+          {% endif %}
         {% endfor %} <!--pacs-->
       {% endfor %}<!--category-->
     </tbody>
