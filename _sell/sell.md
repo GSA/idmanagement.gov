@@ -53,7 +53,7 @@ GSA manages testing and certification for Physical Access Control Systems (PACS)
 - GSA FICAM Testing Lab
   - Contact: fips201ep at gsa.gov
 
-After your product passes testing, you’ll receive a signed document showing the approval, and your product will be listed on the [Approved Products List (APL)](../buy/fips201apl).
+After your product passes testing, you’ll receive a signed document showing the approval, and your product will be listed on the [Approved Products List (APL)](../buy#products).
 
 ### Step 3 – Get on a GSA Schedule
 

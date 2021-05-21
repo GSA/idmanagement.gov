@@ -4,6 +4,7 @@ collection: buy
 title:  Trust Services
 permalink: buy/trust-services/
 sidenav: buy
+sticky_sidenav: true
 
 subnav:
   - text: Overview
@@ -22,7 +23,7 @@ This page is for agencies to view the current service providers that have an ide
 
 The services provided rely upon a level of trust to be established with the U.S. Government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI) or Trust Framework Services (TFS) initiatives.
 
-If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies](../../fpki/crls/pivcas/) or the [FPKI Graph](../../fpki/tools/fpkigraph/).
+If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies](https://playbooks.idmanagement.gov/fpki/crls/pivcas/){:target="_blank"}{:rel="noopener noreferrer"} or the [FPKI Graph](https://playbooks.idmanagement.gov/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Overview
 
@@ -69,8 +70,6 @@ For each, we identify whether the services include:
 - Person identity using PKI for business-to-government digital signatures
 - Person identity using non-PKI federation technologies
 
-Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
-
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
 | [Carillon Information Security](https://www.carillon.ca/){:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques>br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
@@ -93,11 +92,11 @@ Services operating within these Trust Frameworks may be used by U.S. Government 
 
 Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
 
-- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../docs/fpki-test-req-guide){:target="_blank"}{:rel="noopener noreferrer"} (PDF, December 2017).
+- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../docs/fpki-test-req-guide.pdf){:target="_blank"}(PDF, December 2017).
 
 Then, fill out the application contained in this document:
 
-- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process){:target="_blank"}{:rel="noopener noreferrer"} (PDF, May 2017).
+- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdfs){:target="_blank"}(PDF, May 2017).
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  

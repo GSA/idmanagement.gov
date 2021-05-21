@@ -3,6 +3,7 @@ layout: page
 title: FIPS 201 Approved Products List - Physical Access Control System Components
 permalink: buy/apl-pacs/
 collection: buy
+sticky_sidenav: true
 sidenav: buy
 
 subnav:

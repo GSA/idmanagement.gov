@@ -3,6 +3,7 @@ layout: page
 title: FIPS 201 Removed Product List
 permalink: buy/rpl/
 collection: buy
+sticky_sidenav: true
 sidenav: buy
 
 ---
@@ -49,12 +50,12 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
       {% for rpl in site.data.fips201rpl %}
         {% if rpl.category == category %}
           <tr class="rpl-table-row" data-category="{{ rpl.category }}">
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-supplier">{{ rpl.supplier }}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-nameProduct">{{ rpl.nameProduct}}</a></td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberProduct">{{ rpl.numberProduct }}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-dateRemoval">{{ rpl.dateRemoval}}</a></td>
             <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberApl">{{ rpl.numberApl}}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-reason">{{ rpl.reason}}</a></td>
+            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-supplier">{{ rpl.supplier }}</td>
+            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-nameProduct">{{ rpl.nameProduct}}</td>
+            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberProduct">{{ rpl.numberProduct }}</td>
+            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-dateRemoval">{{ rpl.dateRemoval}}</td>
+            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-reason">{{ rpl.reason}}</td>
           </tr>
         {% endif %}
       {% endfor %} <!--rpl-->

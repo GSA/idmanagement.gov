@@ -4,6 +4,7 @@ collection: buy
 title:  Buy FICAM Products and Services
 permalink: buy/
 sidenav: buy
+sticky_sidenav: true
 
 subnav:
   - text: Products

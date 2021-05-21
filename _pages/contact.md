@@ -10,7 +10,7 @@ sticky_sidenav: true
 A quick check of some common resources may answer your question more quickly than waiting for a return email. Please check the FICAM Playbooks for general information about Federal Identity, Credential, and Access Management (FICAM). Other common tasks include:
 
 - Find approved FICAM products and services
-- Get your product/service onto the Approved Products List
+- Get your product/service onto the [Approved Products List](../buy#products)
 - Find information for FICAM developers
 - Find information for FICAM program managers
 

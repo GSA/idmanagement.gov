@@ -39,7 +39,7 @@ Product testing is performed by either:
 - Third-party accredited testing labs, OR
 - GSA-managed testing labs
 
-If the product passes testing and review, the vendor is granted a letter of certification, and the product is placed on the [Approved Products List (APL)](../fips201apl/). The APL includes product information, version, date of certification, and special considerations.
+If the product passes testing and review, the vendor is granted a letter of certification, and the product is placed on the [Approved Products List (APL)](../buy#products/). The APL includes product information, version, date of certification, and special considerations.
 
 Visit the [Sell](../sell/) page for more on testing and certification.
 

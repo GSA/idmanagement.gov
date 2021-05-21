@@ -40,7 +40,7 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 - On-Card Comparison (OCC)
 - Backend Registration for PACS
 
-Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201ep/).
+Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../sell/fips201ep/).
 
 
 # Category Removed from the APL December 2020
@@ -56,7 +56,7 @@ Please note the removal of this category should not impact any existing procurem
 
 POSTED April 30, 2019
 
-The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../fips201apl/). After analyzing the Approved Products List categories,the program found that:
+The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../buy#products). After analyzing the Approved Products List categories,the program found that:
 
 - OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to procurement and/or installation.
 - SCVP Client and SCVP Client (without auth) are not widely used in US federal agencies. It is not in the government’s or commercial best interests to continue to maintain testing scenarios for these products.
@@ -105,7 +105,7 @@ The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue t
 
 POSTED October 29, 2016
 
-The FIPS 201 Evaluation Program has removed the following categories, displayed in the table to the right, from the [Approved Products List](../fips201apl/). After analyzing the Approved Products List categories, the Program found that:
+The FIPS 201 Evaluation Program has removed the following categories, displayed in the table to the right, from the [Approved Products List](../buy#products). After analyzing the Approved Products List categories, the Program found that:
 
 - Many products on the APL are not for sale anymore
 - Most testing and approval procedures were outdated
@@ -140,7 +140,7 @@ Please note the removal of these categories should not impact any procurements. 
 
 POSTED June 23, 2016
 
-In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program will be removing legacy RNG PIV credential listed on the [Approved Products List](../fips201apl/) on July 31, 2017.
+In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program will be removing legacy RNG PIV credential listed on the [Approved Products List](../buy#products) on July 31, 2017.
 
 According to this transition plan, agencies may continue to procure and issue credentials using implementations marked as “legacy” on the [NPIVP validation list](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"} until June 30, 2017. However, the agencies should migrate to fully compliant credentials implementing approved DRBGs as soon as DRBG PIV credential and the compatible credential management software are commercially available. Once issued, these “legacy” RNG PIV credentials may be used until their expiration date – up to June 30, 2023.
 
@@ -160,6 +160,6 @@ As new questions are posted to the [“Issues” section](http://github.com/GSA/
 
 POSTED June 13, 2014
 
-The FIPS 201 Evaluation Program received and analyzed multiple comments on the removal of tri-interface credentials from the [Approved Products List (APL)](../fips201apl). To provide further clarification, tri-interface credentials refers to PIV credentials that have additional non-PIV authentication features such as a mag stripe and 125 kHz antenna. The Program has been asked to remove these types of credentials from the APL because they have become an enabler for some buildings to postpone or altogether avoid deploying compliant Physical Access Control Systems (PACS); our intent was to close this loophole. Two years ago, the Program removed transparent readers from the APL to align products with policy and standards by utilizing PKI for PACS and LACS. We are now removing tri-interface credentials from the APL so buildings can migrate away from legacy forms of access control and align with policy and directives.
+The FIPS 201 Evaluation Program received and analyzed multiple comments on the removal of tri-interface credentials from the [Approved Products List (APL)](../buy#products). To provide further clarification, tri-interface credentials refers to PIV credentials that have additional non-PIV authentication features such as a mag stripe and 125 kHz antenna. The Program has been asked to remove these types of credentials from the APL because they have become an enabler for some buildings to postpone or altogether avoid deploying compliant Physical Access Control Systems (PACS); our intent was to close this loophole. Two years ago, the Program removed transparent readers from the APL to align products with policy and standards by utilizing PKI for PACS and LACS. We are now removing tri-interface credentials from the APL so buildings can migrate away from legacy forms of access control and align with policy and directives.
 
 While we received mostly very positive feedback about this decision, we have received feedback that highlighted a number of legitimate use cases that we would be negatively impacting agencies. The Program is going to delay the removal of the tri-interface credentials from the APL from 6 to 18 months. In 18 months the FIPS 201 Evaluation Program will no longer test or list tri-interface credentials on the APL. **Note that PIV Issuers are required to use APL approved credential stock, so beginning in 18 months issuance of tri-interface PIV credentials will not be allowed.**
