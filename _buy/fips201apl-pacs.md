@@ -34,14 +34,16 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 # Approved PACS Products
 
-<ul class="usa-unstyled-list">
-  {% for category in categories %}
-    <tr class="pacs-table-category-heading" data-category="{{ category }}">
+<table class="usa-table--borderless pacs-table">
+  <tbody>
+    {% for category in categories %}
+      <tr class="pacs-table-category-heading" data-categories="{{ category }}">
         <th colspan="1" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} </b></th>
       </tr>
       {% for pacs in site.data.fips201pacs1301 %}
         {% if pacs.category == category %}
           <tr class="pacs-table-row" data-category="{{ pacs.category }}">
+            <ul class="usa-unstyled-list">
               <li><strong>Use with FIPS 201-2 Credential Status:</strong> {{ pacs.fipsstatus }} </li>
               <li><strong>PACS Infrastructure: </strong><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure }} </a></li>
               <li><strong>PACS Validation System:</strong><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank"> {{ pacs.validation }} </a></li>
@@ -75,11 +77,13 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                   <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
                 {% endif %}
               </ul>
+            </ul>
           </tr>
         {% endif %} <!-- end category loop -->
     {% endfor %} <!-- end data loop -->
   {% endfor %} <!-- end header loop -->
-</ul>
+  </tbody>
+</table>
 
 # PACS Solutions Awaiting Approval
 
