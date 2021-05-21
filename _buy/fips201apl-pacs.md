@@ -50,20 +50,22 @@ Visit the [Buy Page](../buy) to view FICAM products, services and purchasing gui
         </tr>
         {% for pacs in site.data.fips201pacs %}
           <ul class="usa-unstyled-list">
-              <li><strong>PACS Infrastructure: </strong><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure }} </a></li>
-              <li><strong>PACS Validation System:</strong><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank"> {{ pacs.validation }} </a></li>
-              <li><strong>Card Readers</strong>
-                <ul class="usa-unstyled-list">
-                  <li><a href="{{ pacs.reader1url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader1 }}</a></li>
-                  <li><a href="{{ pacs.reader2url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader2 }}</a></li>
-                  <li><a href="{{ pacs.reader3url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader3 }}</a></li>
-                  <li><a href="{{ pacs.reader4url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader4 }}</a></li>
-                  <li><a href="{{ pacs.reader5url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader5 }}</a></li>
-                  <li><a href="{{ pacs.reader6url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader6 }}</a></li>
-                  <li><a href="{{ pacs.reader7url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader7 }}</a></li>
-                  <li><a href="{{ pacs.reader8url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader8 }}</a></li>
-                  <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
-            </ul>
+            <li><strong>PACS Infrastructure: </strong><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure }} </a></li>
+            <li><strong>PACS Validation System:</strong><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank"> {{ pacs.validation }} </a></li>
+            <li><strong>Card Readers</strong></li>
+              <ul class="usa-unstyled-list">
+                <li><a href="{{ pacs.reader1url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader1 }}</a></li>
+                <li><a href="{{ pacs.reader2url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader2 }}</a></li>
+                <li><a href="{{ pacs.reader3url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader3 }}</a></li>
+                <li><a href="{{ pacs.reader4url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader4 }}</a></li>
+                <li><a href="{{ pacs.reader5url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader5 }}</a></li>
+                <li><a href="{{ pacs.reader6url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader6 }}</a></li>
+                <li><a href="{{ pacs.reader7url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader7 }}</a></li>
+                <li><a href="{{ pacs.reader8url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader8 }}</a></li>
+                <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
+              </ul>
+             <li><strong>Use with FIPS 201-2 Credential Status:</strong> {{ pacs.fipsstatus }} </li>
+          </ul>
         {% endfor %} <!--pacs-->
       {% endfor %}<!--category-->
     </tbody>
