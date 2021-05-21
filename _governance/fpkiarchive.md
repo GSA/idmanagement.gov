@@ -8,6 +8,13 @@ sticky_sidenav: true
 
 ---
 
+{% assign categories = "" | split: "" %}
+{% for docs in site.data.fpkidocs %}
+  {% assign category = docs.category | strip %}
+  {% assign categories = categories | push: category | uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
+
 This pages contains three years of Federal PKI documents including:
 - Certificate Policies
 - Certificate Profiles
@@ -17,12 +24,12 @@ This pages contains three years of Federal PKI documents including:
 If you seek a document that is older than three years or not listed here, please contact fpki at gsa.gov
 
 <div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs guides-filter">
-    <legend>Categories</legend>
+  <fieldset class="usa-fieldset-inputs docs-filter">
+    <legend>FPKI Document Categories</legend>
     <ul class="usa-unstyled-list">
       {% for category in categories %}
       <li>
-        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <input class="docs-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
         <label for="category-{{ category | slugify }}">{{ category }}</label>
       </li>
       {% endfor %}
@@ -30,57 +37,26 @@ If you seek a document that is older than three years or not listed here, please
   </fieldset>
 </div>
 
-<div class="usa-width-three-fourths">
-  <table class="usa-table-borderless">
-    <thead class="usa-sr-only">
-      <tr>
-        <th id="guides-table-heading-title" scope="col">Name</th>
-        <th id="guides-table-heading-date" scope="col">Date</th>
-        <th id="guides-table-heading-description" scope="col">Description</th>
+<table class="usa-table--borderless docs-table">
+  <thead class="usa-sr">
+    <tr>
+      <th id="docs-table-heading-name" scope="col">Document Name</th>
+      <th id="docs-table-heading-date" scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for category in categories %}
+      <tr class="docs-table-category-heading" data-category="{{ category }}">
+        <th colspan="2" class="docs-table-heading" id="docs-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
       </tr>
-    </thead>
-    <tbody>
-      {% for category in categories %}
-        <tr class="guides-table-category-heading" data-category="{{ category }}">
-          <th colspan="3" class="guides-table-heading" id="guides-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
-        </tr>
-        {% for docs in site.data.fpkidocs %}
-          {% if docs.category == category %}
-            <tr class="guides-table-row" data-category="{{ docs.category }}">
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-title"><a href="{{ docs.url | prepend: site.baseurl }}">{{ docs.name }}</a></td>
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-date">{{ docs.date }}</td>
-              <td headers="guides-table-heading-{{ category | slugify }} guides-table-heading-description">{{ docs.description }}</td>
-            </tr>
-          {% endif %}
-        {% endfor %} <!--guide-->
-      {% endfor %}<!--category-->
-    </tbody>
-  </table>
-</div>
-
-
-<table class="usa-table--borderless fpkidocs-table">
-    <thead class="usa-sr-only">
-        <tr>
-            <th id="fpkidocs-table-heading-name" scope="col">Name</th>
-            <th id="fpkidocs-table-heading-date" scope="col">Date</th>
-            <th id="fpkidocs-table-heading-description" scope="col">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for category in categories %}
-            <tr class="fpkidocs-table-category-heading" data-categories="{{ category }}">
-                <th colspan="3" class="fpkidocs-table-heading" id="fpkidocs-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
-            </tr>
-            {% for docs in site.data.fpkidocs %}
-                {% if docs.category == category %}
-                    <tr class="fpkidocs-table-row" data-category="{{ docs.category }}">
-                        <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-name"><a href="{{ docs.url | prepend: site.baseurl }}">{{ fpkidocs.name }}</td>
-                        <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-date">{{ docs.date }}</a></td>
-                        <td headers="fpkidocs-table-heading-{{ category | slugify }} fpkidocs-table-heading-description">{{ docs.description }}</a></td>
-                    </tr>
-                {% endif %}
-            {% endfor %} <!--docs-->
-        {% endfor %}<!--category-->
-    </tbody>
+      {% for docs in site.data.fpkidocs %}
+        {% if docs.category == category %}
+          <tr class="docs-table-row" data-category="{{ docs.category }}">
+            <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-name">{{ docs.name}}</td>
+            <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-date">{{ docs.date }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %} <!--docs-->
+    {% endfor %}<!--category-->
+  </tbody>
 </table>

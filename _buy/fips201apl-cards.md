@@ -33,7 +33,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 <div class="usa-width-three-fourths">
   <table class="usa-table-borderless">
-    <thead class="usa-sr-only">
+    <thead class="usa-sr">
       <tr>
         <th id="apl-table-heading-name" scope="col">Product Name</th>
         <th id="apl-table-heading-number" scope="col">APL Number</th>
