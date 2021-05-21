@@ -1,7 +1,7 @@
 ## Buy
 
 buy:
-  - text: Buy Overview
+  - text: Procurement Overview
     href: /buy/
   - text: Trust Services
     href: /buy/trust-services/
@@ -15,14 +15,14 @@ buy:
 ## Sell
     
 sell:
-  - text: Sell Overview
+  - text: Vendor Overview
     href: /sell/
   - text: FIPS 201 Evaluation Program
     href: /sell/fips201ep/
   - text: FIPS 201 Announcements
     href: /sell/fipsannouncements
   - text: FRTC 1.3.3 Rev. G Errata
-    href: /sell/frcterrata/
+    href: /sell/frtcerrata/
     
 ## Governance
 
@@ -30,9 +30,11 @@ governance:
   - text: Governance Overview
     href: /governance/
   - text: FICAM Governance
-    href: /governance/ficamgovernance/
+    href: /governance/ficam/
   - text: Federal PKI Compliance Audit
     href: /governance/fpkiaudit
+  - text: Federal PKI Archived Documents
+    href: /governance/fpkiarchive/
     
 ## Main Site
     

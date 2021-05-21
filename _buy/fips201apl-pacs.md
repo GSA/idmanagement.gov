@@ -11,8 +11,8 @@ subnav:
       href: '#how-to-purchase'
     - text: Approved PACS Products
       href: '#approved-pacs-products'
-    - text: PACS Products Awaiting Approval
-      href: '#pacs-products-awaiting-approval'
+    - text: PACS Solutions Awaiting Approval
+      href: '#pacs-solutions-awaiting-approval'
 
 ---
 
@@ -80,8 +80,8 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             </ul>
           </tr>
         {% endif %} <!-- end category loop -->
-    {% endfor %} <!-- end data loop -->
-  {% endfor %} <!-- end header loop -->
+      {% endfor %} <!-- end data loop -->
+    {% endfor %} <!-- end header loop -->
   </tbody>
 </table>
 
