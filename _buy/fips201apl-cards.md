@@ -38,20 +38,6 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 ## Approved PIV Cards
 
-<div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs guides-filter">
-    <legend>Categories</legend>
-    <ul class="usa-unstyled-list">
-      {% for category in categories %}
-      <li>
-        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
-        <label for="category-{{ category | slugify }}">{{ category }}</label>
-      </li>
-      {% endfor %}
-    </ul>
-  </fieldset>
-</div>
-
 <div class="usa-width-three-fourths">
   <table class="usa-table-borderless">
     <thead class="usa-sr-only">

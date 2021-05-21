@@ -9,8 +9,10 @@ sidenav: buy
 subnav:
     - text: How to Purchase
       href: '#how-to-purchase'
-    - text: Approved PACS Products
-      href: '#approved-pacs-products'
+    - text: Approved PACS Products - 13.01 Topology
+      href: '#approved-pacs-products--13.01-topology'
+    - text: Approved PACS Products - 13.02 Topology
+      href: '#approved-pacs-products--13.02-topology'
     - text: PACS Products Awaiting Approval
       href: '#pacs-products-awaiting-approval'
 
@@ -23,73 +25,48 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 
 # How To Purchase
 
-Visit the [Buy Page](../buy) to view FICAM products, services and purchasing guidance.
+Visit the [Buy Page](../) to view FICAM products, services and purchasing guidance.
 
-# Approved PACS Products
-
-<div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs guides-filter">
-    <legend>Topologies</legend>
-    <ul class="usa-unstyled-list">
-      {% for category in categories %}
-      <li>
-        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
-        <label for="category-{{ category | slugify }}">{{ category }}</label>
-      </li>
-      {% endfor %}
-    </ul>
-  </fieldset>
-</div>
+# Approved PACS Products - 13.01 Topology
 
 <div class="usa-width-three-fourths">
-  <table class="usa-table-borderless">
-    <tbody>
-      {% for category in categories %}
-        <tr class="pacs-table-category-heading" data-category="{{ category }}">
-          <th colspan="3" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} </b></th>
-        </tr>
-        {% for pacs in site.data.fips201pacs %}
-          {% if pacs.category == category %}
-            <ul class="usa-unstyled-list">
-              <li><strong>PACS Infrastructure: </strong><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure }} </a></li>
-              <li><strong>PACS Validation System:</strong><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank"> {{ pacs.validation }} </a></li>
-              <li><strong>Approved Card Readers:</strong></li>
-                <ul class="usa-unstyled-list">
-                  {%if pacs.reader1 %}
-                    <li><a href="{{ pacs.reader1url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader1 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader2 %}
-                    <li><a href="{{ pacs.reader2url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader2 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader3 %}
-                    <li><a href="{{ pacs.reader3url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader3 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader4 %}
-                  < li><a href="{{ pacs.reader4url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader4 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader5 %}
-                    <li><a href="{{ pacs.reader5url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader5 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader6 %}
-                    <li><a href="{{ pacs.reader6url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader6 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader7%}
-                    <li><a href="{{ pacs.reader7url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader7 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader8 %}
-                    <li><a href="{{ pacs.reader8url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader8 }}</a></li>
-                  {% endif %}
-                  {%if pacs.reader9 %}
-                    <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
-                  {% endif %}
-                </ul>
-              <li><strong>Use with FIPS 201-2 Credential Status:</strong> {{ pacs.fipsstatus }} </li>
-            </ul>
-          {% endif %}
-        {% endfor %} <!--pacs-->
-      {% endfor %}<!--category-->
-    </tbody>
-  </table>
+  {% for pacs in site.data.fips201pacs1301 %}
+    <ul class="usa-unstyled-list">
+      <li><strong>PACS Infrastructure: </strong><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure }} </a></li>
+      <li><strong>PACS Validation System:</strong><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank"> {{ pacs.validation }} </a></li>
+      <li><strong>Approved Card Readers:</strong></li>
+      <ul class="usa-unstyled-list">
+        {%if pacs.reader1 %}
+          <li><a href="{{ pacs.reader1url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader1 }}</a></li>
+        {% endif %}
+        {%if pacs.reader2 %}
+           <li><a href="{{ pacs.reader2url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader2 }}</a></li>
+        {% endif %}
+        {%if pacs.reader3 %}
+          <li><a href="{{ pacs.reader3url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader3 }}</a></li>
+        {% endif %}
+        {%if pacs.reader4 %}
+          <li><a href="{{ pacs.reader4url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader4 }}</a></li>
+        {% endif %}
+        {%if pacs.reader5 %}
+          <li><a href="{{ pacs.reader5url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader5 }}</a></li>
+        {% endif %}
+        {%if pacs.reader6 %}
+          <li><a href="{{ pacs.reader6url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader6 }}</a></li>
+        {% endif %}
+        {%if pacs.reader7%}
+          <li><a href="{{ pacs.reader7url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader7 }}</a></li>
+        {% endif %}
+        {%if pacs.reader8 %}
+          <li><a href="{{ pacs.reader8url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader8 }}</a></li>
+        {% endif %}
+        {%if pacs.reader9 %}
+          <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
+        {% endif %}
+      </ul>
+      <li><strong>Use with FIPS 201-2 Credential Status:</strong> {{ pacs.fipsstatus }} </li>
+    </ul>
+  {% endfor %}
 </div>
 
 
