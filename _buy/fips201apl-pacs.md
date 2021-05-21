@@ -79,7 +79,6 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
         {% endif %} <!-- end category loop -->
     {% endfor %} <!-- end data loop -->
   {% endfor %} <!-- end header loop -->
-  </tbody>
 </ul>
 
 # PACS Solutions Awaiting Approval
