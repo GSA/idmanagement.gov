@@ -1,0 +1,184 @@
+# list of archived fpki documents
+-
+  category: Supplementary Guidance
+  name: FBCA Supplementary Antecedent, In-Person Definition 
+  description: Working group document superseded by NIST SP 800-63-3A.
+  date: 07/16/2009
+  url: /docs/fpki-fbca-antecedent.pdf
+-
+  category: Common Policy Change Proposal
+  numberProposal: 2020-02
+  name: Consolidated update to Common Policy and associated profiles
+  description: Updates the Certificate Policy and the certificate profile specification.
+  date: 08/29/2020
+  url: /docs/fpki-common-cp-2002.pdf
+  status: Post
+  
+- category: Common Policy Change Proposal
+  numberProposal: 2020-01 
+  name: Support for Personal Identity Verification-Interoperable (PIV-I) credentials issued under COMMON
+  description: Support federally issued and managed PIV-I smart cards issued to non-PIV users under COMMON.
+  date: 03/10/2020
+  url: /docs/fpki-common-cp-2001.pdf
+  status: Post
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-08 
+  name: Change Requirement for Destruction of Private Signing Key(s) Following CA Termination
+  description: Specify treatment of CA private keys and escrowed private keys following CA termination. 
+  date: 11/02/2018
+  url: /docs/fpki-common-cp-1808.pdf
+  status: Post
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-07
+  name: Update Common Policy to Remove the common-public-trusted-serverAuth Certificate Policy
+  description: Remove the common-public-trusted-serverAuth certificate policy.
+  date: 10/24/2018
+  url: /docs/fpki-common-cp-1807.pdf
+  status: Post
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-06 
+  name: Add Supervised Remote Identity Proofing and Other Guidance as Defined by NIST SP 800-63-3
+  description: Incorporate supervised remote identity proofing and other requirements, as defined in NIST SP 800-63-3.
+  date: 04/23/2018
+  url: /docs/fpki-common-cp-1806.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-05
+  name: Requirements for Virtual Implementations under the COMMON Policy
+  description: Clarify the requirements in virtual machine environment (VME) implementations.
+  date: 07/21/2017
+  url: /docs/fpki-common-cp-1805.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-04
+  name: Certificate Revocation Requirements for Transitive Closure under the COMMON Policy
+  description: Requirements for revoking or verifying certificates that were issued with a compromised RA credential or under otherwise unauthorized circumstances.
+  date: 07/17/2017
+  url: /docs/fpki-common-cp-1804.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-03
+  name: Mandate Specific EKU in COMMON Policy CP and Its Associated Certificate Profiles
+  description: Mandate specific EKU and prohibit anyEKU.
+  date: 01/19/2018
+  url: /docs/fpki-common-cp-1803.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-02
+  name: Update COMMON Policy To Reference Annual Review Requirements
+  description: Reference FPKI Annual Review Requirements.
+  date: 07/05/2017
+  url: /docs/fpki-common-cp-1802.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2018-01
+  name: equire Key Recovery for Key Management Certificates Issued under the COMMON Policy
+  description: Require key escrow services for key management certificates issued under COMMON and includes reference to the newly approved FPKI Key Recovery Policy (KRP).
+  date: 07/05/2017
+  url: /docs/fpki-common-cp-1801.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2017-04
+  name: How Long Can PIV Card Stock Be Used Once They Are Removed From the GSA Approved Products List?
+  description: Clarifies the period of time during which PIV card stock that has been removed from the GSA Approved Products List (APL) can be used.
+  date: 04/03/2017
+  url: /docs/fpki-common-cp-1704.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2017-03
+  name: CA Infrastructure Change Notification
+  description: Requires CAs issuing under the COMMON Policy Framework to notify FPKIPA whenever a change is made to their infrastructures.
+  date: 04/03/2017
+  url: /docs/fpki-common-cp-1703.pdf
+  status: Archive
+
+- category: Common Policy Change Proposal
+  numberProposal: 2017-02
+  description: Notification of Issue Resolution and Remediation
+  date: 04/03/2017
+  url: /docs/fpki-common-cp-1702.pdf
+  status: Archive
+-
+Requires CAs issuing under the COMMON Policy Framework to publish information pertaining to resolved incidents on their websites.
+COMMON Change Proposal 2017-01 – Align COMMON Certificate Policy with Certificate Profile Operational Practice
+Updates the Certificate Policy and Certificate Profiles to align with current practices for CA certificates.
+COMMON Change Proposal 2016-02 – Allow for Long-Term CRL for Retired CA Key
+Updates the Certificate Policy to allow a long-term CRL when a CA retires a key after performing a key changeover to align with the FPKI CPS.
+COMMON Change Proposal 2016-01 – CAB Forum Baseline Requirements Alignment
+Harmonizes the Certificate Policy requirements with CA/B Forum Baseline Requirements (BR) v1.3.4.
+COMMON Change Proposal 2015-01 – Common Derived PIV Authentication Certificate Policy OIDs
+Creates two new Common Derived PIV Authentication Certificate Policy OIDs in the Certificate Policy.
+COMMON Change Proposal 2013-03 – Require PIV Cards To Be on GSA APL Prior to Issuance
+Requires PIV cards to be on the GSA Approved Products List (APL) prior to issuance, to increase standardization of PIV issuance and contribute to achieving the objectives of interoperability across PIV Card Issuer implementations.
+COMMON Change Proposal 2013-02 Remove SHA-1 Policies from Common Policy
+Removes SHA-1 policies from the Certificate Policy.
+COMMON Change Proposal 2013-01 – Common Policy CP Clarifications Recommended to the FPKIMA during the Annual PKI Compliance Audit
+Clarifies places in the Certificate Policy that were flagged during the FPKIMA Annual Audit as either contradictory with the FBCA Certificate Policy or contradictory to current best practices.
+COMMON Change Proposal 2012-05 – Common PIV Content Signing Policy OID
+Creates a new Common PIV Content Signing Policy OID in the Certificate Policy.
+COMMON Change Proposal 2012-04 – Operate Common Policy CA Offline
+Details and clarifies the Certificate Policy CA’s CRL issuance policies to ensure that Offline Root CA operations are permitted.
+COMMON Change Proposal 2012-03 – Delegation of Certain Device Sponsor Responsibilities
+Allows a human device sponsor, who is not physically located near the sponsored device and/or who does not have sufficient administrative privileges on the sponsored device to fulfill these responsibilities, to delegate them to an authorized administrator of the device.
+COMMON Change Proposal 2012-02 – Time Stamp Authority Requirement with Code Signing Certificates
+Requires organizations receiving a code-signing certificate to have access to a Time Stamp Authority.
+COMMON Change Proposal 2012-01 – Updates to Certificate Policy to RA & CMS Audit Requirements
+Adds clarifications about audit requirements for Registration Authorities (RA), Card Management Systems (CMS), and other PKI system components that may be managed by organizations other than the CA Owner.
+
+Federal Bridge Certificate Policy Change Proposals
+Below are links to the current and historical Change Proposals for the X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA).  A brief summary is given for each Change Proposal.
+
+FBCA Change Proposal 2019-01 – Allow Offline Federal Bridge Certification Authority
+Updates the Certificate Policy to allow the Federal Bridge Certification Authority to be operated in an off-line status
+FBCA Change Proposal 2018-06 – Add Requirements to include Supervised Remote Identity Proofing and Other Guidance as Defined by NIST SP 800-63-3
+Updates the Certificate Policy to incorporate supervised remote identity proofing and other guidance, as defined in NIST 800-63-3.
+FBCA Change Proposal 2018-05 – Requirements for Virtual Implementations under the BRIDGE Policy
+Updates the Certificate Policy to clarify the requirements in virtual machine environment (VME) implementations.
+FBCA Change Proposal 2018-04 – Certificate Revocation Requirements for Transitive Closure under the BRIDGE Policy
+Updates the Certificate Policy to specify requirements for revoking or verifying certificates that were issued with a compromised RA credential or under otherwise unauthorized circumstances.
+FBCA Change Proposal 2018-03 – Mandate Specific EKU in the FBCA CP and Its Associated Certificate Profiles
+Updates the Certificate Policy and Certificate Profiles to mandate specific EKU and not allow anyEKU.
+FBCA Change Proposal 2018-02 – Update FBCA CP To Reference Annual Review Requirements
+Updates the Certificate Policy to reference FPKI Annual Review Requirements.
+FBCA Change Proposal 2018-01 – Add Requirements for Key Recovery
+Updates the Certificate Policy to require conformity to the FPKI KRP whenever key escrow services are implemented for key management certificates issued by organizations that are cross-certified with the FBCA.
+FBCA Change Proposal 2017-05 – Limit Affiliate Relationship to a Single Path
+Requires that CAs that are cross-certified with the FBCA to have a single trust path to the FBCA.
+FBCA Change Proposal 2017-04 – How Long Can PIV-I Card Stock Be Used Once They Are Removed From the GSA Approved Products List?
+Clarifies the period of time during which PIV-I card stock that has been removed from the GSA APL can be used.
+FBCA Change Proposal 2017-03 – CA Infrastructure Change Notification
+Requires CAs that are cross-certified with the FBCA to notify the FPKIPA whenever a change is made to their infrastructures.
+FBCA Change Proposal 2017-02 – Notification of Issue Resolution and Remediation
+Requires CAs participating in the FPKI to publish information pertaining to resolved incidents on their websites.
+FBCA Change Proposal 2017-01 – Align FBCA Certificate Policy with Certificate Profile Operational Practice
+Updates the Certificate Policy and Certificate Profiles to align with current practice for CA certificates.
+FBCA Change Proposal 2016-03 – Allow Alternate FBCA Key Change Procedures
+ Updates the Certificate Policy to allow the FBCA to use a new superior certificate rather than key rollover certificates in conjunction with a Directory Name change.
+FBCA Change Proposal 2016-02 – Allow for Long-Term CRL for Retired CA key
+Updates the Certificate Policy to allow a long-term CRL when a CA retires a key after performing a key changeover to align with the FPKI CPS.
+FBCA Change Proposal 2016-01 – Subscriber Private Key Protection for Multiple Keys or Key Holders
+Adds guidance for protecting Medium assurance private keys when multiple keys are co-located or when stored on behalf of others (e.g., some implementations of Group certificates or subscriber keys stored “in the cloud”).
+FBCA Change Proposal 2015-02 – Align PIV-I Card Life with FIPS 201-2
+FIPS 201-2 allows 6-year PIV cards to align with two full certificate life-cycles.  Several PIV-I issuers requested PIV-I be allowed the same flexibility.
+FBCA Change Proposal 2015-01 – Clarifying Assertion of Policies for Devices
+Clarifies Assertion of Policies for Devices.
+FBCA Change Proposal 2013-02 – Move SHA-1 Policies from Common Policy to FBCA and Remove 12-31-2013 Restriction on All SHA-1 Policies
+Moves SHA-1 policy definitions from the Common Policy Certificate Policy to the FBCA Certificate Policy and removes the 12/31/2013 restriction on the use of all SHA-1 policies.
+FBCA Change Proposal 2013-01 – FBCA CP Clarifications Recommended to the FPKIMA during the Annual PKI Compliance Audit
+Clarifies places in the Certificate Policy that were flagged during the FPKIMA Annual Audit as either contradictory with the Common Policy Certificate Policy or contradictory to current best practices.
+FBCA Change Proposal 2012-01 – Updates to Certificate Policy to RA & CMS Audit Requirements
+Adds clarifications about audit requirements for Registration Authorities (RA), Card Management Systems (CMS), and other PKI system components that may be managed by organizations other than the CA Owner.
+FBCA Change Proposal 2011-06 – Remove requirements for Lightweight Directory Access Protocol (LDAP) references in certificates
+Eliminates the mandatory requirements to include LDAP references in certificates. This change proposal also changes the repository requirement from specifically identifying LDAP to a more general requirement of supporting all Uniform Resource Identifiers (URIs) in valid certificates issued by the associated CA.
+FBCA Change Proposal 2008-02 – Changes to FBCA CP to clarify the archive definition and how its records are intended to be used
+Clarifies the purpose of archiving and the archiving requirements for auditable events. Also clarifies that NARA and/or other applicable regulations apply.

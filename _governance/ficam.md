@@ -4,6 +4,7 @@ collection: governance
 title:  FICAM Governance
 permalink: governance/ficam/
 sidenav: governance
+sticky_sidenav: true
 
 subnav:
   - text: Products

@@ -10,11 +10,11 @@ subnav:
   - text: FICAM Playbooks
     href: '#ficam-playbooks'
   - text: Announcements
-    href: '#laws'
+    href: '#announcements'
   - text: Communities of Practice
     href: '#communities-of-practice'
   - text: Training
-    href: 'training'
+    href: '#training'
   - text: Related Information
     href: '#related-information'
 ---
@@ -27,18 +27,16 @@ The FICAM Roadmap, developed by the federal CIO Council, contains processes, pro
 
 These playbooks are hosted on Github, and provide common policy and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on needs and interest of individual agencies and government-wide groups. Reach out to icam at gsa.gov to suggest new topics.
 
-[View all the FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"})
+[View FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"})
 
-# Laws, Regulations and Policies
-
-Agency staff should be familiar with all the supporting policysurrounding federal identity management systems. For more information on FICAM-related laws, policies, and standards, go to the standards and policies section of the FICAM Architecture.
 
 # Announcements
 
-- [FIPS 201 Evaluation Program Announcements](../../sell/fips201ep)
+- [FIPS 201 Evaluation Program Announcements](../sell/fips201ep/)
 - [Federal PKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
 - [Federal PKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   
+
 # Communities of Practice
 
 - ICAM Subcommittee (ICAMSC) – A subcommittee of the Federal CIO Council’s Chief Information Security Officer (CISO) Council. The ICAMSC is tasked with aligning the identity management activities of the Federal Government.
@@ -47,11 +45,13 @@ Agency staff should be familiar with all the supporting policysurrounding federa
     - Shared Service Provider Working Group (SSPWG) – Advises the FPKIPA regarding policy related to the FPKI SSP Program.
     - Technical Working Group (TWG) – Advises the FPKIPA regarding advancing Public Key Infrastructure (PKI) technology.
 - FPKI Management Authority (FPKIMA) – Governed under the Federal PKI Policy Authority (FPKIPA) and managed by GSA, the FPKIMA provides trust infrastructure services to federal agencies.
+  
 
 # Training
 
 - [National Initiative for Cybersecurity Education (NICE)](https://www.nist.gov/itl/applied-cybersecurity/nice){:target="_blank"}{:rel="noopener noreferrer"} – A partnership between government, academia, and the private sector focused on cybersecurity education, training, and workforce development.  NICE is led by the National Institute of Standards and Technology (NIST).
 - [Secure Technology Alliance (STA) Education and Certification Programs](https://www.securetechalliance.org/activities-education-and-certification-programs/){:target="_blank"}{:rel="noopener noreferrer"} – The STA offers educational and certification programs.
+  
 
 # Related Information
 

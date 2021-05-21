@@ -4,6 +4,7 @@ collection: governance
 title:  Federal PKI Compliance Audit
 permalink: governance/fpkiaudit/
 sidenav: governance
+sticky_sidenav: true
 
 subnav:
   - text: Federal PKI Policies and Profiles
@@ -43,7 +44,6 @@ The [FPKI Policy Authority (FPKIPA)](../fedidentity/) maintains two certificate 
 The Federal PKI has the following supplementary guidance:
 
 - [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for Federal PKI Systems (PDF, February 2021)](../../docs/fpki-overlay-sp-800-53.pdf){:target="_blank"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a Certification Authority that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
-- [Retired - FBCA Supplementary Antecedent, In-Person Definition (PDF, July 2009)](../../docs/fpki-fbca-antecedent.pdf){:target="_blank"} – working group document superseded by NIST SP 800-63-3A
 - [FPKI Key Recovery Policy (PDF, October 2017)](../../docs/fpki-key-recovery){:target="_blank"} - The FPKI Key Recovery Policy (KRP) supplements the FPKI Certificate Policies and describes the procedural and technical security controls needed to operate a Key Recovery System (KRS) securely, in accordance with FPKIPA requirements.
 - [Archived copies of Certificate polices and profiles](../fpkiarchive/)
 
