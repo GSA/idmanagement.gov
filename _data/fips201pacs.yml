@@ -1,6 +1,6 @@
 # List of PACS Systems for PACS List
 
--
+- category: 13.01 Topology
   infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
   infraurl: apl-10009-brivo.pdf
   infraapl: 10009
@@ -35,8 +35,8 @@
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
   fipsstatus: Approved
-  category: 13.01 Topology
--
+
+- category: 13.01 Topology
   infrastructure: Avigilon ACM
   infraurl: /docs/apl-10122-avigilon.pdf
   infraapl: 10122
@@ -65,7 +65,7 @@
   reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader7apl: 10006
   fipsstatus: Approved
-  category: 13.01 Topology
+
 -
   infrastructure: AMAG Symmetry Professional v8.1
   infraurl: /docs/apl-10087-amag-symmetry-81.pdf
