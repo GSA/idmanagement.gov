@@ -5,6 +5,8 @@ permalink: buy/apl-pacs/
 collection: buy
 sticky_sidenav: true
 sidenav: buy
+custom_js:
+  - guides
 
 subnav:
     - text: How to Purchase
@@ -17,9 +19,9 @@ subnav:
 ---
 
 {% assign category = "" | split: "" %}
-{% for pacs in site.data.fips201pacs %}
-  {% assign category = pacs.category | strip %}
-  {% assign categories = categories | push: category | uniq | sort %}
+{% for guide in site.data.fips201pacs %}
+  {% assign categoryName = guide.category | strip %}
+  {% assign categories = categories | push: categoryName | uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
@@ -35,12 +37,12 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 # Approved PACS Products
 
 <div class="usa-width-one-fourth">
-  <fieldset class="usa-fieldset-inputs pacs-filter">
+  <fieldset class="usa-fieldset-inputs guides-filter">
     <legend>PACS Topologies</legend>
     <ul class="usa-unstyled-list">
       {% for category in categories %}
       <li>
-        <input class="pacs-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <input class="guides-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
         <label for="category-{{ category | slugify }}">{{ category }}</label>
       </li>
       {% endfor %}
@@ -62,40 +64,40 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
       <tr class="pacs-table-category-heading" data-category="{{ category }}">
         <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
       </tr>
-      {% for pacs in site.data.fips201pacs %}
-        {% if pacs.category == category %}
-          <tr class="pacs-table-row" data-category="{{ pacs.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ pacs.fipsstatus }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure}}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
+      {% for guide in site.data.fips201pacs %}
+        {% if guide.category == category %}
+          <tr class="pacs-table-row" data-category="{{ guide.category }}">
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
             <td>              
               <ul class="usa-unstyled-list">
-                {% if pacs.reader1 %}
-                  <li><a href="{{ pacs.reader1url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader1 }}</a></li>
+                {% if guide.reader1 %}
+                  <li><a href="{{ guide.reader1url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
                 {% endif %}
-                {% if pacs.reader2 %}
-                  <li><a href="{{ pacs.reader2url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader2 }}</a></li>
+                {% if guide.reader2 %}
+                  <li><a href="{{ guide.reader2url | prepend: site.baseurl }}" target="_blank">{{ guide.reader2 }}</a></li>
                 {% endif %}
-                {% if pacs.reader3 %}
-                  <li><a href="{{ pacs.reader3url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader3 }}</a></li>
+                {% if guide.reader3 %}
+                  <li><a href="{{ guide.reader3url | prepend: site.baseurl }}" target="_blank">{{ guide.reader3 }}</a></li>
                 {% endif %}
-                {% if pacs.reader4 %}
-                  <li><a href="{{ pacs.reader4url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader4 }}</a></li>
+                {% if guide.reader4 %}
+                  <li><a href="{{ guide.reader4url | prepend: site.baseurl }}" target="_blank">{{ guide.reader4 }}</a></li>
                 {% endif %}
-                {% if pacs.reader5 %}
-                  <li><a href="{{ pacs.reader5url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader5 }}</a></li>
+                {% if guide.reader5 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader5 }}</a></li>
                 {% endif %}
-                {% if pacs.reader6 %}
-                  <li><a href="{{ pacs.reader6url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader6 }}</a></li>
+                {% if guide.reader6 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
                 {% endif %}
-                {% if pacs.reader7%}
-                  <li><a href="{{ pacs.reader7url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader7 }}</a></li>
+                {% if guide.reader7%}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
                 {% endif %}
-                {% if pacs.reader8 %}
-                  <li><a href="{{ pacs.reader8url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader8 }}</a></li>
+                {% if guide.reader8 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader8 }}</a></li>
                 {% endif %}
-                {% if pacs.reader9 %}
-                  <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
+                {% if guide.reader9 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
                 {% endif %}
               </ul>
             </td>
