@@ -1,40 +1,5 @@
 # List of PACS Systems for PACS List
 
-- infrastructure: 
-  infraurl: 
-  infraapl: 
-  validation: 
-  valurl: 
-  valapl: 
-  reader1: 
-  reader1url: 
-  reader1apl: 
-  reader2: 
-  reader2url: 
-  reader2apl: 
-  reader3: 
-  reader3url: 
-  reader3apl: 
-  reader4: 
-  reader4url: 
-  reader4apl: 
-  reader5: 
-  reader5url: 
-  reader5apl: 
-  reader6: 	
-  reader6url: 
-  reader6apl: 
-  reader7: 
-  reader7url: 
-  reader7apl: 
-  reader8: 
-  reader8url: 
-  reader8apl: 
-  reader9: 
-  reader9url: 
-  reader9apl: 
-  fipsstatus: 
-  category: 
 -
   infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
   infraurl: apl-10009-brivo.pdf

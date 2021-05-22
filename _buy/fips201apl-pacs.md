@@ -34,6 +34,47 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 # Approved PACS Products
 
+<div class="usa-width-one-fourth">
+  <fieldset class="usa-fieldset-inputs pacs-filter">
+    <legend>PACS Topologies</legend>
+    <ul class="usa-unstyled-list">
+      {% for category in categories %}
+      <li>
+        <input class="pacs-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+        <label for="category-{{ category | slugify }}">{{ category }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+</div>
+
+<table class="usa-table--borderless pacs-table">
+  <thead class="usa-sr">
+    <tr>
+      <th id="pacs-table-heading-fipsstatus" scope="col">FIPS 201-2 Status</th>
+      <th id="pacs-table-heading-infrastructure" scope="col">Infrastructure</th>
+      <th id="pacs-table-heading-validation" scope="col">Validation System</th>
+      <th id="pacs-table-heading-validation" scope="col">Approved Card Readers</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for category in categories %}
+      <tr class="pacs-table-category-heading" data-category="{{ category }}">
+        <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
+      </tr>
+      {% for pacs in site.data.fips201pacs %}
+        {% if pacs.category == category %}
+          <tr class="pacs-table-row" data-category="{{ pacs.category }}">
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ pacs.fipsstatus }}</td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.infrasurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure}}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
+          </tr>
+        {% endif %}
+      {% endfor %} <!--pacs-->
+    {% endfor %}<!--category-->
+  </tbody>
+</table>
+
 <table class="usa-table--borderless pacs-table">
   <tbody>
     {% for category in categories %}
