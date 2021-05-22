@@ -68,19 +68,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ pacs.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.infrasurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure}}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
-          </tr>
-        {% endif %}
-      {% endfor %} <!--pacs-->
-    {% endfor %}<!--category-->
-  </tbody>
-</table>
-
-            <ul class="usa-unstyled-list">
-              <li><strong>Use with FIPS 201-2 Credential Status:</strong> {{ pacs.fipsstatus }} </li>
-              <li><strong>PACS Infrastructure: </strong><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure }} </a></li>
-              <li><strong>PACS Validation System:</strong><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank"> {{ pacs.validation }} </a></li>
-              <li><strong>Approved Card Readers:</strong></li>
+            <td>              
               <ul class="usa-unstyled-list">
                 {% if pacs.reader1 %}
                   <li><a href="{{ pacs.reader1url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader1 }}</a></li>
@@ -110,7 +98,13 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                   <li><a href="{{ pacs.reader9url | prepend: site.baseurl }}" target="_blank">{{ pacs.reader9 }}</a></li>
                 {% endif %}
               </ul>
-            </ul>
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %} <!--pacs-->
+    {% endfor %}<!--category-->
+  </tbody>
+</table>
 
 # PACS Solutions Awaiting Approval
 
