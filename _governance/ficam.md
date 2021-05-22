@@ -62,7 +62,7 @@ Members are appointed by each federal agency’s CIO, and the group operates und
 
 # Federal Public Key Infrastructure Management Authority
 
-[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp){:target="_blank"} by providing trust infrastructure services to federal agencies. FPKIMA is governed under the Federal PKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
+[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"} by providing trust infrastructure services to federal agencies. FPKIMA is governed under the Federal PKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
 
 ## Activities
 - Manage digital certificate policies and standards to ensure secure physical and logical access, document sharing, and communications across federal agencies and between external business partners.
