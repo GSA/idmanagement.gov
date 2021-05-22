@@ -66,8 +66,8 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
         {% if pacs.category == category %}
           <tr class="pacs-table-row" data-category="{{ pacs.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ pacs.fipsstatus }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure}}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ pacs.infraurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure}}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
             <td>              
               <ul class="usa-unstyled-list">
                 {% if pacs.reader1 %}
