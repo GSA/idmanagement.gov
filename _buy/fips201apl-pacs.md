@@ -17,7 +17,7 @@ subnav:
 ---
 
 {% assign category = "" | split: "" %}
-{% for pacs in site.data.fips201pacs1301 %}
+{% for pacs in site.data.fips201pacs %}
   {% assign category = pacs.category | strip %}
   {% assign categories = categories | push: category | uniq | sort %}
 {% endfor %}
@@ -60,13 +60,14 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
   <tbody>
     {% for category in categories %}
       <tr class="pacs-table-category-heading" data-category="{{ category }}">
-        <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
+        <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
       </tr>
       {% for pacs in site.data.fips201pacs %}
         {% if pacs.category == category %}
           <tr class="pacs-table-row" data-category="{{ pacs.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ pacs.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.infrasurl | prepend: site.baseurl }}" target="_blank">{{ pacs.infrastructure}}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-"><a href="{{ pacs.valurl | prepend: site.baseurl }}" target="_blank">{{ pacs.validation}}</a></td>
           </tr>
         {% endif %}
