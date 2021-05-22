@@ -19,7 +19,9 @@ subnav:
 
 # ICAM Subcommittee
 
-The ICAMSC is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. It is co-chaired by the GSA Office of Government-wide Policy. The ICMSC align the identity management activities of the Federal Government, and support collaborative government-wide efforts to:
+The ICAMSC is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
+
+The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"}. The ICAMSC aligns the identity management activities of the Federal Government, and support collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;
 - Coordinate interagency efforts to meet agency mission needs;
 - Identify gaps in policies, procedures, standards, guidance, and services; and
