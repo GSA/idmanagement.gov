@@ -71,6 +71,7 @@ Members are appointed by each federal agency’s CIO, and the group operates und
     - Federal Bridge CA (FBCA) is the PKI Bridge that enables interoperability between and among federally operated and business partner PKIs.
 
 ## Newsletters
+- [FPKIMA Newsletter – Volume 7, Issue 2 (PDF)](../../docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"} 
 - [FPKIMA Newsletter – Volume 7, Issue 1 (PDF)](../../docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"} 
 - [FPKIMA Newsletter – Volume 6, Issue 3 (PDF)](../../docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"} 
 - [FPKIMA Newsletter – Volume 6, Issue 2 (PDF)](../../docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"} 
@@ -83,42 +84,14 @@ For help, contact fpki-help at gsa.gov
 
 # Federal PKI Working Groups
 
-The FPKIPA charters three working groups. If you meet the membership criteria and wish to join a working group, email fpki at gsa.gov and include the text "Request to Join xx" where "xx" is the name of the working group.
+The FPKIPA charters three working groups. 
 
+If you meet the membership criteria and wish to join a working group, email fpki at gsa.gov and include the text "Request to Join xx" where "xx" is the name of the working group.
 
-## Certificate Policy Working Group (CPWG)
-
-The Federal Public Key Infrastructure (FPKI) Certificate Policy Working Group (CPWG) serves as a policy advisory group to the FPKI Policy Authority (FPKIPA). The CPWG provides recommendations on policy mappings and changes to the Federal Bridge Certification Authority (FBCA) and Federal Common Policy Certification Authority (FCPCA) Certificate Policies. CPWG activities include:
-- Facilitating proposed changes to the FPKI Certificate Policies.
-- Facilitating the process for organizations wishing to cross-certify with the FPKI.
-- Addressing and resolving specific issues through policy analysis and modification.
-
-### Membership and Meetings
-
-The CPWG is open to employees and designated contractors from federal agencies, as well as commercial and non-profit participants. The CPWG meets as needed.
-
-
-## FPKI Shared Service Provider Working Group (SSPWG)
-
-The Shared Service Provider (SSP) Working Group (WG) makes recommendations to the Federal Public Key Infrastructure Policy Authority (FPKIPA) on policy mappings and proposed changes related to the Federal Public Key Infrastructure Shared Services Program. 
-
-- Identify proposed changes to the Federal Public Key Infrastructure Certificate Policies that impact the Shared Services Program.
-- Analyze and modify policy to address and resolve issues that impact the Shared Services Program.
-
-### Membership and Meetings
-
-This group is only open to representatives for Federal PKI Shared Service Providers. The SSPWG meets as needed.
-
-
-## Technical Working Group (TWG)
-
-The TWG focuses on advancing Public Key Infrastructure (PKI) technology. It investigates and resolves complex technical issues and proposed modifications to the Federal PKI (FPKI).
-
-- Identify and scope technical issues that impact the operation of the FPKI
-- Address security concerns and vulnerabilities that could weaken the FPKI Trust Fabric
-- Identify technical improvements to enhance the security and operational capabilities of the FPKI
-
-### Membership and Meetings
-This group is open to technical participants from federal agencies and their contractors. There are no formal membership requirements and anyone from a federal agency or who supports an agency may attend. The group meets on an as-needed basis. Recent meetings have followed government guidance to be virtual only.
+| Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
+| --------- | ---- | ---------- | ------- | ----------- |
+| Certificate Policy Working Group | The Federal Bridge and Common policies advisory group. | <li> Facilitate proposed Certificate Policy changes.</li> <li>Facilitate the FPKI cross-certification process.</li><li>Address and resolve issues through policy analysis and modification.</li> | Open to federal agency employees, their designated contractors and non-federal participants invovled in the FPKI. | As needed. |
+| Shared Service Provider Working Group (SSPWG) | The Shared Service Provider program advisory group. | <li>Identify policy changes that impact the Shared Services Program.</li><li>Address and resolve issues through policy analysis and modification.</li> | Only FPKI Shared Service Provider representatives. | As needed. |
+| Technical Working Group (TWG) | Investigate and resolve complex FPKI technical issues. | <li>Identify and scope technical FPKI issues.</li><li>Address security concerns and vulnerabilities.</li><li>Identify technical improvements to enhance the security and operational capabilities.</li> | Open to employees and designated contractors from federal agencies. | As needed. |
 
 
