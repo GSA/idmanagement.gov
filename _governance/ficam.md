@@ -17,6 +17,8 @@ subnav:
     href: '#federal-pki-working-groups'
 ---
 
+[![FICAM Governance Structure and Working Groups]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:style="float:center"}]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 # ICAM Subcommittee
 
 The ICAMSC is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
