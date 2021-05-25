@@ -1,5 +1,12 @@
 # list of archived fpki documents
 
+- category: Common Certificate Policy
+  numberProposal: 2.0
+  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v2.0
+  date: 09/01/2020
+  url: /docs/fpki-x509-cert-policy-common-20.pdf
+  status: Post
+
 - category: Supplementary Guidance
   name: FBCA Supplementary Antecedent, In-Person Definition 
   description: Working group document superseded by NIST SP 800-63-3A.
