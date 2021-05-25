@@ -37,7 +37,7 @@ The [FPKI Policy Authority (FPKIPA)](../fedidentity/) maintains two certificate 
 
 | FPKI Initiatve | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
-| Fedearl Common Policy | [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"} | [Common Policy X.509 Certificate and CRL Profiles ](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}  | [Common Change Proposals](../fpkiarchive/) |
+| Federal Common Policy | [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"} | [Common Policy X.509 Certificate and CRL Profiles ](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}  | [Common Change Proposals](../fpkiarchive/) |
 | Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and  | [X.509 Certificate and CRL Extensions Profile](../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"} | [Bridge Change Proposals](../fpkiarchive/) |
 | Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and [PIV-I for Federal Issuers](../../docs/fpki-pivi-for-issuers){:target="_blank"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}  | [Bridge Change Proposals](../fpkiarchive/) |
 
