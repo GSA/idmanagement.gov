@@ -72,19 +72,19 @@ Audits are required annually for Certification Authorities.  Annual review packa
 | Digicert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
 | Department of Defense (DoD)	| Affiliate PKI	| Aug 30 |
 | Department of State (DOS)	| Affiliate PKI	| Jun 30 |
-| Department of the Treasury	| SSP	| May 31 |
+| Department of the Treasury	| SSP	| July 31 |
 | Entrust NFI	| Affiliate PKI	| Nov 22 |
 | Entrust Federal SSP	| SSP	| Nov 22 |
-| Exostar	| Affiliate PKI	| Apr 30 |
+| Exostar	| Affiliate PKI	| May 31 |
 | Government Publishing Office (GPO)	| Affiliate PKI	| Oct 31 |
 | Identrust NFI	| Affiliate PKI	| Aug 31 |
 | Patent and Trademark Office (PTO)	| Affiliate PKI	| April 30 |
 | SAFE Identity	| Bridge	| Oct 31 |
 | Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| Nov 30 |
-| Transglobal Secure Collaboration Program (TSCP)	| Bridge	| Apr 30 |
+| Transglobal Secure Collaboration Program (TSCP)	| Bridge	| May 31 |
 | Verizon SSP	| SSP	| July 31 |
-| Wide Point NFI	| Affiliate PKI	| Apr 30 |
-| Wide Point SSP	| SSP	| Apr 30 |
+| Wide Point NFI	| Affiliate PKI	| May 31 |
+| Wide Point SSP	| SSP	| May 31 |
 
 
 # Audit Information for the Federal PKI Management Authority
