@@ -64,8 +64,6 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 ## Derived PIV Credentials
 
-- [Annual Derived PIV Credential Issuer (DPCI) Testing Application Form (MS Word, September 2017)](../../docs/fips201ep-dpcitestform.docx){:target="_blank"} – If you are an agency or organization that currently issues D-PIV credentials and need to complete credential testing for your annual FPKI Audit, submit this form to fips201ep at gsa.gov.
-
 Agencies that wish to issue D-PIV credentials should follow these steps:
 1. Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO)
 2. Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs)
