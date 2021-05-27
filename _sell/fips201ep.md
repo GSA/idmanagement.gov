@@ -89,7 +89,7 @@ Review the test procedures, choose one of the application packages, and submit t
 
 ### PACS Application Package for New Systems or for Updates to Previously Approved Systems
 
-Vendors, please complete the following steps.
+Vendors, please complete the following steps. **If you're providing an update to a previously approved system, please skip steps 4 and 5.**
 
 1. Review the [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"}.
 2. Include one or both of the following, signed by a C- or VP-level individual:
@@ -97,9 +97,6 @@ Vendors, please complete the following steps.
     - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}
     - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}
 3. Complete the [Applicant Product Equipment List (MS Word, September 2017)](../../docs/pacsapp-equipmentlist.docx){:target="_blank"}.
-
-**The next two steps are only required for new system. If you're providing an update to a previously approved system, please skip these steps**
-
 4. Choose from the following two topologies that best describes your solution:
     - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}
     - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}
@@ -108,9 +105,6 @@ Vendors, please complete the following steps.
     - Approved [PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}
 5. Complete the [PACS FRTC Topology Mapping Workbook(XLSX, March 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"} for your topology.
     - When submitting a product that uses an approved or provisionally approved topology, complete the Topology Mapping Workbook, rather than the PDF version, and submit it with your application. This began with FRTC 1.3.3, and is easier to use.
-
-**If you're providing an update, continue from this point.**
-
 6. Complete a Topology Mapping Diagram as specified in Section 4.4 in the Approved PACS Topology Mapping Documents above.
 7. Execute the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}.
 8. Include the completed form and checklist in theProduct/Service Application Form and Guidancein (1) above.
