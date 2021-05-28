@@ -52,10 +52,10 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 <table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
-      <th id="pacs-table-heading-fipsstatus" scope="col">FIPS 201 Status</th>
-      <th id="pacs-table-heading-infra" scope="col">PACS Infrastructure</th>
-      <th id="pacs-table-heading-validation" scope="col">PACS Validation System</th>
-      <th id="pacs-table-heading-cardreader" scope="col">Approved Card Reader</th>
+      <th id="pacs-table-heading-fipsstatus" scope="col">Use with FIPS 201-2 Credential Status</th>
+      <th id="pacs-table-heading-infra" scope="col">If you have this PACS Infrastructure...</th>
+      <th id="pacs-table-heading-validation" scope="col">with this PACS Validation System...</th>
+      <th id="pacs-table-heading-cardreader" scope="col">You can use these card readers.</th>
     </tr>
   </thead>
   <tbody>
@@ -66,7 +66,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
       {% for guide in site.data.fips201pacs %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infrarul | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
             <td>              
               <ul class="usa-unstyled-list">
