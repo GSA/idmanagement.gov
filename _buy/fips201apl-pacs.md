@@ -11,8 +11,8 @@ subnav:
       href: '#how-to-purchase'
     - text: Approved 13.01 PACS Products
       href: '#approved-pacs-products'
-    - text: Approved PACS Products - 13.02 Topology
-      href: '#approved-pacs-products--13.02-topology'
+    - text: Approved 13.02 PACS Products
+      href: '#approved-pacs-products-13.02-Topology'
     - text: PACS Solutions Awaiting Approval
       href: '#pacs-solutions-awaiting-approval'
 
@@ -33,7 +33,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 | FIPS Status | PACS Infrastructure | PACS Validation System | Approved Card Readers |
 | ------ | --------- | --------- | ---------- |
-| Approved | MAG Symmetry | HID Global Validation System for AMAG Symmetry | <li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li>  <li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RK40 Contactless Reader + PIN</li>  <li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li>  <li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RPK40 Contactless Reader + PIN</li>  <li>pivCLASS RP40 Contactless Reader</li> <li>pivCLASS R10 Contactless Reader</li>  <li>pivCLASS R40 Contactless Reader</li> |
+| Approved | AMAG Symmetry | HID Global Validation System for AMAG Symmetry | <li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li>  <li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RK40 Contactless Reader + PIN</li>  <li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li>  <li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RPK40 Contactless Reader + PIN</li>  <li>pivCLASS RP40 Contactless Reader</li> <li>pivCLASS R10 Contactless Reader</li>  <li>pivCLASS R40 Contactless Reader</li> |
 | Under Review | AMAG Symmetry | Technology Industries Validation System for AMAG Symmetry | <li>Veridt Stealth Contactless Keypad Reader</li>  <li>Veridt Stealth Dual Contact/Contactless Keypad Reader</li>  <li>Veridt Stealth Lite Contactless Reader</li>  <li>Veridt Stealth Lite Dual Contact/Contactless Reader</li> |
 
 If you have this PACS infrastructure
@@ -286,7 +286,7 @@ Cheetah Reader
 Cheetah SE Reader
 This solution has been approved for use with FIPS 201-2 credentials.
 
-## Approved PACS Products - 13.02 Topology
+## Approved PACS Products 13.02 Topology
 The table below displays the PACS configurations that have been tested and approved in a complete end-to-end fashion using the 13.02 topology.
 
 If you have this PACS and Validation Infrastructure
