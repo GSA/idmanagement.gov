@@ -22,7 +22,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
     <ul class="usa-unstyled-list">
       {% for category in categories %}
         <li>
-          <input class="rpl-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+          <input class="rpl-filter-category" id="category-{{ category | slugify }}" name="categories" value="{{ category }}" checked>
           <label for="category-{{ category | slugify }}">{{ category }}</label>
         </li>
       {% endfor %}
