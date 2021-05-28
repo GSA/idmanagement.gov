@@ -54,8 +54,8 @@ primary_navigation:
         url: /buy/
       - name: Program Managers
         url: /governance/
-  - name: Resources
-    url: /playbooks/
+  - name: Approved Product List
+    url: /buy#products
 
 secondary_navigation:
   - name: Contact Us
