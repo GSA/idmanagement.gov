@@ -129,11 +129,11 @@
 - category: 13.01 
   fipstatus: Approved
   infrastructure: DAQ Starwatch
-  infraurl: 
-  infraapl: 
+  infraurl: /docs/apl-10071-daq-starwatch.pdf
+  infraapl: 10071
   validation: HID Global Validation System for DAQ Starwatch with Embedded Authentication
-  valurl:
-  valapl:
+  valurl: /docs/apl-10072-daq-validation.pdf
+  valapl: 10072
   reader1: pivCLASS RKCL40 Contact/Contactless Reader + PIN
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader1apl: 10007
@@ -162,11 +162,11 @@
 - category: 13.01
   fipstatus: Approved
   infrastructure: Datawatch Systems Site Controller
-  infraurl:
-  infraapl: 
+  infraurl: /docs/apl-10117-datawatch.pdf
+  infraapl: 10117
   validation : HID Validation System for Datawatch
-  valurl:
-  valapl: 
+  valurl: /docs/apl-10118-datawatch-validation.pdf
+  valapl: 10118
   reader1: pivCLASS RP40 Contactless Reader
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader1apl: 10003
@@ -174,9 +174,11 @@
 - category: 13.01
   fipsstatus: Approved
   infrastructure: Feenics Keep V3
-  infraurl:
-  infraapl:
+  infraurl: /docs/apl-10120-feenics.pdf
+  infraapl: 10120
   validation: HID Global Validation System for Feenics Keep V3 with Embedded Authentication
+  valurl: /docs/apl-10121-feenics-validation.pdf
+  valapl: 10120
   reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader8apl: 10052
@@ -195,3 +197,7 @@
   reader9: pivCLASS R40 Contactless Reader
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
+
+- category: 13.02
+
+- category: 20.02
