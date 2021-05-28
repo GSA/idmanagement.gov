@@ -2,12 +2,12 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
-  infraurl: apl-10009-brivo.pdf
-  infraapl: 10009
-  validation: HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato)
-  valurl: apl-10010-brivo-validation.pdf
-  valapl: 10010
+  infrastructure: AMAG Symmetry Professional v9.3
+  infraurl: /docs/apl-10047-symmetry.pdf
+  infraapl: 10047
+  validation: HID Global Validation System for AMAG Symmetry Professional v9.3
+  valurl: /docs/apl-10048-amag.pdf
+  valapl: 10048
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader1apl: 10052
@@ -17,7 +17,7 @@
   reader3: pivCLASS RK40 Contactless Reader + PIN
   reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader3apl: 10004
-  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
   reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader4apl: 10026
   reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
@@ -35,6 +35,30 @@
   reader9: pivCLASS R40 Contactless Reader
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
+ 
+- category: 13.01
+  fipsstatus: Under Review
+  infrastructure: AMAG Symmetry Professional v8.1
+  infraurl: /docs/apl-10087-amag-symmetry-81.pdf
+  infraapl: 10087
+  validation: Technology Industries Validation System for AMAG Symmetry Professional v8.1
+  valurl: /docs/apl-10086-tech-industries.pdf
+  valapl: 10086
+  reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader1url: 10031
+  reader1apl: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader2: Veridt Stealth Contactless Keypad Reader
+  reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader2apl: 10034
+  reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader3apl: 10032
+  reader4: 	Veridt Stealth Lite Contactless Reader
+  reader4url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader4apl: 10035
+  reader5: Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader5url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader5apl: 10033
 
 - category: 13.01
   fipsstatus: Approved
@@ -65,39 +89,15 @@
   reader7: pivCLASS R40 Contactless Reader
   reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader7apl: 10006
-
-- category: 13.01
-  fipsstatus: Under Review
-  infrastructure: AMAG Symmetry Professional v8.1
-  infraurl: /docs/apl-10087-amag-symmetry-81.pdf
-  infraapl: 10087
-  validation: Technology Industries Validation System for AMAG Symmetry Professional v8.1
-  valurl: /docs/apl-10086-tech-industries.pdf
-  valapl: 10086
-  reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader1url: 10031
-  reader1apl: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader2: Veridt Stealth Contactless Keypad Reader
-  reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader2apl: 10034
-  reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
-  reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader3apl: 10032
-  reader4: 	Veridt Stealth Lite Contactless Reader
-  reader4url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader4apl: 10035
-  reader5: Veridt Stealth Lite Dual Contact/Contactless Reader
-  reader5url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader5apl: 10033
-
+  
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: AMAG Symmetry Professional v9.3
-  infraurl: /docs/apl-10047-symmetry.pdf
-  infraapl: 10047
-  validation: HID Global Validation System for AMAG Symmetry Professional v9.3
-  valurl: /docs/apl-10048-amag.pdf
-  valapl: 10048
+  infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
+  infraurl: apl-10009-brivo.pdf
+  infraapl: 10009
+  validation: HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato)
+  valurl: apl-10010-brivo-validation.pdf
+  valapl: 10010
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader1apl: 10052
@@ -107,7 +107,7 @@
   reader3: pivCLASS RK40 Contactless Reader + PIN
   reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader3apl: 10004
-  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
   reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader4apl: 10026
   reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
