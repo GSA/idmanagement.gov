@@ -19,16 +19,6 @@ subnav:
     href: '#category-removed-from-the-apl-june-2018'
   - text: Now Testing Derived PIV Credentials
     href: '#now-testing-derived-piv-credentials'
-  - text: Extension for Random Number Generator (RNG)-based PIV Cards
-    href: '#extension-for-random-number-generator-(rng)--based-piv-cards'
-  - text: Categories Removed from the APL October 2016
-    href: '#cateogries-removed-from-the-apl-october-2016'
-  - text: Category Removed from the APL June 2016
-    href: '#category-removed-from-the-apl-june-2016'
-  - text: GSA Document Signing Tool
-    href: '#gsa-document-signing-tool'
-  - text: Category Removed from the APL June 2014
-    href: '#category-removed-from-the-apl-june-2014'
 ---
 
 # PACS FRTC v1.4.2 Update Released
@@ -43,6 +33,7 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 
 Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201ep/).
 
+[Return to Top](#top)
 
 # Category Removed from the APL December 2020
 
