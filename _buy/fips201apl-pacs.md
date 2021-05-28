@@ -17,14 +17,14 @@ subnav:
       href: '#pacs-solutions-awaiting-approval'
 
 ---
-<!--
+
 {% assign category = "" | split: "" %}
 {% for guide in site.data.fips201pacs %}
   {% assign categoryName = guide.category | strip %}
   {% assign categories = categories | push: categoryName | uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
--->
+
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
@@ -36,21 +36,20 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 Visit the [Buy Page](../) to view FICAM products, services and purchasing guidance.
 
 # Approved PACS Products
-<!--
+
 <fieldset class="usa-fieldset-inputs guide-filter">
   <legend>Topologies</legend>
     <ul class="usa-unstyled-list">
       {% for category in categories %}
         <li>
-          <input class="guide-filter-category" id="category-{{ category | slugify }}" name="categories" value="{{ category }}" checked>
+          <input class="guide-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
           <label for="category-{{ category | slugify }}">{{ category }}</label>
         </li>
       {% endfor %}
     </ul>
 </fieldset>
--->
 
-<table class="usa-table--borderless pacs-table">
+<table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
       <th id="pacs-table-heading-fipsstatus" scope="col">FIPS 201 Status</th>
@@ -70,7 +69,6 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
-            <!--
             <td>              
               <ul class="usa-unstyled-list">
                 {% if guide.reader1 %}
@@ -101,7 +99,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                   <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
                 {% endif %}
               </ul>
-            </td> -->
+            </td>
           </tr>
         {% endif %}
       {% endfor %} <!--pacs in category-->
