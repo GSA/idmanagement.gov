@@ -249,6 +249,33 @@
   reader14url:
   reader14apl:
 
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Genetec Security Center – Synergis
+  infraurl: /docs/
+  infraapl: 
+  validation: HID Global Validation System for Genetec Security Center – Synergis
+  valurl: /docs/
+  valapl: 
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Hirsch Velocity
+  infraurl: /docs/
+  infraapl: 
+  validation: HID Global Validation System for Hirsch-Identiv Velocity
+  valurl: /docs/
+  valapl: 
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Honeywell Pro-Watch
+  infraurl: /docs/
+  infraapl: 
+  validation: HID Global Validation System for Pro-Watch
+  valurl: /docs/
+  valapl: 
+
 - category: 13.02
 
 - category: 20.02
