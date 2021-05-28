@@ -36,6 +36,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 # Approved PACS Products
 
+<!--
 <div class="usa-width-one-fourth">
   <fieldset class="usa-fieldset-inputs guides-filter">
     <legend>PACS Topologies</legend>
@@ -103,7 +104,78 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             </td>
           </tr>
         {% endif %}
-      {% endfor %} <!--pacs-->
+      {% endfor %} <!--pacs--><!--
+    {% endfor %}<!--category--><!--
+  </tbody>
+</table>
+
+<fieldset class="usa-fieldset-inputs guide-filter">
+  <legend>Topologies</legend>
+    <ul class="usa-unstyled-list">
+      {% for category in categories %}
+        <li>
+          <input class="guide-filter-category" id="category-{{ category | slugify }}" name="categories" value="{{ category }}" checked>
+          <label for="category-{{ category | slugify }}">{{ category }}</label>
+        </li>
+      {% endfor %}
+    </ul>
+</fieldset>
+-->
+
+<table class="usa-table--borderless pacs-table">
+  <thead class="usa-sr">
+    <tr>
+      <th id="pacs-table-heading-fipsstatus" scope="col">FIPS 201 Status</th>
+      <th id="pacs-table-heading-infra" scope="col">PACS Infrastructure</th>
+      <th id="pacs-table-heading-validation" scope="col">PACS Validation System</th>
+      <th id="pacs-table-heading-cardreader" scope="col">Approved Card Reader</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for category in categories %}
+      <tr class="pacs-table-category-heading" data-category="{{ category }}">
+        <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
+      </tr>
+      {% for guide in site.data.fips201pacs %}
+        {% if guide.category == category %}
+          <tr class="pacs-table-row" data-category="{{ guide.category }}">
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
+            <td>              
+              <ul class="usa-unstyled-list">
+                {% if guide.reader1 %}
+                  <li><a href="{{ guide.reader1url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
+                {% endif %}
+                {% if guide.reader2 %}
+                  <li><a href="{{ guide.reader2url | prepend: site.baseurl }}" target="_blank">{{ guide.reader2 }}</a></li>
+                {% endif %}
+                {% if guide.reader3 %}
+                  <li><a href="{{ guide.reader3url | prepend: site.baseurl }}" target="_blank">{{ guide.reader3 }}</a></li>
+                {% endif %}
+                {% if guide.reader4 %}
+                  <li><a href="{{ guide.reader4url | prepend: site.baseurl }}" target="_blank">{{ guide.reader4 }}</a></li>
+                {% endif %}
+                {% if guide.reader5 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader5 }}</a></li>
+                {% endif %}
+                {% if guide.reader6 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
+                {% endif %}
+                {% if guide.reader7%}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
+                {% endif %}
+                {% if guide.reader8 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader8 }}</a></li>
+                {% endif %}
+                {% if guide.reader9 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
+                {% endif %}
+              </ul>
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %} <!--rpl-->
     {% endfor %}<!--category-->
   </tbody>
 </table>
