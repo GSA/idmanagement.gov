@@ -17,18 +17,6 @@ sidenav: buy
 
 The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were at one time on the Approved Products List but are no longer approved for government use. Due to security concerns, products on the RPL are not recommended for government procurement. Products will be removed from the RPL after 3 years.
 
-<fieldset class="usa-fieldset-inputs rpl-filter">
-  <legend>APL Categories</legend>
-    <ul class="usa-unstyled-list">
-      {% for category in categories %}
-        <li>
-          <input class="rpl-filter-category" id="category-{{ category | slugify }}" name="categories" value="{{ category }}" checked>
-          <label for="category-{{ category | slugify }}">{{ category }}</label>
-        </li>
-      {% endfor %}
-    </ul>
-</fieldset>
-
 <table class="usa-table--borderless rpl-table">
   <thead class="usa-sr">
     <tr>
