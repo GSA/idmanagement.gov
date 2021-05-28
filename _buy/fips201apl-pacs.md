@@ -33,8 +33,8 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 | FIPS Status | PACS Infrastructure | PACS Validation System | Approved Card Readers |
 | ------ | --------- | --------- | ---------- |
-| Approved | MAG Symmetry | HID Global Validation System for AMAG Symmetry | <li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li><li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RK40 Contactless Reader + PIN</li><li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li><li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RPK40 Contactless Reader + PIN</li><li>pivCLASS RP40 Contactless Reader</li><li>pivCLASS R10 Contactless Reader</li><li>pivCLASS R40 Contactless Reader</li> |
-| Under Review | AMAG Symmetry | Technology Industries Validation System for AMAG Symmetry | <li>Veridt Stealth Contactless Keypad Reader</li><li>Veridt Stealth Dual Contact/Contactless Keypad Reader</li><li>Veridt Stealth Lite Contactless Reader</li><li>Veridt Stealth Lite Dual Contact/Contactless Reader</li> |
+| Approved | MAG Symmetry | HID Global Validation System for AMAG Symmetry | <li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li>  <li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RK40 Contactless Reader + PIN</li>  <li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li>  <li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RPK40 Contactless Reader + PIN</li>  <li>pivCLASS RP40 Contactless Reader</li> <li>pivCLASS R10 Contactless Reader</li>  <li>pivCLASS R40 Contactless Reader</li> |
+| Under Review | AMAG Symmetry | Technology Industries Validation System for AMAG Symmetry | <li>Veridt Stealth Contactless Keypad Reader</li>  <li>Veridt Stealth Dual Contact/Contactless Keypad Reader</li>  <li>Veridt Stealth Lite Contactless Reader</li>  <li>Veridt Stealth Lite Dual Contact/Contactless Reader</li> |
 
 If you have this PACS infrastructure
 Avigilon ACM,and this PACS Validation System:
