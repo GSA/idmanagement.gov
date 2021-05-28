@@ -5,10 +5,7 @@
 
   https://circleci.com/
 -->
-<!--[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
-
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=18F/federalist-uswds-jekyll)](https://dependabot.com)
--->
+[![CircleCI](https://circleci.com/gh/GSA/ficam-playbooks.svg?style=svg)](https://circleci.com/gh/GSA/ficam-playbooks)
 
 This work is in Beta stage and is led by the GSA Identity and Trusted Access Division FICAM Program in coordination with the ICAM Subcommittee of the Federal CIO Council.
 

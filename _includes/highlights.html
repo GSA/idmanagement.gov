@@ -3,59 +3,64 @@ Use this section to highlight key elements of your site. Some sites will only ha
 eight.
 {% endcomment %}
 
-
-<section class="usa-graphic-list usa-section usa-section--dark">
-  <div class="grid-container">
-    <div class="usa-graphic-list__row grid-row grid-gap">
-       <div class="usa-media-block tablet:grid-col">
-        {% asset arch-icon.png class="usa-media-block__img" alt="FICAM Architecture" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/arch/">FICAM Architecture</a></h3>
-          <p>Understand the basics of ICAM, the FICAM Architecture, and how to facilitate ICAM practices at your agency.</p>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        {% asset ficampm-icon.png class="usa-media-block__img" alt="ICAM Program Management" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/pm/">ICAM Program Management</a></h3>
-          <p>Build, operate, and maintain an ICAM Governance Body and Program Management Office.</p>
-        </div>
-      </div>
-    </div>
-     
-      <div class="usa-graphic-list__row grid-row grid-gap">
-      <div class="usa-media-block tablet:grid-col">
-        {% asset pki-icon.png class="usa-media-block__img" alt="Federal Public Key Infrastructure (FPKI)" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/fpki/">Federal Public Key Infrastructure (FPKI)</a></h3>
-          <p>This guide describes the structure, purpose, and current operational status of the FPKI.</p>
-        </div>
-       </div>
-      <div class="usa-media-block tablet:grid-col">
-        {% asset piv-icon.png class="usa-media-block__img" alt="Personal Identity Verification (PIV)" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/piv/">Personal Identity Verification (PIV)</a></h3>
-          <p>Use PIV credentials for logical access such as authenticating to networks or applications, or digitally signing and encrypting.</p>
-        </div>
-      </div>
-    </div>
-    
-       <div class="usa-graphic-list__row grid-row grid-gap">
-        <div class="usa-media-block tablet:grid-col">
-          {% asset pacs-icon.png class="usa-media-block__img" alt="Physical Access Control Systems (PACS)" %}
-          <div class="usa-media-block__body">
-            <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/pacs/">Physical Access Control Systems (PACS)</a></h3>
-            <p>Understand the concepts related to building and operating a FICAM-compliant PACS.</p>
-          </div>
-        </div>
-     
-       <div class="usa-media-block tablet:grid-col">
-        {% asset playbook-icon.png class="usa-media-block__img" alt="Other FICAM Playbooks" %}
-        <div class="usa-media-block__body">
-          <h3 class="usa-graphic-list__heading"><a href="{{site.baseurl}}/playbooks/">Other FICAM Playbooks</a></h3>
-          <p>A step-by-step companion to perform a FICAM process.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="ficam-page-container">
+	<div class="grid-container">
+		<div class="partners-container grid-row">
+			<div class="desktop:grid-col-12">
+				<div class="home-partners-title margin-bottom-2">
+					<h2 class="text-center">Information for <span class="text-no-wrap">Our Partners</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="partners-container grid-row home-partners-title" style="margin-top: 0;">
+			<div class="desktop:grid-col-4 padding-2">
+				<div class="grid-row">
+					<div class="tablet:grid-col-3 home-partners-icon-container">
+						{% asset ficampm-icon.png class="home-partners-icon" alt="Sell Products and Services" %}
+					</div>
+					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
+						<div class="home-partners-text">
+							<h3>Vendors</h3>
+							<p class="margin-bottom-4">Sell your Identity, Credential, and Access Management (ICAM) products and services to the federal government</p>
+							<a href="{{site.baseurl}}/sell/" class="usa-button">Start Process</a>
+						</div>
+					</div>
+				</div>
+				<hr class="partner-divider desktop:display-none">
+			</div>
+			
+			<div class="desktop:grid-col-4 padding-2">
+				<div class="grid-row">
+					<div class="tablet:grid-col-3 home-partners-icon-container">
+						{% asset arch-icon.png class="usa-media-block__img" alt="Buy Products and Services" %}
+					</div>
+					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
+						<div class="home-partners-text">
+							<h3>Procurement Professionals</h3>
+							<p class="margin-bottom-4">Adopt innovative Identity, Credential, and Access Management (ICAM) products and services to meet your agency’s mission needs</p>
+							<a href="{{site.baseurl}}/buy/" class="usa-button">Start Research</a>
+						</div>
+					</div>
+				</div>
+				<hr class="partner-divider desktop:display-none">
+			</div>
+			
+			
+			<div class="desktop:grid-col-4 padding-2">
+				<div class="grid-row">
+					<div class="tablet:grid-col-3 home-partners-icon-container">
+						{% asset playbook-icon.png class="usa-media-block__img" alt="FICAM Governance" %}
+					</div>
+					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
+						<div class="home-partners-text">
+							<h3>Program Managers</h3>
+							<p class="margin-bottom-4">Govern and operate FICAM-compliant systems and services.</p>
+							<a href="{{site.baseurl}}/governance/" class="usa-button">Collaborate with Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
 </section>

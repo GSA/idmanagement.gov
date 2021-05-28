@@ -8,25 +8,26 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: FICAM Playbooks
+title: IDManagement.gov
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing Federal Enterprise Identities.
-baseurl: "https://playbooks.idmanagement.gov"
-repourl: "https://github.com/GSA/ficam-playbooks"
+baseurl: "https://www.idmanagement.gov"
+repourl: "https://github.com/GSA/idmanagement.gov"
 
 #for site map search
-url: https://playbooks.idmanagement.gov
+url: https://www.idmanagement.gov
 
 # GitHub information
 # This is used for adding an edit this page link to the footer
 github_info:
   organization: GSA
-  repository: ficam-playbooks
-  default_branch: staging
+  repository: idmanagement.gov
+  default_branch: federalist-pages
 
 # Twitter handle. Only the handle, not the URL.
 # twitter: 18F
+url: "https://www.idmanagement.gov"
 
 dap:
   agency: GSA
@@ -41,53 +42,24 @@ ga:
 # Site Navigation
 primary_navigation:
   - name: Home
-    description: FICAM Playbooks Home Page
+    description: IDmanagement.gov
     url: /
-#  - name: Buy
-#    children:
-#      - name: Buy Overview
-#        url: /buy/buy/
-#      - name: Trust Services
-#        url: /buy/trust-services/
-#  - name: Sell
-#    children:
-#      - name: Sell Overview
-#        url: /sell/sell/
-#      - name: FIPS 201 Evaluation Program
-#        url: /sell/fips201ep/
-#      - name: FIPS 201 Approved Product List
-#        url: /sell/fips201apl/
-  - name: FICAM Architecture
-    description: FICAM Archtecture
-    url: /arch/
-  - name: ICAM Program Management
-    description: ICAM Program Management
-    url: /pm/
-  - name: Federal PKI (FPKI)
-    url: /fpki/
-  - name: Personal Identity Verification (PIV)
-    url: /piv/
-  - name: Physical Access Control Systems (PACS)
-    description: Physical Access Control Systems Guide
-    url: /pacs/
-  - name: Other FICAM Playbooks
-    description: Other FICAM Playbooks
+  - name: About Us
+    url: /about/
+  - name: Partners
+    children:
+      - name: Vendors
+        url: /sell/
+      - name: Procurement Professionals
+        url: /buy/
+      - name: Program Managers
+        url: /governance/
+  - name: Resources
     url: /playbooks/
-#    children:
-#      - name: Playbooks Overview
-#        url: /playbooks/
-#      - name: Digital Identity Risk Assessment (DIRA)
-#        url: /playbooks/dira/
-#      - name: Digital Worker
-#        url: /playbooks/dw/
-#      - name: Enterprise Single Sign-On
-#        url: /playbooks/sso/
 
 secondary_navigation:
   - name: Contact Us
     url: /contact/
-  - name: About Us
-    url: /about/
   - name: Contribute
     url: /contribute/
 
@@ -116,32 +88,15 @@ searchgov:
 ##########################################################################################
 
 collections:
-  ficampm:
-    output: true
-    permalink: /pm/:path/
-  arch:
-    output: true
-    permalink: /arch/:path/
-  fpki:
-    output: true
-    permalink: /fpki/:path/
-  pacs:
-    output: true
-    permalink: /pacs/:path/
-  piv:
-    output: true
-    permalink: /piv/:path/
   buy:
     output: true
     permalink: /buy/:path/
-  playbooks:
-    output: true
-    permalink: /playbooks/:path/
   sell:
     output: true
     permalink: /sell/:path/
-  guides:
+  governance:
     output: true
+    permalink: /governance/:path/
   pages:
     output: true
     permalink: /:path/
