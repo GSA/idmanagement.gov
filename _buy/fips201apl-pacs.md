@@ -17,13 +17,14 @@ subnav:
       href: '#pacs-solutions-awaiting-approval'
 
 ---
-
+<!--
 {% assign category = "" | split: "" %}
 {% for guide in site.data.fips201pacs %}
   {% assign categoryName = guide.category | strip %}
   {% assign categories = categories | push: categoryName | uniq | sort %}
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
+-->
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
@@ -137,9 +138,9 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
       <tr class="pacs-table-category-heading" data-category="{{ category }}">
         <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
       </tr>
-      {% for guide in site.data.fips201pacs %}
-        {% if guide.category == category %}
 -->
+      {% for guide in site.data.fips201pacs %}
+        <!-- {% if guide.category == category %} -->
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
@@ -178,7 +179,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
           </tr>
     <!--    {% endif %} -->
     <!--  {% endfor %} <!--rpl-->
-    <!-- {% endfor %}<!--category-->
+     {% endfor %} <!--category-->
   </tbody>
 </table>
 
