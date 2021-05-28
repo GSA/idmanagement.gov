@@ -15,13 +15,6 @@ subnav:
       href: '#legacy-piv-cards'
 ---
 
-{% assign categories = "" | split: "" %}
-{% for apl in site.data.fips201apl %}
-  {% assign categoryName = apl.category | strip %}
-  {% assign categories = categories | push: categoryName | uniq | sort %}
-{% endfor %}
-{% assign categories = categories | uniq | sort %}
-
 The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
 If you do not see a card below, it's possible it's on the [Removed Product List](../rpl/)
@@ -38,33 +31,24 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 ## Approved PIV Cards
 
-<div class="usa-width-three-fourths">
-  <table class="usa-table-borderless">
-    <thead class="usa-sr-only">
-      <tr>
-        <th id="apl-table-heading-name" scope="col">Product Name</th>
-        <th id="apl-table-heading-number" scope="col">APL Number</th>
-        <th id="apl-table-heading-date" scope="col">Valid Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for category in categories %}
-        <tr class="apl-table-category-heading" data-category="{{ category }}">
-          <th colspan="3" class="apl-table-heading" id="apl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
-        </tr>
-        {% for apl in site.data.fips201apl %}
-          {% if apl.category == category %}
-            <tr class="apl-table-row" data-category="{{ apl.category }}">
-              <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank">{{ apl.productname }}</a></td>
-              <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
-              <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
-            </tr>
-          {% endif %}
-        {% endfor %} <!--apl-->
-      {% endfor %}<!--category-->
-    </tbody>
-  </table>
-</div>
+<table class="usa-table-borderless">
+  <thead class="usa-sr">
+    <tr>
+      <th id="apl-table-heading-name" scope="col">Product Name</th>
+      <th id="apl-table-heading-number" scope="col">APL Number</th>
+      <th id="apl-table-heading-date" scope="col">Valid Date</th>
+    </tr>    
+  </thead>
+  <tbody>
+    {% for apl in site.data.fips201apl %}
+      <tr class="apl-table-row" data-category="{{ apl.category }}">
+         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank">{{ apl.productname }}</a></td>
+        <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
+        <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
+       </tr>
+    {% endfor %} <!--apl-->
+  </tbody>
+</table>
 
 ## Legacy PIV Cards
 
