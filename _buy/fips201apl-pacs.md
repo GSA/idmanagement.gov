@@ -31,24 +31,12 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 ## 13.01 Topology
 
-| FIPS Status | PACS Infrastructure | PACS Validation System | Approved Card Readers |
+| Use with FIPS 201-2 Credential Status | If you have this PACS Infrastructure.. | With this PACS Validation System.. | You can use these card readers. |
 | ------ | --------- | --------- | ---------- |
-| Approved | AMAG Symmetry | HID Global Validation System for AMAG Symmetry | <li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li>  <li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RK40 Contactless Reader + PIN</li>  <li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li>  <li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li>  <li>pivCLASS RPK40 Contactless Reader + PIN</li>  <li>pivCLASS RP40 Contactless Reader</li> <li>pivCLASS R10 Contactless Reader</li>  <li>pivCLASS R40 Contactless Reader</li> |
-| Under Review | AMAG Symmetry | Technology Industries Validation System for AMAG Symmetry | <li>Veridt Stealth Contactless Keypad Reader</li>  <li>Veridt Stealth Dual Contact/Contactless Keypad Reader</li>  <li>Veridt Stealth Lite Contactless Reader</li>  <li>Veridt Stealth Lite Dual Contact/Contactless Reader</li> |
-
-If you have this PACS infrastructure
-Avigilon ACM,and this PACS Validation System:
-
-HID Global Validation System for Avigilon, you can use these types of card readers
-
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R40 Contactless Reader
-pivCLASS R10 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
+| Approved | AMAG Symmetry | HID Global Validation System for AMAG Symmetry | <ul><li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li><li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RK40 Contactless Reader + PIN</li><li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li><li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RPK40 Contactless Reader + PIN</li><li>pivCLASS RP40 Contactless Reader</li><li>pivCLASS R10 Contactless Reader</li><li>pivCLASS R40 Contactless Reader</li></ul> |
+| Under Review | AMAG Symmetry | Technology Industries Validation System for AMAG Symmetry | <ul><li>Veridt Stealth Contactless Keypad Reader</li><li>Veridt Stealth Dual Contact/Contactless Keypad Reader</li><li>Veridt Stealth Lite Contactless Reader</li><li>Veridt Stealth Lite Dual Contact/Contactless Reader</li></ul> |
+| Approved | Avigilon ACM | HID Global Validation System for Avigilon | <ul><li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RK40 Contactless Reader + PIN</li><li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RPK40 Contactless Reader + PIN</li><li>pivCLASS RP40 Contactless Reader</li><li>pivCLASS R40 Contactless Reader
+pivCLASS R10 Contactless Reader</li></ul> |
 
 If you have this PACS infrastructure
 Brivo OnSite Server (previously known as Brivo Aparato),and this PACS Validation System:
