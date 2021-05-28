@@ -199,5 +199,34 @@
   reader9apl: 10006
 
 - category: 13.02
+  fipsstatus: Approved
+  infrastructure: Gallagher PIV Command Centreand 
+  infraurl: /docs/
+  infraapl: 
+  validation: HID Global Validation System for Gallagher Command Centre
+  valurl: /docs/
+  valapl: 
+  reader1: Gallagher T10 PIV Reader
+  reader1url: /docs/
+  reader1apl: 
+  reader2: Gallagher T11 PIV Reader – Multi Tech
+  reader2url: /docs/
+  reader2apl: 
+  reader3: Gallagher T11 PIV Reader
+  reader3url: /docs/
+  reader3apl: Gallagher T15 PIV Reader – Multi Tech
+  reader4:
+  reader4url:
+  reader4apl:
+Gallagher T15 PIV Reader
+Gallagher T20 PIV Reader Multi-Tech
+Gallagher T20 PIV Reader
+Gallagher T21 PIV Reader Multi-Tech
+Gallagher T21 PIV Reader
+Veridt Bio Dual Contact/Contactless Keypad Reader
+Veridt Stealth Contactless Keypad Reader
+Veridt Stealth Dual Contact/Contactless Keypad Reader
+Veridt Stealth Lite Contactless Reader
+Veridt Stealth Lite Dual Contact/Contactless Reader
 
 - category: 20.02

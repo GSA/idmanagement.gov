@@ -36,7 +36,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 Visit the [Buy Page](../) to view FICAM products, services and purchasing guidance.
 
 # Approved PACS Products
-
+<!--
 <fieldset class="usa-fieldset-inputs guide-filter">
   <legend>Topologies</legend>
     <ul class="usa-unstyled-list">
@@ -48,6 +48,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
       {% endfor %}
     </ul>
 </fieldset>
+-->
 
 <table class="usa-table--borderless pacs-table">
   <thead class="usa-sr">
@@ -69,6 +70,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
+            <!--
             <td>              
               <ul class="usa-unstyled-list">
                 {% if guide.reader1 %}
@@ -99,11 +101,11 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                   <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
                 {% endif %}
               </ul>
-            </td>
+            </td> -->
           </tr>
         {% endif %}
-      {% endfor %} <!--rpl-->
-     {% endfor %} <!--category-->
+      {% endfor %} <!--pacs in category-->
+     {% endfor %} <!--overall pacs category-->
   </tbody>
 </table>
 
