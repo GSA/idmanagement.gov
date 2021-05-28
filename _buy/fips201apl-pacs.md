@@ -64,7 +64,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
         <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
       </tr>
       {% for guide in site.data.fips201pacs %}
-        <!-- {% if guide.category == category %} -->
+        {% if guide.category == category %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
@@ -101,9 +101,9 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
               </ul>
             </td>
           </tr>
-        <!-- {% endif %} -->
-      {% endfor %} <!--pacs in category-->
-     {% endfor %} <!--overall pacs category-->
+        {% endif %}
+      {% endfor %}
+     {% endfor %}
   </tbody>
 </table>
 
