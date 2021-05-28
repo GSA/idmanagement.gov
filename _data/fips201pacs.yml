@@ -93,10 +93,10 @@
 - category: 13.01
   fipsstatus: Approved
   infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
-  infraurl: apl-10009-brivo.pdf
+  infraurl: /docs/apl-10009-brivo.pdf
   infraapl: 10009
   validation: HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato)
-  valurl: apl-10010-brivo-validation.pdf
+  valurl: /docs/apl-10010-brivo-validation.pdf
   valapl: 10010
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
@@ -125,3 +125,66 @@
   reader9: pivCLASS R40 Contactless Reader
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
+
+- category: 13.01 
+  fipstatus: Approved
+  infrastructure: DAQ Starwatch
+  infraurl: 
+  infraapl: 
+  validation: HID Global Validation System for DAQ Starwatch with Embedded Authentication
+  valurl:
+  valapl:
+  reader1: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10007
+  reader2: pivCLASS RK40 Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10004
+  reader3: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10008
+  reader4: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10005
+  reader5: pivCLASS RP40 Contactless Reader
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10003
+  reader6: pivCLASS R40 Contactless Reader
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10006
+  reader7: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10026
+  reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10052
+
+- category: 13.01
+  fipstatus: Approved
+  infrastructure: Datawatch Systems Site Controller
+  infraurl:
+  infraapl: 
+  validation : HID Validation System for Datawatch
+  valurl:
+  valapl: 
+  reader1: pivCLASS RP40 Contactless Reader
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10003
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Feenics Keep V3
+  infraurl:
+  infraapl:
+  validation: HID Global Validation System for Feenics Keep V3 with Embedded Authentication
+  reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10052
+  reader2: pivCLASS RK40 Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10004
+pivCLASS RK40 Contactless Reader + PIN
+pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+pivCLASS RPK40 Contactless Reader + PIN
+pivCLASS RP40 Contactless Reader
+pivCLASS R40 Contactless Reader
