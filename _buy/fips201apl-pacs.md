@@ -64,42 +64,44 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
         <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
       </tr>
       {% for guide in site.data.fips201pacs %}
+        <!-- {% if guide.category == category %} -->
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infrarul | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
             <td>              
               <ul class="usa-unstyled-list">
                 {% if guide.reader1 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
+                  <li><a href="{{ guide.reader1url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
                 {% endif %}
                 {% if guide.reader2 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader2 }}</a></li>
+                  <li><a href="{{ guide.reader2url | prepend: site.baseurl }}" target="_blank">{{ guide.reader2 }}</a></li>
                 {% endif %}
                 {% if guide.reader3 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader3 }}</a></li>
+                  <li><a href="{{ guide.reader3url | prepend: site.baseurl }}" target="_blank">{{ guide.reader3 }}</a></li>
                 {% endif %}
                 {% if guide.reader4 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader4 }}</a></li>
+                  <li><a href="{{ guide.reader4url | prepend: site.baseurl }}" target="_blank">{{ guide.reader4 }}</a></li>
                 {% endif %}
                 {% if guide.reader5 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader5 }}</a></li>
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader5 }}</a></li>
                 {% endif %}
                 {% if guide.reader6 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
                 {% endif %}
                 {% if guide.reader7%}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
                 {% endif %}
                 {% if guide.reader8 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader8 }}</a></li>
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader8 }}</a></li>
                 {% endif %}
                 {% if guide.reader9 %}
-                  <li><a href="{{ guide.url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
                 {% endif %}
               </ul>
             </td>
           </tr>
+        <!-- {% endif %} -->
       {% endfor %}
      {% endfor %}
   </tbody>
