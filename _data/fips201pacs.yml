@@ -198,7 +198,7 @@
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
 
-- category: 13.02
+- category: 13.01
   fipsstatus: Approved
   infrastructure: Gallagher PIV Command Centreand 
   infraurl: /docs/
@@ -218,15 +218,37 @@
   reader4:
   reader4url:
   reader4apl:
-Gallagher T15 PIV Reader
-Gallagher T20 PIV Reader Multi-Tech
-Gallagher T20 PIV Reader
-Gallagher T21 PIV Reader Multi-Tech
-Gallagher T21 PIV Reader
-Veridt Bio Dual Contact/Contactless Keypad Reader
-Veridt Stealth Contactless Keypad Reader
-Veridt Stealth Dual Contact/Contactless Keypad Reader
-Veridt Stealth Lite Contactless Reader
-Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader5: Gallagher T15 PIV Reader
+  reader5url: 
+  reader5apl: 
+  reader6: Gallagher T20 PIV Reader Multi-Tech
+  reader6url:
+  reader6apl:
+  reader7: Gallagher T20 PIV Reader
+  reader7url:
+  reader7apl:
+  reader8: Gallagher T21 PIV Reader Multi-Tech
+  reader8rul:
+  reader8apl:
+  reader9: Gallagher T21 PIV Reader
+  reader9url:
+  reader9apl:
+  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader10url: 
+  reader10apl: 
+  reader11: Veridt Stealth Contactless Keypad Reader
+  reader11url:
+  reader11apl:
+  reader12: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader12url:
+  reader12apl:
+  reader13: Veridt Stealth Lite Contactless Reader
+  reader13apl:
+  reader13url:
+  reader14: Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader14url:
+  reader14apl:
+
+- category: 13.02
 
 - category: 20.02
