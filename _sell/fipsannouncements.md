@@ -43,6 +43,7 @@ The FIPS 201 Evaluation program will be removing card holders (also known as bad
 
 Please note the removal of this category should not impact any existing procurements. Product categories not identified by the Program have no requirement for FIPS 201 conformance and available products should be able to satisfy the agency defined security requirements provided direct testing.
 
+[Return to Top](#top)
 
 # Category Removed from the APL April 2019
 
@@ -55,6 +56,7 @@ The FIPS 201 Evaluation program has removed the following categories from the [A
 
 Please note the removal of these categories should not impact any procurements. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
 
+[Return to Top](#top)
 
 # PACS FRTC v1.3.3 Update Released 
 
@@ -67,6 +69,7 @@ PACS FRTC v1.3.3 Rev. G has been published and is in effect immediately. Section
 
 All new versions are effective immediately. New or revised requirements and their test cases will include an effective date, commensurate with their assigned severity level (see paragraphs 7.1, 7.2, and 7.3.
 
+[Return to Top](#top)
 
 # Category Removed from the APL June 2018
 
@@ -74,6 +77,7 @@ POSTED June 30, 2018
 
 In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../rpl/).
 
+[Return to Top](#top)
 
 # Now Testing Derived PIV Credentials
 
@@ -81,6 +85,7 @@ POSTED August 18, 2017
 
 The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../fips201ep/) page for information about the testing process or to submit a credential for testing.
 
+[Return to Top](#top)
 
 # Extension for Random Number Generator (RNG)-based PIV Cards
 
@@ -92,6 +97,7 @@ NIST’s PIV Validation Program has provided an extension on migrating away from
 
 The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue to list RNG-based PIV cards until June 30, 2018.
 
+[Return to Top](#top)
 
 # Categories Removed from the APL October 2016
 
@@ -127,6 +133,7 @@ Please note the removal of these categories should not impact any procurements. 
 | Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
 | Template Matcher	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
 
+[Return to Top](#top)
 
 # Category Removed from the APL June 2016
 
@@ -136,6 +143,7 @@ In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nis
 
 According to this transition plan, agencies may continue to procure and issue credentials using implementations marked as “legacy” on the [NPIVP validation list](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"} until June 30, 2017. However, the agencies should migrate to fully compliant credentials implementing approved DRBGs as soon as DRBG PIV credential and the compatible credential management software are commercially available. Once issued, these “legacy” RNG PIV credentials may be used until their expiration date – up to June 30, 2023.
 
+[Return to Top](#top)
 
 # GSA Document Signing Tool
 
@@ -147,6 +155,7 @@ If you have any questions, comments, or issues with the GSA Document Signing Too
 
 As new questions are posted to the [“Issues” section](http://github.com/GSA/gsa-doc-digital-signature/issues){:target="_blank"}{:rel="noopener noreferrer"}, all members in the community may contribute to answering and/or helping with any code enhancements. We encourage community members to actively contribute and share their contributions with everyone.
 
+[Return to Top](#top)
 
 # Category Removed from the APL June 2014
 
