@@ -8,9 +8,9 @@ buy:
   - text: GSA ICAM Solutions
     href: /buy/icamsolutions/
   - text: FIPS 201 Approved Product List - PIV Cards
-    href: /buy/apl-piv/
+    href: /approved-products-list-piv/
   - text: FIPS 201 Approved Product List - PACS
-    href: /buy/apl-pacs/
+    href: /approved-products-list-pacs-products/
   - text: FIPS 201 Removed Product list
     href: /buy/rpl/
     
@@ -20,7 +20,7 @@ sell:
   - text: Vendor Overview
     href: /sell/
   - text: FIPS 201 Evaluation Program
-    href: /sell/fips201ep/
+    href: /fips201/
   - text: FIPS 201 Announcements
     href: /sell/fipsannouncements
     

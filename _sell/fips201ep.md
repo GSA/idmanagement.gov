@@ -2,7 +2,7 @@
 layout: page
 title:  FIPS 201 Evaluation Program
 collection: sell
-permalink: sell/fips201ep/
+permalink: fips201/
 sidenav: sell
 sticky_sidenav: true
 
