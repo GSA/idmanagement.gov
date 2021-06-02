@@ -12,9 +12,9 @@ subnav:
     - text: How to Purchase
       href: '#how-to-purchase'
     - text: Approved PACS Products - 13.01 Topology
-      href: '#approved-13.01-topology-pacs-products'
+      href: '#approved-1301-topology-pacs-products'
     - text: Approved PACS Products - 13.02 Topology
-      href: '#approved-13.02-topology-pacs-products'
+      href: '#approved-1302-topology-pacs-products'
     - text: PACS Solutions Awaiting Approval
       href: '#pacs-solutions-awaiting-approval'
 
@@ -30,8 +30,8 @@ subnav:
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
-- [13.01 Topology](#approved-13.01-topology-pacs-products) – end-to-end systems which integrate components from three categories (PACS Infrastructure; Validation System; and PIV Reader) together through software (SDK or API).
-- [13.02 Topology](approved-13.02-topology-pacs-products) – end-to-end systems which integrate the first two components (PACS Infrastructure; Validation System) into a “PACS Validation Infrastructure,” which is then integrated with the third component category (PIV Reader).
+- [13.01 Topology](#approved-1301-topology-pacs-products) – end-to-end systems which integrate components from three categories (PACS Infrastructure; Validation System; and PIV Reader) together through software (SDK or API).
+- [13.02 Topology](#approved-1302-topology-pacs-products) – end-to-end systems which integrate the first two components (PACS Infrastructure; Validation System) into a “PACS Validation Infrastructure,” which is then integrated with the third component category (PIV Reader).
 
 # How To Purchase
 
@@ -144,7 +144,6 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
             <td>              
               <ul class="usa-unstyled-list">
                 <ol type = "1">
