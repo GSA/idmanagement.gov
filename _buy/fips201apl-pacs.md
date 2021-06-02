@@ -20,14 +20,6 @@ subnav:
 
 ---
 
-{% assign category = "" | split: "" %}
-{% for guide in site.data.fips201pacs %}
-  {% assign categoryName = guide.category | strip %}
-  {% assign categories = categories | push: categoryName | uniq | sort %}
-{% endfor %}
-{% assign categories = categories | uniq | sort %}
-
-
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
 - [13.01 Topology](#approved-1301-topology-pacs-products) – end-to-end systems which integrate components from three categories (PACS Infrastructure; Validation System; and PIV Reader) together through software (SDK or API).
@@ -63,10 +55,6 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
     </tr>
   </thead>
   <tbody>
-   {% for category in categories %}
-      <tr class="pacs-table-category-heading" data-category="{{ category }}">
-        <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
-      </tr>
       {% for guide in site.data.fips201pacs %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
@@ -122,11 +110,10 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             </td>
           </tr>
       {% endfor %}
-    {% endfor %}
   </tbody>
 </table>
 
-**NOTE** APL listings 10027 and 10028 have been consolidated into APL listings 10112 and 10113, respectively.
+**NOTE** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
 
 
 # Approved 13.02 Topology PACS Products
