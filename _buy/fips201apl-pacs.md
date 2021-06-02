@@ -70,6 +70,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
             <td>              
               <ul class="usa-unstyled-list">
+                <ol type = "1">
                 {% if guide.reader1 %}
                   <li><a href="{{ guide.reader1url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
                 {% endif %}
@@ -88,7 +89,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                 {% if guide.reader6 %}
                   <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
                 {% endif %}
-                {% if guide.reader7%}
+                {% if guide.reader7 %}
                   <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
                 {% endif %}
                 {% if guide.reader8 %}
@@ -96,7 +97,22 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                 {% endif %}
                 {% if guide.reader9 %}
                   <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
+                {% if guide.reader10 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader10 }}</a></li>
                 {% endif %}
+                {% if guide.reader11 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader11 }}</a></li>
+                {% endif %}
+                {% if guide.reader12 %}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader12 }}</a></li>
+                {% endif %}
+                {% if guide.reader13 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader13 }}</a></li>
+                {% endif %}
+                {% if guide.reader14 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader14 }}</a></li>
+                {% endif %}
+                </ol>
               </ul>
             </td>
           </tr>

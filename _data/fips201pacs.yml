@@ -127,7 +127,7 @@
   reader9apl: 10006
 
 - category: 13.01 
-  fipstatus: Approved
+  fipsstatus: Approved
   infrastructure: DAQ Starwatch
   infraurl: /docs/apl-10071-daq-starwatch.pdf
   infraapl: 10071
@@ -160,7 +160,7 @@
   reader8apl: 10052
 
 - category: 13.01
-  fipstatus: Approved
+  fipsstatus: Approved
   infrastructure: Datawatch Systems Site Controller
   infraurl: /docs/apl-10117-datawatch.pdf
   infraapl: 10117
@@ -201,62 +201,89 @@
 - category: 13.01
   fipsstatus: Approved
   infrastructure: Gallagher PIV Command Centreand 
-  infraurl: /docs/
-  infraapl: 
+  infraurl: /docs/apl-10019-gallagher.pdf
+  infraapl: 10019
   validation: HID Global Validation System for Gallagher Command Centre
-  valurl: /docs/
-  valapl: 
+  valurl: /docs/apl-10020-gallagher-validation.pdf
+  valapl: 10020
   reader1: Gallagher T10 PIV Reader
-  reader1url: /docs/
-  reader1apl: 
-  reader2: Gallagher T11 PIV Reader – Multi Tech
-  reader2url: /docs/
-  reader2apl: 
+  reader1url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader1apl: 10021
+  reader2: Gallagher T11 PIV Reader Multi Tech
+  reader2url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader2apl: 10023
   reader3: Gallagher T11 PIV Reader
-  reader3url: /docs/
-  reader3apl: Gallagher T15 PIV Reader – Multi Tech
-  reader4:
-  reader4url:
-  reader4apl:
+  reader3url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader3apl: 10022
+  reader4: Gallagher T15 PIV Reader Multi Tech
+  reader4url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader4apl: 10102
   reader5: Gallagher T15 PIV Reader
-  reader5url: 
-  reader5apl: 
+  reader5url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader5apl: 10101
   reader6: Gallagher T20 PIV Reader Multi-Tech
-  reader6url:
-  reader6apl:
+  reader6url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader6apl: 10039
   reader7: Gallagher T20 PIV Reader
-  reader7url:
-  reader7apl:
+  reader7url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader7apl: 10038
   reader8: Gallagher T21 PIV Reader Multi-Tech
-  reader8rul:
-  reader8apl:
+  reader8rul: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader8apl: 10100
   reader9: Gallagher T21 PIV Reader
-  reader9url:
-  reader9apl:
+  reader9url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader9apl: 10099
   reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader10url: 
-  reader10apl: 
-  reader11: Veridt Stealth Contactless Keypad Reader
-  reader11url:
-  reader11apl:
-  reader12: Veridt Stealth Dual Contact/Contactless Keypad Reader
-  reader12url:
-  reader12apl:
-  reader13: Veridt Stealth Lite Contactless Reader
-  reader13apl:
-  reader13url:
-  reader14: Veridt Stealth Lite Dual Contact/Contactless Reader
-  reader14url:
-  reader14apl:
+  reader10url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader10apl: 10092
+  reader11: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader11apl: 10093
+  reader12: Veridt Stealth Lite Dual Contact /Contactless Reader
+  reader12url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader12apl: 10094
+  reader13: Veridt Stealth Contactless Keypad Reader
+  reader13url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader13apl: 10095
+  reader14: Veridt Stealth Lite Contactless Reader 
+  reader14url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader14apl: 10096
 
 - category: 13.01
   fipsstatus: Approved
   infrastructure: Genetec Security Center – Synergis
-  infraurl: /docs/
-  infraapl: 
+  infraurl: /docs/apl-10061-genetec.pdf
+  infraapl: 10061
   validation: HID Global Validation System for Genetec Security Center – Synergis
-  valurl: /docs/
-  valapl: 
+  valurl: /docs/apl-10062-genetic-validation.pdf
+  valapl: 10062
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
 
 - category: 13.01
   fipsstatus: Approved
