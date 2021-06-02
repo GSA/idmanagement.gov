@@ -5,8 +5,6 @@ permalink: approved-products-list-pacs-products/
 collection: buy
 sticky_sidenav: true
 sidenav: buy
-custom_js:
-  - guides
 
 subnav:
     - text: How to Purchase
