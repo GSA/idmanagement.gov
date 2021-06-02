@@ -97,6 +97,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
                 {% endif %}
                 {% if guide.reader9 %}
                   <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
+                {% endif %}
                 {% if guide.reader10 %}
                   <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader10 }}</a></li>
                 {% endif %}
