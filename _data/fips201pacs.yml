@@ -45,8 +45,8 @@
   valurl: /docs/apl-10086-tech-industries.pdf
   valapl: 10086
   reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader1url: 10031
-  reader1apl: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader1url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader1apl: 10031
   reader2: Veridt Stealth Contactless Keypad Reader
   reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
   reader2apl: 10034
@@ -573,8 +573,8 @@
   valurl: /docs/apl-10084-galaxy-validation.pdf
   valapl: 10084
   reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader1url: 10031
-  reader1apl: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader1url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader1apl: 10031
   reader2: Veridt Stealth Contactless Keypad Reader
   reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
   reader2apl: 10034
@@ -624,8 +624,8 @@
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
   reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader10url: 10031
-  reader10apl: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader10url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader10apl: 10031
   reader11: Veridt Stealth Contactless Keypad Reader
   reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
   reader11apl: 10034
