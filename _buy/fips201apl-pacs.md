@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FIPS 201 Approved Products List - Physical Access Control System Components
-permalink: buy/apl-pacs/
+permalink: approved-products-list-pacs-products/
 collection: buy
 sticky_sidenav: true
 sidenav: buy
@@ -9,316 +9,178 @@ sidenav: buy
 subnav:
     - text: How to Purchase
       href: '#how-to-purchase'
-    - text: Approved 13.01 PACS Products
-      href: '#approved-pacs-products'
-    - text: Approved 13.02 PACS Products
-      href: '#approved-pacs-products-13.02-Topology'
+    - text: Approved PACS Products - 13.01 Topology
+      href: '#approved-1301-topology-pacs-products'
+    - text: Approved PACS Products - 13.02 Topology
+      href: '#approved-1302-topology-pacs-products'
     - text: PACS Solutions Awaiting Approval
       href: '#pacs-solutions-awaiting-approval'
 
 ---
 
-The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies.
+The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
-- 13.01 - End-to-end systems which integrate components from three categories (PACS Infrastructure; Validation System; and PIV Reader) together through software (SDK or API).
-- 13.02 - End-to-end systems which integrate the first two components (PACS Infrastructure; Validation System) into a “PACS Validation Infrastructure,” which is then integrated with the third component category (PIV Reader).
+- [13.01 Topology](#approved-1301-topology-pacs-products) – end-to-end systems which integrate components from three categories (PACS Infrastructure; Validation System; and PIV Reader) together through software (SDK or API).
+- [13.02 Topology](#approved-1302-topology-pacs-products) – end-to-end systems which integrate the first two components (PACS Infrastructure; Validation System) into a “PACS Validation Infrastructure,” which is then integrated with the third component category (PIV Reader).
 
 # How To Purchase
 
 Visit the [Buy Page](../) to view FICAM products, services and purchasing guidance.
 
-# Approved PACS Products
+# Approved 13.01 Topology PACS Products
 
-## 13.01 Topology
+<!--
+<fieldset class="usa-fieldset-inputs guide-filter">
+  <legend>Topologies</legend>
+    <ul class="usa-unstyled-list">
+      {% for category in categories %}
+        <li>
+          <input class="guide-filter-category" id="category-{{ category | slugify }}" type="checkbox" name="categories" value="{{ category }}" checked>
+          <label for="category-{{ category | slugify }}">{{ category }}</label>
+        </li>
+      {% endfor %}
+    </ul>
+</fieldset>
+-->
 
-| Use with FIPS 201-2 Credential Status | If you have this PACS Infrastructure.. | With this PACS Validation System.. | You can use these card readers. |
-| ------ | --------- | --------- | ---------- |
-| Approved | AMAG Symmetry | HID Global Validation System for AMAG Symmetry | <ul><li>pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO</li><li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RK40 Contactless Reader + PIN</li><li>pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO</li><li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RPK40 Contactless Reader + PIN</li><li>pivCLASS RP40 Contactless Reader</li><li>pivCLASS R10 Contactless Reader</li><li>pivCLASS R40 Contactless Reader</li></ul> |
-| Under Review | AMAG Symmetry | Technology Industries Validation System for AMAG Symmetry | <ul><li>Veridt Stealth Contactless Keypad Reader</li><li>Veridt Stealth Dual Contact/Contactless Keypad Reader</li><li>Veridt Stealth Lite Contactless Reader</li><li>Veridt Stealth Lite Dual Contact/Contactless Reader</li></ul> |
-| Approved | Avigilon ACM | HID Global Validation System for Avigilon | <ul><li>pivCLASS RKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RK40 Contactless Reader + PIN</li><li>pivCLASS RPKCL40 Contact/Contactless Reader + PIN</li><li>pivCLASS RPK40 Contactless Reader + PIN</li><li>pivCLASS RP40 Contactless Reader</li><li>pivCLASS R40 Contactless Reader
-pivCLASS R10 Contactless Reader</li></ul> |
+<table class="usa-table--borderless">
+  <thead class="usa-sr">
+    <tr>
+      <th id="pacs-table-heading-fipsstatus" scope="col">Use with FIPS 201-2 Credential Status</th>
+      <th id="pacs-table-heading-infra" scope="col">If you have this PACS Infrastructure...</th>
+      <th id="pacs-table-heading-validation" scope="col">with this PACS Validation System...</th>
+      <th id="pacs-table-heading-cardreader" scope="col">You can use these card readers.</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for guide in site.data.fips201pacs %}
+          <tr class="pacs-table-row" data-category="{{ guide.category }}">
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
+            <td>              
+              <ul class="usa-unstyled-list">
+                <ol type = "1">
+                {% if guide.reader1 %}
+                  <li><a href="{{ guide.reader1url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
+                {% endif %}
+                {% if guide.reader2 %}
+                  <li><a href="{{ guide.reader2url | prepend: site.baseurl }}" target="_blank">{{ guide.reader2 }}</a></li>
+                {% endif %}
+                {% if guide.reader3 %}
+                  <li><a href="{{ guide.reader3url | prepend: site.baseurl }}" target="_blank">{{ guide.reader3 }}</a></li>
+                {% endif %}
+                {% if guide.reader4 %}
+                  <li><a href="{{ guide.reader4url | prepend: site.baseurl }}" target="_blank">{{ guide.reader4 }}</a></li>
+                {% endif %}
+                {% if guide.reader5 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader5 }}</a></li>
+                {% endif %}
+                {% if guide.reader6 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
+                {% endif %}
+                {% if guide.reader7 %}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
+                {% endif %}
+                {% if guide.reader8 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader8 }}</a></li>
+                {% endif %}
+                {% if guide.reader9 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
+                {% endif %}
+                {% if guide.reader10 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader10 }}</a></li>
+                {% endif %}
+                {% if guide.reader11 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader11 }}</a></li>
+                {% endif %}
+                {% if guide.reader12 %}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader12 }}</a></li>
+                {% endif %}
+                {% if guide.reader13 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader13 }}</a></li>
+                {% endif %}
+                {% if guide.reader14 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader14 }}</a></li>
+                {% endif %}
+                </ol>
+              </ul>
+            </td>
+          </tr>
+      {% endfor %}
+  </tbody>
+</table>
 
-If you have this PACS infrastructure
-Brivo OnSite Server (previously known as Brivo Aparato),and this PACS Validation System:
-HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato), you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
+**NOTE** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
 
-If you have this PACS infrastructure
-DAQ Starwatch,and this PACS Validation System:
 
-HID Global Validation System for DAQ Starwatch with Embedded Authentication, you can use these types of card readers
+# Approved 13.02 Topology PACS Products
 
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R40 Contactless Reader
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Datawatch Systems Site Controller,and this PACS Validation System:
-
-HID Validation System for Datawatch, you can use this type of card reader
-
-pivCLASS RP40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Feenics Keep V3,and this PACS Validation System:
-
-HID Global Validation System for Feenics Keep V3 with Embedded Authentication, you can use these types of card readers
-
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Gallagher PIV Command Centreand this PACS Validation System:
-HID Global Validation System for Gallagher Command Centre,you can use these types of card readers
-Gallagher T10 PIV Reader
-Gallagher T11 PIV Reader – Multi Tech
-Gallagher T11 PIV Reader
-Gallagher T15 PIV Reader – Multi Tech
-Gallagher T15 PIV Reader
-Gallagher T20 PIV Reader Multi-Tech
-Gallagher T20 PIV Reader
-Gallagher T21 PIV Reader Multi-Tech
-Gallagher T21 PIV Reader
-Veridt Bio Dual Contact/Contactless Keypad Reader
-Veridt Stealth Contactless Keypad Reader
-Veridt Stealth Dual Contact/Contactless Keypad Reader
-Veridt Stealth Lite Contactless Reader
-Veridt Stealth Lite Dual Contact/Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Genetec Security Center – Synergis,and this PACS Validation System:
-HID Global Validation System for Genetec Security Center – Synergis, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Hirsch Velocity,and this PACS Validation System:
-HID Global Validation System for Hirsch-Identiv Velocity, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Honeywell Pro-Watch,and this PACS Validation System:
-HID Global Validation System for Pro-Watch, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Lenel OnGuard with Embedded Authentication,and this PACS Validation System:
-HID Global Validation System for Lenel OnGuard with Embedded Authentication, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-Veridt Bio Dual Contact/Contactless Keypad Reader
-Veridt Stealth Contactless Keypad Reader
-Veridt Stealth Dual Contact/Contactless Keypad Reader
-Veridt Stealth Lite Contactless Reader
-Veridt Stealth Lite Dual Contact/Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-APL listings 10027 and 10028 have been consolidated into APL listings 10112 and 10113, respectively.
-
-If you have this PACS and Validation Infrastructure
-Lenel OnGuard with Embedded Authentication, and this PACS Validation System:
-Technology Industries Validation System for Lenel OnGuard with Embedded Authentication you can use these types of card readers
-
-Allegion Schlage Mullion Reader
-Allegion Schlage Single Gang Reader
-Veridt Bio Dual Contact/Contactless Keypad Reader
-Veridt Stealth Contactless Keypad Reader
-Veridt Stealth Dual Contact/Contactless Keypad Reader
-Veridt Stealth Lite Contactless Reader
-Veridt Stealth Lite Dual Contact/Contactless Reader
-This solution is under review for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Open Options DNA Fusion,and this PACS Validation System:
-
-HID Global Validation System for Open Options DNA Fusion, you can use these types of card readers
-
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Quintron AccessNsite,and this PACS Validation System:
-HID Global Validation System for Quintron AccessNsite, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-ReconaSense ,and this PACS Validation System:
-
-HID Global Validation System for ReconaSense, you can use these types of card readers
-
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-RS2 Technologies Access It!,and this PACS Validation System:
-HID Global Validation System for RS2 Access It!, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-System Galaxy Software,and this PACS Validation System:
-Entrypoint Validation System for Galaxy Control Systems, you can use these types of card readers
-Veridt Bio Dual Contact/Contactless Keypad Reader
-Veridt Stealth Contactless Keypad Reader
-Veridt Stealth Dual Contact/Contactless Keypad Reader
-Veridt Stealth Lite Contactless Reader
-Veridt Stealth Lite Dual Contact/Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Tyco Security Products C●CURE 9000,and this PACS Validation System:
-HID Global Validation System for Tyco Security Products C●CURE 9000, you can use these types of card readers
-pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-pivCLASS RKCL40 Contact/Contactless Reader + PIN
-pivCLASS RK40 Contactless Reader + PIN
-pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-pivCLASS RPK40 Contactless Reader + PIN
-pivCLASS RP40 Contactless Reader
-pivCLASS R10 Contactless Reader
-pivCLASS R40 Contactless Reader
-Veridt Bio Dual Contact/Contactless Keypad Reader
-Veridt Stealth Contactless Keypad Reader
-Veridt Stealth Dual Contact/Contactless Keypad Reader
-Veridt Stealth Lite Contactless Reader
-Veridt Stealth Lite Dual Contact/Contactless Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS infrastructure
-Tyco Security Products CCURE 9000,and this PACS Validation System:
-Innometriks Validation System for Tyco/Software House CCURE 9000, you can use this card reader
-Cheetah Reader
-Cheetah SE Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-## Approved PACS Products 13.02 Topology
-The table below displays the PACS configurations that have been tested and approved in a complete end-to-end fashion using the 13.02 topology.
-
-If you have this PACS and Validation Infrastructure
-Gallagher Command Centre PACS and Validation Infrastructure,you can use these types of PACS PIV readers
-Gallagher T10 PIV Reader
-Gallagher T11 PIV Reader – Multi Tech
-Gallagher T11 PIV Reader
-Gallagher T15 PIV Reader – Multi Tech
-Gallagher T15 PIV Reader
-Gallagher T20 PIV Reader Multi-Tech
-Gallagher T20 PIV Reader
-Gallagher T21 PIV Reader Multi-Tech
-Gallagher T21 PIV Reader
-Veridt Bio Dual Contact/Contactless Keypad Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS and Validation Infrastructure
-Identiv Velocity Security and Validation Infrastructure, you can use these types of PACS PIV readers
-Identiv uTrust TS Reader (CAK) Mullion – OSDP
-Identiv uTrust TS Reader with Keypad – OSDP
-Identiv uTrust TS Reader with Scramblepad – OSDP
-Identiv uTrust Contact TS Reader with ScramblePad – OSDP
-Identiv uTrust TS Reader with Wall Mount – OSDP
-Veridt Bio Dual Contact/Contactless Keypad Reader
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS and Validation Infrastructure
-Kastle Systems CPS (EP) PACS and Validation Infrastructure, you can use this PACS PIV reader
-
-Identiv uTrust TS Reader (CAK) Mullion – OSDP
-Identiv uTrust TS Reader with Keypad – OSDP
-Identiv uTrust TS Reader with Scramblepad – OSDP
-Identiv uTrust Contact TS Reader with ScramblePad – OSDP
-Identiv uTrust TS Reader with Wall Mount – OSDP
-This solution has been approved for use with FIPS 201-2 credentials.
-
-If you have this PACS and Validation Infrastructure
-XTec AuthentX ePACS, you can use these types of PACS PIV readers
-XTec X9900 Contact Smart Card Reader
-XTec X9907 Contact Smart Card Reader w/ PIN Pad
-XTec X9921 Contactless Smart Card Reader
-XTec X100000BIO Contact Smart Card Reader w/ PIN Pad and Biometric Reader
-XTec X100000 Contact Smart Card Reader w/ PIN Pad
-This solution is under review for use with FIPS 201-2 credentials.
+<table class="usa-table--borderless">
+  <thead class="usa-sr">
+    <tr>
+      <th id="pacs-table-heading-fipsstatus" scope="col">Use with FIPS 201-2 Credential Status</th>
+      <th id="pacs-table-heading-infra" scope="col">If you have this PACS infrastructure and validation system...</th>
+      <th id="pacs-table-heading-cardreader" scope="col">You can use these card readers.</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for guide in site.data.fips2011302 %}
+          <tr class="pacs-table-row" data-category="{{ guide.category }}">
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td>              
+              <ul class="usa-unstyled-list">
+                <ol type = "1">
+                {% if guide.reader1 %}
+                  <li><a href="{{ guide.reader1url | prepend: site.baseurl }}" target="_blank">{{ guide.reader1 }}</a></li>
+                {% endif %}
+                {% if guide.reader2 %}
+                  <li><a href="{{ guide.reader2url | prepend: site.baseurl }}" target="_blank">{{ guide.reader2 }}</a></li>
+                {% endif %}
+                {% if guide.reader3 %}
+                  <li><a href="{{ guide.reader3url | prepend: site.baseurl }}" target="_blank">{{ guide.reader3 }}</a></li>
+                {% endif %}
+                {% if guide.reader4 %}
+                  <li><a href="{{ guide.reader4url | prepend: site.baseurl }}" target="_blank">{{ guide.reader4 }}</a></li>
+                {% endif %}
+                {% if guide.reader5 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader5 }}</a></li>
+                {% endif %}
+                {% if guide.reader6 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader6 }}</a></li>
+                {% endif %}
+                {% if guide.reader7 %}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader7 }}</a></li>
+                {% endif %}
+                {% if guide.reader8 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader8 }}</a></li>
+                {% endif %}
+                {% if guide.reader9 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader9 }}</a></li>
+                {% endif %}
+                {% if guide.reader10 %}
+                  <li><a href="{{ guide.reader5url | prepend: site.baseurl }}" target="_blank">{{ guide.reader10 }}</a></li>
+                {% endif %}
+                {% if guide.reader11 %}
+                  <li><a href="{{ guide.reader6url | prepend: site.baseurl }}" target="_blank">{{ guide.reader11 }}</a></li>
+                {% endif %}
+                {% if guide.reader12 %}
+                  <li><a href="{{ guide.reader7url | prepend: site.baseurl }}" target="_blank">{{ guide.reader12 }}</a></li>
+                {% endif %}
+                {% if guide.reader13 %}
+                  <li><a href="{{ guide.reader8url | prepend: site.baseurl }}" target="_blank">{{ guide.reader13 }}</a></li>
+                {% endif %}
+                {% if guide.reader14 %}
+                  <li><a href="{{ guide.reader9url | prepend: site.baseurl }}" target="_blank">{{ guide.reader14 }}</a></li>
+                {% endif %}
+                </ol>
+              </ul>
+            </td>
+          </tr>
+      {% endfor %}
+  </tbody>
+</table>
 
 # PACS Solutions Awaiting Approval
 

@@ -29,7 +29,7 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 - On-Card Comparison (OCC)
 - Backend Registration for PACS
 
-Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201ep/).
+Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201/).
 
 [Return to Top](#top)
 
