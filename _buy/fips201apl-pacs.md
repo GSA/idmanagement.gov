@@ -63,10 +63,10 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
     </tr>
   </thead>
   <tbody>
-   <!-- {% for category in categories %}
+   {% for category in categories %}
       <tr class="pacs-table-category-heading" data-category="{{ category }}">
         <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
-      </tr> -->
+      </tr>
       {% for guide in site.data.fips201pacs %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
@@ -122,14 +122,14 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             </td>
           </tr>
       {% endfor %}
-  <!-- {% endfor %} -->
+    {% endfor %}
   </tbody>
 </table>
 
 **NOTE** APL listings 10027 and 10028 have been consolidated into APL listings 10112 and 10113, respectively.
 
-# Approved 13.02 Topology PACS Products
 
+# Approved 13.02 Topology PACS Products
 
 <table class="usa-table--borderless">
   <thead class="usa-sr">
@@ -140,6 +140,10 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
     </tr>
   </thead>
   <tbody>
+     {% for category in categories %}
+      <tr class="pacs-table-category-heading" data-category="{{ category }}">
+        <th colspan="4" class="pacs-table-heading" id="pacs-table-heading-{{ category | slugify }}"><b>{{ category }} Topology</b></th>
+      </tr>
       {% for guide in site.data.fips2011302 %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-fipsstatus">{{ guide.fipsstatus }}</td>
@@ -194,6 +198,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
             </td>
           </tr>
       {% endfor %}
+    {% endfor %}
   </tbody>
 </table>
 
