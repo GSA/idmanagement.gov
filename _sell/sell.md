@@ -27,11 +27,11 @@ It takes just three steps to get a product approved for use by federal agencies:
 
 ### Step 1 – Review Testing Documents
 
-The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../sell/fips201ep/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
+The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
 
 Review the applicable testing document(s) for the product(s) you wish to have tested. Products we test include PIV cards and Physical Access Control Systems (PACS).
 
-[Review testing documents and procedures](../sell/fips201ep/)
+[Review testing documents and procedures](../fips201/)
 
 ### Step 2 – Contact a Testing Lab
 
@@ -56,6 +56,8 @@ GSA manages testing and certification for Physical Access Control Systems (PACS)
 After your product passes testing, you’ll receive a signed document showing the approval, and your product will be listed on the [Approved Products List (APL)](../buy#products).
 
 ### Step 3 – Get on a GSA Schedule
+
+The GSA Multiple Award Schedule Program, also referred to as the "Schedule", is the premier contract vehicle for the federal government. The Schedule Program is a long term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for businesses, but it requires effort and committment on your part to succeeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
 
 After testing and approval, apply to get your product or service listed on GSA’s IT Schedule 70 and/or Schedule 84.
 

@@ -1,0 +1,102 @@
+- category: 13.02
+  fipsstatus: Approved
+  infrastructure: Gallagher Command Centre PACS
+  infraurl: /docs/apl-10114-gallagher.pdf
+  infraapl: 10114
+  reader1: Gallagher T10 PIV Reader
+  reader1url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader1apl: 10021
+  reader2: Gallagher T11 PIV Reader Multi Tech
+  reader2url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader2apl: 10023
+  reader3: Gallagher T11 PIV Reader
+  reader3url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader3apl: 10022
+  reader4: Gallagher T15 PIV Reader Multi Tech
+  reader4url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader4apl: 10102
+  reader5: Gallagher T15 PIV Reader
+  reader5url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader5apl: 10101
+  reader6: Gallagher T20 PIV Reader Multi-Tech
+  reader6url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader6apl: 10039
+  reader7: Gallagher T20 PIV Reader
+  reader7url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader7apl: 10038
+  reader8: Gallagher T21 PIV Reader Multi-Tech
+  reader8rul: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader8apl: 10100
+  reader9: Gallagher T21 PIV Reader
+  reader9url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader9apl: 10099
+  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader10url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader10apl: 10092
+
+- category: 13.02
+  fipsstatus: Approved
+  infrastructure: Identiv Velocity Security Management System
+  infraurl: /docs/apl-10103-identiv.pdf
+  infraapl: 10103
+  reader1: Identiv uTrust TS Reader (CAK) Mullion OSDP
+  reader1url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader1apl: 10104
+  reader2: Identiv uTrust TS Reader with Keypad – OSDP
+  reader2url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader2apl: 10106
+  reader3: Identiv uTrust TS Reader with ScramblePad – OSDP
+  reader3url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader3apl: 10107
+  reader4: Identiv uTrust Contact ST Reader with ScramblePad OSDP
+  reader4url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader4apl: 10119
+  reader5: Identiv uTrust TS Reader with Wall Mount – OSDP
+  reader5url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader5apl: 10105
+  reader6: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader6url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader6apl: 10031
+
+- category: 13.02
+  fipsstatus: Approved
+  infrastructure: Kastle Systems CPS (EP) PACS and Validation Infrastructure
+  infraurl: /docs/apl-10116-kastle.pdf
+  infraapl: 10116
+  reader1: Identiv uTrust TS Reader (CAK) Mullion OSDP
+  reader1url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader1apl: 10104
+  reader2: Identiv uTrust TS Reader with Keypad – OSDP
+  reader2url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader2apl: 10106
+  reader3: Identiv uTrust TS Reader with ScramblePad – OSDP
+  reader3url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader3apl: 10107
+  reader4: Identiv uTrust Contact ST Reader with ScramblePad OSDP
+  reader4url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader4apl: 10119
+  reader5: Identiv uTrust TS Reader with Wall Mount – OSDP
+  reader5url: /docs/apl-10104-5-6-7-19-identiv.pdf
+  reader5apl: 10105
+
+- category: 13.02
+  fipsstatus: Under Review
+  infrastructure: PACS and Validation Infrastructure for XTec AuthentX ePACS
+  infraurl: /docs/apl-10077-82-xtec.pdf
+  infraapl: 10077
+  reader1: XTec X9900 Contact Smart Card Reader
+  reader1url: /docs/apl-10077-79-80-81-82-xtec.pdf
+  reader1apl: 10080
+  reader2: XTec X9907 Contact Smart Card Reader w/PIN Pad
+  reader2url: /docs/apl-10077-79-80-81-82-xtec.pdf
+  reader2apl: 10081
+  reader3: XTec X9921 Contactless Smart Card Reader
+  reader3url: /docs/apl-10077-79-80-81-82-xtec.pdf
+  reader3apl: 10082
+  reader4: XTec X10000BIO Contact Smart Card Reader w/PIN pad and Biometric Reader
+  reader4url: /docs/apl-10077-79-80-81-82-xtec.pdf
+  reader4apl: 10079
+  reader5: XTec X10000 Contact Smart Card Reader w/PIN pad
+  reader5url: /docs/apl-10077-79-80-81-82-xtec.pdf
+  reader5apl: 10078
+

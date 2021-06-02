@@ -2,96 +2,6 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
-  infraurl: apl-10009-brivo.pdf
-  infraapl: 10009
-  validation: HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato)
-  valurl: apl-10010-brivo-validation.pdf
-  valapl: 10010
-  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader1apl: 10052
-  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
-  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader2apl: 10007
-  reader3: pivCLASS RK40 Contactless Reader + PIN
-  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader3apl: 10004
-  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader4apl: 10026
-  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader5apl: 10008
-  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
-  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader6apl: 10005
-  reader7: pivCLASS RP40 Contactless Reader
-  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader7apl: 10003
-  reader8: pivCLASS R10 Contactless Reader
-  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader8apl: 10085
-  reader9: pivCLASS R40 Contactless Reader
-  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader9apl: 10006
-
-- category: 13.01
-  fipsstatus: Approved
-  infrastructure: Avigilon ACM
-  infraurl: /docs/apl-10122-avigilon.pdf
-  infraapl: 10122
-  validation: HID Global Validation System for Avigilon
-  valurl: /docs/apl-10123-hid-avigilon.pdf
-  valapl: 10123
-  reader1: pivCLASS RKCL40 Contact/Contactless Reader + PIN
-  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader1apl: 10007
-  reader2: pivCLASS RK40 Contactless Reader + PIN
-  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader2apl: 10004
-  reader3: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader3apl: 10008
-  reader4: 	pivCLASS RPK40 Contactless Reader + PIN
-  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader4apl: 10005
-  reader5: pivCLASS RP40 Contactless Reader
-  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader5apl: 10003
-  reader6: pivCLASS R10 Contactless Reader
-  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader6apl: 10085
-  reader7: pivCLASS R40 Contactless Reader
-  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader7apl: 10006
-
-- category: 13.01
-  fipsstatus: Under Review
-  infrastructure: AMAG Symmetry Professional v8.1
-  infraurl: /docs/apl-10087-amag-symmetry-81.pdf
-  infraapl: 10087
-  validation: Technology Industries Validation System for AMAG Symmetry Professional v8.1
-  valurl: /docs/apl-10086-tech-industries.pdf
-  valapl: 10086
-  reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader1url: 10031
-  reader1apl: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader2: Veridt Stealth Contactless Keypad Reader
-  reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader2apl: 10034
-  reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
-  reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader3apl: 10032
-  reader4: 	Veridt Stealth Lite Contactless Reader
-  reader4url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader4apl: 10035
-  reader5: Veridt Stealth Lite Dual Contact/Contactless Reader
-  reader5url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader5apl: 10033
-
-- category: 13.01
-  fipsstatus: Approved
   infrastructure: AMAG Symmetry Professional v9.3
   infraurl: /docs/apl-10047-symmetry.pdf
   infraapl: 10047
@@ -125,3 +35,621 @@
   reader9: pivCLASS R40 Contactless Reader
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
+ 
+- category: 13.01
+  fipsstatus: Under Review
+  infrastructure: AMAG Symmetry Professional v8.1
+  infraurl: /docs/apl-10087-amag-symmetry-81.pdf
+  infraapl: 10087
+  validation: Technology Industries Validation System for AMAG Symmetry Professional v8.1
+  valurl: /docs/apl-10086-tech-industries.pdf
+  valapl: 10086
+  reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader1url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader1apl: 10031
+  reader2: Veridt Stealth Contactless Keypad Reader
+  reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader2apl: 10034
+  reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader3apl: 10032
+  reader4: 	Veridt Stealth Lite Contactless Reader
+  reader4url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader4apl: 10035
+  reader5: Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader5url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader5apl: 10033
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Avigilon ACM
+  infraurl: /docs/apl-10122-avigilon.pdf
+  infraapl: 10122
+  validation: HID Global Validation System for Avigilon
+  valurl: /docs/apl-10123-hid-avigilon.pdf
+  valapl: 10123
+  reader1: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10007
+  reader2: pivCLASS RK40 Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10004
+  reader3: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10008
+  reader4: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10005
+  reader5: pivCLASS RP40 Contactless Reader
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10003
+  reader6: pivCLASS R10 Contactless Reader
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10085
+  reader7: pivCLASS R40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10006
+  
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
+  infraurl: /docs/apl-10009-brivo.pdf
+  infraapl: 10009
+  validation: HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato)
+  valurl: /docs/apl-10010-brivo-validation.pdf
+  valapl: 10010
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01 
+  fipsstatus: Approved
+  infrastructure: DAQ Starwatch
+  infraurl: /docs/apl-10071-daq-starwatch.pdf
+  infraapl: 10071
+  validation: HID Global Validation System for DAQ Starwatch with Embedded Authentication
+  valurl: /docs/apl-10072-daq-validation.pdf
+  valapl: 10072
+  reader1: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10007
+  reader2: pivCLASS RK40 Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10004
+  reader3: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10008
+  reader4: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10005
+  reader5: pivCLASS RP40 Contactless Reader
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10003
+  reader6: pivCLASS R40 Contactless Reader
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10006
+  reader7: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10026
+  reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10052
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Datawatch Systems Site Controller
+  infraurl: /docs/apl-10117-datawatch.pdf
+  infraapl: 10117
+  validation : HID Validation System for Datawatch
+  valurl: /docs/apl-10118-datawatch-validation.pdf
+  valapl: 10118
+  reader1: pivCLASS RP40 Contactless Reader
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10003
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Feenics Keep V3
+  infraurl: /docs/apl-10120-feenics.pdf
+  infraapl: 10120
+  validation: HID Global Validation System for Feenics Keep V3 with Embedded Authentication
+  valurl: /docs/apl-10121-feenics-validation.pdf
+  valapl: 10120
+  reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10052
+  reader2: pivCLASS RK40 Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10004
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Gallagher PIV Command Centreand 
+  infraurl: /docs/apl-10019-gallagher.pdf
+  infraapl: 10019
+  validation: HID Global Validation System for Gallagher Command Centre
+  valurl: /docs/apl-10020-gallagher-validation.pdf
+  valapl: 10020
+  reader1: Gallagher T10 PIV Reader
+  reader1url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader1apl: 10021
+  reader2: Gallagher T11 PIV Reader Multi Tech
+  reader2url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader2apl: 10023
+  reader3: Gallagher T11 PIV Reader
+  reader3url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader3apl: 10022
+  reader4: Gallagher T15 PIV Reader Multi Tech
+  reader4url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader4apl: 10102
+  reader5: Gallagher T15 PIV Reader
+  reader5url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader5apl: 10101
+  reader6: Gallagher T20 PIV Reader Multi-Tech
+  reader6url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader6apl: 10039
+  reader7: Gallagher T20 PIV Reader
+  reader7url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader7apl: 10038
+  reader8: Gallagher T21 PIV Reader Multi-Tech
+  reader8rul: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader8apl: 10100
+  reader9: Gallagher T21 PIV Reader
+  reader9url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader9apl: 10099
+  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader10url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader10apl: 10092
+  reader11: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader11apl: 10093
+  reader12: Veridt Stealth Lite Dual Contact /Contactless Reader
+  reader12url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader12apl: 10094
+  reader13: Veridt Stealth Contactless Keypad Reader
+  reader13url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader13apl: 10095
+  reader14: Veridt Stealth Lite Contactless Reader 
+  reader14url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader14apl: 10096
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Genetec Security Center – Synergis
+  infraurl: /docs/apl-10061-genetec.pdf
+  infraapl: 10061
+  validation: HID Global Validation System for Genetec Security Center – Synergis
+  valurl: /docs/apl-10062-genetic-validation.pdf
+  valapl: 10062
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Hirsch Velocity
+  infraurl: /docs/apl-10013-hirsch.pdf
+  infraapl: 10013
+  validation: HID Global Validation System for Hirsch-Identiv Velocity
+  valurl: /docs/apl-10014-hirsch-validation.pdf
+  valapl: 10014
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R40 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Honeywell Pro-Watch
+  infraurl: /docs/apl-10063-honeywell.pdf
+  infraapl: 10063
+  validation: HID Global Validation System for Pro-Watch
+  valurl: /docs/apl-10064-honeywell-validation.pdf
+  valapl: 10064
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R40 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Lenel OnGuard with Embedded Authentication
+  infraurl: /docs/apl-10112-lenel.pdf
+  infraapl: 10112
+  validation: HID Global Validation System for Lenel OnGuard with Embedded Authentication
+  valurl: /docs/apl-10113-level-validation.pdf
+  valapl: 10113
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader10url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader10apl: 10092
+  reader11: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader11apl: 10093
+  reader12: Veridt Stealth Lite Dual Contact /Contactless Reader
+  reader12url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader12apl: 10094
+  reader13: Veridt Stealth Contactless Keypad Reader
+  reader13url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader13apl: 10095
+  reader14: Veridt Stealth Lite Contactless Reader 
+  reader14url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader14apl: 10096
+
+- category: 13.01
+  fipsstatus: Under Review
+  infrastructure: Lenel OnGuard with Embedded Authentication
+  infraurl: /docs/apl-10126-lenel.pdf
+  infraapl: 10126
+  validation: TI Entry Point Validation System for Lenel S2 OnGuard
+  valurl: /docs/apl-10127-lenel-validation.pdf
+  valapl: 10127
+  reader1: Allegion Schlage Mullion/ Single Gang Reader
+  reader1url: /docs/apl-10128-29-allegion.pdf
+  reader1apl: 10128
+  reader2: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader2url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader2apl: 10092
+  reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader3apl: 10093
+  reader4: Veridt Stealth Lite Dual Contact /Contactless Reader
+  reader4url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader4apl: 10094
+  reader5: Veridt Stealth Contactless Keypad Reader
+  reader5url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader5apl: 10095
+  reader6: Veridt Stealth Lite Contactless Reader 
+  reader6url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader6apl: 10096
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Open Options DNA Fusion
+  infraurl: /docs/apl-10075-open-options.pdf
+  infraapl: 10075
+  validation: ID Global Validation System for Open Options DNA Fusion
+  valurl: /docs/apl-10076-open-options-validation.pdf
+  valapl: 10076
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Quintron AccessNsite
+  infraurl: /docs/apl-10043-accessnsite.pdf
+  infraapl: 10043
+  validation: HID Global Validation System for Quintron AccessNsite
+  valurl: /docs/apl-10044-accessnsite-validation.pdf
+  valapl: 10044
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: ReconaSense
+  infraurl: /docs/apl-10131-reconaSense.pdf
+  infraapl: 10131
+  validation: HID Global Validation System for ReconaSense
+  valurl: /dcos/apl-10132-reconaSense-validation.pdf
+  valapl: 10132
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: RS2 Technologies Access It!
+  infraurl: /docs/apl-10036-rs2.pdf
+  infraapl: 10036
+  validation: HID Global Validation System for RS2 Access It!
+  valurl: /docs/apl-10037-rs2-validation.pdf
+  valapl: 10037
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: System Galaxy Software
+  infraurl: /docs/apl-10083-galaxy.pdf
+  infraapl: 10083
+  validation: Entrypoint Validation System for Galaxy Control Systems
+  valurl: /docs/apl-10084-galaxy-validation.pdf
+  valapl: 10084
+  reader1: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader1url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader1apl: 10031
+  reader2: Veridt Stealth Contactless Keypad Reader
+  reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader2apl: 10034
+  reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader3apl: 10032
+  reader4: 	Veridt Stealth Lite Contactless Reader
+  reader4url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader4apl: 10035
+  reader5: Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader5url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader5apl: 10033
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Tyco Security Products C-CURE 9000
+  infraurl: /docs/apl-10001-tyco.pdf
+  infraapl: 10001
+  validation: HID Global Validation System for Tyco Security Products C-CURE 9000
+  valurl: /docs/apl-10002-tyco-validation.pdf
+  valapl: 10002
+  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10052
+  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10007
+  reader3: pivCLASS RK40 Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10004
+  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN + BIO
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10026
+  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10008
+  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10005
+  reader7: pivCLASS RP40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10003
+  reader8: pivCLASS R10 Contactless Reader
+  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader8apl: 10085
+  reader9: pivCLASS R40 Contactless Reader
+  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader9apl: 10006
+  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader10url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader10apl: 10031
+  reader11: Veridt Stealth Contactless Keypad Reader
+  reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader11apl: 10034
+  reader12: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader12url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader12apl: 10032
+  reader13: 	Veridt Stealth Lite Contactless Reader
+  reader13url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader13apl: 10035
+  reader14: Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader14url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader14apl: 10033
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Tyco Security Products CCURE 9000
+  infraurl: /docs/apl-10115-tyco.pdf
+  infraapl: 10115
+  validation: Innometriks Validation System for Tyco/Software House CCURE 9000
+  valurl: /docs/apl-10108-tyco-validation.pdf
+  valapl: 10108
+  reader1: Cheetah Reader
+  reader1url: /docs/apl-10109-130-cheetah.pdf
+  reader1apl: 10109
+  reader2: Cheetah SE Reader
+  reader2url: /docs/apl-10109-130-cheetah.pdf
+  reader2apl: 10130

@@ -13,25 +13,13 @@ subnav:
     href: '#category-removed-from-the-apl-december-2020'
   - text: Category Removed from the APL April 2019
     href: '#category-removed-from-the-apl-april-2019'
-  - text: PACS FRTC v1.3.3 Update Released
-    href: '#pacs-frtc-v.1.3.3-update-released'
-  - text: Category Removed from the APL June 2018
-    href: '#category-removed-from-the-apl-june-2018'
-  - text: Now Testing Derived PIV Credentials
-    href: '#now-testing-derived-piv-credentials'
-  - text: Extension for Random Number Generator (RNG)-based PIV Cards
-    href: '#extension-for-random-number-generator-(rng)--based-piv-cards'
-  - text: Categories Removed from the APL October 2016
-    href: '#cateogries-removed-from-the-apl-october-2016'
-  - text: Category Removed from the APL June 2016
-    href: '#category-removed-from-the-apl-june-2016'
-  - text: GSA Document Signing Tool
-    href: '#gsa-document-signing-tool'
-  - text: Category Removed from the APL June 2014
-    href: '#category-removed-from-the-apl-june-2014'
+  - text: Announcements Older Than Three Years
+    href: '#announcements-older-than-three-years'
 ---
 
-# PACS FRTC v1.4.2 Update Released
+This is a list of the latest news out of the FIPS 201 Evaluation Program.
+
+## PACS FRTC v1.4.2 Update Released
 
 POSTED: March 31, 2021
 
@@ -41,10 +29,11 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 - On-Card Comparison (OCC)
 - Backend Registration for PACS
 
-Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201ep/).
+Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201/).
 
+[Return to Top](#top)
 
-# Category Removed from the APL December 2020
+## Category Removed from the APL December 2020
 
 POSTED December 11, 2020
 
@@ -52,8 +41,9 @@ The FIPS 201 Evaluation program will be removing card holders (also known as bad
 
 Please note the removal of this category should not impact any existing procurements. Product categories not identified by the Program have no requirement for FIPS 201 conformance and available products should be able to satisfy the agency defined security requirements provided direct testing.
 
+[Return to Top](#top)
 
-# Category Removed from the APL April 2019
+## Category Removed from the APL April 2019
 
 POSTED April 30, 2019
 
@@ -64,8 +54,11 @@ The FIPS 201 Evaluation program has removed the following categories from the [A
 
 Please note the removal of these categories should not impact any procurements. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
 
+[Return to Top](#top)
 
-# PACS FRTC v1.3.3 Update Released 
+# Announcements Older Than Three Years
+
+## PACS FRTC v1.3.3 Update Released 
 
 POSTED February 2, 2018
 
@@ -76,22 +69,25 @@ PACS FRTC v1.3.3 Rev. G has been published and is in effect immediately. Section
 
 All new versions are effective immediately. New or revised requirements and their test cases will include an effective date, commensurate with their assigned severity level (see paragraphs 7.1, 7.2, and 7.3.
 
+[Return to Top](#top)
 
-# Category Removed from the APL June 2018
+## Category Removed from the APL June 2018
 
 POSTED June 30, 2018
 
 In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../rpl/).
 
+[Return to Top](#top)
 
-# Now Testing Derived PIV Credentials
+## Now Testing Derived PIV Credentials
 
 POSTED August 18, 2017
 
 The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../fips201ep/) page for information about the testing process or to submit a credential for testing.
 
+[Return to Top](#top)
 
-# Extension for Random Number Generator (RNG)-based PIV Cards
+## Extension for Random Number Generator (RNG)-based PIV Cards
 
 POSTED May 24, 2017
 
@@ -101,8 +97,9 @@ NIST’s PIV Validation Program has provided an extension on migrating away from
 
 The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue to list RNG-based PIV cards until June 30, 2018.
 
+[Return to Top](#top)
 
-# Categories Removed from the APL October 2016
+## Categories Removed from the APL October 2016
 
 POSTED October 29, 2016
 
@@ -136,8 +133,9 @@ Please note the removal of these categories should not impact any procurements. 
 | Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
 | Template Matcher	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
 
+[Return to Top](#top)
 
-# Category Removed from the APL June 2016
+## Category Removed from the APL June 2016
 
 POSTED June 23, 2016
 
@@ -145,8 +143,9 @@ In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nis
 
 According to this transition plan, agencies may continue to procure and issue credentials using implementations marked as “legacy” on the [NPIVP validation list](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"} until June 30, 2017. However, the agencies should migrate to fully compliant credentials implementing approved DRBGs as soon as DRBG PIV credential and the compatible credential management software are commercially available. Once issued, these “legacy” RNG PIV credentials may be used until their expiration date – up to June 30, 2023.
 
+[Return to Top](#top)
 
-# GSA Document Signing Tool
+## GSA Document Signing Tool
 
 POSTED April 12, 2016
 
@@ -156,8 +155,9 @@ If you have any questions, comments, or issues with the GSA Document Signing Too
 
 As new questions are posted to the [“Issues” section](http://github.com/GSA/gsa-doc-digital-signature/issues){:target="_blank"}{:rel="noopener noreferrer"}, all members in the community may contribute to answering and/or helping with any code enhancements. We encourage community members to actively contribute and share their contributions with everyone.
 
+[Return to Top](#top)
 
-# Category Removed from the APL June 2014
+## Category Removed from the APL June 2014
 
 POSTED June 13, 2014
 

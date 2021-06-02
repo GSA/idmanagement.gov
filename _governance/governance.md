@@ -25,12 +25,12 @@ The FICAM Roadmap, developed by the federal CIO Council, contains processes, pro
 
 These playbooks are hosted on Github, and provide common policy and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on needs and interest of individual agencies and government-wide groups. Reach out to icam at gsa.gov to suggest new topics.
 
-[View FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"})
+[View FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 # Announcements
 
-- [FIPS 201 Evaluation Program Announcements](../sell/fips201ep/)
+- [FIPS 201 Evaluation Program Announcements](../fips201/)
 - [Federal PKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
 - [Federal PKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   
