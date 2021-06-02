@@ -122,6 +122,9 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
   </tbody>
 </table>
 
+**NOTE** APL listings 10027 and 10028 have been consolidated into APL listings 10112 and 10113, respectively.
+
+
 # PACS Solutions Awaiting Approval
 
 | Position | Solution | New/Update | Testing Status |
