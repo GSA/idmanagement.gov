@@ -13,15 +13,13 @@ subnav:
     href: '#category-removed-from-the-apl-december-2020'
   - text: Category Removed from the APL April 2019
     href: '#category-removed-from-the-apl-april-2019'
-  - text: PACS FRTC v1.3.3 Update Released
-    href: '#pacs-frtc-v.1.3.3-update-released'
-  - text: Category Removed from the APL June 2018
-    href: '#category-removed-from-the-apl-june-2018'
-  - text: Now Testing Derived PIV Credentials
-    href: '#now-testing-derived-piv-credentials'
+  - text: Announcements Older Than Three Years
+    href: '#announcements-older-than-three-years'
 ---
 
-# PACS FRTC v1.4.2 Update Released
+This is a list of the latest news out of the FIPS 201 Evaluation Program.
+
+## PACS FRTC v1.4.2 Update Released
 
 POSTED: March 31, 2021
 
@@ -35,7 +33,7 @@ Additionally, a new testing procedure called the FRTC Express has been published
 
 [Return to Top](#top)
 
-# Category Removed from the APL December 2020
+## Category Removed from the APL December 2020
 
 POSTED December 11, 2020
 
@@ -45,7 +43,7 @@ Please note the removal of this category should not impact any existing procurem
 
 [Return to Top](#top)
 
-# Category Removed from the APL April 2019
+## Category Removed from the APL April 2019
 
 POSTED April 30, 2019
 
@@ -58,7 +56,9 @@ Please note the removal of these categories should not impact any procurements. 
 
 [Return to Top](#top)
 
-# PACS FRTC v1.3.3 Update Released 
+# Announcements Older Than Three Years
+
+## PACS FRTC v1.3.3 Update Released 
 
 POSTED February 2, 2018
 
@@ -71,7 +71,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 [Return to Top](#top)
 
-# Category Removed from the APL June 2018
+## Category Removed from the APL June 2018
 
 POSTED June 30, 2018
 
@@ -79,7 +79,7 @@ In the past, the FIPS 201 Evaluation Program has granted extensions for allowing
 
 [Return to Top](#top)
 
-# Now Testing Derived PIV Credentials
+## Now Testing Derived PIV Credentials
 
 POSTED August 18, 2017
 
@@ -87,7 +87,7 @@ The FIPS 201 Evaluation Program has established the criteria for testing derived
 
 [Return to Top](#top)
 
-# Extension for Random Number Generator (RNG)-based PIV Cards
+## Extension for Random Number Generator (RNG)-based PIV Cards
 
 POSTED May 24, 2017
 
@@ -99,7 +99,7 @@ The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue t
 
 [Return to Top](#top)
 
-# Categories Removed from the APL October 2016
+## Categories Removed from the APL October 2016
 
 POSTED October 29, 2016
 
@@ -135,7 +135,7 @@ Please note the removal of these categories should not impact any procurements. 
 
 [Return to Top](#top)
 
-# Category Removed from the APL June 2016
+## Category Removed from the APL June 2016
 
 POSTED June 23, 2016
 
@@ -145,7 +145,7 @@ According to this transition plan, agencies may continue to procure and issue cr
 
 [Return to Top](#top)
 
-# GSA Document Signing Tool
+## GSA Document Signing Tool
 
 POSTED April 12, 2016
 
@@ -157,7 +157,7 @@ As new questions are posted to the [“Issues” section](http://github.com/GSA/
 
 [Return to Top](#top)
 
-# Category Removed from the APL June 2014
+## Category Removed from the APL June 2014
 
 POSTED June 13, 2014
 
