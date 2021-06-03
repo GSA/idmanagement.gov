@@ -95,8 +95,8 @@ If you meet the membership criteria and wish to join a working group, email fpki
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| Certificate Policy Working Group | The Federal Bridge and Common policies advisory group. | Facilitate proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. | Open to federal agency employees, their designated contractors and non-federal participants invovled in the FPKI. | As needed. |
-| Shared Service Provider Working Group (SSPWG) | The Shared Service Provider program advisory group. | Identify policy changes that impact the Shared Services Program, address and resolve issues through policy analysis and modification. | Only FPKI Shared Service Provider representatives. | As needed. |
-| Technical Working Group (TWG) | Investigate and resolve complex FPKI technical issues. | Identify and scope technical FPKI issues, address security concerns and vulnerabilities, and identify technical improvements to enhance the security and operational capabilities. | Open to employees and designated contractors from federal agencies. | As needed. |
+| **Certificate Policy Working Group** | The Federal Bridge and Common policies advisory group. | Facilitate proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. | Open to federal agency employees, their designated contractors and non-federal participants invovled in the FPKI. | As needed. |
+| **Shared Service Provider Working Group (SSPWG)** | The Shared Service Provider program advisory group. | Identify policy changes that impact the Shared Services Program, address and resolve issues through policy analysis and modification. | Only FPKI Shared Service Provider representatives. | As needed. |
+| **Technical Working Group (TWG)** | Investigate and resolve complex FPKI technical issues. | Identify and scope technical FPKI issues, address security concerns and vulnerabilities, and identify technical improvements to enhance the security and operational capabilities. | Open to employees and designated contractors from federal agencies. | As needed. |
 
 
