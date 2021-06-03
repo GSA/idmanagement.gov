@@ -9,9 +9,9 @@ sidenav: buy
 subnav:
     - text: How to Purchase
       href: '#how-to-purchase'
-    - text: Approved PACS Products - 13.01 Topology
+    - text: Approved PACS - 13.01
       href: '#approved-1301-topology-pacs-products'
-    - text: Approved PACS Products - 13.02 Topology
+    - text: Approved PACS - 13.02
       href: '#approved-1302-topology-pacs-products'
     - text: PACS Solutions Awaiting Approval
       href: '#pacs-solutions-awaiting-approval'
