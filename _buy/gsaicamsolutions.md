@@ -32,17 +32,17 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
   </tr>
   <tr>
     <td>Identity Management</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Homeland Security Information Network (HSIN) Identity Proofing Service</td>
+    <td>HSIN is a user-driven, web-based, information-sharing platform that connects all homeland security mission partners within a wide spectrum of homeland security mission areas. HSIN is an Identity Provider within the National Information Exchange Federation (NIEF),a collection of agencies in the U.S. that have come together to share sensitive law enforcement information.</td>
+    <td>Identity Proofing</td>
+    <td>[How to Join HSIN](https://www.dhs.gov/how-join-hsin){:target="_blank"}{:rel="noopener noreferrer"}</td>
   </tr>
     <tr>
     <td>Identity Management <br><br> Access Management <br><br> Federation</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Login.gov</td>
+    <td>Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies.</td>
+    <td>Account Linking <br><br> Authentication</td>
+    <td>[login.gov](http://login.gov/){:target="_blank"}{:rel="noopener noreferrer"}</td>
   </tr>
    <tr>
     <td></td>
@@ -67,10 +67,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
   </tr>
 </table>
 
-| FICAM Services Framework Practice Area(s) | Name	| Description | Offering	| Where to Purchase |
-| -------- | ------ | ------- | -------- | -------- |
-| Identity Management | Homeland Security Information Network (HSIN) Identity Proofing Service  | HSIN is a user-driven, web-based, information-sharing platform that connects all homeland security mission partners within a wide spectrum of homeland security mission areas. HSIN is an Identity Provider within the National Information Exchange Federation (NIEF),a collection of agencies in the U.S. that have come together to share sensitive law enforcement information. | Identity Proofing | [How to Join HSIN ](https://www.dhs.gov/how-join-hsin){:target="_blank"}{:rel="noopener noreferrer"} |
-| Identity Management </br> Access Management </br> Federation | Login.gov | Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies. | Account Linking </br> Authentication | [login.gov](http://login.gov/){:target="_blank"}{:rel="noopener noreferrer"} |
+
 | Access Management </br> Federation | MAX Authentication | Authentication as a Service (AaaS) Automatic registration for federal users by email domain. HSPD – 12 PIV /DoD CAC cards and SMS 2-factor for sensitive activities. Enterprise Federated Partner Automated Login (i.e. single sign-on) with agencies. | Authentication Services   Federation |	[Max.gov](http://max.gov/){:target="_blank"}{:rel="noopener noreferrer"} |
 | Credential Management | USAccess 	| The GSA HSPD-12 Managed Service Office (MSO) established the USAccess program as an efficient way for Federal agencies to issue common HSPD-12 approved credentials to their employees and contractors. | PIV card |  [fedidcard.gov ](http://fedidcard.gov/){:target="_blank"}{:rel="noopener noreferrer"} |
 | Credential Management	| SIN 517312 – Wireless Mobility Solutions | Includes a variety of services that address the mobility needs of government agencies to include: Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC. | Digital Certifcates  Derived PIV  Other mobility offerings on this SIN | [Acquisition Gateway RFQ Generator](https://hallways.cap.gsa.gov/app/#/applet/rfq){:target="_blank"}{:rel="noopener noreferrer"} |
