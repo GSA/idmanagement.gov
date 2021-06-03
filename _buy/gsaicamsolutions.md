@@ -16,9 +16,49 @@ subnav:
     href: '#additional-resources'
 ---
 
-On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation, therefore, new SIN designations have been included. Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework is designed to help agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
+On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation, therefore, new SIN designations have been included.
+
+Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework is designed to help agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
 
 # ICAM Solutions Catalog
+
+<table>
+  <th>
+    <td>FICAM Services Framework Practice Area(s)</td>
+    <td>Name</td>
+    <td>Description</td>
+    <td>Offering</td>
+    <td>Where to Purchase</td>
+  </th>
+  <tr>
+    <td>Identity Management</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Identity Management <br> Access Management <br> Federation</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 | FICAM Services Framework Practice Area(s) | Name	| Description | Offering	| Where to Purchase |
 | -------- | ------ | ------- | -------- | -------- |
