@@ -38,7 +38,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td></td>
   </tr>
     <tr>
-    <td>Identity Management <br> Access Management <br> Federation</td>
+    <td>Identity Management <br><br> Access Management <br><br> Federation</td>
     <td></td>
     <td></td>
     <td></td>
@@ -51,7 +51,14 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td></td>
     <td></td>
   </tr>
-    <tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td></td>
     <td></td>
     <td></td>
