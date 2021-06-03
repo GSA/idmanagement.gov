@@ -35,14 +35,14 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td>Homeland Security Information Network (HSIN) Identity Proofing Service</td>
     <td>HSIN is a user-driven, web-based, information-sharing platform that connects all homeland security mission partners within a wide spectrum of homeland security mission areas. HSIN is an Identity Provider within the National Information Exchange Federation (NIEF),a collection of agencies in the U.S. that have come together to share sensitive law enforcement information.</td>
     <td>Identity Proofing</td>
-    <td>[How to Join HSIN](https://www.dhs.gov/how-join-hsin){:target="_blank"}{:rel="noopener noreferrer"}</td>
+    <td><a href="https://www.dhs.gov/how-join-hsin" target="_blank" rel="noopener noreferrer">How to Join HSIN</a></td>
   </tr>
     <tr>
     <td>Identity Management <br><br> Access Management <br><br> Federation</td>
     <td>Login.gov</td>
     <td>Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies.</td>
     <td>Account Linking <br><br> Authentication</td>
-    <td>[login.gov](http://login.gov/){:target="_blank"}{:rel="noopener noreferrer"}</td>
+    <td><a href="http://login.gov/" target="_blank" rel="noopener noreferrer">login.gov</a></td>
   </tr>
    <tr>
     <td></td>
