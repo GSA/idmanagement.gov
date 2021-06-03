@@ -94,7 +94,7 @@ This section contains information on audits performed on the Federal Common Poli
 
 The Federal Common Policy Certification Authority operates in compliance with the Federal Common Certificate Policy. The Federal Bridge Certificate Authority (FBCA) operates in compliance with the Federal Bridge Certificate Policy.
 
-The Certificate Policies may be found above on this page.  The associated Certification Practice Statement (CPS) below documents the operational practices required to ensure trusted operations.  Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided:
+The Certificate Policies may be [found above on this page](#federal-pki-policies-and-profiles).  The associated Certification Practice Statement (CPS) below documents the operational practices required to ensure trusted operations.  Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided:
 
 - [U.S. Federal PKI Certification Practice Statement (PDF, May 2020) – Version 5.1](../../docs/fpki-fpkima-cps.pdf){:target="_blank"}
 - [U.S. Federal PKI Audit Letter of Compliance (PDF, October 2020)](../../docs/fpki-fpkima-audit-letter.pdf){:target="_blank"} – Results of the 2019-2020 Compliance Audit for the FPKI Trust Infrastructure Systems.
