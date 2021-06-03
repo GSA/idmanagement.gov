@@ -23,13 +23,13 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
 # ICAM Solutions Catalog
 
 <table>
-  <th>
-    <td>FICAM Services Framework Practice Area(s)</td>
-    <td>Name</td>
-    <td>Description</td>
-    <td>Offering</td>
-    <td>Where to Purchase</td>
-  </th>
+  <tr>
+    <td>**FICAM Services Framework Practice Area(s)**</td>
+    <td>**Name**</td>
+    <td>**Description**</td>
+    <td>**Offering**</td>
+    <td>**Where to Purchase**</td>
+  </tr>
   <tr>
     <td>Identity Management</td>
     <td></td>
