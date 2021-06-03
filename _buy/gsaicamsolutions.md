@@ -60,49 +60,49 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
   </tr>
   <tr>
     <td>Credential Management</td>
-    <td>SIN 517312 – Wireless Mobility Solutions</td>
+    <td><i>SIN 517312</i>: Wireless Mobility Solutions</td>
     <td style="width:250px">Includes a variety of services that address the mobility needs of government agencies to include: Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC.</td>
     <td>Digital Certifcates <br><br> Derived PIV <br><br> Other mobility offerings on this SIN</td>
     <td><a href="https://hallways.cap.gsa.gov/app/#/applet/rfq" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
-    <td>SIN 541519CDM – Continuous Diagnostics and Mitigation (CDM) Tools</td>
+    <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
     <td style="width:250px">Includes Department of Homeland Security (DHS) approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
     <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by DHS</td>
     <td><a href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-cdm/continuous-diagnostics-mitigation-cdm-tools-special-item-number-sin-information-for-ordering-organizations" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
   <tr>
     <td>Identity Management <br><br> Access Management <br><br> Credential Management</td>
-    <td>SIN 541519ICAM – Identity, Credentialing and Access Management (ICAM)</td>
+    <td><i>SIN 541519ICAM</i>: Identity, Credentialing and Access Management (ICAM)</td>
     <td style="width:250px">Managed service offerings for electronic credentials, identity and access management, authentication, and identity and access management professional services.</td>
     <td>Digital credentials <br><br> Authentication <br><br> Professional Services</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
-    <td>SIN 541519PKI – Public Key Infrastructure (PKI) Shared Service Providers (SSP) Program</td>
+    <td><i>SIN 541519PKI</i>: Public Key Infrastructure (PKI) Shared Service Providers (SSP) Program</td>
     <td style="width:250px">This program provides PKI services and digital certificates for use by Federal employees and contractors to the Federal Government.</td>
     <td>Current PKI Shared Service Providers</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
-    <td>SIN 541519IPIV – Homeland Security Presidential Directive 12 Product and Service Components</td>
+    <td><i>SIN 541519IPIV</i>: Homeland Security Presidential Directive 12 Product and Service Components</td>
     <td style="width:250px">PIV products and PIV services to implement the requirements of HSPD-12, FIPS-201 and associated NIST special publications. Implementation components specified under this SIN are: <ul><li>PIV enrollment and registration services</li><li>PIV systems infrastructure</li><li>PIV card management and production services</li><li>PIV card finalization services</li><li>Logical access control products and services</li><li>PIV system integration services. Installation services and FIPS 201 compliant PACS (Physical Access Control System) products.</li></ul></td>
     <td>PKI Shared Service Provider for PIV and additional products support</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
-    <td>SIN 334290L Physical Access Control Systems (PACS)</td>
+    <td><i>SIN 334290L</i>: Physical Access Control Systems (PACS)</td>
     <td style="width:250px">Includes physical access control systems (PACS), such as card-controlled access, biometrics, security barriers, etc.</td>
     <td>Physical Access Control Systems (PACS) components</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
-    <td>SIN 541330SEC – Security System Integration, Design, Management, and Life Cycle Support</td>
+    <td><i>SIN 541330SEC</i>: Security System Integration, Design, Management, and Life Cycle Support</td>
     <td style="width:250px">Includes services related to PACS design, integration, and implementation, and installation/testing. Offerors under this SIN have at least one employee who is CSEIP (Certified System Engineer ICAM PACS) certified and such certification can be verified at IDmanagment.gov.</td>
     <td>Physical Access Control Systems (PACS) integration (installation and configuration)</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
