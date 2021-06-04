@@ -58,7 +58,7 @@ Independent compliance audits are the primary way that the Federal Public Key In
 Audits are required annually for Certification Authorities.  Annual review packages should be submitted to fpki at gsa.gov.
 
 - [FPKI Annual Review Requirements (PDF, April 2017)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"} – Requirements for performing and reporting annual compliance audits.
-  - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in-person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/) and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/)
+  - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in-person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}
 - [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for Federal PKI Systems (PDF, February 2021)](../../docs/fpki-overlay-sp-800-53.pdf){:target="_blank"} – Additional security controls associated with Federal Information Security Modernization Act (FISMA) compliance.
 
 
