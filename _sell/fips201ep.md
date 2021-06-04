@@ -69,8 +69,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 Agencies that wish to issue D-PIV credentials should follow these steps:
 1. Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO)
 2. Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs)
-3. Submit the Annual DPCI Testing Application Form (linked above) to fips201ep at gsa.gov
-4. Submit sample D-PIV credentials for testing
+3. Submit sample D-PIV public certificates for testing or provide results from the [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to fips201ep at gsa.gov.
 
 Upon successful completion of DPCI testing, the agency or organization will be granted approval to issue D-PIV credentials.
 
