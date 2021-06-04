@@ -59,7 +59,9 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 ## Personal Identity Verification Credentials
 
-- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} – If you are an agency or organization applying for your annual Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov with available dates and times to visit the GSA testing labs.
+- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
+  - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
+  - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
 - [Personal Identity Verification (PIV) Credential (PDF, January 2010)](../../docs/fips201ep-pivtestprocedures.pdf){:target="_blank"} – These test procedures are used by the independent, third-party labs to test card stock.
 
 ## Derived PIV Credentials
