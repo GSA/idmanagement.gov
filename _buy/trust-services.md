@@ -14,8 +14,6 @@ subnav:
     href: '#government-identity-and-credentials'
   - text: Business Identity and Credentials
     href: '#business-identity-and-credentials'
-  - text: Consumer Identity and Credentials
-    href: '#consumer-identity-and-credentials'
   - text: Trust and Auditing of Services
     href: '#trust-and-auditing-of-services'
 ---
@@ -37,8 +35,8 @@ Trust Services providers offer services related to identity and credentialing of
 We’ve categorized the service providers given below by type of identity and credential and what population is served:
 
 - [Government Identity and Credentials](#government-identity-and-credentials) – Covers the FPKI Shared Service Providers (SSPs)
-- [Business Identity and Credentials](#business-identity-and-credentials) – Covers PIV-Interoperable (PIV-I), other PKI certificates, and non-PKI
-- [Consumer Identity and Credentials](#consumer-identity-and-credentials) – Covers non-PKI
+- [Business Identity and Credentials](#business-identity-and-credentials) – Covers PIV-Interoperable (PIV-I), and other PKI certificates
+- [Trust and Auditing of Services](#trust-and-auditing-of-services) – Covers PKI Bridges that are cross-certified into the FPKI
 
 ## Government Identity and Credentials
 
@@ -93,11 +91,11 @@ Services operating within these Trust Frameworks may be used by U.S. Government 
 
 Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
 
-- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../docs/fpki-test-req-guide.pdf){:target="_blank"}(PDF, December 2017).
+- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../docs/fpki-test-req-guide.pdf){:target="_blank"} (PDF, December 2017).
 
 Then, fill out the application contained in this document:
 
-- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdf){:target="_blank"}(PDF, May 2017).
+- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdf){:target="_blank"} (PDF, May 2017).
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
