@@ -117,5 +117,5 @@ Vendors, please complete the following steps.
 GSA can loan you test cards to help you pre-test your physical access control system products.
 
 - [PACS Test Card Loaner Process (PDF, November 2019)](../../docs/pacstest-process.pdf){:target="_blank"}
-- [PACS Test Card Loaner Set Request Form (MS Word, October 2019) – Sign and submit this form to fips201ep at gsa.gov.](../../docs/pacstest-loanerrequestform){:target="_blank"}docx)
+- [PACS Test Card Loaner Set Request Form (MS Word, October 2019)](../../docs/pacstest-loanerrequestform.docx){:target="_blank"} – Sign and submit this form to fips201ep at gsa.gov.
 - [PACS Test Card User Guide (PDF, January 2019)](../../docs/pacstest-testuserguide.pdf){:target="_blank"}
