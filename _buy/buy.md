@@ -46,7 +46,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 ### Consumer Identity, Credentials and Authentication
 
 - [Login.gov](https://www.login.gov){:target="_blank"}{:rel="noopener noreferrer"} – Shared government single sign on service to allow public consumers to securely access federal government services.
-- [Trust Services for Citizens](../buy/trust-services#consumer-identity-and-credentials) – Approved identity and credentialing services for individual citizens, and which the government has approved for federated identity services.
+- Trust Services for Citizens (Future Service Category) – Approved identity and credentialing services for individual citizens, and which the government has approved for federated identity services.
 
 # GSA Schedules
 
