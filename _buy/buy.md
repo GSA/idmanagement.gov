@@ -36,17 +36,17 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [Federal PKI Shared Service Providers](../trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
+- [Federal PKI Shared Service Providers](../buy/trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
 
 ### Business Identity, Credentials and Authentication
 
-- [Federal PKI Individual Certificate Providers](../trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
-- [Trust Services for Businesses](../trust-services#business-identity-and-credentials) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
+- [Federal PKI Individual Certificate Providers](../buy/trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [Trust Services for Businesses](../buy/trust-services#business-identity-and-credentials) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
 ### Consumer Identity, Credentials and Authentication
 
 - [Login.gov](https://www.login.gov){:target="_blank"}{:rel="noopener noreferrer"} – Shared government single sign on service to allow public consumers to securely access federal government services.
-- [Trust Services for Citizens](../trust-services#consumer-identity-and-credentials) – Approved identity and credentialing services for individual citizens, and which the government has approved for federated identity services.
+- [Trust Services for Citizens](../buy/trust-services#consumer-identity-and-credentials) – Approved identity and credentialing services for individual citizens, and which the government has approved for federated identity services.
 
 # GSA Schedules
 
