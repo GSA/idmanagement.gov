@@ -48,7 +48,6 @@ The Federal PKI has the following supplementary guidance:
 - [Registration Authority Agreement Template v1.0 (Word, April 2017)](../../docs/fpki-ssp-raa.docx){:target="_blank"} 
 - [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents](../fpkiarchive/)
 - [FPKI Incident Management Plan (PDF, September 2020)](../../docs/fpki-imp.pdf){:target="_blank"}
-- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"}
 
 
 # Annual Review Requirements for All Certification Authorities
@@ -59,7 +58,7 @@ Audits are required annually for Certification Authorities.  Annual review packa
 
 - [FPKI Annual Review Requirements (PDF, April 2017)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"} – Requirements for performing and reporting annual compliance audits.
   - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in-person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}
-- [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for Federal PKI Systems (PDF, February 2021)](../../docs/fpki-overlay-sp-800-53.pdf){:target="_blank"} – Additional security controls associated with Federal Information Security Modernization Act (FISMA) compliance.
+- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"}
 
 
 
