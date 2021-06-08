@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: governance
-title:  Federal PKI Compliance Audit
+title:  Federal PKI Policy and Compliance Audit
 permalink: governance/fpkiaudit/
 sidenav: governance
 sticky_sidenav: true
