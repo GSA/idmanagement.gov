@@ -20,11 +20,11 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 <table class="usa-table--borderless rpl-table">
   <thead class="usa-sr">
     <tr>
+      <th id="rpl-table-heading-numberApl" scope="col">APL #</th>
       <th id="rpl-table-heading-supplier" scope="col">Supplier</th>
       <th id="rpl-table-heading-nameProduct" scope="col">Product Name(s)</th>
       <th id="rpl-table-heading-numberProduct" scope="col">Product Number</th>
       <th id="rpl-table-heading-dateRemoval" scope="col">Removal Date</th>
-      <th id="rpl-table-heading-numberApl" scope="col">APL #</th>
       <th id="rpl-table-heading-reason" scope="col">Reason For Removal</th>
     </tr>
   </thead>

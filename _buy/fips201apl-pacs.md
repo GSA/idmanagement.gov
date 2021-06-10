@@ -9,9 +9,9 @@ sidenav: buy
 subnav:
     - text: How to Purchase
       href: '#how-to-purchase'
-    - text: Approved PACS Products - 13.01 Topology
+    - text: Approved PACS - 13.01
       href: '#approved-1301-topology-pacs-products'
-    - text: Approved PACS Products - 13.02 Topology
+    - text: Approved PACS - 13.02
       href: '#approved-1302-topology-pacs-products'
     - text: PACS Solutions Awaiting Approval
       href: '#pacs-solutions-awaiting-approval'
@@ -186,9 +186,16 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 | Position | Solution | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |
-| 1 |	Identiv Velocity 13.01 and 13.02	| Update	| In test |
-| 2	| 13.01 Open Options + HID	| Update	| In queue |
-| 3	| 13.01 LenelS2 + HID	| Update |	In test |
-| 4	| 13.02 XTec AuthentX ePACS PVI + XTec PR	| Update	| In queue |
+| 1 | Amag + HID | Update | In test |
+| 2	| Gallagher 1301 and 1302 | Update | In test |
+| 3	| 13.01 LenelS2 + HID | Update | In queue |
+| 4	| CCure 2.7 + Innometrics | Update | In queue |
+| 5 | Identiv Velocity 13.01 and 13.02	| Update | In queue |
+| 6	| 13.02 XTec AuthentX ePACS PVI + XTec PR | Update | In queue |
+| 7	| Genetec + HID	| Update | In queue |
+| 8	| Kastle + HID	| Update | In queue |
+| 9 | Honeywell + HID	| Update | In queue |
+| 10 | Datawatch + HID	| Update | In queue |
+| 11 | Open Option + HID | Update |	In queue |
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.

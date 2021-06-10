@@ -37,7 +37,7 @@ Review the applicable testing document(s) for the product(s) you wish to have te
 
 Once you’ve reviewed the testing documents, contact one of the Testing Labs listed below. They’ll walk you through the application and testing process.
 
-There are three Approved Testing Labs that test PIV card stock and badge holders:
+There are three Approved Testing Labs that test PIV card stock:
 - [atsec information security corporation](http://www.atsec.com/){:target="_blank"}{:rel="noopener noreferrer"} 
   - Contact: Andreas Fabis
   - Phone: (512) 615-7300
