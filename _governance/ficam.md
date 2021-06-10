@@ -75,7 +75,7 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
     - **Federal Common Policy CA (FCPCA)** is the trust anchor for the Federal Government. Authorized CAs issue certificates for exclusive use by the Federal Government for federal employees and contractors, to include the PKI certificates on the Personal Identity Verification (PIV) credential.
     - **Federal Bridge CA (FBCA)** is the PKI Bridge that enables interoperability between and among federally operated and business partner PKIs.
 
-## FOKIMA Newsletter
+## FPKIMA Newsletter
 - [FPKIMA Newsletter – Volume 7, Issue 2](../../docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 7, Issue 1](../../docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 6, Issue 3](../../docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"} (PDF)
