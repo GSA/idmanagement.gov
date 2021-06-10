@@ -11,9 +11,9 @@ subnav:
   - text: Overview
     href: '#overview'
   - text: Government Identity Services
-    href: '#government-identity-servoces'
-  - text: Business Identity Servoces
-    href: '#business-identity-servoces'
+    href: '#government-identity-services'
+  - text: Business Identity Services
+    href: '#business-identity-services'
   - text: Trust and Auditing of Services
     href: '#trust-and-auditing-of-services'
 ---
@@ -34,7 +34,7 @@ Trust Services providers offer services related to identity and credentialing of
 
 We’ve categorized the service providers given below by type of identity and credential and what population is served:
 
-- [Government Identity Servoces](#government-identity-services) – Covers the FPKI Shared Service Providers (SSPs)
+- [Government Identity Services](#government-identity-services) – Covers the FPKI Shared Service Providers (SSPs)
 - [Business Identity Services](#business-identity-services) – Covers PIV-Interoperable (PIV-I), and other PKI certificates
 - [Trust and Auditing of Services](#trust-and-auditing-of-services) – Covers PKI Bridges that are cross-certified into the FPKI
 
