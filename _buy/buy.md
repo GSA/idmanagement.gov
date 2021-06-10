@@ -45,7 +45,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 ### FedRAMP
 
-- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/)){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal enterprise and citizen identity products and services.
+- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal enterprise and citizen identity products and services.
 
 # GSA Schedules
 
