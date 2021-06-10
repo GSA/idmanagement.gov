@@ -15,6 +15,14 @@
   status: Post
 
 - category: Common Change Proposal
+  numberProposal: 2021-01
+  name: Federal PKI Key Recovery Policy Consolidation into Common Policy
+  description: This change proposal consolidates the existing Key Recovery Policy (KRP) requirements into Common Policy.
+  date: 04/13/2021
+  url: /docs/fpki-common-cp-2101.pdf
+  status: Post
+  
+- category: Common Change Proposal
   numberProposal: 2020-02
   name: Consolidated update to Common Policy and associated profiles
   description: Updates the Certificate Policy and the certificate profile specification.
