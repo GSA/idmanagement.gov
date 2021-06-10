@@ -40,6 +40,7 @@ The [FPKI Policy Authority (FPKIPA)](../governance/ficam#federal-public-key-infr
 | Federal Common Policy | [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"} | [Common Policy X.509 Certificate and CRL Profiles ](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}  | [Common Change Proposals](../fpkiarchive/) |
 | Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and  | [X.509 Certificate and CRL Extensions Profile](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"} | [Bridge Change Proposals](../fpkiarchive/) |
 | Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and [PIV-I for Federal Issuers](../../docs/fpki-pivi-for-issuers){:target="_blank"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}  | [Bridge Change Proposals](../fpkiarchive/) |
+| Public Trust TLS | [U.S. Federal Public Trust TLS Certificate Policy](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"} |  The CAs operating under this Certificate Policy in the new infrastructure will not have cross-certificates with any existing Federal Public Key Infrastructure CAs.|
 
 The Federal PKI has the following supplementary guidance:
 
