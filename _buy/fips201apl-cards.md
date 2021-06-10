@@ -34,16 +34,16 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 <table class="usa-table-borderless">
   <thead class="usa-sr">
     <tr>
-      <th id="apl-table-heading-name" scope="col">Product Name</th>
       <th id="apl-table-heading-number" scope="col">APL Number</th>
+      <th id="apl-table-heading-name" scope="col">Product Name</th>
       <th id="apl-table-heading-date" scope="col">Valid Date</th>
     </tr>    
   </thead>
   <tbody>
     {% for apl in site.data.fips201apl %}
       <tr class="apl-table-row" data-category="{{ apl.category }}">
+          <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
          <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank">{{ apl.productname }}</a></td>
-        <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
        </tr>
     {% endfor %} <!--apl-->
