@@ -20,4 +20,4 @@ If none of these resources answer your question, or you wish to report an issue 
 We’ll make every effort to respond to your email within two business days (much more quickly if possible). If our response will take longer to prepare, we’ll let you know when you can expect it.
 
 ## Reporting Incidents
-To report a potential key compromise, security incident, or fraud, waste, or abuse involving Federal PKI certificates, please contact us with supporting evidence of the incident.
+To report a potential key compromise, security incident, or fraud, waste, or abuse involving FPKI certificates, please contact us with supporting evidence of the incident.

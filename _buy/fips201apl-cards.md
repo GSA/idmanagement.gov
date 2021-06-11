@@ -21,7 +21,7 @@ If you do not see a card below, it's possible it's on the [Removed Product List]
 
 Please Note:
 
-- Tri-Interface cards are not approved for Federal Government PIV or CAC card use. Agencies should not procure them. They are listed on the APL for industry-only procurement.
+- Tri-Interface cards are not approved for Federal Government PIV or CAC card use. Agencies should not procure them. They are listed on the APL for industry-only acquisition.
 - Manufacturers may call Tri-Interface cards by different names (for example, Dual Hybrid). The prohibited feature of Tri-Interface cards is a prox interface (a 125 kHz antenna).
 - Agencies should procure only cards validated by the NIST Personal Identity Verification Program (NPIVP).
 
@@ -67,7 +67,7 @@ If your agency needs to purchase cardstock from this legacy list, you must submi
 - A transition plan specifying major milestones to achieve full compliance by the 2024 deadline; and
 - Implications resulting from non-compliance with federal policy related to this purchase.
 
-Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory) (regardless of the procurement vehicle used). If using [GSA Schedules](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules) as the procurement vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
+Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory) (regardless of the acquisition vehicle used). If using [GSA Schedules](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules) as the acquisition vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
 
 Note that GSA will provide the Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB) with copies of all memos submitted.
 

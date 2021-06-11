@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: governance
-title:  Federal PKI Document Archive
+title:  FPKI Document Archive
 permalink: governance/fpkiarchive/
 sidenav: governance
 sticky_sidenav: true
@@ -15,7 +15,7 @@ sticky_sidenav: true
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-This pages contains three years of Federal PKI documents including:
+This pages contains three years of FPKI documents including:
 - Certificate Policies
 - Certificate Profiles
 - Supplementary Guideance

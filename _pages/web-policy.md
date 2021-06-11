@@ -18,11 +18,11 @@ This page explains website policies, procedures, and required links for the IDMa
 
 ## Accessibility Policy
 
-General Services Administration (GSA) is committed to providing access to all individuals—with or without disabilities—seeking information on this website. We’ve built this website to conform to the Section 508 of the Rehabilitation Act (as amended), which requires that all individuals with disabilities (whether federal employees or members of the general public) have access to, and use of, information and data comparable to that provided to individuals without disabilities, unless an undue burden would be imposed on us.
+General Services Administration (GSA) is committed to providing access to all individuals—with or without disabilities—seeking information on this website. We’ve built this website to conform to the [Section 508 of the Rehabilitation Act (as amended)](https://section508.gov/manage/laws-and-policies){:target="_blank"}{:rel="noopener noreferrer"}, which requires that all individuals with disabilities (whether federal employees or members of the general public) have access to, and use of, information and data comparable to that provided to individuals without disabilities, unless an undue burden would be imposed on us.
 
 ### If you have trouble viewing content
 
-If you have difficulty accessing information on this site, particularly if using assistive technology, including screen readers, eye tracking devices, or voice recognition software, please contact us. You can do this by emailing us with the following information:
+If you have difficulty accessing information on this site, particularly if using assistive technology, including screen readers, eye tracking devices, or voice recognition software, please contact us. You can do this by [emailing us](../contact/) with the following information:
 
 - URL (web address) of the material you tried to access
 - the problem you experienced
@@ -31,7 +31,8 @@ If you have difficulty accessing information on this site, particularly if using
 We’ll get back to you as soon as we can, and attempt to provide the information you’re seeking.
 
 ### 3rd-party plug-ins
-Some content on this website may require use of a 3rd-party plug-in to view. Find links to these plug-ins/accessibility aids on GSA.gov. Please note these are non-government sites and GSA does not endorse these products. They’re listed only for your convenience. Please direct questions about each tool to the respective vendor.
+
+Some content on this website may require use of a 3rd-party plug-in to view. [Find links to these plug-ins/accessibility aids on GSA.gov](https://www.gsa.gov/website-information/accessibility-aids){:target="_blank"}{:rel="noopener noreferrer"}. Please note these are non-government sites and GSA does not endorse these products. They’re listed only for your convenience. Please direct questions about each tool to the respective vendor.
 
 ## Linking Policy
 
@@ -55,11 +56,11 @@ Is the website’s content relevant, useful and authoritative?
 
 This website links to publicly available websites that are government-owned or government sponsored, including domains ending in .gov, .mil and .us. We may also link to quasi-government agencies and websites created by public/private partnerships; state and local government sites (e.g., www.maryland.gov); and government-sponsored websites that end in .com, .org, or .net (e.g., www.usps.com for the U.S. Postal Service).
 
-Because the websites of other federal government agencies must follow the same policies as GSA, links to these sites (including sites managed by the U.S. military) are made without notification or disclaimer.
+Because the websites of other Federal Government agencies must follow the same policies as GSA, links to these sites (including sites managed by the U.S. military) are made without notification or disclaimer.
 
 ### Links to non-government websites
 
-This website may link to non-government websites, if they provide relevant information that’s not available on an official government website. We provide these links as a public service only; the US government, including GSA (as the sponsoring federal agency of IDManagement.gov), neither endorses nor guarantees in any way the external organizations, services, advice, or products included in these website links. Furthermore, the US government neither controls nor guarantees the accuracy, relevance, timeliness or completeness of the information contained in non-government website links.
+This website may link to non-government websites, if they provide relevant information that’s not available on an official government website. We provide these links as a public service only; the U.S. Government, including GSA (as the sponsoring federal agency of IDManagement.gov), neither endorses nor guarantees in any way the external organizations, services, advice, or products included in these website links. Furthermore, the U.S. Government neither controls nor guarantees the accuracy, relevance, timeliness or completeness of the information contained in non-government website links.
 
 ### Disclaimer of endorsement
 
@@ -78,9 +79,9 @@ GSA will not link to any website that exhibits hate, bias, or discrimination. Fu
 
 Federal agencies are required to provide the following links/information on our websites.
 
-- GSA Privacy Policy
-- IDManagement.gov Privacy Policy
-- Freedom of Information Act Requests
+- [GSA Privacy Policy](https://www.gsa.gov/privacy){:target="_blank"}{:rel="noopener noreferrer"}
+- [IDManagement.gov Privacy Policy](../privacy-policy/){:target="_blank"}{:rel="noopener noreferrer"}
+- [Freedom of Information Act Requests](http://www.gsa.gov/portal/content/105305){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Social Media Sites
 

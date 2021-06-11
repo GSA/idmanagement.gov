@@ -2,7 +2,7 @@
 
 - category: Common Certificate Policy
   numberProposal: 2.0
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v2.0
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.0
   date: 09/01/2020
   url: /docs/fpki-x509-cert-policy-common-20.pdf
   status: Post
@@ -16,7 +16,7 @@
 
 - category: Common Change Proposal
   numberProposal: 2021-01
-  name: Federal PKI Key Recovery Policy Consolidation into Common Policy
+  name: FPKI Key Recovery Policy Consolidation into Common Policy
   description: This change proposal consolidates the existing Key Recovery Policy (KRP) requirements into Common Policy.
   date: 04/13/2021
   url: /docs/fpki-common-cp-2101.pdf
@@ -436,63 +436,63 @@
 
 - category: Common Certificate Policy
   numberProposal: 1.32
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.32
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.32
   date: 04/14/2020
   url: /docs/fpki-x509-cert-policy-common-132.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.31
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.31
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.31
   date: 02/08/2019
   url: /docs/fpki-x509-cert-policy-common-131.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.30
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.30
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.30
   date: 10/4/2018
   url: /docs/fpki-x509-cert-policy-common-130.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.29
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.29
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.29
   date: 10/10/2018
   url: /docs/fpki-x509-cert-policy-common-129.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.28
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.28
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.28
   date: 04/04/2018
   url: /docs/fpki-x509-cert-policy-common-128.pdf
   status: Archive
 
 - category: Common Certificate Policy
   numberProposal: 1.27
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.27
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.27
   date: 06/29/2017
   url: /docs/fpki-x509-cert-policy-common-127.pdf
   status: Archive
 
 - category: Common Certificate Policy
   numberProposal: 1.26
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.26
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.26
   date: 02/02/2017
   url: /docs/fpki-x509-cert-policy-common-126.pdf
   status: Archive
 
 - category: Common Certificate Policy
   numberProposal: 1.25
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.25
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.25
   date: 09/22/2016
   url: /docs/fpki-x509-cert-policy-common-125.pdf
   status: Archive
 
 - category: Common Certificate Policy
   numberProposal: 1.24
-  name: X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework v1.24
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.24
   date: 05/07/2015
   url: /docs/fpki-x509-cert-policy-common-124.pdf
   status: Archive

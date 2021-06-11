@@ -40,13 +40,13 @@ We’ve categorized the service providers given below by type of identity and cr
 
 ## Government Identity Services
 
-These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA dot Gov.
+These organizations operate as FPKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA dot Gov.
 
-All of the Certification Authorities operated by these Federal PKI SSPs issue certificates for:
+All of the Certification Authorities operated by these FPKI SSPs issue certificates for:
 
 - Person identity, including for PIV credentials
 
-A subset of the Federal PKI SSPs also issue and manage:
+A subset of the FPKI SSPs also issue and manage:
 
 - Government enterprise device certificates
 

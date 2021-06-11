@@ -13,13 +13,13 @@ subnav:
     href: '#consulting-services'
 ---
 
-If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the federal government, learn how to get your product or service tested and approved.
+If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the Federal Government, learn how to get your product or service tested and approved.
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The Federal ICAM (FICAM) program supports these requirements by managing the testing of certain products, and by certifying services.
 
 ## Product Approval Process
 
-It takes just three steps to get a product approved for use by federal agencies:
+It only takes three steps to get a product approved for use by federal agencies:
 
 1. Review testing documents
 2. Contact a testing lab
@@ -57,7 +57,7 @@ After your product passes testing, you’ll receive a signed document showing th
 
 ### Step 3 – Get on a GSA Schedule
 
-The GSA Multiple Award Schedule Program, also referred to as the "Schedule", is the premier contract vehicle for the federal government. The Schedule Program is a long term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for businesses, but it requires effort and committment on your part to succeeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
+The GSA Multiple Award Schedule Program, also referred to as the "Schedule," is the premier contract vehicle for the Federal Government. The Schedule Program is a long term government-wide contract between commercial suppliers and the Federal Government. Holding a Schedule contract can open doors for businesses, but it requires effort and committment on your part to succeeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
 
 After testing and approval, apply to get your product or service listed on GSA’s IT Schedule 70 and/or Schedule 84.
 

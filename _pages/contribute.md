@@ -131,7 +131,7 @@ First you must **create a page**.
 
 6. Click the **Create pull request** button.
 
-	The site administrators receive a notification about the new page, and they can revuew and publish the page.
+	The site administrators receive a notification about the new page, and they can review and publish the page.
 
 ## Edit a Page
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: buy
-title:  Buy FICAM Products and Services
+title:  Buy Identity Products and Services
 permalink: buy/
 sidenav: buy
 sticky_sidenav: true
@@ -30,17 +30,17 @@ Products and services that have lost their certification are placed on the Remov
 
 # Services
 
-The following organizations offer Identity, Credential, and Authentication services to the Federal government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact/) so we can add it to the list.
+The following organizations offer Identity, Credential, and Authentication services to the Federal Government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact/) so we can add it to the list.
 
 ### Government Identity Services
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [Federal PKI Shared Service Providers](../buy/trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
+- [FPKI Shared Service Providers](../buy/trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
 
 ### Business Identity Services
 
-- [Federal PKI Individual Certificate Providers](../buy/trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [FPKI Individual Certificate Providers](../buy/trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
 - [Trust Services for Businesses](../buy/trust-services#business-identity-and-credentials) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
 ### FedRAMP
@@ -49,7 +49,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 # GSA Schedules
 
-GSA Schedules provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. IT Schedule 70 offers tools and expertise to shorten procurement cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
+GSA Schedules provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. IT Schedule 70 offers tools and expertise to shorten acquisition cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 
 - [FAQs for Buyers](https://www.gsa.gov/portal/content/142143){:target="_blank"}{:rel="noopener noreferrer"}
 - [GSA Advantage!](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"}– online shopping and ordering system
