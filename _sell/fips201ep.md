@@ -102,10 +102,10 @@ Vendors, please complete the following steps.
     - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}
     - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}
-    - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
+        - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - Approved [PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}
 5. **Only for New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, March 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"} for your topology.
-    - When submitting a product that uses an approved or provisionally approved topology, complete the Topology Mapping Workbook, rather than the PDF version, and submit it with your application. This began with FRTC 1.3.3, and is easier to use.
+    - When submitting a product that uses an approved or provisionally approved topology, complete the Topology Mapping Workbook, rather than the PDF version, and submit it with your application.
 6. Complete a Topology Mapping Diagram as specified in Section 4.4 in the Approved PACS Topology Mapping Documents above.
 7. Execute the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}.
 8. Include the completed form and checklist in theProduct/Service Application Form and Guidancein (1) above.
