@@ -50,7 +50,7 @@ primary_navigation:
     children:
       - name: Vendors
         url: /sell/
-      - name: Procurement Professionals
+      - name: Acquisition Professionals
         url: /buy/
       - name: Program Managers
         url: /governance/

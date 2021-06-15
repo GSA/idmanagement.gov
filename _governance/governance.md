@@ -21,7 +21,7 @@ The Federal ICAM (FICAM) program helps federal agencies plan and manage enterpri
 
 # FICAM Playbooks
 
-The FICAM Roadmap, developed by the federal CIO Council, contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies. But the Roadmap was last updated in 2011, and as technology, policy and security practices rapidly evolve, the government must also evolve. To modernize the original FICAM Roadmap, we’ve begun migrating this information to playbooks. 
+The FICAM Roadmap, developed by the Federal CIO Council, contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies. But the Roadmap was last updated in 2011, and as technology, policy and security practices rapidly evolve, the government must also evolve. To modernize the original FICAM Roadmap, we’ve begun migrating this information to playbooks. 
 
 These playbooks are hosted on Github, and provide common policy and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on needs and interest of individual agencies and government-wide groups. Reach out to icam at gsa.gov to suggest new topics.
 
@@ -31,8 +31,8 @@ These playbooks are hosted on Github, and provide common policy and patterns to 
 # Announcements
 
 - [FIPS 201 Evaluation Program Announcements](../fips201/)
-- [Federal PKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [Federal PKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   
 
 # Training

@@ -39,7 +39,7 @@ POSTED December 11, 2020
 
 The FIPS 201 Evaluation program will be removing card holders (also known as badge holders or electromagnetically opaque sleeves) from the Approved Products List on January 31st, 2021. GSA will no longer accept applications to certify card holders. Card holders and related products are still commercially available off-the-shelf; however, the use of these products is optional and testing is no longer in the best interests of the government.
 
-Please note the removal of this category should not impact any existing procurements. Product categories not identified by the Program have no requirement for FIPS 201 conformance and available products should be able to satisfy the agency defined security requirements provided direct testing.
+Please note the removal of this category should not impact any existing acquisitions. Product categories not identified by the Program have no requirement for FIPS 201 conformance and available products should be able to satisfy the agency defined security requirements provided direct testing.
 
 [Return to Top](#top)
 
@@ -49,10 +49,10 @@ POSTED April 30, 2019
 
 The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories,the program found that:
 
-- OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to procurement and/or installation.
+- OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to acquisition and/or installation.
 - SCVP Client and SCVP Client (without auth) are not widely used in US federal agencies. It is not in the government’s or commercial best interests to continue to maintain testing scenarios for these products.
 
-Please note the removal of these categories should not impact any procurements. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
+Please note the removal of these categories should not impact any acquisition. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
 
 [Return to Top](#top)
 
@@ -114,7 +114,7 @@ Below are some resources that provide information, guidance, or a replacement ce
 - Guidance through the [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}
 - Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
 - New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
-Please note the removal of these categories should not impact any procurements. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
+Please note the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
 
 | Categories Removed	| Replacement |
 | ------------------- | ----------- |
