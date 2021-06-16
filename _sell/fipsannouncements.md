@@ -75,7 +75,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 POSTED June 30, 2018
 
-In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../rpl/).
+In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../removed-products-list/).
 
 [Return to Top](#top)
 
@@ -83,7 +83,7 @@ In the past, the FIPS 201 Evaluation Program has granted extensions for allowing
 
 POSTED August 18, 2017
 
-The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../fips201ep/) page for information about the testing process or to submit a credential for testing.
+The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../fips201/) page for information about the testing process or to submit a credential for testing.
 
 [Return to Top](#top)
 

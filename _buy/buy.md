@@ -26,11 +26,11 @@ The **Approved Products List (APL)** contains the official list of these tested 
 1. [PIV Cards](../approved-products-list-piv/)
 2. [Physical Access Control Systems](../approved-products-list-pacs-products/)
 
-Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../contact/) if you’re unsure if a product is fit for government use.
+Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
 
 # Services
 
-The following organizations offer Identity, Credential, and Authentication services to the Federal Government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact/) so we can add it to the list.
+The following organizations offer Identity, Credential, and Authentication services to the Federal Government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact-us/) so we can add it to the list.
 
 ### Government Identity Services
 

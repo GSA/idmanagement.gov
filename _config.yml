@@ -45,7 +45,7 @@ primary_navigation:
     description: IDmanagement.gov
     url: /
   - name: About Us
-    url: /about/
+    url: /about-us/
   - name: Partners
     children:
       - name: Vendors
@@ -59,7 +59,7 @@ primary_navigation:
 
 secondary_navigation:
   - name: Contact Us
-    url: /contact/
+    url: /contact-us/
   - name: Contribute
     url: /contribute/
 

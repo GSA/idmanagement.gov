@@ -1,7 +1,7 @@
 ---
 title: Contact Us
 layout: page
-permalink: /contact/
+permalink: /contact-us/
 sidenav: policy
 sticky_sidenav: true
 ---

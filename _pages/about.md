@@ -1,7 +1,7 @@
 ---
 title: About Us
 layout: page
-permalink: /about/
+permalink: /about-us/
 sidenav: policy
 sticky_sidenav: true
 ---

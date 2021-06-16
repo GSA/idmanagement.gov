@@ -22,7 +22,7 @@ General Services Administration (GSA) is committed to providing access to all in
 
 ### If you have trouble viewing content
 
-If you have difficulty accessing information on this site, particularly if using assistive technology, including screen readers, eye tracking devices, or voice recognition software, please contact us. You can do this by [emailing us](../contact/) with the following information:
+If you have difficulty accessing information on this site, particularly if using assistive technology, including screen readers, eye tracking devices, or voice recognition software, please contact us. You can do this by [emailing us](../contact-us/) with the following information:
 
 - URL (web address) of the material you tried to access
 - the problem you experienced
