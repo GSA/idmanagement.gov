@@ -17,7 +17,7 @@ subnav:
 
 The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
-If you do not see a card below, it's possible it's on the [Removed Product List](../rpl/)
+If you do not see a card below, it's possible it's on the [Removed Product List](../removed-products-list/)
 
 Please Note:
 
@@ -52,7 +52,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 ## Legacy PIV Cards
 
-Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program. Any cardstock designated as “legacy” is placed on this legacy list as well as the [Removed Product List](../rpl). However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by **June 30, 2024**.
+Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program. Any cardstock designated as “legacy” is placed on this legacy list as well as the [Removed Product List](../removed-products-list/). However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by **June 30, 2024**.
 
 - Gemalto IDCore 3020 v1, 128k dual-interface with ActivIdentity Digital Identity Applet Suite – APL# 1244
 - Giesecke & Devrient StarSign(R) SmartCafe(R) Expert 144K with PIV Applet – APL# 525

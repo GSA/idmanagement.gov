@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FIPS 201 Removed Product List
-permalink: buy/rpl/
+permalink: buy/removed-products-list/
 collection: buy
 sticky_sidenav: true
 sidenav: buy
