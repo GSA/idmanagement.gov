@@ -47,16 +47,17 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 - The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal enterprise and citizen identity products and services.
 
-# GSA Schedules
+# GSA Multiple Award Schedule (MAS)
 
-GSA Schedules provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. IT Schedule 70 offers tools and expertise to shorten procurement cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
+GSA Multiple Award Schedule (MAS) provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. IT Schedule 70 offers tools and expertise to shorten procurement cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 
 - [FAQs for Buyers](https://www.gsa.gov/portal/content/142143){:target="_blank"}{:rel="noopener noreferrer"}
 - [GSA Advantage!](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"}– online shopping and ordering system
-  - [Schedule 70 132-62](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do;jsessionid=16A1952E835A7EEB8BADC5F59077FA00.prd2pweb?executeQuery=YES&scheduleNumber=70&flag=&filter=&specialItemNumber=132+62){:target="_blank"}{:rel="noopener noreferrer"}– FICAM SME companies and PACS vendors
-  - [Schedule 84 246-35-7](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?executeQuery=YES&scheduleNumber=84&flag=&filter=&specialItemNumber=246+35+7){:target="_blank"}{:rel="noopener noreferrer"}– PACS vendors
-  - [Schedule 84 246-60-5](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?executeQuery=YES&scheduleNumber=84&flag=&filter=&specialItemNumber=246+60+5){:target="_blank"}{:rel="noopener noreferrer"}– PACS integrator vendor
-- [Buy from Schedule 70](https://www.gsa.gov/portal/content/104506){:target="_blank"}{:rel="noopener noreferrer"}
-- [IT Schedule 70 IT Services](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"}– scroll down to “Cybersecurity – ICAM” for links to specific items
+  - [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– ICAM Solutions
+  - [541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – PKI Shared Service Providers (SSP)
+  - [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}- HSPD-12 Products and Service Components
+  - [334290L](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– PACS vendors
+  - [541330SEC](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290PACS&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– PACS integrator vendor
+- [Mulitple Award Schedule IT SINs](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"}– scroll down to “Cybersecurity – ICAM” for links to specific items
 
 Note that the purchasing process may differ, depending on the particular product or service you want. If you need help, please contact icam at gsa.gov.
