@@ -11,8 +11,8 @@ subnav:
     href: '#products'
   - text: Services
     href: '#services'
-  - text: GSA Schedules
-    href: '#gsa-schedules'
+  - text: GSA MAS
+    href: '#gsa-multiple-award-schedule'
 ---
 
 Find approved products and services for Federal Identity, Credential, and Access Management (FICAM) implementations, and helpful links for purchasing these items using GSA Schedules.
@@ -47,7 +47,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 - The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal enterprise and citizen identity products and services.
 
-# GSA Multiple Award Schedule (MAS)
+# GSA Multiple Award Schedule
 
 GSA Multiple Award Schedule (MAS) provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. The MAS offers tools and expertise to shorten acquisition cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 
