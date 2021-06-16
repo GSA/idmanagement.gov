@@ -49,7 +49,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 # GSA Multiple Award Schedule (MAS)
 
-GSA Multiple Award Schedule (MAS) provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. IT Schedule 70 offers tools and expertise to shorten procurement cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
+GSA Multiple Award Schedule (MAS) provide access to long-term government-wide contracts with commercial firms that provide access to millions of commercial products and services at volume discount pricing. The MAS offers tools and expertise to shorten acquisition cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 
 - [FAQs for Buyers](https://www.gsa.gov/portal/content/142143){:target="_blank"}{:rel="noopener noreferrer"}
 - [GSA Advantage!](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"}– online shopping and ordering system
