@@ -19,11 +19,11 @@ subnav:
   - text: ICAM Solutions and Services Roadmap
     href: '#icam-solutions-and-sercices-roadmap'
   - text: Phase 1 - Foundation
-    href: '#phase-1-foundation"
+    href: '#phase-1-foundation'
   - text: Phase 2 - Federation
-    href: '#phase-2-federation"
+    href: '#phase-2-federation'
   - text: Phase 3 - Emerging Trends
-    href: "#phase-3-emerging-trends'
+    href: '#phase-3-emerging-trends'
     
 ---
 
