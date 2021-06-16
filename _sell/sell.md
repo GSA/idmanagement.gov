@@ -57,12 +57,11 @@ After your product passes testing, you’ll receive a signed document showing th
 
 ### Step 3 – Get on a GSA Schedule
 
-The GSA Multiple Award Schedule Program, also referred to as the "Schedule", is the premier contract vehicle for the federal government. The Schedule Program is a long term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for businesses, but it requires effort and committment on your part to succeeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
+The GSA Multiple Award Schedule (MAS) Program, also referred to as the "Schedule", is the premier contract vehicle for the federal government. The Schedule Program is a long term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for businesses, but it requires effort and commitment on your part to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
 
-After testing and approval, apply to get your product or service listed on GSA’s IT Schedule 70 and/or Schedule 84.
+After testing and approval, apply to get your product or service listed on GSA’s Multiple Award Schedule (MAS).
 
-- [Sell through GSA IT Schedule 70](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"}  – Agencies use Schedule 70 to fulfill their technology products and services needs.
-- [Sell through GSA Schedule 84](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology/sell-through-mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"} – Schedule 84 is for products and services related to facility security and facility management systems.
+- [Sell through GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"}  – Agencies use the MAS to fulfill their technology products and services needs.
 
 ## Consulting Services
 
