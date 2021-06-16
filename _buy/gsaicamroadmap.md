@@ -141,9 +141,11 @@ This roadmap provides activities in five focus areas aligned with GSA’s vision
 
 ICAM supports multiple agency needs for information sharing and safeguarding. Agencies must support access management for federal government users, both within and across agencies; coordinate with mission partners from state, local, and tribal governments as well as commercial industry; and provide information and other resources to constituents. Recognizing these needs, each activity in the roadmap is flagged to identify which of the following groups of users is supported by the activity.
 
-Agency – these activities support federal agency implementation of ICAM within the agency and between agencies, including interactions with contractors who are issued PIV credentials.
-Citizen – these activities support interactions between federal agencies and constituents.
-Partner – these activities support interactions between federal agencies and mission partners including commercial businesses and state and local government agencies that use federated credentials to interact with federal agencies.
+|   |    |
+| :---: | ----- | ----- | 
+| [![A circle with an "A" in it.](../../assets/img/icamroadmap-a.png)](../../assets/img/icamroadmap-a.png){:target="_blank"}{:rel="noopener noreferrer"} | Agency | These activities support federal agency implementation of ICAM within the agency and between agencies, including interactions with contractors who are issued PIV credentials. |
+|[![A circle with an "C" in it.](../../assets/img/icamroadmap-c.png)](../../assets/img/icamroadmap-c.png){:target="_blank"}{:rel="noopener noreferrer"}  | Citizen | These activities support interactions between federal agencies and constituents. |
+| [![A circle with an "P" in it.](../../assets/img/icamroadmap-p.png)](../../assets/img/icamroadmap-p.png){:target="_blank"}{:rel="noopener noreferrer"} | Partner | These activities support interactions between federal agencies and mission partners including commercial businesses and state and local government agencies that use federated credentials to interact with federal agencies.  |
 
 ## Phase One – Foundation
 
