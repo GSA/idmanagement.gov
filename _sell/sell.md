@@ -13,13 +13,13 @@ subnav:
     href: '#consulting-services'
 ---
 
-If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the federal government, learn how to get your product or service tested and approved.
+If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the Federal Government, learn how to get your product or service tested and approved.
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The Federal ICAM (FICAM) program supports these requirements by managing the testing of certain products, and by certifying services.
 
 ## Product Approval Process
 
-It takes just three steps to get a product approved for use by federal agencies:
+It only takes three steps to get a product approved for use by federal agencies:
 
 1. Review testing documents
 2. Contact a testing lab

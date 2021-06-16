@@ -1,7 +1,7 @@
 ## Buy
 
 buy:
-  - text: Procurement Overview
+  - text: Acquisition Overview
     href: /buy/
   - text: Trust Services
     href: /buy/trust-services/
@@ -31,9 +31,9 @@ governance:
     href: /governance/
   - text: FICAM Governance
     href: /governance/ficam/
-  - text: Federal PKI Policy and Compliance Audit
+  - text: FPKI Policy and Compliance Audit
     href: /governance/fpkiaudit
-  - text: Federal PKI Archived Documents
+  - text: FPKI Archived Documents
     href: /governance/fpkiarchive/
     
 ## Main Site

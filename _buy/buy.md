@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: buy
-title:  Buy FICAM Products and Services
+title:  Buy Identity Products and Services
 permalink: buy/
 sidenav: buy
 sticky_sidenav: true
@@ -30,17 +30,17 @@ Products and services that have lost their certification are placed on the Remov
 
 # Services
 
-The following organizations offer Identity, Credential, and Authentication services to the Federal government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact/) so we can add it to the list.
+The following organizations offer Identity, Credential, and Authentication services to the Federal Government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact/) so we can add it to the list.
 
 ### Government Identity Services
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [Federal PKI Shared Service Providers](../buy/trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
+- [FPKI Shared Service Providers](../buy/trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
 
 ### Business Identity Services
 
-- [Federal PKI Individual Certificate Providers](../buy/trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [FPKI Individual Certificate Providers](../buy/trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
 - [Trust Services for Businesses](../buy/trust-services#business-identity-and-credentials) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
 ### FedRAMP
