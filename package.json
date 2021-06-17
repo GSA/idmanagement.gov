@@ -12,7 +12,6 @@
     "uswds": "~2.9.0"
   },
   "devDependencies": {
-    "a11y": "^0.5.1",
     "rimraf": "^3.0.2"
   }
 }
