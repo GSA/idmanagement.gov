@@ -17,3 +17,4 @@ Vagrantfile
 .vagrant/machines/default/virtualbox/vagrant_cwd
 .vagrant/rgloader/loader.rb
 idmgov.code-workspace
+.idea
