@@ -17,7 +17,7 @@ A quick check of some common resources may answer your question more quickly tha
 - Find approved [FICAM products and services](../buy/icamsolutions/)
 - Get your product/service onto the [Approved Products List](../buy#products/)
 - Find information for [FICAM developers](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}
-- Find information for [FICAM program managers](../governance/ficam/)
+- Find information for [FICAM program managers](../governance/)
 
 If none of these resources answer your question, or you wish to report an issue with the IDManagement.gov website, please email icam at gsa.gov. Thank you!
 

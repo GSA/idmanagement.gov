@@ -17,7 +17,7 @@ subnav:
 
 Find approved products and services for Federal Identity, Credential, and Access Management (FICAM) implementations, and helpful links for purchasing these items using GSA Schedules.
 
-Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap](../buy/gsaicamsolutions/).
+Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap](../buy/icamsolutions/).
 
 # Products
 
@@ -28,7 +28,7 @@ The **Approved Products List (APL)** contains the official list of these tested 
 1. [PIV Cards](../approved-products-list-piv/)
 2. [Physical Access Control Systems](../approved-products-list-pacs-products/)
 
-Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../removed-products-list/). [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
+Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
 
 # Services
 

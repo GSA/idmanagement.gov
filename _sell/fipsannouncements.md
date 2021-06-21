@@ -7,14 +7,15 @@ sidenav: sell
 sticky_sidenav: true
 
 subnav:
-  - text: PACS FRTC v1.4.2 Update Released
-    href: '#pacs-frtc-v.1.4.2-update-released'
-  - text: Category Removed from the APL December 2020
+  - text: Mar 2021 - PACS FRTC v1.4.2 Update Released
+    href: '#pacs-frtc-v142-update-released'
+  - text: Dec 2020 - Category Removed from the APL December 2020
     href: '#category-removed-from-the-apl-december-2020'
-  - text: Category Removed from the APL April 2019
+  - text: Apr 2019 - Category Removed from the APL April 2019
     href: '#category-removed-from-the-apl-april-2019'
   - text: Announcements Older Than Three Years
     href: '#announcements-older-than-three-years'
+
 ---
 
 This is a list of the latest news out of the FIPS 201 Evaluation Program.
@@ -75,7 +76,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 POSTED June 30, 2018
 
-In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../removed-products-list/).
+In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../../buy/removed-products-list/).
 
 [Return to Top](#top)
 
@@ -83,7 +84,7 @@ In the past, the FIPS 201 Evaluation Program has granted extensions for allowing
 
 POSTED August 18, 2017
 
-The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../fips201/) page for information about the testing process or to submit a credential for testing.
+The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../../fips201/) page for information about the testing process or to submit a credential for testing.
 
 [Return to Top](#top)
 

@@ -8,7 +8,7 @@ sticky_sidenav: true
 
 subnav:
   - text: ICAMSC
-    href: '#identity-credential-and-access-manaagement-subcommittee'
+    href: '#identity-credential-and-access-management-subcommittee'
   - text: ICAMSC Working Groups
     href: '#icamsc-working-groups'
   - text: FPKIPA

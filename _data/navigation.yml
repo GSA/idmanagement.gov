@@ -22,7 +22,7 @@ sell:
   - text: FIPS 201 Evaluation Program
     href: /fips201/
   - text: FIPS 201 Announcements
-    href: /sell/fipsannouncements
+    href: /sell/fipsannouncements/
     
 ## Governance
 
@@ -32,7 +32,7 @@ governance:
   - text: FICAM Governance
     href: /governance/ficam/
   - text: FPKI Policy and Compliance Audit
-    href: /governance/fpkiaudit
+    href: /governance/fpkiaudit/
   - text: FPKI Archived Documents
     href: /governance/fpkiarchive/
     
