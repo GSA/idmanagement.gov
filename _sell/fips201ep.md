@@ -21,7 +21,7 @@ subnav:
 
 The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes called the FICAM Testing Program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs).
 
-For the latest testing news, view the [program announcements](../fipsannouncements/).
+For the latest testing news, view the [program announcements](../sell/fipsannouncements/).
 
 ## Testing and Certification
 
@@ -31,7 +31,7 @@ We test and certify a variety of products and services such as:
 - Physical access control systems for buildings including readers and infrastructure
 - Service providers who manage, install, or provide hosted solutions for issuance of Personal Identity Verification (PIV) and CAC credentials
 
-If you’re looking for testing procedures related to products not listed above, review the [announcements](../fipsannouncements/). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
+If you’re looking for testing procedures related to products not listed above, review the [announcements](../sell/fipsannouncements/). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
 
 ### Product Testing
 
@@ -42,7 +42,7 @@ Product testing is performed by either:
 
 If the product passes testing and review, the vendor is granted a letter of certification, and the product is placed on the [Approved Products List (APL)](../../buy#products/). The APL includes product information, version, date of certification, and special considerations.
 
-Visit the [Sell](../) page for more on testing and certification.
+Visit the [Sell](../sell/) page for more on testing and certification.
 
 ## Testing Guidance and Documents
 

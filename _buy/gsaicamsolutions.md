@@ -1,26 +1,173 @@
 ---
 layout: page
 collection: buy
-title:  GSA ICAM Solutions Catalog
+title:  GSA ICAM Solutions and Shared Services
 permalink: buy/icamsolutions/
 sidenav: buy
 sticky_sidenav: true
 lastupdate: 05/21/2021
 
 subnav:
-  - text: ICAM Solutions Catalog
-    href: '#icam-solutions-catalog'
+  - text: GSA ICAM Solutions and Shared Services Roadmap
+    href: '#gsa-icam-solutions-and-shared-services-roadmap'
+  - text: GSA ICAM Solutions Catalog
+    href: '#gsa-icam-solutions-catalog'
   - text: GSA eBuy Ordering Instructions For Agencies
     href: '#gsa-ebuy-ordering-instructions-for-agencies'
   - text: Additional Resources
     href: '#additional-resources'
 ---
 
+This page contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+- [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
+- [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A a consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
+
+# GSA ICAM Solutions and Shared Services Roadmap
+
+[This document](../../docs/gsa-icam-roadmap.pdf){:target="_blank"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes Government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services, and developed activities to address identified gaps based on the ICAM Services Framework.
+The roadmap aligns actions to the following three phases:
+
+1. **Foundation** focuses on modifications to the existing services catalog to address critical gaps.
+2. **Federation** focuses on enhancing federation capabilities for government to government, government to constituent, and government to mission partner interactions.
+3. **Emerging Trends** focuses on recognizing and preparing for emerging trends and expanding support.
+
+The roadmap also identifies five areas that align with GSA's vision:
+
+1. **Guidance** provided to agencies for best in class ICAM implementation.
+2. **Coordination** with organizations to ensure that solutions support ICAM policy, minimize duplication of effort, and verify that agency needs are being met.
+3. **Acquisition Support** to maintain and update contract vehicles to support agency ICAM needs.
+4. **Shared Services** provided rather than each agency duplicating efforts.
+5. **Third-Party Validation** for vendors offering ICAM related services.
+
+The following table provides a summary of the roadmap activities. This roadmap is considered a living document; this first iteration is designed to gain leadership support and endorsement. Foundation activities are targeted for completion in the next one to two years. Federation activities are targeted for three to four years. Emerging trend activities are likely to require more than four years to complete, as they may depend on earlier phase activities or require further definition before they can begin.
+
+<table class="usa-table usa-table--borderless usa-table--striped">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align:center">Focus Area</th>
+      <th scope="col" style="text-align:center">FY21-23 Phase One <br><strong>Foundation</strong></th>
+      <th scope="col" style="text-align:center">FY23-25 Phase Two <br><strong>Federation</strong></th>
+      <th scope="col" style="text-align:center">FY25 & Beyond Phase Three <br><strong>Emerging Trends</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="text-align:center">Guidance</th>
+      <td> 
+        <ol> 
+          <li>Update the FICAM Architecture and FICAM Services Framework.</li> 
+          <li>Refresh the FICAM Roadmap.</li> 
+          <li>Provide guidance for agency OLT CA.</li> 
+        </ol>
+      </td>
+      <td>
+        <ol> 
+          <li>Establish a capability to create and share best practices.</li>
+          <li>Maintain the FICAM Architecture and FICAM Services Framework.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Maintain the FICAM Roadmap.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">Coordination</th>
+      <td>
+        <ol>
+          <li>Identify existing contracting vehicles.</li>
+          <li>Identify policy gaps for use of mission partner credentials.</li>
+          <li>Establish collaboration mechanisms.</li>
+          <li>Identify and resource projects for implementing the FICAM Architecture.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Address policy gaps for use of mission partner credentials.</li>
+          <li>Prioritize deliverables for the best practices group.</li>
+          <li>Maintain collaboration mechanisms.</li>
+          <li>Update this roadmap to better support agency needs.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Identify emerging technologies that impact the FICAM Services Framework.</li>
+          <li>Identify contracting vehicles, shared services, and vendor validations needed to support emerging technologies.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">Acquisition Support</th>
+      <td>
+        <ol>
+          <li>Implement FICAM Services Framework profile under ICAM SIN.</li>
+          <li>Develop playbook for contract officers and contract specialists.</li>
+          <li>Develop playbook for agency ICAM buyers.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Develop SIN for best-in-class ICAM services, ICAM tools, and ICAM SaaS cloud solutions.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Update contracting vehicles to support emerging technologies.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">Shared Service</th>
+      <td>
+        <ol>
+          <li>Modernize the FPKI trust infrastructure.</li>
+          <li>Improve USAccess.</li>
+          <li>Enhance Login.gov.</li>
+          <li>Provide publicly trusted web server certificates.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Implement service to provide suitability status.</li>
+          <li>Implement organizational signature service.</li>
+          <li>Provide support for validating mission partner credentials.</li>
+          <li>Implement an Identity Provider (Id) authentication service.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Implement cloud services to support non person entity (NPE).</li>
+          <li>Evaluate demand and feasibility for implementation of an attribute mapping service.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">Third-Party Validation</th>
+      <td>
+        <ol>
+          <li>Establish criteria for validating third party ICAM services.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Design and implement validation process for third party providers.</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Begin validating third party providers.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+# GSA ICAM Solutions Catalog
+
 On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation, therefore, new SIN designations have been included.
 
 Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework is designed to help agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
-
-# ICAM Solutions Catalog
 
 <table>
   <tr>

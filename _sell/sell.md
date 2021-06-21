@@ -9,8 +9,8 @@ sidenav: sell
 subnav:
   - text: Product Approval Process
     href: '#product-approval-process'
-  - text: Consulting Services
-    href: '#consulting-services'
+  - text: Professional Services
+    href: '#professional-services'
 ---
 
 If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the Federal Government, learn how to get your product or service tested and approved.
@@ -27,11 +27,11 @@ It only takes three steps to get a product approved for use by federal agencies:
 
 ### Step 1 – Review Testing Documents
 
-The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
+The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../../fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
 
 Review the applicable testing document(s) for the product(s) you wish to have tested. Products we test include PIV cards and Physical Access Control Systems (PACS).
 
-[Review testing documents and procedures](../fips201/)
+[Review testing documents and procedures](../../fips201/)
 
 ### Step 2 – Contact a Testing Lab
 
@@ -63,17 +63,20 @@ After testing and approval, apply to get your product or service listed on GSA�
 
 - [Sell through GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"}  – Agencies use the MAS to fulfill their technology products and services needs.
 
-## Consulting Services
+Please contact fips201ep at gsa.gov if you have product approval questions.
 
-Consulting services involve integrating solutions and/or helping agencies deploy and operate identity and credentialing systems related to PIV and CAC implementations.
+## Professional Services
 
-GSA certifies consulting services and labor categories through an acquisition schedule:
+Professional services involve integrating solutions and/or helping agencies deploy and operate identity and credentialing systems related to PIV and CAC implementations.
 
-- [IT Schedule 70, SIN 132-60F](https://www.gsaelibrary.gsa.gov/ElibMain/home.dohttp:/www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?executeQuery=YES&scheduleNumber=70&flag=&filter=&specialItemNumber=132+60F){:target="_blank"}{:rel="noopener noreferrer"}
+GSA certifies consulting services and labor categories through an acquisition schedule. The following Special Item Number (SIN) include ICAM or HSPD-12 professional services.
+
+- [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– ICAM Solutions
+- [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}- HSPD-12 Products and Service Components
 
 The Certified System Engineer ICAM PACS (CSEIP) is a certification related to PACS and integration services and is often a requirement to become an approved consultant.
 
 - [CSEIP list of certified individuals](http://www.smartcardalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}
 - [About the CSEIP certification](http://www.smartcardalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"}
 
-Thanks for your interest in providing FICAM products and services. Please contact fips201ep at gsa.gov if you have questions or need additional assistance.
+Please contact icam at gsa.gov if you have service questions.

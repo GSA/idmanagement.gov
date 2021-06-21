@@ -17,35 +17,37 @@ subnav:
 
 Find approved products and services for Federal Identity, Credential, and Access Management (FICAM) implementations, and helpful links for purchasing these items using GSA Schedules.
 
+Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap](../buy/icamsolutions/).
+
 # Products
 
-The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
+The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../../fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
 
 The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
 
 1. [PIV Cards](../approved-products-list-piv/)
 2. [Physical Access Control Systems](../approved-products-list-pacs-products/)
 
-Products and services that have lost their certification are placed on the Removed Products List (RPL). You can view both “approved” and “removed” products via the APL. [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
+Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
 
 # Services
 
-The following organizations offer Identity, Credential, and Authentication services to the Federal Government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact-us/) so we can add it to the list.
+The following organizations offer Identity, Credential, and Access Management services to the Federal Government. If your organization has a relevant Identity, Credential, or Access Management service, [contact us](../contact-us/) so we can add it to the list.
 
-### Government Identity Services
+## Government Identity Services
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [FPKI Shared Service Providers](../buy/trust-services#government-identity-and-credentials) – Digital certificates for Federal agencies.
+- [FPKI Shared Service Providers](../buy/trust-services#government-identity-services) – Digital certificates for Federal agencies.
 
-### Business Identity Services
+## Business Identity Services
 
-- [FPKI Individual Certificate Providers](../buy/trust-services#government-identity-and-credentials) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
-- [Trust Services for Businesses](../buy/trust-services#business-identity-and-credentials) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
+- [FPKI Individual Certificate Providers](../buy/trust-services#business-identity-services) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [Trust Services for Businesses](../buy/trust-services#trust-and-auditing-of-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
-### FedRAMP
+## FedRAMP
 
-- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal enterprise and citizen identity products and services.
+- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal workforce and citizen identity products.
 
 # GSA Multiple Award Schedule
 

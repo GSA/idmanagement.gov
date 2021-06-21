@@ -27,10 +27,9 @@ These playbooks are hosted on Github, and provide common policy and patterns to 
 
 [View FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}
 
-
 # Announcements
 
-- [FIPS 201 Evaluation Program Announcements](../fips201/)
+- [FIPS 201 Evaluation Program Announcements](../../sell/fipsannouncements/)
 - [FPKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
 - [FPKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   
@@ -44,4 +43,4 @@ These playbooks are hosted on Github, and provide common policy and patterns to 
 # Related Information
 
 - [National Cybersecurity Center of Excellence (NCCoE)](https://nccoe.nist.gov/){:target="_blank"}{:rel="noopener noreferrer"} – Works with experts from industry, government, and academia to address businesses’ most pressing cybersecurity problems with practical, standards-based solutions using commercially available technologies.
-- [Trusted Identities Group (TIG)](https://www.nist.gov/itl/tig/about){:target="_blank"}{:rel="noopener noreferrer"} – Founded in 2015 as part of NIST’s Applied Cybersecurity Division, the TIG is committed to advancing measurement science, technology, and the adoption of standards to improve digital identity for individuals and organizations.
+- [NIST Identity & Access Management](https://www.nist.gov/identity-access-management){:target="_blank"}{:rel="noopener noreferrer"} – Through the NIST Identity and Access Management Resource Center, we seek to share our efforts that strengthen the security, privacy, usability and interoperability of solutions that meet an organization’s identity and access management needs throughout the system lifecycle.

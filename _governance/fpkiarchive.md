@@ -23,8 +23,8 @@ This pages contains three years of FPKI documents including:
 
 If you seek a document that is older than three years or not listed here, please contact fpki at gsa.gov
 
-<table class="usa-table--borderless docs-table">
-  <thead class="usa-sr">
+<table class="usa-table usa-table--borderless usa-table--striped">
+  <thead>
     <tr>
       <th id="docs-table-heading-name" scope="col">Document Name</th>
       <th id="docs-table-heading-date" scope="col">Date</th>

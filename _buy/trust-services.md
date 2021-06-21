@@ -42,13 +42,7 @@ We’ve categorized the service providers given below by type of identity and cr
 
 These organizations operate as FPKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA dot Gov.
 
-All of the Certification Authorities operated by these FPKI SSPs issue certificates for:
-
-- Person identity, including for PIV credentials
-
-A subset of the FPKI SSPs also issue and manage:
-
-- Government enterprise device certificates
+All of the Certification Authorities operated by these FPKI SSPs issue certificates for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
 
 Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
@@ -90,17 +84,14 @@ The Trust Frameworks do not manage identities or credentials for their community
 
 Services operating within these Trust Frameworks may be used by U.S. Government applications if the service and the demographics are appropriate for the mission. Risk assessments have been performed for the U.S. Government applications based on security requirements, the Risk Management Framework, and NIST SP 800-63. If the non-government service is acceptable for the mission purpose and has the same risk rating, it may be used.
 
-Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
+Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, 
 
-- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../docs/fpki-test-req-guide.pdf){:target="_blank"} (PDF, December 2017).
-
-Then, fill out the application contained in this document:
-
-- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdf){:target="_blank"} (PDF, May 2017).
+1. Please review the Federal Government’s [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../docs/fpki-test-req-guide.pdf){:target="_blank"} (PDF, December 2017).
+2. Then, fill out the application contained in [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdf){:target="_blank"} (PDF, May 2017).
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
-| [CertiPath](https://www.certipath.com/FederatedTrust_TrustCommunity.html){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
-| [SAFE-BioPharma](https://www.safe-biopharma.org/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support at safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
+| [CertiPath](https://certipath.com/services/federated-trust/){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
+| [SAFE Identity](https://makeidentitysafe.com/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support at safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
 | [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 |	PKI Bridge | State and Local |
 | [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | PKI Bridge | Aerospace and Defense<br/>International |
