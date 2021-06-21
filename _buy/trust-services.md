@@ -100,7 +100,7 @@ Then, fill out the application contained in this document:
 
 | Trust Framework | Customer Service | Tech Support | Type | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
-| [CertiPath](https://www.certipath.com/FederatedTrust_TrustCommunity.html){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
-| [SAFE-BioPharma](https://www.safe-biopharma.org/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support at safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
+| [CertiPath](https://certipath.com/services/federated-trust/){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
+| [SAFE Identity](https://makeidentitysafe.com/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support at safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
 | [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 |	PKI Bridge | State and Local |
 | [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | PKI Bridge | Aerospace and Defense<br/>International |

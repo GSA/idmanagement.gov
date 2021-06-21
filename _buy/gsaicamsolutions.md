@@ -20,26 +20,26 @@ subnav:
 
 # ICAM Solutions and Shared Services Roadmap
 
-[This document](../../docs/gsa-icam-roadmap){:target="_blank"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes Government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services, and developed activities to address identified gaps based on the ICAM Services Framework.
+[This document](../../docs/gsa-icam-roadmap.pdf){:target="_blank"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes Government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services, and developed activities to address identified gaps based on the ICAM Services Framework.
 The roadmap aligns actions to the following three phases:
 
-- Foundation focuses on modifications to the existing services catalog to address critical gaps.
-- Federation focuses on enhancing federation capabilities for government to government, government to constituent, and government to mission partner interactions.
-- Emerging Trends focuses on recognizing and preparing for emerging trends and expanding support.
-- 
+- **Foundation** focuses on modifications to the existing services catalog to address critical gaps.
+- **Federation** focuses on enhancing federation capabilities for government to government, government to constituent, and government to mission partner interactions.
+- **Emerging Trends** focuses on recognizing and preparing for emerging trends and expanding support.
+
 The roadmap also identifies five areas that align with GSA's vision:
 
-- Guidance provided to agencies for best in class ICAM implementation.
-- Coordination with organizations to ensure that solutions support ICAM policy, minimize duplication of effort, and verify that agency needs are being met.
-- Acquisition Support to maintain and update contract vehicles to support agency ICAM needs.
-- Shared Services provided rather than each agency duplicating efforts.
-- Third-Party validation for vendors offering ICAM related services.
+- **Guidance** provided to agencies for best in class ICAM implementation.
+- **Coordination** with organizations to ensure that solutions support ICAM policy, minimize duplication of effort, and verify that agency needs are being met.
+- **Acquisition Support** to maintain and update contract vehicles to support agency ICAM needs.
+- **Shared Services** provided rather than each agency duplicating efforts.
+- **Third-Party Validation** for vendors offering ICAM related services.
 
 The following table provides a summary of the roadmap activities. This roadmap is considered a living document; this first iteration is designed to gain leadership support and endorsement. Foundation activities are targeted for completion in the next one to two years. Federation activities are targeted for three to four years. Emerging trend activities are likely to require more than four years to complete, as they may depend on earlier phase activities or require further definition before they can begin.
 
 | Focus Area | FY21-23 Phase One Foundation | FY23-25 Phase Two Federation | FY25 & Beyond Phase Three Emerging Trends |
 | :----: | ------- | ------ | ------- |
-| Guidance | <ul><li>Update the FICAM Architecture and FICAM Services Framework</li><li>Refresh the FICAM Roadmap</li><li>Provide guidance for agency OLT CA</li></ul> | <ul><li>Establish a capability to create and share best practices</li></ul> | <ul><li>Maintain the FICAM Architecture and FICAM Services Framework</li><li>Maintain the FICAM Roadmap</li></ul> |
+| Guidance | <li>Update the FICAM Architecture and FICAM Services Framework</li><li>Refresh the FICAM Roadmap</li><li>Provide guidance for agency OLT CA</li> | <li>Establish a capability to create and share best practices</li> | <li>Maintain the FICAM Architecture and FICAM Services Framework</li><li>Maintain the FICAM Roadmap</li> |
 | Coordination | <ul><li>Identify existing contracting vehicles</li><li>Identify policy gaps for use of mission partner credentials</li><li>Establish collaboration mechanisms</li><li>Identify and resource projects for implementing the FICAM Architecture</li></ul> | <ul><li>Address policy gaps for use of mission partner credentials</li><li>Prioritize deliverables for the best practices group</li><li>Maintain collaboration mechanisms</li><li>Update this roadmap to better support agency needs</li></ul> | <ul><li>Identify emerging technologies that impact the FICAM Services Framework</li><li>Identify contracting vehicles, shared services, and vendor validations needed to support emerging technologies</li></ul> |
 | Acquisition Support | <ul><li>mplement FICAM Services Framework profile under ICAM SIN</li><li>Develop playbook for contract officers and contract specialists</li><li>Develop playbook for agency ICAM buyers</li></ul> | <ul><li>Develop SIN for best-in-class ICAM services, ICAM tools, and ICAM SaaS cloud solutions</li></ul> | <ul><li>Update contracting vehicles to support emerging technologies</li></ul> |
 | Shared Service | <ul><li>Modernize the FPKI trust infrastructure</li><li>Improve USAccess</li><li>Enhance Login.gov</li><li>Provide publicly trusted web server certificates</li></ul> | <ul><li>Implement service to provide suitability status</li><li>Implement organizational signature service</li><li>Provide support for validating mission partner credentials</li><li>Implement an Identity Provider (Id) authentication service</li></ul> | <li>Implement cloud services to support non person entity (NPE)</li><li>Evaluate demand and feasibility for implementation of an attribute mapping service </li></ul> |

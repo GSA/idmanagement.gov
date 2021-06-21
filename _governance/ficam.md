@@ -46,7 +46,7 @@ To join, email ICAM at gsa.gov with “Request access to ICAMSC collaboration si
 
 # ICAMSC Working Groups
 
-The ICAMSC charters one, ongoing working group and potentially other short-term working groups and tiger teams. Send an email to ICAM at GSA.gov for more information and to join a working group.
+The ICAMSC charters one, ongoing working group and potentially other short-term working groups and tiger teams. Send an email to icam at gsa.gov for more information and join a working group.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
