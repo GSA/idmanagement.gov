@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: buy
-title:  GSA ICAM Solutions and Shared Services
+title:  ICAM Solutions and Shared Services
 permalink: buy/icamsolutions/
 sidenav: buy
 sticky_sidenav: true
@@ -17,6 +17,10 @@ subnav:
   - text: Additional Resources
     href: '#additional-resources'
 ---
+
+This page contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+- [GSA Solutions and Shared Services Roadmap](#icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
+- [GSA Solutions Catalog](#icam-solutions-catalog) - A a consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
 
 # ICAM Solutions and Shared Services Roadmap
 

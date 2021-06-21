@@ -67,7 +67,7 @@ If your agency needs to purchase cardstock from this legacy list, you must submi
 - A transition plan specifying major milestones to achieve full compliance by the 2024 deadline; and
 - Implications resulting from non-compliance with federal policy related to this purchase.
 
-Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory) (regardless of the acquisition vehicle used). If using [GSA Schedules](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules) as the acquisition vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
+Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory){:target="_blank"}{:rel="noopener noreferrer"}. (regardless of the acquisition vehicle used). If using [GSA Multiple Award Schedule](../../buy#gsa-multiple-award-schedule) as the acquisition vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
 
 Note that GSA will provide the Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB) with copies of all memos submitted.
 

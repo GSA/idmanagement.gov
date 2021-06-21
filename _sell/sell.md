@@ -9,8 +9,8 @@ sidenav: sell
 subnav:
   - text: Product Approval Process
     href: '#product-approval-process'
-  - text: Consulting Services
-    href: '#consulting-services'
+  - text: Professional Services
+    href: '#professional-services'
 ---
 
 If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the Federal Government, learn how to get your product or service tested and approved.
@@ -63,6 +63,8 @@ After testing and approval, apply to get your product or service listed on GSAâ€
 
 - [Sell through GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"}  â€“ Agencies use the MAS to fulfill their technology products and services needs.
 
+Please contact fips201ep at gsa.gov if you have product approval questions.
+
 ## Professional Services
 
 Professional services involve integrating solutions and/or helping agencies deploy and operate identity and credentialing systems related to PIV and CAC implementations.
@@ -77,4 +79,4 @@ The Certified System Engineer ICAM PACS (CSEIP) is a certification related to PA
 - [CSEIP list of certified individuals](http://www.smartcardalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}
 - [About the CSEIP certification](http://www.smartcardalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"}
 
-Thanks for your interest in providing FICAM products and services. Please contact fips201ep at gsa.gov if you have questions or need additional assistance.
+Please contact icam at gsa.gov if you have service questions.
