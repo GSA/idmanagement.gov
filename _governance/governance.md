@@ -30,7 +30,7 @@ These playbooks are hosted on Github, and provide common policy and patterns to 
 
 # Announcements
 
-- [FIPS 201 Evaluation Program Announcements](../fips201/)
+- [FIPS 201 Evaluation Program Announcements](../../sell/fipsannouncements/)
 - [FPKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
 - [FPKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   

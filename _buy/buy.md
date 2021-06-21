@@ -30,7 +30,7 @@ Products and services that have lost their certification are placed on the Remov
 
 # Services
 
-The following organizations offer Identity, Credential, and Authentication services to the Federal Government. If your organization has a relevant Identity, Credential, or Authentication service, [contact us](../contact-us/) so we can add it to the list.
+The following organizations offer Identity, Credential, and Access Management services to the Federal Government. If your organization has a relevant Identity, Credential, or Access Management service, [contact us](../contact-us/) so we can add it to the list.
 
 ### Government Identity Services
 
@@ -45,7 +45,7 @@ The following organizations offer Identity, Credential, and Authentication servi
 
 ### FedRAMP
 
-- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal enterprise and citizen identity products and services.
+- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal workforce and citizen identity products.
 
 # GSA Multiple Award Schedule
 

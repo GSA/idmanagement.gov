@@ -1,13 +1,15 @@
 ---
 layout: page
 collection: buy
-title:  GSA ICAM Solutions Catalog
+title:  GSA ICAM Solutions and Shared Services
 permalink: buy/icamsolutions/
 sidenav: buy
 sticky_sidenav: true
 lastupdate: 05/21/2021
 
 subnav:
+  - text: ICAM Solutions and Shared Services Roadmap
+    href: '#icam-solutions-and-shared-services-roadmap'
   - text: ICAM Solutions Catalog
     href: '#icam-solutions-catalog'
   - text: GSA eBuy Ordering Instructions For Agencies
@@ -16,11 +18,32 @@ subnav:
     href: '#additional-resources'
 ---
 
+# ICAM Solutions and Shared Services Roadmap
+
+[This document](../../docs/gsa-icam-roadmap){:target="_blank"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes Government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services, and developed activities to address identified gaps based on the ICAM Services Framework.
+The roadmap aligns actions to the following three phases:
+
+- Foundation focuses on modifications to the existing services catalog to address critical gaps.
+- Federation focuses on enhancing federation capabilities for government to government, government to constituent, and government to mission partner interactions.
+- Emerging Trends focuses on recognizing and preparing for emerging trends and expanding support.
+- 
+The roadmap also identifies five areas that align with GSA's vision:
+
+- Guidance provided to agencies for best in class ICAM implementation.
+- Coordination with organizations to ensure that solutions support ICAM policy, minimize duplication of effort, and verify that agency needs are being met.
+- Acquisition Support to maintain and update contract vehicles to support agency ICAM needs.
+- Shared Services provided rather than each agency duplicating efforts.
+- Third-Party validation for vendors offering ICAM related services.
+
+The following table provides a summary of the roadmap activities. This roadmap is considered a living document; this first iteration is designed to gain leadership support and endorsement. Foundation activities are targeted for completion in the next one to two years. Federation activities are targeted for three to four years. Emerging trend activities are likely to require more than four years to complete, as they may depend on earlier phase activities or require further definition before they can begin.
+
+
+
+# ICAM Solutions Catalog
+
 On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation, therefore, new SIN designations have been included.
 
 Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework is designed to help agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
-
-# ICAM Solutions Catalog
 
 <table>
   <tr>

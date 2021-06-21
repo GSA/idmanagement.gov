@@ -19,7 +19,7 @@ subnav:
 
 This is a list of the latest news out of the FIPS 201 Evaluation Program.
 
-## PACS FRTC v1.4.2 Update Released
+# PACS FRTC v1.4.2 Update Released
 
 POSTED: March 31, 2021
 
@@ -29,11 +29,11 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 - On-Card Comparison (OCC)
 - Backend Registration for PACS
 
-Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201/).
+Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../../fips201/).
 
 [Return to Top](#top)
 
-## Category Removed from the APL December 2020
+# Category Removed from the APL December 2020
 
 POSTED December 11, 2020
 
@@ -43,7 +43,7 @@ Please note the removal of this category should not impact any existing acquisit
 
 [Return to Top](#top)
 
-## Category Removed from the APL April 2019
+# Category Removed from the APL April 2019
 
 POSTED April 30, 2019
 
