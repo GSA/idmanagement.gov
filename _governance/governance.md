@@ -27,7 +27,6 @@ These playbooks are hosted on Github, and provide common policy and patterns to 
 
 [View FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}
 
-
 # Announcements
 
 - [FIPS 201 Evaluation Program Announcements](../../sell/fipsannouncements/)
