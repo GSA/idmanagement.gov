@@ -1,17 +1,17 @@
 ---
 layout: page
 collection: buy
-title:  ICAM Solutions and Shared Services
+title:  GSA ICAM Solutions and Shared Services
 permalink: buy/icamsolutions/
 sidenav: buy
 sticky_sidenav: true
 lastupdate: 05/21/2021
 
 subnav:
-  - text: ICAM Solutions and Shared Services Roadmap
-    href: '#icam-solutions-and-shared-services-roadmap'
-  - text: ICAM Solutions Catalog
-    href: '#icam-solutions-catalog'
+  - text: GSA ICAM Solutions and Shared Services Roadmap
+    href: '#gsa-icam-solutions-and-shared-services-roadmap'
+  - text: GSA ICAM Solutions Catalog
+    href: '#gsa-icam-solutions-catalog'
   - text: GSA eBuy Ordering Instructions For Agencies
     href: '#gsa-ebuy-ordering-instructions-for-agencies'
   - text: Additional Resources
@@ -19,10 +19,10 @@ subnav:
 ---
 
 This page contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
-- [GSA Solutions and Shared Services Roadmap](#icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
-- [GSA Solutions Catalog](#icam-solutions-catalog) - A a consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
+- [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
+- [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A a consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
 
-# ICAM Solutions and Shared Services Roadmap
+# GSA ICAM Solutions and Shared Services Roadmap
 
 [This document](../../docs/gsa-icam-roadmap.pdf){:target="_blank"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes Government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services, and developed activities to address identified gaps based on the ICAM Services Framework.
 The roadmap aligns actions to the following three phases:
@@ -43,7 +43,7 @@ The following table provides a summary of the roadmap activities. This roadmap i
 
 | Focus Area | FY21-23 Phase One Foundation | FY23-25 Phase Two Federation | FY25 & Beyond Phase Three Emerging Trends |
 | :----: | ------- | ------ | ------- |
-| Guidance | <ol type="1"><li>Update the FICAM Architecture and FICAM Services Framework</li><li>Refresh the FICAM Roadmap</li><li>Provide guidance for agency OLT CA</li></ol> | <ul><li>Establish a capability to create and share best practices</li></ul> | <ul><li>Maintain the FICAM Architecture and FICAM Services Framework</li><li>Maintain the FICAM Roadmap</li></ul> |
+| Guidance |<li>Update the FICAM Architecture and FICAM Services Framework</li><li>Refresh the FICAM Roadmap</li><li>Provide guidance for agency OLT CA</li>|<li>Establish a capability to create and share best practices</li> | <li>Maintain the FICAM Architecture and FICAM Services Framework</li><li>Maintain the FICAM Roadmap</li>|
 | Coordination | <ul><li>Identify existing contracting vehicles</li><li>Identify policy gaps for use of mission partner credentials</li><li>Establish collaboration mechanisms</li><li>Identify and resource projects for implementing the FICAM Architecture</li></ul> | <ul><li>Address policy gaps for use of mission partner credentials</li><li>Prioritize deliverables for the best practices group</li><li>Maintain collaboration mechanisms</li><li>Update this roadmap to better support agency needs</li></ul> | <ul><li>Identify emerging technologies that impact the FICAM Services Framework</li><li>Identify contracting vehicles, shared services, and vendor validations needed to support emerging technologies</li></ul> |
 | Acquisition Support | <ul><li>mplement FICAM Services Framework profile under ICAM SIN</li><li>Develop playbook for contract officers and contract specialists</li><li>Develop playbook for agency ICAM buyers</li></ul> | <ul><li>Develop SIN for best-in-class ICAM services, ICAM tools, and ICAM SaaS cloud solutions</li></ul> | <ul><li>Update contracting vehicles to support emerging technologies</li></ul> |
 | Shared Service | <ul><li>Modernize the FPKI trust infrastructure</li><li>Improve USAccess</li><li>Enhance Login.gov</li><li>Provide publicly trusted web server certificates</li></ul> | <ul><li>Implement service to provide suitability status</li><li>Implement organizational signature service</li><li>Provide support for validating mission partner credentials</li><li>Implement an Identity Provider (Id) authentication service</li></ul> | <li>Implement cloud services to support non person entity (NPE)</li><li>Evaluate demand and feasibility for implementation of an attribute mapping service </li></ul> |
@@ -51,7 +51,7 @@ The following table provides a summary of the roadmap activities. This roadmap i
 
 
 
-# ICAM Solutions Catalog
+# GSA ICAM Solutions Catalog
 
 On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation, therefore, new SIN designations have been included.
 
