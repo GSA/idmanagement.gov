@@ -17,7 +17,7 @@ subnav:
   - text: Edit a Page
     href: '#edit-a-page'
   - text: Submit an Issue Here
-    href: 'https://github.com/GSA/ficam-playbooks/issues'
+    href: 'https://github.com/GSA/idmanagement.gov/issues'
 ---
 
 Thank you for contributing to our development of an open and transparent Federal Identity, Credential, and Access Management (FICAM) website. Everyone has tips and tricks and we want to share these with our colleagues!
@@ -32,7 +32,7 @@ Using GitHub as a first-time user can be overwhelming. An introduction video is 
 
 ### About This Repository
 
-In the [GitHub repository](https://github.com/GSA/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"}, on the **Code** tab, you can view the content and diagrams on this website:
+In the [GitHub repository](https://github.com/GSA/idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}, on the **Code** tab, you can view the content and diagrams on this website:
 
 - **/_arch** - includes page source files for the FICAM Architecture.
 - **/_ficampm** - includes page source files for the FICAM Program Management Playbook.
@@ -95,7 +95,7 @@ To add a page and open a pull request, you must first [create a GitHub account](
 
 First you must **create a page**.
 
-1. (Optional) If you want to begin with a template page, navigate to the [Page Template](https://github.com/GSA/ficam-playbooks/blob/staging/page-template.md){:target="_blank"}{:rel="noopener noreferrer"}.
+1. (Optional) If you want to begin with a template page, navigate to the [Page Template](https://github.com/GSA/idmanagement.gov/blob/staging/page-template.md){:target="_blank"}{:rel="noopener noreferrer"}.
 
 	The template file includes some instructions for how to organize a page.
 

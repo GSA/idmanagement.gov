@@ -7,8 +7,8 @@ sticky_sidenav: true
 ---
 
 Use the following emails for specific program questions or comments:
-- Identity, Credential, and Access Management policies or programs - icam @ gsa.gov
-- FIPS 201 Product Testing or Approved Products - fips201ep at gsa.gov
+- ICAM or HSPD-12 policies or programs - icam at gsa.gov
+- FIPS 201 product testing or approved products - fips201ep at gsa.gov
 - Federal PKI policies, programs, or operations- fpki at gsa.gov
 
 ## Have a Question or Comment?

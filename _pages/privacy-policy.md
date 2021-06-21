@@ -20,13 +20,13 @@ This website automatically collects some basic system information to help us mea
 
 When you visit IDManagement.gov, we may store some or all of the following:
 
-Internet protocol (IP) address from which you accessed the site;
-Date and time of your visit;
-Name of the file or words you searched;
-Items clicked on a page;
-Browser and operating system used; and
-Name of the website from which you linked to IDmanagement.gov
-We do not use this information to associate search terms or patterns of site navigation with individual users. We do not share or sell visitor data for the purposes of advertising, marketing, or any other commercial purpose.
+- Internet protocol (IP) address from which you accessed the site;
+- Date and time of your visit;
+- Name of the file or words you searched;
+- Items clicked on a page;
+- Browser and operating system used; and
+- Name of the website from which you linked to IDmanagement.gov
+- We do not use this information to associate search terms or patterns of site navigation with individual users. We do not share or sell visitor data for the purposes of advertising, marketing, or any other commercial purpose.
 
 ## Information You Send Us
 
@@ -38,9 +38,9 @@ Like many websites, IDManagement.gov uses “persistent cookie” technology. A 
 
 We use persistent cookies in two ways, both of which enhance your experience on IDManagement.gov while also protecting your privacy:
 
-To remember you when your browser comes back to the site, so we don’t invite you to take our customer satisfaction survey every time you visit.
-To get aggregate metrics on site usage to understand how people are using the site and how we can make it better. Government agencies only ever receive traffic statistics anonymously and in the aggregate.
-Most Internet browsers automatically accept persistent cookies. Although using persistent cookies creates a much better experience for you, this site will also work without them. If you don’t want to accept cookies, you can edit your browser’s options to stop accepting persistent cookies or to prompt you before accepting a cookie from the websites you visit. [Here’s how you can disable cookies.](https://www.usa.gov/optout-instructions){:target="_blank"}{:rel="noopener noreferrer"}
+- To remember you when your browser comes back to the site, so we don’t invite you to take our customer satisfaction survey every time you visit.
+- To get aggregate metrics on site usage to understand how people are using the site and how we can make it better. Government agencies only ever receive traffic statistics anonymously and in the aggregate.
+- Most Internet browsers automatically accept persistent cookies. Although using persistent cookies creates a much better experience for you, this site will also work without them. If you don’t want to accept cookies, you can edit your browser’s options to stop accepting persistent cookies or to prompt you before accepting a cookie from the websites you visit. [Here’s how you can disable cookies.](https://www.usa.gov/optout-instructions){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Site Security
 

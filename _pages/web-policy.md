@@ -66,13 +66,15 @@ This website may link to non-government websites, if they provide relevant infor
 
 The IDManagement.gov website includes hypertext links, or pointers to information created and maintained by other public and/or private organizations. We provide these links and pointers only for your information and convenience. When you select a link to an outside website, you are leaving the IDManagement.gov site and are subject to the privacy and security policies of the owners/sponsors of the outside website.
 
-GSA and IDManagement.gov do not control or guarantee the accuracy, relevance, timeliness, or completeness of information contained on a linked website.
-We do not endorse the organizations sponsoring linked websites and we do not endorse the views they express or the products/services they offer.
-The content of external, non-federal websites is not subject to federal information quality, privacy, security, and related guidelines.
-We cannot authorize the use of copyrighted materials contained in linked websites. Users must request such authorization from the sponsor of the linked website.
-We are not responsible for transmissions users receive from linked websites.
-We do not guarantee that outside websites comply with Section 508 of the Rehabilitation Act (accessibility requirements).
-Prohibitions
+- GSA and IDManagement.gov do not control or guarantee the accuracy, relevance, timeliness, or completeness of information contained on a linked website.
+- We do not endorse the organizations sponsoring linked websites and we do not endorse the views they express or the products/services they offer.
+- The content of external, non-federal websites is not subject to federal information quality, privacy, security, and related guidelines.
+- We cannot authorize the use of copyrighted materials contained in linked websites. Users must request such authorization from the sponsor of the linked website.
+- We are not responsible for transmissions users receive from linked websites.
+- We do not guarantee that outside websites comply with Section 508 of the Rehabilitation Act (accessibility requirements).
+
+### Prohibitions
+
 GSA will not link to any website that exhibits hate, bias, or discrimination. Furthermore, we reserve the right to deny or remove any link that contains misleading information or unsubstantiated claims, or is determined to be in conflict with GSA’s mission or policies.
 
 ### Required Links
