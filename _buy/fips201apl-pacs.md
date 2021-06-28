@@ -72,7 +72,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 <table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
-      <th id="pacs-table-heading-infra" scope="col">PACS infrastructure Validation System</th>
+      <th id="pacs-table-heading-infra" scope="col">PACS Infrastructure and Validation System</th>
       <th id="pacs-table-heading-infraapl" scope="col"> APL # </th>
     </tr>
   </thead>
