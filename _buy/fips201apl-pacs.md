@@ -46,7 +46,6 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 <table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
-      <th id="pacs-table-heading-fipsstatus" scope="col">Use with FIPS 201-2 Credential Status</th>
       <th id="pacs-table-heading-infra" scope="col">If you have this PACS Infrastructure...</th>
       <th id="pacs-table-heading-validation" scope="col">with this PACS Validation System...</th>
       <th id="pacs-table-heading-cardreader" scope="col">You can use these card readers.</th>
