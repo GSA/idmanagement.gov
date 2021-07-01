@@ -35,6 +35,21 @@
   reader9: pivCLASS R40 Contactless Reader
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
+  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
+  reader10url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader10apl: 10031
+  reader11: Veridt Stealth Contactless Keypad Reader
+  reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader11apl: 10034
+  reader12: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader12url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader12apl: 10032
+  reader13: 	Veridt Stealth Lite Contactless Reader
+  reader13url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader13apl: 10035
+  reader14: Veridt Stealth Lite Dual Contact/Contactless Reader
+  reader14url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader14apl: 10033
  
 - category: 13.01
   fipsstatus: Under Review
