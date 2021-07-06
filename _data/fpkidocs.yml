@@ -552,3 +552,10 @@
   date: 12/02/2013
   url: /docs/archived/fpki-x509-cert-policy-fbca-227.pdf
   status: archive
+
+- category: FPKI Trust Infrastructure Certificate Practice Statement
+  numberProposal: 5.1
+  name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v5.1
+  date: 05/01/2020
+  url: /docs/archived/fpki-fpkima-cps-v51.pdf
+  status: post
