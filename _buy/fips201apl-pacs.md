@@ -89,19 +89,19 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 # PACS Readers
 **NOTE**  Readers are approved as part of a solution.  The list below represnets the readers taht have been tested as part of a solution.  Each approval letter shows the approved reader types, associated APL#, and PACS solution.
 - Allegion Readers
-    - Allegion Schlage Smart Card Readers 
+    - [Allegion Schlage Smart Card Readers](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10128-29-allegion.pdf) 
 - Gallagher Readers
-    - T Series PIV Readers
+    - [T Series PIV Readers](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf)
 - HID Readers
-    - pivCLASS Series
+    - [pivCLASS Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf)
 - Identiv Readers
-    - Identiv uTrust Series
+    - [Identiv uTrust Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10104-5-6-7-19-identiv.pdf)
 -  Innometriks
-    - Cheetah Series 
+    - [Cheetah Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10109-130-cheetah.pdf) 
 - Veridt Readers
-    - Veridt Series
+    - [Veridt Series] (https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf)
 - XTec Readers
-    - X Series
+    - [X Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10077-82-xtec.pdf)
 
 
 # PACS Solutions Awaiting Approval
