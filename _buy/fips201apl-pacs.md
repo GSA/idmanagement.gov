@@ -86,6 +86,24 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   </tbody>
 </table>
 
+# PACS Readers
+**NOTE**  Readers are approved as part of a solution.  The list below represnets the readers taht have been tested as part of a solution.  Each approval letter shows the approved reader types, associated APL#, and PACS solution.
+- Allegion Readers
+    - Allegion Schlage Smart Card Readers 
+- Gallagher Readers
+    - T Series PIV Readers
+- HID Readers
+    - pivCLASS Series
+- Identiv Readers
+    - Identiv uTrust Series
+-  Innometriks
+    - Cheetah Series 
+- Veridt Readers
+    - Veridt Series
+- XTec Readers
+    - X Series
+
+
 # PACS Solutions Awaiting Approval
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
