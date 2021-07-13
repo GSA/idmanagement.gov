@@ -111,8 +111,8 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 | 1	| Gallagher 13.01 and 13.02 | 10019 & 10020, 10114 | Update | In test |
 | 2	| LenelS2 + HID 13.01 | 10112 & 10113 | Update | In test |
 | 3	| XTec AuthentX ePACS PVI + XTec PR 13.02 | 10077 | Update | In test |
-| 4	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In Test |
-| 5 | Identiv Velocity 13.01 and 13.02	| 10013 & 10014, 10103 | Update | In queue |
+| 4 | Identiv Velocity 13.01 and 13.02	| 10013 & 10014, 10103 | Update | In queue |
+| 5	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In Test |
 | 6	| Genetec + HID	13.01 | 10061 & 10062 | Update | In queue |
 | 7	| Kastle + HID	13.02 | 10116 | Update | In queue |
 | 8 | Honeywell + HID 13.01	| 10063 & 10064 | Update | In queue |
