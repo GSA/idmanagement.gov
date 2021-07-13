@@ -99,7 +99,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 -  Innometriks
     - [Cheetah Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10109-130-cheetah.pdf) 
 - Veridt Readers
-    - [Veridt Series] (https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf)
+    - [Veridt Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf)
 - XTec Readers
     - [X Series](https://github.com/GSA/idmanagement.gov/blob/Reader_list_addition/docs/apl-10077-82-xtec.pdf)
 
