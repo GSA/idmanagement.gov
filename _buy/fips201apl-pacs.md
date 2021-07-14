@@ -13,6 +13,8 @@ subnav:
       href: '#approved-1301-topology-pacs-products'
     - text: Approved PACS - 13.02
       href: '#approved-1302-topology-pacs-products'
+    - text: PACS Readers
+      href: '#pacs-readers'      
     - text: PACS Solutions Awaiting Approval
       href: '#pacs-solutions-awaiting-approval'
 
@@ -86,6 +88,17 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   </tbody>
 </table>
 
+# PACS Readers
+**NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
+- [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"} 
+- [Gallagher T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}
+- [HID pivCLASS Series](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}
+- [Identiv uTrust Series](../docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}
+- [Innometriks Cheetah Series](../docs/apl-10109-130-cheetah.pdf){:target="_blank"}
+- [Veridt Series](../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}
+- [XTec X Series](../docs/apl-10077-82-xtec.pdf){:target="_blank"}
+
+
 # PACS Solutions Awaiting Approval
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
@@ -93,8 +106,8 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 | 1	| Gallagher 13.01 and 13.02 | 10019 & 10020, 10114 | Update | In test |
 | 2	| LenelS2 + HID 13.01 | 10112 & 10113 | Update | In test |
 | 3	| XTec AuthentX ePACS PVI + XTec PR 13.02 | 10077 | Update | In test |
-| 4	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In Test |
-| 5 | Identiv Velocity 13.01 and 13.02	| 10013 & 10014, 10103 | Update | In queue |
+| 4 | Identiv Velocity 13.01 and 13.02	| 10013 & 10014, 10103 | Update | In queue |
+| 5	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In Test |
 | 6	| Genetec + HID	13.01 | 10061 & 10062 | Update | In queue |
 | 7	| Kastle + HID	13.02 | 10116 | Update | In queue |
 | 8 | Honeywell + HID 13.01	| 10063 & 10064 | Update | In queue |
