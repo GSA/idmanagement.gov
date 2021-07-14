@@ -12,7 +12,7 @@ title: IDManagement.gov
 email: icam@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Modernizing and operationalizing Federal Enterprise Identities.
-baseurl: "https://www.idmanagement.gov"
+baseurl: ""
 repourl: "https://github.com/GSA/idmanagement.gov"
 
 #for site map search
@@ -45,12 +45,12 @@ primary_navigation:
     description: IDmanagement.gov
     url: /
   - name: About Us
-    url: /about/
+    url: /about-us/
   - name: Partners
     children:
       - name: Vendors
         url: /sell/
-      - name: Procurement Professionals
+      - name: Acquisition Professionals
         url: /buy/
       - name: Program Managers
         url: /governance/
@@ -59,7 +59,7 @@ primary_navigation:
 
 secondary_navigation:
   - name: Contact Us
-    url: /contact/
+    url: /contact-us/
   - name: Contribute
     url: /contribute/
 

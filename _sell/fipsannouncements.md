@@ -7,19 +7,20 @@ sidenav: sell
 sticky_sidenav: true
 
 subnav:
-  - text: PACS FRTC v1.4.2 Update Released
-    href: '#pacs-frtc-v.1.4.2-update-released'
-  - text: Category Removed from the APL December 2020
+  - text: Mar 2021 - PACS FRTC v1.4.2 Update Released
+    href: '#pacs-frtc-v142-update-released'
+  - text: Dec 2020 - Category Removed from the APL December 2020
     href: '#category-removed-from-the-apl-december-2020'
-  - text: Category Removed from the APL April 2019
+  - text: Apr 2019 - Category Removed from the APL April 2019
     href: '#category-removed-from-the-apl-april-2019'
   - text: Announcements Older Than Three Years
     href: '#announcements-older-than-three-years'
+
 ---
 
 This is a list of the latest news out of the FIPS 201 Evaluation Program.
 
-## PACS FRTC v1.4.2 Update Released
+# PACS FRTC v1.4.2 Update Released
 
 POSTED: March 31, 2021
 
@@ -29,30 +30,30 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 - On-Card Comparison (OCC)
 - Backend Registration for PACS
 
-Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../fips201/).
+Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../../fips201/).
 
 [Return to Top](#top)
 
-## Category Removed from the APL December 2020
+# Category Removed from the APL December 2020
 
 POSTED December 11, 2020
 
 The FIPS 201 Evaluation program will be removing card holders (also known as badge holders or electromagnetically opaque sleeves) from the Approved Products List on January 31st, 2021. GSA will no longer accept applications to certify card holders. Card holders and related products are still commercially available off-the-shelf; however, the use of these products is optional and testing is no longer in the best interests of the government.
 
-Please note the removal of this category should not impact any existing procurements. Product categories not identified by the Program have no requirement for FIPS 201 conformance and available products should be able to satisfy the agency defined security requirements provided direct testing.
+Please note the removal of this category should not impact any existing acquisitions. Product categories not identified by the Program have no requirement for FIPS 201 conformance and available products should be able to satisfy the agency defined security requirements provided direct testing.
 
 [Return to Top](#top)
 
-## Category Removed from the APL April 2019
+# Category Removed from the APL April 2019
 
 POSTED April 30, 2019
 
 The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories,the program found that:
 
-- OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to procurement and/or installation.
+- OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to acquisition and/or installation.
 - SCVP Client and SCVP Client (without auth) are not widely used in US federal agencies. It is not in the government’s or commercial best interests to continue to maintain testing scenarios for these products.
 
-Please note the removal of these categories should not impact any procurements. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
+Please note the removal of these categories should not impact any acquisition. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
 
 [Return to Top](#top)
 
@@ -75,7 +76,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 POSTED June 30, 2018
 
-In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../rpl/).
+In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../../buy/removed-products-list/).
 
 [Return to Top](#top)
 
@@ -83,7 +84,7 @@ In the past, the FIPS 201 Evaluation Program has granted extensions for allowing
 
 POSTED August 18, 2017
 
-The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../fips201ep/) page for information about the testing process or to submit a credential for testing.
+The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../../fips201/) page for information about the testing process or to submit a credential for testing.
 
 [Return to Top](#top)
 
@@ -114,7 +115,7 @@ Below are some resources that provide information, guidance, or a replacement ce
 - Guidance through the [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}
 - Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
 - New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
-Please note the removal of these categories should not impact any procurements. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
+Please note the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
 
 | Categories Removed	| Replacement |
 | ------------------- | ----------- |

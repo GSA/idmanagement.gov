@@ -1,18 +1,18 @@
 ## Buy
 
 buy:
-  - text: Procurement Overview
+  - text: Acquisition Overview
     href: /buy/
   - text: Trust Services
     href: /buy/trust-services/
-  - text: GSA ICAM Solutions
+  - text: GSA ICAM Solutions and Shared Services
     href: /buy/icamsolutions/
   - text: FIPS 201 Approved Product List - PIV Cards
     href: /approved-products-list-piv/
   - text: FIPS 201 Approved Product List - PACS
     href: /approved-products-list-pacs-products/
   - text: FIPS 201 Removed Product list
-    href: /buy/rpl/
+    href: /buy/removed-products-list/
     
 ## Sell
     
@@ -22,7 +22,7 @@ sell:
   - text: FIPS 201 Evaluation Program
     href: /fips201/
   - text: FIPS 201 Announcements
-    href: /sell/fipsannouncements
+    href: /sell/fipsannouncements/
     
 ## Governance
 
@@ -31,18 +31,18 @@ governance:
     href: /governance/
   - text: FICAM Governance
     href: /governance/ficam/
-  - text: Federal PKI Policy and Compliance Audit
-    href: /governance/fpkiaudit
-  - text: Federal PKI Archived Documents
+  - text: FPKI Policy and Compliance Audit
+    href: /governance/fpkiaudit/
+  - text: FPKI Archived Documents
     href: /governance/fpkiarchive/
     
 ## Main Site
     
 policy:
   - text: Contact Us
-    href: /contact/
+    href: /contact-us/
   - text: About Us
-    href: /about/
+    href: /about-us/
   - text: Help Us Improve Our Content
     href: /contribute/
   - text: Privacy Policy

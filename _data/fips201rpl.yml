@@ -7,6 +7,7 @@
    dateRemoval: 'Wednesday, November 25, 2020'
    numberApl: '10029'
    reason: 'Not approved for FRTC 1.3.3'
+   status: post
     
 -   category: 'PACS Infrastructure'
     supplier: 'Galaxy Control Systems'
@@ -15,6 +16,7 @@
     dateRemoval: 'Thursday, February 13, 2020'
     numberApl: '10097'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -23,6 +25,7 @@
     dateRemoval: 'Thursday, February 13, 2020'
     numberApl: '10098'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Infrastructure'
     supplier: 'DAQ Electronics, LLC'
@@ -31,6 +34,7 @@
     dateRemoval: 'Thursday, February 13, 2020'
     numberApl: '10071'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -39,6 +43,7 @@
     dateRemoval: 'Thursday, February 13, 2020'
     numberApl: '10072'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Infrastructure'
     supplier: 'Monitor Dynamics'
@@ -47,6 +52,7 @@
     dateRemoval: 'Thursday, February 13, 2020'
     numberApl: '10024'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -55,6 +61,7 @@
     dateRemoval: 'Thursday, February 13, 2020'
     numberApl: '10025'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Infrastructure'
     supplier: BridgePoint
@@ -63,6 +70,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10049'
     reason: 'Not approved for FRTC 1.3.3'
+    status: post
 -
     category: 'PACS Validation System'
     supplier: BridgePoint
@@ -71,6 +79,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10050'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -79,6 +88,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10018'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -87,6 +97,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10012'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Infrastructure'
     supplier: 'Johnson Controls'
@@ -95,6 +106,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10017'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Infrastructure'
     supplier: 'Secure Network Systems'
@@ -103,6 +115,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10040'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Validation System'
     supplier: 'Technology Industries'
@@ -111,6 +124,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10045'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Validation System'
     supplier: 'Technology Industries'
@@ -127,6 +141,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10065'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PACS Infrastructure'
     supplier: 'Johnson Controls/Tyco'
@@ -135,6 +150,7 @@
     dateRemoval: 'Thursday, September 13, 2018'
     numberApl: '10011'
     reason: 'Not approved for FRTC 1.3.3'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -143,6 +159,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1246'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -151,6 +168,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1245'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -159,6 +177,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1247'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -167,6 +186,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1249'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -175,6 +195,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1248'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -183,6 +204,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1250'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -191,6 +213,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1251'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -199,6 +222,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '428'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -207,6 +231,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '406'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -215,6 +240,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '590'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -223,6 +249,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '591'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -231,6 +258,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '592'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -239,6 +267,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '671'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -247,6 +276,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '672'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -255,6 +285,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '589'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -263,6 +294,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '581'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -271,6 +303,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '378'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -279,6 +312,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1244'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Giesecke & Devrient'
@@ -287,6 +321,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '525'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Giesecke & Devrient'
@@ -295,6 +330,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '519'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'HID Global'
@@ -303,6 +339,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '1169'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Oberthur Technologies'
@@ -311,6 +348,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '587'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Oberthur Technologies'
@@ -319,6 +357,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '595'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Oberthur Technologies'
@@ -327,6 +366,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '598'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Oberthur Technologies'
@@ -335,6 +375,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '594'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Oberthur Technologies'
@@ -343,6 +384,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '596'
     reason: 'Retired RNG'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'TecSec Incorporated'
@@ -351,6 +393,7 @@
     dateRemoval: 'Saturday, June 30, 2018'
     numberApl: '424'
     reason: 'Not Compliant with FIPS 201-2'
+    status: archive
 -
     category: 'PACS Infrastructure'
     supplier: Brivo
@@ -359,6 +402,7 @@
     dateRemoval: 'Saturday, March 18, 2017'
     numberApl: '10073'
     reason: 'Discontinued product'
+    status: archive
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -367,6 +411,7 @@
     dateRemoval: 'Saturday, March 18, 2017'
     numberApl: '10074'
     reason: 'Discontinued product'
+    status: archive
 -
     category: 'PIV Card'
     supplier: 'Oberthur Technologies'
@@ -375,3 +420,4 @@
     dateRemoval: 'Wednesday, June 17, 2015'
     numberApl: '530'
     reason: 'Replaced by APL# 587'
+    status: archive

@@ -15,19 +15,19 @@ subnav:
       href: '#legacy-piv-cards'
 ---
 
-The Personal Identity Verification (PIV) cards listed below have been approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
+The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
-If you do not see a card below, it's possible it's on the [Removed Product List](../rpl/)
+If you do not see a card below, it's possible it's on the [Removed Product List](../buy/removed-products-list/)
 
 Please Note:
 
-- Tri-Interface cards are not approved for Federal Government PIV or CAC card use. Agencies should not procure them. They are listed on the APL for industry-only procurement.
+- Tri-Interface cards are not approved for Federal Government PIV or CAC card use. Agencies should not procure them. They are listed on the APL for industry-only acquisition.
 - Manufacturers may call Tri-Interface cards by different names (for example, Dual Hybrid). The prohibited feature of Tri-Interface cards is a prox interface (a 125 kHz antenna).
 - Agencies should procure only cards validated by the NIST Personal Identity Verification Program (NPIVP).
 
 ## How To Purchase
 
-Visit the [Buy Page](../) to view FICAM products, services and purchasing guidance.
+Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing guidance.
 
 ## Approved PIV Cards
 
@@ -52,7 +52,7 @@ Visit the [Buy Page](../) to view FICAM products, services and purchasing guidan
 
 ## Legacy PIV Cards
 
-Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program. Any cardstock designated as “legacy” is placed on this legacy list as well as the [Removed Product List](../rpl). However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by **June 30, 2024**.
+Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program. Any cardstock designated as “legacy” is placed on this legacy list as well as the [Removed Product List](../buy/removed-products-list/). However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by **June 30, 2024**.
 
 - Gemalto IDCore 3020 v1, 128k dual-interface with ActivIdentity Digital Identity Applet Suite – APL# 1244
 - Giesecke & Devrient StarSign(R) SmartCafe(R) Expert 144K with PIV Applet – APL# 525
@@ -67,7 +67,7 @@ If your agency needs to purchase cardstock from this legacy list, you must submi
 - A transition plan specifying major milestones to achieve full compliance by the 2024 deadline; and
 - Implications resulting from non-compliance with federal policy related to this purchase.
 
-Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory) (regardless of the procurement vehicle used). If using [GSA Schedules](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules) as the procurement vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
+Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (OGP)](https://www.gsa.gov/about-us/organization/gsa-leadership-directory){:target="_blank"}{:rel="noopener noreferrer"}. (regardless of the acquisition vehicle used). If using [GSA Multiple Award Schedule](../../buy#gsa-multiple-award-schedule) as the acquisition vehicle, also submit a copy of the memo to the Commissioner of GSA’s Federal Acquisition Service.
 
 Note that GSA will provide the Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB) with copies of all memos submitted.
 

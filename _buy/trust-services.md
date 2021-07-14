@@ -5,7 +5,7 @@ title:  Trust Services
 permalink: buy/trust-services/
 sidenav: buy
 sticky_sidenav: true
-lastupdate: 05/21/2021
+lastupdate: 07/12/2021
 
 subnav:
   - text: Overview
@@ -14,8 +14,8 @@ subnav:
     href: '#government-identity-services'
   - text: Business Identity Services
     href: '#business-identity-services'
-  - text: Trust and Auditing of Services
-    href: '#trust-and-auditing-of-services'
+  - text: Non-Government PKI Trust Framework
+    href: '#non-government-pki-trust-framework'
 ---
 
 This page is for agencies to view the current service providers that have an identity federation agreement with the U.S. Government.
@@ -40,15 +40,9 @@ We’ve categorized the service providers given below by type of identity and cr
 
 ## Government Identity Services
 
-These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA dot Gov.
+These organizations operate as FPKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA dot Gov.
 
-All of the Certification Authorities operated by these Federal PKI SSPs issue certificates for:
-
-- Person identity, including for PIV credentials
-
-A subset of the Federal PKI SSPs also issue and manage:
-
-- Government enterprise device certificates
+All of the Certification Authorities operated by these FPKI SSPs issue certificates for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
 
 Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
@@ -62,13 +56,12 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 
 ## Business Identity Services
 
-These organizations operate services for persons who are affiliated with a business, State, Local, Tribal, Territorial, or non-profit. For the PKI credentials, these are often used by a business person to digitally sign documents with the U.S. Government as a business representative or to authenticate to a small number of government applications.
+These organizations operate services for persons who are affiliated with a business, State, Local, Tribal, Territorial, or non-profit. These are often used by a business person to digitally sign documents with the U.S. Government as a business representative or to authenticate to a small number of government applications.
 
 For each, we identify whether the services include:
 
 - Person identity using PKI, including PIV-I credentials
-- Person identity using PKI for business-to-government digital signatures
-- Person identity using non-PKI federation technologies
+- Person identity using other PKI certificates for business-to-government digital signatures
 
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
@@ -76,31 +69,19 @@ For each, we identify whether the services include:
 | [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Carly Backlund<br/>(801) 770-1773<br/>carly.backlund at digicert.com | Tammy Green<br/>(801) 441-7104<br>tammy.green at digicert.com| Other PKI Credentials |
 | Entrust	| Patrick Garritty<br/>(703) 901-1388	| support at entrustdatacard.com	| PIV-I Credentials<br/>Other PKI Credentials |
 | [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info at exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
-| [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
+| [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650<br/>info at fti.org	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
 | [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
-| [NextgenID](https://www.nextgenid.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Dario Berini<br/>(703) 929-5543	| Keith Sheridan<br/>(703) 615-1697	| PIV-I Credentials<br/>Other PKI Credentials |
-| [Fortior Solutions](https://www.fortiorsolutions.com/){:target="_blank"}{:rel="noopener noreferrer"}	| Tony Schroeder<br/>(503) 924-5338	| David Byrum<br/>(503) 924-5236 | PIV-I Credentials |
 | [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy at ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
 
-## Trust and Auditing of Services
+## Non-Government PKI Trust Framework
 
-The FPKI and Trust Framework Solutions (TFS) program reviews the trust frameworks of commercial and non-profit organizations to determine whether the policies, processes, legal agreements, privacy protections, security controls, and audit requirements are comparable with the U.S. Government requirements. If comparable, the commercial and non-profit organizations that manage their communities’ trust frameworks become adopted Trust Framework Providers.
+The FPKI Policy Authority reviews the PKI trust frameworks of a small number of non-government organizations to determine whether the policies, processes, legal agreements, privacy protections, security  controls, and audit requirements are comparable with the U.S. Government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge.
 
-The Trust Frameworks do not manage identities or credentials for their community of interest directly. Services that are certified and audited by the Trust Frameworks provide the federated identity and credentials. These services are listed above in different categories.
+These organizations do not manage identities or credentials for their community directly. Services that are certified and audited by these organizations provide federated PKI identity and credentials. These services are listed above the Business credentials section.
 
-Services operating within these Trust Frameworks may be used by U.S. Government applications if the service and the demographics are appropriate for the mission. Risk assessments have been performed for the U.S. Government applications based on security requirements, the Risk Management Framework, and NIST SP 800-63. If the non-government service is acceptable for the mission purpose and has the same risk rating, it may be used.
-
-Each Trust Framework is identified by the category of federation technology and the primary communities served. To apply to be a certified Trust Framework, please review the Federal Government’s requirements:
-
-- Download the [Testing Requirements and Guidelines for Commercial PKI Bridges Cross-Certified with the FBCA](../../docs/fpki-test-req-guide.pdf){:target="_blank"} (PDF, December 2017).
-
-Then, fill out the application contained in this document:
-
-- Download the [FPKI Bridge Application Process Overview](../../docs/fpki-bridge-app-process.pdf){:target="_blank"} (PDF, May 2017).
-
-| Trust Framework | Customer Service | Tech Support | Type | Community |
+| Trust Framework | Customer Service | Tech Support | Community |
 |-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
-| [CertiPath](https://www.certipath.com/FederatedTrust_TrustCommunity.html){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| PKI Bridge | Aerospace and Defense<br/>International |
-| [SAFE-BioPharma](https://www.safe-biopharma.org/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | support at safe-biopharma.org<br/>(703) 705-2920 |	PKI Bridge<br/>Non-PKI | Healthcare<br/>International  |
-| [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 |	PKI Bridge | State and Local |
-| [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | PKI Bridge | Aerospace and Defense<br/>International |
+| [CertiPath](https://certipath.com/services/federated-trust/){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| Aerospace and Defense<br/>International |
+| [SAFE Identity](https://makeidentitysafe.com/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | info at makeidentitysafe.com<br/>(703) 705-2920 | Healthcare<br/>International  |
+| [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 | State and Local |
+| [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | Aerospace and Defense<br/>International |

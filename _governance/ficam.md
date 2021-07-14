@@ -8,22 +8,24 @@ sticky_sidenav: true
 
 subnav:
   - text: ICAMSC
-    href: '#icam-subcommittee'
+    href: '#identity-credential-and-access-management-subcommittee'
+  - text: ICAMSC Working Groups
+    href: '#icamsc-working-groups'
   - text: FPKIPA
     href: '#federal-public-key-infrastructure-policy-authority'
   - text: FPKIMA
     href: '#federal-public-key-infrastructure-management-authority'
   - text: FPKI Working Groups
-    href: '#federal-pki-working-groups'
+    href: '#federal-public-key-infrastructure-working-groups'
 ---
 
-[![FICAM Governance Structure and Working Groups]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:style="float:center"}]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![An organization chart of the FICAM Governance Bodies and Working Groups]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:style="float:center"}]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-# ICAM Subcommittee
+# Identity, Credential, and Access Management Subcommittee
 
-The ICAMSC is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
+The Identity, Credential, and Access Management (ICAMSC) is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
 
-The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"}. The ICAMSC aligns the identity management activities of the Federal Government, and supports collaborative government-wide efforts to:
+The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the Federal Government, and supports collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;
 - Coordinate interagency efforts to meet agency mission needs;
 - Identify gaps in policies, procedures, standards, guidance, and services; and
@@ -38,16 +40,24 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://g
 
 ## Membership and Meetings
 
-Membership is open to federal agency employees only and you must have a .gov or .mil email address. FOUO Contractors are permitted to join on a case-by-case basis.
+Membership is open to federal agency employees only with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis.
 
-To join, email icam at gsa.gov with “Request access to ICAMSC collaboration site“ in the subject line. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"} for more information.
+To join, email ICAM at gsa.gov with “Request access to ICAMSC collaboration site“ in the subject line. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"} for more information.
+
+# ICAMSC Working Groups
+
+The ICAMSC charters one, ongoing working group and potentially other short-term working groups and tiger teams. Send an email to icam at gsa.gov for more information and join a working group.
+
+| Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
+| --------- | ---- | ---------- | ------- | ----------- |
+| [**Physical Access Control Systems Modernization (PACSMod)**](https://community.max.gov/display/Egov/PACSMod+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the implementation and use of the technology and processes related to modernizing electronic-PACS (ePACS) within the Federal Government (USG) | Develop a PACS Assessment Toolkit, a self-assessment that agencies can utilize for FICAM compliance of PACS implementations. | Federal employee or contract operating a PACS | Monthly |
 
 
 # Federal Public Key Infrastructure Policy Authority
 
-The FPKIPA serves the interest of U.S. Federal Government organizations as relying parties and promotes interoperability between federal and non-federal entities by:
-- Setting policy governing the FPKI Trust Infrastructure;
-- Approving applicants for cross certification with the FBCA; and
+The Federal Public Key Infrastructure Policy Authority (FPKIPA) serves the interest of U.S. Federal Government organizations as relying parties and promotes interoperability between federal and non-federal entities by:
+- Setting policy governing the Federal Public Key Infrastructure (FPKI) Trust Infrastructure;
+- Approving applicants for cross certification with the Federal Bridge Certification Authority (FBCA); and
 - Providing oversight to the Certified PKI Shared Service Provider (SSP) Program.
 
 It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of the Chief Information Officer (OCIO) is responsible for security authorizations and continuous monitoring for commercially-operated PKI shared service providers.
@@ -55,7 +65,7 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 ## Activities
 - **Approve Policies and Practices** – Approve Federal Bridge Certification Authority (FBCA) and Federal Common Policy Certification Authority Certificate Policies (CPs), including revisions; approve FPKI Trust Infrastructure Certification Practice Statements.
 - **Approve Entity Cross-Certification** – Establish and administer criteria and methodology for cross-certification with the FBCA; approve cross-certifications and execute Memoranda of - Agreement (MOAs); maintain the FPKI Certification Applicant Requirements and the Common Policy CPS Evaluation Matrix.
-- **Maintain Compliance** – Ensure cross-certified entities are compatible with the FBCA CP (or the FCPCA CP for Federal Legacy CAs).
+- [**Maintain Compliance**](../fpkiaudit/) – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
 - **Agreement with FPKI Management Authority** – Oversee the FPKI Management Authority (FPKIMA) to issue and revoke cross-certificates, ensure adherence to the FPKI CPs, and provide documentation to be archived.
 - **Interoperability Practices** – Coordinate legal, policy, technical, and business practices and issues related to FPKI Trust Infrastructure.
 
@@ -67,11 +77,11 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
 
 # Federal Public Key Infrastructure Management Authority
 
-[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"} by providing trust infrastructure services to federal agencies. FPKIMA is governed under the Federal PKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
+[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
 
 ## Activities
 - **Manage digital certificate policies and standards** to ensure secure physical and logical access, document sharing, and communications across federal agencies and between external business partners.
-- **Operate the Federal PKI Trust Infrastructure**, which consists of two main certification authorities (CA):
+- **Operate the FPKI Trust Infrastructure**, which consists of two main certification authorities (CA):
     - **Federal Common Policy CA (FCPCA)** is the trust anchor for the Federal Government. Authorized CAs issue certificates for exclusive use by the Federal Government for federal employees and contractors, to include the PKI certificates on the Personal Identity Verification (PIV) credential.
     - **Federal Bridge CA (FBCA)** is the PKI Bridge that enables interoperability between and among federally operated and business partner PKIs.
 
@@ -87,16 +97,16 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
 For help, contact fpki-help at gsa.gov
 
 
-# Federal PKI Working Groups
+# Federal Public Key Infrastructure Working Groups
 
-The FPKIPA charters three working groups. 
+The FPKIPA charters three, ongoing working groups and potentially other short-term working groups and tiger teams. 
 
 If you meet the membership criteria and wish to join a working group, email fpki at gsa.gov and include the text "Request to Join xx" where "xx" is the name of the working group.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| **Certificate Policy Working Group** | The Federal Bridge and Common policies advisory group. | Facilitate proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. | Open to federal agency employees, their designated contractors and non-federal participants invovled in the FPKI. | As needed. |
-| **Shared Service Provider Working Group (SSPWG)** | The Shared Service Provider program advisory group. | Identify policy changes that impact the Shared Services Program, address and resolve issues through policy analysis and modification. | Only FPKI Shared Service Provider representatives. | As needed. |
-| **Technical Working Group (TWG)** | Investigate and resolve complex FPKI technical issues. | Identify and scope technical FPKI issues, address security concerns and vulnerabilities, and identify technical improvements to enhance the security and operational capabilities. | Open to employees and designated contractors from federal agencies. | As needed. |
+| **Certificate Policy (CPWG)** | The Federal Bridge and Common policies advisory group. | Facilitate proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. | Open to federal agency employees, their designated contractors and non-federal participants involved in the FPKI. | As needed. |
+| **Shared Service Provider (SSPWG)** | The Shared Service Provider program advisory group. | Identify policy changes that impact the Shared Services Program, address and resolve issues through policy analysis and modification. | Only FPKI Shared Service Provider representatives. | As needed. |
+| **Technical (TWG)** | Investigate and resolve complex FPKI technical issues. | Identify and scope technical FPKI issues, address security concerns and vulnerabilities, and identify technical improvements to enhance the security and operational capabilities. | Open to employees and designated contractors from federal agencies. | As needed. |
 
 
