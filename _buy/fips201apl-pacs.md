@@ -93,17 +93,17 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 - Allegion Readers
     - [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"} 
 - Gallagher Readers
-    - [T Series PIV Readers](../../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}
+    - [T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}
 - HID Readers
-    - [pivCLASS Series](../../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}
+    - [pivCLASS Series](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}
 - Identiv Readers
-    - [Identiv uTrust Series](../../docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}
+    - [Identiv uTrust Series](../docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}
 -  Innometriks
-    - [Cheetah Series](../../docs/apl-10109-130-cheetah.pdf){:target="_blank"}
+    - [Cheetah Series](../docs/apl-10109-130-cheetah.pdf){:target="_blank"}
 - Veridt Readers
-    - [Veridt Series](../../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}
+    - [Veridt Series](../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}
 - XTec Readers
-    - [X Series](../../docs/apl-10077-82-xtec.pdf){:target="_blank"}
+    - [X Series](../docs/apl-10077-82-xtec.pdf){:target="_blank"}
 
 
 # PACS Solutions Awaiting Approval
