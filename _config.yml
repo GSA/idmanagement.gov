@@ -8,10 +8,9 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: IDManagement.gov
+title: Protecting Federal Enterprise Identities | IDManagement.gov
 email: icam@gsa.gov
-description: >- # this means to ignore newlines until "baseurl:"
-  Modernizing and operationalizing Federal Enterprise Identities.
+description: IDManagement.gov is a collaboration between the Federal CIO Council and GSA to develop and share leading practices in protecting federal IT systems.
 baseurl: ""
 repourl: "https://github.com/GSA/idmanagement.gov"
 
