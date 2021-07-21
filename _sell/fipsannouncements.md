@@ -115,6 +115,7 @@ Below are some resources that provide information, guidance, or a replacement ce
 - Guidance through the [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}
 - Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
 - New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
+
 Please note the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
 
 | Categories Removed	| Replacement |
