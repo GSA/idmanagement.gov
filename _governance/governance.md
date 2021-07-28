@@ -7,6 +7,8 @@ sidenav: governance
 sticky_sidenav: true
 
 subnav:
+  - text: ICAM PM Guide
+    href: "#icam-progam-management-guide"
   - text: FICAM Playbooks
     href: '#ficam-playbooks'
   - text: Announcements
@@ -18,6 +20,17 @@ subnav:
 ---
 
 The Federal ICAM (FICAM) program helps federal agencies plan and manage enterprise identity, credentialing and access management (ICAM) through collaboration opportunities and guidance on IT policy, standards, implementation and architecture. Most of the guidance and best practices found on this website are developed through interagency working groups.
+
+# ICAM Program Management Guide
+
+The [ICAM Program Management Guide](https://playbooks.idmanagement.gov/pm/){:target="_blank"}{:rel="noopener noreferrer"} explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}. In this guide, you’ll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations, as well as how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+
+This guide answers the most common ICAM program organization and management questions, including:
+- How can I establish governance to ensure ICAM alignment at the agency level?
+- Who are my key ICAM stakeholders?
+- What best practices support ICAM implementation?
+
+The guide is organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
 
 # FICAM Playbooks
 
