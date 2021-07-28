@@ -68,9 +68,9 @@ Audits are required annually for Certification Authorities.  Annual review packa
 | ------- | :-----: | :-----------------------------: |
 | CertiPath	| Bridge |	Jun 30 |
 | Drug Enforcement Agency (DEA)	| Trust Partner	| Sep 30 |
-| Digicert (DirectTrust)	| Affiliate PKI	| July 31 |
-| Digicert (Formerly Symantec Non-Federal Issuer [NFI])	| Affiliate PKI	| July 31 |
-| Digicert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
+| DigiCert (DirectTrust)	| Affiliate PKI	| July 31 |
+| DigiCert (Formerly Symantec Non-Federal Issuer [NFI])	| Affiliate PKI	| July 31 |
+| DigiCert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
 | Department of Defense (DoD)	| Affiliate PKI	| Aug 30 |
 | Department of State (DOS)	| Affiliate PKI	| Jun 30 |
 | Department of the Treasury	| SSP	| July 31 |
@@ -78,14 +78,14 @@ Audits are required annually for Certification Authorities.  Annual review packa
 | Entrust Federal SSP	| SSP	| Nov 22 |
 | Exostar	| Affiliate PKI	| May 31 |
 | Government Publishing Office (GPO)	| Affiliate PKI	| Oct 31 |
-| Identrust NFI	| Affiliate PKI	| Aug 31 |
+| IdenTrust NFI	| Affiliate PKI	| Aug 31 |
 | Patent and Trademark Office (PTO)	| Affiliate PKI	| April 30 |
 | SAFE Identity	| Bridge	| Oct 31 |
 | Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| Nov 30 |
 | Transglobal Secure Collaboration Program (TSCP)	| Bridge	| May 31 |
 | Verizon SSP	| SSP	| July 31 |
-| Wide Point NFI	| Affiliate PKI	| May 31 |
-| Wide Point SSP	| SSP	| May 31 |
+| WidePoint NFI	| Affiliate PKI	| May 31 |
+| WidePoint SSP	| SSP	| May 31 |
 
 
 # Audit Information for the FPKI Management Authority
