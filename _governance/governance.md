@@ -8,7 +8,7 @@ sticky_sidenav: true
 
 subnav:
   - text: ICAM PM Guide
-    href: "#icam-progam-management-guide"
+    href: '#icam-progam-management-guide'
   - text: FICAM Playbooks
     href: '#ficam-playbooks'
   - text: Announcements
