@@ -104,11 +104,11 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
 | 1 | Identiv Velocity 13.01 and 13.02	| 10013 & 10014, 10103 | Update | In Test |
-| 2	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In Test |
-| 3	| Genetec + HID	13.01 | 10061 & 10062 | Update | In queue |
-| 4	| Kastle + HID	13.02 | 10116 | Update | In queue |
+| 2	| Genetec + HID	13.01 | 10061 & 10062 | Update | In Test |
+| 3	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
+| 4 | Datawatch + HID 13.01	| 10117 & 10118 | Update | In queue |
 | 5 | Honeywell + HID 13.01	| 10063 & 10064 | Update | In queue |
-| 6 | Datawatch + HID 13.01	| 10117 & 10118 | Update | In queue |
+| 6	| Kastle + HID	13.02 | 10116 | Update | In queue |
 | 7 | Open Option + HID 13.01 | 10075 & 10076 | Update |	In queue |
 | 8 | Lenel + HID 13.01 | 10112 & 10113 | Update |	In queue |
 
