@@ -49,7 +49,7 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | Organization | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|  
 | Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
-| DigiCert Federal Shared Service Provider (formerly Symantec)| ts_managers at digicert.com | fpki_support at digicert.com | 
+| DigiCert Federal Shared Service Provider (formerly Symantec)| fpki_support at digicert.com | fpki_support at digicert.com | 
 | Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
 | Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
 | WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
@@ -66,7 +66,7 @@ For each, we identify whether the services include:
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
 | [Carillon Information Security](https://www.carillon.ca/){:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques<br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
-| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| ts_managers at digicert.com | fpki_support at digicert.com| Other PKI Credentials |
+| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| fpki_support at digicert.com | fpki_support at digicert.com| Other PKI Credentials |
 | Entrust	| Patrick Garritty<br/>(703) 901-1388	| support at entrust.com	| PIV-I Credentials<br/>Other PKI Credentials |
 | [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info at exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
 | [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650<br/>info at fti.org	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
