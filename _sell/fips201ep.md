@@ -98,7 +98,7 @@ Vendors, please complete the following steps.
     - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}
     - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}
 3. Complete the [Applicant Product Equipment List (MS Word, September 2017)](../../docs/pacsapp-equipmentlist.docx){:target="_blank"}.
-4. **Only for New Systems**: Choose from the following two topologies that best describes your solution:
+4. **Only for New Systems**: Choose from the appropriate topology that best describes your solution:
     - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}
     - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}
