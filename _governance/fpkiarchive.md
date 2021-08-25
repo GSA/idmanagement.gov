@@ -18,7 +18,7 @@ sticky_sidenav: true
 This pages contains three years of FPKI documents including:
 - Certificate Policies
 - Certificate Profiles
-- Supplementary Guideance
+- Supplementary Guidance
 - Change Proposals
 
 If you seek a document that is older than three years or not listed here, please contact fpki at gsa.gov
