@@ -46,9 +46,9 @@ The FPKI has the following supplementary guidance:
 
 - [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for FPKI Systems (PDF, February 2021)](../../docs/fpki-overlay-sp-800-53.pdf){:target="_blank"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a Certification Authority that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
 - [FPKI Key Recovery Policy (PDF, October 2017)](../../docs/fpki-key-recovery.pdf){:target="_blank"} - The FPKI Key Recovery Policy (KRP) supplements the FPKI Certificate Policies and describes the procedural and technical security controls needed to operate a Key Recovery System (KRS) securely, in accordance with FPKIPA requirements.
-- [Registration Authority Agreement Template v1.0 (Word, April 2017)](../../docs/fpki-ssp-raa.docx){:target="_blank"} 
-- [FPKI Incident Management Plan (PDF, September 2020)](../../docs/fpki-imp.pdf){:target="_blank"}
-- [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents](../fpkiarchive/)
+- [Registration Authority Agreement Template v1.0 (Word, April 2017)](../../docs/fpki-ssp-raa.docx){:target="_blank"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
+- [FPKI Incident Management Plan (PDF, September 2020)](../../docs/fpki-imp.pdf){:target="_blank"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident. 
+- [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents](../fpkiarchive/) - This pages contains three years of FPKI-related documents.
 
 
 # Annual Review Requirements for All Certification Authorities
@@ -59,7 +59,7 @@ Audits are required annually for Certification Authorities.  Annual review packa
 
 - [FPKI Annual Review Requirements (PDF, April 2017)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"} – Requirements for performing and reporting annual compliance audits.
 - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in-person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}
-- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"}
+- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
 
 
 # Annual Review Schedule
