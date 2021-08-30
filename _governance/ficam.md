@@ -86,15 +86,15 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
     - **Federal Bridge CA (FBCA)** is the PKI Bridge that enables interoperability between and among federally operated and business partner PKIs.
 
 ## FPKIMA Newsletter
+- [FPKIMA Newsletter – Volume 7, Issue 3](../../docs/fpki-fpkima-newsletter-73.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 7, Issue 2](../../docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 7, Issue 1](../../docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 6, Issue 3](../../docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 6, Issue 2](../../docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 6, Issue 1](../../docs/fpki-fpkima-newsletter-61.pdf){:target="_blank"} (PDF)
 - [FPKIMA Newsletter – Volume 5, Issue 4](../../docs/fpki-fpkima-newsletter-54.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 5, Issue 3](../../docs/fpki-fpkima-newsletter-53.pdf){:target="_blank"} (PDF)
 
-For help, contact fpki-help at gsa.gov
+If your agency is experiencing issues related to the FBCA or FCPCA, contact fpki-help at gsa.gov
 
 
 # Federal Public Key Infrastructure Working Groups
