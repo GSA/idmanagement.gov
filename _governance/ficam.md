@@ -71,7 +71,7 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 
 ## Membership and Meetings
 
-Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter](../../docs/fpkipa-charter.pdf){:target="_blank"} (PDF, February 2015) for information on membership requirements, voting rights, etc.
+Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter](../../docs/fpkipa-charter.pdf){:target="_blank"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
 
 The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpki at gsa.gov to participate in the FPKIPA or its working groups.
 
