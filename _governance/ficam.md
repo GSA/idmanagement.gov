@@ -19,11 +19,11 @@ subnav:
     href: '#federal-public-key-infrastructure-working-groups'
 ---
 
-[![An organization chart of the FICAM Governance Bodies and Working Groups]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:style="float:center"}]({{site.baseurl}}/assets/img/ficam-governance-2105.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![An organization chart of the FICAM Governance Bodies and Working Groups]({{site.baseurl}}/assets/img/ficam-governance.png){:style="float:center"}]({{site.baseurl}}/assets/img/ficam-governance.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Identity, Credential, and Access Management Subcommittee
 
-The Identity, Credential, and Access Management (ICAMSC) is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
+The [Identity, Credential, and Access Management (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
 
 The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the Federal Government, and supports collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;
@@ -44,14 +44,22 @@ Membership is open to federal agency employees only with a .gov or .mil email ad
 
 To join, email ICAM at gsa.gov with “Request access to ICAMSC collaboration site“ in the subject line. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"} for more information.
 
-# ICAMSC Working Groups
+## ICAMSC Working Groups
 
-The ICAMSC charters one, ongoing working group and potentially other short-term working groups and tiger teams. Send an email to icam at gsa.gov for more information and join a working group.
+The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}. Send an email to icam at gsa.gov for more information and join a working group.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| [**Physical Access Control Systems Modernization (PACSMod)**](https://community.max.gov/display/Egov/PACSMod+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the implementation and use of the technology and processes related to modernizing electronic-PACS (ePACS) within the Federal Government (USG) | Develop a PACS Assessment Toolkit, a self-assessment that agencies can utilize for FICAM compliance of PACS implementations. | Federal employee or contract operating a PACS | Monthly |
+| [**Physical Access Control Systems Modernization (PACSMod)**](https://community.max.gov/display/Egov/PACSMod+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the implementation and use of the technology and processes related to modernizing electronic-PACS (ePACS) within the Federal Government (USG). | Develop a PACS Assessment Toolkit, a self-assessment that agencies can utilize for FICAM compliance of PACS implementations by September 30th, 2021. | Federal employees and designated contractors operating a PACS. | Monthly |
+| [**Cloud Identity Working Group**](https://community.max.gov/display/test/Cloud+Identity+Working+Group+Homepage){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the [OMB cloud smart initiative](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} within the Federal Government (USG) and ensuring secure and efficient identity management operations. | Create guidance to help agencies integrate and operate identity architecture components hosted in a public cloud environment by September 30th, 2021. | Federal employees and designated contractors | Monthly |
 
+## Other ICAM Working Groups
+
+Other ICAM working groups may be charted under other committess or subcommittees of the Federal CIO Council.
+
+| Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
+| --------- | ---- | ---------- | ------- | ----------- |
+| [**Derived-PIV Working Group**](https://community.max.gov/display/Egov/Derived-PIV+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Accelerate the implementation of mobile identity management across the Federal Government. | Document and share PKI and non-PKI uses cases to increase the available technical and information resources. Provide a feedback look to inform policy and standard. | Federal employees and designated contractors | Monthy |
 
 # Federal Public Key Infrastructure Policy Authority
 
@@ -97,7 +105,7 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
 If your agency is experiencing issues related to the FBCA or FCPCA, contact fpki-help at gsa.gov
 
 
-# Federal Public Key Infrastructure Working Groups
+## Federal Public Key Infrastructure Working Groups
 
 The FPKIPA charters three, ongoing working groups and potentially other short-term working groups and tiger teams. 
 
@@ -105,8 +113,8 @@ If you meet the membership criteria and wish to join a working group, email fpki
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| **Certificate Policy (CPWG)** | The Federal Bridge and Common policies advisory group. | Facilitate proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. | Open to federal agency employees, their designated contractors and non-federal participants involved in the FPKI. | As needed. |
+| **Certificate Policy (CPWG)** | The Federal Bridge and Common policies advisory group. | Facilitate proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. | Federal employees, designated contractors, and PKI providers involved in the FPKI. | As needed. |
 | **Shared Service Provider (SSPWG)** | The Shared Service Provider program advisory group. | Identify policy changes that impact the Shared Services Program, address and resolve issues through policy analysis and modification. | Only FPKI Shared Service Provider representatives. | As needed. |
-| **Technical (TWG)** | Investigate and resolve complex FPKI technical issues. | Identify and scope technical FPKI issues, address security concerns and vulnerabilities, and identify technical improvements to enhance the security and operational capabilities. | Open to employees and designated contractors from federal agencies. | As needed. |
+| **Technical (TWG)** | Investigate and resolve complex FPKI technical issues. | Identify and scope technical FPKI issues, address security concerns and vulnerabilities, and identify technical improvements to enhance the security and operational capabilities. | Federal employees, designated contractors, and PKI vendors. | As needed. |
 
 
