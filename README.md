@@ -25,7 +25,7 @@ For information on how to contribute to the site, visit the Contribute page [her
 
 Direct changes and line edits to the content may be submitted by clicking 'Edit this page'. You do not need to install any software to submit content. You can use GitHub's in-browser editor to edit files and submit a request for your changes to be merged.
 
-## Running the application
+### Running the locally application
 With locally installed node and ruby
 ```
 $ npm install
@@ -43,7 +43,7 @@ To build but not serve the site, run
 
 `npm run build or bundle exec jekyll build`
 
-With Docker
+### With Docker
 ```
 $ docker-compose run node npm install
 $ docker-compose build
@@ -53,7 +53,7 @@ To build but not serve the site, run:
 
 `docker-compose run ruby bundle exec jekyll build`
 
-### Public domain
+## Public domain
 
 This project is in the worldwide [public domain](/_pages/license.md/). 
 
@@ -61,7 +61,7 @@ This project is in the worldwide [public domain](/_pages/license.md/).
 >
 > All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
 
-### Special Thanks
+## Special Thanks
 This site is based on GitHub Pages and Jekyll templates. 
 
 Special thanks to the teams at [18F](https://18f.gsa.gov/), [18F Pages](https://pages.18f.gov/), and [US Digital Services Playbooks](https://playbook.cio.gov/) for their open and transparent model which benefits citizens, government, and technology.
