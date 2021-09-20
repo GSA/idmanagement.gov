@@ -302,12 +302,12 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: Hirsch Velocity
-  infraurl: /docs/apl-10013-hirsch.pdf
-  infraapl: 10013
-  validation: HID Global Validation System for Hirsch-Identiv Velocity
-  valurl: /docs/apl-10014-hirsch-validation.pdf
-  valapl: 10014
+  infrastructure: Honeywell Pro-Watch
+  infraurl: /docs/apl-10063-honeywell.pdf
+  infraapl: 10063
+  validation: HID Global Validation System for Pro-Watch
+  valurl: /docs/apl-10064-honeywell-validation.pdf
+  valapl: 10064
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader1apl: 10052
@@ -332,15 +332,15 @@
   reader8: pivCLASS R40 Contactless Reader
   reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader8apl: 10006
-
-- category: 13.01
+  
+  - category: 13.01
   fipsstatus: Approved
-  infrastructure: Honeywell Pro-Watch
-  infraurl: /docs/apl-10063-honeywell.pdf
-  infraapl: 10063
-  validation: HID Global Validation System for Pro-Watch
-  valurl: /docs/apl-10064-honeywell-validation.pdf
-  valapl: 10064
+  infrastructure: Identiv Velocity
+  infraurl: /docs/apl-10013-hirsch.pdf
+  infraapl: 10013
+  validation: HID Global Validation System for Hirsch-Identiv Velocity
+  valurl: /docs/apl-10014-hirsch-validation.pdf
+  valapl: 10014
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader1apl: 10052
