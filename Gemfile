@@ -8,6 +8,12 @@ gem "jekyll", "~> 3.9"
 gem "sprockets", "~> 3.7"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 
+# CSS autoprefixer to fix some components of USWDS >2.10.2
+# https://github.com/envygeeks/jekyll-assets#css-auto-prefixing
+# https://designsystem.digital.gov/about/releases/#version-2101
+gem "autoprefixer-rails"
+
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15"
   gem 'jekyll-redirect-from'

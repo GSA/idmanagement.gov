@@ -8,6 +8,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (10.3.3.0)
+      execjs (~> 2)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     em-websocket (0.5.2)
@@ -128,6 +130,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   html-proofer (~> 3.16)
   jekyll (~> 3.9)
   jekyll-assets (~> 3.0)
