@@ -302,7 +302,7 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: Honeywell Pro-Watch 
+  infrastructure: Honeywell Pro-Watch
   infraurl: /docs/apl-10063-honeywell.pdf
   infraapl: 10063
   validation: HID Global Validation System for Pro-Watch
@@ -323,7 +323,7 @@
   reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
   reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader5apl: 10008
-  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader6: pivCLASS RPK40 Contactless Reader + PIN
   reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader6apl: 10005
   reader7: pivCLASS RP40 Contactless Reader
