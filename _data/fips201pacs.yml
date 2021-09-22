@@ -302,7 +302,7 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: Honeywell Pro-Watch
+  infrastructure: Honeywell Pro-Watch 
   infraurl: /docs/apl-10063-honeywell.pdf
   infraapl: 10063
   validation: HID Global Validation System for Pro-Watch
