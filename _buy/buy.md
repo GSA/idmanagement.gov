@@ -30,7 +30,7 @@ The **Approved Products List (APL)** contains the official list of these tested 
 
 **I can't find a category or product?**
 1. Products and services that have lost their certification due to security concerns are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). 
-2. It is also possible a category is deprecated after it has reached a level of broad adoption or maturity and further testing is no longer needed. These categories are [announced through our program page](../sell/fipsannouncements) on an annual-bases. A deprecated category is not the same as a removed product.
+2. Categories are deprecated after it has reached a level of broad adoption or maturity and further testing is no longer needed (for example, card readers for logical access). Deprecated categories are [shared as a FIPS 201 announcement](../sell/fipsannouncements). A deprecated category is not the same as a removed product.
 
 [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
 
