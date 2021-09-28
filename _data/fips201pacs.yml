@@ -368,10 +368,10 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: Lenel OnGuard with Embedded Authentication
+  infrastructure: LenelS2 OnGuard with Embedded Authentication
   infraurl: /docs/apl-10112-lenel.pdf
   infraapl: 10112
-  validation: HID Global Validation System for Lenel OnGuard with Embedded Authentication
+  validation: HID Global Validation System for LenelS2 OnGuard with Embedded Authentication
   valurl: /docs/apl-10113-level-validation.pdf
   valapl: 10113
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
@@ -418,11 +418,11 @@
   reader14apl: 10096
 
 - category: 13.01
-  fipsstatus: Under Review
-  infrastructure: Lenel OnGuard with Embedded Authentication
+  fipsstatus: Approved
+  infrastructure: LenelS2 OnGuard with Embedded Authentication
   infraurl: /docs/apl-10126-lenel.pdf
   infraapl: 10126
-  validation: TI Entry Point Validation System for Lenel S2 OnGuard
+  validation: TI Entry Point Validation System for LenelS2 OnGuard
   valurl: /docs/apl-10127-lenel-validation.pdf
   valapl: 10127
   reader1: Allegion Schlage Mullion/ Single Gang Reader
