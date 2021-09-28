@@ -28,7 +28,7 @@ The **Approved Products List (APL)** contains the official list of these tested 
 1. [PIV Cards](../approved-products-list-piv/)
 2. [Physical Access Control Systems](../approved-products-list-pacs-products/)
 
-Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
+Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). [Contact us](../contact-us/) if you’re unsure if a product is fit for government use. For the latest FIPS 201 program announcements, see our [program announcements page.](../sell/fipsannouncements/)
 
 # Services
 
