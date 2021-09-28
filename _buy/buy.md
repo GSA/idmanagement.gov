@@ -28,7 +28,9 @@ The **Approved Products List (APL)** contains the official list of these tested 
 1. [PIV Cards](../approved-products-list-piv/)
 2. [Physical Access Control Systems](../approved-products-list-pacs-products/)
 
-Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). It is also possible a category was deprecated after it has reached a level of broad adoption or maturity. These categories are [announced through our program page](../sell/fips201announcements). A deprecated category is not the same as a removed product.
+**I can't find a category or product?**
+1. Products and services that have lost their certification due to security concerns are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). 
+2. It is also possible a category is deprecated after it has reached a level of broad adoption or maturity and further testing is no longer needed. These categories are [announced through our program page](../sell/fipsannouncements) on an annual-bases. A deprecated category is not the same as a removed product.
 
 [Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
 
