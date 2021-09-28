@@ -21,14 +21,16 @@ Other current and planned products and services can be found on the [GSA ICAM So
 
 # Products
 
-The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../../fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
+The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products have been tested and approved to ensure you’re buying products that provide value, and work well together.
 
 The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
 
 1. [PIV Cards](../approved-products-list-piv/)
 2. [Physical Access Control Systems](../approved-products-list-pacs-products/)
 
-Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). [Contact us](../contact-us/) if you’re unsure if a product is fit for government use. For the latest FIPS 201 program announcements, see our [program announcements page.](../sell/fipsannouncements/)
+Products and services that have lost their certification are placed on the [Removed Products List (RPL)](../buy/removed-products-list/). It is also possible a category was deprecated after it has reached a level of broad adoption or maturity. These categories are [announced through our program page](../sell/fips201announcements). A deprecated category is not the same as a removed product.
+
+[Contact us](../contact-us/) if you’re unsure if a product is fit for government use.
 
 # Services
 
