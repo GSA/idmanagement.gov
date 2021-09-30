@@ -36,7 +36,7 @@ If you seek a document that is older than three years or not listed here, please
         <th colspan="2" class="docs-table-heading" id="docs-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
       </tr>
       {% for docs in site.data.fpkidocs %}
-        {% if docs.category == category && docs.status == "Post"%}
+        {% if docs.category == category && docs.status == "post" %}
           <tr class="docs-table-row" data-category="{{ docs.category }}">
             <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-name"><a href="{{ docs.url | prepend: site.baseurl }}" target="_blank">{{ docs.name}}</a></td>
             <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-date">{{ docs.date }}</td>
