@@ -559,3 +559,10 @@
   date: 05/01/2020
   url: /docs/archived/fpki-fpkima-cps-v51.pdf
   status: post
+
+- category: Supplementary Guidance
+  name: FPKI Annual Audit Review Guidelines
+  description: This document provides detailed guidance to participating Public Key Infrastructures (PKIs) and their auditors for meeting the annual review requirements of the Federal PKI (FPKI)
+  date: 04/11/2017
+  url: /docs/archived/fpki-annual-review-requirements-1.0.pdf
+  status: archive
