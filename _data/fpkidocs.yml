@@ -559,3 +559,10 @@
   date: 05/01/2020
   url: /docs/archived/fpki-fpkima-cps-v51.pdf
   status: post
+
+  - category: Supplementary Guidance
+  name: FPKI Annual Audit Review Guidelines 
+  description: Supplementary Guidance
+  date: 09/30/2021
+  url: /docs/archived/fpki-annual-review-requirements-1.0.pdf
+  status: archive
