@@ -37,10 +37,10 @@ The [FPKI Policy Authority (FPKIPA)](../ficam#federal-public-key-infrastructure-
 
 | FPKI Initiatve | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
-| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"} | [Common Policy X.509 Certificate and CRL Profiles ](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}  | [Common Change Proposals](../fpkiarchive/) |
-| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} | [X.509 Certificate and CRL Extensions Profile](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"} | [Bridge Change Proposals](../fpkiarchive/) |
-| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and [PIV-I for Federal Issuers](../../docs/fpki-pivi-for-issuers.pdf){:target="_blank"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}  | [Bridge Change Proposals](../fpkiarchive/) |
-| Public Trust TLS | [U.S. Federal Public Trust TLS Certificate Policy](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"} |  The CAs operating under this Certificate Policy are in a new infrastructure which will not have cross-certificates with any other FPKI Certification Authority.|
+| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.1](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"} | [Common Policy X.509 Certificate and CRL Profiles v2.1](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}  | [Common Change Proposals](../fpkiarchive/) |
+| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.35](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} | [X.509 Certificate and CRL Extensions Profile v1.9](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"} | [Bridge Change Proposals](../fpkiarchive/) |
+| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.35](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and [PIV-I for Federal Issuers v2.0.1](../../docs/fpki-pivi-for-issuers.pdf){:target="_blank"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards v1.3](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}  | [Bridge Change Proposals](../fpkiarchive/) |
+| Public Trust TLS | [U.S. Federal Public Trust TLS Certificate Policy v1.0](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"} | [U.S. Federal Public Trust TLS Certificate Profiles](https://devicepki.idmanagement.gov/certificateprofiles/){:target="_blank"}{:rel="noopener noreferrer"} | No change proposals |
 
 The FPKI has the following supplementary guidance:
 
@@ -57,7 +57,7 @@ Independent compliance audits are the primary way that the Federal Public Key In
 
 Audits are required annually for Certification Authorities.  Annual review packages should be submitted to fpki at gsa.gov.
 
-- [FPKI Annual Review Requirements (PDF, April 2017)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"} – Requirements for performing and reporting annual compliance audits.
+- [FPKI Annual Review Requirements (PDF, September 2021)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"} – Requirements for performing and reporting annual compliance audits.
 - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in-person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}
 - [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
 

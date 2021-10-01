@@ -1,58 +1,69 @@
 # list of archived fpki documents
+# numberProposal - Version number of the document or number of the change proposal
+# date = date on the document
+# Status Post - Post it to the website; Archive - Document was REPLACED more than three years and not posted to website. Retained in repository until disposal.
+# Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
 - category: Common Certificate Policy
   numberProposal: 2.0
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.0
   date: 09/01/2020
   url: /docs/fpki-x509-cert-policy-common-20.pdf
-  status: Post
+  status: post
+  remove: 05/18/2024
 
 - category: Supplementary Guidance
   name: FBCA Supplementary Antecedent, In-Person Definition 
   description: Working group document superseded by NIST SP 800-63-3A.
   date: 07/16/2009
   url: /docs/fpki-fbca-antecedent.pdf
-  status: Post
+  status: post
+  remove: 06/01/2023
 
 - category: Common Change Proposal
   numberProposal: 2021-01
-  name: FPKI Key Recovery Policy Consolidation into Common Policy
+  name: Proposal 2021-01 | FPKI Key Recovery Policy Integration into COMMON Policy
   description: This change proposal consolidates the existing Key Recovery Policy (KRP) requirements into Common Policy.
   date: 04/13/2021
   url: /docs/fpki-common-cp-2101.pdf
-  status: Post
+  status: post
+  remove: 04/13/2024
   
 - category: Common Change Proposal
   numberProposal: 2020-02
-  name: Consolidated update to Common Policy and associated profiles
+  name: Proposal 2020-02 | General Update to COMMON Policy and Profiles
   description: Updates the Certificate Policy and the certificate profile specification.
   date: 08/29/2020
   url: /docs/fpki-common-cp-2002.pdf
-  status: Post
+  status: post
+  remove: 08/29/2023
 
 - category: Common Change Proposal
   numberProposal: 2020-01 
-  name: Support for Personal Identity Verification-Interoperable (PIV-I) credentials issued under COMMON
+  name: Proposal 2020-01 | PIV-I credentials issued under COMMON requirements
   description: Support federally issued and managed PIV-I smart cards issued to non-PIV users under COMMON.
   date: 03/10/2020
   url: /docs/fpki-common-cp-2001.pdf
-  status: Post
+  status: post
+  remove: 03/10/2023
 
 - category: Common Change Proposal
   numberProposal: 2018-08 
-  name: Change Requirement for Destruction of Private Signing Key(s) Following CA Termination
+  name: Proposal 2018-08 | Private Key Destruction Following CA Termination
   description: Specify treatment of CA private keys and escrowed private keys following CA termination. 
   date: 11/02/2018
   url: /docs/fpki-common-cp-1808.pdf
-  status: Post
+  status: post
+  remove: 11/02/2021
 
 - category: Common Change Proposal
   numberProposal: 2018-07
-  name: Update Common Policy to Remove the common-public-trusted-serverAuth Certificate Policy
+  name: Proposal 2018-07 | Remove Public Trust TLS Requirements
   description: Remove the common-public-trusted-serverAuth certificate policy.
   date: 10/24/2018
   url: /docs/fpki-common-cp-1807.pdf
-  status: Post
+  status: post
+  remove: 10/24/2021
 
 - category: Common Change Proposal
   numberProposal: 2018-06 
@@ -61,6 +72,7 @@
   date: 04/23/2018
   url: /docs/archived/fpki-common-cp-1806.pdf
   status: archive
+  remove: 04/23/2021
 
 - category: Common Change Proposal
   numberProposal: 2018-05
@@ -224,11 +236,12 @@
 
 - category: Federal Bridge Change Proposal
   numberProposal: 2019-01
-  name: Allow Offline Federal Bridge Certification Authority
+  name: Proposal 2019-01 | Allow Offline Federal Bridge Certification Authority
   description: Allow the Federal Bridge Certification Authority to be operated in an off-line status.
   date: 02/28/2019
   url: /docs/fpki-fbca-cp-1901.pdf
-  status: Post
+  status: post
+  remove: 02/28/2022
 
 - category: Federal Bridge Change Proposal
   numberProposal: 2018-06
@@ -411,7 +424,8 @@
   name: X.509 Common Policy Certificate and Certificate Revocation List Profiles v2.0
   date: 09/01/2020
   url: /docs/fpki-common-profile-20.pdf
-  status: Post
+  status: post
+  remove: 09/01/2023
 
 - category: Common Profile
   numberProposal: 1.9
@@ -439,28 +453,32 @@
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.32
   date: 04/14/2020
   url: /docs/fpki-x509-cert-policy-common-132.pdf
-  status: Post
+  status: post
+  remove: 09/01/2023
 
 - category: Common Certificate Policy
   numberProposal: 1.31
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.31
   date: 02/08/2019
   url: /docs/fpki-x509-cert-policy-common-131.pdf
-  status: Post
+  status: post
+  remove: 04/14/2023
 
 - category: Common Certificate Policy
   numberProposal: 1.30
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.30
-  date: 10/4/2018
+  date: 10/04/2018
   url: /docs/fpki-x509-cert-policy-common-130.pdf
-  status: Post
+  status: post
+  remove: 02/08/2022
 
 - category: Common Certificate Policy
   numberProposal: 1.29
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.29
   date: 10/10/2018
   url: /docs/fpki-x509-cert-policy-common-129.pdf
-  status: Post
+  status: archive
+  remove: 10/04/2021
 
 - category: Common Certificate Policy
   numberProposal: 1.28
@@ -499,10 +517,11 @@
 
 - category: Federal Bridge Certificate Policy
   numberProposal: 2.34
-  name: X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA) v2.34
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v2.34
   date: 10/04/2018
   url: /docs/fpki-x509-cert-policy-fbca-234.pdf
-  status: Post
+  status: post
+  remove: 04/15/2023
 
 - category: Federal Bridge Certificate Policy
   numberProposal: 2.33
@@ -559,3 +578,20 @@
   date: 05/01/2020
   url: /docs/archived/fpki-fpkima-cps-v51.pdf
   status: post
+  remove: 06/28/2024
+
+- category: Supplementary Guidance
+  numberProposal: 1.0
+  name: FPKI Annual Audit Review Guidelines v1.0
+  date: 04/11/2017
+  url: /docs/archived/fpki-annual-review-requirements-v1-20170411.pdf
+  status: post
+  remove: 09/30/2024
+
+- category: Supplementary Guidance
+  numberProposal: 2.0
+  name: NIST SP 800-53 Security Controls Overlay for PKI Systems v2.0
+  date: 04/14/2014
+  url: /docs/archived/fpki-overlay-800-53-v2-20140414.pdf
+  status: post
+  remove: 02/01/2024
