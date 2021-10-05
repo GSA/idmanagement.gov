@@ -7,6 +7,8 @@ sidenav: sell
 sticky_sidenav: true
 
 subnav:
+  - text: Oct 2021 - PACS FRTC v1.4.2 Rev B Released
+    href: '#pacs-frtc-v142-Rev-B-released'
   - text: Mar 2021 - PACS FRTC v1.4.2 Update Released
     href: '#pacs-frtc-v142-update-released'
   - text: Dec 2020 - Category Removed from the APL December 2020
@@ -20,7 +22,7 @@ subnav:
 
 This is a list of the latest news out of the FIPS 201 Evaluation Program.
 
-# PACS FRTC v1.4.2 Rev B Update Released
+# PACS FRTC v1.4.2 Rev B Released
 
 POSTED: October 15, 2021
 
