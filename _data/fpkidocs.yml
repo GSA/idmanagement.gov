@@ -4,14 +4,14 @@
   numberProposal: 2.0
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.0
   date: 09/01/2020
-  url: /docs/fpki-x509-cert-policy-common-20.pdf
+  url: /docs/archived/fpki-x509-cert-policy-common-20.pdf
   status: Post
 
 - category: Supplementary Guidance
   name: FBCA Supplementary Antecedent, In-Person Definition 
   description: Working group document superseded by NIST SP 800-63-3A.
   date: 07/16/2009
-  url: /docs/fpki-fbca-antecedent.pdf
+  url: /docs/archived/fpki-fbca-antecedent.pdf
   status: Post
 
 - category: Common Change Proposal
@@ -19,7 +19,7 @@
   name: FPKI Key Recovery Policy Consolidation into Common Policy
   description: This change proposal consolidates the existing Key Recovery Policy (KRP) requirements into Common Policy.
   date: 04/13/2021
-  url: /docs/fpki-common-cp-2101.pdf
+  url: /docs/archived/fpki-common-cp-2101.pdf
   status: Post
   
 - category: Common Change Proposal
@@ -27,7 +27,7 @@
   name: Consolidated update to Common Policy and associated profiles
   description: Updates the Certificate Policy and the certificate profile specification.
   date: 08/29/2020
-  url: /docs/fpki-common-cp-2002.pdf
+  url: /docs/archived/fpki-common-cp-2002.pdf
   status: Post
 
 - category: Common Change Proposal
@@ -35,7 +35,7 @@
   name: Support for Personal Identity Verification-Interoperable (PIV-I) credentials issued under COMMON
   description: Support federally issued and managed PIV-I smart cards issued to non-PIV users under COMMON.
   date: 03/10/2020
-  url: /docs/fpki-common-cp-2001.pdf
+  url: /docs/archived/fpki-common-cp-2001.pdf
   status: Post
 
 - category: Common Change Proposal
@@ -43,7 +43,7 @@
   name: Change Requirement for Destruction of Private Signing Key(s) Following CA Termination
   description: Specify treatment of CA private keys and escrowed private keys following CA termination. 
   date: 11/02/2018
-  url: /docs/fpki-common-cp-1808.pdf
+  url: /docs/archived/fpki-common-cp-1808.pdf
   status: Post
 
 - category: Common Change Proposal
@@ -51,7 +51,7 @@
   name: Update Common Policy to Remove the common-public-trusted-serverAuth Certificate Policy
   description: Remove the common-public-trusted-serverAuth certificate policy.
   date: 10/24/2018
-  url: /docs/fpki-common-cp-1807.pdf
+  url: /docs/archived/fpki-common-cp-1807.pdf
   status: Post
 
 - category: Common Change Proposal
@@ -227,7 +227,7 @@
   name: Allow Offline Federal Bridge Certification Authority
   description: Allow the Federal Bridge Certification Authority to be operated in an off-line status.
   date: 02/28/2019
-  url: /docs/fpki-fbca-cp-1901.pdf
+  url: /docs/archived/fpki-fbca-cp-1901.pdf
   status: Post
 
 - category: Federal Bridge Change Proposal
@@ -410,7 +410,7 @@
   numberProposal: 2.0
   name: X.509 Common Policy Certificate and Certificate Revocation List Profiles v2.0
   date: 09/01/2020
-  url: /docs/fpki-common-profile-20.pdf
+  url: /docs/archived/fpki-common-profile-20.pdf
   status: Post
 
 - category: Common Profile
@@ -438,28 +438,28 @@
   numberProposal: 1.32
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.32
   date: 04/14/2020
-  url: /docs/fpki-x509-cert-policy-common-132.pdf
+  url: /docs/archived/fpki-x509-cert-policy-common-132.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.31
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.31
   date: 02/08/2019
-  url: /docs/fpki-x509-cert-policy-common-131.pdf
+  url: /docs/archived/fpki-x509-cert-policy-common-131.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.30
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.30
   date: 10/4/2018
-  url: /docs/fpki-x509-cert-policy-common-130.pdf
+  url: /docs/archived/fpki-x509-cert-policy-common-130.pdf
   status: Post
 
 - category: Common Certificate Policy
   numberProposal: 1.29
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v1.29
   date: 10/10/2018
-  url: /docs/fpki-x509-cert-policy-common-129.pdf
+  url: /docs/archived/fpki-x509-cert-policy-common-129.pdf
   status: Post
 
 - category: Common Certificate Policy
@@ -501,7 +501,7 @@
   numberProposal: 2.34
   name: X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA) v2.34
   date: 10/04/2018
-  url: /docs/fpki-x509-cert-policy-fbca-234.pdf
+  url: /docs/archived/fpki-x509-cert-policy-fbca-234.pdf
   status: Post
 
 - category: Federal Bridge Certificate Policy
