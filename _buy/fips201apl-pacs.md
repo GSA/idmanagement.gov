@@ -103,7 +103,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
-| 1 | Open Option + HID 13.01 | 10075 & 10076 | Update | In Tueue |
+| 1 | Open Option + HID 13.01 | 10075 & 10076 | Update | In Test |
 | 2	| Kastle + HID	13.01 | 10116 | Update | In Test |
 | 3	| CCure 2.7 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
 | 4 | Lenel + HID 13.01 | 10112 & 10113 | Update |	In queue | 
