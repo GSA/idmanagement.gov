@@ -1,5 +1,14 @@
 # FIPS 201 Removed Product List
 
+-   category: 'PACS Infrastructure'
+    supplier: 'Datawatch'
+    nameProduct: 'Datawatch Systems site controller'
+    numberProduct: 'SC3.6,E400-M'
+    dateRemoval: 'Wednesday, October 13, 2021 '
+    numberApl: '10117 & 10118'
+    reason: 'Components end of sale'
+    status: post
+
 -  category: 'PACS and Validation Infrastructure'
    supplier: Vicount
    nameProduct: 'PACS and Validation Software for Viscount Freedom 1302'
