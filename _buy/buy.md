@@ -62,7 +62,7 @@ GSA Multiple Award Schedule (MAS) provide access to long-term government-wide co
   - [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– ICAM Solutions
   - [541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – PKI Shared Service Providers (SSP)
   - [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}- HSPD-12 Products and Service Components
-  - [334290L](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– PACS vendors
+  - [334290PACS](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} - Legacy PACS systems (non-FIPS 201)
   - [541330SEC](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290PACS&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– PACS integrator vendor
 - [Mulitple Award Schedule IT SINs](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"}– scroll down to “Subcategory: IT Solutions” for links to specific items
 
