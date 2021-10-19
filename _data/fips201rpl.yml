@@ -1,5 +1,23 @@
 # FIPS 201 Removed Product List
 
+-   category: 'PACS Infrastructure'
+    supplier: 'Brivo'
+    nameProduct: 'Brivo OnSite server'
+    numberProduct: 'B-OSS-BA(X), B-ACS5000(y), B-ACS5000-DB, B-ACS-IPDC-(Z)A, B-ACS6000-DB, B-ACS300-A, B-ACS300-A-FIPS, B-ACS6000-A-FIPS'
+    dateRemoval: 'Wednesday, October 13, 2021 '
+    numberApl: '10009 & 10010'
+    reason: 'Components end of sale'
+    status: post
+
+-   category: 'PACS Infrastructure'
+    supplier: 'Datawatch'
+    nameProduct: 'Datawatch Systems site controller'
+    numberProduct: 'SC3.6,E400-M'
+    dateRemoval: 'Wednesday, October 13, 2021 '
+    numberApl: '10117 & 10118'
+    reason: 'Components end of sale'
+    status: post
+
 -  category: 'PACS and Validation Infrastructure'
    supplier: Vicount
    nameProduct: 'PACS and Validation Software for Viscount Freedom 1302'

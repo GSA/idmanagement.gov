@@ -104,42 +104,6 @@
   reader7: pivCLASS R40 Contactless Reader
   reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader7apl: 10006
-  
-- category: 13.01
-  fipsstatus: Approved
-  infrastructure: Brivo OnSite Server (previously known as Brivo Aparato)
-  infraurl: /docs/apl-10009-brivo.pdf
-  infraapl: 10009
-  validation: HID Global Validation System for Brivo OnSite Server (previously known as Brivo Aparato)
-  valurl: /docs/apl-10010-brivo-validation.pdf
-  valapl: 10010
-  reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
-  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader1apl: 10052
-  reader2: pivCLASS RKCL40 Contact/Contactless Reader + PIN
-  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader2apl: 10007
-  reader3: pivCLASS RK40 Contactless Reader + PIN
-  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader3apl: 10004
-  reader4: pivCLASS RPKCLB40 Contact/Contactless Reader + PIN +BIO
-  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader4apl: 10026
-  reader5: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
-  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader5apl: 10008
-  reader6: 	pivCLASS RPK40 Contactless Reader + PIN
-  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader6apl: 10005
-  reader7: pivCLASS RP40 Contactless Reader
-  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader7apl: 10003
-  reader8: pivCLASS R10 Contactless Reader
-  reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader8apl: 10085
-  reader9: pivCLASS R40 Contactless Reader
-  reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader9apl: 10006
 
 - category: 13.01 
   fipsstatus: Approved
@@ -173,18 +137,6 @@
   reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader8apl: 10052
-
-- category: 13.01
-  fipsstatus: Approved
-  infrastructure: Datawatch Systems Site Controller
-  infraurl: /docs/apl-10117-datawatch.pdf
-  infraapl: 10117
-  validation : HID Validation System for Datawatch
-  valurl: /docs/apl-10118-datawatch-validation.pdf
-  valapl: 10118
-  reader1: pivCLASS RP40 Contactless Reader
-  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
-  reader1apl: 10003
 
 - category: 13.01
   fipsstatus: Approved
