@@ -79,7 +79,7 @@ GSA tests and validates the interoperability of PIV and CAC credentials with the
 
 Review the test procedures, choose one of the application packages, and submit to fips201ep at gsa.gov.
 
-- [PACS Functional Requirements and Test Cases v1.4.2 Rev. A (PDF, March 2021)](../../docs/fips201ep-pacsfrtc.pdf){:target="_blank"}
+- [PACS Functional Requirements and Test Cases v1.4.2 Rev. B (PDF, October 2021)](../../docs/fips201ep-pacsfrtc.pdf){:target="_blank"}
     - [SM-OCC Companion Paper (PDF, March 2021)](../../docs/fips201ep-smocc.pdf){:target="_blank"}
     - [Backend Registration Companion Paper (PDF, March 2021)](../../docs/fips201ep-brcp.pdf){:target="_blank"}
     - [FRTC Express Companion Paper (PDF, March 2021)](../../docs/fips201ep-frtcexpress.pdf){:target="_blank"}
@@ -104,7 +104,7 @@ Vendors, please complete the following steps.
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}
         - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - Approved [PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}
-5. **Only for New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, March 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"} for your topology.
+5. **Only for New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"} for your topology.
     - When submitting a product that uses an approved or provisionally approved topology, complete the Topology Mapping Workbook, rather than the PDF version, and submit it with your application.
 6. Complete a Topology Mapping Diagram as specified in Section 4.4 in the Approved PACS Topology Mapping Documents above.
 7. Execute the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}.
