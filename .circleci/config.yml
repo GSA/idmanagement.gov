@@ -24,10 +24,10 @@ jobs:
           paths:
             - vendor/bundle
       - run: npm run build
-      - run: npm run test
+      # - run: npm run test
       # Upload test results
-      - store_test_results:
-          path: /tmp/test-reports
+      # - store_test_results:
+      #    path: /tmp/test-reports
 
 
 workflows:
