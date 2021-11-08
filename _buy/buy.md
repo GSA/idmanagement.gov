@@ -9,6 +9,8 @@ sticky_sidenav: true
 subnav:
   - text: Products
     href: '#products'
+  - text: PACS Assessment
+    href: '##pacs-implementer-self-assessment-toolkit'
   - text: Services
     href: '#services'
   - text: GSA MAS
