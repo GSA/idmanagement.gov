@@ -9,8 +9,8 @@ sticky_sidenav: true
 subnav:
   - text: Products
     href: '#products'
-  - text: PACS Assessment
-    href: '##pacs-implementer-self-assessment-toolkit'
+  - text: PACS Assessment Toolkit
+    href: '#pacs-implementer-self-assessment-toolkit'
   - text: Services
     href: '#services'
   - text: GSA MAS
@@ -32,14 +32,12 @@ The **Approved Products List (APL)** contains the official list of these tested 
 
 **I can't find a category or product?**
 1. Products and services that have lost their certification due to security concerns are placed on the [Removed Products List (RPL)]({{site.baseurl}}/buy/removed-products-list/). 
-2. Categories are deprecated after it has reached a level of broad adoption or maturity and further testing is no longer needed (for example, card readers for logical access). Deprecated categories are [shared as a FIPS 201 Program announcement]({{site.baseurl}}/sell/fipsannouncements). A deprecated category is not the same as a removed product.
+2. Categories are deprecated after it has reached a level of broad adoption or maturity and further testing is no longer needed (for example, card readers for logical access). Deprecated categories are [shared as a FIPS 201 Program announcement]({{site.baseurl}}/sell/fipsannouncements). A deprecated category is not the same as a removed product. [Contact us]({{site.baseurl}}/contact-us/) if you’re unsure if a product is fit for government use.
 
 ## PACS Implementer Self-Assessment Toolkit
 
 The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-
-[Contact us]({{site.baseurl}}/contact-us/) if you’re unsure if a product is fit for government use.
 
 # Services
 
