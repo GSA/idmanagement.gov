@@ -79,13 +79,13 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 
 ## Membership and Meetings
 
-Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter](../../docs/fpkipa-charter.pdf){:target="_blank"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
+Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter](../../docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
 
 The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpki at gsa.gov to participate in the FPKIPA or its working groups.
 
 # Federal Public Key Infrastructure Management Authority
 
-[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
+[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
 
 ## Activities
 - **Manage digital certificate policies and standards** to ensure secure physical and logical access, document sharing, and communications across federal agencies and between external business partners.
@@ -94,13 +94,13 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
     - **Federal Bridge CA (FBCA)** is the PKI Bridge that enables interoperability between and among federally operated and business partner PKIs.
 
 ## FPKIMA Newsletter
-- [FPKIMA Newsletter – Volume 7, Issue 3](../../docs/fpki-fpkima-newsletter-73.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 7, Issue 2](../../docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 7, Issue 1](../../docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 6, Issue 3](../../docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 6, Issue 2](../../docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 6, Issue 1](../../docs/fpki-fpkima-newsletter-61.pdf){:target="_blank"} (PDF)
-- [FPKIMA Newsletter – Volume 5, Issue 4](../../docs/fpki-fpkima-newsletter-54.pdf){:target="_blank"} (PDF)
+- [FPKIMA Newsletter – Volume 7, Issue 3](../../docs/fpki-fpkima-newsletter-73.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF)
+- [FPKIMA Newsletter – Volume 7, Issue 2](../../docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF)
+- [FPKIMA Newsletter – Volume 7, Issue 1](../../docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF)
+- [FPKIMA Newsletter – Volume 6, Issue 3](../../docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF)
+- [FPKIMA Newsletter – Volume 6, Issue 2](../../docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"}{:rel="noopener noreferrer"}  (PDF)
+- [FPKIMA Newsletter – Volume 6, Issue 1](../../docs/fpki-fpkima-newsletter-61.pdf){:target="_blank"}{:rel="noopener noreferrer"}  (PDF)
+- [FPKIMA Newsletter – Volume 5, Issue 4](../../docs/fpki-fpkima-newsletter-54.pdf){:target="_blank"}{:rel="noopener noreferrer"}  (PDF)
 
 If your agency is experiencing issues related to the FBCA or FCPCA, contact fpki-help at gsa.gov
 

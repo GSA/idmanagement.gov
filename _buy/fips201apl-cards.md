@@ -43,7 +43,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
     {% for apl in site.data.fips201apl %}
       <tr class="apl-table-row" data-category="{{ apl.category }}">
           <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
-         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank">{{ apl.productname }}</a></td>
+         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
        </tr>
     {% endfor %} <!--apl-->

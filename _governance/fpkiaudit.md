@@ -37,17 +37,17 @@ The [FPKI Policy Authority (FPKIPA)](../ficam#federal-public-key-infrastructure-
 
 | FPKI Initiatve | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
-| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.1](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"} | [Common Policy X.509 Certificate and CRL Profiles v2.1](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}  | [Common Change Proposals](../fpkiarchive/) |
-| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.35](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} | [X.509 Certificate and CRL Extensions Profile v1.9](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"} | [Bridge Change Proposals](../fpkiarchive/) |
-| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.35](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"} and [PIV-I for Federal Issuers v2.0.1](../../docs/fpki-pivi-for-issuers.pdf){:target="_blank"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards v1.3](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}  | [Bridge Change Proposals](../fpkiarchive/) |
+| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.1](../../docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.1](../../docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals](../fpkiarchive/) |
+| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.35](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [X.509 Certificate and CRL Extensions Profile v1.9](../../docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals](../fpkiarchive/) |
+| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.35](../../docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} and [PIV-I for Federal Issuers v2.0.1](../../docs/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards v1.3](../../docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Bridge Change Proposals](../fpkiarchive/) |
 | Public Trust TLS | [U.S. Federal Public Trust TLS Certificate Policy v1.0](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"} | [U.S. Federal Public Trust TLS Certificate Profiles](https://devicepki.idmanagement.gov/certificateprofiles/){:target="_blank"}{:rel="noopener noreferrer"} | No change proposals |
 
 The FPKI has the following supplementary guidance:
 
-- [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for FPKI Systems (PDF, February 2021)](../../docs/fpki-overlay-sp-800-53.pdf){:target="_blank"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a Certification Authority that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
-- [FPKI Key Recovery Policy (PDF, October 2017)](../../docs/fpki-key-recovery.pdf){:target="_blank"} - The FPKI Key Recovery Policy (KRP) supplements the FPKI Certificate Policies and describes the procedural and technical security controls needed to operate a Key Recovery System (KRS) securely, in accordance with FPKIPA requirements.
-- [Registration Authority Agreement Template v1.0 (Word, April 2017)](../../docs/fpki-ssp-raa.docx){:target="_blank"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
-- [FPKI Incident Management Plan (PDF, September 2020)](../../docs/fpki-imp.pdf){:target="_blank"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident. 
+- [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for FPKI Systems (PDF, February 2021)](../../docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a Certification Authority that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
+- [FPKI Key Recovery Policy (PDF, October 2017)](../../docs/fpki-key-recovery.pdf){:target="_blank"}{:rel="noopener noreferrer"} - The FPKI Key Recovery Policy (KRP) supplements the FPKI Certificate Policies and describes the procedural and technical security controls needed to operate a Key Recovery System (KRS) securely, in accordance with FPKIPA requirements.
+- [Registration Authority Agreement Template v1.0 (Word, April 2017)](../../docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
+- [FPKI Incident Management Plan (PDF, September 2020)](../../docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident. 
 - [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents](../fpkiarchive/) - This pages contains three years of FPKI-related documents.
 
 
@@ -57,9 +57,9 @@ Independent compliance audits are the primary way that the Federal Public Key In
 
 Audits are required annually for Certification Authorities.  Annual review packages should be submitted to fpki at gsa.gov.
 
-- [FPKI Annual Review Requirements (PDF, September 2021)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"} – Requirements for performing and reporting annual compliance audits.
+- [FPKI Annual Review Requirements (PDF, September 2021)](../../docs/fpki-annual-review-requirements.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Requirements for performing and reporting annual compliance audits.
 - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in-person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}
-- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
+- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)](../../docs/fpki-nmf.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
 
 
 # Annual Review Schedule
@@ -97,9 +97,9 @@ This section contains information on audits performed on the Federal Common Poli
 
 The FPKIMA Certification Practice Statement (CPS) documents the operational practices required to ensure trusted operations. Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided below.
 
-- [U.S. FPKI Certification Practice Statement (PDF, June 2021) – Version 6.0](../../docs/fpki-fpkima-cps.pdf){:target="_blank"}
-- [U.S. FPKI Audit Letter of Compliance (PDF, October 2020)](../../docs/fpki-fpkima-audit-letter.pdf){:target="_blank"} – Results of the 2019-2020 Compliance Audit for the FPKI Trust Infrastructure Systems.
-- [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, October 2020)](../../docs/fpki-fpkima-sitemap.pdf){:target="_blank"}
+- [U.S. FPKI Certification Practice Statement (PDF, June 2021) – Version 6.0](../../docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [U.S. FPKI Audit Letter of Compliance (PDF, October 2020)](../../docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2019-2020 Compliance Audit for the FPKI Trust Infrastructure Systems.
+- [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, October 2020)](../../docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 # Reporting Incidents

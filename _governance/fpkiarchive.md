@@ -39,7 +39,7 @@ A blank category indicates no updates in the previous three years. If you seek a
         {% if docs.status == "post" %}
           {% if docs.category == category %}
             <tr class="docs-table-row" data-category="{{ docs.category }}">
-              <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-name"><a href="{{ docs.url | prepend: site.baseurl }}" target="_blank">{{ docs.name}}</a></td>
+              <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-name"><a href="{{ docs.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ docs.name}}</a></td>
               <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-date">{{ docs.remove }}</td>
             </tr>
            {% endif %} 

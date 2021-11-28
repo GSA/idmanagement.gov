@@ -57,9 +57,9 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   <tbody>
       {% for guide in site.data.fips201pacs %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infraapl">{{ guide.infraapl }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank">{{ guide.validation}}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.validation}}</a></td>
              <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-valapl">{{ guide.valapl }}</td>
           </tr>
       {% endfor %}
@@ -81,7 +81,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   <tbody>
       {% for guide in site.data.fips2011302 %}
           <tr class="pacs-table-row" data-category="{{ guide.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank">{{ guide.infrastructure }}</a></td>
+            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></td>
             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infraapl">{{ guide.infraapl }}</td>
           </tr>
       {% endfor %}
@@ -90,13 +90,13 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 # PACS Readers
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
-- [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"} 
-- [Gallagher T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}
-- [HID pivCLASS Series](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}
-- [Identiv uTrust Series](../docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}
-- [Innometriks Cheetah Series](../docs/apl-10109-130-cheetah.pdf){:target="_blank"}
-- [Veridt Series](../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}
-- [XTec X Series](../docs/apl-10077-82-xtec.pdf){:target="_blank"}
+- [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Gallagher T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [HID pivCLASS Series](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Identiv uTrust Series](../docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Innometriks Cheetah Series](../docs/apl-10109-130-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Veridt Series](../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [XTec X Series](../docs/apl-10077-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 
 # PACS Solutions Awaiting Approval
