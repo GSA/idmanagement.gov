@@ -6,3 +6,4 @@ node_modules
 .jekyll-cache/
 *.code-workspace
 .idea
+.ds_store

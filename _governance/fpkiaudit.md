@@ -98,9 +98,8 @@ This section contains information on audits performed on the Federal Common Poli
 The FPKIMA Certification Practice Statement (CPS) documents the operational practices required to ensure trusted operations. Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided below.
 
 - [U.S. FPKI Certification Practice Statement (PDF, June 2021) – Version 6.0](../../docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [U.S. FPKI Audit Letter of Compliance (PDF, October 2020)](../../docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2019-2020 Compliance Audit for the FPKI Trust Infrastructure Systems.
+- [U.S. FPKI Audit Letter of Compliance (PDF, August 2021)](../../docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2020-2021 Compliance Audit for the FPKI Trust Infrastructure Systems.
 - [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, October 2020)](../../docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-
 
 # Reporting Incidents
 
