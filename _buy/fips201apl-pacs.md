@@ -104,12 +104,12 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
-| 1 | Open Option + HID 13.01 | 10075 & 10076 | Update | In Test |
+| 1 | Open Options + HID 13.01 | 10075 & 10076 | Update | In Test |
 | 2	| Kastle + HID	13.01 | 10116 | Update | In Test |
-| 3	| CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
-| 4 | Lenel + HID 13.01 | 10112 & 10113 | Update |	In queue | 
-| 5	| ReconaSense + HID 13.01 | 10131 & 10132 | Update | In queue |
-| 6 | Identiv 13.02 + Reader addition | 10103 | UPdate | In queue |
-| 7 | Genetec + HID 13.01 | 10061 & 10062 | Update | In queue
+| 3	| ReconaSense + HID 13.01 | 10131 & 10132 | Update | In queue |
+| 4 | Gallagher Reader upgrade | 10114 | Update | In Queue 
+| 5	| Genetec + HID 13.01 | 10061 & 10062 | Update | In queue
+| 6 | AMAG + Identity One | New | New Solution | In queue
+| 7 | CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
