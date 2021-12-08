@@ -52,17 +52,17 @@ Functional requirements for the products are outlined in each test procedure. Re
 
 Review the testing agreements, and sign and submit the appropriate agreement with your testing package to fips201ep at gsa.gov.
 
-- [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"} – The formal agreement to enter into testing, signed by the vendor and the government official.
-- [Reseller Acknowledgement Form (MS Word, September 2014)](../../docs/fips201ep-resellerform.docx){:target="_blank"} – If you are reselling another product, this must be disclosed and the signed agreement submitted.
-- [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. Must accompany all submissions.
-- [Removed Products List (RPL) Process Document (PDF, June 2014)](../../docs/fips201ep-rplprocess.pdf){:target="_blank"} – If your product has been removed from the APL, review this document for the procedures.
+- [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"} – The formal agreement to enter into testing, signed by the vendor and the government official.
+- [Reseller Acknowledgement Form (MS Word, September 2014)](../../docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed and the signed agreement submitted.
+- [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. Must accompany all submissions.
+- [Removed Products List (RPL) Process Document (PDF, June 2014)](../../docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If your product has been removed from the APL, review this document for the procedures.
 
 ## Personal Identity Verification Credentials
 
-- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
+- [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
   - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
   - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
-- [Personal Identity Verification (PIV) Credential (PDF, January 2010)](../../docs/fips201ep-pivtestprocedures.pdf){:target="_blank"} – These test procedures are used by the independent, third-party labs to test card stock.
+- [Personal Identity Verification (PIV) Credential (PDF, January 2010)](../../docs/fips201ep-pivtestprocedures.pdf){:target="_blank"}{:rel="noopener noreferrer"} – These test procedures are used by the independent, third-party labs to test card stock.
 
 ## Derived PIV Credentials
 
@@ -79,11 +79,12 @@ GSA tests and validates the interoperability of PIV and CAC credentials with the
 
 Review the test procedures, choose one of the application packages, and submit to fips201ep at gsa.gov.
 
-- [PACS Functional Requirements and Test Cases v1.4.2 Rev. B (PDF, October 2021)](../../docs/fips201ep-pacsfrtc.pdf){:target="_blank"}
-    - [SM-OCC Companion Paper (PDF, March 2021)](../../docs/fips201ep-smocc.pdf){:target="_blank"}
-    - [Backend Registration Companion Paper (PDF, March 2021)](../../docs/fips201ep-brcp.pdf){:target="_blank"}
-    - [FRTC Express Companion Paper (PDF, March 2021)](../../docs/fips201ep-frtcexpress.pdf){:target="_blank"}
-- [PACS FRTC PIN Usage Policy Addendum (PDF, August 2018)](../../docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}
+- [PACS Functional Requirements and Test Cases v1.4.2 Rev. B (PDF, October 2021)](../../docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - [SM-OCC Companion Paper (PDF, March 2021)](../../docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Backend Registration Companion Paper (PDF, March 2021)](../../docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - [FRTC Express Companion Paper (PDF, March 2021)](../../docs/fips201ep-frtcexpress.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [PACS FRTC PIN Usage Policy Addendum (PDF, August 2018)](../../docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+
     - Review this Addendum for help resetting PIN retry counters, and determining the number of remaining PIN retries during Discovery Object testing.
 
 ### PACS Application Package for New Systems or for Updates to Previously Approved Systems
@@ -92,22 +93,22 @@ Vendors, please complete the following steps.
 
 **If you're providing an update to a previously approved system, please skip steps 4 and 5.**
 
-1. Review the [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"}.
+1. Review the [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"}{:rel="noopener noreferrer"}.
 2. Include one or both of the following, signed by a C- or VP-level individual:
-    - [Product/Service Self-Attestation Form (MS Word, August 2018)](../../docs/pacsapp-attestationform.docx){:target="_blank"}
-    - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}
-    - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}
-3. Complete the [Applicant Product Equipment List (MS Word, September 2017)](../../docs/pacsapp-equipmentlist.docx){:target="_blank"}.
+    - [Product/Service Self-Attestation Form (MS Word, August 2018)](../../docs/pacsapp-attestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+3. Complete the [Applicant Product Equipment List (MS Word, September 2017)](../../docs/pacsapp-equipmentlist.docx){:target="_blank"}{:rel="noopener noreferrer"}.
 4. **Only for New Systems**: Choose from the appropriate topology that best describes your solution:
-    - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}
-    - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}
-    - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}
-        - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
-    - Approved [PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}
-5. **Only for New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"} for your topology.
+    - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
+    - [Approved PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+5. **Only for New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
     - When submitting a product that uses an approved or provisionally approved topology, complete the Topology Mapping Workbook, rather than the PDF version, and submit it with your application.
 6. Complete a Topology Mapping Diagram as specified in Section 4.4 in the Approved PACS Topology Mapping Documents above.
-7. Execute the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}.
+7. Execute the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
 8. Include the completed form and checklist in theProduct/Service Application Form and Guidancein (1) above.
 9. Include all applicable VPAT statements, UL-294, and FIPS 140-2 listing documents.
 10. Submit all forms to fips201ep at gsa.gov.
@@ -116,6 +117,6 @@ Vendors, please complete the following steps.
 
 GSA can loan you test cards to help you pre-test your physical access control system products.
 
-- [PACS Test Card Loaner Process (PDF, November 2019)](../../docs/pacstest-process.pdf){:target="_blank"}
-- [PACS Test Card Loaner Set Request Form (MS Word, October 2019)](../../docs/pacstest-loanerrequestform.docx){:target="_blank"} – Sign and submit this form to fips201ep at gsa.gov.
-- [PACS Test Card User Guide (PDF, January 2019)](../../docs/pacstest-testuserguide.pdf){:target="_blank"}
+- [PACS Test Card Loaner Process (PDF, November 2019)](../../docs/pacstest-process.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [PACS Test Card Loaner Set Request Form (MS Word, October 2019)](../../docs/pacstest-loanerrequestform.docx){:target="_blank"}{:rel="noopener noreferrer"} – Sign and submit this form to fips201ep at gsa.gov.
+- [PACS Test Card User Guide (PDF, January 2019)](../../docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}

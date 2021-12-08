@@ -133,13 +133,13 @@ Please note the removal of these categories should not impact any acquisitions. 
 
 | Categories Removed	| Replacement |
 | ------------------- | ----------- |
-| Card Printer Station	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} |
+| Card Printer Station	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | Certificate Validator	| Server-based Certificate Validation Protocol Category |
 | Cryptographic Module	| [NIST FIPS 140-2 Validation List](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"} |
-| Electronic Personalization	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} |
-| Facial Image Capturing Camera	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} |
-| Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}|
-| Graphical Representation	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} |
+| Electronic Personalization	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
+| Facial Image Capturing Camera	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
+| Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}|
+| Graphical Representation	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Caching Status Proxy	| Server-based Certificate Validation Protocol Category |
 | LACS Mobile Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} |
