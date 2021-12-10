@@ -109,7 +109,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 | 3	| ReconaSense + HID 13.01 | 10131 & 10132 | Update | In queue |
 | 4 | Gallagher Reader upgrade | 10114 | Update | In Queue 
 | 5	| Genetec + HID 13.01 | 10061 & 10062 | Update | In queue
-| 6 | AMAG + Identity One | New | New Solution | In queue
+| 6 | AMAG + Identity One 13.01 | New | New Solution | In queue
 | 7 | CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
