@@ -5,6 +5,32 @@
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
 - category: Common Certificate Policy
+  numberProposal: 2.1
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.1
+  date: 05/18/2021
+  url: /docs/archived/fpki-x509-cert-policy-common-21.pdf
+  status: post
+  remove: 12/15/2024
+
+- category: Common Change Proposal
+  numberProposal: 2021-03
+  name: Proposal 2021-03 | Remove Exclusion of Containers from Common Policy
+  description: Remove the policy exclusion for using containers or container-type technology and include higher level language to accommodate future technologies compliant with the CP.
+  date: 10/26/2021
+  url: /docs/archived/fpki-common-cp-2103.pdf
+  status: post
+  remove: 12/15/2024
+
+- category: Common Change Proposal
+  numberProposal: 2021-02
+  name: Proposal 2021-02 | Updates to Audit and Archive Sections of Common Policy
+  description: This proposal incorporates suggested changes to Sections 5.4 and 5.5 of Common Policy and other related references based on the input of the Audit and Archive Work Team that operated at the request of the CPWG.
+  date: 09/28/2021
+  url: /docs/archived/fpki-common-cp-2102.pdf
+  status: post
+  remove: 12/15/2024
+
+- category: Common Certificate Policy
   numberProposal: 2.0
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.0
   date: 09/01/2020
