@@ -1,5 +1,14 @@
 # list of APL PIV Cards products
 
+- productname: ID-One PIV v 2.4.2 on Cosmo V8.2
+  productnumber: 1759285
+  category: PIV Card
+  supplier: IDEMIA
+  aplnumber: 1512
+  validdate: 11/16/2021
+  compliantwithtaa: Yes
+  url: /docs/apl-1512-IDOne-cosmo8_2.pdf
+
 - productname: ID-One PIV v 2.4.0 on Cosmo V8.1 (EEPROM)
   productnumber: 1501381 (applet in EEPROM)
   category: PIV Card

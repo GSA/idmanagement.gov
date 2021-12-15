@@ -1,7 +1,8 @@
 # list of archived fpki documents
 # numberProposal - Version number of the document or number of the change proposal
 # date = date on the document
-# Status Post - Post it to the website; Archive - Document was REPLACED more than three years and not posted to website. Retained in repository until disposal.
+# Status Post - Post it to the website; 
+# Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
 - category: Common Certificate Policy
@@ -53,7 +54,7 @@
   description: Specify treatment of CA private keys and escrowed private keys following CA termination. 
   date: 11/02/2018
   url: /docs/archived/fpki-common-cp-1808.pdf
-  status: post
+  status: archive
   remove: 11/02/2021
 
 - category: Common Change Proposal
@@ -62,7 +63,7 @@
   description: Remove the common-public-trusted-serverAuth certificate policy.
   date: 10/24/2018
   url: /docs/archived/fpki-common-cp-1807.pdf
-  status: post
+  status: archive
   remove: 10/24/2021
 
 - category: Common Change Proposal
