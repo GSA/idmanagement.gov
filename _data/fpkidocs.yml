@@ -1,34 +1,9 @@
 # list of archived fpki documents
 # numberProposal - Version number of the document or number of the change proposal
 # date = date on the document
-# Status Post - Post it to the website; Archive - Document was REPLACED more than three years and not posted to website. Retained in repository until disposal.
+# Status Post - Post it to the website; 
+# Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
-
-- category: Common Certificate Policy
-  numberProposal: 2.1
-  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.1
-  date: 05/18/2021
-  url: /docs/archived/fpki-x509-cert-policy-common-21.pdf
-  status: post
-  remove: 12/15/2024
-
-- category: Common Change Proposal
-  numberProposal: 2021-03
-  name: Proposal 2021-03 | Remove Exclusion of Containers from Common Policy
-  description: Remove the policy exclusion for using containers or container-type technology and include higher level language to accommodate future technologies compliant with the CP.
-  date: 10/26/2021
-  url: /docs/archived/fpki-common-cp-2103.pdf
-  status: post
-  remove: 12/15/2024
-
-- category: Common Change Proposal
-  numberProposal: 2021-02
-  name: Proposal 2021-02 | Updates to Audit and Archive Sections of Common Policy
-  description: This proposal incorporates suggested changes to Sections 5.4 and 5.5 of Common Policy and other related references based on the input of the Audit and Archive Work Team that operated at the request of the CPWG.
-  date: 09/28/2021
-  url: /docs/archived/fpki-common-cp-2102.pdf
-  status: post
-  remove: 12/15/2024
 
 - category: Common Certificate Policy
   numberProposal: 2.0
@@ -79,7 +54,7 @@
   description: Specify treatment of CA private keys and escrowed private keys following CA termination. 
   date: 11/02/2018
   url: /docs/archived/fpki-common-cp-1808.pdf
-  status: post
+  status: archive
   remove: 11/02/2021
 
 - category: Common Change Proposal
@@ -88,7 +63,7 @@
   description: Remove the common-public-trusted-serverAuth certificate policy.
   date: 10/24/2018
   url: /docs/archived/fpki-common-cp-1807.pdf
-  status: post
+  status: archive
   remove: 10/24/2021
 
 - category: Common Change Proposal
