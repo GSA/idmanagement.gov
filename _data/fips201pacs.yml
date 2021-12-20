@@ -52,7 +52,7 @@
   reader14apl: 10033
  
 - category: 13.01
-  fipsstatus: Under Review
+  fipsstatus: Approved
   infrastructure: AMAG Symmetry Professional v8.1
   infraurl: /docs/apl-10087-amag-symmetry-81.pdf
   infraapl: 10087
@@ -104,6 +104,36 @@
   reader7: pivCLASS R40 Contactless Reader
   reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader7apl: 10006
+
+- category: 13.01 
+  fipsstatus: Approved
+  infrastructure: 'Datawatch'
+  infraurl: /docs/apl-10117-datawatch.pdf
+  infraapl: 10117
+  validation: /docs/apl-10117-datawatch-validation.pdf
+  valApl: 10118
+  reader1: pivCLASS RKCL40 Contact/Contactless Reader + PIN
+  reader1url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader1apl: 10007
+  reader2: pivCLASS RK40 Contactless Reader + PIN
+  reader2url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader2apl: 10004
+  reader3: pivCLASS RPKCL40 Contact/Contactless Reader + PIN
+  reader3url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader3apl: 10008
+  reader4: 	pivCLASS RPK40 Contactless Reader + PIN
+  reader4url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader4apl: 10005
+  reader5: pivCLASS RP40 Contactless Reader
+  reader5url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader5apl: 10003
+  reader6: pivCLASS R10 Contactless Reader
+  reader6url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader6apl: 10085
+  reader7: pivCLASS R40 Contactless Reader
+  reader7url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
+  reader7apl: 10006
+
 
 - category: 13.01 
   fipsstatus: Approved
