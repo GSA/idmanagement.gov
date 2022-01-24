@@ -91,7 +91,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 # PACS Readers
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
 - [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [ASSA ABLOY integrated Signo Readers] (../docs/apl-10138-10131-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [ASSA ABLOY integrated Signo Readers](../docs/apl-10138-10131-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Gallagher T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID pivCLASS Series Readers](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers](../docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
