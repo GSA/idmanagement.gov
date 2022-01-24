@@ -91,6 +91,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 # PACS Readers
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
 - [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [ASSA ABLOY integrated Signo Readers] (../docs/apl-10138-10131-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Gallagher T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID pivCLASS Series Readers](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers](../docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
@@ -99,17 +100,15 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 - [Veridt Series Readers](../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [XTec X Series Readers](../docs/apl-10077-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-
 # PACS Solutions Awaiting Approval
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
-| 1 | Open Options + HID 13.01 | 10075 & 10076 | Update | Testing |
-| 2	| Kastle + HID	13.01 | 10116 | Update | Testing |
-| 3	| ReconaSense + HID 13.01 | 10131 & 10132 | Update | In queue |
-| 4 | Gallagher Reader upgrade | 10114 | Update | In queue |
-| 5	| Genetec + HID 13.01 | 10061 & 10062 | Update | In queue |
-| 6 | AMAG + Identity One 13.01 | New | New Solution | In queue |
-| 7 | CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
+| 1 | Gallagher Reader upgrade | 10114 | Update | In Test |
+| 2	| AMAG + Identity One 13.01 | New | New Solution | In Test |
+| 3	| Genetec + HID 13.01 | 10061 & 10062 | Update | In queue |
+| 4 | CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
+| 5	| Avigilon + HID 13.01 | 10122 & 10123 | Update | In queue |
+| 6 | Datawatch + HID 10.01 | 10117 & 10118 | Update | In queue |
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
