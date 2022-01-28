@@ -14,9 +14,9 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY Gemfile /app
-## COPY Gemfile.lock /app
+COPY Gemfile.lock /app
 
-RUN bundle install
 RUN bundle update --bundler
+RUN bundle install
 
 EXPOSE 4000
