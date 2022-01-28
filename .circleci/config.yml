@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6-node-browsers-legacy
+      - image: cimg/ruby:2.7.5-browsers
     steps:
       - checkout
       - restore_cache:
