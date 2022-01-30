@@ -90,22 +90,22 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 # PACS Readers
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
-- [Allegion Schlage Smart Card Readers](../docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [ASSA ABLOY integrated Signo Readers](../docs/apl-10138-10131-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Gallagher T Series PIV Readers](../docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [HID pivCLASS Series Readers](../docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [HID Signo Series Readers](../docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Identiv uTrust Series Readers](../docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Innometriks Cheetah Series Readers](../docs/apl-10109-130-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Veridt Series Readers](../docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [XTec X Series Readers](../docs/apl-10077-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-130-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [XTec X Series Readers]({{site.baseurl}}/docs/apl-10077-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 # PACS Solutions Awaiting Approval
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
-| 1 | Gallagher Reader upgrade | 10114 | Update | In Test |
-| 2	| AMAG + Identity One 13.01 | New | New Solution | In Test |
+| 1 | Gallagher Reader upgrade | 10114 | Update | In test |
+| 2	| AMAG + Identity One 13.01 | New | New Solution | In test |
 | 3	| Genetec + HID 13.01 | 10061 & 10062 | Update | In queue |
 | 4 | CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In queue |
 | 5	| Avigilon + HID 13.01 | 10122 & 10123 | Update | In queue |
