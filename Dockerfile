@@ -1,4 +1,4 @@
-FROM ruby:2.6.7
+FROM ruby:2.7.5
 
 RUN apt-get update && \
   apt-get install --reinstall -y locales && \
@@ -16,6 +16,7 @@ WORKDIR /app
 COPY Gemfile /app
 COPY Gemfile.lock /app
 
+RUN bundle update --bundler
 RUN bundle install
 
 EXPOSE 4000
