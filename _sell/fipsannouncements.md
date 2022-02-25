@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  FIPS 201 Evaluation Program Annoucements
+title:  FIPS 201 Evaluation Program Announcements
 collection: sell
 permalink: sell/fipsannouncements/
 sidenav: sell
@@ -31,7 +31,7 @@ PACS FRTC v1.4.2 Rev B has been published and is in effect immediately. This rev
 - Mobile / Handheld FRTC Test Cases (Section 8) are re-enstated.
 - Corrections and clarifications to existing test cases.
 
-Full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/FRTC-142-RevB-Change_Log.pdf){:target="_blank"} document.
+The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/FRTC-142-RevB-Change_Log.pdf){:target="_blank"} document.
 
 # PACS FRTC v1.4.2 Update Released
 
