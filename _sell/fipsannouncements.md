@@ -31,7 +31,7 @@ PACS FRTC v1.4.2 Rev B has been published and is in effect immediately. This rev
 - Mobile / Handheld FRTC Test Cases (Section 8) are re-enstated.
 - Corrections and clarifications to existing test cases.
 
-The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/FRTC-142-RevB-Change_Log.pdf){:target="_blank"} document.
+The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf]({{site.baseurl}}/docs/fips201-frtc-142-revb-change-log.pdf){:target="_blank"}{:rel="noopener noreferrer"} document.
 
 # PACS FRTC v1.4.2 Update Released
 
