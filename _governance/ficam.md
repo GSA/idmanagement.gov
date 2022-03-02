@@ -95,12 +95,12 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
 
 ## FPKIMA Newsletter
 - [FPKIMA Newsletter (Winter 2022) "ALPACA" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-81.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKIMA Newsletter (Summer 2021) "EO Improving Nation's Cybersecurity" (PDF)]({{site.baseurl}}//docs/fpki-fpkima-newsletter-73.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKIMA Newsletter (Spring 2021) "Federal Common Policy CA Update" (PDF)]({{site.baseurl}}//docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKIMA Newsletter (Winter 2021) "FPKIMA COVID-19 Response" (PDF)]({{site.baseurl}}//docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKIMA Newsletter (Fall 2019) "New Federal Identity Guidance" (PDF)]({{site.baseurl}}//docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKIMA Newsletter (Spring 2019) "The Big Bridge Issue" (PDF)]({{site.baseurl}}//docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKIMA Newsletter (Winter 2018) "GSA ACES Program Sunset Update" (PDF)]({{site.baseurl}}//docs/fpki-fpkima-newsletter-61.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKIMA Newsletter (Summer 2021) "EO Improving Nation's Cybersecurity" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-73.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKIMA Newsletter (Spring 2021) "Federal Common Policy CA Update" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKIMA Newsletter (Winter 2021) "FPKIMA COVID-19 Response" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-71.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKIMA Newsletter (Fall 2019) "New Federal Identity Guidance" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-63.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKIMA Newsletter (Spring 2019) "The Big Bridge Issue" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKIMA Newsletter (Winter 2018) "GSA ACES Program Sunset Update" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-61.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 If your agency is experiencing issues related to the FBCA or FCPCA, contact fpki-help at gsa.gov
 

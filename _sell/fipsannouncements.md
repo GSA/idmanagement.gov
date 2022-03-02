@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  FIPS 201 Evaluation Program Annoucements
+title:  FIPS 201 Evaluation Program Announcements
 collection: sell
 permalink: sell/fipsannouncements/
 sidenav: sell
@@ -31,7 +31,7 @@ PACS FRTC v1.4.2 Rev B has been published and is in effect immediately. This rev
 - Mobile / Handheld FRTC Test Cases (Section 8) are re-enstated.
 - Corrections and clarifications to existing test cases.
 
-Full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/FRTC-142-RevB-Change_Log.pdf){:target="_blank"} document.
+The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/fips201-frtc-142-revb-change-log.pdf){:target="_blank"}{:rel="noopener noreferrer"} document.
 
 # PACS FRTC v1.4.2 Update Released
 
@@ -144,7 +144,7 @@ Please note the removal of these categories should not impact any acquisitions. 
 | LACS Mobile Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} |
 | PIV Middleware	| [NIST PIV Middleware Certification List](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} |
-| Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://www.fbibiospecs.cjis.gov/Certifications){:target="_blank"}{:rel="noopener noreferrer"} |
+| Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://fbibiospecs.fbi.gov/certifications-1/cpl){:target="_blank"}{:rel="noopener noreferrer"} |
 | Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
 | Template Matcher	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
 
