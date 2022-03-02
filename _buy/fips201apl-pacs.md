@@ -92,8 +92,8 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
 - [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [HES integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}{:rel="noopener noreferrer"}
