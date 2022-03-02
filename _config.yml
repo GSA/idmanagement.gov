@@ -165,7 +165,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
-
 assets:
   autoprefixer:
     browsers:
@@ -173,10 +172,8 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  compression: true
   sources:
     - node_modules/uswds/dist/img
     - node_modules/uswds/dist/js
     - node_modules/uswds/dist/scss
     - node_modules/netlify-cms/dist
-
