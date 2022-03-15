@@ -4,7 +4,7 @@ We’re sorry; we can’t find the page you’re looking for. It may have been m
 
 If you typed the URL into your browser, please check your spelling and capitalization. Our URLs may look like this: 
 
-[![A screenshot of three example IDManagement.gov URLs.]({{site.baseurl}}/assets/example-idm-urls.PNG)]({{site.baseurl}}/assets/example-idm-urls.png){:target="_blank"}{:rel="noopener noreferrer"}
+[![A screenshot of five example IDManagement.gov URLs.]({{site.baseurl}}/assets/example-idm-urls.PNG)]({{site.baseurl}}/assets/example-idm-urls.PNG){:target="_blank"}{:rel="noopener noreferrer"}
 
 Please try using the search function above to find the page or information you need.
 
