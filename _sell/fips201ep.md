@@ -92,18 +92,18 @@ Review the test procedures, choose one of the application packages, and submit t
 All applicants, please complete the following steps. 
 
 1. Review the - [Approved Product List Application Guidance Document (PFD, April 2022)](../../docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
-2. Copmlete the [Approved Product List Application Form (Word, April 2022)](../../docs/fips201ep-ppplication-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
+2. Complete the [Approved Product List Application Form (Word, April 2022)](../../docs/fips201ep-ppplication-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
 3. Include the following  doucment when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
-    - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Product Series and Licensing Form (MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
 4. **For New Solutions** Complete the additional documentation 
-    - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Supply Chain Self-Attestation Form (MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
 5. **For New Solutions**: Review the following documentation and select from the appropriate topology that best describes your solution:
     - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"}
       - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - [Approved PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-6. **For New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
+6. **For New Systems**: Complete the [PACS FRTC Topology Mapping Workbook (XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
 7. Complete the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
 8. Include all applicable VPAT statements, UL-294, and FIPS 140-2/140-3 listing documents.
 9. Submit all completed forms to fips201ep at gsa.gov.
