@@ -54,8 +54,8 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 - [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"} – The formal agreement to enter into testing, signed by the vendor and the government official.
 - [Reseller Acknowledgement Form (MS Word, September 2014)](../../docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed and the signed agreement submitted.
-- [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. Must accompany all submissions.
-- [Removed Products List (RPL) Process Document (PDF, June 2014)](../../docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If your product has been removed from the APL, review this document for the procedures.
+- [Approved Product List Application Guidance Document (PFD, April 2022)](../../docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. 
+- [Removed Products List (RPL) Process Document (PDF, April 2022](../../docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If your product has been removed from the APL, review this document for the procedures.
 
 ## Personal Identity Verification Credentials
 
@@ -93,25 +93,22 @@ Vendors, please complete the following steps.
 
 **If you're providing an update to a previously approved system, please skip steps 4 and 5.**
 
-1. Review the [Product/Service Application Form and Guidance (MS Word, September 2018)](../../docs/fips201ep-applicationform.docx){:target="_blank"}{:rel="noopener noreferrer"}.
-2. Include one or both of the following, signed by a C- or VP-level individual:
-    - [Product/Service Self-Attestation Form (MS Word, August 2018)](../../docs/pacsapp-attestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+1. Review the - [Approved Product List Application Guidance Document (PFD, April 2022)](../../docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
+2. Copmlete the [Approved Product List Application Form (Word, April 2022)](../../docs/fips201ep-ppplication-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
+3. Include the following  doucment when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
     - [Product Series and Licensing Form(MS Word, August 2018)](../../docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
+4. **For New Solutions** Complete the additional documentation 
     - [Supply Chain Self-Attestation Form(MS Word, March 2020)](../../docs/pacsapp-supplyattestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
-3. Complete the [Applicant Product Equipment List (MS Word, September 2017)](../../docs/pacsapp-equipmentlist.docx){:target="_blank"}{:rel="noopener noreferrer"}.
-4. **Only for New Systems**: Choose from the appropriate topology that best describes your solution:
+6. **For New Solutions**: Review the following documentation and select from the appropriate topology that best describes your solution:
     - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)](../../docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)](../../docs/pacsapp-pacs1302.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)](../../docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - [Approved PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-5. **Only for New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
-    - When submitting a product that uses an approved or provisionally approved topology, complete the Topology Mapping Workbook, rather than the PDF version, and submit it with your application.
-6. Complete a Topology Mapping Diagram as specified in Section 4.4 in the Approved PACS Topology Mapping Documents above.
-7. Execute the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
-8. Include the completed form and checklist in theProduct/Service Application Form and Guidancein (1) above.
+7. **For New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
+8. Complete the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
 9. Include all applicable VPAT statements, UL-294, and FIPS 140-2 listing documents.
-10. Submit all forms to fips201ep at gsa.gov.
+10. Submit all completed forms to fips201ep at gsa.gov.
 
 ### Test Card Loaners
 
