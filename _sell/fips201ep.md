@@ -105,7 +105,7 @@ All applicants, please complete the following steps.
     - [Approved PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)](../../docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 6. **For New Systems**: Complete the [PACS FRTC Topology Mapping Workbook(XLSX, October 2021)](../../docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
 7. Complete the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
-8. Include all applicable VPAT statements, UL-294, and FIPS 140-2 listing documents.
+8. Include all applicable VPAT statements, UL-294, and FIPS 140-2/140-3 listing documents.
 9. Submit all completed forms to fips201ep at gsa.gov.
 
 ### Test Card Loaners
