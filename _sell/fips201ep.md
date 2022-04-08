@@ -54,7 +54,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 - [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)](../../docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"} – The formal agreement to enter into testing, signed by the vendor and the government official.
 - [Reseller Acknowledgement Form (MS Word, September 2014)](../../docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed and the signed agreement submitted.
-- [Approved Product List Application Guidance Document (PFD, April 2022)](../../docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. 
+- [Approved Product List Application Guidance Document (PDF, April 2022)](../../docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. 
 - [Removed Products List (RPL) Process Document (PDF, April 2022](../../docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If your product has been removed from the APL, review this document for the procedures.
 
 ## Personal Identity Verification Credentials
