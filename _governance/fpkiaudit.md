@@ -33,7 +33,7 @@ The Federal Public Key Infrastructure (FPKI) provides the government with a trus
 - [FPKI Guide](https://playbooks.idmanagement.gov/fpki/){:target="_blank"}{:rel="noopener noreferrer"}
 - [PIV Guide](https://playbooks.idmanagement.gov/piv/){:target="_blank"}{:rel="noopener noreferrer"}
 
-The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam#federal-public-key-infrastructure-policy-authority) maintains two certificate policies (Common Policy Framework, and Federal Bridge). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
+The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/governance/ficam/#federal-public-key-infrastructure-policy-authority) maintains two certificate policies (Common Policy Framework, and Federal Bridge). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
 
 | FPKI Initiatve | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
