@@ -92,7 +92,7 @@ Review the test procedures, choose one of the application packages, and submit t
 All applicants, please complete the following steps: 
 
 1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
-2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-ppplication-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
+2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-application-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
 3. Include the following  document when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
     - [Product Series and Licensing Form (MS Word, August 2018)]({{site.baseurl}}/docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
 4. **For New Solutions** Complete the additional documentation 
