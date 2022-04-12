@@ -22,6 +22,13 @@ subnav:
 
 This is a list of the latest news out of the FIPS 201 Evaluation Program.
 
+# PACS APL Application Form revision
+
+POSTED: April 14, 2022
+
+PACS APL testing form has undergone a major revision.  The new testing APL Application form consolidates multiple documents and reduces redundant information across those forms.  All submissions for upgrade will only need to submit a completed new APL Application form unless a significant change to architecture requires new FRTC per the lab's discretion.  Submission directions have been updated on the [FIPS 201 Evaluation Program page](../../fips201/)
+
+
 # PACS FRTC v1.4.2 Rev B Released
 
 POSTED: October 15, 2021
