@@ -5,6 +5,14 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: Supplementary Guidance
+  numberProposal: 2.0.1
+  name: Personal Identity Verification Interoperability for Issuers v2.0.1
+  date: 07/27/2017
+  url: /docs/archived/fpki-pivi-for-issuers.pdf
+  status: post
+  remove: 05/01/2025
+
 - category: FPKI Trust Infrastructure Certificate Practice Statement
   numberProposal: 6.0
   name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.0
