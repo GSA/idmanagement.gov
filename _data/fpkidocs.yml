@@ -6,6 +6,14 @@
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
 - category: Supplementary Guidance
+  numberProposal: 1.01
+  name: FPKI Annual Audit Review Guidelines v1.01
+  date: 09/29/2021
+  url: /docs/archived/fpki-annual-review-requirements_v1.01_20210929.pdf
+  status: post
+  remove: 05/12/2022
+
+- category: Supplementary Guidance
   numberProposal: 2.0.1
   name: Personal Identity Verification Interoperability for Issuers v2.0.1
   date: 07/27/2017
@@ -630,14 +638,6 @@
   url: /docs/archived/fpki-annual-review-requirements-v1-20170411.pdf
   status: post
   remove: 09/30/2024
-  
-- category: Supplementary Guidance
-  numberProposal: 1.01
-  name: FPKI Annual Audit Review Guidelines v1.01
-  date: 09/29/2021
-  url: /docs/archived/fpki-annual-review-requirements_v1.01_0921.pdf
-  status: post
-  remove: 05/12/2022
 
 - category: Supplementary Guidance
   numberProposal: 2.0
