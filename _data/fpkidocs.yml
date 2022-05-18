@@ -23,6 +23,14 @@
   remove: 05/06/2025
 
 - category: Supplementary Guidance
+  numberProposal: 1.01
+  name: FPKI Annual Audit Review Guidelines v1.01
+  date: 09/29/2021
+  url: /docs/archived/fpki-annual-review-requirements_v1.01_20210929.pdf
+  status: post
+  remove: 05/12/2022
+
+- category: Supplementary Guidance
   numberProposal: 2.0.1
   name: Personal Identity Verification Interoperability for Issuers v2.0.1
   date: 07/27/2017
