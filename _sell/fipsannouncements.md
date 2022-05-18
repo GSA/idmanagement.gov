@@ -12,7 +12,7 @@ subnav:
   - text: Apr 2022 - PACS APL Application Form revision
     href: '#pacs-apl-application-form-revision'
   - text: Oct 2021 - PACS FRTC v1.4.2 Rev B Released
-    href: '#pacs-frtc-v142-Rev-B-released'
+    href: '#pacs-frtc-v142-rev-b-released'
   - text: Mar 2021 - PACS FRTC v1.4.2 Update Released
     href: '#pacs-frtc-v142-update-released'
   - text: Dec 2020 - Category Removed from the APL December 2020
