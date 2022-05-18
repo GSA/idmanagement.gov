@@ -7,14 +7,16 @@ sidenav: sell
 sticky_sidenav: true
 
 subnav:
+  - text: May 2022 - GSA FIPS 201 Testing Lab Transition Planning
+    href: '#gsa-fips-201-testing-lab-transition-planning'
+  - text: Apr 2022 - PACS APL Application Form revision
+    href: '#pacs-apl-application-form-revision'
   - text: Oct 2021 - PACS FRTC v1.4.2 Rev B Released
     href: '#pacs-frtc-v142-Rev-B-released'
   - text: Mar 2021 - PACS FRTC v1.4.2 Update Released
     href: '#pacs-frtc-v142-update-released'
   - text: Dec 2020 - Category Removed from the APL December 2020
     href: '#category-removed-from-the-apl-december-2020'
-  - text: Apr 2019 - Category Removed from the APL April 2019
-    href: '#category-removed-from-the-apl-april-2019'
   - text: Announcements Older Than Three Years
     href: '#announcements-older-than-three-years'
 
@@ -22,7 +24,7 @@ subnav:
 
 This is a list of the latest news from the FIPS 201 Evaluation Program.
 
-## Important Notice Re: GSA FICAM Testing Lab
+## GSA FIPS 201 Testing Lab Transition Planning
 
 POSTED: May 11, 2022
 
@@ -32,21 +34,10 @@ The current contract with the testing services provider for the GSA FICAM Testin
 
 During the transition period, please note the following:
 
-### Vendor Verification of System Health
-
-We ask that each Vendor schedule an in-person appointment with the Lab prior to June 3, 2022, to verify the health of its installed system. Each Vendor representative may test its system during the visit, but updating software and hardware will not be permitted. The Lab will perform a small number of tests from the FRTC during the visit. Results will be documented, signed by Vendor and Lab representatives, and submitted to GSA.
-
-For any Vendor that is unable to go to the Lab in person prior to June 3, 2022, the Lab will issue a status report to GSA reflecting the system’s state as “unknown.” Until an in-person visit with the new Lab provider occurs to establish system status, no new applications will be accepted.
-
-### Testing in Progress
-
-The Lab is making every effort to complete as much testing as possible before we enter the transition phase. Testing for Vendor systems in process will conclude by May 27, 2022. 
-
-### New Vendor Applications
-Applications received **before** May 31, 2022, will be reviewed by the existing Lab provider. Applications received **after** May 31, 2022, will be paused until the new provider is in place.
-
-### System Updates and New Installations
-System updates and new installations will not be processed until the new Lab provider is in place. 
+1. **Vendor Verification of System Health** - We ask that each Vendor schedule an in-person appointment with the Lab prior to June 3, 2022, to verify the health of its installed system. Each Vendor representative may test its system during the visit, but updating software and hardware will not be permitted. The Lab will perform a small number of tests from the FRTC during the visit. Results will be documented, signed by Vendor and Lab representatives, and submitted to GSA. For any Vendor that is unable to go to the Lab in person prior to June 3, 2022, the Lab will issue a status report to GSA reflecting the system’s state as “unknown.” Until an in-person visit with the new Lab provider occurs to establish system status, no new applications will be accepted.
+2. **Testing in Progress** - The Lab is making every effort to complete as much testing as possible before we enter the transition phase. Testing for Vendor systems in process will conclude by May 27, 2022. 
+3. **New Vendor Applications** - Applications received **before** May 31, 2022, will be reviewed by the existing Lab provider. Applications received **after** May 31, 2022, will be paused until the new provider is in place.
+4. **System Updates and New Installations** - System updates and new installations will not be processed until the new Lab provider is in place. 
 
 We will issue an announcement in June detailing next steps in the transition process, including the process of moving existing systems to a new physical location.
 
@@ -97,7 +88,9 @@ Please note the removal of this category should not impact any existing acquisit
 
 [Return to Top](#top)
 
-## Category Removed from the APL April 2019
+## Announcements Older Than Three Years
+
+### Category Removed from the APL April 2019
 
 POSTED April 30, 2019
 
@@ -109,8 +102,6 @@ The FIPS 201 Evaluation program has removed the following categories from the [A
 Please note the removal of these categories should not impact any acquisition. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
 
 [Return to Top](#top)
-
-## Announcements Older Than Three Years
 
 ### PACS FRTC v1.3.3 Update Released 
 
