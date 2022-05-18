@@ -19,7 +19,7 @@ subnav:
     href: '#federal-public-key-infrastructure-working-groups'
 ---
 
-[![An organization chart of the FICAM Governance Bodies and Working Groups]({{site.baseurl}}/assets/img/ficam-governance.png){:style="float:center"}]({{site.baseurl}}/assets/img/ficam-governance.png){:target="_blank"}{:rel="noopener noreferrer"}
+<img src="{{site.baseurl}}/assets/img/ficam-governance.png" alt="An organization chart of the FICAM Governance Bodies and Working Groups." width="560" height="319">
 
 # Identity, Credential, and Access Management Subcommittee
 
@@ -51,7 +51,6 @@ The ICAMSC charters working groups based on a defined-purpose and timeline. See 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
 | [**Physical Access Control Systems Modernization (PACSMod)**](https://community.max.gov/display/Egov/PACSMod+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the implementation and use of the technology and processes related to modernizing electronic-PACS (ePACS) within the Federal Government (USG). | Develop a PACS Assessment Toolkit, a self-assessment that agencies can utilize for FICAM compliance of PACS implementations by September 30th, 2021. | Federal employees and designated contractors operating a PACS. | Monthly |
-| [**Cloud Identity Working Group**](https://community.max.gov/display/test/Cloud+Identity+Working+Group+Homepage){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the [OMB cloud smart initiative](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} within the Federal Government (USG) and ensuring secure and efficient identity management operations. | Create guidance to help agencies integrate and operate identity architecture components hosted in a public cloud environment by September 30th, 2021. | Federal employees and designated contractors | Monthly |
 
 ## Other ICAM Working Groups
 
