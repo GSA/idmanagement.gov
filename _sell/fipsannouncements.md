@@ -7,29 +7,51 @@ sidenav: sell
 sticky_sidenav: true
 
 subnav:
+  - text: May 2022 - GSA FIPS 201 Testing Lab Transition Planning
+    href: '#gsa-fips-201-testing-lab-transition-planning'
+  - text: Apr 2022 - PACS APL Application Form revision
+    href: '#pacs-apl-application-form-revision'
   - text: Oct 2021 - PACS FRTC v1.4.2 Rev B Released
-    href: '#pacs-frtc-v142-Rev-B-released'
+    href: '#pacs-frtc-v142-rev-b-released'
   - text: Mar 2021 - PACS FRTC v1.4.2 Update Released
     href: '#pacs-frtc-v142-update-released'
   - text: Dec 2020 - Category Removed from the APL December 2020
     href: '#category-removed-from-the-apl-december-2020'
-  - text: Apr 2019 - Category Removed from the APL April 2019
-    href: '#category-removed-from-the-apl-april-2019'
   - text: Announcements Older Than Three Years
     href: '#announcements-older-than-three-years'
 
 ---
 
-This is a list of the latest news out of the FIPS 201 Evaluation Program.
+This is a list of the latest news from the FIPS 201 Evaluation Program.
 
-# PACS APL Application Form revision
+## GSA FIPS 201 Testing Lab Transition Planning
+
+POSTED: May 11, 2022
+
+GSA FICAM Testing Program Vendor:
+
+The current contract with the testing services provider for the GSA FICAM Testing Lab concludes on June 15, 2022. We are working to ensure a smooth transition for all our Vendors as we onboard a new provider.
+
+During the transition period, please note the following:
+
+1. **Vendor Verification of System Health** - We ask that each Vendor schedule an in-person appointment with the Lab prior to June 3, 2022, to verify the health of its installed system. Each Vendor representative may test its system during the visit, but updating software and hardware will not be permitted. The Lab will perform a small number of tests from the FRTC during the visit. Results will be documented, signed by Vendor and Lab representatives, and submitted to GSA. For any Vendor that is unable to go to the Lab in person prior to June 3, 2022, the Lab will issue a status report to GSA reflecting the system’s state as “unknown.” Until an in-person visit with the new Lab provider occurs to establish system status, no new applications will be accepted.
+2. **Testing in Progress** - The Lab is making every effort to complete as much testing as possible before we enter the transition phase. Testing for Vendor systems in process will conclude by May 27, 2022. 
+3. **New Vendor Applications** - Applications received **before** May 31, 2022, will be reviewed by the existing Lab provider. Applications received **after** May 31, 2022, will be paused until the new provider is in place.
+4. **System Updates and New Installations** - System updates and new installations will not be processed until the new Lab provider is in place. 
+
+We will issue an announcement in June detailing next steps in the transition process, including the process of moving existing systems to a new physical location.
+
+[Return to Top](#top)
+
+## PACS APL Application Form revision
 
 POSTED: April 14, 2022
 
 PACS APL testing form has undergone a major revision.  The new testing APL Application form consolidates multiple documents and reduces redundant information across those forms.  All submissions for upgrade will only need to submit a completed new APL Application form unless a significant change to architecture requires new FRTC per the lab's discretion.  Submission directions have been updated on the [FIPS 201 Evaluation Program page](../../fips201/)
 
+[Return to Top](#top)
 
-# PACS FRTC v1.4.2 Rev B Released
+## PACS FRTC v1.4.2 Rev B Released
 
 POSTED: October 15, 2021
 
@@ -40,7 +62,9 @@ PACS FRTC v1.4.2 Rev B has been published and is in effect immediately. This rev
 
 The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/fips201-frtc-142-revb-change-log.pdf){:target="_blank"}{:rel="noopener noreferrer"} document.
 
-# PACS FRTC v1.4.2 Update Released
+[Return to Top](#top)
+
+## PACS FRTC v1.4.2 Update Released
 
 POSTED: March 31, 2021
 
@@ -54,7 +78,7 @@ Additionally, a new testing procedure called the FRTC Express has been published
 
 [Return to Top](#top)
 
-# Category Removed from the APL December 2020
+## Category Removed from the APL December 2020
 
 POSTED December 11, 2020
 
@@ -64,7 +88,9 @@ Please note the removal of this category should not impact any existing acquisit
 
 [Return to Top](#top)
 
-# Category Removed from the APL April 2019
+## Announcements Older Than Three Years
+
+### Category Removed from the APL April 2019
 
 POSTED April 30, 2019
 
@@ -77,9 +103,7 @@ Please note the removal of these categories should not impact any acquisition. C
 
 [Return to Top](#top)
 
-# Announcements Older Than Three Years
-
-## PACS FRTC v1.3.3 Update Released 
+### PACS FRTC v1.3.3 Update Released 
 
 POSTED February 2, 2018
 
@@ -92,7 +116,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 [Return to Top](#top)
 
-## Category Removed from the APL June 2018
+### Category Removed from the APL June 2018
 
 POSTED June 30, 2018
 
@@ -100,7 +124,7 @@ In the past, the FIPS 201 Evaluation Program has granted extensions for allowing
 
 [Return to Top](#top)
 
-## Now Testing Derived PIV Credentials
+### Now Testing Derived PIV Credentials
 
 POSTED August 18, 2017
 
@@ -108,7 +132,7 @@ The FIPS 201 Evaluation Program has established the criteria for testing derived
 
 [Return to Top](#top)
 
-## Extension for Random Number Generator (RNG)-based PIV Cards
+### Extension for Random Number Generator (RNG)-based PIV Cards
 
 POSTED May 24, 2017
 
@@ -120,7 +144,7 @@ The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue t
 
 [Return to Top](#top)
 
-## Categories Removed from the APL October 2016
+### Categories Removed from the APL October 2016
 
 POSTED October 29, 2016
 
@@ -157,7 +181,7 @@ Please note the removal of these categories should not impact any acquisitions. 
 
 [Return to Top](#top)
 
-## Category Removed from the APL June 2016
+### Category Removed from the APL June 2016
 
 POSTED June 23, 2016
 
@@ -167,7 +191,7 @@ According to this transition plan, agencies may continue to procure and issue cr
 
 [Return to Top](#top)
 
-## GSA Document Signing Tool
+### GSA Document Signing Tool
 
 POSTED April 12, 2016
 
@@ -179,7 +203,7 @@ As new questions are posted to the [“Issues” section](http://github.com/GSA/
 
 [Return to Top](#top)
 
-## Category Removed from the APL June 2014
+### Category Removed from the APL June 2014
 
 POSTED June 13, 2014
 
