@@ -66,24 +66,24 @@ Audits are required annually for Certification Authorities.  Annual review packa
 
 | Entity	| Type	| Annual Review Package Due Date|
 | ------- | :-----: | :-----------------------------: |
-| CertiPath	| Bridge |	Jun 30 |
-| Drug Enforcement Agency (DEA)	| Trust Partner	| Sep 30 |
-| DigiCert (DirectTrust)	| Affiliate PKI	| July 31 |
+| CertiPath	| Bridge |	June 30 |
+| Drug Enforcement Agency (DEA)	| Trust Partner	| September 30 |
+| DigiCert (ECPS)	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Non-Federal Issuer [NFI])	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
-| Department of Defense (DoD)	| Affiliate PKI	| Aug 30 |
-| Department of State (DOS)	| Affiliate PKI	| Jun 30 |
+| Department of Defense (DoD)	| Affiliate PKI	| August 31 |
+| Department of State (DOS)	| Affiliate PKI	| October 31 |
 | Department of the Treasury	| SSP	| July 31 |
-| Entrust NFI	| Affiliate PKI	| Nov 22 |
-| Entrust Federal SSP	| SSP	| Nov 22 |
-| Exostar	| Affiliate PKI	| May 31 |
-| Government Publishing Office (GPO)	| Affiliate PKI	| Oct 31 |
-| IdenTrust NFI	| Affiliate PKI	| Aug 31 |
-| Patent and Trademark Office (PTO)	| Affiliate PKI	| April 30 |
-| SAFE Identity	| Bridge	| Oct 31 |
-| Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| Nov 30 |
-| Transglobal Secure Collaboration Program (TSCP)	| Bridge	| May 31 |
-| Verizon SSP	| SSP	| July 31 |
+| Entrust NFI	| Affiliate PKI	| November 22 |
+| Entrust Federal SSP	| SSP	| November 22 |
+| Exostar	| Affiliate PKI	| June 10 |
+| Government Publishing Office (GPO)	| Affiliate PKI	| October 31 |
+| IdenTrust NFI	| Affiliate PKI	| August 31 |
+| Patent and Trademark Office (PTO)	| Affiliate PKI	| October 31 |
+| SAFE Identity	| Bridge	| October 31 |
+| Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| November 30 |
+| Transglobal Secure Collaboration Program (TSCP)	| Bridge	| July 31 |
+| Verizon SSP	| SSP	| August 31 |
 | WidePoint NFI	| Affiliate PKI	| May 31 |
 | WidePoint SSP	| SSP	| May 31 |
 
