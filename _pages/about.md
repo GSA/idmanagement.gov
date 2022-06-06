@@ -12,7 +12,7 @@ IDManagement.gov is a website about the Federal Identity, Credential, and Access
 
 The FICAM program supports federal agencies through the entire identity management lifecycle. We also work with vendors to test and approve ICAM products and services for use by the Federal Government.
 
-## Who Manages this Website?
+## Who Manages This Website?
 
 This website is managed by the Office of Information Integrity and Access, Office of Government-wide Policy, General Services Administration (GSA). Our mailing address is:
 
