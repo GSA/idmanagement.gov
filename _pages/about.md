@@ -16,9 +16,9 @@ The FICAM program supports federal agencies through the entire identity manageme
 
 This website is managed by the Office of Information Integrity and Access, Office of Government-wide Policy, General Services Administration (GSA). Our mailing address is:
 
-U.S. General Services Administration
-Office of Government-wide Policy, ME
-1800 F Street, NW
+U.S. General Services Administration<br>
+Office of Government-wide Policy<br>
+1800 F Street, NW<br>
 Washington, DC 20405
 
 If you have questions about the FICAM program, or this website, please email icam at gsa.gov.
