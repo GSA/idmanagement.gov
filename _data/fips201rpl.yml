@@ -5,11 +5,11 @@
     nameProduct: 'Amag Symmetry'
     numberProduct: 'PRO-PLAT-v8.1-HSE'
     dateRemoval: 'Thursday, June 9, 2022'
-    numberApl: '10877'
+    numberApl: '10087'
     reason: 'Not approved for FRTC 1.3.3'
     status: post
--
-    category: 'PACS Validation System'
+    
+-   category: 'PACS Validation System'
     supplier: 'Technology Industries'
     nameProduct: 'Technology Industries Validation SYstem for AMAG Professional'
     numberProduct: 'EP-IDM-STE'
