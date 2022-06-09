@@ -105,12 +105,10 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
-| 1 | CCure 2.8 + Innometriks 13.01 | 10115 & 10108 | Update | In Test |
-| 2 | Honeywell + HID 13.01 | 10063 & 10064 | Update | In queue |
-| 3	| System Galaxy + TI | 10083 & 10084 | Update | In queue | 
-| 4	| AMAG + Identity One 13.01 | New | New Solution | In queue |
+| 1 | System Galaxy + TI | 10083 & 10084 | Update | In queue |
+| 2 | Identiv 13.01 + 13.02 | 10013 & 10014, 10103 | Update | In queue |
+| 3	| Genetec Reader Addition | 10061 & 10062 | Update | In queue | 
+| 4	| Genetec + TI | New | New | In queue |
 | 5 | Datawatch + HID 13.01 | 10117 & 10118 | Update | In queue |
-| 6 | Identiv 13.01 + 13.02 | 10013 & 10014, 10103 | Update | In queue |
-
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
