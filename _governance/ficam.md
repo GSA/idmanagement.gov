@@ -19,7 +19,7 @@ subnav:
     href: '#federal-public-key-infrastructure-working-groups'
 ---
 
-<img src="{{site.baseurl}}/assets/img/ficam-governance.png" alt="An organization chart of the FICAM Governance Bodies and Working Groups." width="560" height="319">
+<img src="{{site.baseurl}}/assets/img/ficam-governance-updated.png" alt="An organization chart of the FICAM Governance Bodies and Working Groups." width="560" height="319">
 
 # Identity, Credential, and Access Management Subcommittee
 
