@@ -157,7 +157,7 @@
   infraapl: 10120
   validation: HID Global Validation System for Feenics Keep V3 with Embedded Authentication
   valurl: /docs/apl-10121-feenics-validation.pdf
-  valapl: 10120
+  valapl: 10121
   reader8: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
   reader8url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader8apl: 10052
