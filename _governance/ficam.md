@@ -19,11 +19,11 @@ subnav:
     href: '#federal-public-key-infrastructure-working-groups'
 ---
 
-<img src="{{site.baseurl}}/assets/img/ficam-governance.png" alt="An organization chart of the FICAM Governance Bodies and Working Groups." width="560" height="319">
+<img src="{{site.baseurl}}/assets/img/ficam-governance-updated.png" alt="An organization chart of the FICAM Governance Bodies and Working Groups." width="560" height="319">
 
 # Identity, Credential, and Access Management Subcommittee
 
-The [Identity, Credential, and Access Management (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
+The [Identity, Credential, and Access Management Subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
 
 The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the Federal Government, and supports collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;

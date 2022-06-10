@@ -31,8 +31,9 @@ The **Approved Products List (APL)** contains the official list of these tested 
 1. [PIV Cards]({{site.baseurl}}/approved-products-list-piv/)
 2. [Physical Access Control Systems]({{site.baseurl}}/approved-products-list-pacs-products/)
 
-**I can't find a category or product?**
-1. 1. A product is removed when it has lost its certification due to security concerns. It is placed on the [Removed Products List (RPL)]({{site.baseurl}}/buy/removed-products-list/). 
+**Why can't I find a category or product?**
+
+A product is removed when it has lost its certification due to security concerns. It is placed on the [Removed Products List (RPL)]({{site.baseurl}}/buy/removed-products-list/). 
 2.A category is deprecated after it has reached broad adoption or maturity. Any further testing is no longer needed (for example, card readers for logical access). A deprecated category is not the same as a removed product. Deprecated categories are [shared through a FIPS 201 Program announcement]({{site.baseurl}}/sell/fipsannouncements). [Contact us]({{site.baseurl}}/contact-us/) if you’re unsure if a product is fit for government use.
 
 ## PACS Implementer Self-Assessment Toolkit
@@ -64,12 +65,12 @@ The following organizations offer Identity, Credential, and Access Management se
 GSA Multiple Award Schedule (MAS) provides access to long-term government-wide contracts. These contacts are with commercial firms that offer millions of commercial products and services at volume discount pricing. The MAS provides tools and expertise to shorten acquisition cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 
 - [FAQs for Buyers](https://www.gsa.gov/portal/content/142143){:target="_blank"}{:rel="noopener noreferrer"}
-- [GSA Advantage!](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"}– online shopping and ordering system
-  - [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– ICAM Solutions
+- [GSA Advantage!](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"} – Online shopping and ordering system
+  - [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – ICAM Solutions
   - [541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – PKI Shared Service Providers (SSP)
-  - [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}- HSPD-12 Products and Service Components
-  - [334290PACS](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} - Legacy PACS systems (non-FIPS 201)
-  - [541330SEC](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290PACS&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– PACS integrator vendor
-- [Mulitple Award Schedule IT SINs](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"}– scroll down to “Subcategory: IT Solutions” for links to specific items
+  - [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – HSPD-12 Products and Service Components
+  - [334290PACS](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – Legacy PACS systems (non-FIPS 201)
+  - [541330SEC](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290PACS&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – PACS integrator vendor
+- [Multiple Award Schedule IT SINs](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"} – Scroll down to “Subcategory: IT Solutions” for links to specific items
 
 Note that the purchasing process may differ, depending on the particular product or service you want. If you need help, please contact icam at gsa.gov.
