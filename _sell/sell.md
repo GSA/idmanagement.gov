@@ -71,8 +71,8 @@ Professional services involve integrating solutions and/or helping agencies depl
 
 GSA certifies consulting services and labor categories through an acquisition schedule. The following Special Item Number (SIN) include ICAM or HSPD-12 professional services.
 
-- [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}– ICAM Solutions
-- [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}- HSPD-12 Products and Service Components
+- [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – ICAM Solutions
+- [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – HSPD-12 Products and Service Components
 
 The Certified System Engineer ICAM PACS (CSEIP) is a certification related to PACS and integration services and is often a requirement to become an approved consultant.
 
