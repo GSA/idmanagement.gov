@@ -64,7 +64,7 @@ The following are useful resources for plain language, writing, and style:
 
 ## Thanks
 
-The contributing framework, the licensing framework, and the idea for providing this content as open-source are based on work from [18F](https://18f.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+The contributing framework, the licensing framework, and the idea for providing this content as open-source are based on work from [the 18F office](https://18f.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Open an Issue
 
