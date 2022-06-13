@@ -332,7 +332,7 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: LenelS2 OnGuard with Embedded Authentication
+  infrastructure: LenelS2 OnGuard with Embedded Authentication_PACS APL 10112
   infraurl: /docs/apl-10112-lenel.pdf
   infraapl: 10112
   validation: HID Global Validation System for LenelS2 OnGuard with Embedded Authentication
@@ -383,7 +383,7 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: LenelS2 OnGuard with Embedded Authentication
+  infrastructure: LenelS2 OnGuard with Embedded Authentication_PACS APL 10126
   infraurl: /docs/apl-10126-lenel.pdf
   infraapl: 10126
   validation: TI Entry Point Validation System for LenelS2 OnGuard
