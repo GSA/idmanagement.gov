@@ -27,7 +27,7 @@ For the latest testing news, view the [program announcements]({{site.baseurl}}/s
 
 We test and certify a variety of products and services such as:
 
-- Smartcards (secure elements) used in Personal Identity Verification (PIV) and Common Access Card (CAC) credentials
+- Smart cards (secure elements) used in Personal Identity Verification (PIV) and Common Access Card (CAC) credentials
 - Physical access control systems for buildings including readers and infrastructure
 - Service providers who manage, install, or provide hosted solutions for issuance of Personal Identity Verification (PIV) and CAC credentials
 
