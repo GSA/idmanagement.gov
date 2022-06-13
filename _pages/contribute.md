@@ -30,7 +30,7 @@ To contribute to this site, you can:
 
 Using GitHub as a first-time user can be overwhelming. An introduction video is available from DigitalGov on YouTube: [Introduction to GitHub](https://youtu.be/uNa9GOtM6NE){:target="_blank"}{:rel="noopener noreferrer"}.
 
-### About This Repository
+## About This Repository
 
 In the [GitHub repository](https://github.com/GSA/idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}, on the **Code** tab, you can view the content and diagrams on this website:
 
@@ -43,11 +43,11 @@ In the [GitHub repository](https://github.com/GSA/idmanagement.gov){:target="_bl
 
 We encourage you to read *LICENSE.md* and *README.md* at the top level of this repository.
 
-### General Practices
+## General Practices
 
 This content is vendor-neutral. You should not submit marketing materials for commercial products. If you want to contribute a page or content that includes commercial products and specific references for development and engineering, please review the commercial product trademark or copyright guides from the product vendor and reference those guides in your pull request.
 
-### Plain Language
+## Plain Language
 
 Consider the audience when you submit content. Plain language benefits a broad audience. Review your proposed content for the use of acronyms and specialized jargon before submitting.
 
@@ -62,7 +62,7 @@ The following are useful resources for plain language, writing, and style:
 - [18F Content Guide](https://content-guide.18f.gov/){:target="_blank"}{:rel="noopener noreferrer"}
 - [Federal Plain Language Guidelines](http://www.plainlanguage.gov/){:target="_blank"}{:rel="noopener noreferrer"}
 
-### Thanks
+## Thanks
 
 The contributing framework, the licensing framework, and the idea for providing this content as open-source are based on work from [18F](https://18f.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
