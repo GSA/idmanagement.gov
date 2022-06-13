@@ -68,6 +68,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 **NOTE** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
 
+
 ## Approved 13.02 Topology PACS Products
 
 <table class="usa-table--borderless">
