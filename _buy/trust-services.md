@@ -18,9 +18,9 @@ subnav:
     href: '#non-government-pki-trust-framework'
 ---
 
-This page is for agencies to view the current service providers that have an identity federation agreement with the U.S. Government.
+This page is for agencies to view the current service providers that have an identity federation agreement with the U.S. government.
 
-The services provided rely upon a level of trust to be established with the U.S. Government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI).
+The services provided rely upon a level of trust to be established with the U.S. government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI).
 
 If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies](https://playbooks.idmanagement.gov/fpki/pivcas-and-agencies/){:target="_blank"}{:rel="noopener noreferrer"} or the [FPKI Graph](https://playbooks.idmanagement.gov/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}.
 
@@ -56,7 +56,7 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 
 ## Business Identity Services
 
-These organizations operate services for persons who are affiliated with a business, State, Local, Tribal, Territorial, or non-profit. These are often used by a business person to digitally sign documents with the U.S. Government as a business representative or to authenticate to a small number of government applications.
+These organizations operate services for persons who are affiliated with a business; state, local, tribal, or territorial government; or non-profit organization. These services are often used by a business person to digitally sign documents with the U.S. government as a business representative or to authenticate to a small number of government applications.
 
 For each, we identify whether the services include:
 
@@ -75,7 +75,7 @@ For each, we identify whether the services include:
 
 ## Non-Government PKI Trust Framework
 
-The FPKI Policy Authority reviews the PKI trust frameworks of a small number of non-government organizations to determine whether the policies, processes, legal agreements, privacy protections, security  controls, and audit requirements are comparable with the U.S. Government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge.
+The FPKI Policy Authority reviews the PKI trust frameworks of a small number of non-government organizations to determine whether the policies, processes, legal agreements, privacy protections, security  controls, and audit requirements are comparable with the U.S. government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge.
 
 These organizations do not manage identities or credentials for their community directly. Services that are certified and audited by these organizations provide federated PKI identity and credentials. These services are listed above the Business credentials section.
 
