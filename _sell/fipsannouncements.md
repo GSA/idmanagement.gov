@@ -43,7 +43,7 @@ We will issue an announcement in June detailing next steps in the transition pro
 
 [Return to Top](#top)
 
-## PACS APL Application Form revision
+## PACS APL Application Form Revision
 
 POSTED: April 14, 2022
 
@@ -94,12 +94,12 @@ Please note the removal of this category should not impact any existing acquisit
 
 POSTED April 30, 2019
 
-The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories,the program found that:
+The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories, the program found that:
 
 - OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to acquisition and/or installation.
-- SCVP Client and SCVP Client (without auth) are not widely used in US federal agencies. It is not in the government’s or commercial best interests to continue to maintain testing scenarios for these products.
+- SCVP Client and SCVP Client (without auth) are not widely used in U.S. federal agencies. It is not in the government’s or commercial best interests to continue to maintain testing scenarios for these products.
 
-Please note the removal of these categories should not impact any acquisition. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard US federal cryptographic conformance requirements (i.e. FIPS 140-2) and trade laws (i.e. country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
+Please note the removal of these categories should not impact any acquisition. Categories not identified by the program have no requirement for FIPS 201 conformance. Products on the market should be reviewed for adherence to standard U.S. federal cryptographic conformance requirements (i.e., FIPS 140-2) and trade laws (i.e., country of origin and Trade Agreements Act). Products are available to satisfy federal agency’s needs and requirements.
 
 [Return to Top](#top)
 
@@ -148,7 +148,7 @@ The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue t
 
 POSTED October 29, 2016
 
-The FIPS 201 Evaluation Program has removed the following categories, displayed in the table to the right, from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories, the Program found that:
+The FIPS 201 Evaluation Program has removed the following categories, displayed in the table below, from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories, the Program found that:
 
 - Many products on the APL are not for sale anymore
 - Most testing and approval procedures were outdated
@@ -160,7 +160,7 @@ Below are some resources that provide information, guidance, or a replacement ce
 - Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
 - New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
 
-Please note the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
+Please note that the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
 
 | Categories Removed	| Replacement |
 | ------------------- | ----------- |
