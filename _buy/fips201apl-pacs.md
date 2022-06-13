@@ -66,7 +66,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   </tbody>
 </table>
 
-**NOTE** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
+**NOTE:** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
 
 
 ## Approved 13.02 Topology PACS Products
@@ -89,7 +89,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 </table>
 
 ## PACS Readers
-**NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
+**NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letters lists the approved reader types, associated APL#, and tested PACS solution.
 - [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
