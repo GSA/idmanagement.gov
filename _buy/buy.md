@@ -37,12 +37,12 @@ A product is removed when it has lost its certification due to security concerns
 
 ### PACS Implementer Self-Assessment Toolkit
 
-The FIPS 201 Evaluation Program in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"} created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity to FICAM and NIST guidelines.
+The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Services
 
-The following organizations offer Identity, Credential, and Access Management services to the Federal Government. If your organization has a relevant Identity, Credential, or Access Management service, [contact us]({{site.baseurl}}/contact-us/) so we can add it to the list.
+The following organizations offer Identity, Credential, and Access Management services to the federal government. If your organization has a relevant Identity, Credential, or Access Management service, [contact us]({{site.baseurl}}/contact-us/) so we can add it to the list.
 
 ### Government Identity Services
 
