@@ -13,9 +13,9 @@ subnav:
     href: '#professional-services'
 ---
 
-If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the Federal Government, learn how to get your product or service tested and approved.
+If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the federal government, learn how to get your product or service tested and approved.
 
-Federal agencies require systems and services to be functional, secure, and compatible with other products. The Federal ICAM (FICAM) program supports these requirements by managing the testing of certain products, and by certifying services.
+Federal agencies require systems and services to be functional, secure, and compatible with other products. The Federal ICAM (FICAM) program supports these requirements by managing the testing of certain products and by certifying services.
 
 ## Product Approval Process
 
@@ -48,7 +48,7 @@ There are three Approved Testing Labs that test PIV card stock:
   - Contact: Michael Powers
   - Phone: (443) 367-7422
 
-GSA manages testing and certification for Physical Access Control Systems (PACS), as well as annual audit testing of production PIV credentials for federal agencies:
+GSA manages testing and certification for Physical Access Control Systems (PACS) as well as annual audit testing of production PIV credentials for federal agencies:
 
 - GSA FICAM Testing Lab
   - Contact: fips201ep at gsa.gov
@@ -57,7 +57,7 @@ After your product passes testing, you’ll receive a signed document showing th
 
 ### Step 3 – Get on a GSA Schedule
 
-The GSA Multiple Award Schedule (MAS) Program, also referred to as the "Schedule", is the premier contract vehicle for the federal government. The Schedule Program is a long term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for businesses, but it requires effort and commitment on your part to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
+The GSA Multiple Award Schedule (MAS) Program, also referred to as the "Schedule," is the premier contract vehicle for the federal government. The Schedule Program is a long-term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for businesses, but it requires effort and commitment on your part to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target="_blank"}{:rel="noopener noreferrer"}
 
 After testing and approval, apply to get your product or service listed on GSA’s Multiple Award Schedule (MAS).
 
@@ -69,7 +69,7 @@ Please contact fips201ep at gsa.gov if you have product approval questions.
 
 Professional services involve integrating solutions and/or helping agencies deploy and operate identity and credentialing systems related to PIV and CAC implementations.
 
-GSA certifies consulting services and labor categories through an acquisition schedule. The following Special Item Number (SIN) include ICAM or HSPD-12 professional services.
+GSA certifies consulting services and labor categories through an acquisition schedule. The following Special Item Numbers (SINs) include ICAM or HSPD-12 professional services.
 
 - [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – ICAM Solutions
 - [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – HSPD-12 Products and Service Components
