@@ -25,11 +25,11 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 - [13.01 Topology](#approved-1301-topology-pacs-products) – end-to-end systems which integrate components from three categories (PACS Infrastructure; Validation System; and PIV Reader) together through software (SDK or API).
 - [13.02 Topology](#approved-1302-topology-pacs-products) – end-to-end systems which integrate the first two components (PACS Infrastructure; Validation System) into a “PACS Validation Infrastructure,” which is then integrated with the third component category (PIV Reader).
 
-# How To Purchase
+## How To Purchase
 
 Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing guidance.
 
-# Approved 13.01 Topology PACS Products
+## Approved 13.01 Topology PACS Products
 
 <!--
 <fieldset class="usa-fieldset-inputs guide-filter">
@@ -66,10 +66,10 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   </tbody>
 </table>
 
-**NOTE** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
+**NOTE:** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
 
 
-# Approved 13.02 Topology PACS Products
+## Approved 13.02 Topology PACS Products
 
 <table class="usa-table--borderless">
   <thead class="usa-sr">
@@ -88,8 +88,8 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
   </tbody>
 </table>
 
-# PACS Readers
-**NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letter lists the approved reader types, associated APL#, and tested PACS solution.
+## PACS Readers
+**NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letters lists the approved reader types, associated APL#, and tested PACS solution.
 - [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
@@ -101,7 +101,7 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10077-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-# PACS Solutions Awaiting Approval
+## PACS Solutions Awaiting Approval
 
 | Position | Solution | APL Numbers | New/Update | Testing Status |
 | -------- | -------- | ---------- | -------------- |-------------|
