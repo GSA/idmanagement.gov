@@ -7,6 +7,8 @@ sidenav: sell
 sticky_sidenav: true
 
 subnav:
+  - text: July 2022 - GSA FIPS 201 Testing Lab Re-Opening
+    href: '#gsa-fips-201-testing-lab-re-opening'
   - text: May 2022 - GSA FIPS 201 Testing Lab Transition Planning
     href: '#gsa-fips-201-testing-lab-transition-planning'
   - text: Apr 2022 - PACS APL Application Form revision
@@ -23,6 +25,16 @@ subnav:
 ---
 
 This is a list of the latest news from the FIPS 201 Evaluation Program.
+
+## GSA FIPS 201 Testing Lab Re-opening
+
+POSTED: July 27, 2022
+
+It is our great pleasure to announce the reopening of the FIPS201 Evaluation Program's compliance testing lab. An email announcing the reopening of the lab was sent out to the community on Wednesday, July 20, 2022.
+
+Due to a recent change in contract vehicles the lab had to physically move to a new location. Even though the distance was not far, the move itself was time consuming. We would like to thank those PACS vendors who took the time to certify their current installations prior to the move, and you may be called upon to verify that everything moved over is in working order. You will be contacted by the lab team if further assistance is needed.
+
+For those of you who have been waiting to submit new applications, or conduct updates, we appreciate your patience. You are now free to send the paperwork to our group email address: fips201ep at gsa dot gov
 
 ## GSA FIPS 201 Testing Lab Transition Planning
 
