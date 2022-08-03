@@ -115,11 +115,11 @@ Code comments will be invisible in a webpage view, but others will be able to se
 
 To insert an image into your Page, upload the image file to the **/img/** folder in the GitHub repository.  Then at the image insertion point in your page, add these formats to link to the image.
 
-![This is what I want a screen reader to say for 508 compliance]({{site.baseurl}}/img/imagename.png)
+<img src="{{site.baseurl}}/img/imagename.png" alt="This is what I want a screen reader to say for 508 compliance">
 
-![Text for an image aligned right goes here]({{site.baseurl}}/img/imagename.png){:align="right"}
+<img src="{{site.baseurl}}/img/imagename.png" alt="Text for an image aligned right goes here" align="right">
 
-![Text for another image aligned left goes here]({{site.baseurl}}/img/anotherimagename.png){:style="float:left;width:25%;"}
+<img src="{{site.baseurl}}/img/anotherimagename.png" alt="Text for another image aligned left goes here" align="left" width="25%">
 
 
 ### Links to Other Documents
