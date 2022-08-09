@@ -1,4 +1,4 @@
----
+--- 
 layout: page
 collection: governance
 title:  Governance and Compliance
