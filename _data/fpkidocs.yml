@@ -668,7 +668,7 @@
   numberProposal: 2.1
   name: X.509 Common Policy Certificate and Certificate Revocation List Profiles v2.1
   date: 02/01/2021
-  url: docs/archived/fpki-x509-cert-profile-common-20220826.pdf
+  url: docs/archived/fpki-x509-cert-profile-common-v21.pdf
   status: post
   remove: 08/31/2025
   
