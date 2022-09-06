@@ -40,9 +40,7 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://g
 
 ### Membership and Meetings
 
-Membership is open to federal agency employees only with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis.
-
-To join, email ICAM at gsa.gov with “Request access to ICAMSC collaboration site“ in the subject line. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"} for more information.
+Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"} for more information. Access to the page requires a multifactor authentication using either Max Secure+ or a PIV/CAC.
 
 ### ICAMSC Working Groups
 
@@ -59,6 +57,12 @@ Other ICAM working groups may be charted under other committess or subcommittees
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
 | [**Derived-PIV Working Group**](https://community.max.gov/display/Egov/Derived-PIV+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Accelerate the implementation of mobile identity management across the federal government. | Document and share PKI and non-PKI uses cases to increase the available technical and information resources. Provide a feedback look to inform policy and standard. | Federal employees and designated contractors | Monthy |
+
+### ICAM Community Listserv
+
+The Federal ICAM Community Technical Listserv (ICAM-COMMUNITY-TECH List) aims to provide a communications platform to share and discuss technical issues impacting the Federal ICAM Community. We hope to leverage the knowledge of ICAM Subject Matter Experts to identify, share, and hopefully resolve technical issues that exist in Agencies and Departments. This list is open to anyone with a .gov email.
+
+Subscribe by contacting the list owner: ICAM-COMMUNITY-TECH-request at LISTSERV.GSA.GOV with subscribe in the subject line.
 
 ## Federal Public Key Infrastructure Policy Authority
 
