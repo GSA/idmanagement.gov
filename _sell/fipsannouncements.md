@@ -186,7 +186,7 @@ Please note that the removal of these categories should not impact any acquisiti
 | Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}|
 | Graphical Representation	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Caching Status Proxy	| Server-based Certificate Validation Protocol Category |
-| LACS Mobile Transparent Reader	| [FICAM Playbooks]([https://playbooks.idmanagement.gov](https://playbooks.idmanagement.gov/piv/gettingstarted/#card-readers)){:target="_blank"}{:rel="noopener noreferrer"} |
+| LACS Mobile Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
 | PIV Middleware	| [NIST PIV Middleware Certification List](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} |
 | Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://fbibiospecs.fbi.gov/certifications-1/cpl){:target="_blank"}{:rel="noopener noreferrer"} |
