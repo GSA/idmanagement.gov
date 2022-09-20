@@ -42,7 +42,7 @@ We’ve categorized the service providers given below by type of identity and cr
 
 These organizations operate as FPKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
 
-All of the Certification Authorities operated by these FPKI SSPs issue certificates for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
+All of the Certification Authorities operated by these FPKI SSPs [issue certificates](https://playbooks.idmanagement.gov/fpki/ca/#certificate-types-within-the-federal-pki]{:target="_blank"}{:rel="noopener noreferrer"} for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
 
 Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 
