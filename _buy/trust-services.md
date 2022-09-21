@@ -80,7 +80,7 @@ The FPKI Policy Authority reviews the PKI trust frameworks of a small number of 
 These organizations do not manage identities or credentials for their community directly. Services that are certified and audited by these organizations provide federated PKI identity and credentials. These services are listed above the Business credentials section.
 
 | Trust Framework | Customer Service | Tech Support | Community |
-|-----------|:-----------:|:-----------:|:-----------:|:-----------:|  
+|:-----------:|:-----------:|:-----------:|:-----------:|  
 | [CertiPath](https://certipath.com/services/federated-trust/){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| Aerospace and Defense<br/>International |
 | [SAFE Identity](https://makeidentitysafe.com/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | info at makeidentitysafe.com<br/>(703) 705-2920 | Healthcare<br/>International  |
 | [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 | State and Local |
