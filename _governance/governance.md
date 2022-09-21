@@ -32,13 +32,11 @@ This guide answers the most common ICAM program organization and management ques
 
 The guide is organized by sections, each of which describes an essential feature of ICAM program management, including recommendations and lessons learned from agencies who have implemented ICAM programs.
 
-## FICAM Playbooks
+## FICAM Architecture and Playbooks
 
-The FICAM Roadmap, developed by the Federal CIO Council, contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies. But the Roadmap was last updated in 2011, and as technology, policy, and security practices rapidly evolve, the government must also evolve. To modernize the original FICAM Roadmap, we’ve begun migrating this information to playbooks. 
+The [FICAM Architecture and accompanying guidance](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}, maintained by GSA in coordination with OMB and DHS CISA, contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies.
 
 These playbooks are hosted on Github and provide common policy and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on the needs and interests of individual agencies and government-wide groups. Reach out to icam at gsa.gov to suggest new topics.
-
-[View FICAM playbooks](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Announcements
 
