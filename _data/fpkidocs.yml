@@ -5,6 +5,23 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: Common Certificate Policy
+  numberProposal: 2.2
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.2
+  date: 12/1/2021
+  url: /docs/archived/fpki-x509-cert-policy-common-22.pdf
+  status: post
+  remove: 10/1/2025
+
+- category: Common Change Proposal
+  numberProposal: 2022-01A
+  name: Proposal 2022-01A | Updates to Archive Retention Period Section of Common Policy
+  description: Lends specificity to the archive record retention periods, assisting RAs, or other archiving elements, to understand what artifacts need to be archived, and for how long in certain scenarios.
+  date: 8/26/2022
+  url: /docs/archived/fpki-common-cp-2201A.pdf
+  status: post
+  remove: 10/1/2025
+
 - category: Federal Bridge Certificate Policy
   numberProposal: 2.35
   name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v2.35

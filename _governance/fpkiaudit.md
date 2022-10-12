@@ -37,7 +37,7 @@ The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/governance/ficam/#federal-
 
 | FPKI Initiatve | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
-| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.2]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.1]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
+| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.3]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.1]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
 | Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.36]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [X.509 Certificate and CRL Extensions Profile v1.9]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
 | Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v2.36]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} and <br>[PIV-I for Federal Agencies](https://playbooks.idmanagement.gov/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"}  | [X.509 Certificate and CRL Extensions Profile for PIV-I Cards v1.3]({{site.baseurl}}/docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
 | Public Trust TLS | [U.S. Federal Public Trust TLS Certificate Policy v1.0](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"} | [U.S. Federal Public Trust TLS Certificate Profiles](https://devicepki.idmanagement.gov/certificateprofiles/){:target="_blank"}{:rel="noopener noreferrer"} | No change proposals |
@@ -71,11 +71,11 @@ Audits are required annually for CAs.  Annual review packages should be submitte
 | DigiCert (ECPS)	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Non-Federal Issuer [NFI])	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
-| Department of Defense (DoD)	| Affiliate PKI	| August 31 |
+| Department of Defense (DoD)	| Affiliate PKI	| October 31 |
 | Department of State (DOS)	| Affiliate PKI	| October 31 |
 | Department of the Treasury	| SSP	| July 31 |
-| Entrust NFI	| Affiliate PKI	| November 22 |
-| Entrust Federal SSP	| SSP	| November 22 |
+| Entrust NFI	| Affiliate PKI	| November 30 |
+| Entrust Federal SSP	| SSP	| November 30 |
 | Exostar	| Affiliate PKI	| June 10 |
 | Government Publishing Office (GPO)	| Affiliate PKI	| October 31 |
 | IdenTrust NFI	| Affiliate PKI	| August 31 |
@@ -99,7 +99,7 @@ The FPKIMA Certification Practice Statement (CPS) documents the operational prac
 
 - [U.S. FPKI Certification Practice Statement (PDF, March 2022) – Version 6.1]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [U.S. FPKI Audit Letter of Compliance (PDF, August 2021)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2020-2021 Compliance Audit for the FPKI Trust Infrastructure Systems.
-- [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, October 2020)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Reporting Incidents
 
