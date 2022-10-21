@@ -55,24 +55,6 @@
     status: post
 -
     category: 'PACS Infrastructure'
-    supplier: 'DAQ Electronics, LLC'
-    nameProduct: 'StarWatch SMS'
-    numberProduct: SMS-FICAM
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10071'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS Registration Engine for DAQ StarWatch SMS'
-    numberProduct: PVCP-D/S-29-00
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10072'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Infrastructure'
     supplier: 'Monitor Dynamics'
     nameProduct: SafeNet
     numberProduct: F50-101xx-SP4
