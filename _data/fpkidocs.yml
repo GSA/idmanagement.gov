@@ -5,6 +5,31 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: Common Profile
+  numberProposal: 2.1
+  name: Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles v2.1
+  date: 2/1/2021
+  url: /docs/archived/fpki-common-profile-21.pdf
+  status: post
+  remove: 10/17/2025
+
+- category: Common Change Proposal
+  numberProposal: 2022-05
+  name: Proposal 2022-05 | Consolidated changes to the Common Policy Certificate and CRL Profiles
+  description: This proposal incorporates multiple change to the Common Policy Certificate and CRL Profiles for the purpose of alignment to RFC 5280, FIPS 201-3, increased interoperability, and to account for known and acceptable certificate practices.
+  date: 9/13/2022
+  url: /docs/archived/fpki-common-cp-2205.pdf
+  status: post
+  remove: 10/17/2025
+
+- category: FPKIMA Audit Letter
+  numberProposal: 2021
+  name: FPKIMA Audit Letter 2021
+  date: 10/1/2021
+  url: /docs/archived/fpki-fpkima-audit-letter-2021.pdf
+  status: post
+  remove: 10/12/2025
+
 - category: Common Certificate Policy
   numberProposal: 2.2
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.2
