@@ -97,6 +97,7 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
     - **Federal Bridge CA (FBCA)** is the PKI Bridge that enables interoperability between and among federally operated and business partner PKIs.
 
 ### FPKIMA Newsletter
+- [FPKIMA Newsletter (Fall 2022) "Post Quantum Updates" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-82.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [FPKIMA Newsletter (Winter 2022) "ALPACA" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-81.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [FPKIMA Newsletter (Summer 2021) "EO Improving Nation's Cybersecurity" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-73.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [FPKIMA Newsletter (Spring 2021) "Federal Common Policy CA Update" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-72.pdf){:target="_blank"}{:rel="noopener noreferrer"}
