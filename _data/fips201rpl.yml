@@ -19,6 +19,24 @@
     status: post
 
 -   category: 'PACS Infrastructure'
+    supplier: 'American Direct Procurement, Inc.'
+    nameProduct: 'Quintron AccessNsite'
+    numberProduct: 'F96-002-600-XX**'
+    dateRemoval: 'Tuesday, November 1, 2022'
+    numberApl: '10043'
+    reason: 'Not approved for FRTC 1.4.2'
+    status: post
+    
+-   category: 'PACS Validation System'
+    supplier: 'HID Global'
+    nameProduct: 'pivCLASS Registration Engine for AccesNsite'
+    numberProduct: 'PVCP-D/S-17-00'
+    dateRemoval: 'Tuesday, November 1, 2022'
+    numberApl: '10044'
+    reason: 'Not approved for FRTC 1.4.2'
+    status: post
+
+-   category: 'PACS Infrastructure'
     supplier: 'Brivo'
     nameProduct: 'Brivo OnSite server'
     numberProduct: 'B-OSS-BA(X), B-ACS5000(y), B-ACS5000-DB, B-ACS-IPDC-(Z)A, B-ACS6000-DB, B-ACS300-A, B-ACS300-A-FIPS, B-ACS6000-A-FIPS'
