@@ -10,7 +10,7 @@
   name: Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Extensions Profile v1.9
   date: 05/10/2020
   url: /docs/archived/fpki-fbca-profiles-19.pdf
-  status: archive
+  status: post
   remove: 11/04/2025
 
 - category: PIV-I Profile
@@ -18,7 +18,7 @@
   name: X.509 PIV-I Certificate and Certificate Revocation List Profiles v1.2
   date: 05/10/2020
   url: /docs/archived/fpki-profiles-pivi-13.pdf
-  status: archive
+  status: post
   remove: 11/04/2025
 
 - category: Federal Bridge Certificate Policy
