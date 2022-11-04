@@ -5,6 +5,23 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: Federal Bridge Certificate Policy
+  numberProposal: 2.36
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v2.36
+  date: 05/6/2022
+  url: /docs/archived/fpki-x509-cert-policy-fbca-236.pdf
+  status: post
+  remove: 11/04/2025
+
+- category: Federal Bridge Change Proposal
+  numberProposal: 2022-04
+  name: Proposal 2022-04 | Consolidated update to the Federal Bridge Certification Authority Certificate Policy and associated profiles
+  description: Consolidates CPWG policy recommendations dating back to 2018 and aligns to Common Policy where applicable. It also cleans-up outdated references and requirements, clarifies existing requirements, aligns policy with observed agency practices (e.g., certificate naming), and improves readability.
+  date: 05/06/2022
+  url: /docs/archived/fpki-fbca-cp-2204.pdf
+  status: post
+  remove: 11/04/2025
+
 - category: Common Profile
   numberProposal: 2.1
   name: Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles v2.1
