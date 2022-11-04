@@ -15,7 +15,7 @@
 
 - category: PIV-I Profile
   numberProposal: 1.3
-  name: X.509 PIV-I Certificate and Certificate Revocation List Profiles v1.2
+  name: X.509 PIV-I Certificate and Certificate Revocation List Profiles v1.3
   date: 05/10/2020
   url: /docs/archived/fpki-profiles-pivi-13.pdf
   status: post
