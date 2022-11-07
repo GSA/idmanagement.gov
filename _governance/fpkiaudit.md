@@ -53,11 +53,12 @@ The FPKI has the following supplementary guidance:
 
 ## Annual Review Requirements for All Certification Authorities
 
-Independent compliance audits are the primary way that the Federal Public Key Infrastructure Policy Authority (FPKIPA) ensures that CAs participating in the FPKI comply with the requirements identified in the appropriate Certificate Policies (CPs). Audits are an important component of the Annual Review Requirements.
+Independent compliance audits are the primary way that the Federal Public Key Infrastructure Policy Authority (FPKIPA) ensures that entities participating in the FPKI comply with the requirements identified in the appropriate Certificate Policies (CPs). Audits are an important component of the Annual Review Requirements.
 
-Audits are required annually for CAs.  Annual review packages should be submitted to fpki at gsa.gov.
+Audits are required annually for supporting functions and elements of each entity.  Annual review packages should be submitted to fpki at gsa.gov.
 
 - [FPKI Annual Review Requirements (PDF, May 2022)]({{site.baseurl}}/docs/fpki-annual-review-requirements.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This document includes requirements for performing and reporting annual compliance audits.
+- [RA Audit Guidance Memorandum (PDF, October 2022]({{site.baseurl}}/docs/fpki-ra-audit-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This FPKIPA Memorandum reiterates the necessity of RA audits in supporting PKI operations, normalizes differing terminology used across various references, and provides options for reducing potential duplication of RA audit efforts, as applicable to PIV issuers.
 - PIV and PIV-I Annual Testing - supports FPKI Annual Reviews and can be done either in person at the GSA FIPS 201 Lab or using available tools such as the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}
 - [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)]({{site.baseurl}}/docs/fpki-nmf.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations in which an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
 
@@ -71,7 +72,7 @@ Audits are required annually for CAs.  Annual review packages should be submitte
 | DigiCert (ECPS)	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Non-Federal Issuer [NFI])	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
-| Department of Defense (DoD)	| Affiliate PKI	| October 31 |
+| Department of Defense (DoD)	| Affiliate PKI	| November 30 |
 | Department of State (DOS)	| Affiliate PKI	| October 31 |
 | Department of the Treasury	| SSP	| July 31 |
 | Entrust NFI	| Affiliate PKI	| November 30 |
