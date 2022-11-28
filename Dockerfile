@@ -1,4 +1,4 @@
-FROM ruby:2.7.5
+FROM ruby:2.7.6
 
 RUN apt-get update && \
   apt-get install --reinstall -y locales && \
