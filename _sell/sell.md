@@ -13,11 +13,19 @@ subnav:
     href: '#professional-services'
 ---
 
-If you are a vendor who wishes to sell identity, credentialing, and access management (ICAM) products and services, or provide consulting services, to the federal government, learn how to get your product or service tested and approved.
-
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The Federal ICAM (FICAM) program supports these requirements by managing the testing of certain products and by certifying services.
 
-## Product Approval Process
+In most cases, vendors who wish to sell identity, credentialing, and access management (ICAM) products and services ‒ or provide consulting services ‒ to the federal government will need to have the product or service tested and approved. Certain prerequisites apply:
+
+- All product or service offerings must fully comply with guidance contained in [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63](https://pages.nist.gov/800-63-3/), [NIST Federal Information Processing Standard (FIPS) 201](https://csrc.nist.gov/publications/detail/fips/201/3/final), and [Homeland Security Presidential Directive 12 (HSPD-12)](https://www.dhs.gov/homeland-security-presidential-directive-12).
+- Personal Identity Verification (PIV) product offers must be tested and certified by the GSA FIPS 201 lab, as explained in [FIPS 201 Evaluation Program](https://www.idmanagement.gov/fips201/). In particular, the GSA FIPS 201 lab tests and certifies the secure elements in smart card credentials; Physical Access Control Systems for buildings including readers and infrastructure; and service providers who manage, install, or provide hosted solutions for issuance of PIV and Common Access Control (CAC) credentials.
+- Certified PIV products must be listed on [GSA FIPS 201 Approved Products List - PIV Cards](idmanagement.gov/approved-products-list-piv/).
+- Certified Physical Access Control System (PACS) products must be listed on [GSA FIPS 201 Approved Products List - Physical Access Control System Components](https://www.idmanagement.gov/approved-products-list-pacs-products/).
+
+In the event that testing is not available, vendors must submit an appropriate self-assessment that demonstrates policy compliance.
+
+## Product Approval Process).
+
 
 It only takes three steps to get a product approved for use by federal agencies:
 
@@ -27,7 +35,7 @@ It only takes three steps to get a product approved for use by federal agencies:
 
 ### Step 1 – Review Testing Documents
 
-The FICAM testing program, also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program](../../fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
+The FICAM testing program, also known as the [FIPS 201 Evaluation Program](../../fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems, Physical Access Control Systems (PACS), and public key infrastructures (PKI).
 
 Review the applicable testing document(s) for the product(s) you wish to have tested. Products we test include PIV cards and Physical Access Control Systems (PACS).
 
@@ -67,7 +75,7 @@ Please contact fips201ep at gsa.gov if you have product approval questions.
 
 ## Professional Services
 
-Professional services involve integrating solutions and/or helping agencies deploy and operate identity and credentialing systems related to PIV and CAC implementations.
+Professional services involve integrating solutions and/or helping agencies deploy and operate identity and credentialing systems related to PIV and CAC implementations. Professional services vendors must document experience with the deployment of policy-compliant ICAM projects in government agencies.
 
 GSA certifies consulting services and labor categories through an acquisition schedule. The following Special Item Numbers (SINs) include ICAM or HSPD-12 professional services.
 
