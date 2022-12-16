@@ -1,3 +1,18 @@
+---
+layout: page
+title:  Sell Identity Products and Services
+collection: sell
+permalink: sell/
+sticky_sidenav: true
+sidenav: sell
+
+subnav:
+  - text: Product Approval Process
+    href: '#product-approval-process'
+  - text: Professional Services
+    href: '#professional-services'
+---
+
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration supports these requirements through testing and identifying products and services.
 - The GSA Federal Acqusition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
 - The GSA Office of Government Policy provies testing and certification services for specific product categories.
