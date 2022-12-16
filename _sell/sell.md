@@ -1,6 +1,21 @@
+---
+layout: page
+title:  Sell Identity Products and Services
+collection: sell
+permalink: sell/
+sticky_sidenav: true
+sidenav: sell
+
+subnav:
+  - text: Product Approval Process
+    href: '#product-approval-process'
+  - text: Professional Services
+    href: '#professional-services'
+---
+
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration supports these requirements through testing and identifying products and services.
 - The GSA Federal Acqusition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
-- The GSA Office of Government Policy provies testing and certification services for specific product categories.
+- The GSA Office of Government Policy provides testing and certification services for specific product categories.
 
 In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government apply to a Multiple Award Schedule Special Item Number. Vendors must submit an appropriate self-assessment that demonstrates policy compliance with the following directives or standards.
 - [Homeland Security Presidential Directive 12 (HSPD-12)](https://www.dhs.gov/homeland-security-presidential-directive-12).
@@ -8,8 +23,8 @@ In most cases, vendors who wish to sell Identity, Credentialing, and Access Mana
 - [NIST Federal Information Processing Standard (FIPS) 201](https://csrc.nist.gov/publications/detail/fips/201/3/final).
 
 Two product categories require additional testing at a testing facility before applying to the Multiple Award Schedule.
-1. Smart card credentials require testing by GSA or an approved lab. After testing, products are added to the [GSA FIPS 201 Approved Products List - PIV Cards](idmanagement.gov/approved-products-list-piv/) category.
-2. Physical Access Control Systems for buildings, including readers and infrastructure. After testing, products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components](https://www.idmanagement.gov/approved-products-list-pacs-products/) category.
+1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards](idmanagement.gov/approved-products-list-piv/) category.
+2. Physical Access Control Systems for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components](https://www.idmanagement.gov/approved-products-list-pacs-products/) category.
 
 Please get in touch with fips201ep at gsa.gov if you have product approval questions.
 
