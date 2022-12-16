@@ -15,7 +15,7 @@ subnav:
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration supports these requirements through testing and identifying products and services.
 - The GSA Federal Acqusition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
-- The GSA Office of Government Policy provies testing and certification services for specific product categories.
+- The GSA Office of Government Policy provides testing and certification services for specific product categories.
 
 In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government apply to a Multiple Award Schedule Special Item Number. Vendors must submit an appropriate self-assessment that demonstrates policy compliance with the following directives or standards.
 - [Homeland Security Presidential Directive 12 (HSPD-12)](https://www.dhs.gov/homeland-security-presidential-directive-12).
