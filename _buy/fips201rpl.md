@@ -20,12 +20,12 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 <table class="usa-table--borderless rpl-table">
   <thead class="usa-sr">
     <tr>
-      <th id="rpl-table-heading-numberApl" scope="col">APL #</th>
-      <th id="rpl-table-heading-supplier" scope="col">Supplier</th>
-      <th id="rpl-table-heading-nameProduct" scope="col">Product Name(s)</th>
-      <th id="rpl-table-heading-numberProduct" scope="col">Product Number</th>
-      <th id="rpl-table-heading-dateRemoval" scope="col">Removal Date</th>
-      <th id="rpl-table-heading-reason" scope="col">Reason For Removal</th>
+      <th data-sortable="true" scope="col" role="columnheader" aria-sort="ascending" id="rpl-table-heading-numberApl">APL #</th>
+      <th data-sortable="true" scope="col" role="columnheader" id="rpl-table-heading-supplier">Supplier</th>
+      <th data-sortable="true" scope="col" role="columnheader" id="rpl-table-heading-nameProduct">Product Name(s)</th>
+      <th data-sortable="true" scope="col" role="columnheader" id="rpl-table-heading-numberProduct">Product Number</th>
+      <th data-sortable="true" scope="col" role="columnheader" id="rpl-table-heading-dateRemoval">Removal Date</th>
+      <th data-sortable="true" scope="col" role="columnheader" id="rpl-table-heading-reason">Reason For Removal</th>
     </tr>
   </thead>
   <tbody>
@@ -48,3 +48,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
     {% endfor %}<!--category-->
   </tbody>
 </table>
+  <div
+    class="usa-sr-only usa-table__announcement-region"
+    aria-live="polite"
+  ></div>
