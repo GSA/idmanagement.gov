@@ -18,6 +18,19 @@ subnav:
     href: '#non-government-pki-trust-framework'
 ---
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">DigiCert Shared Services Transition and Decommission</h4>
+    <p class="usa-alert__text">
+      DigiCert has announced it will decommissiong it's Federal and Non-federal shared services platform and transition out of the Federal PKI trust framework by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
+      <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+      elit, sed do eiusmod.
+    </p>
+  </div>
+</div>
+
+**Note** DigiCert Federal Shared Service Provider (formerly Symantec) is transitiong existing customers to another Shared Service while they exit the shared service program. They no longer offer services to new customers.
+
 This page is for agencies to view the current service providers that have an identity federation agreement with the U.S. government.
 
 The services provided rely upon a level of trust to be established with the U.S. government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI).
@@ -53,8 +66,6 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
 | WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
 
-**Note** DigiCert Federal Shared Service Provider (formerly Symantec) is transitiong existing customers to another Shared Service while they exit the shared service program. They no longer offer services to new customers.
-
 ## Business Identity Services
 
 These organizations operate services for persons who are affiliated with a business; state, local, tribal, or territorial government; or non-profit organization. These services are often used by a business person to digitally sign documents with the U.S. government as a business representative or to authenticate to a small number of government applications.
@@ -72,8 +83,6 @@ For each, we identify whether the services include:
 | [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650<br/>info at fti.org	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
 | [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
 | [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy at ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
-
-**Note** DigiCert Non-Federal Shared Service Provider (formerly Symantec) is exiting the Federal PKI trust framework. They no longer offer services to new customers.
 
 ## Non-Government PKI Trust Framework
 
