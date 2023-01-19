@@ -49,10 +49,11 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | Organization | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|  
 | Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
-| DigiCert Federal Shared Service Provider (formerly Symantec)| fpki_support at digicert.com | fpki_support at digicert.com | 
 | Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
 | Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
 | WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
+
+**Note** DigiCert Federal Shared Service Provider (formerly Symantec) is transitiong existing customers to another Shared Service while they exit the shared service program. They no longer offer services to new customers.
 
 ## Business Identity Services
 
@@ -66,12 +67,13 @@ For each, we identify whether the services include:
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
 | [Carillon Information Security](https://www.carillon.ca/){:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques<br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
-| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| fpki_support at digicert.com | fpki_support at digicert.com| Other PKI Credentials |
 | Entrust	| Patrick Garritty<br/>(703) 901-1388	| support at entrust.com	| PIV-I Credentials<br/>Other PKI Credentials |
 | [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info at exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
 | [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650<br/>info at fti.org	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
 | [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
 | [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy at ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
+
+**Note** DigiCert Non-Federal Shared Service Provider (formerly Symantec) is exiting the Federal PKI trust framework. They no longer offer services to new customers.
 
 ## Non-Government PKI Trust Framework
 
