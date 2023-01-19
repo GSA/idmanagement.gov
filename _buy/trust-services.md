@@ -23,8 +23,6 @@ subnav:
     <h4 class="usa-alert__heading">DigiCert Shared Services Transition and Decommission</h4>
     <p class="usa-alert__text">
       DigiCert has announced it will decommissiong it's Federal and Non-federal shared services platform and transition out of the Federal PKI trust framework by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
-      <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
-      elit, sed do eiusmod.
     </p>
   </div>
 </div>
