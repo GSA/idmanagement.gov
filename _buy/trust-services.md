@@ -20,9 +20,9 @@ subnav:
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">DigiCert Shared Services Transition and Decommission</h4>
+    <h4 class="usa-alert__heading">DigiCert PKI Shared Services Decommission and Transition</h4>
     <p class="usa-alert__text">
-      DigiCert has announced it will decommissiong it's federal and Non-federal shared services platform and transition out of the Federal PKI trust framework by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
+      DigiCert announced it is decommissiong it's federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
     </p>
   </div>
 </div>
@@ -74,6 +74,7 @@ For each, we identify whether the services include:
 | Organization | Customer Service | Tech Support | Type of Person Identity Credentials |
 |-----------|:-----------:|:-----------:|:-----------:|  
 | [Carillon Information Security](https://www.carillon.ca/){:target="_blank"}{:rel="noopener noreferrer"}	| Marc St-Jacques<br/>(844) 754-7484 x125	| Marc St-Jacques<br/>(844) 754-7484 x125	| PIV-I Credentials |
+| [DigiCert](https://www.digicert.com/){:target="_blank"}{:rel="noopener noreferrer"}	| ts_managers at digicert dot com | fpki_support at digicert dot com| Other PKI Credentials |
 | Entrust	| Patrick Garritty<br/>(703) 901-1388	| support at entrust.com	| PIV-I Credentials<br/>Other PKI Credentials |
 | [Exostar](https://www.exostar.com/Identity_Access/Managed_PKI/){:target="_blank"}{:rel="noopener noreferrer"} | info at exostar.com	| (703) 793-7800<br/>[Open a case online](http://www.myexostar.com/Online-Support/){:target="_blank"}{:rel="noopener noreferrer"}	| Other PKI Credentials |
 | [Foundation for Trusted Identity (FTI)](https://www.foundationfortrustedidentity.org/){:target="_blank"}{:rel="noopener noreferrer"}	| Kenneth Boley<br/>(210) 704-1650<br/>info at fti.org	| Sam Dibrell, Jr.<br/>(210) 704-1650	| PIV-I Credentials |
