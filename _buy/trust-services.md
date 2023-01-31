@@ -22,12 +22,10 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">DigiCert Shared Services Transition and Decommission</h4>
     <p class="usa-alert__text">
-      DigiCert has announced it will decommissiong it's Federal and Non-federal shared services platform and transition out of the Federal PKI trust framework by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
+      DigiCert has announced it will decommissiong it's federal and Non-federal shared services platform and transition out of the Federal PKI trust framework by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
     </p>
   </div>
 </div>
-
-**Note** DigiCert Federal Shared Service Provider (formerly Symantec) is transitiong existing customers to another Shared Service while they exit the shared service program. They no longer offer services to new customers.
 
 This page is for agencies to view the current service providers that have an identity federation agreement with the U.S. government.
 
