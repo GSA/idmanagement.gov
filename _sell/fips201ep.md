@@ -109,7 +109,7 @@ All applicants, please complete the following steps:
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)]({{site.baseurl}}/docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"}
       - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - [Approved PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)]({{site.baseurl}}/docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-9. **For New Systems**: Complete the [PACS FRTC Topology Mapping Workbook (XLSX, October 2021)]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
+9. Complete the [PACS FRTC Topology Mapping Workbook (XLSX, October 2021)]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
 10. Complete the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)]({{site.baseurl}}/docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
 11. Include all applicable VPAT statements, UL-294, and FIPS 140-2/140-3 listing documents.
 12. Submit all completed forms to fips201ep at gsa.gov.
