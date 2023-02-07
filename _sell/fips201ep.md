@@ -89,7 +89,7 @@ Review the test procedures, choose one of the application packages, and submit t
 
 ### PACS Application Package for New Systems or for Updates to Previously Approved Systems
 
-All applicants, please complete the following steps: 
+All applicants, please complete the following steps:
 
 1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
 2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-application-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
