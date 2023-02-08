@@ -93,7 +93,7 @@ All applicants, please complete the following steps:
 
 1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
 2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-application-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
-3. Provide the equipment table from the Approved Product List Application as a separate file. [Equipment Table GSA PACS Application v0.1 (XLSX, October 2021)]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application-v0.1.xlsx){:target="_blank"}{:rel="noopener noreferrer"}
+3. Provide the equipment table from the Approved Product List Application as a separate file. [Equipment Table GSA PACS Application v0.1 (XLSX, February 2023)]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application-v0.1.xlsx){:target="_blank"}{:rel="noopener noreferrer"}
 4. [Reseller Acknowledgement Form (MS Word, September 2014)](https://www.idmanagement.gov/docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed, and the signed agreement submitted.
 5. Include the following  document when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
     - [Product Series and Licensing Form (MS Word, August 2018)]({{site.baseurl}}/docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
