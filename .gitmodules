@@ -1,0 +1,3 @@
+[submodule "staging-ficam-playbooks"]
+	path = staging-ficam-playbooks
+	url = https://github.com/GSA/ficam-playbooks

@@ -165,6 +165,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
+  - staging-ficam-playbooks
 assets:
   autoprefixer:
     browsers:
