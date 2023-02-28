@@ -23,6 +23,16 @@ why:
   - text: Federation Overview
     href: /why/federation-overview/
 
+## Learn: for FICAM University section
+learn:
+  - text: FICAM University
+    href: /university/ 
+  - text: FICAM Library
+    href: /university/library/
+  - text: Resources
+    href: /university/resources/
+
+
 ## Buy
 
 buy:

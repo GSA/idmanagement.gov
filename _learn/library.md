@@ -1,8 +1,8 @@
 ---
 layout: page
 collection: learn
-title:  FICAM University
-permalink: /university/
+title:  FICAM Library
+permalink: /university/library/
 sidenav: learn
 sticky_sidenav: true
 

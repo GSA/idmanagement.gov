@@ -118,7 +118,7 @@ primary_navigation:
         url: /how/tools/
 
 # # Who FICAM is For? top level menu with dropdowns
-  - name: Who FICAM is For?
+  - name: Who is FICAM For?
     children:
       - name: New? Get Started
         url: /who/new-get-started/
@@ -132,7 +132,14 @@ primary_navigation:
         url: /who/acquisition-professionals/
       - name: Program Manager
         url: /who/program-manager/
+  
+  # FICAM University page
+  - name: FICAM University
+    description: FICAM University
+    url: /university/
 
+
+# Note: Secondary top level menu items are located in the 'include/menu.html'
 
   # - name: Partners
   #   children:
@@ -190,6 +197,9 @@ collections:
   who:
     output: true
     permalink: /who/:path/
+  learn:
+    output: true
+    permalink: /university/:path/   
   # buy:
   #   output: true
   #   permalink: /buy/:path/
