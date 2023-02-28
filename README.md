@@ -47,7 +47,7 @@ To build but not serve the site, run
 ```
 $ docker-compose run node npm install
 $ docker-compose build
-$ docker compose up
+$ docker-compose up
 ```
 To build but not serve the site, run:
 
