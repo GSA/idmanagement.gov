@@ -138,6 +138,10 @@ primary_navigation:
     description: FICAM University
     url: /university/
 
+  # FAQ page
+  - name: FAQs
+    description: Frequently Asked Questions
+    url: /faq/
 
 # Note: Secondary top level menu items are located in the 'include/menu.html'
 
@@ -200,6 +204,9 @@ collections:
   learn:
     output: true
     permalink: /university/:path/   
+  faq:
+    output: true
+    permalink: /faq/:path/  
   # buy:
   #   output: true
   #   permalink: /buy/:path/
@@ -287,7 +294,16 @@ assets:
       - "IE 11"
       - "not dead"
   sources:
-    - node_modules/uswds/dist/img
-    - node_modules/uswds/dist/js
-    - node_modules/uswds/dist/scss
+    - node_modules/@uswds/uswds/dist/css
+    - node_modules/@uswds/uswds/dist/fonts
+    - node_modules/@uswds/uswds/dist/img
+    - node_modules/@uswds/uswds/dist/img/favicons
+    - node_modules/@uswds/uswds/dist/img/material-icons
+    - node_modules/@uswds/uswds/dist/img/usa-icons
+    - node_modules/@uswds/uswds/dist/img/usa-icons-bg
+    - node_modules/@uswds/uswds/dist/img/uswds-icons
+    - node_modules/@uswds/uswds/dist/js
+    - node_modules/@uswds/uswds/dist/scss
+    - node_modules/@uswds/uswds/dist/theme
+    - node_modules/@uswds/uswds/packages
     - node_modules/netlify-cms/dist

@@ -31,7 +31,16 @@ learn:
     href: /university/library/
   - text: Resources
     href: /university/resources/
+  - text: FAQs
+    href: /faq/
 
+## FAQ: for webiste
+## Resources: from FICAM University section
+faq:
+  - text: FAQs
+    href: /faq/ 
+  - text: Resources
+    href: /university/resources/ 
 
 ## Buy
 
