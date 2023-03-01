@@ -217,7 +217,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
     <td style="width:350px">Includes Department of Homeland Security (DHS) approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
     <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by DHS</td>
-    <td><a href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-cdm/continuous-diagnostics-mitigation-cdm-tools-special-item-number-sin-information-for-ordering-organizations" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
+    <td><a href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-tools" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
   <tr>
     <td>Identity Management <br><br> Access Management <br><br> Credential Management</td>
