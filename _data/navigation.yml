@@ -1,3 +1,47 @@
+## New Why secondary navigation
+why:
+  - text: Goals and Objectives
+    href: /why/goals-and-objectives/
+  - text: Services Framework
+    href: /why/service-framework/
+  - text: Identity Management
+    href: /why/identity-management/
+  - text: Credential Management
+    href: /why/credential-management/
+  - text: Access Management
+    href: /why/access-management/
+  - text: Federation
+    href: /why/federation/
+  - text: Governance
+    href: /why/governance/
+  - text: Use Cases
+    href: /why/use-cases/
+  - text: System Component Examples
+    href: /why/system-component-examples/
+  - text: Authoritative Sources
+    href: /why/authoritative-sources/
+  - text: Federation Overview
+    href: /why/federation-overview/
+
+## Learn: for FICAM University section
+learn:
+  - text: FICAM University
+    href: /university/ 
+  - text: FICAM Library
+    href: /university/library/
+  - text: Resources
+    href: /university/resources/
+  - text: FAQs
+    href: /faq/
+
+## FAQ: for webiste
+## Resources: from FICAM University section
+faq:
+  - text: FAQs
+    href: /faq/ 
+  - text: Resources
+    href: /university/resources/ 
+
 ## Buy
 
 buy:

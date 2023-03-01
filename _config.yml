@@ -43,16 +43,118 @@ primary_navigation:
   - name: Home
     description: IDmanagement.gov
     url: /
-  - name: Partners
+# WhyFICAM? top level menu with dropdowns
+  - name: Why FICAM?
     children:
+      - name: Goals and Objectivess
+        url: /why/goals-and-objectives/
+      - name: Services Framework
+        url: /why/service-framework/
+      - name: Identity Management
+        url: /why/identity-management/
+      - name: Credential Management
+        url: /why/credential-management/
+      - name: Access Management
+        url: /why/access-management/
+      - name: Federation
+        url: /why/federation/
+      - name: Governance
+        url: /why/governance/
+      - name: Use Cases
+        url: /why/use-cases/
+      - name: System Component Examples
+        url: /why/system-component-examples/
+      - name: Authoritative Sources
+        url: /why/authoritative-sources/
+      - name: Federation Overview
+        url: /why/federation-overview/
+
+# # What is FICAM top level menu with dropdowns
+  - name: What is FICAM?
+    children: 
+      - name: PACS Assessment Toolkit
+        url: /what/pacs-assessment-toolkit/
+      - name: Organizations that offer ICAM services
+        url: /what/organizations-that-offer-icam-services/
+      - name: Personal Identity Verification (PIV) Cards
+        url: /what/personal-identity-verification-piv-Cards/
+      - name: User Guides
+        url: /what/user-guides/
+      - name: Physical Access Control System (PACS) 
+        url: /what/physical-access-control-system-pacs/ 
+      - name: GSA Multiple Award Schedule
+        url: /what/gsa-multiple-award-schedule/
+      - name: Trust Services
+        url: /what/trust-services/
+      - name: GSA ICAM Solutions and Shared Services
+        url: /what/gsa-icam-solutions-and-shared-services/
+      - name: FIPS 201 Removed Product List
+        url: /what/fips-201-removed-product-list/
+      - name: Credential Management & Overview
+        url: /what/credential-management-overview/
+      - name: Access Management & Overview
+        url: /what/access-management-overview/
+
+# # How to use FICAM top level menu with dropdowns
+  - name: How to use FICAM
+    children:
+      - name: Digitally Sign Word Doc
+        url: /how/digitally-sign-word-doc/
+      - name: Digitally Sign Email in Outlook
+        url: /how/digitally-sign-email-in-outlook/
+      - name: Digitally Sign Federal Register Document
+        url: /how/digitally-sign-federal-register-document/
+      - name: PIV Guide
+        url: /how/piv-guide/
+      - name: Troubleshoot PIV Windows Logon
+        url: /how/troubleshoot-piv-windows-logon/
+      - name: Troubleshoot Mac OS
+        url: /how/troubleshoot-mac-os/
+      - name: PIV Enable Firefox
+        url: /how/piv-enable-firefox/
+      - name: PIV Enable SSH
+        url: /how/piv-enable-ssh/
+      - name: Tools
+        url: /how/tools/
+
+# # Who FICAM is For? top level menu with dropdowns
+  - name: Who is FICAM For?
+    children:
+      - name: New? Get Started
+        url: /who/new-get-started/
+      - name: Technical Leads and Team Members
+        url: /who/technical-leads-and-team-members/
+      - name: PACS
+        url: /who/pacs/
       - name: Vendors
-        url: /sell/
+        url: /who/vendors/
       - name: Acquisition Professionals
-        url: /buy/
-      - name: Program Managers
-        url: /governance/
-  - name: Approved Product List
-    url: /buy#products
+        url: /who/acquisition-professionals/
+      - name: Program Manager
+        url: /who/program-manager/
+  
+  # FICAM University page
+  - name: FICAM University
+    description: FICAM University
+    url: /university/
+
+  # FAQ page
+  - name: FAQs
+    description: Frequently Asked Questions
+    url: /faq/
+
+# Note: Secondary top level menu items are located in the 'include/menu.html'
+
+  # - name: Partners
+  #   children:
+  #     - name: Vendors
+  #       url: /sell/
+  #     - name: Acquisition Professionals
+  #       url: /buy/
+  #     - name: Program Managers
+  #       url: /governance/
+  # - name: Approved Product List
+  #   url: /buy#products
 
 secondary_navigation:
   - name: Contact Us
@@ -87,15 +189,33 @@ searchgov:
 ##########################################################################################
 
 collections:
-  buy:
+  why:
     output: true
-    permalink: /buy/:path/
-  sell:
+    permalink: /why/:path/
+  what:
     output: true
-    permalink: /sell/:path/
-  governance:
+    permalink: /what/:path/
+  how:
     output: true
-    permalink: /governance/:path/
+    permalink: /how/:path/
+  who:
+    output: true
+    permalink: /who/:path/
+  learn:
+    output: true
+    permalink: /university/:path/   
+  faq:
+    output: true
+    permalink: /faq/:path/  
+  # buy:
+  #   output: true
+  #   permalink: /buy/:path/
+  # sell:
+  #   output: true
+  #   permalink: /sell/:path/
+  # governance:
+  #   output: true
+  #   permalink: /governance/:path/
   pages:
     output: true
     permalink: /:path/
@@ -165,6 +285,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
+  - staging-ficam-playbooks
 assets:
   autoprefixer:
     browsers:
@@ -173,7 +294,16 @@ assets:
       - "IE 11"
       - "not dead"
   sources:
-    - node_modules/uswds/dist/img
-    - node_modules/uswds/dist/js
-    - node_modules/uswds/dist/scss
+    - node_modules/@uswds/uswds/dist/css
+    - node_modules/@uswds/uswds/dist/fonts
+    - node_modules/@uswds/uswds/dist/img
+    - node_modules/@uswds/uswds/dist/img/favicons
+    - node_modules/@uswds/uswds/dist/img/material-icons
+    - node_modules/@uswds/uswds/dist/img/usa-icons
+    - node_modules/@uswds/uswds/dist/img/usa-icons-bg
+    - node_modules/@uswds/uswds/dist/img/uswds-icons
+    - node_modules/@uswds/uswds/dist/js
+    - node_modules/@uswds/uswds/dist/scss
+    - node_modules/@uswds/uswds/dist/theme
+    - node_modules/@uswds/uswds/packages
     - node_modules/netlify-cms/dist
