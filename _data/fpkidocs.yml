@@ -783,14 +783,14 @@
   numberProposal: 1.0
   name: Federal Public Trust Device Certificate Policy v1.0 Draft
   date: 03/28/2019
-  url: /docs/archived/us-federal-public-trust-tls-cp-v1-0.pdf
+  url: /docs/archived/us-federal-public-trust-tls-cp-v1-0-draft.pdf
   status: archive
-  remove: 03/28/2022
+  remove: 05/29/2022
   
 - category: Federal Public Trust TLS Certificate Policy
   numberProposal: 1.0
   name: Federal Public Trust Device Certificate Policy v1.0 Final
   date: 05/09/2019
-  url: /docs/archived/us-federal-public-trust-tls-cp-v1-0.pdf
+  url: /docs/archived/us-federal-public-trust-tls-cp-v1-0-final.pdf
   status: post
   remove: 02/06/2026
