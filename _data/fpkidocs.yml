@@ -746,3 +746,51 @@
   url: /docs/archived/fpki-overlay-800-53-v2-20140414.pdf
   status: post
   remove: 02/01/2024
+  
+- category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 0.1
+  name: Federal Public Trust Device Certificate Policy v0.1 Draft
+  date: 09/01/2017 
+  url: /docs/archived/us-federal-public-trust-tls-cp-v0-1.pdf
+  status: archive
+  remove: 09/01/2020
+  
+- category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 0.2
+  name: Federal Public Trust Device Certificate Policy v0.2 Draft
+  date: 02/01/2018 
+  url: /docs/archived/us-federal-public-trust-tls-cp-v0-2.pdf
+  status: archive
+  remove: 02/01/2021
+  
+- category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 0.3
+  name: Federal Public Trust Device Certificate Policy v0.3 Draft
+  date: 09/05/2018
+  url: /docs/archived/us-federal-public-trust-tls-cp-v0-3.pdf
+  status: archive
+  remove: 09/05/2021
+  
+- category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 0.4
+  name: Federal Public Trust Device Certificate Policy v0.4 Draft
+  date: 02/25/2019
+  url: /docs/archived/us-federal-public-trust-tls-cp-v0-4.pdf
+  status: archive
+  remove: 02/25/2022
+  
+- category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 1.0
+  name: Federal Public Trust Device Certificate Policy v1.0 Draft
+  date: 03/28/2019
+  url: /docs/archived/us-federal-public-trust-tls-cp-v1-0-draft.pdf
+  status: archive
+  remove: 05/29/2022
+  
+- category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 1.0
+  name: Federal Public Trust Device Certificate Policy v1.0 Final
+  date: 05/09/2019
+  url: /docs/archived/us-federal-public-trust-tls-cp-v1-0-final.pdf
+  status: post
+  remove: 02/06/2026

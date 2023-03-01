@@ -89,24 +89,30 @@ Review the test procedures, choose one of the application packages, and submit t
 
 ### PACS Application Package for New Systems or for Updates to Previously Approved Systems
 
-All applicants, please complete the following steps: 
+All applicants, please complete the following steps:
 
 1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
 2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-application-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
-3. Include the following  document when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
+3. Provide the equipment table from the Approved Product List Application as a separate file. [Equipment Table GSA PACS Application v0.1 (XLSX, February 2023)]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx){:target="_blank"}{:rel="noopener noreferrer"}
+4. [Reseller Acknowledgement Form (MS Word, September 2014)](https://www.idmanagement.gov/docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed, and the signed agreement submitted.
+5. Include the following  document when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
     - [Product Series and Licensing Form (MS Word, August 2018)]({{site.baseurl}}/docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
-4. **For New Solutions** Complete the additional documentation 
+6. Provide a solution configuration guide that includes, at a minimum:
+    - Screenshots and instructions on configuring the submitted solution to meet the test cases.
+    - Location of all log files needed to verify the solution is performing the test cases.
+    - Steps necessary to verify the hardware, software, and firmware of all items listed on the equipment table in the APL application.
+7. Complete the additional documentation 
     - [Supply Chain Self-Attestation Form (MS Word, March 2020)]({{site.baseurl}}/docs/pacsapp-supplyattestationform.docx){:target="_blank"}{:rel="noopener noreferrer"}
-5. **For New Solutions**: Review the following documentation and select from the appropriate topology that best describes your solution:
+8. Review the following documentation and select from the appropriate topology that best describes your solution:
     - [Approved PACS Topology Mapping Document (PACS 13.01) (PDF, February 2019)]({{site.baseurl}}/docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Approved PACS Topology Mapping Document (PACS 13.02) (PDF, February 2018)]({{site.baseurl}}/docs/pacsapp-pacs1302.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Mobile Handheld Approved Topology Mapping Document (14.02) (PDF, November 2017)]({{site.baseurl}}/docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"}
       - When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - [Approved PACS Wireless Reader Topology Mapping Document (PACS 20.01) (PDF, November 2020)]({{site.baseurl}}/docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-6. **For New Systems**: Complete the [PACS FRTC Topology Mapping Workbook (XLSX, October 2021)]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
-7. Complete the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)]({{site.baseurl}}/docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
-8. Include all applicable VPAT statements, UL-294, and FIPS 140-2/140-3 listing documents.
-9. Submit all completed forms to fips201ep at gsa.gov.
+9. Complete the [PACS FRTC Topology Mapping Workbook (XLSX, October 2021)]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx){:target="_blank"}{:rel="noopener noreferrer"} for your topology.
+10. Complete the [FIPS 201 Evaluation Program – Evaluation Agreement (MS Word, September 2020)]({{site.baseurl}}/docs/fips201ep-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}.
+11. Include all applicable VPAT statements, UL-294, and FIPS 140-2/140-3 listing documents.
+12. Submit all completed forms to fips201ep at gsa.gov.
 
 ### Test Card Loaners
 
