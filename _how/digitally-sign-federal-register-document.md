@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: why
-title:  Goals and Objectives
-permalink: /why/goals-and-objectives/
-sidenav: why
+collection: how
+title: Digitally Sign Federal Register Document
+permalink: /how/digitally-sign-federal-register-document/
+sidenav: how
 sticky_sidenav: true
 
 subnav:
@@ -13,6 +13,7 @@ subnav:
     href: '#section-2'
   - text: Section 3
     href: '#section-3'
+
 ---
 
 ## Section 1

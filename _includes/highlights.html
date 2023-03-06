@@ -8,62 +8,60 @@ eight.
 	<div class="grid-container">
 		<div class="partners-container grid-row">
 			<div class="desktop:grid-col-12">
-				<!-- <div class="home-partners-title margin-bottom-2">
-					<h2 class="text-center">Information for <span class="text-no-wrap">Our Partners</span></h2>
-				</div> -->
+
+					<div id="highlightsCarousel" class="carousel slide"  data-bs-ride="carousel">
+						<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="5000">
+							<!-- Content Here -->
+							 <div class="usa-alert usa-alert--slim usa-alert--info">
+								<div class="usa-alert__body">
+								  <p class="usa-alert__text">
+									This is the text that will display to Partners and Vendors.
+									<a class="usa-link" href="javascript:void(0);">This is a text link</a>
+								  </p>
+								</div>
+						 	</div>
+					  	</div>
+						<div class="carousel-item active" data-bs-interval="5000">
+							<!-- Content Here -->
+							 <div class="usa-alert usa-alert--slim usa-alert--info">
+								<div class="usa-alert__body">
+								  <p class="usa-alert__text">
+									This is the text that will display to Partners and Vendors.
+									<a class="usa-link" href="javascript:void(0);">his is a text link</a>
+								  </p>
+								</div>
+						 	</div>
+					  	</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<!-- Content Here -->
+							 <div class="usa-alert usa-alert--slim usa-alert--warning">
+								<div class="usa-alert__body">
+								  <p class="usa-alert__text">
+									This is the text that will display to Partners and Vendors.
+									<a class="usa-link" href="javascript:void(0);">This is a text link</a>
+								  </p>
+								</div>
+						 	</div>
+					  	</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<!-- Content Here -->
+							 <div class="usa-alert usa-alert--slim usa-alert--error">
+								<div class="usa-alert__body">
+								  <p class="usa-alert__text">
+									This is the text that will display to Partners and Vendors.
+									<a class="usa-link" href="javascript:void(0);">This is a text link</a>
+								  </p>
+								</div>
+						 	</div>
+					  	</div>
+					</div>
+
 			</div>
 		</div>
-		<div class="partners-container grid-row home-partners-title" style="margin-top: 0;">
-			<div class="desktop:grid-col-4 padding-2">
-				<div class="grid-row">
-					<div class="tablet:grid-col-3 home-partners-icon-container">
-					</div>
-					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4 table:padding-top-3">
-						<div class="home-partners-text">
-							<!-- <h3>Vendors</h3> -->
-							<!-- <p class="margin-bottom-4">Sell your Identity, Credential, and Access Management (ICAM) products and services to the federal government.</p> -->
-							
-						</div>
-						<div style="padding-top: 5px;"><a href="{{site.baseurl}}/sell/" class="usa-button">Sell Identity Products</a></div>
-					</div>
-				</div>
-				<hr class="partner-divider desktop:display-none">
-			</div>
-			
-			<div class="desktop:grid-col-4 padding-2">
-				<div class="grid-row">
-					<div class="tablet:grid-col-3 home-partners-icon-container">
-					</div>
-					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4 table:padding-top-3">
-						<div class="home-partners-text">
-							<!-- <h3>Acquisition Professionals</h3> -->
-							<!-- <p class="margin-bottom-4">Adopt innovative Identity, Credential, and Access Management (ICAM) products and services to meet your agency’s mission-needs.</p> -->
-						</div>
-						<div style="padding-top: 5px;"><a href="{{site.baseurl}}/buy/" class="usa-button">Buy Identity Products</a></div>
-					</div>
-				</div>
-				<hr class="partner-divider desktop:display-none">
-			</div>
-			
-			
-			<div class="desktop:grid-col-4 padding-2">
-				<div class="grid-row">
-					<div class="tablet:grid-col-3 home-partners-icon-container">
-					</div>
-					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4 table:padding-top-3">
-						<div class="home-partners-text">
-							<!-- <h3>Program Managers</h3> -->
-							<!-- <p class="margin-bottom-4">Govern and operate FICAM-compliant systems and services.</p> -->
-						</div>
-						<div style="padding-top: 5px;"><a href="{{site.baseurl}}/governance/" class="usa-button" width="300">Governance and Compliance</a></div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>	
-</section> 
-<!-- End of top container -->
+	</div>
+</section>
+  <!-- End of first container -->
 
 <!-- Start of second container -->
 <section class="usa-graphic-list usa-section usa-section--dark">
@@ -84,7 +82,7 @@ eight.
 		  </div>
 		</div>
 	  </div>
-	   
+
 		<div class="usa-graphic-list__row grid-row grid-gap">
 		<div class="usa-media-block tablet:grid-col">
 		  {% asset pki-icon.png class="usa-media-block__img" alt="Federal Public Key Infrastructure (FPKI)" %}
@@ -101,7 +99,7 @@ eight.
 		  </div>
 		</div>
 	  </div>
-	  
+
 		 <div class="usa-graphic-list__row grid-row grid-gap">
 		  <div class="usa-media-block tablet:grid-col">
 			{% asset pacs-icon.png class="usa-media-block__img" alt="Physical Access Control Systems (PACS)" %}
@@ -110,7 +108,7 @@ eight.
 			  <p>Understand the concepts related to building and operating a FICAM-compliant PACS.</p>
 			</div>
 		  </div>
-	   
+
 		 <div class="usa-media-block tablet:grid-col">
 		  {% asset playbook-icon.png class="usa-media-block__img" alt="Other FICAM Playbooks" %}
 		  <div class="usa-media-block__body">

@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: why
-title:  Goals and Objectives
-permalink: /why/goals-and-objectives/
-sidenav: why
+collection: how
+title: PIV Guide
+permalink: /how/piv-guide/
+sidenav: how
 sticky_sidenav: true
 
 subnav:
@@ -13,6 +13,7 @@ subnav:
     href: '#section-2'
   - text: Section 3
     href: '#section-3'
+
 ---
 
 ## Section 1
