@@ -293,7 +293,8 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  sources:
+sources:
+  ## Updated to @uswds 3.0
     - node_modules/@uswds/uswds/dist/css
     - node_modules/@uswds/uswds/dist/fonts
     - node_modules/@uswds/uswds/dist/img
