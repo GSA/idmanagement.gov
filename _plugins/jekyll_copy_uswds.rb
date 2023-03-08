@@ -1,7 +1,7 @@
 module Jekyll
   class JekyllCopyUswds < Generator
     def generate(site)
-      source = "node_modules/uswds/dist"
+      source = "node_modules/@uswds/uswds/dist"
       Dir.glob(File.join(source, "{fonts,img}", "**", "*")) do |filename|
         next if File.directory?(filename)
         dir, name = File.split(filename.delete_prefix(source))
