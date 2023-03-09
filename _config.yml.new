@@ -68,7 +68,8 @@ primary_navigation:
         url: /why/authoritative-sources/
       - name: Federation Overview
         url: /why/federation-overview/
-# What is FICAM top level menu with dropdowns
+
+# # What is FICAM top level menu with dropdowns
   - name: What is FICAM?
     children: 
       - name: PACS Assessment Toolkit
@@ -94,7 +95,7 @@ primary_navigation:
       - name: Access Management & Overview
         url: /what/access-management-overview/
 
-# How to use FICAM top level menu with dropdowns
+# # How to use FICAM top level menu with dropdowns
   - name: How to use FICAM
     children:
       - name: Digitally Sign Word Doc
@@ -116,7 +117,7 @@ primary_navigation:
       - name: Tools
         url: /how/tools/
 
-# Who FICAM is For? top level menu with dropdowns
+# # Who FICAM is For? top level menu with dropdowns
   - name: Who is FICAM For?
     children:
       - name: New? Get Started
@@ -141,6 +142,19 @@ primary_navigation:
   - name: FAQs
     description: Frequently Asked Questions
     url: /faq/
+
+# Note: Secondary top level menu items are located in the 'include/menu.html'
+
+  # - name: Partners
+  #   children:
+  #     - name: Vendors
+  #       url: /sell/
+  #     - name: Acquisition Professionals
+  #       url: /buy/
+  #     - name: Program Managers
+  #       url: /governance/
+  # - name: Approved Product List
+  #   url: /buy#products
 
 secondary_navigation:
   - name: Contact Us
@@ -192,9 +206,8 @@ collections:
     permalink: /university/:path/   
   faq:
     output: true
-    permalink: /faq/:path/ 
-
-  # (Old, keep for ref) buy: 
+    permalink: /faq/:path/  
+  # buy:
   #   output: true
   #   permalink: /buy/:path/
   # sell:
@@ -203,7 +216,6 @@ collections:
   # governance:
   #   output: true
   #   permalink: /governance/:path/
-
   pages:
     output: true
     permalink: /:path/
@@ -281,7 +293,7 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  sources:
+sources:
   ## Updated to @uswds 3.0
     - node_modules/@uswds/uswds/dist/css
     - node_modules/@uswds/uswds/dist/fonts
