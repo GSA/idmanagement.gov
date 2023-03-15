@@ -4,7 +4,7 @@
 
 // Add your SASS/CSS here
 .usa-hero {
-  background-image: asset_url("hero-image.png");
+  background-image: asset_url("hero-image2.png");
   background-position: 50%;
   background-size: cover;
 }
@@ -17,6 +17,73 @@
 // default mode hide banner
 .usa-banner__content {
   display: hidden;
+}
+
+// Hover for 6 front icon headers natural state and hover  
+.showhover {
+  font-size: 24px;
+}
+.showhover:hover {
+  color: #4488e8;
+  font-size: 24px;
+}
+.usa-hero__heading showhover {
+  font-size: 24px;
+}
+
+
+// For bottom icon panel on front page, to cover blue with image in header
+.gsa-icon-panel {
+  background-image: asset_url("hero-image2.png");
+  background-position: 100%;
+  background-size: cover;
+}
+
+
+/* Links for top 5 lists */
+.gsa-link {
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-top: 0px;
+  border-bottom: 1px solid #c7c6c6;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  color: #214579;
+}
+/* last link in a list  */
+.gsa-link-last {
+  //padding-bottom: 5px;
+  text-decoration: none;
+  padding-left: 8px;
+  margin-top: 0px;
+  font-weight: bold;
+  width: 100%;
+  color: #214579;
+}
+
+/* Links for top 5 lists */
+.gsa-link:hover {
+  padding-bottom: 5px;
+  padding-left: 8px;
+  border-bottom: 1px solid #c7c6c6;
+  margin-top: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  color: #ffffff;
+  background-color: #cdcbcb;
+}
+/* last link in a list  */
+.gsa-link-last:hover {
+  //padding-bottom: 5px;
+  margin-top: 0px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  color: #ffffff;
+  background-color: #cdcbcb;
 }
 
 @media screen and (min-width: 640px) {

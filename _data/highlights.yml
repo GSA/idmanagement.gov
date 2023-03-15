@@ -9,14 +9,14 @@
 - heading: This is a link to a PDF
   message: This is the second message linked to a PDF.(Notice)
   importance: warning
-  linkto: https://www.idmanagement.gov/docs/apl-1355-idone-piv.pdf
+  linkto: #
   linktext: Get the PDF Here.
   seconds: 50000
 
 - heading: This is a warning... 
   message: This is a third carousel message which is a warning.(Warning)
   importance: important
-  linkto: https://www.irs.gov
+  linkto: #
   linktext: Visit IRS.gov
   seconds: 100000
 
