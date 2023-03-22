@@ -193,6 +193,9 @@ collections:
   faq:
     output: true
     permalink: /faq/:path/ 
+  rss:
+    output: true
+    permalink: /news/:path/ 
 
   # (Old, keep for ref) buy: 
   #   output: true

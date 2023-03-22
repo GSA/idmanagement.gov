@@ -30,6 +30,7 @@ GEM
       execjs (~> 2)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
+    date (3.3.3)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -102,6 +103,10 @@ GEM
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    open-uri (0.3.0)
+      stringio
+      time
+      uri
     parallel (1.22.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -114,19 +119,25 @@ GEM
       ffi (~> 1.0)
     rexml (3.2.5)
     rouge (3.28.0)
+    rss (0.2.9)
+      rexml
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
+    stringio (3.0.5)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    time (0.2.1)
+      date
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
+    uri (0.12.0)
     yell (2.2.2)
     zeitwerk (2.6.6)
 
@@ -144,6 +155,8 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
+  open-uri
+  rss
   tzinfo-data
 
 RUBY VERSION
