@@ -16,7 +16,7 @@
 
 - orderNumber: 0
   initialState: active
-  delay: 5000
+  delay: 10000
   heroHeading: FICAM 
   heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
   actionButtonText: Learn more
@@ -25,7 +25,7 @@
 
 - orderNumber: 1
   initialState:
-  delay: 5000
+  delay: 10000
   heroHeading: Zero Trust
   heroText: concept assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established.
   actionButtonText: Learn more
@@ -34,7 +34,7 @@
 
 - orderNumber: 2
   initialState:
-  delay: 5000
+  delay: 10000
   heroHeading: Privileged User
   heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
   actionButtonText: Learn more
@@ -43,7 +43,7 @@
 
 - orderNumber: 3
   initialState:
-  delay: 5000
+  delay: 10000
   heroHeading: Phishing Resistant Authenticator
   heroText: is usually immune to social engineering type of attacks and provides a greater level of security and resilience than traditional authenticators.
   actionButtonText: Learn more
@@ -52,7 +52,7 @@
 
 - orderNumber: 4
   initialState:
-  delay: 5000
+  delay: 10000
   heroHeading: Single Sign On (SSO)
   heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
   actionButtonText: Learn more
@@ -61,7 +61,7 @@
 
 - orderNumber: 5
   initialState:
-  delay: 5000
+  delay: 10000
   heroHeading: User Authorization
   heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
   actionButtonText: Learn more
@@ -70,7 +70,7 @@
 
 - orderNumber: 6
   initialState:
-  delay: 5000
+  delay: 10000
   heroHeading: Identity Lifecycle Management
   heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
   actionButtonText: Learn more
