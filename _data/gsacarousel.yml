@@ -1,0 +1,69 @@
+# GSA Carousel Config 
+# Date: 03-22-2023
+# File: _data/gsacarousel.yml
+# File used in: _includes/hero.html 
+# Developer: Clayton Barnette <clayton.barnette@gsa.gov>
+# Purpose: Drives Carousel data on the homepage of IDManagement.gov
+#
+# - orderNumber: Sequential numbering of each carousel item, starts at 0 - n 
+#   initialState: set to active active or leave blank (Note: only one carousel item should be set to active or it breaks the carousel)
+#   delay(default: 5000): number of milliseconds to display the carousel item on the page, before changing 
+#   heroHeading: text for the main hero section of the carousel, keep text length short 1 - 3 words depending on length
+#   heroText: secondary text for the hero section of the carousel, keep text length short as action statements
+#   actionButtonText: text for action button, normally 1 - 3 words, no more than 5
+#   actionLocation: # desired destination of the user after reading action statement, URLs, local URIs or permilinks
+#   actionTarget(default: _blank): target window, options: _blank or _self if link is internal to site 
+
+- orderNumber: 0
+  initialState: active
+  delay: 5000
+  heroHeading: FICAM 
+  heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
+  actionButtonText: Learn more
+  actionLocation: # 
+  actionTarget: _blank
+
+- orderNumber: 1
+  initialState:
+  delay: 5000
+  heroHeading: Zero Trust
+  heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
+  actionButtonText: Learn more
+  actionLocation: # 
+  actionTarget: _blank
+
+- orderNumber: 2
+  initialState:
+  delay: 5000
+  heroHeading: Phishing Resistant Authenticator
+  heroText: is usually immune to social engineering type of attacks and provides a greater level of security and resilience than traditional authenticators.
+  actionButtonText: Learn more
+  actionLocation: # 
+  actionTarget: _blank
+
+- orderNumber: 3
+  initialState:
+  delay: 5000
+  heroHeading: Single Sign On (SSO)
+  heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
+  actionButtonText: Learn more
+  actionLocation: # 
+  actionTarget: _blank
+
+- orderNumber: 4
+  initialState:
+  delay: 5000
+  heroHeading: User Authorization
+  heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
+  actionButtonText: Learn more
+  actionLocation: # 
+  actionTarget: _blank
+
+- orderNumber: 5
+  initialState:
+  delay: 5000
+  heroHeading: Identity Lifecycle Management
+  heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
+  actionButtonText: Learn more
+  actionLocation: # 
+  actionTarget: _blank

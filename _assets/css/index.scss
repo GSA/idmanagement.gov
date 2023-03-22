@@ -29,7 +29,7 @@
 .hero-heading {
   clear: both;
   font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-weight: 800;
   color: #00bde3;
   line-height: 1.2;
@@ -51,14 +51,12 @@
   font-size: 24px;
 }
 
-
 // For bottom icon panel on front page, to cover blue with same image in header
 .gsa-icon-panel {
   background-image: asset_url("hero-image2-blur.png");
   background-position: 100%;
   background-size: cover;
 }
-
 
 /* Links for top 5 lists */
 .gsa-link {
