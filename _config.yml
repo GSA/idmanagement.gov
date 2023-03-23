@@ -46,28 +46,36 @@ primary_navigation:
 # WhyFICAM? top level menu with dropdowns
   - name: Why FICAM?
     children:
+      - name: Introduction
+        url: /why/introduction/
+      - name: Architecture
+        url: /why/architecture/
+      - name: History
+        url: /why/history/
+      - name: ICAM
+        url: /why/icam/
       - name: Goals and Objectivess
         url: /why/goals-and-objectives/
-      - name: Services Framework
-        url: /why/service-framework/
-      - name: Identity Management
-        url: /why/identity-management/
-      - name: Credential Management
-        url: /why/credential-management/
-      - name: Access Management
-        url: /why/access-management/
-      - name: Federation
-        url: /why/federation/
-      - name: Governance
-        url: /why/governance/
-      - name: Use Cases
-        url: /why/use-cases/
-      - name: System Component Examples
-        url: /why/system-component-examples/
-      - name: Authoritative Sources
-        url: /why/authoritative-sources/
-      - name: Federation Overview
-        url: /why/federation-overview/
+
+      # - name: Identity Management
+      #   url: /why/identity-management/
+      # - name: Credential Management
+      #   url: /why/credential-management/
+      # - name: Access Management
+      #   url: /why/access-management/
+      # - name: Federation
+      #   url: /why/federation/
+      # - name: Governance
+      #   url: /why/governance/
+      # - name: Use Cases
+      #   url: /why/use-cases/
+      # - name: System Component Examples
+      #   url: /why/system-component-examples/
+      # - name: Authoritative Sources
+      #   url: /why/authoritative-sources/
+      # - name: Federation Overview
+      #   url: /why/federation-overview/
+
 # What is FICAM top level menu with dropdowns
   - name: What is FICAM?
     children: 

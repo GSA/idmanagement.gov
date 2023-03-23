@@ -7,25 +7,71 @@ sidenav: why
 sticky_sidenav: true
 
 subnav:
-  - text: Section 1
-    href: '#section-1'
-  - text: Section 2
-    href: '#section-2'
-  - text: Section 3
-    href: '#section-3'
+
 ---
 
-## Section 1
+The Goals and Objectives identify the aims and outcomes of a federal agency enterprise ICAM program. The goals and objectives align with ICAM functions and map to government-wide policies, cross-agency priorities, and strategic government initiatives.
 
-About Landing Page with infographic/video: What is ICAM, What is FICAM, DISCUSS BASIC ZERO TRUST, History (content from Architecture page)
+__Goals__ are aspirational statements designed for senior government leaders, agency executives, and agency ICAM program leadership responsible for setting program strategy. __Objectives__ are action areas where agency execution strategies, action plans, and performance metrics can be developed based on alignment with mission needs.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+The visual below presents the three goals, each with its own objectives.
+
+<img src="{{site.baseurl}}/assets/arch/goals_GoalsAndObjectives.png" alt="Three boxes that define the goals and their corresponding objectives." width="560" height="312">
+
+__Goal 1: Modernize security policies and solutions to make risk-based decisions, automate identity and access management processes, and move access protections closer to government data.__
+- 1.1 Review, update, and maintain comprehensive ICAM policies and technology solution roadmaps to inform and enforce enterprise strategic planning, risk management, and modernization.
+- 1.2 Adopt and use cloud-ready systems that provide an efficient and secure way to access resources.
+- 1.3 Monitor and respond to user behavior and events by using data as a strategic asset to make adaptive and risk-based decisions.
+
+__Goal 2: Enable missions to efficiently deliver services to federal and contractor employees and resources.__
+- 2.1 Establish and manage identities for all enterprise users and resources.
+- 2.2 Design enterprise solutions to manage access to information and resources.
+- 2.3 Use enterprise identity information discovery and enterprise centralized access management.
+- 2.4 Leverage federated solutions to accept identity and authentication assertions made by other agency and mission partners when efficient.
+
+__Goal 3: Provide enterprise-level solutions within agencies to improve operations and promote cost-effective and efficient use of resources.__
+- 3.1 Streamline ICAM governance and program management within each agency to optimize execution, ensure consistency, and align intent across the enterprise.
+- 3.2 Evaluate, rationalize, and migrate to modern, cloud-smart solutions for ICAM services.
+- 3.3 Promote interoperability and efficiency across the federal government by buying and building ICAM solutions that use open, commercially adopted standards.
 
 
-## Section 2
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-## Section 3
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<!-- <div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="b-a1">
+      Goal 1: Modernize security policies and solutions to make risk-based decisions, automate identity and access management processes, and move access protections closer to government data.
+    </button>
+  </h4>
+  <div id="b-a1" class="usa-accordion__content usa-prose">
+    <ul>
+      <li>1.1 Review, update, and maintain comprehensive ICAM policies and technology solution roadmaps to inform and enforce enterprise strategic planning, risk management, and modernization.</li>
+      <li>1.2 Adopt and use cloud-ready systems that provide an efficient and secure way to access resources.</li>
+      <li>1.3 Monitor and respond to user behavior and events by using data as a strategic asset to make adaptive and risk-based decisions.</li>
+    </ul>
+  </div>
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
+      Goal 2: Enable missions to efficiently deliver services to federal and contractor employees and resources.
+    </button>
+  </h4>
+  <div id="b-a2" class="usa-accordion__content usa-prose">
+    <ul>
+      <li>2.1 Establish and manage identities for all enterprise users and resources.</li>
+      <li>2.2 Design enterprise solutions to manage access to information and resources.</li>
+      <li>2.3 Use enterprise identity information discovery and enterprise centralized access management.</li>
+      <li>2.4 Leverage federated solutions to accept identity and authentication assertions made by other agency and mission partners when efficient.</li>
+    </ul>
+  </div>
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3" >
+      Goal 3: Provide enterprise-level solutions within agencies to improve operations and promote cost-effective and efficient use of resources.
+    </button>
+  </h4>
+  <div id="b-a3" class="usa-accordion__content usa-prose">
+    <ul>
+      <li>3.1 Streamline ICAM governance and program management within each agency to optimize execution, ensure consistency, and align intent across the enterprise.</li>
+      <li>3.2 Evaluate, rationalize, and migrate to modern, cloud-smart solutions for ICAM services.</li>
+      <li>3.3 Promote interoperability and efficiency across the federal government by buying and building ICAM solutions that use open, commercially adopted standards.</li>
+    </ul>
+  </div>
+</div> -->
