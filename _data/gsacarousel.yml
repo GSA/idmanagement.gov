@@ -35,7 +35,7 @@
 - orderNumber: 2
   initialState:
   delay: 10000
-  heroHeading: Privileged User
+  heroHeading: Privileged user
   heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
   actionButtonText: Learn more
   actionLocation: # 
@@ -44,7 +44,7 @@
 - orderNumber: 3
   initialState:
   delay: 10000
-  heroHeading: Phishing Resistant Authenticator
+  heroHeading: Phishing resistant authenticator
   heroText: is usually immune to social engineering type of attacks and provides a greater level of security and resilience than traditional authenticators.
   actionButtonText: Learn more
   actionLocation: # 
@@ -53,7 +53,7 @@
 - orderNumber: 4
   initialState:
   delay: 10000
-  heroHeading: Single Sign On (SSO)
+  heroHeading: Single Sign On
   heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
   actionButtonText: Learn more
   actionLocation: # 
@@ -62,7 +62,7 @@
 - orderNumber: 5
   initialState:
   delay: 10000
-  heroHeading: User Authorization
+  heroHeading: User authorization
   heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
   actionButtonText: Learn more
   actionLocation: # 
@@ -71,7 +71,7 @@
 - orderNumber: 6
   initialState:
   delay: 10000
-  heroHeading: Identity Lifecycle Management
+  heroHeading: Identity lifecycle management
   heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
   actionButtonText: Learn more
   actionLocation: # 
