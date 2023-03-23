@@ -105,11 +105,10 @@ Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing gu
 
 | Position  |    Solution   | APL Numbers | New/Update | Testing Status |
 | --------- | ------------- | ----------- |------------|----------------|
-| 1 | LenelS2 OnGuard with Embedded Authentication (HID PIVClass) | 10112 & 10113 | Update | In queue | 
-| 2 | Genetec + TI solution | New | New | In queue |
-| 3 | Tyco Security Products C-CURE 9000 with Innometriks Validation System | 10115 & 10108 | Update | In queue |
-| 4 | Gallagher PIV Command Centre + HID Validation | 10019 & 10020 | Update | In queue |
-| 5 | LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition | New | New | In queue |
-| 6 | System Galaxy + TI Update | 10083 & 10084 | Update | On hold pending vendor action |
+| 1 |Genetec + TI solution|New|New|In queue| 
+| 2 |Tyco Security Products C-CURE 9000 with Innometriks Validation System|10115 & 10108|Update|In queue| 
+| 3 |Gallagher PIV Command Centre + HID Validation|10019 & 10020|Update|In queue| 
+| 4 |LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition|10112 & 10113|New Reader add|In queue| 
+| 5 |System Galaxy + TI Update|10083 & 10084|Update|On hold pending vendor action| 
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
