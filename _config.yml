@@ -83,7 +83,7 @@ primary_navigation:
         url: /what/introduction/
       - name: Service Framework
         url: /what/services/
-      - name: Usecases
+      - name: Use Cases
         url: /what/usecases/ 
       # - name: PACS Assessment Toolkit
       #   url: /what/pacs-assessment-toolkit/
