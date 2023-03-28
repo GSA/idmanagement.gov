@@ -54,7 +54,7 @@ primary_navigation:
         url: /why/history/
       - name: ICAM
         url: /why/icam/
-      - name: Goals and Objectivess
+      - name: Goals and Objectives
         url: /why/goals-and-objectives/
 
       # - name: Identity Management
@@ -79,28 +79,34 @@ primary_navigation:
 # What is FICAM top level menu with dropdowns
   - name: What is FICAM?
     children: 
-      - name: PACS Assessment Toolkit
-        url: /what/pacs-assessment-toolkit/
-      - name: Organizations that offer ICAM services
-        url: /what/organizations-that-offer-icam-services/
-      - name: Personal Identity Verification (PIV) Cards
-        url: /what/personal-identity-verification-piv-cards/
-      - name: User Guides
-        url: /what/user-guides/
-      - name: Physical Access Control System (PACS) 
-        url: /what/physical-access-control-system-pacs/ 
-      - name: GSA Multiple Award Schedule
-        url: /what/gsa-multiple-award-schedule/
-      - name: Trust Services
-        url: /what/trust-services/
-      - name: GSA ICAM Solutions and Shared Services
-        url: /what/gsa-icam-solutions-and-shared-services/
-      - name: FIPS 201 Removed Product List
-        url: /what/fips-201-removed-product-list/
-      - name: Credential Management & Overview
-        url: /what/credential-management-overview/
-      - name: Access Management & Overview
-        url: /what/access-management-overview/
+      - name: Introduction
+        url: /what/introduction/
+      - name: Service Framework
+        url: /what/services/
+      - name: Usecases
+        url: /what/usecases/ 
+      # - name: PACS Assessment Toolkit
+      #   url: /what/pacs-assessment-toolkit/
+      # - name: Organizations that offer ICAM services
+      #   url: /what/organizations-that-offer-icam-services/
+      # - name: Personal Identity Verification (PIV) Cards
+      #   url: /what/personal-identity-verification-piv-cards/
+      # - name: User Guides
+      #   url: /what/user-guides/
+      # - name: Physical Access Control System (PACS) 
+      #   url: /what/physical-access-control-system-pacs/ 
+      # - name: GSA Multiple Award Schedule
+      #   url: /what/gsa-multiple-award-schedule/
+      # - name: Trust Services
+      #   url: /what/trust-services/
+      # - name: GSA ICAM Solutions and Shared Services
+      #   url: /what/gsa-icam-solutions-and-shared-services/
+      # - name: FIPS 201 Removed Product List
+      #   url: /what/fips-201-removed-product-list/
+      # - name: Credential Management & Overview
+      #   url: /what/credential-management-overview/
+      # - name: Access Management & Overview
+      #   url: /what/access-management-overview/
 
 # How to use FICAM top level menu with dropdowns
   - name: How to use FICAM
