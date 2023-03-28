@@ -84,7 +84,7 @@ primary_navigation:
       - name: Service Framework
         url: /what/services/
       - name: Use Cases
-        url: /what/usecases/ 
+        url: /what/usecases/
       # - name: PACS Assessment Toolkit
       #   url: /what/pacs-assessment-toolkit/
       # - name: Organizations that offer ICAM services
