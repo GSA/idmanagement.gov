@@ -87,7 +87,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   </div>
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <h4 id="use-case-2" id="#use-case-2" class="usa-accordion__heading"> <!-- Use Case 2 -->
+  <h4 id="use-case-2" class="usa-accordion__heading"> <!-- Use Case 2 -->
     <button
       class="usa-accordion__button"
       aria-expanded="false"
