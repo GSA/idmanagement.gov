@@ -8,19 +8,19 @@ sidenav: what
 subnav:
   - text: Use Case 1
     href: '#use-case-1'
-  - text: Use case 2
+  - text: Use Case 2
     href: '#use-case-2'
-  - text: Use case 3
+  - text: Use Case 3
     href: '#use-case-3'
-  - text: Use case 4
+  - text: Use Case 4
     href: '#use-case-4'
-  - text: Use case 5
+  - text: Use Case 5
     href: '#use-case-5'
-  - text: Use case 6
+  - text: Use Case 6
     href: '#use-case-6'
-  - text: Use case 7
+  - text: Use Case 7
     href: '#use-case-7'
-  - text: Use case 8
+  - text: Use Case 8
     href: '#use-case-8'
 
 sticky_sidenav: true
