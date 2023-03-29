@@ -6,21 +6,21 @@ permalink: /what/usecases/
 sidenav: what
 
 subnav:
-  - text: Use Case 1
+  - text: 1 - Create and Maintain Identity
     href: '#use-case-1'
-  - text: Use Case 2
+  - text: 2 - Proof an Identity
     href: '#use-case-2'
-  - text: Use Case 3
+  - text: 3 - Manage Lifecycle
     href: '#use-case-3'
-  - text: Use Case 4
+  - text: 4 - Create and Issue Credential
     href: '#use-case-4'
-  - text: Use Case 5
+  - text: 5 - Issue a Derived Credential
     href: '#use-case-5'
-  - text: Use Case 6
+  - text: 6 - Manage the Credential Lifecycle
     href: '#use-case-6'
-  - text: Use Case 7
+  - text: 7 - Grant Access
     href: '#use-case-7'
-  - text: Use Case 8
+  - text: 8 - Accept Federation Assertions
     href: '#use-case-8'
 
 sticky_sidenav: true
@@ -33,11 +33,11 @@ Each use case includes a high-level summary of the scenario, individuals and sys
 
 For details about ICAM services, see the [Services Framework]({{site.baseurl}}/what/services).
 
-While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies. The use cases don’t include agency-specific functions and process details because your agency should analyze your systems and processes to align with these broad use cases.
+While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies.
 
 You can combine or build upon the ICAM use cases to support your agency’s scenarios and needs.
 
-<div id="use-case-1" class="usa-accordion" aria-multiselectable="true">
+<div id="use-case-1" class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 class="usa-accordion__heading"> <!-- Use Case 1 -->
     <button
