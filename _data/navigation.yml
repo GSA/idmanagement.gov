@@ -106,10 +106,16 @@ who:
 learn:
   - text: FICAM University
     href: /university/ 
-  - text: FICAM Library
-    href: /university/library/
-  - text: Resources
+  - text: U.S. Laws
+    href: /university/laws/
+  - text: Policies
+    href: /university/policies/
+  - text: Standards
+    href: /university/standards/
+  - text: Additional Resources
     href: /university/resources/
+  - text: Library
+    href: /university/library/
   - text: FAQs
     href: /faq/
 
@@ -118,7 +124,9 @@ learn:
 faq:
   - text: FAQs
     href: /faq/ 
-  - text: Resources
+  - text: FICAM University
+    href: /university/  
+  - text: Additional Resources
     href: /university/resources/ 
 
 ## Buy

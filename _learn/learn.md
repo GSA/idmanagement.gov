@@ -7,26 +7,109 @@ sidenav: learn
 sticky_sidenav: true
 
 subnav:
-  - text: Section 1
-    href: '#section-1'
-  - text: Section 2
-    href: '#section-2'
-  - text: Section 3
-    href: '#section-3'
+    - text: System Components
+      href: '#system-components'
+    - text: Authoritative Sources
+      href: '#authoritative-sources'
+    - text: Identity Management Systems
+      href: '#identity-management-systems'
+    - text: Access Management Systems
+      href: '#access-management-systems'
+    - text: Credential Management Systems
+      href: '#credential-management-systems'
+    - text: Governance Systems
+      href: '#governance-systems'
+    - text: Agency Endpoints
+      href: '#agency-endpoints'
 
 ---
 
-## Section 1
+<!-- FICAM University -->
 
-About Landing Page with infographic/video: What is ICAM, What is FICAM, DISCUSS BASIC ZERO TRUST, History (content from Architecture page)
+The university serves as a knowledge base for all things identity. Explore the endless amount of identity related content at your leisure.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<hr/>
+
+## System Components
+
+Component examples include sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The component examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications and the business requirements.
+
+The system's components are representative examples only. Some solutions chosen by your agency may span across more than one service area.
+
+The following figure is an example for a small selection of system components only. You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
+
+<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas." width="560" height="319">
+
+## Authoritative Sources
+An authoritative source is a trusted repository of identity attribute data.  It’s possible to have multiple authoritative sources for attributes.
+
+Authoritative sources systems components may include:
+
+- Human Resource systems such as payroll, time and attendance, and benefits administration
+- Agency or government-wide Learning Management Systems
+- Agency or government-wide Personnel Security systems for security and suitability
+- Directory services, including on-premise or cloud-based directory services
+- Other external or internal sources
+
+## Identity Management Systems
+Identity management systems are how an agency manages the identity lifecycle. 
+
+Identity management system components may include:
+
+- Identity lifecycle management services, including provisioning and workflow 
+- Role management or role manager applications
+- Identity correlation or aggregation
+- Directory management
+
+## Access Management Systems
+Access management systems are how an agency leverages credentials to authenticate individuals and authorize access to protected resources.
+
+Access management system components may include:
+
+- Enterprise single sign-on (eSSO) applications
+- Web access management applications
+- Physical or facility access control systems 
+- Privileged access management applications
+- Access policy and access rules repositories
+- Policy enforcement points 
+- Policy decision points
+- Virtual private networks
+- Cloud access security brokers
+- Network access management tools
 
 
-## Section 2
+## Credential Management Systems
+Credential management systems are how an agency manages an authentication token bound to an identity.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Credential management system components may include:
 
-## Section 3
+- PIV credential service provider solutions
+- Other non-PKI credential service provider solutions 
+- Federated certification authorities
+- Private certification authorities
+- Key management services 
+- Enterprise certificate manager
+- Multi-factor authentication managers for software and hardware tokens
+- Password managers
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## Governance Systems
+Governance is the set of components to centralize management, develop insights, and assist in managing ICAM areas and services. Applications across all service areas include auditing such as standard audit logs or configuration of auditable events. Governance includes the aggregation of individual auditing and reporting into centralized tools to perform real-time or near real-time analysis, identify anomalies, and trigger mitigations for anomalous authentication or authorization events. Tools are increasingly incorporating machine learning or adaptive algorithms. 
+
+Governance systems components may include:
+
+- Identity governance solutions to perform access re-certifications 
+- IT Service Management (ITSM)
+- Security information and event monitoring (SIEM)
+
+## Agency Endpoints
+Agency endpoints are resources that an agency needs to protect, including physical and digital resources. 
+
+Agency endpoints may include:
+
+- On-premise applications
+- Cloud-based applications and platforms
+- Agency private networks
+- Government cloud email services
+- Government facilities
+
+
