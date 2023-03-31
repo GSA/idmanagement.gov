@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: learn
+collection: university
 title:  Library
 permalink: /university/library/
-sidenav: learn
+sidenav: university
 sticky_sidenav: true
 
 subnav:

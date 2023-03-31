@@ -1,15 +1,16 @@
 ---
 layout: page
-collection: learn
+collection: university
 title: Standards
 permalink: /university/standards/
-sidenav: learn
+sidenav: university
 sticky_sidenav: true
-pdf: "docs/ficam-arch.pdf"
+
 
 subnav:
 #   - text: Laws
 #     href: '#laws'
+pdf: "docs/ficam-arch.pdf"
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 layout: page
-collection: learn
+collection: university
 title:  Additional Resources
 permalink: /university/resources/
-sidenav: learn
+sidenav: university
 sticky_sidenav: true
 
 ---
 
-<!-- Additional Resources --> 
+<!-- Additional Resources -->
 
 
 <hr/>

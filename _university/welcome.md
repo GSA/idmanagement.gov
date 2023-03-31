@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: learn
+collection: university
 title:  FICAM University
 permalink: /university/
-sidenav: learn
+sidenav: university
 sticky_sidenav: true
 
 subnav:
@@ -26,7 +26,7 @@ subnav:
 
 <!-- FICAM University -->
 
-The university serves as a knowledge base for all things identity. Explore the endless amount of identity related content at your leisure.
+This University section serves as a knowledge base for all things identity. Explore the endless amount of identity related content at your leisure.
 
 <hr/>
 

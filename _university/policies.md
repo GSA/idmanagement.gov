@@ -1,15 +1,15 @@
 ---
 layout: page
-collection: learn
+collection: university
 title: Policies
 permalink: /university/policies/
-sidenav: learn
+sidenav: university
 sticky_sidenav: true
-pdf: "docs/ficam-arch.pdf"
 
 subnav:
-#   - text: Laws
-#     href: '#laws'
+#   - text: policies
+#     href: '#policies'
+pdf: "docs/ficam-arch.pdf"
 
 ---
 
@@ -19,7 +19,7 @@ Review the federal policies  that impact and shape the implementations of ICAM p
 
 <hr/>
 
-<a href="https://www.opm.gov/policy-data-oversight/covid-19/temporary-procedures-for-personnel-vetting-and-appointment-of-new-employees-during-maximum-telework-period-due-to-coronavirus-covid-19/" target="_blank" rel="noopener noreferrer">**Office of Personnel Management Memorandum: Temporary Procedures for Personnel Vetting and Appointment of New Employees during Maximum Telework Period due to Coronavirus COVID-19**</a> (March 2020)<br/>
+<!-- <a href="https://www.opm.gov/policy-data-oversight/covid-19/temporary-procedures-for-personnel-vetting-and-appointment-of-new-employees-during-maximum-telework-period-due-to-coronavirus-covid-19/" target="_blank" rel="noopener noreferrer">**Office of Personnel Management Memorandum: Temporary Procedures for Personnel Vetting and Appointment of New Employees during Maximum Telework Period due to Coronavirus COVID-19**</a> (March 2020)<br/>
 > _Temporary_.  This memorandum sets forth _temporary procedures_ for the vetting and appointment of federal personnel, collection of biometrics for federal employment, and employment authorization and eligibility.
 
 <a href="https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-19.pdf" target="_blank" rel="noopener noreferrer">**M 20-19: Harnessing Technology to Support Mission Continuity**</a> (PDF, March 2020)<br/>
@@ -59,4 +59,33 @@ Review the federal policies  that impact and shape the implementations of ICAM p
 > This memorandum provides implementation instructions for HSPD-12 and Federal Information Processing Standards (FIPS) 201.
 
 <a href="http://www.dhs.gov/homeland-security-presidential-directive-12" target="_blank" rel="noopener noreferrer">**HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors**</a> (August 2004)<br/>
-> HSPD-12 calls for a mandatory, government-wide standard for secure and reliable forms of identification issued by the federal government to its employees and employees of federal contractors for access to federally controlled facilities and networks.
+> HSPD-12 calls for a mandatory, government-wide standard for secure and reliable forms of identification issued by the federal government to its employees and employees of federal contractors for access to federally controlled facilities and networks. -->
+
+
+{% assign lcount = 0 %}
+{% for policy in site.data.policies %}
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="{{policy.expanded}}" aria-controls="gsa-{{forloop.index}}">
+      {{policy.name}} ({{policy.pubdate}})
+    </button>
+  </h4>
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose">
+    <p>
+        <div class="display-flex flex-column flex-align-end">
+          <span class="usa-tag">{{policy.doctype}}</span> 
+        </div>
+        <p>{{policy.summary}}</p>
+        <div class="display-flex flex-column flex-align-end">
+            <span class="gsa-source">Source: {{policy.source}}</span>
+        </div>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">
+        <a href="{{policy.url}}" target="{{policy.target}}" rel="noopener noreferrer">
+            <button class="usa-button">View</button>
+        </a>
+        </div>
+    </p>
+  </div>
+</div>
+{% endfor %}

@@ -147,8 +147,8 @@ primary_navigation:
         url: /who/program-manager/
   
   # FICAM University page
-  - name: FICAM University
-    description: FICAM University
+  - name: University
+    description: University
     url: /university/
 
   # FAQ page
@@ -201,7 +201,7 @@ collections:
   who:
     output: true
     permalink: /who/:path/
-  learn:
+  university:
     output: true
     permalink: /university/:path/   
   faq:

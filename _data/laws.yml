@@ -1,0 +1,69 @@
+# GSA: IDManagement.gov 
+# Laws for _university/laws.md
+# Jekyll access: site.data.laws
+# Format: YAML
+# 
+# Legend: 
+# name: name of law
+# pubdate: the year(YYYY) or full name of month and Year(M YYYY) 
+# url: address on the document or site
+# target: options(_blank|_self) _blank = new browser window, _self = replace current page content
+# summary: description of the law
+# source: web address of website, name of site, governing orgainzation, or regulatory body
+# expanded: options(true|false) default is false, which means the accordion is closed in it's initial state
+# 
+# See: Blank Law Template at the end of this file to create a new entry
+# General Rule: if the desired default display state of the accordion is `expanded`, set the expanded property to `true` (default is `false`) to keep the page condensed.
+# Note: default setting are listed last, not to get in the way of data entry
+
+# Laws 
+- name: The Privacy Act of 1974
+  summary: This Act protects certain federal government records pertaining to individuals. In particular, the Act covers systems of records that an agency maintains and retrieves by an individual’s name or other personal identifier, such as a Social Security Number. 
+  pubdate: 2018
+  url: https://www.govinfo.gov/content/pkg/USCODE-2018-title5/pdf/USCODE-2018-title5-partI-chap5-subchapII-sec552a.pdf
+  source: https://www.govinfo.gov
+  target: _blank
+  expanded: false
+
+- name: Federal Information Security Modernization Act (FISMA) of 2014
+  summary: This Act provides a framework for measuring the effectiveness of federal information systems, and it calls for the development and implementation of continuous monitoring oversight mechanisms. It also acknowledges federal agencies should take advantage of commercially available security products (including software, hardware, etc.) that often provide robust information security solutions.
+  pubdate: December 2014
+  url: http://www.gpo.gov/fdsys/pkg/PLAW-113publ283 
+  source: http://www.gpo.gov
+  target: _blank
+  expanded: false
+
+- name: E-Government Act of 2002
+  summary: This Act enhances the management and promotion of electronic federal services and processes by establishing a Federal CIO within the Office of Management and Budget (OMB) and by establishing a broad framework of measures that require using Internet-based information technology (IT) to enhance citizen access to government information and services and for other purposes.
+  pubdate: December 2002
+  url: https://www.gpo.gov/fdsys/pkg/PLAW-107publ347/html/PLAW-107publ347.htm
+  source: https://www.gpo.gov
+  target: _blank
+  expanded: false
+
+- name: Electronic Signatures in Global and National (ESIGN) Commerce Act of 2000
+  summary: This Act facilitates the use of electronic records and electronic signatures in interstate and foreign commerce by ensuring the validity and legal effect of electronic contracts.
+  pubdate: June 2000
+  url: https://www.gpo.gov/fdsys/pkg/PLAW-106publ229/html/PLAW-106publ229.htm
+  source: https://www.gpo.gov
+  target: _blank
+  expanded: false
+
+- name: Government Paperwork Elimination Act of 1998 (GPEA)
+  summary: This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit information or transact with the agency electronically when possible and to maintain records electronically when possible. This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a range of electronic signature alternatives.
+  pubdate: October 1998
+  url: https://www.gpo.gov/fdsys/pkg/PLAW-105publ277/html/PLAW-105publ277.htm
+  source: https://www.gpo.gov
+  target: _blank
+  expanded: false
+
+
+# Blank Law template for new content/data 
+#- name:
+#  summary:
+#  pubdate:
+#  url:
+#  source: 
+#  target: _blank
+#  expanded: false
+

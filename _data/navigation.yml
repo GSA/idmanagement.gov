@@ -102,9 +102,9 @@ who:
     href: /who/program-manager/
 
 
-## Learn: for FICAM University section
-learn:
-  - text: FICAM University
+## University: for FICAM (University) section
+university:
+  - text: University
     href: /university/ 
   - text: U.S. Laws
     href: /university/laws/
@@ -124,7 +124,7 @@ learn:
 faq:
   - text: FAQs
     href: /faq/ 
-  - text: FICAM University
+  - text: University
     href: /university/  
   - text: Additional Resources
     href: /university/resources/ 
