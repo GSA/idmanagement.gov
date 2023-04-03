@@ -73,9 +73,9 @@ Review the federal policies  that impact and shape the implementations of ICAM p
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose">
     <p>
         <div class="display-flex flex-column flex-align-end">
-          <span class="usa-tag">{{policy.doctype}}</span> 
+          <span class="usa-tag">{{policy.doctype}}</span>
         </div>
-        <p>{{policy.summary}}</p>
+        <p>{{policy.summary | escape_once}}</p>
         <div class="display-flex flex-column flex-align-end">
             <span class="gsa-source">Source: {{policy.source}}</span>
         </div>
