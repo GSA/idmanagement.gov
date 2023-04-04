@@ -20,7 +20,7 @@ Review the federal standards that impact and shape the implementations of ICAM p
 
 <hr/>
 
-<a href="https://csrc.nist.gov/publications/detail/sp/800-205/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-205: Attribute Considerations for Access Control Systems**</a> (PDF, June 2019)<br/>
+<!-- <a href="https://csrc.nist.gov/publications/detail/sp/800-205/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-205: Attribute Considerations for Access Control Systems**</a> (PDF, June 2019)<br/>
 > This guideline provides federal agencies with information for implementing attributes in access control systems. Attributes enable a logical access control methodology where authorization to perform a set of operations is determined by evaluating attributes associated with the subject, object, requested operations, and, in some cases, environment conditions against policy, rules, or relationships that describe the allowable operations for a given set of attributes. This document outlines factors which influence attributes that an authoritative body must address when standardizing an attribute system and proposes some notional implementation suggestions for consideration.
 
 <a href="https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access**</a> (PDF, June 2018)<br/>
@@ -63,4 +63,32 @@ Review the federal standards that impact and shape the implementations of ICAM p
 > This guideline contains technical specifications for biometric data mandated in FIPS. These specifications reflect the design goals of interoperability and performance of the PIV credential. This specification addresses image acquisition to support the background check, fingerprint template creation, retention, and authentication. The biometric data specification in this document is the mandatory format for biometric data carried in the PIV Data Model (SP 800-73-1, Appendix A). Biometric data used only outside the PIV Data Model is not within the scope of this standard.
 
 <a href="https://csrc.nist.gov/publications/detail/sp/800-122/final" target="_blank" rel="noopener noreferrer">**NIST SP 800-122: Guide for Protecting the Confidentiality of Personally Identifiable Information (PII)**</a> (PDF. April 2010)<br/>
-> This guideline assists federal agencies in protecting the confidentiality of a specific category of data commonly known as PII. This document provides practical, context-based guidance for identifying PII and determining what level of protection is appropriate for each instance of PII. The document also suggests safeguards that may offer appropriate levels of protection for PII and provides recommendations for developing response plans for breaches involving PII.
+> This guideline assists federal agencies in protecting the confidentiality of a specific category of data commonly known as PII. This document provides practical, context-based guidance for identifying PII and determining what level of protection is appropriate for each instance of PII. The document also suggests safeguards that may offer appropriate levels of protection for PII and provides recommendations for developing response plans for breaches involving PII. -->
+
+{% assign lcount = 0 %}
+{% for standard in site.data.standards %}
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text" aria-expanded="{{standard.expanded}}" aria-controls="gsa-{{forloop.index}}">
+      {{standard.name}} ({{standard.pubdate}})
+    </button>
+  </h4>
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose">
+    <p>
+        <div class="display-flex flex-column flex-align-end">
+          <span class="usa-tag">{{standard.doctype}}</span>
+        </div>
+        <p>{{standard.summary}}</p>
+        <div class="display-flex flex-column flex-align-end">
+            <span class="gsa-source">Source: {{standard.source}}</span>
+        </div>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">
+        <a href="{{standard.url}}" target="{{standard.target}}" rel="noopener noreferrer">
+            <button class="usa-button">View</button>
+        </a>
+        </div>
+    </p>
+  </div>
+</div>
+{% endfor %}

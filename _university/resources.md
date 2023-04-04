@@ -13,7 +13,7 @@ sticky_sidenav: true
 
 <hr/>
 
-<a href="https://csrc.nist.gov/projects/risk-management/rmf-overview" target="_blank" rel="noopener noreferrer">**NIST FISMA Implementation Project: Risk Management Framework Overview**</a> (August 2020)<br/>
+<!-- <a href="https://csrc.nist.gov/projects/risk-management/rmf-overview" target="_blank" rel="noopener noreferrer">**NIST FISMA Implementation Project: Risk Management Framework Overview**</a> (August 2020)<br/>
 > The selection and specification of security controls for a system is accomplished as part of an organization-wide information security program that involves the management of organizational risk (that is, the risk to the organization or to individuals associated with the operation of a system). The management of organizational risk is a key element in the organization's information security program and provides an effective framework for selecting the appropriate security controls for a system (the security controls necessary to protect individuals and the operations and assets of the organization).
 
 <a href="https://pages.nist.gov/800-63-FAQ/" target="_blank" rel="noopener noreferrer">**NIST SP 800-63 Frequently Asked Questions (FAQs)**</a> (July 2020)<br/>
@@ -32,4 +32,32 @@ sticky_sidenav: true
 > The Continuous Diagnostics and Mitigation (CDM) Program is an approach to fortifying the cybersecurity of government networks and systems. The CDM Program provides cybersecurity tools, integration services, and dashboards to participating agencies to support them in improving their respective security posture. The CDM approach focuses on five areas for the federal enterprise: Data Protection Management, Network Security Management, Identity and Access Management, Asset Management, and Monitoring and Dashboards. 
 
 <a href="https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf" target="_blank" rel="noopener noreferrer">**Application Rationalization Playbook**</a> (PDF, June 2019)<br/>
-> This playbook is a practical guide for application rationalization and IT portfolio management under the federal government’s Cloud Smart initiatives. Application rationalization will help federal agencies mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve the delivery of key mission and business services. It requires buy-in from stakeholders across the enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, financial practitioners, acquisition and procurement experts, and end user communities. Rationalization efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable change. 
+> This playbook is a practical guide for application rationalization and IT portfolio management under the federal government’s Cloud Smart initiatives. Application rationalization will help federal agencies mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve the delivery of key mission and business services. It requires buy-in from stakeholders across the enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, financial practitioners, acquisition and procurement experts, and end user communities. Rationalization efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable change.  -->
+
+{% assign lcount = 0 %}
+{% for resource in site.data.resources %}
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text" aria-expanded="{{resource.expanded}}" aria-controls="gsa-{{forloop.index}}">
+      {{resource.name}} ({{resource.pubdate}})
+    </button>
+  </h4>
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose">
+    <p>
+        <div class="display-flex flex-column flex-align-end">
+          <span class="usa-tag">{{resource.doctype}}</span>
+        </div>
+        <p>{{resource.summary}}</p>
+        <div class="display-flex flex-column flex-align-end">
+            <span class="gsa-source">Source: {{resource.source}}</span>
+        </div>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">
+        <a href="{{resource.url}}" target="{{resource.target}}" rel="noopener noreferrer">
+            <button class="usa-button">View</button>
+        </a>
+        </div>
+    </p>
+  </div>
+</div>
+{% endfor %}

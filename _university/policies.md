@@ -66,7 +66,7 @@ Review the federal policies  that impact and shape the implementations of ICAM p
 {% for policy in site.data.policies %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="{{policy.expanded}}" aria-controls="gsa-{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text" aria-expanded="{{policy.expanded}}" aria-controls="gsa-{{forloop.index}}">
       {{policy.name}} ({{policy.pubdate}})
     </button>
   </h4>
@@ -75,7 +75,7 @@ Review the federal policies  that impact and shape the implementations of ICAM p
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{policy.doctype}}</span>
         </div>
-        <p>{{policy.summary | escape_once}}</p>
+        <p>{{policy.summary}}</p>
         <div class="display-flex flex-column flex-align-end">
             <span class="gsa-source">Source: {{policy.source}}</span>
         </div>

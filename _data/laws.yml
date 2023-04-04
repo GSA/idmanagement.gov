@@ -24,6 +24,7 @@
   source: https://www.govinfo.gov
   target: _blank
   expanded: false
+  doctype: PDF
 
 - name: Federal Information Security Modernization Act (FISMA) of 2014
   summary: This Act provides a framework for measuring the effectiveness of federal information systems, and it calls for the development and implementation of continuous monitoring oversight mechanisms. It also acknowledges federal agencies should take advantage of commercially available security products (including software, hardware, etc.) that often provide robust information security solutions.
@@ -32,6 +33,7 @@
   source: http://www.gpo.gov
   target: _blank
   expanded: false
+  doctype: Website
 
 - name: E-Government Act of 2002
   summary: This Act enhances the management and promotion of electronic federal services and processes by establishing a Federal CIO within the Office of Management and Budget (OMB) and by establishing a broad framework of measures that require using Internet-based information technology (IT) to enhance citizen access to government information and services and for other purposes.
@@ -40,6 +42,7 @@
   source: https://www.gpo.gov
   target: _blank
   expanded: false
+  doctype: Website
 
 - name: Electronic Signatures in Global and National (ESIGN) Commerce Act of 2000
   summary: This Act facilitates the use of electronic records and electronic signatures in interstate and foreign commerce by ensuring the validity and legal effect of electronic contracts.
@@ -48,6 +51,7 @@
   source: https://www.gpo.gov
   target: _blank
   expanded: false
+  doctype: Website
 
 - name: Government Paperwork Elimination Act of 1998 (GPEA)
   summary: This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit information or transact with the agency electronically when possible and to maintain records electronically when possible. This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a range of electronic signature alternatives.
@@ -56,6 +60,7 @@
   source: https://www.gpo.gov
   target: _blank
   expanded: false
+  doctype: Website
 
 
 # Blank Law template for new content/data 

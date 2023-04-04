@@ -1,0 +1,24 @@
+<!-- Message Center will shows when messagecenter has messages -->
+<div id="messageCenter" class="carousel slide carousel-fade grid-container"  data-bs-ride="carousel">
+      <div class="carousel-inner" style="height: 100%;">
+        <!-- Item Message Center content Start -->
+          {% for message in site.data.messagecenter %}
+            {% if forloop.index == 0 %}
+          <div class="carousel-item active" data-bs-interval="{{message.displaytime}}">
+              {% else %}
+          <div class="carousel-item" data-bs-interval="{{message.displaytime}}">
+            {% endif %}
+              <div class="usa-alert usa-alert--{{message.type}}">
+                  <div class="usa-alert__body">
+                    <h4 class="usa-alert__heading">{{message.heading}}</h4>
+                    <p class="usa-alert__text">
+                       {{message.content}}
+                    </p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+          <!-- Item End of Message Center Content End -->
+          </div>
+      </div>
+</div>

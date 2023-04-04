@@ -37,13 +37,16 @@ Review the federal laws that impact and shape the implementations of ICAM progra
 {% for law in site.data.laws %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="{{law.expanded}}" aria-controls="gsa-{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text" aria-expanded="{{law.expanded}}" aria-controls="gsa-{{forloop.index}}">
       {{law.name}} ({{law.pubdate}})
     </button>
   </h4>
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose">
     <p>
-        {{law.summary}}
+        <div class="display-flex flex-column flex-align-end">
+          <span class="usa-tag">{{law.doctype}}</span>
+        </div>
+        <p>{{law.summary}}</p>
         <div class="display-flex flex-column flex-align-end">
             <span class="gsa-source">Source: {{law.source}}</span>
         </div>
