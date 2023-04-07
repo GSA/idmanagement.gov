@@ -10,8 +10,9 @@
 }
 
 .usa-sticky-sidenav {
-  position: sticky;
-  top: units(1.5);
+  position: -webkit-sticky !important; 
+  position: sticky !important; 
+  top: 0 !important;
 }
 
 // default mode hide banner
