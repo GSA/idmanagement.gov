@@ -22,7 +22,6 @@
   displaytime: 10000
   active: true
   date: 04/04/2023
-  by: cjb 
 
 - type: success
   heading: Success
@@ -31,7 +30,7 @@
   displaytime: 10000
   active: true
   date: 04/04/2023
-  by: cjb 
+
 
 - type: warning
   heading: Warning
@@ -40,7 +39,7 @@
   displaytime: 10000
   active: true  
   date: 04/04/2023
-  by: cjb 
+
 
 - type: error
   heading: Error
@@ -49,4 +48,3 @@
   displaytime: 10000
   active: true
   date: 04/04/2023
-  by: cjb 
