@@ -21,6 +21,16 @@
   margin: 0px;
 }
 
+.gas-lower-panel {
+  //background-image: asset_url("new-header-graphic.png");
+  background-image: asset_url("lower_section_background.png");
+  //background-image: asset_url("hero-image2-blur.png");
+  background-position: 50%;
+  background-size: cover;
+  margin: 0px;
+}
+
+
 // For source text at bottom of accordions in faq and FICAM U  -cjb
 .gsa-source {
   padding-top: 8px;
