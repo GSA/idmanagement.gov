@@ -81,12 +81,16 @@ primary_navigation:
     children: 
       - name: Introduction
         url: /what/introduction/
-      - name: Service Framework
+      - name: Products
+        url: /what/products/
+      - name: Services
         url: /what/services/
+      - name: PIV Details
+        url: /what/pivdetails/
+      - name: Service Framework
+        url: /what/servicesframework/
       - name: Use Cases
         url: /what/usecases/
-      # - name: PACS Assessment Toolkit
-      #   url: /what/pacs-assessment-toolkit/
       # - name: Organizations that offer ICAM services
       #   url: /what/organizations-that-offer-icam-services/
       # - name: Personal Identity Verification (PIV) Cards

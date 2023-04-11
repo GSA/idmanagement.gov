@@ -1,242 +1,224 @@
 ---
 layout: page
 collection: what
-title: Service Framework
+title: Services
 permalink: /what/services/
 sidenav: what
 sticky_sidenav: true
 
 subnav:
-  - text: Identity Management
-    href: '#identity-management'
-  - text: Credential Management
-    href: '#credential-management'
-  - text: Access Management
-    href: '#access-management'
-  - text: Federation
-    href: '#federation'
-  - text: Governance
-    href: '#governance'
+  - text: Physical Features
+    href: '#physical-features'
+  - text: Electronic Features
+    href: '#electronic-features'
+  - text: PIV Credential
+    href: '#piv-credential'
+  - text: PIV Usage
+    href: '#piv-usage'
+  - text: PIV Systems
+    href: '#piv-systems'
+  - text: PIV Standards
+    href: '#piv-standards'
+  - text: Use a PIV
+    href: '#use-a-piv'
+  - text: Card Readers
+    href: '#card-readers'
+  - text: Next Steps
+    href: '#next-steps'
+#   - text: 
+#     href: ''
+
 ---
 
-The Services Framework is a tool designed for ICAM program managers and information technology enterprise architects. It identifies the services that provide functionality within the scope of ICAM and assists in distinguishing between business requirements and technical solutions. The services framework includes the five practice areas and services within..
+<!-- from https://www.idmanagement.gov/buy/#services -->
 
-## Practice Area Visual 
+The following organizations offer Identity, Credential, and Access Management services to the federal government. If your organization has a relevant Identity, Credential, or Access Management service, [contact us]({{site.baseurl}}/contact-us/) so we can add it to the list.
 
-The graphic below illustrates the five ICAM practice areas and provides a list of services that fall within each area. 
+### Government Identity Services
 
-<img src="{{site.baseurl}}/assets/arch/services/ServicesOverview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages." width="560" height="466">
+- [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
+- [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
+- [FPKI Shared Service Providers]({{site.baseurl}}/buy/trust-services#government-identity-services) – Digital certificates for Federal agencies.
 
-## Services Visual
+### Business Identity Services
 
-This visual represents the five practice areas and services.
+- [FPKI Individual Certificate Providers]({{site.baseurl}}/buy/trust-services#business-identity-services) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [Trust Services for Businesses]({{site.baseurl}}/buy/trust-services#trust-and-auditing-of-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
-<img src="{{site.baseurl}}/assets/arch/services/ServicesDefinitions.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages." width="560" height="314">
+### FedRAMP
 
-## Identity Management
+- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal workforce and citizen identity products.
 
-<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServices.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
 
-Identity Management is how an agency collects, verifies, manages attributes, and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
+<!-- from https://www.idmanagement.gov/buy/#pacs-implementer-self-assessment-toolkit -->
 
-An enterprise identity record is the set of attributes or characteristics that describes a person within a given context:
+### PACS Implementer Self-Assessment Toolkit
 
-- Your identity within your agency’s Human Resources (HR) system is different from your personal identity at your bank.
-- A person’s identity as a government contractor is different from their identity as an Army Reservist.
+The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
+- [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-Although your identity remains the same over time, it evolves as your attributes change, such as when you get a promotion, change your name, receive additional training, or retire.
 
-Agencies should manage identity attributes as centrally as possible and distribute them as needed. Examples of identity attributes include:
+<!-- from https://playbooks.idmanagement.gov/piv/ -->
 
-- *Core identity attributes* - First name, last name, and address of record.
-- *Contact attributes* - Physical location, government phone number, and government email address.
-- *Authorization attributes* - Clearance, training, and job codes.
+## Physical Features
 
-An entitlement is a specific type of authorization attribute that refers to an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and de-provision activities as well as for auditing and reporting purposes. For example, a new employee may require access to ten core enterprise applications on the first day of work. An agency can create a new employee group with new employee entitlements and automate provisioning of the ten core applications rather than treat them as individual access requests.
-Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include:
+<img src="{{site.baseurl}}/assets/piv/elements.png" alt="Example of a PIV credential and its physical components." width="560" height="556">
 
+An example of a PIV credential can be seen above.
 
-Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include: 
+The image shows the standard placement for information such as photograph, name, affiliation, expiration date, organization, and the **chip**.
 
-- Use a single sign-on tool to aggregate application access entitlements.
-- Allow employees to update contact attributes in an employee record.
-- Automate integration between a training system and an identity governance and administration tool to create and update annual security training.
+PIV credentials also contain at least one security feature that aids in reducing counterfeiting, is resistant to tampering, and provides visual evidence of tampering attempts such as optical varying structures or inks, laser etching, holographic images, and watermarks.  
 
+## Electronic Features
+What is the chip on your PIV credential? In the easiest terms, it's a computer. It holds information **very securely** and can process data. The chip is also called a _secure element_.
 
-Identity proofing is how an agency verifies an enterprise identity. The complexity of this process depends on the Identity Assurance Level (IAL) required for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver’s license or utility bill. The agency verifies the identity documents and the individual’s photo (biometric).
+{% include alert-info.html heading = "Do you have a debit card with a chip or a smartphone with a SIM card?" content="These are both examples of similar technology that we use every day in our lives and help us secure information.  You can't use your PIV credential to withdraw money, nor do you use your debit card to log in to your computer or federal applications—but you can see how similar technology is used every day." %}
 
-An identifier is a unique attribute used to locate an identity in a system:
+Most applications that use PIV credentials leverage information stored on the chip and we call this information the _logical elements_.  These elements are defined in the [NIST Special Publication 800-73 series document.](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-- While your agency may issue Personal Identification Verification (PIV) cards to multiple people named John Smith, each individual has a different PIV card number.
-- While your agency may have more than one employee named Jane Smith, each employee has a unique email address tied only to their identity.
+The following electronic elements authenticate the PIV credential as a device:  
 
-### Identity Management Services
+- **Cardholder Unique Identifier (CHUID)**, which is a digitally signed Federal Agency Smart Card Number (FASC-N) plus other data that can be used.
+- **Card Authentication**, which is a certificate and key pair that can be used to verify that the PIV credential was issued by an authorized entity, has not expired, and has not been revoked.
 
-The Identity Management services in the Federal ICAM architecture include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are sometimes collectively known as **Identity Lifecycle Management**.
+The following electronic elements authenticate YOU as the user:
 
-<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServiceDefinitions.png" alt="An orange box with the Identity Management service definitions, which are listed in the following body text." width="560" height="61">
+- **Photograph**, which is stored on the chip, signed digitally, and allows a person to confirm that the printed photo on the card has not been altered.
+- **Biometric Identity Information** such as fingerprints or iris/eye templates, which can be used to verify you.
+- **PIV Authentication**,  which is a certificate and key pair that can be used to verify that the PIV credential was issued by an authorized entity, has not expired, has not been revoked, and the holder of the credential (YOU) is the same individual it was issued to.
 
-| Service | Description | Keywords |
-| --- | ------ | -----|
-| Creation | Establish an identity made of attributes that define a person or entity. | Identity Record, Authoritative Source |
-| Identity Proofing | Use identity attributes to connect a digital identity to a real-world entity. | Source Document Validation, Remote Proofing, In-Person Proofing|
-| Provisioning | Create, manage, and delete accounts and entitlements. | Identity Lifecycle Management, Workflow, Deprovisioning, Account Management, Account Creation, Entitlements Management |
-| Maintenance | Maintain accurate and current attributes in an identity record over its lifecycle. | Identity Lifecycle Management, Updating, Attribute Management |
-| Identity Aggregation | Find and connect disparate identity records for the same person or entity. | Identity Reconciliation, Identity Resolution, Account Linking|
-| Deactivation | Deactivate or remove enterprise identity records. | Identity Lifecycle Management, Suspension, Archiving, Deletion |
+The following electronic elements are for usage by YOU:
 
-## Credential Management
+- **Digital Signature**, which is a certificate and key pair that allows YOU to digitally sign a document or email, providing both integrity and non-repudiation.
+- **Encryption**, which is a certificate and key pair that allows YOU to digitally encrypt documents or email with your colleagues in the federal government or with government partners, providing confidentiality through ensuring that only authorized parties can read the document or email.
 
-<img src="{{site.baseurl}}/assets/arch/services/CredentialManagementServices.png" alt="A green box with the list of Credential Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+The Card Authentication, PIV Authentication, Digital Signature, and Encryption all leverage four separate certificates and key pairs issued from certificate authorities that are audited and certified by the Federal Public Key Infrastructure (FPKI).
 
-Credential Management is how an agency issues, manages, and revokes credentials bound to enterprise identities.
 
-A credential is a data structure that authoritatively binds an authenticator to an existing identity using one or more identifiers.
+<!-- from https://playbooks.idmanagement.gov/piv/ -->
 
-Types of authenticators include:
+These **PIV Guides** are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.
 
-- Something you know, like a password or PIN.
-- Something you have, like a private key or One-Time Password (OTP) generator.
-- Something you are, like a fingerprint or an iris.
+The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide]({{site.baseurl}}/pacs/){:target="_blank"}{:rel="noopener noreferrer"}.
 
-The Authenticator Assurance Level (AAL) determines the authenticators associated with a credential. Federal government-wide policy requires a minimum AAL2 for employees and contractors.
+If you cannot find a particular topic, it may still be in development. Review the [Issues]({{ site.repourl }}/issues){:target="_blank"}{:rel="noopener noreferrer"} for questions and lessons that are in progress. Create a new [Issue]({{ site.repourl }}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to ask a question or share information with others.  
 
-Examples of credentials include:
+Read on to learn more about PIV credentials.
 
-- An agency-issued smart card, such as a PIV or Common Access Card (CAC), that includes a picture and cryptographic key pairs to assert your identity at a federal facility.
-- A combination of credentials, such as a username/password with an OTP generated by a mobile application, to assert your identity to a federal web application.
+## PIV Credential
 
+A PIV credential is a U.S. federal government-wide credential used to access federally controlled facilities and information systems at the appropriate security level.
 
-Unlike identities, credentials can expire. If an enterprise identity continues past a credential’s expiration date, the issuing agency can issue a new credential.
+PIV credentials have certificates and key pairs, pin numbers, biometrics like fingerprints and pictures, and other unique identifiers.  When these items are put together in a PIV credential, the credential provides the capability to implement multifactor authentication for networks, applications, and buildings.
 
-### Credential Management Services
+## What Information Is in These PIV Guides?  
+First, we cover the basics of PIV credentials, including:
 
-The Credential Management services in the FICAM architecture include Sponsorship, Registration, Generation & Issuance, Maintenance, and Revocation.
+-   What PIV is, contains, and looks like;
+-   The basics of getting started with PIV credentials; and
+-   Using PIV for network authentication (smart card logon). 
 
-<img src="{{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png" alt="A green box with the Credential Management service definitions, which are listed in the following body text." width="560" height="61">
+We also cover applications and guidance for developers and users—which need your input!  
+{% include alert-success.html heading = "Share your expertise" content="Please contribute and share your lessons for configuring systems or applications, tuning considerations, code, common challenges, troubleshooting errors, and anything else you think would be helpful for your colleagues." %}
 
-| Service | Description | Keywords |
-| --- | ------ | -----|
-| Sponsorship | Formally establish that a person or entity requires a credential. | Sponsor, Authorizing Official, Affiliation, Request |
-| Registration | Collect the information needed from a person or entity to issue them a credential. | Enrollment |
-| Generation & Issuance | Assign a credential to a person or entity. | Activation, Token, Authenticator |
-| Maintenance | Maintain a credential throughout its lifecycle. | Renewal, Reset, Suspension, Reissuance |
-| Revocation | Revoke a credential from a person or entity, or deactivate an authenticator. | Termination |
+## PIV Usage
 
-## Access Management
+Agency security is enhanced when PIV credentials are used for authentication to agency systems and facilities. PIV credentials allow for a high level of assurance in the individuals who that access your resources, because the credentials are only issued by trusted providers to individuals who that have been verified in person. PIV credentials are highly resistant to identity fraud, tampering, counterfeiting, and exploitation.
 
-<img src="{{site.baseurl}}/assets/arch/services/AccessManagementServices.png" alt="A blue box with the list of Access Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+PIV credentials are _standardized_ as well. PIV credentials might be issued by different organizations using different commercial or open source products, on different form factors (cards, mobile devices, etc.).  However, PIV credentials are standardized—every PIV credential is required to have specific information, using technology that is _interoperable_.
 
-Access Management is how an agency authenticates enterprise identities and authorizes appropriate access to protected services.
+Your PIV credential from one agency will have the same basic required format, information, and technology as a PIV credential from your partner agencies. This allows us to trust each other, share applications, and architect and implement systems using common patterns for authentication.
 
-Policy administration is a combination of laws, regulations, rules, and agency policies that secures access to agency services. Your agency determines the requirements for an individual to access each resource category; they can be as simple or as complex as needed.
+## PIV Systems
+Any system at your organization that requires heightened security for determining who should gain access can and should use PIV for authentication. While PIV credentials can be used for authentication on almost any system, they are especially useful for systems that protect sensitive information.
 
-Examples of access requirements include:
+PIV should be used for:
 
-- “Grant access to anyone on this list of people.”
-- “Grant access to any agency employee or contractor with an authenticated PIV card.”
-- “Grant access to anyone who is a federal employee, GS-12 or higher, cleared Top Secret, trained in first aid, and certified as a project manager.”
+* All authentication for all _privileged_ users, including servers, networks, and applications;
+* All _network_ authentication for _all_ users;
+* All application authentication for _all_ users of an application that protects or contains sensitive information; and
+* Access to facilities and buildings.
 
-In providing access services, it can be challenging to conduct an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
+## PIV Standards
+Review the information on this site if you are interested in PIV credentials or work on _using_ PIV credentials.
 
-### Authentication
+If you are interested in the bits and bytes of PIV credentials, you can review the standards (see below), particularly if you develop products such as hardware or software that are _specific_ to PIV credentials for the U.S. federal government. (For most users and engineers, the standards may be too detailed for your needs.)
 
-Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}
+To review the standards, there is a [National Institute of Standards and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV-related standards. Here are links to some of the most common standards:
 
-Authentication is generally a two-step process:
+- [**FIPS 201**](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
+- [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
+- [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
 
-> *Step 1.*  Authenticate the credential:
+## Test a PIV Card
 
-- Did a trusted organization issue the credential?
-- Has the credential expired?
-- Has the credential been revoked, voided, or tampered with?
+The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/wiki/User-Guide){:target="_blank"}{:rel="noopener noreferrer"} can remotely test PIV and Personal Identity Verification–Interoperable (PIV-I) on several common operating systems. The purpose of the CCT is to validate that commercially available PIV and PIV-I comply with relevant standards.
 
-> *Step 2.* Ensure the individual to whom the credential was issued is the same individual presenting it:
+<!-- from  https://playbooks.idmanagement.gov/piv/gettingstarted/ -->
 
-- Do the photo and attributes on the credential match the person who presented it?
-- Does the person know the PIN for the credential?
-- Does the person have the private key on the smart card for the certificate presented to a website?
+## Use a PIV
 
-### Authorization
+You need two items to begin using your PIV credential:
 
-Authorization is how you decide whether you should allow someone to access an agency resource. Access requirements usually dictate whether you’ll allow someone to:
+*  A [card reader](#card-readers) (hardware)
+*  [Middleware](#middleware) (software) that works with your computer
 
-- Read or modify a certain document.
-- Access an agency website.
-- Enter an agency facility or location.
+{% include alert-success.html content="With just their PIV credential, a card reader, and middleware, your users can log in to websites that are PIV enabled, digitally sign email and documents and files, and encrypt!" %}
 
-Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials. The service then confirms that your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
+## Card Readers
 
-Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
+A card reader is exactly what the name suggests: a piece of hardware that helps read the card.
 
+> *A card reader is the hardware that supplies power to the chip and allows the computer operating system to talk to the PIV credential chip operating system.*
 
-| | Less Fine-Grained | --> | --> | More Fine-Grained |
-| |:----:|:----:|:----:|:----:|
-| Access Model | Access Control Lists (ACLs) | Role-Based Access Control (RBAC) | Attribute-Based Access Control (ABAC)| Risk Adaptive Access Control (RAAC) |
-| Description | A static list of entities with their access rights. | Access based on a user's static pre-defined role. | Access based on a user's assigned attributes which may be static or dynamic. | Access based on dynamic risk factors. |
-| Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. |
+Card readers are available in many shapes and sizes to fit both the PIV credential and to plug into your computer.  There is a card reader that will work for any shape and size  computer you use, including card readers for USB and microUSB ports.  Examples of readers include fold-up readers, desk readers, keyboard readers, tablet readers, and laptop readers.
 
-Each authorization model has benefits and limitations. The policies and access requirements defined by agency business owners help define the model that best suits their needs. More robust access control models, such as ABAC, can help agencies with improved automation, and they are increasingly adopted by cloud-native and cloud-friendly services.
+{% include alert-info.html heading="ISO 7816" content="If you need to buy a card reader for computers, you will need one that specifies support for ISO 7816." %}
 
-### Access Management Services
+You can buy a card reader for personal use from a number of commercial online retailers.  When buying card readers for your agency, you can use [GSA Advantage](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"} to directly purchase the card readers.
 
-The Access Management services in the FICAM architecture include Policy Administration, Authentication, Authorization, and Privileged Access Management.
+Before you buy a card reader, look around and ensure that you don't already have one.  A large portion of government laptops already have card readers, and desktop computers may have keyboards with built-in readers.
 
-<img src="{{site.baseurl}}/assets/arch/services/AccessManagementServiceDefinitions.png" alt="A blue box with the Access Management service definitions, which are listed in the following body text." width="560" height="61">
+Mac OSX or Linux-based computers often don’t have card readers built in. If this is the case, find a card reader option that works for you. Let's move on to middleware.
 
-| Service | Description | Keywords |
-| --- | ------ | -----|
-| Digital Policy Administration | Create and maintain the technical access requirements that govern access to protected agency services. | Policy Decision, Policy Enforcement | 
-| Authentication | Verify that a claimed identity is genuine based on valid credentials. | Validation, Two-Factor, Multi-Factor |
-| Authorization | Grant or deny access requests to protected agency services based on access requirements, identity attributes, and entitlements. | Policy Decision, Policy Enforcement | 
-| Privileged Access Management | Protect access to accounts that have access permissions that can affect IT system configurations and data security (e.g., superusers, domain administrators, or global administrators). | Privileged Identity Management, Privileged Account Management, Administration, Superuser |
+## Middleware
 
-## Federation
+For PIV credentials, _middleware_ refers to the computer software or drivers that allow the computer to interact with the PIV credentials to support authentication, digital signatures, encryption, and integrations with your software tools.
 
-<img src="{{site.baseurl}}/assets/arch/services/FederationServices.png" alt="A gray box with the list of Federation services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+For common PIV credential usage scenarios, the table below outlines the _general smartcard middleware_ available as open or government source or included in operating systems for use scenarios.  Commercial options for PIV middleware are available and the list of NIST-certified PIV middleware can be viewed [here on the NIST website](http://csrc.nist.gov/groups/SNS/piv/npivp/validation.html){:target="_blank"}{:rel="noopener noreferrer"}.
 
-Federation is the technology, policies, standards, and processes that allow an agency to accept digital identities, attributes, and credentials managed by other agencies.
+{% include alert-info.html content="Consider how to support your email client software and virtual private network software, and think about which browsers are used if you're choosing middleware for all your agency enterprise users." %}
 
-Federation has many different applications, including:
+| Name              | Operating System and Versions | Support | Considerations |
+| -------------             |----|----|----|
+| Windows mini-driver       | Windows 7, Windows 8, Windows 10, Windows 2008, Windows 2012  | Yes | Included in Windows operating systems and requires no installation.  Does not include the functionality to perform full lifecycle management of a PIV credential.  Does not support using your PIV credential with non-Microsoft cryptographic service providers such as those used by Mozilla Firefox browser.   |
+| OpenSC       | Mac OSX 10.5, Mac OSX 10.6, Mac OSX 10.7, Mac OSX 10.9, Mac OSX 10.10, Windows (32-bit and 64-bit), Linux, *nix versions vary  | Open Source | Open source software.  Limited commercial support for maintenance and patching.  Supports PKCS#11; for example, as used by Mozilla Firefox browser. Use OpenSC versions greater than 0.20.0 to reduce authentication errors to servers using TLS 1.3. |
+| Smart Card Services   | Mac OSX 10.6, Mac OSX 10.7, Mac OSX 10.9, Mac OSX 10.10  | Open Source  | Open source software. Limited commercial support for maintenance and patching.   |
+| CoolKey   | Linux, *nix versions vary  | Open Source  |   |
+| CACKey   | Linux, *nix versions vary  | US Government Source  | Available from Forge.mil |
+| **Commercial options**   | Varies  | Yes  |  Review support for your usage needs such as email signing, encryption, network authentication, VPNs, and website authentication  |
 
-- *Accepting an authentication transaction from another organization:*
 
-> Agency A authenticates one of its users and passes identity attributes and transaction details to Agency B. Agency B grants access to an application for that identity.
+You may need to consider network authentication, Virtual Private Network (VPN), email signing, email encryption, document signing, document encryption and website authentication when choosing one or more middleware options for yourself or your users.  In most cases, you can choose a middleware option that works for the most common uses for your purposes or mix and match based on operating systems and devices.
 
-- *Accepting specific characteristics (i.e., attributes such as identifiers) describing an individual from another organization:*
+### Middleware Definitions
 
-> An individual can use their agency-issued credential containing an internal identifier(s) to directly log in to a different agency’s online service. The online service registers the identifier(s) in its system for future use.
+_Middleware_ as a general computer term can encompass any software that provides integration points for an application. In the standards for PIV credentials, the term _PIV middleware_ is used. A common question is "What is the difference between PIV middleware and general smart card middleware?" To simplify, we'll define the two terms as we use them for PIV credentials in these guides:
 
-### Federation Services
+**PIV Middleware:**  
 
-The Federation services in the FICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
+> _Client side software which implements the full set of application programming interfaces and card functions as specified in NIST Special Publication 800-73-4 and has been certified as compliant with the NIST Special Publication 800-85A series testing procedures.  The PIV compliant middleware implements all lifecycle functions, including a user's ability to perform PIN resets, activation, and renewals. The PIV compliant middleware may also implement common usage functions to support authentication, digital signatures, encryption, and integrations with multiple operating system cryptographic libraries._
 
-<img src="{{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png" alt="A gray box with the Federation service definitions, which are listed in the following body text." width="560" height="61">
+**General Smart Card Middleware:**  
 
-| Service | Description | Keywords |
-| --- | ------ | -----|
-| Policy Alignment | Develop relationships and a common understanding between parties by establishing authorities, policies, standards, and principles. | Trust Relationship | 
-| Authentication Broker | Transform an authentication event into an alternative format, such as an assertion, containing claims about the entity and the authentication transaction, to grant access to a resource. | Assertion Service, Federation Assertion, Security Token Service |
-| Attribute Exchange | Discover and acquire identity or other attributes between different systems to promote access decisions and interoperability. | Attribute Definition | 
+> _Client side software which implements common functions for an operating system and cryptographic libraries to interface with PIV credentials or other smart cards for usage.  The general smart card middleware may implement functions to support authentication, digital signatures, encryption, and integrations with multiple operating system cryptographic libraries._
 
-## Governance
+For common PIV credential usage scenarios, we outline the _general smart card middleware_ available as open or government source or included in operating systems for use scenarios.  Commercial options for PIV middleware are available and the list of NIST-certified PIV middleware can be viewed [here on the NIST website](http://csrc.nist.gov/groups/SNS/piv/npivp/validation.html){:target="_blank"}{:rel="noopener noreferrer"}.
 
-<img src="{{site.baseurl}}/assets/arch/services/GovernanceServices.png" alt="A navy box with the list of Governance services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
 
-Governance is the set of practices and systems that guides ICAM functions, activities, and outcomes.
+## Next Steps
 
-To perform effective governance, agencies must collect data about ICAM functions from many sources, such as policies and entitlements stores, and analyze this data. Proper data analytics help agencies monitor compliance with established information security policies.
+You have a PIV credential, a card reader, and middleware for your computer. **Now what?**
 
-If your agency identifies problems during data collection and analysis, you should remediate these issues as quickly as possible. Real-time monitoring and risk mitigation are crucial to ensure employees and contractors have only the appropriate access, following the principle of least privilege.
-
-### Governance Services
-
-The Governance services in the FICAM architecture include Identity Governance, Analytics, and Mitigation.
-
-<img src="{{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png" alt="A navy box with the Governance service definitions, which are listed in the following body text." width="560" height="61">
-
-| Service | Description | Keywords |
-| --- | ------ | -----|
-| Identity Governance | The systems, solutions, and rules that link enterprise personnel, applications, and data to help agencies manage access and risk. | Management Framework, Rules and Procedures, Access Reviews and Recertifications | 
-| Analytics | Leverage continuous analytics data to identify if someone has entitlements that conflict with access requirements. | Data collection, Monitoring, Review, Data Certification, Auditing and Reporting | 
-| Mitigation | Correct the problems and address risks, discovered by analysis, that may occur during standard operations. | Redress, Remediation |
+If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, see the [PIV Details](/what/pivdetails/) section.

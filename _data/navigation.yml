@@ -37,12 +37,24 @@ why:
 what:
   - text: Introduction
     href: /what/introduction/
-  - text: Service Framework
+  - text: Products
+    href: /what/products/
+  - text: Services
     href: /what/services/
+  - text: Service Framework
+    href: /what/servicesframework/
+  - text: PIV Details
+    href: /what/pivdetails/
+  - text: PACS Guide
+    href: /what/pacsguide/
+  - text: Deployment Model
+    href: /what/deployment/
   - text: Use Cases
     href: /what/usecases/
-  # - text: PACS Assessment Toolkit
-  #   href: /what/pacs-assessment-toolkit/
+  - text: PIV Card APL
+    href: /approved-products-list-piv/
+  - text: PACS Components APL
+    href: /approved-products-list-pacs-products/
   # - text: Organizations that offer ICAM services
   #   href: /what/organizations-that-offer-icam-services/
   # - text: Personal Identity Verification (PIV) Cards
