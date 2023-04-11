@@ -12,7 +12,6 @@ subnav:
 ---
 
 <!-- from https://www.idmanagement.gov/buy/ -->
-## Products
 
 Find approved products and services for Federal Identity, Credential, and Access Management (FICAM) implementations and helpful links for purchasing these items using GSA Schedules.
 
