@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: what
-title: Introduction
+title: What is FICAM?
 permalink: /what/introduction/
 sidenav: what
 sticky_sidenav: true

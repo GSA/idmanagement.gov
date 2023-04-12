@@ -4,44 +4,52 @@ eight.
 {% endcomment %}
 
 <!-- Start Freq Searched and RSS Feeds -->
-<section class="ficam-page-container" style="background-color:#f8f9fa;padding-top: 25px;">
+<section class="ficam-page-container gsa-top-panel" style="padding-top: 25px;">
 	<div class="grid-container">
 		<div class="partners-container grid-row">
 			<div class="desktop:grid-col-12">
 				<ul class="usa-card-group">
 					<li class="usa-card tablet:grid-col-6">
-						<div class="usa-card__container shadow-1">
+						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
-								<h3 class="site-preview-heading">Frequently searched</h3>
-								<hr>
+								<h3 class="site-preview-heading">Most viewed</h3>				
 							</div>
-							<div class="usa-card__body" style="margin-top:2px;">						
-								<ul class="usa-icon-list">
-									<li class="usa-icon-list__item"><a class="gsa-link" href="#">First most searched link here</a></li>
-									<li class="usa-icon-list__item"><a class="gsa-link" href="#">Second most searched link here</a></li>
-									<li class="usa-icon-list__item"><a class="gsa-link" href="#">Third most searched link here</a></li>
-									<li class="usa-icon-list__item"><a class="gsa-link" href="#">Fourth most searched link here</a></li>
-									<li class="usa-icon-list__item"><a class="gsa-link-last" href="#">Fifth most searched link here</a></li>
-								</ul>
+							<hr>
+							<div class="usa-card__body gsa-card-small">						
+								{% for link in site.data.mostviewed %}
+								<p>
+									<b><a class="usa-link" href="{{link.mvurl}}"  target="_blank">{{link.mvtext}}</a></b>
+									{% if forloop.last == false %}
+									<hr />
+									{% endif %}
+								</p>
+								{% endfor %}								
 							</div>
+							<hr>
+							<br>
 						</div>
 					</li>
 					<li class="usa-card tablet:grid-col-6">
-						<div class="usa-card__container shadow-1">
+						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
-								<h3 class="site-preview-heading">Industry news</h3>
-								<hr>
+								<h3 class="site-preview-heading">Cyber news</h3>
+								
 							</div>
-							<div class="usa-card__body" style="margin-top:2px;overflow-y: scroll;overflow-x: hidden;max-height: 200px;">
+							<hr>
+							<div class="usa-card__body gsa-card-small">
+								<!-- source: https://www.cisa.gov/news.xml -->
 								{% for feed in site.data.rssfeed %}
 								<b><a class="usa-link" href="{{feed.link}}"  target="_blank">{{feed.title}}</a></b>
 								<p class="usa-collection__description">
 									{{feed.description}}
 								</p>
+								{% if forloop.last == false %}
 								<hr />
+								{% endif %}
 								{% endfor %}
-							<!-- source: https://www.cisa.gov/news.xml -->
 							</div>
+							<hr>
+							<br>
 						</div>
 					</li>
 				</ul>	
@@ -52,7 +60,7 @@ eight.
 <!-- Freq Searched and RSS Feed Cards -->		
 
 <!-- Start of Vendors and Partner Cards -->	
-<section class="ficam-page-container gas-lower-panel" style="padding-top:25px;">
+<section class="ficam-page-container" style="padding-top:25px;">
 	<div class="grid-container">
 		<div class="partners-container grid-row">
 			<div class="desktop:grid-col-12">						

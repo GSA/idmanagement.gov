@@ -53,8 +53,10 @@ what:
     href: /what/usecases/
   - text: PIV Card APL
     href: /approved-products-list-piv/
-  - text: PACS Components APL
+  - text: PACS Products APL
     href: /approved-products-list-pacs-products/
+  - text: Removed Products (RPL)
+    href: /what/removed-products-list/
   # - text: Organizations that offer ICAM services
   #   href: /what/organizations-that-offer-icam-services/
   # - text: Personal Identity Verification (PIV) Cards

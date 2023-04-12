@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: why
-title:  Introduction
+title:  Why FICAM?
 permalink: /why/introduction/
 sidenav: why
 sticky_sidenav: true

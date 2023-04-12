@@ -21,6 +21,12 @@
   margin: 0px;
 }
 
+// Top front panel
+.gsa-top-panel {
+  // background-color: #c8d9f2;
+  background-color: #112e51;
+}
+// Lower front panel
 .gas-lower-panel {
   //background-image: asset_url("new-header-graphic.png");
   background-image: asset_url("lower_section_background.png");
@@ -30,6 +36,14 @@
   margin: 0px;
 }
 
+// Controls the height of small cards like ones on front of website.
+.gsa-card-small {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 220px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 // For source text at bottom of accordions in faq and FICAM U  -cjb
 .gsa-source {
