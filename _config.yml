@@ -115,24 +115,30 @@ primary_navigation:
 # How to use FICAM top level menu with dropdowns
   - name: How to use FICAM
     children:
-      - name: Digitally Sign Word Doc
-        url: /how/digitally-sign-word-doc/
-      - name: Digitally Sign Email in Outlook
-        url: /how/digitally-sign-email-in-outlook/
-      - name: Digitally Sign Federal Register Document
-        url: /how/digitally-sign-federal-register-document/
-      - name: PIV Guide
-        url: /how/piv-guide/
-      - name: Troubleshoot PIV Windows Logon
-        url: /how/troubleshoot-piv-windows-logon/
-      - name: Troubleshoot Mac OS
-        url: /how/troubleshoot-mac-os/
-      - name: PIV Enable Firefox
-        url: /how/piv-enable-firefox/
-      - name: PIV Enable SSH
-        url: /how/piv-enable-ssh/
-      - name: Tools
-        url: /how/tools/
+      - name: Introduction
+        url: /how/introduction/
+      - name: Network Authentication
+        url: /how/network-authentication/
+      - name: Domain Controllers
+        url: /how/domain-controllers/
+      - name: Trust Store
+        url: /how/trust-stores/
+      - name: Account Linking
+        url: /how/account-linking/
+      - name: Group Policies and Enforcement
+        url: /how/group-policies/
+      - name: Network Tuning
+        url: /how/network-tuning/
+      - name: Local Certification Authority
+        url: /how/certificate-authority/
+      - name: Authentication Assurance
+        url: /how/authentication-assurance/
+      - name: PIV Authentication on macOS
+        url: /how/piv-athentication-macos/
+      - name: Windows Domain Account Pairing
+        url: /how/windows-domain-pairing/ 
+      - name: Troubleshooting PIV Logon
+        url: /how/troubleshooting/ 
 
 # Who FICAM is For? top level menu with dropdowns
   - name: Who is FICAM For?

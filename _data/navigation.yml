@@ -81,24 +81,44 @@ what:
 
 ## New how secondary navigation 
 how:
-  - text: Digitally Sign Word Doc
-    href: /how/digitally-sign-word-doc/
-  - text: Digitally Sign Email in Outlook
-    href: /how/digitally-sign-email-in-outlook/
-  - text: Digitally Sign Federal Register Document
-    href: /how/digitally-sign-federal-register-document/
-  - text: PIV Guide
-    href: /how/piv-guide/
-  - text: Troubleshoot PIV Windows Logon
-    href: /how/troubleshoot-piv-windows-logon/
-  - text: Troubleshoot Mac OS
-    href: /how/troubleshoot-mac-os/
-  - text: PIV Enable Firefox
-    href: /how/piv-enable-firefox/
-  - text: PIV Enable SSH
-    href: /how/piv-enable-ssh/
-  - text: Tools
-    href: /how/tools/
+  - text: Introduction
+    href: /how/introduction/
+  - text: Network Authentication
+    href: /how/network-authentication/
+  - text: Domain Controllers
+    href: /how/domain-controllers/
+  - text: Trust Store
+    href: /how/trust-stores/
+  - text: Account Linking
+    href: /how/account-linking/
+  - text: Group Policies and Enforcement
+    href: /how/group-policies/
+  - text: Network Tuning
+    href: /how/network-tuning/
+  - text: Local Certification Authority
+    href: /how/certificate-authority/
+  - text: Authentication Assurance
+    href: /how/authentication-assurance/
+  - text: PIV Authentication on macOS
+    href: /how/piv-athentication-macos/
+  - text: Troubleshooting PIV Logon
+    href: /how/troubleshooting/ 
+  # - text: Digitally Sign Email in Outlook
+  #   href: /how/digitally-sign-email-in-outlook/
+  # - text: Digitally Sign Federal Register Document
+  #   href: /how/digitally-sign-federal-register-document/
+  # - text: PIV Guide
+  #   href: /how/piv-guide/
+  # - text: Troubleshoot PIV Windows Logon
+  #   href: /how/troubleshoot-piv-windows-logon/
+  # - text: Troubleshoot Mac OS
+  #   href: /how/troubleshoot-mac-os/
+  # - text: PIV Enable Firefox
+  #   href: /how/piv-enable-firefox/
+  # - text: PIV Enable SSH
+  #   href: /how/piv-enable-ssh/
+  # - text: Tools
+  #   href: /how/tools/
 
 ## New who secondary navigation 
 who:

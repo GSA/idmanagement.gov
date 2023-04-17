@@ -10,9 +10,9 @@ subnav:
   - text: How To Purchase
     href: '#how-to-purchase'
   - text: Approved 13.01 Topology PACS Products
-    href: '#approved-13.01-topology-pacs-products'
+    href: '#approved-1301-topology-pacs-products'
   - text: Approved 13.02 Topology PACS Products
-    href: '#approved-13.02-topology-pacs-products'
+    href: '#approved-1302-topology-pacs-products'
   - text: PACS Readers
     href: '#pacs-readers'
   - text: PACS Solutions Awaiting Approval
