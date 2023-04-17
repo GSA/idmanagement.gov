@@ -9,7 +9,7 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "dependencies": {
-    "@uswds/uswds": "3.4.0"
+    "@uswds/uswds": "3.4.1"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
