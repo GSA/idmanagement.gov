@@ -135,10 +135,10 @@ primary_navigation:
         url: /how/authentication-assurance/
       - name: PIV Authentication on macOS
         url: /how/piv-athentication-macos/
-      - name: Windows Domain Account Pairing
-        url: /how/windows-domain-pairing/ 
       - name: Troubleshooting PIV Logon
         url: /how/troubleshooting/ 
+      # - name: Windows Domain Account Pairing
+      #   url: /how/windows-domain-pairing/ 
 
 # Who FICAM is For? top level menu with dropdowns
   - name: Who is FICAM For?

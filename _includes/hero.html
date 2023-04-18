@@ -13,7 +13,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
     <!-- Carousel Item {{slide.orderNumber}} -->
     <div class="carousel-item {{slide.initialState}}" data-bs-interval="{{ slide.delay }}">
         <h2 class="hero-heading">{{ slide.heroHeading }}</h2>
-        <p class="hero-text">{{ slide.heroText }}</p>
+        <p class="hero-text gsa-text-width">{{ slide.heroText }}</p>
         <a class="usa-button" href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer">{{ slide.actionButtonText }}</a>
     </div>
     {% endfor %}
