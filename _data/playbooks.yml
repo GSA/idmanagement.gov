@@ -1,0 +1,76 @@
+# The 12 FICAM Playbooks
+# From: https://playbooks.idmanagement.gov/playbooks/
+# Date: 04/18/2023
+# Data used on site's front page, lower half.
+
+- title: Cloud Identity Playbook
+  type: PDF
+  pubdate: 2022-12
+  description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
+  url: "https://playbooks.idmanagement.gov/playbooks/cloud/"
+
+- title: Digital Autopen Playbook
+  type: Markdown
+  pubdate: 2023-03
+  description: This playbook outlines the process for an agency to implement a Digital Autopen for Federal Register documents.
+  url: "https://playbooks.idmanagement.gov/playbooks/autopen/"
+
+- title: Digital Identity Risk Assessment Playbook
+  type: Markdown
+  pubdate: 2020-09
+  description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
+  url: "https://playbooks.idmanagement.gov/playbooks/dira/"
+
+- title: Digitally Sign a Microsoft Word Document
+  type: Markdown
+  pubdate: 2018-03
+  description: This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
+  url: "https://playbooks.idmanagement.gov/playbooks/signword/"
+
+- title: Digitally Sign an Office of the Federal Register Document
+  type: Markdown
+  pubdate: 2022-08
+  description: This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+  url: "https://playbooks.idmanagement.gov/playbooks/signfedregister/"
+
+- title: Digital Worker Identity Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
+  url: "https://playbooks.idmanagement.gov/playbooks/dw/"
+
+- title: Enterprise Single Sign-On Playbook
+  type: Markdown
+  pubdate: 2021-11
+  description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
+  url: "https://playbooks.idmanagement.gov/playbooks/sso/"
+
+- title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
+  type: PDF
+  pubdate: 2011-12
+  description: "The FICAM Roadmap contains processes, procedures, and considerations for planning and managing identity, credential, and access management programs. Note: This document has been superseded by the FICAM Architecture."
+  url: "https://playbooks.idmanagement.gov/docs/roadmap-ficam.pdf"
+
+- title: ICAM Governance Framework Version 1.0
+  type: PDF
+  pubdate: 2021-09
+  description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies.
+  url: "https://playbooks.idmanagement.gov/docs/playbook-identity-governance-framework.pdf"
+
+- title: Identity Lifecycle Management Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.
+  url: "https://playbooks.idmanagement.gov/playbooks/ilm/"
+
+- title: PIV-I for Federal Agencies
+  type: Markdown
+  pubdate: 2022-04
+  description: This guide helps federal agencies understand how federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) achieve interoperability with the PIV infrastructure.
+  url: "https://playbooks.idmanagement.gov/playbooks/pivi/"
+
+- title: Privileged Identity Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: This Playbook provides federal agencies with best practices in managing its privileged user population.
+  url: "https://playbooks.idmanagement.gov/playbooks/pam/"

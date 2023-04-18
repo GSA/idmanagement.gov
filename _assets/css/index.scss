@@ -21,9 +21,13 @@
   margin: 0px;
 }
 
-// Hero text length shortener-er to 80%
+// Hero text length shortener-er 
 .gsa-text-width {
   width: 85%;
+}
+
+.gsa-no-dec {
+  text-decoration: none;
 }
 
 // Top front panel
@@ -31,6 +35,7 @@
   // background-color: #c8d9f2;
   background-color: #112e51;
 }
+
 // Lower front panel
 .gas-lower-panel {
   //background-image: asset_url("new-header-graphic.png");
