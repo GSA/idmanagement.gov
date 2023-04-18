@@ -59,7 +59,7 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 |-----------|:-----------:|:-----------:|  
 | Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
 | Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
-| Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
+| Verizon/Cybertrust Federal Shared Service Provider | Wesley Lippman<br/>(984) 364-7540 |	Subbu Peddibhotla<br/>(301) 679-2425 |
 | WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
 
 ## Business Identity Services
