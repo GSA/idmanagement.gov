@@ -2,33 +2,398 @@
 This will be displayed on the homepage. Ideally, you want to highlight key goals of the website
 {% endcomment %}
 
+<!-- CSS Support for Hero -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <!-- start of Hero Section -->
 <section class="usa-hero grid-row">
- <!-- start of hero carousel -->
- <div id="gsaCarousel" class="carousel slide carousel-fade grid-container gsa-carousel-fix"  data-bs-ride="carousel">
-    <!-- Do not edit the HTML below, this code belows to the GSA Carousel and controls the prev and next buttons -->
-    <!-- @uswds center grid-container -->
-  <div class="carousel-inner grid-row">
-    {% for slide in site.data.gsacarousel %}
-    <!-- Carousel Item {{slide.orderNumber}} -->
-    <div class="carousel-item {{slide.initialState}}" data-bs-interval="{{ slide.delay }}">
-        <h2 class="hero-heading">{{ slide.heroHeading }}</h2>
-        <p class="hero-text gsa-text-width">{{ slide.heroText }}</p>
-        <a class="usa-button" href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer">{{ slide.actionButtonText }}</a>
-    </div>
-    {% endfor %}
-    </div> <!-- inner carousel -->
-    <div class="carousel-indicators grid-row">
-      {% for ind in site.data.gsacarousel %}
-      {% if ind.orderNumber == 0 %}
-      <button type="button" data-bs-target="#gsaCarousel" data-bs-slide-to="{{ind.orderNumber}}" class="active" aria-current="true" aria-label="{{ ind.heroHeading }}"></button>
-      {% else %}
-      <button type="button" data-bs-target="#gsaCarousel" data-bs-slide-to="{{ind.orderNumber}}" aria-label="{{ ind.heroHeading }}"></button>
-      {% endif %}
-      {% endfor%}
-    </div>
-    </div> <!-- end of carousel -->
-</section><!-- End of Hero Section -->
+  <!-- start of hero carousel -->
+  <div class="grid-container">
+     <!-- Do not edit the HTML below, this code belows to the GSA Carousel and controls the prev and next buttons -->
+   <div class="gsaCarousel">
+
+     <section class="carousel" aria-label="hero banner carousel">
+      <p class="sr-only">This is a carousel with auto-rotating slides. Activate any of the buttons to disable rotation. Use Next and Previous buttons to navigate, or jump to a slide using the slide dots.</p>
+
+      <!-- Pause/resume button -->
+      <button class="rotation-button is-control">
+        <span class="pause-container is-visible">
+          <span class="icon fas fa-pause" aria-hidden="true"></span>
+          <span class="sr-only">Pause slide rotation</span>
+        </span>
+
+        <span class="resume-container">
+          <span class="icon fas fa-play" aria-hidden="true"></span>
+          <span class="sr-only">Resume slide rotation</span>
+        </span>
+      </button>
+
+      <!-- Previous button -->
+      <button class="previous-button is-control">
+        <span class="fas fa-angle-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous slide</span>
+      </button>
+
+      <!-- Splide is initialized on this element so we can use our custom controls above -->
+      <div class="splide">
+        <div class="splide__track">
+          <div class="splide__list">
+            {% for slide in site.data.gsacarousel %}
+            <div class="splide__slide splide_fix" role="group" aria-label="{{slide.hero-heading}}">
+                  <h2 class="hero-heading">{{ slide.heroHeading }}</h2>
+                  <p class="hero-text gsa-text-width">{{ slide.heroText }}</p>
+                  <a class="usa-button" href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer">{{ slide.actionButtonText }}</a>            
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Next button -->
+      <button class="next-button is-control">
+        <span class="fas fa-angle-right" aria-hidden="true"></span>
+        <span class="sr-only">Next slide</span>
+      </button>
+
+     </div> <!-- inner carousel -->
+     </div>
+ </section>
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+ <script>
+  var splide;
+  var previousButton, nextButton;
+  var rotationButton, pauseContainer, resumeContainer;
+
+  document.addEventListener('DOMContentLoaded', function() {
+    previousButton = document.querySelector('.carousel .previous-button');
+    nextButton = document.querySelector('.carousel .next-button');
+
+    rotationButton = document.querySelector('.carousel .rotation-button');
+    pauseContainer = document.querySelector('.carousel .rotation-button .pause-container');
+    resumeContainer = document.querySelector('.carousel .rotation-button .resume-container');
+
+    splide = new Splide('.splide', {
+      autoplay: true,
+      interval: 7000,
+      pauseOnHover: false,
+
+      arrows: false,
+      perPage: 1,
+      type: 'loop',
+      pagination: true,
+      keyboard: false,  // Splide listens to key events at the document level and moves ALL carousels when arrow keys are used. Since keyboard and screen reader users use these keys to operate the tabs, this creates a very unusual experience.
+      slideFocus: false  // removes tabindex="0" from each slide wrapper, since we only want our links inside each slide to receive focus.
+    }).mount();
+
+    // To prevent animation issues, let's make every slide visible before a transition happens. Splide will then automatically remove the `.is-visible` class from non-visible slides once the transition is finished.
+    splide.on('move', function() {
+      var slides = document.querySelectorAll('.splide .splide__slide');
+
+      slides.forEach(function(slide) {
+        slide.classList.add('is-visible');
+      });
+    });
+
+    // Go to the previous slide and stop autoplay when the Previous button is activated
+    previousButton.addEventListener('click', function(e) {
+      disableAutoplay();
+      splide.go('<');
+    });
+
+    // Go to the next slide and stop autoplay when the Next button is activated
+    nextButton.addEventListener('click', function(e) {
+      disableAutoplay();
+      splide.go('>');
+    });
+
+    // Toggle autoplay when the pause/resume button is activated
+    rotationButton.addEventListener('click', function(e) {
+      toggleAutoplay();
+    });
+  });
+
+
+  /**
+    Disable or enable built-in Splide Slider autoplay
+  */
+  function toggleAutoplay() {
+    var autoplayEnabled = splide.options.autoplay;
+
+    if(autoplayEnabled) {
+      disableAutoplay();
+    } else {
+      enableAutoplay();
+    }
+  }
+
+  function disableAutoplay() {
+    // Disable autoplay using the Splide API
+    splide.Components.Autoplay.pause();
+    splide.options = { autoplay: false };
+
+    // Switch the rotation button icon to "resume"
+    pauseContainer.classList.remove('is-visible');
+    resumeContainer.classList.add('is-visible');
+  }
+
+  function enableAutoplay() {
+    // Disable autoplay using the Splide API
+    splide.Components.Autoplay.play();
+    splide.options = { autoplay: true };
+
+    // Switch the rotation button icon to "pause"
+    pauseContainer.classList.add('is-visible');
+    resumeContainer.classList.remove('is-visible');
+  }
+</script>
+
+<style>
+  /**
+    Setup for code demo only
+  */
+  /* :root {
+    --carousel-height: 300px;
+  } */
+
+  /* Add space to left of rotator text area */
+  .splide_fix {
+    padding: 30px;
+  }
+
+
+  /**
+    Wrapper
+  */
+  .carousel {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+
+
+  /**
+    Controls - pause/resume, previous, and next buttons
+  */
+
+    /* Resets for all buttons */
+    .is-control {
+      z-index: 5;
+      background: none;
+      color: rgba(255, 255, 255, 0.7);
+      border: 0;
+      cursor: pointer;
+      transition: all .2s linear;
+    }
+
+    .is-control:focus {
+      outline: none;
+      /* background-color: rgba(0,0,0,.8); */
+      color: rgba(255,255,255,1);
+    }
+
+    /* Active indicator button */
+    .rotation-button {
+      color:rgba(27, 177, 0, 0.7)
+    }
+
+    /* Pause/resume button */
+    .rotation-button {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+
+      padding: 10px 15px;
+      z-index: 3;
+
+      font-size: 20px;
+      border-radius: 5px;
+    }
+
+    .rotation-button .pause-container,
+    .rotation-button .resume-container {
+      display: none;
+    }
+
+    .rotation-button .pause-container.is-visible,
+    .rotation-button .resume-container.is-visible {
+      display: block;
+    }
+
+    /* Previous slide button */
+    .previous-button {
+      position: absolute;
+      left: 0;
+      /* top: calc(var(--carousel-height)/2 - 40px); */
+      top: 50%;
+
+      padding: 5px 15px;
+      z-index: 3;
+
+      font-size: 30px;
+
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-left: 0;
+    }
+
+    /* Next slide button */
+    .next-button {
+      position: absolute;
+      right: 0;
+      /* top: calc(var(--carousel-height)/2 - 40px); */
+      top: 50%;
+
+      padding: 5px 15px;
+      z-index: 1;
+
+      font-size: 30px;
+
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-right: 0;
+    }
+
+  /**
+    Single slide
+  */
+  .splide__slide {
+    position: relative;
+    /* height: var(--carousel-height); */
+    width: auto;
+    height: auto;
+    visibility: hidden;
+    margin: 0px;
+    padding-left: 70px;
+    padding-top: 3px;
+    margin-bottom: 4px;
+  }
+
+  .splide__slide.is-visible {
+    visibility: visible;
+  }
+
+  .splide__slide .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /**
+    Slide 2 content
+  */
+  .splide__slide .content {
+    position: absolute;
+    top: 20px;
+    left: 15%;
+
+    max-width: 400px;
+    width: 50%;
+    max-height: 70%;
+    padding: 15px;
+
+    white-space: normal;
+    color: white;
+    background-color: royalblue;
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+  }
+
+    .splide__slide .content h2 {
+      margin: 0;
+      font-size: 1.7rem;
+    }
+
+    .splide__slide .content p {
+      margin: 10px 0 20px 0;
+    }
+
+    .splide__slide .content .cta-link {
+      display: inline-block;
+      padding: 5px 10px;
+
+      background-color: white;
+      color: rgba(0,0,0,.7);
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 3px 3px 0 0 rgba(0,0,0,.3);
+    }
+
+    .splide__slide .content .cta-link:focus,
+    .splide__slide .content .cta-link:hover {
+      text-decoration: underline;
+      color: rgb(255, 255, 255);
+    }
+
+    .splide__slide .content .cta-link:focus {
+      outline: 3px solid rgb(240, 240, 240);
+    }
+
+
+  /**
+    Restyle the slide dots generated by Slick Slider
+  */
+  .splide__pagination {
+    bottom: 10px;
+  }
+
+    .splide__pagination li {
+      margin: 0 5px;
+    }
+
+  /* Create a circle to serve as the slide dot */
+  .splide__pagination li button {
+    width: 10px;
+    height: 10px;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  /* Give the focused slide dot a nice visible focus indicator */
+  .splide__pagination li button:focus {
+    box-shadow: 0 0 0 1px rgb(15, 129, 0), 0 0 0 2px hsl(0, 0%, 100%);
+    outline: none;
+  }
+
+  /* Leverage aria-current for styling to ensure we're using the attribute correctly */
+  .splide__pagination li button[aria-current="true"] {
+    background-color: rgb(253, 191, 4);
+  }
+
+  /** Credits at bottom */
+  .credits {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    opacity: .7;
+  }
+
+    .credits img {
+      height: 30px;
+      margin-left: 5px;
+      margin-top: -2px;
+      vertical-align: middle;
+    }
+
+    .credits:hover,
+    .credits:focus {
+      opacity: 1;
+    }
+</style>
+
+<!-- End of Hero Section -->
+
+
+
 
   
 

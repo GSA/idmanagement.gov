@@ -23,12 +23,20 @@
 
 // Hero text length shortener-er 
 .gsa-text-width {
-  width: 85%;
+  width: 95%;
 }
 
 .gsa-no-dec {
   text-decoration: none;
 }
+
+.gsa-slide {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: center;
+}
+
 
 // Top front panel
 .gsa-top-panel {
