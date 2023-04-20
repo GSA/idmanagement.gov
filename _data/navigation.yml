@@ -163,6 +163,37 @@ faq:
   - text: Additional Resources
     href: /university/resources/ 
 
+## Playbooks: Namespace (urls for markdown and pdfs preserved from original site, /playbooks/...) 
+## Resources: from  https://playbooks.idmananagement.gov 
+playbooks:
+  - text: Introduction
+    href: /playbooks/
+  - text: Cloud Identity Playbook
+    href: /playbooks/cloud/
+  - text: Digital Autopen Playbook 
+    href: /playbooks/autopen/ 
+  - text: Digital Identity Risk Assessment Playbook
+    href: /playbooks/dira/ 
+  - text: Digitally Sign a Microsoft Word Document
+    href: /playbooks/signword/ 
+  - text: Digitally Sign an Office of the Federal Register Document
+    href: /playbooks/signfedregister/ 
+  - text: Digital Worker Identity Playbook
+    href: /playbooks/dw/ 
+  - text: Enterprise Single Sign-On Playbook
+    href: /playbooks/sso/ 
+  - text: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
+    href: /docs/roadmap-ficam.pdf
+  - text: ICAM Governance Framework Version 1.0
+    href: /docs/playbook-identity-governance-framework.pdf
+  - text: Identity Lifecycle Management Playbook
+    href: /playbooks/ilm/ 
+  - text: PIV-I for Federal Agencies
+    href: /playbooks/pivi/ 
+  - text: Privileged Identity Playbook
+    href: /playbooks/pam/ 
+
+
 ## Buy
 # buy:
 #   - text: Acquisition Overview

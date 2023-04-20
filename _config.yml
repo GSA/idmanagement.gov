@@ -220,6 +220,9 @@ collections:
   rss:
     output: true
     permalink: /news/:path/ 
+  playbooks:
+    output: true
+    permalink: /playbooks/:path/ 
 
   # (Old, keep for ref) buy: 
   #   output: true

@@ -10,11 +10,10 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
   <!-- start of hero carousel -->
   <div class="grid-container">
      <!-- Do not edit the HTML below, this code belows to the GSA Carousel and controls the prev and next buttons -->
-   <div class="gsaCarousel">
+   <!-- <div class="gsaCarousel"> -->
 
-     <section class="carousel" aria-label="hero banner carousel">
+     <section class="carousel flex-column" aria-label="hero banner carousel">
       <p class="sr-only">This is a carousel with auto-rotating slides. Activate any of the buttons to disable rotation. Use Next and Previous buttons to navigate, or jump to a slide using the slide dots.</p>
-
       <!-- Pause/resume button -->
       <button class="rotation-button is-control">
         <span class="pause-container is-visible">
@@ -45,6 +44,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
                   <a class="usa-button" href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer">{{ slide.actionButtonText }}</a>            
             </div>
             {% endfor %}
+
           </div>
         </div>
       </div>
@@ -57,7 +57,9 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
 
      </div> <!-- inner carousel -->
      </div>
- </section>
+     </section>
+ <div>
+</section>
  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
  <script>
   var splide;
@@ -179,7 +181,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
     .is-control {
       z-index: 5;
       background: none;
-      color: rgba(255, 255, 255, 0.7);
+      color: rgb(255, 253, 253,.7);
       border: 0;
       cursor: pointer;
       transition: all .2s linear;
@@ -193,7 +195,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
 
     /* Active indicator button */
     .rotation-button {
-      color:rgba(27, 177, 0, 0.7)
+      color:rgb(255, 255, 255)
     }
 
     /* Pause/resume button */
@@ -354,9 +356,18 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
     cursor: pointer;
   }
 
+  .span pause-container {
+    color:darkkhaki;
+  }
+
+  .play-container {
+    color:forestgreen;
+  }
+  
+
   /* Give the focused slide dot a nice visible focus indicator */
   .splide__pagination li button:focus {
-    box-shadow: 0 0 0 1px rgb(15, 129, 0), 0 0 0 2px hsl(0, 0%, 100%);
+    box-shadow: 0 0 0 2px hsl(203, 100%, 45%), 0 0 0 2px hsl(0, 0%, 86%);
     outline: none;
   }
 
@@ -366,7 +377,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
   }
 
   /** Credits at bottom */
-  .credits {
+  /* .credits {
     display: inline-block;
     margin-top: 20px;
     margin-left: 20px;
@@ -387,9 +398,8 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
     .credits:hover,
     .credits:focus {
       opacity: 1;
-    }
+    } */
 </style>
-
 <!-- End of Hero Section -->
 
 
