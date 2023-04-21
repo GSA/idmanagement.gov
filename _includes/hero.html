@@ -84,7 +84,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
       type: 'loop',
       pagination: true,
       keyboard: false,  // Splide listens to key events at the document level and moves ALL carousels when arrow keys are used. Since keyboard and screen reader users use these keys to operate the tabs, this creates a very unusual experience.
-      slideFocus: false  // removes tabindex="0" from each slide wrapper, since we only want our links inside each slide to receive focus.
+      slideFocus: true  // removes tabindex="0" from each slide wrapper, since we only want our links inside each slide to receive focus.
     }).mount();
 
     // To prevent animation issues, let's make every slide visible before a transition happens. Splide will then automatically remove the `.is-visible` class from non-visible slides once the transition is finished.
