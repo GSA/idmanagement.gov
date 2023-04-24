@@ -3,6 +3,24 @@
 # Date: 04/18/2023
 # Data used on site's front page, lower half.
 
+- title: FIPS 201 Evaluation Program
+  type: Page
+  pubdate: Current
+  description: The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes called the FICAM Testing Program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs).
+  url: "fips201/"
+
+- title: Federal Public Key Infrastructure Guide Introduction
+  type: Page
+  pubdate: Current
+  description: These guides are open source and a work in progress and we welcome contributions from our colleagues. We encourage you to contribute and share information you think is helpful for the Federal PKI community.
+  url: "fpki/"
+
+- title: Electronic Signature
+  type: Page
+  pubdate: Current
+  description: TDB
+  url: "#"
+
 - title: Cloud Identity Playbook
   type: PDF
   pubdate: 2022-12
