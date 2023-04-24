@@ -223,6 +223,19 @@ collections:
   playbooks:
     output: true
     permalink: /playbooks/:path/ 
+  fips201:
+    output: true
+    permalink: /fips201/:path/ 
+  fpki:
+    output: true
+    permalink: /fpki/:path/  
+
+# Unsure if needs to be added.
+  # ficampm:
+  #   output: true
+  # permalink: /pm/:path/
+
+  
 
   # (Old, keep for ref) buy: 
   #   output: true
