@@ -59,7 +59,7 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 |-----------|:-----------:|:-----------:|  
 | Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
 | Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
-| Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
+| Verizon/Cybertrust Federal Shared Service Provider | Wesley Lippman<br/>(984) 364-7540 |	Subbu Peddibhotla<br/>(301) 679-2425 |
 | WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
 
 ## Business Identity Services
@@ -90,6 +90,6 @@ These organizations do not manage identities or credentials for their community 
 | Trust Framework | Customer Service | Tech Support | Community |
 |:-----------:|:-----------:|:-----------:|:-----------:|  
 | [CertiPath](https://certipath.com/services/federated-trust/){:target="_blank"}{:rel="noopener noreferrer"} | Judith Spencer<br/>(301) 974-4227	| support at certipath.com<br/>(855) 758-0075	| Aerospace and Defense<br/>International |
-| [SAFE Identity](https://makeidentitysafe.com/){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | info at makeidentitysafe.com<br/>(703) 705-2920 | Healthcare<br/>International  |
+| [DirectTrust](https://directtrust.org/identity)){:target="_blank"}{:rel="noopener noreferrer"}| Kyle Neuman<br/>(301) 943-7583 | admin at directtrust.org | Healthcare<br/>International  |
 | [STRAC](https://pki.strac.org/STRACBridge.html){:target="_blank"}{:rel="noopener noreferrer"}| Eric Epley<br/>(210) 233-5850	| Ryan Ahlfors<br/>(210) 233-5850 | State and Local |
 | [TSCP, Inc.](https://www.tscp.org/){:target="_blank"}{:rel="noopener noreferrer"} | Shauna Russell<br/>(202) 769-9114 | Steve Race<br/>(703) 980-8915  | Aerospace and Defense<br/>International |
