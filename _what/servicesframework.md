@@ -25,17 +25,17 @@ The Services Framework is a tool designed for ICAM program managers and informat
 
 The graphic below illustrates the five ICAM practice areas and provides a list of services that fall within each area. 
 
-<img src="{{site.baseurl}}/assets/arch/services/ServicesOverview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages." width="560" height="466">
+<img src="{{site.baseurl}}/assets/arch/services/services_overview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages.">
 
 ## Services Visual
 
 This visual represents the five practice areas and services.
 
-<img src="{{site.baseurl}}/assets/arch/services/ServicesDefinitions.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages." width="560" height="314">
+<a href="{{site.baseurl}}/assets/arch/services/services_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/services_definitions.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages."></a>
 
 ## Identity Management
 
-<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServices.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+<img src="{{site.baseurl}}/assets/arch/services/services_identity_management.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page."  width="314" height="400" align="right" style="padding-left:30px">
 
 Identity Management is how an agency collects, verifies, manages attributes, and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
 
@@ -55,13 +55,11 @@ Agencies should manage identity attributes as centrally as possible and distribu
 An entitlement is a specific type of authorization attribute that refers to an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and de-provision activities as well as for auditing and reporting purposes. For example, a new employee may require access to ten core enterprise applications on the first day of work. An agency can create a new employee group with new employee entitlements and automate provisioning of the ten core applications rather than treat them as individual access requests.
 Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include:
 
-
 Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include: 
 
 - Use a single sign-on tool to aggregate application access entitlements.
 - Allow employees to update contact attributes in an employee record.
 - Automate integration between a training system and an identity governance and administration tool to create and update annual security training.
-
 
 Identity proofing is how an agency verifies an enterprise identity. The complexity of this process depends on the Identity Assurance Level (IAL) required for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver’s license or utility bill. The agency verifies the identity documents and the individual’s photo (biometric).
 
@@ -74,7 +72,7 @@ An identifier is a unique attribute used to locate an identity in a system:
 
 The Identity Management services in the Federal ICAM architecture include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are sometimes collectively known as **Identity Lifecycle Management**.
 
-<img src="{{site.baseurl}}/assets/arch/services/IdentityManagementServiceDefinitions.png" alt="An orange box with the Identity Management service definitions, which are listed in the following body text." width="560" height="61">
+<a href="{{site.baseurl}}/assets/arch/services/identity_management_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/identity_management_definitions.png" alt="An orange box with the Identity Management service definitions, which are listed in the following body text."></a>
 
 | Service | Description | Keywords |
 | --- | ------ | -----|
@@ -87,7 +85,7 @@ The Identity Management services in the Federal ICAM architecture include Creati
 
 ## Credential Management
 
-<img src="{{site.baseurl}}/assets/arch/services/CredentialManagementServices.png" alt="A green box with the list of Credential Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+<img src="{{site.baseurl}}/assets/arch/services/services_cred_management.png" alt="A green box with the list of Credential Management services defined later in the body text of this page." width="314" height="400" align="right" style="padding-left:30px">
 
 Credential Management is how an agency issues, manages, and revokes credentials bound to enterprise identities.
 
@@ -113,7 +111,7 @@ Unlike identities, credentials can expire. If an enterprise identity continues p
 
 The Credential Management services in the FICAM architecture include Sponsorship, Registration, Generation & Issuance, Maintenance, and Revocation.
 
-<img src="{{site.baseurl}}/assets/arch/services/CredentialManagementServiceDefinitions.png" alt="A green box with the Credential Management service definitions, which are listed in the following body text." width="560" height="61">
+<a href="{{site.baseurl}}/assets/arch/services/cred_management_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/cred_management_definitions.png" alt="A green box with the Credential Management service definitions, which are listed in the following body text."></a>
 
 | Service | Description | Keywords |
 | --- | ------ | -----|
@@ -125,7 +123,7 @@ The Credential Management services in the FICAM architecture include Sponsorship
 
 ## Access Management
 
-<img src="{{site.baseurl}}/assets/arch/services/AccessManagementServices.png" alt="A blue box with the list of Access Management services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+<img src="{{site.baseurl}}/assets/arch/services/services_access_management.png" alt="A blue box with the list of Access Management services defined later in the body text of this page." width="314" height="400" align="right" style="padding-left:30px">
 
 Access Management is how an agency authenticates enterprise identities and authorizes appropriate access to protected services.
 
@@ -182,7 +180,7 @@ Each authorization model has benefits and limitations. The policies and access r
 
 The Access Management services in the FICAM architecture include Policy Administration, Authentication, Authorization, and Privileged Access Management.
 
-<img src="{{site.baseurl}}/assets/arch/services/AccessManagementServiceDefinitions.png" alt="A blue box with the Access Management service definitions, which are listed in the following body text." width="560" height="61">
+<a href="{{site.baseurl}}/assets/arch/services/access_management_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/access_management_definitions.png" alt="A blue box with the Access Management service definitions, which are listed in the following body text."></a>
 
 | Service | Description | Keywords |
 | --- | ------ | -----|
@@ -193,7 +191,7 @@ The Access Management services in the FICAM architecture include Policy Administ
 
 ## Federation
 
-<img src="{{site.baseurl}}/assets/arch/services/FederationServices.png" alt="A gray box with the list of Federation services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+<img src="{{site.baseurl}}/assets/arch/services/services_federation.png" alt="A gray box with the list of Federation services defined later in the body text of this page." width="314" height="400" align="right" style="padding-left:30px">
 
 Federation is the technology, policies, standards, and processes that allow an agency to accept digital identities, attributes, and credentials managed by other agencies.
 
@@ -211,7 +209,7 @@ Federation has many different applications, including:
 
 The Federation services in the FICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
 
-<img src="{{site.baseurl}}/assets/arch/services/FederationServiceDefinitions.png" alt="A gray box with the Federation service definitions, which are listed in the following body text." width="560" height="61">
+<a href="{{site.baseurl}}/assets/arch/services/federation_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/federation_definitions.png" alt="A gray box with the Federation service definitions, which are listed in the following body text."></a>
 
 | Service | Description | Keywords |
 | --- | ------ | -----|
@@ -221,7 +219,7 @@ The Federation services in the FICAM architecture include Policy Alignment, Auth
 
 ## Governance
 
-<img src="{{site.baseurl}}/assets/arch/services/GovernanceServices.png" alt="A navy box with the list of Governance services defined later in the body text of this page." width="260" height="333" align="right" style="padding-left:30px">
+<img src="{{site.baseurl}}/assets/arch/services/services_governance.png" alt="A navy box with the list of Governance services defined later in the body text of this page." width="314" height="400" align="right" style="padding-left:30px">
 
 Governance is the set of practices and systems that guides ICAM functions, activities, and outcomes.
 
@@ -233,7 +231,7 @@ If your agency identifies problems during data collection and analysis, you shou
 
 The Governance services in the FICAM architecture include Identity Governance, Analytics, and Mitigation.
 
-<img src="{{site.baseurl}}/assets/arch/services/GovernanceServiceDefinitions.png" alt="A navy box with the Governance service definitions, which are listed in the following body text." width="560" height="61">
+<a href="{{site.baseurl}}/assets/arch/services/governance_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/governance_definitions.png" alt="A navy box with the Governance service definitions, which are listed in the following body text."></a>
 
 | Service | Description | Keywords |
 | --- | ------ | -----|

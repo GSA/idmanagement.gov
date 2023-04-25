@@ -1,10 +1,10 @@
 ---
 layout: page
 title:  Sell Identity Products and Services
-collection: sell
-permalink: sell/
+collection: fips201
+permalink: /fips201/vendors/
 sticky_sidenav: true
-sidenav: sell
+sidenav: fips201
 
 subnav:
   - text: Product Approval Process

@@ -16,7 +16,9 @@ The Goals and Objectives identify the aims and outcomes of a federal agency ente
 
 The visual below presents the three goals, each with its own objectives.
 
-<img src="{{site.baseurl}}/assets/arch/goals_GoalsAndObjectives.png" alt="Three boxes that define the goals and their corresponding objectives." width="560" height="312">
+<a href="{{site.baseurl}}/assets/arch/all_goals.png" target="_blank">
+  <img src="{{site.baseurl}}/assets/arch/all_goals.png" alt="Three boxes that define the goals and their corresponding objectives.">
+</a>
 
 **Goal 1: Modernize security policies and solutions to make risk-based decisions, automate identity and access management processes, and move access protections closer to government data.**
 
