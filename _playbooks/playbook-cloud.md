@@ -276,7 +276,7 @@ The first step in any journey is identifying the destination. Document your plan
 
 A Cloud Identity strategy helps an organization work in a concerted manner. An example of pairing a strategy to a goal is consolidating identity services (strategy) to prevent capability sprawl (goal). It is possible that the Cloud Identity strategy and the Cloud Identity policy are the same document for easy management or are based on the agency's size. Large agencies may have different modernization, security, and identity-based strategies, while smaller agencies may combine these elements into a single document. Use the [ICAM Practice Areas and Services Framework]({{site.baseurl}}/arch/services/){:target="_blank"}{:rel="noopener noreferrer"} to identify ICAM services and align your plan with the FICAM Architecture. There are five core services with many sub-services. The [ICAM Governance Framework]({{site.baseurl}}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"} is also a great resource to identify ICAM capabilities, integration points, and enterprise governance examples and templates.
 
-<img src="{{site.baseurl}}/assets/arch/services/ServicesOverview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area." width="560" height="466">
+<img src="{{site.baseurl}}/assets/arch/services/services_overview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area." width="560" height="466">
 
 <p align="center"><b>Figure 5: FICAM Services Framework</b></p>
 
