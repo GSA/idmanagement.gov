@@ -17,7 +17,7 @@ Within the federal enterprise, Windows smart card logon with a PIV card (PIV log
 
 The figure below, from the “Smart card sign-in flow in Windows” section of the [Microsoft Certificate Requirements and Enumeration article](https://docs.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration#smart-card-sign-in-flow-in-windows){:target="_blank"}{:rel="noopener noreferrer"}, provides a detailed overview of how smart card logon works in supported versions of Windows.
 
-<img src="{{site.baseurl}}/assets/piv/pivauth-overview.png" alt="A detailed workflow diagram of how smart card logon works in supported versions of Windows." width="882" height="620">
+<img src="{{site.baseurl}}/assets/piv/ficam-logon-process-overview.png" alt="A detailed workflow diagram of how smart card logon works in supported versions of Windows." width="882" height="620">
 
 For our use, this complex process is simplified into the following workflows:
 

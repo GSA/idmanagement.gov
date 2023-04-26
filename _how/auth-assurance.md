@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: how
-title: Local Certification Authority
+title: Authentication Assurance
 permalink: /how/authentication-assurance/
 sticky_sidenav: true
 sidenav: how
