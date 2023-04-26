@@ -49,7 +49,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a1" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px"  width="170" height="170"/></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px"  width="156" height="156"/></p>
     <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
@@ -97,7 +97,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_identity_proofing.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. " align="right" style="padding-left:15px"  width="170" height="170" /></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_identity_proofing.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>Before you can create a credential and assign it to an individual, that person must provide proof of their claimed identity. Identity proofing is the process by which a federal agency collects and verifies information about a person to establish an enterprise identity.</p>
     <p>The location or information that a person needs to access informs the Identity Assurance Level (IAL), which determines the elements you should require from that person for identity proofing. There are three IALs; however, federal agencies require a minimum of IAL2 for employees or contractors with recurring access to government resources, so these use cases do not include IAL1.</p>
     <p>This use case describes the high-level steps to proof an identity at IAL2 or IAL3. Depending on the required IAL, you may require increasingly more information from an employee or contractor or partner along with additional verification steps. The information provided by the employee or contractor is also known as identity evidence. Identity evidence may be physical, such as passports, driver’s licenses, and birth certificates.</p>
@@ -139,7 +139,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a3" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px"  width="170" height="170" /></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
@@ -178,7 +178,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a4" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px"  width="170" height="170" /></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>After you identity proof an individual, you’ll issue some proof of that individual’s claimed identity. A credential (like a physical card) is a type of authenticator that serves as a tool for an employee or contractor to gain access to agency services.</p>
     <hr />
     <h2 id="use-case">Use Case</h2>
@@ -216,7 +216,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a5" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintenance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service." align="right" style="padding-left:15px"  width="170" height="170" /></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintenance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service." align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>A derived credential is a credential derived from an existing credential, with a different form factor, such as a credential on a mobile device. Derived credentials have the same IAL as the existing credential and the same or lower AAL.</p>
     <p>When an employee or contractor requires authentication but cannot leverage an existing credential, they can use a derived credential. To be eligible for a derived credential, the employee or contractor must already have a valid credential with Authenticator Assurance Level (AAL) 2 or 3.</p>
     <hr />
@@ -256,7 +256,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a6" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintain_revoke.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px"  width="170" height="170" /></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintain_revoke.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:</p>
     <ul>
       <li><strong><a href="#reset-a-credential">Reset a credential</a></strong> - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.</li>
@@ -336,8 +336,11 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a7" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_authn_authz.png" alt="This use case corresponds to the Authentication and Authorization service areas of Access Management." align="right" style="padding-left:15px"  width="170" height="170" /></p>
-    <p>This use case describes the steps to authenticate individuals and authorize access to agency services. Agency services can be anything from applications and files to physical facilities.</p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_authn_authz.png" alt="This use case corresponds to the Authentication and Authorization service areas of Access Management." align="right" style="padding-left:15px"  width="156" height="156" /></p>
+    <p>
+      This use case describes the steps to authenticate individuals and authorize access to agency services. Agency services can be anything from applications and files to physical facilities.
+      <br><br><br>
+    </p>
     <hr />
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an Access Control System (ACS) Administrator needs to grant access to an employee or contractor who has an enterprise identity and active credential and needs to access a logical or physical resource. These steps assume the employee or contractor already has credentials to support authentication as well as the access entitlements to support authorization decisions.</p>
@@ -384,7 +387,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     </button>
   </h4>
   <div id="m-a8" class="usa-accordion__content usa-prose">
-    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_attribute_exchange.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation." align="right" style="padding-left:15px"  width="170" height="170" /></p>
+    <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_attribute_exchange.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation." align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies to access protected resources and streamlines the user’s experience.</p>
     <p>Agencies can pass assertions to share attributes about employees and contractors.</p>
     <hr />
