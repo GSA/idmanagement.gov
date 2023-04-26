@@ -20,7 +20,7 @@
   heroHeading: FICAM 
   heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
   actionButtonText: Learn more
-  actionLocation: /what/introduction/
+  actionLocation: what/introduction/
   actionTarget: _blank
 
 - orderNumber: 1
@@ -38,7 +38,7 @@
   heroHeading: Privileged user
   heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
   actionButtonText: Learn more
-  actionLocation: /playbooks/pam/
+  actionLocation: playbooks/pam/
   actionTarget: _blank
 
 - orderNumber: 3
@@ -56,7 +56,7 @@
   heroHeading: Single Sign On
   heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
   actionButtonText: Learn more
-  actionLocation: /playbooks/sso/
+  actionLocation: playbooks/sso/
   actionTarget: _blank
 
 - orderNumber: 5
@@ -74,5 +74,5 @@
   heroHeading: Identity lifecycle management
   heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
   actionButtonText: Learn more
-  actionLocation: /playbooks/ilm/
+  actionLocation: playbooks/ilm/
   actionTarget: _blank
