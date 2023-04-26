@@ -11,7 +11,7 @@
 #   heroHeading: text for the main hero section of the carousel, keep text length short 1 - 3 words depending on length
 #   heroText: secondary text for the hero section of the carousel, keep text length short as action statements
 #   actionButtonText: text for action button, normally 1 - 3 words, no more than 5
-#   actionLocation: # desired destination of the user after reading action statement, URLs, local URIs or permilinks
+#   actionLocation: # desired destination of the user after reading action statement, URLs, local URIs or permilinks. Local links (No leading forward slash)
 #   actionTarget(default: _blank): target window, options: _blank or _self if link is internal to site 
 
 - orderNumber: 0
