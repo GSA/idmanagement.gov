@@ -107,7 +107,8 @@ Examples of credentials include:
 
 Unlike identities, credentials can expire. If an enterprise identity continues past a credential’s expiration date, the issuing agency can issue a new credential.
 
-### Credential Management Services
+<!-- ### Credential Management Services -->
+### Services
 
 The Credential Management services in the FICAM architecture include Sponsorship, Registration, Generation & Issuance, Maintenance, and Revocation.
 
@@ -176,7 +177,8 @@ Authorizations are based on progressive, fine-grained access models. Most agenci
 
 Each authorization model has benefits and limitations. The policies and access requirements defined by agency business owners help define the model that best suits their needs. More robust access control models, such as ABAC, can help agencies with improved automation, and they are increasingly adopted by cloud-native and cloud-friendly services.
 
-### Access Management Services
+<!-- ### Access Management Services -->
+### Services
 
 The Access Management services in the FICAM architecture include Policy Administration, Authentication, Authorization, and Privileged Access Management.
 
@@ -205,7 +207,8 @@ Federation has many different applications, including:
 
 > An individual can use their agency-issued credential containing an internal identifier(s) to directly log in to a different agency’s online service. The online service registers the identifier(s) in its system for future use.
 
-### Federation Services
+<!-- ### Federation Services -->
+### Services
 
 The Federation services in the FICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
 
@@ -227,7 +230,7 @@ To perform effective governance, agencies must collect data about ICAM functions
 
 If your agency identifies problems during data collection and analysis, you should remediate these issues as quickly as possible. Real-time monitoring and risk mitigation are crucial to ensure employees and contractors have only the appropriate access, following the principle of least privilege.
 
-### Governance Services
+### Services
 
 The Governance services in the FICAM architecture include Identity Governance, Analytics, and Mitigation.
 

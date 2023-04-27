@@ -31,7 +31,7 @@ These use cases are designed for ICAM Enterprise Architects and business owners 
 
 Each use case includes a high-level summary of the scenario, individuals and systems involved in the use case, illustrations that show the required steps to achieve the end goal, and an icon that indicates the practice area and the service with which the use case most closely aligns.
 
-For details about ICAM services, see the [Services Framework]({{site.baseurl}}/what/services).
+For details about ICAM services, see the [Services Framework]({{site.baseurl}}/what/servicesframework/).
 
 While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies.
 
