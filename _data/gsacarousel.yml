@@ -3,7 +3,7 @@
 # File: _data/gsacarousel.yml
 # File used in: _includes/hero.html 
 # Developer: Clayton Barnette <clayton.barnette@gsa.gov>
-# Purpose: Drives Carousel data on the homepage of IDManagement.gov
+# Purpose: Drives Carousel data on the homepage of New IDManagement.gov
 #
 # - orderNumber: Sequential numbering of each carousel item, starts at 0 - n 
 #   initialState: set to active active or leave blank (Note: only one carousel item should be set to active or it breaks the carousel)
@@ -14,6 +14,8 @@
 #   actionLocation: # desired destination of the user after reading action statement, URLs, local URIs or permilinks. Local links (No leading forward slash)
 #   actionTarget(default: _blank): target window, options: _blank or _self if link is internal to site 
 
+# Memo: If a link is internal to the site, actionTarget should be set to "_self" if the lint is external or a PDF or Document of somekind, the "_blank" should be used.
+
 - orderNumber: 0
   initialState: active
   delay: 10000
@@ -21,7 +23,7 @@
   heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
   actionButtonText: Learn more
   actionLocation: what/introduction/
-  actionTarget: _blank
+  actionTarget: _self
 
 - orderNumber: 1
   initialState:
@@ -39,7 +41,7 @@
   heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
   actionButtonText: Learn more
   actionLocation: playbooks/pam/
-  actionTarget: _blank
+  actionTarget: _self
 
 - orderNumber: 3
   initialState:
@@ -57,7 +59,7 @@
   heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
   actionButtonText: Learn more
   actionLocation: playbooks/sso/
-  actionTarget: _blank
+  actionTarget: _self
 
 - orderNumber: 5
   initialState:
@@ -66,7 +68,7 @@
   heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
   actionButtonText: Learn more
   actionLocation: playbooks/cloud/
-  actionTarget: _blank
+  actionTarget: _self
 
 - orderNumber: 6
   initialState:
@@ -75,4 +77,4 @@
   heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
   actionButtonText: Learn more
   actionLocation: playbooks/ilm/
-  actionTarget: _blank
+  actionTarget: _self
