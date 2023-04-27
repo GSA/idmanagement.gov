@@ -65,7 +65,7 @@
   heroHeading: User authorization
   heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
   actionButtonText: Learn more
-  actionLocation: # 
+  actionLocation: playbooks/cloud/
   actionTarget: _blank
 
 - orderNumber: 6
