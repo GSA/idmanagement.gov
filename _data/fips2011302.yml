@@ -81,8 +81,8 @@
 
 - category: 13.02
   fipsstatus: Under Review
-  infrastructure: PACS and Validation Infrastructure for XTec AuthentX ePACS
-  infraurl: /docs/apl-10077-82-xtec.pdf
+  infrastructure: XTec AuthentX ePACS PACS and Validation Infrastructure
+  infraurl: /docs/apl-10077-xtec.pdf
   infraapl: 10077
   reader1: XTec X9900 Contact Smart Card Reader
   reader1url: /docs/apl-10077-79-80-81-82-xtec.pdf
