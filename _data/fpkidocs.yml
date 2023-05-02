@@ -5,6 +5,40 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: Federal Bridge Certificate Policy
+  numberProposal: 3.0
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.0
+  date: 04/17/2023
+  url: /docs/archived/fpki-x509-cert-policy-fbca-30.pdf
+  status: post
+  remove: 04/17/2026
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2023-01
+  name: Proposal 2023-01 | Updates to the Federal Bridge Certification Authority (FBCA) Certificate Policy based on comments received by the CPWG
+  description: This proposal incorporates changes to multiple sections of the FBCA CP based on the comments received during voting period of the most recent rewrite (Change Proposal 2022-04).
+  date: 04/17/2023
+  url: /docs/archived/fpki-fbca-cp-2301.pdf
+  status: post
+  remove: 04/17/2026
+  
+- category: Common Certificate Policy
+  numberProposal: 2.3
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.3
+  date: 04/17/2023
+  url: /docs/archived/fpki-x509-cert-policy-common-23.pdf
+  status: post
+  remove: 04/17/2026
+
+- category: Common Change Proposal
+  numberProposal: 2023-02
+  name: Proposal 2023-02 | Updates Common Policy based on general comments received by the CPWG
+  description: This proposal incorporates changes to multiple sections of Common Policy based on the comments received during voting period of the most recent rewrite of the FBCA CP (change proposal 2022-04).
+  date: 4/17/2023
+  url: /docs/archived/fpki-common-cp-2302.pdf
+  status: post
+  remove: 04/17/2026
+
 - category: FPKI Trust Infrastructure Certificate Practice Statement
   numberProposal: 6.1
   name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.1
