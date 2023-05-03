@@ -51,7 +51,7 @@ The following table defines common PACS components:
 | **Component** | **Description** |
 |----------------|----------|
 | **Access point** | Entrance point or physical barrier where an employee or contractor interacts with the PACS. Example access points include turnstiles, gates, and locking doors. |
-| **PIV credential** | Federal employees and contractors use [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/piv/basics/){:target="_blank"}{:rel="noopener noreferrer"} to *physically access* federal facilities and *logically access* federal information systems. |
+| **PIV credential** | Federal employees and contractors use [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/what/services/#physical-features){:target="_blank"}{:rel="noopener noreferrer"} to *physically access* federal facilities and *logically access* federal information systems. |
 | **Credential reader and keypad** | The reader provides power to and reads data from a PIV credential. The reader also sends this data to a control panel to authenticate the PIV credential and request access authorization. Employees and contractors may need to enter a PIN into the keypad and add a biometric, depending on the facility's security classification and risk levels. | 
 | **Biometric reader** | Captures biometric data (for example, fingerprint or iris scan) and verifies it against the PIV credential's biometric data. |
 | **Control panel** | Receives the credential data sent by the reader and verifies its presence in the credential holder data repository. It then makes an access decision and transmits authorization data to the access control server and access point.  |
@@ -60,7 +60,7 @@ The following table defines common PACS components:
 | **Auxiliary Systems** | Agencies may integrate the PACS with additional facility monitoring systems such as surveillance systems, fire alarm systems, and evacuation systems. |
 
 
-{% include alert-info.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"https://www.idmanagement.gov/buy/#products\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
+{% include alert-info.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"/acquisition-professionals/#products\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
 
 
 ## Characteristics
@@ -74,11 +74,11 @@ Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but a
 - Interoperate with PIV credentials issued by other agencies.
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
 
-The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
-- [PACS Assessment Toolkit Version 1.0](https://www.idmanagement.gov/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/who/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
+- [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 
-The next section, [PACS Deployment Models]({{site.baseurl}}/pacs/pacs/), describes common deployment models for PACS.
+The next section, [PACS Deployment Models]({{site.baseurl}}/what/deployment/), describes common deployment models for PACS.
 
 
 <!-- from https://playbooks.idmanagement.gov/pacs/pacs/#what-is-an-enterprise-pacs -->
@@ -117,7 +117,7 @@ Here are some key E-PACS advantages to consider:
 * One employee and contractor enrollment system that connects multiple enrollment locations.
 * One credential registration and provisioning point.
 * One enterprise-wide system for administrators to modify or terminate access privileges.
-* One enterprise-wide system that regularly polls for [Certificate Revocation List]({{site.baseurl}}/piv/cert-trust/#revocation){:target="_blank"} (CRL) updates and maintains revocation data.
+* One enterprise-wide system that regularly polls for [Certificate Revocation List]({{site.baseurl}}/what/pivdetails/#certificate-revocation){:target="_blank"} (CRL) updates and maintains revocation data.
 * Reduced costs for system management, such as patching, server system administration, and software updates.
 * Reduced costs for reporting, such as Federal Information Security Modernization Act [FISMA] reporting.
 * Reduced costs for:
@@ -125,7 +125,7 @@ Here are some key E-PACS advantages to consider:
     * System security assessment and accreditation
 
 	
-The next section, [Aligning Facility Security Level (FSL) and Authentication]({{site.baseurl}}/pacs/alignfslandauth/), explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
+The next section, [Aligning Facility Security Level (FSL) and Authentication]({{site.baseurl}}/what/pacsguide/#assess-facility-security-level), explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
 
 
 <!-- from https://playbooks.idmanagement.gov/pacs/pacs/ -->
@@ -141,7 +141,7 @@ The FSL and authentication checklist below will help you:
 - [Determine Authentication Factors](#determine-authentication-factors)
 - [Select Authentication Mechanisms](#select-authentication-mechanisms)
 
-Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"} . This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
+Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)]({{site.baseurl}}/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"} . This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
 
 ## Assess Facility Security Level 
 
@@ -229,13 +229,13 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/pacs/glossary/#pki-auth){:target="_blank"}{:rel="noopener noreferrer"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/pacs/glossary/#pki-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/pacs/glossary/#sym-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/pacs/glossary/#bio){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/pacs/glossary/#occ-auth){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/glossary/#pki-auth){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/glossary/#pki-cak){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/glossary/#sym-cak){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/glossary/#bio){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/university/glossary/#occ-auth){:target="_blank"}{:rel="noopener noreferrer"} 
 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
@@ -250,6 +250,6 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 {% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA)." %}
 
-Visit the [PIV Guide]({{site.baseurl}}/piv/cert-trust/) to learn more about certificate trust.
+Visit the [PIV Guide]({{site.baseurl}}/what/pivdetails/#trust) to learn more about certificate trust.
 
-The next section, [Procurements]({{site.baseurl}}/pacs/procure/), describes the processes and resources needed for a PACS procurement.
+The next section, [Procurements]({{site.baseurl}}/who/procure/), describes the processes and resources needed for a PACS procurement.

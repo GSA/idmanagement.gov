@@ -1,22 +1,23 @@
 ---
 layout: page
-collection: governance
-title:  Governance and Compliance
-permalink: governance/
-sidenav: governance
+collection: who
+title: Program Managers
+permalink: /program-managers/
+sidenav: program
 sticky_sidenav: true
 
 subnav:
   - text: ICAM PM Guide
     href: '#icam-program-management-guide'
-  - text: FICAM Playbooks
-    href: '#ficam-playbooks'
+  - text: FICAM Architecture and Playbooks 
+    href: '#ficam-architecture-and-playbooks'
   - text: Announcements
     href: '#announcements'
   - text: Training
     href: '#training'
   - text: Related Information
     href: '#related-information'
+    
 ---
 
 The Federal ICAM (FICAM) program helps federal agencies plan and manage enterprise identity, credentialing, and access management (ICAM) through collaboration opportunities and guidance on IT policy, standards, implementation, and architecture. Most of the guidance and best practices found on this website are developed through interagency working groups.
@@ -41,8 +42,8 @@ These playbooks are hosted on Github and provide common policy and patterns to h
 ## Announcements
 
 - [FIPS 201 Evaluation Program Announcements](https://www.idmanagement.gov/sell/fipsannouncements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKI Announcements](/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKI System Notifications](/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   
 
 ## Training

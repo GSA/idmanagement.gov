@@ -1,7 +1,7 @@
 ## New Why secondary navigation
 why:
   - text: Introduction
-    href: /why/introduction/
+    href: /why/
   - text: Architecture
     href: /why/architecture/
   - text: History
@@ -10,33 +10,12 @@ why:
     href: /why/icam/
   - text: Goals and Objectivess
     href: /why/goals-and-objectives/
-  # - text: Goals and Objectives
-  #   href: /why/goals-and-objectives/
-  # - text: Services Framework
-  #   href: /why/service-framework/
-  # - text: Identity Management
-  #   href: /why/identity-management/
-  # - text: Credential Management
-  #   href: /why/credential-management/
-  # - text: Access Management
-  #   href: /why/access-management/
-  # - text: Federation
-  #   href: /why/federation/
-  # - text: Governance
-  #   href: /why/governance/
-  # - text: Use Cases
-  #   href: /why/use-cases/
-  # - text: System Component Examples
-  #   href: /why/system-component-examples/
-  # - text: Authoritative Sources
-  #   href: /why/authoritative-sources/
-  # - text: Federation Overview
-  #   href: /why/federation-overview/
+
 
 ## New What secondary navigation 
 what:
   - text: Introduction
-    href: /what/introduction/
+    href: /what/
   - text: Products
     href: /what/products/
   - text: Services
@@ -56,33 +35,14 @@ what:
   - text: PACS Products APL
     href: /approved-products-list-pacs-products/
   - text: Removed Products (RPL)
-    href: /what/removed-products-list/
-  # - text: Organizations that offer ICAM services
-  #   href: /what/organizations-that-offer-icam-services/
-  # - text: Personal Identity Verification (PIV) Cards
-  #   href: /what/personal-identity-verification-piv-cards/
-  # - text: User Guides
-  #   href: /what/user-guides/
-  # - text: Physical Access Control System (PACS) 
-  #   href: /what/physical-access-control-system-pacs/ 
-  # - text: GSA Multiple Award Schedule
-  #   href: /what/gsa-multiple-award-schedule/
-  # - text: Trust Services
-  #   href: /what/trust-services/
-  # - text: GSA ICAM Solutions and Shared Services
-  #   href: /what/gsa-icam-solutions-and-shared-services/
-  # - text: FIPS 201 Removed Product List
-  #   href: /what/fips-201-removed-product-list/
-  # - text: Credential Management & Overview
-  #   href: /what/credential-management-overview/
-  # - text: Access Management & Overview
-  #   href: /what/access-management-overview/
+    href: /removed-products-list/
+
 
 
 ## New how secondary navigation 
 how:
   - text: Introduction
-    href: /how/introduction/
+    href: /how/
   - text: Network Authentication
     href: /how/network-authentication/
   - text: Domain Controllers
@@ -103,37 +63,45 @@ how:
     href: /how/piv-athentication-macos/
   - text: Troubleshooting PIV Logon
     href: /how/troubleshooting/ 
-  # - text: Digitally Sign Email in Outlook
-  #   href: /how/digitally-sign-email-in-outlook/
-  # - text: Digitally Sign Federal Register Document
-  #   href: /how/digitally-sign-federal-register-document/
-  # - text: PIV Guide
-  #   href: /how/piv-guide/
-  # - text: Troubleshoot PIV Windows Logon
-  #   href: /how/troubleshoot-piv-windows-logon/
-  # - text: Troubleshoot Mac OS
-  #   href: /how/troubleshoot-mac-os/
-  # - text: PIV Enable Firefox
-  #   href: /how/piv-enable-firefox/
-  # - text: PIV Enable SSH
-  #   href: /how/piv-enable-ssh/
-  # - text: Tools
-  #   href: /how/tools/
+ # Added -- missed content   
+  - text: Introduction to PIV Engineering Guides
+    href: /how/engineering/ 
+  - text: Configure Firefox
+    href: /how/engineer-firefox/ 
+  - text: Enable SSH
+    href: /how/engineer-ssh/
+
+
+
 
 ## New who secondary navigation 
 who:
-  - text: New? Get Started
-    href: /who/new-get-started/
-  - text: Technical Leads and Team Members
-    href: /who/technical-leads-and-team-members/
-  - text: PACS
-    href: /who/pacs/
+  - text: Introduction
+    href: /who/
   - text: Vendors
-    href: /who/vendors/
+    href: /vendors/
   - text: Acquisition Professionals
-    href: /who/acquisition-professionals/
-  - text: Program Manager
-    href: /who/program-manager/
+    href: /acquisition-professionals/
+  - text: Program Managers
+    href: /program-managers/
+  - text: Trust Services
+    href: /who/trust-services/
+  - text: GSA ICAM Solutions
+    href: /who/icamsolutions/
+  - text: Procurements
+    href: /who/procure/
+  - text: Training
+    href: /who/train/
+  - text: Lessons Learned
+    href: /who/lessonslearned/
+  - text: Standards
+    href: /who/standards/
+  # - text: FIPS 201 Approved Product List - PIV Cards
+  #   href: /approved-products-list-piv/
+  # - text: FIPS 201 Approved Product List - PACS
+  #   href: /approved-products-list-pacs-products/
+  # - text: FIPS 201 Removed Product list
+  #   href: /removed-products-list/
 
 
 ## University: for FICAM (University) section
@@ -150,8 +118,10 @@ university:
     href: /university/resources/
   - text: Library
     href: /university/library/
-  - text: FAQs
-    href: /faq/
+  - text: Glossary
+    href: /university/glossary/
+  # - text: FAQs
+  #   href: /faq/
 
 ## FAQ: for webiste
 ## Resources: from FICAM University section
@@ -283,21 +253,7 @@ fpkiarchivedannouncements:
   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
     href: /fpki/announcements/common-g2-update/
 
-## Buy
-# buy:
-#   - text: Acquisition Overview
-#     href: /buy/
-#   - text: Trust Services
-#     href: /buy/trust-services/
-#   - text: GSA ICAM Solutions and Shared Services
-#     href: /buy/icamsolutions/
-#   - text: FIPS 201 Approved Product List - PIV Cards
-#     href: /approved-products-list-piv/
-#   - text: FIPS 201 Approved Product List - PACS
-#     href: /approved-products-list-pacs-products/
-#   - text: FIPS 201 Removed Product list
-#     href: /buy/removed-products-list/
-    
+
 ## Old Sell, changed to fips201
 fips201:
   - text: FIPS 201 Evaluation Program
@@ -307,16 +263,18 @@ fips201:
   - text: FIPS 201 Announcements
     href: /fips201/fipsannouncements/
     
-## Governance
-# governance:
-#   - text: Governance Overview
-#     href: /governance/
-#   - text: FICAM Governance
-#     href: /governance/ficam/
-#   - text: FPKI Policy and Compliance Audit
-#     href: /governance/fpkiaudit/
-#   - text: FPKI Archived Documents
-#     href: /governance/fpkiarchive/
+## Old Governance sidenav
+## New Program Managers sidenav
+program:
+  - text: Introduction
+    href: /program-managers/
+  - text: FICAM Governance
+    href: /who/ficam/
+  - text: FPKI Policy and Compliance Audit
+    href: /who/fpkiaudit/
+  - text: FPKI Archived Documents
+    href: /fpkiarchive/
+
     
 ## Main Site
 policy:

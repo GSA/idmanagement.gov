@@ -2,7 +2,7 @@
 layout: page
 collection: what
 title: What is FICAM?
-permalink: /what/introduction/
+permalink: /what/
 sidenav: what
 sticky_sidenav: true
 

@@ -38,11 +38,11 @@ To view your certificate information:
 
 | Operating System     | Module   | Steps |
 | -------------             |----|----|
-| Microsoft   | Internet Explorer  | Open _Internet Explorer Browser_ -> _Tools Wheel_ or Alt+X) -> _Internet Options_ -> _Content Tab_ -> _Certificates Button_ -> _Personal Tab_  |
-| Microsoft       | Microsoft Management Console (MMC) and Certificate Snap-in  |  Open _Microsoft Management Console_ -> _File_ -> _Add/Remove Snap-In_ -> _Certificates Snap-in_ -> _Add_ -> _My user account_ -> _Finish_ -> Expand _Certificates - Current User_ -> _Personal_ -> _Certificates_   |
-| Any   | Chrome Browser  | Open _Chrome Browser_ -> _Settings_ -> _Show Advanced Settings_ -> _Manage Certificates_ (_Manage HTTPS/SSL Certificates and Settings_)  -> _Personal_ tab  |
-| Any   | Firefox Browser  | Open _Firefox Browser_ -> _Settings_ wheel -> _Privacy & Security_ -> _Security_ -> _Certificates_ > _View Certificates_ button -> _Certificates Manager_ -> _Your Certificates Tab_
-| macOS X   | Keychain  | Open _Applications_ -> _Utilities_ -> _Keychain Access_ -> Select _Login_ -> _Categories_ -> _My Certificates_  |
+| Microsoft   | Internet Explorer  | Open _Internet Explorer Browser_ > _Tools Wheel_ or Alt+X) > _Internet Options_ > _Content Tab_ > _Certificates Button_ > _Personal Tab_  |
+| Microsoft       | Microsoft Management Console (MMC) and Certificate Snap-in  |  Open _Microsoft Management Console_ > _File_ > _Add/Remove Snap-In_ > _Certificates Snap-in_ > _Add_ > _My user account_ > _Finish_ > Expand _Certificates - Current User_ > _Personal_ > _Certificates_   |
+| Any   | Chrome Browser  | Open _Chrome Browser_ > _Settings_ > _Show Advanced Settings_ > _Manage Certificates_ (_Manage HTTPS/SSL Certificates and Settings_)  > _Personal_ tab  |
+| Any   | Firefox Browser  | Open _Firefox Browser_ > _Settings_ wheel > _Privacy & Security_ > _Security_ > _Certificates_ > _View Certificates_ button > _Certificates Manager_ > _Your Certificates Tab_
+| macOS X   | Keychain  | Open _Applications_ > _Utilities_ > _Keychain Access_ > Select _Login_ > _Categories_ > _My Certificates_  |
 
 {% include alert-info.html heading = "View" content="You may see many certificates.  To open and view the certificate details, double-click on any certificate." %}
 
@@ -60,7 +60,7 @@ Viewing the certificate information on your PIV credential may be interesting if
 
 Within the U.S. federal government, the certificate and PIV credential information is governed by standards, policies, and implementation-specific choices (options) across all agency credential providers.
 
-Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [PIV Overview](../basics/) to view the four pairs and purposes.
+Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [PIV Overview](/what/services/#physical-features) to view the four pairs and purposes.
 
 The table below outlines the general information for the PIV credential certificates, certificate extensions, and design considerations. 
 
@@ -72,7 +72,7 @@ The table below outlines the general information for the PIV credential certific
 | Card Authentication | Always | Digital Signature | id-PIV-cardAuth |  Name = FASC-N; <br>uniformResourceIdentifier = UUID|   Card Authentication must be included in new and replacement PIV credentials issued after August 2014; it is not expected that **all** PIV credentials will have Card Authentication certificates until September 2019. The Card UUID may also commonly be referred to as the GUID. |
 | Digital Signature | Sometimes | Digital Signature, Non-Repudiation | Specific EKUs are required for certificates issued after June 2019 | rfc822name = email address | Email address is **not** required by policy. Email address may be multivalued attributes and include email aliases. |
 | Encryption |Sometimes | Key Encipherment | Specific EKUs are required for certificates issued after June 2019 | rfc822name = email address | Email address is **not** required by policy. Encryption certificates that represent available, retired encryption key pairs may exist, depending on the PIV issuer. |
-| PIV Content Signer  | Always  | Digital Signature  | id-PIV-content-signing  | N/A  | The PIV content signer ensures the integrity of the digital information stored on the card. Physical Access Control Systems (PACS) are the primary relying party for these certificates. This certificate is unavailable in most logical trust stores, but users can leverage the [Card Conformance Tool (CCT](https://playbooks.idmanagement.gov/fpki/tools/cct/) if they would like to extract and view the PIV content signing certificate.  |
+| PIV Content Signer  | Always  | Digital Signature  | id-PIV-content-signing  | N/A  | The PIV content signer ensures the integrity of the digital information stored on the card. Physical Access Control Systems (PACS) are the primary relying party for these certificates. This certificate is unavailable in most logical trust stores, but users can leverage the [Card Conformance Tool (CCT]({{site.baseurl}}/fpki/tools/cct/) if they would like to extract and view the PIV content signing certificate.  |
 
 **Additional useful information:**
 
@@ -82,7 +82,7 @@ The table below outlines the general information for the PIV credential certific
 -   There has been testing in some infrastructures to migrate to Elliptic Curve Cryptography (ECC), but there are no ECC certificates for users in production as of the date of this guide.
 -   There has been testing in some infrastructures to migrate to 3072-bit (RSA) certificates, but there are no 3072-bit certificates for users in production as of the date of this guide.
 
-In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [FPKI Policy and Compliance Audit](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} page.
+In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [FPKI Policy and Compliance Audit]({{site.baseurl}}/who/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} page.
 
 <!-- from  https://playbooks.idmanagement.gov/piv/identifiers/ -->
 
@@ -92,7 +92,7 @@ In applications including network domains, you will associate the PIV credential
 
 {% include alert-info.html content="Associating a credential with an account is called account linking." %}
 
-_Identifiers_ are the values in credentials that are used for account linking.  We focus on the **PIV Authentication** certificate and identifiers in this section to help you understand the options and design and implement solutions for using PIV to authenticate to networks and applications. For more information on account linking, see [Account Linking](../network/account/){:target="_blank"}{:rel="noopener noreferrer"} .
+_Identifiers_ are the values in credentials that are used for account linking.  We focus on the **PIV Authentication** certificate and identifiers in this section to help you understand the options and design and implement solutions for using PIV to authenticate to networks and applications. For more information on account linking, see [Account Linking]({{site.baseurl}}/how/account-linking/){:target="_blank"}{:rel="noopener noreferrer"} .
 
 The table below outlines identifiers available in the PIV Authentication certificate and design considerations for implementations.
 
@@ -103,7 +103,7 @@ The table below outlines identifiers available in the PIV Authentication certifi
 | Issuer and Serial Number   | Unique for every person and certificate; value changes when a user receives a new, replaced, or updated PIV credential. |
 | Subject Key Identifier  | Unique for every person and certificate; value changes when a user receives a new, replaced, or updated PIV credential. |
 | SHA-1 Hash of Public Key  | Value changes when a user receives a new, replaced, or updated PIV credential; commonly referred to as the _thumbprint_ of the certificate. |
-| Federal Agency Smart Card Number (FASC-N)   | It is not recommended to use the FASC-N as an identifier; unique for every credential _only within the U.S. federal Executive Branch agencies_; no uniqueness for PIV credentials issued by Legislative or Judicial Branch agencies, state, local, tribal, territories, partners, or any credentials certified as PIV-Interoperable or _PIV-I_; value changes when a user receives a new, replaced, or updated PIV credential; legacy definition and usage supported building access control systems as outlined in [Technical Implementation Guidance: Smart Card Enabled Physical Access Control Systems)](https://www.idmanagement.gov/docs/pacs-tig-scepacs.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, 2005). |
+| Federal Agency Smart Card Number (FASC-N)   | It is not recommended to use the FASC-N as an identifier; unique for every credential _only within the U.S. federal Executive Branch agencies_; no uniqueness for PIV credentials issued by Legislative or Judicial Branch agencies, state, local, tribal, territories, partners, or any credentials certified as PIV-Interoperable or _PIV-I_; value changes when a user receives a new, replaced, or updated PIV credential; legacy definition and usage supported building access control systems as outlined in [Technical Implementation Guidance: Smart Card Enabled Physical Access Control Systems)]({{site.baseurl}}/docs/pacs-tig-scepacs.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, 2005). |
 | Card Universal Unique Identifier (UUID)      |   Unique for every person and credential; value changes when a user receives a new, replaced, or updated PIV credential; Card UUID value is only required to be present for new or replacement PIV credentials issued after August 2014; may also commonly be referred to as the Global Unique Identifier (GUID). |
 | User Principal Name in _Subject Alternate Name_   |  Not required to be included in all PIV Authentication certificates; not recommended for use as an identifier to achieve full interoperability for networks or applications; commonly used for enterprise smart card logon / network authentication in _legacy_ implementations. |
 
@@ -126,7 +126,7 @@ The full process of proving identity when issuing the certificates, auditing the
 
 For the federal government Executive Branch agencies, there is one root CA named _Federal Common Policy Certificate Authority G2 (FCPCAG2 or COMMON)_ and there are dozens of intermediate CAs.  The federal government has also established trust with other CAs that serve business communities, state and local government communities, and international government communities.
 
-The participating CAs are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
+The participating CAs are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*]({{site.baseurl}}/who/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
 
 The [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"} is an interactive chart of the Federal Public Key Infrastructure CAs, including cross-certified business communities.
 
@@ -177,13 +177,13 @@ For a portion of your implementations such as network authentication, the _revoc
 
 The federal government recently deployed the Federal Common Policy CA G2 (FCPCAG2), a new Federal Public Key Infrastructure (FPKI) root CA. As the existing Federal Common Policy CA reaches the end of its planned service life, FCPCAG2 will roll out incrementally and serve as the new trust anchor for the Federal PKI. Below, you’ll find important dates and steps for a successful operational transition to the FCPCAG2 trust anchor.
 
-For instructions on how to download the new root and intermediate certificates, go to [the FPKI guide on the Federal Common Policy G2 Update](https://fpki.idmanagement.gov/common/obtain-and-verify/){:target="_blank"}{:rel="noopener noreferrer"}
+For instructions on how to download the new root and intermediate certificates, go to [the FPKI guide on the Federal Common Policy G2 Update]({{site.baseurl}}/fpki/){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Download Any Additional Intermediate Certification Authority Certificates
 
 You can contact your agency's information security teams for help with additional intermediate certificates, or you can find the intermediate certificates by using information in your PIV certificates directly.
 
-- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate, go to the [PIV Details](../details){:target="_blank"}{:rel="noopener noreferrer"}
+- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate, go to the [PIV Details]({{site.baseurl}}/what/pivdetails/){:target="_blank"}{:rel="noopener noreferrer"}
 - In the **Authority Information Access (AIA)** extension, there is a URL (http://) that references a file with a .p7b or .p7c extension.
 - Download the file, open it, and view the intermediate CA certificates.
 - Repeat the process using the AIA extension of the intermediate CA certificates until the final reference finds an intermediate CA certificate that is issued and signed by COMMON.

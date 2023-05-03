@@ -47,7 +47,7 @@ primary_navigation:
   - name: Why FICAM?
     children:
       - name: Introduction
-        url: /why/introduction/
+        url: /why/
       - name: Architecture
         url: /why/architecture/
       - name: History
@@ -57,30 +57,11 @@ primary_navigation:
       - name: Goals and Objectives
         url: /why/goals-and-objectives/
 
-      # - name: Identity Management
-      #   url: /why/identity-management/
-      # - name: Credential Management
-      #   url: /why/credential-management/
-      # - name: Access Management
-      #   url: /why/access-management/
-      # - name: Federation
-      #   url: /why/federation/
-      # - name: Governance
-      #   url: /why/governance/
-      # - name: Use Cases
-      #   url: /why/use-cases/
-      # - name: System Component Examples
-      #   url: /why/system-component-examples/
-      # - name: Authoritative Sources
-      #   url: /why/authoritative-sources/
-      # - name: Federation Overview
-      #   url: /why/federation-overview/
-
 # What is FICAM top level menu with dropdowns
   - name: What is FICAM?
     children: 
       - name: Introduction
-        url: /what/introduction/
+        url: /what/
       - name: Products
         url: /what/products/
       - name: Services
@@ -91,32 +72,12 @@ primary_navigation:
         url: /what/servicesframework/
       - name: Use Cases
         url: /what/usecases/
-      # - name: Organizations that offer ICAM services
-      #   url: /what/organizations-that-offer-icam-services/
-      # - name: Personal Identity Verification (PIV) Cards
-      #   url: /what/personal-identity-verification-piv-cards/
-      # - name: User Guides
-      #   url: /what/user-guides/
-      # - name: Physical Access Control System (PACS) 
-      #   url: /what/physical-access-control-system-pacs/ 
-      # - name: GSA Multiple Award Schedule
-      #   url: /what/gsa-multiple-award-schedule/
-      # - name: Trust Services
-      #   url: /what/trust-services/
-      # - name: GSA ICAM Solutions and Shared Services
-      #   url: /what/gsa-icam-solutions-and-shared-services/
-      # - name: FIPS 201 Removed Product List
-      #   url: /what/fips-201-removed-product-list/
-      # - name: Credential Management & Overview
-      #   url: /what/credential-management-overview/
-      # - name: Access Management & Overview
-      #   url: /what/access-management-overview/
 
 # How to use FICAM top level menu with dropdowns
   - name: How to use FICAM
     children:
       - name: Introduction
-        url: /how/introduction/
+        url: /how/
       - name: Network Authentication
         url: /how/network-authentication/
       - name: Domain Controllers
@@ -143,19 +104,32 @@ primary_navigation:
 # Who FICAM is For? top level menu with dropdowns
   - name: Who is FICAM For?
     children:
-      - name: New? Get Started
-        url: /who/new-get-started/
-      - name: Technical Leads and Team Members
-        url: /who/technical-leads-and-team-members/
-      - name: PACS
-        url: /who/pacs/
+      - name: Introduction
+        url: /who/
       - name: Vendors
-        url: /who/vendors/
+        url: /vendors/
       - name: Acquisition Professionals
-        url: /who/acquisition-professionals/
-      - name: Program Manager
-        url: /who/program-manager/
+        url: /acquisition-professionals/
+      - name: Program Managers
+        url: /program-managers/
+      - name: Trust Services
+        url: /who/trust-services/
+      - name: GSA ICAM Solutions
+        url: /who/icamsolutions/
+      - name: Procurements
+        url: /who/procure/
+      - name: Training
+        url: /who/train/
+      - name: Lessons Learned
+        url: /who/lessonslearned/
+      - name: Standards
+        url: /who/standards/
+      # - name: Technical Leads and Team Members
+      #   url: /who/technical-leads-and-team-members/
+      # - name: PACS
+      #   url: /who/pacs/
   
+
   # FICAM University page
   - name: University
     description: University

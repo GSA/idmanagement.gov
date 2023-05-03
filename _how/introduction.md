@@ -2,7 +2,7 @@
 layout: page
 collection: how
 title: How to use FICAM
-permalink: /how/introduction/
+permalink: /how/
 sticky_sidenav: true
 sidenav: how
 

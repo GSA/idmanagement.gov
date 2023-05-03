@@ -38,12 +38,12 @@ The following organizations offer Identity, Credential, and Access Management se
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [FPKI Shared Service Providers]({{site.baseurl}}/buy/trust-services#government-identity-services) – Digital certificates for Federal agencies.
+- [FPKI Shared Service Providers]({{site.baseurl}}/who/trust-services/#government-identity-services) – Digital certificates for Federal agencies.
 
 ### Business Identity Services
 
-- [FPKI Individual Certificate Providers]({{site.baseurl}}/buy/trust-services#business-identity-services) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
-- [Trust Services for Businesses]({{site.baseurl}}/buy/trust-services#trust-and-auditing-of-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
+- [FPKI Individual Certificate Providers]({{site.baseurl}}/who/trust-services/) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [Trust Services for Businesses]({{site.baseurl}}/who/trust-services/#business-identity-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
 ### FedRAMP
 
@@ -54,7 +54,7 @@ The following organizations offer Identity, Credential, and Access Management se
 
 ### PACS Implementer Self-Assessment Toolkit
 
-The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
+The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/who/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 
@@ -98,9 +98,9 @@ The Card Authentication, PIV Authentication, Digital Signature, and Encryption a
 
 <!-- from https://playbooks.idmanagement.gov/piv/ -->
 
-These **PIV Guides** are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.
+These **PIV Guides** are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions]({{site.baseurl}}/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.
 
-The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide]({{site.baseurl}}/pacs/){:target="_blank"}{:rel="noopener noreferrer"}.
+The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide]({{site.baseurl}}/what/pacsguide/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 If you cannot find a particular topic, it may still be in development. Review the [Issues]({{ site.repourl }}/issues){:target="_blank"}{:rel="noopener noreferrer"} for questions and lessons that are in progress. Create a new [Issue]({{ site.repourl }}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to ask a question or share information with others.  
 

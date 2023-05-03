@@ -57,7 +57,7 @@ Here are some key E-PACS advantages to consider:
 * One employee and contractor enrollment system that connects multiple enrollment locations.
 * One credential registration and provisioning point.
 * One enterprise-wide system for administrators to modify or terminate access privileges.
-* One enterprise-wide system that regularly polls for [Certificate Revocation List]({{site.baseurl}}/piv/cert-trust/#revocation){:target="_blank"} (CRL) updates and maintains revocation data.
+* One enterprise-wide system that regularly polls for [Certificate Revocation List]({{site.baseurl}}/what/pivdetails/#certificate-revocation){:target="_blank"} (CRL) updates and maintains revocation data.
 * Reduced costs for system management, such as patching, server system administration, and software updates.
 * Reduced costs for reporting, such as Federal Information Security Modernization Act [FISMA] reporting.
 * Reduced costs for:
@@ -65,7 +65,7 @@ Here are some key E-PACS advantages to consider:
     * System security assessment and accreditation
 
 	
-The next section, [Aligning Facility Security Level (FSL) and Authentication]({{site.baseurl}}/pacs/alignfslandauth/), explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
+The next section, [Aligning Facility Security Level (FSL) and Authentication]({{site.baseurl}}/what/pacsguide/#assess-facility-security-level), explains the processes needed to prepare for a PACS deployment and offers more detail related to the FIPS 201-approved PIV authentication mechanisms.
 
 
 <!-- from https://playbooks.idmanagement.gov/pacs/alignfslandauth/ -->
@@ -81,7 +81,7 @@ The FSL and authentication checklist below will help you:
 - [Determine Authentication Factors](#determine-authentication-factors)
 - [Select Authentication Mechanisms](#select-authentication-mechanisms)
 
-Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"} . This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
+Additional guidance regarding aligning FSL to PACS authentication factors can be found in the [Security Control Overlay for Electronic Physical Access Control Systems (ePACS)]({{site.baseurl}}/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"} . This overlay provides additional guidance on configuring and securing PACS systems in accordance with relevant guidance and in support of the NIST Risk Management Framework (RMF).
 
 ## Assess Facility Security Level 
 
@@ -169,13 +169,13 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/pacs/glossary/#pki-auth){:target="_blank"}{:rel="noopener noreferrer"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/pacs/glossary/#pki-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/pacs/glossary/#sym-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/pacs/glossary/#bio){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/glossary/#pki-auth){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/glossary/#pki-cak){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/glossary/#sym-cak){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/glossary/#bio){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
     - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/pacs/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/pacs/glossary/#occ-auth){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/university/glossary/#occ-auth){:target="_blank"}{:rel="noopener noreferrer"} 
 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
@@ -190,6 +190,6 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 {% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA)." %}
 
-Visit the [PIV Guide]({{site.baseurl}}/piv/cert-trust/) to learn more about certificate trust.
+Visit the [PIV Guide]({{site.baseurl}}/what/pivdetails/#trust) to learn more about certificate trust.
 
-The next section, [Procurements]({{site.baseurl}}/pacs/procure/), describes the processes and resources needed for a PACS procurement.
+The next section, [Procurements]({{site.baseurl}}/who/procure/), describes the processes and resources needed for a PACS procurement.

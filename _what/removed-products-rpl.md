@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Removed Products List
-permalink: /what/removed-products-list/
+permalink: /removed-products-list/
 collection: what
 sticky_sidenav: true
 sidenav: what

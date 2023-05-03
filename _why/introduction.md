@@ -2,7 +2,7 @@
 layout: page
 collection: why
 title:  Why FICAM?
-permalink: /why/introduction/
+permalink: /why/
 sidenav: why
 sticky_sidenav: true
 
