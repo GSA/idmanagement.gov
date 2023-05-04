@@ -38,8 +38,8 @@ PACS project teams consist of both agency employees and contractors. Teams inclu
 
 | Role | Recommended Training |
 |:------|:-------------| 
-| IT Architects| Must be knowledgeable about the [GSA PACS APL](https://www.idmanagement.gov/buy/#products){:target="_blank"}{:rel="noopener noreferrer"} and the manufacturers' solutions for PACS. Should be knowledgeable about federal government and agency-specific policies, standards, and guidance documents to make design recommendations related to a PACS implementation. In order to implement a PACS solution, Architects must possess a current [Certified System Engineer ICAM PACS (CSEIP) certification](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"}. There are no other similar, federally recognized certifications as of May 24, 2022.|
-| Engineers| May hold a [CSEIP](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"} certification. There are no other similar, federally recognized certifications as of May 24, 2022. Engineers may optionally complete PACS product manufacturers' training (for example, PACS APL products) related to the PACS implementation. Should be knowledgeable about federal government and agency-specific policies, standards, and guidance documents related to enterprise networks and an PACS implementation. |
+| IT Architects| Must be knowledgeable about the [GSA PACS APL]({{site.baseurl}}/acquisition-professionals/#products){:target="_blank"}{:rel="noopener noreferrer"} and the manufacturers' solutions for PACS. Should be knowledgeable about federal government and agency-specific policies, standards, and guidance documents to make design recommendations related to PACS implementation. In order to implement a PACS solution, IT Architects must possess a current [Certified System Engineer ICAM PACS (CSEIP) certification](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"}. There are no other similar, federally recognized certifications as of May 24, 2022.|
+| Engineers| May hold a [CSEIP](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"} certification. There are no other similar, federally recognized certifications as of May 24, 2022. Engineers may optionally complete PACS product manufacturers' training (for example, PACS APL products) related to the PACS implementation. Should be knowledgeable about federal government and agency-specific policies, standards, and guidance documents related to enterprise networks and PACS implementation. |
 | Technicians | Should complete PACS product manufacturers' training (i.e., PACS APL products) related to the PACS solution implementation.| 
 | Operators | Should complete tailored training in federal government policies and standards related to PACS. Completing PACS product manufacturers' (i.e., PACS APL products) certification related to the PACS implementation is recommended.|
 
@@ -53,7 +53,7 @@ PACS project teams consist of both agency employees and contractors. Teams inclu
 The [Interagency Security Committee](https://www.dhs.gov/interagency-security-committee){:target="_blank"}{:rel="noopener noreferrer"} developed a series of free, self-paced, [online training courses](https://www.dhs.gov/interagency-security-committee-training){:target="_blank"}{:rel="noopener noreferrer"} that provide an overview of facility security standards, processes, and practices.
 
 ### Equipment Manufacturers
-[GSA PACS APL](https://www.idmanagement.gov/buy/#products){:target="_blank"}{:rel="noopener noreferrer"} PACS manufacturers whose products are listed on the GSA PACS APL offer product-specific courses for Operators and Technicians directly or through authorized service providers. Operators and Technicians may obtain certifications for completing some series of courses.
+[GSA PACS APL]({{site.baseurl}}/acquisition-professionals/#products){:target="_blank"}{:rel="noopener noreferrer"} PACS manufacturers whose products are listed on the GSA PACS APL offer product-specific courses for Operators and Technicians directly or through authorized service providers. Operators and Technicians may obtain certifications for completing some series of courses.
 
 >**Note:** Manufacturer training may not address unique operational requirements or site-specific configurations, so authorized service providers should conduct this training:  [GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}. 
 
@@ -61,9 +61,9 @@ The [Interagency Security Committee](https://www.dhs.gov/interagency-security-co
 Authorized service providers offer manufacturer training for installing, configuring, and maintaining PACSs: [GSA Multiple Award Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}. This training can be tailored to your agency, facility, implementation features, operational policies, and procedures. This training should be planned during the Procurements phase. 
 
 ### Industry Certifications
-Industry certifications are vendor-neutral and standards-based. GSA requires that all work performed on approved PACS for GSA-managed facilities must be designed and installed by a Certified System Engineer for ICAM PACS (CSEIP).  The [CSEIP Program](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"} trains those who implement solutions related to OMB M-05-24 and OMB M-19-17.
+Industry certifications are vendor neutral and standards based. GSA requires that all work performed on approved PACS for GSA-managed facilities must be designed and installed by a Certified System Engineer for ICAM PACS (CSEIP).  The [CSEIP Program](https://www.securetechalliance.org/activities-certified-system-engineer-icam-pacs-training-and-certification-program/){:target="_blank"}{:rel="noopener noreferrer"} trains those who implement solutions related to OMB M-05-24 and OMB M-19-17.
 
-Additional certification opportunities are offered by commercial vendors.
+Commercial vendors offer additional certification opportunities.
 
 ### GSA PACS Reverse Industry Day Conference (2018)
 
@@ -72,4 +72,4 @@ In 2018, GSA hosted a _PACS Reverse Industry Day_ conference that featured gover
 - [Morning Session](https://www.youtube.com/watch?v=r9X1XtrLjMg){:target="_blank"}{:rel="noopener noreferrer"}
 - [Afternoon Session](https://www.youtube.com/watch?v=bS8jdkW_WUI){:target="_blank"}{:rel="noopener noreferrer"}
 
-The next section, [Lessons Learned]({{site.baseurl}}/pacs/lessonslearned/), shares lessons learned from various federal agenices on planning, procurements, operations, and training.
+The next section, [Lessons Learned]({{site.baseurl}}/who/lessonslearned/), shares lessons learned from various federal agencies on planning, procurement, operations, and training.

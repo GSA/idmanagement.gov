@@ -58,7 +58,7 @@ For our use, this complex process is simplified into the following workflows:
     <p>The PIV is damaged.</p>
     <h3>Diagnosis</h3>
     <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV may need to be replaced.</p>
-    <p>To confirm that the card is functional, you can use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="https://playbooks.idmanagement.gov/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
+    <p>To confirm that the card is functional, you can use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="{{site.baseurl}}/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
     <p><strong>On the client:</strong></p>
     <ol type="1">
       <li>Log in to Windows using a password.</li>
@@ -160,9 +160,9 @@ For our use, this complex process is simplified into the following workflows:
   <div id="m-a4" class="usa-accordion__content usa-prose">
     <p>After the domain controller’s authentication certificate is used to make a secure link from the workstation to the domain controller, the certificate data for the user’s smart card is sent to the domain controller for validation. The domain controller does the following to validate the credential:</p>
     <ol type="1">
-      <li>The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the <a href="https://playbooks.idmanagement.gov/piv/network/account/#transitioning-from-upn-mapping-to-altsecurityidentities-mapping" target="_blank" rel="noopener noreferrer">Account Linking Playbook</a></li>
-      <li>The certificate is sent to the Microsoft Crypto-API (CAPI) service running on the domain controller for path discovery and validation. CAPI performs basic certificate checks through <a href="https://playbooks.idmanagement.gov/fpki/pdval/" target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
-      <li>The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a></li>
+      <li>The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the <a href="{{site.baseurl}}/how/account-linking/#transitioning-from-upn-mapping-to-altsecurityidentities-mapping" target="_blank" rel="noopener noreferrer">Account Linking Playbook</a></li>
+      <li>The certificate is sent to the Microsoft Crypto-API (CAPI) service running on the domain controller for path discovery and validation. CAPI performs basic certificate checks through <a href="{{site.baseurl}}/fpki/pdval/" target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
+      <li>The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the <a href="{{site.baseurl}}/how/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a></li>
     </ol>
     <p><strong>Note:</strong> Certificate validation of the PIV authentication certificate for smart card logon only occurs on the individual domain controller processing the logon request. The client computer does not check the validity of the logon certificate. Other applications outside of Windows logon may perform certificate validation locally, so it may still be a good idea to have a valid path installed on your organization’s client computers. if you have multiple logon servers in your environment, only the one responding to the individual logon request performs validation. Therefore, it is important to maintain a consistent configuration across your domain controllers.</p>
     <p>Use the information below to troubleshoot additional symptoms encountered after the PIN is entered, but before logon occurs.</p>
@@ -231,7 +231,7 @@ For our use, this complex process is simplified into the following workflows:
     <ol type="1">
       <li>On the domain controller, work through any path validation issues identified in the above steps and examples. Keep in mind that that path building comes before validation and that a path is built from the bottom up. In this instance, the PIV authentication certificate chains to a trust anchor, such as Federal Common Policy G2. <strong>Ensure that the correct trust anchor for your organization’s PIV credentials is installed on every domain controller.</strong> If you also trust certificates from other agencies and organizations, the appropriate roots and cross-certificates may need to be installed to complete the path. </li>
       <li>Find expired and revoked certificates that may be installed in your domain controller certificate store and delete them as appropriate. In a Windows environment, unexpected errors often result if you have duplicates of a certificate installed in a given store or have accidently installed an intermediate CA in the trusted root store or vice versa. </li>
-      <li>Lastly, you will need to allow outbound access over port TCP 80 from each domain controller to each of the CRL, OCSP, and AIA distribution points listed in the certificates in the path. For more information, see <a href="https://playbooks.idmanagement.gov/fpki/pdval/" target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
+      <li>Lastly, you will need to allow outbound access over port TCP 80 from each domain controller to each of the CRL, OCSP, and AIA distribution points listed in the certificates in the path. For more information, see <a href="{{site.baseurl}}/fpki/pdval/" target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
     </ol>
     <h2>Possible Cause 2 - CA Not in the NTAuth Store</h2>
     <ol type="1">
@@ -242,7 +242,7 @@ For our use, this complex process is simplified into the following workflows:
       <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event30.png" alt="A screenshot of an Operational window labeled Event 30, CAPI2. Near the top of the screenshot, a row labeled Error is highlighted with yellow. Elsewhere in the screenshot, the subjectName and user name and the Result details are highlighted with yellow." width="766" height="652">
     </ol>
     <h3>Resolution</h3>
-    <p>Follow the steps in the <a href="https://playbooks.idmanagement.gov/piv/network/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
+    <p>Follow the steps in the <a href="{{site.baseurl}}/how/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
      <hr />    
     <h2>Symptom</h2>
     <p>During smart card logon attempt, the following error is displayed on the logon screen:  <br><strong>The system could not log you on. Your credentials could not be verified.</strong></p>
@@ -258,7 +258,7 @@ For our use, this complex process is simplified into the following workflows:
     <h2>Possible Cause 2</h2>
     <p>The identifiers listed in the Smart Card Logon certificate on the card cannot be matched to an AD account.</p>
     <h3>Resolution 2</h3>
-    <p>Follow the suggestions in the <a href="https://playbooks.idmanagement.gov/piv/network/account/" target="_blank" rel="noopener noreferrer">Account Linking Playbook</a> to ensure that the card identifier can be linked to the AD account. This may require User Principal Name (UPN) mapping, adding alternate security identifiers added to the AD record, or domain hinting.</p> 
+    <p>Follow the suggestions in the <a href="{{site.baseurl}}/how/account-linking/" target="_blank" rel="noopener noreferrer">Account Linking Playbook</a> to ensure that the card identifier can be linked to the AD account. This may require User Principal Name (UPN) mapping, adding alternate security identifiers added to the AD record, or domain hinting.</p> 
     <br>
     <a href="#logon-process-overview">Back to Process Overview</a>
   </div>

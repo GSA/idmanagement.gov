@@ -33,11 +33,11 @@ OMB Circular A-130, ["Managing Information as a Strategic Resource"](https://oba
 
 OMB M-05-24, ["Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors"](https://georgewbush-whitehouse.archives.gov/omb/memoranda/fy2005/m05-24.pdf?msclkid=c536f001c7f811ecaed4fea27a3c8d47){:target="_blank"}{:rel="noopener noreferrer"}, August 5, 2005
 
-OMB M-19-17, [Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, May 21, 2019
+OMB M-19-17, [Enabling Mission Delivery Through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}, May 21, 2019
 
 E.O. 13800, ["Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure"](https://www.cio.gov/2018/05/30/it-modernization/){:target="_blank"}{:rel="noopener noreferrer"}, May 11, 2017
 
-E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cybersecurity and Critical Infrastructure Security and Resilience")](https://www.dhs.gov/publication/eo-13636-ppd-21-fact-sheet){:target="_blank"}{:rel="noopener noreferrer"}, March 2013
+E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersecurity and Critical Infrastructure Security and Resilience")](https://www.dhs.gov/publication/eo-13636-ppd-21-fact-sheet){:target="_blank"}{:rel="noopener noreferrer"}, December 2020
 
 ## Regulations
 
@@ -75,15 +75,15 @@ E.O. 13636 and PPD-21 - ["DHS Factsheet: Improving Critical Infrastructure Cyber
 
 [_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf){:target="_blank"}{:rel="noopener noreferrer"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018
 
-[_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_](https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014
+[_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_]({{site.baseurl}}/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014
 
-[_Personal Identity Verification Interoperability for Issuers_](https://www.idmanagement.gov/docs/archived/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017
+[_Personal Identity Verification Interoperability for Issuers_]({{site.baseurl}}/docs/archived/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}, ISC, 2nd Edition, November 2016
 
-[_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)_](https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 1.0, December 2020
+[_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for Electronic Physical Access Control Systems (ePACS)_]({{site.baseurl}}/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 1.0, December 2020
 
-[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*](https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 3.0, February 26, 2021
+[*Federal Public Key Infrastructure (FPKI) Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems*]({{site.baseurl}}/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 3.0, February 26, 2021
 
 ## Other Relevant Publications
 

@@ -45,7 +45,7 @@ This page provides some tips for using a local certification authority (CA) to i
 ## Install CA Role
 
   1. Log into the **CA server** as a member of the **Enterprise Administrators** group.
-  2. Open the **Server Manager** and click on **Manage -&gt; Add Roles and Features**.
+  2. Open the **Server Manager** and click on **Manage > Add Roles and Features**.
   3. Proceed through the **Add Roles and Features Wizard** options. Choose the following:<br/>
      _Server Roles:_ **_Active Directory Certificate Services_**<br/>
      _AD CS Roles Services:_ **_Certification Authority_**<br/>

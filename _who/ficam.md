@@ -76,19 +76,19 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 ### Activities
 - **Approve Policies and Practices** – Approve Federal Bridge Certification Authority (FBCA) and Federal Common Policy Certification Authority Certificate Policies (CPs), including revisions; approve FPKI Trust Infrastructure Certification Practice Statements.
 - **Approve Entity Cross-Certification** – Establish and administer criteria and methodology for cross-certification with the FBCA; approve cross-certifications and execute Memoranda of Agreement (MOAs); maintain the FPKI Certification Applicant Requirements and the Common Policy CPS Evaluation Matrix.
-- [**Maintain Compliance**](../fpkiaudit/) – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
+- [**Maintain Compliance**]({{site.baseurl}}/who/fpkiaudit/) – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
 - **Agreement with FPKI Management Authority** – Oversee the FPKI Management Authority (FPKIMA) to issue and revoke cross-certificates, ensure adherence to the FPKI CPs, and provide documentation to be archived.
 - **Interoperability Practices** – Coordinate legal, policy, technical, and business practices and issues related to FPKI Trust Infrastructure.
 
 ### Membership and Meetings
 
-Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter](../../docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
+Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
 
 The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpki at gsa.gov to participate in the FPKIPA or its working groups.
 
 ## Federal Public Key Infrastructure Management Authority
 
-[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
+[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust]({{site.baseurl}}/docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
 
 ### Activities
 - **Manage digital certificate policies and standards** to ensure secure physical and logical access, document sharing, and communications across federal agencies and between external business partners.

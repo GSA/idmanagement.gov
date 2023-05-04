@@ -19,35 +19,35 @@ subnav:
 
 When a user authenticates to your network and you've enabled Single Sign-on to applications inside your network domain, you need to know which of these authenticators was used: 
 
-- A username and password 
+- A username and password
 - A PIV credential
 - An alternate authenticator  
   
-You need to know the type of authenticator to implement increasingly granular authorization policies and to grant or deny a user access to information available from applications and shared network resources. 
+You need to know the type of authenticator to implement increasingly granular authorization policies and to grant or deny a user access to information available from applications and shared network resources.
 
 To grant a user access, based on the type of authenticator used, you can use a Windows Active Directory (AD) feature called _Authentication Mechanism Assurance (AMA)_. AMA allows you to add a group membership identifier to the user’s Kerberos token.
 
 {% include alert-warning.html content="Do not use AMA to provide privileged user access." %}
 
-AMA is available for domains operating on Windows Server 2008 R2 and later versions. 
+AMA is available for domains operating on Windows Server 2008 R2 and later versions.
 
 ## Implementation
 You can use this PowerShell script [CertificateIssuanceOIDs.ps1](https://github.com/GSA/ficam-scripts-public/tree/master/_ama){:target="_blank"}{:rel="noopener noreferrer"} to import and set up a list of certificate issuance policies. This script:
 
 - Contains a list of certificate issuance policy object identifiers (OIDs) used by U.S. federal government agencies
-- Creates security groups with the same names as the policies 
+- Creates security groups with the same names as the policies
 - Links the policies to the security groups
 
 You can run the script with a few simple steps.
 
-- You'll need to specify the Group Distinguished Name (GroupDN) within the script. This targets where you want to create the security groups in your network directory: 
+- You'll need to specify the Group Distinguished Name (GroupDN) within the script. This targets where you want to create the security groups in your network directory:
 
   - `CertificateIssuanceOIDs.ps1 -GroupDN \<group DN string>`
   - For example: `CertificateIssuanceOIDs.ps1 -GroupDN 'OU=Groups,OU=Administrators,DC=agency,DC=gov'`
 
 - After downloading this script, you may need to change the [PowerShell script execution policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core){:target="_blank"}{:rel="noopener noreferrer"} to execute the script or sign the script to execute it.
 
-A sample output from the script is shown below: 
+A sample output from the script is shown below:
 
 ```
   PS C:\> C:\AMA\Script\CertificateIssuanceOIDs.ps1 
@@ -95,10 +95,10 @@ To test the output on your network domain, log in with your PIV credential and c
 
 ### Authentication Pass-Through to a Federation Service
 
-A federal employee authenticates to the agency's intranet using a PIV credential and attempts to access an application hosted by a different federal agency. 
+A federal employee authenticates to the agency's intranet using a PIV credential and attempts to access an application hosted by a different federal agency.
  
-- The application is restricted to allow access only for users who have authenticated with a valid PIV Authentication certificate. 
-- All other users are denied access to the application. 
+- The application is restricted to allow access only for users who have authenticated with a valid PIV Authentication certificate.
+- All other users are denied access to the application.
  
 This federal employee successfully accesses the other federal agency's application with minimal inputs. The employee is successful because:
 
@@ -108,7 +108,7 @@ This federal employee successfully accesses the other federal agency's applicati
 During and after the employee's logon to the network, the following steps were executed without the employee's intervention:
  
 1.	The PIV authentication certificate is parsed
-2.  The certificate policy OID asserted allows Microsoft AD on the home agency's network to assign the user to a group specifically for PIV authenticated users 
+2.  The certificate policy OID asserted allows Microsoft AD on the home agency's network to assign the user to a group specifically for PIV authenticated users
 2.	The user's session is granted a Kerberos ticket that includes the additional group membership
 2.  The user browses to the other federal agency's application
 2.  The user's browser is redirected to his/her home agency's Federation Service
@@ -117,27 +117,27 @@ During and after the employee's logon to the network, the following steps were e
 2.  The SAML assertion includes the AD group membership information that identifies that this user authenticated with a PIV credential
 2.  The user's browser is redirected back to the other federal agency's application
 2.  The user is successfully authenticated with the valid SAML assertion
-2.  The other federal agency's application is configured to allow access to only those users who have authenticated using a PIV credential 
+2.  The other federal agency's application is configured to allow access to only those users who have authenticated using a PIV credential
 
-In this use case and steps, the user did **not** have to authenticate directly with a PIV credential to the other agency's application.  A federation model was used.    
+In this use case and steps, the user did **not** have to authenticate directly with a PIV credential to the other agency's application.  A federation model was used.
 
 {% include alert-info.html content="One example for viewing this implementation pattern is Max.gov.  If you click the upper left-hand Login button, you'll see the Max.gov Login page. The bottom section allows you to select an agency.  Each of these icons redirects the user back to that agency's Federation Service." %}
 
 ### Authentication Pass-Through for Integrated Windows Authentication
 
-A federal employee authenticates to his/her agency's intranet using a PIV credential and attempts to access a local SharePoint site. 
+A federal employee authenticates to his/her agency's intranet using a PIV credential and attempts to access a local SharePoint site.
 
-- The SharePoint site is restricted to allow access only for those users who have authenticated with a PIV Authentication certificate. 
-- All other users are denied access to the SharePoint site. 
+- The SharePoint site is restricted to allow access only for those users who have authenticated with a PIV Authentication certificate.
+- All other users are denied access to the SharePoint site.
  
-The federal employee successfully accesses the local SharePoint site. 
+The federal employee successfully accesses the local SharePoint site.
 
 During and after the employee's logon to the network and attempt to access the SharePoint site, the following steps were executed without the employee's intervention:
  
 1.	The PIV authentication certificate is parsed
 2.  The certificate policy OID asserted allows Microsoft AD on the home agency's network to assign the user to a group specifically for PIV authenticated users
 2.	The user's session is granted a Kerberos ticket that includes the additional group membership
-2.  The SharePoint site is configured to only allow access to only those users who have authenticated using a PIV credential 
+2.  The SharePoint site is configured to only allow access to only those users who have authenticated using a PIV credential
  
 
 ## Other Considerations and References

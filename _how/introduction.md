@@ -59,7 +59,7 @@ Check the following items **before** reviewing these network guides and lessons 
 
 There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:
 
-- [Network Ports and Protocols](/how/introduction/)
+- [Network Ports and Protocols](#ports-and-protocols)
 - [Domain Controllers](/how/domain-controllers/)
 - [Trust Stores](/how/trust-stores/)
 - [Account Linking: Associating PIV credentials with User Accounts](/how/account-linking/)
@@ -150,4 +150,4 @@ The Federal Common Policy Certificate Authority G2 (COMMON) is the root certific
 
 To enable communications with these Federal Common Policy Certificate Authority services, including those currently operational and any expansion, you should verify outbound communications to the base domain of _http.fpki.gov_. For example, a successful connection to [http://http.fpki.gov/fcpca/fcpca.crt](http://http.fpki.gov/fcpca/fcpca.crt) will download a copy of the Federal Common Policy CA certificate.
 
-You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion. 
+You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion.

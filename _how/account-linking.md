@@ -89,7 +89,7 @@ There are six mapping options to choose from, but most organizations use **Issue
 Identity certificates used for Windows logon can generally be found: 
 -	On the smart card itself. 
 -	By requesting the certificates directly from the smart card issuer. 
--	By exporting the certificates from a third party application in which the certificates are already registered, such as a FIPS 201-compliant <a class="usa-link" href="https://playbooks.idmanagement.gov/pacs/what-is-pacs/" target="_blank" rel="noopener noreferrer">Physical Access Control System (PACS).</a>
+-	By exporting the certificates from a third party application in which the certificates are already registered, such as a FIPS 201-compliant <a class="usa-link" href="{{site.baseurl}}/what/pacsguide/" target="_blank" rel="noopener noreferrer">Physical Access Control System (PACS).</a>
 
 Each of these options is discussed below.
 
@@ -167,16 +167,16 @@ If you are designing an automated process to transition users from Principal Nam
 #### 2. Enable User Name Hints
 You need to enable _User Name Hints_ for your network domain.  This will modify the logon prompts for _Windows_ workstations and servers joined to the network domain.  Your users will be prompted to provide both the PIV credential PIN value and a User Name Hint value.
 
-{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://playbooks.idmanagement.gov/piv/identifiers/\" target=\"_blank\" rel=\"noopener noreferrer\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
+{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://www.idmanagement.gov/what/pivdetails/#piv-identifiers\" target=\"_blank\" rel=\"noopener noreferrer\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
 
 ##### User Name Hint Setting
 
 **For Windows Server 2008 R2:**
-  - _Computer Configuration_ -> _Policies_-> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
+  - _Computer Configuration_ > _Policies_> _Administrative Templates_ > _Windows Components_, and then expand _Smart Card_.
   - Select _Allow User Name Hint_
 
 **For Windows Server 2012 and later:**
-  - _Computer Configuration_ -> _Administrative Templates_ -> _Windows Components_, and then expand _Smart Card_.
+  - _Computer Configuration_ > _Administrative Templates_ > _Windows Components_, and then expand _Smart Card_.
   - Select _Allow User Name Hint_
 
 Management of smart card settings should be deployed using a group policy object for the domain.

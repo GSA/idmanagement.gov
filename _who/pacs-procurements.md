@@ -49,7 +49,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>Determine whether your agency has a similar effort underway or other projects that could impact the procurement.</li>
+	<li>Determine whether your agency has similar efforts underway or other projects that could impact the procurement.</li>
 	<li>Determine why the agency needs to procure or upgrade a PACS.</li>
 	<li>Perform a cost-benefit analysis.</li>
   </ul>
@@ -72,7 +72,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 	<li>Identify the PACS project’s executive sponsor.</li>
 	<li>Document a high-level project purpose, scope, and goals.</li>
 	<li>Determine the PACS deployment model required for the project's scope.</li>
-	<li>Identify what standards and requirements need to be addressed (for example, HSPD-12, FIPS 201-2, NIST SP 800-116, Revision 1).</li>
+	<li>Identify what standards and requirements need to be addressed (for example, HSPD-12, FIPS 201-3, NIST SP 800-116, Revision 1).</li>
 	<li>Estimate the project's duration.</li>
   </ul>
   </td>
@@ -92,7 +92,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <ul>
 	<li>Identify your required and optional stakeholders and request their participation.</li>
 	<li>Include national, regional, state, and local stakeholders.</li>
-	<li>Involve stakeholders from agency information technology (IT) teams (for example, architect/engineers, network engineers, security, infrastructure services, directory services, web services).</li>
+	<li>Involve stakeholders from agency information technology (IT) teams (for example, architects/engineers, network engineers, security, infrastructure services, directory services, web services).</li>
 	<li>Involve agency facility and personnel support organizations (for example, physical security, building operations, Human Resources).</li>
   </ul>
   </td>
@@ -110,13 +110,13 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>Document the project’s phases and required tasks. Samples can include:
+	<li>Document the project’s phases and required tasks. Samples include:
 		<ul>
 			<li>Pre-project planning</li>
 			<li>Site security assessment(s)</li>
-			<li>Develop Statement of Work (SOW)</li>
-			<li>Develop PACS Requirements Document (or Specification)</li>
-			<li>Develop and release Request for Information (RFI)</li>
+			<li>Statement of Work (SOW)</li>
+			<li>PACS Requirements Document (or Specification)</li>
+			<li>Request for Information (RFI)</li>
 			<li>Request for Proposal (RFP)/Request for Quotation (RFQ)</li>
 			<li>Integrator (vendor) evaluation and award</li>
 			<li>Design</li>
@@ -144,7 +144,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <td colspan="7">
   <ul>
 	<li>Use automated tools or agency software to create a project schedule (that is, project tasks, dependencies, durations, and resources).</li>
-	<li>Share the project schedule with stakeholders to ensure its accuracy and completeness.</li>
+	<li>Share the project schedule with stakeholders to ensure it is accurate and complete.</li>
   </ul>
   </td>
 </tr>
@@ -161,7 +161,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>For details, see <a href="{{site.baseurl}}/pacs/alignfslandauth/" target="_blank" rel="noopener noreferrer">Aligning FSL and Authentication Mechanism</a>.</li>
+	<li>For details, see <a href="{{site.baseurl}}/what/pacsguide/#assess-facility-security-level" target="_blank" rel="noopener noreferrer">Aligning FSL and Authentication Mechanism</a>.</li>
 	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification as well as affect the SOW and project costs.</li>
 	<li>The sample survey questions below will help you assess the FSL of each facility and select the right PIV authentication mechanisms:
 	<ul>
@@ -200,7 +200,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>When documenting PACS requirements, it’s critical to solicit input from your stakeholders.</li>
+	<li>When documenting PACS requirements, it is critical to solicit input from your stakeholders.</li>
 	<li>Organize requirements into clear categories (for example, technical, performance, and operational) to help stakeholders give targeted feedback.</li>
   </ul>
   </td>
@@ -253,7 +253,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in PACS Recommended Procurement Language for RFPs Version 1.1</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
@@ -314,11 +314,11 @@ Agency staff are encouraged to participate in steps where their roles are listed
   <ul>
 	<li>After contract award, your integrator will help you:
 	<ul>
-	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="https://www.idmanagement.gov/buy/#products" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
+	<li>Choose the best PACS topology (that is, an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="{{site.baseurl}}/acquisition-professionals/#products" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
 	<li>Buy the products and additional services you need by using the <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank" rel="noopener noreferrer">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services, according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
-	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer.service at gsa.gov or call 1-800-488-3111.</li>
+	<li>Want to learn more about GSA Schedules? Training is available: <a href="https://www.gsa.gov/buying-selling/products-services/security-protection/training-for-security-protection" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer dot service at gsa dot gov or call 1-800-488-3111.</li>
   </ul>
   </td>
 </tr>
@@ -326,12 +326,12 @@ Agency staff are encouraged to participate in steps where their roles are listed
 </table>
 
 
-{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa.gov or call 1-855-482-4348." %}
+{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa dot gov or call 1-855-482-4348." %}
 
 
 
 ## Why Can We Buy Only GSA-Approved Products and Services?
-[GSA’s FIPS 201 Evaluation Program](https://www.idmanagement.gov/fips201/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201-2 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201-2, secure operations, and interoperability.   
+[GSA’s FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201-2 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201-2, secure operations, and interoperability.   
 
 ## What Other GSA Resources Can Help Us?
 - [GSA Schedules - General Information](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedule-buyers){:target="_blank"}{:rel="noopener noreferrer"}
@@ -342,5 +342,5 @@ Agency staff are encouraged to participate in steps where their roles are listed
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"}{:rel="noopener noreferrer"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
-The next section, *[Training]({{site.baseurl}}/pacs/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
+The next section, *[Training]({{site.baseurl}}/who/train/)*, outlines PACS personnel roles and responsibilities and lists relevant training and certification programs.
 

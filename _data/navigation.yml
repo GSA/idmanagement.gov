@@ -64,14 +64,10 @@ how:
   - text: Troubleshooting PIV Logon
     href: /how/troubleshooting/ 
  # Added -- missed content   
+  - text: Configure Outlook for Secure Email
+    href: /how/outlook/
   - text: Introduction to PIV Engineering Guides
     href: /how/engineering/ 
-  - text: Configure Firefox
-    href: /how/engineer-firefox/ 
-  - text: Enable SSH
-    href: /how/engineer-ssh/
-
-
 
 
 ## New who secondary navigation 
@@ -96,12 +92,12 @@ who:
     href: /who/lessonslearned/
   - text: Standards
     href: /who/standards/
-  # - text: FIPS 201 Approved Product List - PIV Cards
-  #   href: /approved-products-list-piv/
-  # - text: FIPS 201 Approved Product List - PACS
-  #   href: /approved-products-list-pacs-products/
-  # - text: FIPS 201 Removed Product list
-  #   href: /removed-products-list/
+  - text: FIPS 201 Approved Product List - PIV Cards
+    href: /approved-products-list-piv/
+  - text: FIPS 201 Approved Product List - PACS
+    href: /approved-products-list-pacs-products/
+  - text: FIPS 201 Removed Product list
+    href: /removed-products-list/
 
 
 ## University: for FICAM (University) section

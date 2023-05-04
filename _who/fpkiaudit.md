@@ -2,7 +2,7 @@
 layout: page
 collection: who
 title:  FPKI Policy and Compliance Audit
-permalink: who/fpkiaudit/
+permalink: /who/fpkiaudit/
 sidenav: program
 sticky_sidenav: true
 

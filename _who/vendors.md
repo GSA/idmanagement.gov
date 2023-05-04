@@ -24,8 +24,8 @@ In most cases, vendors who wish to sell Identity, Credentialing, and Access Mana
 - [NIST Federal Information Processing Standard (FIPS) 201](https://csrc.nist.gov/publications/detail/fips/201/3/final).
 
 Two product categories require additional testing at a testing facility before applying to the Multiple Award Schedule.
-1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards](https://www.idmanagement.gov/approved-products-list-piv/) category.
-2. Physical Access Control Systems for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components](https://www.idmanagement.gov/approved-products-list-pacs-products/) category.
+1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards]({{site.baseurl}}/approved-products-list-piv/) category.
+2. Physical Access Control Systems for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/approved-products-list-pacs-products/) category.
 
 Please get in touch with fips201ep at gsa.gov if you have product approval questions.
 
@@ -39,9 +39,9 @@ It only takes three steps to get a product approved for federal use. **If your p
 
 ### Step 1 – Review Testing Documents
 
-The GSA [FIPS 201 Evaluation Program](fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel= "noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems and Physical Access Control Systems (PACS).
+The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel= "noopener noreferrer"} used in Personal Identity Verification (PIV) credentialing systems and Physical Access Control Systems (PACS).
 
-[Review testing documents and procedures](fips201/)
+[Review testing documents and procedures]({{site.baseurl}}/fips201/)
 
 ### Step 2 – Contact a Testing Lab
 
@@ -65,7 +65,7 @@ GSA manages testing and certification for Physical Access Control Systems (PACS)
 
 If your product completes the testing process, two things occur.
 1) You'll receive a signed approval document.
-2) Product listed on the [Approved Products List (APL)](../buy#products) under the appropriate category.
+2) Product listed on the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products) under the appropriate category.
 
 After testing and approval, apply for your product or service to get listed on the GSA's Multiple Award Schedule (MAS).
 

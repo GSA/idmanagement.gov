@@ -2,7 +2,7 @@
 layout: page
 collection: who
 title:  GSA ICAM Solutions and Shared Services
-permalink: who/icamsolutions/
+permalink: /who/icamsolutions/
 sidenav: who
 sticky_sidenav: true
 lastupdate: 05/21/2021
@@ -18,9 +18,9 @@ subnav:
     href: '#additional-resources'
 ---
 
-This page contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+This section contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 - [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
-- [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A a consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
+- [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
 
 ## GSA ICAM Solutions and Shared Services Roadmap
 
@@ -28,7 +28,7 @@ This page contains information on the GSA ICAM Solutions Catalog and GSA ICAM So
 The roadmap aligns actions to the following three phases:
 
 1. **Foundation** focuses on modifications to the existing services catalog to address critical gaps.
-2. **Federation** focuses on enhancing federation capabilities for government to government, government to constituent, and government to mission partner interactions.
+2. **Federation** focuses on enhancing federation capabilities for government-to-government, government-to-constituent, and government-to-mission partner interactions.
 3. **Emerging Trends** focuses on recognizing and preparing for emerging trends and expanding support.
 
 The roadmap also identifies five areas that align with GSA's vision:
@@ -39,7 +39,7 @@ The roadmap also identifies five areas that align with GSA's vision:
 4. **Shared Services** provided so that agencies don't duplicate efforts.
 5. **Third-Party Validation** for vendors offering ICAM related services.
 
-The following table provides a summary of the roadmap activities. This roadmap is considered a living document; this first iteration is designed to gain leadership support and endorsement. Foundation activities are targeted for completion in the next one to two years. Federation activities are targeted for three to four years. Emerging trend activities are likely to require more than four years to complete, as they may depend on earlier phase activities or require further definition before they can begin.
+The following table provides a summary of the roadmap activities. This roadmap is considered a living document; this first iteration is designed to gain leadership support and endorsement. Foundation activities are targeted for completion in the next one to two years. Federation activities are targeted for three to four years. Emerging trends activities are likely to require more than four years to complete, as they may depend on earlier phase activities or require further definition before they can begin.
 
 <table class="usa-table usa-table--borderless usa-table--striped">
   <thead>
@@ -137,7 +137,7 @@ The following table provides a summary of the roadmap activities. This roadmap i
       </td>
       <td>
         <ol>
-          <li>Implement cloud services to support non person entity (NPE).</li>
+          <li>Implement cloud services to support non-person entity (NPE).</li>
           <li>Evaluate demand and feasibility for implementation of an attribute mapping service.</li>
         </ol>
       </td>
@@ -165,9 +165,9 @@ The following table provides a summary of the roadmap activities. This roadmap i
 
 ## GSA ICAM Solutions Catalog
 
-On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation; therefore, new SIN designations have been included.
+On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential, and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation; therefore, new SIN designations have been included.
 
-Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework is designed to help agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
+Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and Max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework helps agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
 
 <table>
   <tr>
@@ -187,41 +187,41 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <tr>
     <td>Identity Management <br><br> Access Management <br><br> Federation</td>
     <td>Login.gov</td>
-    <td style="width:350px">Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign in to multiple government agencies.</td>
+    <td style="width:350px">Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign into multiple government agencies.</td>
     <td>Account Linking <br><br> Authentication</td>
     <td><a href="http://login.gov/" target="_blank" rel="noopener noreferrer">login.gov</a></td>
   </tr>
    <tr>
     <td>Access Management <br><br> Federation</td>
     <td>MAX Authentication</td>
-    <td style="width:350px">Authentication as a Service (AaaS) Automatic registration for federal users by email domain. HSPD – 12 PIV /DoD CAC cards and SMS 2-factor authentication for sensitive activities. Enterprise Federated Partner Automated Login (i.e., single sign-on) with agencies.</td>
+    <td style="width:350px">Authentication as a Service (AaaS) Automatic registration for federal users by email domain. HSPD-12-PIV /DoD CAC cards and SMS 2-factor authentication for sensitive activities. Enterprise Federated Partner Automated Login (i.e., single sign-on) with agencies.</td>
     <td>Authentication Services <br><br> Federation</td>
     <td><a href="http://max.gov/" target="_blank" rel="noopener noreferrer">Max.gov</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
     <td>USAccess</td>
-    <td style="width:350px">The GSA HSPD-12 Managed Service Office (MSO) established the USAccess program as an efficient way for federal agencies to issue common HSPD-12 approved credentials to their employees and contractors.</td>
+    <td style="width:350px">The GSA HSPD-12 Managed Service Office (MSO) established the USAccess program as an efficient way for federal agencies to issue common, HSPD-12-approved credentials to their employees and contractors.</td>
     <td>PIV card</td>
     <td><a href="http://fedidcard.gov/" target="_blank" rel="noopener noreferrer">fedidcard.gov</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
     <td><i>SIN 517312</i>: Wireless Mobility Solutions</td>
-    <td style="width:350px">Includes a variety of services that address the mobility needs of government agencies to include: Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC.</td>
-    <td>Digital Certifcates <br><br> Derived PIV <br><br> Other mobility offerings on this SIN</td>
+    <td style="width:350px">Includes a variety of services that address the mobility needs of government agencies. Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC.</td>
+    <td>Digital Certificates <br><br> Derived PIV <br><br> Other mobility offerings on this SIN</td>
     <td><a href="https://hallways.cap.gsa.gov/app/#/applet/rfq" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
     <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
-    <td style="width:350px">Includes Department of Homeland Security (DHS) approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
-    <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by DHS</td>
+    <td style="width:350px">Includes DHS approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
+    <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by the Department of Homeland Security (DHS)</td>
     <td><a href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-tools" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
   <tr>
     <td>Identity Management <br><br> Access Management <br><br> Credential Management</td>
-    <td><i>SIN 541519ICAM</i>: Identity, Credentialing and Access Management (ICAM)</td>
+    <td><i>SIN 541519ICAM</i>: Identity, Credential, and Access Management (ICAM)</td>
     <td style="width:350px">Managed service offerings for electronic credentials, identity and access management, authentication, and identity and access management professional services.</td>
     <td>Digital credentials <br><br> Authentication <br><br> Professional Services</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
@@ -235,23 +235,23 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
   </tr>
   <tr>
     <td>Credential Management</td>
-    <td><i>SIN 541519IPIV</i>: Homeland Security Presidential Directive 12 Product and Service Components</td>
+    <td><i>SIN 541519IPIV</i>: Homeland Security Presidential Directive-12 Product and Service Components</td>
     <td style="width:350px">PIV products and PIV services to implement the requirements of HSPD-12, FIPS-201, and associated NIST special publications. Implementation components specified under this SIN are: <ul><li>PIV enrollment and registration services</li><li>PIV systems infrastructure</li><li>PIV card management and production services</li><li>PIV card finalization services</li><li>Logical access control products and services</li><li>PIV system integration services. Installation services and FIPS 201 compliant PACS (Physical Access Control System) products.</li></ul></td>
     <td>PKI Shared Service Provider for PIV and additional products support</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
-    <td><i>SIN 334290L</i>: Physical Access Control Systems (PACS)</td>
-    <td style="width:350px">Includes physical access control systems (PACS), such as card-controlled access, biometrics, security barriers, etc.</td>
-    <td>Physical Access Control Systems (PACS) components</td>
+    <td><i>SIN 334290L</i>: Physical Access Control System (PACS)</td>
+    <td style="width:350px">Includes PACS, such as card-controlled access, biometrics, security barriers, etc.</td>
+    <td>PACS components</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
     <td><i>SIN 541330SEC</i>: Security System Integration, Design, Management, and Life Cycle Support</td>
-    <td style="width:350px">Includes services related to PACS design, integration, and implementation, and installation/testing. Offerors under this SIN have at least one employee who is CSEIP (Certified System Engineer ICAM PACS) certified and such certification can be verified at IDmanagment.gov.</td>
-    <td>Physical Access Control Systems (PACS) integration (installation and configuration)</td>
+    <td style="width:350px">Includes services related to PACS design, integration, implementation, and installation/testing. Offerors under this SIN have at least one employee who is CSEIP (Certified System Engineer ICAM PACS) certified and such certification can be verified at IDmanagment.gov.</td>
+    <td>PACS integration (installation and configuration)</td>
     <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
 </table>
@@ -262,7 +262,7 @@ Buyers are required to register on GSA Advantage. Buyers can use the same User I
 
 1. Go to [http://www.ebuy.gsa.gov](http://www.ebuy.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
 2. At the top of the page, the buyer will see “Sign in as a …. Buyer.” Click **Buyer** to display the Sign In.
-3. Enter the buyer’s official email address and password in the boxes provided and click **Sign In**.
+3. Enter the buyer’s official email address and password and click **Sign In**.
 4. The buyer will be prompted to request and enter a verification code. GSA Advantage will send the buyer an email with the single-use verification code.
 5. Enter the verification code from the email (please note that the buyer’s verification code is only valid for 10 minutes). Then do the following:
 6. Search – Find the solution to post your requirements. A search can be conducted using the SIN designations from this catalog or by using keywords.

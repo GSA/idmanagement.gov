@@ -56,5 +56,5 @@ It is not recommended to set up a local enterprise CA just to issue domain contr
 
 Collaborate with your CISO or Information Security Office for a definitive answer and direction.
 
-If you do have a local enterprise CA, [here are some tips.](../localca/)
+If you do have a local enterprise CA, [here are some tips.]({{site.baseurl}}/how/certificate-authority/)
 

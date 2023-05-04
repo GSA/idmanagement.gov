@@ -29,7 +29,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 
 ## How To Purchase
 
-Visit the [Buy Page](../buy/) to view FICAM products, services and purchasing guidance.
+Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/) to view FICAM products, services and purchasing guidance.
 
 ## Approved 13.01 Topology PACS Products
 

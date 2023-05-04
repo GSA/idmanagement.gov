@@ -59,30 +59,30 @@ Check the following items **before** reviewing these network guides and lessons 
 
 There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:
 
-- [Network Ports and Protocols](../network/ports/)
-- [Domain Controllers](../network/dc/)
-- [Trust Stores](../network/trust-stores/)
-- [Account Linking: Associating PIV credentials with User Accounts](../network/account/)
-- [Group Policies and Enforcement](../network/group/)
+- [Network Ports and Protocols](#ports-and-protocols)
+- [Domain Controllers]({{site.baseurl}}/how/domain-controllers/)
+- [Trust Stores]({{site.baseurl}}/how/trust-stores/)
+- [Account Linking: Associating PIV credentials with User Accounts]({{site.baseurl}}/how/account-linking/)
+- [Group Policies and Enforcement]({{site.baseurl}}/how/group-policies/)
 
 There are five additional guides:
 
-- [Network Tuning](../network/tuning/)
-- [Local Certification Authority](../network/localca/)
-- [Authentication Assurance](../network/auth/)
-- [PIV Authentication on MacOS](../network/mac/)
-- [Troubleshooting PIV Logon](../network/troubleshooting/)
+- [Network Tuning]({{site.baseurl}}/how/network-tuning/)
+- [Local Certification Authority]({{site.baseurl}}/how/certificate-authority/)
+- [Authentication Assurance]({{site.baseurl}}/how/authentication-assurance/)
+- [PIV Authentication on MacOS]({{site.baseurl}}/how/piv-athentication-macos/)
+- [Troubleshooting PIV Logon]({{site.baseurl}}/how/troubleshooting/)
 
 We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
 
 Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
 
 
-<!-- from https://playbooks.idmanagement.gov/piv/network/ports/ -->
+<!-- from https://playbooks.idmanagement.gov/piv/network/ports/  is now an internal page link to here(#ports-and-protocols) instead of its own guilde -->
 
 ## Ports and Protocols
 
-Your workstations, servers, network domain controllers, and applications need to validate the [revocation]({{site.baseurl}}/piv/cert-trust/#revocation) status of the PIV certificates and all intermediate certificate authority (CA) certificates.  In addition, the [certificate chain]({{site.baseurl}}/piv/cert-trust/#certificate-chains) path building may retrieve and download the intermediate CA certificates.
+Your workstations, servers, network domain controllers, and applications need to validate the [revocation]({{site.baseurl}}/what/pivdetails/#certificate-revocation) status of the PIV certificates and all intermediate certificate authority (CA) certificates.  In addition, the [certificate chain]({{site.baseurl}}/what/pivdetails/#certificate-chains) path building may retrieve and download the intermediate CA certificates.
 
 The validation occurs in real time (with some caching) and requires ensuring network traffic is open and available to the destination web services, ports, and protocols.  Many U.S. federal agencies implement a layered network security model with demilitarized zones (DMZs), proxies, and Trusted Internet Connections (TICs) to monitor, defend, and protect the networks, applications and users.
 
@@ -135,7 +135,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web Services for Validating PIV Certificates
 
-[Revocation]({{site.baseurl}}/piv/cert-trust/#revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/piv/details/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
+[Revocation]({{site.baseurl}}/what/pivdetails/#certificate-revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/what/pivdetails/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|
@@ -148,7 +148,7 @@ There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you 
 
 ## Web Services for the Federal Public Key Infrastructure
 
-The Federal Common Policy Certificate Authority G2 (COMMON) is the root certificate authority and has web services to publish both [certificate chains]({{site.baseurl}}/piv/cert-trust/#certificate-chains) (p7b files) and [CRLs]({{site.baseurl}}/piv/cert-trust/#revocation) for all intermediate certificate authorities which the root signs.
+The Federal Common Policy Certificate Authority G2 (COMMON) is the root certificate authority and has web services to publish both [certificate chains]({{site.baseurl}}/piv/cert-trust/#certificate-chains) (p7b files) and [CRLs]({{site.baseurl}}/what/pivdetails/#certificate-revocation) for all intermediate certificate authorities which the root signs.
 
 To enable communications with these Federal Common Policy Certificate Authority services, including those currently operational and any expansion, you should verify outbound communications to the base domain of _http.fpki.gov_. For example, a successful connection to [http://http.fpki.gov/fcpca/fcpca.crt](http://http.fpki.gov/fcpca/fcpca.crt) will download a copy of the Federal Common Policy CA certificate.
 

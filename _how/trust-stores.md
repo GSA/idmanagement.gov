@@ -13,14 +13,14 @@ subnav:
     href: '#enterprise-ntauth-trust-store'
 ---
 
-You want your Active Directory domain, including servers and workstations, to trust users' PIV credentials for authentication.  Trust and certificate chains are reviewed in the [Certificate Trust]({{site.baseurl}}/piv/cert-trust/) overview, and this page includes information on configuring your Active Directory domain.
+You want your Active Directory domain, including servers and workstations, to trust users' PIV credentials for authentication.  Trust and certificate chains are reviewed in the [Certificate Trust]({{site.baseurl}}/what/pivdetails/#trust) overview, and this page includes information on configuring your Active Directory domain.
 
 There are two trust stores to consider for your Active Directory domain:
 
 ##  Trusted Root Certification Authorities Trust Store
-You need to publish the Federal Common Policy Certification Authority G2 (COMMON) [root certificate]({{site.baseurl}}/piv/cert-trust/#download-root-and-intermediate-certificates) to the Trusted Root Certification Authorities trust stores on all your workstations, devices, servers, and domain controllers.   
+You need to publish the Federal Common Policy Certification Authority G2 (COMMON) [root certificate]({{site.baseurl}}/what/pivdetails/#download-root-and-intermediate-certificates) to the Trusted Root Certification Authorities trust stores on all your workstations, devices, servers, and domain controllers.   
 
-It is recommended to add the COMMON [root certificate]({{site.baseurl}}/piv/cert-trust/#download-root-and-intermediate-certificates) to a Group Policy Object (GPO) to publish it as a _trusted root_ for all domain users and computers.  It is also possible to install it via command line; however, keep in mind that the way a certificate is added to a store (Trusted Root, NTAuth, etc.), is the way the certificate has to be removed from the store in the future.  For example, an administrator cannot add certificates locally to a system via command line and then remove the certificate later using a GPO.
+It is recommended to add the COMMON [root certificate]({{site.baseurl}}/what/pivdetails/#download-root-and-intermediate-certificates) to a Group Policy Object (GPO) to publish it as a _trusted root_ for all domain users and computers.  It is also possible to install it via command line; however, keep in mind that the way a certificate is added to a store (Trusted Root, NTAuth, etc.), is the way the certificate has to be removed from the store in the future.  For example, an administrator cannot add certificates locally to a system via command line and then remove the certificate later using a GPO.
 
 Additionally, the root certification authority (CA) for the domain controller certificates must also be in the Trusted Root Certification Authorities trust store on all your workstations, devices, servers, and domain controllers for which the domain controller will be authorizing smart card logon.
 

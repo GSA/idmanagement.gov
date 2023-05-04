@@ -24,7 +24,7 @@ The Federal ICAM (FICAM) program helps federal agencies plan and manage enterpri
 
 ## ICAM Program Management Guide
 
-The [ICAM Program Management Guide](https://playbooks.idmanagement.gov/pm/){:target="_blank"}{:rel="noopener noreferrer"} explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture](https://playbooks.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}. In this guide, you’ll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations as well as information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The [ICAM Program Management Guide]({{site.baseurl}}/program-managers/){:target="_blank"}{:rel="noopener noreferrer"} explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/why/icam/){:target="_blank"}{:rel="noopener noreferrer"}. In this guide, you’ll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations as well as information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
 This guide answers the most common ICAM program organization and management questions, including:
 - How can I establish governance to ensure ICAM alignment at the agency level?
@@ -35,15 +35,15 @@ The guide is organized by sections, each of which describes an essential feature
 
 ## FICAM Architecture and Playbooks
 
-The [FICAM Architecture and accompanying guidance](https://playbooks.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}, maintained by GSA in coordination with OMB and DHS CISA, contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies.
+The [FICAM Architecture and accompanying guidance]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"}, maintained by GSA in coordination with OMB and DHS CISA, contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies.
 
 These playbooks are hosted on Github and provide common policy and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on the needs and interests of individual agencies and government-wide groups. Reach out to icam at gsa.gov to suggest new topics.
 
 ## Announcements
 
-- [FIPS 201 Evaluation Program Announcements](https://www.idmanagement.gov/sell/fipsannouncements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKI Announcements](https://playbooks.idmanagement.gov/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKI System Notifications](https://playbooks.idmanagement.gov/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FIPS 201 Evaluation Program Announcements]({{site.baseurl}}/fips201/fipsannouncements/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI Announcements]({{site.baseurl}}/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FPKI System Notifications]({{site.baseurl}}/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
   
 
 ## Training
