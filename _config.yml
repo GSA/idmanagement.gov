@@ -136,9 +136,9 @@ primary_navigation:
     url: /university/
 
   # FAQ page
-  - name: FAQs
-    description: Frequently Asked Questions
-    url: /faq/
+  # - name: FAQs
+  #   description: Frequently Asked Questions
+  #   url: /faq/
 
 secondary_navigation:
   - name: Contact Us

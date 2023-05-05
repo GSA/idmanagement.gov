@@ -72,7 +72,9 @@ An identifier is a unique attribute used to locate an identity in a system:
 
 The Identity Management services in the Federal ICAM architecture include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are sometimes collectively known as **Identity Lifecycle Management**.
 
-<a href="{{site.baseurl}}/assets/arch/services/identity_management_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/identity_management_definitions.png" alt="An orange box with the Identity Management service definitions, which are listed in the following body text."></a>
+<a href="{{site.baseurl}}/assets/arch/services/FICAM-Graphic.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/FICAM-Graphic.png" alt="An orange box with the Identity Management service definitions, which are listed in the following body text."></a>
+<!-- <a href="{{site.baseurl}}/assets/arch/services/identity_management_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/identity_management_definitions.png" alt="An orange box with the Identity Management service definitions, which are listed in the following body text."></a> -->
+
 
 | Service | Description | Keywords |
 | --- | ------ | -----|

@@ -121,16 +121,18 @@ university:
 
 ## FAQ: for webiste
 ## Resources: from FICAM University section
-faq:
-  - text: FAQs
-    href: /faq/ 
-  - text: University
-    href: /university/  
-  - text: Additional Resources
-    href: /university/resources/ 
+# faq:
+#   - text: FAQs
+#     href: /faq/ 
+#   - text: University
+#     href: /university/  
+#   - text: Additional Resources
+#     href: /university/resources/ 
 
 ## Playbooks: Namespace (urls for markdown and pdfs preserved from original site, /playbooks/...) 
-## Resources: from  https://playbooks.idmananagement.gov 
+## Resources: from  https://playbooks.idmananagement.gov
+# 
+# Playbooks on front page hardcoded for now
 playbooks:
   - text: Introduction
     href: /playbooks/
