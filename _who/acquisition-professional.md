@@ -3,7 +3,7 @@ layout: page
 collection: who
 title: Acquisition Professionals
 permalink: /acquisition-professionals/
-sidenav: who
+sidenav: acquisition
 sticky_sidenav: true
 last_review: 11/8/21
 
@@ -63,13 +63,13 @@ The following organizations offer Identity, Credential, and Access Management se
 
 GSA Multiple Award Schedule (MAS) provides access to long-term government-wide contracts. These contacts are with commercial firms that offer millions of commercial products and services at volume discount pricing. The MAS provides tools and expertise to shorten acquisition cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 
-- [FAQs for Buyers](https://www.gsa.gov/portal/content/142143){:target="_blank"}{:rel="noopener noreferrer"}
+- [Frequently Asked Questions (FAQs)](https://www.gsa.gov/portal/content/142143){:target="_blank"}{:rel="noopener noreferrer"}
 - [GSA Advantage!](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"} – Online shopping and ordering system
   - [541519ICAM](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519ICAM&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – ICAM Solutions
   - [541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – PKI Shared Service Providers (SSP)
   - [541519PIV](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PIV&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – HSPD-12 Products and Service Components
-  - [334290PACS](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – Legacy PACS systems (non-FIPS 201)
+  - [334290PACS](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290L&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – Legacy PACS (non-FIPS 201)
   - [541330SEC](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=334290PACS&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} – PACS integrator vendor
-- [Multiple Award Schedule IT SINs](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"} – Scroll down to “Subcategory: IT Solutions” for links to specific items
+- [Multiple Award Schedule IT Special Item Numbers (SINs)](https://www.gsa.gov/portal/content/188085#){:target="_blank"}{:rel="noopener noreferrer"} – Scroll down to “Subcategory: IT Solutions” for links to specific items
 
-Note that the purchasing process may differ, depending on the particular product or service you want. If you need help, please contact icam at gsa.gov.
+Note that the purchasing process may differ, depending on the particular product or service you want. If you need help, please contact icam at gsa dot gov.

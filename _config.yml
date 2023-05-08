@@ -104,26 +104,26 @@ primary_navigation:
 # Who FICAM is For? top level menu with dropdowns
   - name: Who is FICAM For?
     children:
-      - name: Introduction
-        url: /who/
+      # - name: Introduction
+      #   url: /who/
       - name: Vendors
         url: /vendors/
       - name: Acquisition Professionals
         url: /acquisition-professionals/
       - name: Program Managers
         url: /program-managers/
-      - name: Trust Services
-        url: /who/trust-services/
-      - name: GSA ICAM Solutions
-        url: /who/icamsolutions/
-      - name: Procurements
-        url: /who/procure/
-      - name: Training
-        url: /who/train/
-      - name: Lessons Learned
-        url: /who/lessonslearned/
-      - name: Standards
-        url: /who/standards/
+      # - name: Trust Services
+      #   url: /who/trust-services/
+      # - name: GSA ICAM Solutions
+      #   url: /who/icamsolutions/
+      # - name: Procurements
+      #   url: /who/procure/
+      # - name: Training
+      #   url: /who/train/
+      # - name: Lessons Learned
+      #   url: /who/lessonslearned/
+      # - name: Standards
+      #   url: /who/standards/
       # - name: Technical Leads and Team Members
       #   url: /who/technical-leads-and-team-members/
       # - name: PACS
@@ -188,9 +188,9 @@ collections:
   university:
     output: true
     permalink: /university/:path/   
-  faq:
-    output: true
-    permalink: /faq/:path/ 
+  # faq:
+  #   output: true
+  #   permalink: /faq/:path/ 
   rss:
     output: true
     permalink: /news/:path/ 

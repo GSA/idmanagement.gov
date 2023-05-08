@@ -72,32 +72,32 @@ how:
 
 ## New who secondary navigation 
 who:
-  - text: Introduction
-    href: /who/
-  - text: Vendors
-    href: /vendors/
-  - text: Acquisition Professionals
-    href: /acquisition-professionals/
-  - text: Program Managers
-    href: /program-managers/
-  - text: Trust Services
-    href: /who/trust-services/
-  - text: GSA ICAM Solutions
-    href: /who/icamsolutions/
-  - text: Procurements
-    href: /who/procure/
-  - text: Training
-    href: /who/train/
-  - text: Lessons Learned
-    href: /who/lessonslearned/
-  - text: Standards
-    href: /who/standards/
-  - text: FIPS 201 Approved Product List - PIV Cards
-    href: /approved-products-list-piv/
-  - text: FIPS 201 Approved Product List - PACS
-    href: /approved-products-list-pacs-products/
-  - text: FIPS 201 Removed Product list
-    href: /removed-products-list/
+  # - text: Introduction
+  #   href: /who/ 
+  # - text: Vendors [x]
+  #   href: /vendors/ [x]
+  # - text: Acquisition Professionals [x]
+  #   href: /acquisition-professionals/ [x]
+  # - text: Program Managers [x]
+  #   href: /program-managers/
+  # - text: Trust Services [x]
+  #   href: /who/trust-services/ [x]
+  # - text: GSA ICAM Solutions [x]
+  #   href: /who/icamsolutions/ [x]
+  # - text: Procurements
+  #   href: /who/procure/
+  # - text: Training
+  #   href: /who/train/
+  # - text: Lessons Learned
+  #   href: /who/lessonslearned/
+  # - text: Standards
+  #   href: /who/standards/
+  # - text: FIPS 201 Approved Product List - PIV Cards [x]
+  #   href: /approved-products-list-piv/ [x]
+  # - text: FIPS 201 Approved Product List - PACS [x]
+  #   href: /approved-products-list-pacs-products/ [x]
+  # - text: FIPS 201 Removed Product list [x]
+  #   href: /removed-products-list/ [x]
 
 
 ## University: for FICAM (University) section
@@ -130,9 +130,9 @@ university:
 #     href: /university/resources/ 
 
 ## Playbooks: Namespace (urls for markdown and pdfs preserved from original site, /playbooks/...) 
-## Resources: from  https://playbooks.idmananagement.gov
+## Old Resources: from  https://playbooks.idmananagement.gov
 # 
-# Playbooks on front page hardcoded for now
+# Sidenav for Playbooks on front page hardcoded for now
 playbooks:
   - text: Introduction
     href: /playbooks/
@@ -252,19 +252,44 @@ fpkiarchivedannouncements:
     href: /fpki/announcements/common-g2-update/
 
 
-## Old Sell, changed to fips201
+# The fips201 and vendor sidenav should match, unless something exclusive is added to to either one. 
+## Old Sell sidenav, changed to fips201/ as a global address
 fips201:
+  - text: Vendor Overview
+    href: /vendors/
   - text: FIPS 201 Evaluation Program
     href: /fips201/
-  - text: Vendor Overview
-    href: /fips201/vendors/
   - text: FIPS 201 Announcements
     href: /fips201/fipsannouncements/
-    
+# New Vendor sidenav
+vendor:
+  - text: Vendor Overview
+    href: /vendors/
+  - text: FIPS 201 Evaluation Program
+    href: /fips201/
+  - text: FIPS 201 Announcements
+    href: /fips201/fipsannouncements/
+
+
+# New Aquisitions Professional sidenav
+acquisition:
+  - text: Acquisition Overview
+    href: /acquisition-professionals/
+  - text: Trust Services
+    href: /who/trust-services/
+  - text: GSA ICAM Solutions
+    href: /who/icamsolutions/
+  - text: FIPS 201 Approved Product List - PIV Cards
+    href: /approved-products-list-piv/
+  - text: FIPS 201 Approved Product List - PACS
+    href: /approved-products-list-pacs-products/
+  - text: FIPS 201 Removed Product list
+    href: /removed-products-list/
+
 ## Old Governance sidenav
 ## New Program Managers sidenav
 program:
-  - text: Introduction
+  - text: Governance Overview
     href: /program-managers/
   - text: FICAM Governance
     href: /who/ficam/

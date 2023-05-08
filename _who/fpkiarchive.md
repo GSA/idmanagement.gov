@@ -21,7 +21,7 @@ An FPKI document may be needed for three years for compliance review purposes. T
 - Supplementary Guidance
 - Change Proposals
 
-A blank category indicates no updates in the previous three years. If you seek a document that is older than three years or is not listed here, please contact fpki at gsa.gov or look in the [archived document repository on github](https://github.com/GSA/idmanagement.gov/tree/staging/docs/archived){:target="_blank"}{:rel="noopener noreferrer"}. 
+A blank category indicates no updates in the previous three years. If you seek a document that is older than three years or is not listed here, please contact fpki at gsa dot gov or look in the [archived document repository on GitHub](https://github.com/GSA/idmanagement.gov/tree/staging/docs/archived){:target="_blank"}{:rel="noopener noreferrer"}. 
 
 <table class="usa-table usa-table--borderless usa-table--striped">
   <thead>
