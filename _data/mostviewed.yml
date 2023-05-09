@@ -11,6 +11,9 @@
 # The following links are required to be posted on the website for user access 
 # These links were added to the home page during the Arch Redesign 2023
 
+- mvtext: GSA PKI Shared Service Provider Program Guide
+  mvurl: docs/roadmap-ficam.pdf
+
 - mvtext: Federal Zero Trust Strategy (M-22-09)
   mvurl: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
 
@@ -19,6 +22,8 @@
 
 - mvtext: Managing Information as a Strategic Resource (OMB Circular A-130)
   mvurl: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
+
+
 
 # Links below this level can change and be updated on a regular weekly basis
 # Top 5 page data from the GSA's Google Analytics is used to poulate this section.
