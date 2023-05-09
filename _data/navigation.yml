@@ -298,6 +298,26 @@ program:
   - text: FPKI Archived Documents
     href: /fpkiarchive/
 
+
+# Brought in from Playbooks site
+pm:
+  - text: Introduction
+    href: /pm/
+  - text: Program Governance and Leadership
+    href: /pm/governance/
+  - text: Workstreams
+    href: /pm/workstreams/
+  - text: Stakeholder Management
+    href: /pm/stakeholders/
+  - text: Communication Plan
+    href: /pm/comm/
+  - text: Performance Management
+    href: /pm/performance/
+  - text: Privacy Considerations
+    href: /pm/privacy/
+  - text: Examples and Guidance
+    href: /pm/examples/
+
     
 ## Main Site
 policy:

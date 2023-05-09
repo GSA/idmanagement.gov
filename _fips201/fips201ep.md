@@ -22,7 +22,7 @@ subnav:
 
 The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes called the FICAM Testing Program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs).
 
-For the latest testing news, view the [program announcements]({{site.baseurl}}/sell/fipsannouncements/).
+For the latest testing news, view the [program announcements]({{site.baseurl}}/fips201/fipsannouncements/).
 
 ## Testing and Certification
 
@@ -32,7 +32,7 @@ We test and certify a variety of products and services such as:
 - Physical access control systems for buildings including readers and infrastructure
 - Service providers who manage, install, or provide hosted solutions for issuance of Personal Identity Verification (PIV) and CAC credentials
 
-If you’re looking for testing procedures related to products not listed above, review the [announcements]({{site.baseurl}}/sell/fipsannouncements/). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
+If you’re looking for testing procedures related to products not listed above, review the [announcements]({{site.baseurl}}/fips201/fipsannouncements/). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
 
 ### Product Testing
 
@@ -41,9 +41,9 @@ Product testing is performed by either:
 - Third-party accredited testing labs, OR
 - GSA-managed testing labs
 
-If the product passes testing and review, the vendor is granted a letter of certification, and the product is placed on the [Approved Products List (APL)]({{site.baseurl}}/buy/#products). The APL includes product information, version, date of certification, and special considerations.
+If the product passes testing and review, the vendor is granted a letter of certification, and the product is placed on the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products). The APL includes product information, version, date of certification, and special considerations.
 
-Visit the [Vendors page]({{site.baseurl}}/sell/) for more on testing and certification.
+Visit the [Vendors page]({{site.baseurl}}/vendors/) for more on testing and certification.
 
 ## Testing Guidance and Documents
 
@@ -62,7 +62,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 - [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
   - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
-  - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
+  - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)]({{site.baseurl}}/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
 - [Personal Identity Verification (PIV) Credential (PDF, January 2010)]({{site.baseurl}}/docs/fips201ep-pivtestprocedures.pdf){:target="_blank"}{:rel="noopener noreferrer"} – These test procedures are used by the independent, third-party labs to test card stock.
 
 ## Derived PIV Credentials
@@ -70,7 +70,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 Agencies that wish to issue D-PIV credentials should follow these steps:
 1. Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO)
 2. Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs)
-3. Submit sample D-PIV public certificates for testing or provide results from the [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to fips201ep at gsa.gov.
+3. Submit sample D-PIV public certificates for testing or provide results from the [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to fips201ep at gsa.gov.
 
 Upon successful completion of DPCI testing, the agency or organization will be granted approval to issue D-PIV credentials.
 
@@ -95,7 +95,7 @@ All applicants, please complete the following steps:
 1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
 2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-application-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
 3. Provide the equipment table from the Approved Product List Application as a separate file. [Equipment Table GSA PACS Application v0.1 (XLSX, February 2023)]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx){:target="_blank"}{:rel="noopener noreferrer"}
-4. [Reseller Acknowledgement Form (MS Word, September 2014)](https://www.idmanagement.gov/docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed, and the signed agreement submitted.
+4. [Reseller Acknowledgement Form (MS Word, September 2014)]({{site.baseurl}}/docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed, and the signed agreement submitted.
 5. Include the following  document when adding a new series, or adding new product to a prior listed series, signed by a C- or VP-level individual:
     - [Product Series and Licensing Form (MS Word, August 2018)]({{site.baseurl}}/docs/pacsapp-licensingform.docx){:target="_blank"}{:rel="noopener noreferrer"}
 6. Provide a solution configuration guide that includes, at a minimum:

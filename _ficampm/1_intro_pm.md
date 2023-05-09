@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: pm
 ---
 
-The **ICAM Program Management Playbook** explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. You'll find content for ICAM program managers who need agency-level planning best practices to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The **ICAM Program Management Playbook** explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/why/icam/){:target="_blank"}{:rel="noopener noreferrer"}. You'll find content for ICAM program managers who need agency-level planning best practices to drive adoption of ICAM services within their organizations. You'll also find information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
 The ICAM PM Playbook will answer the most common ICAM program organization and management questions, including:
 
@@ -15,7 +15,7 @@ The ICAM PM Playbook will answer the most common ICAM program organization and m
 - Who are my key ICAM stakeholders?
 - What best practices support ICAM implementation?
 
-The content is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0](https://www.idmanagement.gov/docs/roadmap-ficam.pdf)
+The content is based on the [Federal Identity, Credential, and Access Management (FICAM) Roadmap and Implementation Guidance v2.0]({{site.baseurl}}/docs/roadmap-ficam.pdf)
 
 ## What Is ICAM Program Management?
 

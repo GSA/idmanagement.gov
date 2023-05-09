@@ -22,14 +22,14 @@ The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/release
 - [NIST SP 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}: Biometric Specifications for Personal Identity Verification
 - [NIST SP 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Cryptographic Algorithms and Key Sizes for Personal Identity Verification
 
-The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct), also facilitates remote PIV and PIV-I testing in support of FPKI [annual reviews](https://www.idmanagement.gov/governance/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}, reducing travel and resource time and costs. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form](https://www.idmanagement.gov/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
+The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct), also facilitates remote PIV and PIV-I testing in support of FPKI [annual reviews]({{site.baseurl}}/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}, reducing travel and resource time and costs. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
 
 You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 # Submitting a CCT Test Results Package
 If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
 
-1.	A completed [testing application](https://www.idmanagement.gov/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} for each PCI configuration evaluated (See Section 1 of the application for more information).
+1.	A completed [testing application]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} for each PCI configuration evaluated (See Section 1 of the application for more information).
 2.	All accompanying Card Conformance Tool Log files, these reside in the same directory as the extracted package after the tests have been run:
   - logs (directory)   
   - piv-artifacts (directory)   

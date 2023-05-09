@@ -61,7 +61,7 @@ We will issue an announcement in June detailing next steps in the transition pro
 
 POSTED: April 14, 2022
 
-PACS APL testing form has undergone a major revision.  The new testing APL Application form consolidates multiple documents and reduces redundant information across those forms.  All submissions for upgrade will only need to submit a completed new APL Application form unless a significant change to architecture requires new FRTC per the lab's discretion.  Submission directions have been updated on the [FIPS 201 Evaluation Program page](../../fips201/)
+PACS APL testing form has undergone a major revision.  The new testing APL Application form consolidates multiple documents and reduces redundant information across those forms.  All submissions for upgrade will only need to submit a completed new APL Application form unless a significant change to architecture requires new FRTC per the lab's discretion.  Submission directions have been updated on the [FIPS 201 Evaluation Program page]({{site.baseurl}}/fips201/)
 
 [Return to Top](#top)
 
@@ -74,7 +74,7 @@ PACS FRTC v1.4.2 Rev B has been published and is in effect immediately. This rev
 - Mobile / Handheld FRTC Test Cases (Section 8) are re-enstated.
 - Corrections and clarifications to existing test cases.
 
-The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf](../../docs/fips201-frtc-142-revb-change-log.pdf){:target="_blank"}{:rel="noopener noreferrer"} document.
+The full change log can be found in the [FIPS201 FRTC 142 RevB Change Log.pdf]({{site.baseurl}}/docs/fips201-frtc-142-revb-change-log.pdf){:target="_blank"}{:rel="noopener noreferrer"} document.
 
 [Return to Top](#top)
 
@@ -88,7 +88,7 @@ PACS FRTC v1.4.2 Revision A has been published and is in effect immediately. Thi
 - On-Card Comparison (OCC)
 - Backend Registration for PACS
 
-Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page](../../fips201/).
+Additionally, a new testing procedure called the FRTC Express has been published and will be enacted for those solutions that have previously undergone full testing. The FRTC Express is aimed at streamlining testing associated with solution updates. Associated document updates are available on the [FIPS 201 Evaluation Program page]({{site.baseurl}}/fips201/).
 
 [Return to Top](#top)
 
@@ -108,7 +108,7 @@ Please note the removal of this category should not impact any existing acquisit
 
 POSTED April 30, 2019
 
-The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories, the program found that:
+The FIPS 201 Evaluation program has removed the following categories from the [Approved Products List]({{site.baseurl}}/acquisition-professionals/#products). After analyzing the Approved Products List categories, the program found that:
 
 - OCSP Responders are mature. OCSP responders and related products are available as commercial off the shelf products and open source software products. They are part of a stable landscape and vetted thousands of times daily by various relying party applications. It is not in the government’s or commercial best interests to continue to test these products prior to acquisition and/or installation.
 - SCVP Client and SCVP Client (without auth) are not widely used in U.S. federal agencies. It is not in the government’s or commercial best interests to continue to maintain testing scenarios for these products.
@@ -134,7 +134,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 POSTED June 30, 2018
 
-In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List](../../buy/removed-products-list/).
+In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List]({{site.baseurl}}/removed-products-list/).
 
 [Return to Top](#top)
 
@@ -142,7 +142,7 @@ In the past, the FIPS 201 Evaluation Program has granted extensions for allowing
 
 POSTED August 18, 2017
 
-The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program](../../fips201/) page for information about the testing process or to submit a credential for testing.
+The FIPS 201 Evaluation Program has established the criteria for testing derived PIV credentials. See the [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/) page for information about the testing process or to submit a credential for testing.
 
 [Return to Top](#top)
 
@@ -162,7 +162,7 @@ The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue t
 
 POSTED October 29, 2016
 
-The FIPS 201 Evaluation Program has removed the following categories, displayed in the table below, from the [Approved Products List](../../buy#products). After analyzing the Approved Products List categories, the Program found that:
+The FIPS 201 Evaluation Program has removed the following categories, displayed in the table below, from the [Approved Products List]({{site.baseurl}}/acquisition-professionals/#products). After analyzing the Approved Products List categories, the Program found that:
 
 - Many products on the APL are not for sale anymore
 - Most testing and approval procedures were outdated
@@ -170,24 +170,24 @@ The FIPS 201 Evaluation Program has removed the following categories, displayed 
 
 Below are some resources that provide information, guidance, or a replacement certification list for some of the removed FIPS 201 categories:
 
-- Guidance through the [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}
+- Guidance through the [FICAM Playbooks]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"}
 - Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
-- New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)](../../docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
+- New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
 
 Please note that the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
 
 | Categories Removed	| Replacement |
 | ------------------- | ----------- |
-| Card Printer Station	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
+| Card Printer Station	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | Certificate Validator	| Server-based Certificate Validation Protocol Category |
 | Cryptographic Module	| [NIST FIPS 140-2 Validation List](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"} |
-| Electronic Personalization	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
-| Facial Image Capturing Camera	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
-| Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}|
-| Graphical Representation	| [FPKIPA Annual PIV Credential Issuer Testing](../../docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
+| Electronic Personalization	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
+| Facial Image Capturing Camera	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
+| Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}|
+| Graphical Representation	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Caching Status Proxy	| Server-based Certificate Validation Protocol Category |
-| LACS Mobile Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
-| LACS Transparent Reader	| [FICAM Playbooks](https://playbooks.idmanagement.gov/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
+| LACS Mobile Transparent Reader	| [FICAM Playbooks]({{site.baseurl}}/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
+| LACS Transparent Reader	| [FICAM Playbooks]({{site.baseurl}}/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
 | PIV Middleware	| [NIST PIV Middleware Certification List](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} |
 | Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://fbibiospecs.fbi.gov/certifications-1/cpl){:target="_blank"}{:rel="noopener noreferrer"} |
 | Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
@@ -199,7 +199,7 @@ Please note that the removal of these categories should not impact any acquisiti
 
 POSTED June 23, 2016
 
-In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program will be removing legacy RNG PIV credential listed on the [Approved Products List](../../buy#products) on July 31, 2017.
+In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program will be removing legacy RNG PIV credential listed on the [Approved Products List]({{site.baseurl}}/acquisition-professionals/#products) on July 31, 2017.
 
 According to this transition plan, agencies may continue to procure and issue credentials using implementations marked as “legacy” on the [NPIVP validation list](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"} until June 30, 2017. However, the agencies should migrate to fully compliant credentials implementing approved DRBGs as soon as DRBG PIV credential and the compatible credential management software are commercially available. Once issued, these “legacy” RNG PIV credentials may be used until their expiration date – up to June 30, 2023.
 
@@ -221,6 +221,6 @@ As new questions are posted to the [“Issues” section](http://github.com/GSA/
 
 POSTED June 13, 2014
 
-The FIPS 201 Evaluation Program received and analyzed multiple comments on the removal of tri-interface credentials from the [Approved Products List (APL)](../../buy#products). To provide further clarification, tri-interface credentials refers to PIV credentials that have additional non-PIV authentication features such as a mag stripe and 125 kHz antenna. The Program has been asked to remove these types of credentials from the APL because they have become an enabler for some buildings to postpone or altogether avoid deploying compliant Physical Access Control Systems (PACS); our intent was to close this loophole. Two years ago, the Program removed transparent readers from the APL to align products with policy and standards by utilizing PKI for PACS and LACS. We are now removing tri-interface credentials from the APL so buildings can migrate away from legacy forms of access control and align with policy and directives.
+The FIPS 201 Evaluation Program received and analyzed multiple comments on the removal of tri-interface credentials from the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products). To provide further clarification, tri-interface credentials refers to PIV credentials that have additional non-PIV authentication features such as a mag stripe and 125 kHz antenna. The Program has been asked to remove these types of credentials from the APL because they have become an enabler for some buildings to postpone or altogether avoid deploying compliant Physical Access Control Systems (PACS); our intent was to close this loophole. Two years ago, the Program removed transparent readers from the APL to align products with policy and standards by utilizing PKI for PACS and LACS. We are now removing tri-interface credentials from the APL so buildings can migrate away from legacy forms of access control and align with policy and directives.
 
 While we received mostly very positive feedback about this decision, we have received feedback that highlighted a number of legitimate use cases that we would be negatively impacting agencies. The Program is going to delay the removal of the tri-interface credentials from the APL from 6 to 18 months. In 18 months the FIPS 201 Evaluation Program will no longer test or list tri-interface credentials on the APL. **Note that PIV Issuers are required to use APL approved credential stock, so beginning in 18 months issuance of tri-interface PIV credentials will not be allowed.**

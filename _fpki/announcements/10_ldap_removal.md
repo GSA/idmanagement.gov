@@ -25,7 +25,7 @@ The proposed action should not impact FPKI relying parties, provided they are pr
 - LDAP support was deprecated in 2013, and the last certificate issued by the old FCPCA with an FPKI LDAP URI expired in 2020 
 - The old FCPCA Self-signed root certificate expires in 2030 and contains one LDAP URI in the SIA to a Directory entry that contains no certificates
 
-As a result, of these mitigating factors, there should be no impacts to any relying parties that have successfully migrated to the [FCPCAG2 trust anchor](https://playbooks.idmanagement.gov/fpki/certsandcrls/), nor is there an ability to dynamically conduct full path discovery and validation of an end entity certificate to the old FCPCA, per the previous migration effort.
+As a result, of these mitigating factors, there should be no impacts to any relying parties that have successfully migrated to the [FCPCAG2 trust anchor]({{site.baseurl}}/fpki/certsandcrls/), nor is there an ability to dynamically conduct full path discovery and validation of an end entity certificate to the old FCPCA, per the previous migration effort.
 
 If you have any questions regarding this action please contact:
 fpki dash help at gsa dot gov

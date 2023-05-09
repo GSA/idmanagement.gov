@@ -204,10 +204,11 @@ collections:
     output: true
     permalink: /fpki/:path/  
 
-# Unsure if needs to be added.
-  # ficampm:
-  #   output: true
-  # permalink: /pm/:path/
+# Leaving in place: 
+# Unsure of placement in new site.
+  ficampm:
+    output: true
+    permalink: /pm/:path/
 
   
 

@@ -51,7 +51,7 @@ The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federa
 5. Improving security posture - Quickly resolve unauthorized access actions by centralizing authentication and monitoring activity.
 
 Agencies can use this playbook to centralize application access for agency employees and contractors or federate access with other federal executive agencies. Updates to this playbook may include federating outside of the federal executive branch, but it is not included in this current version.
-This playbook outlines a five-step process to implement or modernize an Enterprise SSO service aligned with the [Federal Identity, Credential, and Access Management (FICAM) architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their access management systems for federal employee access to internal or external applications. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning. 
+This playbook outlines a five-step process to implement or modernize an Enterprise SSO service aligned with the [Federal Identity, Credential, and Access Management (FICAM) architecture]({{site.baseurl}}/why/icam/){:target="_blank"}{:rel="noopener noreferrer"}. This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their access management systems for federal employee access to internal or external applications. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning. 
 
 ### Key Terms
 These are key terms used throughout this document.
@@ -255,7 +255,7 @@ In addition to system integration, the architecture review should include:
 - Application level processes for new user community support.
 
 Figure 3 provides a view of an example architecture, including where the Enterprise SSO is located within that architecture, and other potential integration points. 
-For additional information related to the architecture, visit the [FICAM Architecture Playbook Systems Component Examples]({{site.baseurl}}/arch/components){:target="_blank"}{:rel="noopener noreferrer"}.
+For additional information related to the architecture, visit the [FICAM Architecture Playbook Systems Component Examples]({{site.baseurl}}/university/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <img src="{{site.baseurl}}/assets/playbooks/sso-ficam-components.png" alt="FICAM Architecture component view of Single Sign-On." width="560" height="334">
 

@@ -25,7 +25,7 @@ The Certificate Profile Conformance Tool (CPCT) is an application that supports 
 
 CPCT use can enhance detection of certificate profile issues during FPKI development and maintenance phases.
 
-In conjunction with the [Card Conformance Tool (CCT)]({{site.baseurl}}/fpki/tools/cct), the CPCT Tool enables FPKI stakeholders to perform remote testing. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form](https://www.idmanagement.gov/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
+In conjunction with the [Card Conformance Tool (CCT)]({{site.baseurl}}/fpki/tools/cct), the CPCT Tool enables FPKI stakeholders to perform remote testing. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
 
 # Accessing the CPCT Application
 

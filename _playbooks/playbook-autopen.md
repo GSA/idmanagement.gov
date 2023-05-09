@@ -51,7 +51,7 @@ This playbook outlines the process for an agency to implement a Digital Autopen 
 2. [Define controls](#step-2-define-controls) to ensure the certificate and associated key are used only for the intended purpose. 
 3. [Obtain a role-based digital signature certificate](#step-3-obtain-a-digital-autopen-certificate) from a Federal Public Key Infrastructure (PKI) Shared Service Provider. 
 
-This playbook recommends using a role-based signature certificate issued to a hardware device (e.g., smart card, USB hardware device, or other FIPS–140 Level 2  certified hardware) from a [Federal PKI Certification Authority](https://www.idmanagement.gov/buy/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. [Federal Agency Certification Authorities](https://playbooks.idmanagement.gov/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate on their own. The digital autopen certificate can only digitally sign documents. An agency should consider additional controls to limit its use only to sign *Federal Register* documents. This playbook supports [OMB Circular A-130 goals](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}, including developing and implementing processes to support employee digital signatures.
+This playbook recommends using a role-based signature certificate issued to a hardware device (e.g., smart card, USB hardware device, or other FIPS–140 Level 2  certified hardware) from a [Federal PKI Certification Authority]({{site.baseurl}}/who/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. [Federal Agency Certification Authorities]({{site.baseurl}}/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate on their own. The digital autopen certificate can only digitally sign documents. An agency should consider additional controls to limit its use only to sign *Federal Register* documents. This playbook supports [OMB Circular A-130 goals](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}, including developing and implementing processes to support employee digital signatures.
 
 Send any questions on the process to ICAM at gsa.gov. 
 
@@ -108,7 +108,7 @@ However, in some circumstances, only the federal executive has the authority to 
 
 A digital signature is a cryptographically secure electronic signature. An agency achieves the cryptographic component by using a PKI certificate. For more information on the difference between electronic and digital signatures, see the [Federal CIO Council guidance on the Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}. An agency can request a role-based digital signature certificate from a Federal PKI Shared Service Provider. A PIV card is issued to a single person and not shared under any circumstance. 
 
-This playbook outlines the process for federal agencies to create a Federal Register digital autopen process. It outlines controls around the digital autopen certificate to meet the OFR's digital signature requirements for Federal Register documents and federal cybersecurity. For instructions on digitally signing a Federal Register document, see the [FICAM Playbook Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/).
+This playbook outlines the process for federal agencies to create a Federal Register digital autopen process. It outlines controls around the digital autopen certificate to meet the OFR's digital signature requirements for Federal Register documents and federal cybersecurity. For instructions on digitally signing a Federal Register document, see the [FICAM Playbook Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/).
 
 An agency may implement or update a process by following these three playbook steps.
 
@@ -192,7 +192,7 @@ Due to unique agency risks, the working group identifies the below optional cont
 
 ## Step 3. Obtain a Digital Autopen Certificate
 
-A digital autopen certificate is available from any Federal PKI Shared Service Provider. [Federal Agency Legacy PKI](https://playbooks.idmanagement.gov/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate for their agency. An agency must request a **ROLE-BASED SIGNATURE CERTIFICATE**. Check with your Homeland Security Presidential Directive-12 Security Office or PIV card issuer if they can issue a role-based certificate. Federal PKI Shared Service Providers are listed as government identity providers on [idmanagement.gov](https://www.idmanagement.gov/buy/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. They provide Federal PKI certificates and PIV services.
+A digital autopen certificate is available from any Federal PKI Shared Service Provider. [Federal Agency Legacy PKI]({{site.baseurl}}/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate for their agency. An agency must request a **ROLE-BASED SIGNATURE CERTIFICATE**. Check with your Homeland Security Presidential Directive-12 Security Office or PIV card issuer if they can issue a role-based certificate. Federal PKI Shared Service Providers are listed as government identity providers on [idmanagement.gov]({{site.baseurl}}/who/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. They provide Federal PKI certificates and PIV services.
 
 While OFR accepts any Federal PKI digital signature certificate, this playbook recommends a hardware-based certificate issued to a FIPS-140 Level 2 certified hardware device such as a visually distinct, approved smart card or USB device such as a FIDO authenticator. Below are examples of the Common Name used in digital autopen certificates.
 
@@ -213,8 +213,8 @@ This paper outlines a process for an agency to create and leverage a digital aut
 
 1. [Office of the Federal Register's Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 2. [Federal CIO Council & Federal Public Key Infrastructure Policy Authority (FPKIPA) - Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}
-4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}
+4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## Appendix B. Policy Recommendations
 
@@ -232,7 +232,7 @@ Resolution: The Federal PKI Policy Authority identified existing procedures for 
 
 ### Recommendation 3. Update FICAM Playbook on Digitally Signing an OFR Document
 
-Recommendation: Update the [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document](https://playbooks.idmanagement.gov/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"} in line with this paper.
+Recommendation: Update the [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"} in line with this paper.
 Resolution: Pending final digital autopen paper.
 
 ### Recommendation 4. Update the Federal CIO E-Signature Document
