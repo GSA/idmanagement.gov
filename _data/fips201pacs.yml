@@ -185,48 +185,51 @@
   validation: HID Global Validation System for Gallagher Command Centre
   valurl: /docs/apl-10020-gallagher-validation.pdf
   valapl: 10020
-  reader1: Gallagher T10 PIV Reader
-  reader1url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader1: Gallagher High Sec T10 Reader
+  reader1url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader1apl: 10021
-  reader2: Gallagher T11 PIV Reader Multi Tech
-  reader2url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader2: Gallagher High Sec T11 Reader - Multi-Tech
+  reader2url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader2apl: 10023
-  reader3: Gallagher T11 PIV Reader
-  reader3url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader3: Gallagher High Sec T11 Reader
+  reader3url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader3apl: 10022
-  reader4: Gallagher T15 PIV Reader Multi Tech
-  reader4url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader4: Gallagher High Sec T15 Reader – Multi-Tech
+  reader4url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader4apl: 10102
-  reader5: Gallagher T15 PIV Reader
-  reader5url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader5: Gallagher High Sec T15 Reader
+  reader5url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader5apl: 10101
-  reader6: Gallagher T20 PIV Reader Multi-Tech
-  reader6url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader6: Gallagher High Sec T20 Reader - Multi-Tech
+  reader6url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader6apl: 10039
-  reader7: Gallagher T20 PIV Reader
-  reader7url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader7: Gallagher High Sec T20 Reader
+  reader7url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader7apl: 10038
-  reader8: Gallagher T21 PIV Reader Multi-Tech
-  reader8rul: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader8: Gallagher High Sec T21 Reader - Multi-Tech
+  reader8rul: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
   reader8apl: 10100
-  reader9: Gallagher T21 PIV Reader
-  reader9url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
-  reader9apl: 10099
-  reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader10url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
-  reader10apl: 10092
-  reader11: Veridt Stealth Dual Contact/Contactless Keypad Reader
+  reader9: Gallagher High Sec T21 Reader Rev 1
+  reader9rul: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
+  reader9apl: 10143
+  reader10: Gallagher High Sec T21 Reader
+  reader10url: /docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf
+  reader10apl: 10099
+  reader11: Veridt Bio Dual Contact/Contactless Keypad Reader
   reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader11apl: 10093
-  reader12: Veridt Stealth Lite Dual Contact /Contactless Reader
+  reader11apl: 10092
+  reader12: Veridt Stealth Dual Contact/Contactless Keypad Reader
   reader12url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader12apl: 10094
-  reader13: Veridt Stealth Contactless Keypad Reader
+  reader12apl: 10093
+  reader13: Veridt Stealth Lite Dual Contact /Contactless Reader
   reader13url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader13apl: 10095
-  reader14: Veridt Stealth Lite Contactless Reader 
+  reader13apl: 10094
+  reader14: Veridt Stealth Contactless Keypad Reader
   reader14url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
-  reader14apl: 10096
+  reader14apl: 10095
+  reader15: Veridt Stealth Lite Contactless Reader 
+  reader15url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
+  reader15apl: 10096
 
 - category: 13.01
   fipsstatus: Approved
@@ -366,7 +369,7 @@
   reader9url: /docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf
   reader9apl: 10006
   reader10: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader10url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader10url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
   reader10apl: 10092
   reader11: Veridt Stealth Dual Contact/Contactless Keypad Reader
   reader11url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
@@ -393,7 +396,7 @@
   reader1url: /docs/apl-10128-29-allegion.pdf
   reader1apl: 10128
   reader2: Veridt Bio Dual Contact/Contactless Keypad Reader
-  reader2url: /docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf
+  reader2url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
   reader2apl: 10092
   reader3: Veridt Stealth Dual Contact/Contactless Keypad Reader
   reader3url: /docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf
@@ -596,3 +599,15 @@
   reader2: Cheetah SE Reader
   reader2url: /docs/apl-10109-130-cheetah.pdf
   reader2apl: 10130
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: Genetec Security Center - Synergis 10145
+  infraurl: /docs/apl-10145-genetec.pdf
+  infraapl: 10145
+  validation: TI Entry Point Validation System for Genetec Security Center - Synergis 10146
+  valurl: /docs/apl-10146-genetec-ti-validation.pdf
+  valapl: 10146
+
+
+
