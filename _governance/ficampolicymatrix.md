@@ -39,7 +39,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
 
 
 | Document Name | Publication Date | Categories | More Information |
-|---|---|---|---|
+| --- | --- | --- | --- |
 {% for document in site.data.laws-policies-standards %}
 | [document.shortName]({% link _governance/ficampolicydetails.md %}) | {{ document.published }} | {% for category in document.category %} {{ category }}<br> {% endfor %} | {{ document.url }} |
 {% endfor %}
