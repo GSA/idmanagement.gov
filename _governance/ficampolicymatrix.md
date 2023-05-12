@@ -1,13 +1,10 @@
 ---
-# This section is called the front matter, remove the comments in your page template.
 layout: page
 collection: governance
 title: FICAM Policy Matrix
 permalink: governance/policymatrix/
+sidenav: governance
 sticky_sidenav: true
-sidenav: true
-# Look at _data/navigation.yml to create sidenav - Example: pm
-# If you have headers in your doc, you can create a 2nd level navigation with subnav:
 
 subnav:
   - text: Introduction
@@ -29,7 +26,7 @@ Laws, executive policies, regulations, and government standards drive multiple f
 
 Insert picture of policy matrix
 
-<img src="{{site.baseurl}}/img/ficam-policy-landscape-map.png" alt="A map of the FICAM Policy Landscape">
+<img src="{{site.baseurl}}/assets/img/ficam-policy-landscape-map.png" alt="A map of the FICAM Policy Landscape">
 
 ## Policy Table
 
