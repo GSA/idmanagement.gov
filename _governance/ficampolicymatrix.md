@@ -45,7 +45,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
 <table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
-      <th id="pacs-table-heading-infra" scope="col">Document Name</th>
+      <th id="pacs-table-heading-infra" scope="col">Document Name/Link</th>
       <th id="pacs-table-heading-fipsstatus" scope="col">Publication Date</th>
       <th id="pacs-table-heading-validation" scope="col">Categories</th>
       <th id="pacs-table-heading-cardreader" scope="col">More Information</th>
@@ -54,14 +54,22 @@ The markdown page will pull information from a data yml (sample file) that inclu
   <tbody>
       {% for document in site.data.laws-policies-standards %}
           <tr>
-            <td><a href="{{site.baseurl}}{% link _governance/ficampolicydetails.md %}">{{document.shortName}}</a></td>
+            <td>
+              <a href="{{document.url}}">
+                {{document.shortName}}
+              </a>
+            </td>
             <td>{{ document.published }}</td>
             <td>
             {% for category in document.category %}
               {{ category }}<br>
             {% endfor %}
             </td>
-            <td>{{ document.url }}</td>
+            <td>
+              <a href="{{site.baseurl}}{% link _governance/ficampolicydetails.md %}">
+                More Info
+              </a>
+            </td>
           </tr>
       {% endfor %}
   </tbody>
