@@ -1,0 +1,44 @@
+# List of Laws, Policies, and Standards.
+# For category, always use workforce or citizen identity. Use other words aligned with FICAM services framework.
+
+- longName: OMB Memo 21-04 - Modernizing Access to and Consent for Disclosure of Records Subject to the Privacy Act 
+  shortName: OMB Memo 21-04
+  published: 11/12/2020
+  fy: 2021
+  description: This Memorandum provides guidance for Federal agencies to modernize the processes by which individuals may request access to, and consent to the disclosure of, records protected under the Privacy Act of 1974.
+  category: 
+  - Citizen Identity
+  - Remote Identity Proofing
+  - Authentication 
+  url: https://www.whitehouse.gov/wp-content/uploads/2020/11/M-21-04.pdf
+
+- longName: OMB Memo 20-19 - Harnessing Technology to Support Mission Continuity
+  shortName: OMB Memo 20-19
+  published: 03/22/2020
+  fy: 2020
+  description: In response to the national emergency for COVID-19, agencies are directed to use the breadth of available technology capabilities to fulfill service gaps and deliver mission outcomes. 
+  category: 
+  - Workforce Identity
+  - Remote Access
+  - PACS
+  - PIV Fingerprinting
+  - PIV Reissuance
+  - Alternative Credential
+  url: https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-19.pdf
+  
+- longName: OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles
+  shortName: OMB Memo 22-09
+  published: 01/26/2022
+  fy: 2022
+  description: This memorandum sets forth a Federal zero trust architecture (ZTA) strategy, requiring agencies to meet specific cybersecurity standards and objectives by the end of Fiscal Year (FY) 2024 in order to reinforce the Government’s defenses against increasingly sophisticated and persistent threat campaigns. 
+  category: 
+  - Workforce Identity
+  - Citizen Identity
+  - Zero Trust
+  - MFA
+  - Phishing-Resistant
+  - Centralized Idenity System
+  - Password
+  - Privileged Access Management
+  - ABAC
+  url: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
