@@ -37,15 +37,14 @@ Insert picture of policy matrix
 The markdown page will pull information from a data yml (sample file) that includes the document name, short name, internally created identifier, short description, hierarchical  mapping (e.g., HSPD-12 -> FIPS 201 -> NIST SP XX), date published, fiscal year published, standardized category (e.g., PIV, MFA, Workforce Identity, Public Identity, etc.), and persistent URL (hosted page rather than direct PDF if available). 
 {% endcomment %}
 
-
+{% comment %}
 | Document Name | Publication Date | Categories | More Information |
 | --- | --- | --- | --- |
 {% for document in site.data.laws-policies-standards %}
-| [document.shortName]({% link _governance/ficampolicydetails.md %}) | {{ document.published }} | {% for category in document.category %} {{ category }}<br> {% endfor %} | {{ document.url }} |
+| [ document.shortName ]({% link _governance/ficampolicydetails.md %}) | {{ document.published }} | {% for category in document.category %} {{ category }}<br> {% endfor %} | {{ document.url }} |
 {% endfor %}
+{% endcomment %}
 
-
-{% comment %}
 <table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
@@ -58,7 +57,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
   <tbody>
       {% for document in site.data.laws-policies-standards %}
           <tr>
-            <td>[document.shortName]({% link _governance/ficampolicydetails.md %})</td>
+            <td> [ {{ document.shortName }} ]({% link _governance/ficampolicydetails.md %}) </td>
             <td>{{ document.published }}</td>
             <td>
             {% for category in document.category %}
@@ -70,4 +69,4 @@ The markdown page will pull information from a data yml (sample file) that inclu
       {% endfor %}
   </tbody>
 </table>
-{% endcomment %}
+
