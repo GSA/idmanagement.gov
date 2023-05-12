@@ -4,9 +4,8 @@ layout: page
 collection: governance
 title: FICAM Policy Matrix
 permalink: governance/policymatrix/
-# Exmple: pm/ for landing pages choose a friendly permalink which is easy to share and remember
 sticky_sidenav: true
-sidenav: 
+sidenav: true
 # Look at _data/navigation.yml to create sidenav - Example: pm
 # If you have headers in your doc, you can create a 2nd level navigation with subnav:
 
@@ -39,7 +38,14 @@ The markdown page will pull information from a data yml (sample file) that inclu
 {% endcomment %}
 
 
+| Document Name | Publication Date | Categories | More Information |
+|---|---|---|---|
+{% for document in site.data.laws-policies-standards %}
+| [document.shortName]({% link _governance/ficampolicydetails.md %}) | {{ document.published }} | {% for category in document.category %} {{ category }}<br> {% endfor %} | {{ document.url }} |
+{% endfor %}
 
+
+{% comment %}
 <table class="usa-table--borderless">
   <thead class="usa-sr">
     <tr>
@@ -64,4 +70,4 @@ The markdown page will pull information from a data yml (sample file) that inclu
       {% endfor %}
   </tbody>
 </table>
-
+{% endcomment %}
