@@ -54,7 +54,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
   <tbody>
       {% for document in site.data.laws-policies-standards %}
           <tr>
-            <td> [{{ document.shortName }}]({% link _governance/ficampolicydetails.md %}) </td>
+            <td><a href="{{site.baseurl}}{% link _governance/ficampolicydetails.md %}">{{document.shortName}}</td>
             <td>{{ document.published }}</td>
             <td>
             {% for category in document.category %}
