@@ -64,13 +64,11 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 - [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
   - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
   - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}, [SP 800-73-4-based Test Runner](https://csrc.nist.gov/News/2016/New-SP-800-73-4-based-Test-Runner-Release){:target="_blank"}{:rel="noopener noreferrer"}, and the [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
-- [Personal Identity Verification (PIV) Credential (PDF, January 2010)]({{site.baseurl}}/docs/fips201ep-pivtestprocedures.pdf){:target="_blank"}{:rel="noopener noreferrer"} – These test procedures are used by the independent, third-party labs to test card stock.
+- [Personal Identity Verification (PIV) Card Body Approval Procedures, V 11.0 (PDF, April 2023)]({{site.baseurl}}/docs/piv-card-body-approval-procedures_v11.0.0.pdf){:target="_blank"}{:rel="noopener noreferrer"} – approval procedures that outline the evaluation criteria, approval mechanisms, and validation test reports to be employed and provided by the Evaluation Laboratory based on their evaluation of a vendor/ supplier’s PIV Card body (product), to be provided to the FIPS 201 EP for evaluation to be placed on the Approved Products List (APL).
 
 ## PIV Card Body Application Package Requirements
 
 All applicants, please complete the following steps:
-
-[](){:target="_blank"}{:rel="noopener noreferrer"}
 
 1. Review the [Personal Identity Verification (PIV) Card Body Approval Procedures v11.0 (PDF, April 2023)]({{site.baseurl}}/docs/piv-card-body-approval-procedures_v11.0.0.pdf){:target="_blank"}{:rel="noopener noreferrer"} – outlining the approval procedures and evaluation criterion for getting the PIV Card body (Product) on the APL and Section 2 Application Package
 2. Provide the Product itself (see Section 2) of the [Personal Identity Verification (PIV) Card Body Approval Procedures v11.0 (PDF, April 2023)]({{site.baseurl}}/docs/piv-card-body-approval-procedures_v11.0.0.pdf){:target="_blank"}{:rel="noopener noreferrer"} 
