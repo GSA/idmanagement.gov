@@ -10,7 +10,7 @@ eight.
 			<div class="desktop:grid-col-12">
 				<ul class="usa-card-group">
 					<li class="usa-card tablet:grid-col-6">
-						<div class="usa-card__container shadow-3">
+						<div class="usa-card__container gsa-card-shadow">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Most viewed</h3>				
 							</div>
@@ -38,7 +38,7 @@ eight.
 						</div>
 					</li>
 					<li class="usa-card tablet:grid-col-6">
-						<div class="usa-card__container shadow-3">
+						<div class="usa-card__container gsa-card-shadow">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Cyber news</h3>
 								
@@ -173,7 +173,7 @@ eight.
 		<ul class="usa-card-group">							
 			<li class="usa-card tablet:grid-col-6">
 				<a class="gsa-no-dec" href="fips201/" target="_blank">
-				<div class="usa-card__container shadow-2">
+				<div class="usa-card__container gsa-card-shadow">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">FIPS 201 Evaluation Program</h3>
 					</div>
@@ -199,7 +199,7 @@ eight.
 			</li>
 			<li class="usa-card tablet:grid-col-6">
 				<a class="gsa-no-dec" href="fpki/" target="_blank">
-				<div class="usa-card__container shadow-2">
+				<div class="usa-card__container  gsa-card-shadow">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">Federal Public Key Infrastructure Guide Introduction</h3>
 					</div>
@@ -228,340 +228,45 @@ eight.
 	<br>
 	<h2  class="hero-heading" style="text-align: center">Playbooks</h2>
 	<hr><br>
-	<!-- Row 1 -->
+	<!-- Playbooks Section - data driven -->
 	<div class="desktop:grid-col-12">						
-		<ul class="usa-card-group">							
+		<ul class="usa-card-group">	
+			{% for playbook in site.data.playbooks | sort: "title"%}						
 			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/cloud/" target="_blank">
-				<div class="usa-card__container shadow-2">
+				<a class="gsa-no-dec" href="{{site.baseurl}}{{playbook.url}}" target="{{playbook.target}}">
+				<div class="usa-card__container gsa-card-shadow">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Cloud Identity Playbook</h3>
+						<h3 class="site-preview-heading">{{playbook.title}}</h3>
 					</div>
 					<div class="usa-card__media">
 					<div class="usa-card__img">
 						  <img
-							src="{{site.baseurl}}/assets/playbooks/headers/playbook_04.png"
-							alt="Cloud Identity Playbook"
+							src="{{site.baseurl}}{{playbook.header}}"
+							alt="{{playbook.title}}"
 						  />
 						</div>
 					</div>
 					<hr>
 					<div class="usa-card__body">
-						<p>The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.</p>
+						<p>{{playbook.description}}</p>
 					</div>
 					<hr>
 					<div class="usa-card__footer">
 						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2022-12 <br><span class="usa-tag bg-accent-warm">Markdown</span>
+						Latest Update: {{playbook.pubdate}} <br><span class="usa-tag bg-accent-warm">{{playbook.type}}</span>
 					</div>
 				</div>
 				</a>
 			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/autopen/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Digital Autopen Playbook</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_02.png"
-							  alt="Digital Autopen Playbook"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>This playbook outlines the process for an agency to implement a Digital Autopen for Federal Register documents.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2023-03 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/dira/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Digital Identity Risk Assessment Playbook</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_03.png"
-							  alt="Digital Identity Risk Assessment Playbook"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2020-09 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
+	{% if forloop.index == 3 %}
 		</ul>
 	</div>
-	<!-- Row 2 -->
 	<div class="desktop:grid-col-12">						
-		<ul class="usa-card-group">							
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/signword/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Digitally Sign a Microsoft Word Document</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_01.png"
-							  alt="Digitally Sign a Microsoft Word Document"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2018-03 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/signfedregister/" target="_blank">			
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Digitally Sign an Office of the Federal Register Document</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_06.png"
-							  alt="Digitally Sign an Office of the Federal Register Document"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2022-08 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>	
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/dw/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Digital Worker Identity Playbook</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_05.png"
-							  alt="Digital Worker Identity Playbook"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2022-12 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<!-- Row 3 -->
-	<div class="desktop:grid-col-12">						
-		<ul class="usa-card-group">							
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/sso/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Enterprise Single Sign-On Playbook</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_09.png"
-							  alt="Enterprise Single Sign-On Playbook"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2021-11 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/docs/roadmap-ficam.pdf" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_10.png"
-							  alt="Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>The FICAM Roadmap contains processes, procedures, and considerations for planning and managing identity, credential, and access management programs. Note: This document has been superseded by the FICAM Architecture.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2011-12 <br><span class="usa-tag bg-accent-warm">PDF</span>
-					</div>
-				</div>
-				</a>
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/docs/playbook-identity-governance-framework.pdf" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">ICAM Governance Framework Version 1.0</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_07.png"
-							  alt="ICAM Governance Framework Version 1.0"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2021-09 <br><span class="usa-tag bg-accent-warm">PDF</span>
-					</div>
-				</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	<!-- Row 4 -->
-	<div class="desktop:grid-col-12">						
-		<ul class="usa-card-group">							
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/ilm/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Identity Lifecycle Management Playbook</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_08.png"
-							  alt="Identity Lifecycle Management Playbook"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2022-12 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/pivi/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">PIV-I for Federal Agencies</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_12.png"
-							  alt="PIV-I for Federal Agencies"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>This guide helps federal agencies understand how federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) achieve interoperability with the PIV infrastructure.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2022-04 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/playbooks/pam/" target="_blank">
-				<div class="usa-card__container shadow-2">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Privileged Identity Playbook</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_11.png"
-							  alt="Privileged Identity Playbook"
-							  />
-							</div>
-					</div>
-					<hr>
-					<div class="usa-card__body">
-						<p>This Playbook provides federal agencies with best practices in managing its privileged user population.</p>
-					</div>
-					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: 2022-12 <br><span class="usa-tag bg-accent-warm">Markdown</span>
-					</div>
-				</div>
-				</a>
-			</li>
-		</ul>
-	</div>
+		<ul class="usa-card-group">		
+	{% endif %}
+	{% endfor %}
+</ul>
+</div>
 
 </div>
 </section>
-<!-- End of Lower Half -->
-

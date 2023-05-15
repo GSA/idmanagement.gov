@@ -1,0 +1,23 @@
+# We can add any kind of data in this _data folder and this file.
+# In this example, we create a simple array of options and then in the _pages/collections.md file we 
+# Reference this data file in 'datafile' in the Front Matter and _layouts/list.html renders it 
+# This is simple, hopefully provides you with a good enough example to make changes as needed
+- title: FICAM Architecture Guide
+  url: /arch/
+  description: The FICAM Architecture guide is a framework for an agency to use in ICAM program and solution roadmap planning. The FICAM Architecture focuses on enterprise identity processes, practices, policies and information security disciplines.
+
+- title: Federal Public Key Infrastructure Guide
+  url: /fpki/
+  description: The Federal Public Key Infrastructure Guide is inteneded to help you understand and use the Federal PKI.
+
+- title: FICAM Program Management Guide
+  url: /ficampm/
+  description: The FICAM Program Management Guide explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program as outlined in the FICAM Architecture Guide.
+
+- title: Physical Access Control Systems Guide
+  url: /pacs/
+  description: The Physical Access Control System (PACS) Guide will help you understand concepts related to Federal Identity, Credential, and Access Management-compliant PACSs.
+  
+- title: Personal Identity Verification Guide
+  url: /piv/
+  description: The Personal Identity Verification (PIV) Guide is intended to help you implement common PIV configurations at your Agency. 

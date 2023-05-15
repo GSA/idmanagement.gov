@@ -72,14 +72,14 @@ how:
 
 ## New who secondary navigation 
 who:
-  # - text: Introduction
-  #   href: /who/ 
-  # - text: Vendors [x]
-  #   href: /vendors/ [x]
-  # - text: Acquisition Professionals [x]
-  #   href: /acquisition-professionals/ [x]
-  # - text: Program Managers [x]
-  #   href: /program-managers/
+  - text: Introduction
+    href: /who/ 
+  - text: Vendors
+    href: /vendors/
+  - text: Acquisition Professionals
+    href: /acquisition-professionals/
+  - text: Program Managers 
+    href: /program-managers/
   # - text: Trust Services [x]
   #   href: /who/trust-services/ [x]
   # - text: GSA ICAM Solutions [x]
@@ -92,12 +92,12 @@ who:
   #   href: /who/lessonslearned/
   # - text: Standards
   #   href: /who/standards/
-  # - text: FIPS 201 Approved Product List - PIV Cards [x]
-  #   href: /approved-products-list-piv/ [x]
-  # - text: FIPS 201 Approved Product List - PACS [x]
-  #   href: /approved-products-list-pacs-products/ [x]
-  # - text: FIPS 201 Removed Product list [x]
-  #   href: /removed-products-list/ [x]
+  - text: FIPS 201 Approved Product List - PIV Cards
+    href: /approved-products-list-piv/
+  - text: FIPS 201 Approved Product List - PACS 
+    href: /approved-products-list-pacs-products/ 
+  - text: FIPS 201 Removed Product list 
+    href: /removed-products-list/ 
 
 
 ## University: for FICAM (University) section
@@ -150,8 +150,8 @@ playbooks:
     href: /playbooks/dw/ 
   - text: Enterprise Single Sign-On Playbook
     href: /playbooks/sso/ 
-  - text: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
-    href: /docs/roadmap-ficam.pdf
+  # - text: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
+  #   href: /docs/roadmap-ficam.pdf
   - text: ICAM Governance Framework Version 1.0
     href: /docs/playbook-identity-governance-framework.pdf
   - text: Identity Lifecycle Management Playbook

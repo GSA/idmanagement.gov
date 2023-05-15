@@ -25,8 +25,7 @@ subnav:
     href: '#card-readers'
   - text: Next Steps
     href: '#next-steps'
-#   - text: 
-#     href: ''
+
 
 ---
 

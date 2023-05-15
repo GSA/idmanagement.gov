@@ -92,26 +92,25 @@ Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/) to view FICAM 
 
 ## PACS Readers
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letters lists the approved reader types, associated APL#, and tested PACS solution.
-- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-29-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-10129-10133-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-22-23-38-39-99-100-101-102-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-130-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [XTec X Series Readers]({{site.baseurl}}/docs/apl-10077-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## PACS Solutions Awaiting Approval
 
 | Position  |    Solution   | APL Numbers | New/Update | Testing Status |
 | --------- | ------------- | ----------- |------------|----------------|
-| 1 | LenelS2 OnGuard with Embedded Authentication (HID PIVClass) | 10112 & 10113 | Update | In queue | 
-| 2 | Genetec + TI solution | New | New | In queue |
-| 3 | Tyco Security Products C-CURE 9000 with Innometriks Validation System | 10115 & 10108 | Update | In queue |
-| 4 | Gallagher PIV Command Centre + HID Validation | 10019 & 10020 | Update | In queue |
-| 5 | LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition | New | New | In queue |
-| 6 | System Galaxy + TI Update | 10083 & 10084 | Update | On hold pending vendor action |
+| 1 |LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition|10112 & 10113|New Reader add|In queue| 
+| 2 |Datawatch + HID pivCLASS|10117 & 10118|Update|In queue| 
+| 3 |Tyco Security Products C-CURE 9000 with Innometriks Validation System|10115 & 10108|Update|On hold pending vendor action| 
+| 4 |System Galaxy + TI Update|10083 & 10084|Update|On hold pending vendor action|
+
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.

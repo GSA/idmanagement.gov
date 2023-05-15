@@ -104,8 +104,8 @@ primary_navigation:
 # Who FICAM is For? top level menu with dropdowns
   - name: Who is FICAM For?
     children:
-      # - name: Introduction
-      #   url: /who/
+      - name: Introduction
+        url: /who/
       - name: Vendors
         url: /vendors/
       - name: Acquisition Professionals
@@ -218,9 +218,11 @@ collections:
   # sell:
   #   output: true
   #   permalink: /sell/:path/
+  
+  # Turned on for visibility until Combined 743 Playbook on Governance is complete
   # governance:
-  #   output: true
-  #   permalink: /governance/:path/
+    output: true
+    permalink: /governance/:path/
 
   pages:
     output: true
