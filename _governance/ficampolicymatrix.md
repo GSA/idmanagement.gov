@@ -31,7 +31,7 @@ Insert picture of policy matrix
 ## Policy Table
 
 {% comment %}
-The markdown page will pull information from a data yml (sample file) that includes the document name, short name, internally created identifier, short description, hierarchical  mapping (e.g., HSPD-12 -> FIPS 201 -> NIST SP XX), date published, fiscal year published, standardized category (e.g., PIV, MFA, Workforce Identity, Public Identity, etc.), and persistent URL (hosted page rather than direct PDF if available). 
+The markdown page will pull information from a data yml (sample file) that includes the document name, short name, internally created identifier, short description, hierarchical  mapping (e.g., HSPD-12 -> FIPS 201 -> NIST SP XX), date published, fiscal year published, standardized category (e.g., PIV, MFA, Workforce Identity, Public Identity, etc.), and persistent URL (hosted page rather than direct PDF if available).
 {% endcomment %}
 
 {% comment %}
@@ -66,7 +66,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
             {% endfor %}
             </td>
             <td>
-              <a href="{{site.baseurl}}{% link _governance/ficampolicydetails.md %}">
+              <a href="{{site.baseurl}}{% link _governance/policies/{{document.shortName}} %}">
                 More Info
               </a>
             </td>
@@ -74,4 +74,3 @@ The markdown page will pull information from a data yml (sample file) that inclu
       {% endfor %}
   </tbody>
 </table>
-

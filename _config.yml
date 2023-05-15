@@ -109,6 +109,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-datapage-generator
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -187,3 +188,9 @@ assets:
     - node_modules/@uswds/uswds/dist/theme
     - node_modules/@uswds/uswds/packages
     - node_modules/netlify-cms/dist
+
+page_gen:
+  - data: 'laws-policies-standards'
+  - template: 'standards_detail'
+  - name: 'shortName'
+  - dir: 'governance/policies'
