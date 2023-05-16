@@ -128,7 +128,17 @@ primary_navigation:
       #   url: /who/technical-leads-and-team-members/
       # - name: PACS
       #   url: /who/pacs/
-  
+
+  # APL Menu for visible display and access of APLs
+  # Note: All APLs are accessible from the below URLs for reference and linking
+  - name: FIPS 201 APLs
+    children: 
+      - name: Approved Product List - PIV Cards
+        url: /approved-products-list-piv/
+      - name: Approved Product List - PACS
+        url: /approved-products-list-pacs-products/
+      - name: Removed Product list
+        url: /removed-products-list/
 
   # FICAM University page
   - name: University

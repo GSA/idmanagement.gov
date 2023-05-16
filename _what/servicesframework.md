@@ -214,13 +214,13 @@ Federation has many different applications, including:
 
 The Federation services in the FICAM architecture include Policy Alignment, Authentication Broker, and Attribute Exchange.
 
-<a href="{{site.baseurl}}/assets/arch/services/federation_definitions.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/federation_definitions.png" alt="A gray box with the Federation service definitions, which are listed in the following body text."></a>
+<a href="{{site.baseurl}}/assets/arch/services/federation_definitions_v2.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/federation_definitions_v2.png" alt="A gray box with the Federation service definitions, which are listed in the following body text."></a>
 
 | Service | Description | Keywords |
 | --- | ------ | -----|
 | Policy Alignment | Develop relationships and a common understanding between parties by establishing authorities, policies, standards, and principles. | Trust Relationship | 
 | Authentication Broker | Transform an authentication event into an alternative format, such as an assertion, containing claims about the entity and the authentication transaction, to grant access to a resource. | Assertion Service, Federation Assertion, Security Token Service |
-| Attribute Exchange | Discover and acquire identity or other attributes between different systems to promote access decisions and interoperability. | Attribute Definition | 
+| Attribute Exchange | Discover and acquire identity or other attributes between different systems to promote access decisions and interoperability. | Attribute Definition |
 
 ## Governance
 

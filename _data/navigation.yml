@@ -163,7 +163,7 @@ playbooks:
 
 
 ## FPKI Navigation
-## Note: fpki added as-is... from Playbooks to preserve urls
+## Note: fpki added as-is... from Playbooks site to preserve urls
 fpki:
   - text: Introduction
     href: /fpki/
@@ -261,6 +261,7 @@ fips201:
     href: /fips201/
   - text: FIPS 201 Announcements
     href: /fips201/fipsannouncements/
+    
 # New Vendor sidenav
 vendor:
   - text: Vendor Overview
