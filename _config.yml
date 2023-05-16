@@ -189,7 +189,7 @@ assets:
     - node_modules/@uswds/uswds/packages
     - node_modules/netlify-cms/dist
 
-page_gen_dirs: true
+page_gen-dirs: true
 
 page_gen:
   - data: "laws-policies-standards"
