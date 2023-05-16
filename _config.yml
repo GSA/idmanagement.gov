@@ -195,3 +195,4 @@ page_gen:
   - data: "laws-policies-standards"
     template: "standards_detail"
     name: "shortName"
+    directory: "policies"
