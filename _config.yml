@@ -137,7 +137,7 @@ primary_navigation:
         url: /approved-products-list-piv/
       - name: Approved Product List - PACS
         url: /approved-products-list-pacs-products/
-      - name: Removed Product list
+      - name: Removed Product List
         url: /removed-products-list/
 
   # FICAM University page
