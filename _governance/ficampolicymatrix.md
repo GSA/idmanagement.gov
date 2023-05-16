@@ -66,7 +66,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
             {% endfor %}
             </td>
             <td>
-              <a href="{{site.baseurl}}/laws-policies-standards/{{document.shortName}}">
+              <a href="{{site.baseurl}}/laws-policies-standards/{{document.shortName | datapage_url: laws-policies-standards }}">
                 More Info
               </a>
             </td>
