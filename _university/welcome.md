@@ -7,6 +7,8 @@ sidenav: university
 sticky_sidenav: true
 
 subnav:
+    - text: Training
+      href: '#training'
     - text: System Components
       href: '#system-components'
     - text: Authoritative Sources
@@ -29,6 +31,11 @@ subnav:
 This University section serves as a knowledge base for all things identity. Explore the endless amount of identity related content at your leisure.
 
 <hr/>
+
+## Training
+
+Content TBD
+
 
 ## System Components
 

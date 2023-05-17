@@ -3,6 +3,16 @@
 @import "uswds";
 @forward "usa-icon";
 
+
+
+// Important: Colors for H1 and H2 in usa-layout-docs element
+.usa-layout-docs h1 {
+  color:#005ea2;
+}
+.usa-layout-docs h2 {
+  color:#005ea2;
+}
+
 // Add your SASS/CSS here
 // .usa-hero {
 //   background-image: asset_url("hero-image2-blur.png");
@@ -11,6 +21,7 @@
 //   height: 380px;
 //   margin: 0px;
 // }
+
 .usa-hero {
   //background-image: asset_url("new-header-graphic.png");
   background-image: asset_url("new-background-30-fade.png");
@@ -32,7 +43,8 @@
   border: 1px;
   outline: none;
   background-color: #00bde3;
-  color: black;
+  // color: black;
+  color:#ffffff;
   font-weight:600;
   cursor: pointer;
   padding: 15px;

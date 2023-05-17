@@ -3,8 +3,8 @@ Use this section to highlight key elements of your site. Some sites will only ha
 eight.
 {% endcomment %}
 
-<!-- Start Freq Searched and RSS Feeds -->
-<section class="ficam-page-container gsa-top-panel" style="padding-top: 25px;">
+<!-- Start Freq Searched and RSS Feeds (removed for this sprint to seek other display options)-->
+<!-- <section class="ficam-page-container gsa-top-panel" style="padding-top: 25px;">
 	<div class="grid-container">
 		<div class="partners-container grid-row">
 			<div class="desktop:grid-col-12">
@@ -14,14 +14,14 @@ eight.
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Most viewed</h3>				
 							</div>
-							<!-- <div class="usa-card__media">
+							<div class="usa-card__media">
 								<div class="usa-card__img">
 									  <img
 										src=""
 										alt="Most viewed"
 									  />
 								</div>
-							</div> -->
+							</div> 
 							<hr>
 							<div class="usa-card__body gsa-card-small">						
 								{% for link in site.data.mostviewed %}
@@ -43,17 +43,17 @@ eight.
 								<h3 class="site-preview-heading">Cyber news</h3>
 								
 							</div>
-							<!-- <div class="usa-card__media">
+							<div class="usa-card__media">
 								<div class="usa-card__img">
 									  <img
 										src=""
 										alt="Cyber news"
 									  />
 								</div>
-							</div> -->
+							</div> 
 							<hr>
 							<div class="usa-card__body gsa-card-small">
-								<!-- source: https://www.cisa.gov/news.xml -->
+								source: https://www.cisa.gov/news.xml 
 								{% for feed in site.data.rssfeed %}
 								<b><a class="usa-link" href="{{feed.link}}"  target="_blank">{{feed.title}}</a></b>
 								<p class="usa-collection__description">
@@ -72,20 +72,25 @@ eight.
 				</div>
 			</div>
 		</div>
-</section>		
+</section>		 -->
 <!-- Freq Searched and RSS Feed Cards -->		
 
 <!-- Start of Vendors and Partner Cards -->	
-<section class="ficam-page-container" style="padding-top:25px;background-color: #f0f0f0;">
+<section class="ficam-page-container bg-test" style="padding-top:25px;background-color: #f0f0f0;">
 	<div class="grid-container">
 		<div class="partners-container grid-row">
-			<div class="desktop:grid-col-12">						
+			<div class="desktop:grid-col-12">
+				<h2></h2>
+				<h2 class="hero-heading" style="text-align: center;color:#000000">Partner with Us</h2>
+				<hr><br>				
 				<ul class="usa-card-group">							
 					<li class="usa-card tablet:grid-col-4">
+					<a class="gsa-no-dec" href="{{site.baseurl}}/vendors/">
 						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Vendors</h3>
 							</div>
+							<!-- Card image area -->
 							<!-- <div class="usa-card__media">
 								<div class="usa-card__img">
 									  <img
@@ -101,16 +106,19 @@ eight.
 								</p>
 							</div>
 							<div class="usa-card__footer">
-								<a href="{{site.baseurl}}/vendors/"><button type="button" class="usa-button">Start process</button></a>
+								<!-- <button type="button" class="usa-button">Start process</button> -->
 							</div>
 						</div>
+					</a>
 					</li>
 					<li class="usa-card tablet:grid-col-4">
+					<a class="gsa-no-dec" href="{{site.baseurl}}/acquisition-professionals/">
 						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Acquisition professionals</h3>
 								
 							</div>
+							<!-- Card image area -->
 							<!-- <div class="usa-card__media">
 								<div class="usa-card__img">
 									  <img
@@ -126,16 +134,19 @@ eight.
 								</p>
 							</div>
 							<div class="usa-card__footer">
-								<a href="{{site.baseurl}}/acquisition-professionals/"><button type="button" class="usa-button">Start research</button></a>
+								<!-- <button type="button" class="usa-button">Start research</button> -->
 							</div>
 						</div>
+					</a>
 					</li>
 					<li class="usa-card tablet:grid-col-4">
+					<a class="gsa-no-dec" href="{{site.baseurl}}/program-managers/">
 						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Program managers</h3>
 								
 							</div>
+							<!-- Card image area -->
 							<!-- <div class="usa-card__media">
 								<div class="usa-card__img">
 									  <img
@@ -151,9 +162,10 @@ eight.
 								</p>
 							</div>
 							<div class="usa-card__footer">
-								<a href="{{site.baseurl}}/program-managers/"><button type="button" class="usa-button">Collaborate with Us</button></a>
+								<!-- <button type="button" class="usa-button">Collaborate with Us</button> -->
 							</div>
 						</div>
+					</a>
 					</li>
 				</ul>
 			</div>
@@ -161,16 +173,41 @@ eight.
 	</div>
 </section>
 <!-- End of Vendors and Partner Cards -->	
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-<!-- Start of Lower Half -->
+<!-- Start of Lower Half - Program Functions -->
 <section class="usa-graphic-list usa-section usa-section gsa-icon-panel" style="background-color:#214579;color:#f8f9fa;">
 <div class="grid-container">
-		<h2  class="hero-heading" style="text-align: center">Program Functions</h2>
+		<h2 class="hero-heading" style="text-align: center">Program Functions</h2>
 		<hr><br>
 	<!-- Required Links -->
 	<div class="desktop:grid-col-12">						
 		<ul class="usa-card-group">							
+			<li class="usa-card tablet:grid-col-4">
+				<a class="gsa-no-dec" href="fpki/" target="_blank">
+				<div class="usa-card__container  gsa-card-shadow">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">Federal Public Key Infrastructure Guide</h3>
+					</div>
+					<div class="usa-card__media">
+						<div class="usa-card__img">
+							  <img
+							  src="{{site.baseurl}}/assets/playbooks/headers/fpki_header.jpg"
+							  alt="Federal Public Key Infrastructure Guide Introduction"
+							  />
+							</div>
+					</div>
+					<hr>
+					<div class="usa-card__body">
+						<p>These guides are open source and a work in progress and we welcome contributions from our colleagues. We encourage you to contribute and share information you think is helpful for the Federal PKI community.</p>
+					</div>
+					<hr>
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: current <br><span class="usa-tag bg-accent-warm">Markdown</span>
+					</div>
+				</div>
+				</a>
+			</li>
 			<li class="usa-card tablet:grid-col-4">
 				<a class="gsa-no-dec" href="fips201/" target="_blank">
 				<div class="usa-card__container gsa-card-shadow">
@@ -201,7 +238,7 @@ eight.
 				<!-- <a class="gsa-no-dec" href="#" target="_blank"> -->
 				<div class="usa-card__container  gsa-card-shadow">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">FIPS 201 Approved Products Lists</h3>
+						<h3 class="site-preview-heading">FIPS 201 Approved Product Lists</h3>
 					</div>
 					<div class="usa-card__media">
 					<div class="usa-card__img">
@@ -214,14 +251,14 @@ eight.
 					<hr>
 					<div class="usa-card__body">
 						<p>
-							<a href="{{site.baseurl}}/approved-products-list-piv/" aria-label="Approved Products List - PIV Cards" class="usa-button usa-button--accent-cool usa-button--active">PIV Cards APL</a>
+							<a href="{{site.baseurl}}/approved-products-list-piv/" aria-label="Approved Products List - PIV Cards" class="usa-button usa-button--accent-cool usa-button--active">PIV Cards</a>
 						</p>
 						<p>
-							<a href="{{site.baseurl}}/approved-products-list-pacs-products/" aria-label="Approved Products List - PACS" class="usa-button usa-button--accent-cool usa-button--active">PACS Components APL</a>
+							<a href="{{site.baseurl}}/approved-products-list-pacs-products/" aria-label="Approved Products List - PACS" class="usa-button usa-button--accent-cool usa-button--active">PACS Components</a>
 						</p>
-						<!-- <p>
+						<p>
 							<a href="{{site.baseurl}}/approved-products-list-pacs-products/#pacs-solutions-awaiting-approval"  aria-label="PACS Awaiting Approval" class="usa-button usa-button--accent-cool usa-button--active">PACS Awaiting Approval</a>
-						</p> -->
+						</p> 
 						<p>
 							<a href="{{site.baseurl}}/removed-products-list/"  aria-label="Removed Products List" class="usa-button usa-button--accent-cool usa-button--active">Removed Product List</a>
 						</p>
@@ -229,40 +266,49 @@ eight.
 					<hr>
 					<div class="usa-card__footer">
 						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: current <br><span class="usa-tag bg-accent-warm">Links</span>
+						Latest Update: current <br><span class="usa-tag bg-accent-warm">Lists</span>
 					</div>
 				</div>
 				<!-- </a> -->
 			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<a class="gsa-no-dec" href="fpki/" target="_blank">
+		</ul>
+	</div>
+	<!-- Required Links -->
+	<div class="desktop:grid-col-12">						
+		<ul class="usa-card-group">							
+			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left">
+				<a class="gsa-no-dec" href="{{site.baseurl}}/docs/roadmap-ficam.pdf" target="_blank">
 				<div class="usa-card__container  gsa-card-shadow">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Federal Public Key Infrastructure Guide</h3>
+						<h3 class="site-preview-heading">GSAPKI Shared Service Provider Program Guide</h3>
 					</div>
 					<div class="usa-card__media">
 						<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/fpki_header.jpg"
-							  alt="Federal Public Key Infrastructure Guide Introduction"
-							  />
+								<img
+								src="{{site.baseurl}}/assets/playbooks/headers/playbook_06.png"
+								alt="GSAPKI Shared Service Provider Program Guide"
+								/>
 							</div>
 					</div>
-					<hr>
+					
 					<div class="usa-card__body">
-						<p>These guides are open source and a work in progress and we welcome contributions from our colleagues. We encourage you to contribute and share information you think is helpful for the Federal PKI community.</p>
-					</div>
 					<hr>
+						<p>
+							The General Services Administration(GSA), Office of Government-wide Policy, manages the PublicKey Infrastructure(PKI) Shared Services Provider(SSP) program. The primary program focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.
+						</p>
+					<hr>
+					</div>
+					
 					<div class="usa-card__footer">
 						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: current <br><span class="usa-tag bg-accent-warm">Markdown</span>
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">PDF</span>
 					</div>
 				</div>
 				</a>
 			</li>
 		</ul>
 	</div>
-	<br>
+	<br><br>
 	<h2  class="hero-heading" style="text-align: center">Playbooks</h2>
 	<hr><br>
 	<!-- Playbooks Section - data driven -->

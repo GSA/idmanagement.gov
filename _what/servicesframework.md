@@ -27,11 +27,11 @@ The graphic below illustrates the five ICAM practice areas and provides a list o
 
 <img src="{{site.baseurl}}/assets/arch/services/services_overview.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box lists the agency services that correspond to that area. You can find the services and definitions in the following pages.">
 
-## Services Visual
+<!-- ## Services Visual
 
 This visual represents the five practice areas and services.
 
-<a href="{{site.baseurl}}/assets/arch/services/services_definitions_v2.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/services_definitions_v2.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages."></a>
+<a href="{{site.baseurl}}/assets/arch/services/services_definitions_v2.png" target="_blank"><img src="{{site.baseurl}}/assets/arch/services/services_definitions_v2.png" alt="Five boxes that each correspond to a FICAM practice area or supporting element. Each box includes the definitions for the agency services that correspond to that area. You can find the services and definitions in the following pages."></a> -->
 
 ## Identity Management
 

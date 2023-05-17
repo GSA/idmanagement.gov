@@ -2,6 +2,8 @@
 why:
   - text: Introduction
     href: /why/
+  - text: Zero Trust
+    href: /why/zero-trust/
   - text: Architecture
     href: /why/architecture/
   - text: History
@@ -10,7 +12,12 @@ why:
     href: /why/icam/
   - text: Goals and Objectivess
     href: /why/goals-and-objectives/
-
+  # - text: Enabling Mission Delivery through Improved Identity, Credential, and Access  (named to make label in menu shorter)
+  - text: Memorandum M-19-17
+    href: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf
+  # - text: Managing Information as a Strategic Resource (OMB Circular A-130) (renamed to make label in menu shorter)
+  - text: OMB Circular A-130
+    href: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
 
 ## New What secondary navigation 
 what:
@@ -92,11 +99,13 @@ who:
   #   href: /who/lessonslearned/
   # - text: Standards
   #   href: /who/standards/
-  - text: FIPS 201 Approved Product List - PIV Cards
+  - text: Approved Product List - PIV Cards
     href: /approved-products-list-piv/
-  - text: FIPS 201 Approved Product List - PACS 
+  - text: Approved Product List - PACS
     href: /approved-products-list-pacs-products/ 
-  - text: FIPS 201 Removed Product list 
+  - name: PACS Awaiting Approval
+    href: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
+  - text: Removed Product List 
     href: /removed-products-list/ 
 
 
@@ -110,10 +119,10 @@ university:
     href: /university/policies/
   - text: Standards
     href: /university/standards/
+  - text: Useful Tools
+    href: /fpki/tools/
   - text: Additional Resources
     href: /university/resources/
-  - text: Library
-    href: /university/library/
   - text: Glossary
     href: /university/glossary/
   # - text: FAQs
@@ -280,12 +289,14 @@ acquisition:
     href: /who/trust-services/
   - text: GSA ICAM Solutions
     href: /who/icamsolutions/
-  - text: FIPS 201 Approved Product List - PIV Cards
+  - text: Approved Product List - PIV Cards
     href: /approved-products-list-piv/
-  - text: FIPS 201 Approved Product List - PACS
-    href: /approved-products-list-pacs-products/
-  - text: FIPS 201 Removed Product List
-    href: /removed-products-list/
+  - text: Approved Product List - PACS
+    href: /approved-products-list-pacs-products/ 
+  - name: PACS Awaiting Approval
+    href: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
+  - text: Removed Product List 
+    href: /removed-products-list/ 
 
 ## Old Governance sidenav
 ## New Program Managers sidenav

@@ -48,6 +48,8 @@ primary_navigation:
     children:
       - name: Introduction
         url: /why/
+      - name: Zero Trust
+        url: /why/zero-trust/
       - name: Architecture
         url: /why/architecture/
       - name: History
@@ -56,9 +58,15 @@ primary_navigation:
         url: /why/icam/
       - name: Goals and Objectives
         url: /why/goals-and-objectives/
+      # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (named to make label in menu shorter)
+      - name: Memorandum M-19-17
+        url: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf
+      # - name: Managing Information as a Strategic Resource (OMB Circular A-130) (named to make label in menu shorter)
+      - name: OMB Circular A-130
+        url: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
 
 # What is FICAM top level menu with dropdowns
-  - name: What is FICAM?
+  - name: Architecture
     children: 
       - name: Introduction
         url: /what/
@@ -73,36 +81,10 @@ primary_navigation:
       - name: Use Cases
         url: /what/usecases/
 
-# How to use FICAM top level menu with dropdowns
-  - name: How to use FICAM
-    children:
-      - name: Introduction
-        url: /how/
-      - name: Network Authentication
-        url: /how/network-authentication/
-      - name: Domain Controllers
-        url: /how/domain-controllers/
-      - name: Trust Store
-        url: /how/trust-stores/
-      - name: Account Linking
-        url: /how/account-linking/
-      - name: Group Policies and Enforcement
-        url: /how/group-policies/
-      - name: Network Tuning
-        url: /how/network-tuning/
-      - name: Local Certification Authority
-        url: /how/certificate-authority/
-      - name: Authentication Assurance
-        url: /how/authentication-assurance/
-      - name: PIV Authentication on macOS
-        url: /how/piv-athentication-macos/
-      - name: Troubleshooting PIV Logon
-        url: /how/troubleshooting/ 
-      # - name: Windows Domain Account Pairing
-      #   url: /how/windows-domain-pairing/ 
 
 # Who FICAM is For? top level menu with dropdowns
-  - name: Who is FICAM For?
+  # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Getting Started')
+  - name: Getting Started
     children:
       - name: Introduction
         url: /who/
@@ -129,6 +111,35 @@ primary_navigation:
       # - name: PACS
       #   url: /who/pacs/
 
+# How to use FICAM top level menu with dropdowns
+  # - name: How to use FICAM (changed on 05-17-2023 per Babur/Joe) to 'Implementation Guides'
+  - name: Implementation Guides
+    children:
+      - name: Introduction
+        url: /how/
+      - name: Network Authentication
+        url: /how/network-authentication/
+      - name: Domain Controllers
+        url: /how/domain-controllers/
+      - name: Trust Store
+        url: /how/trust-stores/
+      - name: Account Linking
+        url: /how/account-linking/
+      - name: Group Policies and Enforcement
+        url: /how/group-policies/
+      - name: Network Tuning
+        url: /how/network-tuning/
+      - name: Local Certification Authority
+        url: /how/certificate-authority/
+      - name: Authentication Assurance
+        url: /how/authentication-assurance/
+      - name: PIV Authentication on macOS
+        url: /how/piv-athentication-macos/
+      - name: Troubleshooting PIV Logon
+        url: /how/troubleshooting/ 
+      # - name: Windows Domain Account Pairing
+      #   url: /how/windows-domain-pairing/ 
+
   # APL Menu for visible display and access of APLs
   # Note: All APLs are accessible from the below URLs for reference and linking
   - name: FIPS 201 APLs
@@ -137,6 +148,8 @@ primary_navigation:
         url: /approved-products-list-piv/
       - name: Approved Product List - PACS
         url: /approved-products-list-pacs-products/
+      - name: PACS Awaiting Approval
+        url: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
       - name: Removed Product List
         url: /removed-products-list/
 
@@ -198,7 +211,7 @@ collections:
   university:
     output: true
     permalink: /university/:path/   
-  # faq:
+  # faq: requested removal by Babur (Sprint 6)
   #   output: true
   #   permalink: /faq/:path/ 
   rss:
