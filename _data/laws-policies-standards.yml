@@ -9,6 +9,34 @@
 # and persistent URL (hosted page rather than direct PDF if available)
 # For category, always use workforce or citizen identity. Use other words aligned with FICAM services framework.
 
+# FICAM Service Framework
+# Identity Management
+#   Creation
+#   Identity Proofing
+#   Provisioning
+#   Maintenance
+#   Identity Aggregation
+#   Deactivation
+# Credential Management
+#   Sponsorship
+#   Registration
+#   Generation & Issuance
+#   Maintenance
+#   Revocation
+# Access Management
+#   Digital Policy Administration
+#   Authentication
+#   Authorization
+#   Privileged Access Management
+# Federation
+#   Policy Alignment
+#   Authentication Broker
+#   Attribute Exchange
+# Governance
+#   Identity Governance
+#   Analytics
+#   Mitigation
+
 - longName: OMB Memo 21-04 - Modernizing Access to and Consent for Disclosure of Records Subject to the Privacy Act
   shortName: OMB Memo 21-04
   published: 11/12/2020
@@ -50,3 +78,9 @@
     - Privileged Access Management
     - ABAC
   externalUrl: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
+
+- longName: "Homeland Security Presidential Directive (HSPD)-12: Policies for a Common Identification Standard for Federal Employees and Contractors"
+  shortName: HSPD-12
+  published: 08/27/2004
+  fy:
+  description: Instructs NIST to develop standards for the "secure and reliable" credentials, which became FIPS 201.
