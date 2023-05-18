@@ -6,7 +6,11 @@ layout: default
 
 <p><b>{{page.longName}}</b></p>
 
-<p>Publication Date: {{page.published}}</p>
+<p>{% for category in document.category %}
+    {{ category }}<br>
+    {% endfor %}</p>
+
+<p>Publication Date: {{page.published}} (FY: {{ page.fy }})</p>
 
 <p>Description: {{page.description}}</p>
 
