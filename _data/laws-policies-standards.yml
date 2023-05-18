@@ -42,7 +42,7 @@
   published: 11/12/2020
   fy: 2021
   description: This Memorandum provides guidance for Federal agencies to modernize the processes by which individuals may request access to, and consent to the disclosure of, records protected under the Privacy Act of 1974.
-  category:
+  categories:
     - Citizen Identity
     - Remote Identity Proofing
     - Authentication
@@ -53,7 +53,7 @@
   published: 03/22/2020
   fy: 2020
   description: In response to the national emergency for COVID-19, agencies are directed to use the breadth of available technology capabilities to fulfill service gaps and deliver mission outcomes.
-  category:
+  categories:
     - Workforce Identity
     - Remote Access
     - PACS
@@ -67,7 +67,7 @@
   published: 01/26/2022
   fy: 2022
   description: This memorandum sets forth a Federal zero trust architecture (ZTA) strategy, requiring agencies to meet specific cybersecurity standards and objectives by the end of Fiscal Year (FY) 2024 in order to reinforce the Government’s defenses against increasingly sophisticated and persistent threat campaigns.
-  category:
+  categories:
     - Workforce Identity
     - Citizen Identity
     - Zero Trust
