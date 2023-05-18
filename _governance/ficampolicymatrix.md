@@ -61,7 +61,7 @@ The markdown page will pull information from a data yml (sample file) that inclu
             </td>
             <td>{{ document.published }}</td>
             <td>
-            {% for category in document.category %}
+            {% for category in document.categories %}
               {{ category }}<br>
             {% endfor %}
             </td>
