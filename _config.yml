@@ -196,4 +196,4 @@ page_gen:
     template: "standards_detail"
     name: "shortName"
     directory: "policies"
-    debug: true
+    #debug: true
