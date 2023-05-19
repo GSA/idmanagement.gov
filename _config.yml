@@ -140,6 +140,11 @@ primary_navigation:
       # - name: Windows Domain Account Pairing
       #   url: /how/windows-domain-pairing/ 
 
+  # GSA PKI Shared Service Provider Program Guide Tope Level Menu
+  - name: SSP
+    description: GSA PKI Shared Service Provider Program Guide
+    url: /ssp/
+
   # APL Menu for visible display and access of APLs
   # Note: All APLs are accessible from the below URLs for reference and linking
   - name: FIPS 201 APLs
@@ -233,6 +238,9 @@ collections:
     output: true
     permalink: /pm/:path/
 
+  ssp:
+    output: true 
+    permalink: /ssp/:path/
   
 
   # (Old, keep for ref) buy: 

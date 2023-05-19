@@ -310,6 +310,13 @@ program:
   - text: FPKI Archived Documents
     href: /fpkiarchive/
 
+## New GSA PKI Shared Service Provider Program Guide Sidenav
+ssp:
+  - text: Overview
+    href: /ssp/
+  - text: Download PDF
+    href: /docs/roadmap-ficam.pdf
+
 
 # Brought in from Playbooks site
 pm:
