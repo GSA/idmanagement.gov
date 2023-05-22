@@ -2,8 +2,8 @@
 layout: page
 collection: buy
 title:  GSA PKI Shared Service Provider Program Guide
-permalink: /buy/gsapkissp
-sidenav: gsapkissp
+permalink: /buy/gsapkissp/
+sidenav: buy
 sticky_sidenav: true
 last_review: 05/21/2023
 
@@ -129,46 +129,61 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
 
 Once an MOA is signed, the GSA PKI SSP will sponsor the vendor to apply to the Federal PKI Policy Authority.
 
+### Step 2 - Complete PKI Pre-Conditions
 
-Step 2 - Complete PKI Pre-Conditions
-A prospective GSA PKI SSP must meet the following basic pre-conditions as outlined in the X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework [COMMON CP] to demonstrate readiness for the PKI certification process.
-Provide Certification Authority (CA), repository, and archive services. The PKI Vendor must operate a self-signed CA instead of relying on a certificate issued from the Federal Common Policy CA. This ensures that if there is an issue with the GSA PKI SSP, the Federal PKI can revoke the certificate from the Federal Common Policy CA without impacting the GSA PKI SSP customer certificates.
-Develop and maintain a Certification Practice Statement (CPS) covering PKI operations that comply with [COMMON CP] and issue certificates according to the Common Policy X.509 Certificate and Certificate Revocation List (CRL) profiles. 
-Work with its customers to ensure registration practices fit smoothly within its overall CPS package and comply with [COMMON CP].
-Implement all applicable PIV-related policies, such as common-authentication, common-cardAuth, and common-piv-contentSigning.  
-Ensure it understands and can fulfill its customers’ archive requirements and understands its obligation to do so.
-Collaborate and exchange information and documents as necessary with any other party performing the Registration Authority (RA) duties.
-Support federal agency customer audits and assessments as requested.
-[Optionally] Provide baseline hardware and software to support RA operations.
+A prospective GSA PKI SSP must meet the following basic pre-conditions as outlined in the [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles) [COMMON CP] to demonstrate readiness for the PKI certification process.
+1. Provide Certification Authority (CA), repository, and archive services. The PKI Vendor must operate a self-signed CA instead of relying on a certificate issued from the Federal Common Policy CA. This ensures that if there is an issue with the GSA PKI SSP, the Federal PKI can revoke the certificate from the Federal Common Policy CA without impacting the GSA PKI SSP customer certificates.
+2. Develop and maintain a Certification Practice Statement (CPS) covering PKI operations that comply with [COMMON CP] and issue certificates according to the [Common Policy X.509 Certificate and Certificate Revocation List (CRL) profiles](https://www.idmanagement.gov/governance/fpkiaudit/#fpki-policies-and-profiles). 
+3. Work with its customers to ensure registration practices fit smoothly within its overall CPS package and comply with [COMMON CP].
+4. Implement all applicable PIV-related policies, such as common-authentication, common-cardAuth, and common-piv-contentSigning.  
+5. Ensure it understands and can fulfill its customers’ archive requirements and understands its obligation to do so.
+6. Collaborate and exchange information and documents as necessary with any other party performing the Registration Authority (RA) duties.
+7. Support federal agency customer audits and assessments as requested.
+8. [Optionally] Provide baseline hardware and software to support RA operations.
+
 Any changes to these pre-conditions will be coordinated through the GSA SSP Program Office, which can amend the conditions any time to ensure the best interests of the Federal Government are met. Once the GSA PKI SSP verifies the pre-conditions, the vendor submits this information to the Federal PKI Policy Authority to begin the Federal PKI Certification process.
 
+### Step 3 - Apply for Federal PKI Certification
 
-Step 3 - Apply for Federal PKI Certification
 The PKI Vendor must successfully meet five compliance and conformance activities with the FPKIPA:
-Sign a memorandum of agreement with the FPKIPA.
-Document conformance with the [COMMON CP], which measures the degree to which the PKI Provider’s CPS conforms with [COMMON CP].
-Perform a Day Zero Audit to ensure the applicant’s PKI is operating in conformance with applicable [COMMON CP] requirements.
-Demonstrate PKI operational capabilities, which validates the PKI Provider’s ability to operate a PKI compliant with [COMMON CP] and other relevant operating documents.
-Obtain an ATO for its PKI system through GSA,  which establishes the extent to which the Applicant’s PKI meets security and privacy requirements defined by the organization, government guidelines, and federal mandates.  Findings are documented in a formal authorization package that informs the ATO decision. The ATO is conditional upon the PKI vendor successfully applying to and getting on the GSA PKI SSP MAS.
+1. Sign a memorandum of agreement with the FPKIPA.
+2. Document conformance with the [COMMON CP], which measures the degree to which the PKI Provider’s CPS conforms with [COMMON CP].
+3. Perform a Day Zero Audit to ensure the applicant’s PKI is operating in conformance with applicable [COMMON CP] requirements.
+4. Demonstrate PKI operational capabilities, which validates the PKI Provider’s ability to operate a PKI compliant with [COMMON CP] and other relevant operating documents.
+5. Obtain an ATO for its PKI system through GSA,  which establishes the extent to which the Applicant’s PKI meets security and privacy requirements defined by the organization, government guidelines, and federal mandates.  Findings are documented in a formal authorization package that informs the ATO decision. The ATO is conditional upon the PKI vendor successfully applying to and getting on the GSA PKI SSP MAS.
+
 If the Federal PKI Policy Authority approves the PKI vendor, both parties execute an MOA to establish roles, responsibilities, and requirements in maintaining the Federal PKI certification.
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Federal PKI Certification Guidance</h4>
+    <p class="usa-alert__text">
+      <li>1. The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.</li>
+      <li>2. The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.</li>
+    </p>
+  </div>
+</div>
 
-
-
-Federal PKI Certification Guidance:
-
-	
-The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.
-The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.
 After an executed Federal PKI Policy Authority MOA is shared with the GSA PKI SSP Program Office, GSA can verify security activities to issue an ATO.
 
+### Step 4 - Receive an Authorization to Operate
 
-Step 4 - Receive an Authorization to Operate
 A Security Assessment & Authorization (SA&A) at the moderate impact level must be performed on the SSP’s information system by a third-party auditor. Performing an SA&A satisfies government requirements as specified in the Federal Information Security Modernization Act 2014 (FISMA 2014) and other associated documents. An SA&A includes three components—a security assessment, a resulting security authorization, and continuous monitoring. 
 
 The Security Assessment determines that selected controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security and privacy requirements for the system and the organization.  
 
 The Security Authorization provides organizational accountability by requiring a senior management official to determine if the security and privacy risk to organizational operations and assets, individuals, and other organizations (if applicable) is acceptable. The security team within the GSA, OCISO reviews the SAR along with applicable security documents to recommend a Security Authorization to the GSA senior management official in the SSP Program Office.
+
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Federal PKI Certification Guidance</h4>
+    <p class="usa-alert__text">
+      <li>1. The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.</li>
+      <li>2. The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.</li>
+    </p>
+  </div>
+</div>
+
 Security Assessment & Authorization Procedural Guidance:
 
 
