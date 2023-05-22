@@ -212,7 +212,7 @@ The Security Authorization provides organizational accountability by requiring a
 
 To avoid significant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities. Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP.
 
-### Step 5 - Apply to GSA MAS and Get Listed as an Identity Trusted Service
+### Step 5 - Apply to GSA MAS and Get Listed as an Government Identity Trust Service
 
 Upon receiving an ATO and being confirmed as a GSA PKI SSP, the vendor is ready to apply to the GSA MAS to offer digital certificate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
 
