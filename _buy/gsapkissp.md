@@ -183,13 +183,13 @@ The Security Authorization provides organizational accountability by requiring a
     <p class="usa-alert__text">
       <li>1. Engage an Assessor or Assessment Team that is an independent third-party competent in Public Key technology.</li>
       <li>2. Format System Security Plan in Open Source Control Assessment Language.</li>
-      <li>3. Obtain all necessary GSA SA&A guidance documents and security artifact templates from the security team in the GSA Office of Chief Information Office. Documents include the <strong>Managing Enterprise Risk</strong> GSA policy detailing annual documentation requirements, <strong>SA&A Artifact Templates</strong> including Incident Response template, System Security Plan template, Penetration Testing and Results template, Plan of Action and Milestones (POA&M) template, and Security Assessment Report template. Also the <strong>FPKI 800-53 Overlay</strong> details security controls applicable to SSP PKI systems and provides supplemental guidance on additional requirements for those controls and enhancements.
+      <li>3. Obtain all necessary GSA SA&A guidance documents and security artifact templates from the security team in the GSA Office of Chief Information Office. Documents include the <strong>Managing Enterprise Risk</strong> GSA policy detailing annual documentation requirements, <strong>SA&A Artifact Templates</strong> including Incident Response template, System Security Plan template, Penetration Testing and Results template, Plan of Action and Milestones (POA&M) template, and Security Assessment Report template. Also the <strong>FPKI 800-53 Overlay</strong> details security controls applicable to SSP PKI systems and provides supplemental guidance on additional requirements for those controls and enhancements.</li>
       <li>4. Perform the Assessment, completing all provided templates and guidance.</li>
       <li>5. Develop a Plan of Action and Milestones (POA&M) to facilitate remediation of any security findings.</li> 
       <li>6. Provide the Assessment Package to the OCISO’s Information Systems Security Manager (ISSM), who reviews the package to ensure FISMA security requirements are met.</li>
       <li>7. The Information System Security Management (ISSM) on the security team creates an authorization package and submits it to the Authorizing Official (AO) in the SSP Program Office.</li> 
       <li>8. The AO makes a risk determination that reflects the risk management strategy, including risk tolerance. Responses and mitigations for identified risks are provided by the ISSM.</li>
-      <li>9. The AO decides whether to approve or deny authorization to operate.
+      <li>9. The AO decides whether to approve or deny authorization to operate.</li>
       <li>10. If approved, the AO signs and issues an ATO.</li>
       <li>11. The SSP performs risk management activities documented in the IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 and the SSP Handbook.</li>
     </p>
@@ -317,6 +317,7 @@ GSA established the GSA PKI SSP Program to help agencies identify and procure fe
 Memorandum of Agreement  
 GSA Public Key Infrastructure Shared Service Provider Program  
 (Commercial Entities Only)  
+Version 1.0
 
 This Memorandum of Agreement ("Agreement") is entered into by the General Services Administration, Office of Technology Policy (“OTP”), within the Office of Governmentwide Policy located at 1800 F Street, NW Washington, DC 20405 and the [name of the commercial SSP vendor ("Entity") located at [SSP vendor address], as of the date of OTP’s signature to this Agreement with a term of three years. The OTP and Entity will collectively be referred to as "Party" or the "Parties."
 
@@ -326,48 +327,51 @@ This Memorandum of Agreement ("Agreement") is entered into by the General Servic
 <li> Federal Public Key Infrastructure Policy Authority ("FPKIPA" or " Policy Authority") is the federal trust framework governance body for a set of PKI systems and associated certificates used for federated trust across and between federal agencies and with entities that are not a U.S. Federal Government agency for mission delivery purposes. The Policy Authority is a group of representatives from U.S. Federal Government agencies (including cabinet-level departments) established pursuant to a charter under the Federal CIO council. It manages the policies governing the FPKI trust framework and approves or denies entities for certification into the trust framework.</li>
 <li>Shared Service Provider (“SSP”) An Entity that adheres to the FPKI set of policies and processes, as well as GSA requirements to provide digital certificate services to federal agencies.</li>
 <li> Shared Service Program (“SSP Program”) is a GSA program that provides technical support for the FPKI. Specifically, it supports the governmentwide implementation of HSPD-12 and the FICAM Initiative. It is recognized as robust secure PKI services that provide agencies with the capability to implement secure logical and physical access to federal resources through outsourced shared PKI services. By cross-certification, the shared PKI infrastructure is a part of the FPKI’s information technology systems governed by the FPKI. GSA has established a Special Item Number (SIN) 541519PKI that identifies these PKI services that contract holders offer governmentwide.</li>
+</ol>
 
-
-2. **Purpose.** The purpose of this Agreement is to agree on the terms and conditions on which the Entity will participate in the SSP Program. The Office of Technology Policy (OTP) manages the SSP Program with managing partners from the following GSA offices:
+2. **Purpose.** 
+The purpose of this Agreement is to agree on the terms and conditions on which the Entity will participate in the SSP Program. The Office of Technology Policy (OTP) manages the SSP Program with managing partners from the following GSA offices:
 <ol type="a">
 <li>Office of Chief Information Security Officer (“OCISO”)</li>
 <li>Federal Acquisition Service, Office of Information Technology Category (“ITC”)</li>
 <li>Office of Government-wide Policy, Office of Technology Policy (OTP)</li>
+</ol>
 
 Specifically, the OCISO manages the security posture of the Entity’s information technology systems and the ITC makes the Entity’s shared PKI services available for purchase through a GSA contract vehicle. External to but in concert with GSA, the FPKIPA governs the certificate policies, requirements, and practices for the shared PKI services. This Agreement sets forth the respective responsibilities and obligations of the Parties.
 
-
-Authority. The basis of this Agreement and the subsequent inclusion of the Entity into the SSP Program aligns with the Federal Information Security Modernization Act of 2014 (FISMA), GSA’s IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy, the Federal Acquisition Regulation, the federal PKI certificate policies, and the Entity certificate policy or practices listed in the Entity’s MOA with the FPKIPA. It also complements the SSP Operations Handbook.
-
-
-Roles and Responsibilities of the Parties.
+3. **Authority.**
+The basis of this Agreement and the subsequent inclusion of the Entity into the SSP Program aligns with the Federal Information Security Modernization Act of 2014 (FISMA), GSA’s IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy, the Federal Acquisition Regulation, the federal PKI certificate policies, and the Entity certificate policy or practices listed in the Entity’s MOA with the FPKIPA. It also complements the SSP Operations Handbook.
 
 
+4. **Roles and Responsibilities of the Parties.**
 The OTP will do the following:
-Serve as the GSA senior official to grant the Entity’s information technology system authorization to operate. 
-Determine program direction based on Federal Government need. 
-Ensure through the OCISO and ITC proper performance and delivery of PKI shared services.
-Develop and manage operational processes to effectively deliver the shared PKI services.
-Represent SSP and SSP Program interests in the FPKIPA.
-Report quarterly on security posture to the FPKIPA and customer agencies.
-Coordinate service improvement and feedback from customer agencies to SSP.
-Collaborate with GSA managing partners to operate and maintain effective, secure, and reliable PKI services.
-
+<ol type="a">
+<li>Serve as the GSA senior official to grant the Entity’s information technology system authorization to operate.</li>
+<li>Determine program direction based on Federal Government need.</li>
+<li>Ensure through the OCISO and ITC proper performance and delivery of PKI shared services.</li>
+<li>Develop and manage operational processes to effectively deliver the shared PKI services.</li>
+<li>Represent SSP and SSP Program interests in the FPKIPA.</li>
+<li>Report quarterly on security posture to the FPKIPA and customer agencies.</li>
+<li>Coordinate service improvement and feedback from customer agencies to SSP.</li>
+<li>Collaborate with GSA managing partners to operate and maintain effective, secure, and reliable PKI services.</li>
+</ol>
 
 The OCISO will do the following:
-Serve as the GSA senior official to recommend the Entity’s information technology system for authorization to operate (ATO).
-Monitor and report on the Entity’s information technology system security posture. 
-Provide quarterly security reports to the Authorizing Official. 
-Collaborate with the OTP on security management concerns to operate and maintain an effective, secure, and reliable PKI shared service.
-
+<ol type="a">
+<li>Serve as the GSA senior official to recommend the Entity’s information technology system for authorization to operate (ATO).</li>
+<li>Monitor and report on the Entity’s information technology system security posture.</li>
+<li>Provide quarterly security reports to the Authorizing Official.</li>
+<li>Collaborate with the OTP on security management concerns to operate and maintain an effective, secure, and reliable PKI shared service.</li>
+</ol>
 
 The ITC will do the following:
-Own and manage SIN 541519PKI for the SSP Program on the GSA Multiple Award Schedule (MAS).
-Review the Entity’s MAS Information Technology Package for a contract determination. 
-Collaborate with OTP and the ITC contract team to make the Entity’s PKI shared service available to purchase.
-Collaborate with the OTP on contract management concerns to deliver effective, secure, and reliable PKI shared service.
-Issue and revoke certificates to approved SSPs
-
+<ol type="a">
+<li>Own and manage SIN 541519PKI for the SSP Program on the GSA Multiple Award Schedule (MAS).</li>
+<li>Review the Entity’s MAS Information Technology Package for a contract determination.</li>
+<li>Collaborate with OTP and the ITC contract team to make the Entity’s PKI shared service available to purchase.</li>
+<li>Collaborate with the OTP on contract management concerns to deliver effective, secure, and reliable PKI shared service.</li>
+<li>Issue and revoke certificates to approved SSPs.</li>
+</ol>
 
 The Entity will do the following:
 Comply with all laws, ordinances, and regulations (Federal, State, or Local) covering work in the SSP Program.
@@ -503,7 +507,3 @@ Office: Office of Technology Policy (OTP)
 Name: Bo Berlas
 Title: Chief Information Security Officer
 Office: Office of Chief Information Security (OCISO)
-
-
-
-
