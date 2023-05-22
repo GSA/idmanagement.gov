@@ -16,6 +16,8 @@ subnav:
     href: '#section-ii-application-and-maintenance-activities'
   - text: Seciton III. Digital Certificate Services
     href: '#section-iii-digital-certificate-services'
+  - text: Conclusion
+    href:'#conclusion'
   - text: Appendix A. Sample MOA
     href: 'appendix-a-sample-moa'
 ---
@@ -24,7 +26,6 @@ Version 1.0
 May 22, 2023
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
-<img src="{{site.baseurl}}/assets/img/logo-cio.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
@@ -34,12 +35,14 @@ May 22, 2023
 
 The General Services Administration, Office of Government-wide Policy, manages the Public Key Infrastructure Shared Services Provider Program. The primary focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.
 
-**A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the GSA Multiple Award Schedule**. A GSA PKI Shared Service Provider differs from other PKI Shared Services, such as those operated by another federal agency, in this regard.
+**A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the GSA Multiple Award Schedule**. 
+
+A GSA PKI Shared Service Provider differs from other PKI Shared Services, such as those operated by another federal agency, in this regard.
 
 This document is reviewed annually and has three major sections:
 
-[Section 1](#gsa-pki-ssp-program) - Outlines GSA management and acquisition controls of the PKI SSP Program according to OMB Memo 19-17. 
-[Section 2](#application-and-maintenance-activities) - Defines the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.
+[Section 1](#gsa-pki-ssp-program) - Outlines GSA management and acquisition controls of the PKI SSP Program according to OMB Memo 19-17.  
+[Section 2](#application-and-maintenance-activities) - Defines the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.  
 [Section 3](#digital-certificate-services) - Lists available services that a SSP should offer.
 
 ## Audience
@@ -80,7 +83,7 @@ The SSP Program Office oversees and guides the business and security practices n
 1. Internally, the SSP Program Office meets with its GSA counterparts to ensure services are secure and available through the proper contract vehicle. 
 2. Externally, the office meets with federal agencies and SSPs to learn about successes and how processes and service delivery can be improved. 
 
-The GSA, Associate Deputy Administrator in the [Office of Government-wide Policy](https://www.gsa.gov/policy-regulations/policy/information-technology-policy){:target="_blank"}{:rel="noopener noreferrer"}, Office of Technology is the Authorizing Official of GSA PKI SSP vendor systems and is ultimately responsible for their secure operation. The GSA PKI SSP Program Office and Program Manager reside in the [Identity Assurance and Trusted Access Division](https://www.gsa.gov/policy-regulations/policy/information-technology-policy/identity-assurance-and-trusted-access){:target="_blank"}{:rel="noopener noreferrer"} within the Office of Technology Policy. The GSA PKI SSP Program Manager has the following responsibilities:
+The GSA, Associate Deputy Administrator in the Office of Government-wide Policy, [Office of Technology Policy](https://www.gsa.gov/policy-regulations/policy/information-technology-policy){:target="_blank"}{:rel="noopener noreferrer"}) is the Authorizing Official of GSA PKI SSP vendor systems and is ultimately responsible for their secure operation. The GSA PKI SSP Program Office and Program Manager reside in the [Identity Assurance and Trusted Access Division](https://www.gsa.gov/policy-regulations/policy/information-technology-policy/identity-assurance-and-trusted-access){:target="_blank"}{:rel="noopener noreferrer"} within the Office of Technology Policy. The GSA PKI SSP Program Manager has the following responsibilities:
 1. Direct and coordinate activities between the GSA PKI SSPs, the Federal PKI Policy Authority and GSA supporting offices, Office of the Chief Information Security Officer, and the Federal Acquisitions Service.
 2. Coordinate customer interest meetings to understand customer needs and challenges, plan service enhancements, and remediate issues.
 3. Invite and coordinate customer agency participation in GSA A&A security meetings.
@@ -119,7 +122,7 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">MOA Procedural Guidance</h4>
+    <h4 class="usa-alert__heading">Guidance: MOA Procedure</h4>
     <p class="usa-alert__text">
       <li>1. Send an email to GSAPKISSP at gsa.gov requesting admission to the GSA PKI SSP Program.</li>
       <li>2. SSPs must obtain, review, and sign the MOA from the SSP Program Office.</li>
@@ -156,7 +159,7 @@ If the Federal PKI Policy Authority approves the PKI vendor, both parties execut
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Federal PKI Certification Guidance</h4>
+    <h4 class="usa-alert__heading">Guidance: Federal PKI Certification</h4>
     <p class="usa-alert__text">
       <li>1. The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.</li>
       <li>2. The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.</li>
@@ -176,165 +179,160 @@ The Security Authorization provides organizational accountability by requiring a
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Federal PKI Certification Guidance</h4>
+    <h4 class="usa-alert__heading">Guidance: Security Assessment & Authorization Procedure</h4>
     <p class="usa-alert__text">
-      <li>1. The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.</li>
-      <li>2. The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.</li>
+      <li>1. Engage an Assessor or Assessment Team that is an independent third-party competent in Public Key technology.</li>
+      <li>2. Format System Security Plan in Open Source Control Assessment Language.</li>
+      <li>3. Obtain all necessary GSA SA&A guidance documents and security artifact templates from the security team in the GSA Office of Chief Information Office. Documents include the <strong>Managing Enterprise Risk</strong> GSA policy detailing annual documentation requirements, <strong>SA&A Artifact Templates</strong> including Incident Response template, System Security Plan template, Penetration Testing and Results template, Plan of Action and Milestones (POA&M) template, and Security Assessment Report template. Also the <strong>FPKI 800-53 Overlay</strong> details security controls applicable to SSP PKI systems and provides supplemental guidance on additional requirements for those controls and enhancements.
+      <li>4. Perform the Assessment, completing all provided templates and guidance.</li>
+      <li>5. Develop a Plan of Action and Milestones (POA&M) to facilitate remediation of any security findings.</li> 
+      <li>6. Provide the Assessment Package to the OCISO’s Information Systems Security Manager (ISSM), who reviews the package to ensure FISMA security requirements are met.</li>
+      <li>7. The Information System Security Management (ISSM) on the security team creates an authorization package and submits it to the Authorizing Official (AO) in the SSP Program Office.</li> 
+      <li>8. The AO makes a risk determination that reflects the risk management strategy, including risk tolerance. Responses and mitigations for identified risks are provided by the ISSM.</li>
+      <li>9. The AO decides whether to approve or deny authorization to operate.
+      <li>10. If approved, the AO signs and issues an ATO.</li>
+      <li>11. The SSP performs risk management activities documented in the IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 and the SSP Handbook.</li>
     </p>
   </div>
 </div>
 
-Security Assessment & Authorization Procedural Guidance:
+<div class="usa-alert usa-alert--error">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">The GSA PKI SSP ATO is not a governmentwide risk acceptance.</h4>
+    <p class="usa-alert__text">Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufficient for their continued use. 
+    </p>
+  </div>
+</div>
 
+To avoid significant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities. Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP.
 
-Engage an Assessor or Assessment Team that is an independent third-party competent in Public Key technology.
-Format System Security Plan in Open Source Control Assessment Language.
-Obtain all necessary GSA SA&A guidance documents and security artifact templates from the security team in the GSA Office of Chief Information Office. Documents to be obtained and used include:
-Managing Enterprise Risk—GSA policy detailing annual documentation requirements.
-SA&A Artifact Templates—Examples include Incident Response template, System Security Plan template, Penetration Testing and Results template, Plan of Action and Milestones (POA&M) template, and Security Assessment Report template.
-FPKI 800-53 Overlay (OVERLAY)—Details security controls applicable to SSP PKI systems and provides supplemental guidance on additional requirements for those controls and enhancements.
-Perform the Assessment, completing all provided templates and guidance.
-Develop a Plan of Action and Milestones (POA&M) to facilitate remediation of any security findings. 
-Provide the Assessment Package to the OCISO’s Information Systems Security Manager (ISSM), who reviews the package to ensure FISMA security requirements are met. 
-The Information System Security Management (ISSM) on the security team creates an authorization package and submits it to the Authorizing Official (AO) in the SSP Program Office. 
-The AO makes a risk determination that reflects the risk management strategy, including risk tolerance. Responses and mitigations for identified risks are provided by the ISSM. 
-The AO decides whether to approve or deny authorization to operate.
-If approved, the AO signs and issues an ATO.
-The SSP performs risk management activities documented in the IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 and the SSP Handbook.
+### Step 5 - Apply to GSA MAS and Get Listed as an Identity Trusted Service
 
-NOTE: The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufficient for their continued use. 
-
-To avoid significant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities.
-Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP.
-
-Step 5 - Apply to GSA MAS and Get Listed as an Identity Trusted Service
 Upon receiving an ATO and being confirmed as a GSA PKI SSP, the vendor is ready to apply to the GSA MAS to offer digital certificate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
 
-Acquisition Procedural Guidance:
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Guidance: Acquisition Procedure</h4>
+    <p class="usa-alert__text">
+      <li>1. Submit an Information Technology Package for 
+        <a class="usa-link" href="https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule/mas-roadmap">GSA Special Item Number (SIN) 541519PKI on the GSA MAS</a>.</li>
+      <li>2. Collaborate with the FAS to clarify or supplement the package for contract determination.</li>
+    </p>
+  </div>
+</div>
 
+<div class="usa-alert usa-alert--success">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Favorable SAR</h4>
+    <p class="usa-alert__text">If the OCISO and SSP Program Office believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certificate services on the day of receiving the ATO letter.
+    </p>
+  </div>
+</div>
 
-Submit an Information Technology Package for GSA Special Item Number (SIN) 541519PKI on the GSA MAS. For assistance, please visit the GSA’s website: https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule/mas-roadmap 
+After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Office. This information is publicly posted on [idmanagement.gov under Government Identity Trust Services](https://www.idmanagement.gov/buy/trust-services/#government-identity-services) to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
 
+## Maintenance Activities
 
-Collaborate with the FAS to clarify or supplement the package for contract determination.
-NOTE: If the OCISO and SSP Program Office believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certificate services on the day of receiving the ATO letter.
-After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Office. This information is publicly posted on idmanagement.gov under Government Identity Trust Services to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
-Maintenance Activities
 A GSA PKI SSP must complete ongoing maintenance activity to remain in the program. If these maintenance activities are not completed, the vendor may lose either its Authorization to Operate or Federal PKI certification.
-PKI Maintenance
-A GSA PKI SSP must comply with all federal PKI-directed activities by:
-Completing annual PKI compliance activities as outlined in the Federal PKI Annual Review requirements.
-Following the FPKI Incident Management Plan in the event of a PKI-related incident.
-SA&A Maintenance
+
+### PKI Maintenance
+
+A GSA PKI SSP must comply with all Federal PKI-directed activities by:
+1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements](https://www.idmanagement.gov/governance/fpkiaudit/#annual-review-requirements-for-all-certification-authorities).
+2. Following the [Federal PKI Incident Management Plan](https://www.idmanagement.gov/docs/fpki-imp.pdf) in the event of a PKI-related incident.
+
+### SA&A Maintenance
+
 The GSA PKI SSP Program Office and GSA’s security team perform continuous monitoring, annual checks, monthly scanning, vulnerability management, and other risk management strategies to maintain operational status. Risk management activities are documented in the IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 and the SSP Handbook.
-GSA PKI SSP MAS Contract Maintenance
+
+### GSA PKI SSP MAS Contract Maintenance
+
 The vendor must maintain its GSA PKI SSP MAS Contract to stay in compliance with the GSA PKI SSP MOA. If a vendor cannot maintain a GSA PKI SSP MAS Contract, the PKI vendor will coordinate decommission activity through the GSA PKI SSP Program Office with customer agencies, the Federal PKI Policy Authority, and supporting GSA offices.
-Section III: Digital Certificate Services
+
+# Section III: Digital Certificate Services
 While the SSP Program has primarily focused on digital certificates for Personal Identity Verification (PIV) cards, the [COMMON CP] provides opportunities (and supporting Object Identifiers (OIDs) for SSPs to offer additional services to federal agencies.
-Current Services
-PIV Certificates
+
+## Current Services
+
+### PIV Certificates
+
 A PIV card is a hardware-based smart card that conforms to Federal Information Processing Standard 201. It contains five digital certificates of which four are available to the user. A PIV card is issued to either a federal employee or contractor who has a favorably-adjudicated Tier 1 or higher federal background investigation. PIV certificates issuance is contingent on the agency customer operating a card management system.
 
-Type
-COMMON OID
-Certificates for authentication to logically and physically access federal assets
-id-fpki-common-authentication
-Certificates for encrypted email
-id-fpki-common-policy OR
-id-fpki-common-hardware
-Certificates to digitally sign emails and documents
-id-fpki-common-hardware
-Certificates for Card Authentication
-id-fpki-common-cardAuth
-Certificates used by a Card Management System to digitally sign content embedded in PIV cards
-id-fpki-common-pivcontentSigning
+| Type | COMMON OID |
+| ------- | ------- |
+| Authentication for logical and physical access. | id-fpki-common-authentication |
+| Encryption for email or documents. | id-fpki-common-policy OR id-fpki-common-hardware |
+| Digitally sign emails and documents. | id-fpki-common-hardware |
+| Card Authentication for physical access. | id-fpki-common-cardAuth |
+| Digitally sign content embedded in PIV cards. | id-fpki-common-pivcontentSigning |
 
-Derived PIV Certificates
-A derived PIV certificate is either a software or hardware certificate issued when the user demonstrates ownership of a PIV card. A derived PIV certificate is issued to a mobile device or other form factors such as FIDO USB security keys and device Trusted Platform Module. A derived PIV certificate is issued and used where it is difficult to leverage a smart card form factor such as on devices or platforms that cannot use a smart card reader.
+### Derived PIV Certificates
 
+A derived PIV certificate is either a software or hardware certificate issued when the user demonstrates ownership of a PIV card. A derived PIV certificate is issued to a **mobile device or other form factors such as FIDO USB security keys and device Trusted Platform Module**. A derived PIV certificate is issued and used where it is difficult to leverage a smart card form factor such as on devices or platforms that cannot use a smart card reader.
 
-Type
-COMMON OID
-Derived-PIV authentication certificates for use on mobile devices or other form factors such as FIDO USB security keys and Trusted Platform Modules
-id-fpki-common-derived-pivAuth-hardware or id-fpki-common-derived-pivAuth
-Derived PIV signature certificates for use on mobile devices or other form factors such as FIDO USB security keys and Trusted Platform Modules
-id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high
-Derived PIV encryption certificates for use on mobile devices or other form factors such as FIDO USB security keys and Trusted Platform Modules
-id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high
+| Type | COMMON OID |
+| ------- | ----- | 
+| Authentication for logical access. | id-fpki-common-derived-pivAuth-hardware or id-fpki-common-derived-pivAuth |
+| Digitally sign emails and documents. | id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high |
+| Encryption for email or documents. | id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high |
 
-PIV-I Certificates
-PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the PIV-I playbook for more details.
+### PIV-I Certificates
 
-Type
-COMMON OID
-PIV Interoperable authentication certificates
-id-fpki-common-pivi-authentication
-PIV Interoperable digital signature certificates
-id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high
-PIV Interoperable encryption certificates
-id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high
-PIV Interoperable card authentication certificates
-id-fpki-common-pivi-cardAuth
-PIV Interoperable content signing certificates
-id-fpki-common-pivi-contentSigning
+PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the PIV-I playbook for more details. For more information on PIV-I, see the [PIV-I Playbook](https://playbooks.idmanagement.gov/playbooks/pivi/).
 
-Device Certificates
+| Type | COMMON OID |
+| ------ | ---- |
+| Authentication for logical and physical access. | id-fpki-common-pivi-authentication |
+| Digitally sign emails and documents. | id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high | 
+| Encryption for email or documents. | id-fpki-common-policy, id-fpki-common-hardware, or id-fpki-common-high
+| Card Authentication for physical access. | id-fpki-common-pivi-cardAuth |
+| Digitally sign content embedded in PIV-I cards. | id-fpki-common-pivi-contentSigning |
+
+### Device Certificates
+
 Device certificates can be issued to devices such as domain controllers, web sites, servers, or other types of devices on which they want to establish secure server-to-server type communications. Note: GSA PKI SSP device certificates are not publicly trusted and should not be used on public-facing websites or on websites with users outside the home agency.
 
+| Type | COMMON OID |
+| ------- | ----- |
+| Certificates to support secure HTTP connections with end users and servers providing interagency trust.| id-fpki-common-devices or id-fpki-common-deviceHardware |
 
+### Digital Signature Certificates
 
+A digital signature certificate is used to digitally sign documents such as PDFs or Microsoft Word or digitally sign emails. An agency may also request a [Digital Autopen signature certificate](https://playbooks.idmanagement.gov/playbooks/autopen/) to sign documents for the Federal Register.
 
-Type
-COMMON OID
-Certificates to support secure HTTP connections with end users and servers providing interagency trust
-id-fpki-common-devices or id-fpki-common-deviceHardware
+| Type | COMMON OID |
+| ---- | -------- |
+| Digitally sign emails and documents. | id-fpki-common-hardware |
 
-Digital Signature Certificates
-A digital signature certificate is used to digitally sign documents such as PDFs or Microsoft Word or digitally sign emails. An agency may also request a Digital Autopen signature certificate to sign documents for the Federal Register.
+### Key Management Services
 
-Type
-COMMON OID
-Certificates to digitally sign emails and documents
-id-fpki-common-hardware
-
-Key Management Services
 Key Management Services store and manage private keys associated with encryption certificates. Examples might include Key Escrow and Recovery, Key History, and Data Decryption Services.
-Conclusion
+
+# Conclusion
+
 GSA established the GSA PKI SSP Program to help agencies identify and procure federally-compliant PKI services and digital certificates. There may be multiple types of PKI SSPsrs, but only one type of GSA PKI SSP. This clear definition not only helps agencies identify approved services, but also leverage the governmentwide acquisition vehicles for customer agencies to receive consistent pricing, terms, and services. The GSA PKI SSP Program Office maintains the SSP Program and coordinates government activity on behalf of the GSA PKI SSPs. 
 
-Appendix A - Sample MOA
+# Appendix A - Sample MOA
 
-
-Memorandum of Agreement
-Federal Public Key Infrastructure
-Shared Service Provider Program
-(Commercial Entities Only)
-
-
+Memorandum of Agreement  
+GSA Public Key Infrastructure Shared Service Provider Program  
+(Commercial Entities Only)  
 
 This Memorandum of Agreement ("Agreement") is entered into by the General Services Administration, Office of Technology Policy (“OTP”), within the Office of Governmentwide Policy located at 1800 F Street, NW Washington, DC 20405 and the [name of the commercial SSP vendor ("Entity") located at [SSP vendor address], as of the date of OTP’s signature to this Agreement with a term of three years. The OTP and Entity will collectively be referred to as "Party" or the "Parties."
 
-Definitions.
-Federal Public Key Infrastructure ("FPKI" or " Federal PKl") is an implementation of a set of PKI policies, processes, and information technology systems that provide the U.S. Government with a common baseline to administer certificates and public-private key pairs. Federal PKI is one of several trust frameworks supporting federated trust of government devices and persons used by the U.S. Federal Government.
+1. **Definitions.**
+<ol type="a">
+<li> Federal Public Key Infrastructure ("FPKI" or " Federal PKl") is an implementation of a set of PKI policies, processes, and information technology systems that provide the U.S. Government with a common baseline to administer certificates and public-private key pairs. Federal PKI is one of several trust frameworks supporting federated trust of government devices and persons used by the U.S. Federal Government.</li>
+<li> Federal Public Key Infrastructure Policy Authority ("FPKIPA" or " Policy Authority") is the federal trust framework governance body for a set of PKI systems and associated certificates used for federated trust across and between federal agencies and with entities that are not a U.S. Federal Government agency for mission delivery purposes. The Policy Authority is a group of representatives from U.S. Federal Government agencies (including cabinet-level departments) established pursuant to a charter under the Federal CIO council. It manages the policies governing the FPKI trust framework and approves or denies entities for certification into the trust framework.</li>
+<li>Shared Service Provider (“SSP”) An Entity that adheres to the FPKI set of policies and processes, as well as GSA requirements to provide digital certificate services to federal agencies.</li>
+<li> Shared Service Program (“SSP Program”) is a GSA program that provides technical support for the FPKI. Specifically, it supports the governmentwide implementation of HSPD-12 and the FICAM Initiative. It is recognized as robust secure PKI services that provide agencies with the capability to implement secure logical and physical access to federal resources through outsourced shared PKI services. By cross-certification, the shared PKI infrastructure is a part of the FPKI’s information technology systems governed by the FPKI. GSA has established a Special Item Number (SIN) 541519PKI that identifies these PKI services that contract holders offer governmentwide.</li>
 
 
-Federal Public Key Infrastructure Policy Authority ("FPKIPA" or " Policy Authority") is the federal trust framework governance body for a set of PKI systems and associated certificates used for federated trust across and between federal agencies and with entities that are not a U.S. Federal Government agency for mission delivery purposes. The Policy Authority is a group of representatives from U.S. Federal Government agencies (including cabinet-level departments) established pursuant to a charter
-under the Federal CIO council. It manages the policies governing the FPKI trust framework and approves or denies entities for certification into the
-trust framework.
-
-Shared Service Provider (“SSP”)
-An Entity that adheres to the FPKI set of policies and processes, as well as GSA requirements to provide digital certificate services to federal agencies.
-
-Shared Service Program (“SSP Program”) is a GSA program that provides technical support for the FPKI. Specifically, it supports the governmentwide implementation of HSPD-12 and the FICAM Initiative. It is recognized as robust secure PKI services that provide agencies with the capability to implement secure logical and physical access to federal resources through outsourced shared PKI services. By cross-certification, the shared PKI infrastructure is a part of the FPKI’s information technology systems governed by the FPKI.
-GSA has established a Special Item Number (SIN) 541519PKI that identifies these PKI services that contract holders offer governmentwide.
-
-
-Purpose. The purpose of this Agreement is to agree on the terms and conditions on which the Entity will participate in the SSP Program. The Office of Technology Policy (OTP) manages the SSP Program with managing partners from the following GSA offices:
-
-
-Office of Chief Information Security Officer (“OCISO”)
-Federal Acquisition Service, Office of Information Technology Category (“ITC”)
-Office of Government-wide Policy, Office of Technology Policy (OTP)
+2. **Purpose.** The purpose of this Agreement is to agree on the terms and conditions on which the Entity will participate in the SSP Program. The Office of Technology Policy (OTP) manages the SSP Program with managing partners from the following GSA offices:
+<ol type="a">
+<li>Office of Chief Information Security Officer (“OCISO”)</li>
+<li>Federal Acquisition Service, Office of Information Technology Category (“ITC”)</li>
+<li>Office of Government-wide Policy, Office of Technology Policy (OTP)</li>
 
 Specifically, the OCISO manages the security posture of the Entity’s information technology systems and the ITC makes the Entity’s shared PKI services available for purchase through a GSA contract vehicle. External to but in concert with GSA, the FPKIPA governs the certificate policies, requirements, and practices for the shared PKI services. This Agreement sets forth the respective responsibilities and obligations of the Parties.
 
