@@ -84,7 +84,7 @@ primary_navigation:
 
 # Who FICAM is For? top level menu with dropdowns
   # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Getting Started')
-  - name: Getting Started
+  - name: Get Started
     children:
       - name: Introduction
         url: /who/
@@ -113,7 +113,7 @@ primary_navigation:
 
 # How to use FICAM top level menu with dropdowns
   # - name: How to use FICAM (changed on 05-17-2023 per Babur/Joe) to 'Implementation Guides'
-  - name: Implementation Guides
+  - name: Implement
     children:
       - name: Introduction
         url: /how/
@@ -142,20 +142,20 @@ primary_navigation:
 
   # GSA PKI Shared Service Provider Program Guide Tope Level Menu
   - name: SSP
-    description: GSA PKI Shared Service Provider Program Guide
+    description: GSA PKI shared service provider program Guide
     url: /ssp/
 
   # APL Menu for visible display and access of APLs
   # Note: All APLs are accessible from the below URLs for reference and linking
-  - name: FIPS 201 APLs
+  - name: APLs
     children: 
-      - name: Approved Product List - PIV Cards
+      - name: Approved product list - PIV Cards
         url: /approved-products-list-piv/
-      - name: Approved Product List - PACS
+      - name: Approved product list - PACS
         url: /approved-products-list-pacs-products/
-      - name: PACS Awaiting Approval
+      - name: PACS awaiting approval
         url: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
-      - name: Removed Product List
+      - name: Removed product list
         url: /removed-products-list/
 
   # FICAM University page

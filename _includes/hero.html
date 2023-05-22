@@ -41,7 +41,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
             <div class="splide__slide splide_fix" role="group" aria-label="Slide about {{slide.heroHeading}}">
                   <h2 class="hero-heading">{{ slide.heroHeading }}</h2>
                   <p class="hero-text gsa-text-width">{{ slide.heroText }}</p>
-                  <a class="usa-button" href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer" aria-label="Click to learn more about {{slide.heroHeading}}">{{ slide.actionButtonText }}</a>            
+                  <a class="usa-button" href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer" title="{{ slide.actionButtonText }} {{slide.heroHeading}}" aria-label="{{ slide.actionButtonText }} {{slide.heroHeading}}">{{ slide.actionButtonText }} {{ slide.heroHeading }}</a>            
             </div>
             {% endfor %}
 
