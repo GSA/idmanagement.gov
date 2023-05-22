@@ -320,7 +320,7 @@ Key Management Services store and manage private keys associated with encryption
 
 GSA established the GSA PKI SSP Program to help agencies identify and procure federally-compliant PKI services and digital certificates. There may be multiple types of PKI SSPsrs, but only one type of GSA PKI SSP. This clear definition not only helps agencies identify approved services, but also leverage the governmentwide acquisition vehicles for customer agencies to receive consistent pricing, terms, and services. The GSA PKI SSP Program Office maintains the SSP Program and coordinates government activity on behalf of the GSA PKI SSPs. 
 
-# Appendix A - Sample MOA
+# Appendix A. Sample MOA
 
 Memorandum of Agreement  
 GSA Public Key Infrastructure Shared Service Provider Program  
