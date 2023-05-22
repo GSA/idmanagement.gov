@@ -17,9 +17,9 @@ subnav:
   - text: Section III. Digital Certificate Services
     href: '#section-iii-digital-certificate-services'
   - text: Conclusion
-    href: 'conclusion'
+    href: '#conclusion'
   - text: Appendix A. Sample MOA
-    href: 'appendix-a-sample-moa'
+    href: '#appendix-a-sample-moa'
 ---
 
 Version 1.0  
@@ -98,7 +98,7 @@ The GSA, Office of Chief Information Security Officer (OCISO) provides security 
 
 The GSA Federal Acquisition Service (FAS) connects government buyers with the GSA PKI SSPs. The FAS organization captures the GSA PKI SSP services and sets prices, terms, and conditions of the Special Item Number (SIN) on the [GSA Multiple Award Schedule](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}. The SSP SIN is intended to make it easier for potential buyers to search for the digital certificate services offered by the GSA PKI SSPs. 
 
-# Section II. SSP Application and Maintenance Activities
+# Section II. Application and Maintenance Activities
 Federal agencies requiring digital certificate services from a SSP will send a Request for Quotation or a Request for Proposal based on the SSP SIN—sending alerts to SSPs. Federal agencies can expect a response from the SSPs that reflects the due diligence completed by the Federal Acquisition Service (FAS) to offer SSPs that satisfy federal requirements.
 
 Federal agencies’ participation in the SSP Program is important. While their purchases through the program help drive revenue, their ultimate participation leads to the Federal Government’s way of using trusted SSPs to issue and manage digital certificates for devices, federal employees, contractors, and other affiliated personnel. Additionally, federal agencies using the program will leverage the SSPs’ infrastructure components for digital certificate services, which can result in cost savings derived from economies of scale through large volume of certificate purchases.
@@ -257,7 +257,7 @@ The GSA PKI SSP Program Office and GSA’s security team perform continuous moni
 
 The vendor must maintain its GSA PKI SSP MAS Contract to stay in compliance with the GSA PKI SSP MOA. If a vendor cannot maintain a GSA PKI SSP MAS Contract, the PKI vendor will coordinate decommission activity through the GSA PKI SSP Program Office with customer agencies, the Federal PKI Policy Authority, and supporting GSA offices.
 
-# Section III: Digital Certificate Services
+# Section III. Digital Certificate Services
 While the SSP Program has primarily focused on digital certificates for Personal Identity Verification (PIV) cards, the [COMMON CP] provides opportunities (and supporting Object Identifiers (OIDs) for SSPs to offer additional services to federal agencies.
 
 ## Current Services
@@ -418,7 +418,7 @@ This Agreement does not authorize, nor shall it be construed to authorize, or ad
 
 The following is applicable if Entity is not a U.S. Federal Government agency: Entity shall comply with applicable U.S. Federal laws and regulations including but not limited to trade compliance, economic and trade sanctions, and blocked, denied, and debarred persons lists. If the Entity is not in compliance with these applicable laws and regulations, OTP reserves the right to change or remove the Entity's participation in the SSP Program in the interest of national security.
 
-8\. **Updates**: The OCISO and OTP are responsible for the maintenance and update of the _IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy_ and _SSP Operations Handbook_ respectively.
+8\. **Updates**. The OCISO and OTP are responsible for the maintenance and update of the _IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy_ and _SSP Operations Handbook_ respectively.
  
 Entity shall review the document updates each time they are updated and implement the necessary changes to practices to comply.
 
@@ -460,7 +460,7 @@ Entity will promptly notify the OTP:
 
 If the issue is a security incident, the Entity must comply with GSA’s Incident-Response-[CIO-IT-Security-01-02-Rev-19] and report incident to the OTP and OCISO, as well as submit an incident report for follow-on reporting to the Cybersecurity Infrastructure Security Agency (CISA), the Office of Inspector General (OIG), and the United States Congress, as applicable. 
 
-15\. **Signatures**:
+16\. **Signatures**.:
 <br><br><br><br>
 Name:<br>
 Title: Assistant Commissioner<br>
