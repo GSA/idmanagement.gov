@@ -8,8 +8,8 @@ sticky_sidenav: true
 last_review: 05/21/2023
 
 subnav:
-  - text: GSA PKI Shared Service Provider Program Overview
-    href: '#overview'
+  - text: Program Overview
+    href: '#program-overview'
   - text: Section I. GSA PKI SSP Program
     href: '#section-i-gsa-pki-ssp-program'
   - text: Section II. Application and Maintenance Activities
@@ -31,7 +31,7 @@ May 22, 2023
 | :----------: | :-------: | -------- |
 | 1.0 | 01/05/2021 | Initial Draft |
 
-# Overview
+# Program Overview
 
 The General Services Administration, Office of Government-wide Policy, manages the Public Key Infrastructure Shared Services Provider Program. The primary focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.
 
