@@ -124,8 +124,10 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Guidance: MOA Procedure</h4>
     <p class="usa-alert__text">
-      <li>1. Send an email to GSAPKISSP at gsa.gov requesting admission to the GSA PKI SSP Program.</li>
-      <li>2. SSPs must obtain, review, and sign the MOA from the SSP Program Office.</li>
+      <ol type="1">
+        <li>Send an email to GSAPKISSP at gsa.gov requesting admission to the GSA PKI SSP Program.</li>
+        <li>SSPs must obtain, review, and sign the MOA from the SSP Program Office.</li>
+      </ol>
     </p>
   </div>
 </div>
@@ -161,8 +163,10 @@ If the Federal PKI Policy Authority approves the PKI vendor, both parties execut
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Guidance: Federal PKI Certification</h4>
     <p class="usa-alert__text">
-      <li>1. The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.</li>
-      <li>2. The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.</li>
+      <ol type="1">
+        <li>The GSA PKI SSP Program Office will coordinate PKI vendor information needs with the GSA supporting offices.</li>
+        <li>The PKI vendor shares an executed copy of the Federal PKI Policy Authority MOA with the GSA PKI SSP Program Office.</li>
+      </ol>
     </p>
   </div>
 </div>
