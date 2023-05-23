@@ -36,37 +36,4 @@ The markdown page will pull information from a data yml (sample file) that inclu
 
 | Document Name | Publication Date | Categories | More Information |
 | --- | --- | --- | --- | {% for document in site.data.laws-policies-standards %}
-| [ document.shortName ]({% link _governance/ficampolicydetails.md %}) | {{ document.published }} | {% for category in document.category %} {{ category }}<br> {% endfor %} | {{ document.url }} | {% endfor %}
-
-<table class="usa-table--borderless">
-  <thead class="usa-sr">
-    <tr>
-      <th>Document Name/Link</th>
-      <th>Publication Date</th>
-      <th>Categories</th>
-      <th>More Information</th>
-    </tr>
-  </thead>
-  <tbody>
-      {% for document in site.data.laws-policies-standards %}
-          <tr>
-            <td>
-              <a href="{{document.url}}">
-                {{document.shortName}}
-              </a>
-            </td>
-            <td>{{ document.published }}</td>
-            <td>
-            {% for category in document.categories %}
-              {{ category }}<br>
-            {% endfor %}
-            </td>
-            <td>
-              <a href="{{site.baseurl}}/laws-policies-standards/{{document.shortName | datapage_url: laws-policies-standards }}">
-                More Info
-              </a>
-            </td>
-          </tr>
-      {% endfor %}
-  </tbody>
-</table>
+| [ {{document.shortName}} ]({% link _governance/ficampolicydetails.md %}) | {{document.published}} | {% for service in document.FICAM_Service_Mapping %} {{ service }}<br/> {% endfor %} | {{ document.url }} | {% endfor %}
