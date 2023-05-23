@@ -5,7 +5,10 @@ title:  GSA PKI Shared Service Provider Program Guide
 permalink: buy/gsapkissp/
 sidenav: buy
 sticky_sidenav: true
-last_review: 05/21/2023
+
+version: 1.0
+pubdate: June 30, 2023
+author: GSA PKI SSP Program Management Office
 
 subnav:
   - text: Program Overview
@@ -14,16 +17,23 @@ subnav:
     href: '#section-i-gsa-pki-ssp-program'
   - text: Section II. Application and Maintenance Activities
     href: '#section-ii-application-and-maintenance-activities'
+  - text: Application Process
+    href: '#application-process'
+  - text: Maintenance Activities
+    href: '#maintenance-activities'
   - text: Section III. Digital Certificate Services
     href: '#section-iii-digital-certificate-services'
+  - text: Current Services
+    href: '#current-services'
   - text: Conclusion
     href: '#conclusion'
   - text: Appendix A. Sample MOA
     href: '#appendix-a-sample-moa'
 ---
 
-Version 1.0  
-May 22, 2023
+Version: {{page.version}}  
+Last Update: {{page.pubdate}}  
+Author: {{page.author}}  
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"><br><br><br>
 
