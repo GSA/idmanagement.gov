@@ -331,158 +331,219 @@ Key Management Services store and manage private keys associated with encryption
 GSA established the GSA PKI SSP Program to help agencies identify and procure federally-compliant PKI services and digital certificates. There may be multiple types of PKI SSPsrs, but only one type of GSA PKI SSP. This clear definition not only helps agencies identify approved services, but also leverage the governmentwide acquisition vehicles for customer agencies to receive consistent pricing, terms, and services. The GSA PKI SSP Program Office maintains the SSP Program and coordinates government activity on behalf of the GSA PKI SSPs. 
 
 # Appendix A. Sample MOA
-
-Memorandum of Agreement  
-GSA Public Key Infrastructure Shared Service Provider Program  
-(Commercial Entities Only)  
-Version 1.0
-
-This Memorandum of Agreement ("Agreement") is entered into by the General Services Administration, Office of Technology Policy (“OTP”), within the Office of Governmentwide Policy located at 1800 F Street, NW Washington, DC 20405 and the [name of the commercial SSP vendor ("Entity") located at [SSP vendor address], as of the date of OTP’s signature to this Agreement with a term of three years. The OTP and Entity will collectively be referred to as "Party" or the "Parties."
-
-1\. **Definitions**.
-<ol type="a">
-  <li> Federal Public Key Infrastructure ("FPKI" or " Federal PKl") is an implementation of a set of PKI policies, processes, and information technology systems that provide the U.S. Government with a common baseline to administer certificates and public-private key pairs. Federal PKI is one of several trust frameworks supporting federated trust of government devices and persons used by the U.S. Federal Government.</li>
-  <li> Federal Public Key Infrastructure Policy Authority ("FPKIPA" or " Policy Authority") is the federal trust framework governance body for a set of PKI systems and associated certificates used for federated trust across and between federal agencies and with entities that are not a U.S. Federal Government agency for mission delivery purposes. The Policy Authority is a group of representatives from U.S. Federal Government agencies (including cabinet-level departments) established pursuant to a charter under the Federal CIO council. It manages the policies governing the FPKI trust framework and approves or denies entities for certification into the trust framework.</li>
-  <li>Shared Service Provider (“SSP”) An Entity that adheres to the FPKI set of policies and processes, as well as GSA requirements to provide digital certificate services to federal agencies.</li>
-  <li> Shared Service Program (“SSP Program”) is a GSA program that provides technical support for the FPKI. Specifically, it supports the governmentwide implementation of HSPD-12 and the FICAM Initiative. It is recognized as robust secure PKI services that provide agencies with the capability to implement secure logical and physical access to federal resources through outsourced shared PKI services. By cross-certification, the shared PKI infrastructure is a part of the FPKI’s information technology systems governed by the FPKI. GSA has established a Special Item Number (SIN) 541519PKI that identifies these PKI services that contract holders offer governmentwide.</li>
+<p align="center">
+  <b>
+    Memorandum of Agreement  
+    GSA Public Key Infrastructure Shared Service Provider Program  
+    (Commercial Entities Only)  
+    Version 1.0
+  </b>
+</p>
+<p>
+This Memorandum of Agreement ("Agreement") is entered into by the General Services Administration, Ofﬁce of Technology Policy (“OTP”), within the Ofﬁce of Governmentwide Policy located at 1800 F Street, NW Washington, DC 20405 and the [name of the commercial SSP vendor ("Entity") located at [SSP vendor address], as of the date of OTP’s signature to this Agreement with a term of three years. The OTP and Entity will collectively be referred to as "Party" or the "Parties."
+</p>
+<ol>
+  <!-- 1 -->
+  <li><strong>Deﬁnitions.</strong> 
+    <p>
+      <ol type="a">
+        <li><u>Federal Public Key Infrastructure ("FPKI" or " Federal PKl")</u> is an implementation of a set of PKI policies, processes, and information technology systems that provide the U.S. Government with a common baseline to administer certiﬁcates and public-private key pairs. Federal PKI is one of several trust frameworks supporting federated trust of government devices and persons used by the U.S. Federal Government.</li>
+        <li><u>Federal Public Key Infrastructure Policy Authority</u> ("FPKIPA" or " Policy Authority") is the federal trust framework governance body for a set of PKI systems and associated certiﬁcates used for federated trust across and between federal agencies and with entities that are not a U.S. Federal Government agency for mission delivery purposes. The Policy Authority is a group of representatives from U.S. Federal Government agencies (including cabinet-level departments) established pursuant to a charter under the Federal CIO council. It manages the policies governing the FPKI trust framework and approves or denies entities for certiﬁcation into the trust framework.</li>
+        <li><u>Shared Service Provider (“SSP”)</u> An Entity that adheres to the FPKI set of policies and processes, as well as GSA requirements to provide digital certiﬁcate services to federal agencies.</li>
+        <li><u>Shared Service Program</u>  (“SSP Program”)is a GSA program that provides technical support for the FPKI. Speciﬁcally, it supports the governmentwide implementation of HSPD-12 and the FICAM Initiative. It is recognized as robust secure PKI services that provide agencies with the capability to implement secure logical and physical access to federal resources through outsourced shared PKI services. By cross-certiﬁcation, the shared PKI infrastructure is a part of the FPKI’s information technology systems governed by the FPKI. GSA has established a Special Item Number (SIN) 541519PKI that identiﬁes these PKI services that contract holders offer governmentwide.</li>
+      </ol>
+    </p>
+  </li>
+  <!--2 -->
+  <li><p><strong>Purpose.</strong> The purpose of this Agreement is to agree on the terms and conditions on which the Entity will participate in the SSP Program. The Ofﬁce of Technology Policy (OTP) manages the SSP Program with managing partners from the following GSA ofﬁces:</p>
+    <p>
+      <ol type="a">
+        <li>Ofﬁce of Chief Information Security Ofﬁcer (“OCISO”)</li>
+        <li>Federal Acquisition Service, Ofﬁce of Information Technology Category (“ITC”)</li>
+        <li>Ofﬁce of Government-wide Policy, Ofﬁce of Technology Policy (OTP)</li>
+      </ol>
+    </p>
+    <p>
+    Speciﬁcally, the OCISO manages the security posture of the Entity’s information technology systems and the ITC makes the Entity’s shared PKI services available for purchase through a GSA contract vehicle. External to but in concert with GSA, the FPKIPA governs the certiﬁcate policies, requirements, and practices for the shared PKI services. This Agreement sets forth the respective responsibilities and obligations of the Parties.</p>
+  </li>
+  <!-- 3 -->
+  <li><p><strong>Authority.</strong> The basis of this Agreement and the subsequent inclusion of the Entity into the SSP Program aligns with the *Federal Information Security Modernization Act of 2014 (FISMA), GSA’s IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy, the Federal Acquisition Regulation*, the federal PKI certiﬁcate policies, and the Entity certiﬁcate policy or practices listed in the Entity’s MOA with the FPKIPA. It also complements the *SSP Operations Handbook*.</p>
+  </li>
+  <!-- 4 -->
+  <li><p><strong>Roles and Responsibilities of the Parties.</strong></p>
+    <p>
+      <ol type="a">
+        <li><strong>The OTP will do the following:</strong>
+          <p>
+            <ol type="i">
+              <li>Serve as the GSA senior ofﬁcial to grant the Entity’s information technology system authorization to operate.</li>
+              <li>Determine program direction based on Federal Government need.</li>
+              <li>Ensure through the OCISO and ITC proper performance and delivery of PKI shared services.</li>
+              <li>Develop and manage operational processes to effectively deliver the shared PKI services.</li>
+              <li>Represent SSP and SSP Program interests in the FPKIPA.</li>
+              <li>Report quarterly on security posture to the FPKIPA and customer agencies.</li>
+              <li>Coordinate service improvement and feedback from customer agencies to SSP.</li>
+              <li>Collaborate with GSA managing partners to operate and maintain effective, secure, and reliable PKI services.</li> 
+            </ol>
+          </p>
+        </li>
+        <li><strong>The OCISO will do the following:</strong>
+          <p>
+            <ol type="i">
+              <li>Serve as the GSA senior ofﬁcial to recommend the Entity’s information technology system for authorization to operate (ATO).</li> 
+              <li>Monitor and report on the Entity’s information technology system security posture.</li>
+              <li>Provide quarterly security reports to the Authorizing Ofﬁcial.</li>
+              <li>Collaborate with the OTP on security management concerns to operate and maintain an effective, secure, and reliable PKI shared service.</li> 
+            </ol>
+          </p>
+        </li>
+        <li><strong>The ITC will do the following:</strong>
+          <p>
+            <ol type="i">
+              <li>Own and manage SIN 541519PKI for the SSP Program on the GSA Multiple Award Schedule (MAS).</li> 
+              <li>Review the Entity’s MAS Information Technology Package for a contract determination.</li>
+              <li>Collaborate with OTP and the ITC contract team to make the Entity’s PKI shared service available to purchase.</li>
+              <li>Collaborate with the OTP on contract management concerns to deliver effective, secure, and reliable PKI shared service.</li>
+              <li>Issue and revoke certiﬁcates to approved SSPs</li>
+            </ol>
+          </p>
+        </li>
+        <li><strong>The Entity will do the following:</strong>
+          <p>
+            <ol type="i">
+              <li>Comply with all laws, ordinances, and regulations (Federal, State, or Local) covering work in the SSP Program.</li>
+              <li>Comply with the FPKI policies to the include the X.509 Certiﬁcate Policy for the U.S. Federal PKI Common Policy Framework (FCPF), hereafter referenced as COMMON and its complementary documents:
+                <p>
+                  <ol start="1">
+                    <li>Change proposals</li>
+                    <li>Key Recovery Policy</li>
+                    <li>U.S. Federal Certiﬁcate Proﬁles: X.509 Certiﬁcate and Certiﬁcate Revocation List (CRL) Extensions Proﬁle for the Shared Service Providers (SSP) Program</li>
+                    <li>Memorandum of Agreements (MOAs) established between the FPKIPA and Entity.</li>
+                  </ol>
+                </p>
+              </li>
+              <li>Obtain an Authorization to Operate (ATO) declaration through GSA’s formal program for information security management before rendering PKI services.</li>
+              <li>Ensure adequate resources to maintain an ATO and comply with binding operational directives, and GSA requirements for protecting GSA IT resources. This includes addressing critical gaps (e.g., multifactor authentication, database encryption, no outdated software, high and critical ﬁndings, etc.) in the timeframe speciﬁed in GSA guidance.</li> 
+              <li>Ensure any certiﬁcates, associated certiﬁcates, and public key pairs issued to the federal agencies will be owned by the government.</li>
+              <li>Use the SSP Operations Handbook as the program’s established guidelines while complying with regulations and GSA expectations.</li>
+              <li>Prepare for and facilitate monthly Security Dashboard and Plan of Action and Milestones meetings.</li>
+              <li>Attend and/or participate in monthly program, security, and contract meetings to exchange information or provide feedback on proposed changes to the program.</li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </li>
+  <!-- 5 -->
+  <li><p><strong>Third Parties.</strong> This Agreement is binding only upon the Parties, by and through their ofﬁcials, agents, employees, and successors. Entity may not assign its rights or delegate its duties or obligations under this Agreement without prior written consent from OTP. No person or entity is intended to be a third-party beneﬁciary of the provisions of this Agreement for purposes of any civil, criminal, or administrative action, and accordingly, no third person or entity may assert any claim or right as a beneﬁciary or protected class under this Agreement in any civil, criminal, or administrative action.</p>
+  <p>This Agreement does not authorize, nor shall it be construed to authorize, or add to any systems, documents or other technology, persons or entities not a Party to this Agreement nor intended to have authorization under this Agreement.</p>
+  </li>
+  <!-- 6 -->
+  <li><p><strong>Entity Change.</strong> If Entity anticipates changes or has changed due to a merger, acquisition, bankruptcy, or other means that modiﬁes the Entity ownership or security boundary, then Entity shall:</p>
+    <p>
+      <ol type="a">
+        <li>Provide written notiﬁcation to OTP about the intent to change the business relationship in a timely manner not to disrupt any PKI services.</li>
+        <li>Provide a transition plan that includes all activities from transferring a PKI solution to resolution of impacts on end users and the delivery environment. The depth of a transition plan should be appropriate for the type of transition and the criticality of the PKI components going through transition. At minimum, the activities in the transition plan must be compliant with the COMMON and address the following:
+        </li>
+      </ol>
+    </p>
+    <p>
+        <ol type="i">
+          <li>The coordination and scheduling of transferring system archives, system inventory and
+            conﬁguration data, certiﬁcate proﬁles, key recovery databases (if applicable), private
+            keys, key shares, audit records, hardware security modules, certiﬁcate and certiﬁcate
+            revocation list (CRL) databases, and all policy and security documents applicable to the
+            operations of the PKI solution.
+          </li> 
+          <li>The estimated costs for terminating, transferring, selling, or disposing a PKI
+            solution must be shared if direct or indirect expenses are transferred to the new approved
+            SSP and/or the impacted customer agency.
+          </li>
+          <li>The continued services for all certiﬁcates, certiﬁcate revocation, and status
+            checking until the expiration of the longest-lived certiﬁcate or transference of the
+            control for the DNS Names in URLs for these services.
+          </li>  
+          <li>The continued support to collect and review system audit logs for the PKI solution.</li>
+          <li>The continued support required to obtain and provide annual PKI compliance audits until revocation of all issued certiﬁcates or the expiration of the longest-lived issue certiﬁcate.</li>
+        </ol>
+    </p>
+  </li>
+  <!-- 7 -->
+  <li><p><strong>Compliance with Laws, Regulations and Policies.</strong> Entity agrees to comply with all applicable policies listed in Appendix A.</p>
+    <p>The following is applicable if Entity is not a U.S. Federal Government agency: Entity shall comply with applicable U.S. Federal laws and regulations including but not limited to trade compliance, economic and trade sanctions, and blocked, denied, and debarred persons lists. If the Entity is not in compliance with these applicable laws and regulations, OTP reserves the right to change or remove the Entity's participation in the SSP Program in the interest of national security.</p>
+  </li>
+  <!-- 8 -->
+  <li><p><strong>Updates:</strong> The OCISO and OTP are responsible for the maintenance and update of the *IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy and SSP Operations Handbook*respectively.</p>
+  <p>Entity shall review the document updates each time they are updated and implement the necessary changes to practices to comply.</p>
+  </li>
+  <!-- 9 -->
+  <li><p><strong>MOA Updates and Evolving Security Requirements.</strong> This MOA may be updated only by mutual written agreement signed by an authorized representative of each party.</p>
+    <p>Notwithstanding the foregoing, due to the nature of evolving national security threats and updates to technology and security, the Parties shall work in good faith to implement required updates to applicable laws, regulations, and policies through the following steps:</p>
+    <p>
+      <ol type="a">
+        <li>OTP, OCISO, or ITC will provide the Entity with written notice of the required updates, the number of days in which the updates must be implemented, and an updated version of Attachment A that incorporates the changes. The updated version of Attachment A will automatically replace the previous version of Attachment A and be deemed incorporated into this Agreement without further actions.</li>
+        <li>Upon notiﬁcation, the Entity shall have three (3) business days to conﬁrm via written response whether it will be implementing the changes.</li>
+        <li>If the Entity declines to implement the requirements, the OTP, ITC, and OCISO may decide to terminate this agreement, revoke ATO status, notify customer agencies of the situation, or take any such other action necessary to maintain the delivery of secure PKI services.</li>
+      </ol>
+    </p>
+  </li>
+  <!-- 10 -->
+  <li><p><strong>Conﬁdentiality.</strong> If Entity is not a U.S. Federal Government agency, the following applies:</p>
+    <p>
+      <ol type="a">
+        <li>Entity assumes full responsibility for and guarantees the security and conﬁdentiality of all documents, data, and other information supplied or gleaned from the customer agency, Federal PKI, and provided, obtained, or accessed through being a party to this Agreement ("Conﬁdential Information").</li>
+        <li>Entity will prevent disclosure of this Conﬁdential Information to any person not authorized by the U.S. Federal Government or Policy Authority to have access to such documents or information.</li>
+      </ol>
+    </p>
+  </li>
+  <!-- 11 -->
+  <li><p><strong>Liability.</strong> Neither Party shall be liable to the other for any loss, liability, damage or expense (including attorney fees) arising out of the operation of the PKI services. This Agreement is entered into for the convenience of the Parties and shall not give rise to any cause of action by Entity or by any third party.</p></li>
+  <!-- 12 -->
+  <li><p><strong>Conﬂict Resolution.</strong> If Entity is a private sector entity, the Contract Disputes Act, 41 U.S.C. 7101 et seq, is applicable to all disputes under this Agreement.</p></li>
+  <!-- 13 -->
+  <li><p><strong>Governing Law.</strong> This Agreement is governed by the laws of the United States.</p>
+  </li>
+  <!-- 14 -->
+  <li><p><strong>Termination.</strong> If Entity is not in compliance with this Agreement or applicable security or technical requirements, the OTP shall notify the Entity and may unilaterally suspend participation in the SSP Program. The OTP shall provide the Entity an opportunity to cure the issues and regain its participation if there is a government business need as determined at the sole discretion of OTP. If the Entity does not cure within six months, OTP may terminate this Agreement in entirety. Either party may terminate this Agreement for convenience at its sole discretion with 30 days prior written notice.</p>
+  <p>The Entity must provide a transition plan as described in Section 6 if termination is decided.</p>
+  <p>This MOA is valid for one year from the last date in the signature section.</p>
+  </li>
+  <!-- 15 -->
+  <li><p><strong>System Disruption.</strong> If there is a material issue in the operability of the PKI service in accordance with the documents in Section 3 that will have a substantial adverse effect on a customer’s operations, OTP, the customer agency, OCISO, and Entity will determine a planned resolution within 10 days.</p>
+  <p>
+  Entity will promptly notify the OTP:
+    <ol type="a">
+      <li>In the event of any material problem or inability to operate Entity's certiﬁcation authorities in accordance with the documents in Section 3.</li>
+      <li>If the Entity becomes aware of a material noncompliance on the part of any other party that the Entity has formed an agreement with to use Entity's certiﬁcation authorities covered by this agreement.</li>
+      <li>If the Entity becomes aware of a material noncompliance on the part of supporting vendors that the Entity has formed an agreement covered by this agreement.</li>
+    </ol>
+  </p>
+  <p>If the issue is a security incident, the Entity must comply with GSA’s Incident-Response-[CIO-IT-Security-01-02-Rev-19] and report incident to the OTP and OCISO, as well as submit an incident report for follow-on reporting to the Cybersecurity Infrastructure Security Agency (CISA), the Ofﬁce of Inspector General (OIG), and the United States Congress, as applicable.</p>
+  </li>
+  <!-- 16 -->
+  <li><p><strong>Signatures:</strong></p>
+  <p>
+    <pre>
+      Name: Laura Stanton 
+      Title: Assistant Commissioner 
+      Organization: Federal Acquisition Service 
+      Ofﬁce: Ofﬁce of Information Technology Category (ITC)
+    </pre>
+    <hr>
+    <pre>
+      Name: Dan Pomeroy 
+      Title: Deputy Associate Administrator 
+      Organization: Ofﬁce of Governmentwide Policy 
+      Ofﬁce: Ofﬁce of Technology Policy (OTP) 
+    </pre>
+    <hr>
+    <pre>
+      Name: Bo Berlas 
+      Title: Chief Information Security Ofﬁcer 
+      Organization: Office of the Chief Information Officer
+      Ofﬁce: Ofﬁce of Chief Information Security
+    </pre>
+    <hr>
+  </p>
+  </li>
 </ol>
-
-2\. **Purpose**. The purpose of this Agreement is to agree on the terms and conditions on which the Entity will participate in the SSP Program. The Office of Technology Policy (OTP) manages the SSP Program with managing partners from the following GSA offices:
-<ol type="a">
-  <li>Office of Chief Information Security Officer (“OCISO”)</li>
-  <li>Federal Acquisition Service, Office of Information Technology Category (“ITC”)</li>
-  <li>Office of Government-wide Policy, Office of Technology Policy (OTP)</li>
-</ol>
-
-Specifically, the OCISO manages the security posture of the Entity’s information technology systems and the ITC makes the Entity’s shared PKI services available for purchase through a GSA contract vehicle. External to but in concert with GSA, the FPKIPA governs the certificate policies, requirements, and practices for the shared PKI services. This Agreement sets forth the respective responsibilities and obligations of the Parties.
-
-3\. **Authority**. The basis of this Agreement and the subsequent inclusion of the Entity into the SSP Program aligns with the Federal Information Security Modernization Act of 2014 (FISMA), GSA’s IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy, the Federal Acquisition Regulation, the federal PKI certificate policies, and the Entity certificate policy or practices listed in the Entity’s MOA with the FPKIPA. It also complements the SSP Operations Handbook.
-
-
-4\. **Roles and Responsibilities of the Parties**.<br>
-a\. The OTP will do the following:
-<ol type="i">
-  <li>Serve as the GSA senior official to grant the Entity’s information technology system authorization to operate.</li>
-  <li>Determine program direction based on Federal Government need.</li>
-  <li>Ensure through the OCISO and ITC proper performance and delivery of PKI shared services.</li>
-  <li>Develop and manage operational processes to effectively deliver the shared PKI services.</li>
-  <li>Represent SSP and SSP Program interests in the FPKIPA.</li>
-  <li>Report quarterly on security posture to the FPKIPA and customer agencies.</li>
-  <li>Coordinate service improvement and feedback from customer agencies to SSP.</li>
-  <li>Collaborate with GSA managing partners to operate and maintain effective, secure, and reliable PKI services.</li>
-</ol>
-
-b\. The OCISO will do the following:
-<ol type="i">
-  <li>Serve as the GSA senior official to recommend the Entity’s information technology system for authorization to operate (ATO).</li>
-  <li>Monitor and report on the Entity’s information technology system security posture.</li>
-  <li>Provide quarterly security reports to the Authorizing Official.</li>
-  <li>Collaborate with the OTP on security management concerns to operate and maintain an effective, secure, and reliable PKI shared service.</li>
-</ol>
-
-c\. The ITC will do the following:
-<ol type="i">
-  <li>Own and manage SIN 541519PKI for the SSP Program on the GSA Multiple Award Schedule (MAS).</li>
-  <li>Review the Entity’s MAS Information Technology Package for a contract determination.</li>
-  <li>Collaborate with OTP and the ITC contract team to make the Entity’s PKI shared service available to purchase.</li>
-  <li>Collaborate with the OTP on contract management concerns to deliver effective, secure, and reliable PKI shared service.</li>
-  <li>Issue and revoke certificates to approved SSPs.</li>
-</ol>
-
-d\. The Entity will do the following:
-<ol type="i">
-  <li>Comply with all laws, ordinances, and regulations (Federal, State, or Local) covering work in the SSP Program.</li>
-  <li>Comply with the FPKI policies to the include the X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework (FCPF), hereafter referenced as COMMON and its complementary documents:</li>
-  <ol type="1">
-    <li>Change proposals.</li>
-    <li>Key Recovery Policy.</li>
-    <li>U.S. Federal Certificate Profiles: X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program.</li>
-    <li>Memorandum of Agreements (MOAs) established between the FPKIPA and Entity.</li>
-  </ol>
-  <li>Obtain an Authorization to Operate (ATO) declaration through GSA’s formal program for information security management before rendering PKI services.</li>
-  <li>Ensure adequate resources to maintain an ATO and comply with binding operational directives, and GSA requirements for protecting GSA IT resources. This includes addressing critical gaps (e.g., multifactor authentication, database encryption, no outdated software, high and critical findings, etc.) in the timeframe specified in GSA guidance.</li>
-  <li>Ensure any certificates, associated certificates, and public key pairs issued to the federal agencies will be owned by the government.</li>
-  <li>Use the SSP Operations Handbook as the program’s established guidelines while complying with regulations and GSA expectations.</li>
-  <li>Prepare for and facilitate monthly Security Dashboard and Plan of Action and Milestones meetings.</li>
-  <li>Attend and/or participate in monthly program, security, and contract meetings to exchange information or provide feedback on proposed changes to the program.</li>
-</ol>
-
-5\. **Third Parties**. This Agreement is binding only upon the Parties, by and through their officials, agents, employees, and successors. Entity may not assign its rights or delegate its duties or obligations under this Agreement without prior written consent from OTP. No person or entity is intended to be a third-party beneficiary of the provisions of this Agreement for purposes of any civil, criminal, or administrative action, and accordingly, no third person or entity may assert any claim or right as a beneficiary or protected class under this Agreement in any civil, criminal, or administrative action.
-
-This Agreement does not authorize, nor shall it be construed to authorize, or add to any systems, documents or other technology, persons or entities not a Party to this Agreement nor intended to have authorization under this Agreement.
-
-6\. **Entity Change**. If Entity anticipates changes or has changed due to a merger, acquisition, bankruptcy, or other means that modifies the Entity ownership or security boundary, then Entity shall:
-<ol type="a">
-  <li>Provide written notification to OTP about the intent to change the business relationship in a timely manner not to disrupt any PKI services.</li> 
-  <li>Provide a transition plan that includes all activities from transferring a PKI solution to resolution of impacts on end users and the delivery environment. The depth of a transition plan should be appropriate for the type of transition and the criticality of the PKI components going through transition. At minimum, the activities in the transition plan must be compliant with the COMMON and address the following:</li>
-  <ol type="i">
-    <li>The coordination and scheduling of transferring system archives, system inventory and configuration data, certificate profiles, key recovery databases (if applicable), private keys, key shares, audit records, hardware security modules, certificate and certificate revocation list (CRL) databases, and all policy and security documents applicable to the operations of the PKI solution.</li>
-    <li>The estimated costs for terminating, transferring, selling, or disposing a PKI solution must be shared if direct or indirect expenses are transferred to the new approved SSP and/or the impacted customer agency.</li>
-    <li>The continued services for all certificates, certificate revocation, and status checking until the expiration of the longest-lived certificate or transference of the control for the DNS Names in URLs for these services.</li>
-    <li>The continued support to collect and review system audit logs for the PKI solution.</li>
-    <li>The continued support required to obtain and provide annual PKI compliance audits until revocation of all issued certificates or the expiration of the longest-lived issue certificate.</li>
-  </ol>
-</ol>
-
-7\. **Compliance with Laws, Regulations and Policies**. Entity agrees to comply with all applicable policies listed in Appendix A. 
-
-The following is applicable if Entity is not a U.S. Federal Government agency: Entity shall comply with applicable U.S. Federal laws and regulations including but not limited to trade compliance, economic and trade sanctions, and blocked, denied, and debarred persons lists. If the Entity is not in compliance with these applicable laws and regulations, OTP reserves the right to change or remove the Entity's participation in the SSP Program in the interest of national security.
-
-8\. **Updates**. The OCISO and OTP are responsible for the maintenance and update of the _IT Security Procedural Guide: Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 GSA Security Policy_ and _SSP Operations Handbook_ respectively.
- 
-Entity shall review the document updates each time they are updated and implement the necessary changes to practices to comply.
-
-9\. **MOA Updates and Evolving Security Requirements**. This MOA may be updated only by mutual written agreement signed by an authorized representative of each party.
-
-Notwithstanding the foregoing, due to the nature of evolving national security threats and updates to technology and security, the Parties shall work in good faith to implement required updates to applicable laws, regulations, and policies through the following steps:
-<ol type="a">
-  <li>OTP, OCISO, or ITC will provide the Entity with written notice of the required updates, the number of days in which the updates must be implemented, and an updated version of Attachment A that incorporates the changes. The updated version of Attachment A will automatically replace the previous version of Attachment A and be deemed incorporated into this Agreement without further actions.</li>
-  <li>Upon notification, the Entity shall have three (3) business days to confirm via written response whether it will be implementing the changes.</li>
-  <li>If the Entity declines to implement the requirements, the OTP, ITC, and OCISO may decide to terminate this agreement, revoke ATO status, notify customer agencies of the situation, or take any such other action necessary to maintain the delivery of secure PKI services.</li>
-</ol>
-
-10\. **Confidentiality**. If Entity is not a U.S. Federal Government agency, the following applies:
-<ol type="a">
-  <li>Entity assumes full responsibility for and guarantees the security and confidentiality of all documents, data, and other information supplied or gleaned from the customer agency, Federal PKI, and provided, obtained, or accessed through being a party to this Agreement ("Confidential Information").</li>
-  <li>Entity will prevent disclosure of this Confidential Information to any person not authorized by the U.S. Federal Government or Policy Authority to have access to such documents or information.</li>
-</ol>
-
-11\. **Liability**. Neither Party shall be liable to the other for any loss, liability, damage or expense (including attorney fees) arising out of the operation of the PKI services. This Agreement is entered into for the convenience of the Parties and shall not give rise to any cause of action by Entity or by any third party.
-
-12\. **Conflict Resolution**. If Entity is a private sector entity, the Contract Disputes Act, 41 U.S.C. 7101 et seq, is applicable to all disputes under this Agreement.
-
-13\. **Governing Law**. This Agreement is governed by the laws of the United States.
-
-14\. **Termination**. If Entity is not in compliance with this Agreement or applicable security or technical requirements, the OTP shall notify the Entity and may unilaterally suspend participation in the SSP Program. The OTP shall provide the Entity an opportunity to cure the issues and regain its participation if there is a government business need as determined at the sole discretion of OTP. If the Entity does not cure within six months, OTP may terminate this Agreement in entirety. Either party may terminate this Agreement for convenience at its sole discretion with 30 days prior written notice.
-
-The Entity must provide a transition plan as described in Section 6 if termination is decided. 
-
-This MOA is valid for one year from the last date in the signature section.
-
-15\. **System Disruption**. If there is a material issue in the operability of the PKI service in accordance with the documents in Section 3 that will have a substantial adverse effect on a customer’s operations, OTP, the customer agency, OCISO, and Entity will determine a planned resolution within 10 days. 
-
-Entity will promptly notify the OTP:
-<ol type="a">
-  <li>In the event of any material problem or inability to operate Entity's certification authorities in accordance with the documents in Section 3.</li>
-  <li>If the Entity becomes aware of a material noncompliance on the part of any other party that the Entity has formed an agreement with to use Entity's certification authorities covered by this agreement.</li>
-  <li>If the Entity becomes aware of a material noncompliance on the part of supporting vendors that the Entity has formed an agreement covered by this agreement.</li>
-</ol>
-
-If the issue is a security incident, the Entity must comply with GSA’s Incident-Response-[CIO-IT-Security-01-02-Rev-19] and report incident to the OTP and OCISO, as well as submit an incident report for follow-on reporting to the Cybersecurity Infrastructure Security Agency (CISA), the Office of Inspector General (OIG), and the United States Congress, as applicable. 
-
-16\. **Signatures**.:
-<br><br><br><br>
-Name:<br>
-Title: Assistant Commissioner<br>
-Organization: Federal Acquisition Service<br>
-Office: Office of Information Technology Category (ITC)<br>
-<br><br><br><br>
-Name:<br>
-Title: Deputy Associate Administrator<br>
-Organization: Office of Government-wide Policy<br>
-Office: Office of Technology Policy (OTP)<br>
-<br><br><br><br>
-Name:<br>
-Title: Chief Information Security Officer<br>
-Organization: Office of the Chief Information Officer<br>
-Office: Office of Chief Information Security (OCISO)<br>
