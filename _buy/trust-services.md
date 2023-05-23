@@ -5,7 +5,7 @@ title:  Trust Services
 permalink: buy/trust-services/
 sidenav: buy
 sticky_sidenav: true
-lastupdate: 07/12/2021
+lastupdate: 05/23/2023
 
 subnav:
   - text: Overview
@@ -45,7 +45,7 @@ We’ve categorized the service providers given below by type of identity and cr
 
 - [Government Identity Services](#government-identity-services) – Issue PKI-based credentials to government employees or contractors. Credential types include PIV and federal PIV-Interoperable.
 - [Business Identity Services](#business-identity-services) – Issue PKI-based credentials for organizations doing business with the government, but the personnel do not qualify for a PIV card. Credential types include PIV-Interoperable and other PKI certificates.
-- [Non-Government PKI Trust Framework](#non--government-pki-trust-framework) – Certify private organization PKI to connect with the Federal PKI.
+- [Non-Government PKI Trust Framework](#non-government-pki-trust-framework) – Certify private organization PKI to interoperate with the Federal PKI.
 
 ## Government Identity Services
 
