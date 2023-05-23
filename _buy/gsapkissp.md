@@ -333,9 +333,9 @@ GSA established the GSA PKI SSP Program to help agencies identify and procure fe
 # Appendix A. Sample MOA
 <p align="center">
   <b>
-    Memorandum of Agreement  
-    GSA Public Key Infrastructure Shared Service Provider Program  
-    (Commercial Entities Only)  
+    Memorandum of Agreement<br>
+    GSA Public Key Infrastructure Shared Service Provider Program<br>
+    (Commercial Entities Only)<br> 
     Version 1.0
   </b>
 </p>
