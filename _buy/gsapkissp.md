@@ -7,7 +7,7 @@ sidenav: buy
 sticky_sidenav: true
 
 version: 1.0
-pubdate: June 30, 2023
+pubdate: 05/23/2023
 author: GSA PKI SSP Program Management Office
 
 subnav:
@@ -39,7 +39,7 @@ Author: {{page.author}}
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 01/05/2021 | Initial Draft |
+| 1.0 | 05/23/2023  | Initial Draft |
 
 # Program Overview
 
@@ -528,6 +528,7 @@ This Memorandum of Agreement ("Agreement") is entered into by the General Servic
       Title: Assistant Commissioner 
       Organization: Federal Acquisition Service 
       Ofﬁce: Ofﬁce of Information Technology Category (ITC)
+      Date: 
     </pre>
     <hr>
     <pre>
@@ -535,6 +536,7 @@ This Memorandum of Agreement ("Agreement") is entered into by the General Servic
       Title: Deputy Associate Administrator 
       Organization: Ofﬁce of Governmentwide Policy 
       Ofﬁce: Ofﬁce of Technology Policy (OTP) 
+      Date: 
     </pre>
     <hr>
     <pre>
@@ -542,6 +544,7 @@ This Memorandum of Agreement ("Agreement") is entered into by the General Servic
       Title: Chief Information Security Ofﬁcer 
       Organization: Office of the Chief Information Officer
       Ofﬁce: Ofﬁce of Chief Information Security
+      Date:
     </pre>
     <hr>
   </p>
