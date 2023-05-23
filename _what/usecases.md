@@ -36,19 +36,24 @@ For details about ICAM services, see the [Services Framework]({{site.baseurl}}/w
 While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies.
 
 You can combine or build upon the ICAM use cases to support your agency’s scenarios and needs.
+<hr>
+<ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
+  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All">   -   </li>
+  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All">   +   </li>
+</ul>
 
 <div id="use-case-1" class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 class="usa-accordion__heading"> <!-- Use Case 1 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button  gsa-target-accordion-header"
       aria-expanded="true"
       aria-controls="m-a1"
     >
       Use Case 1. Create and Maintain an Identity
     </button>
   </h4>
-  <div id="m-a1" class="usa-accordion__content usa-prose">
+  <div id="m-a1" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px"  width="156" height="156"/></p>
     <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
     <hr />
@@ -89,14 +94,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-2" class="usa-accordion__heading"> <!-- Use Case 2 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a2"
     >
       Use Case 2. Proof an Identity
     </button>
   </h4>
-  <div id="m-a2" class="usa-accordion__content usa-prose">
+  <div id="m-a2" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_identity_proofing.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Identity Proofing service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>Before you can create a credential and assign it to an individual, that person must provide proof of their claimed identity. Identity proofing is the process by which a federal agency collects and verifies information about a person to establish an enterprise identity.</p>
     <p>The location or information that a person needs to access informs the Identity Assurance Level (IAL), which determines the elements you should require from that person for identity proofing. There are three IALs; however, federal agencies require a minimum of IAL2 for employees or contractors with recurring access to government resources, so these use cases do not include IAL1.</p>
@@ -131,14 +136,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-3" class="usa-accordion__heading"> <!-- Use Case 3 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a3"
     >
       Use Case 3. Manage the Entitlements Lifecycle
     </button>
   </h4>
-  <div id="m-a3" class="usa-accordion__content usa-prose">
+  <div id="m-a3" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.</p>
     <hr />
@@ -170,14 +175,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-4" class="usa-accordion__heading"> <!-- Use Case 4 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a4"
     >
       Use Case 4. Create and Issue a Credential
     </button>
   </h4>
-  <div id="m-a4" class="usa-accordion__content usa-prose">
+  <div id="m-a4" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>After you identity proof an individual, you’ll issue some proof of that individual’s claimed identity. A credential (like a physical card) is a type of authenticator that serves as a tool for an employee or contractor to gain access to agency services.</p>
     <hr />
@@ -208,14 +213,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-5" class="usa-accordion__heading"> <!-- Use Case 5 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a5"
     >
       Use Case 5. Issue a Derived Credential
     </button>
   </h4>
-  <div id="m-a5" class="usa-accordion__content usa-prose">
+  <div id="m-a5" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintenance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance service." align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>A derived credential is a credential derived from an existing credential, with a different form factor, such as a credential on a mobile device. Derived credentials have the same IAL as the existing credential and the same or lower AAL.</p>
     <p>When an employee or contractor requires authentication but cannot leverage an existing credential, they can use a derived credential. To be eligible for a derived credential, the employee or contractor must already have a valid credential with Authenticator Assurance Level (AAL) 2 or 3.</p>
@@ -248,14 +253,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-6" class="usa-accordion__heading"> <!-- Use Case 6 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a6"
     >
       Use Case 6: Manage the Credential Lifecycle
     </button>
   </h4>
-  <div id="m-a6" class="usa-accordion__content usa-prose">
+  <div id="m-a6" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintain_revoke.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:</p>
     <ul>
@@ -328,14 +333,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-7"  class="usa-accordion__heading"> <!-- Use Case 7 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a7"
     >
       Use Case 7. Grant Access
     </button>
   </h4>
-  <div id="m-a7" class="usa-accordion__content usa-prose">
+  <div id="m-a7" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_authn_authz.png" alt="This use case corresponds to the Authentication and Authorization service areas of Access Management." align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>
       This use case describes the steps to authenticate individuals and authorize access to agency services. Agency services can be anything from applications and files to physical facilities.
@@ -379,14 +384,14 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 id="use-case-8" class="usa-accordion__heading"> <!-- Use Case 8 -->
     <button
-      class="usa-accordion__button"
+      class="usa-accordion__button gsa-target-accordion-header"
       aria-expanded="false"
       aria-controls="m-a8"
     >
       Use Case 8. Accept Federation Assertions
     </button>
   </h4>
-  <div id="m-a8" class="usa-accordion__content usa-prose">
+  <div id="m-a8" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_attribute_exchange.png" alt="Three hexagons with the letters I in red, C in green, and A in blue, with a gray banner for the Attribute Exchange service in Federation." align="right" style="padding-left:15px"  width="156" height="156" /></p>
     <p>Federal employees and contractors often need to access protected services managed by other federal agencies. Federation is the means by which an agency can accept authentication assertions and associated identity attributes from systems within their agency and at other agencies. This allows federal employees and contractors from across agencies to access protected resources and streamlines the user’s experience.</p>
     <p>Agencies can pass assertions to share attributes about employees and contractors.</p>

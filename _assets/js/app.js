@@ -22,28 +22,34 @@ function gsaTop() {
 }
 
 
-// Toggle accordions open or closed. 
-// Open
-// function expandToggle(){
-//     // variable for accordion headers and body
-//     var closedaccordionheader = document.getElementsByClassName('usa-accordion__button gsa-normal-text');
-//     var closedaccordionbody = document.getElementsByClassName('usa-accordion__content usa-prose');
-
-//     // Loop through elements on the page with the CSS usa-accordion class
-//     for(var i = 0;i < document.  ;i++){
-      
-//     }
-
-// }
-// // Closed
-// function collapseToggle(){
-//   // variable for accordion headers and body
-//   var openaccordionheaders = document.getElementsByClassName('usa-accordion__button gsa-normal-text');
-//   var openaccordionbody = document.getElementsByClassName('usa-accordion__content usa-prose');
-
-//   // Loop through elements on the page with the CSS usa-accordion class
-//   for(var i = 0;openaccordions.length;i++){
-
-//   }
-
-// }
+// Toggle accordions open or closed.
+//
+// Target all accordion button headers and content areas
+// Only affects elements with the classes gsa-target-accordion-header and gsa-target-accordion-content-area
+// Add these classes to accordion header and content areas elements respectivly to target those elements in JS. 
+//
+var accordionbutton = document.getElementsByClassName('gsa-target-accordion-header');
+var accordioncontent = document.getElementsByClassName('gsa-target-accordion-content-area');
+// 
+// Open Accordion
+function expandToggle(){
+    // Loop through accordion button, setting the aria-expanded attribute to false(changes the icon to -)
+    for(var i = 0;i < accordionbutton.length;i++){
+       accordionbutton[i].setAttribute('aria-expanded','true');
+    }
+    // Loop through accordion content area, removing the hidden attribute to display the accordion body)
+    for(var i = 0;i < accordioncontent.length;i++){
+      accordioncontent[i].removeAttribute('hidden');
+    }
+}
+// Closed Accordion
+function collapseToggle(){
+    // Loop through accordion button, setting the aria-expanded attribute to false(changes the icon to -)
+    for(var i = 0;i < accordionbutton.length;i++){
+      accordionbutton[i].setAttribute('aria-expanded','false');
+   }
+   // Loop through accordion content area, removing the hidden attribute to display the accordion body)
+   for(var i = 0;i < accordioncontent.length;i++){
+     accordioncontent[i].setAttribute('hidden',null);
+   }
+}

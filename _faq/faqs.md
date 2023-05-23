@@ -20,13 +20,18 @@ subnav:
 
 {% assign lcount = 0 %}
 {% for faq in site.data.faqs %}
+<hr>
+<ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
+  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All">   -   </li>
+  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All">   +   </li>
+</ul>
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text" aria-expanded="{{law.expanded}}" aria-controls="gsa-{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{law.expanded}}" aria-controls="gsa-{{forloop.index}}">
       {{faq.question}}
     </button>
   </h4>
-  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose">
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
         {{faq.answer}}
         <hr/>

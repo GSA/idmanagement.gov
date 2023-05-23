@@ -4,6 +4,10 @@
 @forward "usa-icon";
 
 
+// CSS targets, not used for styling, keep empty, used in js to target classes.
+.gsa-target-accordion-header {}
+.gsa-target-accordion-content-area {}
+
 
 // Important: Colors for H1 and H2 in usa-layout-docs element
 .usa-layout-docs h1 {
@@ -13,19 +17,56 @@
   color:#005ea2;
 }
 
-// GSA Expand all button, used at the top of a list of accordions as an html button
-.gsa-expand-all {
-  width:100px;
+// GSA Expand and Collapse buttons, used at the top of a list of accordions as an html button group
+.expand-collapse-button-group {
+  width: 200px;
+  list-style: none;
+  margin-bottom:0px;
+}
+// Collapse Button
+.gsa-collapse-button {
+  width:75px;
   background-color:#F0F0F0;
-  font-size:20pt;
+  text-align: center;
+  font-size:22pt;
+  color: #1b1b1b;
+  border: 0px;
+  border-top-right-radius:5px;
+  border-left-color: #555;
+  margin-right:0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+  cursor: pointer;
+  margin-bottom: 0px;
+  float: right;
+}
+// Collapse Button hover state
+.gsa-collapse-button:hover,.gsa-collapse-button:focus {
+  background-color: #dfe1e2;
+  color: #1b1b1b;
+}
+// Expand Button
+.gsa-expand-button {
+  width:75px;
+  background-color:#F0F0F0;
+  text-align: center;
+  font-size:22pt;
+  color: #1b1b1b;
   border:0px;
   border-top-left-radius:5px;
-  border-top-right-radius:5px;
-  float:right;
-  clear: right;
   margin-right:0px;
-  display: block;
-
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+  cursor: pointer;
+  margin-bottom: 0px;
+  float: right;
+}
+// Expand Button hover and focus state
+.gsa-expand-button:hover,.gsa-expand-button:focus {
+  background-color: #dfe1e2;
+  color: #1b1b1b;
 }
 
 
