@@ -13,14 +13,21 @@
   color:#005ea2;
 }
 
-// Add your SASS/CSS here
-// .usa-hero {
-//   background-image: asset_url("hero-image2-blur.png");
-//   background-position: 50%;
-//   background-size: cover;
-//   height: 380px;
-//   margin: 0px;
-// }
+// GSA Expand all button, used at the top of a list of accordions as an html button
+.gsa-expand-all {
+  width:100px;
+  background-color:#F0F0F0;
+  font-size:20pt;
+  border:0px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  float:right;
+  clear: right;
+  margin-right:0px;
+  display: block;
+
+}
+
 
 .usa-hero {
   //background-image: asset_url("new-header-graphic.png");

@@ -8,7 +8,8 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: IDManagement.gov
+# title: IDManagement.gov (changed to use just IDManagement without the .gov) 
+title: IDManagement
 email: icam@gsa.gov
 description: IDManagement.gov is a collaboration between the Federal CIO Council and GSA to develop and share leading practices in protecting federal IT systems.
 baseurl: ""

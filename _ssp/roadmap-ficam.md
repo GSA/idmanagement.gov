@@ -56,9 +56,9 @@ The General Services Administration (GSA), Ofﬁce of Government-wide Policy, ma
 
 A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certiﬁcation authority certiﬁcate and is listed on the GSA Multiple Award Schedule. This document is reviewed annually and has three major sections:
 
-- Section 1 -Outlines GSA management and acquisition controls of the PKI SSP Program.
-- Section 2 -Deﬁnes the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.
-- Section 3 -Lists available services that a SSP should offer.
+- [Section 1](#section-i-gsa-pki-ssp-program) -Outlines GSA management and acquisition controls of the PKI SSP Program.
+- [Section 2](#section-ii-ssp-application-and-maintenance-activities) -Deﬁnes the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.
+- [Section 3](#section-iii-digital-certiﬁcate-services) -Lists available services that a SSP should offer.
 
 # Audience
 
