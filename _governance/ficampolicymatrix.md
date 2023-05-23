@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagewide
 collection: governance
 title: FICAM Policy Matrix
 permalink: governance/policymatrix/
