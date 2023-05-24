@@ -26,7 +26,7 @@ function gsaTop() {
 //
 // Target all accordion button headers and content areas
 // Only affects elements with the classes gsa-target-accordion-header and gsa-target-accordion-content-area
-// Add these classes to accordion header and content areas elements respectivly to target those elements in JS. 
+// Add these classes to accordion header and content areas elements respectivly to target those elements in with the JS below. 
 //
 var accordionbutton = document.getElementsByClassName('gsa-target-accordion-header');
 var accordioncontent = document.getElementsByClassName('gsa-target-accordion-content-area');
@@ -50,6 +50,6 @@ function collapseToggle(){
    }
    // Loop through accordion content area, removing the hidden attribute to display the accordion body)
    for(var i = 0;i < accordioncontent.length;i++){
-     accordioncontent[i].setAttribute('hidden',null);
+     accordioncontent[i].setAttribute('hidden','');
    }
 }
