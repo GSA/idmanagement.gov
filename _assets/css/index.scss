@@ -32,7 +32,6 @@
   color: #1b1b1b;
   border: 0px;
   border-top-right-radius:10px;
-  border-left-color: #555;
   margin-right:0px;
   padding-left: 10px;
   padding-right: 10px;
@@ -40,11 +39,14 @@
   cursor: pointer;
   margin-bottom: 0px;
   float: right;
+  margin-left: 2px;
 }
 // Collapse Button hover state
 .gsa-collapse-button:hover,.gsa-collapse-button:focus {
   background-color: #dfe1e2;
   color: #1b1b1b;
+  outline: none;
+  border: 0px;
 }
 // Expand Button
 .gsa-expand-button {
@@ -62,11 +64,14 @@
   cursor: pointer;
   margin-bottom: 0px;
   float: right;
+  margin-right: 2px;
 }
 // Expand Button hover and focus state
 .gsa-expand-button:hover,.gsa-expand-button:focus {
   background-color: #dfe1e2;
   color: #1b1b1b;
+  outline: none;
+  border: 0px;
 }
 
 
@@ -90,9 +95,9 @@
   font-size: 18px;
   border: 1px;
   outline: none;
-  background-color: #00bde3;
+  background-color: #00bde3; 
   // color: black;
-  color:#ffffff;
+  color: #212121;
   font-weight:600;
   cursor: pointer;
   padding: 15px;

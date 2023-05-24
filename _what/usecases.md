@@ -38,8 +38,8 @@ While each use case describes a particular ICAM business process, the use cases 
 You can combine or build upon the ICAM use cases to support your agency’s scenarios and needs.
 <hr>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All">   -   </li>
-  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
+  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All" tabindex=0>   +   </li>
 </ul>
 
 <div id="use-case-1" class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
