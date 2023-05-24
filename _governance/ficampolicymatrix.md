@@ -34,6 +34,6 @@ Insert picture of policy matrix
 The markdown page will pull information from a data yml (sample file) that includes the document name, short name, internally created identifier, short description, hierarchical  mapping (e.g., HSPD-12 -> FIPS 201 -> NIST SP XX), date published, fiscal year published, standardized category (e.g., PIV, MFA, Workforce Identity, Public Identity, etc.), and persistent URL (hosted page rather than direct PDF if available).
 {% endcomment %}
 
-| Document Name | Publication Date | Categories | More Information |
+| Document Name | Publication Date | Categories |
 | --- | --- | --- | --- | {% for document in site.data.laws-policies-standards %}
-| [ {{document.shortName}} ]({% link _governance/ficampolicydetails.md %}) | {{document.published}} | {% for service in document.FICAM_Service_Mapping %} {{ service }}<br/> {% endfor %} | {{ document.url }} | {% endfor %}
+| [ {{document.shortName}} ]({{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.FICAM_Service_Mapping %} {{ service }}<br/> {% endfor %} | {% endfor %}
