@@ -24,7 +24,6 @@ Laws, executive policies, regulations, and government standards drive multiple f
 
 ## Policy Matrix
 
-Insert picture of policy matrix
 ![A map of the FICAM Policy Landscape](/assets/img/ficam-policy-landscape-map.png)
 
 ## Policy Table
