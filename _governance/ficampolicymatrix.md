@@ -25,8 +25,7 @@ Laws, executive policies, regulations, and government standards drive multiple f
 ## Policy Matrix
 
 Insert picture of policy matrix
-
-<img src="{{site.baseurl}}/assets/img/ficam-policy-landscape-map.png" alt="A map of the FICAM Policy Landscape">
+![A map of the FICAM Policy Landscape](/assets/img/ficam-policy-landscape-map.png)
 
 ## Policy Table
 
@@ -35,5 +34,5 @@ The markdown page will pull information from a data yml (sample file) that inclu
 {% endcomment %}
 
 | Document Name | Publication Date | Categories |
-| --- | --- | --- | --- | {% for document in site.data.laws-policies-standards %}
+| --- | --- | --- | {% for document in site.data.laws-policies-standards %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards/{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.FICAM_Service_Mapping %} {{ service }}<br/> {% endfor %} | {% endfor %}
