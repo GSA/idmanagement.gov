@@ -15,7 +15,7 @@ subnav:
       href: '#repository-availability'
 ---
 
-Updated: April 3, 2023 
+Updated: May 3, 2023 
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -38,19 +38,19 @@ Certificates issued and published to the FPKI Trust Infrastructure Repository in
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date | Expiration Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| WidePoint | WidePoint SSP Intermediate CA | Federal Common Policy CA G2 | Serial:28f49a629440b3fdf097ac0fd46dbd9735379187 Hash:eef5180a852b044483a138bcb30ad9548463e09b | 4/3/23 | 3/15/33  | 
+| DigiCert | DigiCert Class 3 SSP Intermediate CA - G4 | Federal Bridge CA G4 | Serial:14ec45ef7224f298e41cdfb2e3392be2329d55bb Hash:527bc6165aa93e38853714675e2a452e1437a522 | 5/2/23 | 5/2/23  | 
 
-No Certificates were removed from the FPKI Trust Infrastructure Repository in the last 30 days.
+Certificates removed from the FPKI Trust Infrastructure Repository in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | ----------- | ----------- |
-| N/A |   |  |	Serial: Hash:  |   |
+| DigiCert |  DigiCert Class 3 SSP Intermediate CA – G4 | Federal Bridge CA G4 | Serial:15728cdad19f38d34b9d09df45729a6f8df6a2ba Hash:8a8e06a378289206a64c85ad7dd37846b1ed3aad | 5/14/23 | Renewed |
 
 The following certificates are planned for a certificate action in the near future; dates to be determined based on availability.
 
-| Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
-| --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| DigiCert | DigiCert Class 3 SSP Intermediate CA – G4 | Federal Bridge CA G4 | Serial:15728cdad19f38d34b9d09df45729a6f8df6a2ba Hash:8a8e06a378289206a64c85ad7dd37846b1ed3aad | 5/14/23 | Renewal TBD |
+| Affiliate |   Subject CA   | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
+| --------- | -------------- | ---------- | --------------------- | --------------- | ------ |
+| GPO |   GPO PCA   | Federal Bridge CA G4 | Serial:195cb9376d0a7dea78ab51500fd5f74a85a5f602 Hash:52db35c57036a5641bb8dd6b552391a7815681dd | 6/25/23 | Removal TBD |
 
 
 ## Repository Availability 
@@ -68,10 +68,10 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | GPO PCA | FBCA | 100 | 
 | IdenTrust Global Common Root CA 1 | FBCA | 100 | 
 | SAFE Identity Bridge CA	| FBCA | 100 |
-| STRAC Bridge Root Certification Authority	| FBCA | 100 |
+| STRAC Bridge Root Certification Authority	| FBCA | 99.53 |
 | Symantec Class 3 SSP Intermediate CA - G3	| FBCA | 100 |
 | TSCP SHA256 Bridge CA	| FBCA | 100 |
-| USPTO_INTR_CA1 | FBCA	| 99.61 |
+| USPTO_INTR_CA1 | FBCA	| 100 |
 | WidePoint NFI Root 2	| FBCA	| 100 |
 | DigiCert SSP CA - G5	| FCPCA	| 100 |
 | Entrust Managed Services Root CA	| FCPCA	| 100 |
