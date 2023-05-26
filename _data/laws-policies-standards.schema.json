@@ -1,0 +1,45 @@
+{
+    "$id": "laws-policies-standards.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Document",
+    "type": "object",
+    "properties": {
+        "shortName": {
+            "type": "string",
+            "description": "A short name for the document"
+        },
+        "longName": {
+            "type": "string",
+            "description": "A longer name for the document"
+        },
+        "published": {
+            "type": "string",
+            "format": "Date",
+            "description": "The publication Date of the document"
+        },
+        "hierarchyMapping": {
+            "type": "string",
+            "description": "Reference to the document which authorizes this document. E.g., FIPS 201 was authorized by HSPD-12"
+        },
+        "externalUrl": {
+            "type": "string",
+            "format": "uri"
+        },
+        "description": {
+            "type": "string",
+            "description": "A long, possibly multi-line description of the document."
+        },
+        "identityClass": {
+            "type": "string",
+            "pattern": "^(Workforce Identity|Public Identity)$"
+        },
+        "ficamService_Mapping": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+                "type": "string",
+                "pattern": "^(Identity Management|Identity Management: Creation|Identity Management: Identity Proofing|Identity Management: Provisioning|Identity Management: Maintenance|Identity Management: Identity Aggregation|Identity Management: Deactivation|Credential Management|Credential Management: Sponsorship|Credential Management: Registration|Credential Management: Generation & Issuance|Credential Management: Maintenance|Credential Management: Revocation|Access Management|Access Management: Digital Policy Administration|Access Management: Authentication|Access Management: Authorization|Access Management: Privileged Access Management|Federation|Federation: Policy Alignment|Federation: Authentication Broker|Federation: Attribute Exchange|Governance|Governance: Identity Governance|Governance: Analytics|Governance: Mitigation)$"
+            }
+        }
+    }
+}
