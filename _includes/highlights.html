@@ -313,7 +313,7 @@ eight.
 	<!-- Playbooks Section - data driven -->
 	<div class="desktop:grid-col-12">						
 		<ul class="usa-card-group">	
-			{% for playbook in site.data.playbooks | sort: "title"%}						
+			{% for playbook in site.data.playbooks | sort: "title" %}						
 			<li class="usa-card tablet:grid-col-4">
 				<a class="gsa-no-dec" href="{{site.baseurl}}{{playbook.url}}" target="{{playbook.target}}">
 				<div class="usa-card__container gsa-card-shadow">

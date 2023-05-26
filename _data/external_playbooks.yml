@@ -2,14 +2,14 @@
 # FICAM-produced playbooks located in the /_playbooks/ and PDF versions in /assets/playbooks folder.
 # Newest on top
 
-- title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
-  type: PDF
-  pubdate: 2011-12
-  description: The FICAM Roadmap contains processes, procedures, and considerations for planning and managing identity, credential, and access management programs. <strong>Note:</strong> This document has been superseded by the FICAM Architecture.
-  url: /docs/roadmap-ficam.pdf
+# - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
+#   type: PDF
+#   pubdate: 2011-12
+#   description: The FICAM Roadmap contains processes, procedures, and considerations for planning and managing identity, credential, and access management programs. <strong>Note:</strong> This document has been superseded by the FICAM Architecture.
+#   url: /docs/roadmap-ficam.pdf
 
-- title: ICAM Governance Framework Version 1.0
-  type: PDF
-  pubdate: 2021-09
-  description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies. 
-  url: /docs/playbook-identity-governance-framework.pdf
+# - title: ICAM Governance Framework Version 1.0
+#   type: PDF
+#   pubdate: 2021-09
+#   description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies. 
+#   url: /docs/playbook-identity-governance-framework.pdf

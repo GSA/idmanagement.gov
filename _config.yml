@@ -66,7 +66,9 @@ primary_navigation:
       - name: OMB Circular A-130
         url: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
 
+
 # What is FICAM top level menu with dropdowns
+ # - name: from What is FICAM? (changed on 05-17-2023 per Babur/Joe to 'Achitecture')
   - name: Architecture
     children: 
       - name: Introduction
@@ -84,7 +86,7 @@ primary_navigation:
 
 
 # Who FICAM is For? top level menu with dropdowns
-  # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Getting Started')
+  # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Get Started')
   - name: Get Started
     children:
       - name: Introduction
@@ -145,6 +147,11 @@ primary_navigation:
   - name: SSP
     description: GSA PKI shared service provider program Guide
     url: /ssp/
+
+  # Playbook top level Menu added (05-26-2023)
+  - name: Playbooks
+    description: FICAM Playbook are comprehensive guides on a technical topic, describing both overarching strategy and tactical approaches.
+    url: /playbooks/
 
   # APL Menu for visible display and access of APLs
   # Note: All APLs are accessible from the below URLs for reference and linking
