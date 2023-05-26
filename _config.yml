@@ -26,7 +26,7 @@ github_info:
 
 # Twitter handle. Only the handle, not the URL.
 # twitter: 18F
-url: "https://www.idmanagement.gov"
+# url: "https://www.idmanagement.gov"
 
 dap:
   agency: GSA
@@ -68,7 +68,6 @@ secondary_navigation:
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
 searchgov:
-
   # You should not change this.
   endpoint: https://search.usa.gov
 
@@ -89,16 +88,16 @@ searchgov:
 collections:
   buy:
     output: true
-    permalink: /buy/:path/
+    permalink: /:collection/:path
   sell:
     output: true
-    permalink: /sell/:path/
+    permalink: /:collection/:path
   governance:
     output: true
-    permalink: /governance/:path/
+    permalink: /:collection/:path
   pages:
     output: true
-    permalink: /:path/
+    permalink: /:path
 
 permalink: pretty
 
@@ -174,7 +173,7 @@ assets:
       - "IE 11"
       - "not dead"
   sources:
-  ## Updated to @uswds 3.0
+    ## Updated to @uswds 3.0
     - node_modules/@uswds/uswds/dist/css
     - node_modules/@uswds/uswds/dist/fonts
     - node_modules/@uswds/uswds/dist/img
