@@ -51,8 +51,9 @@ primary_navigation:
         url: /why/
       - name: Zero Trust
         url: /why/zero-trust/
-      - name: Architecture
-        url: /why/architecture/
+      # text moved to intro of architecture Sprint 8
+      # - name: Architecture
+      #   url: /why/architecture/
       - name: History
         url: /why/history/
       - name: ICAM

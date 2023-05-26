@@ -4,8 +4,9 @@ why:
     href: /why/
   - text: Zero Trust
     href: /why/zero-trust/
-  - text: Architecture
-    href: /why/architecture/
+  # moved to intro of achitecture in Sprint 8
+  # - text: Architecture
+  #   href: /why/architecture/
   - text: History
     href: /why/history/
   - text: ICAM
@@ -69,8 +70,7 @@ how:
   - text: PIV Authentication on macOS
     href: /how/piv-athentication-macos/
   - text: Troubleshooting PIV Logon
-    href: /how/troubleshooting/ 
- # Added -- missed content   
+    href: /how/troubleshooting/  
   - text: Configure Outlook for Secure Email
     href: /how/outlook/
   - text: Introduction to PIV Engineering Guides
