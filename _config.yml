@@ -62,10 +62,10 @@ primary_navigation:
         url: /why/goals-and-objectives/
       # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (named to make label in menu shorter)
       - name: Memorandum M-19-17
-        url: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf
+        url: 'https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf'
       # - name: Managing Information as a Strategic Resource (OMB Circular A-130) (named to make label in menu shorter)
       - name: OMB Circular A-130
-        url: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
+        url: 'https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf'
 
 
 # What is FICAM top level menu with dropdowns
