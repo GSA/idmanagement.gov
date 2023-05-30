@@ -1,4 +1,5 @@
-- FICAM_Service_Mapping:
+- document: &HSPD-12
+  FICAM_Service_Mapping:
     - "Identity Management: Identity Proofing"
   Timestamp: 5/18/2023 6:42:34
   Workforce_Citizen_Identity: Workforce Identity
@@ -10,8 +11,8 @@
     Standard for Federal Employees and Contractors"
   published: 8/27/2004
   shortName: HSPD-12
-  reference: &HSPD-12
-- FICAM_Service_Mapping:
+- document: &SpringerMemo
+  FICAM_Service_Mapping:
     - "Credential Management: Registration"
   Timestamp: 5/18/2023 6:54:03
   Workforce_Citizen_Identity: Workforce Identity
@@ -26,4 +27,3 @@
   longName: Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12
   published: ""
   shortName: Springer Memo
-  reference: &SpringerMemo
