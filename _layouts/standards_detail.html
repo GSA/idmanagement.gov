@@ -8,11 +8,17 @@ layout: default
 
 <p>
     {% for category in document.categories %}
-    {{ category }}<br>
+    {{ category }}<br />
     {% endfor %}
 </p>
 
 <p>Publication Date: {{page.published}} (FY: {{ page.fy }})</p>
+
+<p>References:
+    {% for reference in page.hierarchyMapping %}
+    {{ reference }} <br />
+    {% endfor %}
+</p>
 
 <p>Description: {{page.description}}</p>
 
