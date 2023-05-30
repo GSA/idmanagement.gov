@@ -60,12 +60,14 @@ primary_navigation:
         url: /why/icam/
       - name: Goals and Objectives
         url: /why/goals-and-objectives/
-      # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (named to make label in menu shorter)
+      # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (renamed to make label in menu shorter)
       - name: Memorandum M-19-17
-        url: 'https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf'
-      # - name: Managing Information as a Strategic Resource (OMB Circular A-130) (named to make label in menu shorter)
+        # Redirects to: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf (Required)
+        url: /memorandum-19-17/
+      # - name: Managing Information as a Strategic Resource (OMB Circular A-130) (renamed to make label in menu shorter)
       - name: OMB Circular A-130
-        url: 'https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf'
+        # Redirects to: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf (Required)
+        url: /omb-circular-a130/
 
 
 # What is FICAM top level menu with dropdowns
@@ -260,7 +262,7 @@ collections:
   #   permalink: /sell/:path/
   
   # Turned on for visibility until Combined 743 Playbook on Governance is complete
-  # governance:
+  governance:
     output: true
     permalink: /governance/:path/
 
