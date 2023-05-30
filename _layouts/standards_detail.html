@@ -12,6 +12,13 @@ layout: default
     {% endfor %}
 </p>
 
+{% comment %}
+Calculate Fiscal Year
+{% endcomment %}
+
+{{ page.published | date "%m%d" }ß}
+
+
 <p>Publication Date: {{page.published}} (FY: {{ page.fy }})</p>
 
 <p>References:<br>
