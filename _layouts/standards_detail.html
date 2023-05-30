@@ -16,7 +16,8 @@ layout: default
 
 <p>References:
     {% for reference in page.hierarchyMapping %}
-    {{ reference.shortName }} <br />
+    [{{document.shortName}}]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }})
+    <br />
     {% endfor %}
 </p>
 
