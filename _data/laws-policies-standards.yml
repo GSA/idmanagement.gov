@@ -1,4 +1,4 @@
-- document: &HSPD-12
+- &HSPD-12
   FICAM_Service_Mapping:
     - "Identity Management: Identity Proofing"
   Timestamp: 5/18/2023 6:42:34
@@ -11,7 +11,7 @@
     Standard for Federal Employees and Contractors"
   published: 8/27/2004
   shortName: HSPD-12
-- document: &SpringerMemo
+- &SpringerMemo
   FICAM_Service_Mapping:
     - "Credential Management: Registration"
   Timestamp: 5/18/2023 6:54:03
