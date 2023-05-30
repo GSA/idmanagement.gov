@@ -1,20 +1,18 @@
-- FICAM_Service_Mapping: "Identity Management: Identity Proofing"
+- FICAM_Service_Mapping:
+    - "Identity Management: Identity Proofing"
   Timestamp: 5/18/2023 6:42:34
   Workforce_Citizen_Identity: Workforce Identity
-  description:
-    Directive requires the development and agency implementation of a mandatory,
-    government-wide standard for secure and reliable forms of identification for Federal
-    employees and contractors.
+  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
   externalUrl: https://www.dhs.gov/homeland-security-presidential-directive-12
-  hierarchyMapping: ""
-  internalID: ""
+  hierarchyMapping:
   longName:
     "Homeland Security Presidential Directive 12: Policy for a Common Identification
     Standard for Federal Employees and Contractors"
   published: 8/27/2004
   shortName: HSPD-12
   reference: &HSPD-12
-- FICAM_Service_Mapping: "Credential Management: Registration"
+- FICAM_Service_Mapping:
+    - "Credential Management: Registration"
   Timestamp: 5/18/2023 6:54:03
   Workforce_Citizen_Identity: Workforce Identity
   description:
@@ -25,7 +23,6 @@
   externalUrl: https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf
   hierarchyMapping:
     - *HSPD-12
-  internalID: ""
   longName: Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12
   published: ""
   shortName: Springer Memo
