@@ -17,7 +17,7 @@ subnav:
 
 ## Introduction
 
-Laws, executive policies, regulations, and government standards drive multiple federal initiatives related to Federal Identity, Credential and Access Management. IATAD maintains this policy matrix to map delegations and authorities. Progam managers can use this matrix to understand the origins and ultimate authority of regulations and policies.
+Laws, executive policies, regulations, and government standards drive multiple federal initiatives related to Federal Identity, Credential and Access Management. IATAD maintains this policy matrix to map delegations and authorities. ICAM Partners can use this matrix to understand the origins and ultimate authority of ICAM initiatives.
 
 * [Policy Matrix](#policy-matrix)
 * [Policy Table](#policy-table)
