@@ -38,4 +38,4 @@ The markdown page will pull information from a data yml (sample file) that inclu
 
 | Document Name | Publication Date | Categories |
 | --- | --- | --- | {% for document in site.data.laws-policies-standards %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards/{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.FICAM_Service_Mapping %} {{ service }}<br/> {% endfor %} | {% endfor %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.FICAM_Service_Mapping %} {{ service }}<br/> {% endfor %} | {% endfor %}
