@@ -14,9 +14,10 @@ layout: default
 
 <p>Publication Date: {{page.published}} (FY: {{ page.fy }})</p>
 
-<p>References:
+<p>References:<br>
     {% for reference in page.hierarchyMapping %}
-    [{{reference.shortName}}]({{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }})
+    <a
+        href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">{{reference.shortName}}</a>
     <br />
     {% endfor %}
 </p>
