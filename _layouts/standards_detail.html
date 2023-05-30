@@ -13,10 +13,10 @@ layout: default
 </p>
 
 {% comment %}
-Calculate Fiscal Year
+Calculate Fiscal Year {{ page.published | date: "%m%d" }}
 {% endcomment %}
 
-{{ page.published | date: "%m%d" }}
+{{ page.published }}
 
 
 <p>Publication Date: {{page.published}} (FY: {{ page.fy }})</p>
