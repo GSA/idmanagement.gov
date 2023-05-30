@@ -1,6 +1,5 @@
 {
     "$schema": "https://json-schema.org/draft-07/schema",
-    "$id": "https://idmanagement.gov/assets/schemas/laws-policies-standards-schema.json",
     "title": "document",
     "description": "A document represting a law, a government policy, or a technical standard.",
     "type": "object",
