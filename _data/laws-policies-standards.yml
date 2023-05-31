@@ -50,3 +50,18 @@
     - "Access Management: Authentication"
   authored-by:
     - *OMB
+- &M0524
+  type: "Policy"
+  shortName: "M-05-24"
+  longName: "OMB Memo 05-24: Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors"
+  published: 2005-08-05
+  description: "This memorandum provides implementing instructions for the Directive (HSPD-12) and the Standard (FIPS-201)."
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2005/m05-24.pdf"
+  scope: 
+    - "Workforce Identity"
+  ficam-services: 
+    - "Identity Management: Identity Proofing"
+  authorized-by:
+    - *HSPD-12
+  authored-by:
+    - *OMB
