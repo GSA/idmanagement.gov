@@ -127,3 +127,19 @@
   longName: "Federal Public Key Infrastructure Policy Authority"
   subgroup-of:
     - *ICAMSC
+- &FBCACP
+  type: Policy
+  shortName: "FBCA CP"
+  longName: "X.509 Certificate Policy for the Federal Bridge Certification Authority"
+  published: 2023-04-17
+  externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf"
+  authored-by:
+    - *FPKIPA
+- &FCP
+  type: Policy
+  shortName: "Common CP"
+  longName: "X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework"
+  published: 2023-04-17
+  externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf"
+  authored-by:
+    - *FPKIPA
