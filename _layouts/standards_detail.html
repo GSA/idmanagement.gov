@@ -2,21 +2,28 @@
 layout: default
 ---
 
+
 <h2>{{page.shortName}}</h2>
 
 <p><b>{{page.longName}}</b></p>
 
+{% if page.scope %}
 <p>SCOPE:<br>
 
 </p>
+{% endif %}
 
+{% if page.ficam-services %}
 <p>CATEGORIES:<br />
     {% for category in page.ficam-services %}
     {{ category }}<br />
     {% endfor %}
 </p>
+{% endif %}
 
+{% if page.published %}
 <p>Publication Date: {{page.published}}</p>
+{% endif %}
 
 {% if page.authorized-by | size > 0 %}
 <p>Authorized by:<br>
