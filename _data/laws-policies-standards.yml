@@ -65,3 +65,10 @@
     - *HSPD12
   authored-by:
     - *OMB
+- &EGOV2002
+  type: "Law"
+  shortName: "E-Government act of 2002"
+  longName: "E-Government act of 2002"
+  published: 2002-12-17
+  description: "An Act: To enhance the management and promotion of electronic Government services and processes by establishing a Federal Chief Information Officer within the Office of Management and Budget, and by establishing a broad framework of measures that require using Internet-based information technology to enhance citizen access to Government information and services, and for other purposes."
+  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf"
