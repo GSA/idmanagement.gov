@@ -80,3 +80,42 @@
   externalURL: "https://www.cio.gov/"
   authorized-by:
     - *EGOV2002
+- &CISOCOUNCIL
+  type: "Agency"
+  shortName: "Federal CISO Council"
+  longName: "Federal CISO Council"
+  description: "The Federal Chief Information Security Officer (CISO) Council is the primary body for inter-agency CISO collaboration and communication. The Council is led by the Federal CISO, who works in the White House Office of Management and Budget (OMB), and a co-chair who's a member of the Council, elected to serve in that role."
+  externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
+  subgroup-of:
+    - *CIOCOUNCIL
+- &ICAMSC
+  type: "Agency"
+  shortName: "ICAMSC"
+  longName: "Identity, Credential, and Access Management Subcommittee"
+  description: "The Identity, Credential, and Access Management Subcommittee (ICAMSC) is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management."
+  externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
+  subgroup-of:
+    - *CISOCOUNCIL
+- &FICAMARCH
+  type: "Guidance"
+  shortName: "FICAM Architecture"
+  longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
+  description: "This version of the FICAM Architecture encompasses the enterprise ICAM policies, technologies, and system approaches for government employees, contractors, and authorized partners."
+  externalURL: "https://playbooks.idmanagement.gov/arch/"
+  authored-by:
+    - *ICAMSC
+- &ICAMPMPLAYBOOK
+  type: "Guidance"
+  shortName: "ICAM PM Playbook"
+  longName: "Identity, Credential, and Access Management Program Management Playbook"
+  description: "The ICAM Program Management Playbook explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
+  externalURL: "https://playbooks.idmanagement.gov/pm/"
+  authored-by:
+    - *ICAMSC
+- &ICAMTECHPLAYBOOKS
+  type: "Guidance"
+  shortName: "ICAM Technical Playbooks"
+  longName: "Identity, Credential, and Access Management Technical Playbooks"
+  externalURL: "https://playbooks.idmanagement.gov/"
+  authored-by:
+    - *ICAMSC
