@@ -48,8 +48,34 @@
                 "description": "The FICAM services this document relates to, if any.",
                 "type": "array",
                 "items": {
-                    "type": "string",
-                    "pattern": "^Identity Management|Identity Management: Creation|Identity Management: Identity Proofing|Identity Management: Provisioning|Identity Management: Maintenance|Identity Management: Identity Aggregation|Identity Management: Deactivation|Credential Management|Credential Management: Sponsorship|Credential Management: Registration|Credential Management: Generation & Issuance|Credential Management: Maintenance|Credential Management: Revocation|Access Management|Access Management: Digital Policy Administration|Access Management: Authentication|Access Management: Authorization|Access Management: Privileged Access Management|Federation|Federation: Policy Alignment|Federation: Authentication Broker|Federation: Attribute Exchange|Governance|Governance: Identity Governance|Governance: Analytics|Governance: Mitigation$"
+                    "enum": [
+                        "Identity Management",
+                        "Identity Management: Creation",
+                        "Identity Management: Identity Proofing",
+                        "Identity Management: Provisioning",
+                        "Identity Management: Maintenance",
+                        "Identity Management: Identity Aggregation",
+                        "Identity Management: Deactivation",
+                        "Credential Management",
+                        "Credential Management: Sponsorship",
+                        "Credential Management: Registration",
+                        "Credential Management: Generation & Issuance",
+                        "Credential Management: Maintenance",
+                        "Credential Management: Revocation",
+                        "Access Management",
+                        "Access Management: Digital Policy Administration",
+                        "Access Management: Authentication",
+                        "Access Management: Authorization",
+                        "Access Management: Privileged Access Management",
+                        "Federation",
+                        "Federation: Policy Alignment",
+                        "Federation: Authentication Broker",
+                        "Federation: Attribute Exchange",
+                        "Governance",
+                        "Governance: Identity Governance",
+                        "Governance: Analytics",
+                        "Governance: Mitigation"
+                    ]
                 }
             },
             "authorized-by": {
