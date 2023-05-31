@@ -35,3 +35,20 @@
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
   scope: "Workforce Identity"
   ficam-services: "Identity Management: Identity Proofing"
+- &FIPS201
+  shortName: "FIPS 201"
+  longName: "Personal Identity Verification (PIV) of Federal Employees and Contractors"
+  published: 2022-01-01
+  description: "This document establishes a standard for a Personal Identity Verification (PIV) system that meets the control and security objectives of Homeland Security Presidential Directive-12."
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-3.pdf"
+  scope: "Workforce Identity"
+  ficam-services: "Identity Management: Identity Proofing"
+  authorized-by:
+    - *HSPD-12
+  authored-by:
+    - *NIST
+- &NIST
+  shortName: "NIST"
+  longName: "National Institute of Standards and Technology"
+  description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
+  externalURL: "https://www.nist.gov"
