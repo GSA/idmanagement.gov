@@ -6,8 +6,12 @@ layout: default
 
 <p><b>{{page.longName}}</b></p>
 
-<p>
-    {% for category in page.FICAM_Service_Mapping %}
+<p>SCOPE:<br>
+
+</p>
+
+<p>CATEGORIES:<br />
+    {% for category in page.ficam-services %}
     {{ category }}<br />
     {% endfor %}
 </p>

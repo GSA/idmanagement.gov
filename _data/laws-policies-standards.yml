@@ -19,8 +19,10 @@
   published: 2004-08-27
   description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
-  scope: "Workforce Identity"
-  ficam-services: "Identity Management: Identity Proofing"
+  scope: 
+    - "Workforce Identity"
+  ficam-services: 
+    - "Identity Management: Identity Proofing"
 - &FIPS201
   type: "Guidance"
   shortName: "FIPS 201"
@@ -28,8 +30,10 @@
   published: 2022-01-01
   description: "This document establishes a standard for a Personal Identity Verification (PIV) system that meets the control and security objectives of Homeland Security Presidential Directive-12."
   externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-3.pdf"
-  scope: "Workforce Identity"
-  ficam-services: "Identity Management: Identity Proofing"
+  scope: 
+    - "Workforce Identity"
+  ficam-services: 
+    - "Identity Management: Identity Proofing"
   authorized-by:
     - *HSPD12
   authored-by:
@@ -49,8 +53,10 @@
   published: 2005-08-05
   description: "This memorandum provides implementing instructions for the Directive (HSPD-12) and the Standard (FIPS-201)."
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2005/m05-24.pdf"
-  scope: "Workforce Identity"
-  ficam-services: "Identity Management: Identity Proofing"
+  scope: 
+    - "Workforce Identity"
+  ficam-services: 
+    - "Identity Management: Identity Proofing"
   authorized-by:
     - *HSPD-12
   authored-by:
