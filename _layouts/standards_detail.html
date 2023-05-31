@@ -9,7 +9,9 @@ layout: default
 
 {% if page.scope %}
 <p>SCOPE:<br>
-
+    {% for scope in page.scope %}
+    {{ scope }}<br />
+    {% endfor %}
 </p>
 {% endif %}
 
