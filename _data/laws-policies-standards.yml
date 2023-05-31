@@ -101,6 +101,7 @@
   shortName: "FICAM Architecture"
   longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
   description: "This version of the FICAM Architecture encompasses the enterprise ICAM policies, technologies, and system approaches for government employees, contractors, and authorized partners."
+  published: 2021-01-06
   externalURL: "https://playbooks.idmanagement.gov/arch/"
   authored-by:
     - *ICAMSC
@@ -109,6 +110,7 @@
   shortName: "ICAM PM Playbook"
   longName: "Identity, Credential, and Access Management Program Management Playbook"
   description: "The ICAM Program Management Playbook explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
+  published: 2022-06-10
   externalURL: "https://playbooks.idmanagement.gov/pm/"
   authored-by:
     - *ICAMSC
