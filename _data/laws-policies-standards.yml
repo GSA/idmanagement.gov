@@ -133,6 +133,11 @@
   longName: "X.509 Certificate Policy for the Federal Bridge Certification Authority"
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf"
+  ficam-services:
+    - "Identity Management: Identity Proofing"
+    - "Credential Management: Generation & Issuance"
+    - "Credential Management: Revocation"
+    - "Federation: Policy Alignment"
   authored-by:
     - *FPKIPA
 - &FCP
@@ -141,5 +146,10 @@
   longName: "X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework"
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf"
+  ficam-services:
+    - "Identity Management: Identity Proofing"
+    - "Credential Management: Generation & Issuance"
+    - "Credential Management: Revocation"
+    - "Federation: Policy Alignment"
   authored-by:
     - *FPKIPA
