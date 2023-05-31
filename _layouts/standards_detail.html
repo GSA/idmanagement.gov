@@ -8,7 +8,7 @@ layout: default
 <p><b>{{page.longName}}</b></p>
 
 {% if page.scope %}
-<p>SCOPE:<br>
+<p><b>SCOPE:</b><br>
     {% for scope in page.scope %}
     {{ scope }}<br />
     {% endfor %}
@@ -16,7 +16,7 @@ layout: default
 {% endif %}
 
 {% if page.ficam-services %}
-<p>CATEGORIES:<br />
+<p><b>CATEGORIES:</b><br />
     {% for category in page.ficam-services %}
     {{ category }}<br />
     {% endfor %}
