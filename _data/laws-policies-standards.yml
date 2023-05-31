@@ -121,3 +121,9 @@
   externalURL: "https://playbooks.idmanagement.gov/"
   authored-by:
     - *ICAMSC
+- &FPKIPA
+  type: "Agency"
+  shortName: "FPKI PA"
+  longName: "Federal Public Key Infrastructure Policy Authority"
+  subgroup-of:
+    - *ICAMSC
