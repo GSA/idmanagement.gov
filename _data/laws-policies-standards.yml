@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
+# yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
 
 - &NIST
   type: "Agency"
@@ -12,3 +12,14 @@
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+- &HSPD12
+  type: "Law"
+  shortName: "HSPD-12"
+  longName: "Homeland Security Presidential Directive 12"
+  published: 2004-08-27
+  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
+  scope:
+    - "Workforce Identity"
+  ficam-services:
+    - "Identity Management: Identity Proofing"
