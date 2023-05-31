@@ -6,6 +6,11 @@
     "items": {
         "type": "object",
         "properties": {
+            "type": {
+                "description": "Agency, law, policy or guidance",
+                "type": "string",
+                "pattern": "^Agency|Law|Policy|Guidance$"
+            },
             "shortName": {
                 "description": "The short name of the document",
                 "type": "string"
