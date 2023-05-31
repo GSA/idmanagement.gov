@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: PIV Details
-permalink: /what/pivdetails/
-sidenav: what
+permalink: /arch/pivdetails/
+sidenav: arch
 sticky_sidenav: true
 
 subnav:
@@ -60,7 +60,7 @@ Viewing the certificate information on your PIV credential may be interesting if
 
 Within the U.S. federal government, the certificate and PIV credential information is governed by standards, policies, and implementation-specific choices (options) across all agency credential providers.
 
-Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [PIV Overview]({{site.baseurl}}/what/services/#physical-features) to view the four pairs and purposes.
+Typically, there are four certificates and four key pairs on a PIV credential.  However, one pair (i.e., one certificate and one key pair) is *ALWAYS* on every PIV credential and three pairs (i.e., three certificates and three key pairs) are *SOMETIMES* on a PIV credential.  You can review the [PIV Overview]({{site.baseurl}}/arch/services/#physical-features) to view the four pairs and purposes.
 
 The table below outlines the general information for the PIV credential certificates, certificate extensions, and design considerations. 
 
@@ -183,7 +183,7 @@ For instructions on how to download the new root and intermediate certificates, 
 
 You can contact your agency's information security teams for help with additional intermediate certificates, or you can find the intermediate certificates by using information in your PIV certificates directly.
 
-- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate, go to the [PIV Details]({{site.baseurl}}/what/pivdetails/){:target="_blank"}{:rel="noopener noreferrer"}
+- View your PIV Authentication certificate. To review how to view your PIV Authentication certificate, go to the [PIV Details]({{site.baseurl}}/arch/pivdetails/){:target="_blank"}{:rel="noopener noreferrer"}
 - In the **Authority Information Access (AIA)** extension, there is a URL (http://) that references a file with a .p7b or .p7c extension.
 - Download the file, open it, and view the intermediate CA certificates.
 - Repeat the process using the AIA extension of the intermediate CA certificates until the final reference finds an intermediate CA certificate that is issued and signed by COMMON.

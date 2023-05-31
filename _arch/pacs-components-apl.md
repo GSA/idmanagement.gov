@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: PACS Components APL
 permalink: /approved-products-list-pacs-products/
-sidenav: what
+sidenav: arch
 sticky_sidenav: true
 
 subnav:

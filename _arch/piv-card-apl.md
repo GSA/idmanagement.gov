@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: PIV Card APL
 permalink: /approved-products-list-piv/
-sidenav: what
+sidenav: arch
 sticky_sidenav: true
 
 subnav:

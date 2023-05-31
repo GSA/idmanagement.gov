@@ -21,23 +21,24 @@ why:
     href: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
 
 ## New What secondary navigation 
-what:
+# Changed to arch to reflect top-level-menu name change to Architecture and to match what is on playbooks
+arch:
   - text: Introduction
-    href: /what/
+    href: /arch/
   - text: Products
-    href: /what/products/
+    href: /arch/products/
   - text: Services
-    href: /what/services/
+    href: /arch/services/
   - text: Service Framework
-    href: /what/servicesframework/
+    href: /arch/servicesframework/
   - text: PIV Details
-    href: /what/pivdetails/
+    href: /arch/pivdetails/
   - text: PACS Guide
-    href: /what/pacsguide/
+    href: /arch/pacsguide/
   - text: Deployment Model
-    href: /what/deployment/
+    href: /arch/deployment/
   - text: Use Cases
-    href: /what/usecases/
+    href: /arch/usecases/
   - text: PIV Card APL
     href: /approved-products-list-piv/
   - text: PACS Products APL

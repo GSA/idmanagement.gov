@@ -161,7 +161,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>For details, see <a href="{{site.baseurl}}/what/pacsguide/#assess-facility-security-level" target="_blank" rel="noopener noreferrer">Aligning FSL and Authentication Mechanism</a>.</li>
+	<li>For details, see <a href="{{site.baseurl}}/arch/pacsguide/#assess-facility-security-level" target="_blank" rel="noopener noreferrer">Aligning FSL and Authentication Mechanism</a>.</li>
 	<li>The FSL assessment and chosen PIV authentication mechanisms will form the basis for the PACS requirements document/specification as well as affect the SOW and project costs.</li>
 	<li>The sample survey questions below will help you assess the FSL of each facility and select the right PIV authentication mechanisms:
 	<ul>

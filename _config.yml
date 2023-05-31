@@ -71,21 +71,21 @@ primary_navigation:
 
 
 # What is FICAM top level menu with dropdowns
- # - name: from What is FICAM? (changed on 05-17-2023 per Babur/Joe to 'Achitecture')
+ # - name: from 'What' is FICAM? (changed on 05-17-2023 per Babur/Joe to 'Achitecture') See: _arch folder
   - name: Architecture
     children: 
       - name: Introduction
-        url: /what/
+        url: /arch/
       - name: Products
-        url: /what/products/
+        url: /arch/products/
       - name: Services
-        url: /what/services/
+        url: /arch/services/
       - name: PIV Details
-        url: /what/pivdetails/
+        url: /arch/pivdetails/
       - name: Service Framework
-        url: /what/servicesframework/
+        url: /arch/servicesframework/
       - name: Use Cases
-        url: /what/usecases/
+        url: /arch/usecases/
 
 
 # Who FICAM is For? top level menu with dropdowns
@@ -215,9 +215,9 @@ collections:
   why:
     output: true
     permalink: /why/:path/
-  what:
+  arch:
     output: true
-    permalink: /what/:path/
+    permalink: /arch/:path/
   how:
     output: true
     permalink: /how/:path/

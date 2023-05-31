@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: Service Framework
-permalink: /what/servicesframework/
-sidenav: what
+permalink: /arch/servicesframework/
+sidenav: arch
 sticky_sidenav: true
 
 subnav:

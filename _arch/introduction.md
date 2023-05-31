@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: What is FICAM?
-permalink: /what/
-sidenav: what
+permalink: /arch/
+sidenav: arch
 sticky_sidenav: true
 
 subnav:

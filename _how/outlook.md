@@ -86,7 +86,7 @@ The Global Address List (GAL) is a shared, enterprise-wide contact directory in 
 
 When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list), you may need to load it manually.
 
-1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/what/pivdetails/) certificate (you may need to ask the intended recipient to export and share their certificate with you)
+1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/arch/pivdetails/) certificate (you may need to ask the intended recipient to export and share their certificate with you)
 2. Click the **Home** tab.
 3. Click the **Address Book**.
 4. Select **File** > **New Entry**.

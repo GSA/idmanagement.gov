@@ -408,7 +408,7 @@ The following documentation references help inform the development and direction
 6. [NIST Interagency Report 7966 - Security of Interactive and Automated Access Management Using Secure Shell (SSH)](https://csrc.nist.gov/publications/detail/nistir/7966/final){:target="_blank"}{:rel="noopener noreferrer"}
   - This publication assists organizations in understanding the basics of SSH interactive and automated access management in an enterprise, focusing on the management of SSH user keys.
 
-7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management]({{site.baseurl}}/what/servicesframework/#access-management){:target="_blank"}{:rel="noopener noreferrer"}
+7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management]({{site.baseurl}}/arch/servicesframework/#access-management){:target="_blank"}{:rel="noopener noreferrer"}
      - The FICAM Architecture is a framework for an agency to use in ICAM program and solution roadmap planning. Privileged Access Management is identified as a distinct service within the access management portion of the ICAM services framework.
 
 8. [Common Sense Guide to Mitigating Insider Threats (6th Edition), February 2019](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644){:target="_blank"}{:rel="noopener noreferrer"}

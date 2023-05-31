@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: Services
-permalink: /what/services/
-sidenav: what
+permalink: /arch/services/
+sidenav: arch
 sticky_sidenav: true
 
 subnav:
@@ -99,7 +99,7 @@ The Card Authentication, PIV Authentication, Digital Signature, and Encryption a
 
 These **PIV Guides** are intended to help you implement common PIV configurations at your organization. These guides are [open source]({{ site.repourl }}){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions]({{site.baseurl}}/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.
 
-The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide]({{site.baseurl}}/what/pacsguide/){:target="_blank"}{:rel="noopener noreferrer"}.
+The guides focus on using PIV credentials for _logical access_ such as authenticating to networks or applications or digitally signing and encrypting. Using PIV for _physical access_ is available in the [PACS Guide]({{site.baseurl}}/arch/pacsguide/){:target="_blank"}{:rel="noopener noreferrer"}.
 
 If you cannot find a particular topic, it may still be in development. Review the [Issues]({{ site.repourl }}/issues){:target="_blank"}{:rel="noopener noreferrer"} for questions and lessons that are in progress. Create a new [Issue]({{ site.repourl }}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to ask a question or share information with others.  
 
@@ -220,4 +220,4 @@ For common PIV credential usage scenarios, we outline the _general smart card mi
 
 You have a PIV credential, a card reader, and middleware for your computer. **Now what?**
 
-If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, see the [PIV Details](/what/pivdetails/) section.
+If you want to learn more about details of PIV credentials, certificates, and how to configure a network or web application, see the [PIV Details](/arch/pivdetails/) section.

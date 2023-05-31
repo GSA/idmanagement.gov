@@ -44,7 +44,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 <br><br>
 <img src="{{site.baseurl}}/assets/piv/ssh-putty-cac-1.png" alt="PuTTY configuration window." width="470" height="449">
 <br><br>
-4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/what/pivdetails/).
+4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/arch/pivdetails/).
 <br><br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A PuTTY select certificate for authentication screenshot." width="454" height="377">
 <br>
@@ -88,7 +88,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-4.PNG" alt="A screenshot showing Add CAPI Cert selected." width="247" height="275">
 <br>
-8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/what/pivdetails/){:target="_blank"}{:rel="noopener noreferrer"}.)
+8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/arch/pivdetails/){:target="_blank"}{:rel="noopener noreferrer"}.)
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A screenshot showing a PuTTY select certificate for authentication window with the OK button selected." width="269" height="223">
 <br>

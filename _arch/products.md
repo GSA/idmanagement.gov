@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: what
+collection: arch
 title: Products
-permalink: /what/products/
-sidenav: what
+permalink: /arch/products/
+sidenav: arch
 sticky_sidenav: true
 
 subnav:

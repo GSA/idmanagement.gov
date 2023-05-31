@@ -2,9 +2,9 @@
 layout: page
 title: Removed Products List
 permalink: /removed-products-list/
-collection: what
+collection: arch
 sticky_sidenav: true
-sidenav: what
+sidenav: arch
 
 ---
 

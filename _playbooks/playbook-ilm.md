@@ -204,7 +204,7 @@ The most common way to integrate non-PKI-derived credentials is through a modern
 
 ## Shift From Managing Credentials to Managing Identities
 
-This playbook intends to help agencies achieve OMB Memo 19-17 outcomes to shift the focus operating model from managing access based solely on credentials to managing the lifecycle of identities and the appropriate job functions and roles as they evolve over time in an agency or the federal government. The [Identity Management services in the Federal ICAM architecture]({{site.baseurl}}/what/servicesframework/#identity-management){:target="_blank"}{:rel="noopener noreferrer"} include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are collectively known as Identity Lifecycle Management (ILM).
+This playbook intends to help agencies achieve OMB Memo 19-17 outcomes to shift the focus operating model from managing access based solely on credentials to managing the lifecycle of identities and the appropriate job functions and roles as they evolve over time in an agency or the federal government. The [Identity Management services in the Federal ICAM architecture]({{site.baseurl}}/arch/servicesframework/#identity-management){:target="_blank"}{:rel="noopener noreferrer"} include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are collectively known as Identity Lifecycle Management (ILM).
 
 ### Step 1. Document the Process in an Agency Policy
 
