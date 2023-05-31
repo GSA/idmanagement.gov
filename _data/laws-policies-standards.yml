@@ -27,6 +27,11 @@
 #   longName: Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12
 #   published: ""
 #   shortName: Springer Memo
+- &NIST
+  shortName: "NIST"
+  longName: "National Institute of Standards and Technology"
+  description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
+  externalURL: "https://www.nist.gov"
 - &HSPD12
   shortName: "HSPD-12"
   longName: "Homeland Security Presidential Directive 12"
@@ -44,11 +49,6 @@
   scope: "Workforce Identity"
   ficam-services: "Identity Management: Identity Proofing"
   authorized-by:
-    - *HSPD-12
+    - *HSPD12
   authored-by:
     - *NIST
-- &NIST
-  shortName: "NIST"
-  longName: "National Institute of Standards and Technology"
-  description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
-  externalURL: "https://www.nist.gov"
