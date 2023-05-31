@@ -16,10 +16,12 @@ layout: default
 Calculate Fiscal Year
 {% endcomment %}
 
-{% if page.published and page.published | date: "%m%d" > 1001 %}
+{% if page.published %}
+{% if page.published | date: "%m%d" > 1001 %}
 {% assign FY = page.published | date: "%Y" + 1 %}
 {% else %}
 {% assign FY = page.published | date: "%Y" %}
+{% endif %}
 {% endif %}
 
 
