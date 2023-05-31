@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft-07/schema",
-    "title": "document",
+    "title": "schema for idmanagement.gov policy matrix",
     "description": "A document representing a law, a government policy, or a technical standard.",
-    "type": "object",
+    "type": "array",
     "properties": {
         "shortName": {
             "description": "The short name of the document",
