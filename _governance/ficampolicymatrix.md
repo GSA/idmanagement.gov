@@ -37,5 +37,5 @@ The markdown page will pull information from a data yml (sample file) that inclu
 {% endcomment %}
 
 | Document Name | Publication Date | Categories |
-| --- | --- | --- | {% for document in site.data.laws-policies-standards %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
+| --- | --- | --- | {% for document in site.data.laws-policies-standards %} {% if document.type != "Agency" %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
