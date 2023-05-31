@@ -16,11 +16,16 @@ layout: default
 Calculate Fiscal Year
 {% endcomment %}
 
-{{ page.published | date: "%m%d" }}
+{% if page.published | date: "%m%d" > 1001 %}
+{% assign FY = page.published | date: "%Y" + 1 %}
+{% else %}
+{% assign FY = page.published | date: "%Y" %}
+{% endif %}
 
 
-<p>Publication Date: {{page.published}} (FY: {{ page.fy }})</p>
+<p>Publication Date: {{page.published}} (FY: {{ FY }})</p>
 
+{% if page.authorized-by | size > 0 %}
 <p>Authorized by:<br>
     {% for reference in page.authorized-by %}
     <a
@@ -28,7 +33,9 @@ Calculate Fiscal Year
     <br />
     {% endfor %}
 </p>
+{% endif %}
 
+{% if page.authored-by | size > 0 %}
 <p>Authored by:<br />
     {% for reference in page.authored-by %}
     <a
@@ -36,6 +43,7 @@ Calculate Fiscal Year
     <br />
     {% endfor %}
 </p>
+{% endif %}
 
 <p>Description: {{page.description}}</p>
 
