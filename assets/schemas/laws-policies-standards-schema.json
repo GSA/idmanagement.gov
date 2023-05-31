@@ -46,15 +46,15 @@
             },
             "authorized-by": {
                 "description": "The law or regulation authorizing this document or program",
-                "type": "object"
+                "type": "array"
             },
             "implemented-by": {
                 "description": "The entity implementing or managing this program",
-                "type": "object"
+                "type": "array"
             },
             "authored-by": {
                 "description": "The entity authoring the document",
-                "type": "object"
+                "type": "array"
             }
         }
     }
