@@ -72,3 +72,11 @@
   published: 2002-12-17
   description: "An Act: To enhance the management and promotion of electronic Government services and processes by establishing a Federal Chief Information Officer within the Office of Management and Budget, and by establishing a broad framework of measures that require using Internet-based information technology to enhance citizen access to Government information and services, and for other purposes."
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf"
+- &CIOCOUNCIL
+  type: "Agency"
+  shortName: "Federal CIO Council"
+  longName: "Federal CIO Council"
+  description: "The Federal CIO Council is the principal interagency forum to improve agency practices related to the design, acquisition, development, modernization, sustainment, use, sharing, and performance of Federal Government information technology (IT)."
+  externalURL: "https://www.cio.gov/"
+  authorized-by:
+    - *EGOV2002
