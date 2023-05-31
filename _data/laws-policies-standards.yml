@@ -131,6 +131,7 @@
   type: Policy
   shortName: "FBCA CP"
   longName: "X.509 Certificate Policy for the Federal Bridge Certification Authority"
+  description: "The FBCA exists to facilitate trusted electronic business transactions for Federal organizations. To facilitate the missions of the organizations, interoperability is offered to non-Federal entities."
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf"
   ficam-services:
@@ -144,6 +145,7 @@
   type: Policy
   shortName: "Common CP"
   longName: "X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework"
+  description: "The scope of this U.S. Federal PKI Common Policy Framework CP includes the Certification Authorities used for issuing and managing certificates that are valid to the Federal Common Policy CA on behalf of federal executive branch agencies. This CP applies to certificates issued to CAs, devices, and federal employees, contractors and other affiliated personnel."
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf"
   ficam-services:
