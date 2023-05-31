@@ -1,2 +1,8 @@
 # yaml-language-server: $schema=https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
 
+- &NIST
+  type: "Agency"
+  shortName: "NIST"
+  longName: "National Institute of Standards and Technology"
+  description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
+  externalURL: "https://www.nist.gov"
