@@ -3,51 +3,54 @@
     "title": "schema for idmanagement.gov policy matrix",
     "description": "A document representing a law, a government policy, or a technical standard.",
     "type": "array",
-    "properties": {
-        "shortName": {
-            "description": "The short name of the document",
-            "type": "string"
-        },
-        "longName": {
-            "description": "The full name of the document",
-            "type": "string"
-        },
-        "published": {
-            "description": "The publication date",
-            "type": "string",
-            "format": "date"
-        },
-        "externalURL": {
-            "description": "A URL where the original document can be found",
-            "type": "string",
-            "format": "URL"
-        },
-        "description": {
-            "description": "A long description of the document, can be multiline",
-            "type": "string",
-            "format": "multiline"
-        },
-        "scope": {
-            "description": "The scope of the document, can be 'Worforce Identity', if primarily for government personnel, or 'Public Identity' if primarily for citizens.",
-            "type": "string",
-            "pattern": "^Workforce Identity|Public Identity$"
-        },
-        "ficam-services": {
-            "description": "The FICAM services this document relates to, if any.",
-            "type": "string",
-            "pattern": "^Identity Management|Identity Management: Creation|Identity Management: Identity Proofing|Identity Management: Provisioning|Identity Management: Maintenance|Identity Management: Identity Aggregation|Identity Management: Deactivation|Credential Management|Credential Management: Sponsorship|Credential Management: Registration|Credential Management: Generation & Issuance|Credential Management: Maintenance|Credential Management: Revocation|Access Management|Access Management: Digital Policy Administration|Access Management: Authentication|Access Management: Authorization|Access Management: Privileged Access Management|Federation|Federation: Policy Alignment|Federation: Authentication Broker|Federation: Attribute Exchange|Governance|Governance: Identity Governance|Governance: Analytics|Governance: Mitigation$"
-        },
-        "authorized-by": {
-            "description": "The law or regulation authorizing this document or program",
-            "type": "object"
-        },
-        "implemented-by": {
-            "description": "The entity implementing or managing this program",
-            "type": "object"
-        },
-        "authored-by": {
-            "description": "The entity authoring the document",
-            "type": "object"
+    "items": {
+        "type": "object",
+        "properties": {
+            "shortName": {
+                "description": "The short name of the document",
+                "type": "string"
+            },
+            "longName": {
+                "description": "The full name of the document",
+                "type": "string"
+            },
+            "published": {
+                "description": "The publication date",
+                "type": "string",
+                "format": "date"
+            },
+            "externalURL": {
+                "description": "A URL where the original document can be found",
+                "type": "string",
+                "format": "URL"
+            },
+            "description": {
+                "description": "A long description of the document, can be multiline",
+                "type": "string",
+                "format": "multiline"
+            },
+            "scope": {
+                "description": "The scope of the document, can be 'Worforce Identity', if primarily for government personnel, or 'Public Identity' if primarily for citizens.",
+                "type": "string",
+                "pattern": "^Workforce Identity|Public Identity$"
+            },
+            "ficam-services": {
+                "description": "The FICAM services this document relates to, if any.",
+                "type": "string",
+                "pattern": "^Identity Management|Identity Management: Creation|Identity Management: Identity Proofing|Identity Management: Provisioning|Identity Management: Maintenance|Identity Management: Identity Aggregation|Identity Management: Deactivation|Credential Management|Credential Management: Sponsorship|Credential Management: Registration|Credential Management: Generation & Issuance|Credential Management: Maintenance|Credential Management: Revocation|Access Management|Access Management: Digital Policy Administration|Access Management: Authentication|Access Management: Authorization|Access Management: Privileged Access Management|Federation|Federation: Policy Alignment|Federation: Authentication Broker|Federation: Attribute Exchange|Governance|Governance: Identity Governance|Governance: Analytics|Governance: Mitigation$"
+            },
+            "authorized-by": {
+                "description": "The law or regulation authorizing this document or program",
+                "type": "object"
+            },
+            "implemented-by": {
+                "description": "The entity implementing or managing this program",
+                "type": "object"
+            },
+            "authored-by": {
+                "description": "The entity authoring the document",
+                "type": "object"
+            }
         }
     }
 }

@@ -1,28 +1,37 @@
 # yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
-- &HSPD-12
-  FICAM_Service_Mapping:
-    - "Identity Management: Identity Proofing"
-  Timestamp: 5/18/2023 6:42:34
-  Workforce_Citizen_Identity: Workforce Identity
+
+# - &HSPD-12
+#   FICAM_Service_Mapping:
+#     - "Identity Management: Identity Proofing"
+#   Timestamp: 5/18/2023 6:42:34
+#   Workforce_Citizen_Identity: Workforce Identity
+#   description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
+#   externalUrl: https://www.dhs.gov/homeland-security-presidential-directive-12
+#   hierarchyMapping:
+#   longName: "Homeland Security Presidential Directive 12: Policy for a Common Identification Standard for Federal Employees and Contractors"
+#   published: 8/27/2004
+#   shortName: HSPD-12
+# - &SpringerMemo
+#   FICAM_Service_Mapping:
+#     - "Credential Management: Registration"
+#   Timestamp: 5/18/2023 6:54:03
+#   Workforce_Citizen_Identity: Workforce Identity
+#   description:
+#     "This memorandum provides final government-wide credentialing standards
+#     to be used by all Federal departments and agencies in determining whether
+#     to issue or revoke personal identity verification (PIV) cards to their employees
+#     and contractor personnel, including those who are non-United States citizens."
+#   externalUrl: https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf
+#   hierarchyMapping:
+#     - *HSPD-12
+#   longName: Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12
+#   published: ""
+#   shortName: Springer Memo
+- &HSPD12
+  shortName: "HSPD-12"
+  longName: "Homeland Security Presidential Directive 12"
+  published: 2004-08-27
   description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
-  externalUrl: https://www.dhs.gov/homeland-security-presidential-directive-12
-  hierarchyMapping:
-  longName: "Homeland Security Presidential Directive 12: Policy for a Common Identification Standard for Federal Employees and Contractors"
-  published: 8/27/2004
-  shortName: HSPD-12
-- &SpringerMemo
-  FICAM_Service_Mapping:
-    - "Credential Management: Registration"
-  Timestamp: 5/18/2023 6:54:03
-  Workforce_Citizen_Identity: Workforce Identity
-  description:
-    "This memorandum provides final government-wide credentialing standards
-    to be used by all Federal departments and agencies in determining whether
-    to issue or revoke personal identity verification (PIV) cards to their employees
-    and contractor personnel, including those who are non-United States citizens."
-  externalUrl: https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf
-  hierarchyMapping:
-    - *HSPD-12
-  longName: Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12
-  published: ""
-  shortName: Springer Memo
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
+  scope: "Workforce Identity"
+  ficam-services: "Identity Management: Identity Proofing"
