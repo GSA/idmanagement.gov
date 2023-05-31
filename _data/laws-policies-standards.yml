@@ -6,3 +6,9 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
+- &OMB
+  type: "Agency"
+  shortName: "OMB"
+  longName: "Office of Management and Budget"
+  description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
+  externalURL: "https://www.whitehouse.gov/omb/"
