@@ -38,3 +38,11 @@
     - *HSPD12
   authored-by:
     - *NIST
+- &M0404
+  type: "Policy"
+  shortName: "M-04-04"
+  longName: "OMB Memo 04-04: E-Authentication Guidance for Federal Agencies"
+  published: 2003-12-16
+  description: ""
+  authored-by:
+    - *OMB
