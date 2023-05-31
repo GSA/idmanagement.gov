@@ -16,19 +16,6 @@ layout: default
     {% endfor %}
 </p>
 
-{% comment %}
-Calculate Fiscal Year
-
-
-{% if page.published %}
-{% if page.published | date: "%m%d" > 1001 %}
-{% assign FY = page.published | date: "%Y" + 1 %}
-{% else %}
-{% assign FY = page.published | date: "%Y" %}
-{% endif %}
-{% endif %}
-{% endcomment %}
-
 <p>Publication Date: {{page.published}} (FY: {{ FY }})</p>
 
 {% if page.authorized-by | size > 0 %}
