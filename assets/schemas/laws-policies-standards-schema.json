@@ -93,6 +93,10 @@
             "authored-by": {
                 "description": "The entity authoring the document",
                 "type": "array"
+            },
+            "subgroup-of": {
+                "description": "The group of which this group is a part.",
+                "type": "array"
             }
         }
     }
