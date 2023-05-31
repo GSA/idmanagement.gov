@@ -44,5 +44,9 @@
   longName: "OMB Memo 04-04: E-Authentication Guidance for Federal Agencies"
   published: 2003-12-16
   description: ""
+  scope:
+    - "Public Identity"
+  ficam-services:
+    - "Access Management: Authentication"
   authored-by:
     - *OMB
