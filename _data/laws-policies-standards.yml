@@ -155,3 +155,12 @@
     - "Federation: Policy Alignment"
   authored-by:
     - *FPKIPA
+- &PKISSP
+  type: "Program"
+  shortName: "PKI SSP"
+  longName: "GSA PKI Shared Service Provider Program"
+  description: "The General Services Administration, Office of Government-wide Policy, manages the Public Key Infrastructure Shared Services Provider Program. The primary focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability."
+  externalURL: "https://www.idmanagement.gov/buy/gsapkissp/"
+  ficam-services:
+    - "Credential Management: Generation & Issuance"
+    - "Credential Management: Revocation"
