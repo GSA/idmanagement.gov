@@ -38,8 +38,10 @@
                 "description": "The scope of the document, can be 'Worforce Identity', if primarily for government personnel, or 'Public Identity' if primarily for citizens.",
                 "type": "array",
                 "items": {
-                    "type": "string",
-                    "pattern": "^Workforce Identity|Public Identity$"
+                    "enum": [
+                        "Workforce Identity",
+                        "Public Identity"
+                    ]
                 }
             },
             "ficam-services": {
