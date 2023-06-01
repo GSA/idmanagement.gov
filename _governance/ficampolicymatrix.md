@@ -33,7 +33,7 @@ This diagram presents a visual overview of the FICAM Policy landscape.
 This table identifies the authorities that issue memos, regulations or technical guidance documents that are relevant to FICAM.
 
 | Name | Description |
-| --- | --- | {% for authority in site.data.laws-policies-standards %} {% if document.type == "Authority" %}
+| --- | --- | {% for authority in site.data.laws-policies-standards %} {% if authority.type == "Authority" %}
 | [ {{authority.shortName}} ]({{site.baseurl}}/laws-policies-standards{{authority.shortName | datapage_url: laws-policies-standards }}) | {{authority.description}} | {% endif %} {% endfor %}
 
 ## Policy Table
