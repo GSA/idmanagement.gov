@@ -9,7 +9,7 @@
             "type": {
                 "description": "Agency, law, policy or guidance",
                 "enum": [
-                    "Agency",
+                    "Authority",
                     "Law",
                     "Policy",
                     "Guidance",
