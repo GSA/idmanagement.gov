@@ -125,6 +125,8 @@
   type: "Authority"
   shortName: "FPKI PA"
   longName: "Federal Public Key Infrastructure Policy Authority"
+  description: "In 2002, the Federal Public Key Infrastructure (FPKI) Policy Authority (PA) was created by the Federal Chief Information Officers (CIO) Council to serve as the Federal Public Key Infrastructure governance body."
+  externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
   subgroup-of:
     - *ICAMSC
 - &FBCACP
