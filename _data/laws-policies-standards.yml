@@ -225,3 +225,72 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
   authored-by:
     - *OMB
+- &FISMA2014
+  type: Law
+  shortName: "FISMA 2014"
+  longName: "Federal Information Security Modernization Act of 2014"
+  description: "The purposes of this subchapter are to [...] provide a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support Federal operations and assets"
+  published: 2014-12-18
+  externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
+  amends:
+    - *EGOV2002
+- &M0504
+  type: Policy
+  shortName: "M-05-04"
+  longName: "OMB Memo 05-04: Policies for Federal Agency Public Websites"
+  description: "The efficient, effective, and appropriately consistent use of Federal agency public websites is important to promote a more citizen centered government. This memorandum and attachment fulfill the requirements of section 207(f) of the E-Government Act of 2002 (Pub. L. No. 107-347)."
+  published: 2004-12-17
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2005/m05-04.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *EGOV2002
+    - *A130
+- &M1513
+  type: Policy
+  shortName: "M-15-13"
+  longName: "OMB Memo 15-13: Policy to Require Secure Connections across Federal Websites and Web Services"
+  description: "This Memorandum requires that all publicly accessible Federal websites and web services only provide service through a secure connection. The strongest privacy and integrity protection currently available for public web connections is Hypertext Transfer Protocol Secure (HTTPS)."
+  published: 2015-07-08
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *M0504
+- &GPRA2010
+  type: Law
+  shortName: "GRPA Modernization Act of 2010"
+  longName: "The Government Performance and Results Modernization Act of 2010"
+  description: "An Act to require quarterly performance assessments of Government programs for purposes of assessing agency performance and improvement, and to establish agency performance improvement officers and the Performance Improvement Council."
+  date: 2011-01-04
+  externalURL: "https://www.congress.gov/111/plaws/publ352/PLAW-111publ352.pdf"
+- &PMA
+  type: Law
+  shortName: "PMA"
+  longName: "President's Management Agenda"
+  description: "The President’s Management Agenda (PMA) defines Government-wide management priorities for all Federal agencies to improve how Government operates and performs."
+  externalURL: "https://www.performance.gov/"
+  authorized-by:
+    - *GPRA2010
+- &M1916
+  type: Policy
+  shortName: "M-19-16"
+  longName: "OMB Memo 19-16: Centralized Mission Support Capabilities for the Federal Government"
+  description: "This memorandum describes the process and desired outcomes for shared services"
+  published: 2019-04-26
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *PMA
+- &M1604
+  type: Policy
+  shortName: "M-16-04"
+  longName: "OMB Memo 16-04: CyberSecurity Strategy and Implementation Plan (CSIP) for the Federal Government"
+  description: "The CSIP is the result of a comprehensive review of the Federal Government's cybersecurity policies, procedures, and practices."
+  published: 2015-10-30
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m-16-04.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *FISMA2014
