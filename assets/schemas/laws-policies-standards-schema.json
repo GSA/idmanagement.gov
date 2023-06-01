@@ -98,6 +98,10 @@
             "subgroup-of": {
                 "description": "The group of which this group is a part.",
                 "type": "array"
+            },
+            "rescinds": {
+                "description": "The previous document that this document rescinds",
+                "type": "array"
             }
         }
     }
