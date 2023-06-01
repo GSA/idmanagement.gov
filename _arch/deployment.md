@@ -192,4 +192,4 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 Visit the [PIV Guide]({{site.baseurl}}/arch/pivdetails/#trust) to learn more about certificate trust.
 
-The next section, [Procurements]({{site.baseurl}}/who/procure/), describes the processes and resources needed for a PACS procurement.
+The next section, [Procurements]({{site.baseurl}}/partners/procure/), describes the processes and resources needed for a PACS procurement.

@@ -15,7 +15,7 @@ subnav:
 
 Find approved products and services for Federal Identity, Credential, and Access Management (FICAM) implementations and helpful links for purchasing these items using GSA Schedules.
 
-Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap]({{site.baseurl}}/who/icamsolutions/).
+Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap]({{site.baseurl}}/partners/icamsolutions/).
 
 
 The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.

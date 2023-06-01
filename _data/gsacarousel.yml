@@ -22,7 +22,7 @@
   heroHeading: FICAM 
   heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
   actionButtonText: Learn more about
-  actionLocation: what/introduction/
+  actionLocation: /arch/
   actionTarget: _self
 
 - orderNumber: 1

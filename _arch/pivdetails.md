@@ -82,7 +82,7 @@ The table below outlines the general information for the PIV credential certific
 -   There has been testing in some infrastructures to migrate to Elliptic Curve Cryptography (ECC), but there are no ECC certificates for users in production as of the date of this guide.
 -   There has been testing in some infrastructures to migrate to 3072-bit (RSA) certificates, but there are no 3072-bit certificates for users in production as of the date of this guide.
 
-In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [FPKI Policy and Compliance Audit]({{site.baseurl}}/who/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} page.
+In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) policy documents. The most recent policy and certificate profile documents may be found on IDManagement.gov's [FPKI Policy and Compliance Audit]({{site.baseurl}}/partners/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"} page.
 
 <!-- from  https://playbooks.idmanagement.gov/piv/identifiers/ -->
 
@@ -126,7 +126,7 @@ The full process of proving identity when issuing the certificates, auditing the
 
 For the federal government Executive Branch agencies, there is one root CA named _Federal Common Policy Certificate Authority G2 (FCPCAG2 or COMMON)_ and there are dozens of intermediate CAs.  The federal government has also established trust with other CAs that serve business communities, state and local government communities, and international government communities.
 
-The participating CAs are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*]({{site.baseurl}}/who/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
+The participating CAs are subject to policies, processes, and auditing collectively referred to as the [*Federal Public Key Infrastructure (FPKI)*]({{site.baseurl}}/partners/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}
 
 The [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"} is an interactive chart of the Federal Public Key Infrastructure CAs, including cross-certified business communities.
 

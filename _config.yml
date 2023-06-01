@@ -90,61 +90,64 @@ primary_navigation:
 
 # Who FICAM is For? top level menu with dropdowns
   # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Get Started')
-  - name: Get Started
+  # - name: Changed 'Get Started' to 'Partners' (05/31/2023) per Babur/Joe
+  - name: Partners
     children:
       - name: Introduction
-        url: /who/
+        url: /partners/
       - name: Vendors
         url: /vendors/
       - name: Acquisition Professionals
         url: /acquisition-professionals/
       - name: Program Managers
         url: /program-managers/
+      # Below show in Partner sidenav
       # - name: Trust Services
-      #   url: /who/trust-services/
+      #   url: /partners/trust-services/
       # - name: GSA ICAM Solutions
-      #   url: /who/icamsolutions/
+      #   url: /partners/icamsolutions/
       # - name: Procurements
-      #   url: /who/procure/
+      #   url: /partners/procure/
       # - name: Training
-      #   url: /who/train/
+      #   url: /partners/train/
       # - name: Lessons Learned
-      #   url: /who/lessonslearned/
+      #   url: /partners/lessonslearned/
       # - name: Standards
-      #   url: /who/standards/
+      #   url: /partners/standards/
       # - name: Technical Leads and Team Members
-      #   url: /who/technical-leads-and-team-members/
+      #   url: /partners/technical-leads-and-team-members/
       # - name: PACS
-      #   url: /who/pacs/
+      #   url: /partners/pacs/
 
 # How to use FICAM top level menu with dropdowns
-  # - name: How to use FICAM (changed on 05-17-2023 per Babur/Joe) to 'Implementation Guides'
-  - name: Implement
+  # - name: How to use FICAM (changed on 05-17-2023 per Babur/Joe) to 'Implement Guides'
+  # - name: 05/22/2023 shortened to 'Implements', limited space in menu
+  - name: Implement 
     children:
       - name: Introduction
-        url: /how/
+        url: /implement/
       - name: Network Authentication
-        url: /how/network-authentication/
+        url: /implement/network-authentication/
       - name: Domain Controllers
-        url: /how/domain-controllers/
+        url: /implement/domain-controllers/
       - name: Trust Store
-        url: /how/trust-stores/
+        url: /implement/trust-stores/
       - name: Account Linking
-        url: /how/account-linking/
+        url: /implement/account-linking/
       - name: Group Policies and Enforcement
-        url: /how/group-policies/
+        url: /implement/group-policies/
       - name: Network Tuning
-        url: /how/network-tuning/
+        url: /implement/network-tuning/
       - name: Local Certification Authority
-        url: /how/certificate-authority/
+        url: /implement/certificate-authority/
       - name: Authentication Assurance
-        url: /how/authentication-assurance/
+        url: /implement/authentication-assurance/
       - name: PIV Authentication on macOS
-        url: /how/piv-athentication-macos/
+        url: /implement/piv-athentication-macos/
       - name: Troubleshooting PIV Logon
-        url: /how/troubleshooting/ 
+        url: /implement/troubleshooting/ 
       # - name: Windows Domain Account Pairing
-      #   url: /how/windows-domain-pairing/ 
+      #   url: /implement/windows-domain-pairing/ 
 
   # GSA PKI Shared Service Provider Program Guide Tope Level Menu
   - name: SSP
@@ -218,12 +221,12 @@ collections:
   arch:
     output: true
     permalink: /arch/:path/
-  how:
+  implement:
     output: true
-    permalink: /how/:path/
-  who:
+    permalink: /implement/:path/
+  partners:
     output: true
-    permalink: /who/:path/
+    permalink: /partners/:path/
   university:
     output: true
     permalink: /university/:path/   
