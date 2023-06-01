@@ -126,26 +126,26 @@ primary_navigation:
     children:
       - name: Introduction
         url: /implement/
-      - name: Network Authentication
-        url: /implement/network-authentication/
-      - name: Domain Controllers
-        url: /implement/domain-controllers/
-      - name: Trust Store
-        url: /implement/trust-stores/
-      - name: Account Linking
-        url: /implement/account-linking/
-      - name: Group Policies and Enforcement
-        url: /implement/group-policies/
-      - name: Network Tuning
-        url: /implement/network-tuning/
-      - name: Local Certification Authority
-        url: /implement/certificate-authority/
-      - name: Authentication Assurance
-        url: /implement/authentication-assurance/
+      # - name: Network Authentication
+      #   url: /implement/network-authentication/
+      # - name: Domain Controllers
+      #   url: /implement/domain-controllers/
+      # - name: Trust Store
+      #   url: /implement/trust-stores/
+      # - name: Account Linking
+      #   url: /implement/account-linking/
+      # - name: Group Policies and Enforcement
+      #   url: /implement/group-policies/
+      # - name: Network Tuning
+      #   url: /implement/network-tuning/
+      # - name: Local Certification Authority
+      #   url: /implement/certificate-authority/
+      # - name: Authentication Assurance
+      #   url: /implement/authentication-assurance/
       - name: PIV Authentication on macOS
         url: /implement/piv-athentication-macos/
-      - name: Troubleshooting PIV Logon
-        url: /implement/troubleshooting/ 
+      # - name: Troubleshooting PIV Logon
+      #   url: /implement/troubleshooting/ 
       # - name: Windows Domain Account Pairing
       #   url: /implement/windows-domain-pairing/ 
 
