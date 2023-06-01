@@ -162,7 +162,7 @@
   authored-by:
     - *FPKIPA
 - &M1917
-  type: Law
+  type: Policy
   shortName: "M-19-17"
   longName: "OMB Memo 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management"
   description: "This memorandum sets forth the Federal Government's1 Identity, Credential, and Access Management (ICAM) policy"
@@ -206,5 +206,14 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/06/M-19-19-Data-Centers.pdf"
   rescinds:
     - *M1619
+  authored-by:
+    - *OMB
+- &A130
+  type: Policy
+  shortName: "OMB Circular A-130"
+  longName: "CIRCULAR NO. A-130 - Managing Information as a Strategic Resource"
+  description: "This Circular is designed to help drive the transformation of the Federal Government and the way it builds, buys, and delivers technology by institutionalizing more agile approaches intended to facilitate the rapid adoption of changing technologies, in a way that enhances information security, privacy, and management of information resources across all Federal programs and services."
+  published: 2016-07-28
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
   authored-by:
     - *OMB
