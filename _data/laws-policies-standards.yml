@@ -6,6 +6,12 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
+- &GSA
+  type: Authority
+  shortName: "GSA"
+  longName: "General Services Administration"
+  description: "Mission: To deliver the best customer experience and value in real estate, acquisition, and technology services to the government and the American people."
+  externalURL: "https://www.gsa.gov"
 - &OMB
   type: "Authority"
   shortName: "OMB"
@@ -188,6 +194,8 @@
   authorized-by:
     - *M1917
     - *FCP
+  implemented-by:
+    - *GSA
 - &M1619
   type: Policy
   shortName: M-16-19
