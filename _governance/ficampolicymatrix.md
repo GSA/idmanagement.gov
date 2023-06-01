@@ -66,4 +66,4 @@ This table lists activities and programs supporting ICAM for the federal governm
 
 | Activity/Program Name | Operated By | Categories |
 | --- | --- | --- | {% for document in site.data.laws-policies-standards %} {% if document.type == "Program" %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.implemented-by}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.implemented-by.shortName}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
