@@ -52,6 +52,8 @@ arch:
 implement:
   - text: Introduction
     href: /implement/
+    text: Phishing-Resistant Authenticator
+    href: /implement/phishing-resistant-authenticators/
   - text: Network Authentication
     href: /implement/network-authentication/
   - text: Domain Controllers
@@ -74,6 +76,8 @@ implement:
     href: /implement/troubleshooting/  
   - text: Configure Outlook for Secure Email
     href: /implement/outlook/
+  - text: Introduction to PIV Engineering Guides
+    href: /implement/engineering/ 
   - text: Introduction to PIV Engineering Guides
     href: /implement/engineering/ 
 
