@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
 
 - &NIST
-  type: "Agency"
+  type: "Authority"
   shortName: "NIST"
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
 - &OMB
-  type: "Agency"
+  type: "Authority"
   shortName: "OMB"
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
@@ -73,7 +73,7 @@
   description: "An Act: To enhance the management and promotion of electronic Government services and processes by establishing a Federal Chief Information Officer within the Office of Management and Budget, and by establishing a broad framework of measures that require using Internet-based information technology to enhance citizen access to Government information and services, and for other purposes."
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf"
 - &CIOCOUNCIL
-  type: "Agency"
+  type: "Authority"
   shortName: "Federal CIO Council"
   longName: "Federal CIO Council"
   description: "The Federal CIO Council is the principal interagency forum to improve agency practices related to the design, acquisition, development, modernization, sustainment, use, sharing, and performance of Federal Government information technology (IT)."
@@ -81,7 +81,7 @@
   authorized-by:
     - *EGOV2002
 - &CISOCOUNCIL
-  type: "Agency"
+  type: "Authority"
   shortName: "Federal CISO Council"
   longName: "Federal CISO Council"
   description: "The Federal Chief Information Security Officer (CISO) Council is the primary body for inter-agency CISO collaboration and communication. The Council is led by the Federal CISO, who works in the White House Office of Management and Budget (OMB), and a co-chair who's a member of the Council, elected to serve in that role."
@@ -89,7 +89,7 @@
   subgroup-of:
     - *CIOCOUNCIL
 - &ICAMSC
-  type: "Agency"
+  type: "Authority"
   shortName: "ICAMSC"
   longName: "Identity, Credential, and Access Management Subcommittee"
   description: "The Identity, Credential, and Access Management Subcommittee (ICAMSC) is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management."
@@ -122,7 +122,7 @@
   authored-by:
     - *ICAMSC
 - &FPKIPA
-  type: "Agency"
+  type: "Authority"
   shortName: "FPKI PA"
   longName: "Federal Public Key Infrastructure Policy Authority"
   subgroup-of:
