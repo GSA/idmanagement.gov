@@ -102,6 +102,10 @@
             "rescinds": {
                 "description": "The previous document that this document rescinds",
                 "type": "array"
+            },
+            "amends": {
+                "description": "The previous document that this document amends",
+                "type": "array"
             }
         }
     }
