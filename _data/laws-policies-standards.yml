@@ -134,6 +134,8 @@
   description: "The FBCA exists to facilitate trusted electronic business transactions for Federal organizations. To facilitate the missions of the organizations, interoperability is offered to non-Federal entities."
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf"
+  scope:
+    - Workforce Identity
   ficam-services:
     - "Identity Management: Identity Proofing"
     - "Credential Management: Generation & Issuance"
@@ -148,6 +150,8 @@
   description: "The scope of this U.S. Federal PKI Common Policy Framework CP includes the Certification Authorities used for issuing and managing certificates that are valid to the Federal Common Policy CA on behalf of federal executive branch agencies. This CP applies to certificates issued to CAs, devices, and federal employees, contractors and other affiliated personnel."
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf"
+  scope:
+    - Workforce Identity
   ficam-services:
     - "Identity Management: Identity Proofing"
     - "Credential Management: Generation & Issuance"
@@ -155,6 +159,21 @@
     - "Federation: Policy Alignment"
   authored-by:
     - *FPKIPA
+- &M1917
+  type: Law
+  shortName: "M-19-17"
+  longName: "OMB Memo 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management"
+  description: "This memorandum sets forth the Federal Government's1 Identity, Credential, and Access Management (ICAM) policy"
+  published: 2019-05-21
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf"
+  scope:
+    - Workforce Identity
+    - Public Identity
+  ficam-services:
+    - "Identity Management: Identity Proofing"
+    - "Credential Management: Generation & Issuance"
+    - "Credential Management: Revocation"
+    - "Federation: Policy Alignment"
 - &PKISSP
   type: "Program"
   shortName: "PKI SSP"
@@ -164,3 +183,26 @@
   ficam-services:
     - "Credential Management: Generation & Issuance"
     - "Credential Management: Revocation"
+  authorized-by:
+    - *M1917
+    - *FCP
+- &M1619
+  type: Policy
+  shortName: M-16-19
+  longName: "OMB Memo 16-19: Data Center Optimization Initiative (DCOI)"
+  description: "This memorandum defines a framework for achieving the data center consolidation and optimization requirements of FITARA, the criteria for successful agency data center strategies, and the metrics OMB OFCIO will use to evaluate the success of those strategies"
+  published: 2016-08-01
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m_16_19_1.pdf"
+  authored-by:
+    - *OMB
+- &M1919
+  type: Policy
+  shortName: M-19-19
+  longName: "OMB Memo 19-19: Update to Data Center Optimization Initiative (DCOI)"
+  description: "This Memorandum contains requirements for the consolidation and optimization of Federal data centers in accordance with FIT ARA. It establishes consolidation and optimization targets and metrics for Federal agencies, as well as requirements for reporting on their progress."
+  published: 2016-06-25
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/06/M-19-19-Data-Centers.pdf"
+  rescinds:
+    - *M1619
+  authored-by:
+    - *OMB
