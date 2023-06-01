@@ -15,10 +15,10 @@ why:
     href: /why/goals-and-objectives/
   # - text: Enabling Mission Delivery through Improved Identity, Credential, and Access  (named to make label in menu shorter)
   - text: Memorandum M-19-17
-    href: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf
+    href: /memorandum-19-17/
   # - text: Managing Information as a Strategic Resource (OMB Circular A-130) (renamed to make label in menu shorter)
   - text: OMB Circular A-130
-    href: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
+    href: /omb-circular-a130/
 
 ## New What secondary navigation 
 # Changed to arch to reflect top-level-menu name change to Architecture and to match what is on playbooks
@@ -76,8 +76,6 @@ implement:
     href: /implement/troubleshooting/  
   - text: Configure Outlook for Secure Email
     href: /implement/outlook/
-  - text: Introduction to PIV Engineering Guides
-    href: /implement/engineering/ 
   - text: Introduction to PIV Engineering Guides
     href: /implement/engineering/ 
 
