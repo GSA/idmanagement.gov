@@ -339,6 +339,8 @@
   authorized-by:
     - *FIPS201
     - *FCP
+  implemented-by:
+    - *GSA
 - &APL
   type: Guidance
   shortName: "FIPS APL"
@@ -361,9 +363,10 @@
   type: Program
   shortName: "Public Trust PKI"
   longName: "U.S. Federal Public Trust TLS PKI"
+  description: ""
   authorized-by:
     - *M1513
-  operated-by:
+  implemented-by:
     - *FPKIMA
 - &IAMROADMAP
   type: Guidance
