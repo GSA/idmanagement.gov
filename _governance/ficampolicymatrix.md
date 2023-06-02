@@ -9,20 +9,29 @@ sticky_sidenav: true
 subnav:
   - text: Introduction
     href: '#introduction'
-  - text: Policy Matrix
-    href: '#policy-matrix'
-  - text: Policy Table
-    href: '#policy-table'
+  - text: Policy Overview
+    href: '#policy-overview'
+  - text: Laws and Directives
+    href: '#laws-and-directives'
+  - text: Federal Policies
+    href: '#federal-policies'
+  - text: Federal Technical Guidance
+    href: '#federal-technical-guidance'
+  - text: ICAM Activities and Programs
+    href: '#icam-activities-and-programs'
 ---
 
 ## Introduction
 
 Laws, executive policies, regulations, and government standards drive multiple federal initiatives related to Federal Identity, Credential and Access Management. IATAD maintains this policy matrix to map delegations and authorities. ICAM Partners can use this matrix to understand the origins and ultimate authority of ICAM initiatives.
 
-* [Policy Matrix](#policy-matrix)
-* [Policy Table](#policy-table)
+* [Policy Overview](#policy-overview)
+* [Laws and Directives](#laws-and-directives)
+* [Federal Policies](#federal-policies)
+* [Federal Technical Guidance](#federal-technical-guidance)
+* [ICAM Activities and Programs](#icam-activities-and-programs)
 
-## Policy Matrix
+## Policy Overview
 
 This diagram presents a visual overview of the FICAM Policy landscape.
 
@@ -60,7 +69,7 @@ This table lists Technical Guidance published under ICAM. The provide technical 
 | --- | --- | --- | {% for document in site.data.laws-policies-standards %} {% if document.type == "Guidance" %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
 
-## Federal Activities and Programs
+## ICAM Activities and Programs
 
 This table lists activities and programs supporting ICAM for the federal government. These programs support the use of FICAM by federal agencies.
 
