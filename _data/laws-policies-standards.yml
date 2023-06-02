@@ -262,7 +262,7 @@
   shortName: "GRPA Modernization Act of 2010"
   longName: "The Government Performance and Results Modernization Act of 2010"
   description: "An Act to require quarterly performance assessments of Government programs for purposes of assessing agency performance and improvement, and to establish agency performance improvement officers and the Performance Improvement Council."
-  date: 2011-01-04
+  published: 2011-01-04
   externalURL: "https://www.congress.gov/111/plaws/publ352/PLAW-111publ352.pdf"
 - &PMA
   type: Law
@@ -363,7 +363,7 @@
   type: Program
   shortName: "Public Trust PKI"
   longName: "U.S. Federal Public Trust TLS PKI"
-  description: ""
+  description: "The scope of the U.S. Federal Public Trust TLS PKI includes the Certification Authorities used for issuing and managing Transport Layer Security (TLS) certificates for U.S. Federal Government services."
   authorized-by:
     - *M1513
   implemented-by:
