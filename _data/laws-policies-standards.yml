@@ -330,3 +330,22 @@
   description: "The purpose of the tiger team will be to analyze FPKI policies and evaluate cloud offerings in order to make a feasibility recommendation to the CPWG on if and what FPKI components can be migrated to the cloud without impacting trust."
   subgroup-of:
     - *CPWG
+- &FIPSLAB
+  type: Program
+  shortName: "FICAM testing program"
+  longName: "Federal Information Processing Standard 201 (FIPS 201) Evaluation Program"
+  description: "The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes called the FICAM Testing Program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs)."
+  externalURL: "https://www.idmanagement.gov/fips201/"
+  authorized-by:
+    - *FIPS201
+    - *FCP
+- &APL
+  type: Guidance
+  shortName: "FIPS APL"
+  longName: "FIPS 201 Approved Products List"
+  description: "The Approved Products List (APL) contains the official list of tested products."
+  externalURL: "https://www.idmanagement.gov/buy/#products"
+  authored-by:
+    - *FIPSLAB
+  authorized-by:
+    - *FIPS201
