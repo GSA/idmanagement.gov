@@ -268,21 +268,10 @@
   type: Law
   shortName: "PMA"
   longName: "President's Management Agenda"
-  description: "The President’s Management Agenda (PMA) defines Government-wide management priorities for all Federal agencies to improve how Government operates and performs."
+  description: "The President's Management Agenda (PMA) defines Government-wide management priorities for all Federal agencies to improve how Government operates and performs."
   externalURL: "https://www.performance.gov/"
   authorized-by:
     - *GPRA2010
-- &M1916
-  type: Policy
-  shortName: "M-19-16"
-  longName: "OMB Memo 19-16: Centralized Mission Support Capabilities for the Federal Government"
-  description: "This memorandum describes the process and desired outcomes for shared services"
-  published: 2019-04-26
-  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *PMA
 - &M1604
   type: Policy
   shortName: "M-16-04"
@@ -294,3 +283,50 @@
     - *OMB
   authorized-by:
     - *FISMA2014
+- &M1916
+  type: Policy
+  shortName: "M-19-16"
+  longName: "OMB Memo 19-16: Centralized Mission Support Capabilities for the Federal Government"
+  description: "This memorandum describes the process and desired outcomes for shared services"
+  published: 2019-04-26
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *PMA
+  rescinds:
+    - *M1604
+- &FEDCLOUD
+  type: Policy
+  shortName: "Federal Cloud Computing Strategy"
+  longName: "Federal Cloud Computing Strategy"
+  description: "The new strategy is founded on three key pillars of successful cloud adoption: security, procurement, and workforce. Collectively, these elements embody the interdisciplinary approach to IT modernization that the Federal enterprise needs in order to provide improved return on its investments, enhanced security, and higher quality services to the American people."
+  published: 2019-06-01
+  externalURL: "https://cloud.cio.gov/strategy/"
+  authored-by:
+    - &CIOCOUNCIL
+- &M1611
+  type: Policy
+  shortName: "M-16-11"
+  longName: "OMB Memo 16-11: Improving Administrative Functions Through Shared Services"
+  description: "A consistent enterprise-wide strategy to administrative shared services is a critical step in creating a more effective and efficient government."
+  published: 2016-05-04
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m-16-11.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *FISMA2014
+- &CPWG
+  type: Authority
+  shortName: "CPWG"
+  longName: "Certificate Policy Working Group"
+  description: "Reviews cross-certification applications, Certificate Policies, Certificate Policy change proposals, auditor reports of entities applying for or seeking to maintain cross-certification with the FPKI, and provides recommendations to the PA for acceptance or rejection of those items. The CPWG also reviews FPKI administrative and guidance documents and recommends changes to those documents as needed."
+  subgroup-of:
+    - *FPKIPA
+- &CLOUDTT
+  type: Authority
+  shortName: "CPWG Cloud Tiger Team"
+  longName: "Federal Certificate Policy Working Group Cloud Tiger Team"
+  description: "The purpose of the tiger team will be to analyze FPKI policies and evaluate cloud offerings in order to make a feasibility recommendation to the CPWG on if and what FPKI components can be migrated to the cloud without impacting trust."
+  subgroup-of:
+    - *CPWG
