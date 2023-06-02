@@ -492,3 +492,14 @@
   externalURL: "https://www.idmanagement.gov/docs/archived/fpki-pivi-for-issuers.pdf"
   authored-by:
     - *CIOCOUNCIL
+- &PIVPRIV
+  type: Guidance
+  shortName: "PIV Privileged User Guide"
+  longName: "Best Practices for Privileged User PIV Authentication"
+  description: "This white paper further explains the need for multi-factor PIV-based user authentication to take the place of password-based single-factor authentication for privileged users. It also provides best practices for agencies implementing PIV authentication for privileged users"
+  published: 2016-04-21
+  externalURL: "https://doi.org/10.6028/NIST.CSWP.04212016"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1604
