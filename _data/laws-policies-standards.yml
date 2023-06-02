@@ -304,7 +304,7 @@
   published: 2019-06-01
   externalURL: "https://cloud.cio.gov/strategy/"
   authored-by:
-    - &CIOCOUNCIL
+    - *CIOCOUNCIL
 - &M1611
   type: Policy
   shortName: "M-16-11"
