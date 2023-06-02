@@ -24,16 +24,13 @@ layout: default
 {% endif %}
 
 {% if page.published %}
-
 {% if page.published | date: "%m%d" > 1001 %}
 {% assign FY = page.published | date: "%Y" + 1 %}
 {% else %}
 {% assign FY = page.published | date: "%Y" %}
 {% endif %}
-
 <p><b>Publication Date:</b> {{page.published}}</p>
 <p><b>Fiscal Year:</b> {{ FY }}</p>
-
 {% endif %}
 
 {% if page.authorized-by | size > 0 %}
@@ -56,6 +53,10 @@ layout: default
 </p>
 {% endif %}
 
+{% if page.description %}
 <p> <b>Description:</b> {{page.description}}</p>
+{% endif %}
 
+{% if page.externalURL %}
 <p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
+{% endif %}
