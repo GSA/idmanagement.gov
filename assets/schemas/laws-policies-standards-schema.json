@@ -106,6 +106,10 @@
             "amends": {
                 "description": "The previous document that this document amends",
                 "type": "array"
+            },
+            "operated-by": {
+                "description": "The authority that operates the program",
+                "type": "array"
             }
         }
     }
