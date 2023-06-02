@@ -390,3 +390,25 @@
     - *M1917
     - *FISMA2014
     - *A130
+- &SP800116
+  type: Guidance
+  shortName: "NIST SP 800-116"
+  longName: "NIST Special Publication SP 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access"
+  description: "This recommendation provides a technical guideline to use Personal Identity Verification (PIV) Cards in facility access; enabling federal agencies to operate as government-wide interoperable enterprises."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+    - *A130
+- &SP80087
+  type: Guidance
+  shortName: "NIST SP 800-87"
+  longName: "NIST Special Publication SP 800-87: Codes for Identification of Federal and Federally-Assisted Organizations"
+  description: "This document provides the organizational codes for federal agencies to establish the Federal Agency Smart Credential Number (FASC-N) that is required to be included in the FIPS 201 Card Holder Unique Identifier. SP 800-87 is a companion document to FIPS 201."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-87/rev-2/final"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FIPS201
+    - *HSPD12
