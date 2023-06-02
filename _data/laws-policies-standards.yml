@@ -433,6 +433,7 @@
   longName: "NIST Special Publication 800-73-4: Interfaces for Personal Identity Verification"
   description: "This document, SP 800-73, contains the technical specifications to interface with the smart card to retrieve and use the PIV identity credentials."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-73/4/final"
+  published: 2016-02-12
   authored-by:
     - *NIST
   authorized-by:
