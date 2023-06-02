@@ -484,3 +484,11 @@
     - *FIPS201
     - *SP80073
     - *SP80076
+- &PIVIFORISSUERS
+  type: Guidance
+  shortName: "PIV-I for Issuers"
+  longName: "Personal Identity Verification Interoperability For Issuers"
+  description: "This document provides the guidance needed to assist both Federal Issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials in achieving credential interoperability with the Federal Government PIV infrastructure."
+  externalURL: "https://www.idmanagement.gov/docs/archived/fpki-pivi-for-issuers.pdf"
+  authored-by:
+    - *CIOCOUNCIL
