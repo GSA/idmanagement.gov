@@ -124,7 +124,7 @@ primary_navigation:
   # - name: 05/22/2023 shortened to 'Implements', limited space in menu
   - name: Implement 
     children:
-      - name: PIV implementations
+      - name: PIV Implementations
         url: /implement/
       # Commented out on (06/01/2023) per Babur/Joe, 
       # - name: Network Authentication

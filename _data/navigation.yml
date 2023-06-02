@@ -52,8 +52,6 @@ arch:
 implement:
   - text: Introduction
     href: /implement/
-    text: Phishing-Resistant Authenticator
-    href: /implement/phishing-resistant-authenticators/
   - text: Network Authentication
     href: /implement/network-authentication/
   - text: Domain Controllers
@@ -296,7 +294,7 @@ acquisition:
     href: /approved-products-list-piv/
   - text: Approved Product List - PACS
     href: /approved-products-list-pacs-products/ 
-  - name: PACS Awaiting Approval
+  - text: PACS Awaiting Approval
     href: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
   - text: Removed Product List 
     href: /removed-products-list/ 
@@ -317,9 +315,15 @@ program:
 ssp:
   - text: Overview
     href: /ssp/
-  - text: Download PDF
-    href: /docs/roadmap-ficam.pdf
+  # Asked by Babur to remove(Sprint 8)
+  # - text: Download PDF
+  #   href: /docs/roadmap-ficam.pdf
 
+# Phishing Resistant Authenticator Sidenav
+# Added: 06/02/2023
+phishing: 
+  - text: Phishing-Resistant Authenticator Criteria
+    href: /implement/phishing-resistant-authenticators/
 
 # Brought in from Playbooks site
 pm:

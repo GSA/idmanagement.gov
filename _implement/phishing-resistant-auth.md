@@ -4,7 +4,7 @@ collection: implement
 title: FICAM Phishing-Resistant Authenticator Product Category Criteria
 permalink: /implement/phishing-resistant-authenticators/
 sticky_sidenav: true
-sidenav: implement
+sidenav: phishing 
 
 version: 1.5
 pubDate1: April 2023
@@ -77,7 +77,7 @@ The GSA IATAD will use existing resources to verify vendor submissions. The anti
 is low based on an initial vendor market review.
 
 1. Application – The application is posted on idmanagement.gov and manually submitted to
-the IATAD through the [icam@gsa.gov](icam@gsa.gov) email. The vendor enters into an agreement with
+the IATAD through the [icam@gsa.gov](mailto:icam@gsa.gov) email. The vendor enters into an agreement with
 GSA based on the FIPS 201 Evaluation Program Vendor Agreement outlining roles and
 responsibilities for product listing, however, third-party criteria will be used for vetting.
 

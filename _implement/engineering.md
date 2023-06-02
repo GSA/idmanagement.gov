@@ -8,9 +8,10 @@ sidenav: implement
 
 subnav:
   - text: Configure Firefox
-    href: /implement/engineer-firefox
+    href: /implement/engineer-firefox/
   - text: Enable SSH
     href: /implement/engineer-ssh/
+    
 ---
 
 PIV Engineering Guides are for engineers configuring agency infrastructure, servers, and enterprise applications for authentication. The guides are focused on U.S. federal government implementations. 
