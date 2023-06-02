@@ -374,6 +374,7 @@
   longName: "National Institute of Standards and Technology Identity and Access Management Roadmap"
   description: "[A] roadmap for developing new and updating existing NIST guidance related to Identity and Access Management (ICAM)."
   externalURL: "https://www.nist.gov/identity-access-management/identity-and-access-management-roadmap"
+  published: 2023-04-21
   authored-by:
     - *NIST
   authorized-by:
@@ -384,6 +385,7 @@
   longName: "NIST Special Publication 800-63-3: Digital Identity Guidelines"
   description: "These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. The guidelines cover identity proofing and authentication of users (such as employees, contractors, or private individuals) interacting with government IT systems over open networks. They define technical requirements in each of the areas of identity proofing, registration, authenticators, management processes, authentication protocols, federation, and related assertions."
   externalURL: "https://pages.nist.gov/800-63-4/sp800-63/abstract/"
+  published: 2020-03-22
   authored-by:
     - *NIST
   authorized-by:
@@ -396,6 +398,7 @@
   longName: "NIST Special Publication 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access"
   description: "This recommendation provides a technical guideline to use Personal Identity Verification (PIV) Cards in facility access; enabling federal agencies to operate as government-wide interoperable enterprises."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final"
+  published: 2018-07-29
   authored-by:
     - *NIST
   authorized-by:
@@ -407,6 +410,7 @@
   longName: "NIST Special Publication 800-87: Codes for Identification of Federal and Federally-Assisted Organizations"
   description: "This document provides the organizational codes for federal agencies to establish the Federal Agency Smart Credential Number (FASC-N) that is required to be included in the FIPS 201 Card Holder Unique Identifier. SP 800-87 is a companion document to FIPS 201."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-87/rev-2/final"
+  published: 2018-04-19
   authored-by:
     - *NIST
   authorized-by:
@@ -418,6 +422,7 @@
   longName: "NIST Special Publication 800-96: PIV Card to Reader Interoperability Guidelines"
   description: "The purpose of this document is to present recommendations for Personal Identity Verification (PIV) card readers in the area of performance and communications characteristics to foster interoperability."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-96/final"
+  published: 2006-12-29
   authored-by:
     - *NIST
   authorized-by:
@@ -438,6 +443,7 @@
   longName: "NIST Special Publication 800-79-2: Guidelines for the Authorization of Personal Identity Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)"
   description: "The purpose of this SP is to provide appropriate and useful guidelines for assessing the reliability of issuers of PIV Cards and Derived PIV Credentials."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-79/2/final"
+  published: 2016-02-12
   authored-by:
     - *NIST
   authorized-by:
@@ -448,6 +454,7 @@
   longName: "NIST Special Publication 800-85B: PIV Data Model Test Guidelines"
   description: "In order to build the necessary PIV infrastructure to support common unified processes and government-wide use of identity credentials, NIST developed this test guidance document that ensures interoperability of PIV data."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-85b/final"
+  published: 2006-07-31
   authored-by:
     - *NIST
   authorized-by:
@@ -458,6 +465,7 @@
   longName: "NIST Special Publication 800-157: Guidelines for Derived Personal Identity Verification (PIV) Credentials"
   description: "This recommendation provides technical guidelines for the implementation of standards-based, secure, reliable, interoperable public key infrastructure (PKI) based identity credentials that are issued by Federal departments and agencies to individuals who possess and prove control over a valid PIV Card."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-157/final"
+  published: 2014-12-19
   authored-by:
     - *NIST
   authorized-by:
@@ -468,6 +476,7 @@
   longName: "NIST Special Publication 800-76-2: Biometric Specifications for Personal Identity Verification"
   description: "This document [...] describes technical acquisition and formatting specifications for the PIV system, including the PIV Card itself. It also establishes minimum accuracy specifications for deployed biometric authentication processes."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-76/2/final"
+  published: 2013-07-11
   authored-by:
     - *NIST
   authorized-by:
@@ -478,6 +487,7 @@
   longName: "NIST Special Publication 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification"
   description: "This document contains the technical specifications needed for the mandatory and optional cryptographic keys specified in FIPS 201-2 as well as the supporting infrastructure specified in FIPS 201-2 and the related NIST Special Publication 800-73-4, Interfaces for Personal Identity Verification [SP800-73], and NIST SP 800-76-2, Biometric Specifications for Personal Identity Verification [SP800-76], that rely on cryptographic functions."
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-78/4/final"
+  published: 2015-05-29
   authored-by:
     - *NIST
   authorized-by:
@@ -490,6 +500,7 @@
   longName: "Personal Identity Verification Interoperability For Issuers"
   description: "This document provides the guidance needed to assist both Federal Issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials in achieving credential interoperability with the Federal Government PIV infrastructure."
   externalURL: "https://www.idmanagement.gov/docs/archived/fpki-pivi-for-issuers.pdf"
+  published: 2017-07-27
   authored-by:
     - *CIOCOUNCIL
 - &PIVPRIV
