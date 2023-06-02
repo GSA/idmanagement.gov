@@ -349,3 +349,41 @@
     - *FIPSLAB
   authorized-by:
     - *FIPS201
+- &FPKIMA
+  type: Authority
+  shortName: "FPKIMA"
+  longName: "Federal PKI Management Authority"
+  description: "The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service."
+  externalURL: "https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority"
+  subgroup-of:
+    - *FPKIPA
+- &PUBLICTRUSTPKI
+  type: Program
+  shortName: "Public Trust PKI"
+  longName: "U.S. Federal Public Trust TLS PKI"
+  authorized-by:
+    - *M1513
+  operated-by:
+    - *FPKIMA
+- &IAMROADMAP
+  type: Guidance
+  shortName: "NIST IAM Roadmap"
+  longName: "National Institute of Standards and Technology Identity and Access Management Roadmap"
+  description: "[A] roadmap for developing new and updating existing NIST guidance related to Identity and Access Management (ICAM)."
+  externalURL: "https://www.nist.gov/identity-access-management/identity-and-access-management-roadmap"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+- &SP80063
+  type: Guidance
+  shortName: "NIST SP 800-63"
+  longName: "NIST Special Publication 800-63-3: Digital Identity Guidelines"
+  description: "These guidelines provide technical requirements for federal agencies implementing digital identity services and are not intended to constrain the development or use of standards outside of this purpose. The guidelines cover identity proofing and authentication of users (such as employees, contractors, or private individuals) interacting with government IT systems over open networks. They define technical requirements in each of the areas of identity proofing, registration, authenticators, management processes, authentication protocols, federation, and related assertions."
+  externalURL: "https://pages.nist.gov/800-63-4/sp800-63/abstract/"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+    - *FISMA2014
+    - *A130
