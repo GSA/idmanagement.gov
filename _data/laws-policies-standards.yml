@@ -643,5 +643,35 @@
   authorized-by:
     - *EO13587
     - *INSIDERTHREAT
-
-
+- &USACCESS
+  type: Program
+  shortName: "US Access"
+  longName: "Federal Credentialing Services"
+  description: >
+    Through our program you can:
+    Enroll applicants; activate, manage, suspend, reprint, or revoke cards; and manage appointments and sponsorship.
+    Confirm identity using biometric verification and combine applicants' biographic information, fingerprint templates, and PINs.
+    Use digital certificates for credential authentication, identity, email signing and encryption.
+    Access NIST-compliant secure system with high availability and disaster recovery capabilities.
+    Generate reports to track the progress on credentialing applicants or shipments of credentials.
+    Get simplified, affordable, per-credential support to help you manage the full lifecycle.
+    Reduce costs and effort by leveraging the collective buying power of the government and spreading infrastructure costs among all USAccess Program shareholders.
+  externalURL: "https://www.gsa.gov/technology/technology-purchasing-programs/federal-credentialing-services"
+  authorized-by:
+    - *M1916
+    - *M1604
+  operated-by:
+    - *GSA
+- &LOGINGOV
+  type: Program
+  shortName: "Login.gov"
+  longName: "Login.gov"
+  description: >
+    Login.gov is a secure sign in service used by the public to sign in to participating government agencies. 
+    Participating agencies will ask you to create a Login.gov account to securely access your information on 
+    their website or application.
+  externalURL: "https://www.login.gov/"
+  authorized-by:
+    - *M1611
+  operated-by:
+    - *GSA
