@@ -660,7 +660,7 @@
   authorized-by:
     - *M1916
     - *M1604
-  operated-by:
+  implemented-by:
     - *GSA
 - &LOGINGOV
   type: Program
@@ -673,5 +673,5 @@
   externalURL: "https://www.login.gov/"
   authorized-by:
     - *M1611
-  operated-by:
+  implemented-by:
     - *GSA
