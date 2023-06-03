@@ -508,10 +508,79 @@
   type: Guidance
   shortName: "PIV Privileged User Guide"
   longName: "Best Practices for Privileged User PIV Authentication"
-  description: "This white paper further explains the need for multi-factor PIV-based user authentication to take the place of password-based single-factor authentication for privileged users. It also provides best practices for agencies implementing PIV authentication for privileged users"
+  description: >
+    This white paper further explains the need for multi-factor PIV-based user authentication to take the place of password-based 
+    single-factor authentication for privileged users. It also provides best practices for agencies implementing PIV authentication 
+    for privileged users
   published: 2016-04-21
   externalURL: "https://doi.org/10.6028/NIST.CSWP.04212016"
   authored-by:
     - *NIST
   authorized-by:
     - *M1604
+- &NSD42
+  type: Law
+  shortName: "National Security Directive 42"
+  longName: "National Policy for the Security of National Security Telecommunications and Information Systems"
+  description: >
+    This Directive establishes initial objectives, policies, and an organizational structure to guide the conduct of activities to 
+    secure national security systems from exploitation; establishes a mechanism for policy development and dissemination; and assigns 
+    responsibilities for implementation.
+  published: 1990-07-05
+  externalURL: "https://www.nsa.gov/Portals/75/nsd42_pdf.pdf"
+- &EO13231
+  type: Law
+  shortName: "EO 13231"
+  longName: "Executive Order 13231: Critical Infrastructure Protection in the Information Age"
+  description: >
+    To ensure protection of information systems for critical infrastructure, including emergency preparedness communications, 
+    and the physical assets that support such systems, in the information age
+  published: 2001-10-18
+- &EO13284
+  type: Law
+  shortName: "EO 13284"
+  longName: "Executive Order 13284: Amendment of Executive Orders, and Other Actions, in Connection With the Establishment of the Department of Homeland Security"
+  description: >
+    [T]o reflect responsibilities vested in the Secretary of Homeland Security and take other actions in connection with the 
+    establishment of the Department of Homeland Security"
+  published: 2003-01-28
+  amends:
+    - *13231
+- &CNSS
+  type: Authority
+  shortName: "CNSS"
+  longName: "Committee on National Security Systems"
+  description: Provide systems security guidance for national security systems to Executive departments and agencies
+  authorized-by:
+    - *NSD42
+    - *EO13231
+    - *EO13284
+- &EO13356
+  type: Law
+  shortName: "EO 13356"
+  longName: "Executive Order 13356: Strengthening the Sharing of Terrorism Information To Protect Americans"
+  description: >
+    [T]o further strengthen the effective conduct of United States intelligence activities and protect the territory, people, 
+    and interests of the United States of America, including against terrorist attacks
+  published: 2004-09-01
+- &EO13388
+  type: Law
+  shortName: "EO 13388"
+  longName: "Executive Order 13388: Further Strengthening the Sharing of Terrorism Information To Protect Americans"
+  description: >
+    [T]o further strengthen the effective conduct of United States counterterrorism activities and protect the territory, people, 
+    and interests of the United States of America, including against terrorist attacks
+  published: 2005-10-27
+  amends:
+    - *EO13356
+- &INTELREFORM2004
+  type: Law
+  shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
+  longName: "INTELLIGENCE REFORM AND TERRORISM PREVENTION ACT OF 2004"
+  description: >
+    An act to reform the intelligence community and the intelligence and intelligence-related
+    activities of the United States Government, and for other purposes.
+  published: 2004-12-17
+  
+
+
