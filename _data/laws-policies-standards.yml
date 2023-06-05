@@ -769,7 +769,4 @@
   published: 2016-03-02
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/memo-issuing-piv-credentials-and-suspension-criteria.pdf"
   authored-by:
-    - *OMB 
-- &TEST
-  type: Policy
-  published: 2023-04-01
+    - *OMB
