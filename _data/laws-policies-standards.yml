@@ -675,3 +675,36 @@
     - *M1611
   implemented-by:
     - *GSA
+- &EO13467
+  type: Law
+  shortName: "EO 13467"
+  longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
+  description: >
+    [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
+    suitability for Government employment, contractor employee fitness, and eligibility for access to classified 
+    information, while taking appropriate account of title III of Public Law 108-458
+  published: 2008-06-30
+  externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
+- &SPRINGERMEMO
+  type: Policy
+  shortName: "Springer Memo"
+  longName: "Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12"
+  description: >
+    This memorandum provides final government-wide credentialing standards to be used by all 
+    Federal departments and agencies in determining whether to issue or revoke personal identity 
+    verification (PIV) cards to their employees and contractor personnel, including those who are 
+    non-United States citizens.
+  published: 2008-07-31
+  authorized-by:
+    - *EO13467
+  authored-by:
+    - *GSA
+- &EO13488
+  type: Law
+  shortName: "EO 13488"
+  longName: "Executive Order 13488: Granting Reciprocity on Excepted Service and Federal Contractor Employee Fitness and Reinvestigating Individuals in Positions of Public Trust"
+  description: >
+    [T]o simplify and streamline the system of Federal Government personnel investigative and 
+    adjudicative processes to make them more efficient and effective
+  published: 2009-01-22
+  externalURL: "https://www.federalregister.gov/documents/2009/01/22/E9-1574/granting-reciprocity-on-excepted-service-and-federal-contractor-employee-fitness-and-reinvestigating"
