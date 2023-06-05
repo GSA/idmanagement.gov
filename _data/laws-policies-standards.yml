@@ -17,7 +17,7 @@
   shortName: "OMB"
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
-  externalURL: "https://www.whitehouse.gov/omb/"ß
+  externalURL: "https://www.whitehouse.gov/omb/"
 - &HSPD12
   type: "Law"
   shortName: "HSPD-12"
@@ -747,7 +747,7 @@
   externalURL: "https://www.archives.gov/federal-register/codification/executive-order/10450.html"
 - &CSSCDM
   type: Policy
-  shortName: "Clerance Decision-Making Guide"
+  shortName: "Clearance Decision-Making Guide"
   longName: "INTRODUCTION OF CREDENTIALING, SUITABILITY, AND SECURITY CLEARANCE DECISION-MAKING GUIDE"
   description: >
     As a result of an initiative to create a more simplified system of Federal Government 
@@ -768,3 +768,8 @@
     classified information or assignment to a sensitive national security position.
   published: 2016-03-02
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/memo-issuing-piv-credentials-and-suspension-criteria.pdf"
+  authored-by:
+    - *OMB 
+- &TEST
+  type: Policy
+  published: 2023-04-01
