@@ -17,7 +17,7 @@
   shortName: "OMB"
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
-  externalURL: "https://www.whitehouse.gov/omb/"
+  externalURL: "https://www.whitehouse.gov/omb/"ß
 - &HSPD12
   type: "Law"
   shortName: "HSPD-12"
@@ -721,4 +721,50 @@
     Investigations Bureau (NBIB).
   published: 2019-04-24
   externalURL: "https://www.federalregister.gov/documents/2019/04/29/2019-08797/transferring-responsibility-for-background-investigations-to-the-department-of-defense"
-  
+- &NBIB
+  type: Authority
+  shortName: "NBIB"
+  longName: "National Background Investigations Bureau"
+  description: >
+    Through vetting, industry engagement, education, and counterintelligence and insider threat support, 
+    secure the trustworthiness of the United States Government's workforce, the integrity of its cleared 
+    contractor support, and the uncompromised nature of its technologies, services, and supply chains.
+  externalURL: "https://www.dcsa.mil/"
+- &EO10450
+  type: Law
+  shortName: "EO 10450"
+  longName: "Executive Order 10450: Security requirements for Government employment"
+  description: >
+    WHEREAS the interests of the national security require that all persons privileged to be employed in 
+    the departments and agencies of the Government, shall be reliable, trustworthy, of good conduct and 
+    character, and of complete and unswerving loyalty to the United States; and 
+    WHEREAS the American tradition that all persons should receive fair, impartial, and equitable 
+    treatment at the hands of the Government requires that all persons seeking the privilege of employment 
+    or privileged to be employed in the departments and agencies of the Government be adjudged by mutually 
+    consistent and no less than minimum standards and procedures among the departments and agencies 
+    governing the employment and retention in employment of persons in the Federal service
+  published: 1954-08-05
+  externalURL: "https://www.archives.gov/federal-register/codification/executive-order/10450.html"
+- &CSSCDM
+  type: Policy
+  shortName: "Clerance Decision-Making Guide"
+  longName: "INTRODUCTION OF CREDENTIALING, SUITABILITY, AND SECURITY CLEARANCE DECISION-MAKING GUIDE"
+  description: >
+    As a result of an initiative to create a more simplified system of Federal Government 
+    investigative and adjudicative procedures that applies to all persons, including contract 
+    personnel, who perform work on behalf of the government, we are providing the attached 
+    Credentialing, Suitability, and Security Clearance Decision-Making Guide.
+  published: 2008-01-14
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/decision-making-guide.pdf"
+- &PIVISSUANCESUSPENSION
+  type: Policy
+  shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
+  longName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
+  description: >
+    Accordingly, effective immediately, all Executive departments and agencies will apply both 
+    the basic and supplemental credentialing standards specified in the 2008 Credentialing Memo to
+    determine initial eligibility for a PIV credential of all personnel who require a PIV, but who are not 
+    otherwise subject to a suitability determination or a determination of eligibility for access to
+    classified information or assignment to a sensitive national security position.
+  published: 2016-03-02
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/memo-issuing-piv-credentials-and-suspension-criteria.pdf"
