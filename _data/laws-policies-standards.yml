@@ -770,3 +770,35 @@
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/memo-issuing-piv-credentials-and-suspension-criteria.pdf"
   authored-by:
     - *OMB
+- &PRIVACYACT1974
+  type: "Law"
+  shortName: "Privacy Act of 1974"
+  longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a"
+  description: >
+    This Act protects certain federal government records pertaining to individuals. 
+    In particular, the Act covers systems of records that an agency maintains and 
+    retrieves by an individual's name or other personal identifier, such as a Social 
+    Security Number.
+  published: 1974-12-31
+  externalURL: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section552a&num=0&edition=prelim"
+- &ESIGN2000
+  type: Law
+  shortName: "E-SIGN Act of 2000"
+  longName: "Electronic Signatures in Global and National Commerce Act"
+  description: >
+    This Act facilitates the use of electronic records and electronic signatures in interstate and 
+    foreign commerce by ensuring the validity and legal effect of electronic contracts.
+  published: 2000-06-30
+  externalURL: "https://www.govinfo.gov/content/pkg/USCODE-2021-title15/html/USCODE-2021-title15-chap96.htm"
+- &GPEA1998
+  type: Law
+  shortName: "Government Paperwork Elimination Act"
+  longName: "Government Paperwork Elimination Act"
+  description: >
+    This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit 
+    information or transact with the agency electronically when possible and to maintain records electronically when possible. 
+    This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, 
+    validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a 
+    range of electronic signature alternatives.
+  published: 1998-10-21
+  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
