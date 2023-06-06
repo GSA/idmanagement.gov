@@ -36,8 +36,9 @@ layout: default
 {% if page.authorized-by | size > 0 %}
 <p>Authorized by:<br>
     {% for reference in page.authorized-by %}
-    <a
-        href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">{{reference.shortName}}</a>
+    <a href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
+        {{reference.shortName}}
+    </a>
     <br />
     {% endfor %}
 </p>
