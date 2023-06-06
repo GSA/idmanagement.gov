@@ -46,10 +46,10 @@
 - orderNumber: 3
   initialState:
   delay: 10000
-  heroHeading: Phishing resistant authenticator
+  heroHeading: Phishing resistant authenticator criteria
   heroText: is usually immune to social engineering type of attacks and provides a greater level of security and resilience than traditional authenticators.
   actionButtonText: Learn more about
-  actionLocation: # 
+  actionLocation: /implement/phishing-resistant-authenticators/ 
   actionTarget: _blank
 
 - orderNumber: 4

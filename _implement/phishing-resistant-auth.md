@@ -118,7 +118,7 @@ testing and certification to NIST 800-63, FIPS 140 certification, and supply cha
 Vendors are encouraged to complete the questionnaire to the maximum extent possible and
 provide artifacts to validate their inputs.
 
-Once approved, the product will be listed on [idmanagement.gov]({{site.baseurl}}){:target="_blank"}{:rel="noopener noreferrer"} and shared through federal
+Once approved, the product will be listed on [idmanagement.gov](http://www.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} and shared through federal
 security and acquisition communities.
 
 

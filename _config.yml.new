@@ -8,8 +8,7 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-# title: IDManagement.gov (changed to use just IDManagement without the .gov) 
-title: IDManagement
+title: IDManagement.gov
 email: icam@gsa.gov
 description: IDManagement.gov is a collaboration between the Federal CIO Council and GSA to develop and share leading practices in protecting federal IT systems.
 baseurl: ""
@@ -47,143 +46,115 @@ primary_navigation:
 # WhyFICAM? top level menu with dropdowns
   - name: Why FICAM?
     children:
-      - name: Introduction
-        url: /why/
-      - name: Zero Trust
-        url: /why/zero-trust/
-      # text moved to intro of architecture Sprint 8
-      # - name: Architecture
-      #   url: /why/architecture/
-      - name: History
-        url: /why/history/
-      - name: ICAM
-        url: /why/icam/
-      - name: Goals and Objectives
+      - name: Goals and Objectivess
         url: /why/goals-and-objectives/
-      # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (renamed to make label in menu shorter)
-      - name: Memorandum M-19-17
-        # Redirects to: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf (Required)
-        url: /memorandum-19-17/
-      # - name: Managing Information as a Strategic Resource (OMB Circular A-130) (renamed to make label in menu shorter)
-      - name: OMB Circular A-130
-        # Redirects to: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf (Required)
-        url: /omb-circular-a130/
-
-
-# What is FICAM top level menu with dropdowns
- # - name: from 'What' is FICAM? (changed on 05-17-2023 per Babur/Joe to 'Achitecture') See: _arch folder
-  - name: Architecture
-    children: 
-      - name: Introduction
-        url: /arch/
-      - name: Products
-        url: /arch/products/
-      - name: Services
-        url: /arch/services/
-      - name: PIV Details
-        url: /arch/pivdetails/
-      - name: Service Framework
-        url: /arch/servicesframework/
+      - name: Services Framework
+        url: /why/service-framework/
+      - name: Identity Management
+        url: /why/identity-management/
+      - name: Credential Management
+        url: /why/credential-management/
+      - name: Access Management
+        url: /why/access-management/
+      - name: Federation
+        url: /why/federation/
+      - name: Governance
+        url: /why/governance/
       - name: Use Cases
-        url: /arch/usecases/
+        url: /why/use-cases/
+      - name: System Component Examples
+        url: /why/system-component-examples/
+      - name: Authoritative Sources
+        url: /why/authoritative-sources/
+      - name: Federation Overview
+        url: /why/federation-overview/
 
-
-# Who FICAM is For? top level menu with dropdowns
-  # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Get Started')
-  # - name: Changed 'Get Started' to 'Partners' (05/31/2023) per Babur/Joe
-  - name: Partners
-    children:
-      - name: Introduction
-        url: /partners/
-      - name: Vendors
-        url: /vendors/
-      - name: Acquisition Professionals
-        url: /acquisition-professionals/
-      - name: Program Managers
-        url: /program-managers/
-      # Below show in Partner sidenav
-      # - name: Trust Services
-      #   url: /partners/trust-services/
-      # - name: GSA ICAM Solutions
-      #   url: /partners/icamsolutions/
-      # - name: Procurements
-      #   url: /partners/procure/
-      # - name: Training
-      #   url: /partners/train/
-      # - name: Lessons Learned
-      #   url: /partners/lessonslearned/
-      # - name: Standards
-      #   url: /partners/standards/
-      # - name: Technical Leads and Team Members
-      #   url: /partners/technical-leads-and-team-members/
-      # - name: PACS
-      #   url: /partners/pacs/
-
-# How to use FICAM top level menu with dropdowns
-  # - name: How to use FICAM (changed on 05-17-2023 per Babur/Joe) to 'Implement Guides'
-  # - name: 05/22/2023 shortened to 'Implements', limited space in menu
-  - name: Implement 
-    children:
-      - name: PIV Implementations
-        url: /implement/
-      # Commented out on (06/01/2023) per Babur/Joe, 
-      # - name: Network Authentication
-      #   url: /implement/network-authentication/
-      # - name: Domain Controllers
-      #   url: /implement/domain-controllers/
-      # - name: Trust Store
-      #   url: /implement/trust-stores/
-      # - name: Account Linking
-      #   url: /implement/account-linking/
-      # - name: Group Policies and Enforcement
-      #   url: /implement/group-policies/
-      # - name: Network Tuning
-      #   url: /implement/network-tuning/
-      # - name: Local Certification Authority
-      #   url: /implement/certificate-authority/
-      # - name: Authentication Assurance
-      #   url: /implement/authentication-assurance/
-      - name: PIV Authentication on macOS
-        url: /implement/piv-athentication-macos/
-      # - name: Troubleshooting PIV Logon
-      #   url: /implement/troubleshooting/ 
-      # - name: Windows Domain Account Pairing
-      #   url: /implement/windows-domain-pairing/
-      - name: Phishing-Resistant Authenticator Criteria
-        url: /implement/phishing-resistant-authenticators/ 
-
-  # GSA PKI Shared Service Provider Program Guide Tope Level Menu
-  - name: SSP
-    description: GSA PKI shared service provider program Guide
-    url: /ssp/
-
-  # Playbook top level Menu added (05-26-2023)
-  - name: Playbooks
-    description: FICAM Playbook are comprehensive guides on a technical topic, describing both overarching strategy and tactical approaches.
-    url: /playbooks/
-
-  # APL Menu for visible display and access of APLs
-  # Note: All APLs are accessible from the below URLs for reference and linking
-  - name: APLs
+# # What is FICAM top level menu with dropdowns
+  - name: What is FICAM?
     children: 
-      - name: Approved product list - PIV Cards
-        url: /approved-products-list-piv/
-      - name: Approved product list - PACS
-        url: /approved-products-list-pacs-products/
-      - name: PACS awaiting approval
-        url: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
-      - name: Removed product list
-        url: /removed-products-list/
+      - name: PACS Assessment Toolkit
+        url: /what/pacs-assessment-toolkit/
+      - name: Organizations that offer ICAM services
+        url: /what/organizations-that-offer-icam-services/
+      - name: Personal Identity Verification (PIV) Cards
+        url: /what/personal-identity-verification-piv-cards/
+      - name: User Guides
+        url: /what/user-guides/
+      - name: Physical Access Control System (PACS) 
+        url: /what/physical-access-control-system-pacs/ 
+      - name: GSA Multiple Award Schedule
+        url: /what/gsa-multiple-award-schedule/
+      - name: Trust Services
+        url: /what/trust-services/
+      - name: GSA ICAM Solutions and Shared Services
+        url: /what/gsa-icam-solutions-and-shared-services/
+      - name: FIPS 201 Removed Product List
+        url: /what/fips-201-removed-product-list/
+      - name: Credential Management & Overview
+        url: /what/credential-management-overview/
+      - name: Access Management & Overview
+        url: /what/access-management-overview/
 
+# # How to use FICAM top level menu with dropdowns
+  - name: How to use FICAM
+    children:
+      - name: Digitally Sign Word Doc
+        url: /how/digitally-sign-word-doc/
+      - name: Digitally Sign Email in Outlook
+        url: /how/digitally-sign-email-in-outlook/
+      - name: Digitally Sign Federal Register Document
+        url: /how/digitally-sign-federal-register-document/
+      - name: PIV Guide
+        url: /how/piv-guide/
+      - name: Troubleshoot PIV Windows Logon
+        url: /how/troubleshoot-piv-windows-logon/
+      - name: Troubleshoot Mac OS
+        url: /how/troubleshoot-mac-os/
+      - name: PIV Enable Firefox
+        url: /how/piv-enable-firefox/
+      - name: PIV Enable SSH
+        url: /how/piv-enable-ssh/
+      - name: Tools
+        url: /how/tools/
+
+# # Who FICAM is For? top level menu with dropdowns
+  - name: Who is FICAM For?
+    children:
+      - name: New? Get Started
+        url: /who/new-get-started/
+      - name: Technical Leads and Team Members
+        url: /who/technical-leads-and-team-members/
+      - name: PACS
+        url: /who/pacs/
+      - name: Vendors
+        url: /who/vendors/
+      - name: Acquisition Professionals
+        url: /who/acquisition-professionals/
+      - name: Program Manager
+        url: /who/program-manager/
+  
   # FICAM University page
-  - name: University
-    description: University
+  - name: FICAM University
+    description: FICAM University
     url: /university/
 
   # FAQ page
-  # - name: FAQs
-  #   description: Frequently Asked Questions
-  #   url: /faq/
+  - name: FAQs
+    description: Frequently Asked Questions
+    url: /faq/
+
+# Note: Secondary top level menu items are located in the 'include/menu.html'
+
+  # - name: Partners
+  #   children:
+  #     - name: Vendors
+  #       url: /sell/
+  #     - name: Acquisition Professionals
+  #       url: /buy/
+  #     - name: Program Managers
+  #       url: /governance/
+  # - name: Approved Product List
+  #   url: /buy#products
 
 secondary_navigation:
   - name: Contact Us
@@ -221,57 +192,30 @@ collections:
   why:
     output: true
     permalink: /why/:path/
-  arch:
+  what:
     output: true
-    permalink: /arch/:path/
-  implement:
+    permalink: /what/:path/
+  how:
     output: true
-    permalink: /implement/:path/
-  partners:
+    permalink: /how/:path/
+  who:
     output: true
-    permalink: /partners/:path/
-  university:
+    permalink: /who/:path/
+  learn:
     output: true
     permalink: /university/:path/   
-  # faq: requested removal by Babur (Sprint 6)
-  #   output: true
-  #   permalink: /faq/:path/ 
-  rss:
+  faq:
     output: true
-    permalink: /news/:path/ 
-  playbooks:
-    output: true
-    permalink: /playbooks/:path/ 
-  fips201:
-    output: true
-    permalink: /fips201/:path/ 
-  fpki:
-    output: true
-    permalink: /fpki/:path/  
-
-# Leaving in place: 
-# Unsure of placement in new site.
-  ficampm:
-    output: true
-    permalink: /pm/:path/
-
-  ssp:
-    output: true 
-    permalink: /ssp/:path/
-  
-
-  # (Old, keep for ref) buy: 
+    permalink: /faq/:path/  
+  # buy:
   #   output: true
   #   permalink: /buy/:path/
   # sell:
   #   output: true
   #   permalink: /sell/:path/
-  
-  # Turned on for visibility until Combined 743 Playbook on Governance is complete
-  governance:
-    output: true
-    permalink: /governance/:path/
-
+  # governance:
+  #   output: true
+  #   permalink: /governance/:path/
   pages:
     output: true
     permalink: /:path/
@@ -349,7 +293,7 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  sources:
+sources:
   ## Updated to @uswds 3.0
     - node_modules/@uswds/uswds/dist/css
     - node_modules/@uswds/uswds/dist/fonts

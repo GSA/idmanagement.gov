@@ -40,7 +40,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 {% include alert-warning.html heading="Note" content="If you are an existing user of the CPCT Tool and have not used it in a while or you were sent here to reinstall the CPCT Tool, we advise that you first remove the previously installed Docker CPCT Tool container and image from Docker Desktop before downloading and installing a new version of the CPCT Tool." %}
 
 
-1. Go to [Docker Desktop](https://www.docker.com). Download and install the version compatible with your device (MacOS, Windows or Linux).
+1. Go to [Docker Desktop](https://www.docker.com){:class="usa-link usa-link--external"}. Download and install the version compatible with your device (MacOS, Windows or Linux).
 
     <img src="{{site.baseurl}}/assets/fpki/tools/docker-website.png" alt="Docker.com Website" style="padding-left:30px;">
     <br><br>
@@ -53,7 +53,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 3.  Next, click the link below or copy and paste it into your web browser to visit the releases page.
 
-    - Link: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}
+    - Link: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
       <br><br>
 
 4. To download the latest release, click the **Source code (zip)** link at the bottom of the page, then save to download the zip file.
@@ -105,7 +105,7 @@ To better serve the FPKI community, the CPCT was transitioned from an online app
 
 Links to the CPCT Tool and associated support pages:
 
-- GitHub link:  [https://github.com/GSA/cpct-tool](https://github.com/GSA/cpct-tool){:target="_blank"}{:rel="noopener noreferrer"}
-- GitHub Releases page:  [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}
-- GitHub Wiki page:  [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}
-- GitHub Issues page:  [https://github.com/GSA/cpct-tool/issues](https://github.com/GSA/cpct-tool/issues){:target="_blank"}{:rel="noopener noreferrer"}
+- GitHub link:  [https://github.com/GSA/cpct-tool](https://github.com/GSA/cpct-tool){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- GitHub Releases page:  [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- GitHub Wiki page:  [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- GitHub Issues page:  [https://github.com/GSA/cpct-tool/issues](https://github.com/GSA/cpct-tool/issues){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

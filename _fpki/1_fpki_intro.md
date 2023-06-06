@@ -21,7 +21,7 @@ subnav:
 
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI.
 
-These guides are [open source](https://github.com/gsa/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
+These guides are [open source](https://github.com/gsa/ficam-playbooks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--alt usa-link--external"} and a _work in progress_ and we [welcome contributions](https://www.idmanagement.gov/contribute/){:target="_blank"}{:rel="noopener noreferrer"} from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
  
 ## What Is the Federal PKI?
 
@@ -88,4 +88,4 @@ The Federal PKI is important to federal agencies, other government entities, and
 * [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} is the certificate policy for the FBCA.
 * [X.509 Certificate and CRL Extensions Profile for the FBCA]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for Federal PKI infrastructure systems.
 * [X.509 Certificate and CRL Extensions Profile for PIV-I Cards]({{site.baseurl}}/docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
-* [OMB Circular A-130, Managing Information as a Strategic Resource (2016)](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf?msclkid=b1259175c7f211ec8144311a36ca5067){:target="_blank"}{:rel="noopener noreferrer"} establishes general policy for the planning, budgeting, governance, acquisition, and management of federal information, personnel, equipment, funds, IT resources, and supporting infrastructure and services.
+* [OMB Circular A-130, Managing Information as a Strategic Resource (2016)](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf?msclkid=b1259175c7f211ec8144311a36ca5067){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} establishes general policy for the planning, budgeting, governance, acquisition, and management of federal information, personnel, equipment, funds, IT resources, and supporting infrastructure and services.
