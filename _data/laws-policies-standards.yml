@@ -18,6 +18,20 @@
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+- &OPM
+  type: Authority
+  shortName: OPM
+  longName: "U.S. Office of Personnel Management"
+  description: >
+    OPM works in several broad categories to lead and serve the Federal Government in enterprise human 
+    resource management by delivering policies and services to achieve a trusted effective civilian workforce.
+- &DNI
+  type: Authority
+  shortName: DNI
+  longName: "Director of National Intelligence"
+  description: >
+    Our mission is to lead intelligence integration and forge an intelligence community that delivers the most 
+    insightful intelligence possible
 - &HSPD12
   type: "Law"
   shortName: "HSPD-12"
@@ -756,6 +770,10 @@
     Credentialing, Suitability, and Security Clearance Decision-Making Guide.
   published: 2008-01-14
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/decision-making-guide.pdf"
+  authored-by:
+    - *OMB
+    - *OPM
+    - *DNI
 - &PIVISSUANCESUSPENSION
   type: Policy
   shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
@@ -793,7 +811,7 @@
 - &GPEA1998
   type: Law
   shortName: "Government Paperwork Elimination Act"
-  longName: "Government Paperwork Elimination Act"
+  longName: "Government Paperwork Elimination Act of 1998"
   description: >
     This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit 
     information or transact with the agency electronically when possible and to maintain records electronically when possible. 
@@ -802,3 +820,32 @@
     range of electronic signature alternatives.
   published: 1998-10-21
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
+- &M2016
+  type: Law
+  shortName: "EO 20-16"
+  longName: "Executive Order 20-16: Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19"
+  description: >
+    The Federal Government, in partnership with sta�e and local governments and the 
+    private sector, is adopting a concerted near-term operations posture that will appropriately align 
+    critical resources to slow down the transmission of COVID-19, while also ensuring that 
+    Government operations continue.
+  published: 2020-03-17
+  externalURL: https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-16.pdf
+- &COVIDVETTING
+  type: Policy
+  shortName: "OPM Memo: Coronavirus Disease 2019"
+  longName: "Temporary Procedures for Personnel Vetting and Appointment of New Employees during Maximum Telework Period due to Coronavirus COVID-19"
+  description: >
+    While agencies continue to onboard personnel, particularly for mission-critical functions, many Federal, 
+    state, and local offices that take fingerprints are temporarily closed due to measures associated with COVID-19.
+    As a result, Federal agencies are experiencing challenges collecting fingerprints to meet existing requirements 
+    for a fingerprint check of the Federal Bureau of Investigation's (FBI) criminal history records 
+    (“FBI fingerprint check”) as part of vetting new hires (including for waivers of pre-appointment investigative
+    requirements) and contractors, appointment to the civil service, and determining eligibility for issuance of 
+    Personal Identity Verification (PIV) credentials.
+  published: 2020-03-25
+  externalURL: "https://www.opm.gov/policy-data-oversight/covid-19/temporary-procedures-for-personnel-vetting-and-appointment-of-new-employees-during-maximum-telework-period-due-to-coronavirus-covid-19/"
+  authorized-by:
+    - *M2016
+  authored-by:
+    - *OPM
