@@ -168,7 +168,7 @@ Authorization is how you decide whether you should allow someone to access an ag
 
 Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials. The service then confirms that your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
 
-Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
+Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:class="usa-link usa-link--external"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
 
 
 | | Less Fine-Grained | --> | --> | More Fine-Grained |

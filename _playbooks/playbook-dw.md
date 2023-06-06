@@ -55,9 +55,9 @@ Federal agencies use digital workers to automate processes, increase efficiencie
 
 This playbook is iterative, and agencies are encouraged to collaborate, share best practices, and share lessons learned. Federal employees may consider joining a relevant committee or community of practice to learn and engage in digital worker identity management. 
 
--	[Identity, Credential, and Access Management subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}
--	[Robotic Process Automation Community of Practice](https://digital.gov/communities/rpa/){:target="_blank"}{:rel="noopener noreferrer"}
--	[Artificial Intelligence Community of Practice](https://digital.gov/communities/artificial-intelligence/){:target="_blank"}{:rel="noopener noreferrer"}
+-	[Identity, Credential, and Access Management subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+-	[Robotic Process Automation Community of Practice](https://digital.gov/communities/rpa/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+-	[Artificial Intelligence Community of Practice](https://digital.gov/communities/artificial-intelligence/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Key Terms 
 
@@ -106,7 +106,7 @@ Ensure digital worker identity management has proper governance, score the funct
 
 ## 1.1 Ensure Proper Oversight 
 
-The ICAM governance structure ensures enterprise identity management policies are updated to include digital worker management and use. For ICAM oversight and program management examples, see the [ICAM Program Management Playbook](https://playbooks.idmanagement.gov/pm/){:target="_blank"}{:rel="noopener noreferrer"}.
+The ICAM governance structure ensures enterprise identity management policies are updated to include digital worker management and use. For ICAM oversight and program management examples, see the [ICAM Program Management Playbook]({{site.baseurl}}/playbooks/pm/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <p align="center"><b>Update the agency enterprise identity management policies to include digital worker identity management.</b></p>
 

@@ -111,7 +111,7 @@ PIV users may received and store encrypted emails througout their tenure in an o
 
 ## Other Helpful References
 
-- Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}
-- Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/pro/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}
-- S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}
-- S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}
+- Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/pro/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:class="usa-link usa-link--external"}{:rel="noopener noreferrer"}

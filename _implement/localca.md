@@ -26,11 +26,11 @@ This page provides some tips for using a local certification authority (CA) to i
     <h4 class="usa-alert__heading">Can federally operated certificate revocation services (CRL, OCSP) operate on port 80?</h4>
     <p class="usa-alert__text">
       Yes. This very narrow class of services, that provide CRL and OCSP information for the purposes of verifying the revocation status of certificates used to make other HTTPS connections, should abide by best practices in the field and their respective specifications. For CRLs, follow 
-      <a class="usa-link" href="https://tools.ietf.org/html/rfc5280" target="_blank" rel="noopener noreferrer">RFC 5280</a>
+      <a class="usa-link usa-link--external" href="https://tools.ietf.org/html/rfc5280" target="_blank" rel="noopener noreferrer">RFC 5280</a>
       which states CAs <strong>SHOULD NOT</strong> include URIs that specify https, ldaps, or similar schemes in extensions. For OCSP, follow 
-      <a class="usa-link" href="https://tools.ietf.org/html/rfc6960" target="_blank" rel="noopener noreferrer">RFC 6960</a>
+      <a class="usa-link usa-link--external" href="https://tools.ietf.org/html/rfc6960" target="_blank" rel="noopener noreferrer">RFC 6960</a>
       which states a CA may use port 443 for OCSP where privacy is a requirement. Agencies are encouraged to operate OCSP and CRL services via hostnames specifically reserved for those services, so that other related information and functionality can be served securely and privately. For more information see the 
-      <a class="usa-link" href="https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https" target="_blank" rel="noopener noreferrer">Federal CIO Council HTTPS-Only Standard</a>
+      <a class="usa-link usa-link--external" href="https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https" target="_blank" rel="noopener noreferrer">Federal CIO Council HTTPS-Only Standard</a>
       .
     </p>
   </div>

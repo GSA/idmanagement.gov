@@ -62,7 +62,7 @@ Timeline:
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** This table was last updated on **June 17, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **June 17, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"}{:class="usa-link usa-link--external"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 

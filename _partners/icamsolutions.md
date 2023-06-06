@@ -18,7 +18,7 @@ subnav:
     href: '#additional-resources'
 ---
 
-This section contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+This section contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
 - [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
 
@@ -182,28 +182,28 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td>Homeland Security Information Network (HSIN) Identity Proofing Service</td>
     <td style="width:350px">HSIN is a user-driven, web-based, information-sharing platform that connects all homeland security mission partners within a wide spectrum of homeland security mission areas. HSIN is an Identity Provider within the National Information Exchange Federation (NIEF), a collection of U.S. agencies that have come together to share sensitive law enforcement information.</td>
     <td>Identity Proofing</td>
-    <td><a href="https://www.dhs.gov/how-join-hsin" target="_blank" rel="noopener noreferrer">How to Join HSIN</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.dhs.gov/how-join-hsin" target="_blank" rel="noopener noreferrer">How to Join HSIN</a></td>
   </tr>
     <tr>
     <td>Identity Management <br><br> Access Management <br><br> Federation</td>
     <td>Login.gov</td>
     <td style="width:350px">Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign into multiple government agencies.</td>
     <td>Account Linking <br><br> Authentication</td>
-    <td><a href="http://login.gov/" target="_blank" rel="noopener noreferrer">login.gov</a></td>
+    <td><a class="usa-link usa-link--external" href="http://login.gov/" target="_blank" rel="noopener noreferrer">login.gov</a></td>
   </tr>
    <tr>
     <td>Access Management <br><br> Federation</td>
     <td>MAX Authentication</td>
     <td style="width:350px">Authentication as a Service (AaaS) Automatic registration for federal users by email domain. HSPD-12-PIV /DoD CAC cards and SMS 2-factor authentication for sensitive activities. Enterprise Federated Partner Automated Login (i.e., single sign-on) with agencies.</td>
     <td>Authentication Services <br><br> Federation</td>
-    <td><a href="http://max.gov/" target="_blank" rel="noopener noreferrer">Max.gov</a></td>
+    <td><a class="usa-link usa-link--external" href="http://max.gov/" target="_blank" rel="noopener noreferrer">Max.gov</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
     <td>USAccess</td>
     <td style="width:350px">The GSA HSPD-12 Managed Service Office (MSO) established the USAccess program as an efficient way for federal agencies to issue common, HSPD-12-approved credentials to their employees and contractors.</td>
     <td>PIV card</td>
-    <td><a href="http://fedidcard.gov/" target="_blank" rel="noopener noreferrer">fedidcard.gov</a></td>
+    <td><a class="usa-link usa-link--external" href="http://fedidcard.gov/" target="_blank" rel="noopener noreferrer">fedidcard.gov</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
@@ -217,14 +217,14 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
     <td style="width:350px">Includes DHS approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
     <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by the Department of Homeland Security (DHS)</td>
-    <td><a href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-tools" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-tools" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
   <tr>
     <td>Identity Management <br><br> Access Management <br><br> Credential Management</td>
     <td><i>SIN 541519ICAM</i>: Identity, Credential, and Access Management (ICAM)</td>
     <td style="width:350px">Managed service offerings for electronic credentials, identity and access management, authentication, and identity and access management professional services.</td>
     <td>Digital credentials <br><br> Authentication <br><br> Professional Services</td>
-    <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
@@ -245,14 +245,14 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 334290L</i>: Physical Access Control System (PACS)</td>
     <td style="width:350px">Includes PACS, such as card-controlled access, biometrics, security barriers, etc.</td>
     <td>PACS components</td>
-    <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
     <td><i>SIN 541330SEC</i>: Security System Integration, Design, Management, and Life Cycle Support</td>
     <td style="width:350px">Includes services related to PACS design, integration, implementation, and installation/testing. Offerors under this SIN have at least one employee who is CSEIP (Certified System Engineer ICAM PACS) certified and such certification can be verified at IDmanagment.gov.</td>
     <td>PACS integration (installation and configuration)</td>
-    <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
 </table>
 
@@ -260,7 +260,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
 
 Buyers are required to register on GSA Advantage. Buyers can use the same User ID and Password on GSA eBuy and GSA Advantage. Vendor listings change regularly and are available in eBuy. Below are modified steps to access the GSA eBuy Buyer website:
 
-1. Go to [http://www.ebuy.gsa.gov](http://www.ebuy.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+1. Go to [http://www.ebuy.gsa.gov](http://www.ebuy.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 2. At the top of the page, the buyer will see “Sign in as a …. Buyer.” Click **Buyer** to display the Sign In.
 3. Enter the buyer’s official email address and password and click **Sign In**.
 4. The buyer will be prompted to request and enter a verification code. GSA Advantage will send the buyer an email with the single-use verification code.
@@ -273,6 +273,6 @@ Buyers are required to register on GSA Advantage. Buyers can use the same User I
 
 ## Additional Resources
 
-- [GSA eBuy Job Aid](https://www.ebuy.gsa.gov/ebuy/assets/content/eBuy-Buyer_jobaid.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [GSA ICAM](https://www.gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management){:target="_blank"}{:rel="noopener noreferrer"}
-- [MAS Consolidation Newsletter](https://interact.gsa.gov/sites/default/files/mas_quarterly_summer_2019_508.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [GSA eBuy Job Aid](https://www.ebuy.gsa.gov/ebuy/assets/content/eBuy-Buyer_jobaid.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [GSA ICAM](https://www.gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [MAS Consolidation Newsletter](https://interact.gsa.gov/sites/default/files/mas_quarterly_summer_2019_508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

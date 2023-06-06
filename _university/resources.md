@@ -24,22 +24,24 @@ sticky_sidenav: true
       {{resource.name}} ({{resource.pubdate}})
     </button>
   </h4>
+  <a class="gsa-no-dec" href="{{resource.url}}" target="{{resource.target}}" rel="noopener noreferrer">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" >
     <p>
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{resource.doctype}}</span>
         </div>
         <p>{{resource.summary}}</p>
-        <div class="display-flex flex-column flex-align-end">
-            <span class="gsa-source">Source: {{resource.source}}</span>
-        </div>
         <hr/>
         <div class="display-flex flex-column flex-align-end">
-        <a href="{{resource.url}}" target="{{resource.target}}" rel="noopener noreferrer">
-            <button class="usa-button">View</button>
-        </a>
+            <span class="gsa-source usa-link usa-link--external">Source: {{resource.source}}</span>
         </div>
+        <!-- 
+        <div class="display-flex flex-column flex-align-end">
+            <button class="usa-button">View</button>
+        </div> 
+        -->
     </p>
   </div>
+  </a>
 </div>
 {% endfor %}

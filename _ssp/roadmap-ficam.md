@@ -101,7 +101,7 @@ The SSP Program Ofﬁce oversees and guides the business and security practices 
 - Internally, the SSP Program Ofﬁce meets with its GSA counterparts to ensure services are secure and available through the proper contract vehicle.
 - Externally, the ofﬁce meets with federal agencies and SSPs to learn about successes and how processes and service delivery can be improved.
 
-The GSA, Associate Deputy Administrator in the Ofﬁce of Government-wide Policy, [Ofﬁce of Technology](https://www.gsa.gov/policy-regulations/policy/information-technology-policy){:target="_blank"}{:rel="noopener noreferrer"} is the Authorizing Ofﬁcial of GSA PKI SSP vendor systems and is ultimately responsible for their secure operation. The GSA PKI SSP Program Ofﬁce and Program Manager reside in the [Identity Assurance and Trusted Access Division](https://www.gsa.gov/policy-regulations/policy/information-technology-policy/identity-assurance-and-trusted-access){:target="_blank"}{:rel="noopener noreferrer"}  within the Ofﬁce of Technology Policy. The GSA PKI SSP Program Manager has the following responsibilities:
+The GSA, Associate Deputy Administrator in the Ofﬁce of Government-wide Policy, [Ofﬁce of Technology](https://www.gsa.gov/policy-regulations/policy/information-technology-policy){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the Authorizing Ofﬁcial of GSA PKI SSP vendor systems and is ultimately responsible for their secure operation. The GSA PKI SSP Program Ofﬁce and Program Manager reside in the [Identity Assurance and Trusted Access Division](https://www.gsa.gov/policy-regulations/policy/information-technology-policy/identity-assurance-and-trusted-access){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  within the Ofﬁce of Technology Policy. The GSA PKI SSP Program Manager has the following responsibilities:
 
 - Direct and coordinate activities between the GSA PKI SSPs, the Federal PKI Policy Authority and GSA supporting ofﬁces, Ofﬁce of the Chief Information Security Ofﬁcer, and the Federal Acquisitions Service.
 - Coordinate customer interest meetings to understand customer needs and challenges, plan service enhancements, and remediate issues. 
@@ -115,7 +115,7 @@ The GSA, Ofﬁce of Chief Information Security Ofﬁcer (OCISO) provides securit
 
 ### GSA Federal Acquisition Service
 
-The GSA Federal Acquisition Service (FAS) connects government buyers with the GSA PKI SSPs. The FAS organization captures the GSA PKI SSP services and sets prices, terms, and conditions of the Special Item Number (SIN) on the [GSA Multiple Award Schedule](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} . The SSP SIN is intended to make it easier for potential buyers to search for the digital certiﬁcate services offered by the GSA PKI SSPs.
+The GSA Federal Acquisition Service (FAS) connects government buyers with the GSA PKI SSPs. The FAS organization captures the GSA PKI SSP services and sets prices, terms, and conditions of the Special Item Number (SIN) on the [GSA Multiple Award Schedule](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. The SSP SIN is intended to make it easier for potential buyers to search for the digital certiﬁcate services offered by the GSA PKI SSPs.
 
 # Section II: SSP Application and Maintenance Activities  
 
@@ -143,18 +143,18 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
 
 ### MOA Procedural Guidance:
 
-- Send an email to [GSAPKISSP@gsa.gov](GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
+- Send an email to [GSAPKISSP@gsa.gov](mailt0:GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
 - SSPs must obtain, review, and sign the MOA from the SSP Program Ofﬁce.
 
 Once an MOA is signed, the GSA PKI SSP will sponsor the vendor to apply to the Federal PKI Policy Authority.
 
 ### Step 2 -Complete PKI Pre-Conditions
 
-A prospective GSA PKI SSP must meet the following basic pre-conditions as outlined in the [X.509 Certiﬁcate Policy for the  U.S.  Federal PKI Common Policy Framework [COMMON CP]](https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} to demonstrate readiness for the PKI certiﬁcation process.
+A prospective GSA PKI SSP must meet the following basic pre-conditions as outlined in the [X.509 Certiﬁcate Policy for the  U.S.  Federal PKI Common Policy Framework [COMMON CP]]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} to demonstrate readiness for the PKI certiﬁcation process.
 
 1. Provide Certiﬁcation Authority (CA), repository, and archive services. The PKI Vendor must operate a self-signed CA instead of relying on a certiﬁcate issued from the Federal Common Policy CA. This ensures that if there is an issue with the GSA PKI SSP, the Federal PKI can revoke the certiﬁcate from the Federal Common Policy CA without impacting the GSA PKI SSP customer certiﬁcates.
 2. Develop and maintain a Certiﬁcation Practice Statement (CPS) covering PKI operations that comply with [COMMON CP] and issue certiﬁcates according to the [Common Policy X.509 Certiﬁcate and Certiﬁcate Revocation List (CRL)
-proﬁles](https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+proﬁles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 3. Work with its customers to ensure registration practices ﬁt smoothly within its overall CPS package and comply with [COMMON CP].
 4. Implement all applicable PIV-related policies, such as common-authentication, common-cardAuth, and common-piv-contentSigning.
 5. Ensure it understands and can fulﬁll its customers’ archive requirements and understands its obligation to do so.
@@ -218,16 +218,16 @@ Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to 
 
 ### Step 5 -Apply to GSA MAS and Get Listed as an Identity Trusted Service
 
-Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
+Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
 
 ### Acquisition Procedural Guidance:
 
-- Submit an Information Technology Package for GSA Special Item Number (SIN) 541519PKI on the GSA MAS. For assistance, please visit the GSA’s website: https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-awar d-schedule/mas-roadmap 
+- Submit an Information Technology Package for GSA Special Item Number (SIN) 541519PKI on the GSA MAS. For assistance, please visit the GSA’s website: [https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule/mas-roadmap](https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule/mas-roadmap){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 - Collaborate with the FAS to clarify or supplement the package for contract determination.
 
 <span style="color:red;">**NOTE:**</span> If the OCISO and SSP Program Ofﬁce believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certiﬁcate services on the day of receiving the ATO letter.
 
-After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on [idmanagement.gov under Government Identity Trust Services](https://www.idmanagement.gov/buy/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}  to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
+After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on [idmanagement.gov under Government Identity Trust Services]({{site.baseurl}}/partners/trust-services//#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}  to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
 
 ## Maintenance Activities
 
@@ -278,7 +278,7 @@ A derived PIV certiﬁcate is either a software or hardware certiﬁcate issued 
 
 ### PIV-I Certiﬁcates
 
-PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook](https://playbooks.idmanagement.gov/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
+PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
 
 |**Type**|**COMMON OID**|
 |--------|--------------|
@@ -298,7 +298,7 @@ Device certiﬁcates can be issued to devices such as domain controllers, web si
 
 ### Digital Signature Certiﬁcates
 
-A digital signature certiﬁcate is used to digitally sign documents such as PDFs or Microsoft Word or digitally sign emails. An agency may also request a [Digital Autopen](https://playbooks.idmanagement.gov/playbooks/autopen/){:target="_blank"}{:rel="noopener noreferrer"}  signature certiﬁcate to sign documents for the Federal Register.
+A digital signature certiﬁcate is used to digitally sign documents such as PDFs or Microsoft Word or digitally sign emails. An agency may also request a [Digital Autopen]({{site.baseurl}}/playbooks/autopen/){:target="_blank"}{:rel="noopener noreferrer"}  signature certiﬁcate to sign documents for the Federal Register.
 
 |**Type**|**COMMON OID**|
 |--------|-------------------|

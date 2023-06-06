@@ -134,7 +134,7 @@ All new versions are effective immediately. New or revised requirements and thei
 
 POSTED June 30, 2018
 
-In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List]({{site.baseurl}}/removed-products-list/).
+In the past, the FIPS 201 Evaluation Program has granted extensions for allowing RNG-based PIV cards to continue being listed on the APL. In alignment with [NIST’s decision](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Announcements){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, the FIPS 201 Evaluation Program has also decided to not grant another extension and has removed all RNG-based PIV cards from the APL and added them to our [Removed Products List]({{site.baseurl}}/removed-products-list/).
 
 [Return to Top](#top)
 
@@ -152,7 +152,7 @@ POSTED May 24, 2017
 
 NIST’s PIV Validation Program has provided an extension on migrating away from RNG-based PIV cards to Deterministic Random Bit Generator (DRBG)-based PIV cards.
 
-- See the [NIST announcement for additional details and recommended guidance](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}.
+- See the [NIST announcement for additional details and recommended guidance](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 The FIPS 201 Evaluation Program’s Approved Products List (APL) will continue to list RNG-based PIV cards until June 30, 2018.
 
@@ -171,7 +171,7 @@ The FIPS 201 Evaluation Program has removed the following categories, displayed 
 Below are some resources that provide information, guidance, or a replacement certification list for some of the removed FIPS 201 categories:
 
 - Guidance through the [FICAM Playbooks]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"}
-- Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}.
+- Certified lists through other Programs such as NIST’s Personal Identity Verification Program (NPIVP) for [PIV Middleware](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [PIV Credential Applications](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}; NIST’s Cryptographic Module Validation Program (CMVP) which includes a [FIPS 140-2 validation list](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - New processes such as the [Federal Public Key Infrastructure Policy Authority (FPKIPA) Annual PIV Credential Issuer Testing (PDF)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"} Production PIV credential testing for each agency; conformance testing of the PIV credential’s internal data, certificate conformance testing, and PACS interoperability testing
 
 Please note that the removal of these categories should not impact any acquisitions. Categories not identified by the Program have no requirement for FIPS 201 conformance and any product on the market should be able to satisfy the agency’s needs/requirements.
@@ -180,7 +180,7 @@ Please note that the removal of these categories should not impact any acquisiti
 | ------------------- | ----------- |
 | Card Printer Station	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | Certificate Validator	| Server-based Certificate Validation Protocol Category |
-| Cryptographic Module	| [NIST FIPS 140-2 Validation List](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"} |
+| Cryptographic Module	| [NIST FIPS 140-2 Validation List](http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
 | Electronic Personalization	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | Facial Image Capturing Camera	| [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} |
 | Facial Image Capturing Camera (Middleware) | [FPKIPA Annual PIV Credential Issuer Testing]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}|
@@ -188,10 +188,10 @@ Please note that the removal of these categories should not impact any acquisiti
 | LACS Caching Status Proxy	| Server-based Certificate Validation Protocol Category |
 | LACS Mobile Transparent Reader	| [FICAM Playbooks]({{site.baseurl}}/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
 | LACS Transparent Reader	| [FICAM Playbooks]({{site.baseurl}}/piv/gettingstarted/#card-readers){:target="_blank"}{:rel="noopener noreferrer"} |
-| PIV Middleware	| [NIST PIV Middleware Certification List](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"} |
-| Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://fbibiospecs.fbi.gov/certifications-1/cpl){:target="_blank"}{:rel="noopener noreferrer"} |
-| Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
-| Template Matcher	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"} |
+| PIV Middleware	| [NIST PIV Middleware Certification List](https://csrc.nist.gov/Projects/NIST-Personal-Identity-Verification-Program/Validation-Lists/SP-800-73-4-PIV-Middleware-Validation-List){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
+| Single Fingerprint Capture Device	| [FBI Certified Products List (CPL)](https://fbibiospecs.fbi.gov/certifications-1/cpl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
+| Template Generator	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
+| Template Matcher	| [NIST MINEX Participation Chart](https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii-results){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
 
 [Return to Top](#top)
 
@@ -199,9 +199,9 @@ Please note that the removal of these categories should not impact any acquisiti
 
 POSTED June 23, 2016
 
-In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}, the FIPS 201 Evaluation Program will be removing legacy RNG PIV credential listed on the [Approved Products List]({{site.baseurl}}/acquisition-professionals/#products) on July 31, 2017.
+In-line with the [DRBG PIV credential transition plan from NIST](http://csrc.nist.gov/groups/SNS/piv/npivp/announcements.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, the FIPS 201 Evaluation Program will be removing legacy RNG PIV credential listed on the [Approved Products List]({{site.baseurl}}/acquisition-professionals/#products) on July 31, 2017.
 
-According to this transition plan, agencies may continue to procure and issue credentials using implementations marked as “legacy” on the [NPIVP validation list](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"} until June 30, 2017. However, the agencies should migrate to fully compliant credentials implementing approved DRBGs as soon as DRBG PIV credential and the compatible credential management software are commercially available. Once issued, these “legacy” RNG PIV credentials may be used until their expiration date – up to June 30, 2023.
+According to this transition plan, agencies may continue to procure and issue credentials using implementations marked as “legacy” on the [NPIVP validation list](http://csrc.nist.gov/groups/SNS/piv/npivp/validation_lists/PIVCardApplicationValidationList.htm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} until June 30, 2017. However, the agencies should migrate to fully compliant credentials implementing approved DRBGs as soon as DRBG PIV credential and the compatible credential management software are commercially available. Once issued, these “legacy” RNG PIV credentials may be used until their expiration date – up to June 30, 2023.
 
 [Return to Top](#top)
 
@@ -209,11 +209,11 @@ According to this transition plan, agencies may continue to procure and issue cr
 
 POSTED April 12, 2016
 
-We’d like to announce that the [GSA Document Signing Tool](https://github.com/GSA/gsa-doc-digital-signature){:target="_blank"}{:rel="noopener noreferrer"} (aka PKCS#7 Tool) source code is now available on [GitHub](https://github.com/GSA/gsa-doc-digital-signature){:target="_blank"}{:rel="noopener noreferrer"}. Moving forward, the community may contribute to enhancements, bug fixes, and new features for the GSA Document Signing Tool directly. Community members may clone the source code from the GSA GitHub repository and submit any additions via new branches and pull requests. If you are new to GitHub and need instructions on how to use the GitHub features, please reference the [GitHub help page](https://help.github.com/){:target="_blank"}{:rel="noopener noreferrer"}.
+We’d like to announce that the [GSA Document Signing Tool](https://github.com/GSA/gsa-doc-digital-signature){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} (aka PKCS#7 Tool) source code is now available on [GitHub](https://github.com/GSA/gsa-doc-digital-signature){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Moving forward, the community may contribute to enhancements, bug fixes, and new features for the GSA Document Signing Tool directly. Community members may clone the source code from the GSA GitHub repository and submit any additions via new branches and pull requests. If you are new to GitHub and need instructions on how to use the GitHub features, please reference the [GitHub help page](https://help.github.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
-If you have any questions, comments, or issues with the GSA Document Signing Tool, feel free to post your comments in the [“Issues” section of the GSA Document Signing Tool GitHub site](https://github.com/GSA/gsa-doc-digital-signature/issues){:target="_blank"}{:rel="noopener noreferrer"}.
+If you have any questions, comments, or issues with the GSA Document Signing Tool, feel free to post your comments in the [“Issues” section of the GSA Document Signing Tool GitHub site](https://github.com/GSA/gsa-doc-digital-signature/issues){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
-As new questions are posted to the [“Issues” section](http://github.com/GSA/gsa-doc-digital-signature/issues){:target="_blank"}{:rel="noopener noreferrer"}, all members in the community may contribute to answering and/or helping with any code enhancements. We encourage community members to actively contribute and share their contributions with everyone.
+As new questions are posted to the [“Issues” section](http://github.com/GSA/gsa-doc-digital-signature/issues){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, all members in the community may contribute to answering and/or helping with any code enhancements. We encourage community members to actively contribute and share their contributions with everyone.
 
 [Return to Top](#top)
 

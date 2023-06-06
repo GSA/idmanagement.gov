@@ -17,14 +17,14 @@ subnav:
 
 The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model per current releases of related standards, including:
 
-- [FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}: PIV of Federal Employees and Contractors
-- [NIST SP 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Interfaces for Personal Identity Verification
-- [NIST SP 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}: Biometric Specifications for Personal Identity Verification
-- [NIST SP 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}: Cryptographic Algorithms and Key Sizes for Personal Identity Verification
+- [FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}: PIV of Federal Employees and Contractors
+- [NIST SP 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}: Interfaces for Personal Identity Verification
+- [NIST SP 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}: Biometric Specifications for Personal Identity Verification
+- [NIST SP 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}: Cryptographic Algorithms and Key Sizes for Personal Identity Verification
 
 The CCT, in conjunction with the [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct), also facilitates remote PIV and PIV-I testing in support of FPKI [annual reviews]({{site.baseurl}}/fpkiaudit/){:target="_blank"}{:rel="noopener noreferrer"}, reducing travel and resource time and costs. To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
 
-You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}.
+You can [download the latest version of the CCT here](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 # Submitting a CCT Test Results Package
 If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
@@ -46,10 +46,10 @@ If you are running the Card Conformance Tool as part of the annual requirement t
 
 # Resources
 
-For more information about the CCT, see the [CCT Wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"}. 
+For more information about the CCT, see the [CCT Wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
-For step-by-step instructions to help you perform CCT Testing, see the [CCT User Guide](https://github.com/GSA/piv-conformance/wiki/User-Guide).
+For step-by-step instructions to help you perform CCT Testing, see the [CCT User Guide](https://github.com/GSA/piv-conformance/wiki/User-Guide){:class="usa-link usa-link--external"}.
 
-For a detailed video on how to perform CCT testing and how to prepare and submit a proper CCT Test Results Package, please watch this [CCT video](https://github.com/GSA/piv-conformance/raw/master/docs/Card_Test_Submission.mp4){:target="_blank"}{:rel="noopener noreferrer"}: PIV Conformance Tool Video.
+For a detailed video on how to perform CCT testing and how to prepare and submit a proper CCT Test Results Package, please watch this [CCT video](https://github.com/GSA/piv-conformance/raw/master/docs/Card_Test_Submission.mp4){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}: PIV Conformance Tool Video.
 
 For further assistance with the CCT, contact fpki at gsa.gov.

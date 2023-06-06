@@ -19,7 +19,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Dec 2022 - Update to Microsoft Network Authentication Issue</h4>
     <p class="usa-alert__text">
-      The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
+      The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
     </p>
   </div>
 </div>
@@ -28,7 +28,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">See This Alert First</h4>
     <p class="usa-alert__text">
-      Please hold off on implementing the guidance on this page until it is updated. Microsoft <strong>HIGHLY</strong> recommends that all customers who use PIV, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. Wait for further guidance from CISA or contact CyberLiasion at CISA dot gov.
+      Please hold off on implementing the guidance on this page until it is updated. Microsoft <strong>HIGHLY</strong> recommends that all customers who use PIV, smart card, or certificate-based authentication with AltSecID to <strong>IMMEDIATELY</strong> change the registry key on domain controllers prior to installing the KB5014754 May 2022 updates. See <a class="usa-link usa-link--external" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> for additional information. Wait for further guidance from CISA or contact CyberLiasion at CISA dot gov.
     </p>
   </div>
 </div>
@@ -157,7 +157,7 @@ If you are designing an automated process to transition users from Principal Nam
     <h4 class="usa-alert__heading">Collaborate with us!</h4>
     <p class="usa-alert__text">
       We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above. Check out the script in our    
-      <a class="usa-link" href="https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId" target="_blank">public scripts repository</a>
+      <a class="usa-link usa-link--external" href="https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId" target="_blank">public scripts repository</a>
       or contact ICAM at GSA.Gov for more information.
     </p>
   </div>
@@ -167,7 +167,7 @@ If you are designing an automated process to transition users from Principal Nam
 #### 2. Enable User Name Hints
 You need to enable _User Name Hints_ for your network domain.  This will modify the logon prompts for _Windows_ workstations and servers joined to the network domain.  Your users will be prompted to provide both the PIV credential PIN value and a User Name Hint value.
 
-{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a href=\"https://www.idmanagement.gov/arch/pivdetails/#piv-identifiers\" target=\"_blank\" rel=\"noopener noreferrer\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
+{% include alert-success.html heading = "Did you know?" content="If a user's PIV Authentication certificate UPN matches their Windows logon name, the User Name Hint value may be left blank during the logon process.  The UPN is found in the <a class=\"usa-link usa-link--external\" href=\"https://www.idmanagement.gov/arch/pivdetails/#piv-identifiers\" target=\"_blank\" rel=\"noopener noreferrer\">Subject Alternative Name</a> extension of the PIV Authentication Certificate." %} 
 
 ##### User Name Hint Setting
 
@@ -191,7 +191,7 @@ To transition from UPN mapping to altSecurityIdentities account linking, you wil
 - **Type:** DWORD
 - **Data (Value):** 00000000
 
-This setting tells your network domain _I don't always want to use the Subject Alternate Name values for my user certificates._  More information on the setting is available [here.](https://technet.microsoft.com/en-us/library/ff520074(WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}
+This setting tells your network domain _I don't always want to use the Subject Alternate Name values for my user certificates._  More information on the setting is available [here.](https://technet.microsoft.com/en-us/library/ff520074(WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 It's possible to revert to UPN account linking by removing the registry setting above.
 

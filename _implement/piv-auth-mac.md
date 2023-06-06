@@ -33,7 +33,7 @@ Agencies may additionally choose a machine or user-based enforcement which disab
 1. Machine-Based Enforcement (MBE): This implementation removes the option for password-based authentication in favor of smart card-only authentication for any account accessible by the macOS device (local or network).
 2. User-Based Enforcement (UBE): This implementation creates an exception to smart card-only authentication for specific users or groups of users (e.g., network admins, device admins, and individuals waived from smart card requirements).
 
-This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/implement/group-policies/){:target="_blank"}{:rel="noopener noreferrer"} can be found here.
+This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/implement/group-policies/){:target="_blank"}{:rel="noopener noreferrer"} can be found here.
 
 ## Local Account Pairing
 Local Account Pairing is a user-prompted process.
@@ -42,7 +42,7 @@ Local Account Pairing is a user-prompted process.
 3. Provide the PIV PIN and then log out.
 4. Insert the PIV and provide the PIN to log back in.
 
-See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"} for more information on local account pairing.
+See [this Apple Platform Deployment guide](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information on local account pairing.
 
 ## Windows Domain Account Pairing
 Most departments and agencies already maintain processes to map PIV attributes to Active Directory domain accounts. This playbook also provides guidance on the different models that can be used to [link domain accounts to PIV certificate attributes]({{site.baseurl}}/implement/account-linking/){:target="_blank"}.
@@ -68,7 +68,7 @@ A property list, or plist, maps smart card attributes to a Windows domain accoun
 
 <img src="{{site.baseurl}}/assets/piv/attribute_mapping_plist.png" alt="PList configuration for extracting a domain account identifier from a PIV." width="560" height="201">
 
-Agencies may want to apply [additional smart card configuration](https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"} settings. Additional options may include:
+Agencies may want to apply [additional smart card configuration](https://developer.apple.com/documentation/devicemanagement/smartcard){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} settings. Additional options may include:
 - allowSmartCard - Must be set to TRUE to allow the device to leverage smart cards for multiple functions (authentication, digital signing). 
 - enforceSmartCard - Can be set to TRUE to ensure that smart card authentication is made mandatory at initial logon, authorization, and unlocking from screensaver mode.
 - tokenRemovalAction - If set to "1," enables the screensaver when a smart card is physically removed from the device.
@@ -83,12 +83,12 @@ Agencies may want to apply [additional smart card configuration](https://develop
 ### Step 3. Choose a Deployment Method
 An agency may deploy a plist through various remote mechanisms.
 1. Employ third-party Mobile Device Management (MDM) tools
-2. Leveraging an [Apple specific configuration tool](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"} via the App Store
-3. Direct configuration profile delivery via an email, webpage, or [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
+2. Leveraging an [Apple specific configuration tool](https://apps.apple.com/us/app/apple-configurator-2/id1037126344?mt=12){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} via the App Store
+3. Direct configuration profile delivery via an email, webpage, or [over-the-air profile delivery](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 If a remote deployment it not availabler, the administrator may also perform the configuration locally following Step 1 and 2.
 
 ## Helpful References
-1. [Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}
-2. [Apple Deployment Guide - Configure macOS for smart card-only authentication](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
-3. [Apple Deployment Guide - Advanced smart card options in macOS](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}
+1. [Apple Deployment Guide - Use a smart card in macOS](https://support.apple.com/guide/deployment/use-a-smart-card-depc705651a9/web){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [Apple Deployment Guide - Configure macOS for smart card-only authentication](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [Apple Deployment Guide - Advanced smart card options in macOS](https://support.apple.com/guide/deployment/advanced-smart-card-options-dep7b2ede1e3/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

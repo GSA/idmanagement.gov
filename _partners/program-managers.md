@@ -48,12 +48,12 @@ These playbooks are hosted on GitHub and provide common policy and patterns to h
 
 ## Training
 
-- [National Initiative for Cybersecurity Education (NICE)](https://www.nist.gov/itl/applied-cybersecurity/nice){:target="_blank"}{:rel="noopener noreferrer"} – A partnership of government, academia, and the private sector focused on cybersecurity education, training, and workforce development. The National Institute of Standards and Technology (NIST) leads NICE.
-- [Secure Technology Alliance (STA) Education and Certification Programs](https://www.securetechalliance.org/activities-education-and-certification-programs/){:target="_blank"}{:rel="noopener noreferrer"} – The STA offers educational and certification programs.
+- [National Initiative for Cybersecurity Education (NICE)](https://www.nist.gov/itl/applied-cybersecurity/nice){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – A partnership of government, academia, and the private sector focused on cybersecurity education, training, and workforce development. The National Institute of Standards and Technology (NIST) leads NICE.
+- [Secure Technology Alliance (STA) Education and Certification Programs](https://www.securetechalliance.org/activities-education-and-certification-programs/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – The STA offers educational and certification programs.
   
 
 ## Related Information
 
-- [National Cybersecurity Center of Excellence (NCCoE)](https://nccoe.nist.gov/){:target="_blank"}{:rel="noopener noreferrer"} – The NCCoE works with experts from industry, government, and academia to address businesses’ most pressing cybersecurity problems with practical, standards-based solutions using commercially available technologies.
-- [NIST Identity & Access Management](https://www.nist.gov/identity-access-management){:target="_blank"}{:rel="noopener noreferrer"} – the NIST Identity & Access Management Resource Center, 
+- [National Cybersecurity Center of Excellence (NCCoE)](https://nccoe.nist.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – The NCCoE works with experts from industry, government, and academia to address businesses’ most pressing cybersecurity problems with practical, standards-based solutions using commercially available technologies.
+- [NIST Identity & Access Management](https://www.nist.gov/identity-access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – the NIST Identity & Access Management Resource Center, 
 share efforts that strengthen the security, privacy, usability, and interoperability of solutions that meet an organization’s identity and access management needs throughout the system lifecycle.

@@ -15,7 +15,7 @@ Within the federal enterprise, Windows smart card logon with a PIV card (PIV log
 
 ## Logon Process Overview
 
-The figure below, from the “Smart card sign-in flow in Windows” section of the [Microsoft Certificate Requirements and Enumeration article](https://docs.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration#smart-card-sign-in-flow-in-windows){:target="_blank"}{:rel="noopener noreferrer"}, provides a detailed overview of how smart card logon works in supported versions of Windows.
+The figure below, from the “Smart card sign-in flow in Windows” section of the [Microsoft Certificate Requirements and Enumeration article](https://docs.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration#smart-card-sign-in-flow-in-windows){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, provides a detailed overview of how smart card logon works in supported versions of Windows.
 
 <img src="{{site.baseurl}}/assets/piv/ficam-logon-process-overview.png" alt="A detailed workflow diagram of how smart card logon works in supported versions of Windows.">
 
@@ -58,7 +58,7 @@ For our use, this complex process is simplified into the following workflows:
     <p>The PIV is damaged.</p>
     <h3>Diagnosis</h3>
     <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV may need to be replaced.</p>
-    <p>To confirm that the card is functional, you can use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="{{site.baseurl}}/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
+    <p>To confirm that the card is functional, you can use the <a class="usa-link usa-link--external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="{{site.baseurl}}/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
     <p><strong>On the client:</strong></p>
     <ol type="1">
       <li>Log in to Windows using a password.</li>
@@ -226,7 +226,7 @@ For our use, this complex process is simplified into the following workflows:
     <p><strong>Example 3: The revocation status is unreachable, or the revocation status signature cannot be validated due to an invalid trust path.</strong></p>
     <img src="{{site.baseurl}}/assets/piv/pivauth-example3.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow." width="766" height="652">
     <p><strong>Note:</strong> The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
-<p>You can also use the <a href="http://pkif.sourceforge.net/pitt.html" target="_blank" rel="noopener noreferrer">PKI Interoperability Test Tool (PITT)</a>, listed on the <a href="https://playbooks.idmanagement.gov/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, to validate the certificate path on the logon server. The <a href="http://pkif.sourceforge.net/pitt_usage.pdf" target="_blank" rel="noopener noreferrer">PITT Usage Guide</a> contains procedures for using the tool.</p>    
+<p>You can also use the <a class="usa-link usa-link--external" href="http://pkif.sourceforge.net/pitt.html" target="_blank" rel="noopener noreferrer">PKI Interoperability Test Tool (PITT)</a>, listed on the <a href="{{site.baseurl}}/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, to validate the certificate path on the logon server. The <a class="usa-link usa-link--external" href="http://pkif.sourceforge.net/pitt_usage.pdf" target="_blank" rel="noopener noreferrer">PITT Usage Guide</a> contains procedures for using the tool.</p>    
     <h3>Resolution</h3>
     <ol type="1">
       <li>On the domain controller, work through any path validation issues identified in the above steps and examples. Keep in mind that that path building comes before validation and that a path is built from the bottom up. In this instance, the PIV authentication certificate chains to a trust anchor, such as Federal Common Policy G2. <strong>Ensure that the correct trust anchor for your organization’s PIV credentials is installed on every domain controller.</strong> If you also trust certificates from other agencies and organizations, the appropriate roots and cross-certificates may need to be installed to complete the path. </li>

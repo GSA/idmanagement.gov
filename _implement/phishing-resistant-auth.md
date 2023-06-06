@@ -132,7 +132,7 @@ Date:<br>
 |:===:|:=============|=============|===============|
 |1|Which external certification body has certified or assessed your product to a NIST 800-63-3 assurance level? Provide certification documentation.| | |
 |2|Which FIPS 140 certification level(s) applies to your product?| | |
-|3|Is the product [TAA compliant](https://hallways.cap.gsa.gov/system/files/Commercial%20Software%20and%20the%20Trade%20Agreements%20Act.pdf){:target="_blank"}{:rel="noopener noreferrer"}?| | |
+|3|Is the product [TAA compliant](https://hallways.cap.gsa.gov/system/files/Commercial%20Software%20and%20the%20Trade%20Agreements%20Act.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}?| | |
 |4|What artifacts support supply chain security and software bill of materials measures?| | |
 |5|Does the product have a vulnerability management cycle?| | |
 |6|What methods are used for product security and interoperability testing?| | |

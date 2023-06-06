@@ -88,10 +88,10 @@ Yes.
 Please see [What Will Be Impacted?](#what-will-be-impacted). 
 
 ## Additional Resources
-1. [macOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT202858){:target="_blank"}{:rel="noopener noreferrer"}
-2. [iOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT204132){:target="_blank"}{:rel="noopener noreferrer"}
-3. [tvOS Available Trusted Root Certificates](https://support.apple.com/en-us/HT207231){:target="_blank"}{:rel="noopener noreferrer"}
-4. [Apple Keychains](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}{:rel="noopener noreferrer"}
-5. [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}{:rel="noopener noreferrer"}
-6. [Over-the-Air Profile Delivery and Configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}
-7. [Mobile Device Management Best Practices](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}{:rel="noopener noreferrer"}
+1. [macOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT202858){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [iOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT204132){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [tvOS Available Trusted Root Certificates](https://support.apple.com/en-us/HT207231){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [Apple Keychains](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5. [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+6. [Over-the-Air Profile Delivery and Configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+7. [Mobile Device Management Best Practices](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

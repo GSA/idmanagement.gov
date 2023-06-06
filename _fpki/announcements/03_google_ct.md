@@ -38,7 +38,7 @@ As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) f
 
 The requirements for CT are built into _browsers_. 
 
-- All roots that have been distributed _by one or more_ of the Microsoft, Android, Apple, or Mozilla trusted root programs are listed here: [Root Stores](https://cs.chromium.org/chromium/src/net/data/ssl/root_stores/README.md){:target="_blank"}{:rel="noopener noreferrer"}.
+- All roots that have been distributed _by one or more_ of the Microsoft, Android, Apple, or Mozilla trusted root programs are listed here: [Root Stores](https://cs.chromium.org/chromium/src/net/data/ssl/root_stores/README.md){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - When a government user browses to an intranet website, the user's workstation or mobile device will build one or more certificate paths to the enterprise or publicly trusted roots. 
 - The browser will compare the certificate path(s) to the list of roots that have _ever_ been included in the popular trust stores currently in use worldwide.
 - If any certificate in the trust chain matches one of the roots in the list, then the CT requirements will be in effect. 
@@ -183,9 +183,9 @@ You can check for CT compliance by using the steps below to verify the presence 
 6. If the certificate is compliant, it will display the CT log details under the **Certificate Transparency** heading. 
 
 ## Additional Resources
-1. [What is Certificate Transparency?](https://www.certificate-transparency.org/){:target="_blank"}{:rel="noopener noreferrer"}
-2. [Certificate Transparency Background](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}{:rel="noopener noreferrer"}
-3. [Certificate Transparency in Chrome--Detailed Information](http://www.certificate-transparency.org/certificate-transparency-in-chrome){:target="_blank"}{:rel="noopener noreferrer"}
-3. [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}{:rel="noopener noreferrer"}
-4. [How to Disable CT in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}{:rel="noopener noreferrer"}  
-5. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}{:rel="noopener noreferrer"}
+1. [What is Certificate Transparency?](https://www.certificate-transparency.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [Certificate Transparency Background](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [Certificate Transparency in Chrome--Detailed Information](http://www.certificate-transparency.org/certificate-transparency-in-chrome){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [How to Disable CT in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  
+5. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

@@ -148,7 +148,7 @@ General recommendations for trust and certificate chain management include:
 
 - COMMON should be used as the trusted root CA.
 - Management of root and intermediate CA certificates and distribution to network domains, workstations, servers and applications should be managed with group policy objects, secure automated distributions mechanisms, and enterprise policies and procedures to ensure updates are managed effectively.
-- NIST published an [Information Technology Laboratory (ITL) bulletin](http://csrc.nist.gov/publications/nistbul/july-2012_itl-bulletin.pdf){:target="_blank"}{:rel="noopener noreferrer"} in July 2012 which includes general practices to consider.
+- NIST published an [Information Technology Laboratory (ITL) bulletin](http://csrc.nist.gov/publications/nistbul/july-2012_itl-bulletin.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} in July 2012 which includes general practices to consider.
 
 Installation of the trusted root certificate and intermediate certificates is dependent upon operating systems and applications. Instructions for [downloading certificates](#download-root-and-intermediate-certificates) are at the end of this page.
 

@@ -25,7 +25,7 @@ A **_certification authority_** is a system that issues digital certificates. Th
 
 The Federal PKI (FPKI) is a network of certification authorities (CAs) that are either _root_, _intermediate_, or _issuing_ CAs.
 
-Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest level CAs in the FPKI hierarchy are the **_FPKI Trust Infrastructure CAs_**, which are operated and managed by the [Federal PKI Management Authority (FPKIMA)](https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority){:target="_blank"}{:rel="noopener noreferrer"} Program Office:
+Any CA in the FPKI may be referred to as a _Federal PKI CA_. The two highest level CAs in the FPKI hierarchy are the **_FPKI Trust Infrastructure CAs_**, which are operated and managed by the [Federal PKI Management Authority (FPKIMA)](https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} Program Office:
 
 - [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
 - [Federal Bridge Certification Authority](#federal-bridge-certification-authority)

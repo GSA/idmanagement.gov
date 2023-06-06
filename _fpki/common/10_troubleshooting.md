@@ -59,7 +59,7 @@ If you're still having problems, email us at fpkirootupdate@gsa.gov.
 
 It's possible the application or website you are attempting to authenticate to does not yet trust the Federal Common Policy CA G2 certificate or the new intermediate CA certificates issued by the Federal Common Policy CA G2.  Depending on how your system is configured, this may result in Transport Layer Security (TLS) client authentication errors - typically observed with the application or website not prompting a user for their certificate during authentication attempts.
 
-The steps below should **only** be performed by System Administrators and require [OpenSSL](https://www.openssl.org/){:target="_blank"}{:rel="noopener noreferrer"}.
+The steps below should **only** be performed by System Administrators and require [OpenSSL](https://www.openssl.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 **Recommended Steps**:
 1. Run the following OpenSSL command, replacing the placeholder below with the application or website's fully qualified domain name (FQDN):
@@ -160,7 +160,7 @@ The most common cause of path building errors on macOS is due to the full certif
 
 It's possible the application or website you are attempting to authenticate to has not yet distributed the Federal Common Policy CA G2 certificate or the new intermediate CA certificates issued by the Federal Common Policy CA G2.  Depending on how your system is configured, this may result in Transport Layer Security (TLS) client authentication errors - typically observed with the application or website not prompting a user for their certificate during authentication attempts.
 
-The steps below should **only** be performed by System Administrators and require [OpenSSL](https://www.openssl.org/){:target="_blank"}{:rel="noopener noreferrer"}.
+The steps below should **only** be performed by System Administrators and require [OpenSSL](https://www.openssl.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 **Recommended Steps**:
 1. Run the following OpenSSL command, replacing the placeholder below with the application or website's fully qualified domain name (FQDN):

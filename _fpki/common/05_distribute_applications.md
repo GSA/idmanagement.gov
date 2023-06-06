@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: fpkicommon
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a class=\"usa-link usa-link--external\"  href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/fpki/trust-stores/) to verify whether a certificate should be trusted. 
 

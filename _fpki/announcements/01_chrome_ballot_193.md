@@ -37,7 +37,7 @@ A government user will receive an "untrusted site" error when browsing to an int
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:70%;float:center;"}
 
 ## What Other Browsers Enforce This Requirement?
-Chrome is the only browser currently enforcing this requirement for TLS/SSL certificates. If other browser vendors decide to enforce this requirement, we will post updates to this announcement. Please also check the [FPKI-Guides' Issues](https://github.com/GSA/fpki-guides/issues){:target="_blank"}{:rel="noopener noreferrer"} for in-progress discussions.
+Chrome is the only browser currently enforcing this requirement for TLS/SSL certificates. If other browser vendors decide to enforce this requirement, we will post updates to this announcement. Please also check the [FPKI-Guides' Issues](https://github.com/GSA/fpki-guides/issues){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for in-progress discussions.
 
 ## What Should I Do?
 To prevent Chrome browsing errors:
@@ -45,4 +45,4 @@ To prevent Chrome browsing errors:
 2. Re-issue and re-install new TLS/SSL certificates for the impacted intranet websites and applications.
 
 ## Additional Resources
-<a name="1">1</a>. In March 2017, the [CA/B Forum](https://cabforum.org/){:target="_blank"}{:rel="noopener noreferrer"} passed [Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}{:rel="noopener noreferrer"}, which introduced the 825-day maximum lifetime requirement. 
+<a name="1">1</a>. In March 2017, the [CA/B Forum](https://cabforum.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} passed [Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, which introduced the 825-day maximum lifetime requirement. 

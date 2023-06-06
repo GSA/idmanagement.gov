@@ -112,7 +112,7 @@ There is a lack of standard terminology to distinguish between characteristics o
     <h4 class="usa-alert__heading">What's the Difference?</h4>
     <p class="usa-alert__text">
       All individuals who are issued PIV credentials are <strong>required</strong> to have common, minimum personnel vetting assurance as specified in 
-      <a class="usa-link" href="https://pages.nist.gov/FIPS201/FIPS201.html#s-2-1" target="_blank" rel="noopener noreferrer">FIPS 201 Section 2.1 Control Objectives</a>
+      <a class="usa-link usa-link--external" href="https://pages.nist.gov/FIPS201/FIPS201.html#s-2-1" target="_blank" rel="noopener noreferrer">FIPS 201 Section 2.1 Control Objectives</a>
       . Individuals with PIV-I credentials assert <strong>no personnel vetting assurance</strong> in a baseline, standardized manner.
     </p>
   </div>
@@ -225,10 +225,10 @@ Where personnel vetting is a concern for a federal agency, the agency may requir
 
 Basic technology requirements must be met for identity credentials to interact with the Federal Government’s PIV infrastructure. PIV-I credentials must conform to NIST technical specifications for PIV credentials, as defined in:
 
-* [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}
-* [NIST Special Publication 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}
-* [NIST Special Publication 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}
-* [NIST Special Publication 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}
+* [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* [NIST Special Publication 800-73](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* [NIST Special Publication 800-78](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* [NIST Special Publication 800-76](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 Further clarification of the NIST Special Publications is required to address: 
 
@@ -304,10 +304,10 @@ This section helps clarify these differences and the boundaries for federal agen
 
 There are four primary documents referenced for security controls and audit requirements for the systems responsible for issuing either PIV or PIV-I credentials:
 
-1. [NIST Special Publication 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final){:target="_blank"}{:rel="noopener noreferrer"} identifies the security control categories to be used for all systems
+1. [NIST Special Publication 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} identifies the security control categories to be used for all systems
 2. Federal PKI defines the [Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems]({{site.baseurl}}/partners/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}
-3. [NIST Special Publication 800-79-2](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"} identifies operational audits for the PIV credentialing activities
-4. Federal PKI defines the [FPKI Compliance Audit Requirements](https://www.idmanagement.gov/governance/fpkiaudit/#annual-review-requirements-for-all-certification-authorities).
+3. [NIST Special Publication 800-79-2](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} identifies operational audits for the PIV credentialing activities
+4. Federal PKI defines the [FPKI Compliance Audit Requirements]({{site.baseurl}}/governance/fpkiaudit/#annual-review-requirements-for-all-certification-authorities).
 
 For auditing, the Federal PKI requires:
 
@@ -357,7 +357,7 @@ Figure 3 shows the notional system boundaries of the required FISMA ATO for fede
 
 <img src="{{site.baseurl}}/assets/piv/pivi-cred-and-fisma-ato.png" alt="A diagram that displays an icon and label for PIV-I non-federal issuers on the left side of the diagram and an icon and a label for PIV-I federal issuers on the right side of the diagram. Four boxes appear in a grid below the PIV-I non-federal issuers label and four boxes appear in a grid below the PIV-I federal issuers label. The top set of boxes say Certification Authority (PKI). The bottom set of boxes say Registration Cred Mgmt service, proofing, lifecycle. There are arrows vertically and diagonally between the four boxes on the left side of the diagram and there are arrows vertically and diagonally between the four boxes on the right side of the diagram. On the left side of the diagram, the four boxes are labeled Identity Assurance. On the right side of the diagram, the two top boxes are labeled FISMA ATOs and the two bottom boxes are labeled FISMA ATOs. Three PIV-I card icons appear on the left side of the diagram and three PIV-I card icons appear on the right side of the diagram. The PIV-I card icons are labeled Authentication Assurance. On the left side of the diagram, there are arrows pointing from the bottom set of Identity Assurance boxes to the first set of PIV-I card icons. On the right side of the diagram, there are arrows pointing from the bottom set of FISMA ATO boxes to the second sent of PIV-I card icons." style="width:800px;" >
 
-In addition, federal agencies using PIV-I services must request from the provider the Registration Authority Agreement. The Registration Authority Agreement must explain how the provider has implemented the credential management and lifecycle management requirements of the certificate policy. The contents of the Registration Authority Agreement must be approved by the PIV-I provider’s policy authority as satisfactorily implementing the requirements, and submitted to the Federal PKI as part of the audit artifacts. See this template of a [registration authority agreement (click to download the word version)](https://www.idmanagement.gov/docs/fpki-ssp-raa.docx).
+In addition, federal agencies using PIV-I services must request from the provider the Registration Authority Agreement. The Registration Authority Agreement must explain how the provider has implemented the credential management and lifecycle management requirements of the certificate policy. The contents of the Registration Authority Agreement must be approved by the PIV-I provider’s policy authority as satisfactorily implementing the requirements, and submitted to the Federal PKI as part of the audit artifacts. See this template of a [registration authority agreement (click to download the word version)]({{site.baseurl}}/docs/fpki-ssp-raa.docx).
 
 Table 4 summarizes the FKI auditing and FISMA _Authority to Operate_ distinctions.
 
@@ -505,21 +505,21 @@ This appendix provides additional technical information in support of the techni
 # Appendix D: Document References
 
 ## Policies
-1. [HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}
-2. [OMB A-130: Management of Federal Information Resources](https://www.cio.gov/policies-and-priorities/circular-a-130/){:target="_blank"}{:rel="noopener noreferrer"}
+1. [HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [OMB A-130: Management of Federal Information Resources](https://www.cio.gov/policies-and-priorities/circular-a-130/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [X.509 Certificate Policy for the Federal Bridge Certification Authority]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf)
 4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf)
 
 ## Standards
-1. [FIPS 201: Personal Identity Verification (PIV) of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}
+1. [FIPS 201: Personal Identity Verification (PIV) of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Special Publications
-1. [NIST SP 800-37: Guide for the Security Certification and Accreditation of Federal Information Systems](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final){:target="_blank"}{:rel="noopener noreferrer"}
-2. [NIST SP 800-63: Digital Identity Guidelines](https://csrc.nist.gov/publications/detail/sp/800-63/3/final){:target="_blank"}{:rel="noopener noreferrer"}
-3. [NIST SP 800-73: Interfaces for Personal Identity Verification (4 Parts)](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}
-4. [NIST SP 800-76: Biometric Data Specification for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}
-5. [NIST SP 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}
-6. [NIST SP 800-79: Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}
+1. [NIST SP 800-37: Guide for the Security Certification and Accreditation of Federal Information Systems](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [NIST SP 800-63: Digital Identity Guidelines](https://csrc.nist.gov/publications/detail/sp/800-63/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [NIST SP 800-73: Interfaces for Personal Identity Verification (4 Parts)](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [NIST SP 800-76: Biometric Data Specification for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5. [NIST SP 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+6. [NIST SP 800-79: Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 # Footnotes
 

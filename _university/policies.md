@@ -30,22 +30,24 @@ Review the federal policies  that impact and shape the implementations of ICAM p
       {{policy.name}} ({{policy.pubdate}})
     </button>
   </h4>
+  <a class="gsa-no-dec" href="{{policy.url}}" target="{{policy.target}}" rel="noopener noreferrer">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{policy.doctype}}</span>
         </div>
         <p>{{policy.summary}}</p>
-        <div class="display-flex flex-column flex-align-end">
-            <span class="gsa-source">Source: {{policy.source}}</span>
-        </div>
         <hr/>
         <div class="display-flex flex-column flex-align-end">
-        <a href="{{policy.url}}" target="{{policy.target}}" rel="noopener noreferrer">
-            <button class="usa-button">View</button>
-        </a>
+            <span class="gsa-source usa-link usa-link--external">Source: {{policy.source}}</span>
         </div>
+        <!--
+        <div class="display-flex flex-column flex-align-end">
+            <button class="usa-button">View</button>
+        </div> 
+        -->
     </p>
   </div>
+  </a>
 </div>
 {% endfor %}

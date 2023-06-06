@@ -31,22 +31,24 @@ Review the federal standards that impact and shape the implementations of ICAM p
       {{standard.name}} ({{standard.pubdate}})
     </button>
   </h4>
+  <a class="gsa-no-dec" href="{{standard.url}}" target="{{standard.target}}" rel="noopener noreferrer">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose usa-prose gsa-target-accordion-content-area">
     <p>
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{standard.doctype}}</span>
         </div>
         <p>{{standard.summary}}</p>
-        <div class="display-flex flex-column flex-align-end">
-            <span class="gsa-source">Source: {{standard.source}}</span>
-        </div>
         <hr/>
         <div class="display-flex flex-column flex-align-end">
-        <a href="{{standard.url}}" target="{{standard.target}}" rel="noopener noreferrer">
-            <button class="usa-button">View</button>
-        </a>
+            <span class="gsa-source  usa-link usa-link--external">Source: {{standard.source}}</span>
         </div>
+        <!-- 
+        <div class="display-flex flex-column flex-align-end">
+            <button class="usa-button">View</button>
+        </div> 
+        -->
     </p>
   </div>
+  </a>
 </div>
 {% endfor %}

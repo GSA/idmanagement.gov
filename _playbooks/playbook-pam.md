@@ -67,19 +67,19 @@ Privileged users are managed as distinct and separate identities to decrease the
 1. Jeopardize sensitive information or infrastructure, whether knowingly or unknowingly.
 2. Have the potential to compromise all three core elements of information security: availability, confidentiality, and integrity.
 
-This Privileged Identity Playbook is a practical guide to **help federal agencies implement and manage a privileged user management function** as part of an overall agency ICAM program. Privileged user management will identify, track, monitor, and audit privileged users and accounts to actively decrease the cyber risk to an agency's mission. Agencies can use this playbook to help plan and implement privileged user management following government-wide best practices. This playbook includes a four-step process aligned with the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/why/icam/) designed for **insider threat, ICAM, and risk management professionals interested in identifying best practices for mitigating privileged user risk**. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission, and technical requirements. Other IT program participants, including cybersecurity program managers, may value incorporating this playbook approach in their planning. This playbook supplements existing federal IT policies and builds upon the [Office of Management and Budget Memorandum (OMB) Memo 19-17 - Enabling Mission of Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"} and [OMB Memo 22-09 - Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}, as well as existing federal identity guidance and playbooks.
+This Privileged Identity Playbook is a practical guide to **help federal agencies implement and manage a privileged user management function** as part of an overall agency ICAM program. Privileged user management will identify, track, monitor, and audit privileged users and accounts to actively decrease the cyber risk to an agency's mission. Agencies can use this playbook to help plan and implement privileged user management following government-wide best practices. This playbook includes a four-step process aligned with the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/why/icam/) designed for **insider threat, ICAM, and risk management professionals interested in identifying best practices for mitigating privileged user risk**. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission, and technical requirements. Other IT program participants, including cybersecurity program managers, may value incorporating this playbook approach in their planning. This playbook supplements existing federal IT policies and builds upon the [Office of Management and Budget Memorandum (OMB) Memo 19-17 - Enabling Mission of Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [OMB Memo 22-09 - Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, as well as existing federal identity guidance and playbooks.
 
 ## Key Terms
 
 Below are key terms used throughout this playbook. A linked term denotes an official term from a federal policy, NIST Glossary, or NIST publication. An unlinked term is defined for this document.
 
 - **Account compromise** is the unauthorized use of an account to disclose, modify, substitute, or use sensitive information.
-- [**Insider threat**](https://csrc.nist.gov/glossary/term/insider_threat){:target="_blank"}{:rel="noopener noreferrer"} is the potential for an insider to use their authorized access, wittingly or unwittingly, to harm the security of the United States. This threat can include espionage, terrorism, unauthorized disclosure of national security information, or the loss or degradation of departmental resources or capabilities.
+- [**Insider threat**](https://csrc.nist.gov/glossary/term/insider_threat){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the potential for an insider to use their authorized access, wittingly or unwittingly, to harm the security of the United States. This threat can include espionage, terrorism, unauthorized disclosure of national security information, or the loss or degradation of departmental resources or capabilities.
 - [**Functional privileged users**]({{site.baseurl}}/playbooks/dira/#step-1-identify-users-transactions-and-roles) can access information resources provided by the application and approval workflows, such as approving access requests.
-- [**Privileged account**](https://csrc.nist.gov/glossary/term/privileged_account){:target="_blank"}{:rel="noopener noreferrer"} is a system account used by a privileged user. A privileged account can belong to a single endpoint, network device, domain, database, or application. A privileged account can run [**privileged commands**](https://csrc.nist.gov/glossary/term/privileged_command){:target="_blank"}{:rel="noopener noreferrer"} which involve the control, monitoring, or administration of a system, including security functions and associated security-relevant information.
+- [**Privileged account**](https://csrc.nist.gov/glossary/term/privileged_account){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a system account used by a privileged user. A privileged account can belong to a single endpoint, network device, domain, database, or application. A privileged account can run [**privileged commands**](https://csrc.nist.gov/glossary/term/privileged_command){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} which involve the control, monitoring, or administration of a system, including security functions and associated security-relevant information.
 - **Privilege compromise** is either an adverse action of a privileged user or account through an insider threat or an account compromise.
-- [**Privileged User**](https://csrc.nist.gov/glossary/term/privileged_user){:target="_blank"}{:rel="noopener noreferrer"} is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or [**superuser**](https://csrc.nist.gov/glossary/term/superuser){:target="_blank"}{:rel="noopener noreferrer"}.
-- Unauthorized [**Privilege escalation**](https://csrc.nist.gov/glossary/term/privilege_escalation){:target="_blank"}{:rel="noopener noreferrer"} exploits a bug or flaw that allows for a higher privilege level than what would usually be permitted.
+- [**Privileged User**](https://csrc.nist.gov/glossary/term/privileged_user){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or [**superuser**](https://csrc.nist.gov/glossary/term/superuser){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+- Unauthorized [**Privilege escalation**](https://csrc.nist.gov/glossary/term/privilege_escalation){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} exploits a bug or flaw that allows for a higher privilege level than what would usually be permitted.
 
 ## Disclaimer
 
@@ -149,7 +149,7 @@ An account compromise is the unauthorized use of an account to perform an unwant
 
 A privileged user policy interacts with multiple initiatives across an agency. Examples include:
 
-- **High Value Asset (HVA)** - [OMB Memo 19-03](https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf){:target="_blank"}{:rel="noopener noreferrer"} outlines requirements to identify, track, and manage an agency's most critical assets. [Guidance from CISA](https://www.cisa.gov/sites/default/files/publications/Securing%20High%20Value%20Assets_Version%201.1_July%202018_508c.pdf){:target="_blank"}{:rel="noopener noreferrer"} recommends using individual accounts, logging key security events, and implementing multi-factor authentication for all HVA users, particularly privileged users.
+- **High Value Asset (HVA)** - [OMB Memo 19-03](https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} outlines requirements to identify, track, and manage an agency's most critical assets. [Guidance from CISA](https://www.cisa.gov/sites/default/files/publications/Securing%20High%20Value%20Assets_Version%201.1_July%202018_508c.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} recommends using individual accounts, logging key security events, and implementing multi-factor authentication for all HVA users, particularly privileged users.
 - **Insider threat** - Includes programs to detect and prevent unauthorized disclosure of sensitive information. An insider threat program provides, access to information, centralized information integration, analysis, response, insider threat awareness training, and user activity monitoring on government computers.
 - **Cybersecurity/ICAM** - Responsible for identity, credential, and access management services and coordination. Privileged Access Management is a service area under [Access Management]({{siate.baseurl}}arch/services/#access-management).
 - **Continuous Diagnostic and Mitigation (CDM)** - Cybersecurity tools, integration services, and dashboards to help agencies reduce the attack surface, increase visibility into cybersecurity posture, improve response, and streamline FISMA reporting.
@@ -179,11 +179,11 @@ Even though agency missions may differ, the objectives of privileged user manage
 4. Enforce least privilege by limiting overall functions and those performed remotely.
 5. Log privileged user activity and audit activity regularly.
 
-In addition to setting a policy, strategy, and technical direction, an agency should evaluate the risk of all users to its resources by conducting a [Digital Identity Risk Assessment]({{site.baseurl}}/playbooks/dira). The DIRA process identifies the risk of user transactions and determines a minimum identity assurance, authenticator assurance, and federation assurance level outlined in [NIST Special Publication 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html){:target="_blank"}{:rel="noopener noreferrer"}.
+In addition to setting a policy, strategy, and technical direction, an agency should evaluate the risk of all users to its resources by conducting a [Digital Identity Risk Assessment]({{site.baseurl}}/playbooks/dira). The DIRA process identifies the risk of user transactions and determines a minimum identity assurance, authenticator assurance, and federation assurance level outlined in [NIST Special Publication 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 {% include alert-info.html heading="Why Additional Controls?" content="Most attacks start by compromising lower-level accounts. An attacker can find an orphaned privileged account through network discovery and escalate their privileges to access applications, data, and compromise entire agency networks or data sets." %} 
 
-Metrics are an essential aspect of privileged user management which can help identify risks and efficiencies. The following metrics are modified from the [GSA DevSecOps Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_blank"}{:rel="noopener noreferrer"}.
+Metrics are an essential aspect of privileged user management which can help identify risks and efficiencies. The following metrics are modified from the [GSA DevSecOps Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <p align="center"><b>Table 3: Example Privileged User Metrics</b></p>
 
@@ -259,7 +259,7 @@ Once the definition of a privileged user is established, an agency can identify 
     <h4 class="usa-alert__heading">Protect Your DevOps Access</h4>
     <p class="usa-alert__text">
       DevOps tools are a primary attack target. An attacker may extract privileged account credentials from one environment (i.e., DEV) and use them in subsequent environments (i.e., production) which is what happened in the 
-      <a class="usa-link" href="https://www.cisa.gov/uscert/ncas/current-activity/2021/01/06/cisa-updates-emergency-directive-21-01-supplemental-guidance-and" target="_blank" rel="noopener noreferrer">SolarWinds Orion Network Management product compromise</a>
+      <a class="usa-link usa-link--external" class="usa-link" href="https://www.cisa.gov/uscert/ncas/current-activity/2021/01/06/cisa-updates-emergency-directive-21-01-supplemental-guidance-and" target="_blank" rel="noopener noreferrer">SolarWinds Orion Network Management product compromise</a>
       .
     </p>
   </div>
@@ -275,7 +275,7 @@ ICAM is the set of tools, policies, and systems an agency uses to provide the ri
 
 An agency should use existing processes, controls, programs, and available tools to manage its privileged user population and enterprise resources effectively. Please refer to [Appendix C: NIST SP 800-53 Privileged User Overlay](#appendix-c-nist-sp-800-53-privileged-user-overlay) for a mapping of controls defined in SP 800-53. These controls are countermeasures for how an agency can reduce unwanted behavior by its privileged user population.
 
-The [DHS CDM Program](https://www.cisa.gov/cdm){:target="_blank"}{:rel="noopener noreferrer"} provides a broad spectrum of tools that enable an agency to identify privileged user risk on an ongoing basis. It can also help prioritize these risks based on impact and allow agency security leadership to reduce the most significant privilege user challenges.
+The [DHS CDM Program](https://www.cisa.gov/cdm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provides a broad spectrum of tools that enable an agency to identify privileged user risk on an ongoing basis. It can also help prioritize these risks based on impact and allow agency security leadership to reduce the most significant privilege user challenges.
 
 ## Privileged Identity Management
 
@@ -305,7 +305,7 @@ Identity management is how an agency collects, verifies, and manages attributes 
 
 ## Privileged Credential Management
 
-Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies issue **unique Authenticator**** Assurance Level 3 credentials** for each privileged user. Credentials may include a PIV card or other phishing-resistant multi-factor cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}.
+Credential management is how an agency issues, manages, and revokes privileged credentials. Agencies issue **unique Authenticator**** Assurance Level 3 credentials** for each privileged user. Credentials may include a PIV card or other phishing-resistant multi-factor cryptographic hardware authenticator identified in [NIST Special Publication 800-63-3B](https://pages.nist.gov/800-63-3/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
@@ -323,7 +323,7 @@ An agency may use a privileged access gateway or management solution to enable a
 Access management is how an agency authenticates privileged users and authorizes access to protected services.
 
 1. **Enforce Multi-factor Authentication (MFA)** for all administrator access. This may include a combination of phishing-resistant multi-factor authentication factors as outlined in NIST Special Publication 800-63.
-2. **[Follow OMB Memo 22-09 guidance](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}** which states Privileged Access Management (PAM) solutions that provide ephemeral single-factor credentials for human access to a system should not be used as a general purpose substitute for multi-factor authentication, or for routine single-sign-on access to legacy systems in place of needed modernization of those systems.
+2. **[Follow OMB Memo 22-09 guidance](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}** which states Privileged Access Management (PAM) solutions that provide ephemeral single-factor credentials for human access to a system should not be used as a general purpose substitute for multi-factor authentication, or for routine single-sign-on access to legacy systems in place of needed modernization of those systems.
 3. **Privilege access requests** are completed regularly and ongoing. The ongoing activity may be called an access review or certification. Access reviews may be paper-based but plan to automate this process through a workflow or identity entitlement tool.
 4. **Monitor privileged user activity** via activity logging and regular log reviews. Additional controls may include keystroke logging and session recording based on risk assessment. Consider user behavior automated monitoring outlined in insider threat programs. Because of the heightened risk, an agency can hold privileged users to a higher monitoring standard than standard users.
 5. **Use dedicated workstations** with limited applications and internet connectivity. This limits the potential risk of remote access exploitation and malware. A dedicated workstation may be called a privileged access workstation, a jump box, or bastion host.
@@ -360,7 +360,7 @@ This step explains the technical capabilities necessary to accomplish privileged
 
 ## Privileged Identity Baseline Capabilities
 
-Understand the data flows and access types when designing the technical components of privileged user management. This section combines best practices from [NIST Special Publication 1800-18 Privileged Access Management](https://www.nccoe.nist.gov/financial-services/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"} and the [DHS Continuous Diagnostics and Mitigation PRIV function](https://community.max.gov/pages/viewpage.action?spaceKey=DHS&title=Technical){:target="_blank"}{:rel="noopener noreferrer"}. The minimum capability baseline should consist of the three elements below.
+Understand the data flows and access types when designing the technical components of privileged user management. This section combines best practices from [NIST Special Publication 1800-18 Privileged Access Management](https://www.nccoe.nist.gov/financial-services/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and the [DHS Continuous Diagnostics and Mitigation PRIV function](https://community.max.gov/pages/viewpage.action?spaceKey=DHS&title=Technical){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. The minimum capability baseline should consist of the three elements below.
 
 1. An **account discovery** identifies current and newly created privileged accounts. Look for accounts on these systems that can provide lateral movement or execute changes to the privileges or other accounts. Advanced discovery can identify when privileged access is inherited rather than directly entitled.
 
@@ -377,7 +377,7 @@ An agency should consider using a privileged access management (PAM) tool that c
 1. **Password vaulting** stores and rotates passwords managed by a PAM tool.
 
 1. **Session monitoring** records each privileged session. This can help with monitoring, logging, and auditing or be used for training purposes. A session recording can include an actual live screen recording or keystroke recording.
-2. **Advanced Automated Account Discovery** provides immediate control over rogue accounts and devices as soon as they are created or discovered. This feature is key to mitigate a [malicious Active Directory ticket-granting activity](https://www.cisa.gov/uscert/ncas/alerts/aa22-110a) such as "Kerberoasting" or a Golden Ticket attack.
+2. **Advanced Automated Account Discovery** provides immediate control over rogue accounts and devices as soon as they are created or discovered. This feature is key to mitigate a [malicious Active Directory ticket-granting activity](https://www.cisa.gov/uscert/ncas/alerts/aa22-110a){:class="usa-link usa-link--external"} such as "Kerberoasting" or a Golden Ticket attack.
 
 # Conclusion
 
@@ -386,32 +386,32 @@ Privileged users are at the core of protecting federal information technology as
 # Appendix A: Reference Documentation
 The following documentation references help inform the development and direction of a privileged user program.
 
-1. [National Insider Threat Policy, November 2012](https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy.pdf){:target="_blank"}{:rel="noopener noreferrer"} 
-   -  This policy sets two priorities to strengthen the protection and safeguarding of classified information. It also references [Executive Order 13587 (October 2011)](https://www.dni.gov/files/NCSC/documents/nittf/EO_13587.pdf){:target="_blank"}{:rel="noopener noreferrer"} as the primary authority to establish insider threat programs.
+1. [National Insider Threat Policy, November 2012](https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
+   -  This policy sets two priorities to strengthen the protection and safeguarding of classified information. It also references [Executive Order 13587 (October 2011)](https://www.dni.gov/files/NCSC/documents/nittf/EO_13587.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} as the primary authority to establish insider threat programs.
       1. Create the Insider Threat Task Force.
       2. Set the minimum standards for Executive Branch Insider Threat programs.
    
-2. [National Strategy for Information Sharing and Safeguarding, December 2012](https://www.dni.gov/files/ISE/documents/DocumentLibrary/2012infosharingstrategy.pdf){:target="_blank"}{:rel="noopener noreferrer"} 
+2. [National Strategy for Information Sharing and Safeguarding, December 2012](https://www.dni.gov/files/ISE/documents/DocumentLibrary/2012infosharingstrategy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
    - This strategy aims to strike the proper balance between sharing information with those who need it to keep our country safe and safeguarding it from those who would do us harm. As an agency works to extend its ICAM implementations across security domains, it is important to consider Goal #4 and Priority Objective #4 in relation to managing privileged users.
        - Goal #4 focuses on identifying, preventing, and mitigating insider threat across all domains.
        - Priority Objective #4 extends and implements the FICAM roadmap across all security domains. **Note:** The FICAM roadmap is superseded by the [FICAM architecture]({{site.baseurl}}/why/icam/){:target="_blank"}{:rel="noopener noreferrer"} and [accompanying playbooks]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"}.
   
-3. [National Insider Threat Task Force (NITTF)](https://www.dni.gov/index.php/ncsc-how-we-work/ncsc-nittf){:target="_blank"}{:rel="noopener noreferrer"}
+3. [National Insider Threat Task Force (NITTF)](https://www.dni.gov/index.php/ncsc-how-we-work/ncsc-nittf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
     - The primary mission of the NITTF is to develop a government-wide insider threat program to deter, detect, and mitigate insider threats, including safeguarding classified information from exploitation, compromise, or other unauthorized disclosure, and accounting for risk levels as well as any individual agency needs, missions, and systems.
 
-4. [OMB Memo 17-09 - Management of Federal High Value Assets](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+4. [OMB Memo 17-09 - Management of Federal High Value Assets](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
     - General guidance for the planning, identification, categorization, prioritization, reporting, assessment, and remediation of federal HVAs.
 
-5. [NIST Special Publication 1800-18 - Privileged Account Management for the Financial Services Sector](https://www.nccoe.nist.gov/projects/use-cases/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"}
+5. [NIST Special Publication 1800-18 - Privileged Account Management for the Financial Services Sector](https://www.nccoe.nist.gov/projects/use-cases/privileged-account-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
     - While this special publication is focused on the financial services industry, it also contains agnostic implementation best practices.
 
-6. [NIST Interagency Report 7966 - Security of Interactive and Automated Access Management Using Secure Shell (SSH)](https://csrc.nist.gov/publications/detail/nistir/7966/final){:target="_blank"}{:rel="noopener noreferrer"}
+6. [NIST Interagency Report 7966 - Security of Interactive and Automated Access Management Using Secure Shell (SSH)](https://csrc.nist.gov/publications/detail/nistir/7966/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
   - This publication assists organizations in understanding the basics of SSH interactive and automated access management in an enterprise, focusing on the management of SSH user keys.
 
-7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management]({{site.baseurl}}/arch/servicesframework/#access-management){:target="_blank"}{:rel="noopener noreferrer"}
+7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management]({{site.baseurl}}/arch/servicesframework/#access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
      - The FICAM Architecture is a framework for an agency to use in ICAM program and solution roadmap planning. Privileged Access Management is identified as a distinct service within the access management portion of the ICAM services framework.
 
-8. [Common Sense Guide to Mitigating Insider Threats (6th Edition), February 2019](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644){:target="_blank"}{:rel="noopener noreferrer"}
+8. [Common Sense Guide to Mitigating Insider Threats (6th Edition), February 2019](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
     - The Software Engineering Institute at Carnegie Mellon University’s Insider Threat Center released the Common Sense Guide to provide the federal government and industry with recommendations on insider threat mitigation, based on a database of more than 700 cases. This work was sponsored by the Department of Homeland Security, Office of Cybersecurity and Communications and the U.S. Secret Service. The Common Sense Guide presents readers with 19 best practices to mitigate insider threats.
 
 # Appendix B: Privileged User Agreement

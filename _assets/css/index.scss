@@ -17,6 +17,11 @@
   color:#005ea2;
 }
 
+// Use to undecorate a span of content withing an anchor tag
+.gsa-no-dec {
+  text-decoration: none;
+  color: inherit;
+}
 
 // GSA Expand and Collapse buttons, used at the top of a list of accordions as an html button group
 .expand-collapse-button-group {

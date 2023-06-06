@@ -24,12 +24,12 @@ The tools enable entity representatives to perform testing directly, with result
 
 For more information, see the following web sites:
 -	Card Conformance Tool 
-     - Latest release: [https://github.com/GSA/piv-conformance/releases](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} 
-     - Support page: [https://github.com/GSA/piv-conformance/wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"} 
+     - Latest release: [https://github.com/GSA/piv-conformance/releases](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
+     - Support page: [https://github.com/GSA/piv-conformance/wiki](https://github.com/GSA/piv-conformance/wiki){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 
 - Certificate Profile Conformance Tool 
-     - Latest release: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"} 
-     - Support page: [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}  
+     - Latest release: [https://github.com/GSA/cpct-tool/releases](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
+     - Support page: [https://github.com/GSA/cpct-tool/wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  
 
 ## Who can I contact for help or more information?
 Email us at <span>fpki</span><span>@</span><span>gsa</span><span>.</span><span>gov</span>.

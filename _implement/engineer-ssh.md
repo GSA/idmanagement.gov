@@ -38,7 +38,7 @@ Commercial solutions are also available.
 ### SSH Using PuTTY-CAC
 
 PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (Pageant isn't needed with PuTTY-CAC for this solution.)
-1. You'll need to download [**PuTTY-CAC**](https://www.github.com/NoMoreFood/putty-cac/releases){:target="_blank"}{:rel="noopener noreferrer"} to _C:\ssh\putty.exe_ or a similar folder. Select either _32-bit_ or _64-bit_, based on your Windows OS. (Pageant and MSI Installers aren't needed.)
+1. You'll need to download [**PuTTY-CAC**](https://www.github.com/NoMoreFood/putty-cac/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to _C:\ssh\putty.exe_ or a similar folder. Select either _32-bit_ or _64-bit_, based on your Windows OS. (Pageant and MSI Installers aren't needed.)
 2. Double-click on _putty.exe_ and insert your PIV/CAC card into your card reader.
 3. At the **PuTTY Configuration** window, go to _Category:_ &gt; _Connection_ &gt; _SSH_ &gt; _Certificate_. Click the _Set CAPI Cert..._ button and _OK_.
 <br><br>
@@ -72,7 +72,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 
 WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an SSH authentication agent that uses Microsoft's CAPI.  
 
-1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder. Select [_32-bit_](https://github.com/NoMoreFood/putty-cac/blob/master/binaries/x86/pageant.exe){:target="_blank"}{:rel="noopener noreferrer"} or [_64-bit_](https://github.com/NoMoreFood/putty-cac/blob/master/binaries/x64/pageant.exe){:target="_blank"}{:rel="noopener noreferrer"}, based on your Windows OS. 
+1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder. Select [_32-bit_](https://github.com/NoMoreFood/putty-cac/blob/master/binaries/x86/pageant.exe){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} or [_64-bit_](https://github.com/NoMoreFood/putty-cac/blob/master/binaries/x64/pageant.exe){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, based on your Windows OS. 
 2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
 3. Double-click _WinSCP-Setup.exe_ to launch the _WinSCP installer_ and use the recommended installation settings.
 4. Double-click _pageant.exe_ to launch **Pageant**. 
@@ -145,7 +145,7 @@ You can use OpenSC on your macOS computer to authenticate to a remote server wit
 
 {% include alert-warning.html heading = "Use OpenSC Version Greater Than 0.20.0 to avoid Authentication Errors" content="If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED." %}
 
-1. Install [OpenSC](https://github.com/OpenSC/OpenSC/wiki#download){:target="_blank"}{:rel="noopener noreferrer"}. 
+1. Install [OpenSC](https://github.com/OpenSC/OpenSC/wiki#download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 2. Insert your PIV/CAC into your card reader.
 3. To view the certificates on your Mac, enter:  
      ```

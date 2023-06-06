@@ -15,7 +15,7 @@ subnav:
       href: '#defining-kerberos-policies-for-reauthentication'
 ---
 
-The U.S. federal government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smart card (PIV) logon and should be referenced first.
+The U.S. federal government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smart card (PIV) logon and should be referenced first.
 
 The information on this page is intended to answer questions and identify the most commonly used configuration options.  For a full reference of options for each operating system, please refer to configuration guides published by other sources online.
 
@@ -66,4 +66,4 @@ Group policies can be configured by domain administrators to align with local se
 
 These prompts happen when the kerberos ticket lifetime expires and a new authentication event is required. User is set to user based enforcement, which requires a new PKINIT event with the domain controller.
 
-You can find additional information on configuring kerberos policies given the following [reference documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket){:target="_blank"}{:rel="noopener noreferrer"}.
+You can find additional information on configuring kerberos policies given the following [reference documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.

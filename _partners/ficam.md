@@ -23,9 +23,9 @@ subnav:
 
 ## Identity, Credential, and Access Management Subcommittee
 
-The [Identity, Credential, and Access Management Subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Federal Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}. 
+The [Identity, Credential, and Access Management Subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Federal Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
-The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the federal government and supports collaborative government-wide efforts to:
+The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the federal government and supports collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;
 - Coordinate interagency efforts to meet agency mission needs;
 - Identify gaps in policies, procedures, standards, guidance, and services; and
@@ -40,15 +40,15 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://g
 
 ### Membership and Meetings
 
-Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"} for more information. Access to the page requires multifactor authentication using either Max Secure+ or a PIV/CAC.
+Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires multifactor authentication using either Max Secure+ or a PIV/CAC.
 
 ### ICAMSC Working Groups
 
-The ICAMSC charters working groups based on a defined purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}. Send an email to icam at gsa dot gov for more information or to join a working group.
+The ICAMSC charters working groups based on a defined purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Send an email to icam at gsa dot gov for more information or to join a working group.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| [**Physical Access Control Systems Modernization (PACSMod)**](https://community.max.gov/display/Egov/PACSMod+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Facilitate the implementation and use of the technology and processes related to modernizing electronic-PACS (ePACS) within the federal government (USG). | By September 30, 2021, develop a PACS Assessment Toolkit, a self-assessment that agencies can use to assess the FICAM compliance of PACS implementations. | Federal employees and designated contractors operating a PACS. | Monthly |
+| [**Physical Access Control Systems Modernization (PACSMod)**](https://community.max.gov/display/Egov/PACSMod+Working+Group){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} | Facilitate the implementation and use of the technology and processes related to modernizing electronic-PACS (ePACS) within the federal government (USG). | By September 30, 2021, develop a PACS Assessment Toolkit, a self-assessment that agencies can use to assess the FICAM compliance of PACS implementations. | Federal employees and designated contractors operating a PACS. | Monthly |
 
 ### Other ICAM Working Groups
 
@@ -56,7 +56,7 @@ Other ICAM working groups may be charted under other committess or subcommittees
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| [**Derived-PIV Working Group**](https://community.max.gov/display/Egov/Derived-PIV+Working+Group){:target="_blank"}{:rel="noopener noreferrer"} | Accelerate the implementation of mobile identity management across the federal government. | Document and share PKI and non-PKI use cases to increase the available technical and information resources. Provide a feedback look to inform policy and standard. | Federal employees and designated contractors | Monthy |
+| [**Derived-PIV Working Group**](https://community.max.gov/display/Egov/Derived-PIV+Working+Group){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} | Accelerate the implementation of mobile identity management across the federal government. | Document and share PKI and non-PKI use cases to increase the available technical and information resources. Provide a feedback look to inform policy and standard. | Federal employees and designated contractors | Monthy |
 
 ### ICAM Community Listserv
 
@@ -82,7 +82,7 @@ FPKIPA is co-chaired by the GSA Office of Government-wide Policy. The GSA Office
 
 ### Membership and Meetings
 
-Each federal agency’s CIO appoints members and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} for information on membership requirements, voting rights, etc.
+Each federal agency’s CIO appoints members and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for information on membership requirements, voting rights, etc.
 
 FPKIPA members meet in the morning on the second Tuesday of each month. Contact fpki at gsa dot gov to participate in the FPKIPA or its working groups.
 

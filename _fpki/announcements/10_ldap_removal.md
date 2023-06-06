@@ -21,7 +21,7 @@ The FPKIMA team is turning off its sole remaining LDAP repository services on 10
 **Mitigating Factors:**
 The proposed action should not impact FPKI relying parties, provided they are properly configured to validate end entity certificates up to the Federal Common Policy CA G2 (FCPCAG2).  This action is further reinforced given the following considerations:
 
-- The associated HTTP repository is still available - [http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
+- The associated HTTP repository is still available - [http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c){:class="usa-link usa-link--external"}
 - LDAP support was deprecated in 2013, and the last certificate issued by the old FCPCA with an FPKI LDAP URI expired in 2020 
 - The old FCPCA Self-signed root certificate expires in 2030 and contains one LDAP URI in the SIA to a Directory entry that contains no certificates
 

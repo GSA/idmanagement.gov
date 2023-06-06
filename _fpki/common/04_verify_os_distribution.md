@@ -17,7 +17,7 @@ subnav:
     href: '#linux-and-unix-solutions'
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a class=\"usa-link usa-link--external\"  href=\"https://github.com/GSA/ficam-playbooks/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been distributed to your agency's workstations and devices, use one of these options:
 

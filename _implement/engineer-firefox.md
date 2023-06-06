@@ -30,7 +30,7 @@ OpenSC will enable a user's PIV credential to work with Firefox and some signing
 
 First, you will need to install and test **OpenSC**. OpenSC has installers for multiple operating systems, including Windows, macOS, and Linux flavors. The installers can be downloaded directly from GitHub and the OpenSC wiki:
 
-* [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}{:rel="noopener noreferrer"}
+* [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 When installing OpenSC, you need to consider some items that are specific for the federal government: 
 

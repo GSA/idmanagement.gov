@@ -172,14 +172,14 @@ Then the complete certification path is checked for the correct
 - Certification path constraints
 
 If all these checks pass, the certification path is considered valid. The sections below provide additional details on these steps.
-It is worth noting that some aspects of path validation may be successfully incorporated with the path discovery process. Although these techniques are not discussed in this playbook, they are discussed in detail in [RFC 4158](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"}.
+It is worth noting that some aspects of path validation may be successfully incorporated with the path discovery process. Although these techniques are not discussed in this playbook, they are discussed in detail in [RFC 4158](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Informative status</h4>
     <p class="usa-alert__text">
       Certification path validation is a process defined in 
-      <a class="usa-link" href="https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509" target="_blank" rel="noopener noreferrer">Recommendation ITU-T X.509</a>
+      <a  class="usa-link usa-link--external" href="https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509" target="_blank" rel="noopener noreferrer">Recommendation ITU-T X.509</a>
       . RFC 5280 is a profile of X.509 and contains a subset of the functionality deemed necessary for interoperability in an Internet-connected environment.  X.509 should be consulted in any case where RFC 5280 content is in question, unclear, or silent. This playbook aims to provide readers with a summary of some core certification path validation requirements, it should not be considered authoritative.
     </p>
   </div>
@@ -283,11 +283,11 @@ PDVal is a complex subject. For more detailed technical information about PDVal,
 
 [Understanding Certification Path Construction](http://www.oasis-pki.org/pdfs/Understanding_Path_construction-DS2.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This white paper is old but provides a helpful PDVal overview. 
 
-[RFC 5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://www.rfc-editor.org/rfc/rfc5280.html){:target="_blank"}{:rel="noopener noreferrer"} - This document describes path validation in detail.
+[RFC 5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://www.rfc-editor.org/rfc/rfc5280.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This document describes path validation in detail.
 
-[RFC 4158: Internet X.509 Public Key Infrastructure: Certification Path Building](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"} - This document provides essential information on path discovery.
+[RFC 4158: Internet X.509 Public Key Infrastructure: Certification Path Building](https://www.rfc-editor.org/rfc/rfc4158.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This document provides essential information on path discovery.
 
-[Recommendation ITU-T X.509](https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509){:target="_blank"}{:rel="noopener noreferrer"} - This recommendation provides information on public-key and attribute certificate frameworks.
+[Recommendation ITU-T X.509](https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=X.509){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This recommendation provides information on public-key and attribute certificate frameworks.
 
 
 

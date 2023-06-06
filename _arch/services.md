@@ -35,8 +35,8 @@ The following organizations offer Identity, Credential, and Access Management se
 
 ### Government Identity Services
 
-- [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"} – Provides agencies with a PIV credentialing service.
-- [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
+- [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Provides agencies with a PIV credentialing service.
+- [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
 - [FPKI Shared Service Providers]({{site.baseurl}}/who/trust-services/#government-identity-services) – Digital certificates for Federal agencies.
 
 ### Business Identity Services
@@ -46,7 +46,7 @@ The following organizations offer Identity, Credential, and Access Management se
 
 ### FedRAMP
 
-- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"} website contains a marketplace with federal workforce and citizen identity products.
+- The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} website contains a marketplace with federal workforce and citizen identity products.
 
 
 <!-- from https://www.idmanagement.gov/buy/#pacs-implementer-self-assessment-toolkit -->
@@ -74,7 +74,7 @@ What is the chip on your PIV credential? In the easiest terms, it's a computer. 
 
 {% include alert-info.html heading = "Do you have a debit card with a chip or a smartphone with a SIM card?" content="These are both examples of similar technology that we use every day in our lives and help us secure information.  You can't use your PIV credential to withdraw money, nor do you use your debit card to log in to your computer or federal applications—but you can see how similar technology is used every day." %}
 
-Most applications that use PIV credentials leverage information stored on the chip and we call this information the _logical elements_.  These elements are defined in the [NIST Special Publication 800-73 series document.](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+Most applications that use PIV credentials leverage information stored on the chip and we call this information the _logical elements_.  These elements are defined in the [NIST Special Publication 800-73 series document.](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 The following electronic elements authenticate the PIV credential as a device:  
 
@@ -144,15 +144,15 @@ Review the information on this site if you are interested in PIV credentials or 
 
 If you are interested in the bits and bytes of PIV credentials, you can review the standards (see below), particularly if you develop products such as hardware or software that are _specific_ to PIV credentials for the U.S. federal government. (For most users and engineers, the standards may be too detailed for your needs.)
 
-To review the standards, there is a [National Institute of Standards and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"} with all PIV-related standards. Here are links to some of the most common standards:
+To review the standards, there is a [National Institute of Standards and Technology (NIST) website](http://csrc.nist.gov/groups/SNS/piv/standards.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} with all PIV-related standards. Here are links to some of the most common standards:
 
-- [**FIPS 201**](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the issuance and management of PIV credentials.
-- [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the interface and data elements of PIV credentials.
-- [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
+- [**FIPS 201**](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} specifies the issuance and management of PIV credentials.
+- [**NIST Special Publication 800-73, "Interfaces for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-73/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} specifies the interface and data elements of PIV credentials.
+- [**NIST Special Publication 800-76, "Biometric Data Specification for Personal Identity Verification"**](https://csrc.nist.gov/publications/detail/sp/800-76/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} specifies the technical acquisition and formatting requirements for biometric data of PIV credentials.
 
 ## Test a PIV Card
 
-The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/wiki/User-Guide){:target="_blank"}{:rel="noopener noreferrer"} can remotely test PIV and Personal Identity Verification–Interoperable (PIV-I) on several common operating systems. The purpose of the CCT is to validate that commercially available PIV and PIV-I comply with relevant standards.
+The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/wiki/User-Guide){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} can remotely test PIV and Personal Identity Verification–Interoperable (PIV-I) on several common operating systems. The purpose of the CCT is to validate that commercially available PIV and PIV-I comply with relevant standards.
 
 <!-- from  https://playbooks.idmanagement.gov/piv/gettingstarted/ -->
 
@@ -175,7 +175,7 @@ Card readers are available in many shapes and sizes to fit both the PIV credenti
 
 {% include alert-info.html heading="ISO 7816" content="If you need to buy a card reader for computers, you will need one that specifies support for ISO 7816." %}
 
-You can buy a card reader for personal use from a number of commercial online retailers.  When buying card readers for your agency, you can use [GSA Advantage](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"} to directly purchase the card readers.
+You can buy a card reader for personal use from a number of commercial online retailers.  When buying card readers for your agency, you can use [GSA Advantage](https://www.gsaadvantage.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to directly purchase the card readers.
 
 Before you buy a card reader, look around and ensure that you don't already have one.  A large portion of government laptops already have card readers, and desktop computers may have keyboards with built-in readers.
 
@@ -185,7 +185,7 @@ Mac OSX or Linux-based computers often don’t have card readers built in. If th
 
 For PIV credentials, _middleware_ refers to the computer software or drivers that allow the computer to interact with the PIV credentials to support authentication, digital signatures, encryption, and integrations with your software tools.
 
-For common PIV credential usage scenarios, the table below outlines the _general smartcard middleware_ available as open or government source or included in operating systems for use scenarios.  Commercial options for PIV middleware are available and the list of NIST-certified PIV middleware can be viewed [here on the NIST website](http://csrc.nist.gov/groups/SNS/piv/npivp/validation.html){:target="_blank"}{:rel="noopener noreferrer"}.
+For common PIV credential usage scenarios, the table below outlines the _general smartcard middleware_ available as open or government source or included in operating systems for use scenarios.  Commercial options for PIV middleware are available and the list of NIST-certified PIV middleware can be viewed [here on the NIST website](http://csrc.nist.gov/groups/SNS/piv/npivp/validation.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 {% include alert-info.html content="Consider how to support your email client software and virtual private network software, and think about which browsers are used if you're choosing middleware for all your agency enterprise users." %}
 
@@ -213,7 +213,7 @@ _Middleware_ as a general computer term can encompass any software that provides
 
 > _Client side software which implements common functions for an operating system and cryptographic libraries to interface with PIV credentials or other smart cards for usage.  The general smart card middleware may implement functions to support authentication, digital signatures, encryption, and integrations with multiple operating system cryptographic libraries._
 
-For common PIV credential usage scenarios, we outline the _general smart card middleware_ available as open or government source or included in operating systems for use scenarios.  Commercial options for PIV middleware are available and the list of NIST-certified PIV middleware can be viewed [here on the NIST website](http://csrc.nist.gov/groups/SNS/piv/npivp/validation.html){:target="_blank"}{:rel="noopener noreferrer"}.
+For common PIV credential usage scenarios, we outline the _general smart card middleware_ available as open or government source or included in operating systems for use scenarios.  Commercial options for PIV middleware are available and the list of NIST-certified PIV middleware can be viewed [here on the NIST website](http://csrc.nist.gov/groups/SNS/piv/npivp/validation.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 
 ## Next Steps

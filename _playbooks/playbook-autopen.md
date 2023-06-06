@@ -51,7 +51,7 @@ This playbook outlines the process for an agency to implement a Digital Autopen 
 2. [Define controls](#step-2-define-controls) to ensure the certificate and associated key are used only for the intended purpose. 
 3. [Obtain a role-based digital signature certificate](#step-3-obtain-a-digital-autopen-certificate) from a Federal Public Key Infrastructure (PKI) Shared Service Provider. 
 
-This playbook recommends using a role-based signature certificate issued to a hardware device (e.g., smart card, USB hardware device, or other FIPS–140 Level 2  certified hardware) from a [Federal PKI Certification Authority]({{site.baseurl}}/partners/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. [Federal Agency Certification Authorities]({{site.baseurl}}/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate on their own. The digital autopen certificate can only digitally sign documents. An agency should consider additional controls to limit its use only to sign *Federal Register* documents. This playbook supports [OMB Circular A-130 goals](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}, including developing and implementing processes to support employee digital signatures.
+This playbook recommends using a role-based signature certificate issued to a hardware device (e.g., smart card, USB hardware device, or other FIPS–140 Level 2  certified hardware) from a [Federal PKI Certification Authority]({{site.baseurl}}/partners/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. [Federal Agency Certification Authorities]({{site.baseurl}}/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate on their own. The digital autopen certificate can only digitally sign documents. An agency should consider additional controls to limit its use only to sign *Federal Register* documents. This playbook supports [OMB Circular A-130 goals](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, including developing and implementing processes to support employee digital signatures.
 
 Send any questions on the process to ICAM at gsa.gov. 
 
@@ -92,7 +92,7 @@ Federal agencies must publish documents in the *Federal Register* for various re
 2. Travel situations outside of normal working hours that require Federal Register submission.
 3. Efficiency when multiple documents must be signed.
 
-The OFR outlines signing requirements in the [Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}. There are three main requirements.
+The OFR outlines signing requirements in the [Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. There are three main requirements.
 
 1. The signer must be a federal employee with the authority to act for an agency. Laws or Executive Orders define which agency is the regulatory body, while an agency determines who has the authority to sign Federal Register documents.
 2. The title in the signature block must be related to the authority to sign the document. It cannot include honorary titles or titles associated with a different agency role.
@@ -106,7 +106,7 @@ Figure 1. Named Delegation Example
 
 However, in some circumstances, only the federal executive has the authority to sign a Federal Register document. The Federal Register document may face various legal challenges if not signed by the proper authority. This paper proposes a second option when the Authorizing Sponsor completes an official agency delegation of authority process to authorize the use of a digital autopen. A digital autopen leverages a Federal PKI role-based digital signature certificate. **This option is the method proposed by this paper and the focus for the remainder of this paper**.
 
-A digital signature is a cryptographically secure electronic signature. An agency achieves the cryptographic component by using a PKI certificate. For more information on the difference between electronic and digital signatures, see the [Federal CIO Council guidance on the Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}. An agency can request a role-based digital signature certificate from a Federal PKI Shared Service Provider. A PIV card is issued to a single person and not shared under any circumstance. 
+A digital signature is a cryptographically secure electronic signature. An agency achieves the cryptographic component by using a PKI certificate. For more information on the difference between electronic and digital signatures, see the [Federal CIO Council guidance on the Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. An agency can request a role-based digital signature certificate from a Federal PKI Shared Service Provider. A PIV card is issued to a single person and not shared under any circumstance. 
 
 This playbook outlines the process for federal agencies to create a Federal Register digital autopen process. It outlines controls around the digital autopen certificate to meet the OFR's digital signature requirements for Federal Register documents and federal cybersecurity. For instructions on digitally signing a Federal Register document, see the [FICAM Playbook Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/).
 
@@ -211,8 +211,8 @@ This paper outlines a process for an agency to create and leverage a digital aut
 
 ## Appendix A. References
 
-1. [Office of the Federal Register's Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-2. [Federal CIO Council & Federal Public Key Infrastructure Policy Authority (FPKIPA) - Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+1. [Office of the Federal Register's Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [Federal CIO Council & Federal Public Key Infrastructure Policy Authority (FPKIPA) - Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}
 4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -237,7 +237,7 @@ Resolution: Pending final digital autopen paper.
 
 ### Recommendation 4. Update the Federal CIO E-Signature Document
 
-Recommendation: Update the [Federal CIO E-signature document](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"} to reference this paper.
+Recommendation: Update the [Federal CIO E-signature document](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to reference this paper.
 Resolution: Pending final digital autopen paper.
 
 ## Appendix C. Templates

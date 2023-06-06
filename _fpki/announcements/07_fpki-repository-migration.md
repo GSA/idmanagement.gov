@@ -42,9 +42,9 @@ The migration will take place on April 22, 2019.
 ## What Should I Do?
 This change will be transparent to Relying Parties, and should not require any agency action. 
 
-The FPKI Community Interoperability Test Environment HTTP repository (http://http.cite.fpki-lab.gov) has used the new service since June 2018 with no reported issues. 
+The FPKI Community Interoperability Test Environment HTTP repository [http://http.cite.fpki-lab.gov](http://http.cite.fpki-lab.gov){:class="usa-link usa-link--external"} has used the new service since June 2018 with no reported issues. 
 
-A new base URL is available for anyone who would like to test the planned repository service update before the April 22, 2019 migration. For example, to download a copy of the Federal Common Policy CA certificate using the cloud-based hosting solution, navigate to http://cdn.http.fpki.gov/fcpca/fcpca.crt. 
+A new base URL is available for anyone who would like to test the planned repository service update before the April 22, 2019 migration. For example, to download a copy of the Federal Common Policy CA certificate using the cloud-based hosting solution, navigate to [http://cdn.http.fpki.gov/fcpca/fcpca.crt](http://cdn.http.fpki.gov/fcpca/fcpca.crt){:class="usa-link usa-link--external"}. 
 
 Contact fpki-help@gsa.gov with the subject “CDN Test Issue” if you'd like to learn more about testing or if you have any issues.
 

@@ -189,7 +189,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <h2 id="use-case">Use Case</h2>
     <p>In this use case, an administrator needs to issue a credential to an employee or contractor.</p>
     <p><strong>Note:</strong> The preferred credential for employees and contractors is a PIV card. For cases where you cannot issue a PIV card, you must use a combination of factors to reach at least an Authenticator Assurance Level 2 (AAL2) credential.</p>
-    <p>For more information about authentication and AALs, see <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec4" target="_blank" rel="noopener noreferrer">NIST SP 800-63B</a> (Section 4).</p>
+    <p>For more information about authentication and AALs, see <a class="usa-link usa-link--external" href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec4" target="_blank" rel="noopener noreferrer">NIST SP 800-63B</a> (Section 4).</p>
     <p><img src="{{site.baseurl}}/assets/arch/usecases/4-IconKey.png" alt="Icon Key for the diagrams that follow." /></p>
     <table>
       <tr>

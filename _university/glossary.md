@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: university
 ---
 
-{% include alert-info.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
+{% include alert-info.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a class=\"usa-link usa-link--external\" href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
 
 
 ### Access Control 
@@ -51,12 +51,12 @@ A measurable, physical characteristic or personal behavioral trait used to recog
 
 ### BIO
 
-A [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism that is implemented by using a fingerprint or iris images data object sent from the PIV credential to the PACS and which is matched to the credential holder’s live scan.
+A [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} authentication mechanism that is implemented by using a fingerprint or iris images data object sent from the PIV credential to the PACS and which is matched to the credential holder’s live scan.
 
 
 ### BIO-A
 
-A [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism in which the BIO authentication mechanism is performed in the presence of an attendant who supervises the use of the PIV credential and the submission of the PIN and the sample biometric by the credential holder.
+A [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} authentication mechanism in which the BIO authentication mechanism is performed in the presence of an attendant who supervises the use of the PIV credential and the submission of the PIN and the sample biometric by the credential holder.
 
 
 ### BIO(-A)

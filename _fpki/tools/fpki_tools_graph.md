@@ -11,7 +11,7 @@ sidenav: fpkitools
 
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here](https://github.com/GSA/ficam-playbooks/raw/federalist-pages/_fpki/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** 
+The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here](https://github.com/GSA/ficam-playbooks/raw/federalist-pages/_fpki/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b){:class="usa-link usa-link--external"}.** 
 
 The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs. 
 
@@ -37,4 +37,4 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 
 ### Acknowledgment
 
-The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://notary.icsi.berkeley.edu/trust-tree/){:target="_blank"}{:rel="noopener noreferrer"}. 
+The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://notary.icsi.berkeley.edu/trust-tree/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 

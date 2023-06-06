@@ -29,22 +29,24 @@ Review the federal laws that impact and shape the implementations of ICAM progra
       {{law.name}} ({{law.pubdate}})
     </button>
   </h4>
+  <a class="gsa-no-dec" href="{{law.url}}" target="{{law.target}}" rel="noopener noreferrer">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{law.doctype}}</span>
         </div>
         <p>{{law.summary}}</p>
-        <div class="display-flex flex-column flex-align-end">
-            <span class="gsa-source">Source: {{law.source}}</span>
-        </div>
         <hr/>
-        <div class="display-flex flex-column flex-align-end">
-        <a href="{{law.url}}" target="{{law.target}}" rel="noopener noreferrer">
-            <button class="usa-button">View</button>
-        </a>
+        <div class="display-flex flex-column flex-align-end">  
+          <span class="gsa-source usa-link usa-link--external">Source: {{law.source}}</span>
         </div>
+        <!-- 
+        <div class="display-flex flex-column flex-align-end">
+            <button class="usa-button"><span class="usa-link usa-link--external" style="color: white">View</span></button>
+        </div>
+        -->
     </p>
   </div>
+  </a>
 </div>
 {% endfor %}
