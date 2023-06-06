@@ -11,6 +11,8 @@ subnav:
     href: '#introduction'
   - text: Policy Overview
     href: '#policy-overview'
+  - text: Authorities
+    href: '#authorities'
   - text: Laws and Directives
     href: '#laws-and-directives'
   - text: Federal Policies
@@ -26,6 +28,7 @@ subnav:
 Laws, executive policies, regulations, and government standards drive multiple federal initiatives related to Federal Identity, Credential and Access Management. IATAD maintains this policy matrix to map delegations and authorities. ICAM Partners can use this matrix to understand the origins and ultimate authority of ICAM initiatives.
 
 * [Policy Overview](#policy-overview)
+* [Authorities](#authorities)
 * [Laws and Directives](#laws-and-directives)
 * [Federal Policies](#federal-policies)
 * [Federal Technical Guidance](#federal-technical-guidance)
