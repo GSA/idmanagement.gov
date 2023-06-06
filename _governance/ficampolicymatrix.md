@@ -52,8 +52,10 @@ This table identifies the authorities that issue memos, regulations or technical
 
 This table provides a listing of the laws documented in the policy matrix above. Click on the name of a law or directive to see more details about it, and for a link to the document itself.
 
+{% assign sorted_laws = site.data.laws-policies-standards | sort: published %}
+
 | Document Name | Publication Date | Categories |
-| --- | --- | --- | {% for document in site.data.laws-policies-standards | sort: "published" %} {% if document.type == "Law" %}
+| --- | --- | --- | {% for document in sorted_laws %} {% if document.type == "Law" %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
 
 ## Federal Policies
