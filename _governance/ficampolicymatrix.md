@@ -52,7 +52,7 @@ This table identifies the authorities that issue memos, regulations or technical
 
 This table provides a listing of the laws documented in the policy matrix above. Click on the name of a law or directive to see more details about it, and for a link to the document itself.
 
-{% assign sorted_laws = site.data.laws-policies-standards | sort: "published" "last" %}
+{% assign sorted_laws = site.data.laws-policies-standards | sort: "published", "last" %}
 
 | Document Name | Publication Date | Categories |
 | --- | --- | --- | {% for document in sorted_laws %} {% if document.type == "Law" %}
