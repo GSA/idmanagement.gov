@@ -821,9 +821,9 @@
   published: 1998-10-21
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
 - &M2016
-  type: Law
-  shortName: "EO 20-16"
-  longName: "Executive Order 20-16: Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19"
+  type: Policy
+  shortName: "M-20-16"
+  longName: "OMB Memo 20-16: Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19"
   description: >
     The Federal Government, in partnership with sta�e and local governments and the 
     private sector, is adopting a concerted near-term operations posture that will appropriately align 
@@ -849,3 +849,16 @@
     - *M2016
   authored-by:
     - *OPM
+- &M2019
+  type: Policy
+  shortName: "M-20-19"
+  longName: "OMB Memo 20-19: Harnessing Technology to Support Mission Continuity"
+  description: >
+    This memorandum directs that agencies utilize technology to the greatest extent practicable to support 
+    mission continuity during the national emergency. By aggressively embracing technology to support business 
+    processes, the federal government is better positioned to maintain the safety and well-being of the federal 
+    workforce and the American public while supporting the continued delivery of vital mission services. The 
+    set of frequently asked questions are intended to provide additional guidance and further assist the IT 
+    workforce as it addresses impacts.
+  authored-by:
+    - *OMB
