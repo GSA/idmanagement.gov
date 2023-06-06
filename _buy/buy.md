@@ -26,7 +26,7 @@ Other current and planned products and services can be found on the [GSA ICAM So
 
 ## FIPS 201 Approved Product List
 
-The [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
+The [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201/) tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
 
 The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
 
@@ -46,15 +46,13 @@ The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization W
 
 ## FICAM Product Criteria
 
-In an effort to help agencies identify FICAM products, the GSA OGP created a new product criteria category. This is different than the FIPS 201 Approved Product Listing which tests products. The Product Criteria does not test products, but recognize 3rd party testing and accreditation programs that align with NIST 800-63 Digital Identity Guidelines. The product criteria consists of two elements.
+The [FICAM Product Criteria]({{site.baseurl}}/sell/ficampc/) recognize 3rd party programs that test or accredit digital identity products. The FICAM Product Criteria does not test products, but reviews and recognize 3rd party testing labs and assurance programs that test or assess vendor products to the NIST 800-63 Digital Identity Guidelines.
 
-1. A process to recognize a 3rd party testing or accreditation program that either directly test or create conformance criteria aligned with NIST 800-63.
-2. Specific product categories with vendor products reviewed by the GSA FICAM Program.
+The **Product Criteria List** contain a list of products by category that have submitted testing or assurance documentation from a recognized 3rd party program. This documentation is reviewed by GSAThere is currently one category
 
-The Product Criteria contain the following categories.
-1. [Phishing Resistant Authenticators]({{site.baseurl}}/product-criteria#phishing-resistant-authenticators/)
+1. [Phishing Resistant Authenticators]({{site.baseurl}}/buy/product-criteria#phishing-resistant-authenticators/)
 
-For more information on product criteria, email ICAM at gsa.gov.
+For more information on product criteria or recognition criteria, email ICAM at gsa.gov.
 
 ## Services
 

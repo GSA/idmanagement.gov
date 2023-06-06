@@ -14,7 +14,7 @@ subnav:
 ---
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration supports these requirements through testing and identifying products and services.
-- The GSA Federal Acqusition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
+- The GSA Federal Acquisition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
 - The GSA Office of Government Policy provides testing and certification services for specific product categories.
 
 In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government apply to a Multiple Award Schedule Special Item Number. Vendors must submit an appropriate self-assessment that demonstrates policy compliance with the following directives or standards.
@@ -27,6 +27,11 @@ Two product categories require additional testing at a testing facility before a
 2. Physical Access Control Systems for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components](https://www.idmanagement.gov/approved-products-list-pacs-products/) category.
 
 Please get in touch with fips201ep at gsa.gov if you have product approval questions.
+
+Additionally, the GSA FICAM Program established a FICAM Product Criteria to help agencies identify commercially-tested digital identity products. There is one category.
+1. [Phishing Resistant Authenticators]({{site.baseurl}}/buy/product-criteria#phishing-resistant-authenticators/)
+
+See the [Product Criteria](({{site.baseurl}}/sell/ficampc/) on how to submit your product. Please get in touch with ICAM at gsa.gov for product criteria questions.
 
 ## Product Approval Process
 
