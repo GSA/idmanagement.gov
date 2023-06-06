@@ -35,7 +35,7 @@ Laws, executive policies, regulations, and government standards drive multiple f
 
 This diagram presents a visual overview of the FICAM Policy landscape.
 
-![A map of the FICAM Policy Landscape]({{site.baseurl}}/assets/img/ficam-policy-landscape-map.svg)
+[A map of the FICAM Policy Landscape]({{site.baseurl}}/governance/policymap)
 
 ## Laws and Directives
 
