@@ -61,9 +61,11 @@ This table lists Federal Policies and directives published by OMB. They set a st
 
 This table lists Technical Guidance published under ICAM. The provide technical details to support consistent, secure and effective implementation of the policies.
 
+{% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" %}
+
 | Document Name | Publication Date | Categories |
-| --- | --- | --- | {% for document in site.data.laws-policies-standards %} {% if document.type == "Guidance" %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
+| --- | --- | --- | {% for document in sorted_guidance %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
 
 ## ICAM Activities and Programs
 
