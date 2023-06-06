@@ -860,5 +860,82 @@
     workforce and the American public while supporting the continued delivery of vital mission services. The 
     set of frequently asked questions are intended to provide additional guidance and further assist the IT 
     workforce as it addresses impacts.
+  published: 2020-03-22
   authored-by:
     - *OMB
+- &M1709
+  type: Policy
+  shortName: "M-17-09"
+  longName: "OMB Memo 17-09: Management of Federal High Value Assets"
+  description: >
+    This Memorandum contains general guidance for the planning, identification, categorization, 
+    prioritization, reporting, assessment, and remediation of Federal High Value Assets (HV As), as 
+    well as the handling of information related to HV As by the Federal Government. It also outlines 
+    the responsibilities of Executive Branch departments and agencies, including the Office of 
+    Management and Budget (OMB), Department of Homeland Security (DRS), and General 
+    Services Administration (GSA). The HVA initiative outlined in this memorandum is an ongoing 
+    government-wide activity intended to evolve over time.
+  published: 2016-12-09
+  authored-by:
+    - *OMB
+- &M1903
+  type: Policy
+  shortName: "M-19-03"
+  longName: "OMB Memo 19-03: Strengthening the Cybersecurity of Federal Agencies by enhancing the High Value Asset Program"
+  description: >
+    With the creation of the HVA initiative in 2015, the federal government's CFO Act agencies took a pivotal 
+    step toward the identification of its most critical assets. DHS, in coordination with OMB, established a 
+    capability to assess agency HVAs, resulting in the identification of critical areas of weakness and plans 
+    to remediate those areas of weakness. It established three possible categories for designating federal 
+    information or a federal information system as an HVA: Informational Value, Mission Essential, or Federal 
+    Civilian Enterprise Essential (FCEE). It also updates the required approach for agencies to report, assess, 
+    and remediate HVAs to protect against cyberattacks.
+  published: 2018-12-10
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf"
+  authored-by:
+    - *OMB
+  rescinds:
+    - *M1604
+    - *M1709
+- &EO13833
+  type: Law
+  shortName: "E.O. 13833"
+  longName: "Executive Order 13833: Enhancing the Effectiveness of Agency Chief Information Officers"
+  description: >
+    This executive order authorizes federal agency CIOs to ensure that agency IT systems are as modern, 
+    secure, and well-managed as possible to reduce costs, mitigate cybersecurity risks, and deliver 
+    improved services to the American people.
+  published: 2018-05-15
+  externalURL: "https://www.federalregister.gov/documents/2018/05/18/2018-10855/enhancing-the-effectiveness-of-agency-chief-information-officers"
+- &EO13800
+  type: Law
+  shortName: "E.O. 13800"
+  longName: "Executive Order 13800: Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure"
+  description: >
+    This executive order places an emphasis on modernizing and securing federal networks and critical 
+    infrastructure from the ever-growing threat of cyberattacks.
+  published: 2017-05-16
+  externalURL: "https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure"
+- &PAPERWORKREDUCTION1995
+  type: Law
+  shortName: "Paperwork Reduction Act of 1995"
+  longName: "Paperwork Reduction Act of 1995"
+  description: >
+    To further the goals of the Paperwork Reduction Act to have Federal 
+    agencies become more responsible and publicly accountable for reducing 
+    the burden of Federal paperwork on the public.
+  published: 1995-05-22
+  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-104publ13/html/PLAW-104publ13.htm"
+- &A108
+  type: Policy
+  shortName: "OMB A-108"
+  longName: "OMB Circular A-108: Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act"
+  description: >
+    This circular describes agency responsibilities for implementing the review, reporting, and 
+    publication requirements of the Privacy Act of 1974 and related OMB policies.
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *PRIVACYACT1974
+    - *PAPERWORKREDUCTION1995
+    - *FISMA2014
