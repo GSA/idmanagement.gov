@@ -12,6 +12,8 @@ subnav:
     href: '#products'
   - text: PACS Assessment Toolkit
     href: '#pacs-implementer-self-assessment-toolkit'
+  - text: Product Criteria
+    href: 'product-criteria'
   - text: Services
     href: '#services'
   - text: GSA MAS
@@ -22,14 +24,16 @@ Find approved products and services for Federal Identity, Credential, and Access
 
 Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap]({{site.baseurl}}/buy/icamsolutions/).
 
-## Products
+## FIPS 201 Approved Product List
 
-The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
+The [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
 
 The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
 
 1. [PIV Cards]({{site.baseurl}}/approved-products-list-piv/)
 2. [Physical Access Control Systems]({{site.baseurl}}/approved-products-list-pacs-products/)
+
+For more information on the FIPS 201 Evaluation Program or the Approved Product List, email FIPS201EP at gsa.gov.
 
 **Why can't I find a category or product?**
 
@@ -39,6 +43,18 @@ A product is removed when it has lost its certification due to security concerns
 
 The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group](https://www.idmanagement.gov/governance/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+
+## FICAM Product Criteria
+
+In an effort to help agencies identify FICAM products, the GSA OGP created a new product criteria category. This is different than the FIPS 201 Approved Product Listing which tests products. The Product Criteria does not test products, but recognize 3rd party testing and accreditation programs that align with NIST 800-63 Digital Identity Guidelines. The product criteria consists of two elements.
+
+1. A process to recognize a 3rd party testing or accreditation program that either directly test or create conformance criteria aligned with NIST 800-63.
+2. Specific product categories with vendor products reviewed by the GSA FICAM Program.
+
+The Product Criteria contain the following categories.
+1. [Phishing Resistant Authenticators]({{site.baseurl}}/product-criteria#phishing-resistant-authenticators/)
+
+For more information on product criteria, email ICAM at gsa.gov.
 
 ## Services
 
