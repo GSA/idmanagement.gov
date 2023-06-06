@@ -11,8 +11,6 @@ subnav:
     href: '#introduction'
   - text: Policy Overview
     href: '#policy-overview'
-  - text: Authorities
-    href: '#authorities'
   - text: Laws and Directives
     href: '#laws-and-directives'
   - text: Federal Policies
@@ -28,7 +26,6 @@ subnav:
 Laws, executive policies, regulations, and government standards drive multiple federal initiatives related to Federal Identity, Credential and Access Management. IATAD maintains this policy matrix to map delegations and authorities. ICAM Partners can use this matrix to understand the origins and ultimate authority of ICAM initiatives.
 
 * [Policy Overview](#policy-overview)
-* [Authorities](#authorities)
 * [Laws and Directives](#laws-and-directives)
 * [Federal Policies](#federal-policies)
 * [Federal Technical Guidance](#federal-technical-guidance)
@@ -40,23 +37,15 @@ This diagram presents a visual overview of the FICAM Policy landscape.
 
 ![A map of the FICAM Policy Landscape]({{site.baseurl}}/assets/img/ficam-policy-landscape-map.svg)
 
-## Authorities
-
-This table identifies the authorities that issue memos, regulations or technical guidance documents that are relevant to FICAM.
-
-| Name | Description |
-| --- | --- | {% for authority in site.data.laws-policies-standards %} {% if authority.type == "Authority" %}
-| [ {{authority.shortName}} ]({{site.baseurl}}/laws-policies-standards{{authority.shortName | datapage_url: laws-policies-standards }}) | {{authority.description}} | {% endif %} {% endfor %}
-
 ## Laws and Directives
 
 This table provides a listing of the laws documented in the policy matrix above. Click on the name of a law or directive to see more details about it, and for a link to the document itself.
 
-{% assign sorted_laws = site.data.laws-policies-standards | sort: "published", "last" %}
+{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" %}
 
 | Document Name | Publication Date | Categories |
-| --- | --- | --- | {% for document in sorted_laws %} {% if document.type == "Law" %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
+| --- | --- | --- | {% for document in sorted_laws %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
 
 ## Federal Policies
 
