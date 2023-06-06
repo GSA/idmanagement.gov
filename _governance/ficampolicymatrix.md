@@ -55,8 +55,7 @@ This table lists Federal Policies and directives published by OMB. They set a st
 
 | Document Name | Publication Date | Categories |
 | --- | --- | --- | {% for document in sorted_policies %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} |
-{% endfor %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
 
 ## Federal Technical Guidance
 
