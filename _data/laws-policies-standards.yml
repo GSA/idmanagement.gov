@@ -569,6 +569,7 @@
   description: >
     [T]to ensure the responsible sharing and safeguarding of classified national security information (classified 
     information) on computer networks
+  published: 2011-10-07
   externalURL: "https://www.federalregister.gov/d/2011-26729"
 - &CNSS
   type: Authority
