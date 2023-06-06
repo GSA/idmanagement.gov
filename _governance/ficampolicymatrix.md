@@ -51,9 +51,11 @@ This table provides a listing of the laws documented in the policy matrix above.
 
 This table lists Federal Policies and directives published by OMB. They set a strategic direction for the entire Federal Government, and are the basis for development of the standards and technical guidance documents produced to support FICAM.
 
+{% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" %}
+
 | Document Name | Publication Date | Categories |
-| --- | --- | --- | {% for document in site.data.laws-policies-standards %} {% if document.type == "Policy" %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endif %}{% endfor %}
+| --- | --- | --- | {% for document in site.data.laws-policies-standards %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{document.published}} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
 
 ## Federal Technical Guidance
 
