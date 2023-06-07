@@ -63,7 +63,7 @@ layout: default
 {% endif %}
 
 {% for item in site.data.laws-policies-standards %}
-{% if authorized-by | size > 0 %}
+{% if item.authorized-by | size > 0 %}
 X{{item.shortName}}
 {% endif %}
 {% endfor %}
