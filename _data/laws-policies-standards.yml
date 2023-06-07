@@ -1010,3 +1010,14 @@
   externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
   authored-by:
     - *WH
+- &SP800205
+  type: "Guidance"
+  shortName: "SP 800-205"
+  longName: "NIST Special Publication 800-205: Attribute Considerations for Access Control Systems"
+  description: >
+    This document aims to provide federal agencies with a guide to attribute 
+    considerations with Attribute Evaluation Scheme examples for access control.
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
