@@ -48,6 +48,21 @@ layout: default
 </p>
 {% endif %}
 
+{% if page.implemented-by | size > 0 %}
+<p><b>Implemented by:</b>
+<ul>
+    {% for reference in page.implemented-by %}
+    <li>
+        <a
+            href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
+            {{reference.shortName}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</p>
+{% endif %}
+
 {% if page.subgroup-of | size >0 %}
 <p><b>Subgroup of:</b></p>
 <ul>
