@@ -250,7 +250,14 @@
   type: Law
   shortName: "FISMA 2014"
   longName: "Federal Information Security Modernization Act of 2014"
-  description: "The purposes of this subchapter are to [...] provide a comprehensive framework for ensuring the effectiveness of information security controls over information resources that support Federal operations and assets"
+  description: >
+    The purposes of this subchapter are to [...] provide a comprehensive framework for 
+    ensuring the effectiveness of information security controls over information resources 
+    that support Federal operations and assets.
+    NIST is responsible for developing information security standards and guidelines, 
+    including minimum requirements for federal information systems. Such information security 
+    standards and guidelines shall not apply to national security systems without the express 
+    approval of the appropriate federal officials exercising policy authority over such systems.
   published: 2014-12-18
   externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
   amends:
@@ -1077,6 +1084,34 @@
   description: >
     This document aims to provide federal agencies with a guide to attribute 
     considerations with Attribute Evaluation Scheme examples for access control.
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+- &SP80053
+  type: "Guidance"
+  shortName: "SP 800-53"
+  longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
+  description: >
+    This guideline provides a catalog of security and privacy controls for federal information systems and 
+    organizations and a process for selecting controls to protect organizational operations, assets, 
+    individuals, other organizations, and the Nation from a diverse set of threats.
+  published: 2020-12-10
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+- &SP80053A
+  type: "Guidance"
+  shortName: "SP 800-53A"
+  longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
+  description: >
+    This guideline provides a set of procedures for conducting assessments of security controls and privacy 
+    controls employed within federal information systems and organizations. The assessment procedures, 
+    executed at various phases of the system development life cycle, are consistent with the security and 
+    privacy controls in NIST Special Publication 800-53, Revision 5.
+  published: 2022-01-25
   authored-by:
     - *NIST
   authorized-by:
