@@ -54,7 +54,7 @@ There are two two categories of government identity services.
 2. Card Managment System for issuing PIV cards.
 
 ### Federal PKI Shared Service Provider
-These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://idmanagement.gov/buy/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the GSA Multiple Award Schedule. All SSPs operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
+These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://idmanagement.gov/buy/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the GSA Multiple Award Schedule. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
 
 All of the Certification Authorities operated by these FPKI SSPs [issue certificates](https://playbooks.idmanagement.gov/fpki/ca/#certificate-types-within-the-federal-pki){:target="_blank"}{:rel="noopener noreferrer"} for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
 
@@ -70,9 +70,9 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 ### Card Management System
 These organizations operate Card or Certificate Management Systems to issue PIV Cards. They may offer other types of digital certificate services.
 
-| Organization | Customer Service | Tech Support|  
-| ------ |:-----------:|:-----------:|  
-| Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 | 
+| Organization | Customer Service |
+| ------ |:-----------:| 
+| XTec | Heather Brookers<br/>fedramp@xtec.com |
 | GSA USAccess | [GSA USAccess Ordering Page](https://www.gsa.gov/technology/technology-purchasing-programs/federal-credentialing-services){:target="_blank"}{:rel="noopener noreferrer"} |
 
 ## Business Identity Services
