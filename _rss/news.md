@@ -3,7 +3,7 @@
 layout: page
 collection: rss
 title: GSA Industry News
-permalink: /news/
+permalink: /rss/
 sidenav: rss
 sticky_sidenav: true
 

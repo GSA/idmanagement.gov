@@ -271,6 +271,8 @@ fips201:
     href: /fips201/
   - text: FIPS 201 Announcements
     href: /fips201/fipsannouncements/
+  - text: FICAM Product Criteria
+    href: /vendors/ficampc/
     
 # New Vendor sidenav
 vendor:
@@ -280,6 +282,8 @@ vendor:
     href: /fips201/
   - text: FIPS 201 Announcements
     href: /fips201/fipsannouncements/
+  - text: FICAM Product Criteria
+    href: /vendors/ficampc/
 
 
 # New Aquisitions Professional sidenav
@@ -318,12 +322,6 @@ ssp:
   # Asked by Babur to remove(Sprint 8)
   # - text: Download PDF
   #   href: /docs/roadmap-ficam.pdf
-
-# Phishing Resistant Authenticator Sidenav
-# Added: 06/02/2023
-phishing: 
-  - text: Phishing-Resistant Authenticator Criteria
-    href: /implement/phishing-resistant-authenticators/
 
 # Brought in from Playbooks site
 pm:

@@ -149,8 +149,9 @@ primary_navigation:
       #   url: /implement/troubleshooting/ 
       # - name: Windows Domain Account Pairing
       #   url: /implement/windows-domain-pairing/
-      - name: Phishing-Resistant Authenticator Criteria
-        url: /implement/phishing-resistant-authenticators/ 
+      # Update requested by Babur to move to same location as on prod by Ken.(06/07/2023)
+      # - name: FICAM Product Criteria
+      #   url: /vendors/ficampc/ 
 
   # APL Menu for visible display and access of APLs
   # 06-07-2023 - changed "ALPS" menu to "Functions" per Babur
@@ -182,7 +183,7 @@ primary_navigation:
     description: University
     url: /university/
 
-  # FAQ page
+  # FAQ page per Babur (Sprint 6)
   # - name: FAQs
   #   description: Frequently Asked Questions
   #   url: /faq/
@@ -240,7 +241,7 @@ collections:
   #   permalink: /faq/:path/ 
   rss:
     output: true
-    permalink: /news/:path/ 
+    permalink: /rss/:path/ 
   playbooks:
     output: true
     permalink: /playbooks/:path/ 

@@ -7,11 +7,11 @@ sticky_sidenav: true
 sidenav: fpkitools
 ---
 
-**Last Update**: May 15, 2023
+**Last Update**: June 06, 2023
 
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here](https://github.com/GSA/ficam-playbooks/raw/federalist-pages/_fpki/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b){:class="usa-link usa-link--external"}.** 
+The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here](https://github.com/GSA/ficam-playbooks/raw/federalist-pages/_fpki/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** 
 
 The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs. 
 
@@ -21,7 +21,7 @@ The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown 
 - The _Search_ function is on the upper right-hand corner. 
 - The _Zoom_ scroll bar is in the upper left-hand corner.
 
-You cannot download the certificates from the graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
+You cannot download the certificates from the graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.) 
 
 ### How the FPKI Graph Works
 
@@ -31,7 +31,7 @@ All CA and End Entity certificates that have a certificate path (trust chain) to
 
 Most CA certificates will also have an SIA extension with a URI to the CA certificates that have been issued **_by that CA_**. For example, you can find the SIA for COMMON at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
 
-- To use this SIA, retrieve the file (.p7c) using the link above and open it.   
+- To use this SIA, retrieve the file (.p7c) using the link above and open it. 
 - You will find a dozen or more certificates that are issued by COMMON (Root) to other intermediate or issuing CAs.  
 - The SIA URIs from each of these certificates can then be retrieved to find the next set of signed certificates.
 
