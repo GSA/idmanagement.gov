@@ -68,7 +68,7 @@ The 3rd party recognition process is designed to achieve a trust in a 3rd party 
 
 The type of organization will determine how it is recognized. There are three criteria reviewed by GSA to recognize a 3rd party organization. All criteria are documented in a trust artifact and posted with the [organizations recognition status]({{site.baseurl}}/buy/product-criteria#recognized-3rd-party-organizations).
 
-1. Process methodology review - The organization must have a formal and documented process for how it conducts testing or operates its assurance program. GSA will review the process documentation and may ask to be invited into a testing or vendor assurance review session. This step will the integrity of an organizations process to be trusted by a federal government agency.
+1. Process methodology review - The organization must have a formal and documented process for how it conducts testing or operates its assurance program. GSA will review the process documentation and may ask to be invited into a testing or vendor assurance review session. This step will the integrity of an organizations process to be trusted by a federal government agency. An ISO 17060 conformity assessment body certification may fulfill this criteria element.
 2. Testing or assurance criteria mapping review - If an organization uses an organizationally defined standard, it is mapped to 800-63 conformance criteria with noted gaps and this mapping criteria is available as a recognition artifact.
 3. Organization risk assessment - Review the corporate status and risk indicators for the organization to operate independently.
 
@@ -90,9 +90,16 @@ The GSA IATAD will use existing resources to verify vendor submissions. The anti
 
 6. **Removal** – If a vendor fails to provide accurate information or an issue is found that brings into question the security and resiliency, the product is moved to the [Removed Product List](https://www.idmanagement.gov/buy/removed-products-list/){:target="_blank"}{:rel="noopener noreferrer"} and the community is notified of its removal through idmanagement.gov, ICAMSC, and Digital identity Community of Practice, as well as federal acquisition channels.
 
+## Organization and vendor status
+
+Once an organization or vendor applies, they will be listed as in process on the [FICAM Product Criteria List]({{site.baseurl}}/buy/product-criteria/). There are two main status types.
+1. **In process** - The entity submitted an application and it is in review.
+2. **Provisionally approved** - The application package is complete and all evidence is reviewed. There are a few outstanding items under review, but are not critical.
+3. **Approved** - All information is validated and meets the organization recognition requirements or product criteria. The artifact is posted on the Product Criteria List for review.
+
 ## Product criteria list
 
-The questionnaire is intended to provide a consistent and standard way to receive feedback. These questions are to be used for initial vetting of vendor products to achieve interoperability, security, and reliability assurances. The questionnaire collects input on the security compliance status of proposed products based on federal guidelines such as external body conformance testing and certification to NIST 800-63, FIPS 140 certification, and supply chain security. Vendors are encouraged to complete the questionnaire to the maximum extent possible and provide artifacts to validate their inputs.
+The questionnaire is intended to provide a consistent and standard way to receive information. These questions are to be used for initial vetting of vendor products to achieve interoperability, security, and reliability assurances. The questionnaire collects input on the security compliance status of proposed products based on federal guidelines such as external body conformance testing and certification to NIST 800-63, FIPS 140 certification, and supply chain security. Vendors are encouraged to complete the questionnaire to the maximum extent possible and provide artifacts to validate their inputs.
 
 Once approved, the product will be listed on [FICAM Product Criteria List]({{site.baseurl}}/buy/product-criteria/) and shared through federal security and acquisition communities.
 
