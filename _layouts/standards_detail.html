@@ -72,6 +72,7 @@ If this is an Law, find the elements authorized by it.
 {% for authorizer in item.authorized-by %}
 {% if authorizer.shortName == page.shortName %}
 - {{ item.shortName }}
+
 {% endif %}
 {% endfor %}
 {% endif %}
