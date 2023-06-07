@@ -940,3 +940,30 @@
     - *PRIVACYACT1974
     - *PAPERWORKREDUCTION1995
     - *FISMA2014
+- &A123
+  type: Policy
+  shortName: "A-123"
+  longName: "OMB Circular Number A-123"
+  description: >
+    This Circular defines management's responsibilities for enterprise risk management 
+    (ERM) and internal control. The Circular provides updated implementation guidance to Federal 
+    managers to improve accountability and effectiveness of Federal programs as well as mission-support 
+    operations through implementation of ERM practices and by establishing, maintaining, 
+    and assessing internal control effectiveness
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m-16-17.pdf"
+  authored-by:
+    - *OMB
+- &M1617
+  type: Policy
+  shortName: "M-16-17"
+  longName: "OMB Memo M-16-17:  OMB Circular No. A-123, Management's Responsibility for Enterprise Risk Management and Internal Control"
+  description: >
+    Amendments to  OMB Circular No. A-123, Management's Responsibility for Enterprise Risk 
+    Management and Internal Control
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m-16-17.pdf"
+  authored-by:
+    - *OMB
+  amends:
+    - *A123
+- &EO13681
+  type: Law
