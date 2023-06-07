@@ -49,12 +49,7 @@ We’ve categorized the service providers given below by type of identity and cr
 
 ## Government Identity Services
 
-There are two two categories of government identity services.
-1. Federal PKI Shared Service Provider of digital certificates.
-2. Card Managment System for issuing PIV cards.
-
-### Federal PKI Shared Service Provider
-These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://idmanagement.gov/buy/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the GSA Multiple Award Schedule. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
+These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://idmanagement.gov/buy/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"} . All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
 
 All of the Certification Authorities operated by these FPKI SSPs [issue certificates](https://playbooks.idmanagement.gov/fpki/ca/#certificate-types-within-the-federal-pki){:target="_blank"}{:rel="noopener noreferrer"} for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
 
@@ -66,14 +61,6 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 | GSA PKI SSP | Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
 | GSA PKI SSP | Verizon/Cybertrust Federal Shared Service Provider | Wesley Lippman<br/>(984) 364-7540 |	Subbu Peddibhotla<br/>(301) 679-2425 |
 | GSA PKI SSP | WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
-
-### Card Management System
-These organizations operate Card or Certificate Management Systems to issue PIV Cards. They may offer other types of digital certificate services.
-
-| Organization | Customer Service |
-| ------ |:-----------:| 
-| XTec | Heather Brookers<br/>fedramp@xtec.com |
-| GSA USAccess | [GSA USAccess Ordering Page](https://www.gsa.gov/technology/technology-purchasing-programs/federal-credentialing-services){:target="_blank"}{:rel="noopener noreferrer"} |
 
 ## Business Identity Services
 
