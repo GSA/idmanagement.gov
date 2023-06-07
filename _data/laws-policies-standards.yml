@@ -404,9 +404,10 @@
     - *GSA
 - &APL
   type: Guidance
-  shortName: "FIPS APL"
-  longName: "FIPS 201 Approved Products List"
-  description: "The Approved Products List (APL) contains the official list of tested products."
+  shortName: "FICAM APL"
+  longName: "FICAM Approved Products List"
+  description: >
+    The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
   externalURL: "https://www.idmanagement.gov/buy/#products"
   authored-by:
     - *FIPSLAB
