@@ -205,11 +205,11 @@ If this is a Law, find the elements authorized by it.
 {% endif %}
 
 {% comment %}
-If this is a Policy, find the policies rescinded by it.
+If this is a Policy, find the policies rescinding it.
 {% endcomment %}
 {% if page.type == "Policy" %}
 <p>
-    <b>Policies Rescinded by {{page.shortName}}</b>
+    <b>Policies rescinding {{page.shortName}}</b>
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.rescinds | size > 0 %}
