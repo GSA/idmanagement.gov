@@ -6,9 +6,9 @@ collection: sell
 sticky_sidenav: true
 sidenav: sell
 
-version: 1.5
-pubDate1: April 2023
-pubDate2: 04/2023
+version: 1.0
+pubDate1: June 2023
+pubDate2: 06/2023
 
 subnav:
   - text: Objective
@@ -36,7 +36,7 @@ Version {{page.version}}<br>
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| {{page.version}} | {{page.pubDate2}} | Initial draft |
+| 1.0 | June 2023 | Initial draft |
 
 # Objective
 
