@@ -67,14 +67,15 @@ layout: default
 If this is an Law, find the elements authorized by it.
 {% endcomment %}
 {% if page.type == "Law" %}
-{% for item in site.data.laws-policies-standards %}
-{% if item.authorized-by | size > 0 %}
-{% for authorizer in item.authorized-by %}
-{% if authorizer.shortName == page.shortName %}
-- {{ item.shortName }}
-
-{% endif %}
-{% endfor %}
-{% endif %}
-{% endfor %}
+<ul>
+    {% for item in site.data.laws-policies-standards %}
+    {% if item.authorized-by | size > 0 %}
+    {% for authorizer in item.authorized-by %}
+    {% if authorizer.shortName == page.shortName %}
+    <li>{{ item.shortName }}</li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</ul>
 {% endif %}
