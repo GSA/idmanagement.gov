@@ -15,11 +15,12 @@ subnav:
       href: '#product-criteria'
     - text: Phishing Resistant Authenticators
       href: '#phishing-resistant-authenticators'
+      
 ---
 
 # Introduction
 
-here
+Interested vendors should review the [Product Criteria process]({{site.baseurl}}/sell/ficampc/) to submit their product for inclusion.
 
 # Recognized 3rd Party Organizations
 
@@ -30,13 +31,9 @@ This is a list of recognized 3rd party organizations.
 | Fast IDentify Online (FIDO) Alliance | Testing Lab | AAL | Pending | Provisional Approval |
 | Kantara Initiative | Assurance Program | IAL, AAL, FAL | Pending | Provisional Approval |
 
-# Product Criteria
+# Phishing Resistant Authenticators
 
-Interested vendors should review the [Product Criteria process]({{site.baseurl}}/sell/ficampc/) to submit their product for inclusion.
-
-## Phishing Resistant Authenticators
-
-
+This is a list of vendors who meet the product criteria for phishing resistant authenticators.
 
 | Vendor | Product Name | Form Factor |  FIDO Level | FIPS Level | PIV Module | USB | NFC | BT | AAGUID | Data Added |
 | ------ | ------------ | :---------: | :---------: | :--------: | :--------: | :-: | :-: | :-: | :---: | :--------: |
