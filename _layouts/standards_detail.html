@@ -7,6 +7,10 @@ layout: default
 
 <p><b>{{page.longName}}</b></p>
 
+{% if page.description %}
+<p> <b>Description:</b> {{page.description}}</p>
+{% endif %}
+
 {% if page.scope %}
 <p><b>SCOPE:</b><br>
     {% for scope in page.scope %}
@@ -90,10 +94,6 @@ layout: default
     {% endfor %}
 </ul>
 </p>
-{% endif %}
-
-{% if page.description %}
-<p> <b>Description:</b> {{page.description}}</p>
 {% endif %}
 
 {% comment %}
