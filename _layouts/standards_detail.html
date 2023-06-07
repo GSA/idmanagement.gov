@@ -64,9 +64,9 @@ layout: default
 
 
 {% comment %}
-If this is an authority, find the elements authorized by it.
+If this is an Law, find the elements authorized by it.
 {% endcomment %}
-{% if site.type == "Authority" %}
+{% if site.type == "Law" %}
 {% for item in site.data.laws-policies-standards %}
 {% if item.authorized-by | size > 0 %}
 {% for authorizer in item.authorized-by %}
