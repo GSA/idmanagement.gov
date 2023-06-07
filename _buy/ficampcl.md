@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FICAM Product Criteria
+title: FICAM Product Criteria List
 permalink: buy/product-criteria/
 collection: buy
 sticky_sidenav: true
