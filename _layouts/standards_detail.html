@@ -63,7 +63,7 @@ If this is an Law, find the elements authorized by it.
 {% endcomment %}
 {% if page.type == "Law" %}
 <p>
-    Elements Authorized by {{page.shortName}}
+    Policies Authorized by {{page.shortName}}
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.authorized-by | size > 0 %}
@@ -78,12 +78,21 @@ If this is an Law, find the elements authorized by it.
 </p>
 {% endif %}
 
-{% if page.type == "Law" %}
+{% comment %}
+If this is an Authority, find the elements authored by it.
+{% endcomment %}
+{% if page.type == "Authority" %}
 <p>
-    Elements Authorized by {{page.shortName}}
+    Documents Written by {{page.shortName}}
 <ul>
-    {% for item in site.data.laws-policies-standards | where_exp:"authorized-by", "authorized-by | size > 0"%}
+    {% for item in site.data.laws-policies-standards %}
+    {% if item.authored-by | size > 0 %}
+    {% for author in item.authored-by %}
+    {% if author.shortName == page.shortName %}
     <li>{{ item.shortName }}</li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
     {% endfor %}
 </ul>
 </p>
