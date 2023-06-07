@@ -64,9 +64,6 @@ layout: default
 
 {% for item in site.data.laws-policies-standards %}
 {% if authorized-by %}
-{% assign authorized_by_this = authorized-by | where "shortName",page.shortName %}
-{% for item in authorized_by_this %}
 X{{item.shortName}}
-{% endfor %}
 {% endif %}
 {% endfor %}
