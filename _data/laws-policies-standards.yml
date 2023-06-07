@@ -1,5 +1,10 @@
 # yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
 
+- &WH
+  type: "Authority"
+  shortName: "White House"
+  longName: "The Office of the President of the United States of America"
+  externalURL: "https://www.whitehouse.gov/"
 - &NIST
   type: "Authority"
   shortName: "NIST"
@@ -39,6 +44,8 @@
   published: 2004-08-27
   description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
+  authored-by:
+    - *WH
   scope:
     - "Workforce Identity"
   ficam-services:
@@ -551,6 +558,8 @@
     and the physical assets that support such systems, in the information age
   published: 2001-10-18
   externalURL: "https://www.federalregister.gov/d/01-26509"
+  authored-by:
+    - *WH
 - &EO13284
   type: Law
   shortName: "EO 13284"
@@ -561,6 +570,8 @@
   published: 2003-01-28
   amends:
     - *EO13231
+  authored-by:
+    - *WH
   externalURL: "https://www.federalregister.gov/d/03-2069"
 - &EO13587
   type: Law
@@ -570,6 +581,8 @@
     [T]to ensure the responsible sharing and safeguarding of classified national security information (classified 
     information) on computer networks
   published: 2011-10-07
+  authored-by:
+    - *WH
   externalURL: "https://www.federalregister.gov/d/2011-26729"
 - &CNSS
   type: Authority
@@ -589,6 +602,8 @@
   description: >
     [T]o further strengthen the effective conduct of United States intelligence activities and protect the territory, people, 
     and interests of the United States of America, including against terrorist attacks
+  authored-by:
+    - *WH
   published: 2004-09-01
 - &EO13388
   type: Law
@@ -598,6 +613,8 @@
     [T]o further strengthen the effective conduct of United States counterterrorism activities and protect the territory, people, 
     and interests of the United States of America, including against terrorist attacks
   published: 2005-10-27
+  authored-by:
+    - *WH
   amends:
     - *EO13356
 - &INTELREFORM2004
@@ -616,6 +633,8 @@
     This order prescribes a uniform system for classifying, safeguarding, and declassifying national 
     security information, including information relating to defense against transnational terrorism.
   published: 2009-12-29
+  authored-by:
+    - *WH
   externalURL: "https://www.federalregister.gov/documents/2010/01/05/E9-31418/classified-national-security-information"
 - &EO12968
   type: Law
@@ -627,6 +646,8 @@
     information.
   published: 1995-08-07
   externalURL: "https://www.federalregister.gov/d/95-19654"
+  authored-by:
+    - *WH
 - &EO13587
   type: Law
   shortName: "EO 13587"
@@ -636,6 +657,8 @@
     information (classified information) on computer networks
   published: 2011-10-07
   externalURL: "https://www.federalregister.gov/d/2011-26729"
+  authored-by:
+    - *WH
 - &INSIDERTHREAT
   type: Policy
   shortName: "National Insider Threat Policy"
@@ -700,6 +723,8 @@
     information, while taking appropriate account of title III of Public Law 108-458
   published: 2008-06-30
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
+  authored-by:
+    - *WH
 - &SPRINGERMEMO
   type: Policy
   shortName: "Springer Memo"
@@ -723,6 +748,8 @@
     adjudicative processes to make them more efficient and effective
   published: 2009-01-22
   externalURL: "https://www.federalregister.gov/documents/2009/01/22/E9-1574/granting-reciprocity-on-excepted-service-and-federal-contractor-employee-fitness-and-reinvestigating"
+  authored-by:
+    - *WH
 - &EO13869
   type: Law
   shortName: "EO 13689"
@@ -736,6 +763,8 @@
     Investigations Bureau (NBIB).
   published: 2019-04-24
   externalURL: "https://www.federalregister.gov/documents/2019/04/29/2019-08797/transferring-responsibility-for-background-investigations-to-the-department-of-defense"
+  authored-by:
+    - *WH
 - &NBIB
   type: Authority
   shortName: "NBIB"
@@ -760,6 +789,8 @@
     governing the employment and retention in employment of persons in the Federal service
   published: 1954-08-05
   externalURL: "https://www.archives.gov/federal-register/codification/executive-order/10450.html"
+  authored-by:
+    - *WH
 - &CSSCDM
   type: Policy
   shortName: "Clearance Decision-Making Guide"
@@ -908,6 +939,8 @@
     improved services to the American people.
   published: 2018-05-15
   externalURL: "https://www.federalregister.gov/documents/2018/05/18/2018-10855/enhancing-the-effectiveness-of-agency-chief-information-officers"
+  authored-by:
+    - *WH
 - &EO13800
   type: Law
   shortName: "E.O. 13800"
@@ -917,6 +950,8 @@
     infrastructure from the ever-growing threat of cyberattacks.
   published: 2017-05-16
   externalURL: "https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure"
+  authored-by:
+    - *WH
 - &PAPERWORKREDUCTION1995
   type: Law
   shortName: "Paperwork Reduction Act of 1995"
@@ -967,3 +1002,11 @@
     - *A123
 - &EO13681
   type: Law
+  shortName: "E.O. 13681"
+  longName: "Executive Order 13681: Improving the Security of Consumer Financial Transactions"
+  description: >
+    "[T]o improve the security of consumer financial transactions in both the private and public sectors."
+    Proposes improved security of government payments and identity theft remediation.
+  externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
+  authored-by:
+    - *WH
