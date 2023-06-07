@@ -34,23 +34,30 @@ layout: default
 {% endif %}
 
 {% if page.authorized-by | size > 0 %}
-<p>Authorized by:<br>
+<p><b>Authorized by:</b>
+<ul>
     {% for reference in page.authorized-by %}
-    <a href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
-        {{reference.shortName}}
-    </a>
+    <li><a
+            href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
+            {{reference.shortName}}
+        </a>
+    </li>
     <br />
     {% endfor %}
+</ul>
 </p>
 {% endif %}
 
 {% if page.authored-by | size > 0 %}
-<p>Authored by:<br />
+<p><b>Authored by:</b>
+<ul>
     {% for reference in page.authored-by %}
-    <a
-        href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">{{reference.shortName}}</a>
-    <br />
+    <li><a
+            href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
+            {{reference.shortName}}
+        </a></li>
     {% endfor %}
+</ul>
 </p>
 {% endif %}
 
@@ -63,13 +70,17 @@ If this is an Law, find the elements authorized by it.
 {% endcomment %}
 {% if page.type == "Law" %}
 <p>
-    Policies Authorized by {{page.shortName}}
+    <b>Policies Authorized by {{page.shortName}}</b>
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.authorized-by | size > 0 %}
     {% for authorizer in item.authorized-by %}
     {% if authorizer.shortName == page.shortName %}
-    <li>{{ item.shortName }}</li>
+    <li>
+        <a href="{{site.baseurl}}/laws-policies-standards{{item.shortName | datapage_url: laws-policies-standards }}">
+            {{item.shortName}}
+        </a>
+    </li>
     {% endif %}
     {% endfor %}
     {% endif %}
@@ -83,7 +94,7 @@ If this is an Authority, find the elements authored by it.
 {% endcomment %}
 {% if page.type == "Authority" %}
 <p>
-    Documents Written by {{page.shortName}}
+    <b>Documents Written by {{page.shortName}}</b>
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.authored-by | size > 0 %}
