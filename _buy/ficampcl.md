@@ -14,7 +14,7 @@ subnav:
     - text: Product Criteria
       href: '#product-criteria'
     - text: Phishing Resistant Authenticators
-      href: 'phishing-resistant-authenticators'
+      href: '#phishing-resistant-authenticators'
 ---
 
 # Introduction
