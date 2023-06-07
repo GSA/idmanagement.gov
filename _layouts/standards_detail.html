@@ -64,5 +64,16 @@ layout: default
 
 
 {% comment %}
-Testing Comment
+If this is an authority, find the elements authorized by it.
 {% endcomment %}
+{% if site.type == "Authority" %}
+{% for item in site.data.laws-policies-standards %}
+{% if item.authorized-by | size > 0 %}
+{% for authorizer in item.authorized-by %}
+{% if authorizer.shortName == page.shortName %}
+* item.shortname
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
