@@ -209,7 +209,7 @@ If this is a Policy, find the policies rescinding it.
 {% endcomment %}
 {% if page.type == "Policy" %}
 <p>
-    <b>Policies rescinding {{page.shortName}}</b>
+    <b>Policies Rescinding {{page.shortName}}</b>
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.rescinds | size > 0 %}
