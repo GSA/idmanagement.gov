@@ -62,8 +62,7 @@ layout: default
 <p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
 {% endif %}
 
-{% for item in site.data.laws-policies-standards %}
-{% if item.authorized-by | size > 0 %}
-X{{item.shortName}}
-{% endif %}
-{% endfor %}
+
+{% comment %}
+Testing Comment
+{% endcomment %}
