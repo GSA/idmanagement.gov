@@ -171,3 +171,31 @@ If this is an Authority, find the sub-groups under it.
 {% if page.externalURL %}
 <p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
 {% endif %}
+
+{% comment %}
+If this is an Authority, find the programs it has implemented.
+{% endcomment %}
+{% if page.type == "Authority" %}
+<p>
+    <b>Programs implemented by {{page.shortName}}</b>
+<ul>
+    {% for item in site.data.laws-policies-standards %}
+    {% if item.implemented-by | size > 0 %}
+    {% for program in item.implemented-by %}
+    {% if program.shortName == page.shortName %}
+    <li>
+        <a href="{{site.baseurl}}/laws-policies-standards{{item.shortName | datapage_url: laws-policies-standards }}">
+            {{item.shortName}}
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</ul>
+</p>
+{% endif %}
+
+{% if page.externalURL %}
+<p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
+{% endif %}
