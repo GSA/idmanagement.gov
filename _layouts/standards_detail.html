@@ -58,15 +58,12 @@ layout: default
 <p> <b>Description:</b> {{page.description}}</p>
 {% endif %}
 
-{% if page.externalURL %}
-<p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
-{% endif %}
-
-
 {% comment %}
 If this is an Law, find the elements authorized by it.
 {% endcomment %}
 {% if page.type == "Law" %}
+<p>
+    Elements Authorized by {{page.shortName}}
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.authorized-by | size > 0 %}
@@ -78,4 +75,21 @@ If this is an Law, find the elements authorized by it.
     {% endif %}
     {% endfor %}
 </ul>
+</p>
+{% endif %}
+
+{% if page.type == "Law" %}
+<p>
+    Elements Authorized by {{page.shortName}}
+<ul>
+    {% for item in site.data.laws-policies-standards | where_exp:"authorized-by", "authorized-by | size > 0"%}
+    <li>{{ item.shortName }}</li>
+    {% endfor %}
+</ul>
+</p>
+{% endif %}
+
+
+{% if page.externalURL %}
+<p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
 {% endif %}
