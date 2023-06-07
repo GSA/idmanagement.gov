@@ -1116,3 +1116,17 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+- &SP800162
+  type: "Guidance"
+  shortName: "SP 800-162"
+  longName: "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations"
+  description: >
+    This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control 
+    methodology in which authorization to perform a set of operations is determined by evaluating attributes 
+    associated with the subject, object, requested operations, and, in some cases, environment conditions 
+    against policy, rules, or relationships that describe the allowable operations for a given set of attributes.
+  published: 2019-08-02
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
