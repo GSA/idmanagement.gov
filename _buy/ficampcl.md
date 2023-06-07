@@ -32,13 +32,14 @@ This is a list of recognized 3rd party organizations.
 
 # Product Criteria
 
-here
+Interested vendors should review the [Product Criteria process]({{site.baseurl}}/sell/ficampc/) to submit their product for inclusion.
 
 ## Phishing Resistant Authenticators
 
 
 
 | Vendor | Product Name | Form Factor |  FIDO Level | FIPS Level | PIV Module | USB | NFC | BT | AAGUID | Data Added |
-| ------ | ------------ | ----------- | ----------- | ---------- | ---------- | --- | --- | -- | ------ | ---------- |
+| ------ | ------------ | :---------: | :---------: | :--------: | :--------: | :-: | :-: | :-: | :---: | :--------: |
+| Test | Test | Security Key | FIDO2 / L1 | FIPS 140-3 / L2 | Yes | C | Y | Y | number | 01/01/2023|
 
 
