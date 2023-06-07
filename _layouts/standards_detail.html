@@ -82,7 +82,7 @@ layout: default
 {% endif %}
 
 {% comment %}
-If this is an Law, find the elements authorized by it.
+If this is a Law, find the elements authorized by it.
 {% endcomment %}
 {% if page.type == "Law" %}
 <p>
@@ -134,7 +134,7 @@ If this is an Authority, find the sub-groups under it.
 {% endcomment %}
 {% if page.type == "Authority" %}
 <p>
-    <b>Sub-groups under by {{page.shortName}}</b>
+    <b>Sub-groups under {{page.shortName}}</b>
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.subgroup-of | size > 0 %}
