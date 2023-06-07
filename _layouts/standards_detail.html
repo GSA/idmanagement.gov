@@ -108,6 +108,21 @@ layout: default
 </p>
 {% endif %}
 
+{% if page.amends | size > 0 %}
+<p><b>Amends:</b>
+<ul>
+    {% for reference in page.amends %}
+    <li>
+        <a
+            href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
+            {{reference.shortName}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</p>
+{% endif %}
+
 {% comment %}
 If this is an Authority, find the elements authored by it.
 {% endcomment %}
