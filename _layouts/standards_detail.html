@@ -100,7 +100,11 @@ If this is an Authority, find the elements authored by it.
     {% if item.authored-by | size > 0 %}
     {% for author in item.authored-by %}
     {% if author.shortName == page.shortName %}
-    <li>{{ item.shortName }}</li>
+    <li>
+        <a href="{{site.baseurl}}/laws-policies-standards{{item.shortName | datapage_url: laws-policies-standards }}">
+            {{item.shortName}}
+        </a>
+    </li>
     {% endif %}
     {% endfor %}
     {% endif %}
