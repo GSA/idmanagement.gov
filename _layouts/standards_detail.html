@@ -37,25 +37,41 @@ layout: default
 <p><b>Authorized by:</b>
 <ul>
     {% for reference in page.authorized-by %}
-    <li><a
+    <li>
+        <a
             href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
             {{reference.shortName}}
         </a>
     </li>
-    <br />
     {% endfor %}
 </ul>
 </p>
+{% endif %}
+
+{% if page.subgroup-of | size >0 %}
+<p><b>Subgroup of:</b></p>
+<ul>
+    {% for group in page.subgroup-of %}
+    <li>
+        <a href="{{site.baseurl}}/laws-policies-standards{{group.shortName | datapage_url: laws-policies-standards }}">
+            {{group.shortName}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
 {% endif %}
 
 {% if page.authored-by | size > 0 %}
 <p><b>Authored by:</b>
 <ul>
     {% for reference in page.authored-by %}
-    <li><a
+    <li>
+        <a
             href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
             {{reference.shortName}}
-        </a></li>
+        </a>
+    </li>
     {% endfor %}
 </ul>
 </p>
