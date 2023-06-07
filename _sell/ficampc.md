@@ -78,7 +78,7 @@ Organizations will sign an agreement with GSA, recognizing their roles and respo
 
 The GSA IATAD will use existing resources to verify vendor submissions. The anticipated effort is low based on an initial vendor market review.
 
-1. **Application** – A vendor completes the [product criteria questionnaire](#product-criteria-questionnaire) and submits to ICAM at gsa.gov. The vendor enters into an agreement with GSA outlining roles and responsibilities for product listing, however, third-party criteria will be used for vetting.
+1. **Application** – A vendor completes the [product criteria questionnaire](#product-criteria-questionnaire) and submits to ICAM at gsa.gov. This questionnaire is attached to a [vendor agreement]({{site.baseurl}}/docs/ficampc-vendor-agreement.docx) with GSA outlining roles and responsibilities for product listing, however, third-party criteria will be used for information vetting.
 
 2. **Processing** – Applications are processed on the first of every month and monthly updates will be provided. The schedule is adjusted based on volume of submissions or other factors.
 
