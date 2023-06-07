@@ -152,20 +152,17 @@ primary_navigation:
       - name: Phishing-Resistant Authenticator Criteria
         url: /implement/phishing-resistant-authenticators/ 
 
-  # GSA PKI Shared Service Provider Program Guide Tope Level Menu
-  - name: SSP
-    description: GSA PKI shared service provider program Guide
-    url: /ssp/
-
-  # Playbook top level Menu added (05-26-2023)
-  - name: Playbooks
-    description: FICAM Playbook are comprehensive guides on a technical topic, describing both overarching strategy and tactical approaches.
-    url: /playbooks/
-
   # APL Menu for visible display and access of APLs
-  # Note: All APLs are accessible from the below URLs for reference and linking
-  - name: APLs
+  # 06-07-2023 - changed "ALPS" menu to "Functions" per Babur
+  # Note: All APLs are accessible globally from the below URLs sitewide
+  - name: Functions
     children: 
+      - name: FPKI
+        url: /fpki/
+      - name: FIPS 201 evaluation
+        url: /fips201/
+      - name: SSP
+        url: /ssp/
       - name: Approved product list - PIV Cards
         url: /approved-products-list-piv/
       - name: Approved product list - PACS
@@ -174,6 +171,11 @@ primary_navigation:
         url: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
       - name: Removed product list
         url: /removed-products-list/
+
+  # Playbook top level Menu added (05-26-2023)
+  - name: Playbooks
+    description: FICAM Playbook are comprehensive guides on a technical topic, describing both overarching strategy and tactical approaches.
+    url: /playbooks/
 
   # FICAM University page
   - name: University

@@ -20,9 +20,9 @@ subnav:
       
 ---
 
-Did you know that PIV cards contain digital certificates intended to help users send secure email? In general, "secure email" refers to digitally signed and/or encrypted emails.  Digitally signed emails give us confidence that the individual who claimed to send a message actually did (non-repudiation) and that the message was not modified while in transit (integrity).  Encrypted emails prevent the message from being read by unintended recipients (confidentiality).  
+Personal Identity Verification (PIV) cards contain digital certificates that can help users send secure email. In general, "secure email" refers to digitally signed and/or encrypted emails.  Digitally signed emails give us confidence that the individual who claimed to send a message actually did (non-repudiation) and that the message was not modified while in transit (integrity).  Encrypted emails prevent the message from being read by unintended recipients (confidentiality).  
 
-The following guide will walk you through configuring Outlook to leverage the digital signature and key management certificates found on your PIV to enable secure email. Be aware that by default, Outlook will only allow siganture and encryption of emails provided the configured email address on the client is same email address as encoded on a PIV.
+The following guide walks you through configuring Outlook to leverage the digital signature and key management certificates found on your PIV to enable secure email. By default, Outlook will only allow sign and encrypt emails when the configured email address on the client is same email address as encoded on the PIV card.
 
 ## Configure Outlook to Send Secure Email
 
@@ -46,7 +46,7 @@ The following steps pertain to Microsoft Outlook 2016.
 
 <img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration.png" alt="A completed security preference configuration." width="476" height="388">
 
-### Publish your Certificates to the Global Address List
+### Publish Your Certificates to the Global Address List
 
 The Global Address List (GAL) is a shared, enterprise-wide contact directory in Microsoft Outlook.  Publishing your certificates to the GAL will add your encryption certificate to an enterprise address book, making it easier for other agency users to send you an encrypted email.
 
@@ -78,7 +78,7 @@ The Global Address List (GAL) is a shared, enterprise-wide contact directory in 
 3. Enable the **Encrypt** icon (appears as a yellow lock icon).
 4. Click **Send**.
 
-**Note:** It's common practice to sign a message when encrypting it, as observed below.
+**Note:** It is common practice to sign a message when encrypting it below.
 
 <img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration-encrypted-email.png" alt="A signed and encrypted email." width="476" height="343">
 
@@ -102,16 +102,16 @@ When sending an encrypted email, the message is encrypted using the public key i
 
 ## Decrypt an Email
 
-PIV users may received and store encrypted emails througout their tenure in an organization.  These emails may have been encrypted with various public key management keys that have been subsequently retired and/or replaced.  Many PIV card issuers provide historical key management keys when they issue a PIV card, but others may not.  Outlook, via the Cryptographic Application Programming Interface (CAPI), has the ability to decrypt these emails provided the associated private keys are available.  The following steps outline how to decrypt an email when the private decryption keys are available via CAPI:
+PIV users may receive and store encrypted emails througout their tenure in an organization.  These emails may have been encrypted with various public key management keys are now retired or replaced.  Many PIV card issuers provide historical key management keys when they issue a PIV card, but others may not.  Outlook, via the Cryptographic Application Programming Interface (CAPI), can decrypt these emails if the associated private keys are available.  The following steps outline how to decrypt an email when the private decryption keys are available via CAPI:
 
 1. Select an encrypted email
 2. Enter your PIV card PIN or private key password when prompted
 
-**Note:** Your organization may not recover previously issued encryption keys onto your PIV; instead, it may maintain a seperate key recovery service. Please reach out to your local IT department to determine if you can recover retired key management keys.
+**Note:** Your organization may not recover previously issued encryption keys onto your PIV. Instead, it may maintain a separate key recovery service. Please reach out to your local IT department to determine if you can recover retired key management keys.
 
 ## Other Helpful References
 
 - Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/pro/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:class="usa-link usa-link--external"}{:rel="noopener noreferrer"}
+- S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
