@@ -172,7 +172,17 @@
     - "Federation: Policy Alignment"
   authored-by:
     - *FPKIPA
-- &FCP
+- &FBCAPROF
+  type: Guidance
+  shortName: "FBCA Profiles"
+  longName: "Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile"
+  description: >
+    This document specifies the profiles for X.509 certificates and certificate revocation lists (CRLs) 
+    associated with CAs cross-certified with the Federal Bridge Certification Authority (FBCA).
+  published: 2022-10-18
+  authored-by:
+    - *FPKIPA
+- &COMMONCP
   type: Policy
   shortName: "Common CP"
   longName: "X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework"
@@ -186,6 +196,29 @@
     - "Credential Management: Generation & Issuance"
     - "Credential Management: Revocation"
     - "Federation: Policy Alignment"
+  authored-by:
+    - *FPKIPA
+- &COMMONPROF
+  type: Guidance
+  shortName: "Common Profiles"
+  longName: "Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles"
+  description: >
+    This document specifies the profiles for certificates and CRLs issued under the X.509 
+    Certificate Policy for the U.S. Federal PKI Common Policy Framework [COMMON] 
+    and that have a trust path to the Federal Common Policy CA operated by the Federal PKI 
+    Management Authority.
+  published: 2022-09-30
+  authored-by:
+    - *FPKIPA
+- &PIVIPROF
+  type: Guidance
+  shortName: PIV-I Profiles
+  longName: "X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards"
+  description: >
+    This document specifies the X.509 version 3 certificate and version 2 certificate 
+    revocation list (CRL) profiles for certificates and CRLs issued for use with Personal 
+    Identity Verification Interoperable (PIV-I) cards.
+  published: 2018-05-10
   authored-by:
     - *FPKIPA
 - &M1917
@@ -214,7 +247,7 @@
     - "Credential Management: Revocation"
   authorized-by:
     - *M1917
-    - *FCP
+    - *COMMONCP
   implemented-by:
     - *GSA
 - &M1619
@@ -366,7 +399,7 @@
   externalURL: "https://www.idmanagement.gov/fips201/"
   authorized-by:
     - *FIPS201
-    - *FCP
+    - *COMMONCP
   implemented-by:
     - *GSA
 - &APL
