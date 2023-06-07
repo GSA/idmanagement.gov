@@ -1189,3 +1189,73 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+- &PRIVACYFRAMEWORK
+  type: Guidance
+  shortName: "NIST Privacy Framework"
+  longName: "The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management"
+  description: >
+    The Privacy Framework is a voluntary tool intended to help organizations identify and manage 
+    privacy risk to build innovative products and services while protecting individuals' privacy. 
+    The Privacy Framework approach to privacy risk is to consider privacy events as potential problems 
+    individuals could experience arising from system, product, or service operations with data, whether 
+    in digital or non-digital form, through a complete lifecycle from data collection through disposal.
+  published: 2020-01-08
+  externalURL: "https://www.nist.gov/privacy-framework/privacy-framework"
+  authored-by:
+    - *NIST
+- &HOMELANDSECURITYACT
+  type: Law
+  shortName: "Homeland Security Act of 2002"
+  longName: "Homeland Security Act of 2002"
+  description: >
+    An act To establish the Department of Homeland Security, and for other purposes
+  published: 2002-11-25
+  externalURL: "https://www.dhs.gov/sites/default/files/publications/hr_5005_enr.pdf"
+- &CISAACT
+  type: Law
+  shortName: "Cybersecurity and Infrastructure Security Agency Act"
+  longName: "Cybersecurity and Infrastructure Security Agency Act"
+  description: >
+    An Act to amend the Homeland Security Act of 2002 to authorize the Cybersecurity and 
+    Infrastructure Security Agency of the Department of Homeland Security, and 
+    for other purposes.
+  published: 2018-11-16
+  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-115publ278/pdf/PLAW-115publ278.pdf"
+  amends:
+    - *HOMELANDSECURITYACT
+- &DHS
+  type: Authority
+  shortName: "DHS"
+  longName: "Department of Homeland Security"
+  description: >
+    The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
+    we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
+    and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
+    Our duties are wide-ranging, and our goal is clear - keeping America safe.
+  externalURL: "https://www.dhs.gov/"
+  authorized-by:
+    - *HOMELANDSECURITYACT
+- &CISA
+  type: Authority
+  shortName: "CISA"
+  longName: "Cybersecurity & Infrastruture Security Agency"
+  description: >
+    CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
+    infrastructure security and resilience.
+  subgroup-of:
+    - *DHS
+  authorized-by:
+    - *CISAACT
+- &CDM
+  type: Program
+  shortName: "CDM"
+  longName: "Continuous Diagnostics and Mitigation (CDM) Program"
+  description: >
+    The Continuous Diagnostics and Mitigation (CDM) Program is an approach to fortifying the cybersecurity 
+    of government networks and systems. The CDM Program provides cybersecurity tools, integration services, 
+    and dashboards to participating agencies to support them in improving their respective security 
+    posture. The CDM approach focuses on five areas for the federal enterprise: Data Protection Management, 
+    Network Security Management, Identity and Access Management, Asset Management, and Monitoring and 
+    Dashboards.
+  operated-by:
+    - *CISM
