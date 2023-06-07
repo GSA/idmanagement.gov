@@ -19,8 +19,8 @@ subnav:
     href: '#scope'
   - text: Process overview
     href: '#process-overview'
-  - text: Product list criteria
-    href: '#product-criteria'
+  - text: Product criteria list
+    href: '#product-criteria-list'
   - text: Product criteria questionnaire
     href: '#product-criteria-questionnaire'
   - text: Conclusion
@@ -70,7 +70,7 @@ The type of organization will determine how it is recognized. There are three cr
 
 1. Process methodology review - The organization must have a formal and documented process for how it conducts testing or operates its assurance program. GSA will review the process documentation and may ask to be invited into a testing or vendor assurance review session. This step will the integrity of an organizations process to be trusted by a federal government agency.
 2. Testing or assurance criteria mapping review - If an organization uses an organizationally defined standard, it is mapped to 800-63 conformance criteria with noted gaps and this mapping criteria is available as a recognition artifact.
-3. Organization risk assessment -- Review the corporate status and risk indicators for the organization to operate independently.
+3. Organization risk assessment - Review the corporate status and risk indicators for the organization to operate independently.
 
 Organizations will sign an agreement with GSA, recognizing their roles and responsibilities, conformance schema, and testing processes, as well as any ongoing participation or interaction with the organization.
 
@@ -90,7 +90,7 @@ The GSA IATAD will use existing resources to verify vendor submissions. The anti
 
 6. **Removal** – If a vendor fails to provide accurate information or an issue is found that brings into question the security and resiliency, the product is moved to the [Removed Product List](https://www.idmanagement.gov/buy/removed-products-list/){:target="_blank"}{:rel="noopener noreferrer"} and the community is notified of its removal through idmanagement.gov, ICAMSC, and Digital identity Community of Practice, as well as federal acquisition channels.
 
-## Product criteria
+## Product criteria list
 
 The questionnaire is intended to provide a consistent and standard way to receive feedback. These questions are to be used for initial vetting of vendor products to achieve interoperability, security, and reliability assurances. The questionnaire collects input on the security compliance status of proposed products based on federal guidelines such as external body conformance testing and certification to NIST 800-63, FIPS 140 certification, and supply chain security. Vendors are encouraged to complete the questionnaire to the maximum extent possible and provide artifacts to validate their inputs.
 
