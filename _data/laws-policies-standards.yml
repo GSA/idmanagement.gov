@@ -1242,6 +1242,7 @@
   description: >
     CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
     infrastructure security and resilience.
+  externalURL: "https://www.cisa.gov/"
   subgroup-of:
     - *DHS
   authorized-by:
@@ -1257,6 +1258,7 @@
     posture. The CDM approach focuses on five areas for the federal enterprise: Data Protection Management, 
     Network Security Management, Identity and Access Management, Asset Management, and Monitoring and 
     Dashboards.
+  externalURL: "https://www.cisa.gov/resources-tools/programs/continuous-diagnostics-and-mitigation-cdm-program"
   operated-by:
     - *CISM
 - &APPRATIONALIZATION
@@ -1265,7 +1267,7 @@
   longName: "The Application Rationalization Playbook: An Agency Guide to Portfolio Management"
   description: >
     This playbook is a practical guide for application rationalization and IT portfolio management under 
-    the federal government’s Cloud Smart initiatives. Application rationalization will help federal agencies 
+    the federal government's Cloud Smart initiatives. Application rationalization will help federal agencies 
     mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve 
     the delivery of key mission and business services. It requires buy-in from stakeholders across the 
     enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, 
@@ -1273,6 +1275,7 @@
     efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable 
     change.
   published: 2019-06-01
+  externalURL: "https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf"
   authored-by:
     - *CIOCOUNCIL
   authorized-by:
