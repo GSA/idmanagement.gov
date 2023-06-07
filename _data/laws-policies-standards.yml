@@ -1259,3 +1259,22 @@
     Dashboards.
   operated-by:
     - *CISM
+- &APPRATIONALIZATION
+  type: Guidance
+  shortName: "Application Rationalization Playbook"
+  longName: "The Application Rationalization Playbook: An Agency Guide to Portfolio Management"
+  description: >
+    This playbook is a practical guide for application rationalization and IT portfolio management under 
+    the federal government’s Cloud Smart initiatives. Application rationalization will help federal agencies 
+    mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve 
+    the delivery of key mission and business services. It requires buy-in from stakeholders across the 
+    enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, 
+    financial practitioners, acquisition and procurement experts, and end user communities. Rationalization 
+    efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable 
+    change.
+  published: 2019-06-01
+  authored-by:
+    - *CIOCOUNCIL
+  authorized-by:
+    - *M1919
+
