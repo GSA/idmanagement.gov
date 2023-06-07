@@ -27,7 +27,7 @@ This is a list of recognized 3rd party organizations.
 
 | Organization Name | Type of Recognition | 800-63 Alignment | Artifact | Status | 
 | ------ | ------ | -------- | ------ | ------- |
-| Fast IDentify Online Alliance | Testing Lab | AAL | Pending | Provisional Approval |
+| Fast IDentify Online (FIDO) Alliance | Testing Lab | AAL | Pending | Provisional Approval |
 | Kantara Initiative | Assurance Program | IAL, AAL, FAL | Pending | Provisional Approval |
 
 # Product Criteria
