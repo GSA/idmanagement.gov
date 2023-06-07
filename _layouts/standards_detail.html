@@ -62,9 +62,11 @@ layout: default
 <p><a href="{{ page.externalURL }}"><button class="usa-button" type="button">View {{page.type}}</button></a></p>
 {% endif %}
 
-{% assign authored_by = site.data.laws-policies-standards | where: "authored-by.shortName", "{{page.shortName}}" | sort: "shortName" %}
-<ul>
-    {% for document in authoreed_by %}
-    <li>{{document.shortName}}</li>
-    {% endfor %}
-</ul>
+{% for item in site.data.laws-policies-standards %}
+{% if authorized-by %}
+{% assign authorized_by_this = authorized-by | where "shortName",page.shortName %}
+{% for item in authorized_by_this %}
+{{item.shortName}}
+{% endfor %}
+{% endif %}
+{% endfor %}
