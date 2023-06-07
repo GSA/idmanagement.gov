@@ -20,7 +20,7 @@ subnav:
   - text: Process overview
     href: '#process-overview'
   - text: Product list criteria
-    href: '#product-list-criteria'
+    href: '#product-criteria'
   - text: Product criteria questionnaire
     href: '#product-criteria-questionnaire'
   - text: Conclusion
