@@ -93,6 +93,21 @@ layout: default
 </p>
 {% endif %}
 
+{% if page.rescinds | size > 0 %}
+<p><b>Rescinds:</b>
+<ul>
+    {% for reference in page.rescinds %}
+    <li>
+        <a
+            href="{{site.baseurl}}/laws-policies-standards{{reference.shortName | datapage_url: laws-policies-standards }}">
+            {{reference.shortName}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+</p>
+{% endif %}
+
 {% comment %}
 If this is a Law, find the elements authorized by it.
 {% endcomment %}
