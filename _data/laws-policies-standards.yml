@@ -1381,9 +1381,9 @@
     - *NIST
   authorized-by:
     - *EGOV2002
-- &SP80060
+- &SP80060v1
   type: Guidance
-  shortName: SP 800-60
+  shortName: SP 800-60 vol. I
   longName: "NIST Special Publication 800-60 Volume I Revision 1: Guide for Mapping Types of Information and Information Systems to Security Categories"
   description: >
     The guideline's objective is to facilitate application of appropriate levels of information security 
@@ -1394,4 +1394,15 @@
     - *NIST
   authorized-by:
     - *EGOV2002
-  
+- &SP80060v2
+  type: Guidance
+  shortName: SP 800-60 vol. II
+  longName: "NIST Special Publication 800-60 Volume I Revision 1: Appendices to Guide for Mapping Types of Information and Information Systems to Security Categories"
+  description: >
+    The appendices contained in Volume II include security categorization recommendations and rationale 
+    for mission-based and management and support information types.
+  published: 2008-08-01
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *EGOV2002
