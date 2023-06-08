@@ -1381,3 +1381,17 @@
     - *NIST
   authorized-by:
     - *EGOV2002
+- &SP80060
+  type: Guidance
+  shortName: SP 800-60
+  longName: "NIST Special Publication 800-60 Volume I Revision 1: Guide for Mapping Types of Information and Information Systems to Security Categories"
+  description: >
+    The guideline's objective is to facilitate application of appropriate levels of information security 
+    according to a range of levels of impact or consequences that might result from the unauthorized disclosure, 
+    modification, or use of the information or information system.
+  published: 2008-08-01
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *EGOV2002
+  
