@@ -1314,4 +1314,15 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1919
-
+- &EO13636
+  type: Law
+  shortName: "E.O. 13636"
+  longName: "Executive Order 13636: Improving Critical Infrastructure Cybersecurity"
+  description: >
+    This Executive Order proposes development of a process of cybersecurity information sharing by the 
+    government for attacks against critical infrastructure managed by the private sector.
+  published: 2013-02-12
+  externalURL: "https://www.federalregister.gov/documents/2013/02/19/2013-03915/improving-critical-infrastructure-cybersecurity"
+  authored-by:
+    - *WH
+  
