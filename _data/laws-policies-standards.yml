@@ -1350,4 +1350,21 @@
   externalURL: "https://www.acquisition.gov/browse/index/far"
   authored-by:
     - *GSA
-    
+- &FIPS199
+  type: Guidance
+  shortName: FIPS-199
+  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 199: Standards for Security Categorization of Federal Information and Information Systems"
+  description: >
+    FIPS Publication 199 [provides] standards for categorizing information 
+    and information systems. Security categorization standards for information and information systems 
+    provide a common framework and understanding for expressing security that, for the federal 
+    government, promotes: (i) effective management and oversight of information security programs, 
+    including the coordination of information security efforts throughout the civilian, national security, 
+    emergency preparedness, homeland security, and law enforcement communities; and (ii) consistent 
+    reporting to the Office of Management and Budget (OMB) and Congress on the adequacy and 
+    effectiveness of information security policies, procedures, and practices.
+  published: 2004-02-01
+  authorized-by:
+    - *EGOV2002
+  authored-by:
+    - *NIST
