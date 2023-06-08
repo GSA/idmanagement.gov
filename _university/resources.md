@@ -24,7 +24,7 @@ sticky_sidenav: true
       {{resource.name}} ({{resource.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec" href="{{resource.url}}" target="{{resource.target}}" rel="noopener noreferrer">
+  <a class="gsa-no-dec gsa-aclink" href="{{resource.url}}" target="{{resource.target}}" rel="noopener noreferrer" tabindex="-1">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" >
     <p>
         <div class="display-flex flex-column flex-align-end">

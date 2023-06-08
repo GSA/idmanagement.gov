@@ -5,8 +5,9 @@
 
 
 // CSS targets, not used for styling, keep empty, used in js to target classes.
-.gsa-target-accordion-header {}
-.gsa-target-accordion-content-area {}
+.gsa-target-accordion-header {} // for accordion header targeting
+.gsa-target-accordion-content-area {} // for accordion content targeting
+.gsa-aclink {} // for accordion links targeting
 
 
 // Important: Colors for H1 and H2 in usa-layout-docs element
@@ -36,7 +37,7 @@
   text-align: center;
   font-size:22pt;
   color: #1b1b1b;
-  border: 0px;
+  // border: 0px;
   border-top-right-radius:10px;
   margin-right:0px;
   padding-left: 10px;
@@ -51,8 +52,8 @@
 .gsa-collapse-button:hover,.gsa-collapse-button:focus {
   background-color: #dfe1e2;
   color: #1b1b1b;
-  outline: none;
-  border: 0px;
+  // outline: none;
+  // border: 0px;
 }
 // Expand Button
 .gsa-expand-button {
@@ -61,7 +62,7 @@
   text-align: center;
   font-size:22pt;
   color: #1b1b1b;
-  border:0px;
+  // border:0px;
   border-top-left-radius:10px;
   margin-right:0px;
   padding-left: 10px;
@@ -76,8 +77,8 @@
 .gsa-expand-button:hover,.gsa-expand-button:focus {
   background-color: #dfe1e2;
   color: #1b1b1b;
-  outline: none;
-  border: 0px;
+  // outline: none;
+  // border: 0px;
 }
 
 
@@ -126,9 +127,9 @@
   width: 95%;
 }
 
-.gsa-no-dec {
-  text-decoration: none;
-}
+// .gsa-no-dec {
+//   text-decoration: none;
+// }
 
 .gsa-slide {
   position: relative;

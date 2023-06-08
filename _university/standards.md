@@ -31,7 +31,7 @@ Review the federal standards that impact and shape the implementations of ICAM p
       {{standard.name}} ({{standard.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec" href="{{standard.url}}" target="{{standard.target}}" rel="noopener noreferrer">
+  <a class="gsa-no-dec gsa-aclink" href="{{standard.url}}" target="{{standard.target}}" rel="noopener noreferrer" tabindex="-1">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose usa-prose gsa-target-accordion-content-area">
     <p>
         <div class="display-flex flex-column flex-align-end">

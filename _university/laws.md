@@ -15,7 +15,6 @@ pdf: "docs/ficam-arch.pdf"
 ---
 
 Review the federal laws that impact and shape the implementations of ICAM programs and systems.
-
 <hr/>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
@@ -29,7 +28,7 @@ Review the federal laws that impact and shape the implementations of ICAM progra
       {{law.name}} ({{law.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec" href="{{law.url}}" target="{{law.target}}" rel="noopener noreferrer">
+  <a class="gsa-no-dec gsa-aclink" href="{{law.url}}" target="{{law.target}}" rel="noopener noreferrer" tabindex="-1">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
         <div class="display-flex flex-column flex-align-end">

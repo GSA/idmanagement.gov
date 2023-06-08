@@ -30,6 +30,7 @@ function gsaTop() {
 //
 var accordionbutton = document.getElementsByClassName('gsa-target-accordion-header');
 var accordioncontent = document.getElementsByClassName('gsa-target-accordion-content-area');
+var accordionlink = document.getElementsByClassName('gsa-aclink');
 // 
 // Open Accordion
 function expandToggle(){
@@ -39,6 +40,7 @@ function expandToggle(){
     }
     // Loop through accordion content area, removing the hidden attribute to display the accordion body)
     for(var i = 0;i < accordioncontent.length;i++){
+      accordioncontent[i].setAttribute('tabindex','0');
       accordioncontent[i].removeAttribute('hidden');
     }
 }
@@ -47,9 +49,11 @@ function collapseToggle(){
     // Loop through accordion button, setting the aria-expanded attribute to false(changes the icon to -)
     for(var i = 0;i < accordionbutton.length;i++){
       accordionbutton[i].setAttribute('aria-expanded','false');
-   }
+    }
    // Loop through accordion content area, removing the hidden attribute to display the accordion body)
-   for(var i = 0;i < accordioncontent.length;i++){
+    for(var i = 0;i < accordioncontent.length;i++){
+     accordioncontent[i].setAttribute('tabindex','-1');
      accordioncontent[i].setAttribute('hidden','');
-   }
+    }
 }
+

@@ -30,7 +30,7 @@ Review the federal policies  that impact and shape the implementations of ICAM p
       {{policy.name}} ({{policy.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec" href="{{policy.url}}" target="{{policy.target}}" rel="noopener noreferrer">
+  <a class="gsa-no-dec gsa-aclink" href="{{policy.url}}" target="{{policy.target}}" rel="noopener noreferrer" tabindex="-1">
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
         <div class="display-flex flex-column flex-align-end">
