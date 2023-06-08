@@ -1418,3 +1418,33 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+- &EO13556
+  type: Law
+  shortName: E.O. 13556
+  longName: "Executive Order 13556: Controlled Unclassified Information"
+  description: >
+    This order establishes an open and uniform program for managing information that requires safeguarding 
+    or dissemination controls pursuant to and consistent with law, regulations, and Government-wide policies, 
+    excluding information that is classified under Executive Order 13526 of December 29, 2009, or the Atomic 
+    Energy Act, as amended.
+  published: 2010-11-09
+  authored-by:
+    - *WH
+- &SP800171
+  type: Guidance
+  shortName: SP 800-171
+  longName: "NIST Special Publication 800-171 Revision 2: Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations"
+  description: >
+    This publication provides agencies with recommended security requirements for protecting the 
+    confidentiality of Controlled Unclassified Information (CUI) when the information is resident 
+    in nonfederal systems and organizations; 
+    when the nonfederal organization is not collecting or maintaining information on behalf of a 
+    federal agency or using or operating a system on behalf of an agency; and where there are no 
+    specific safeguarding requirements for protecting the confidentiality of CUI prescribed by the 
+    authorizing law, regulation, or governmentwide policy for the CUI category listed in the CUI 
+    Registry. 
+  published: 2021-01-28
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *EO13556
