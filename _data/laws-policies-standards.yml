@@ -1406,3 +1406,15 @@
     - *NIST
   authorized-by:
     - *EGOV2002
+- &SP80073
+  type: Guidance
+  shortName: SP 800-73-4
+  longName: "NIST Special Publication 800-73-4: Interfaces for Personal Identity Verification - Part 1: PIV Card Application Namespace, Data Model and Representation"
+  description: >
+    SP 800-73 contains the technical specifications to interface with the smart card to retrieve 
+    and use the PIV identity credentials.
+  published: 2016-02-08
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
