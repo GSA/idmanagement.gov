@@ -1455,3 +1455,17 @@
     - *NIST
   authorized-by:
     - *EO13556
+- &HTTPSGUIDE
+  type: Guidance
+  shortName: HTTPS Compliance Guide
+  longName: "Compliance Guide: The HTTPS-Only Standard"
+  description: >
+    This site contains a web-friendly version of the White House Office of Management and Budget memorandum 
+    M-15-13, “A Policy to Require Secure Connections across Federal Websites and Web Services”, and provides 
+    technical guidance and best practices to assist in its implementation.
+    It identifies an exception for CRL publication and OCSP.
+  externalURL: "https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https"
+  authored-by:
+    - *CIOCOUNCIL
+  authorized-by:
+    - *M1513
