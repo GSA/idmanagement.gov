@@ -1364,6 +1364,7 @@
     reporting to the Office of Management and Budget (OMB) and Congress on the adequacy and 
     effectiveness of information security policies, procedures, and practices.
   published: 2004-02-01
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf"
   authorized-by:
     - *EGOV2002
   authored-by:
@@ -1377,6 +1378,7 @@
     information systems supporting the executive agencies of the federal government and a risk-based
     process for selecting the security controls necessary to satisfy the minimum security requirements.
   published: 2004-03-01
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf"
   authored-by:
     - *NIST
   authorized-by:
@@ -1390,6 +1392,7 @@
     according to a range of levels of impact or consequences that might result from the unauthorized disclosure, 
     modification, or use of the information or information system.
   published: 2008-08-01
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v1r1.pdf"
   authored-by:
     - *NIST
   authorized-by:
@@ -1402,6 +1405,7 @@
     The appendices contained in Volume II include security categorization recommendations and rationale 
     for mission-based and management and support information types.
   published: 2008-08-01
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v1r1.pdf"
   authored-by:
     - *NIST
   authorized-by:
@@ -1414,6 +1418,7 @@
     SP 800-73 contains the technical specifications to interface with the smart card to retrieve 
     and use the PIV identity credentials.
   published: 2016-02-08
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf"
   authored-by:
     - *NIST
   authorized-by:
@@ -1428,6 +1433,7 @@
     excluding information that is classified under Executive Order 13526 of December 29, 2009, or the Atomic 
     Energy Act, as amended.
   published: 2010-11-09
+  externalURL: "https://www.federalregister.gov/documents/2010/11/09/2010-28360/controlled-unclassified-information"
   authored-by:
     - *WH
 - &SP800171
@@ -1444,6 +1450,7 @@
     authorizing law, regulation, or governmentwide policy for the CUI category listed in the CUI 
     Registry. 
   published: 2021-01-28
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf"
   authored-by:
     - *NIST
   authorized-by:
