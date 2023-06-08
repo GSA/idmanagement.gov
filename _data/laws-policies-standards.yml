@@ -1,10 +1,31 @@
 # yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
-
 - &WH
   type: "Authority"
   shortName: "White House"
   longName: "The Office of the President of the United States of America"
   externalURL: "https://www.whitehouse.gov/"
+- &BUDGETACCOUNTINGACT
+  type: Law
+  shortName: "Budget and Accounting Act"
+  longName: "31 USC Chapter 11: Budget and Accounting Act of 1921"
+  description: >
+    To provide a national budget system and an independent audit of Government accounts, and for other purposes.
+  published: 1921-06-10
+  externalURL: "https://uscode.house.gov/view.xhtml?path=/prelim@title31/subtitle2/chapter11&edition=prelim"
+- &GAO
+  type: Authority
+  shortName: GAO
+  longName: United States Government Accountability Office
+  description: >
+    GAO helps the Congress oversee federal programs and operations to ensure accountability to the American 
+    people. GAO's analysts, auditors, lawyers, economists, information technology specialists, investigators, 
+    and other multidisciplinary professionals seek to enhance the economy, efficiency, effectiveness, and 
+    credibility of the federal government both in fact and in the eyes of the American people. GAO accomplishes 
+    its mission through a variety of activities, including financial audits, program reviews, investigations, 
+    legal support, and policy analyses.
+  externalURL: "https://www.gao.gov/"
+  authorized-by:
+    - *BUDGETACCOUNTINGACT
 - &NIST
   type: "Authority"
   shortName: "NIST"
@@ -23,6 +44,8 @@
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+  authorized-by:
+    - *BUDGETACCOUNTINGACT
 - &OPM
   type: Authority
   shortName: OPM
@@ -1469,3 +1492,77 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1513
+- &EO12977
+  type: Law
+  shortName: E.O. 12977
+  longName: "Executive Order 12977: Interagency Security Committee"
+  description: >
+      [T]o enhance the quality and effectiveness of security in and protection of buildings and facilities
+      in the United States occupied by Federal employees for nonmilitary activities
+      ('Federal facilities'), and to provide a permanent body to address continuing
+      government-wide security for Federal facilities.
+  externalURL: "https://www.govinfo.gov/content/pkg/FR-1995-10-24/pdf/95-26497.pdf"
+  authored-by:
+    - *WH
+- &EO13286
+  type: Law
+  shortName: E.O. 13286
+  longName: "Executive Order 13286: Amendment of Executive Orders, and Other Actions, in Connection With the Transfer of Certain Functions to the Secretary of Homeland Security"
+  description: >
+    [T]o reflect the transfer of certain functions to, and other responsibilities vested in, the Secretary of 
+    Homeland Security, the transfer of certain agencies and agency components to the Department of Homeland 
+    Security, and the delegation of appropriate responsibilities to the Secretary of Homeland Security.
+  published: 2003-05-03
+  authored-by:
+    - *WH
+  amends:
+    - *EO12977
+- &GAO13222
+  type: Guidance
+  shortName: GAO-13-222
+  longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
+  description: >
+    This report examines (1) the sources that inform agencies' physical security programs and (2) the 
+    management practices agencies use to oversee physical security and allocate resources. 
+  externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
+  published: 2013-01-01
+  authored-by:
+    - *GAO
+- &GAO15444
+  type: Guidance
+  shortName: GAO-15-444
+  longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
+  description: >
+    This report examines (1) the types of physical security enhancements selected civilian federal entities have
+    made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
+    enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
+    effectiveness of enhancements and using performance measures.
+  externalURL: "https://www.gao.gov/assets/gao-15-444.pdf"
+  published: 2015-03-01
+  authored-by:
+    - *GAO
+- &ISC
+  type: Authority
+  shortName: ISC
+  longName: Interagency Security Committee
+  description: >
+    The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the 
+    nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
+  externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
+  authorized-by:
+    - *EO12977
+- &PACSBESTPRACTICES
+  type: Guidance
+  shortName: "Best Practices for Planning and Managing Physical Security Resources"
+  longName: "Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide"
+  description: >
+    The Best Practices for Planning and Managing Physical Security Resources is a guide intended 
+    to provide an introduction and understanding of the most efficient processes and procedures to 
+    effectively allocate resources to implement physical security programs within Federal 
+    departments and agencies.
+  externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf"
+  authored-by:
+    - *ISC
+  authorized-by:
+    - *GAO13222
+    - *GAO15444
