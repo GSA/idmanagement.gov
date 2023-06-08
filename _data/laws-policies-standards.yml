@@ -1325,4 +1325,16 @@
   externalURL: "https://www.federalregister.gov/documents/2013/02/19/2013-03915/improving-critical-infrastructure-cybersecurity"
   authored-by:
     - *WH
+- &PPD21
+  type: Law
+  shortName: "PPD-21"
+  longName: "Presidential Policy Directive 21: Critical Infrastructure Security and Resilience"
+  description: >
+    The Presidential Policy Directive (PPD) on Critical Infrastructure Security and Resilience advances 
+    a national unity of effort to strengthen and maintain secure, functioning, and resilient critical 
+    infrastructure.
+  published: 2013-02-12
+  externalURL: "https://www.cisa.gov/sites/default/files/2023-01/ppd-21-critical-infrastructure-and-resilience-508_0.pdf"
+  authored-by:
+    - &WH
   
