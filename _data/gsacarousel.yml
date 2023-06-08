@@ -31,7 +31,7 @@
   heroHeading: Zero Trust
   heroText: concept assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established.
   actionButtonText: Learn more about
-  actionLocation: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
+  actionLocation: why/zero-trust/
   actionTarget: _blank
 
 - orderNumber: 2
@@ -49,7 +49,7 @@
   heroHeading: Phishing resistant authenticator criteria
   heroText: is usually immune to social engineering type of attacks and provides a greater level of security and resilience than traditional authenticators.
   actionButtonText: Learn more about
-  actionLocation: implement/phishing-resistant-authenticators/ 
+  actionLocation: vendors/ficampc/ 
   actionTarget: _blank
 
 - orderNumber: 4

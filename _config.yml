@@ -150,8 +150,8 @@ primary_navigation:
       # - name: Windows Domain Account Pairing
       #   url: /implement/windows-domain-pairing/
       # Update requested by Babur to move to same location as on prod by Ken.(06/07/2023)
-      # - name: FICAM Product Criteria
-      #   url: /vendors/ficampc/ 
+      - name: Phishing-Resistant Authenticator Product Criteria
+        url: /vendors/ficampc/ 
 
   # APL Menu for visible display and access of APLs
   # 06-07-2023 - changed "ALPS" menu to "Functions" per Babur

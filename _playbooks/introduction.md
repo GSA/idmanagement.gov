@@ -29,7 +29,7 @@ subnav:
                 <img
                 src="{{site.baseurl}}{{playbook.header}}"
                 alt="{{playbook.title}}"
-                />
+                tabindex="-1" aria-label="{{playbook.title}}" />
             </div>
         </div>
         <hr>
