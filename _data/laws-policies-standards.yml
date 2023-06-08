@@ -1337,4 +1337,17 @@
   externalURL: "https://www.cisa.gov/sites/default/files/2023-01/ppd-21-critical-infrastructure-and-resilience-508_0.pdf"
   authored-by:
     - *WH
-  
+- &FAR
+  type: Policy
+  shortName: "FAR"
+  longName: "Federal Acquisition Regulation"
+  description: >
+    The Federal Acquisition Regulations System is established for the codification and publication of 
+    uniform policies and procedures for acquisition by all executive agencies. The Federal Acquisition 
+    Regulations System consists of the Federal Acquisition Regulation (FAR), which is the primary document, 
+    and agency acquisition regulations that implement or supplement the FAR.
+  published: 2023-06-02
+  externalURL: "https://www.acquisition.gov/browse/index/far"
+  authored-by:
+    - *GSA
+    
