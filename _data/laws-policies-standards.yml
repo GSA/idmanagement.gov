@@ -1368,3 +1368,16 @@
     - *EGOV2002
   authored-by:
     - *NIST
+- &FIPS200
+  type: Guidance
+  shortName: FIPS-200
+  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 200: Minimum Security Requirements for Federal Information and Information Systems"
+  description: >
+    FIPS Publication 200 specifies minimum security requirements for information and 
+    information systems supporting the executive agencies of the federal government and a risk-based
+    process for selecting the security controls necessary to satisfy the minimum security requirements.
+  published: 2004-03-01
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *EGOV2002
