@@ -1667,6 +1667,14 @@
   type: Authority
   shortName: "PACSmod WG"
   longName: "PACS Modernization Working Group"
+  description: >
+    The Physical Access Control System Modernization Working Group (PACSMod WG) is chartered 
+    under the direction of the Co-Chairs of the Federal Chief Information Security Officer Council 
+    (FCIOC), Identity, Credentialing and Access Management Subcommittee (ICAMSC), and the Program 
+    Director of the Department of Homeland Security (DHS), Interagency Security Committee (ISC). 
+    The purpose of the PACSMod WG is to facilitate the implementation and use of technology and 
+    processes related to modernizing enterprise PACS within the Federal Government (USG), thereby 
+    increasing security, coordination, and compliance with national-level policies and standards.
   subgroup-of:
     - *ICAMSC
 - &80053PACSOVERLAY
