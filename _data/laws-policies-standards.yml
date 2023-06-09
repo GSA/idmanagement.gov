@@ -423,6 +423,7 @@
   authorized-by:
     - *FIPS201
     - *COMMONCP
+    - *M0524
   implemented-by:
     - *GSA
 - &APL
@@ -1560,9 +1561,66 @@
     to provide an introduction and understanding of the most efficient processes and procedures to 
     effectively allocate resources to implement physical security programs within Federal 
     departments and agencies.
+  published: 2015-12-01
   externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf"
   authored-by:
     - *ISC
   authorized-by:
     - *GAO13222
     - *GAO15444
+- &M0618
+  type: Policy
+  shortName: "M-06-18"
+  longName: "OMB Memo 06-18: Acquisition of Products and Services for Implementation of HSPD-12"
+  description: >
+    This memorandum provides updated direction for the acquisition of products and 
+    services for the implementation of Homeland Security Presidential Directive-12 (HSPD-12) 
+    “Policy for a Common Identification Standard for Federal Employees and 
+    Contractors” and also provides status of implementation efforts.
+  published: 2006-06-30
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2006/m06-18.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *HSPD12
+    - *FIPS201
+- &PACSRFP
+  type: Guidance
+  shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
+  longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
+  description: >
+    This document provides language for E-PACS related procurements to ensure compliance with applicable policies
+  published: 2015-02-24
+  externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
+  authored-by:
+    - *FIPSLAB
+  authorized-by:
+    - *M0618
+- &GAO19138
+  type: Guidance
+  shortName: "FEDERAL BUILDING SECURITY"
+  longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
+  description: >
+    This report discusses (1) steps OMB 
+    and GSA have taken to fulfill their 
+    government-wide responsibilities 
+    related to PACS and (2) challenges 
+    selected federal agencies face in 
+    meeting current requirements.
+  published: 2018-12-20
+  externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
+  authored-by:
+    - *GAO
+- &FACILITYACCESSCONTROL
+  type: Guidance
+  shortName: "FACILITY ACCESS CONTROL"
+  longName: "FACILITY ACCESS CONTROL: An Interagency Security Committee Best Practice"
+  description: >
+    This document provides guidance for federal Executive Branch departments and agencies regarding 
+    access control requirements and options for individuals entering federally occupied space
+  published: 2020-12-17
+  authored-by:
+    - *ISC
+  authorized-by:
+    - *GAO19138
+
