@@ -1326,7 +1326,7 @@
     Network Security Management, Identity and Access Management, Asset Management, and Monitoring and 
     Dashboards.
   externalURL: "https://www.cisa.gov/resources-tools/programs/continuous-diagnostics-and-mitigation-cdm-program"
-  operated-by:
+  implemented-by:
     - *CISA
 - &APPRATIONALIZATION
   type: Guidance
