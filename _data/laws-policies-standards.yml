@@ -1872,3 +1872,16 @@
     - *FEDRAMP
   authorized-by:
     - *EO14028
+- &ZEROTRUSTMATURITY
+  type: Guidance
+  shortName: "Zero Trust Security Model"
+  longName: "Zero Trust Security Model"
+  description: >
+    CISA’s Zero Trust Maturity Model (ZTMM) provides an approach to achieve continued modernization 
+    efforts related to zero trust within a rapidly evolving environment and technology landscape
+  published: 2023-04-11
+  externalURL: "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf"
+  authored-by:
+    - *CISA
+  authorized-by:
+    - &EO14028
