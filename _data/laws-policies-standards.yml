@@ -1619,8 +1619,21 @@
     This document provides guidance for federal Executive Branch departments and agencies regarding 
     access control requirements and options for individuals entering federally occupied space
   published: 2020-12-17
+  externalURL: "https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf"
   authored-by:
     - *ISC
   authorized-by:
     - *GAO19138
-
+- &PACSORDERGUIDE
+  type: Guidance
+  shortName: "PACS Ordering Guide"
+  longName: "Physical Access Control Systems (PACS) Customer Ordering Guide"
+  description: >
+    This purpose of this document is create a comprehensive ordering guide that assists ordering
+    agencies, particularly contracting officers, to effectively use the GSA Multiple Award Schedules 
+    (MAS) to purchase total solutions for Physical Access Control Systems (PACS).
+  published: 2020-07-01
+  externalURL: "https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf"
+  authored-by:
+    - *GSA
+ 
