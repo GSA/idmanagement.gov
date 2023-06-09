@@ -1636,3 +1636,15 @@
   externalURL: "https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf"
   authored-by:
     - *GSA
+- &PIVEPACS
+  type: Guidance
+  shortName: "PIV in E-PACS"
+  longName: "Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)"
+  description: >
+    The sole purpose of this document is to provide detailed technical and security guidance for leveraging 
+    PIV and PIV-I authentication mechanisms in a federal agency PACS to comply with directives such as 
+    [OMB M-11-11] and to provide interoperability across the federal enterprise, respectively.
+  published: 2014-03-26
+  externalURL: "https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf"
+  authored-by:
+    - *ICAMSC
