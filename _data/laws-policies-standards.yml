@@ -1750,4 +1750,30 @@
     - *OMB
   authorized-by:
     - *EO13800
-
+- &M2209
+  type: Policy
+  shortName: "Federal Zero Trust Strategy"
+  longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principlesy"
+  description: >
+    The goal of this strategy is to accelerate agencies toward a shared baseline of early zero trust 
+    maturity. Moving to a zero trust architecture will be a multi-year journey for agencies, and 
+    the federal government will learn and adjust as new technologies and practices emerge.
+  published: 2022-01-26
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *EO14028
+- &SP800145
+  type: Guidance
+  shortName: "SP 800-145"
+  longName: "NIST Special Publication 800-145: The NIST Definition of Cloud Computing"
+  description: >
+    Cloud computing is an evolving paradigm. The NIST definition characterizes important aspects of cloud 
+    computing and is intended to serve as a means for broad comparisons of cloud services and deployment 
+    strategies, and to provide a baseline for discussion from what is cloud computing to how to best use cloud 
+    computing.
+  published: 2011-09-28
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf"
+  authored-by:
+    - *NIST
