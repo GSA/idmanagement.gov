@@ -1648,3 +1648,18 @@
   externalURL: "https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf"
   authored-by:
     - *ICAMSC
+- &RISKMANAGEMENTFACILITIES
+  type: Guidance
+  shortName: "Risk Management Process for Federal Facilities"
+  longName: "The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard"
+  description: >
+    The Risk Management Process for Federal Facilities: An Interagency Security Committee 
+    Standard (Standard), 2nd Edition defines the criteria and processes that those responsible for the 
+    security of a facility should use to determine its facility security level (FSL) and provides an 
+    integrated, single source of physical security countermeasures for all Federal facilities.
+  published: 2016-11-01
+  externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf"
+  authored-by:
+    - *ISC
+  authorized-by:
+    - *EO12977
