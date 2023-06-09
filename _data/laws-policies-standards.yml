@@ -1077,6 +1077,8 @@
   externalURL: "https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure"
   authored-by:
     - *WH
+  authorized-by:
+    - *M1919
 - &PAPERWORKREDUCTION1995
   type: Law
   shortName: "Paperwork Reduction Act of 1995"
@@ -1709,3 +1711,17 @@
   externalURL: "https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf"
   authored-by:
     - *FPKIPA
+- &EO14028
+  type: Law
+  shortName: "E.O. 14028"
+  longName: "Executive Order 14028: Improving the Nation's Cybersecurity"
+  description: >
+    The United States faces persistent and increasingly sophisticated malicious cyber campaigns 
+    that threaten the public sector, the private sector, and ultimately the American people's 
+    security and privacy. The Federal Government must improve its efforts to identify, deter, 
+    protect against, detect, and respond to these actions and actors.
+  published: 2021-05-17
+  externalURL: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
+  authored-by:
+    - *WH
+  
