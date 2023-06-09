@@ -1149,6 +1149,8 @@
   description: >
     This document aims to provide federal agencies with a guide to attribute 
     considerations with Attribute Evaluation Scheme examples for access control.
+  published: 2019-06-18
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-205.pdf"
   authored-by:
     - *NIST
   authorized-by:
