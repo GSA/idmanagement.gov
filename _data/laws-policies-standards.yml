@@ -1667,16 +1667,6 @@
   type: Guidance
   shortName: "ePACS 800-53 Overlay"
   longName: "Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)"
-  description: >
-    [T]he purpose of this document is to assist those entities responsible for physical and cyber security
-    1. Provide minimum applicable IT security controls and related supplemental guidance to 
-    appropriately secure and administer ePACS 
-    2. Establish a relationship between IT system security controls and ePACS operational 
-    configurations using a standardized risk-based approach
-    3. Develop an initial foundation for an ePACS operational assessment by providing 
-    supplemental guidance for the implementation of authentication mechanisms in ePACS 
-    as defined in NIST [SP 800-116]
-    4. Define initial responsibilities for implementation and use of this overlay 
   published: 2020-12-24
   externalURL: "https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf"
   authored-by:
