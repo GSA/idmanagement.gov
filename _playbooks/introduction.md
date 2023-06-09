@@ -18,8 +18,8 @@ subnav:
 <ul class="usa-card-group">  
 {% assign playbooks = site.data.playbooks | sort: "title" %}
 {% for playbook in playbooks %}			
-<li class="usa-card tablet:grid-col-6">
-    <a class="gsa-no-dec" href="{{site.baseurl}}{{playbook.url}}" target="{{playbook.target}}">
+<li class="usa-card tablet:grid-col-6" tabindex="0">
+    <a class="gsa-no-dec" href="{{site.baseurl}}{{playbook.url}}" target="{{playbook.target}}" tabindex="-1">
     <div class="usa-card__container shadow-3">
         <div class="usa-card__header">
             <h3 class="site-preview-heading">{{playbook.title}}</h3>
