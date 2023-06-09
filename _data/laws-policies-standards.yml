@@ -1724,4 +1724,30 @@
   externalURL: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
   authored-by:
     - *WH
-  
+- &2017MODERNAIZATIONREPORT
+  type: Guidance
+  shortName: "Final IT Modernization Report"
+  longName: "Report to the President on Federal IT Modernization"
+  description: >
+    [T]his report outlines the current and envisioned state of Federal IT, and it provides specific 
+    recommendations to jumpstart a new wave of modernization efforts.
+  published: 2017-12-13
+  externalURL: "https://www.cio.gov/assets/resources/Report-to-the-President-on-IT-Modernization-Final.pdf"
+  authored-by:
+    - *CIOCOUNCIL
+  authorized-by:
+    - *EO13800
+- &FEDCLOUDSMART
+  type: Policy
+  shortName: "Cloud Smart"
+  longName: "Federal Cloud Computing Stratey"
+  description: >
+    [T]he Administration has developed a new strategy to accelerate agency adoption of cloud-based 
+    solutions: Cloud Smart.
+  published: 2019-06-24
+  externalURL: "https://cloud.cio.gov/strategy/"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *EO13800
+
