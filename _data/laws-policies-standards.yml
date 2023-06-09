@@ -1810,3 +1810,57 @@
   externalURL: "https://doi.org/10.6028/NIST.SP.800-210"
   authored-by:
     - *NIST
+- &USDS
+  type: Authority
+  shortName: "USDS"
+  longName: "United States Digital Service"
+  description: >
+    To deliver better government services to the American people through technology and design.
+  subgroup-of:
+    - *WH
+- &DOD
+  type: Authority
+  shortName: "DoD"
+  longName: "Department of Defense"
+  description: >
+    The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
+- &FEDRAMPMEMO
+  type: Policy
+  shortName: "FedRAMP Policy Memo"
+  longName: "MEMORANDUM FOR CHIEF INFORMATION OFFICERS: Security Authorization of Information Systems in Cloud Computing Environments"
+  description: >
+    FedRAMP will provide a cost-effective, risk-based approach for the adoption and use of cloud services
+  published: 2011-12-08
+  authored-by:
+    - *OMB
+- &FEDRAMP
+  type: Authority
+  shortName: "FedRAMP"
+  longName: "Federal Risk and Automation Management Program"
+  description: >
+    The Federal Risk and Authorization Management Program (FedRAMP®) was established in 2011 to 
+    provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
+    the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an 
+    emphasis on security and protection of federal information.
+  subgroup-of:
+    - *GSA
+    - *DHS
+    - *DOD
+  authorized-by:
+    - *FEDRAMPMEMO
+- &CLOUDSECREFARCH
+  type: Guidance
+  shortName: "Cloud Security Architecture"
+  longName: "Cloud Security Technical Reference Architecture"
+  description: >
+    [The] Cloud Security Technical Reference Architecture [illustrates] recommended approaches 
+    to cloud migration and data protection for agency data collection and reporting that leverages 
+    Cloud Security Posture Management (CSPM).
+  published: 2022-06-01
+  externalURL: "https://www.cisa.gov/sites/default/files/2023-05/Cloud%20Security%20Technical%20Reference%20Architecture%20v2.pdf"
+  authored-by:
+    - *CISA
+    - *USDS
+    - *FEDRAMP
+  authorized-by:
+    - *EO14028
