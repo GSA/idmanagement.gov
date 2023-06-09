@@ -7,7 +7,7 @@
         "type": "object",
         "properties": {
             "type": {
-                "description": "Agency, law, policy or guidance",
+                "description": "Authority, law, policy, guidance, or Program",
                 "enum": [
                     "Authority",
                     "Law",
