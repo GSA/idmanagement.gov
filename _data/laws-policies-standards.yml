@@ -1663,6 +1663,12 @@
     - *ISC
   authorized-by:
     - *EO12977
+- &PACSMODWG
+  type: Authority
+  shortName: "PACSmod WG"
+  longName: "PACS Modernization Working Group"
+  subgroup-of:
+    - *ICAMSC
 - &80053PACSOVERLAY
   type: Guidance
   shortName: "ePACS 800-53 Overlay"
@@ -1679,6 +1685,8 @@
     4. Define initial responsibilities for implementation and use of this overlay 
   published: 2020-12-24
   externalURL: "https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf"
+  authored-by:
+    - *PACSMODWG
   authorized-by:
     - *M1917
 - &80053FPKIOVERLAY
