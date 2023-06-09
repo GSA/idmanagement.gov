@@ -1327,7 +1327,7 @@
     Dashboards.
   externalURL: "https://www.cisa.gov/resources-tools/programs/continuous-diagnostics-and-mitigation-cdm-program"
   operated-by:
-    - *CISM
+    - *CISA
 - &APPRATIONALIZATION
   type: Guidance
   shortName: "Application Rationalization Playbook"
@@ -1481,7 +1481,7 @@
     federal agency or using or operating a system on behalf of an agency; and where there are no 
     specific safeguarding requirements for protecting the confidentiality of CUI prescribed by the 
     authorizing law, regulation, or governmentwide policy for the CUI category listed in the CUI 
-    Registry. 
+    Registry.
   published: 2021-01-28
   externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf"
   authored-by:
@@ -1507,10 +1507,10 @@
   shortName: E.O. 12977
   longName: "Executive Order 12977: Interagency Security Committee"
   description: >
-      [T]o enhance the quality and effectiveness of security in and protection of buildings and facilities
-      in the United States occupied by Federal employees for nonmilitary activities
-      ('Federal facilities'), and to provide a permanent body to address continuing
-      government-wide security for Federal facilities.
+    [T]o enhance the quality and effectiveness of security in and protection of buildings and facilities
+    in the United States occupied by Federal employees for nonmilitary activities
+    ('Federal facilities'), and to provide a permanent body to address continuing
+    government-wide security for Federal facilities.
   published: 1995-10-19
   externalURL: "https://www.govinfo.gov/content/pkg/FR-1995-10-24/pdf/95-26497.pdf"
   authored-by:
@@ -1534,7 +1534,7 @@
   longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
   description: >
     This report examines (1) the sources that inform agencies' physical security programs and (2) the 
-    management practices agencies use to oversee physical security and allocate resources. 
+    management practices agencies use to oversee physical security and allocate resources.
   externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
   published: 2013-01-01
   authored-by:
@@ -1700,7 +1700,7 @@
     3. Develop an initial foundation for an ePACS operational assessment by providing 
     supplemental guidance for the implementation of authentication mechanisms in ePACS 
     as defined in NIST [SP 800-116]
-    4. Define initial responsibilities for implementation and use of this overlay 
+    4. Define initial responsibilities for implementation and use of this overlay
   published: 2020-12-24
   externalURL: "https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf"
   authored-by:
@@ -1714,7 +1714,7 @@
   description: >
     While many NIST [SP 800-53] controls apply to FPKI service operators as written, some controls require 
     specific interpretation or augmentation. This overlay leverages [COMMON] to tailor appropriate [SP 800-
-    53] controls to facilitate implementation. 
+    53] controls to facilitate implementation.
   published: 2021-02-26
   externalURL: "https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf"
   authored-by:
