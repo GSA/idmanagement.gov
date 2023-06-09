@@ -85,7 +85,7 @@ eight.
 				<hr><br>				
 				<ul class="usa-card-group">							
 					<li class="usa-card tablet:grid-col-4" tabindex="0">
-					<a class="gsa-no-dec" href="{{site.baseurl}}/vendors/" tabindex="-1">
+					<a class="gsa-no-dec" href="{{site.baseurl}}/vendors/" tabindex="-1" aria-label="Vendors">
 						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Vendors</h3>
@@ -113,7 +113,7 @@ eight.
 					</a>
 					</li>
 					<li class="usa-card tablet:grid-col-4" tabindex="0">
-					<a class="gsa-no-dec" href="{{site.baseurl}}/acquisition-professionals/" tabindex="-1">
+					<a class="gsa-no-dec" href="{{site.baseurl}}/acquisition-professionals/" tabindex="-1" aria-label="Acquisition professionals">
 						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Acquisition professionals</h3>
@@ -142,7 +142,7 @@ eight.
 					</a>
 					</li>
 					<li class="usa-card tablet:grid-col-4" tabindex="0">
-					<a class="gsa-no-dec" href="{{site.baseurl}}/program-managers/" tabindex="-1">
+					<a class="gsa-no-dec" href="{{site.baseurl}}/program-managers/" tabindex="-1" aria-label="Program managers">
 						<div class="usa-card__container shadow-3">
 							<div class="usa-card__header">
 								<h3 class="site-preview-heading">Program managers</h3>
@@ -185,7 +185,7 @@ eight.
 	<div class="desktop:grid-col-12">						
 		<ul class="usa-card-group">							
 			<li class="usa-card tablet:grid-col-4" tabindex="0">
-				<a class="gsa-no-dec" href="fpki/" target="_blank">
+				<a class="gsa-no-dec" href="fpki/" target="_blank" tabindex="-1" aria-label="Federal public key infrastructure guide">
 				<div class="usa-card__container  gsa-card-shadow">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">Federal public key infrastructure guide</h3>
@@ -212,7 +212,7 @@ eight.
 				</a>
 			</li>
 			<li class="usa-card tablet:grid-col-4" tabindex="0">
-				<a class="gsa-no-dec" href="fips201/" target="_blank">
+				<a class="gsa-no-dec" href="fips201/" target="_blank" tabindex="-1">
 				<div class="usa-card__container gsa-card-shadow">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">FIPS 201 evaluation program</h3>
@@ -282,7 +282,7 @@ eight.
 	<div class="desktop:grid-col-12">						
 		<ul class="usa-card-group">							
 			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left" tabindex="0">
-				<a class="gsa-no-dec" href="{{site.baseurl}}/ssp/" target="_blank">
+				<a class="gsa-no-dec" href="{{site.baseurl}}/ssp/" target="_blank" tabindex="-1" aria-label="GSAPKI shared service provider program guide">
 				<div class="usa-card__container  gsa-card-shadow">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">GSAPKI shared service provider program guide</h3>
@@ -323,7 +323,7 @@ eight.
 			{% assign playbooks = site.data.playbooks | sort: "title" %}
 			{% for playbook in playbooks %}						
 			<li class="usa-card tablet:grid-col-4" tabindex="0">
-				<a class="gsa-no-dec" href="{{site.baseurl}}{{playbook.url}}" target="{{playbook.target}}">
+				<a class="gsa-no-dec" href="{{site.baseurl}}{{playbook.url}}" target="{{playbook.target}}" tabindex="-1">
 				<div class="usa-card__container gsa-card-shadow">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">{{playbook.title}}</h3>
