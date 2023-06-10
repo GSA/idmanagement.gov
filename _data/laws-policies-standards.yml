@@ -1216,7 +1216,7 @@
     - *EGOV2002
 - &NISTRMF
   type: "Guidance"
-  shortName: "RMF"
+  shortName: "NIST RMF"
   longName: "NIST Risk Management Framework"
   description: >
     The Risk Management Framework provides a process that integrates security, privacy, and cyber supply 
