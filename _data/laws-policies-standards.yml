@@ -2151,3 +2151,25 @@
   amends:
     - *SPRINGERMEMO
     - *PIVISSUANCESUSPENSION
+- &FITARA
+  type: Law
+  shortName: "FITARA"
+  longName: "Federal Information Technology Acquisition Reform"
+  description: >
+    The head of each covered agency other than the Department of Defense shall ensure that 
+    the Chief Information Officer of the agency has a significant role in— 
+    (i) the decision processes for all annual and multi-year planning, programming, budgeting, and execution 
+    decisions, related reporting requirements, and reports related to information technology; and 
+    (ii) the management, governance, and oversight processes related to information technology.
+  published: 2014-12-19
+  externalURL: "https://www.congress.gov/113/plaws/publ291/PLAW-113publ291.pdf#page=148"
+- &M1514
+  type: Policy
+  shortName: "M-15-14"
+  longName: "OMB Memo 15-14: Management and Oversight of Federal Information Technology"
+  description: >
+    The purpose of this memorandum is to provide implementation guidance for the Federal Information 
+    Technology Acquisition Reform Act (FITARA) 1 and related information technology (IT) management 
+    practices.
+  published: 2015-06-10
+  externalURL: "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-14.pdf?msclkid=af985c3cc7f511ec9ae8691f3682c8d1"
