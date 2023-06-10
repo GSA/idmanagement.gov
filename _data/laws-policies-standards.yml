@@ -2274,3 +2274,18 @@
     an ICAM enabled system that includes multifactor authentication.
   published: 2019-02-01
   externalURL: "https://www.dhs.gov/sites/default/files/publications/icam_acquisition_guidance_final_version_-_092019.pdf"
+  authored-by:
+    - *DHS
+- &DODICAMSTRATEGY
+  type: Policy
+  shortName: "DoD ICAM Strategy"
+  longName: "Department of Defense Identity, Credential, and Access Management (ICAM) Strategy"
+  description: >
+    This strategy provides a set of goals focused on establishing measurable and achievable transformation 
+    of core ICAM elements to achieve ICAM activities. These core elements enable ICAM to be fast, reliable, 
+    secure, and auditable across the DoD enterprise in a manner enhancing user experience and supports the 
+    DoD Chief Information Officer's (CIO) ICAM vision.
+  published: 2020-03-30
+  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
+  authored-by:
+    - *DOD
