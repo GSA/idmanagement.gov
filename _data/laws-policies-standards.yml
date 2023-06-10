@@ -2119,7 +2119,7 @@
 - &M2131
   type: Policy
   shortName: "M-21-31"
-  longName: "OMB Memo 21-31: Improving the Federal Government’s Investigative and Remediation Capabilities Related to Cybersecurity Incidents"
+  longName: "OMB Memo 21-31: Improving the Federal Government's Investigative and Remediation Capabilities Related to Cybersecurity Incidents"
   description: >
     This memo establishes a maturity model to guide the implementation of requirements 
     across four Event Logging (EL) tiers.
