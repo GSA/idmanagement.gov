@@ -2047,3 +2047,15 @@
     An open protocol to allow secure authorization in a simple and standard method from web, 
     mobile and desktop applications.
   published: 2017-10-01
+  externalURL: "https://datatracker.ietf.org/doc/html/rfc8252"
+- &SCIM
+  type: Standard
+  shortName: "SCIM"
+  longName: "System for Cross-domain Identity Management"
+  description: >
+    The System for Cross-domain Identity Management (SCIM) specification
+    is designed to manage user identity in cloud-based applications and
+    services in a standardized way to enable interoperability, security,
+    and scalability.
+  published: 2020-05-31
+  externalURL: "https://www.rfc-editor.org/rfc/rfc7642.txt"
