@@ -2226,3 +2226,13 @@
   externalURL: "https://pages.nist.gov/SOFA/SOFA.html"
   authored-by:
     - *NIST
+- &RFC8485
+  type: Standard
+  shortName: "RFC 8485"
+  longName: "Request for Comments (RFC) 8485: Vectors of Trust"
+  description: >
+    This document defines a mechanism for describing and signaling several aspects of a digital 
+    identity transaction and its participants. These aspects are used to determine the amount of 
+    trust to be placed in that transaction.
+  published: 2018-10-18
+  externalURL: "https://datatracker.ietf.org/doc/html/rfc8485"
