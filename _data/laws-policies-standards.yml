@@ -2129,3 +2129,25 @@
     - *OMB
   authorized-by:
     - *EO14028
+- &CREDSTANDARDS
+  type: Policy
+  shortName: "Credentialing Standards Memo 2020"
+  longName: "Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials"
+  description: >
+    [T]he following credentialing standards procedures [...]
+    promote defined goals in agency eligibility determinations to issue HSPD-12 personal
+    identity verification (PIV) credentials for access to federally controlled facilities and
+    information systems: the protection of the life, safety, property, or health of employees,
+    contractors, vendors or visitors to Federal facilities; the protection of the Government’s
+    physical assets, information systems, records, including privileged, proprietary,
+    financial or medical records; and the privacy of the individuals whose data the
+    Government holds in its systems.
+  published: 2020-12-15
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *EO13467
+  amends:
+    - *SPRINGERMEMO
+    - *PIVISSUANCESUSPENSION
