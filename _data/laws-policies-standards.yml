@@ -2059,3 +2059,39 @@
     and scalability.
   published: 2020-05-31
   externalURL: "https://www.rfc-editor.org/rfc/rfc7642.txt"
+- &INFOSHARINGSTRATEGY
+  type: Law
+  shortName: "National Strategy for Information Sharing and Safeguarding"
+  longName: "National Strategy for Information Sharing and Safeguarding"
+  description: >
+    [T]he 2012 National Strategy for Information Sharing and 
+    Safeguarding (hereafter referred to as the Strategy) provides guidance for more efective integration and 
+    implementation of policies, processes, standards, and technologies to promote secure and responsible 
+    national security information sharing
+  published: 2012-12-01
+  externalURL: "https://www.dhs.gov/sites/default/files/publications/15_1026_NSI_National-Strategy-Information-Sharing-Safeguarding.pdf"
+  authored-by:
+    - *WH
+- &SP180018
+  type: Guidance
+  shortName: "NIST SP 1800-18"
+  longName: "NIST SPECIAL PUBLICATION 1800-18 Privileged Account Management for the Financial Services Sector"
+  description: >
+    The goal of this project is to demonstrate a PAM capability that effectively protects, monitors, and 
+    manages privileged account access, including life-cycle management, authentication, authorization, 
+    auditing, and access controls.
+  published: 2018-09-01
+  externalURL: "https://www.nccoe.nist.gov/projects/use-cases/privileged-account-management"
+  authored-by:
+    - *NIST
+- &NISTIR7966
+  type: Guidance
+  shortName: "NISTIR 7966"
+  longName: "NIST Interagency Report 7966: Security of Interactive and Automated Access Management Using Secure Shell (SSH)"
+  description: >
+    The purpose of this document is to assist organizations in understanding the basics of Secure Shell (SSH) 
+    and SSH access management in an enterprise, focusing on the management of SSH user keys.
+  published: 2015-10-15
+  externalURL: "http://dx.doi.org/10.6028/NIST.IR.7966"
+  authored-by:
+    - *NIST
