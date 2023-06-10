@@ -1964,3 +1964,23 @@
   externalURL: "https://cic.gsa.gov/"
   authored-by:
     - *GSA
+- &NISTIR8149
+  type: Guidance
+  shortName: "NISTIR 8149"
+  longName: "NIST Interagency Report 8149: Developing Trust Frameworks to Support Identity Federations"
+  description: >
+    When supported by trust frameworks, identity federations provide a secure method for leveraging shared 
+    identity credentials across communities of similarly-focused online service providers.
+  published: 2018-01-12
+  externalURL: "https://csrc.nist.gov/publications/detail/nistir/8149/final"
+  authored-by:
+    - *NIST
+- &NISTIR8335
+  type: Guidance
+  shortName: "NISTIR 8335"
+  longName: "NIST Interagency Report 8335: Identity as a Service for Public Safety Organizations"
+  description: >
+    This report informs [Public Safety Organizations] about [Identity as a Service] and how they can benefit from it.
+  published: 2021-06-16
+  authored-by:
+    - *NIST
