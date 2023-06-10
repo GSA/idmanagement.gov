@@ -2377,3 +2377,14 @@
   externalURL: "https://doi.org/10.6028/NIST.IR.8344-draft"
   authored-by:
     - *NIST
+- &GSAM
+  type: Policy
+  shortName: "GSAM"
+  longName: "General Services Administration Acquisition Manual"
+  description: >
+    The General Services Administration Acquisition Manual (GSAM) consolidates the 
+    General Services Administration (GSA) agency acquisition rules and guidance.
+  published: 2023-05-05
+  externalURL: "https://www.acquisition.gov/sites/default/files/current/gsam/pdf/GSAM.pdf"
+  authored-by:
+    - *GSA
