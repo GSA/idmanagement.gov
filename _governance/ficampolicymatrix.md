@@ -86,6 +86,6 @@ This table lists industry standards that are relevant for FICAM.
 
 {% assign sorted_standards = site.data.laws-policies-standards | where: "type","Standard" | sort: "shortName","last" %}
 
-| Activity/Program Name | Operated By | Categories |
-| --- | --- | --- | {% for document in sorted_standards %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {% for operator in document.implemented-by %} {{ operator.shortName }}<br/> {% endfor %} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
+| Activity/Program Name | Categories |
+| --- |  --- | {% for document in sorted_standards %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
