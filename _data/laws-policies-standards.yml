@@ -2289,3 +2289,49 @@
   externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
   authored-by:
     - *DOD
+- &DODICAMREFDESIGN
+  type: Guidance
+  shortName: "DoD ICAM Reference Design"
+  longName: "DoD Enterprise Identity, Credential, and Access Management (ICAM) Reference Design"
+  description: >
+    The purpose of this ICAM Reference Design (RD) is two-fold. First, as an architecture document, 
+    it supports the owners and operators of DoD enterprise ICAM services so that these services 
+    can effectively interface with each other to support ICAM capabilities, and supports developers 
+    so they can implement ICAM using consistent, standards-based methodologies. Second, as a 
+    descriptive document, it supports DoD Components in understanding how to consume DoD enterprise 
+    ICAM services and how to operate DoD Component, Community of Interest (COI), or local level 
+    ICAM services when DoD enterprise services do not meet mission needs.
+  published: 2020-06-01
+  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf"
+  authored-by:
+    - *DOD
+- &SELECTINGMFA
+  type: Guidance
+  shortName: "Selecting Secure MFA"
+  longName: "Selecting Secure Multi-factor Authentication Solutions"
+  description: >
+    U.S. Government Agencies and their partners who want to integrate secure alternatives to 
+    PIV-based authentication need to support authorized users who will be employing personally 
+    owned or partner-owned devices, such as smart phones and home or non-government office computers, 
+    to access government or partner information systems containing sensitive information. By using 
+    the objective criteria in this guidance, government organizations can make better informed 
+    decisions about which multi-factor solutions meet their particular needs. And by following 
+    the practical guidelines, users can reduce their risk exposure and become harder targets for 
+    malicious threat actors.
+  published: 2020-10-01
+  externalURL: "https://media.defense.gov/2020/Sep/22/2002502665/-1/-1/0/CSI_MULTIFACTOR_AUTHENTICATION_SOLUTIONS_UOO17091520.PDF"
+  authored-by:
+    - *DOD
+  authorized-by:
+    - *SP80063
+- &IOTCYBERACT
+  type: Law
+  shortName: "IoT Cybersecurity Improvement Act"
+  longName: "Internet of Things Cybersecurity Improvement Act of 2020"
+  description: >
+    Not later than 90 days after the date of the enactment of this Act, the Director of the Institute 
+    (NIST) shall develop and publish under section 20 of the National Institute of Standards and 
+    Technology Act (15 U.S.C. 278g) standards and guidelines for the Federal Government on the 
+    appropriate use and management by agencies of Internet of Things devices.
+  published: 2020-09-22
+  externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
