@@ -2116,3 +2116,16 @@
   externalURL: "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644"
   authored-by:
     - *CMU
+- &M2131
+  type: Policy
+  shortName: "M-21-31"
+  longName: "OMB Memo 21-31: Improving the Federal Government’s Investigative and Remediation Capabilities Related to Cybersecurity Incidents"
+  description: >
+    This memo establishes a maturity model to guide the implementation of requirements 
+    across four Event Logging (EL) tiers.
+  published: 2021-08-27
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *EO14028
