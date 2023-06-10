@@ -2359,7 +2359,21 @@
     your attention FAQ No. 13, which reminds agencies of their obligation to report HSPD-12 
     fields into CVS.
   published: 2021-01-01
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/faqs-january-2021.pdf"
   authored-by:
     - *OPM
   authorized-by:
     - *CREDSTANDARDS
+- &NISTIR8344
+  type: Guidance
+  shortName: "NISTIR 8344"
+  longName: "Draft NIST Interagency Report (NISTIR) 8344: Ontology for Authentication"
+  description: >
+    This document includes a survey of authentication mechanisms, establishing the need and 
+    basis for authentication metrology (quantification), as well as key factors in 
+    determining strength and management requirements when assessing an authentication 
+    system in a given environment.
+  published: 2021-02-08
+  externalURL: "https://doi.org/10.6028/NIST.IR.8344-draft"
+  authored-by:
+    - *NIST
