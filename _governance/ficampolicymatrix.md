@@ -8,17 +8,19 @@ sticky_sidenav: true
 
 subnav:
   - text: Introduction
-    href: '#introduction'
+    href: "#introduction"
   - text: Policy Overview
-    href: '#policy-overview'
+    href: "#policy-overview"
   - text: Laws and Directives
-    href: '#laws-and-directives'
+    href: "#laws-and-directives"
   - text: Federal Policies
-    href: '#federal-policies'
+    href: "#federal-policies"
   - text: Federal Technical Guidance
-    href: '#federal-technical-guidance'
+    href: "#federal-technical-guidance"
   - text: ICAM Activities and Programs
-    href: '#icam-activities-and-programs'
+    href: "#icam-activities-and-programs"
+  - text: Industry Standards
+    href: "#industry-standards"
 ---
 
 ## Introduction
@@ -30,6 +32,7 @@ Laws, executive policies, regulations, and government standards drive multiple f
 * [Federal Policies](#federal-policies)
 * [Federal Technical Guidance](#federal-technical-guidance)
 * [ICAM Activities and Programs](#icam-activities-and-programs)
+* [Industry Standards](#industry-standards)
 
 ## Policy Overview
 
@@ -75,4 +78,14 @@ This table lists activities and programs supporting ICAM for the federal governm
 
 | Activity/Program Name | Operated By | Categories |
 | --- | --- | --- | {% for document in sorted_program %}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {% for operator in document.implemented-by %} {{ operator.shortName }}<br/> {% endfor %} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
+
+## Industry Standards
+
+This table lists industry standards that are relevant for FICAM.
+
+{% assign sorted_standards = site.data.laws-policies-standards | where: "type","Standard" | sort: "shortName","last" %}
+
+| Activity/Program Name | Operated By | Categories |
+| --- | --- | --- | {% for document in sorted_standards %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {% for operator in document.implemented-by %} {{ operator.shortName }}<br/> {% endfor %} | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
