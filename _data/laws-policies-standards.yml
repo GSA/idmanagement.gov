@@ -2252,3 +2252,25 @@
   externalURL: "https://media.defense.gov/2019/Sep/09/2002180346/-1/-1/0/Transition%20to%20Multi-factor%20Authentication%20-%20Copy.pdf"
   authored-by:
     - *NSA
+- &MODERNCAC
+  type: Policy
+  shortName: "Modernizing the Common Access Card"
+  longName: "Department of Defense Memorandum: Modernizing the Common Access Card - Streamlining Identity and Improving Operational Interoperability"
+  description: >
+    This memorandum directs the alignment of DoD's use of the CAC with the Federal PIV-Auth certificate
+  published: 2018-12-07
+  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/modernizing_the_cac.pdf"
+  authored-by:
+    - *DOD
+  authorized-by:
+    - *HSPD12
+- &ICAMACQUISITION
+  type: Guidance
+  shortName: "ICAM Acquisition Guide"
+  longName: "Identity, Credential, and Access Management (ICAM) Acquisition Guidance"
+  description: >
+    The goal of this document is to enable any organization, including the SLTT Community, to spend 
+    its resources wisely on thoughtful and well-specified ICAM procurement activities that result in 
+    an ICAM enabled system that includes multifactor authentication.
+  published: 2019-02-01
+  externalURL: "https://www.dhs.gov/sites/default/files/publications/icam_acquisition_guidance_final_version_-_092019.pdf"
