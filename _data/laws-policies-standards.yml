@@ -1984,3 +1984,15 @@
   published: 2021-06-16
   authored-by:
     - *NIST
+- &NISTIR8360
+  type: Guidance
+  shortName: "NISTIR 8360"
+  longName: "NIST Interagency Report 8360: Machine Learning for Access Control Policy Verification"
+  description: >
+    [T]his internal report (IR) proposes an efficient and straightforward method for access control 
+    policy verification by applying a classification algorithm of machine learning, which does not 
+    require comprehensive test cases, oracle, or system translation but rather checks the logic of 
+    policy rules directly, making it more efficient and feasible compared to traditional methods.
+  published: 2021-09-16
+  authored-by:
+    - *NIST
