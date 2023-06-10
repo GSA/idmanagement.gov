@@ -2236,3 +2236,19 @@
     trust to be placed in that transaction.
   published: 2018-10-18
   externalURL: "https://datatracker.ietf.org/doc/html/rfc8485"
+- &TRANSITIONMFA
+  type: Guidance
+  shortName: "Transition to Multi-factor Authentication"
+  longName: "Transition to Multi-factor Authentication"
+  description: >
+    These guidelines provide technical requirements for federal agencies implementing digital 
+    identity services and are not intended to constrain the development or use of standards outside 
+    of this purpose. The guidelines cover identity proofing and authentication of users (such as 
+    employees, contractors, or private individuals) interacting with government IT systems over 
+    open networks. They define technical requirements in each of the areas of identity proofing, 
+    registration, authenticators, management processes, authentication protocols, federation, and 
+    related assertions.
+  published: 2019-08-30
+  externalURL: "https://media.defense.gov/2019/Sep/09/2002180346/-1/-1/0/Transition%20to%20Multi-factor%20Authentication%20-%20Copy.pdf"
+  authored-by:
+    - *NSA
