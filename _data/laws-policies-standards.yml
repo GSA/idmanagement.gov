@@ -2190,3 +2190,16 @@
     - *OMB
   authorized-by:
     - *EO13467
+- &NICEFRAMEWORK
+  type: Guidance
+  shortName: "SP 800-181"
+  longName: "NIST Special Publication 800-181 Revision 1 Workforce Framework for Cybersecurity (NICE Framework)"
+  description: >
+    The National Initiative for Cybersecurity Education (NICE) recognizes that those 
+    performing cybersecurity work — including students, job seekers, and employees — are lifelong 
+    learners throughout their efforts to emphasize and address cybersecurity implications across 
+    many domains.
+  published: 2020-11-16
+  externalURL: "https://doi.org/10.6028/NIST.SP.800-181r1"
+  authored-by:
+    - *NIST
