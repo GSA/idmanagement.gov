@@ -2215,3 +2215,14 @@
   authorized-by:
     - *EO13467
     - *EO13488
+- &SOFAB
+  type: Guidance
+  shortName: "SOFA-B"
+  longName: "Strength of Function for Authenticators (SOFA) Biometrics"
+  description: >
+    This paper [...] outlines a process intended to support the evaluation of biometric authenticators 
+    and—ultimately—multiple authentication mechanisms.
+  published: 2016-08-11
+  externalURL: "https://pages.nist.gov/SOFA/SOFA.html"
+  authored-by:
+    - *NIST
