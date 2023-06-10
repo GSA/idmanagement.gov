@@ -2095,3 +2095,24 @@
   externalURL: "http://dx.doi.org/10.6028/NIST.IR.7966"
   authored-by:
     - *NIST
+- &CMU
+  type: Authority
+  shortName: "CMU"
+  longName: "Carnegie Mellon University"
+  externalURL: "https://www.cmu.edu/"
+- &GUIDEINSIDERTHREAT
+  type: Guidance
+  shortName: "Common Sense Guide to Mitigating Insider Threats, Sixth Edition"
+  longName: "Common Sense Guide to Mitigating Insider Threats, Sixth Edition"
+  description: >
+    This sixth edition of the Common Sense Guide to Mitigating Insider Threats provides the current 
+    recommendations of the CERT Division (part of Carnegie Mellon University's Software Engineering 
+    Institute), based on an expanded corpus of more than 1,500 insider threat cases and continued 
+    research and analysis. It introduces the topic of insider threats, describes its intended audience, 
+    outlines changes for this edition, defines insider threats, and outlines current trends. The guide 
+    then describes 21 practices that organizations should implement to prevent and detect insider 
+    threats, as well as case studies of organizations that failed to do so.
+  published: 2019-02-01
+  externalURL: "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644"
+  authored-by:
+    - *CMU
