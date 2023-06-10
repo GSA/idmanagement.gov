@@ -1877,7 +1877,7 @@
   shortName: "Zero Trust Security Model"
   longName: "Zero Trust Security Model"
   description: >
-    CISA’s Zero Trust Maturity Model (ZTMM) provides an approach to achieve continued modernization 
+    CISA's Zero Trust Maturity Model (ZTMM) provides an approach to achieve continued modernization 
     efforts related to zero trust within a rapidly evolving environment and technology landscape
   published: 2023-04-11
   externalURL: "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf"
@@ -1885,3 +1885,25 @@
     - *CISA
   authorized-by:
     - *EO14028
+- &AGENCYITMODERNIZATION
+  type: Guidance
+  shortName: "Agency IT Modernization"
+  longName: "Agency IT Modernization: Educational Resources Building Blocks"
+  description: >
+    A collection of resources to provide information about IT modernization through data center optimization
+    and cloud enablement.
+  externalURL: "https://community.max.gov/display/Egov/Agency+IT+Modernization%3A+Educational+Resources+Building+Blocks"
+  authored-by:
+    - *CIOCOUNCIL
+- &SSOPLAYBOOK
+  type: Guidance
+  shortName: "SSO Playbook"
+  longName: "Enterprise Single Sign-On Playbook"
+  description: >
+    The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies 
+    implement or modernize an SSO service for federal employee access to government applications.
+  published: 2021-02-12
+  externalURL: "https://playbooks.idmanagement.gov/playbooks/sso/"
+  authored-by:
+    - *ICAMSC
+    - *GSA
