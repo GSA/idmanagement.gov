@@ -2335,3 +2335,17 @@
     appropriate use and management by agencies of Internet of Things devices.
   published: 2020-09-22
   externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
+- &SP800213
+  type: Standard
+  shortName: "SP 800-213"
+  longName: "NIST Special Publication 800-213: IoT Device Cybersecurity Guidance for the Federal Government: Establishing IoT Device Cybersecurity Requirements"
+  description: >
+    This publication contains background and recommendations to help the federal agencies 
+    consider how an IoT device they plan to acquire can integrate into a federal information 
+    system. It provides guidance on considering system security from the device perspective.
+  published: 2021-11-01
+  externalURL: "https://doi.org/10.6028/NIST.SP.800-213"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *IOTCYBERACT
