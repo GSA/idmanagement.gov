@@ -2349,3 +2349,17 @@
     - *NIST
   authorized-by:
     - *IOTCYBERACT
+- &SUITABILITYFAQ
+  type: Guidance
+  shortName: "HSPD-12/PIV Suspension and Revocation FAQ"
+  longName: "Frequently Asked Questions (FAQs) for Credentialing Standards Procedures for Issuing Personnel Identity Verification Cards under HSPD-12 and New Requirements for Suspension or Revocation of Eligibility for PIV Credentials"
+  description: >
+    Attached are answers to some anticipated Frequently Asked Questions to assist you in 
+    successfully implementing the Credentialing Procedures guidance. In particular, we call 
+    your attention FAQ No. 13, which reminds agencies of their obligation to report HSPD-12 
+    fields into CVS.
+  published: 2021-01-01
+  authored-by:
+    - *OPM
+  authorized-by:
+    - *CREDSTANDARDS
