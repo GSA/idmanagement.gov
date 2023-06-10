@@ -1907,3 +1907,28 @@
   authored-by:
     - *ICAMSC
     - *GSA
+- &FEDRAMPDIDREQS
+  type: Guidance
+  shortName: "FedRamp Digital Identity Requirements"
+  longName: "FedRamp Digital Identity Requirements"
+  description: >
+    This document provides revised guidance and requirements on digital identity capabilities in support of 
+    achieving and maintaining a Federal Risk and Authorization Management Program (FedRAMP) security 
+    authorization.
+  published: 2018-01-31
+  externalURL: "https://s3.amazonaws.com/sitesusa/wp-content/uploads/var/www/html/sites/www/app/wordpress/wp-content/blogs.dir/482/files/2016/06/FedRAMP_Digital_Identity_Requirements_v1.0.pdf"
+  authored-by:
+    - *FEDRAMP
+  authorized-by:
+    - *SP80063
+- &FICAMARCH
+  type: Guidance
+  shortname: "FICAM Architecture"
+  longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
+  description: >
+    These pages describe the basics of ICAM, the FICAM Architecture, and how you can use this 
+    information to facilitate enterprise ICAM practices at your agency.
+  published: 2021-01-06
+  externalURL: "https://playbooks.idmanagement.gov/arch/"
+  authored-by:
+    - *ICAMSC
