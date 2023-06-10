@@ -1996,3 +1996,46 @@
   published: 2021-09-16
   authored-by:
     - *NIST
+- &SP180013
+  type: Guidance
+  shortName: "NIST SP 1800-13"
+  longName: "NIST SPECIAL PUBLICATION 1800-13A Mobile Application Single Sign-On: Improving Authentication for Public Safety First Responders"
+  description: >
+    This NIST Cybersecurity Practice Guide describes how organizations can implement these
+    technologies to enhance public safety mission capabilities by using standards-based
+    commercially available or open-source products. The technologies described facilitate
+    interoperability among diverse mobile platforms, applications, relying parties, identity providers
+    (IdPs), and public-sector and private-sector participants, regardless of the application
+    development platform used in their construction.
+  published: 2021-08-25
+  authored-by:
+    - *NIST
+- &TRUMANMEMO
+  type: Law
+  shortName: "Truman  Memorandum"
+  longName: "Memorandum for the Secretary of State and the Secretary of Defense, SUBJECT: Communications Intelligence Activities"
+  description: >
+    [REDACTED]
+  published: 1952-10-24
+  externalURL: "https://media.defense.gov/2021/Jul/15/2002763653/-1/-1/0/TRUMAN-MEMO.PDF"
+- &NSA
+  type: Authority
+  shortName: "NSA"
+  longName: "National Security Agency"
+  description: >
+    We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
+    national defense and secure national security systems.
+  authorized-by:
+    - *TRUMANMEMO
+- &CLOUDVULN
+  type: Guidance
+  shortName: "Mitigating Cloud Vulnerabilities"
+  longName: "National Security Agency | Cybersecurity Information: Mitigating Cloud Vulnerabilities"
+  description: >
+    This document divides cloud vulnerabilities into four classes (misconfiguration, poor access control, 
+    shared tenancy vulnerabilities, and supply chain vulnerabilities) that encompass the vast majority of 
+    known vulnerabilities. [...] Descriptions of each vulnerability class along with the most effective 
+    mitigations are provided to help organizations lock down their cloud resources.
+  published: 2020-01-22
+  authored-by:
+    - *NSA
