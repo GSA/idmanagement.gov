@@ -2203,3 +2203,15 @@
   externalURL: "https://doi.org/10.6028/NIST.SP.800-181r1"
   authored-by:
     - *NIST
+- &5CFR731
+  type: Policy
+  shortName: "5 CFR 731"
+  longName: ""
+  description: >
+    Establish criteria and procedures for making determinations of suitability and for taking suitability 
+    actions regarding employment in covered positions
+  published: 2008-04-15
+  externalURL: "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-731"
+  authorized-by:
+    - *EO13467
+    - *EO13488
