@@ -1921,3 +1921,26 @@
     - *FEDRAMP
   authorized-by:
     - *SP80063
+- &FICAMARCH
+  type: Guidance
+  shortName: "FICAM Architecture"
+  longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
+  description: >
+    These pages describe the basics of ICAM, the FICAM Architecture, and how you can use this 
+    information to facilitate enterprise ICAM practices at your agency.
+  published: 2021-01-06
+  externalURL: "https://playbooks.idmanagement.gov/arch/"
+  authored-by:
+    - *ICAMSC
+- &ICAMGOVFRAMEWORK
+  type: Guidance
+  shortName: "ICAM Governance Framework"
+  longName: "Identity, Credential, and Access Management Governance Framework"
+  description: >
+    The IGFWG, composed of ICAM practitioners from
+    several federal agencies, developed this ICAM Governance Framework as a tool to help
+    agencies build and improve ICAM governance structures, processes, and policies.
+  published: 2021-09-01
+  externalURL: "https://playbooks.idmanagement.gov/docs/playbook-identity-governance-framework.pdf"
+  authored-by:
+    - *ICAMSC
