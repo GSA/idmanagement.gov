@@ -72,7 +72,7 @@
   scope:
     - "Workforce Identity"
   ficam-services:
-    - "Identity Management: Identity Proofing"
+    - "Identity Management - Identity Proofing"
 - &FIPS201
   type: "Guidance"
   shortName: "FIPS 201"
@@ -83,7 +83,7 @@
   scope:
     - "Workforce Identity"
   ficam-services:
-    - "Identity Management: Identity Proofing"
+    - "Identity Management - Identity Proofing"
   authorized-by:
     - *HSPD12
   authored-by:
@@ -97,7 +97,7 @@
   scope:
     - "Public Identity"
   ficam-services:
-    - "Access Management: Authentication"
+    - "Access Management - Authentication"
   authored-by:
     - *OMB
 - &M0524
@@ -110,7 +110,7 @@
   scope:
     - "Workforce Identity"
   ficam-services:
-    - "Identity Management: Identity Proofing"
+    - "Identity Management - Identity Proofing"
   authorized-by:
     - *HSPD12
   authored-by:
@@ -122,6 +122,8 @@
   published: 2002-12-17
   description: "An Act: To enhance the management and promotion of electronic Government services and processes by establishing a Federal Chief Information Officer within the Office of Management and Budget, and by establishing a broad framework of measures that require using Internet-based information technology to enhance citizen access to Government information and services, and for other purposes."
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-107publ347/pdf/PLAW-107publ347.pdf"
+  ficam-services:
+    - "Governance - Identity Governance"
 - &CIOCOUNCIL
   type: "Authority"
   shortName: "Federal CIO Council"
@@ -189,10 +191,10 @@
   scope:
     - Workforce Identity
   ficam-services:
-    - "Identity Management: Identity Proofing"
-    - "Credential Management: Generation & Issuance"
-    - "Credential Management: Revocation"
-    - "Federation: Policy Alignment"
+    - "Identity Management - Identity Proofing"
+    - "Credential Management - Generation & Issuance"
+    - "Credential Management - Revocation"
+    - "Federation - Policy Alignment"
   authored-by:
     - *FPKIPA
 - &FBCAPROF
@@ -215,10 +217,10 @@
   scope:
     - Workforce Identity
   ficam-services:
-    - "Identity Management: Identity Proofing"
-    - "Credential Management: Generation & Issuance"
-    - "Credential Management: Revocation"
-    - "Federation: Policy Alignment"
+    - "Identity Management - Identity Proofing"
+    - "Credential Management - Generation & Issuance"
+    - "Credential Management - Revocation"
+    - "Federation - Policy Alignment"
   authored-by:
     - *FPKIPA
 - &COMMONPROF
@@ -255,10 +257,10 @@
     - Workforce Identity
     - Public Identity
   ficam-services:
-    - "Identity Management: Identity Proofing"
-    - "Credential Management: Generation & Issuance"
-    - "Credential Management: Revocation"
-    - "Federation: Policy Alignment"
+    - "Identity Management - Identity Proofing"
+    - "Credential Management - Generation & Issuance"
+    - "Credential Management - Revocation"
+    - "Federation - Policy Alignment"
 - &PKISSP
   type: "Program"
   shortName: "PKI SSP"
@@ -266,8 +268,8 @@
   description: "The General Services Administration, Office of Government-wide Policy, manages the Public Key Infrastructure Shared Services Provider Program. The primary focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability."
   externalURL: "https://www.idmanagement.gov/buy/gsapkissp/"
   ficam-services:
-    - "Credential Management: Generation & Issuance"
-    - "Credential Management: Revocation"
+    - "Credential Management - Generation & Issuance"
+    - "Credential Management - Revocation"
   authorized-by:
     - *M1917
     - *COMMONCP
@@ -318,6 +320,8 @@
   externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
   amends:
     - *EGOV2002
+  ficam-services:
+    - "Governance - Identity Governance"
 - &M0504
   type: Policy
   shortName: "M-05-04"
