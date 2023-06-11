@@ -18,9 +18,16 @@ layout: default
 
 {% if page.ficam-services %}
 <p><b>CATEGORIES:</b><br />
+<ul>
     {% for category in page.ficam-services %}
-    {{ category }}<br />
+    <li>
+        <a href="{{site.baseurl}}/laws-policies-standards{{category | datapage_url: ficam-services }}">
+            {{ category }}
+        </a>
+    </li>
+
     {% endfor %}
+</ul>
 </p>
 {% endif %}
 
