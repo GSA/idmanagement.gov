@@ -415,7 +415,7 @@
   authored-by:
     - *OMB
   authorized-by:
-    - *
+    - *FISMA2014
   ficam-services:
     - Federation - Policy Alignment
 - &CPWG
