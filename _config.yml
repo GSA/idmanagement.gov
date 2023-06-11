@@ -196,3 +196,7 @@ page_gen:
     name: "shortName"
     directory: "policies"
     #debug: true
+  - data: "ficam-services"
+    template: "services_detail"
+    name: "shortName"
+    directory: "ficam_services"
