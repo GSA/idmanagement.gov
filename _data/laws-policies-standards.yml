@@ -713,6 +713,9 @@
   externalURL: "https://www.federalregister.gov/d/2011-26729"
   authored-by:
     - *WH
+  ficam-services:
+    - Access Management - Digital Policy Administration
+    - Access Management - Privileged Access Management
 - &CNSS
   type: Authority
   shortName: "CNSS"
@@ -762,9 +765,12 @@
     This order prescribes a uniform system for classifying, safeguarding, and declassifying national 
     security information, including information relating to defense against transnational terrorism.
   published: 2009-12-29
+  externalURL: "https://www.federalregister.gov/documents/2010/01/05/E9-31418/classified-national-security-information"
   authored-by:
     - *WH
-  externalURL: "https://www.federalregister.gov/documents/2010/01/05/E9-31418/classified-national-security-information"
+  ficam-services:
+    - Access Management
+    - Governance
 - &EO12968
   type: Law
   shortName: "EO 12968"
@@ -777,6 +783,11 @@
   externalURL: "https://www.federalregister.gov/d/95-19654"
   authored-by:
     - *WH
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
 - &INSIDERTHREAT
   type: Policy
   shortName: "National Insider Threat Policy"
@@ -843,6 +854,11 @@
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
   authored-by:
     - *WH
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
 - &SPRINGERMEMO
   type: Policy
   shortName: "Springer Memo"
@@ -868,6 +884,9 @@
   externalURL: "https://www.federalregister.gov/documents/2009/01/22/E9-1574/granting-reciprocity-on-excepted-service-and-federal-contractor-employee-fitness-and-reinvestigating"
   authored-by:
     - *WH
+  ficam-services:
+    - Identity Management
+    - Credential Management
 - &EO13869
   type: Law
   shortName: "EO 13689"
@@ -883,6 +902,9 @@
   externalURL: "https://www.federalregister.gov/documents/2019/04/29/2019-08797/transferring-responsibility-for-background-investigations-to-the-department-of-defense"
   authored-by:
     - *WH
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Federation - Policy Alignment
 - &NBIB
   type: Authority
   shortName: "NBIB"
@@ -909,6 +931,9 @@
   externalURL: "https://www.archives.gov/federal-register/codification/executive-order/10450.html"
   authored-by:
     - *WH
+  ficam-services:
+    - Identity Management
+    - Governance
 - &CSSCDM
   type: Policy
   shortName: "Clearance Decision-Making Guide"
