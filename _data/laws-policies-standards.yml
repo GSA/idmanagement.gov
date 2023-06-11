@@ -698,17 +698,6 @@
   authored-by:
     - *WH
   externalURL: "https://www.federalregister.gov/d/03-2069"
-- &EO13587
-  type: Law
-  shortName: "EO 13587"
-  longName: "Executive Order 13587: Structural Reforms To Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information"
-  description: >
-    [T]to ensure the responsible sharing and safeguarding of classified national security information (classified 
-    information) on computer networks
-  published: 2011-10-07
-  authored-by:
-    - *WH
-  externalURL: "https://www.federalregister.gov/d/2011-26729"
 - &CNSS
   type: Authority
   shortName: "CNSS"
@@ -1921,17 +1910,6 @@
     - *FEDRAMP
   authorized-by:
     - *SP80063
-- &FICAMARCH
-  type: Guidance
-  shortName: "FICAM Architecture"
-  longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
-  description: >
-    These pages describe the basics of ICAM, the FICAM Architecture, and how you can use this 
-    information to facilitate enterprise ICAM practices at your agency.
-  published: 2021-01-06
-  externalURL: "https://playbooks.idmanagement.gov/arch/"
-  authored-by:
-    - *ICAMSC
 - &ICAMGOVFRAMEWORK
   type: Guidance
   shortName: "ICAM Governance Framework"
