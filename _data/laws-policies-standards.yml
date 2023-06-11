@@ -109,12 +109,12 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2005/m05-24.pdf"
   scope:
     - "Workforce Identity"
-  ficam-services:
-    - "Identity Management - Identity Proofing"
   authorized-by:
     - *HSPD12
   authored-by:
     - *OMB
+  ficam-services:
+    - "Identity Management - Identity Proofing"
 - &EGOV2002
   type: "Law"
   shortName: "E-Government act of 2002"
@@ -304,6 +304,11 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
   authored-by:
     - *OMB
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Access Management - Authentication
+    - Federation - Policy Alignment
 - &FISMA2014
   type: Law
   shortName: "FISMA 2014"
@@ -334,6 +339,8 @@
   authorized-by:
     - *EGOV2002
     - *A130
+  ficam-services:
+    - Federation - Policy Alignment
 - &M1513
   type: Policy
   shortName: "M-15-13"
@@ -371,6 +378,11 @@
     - *OMB
   authorized-by:
     - *FISMA2014
+  ficam-services:
+    - Access Management - Authentication
+    - Access Management - Privileged Access Management
+    - Credential Management - Generation & Issuance
+    - Federation - Attribute Exchange
 - &M1916
   type: Policy
   shortName: "M-19-16"
@@ -403,7 +415,9 @@
   authored-by:
     - *OMB
   authorized-by:
-    - *FISMA2014
+    - *
+  ficam-services:
+    - Federation - Policy Alignment
 - &CPWG
   type: Authority
   shortName: "CPWG"
@@ -798,6 +812,11 @@
     classified information by: establishing common expectations; institutionalizing executive branch
     best practices; and enabling flexible implementation across the executive branch.
   externalURL: "https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy__Minimum_Standards.pdf"
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
 - &NITTF
   type: Authority
   shortName: "National Insider Threat Task Force"
@@ -873,6 +892,11 @@
     - *EO13467
   authored-by:
     - *GSA
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Access Management - Authentication
+    - Federation - Policy Alignment
 - &EO13488
   type: Law
   shortName: "EO 13488"
@@ -949,6 +973,9 @@
     - *OMB
     - *OPM
     - *DNI
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
 - &PIVISSUANCESUSPENSION
   type: Policy
   shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
@@ -963,6 +990,11 @@
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/memo-issuing-piv-credentials-and-suspension-criteria.pdf"
   authored-by:
     - *OMB
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Federation - Policy Alignment
 - &PRIVACYACT1974
   type: "Law"
   shortName: "Privacy Act of 1974"
