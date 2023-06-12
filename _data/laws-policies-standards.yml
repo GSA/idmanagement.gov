@@ -2137,7 +2137,7 @@
 - &CLOUDVULN
   type: Guidance
   shortName: "Mitigating Cloud Vulnerabilities"
-  longName: "National Security Agency | Cybersecurity Information: Mitigating Cloud Vulnerabilities"
+  longName: "National Security Agency - Cybersecurity Information: Mitigating Cloud Vulnerabilities"
   description: >-
     This document divides cloud vulnerabilities into four classes (misconfiguration, poor access control, 
     shared tenancy vulnerabilities, and supply chain vulnerabilities) that encompass the vast majority of 
