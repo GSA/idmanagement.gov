@@ -499,6 +499,11 @@
     - *NIST
   authorized-by:
     - *M1917
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Federation - Policy Alignment
 - &SP80063
   type: Guidance
   shortName: "NIST SP 800-63"
@@ -518,6 +523,11 @@
     - *M1917
     - *FISMA2014
     - *A130
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management
+    - Federation
+    - Governance
 - &SP80063A
   type: Guidance
   shortName: "NIST SP 800-63A"
@@ -618,6 +628,10 @@
     - *NIST
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Identity Management - Maintenance
+    - Governance - Identity Governance
+    - Federation - Attribute Exchange
 - &SP80079
   type: Guidance
   shortName: "NIST SP 800-79"
@@ -662,6 +676,10 @@
     - *NIST
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Identity Management - Maintenance
+    - Governance - Identity Governance
+    - Federation - Attribute Exchange
 - &SP80078
   type: Guidance
   shortName: "NIST SP 800-78"
