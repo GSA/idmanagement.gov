@@ -58,7 +58,7 @@ This table lists Federal Policies and directives published by OMB. They set a st
 
 {% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" %}
 
-| Document Name | Publication Date | Categories |
+| Document | Document Name | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_policies %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |
@@ -70,7 +70,7 @@ This table lists Technical Guidance published under ICAM. The provide technical 
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" %}
 
-| Document Name | Publication Date | Categories |
+| Document | Document Name | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_guidance %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |
