@@ -49,7 +49,7 @@ This table provides a listing of the laws documented in the policy matrix above.
 | Document | Document Name | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_laws %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published | date_to_string }} |
 {%- endfor %}
 
 ## Federal Policies
@@ -61,7 +61,7 @@ This table lists Federal Policies and directives published by OMB. They set a st
 | Document | Document Name | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_policies %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published | date_to_string }} |
 {%- endfor %}
 
 ## Federal Technical Guidance
@@ -73,7 +73,7 @@ This table lists Technical Guidance published under ICAM. The provide technical 
 | Document | Document Name | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_guidance %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published | date_to_string }} |
 {%-  endfor %}
 
 ## ICAM Activities and Programs
