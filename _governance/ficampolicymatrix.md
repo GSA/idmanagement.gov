@@ -47,8 +47,10 @@ This table provides a listing of the laws documented in the policy matrix above.
 {% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" %}
 
 | Document | Document Name | Date Published |
-| --- | --- | --- | {% for document in sorted_laws %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |  {% endfor %}
+| --- | --- | --- |
+{%- for document in sorted_laws -%}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |  
+{%- endfor -%}
 
 ## Federal Policies
 
