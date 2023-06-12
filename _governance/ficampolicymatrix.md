@@ -85,7 +85,7 @@ This table lists activities and programs supporting ICAM for the federal governm
 | Activity/Program Name | Description | Operated By |
 | --- | --- | --- |
 {%- for document in sorted_program %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }}
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description -}}
 {%- for operator in document.implemented-by %} {{ operator.shortName }}<br/> {% endfor %} |
 {%- endfor %}
 
