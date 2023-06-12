@@ -82,12 +82,11 @@ This table lists activities and programs supporting ICAM for the federal governm
 
 {% assign sorted_program = site.data.laws-policies-standards | where: "type","Program" | sort: "implemented-by","last" %}
 
-| Activity/Program Name | Operated By | Categories |
+| Activity/Program Name | Description | Operated By |
 | --- | --- | --- |
 {%- for document in sorted_program %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) |
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }}
 {%- for operator in document.implemented-by %} {{ operator.shortName }}<br/> {% endfor %} |
-{%- for service in document.ficam-services %} {{ service }}<br/> {% endfor %} |
 {%- endfor %}
 
 ## Industry Standards
