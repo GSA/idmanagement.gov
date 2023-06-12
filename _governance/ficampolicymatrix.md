@@ -42,7 +42,9 @@ This diagram presents a visual overview of the FICAM Policy landscape.
 
 ## Laws and Directives
 
-This table provides a listing of the laws documented in the policy matrix above. Click on the name of a law or directive to see more details about it, and for a link to the document itself.
+This table lists the laws that establish or authorize the entities and activities listed in later tables.
+
+Click on the name of a law or directive to see more details about it, and for a link to the law itself.
 
 {% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" %}
 
@@ -56,6 +58,8 @@ This table provides a listing of the laws documented in the policy matrix above.
 
 This table lists Federal Policies and directives published by OMB. They set a strategic direction for the entire Federal Government, and are the basis for development of the standards and technical guidance documents produced to support FICAM.
 
+Click on the name of a policy to see more details about it, and for a link to the policy itself.
+
 {% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" %}
 
 | Document | Document Name | Date Published |
@@ -66,7 +70,9 @@ This table lists Federal Policies and directives published by OMB. They set a st
 
 ## Federal Technical Guidance
 
-This table lists Technical Guidance published under ICAM. The provide technical details to support consistent, secure and effective implementation of the policies.
+This table lists Technical Guidance published under ICAM. They provide technical details to support consistent, secure and effective implementation of the policies.
+
+Click on the name of a guidance document to see more details about it, and for a link to the document itself.
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" %}
 
@@ -80,6 +86,8 @@ This table lists Technical Guidance published under ICAM. The provide technical 
 
 This table lists activities and programs supporting ICAM for the federal government. These programs support the use of FICAM by federal agencies.
 
+Click on the name of a activity or program to see more details about it, and for a link to the homepage of the activity or program.
+
 {% assign sorted_program = site.data.laws-policies-standards | where: "type","Program" | sort: "implemented-by","last" %}
 
 | Activity/Program Name | Description | Operated By |
@@ -91,6 +99,8 @@ This table lists activities and programs supporting ICAM for the federal governm
 ## Industry Standards
 
 This table lists industry standards that are relevant for FICAM.
+
+Click on the name of a standard to see more details about it, and for a link to the standard itself.
 
 {% assign sorted_standards = site.data.laws-policies-standards | where: "type","Standard" | sort: "shortName","last" %}
 
