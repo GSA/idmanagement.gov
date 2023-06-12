@@ -16,7 +16,7 @@ If this is an Authority, find the elements authored by it.
     {% for item in site.data.laws-policies-standards %}
     {% if item.ficam-services | size > 0 %}
     {% for service in item.ficam-services %}
-    {% if service == page.shortName or service contains page.shortName %}
+    {% if service contains page.shortName %}
     <li>
         <a href="{{site.baseurl}}/laws-policies-standards{{item.shortName | datapage_url: laws-policies-standards }}">
             {{item.shortName}}
