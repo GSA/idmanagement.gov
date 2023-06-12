@@ -50,7 +50,7 @@ This table provides a listing of the laws documented in the policy matrix above.
 | --- | --- | --- |
 {%- for document in sorted_laws %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published}} |
-{% endfor -%}
+{%- endfor %}
 
 ## Federal Policies
 
