@@ -594,6 +594,11 @@
   authorized-by:
     - *FISMA2014
     - *A130
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management
+    - Access Management
+    - Governance
 - &SP80087
   type: Guidance
   shortName: "NIST SP 800-87"
@@ -606,6 +611,9 @@
   authorized-by:
     - *FIPS201
     - *HSPD12
+  ficam-services:
+    - Identity Management
+    - Governance - Identity Governance
 - &SP80096
   type: Guidance
   shortName: "NIST SP 800-96"
@@ -617,6 +625,9 @@
     - *NIST
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Identity Management
+    - Governance - Identity Governance
 - &SP80073
   type: Guidance
   shortName: "NIST SP 800-73"
@@ -643,6 +654,8 @@
     - *NIST
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Federation - Policy Alignment
 - &SP80085
   type: Guidance
   shortName: "NIST SP 800-85"
@@ -654,6 +667,10 @@
     - *NIST
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Governance - Identity Governance
+    - Federation - Policy Alignment
+    - Identity Management
 - &SP800157
   type: Guidance
   shortName: "NIST SP 800-157"
@@ -665,6 +682,11 @@
     - *NIST
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Federation - Policy Alignment
 - &SP80076
   type: Guidance
   shortName: "NIST SP 800-76"
@@ -693,6 +715,10 @@
     - *FIPS201
     - *SP80073
     - *SP80076
+  ficam-services:
+    - Identity Management - Maintenance
+    - Governance - Identity Governance
+    - Federation - Attribute Exchange
 - &PIVIFORISSUERS
   type: Guidance
   shortName: "PIV-I for Issuers"
@@ -702,6 +728,10 @@
   published: 2017-07-27
   authored-by:
     - *CIOCOUNCIL
+  ficam-services:
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Identity Management - Identity Proofing
 - &PIVPRIV
   type: Guidance
   shortName: "PIV Privileged User Guide"
@@ -716,6 +746,10 @@
     - *NIST
   authorized-by:
     - *M1604
+  ficam-services:
+    - Access Management - Privileged Access Management
+    - Credential Management
+    - Identity Management
 - &NSD42
   type: Law
   shortName: "National Security Directive 42"
