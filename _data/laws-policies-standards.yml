@@ -8,7 +8,7 @@
   type: Law
   shortName: "Budget and Accounting Act"
   longName: "31 USC Chapter 11: Budget and Accounting Act of 1921"
-  description: >
+  description: >-
     To provide a national budget system and an independent audit of Government accounts, and for other purposes.
   published: 1921-06-10
   externalURL: "https://uscode.house.gov/view.xhtml?path=/prelim@title31/subtitle2/chapter11&edition=prelim"
@@ -16,7 +16,7 @@
   type: Authority
   shortName: GAO
   longName: United States Government Accountability Office
-  description: >
+  description: >-
     GAO helps the Congress oversee federal programs and operations to ensure accountability to the American 
     people. GAO's analysts, auditors, lawyers, economists, information technology specialists, investigators, 
     and other multidisciplinary professionals seek to enhance the economy, efficiency, effectiveness, and 
@@ -50,14 +50,14 @@
   type: Authority
   shortName: OPM
   longName: "U.S. Office of Personnel Management"
-  description: >
+  description: >-
     OPM works in several broad categories to lead and serve the Federal Government in enterprise human 
     resource management by delivering policies and services to achieve a trusted effective civilian workforce.
 - &DNI
   type: Authority
   shortName: DNI
   longName: "Director of National Intelligence"
-  description: >
+  description: >-
     Our mission is to lead intelligence integration and forge an intelligence community that delivers the most 
     insightful intelligence possible
 - &HSPD12
@@ -215,7 +215,7 @@
   type: Guidance
   shortName: "FBCA Profiles"
   longName: "Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile"
-  description: >
+  description: >-
     This document specifies the profiles for X.509 certificates and certificate revocation lists (CRLs) 
     associated with CAs cross-certified with the Federal Bridge Certification Authority (FBCA).
   published: 2022-10-18
@@ -241,7 +241,7 @@
   type: Guidance
   shortName: "Common Profiles"
   longName: "Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles"
-  description: >
+  description: >-
     This document specifies the profiles for certificates and CRLs issued under the X.509 
     Certificate Policy for the U.S. Federal PKI Common Policy Framework [COMMON] 
     and that have a trust path to the Federal Common Policy CA operated by the Federal PKI 
@@ -253,7 +253,7 @@
   type: Guidance
   shortName: PIV-I Profiles
   longName: "X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards"
-  description: >
+  description: >-
     This document specifies the X.509 version 3 certificate and version 2 certificate 
     revocation list (CRL) profiles for certificates and CRLs issued for use with Personal 
     Identity Verification Interoperable (PIV-I) cards.
@@ -327,7 +327,7 @@
   type: Law
   shortName: "FISMA 2014"
   longName: "Federal Information Security Modernization Act of 2014"
-  description: >
+  description: >-
     The purposes of this subchapter are to [...] provide a comprehensive framework for 
     ensuring the effectiveness of information security controls over information resources 
     that support Federal operations and assets.
@@ -462,7 +462,7 @@
   type: Guidance
   shortName: "FICAM APL"
   longName: "FICAM Approved Products List"
-  description: >
+  description: >-
     The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
   externalURL: "https://www.idmanagement.gov/buy/#products"
   authored-by:
@@ -508,7 +508,7 @@
   type: Guidance
   shortName: "NIST SP 800-63"
   longName: "NIST Special Publication 800-63-4: Digital Identity Guidelines"
-  description: >
+  description: >-
     These guidelines provide technical requirements for federal agencies implementing digital identity 
     services and are not intended to constrain the development or use of standards outside of this purpose. 
     The guidelines cover identity proofing and authentication of users (such as employees, contractors, or 
@@ -532,7 +532,7 @@
   type: Guidance
   shortName: "NIST SP 800-63A"
   longName: "NIST Special Publication 800-63A-4: Enrollment and Identity Proofing"
-  description: >
+  description: >-
     This guideline focuses on the enrollment and verification of an identity for use in digital services. 
     Central to this is a process known as identity proofing in which an applicant provides evidence to a 
     credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert 
@@ -550,7 +550,7 @@
   type: Guidance
   shortName: "NIST SP 800-63B"
   longName: "NIST Special Publication 800-63B-4: Authentication and Lifecycle Management"
-  description: >
+  description: >-
     These guidelines focus on the authentication of subjects interacting with government systems over open 
     networks, establishing that a given claimant is a subscriber who has been previously authenticated. The 
     result of the authentication process may be used locally by the system performing the authentication or 
@@ -568,7 +568,7 @@
   type: Guidance
   shortName: "NIST SP 800-63C"
   longName: "NIST Special Publication 800-63C-4: Federation and Assertions"
-  description: >
+  description: >-
     These guidelines provide technical requirements for federal agencies implementing digital identity services 
     and are not intended to constrain the development or use of standards outside of this purpose. This guideline 
     focuses on the use of federated identity and the use of assertions to implement identity federations. 
@@ -736,7 +736,7 @@
   type: Guidance
   shortName: "PIV Privileged User Guide"
   longName: "Best Practices for Privileged User PIV Authentication"
-  description: >
+  description: >-
     This white paper further explains the need for multi-factor PIV-based user authentication to take the place of password-based 
     single-factor authentication for privileged users. It also provides best practices for agencies implementing PIV authentication 
     for privileged users
@@ -754,7 +754,7 @@
   type: Law
   shortName: "National Security Directive 42"
   longName: "National Policy for the Security of National Security Telecommunications and Information Systems"
-  description: >
+  description: >-
     This Directive establishes initial objectives, policies, and an organizational structure to guide the conduct of activities to 
     secure national security systems from exploitation; establishes a mechanism for policy development and dissemination; and assigns 
     responsibilities for implementation.
@@ -764,7 +764,7 @@
   type: Law
   shortName: "EO 13231"
   longName: "Executive Order 13231: Critical Infrastructure Protection in the Information Age"
-  description: >
+  description: >-
     To ensure protection of information systems for critical infrastructure, including emergency preparedness communications, 
     and the physical assets that support such systems, in the information age
   published: 2001-10-18
@@ -775,7 +775,7 @@
   type: Law
   shortName: "EO 13284"
   longName: "Executive Order 13284: Amendment of Executive Orders, and Other Actions, in Connection With the Establishment of the Department of Homeland Security"
-  description: >
+  description: >-
     [T]o reflect responsibilities vested in the Secretary of Homeland Security and take other actions in connection with the 
     establishment of the Department of Homeland Security"
   published: 2003-01-28
@@ -788,7 +788,7 @@
   type: Law
   shortName: "EO 13587"
   longName: "Executive Order 13587: Structural Reforms To Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information"
-  description: >
+  description: >-
     [T]o ensure the responsible sharing and safeguarding of classified national security 
     information (classified information) on computer networks
   published: 2011-10-07
@@ -813,7 +813,7 @@
   type: Law
   shortName: "EO 13356"
   longName: "Executive Order 13356: Strengthening the Sharing of Terrorism Information To Protect Americans"
-  description: >
+  description: >-
     [T]o further strengthen the effective conduct of United States intelligence activities and protect the territory, people, 
     and interests of the United States of America, including against terrorist attacks
   authored-by:
@@ -823,7 +823,7 @@
   type: Law
   shortName: "EO 13388"
   longName: "Executive Order 13388: Further Strengthening the Sharing of Terrorism Information To Protect Americans"
-  description: >
+  description: >-
     [T]o further strengthen the effective conduct of United States counterterrorism activities and protect the territory, people, 
     and interests of the United States of America, including against terrorist attacks
   published: 2005-10-27
@@ -835,7 +835,7 @@
   type: Law
   shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
   longName: "INTELLIGENCE REFORM AND TERRORISM PREVENTION ACT OF 2004"
-  description: >
+  description: >-
     An act to reform the intelligence community and the intelligence and intelligence-related
     activities of the United States Government, and for other purposes.
   published: 2004-12-17
@@ -843,7 +843,7 @@
   type: Law
   shortName: "EO 13526"
   longName: "Executive Order 13526: Classified National Security Information"
-  description: >
+  description: >-
     This order prescribes a uniform system for classifying, safeguarding, and declassifying national 
     security information, including information relating to defense against transnational terrorism.
   published: 2009-12-29
@@ -857,7 +857,7 @@
   type: Law
   shortName: "EO 12968"
   longName: "Executive Order 12968: Access to Classified Information"
-  description: >
+  description: >-
     This order establishes a uniform Federal personnel security program for
     employees who will be considered for initial or continued access to classified
     information.
@@ -875,7 +875,7 @@
   shortName: "National Insider Threat Policy"
   longName: "National Insider Threat Policy"
   published: 2012-11-21
-  description: >
+  description: >-
     The National Insider Threat Policy aims to strengthen the protection and safeguarding of
     classified information by: establishing common expectations; institutionalizing executive branch
     best practices; and enabling flexible implementation across the executive branch.
@@ -889,7 +889,7 @@
   type: Authority
   shortName: "National Insider Threat Task Force"
   longName: "National Insider Threat Task Force"
-  description: >
+  description: >-
     The primary mission of the NITTF is to develop a Government-wide insider threat program for deterring, 
     detecting, and mitigating insider threats, including the safeguarding of classified information from 
     exploitation, compromise, or other unauthorized disclosure, taking into account risk levels, as well 
@@ -901,7 +901,7 @@
   type: Program
   shortName: "US Access"
   longName: "Federal Credentialing Services"
-  description: >
+  description: >-
     Through our program you can:
     Enroll applicants; activate, manage, suspend, reprint, or revoke cards; and manage appointments and sponsorship.
     Confirm identity using biometric verification and combine applicants' biographic information, fingerprint templates, and PINs.
@@ -920,7 +920,7 @@
   type: Program
   shortName: "Login.gov"
   longName: "Login.gov"
-  description: >
+  description: >-
     Login.gov is a secure sign in service used by the public to sign in to participating government agencies. 
     Participating agencies will ask you to create a Login.gov account to securely access your information on 
     their website or application.
@@ -933,7 +933,7 @@
   type: Law
   shortName: "EO 13467"
   longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
-  description: >
+  description: >-
     [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
     suitability for Government employment, contractor employee fitness, and eligibility for access to classified 
     information, while taking appropriate account of title III of Public Law 108-458
@@ -950,7 +950,7 @@
   type: Policy
   shortName: "Springer Memo"
   longName: "Final Credentialing Standards for Issuing Personal Identity Verification Cards under HSPD-12"
-  description: >
+  description: >-
     This memorandum provides final government-wide credentialing standards to be used by all 
     Federal departments and agencies in determining whether to issue or revoke personal identity 
     verification (PIV) cards to their employees and contractor personnel, including those who are 
@@ -969,7 +969,7 @@
   type: Law
   shortName: "EO 13488"
   longName: "Executive Order 13488: Granting Reciprocity on Excepted Service and Federal Contractor Employee Fitness and Reinvestigating Individuals in Positions of Public Trust"
-  description: >
+  description: >-
     [T]o simplify and streamline the system of Federal Government personnel investigative and 
     adjudicative processes to make them more efficient and effective
   published: 2009-01-22
@@ -983,7 +983,7 @@
   type: Law
   shortName: "EO 13689"
   longName: "Executive Order 13689: Transferring Responsibility for Background Investigations to the Department of Defense"
-  description: >
+  description: >-
     Section 925 of the National Defense Authorization Act for Fiscal Year 2018 (10 U.S.C. 1564 note) 
     provides that the Secretary of Defense has the authority to conduct security, suitability, and 
     credentialing background investigations for Department of Defense personnel and requires the Secretary, 
@@ -1001,7 +1001,7 @@
   type: Authority
   shortName: "NBIB"
   longName: "National Background Investigations Bureau"
-  description: >
+  description: >-
     Through vetting, industry engagement, education, and counterintelligence and insider threat support, 
     secure the trustworthiness of the United States Government's workforce, the integrity of its cleared 
     contractor support, and the uncompromised nature of its technologies, services, and supply chains.
@@ -1010,7 +1010,7 @@
   type: Law
   shortName: "EO 10450"
   longName: "Executive Order 10450: Security requirements for Government employment"
-  description: >
+  description: >-
     WHEREAS the interests of the national security require that all persons privileged to be employed in 
     the departments and agencies of the Government, shall be reliable, trustworthy, of good conduct and 
     character, and of complete and unswerving loyalty to the United States; and 
@@ -1030,7 +1030,7 @@
   type: Policy
   shortName: "Clearance Decision-Making Guide"
   longName: "INTRODUCTION OF CREDENTIALING, SUITABILITY, AND SECURITY CLEARANCE DECISION-MAKING GUIDE"
-  description: >
+  description: >-
     As a result of an initiative to create a more simplified system of Federal Government 
     investigative and adjudicative procedures that applies to all persons, including contract 
     personnel, who perform work on behalf of the government, we are providing the attached 
@@ -1048,7 +1048,7 @@
   type: Policy
   shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
   longName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
-  description: >
+  description: >-
     Accordingly, effective immediately, all Executive departments and agencies will apply both 
     the basic and supplemental credentialing standards specified in the 2008 Credentialing Memo to
     determine initial eligibility for a PIV credential of all personnel who require a PIV, but who are not 
@@ -1067,7 +1067,7 @@
   type: "Law"
   shortName: "Privacy Act of 1974"
   longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a"
-  description: >
+  description: >-
     This Act protects certain federal government records pertaining to individuals. 
     In particular, the Act covers systems of records that an agency maintains and 
     retrieves by an individual's name or other personal identifier, such as a Social 
@@ -1078,7 +1078,7 @@
   type: Law
   shortName: "E-SIGN Act of 2000"
   longName: "Electronic Signatures in Global and National Commerce Act"
-  description: >
+  description: >-
     This Act facilitates the use of electronic records and electronic signatures in interstate and 
     foreign commerce by ensuring the validity and legal effect of electronic contracts.
   published: 2000-06-30
@@ -1087,7 +1087,7 @@
   type: Law
   shortName: "Government Paperwork Elimination Act"
   longName: "Government Paperwork Elimination Act of 1998"
-  description: >
+  description: >-
     This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit 
     information or transact with the agency electronically when possible and to maintain records electronically when possible. 
     This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, 
@@ -1099,7 +1099,7 @@
   type: Policy
   shortName: "M-20-16"
   longName: "OMB Memo 20-16: Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19"
-  description: >
+  description: >-
     The Federal Government, in partnership with sta�e and local governments and the 
     private sector, is adopting a concerted near-term operations posture that will appropriately align 
     critical resources to slow down the transmission of COVID-19, while also ensuring that 
@@ -1110,7 +1110,7 @@
   type: Policy
   shortName: "OPM Memo: Coronavirus Disease 2019"
   longName: "Temporary Procedures for Personnel Vetting and Appointment of New Employees during Maximum Telework Period due to Coronavirus COVID-19"
-  description: >
+  description: >-
     While agencies continue to onboard personnel, particularly for mission-critical functions, many Federal, 
     state, and local offices that take fingerprints are temporarily closed due to measures associated with COVID-19.
     As a result, Federal agencies are experiencing challenges collecting fingerprints to meet existing requirements 
@@ -1128,7 +1128,7 @@
   type: Policy
   shortName: "M-20-19"
   longName: "OMB Memo 20-19: Harnessing Technology to Support Mission Continuity"
-  description: >
+  description: >-
     This memorandum directs that agencies utilize technology to the greatest extent practicable to support 
     mission continuity during the national emergency. By aggressively embracing technology to support business 
     processes, the federal government is better positioned to maintain the safety and well-being of the federal 
@@ -1142,7 +1142,7 @@
   type: Policy
   shortName: "M-17-09"
   longName: "OMB Memo 17-09: Management of Federal High Value Assets"
-  description: >
+  description: >-
     This Memorandum contains general guidance for the planning, identification, categorization, 
     prioritization, reporting, assessment, and remediation of Federal High Value Assets (HV As), as 
     well as the handling of information related to HV As by the Federal Government. It also outlines 
@@ -1157,7 +1157,7 @@
   type: Policy
   shortName: "M-19-03"
   longName: "OMB Memo 19-03: Strengthening the Cybersecurity of Federal Agencies by enhancing the High Value Asset Program"
-  description: >
+  description: >-
     With the creation of the HVA initiative in 2015, the federal government's CFO Act agencies took a pivotal 
     step toward the identification of its most critical assets. DHS, in coordination with OMB, established a 
     capability to assess agency HVAs, resulting in the identification of critical areas of weakness and plans 
@@ -1176,7 +1176,7 @@
   type: Law
   shortName: "E.O. 13833"
   longName: "Executive Order 13833: Enhancing the Effectiveness of Agency Chief Information Officers"
-  description: >
+  description: >-
     This executive order authorizes federal agency CIOs to ensure that agency IT systems are as modern, 
     secure, and well-managed as possible to reduce costs, mitigate cybersecurity risks, and deliver 
     improved services to the American people.
@@ -1188,7 +1188,7 @@
   type: Law
   shortName: "E.O. 13800"
   longName: "Executive Order 13800: Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure"
-  description: >
+  description: >-
     This executive order places an emphasis on modernizing and securing federal networks and critical 
     infrastructure from the ever-growing threat of cyberattacks.
   published: 2017-05-16
@@ -1201,7 +1201,7 @@
   type: Law
   shortName: "Paperwork Reduction Act of 1995"
   longName: "Paperwork Reduction Act of 1995"
-  description: >
+  description: >-
     To further the goals of the Paperwork Reduction Act to have Federal 
     agencies become more responsible and publicly accountable for reducing 
     the burden of Federal paperwork on the public.
@@ -1211,7 +1211,7 @@
   type: Policy
   shortName: "OMB A-108"
   longName: "OMB Circular A-108: Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act"
-  description: >
+  description: >-
     This circular describes agency responsibilities for implementing the review, reporting, and 
     publication requirements of the Privacy Act of 1974 and related OMB policies.
   published: 2016-12-23
@@ -1226,7 +1226,7 @@
   type: Policy
   shortName: "OMB A-123"
   longName: "OMB Circular Number A-123: Managements Responsibility for Enterprise Risk Management and Internal Control"
-  description: >
+  description: >-
     This Circular defines management's responsibilities for enterprise risk management 
     (ERM) and internal control. The Circular provides updated implementation guidance to Federal 
     managers to improve accountability and effectiveness of Federal programs as well as mission-support 
@@ -1240,7 +1240,7 @@
   type: Policy
   shortName: "M-16-17"
   longName: "OMB Memo M-16-17:  OMB Circular No. A-123, Management's Responsibility for Enterprise Risk Management and Internal Control"
-  description: >
+  description: >-
     Amendments to  OMB Circular No. A-123, Management's Responsibility for Enterprise Risk 
     Management and Internal Control
   published: 2016-07-15
@@ -1253,7 +1253,7 @@
   type: Law
   shortName: "E.O. 13681"
   longName: "Executive Order 13681: Improving the Security of Consumer Financial Transactions"
-  description: >
+  description: >-
     "[T]o improve the security of consumer financial transactions in both the private and public sectors."
     Proposes improved security of government payments and identity theft remediation.
   published: 2014-10-17
@@ -1264,7 +1264,7 @@
   type: "Guidance"
   shortName: "SP 800-205"
   longName: "NIST Special Publication 800-205: Attribute Considerations for Access Control Systems"
-  description: >
+  description: >-
     This document aims to provide federal agencies with a guide to attribute 
     considerations with Attribute Evaluation Scheme examples for access control.
   published: 2019-06-18
@@ -1277,7 +1277,7 @@
   type: "Guidance"
   shortName: "SP 800-53"
   longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
-  description: >
+  description: >-
     This guideline provides a catalog of security and privacy controls for federal information systems and 
     organizations and a process for selecting controls to protect organizational operations, assets, 
     individuals, other organizations, and the Nation from a diverse set of threats.
@@ -1291,7 +1291,7 @@
   type: "Guidance"
   shortName: "SP 800-53A"
   longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
-  description: >
+  description: >-
     This guideline provides a set of procedures for conducting assessments of security controls and privacy 
     controls employed within federal information systems and organizations. The assessment procedures, 
     executed at various phases of the system development life cycle, are consistent with the security and 
@@ -1305,7 +1305,7 @@
   type: "Guidance"
   shortName: "SP 800-162"
   longName: "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations"
-  description: >
+  description: >-
     This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control 
     methodology in which authorization to perform a set of operations is determined by evaluating attributes 
     associated with the subject, object, requested operations, and, in some cases, environment conditions 
@@ -1320,7 +1320,7 @@
   type: "Guidance"
   shortName: "SP 800-122"
   longName: "NIST Special Publication 800-122: Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)"
-  description: >
+  description: >-
     This guideline assists federal agencies in protecting the confidentiality of a specific category of data 
     commonly known as PII. This document provides practical, context-based guidance for identifying PII and 
     determining what level of protection is appropriate for each instance of PII. The document also suggests 
@@ -1336,7 +1336,7 @@
   type: "Guidance"
   shortName: "NIST RMF"
   longName: "NIST Risk Management Framework"
-  description: >
+  description: >-
     The Risk Management Framework provides a process that integrates security, privacy, and cyber supply 
     chain risk management activities into the system development life cycle. The risk-based approach to 
     control selection and specification considers effectiveness, efficiency, and constraints due to 
@@ -1352,7 +1352,7 @@
   type: "Guidance"
   shortName: SP 800-37
   longName: "NIST Special Publication 800-37 Revision 2: Risk Management Framework for Information Systems and Organizations"
-  description: >
+  description: >-
     This publication describes the Risk Management Framework (RMF) and provides guidelines for 
     applying the RMF to information systems and organizations. The RMF provides a disciplined, 
     structured, and flexible process for managing security and privacy risk that includes information 
@@ -1378,7 +1378,7 @@
   type: Guidance
   shortName: "NIST Privacy Framework"
   longName: "The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management"
-  description: >
+  description: >-
     The Privacy Framework is a voluntary tool intended to help organizations identify and manage 
     privacy risk to build innovative products and services while protecting individuals' privacy. 
     The Privacy Framework approach to privacy risk is to consider privacy events as potential problems 
@@ -1392,7 +1392,7 @@
   type: Law
   shortName: "Homeland Security Act of 2002"
   longName: "Homeland Security Act of 2002"
-  description: >
+  description: >-
     An act To establish the Department of Homeland Security, and for other purposes
   published: 2002-11-25
   externalURL: "https://www.dhs.gov/sites/default/files/publications/hr_5005_enr.pdf"
@@ -1400,7 +1400,7 @@
   type: Law
   shortName: "Cybersecurity and Infrastructure Security Agency Act"
   longName: "Cybersecurity and Infrastructure Security Agency Act"
-  description: >
+  description: >-
     An Act to amend the Homeland Security Act of 2002 to authorize the Cybersecurity and 
     Infrastructure Security Agency of the Department of Homeland Security, and 
     for other purposes.
@@ -1412,7 +1412,7 @@
   type: Authority
   shortName: "DHS"
   longName: "Department of Homeland Security"
-  description: >
+  description: >-
     The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
     we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
     and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
@@ -1424,7 +1424,7 @@
   type: Authority
   shortName: "CISA"
   longName: "Cybersecurity & Infrastruture Security Agency"
-  description: >
+  description: >-
     CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
     infrastructure security and resilience.
   externalURL: "https://www.cisa.gov/"
@@ -1436,7 +1436,7 @@
   type: Program
   shortName: "CDM"
   longName: "Continuous Diagnostics and Mitigation (CDM) Program"
-  description: >
+  description: >-
     The Continuous Diagnostics and Mitigation (CDM) Program is an approach to fortifying the cybersecurity 
     of government networks and systems. The CDM Program provides cybersecurity tools, integration services, 
     and dashboards to participating agencies to support them in improving their respective security 
@@ -1450,7 +1450,7 @@
   type: Guidance
   shortName: "Application Rationalization Playbook"
   longName: "The Application Rationalization Playbook: An Agency Guide to Portfolio Management"
-  description: >
+  description: >-
     This playbook is a practical guide for application rationalization and IT portfolio management under 
     the federal government's Cloud Smart initiatives. Application rationalization will help federal agencies 
     mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve 
@@ -1469,7 +1469,7 @@
   type: Law
   shortName: "E.O. 13636"
   longName: "Executive Order 13636: Improving Critical Infrastructure Cybersecurity"
-  description: >
+  description: >-
     This Executive Order proposes development of a process of cybersecurity information sharing by the 
     government for attacks against critical infrastructure managed by the private sector.
   published: 2013-02-12
@@ -1480,7 +1480,7 @@
   type: Law
   shortName: "PPD-21"
   longName: "Presidential Policy Directive 21: Critical Infrastructure Security and Resilience"
-  description: >
+  description: >-
     The Presidential Policy Directive (PPD) on Critical Infrastructure Security and Resilience advances 
     a national unity of effort to strengthen and maintain secure, functioning, and resilient critical 
     infrastructure.
@@ -1492,7 +1492,7 @@
   type: Policy
   shortName: "FAR"
   longName: "Federal Acquisition Regulation"
-  description: >
+  description: >-
     The Federal Acquisition Regulations System is established for the codification and publication of 
     uniform policies and procedures for acquisition by all executive agencies. The Federal Acquisition 
     Regulations System consists of the Federal Acquisition Regulation (FAR), which is the primary document, 
@@ -1505,7 +1505,7 @@
   type: Guidance
   shortName: FIPS-199
   longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 199: Standards for Security Categorization of Federal Information and Information Systems"
-  description: >
+  description: >-
     FIPS Publication 199 [provides] standards for categorizing information 
     and information systems. Security categorization standards for information and information systems 
     provide a common framework and understanding for expressing security that, for the federal 
@@ -1524,7 +1524,7 @@
   type: Guidance
   shortName: FIPS-200
   longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 200: Minimum Security Requirements for Federal Information and Information Systems"
-  description: >
+  description: >-
     FIPS Publication 200 specifies minimum security requirements for information and 
     information systems supporting the executive agencies of the federal government and a risk-based
     process for selecting the security controls necessary to satisfy the minimum security requirements.
@@ -1538,7 +1538,7 @@
   type: Guidance
   shortName: SP 800-60 vol. I
   longName: "NIST Special Publication 800-60 Volume I Revision 1: Guide for Mapping Types of Information and Information Systems to Security Categories"
-  description: >
+  description: >-
     The guideline's objective is to facilitate application of appropriate levels of information security 
     according to a range of levels of impact or consequences that might result from the unauthorized disclosure, 
     modification, or use of the information or information system.
@@ -1552,7 +1552,7 @@
   type: Guidance
   shortName: SP 800-60 vol. II
   longName: "NIST Special Publication 800-60 Volume I Revision 1: Appendices to Guide for Mapping Types of Information and Information Systems to Security Categories"
-  description: >
+  description: >-
     The appendices contained in Volume II include security categorization recommendations and rationale 
     for mission-based and management and support information types.
   published: 2008-08-01
@@ -1565,7 +1565,7 @@
   type: Guidance
   shortName: SP 800-73-4
   longName: "NIST Special Publication 800-73-4: Interfaces for Personal Identity Verification - Part 1: PIV Card Application Namespace, Data Model and Representation"
-  description: >
+  description: >-
     SP 800-73 contains the technical specifications to interface with the smart card to retrieve 
     and use the PIV identity credentials.
   published: 2016-02-08
@@ -1578,7 +1578,7 @@
   type: Law
   shortName: E.O. 13556
   longName: "Executive Order 13556: Controlled Unclassified Information"
-  description: >
+  description: >-
     This order establishes an open and uniform program for managing information that requires safeguarding 
     or dissemination controls pursuant to and consistent with law, regulations, and Government-wide policies, 
     excluding information that is classified under Executive Order 13526 of December 29, 2009, or the Atomic 
@@ -1591,7 +1591,7 @@
   type: Guidance
   shortName: SP 800-171
   longName: "NIST Special Publication 800-171 Revision 2: Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations"
-  description: >
+  description: >-
     This publication provides agencies with recommended security requirements for protecting the 
     confidentiality of Controlled Unclassified Information (CUI) when the information is resident 
     in nonfederal systems and organizations; 
@@ -1610,7 +1610,7 @@
   type: Guidance
   shortName: HTTPS Compliance Guide
   longName: "Compliance Guide: The HTTPS-Only Standard"
-  description: >
+  description: >-
     This site contains a web-friendly version of the White House Office of Management and Budget memorandum 
     M-15-13, “A Policy to Require Secure Connections across Federal Websites and Web Services”, and provides 
     technical guidance and best practices to assist in its implementation.
@@ -1624,7 +1624,7 @@
   type: Law
   shortName: E.O. 12977
   longName: "Executive Order 12977: Interagency Security Committee"
-  description: >
+  description: >-
     [T]o enhance the quality and effectiveness of security in and protection of buildings and facilities
     in the United States occupied by Federal employees for nonmilitary activities
     ('Federal facilities'), and to provide a permanent body to address continuing
@@ -1637,7 +1637,7 @@
   type: Law
   shortName: E.O. 13286
   longName: "Executive Order 13286: Amendment of Executive Orders, and Other Actions, in Connection With the Transfer of Certain Functions to the Secretary of Homeland Security"
-  description: >
+  description: >-
     [T]o reflect the transfer of certain functions to, and other responsibilities vested in, the Secretary of 
     Homeland Security, the transfer of certain agencies and agency components to the Department of Homeland 
     Security, and the delegation of appropriate responsibilities to the Secretary of Homeland Security.
@@ -1650,7 +1650,7 @@
   type: Guidance
   shortName: GAO-13-222
   longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
-  description: >
+  description: >-
     This report examines (1) the sources that inform agencies' physical security programs and (2) the 
     management practices agencies use to oversee physical security and allocate resources.
   externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
@@ -1661,7 +1661,7 @@
   type: Guidance
   shortName: GAO-15-444
   longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
-  description: >
+  description: >-
     This report examines (1) the types of physical security enhancements selected civilian federal entities have
     made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
     enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
@@ -1674,7 +1674,7 @@
   type: Authority
   shortName: ISC
   longName: Interagency Security Committee
-  description: >
+  description: >-
     The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the 
     nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
   externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
@@ -1684,7 +1684,7 @@
   type: Guidance
   shortName: "Best Practices for Planning and Managing Physical Security Resources"
   longName: "Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide"
-  description: >
+  description: >-
     The Best Practices for Planning and Managing Physical Security Resources is a guide intended 
     to provide an introduction and understanding of the most efficient processes and procedures to 
     effectively allocate resources to implement physical security programs within Federal 
@@ -1700,7 +1700,7 @@
   type: Policy
   shortName: "M-06-18"
   longName: "OMB Memo 06-18: Acquisition of Products and Services for Implementation of HSPD-12"
-  description: >
+  description: >-
     This memorandum provides updated direction for the acquisition of products and 
     services for the implementation of Homeland Security Presidential Directive-12 (HSPD-12) 
     “Policy for a Common Identification Standard for Federal Employees and 
@@ -1716,7 +1716,7 @@
   type: Guidance
   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
   longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
-  description: >
+  description: >-
     This document provides language for E-PACS related procurements to ensure compliance with applicable policies
   published: 2015-02-24
   externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
@@ -1728,7 +1728,7 @@
   type: Guidance
   shortName: "GAO-19-138"
   longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
-  description: >
+  description: >-
     This report discusses (1) steps OMB 
     and GSA have taken to fulfill their 
     government-wide responsibilities 
@@ -1743,7 +1743,7 @@
   type: Guidance
   shortName: "FACILITY ACCESS CONTROL"
   longName: "FACILITY ACCESS CONTROL: An Interagency Security Committee Best Practice"
-  description: >
+  description: >-
     This document provides guidance for federal Executive Branch departments and agencies regarding 
     access control requirements and options for individuals entering federally occupied space
   published: 2020-12-17
@@ -1756,7 +1756,7 @@
   type: Guidance
   shortName: "PACS Ordering Guide"
   longName: "Physical Access Control Systems (PACS) Customer Ordering Guide"
-  description: >
+  description: >-
     This purpose of this document is create a comprehensive ordering guide that assists ordering
     agencies, particularly contracting officers, to effectively use the GSA Multiple Award Schedules 
     (MAS) to purchase total solutions for Physical Access Control Systems (PACS).
@@ -1768,7 +1768,7 @@
   type: Guidance
   shortName: "PIV in E-PACS"
   longName: "Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)"
-  description: >
+  description: >-
     The sole purpose of this document is to provide detailed technical and security guidance for leveraging 
     PIV and PIV-I authentication mechanisms in a federal agency PACS to comply with directives such as 
     [OMB M-11-11] and to provide interoperability across the federal enterprise, respectively.
@@ -1780,7 +1780,7 @@
   type: Guidance
   shortName: "Risk Management Process for Federal Facilities"
   longName: "The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard"
-  description: >
+  description: >-
     The Risk Management Process for Federal Facilities: An Interagency Security Committee 
     Standard (Standard), 2nd Edition defines the criteria and processes that those responsible for the 
     security of a facility should use to determine its facility security level (FSL) and provides an 
@@ -1795,7 +1795,7 @@
   type: Authority
   shortName: "PACSmod WG"
   longName: "PACS Modernization Working Group"
-  description: >
+  description: >-
     The Physical Access Control System Modernization Working Group (PACSMod WG) is chartered 
     under the direction of the Co-Chairs of the Federal Chief Information Security Officer Council 
     (FCIOC), Identity, Credentialing and Access Management Subcommittee (ICAMSC), and the Program 
@@ -1809,7 +1809,7 @@
   type: Guidance
   shortName: "ePACS 800-53 Overlay"
   longName: "Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)"
-  description: >
+  description: >-
     [T]he purpose of this document is to assist those entities responsible for physical and cyber security: 
     1. Provide minimum applicable IT security controls and related supplemental guidance to 
     appropriately secure and administer ePACS 
@@ -1829,7 +1829,7 @@
   type: Guidance
   shortName: "FPKI 800-53 Overlay"
   longName: "Security Control Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for Federal PKI Systems"
-  description: >
+  description: >-
     While many NIST [SP 800-53] controls apply to FPKI service operators as written, some controls require 
     specific interpretation or augmentation. This overlay leverages [COMMON] to tailor appropriate [SP 800-
     53] controls to facilitate implementation.
@@ -1841,7 +1841,7 @@
   type: Law
   shortName: "E.O. 14028"
   longName: "Executive Order 14028: Improving the Nation's Cybersecurity"
-  description: >
+  description: >-
     The United States faces persistent and increasingly sophisticated malicious cyber campaigns 
     that threaten the public sector, the private sector, and ultimately the American people's 
     security and privacy. The Federal Government must improve its efforts to identify, deter, 
@@ -1854,7 +1854,7 @@
   type: Guidance
   shortName: "Final IT Modernization Report"
   longName: "Report to the President on Federal IT Modernization"
-  description: >
+  description: >-
     [T]his report outlines the current and envisioned state of Federal IT, and it provides specific 
     recommendations to jumpstart a new wave of modernization efforts.
   published: 2017-12-13
@@ -1867,7 +1867,7 @@
   type: Policy
   shortName: "Cloud Smart"
   longName: "Federal Cloud Computing Stratey"
-  description: >
+  description: >-
     [T]he Administration has developed a new strategy to accelerate agency adoption of cloud-based 
     solutions: Cloud Smart.
   published: 2019-06-24
@@ -1880,7 +1880,7 @@
   type: Policy
   shortName: "Federal Zero Trust Strategy"
   longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principlesy"
-  description: >
+  description: >-
     The goal of this strategy is to accelerate agencies toward a shared baseline of early zero trust 
     maturity. Moving to a zero trust architecture will be a multi-year journey for agencies, and 
     the federal government will learn and adjust as new technologies and practices emerge.
@@ -1894,7 +1894,7 @@
   type: Guidance
   shortName: "SP 800-145"
   longName: "NIST Special Publication 800-145: The NIST Definition of Cloud Computing"
-  description: >
+  description: >-
     Cloud computing is an evolving paradigm. The NIST definition characterizes important aspects of cloud 
     computing and is intended to serve as a means for broad comparisons of cloud services and deployment 
     strategies, and to provide a baseline for discussion from what is cloud computing to how to best use cloud 
@@ -1907,7 +1907,7 @@
   type: Guidance
   shortName: "SP 800-204B"
   longName: "NIST Special Publication 800-204B: Attribute-based Access Control for Microservices-based Applications using a Service Mesh"
-  description: >
+  description: >-
     This guidance focuses on building an authentication and authorization framework within the 
     service mesh used for securing microservices-based applications.
   published: 2021-08-06
@@ -1918,7 +1918,7 @@
   type: Guidance
   shortName: "SP 800-207"
   longName: "NIST Special Publication 800-207: Zero Trust Architecture"
-  description: >
+  description: >-
     This document is intended to describe zero trust for enterprise security architects.
   published: 2020-08-11
   externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf"
@@ -1928,7 +1928,7 @@
   type: Guidance
   shortName: "SP 800-210"
   longName: "NIST Special Publication 800-210: General Access Control Guidance for Cloud Systems"
-  description: >
+  description: >-
     This document presents cloud access control characteristics and a set of general access control 
     guidance for cloud service models: IaaS (Infrastructure as a Service), PaaS (Platform as a 
     Service), and SaaS (Software as a Service).
@@ -1940,7 +1940,7 @@
   type: Authority
   shortName: "USDS"
   longName: "United States Digital Service"
-  description: >
+  description: >-
     To deliver better government services to the American people through technology and design.
   subgroup-of:
     - *WH
@@ -1948,13 +1948,13 @@
   type: Authority
   shortName: "DoD"
   longName: "Department of Defense"
-  description: >
+  description: >-
     The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
 - &FEDRAMPMEMO
   type: Policy
   shortName: "FedRAMP Policy Memo"
   longName: "MEMORANDUM FOR CHIEF INFORMATION OFFICERS: Security Authorization of Information Systems in Cloud Computing Environments"
-  description: >
+  description: >-
     FedRAMP will provide a cost-effective, risk-based approach for the adoption and use of cloud services
   published: 2011-12-08
   authored-by:
@@ -1963,7 +1963,7 @@
   type: Authority
   shortName: "FedRAMP"
   longName: "Federal Risk and Automation Management Program"
-  description: >
+  description: >-
     The Federal Risk and Authorization Management Program (FedRAMP®) was established in 2011 to 
     provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
     the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an 
@@ -1978,7 +1978,7 @@
   type: Guidance
   shortName: "Cloud Security Architecture"
   longName: "Cloud Security Technical Reference Architecture"
-  description: >
+  description: >-
     [The] Cloud Security Technical Reference Architecture [illustrates] recommended approaches 
     to cloud migration and data protection for agency data collection and reporting that leverages 
     Cloud Security Posture Management (CSPM).
@@ -1994,7 +1994,7 @@
   type: Guidance
   shortName: "Zero Trust Security Model"
   longName: "Zero Trust Security Model"
-  description: >
+  description: >-
     CISA's Zero Trust Maturity Model (ZTMM) provides an approach to achieve continued modernization 
     efforts related to zero trust within a rapidly evolving environment and technology landscape
   published: 2023-04-11
@@ -2007,7 +2007,7 @@
   type: Guidance
   shortName: "Agency IT Modernization"
   longName: "Agency IT Modernization: Educational Resources Building Blocks"
-  description: >
+  description: >-
     A collection of resources to provide information about IT modernization through data center optimization
     and cloud enablement.
   externalURL: "https://community.max.gov/display/Egov/Agency+IT+Modernization%3A+Educational+Resources+Building+Blocks"
@@ -2017,7 +2017,7 @@
   type: Guidance
   shortName: "SSO Playbook"
   longName: "Enterprise Single Sign-On Playbook"
-  description: >
+  description: >-
     The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies 
     implement or modernize an SSO service for federal employee access to government applications.
   published: 2021-02-12
@@ -2029,7 +2029,7 @@
   type: Guidance
   shortName: "FedRamp Digital Identity Requirements"
   longName: "FedRamp Digital Identity Requirements"
-  description: >
+  description: >-
     This document provides revised guidance and requirements on digital identity capabilities in support of 
     achieving and maintaining a Federal Risk and Authorization Management Program (FedRAMP) security 
     authorization.
@@ -2043,7 +2043,7 @@
   type: Guidance
   shortName: "ICAM Governance Framework"
   longName: "Identity, Credential, and Access Management Governance Framework"
-  description: >
+  description: >-
     The IGFWG, composed of ICAM practitioners from
     several federal agencies, developed this ICAM Governance Framework as a tool to help
     agencies build and improve ICAM governance structures, processes, and policies.
@@ -2055,7 +2055,7 @@
   type: Guidance
   shortName: "ICAM Program Management"
   longName: "ICAM Program Management Playbook"
-  description: >
+  description: >-
     The ICAM Program Management Playbook explains how to plan and implement an Identity, 
     Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, 
     Credential, and Access Management (FICAM) Architecture.
@@ -2066,7 +2066,7 @@
   type: Guidance
   shortName: "Cloud Information Center"
   longName: "Cloud Information Center"
-  description: >
+  description: >-
     Provides a Managed Collection of Cloud Computing Best Practices, Guidance, and Templates.
   externalURL: "https://cic.gsa.gov/"
   authored-by:
@@ -2075,7 +2075,7 @@
   type: Guidance
   shortName: "NISTIR 8149"
   longName: "NIST Interagency Report 8149: Developing Trust Frameworks to Support Identity Federations"
-  description: >
+  description: >-
     When supported by trust frameworks, identity federations provide a secure method for leveraging shared 
     identity credentials across communities of similarly-focused online service providers.
   published: 2018-01-12
@@ -2086,7 +2086,7 @@
   type: Guidance
   shortName: "NISTIR 8335"
   longName: "NIST Interagency Report 8335: Identity as a Service for Public Safety Organizations"
-  description: >
+  description: >-
     This report informs [Public Safety Organizations] about [Identity as a Service] and how they can benefit from it.
   published: 2021-06-16
   authored-by:
@@ -2095,7 +2095,7 @@
   type: Guidance
   shortName: "NISTIR 8360"
   longName: "NIST Interagency Report 8360: Machine Learning for Access Control Policy Verification"
-  description: >
+  description: >-
     [T]his internal report (IR) proposes an efficient and straightforward method for access control 
     policy verification by applying a classification algorithm of machine learning, which does not 
     require comprehensive test cases, oracle, or system translation but rather checks the logic of 
@@ -2107,7 +2107,7 @@
   type: Guidance
   shortName: "NIST SP 1800-13"
   longName: "NIST SPECIAL PUBLICATION 1800-13A Mobile Application Single Sign-On: Improving Authentication for Public Safety First Responders"
-  description: >
+  description: >-
     This NIST Cybersecurity Practice Guide describes how organizations can implement these
     technologies to enhance public safety mission capabilities by using standards-based
     commercially available or open-source products. The technologies described facilitate
@@ -2121,7 +2121,7 @@
   type: Law
   shortName: "Truman  Memorandum"
   longName: "Memorandum for the Secretary of State and the Secretary of Defense, SUBJECT: Communications Intelligence Activities"
-  description: >
+  description: >-
     [REDACTED]
   published: 1952-10-24
   externalURL: "https://media.defense.gov/2021/Jul/15/2002763653/-1/-1/0/TRUMAN-MEMO.PDF"
@@ -2129,7 +2129,7 @@
   type: Authority
   shortName: "NSA"
   longName: "National Security Agency"
-  description: >
+  description: >-
     We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
     national defense and secure national security systems.
   authorized-by:
@@ -2138,7 +2138,7 @@
   type: Guidance
   shortName: "Mitigating Cloud Vulnerabilities"
   longName: "National Security Agency | Cybersecurity Information: Mitigating Cloud Vulnerabilities"
-  description: >
+  description: >-
     This document divides cloud vulnerabilities into four classes (misconfiguration, poor access control, 
     shared tenancy vulnerabilities, and supply chain vulnerabilities) that encompass the vast majority of 
     known vulnerabilities. [...] Descriptions of each vulnerability class along with the most effective 
@@ -2150,7 +2150,7 @@
   type: Standard
   shortName: "OAuth"
   longName: "Open Authorization Standard"
-  description: >
+  description: >-
     An open protocol to allow secure authorization in a simple and standard method from web, 
     mobile and desktop applications.
   published: 2017-10-01
@@ -2159,7 +2159,7 @@
   type: Standard
   shortName: "SCIM"
   longName: "System for Cross-domain Identity Management"
-  description: >
+  description: >-
     The System for Cross-domain Identity Management (SCIM) specification
     is designed to manage user identity in cloud-based applications and
     services in a standardized way to enable interoperability, security,
@@ -2170,7 +2170,7 @@
   type: Law
   shortName: "National Strategy for Information Sharing and Safeguarding"
   longName: "National Strategy for Information Sharing and Safeguarding"
-  description: >
+  description: >-
     [T]he 2012 National Strategy for Information Sharing and 
     Safeguarding (hereafter referred to as the Strategy) provides guidance for more efective integration and 
     implementation of policies, processes, standards, and technologies to promote secure and responsible 
@@ -2183,7 +2183,7 @@
   type: Guidance
   shortName: "NIST SP 1800-18"
   longName: "NIST SPECIAL PUBLICATION 1800-18 Privileged Account Management for the Financial Services Sector"
-  description: >
+  description: >-
     The goal of this project is to demonstrate a PAM capability that effectively protects, monitors, and 
     manages privileged account access, including life-cycle management, authentication, authorization, 
     auditing, and access controls.
@@ -2195,7 +2195,7 @@
   type: Guidance
   shortName: "NISTIR 7966"
   longName: "NIST Interagency Report 7966: Security of Interactive and Automated Access Management Using Secure Shell (SSH)"
-  description: >
+  description: >-
     The purpose of this document is to assist organizations in understanding the basics of Secure Shell (SSH) 
     and SSH access management in an enterprise, focusing on the management of SSH user keys.
   published: 2015-10-15
@@ -2211,7 +2211,7 @@
   type: Guidance
   shortName: "Common Sense Guide to Mitigating Insider Threats, Sixth Edition"
   longName: "Common Sense Guide to Mitigating Insider Threats, Sixth Edition"
-  description: >
+  description: >-
     This sixth edition of the Common Sense Guide to Mitigating Insider Threats provides the current 
     recommendations of the CERT Division (part of Carnegie Mellon University's Software Engineering 
     Institute), based on an expanded corpus of more than 1,500 insider threat cases and continued 
@@ -2227,7 +2227,7 @@
   type: Policy
   shortName: "M-21-31"
   longName: "OMB Memo 21-31: Improving the Federal Government's Investigative and Remediation Capabilities Related to Cybersecurity Incidents"
-  description: >
+  description: >-
     This memo establishes a maturity model to guide the implementation of requirements 
     across four Event Logging (EL) tiers.
   published: 2021-08-27
@@ -2240,7 +2240,7 @@
   type: Policy
   shortName: "Credentialing Standards Memo 2020"
   longName: "Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials"
-  description: >
+  description: >-
     [T]he following credentialing standards procedures [...]
     promote defined goals in agency eligibility determinations to issue HSPD-12 personal
     identity verification (PIV) credentials for access to federally controlled facilities and
@@ -2262,7 +2262,7 @@
   type: Law
   shortName: "FITARA"
   longName: "Federal Information Technology Acquisition Reform"
-  description: >
+  description: >-
     The head of each covered agency other than the Department of Defense shall ensure that 
     the Chief Information Officer of the agency has a significant role in— 
     (i) the decision processes for all annual and multi-year planning, programming, budgeting, and execution 
@@ -2274,7 +2274,7 @@
   type: Policy
   shortName: "M-15-14"
   longName: "OMB Memo 15-14: Management and Oversight of Federal Information Technology"
-  description: >
+  description: >-
     The purpose of this memorandum is to provide implementation guidance for the Federal Information 
     Technology Acquisition Reform Act (FITARA) 1 and related information technology (IT) management 
     practices.
@@ -2288,7 +2288,7 @@
   type: Policy
   shortName: "Federal Personnel Vetting Core Doctrine"
   longName: "Federal Personnel Vetting Core Doctrine"
-  description: >
+  description: >-
     This Core Doctrine defines the personnel vetting mission, its guiding principles, 
     key supporting processes, and policy priorities.
   published: 2021-01-13
@@ -2301,7 +2301,7 @@
   type: Guidance
   shortName: "SP 800-181"
   longName: "NIST Special Publication 800-181 Revision 1 Workforce Framework for Cybersecurity (NICE Framework)"
-  description: >
+  description: >-
     The National Initiative for Cybersecurity Education (NICE) recognizes that those 
     performing cybersecurity work — including students, job seekers, and employees — are lifelong 
     learners throughout their efforts to emphasize and address cybersecurity implications across 
@@ -2314,7 +2314,7 @@
   type: Policy
   shortName: "5 CFR 731"
   longName: ""
-  description: >
+  description: >-
     Establish criteria and procedures for making determinations of suitability and for taking suitability 
     actions regarding employment in covered positions
   published: 2008-04-15
@@ -2326,7 +2326,7 @@
   type: Guidance
   shortName: "SOFA-B"
   longName: "Strength of Function for Authenticators (SOFA) Biometrics"
-  description: >
+  description: >-
     This paper [...] outlines a process intended to support the evaluation of biometric authenticators 
     and—ultimately—multiple authentication mechanisms.
   published: 2016-08-11
@@ -2337,7 +2337,7 @@
   type: Standard
   shortName: "RFC 8485"
   longName: "Request for Comments (RFC) 8485: Vectors of Trust"
-  description: >
+  description: >-
     This document defines a mechanism for describing and signaling several aspects of a digital 
     identity transaction and its participants. These aspects are used to determine the amount of 
     trust to be placed in that transaction.
@@ -2347,7 +2347,7 @@
   type: Guidance
   shortName: "Transition to Multi-factor Authentication"
   longName: "Transition to Multi-factor Authentication"
-  description: >
+  description: >-
     These guidelines provide technical requirements for federal agencies implementing digital 
     identity services and are not intended to constrain the development or use of standards outside 
     of this purpose. The guidelines cover identity proofing and authentication of users (such as 
@@ -2363,7 +2363,7 @@
   type: Policy
   shortName: "Modernizing the Common Access Card"
   longName: "Department of Defense Memorandum: Modernizing the Common Access Card - Streamlining Identity and Improving Operational Interoperability"
-  description: >
+  description: >-
     This memorandum directs the alignment of DoD's use of the CAC with the Federal PIV-Auth certificate
   published: 2018-12-07
   externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/modernizing_the_cac.pdf"
@@ -2375,7 +2375,7 @@
   type: Guidance
   shortName: "ICAM Acquisition Guide"
   longName: "Identity, Credential, and Access Management (ICAM) Acquisition Guidance"
-  description: >
+  description: >-
     The goal of this document is to enable any organization, including the SLTT Community, to spend 
     its resources wisely on thoughtful and well-specified ICAM procurement activities that result in 
     an ICAM enabled system that includes multifactor authentication.
@@ -2387,7 +2387,7 @@
   type: Policy
   shortName: "DoD ICAM Strategy"
   longName: "Department of Defense Identity, Credential, and Access Management (ICAM) Strategy"
-  description: >
+  description: >-
     This strategy provides a set of goals focused on establishing measurable and achievable transformation 
     of core ICAM elements to achieve ICAM activities. These core elements enable ICAM to be fast, reliable, 
     secure, and auditable across the DoD enterprise in a manner enhancing user experience and supports the 
@@ -2400,7 +2400,7 @@
   type: Guidance
   shortName: "DoD ICAM Reference Design"
   longName: "DoD Enterprise Identity, Credential, and Access Management (ICAM) Reference Design"
-  description: >
+  description: >-
     The purpose of this ICAM Reference Design (RD) is two-fold. First, as an architecture document, 
     it supports the owners and operators of DoD enterprise ICAM services so that these services 
     can effectively interface with each other to support ICAM capabilities, and supports developers 
@@ -2416,7 +2416,7 @@
   type: Guidance
   shortName: "Selecting Secure MFA"
   longName: "Selecting Secure Multi-factor Authentication Solutions"
-  description: >
+  description: >-
     U.S. Government Agencies and their partners who want to integrate secure alternatives to 
     PIV-based authentication need to support authorized users who will be employing personally 
     owned or partner-owned devices, such as smart phones and home or non-government office computers, 
@@ -2435,7 +2435,7 @@
   type: Law
   shortName: "IoT Cybersecurity Improvement Act"
   longName: "Internet of Things Cybersecurity Improvement Act of 2020"
-  description: >
+  description: >-
     Not later than 90 days after the date of the enactment of this Act, the Director of the Institute 
     (NIST) shall develop and publish under section 20 of the National Institute of Standards and 
     Technology Act (15 U.S.C. 278g) standards and guidelines for the Federal Government on the 
@@ -2446,7 +2446,7 @@
   type: Standard
   shortName: "SP 800-213"
   longName: "NIST Special Publication 800-213: IoT Device Cybersecurity Guidance for the Federal Government: Establishing IoT Device Cybersecurity Requirements"
-  description: >
+  description: >-
     This publication contains background and recommendations to help the federal agencies 
     consider how an IoT device they plan to acquire can integrate into a federal information 
     system. It provides guidance on considering system security from the device perspective.
@@ -2460,7 +2460,7 @@
   type: Guidance
   shortName: "HSPD-12/PIV Suspension and Revocation FAQ"
   longName: "Frequently Asked Questions (FAQs) for Credentialing Standards Procedures for Issuing Personnel Identity Verification Cards under HSPD-12 and New Requirements for Suspension or Revocation of Eligibility for PIV Credentials"
-  description: >
+  description: >-
     Attached are answers to some anticipated Frequently Asked Questions to assist you in 
     successfully implementing the Credentialing Procedures guidance. In particular, we call 
     your attention FAQ No. 13, which reminds agencies of their obligation to report HSPD-12 
@@ -2475,7 +2475,7 @@
   type: Guidance
   shortName: "NISTIR 8344"
   longName: "Draft NIST Interagency Report (NISTIR) 8344: Ontology for Authentication"
-  description: >
+  description: >-
     This document includes a survey of authentication mechanisms, establishing the need and 
     basis for authentication metrology (quantification), as well as key factors in 
     determining strength and management requirements when assessing an authentication 
@@ -2488,7 +2488,7 @@
   type: Policy
   shortName: "GSAM"
   longName: "General Services Administration Acquisition Manual"
-  description: >
+  description: >-
     The General Services Administration Acquisition Manual (GSAM) consolidates the 
     General Services Administration (GSA) agency acquisition rules and guidance.
   published: 2023-05-05
