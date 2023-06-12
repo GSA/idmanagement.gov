@@ -157,6 +157,12 @@
   externalURL: "https://playbooks.idmanagement.gov/arch/"
   authored-by:
     - *ICAMSC
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Access Management - Authentication
+    - Federation - Policy Alignment
 - &ICAMPMPLAYBOOK
   type: "Guidance"
   shortName: "ICAM PM Playbook"
@@ -166,6 +172,8 @@
   externalURL: "https://playbooks.idmanagement.gov/pm/"
   authored-by:
     - *ICAMSC
+  ficam-services:
+    - Federation - Policy Alignment
 - &ICAMTECHPLAYBOOKS
   type: "Guidance"
   shortName: "ICAM Technical Playbooks"
@@ -173,6 +181,12 @@
   externalURL: "https://playbooks.idmanagement.gov/"
   authored-by:
     - *ICAMSC
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Federation
+    - Governance
 - &FPKIPA
   type: "Authority"
   shortName: "FPKI PA"
@@ -455,6 +469,8 @@
     - *FIPSLAB
   authorized-by:
     - *FIPS201
+  ficam-services:
+    - Governance
 - &FPKIMA
   type: Authority
   shortName: "FPKIMA"
