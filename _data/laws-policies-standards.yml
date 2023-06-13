@@ -412,11 +412,14 @@
     - *M1604
 - &FEDCLOUD
   type: Policy
-  shortName: "Federal Cloud Computing Strategy"
-  longName: "Federal Cloud Computing Strategy"
-  description: "The new strategy is founded on three key pillars of successful cloud adoption: security, procurement, and workforce. Collectively, these elements embody the interdisciplinary approach to IT modernization that the Federal enterprise needs in order to provide improved return on its investments, enhanced security, and higher quality services to the American people."
-  published: 2019-06-01
-  externalURL: "https://cloud.cio.gov/strategy/"
+  shortName: "2011 Federal Cloud Computing Strategy"
+  longName: "Federal Cloud Computing Strategy: Cloud First"
+  description: >
+    To harness the benefits of cloud computing, we have instituted a Cloud First policy. This policy is intended 
+    to accelerate the pace at which the government will realize the value of cloud computing by requiring 
+    agencies to evaluate safe, secure cloud computing options before making any new investments.
+  published: 2011-02-08
+  externalURL: "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/egov_docs/federal-cloud-computing-strategy.pdf"
   authored-by:
     - *CIOCOUNCIL
 - &M1611
@@ -1865,8 +1868,8 @@
     - *EO13800
 - &FEDCLOUDSMART
   type: Policy
-  shortName: "Cloud Smart"
-  longName: "Federal Cloud Computing Stratey"
+  shortName: "2019 Federal Cloud Computing Strategy"
+  longName: "Federal Cloud Computing Stratey : Cloud Smart"
   description: >-
     [T]he Administration has developed a new strategy to accelerate agency adoption of cloud-based 
     solutions: Cloud Smart.
@@ -1876,6 +1879,8 @@
     - *OMB
   authorized-by:
     - *EO13800
+  amends:
+    - *FEDCLOUD
 - &M2209
   type: Policy
   shortName: "Federal Zero Trust Strategy"
