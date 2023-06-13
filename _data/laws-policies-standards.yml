@@ -2106,6 +2106,8 @@
     [REDACTED]
   published: 1952-10-24
   externalURL: "https://media.defense.gov/2021/Jul/15/2002763653/-1/-1/0/TRUMAN-MEMO.PDF"
+  authored-by:
+    - *WH
 - &NSA
   type: Authority
   shortName: "NSA"
