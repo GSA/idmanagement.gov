@@ -599,8 +599,7 @@
   authored-by:
     - *NIST
   authorized-by:
-    - *FISMA2014
-    - *A130
+    - *HSPD12
   ficam-services:
     - Identity Management - Identity Proofing
     - Credential Management
