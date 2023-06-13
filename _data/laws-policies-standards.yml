@@ -93,7 +93,10 @@
   shortName: "M-04-04"
   longName: "OMB Memo 04-04: E-Authentication Guidance for Federal Agencies"
   published: 2003-12-16
-  description: ""
+  description: >-
+    This guidance requires agencies to review new and existing electronic transactions to ensure that 
+    authentication processes provide the appropriate level of assurance.
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2004/m04-04.pdf"
   scope:
     - "Public Identity"
   ficam-services:
