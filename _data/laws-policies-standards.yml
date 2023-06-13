@@ -888,6 +888,9 @@
     classified information by: establishing common expectations; institutionalizing executive branch
     best practices; and enabling flexible implementation across the executive branch.
   externalURL: "https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy__Minimum_Standards.pdf"
+  authorized-by:
+    - *EO12968
+    - *EO13587
   ficam-services:
     - Identity Management
     - Credential Management
@@ -949,6 +952,8 @@
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
   authored-by:
     - *WH
+  amends:
+    - *EO12968
   ficam-services:
     - Identity Management
     - Credential Management
