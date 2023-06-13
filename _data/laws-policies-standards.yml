@@ -291,6 +291,46 @@
     - *COMMONCP
   implemented-by:
     - *GSA
+- &FITARA
+  type: Law
+  shortName: "FITARA"
+  longName: "Federal Information Technology Acquisition Reform"
+  description: >-
+    The head of each covered agency other than the Department of Defense shall ensure that 
+    the Chief Information Officer of the agency has a significant role in— 
+    (i) the decision processes for all annual and multi-year planning, programming, budgeting, and execution 
+    decisions, related reporting requirements, and reports related to information technology; and 
+    (ii) the management, governance, and oversight processes related to information technology.
+  published: 2014-12-19
+  externalURL: "https://www.congress.gov/113/plaws/publ291/PLAW-113publ291.pdf#page=148"
+- &FITARA2017
+  type: Law
+  shortName: "FITARA Enhancement Act of 2017"
+  longName: "Federal Information Technology Acquisition Reform Enhancement Act of 2017"
+  description: >-
+    To amend title 40, United States Code, to eliminate the sunset of 
+    certain provisions relating to information technology, to amend the 
+    National Defense Authorization Act for Fiscal Year 2015 to extend the 
+    sunset relating to the Federal Data Center Consolidation Initiative, and 
+    for other purposes.
+  published: 2017-11-21
+  externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
+  amends:
+    - *FITARA
+- &M1514
+  type: Policy
+  shortName: "M-15-14"
+  longName: "OMB Memo 15-14: Management and Oversight of Federal Information Technology"
+  description: >-
+    The purpose of this memorandum is to provide implementation guidance for the Federal Information 
+    Technology Acquisition Reform Act (FITARA) 1 and related information technology (IT) management 
+    practices.
+  published: 2015-06-10
+  externalURL: "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-14.pdf?msclkid=af985c3cc7f511ec9ae8691f3682c8d1"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *FITARA
 - &M1619
   type: Policy
   shortName: M-16-19
@@ -2261,46 +2301,6 @@
   amends:
     - *SPRINGERMEMO
     - *PIVISSUANCESUSPENSION
-- &FITARA
-  type: Law
-  shortName: "FITARA"
-  longName: "Federal Information Technology Acquisition Reform"
-  description: >-
-    The head of each covered agency other than the Department of Defense shall ensure that 
-    the Chief Information Officer of the agency has a significant role in— 
-    (i) the decision processes for all annual and multi-year planning, programming, budgeting, and execution 
-    decisions, related reporting requirements, and reports related to information technology; and 
-    (ii) the management, governance, and oversight processes related to information technology.
-  published: 2014-12-19
-  externalURL: "https://www.congress.gov/113/plaws/publ291/PLAW-113publ291.pdf#page=148"
-- &FITARA2017
-  type: Law
-  shortName: "FITARA Enhancement Act of 2017"
-  longName: "Federal Information Technology Acquisition Reform Enhancement Act of 2017"
-  description: >-
-    To amend title 40, United States Code, to eliminate the sunset of 
-    certain provisions relating to information technology, to amend the 
-    National Defense Authorization Act for Fiscal Year 2015 to extend the 
-    sunset relating to the Federal Data Center Consolidation Initiative, and 
-    for other purposes.
-  published: 2017-11-21
-  externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
-  amends:
-    - *FITARA
-- &M1514
-  type: Policy
-  shortName: "M-15-14"
-  longName: "OMB Memo 15-14: Management and Oversight of Federal Information Technology"
-  description: >-
-    The purpose of this memorandum is to provide implementation guidance for the Federal Information 
-    Technology Acquisition Reform Act (FITARA) 1 and related information technology (IT) management 
-    practices.
-  published: 2015-06-10
-  externalURL: "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-14.pdf?msclkid=af985c3cc7f511ec9ae8691f3682c8d1"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *FITARA
 - &VETTINGCOREDOCTRINE
   type: Policy
   shortName: "Federal Personnel Vetting Core Doctrine"
