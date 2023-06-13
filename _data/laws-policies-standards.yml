@@ -451,6 +451,8 @@
   description: "The purpose of the tiger team will be to analyze FPKI policies and evaluate cloud offerings in order to make a feasibility recommendation to the CPWG on if and what FPKI components can be migrated to the cloud without impacting trust."
   subgroup-of:
     - *CPWG
+  authorized-by:
+    - *M1919
 - &FIPSLAB
   type: Program
   shortName: "FICAM testing program"
