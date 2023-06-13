@@ -1965,7 +1965,7 @@
   externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf"
   authored-by:
     - *NIST
-- &SP8700204B
+- &SP800204B
   type: Guidance
   shortName: "SP 800-204B"
   longName: "NIST Special Publication 800-204B: Attribute-based Access Control for Microservices-based Applications using a Service Mesh"
