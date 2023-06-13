@@ -355,6 +355,16 @@
     - *OMB
   authorized-by:
     - *FITARA2017
+- &DCOI
+  type: Policy
+  shortName: "DCOI"
+  longName: "Data Center Optimization Intitiative"
+  published: 2019-06-25
+  externalURL: "https://www.cio.gov/policies-and-priorities/DCOI/"
+  authored-by:
+    - *CIOCOUNCIL
+  authorized-by:
+    - *M1919
 - &A130
   type: Policy
   shortName: "OMB Circular A-130"
@@ -497,6 +507,7 @@
     - *CPWG
   authorized-by:
     - *M1919
+    - *DCOI
 - &FIPSLAB
   type: Program
   shortName: "FICAM testing program"
