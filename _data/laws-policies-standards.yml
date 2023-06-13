@@ -777,6 +777,8 @@
   externalURL: "https://www.federalregister.gov/d/01-26509"
   authored-by:
     - *WH
+  amends:
+    - *NSD42
 - &EO13284
   type: Law
   shortName: "EO 13284"
