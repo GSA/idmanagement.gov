@@ -1258,8 +1258,6 @@
   externalURL: "https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure"
   authored-by:
     - *WH
-  authorized-by:
-    - *M1919
 - &PAPERWORKREDUCTION1995
   type: Law
   shortName: "Paperwork Reduction Act of 1995"
