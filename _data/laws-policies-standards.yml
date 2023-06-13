@@ -2043,17 +2043,6 @@
   externalURL: "https://playbooks.idmanagement.gov/docs/playbook-identity-governance-framework.pdf"
   authored-by:
     - *ICAMSC
-- &ICAMPMPLAYBOOK
-  type: Guidance
-  shortName: "ICAM Program Management"
-  longName: "ICAM Program Management Playbook"
-  description: >-
-    The ICAM Program Management Playbook explains how to plan and implement an Identity, 
-    Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, 
-    Credential, and Access Management (FICAM) Architecture.
-  externalURL: "https://playbooks.idmanagement.gov/pm/"
-  authored-by:
-    - *ICAMSC
 - &CIC
   type: Guidance
   shortName: "Cloud Information Center"
