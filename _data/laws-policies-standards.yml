@@ -837,7 +837,7 @@
   published: 2005-10-27
   authored-by:
     - *WH
-  amends:
+  rescinds:
     - *EO13356
 - &INTELREFORM2004
   type: Law
