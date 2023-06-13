@@ -267,6 +267,8 @@
   description: "This memorandum sets forth the Federal Government's1 Identity, Credential, and Access Management (ICAM) policy"
   published: 2019-05-21
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf"
+  authored-by:
+    - *OMB
   scope:
     - Workforce Identity
     - Public Identity
