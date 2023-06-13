@@ -300,6 +300,8 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m_16_19_1.pdf"
   authored-by:
     - *OMB
+  authorized-by:
+    - *M1514
 - &M1919
   type: Policy
   shortName: M-19-19
@@ -311,6 +313,8 @@
     - *M1619
   authored-by:
     - *OMB
+  authorized-by:
+    - *FITARA2017
 - &A130
   type: Policy
   shortName: "OMB Circular A-130"
@@ -1155,6 +1159,8 @@
   published: 2020-03-22
   authored-by:
     - *OMB
+  authorized-by:
+    - *M2016
 - &M1709
   type: Policy
   shortName: "M-17-09"
@@ -2267,6 +2273,19 @@
     (ii) the management, governance, and oversight processes related to information technology.
   published: 2014-12-19
   externalURL: "https://www.congress.gov/113/plaws/publ291/PLAW-113publ291.pdf#page=148"
+- &FITARA2017
+  type: Law
+  shortName: "FITARA Enhancement Act of 2017"
+  longName: "Federal Information Technology Acquisition Reform Enhancement Act of 2017"
+  description: >-
+    To amend title 40, United States Code, to eliminate the sunset of 
+    certain provisions relating to information technology, to amend the 
+    National Defense Authorization Act for Fiscal Year 2015 to extend the 
+    sunset relating to the Federal Data Center Consolidation Initiative, and 
+    for other purposes.
+  published: 2017-11-21
+  amends:
+    - *FITARA
 - &M1514
   type: Policy
   shortName: "M-15-14"
