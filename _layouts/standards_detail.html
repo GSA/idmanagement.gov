@@ -203,9 +203,8 @@ If this is an Authority, find the programs it has implemented.
 {% endif %}
 
 {% comment %}
-If this is a Law, find the elements authorized by it.
+Find the elements authorized by this element.
 {% endcomment %}
-{% if page.type == "Law" %}
 <p>
     <b>Policies Authorized by {{page.shortName}}</b>
 <ul>
@@ -224,7 +223,7 @@ If this is a Law, find the elements authorized by it.
     {% endfor %}
 </ul>
 </p>
-{% endif %}
+
 
 {% comment %}
 If this is a Law, find the elements amended by by it.
