@@ -994,8 +994,8 @@
     - Credential Management
 - &EO13869
   type: Law
-  shortName: "EO 13689"
-  longName: "Executive Order 13689: Transferring Responsibility for Background Investigations to the Department of Defense"
+  shortName: "EO 13869"
+  longName: "Executive Order 13869: Transferring Responsibility for Background Investigations to the Department of Defense"
   description: >-
     Section 925 of the National Defense Authorization Act for Fiscal Year 2018 (10 U.S.C. 1564 note) 
     provides that the Secretary of Defense has the authority to conduct security, suitability, and 
@@ -1010,10 +1010,10 @@
   ficam-services:
     - Identity Management - Identity Proofing
     - Federation - Policy Alignment
-- &NBIB
+- &DCSA
   type: Authority
-  shortName: "NBIB"
-  longName: "National Background Investigations Bureau"
+  shortName: "DCSA"
+  longName: "Defense Counterintelligence and Security Agency"
   description: >-
     Through vetting, industry engagement, education, and counterintelligence and insider threat support, 
     secure the trustworthiness of the United States Government's workforce, the integrity of its cleared 
