@@ -92,7 +92,10 @@ vendor’s compliance with an external certification body.
 4. Decision – If all information is verified and validated, the vendor and product are listed on
 the product list available at [idmanagement.gov/acquisition-professionals/#products]({{site.baseurl}}/acquisition-professionals/#products){:target="_blank"}{:rel="noopener noreferrer"}.
 
-5. Removal – If a vendor fails to provide accurate information or an issue is found that
+5. Maintenance – Vendors are required to provide timely updates with changes within their
+product certification.
+
+6. Removal – If a vendor fails to provide accurate information or an issue is found that
 brings into question the security and resiliency, the product is moved to the [Removed
 Product List]({{site.baseurl}}/removed-products-list/) and the community is notified of its removal through idmanagement.gov,
 ICAMSC, and Digital identity Community of Practice, as well as federal acquisition

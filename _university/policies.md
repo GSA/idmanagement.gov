@@ -19,8 +19,8 @@ Review the federal policies  that impact and shape the implementations of ICAM p
 
 <hr/>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
-  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All" tabindex=0>   +   </li>
+  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 {% assign lcount = 0 %}
 {% for policy in site.data.policies %}
@@ -30,9 +30,7 @@ Review the federal policies  that impact and shape the implementations of ICAM p
       {{policy.name}} ({{policy.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec gsa-aclink" href="{{policy.url}}" target="{{policy.target}}" rel="noopener noreferrer" tabindex="-1">
-  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
-    <p>
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policy.url}}')" onkeydown="navigateTo('{{policy.url}}')" aria-label="{{policy.name}}" tabindex="0">
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{policy.doctype}}</span>
         </div>
@@ -46,8 +44,6 @@ Review the federal policies  that impact and shape the implementations of ICAM p
             <button class="usa-button">View</button>
         </div> 
         -->
-    </p>
   </div>
-  </a>
 </div>
 {% endfor %}

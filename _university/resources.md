@@ -13,8 +13,8 @@ sticky_sidenav: true
 
 <hr/>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
-  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All" tabindex=0>   +   </li>
+  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 {% assign lcount = 0 %}
 {% for resource in site.data.resources %}
@@ -24,9 +24,7 @@ sticky_sidenav: true
       {{resource.name}} ({{resource.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec gsa-aclink" href="{{resource.url}}" target="{{resource.target}}" rel="noopener noreferrer" tabindex="-1">
-  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" >
-    <p>
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{resource.url}}')" onkeydown="navigateTo('{{resource.url}}')" aria-label="{{resource.name}}" tabindex="0">
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{resource.doctype}}</span>
         </div>
@@ -40,8 +38,6 @@ sticky_sidenav: true
             <button class="usa-button">View</button>
         </div> 
         -->
-    </p>
   </div>
-  </a>
 </div>
 {% endfor %}

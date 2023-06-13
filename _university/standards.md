@@ -20,8 +20,8 @@ Review the federal standards that impact and shape the implementations of ICAM p
 
 <hr/>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-  <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
-  <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All" tabindex=0>   +   </li>
+  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 {% assign lcount = 0 %}
 {% for standard in site.data.standards %}
@@ -31,24 +31,20 @@ Review the federal standards that impact and shape the implementations of ICAM p
       {{standard.name}} ({{standard.pubdate}})
     </button>
   </h4>
-  <a class="gsa-no-dec gsa-aclink" href="{{standard.url}}" target="{{standard.target}}" rel="noopener noreferrer" tabindex="-1">
-  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose usa-prose gsa-target-accordion-content-area">
-    <p>
+  <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{standard.url}}')" onkeydown="navigateTo('{{standard.url}}')" aria-label="{{standard.name}}" tabindex="0">
         <div class="display-flex flex-column flex-align-end">
           <span class="usa-tag">{{standard.doctype}}</span>
         </div>
         <p>{{standard.summary}}</p>
         <hr/>
         <div class="display-flex flex-column flex-align-end">
-            <span class="gsa-source  usa-link usa-link--external">Source: {{standard.source}}</span>
+            <span class="gsa-source usa-link usa-link--external">Source: {{standard.source}}</span>
         </div>
         <!-- 
         <div class="display-flex flex-column flex-align-end">
             <button class="usa-button">View</button>
         </div> 
         -->
-    </p>
   </div>
-  </a>
 </div>
 {% endfor %}

@@ -7,7 +7,8 @@
 // CSS targets, not used for styling, keep empty, used in js to target classes.
 .gsa-target-accordion-header {} // for accordion header targeting
 .gsa-target-accordion-content-area {} // for accordion content targeting
-.gsa-aclink {} // for accordion links targeting
+.gsa-card{cursor: pointer;} // adds a pointer to a card.
+
 
 
 // Important: Colors for H1 and H2 in usa-layout-docs element
@@ -38,7 +39,7 @@
   font-size:22pt;
   color: #1b1b1b;
   // border: 0px;
-  border-top-right-radius:10px;
+  border-top-left-radius:10px;
   margin-right:0px;
   padding-left: 10px;
   padding-right: 10px;
@@ -63,8 +64,8 @@
   font-size:22pt;
   color: #1b1b1b;
   // border:0px;
-  border-top-left-radius:10px;
-  margin-right:0px;
+  border-top-right-radius:10px;
+  margin-left:1px;
   padding-left: 10px;
   padding-right: 10px;
   display: inline;
