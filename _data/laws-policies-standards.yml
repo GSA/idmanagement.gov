@@ -360,7 +360,7 @@
   description: >-
     This Memorandum requires that all publicly accessible Federal websites and web services only provide 
     service through a secure connection. The strongest privacy and integrity protection currently available 
-    for public web connections is Hypertext Transfer Protocol Secure (HTTPS).
+    for public web connections is Hypertext Transfer Protocol Secure (HTTPS). 
     Agencies must utilize PKI device certificates to protect their web servers.
   published: 2015-07-08
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf"
