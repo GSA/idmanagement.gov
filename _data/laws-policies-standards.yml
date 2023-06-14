@@ -2017,7 +2017,7 @@
   authored-by:
     - *OMB
   authorized-by:
-    - *EO13467
+    - *HSPD12
   amends:
     - *SPRINGERMEMO
     - *PIVISSUANCESUSPENSION
