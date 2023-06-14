@@ -11,7 +11,7 @@ subnav:
     href: /fpki/announcements
 ---
 
-These announcements have been archived one year after they their release and will be removed from the site after three years.
+These announcements have been archived one year after they are released and will be removed from the site after three years.
 
 <table class="usa-table--borderless">
   <thead class="usa-sr">

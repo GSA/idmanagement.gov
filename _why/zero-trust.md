@@ -18,7 +18,7 @@ subnav:
 
 FICAM is the foundation for U.S Government agencies to mature towards Zero Trust cyber security architecture. Implementing identity credentials and access management concepts, policies, procedures and playbooks provides agencies a Zero Trust implementation strategy framework and directly supports the FICAM initiatives in OMB M-22-09 Federal Zero Trust Strategy and CISA Zero Trust Maturity Model version 2.0. 
 
-## Defined
+## Definition
 Zero Trust concepts assume there are no implicit trust granted to assets or user accounts based on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established.
 
 ## FICAM areas aligned to M-22-09
@@ -34,4 +34,3 @@ Zero Trust concepts assume there are no implicit trust granted to assets or user
 
 ## FICAM alignment to CISA Zero Trust Maturity Model
 The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a good place to start while agencies plan their Zero Trust implementation journey. This model has five pillars that complement each other as part of the overall objective to achieve continued modernization efforts related to Zero Trust within a rapidly evolving technology landscape. One of the main pillars of this model is Identity that is in line with the FICAM framework. Even though this maturity model is one of the many paths to zero trust, it leads agencies to success by providing guidance. Use [IDManagement]({{site.baseurl}}) resources to achieve Identity pillar objectives defined within this maturity model efficiently.
-

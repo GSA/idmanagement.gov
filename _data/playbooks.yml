@@ -105,6 +105,14 @@
   header: "/assets/playbooks/headers/playbook_11.png"
   target: _self
 
+- title: Windows Hello for Business Playbook
+  type: Markdown
+  pubdate: 2023-06
+  description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention.
+  url: "/playbooks/whfb/"
+  header: "/assets/playbooks/headers/playbook_09.png"
+  target: _self
+
 # Removed because it has a status of archived
 # - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
 #   type: PDF

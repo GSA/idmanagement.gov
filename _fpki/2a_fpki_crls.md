@@ -9,8 +9,6 @@ sidenav: fpkicas
 subnav:
   - text: Federal Common Policy CA G2
     href: '#federal-common-policy-ca-g2'
-  - text: Federal Common Policy CA
-    href: '#federal-common-policy-ca'
   - text: Federal Bridge CA G4
     href: '#federal-bridge-ca-g4'
   - text: Verify a hash

@@ -170,6 +170,8 @@ playbooks:
     href: /playbooks/pivi/ 
   - text: Privileged Identity Playbook
     href: /playbooks/pam/ 
+  - text: Windows Hello for Business Playbook
+    href: /playbooks/whfb/
 
 
 ## FPKI Navigation
