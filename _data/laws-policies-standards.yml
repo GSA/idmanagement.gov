@@ -102,6 +102,22 @@
     - *OMB
   ficam-services:
     - "Identity Management - Identity Proofing"
+- &FISMA2014
+  type: Law
+  shortName: "FISMA 2014"
+  longName: "Federal Information Security Modernization Act of 2014"
+  description: >-
+    The purposes of this subchapter are to [...] provide a comprehensive framework for 
+    ensuring the effectiveness of information security controls over information resources 
+    that support Federal operations and assets.
+    NIST is responsible for developing information security standards and guidelines, 
+    including minimum requirements for federal information systems. Such information security 
+    standards and guidelines shall not apply to national security systems without the express 
+    approval of the appropriate federal officials exercising policy authority over such systems.
+  published: 2014-12-18
+  externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
+  ficam-services:
+    - "Governance - Identity Governance"
 - &CIOCOUNCIL
   type: "Authority"
   shortName: "Federal CIO Council"
@@ -335,22 +351,6 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
-- &FISMA2014
-  type: Law
-  shortName: "FISMA 2014"
-  longName: "Federal Information Security Modernization Act of 2014"
-  description: >-
-    The purposes of this subchapter are to [...] provide a comprehensive framework for 
-    ensuring the effectiveness of information security controls over information resources 
-    that support Federal operations and assets.
-    NIST is responsible for developing information security standards and guidelines, 
-    including minimum requirements for federal information systems. Such information security 
-    standards and guidelines shall not apply to national security systems without the express 
-    approval of the appropriate federal officials exercising policy authority over such systems.
-  published: 2014-12-18
-  externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
-  ficam-services:
-    - "Governance - Identity Governance"
 - &M0504
   type: Policy
   shortName: "M-05-04"
