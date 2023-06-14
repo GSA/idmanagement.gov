@@ -87,21 +87,6 @@
     - *HSPD12
   authored-by:
     - *NIST
-- &M0404
-  type: "Policy"
-  shortName: "M-04-04"
-  longName: "OMB Memo 04-04: E-Authentication Guidance for Federal Agencies"
-  published: 2003-12-16
-  description: >-
-    This guidance requires agencies to review new and existing electronic transactions to ensure that 
-    authentication processes provide the appropriate level of assurance.
-  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2004/m04-04.pdf"
-  scope:
-    - "Public Identity"
-  ficam-services:
-    - "Access Management - Authentication"
-  authored-by:
-    - *OMB
 - &M0524
   type: "Policy"
   shortName: "M-05-24"
@@ -1741,26 +1726,7 @@
   authorized-by:
     - *GAO13222
     - *GAO15444
-- &M0618
-  type: Policy
-  shortName: "M-06-18"
-  longName: "OMB Memo 06-18: Acquisition of Products and Services for Implementation of HSPD-12"
-  description: >-
-    This memorandum provides updated direction for the acquisition of products and 
-    services for the implementation of Homeland Security Presidential Directive-12 (HSPD-12) 
-    “Policy for a Common Identification Standard for Federal Employees and 
-    Contractors” and also provides status of implementation efforts.
-  published: 2006-06-30
-  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2006/m06-18.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *HSPD12
-    - *FIPS201
-  ficam-services:
-    - Identity Management
-    - Credential Management
-- &PACSRFP
+ &PACSRFP
   type: Guidance
   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
   longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
@@ -1771,7 +1737,7 @@
   authored-by:
     - *FIPSLAB
   authorized-by:
-    - *M0618
+    - *M1917
 - &GAO19138
   type: Guidance
   shortName: "GAO-19-138"
