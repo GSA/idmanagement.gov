@@ -2025,24 +2025,6 @@
     - Identity Management
     - Credential Management
     - Access Management
-- &VETTINGCOREDOCTRINE
-  type: Policy
-  shortName: "Federal Personnel Vetting Core Doctrine"
-  longName: "Federal Personnel Vetting Core Doctrine"
-  description: >-
-    This Core Doctrine defines the personnel vetting mission, its guiding principles, 
-    key supporting processes, and policy priorities.
-  published: 2021-01-13
-  externalURL: "https://www.federalregister.gov/documents/2021/01/13/2021-00547/federal-personnel-vetting-core-doctrine"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *EO13467
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-    - Governance
 - &NICEFRAMEWORK
   type: Guidance
   shortName: "SP 800-181"
