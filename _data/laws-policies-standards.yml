@@ -681,6 +681,42 @@
     - Access Management - Privileged Access Management
     - Credential Management
     - Identity Management
+- &EO12968
+  type: Law
+  shortName: "EO 12968"
+  longName: "Executive Order 12968: Access to Classified Information"
+  description: >-
+    This order establishes a uniform Federal personnel security program for
+    employees who will be considered for initial or continued access to classified
+    information.
+  published: 1995-08-07
+  externalURL: "https://www.federalregister.gov/d/95-19654"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
+- &EO13467
+  type: Law
+  shortName: "EO 13467"
+  longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
+  description: >-
+    [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
+    suitability for Government employment, contractor employee fitness, and eligibility for access to classified 
+    information, while taking appropriate account of title III of Public Law 108-458
+  published: 2008-06-30
+  externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
+  authored-by:
+    - *WH
+  amends:
+    - *EO12968
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
 - &SPRINGERMEMO
   type: Policy
   shortName: "Springer Memo"
