@@ -1813,6 +1813,8 @@
   published: 2013-01-01
   authored-by:
     - *GAO
+  ficam-services:
+    - Access Management
 - &GAO15444
   type: Guidance
   shortName: GAO-15-444
@@ -1826,6 +1828,8 @@
   published: 2015-03-01
   authored-by:
     - *GAO
+  ficam-services:
+    - Access Management
 - &ISC
   type: Authority
   shortName: ISC
@@ -1898,6 +1902,8 @@
   externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
   authored-by:
     - *GAO
+  ficam-services:
+    - Access Management
 - &FACILITYACCESSCONTROL
   type: Guidance
   shortName: "FACILITY ACCESS CONTROL"
@@ -2378,6 +2384,11 @@
   externalURL: "http://dx.doi.org/10.6028/NIST.IR.7966"
   authored-by:
     - *NIST
+  ficam-services:
+    - Credential Management - Generation & Issuance
+    - Credential Management - Maintenance
+    - Access Management - Privileged Access Management
+    - Access Management - Authentication
 - &CMU
   type: Authority
   shortName: "CMU"
