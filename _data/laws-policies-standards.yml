@@ -735,7 +735,6 @@
   externalURL: "https://www.dni.gov/files/NCSC/documents/nittf/National_Insider_Threat_Policy__Minimum_Standards.pdf"
   authorized-by:
     - *EO12968
-    - *EO13587
   ficam-services:
     - Identity Management
     - Credential Management
@@ -751,7 +750,6 @@
     exploitation, compromise, or other unauthorized disclosure, taking into account risk levels, as well 
     as the distinct needs, missions, and systems of individual agencies.
   authorized-by:
-    - *EO13587
     - *INSIDERTHREAT
 - &EO13467
   type: Law
