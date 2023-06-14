@@ -370,15 +370,13 @@
   type: Policy
   shortName: "M-19-16"
   longName: "OMB Memo 19-16: Centralized Mission Support Capabilities for the Federal Government"
-  description: >- 
+  description: >-
     This memorandum describes the process and desired outcomes for shared services such as PKI 
     Shared Service Providers (SSPs).
   published: 2019-04-26
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
   authored-by:
     - *OMB
-  authorized-by:
-    - *PMA
 - &CPWG
   type: Authority
   shortName: "CPWG"
