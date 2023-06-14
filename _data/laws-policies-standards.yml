@@ -746,6 +746,8 @@
     investigative and adjudicative procedures that applies to all persons, including contract 
     personnel, who perform work on behalf of the government, we are providing the attached 
     Credentialing, Suitability, and Security Clearance Decision-Making Guide.
+    This tool is for use in adjudicative decisions for HSPD-12 credentialing [and]
+    suitability determinations.
   published: 2008-01-14
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/decision-making-guide.pdf"
   authored-by:
@@ -816,66 +818,6 @@
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
   ficam-services:
     - Governance
-- &M2016
-  type: Policy
-  shortName: "M-20-16"
-  longName: "OMB Memo 20-16: Federal Agency Operational Alignment to Slow the Spread of Coronavirus COVID-19"
-  description: >-
-    The Federal Government, in partnership with sta�e and local governments and the 
-    private sector, is adopting a concerted near-term operations posture that will appropriately align 
-    critical resources to slow down the transmission of COVID-19, while also ensuring that 
-    Government operations continue.
-  published: 2020-03-17
-  externalURL: https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-16.pdf
-  authored-by:
-    - *OMB
-  ficam-services:
-    - Federation
-    - Governance
-- &COVIDVETTING
-  type: Policy
-  shortName: "OPM Memo: Coronavirus Disease 2019"
-  longName: "Temporary Procedures for Personnel Vetting and Appointment of New Employees during Maximum Telework Period due to Coronavirus COVID-19"
-  description: >-
-    While agencies continue to onboard personnel, particularly for mission-critical functions, many Federal, 
-    state, and local offices that take fingerprints are temporarily closed due to measures associated with COVID-19.
-    As a result, Federal agencies are experiencing challenges collecting fingerprints to meet existing requirements 
-    for a fingerprint check of the Federal Bureau of Investigation's (FBI) criminal history records 
-    (“FBI fingerprint check”) as part of vetting new hires (including for waivers of pre-appointment investigative
-    requirements) and contractors, appointment to the civil service, and determining eligibility for issuance of 
-    Personal Identity Verification (PIV) credentials.
-  published: 2020-03-25
-  externalURL: "https://www.opm.gov/policy-data-oversight/covid-19/temporary-procedures-for-personnel-vetting-and-appointment-of-new-employees-during-maximum-telework-period-due-to-coronavirus-covid-19/"
-  authorized-by:
-    - *M2016
-  authored-by:
-    - *OPM
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Federation
-    - Governance
-- &M2019
-  type: Policy
-  shortName: "M-20-19"
-  longName: "OMB Memo 20-19: Harnessing Technology to Support Mission Continuity"
-  description: >-
-    This memorandum directs that agencies utilize technology to the greatest extent practicable to support 
-    mission continuity during the national emergency. By aggressively embracing technology to support business 
-    processes, the federal government is better positioned to maintain the safety and well-being of the federal 
-    workforce and the American public while supporting the continued delivery of vital mission services. The 
-    set of frequently asked questions are intended to provide additional guidance and further assist the IT 
-    workforce as it addresses impacts.
-  published: 2020-03-22
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *M2016
-  ficam-services:
-    - Federation
-    - Governance
-    - Access Management
-    - Credential Management
 - &M1903
   type: Policy
   shortName: "M-19-03"
