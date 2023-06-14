@@ -168,19 +168,51 @@
     - *ICAMSC
   ficam-services:
     - Federation - Policy Alignment
-- &ICAMTECHPLAYBOOKS
-  type: "Guidance"
-  shortName: "ICAM Technical Playbooks"
-  longName: "Identity, Credential, and Access Management Technical Playbooks"
-  externalURL: "https://playbooks.idmanagement.gov/"
+- &FPKIGUIDE
+  type: Guidance
+  shortName: "FPKI Guide"
+  longName: "Federal Public Key Infrastructure Guide"
+  description: "This guide describes the structure, purpose, and current operational status of the FPKI."
+  externalURL: "https://playbooks.idmanagement.gov/fpki/"
   authored-by:
     - *ICAMSC
   ficam-services:
-    - Identity Management
     - Credential Management
+- &PACSGUIDE
+  type: Guidance
+  shortName: "PACS Guide"
+  longName: "Physical Access Control System Guide"
+  description: >-
+    The Physical Access Control System (PACS) Guides will help you understand concepts related 
+    to Federal Identity, Credential, and Access Management-compliant PACSs.
+  externalURL: "https://playbooks.idmanagement.gov/pacs/"
+  authored-by:
+    - *ICAMSC
+  ficam-services:
     - Access Management
-    - Federation
-    - Governance
+- &PIVGUIDE
+  type: Guidance
+  shortName: "PIV Guides"
+  longName: "Personal Identity Verification Guides"
+  description: >-
+    These Personal Identity Verification (PIV) Guides are intended to help you implement common 
+    PIV configurations at your organization. The guides focus on using PIV credentials for logical 
+    access such as authenticating to networks or applications or digitally signing and encrypting.
+  externalURL: "https://playbooks.idmanagement.gov/piv/"
+  authored-by:
+    - *ICAMSC
+  ficam-services:
+    - Access Management - Authentication
+- &PLAYBOOKS
+  type: Guidance
+  shortName: "FICAM Playboks"
+  longName: "FICAM Playbooks"
+  description: >-
+    A playbook is a comprehensive guide on a technical topic, describing both overarching strategy 
+    and tactical approaches. These playbooks cover a variety of FICAM relevant subjects.
+  externalURL: "https://playbooks.idmanagement.gov/playbooks/"
+  authored-by:
+    - *ICAMSC
 - &FPKIPA
   type: "Authority"
   shortName: "FPKI PA"
@@ -723,19 +755,6 @@
     - Identity Management - Maintenance
     - Governance - Identity Governance
     - Federation - Attribute Exchange
-- &PIVIFORISSUERS
-  type: Guidance
-  shortName: "PIV-I for Issuers"
-  longName: "Personal Identity Verification Interoperability For Issuers"
-  description: "This document provides the guidance needed to assist both Federal Issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) identity credentials in achieving credential interoperability with the Federal Government PIV infrastructure."
-  externalURL: "https://www.idmanagement.gov/docs/archived/fpki-pivi-for-issuers.pdf"
-  published: 2017-07-27
-  authored-by:
-    - *CIOCOUNCIL
-  ficam-services:
-    - Credential Management - Generation & Issuance
-    - Credential Management - Revocation
-    - Identity Management - Identity Proofing
 - &PIVPRIV
   type: Guidance
   shortName: "PIV Privileged User Guide"
