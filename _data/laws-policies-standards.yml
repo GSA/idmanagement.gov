@@ -1269,6 +1269,8 @@
   externalURL: "https://www.federalregister.gov/documents/2018/05/18/2018-10855/enhancing-the-effectiveness-of-agency-chief-information-officers"
   authored-by:
     - *WH
+  ficam-services:
+    - Governance
 - &EO13800
   type: Law
   shortName: "E.O. 13800"
@@ -1280,6 +1282,10 @@
   externalURL: "https://www.federalregister.gov/documents/2017/05/16/2017-10004/strengthening-the-cybersecurity-of-federal-networks-and-critical-infrastructure"
   authored-by:
     - *WH
+  ficam-services:
+    - Federation
+    - Governance
+    - Access Management
 - &PAPERWORKREDUCTION1995
   type: Law
   shortName: "Paperwork Reduction Act of 1995"
@@ -1345,6 +1351,10 @@
   externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
   authored-by:
     - *WH
+  ficam-services:
+    - Identity Management
+    - Federation
+    - Governance
 - &SP800205
   type: "Guidance"
   shortName: "SP 800-205"
@@ -1495,6 +1505,8 @@
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-115publ278/pdf/PLAW-115publ278.pdf"
   amends:
     - *HOMELANDSECURITYACT
+  ficam-services:
+    - Governance
 - &DHS
   type: Authority
   shortName: "DHS"
@@ -1563,6 +1575,9 @@
   externalURL: "https://www.federalregister.gov/documents/2013/02/19/2013-03915/improving-critical-infrastructure-cybersecurity"
   authored-by:
     - *WH
+  ficam-services:
+    - Federation
+    - Governance
 - &PPD21
   type: Law
   shortName: "PPD-21"
@@ -1575,6 +1590,9 @@
   externalURL: "https://www.cisa.gov/sites/default/files/2023-01/ppd-21-critical-infrastructure-and-resilience-508_0.pdf"
   authored-by:
     - *WH
+  ficam-services:
+    - Federation
+    - Governance
 - &FAR
   type: Policy
   shortName: "FAR"
@@ -1931,6 +1949,8 @@
   externalURL: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
   authored-by:
     - *WH
+  ficam-services:
+    - Governance
 - &2017MODERNAIZATIONREPORT
   type: Guidance
   shortName: "Final IT Modernization Report"
@@ -2253,6 +2273,9 @@
   externalURL: "https://www.dhs.gov/sites/default/files/publications/15_1026_NSI_National-Strategy-Information-Sharing-Safeguarding.pdf"
   authored-by:
     - *WH
+  ficam-services:
+    - Federation
+    - Governance
 - &SP180018
   type: Guidance
   shortName: "NIST SP 1800-18"
@@ -2490,6 +2513,8 @@
     appropriate use and management by agencies of Internet of Things devices.
   published: 2020-09-22
   externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
+  ficam-services:
+    - Governance
 - &SP800213
   type: Standard
   shortName: "SP 800-213"
