@@ -1124,9 +1124,7 @@
   published: 2008-01-14
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/decision-making-guide.pdf"
   authored-by:
-    - *OMB
     - *OPM
-    - *DNI
   ficam-services:
     - Identity Management - Identity Proofing
     - Credential Management - Generation & Issuance
@@ -1144,6 +1142,8 @@
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/memo-issuing-piv-credentials-and-suspension-criteria.pdf"
   authored-by:
     - *OMB
+    - *OPM
+    - *DNI
   authorized-by:
     - *SPRINGERMEMO
   ficam-services:
