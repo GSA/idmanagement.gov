@@ -306,18 +306,6 @@
     - *COMMONCP
   implemented-by:
     - *GSA
-- &FITARA
-  type: Law
-  shortName: "FITARA"
-  longName: "Federal Information Technology Acquisition Reform"
-  description: >-
-    The head of each covered agency other than the Department of Defense shall ensure that 
-    the Chief Information Officer of the agency has a significant role in— 
-    (i) the decision processes for all annual and multi-year planning, programming, budgeting, and execution 
-    decisions, related reporting requirements, and reports related to information technology; and 
-    (ii) the management, governance, and oversight processes related to information technology.
-  published: 2014-12-19
-  externalURL: "https://www.congress.gov/113/plaws/publ291/PLAW-113publ291.pdf#page=148"
 - &FITARA2017
   type: Law
   shortName: "FITARA Enhancement Act of 2017"
@@ -330,50 +318,32 @@
     for other purposes.
   published: 2017-11-21
   externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
-  amends:
-    - *FITARA
-- &M1514
-  type: Policy
-  shortName: "M-15-14"
-  longName: "OMB Memo 15-14: Management and Oversight of Federal Information Technology"
-  description: >-
-    The purpose of this memorandum is to provide implementation guidance for the Federal Information 
-    Technology Acquisition Reform Act (FITARA) 1 and related information technology (IT) management 
-    practices.
-  published: 2015-06-10
-  externalURL: "https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2015/m-15-14.pdf?msclkid=af985c3cc7f511ec9ae8691f3682c8d1"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *FITARA
-  ficam-services:
-    - Governance
 - &M1919
   type: Policy
   shortName: M-19-19
   longName: "OMB Memo 19-19: Update to Data Center Optimization Initiative (DCOI)"
-  description: "This Memorandum contains requirements for the consolidation and optimization of Federal data centers in accordance with FIT ARA. It establishes consolidation and optimization targets and metrics for Federal agencies, as well as requirements for reporting on their progress."
+  description: >-
+    This Memorandum contains requirements for the consolidation and optimization of Federal data 
+    centers in accordance with FITARA. It establishes consolidation and optimization targets and 
+    metrics for Federal agencies, as well as requirements for reporting on their progress. For FICAM, 
+    this suggests use of Identity as a Service Providers and Shared Service Providers for PKI, as 
+    discussed in the Cloud Identity Playbook.
   published: 2016-06-25
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/06/M-19-19-Data-Centers.pdf"
   authored-by:
     - *OMB
   authorized-by:
     - *FITARA2017
-- &DCOI
-  type: Policy
-  shortName: "DCOI"
-  longName: "Data Center Optimization Intitiative"
-  published: 2019-06-25
-  externalURL: "https://www.cio.gov/policies-and-priorities/DCOI/"
-  authored-by:
-    - *CIOCOUNCIL
-  authorized-by:
-    - *M1919
 - &A130
   type: Policy
   shortName: "OMB Circular A-130"
   longName: "CIRCULAR NO. A-130 - Managing Information as a Strategic Resource"
-  description: "This Circular is designed to help drive the transformation of the Federal Government and the way it builds, buys, and delivers technology by institutionalizing more agile approaches intended to facilitate the rapid adoption of changing technologies, in a way that enhances information security, privacy, and management of information resources across all Federal programs and services."
+  description: >-
+    This Circular is designed to help drive the transformation of the Federal Government and 
+    the way it builds, buys, and delivers technology by institutionalizing more agile approaches 
+    intended to facilitate the rapid adoption of changing technologies, in a way that enhances 
+    information security, privacy, and management of information resources across all Federal 
+    programs and services.
   published: 2016-07-28
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf"
   authored-by:
@@ -383,104 +353,55 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
-- &M0504
-  type: Policy
-  shortName: "M-05-04"
-  longName: "OMB Memo 05-04: Policies for Federal Agency Public Websites"
-  description: "The efficient, effective, and appropriately consistent use of Federal agency public websites is important to promote a more citizen centered government. This memorandum and attachment fulfill the requirements of section 207(f) of the E-Government Act of 2002 (Pub. L. No. 107-347)."
-  published: 2004-12-17
-  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2005/m05-04.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *FISMA2014
-    - *A130
-  ficam-services:
-    - Federation - Policy Alignment
 - &M1513
   type: Policy
   shortName: "M-15-13"
   longName: "OMB Memo 15-13: Policy to Require Secure Connections across Federal Websites and Web Services"
-  description: "This Memorandum requires that all publicly accessible Federal websites and web services only provide service through a secure connection. The strongest privacy and integrity protection currently available for public web connections is Hypertext Transfer Protocol Secure (HTTPS)."
+  description: >-
+    This Memorandum requires that all publicly accessible Federal websites and web services only provide 
+    service through a secure connection. The strongest privacy and integrity protection currently available 
+    for public web connections is Hypertext Transfer Protocol Secure (HTTPS).
+    Agencies must utilize PKI device certificates to protect their web servers.
   published: 2015-07-08
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf"
   authored-by:
     - *OMB
   authorized-by:
     - *M0504
-- &GPRA2010
-  type: Law
-  shortName: "GRPA Modernization Act of 2010"
-  longName: "The Government Performance and Results Modernization Act of 2010"
-  description: "An Act to require quarterly performance assessments of Government programs for purposes of assessing agency performance and improvement, and to establish agency performance improvement officers and the Performance Improvement Council."
-  published: 2011-01-04
-  externalURL: "https://www.congress.gov/111/plaws/publ352/PLAW-111publ352.pdf"
-- &PMA
-  type: Law
-  shortName: "PMA"
-  longName: "President's Management Agenda"
-  description: "The President's Management Agenda (PMA) defines Government-wide management priorities for all Federal agencies to improve how Government operates and performs."
-  externalURL: "https://www.performance.gov/"
-  authorized-by:
-    - *GPRA2010
 - &M1916
   type: Policy
   shortName: "M-19-16"
   longName: "OMB Memo 19-16: Centralized Mission Support Capabilities for the Federal Government"
-  description: "This memorandum describes the process and desired outcomes for shared services"
+  description: >- 
+    This memorandum describes the process and desired outcomes for shared services such as PKI 
+    Shared Service Providers (SSPs).
   published: 2019-04-26
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
   authored-by:
     - *OMB
   authorized-by:
     - *PMA
-- &FEDCLOUD
-  type: Policy
-  shortName: "2011 Federal Cloud Computing Strategy"
-  longName: "Federal Cloud Computing Strategy: Cloud First"
-  description: >-
-    To harness the benefits of cloud computing, we have instituted a Cloud First policy. This policy is intended 
-    to accelerate the pace at which the government will realize the value of cloud computing by requiring 
-    agencies to evaluate safe, secure cloud computing options before making any new investments.
-  published: 2011-02-08
-  externalURL: "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/egov_docs/federal-cloud-computing-strategy.pdf"
-  authored-by:
-    - *CIOCOUNCIL
-- &M1611
-  type: Policy
-  shortName: "M-16-11"
-  longName: "OMB Memo 16-11: Improving Administrative Functions Through Shared Services"
-  description: "A consistent enterprise-wide strategy to administrative shared services is a critical step in creating a more effective and efficient government."
-  published: 2016-05-04
-  externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m-16-11.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Federation - Policy Alignment
 - &CPWG
   type: Authority
   shortName: "CPWG"
   longName: "Certificate Policy Working Group"
-  description: "Reviews cross-certification applications, Certificate Policies, Certificate Policy change proposals, auditor reports of entities applying for or seeking to maintain cross-certification with the FPKI, and provides recommendations to the PA for acceptance or rejection of those items. The CPWG also reviews FPKI administrative and guidance documents and recommends changes to those documents as needed."
+  description: >-
+    Reviews cross-certification applications, Certificate Policies, Certificate Policy change 
+    proposals, auditor reports of entities applying for or seeking to maintain cross-certification 
+    with the FPKI, and provides recommendations to the PA for acceptance or rejection of those items. 
+    The CPWG also reviews FPKI administrative and guidance documents and recommends changes to those 
+    documents as needed.
   subgroup-of:
     - *FPKIPA
-- &CLOUDTT
-  type: Authority
-  shortName: "CPWG Cloud Tiger Team"
-  longName: "Federal Certificate Policy Working Group Cloud Tiger Team"
-  description: "The purpose of the tiger team will be to analyze FPKI policies and evaluate cloud offerings in order to make a feasibility recommendation to the CPWG on if and what FPKI components can be migrated to the cloud without impacting trust."
-  subgroup-of:
-    - *CPWG
-  authorized-by:
-    - *M1919
-    - *DCOI
 - &FIPSLAB
   type: Program
   shortName: "FICAM testing program"
   longName: "Federal Information Processing Standard 201 (FIPS 201) Evaluation Program"
-  description: "The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes called the FICAM Testing Program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs)."
+  description: >-
+    The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes 
+    called the FICAM Testing Program) tests and certifies services and commercial products 
+    used in PIV credentialing systems, physical access control systems (PACS), and public 
+    key infrastructures (PKIs).
   externalURL: "https://www.idmanagement.gov/fips201/"
   authorized-by:
     - *FIPS201
@@ -509,15 +430,6 @@
   externalURL: "https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority"
   subgroup-of:
     - *FPKIPA
-- &PUBLICTRUSTPKI
-  type: Program
-  shortName: "Public Trust PKI"
-  longName: "U.S. Federal Public Trust TLS PKI"
-  description: "The scope of the U.S. Federal Public Trust TLS PKI includes the Certification Authorities used for issuing and managing Transport Layer Security (TLS) certificates for U.S. Federal Government services."
-  authorized-by:
-    - *M1513
-  implemented-by:
-    - *FPKIMA
 - &IAMROADMAP
   type: Guidance
   shortName: "NIST IAM Roadmap"
