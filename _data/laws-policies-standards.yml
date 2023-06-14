@@ -1726,7 +1726,7 @@
   authorized-by:
     - *GAO13222
     - *GAO15444
- &PACSRFP
+- &PACSRFP
   type: Guidance
   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
   longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
