@@ -334,6 +334,8 @@
     - *OMB
   authorized-by:
     - *FITARA
+  ficam-services:
+    - Governance
 - &M1619
   type: Policy
   shortName: M-16-19
@@ -1238,6 +1240,10 @@
   published: 2016-12-09
   authored-by:
     - *OMB
+  ficam-services:
+    - Governance
+    - Access Management
+    - Identity Management
 - &M1903
   type: Policy
   shortName: "M-19-03"
@@ -1257,6 +1263,11 @@
   rescinds:
     - *M1604
     - *M1709
+  ficam-services:
+    - Access Management - Authentication
+    - Access Management - Privileged Access Management
+    - Credential Management - Generation & Issuance
+    - Federation - Attribute Exchange
 - &EO13833
   type: Law
   shortName: "E.O. 13833"
@@ -1313,6 +1324,9 @@
     - *PRIVACYACT1974
     - *PAPERWORKREDUCTION1995
     - *FISMA2014
+  ficam-services:
+    - Federation
+    - Governance
 - &A123
   type: Policy
   shortName: "OMB A-123"
@@ -1327,6 +1341,9 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2016/m-16-17.pdf"
   authored-by:
     - *OMB
+  ficam-services:
+    - Federation
+    - Governance
 - &M1617
   type: Policy
   shortName: "M-16-17"
@@ -1340,6 +1357,9 @@
     - *OMB
   amends:
     - *A123
+  ficam-services:
+    - Federation
+    - Governance
 - &EO13681
   type: Law
   shortName: "E.O. 13681"
@@ -1811,6 +1831,9 @@
   authorized-by:
     - *HSPD12
     - *FIPS201
+  ficam-services:
+    - Identity Management
+    - Credential Management
 - &PACSRFP
   type: Guidance
   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
@@ -1979,6 +2002,10 @@
     - *EO13800
   amends:
     - *FEDCLOUD
+  ficam-services:
+    - Federation
+    - Governance
+    - Access Management
 - &M2209
   type: Policy
   shortName: "M-22-09"
@@ -2393,6 +2420,10 @@
   authorized-by:
     - *EO13467
     - *EO13488
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Federation
 - &SOFAB
   type: Guidance
   shortName: "SOFA-B"
@@ -2442,6 +2473,11 @@
     - *DOD
   authorized-by:
     - *HSPD12
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
 - &ICAMACQUISITION
   type: Guidance
   shortName: "ICAM Acquisition Guide"
