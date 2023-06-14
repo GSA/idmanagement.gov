@@ -891,6 +891,7 @@
   description: >-
     [T]o further strengthen the effective conduct of United States intelligence activities and protect the territory, people, 
     and interests of the United States of America, including against terrorist attacks
+  externalURL: "https://www.federalregister.gov/documents/2004/09/01/04-20052/strengthening-the-sharing-of-terrorism-information-to-protect-americans"
   authored-by:
     - *WH
   published: 2004-09-01
@@ -902,6 +903,7 @@
     [T]o further strengthen the effective conduct of United States counterterrorism activities and protect the territory, people, 
     and interests of the United States of America, including against terrorist attacks
   published: 2005-10-27
+  externalURL: "https://www.federalregister.gov/documents/2005/10/27/05-21571/further-strengthening-the-sharing-of-terrorism-information-to-protect-americans"
   authored-by:
     - *WH
   rescinds:
