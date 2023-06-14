@@ -1917,6 +1917,9 @@
     - *ISC
   authorized-by:
     - *GAO19138
+  ficam-services:
+    - Access Management - Authentication
+    - Access Management - Authorization
 - &PACSORDERGUIDE
   type: Guidance
   shortName: "PACS Ordering Guide"
@@ -1956,6 +1959,8 @@
     - *ISC
   authorized-by:
     - *EO12977
+  ficam-services:
+    - Access Management
 - &PACSMODWG
   type: Authority
   shortName: "PACSmod WG"
@@ -2208,6 +2213,8 @@
   authored-by:
     - *ICAMSC
     - *GSA
+  ficam-services:
+    - Federation
 - &FEDRAMPDIDREQS
   type: Guidance
   shortName: "FedRamp Digital Identity Requirements"
@@ -2222,6 +2229,8 @@
     - *FEDRAMP
   authorized-by:
     - *SP80063
+  ficam-services:
+    - Identity Management
 - &ICAMGOVFRAMEWORK
   type: Guidance
   shortName: "ICAM Governance Framework"
@@ -2234,6 +2243,8 @@
   externalURL: "https://playbooks.idmanagement.gov/docs/playbook-identity-governance-framework.pdf"
   authored-by:
     - *ICAMSC
+  ficam-services:
+    - Governance
 - &CIC
   type: Guidance
   shortName: "Cloud Information Center"
@@ -2254,6 +2265,8 @@
   externalURL: "https://csrc.nist.gov/publications/detail/nistir/8149/final"
   authored-by:
     - *NIST
+  ficam-services:
+    - Federation - Policy Alignment
 - &NISTIR8335
   type: Guidance
   shortName: "NISTIR 8335"
@@ -2261,8 +2274,11 @@
   description: >-
     This report informs [Public Safety Organizations] about [Identity as a Service] and how they can benefit from it.
   published: 2021-06-16
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8335-draft.pdf"
   authored-by:
     - *NIST
+  ficam-services:
+    - Access Management - Authentication
 - &NISTIR8360
   type: Guidance
   shortName: "NISTIR 8360"
@@ -2273,8 +2289,12 @@
     require comprehensive test cases, oracle, or system translation but rather checks the logic of 
     policy rules directly, making it more efficient and feasible compared to traditional methods.
   published: 2021-09-16
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8360.pdf"
   authored-by:
     - *NIST
+  ficam-services:
+    - Governance - Analytics
+    - Governance - Mitigation
 - &SP180013
   type: Guidance
   shortName: "NIST SP 1800-13"
@@ -2410,6 +2430,8 @@
   externalURL: "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644"
   authored-by:
     - *CMU
+  ficam-services:
+    - Access Management - Privileged Access Management
 - &M2131
   type: Policy
   shortName: "M-21-31"
@@ -2509,6 +2531,8 @@
   externalURL: "https://pages.nist.gov/SOFA/SOFA.html"
   authored-by:
     - *NIST
+  ficam-services:
+    - Credential Management
 - &RFC8485
   type: Standard
   shortName: "RFC 8485"
@@ -2535,6 +2559,8 @@
   externalURL: "https://media.defense.gov/2019/Sep/09/2002180346/-1/-1/0/Transition%20to%20Multi-factor%20Authentication%20-%20Copy.pdf"
   authored-by:
     - *NSA
+  ficam-services:
+    - Access Management - Authentication
 - &MODERNCAC
   type: Policy
   shortName: "Modernizing the Common Access Card"
@@ -2597,6 +2623,12 @@
   externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf"
   authored-by:
     - *DOD
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Federation
+    - Governance
 - &SELECTINGMFA
   type: Guidance
   shortName: "Selecting Secure MFA"
@@ -2616,6 +2648,8 @@
     - *DOD
   authorized-by:
     - *SP80063
+  ficam-services:
+    - Access Management - Authentication
 - &IOTCYBERACT
   type: Law
   shortName: "IoT Cybersecurity Improvement Act"
@@ -2658,6 +2692,8 @@
     - *OPM
   authorized-by:
     - *CREDSTANDARDS
+  ficam-services:
+    - Identity Management - Deactivation
 - &NISTIR8344
   type: Guidance
   shortName: "NISTIR 8344"
@@ -2671,6 +2707,8 @@
   externalURL: "https://doi.org/10.6028/NIST.IR.8344-draft"
   authored-by:
     - *NIST
+  ficam-services:
+    - Access Management - Authentication
 - &GSAM
   type: Policy
   shortName: "GSAM"
