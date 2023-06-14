@@ -613,6 +613,9 @@
     - *M1917
     - *FISMA2014
     - *A130
+  ficam-services:
+    - Identity Management
+    - Credential Management
 - &SP80063B
   type: Guidance
   shortName: "NIST SP 800-63B"
@@ -631,6 +634,8 @@
     - *M1917
     - *FISMA2014
     - *A130
+  ficam-services:
+    - Access Management - Authentication
 - &SP80063C
   type: Guidance
   shortName: "NIST SP 800-63C"
@@ -649,6 +654,8 @@
     - *M1917
     - *FISMA2014
     - *A130
+  ficam-services:
+    - Federation
 - &SP800116
   type: Guidance
   shortName: "NIST SP 800-116"
@@ -1191,6 +1198,9 @@
   externalURL: https://www.whitehouse.gov/wp-content/uploads/2020/03/M-20-16.pdf
   authored-by:
     - *OMB
+  ficam-services:
+    - Federation
+    - Governance
 - &COVIDVETTING
   type: Policy
   shortName: "OPM Memo: Coronavirus Disease 2019"
@@ -1209,6 +1219,11 @@
     - *M2016
   authored-by:
     - *OPM
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Federation
+    - Governance
 - &M2019
   type: Policy
   shortName: "M-20-19"
@@ -1225,6 +1240,11 @@
     - *OMB
   authorized-by:
     - *M2016
+  ficam-services:
+    - Federation
+    - Governance
+    - Access Management
+    - Credential Management
 - &M1709
   type: Policy
   shortName: "M-17-09"
@@ -1402,6 +1422,8 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+  ficam-services:
+    - Identity Management
 - &SP80053A
   type: "Guidance"
   shortName: "SP 800-53A"
@@ -1645,6 +1667,8 @@
     - *EGOV2002
   authored-by:
     - *NIST
+  ficam-services:
+    - Credential Management
 - &FIPS200
   type: Guidance
   shortName: FIPS-200
@@ -1659,6 +1683,9 @@
     - *NIST
   authorized-by:
     - *EGOV2002
+  ficam-services:
+    - Credential Management
+    - Access Management
 - &SP80060v1
   type: Guidance
   shortName: SP 800-60 vol. I
@@ -2009,7 +2036,7 @@
 - &M2209
   type: Policy
   shortName: "M-22-09"
-  longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principlesy"
+  longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principles"
   description: >-
     The goal of this strategy is to accelerate agencies toward a shared baseline of early zero trust 
     maturity. Moving to a zero trust architecture will be a multi-year journey for agencies, and 
@@ -2020,6 +2047,11 @@
     - *OMB
   authorized-by:
     - *EO14028
+  ficam-services:
+    - Identity Management
+    - Access Management
+    - Credential Management
+    - Governance
 - &SP800145
   type: Guidance
   shortName: "SP 800-145"
@@ -2360,6 +2392,8 @@
     - *OMB
   authorized-by:
     - *EO14028
+  ficam-services:
+    - Federation
 - &CREDSTANDARDS
   type: Policy
   shortName: "Credentialing Standards Memo 2020"
@@ -2382,6 +2416,10 @@
   amends:
     - *SPRINGERMEMO
     - *PIVISSUANCESUSPENSION
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
 - &VETTINGCOREDOCTRINE
   type: Policy
   shortName: "Federal Personnel Vetting Core Doctrine"
@@ -2395,6 +2433,11 @@
     - *OMB
   authorized-by:
     - *EO13467
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
 - &NICEFRAMEWORK
   type: Guidance
   shortName: "SP 800-181"
@@ -2503,6 +2546,10 @@
   externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
   authored-by:
     - *DOD
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
 - &DODICAMREFDESIGN
   type: Guidance
   shortName: "DoD ICAM Reference Design"
