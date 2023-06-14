@@ -366,8 +366,6 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf"
   authored-by:
     - *OMB
-  authorized-by:
-    - *M0504
 - &M1916
   type: Policy
   shortName: "M-19-16"
@@ -1819,8 +1817,6 @@
     - *OMB
   authorized-by:
     - *EO13800
-  amends:
-    - *FEDCLOUD
   ficam-services:
     - Federation
     - Governance
