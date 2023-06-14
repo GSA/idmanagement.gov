@@ -349,8 +349,6 @@
     approval of the appropriate federal officials exercising policy authority over such systems.
   published: 2014-12-18
   externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
-  amends:
-    - *FISMA2014
   ficam-services:
     - "Governance - Identity Governance"
 - &M0504
