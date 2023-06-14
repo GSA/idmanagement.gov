@@ -1408,6 +1408,8 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+  ficam-services:
+    - Access Management
 - &SP80053
   type: "Guidance"
   shortName: "SP 800-53"
@@ -1453,6 +1455,8 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+  ficam-services:
+    - Access Management
 - &SP800122
   type: "Guidance"
   shortName: "SP 800-122"
@@ -1469,6 +1473,9 @@
     - *NIST
   authorized-by:
     - *EGOV2002
+  ficam-services:
+    - Identity Management
+    - Credential Management
 - &NISTRMF
   type: "Guidance"
   shortName: "NIST RMF"
@@ -1748,6 +1755,9 @@
     - *NIST
   authorized-by:
     - *EO13556
+  ficam-services:
+    - Access Management
+    - Credential Management
 - &HTTPSGUIDE
   type: Guidance
   shortName: HTTPS Compliance Guide
@@ -2076,6 +2086,8 @@
   externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204B.pdf"
   authored-by:
     - *NIST
+  ficam-services:
+    - Access Management
 - &SP800207
   type: Guidance
   shortName: "SP 800-207"
@@ -2086,6 +2098,9 @@
   externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf"
   authored-by:
     - *NIST
+  ficam-services:
+    - Identity Management
+    - Credential Management
 - &SP800210
   type: Guidance
   shortName: "SP 800-210"
@@ -2268,6 +2283,9 @@
   published: 2021-08-25
   authored-by:
     - *NIST
+  ficam-services:
+    - Identity Management
+    - Credential Management
 - &TRUMANMEMO
   type: Law
   shortName: "Truman  Memorandum"
@@ -2347,6 +2365,8 @@
   externalURL: "https://www.nccoe.nist.gov/projects/use-cases/privileged-account-management"
   authored-by:
     - *NIST
+  ficam-services:
+    - Access Management - Privileged Access Management
 - &NISTIR7966
   type: Guidance
   shortName: "NISTIR 7966"
