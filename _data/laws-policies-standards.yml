@@ -2085,7 +2085,6 @@
   externalURL: "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-731"
   authorized-by:
     - *EO13467
-    - *EO13488
   ficam-services:
     - Identity Management
     - Credential Management
