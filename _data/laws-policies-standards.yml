@@ -53,24 +53,6 @@
   externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
   authored-by:
     - *CONGRESS
-- &EO12968
-  type: Law
-  shortName: "E.O. 12968"
-  longName: "Executive Order 12968: Access to Classified Information"
-  description: >-
-    This order established a uniform Federal personnel security program for
-    employees who will be considered for initial or continued access to classified
-    information. The PIV eligibility requirements have been adapted from the work performed
-    to support this executive order.
-  published: 1995-08-07
-  externalURL: "https://www.federalregister.gov/d/95-19654"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-    - Governance
 - &EO13467
   type: Law
   shortName: "E.O. 13467"
@@ -82,8 +64,6 @@
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
   authored-by:
     - *WH
-  amends:
-    - *EO12968
   ficam-services:
     - Identity Management
     - Credential Management
