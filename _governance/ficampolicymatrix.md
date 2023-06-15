@@ -50,7 +50,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 {% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" %}
 
-| Document | Document Name | Date Published |
+| Document | Description | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_laws %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
@@ -66,7 +66,7 @@ Click on the name of a policy to see more details about it, and for a link to th
 
 {% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" %}
 
-| Document | Document Name | Date Published |
+| Document | Description | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_policies %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
@@ -80,8 +80,8 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" %}
 
-| Document | Document Name | Date Published |
+| Document | Description | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_guidance %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published | date_to_string }} |
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
 {%-  endfor %}
