@@ -462,7 +462,7 @@
   authorized-by:
     - *EO13467
   authored-by:
-    - *GSA
+    - *OPM
   ficam-services:
     - Identity Management - Identity Proofing
     - Credential Management - Generation & Issuance
@@ -596,6 +596,8 @@
     actions during the onboarding of employmees in covered positions.
   published: 2008-04-15
   externalURL: "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-731"
+  authored-by:
+    - *OPM
   authorized-by:
     - *EO13467
   ficam-services:
