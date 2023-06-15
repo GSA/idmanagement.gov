@@ -345,7 +345,124 @@
   externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
   subgroup-of:
     - *CISOCOUNCIL
+- &PACSMODWG
+  type: Authority
+  shortName: "PACSmod WG"
+  longName: "PACS Modernization Working Group"
+  description: >-
+    The Physical Access Control System Modernization Working Group (PACSMod WG) is chartered 
+    under the direction of the Co-Chairs of the Federal Chief Information Security Officer Council 
+    (FCIOC), Identity, Credentialing and Access Management Subcommittee (ICAMSC), and the Program 
+    Director of the Department of Homeland Security (DHS), Interagency Security Committee (ISC). 
+    The purpose of the PACSMod WG is to facilitate the implementation and use of technology and 
+    processes related to modernizing enterprise PACS within the Federal Government (USG), thereby 
+    increasing security, coordination, and compliance with national-level policies and standards.
+  subgroup-of:
+    - *ICAMSC
+- &FPKIPA
+  type: Authority
+  shortName: "FPKI PA"
+  longName: "Federal Public Key Infrastructure Policy Authority"
+  description: "In 2002, the Federal Public Key Infrastructure (FPKI) Policy Authority (PA) was created by the Federal Chief Information Officers (CIO) Council to serve as the Federal Public Key Infrastructure governance body."
+  externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
+  subgroup-of:
+    - *ICAMSC
+- &FPKIMA
+  type: Authority
+  shortName: "FPKIMA"
+  longName: "Federal PKI Management Authority"
+  description: "The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service."
+  externalURL: "https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority"
+  subgroup-of:
+    - *FPKIPA
+- &CPWG
+  type: Authority
+  shortName: "CPWG"
+  longName: "Certificate Policy Working Group"
+  description: >-
+    Reviews cross-certification applications, Certificate Policies, Certificate Policy change 
+    proposals, auditor reports of entities applying for or seeking to maintain cross-certification 
+    with the FPKI, and provides recommendations to the PA for acceptance or rejection of those items. 
+    The CPWG also reviews FPKI administrative and guidance documents and recommends changes to those 
+    documents as needed.
+  subgroup-of:
+    - *FPKIPA
+- &DHS
+  type: Authority
+  shortName: "DHS"
+  longName: "Department of Homeland Security"
+  description: >-
+    The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
+    we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
+    and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
+    Our duties are wide-ranging, and our goal is clear - keeping America safe.
+  externalURL: "https://www.dhs.gov/"
+  authorized-by:
+    - *HOMELANDSECURITYACT
+- &CISA
+  type: Authority
+  shortName: "CISA"
+  longName: "Cybersecurity & Infrastruture Security Agency"
+  description: >-
+    CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
+    infrastructure security and resilience.
+  externalURL: "https://www.cisa.gov/"
+  subgroup-of:
+    - *DHS
+  authorized-by:
+    - *CISAACT
+- &ISC
+  type: Authority
+  shortName: ISC
+  longName: Interagency Security Committee
+  description: >-
+    The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the 
+    nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
+  externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
+  authorized-by:
+    - *EO13286
+- &USDS
+  type: Authority
+  shortName: "USDS"
+  longName: "United States Digital Service"
+  description: >-
+    To deliver better government services to the American people through technology and design.
+  subgroup-of:
+    - *WH
+- &DOD
+  type: Authority
+  shortName: "DoD"
+  longName: "Department of Defense"
+  description: >-
+    The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
+- &FEDRAMP
+  type: Authority
+  shortName: "FedRAMP"
+  longName: "Federal Risk and Automation Management Program"
+  description: >-
+    The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to 
+    provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
+    the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an 
+    emphasis on security and protection of federal information.
+  subgroup-of:
+    - *GSA
+    - *DHS
+    - *DOD
+- &NSA
+  type: Authority
+  shortName: "NSA"
+  longName: "National Security Agency"
+  description: >-
+    We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
+    national defense and secure national security systems.
+- &CMU
+  type: Authority
+  shortName: "CMU"
+  longName: "Carnegie Mellon University"
+  externalURL: "https://www.cmu.edu/"
+#
 # POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
+#
 - &M0524
   type: "Policy"
   shortName: "M-05-24"
@@ -431,14 +548,6 @@
     and tactical approaches. These playbooks cover a variety of FICAM relevant subjects.
   externalURL: "https://playbooks.idmanagement.gov/playbooks/"
   authored-by:
-    - *ICAMSC
-- &FPKIPA
-  type: Authority
-  shortName: "FPKI PA"
-  longName: "Federal Public Key Infrastructure Policy Authority"
-  description: "In 2002, the Federal Public Key Infrastructure (FPKI) Policy Authority (PA) was created by the Federal Chief Information Officers (CIO) Council to serve as the Federal Public Key Infrastructure governance body."
-  externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
-  subgroup-of:
     - *ICAMSC
 - &FBCACP
   type: Policy
@@ -584,18 +693,6 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
   authored-by:
     - *OMB
-- &CPWG
-  type: Authority
-  shortName: "CPWG"
-  longName: "Certificate Policy Working Group"
-  description: >-
-    Reviews cross-certification applications, Certificate Policies, Certificate Policy change 
-    proposals, auditor reports of entities applying for or seeking to maintain cross-certification 
-    with the FPKI, and provides recommendations to the PA for acceptance or rejection of those items. 
-    The CPWG also reviews FPKI administrative and guidance documents and recommends changes to those 
-    documents as needed.
-  subgroup-of:
-    - *FPKIPA
 - &FIPSLAB
   type: Program
   shortName: "FICAM testing program"
@@ -625,14 +722,6 @@
     - *FIPS201
   ficam-services:
     - Governance
-- &FPKIMA
-  type: Authority
-  shortName: "FPKIMA"
-  longName: "Federal PKI Management Authority"
-  description: "The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service."
-  externalURL: "https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority"
-  subgroup-of:
-    - *FPKIPA
 - &IAMROADMAP
   type: Guidance
   shortName: "NIST IAM Roadmap"
@@ -1120,30 +1209,6 @@
   externalURL: "https://www.nist.gov/privacy-framework/privacy-framework"
   authored-by:
     - *NIST
-- &DHS
-  type: Authority
-  shortName: "DHS"
-  longName: "Department of Homeland Security"
-  description: >-
-    The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
-    we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
-    and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
-    Our duties are wide-ranging, and our goal is clear - keeping America safe.
-  externalURL: "https://www.dhs.gov/"
-  authorized-by:
-    - *HOMELANDSECURITYACT
-- &CISA
-  type: Authority
-  shortName: "CISA"
-  longName: "Cybersecurity & Infrastruture Security Agency"
-  description: >-
-    CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
-    infrastructure security and resilience.
-  externalURL: "https://www.cisa.gov/"
-  subgroup-of:
-    - *DHS
-  authorized-by:
-    - *CISAACT
 - &CDM
   type: Program
   shortName: "CDM"
@@ -1265,60 +1330,6 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1513
-- &ISC
-  type: Authority
-  shortName: ISC
-  longName: Interagency Security Committee
-  description: >-
-    The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the 
-    nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
-  externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
-  authorized-by:
-    - *EO13286
-- &PACSBESTPRACTICES
-  type: Guidance
-  shortName: "Best Practices for Planning and Managing Physical Security Resources"
-  longName: "Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide"
-  description: >-
-    The Best Practices for Planning and Managing Physical Security Resources is a guide intended 
-    to provide an introduction and understanding of the most efficient processes and procedures to 
-    effectively allocate resources to implement physical security programs within Federal 
-    departments and agencies.
-  published: 2015-12-01
-  externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf"
-  authored-by:
-    - *ISC
-  authorized-by:
-    - *GAO13222
-    - *GAO15444
-- &PACSRFP
-  type: Guidance
-  shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
-  longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
-  description: >-
-    This document provides language for E-PACS related procurements to ensure compliance with applicable policies
-  published: 2015-02-24
-  externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
-  authored-by:
-    - *FIPSLAB
-  authorized-by:
-    - *M1917
-- &FACILITYACCESSCONTROL
-  type: Guidance
-  shortName: "FACILITY ACCESS CONTROL"
-  longName: "FACILITY ACCESS CONTROL: An Interagency Security Committee Best Practice"
-  description: >-
-    This document provides guidance for federal Executive Branch departments and agencies regarding 
-    access control requirements and options for individuals entering federally occupied space
-  published: 2020-12-17
-  externalURL: "https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf"
-  authored-by:
-    - *ISC
-  authorized-by:
-    - *GAO19138
-  ficam-services:
-    - Access Management - Authentication
-    - Access Management - Authorization
 - &PACSORDERGUIDE
   type: Guidance
   shortName: "PACS Ordering Guide"
@@ -1360,20 +1371,6 @@
     - *EO13286
   ficam-services:
     - Access Management
-- &PACSMODWG
-  type: Authority
-  shortName: "PACSmod WG"
-  longName: "PACS Modernization Working Group"
-  description: >-
-    The Physical Access Control System Modernization Working Group (PACSMod WG) is chartered 
-    under the direction of the Co-Chairs of the Federal Chief Information Security Officer Council 
-    (FCIOC), Identity, Credentialing and Access Management Subcommittee (ICAMSC), and the Program 
-    Director of the Department of Homeland Security (DHS), Interagency Security Committee (ISC). 
-    The purpose of the PACSMod WG is to facilitate the implementation and use of technology and 
-    processes related to modernizing enterprise PACS within the Federal Government (USG), thereby 
-    increasing security, coordination, and compliance with national-level policies and standards.
-  subgroup-of:
-    - *ICAMSC
 - &80053PACSOVERLAY
   type: Guidance
   shortName: "ePACS 800-53 Overlay"
@@ -1439,33 +1436,6 @@
   ficam-services:
     - Identity Management
     - Credential Management
-- &USDS
-  type: Authority
-  shortName: "USDS"
-  longName: "United States Digital Service"
-  description: >-
-    To deliver better government services to the American people through technology and design.
-  subgroup-of:
-    - *WH
-- &DOD
-  type: Authority
-  shortName: "DoD"
-  longName: "Department of Defense"
-  description: >-
-    The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
-- &FEDRAMP
-  type: Authority
-  shortName: "FedRAMP"
-  longName: "Federal Risk and Automation Management Program"
-  description: >-
-    The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to 
-    provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
-    the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an 
-    emphasis on security and protection of federal information.
-  subgroup-of:
-    - *GSA
-    - *DHS
-    - *DOD
 - &CLOUDSECREFARCH
   type: Guidance
   shortName: "Cloud Security Architecture"
@@ -1583,13 +1553,6 @@
   ficam-services:
     - Identity Management
     - Credential Management
-- &NSA
-  type: Authority
-  shortName: "NSA"
-  longName: "National Security Agency"
-  description: >-
-    We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
-    national defense and secure national security systems.
 - &CLOUDVULN
   type: Guidance
   shortName: "Mitigating Cloud Vulnerabilities"
@@ -1637,11 +1600,6 @@
     - Credential Management - Maintenance
     - Access Management - Privileged Access Management
     - Access Management - Authentication
-- &CMU
-  type: Authority
-  shortName: "CMU"
-  longName: "Carnegie Mellon University"
-  externalURL: "https://www.cmu.edu/"
 - &GUIDEINSIDERTHREAT
   type: Guidance
   shortName: "Common Sense Guide to Mitigating Insider Threats, Sixth Edition"
@@ -1925,3 +1883,47 @@
     - *GAO
   ficam-services:
     - Access Management
+- &PACSBESTPRACTICES
+  type: Guidance
+  shortName: "Best Practices for Planning and Managing Physical Security Resources"
+  longName: "Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide"
+  description: >-
+    The Best Practices for Planning and Managing Physical Security Resources is a guide intended 
+    to provide an introduction and understanding of the most efficient processes and procedures to 
+    effectively allocate resources to implement physical security programs within Federal 
+    departments and agencies.
+  published: 2015-12-01
+  externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf"
+  authored-by:
+    - *ISC
+  authorized-by:
+    - *GAO13222
+    - *GAO15444
+- &PACSRFP
+  type: Guidance
+  shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
+  longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
+  description: >-
+    This document provides language for E-PACS related procurements to ensure compliance with applicable policies
+  published: 2015-02-24
+  externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
+  authored-by:
+    - *FIPSLAB
+  authorized-by:
+    - *M1917
+- &FACILITYACCESSCONTROL
+  type: Guidance
+  shortName: "FACILITY ACCESS CONTROL"
+  longName: "FACILITY ACCESS CONTROL: An Interagency Security Committee Best Practice"
+  description: >-
+    This document provides guidance for federal Executive Branch departments and agencies regarding 
+    access control requirements and options for individuals entering federally occupied space
+  published: 2020-12-17
+  externalURL: "https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf"
+  authored-by:
+    - *ISC
+  authorized-by:
+    - *GAO19138
+  ficam-services:
+    - Access Management - Authentication
+    - Access Management - Authorization
