@@ -1509,18 +1509,6 @@
   ficam-services:
     - Identity Management
     - Credential Management
-- &SP800210
-  type: Guidance
-  shortName: "SP 800-210"
-  longName: "NIST Special Publication 800-210: General Access Control Guidance for Cloud Systems"
-  description: >-
-    This document presents cloud access control characteristics and a set of general access control 
-    guidance for cloud service models: IaaS (Infrastructure as a Service), PaaS (Platform as a 
-    Service), and SaaS (Software as a Service).
-  published: 2020-07-31
-  externalURL: "https://doi.org/10.6028/NIST.SP.800-210"
-  authored-by:
-    - *NIST
 - &USDS
   type: Authority
   shortName: "USDS"
