@@ -256,60 +256,7 @@
   externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
   ficam-services:
     - Governance
-- &GAO
-  type: Authority
-  shortName: GAO
-  longName: United States Government Accountability Office
-  description: >-
-    GAO helps the Congress oversee federal programs and operations to ensure accountability to the American 
-    people. GAO's analysts, auditors, lawyers, economists, information technology specialists, investigators, 
-    and other multidisciplinary professionals seek to enhance the economy, efficiency, effectiveness, and 
-    credibility of the federal government both in fact and in the eyes of the American people. GAO accomplishes 
-    its mission through a variety of activities, including financial audits, program reviews, investigations, 
-    legal support, and policy analyses.
-  externalURL: "https://www.gao.gov/"
-- &GAO13222
-  type: Guidance
-  shortName: GAO-13-222
-  longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
-  description: >-
-    This report examines (1) the sources that inform agencies' physical security programs and (2) the 
-    management practices agencies use to oversee physical security and allocate resources.
-  externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
-  published: 2013-01-01
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
-- &GAO15444
-  type: Guidance
-  shortName: GAO-15-444
-  longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
-  description: >-
-    This report examines (1) the types of physical security enhancements selected civilian federal entities have
-    made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
-    enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
-    effectiveness of enhancements and using performance measures.
-  externalURL: "https://www.gao.gov/assets/gao-15-444.pdf"
-  published: 2015-03-01
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
-- &GAO19138
-  type: Guidance
-  shortName: "GAO-19-138"
-  longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
-  description: >-
-    This report discusses (1) steps OMB and GSA have taken to fulfill their government-wide responsibilities 
-    related to Physical Access Control Systems and (2) challenges selected federal agencies face in meeting 
-    current requirements.
-  published: 2018-12-20
-  externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
+# Secondary Authorities - established by a Law or Executive Order
 - &NIST
   type: Authority
   shortName: "NIST"
@@ -344,7 +291,18 @@
     insightful intelligence possible
   authorized-by:
     - *INTELREFORM2004
-
+- &GAO
+  type: Authority
+  shortName: GAO
+  longName: United States Government Accountability Office
+  description: >-
+    GAO helps the Congress oversee federal programs and operations to ensure accountability to the American 
+    people. GAO's analysts, auditors, lawyers, economists, information technology specialists, investigators, 
+    and other multidisciplinary professionals seek to enhance the economy, efficiency, effectiveness, and 
+    credibility of the federal government both in fact and in the eyes of the American people. GAO accomplishes 
+    its mission through a variety of activities, including financial audits, program reviews, investigations, 
+    legal support, and policy analyses.
+  externalURL: "https://www.gao.gov/"
 - &FIPS201
   type: Guidance
   shortName: "FIPS 201"
@@ -375,30 +333,7 @@
     - *OMB
   ficam-services:
     - "Identity Management - Identity Proofing"
-- &CIOCOUNCIL
-  type: Authority
-  shortName: "Federal CIO Council"
-  longName: "Federal CIO Council"
-  description: "The Federal CIO Council is the principal interagency forum to improve agency practices related to the design, acquisition, development, modernization, sustainment, use, sharing, and performance of Federal Government information technology (IT)."
-  externalURL: "https://www.cio.gov/"
-  authorized-by:
-    - *FISMA2014
-- &CISOCOUNCIL
-  type: Authority
-  shortName: "Federal CISO Council"
-  longName: "Federal CISO Council"
-  description: "The Federal Chief Information Security Officer (CISO) Council is the primary body for inter-agency CISO collaboration and communication. The Council is led by the Federal CISO, who works in the White House Office of Management and Budget (OMB), and a co-chair who's a member of the Council, elected to serve in that role."
-  externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
-  subgroup-of:
-    - *CIOCOUNCIL
-- &ICAMSC
-  type: Authority
-  shortName: "ICAMSC"
-  longName: "Identity, Credential, and Access Management Subcommittee"
-  description: "The Identity, Credential, and Access Management Subcommittee (ICAMSC) is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management."
-  externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
-  subgroup-of:
-    - *CISOCOUNCIL
+
 - &FICAMARCH
   type: Guidance
   shortName: "FICAM Architecture"
@@ -1787,18 +1722,6 @@
     - Credential Management
     - Access Management
     - Governance
-- &ICAMACQUISITION
-  type: Guidance
-  shortName: "ICAM Acquisition Guide"
-  longName: "Identity, Credential, and Access Management (ICAM) Acquisition Guidance"
-  description: >-
-    The goal of this document is to enable any organization, including the SLTT Community, to spend 
-    its resources wisely on thoughtful and well-specified ICAM procurement activities that result in 
-    an ICAM enabled system that includes multifactor authentication.
-  published: 2019-02-01
-  externalURL: "https://www.dhs.gov/sites/default/files/publications/icam_acquisition_guidance_final_version_-_092019.pdf"
-  authored-by:
-    - *DHS
 - &DODICAMSTRATEGY
   type: Policy
   shortName: "DoD ICAM Strategy"
@@ -1816,6 +1739,19 @@
     - Identity Management
     - Credential Management
     - Access Management
+# GUIDANCE COMES LAST
+- &ICAMACQUISITION
+  type: Guidance
+  shortName: "ICAM Acquisition Guide"
+  longName: "Identity, Credential, and Access Management (ICAM) Acquisition Guidance"
+  description: >-
+    The goal of this document is to enable any organization, including the SLTT Community, to spend 
+    its resources wisely on thoughtful and well-specified ICAM procurement activities that result in 
+    an ICAM enabled system that includes multifactor authentication.
+  published: 2019-02-01
+  externalURL: "https://www.dhs.gov/sites/default/files/publications/icam_acquisition_guidance_final_version_-_092019.pdf"
+  authored-by:
+    - *DHS
 - &DODICAMREFDESIGN
   type: Guidance
   shortName: "DoD ICAM Reference Design"
@@ -1838,6 +1774,52 @@
     - Access Management
     - Federation
     - Governance
+- &SP800213
+  type: Guidance
+  shortName: "NIST SP 800-213"
+  longName: "NIST Special Publication 800-213: IoT Device Cybersecurity Guidance for the Federal Government: Establishing IoT Device Cybersecurity Requirements"
+  description: >-
+    This publication contains background and recommendations to help the federal agencies 
+    consider how an IoT device they plan to acquire can integrate into a federal information 
+    system. It provides guidance on considering system security from the device perspective.
+  published: 2021-11-01
+  externalURL: "https://doi.org/10.6028/NIST.SP.800-213"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *IOTCYBERACT
+- &NISTIR8344
+  type: Guidance
+  shortName: "NISTIR 8344"
+  longName: "Draft NIST Interagency Report (NISTIR) 8344: Ontology for Authentication"
+  description: >-
+    This document includes a survey of authentication mechanisms, establishing the need and 
+    basis for authentication metrology (quantification), as well as key factors in 
+    determining strength and management requirements when assessing an authentication 
+    system in a given environment.
+  published: 2021-02-08
+  externalURL: "https://doi.org/10.6028/NIST.IR.8344-draft"
+  authored-by:
+    - *NIST
+  ficam-services:
+    - Access Management - Authentication
+- &SUITABILITYFAQ
+  type: Guidance
+  shortName: "HSPD-12/PIV Suspension and Revocation FAQ"
+  longName: "Frequently Asked Questions (FAQs) for Credentialing Standards Procedures for Issuing Personnel Identity Verification Cards under HSPD-12 and New Requirements for Suspension or Revocation of Eligibility for PIV Credentials"
+  description: >-
+    Attached are answers to some anticipated Frequently Asked Questions to assist you in 
+    successfully implementing the Credentialing Procedures guidance. In particular, we call 
+    your attention FAQ No. 13, which reminds agencies of their obligation to report HSPD-12 
+    fields into CVS.
+  published: 2021-01-01
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/faqs-january-2021.pdf"
+  authored-by:
+    - *OPM
+  authorized-by:
+    - *CREDSTANDARDS
+  ficam-services:
+    - Identity Management - Deactivation
 - &SELECTINGMFA
   type: Guidance
   shortName: "Selecting Secure MFA"
@@ -1859,49 +1841,45 @@
     - *SP80063
   ficam-services:
     - Access Management - Authentication
-- &SP800213
-  type: Standard
-  shortName: "NIST SP 800-213"
-  longName: "NIST Special Publication 800-213: IoT Device Cybersecurity Guidance for the Federal Government: Establishing IoT Device Cybersecurity Requirements"
-  description: >-
-    This publication contains background and recommendations to help the federal agencies 
-    consider how an IoT device they plan to acquire can integrate into a federal information 
-    system. It provides guidance on considering system security from the device perspective.
-  published: 2021-11-01
-  externalURL: "https://doi.org/10.6028/NIST.SP.800-213"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *IOTCYBERACT
-- &SUITABILITYFAQ
+- &GAO13222
   type: Guidance
-  shortName: "HSPD-12/PIV Suspension and Revocation FAQ"
-  longName: "Frequently Asked Questions (FAQs) for Credentialing Standards Procedures for Issuing Personnel Identity Verification Cards under HSPD-12 and New Requirements for Suspension or Revocation of Eligibility for PIV Credentials"
+  shortName: GAO-13-222
+  longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
   description: >-
-    Attached are answers to some anticipated Frequently Asked Questions to assist you in 
-    successfully implementing the Credentialing Procedures guidance. In particular, we call 
-    your attention FAQ No. 13, which reminds agencies of their obligation to report HSPD-12 
-    fields into CVS.
-  published: 2021-01-01
-  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/faqs-january-2021.pdf"
+    This report examines (1) the sources that inform agencies' physical security programs and (2) the 
+    management practices agencies use to oversee physical security and allocate resources.
+  externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
+  published: 2013-01-01
   authored-by:
-    - *OPM
-  authorized-by:
-    - *CREDSTANDARDS
+    - *GAO
   ficam-services:
-    - Identity Management - Deactivation
-- &NISTIR8344
+    - Access Management
+- &GAO15444
   type: Guidance
-  shortName: "NISTIR 8344"
-  longName: "Draft NIST Interagency Report (NISTIR) 8344: Ontology for Authentication"
+  shortName: GAO-15-444
+  longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
   description: >-
-    This document includes a survey of authentication mechanisms, establishing the need and 
-    basis for authentication metrology (quantification), as well as key factors in 
-    determining strength and management requirements when assessing an authentication 
-    system in a given environment.
-  published: 2021-02-08
-  externalURL: "https://doi.org/10.6028/NIST.IR.8344-draft"
+    This report examines (1) the types of physical security enhancements selected civilian federal entities have
+    made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
+    enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
+    effectiveness of enhancements and using performance measures.
+  externalURL: "https://www.gao.gov/assets/gao-15-444.pdf"
+  published: 2015-03-01
   authored-by:
-    - *NIST
+    - *GAO
   ficam-services:
-    - Access Management - Authentication
+    - Access Management
+- &GAO19138
+  type: Guidance
+  shortName: "GAO-19-138"
+  longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
+  description: >-
+    This report discusses (1) steps OMB and GSA have taken to fulfill their government-wide responsibilities 
+    related to Physical Access Control Systems and (2) challenges selected federal agencies face in meeting 
+    current requirements.
+  published: 2018-12-20
+  externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
+  authored-by:
+    - *GAO
+  ficam-services:
+    - Access Management
