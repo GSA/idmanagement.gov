@@ -1636,22 +1636,6 @@
     - *NIST
   ficam-services:
     - Access Management - Authentication
-- &NISTIR8360
-  type: Guidance
-  shortName: "NISTIR 8360"
-  longName: "NIST Interagency Report 8360: Machine Learning for Access Control Policy Verification"
-  description: >-
-    [T]his internal report (IR) proposes an efficient and straightforward method for access control 
-    policy verification by applying a classification algorithm of machine learning, which does not 
-    require comprehensive test cases, oracle, or system translation but rather checks the logic of 
-    policy rules directly, making it more efficient and feasible compared to traditional methods.
-  published: 2021-09-16
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8360.pdf"
-  authored-by:
-    - *NIST
-  ficam-services:
-    - Governance - Analytics
-    - Governance - Mitigation
 - &SP180013
   type: Guidance
   shortName: "NIST SP 1800-13"
@@ -1669,16 +1653,6 @@
   ficam-services:
     - Identity Management
     - Credential Management
-- &TRUMANMEMO
-  type: Law
-  shortName: "Truman  Memorandum"
-  longName: "Memorandum for the Secretary of State and the Secretary of Defense, SUBJECT: Communications Intelligence Activities"
-  description: >-
-    [REDACTED]
-  published: 1952-10-24
-  externalURL: "https://media.defense.gov/2021/Jul/15/2002763653/-1/-1/0/TRUMAN-MEMO.PDF"
-  authored-by:
-    - *WH
 - &NSA
   type: Authority
   shortName: "NSA"
@@ -1686,8 +1660,6 @@
   description: >-
     We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
     national defense and secure national security systems.
-  authorized-by:
-    - *TRUMANMEMO
 - &CLOUDVULN
   type: Guidance
   shortName: "Mitigating Cloud Vulnerabilities"
