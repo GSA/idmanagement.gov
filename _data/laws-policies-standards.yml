@@ -1217,36 +1217,17 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1513
-- &EO12977
-  type: Law
-  shortName: E.O. 12977
-  longName: "Executive Order 12977: Interagency Security Committee"
-  description: >-
-    [T]o enhance the quality and effectiveness of security in and protection of buildings and facilities
-    in the United States occupied by Federal employees for nonmilitary activities
-    ('Federal facilities'), and to provide a permanent body to address continuing
-    government-wide security for Federal facilities.
-  published: 1995-10-19
-  externalURL: "https://www.govinfo.gov/content/pkg/FR-1995-10-24/pdf/95-26497.pdf"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Access Management
-    - Governance
 - &EO13286
   type: Law
   shortName: E.O. 13286
   longName: "Executive Order 13286: Amendment of Executive Orders, and Other Actions, in Connection With the Transfer of Certain Functions to the Secretary of Homeland Security"
   description: >-
-    [T]o reflect the transfer of certain functions to, and other responsibilities vested in, the Secretary of 
-    Homeland Security, the transfer of certain agencies and agency components to the Department of Homeland 
-    Security, and the delegation of appropriate responsibilities to the Secretary of Homeland Security.
+    Amends an earlier Executive Order (E.O. 12977). Defines a central federal function to define security for 
+    physical access to federal facilities.
   externalURL: "https://www.federalregister.gov/documents/2003/03/05/03-5343/amendment-of-executive-orders-and-other-actions-in-connection-with-the-transfer-of-certain-functions"
   published: 2003-05-03
   authored-by:
     - *WH
-  amends:
-    - *EO12977
 - &GAO13222
   type: Guidance
   shortName: GAO-13-222
@@ -1284,7 +1265,7 @@
     nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
   externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
   authorized-by:
-    - *EO12977
+    - *EO13286
 - &PACSBESTPRACTICES
   type: Guidance
   shortName: "Best Practices for Planning and Managing Physical Security Resources"
@@ -1384,7 +1365,7 @@
   authored-by:
     - *ISC
   authorized-by:
-    - *EO12977
+    - *EO13286
   ficam-services:
     - Access Management
 - &PACSMODWG
