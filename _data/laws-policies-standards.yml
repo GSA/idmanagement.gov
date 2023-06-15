@@ -1475,36 +1475,6 @@
     - *WH
   ficam-services:
     - Governance
-- &2017MODERNAIZATIONREPORT
-  type: Guidance
-  shortName: "Final IT Modernization Report"
-  longName: "Report to the President on Federal IT Modernization"
-  description: >-
-    [T]his report outlines the current and envisioned state of Federal IT, and it provides specific 
-    recommendations to jumpstart a new wave of modernization efforts.
-  published: 2017-12-13
-  externalURL: "https://www.cio.gov/assets/resources/Report-to-the-President-on-IT-Modernization-Final.pdf"
-  authored-by:
-    - *CIOCOUNCIL
-  authorized-by:
-    - *EO13800
-- &FEDCLOUDSMART
-  type: Policy
-  shortName: "2019 Federal Cloud Computing Strategy"
-  longName: "Federal Cloud Computing Stratey : Cloud Smart"
-  description: >-
-    [T]he Administration has developed a new strategy to accelerate agency adoption of cloud-based 
-    solutions: Cloud Smart.
-  published: 2019-06-24
-  externalURL: "https://cloud.cio.gov/strategy/"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *EO13800
-  ficam-services:
-    - Federation
-    - Governance
-    - Access Management
 - &M2209
   type: Policy
   shortName: "M-22-09"
