@@ -1494,38 +1494,14 @@
     - Access Management
     - Credential Management
     - Governance
-- &SP800145
-  type: Guidance
-  shortName: "SP 800-145"
-  longName: "NIST Special Publication 800-145: The NIST Definition of Cloud Computing"
-  description: >-
-    Cloud computing is an evolving paradigm. The NIST definition characterizes important aspects of cloud 
-    computing and is intended to serve as a means for broad comparisons of cloud services and deployment 
-    strategies, and to provide a baseline for discussion from what is cloud computing to how to best use cloud 
-    computing.
-  published: 2011-09-28
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf"
-  authored-by:
-    - *NIST
-- &SP800204B
-  type: Guidance
-  shortName: "SP 800-204B"
-  longName: "NIST Special Publication 800-204B: Attribute-based Access Control for Microservices-based Applications using a Service Mesh"
-  description: >-
-    This guidance focuses on building an authentication and authorization framework within the 
-    service mesh used for securing microservices-based applications.
-  published: 2021-08-06
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204B.pdf"
-  authored-by:
-    - *NIST
-  ficam-services:
-    - Access Management
 - &SP800207
   type: Guidance
   shortName: "SP 800-207"
   longName: "NIST Special Publication 800-207: Zero Trust Architecture"
   description: >-
-    This document is intended to describe zero trust for enterprise security architects.
+    This document is intended to describe zero trust for enterprise security architects. Zero trust
+    architecture depends on well strong authentication of all entities within the the environment, and
+    well defined authorization rules.
   published: 2020-08-11
   externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf"
   authored-by:
