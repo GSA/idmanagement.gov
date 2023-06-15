@@ -725,7 +725,7 @@
     - Identity Management
 - &EO12968
   type: Law
-  shortName: "EO 12968"
+  shortName: "E.O. 12968"
   longName: "Executive Order 12968: Access to Classified Information"
   description: >-
     This order establishes a uniform Federal personnel security program for
@@ -742,7 +742,7 @@
     - Governance
 - &EO13467
   type: Law
-  shortName: "EO 13467"
+  shortName: "E.O. 13467"
   longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
   description: >-
     [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
