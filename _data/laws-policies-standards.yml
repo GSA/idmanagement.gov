@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/GSA/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
 # CORE AUTHORITIES - White House and Congress - these are authorized by the constitution
 - &WH
   type: Authority
@@ -679,19 +679,6 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
   authored-by:
     - *OMB
-- &APL
-  type: Guidance
-  shortName: "FICAM APL"
-  longName: "FICAM Approved Products List"
-  description: >-
-    The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
-  externalURL: "https://www.idmanagement.gov/buy/#products"
-  authored-by:
-    - *FIPSLAB
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Governance
 - &IAMROADMAP
   type: Guidance
   shortName: "NIST IAM Roadmap"
@@ -1883,6 +1870,19 @@
   ficam-services:
     - Access Management - Authentication
     - Access Management - Authorization
+- &APL
+  type: Guidance
+  shortName: "FICAM APL"
+  longName: "FICAM Approved Products List"
+  description: >-
+    The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
+  externalURL: "https://www.idmanagement.gov/buy/#products"
+  authored-by:
+    - *FIPSLAB
+  authorized-by:
+    - *FIPS201
+  ficam-services:
+    - Governance
 #
 # PROGRAMS COME LAST
 #
