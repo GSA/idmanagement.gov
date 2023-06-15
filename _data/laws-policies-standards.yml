@@ -1880,7 +1880,7 @@
     The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
   externalURL: "https://www.idmanagement.gov/buy/#products"
   authored-by:
-    - *FIPSLAB
+    - *GSA
   authorized-by:
     - *FIPS201
   ficam-services:
