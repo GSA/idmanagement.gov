@@ -784,8 +784,8 @@
     - *EO14028
 - &ZEROTRUSTMATURITY
   type: Guidance
-  shortName: "Zero Trust Security Model"
-  longName: "Zero Trust Security Model"
+  shortName: "Zero Trust Maturity Model"
+  longName: "Zero Trust Maturity Model"
   description: >-
     CISA's Zero Trust Maturity Model (ZTMM) provides an approach to achieve continued modernization 
     efforts related to zero trust within a rapidly evolving environment and technology landscape. Section
