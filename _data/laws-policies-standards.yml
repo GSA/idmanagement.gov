@@ -1523,21 +1523,12 @@
   longName: "Department of Defense"
   description: >-
     The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
-- &FEDRAMPMEMO
-  type: Policy
-  shortName: "FedRAMP Policy Memo"
-  longName: "MEMORANDUM FOR CHIEF INFORMATION OFFICERS: Security Authorization of Information Systems in Cloud Computing Environments"
-  description: >-
-    FedRAMP will provide a cost-effective, risk-based approach for the adoption and use of cloud services
-  published: 2011-12-08
-  authored-by:
-    - *OMB
 - &FEDRAMP
   type: Authority
   shortName: "FedRAMP"
   longName: "Federal Risk and Automation Management Program"
   description: >-
-    The Federal Risk and Authorization Management Program (FedRAMP®) was established in 2011 to 
+    The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to 
     provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
     the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an 
     emphasis on security and protection of federal information.
@@ -1545,8 +1536,6 @@
     - *GSA
     - *DHS
     - *DOD
-  authorized-by:
-    - *FEDRAMPMEMO
 - &CLOUDSECREFARCH
   type: Guidance
   shortName: "Cloud Security Architecture"
@@ -1554,7 +1543,8 @@
   description: >-
     [The] Cloud Security Technical Reference Architecture [illustrates] recommended approaches 
     to cloud migration and data protection for agency data collection and reporting that leverages 
-    Cloud Security Posture Management (CSPM).
+    Cloud Security Posture Management (CSPM). Provides specific guidance on implementation of ICAM 
+    controls for policy enforcement.
   published: 2022-06-01
   externalURL: "https://www.cisa.gov/sites/default/files/2023-05/Cloud%20Security%20Technical%20Reference%20Architecture%20v2.pdf"
   authored-by:
@@ -1569,23 +1559,14 @@
   longName: "Zero Trust Security Model"
   description: >-
     CISA's Zero Trust Maturity Model (ZTMM) provides an approach to achieve continued modernization 
-    efforts related to zero trust within a rapidly evolving environment and technology landscape
+    efforts related to zero trust within a rapidly evolving environment and technology landscape. Section
+    5.1, Identity, presents a maturity model for Identity Management in the context of Zero Trust.
   published: 2023-04-11
   externalURL: "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf"
   authored-by:
     - *CISA
   authorized-by:
     - *EO14028
-- &AGENCYITMODERNIZATION
-  type: Guidance
-  shortName: "Agency IT Modernization"
-  longName: "Agency IT Modernization: Educational Resources Building Blocks"
-  description: >-
-    A collection of resources to provide information about IT modernization through data center optimization
-    and cloud enablement.
-  externalURL: "https://community.max.gov/display/Egov/Agency+IT+Modernization%3A+Educational+Resources+Building+Blocks"
-  authored-by:
-    - *CIOCOUNCIL
 - &SSOPLAYBOOK
   type: Guidance
   shortName: "SSO Playbook"
