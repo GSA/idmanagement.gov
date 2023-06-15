@@ -102,7 +102,7 @@
   authorized-by:
     - *INTELREFORM2004
 - &HSPD12
-  type: "Law"
+  type: Law
   shortName: "HSPD-12"
   longName: "Homeland Security Presidential Directive 12"
   published: 2004-08-27
@@ -115,7 +115,7 @@
   ficam-services:
     - "Identity Management - Identity Proofing"
 - &FIPS201
-  type: "Guidance"
+  type: Guidance
   shortName: "FIPS 201"
   longName: "Personal Identity Verification (PIV) of Federal Employees and Contractors"
   published: 2022-01-01
@@ -185,7 +185,7 @@
   subgroup-of:
     - *CISOCOUNCIL
 - &FICAMARCH
-  type: "Guidance"
+  type: Guidance
   shortName: "FICAM Architecture"
   longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
   description: "This version of the FICAM Architecture encompasses the enterprise ICAM policies, technologies, and system approaches for government employees, contractors, and authorized partners."
@@ -200,7 +200,7 @@
     - Access Management - Authentication
     - Federation - Policy Alignment
 - &ICAMPMPLAYBOOK
-  type: "Guidance"
+  type: Guidance
   shortName: "ICAM PM Playbook"
   longName: "Identity, Credential, and Access Management Program Management Playbook"
   description: "The ICAM Program Management Playbook explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
@@ -821,7 +821,7 @@
     - Credential Management - Revocation
     - Federation - Policy Alignment
 - &PRIVACYACT1974
-  type: "Law"
+  type: Law
   shortName: "Privacy Act of 1974"
   longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a"
   description: >-
@@ -910,7 +910,7 @@
     - Federation
     - Governance
 - &SP800205
-  type: "Guidance"
+  type: Guidance
   shortName: "SP 800-205"
   longName: "NIST Special Publication 800-205: Attribute Considerations for Access Control Systems"
   description: >-
@@ -925,7 +925,7 @@
   ficam-services:
     - Access Management
 - &SP80053
-  type: "Guidance"
+  type: Guidance
   shortName: "SP 800-53"
   longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
   description: >-
@@ -941,7 +941,7 @@
   ficam-services:
     - Identity Management
 - &SP80053A
-  type: "Guidance"
+  type: Guidance
   shortName: "SP 800-53A"
   longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
   description: >-
@@ -955,7 +955,7 @@
   authorized-by:
     - *FISMA2014
 - &SP800162
-  type: "Guidance"
+  type: Guidance
   shortName: "SP 800-162"
   longName: "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations"
   description: >-
@@ -972,7 +972,7 @@
   ficam-services:
     - Access Management
 - &SP800122
-  type: "Guidance"
+  type: Guidance
   shortName: "SP 800-122"
   longName: "NIST Special Publication 800-122: Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)"
   description: >-
@@ -991,7 +991,7 @@
     - Identity Management
     - Credential Management
 - &NISTRMF
-  type: "Guidance"
+  type: Guidance
   shortName: "NIST RMF"
   longName: "NIST Risk Management Framework"
   description: >-
@@ -1007,7 +1007,7 @@
   authored-by:
     - *NIST
 - &SP80037
-  type: "Guidance"
+  type: Guidance
   shortName: SP 800-37
   longName: "NIST Special Publication 800-37 Revision 2: Risk Management Framework for Information Systems and Organizations"
   description: >-
