@@ -44,6 +44,8 @@ This diagram presents a visual overview of the FICAM Policy landscape.
 
 This table lists the laws that establish or authorize the entities and activities listed in later tables.
 
+Laws are sorted by date, from oldest to newest.
+
 Click on the name of a law or directive to see more details about it, and for a link to the law itself.
 
 {% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" %}
@@ -51,7 +53,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 | Document | Document Name | Date Published |
 | --- | --- | --- |
 {%- for document in sorted_laws %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.longName }} | {{document.published | date_to_string }} |
+| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
 {%- endfor %}
 
 ## Federal Policies
