@@ -13,17 +13,6 @@
 #
 # LAWS and Executive Orders (Authorized by WH and Congress)
 #
-- &INTELREFORM2004
-  type: Law
-  shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
-  longName: "INTELLIGENCE REFORM AND TERRORISM PREVENTION ACT OF 2004"
-  description: >-
-    Established the office of the Directory of National Intelligence (DNI). DNI has contributed
-    to guidance on background checks for Federal Employees as part of the Identity Proofing Process.
-  externalURL: "https://www.dni.gov/files/documents/IRTPA%202004.pdf"
-  published: 2004-12-17
-  authored-by:
-    - *CONGRESS
 - &HSPD12
   type: Law
   shortName: "HSPD-12"
@@ -154,7 +143,7 @@
   longName: "Executive Order 13681: Improving the Security of Consumer Financial Transactions"
   description: >-
     Proposes improved security for government payments and identity theft remediation, encouraging deployment
-    of better citizen identity technologies.
+    of better citizen authentication technologies for financial transactions.
   published: 2014-10-17
   externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
   authored-by:
@@ -162,34 +151,6 @@
   ficam-services:
     - Identity Management
     - Federation
-    - Governance
-- &HOMELANDSECURITYACT
-  type: Law
-  shortName: "Homeland Security Act of 2002"
-  longName: "Homeland Security Act of 2002"
-  description: >-
-    This act established the Department of Homeland Security, which provides significant input to the development
-    of FICAM standards.
-  published: 2002-11-25
-  externalURL: "https://www.dhs.gov/sites/default/files/publications/hr_5005_enr.pdf"
-  authored-by:
-    - *CONGRESS
-  ficam-services:
-    - Governance
-- &CISAACT
-  type: Law
-  shortName: "Cybersecurity and Infrastructure Security Agency Act"
-  longName: "Cybersecurity and Infrastructure Security Agency Act"
-  description: >-
-    This act authorized the creation of the Cybersecurity and Infrastructure Security Agency 
-    under the Department of Homeland Security.
-  published: 2018-11-16
-  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-115publ278/pdf/PLAW-115publ278.pdf"
-  authored-by:
-    - *CONGRESS
-  amends:
-    - *HOMELANDSECURITYACT
-  ficam-services:
     - Governance
 - &EO13556
   type: Law
@@ -266,8 +227,6 @@
   description: >-
     Our mission is to lead intelligence integration and forge an intelligence community that delivers the most 
     insightful intelligence possible
-  authorized-by:
-    - *INTELREFORM2004
 - &CIOCOUNCIL
   type: Authority
   shortName: "Federal CIO Council"
@@ -314,26 +273,6 @@
   externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
   subgroup-of:
     - *ICAMSC
-- &FPKIMA
-  type: Authority
-  shortName: "FPKIMA"
-  longName: "Federal PKI Management Authority"
-  description: "The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service."
-  externalURL: "https://www.idmanagement.gov/governance/ficam/#federal-public-key-infrastructure-management-authority"
-  subgroup-of:
-    - *FPKIPA
-- &CPWG
-  type: Authority
-  shortName: "CPWG"
-  longName: "Certificate Policy Working Group"
-  description: >-
-    Reviews cross-certification applications, Certificate Policies, Certificate Policy change 
-    proposals, auditor reports of entities applying for or seeking to maintain cross-certification 
-    with the FPKI, and provides recommendations to the PA for acceptance or rejection of those items. 
-    The CPWG also reviews FPKI administrative and guidance documents and recommends changes to those 
-    documents as needed.
-  subgroup-of:
-    - *FPKIPA
 - &DHS
   type: Authority
   shortName: "DHS"
@@ -344,8 +283,6 @@
     and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
     Our duties are wide-ranging, and our goal is clear - keeping America safe.
   externalURL: "https://www.dhs.gov/"
-  authorized-by:
-    - *HOMELANDSECURITYACT
 - &CISA
   type: Authority
   shortName: "CISA"
@@ -356,8 +293,6 @@
   externalURL: "https://www.cisa.gov/"
   subgroup-of:
     - *DHS
-  authorized-by:
-    - *CISAACT
 - &ISC
   type: Authority
   shortName: ISC
@@ -672,40 +607,6 @@
     - Access Management
     - Credential Management
     - Governance
-- &MODERNCAC
-  type: Policy
-  shortName: "Modernizing the Common Access Card"
-  longName: "Department of Defense Memorandum: Modernizing the Common Access Card - Streamlining Identity and Improving Operational Interoperability"
-  description: >-
-    This memorandum directs the alignment of DoD's use of the CAC with the Federal PIV-Auth certificate
-  published: 2018-12-07
-  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/modernizing_the_cac.pdf"
-  authored-by:
-    - *DOD
-  authorized-by:
-    - *HSPD12
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-    - Governance
-- &DODICAMSTRATEGY
-  type: Policy
-  shortName: "DoD ICAM Strategy"
-  longName: "Department of Defense Identity, Credential, and Access Management (ICAM) Strategy"
-  description: >-
-    This strategy provides a set of goals focused on establishing measurable and achievable transformation 
-    of core ICAM elements to achieve ICAM activities. These core elements enable ICAM to be fast, reliable, 
-    secure, and auditable across the DoD enterprise in a manner enhancing user experience and supports the 
-    DoD Chief Information Officer's (CIO) ICAM vision.
-  published: 2020-03-30
-  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
-  authored-by:
-    - *DOD
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
 - &5CFR731
   type: Policy
   shortName: "5 CFR 731"
