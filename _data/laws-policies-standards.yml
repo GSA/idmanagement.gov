@@ -1668,10 +1668,15 @@
     This document divides cloud vulnerabilities into four classes (misconfiguration, poor access control, 
     shared tenancy vulnerabilities, and supply chain vulnerabilities) that encompass the vast majority of 
     known vulnerabilities. [...] Descriptions of each vulnerability class along with the most effective 
-    mitigations are provided to help organizations lock down their cloud resources.
+    mitigations are provided to help organizations lock down their cloud resources. Contains specific 
+    recommendations for improving ICAM practices to reduce cloud vulnerabilities.
   published: 2020-01-22
+  externalURL: "https://media.defense.gov/2020/Jan/22/2002237484/-1/-1/0/CSI-MITIGATING-CLOUD-VULNERABILITIES_20200121.PDF"
   authored-by:
     - *NSA
+  ficam-services:
+    - Access Management - Authentication
+    - Access Management - Authorization
 - &OAUTH
   type: Standard
   shortName: "OAuth"
