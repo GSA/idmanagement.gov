@@ -99,15 +99,3 @@ Click on the name of a activity or program to see more details about it, and for
 {%- for document in sorted_program %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {% for operator in document.implemented-by %} {{ operator.shortName -}}<br/> {%- endfor %} |
 {%- endfor %}
-
-## Industry Standards
-
-This table lists industry standards that are relevant for FICAM.
-
-Click on the name of a standard to see more details about it, and for a link to the standard itself.
-
-{% assign sorted_standards = site.data.laws-policies-standards | where: "type","Standard" | sort: "shortName","last" %}
-
-| Activity/Program Name | Categories |
-| --- |  --- | {% for document in sorted_standards %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {% for service in document.ficam-services %} {{ service }}<br/> {% endfor %} | {% endfor %}
