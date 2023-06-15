@@ -796,126 +796,6 @@
     - Credential Management
     - Access Management
     - Governance
-- &SP80087
-  type: Guidance
-  shortName: "NIST SP 800-87"
-  longName: "NIST Special Publication 800-87: Codes for Identification of Federal and Federally-Assisted Organizations"
-  description: "This document provides the organizational codes for federal agencies to establish the Federal Agency Smart Credential Number (FASC-N) that is required to be included in the FIPS 201 Card Holder Unique Identifier. SP 800-87 is a companion document to FIPS 201."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-87/rev-2/final"
-  published: 2018-04-19
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-    - *HSPD12
-  ficam-services:
-    - Identity Management
-    - Governance - Identity Governance
-- &SP80096
-  type: Guidance
-  shortName: "NIST SP 800-96"
-  longName: "NIST Special Publication 800-96: PIV Card to Reader Interoperability Guidelines"
-  description: "The purpose of this document is to present recommendations for Personal Identity Verification (PIV) card readers in the area of performance and communications characteristics to foster interoperability."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-96/final"
-  published: 2006-12-29
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Identity Management
-    - Governance - Identity Governance
-- &SP80073
-  type: Guidance
-  shortName: "NIST SP 800-73"
-  longName: "NIST Special Publication 800-73-4: Interfaces for Personal Identity Verification"
-  description: "This document, SP 800-73, contains the technical specifications to interface with the smart card to retrieve and use the PIV identity credentials."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-73/4/final"
-  published: 2016-02-12
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Identity Management - Maintenance
-    - Governance - Identity Governance
-    - Federation - Attribute Exchange
-- &SP80079
-  type: Guidance
-  shortName: "NIST SP 800-79"
-  longName: "NIST Special Publication 800-79-2: Guidelines for the Authorization of Personal Identity Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)"
-  description: "The purpose of this SP is to provide appropriate and useful guidelines for assessing the reliability of issuers of PIV Cards and Derived PIV Credentials."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-79/2/final"
-  published: 2016-02-12
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Federation - Policy Alignment
-- &SP80085
-  type: Guidance
-  shortName: "NIST SP 800-85"
-  longName: "NIST Special Publication 800-85B: PIV Data Model Test Guidelines"
-  description: "In order to build the necessary PIV infrastructure to support common unified processes and government-wide use of identity credentials, NIST developed this test guidance document that ensures interoperability of PIV data."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-85b/final"
-  published: 2006-07-31
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Governance - Identity Governance
-    - Federation - Policy Alignment
-    - Identity Management
-- &SP800157
-  type: Guidance
-  shortName: "NIST SP 800-157"
-  longName: "NIST Special Publication 800-157: Guidelines for Derived Personal Identity Verification (PIV) Credentials"
-  description: "This recommendation provides technical guidelines for the implementation of standards-based, secure, reliable, interoperable public key infrastructure (PKI) based identity credentials that are issued by Federal departments and agencies to individuals who possess and prove control over a valid PIV Card."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-157/final"
-  published: 2014-12-19
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management - Generation & Issuance
-    - Credential Management - Revocation
-    - Federation - Policy Alignment
-- &SP80076
-  type: Guidance
-  shortName: "NIST SP 800-76"
-  longName: "NIST Special Publication 800-76-2: Biometric Specifications for Personal Identity Verification"
-  description: "This document [...] describes technical acquisition and formatting specifications for the PIV system, including the PIV Card itself. It also establishes minimum accuracy specifications for deployed biometric authentication processes."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-76/2/final"
-  published: 2013-07-11
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-  ficam-services:
-    - Identity Management - Maintenance
-    - Governance - Identity Governance
-    - Federation - Attribute Exchange
-- &SP80078
-  type: Guidance
-  shortName: "NIST SP 800-78"
-  longName: "NIST Special Publication 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification"
-  description: "This document contains the technical specifications needed for the mandatory and optional cryptographic keys specified in FIPS 201-2 as well as the supporting infrastructure specified in FIPS 201-2 and the related NIST Special Publication 800-73-4, Interfaces for Personal Identity Verification [SP800-73], and NIST SP 800-76-2, Biometric Specifications for Personal Identity Verification [SP800-76], that rely on cryptographic functions."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-78/4/final"
-  published: 2015-05-29
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FIPS201
-    - *SP80073
-    - *SP80076
-  ficam-services:
-    - Identity Management - Maintenance
-    - Governance - Identity Governance
-    - Federation - Attribute Exchange
 - &PIVPRIV
   type: Guidance
   shortName: "PIV Privileged User Guide"
@@ -1683,6 +1563,127 @@
     - *HSPD12
   authored-by:
     - *NIST
+- &SP80087
+  type: Guidance
+  shortName: "NIST SP 800-87"
+  longName: "NIST Special Publication 800-87: Codes for Identification of Federal and Federally-Assisted Organizations"
+  description: "This document provides the organizational codes for federal agencies to establish the Federal Agency Smart Credential Number (FASC-N) that is required to be included in the FIPS 201 Card Holder Unique Identifier. SP 800-87 is a companion document to FIPS 201."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-87/rev-2/final"
+  published: 2018-04-19
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  authorized-by:
+    - *HSPD12
+  ficam-services:
+    - Identity Management
+    - Governance - Identity Governance
+- &SP80096
+  type: Guidance
+  shortName: "NIST SP 800-96"
+  longName: "NIST Special Publication 800-96: PIV Card to Reader Interoperability Guidelines"
+  description: "The purpose of this document is to present recommendations for Personal Identity Verification (PIV) card readers in the area of performance and communications characteristics to foster interoperability."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-96/final"
+  published: 2006-12-29
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  ficam-services:
+    - Identity Management
+    - Governance - Identity Governance
+- &SP80073
+  type: Guidance
+  shortName: "NIST SP 800-73"
+  longName: "NIST Special Publication 800-73-4: Interfaces for Personal Identity Verification"
+  description: "This document, SP 800-73, contains the technical specifications to interface with the smart card to retrieve and use the PIV identity credentials."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-73/4/final"
+  published: 2016-02-12
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  ficam-services:
+    - Identity Management - Maintenance
+    - Governance - Identity Governance
+    - Federation - Attribute Exchange
+- &SP80079
+  type: Guidance
+  shortName: "NIST SP 800-79"
+  longName: "NIST Special Publication 800-79-2: Guidelines for the Authorization of Personal Identity Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)"
+  description: "The purpose of this SP is to provide appropriate and useful guidelines for assessing the reliability of issuers of PIV Cards and Derived PIV Credentials."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-79/2/final"
+  published: 2016-02-12
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  ficam-services:
+    - Federation - Policy Alignment
+- &SP80085
+  type: Guidance
+  shortName: "NIST SP 800-85"
+  longName: "NIST Special Publication 800-85B: PIV Data Model Test Guidelines"
+  description: "In order to build the necessary PIV infrastructure to support common unified processes and government-wide use of identity credentials, NIST developed this test guidance document that ensures interoperability of PIV data."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-85b/final"
+  published: 2006-07-31
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  ficam-services:
+    - Governance - Identity Governance
+    - Federation - Policy Alignment
+    - Identity Management
+- &SP800157
+  type: Guidance
+  shortName: "NIST SP 800-157"
+  longName: "NIST Special Publication 800-157: Guidelines for Derived Personal Identity Verification (PIV) Credentials"
+  description: "This recommendation provides technical guidelines for the implementation of standards-based, secure, reliable, interoperable public key infrastructure (PKI) based identity credentials that are issued by Federal departments and agencies to individuals who possess and prove control over a valid PIV Card."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-157/final"
+  published: 2014-12-19
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Federation - Policy Alignment
+- &SP80076
+  type: Guidance
+  shortName: "NIST SP 800-76"
+  longName: "NIST Special Publication 800-76-2: Biometric Specifications for Personal Identity Verification"
+  description: "This document [...] describes technical acquisition and formatting specifications for the PIV system, including the PIV Card itself. It also establishes minimum accuracy specifications for deployed biometric authentication processes."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-76/2/final"
+  published: 2013-07-11
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+  ficam-services:
+    - Identity Management - Maintenance
+    - Governance - Identity Governance
+    - Federation - Attribute Exchange
+- &SP80078
+  type: Guidance
+  shortName: "NIST SP 800-78"
+  longName: "NIST Special Publication 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification"
+  description: "This document contains the technical specifications needed for the mandatory and optional cryptographic keys specified in FIPS 201-2 as well as the supporting infrastructure specified in FIPS 201-2 and the related NIST Special Publication 800-73-4, Interfaces for Personal Identity Verification [SP800-73], and NIST SP 800-76-2, Biometric Specifications for Personal Identity Verification [SP800-76], that rely on cryptographic functions."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-78/4/final"
+  published: 2015-05-29
+  authored-by:
+    - *NIST
+  subspec-of:
+    - *FIPS201
+    - *SP80073
+    - *SP80076
+  ficam-services:
+    - Identity Management - Maintenance
+    - Governance - Identity Governance
+    - Federation - Attribute Exchange
 - &ICAMACQUISITION
   type: Guidance
   shortName: "ICAM Acquisition Guide"
@@ -1897,8 +1898,6 @@
     key infrastructures (PKIs).
   externalURL: "https://www.idmanagement.gov/fips201/"
   authorized-by:
-    - *FIPS201
-    - *COMMONCP
     - *M0524
   implemented-by:
     - *GSA
