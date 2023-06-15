@@ -231,20 +231,6 @@
     - *WH
   ficam-services:
     - Governance
-- &IOTCYBERACT
-  type: Law
-  shortName: "IoT Cybersecurity Improvement Act"
-  longName: "Internet of Things Cybersecurity Improvement Act of 2020"
-  description: >-
-    Directs NIST to develop and publish standards and guidelines for the Federal Government on the 
-    appropriate use and management by agencies of Internet of Things devices, including Device Identiy 
-    Management recommendations.
-  published: 2020-09-22
-  externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
-  authored-by:
-    - *CONGRESS
-  ficam-services:
-    - Governance
 #
 # Secondary Authorities - established by a Law or Executive Order
 #
@@ -282,18 +268,6 @@
     insightful intelligence possible
   authorized-by:
     - *INTELREFORM2004
-- &GAO
-  type: Authority
-  shortName: GAO
-  longName: United States Government Accountability Office
-  description: >-
-    GAO helps the Congress oversee federal programs and operations to ensure accountability to the American 
-    people. GAO's analysts, auditors, lawyers, economists, information technology specialists, investigators, 
-    and other multidisciplinary professionals seek to enhance the economy, efficiency, effectiveness, and 
-    credibility of the federal government both in fact and in the eyes of the American people. GAO accomplishes 
-    its mission through a variety of activities, including financial audits, program reviews, investigations, 
-    legal support, and policy analyses.
-  externalURL: "https://www.gao.gov/"
 - &CIOCOUNCIL
   type: Authority
   shortName: "Federal CIO Council"
@@ -1343,36 +1317,13 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1919
-- &FIPS200
-  type: Guidance
-  shortName: FIPS-200
-  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 200: Minimum Security Requirements for Federal Information and Information Systems"
-  description: >-
-    FIPS Publication 200 specifies minimum security requirements for information and 
-    information systems supporting the executive agencies of the federal government and a risk-based
-    process for selecting the security controls necessary to satisfy the minimum security requirements.
-  published: 2004-03-01
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Credential Management
-    - Access Management
 - &SP800171
   type: Guidance
   shortName: SP 800-171
   longName: "NIST Special Publication 800-171 Revision 2: Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations"
   description: >-
-    This publication provides agencies with recommended security requirements for protecting the 
-    confidentiality of Controlled Unclassified Information (CUI) when the information is resident 
-    in nonfederal systems and organizations; 
-    when the nonfederal organization is not collecting or maintaining information on behalf of a 
-    federal agency or using or operating a system on behalf of an agency; and where there are no 
-    specific safeguarding requirements for protecting the confidentiality of CUI prescribed by the 
-    authorizing law, regulation, or governmentwide policy for the CUI category listed in the CUI 
-    Registry.
+    This publication provides guidance for operators of non-federal (e.g. commercial) systems hosting Controlled 
+    Unclassified Information (CUI). It includes several FICAM relevant requirements.
   published: 2021-01-28
   externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf"
   authored-by:
@@ -1389,25 +1340,13 @@
   description: >-
     This site contains a web-friendly version of the White House Office of Management and Budget memorandum 
     M-15-13, “A Policy to Require Secure Connections across Federal Websites and Web Services”, and provides 
-    technical guidance and best practices to assist in its implementation.
-    It identifies an exception for CRL publication and OCSP.
+    technical guidance and best practices to assist in its implementation. It requires use of a publicly 
+    trusted certificate for federal web services.
   externalURL: "https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https"
   authored-by:
     - *CIOCOUNCIL
   authorized-by:
     - *M1513
-- &PACSORDERGUIDE
-  type: Guidance
-  shortName: "PACS Ordering Guide"
-  longName: "Physical Access Control Systems (PACS) Customer Ordering Guide"
-  description: >-
-    This purpose of this document is create a comprehensive ordering guide that assists ordering
-    agencies, particularly contracting officers, to effectively use the GSA Multiple Award Schedules 
-    (MAS) to purchase total solutions for Physical Access Control Systems (PACS).
-  published: 2020-07-01
-  externalURL: "https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf"
-  authored-by:
-    - *GSA
 - &PIVEPACS
   type: Guidance
   shortName: "PIV in E-PACS"
@@ -1474,7 +1413,9 @@
   shortName: "FIPS 201"
   longName: "Personal Identity Verification (PIV) of Federal Employees and Contractors"
   published: 2022-01-01
-  description: "This document establishes a standard for a Personal Identity Verification (PIV) system that meets the control and security objectives of Homeland Security Presidential Directive-12."
+  description: >-
+    This document establishes a standard for a Personal Identity Verification (PIV) system that meets the 
+    control and security objectives of Homeland Security Presidential Directive-12.
   externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-3.pdf"
   scope:
     - "Workforce Identity"
@@ -1488,7 +1429,10 @@
   type: Guidance
   shortName: "NIST SP 800-87"
   longName: "NIST Special Publication 800-87: Codes for Identification of Federal and Federally-Assisted Organizations"
-  description: "This document provides the organizational codes for federal agencies to establish the Federal Agency Smart Credential Number (FASC-N) that is required to be included in the FIPS 201 Card Holder Unique Identifier. SP 800-87 is a companion document to FIPS 201."
+  description: >-
+    This document provides the organizational codes for federal agencies to establish the Federal Agency Smart 
+    Credential Number (FASC-N) that is required to be included in the FIPS 201 Card Holder Unique Identifier. 
+    SP 800-87 is a companion document to FIPS 201.
   externalURL: "https://csrc.nist.gov/publications/detail/sp/800-87/rev-2/final"
   published: 2018-04-19
   authored-by:
@@ -1617,42 +1561,6 @@
   externalURL: "https://www.dhs.gov/sites/default/files/publications/icam_acquisition_guidance_final_version_-_092019.pdf"
   authored-by:
     - *DHS
-- &DODICAMREFDESIGN
-  type: Guidance
-  shortName: "DoD ICAM Reference Design"
-  longName: "DoD Enterprise Identity, Credential, and Access Management (ICAM) Reference Design"
-  description: >-
-    The purpose of this ICAM Reference Design (RD) is two-fold. First, as an architecture document, 
-    it supports the owners and operators of DoD enterprise ICAM services so that these services 
-    can effectively interface with each other to support ICAM capabilities, and supports developers 
-    so they can implement ICAM using consistent, standards-based methodologies. Second, as a 
-    descriptive document, it supports DoD Components in understanding how to consume DoD enterprise 
-    ICAM services and how to operate DoD Component, Community of Interest (COI), or local level 
-    ICAM services when DoD enterprise services do not meet mission needs.
-  published: 2020-06-01
-  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf"
-  authored-by:
-    - *DOD
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-    - Federation
-    - Governance
-- &SP800213
-  type: Guidance
-  shortName: "NIST SP 800-213"
-  longName: "NIST Special Publication 800-213: IoT Device Cybersecurity Guidance for the Federal Government: Establishing IoT Device Cybersecurity Requirements"
-  description: >-
-    This publication contains background and recommendations to help the federal agencies 
-    consider how an IoT device they plan to acquire can integrate into a federal information 
-    system. It provides guidance on considering system security from the device perspective.
-  published: 2021-11-01
-  externalURL: "https://doi.org/10.6028/NIST.SP.800-213"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *IOTCYBERACT
 - &NISTIR8344
   type: Guidance
   shortName: "NISTIR 8344"
@@ -1706,48 +1614,6 @@
     - *SP80063
   ficam-services:
     - Access Management - Authentication
-- &GAO13222
-  type: Guidance
-  shortName: GAO-13-222
-  longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
-  description: >-
-    This report examines (1) the sources that inform agencies' physical security programs and (2) the 
-    management practices agencies use to oversee physical security and allocate resources.
-  externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
-  published: 2013-01-01
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
-- &GAO15444
-  type: Guidance
-  shortName: GAO-15-444
-  longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
-  description: >-
-    This report examines (1) the types of physical security enhancements selected civilian federal entities have
-    made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
-    enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
-    effectiveness of enhancements and using performance measures.
-  externalURL: "https://www.gao.gov/assets/gao-15-444.pdf"
-  published: 2015-03-01
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
-- &GAO19138
-  type: Guidance
-  shortName: "GAO-19-138"
-  longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
-  description: >-
-    This report discusses (1) steps OMB and GSA have taken to fulfill their government-wide responsibilities 
-    related to Physical Access Control Systems and (2) challenges selected federal agencies face in meeting 
-    current requirements.
-  published: 2018-12-20
-  externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
 - &PACSBESTPRACTICES
   type: Guidance
   shortName: "Best Practices for Planning and Managing Physical Security Resources"
@@ -1761,9 +1627,6 @@
   externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf"
   authored-by:
     - *ISC
-  authorized-by:
-    - *GAO13222
-    - *GAO15444
 - &PACSRFP
   type: Guidance
   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
@@ -1787,8 +1650,6 @@
   externalURL: "https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf"
   authored-by:
     - *ISC
-  authorized-by:
-    - *GAO19138
   ficam-services:
     - Access Management - Authentication
     - Access Management - Authorization
@@ -1805,47 +1666,3 @@
     - *FIPS201
   ficam-services:
     - Governance
-#
-# PROGRAMS COME LAST
-#
-- &FIPSLAB
-  type: Program
-  shortName: "FICAM testing program"
-  longName: "Federal Information Processing Standard 201 (FIPS 201) Evaluation Program"
-  description: >-
-    The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes 
-    called the FICAM Testing Program) tests and certifies services and commercial products 
-    used in PIV credentialing systems, physical access control systems (PACS), and public 
-    key infrastructures (PKIs).
-  externalURL: "https://www.idmanagement.gov/fips201/"
-  authorized-by:
-    - *M0524
-  implemented-by:
-    - *GSA
-- &PKISSP
-  type: Program
-  shortName: "PKI SSP"
-  longName: "GSA PKI Shared Service Provider Program"
-  description: "The General Services Administration, Office of Government-wide Policy, manages the Public Key Infrastructure Shared Services Provider Program. The primary focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability."
-  externalURL: "https://www.idmanagement.gov/buy/gsapkissp/"
-  ficam-services:
-    - "Credential Management - Generation & Issuance"
-    - "Credential Management - Revocation"
-  authorized-by:
-    - *M1917
-  implemented-by:
-    - *GSA
-- &CDM
-  type: Program
-  shortName: "CDM"
-  longName: "Continuous Diagnostics and Mitigation (CDM) Program"
-  description: >-
-    The Continuous Diagnostics and Mitigation (CDM) Program is an approach to fortifying the cybersecurity 
-    of government networks and systems. The CDM Program provides cybersecurity tools, integration services, 
-    and dashboards to participating agencies to support them in improving their respective security 
-    posture. The CDM approach focuses on five areas for the federal enterprise: Data Protection Management, 
-    Network Security Management, Identity and Access Management, Asset Management, and Monitoring and 
-    Dashboards.
-  externalURL: "https://www.cisa.gov/resources-tools/programs/continuous-diagnostics-and-mitigation-cdm-program"
-  implemented-by:
-    - *CISA
