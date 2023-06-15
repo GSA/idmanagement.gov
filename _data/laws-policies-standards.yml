@@ -911,7 +911,7 @@
     - Governance
 - &SP800205
   type: Guidance
-  shortName: "SP 800-205"
+  shortName: "NIST SP 800-205"
   longName: "NIST Special Publication 800-205: Attribute Considerations for Access Control Systems"
   description: >-
     This document aims to provide federal agencies with a guide to attribute 
@@ -926,7 +926,7 @@
     - Access Management
 - &SP80053
   type: Guidance
-  shortName: "SP 800-53"
+  shortName: "NIST SP 800-53"
   longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
   description: >-
     This guideline provides a catalog of security and privacy controls for federal information systems and 
@@ -942,7 +942,7 @@
     - Identity Management
 - &SP80053A
   type: Guidance
-  shortName: "SP 800-53A"
+  shortName: "NIST SP 800-53A"
   longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
   description: >-
     This guideline provides a set of procedures for conducting assessments of security controls and privacy 
@@ -956,7 +956,7 @@
     - *FISMA2014
 - &SP800162
   type: Guidance
-  shortName: "SP 800-162"
+  shortName: "NIST SP 800-162"
   longName: "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations"
   description: >-
     This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control 
@@ -973,7 +973,7 @@
     - Access Management
 - &SP800122
   type: Guidance
-  shortName: "SP 800-122"
+  shortName: "NIST SP 800-122"
   longName: "NIST Special Publication 800-122: Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)"
   description: >-
     This guideline assists federal agencies in protecting the confidentiality of a specific category of data 
@@ -1443,7 +1443,7 @@
     - Governance
 - &SP800207
   type: Guidance
-  shortName: "SP 800-207"
+  shortName: "NIST SP 800-207"
   longName: "NIST Special Publication 800-207: Zero Trust Architecture"
   description: >-
     This document is intended to describe zero trust for enterprise security architects. Zero trust
@@ -1852,7 +1852,7 @@
     - Governance
 - &SP800213
   type: Standard
-  shortName: "SP 800-213"
+  shortName: "NIST SP 800-213"
   longName: "NIST Special Publication 800-213: IoT Device Cybersecurity Guidance for the Federal Government: Establishing IoT Device Cybersecurity Requirements"
   description: >-
     This publication contains background and recommendations to help the federal agencies 
