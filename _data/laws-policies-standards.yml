@@ -1896,10 +1896,9 @@
   shortName: "IoT Cybersecurity Improvement Act"
   longName: "Internet of Things Cybersecurity Improvement Act of 2020"
   description: >-
-    Not later than 90 days after the date of the enactment of this Act, the Director of the Institute 
-    (NIST) shall develop and publish under section 20 of the National Institute of Standards and 
-    Technology Act (15 U.S.C. 278g) standards and guidelines for the Federal Government on the 
-    appropriate use and management by agencies of Internet of Things devices.
+    Directs NIST to develop and publish standards and guidelines for the Federal Government on the 
+    appropriate use and management by agencies of Internet of Things devices, including Identiy Management
+    recommendations.
   published: 2020-09-22
   externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
   ficam-services:
@@ -1950,14 +1949,3 @@
     - *NIST
   ficam-services:
     - Access Management - Authentication
-- &GSAM
-  type: Policy
-  shortName: "GSAM"
-  longName: "General Services Administration Acquisition Manual"
-  description: >-
-    The General Services Administration Acquisition Manual (GSAM) consolidates the 
-    General Services Administration (GSA) agency acquisition rules and guidance.
-  published: 2023-05-05
-  externalURL: "https://www.acquisition.gov/sites/default/files/current/gsam/pdf/GSAM.pdf"
-  authored-by:
-    - *GSA
