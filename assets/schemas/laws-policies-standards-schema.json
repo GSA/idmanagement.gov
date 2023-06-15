@@ -107,6 +107,10 @@
             "amends": {
                 "description": "The previous document that this document amends",
                 "type": "array"
+            },
+            "subspec-of": {
+                "description": "The specification of which this document is a subspecification",
+                "type": "array"
             }
         }
     }
