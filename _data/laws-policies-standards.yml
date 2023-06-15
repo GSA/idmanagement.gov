@@ -16,6 +16,48 @@
     its mission through a variety of activities, including financial audits, program reviews, investigations, 
     legal support, and policy analyses.
   externalURL: "https://www.gao.gov/"
+- &GAO13222
+  type: Guidance
+  shortName: GAO-13-222
+  longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
+  description: >-
+    This report examines (1) the sources that inform agencies' physical security programs and (2) the 
+    management practices agencies use to oversee physical security and allocate resources.
+  externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
+  published: 2013-01-01
+  authored-by:
+    - *GAO
+  ficam-services:
+    - Access Management
+- &GAO15444
+  type: Guidance
+  shortName: GAO-15-444
+  longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
+  description: >-
+    This report examines (1) the types of physical security enhancements selected civilian federal entities have
+    made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
+    enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
+    effectiveness of enhancements and using performance measures.
+  externalURL: "https://www.gao.gov/assets/gao-15-444.pdf"
+  published: 2015-03-01
+  authored-by:
+    - *GAO
+  ficam-services:
+    - Access Management
+- &GAO19138
+  type: Guidance
+  shortName: "GAO-19-138"
+  longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
+  description: >-
+    This report discusses (1) steps OMB and GSA have taken to fulfill their government-wide responsibilities 
+    related to Physical Access Control Systems and (2) challenges selected federal agencies face in meeting 
+    current requirements.
+  published: 2018-12-20
+  externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
+  authored-by:
+    - *GAO
+  ficam-services:
+    - Access Management
 - &NIST
   type: Authority
   shortName: "NIST"
@@ -1266,49 +1308,6 @@
     - *FIPSLAB
   authorized-by:
     - *M1917
-- &GAO13222
-  type: Guidance
-  shortName: GAO-13-222
-  longName: "FACILITY SECURITY: Greater Outreach by DHS on Standards and Management Practices Could Benefit Federal Agencies."
-  description: >-
-    This report examines (1) the sources that inform agencies' physical security programs and (2) the 
-    management practices agencies use to oversee physical security and allocate resources.
-  externalURL: "https://www.gao.gov/assets/gao-13-222.pdf"
-  published: 2013-01-01
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
-- &GAO15444
-  type: Guidance
-  shortName: GAO-15-444
-  longName: "HOMELAND SECURITY: Action Needed to Better Assess Cost-Effectiveness of Security Enhancements at Federal Facilities"
-  description: >-
-    This report examines (1) the types of physical security enhancements selected civilian federal entities have
-    made to their facilities since September 11, 2001; (2) how these entities pay for and track costs of such 
-    enhancements; and (3) the actions these entities have taken to manage costs, including determining the cost 
-    effectiveness of enhancements and using performance measures.
-  externalURL: "https://www.gao.gov/assets/gao-15-444.pdf"
-  published: 2015-03-01
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
-
-- &GAO19138
-  type: Guidance
-  shortName: "GAO-19-138"
-  longName: "FEDERAL BUILDING SECURITY: Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"
-  description: >-
-    This report discusses (1) steps OMB and GSA have taken to fulfill their government-wide responsibilities 
-    related to Physical Access Control Systems and (2) challenges selected federal agencies face in meeting 
-    current requirements.
-  published: 2018-12-20
-  externalURL: "https://www.gao.gov/assets/gao-19-138.pdf"
-  authored-by:
-    - *GAO
-  ficam-services:
-    - Access Management
 - &FACILITYACCESSCONTROL
   type: Guidance
   shortName: "FACILITY ACCESS CONTROL"
