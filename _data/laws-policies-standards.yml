@@ -464,7 +464,7 @@
 # POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
 #
 - &M0524
-  type: "Policy"
+  type: Policy
   shortName: "M-05-24"
   longName: "OMB Memo 05-24: Implementation of Homeland Security Presidential Directive (HSPD) 12 - Policy for a Common Identification Standard for Federal Employees and Contractors"
   published: 2005-08-05
@@ -478,77 +478,6 @@
     - *OMB
   ficam-services:
     - "Identity Management - Identity Proofing"
-- &FICAMARCH
-  type: Guidance
-  shortName: "FICAM Architecture"
-  longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
-  description: "This version of the FICAM Architecture encompasses the enterprise ICAM policies, technologies, and system approaches for government employees, contractors, and authorized partners."
-  published: 2021-01-06
-  externalURL: "https://playbooks.idmanagement.gov/arch/"
-  authored-by:
-    - *ICAMSC
-  ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management - Generation & Issuance
-    - Credential Management - Revocation
-    - Access Management - Authentication
-    - Federation - Policy Alignment
-- &ICAMPMPLAYBOOK
-  type: Guidance
-  shortName: "ICAM PM Playbook"
-  longName: "Identity, Credential, and Access Management Program Management Playbook"
-  description: "The ICAM Program Management Playbook explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
-  published: 2022-06-10
-  externalURL: "https://playbooks.idmanagement.gov/pm/"
-  authored-by:
-    - *ICAMSC
-  ficam-services:
-    - Federation - Policy Alignment
-- &FPKIGUIDE
-  type: Guidance
-  shortName: "FPKI Guide"
-  longName: "Federal Public Key Infrastructure Guide"
-  description: "This guide describes the structure, purpose, and current operational status of the FPKI."
-  externalURL: "https://playbooks.idmanagement.gov/fpki/"
-  authored-by:
-    - *ICAMSC
-  ficam-services:
-    - Credential Management
-- &PACSGUIDE
-  type: Guidance
-  shortName: "PACS Guide"
-  longName: "Physical Access Control System Guide"
-  description: >-
-    The Physical Access Control System (PACS) Guides will help you understand concepts related 
-    to Federal Identity, Credential, and Access Management-compliant PACSs.
-  externalURL: "https://playbooks.idmanagement.gov/pacs/"
-  authored-by:
-    - *ICAMSC
-  ficam-services:
-    - Access Management
-- &PIVGUIDE
-  type: Guidance
-  shortName: "PIV Guides"
-  longName: "Personal Identity Verification Guides"
-  description: >-
-    These Personal Identity Verification (PIV) Guides are intended to help you implement common 
-    PIV configurations at your organization. The guides focus on using PIV credentials for logical 
-    access such as authenticating to networks or applications or digitally signing and encrypting.
-  externalURL: "https://playbooks.idmanagement.gov/piv/"
-  authored-by:
-    - *ICAMSC
-  ficam-services:
-    - Access Management - Authentication
-- &PLAYBOOKS
-  type: Guidance
-  shortName: "FICAM Playboks"
-  longName: "FICAM Playbooks"
-  description: >-
-    A playbook is a comprehensive guide on a technical topic, describing both overarching strategy 
-    and tactical approaches. These playbooks cover a variety of FICAM relevant subjects.
-  externalURL: "https://playbooks.idmanagement.gov/playbooks/"
-  authored-by:
-    - *ICAMSC
 - &FBCACP
   type: Policy
   shortName: "FBCA CP"
@@ -565,16 +494,6 @@
     - "Federation - Policy Alignment"
   authored-by:
     - *FPKIPA
-- &FBCAPROF
-  type: Guidance
-  shortName: "FBCA Profiles"
-  longName: "Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile"
-  description: >-
-    This document specifies the profiles for X.509 certificates and certificate revocation lists (CRLs) 
-    associated with CAs cross-certified with the Federal Bridge Certification Authority (FBCA).
-  published: 2022-10-18
-  authored-by:
-    - *FPKIPA
 - &COMMONCP
   type: Policy
   shortName: "Common CP"
@@ -589,18 +508,6 @@
     - "Credential Management - Generation & Issuance"
     - "Credential Management - Revocation"
     - "Federation - Policy Alignment"
-  authored-by:
-    - *FPKIPA
-- &COMMONPROF
-  type: Guidance
-  shortName: "Common Profiles"
-  longName: "Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles"
-  description: >-
-    This document specifies the profiles for certificates and CRLs issued under the X.509 
-    Certificate Policy for the U.S. Federal PKI Common Policy Framework [COMMON] 
-    and that have a trust path to the Federal Common Policy CA operated by the Federal PKI 
-    Management Authority.
-  published: 2022-09-30
   authored-by:
     - *FPKIPA
 - &M1917
@@ -679,141 +586,6 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
   authored-by:
     - *OMB
-- &IAMROADMAP
-  type: Guidance
-  shortName: "NIST IAM Roadmap"
-  longName: "National Institute of Standards and Technology Identity and Access Management Roadmap"
-  description: "[A] roadmap for developing new and updating existing NIST guidance related to Identity and Access Management (ICAM)."
-  externalURL: "https://www.nist.gov/identity-access-management/identity-and-access-management-roadmap"
-  published: 2023-04-21
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *M1917
-  ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management - Generation & Issuance
-    - Credential Management - Revocation
-    - Federation - Policy Alignment
-- &SP80063
-  type: Guidance
-  shortName: "NIST SP 800-63"
-  longName: "NIST Special Publication 800-63-4: Digital Identity Guidelines"
-  description: >-
-    These guidelines provide technical requirements for federal agencies implementing digital identity 
-    services and are not intended to constrain the development or use of standards outside of this purpose. 
-    The guidelines cover identity proofing and authentication of users (such as employees, contractors, or 
-    private individuals) interacting with government IT systems over open networks. They define technical 
-    requirements in each of the areas of identity proofing, registration, authenticators, management 
-    processes, authentication protocols, federation, and related assertions.
-  externalURL: "https://pages.nist.gov/800-63-4/sp800-63/abstract/"
-  published: 2022-12-16
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *M1917
-    - *FISMA2014
-    - *A130
-  ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management
-    - Federation
-    - Governance
-- &SP80063A
-  type: Guidance
-  shortName: "NIST SP 800-63A"
-  longName: "NIST Special Publication 800-63A-4: Enrollment and Identity Proofing"
-  description: >-
-    This guideline focuses on the enrollment and verification of an identity for use in digital services. 
-    Central to this is a process known as identity proofing in which an applicant provides evidence to a 
-    credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert 
-    that identification at an Identity Assurance Level (IAL). This document defines technical requirements 
-    for each of the three IALs.
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-63a/4/draft"
-  published: 2022-12-16
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *M1917
-    - *FISMA2014
-    - *A130
-  ficam-services:
-    - Identity Management
-    - Credential Management
-- &SP80063B
-  type: Guidance
-  shortName: "NIST SP 800-63B"
-  longName: "NIST Special Publication 800-63B-4: Authentication and Lifecycle Management"
-  description: >-
-    These guidelines focus on the authentication of subjects interacting with government systems over open 
-    networks, establishing that a given claimant is a subscriber who has been previously authenticated. The 
-    result of the authentication process may be used locally by the system performing the authentication or 
-    may be asserted elsewhere in a federated identity system. This document defines technical requirements 
-    for each of the three Authentication Assurance Levels (AALs).
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-63b/4/draft"
-  published: 2022-12-16
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *M1917
-    - *FISMA2014
-    - *A130
-  ficam-services:
-    - Access Management - Authentication
-- &SP80063C
-  type: Guidance
-  shortName: "NIST SP 800-63C"
-  longName: "NIST Special Publication 800-63C-4: Federation and Assertions"
-  description: >-
-    These guidelines provide technical requirements for federal agencies implementing digital identity services 
-    and are not intended to constrain the development or use of standards outside of this purpose. This guideline 
-    focuses on the use of federated identity and the use of assertions to implement identity federations. 
-    Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number 
-    of separately-administered relying parties. Similarly, relying parties may use more than one CSP.
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-63c/4/draft"
-  published: 2022-12-16
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *M1917
-    - *FISMA2014
-    - *A130
-  ficam-services:
-    - Federation
-- &SP800116
-  type: Guidance
-  shortName: "NIST SP 800-116"
-  longName: "NIST Special Publication 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access"
-  description: "This recommendation provides a technical guideline to use Personal Identity Verification (PIV) Cards in facility access; enabling federal agencies to operate as government-wide interoperable enterprises."
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final"
-  published: 2018-07-29
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *HSPD12
-  ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management
-    - Access Management
-    - Governance
-- &PIVPRIV
-  type: Guidance
-  shortName: "PIV Privileged User Guide"
-  longName: "Best Practices for Privileged User PIV Authentication"
-  description: >-
-    This white paper further explains the need for multi-factor PIV-based user authentication to take the place of password-based 
-    single-factor authentication for privileged users. It also provides best practices for agencies implementing PIV authentication 
-    for privileged users
-  published: 2016-04-21
-  externalURL: "https://doi.org/10.6028/NIST.CSWP.04212016"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *M1916
-  ficam-services:
-    - Access Management - Privileged Access Management
-    - Credential Management
-    - Identity Management
 - &SPRINGERMEMO
   type: Policy
   shortName: "Springer Memo"
@@ -909,162 +681,6 @@
   ficam-services:
     - Federation
     - Governance
-- &SP800205
-  type: Guidance
-  shortName: "NIST SP 800-205"
-  longName: "NIST Special Publication 800-205: Attribute Considerations for Access Control Systems"
-  description: >-
-    This document aims to provide federal agencies with a guide to attribute 
-    considerations with Attribute Evaluation Scheme examples for access control.
-  published: 2019-06-18
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-205.pdf"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Access Management
-- &SP80053
-  type: Guidance
-  shortName: "NIST SP 800-53"
-  longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
-  description: >-
-    This guideline provides a catalog of security and privacy controls for federal information systems and 
-    organizations and a process for selecting controls to protect organizational operations, assets, 
-    individuals, other organizations, and the Nation from a diverse set of threats.
-  published: 2020-12-10
-  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Identity Management
-- &SP80053A
-  type: Guidance
-  shortName: "NIST SP 800-53A"
-  longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
-  description: >-
-    This guideline provides a set of procedures for conducting assessments of security controls and privacy 
-    controls employed within federal information systems and organizations. The assessment procedures, 
-    executed at various phases of the system development life cycle, are consistent with the security and 
-    privacy controls in NIST Special Publication 800-53, Revision 5.
-  published: 2022-01-25
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-- &SP800162
-  type: Guidance
-  shortName: "NIST SP 800-162"
-  longName: "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations"
-  description: >-
-    This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control 
-    methodology in which authorization to perform a set of operations is determined by evaluating attributes 
-    associated with the subject, object, requested operations, and, in some cases, environment conditions 
-    against policy, rules, or relationships that describe the allowable operations for a given set of attributes.
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-162.pdf"
-  published: 2019-08-02
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Access Management
-- &SP800122
-  type: Guidance
-  shortName: "NIST SP 800-122"
-  longName: "NIST Special Publication 800-122: Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)"
-  description: >-
-    This guideline assists federal agencies in protecting the confidentiality of a specific category of data 
-    commonly known as PII. This document provides practical, context-based guidance for identifying PII and 
-    determining what level of protection is appropriate for each instance of PII. The document also suggests 
-    safeguards that may offer appropriate levels of protection for PII and provides recommendations for 
-    developing response plans for breaches involving PII.
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf"
-  published: 2010-04-06
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Identity Management
-    - Credential Management
-- &NISTRMF
-  type: Guidance
-  shortName: "NIST RMF"
-  longName: "NIST Risk Management Framework"
-  description: >-
-    The Risk Management Framework provides a process that integrates security, privacy, and cyber supply 
-    chain risk management activities into the system development life cycle. The risk-based approach to 
-    control selection and specification considers effectiveness, efficiency, and constraints due to 
-    applicable laws, directives, Executive Orders, policies, standards, or regulations. Managing 
-    organizational risk is paramount to effective information security and privacy programs; the RMF approach 
-    can be applied to new and legacy systems, any type of system or technology (e.g., IoT, control systems), 
-    and within any type of organization regardless of size or sector.
-  externalURL: "https://csrc.nist.gov/projects/risk-management"
-  published: 2023-02-23
-  authored-by:
-    - *NIST
-- &SP80037
-  type: Guidance
-  shortName: SP 800-37
-  longName: "NIST Special Publication 800-37 Revision 2: Risk Management Framework for Information Systems and Organizations"
-  description: >-
-    This publication describes the Risk Management Framework (RMF) and provides guidelines for 
-    applying the RMF to information systems and organizations. The RMF provides a disciplined, 
-    structured, and flexible process for managing security and privacy risk that includes information 
-    security categorization; control selection, implementation, and assessment; system and 
-    common control authorizations; and continuous monitoring. The RMF includes activities to 
-    prepare organizations to execute the framework at appropriate risk management levels. The 
-    RMF also promotes near real-time risk management and ongoing information system and 
-    common control authorization through the implementation of continuous monitoring 
-    processes; provides senior leaders and executives with the necessary information to make 
-    efficient, cost-effective, risk management decisions about the systems supporting their missions 
-    and business functions; and incorporates security and privacy into the system development life 
-    cycle. Executing the RMF tasks links essential risk management processes at the system level to 
-    risk management processes at the organization level. In addition, it establishes responsibility 
-    and accountability for the controls implemented within an organization's information systems 
-    and inherited by those systems.
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf"
-  published: 2018-12-20
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-- &PRIVACYFRAMEWORK
-  type: Guidance
-  shortName: "NIST Privacy Framework"
-  longName: "The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management"
-  description: >-
-    The Privacy Framework is a voluntary tool intended to help organizations identify and manage 
-    privacy risk to build innovative products and services while protecting individuals' privacy. 
-    The Privacy Framework approach to privacy risk is to consider privacy events as potential problems 
-    individuals could experience arising from system, product, or service operations with data, whether 
-    in digital or non-digital form, through a complete lifecycle from data collection through disposal.
-  published: 2020-01-08
-  externalURL: "https://www.nist.gov/privacy-framework/privacy-framework"
-  authored-by:
-    - *NIST
-- &APPRATIONALIZATION
-  type: Guidance
-  shortName: "Application Rationalization Playbook"
-  longName: "The Application Rationalization Playbook: An Agency Guide to Portfolio Management"
-  description: >-
-    This playbook is a practical guide for application rationalization and IT portfolio management under 
-    the federal government's Cloud Smart initiatives. Application rationalization will help federal agencies 
-    mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve 
-    the delivery of key mission and business services. It requires buy-in from stakeholders across the 
-    enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, 
-    financial practitioners, acquisition and procurement experts, and end user communities. Rationalization 
-    efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable 
-    change.
-  published: 2019-06-01
-  externalURL: "https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf"
-  authored-by:
-    - *CIOCOUNCIL
-  authorized-by:
-    - *M1919
 - &FAR
   type: Policy
   shortName: "FAR"
@@ -1078,154 +694,6 @@
   externalURL: "https://www.acquisition.gov/browse/index/far"
   authored-by:
     - *GSA
-- &FIPS199
-  type: Guidance
-  shortName: FIPS-199
-  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 199: Standards for Security Categorization of Federal Information and Information Systems"
-  description: >-
-    FIPS Publication 199 [provides] standards for categorizing information 
-    and information systems. Security categorization standards for information and information systems 
-    provide a common framework and understanding for expressing security that, for the federal 
-    government, promotes: (i) effective management and oversight of information security programs, 
-    including the coordination of information security efforts throughout the civilian, national security, 
-    emergency preparedness, homeland security, and law enforcement communities; and (ii) consistent 
-    reporting to the Office of Management and Budget (OMB) and Congress on the adequacy and 
-    effectiveness of information security policies, procedures, and practices.
-  published: 2004-02-01
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf"
-  authorized-by:
-    - *FISMA2014
-  authored-by:
-    - *NIST
-  ficam-services:
-    - Credential Management
-- &FIPS200
-  type: Guidance
-  shortName: FIPS-200
-  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 200: Minimum Security Requirements for Federal Information and Information Systems"
-  description: >-
-    FIPS Publication 200 specifies minimum security requirements for information and 
-    information systems supporting the executive agencies of the federal government and a risk-based
-    process for selecting the security controls necessary to satisfy the minimum security requirements.
-  published: 2004-03-01
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *FISMA2014
-  ficam-services:
-    - Credential Management
-    - Access Management
-
-- &SP800171
-  type: Guidance
-  shortName: SP 800-171
-  longName: "NIST Special Publication 800-171 Revision 2: Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations"
-  description: >-
-    This publication provides agencies with recommended security requirements for protecting the 
-    confidentiality of Controlled Unclassified Information (CUI) when the information is resident 
-    in nonfederal systems and organizations; 
-    when the nonfederal organization is not collecting or maintaining information on behalf of a 
-    federal agency or using or operating a system on behalf of an agency; and where there are no 
-    specific safeguarding requirements for protecting the confidentiality of CUI prescribed by the 
-    authorizing law, regulation, or governmentwide policy for the CUI category listed in the CUI 
-    Registry.
-  published: 2021-01-28
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf"
-  authored-by:
-    - *NIST
-  authorized-by:
-    - *EO13556
-  ficam-services:
-    - Access Management
-    - Credential Management
-- &HTTPSGUIDE
-  type: Guidance
-  shortName: HTTPS Compliance Guide
-  longName: "Compliance Guide: The HTTPS-Only Standard"
-  description: >-
-    This site contains a web-friendly version of the White House Office of Management and Budget memorandum 
-    M-15-13, “A Policy to Require Secure Connections across Federal Websites and Web Services”, and provides 
-    technical guidance and best practices to assist in its implementation.
-    It identifies an exception for CRL publication and OCSP.
-  externalURL: "https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https"
-  authored-by:
-    - *CIOCOUNCIL
-  authorized-by:
-    - *M1513
-- &PACSORDERGUIDE
-  type: Guidance
-  shortName: "PACS Ordering Guide"
-  longName: "Physical Access Control Systems (PACS) Customer Ordering Guide"
-  description: >-
-    This purpose of this document is create a comprehensive ordering guide that assists ordering
-    agencies, particularly contracting officers, to effectively use the GSA Multiple Award Schedules 
-    (MAS) to purchase total solutions for Physical Access Control Systems (PACS).
-  published: 2020-07-01
-  externalURL: "https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf"
-  authored-by:
-    - *GSA
-- &PIVEPACS
-  type: Guidance
-  shortName: "PIV in E-PACS"
-  longName: "Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)"
-  description: >-
-    The sole purpose of this document is to provide detailed technical and security guidance for leveraging 
-    PIV and PIV-I authentication mechanisms in a federal agency PACS to comply with directives such as 
-    [OMB M-11-11] and to provide interoperability across the federal enterprise, respectively.
-  published: 2014-03-26
-  externalURL: "https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf"
-  authored-by:
-    - *ICAMSC
-- &RISKMANAGEMENTFACILITIES
-  type: Guidance
-  shortName: "Risk Management Process for Federal Facilities"
-  longName: "The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard"
-  description: >-
-    The Risk Management Process for Federal Facilities: An Interagency Security Committee 
-    Standard (Standard), 2nd Edition defines the criteria and processes that those responsible for the 
-    security of a facility should use to determine its facility security level (FSL) and provides an 
-    integrated, single source of physical security countermeasures for all Federal facilities.
-  published: 2016-11-01
-  externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf"
-  authored-by:
-    - *ISC
-  authorized-by:
-    - *EO13286
-  ficam-services:
-    - Access Management
-- &80053PACSOVERLAY
-  type: Guidance
-  shortName: "ePACS 800-53 Overlay"
-  longName: "Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)"
-  description: >-
-    [T]he purpose of this document is to assist those entities responsible for physical and cyber security: 
-    1. Provide minimum applicable IT security controls and related supplemental guidance to 
-    appropriately secure and administer ePACS 
-    2. Establish a relationship between IT system security controls and ePACS operational 
-    configurations using a standardized risk-based approach
-    3. Develop an initial foundation for an ePACS operational assessment by providing 
-    supplemental guidance for the implementation of authentication mechanisms in ePACS 
-    as defined in NIST [SP 800-116]
-    4. Define initial responsibilities for implementation and use of this overlay
-  published: 2020-12-24
-  externalURL: "https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf"
-  authored-by:
-    - *PACSMODWG
-  authorized-by:
-    - *M1917
-- &80053FPKIOVERLAY
-  type: Guidance
-  shortName: "FPKI 800-53 Overlay"
-  longName: "Security Control Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for Federal PKI Systems"
-  description: >-
-    While many NIST [SP 800-53] controls apply to FPKI service operators as written, some controls require 
-    specific interpretation or augmentation. This overlay leverages [COMMON] to tailor appropriate [SP 800-
-    53] controls to facilitate implementation.
-  published: 2021-02-26
-  externalURL: "https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf"
-  authored-by:
-    - *FPKIPA
 - &M2209
   type: Policy
   shortName: "M-22-09"
@@ -1244,6 +712,84 @@
     - Access Management
     - Credential Management
     - Governance
+- &MODERNCAC
+  type: Policy
+  shortName: "Modernizing the Common Access Card"
+  longName: "Department of Defense Memorandum: Modernizing the Common Access Card - Streamlining Identity and Improving Operational Interoperability"
+  description: >-
+    This memorandum directs the alignment of DoD's use of the CAC with the Federal PIV-Auth certificate
+  published: 2018-12-07
+  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/modernizing_the_cac.pdf"
+  authored-by:
+    - *DOD
+  authorized-by:
+    - *HSPD12
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
+- &DODICAMSTRATEGY
+  type: Policy
+  shortName: "DoD ICAM Strategy"
+  longName: "Department of Defense Identity, Credential, and Access Management (ICAM) Strategy"
+  description: >-
+    This strategy provides a set of goals focused on establishing measurable and achievable transformation 
+    of core ICAM elements to achieve ICAM activities. These core elements enable ICAM to be fast, reliable, 
+    secure, and auditable across the DoD enterprise in a manner enhancing user experience and supports the 
+    DoD Chief Information Officer's (CIO) ICAM vision.
+  published: 2020-03-30
+  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
+  authored-by:
+    - *DOD
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+- &CREDSTANDARDS
+  type: Policy
+  shortName: "Credentialing Standards Memo 2020"
+  longName: "Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials"
+  description: >-
+    [T]he following credentialing standards procedures [...]
+    promote defined goals in agency eligibility determinations to issue HSPD-12 personal
+    identity verification (PIV) credentials for access to federally controlled facilities and
+    information systems: the protection of the life, safety, property, or health of employees,
+    contractors, vendors or visitors to Federal facilities; the protection of the Government's
+    physical assets, information systems, records, including privileged, proprietary,
+    financial or medical records; and the privacy of the individuals whose data the
+    Government holds in its systems.
+  published: 2020-12-15
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *HSPD12
+  amends:
+    - *SPRINGERMEMO
+    - *PIVISSUANCESUSPENSION
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+- &5CFR731
+  type: Policy
+  shortName: "5 CFR 731"
+  longName: "Code of Federal Regulations Chapter 5, Part 731"
+  description: >-
+    Establish criteria and procedures for making determinations of suitability and for taking suitability 
+    actions during the onboarding of employmees in covered positions.
+  published: 2008-04-15
+  externalURL: "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-731"
+  authorized-by:
+    - *EO13467
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Federation
+#
+# SECTION: GUIDANCE
+#
 - &SP800207
   type: Guidance
   shortName: "NIST SP 800-207"
@@ -1441,47 +987,6 @@
     - *CMU
   ficam-services:
     - Access Management - Privileged Access Management
-- &CREDSTANDARDS
-  type: Policy
-  shortName: "Credentialing Standards Memo 2020"
-  longName: "Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials"
-  description: >-
-    [T]he following credentialing standards procedures [...]
-    promote defined goals in agency eligibility determinations to issue HSPD-12 personal
-    identity verification (PIV) credentials for access to federally controlled facilities and
-    information systems: the protection of the life, safety, property, or health of employees,
-    contractors, vendors or visitors to Federal facilities; the protection of the Government's
-    physical assets, information systems, records, including privileged, proprietary,
-    financial or medical records; and the privacy of the individuals whose data the
-    Government holds in its systems.
-  published: 2020-12-15
-  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *HSPD12
-  amends:
-    - *SPRINGERMEMO
-    - *PIVISSUANCESUSPENSION
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-- &5CFR731
-  type: Policy
-  shortName: "5 CFR 731"
-  longName: "Code of Federal Regulations Chapter 5, Part 731"
-  description: >-
-    Establish criteria and procedures for making determinations of suitability and for taking suitability 
-    actions during the onboarding of employmees in covered positions.
-  published: 2008-04-15
-  externalURL: "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-731"
-  authorized-by:
-    - *EO13467
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Federation
 - &SOFAB
   type: Guidance
   shortName: "SOFA-B"
@@ -1513,41 +1018,537 @@
     - *NSA
   ficam-services:
     - Access Management - Authentication
-- &MODERNCAC
-  type: Policy
-  shortName: "Modernizing the Common Access Card"
-  longName: "Department of Defense Memorandum: Modernizing the Common Access Card - Streamlining Identity and Improving Operational Interoperability"
-  description: >-
-    This memorandum directs the alignment of DoD's use of the CAC with the Federal PIV-Auth certificate
-  published: 2018-12-07
-  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/modernizing_the_cac.pdf"
+- &FICAMARCH
+  type: Guidance
+  shortName: "FICAM Architecture"
+  longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
+  description: "This version of the FICAM Architecture encompasses the enterprise ICAM policies, technologies, and system approaches for government employees, contractors, and authorized partners."
+  published: 2021-01-06
+  externalURL: "https://playbooks.idmanagement.gov/arch/"
   authored-by:
-    - *DOD
+    - *ICAMSC
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Access Management - Authentication
+    - Federation - Policy Alignment
+- &ICAMPMPLAYBOOK
+  type: Guidance
+  shortName: "ICAM PM Playbook"
+  longName: "Identity, Credential, and Access Management Program Management Playbook"
+  description: "The ICAM Program Management Playbook explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
+  published: 2022-06-10
+  externalURL: "https://playbooks.idmanagement.gov/pm/"
+  authored-by:
+    - *ICAMSC
+  ficam-services:
+    - Federation - Policy Alignment
+- &FPKIGUIDE
+  type: Guidance
+  shortName: "FPKI Guide"
+  longName: "Federal Public Key Infrastructure Guide"
+  description: "This guide describes the structure, purpose, and current operational status of the FPKI."
+  externalURL: "https://playbooks.idmanagement.gov/fpki/"
+  authored-by:
+    - *ICAMSC
+  ficam-services:
+    - Credential Management
+- &PACSGUIDE
+  type: Guidance
+  shortName: "PACS Guide"
+  longName: "Physical Access Control System Guide"
+  description: >-
+    The Physical Access Control System (PACS) Guides will help you understand concepts related 
+    to Federal Identity, Credential, and Access Management-compliant PACSs.
+  externalURL: "https://playbooks.idmanagement.gov/pacs/"
+  authored-by:
+    - *ICAMSC
+  ficam-services:
+    - Access Management
+- &PIVGUIDE
+  type: Guidance
+  shortName: "PIV Guides"
+  longName: "Personal Identity Verification Guides"
+  description: >-
+    These Personal Identity Verification (PIV) Guides are intended to help you implement common 
+    PIV configurations at your organization. The guides focus on using PIV credentials for logical 
+    access such as authenticating to networks or applications or digitally signing and encrypting.
+  externalURL: "https://playbooks.idmanagement.gov/piv/"
+  authored-by:
+    - *ICAMSC
+  ficam-services:
+    - Access Management - Authentication
+- &PLAYBOOKS
+  type: Guidance
+  shortName: "FICAM Playboks"
+  longName: "FICAM Playbooks"
+  description: >-
+    A playbook is a comprehensive guide on a technical topic, describing both overarching strategy 
+    and tactical approaches. These playbooks cover a variety of FICAM relevant subjects.
+  externalURL: "https://playbooks.idmanagement.gov/playbooks/"
+  authored-by:
+    - *ICAMSC
+- &FBCAPROF
+  type: Guidance
+  shortName: "FBCA Profiles"
+  longName: "Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile"
+  description: >-
+    This document specifies the profiles for X.509 certificates and certificate revocation lists (CRLs) 
+    associated with CAs cross-certified with the Federal Bridge Certification Authority (FBCA).
+  published: 2022-10-18
+  authored-by:
+    - *FPKIPA
+- &COMMONPROF
+  type: Guidance
+  shortName: "Common Profiles"
+  longName: "Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles"
+  description: >-
+    This document specifies the profiles for certificates and CRLs issued under the X.509 
+    Certificate Policy for the U.S. Federal PKI Common Policy Framework [COMMON] 
+    and that have a trust path to the Federal Common Policy CA operated by the Federal PKI 
+    Management Authority.
+  published: 2022-09-30
+  authored-by:
+    - *FPKIPA
+- &IAMROADMAP
+  type: Guidance
+  shortName: "NIST IAM Roadmap"
+  longName: "National Institute of Standards and Technology Identity and Access Management Roadmap"
+  description: "[A] roadmap for developing new and updating existing NIST guidance related to Identity and Access Management (ICAM)."
+  externalURL: "https://www.nist.gov/identity-access-management/identity-and-access-management-roadmap"
+  published: 2023-04-21
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
+    - Credential Management - Revocation
+    - Federation - Policy Alignment
+- &SP80063
+  type: Guidance
+  shortName: "NIST SP 800-63"
+  longName: "NIST Special Publication 800-63-4: Digital Identity Guidelines"
+  description: >-
+    These guidelines provide technical requirements for federal agencies implementing digital identity 
+    services and are not intended to constrain the development or use of standards outside of this purpose. 
+    The guidelines cover identity proofing and authentication of users (such as employees, contractors, or 
+    private individuals) interacting with government IT systems over open networks. They define technical 
+    requirements in each of the areas of identity proofing, registration, authenticators, management 
+    processes, authentication protocols, federation, and related assertions.
+  externalURL: "https://pages.nist.gov/800-63-4/sp800-63/abstract/"
+  published: 2022-12-16
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+    - *FISMA2014
+    - *A130
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management
+    - Federation
+    - Governance
+- &SP80063A
+  type: Guidance
+  shortName: "NIST SP 800-63A"
+  longName: "NIST Special Publication 800-63A-4: Enrollment and Identity Proofing"
+  description: >-
+    This guideline focuses on the enrollment and verification of an identity for use in digital services. 
+    Central to this is a process known as identity proofing in which an applicant provides evidence to a 
+    credential service provider (CSP) reliably identifying themselves, thereby allowing the CSP to assert 
+    that identification at an Identity Assurance Level (IAL). This document defines technical requirements 
+    for each of the three IALs.
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-63a/4/draft"
+  published: 2022-12-16
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+    - *FISMA2014
+    - *A130
+  ficam-services:
+    - Identity Management
+    - Credential Management
+- &SP80063B
+  type: Guidance
+  shortName: "NIST SP 800-63B"
+  longName: "NIST Special Publication 800-63B-4: Authentication and Lifecycle Management"
+  description: >-
+    These guidelines focus on the authentication of subjects interacting with government systems over open 
+    networks, establishing that a given claimant is a subscriber who has been previously authenticated. The 
+    result of the authentication process may be used locally by the system performing the authentication or 
+    may be asserted elsewhere in a federated identity system. This document defines technical requirements 
+    for each of the three Authentication Assurance Levels (AALs).
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-63b/4/draft"
+  published: 2022-12-16
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+    - *FISMA2014
+    - *A130
+  ficam-services:
+    - Access Management - Authentication
+- &SP80063C
+  type: Guidance
+  shortName: "NIST SP 800-63C"
+  longName: "NIST Special Publication 800-63C-4: Federation and Assertions"
+  description: >-
+    These guidelines provide technical requirements for federal agencies implementing digital identity services 
+    and are not intended to constrain the development or use of standards outside of this purpose. This guideline 
+    focuses on the use of federated identity and the use of assertions to implement identity federations. 
+    Federation allows a given CSP to provide authentication and (optionally) subscriber attributes to a number 
+    of separately-administered relying parties. Similarly, relying parties may use more than one CSP.
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-63c/4/draft"
+  published: 2022-12-16
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *M1917
+    - *FISMA2014
+    - *A130
+  ficam-services:
+    - Federation
+- &SP800116
+  type: Guidance
+  shortName: "NIST SP 800-116"
+  longName: "NIST Special Publication 800-116 Rev. 1: Guidelines for the Use of PIV Credentials in Facility Access"
+  description: "This recommendation provides a technical guideline to use Personal Identity Verification (PIV) Cards in facility access; enabling federal agencies to operate as government-wide interoperable enterprises."
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final"
+  published: 2018-07-29
+  authored-by:
+    - *NIST
   authorized-by:
     - *HSPD12
   ficam-services:
-    - Identity Management
+    - Identity Management - Identity Proofing
     - Credential Management
     - Access Management
     - Governance
-- &DODICAMSTRATEGY
-  type: Policy
-  shortName: "DoD ICAM Strategy"
-  longName: "Department of Defense Identity, Credential, and Access Management (ICAM) Strategy"
+- &PIVPRIV
+  type: Guidance
+  shortName: "PIV Privileged User Guide"
+  longName: "Best Practices for Privileged User PIV Authentication"
   description: >-
-    This strategy provides a set of goals focused on establishing measurable and achievable transformation 
-    of core ICAM elements to achieve ICAM activities. These core elements enable ICAM to be fast, reliable, 
-    secure, and auditable across the DoD enterprise in a manner enhancing user experience and supports the 
-    DoD Chief Information Officer's (CIO) ICAM vision.
-  published: 2020-03-30
-  externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
+    This white paper further explains the need for multi-factor PIV-based user authentication to take the place of password-based 
+    single-factor authentication for privileged users. It also provides best practices for agencies implementing PIV authentication 
+    for privileged users
+  published: 2016-04-21
+  externalURL: "https://doi.org/10.6028/NIST.CSWP.04212016"
   authored-by:
-    - *DOD
+    - *NIST
+  authorized-by:
+    - *M1916
+  ficam-services:
+    - Access Management - Privileged Access Management
+    - Credential Management
+    - Identity Management
+- &SP800205
+  type: Guidance
+  shortName: "NIST SP 800-205"
+  longName: "NIST Special Publication 800-205: Attribute Considerations for Access Control Systems"
+  description: >-
+    This document aims to provide federal agencies with a guide to attribute 
+    considerations with Attribute Evaluation Scheme examples for access control.
+  published: 2019-06-18
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-205.pdf"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+  ficam-services:
+    - Access Management
+- &SP80053
+  type: Guidance
+  shortName: "NIST SP 800-53"
+  longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
+  description: >-
+    This guideline provides a catalog of security and privacy controls for federal information systems and 
+    organizations and a process for selecting controls to protect organizational operations, assets, 
+    individuals, other organizations, and the Nation from a diverse set of threats.
+  published: 2020-12-10
+  externalURL: "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+  ficam-services:
+    - Identity Management
+- &SP80053A
+  type: Guidance
+  shortName: "NIST SP 800-53A"
+  longName: "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations"
+  description: >-
+    This guideline provides a set of procedures for conducting assessments of security controls and privacy 
+    controls employed within federal information systems and organizations. The assessment procedures, 
+    executed at various phases of the system development life cycle, are consistent with the security and 
+    privacy controls in NIST Special Publication 800-53, Revision 5.
+  published: 2022-01-25
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+- &SP800162
+  type: Guidance
+  shortName: "NIST SP 800-162"
+  longName: "NIST Special Publication 800-162: Guide to Attribute Based Access Control (ABAC) Definition and Considerations"
+  description: >-
+    This guideline provides federal agencies with a definition of ABAC. ABAC is a logical access control 
+    methodology in which authorization to perform a set of operations is determined by evaluating attributes 
+    associated with the subject, object, requested operations, and, in some cases, environment conditions 
+    against policy, rules, or relationships that describe the allowable operations for a given set of attributes.
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-162.pdf"
+  published: 2019-08-02
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+  ficam-services:
+    - Access Management
+- &SP800122
+  type: Guidance
+  shortName: "NIST SP 800-122"
+  longName: "NIST Special Publication 800-122: Guide to Protecting the Confidentiality of Personally Identifiable Information (PII)"
+  description: >-
+    This guideline assists federal agencies in protecting the confidentiality of a specific category of data 
+    commonly known as PII. This document provides practical, context-based guidance for identifying PII and 
+    determining what level of protection is appropriate for each instance of PII. The document also suggests 
+    safeguards that may offer appropriate levels of protection for PII and provides recommendations for 
+    developing response plans for breaches involving PII.
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf"
+  published: 2010-04-06
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
   ficam-services:
     - Identity Management
     - Credential Management
+- &NISTRMF
+  type: Guidance
+  shortName: "NIST RMF"
+  longName: "NIST Risk Management Framework"
+  description: >-
+    The Risk Management Framework provides a process that integrates security, privacy, and cyber supply 
+    chain risk management activities into the system development life cycle. The risk-based approach to 
+    control selection and specification considers effectiveness, efficiency, and constraints due to 
+    applicable laws, directives, Executive Orders, policies, standards, or regulations. Managing 
+    organizational risk is paramount to effective information security and privacy programs; the RMF approach 
+    can be applied to new and legacy systems, any type of system or technology (e.g., IoT, control systems), 
+    and within any type of organization regardless of size or sector.
+  externalURL: "https://csrc.nist.gov/projects/risk-management"
+  published: 2023-02-23
+  authored-by:
+    - *NIST
+- &SP80037
+  type: Guidance
+  shortName: SP 800-37
+  longName: "NIST Special Publication 800-37 Revision 2: Risk Management Framework for Information Systems and Organizations"
+  description: >-
+    This publication describes the Risk Management Framework (RMF) and provides guidelines for 
+    applying the RMF to information systems and organizations. The RMF provides a disciplined, 
+    structured, and flexible process for managing security and privacy risk that includes information 
+    security categorization; control selection, implementation, and assessment; system and 
+    common control authorizations; and continuous monitoring. The RMF includes activities to 
+    prepare organizations to execute the framework at appropriate risk management levels. The 
+    RMF also promotes near real-time risk management and ongoing information system and 
+    common control authorization through the implementation of continuous monitoring 
+    processes; provides senior leaders and executives with the necessary information to make 
+    efficient, cost-effective, risk management decisions about the systems supporting their missions 
+    and business functions; and incorporates security and privacy into the system development life 
+    cycle. Executing the RMF tasks links essential risk management processes at the system level to 
+    risk management processes at the organization level. In addition, it establishes responsibility 
+    and accountability for the controls implemented within an organization's information systems 
+    and inherited by those systems.
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf"
+  published: 2018-12-20
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+- &PRIVACYFRAMEWORK
+  type: Guidance
+  shortName: "NIST Privacy Framework"
+  longName: "The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management"
+  description: >-
+    The Privacy Framework is a voluntary tool intended to help organizations identify and manage 
+    privacy risk to build innovative products and services while protecting individuals' privacy. 
+    The Privacy Framework approach to privacy risk is to consider privacy events as potential problems 
+    individuals could experience arising from system, product, or service operations with data, whether 
+    in digital or non-digital form, through a complete lifecycle from data collection through disposal.
+  published: 2020-01-08
+  externalURL: "https://www.nist.gov/privacy-framework/privacy-framework"
+  authored-by:
+    - *NIST
+- &APPRATIONALIZATION
+  type: Guidance
+  shortName: "Application Rationalization Playbook"
+  longName: "The Application Rationalization Playbook: An Agency Guide to Portfolio Management"
+  description: >-
+    This playbook is a practical guide for application rationalization and IT portfolio management under 
+    the federal government's Cloud Smart initiatives. Application rationalization will help federal agencies 
+    mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve 
+    the delivery of key mission and business services. It requires buy-in from stakeholders across the 
+    enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, 
+    financial practitioners, acquisition and procurement experts, and end user communities. Rationalization 
+    efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable 
+    change.
+  published: 2019-06-01
+  externalURL: "https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf"
+  authored-by:
+    - *CIOCOUNCIL
+  authorized-by:
+    - *M1919
+- &FIPS199
+  type: Guidance
+  shortName: FIPS-199
+  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 199: Standards for Security Categorization of Federal Information and Information Systems"
+  description: >-
+    FIPS Publication 199 [provides] standards for categorizing information 
+    and information systems. Security categorization standards for information and information systems 
+    provide a common framework and understanding for expressing security that, for the federal 
+    government, promotes: (i) effective management and oversight of information security programs, 
+    including the coordination of information security efforts throughout the civilian, national security, 
+    emergency preparedness, homeland security, and law enforcement communities; and (ii) consistent 
+    reporting to the Office of Management and Budget (OMB) and Congress on the adequacy and 
+    effectiveness of information security policies, procedures, and practices.
+  published: 2004-02-01
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf"
+  authorized-by:
+    - *FISMA2014
+  authored-by:
+    - *NIST
+  ficam-services:
+    - Credential Management
+- &FIPS200
+  type: Guidance
+  shortName: FIPS-200
+  longName: "FEDERAL INFORMATION PROCESSING STANDARDS PUBLICATION 200: Minimum Security Requirements for Federal Information and Information Systems"
+  description: >-
+    FIPS Publication 200 specifies minimum security requirements for information and 
+    information systems supporting the executive agencies of the federal government and a risk-based
+    process for selecting the security controls necessary to satisfy the minimum security requirements.
+  published: 2004-03-01
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *FISMA2014
+  ficam-services:
+    - Credential Management
     - Access Management
-# GUIDANCE COMES LAST
+- &SP800171
+  type: Guidance
+  shortName: SP 800-171
+  longName: "NIST Special Publication 800-171 Revision 2: Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations"
+  description: >-
+    This publication provides agencies with recommended security requirements for protecting the 
+    confidentiality of Controlled Unclassified Information (CUI) when the information is resident 
+    in nonfederal systems and organizations; 
+    when the nonfederal organization is not collecting or maintaining information on behalf of a 
+    federal agency or using or operating a system on behalf of an agency; and where there are no 
+    specific safeguarding requirements for protecting the confidentiality of CUI prescribed by the 
+    authorizing law, regulation, or governmentwide policy for the CUI category listed in the CUI 
+    Registry.
+  published: 2021-01-28
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r2.pdf"
+  authored-by:
+    - *NIST
+  authorized-by:
+    - *EO13556
+  ficam-services:
+    - Access Management
+    - Credential Management
+- &HTTPSGUIDE
+  type: Guidance
+  shortName: HTTPS Compliance Guide
+  longName: "Compliance Guide: The HTTPS-Only Standard"
+  description: >-
+    This site contains a web-friendly version of the White House Office of Management and Budget memorandum 
+    M-15-13, “A Policy to Require Secure Connections across Federal Websites and Web Services”, and provides 
+    technical guidance and best practices to assist in its implementation.
+    It identifies an exception for CRL publication and OCSP.
+  externalURL: "https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https"
+  authored-by:
+    - *CIOCOUNCIL
+  authorized-by:
+    - *M1513
+- &PACSORDERGUIDE
+  type: Guidance
+  shortName: "PACS Ordering Guide"
+  longName: "Physical Access Control Systems (PACS) Customer Ordering Guide"
+  description: >-
+    This purpose of this document is create a comprehensive ordering guide that assists ordering
+    agencies, particularly contracting officers, to effectively use the GSA Multiple Award Schedules 
+    (MAS) to purchase total solutions for Physical Access Control Systems (PACS).
+  published: 2020-07-01
+  externalURL: "https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf"
+  authored-by:
+    - *GSA
+- &PIVEPACS
+  type: Guidance
+  shortName: "PIV in E-PACS"
+  longName: "Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)"
+  description: >-
+    The sole purpose of this document is to provide detailed technical and security guidance for leveraging 
+    PIV and PIV-I authentication mechanisms in a federal agency PACS to comply with directives such as 
+    [OMB M-11-11] and to provide interoperability across the federal enterprise, respectively.
+  published: 2014-03-26
+  externalURL: "https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf"
+  authored-by:
+    - *ICAMSC
+- &RISKMANAGEMENTFACILITIES
+  type: Guidance
+  shortName: "Risk Management Process for Federal Facilities"
+  longName: "The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard"
+  description: >-
+    The Risk Management Process for Federal Facilities: An Interagency Security Committee 
+    Standard (Standard), 2nd Edition defines the criteria and processes that those responsible for the 
+    security of a facility should use to determine its facility security level (FSL) and provides an 
+    integrated, single source of physical security countermeasures for all Federal facilities.
+  published: 2016-11-01
+  externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf"
+  authored-by:
+    - *ISC
+  authorized-by:
+    - *EO13286
+  ficam-services:
+    - Access Management
+- &80053PACSOVERLAY
+  type: Guidance
+  shortName: "ePACS 800-53 Overlay"
+  longName: "Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for electronic Physical Access Control Systems (ePACS)"
+  description: >-
+    [T]he purpose of this document is to assist those entities responsible for physical and cyber security: 
+    1. Provide minimum applicable IT security controls and related supplemental guidance to 
+    appropriately secure and administer ePACS 
+    2. Establish a relationship between IT system security controls and ePACS operational 
+    configurations using a standardized risk-based approach
+    3. Develop an initial foundation for an ePACS operational assessment by providing 
+    supplemental guidance for the implementation of authentication mechanisms in ePACS 
+    as defined in NIST [SP 800-116]
+    4. Define initial responsibilities for implementation and use of this overlay
+  published: 2020-12-24
+  externalURL: "https://www.idmanagement.gov/docs/pacs-800-53-overlay.pdf"
+  authored-by:
+    - *PACSMODWG
+  authorized-by:
+    - *M1917
+- &80053FPKIOVERLAY
+  type: Guidance
+  shortName: "FPKI 800-53 Overlay"
+  longName: "Security Control Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for Federal PKI Systems"
+  description: >-
+    While many NIST [SP 800-53] controls apply to FPKI service operators as written, some controls require 
+    specific interpretation or augmentation. This overlay leverages [COMMON] to tailor appropriate [SP 800-
+    53] controls to facilitate implementation.
+  published: 2021-02-26
+  externalURL: "https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf"
+  authored-by:
+    - *FPKIPA
 - &FIPS201
   type: Guidance
   shortName: "FIPS 201"
