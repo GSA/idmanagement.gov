@@ -1,9 +1,261 @@
 # yaml-language-server: $schema=http://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
+# CORE AUTHORITIES - White House and Congress - these are authorized by the constitution
 - &WH
   type: Authority
   shortName: "White House"
   longName: "The Office of the President of the United States of America"
   externalURL: "https://www.whitehouse.gov/"
+- &CONGRESS
+  type: Authority
+  shortName: "U.S. Congress"
+  longName: "United States Congress"
+  externalURL: "https://www.congress.gov/"
+# LAWS and Executive Orders (Authorized by WH and Congress)
+- &INTELREFORM2004
+  type: Law
+  shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
+  longName: "INTELLIGENCE REFORM AND TERRORISM PREVENTION ACT OF 2004"
+  description: >-
+    An act to reform the intelligence community and the intelligence and intelligence-related
+    activities of the United States Government, and for other purposes.
+  externalURL: "https://www.dni.gov/files/documents/IRTPA%202004.pdf"
+  published: 2004-12-17
+- &HSPD12
+  type: Law
+  shortName: "HSPD-12"
+  longName: "Homeland Security Presidential Directive 12"
+  published: 2004-08-27
+  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
+  authored-by:
+    - *WH
+  scope:
+    - "Workforce Identity"
+  ficam-services:
+    - "Identity Management - Identity Proofing"
+- &FISMA2014
+  type: Law
+  shortName: "FISMA 2014"
+  longName: "Federal Information Security Modernization Act of 2014"
+  description: >-
+    The purposes of this subchapter are to [...] provide a comprehensive framework for 
+    ensuring the effectiveness of information security controls over information resources 
+    that support Federal operations and assets.
+    NIST is responsible for developing information security standards and guidelines, 
+    including minimum requirements for federal information systems. Such information security 
+    standards and guidelines shall not apply to national security systems without the express 
+    approval of the appropriate federal officials exercising policy authority over such systems.
+  published: 2014-12-18
+  externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
+  ficam-services:
+    - "Governance - Identity Governance"
+- &FITARA2017
+  type: Law
+  shortName: "FITARA Enhancement Act of 2017"
+  longName: "Federal Information Technology Acquisition Reform Enhancement Act of 2017"
+  description: >-
+    To amend title 40, United States Code, to eliminate the sunset of 
+    certain provisions relating to information technology, to amend the 
+    National Defense Authorization Act for Fiscal Year 2015 to extend the 
+    sunset relating to the Federal Data Center Consolidation Initiative, and 
+    for other purposes.
+  published: 2017-11-21
+  externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
+- &EO12968
+  type: Law
+  shortName: "E.O. 12968"
+  longName: "Executive Order 12968: Access to Classified Information"
+  description: >-
+    This order establishes a uniform Federal personnel security program for
+    employees who will be considered for initial or continued access to classified
+    information.
+  published: 1995-08-07
+  externalURL: "https://www.federalregister.gov/d/95-19654"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
+- &EO13467
+  type: Law
+  shortName: "E.O. 13467"
+  longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
+  description: >-
+    [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
+    suitability for Government employment, contractor employee fitness, and eligibility for access to classified 
+    information, while taking appropriate account of title III of Public Law 108-458
+  published: 2008-06-30
+  externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
+  authored-by:
+    - *WH
+  amends:
+    - *EO12968
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
+- &PRIVACYACT1974
+  type: Law
+  shortName: "Privacy Act of 1974"
+  longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a"
+  description: >-
+    This Act protects certain federal government records pertaining to individuals. 
+    In particular, the Act covers systems of records that an agency maintains and 
+    retrieves by an individual's name or other personal identifier, such as a Social 
+    Security Number.
+  published: 1974-12-31
+  externalURL: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section552a&num=0&edition=prelim"
+  ficam-services:
+    - Identity Management
+    - Governance
+- &ESIGN2000
+  type: Law
+  shortName: "E-SIGN Act of 2000"
+  longName: "Electronic Signatures in Global and National Commerce Act"
+  description: >-
+    This Act facilitates the use of electronic records and electronic signatures in interstate and 
+    foreign commerce by ensuring the validity and legal effect of electronic contracts.
+  published: 2000-06-30
+  externalURL: "https://www.govinfo.gov/content/pkg/USCODE-2021-title15/html/USCODE-2021-title15-chap96.htm"
+  ficam-services:
+    - Federation
+    - Governance
+- &GPEA1998
+  type: Law
+  shortName: "Government Paperwork Elimination Act"
+  longName: "Government Paperwork Elimination Act of 1998"
+  description: >-
+    This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit 
+    information or transact with the agency electronically when possible and to maintain records electronically when possible. 
+    This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, 
+    validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a 
+    range of electronic signature alternatives.
+  published: 1998-10-21
+  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
+  ficam-services:
+    - Governance
+- &EO13681
+  type: Law
+  shortName: "E.O. 13681"
+  longName: "Executive Order 13681: Improving the Security of Consumer Financial Transactions"
+  description: >-
+    "[T]o improve the security of consumer financial transactions in both the private and public sectors."
+    Proposes improved security of government payments and identity theft remediation.
+  published: 2014-10-17
+  externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Identity Management
+    - Federation
+    - Governance
+- &HOMELANDSECURITYACT
+  type: Law
+  shortName: "Homeland Security Act of 2002"
+  longName: "Homeland Security Act of 2002"
+  description: >-
+    An act To establish the Department of Homeland Security, and for other purposes
+  published: 2002-11-25
+  externalURL: "https://www.dhs.gov/sites/default/files/publications/hr_5005_enr.pdf"
+  ficam-services:
+    - Governance
+- &CISAACT
+  type: Law
+  shortName: "Cybersecurity and Infrastructure Security Agency Act"
+  longName: "Cybersecurity and Infrastructure Security Agency Act"
+  description: >-
+    An Act to amend the Homeland Security Act of 2002 to authorize the Cybersecurity and 
+    Infrastructure Security Agency of the Department of Homeland Security, and 
+    for other purposes.
+  published: 2018-11-16
+  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-115publ278/pdf/PLAW-115publ278.pdf"
+  amends:
+    - *HOMELANDSECURITYACT
+  ficam-services:
+    - Governance
+- &EO13636
+  type: Law
+  shortName: "E.O. 13636"
+  longName: "Executive Order 13636: Improving Critical Infrastructure Cybersecurity"
+  description: >-
+    This Executive Order proposes development of a process of cybersecurity information sharing by the 
+    government for attacks against critical infrastructure managed by the private sector.
+  published: 2013-02-12
+  externalURL: "https://www.federalregister.gov/documents/2013/02/19/2013-03915/improving-critical-infrastructure-cybersecurity"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Federation
+    - Governance
+- &PPD21
+  type: Law
+  shortName: "PPD-21"
+  longName: "Presidential Policy Directive 21: Critical Infrastructure Security and Resilience"
+  description: >-
+    The Presidential Policy Directive (PPD) on Critical Infrastructure Security and Resilience advances 
+    a national unity of effort to strengthen and maintain secure, functioning, and resilient critical 
+    infrastructure.
+  published: 2013-02-12
+  externalURL: "https://www.cisa.gov/sites/default/files/2023-01/ppd-21-critical-infrastructure-and-resilience-508_0.pdf"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Federation
+    - Governance
+- &EO13556
+  type: Law
+  shortName: E.O. 13556
+  longName: "Executive Order 13556: Controlled Unclassified Information"
+  description: >-
+    This order establishes an open and uniform program for managing information that requires safeguarding 
+    or dissemination controls pursuant to and consistent with law, regulations, and Government-wide policies, 
+    excluding information that is classified under Executive Order 13526 of December 29, 2009, or the Atomic 
+    Energy Act, as amended.
+  published: 2010-11-09
+  externalURL: "https://www.federalregister.gov/documents/2010/11/09/2010-28360/controlled-unclassified-information"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Federation
+    - Governance
+- &EO13286
+  type: Law
+  shortName: E.O. 13286
+  longName: "Executive Order 13286: Amendment of Executive Orders, and Other Actions, in Connection With the Transfer of Certain Functions to the Secretary of Homeland Security"
+  description: >-
+    Amends an earlier Executive Order (E.O. 12977). Defines a central federal function to define security for 
+    physical access to federal facilities.
+  externalURL: "https://www.federalregister.gov/documents/2003/03/05/03-5343/amendment-of-executive-orders-and-other-actions-in-connection-with-the-transfer-of-certain-functions"
+  published: 2003-05-03
+  authored-by:
+    - *WH
+- &EO14028
+  type: Law
+  shortName: "E.O. 14028"
+  longName: "Executive Order 14028: Improving the Nation's Cybersecurity"
+  description: >-
+    Directs federal agencies to develop a plan to implement a Zero Trust Architecture, and Multi-Factor Authentication.
+  published: 2021-05-17
+  externalURL: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
+  authored-by:
+    - *WH
+  ficam-services:
+    - Governance
+- &IOTCYBERACT
+  type: Law
+  shortName: "IoT Cybersecurity Improvement Act"
+  longName: "Internet of Things Cybersecurity Improvement Act of 2020"
+  description: >-
+    Directs NIST to develop and publish standards and guidelines for the Federal Government on the 
+    appropriate use and management by agencies of Internet of Things devices, including Identiy Management
+    recommendations.
+  published: 2020-09-22
+  externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
+  ficam-services:
+    - Governance
 - &GAO
   type: Authority
   shortName: GAO
@@ -83,15 +335,6 @@
   description: >-
     OPM works in several broad categories to lead and serve the Federal Government in enterprise human 
     resource management by delivering policies and services to achieve a trusted effective civilian workforce.
-- &INTELREFORM2004
-  type: Law
-  shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
-  longName: "INTELLIGENCE REFORM AND TERRORISM PREVENTION ACT OF 2004"
-  description: >-
-    An act to reform the intelligence community and the intelligence and intelligence-related
-    activities of the United States Government, and for other purposes.
-  externalURL: "https://www.dni.gov/files/documents/IRTPA%202004.pdf"
-  published: 2004-12-17
 - &DNI
   type: Authority
   shortName: DNI
@@ -101,19 +344,7 @@
     insightful intelligence possible
   authorized-by:
     - *INTELREFORM2004
-- &HSPD12
-  type: Law
-  shortName: "HSPD-12"
-  longName: "Homeland Security Presidential Directive 12"
-  published: 2004-08-27
-  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
-  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
-  authored-by:
-    - *WH
-  scope:
-    - "Workforce Identity"
-  ficam-services:
-    - "Identity Management - Identity Proofing"
+
 - &FIPS201
   type: Guidance
   shortName: "FIPS 201"
@@ -144,22 +375,6 @@
     - *OMB
   ficam-services:
     - "Identity Management - Identity Proofing"
-- &FISMA2014
-  type: Law
-  shortName: "FISMA 2014"
-  longName: "Federal Information Security Modernization Act of 2014"
-  description: >-
-    The purposes of this subchapter are to [...] provide a comprehensive framework for 
-    ensuring the effectiveness of information security controls over information resources 
-    that support Federal operations and assets.
-    NIST is responsible for developing information security standards and guidelines, 
-    including minimum requirements for federal information systems. Such information security 
-    standards and guidelines shall not apply to national security systems without the express 
-    approval of the appropriate federal officials exercising policy authority over such systems.
-  published: 2014-12-18
-  externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
-  ficam-services:
-    - "Governance - Identity Governance"
 - &CIOCOUNCIL
   type: Authority
   shortName: "Federal CIO Council"
@@ -348,18 +563,6 @@
     - *COMMONCP
   implemented-by:
     - *GSA
-- &FITARA2017
-  type: Law
-  shortName: "FITARA Enhancement Act of 2017"
-  longName: "Federal Information Technology Acquisition Reform Enhancement Act of 2017"
-  description: >-
-    To amend title 40, United States Code, to eliminate the sunset of 
-    certain provisions relating to information technology, to amend the 
-    National Defense Authorization Act for Fiscal Year 2015 to extend the 
-    sunset relating to the Federal Data Center Consolidation Initiative, and 
-    for other purposes.
-  published: 2017-11-21
-  externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
 - &M1919
   type: Policy
   shortName: M-19-19
@@ -723,42 +926,6 @@
     - Access Management - Privileged Access Management
     - Credential Management
     - Identity Management
-- &EO12968
-  type: Law
-  shortName: "E.O. 12968"
-  longName: "Executive Order 12968: Access to Classified Information"
-  description: >-
-    This order establishes a uniform Federal personnel security program for
-    employees who will be considered for initial or continued access to classified
-    information.
-  published: 1995-08-07
-  externalURL: "https://www.federalregister.gov/d/95-19654"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-    - Governance
-- &EO13467
-  type: Law
-  shortName: "E.O. 13467"
-  longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
-  description: >-
-    [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
-    suitability for Government employment, contractor employee fitness, and eligibility for access to classified 
-    information, while taking appropriate account of title III of Public Law 108-458
-  published: 2008-06-30
-  externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
-  authored-by:
-    - *WH
-  amends:
-    - *EO12968
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-    - Governance
 - &SPRINGERMEMO
   type: Policy
   shortName: "Springer Memo"
@@ -820,46 +987,6 @@
     - Credential Management - Generation & Issuance
     - Credential Management - Revocation
     - Federation - Policy Alignment
-- &PRIVACYACT1974
-  type: Law
-  shortName: "Privacy Act of 1974"
-  longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a"
-  description: >-
-    This Act protects certain federal government records pertaining to individuals. 
-    In particular, the Act covers systems of records that an agency maintains and 
-    retrieves by an individual's name or other personal identifier, such as a Social 
-    Security Number.
-  published: 1974-12-31
-  externalURL: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section552a&num=0&edition=prelim"
-  ficam-services:
-    - Identity Management
-    - Governance
-- &ESIGN2000
-  type: Law
-  shortName: "E-SIGN Act of 2000"
-  longName: "Electronic Signatures in Global and National Commerce Act"
-  description: >-
-    This Act facilitates the use of electronic records and electronic signatures in interstate and 
-    foreign commerce by ensuring the validity and legal effect of electronic contracts.
-  published: 2000-06-30
-  externalURL: "https://www.govinfo.gov/content/pkg/USCODE-2021-title15/html/USCODE-2021-title15-chap96.htm"
-  ficam-services:
-    - Federation
-    - Governance
-- &GPEA1998
-  type: Law
-  shortName: "Government Paperwork Elimination Act"
-  longName: "Government Paperwork Elimination Act of 1998"
-  description: >-
-    This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit 
-    information or transact with the agency electronically when possible and to maintain records electronically when possible. 
-    This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, 
-    validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a 
-    range of electronic signature alternatives.
-  published: 1998-10-21
-  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
-  ficam-services:
-    - Governance
 - &M1903
   type: Policy
   shortName: "M-19-03"
@@ -892,21 +1019,6 @@
     - *PRIVACYACT1974
     - *FISMA2014
   ficam-services:
-    - Federation
-    - Governance
-- &EO13681
-  type: Law
-  shortName: "E.O. 13681"
-  longName: "Executive Order 13681: Improving the Security of Consumer Financial Transactions"
-  description: >-
-    "[T]o improve the security of consumer financial transactions in both the private and public sectors."
-    Proposes improved security of government payments and identity theft remediation.
-  published: 2014-10-17
-  externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Identity Management
     - Federation
     - Governance
 - &SP800205
@@ -1046,30 +1158,6 @@
   externalURL: "https://www.nist.gov/privacy-framework/privacy-framework"
   authored-by:
     - *NIST
-- &HOMELANDSECURITYACT
-  type: Law
-  shortName: "Homeland Security Act of 2002"
-  longName: "Homeland Security Act of 2002"
-  description: >-
-    An act To establish the Department of Homeland Security, and for other purposes
-  published: 2002-11-25
-  externalURL: "https://www.dhs.gov/sites/default/files/publications/hr_5005_enr.pdf"
-  ficam-services:
-    - Governance
-- &CISAACT
-  type: Law
-  shortName: "Cybersecurity and Infrastructure Security Agency Act"
-  longName: "Cybersecurity and Infrastructure Security Agency Act"
-  description: >-
-    An Act to amend the Homeland Security Act of 2002 to authorize the Cybersecurity and 
-    Infrastructure Security Agency of the Department of Homeland Security, and 
-    for other purposes.
-  published: 2018-11-16
-  externalURL: "https://www.govinfo.gov/content/pkg/PLAW-115publ278/pdf/PLAW-115publ278.pdf"
-  amends:
-    - *HOMELANDSECURITYACT
-  ficam-services:
-    - Governance
 - &DHS
   type: Authority
   shortName: "DHS"
@@ -1127,35 +1215,6 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1919
-- &EO13636
-  type: Law
-  shortName: "E.O. 13636"
-  longName: "Executive Order 13636: Improving Critical Infrastructure Cybersecurity"
-  description: >-
-    This Executive Order proposes development of a process of cybersecurity information sharing by the 
-    government for attacks against critical infrastructure managed by the private sector.
-  published: 2013-02-12
-  externalURL: "https://www.federalregister.gov/documents/2013/02/19/2013-03915/improving-critical-infrastructure-cybersecurity"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Federation
-    - Governance
-- &PPD21
-  type: Law
-  shortName: "PPD-21"
-  longName: "Presidential Policy Directive 21: Critical Infrastructure Security and Resilience"
-  description: >-
-    The Presidential Policy Directive (PPD) on Critical Infrastructure Security and Resilience advances 
-    a national unity of effort to strengthen and maintain secure, functioning, and resilient critical 
-    infrastructure.
-  published: 2013-02-12
-  externalURL: "https://www.cisa.gov/sites/default/files/2023-01/ppd-21-critical-infrastructure-and-resilience-508_0.pdf"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Federation
-    - Governance
 - &FAR
   type: Policy
   shortName: "FAR"
@@ -1207,22 +1266,7 @@
   ficam-services:
     - Credential Management
     - Access Management
-- &EO13556
-  type: Law
-  shortName: E.O. 13556
-  longName: "Executive Order 13556: Controlled Unclassified Information"
-  description: >-
-    This order establishes an open and uniform program for managing information that requires safeguarding 
-    or dissemination controls pursuant to and consistent with law, regulations, and Government-wide policies, 
-    excluding information that is classified under Executive Order 13526 of December 29, 2009, or the Atomic 
-    Energy Act, as amended.
-  published: 2010-11-09
-  externalURL: "https://www.federalregister.gov/documents/2010/11/09/2010-28360/controlled-unclassified-information"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Federation
-    - Governance
+
 - &SP800171
   type: Guidance
   shortName: SP 800-171
@@ -1259,17 +1303,6 @@
     - *CIOCOUNCIL
   authorized-by:
     - *M1513
-- &EO13286
-  type: Law
-  shortName: E.O. 13286
-  longName: "Executive Order 13286: Amendment of Executive Orders, and Other Actions, in Connection With the Transfer of Certain Functions to the Secretary of Homeland Security"
-  description: >-
-    Amends an earlier Executive Order (E.O. 12977). Defines a central federal function to define security for 
-    physical access to federal facilities.
-  externalURL: "https://www.federalregister.gov/documents/2003/03/05/03-5343/amendment-of-executive-orders-and-other-actions-in-connection-with-the-transfer-of-certain-functions"
-  published: 2003-05-03
-  authored-by:
-    - *WH
 - &ISC
   type: Authority
   shortName: ISC
@@ -1411,18 +1444,6 @@
   externalURL: "https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf"
   authored-by:
     - *FPKIPA
-- &EO14028
-  type: Law
-  shortName: "E.O. 14028"
-  longName: "Executive Order 14028: Improving the Nation's Cybersecurity"
-  description: >-
-    Directs federal agencies to develop a plan to implement a Zero Trust Architecture, and Multi-Factor Authentication.
-  published: 2021-05-17
-  externalURL: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Governance
 - &M2209
   type: Policy
   shortName: "M-22-09"
@@ -1686,7 +1707,7 @@
     promote defined goals in agency eligibility determinations to issue HSPD-12 personal
     identity verification (PIV) credentials for access to federally controlled facilities and
     information systems: the protection of the life, safety, property, or health of employees,
-    contractors, vendors or visitors to Federal facilities; the protection of the Government’s
+    contractors, vendors or visitors to Federal facilities; the protection of the Government's
     physical assets, information systems, records, including privileged, proprietary,
     financial or medical records; and the privacy of the individuals whose data the
     Government holds in its systems.
@@ -1706,7 +1727,7 @@
 - &5CFR731
   type: Policy
   shortName: "5 CFR 731"
-  longName: ""
+  longName: "Code of Federal Regulations Chapter 5, Part 731"
   description: >-
     Establish criteria and procedures for making determinations of suitability and for taking suitability 
     actions during the onboarding of employmees in covered positions.
@@ -1838,18 +1859,6 @@
     - *SP80063
   ficam-services:
     - Access Management - Authentication
-- &IOTCYBERACT
-  type: Law
-  shortName: "IoT Cybersecurity Improvement Act"
-  longName: "Internet of Things Cybersecurity Improvement Act of 2020"
-  description: >-
-    Directs NIST to develop and publish standards and guidelines for the Federal Government on the 
-    appropriate use and management by agencies of Internet of Things devices, including Identiy Management
-    recommendations.
-  published: 2020-09-22
-  externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
-  ficam-services:
-    - Governance
 - &SP800213
   type: Standard
   shortName: "NIST SP 800-213"
