@@ -303,21 +303,7 @@
     its mission through a variety of activities, including financial audits, program reviews, investigations, 
     legal support, and policy analyses.
   externalURL: "https://www.gao.gov/"
-- &FIPS201
-  type: Guidance
-  shortName: "FIPS 201"
-  longName: "Personal Identity Verification (PIV) of Federal Employees and Contractors"
-  published: 2022-01-01
-  description: "This document establishes a standard for a Personal Identity Verification (PIV) system that meets the control and security objectives of Homeland Security Presidential Directive-12."
-  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-3.pdf"
-  scope:
-    - "Workforce Identity"
-  ficam-services:
-    - "Identity Management - Identity Proofing"
-  authorized-by:
-    - *HSPD12
-  authored-by:
-    - *NIST
+# POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
 - &M0524
   type: "Policy"
   shortName: "M-05-24"
@@ -333,7 +319,6 @@
     - *OMB
   ficam-services:
     - "Identity Management - Identity Proofing"
-
 - &FICAMARCH
   type: Guidance
   shortName: "FICAM Architecture"
@@ -1740,6 +1725,21 @@
     - Credential Management
     - Access Management
 # GUIDANCE COMES LAST
+- &FIPS201
+  type: Guidance
+  shortName: "FIPS 201"
+  longName: "Personal Identity Verification (PIV) of Federal Employees and Contractors"
+  published: 2022-01-01
+  description: "This document establishes a standard for a Personal Identity Verification (PIV) system that meets the control and security objectives of Homeland Security Presidential Directive-12."
+  externalURL: "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-3.pdf"
+  scope:
+    - "Workforce Identity"
+  ficam-services:
+    - "Identity Management - Identity Proofing"
+  authorized-by:
+    - *HSPD12
+  authored-by:
+    - *NIST
 - &ICAMACQUISITION
   type: Guidance
   shortName: "ICAM Acquisition Guide"
