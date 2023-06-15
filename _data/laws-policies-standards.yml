@@ -1611,15 +1611,6 @@
     - *ICAMSC
   ficam-services:
     - Governance
-- &CIC
-  type: Guidance
-  shortName: "Cloud Information Center"
-  longName: "Cloud Information Center"
-  description: >-
-    Provides a Managed Collection of Cloud Computing Best Practices, Guidance, and Templates.
-  externalURL: "https://cic.gsa.gov/"
-  authored-by:
-    - *GSA
 - &NISTIR8149
   type: Guidance
   shortName: "NISTIR 8149"
