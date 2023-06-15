@@ -1400,9 +1400,8 @@
   shortName: "M-22-09"
   longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principles"
   description: >-
-    The goal of this strategy is to accelerate agencies toward a shared baseline of early zero trust 
-    maturity. Moving to a zero trust architecture will be a multi-year journey for agencies, and 
-    the federal government will learn and adjust as new technologies and practices emerge.
+    This strategy places significant emphasis on stronger enterprise identity and access controls, 
+    including multi-factor authentication (MFA).
   published: 2022-01-26
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
   authored-by:
