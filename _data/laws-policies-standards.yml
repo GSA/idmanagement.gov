@@ -1677,22 +1677,6 @@
   ficam-services:
     - Access Management - Authentication
     - Access Management - Authorization
-- &INFOSHARINGSTRATEGY
-  type: Law
-  shortName: "National Strategy for Information Sharing and Safeguarding"
-  longName: "National Strategy for Information Sharing and Safeguarding"
-  description: >-
-    [T]he 2012 National Strategy for Information Sharing and 
-    Safeguarding (hereafter referred to as the Strategy) provides guidance for more efective integration and 
-    implementation of policies, processes, standards, and technologies to promote secure and responsible 
-    national security information sharing
-  published: 2012-12-01
-  externalURL: "https://www.dhs.gov/sites/default/files/publications/15_1026_NSI_National-Strategy-Information-Sharing-Safeguarding.pdf"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Federation
-    - Governance
 - &SP180018
   type: Guidance
   shortName: "NIST SP 1800-18"
@@ -1746,21 +1730,6 @@
     - *CMU
   ficam-services:
     - Access Management - Privileged Access Management
-- &M2131
-  type: Policy
-  shortName: "M-21-31"
-  longName: "OMB Memo 21-31: Improving the Federal Government's Investigative and Remediation Capabilities Related to Cybersecurity Incidents"
-  description: >-
-    This memo establishes a maturity model to guide the implementation of requirements 
-    across four Event Logging (EL) tiers.
-  published: 2021-08-27
-  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *EO14028
-  ficam-services:
-    - Federation
 - &CREDSTANDARDS
   type: Policy
   shortName: "Credentialing Standards Memo 2020"
@@ -1787,26 +1756,13 @@
     - Identity Management
     - Credential Management
     - Access Management
-- &NICEFRAMEWORK
-  type: Guidance
-  shortName: "SP 800-181"
-  longName: "NIST Special Publication 800-181 Revision 1 Workforce Framework for Cybersecurity (NICE Framework)"
-  description: >-
-    The National Initiative for Cybersecurity Education (NICE) recognizes that those 
-    performing cybersecurity work — including students, job seekers, and employees — are lifelong 
-    learners throughout their efforts to emphasize and address cybersecurity implications across 
-    many domains.
-  published: 2020-11-16
-  externalURL: "https://doi.org/10.6028/NIST.SP.800-181r1"
-  authored-by:
-    - *NIST
 - &5CFR731
   type: Policy
   shortName: "5 CFR 731"
   longName: ""
   description: >-
     Establish criteria and procedures for making determinations of suitability and for taking suitability 
-    actions regarding employment in covered positions
+    actions during the onboarding of employmees in covered positions.
   published: 2008-04-15
   externalURL: "https://www.ecfr.gov/current/title-5/chapter-I/subchapter-B/part-731"
   authorized-by:
@@ -1828,16 +1784,6 @@
     - *NIST
   ficam-services:
     - Credential Management
-- &RFC8485
-  type: Standard
-  shortName: "RFC 8485"
-  longName: "Request for Comments (RFC) 8485: Vectors of Trust"
-  description: >-
-    This document defines a mechanism for describing and signaling several aspects of a digital 
-    identity transaction and its participants. These aspects are used to determine the amount of 
-    trust to be placed in that transaction.
-  published: 2018-10-18
-  externalURL: "https://datatracker.ietf.org/doc/html/rfc8485"
 - &TRANSITIONMFA
   type: Guidance
   shortName: "Transition to Multi-factor Authentication"
