@@ -321,6 +321,30 @@
     its mission through a variety of activities, including financial audits, program reviews, investigations, 
     legal support, and policy analyses.
   externalURL: "https://www.gao.gov/"
+- &CIOCOUNCIL
+  type: Authority
+  shortName: "Federal CIO Council"
+  longName: "Federal CIO Council"
+  description: "The Federal CIO Council is the principal interagency forum to improve agency practices related to the design, acquisition, development, modernization, sustainment, use, sharing, and performance of Federal Government information technology (IT)."
+  externalURL: "https://www.cio.gov/"
+  authorized-by:
+    - *FISMA2014
+- &CISOCOUNCIL
+  type: Authority
+  shortName: "Federal CISO Council"
+  longName: "Federal CISO Council"
+  description: "The Federal Chief Information Security Officer (CISO) Council is the primary body for inter-agency CISO collaboration and communication. The Council is led by the Federal CISO, who works in the White House Office of Management and Budget (OMB), and a co-chair who's a member of the Council, elected to serve in that role."
+  externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
+  subgroup-of:
+    - *CIOCOUNCIL
+- &ICAMSC
+  type: Authority
+  shortName: "ICAMSC"
+  longName: "Identity, Credential, and Access Management Subcommittee"
+  description: "The Identity, Credential, and Access Management Subcommittee (ICAMSC) is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management."
+  externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
+  subgroup-of:
+    - *CISOCOUNCIL
 # POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
 - &M0524
   type: "Policy"
