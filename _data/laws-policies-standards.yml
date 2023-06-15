@@ -665,7 +665,7 @@
     - Federation - Attribute Exchange
 - &A108
   type: Policy
-  shortName: "OMB A-108"
+  shortName: "OMB Circular A-108"
   longName: "OMB Circular A-108: Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act"
   description: >-
     This circular describes agency responsibilities for implementing the review, reporting, and 
