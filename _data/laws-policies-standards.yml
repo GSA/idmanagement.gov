@@ -18,8 +18,8 @@
   shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
   longName: "INTELLIGENCE REFORM AND TERRORISM PREVENTION ACT OF 2004"
   description: >-
-    An act to reform the intelligence community and the intelligence and intelligence-related
-    activities of the United States Government, and for other purposes.
+    Established the office of the Directory of National Intelligence (DNI). DNI has contributed
+    to guidance on background checks for Federal Employees as part of the Identity Proofing Process.
   externalURL: "https://www.dni.gov/files/documents/IRTPA%202004.pdf"
   published: 2004-12-17
   authored-by:
@@ -29,7 +29,9 @@
   shortName: "HSPD-12"
   longName: "Homeland Security Presidential Directive 12"
   published: 2004-08-27
-  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
+  description: >-
+    Directive requires the development and agency implementation of a mandatory, government-wide standard 
+    for secure and reliable forms of identification for Federal employees and contractors.
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
   authored-by:
     - *WH
@@ -42,13 +44,8 @@
   shortName: "FISMA 2014"
   longName: "Federal Information Security Modernization Act of 2014"
   description: >-
-    The purposes of this subchapter are to [...] provide a comprehensive framework for 
-    ensuring the effectiveness of information security controls over information resources 
-    that support Federal operations and assets.
-    NIST is responsible for developing information security standards and guidelines, 
-    including minimum requirements for federal information systems. Such information security 
-    standards and guidelines shall not apply to national security systems without the express 
-    approval of the appropriate federal officials exercising policy authority over such systems.
+    Directed NIST and OMB to provide updated guidance for the modernization of Federal IT Systems, and established
+    the Federal CIO Council.
   published: 2014-12-18
   externalURL: "https://www.congress.gov/113/plaws/publ283/PLAW-113publ283.pdf"
   ficam-services:
@@ -60,11 +57,9 @@
   shortName: "FITARA Enhancement Act of 2017"
   longName: "Federal Information Technology Acquisition Reform Enhancement Act of 2017"
   description: >-
-    To amend title 40, United States Code, to eliminate the sunset of 
-    certain provisions relating to information technology, to amend the 
-    National Defense Authorization Act for Fiscal Year 2015 to extend the 
-    sunset relating to the Federal Data Center Consolidation Initiative, and 
-    for other purposes.
+    Extended the authorization for the Data Center Consolidation Act, which encourages the use
+    of Cloud Services by Federal Agencies where appropriate. We continue to update our guidance 
+    to address the requirements of cloud implementation of federal services.
   published: 2017-11-21
   externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
   authored-by:
@@ -74,9 +69,10 @@
   shortName: "E.O. 12968"
   longName: "Executive Order 12968: Access to Classified Information"
   description: >-
-    This order establishes a uniform Federal personnel security program for
+    This order established a uniform Federal personnel security program for
     employees who will be considered for initial or continued access to classified
-    information.
+    information. The PIV eligibility requirements have been adapted from the work performed
+    to support this executive order.
   published: 1995-08-07
   externalURL: "https://www.federalregister.gov/d/95-19654"
   authored-by:
@@ -91,9 +87,8 @@
   shortName: "E.O. 13467"
   longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
   description: >-
-    [T]o ensure an efficient, practical, reciprocal, and aligned system for investigating and determining 
-    suitability for Government employment, contractor employee fitness, and eligibility for access to classified 
-    information, while taking appropriate account of title III of Public Law 108-458
+    This Executive Order mandates a common background check process across the civilian, unclassified 
+    federal government, leading to acceptance of PIV cards across agency boundaries.
   published: 2008-06-30
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
   authored-by:
@@ -127,7 +122,8 @@
   longName: "Electronic Signatures in Global and National Commerce Act"
   description: >-
     This Act facilitates the use of electronic records and electronic signatures in interstate and 
-    foreign commerce by ensuring the validity and legal effect of electronic contracts.
+    foreign commerce by ensuring the validity and legal effect of electronic contracts. This act led to the
+    creation of the Federal PKI.
   published: 2000-06-30
   externalURL: "https://www.govinfo.gov/content/pkg/USCODE-2021-title15/html/USCODE-2021-title15-chap96.htm"
   authored-by:
@@ -140,11 +136,12 @@
   shortName: "Government Paperwork Elimination Act"
   longName: "Government Paperwork Elimination Act of 1998"
   description: >-
-    This Act requires federal agencies to allow individuals or entities that deal with the agencies the option to submit 
-    information or transact with the agency electronically when possible and to maintain records electronically when possible. 
-    This Act specifically states that electronic records and their related electronic signatures cannot be denied legal effect, 
-    validity, or enforceability just because they are in electronic form. This Act also encourages federal government use of a 
-    range of electronic signature alternatives.
+    This Act requires federal agencies to allow individuals or entities that deal with the agencies the 
+    option to submit information or transact with the agency electronically when possible and to maintain 
+    records electronically when possible. This Act specifically states that electronic records and their 
+    related electronic signatures cannot be denied legal effect, validity, or enforceability just because 
+    they are in electronic form. This Act also encourages federal government use of a range of electronic 
+    signature alternatives.
   published: 1998-10-21
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-105publ277/html/PLAW-105publ277.htm"
   authored-by:
@@ -156,8 +153,8 @@
   shortName: "E.O. 13681"
   longName: "Executive Order 13681: Improving the Security of Consumer Financial Transactions"
   description: >-
-    "[T]o improve the security of consumer financial transactions in both the private and public sectors."
-    Proposes improved security of government payments and identity theft remediation.
+    Proposes improved security for government payments and identity theft remediation, encouraging deployment
+    of better citizen identity technologies.
   published: 2014-10-17
   externalURL: "https://www.govinfo.gov/content/pkg/FR-2014-10-23/pdf/2014-25439.pdf"
   authored-by:
@@ -171,7 +168,8 @@
   shortName: "Homeland Security Act of 2002"
   longName: "Homeland Security Act of 2002"
   description: >-
-    An act To establish the Department of Homeland Security, and for other purposes
+    This act established the Department of Homeland Security, which provides significant input to the development
+    of FICAM standards.
   published: 2002-11-25
   externalURL: "https://www.dhs.gov/sites/default/files/publications/hr_5005_enr.pdf"
   authored-by:
@@ -183,9 +181,8 @@
   shortName: "Cybersecurity and Infrastructure Security Agency Act"
   longName: "Cybersecurity and Infrastructure Security Agency Act"
   description: >-
-    An Act to amend the Homeland Security Act of 2002 to authorize the Cybersecurity and 
-    Infrastructure Security Agency of the Department of Homeland Security, and 
-    for other purposes.
+    This act authorized the creation of the Cybersecurity and Infrastructure Security Agency 
+    under the Department of Homeland Security.
   published: 2018-11-16
   externalURL: "https://www.govinfo.gov/content/pkg/PLAW-115publ278/pdf/PLAW-115publ278.pdf"
   authored-by:
@@ -194,44 +191,14 @@
     - *HOMELANDSECURITYACT
   ficam-services:
     - Governance
-- &EO13636
-  type: Law
-  shortName: "E.O. 13636"
-  longName: "Executive Order 13636: Improving Critical Infrastructure Cybersecurity"
-  description: >-
-    This Executive Order proposes development of a process of cybersecurity information sharing by the 
-    government for attacks against critical infrastructure managed by the private sector.
-  published: 2013-02-12
-  externalURL: "https://www.federalregister.gov/documents/2013/02/19/2013-03915/improving-critical-infrastructure-cybersecurity"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Federation
-    - Governance
-- &PPD21
-  type: Law
-  shortName: "PPD-21"
-  longName: "Presidential Policy Directive 21: Critical Infrastructure Security and Resilience"
-  description: >-
-    The Presidential Policy Directive (PPD) on Critical Infrastructure Security and Resilience advances 
-    a national unity of effort to strengthen and maintain secure, functioning, and resilient critical 
-    infrastructure.
-  published: 2013-02-12
-  externalURL: "https://www.cisa.gov/sites/default/files/2023-01/ppd-21-critical-infrastructure-and-resilience-508_0.pdf"
-  authored-by:
-    - *WH
-  ficam-services:
-    - Federation
-    - Governance
 - &EO13556
   type: Law
   shortName: E.O. 13556
   longName: "Executive Order 13556: Controlled Unclassified Information"
   description: >-
     This order establishes an open and uniform program for managing information that requires safeguarding 
-    or dissemination controls pursuant to and consistent with law, regulations, and Government-wide policies, 
-    excluding information that is classified under Executive Order 13526 of December 29, 2009, or the Atomic 
-    Energy Act, as amended.
+    but is not classified. The program includes standards for Identity and Access Management for Controlled
+    Unclassified Information (CUI)
   published: 2010-11-09
   externalURL: "https://www.federalregister.gov/documents/2010/11/09/2010-28360/controlled-unclassified-information"
   authored-by:
@@ -245,7 +212,8 @@
   longName: "Executive Order 13286: Amendment of Executive Orders, and Other Actions, in Connection With the Transfer of Certain Functions to the Secretary of Homeland Security"
   description: >-
     Amends an earlier Executive Order (E.O. 12977). Defines a central federal function to define security for 
-    physical access to federal facilities.
+    physical access to federal facilities. Because physical access often involves PIV Cards, ICAMSC coordinates
+    closely with the federal Physical Access Control System (PACS) community.
   externalURL: "https://www.federalregister.gov/documents/2003/03/05/03-5343/amendment-of-executive-orders-and-other-actions-in-connection-with-the-transfer-of-certain-functions"
   published: 2003-05-03
   authored-by:
@@ -255,7 +223,8 @@
   shortName: "E.O. 14028"
   longName: "Executive Order 14028: Improving the Nation's Cybersecurity"
   description: >-
-    Directs federal agencies to develop a plan to implement a Zero Trust Architecture, and Multi-Factor Authentication.
+    Directs federal agencies to develop a plan to implement a Zero Trust Architecture, and Multi-Factor 
+    Authentication.
   published: 2021-05-17
   externalURL: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
   authored-by:
@@ -268,8 +237,8 @@
   longName: "Internet of Things Cybersecurity Improvement Act of 2020"
   description: >-
     Directs NIST to develop and publish standards and guidelines for the Federal Government on the 
-    appropriate use and management by agencies of Internet of Things devices, including Identiy Management
-    recommendations.
+    appropriate use and management by agencies of Internet of Things devices, including Device Identiy 
+    Management recommendations.
   published: 2020-09-22
   externalURL: "https://www.congress.gov/116/plaws/publ207/PLAW-116publ207.pdf"
   authored-by:
