@@ -815,7 +815,7 @@
   shortName: "ICAM Governance Framework"
   longName: "Identity, Credential, and Access Management Governance Framework"
   description: >-
-    The IGFWG, composed of ICAM practitioners from
+    The ICAM Governance Frameowork Working Group, composed of ICAM practitioners from
     several federal agencies, developed this ICAM Governance Framework as a tool to help
     agencies build and improve ICAM governance structures, processes, and policies.
   published: 2021-09-01
@@ -829,7 +829,7 @@
   shortName: "NISTIR 8149"
   longName: "NIST Interagency Report 8149: Developing Trust Frameworks to Support Identity Federations"
   description: >-
-    When supported by trust frameworks, identity federations provide a secure method for leveraging shared 
+    Desecribes trust frameworks for identity federations, which provide a secure method for leveraging shared 
     identity credentials across communities of similarly-focused online service providers.
   published: 2018-01-12
   externalURL: "https://csrc.nist.gov/publications/detail/nistir/8149/final"
@@ -842,7 +842,8 @@
   shortName: "NISTIR 8335"
   longName: "NIST Interagency Report 8335: Identity as a Service for Public Safety Organizations"
   description: >-
-    This report informs [Public Safety Organizations] about [Identity as a Service] and how they can benefit from it.
+    This report informs [Public Safety Organizations] about [Identity as a Service] and how they can 
+    benefit from it.
   published: 2021-06-16
   externalURL: "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8335-draft.pdf"
   authored-by:
@@ -854,12 +855,9 @@
   shortName: "NIST SP 1800-13"
   longName: "NIST SPECIAL PUBLICATION 1800-13A Mobile Application Single Sign-On: Improving Authentication for Public Safety First Responders"
   description: >-
-    This NIST Cybersecurity Practice Guide describes how organizations can implement these
+    This NIST Cybersecurity Practice Guide describes how organizations can implement Mobile SSO
     technologies to enhance public safety mission capabilities by using standards-based
-    commercially available or open-source products. The technologies described facilitate
-    interoperability among diverse mobile platforms, applications, relying parties, identity providers
-    (IdPs), and public-sector and private-sector participants, regardless of the application
-    development platform used in their construction.
+    commercially available or open-source products.
   published: 2021-08-25
   authored-by:
     - *NIST
@@ -871,11 +869,8 @@
   shortName: "Mitigating Cloud Vulnerabilities"
   longName: "National Security Agency - Cybersecurity Information: Mitigating Cloud Vulnerabilities"
   description: >-
-    This document divides cloud vulnerabilities into four classes (misconfiguration, poor access control, 
-    shared tenancy vulnerabilities, and supply chain vulnerabilities) that encompass the vast majority of 
-    known vulnerabilities. [...] Descriptions of each vulnerability class along with the most effective 
-    mitigations are provided to help organizations lock down their cloud resources. Contains specific 
-    recommendations for improving ICAM practices to reduce cloud vulnerabilities.
+    This document contains specific recommendations for improving ICAM practices to reduce cloud 
+    vulnerabilities.
   published: 2020-01-22
   externalURL: "https://media.defense.gov/2020/Jan/22/2002237484/-1/-1/0/CSI-MITIGATING-CLOUD-VULNERABILITIES_20200121.PDF"
   authored-by:
@@ -883,20 +878,6 @@
   ficam-services:
     - Access Management - Authentication
     - Access Management - Authorization
-- &SP180018
-  type: Guidance
-  shortName: "NIST SP 1800-18"
-  longName: "NIST SPECIAL PUBLICATION 1800-18 Privileged Account Management for the Financial Services Sector"
-  description: >-
-    The goal of this project is to demonstrate a PAM capability that effectively protects, monitors, and 
-    manages privileged account access, including life-cycle management, authentication, authorization, 
-    auditing, and access controls.
-  published: 2018-09-01
-  externalURL: "https://www.nccoe.nist.gov/projects/use-cases/privileged-account-management"
-  authored-by:
-    - *NIST
-  ficam-services:
-    - Access Management - Privileged Access Management
 - &NISTIR7966
   type: Guidance
   shortName: "NISTIR 7966"
