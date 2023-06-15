@@ -606,24 +606,6 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
-- &CSSCDM
-  type: Policy
-  shortName: "Clearance Decision-Making Guide"
-  longName: "INTRODUCTION OF CREDENTIALING, SUITABILITY, AND SECURITY CLEARANCE DECISION-MAKING GUIDE"
-  description: >-
-    As a result of an initiative to create a more simplified system of Federal Government 
-    investigative and adjudicative procedures that applies to all persons, including contract 
-    personnel, who perform work on behalf of the government, we are providing the attached 
-    Credentialing, Suitability, and Security Clearance Decision-Making Guide.
-    This tool is for use in adjudicative decisions for HSPD-12 credentialing [and]
-    suitability determinations.
-  published: 2008-01-14
-  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/decision-making-guide.pdf"
-  authored-by:
-    - *OPM
-  ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management - Generation & Issuance
 - &PIVISSUANCESUSPENSION
   type: Policy
   shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
@@ -647,6 +629,50 @@
     - Credential Management - Generation & Issuance
     - Credential Management - Revocation
     - Federation - Policy Alignment
+- &CREDSTANDARDS
+  type: Policy
+  shortName: "Credentialing Standards Memo 2020"
+  longName: "Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials"
+  description: >-
+    [T]he following credentialing standards procedures [...]
+    promote defined goals in agency eligibility determinations to issue HSPD-12 personal
+    identity verification (PIV) credentials for access to federally controlled facilities and
+    information systems: the protection of the life, safety, property, or health of employees,
+    contractors, vendors or visitors to Federal facilities; the protection of the Government's
+    physical assets, information systems, records, including privileged, proprietary,
+    financial or medical records; and the privacy of the individuals whose data the
+    Government holds in its systems.
+  published: 2020-12-15
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf"
+  authored-by:
+    - *OPM
+  authorized-by:
+    - *HSPD12
+  amends:
+    - *SPRINGERMEMO
+    - *PIVISSUANCESUSPENSION
+  ficam-services:
+    - Identity Management
+    - Credential Management
+    - Access Management
+- &CSSCDM
+  type: Policy
+  shortName: "Clearance Decision-Making Guide"
+  longName: "INTRODUCTION OF CREDENTIALING, SUITABILITY, AND SECURITY CLEARANCE DECISION-MAKING GUIDE"
+  description: >-
+    As a result of an initiative to create a more simplified system of Federal Government 
+    investigative and adjudicative procedures that applies to all persons, including contract 
+    personnel, who perform work on behalf of the government, we are providing the attached 
+    Credentialing, Suitability, and Security Clearance Decision-Making Guide.
+    This tool is for use in adjudicative decisions for HSPD-12 credentialing [and]
+    suitability determinations.
+  published: 2008-01-14
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/decision-making-guide.pdf"
+  authored-by:
+    - *OPM
+  ficam-services:
+    - Identity Management - Identity Proofing
+    - Credential Management - Generation & Issuance
 - &M1903
   type: Policy
   shortName: "M-19-03"
@@ -742,32 +768,6 @@
   externalURL: "https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM_Strategy.pdf"
   authored-by:
     - *DOD
-  ficam-services:
-    - Identity Management
-    - Credential Management
-    - Access Management
-- &CREDSTANDARDS
-  type: Policy
-  shortName: "Credentialing Standards Memo 2020"
-  longName: "Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials"
-  description: >-
-    [T]he following credentialing standards procedures [...]
-    promote defined goals in agency eligibility determinations to issue HSPD-12 personal
-    identity verification (PIV) credentials for access to federally controlled facilities and
-    information systems: the protection of the life, safety, property, or health of employees,
-    contractors, vendors or visitors to Federal facilities; the protection of the Government's
-    physical assets, information systems, records, including privileged, proprietary,
-    financial or medical records; and the privacy of the individuals whose data the
-    Government holds in its systems.
-  published: 2020-12-15
-  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf"
-  authored-by:
-    - *OMB
-  authorized-by:
-    - *HSPD12
-  amends:
-    - *SPRINGERMEMO
-    - *PIVISSUANCESUSPENSION
   ficam-services:
     - Identity Management
     - Credential Management
@@ -1853,7 +1853,7 @@
   published: 2015-02-24
   externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
   authored-by:
-    - *FIPSLAB
+    - *GSA
   authorized-by:
     - *M1917
 - &FACILITYACCESSCONTROL
