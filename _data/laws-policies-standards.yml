@@ -10,7 +10,9 @@
   shortName: "U.S. Congress"
   longName: "United States Congress"
   externalURL: "https://www.congress.gov/"
+#
 # LAWS and Executive Orders (Authorized by WH and Congress)
+#
 - &INTELREFORM2004
   type: Law
   shortName: "Intelligence Reform and Terrorism Prevention Act of 2004"
@@ -274,7 +276,9 @@
     - *CONGRESS
   ficam-services:
     - Governance
+#
 # Secondary Authorities - established by a Law or Executive Order
+#
 - &NIST
   type: Authority
   shortName: "NIST"
