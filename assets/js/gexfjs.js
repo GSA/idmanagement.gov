@@ -389,7 +389,7 @@ function initializeMap() {
 
 function loadGraph() {    
     $.ajax({
-        url: ( '../fpki-certs.gexf' ),
+        url: ( '../../implement/tools/fpki-certs.gexf' ),
         dataType: "xml",
         success: function(data) {
             var _s = new Date();

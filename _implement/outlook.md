@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Configure Outlook for Secure Email
+title: Sign and Encrypt Emails in Microsoft Outlook
 permalink: /implement/outlook/
 sticky_sidenav: true
 sidenav: implement

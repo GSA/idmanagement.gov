@@ -41,22 +41,6 @@
   header: "/assets/playbooks/headers/playbook_03.png"
   target: _self
 
-- title: Digitally Sign a Microsoft Word Document
-  type: Markdown
-  pubdate: 2018-03
-  description: This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
-  url: "/playbooks/signword/"
-  header: "/assets/playbooks/headers/playbook_01.png"
-  target: _self
-
-- title: Digitally Sign an Office of the Federal Register Document
-  type: Markdown
-  pubdate: 2022-08
-  description: This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
-  url: "/playbooks/signfedregister/"
-  header: "/assets/playbooks/headers/playbook_06.png"
-  target: _self
-
 - title: Digital Worker Identity Playbook
   type: Markdown
   pubdate: 2022-12
@@ -89,28 +73,12 @@
   header: "/assets/playbooks/headers/playbook_08.png"
   target: _self
 
-- title: PIV-I for Federal Agencies
-  type: Markdown
-  pubdate: 2022-04
-  description: This guide helps federal agencies understand how federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) achieve interoperability with the PIV infrastructure.
-  url: "/playbooks/pivi/"
-  header: "/assets/playbooks/headers/playbook_12.png"
-  target: _self
-
 - title: Privileged Identity Playbook
   type: Markdown
   pubdate: 2022-12
   description: This Playbook provides federal agencies with best practices in managing its privileged user population.
   url: "/playbooks/pam/"
   header: "/assets/playbooks/headers/playbook_11.png"
-  target: _self
-
-- title: Windows Hello for Business Playbook
-  type: Markdown
-  pubdate: 2023-06
-  description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention.
-  url: "/playbooks/whfb/"
-  header: "/assets/playbooks/headers/playbook_09.png"
   target: _self
 
 # Removed because it has a status of archived

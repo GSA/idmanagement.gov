@@ -46,16 +46,16 @@
 - orderNumber: 3
   initialState:
   delay: 10000
-  heroHeading: Phishing resistant authenticator criteria
-  heroText: is usually immune to social engineering type of attacks and provides a greater level of security and resilience than traditional authenticators.
-  actionButtonText: Learn more about
-  actionLocation: vendors/ficampc/ 
+  heroHeading: Phishing resistant authenticators (Coming Soon)
+  heroText: are not susceptible to common interception and replay attacks. Phishing-resistant MFA protects users from sophisticated online attacks.
+  actionButtonText: Coming Soon!
+  actionLocation: home/
   actionTarget: _blank
 
 - orderNumber: 4
   initialState:
   delay: 10000
-  heroHeading: Single Sign On
+  heroHeading: Single sign on
   heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
   actionButtonText: Learn more about
   actionLocation: playbooks/sso/

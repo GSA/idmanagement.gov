@@ -1,4 +1,4 @@
-## New Why secondary navigation
+## sidenav yaml
 why:
   - text: Introduction
     href: /why/
@@ -20,8 +20,6 @@ why:
   - text: OMB Circular A-130
     href: /omb-circular-a130/
 
-## New What secondary navigation 
-# Changed to arch to reflect top-level-menu name change to Architecture and to match what is on playbooks
 arch:
   - text: Introduction
     href: /arch/
@@ -31,12 +29,6 @@ arch:
     href: /arch/services/
   - text: Service Framework
     href: /arch/servicesframework/
-  - text: PIV Details
-    href: /arch/pivdetails/
-  - text: PACS Guide
-    href: /arch/pacsguide/
-  - text: Deployment Model
-    href: /arch/deployment/
   - text: Use Cases
     href: /arch/usecases/
   - text: PIV Card APL
@@ -46,39 +38,6 @@ arch:
   - text: Removed Products (RPL)
     href: /removed-products-list/
 
-
-
-## New how secondary navigation 
-implement:
-  - text: Introduction
-    href: /implement/
-  - text: Network Authentication
-    href: /implement/network-authentication/
-  - text: Domain Controllers
-    href: /implement/domain-controllers/
-  - text: Trust Store
-    href: /implement/trust-stores/
-  - text: Account Linking
-    href: /implement/account-linking/
-  - text: Group Policies and Enforcement
-    href: /implement/group-policies/
-  - text: Network Tuning
-    href: /implement/network-tuning/
-  - text: Local Certification Authority
-    href: /implement/certificate-authority/
-  - text: Authentication Assurance
-    href: /implement/authentication-assurance/
-  - text: PIV Authentication on macOS
-    href: /implement/piv-athentication-macos/
-  - text: Troubleshooting PIV Logon
-    href: /implement/troubleshooting/  
-  - text: Configure Outlook for Secure Email
-    href: /implement/outlook/
-  - text: Introduction to PIV Engineering Guides
-    href: /implement/engineering/ 
-
-
-## New partners secondary navigation 
 partners:
   - text: Introduction
     href: /partners/ 
@@ -109,40 +68,58 @@ partners:
   - text: Removed Product List 
     href: /removed-products-list/ 
 
+implement:
+  - text: Introduction
+    href: /implement/
+  - text: Distribute FCPCA
+    href: /implement/distribute-fcpca/
+  - text: Smart Card Logon For Windows Domains
+    href: /implement/scl-windows/
+  - text: Smart Card Logon for MacOS
+    href: /implement/scl-macos/
+  - text: Smart Card Logon for SSH
+    href: /implement/scl-ssh/
+  - text: Smart Card Logon for Firefox
+    href: /implement/scl-firefox/
+  - text: Windows Hello for Business on Azure AD
+    href: /implement/whfb/
+  - text: Certificate-Based Authentication on Azure AD (Coming Soon!)
+    href: /content-roadmap/
+  - text: Sign and Encrypt Email in Outlook
+    href: /implement/outlook/
+  - text: FPKI Ecosystem Changes
+    href: /fpki/notifications/
 
-## University: for FICAM (University) section
+functions:
+  - text: FICAM Program
+    href: /ficam/
+  - text: Federal PKI Governance
+    href: /fpki/
+  - text: FIPS 201 Evaluation Program
+    href: /fips201/
+  - text: GSA PKI Shared Service Provider Program
+    href: /pkissp/
+
 university:
-  - text: University
+  - text: Introduction
     href: /university/ 
-  - text: U.S. Laws
-    href: /university/laws/
-  - text: Policies
-    href: /university/policies/
-  - text: Standards
-    href: /university/standards/
-  - text: Useful Tools
-    href: /fpki/tools/
+  - text: PKI 101
+    href: /university/pki/
+  - text: Federal PKI 101
+    href: /university/fpki/
+  - text: PACS 101
+    href: /university/pacs/
+  - text: PIV 101
+    href: /university/piv/
+  - text: PIV Interoperable 101
+    href: /university/pivi/
+  - text: ICAM PM 101
+    href: /university/pm/
+  - text: ICAM Policy Matrix - Laws, Policies, and Standards
+    href: /university/policy-matrix/
   - text: Additional Resources
     href: /university/resources/
-  - text: Glossary
-    href: /university/glossary/
-  # - text: FAQs
-  #   href: /faq/
 
-## FAQ: for webiste
-## Resources: from FICAM University section
-# faq:
-#   - text: FAQs
-#     href: /faq/ 
-#   - text: University
-#     href: /university/  
-#   - text: Additional Resources
-#     href: /university/resources/ 
-
-## Playbooks: Namespace (urls for markdown and pdfs preserved from original site, /playbooks/...) 
-## Old Resources: from  https://playbooks.idmananagement.gov
-# 
-# Sidenav for Playbooks on front page hardcoded for now
 playbooks:
   - text: Introduction
     href: /playbooks/
@@ -152,97 +129,22 @@ playbooks:
     href: /playbooks/autopen/ 
   - text: Digital Identity Risk Assessment Playbook
     href: /playbooks/dira/ 
-  - text: Digitally Sign a Microsoft Word Document
-    href: /playbooks/signword/ 
-  - text: Digitally Sign an Office of the Federal Register Document
-    href: /playbooks/signfedregister/ 
   - text: Digital Worker Identity Playbook
     href: /playbooks/dw/ 
   - text: Enterprise Single Sign-On Playbook
     href: /playbooks/sso/ 
-  # - text: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
-  #   href: /docs/roadmap-ficam.pdf
   - text: ICAM Governance Framework Version 1.0
     href: /docs/playbook-identity-governance-framework.pdf
   - text: Identity Lifecycle Management Playbook
     href: /playbooks/ilm/ 
-  - text: PIV-I for Federal Agencies
-    href: /playbooks/pivi/ 
   - text: Privileged Identity Playbook
     href: /playbooks/pam/ 
-  - text: Windows Hello for Business Playbook
-    href: /playbooks/whfb/
-
-
-## FPKI Navigation
-## Note: fpki added as-is... from Playbooks site to preserve urls
-fpki:
-  - text: Introduction
-    href: /fpki/
-  - text: Certification Authorities
-    href: /fpki/ca/
-  - text: Path Discovery and Validation (PDVal)
-    href: /fpki/pdval/
-  - text: Trust Stores
-    href: /fpki/trust-stores/
-  - text: Federal Common Policy CA Update (FY21)
-    href: /fpki/common/
-  - text: Useful Tools
-    href: /fpki/tools/
-  - text: Announcements
-    href: /fpki/announcements/
-  - text: System Notifications
-    href: /fpki/notifications/
-
-fpkicas:
-  - text: Back to FPKI Guide
-    href: /fpki/ca/
-  - text: Federal Common and Federal Bridge Certificate Details
-    href: /fpki/certsandcrls/
-  - text: PIV CAs and Agencies
-    href: /fpki/pivcas-and-agencies/
-    
-fpkicommon:
-  - text: Back to FPKI Guide
-    href: /fpki/common/
-  - text: 1. Prepare to migrate to the Federal Common Policy CA G2
-    href: /fpki/common/prepare-to-migrate/
-  - text: 2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate
-    href: /fpki/common/obtain-and-verify/
-  - text: 3. Distribute the certificate to operating systems
-    href: /fpki/common/distribute-os/
-  - text: 4. Verify operating system distribution
-    href: /fpki/common/verify-os-distribution/
-  - text: 5. Distribute the certificate to applications
-    href: /fpki/common/distribute-apps/
-  - text: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
-    href: /fpki/common/certificates/
-  - text: 7. Migrate to the Federal Common Policy CA G2
-    href: /fpki/common/migrate/
-  - text: 8. Verify migration to the Federal Common Policy CA G2
-    href: /fpki/common/verify-migration/
-  - text: 9. Frequently Asked Questions
-    href: /fpki/common/faq/
-
-fpkitools:
-  - text: Back to FPKI Guide
-    href: /fpki/tools/
-  - text: Federal PKI Graph
-    href: /fpki/tools/fpkigraph/
-  - text: Federal PKI Activity Report
-    href: /fpki/tools/fpkiar/
-  - text: CITE Participation Guide
-    href: /fpki/tools/citeguide/
-  - text: Card Conformance Tool
-    href: /fpki/tools/cct/   
-  - text: Certificate Profile Conformance Tool
-    href: /fpki/tools/cpct/
 
 ## Move to Archived after one year
 
-fpkiactiveannouncements:
-  - text: Back to FPKI Guide
-    href: /fpki/announcements/
+fpkiannouncements:
+  - text: Back to FPKI Page
+    href: /fpki/notifications
   - text: Public Trust TLS PKI CP
     href: /fpki/announcements/PT-TLS-CP/
   - text: CPCT Tool Update
@@ -251,18 +153,10 @@ fpkiactiveannouncements:
     href: /fpki/announcements/ldap-removal/
   - text: CPCT Tool Transition
     href: /fpki/announcements/cpct-transition/
-
-
-## Remove Announcements older than three years
-
-fpkiarchivedannouncements:
-  - text: Back to FPKI Guide
-    href: /fpki/announcements/
   - text: New Test Tools Available (2021) ## May 2024
     href: /fpki/announcements/test-tools/
   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
     href: /fpki/announcements/common-g2-update/
-
 
 # The fips201 and vendor sidenav should match, unless something exclusive is added to to either one. 
 ## Old Sell sidenav, changed to fips201/ as a global address
@@ -287,7 +181,6 @@ vendor:
   - text: FICAM Product Criteria
     href: /vendors/ficampc/
 
-
 # New Aquisitions Professional sidenav
 acquisition:
   - text: Acquisition Overview
@@ -304,47 +197,7 @@ acquisition:
     href: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
   - text: Removed Product List 
     href: /removed-products-list/ 
-
-## Old Governance sidenav
-## New Program Managers sidenav
-program:
-  - text: Governance Overview
-    href: /program-managers/
-  - text: FICAM Governance
-    href: /partners/ficam/
-  - text: FPKI Policy and Compliance Audit
-    href: /partners/fpkiaudit/
-  - text: FPKI Archived Documents
-    href: /fpkiarchive/
-
-## New GSA PKI Shared Service Provider Program Guide Sidenav
-ssp:
-  - text: Overview
-    href: /ssp/
-  # Asked by Babur to remove(Sprint 8)
-  # - text: Download PDF
-  #   href: /docs/roadmap-ficam.pdf
-
-# Brought in from Playbooks site
-pm:
-  - text: Introduction
-    href: /pm/
-  - text: Program Governance and Leadership
-    href: /pm/governance/
-  - text: Workstreams
-    href: /pm/workstreams/
-  - text: Stakeholder Management
-    href: /pm/stakeholders/
-  - text: Communication Plan
-    href: /pm/comm/
-  - text: Performance Management
-    href: /pm/performance/
-  - text: Privacy Considerations
-    href: /pm/privacy/
-  - text: Examples and Guidance
-    href: /pm/examples/
-
-    
+ 
 ## Main Site
 policy:
   - text: Contact Us

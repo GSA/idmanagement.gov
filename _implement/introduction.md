@@ -1,25 +1,19 @@
 ---
 layout: page
 collection: implement
-title: How to use FICAM
+title: How to implement ICAM
 permalink: /implement/
 sticky_sidenav: true
 sidenav: implement
 
 subnav:
-  - text: Pre-Launch Checklist
-    href: '#pre-launch-checklist'
-  - text: Configuration Checklist
-    href: '#configuration-checklist'
-  - text: Ports and Protocols
-    href: '#ports-and-protocols'
-  - text: Verifying and Troubleshooting
-    href: '#verifying-and-troubleshooting'
-  - text: Web Services for Validating PIV Certificates
-    href: '#web-services-for-validating-piv-certificates'
-  - text: Web Services for the Federal Public Key Infrastructure
-    href: '#web-services-for-the-federal-public-key-infrastructure'
-    
+  - text: Configuration Guidea
+    href: '#configuration-guides'
+  - text: FPKI Troubleshooting Tools
+    href: '#fpki-troubleshooting-tools'
+  - text: Find Additional Guides
+    href: '#find-additional-guides'
+   
 ---
 
 <div class="usa-alert usa-alert--error" role="alert">
@@ -31,123 +25,57 @@ subnav:
   </div>
 </div>
 
-<div class="usa-alert usa-alert--error" role="alert">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">May 2022 - Known PIV Network Authentication Issue</h4>
-    <p class="usa-alert__text">
-      Some PIV-based authentication to Microsoft Domain Controllers are impacted by May 2022 Windows server patches.  If you encounter these PIV network logon issues, please review the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> which is supported by the following <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> page.  Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
-    </p>
-  </div>
-</div>
+ICAM Engineering Guides are for system administrators configuring agency infrastructure, servers, and enterprise applications for authentication and other ICAM processes. The guides are focused on U.S. federal government implementations.
 
-These Network Authentication guides will help you configure your Windows _network domain_ for smart card logon using PIV credentials.
+The majority of engineering guides are focused on helping agencies configure PIV credential authentication in the most common operating systems and applications. A new series of FIDO multi-factor authentication playbooks are also include.
 
-There are many useful pages and technical articles available online that include details on configurations and using generic smart cards.  The information presented here addresses common questions and configurations **specific** to the U.S. federal government, **PIV** smart cards, and U.S. federal civilian agency certification authorities.
+# Configuration Guides
 
-{% include alert-info.html heading = "Teamwork" content="Work with your Network Engineers, Domain Admins, Account Management, and Information Security colleagues to review the information, perform the configurations, and troubleshoot any issues." %}
+1. Smart Card Configuration
+   1. [Windows Domains]({{site.baseurl}}/implement/scl-windows)
+   2. [MacOS]({{site.baseurl}}/implement/scl-macos)
+   3. [Microsoft Outlook (on-premise)]({{site.baseurl}}/implement/outlook)
+   4. [Firefox Browser]({{site.baseurl}}/implement/firefox)
+   5. [SSH Command Line]({{site.baseurl}}/implement/ssh)
+   6. Certificate-based Authentication on Azure AD (Coming soon!)
+   7. Certificate-based Authentication on Okta (Coming soon!)
+2. FIDO2 Configuration
+   1. [Windows Hello for Business]({{site.baseurl}}/implement/whfb)
+   2. Security keys (Coming soon!)
 
-## Pre-Launch Checklist
+# ICAM Troubleshooting Tools
 
-Check the following items **before** reviewing these network guides and lessons learned:
+ICAM can leverage a number of open source protocols for interoperability and data transfer. The Federal PKI is also a large, distributed ecosystem of over 180 certification authorities. Each certification authority operate independently which presents a challenge in trying to troubleshoot why a PIV card can't validate. This is a list of tools to help troubleshoot ICAM issues.
 
-1. Users have PIV credentials and PIV card readers.
-1. You are using Microsoft Active Directory to manage your Windows network.
-1. Domain Controllers are Microsoft 2012 or newer.
-1. User workstations **are joined** to your network and are Windows 8 or Windows 10-based.
+1. Federal PKI Validation
+   1. [FPKI Ecosytem Changes]({{site.baseurl}}/fpki/notifications) - This page contains three sets of information.
+      1. [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph) - The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem
+      2. [PIV Issuer Information]({{site.baseurl}}/fpki/notifications/#piv-issuer-information) - List of active PIV issuing CAs with end entity certificate distribution points.
+      3. [FPKI System Change and Notification]({{site.baseurl}}/fpki/notifications/#notifications) - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
+   2. [Personal Identify Verification (PIV) Cert Validator Tool](https://pv.test.max.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The PIV Certificate Validator is a website application hosted by Max.gov that verifies the certificates found on a PIV card. This tool is helpful in troubleshooting browser authentication issues.
+2. Federal PKI Deep Analysis
+   1. [FPKI Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - CPCT is an self-hosted application that analyzes a FPKI certificate for conformance. Use this tool to identify if a FPKI certificate is compliant.
+   2. [PIV and PIV-I Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A GSA developed, java tool similar in function to the CPCT, but for PIV and PIV-I smart card testing. This is useful in identifying issues with a smart card.
+   3. [NIST 85B (800-73-4) Test Tool](https://csrc.nist.gov/projects/nist-personal-identity-verification-program/software-downloads){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Used to pull deep PIV contents when integrating PIV with various infrastructure components. 
+3. PKI Tools
+   1. [PKI Interoperability Test Tool (PITT) for Microsoft Windows](http://pkif.sourceforge.net/pitt.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - PITT is a utility that allows inspection and troubleshooting of certification path processing for a given PKI using both PKIF and Microsoft CAPI. It’s especially useful for identifying path discovery and validation issues as well as a PKI performance problems.
+   2. [crt.sh](https://crt.sh/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Certificate Transparency auditor used to find and audit TLS certificate issuances and issues. This is helpful in identifying all publicly issued certificates to a website.
+4. FIDO2 Tools
+   1. Coming soon!
+5. Federation Tools
+   1. Coming soon!
 
-## Configuration Checklist
+# Find Additional Guides
 
-There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:
+You can find additional guides across agency websites by using a few simple methods: 
 
-- [Network Ports and Protocols](#ports-and-protocols)
-- [Domain Controllers](/implement/domain-controllers/)
-- [Trust Stores](/implement/trust-stores/)
-- [Account Linking: Associating PIV credentials with User Accounts](/implement/account-linking/)
-- [Group Policies and Enforcement](/implement/group-policies/)
+1. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+PIV +CAC"
+2. Search on the Internet: include the _server_ or _application_ or _topic_ and add "+x509"
+3. Search on Max.gov:  [Max.gov](https://max.gov){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} requires you to log in.  Try searching for the topic or guide.   
 
-There are five additional guides:
+If you don't find what you're looking for, open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"}.  We can help look through the archives of guides that haven't been posted yet or help you send a request to the government listserves.  
 
-- [Network Tuning](/implement/network-tuning/)
-- [Local Certification Authority](/implement/certificate-authority/)
-- [Authentication Assurance](/implement/authentication-assurance/)
-- [PIV Authentication on MacOS](/implement/piv-athentication-macos/)
-- [Troubleshooting PIV Logon](/implement/troubleshooting/)
+Your contributions are encouraged and welcome! You can [contribute]({{site.baseurl}}/contribute/){:target="_blank"}{:rel="noopener noreferrer"} to this effort or open an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to discuss a need you may have for a guide.
 
-We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring MacOSX and other operating systems. Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
+{% include alert-info.html heading="Are you trying to solve a problem?" content="Your colleagues have likely encountered or solved the same problem.  Engineering guides exist across government.  This site's purpose is to organize tips from agency engineers, help link to .gov or .mil information available, and provide a common site for collaboration." %}
 
-<!-- https://playbooks.idmanagement.gov/piv/network/ports/  -->
-
-## Ports and Protocols
-
-Your workstations, servers, network domain controllers, and applications need to validate the [revocation]({{site.baseurl}}/arch/pivdetails/#certificate-revocation) status of the PIV certificates and all intermediate certificate authority (CA) certificates.  In addition, the [certificate chain]({{site.baseurl}}/arch/pivdetails/#certificate-chains) path building may retrieve and download the intermediate CA certificates.
-
-The validation occurs in real time (with some caching) and requires ensuring network traffic is open and available to the destination web services, ports, and protocols.  Many U.S. federal agencies implement a layered network security model with demilitarized zones (DMZs), proxies, and Trusted Internet Connections (TICs) to monitor, defend, and protect the networks, applications and users.
-
-## Verifying and Troubleshooting
-
-Non-accessible endpoints for the web services due to firewalls blocking access is a very common root cause for errors.  If you encounter user errors including "Cannot validate" and similar domain controller errors, your first troubleshooting step should be to verify your network and access.
-
-{% include alert-info.html heading = "nslookup and certutil are your friendly tools" content="Restricted or denied access to Internet web services including the OCSP and CRL web services used in the certificate validations lead to common errors and issues.  Collaborate with your Network Engineers to review the web services, IP addresses, ports and protocols, and verify access from all local and wide-area network segments." %}
-
-It is simple to begin troubleshooting if the web services endpoints are accessible or blocked by firewall rules.  You have the basic four utility tools for troubleshooting:
-
-- certutil (Microsoft)
-- openssl
-- nslookup
-- tracert
-
-
-For the typical network domain, _certutil_ will be your best option to identify a number of possible root causes.  There are many options available in the _certutil_ utility tool, and two are covered here.
-
-Export your _public_ key and certificate for PIV Authentication to a .cer file (mypiv_auth.cer), and run the following command in a command line from workstation(s) *and* domain controller(s):
-
-```
-  certutil -verify -urlfetch mypiv_auth.cer >>verify_piv.txt
-```
-
-The text file output will include a *full* check against all options for CRLs, OCSP, intermediate certificates to verify a trust chain, and the root (COMMON).  Review all items and ensure at least one successful verification message is included for _each check_.  You may see errors for the LDAP verifications and these can be ignored if a CRL or OCSP check is successful.
-
-{% include alert-warning.html heading = "Time is important" content="When reviewing the verification messages, you should pay careful attention to the time.  For example, if a CRL file is not downloaded in under 15 seconds, it is very likely that you will encounter network authentication errors and will need to perform some tuning." %} 
-
-There is also a graphical user interface to help perform these verification checks.
-
-```
-  certutil -v -url mypiv_auth.cer
-```
-The graphical user interface allows you to check OCSP, CRL, and AIA (intermediate certificate retrievals).
-
-<div class="usa-alert usa-alert--error" role="alert">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Can federally operated certificate revocation services (CRL, OCSP) operate on port 80?</h4>
-    <p class="usa-alert__text">
-      Yes. This very narrow class of services, that provide CRL and OCSP information for the purposes of verifying the revocation status of certificates used to make other HTTPS connections, should abide by best practices in the field and their respective specifications. For CRLs, follow 
-      <a class="usa-link usa-link--external" href="https://tools.ietf.org/html/rfc5280" target="_blank" rel="noopener noreferrer">RFC 5280</a>
-      which states CAs <strong>SHOULD NOT</strong> include URIs that specify https, ldaps, or similar schemes in extensions. For OCSP, follow 
-      <a class="usa-link usa-link--external" href="https://tools.ietf.org/html/rfc6960" target="_blank" rel="noopener noreferrer">RFC 6960</a>
-      which states a CA may use port 443 for OCSP where privacy is a requirement. Agencies are encouraged to operate OCSP and CRL services via hostnames specifically reserved for those services, so that other related information and functionality can be served securely and privately. For more information see the 
-      <a class="usa-link usa-link--external" href="https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https" target="_blank" rel="noopener noreferrer">Federal CIO Council HTTPS-Only Standard</a>
-      .
-    </p>
-  </div>
-</div>
-
-## Web Services for Validating PIV Certificates
-
-[Revocation]({{site.baseurl}}/arch/pivdetails/#certificate-revocation) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/arch/pivdetails/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
-
-| Type | Certificate Extension | Protocol (Port) | Considerations|
-| ----- | -------| -------| ------|
-| OCSP | Authority Information Access | HTTP (80) | All PIV certificates have OCSP references and OCSP URLs which are Internet accessible and provided by the issuing CA. Intermediate CAs are **not** required to have OCSP available for the _intermediate_ certificates.|
-| CRL  | CRL Distribution Point (CDP) | HTTP (80) | All PIV certificates have CRL capabilities provided by the issuing CA.  All intermediate CA certificates have CRL capabilities.  CRL files have an expiration time that varies between 6 to 18 hours. CRL file sizes range from a few kilobytes to more than 30 megabytes (MB).
-
-Lightweight Directory Application Protocol (LDAP) for retrieving information is not preferred and has been increasingly deprecated; therefore, LDAP is not included.
-
-There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you have users with PIV credentials from other agencies or partners, identifying all the URLs to verify against your network configurations will be more complex.
-
-## Web Services for the Federal Public Key Infrastructure
-
-The Federal Common Policy Certificate Authority G2 (COMMON) is the root certificate authority and has web services to publish both [certificate chains]({{site.baseurl}}/arch/pivdetails/#trust) (p7b files) and [CRLs]({{site.baseurl}}/arch/pivdetails/#certificate-revocation) for all intermediate certificate authorities which the root signs.
-
-To enable communications with these Federal Common Policy Certificate Authority services, including those currently operational and any expansion, you should verify outbound communications to the base domain of _http.fpki.gov_. For example, a successful connection to [https://http.fpki.gov/fcpca/fcpca.crt](https://http.fpki.gov/fcpca/fcpca.crt){:class="usa-link usa-link--external"} will download a copy of the Federal Common Policy CA certificate.
-
-You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion.

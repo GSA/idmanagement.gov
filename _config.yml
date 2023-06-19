@@ -42,24 +42,17 @@ ga:
 # Site Navigation
 primary_navigation:
   - name: Home
-    description: IDmanagement.gov
     url: /
-# WhyFICAM? top level menu with dropdowns
   - name: Why FICAM?
     children:
       - name: Introduction
         url: /why/
       - name: Zero Trust
         url: /why/zero-trust/
-      # text moved to intro of architecture Sprint 8
-      # - name: Architecture
-      #   url: /why/architecture/
       - name: History
         url: /why/history/
       - name: ICAM
         url: /why/icam/
-      - name: Goals and Objectives
-        url: /why/goals-and-objectives/
       # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (renamed to make label in menu shorter)
       - name: Memorandum M-19-17
         # Redirects to: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf (Required)
@@ -68,29 +61,18 @@ primary_navigation:
       - name: OMB Circular A-130
         # Redirects to: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf (Required)
         url: /omb-circular-a130/
-
-
-# What is FICAM top level menu with dropdowns
- # - name: from 'What' is FICAM? (changed on 05-17-2023 per Babur/Joe to 'Achitecture') See: _arch folder
-  - name: Architecture
+  - name: FICAM Architecture
     children: 
       - name: Introduction
         url: /arch/
-      - name: Products
-        url: /arch/products/
-      - name: Services
-        url: /arch/services/
-      - name: PIV Details
-        url: /arch/pivdetails/
-      - name: Service Framework
+      - name: Goals and Objectives
+        url: /arch/goals/
+      - name: Services Framework
         url: /arch/servicesframework/
       - name: Use Cases
         url: /arch/usecases/
-
-
-# Who FICAM is For? top level menu with dropdowns
-  # - name: Who is FICAM For? (changed on 05-17-2023 per Babur/Joe to 'Get Started')
-  # - name: Changed 'Get Started' to 'Partners' (05/31/2023) per Babur/Joe
+      - name: Architecture Example
+        url: /arch/arch-example/
   - name: Partners
     children:
       - name: Introduction
@@ -118,75 +100,52 @@ primary_navigation:
       #   url: /partners/technical-leads-and-team-members/
       # - name: PACS
       #   url: /partners/pacs/
-
-# How to use FICAM top level menu with dropdowns
-  # - name: How to use FICAM (changed on 05-17-2023 per Babur/Joe) to 'Implement Guides'
-  # - name: 05/22/2023 shortened to 'Implements', limited space in menu
   - name: Implement 
     children:
-      - name: PIV Implementations
+      - name: ICAM Configuration Guides
         url: /implement/
-      # Commented out on (06/01/2023) per Babur/Joe, 
-      # - name: Network Authentication
-      #   url: /implement/network-authentication/
-      # - name: Domain Controllers
-      #   url: /implement/domain-controllers/
-      # - name: Trust Store
-      #   url: /implement/trust-stores/
-      # - name: Account Linking
-      #   url: /implement/account-linking/
-      # - name: Group Policies and Enforcement
-      #   url: /implement/group-policies/
-      # - name: Network Tuning
-      #   url: /implement/network-tuning/
-      # - name: Local Certification Authority
-      #   url: /implement/certificate-authority/
-      # - name: Authentication Assurance
-      #   url: /implement/authentication-assurance/
-      - name: PIV Authentication on macOS
-        url: /implement/piv-athentication-macos/
-      # - name: Troubleshooting PIV Logon
-      #   url: /implement/troubleshooting/ 
-      # - name: Windows Domain Account Pairing
-      #   url: /implement/windows-domain-pairing/
-      # Update requested by Babur to move to same location as on prod by Ken.(06/07/2023)
-      - name: Phishing-Resistant Authenticator Product Criteria
-        url: /vendors/ficampc/ 
-
-  # APL Menu for visible display and access of APLs
-  # 06-07-2023 - changed "ALPS" menu to "Functions" per Babur
-  # Note: All APLs are accessible globally from the below URLs sitewide
-  - name: Functions
+      - name: Distribute the FCPCA
+        url: /implement/distribute-fcpca/
+      - name: Smart Card Logon for Windows Domains
+        url: /implement/scl-windows/
+      - name: Smart Card Logon for MacOS
+        href: /implement/scl-macos/
+      - name: Windows Hello for Business on Azure AD
+        url: /implement/whfb/
+      - name: Certificate-Based Authentication on Azure AD (Coming Soon!)
+        href: /content-roadmap/
+      - text: Sign and Encrypt Email in Outlook
+        href: /implement/outlook/
+      - text: FPKI Ecosystem Changes
+        href: /fpki/notifications/
+  - name: FICAM Functions
     children: 
-      - name: FPKI
+      - name: FICAM Program
+        url: /ficam/
+      - name: Federal PKI Program
         url: /fpki/
-      - name: FIPS 201 evaluation
+      - name: FIPS 201 Evaluation Program
         url: /fips201/
-      - name: SSP
-        url: /ssp/
-      - name: Approved product list - PIV Cards
-        url: /approved-products-list-piv/
-      - name: Approved product list - PACS
-        url: /approved-products-list-pacs-products/
-      - name: PACS awaiting approval
-        url: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
-      - name: Removed product list
-        url: /removed-products-list/
-
-  # Playbook top level Menu added (05-26-2023)
+      - name: GSA PKI SSP Program
+        url: /pkissp/
   - name: Playbooks
-    description: FICAM Playbook are comprehensive guides on a technical topic, describing both overarching strategy and tactical approaches.
     url: /playbooks/
-
-  # FICAM University page
   - name: University
-    description: University
-    url: /university/
-
-  # FAQ page per Babur (Sprint 6)
-  # - name: FAQs
-  #   description: Frequently Asked Questions
-  #   url: /faq/
+    children: 
+      - name: Introduction
+        url: /university/
+      - name: PKI 101
+        url: /university/pki/
+      - name: FPKI 101
+        url: /university/fpki/
+      - name: PIV 101
+        url: /university/piv/
+      - name: PIV-I 101
+        url: /university/pivi/
+      - name: PACS 101
+        url: /university/pacs/
+      - name: ICAM Policy Matrix
+        url: /university/policy-matrix/
 
 secondary_navigation:
   - name: Contact Us
@@ -236,44 +195,24 @@ collections:
   university:
     output: true
     permalink: /university/:path/   
-  # faq: requested removal by Babur (Sprint 6)
-  #   output: true
-  #   permalink: /faq/:path/ 
   rss:
     output: true
     permalink: /rss/:path/ 
   playbooks:
     output: true
     permalink: /playbooks/:path/ 
-  fips201:
+  ficampmo:
     output: true
-    permalink: /fips201/:path/ 
-  fpki:
-    output: true
-    permalink: /fpki/:path/  
+    permalink: /ficam/:path/
 
 # Leaving in place: 
 # Unsure of placement in new site.
-  ficampm:
-    output: true
-    permalink: /pm/:path/
-
-  ssp:
-    output: true 
-    permalink: /ssp/:path/
   
-
-  # (Old, keep for ref) buy: 
-  #   output: true
-  #   permalink: /buy/:path/
   # sell:
   #   output: true
   #   permalink: /sell/:path/
   
   # Turned on for visibility until Combined 743 Playbook on Governance is complete
-  governance:
-    output: true
-    permalink: /governance/:path/
 
   pages:
     output: true
