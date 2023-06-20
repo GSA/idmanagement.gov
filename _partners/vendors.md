@@ -3,7 +3,7 @@ layout: page
 collection: partners
 title: Vendors
 permalink: /vendors/
-sidenav: vendor
+sidenav: partners
 sticky_sidenav: true
 
 subnav:
@@ -29,7 +29,7 @@ Two product categories require additional testing at a testing facility before a
 
 Please get in touch with fips201ep at gsa dot gov if you have product approval questions.
 
-## Product Approval Process
+# Product Approval Process
 
 It takes three steps to get a product approved for federal use. **If your product does not require additional testing under one of the categories listed above, skip to step 3.**
 
@@ -37,13 +37,13 @@ It takes three steps to get a product approved for federal use. **If your produc
 2. Contact a testing lab
 3. Get on a GSA Schedule
 
-### Step 1 – Review Testing Documents
+## Step 1 – Review Testing Documents
 
-The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"} used in PIV credentialing systems and PACS.
+The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"} used in PIV credentialing systems and PACS.
 
-[Review testing documents and procedures]({{site.baseurl}}/fips201/)
+[Review testing documents and procedures]({{site.baseurl}}/fips201ep/)
 
-### Step 2 – Contact a Testing Lab
+## Step 2 – Contact a Testing Lab
 
 Once you have reviewed the testing documents, contact one of the Testing Labs listed below. The lab will walk you through the application and testing process.
 
@@ -65,17 +65,17 @@ GSA manages testing and certification for PACS as well as annual audit testing o
 
 If your product completes the testing process, two things occur.
 1. You will receive a signed approval document.
-2. Your product will be listed on the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products) under the appropriate category.
+2. Your product will be listed on the [Approved Products List (APL)]({{site.baseurl}}/fips201/) under the appropriate category.
 
 After testing and approval, apply to have your product or service listed on the GSA's Multiple Award Schedule (MAS).
 
-### Step 3 – Get on a GSA Schedule
+## Step 3 – Get on a GSA Schedule
 
 The GSA MAS Program also referred to as the "Schedule," is the premier contract vehicle for the federal government. The MAS Program is a long-term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for a business, but it requires effort and commitment to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target= "_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 - [Sell through GSA MAS](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}  – Agencies use the MAS to fulfill their technology products and services needs.
 
-## Professional Services
+# Professional Services
 
 Professional services involve integrating solutions and helping agencies deploy and operate identity and credentialing systems related to ICAM implementations.
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 collection: partners
-title:  Trust Services
+title:  Federal Workforce identity Services
 permalink: /partners/trust-services/
-sidenav: acquisition
+sidenav: partners
 sticky_sidenav: true
 lastupdate: 07/12/2021
 
@@ -14,8 +14,8 @@ subnav:
     href: '#government-identity-services'
   - text: Business Identity Services
     href: '#business-identity-services'
-  - text: Non-Government PKI Trust Framework
-    href: '#non-government-pki-trust-framework'
+  - text: Private Sector PKI Trust Framework
+    href: '#private-sector-pki-trust-framework'
 ---
 
 <div class="usa-alert usa-alert--info">
@@ -43,9 +43,9 @@ Trust Services providers offer services related to identity and credentialing of
 
 We’ve categorized the service providers given below by type of identity and credential and what population is served:
 
-- [Government Identity Services](#government-identity-services) – Covers the FPKI Shared Service Providers (SSPs)
-- [Business Identity Services](#business-identity-services) – Covers PIV-Interoperable (PIV-I), and other PKI certificates
-- [Trust and Auditing of Services](#trust-and-auditing-of-services) – Covers PKI Bridges that are cross-certified into the FPKI
+- [Government Identity Services](#government-identity-services) – FPKI Shared Service Providers (SSPs)
+- [Business Identity Services](#business-identity-services) – PIV-Interoperable (PIV-I), and other PKI certificates
+- [Private Sector PKI Trust Framework](#private-sector-pki-trust-framework) – Private sector PKI Bridges that are cross-certified into the FPKI
 
 ## Government Identity Services
 
@@ -81,7 +81,7 @@ For each, we identify whether the services include:
 | [IdenTrust](https://www.identrust.com/igc/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| IdenTrust Customer Support<br/>Support at IdenTrust.com<br/>(800) 748-5360	| PIV-I Credentials<br/>Other PKI Credentials
 | [WidePoint](https://www.orc.com/nfi/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com | Jim Manchester <br/>(800) 816-5548<br/>PKIPolicy at ORC.com | PIV-I Credentials<br/>Other PKI Credentials |
 
-## Non-Government PKI Trust Framework
+## Private Sector PKI Trust Framework
 
 The FPKI Policy Authority reviews the PKI trust frameworks of a small number of non-government organizations to determine whether the policies, processes, legal agreements, privacy protections, security  controls, and audit requirements are comparable with the U.S. government Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge.
 

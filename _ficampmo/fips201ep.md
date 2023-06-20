@@ -7,14 +7,12 @@ sidenav: functions
 sticky_sidenav: true
 
 subnav:
+  - text: Program Announcements
+    href: '#program-announcements'
   - text: Testing and Certification
     href: '#testing-and-certification'
-  - text: Testing Guidance and Documents
-    href: '#testing-guidance-and-documents'
   - text: Personal Identity Verification (PIV) Credentials
     href: '#personal-identity-verification-credentials'
-  - text: PIV Card Body Application Package Requirements
-    href: '#piv-card-body-application-package-requirements'
   - text: Derived PIV (D-PIV) Credentials
     href: '#derived-piv-credentials'
   - text: Physical Access Control System (PACS)
@@ -23,9 +21,36 @@ subnav:
 
 The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (sometimes called the FICAM Testing Program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs).
 
-For the latest testing news, view the [program announcements]({{site.baseurl}}/fips201/fipsannouncements/).
+# Program Announcements
 
-## Testing and Certification
+Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us) if you have any questions.
+
+<ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
+  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
+</ul>
+{% assign lcount = 0 %}
+  {% for announcement in site.data.fips201announcements %} 
+<!--    {% if announcement.status == "Active" %} -->
+      <div class="usa-accordion usa-accordion--bordered">
+        <h4 class="usa-accordion__heading">
+          <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{announcement.expanded}}" aria-controls="gsa-{{forloop.index}}">{{announcement.name}} ({{announcement.pubdate}})</button>
+        </h4>
+        <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{announcement.url}}')" onkeydown="navigateTo('{{announcement.url}}')" aria-label="{{announcement.name}}" tabindex="0">
+          <div class="display-flex flex-column flex-align-end">
+            <span class="usa-tag">{{announcement.doctype}}</span>
+          </div>
+          <p>{{announcement.summary}}</p>
+          <hr>
+          <div class="display-flex flex-column flex-align-end">  
+            <span class="gsa-source usa-link usa-link--external">Source: {{announcement.source}}</span>
+          </div>
+        </div>
+      </div>
+<!--    {% endif %} -->
+  {% endfor %}
+
+# Testing and Certification
 
 We test and certify a variety of products and services such as:
 
@@ -33,9 +58,9 @@ We test and certify a variety of products and services such as:
 - Physical access control systems for buildings including readers and infrastructure
 - Service providers who manage, install, or provide hosted solutions for issuance of Personal Identity Verification (PIV) and CAC credentials
 
-If you’re looking for testing procedures related to products not listed above, review the [announcements]({{site.baseurl}}/fips201/fipsannouncements/). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
+If you’re looking for testing procedures related to products not listed above, review the [FIPS 201 announcements](#program-announcements). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
 
-### Product Testing
+## Product Testing
 
 Product testing is performed by either:
 
@@ -50,7 +75,7 @@ Visit the [Vendors page]({{site.baseurl}}/vendor/) for more on testing and certi
 
 Functional requirements for the products are outlined in each test procedure. Review the testing agreements, and the test procedure for your specific product, and submit the agreement and package to fips201ep at gsa.gov.
 
-### Testing Agreements
+## Testing Agreements
 
 Review the testing agreements, and sign and submit the appropriate agreement with your testing package to fips201ep at gsa.gov.
 
@@ -59,7 +84,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. 
 - [Removed Products List (RPL) Process Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If your product has been removed from the APL, review this document for the procedures.
 
-## Personal Identity Verification Credentials
+# Personal Identity Verification Credentials
 
 - [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
   - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
@@ -87,7 +112,7 @@ Agencies that wish to issue D-PIV credentials should follow these steps:
 
 Upon successful completion of DPCI testing, the agency or organization will be granted approval to issue D-PIV credentials.
 
-## Physical Access Control System
+# Physical Access Control System
 
 GSA tests and validates the interoperability of PIV and CAC credentials with the software and hardware used to restrict physical access to government facilities. 
 
@@ -101,7 +126,7 @@ Review the test procedures, choose one of the application packages, and submit t
 
     - Review this Addendum for help resetting PIN retry counters, and determining the number of remaining PIN retries during Discovery Object testing.
 
-### PACS Application Package for New Systems or for Updates to Previously Approved Systems
+## PACS Application Package for New Systems or for Updates to Previously Approved Systems
 
 All applicants, please complete the following steps:
 
@@ -128,7 +153,7 @@ All applicants, please complete the following steps:
 11. Include all applicable VPAT statements, UL-294, and FIPS 140-2/140-3 listing documents.
 12. Submit all completed forms to fips201ep at gsa.gov.
 
-### Test Card Loaners
+## Test Card Loaners
 
 GSA can loan you test cards to help you pre-test your physical access control system products.
 

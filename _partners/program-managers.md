@@ -3,12 +3,12 @@ layout: page
 collection: partners
 title: Program Managers
 permalink: /program-managers/
-sidenav: program
+sidenav: partners
 sticky_sidenav: true
 
 subnav:
-  - text: ICAM PM Guide
-    href: '#icam-program-management-guide'
+  - text: ICAM PM 101
+    href: '#icam-program-management-101'
   - text: FICAM Architecture and Playbooks 
     href: '#ficam-architecture-and-playbooks'
   - text: Announcements
@@ -22,11 +22,11 @@ subnav:
 
 The Federal ICAM (FICAM) program helps federal agencies plan and manage enterprise identity, credentialing, and access management (ICAM) through collaboration opportunities and guidance on information technology (IT) policy, standards, implementation, and architecture.  Interagency working groups developed most of the guidance and best practices found on this website.
 
-## ICAM Program Management Guide
+## ICAM Program Management 101
 
-The [ICAM Program Management Playbook]({{site.baseurl}}/program-managers/){:target="_blank"}{:rel="noopener noreferrer"} explains how to plan and implement an ICAM Program, as outlined in the [Federal Identity, Credential, and Access Management (FICAM) Architecture]({{site.baseurl}}/why/icam/){:target="_blank"}{:rel="noopener noreferrer"}. Here, you’ll find content for ICAM program managers who need agency-level planning guides to drive adoption of ICAM services within their organizations as well as information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The [ICAM Program Management 101]({{site.baseurl}}/university/pm/) explains how to plan, implement, and manage an agenbct ICAM Program. Here, you’ll find content for ICAM program managers who need agency-level planning guides and templates to drive adoption of ICAM services within their organizations as well as information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
-This guide answers the most common ICAM program organization and management questions, including:
+This 101 guide answers the most common ICAM program organization and management questions, including:
 - How can I establish governance to ensure ICAM alignment at the agency level?
 - Who are my key ICAM stakeholders?
 - What best practices support ICAM implementation?
@@ -35,15 +35,15 @@ The guide is organized by sections, each of which describes an essential feature
 
 ## FICAM Architecture and Playbooks
 
-The [FICAM Architecture and accompanying guidance]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"}, maintained by GSA in coordination with the Office of Management and Budget (OMB) and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA), contains processes, procedures, and considerations for planning and managing logical access, physical access, identity management, and federation within federal agencies.
+The [FICAM Architecture]({{site.baseurl}}/arch/) and accompanying [playbooks]({{site.baseurl}}/playbooks/), maintained by GSA in coordination with the Office of Management and Budget (OMB) and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA), contains processes, procedures, and considerations for planning and managing identity, credential, and access management processes within federal agencies.
 
-These playbooks are hosted on GitHub and provide common policy and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on the needs and interests of individual agencies and government-wide groups. Reach out to icam at gsa dot gov to suggest new topics.
+These playbooks are hosted on GitHub and provide common policy interpretations and patterns to help you implement and execute ICAM at your agency. The playbooks are a government-wide collaboration based on the needs and interests of individual agencies and governmentwide groups. Reach out to icam at gsa dot gov to suggest new topics.
 
 ## Announcements
 
-- [FIPS 201 Evaluation Program Announcements]({{site.baseurl}}/fips201/fipsannouncements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKI Announcements]({{site.baseurl}}/fpki/announcements/){:target="_blank"}{:rel="noopener noreferrer"}
-- [FPKI System Notifications]({{site.baseurl}}/fpki/notifications/){:target="_blank"}{:rel="noopener noreferrer"}
+- [FIPS 201 Evaluation Program Announcements]({{site.baseurl}}/fips201ep/)
+- [FPKI Program Announcements]({{site.baseurl}}/fpki/announcements/)
+- [FPKI System Notifications]({{site.baseurl}}/fpki/notifications/)
   
 
 ## Training

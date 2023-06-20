@@ -47,10 +47,14 @@ partners:
     href: /acquisition-professionals/
   - text: Program Managers 
     href: /program-managers/
+  - text: GSA ICAM Services Roadmap
+    href: /gsaicamservices/
   - text: FIPS 201 - Approved Product List
     href: /fips201/
-  - text: PACS Awaiting Approval
-    href: /fips201/#pacs-solutions-awaiting-approval/
+  - text: Phishing-Resistant Product Criteria
+    href: /phish-criteria/
+  - text: Federal Workforce Identity Services
+    href: /trust-services/
 
 implement:
   - text: Introduction

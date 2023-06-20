@@ -2,9 +2,9 @@
 layout: page
 collection: partners
 title: Phishing-Resistant Authenticator Product Criteria
-permalink: /vendors/ficampc/
+permalink: /phish-criteria/
 sticky_sidenav: true
-sidenav: vendor 
+sidenav: partners 
 
 version: 1.5
 pubDate1: April 2023
