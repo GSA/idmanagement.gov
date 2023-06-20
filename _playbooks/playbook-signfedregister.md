@@ -7,7 +7,7 @@ date: August 17, 2022
 category: Digitally Sign
 type: Markdown
 permalink: /playbooks/signfedregister/
-description: This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
 sidenav: playbooks
 sticky_sidenav: true
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title:  FIPS 201 Evaluation Program
-collection: fips201
-permalink: fips201/
-sidenav: fips201
+collection: ficampmo
+permalink: /fips201ep/
+sidenav: functions
 sticky_sidenav: true
 
 subnav:

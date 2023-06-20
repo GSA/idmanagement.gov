@@ -114,9 +114,9 @@ primary_navigation:
         url: /implement/whfb/
       - name: Certificate-Based Authentication on Azure AD (Coming Soon!)
         href: /content-roadmap/
-      - text: Sign and Encrypt Email in Outlook
+      - name: Sign and Encrypt Email in Outlook
         href: /implement/outlook/
-      - text: FPKI Ecosystem Changes
+      - name: FPKI Ecosystem Changes
         href: /fpki/notifications/
   - name: FICAM Functions
     children: 
@@ -125,7 +125,7 @@ primary_navigation:
       - name: Federal PKI Program
         url: /fpki/
       - name: FIPS 201 Evaluation Program
-        url: /fips201/
+        url: /fips201ep/
       - name: GSA PKI SSP Program
         url: /pkissp/
   - name: Playbooks
@@ -161,16 +161,9 @@ secondary_navigation:
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
 searchgov:
-
-  # You should not change this.
   endpoint: https://search.usa.gov
-
-  # replace this with your search.gov account
   affiliate: idmprod
-
-  # replace with your access key
   access_key: zCEoL5u4U5XFzfFSxy8y4Iz6vdtTjsb4U539L_rgDTM=
-
   # this renders the results within the page instead of sending to user to search.gov
   inline: false
 

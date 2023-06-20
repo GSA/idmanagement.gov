@@ -81,6 +81,22 @@
   header: "/assets/playbooks/headers/playbook_11.png"
   target: _self
 
+- title: Digitally Sign a Word Document
+  type: Markdown
+  pubdate: 2018-03
+  description: This playbook will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
+  url: "/playbooks/signword/"
+  header: "/assets/playbooks/headers/playbook_01.png"
+  target: _self
+
+- title: Digitally Sign a Federal Register Document
+  type: Markdown
+  pubdate: 2022-08
+  description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+  url: "/playbooks/signfedregister/"
+  header: "/assets/playbooks/headers/playbook_06.png"
+  target: _self
+
 # Removed because it has a status of archived
 # - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
 #   type: PDF

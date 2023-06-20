@@ -2,7 +2,7 @@
 layout: page
 collection: partners
 title: Technical Leads and Team Members
-permalink: /partners/technical-leads-and-team-members/
+#permalink: /partners/technical-leads-and-team-members/
 sidenav: partners
 sticky_sidenav: true
 

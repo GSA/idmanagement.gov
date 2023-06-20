@@ -9,27 +9,45 @@ sticky_sidenav: true
 subnav:
   - text: Introduction
     href: '#introduction'
+  - text: Federal Workforce Identity Framework
+    href: '#federal-workforce-identity-framework'
   - text: ICAM Governance Bodies
     href: '#icam-governance-bodies'
+  - text: ICAM Subcommittee
+    href: '#identity-credential-and-access-management-subcommittee'
+  - text: Federal PKI Policy Authority
+    href: '#federal-public-key-infrastructure-policy-authority'
 ---
 
 # Introduction
 
 The GSA Federal ICAM (FICAM) program helps federal agencies plan and manage enterprise identity, credentialing, and access management (ICAM) through collaboration opportunities and guidance on IT policy, standards, implementation, and architecture. Most of the guidance and best practices found on this website are developed through interagency working groups. The FICAM Program is a Federal CIO Council initiative managed by the GSA Office of Government-wide Policy.
 
-The FICAM Program is governed through a four-part framework for identity federations.
+# Federal Workforce Identity Framework
+
+The FICAM Program governs through a four-part framework for identity federations.
 
 1. Governance - Sets policies, sign legal agreements, approves members and applicants, and oversees compliance activities.
 2. Technical and Security Requirements - Outline technical and security requirements for all members.
 3. Recognition - List of members and compliant services.
 4. Compliance - Members and services complete 2nd party (OIG) or 3rd party compliance activity to increase trust.
 
-Through this four-part framework, the GSA FICAM Program manages the following governmentwide functions.
+Through this four-part framework, the GSA FICAM Program leads or coordinates the following governmentwide functions.
 
-1. ICAM Governance - Maintain and update idmanagement.gov which includes the FICAM Architecture and accompanying playbooks and configuration guidance as well as secretary/co-chair the Federal CISO Council ICAM Subcommittee.
-2. [Federal PKI Governance]({{site.baseurl}}/fpki/) - Review Federal PKI 3rd party PKI audits and secretary/co-chair the Federal PKI Policy Authority
-3. [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
-4. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/ssppki/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
+1. Governance
+   1. ICAM Governance - Maintain and update idmanagement.gov which includes the FICAM Architecture and accompanying playbooks and configuration guidance as well as secretary/co-chair the Federal CISO Council ICAM Subcommittee. Lead governmentwide ICAM initiatives like the FIDO2 Community of Action and Digital Identity Community of Practice.
+   2. [Federal PKI Governance]({{site.baseurl}}/fpki/) - Review Federal PKI 3rd party PKI audits and secretary/co-chair the Federal PKI Policy Authority
+2. Technical and Security Requirements
+   1. FIPS 201 and accompanying Special Publications
+   2. NIST Special Publication 800-63
+   3. GSA FIPS 201 Functional Requirements and Test Cases
+3. Recognition
+   1. Workforce identity trust services
+   2. FIPS 201 Approved Product List
+   3. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/ssppki/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
+4. Compliance
+   1. [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
+   2. Federal PKI Annual Review Process
 
 # ICAM Governance Bodies
 

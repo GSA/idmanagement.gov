@@ -155,7 +155,7 @@ eight.
 							<hr>
 							<div class="usa-card__body">
 								<p>
-									Govern and operate FICAM-compliant systems and services.
+									Govern and operate ICAM systems and services.
 								</p>
 							</div>
 							<div class="usa-card__footer">
@@ -176,35 +176,67 @@ eight.
 		<h2 class="hero-heading" style="text-align: center">Functions</h2>
 		<hr><br>
 	<!-- Required Links -->
-	<div class="desktop:grid-col-12">						
+	<div class="desktop:grid-col-12">	<!-- FICAM PMO -->					
 		<ul class="usa-card-group">							
-			<li class="usa-card tablet:grid-col-4">
+			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left">
+				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0"  tabindex="0" onclick="navigateTo('{{site.baseurl}}/ficam/')" onkeydown="navigateTo('{{site.baseurl}}/ficam/')" aria-label="FICAM program management office">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">FICAM program management office</h3>
+					</div>
+					<div class="usa-card__media">
+						<div class="usa-card__img">
+								<img
+								src="{{site.baseurl}}/assets/playbooks/headers/playbook_10.png"
+								alt="FICAM program management office"
+								tabindex="-1" aria-label="FICAM program management office"
+								/>
+							</div>
+					</div>
+					<div class="usa-card__body">
+					<hr>
+						<p>
+							The Federal, Identity, Credential, and Access Management program management office is a collaboration with the Federal CIO Council to mature agency ICAM practices and processes through governmentwide guidance like the FICAM architecture and playbooks on idmanagement.gov.
+						</p>
+					<hr>
+					</div>
+					
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Markdown</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="desktop:grid-col-12">						
+		<ul class="usa-card-group">		
+			<li class="usa-card tablet:grid-col-4"> <!-- FPKI --->
 				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fpki/')" onkeydown="navigateTo('{{site.baseurl}}/fpki/')" aria-label="Federal public key infrastructure guide">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Federal public key infrastructure guide</h3>
+						<h3 class="site-preview-heading">Federal public key infrastructure governance</h3>
 					</div>
 					<div class="usa-card__media">
 						<div class="usa-card__img">
 							  <img
 							  src="{{site.baseurl}}/assets/playbooks/headers/fpki_header.jpg"
-							  alt="Federal public key infrastructure guide"
-							  tabindex="-1" aria-label="Federal public key infrastructure guide"
+							  alt="Federal public key infrastructure governance"
+							  tabindex="-1" aria-label="Federal public key infrastructure governance"
 							  />
 							</div>
 					</div>
 					<hr>
 					<div class="usa-card__body">
-						<p>These guides are open source and a work in progress and we welcome contributions from our colleagues. We encourage you to contribute and share information you think is helpful for the Federal PKI community.</p>
+						<p>TThis page contains information to help Federal Public Key Infrastructure (FPKI) program managers and auditors. It includes the FPKI policies and profiles, annual FPKI annual review schedule, tools for compliance submissions, and information on compliance status of Federal PKI Certification Authorities.</p>
 					</div>
 					<hr>
 					<div class="usa-card__footer">
 						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: current <br><span class="usa-tag bg-accent-warm">Markdown</span>
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Markdown</span>
 					</div>
 				</div>
 			</li>
-			<li class="usa-card tablet:grid-col-4">
-				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fips201/')" onkeydown="navigateTo('{{site.baseurl}}/fips201/')" aria-label="FIPS 201 evaluation program">
+			<li class="usa-card tablet:grid-col-4"> <!-- FIPS201 EP -->
+				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fips201ep/')" onkeydown="navigateTo('{{site.baseurl}}/fips201ep/')" aria-label="FIPS 201 evaluation program">
 					<div class="usa-card__header">
 						<h3 class="site-preview-heading">FIPS 201 evaluation program</h3>
 					</div>
@@ -219,81 +251,44 @@ eight.
 					</div>
 					<hr>
 					<div class="usa-card__body">
-						<p>The Federal information processing standard 201 FIPS 201 evaluation program (sometimes called the FICAM testing program) tests and certifies services and commercial products used in PIV credentialing systems, physical access control systems (PACS), and public key infrastructures (PKIs).</p>
+						<p>The Federal information processing standard 201 evaluation program tests and certifies services and commercial products.</p>
+						<hr>
+						<div class="usa-card__body">
+							<p>
+								<a href="{{site.baseurl}}/fips201/" aria-label="Approved products list" class="usa-button usa-button--accent-cool usa-button--active">Approved product list</a>
+							</p>
+							<p>
+								<a href="{{site.baseurl}}/fips201/#removed-product-list" aria-label="Removed products list" class="usa-button usa-button--accent-cool usa-button--active">Removed product list</a>
+							</p>
+						</div>
+						<hr>
 					</div>
 					<hr>
 					<div class="usa-card__footer">
 						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: current <br><span class="usa-tag bg-accent-warm">Markdown</span>
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Markdown</span>
 					</div>
 				</div>
 			</li>
-			<li class="usa-card tablet:grid-col-4" tabindex="-1">
-				<!-- <a class="gsa-no-dec" href="#" target="_blank"> -->
-				<div class="usa-card__container  gsa-card-shadow">
+			<li class="usa-card tablet:grid-col-4"> <!-- GSA PKI SSP -->
+				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/pkissp/')" onkeydown="navigateTo('{{site.baseurl}}/pkissp/')" aria-label="GSA PKI shared service provider program">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">FIPS 201 approved product lists</h3>
+						<h3 class="site-preview-heading">GSA PKI shared service provider program</h3>
 					</div>
 					<div class="usa-card__media">
 					<div class="usa-card__img">
-							  <img
-							  src="{{site.baseurl}}/assets/playbooks/headers/playbook_10.png"
-							  alt="FIPS 201 Approved Products Lists"
-							  tabindex="-1" aria-label="FIPS 201 approved product lists"
-							  />
-							</div>
+						  <img
+							src="{{site.baseurl}}/assets/playbooks/headers/playbook_06.png"
+							alt="GSA PKI shared service provider program"
+							tabindex="-1" aria-label="GSA PKI shared service provider program"
+						  />
+					</div>
 					</div>
 					<hr>
 					<div class="usa-card__body">
-						<p>
-							<a href="{{site.baseurl}}/approved-products-list-piv/" aria-label="Approved products list - PIV Cards" class="usa-button usa-button--accent-cool usa-button--active">PIV cards</a>
-						</p>
-						<p>
-							<a href="{{site.baseurl}}/approved-products-list-pacs-products/" aria-label="Approved products list - PACS" class="usa-button usa-button--accent-cool usa-button--active">PACS components</a>
-						</p>
-						<p>
-							<a href="{{site.baseurl}}/approved-products-list-pacs-products/#pacs-solutions-awaiting-approval"  aria-label="PACS awaiting approval" class="usa-button usa-button--accent-cool usa-button--active">PACS awaiting approval</a>
-						</p> 
-						<p>
-							<a href="{{site.baseurl}}/removed-products-list/"  aria-label="Removed Products List" class="usa-button usa-button--accent-cool usa-button--active">Removed product list</a>
-						</p>
+						<p>TThe General Services Administration GSA, Office of Government-wide Policy, manages the GSA Public Key Infrastructure Shared Services Provider program. The primary program focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.</p>
 					</div>
 					<hr>
-					<div class="usa-card__footer">
-						<!-- <button type="button" class="usa-button">Button text</button> -->
-						Latest Update: current <br><span class="usa-tag bg-accent-warm">Lists</span>
-					</div>
-				</div>
-				<!-- </a> -->
-			</li>
-		</ul>
-	</div>
-	<!-- Required Links -->
-	<div class="desktop:grid-col-12">						
-		<ul class="usa-card-group">							
-			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left">
-				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0"  tabindex="0" onclick="navigateTo('{{site.baseurl}}/ssp/')" onkeydown="navigateTo('{{site.baseurl}}/ssp/')" aria-label="GSAPKI shared service provider program guide">
-					<div class="usa-card__header">
-						<h3 class="site-preview-heading">GSAPKI shared service provider program guide</h3>
-					</div>
-					<div class="usa-card__media">
-						<div class="usa-card__img">
-								<img
-								src="{{site.baseurl}}/assets/playbooks/headers/playbook_06.png"
-								alt="GSAPKI shared service provider program guide"
-								tabindex="-1" aria-label="GSAPKI shared service provider program guide"
-								/>
-							</div>
-					</div>
-					
-					<div class="usa-card__body">
-					<hr>
-						<p>
-							The General Services Administration GSA, Office of Government-wide Policy, manages the PublicKey Infrastructure(PKI) Shared Services Provider(SSP) program. The primary program focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.
-						</p>
-					<hr>
-					</div>
-					
 					<div class="usa-card__footer">
 						<!-- <button type="button" class="usa-button">Button text</button> -->
 						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Markdown</span>

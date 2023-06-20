@@ -7,7 +7,7 @@ pubdate: 2018-03
 date: March 23, 2018
 type: Markdown
 permalink: /playbooks/signword/
-description: This guide will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
+description: This playbook will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
 sidenav: playbooks
 sticky_sidenav: true
 

@@ -47,26 +47,10 @@ partners:
     href: /acquisition-professionals/
   - text: Program Managers 
     href: /program-managers/
-  # - text: Trust Services [x]
-  #   href: /partners/trust-services/ [x]
-  # - text: GSA ICAM Solutions [x]
-  #   href: /partners/icamsolutions/ [x]
-  # - text: Procurements
-  #   href: /partners/procure/
-  # - text: Training
-  #   href: /partners/train/
-  # - text: Lessons Learned
-  #   href: /partners/lessonslearned/
-  # - text: Standards
-  #   href: /partners/standards/
-  - text: Approved Product List - PIV Cards
-    href: /approved-products-list-piv/
-  - text: Approved Product List - PACS
-    href: /approved-products-list-pacs-products/ 
-  - name: PACS Awaiting Approval
-    href: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
-  - text: Removed Product List 
-    href: /removed-products-list/ 
+  - text: FIPS 201 - Approved Product List
+    href: /fips201/
+  - text: PACS Awaiting Approval
+    href: /fips201/#pacs-solutions-awaiting-approval/
 
 implement:
   - text: Introduction
@@ -96,7 +80,7 @@ functions:
   - text: Federal PKI Governance
     href: /fpki/
   - text: FIPS 201 Evaluation Program
-    href: /fips201/
+    href: /fips201ep/
   - text: GSA PKI Shared Service Provider Program
     href: /pkissp/
 
@@ -117,8 +101,6 @@ university:
     href: /university/pm/
   - text: ICAM Policy Matrix - Laws, Policies, and Standards
     href: /university/policy-matrix/
-  - text: Additional Resources
-    href: /university/resources/
 
 playbooks:
   - text: Introduction
@@ -139,8 +121,10 @@ playbooks:
     href: /playbooks/ilm/ 
   - text: Privileged Identity Playbook
     href: /playbooks/pam/ 
-
-## Move to Archived after one year
+  - text: Digitally Sign a Word Document
+    href: /playbooks/signword/
+  - text: Digitally Sign a Federal Register Notice
+    href: /playbooks/signfedregister/
 
 fpkiannouncements:
   - text: Back to FPKI Page
@@ -157,46 +141,6 @@ fpkiannouncements:
     href: /fpki/announcements/test-tools/
   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
     href: /fpki/announcements/common-g2-update/
-
-# The fips201 and vendor sidenav should match, unless something exclusive is added to to either one. 
-## Old Sell sidenav, changed to fips201/ as a global address
-fips201:
-  - text: Vendor Overview
-    href: /vendors/
-  - text: FIPS 201 Evaluation Program
-    href: /fips201/
-  - text: FIPS 201 Announcements
-    href: /fips201/fipsannouncements/
-  - text: FICAM Product Criteria
-    href: /vendors/ficampc/
-    
-# New Vendor sidenav
-vendor:
-  - text: Vendor Overview
-    href: /vendors/
-  - text: FIPS 201 Evaluation Program
-    href: /fips201/
-  - text: FIPS 201 Announcements
-    href: /fips201/fipsannouncements/
-  - text: FICAM Product Criteria
-    href: /vendors/ficampc/
-
-# New Aquisitions Professional sidenav
-acquisition:
-  - text: Acquisition Overview
-    href: /acquisition-professionals/
-  - text: Trust Services
-    href: /partners/trust-services/
-  - text: GSA ICAM Solutions
-    href: /partners/icamsolutions/
-  - text: Approved Product List - PIV Cards
-    href: /approved-products-list-piv/
-  - text: Approved Product List - PACS
-    href: /approved-products-list-pacs-products/ 
-  - text: PACS Awaiting Approval
-    href: /approved-products-list-pacs-products/#pacs-solutions-awaiting-approval
-  - text: Removed Product List 
-    href: /removed-products-list/ 
  
 ## Main Site
 policy:
