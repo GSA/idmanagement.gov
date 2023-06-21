@@ -49,10 +49,8 @@ primary_navigation:
         url: /arch/
       - name: Zero Trust
         url: /zero-trust/
-      - name: History
-        url: /why/history/
-      - name: ICAM
-        url: /why/icam/
+      - name: GSA ICAM Solutions Roadmap
+        url: /icamsolutions/
   - name: Partners
     children:
       - name: Vendors
