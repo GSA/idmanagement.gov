@@ -49,4 +49,3 @@ This is a list of available courses with a focus for free, on-demand training. V
    2. Certified Cloud Security Engineer
    3. Certified Information Systems Security Professional 
 3. Microsoft offers an on-demand training module for its [SC-300 Microsoft Certified: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/browse/?terms=sc-300){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} which teaches design, implementation, and operation of an organization’s identity and access management systems through using Microsoft Azure Active Directory (Azure AD).
-4. 
