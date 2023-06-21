@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: partners
+collection: arch
 title:  GSA ICAM Solutions and Shared Services Roadmap
 permalink: /icamsolutions/
-sidenav: partners
+sidenav: arch
 sticky_sidenav: true
 lastupdate: 05/21/2021
 

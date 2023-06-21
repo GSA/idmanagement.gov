@@ -2,7 +2,7 @@
 layout: page
 collection: partners
 title:  Federal Workforce identity Services
-permalink: /partners/trust-services/
+permalink: /trust-services/
 sidenav: partners
 sticky_sidenav: true
 lastupdate: 07/12/2021

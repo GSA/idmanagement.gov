@@ -26,97 +26,27 @@ subnav:
 
 ---
 
-<!-- FICAM University -->
-
 This University section serves as a knowledge base for all things identity. Explore the endless amount of identity related content at your leisure.
 
-<hr/>
+A number of 101 guides are available to understand identity topics in general or specific to the federal government.
+
+1. [Public Key Infrastructure]({{site.baseurl}}/university/pki)
+2. [Federal Public Key Infrastructure]({{site.baseurl}}/university/fpki)
+3. [Physical Access Control Systems]({{site.baseurl}}/university/pacs)
+4. [Personal Identity Verification Credential]({{site.baseurl}}/university/piv)
+5. [Personal Identity Verification Interoperable Credential]({{site.baseurl}}/university/pivi)
+6. [ICAM Program Management]({{site.baseurl}}/university/pm)
 
 ## Training
 
-Content TBD
+This is a list of available courses with a focus for free, on-demand training. Vendor offered training does not mean an endorsement of a specific product or service. Suggest new courses by [contacting us]({{site.baseurl}}/contact-us).
 
-
-## System Components
-
-Component examples include sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The component examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications and the business requirements.
-
-The system's components are representative examples only. Some solutions chosen by your agency may span across more than one service area.
-
-The following figure is an example for a small selection of system components only. You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
-
-<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas." width="560" height="319">
-
-## Authoritative Sources
-An authoritative source is a trusted repository of identity attribute data.  It’s possible to have multiple authoritative sources for attributes.
-
-Authoritative sources systems components may include:
-
-- Human Resource systems such as payroll, time and attendance, and benefits administration
-- Agency or government-wide Learning Management Systems
-- Agency or government-wide Personnel Security systems for security and suitability
-- Directory services, including on-premise or cloud-based directory services
-- Other external or internal sources
-
-## Identity Management Systems
-Identity management systems are how an agency manages the identity lifecycle. 
-
-Identity management system components may include:
-
-- Identity lifecycle management services, including provisioning and workflow 
-- Role management or role manager applications
-- Identity correlation or aggregation
-- Directory management
-
-## Access Management Systems
-Access management systems are how an agency leverages credentials to authenticate individuals and authorize access to protected resources.
-
-Access management system components may include:
-
-- Enterprise single sign-on (eSSO) applications
-- Web access management applications
-- Physical or facility access control systems 
-- Privileged access management applications
-- Access policy and access rules repositories
-- Policy enforcement points 
-- Policy decision points
-- Virtual private networks
-- Cloud access security brokers
-- Network access management tools
-
-
-## Credential Management Systems
-Credential management systems are how an agency manages an authentication token bound to an identity.
-
-Credential management system components may include:
-
-- PIV credential service provider solutions
-- Other non-PKI credential service provider solutions 
-- Federated certification authorities
-- Private certification authorities
-- Key management services 
-- Enterprise certificate manager
-- Multi-factor authentication managers for software and hardware tokens
-- Password managers
-
-## Governance Systems
-Governance is the set of components to centralize management, develop insights, and assist in managing ICAM areas and services. Applications across all service areas include auditing such as standard audit logs or configuration of auditable events. Governance includes the aggregation of individual auditing and reporting into centralized tools to perform real-time or near real-time analysis, identify anomalies, and trigger mitigations for anomalous authentication or authorization events. Tools are increasingly incorporating machine learning or adaptive algorithms. 
-
-Governance systems components may include:
-
-- Identity governance solutions to perform access re-certifications 
-- IT Service Management (ITSM)
-- Security information and event monitoring (SIEM)
-
-## Agency Endpoints
-Agency endpoints are resources that an agency needs to protect, including physical and digital resources. 
-
-Agency endpoints may include:
-
-- On-premise applications
-- Cloud-based applications and platforms
-- Agency private networks
-- Government cloud email services
-- Government facilities
-
-
+1. The [Federal Virtual Training Environment](https://fedvte.usalearning.gov/coursecat_external.php){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a free training resource for all federal employees. Here is a short list of some of the identity courses that are offered.
+   1. Micro Learn: IdAM- Identity and Access Management with the CDM Agency Dashboard
+   2. CDM 201 – Identity and Access Management Capabilities within the CDM Agency Dashboard
+2. The [CIO Council Cloud and Infrastructure Community of Practice](https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} offer [quarterly training](https://community.max.gov/display/Egov/Cloud+Training+Resources){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} focused on cloud and security certification boot camps. The courses change every quarter. Here is a short list of previous courses offered.
+   1. AWS Foundations, Architect, and Developer
+   2. Certified Cloud Security Engineer
+   3. Certified Information Systems Security Professional 
+3. Microsoft offers an on-demand training module for its [SC-300 Microsoft Certified: Identity and Access Administrator Associate](https://learn.microsoft.com/en-us/training/browse/?terms=sc-300){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} which teaches design, implementation, and operation of an organization’s identity and access management systems through using Microsoft Azure Active Directory (Azure AD).
+4. 

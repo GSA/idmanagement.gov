@@ -1,54 +1,19 @@
 ## sidenav yaml
-why:
-  - text: Introduction
-    href: /why/
-  - text: Zero Trust
-    href: /why/zero-trust/
-  # moved to intro of achitecture in Sprint 8
-  # - text: Architecture
-  #   href: /why/architecture/
-  - text: History
-    href: /why/history/
-  - text: ICAM
-    href: /why/icam/
-  - text: Goals and Objectives
-    href: /why/goals-and-objectives/
-  # - text: Enabling Mission Delivery through Improved Identity, Credential, and Access  (named to make label in menu shorter)
-  - text: Memorandum M-19-17
-    href: /memorandum-19-17/
-  # - text: Managing Information as a Strategic Resource (OMB Circular A-130) (renamed to make label in menu shorter)
-  - text: OMB Circular A-130
-    href: /omb-circular-a130/
-
 arch:
-  - text: Introduction
+  - text: FICAM Architecture
     href: /arch/
-  - text: Products
-    href: /arch/products/
-  - text: Services
-    href: /arch/services/
-  - text: Service Framework
-    href: /arch/servicesframework/
-  - text: Use Cases
-    href: /arch/usecases/
-  - text: PIV Card APL
-    href: /approved-products-list-piv/
-  - text: PACS Products APL
-    href: /approved-products-list-pacs-products/
-  - text: Removed Products (RPL)
-    href: /removed-products-list/
+  - text: Zero Trust Alignment
+    href: /zero-trust/
+  - text: GSA ICAM Solutions and Shared Services Roadmap
+    href: /icamsolutions/
 
 partners:
-  - text: Introduction
-    href: /partners/ 
   - text: Vendors
     href: /vendors/
   - text: Acquisition Professionals
     href: /acquisition-professionals/
   - text: Program Managers 
     href: /program-managers/
-  - text: GSA ICAM Services Roadmap
-    href: /gsaicamservices/
   - text: FIPS 201 - Approved Product List
     href: /fips201/
   - text: Phishing-Resistant Product Criteria
@@ -146,7 +111,6 @@ fpkiannouncements:
   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
     href: /fpki/announcements/common-g2-update/
  
-## Main Site
 policy:
   - text: Contact Us
     href: /contact-us/

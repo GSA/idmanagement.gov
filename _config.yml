@@ -43,40 +43,18 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Why FICAM?
+  - name: Understand FICAM
     children:
-      - name: Introduction
-        url: /why/
+      - name: FICAM Architecture
+        url: /arch/
       - name: Zero Trust
-        url: /why/zero-trust/
+        url: /zero-trust/
       - name: History
         url: /why/history/
       - name: ICAM
         url: /why/icam/
-      # - name: Enabling Mission Delivery through Improved Identity, Credential, and Access (renamed to make label in menu shorter)
-      - name: Memorandum M-19-17
-        # Redirects to: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf (Required)
-        url: /memorandum-19-17/
-      # - name: Managing Information as a Strategic Resource (OMB Circular A-130) (renamed to make label in menu shorter)
-      - name: OMB Circular A-130
-        # Redirects to: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf (Required)
-        url: /omb-circular-a130/
-  - name: FICAM Architecture
-    children: 
-      - name: Introduction
-        url: /arch/
-      - name: Goals and Objectives
-        url: /arch/goals/
-      - name: Services Framework
-        url: /arch/servicesframework/
-      - name: Use Cases
-        url: /arch/usecases/
-      - name: Architecture Example
-        url: /arch/arch-example/
   - name: Partners
     children:
-      - name: Introduction
-        url: /partners/
       - name: Vendors
         url: /vendors/
       - name: Acquisition Professionals
@@ -94,10 +72,11 @@ primary_navigation:
       - name: Certificate-based Authentication for Cloud
         url: /implement/whfb/
       - name: Use Smart Cards with Applications
-        href: /implement/outlook/
+        url: /implement/outlook/
+      - name: FIDO2 and Web Authentication (Coming Soon!)
       - name: FPKI Ecosystem Changes
-        href: /fpki/notifications/
-  - name: FICAM Functions
+        url: /fpki/notifications/
+  - name: Coordination Functions
     children: 
       - name: FICAM Program
         url: /ficam/
