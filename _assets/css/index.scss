@@ -9,7 +9,10 @@
 .gsa-target-accordion-content-area {} // for accordion content targeting
 .gsa-card{cursor: pointer;} // adds a pointer to a card.
 
-
+// 508 contrast nudes.. to get contrast color right. 
+.bg-accent-warm {
+  background-color: #bf5906;
+}
 
 // Important: Colors for H1 and H2 in usa-layout-docs element
 .usa-layout-docs h1 {

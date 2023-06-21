@@ -15,6 +15,7 @@
 #   actionTarget(default: _blank): target window, options: _blank or _self if link is internal to site 
 
 # Memo: If a link is internal to the site, actionTarget should be set to "_self" if the lint is external or a PDF or Document of somekind, the "_blank" should be used.
+# Note: leave the / off the internal urls for 'actionLocation:' 
 
 - orderNumber: 0
   initialState: active
@@ -31,7 +32,7 @@
   heroHeading: Zero Trust
   heroText: concept assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established.
   actionButtonText: Learn more about
-  actionLocation: why/zero-trust/
+  actionLocation: zero-trust/
   actionTarget: _blank
 
 - orderNumber: 2
@@ -49,7 +50,7 @@
   heroHeading: Phishing resistant authenticators (Coming Soon)
   heroText: are not susceptible to common interception and replay attacks. Phishing-resistant MFA protects users from sophisticated online attacks.
   actionButtonText: Coming Soon!
-  actionLocation: home/
+  actionLocation: /
   actionTarget: _blank
 
 - orderNumber: 4

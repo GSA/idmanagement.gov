@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Smart Card Logon for Firefox Browswer
+title: Smart Card Logon for Firefox Browser
 permalink: /implement/scl-firefox/
 sticky_sidenav: true
 sidenav: implement

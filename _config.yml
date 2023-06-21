@@ -43,7 +43,7 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Understand FICAM
+  - name: Why FICAM
     children:
       - name: FICAM Architecture
         url: /arch/
