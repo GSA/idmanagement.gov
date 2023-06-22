@@ -399,7 +399,7 @@
     metrics for Federal agencies, as well as requirements for reporting on their progress. For FICAM, 
     this suggests use of Identity as a Service Providers and Shared Service Providers for PKI, as 
     discussed in the Cloud Identity Playbook.
-  published: 2016-06-25
+  published: 2019-06-25
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/06/M-19-19-Data-Centers.pdf"
   authored-by:
     - *OMB
