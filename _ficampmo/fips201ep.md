@@ -32,24 +32,30 @@ Announcements older than four years are removed. [Contact us]({{site.baseurl}}/c
 </ul>
 {% assign lcount = 0 %}
 {% for announcement in site.data.fips201announcements %}
-{% if announcement.status == "Active" %}
-    <div class="usa-accordion usa-accordion--bordered">
-      <h4 class="usa-accordion__heading">
-        <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{announcement.expanded}}" aria-controls="gsa-{{forloop.index}}">{{announcement.name}} ({{announcement.pubdate}})</button>
-      </h4>
-      <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{announcement.url}}')" onkeydown="navigateTo('{{announcement.url}}')" aria-label="{{announcement.name}}" tabindex="0">
-        <div class="display-flex flex-column flex-align-end">
-          <span class="usa-tag">{{announcement.doctype}}</span>
-        </div>
-        <p>{{announcement.summary}}</p>
-        <hr>
-        <div class="display-flex flex-column flex-align-end">  
-          <span class="gsa-source usa-link usa-link--external">Source: {{announcement.source}}</span>
-        </div>
+  {% if announcement.status == "Active" %}
+  <div class="usa-accordion usa-accordion--bordered">
+    <h4 class="usa-accordion__heading">
+      <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{announcement.expanded}}" aria-controls="gsa-{{forloop.index}}">{{announcement.name}} ({{announcement.pubdate}})</button>
+    </h4>
+    <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{announcement.url}}')" onkeydown="navigateTo('{{announcement.url}}')" aria-label="{{announcement.name}}" tabindex="0">
+      <div class="display-flex flex-column flex-align-end">
+        <span class="usa-tag">{{announcement.doctype}}</span>
+      </div>
+      <p>{{announcement.summary}}</p>
+      <hr>
+      <div class="display-flex flex-column flex-align-end">  
+      {% if announcement.external == true %}
+        <!-- External -->
+        <span class="gsa-source usa-link usa-link--external">Source: {{announcement.source}}</span>
+      {% else %}
+        <!-- Not External -->
+        <span class="gsa-source usa-link">Source: {{announcement.source}}</span>
+      {% endif %}
       </div>
     </div>
+  </div>
   {% endif %}
-  {% endfor %}
+{% endfor %}
 
 ## Testing and Certification
 

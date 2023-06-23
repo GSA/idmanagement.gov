@@ -25,7 +25,7 @@ In most cases, vendors who wish to sell Identity, Credentialing, and Access Mana
 
 Two product categories require additional testing at a testing facility before applying to the Multiple Award Schedule.
 1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards]({{site.baseurl}}/approved-products-list-piv/) category.
-2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/approved-products-list-pacs-products/) category.
+2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems) category.
 
 Please get in touch with fips201ep at gsa dot gov if you have product approval questions.
 

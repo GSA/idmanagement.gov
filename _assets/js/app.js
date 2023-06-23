@@ -20,7 +20,7 @@ function navigate(destination) {
       window.open(destination,"_self");
       event.preventDefault();
       event.stopPropagation();
-    }
+    } 
 }
 // navigateTo open in a new tab or window
 function navigateTo(destination) {
@@ -30,7 +30,7 @@ function navigateTo(destination) {
       window.open(destination);
       event.preventDefault();
       event.stopPropagation();
-    }
+    } 
 }
 
 
