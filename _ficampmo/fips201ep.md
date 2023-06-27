@@ -37,7 +37,11 @@ Announcements older than four years are removed. [Contact us]({{site.baseurl}}/c
     <h4 class="usa-accordion__heading">
       <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{announcement.expanded}}" aria-controls="gsa-{{forloop.index}}">{{announcement.name}} ({{announcement.pubdate}})</button>
     </h4>
+    {% if announcement.url == null %}
+    <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{announcement.name}}" tabindex="0">
+    {% else %}
     <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{announcement.url}}')" onkeydown="navigateTo('{{announcement.url}}')" aria-label="{{announcement.name}}" tabindex="0">
+    {% endif %}
       <div class="display-flex flex-column flex-align-end">
         <span class="usa-tag">{{announcement.doctype}}</span>
       </div>
