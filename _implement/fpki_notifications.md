@@ -78,9 +78,9 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here](https://github.com/GSA/ficam-playbooks/raw/federalist-pages/_implemet/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** 
+The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).**
 
-The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs. 
+The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs.
 
 - Click on any dot in the graph to see a CA's inbound and outbound _CA_ certificates.
 - _Inbound_ means the CA certificate is signed by the _Inbound_ CA.
@@ -88,7 +88,7 @@ The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown 
 - The _Search_ function is on the upper right-hand corner. 
 - The _Zoom_ scroll bar is in the upper left-hand corner.
 
-You cannot download the certificates from the graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
+You cannot download the certificates from the graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)
 
 ### How the FPKI Graph Works
 
