@@ -104,7 +104,7 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 
 ### Acknowledgment
 
-The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://notary.icsi.berkeley.edu/trust-tree/){:target="_blank"}{:rel="noopener noreferrer"}. 
+The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://www.icsi.berkeley.edu/icsi/node/5065){:target="_blank"}{:rel="noopener noreferrer"}. 
 
 # PIV Issuer Information
 
