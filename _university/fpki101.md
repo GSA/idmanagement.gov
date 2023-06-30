@@ -19,7 +19,7 @@ subnav:
 # Introduction
 
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI.
- 
+
 ## What Is the Federal PKI?
 
 The Federal PKI is a network of certification authorities (CAs) that issue:
@@ -107,7 +107,7 @@ COMMON serves as the _root_ and _trust anchor_ for the _intermediate_ and _issui
 
 The _Federal Common Policy CA_ may be referred to as the _FCPCAG2_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the federal government, the FCPCAG2 supports government person trust and a small number of agency intranet enterprise devices, including [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/university/piv/). The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
 
-A few commercial vendors include the FCPCAG2 root certificate in the commercial-off-the-shelf (COTS) products' [trust stores](#fpki-third-party-trust). This enables federal government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCAG2 root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
+A few commercial vendors include the FCPCAG2 root certificate in the commercial-off-the-shelf (COTS) products' [trust stores]0(#fpki-third-party-trust). This enables federal government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCAG2 root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
 {% include alert-warning.html content="The FCPCAG2 root certificate is included in the trust stores for some platforms such as Adobe. Other platforms, such as Microsoft, Mozilla, and Apple, do not include the FCPCA by default. " %}
 
