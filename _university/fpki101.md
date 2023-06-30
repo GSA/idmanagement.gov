@@ -33,7 +33,7 @@ The participating certification authorities and the policies, processes, and aud
 
 The Federal PKI includes U.S. federal, state, local, tribal, territorial, and international governments, as well as commercial organizations, that work together to provide services for the benefit of the federal government.
 
-Use the [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/) to see the relationships between the certification authorities in the Federal PKI ecosystem. It graphically depicts how each certification authority links to another through cross-certificates, subordinate certificates, or bridge CAs.
+Use the [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph) to see the relationships between the certification authorities in the Federal PKI ecosystem. It graphically depicts how each certification authority links to another through cross-certificates, subordinate certificates, or bridge CAs.
 
 ### What Is an Example of an Identity Certificate?
 A PIV certificate is a simple example.  Although there are many types of identity certificates, it's easiest to explain **PIV** certificates since you might have one:
