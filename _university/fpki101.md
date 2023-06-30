@@ -46,7 +46,7 @@ A PIV certificate is a simple example.  Although there are many types of identit
 
 The full process of proving identity when issuing certificates, auditing the certification authorities, and the cryptographic protections of the digital signatures establish the _basis of trust_.
 
-For the U.S. federal government Executive Branch agencies, there is one root certification authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of intermediate certification authorities and bridged certification authorities. See [a graph of the Federal PKI, including the business communities]({{site.baseurl}}/fpki/tools/fpkigraph/).
+For the U.S. federal government Executive Branch agencies, there is one root certification authority, called the _Federal Common Policy Certification Authority (COMMON)_, plus dozens of intermediate certification authorities and bridged certification authorities. See [a graph of the Federal PKI, including the business communities]({{site.baseurl}}/fpki/notifications/#fpki-graph).
 
 ## Why Should Agencies Use Certificates from the Federal PKI?
 
