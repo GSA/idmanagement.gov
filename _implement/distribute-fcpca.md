@@ -83,7 +83,6 @@ To verify your copy of FCPCA G2, use one of these options:
 
 [![The following gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10 point 15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-
 ### On Linux/Unix: Use the Command Line
 
 1. Open the command line.
@@ -312,7 +311,7 @@ To use this profile, copy the XML information and save it as a `.mobileconfig` f
 
 {% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple configuration profile to someone outside your agency's domain." %}
 
-You can use Apple's _Configurator 2_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways: 
+You can use Apple's _Configurator 2_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways:
 
 - Physically connect to the user's device.
 - Email a profile to specific users.*
@@ -385,13 +384,13 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 ### Install FCPCA G2 Using an Apple Configuration Profile in iOS
 
-You can use Apple configuration profiles to install the FCPCA G2 on both macOS and iOS devices. 
+You can use Apple configuration profiles to install the FCPCA G2 on both macOS and iOS devices.
 
 Review the [Apple configuration profiles](#install-an-apple-configuration-profile) guidance for instructions.
 
 ### Install FCPCA G2 Using Safari Web Browser
 
-You can use the Safari web browser to install the FCPCA G2 on **iOS devices only**. 
+You can use the Safari web browser to install the FCPCA G2 on **iOS devices only**.
 
 {% include alert-info.html content="These steps describe how to install the FCPCA G2 as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
 
@@ -410,7 +409,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 
 **Note:**The following video shows you how to install FCPCA G2 using the Safari web browser.
 
-[![A video that shows the steps to install FCPCA G2 in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:300;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A video that shows the steps to install FCPCA G2 in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Enable Full Trust for FCPCA G2
 
@@ -424,7 +423,7 @@ This option works for **iOS** devices only.
 
 You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300;"}
+[![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 ---------------------------------------------------
 
