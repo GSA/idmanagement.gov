@@ -119,7 +119,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 - [Use the command line](#linux-and-unix-solutions)
 
----------------------------------------------------
+---
 
 ## Microsoft Solutions
 
@@ -197,7 +197,7 @@ To distribute the FCPCA G2 to unmanaged devices:
 
 > **Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately).
 
----------------------------------------------------
+---
 
 ## macOS Solutions
 
@@ -378,7 +378,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 [![A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
----------------------------------------------------
+---
 
 ## iOS Solutions
 
@@ -425,7 +425,7 @@ You can now successfully navigate to any intranet website whose SSL certificate 
 
 [![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
----------------------------------------------------
+---
 
 ## Linux and Unix Solutions
 
@@ -486,7 +486,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 - [Use the Command Line](#use-the-command-line)
 
----------------------------------------------------
+---
 
 ## Verifying on Microsoft Windows
 
@@ -597,7 +597,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 - HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 - HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 
---------------------------
+---
 
 ## Verifying - macOS
 
@@ -609,9 +609,9 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 3. Ensure that an entry for FCPCA G2 exists in the **login** or **System** Keychain Certificates repository.
 
-<img src="{{site.baseurl}}/assets/fpki/verify_common_macOS.png" alt="verify_common_macOS." width="476" height="284">
+![Verify Common on MacOS]({{site.baseurl}}/assets/fpki/verify_common_macOS.png){:style="width:476px;"}
 
---------------------------;
+---
 
 ## Verifying - iOS
 
@@ -621,9 +621,9 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 2. Verify that _Federal Common Policy CA G2_ has full trust enabled.
 
-<img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
+![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}
 
---------------------------;
+---
 
 ## Verifying - Linux and Unix
 
@@ -773,7 +773,7 @@ The steps to distribute an intermediate CA certificate are the same as the steps
 
 
 
----------------------------------------------------
+---
 
 
 
@@ -797,7 +797,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Federal Bridge CA G4
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
 | Validity | October 15, 2020 to December 6, 2029 |
 | Serial Number | 234200beaa6dada658f53b403f418295290cae82  |
@@ -808,7 +808,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: U.S. Department of State AD Root CA
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 18, 2020 to November 18, 2023 |
 | Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
@@ -819,7 +819,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: US Treasury Root CA
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | April 6, 2022 to April 6, 2025 |
 | Serial Number | 279f09737fe5dd3d7534be0ea51aff9dc4018501 |
@@ -830,7 +830,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
 | Validity | November 18, 2020 to December 13, 2028 |
 | Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
@@ -841,7 +841,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Symantec SSP Intermediate CA - G4
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
 | Validity | November 18, 2020 to November 12, 2024 |
 | Serial Number | 262bd1f025c8af37334545666ea6c9ea946c2c34 |
@@ -852,7 +852,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Entrust Managed Services Root CA
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | November 18, 2020 to August 14, 2029 |
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
@@ -863,7 +863,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Verizon SSP CA A2
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
 | Validity | November 18, 2020 to December 6, 2026 |
 | Serial Number | 25fca834ada24a4455a2db0ff4cef7c411198e3a |
@@ -874,7 +874,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: ORC SSP 4
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
 | Validity | November 18, 2020 to January 21, 2024 |
 | Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
@@ -885,7 +885,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: WidePoint ORC SSP CA 5
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
 | Validity | November 19, 2020 to November 5, 2030  |
 | Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
@@ -900,7 +900,7 @@ Distrusting the certificate below will prevent workstations from building a path
 #### Issued by: Federal Bridge CA G4
 
 | Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| :--------  | :--------     |
 | Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
 | Validity | October 15, 2020 to December 6, 2029  |
 | Serial Number | 129217e6c9126fd816babe02d9192ae2b519e231 |
