@@ -410,7 +410,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 
 **Note:**The following video shows you how to install FCPCA G2 using the Safari web browser.
 
-[![A video that shows the steps to install FCPCA G2 in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A video that shows the steps to install FCPCA G2 in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:500;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Enable Full Trust for FCPCA G2
 
@@ -424,7 +424,7 @@ This option works for **iOS** devices only.
 
 You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg)
+![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:500;"}
 
 ---------------------------------------------------
 
@@ -505,7 +505,8 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 6. Assign the file:for **Create in site**, select _site name_, and for **Create in domain**, select _domain name_. Click **Okay**.
 7. On the left side panel, click **Analyses** to see a list of imported analysis files.
 8. Click *Federal Common Policy CA G2 Distribution Detection* (i.e., *FPKIRootG2Detection.bes*) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**. 
-9. For each workstation or device listed, "*Has FCPCA G2 Been Distributed?*" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at fpkirootupdate@gsa.gov.<br /> 
+9. For each workstation or device listed, "*Has FCPCA G2 Been Distributed?*" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at fpkirootupdate@gsa.gov.
+
 <img src="{{site.baseurl}}/assets/fpki/bigfix-results.jpg" alt="Sample Output." width="504" height="218">   
 
 ### Use LANDesk 2016
@@ -530,7 +531,6 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
         Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
 
     **Microsoft Windows 64-bit Versions**
-
     - GPO Distribution
         Root Key: HKLM
         Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
@@ -607,7 +607,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 ### Use Settings
 
 1. Select **Settings** > **About** > **Certificate Trust Settings**.
-     
+
 2. Verify that _Federal Common Policy CA G2_ has full trust enabled.
 
 <img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
