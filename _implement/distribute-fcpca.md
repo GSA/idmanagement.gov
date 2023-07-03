@@ -639,36 +639,31 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
         trust list | grep "Federal Common Policy CA G2"
     ```
 
-
-
 ### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
 
 #### Use the Command Line
+
 1. Launch the command line.
-	
+
 2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
-   
-   ```
+
+   ``` plaintext
         trust list | grep "Federal Common Policy CA G2"
    ```
 
-
-
 Next, distribute the FCPCA G2 certificate to application trust stores.
-
 
 # Step 4 - Distribute to applications
 
-Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/university/fpki#fpki-third-party-trust) to verify whether a certificate should be trusted. 
+Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/university/fpki#fpki-third-party-trust) to verify whether a certificate should be trusted.
 
 Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the Federal Common Policy CA (FCPCA) G2 certificate.
 
 **Example applications with custom trust stores:**
+
 - Java and all Java-based applications (for example, Apache Tomcat)
 - Mozilla products (for example, [Firefox](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca-g2){:target="_blank"}{:rel="noopener noreferrer"} or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
-
-
 
 Next, determine if you need to distribute the CA certificates issued by the FCPCA G2.
 
@@ -684,9 +679,9 @@ Next, determine if you need to distribute the CA certificates issued by the FCPC
 You might need to distribute the [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2), depending upon your enterprise operating systems' type and configuration.
 
 - **Microsoft Windows**: Intermediate CA certificate distribution is **recommended**.
-     - Typically, Windows clients are able to dynamically build paths to a trusted root CA certificate through Microsoft's Certificate Chaining Engine (CCE).  
-     - Distributing the intermediate CA certificates improves system performance and prioritizes use of the FCPCA G2 over the FCPCA.
-     - There are instances where dynamic validation can fail, for example, when firewall rules prevent Microsoft from navigating to a certificate's Authority Information Access extension Uniform Resource Locator.  Email us at fpkirootupdate@gsa.gov with any questions or issues.
+  - Typically, Windows clients are able to dynamically build paths to a trusted root CA certificate through Microsoft's Certificate Chaining Engine (CCE).  
+  - Distributing the intermediate CA certificates improves system performance and prioritizes use of the FCPCA G2 over the FCPCA.
+  - There are instances where dynamic validation can fail, for example, when firewall rules prevent Microsoft from navigating to a certificate's Authority Information Access extension Uniform Resource Locator.  Email us at <fpki@gsa.gov> with any questions or issues.
 
 - **macOS or iOS**: Intermediate CA certificate distribution is **required**.
 
@@ -699,6 +694,7 @@ Many, but not all, software applications leverage the underlying operating syste
 Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the intermediate CA certificates issued by the FCPCA G2.
 
 Example applications with custom trust stores that may require intermediate CA certificate installation:
+
 - Java and all Java-based applications (for example, Apache Tomcat)
 - Mozilla products (for example, Firefox or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
@@ -707,9 +703,9 @@ Example applications with custom trust stores that may require intermediate CA c
 
 Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency. 
 
-A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy G2. 
+A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy G2.
 
-If you're not sure which [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you need to distribute, consider distributing all of them or email us for help at fpkirootupdate@gsa.gov.
+If you're not sure which [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you need to distribute, consider distributing all of them or email us for help at <fpki@gsa.gov>.
 
 ## How Do I Distribute the Intermediate CA Certificates?
 
@@ -728,19 +724,19 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
 1. Right-click **Intermediate Certification Authorities**, and select **Import**.
 
-	The Certificate Import Wizard appears
+    The Certificate Import Wizard appears
 
 1. Browse to and select the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.
 1. Verify that the target **Certificate Store** presents **Intermediate Certification Authorities**, and select **Next**.
-1. Select **Finish** to complete the import. 
+1. Select **Finish** to complete the import.
 
-	A success message appears.
+    A success message appears.
 
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
-1. (*Optional*) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
+1. (_Optional_) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
 
-          gpupdate /force
+    gpupdate /force
 
 
 
