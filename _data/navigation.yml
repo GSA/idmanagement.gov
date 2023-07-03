@@ -24,7 +24,7 @@ partners:
 implement:
   - text: Introduction
     href: /implement/
-  - text: Distribute FCPCA
+  - text: Enable Trust for the FCPCA
     href: /implement/trust-fcpca/
   - text: Smart Card Logon For Windows Domains
     href: /implement/scl-windows/
