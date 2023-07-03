@@ -1,28 +1,24 @@
 ---
 layout: page
-title: Migrate or Install Federal Common Policy
+title: Enabling Enterprise Trust of the Common Policy Certificate
 collection: implement
-permalink: /implement/distribute-fcpca/
+permalink: /implement/trust-fcpca/
 sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
 subnav:
-  - text: 1. Prepare to migrate to the FCPCA G2
-    href: '#step-1---prepare-to-migrate'
-  - text: 2. Obtain and verify FCPCA G2
+  - text: 1. Obtain and verify FCPCA G2
     href: '#step-2---obtain-and-verify-fcpca-g2'
-  - text: 3. Distribute the certificate to operating systems
+  - text: 2. Distribute the certificate to operating systems
     href: '#step-3---distribute-to-operating-systems'
-  - text: 4. Verify operating system distribution
+  - text: 3. Verify operating system distribution
     href: '#step-4---verify-operating-system-distribution'
-  - text: 5. Distribute to applications
+  - text: 4. Distribute to applications
     href: '#step-5---distribute-to-applications'
-  - text: 6. Distribute intermediate certificates
+  - text: 5. Distribute intermediate certificates
     href: '#step-6---distribute-intermediate-certificates'
-  - text: 7. Distrust old root and verify
-    href: '#step-7---distrust-old-root-and-verify'
-  - text: Frequently Asked Questions
+  - text: 6. Frequently Asked Questions
     href: '#frequently-asked-quetions'
 ---
 
@@ -31,19 +27,18 @@ July 2021
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
+| 1.2 | 07/2023 | Streamlined SOP |
 | 1.1 | 07/2021 | Updated FAQ with intermediate CAs. |
 | 1.0 | 07/2020| Initial Draft |
 
-This guide is written for systems administrators who need to help migrate between Federal PKI Root Certificates or distribute a new Federal PKI root certificate.
+This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise.
 
-- If migrating between roots, start at step 1.
-- If distributing a new root certificate, start at step 2.
-
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a class=\"usa-link usa-link--external\"  href=\"https://github.com/GSA/idmanagement.gov/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+{% include alert-info.html content="**We're calling for all solutions!** If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new\"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>." %}
 
 # Step 1 - Prepare to Migrate
 
 Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
+
 - **ENG** - Information technology engineers and system administrators
 - **APP** - Application developers and owners
 - **PM** - Project managers
