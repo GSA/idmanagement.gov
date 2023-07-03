@@ -412,9 +412,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 
 [![A video that shows the steps to install FCPCA G2 in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-<a href="{{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif" height="600" alt="A video that shows the steps to install FCPCA G2 in the Safari web browser."></a>
-
-### Enable Full Trust for FCPCA G2 
+### Enable Full Trust for FCPCA G2
 
 This option works for **iOS** devices only.
 
@@ -426,9 +424,7 @@ This option works for **iOS** devices only.
 
 	You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-<img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
-
-
+![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg)
 
 ---------------------------------------------------
 
