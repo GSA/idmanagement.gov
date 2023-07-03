@@ -39,7 +39,7 @@ This guide is written for systems administrators who need to enable trust for th
 
 # Step 1 - Obtain and verify FCPCA G2
 
-To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all affected government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
+This guide provides information on distributing the Federal Common Policy CA G2 (FCPCA G2) certificate to government-furnished workstations and devices as a _trusted root certificate_.
 
 ## Download a Copy of FCPCA G2
 
@@ -90,7 +90,10 @@ To verify your copy of FCPCA G2, use one of these options:
 
     $ sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
 
-Next, distribute the FCPCA G2 certificate as an operating system trusted root.
+After you have verified the certificate, you are ready to distribute the FCPCA G2 certificate within your environment.
+
+- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems), 
+- or you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
 
 # Step 2 - Distribute to operating systems
 
