@@ -506,7 +506,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 8. Click _Federal Common Policy CA G2 Distribution Detection_ (i.e., _FPKIRootG2Detection.bes_) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**.
 9. For each workstation or device listed, "_Has FCPCA G2 Been Distributed?_" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at <fpkirootupdate@gsa.gov>.
 
-[!Sample Output]({{site.baseurl}}/assets/fpki/bigfix-results.jpg){:style="width:504px;"}
+![Sample Output]({{site.baseurl}}/assets/fpki/bigfix-results.jpg){:style="width:504px;"}
 
 <img src="{{site.baseurl}}/assets/fpki/bigfix-results.jpg" alt="Sample Output." width="504" height="218">   
 
