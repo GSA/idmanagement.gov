@@ -969,14 +969,14 @@ If you do not see a questions, send it to FPKI at gsa.gov.
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="An image showing ios safari untrusted ssl.">
+[![An image showing ios safari untrusted ssl]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:style="width:300px;"}]
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="An image showing ios chrome untrusted ssl.">
+[![An image showing ios chrome untrusted ssl]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:300px;"}]
 
 ## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
-Please review the steps to [verify distribution of the FCPCA G2](#step-4---verify-operating-system-distribution).
+Please review the steps to [verify distribution of the FCPCA G2](#step-3---verify-operating-system-distribution).
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
@@ -988,13 +988,13 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 
 ## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
 
-1. Download a copy of the FCPCA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
+1. Download a copy of the FCPCA G2 certificate from <http://repo.fpki.gov/fcpca/fcpcag2.crt>
 2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
 3. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
      - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of the FCPCA G2. Click **Next** several times until the certificate import process is complete.
-     - When prompted, verify the certificate thumbprint matches *99B4251E2EEE05D8292E8397A90165293D116028* (additional spaces may appear depending on your Windows Version).
+     - When prompted, verify the certificate thumbprint matches _99B4251E2EEE05D8292E8397A90165293D116028_ (additional spaces may appear depending on your Windows Version).
      - Click **Yes**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of fpki-unmanaged-bundle.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
@@ -1006,7 +1006,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
      - Press the **F5** key to refresh the folder contents
      - Verify an entry exists for the Federal Common Policy CA G2 (both the **Issued To** and **Issued By** columns will present "Federal Common Policy CA G2".)
 2. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA G2
-     - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates** 
+     - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates**
      - Press the **F5** key to refresh the folder contents
      - Sort the data by clicking on the **Issued By** column
      - Verify nine (9) entries for certificates issued by the Federal Common Policy CA G2
@@ -1018,9 +1018,9 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 ## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?
 
 1. Download a copy of [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
-2. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig. 
+2. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig.
 3. Navigate to **System Preferences** -> **Profiles**
-4. Verify the profile contents and click **Install** (twice) 
+4. Verify the profile contents and click **Install** (twice)
 
 **Note:**The following video shows you how to install FCPCA G2 and the intermediate CA certificates using an Apple configuration profile on macOS.
 
@@ -1032,10 +1032,10 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 2. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
     > System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
 3. Click **Allow**.
-4. Navigate to **Settings** -> **General** -> **Profile** 
+4. Navigate to **Settings** -> **General** -> **Profile**
 5. Select the "Distribute FCPCAG2 and Intermediate CA Certificates" profile
 6. Select **More Details** and select the certificate entry for the FCPCA G2
-7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-2---obtain-and-verify-fcpca-g2).
+7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-fcpca-g2).
 8. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
 9. When prompted, enter your device **passcode**.
 10. Click **Install** in the upper right corner, and **Install** again.
@@ -1044,7 +1044,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 
 **Note:**The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
 
-<a href="{{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif" height="600" alt="A video that shows the steps to install a mobile configuration file in the Safari web browser"></a>
+[![A video that shows the steps to install a mobile configuration file in the Safari web browser]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## How do I configure the Firefox web browser to trust the new Federal Common Policy CA G2?
 
