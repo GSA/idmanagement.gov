@@ -516,7 +516,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 4. Click **Add** to add a new registry item.
 5. Add the data shown below for Windows 32-bit or 64-bit versions, based on GPO or Certutil distribution of FCPCA G2.
 
-    **Microsoft Windows 32-bit Versions**
+    - **Microsoft Windows 32-bit Versions**
 
     - GPO Distribution
 
@@ -536,7 +536,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
     Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
     ```
 
-    **Microsoft Windows 64-bit Versions**
+    - **Microsoft Windows 64-bit Versions**
 
     - GPO Distribution
 
@@ -556,20 +556,21 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
     Attribute Name: Custom Data – FCPCAG2Win64 certutil - Certificate
     ```
 
-6. Create a query for the registry item:on the left side panel, expand **Network View**, and click **Queries**. 
-1. Right-click **My Queries**, select **New Query**, and enter a *query name* (e.g., *FCPCA G2 Verification: Win32 Machines*).
-1. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
-1. For **Boolean**, select **Exists**.
-1. For **Displayed Scanned Values**, click **Insert** and add the *BLOB* value from above.
-1. Double-click the *new query name* to verify FCPCA G2 distribution. The results will be similar to these:<br />
-    <img src="{{site.baseurl}}/assets/fpki/landesk-results.jpg" alt="Sample Output." width="504" height="35">
+6. Create a query for the registry item:on the left side panel, expand **Network View**, and click **Queries**.
+7. Right-click **My Queries**, select **New Query**, and enter a _query name_ (e.g., _FCPCA G2 Verification: Win32 Machines_).
+8. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
+9. For **Boolean**, select **Exists**.
+10. For **Displayed Scanned Values**, click **Insert** and add the _BLOB_ value from above.
+11. Double-click the _new query name_ to verify FCPCA G2 distribution. The results will be similar to these:
+
+![Sample Output]({{site.baseurl}}/assets/fpki/landesk-results.jpg){:style="width:504px;"}
 
 ### Use Microsoft Certificate Manager
 
-1. Open *Microsoft Certificate Manager*:**Start**; then type **certlm.msc** and press **Enter**.
-2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of *ALL* and a **Friendly Name** of *None*, as shown here:<br />
-    <img src="{{site.baseurl}}/assets/fpki/verify_trust.png" alt="Trusted Root CA Certificates List." width="504" height="253">
-    
+1. Open _Microsoft Certificate Manager_:**Start**; then type **certlm.msc** and press **Enter**.
+2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of _ALL_ and a **Friendly Name** of *None*, as shown here:
+
+![Trusted Root CA Certificates List]({{site.baseurl}}/assets/fpki/verify_trust.png){:style="width:504px;"}
 
 ***Optional:***
 
