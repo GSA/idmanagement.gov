@@ -33,7 +33,7 @@ July 2021
 
 This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise.
 
-{% include alert-info.html content="**We're calling for all solutions!** If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new\"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>." %}
+{% include alert-info.html content='**We're calling for all solutions!** If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new\"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
 
 # Step 1 - Prepare to Migrate
 
