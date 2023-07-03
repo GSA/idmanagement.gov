@@ -27,115 +27,17 @@ July 2021
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.2 | 07/2023 | Streamlined SOP |
-| 1.1 | 07/2021 | Updated FAQ with intermediate CAs. |
 | 1.0 | 07/2020| Initial Draft |
 
-This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise.
+This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise. This guide replaces the previous FCPCA2 migration guide, since the migration to FCPCA2 has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCA2 root certificate, and how to verify that the certificate is working as intended.
 
-{% include alert-info.html content='**We're calling for all solutions!** If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new\"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
+{% capture alert-content-1 %}
+**We're calling for all solutions!** If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.
+{% endcapture %}
 
-# Step 1 - Prepare to Migrate
+{% include alert-info.html content=alert-content-1 %}
 
-Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
-
-- **ENG** - Information technology engineers and system administrators
-- **APP** - Application developers and owners
-- **PM** - Project managers
-- **CIO** - Chief information officers
-- **CSO** - Chief security officers
-
-Agency staff are encouraged to participate in steps where their roles are listed in bold underlined font.
-
-## FCPCA G2 Migration Checklist	
-
-<table>
- <col width="400">
- <col width="200">
-
- <tr>
-  <th colspan="2" style="background-color:#FFFFFF;font-size:20px;"><b>FCPCA G2 Migration Checklist	</b></th>
-  <th style="background-color:#FFFFFF;font-size:20px;" colspan="5"><b>Recommended Participants</b></th>
- </tr>
-
- <tr>
-  <td colspan="2" class="what"><b>1. Communicate upcoming changes across your enterprise</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td><b><u>CIO</u></b></td>
-  <td><b><u>CSO</u></b></td>
- </tr>
-
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Communicate with relevant stakeholders <strong>early and often</strong> to minimize migration issues.</li>
-	<li>Collaborate and coordinate with a variety of agency stakeholders, including but not limited to domain administrators, website and application administrators, mobile device management administrators. </li>
-	<li>Identify who you need to communicate with, and get started now!</li>
-  </ul>
-  </td>
-</tr>
-
-<tr>
-  <td colspan="2" class="what"><b>2. Inventory enterprise systems and applications</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td>CIO</td>
-  <td>CSO</td>
- </tr>
-
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Inventory your agency's systems and applications.</li>
-	<li>Identify how you will deliver the updated FCPCA G2 CA certificate to affected systems or applications. For example, you might distribute the certificate through a Group Policy Object (GPO) or Mobile Device Management (MDM) tool.</li>
-  </ul>
-  </td>
-</tr>
-
- <tr>
-  <td colspan="2" class="what"><b>3. Create and execute a plan for certificate distribution</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td><b><u>CIO</u></b></td>
-  <td><b><u>CSO</u></b></td>
- </tr>
-
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Work with your colleagues to develop, execute, and test a plan to distribute the FCPCA G2 certificate (and, possibly, the CA certificates issued by the FCPCA G2) to affected operating systems and applications across your enterprise.</li>
-	<li>Communication is key! Collaborate with both colleagues and stakeholders across your agency.</li> 
-  </ul>
-  </td>
-</tr>
-
- <tr>
-  <td colspan="2" class="what"><b>4. Test, test, and test again</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td><b><u>CIO</u></b></td>
-  <td><b><u>CSO</u></b></td>
- </tr>
-
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Follow your agency's established enterprise change management process(es). </li>
-	<li>Test the procedures recommended by this guide in a test environment, if possible, to verify the intended results prior to production implementation.</li>
-  </ul>
-  </td>
-</tr>
-
-</table>
-
-Next, obtain and verify the FCPCA G2.
-
-# Step 2 - Obtain and verify FCPCA G2
+# Step 1 - Obtain and verify FCPCA G2
 
 To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all affected government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
 
