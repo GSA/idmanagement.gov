@@ -518,43 +518,43 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
     - **Microsoft Windows 32-bit Versions**
 
-    - GPO Distribution
+        - GPO Distribution
 
-    ``` plaintext
-    Root Key: HKLM
-    Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-    Value: BLOB
-    Attribute Name: Custom Data – FCPCAG2Win32 GPO – Certificate
-    ```
+        ``` plaintext
+        Root Key: HKLM
+        Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAG2Win32 GPO – Certificate
+        ```
 
-    - Certutil Distribution
+        - Certutil Distribution
 
-    ``` plaintext
-    Root Key: HKLM
-    Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-    Value: BLOB
-    Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
-    ```
+        ``` plaintext
+        Root Key: HKLM
+        Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
+        ```
 
     - **Microsoft Windows 64-bit Versions**
 
-    - GPO Distribution
+        - GPO Distribution
 
-    ``` plaintext
-    Root Key: HKLM
-    Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-    Value: BLOB
-    Attribute Name: Custom Data – FCPCAG2Win64 GPO - Certificate
-    ```
+        ``` plaintext
+        Root Key: HKLM
+        Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAG2Win64 GPO - Certificate
+        ```
 
-    - Certutil Distribution
+        - Certutil Distribution
 
-    ``` plaintext
-    Root Key: HKLM
-    Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-    Value: BLOB
-    Attribute Name: Custom Data – FCPCAG2Win64 certutil - Certificate
-    ```
+        ``` plaintext
+        Root Key: HKLM
+        Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAG2Win64 certutil - Certificate
+        ```
 
 6. Create a query for the registry item:on the left side panel, expand **Network View**, and click **Queries**.
 7. Right-click **My Queries**, select **New Query**, and enter a _query name_ (e.g., _FCPCA G2 Verification: Win32 Machines_).
