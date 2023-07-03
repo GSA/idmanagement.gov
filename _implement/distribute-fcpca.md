@@ -224,7 +224,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 **Note:** The following video shows you how to create an Apple configuration profile.
 [![A video that shows the steps to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-**APPLE CONFIGURATION PROFILE (EXAMPLE)**{:text-align="center"}
+**APPLE CONFIGURATION PROFILE (EXAMPLE)**{:.text-align="center"}
 
 {% include alert-warning.html content="Before using this profile, you should verify that it is suitable for your agency." %}
 
