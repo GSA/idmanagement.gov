@@ -25,7 +25,7 @@ implement:
   - text: Introduction
     href: /implement/
   - text: Distribute FCPCA
-    href: /implement/distribute-fcpca/
+    href: /implement/trust-fcpca/
   - text: Smart Card Logon For Windows Domains
     href: /implement/scl-windows/
   - text: Smart Card Logon for MacOS
