@@ -335,7 +335,7 @@ You can also manually install a profile.
 
 {% include alert-info.html content="These steps describe how to install the FCPCA G2 in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
-1. Click the **Spotlight** icon and search for *Terminal*.
+1. Click the **Spotlight** icon and search for _Terminal_.
 2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
 3. Run the following command:
 
@@ -353,12 +353,12 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 {% include alert-info.html content="These steps describe how to install FCPCA G2 in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
-1. Click the **Spotlight** icon and search for *Keychain Access*.
+1. Click the **Spotlight** icon and search for _Keychain Access_.
 2. Double-click the **Keychain Access** icon to open the application.
-3. Click the *System* keychain from the left-hand navigation.
+3. Click the _System_ keychain from the left-hand navigation.
 4. Click **File** -> **Import Items**
 5. Browse to and select your verified copy of FCPCA G2.
-6. When prompted, enter your *administrator* username and password.
+6. When prompted, enter your _administrator_ username and password.
 7. Keychain Access will present the installed certificate.
 
 **Note:**The following video shows administrators how to install FCPCA G2 by using the Apple Keychain Access import process.
@@ -400,7 +400,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 3. Click **Allow**.
     The FCPCA G2 configuration profile appears.
 4. Click **More Details**, and then select the FCPCA G2 certificate entry.
-5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-2---obtain-and-verify-fcpca-g2).
+5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-fcpca-g2).
 6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
 7. When prompted, enter your device **passcode**.
 8. Click **Install** in the upper right corner, and **Install** again.
@@ -418,7 +418,7 @@ This option works for **iOS** devices only.
 {% include alert-info.html content="These steps describe how to enable “full trust” for certificates that chain to FCPCA G2. Both system administrators and non-administrators can perform these steps." %}
 
 1. On the iOS device's **Home** screen, select **Settings** > **General** > **About** > **Certificate Trust Settings**.
-2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA G2 root CA certificate entry. 
+2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA G2 root CA certificate entry.
 3. When the certificate appears, click **Continue**.
 
 You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
@@ -503,14 +503,16 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
     The **Create Analysis** window appears.
 6. Assign the file:for **Create in site**, select _site name_, and for **Create in domain**, select _domain name_. Click **Okay**.
 7. On the left side panel, click **Analyses** to see a list of imported analysis files.
-8. Click *Federal Common Policy CA G2 Distribution Detection* (i.e., *FPKIRootG2Detection.bes*) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**. 
-9. For each workstation or device listed, "*Has FCPCA G2 Been Distributed?*" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at fpkirootupdate@gsa.gov.
+8. Click _Federal Common Policy CA G2 Distribution Detection_ (i.e., _FPKIRootG2Detection.bes_) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**.
+9. For each workstation or device listed, "_Has FCPCA G2 Been Distributed?_" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at <fpkirootupdate@gsa.gov>.
+
+[!Sample Output]({{site.baseurl}}/assets/fpki/bigfix-results.jpg){:style="width:504px;"}
 
 <img src="{{site.baseurl}}/assets/fpki/bigfix-results.jpg" alt="Sample Output." width="504" height="218">   
 
 ### Use LANDesk 2016
 
-1. Open *LANDesk 2016*:**Start** > **LANDesk Management** > **Desktop Manager**.
+1. Open _LANDesk 2016_:**Start** > **LANDesk Management** > **Desktop Manager**.
 2. Create a custom registry data item:**Tools** > **Reporting/Monitoring** > **Manage software list**.
 3. Expand **Custom Data**, and click **Registry items**.
 4. Click **Add** to add a new registry item.
