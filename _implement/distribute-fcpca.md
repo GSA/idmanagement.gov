@@ -910,13 +910,13 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 
 ### Verify Migration on macOS
 
-1. Click the **Spotlight** icon and search for *Keychain Access*.
+1. Click the **Spotlight** icon and search for _Keychain Access_.
 2. Double-click the **Keychain Access** icon to open the application.
 3. In the left navigation, click the **Login** keychain.
 4. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
-5. Verify the *This certificate is valid* message appears beneath the certificate details.
+5. Verify the _This certificate is valid_ message appears beneath the certificate details.
 
-<img src="{{site.baseurl}}/assets/fpki/verify-migration-macos.png" alt="verify common migration in macOS." width="392" height="206">
+![Verify common migration in macOS]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:504px;"}
 
 # Frequently Asked Questions
 
@@ -926,16 +926,16 @@ If you do not see a questions, send it to FPKI at gsa.gov.
 
 1. **(_High Impact_) Authentication failures**
 
-- Workstations
-- Websites  
-- Applications (internal and cross-agency)
-- Virtual Private Networks (VPNs)
+    - Workstations
+    - Websites  
+    - Applications (internal and cross-agency)
+    - Virtual Private Networks (VPNs)
 
-2. **(*Medium Impact*) Error fatigue**
+2. **(_Medium Impact_) Error fatigue**
 
-- Unexpected application errors and system behavior for legacy and government-off-the-shelf (GOTS) products
+    - Unexpected application errors and system behavior for legacy and government-off-the-shelf (GOTS) products
 
-3. **(*Low Impact*) Digital signature validation failures**
+3. **(_Low Impact_) Digital signature validation failures**
 
 - Email
 - Documents and files (for example, Microsoft Word)
