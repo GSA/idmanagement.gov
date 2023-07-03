@@ -19,7 +19,7 @@ subnav:
   - text: 5. Distribute intermediate certificates
     href: '#step-5---distribute-intermediate-certificates'
   - text: 6. Frequently Asked Questions
-    href: '#frequently-asked-quetions'
+    href: '#frequently-asked-questions'
 ---
 
 Version 1.0
@@ -568,7 +568,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 ### Use Microsoft Certificate Manager
 
 1. Open _Microsoft Certificate Manager_:**Start**; then type **certlm.msc** and press **Enter**.
-2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of _ALL_ and a **Friendly Name** of *None*, as shown here:
+2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of _ALL_ and a **Friendly Name** of _None_, as shown here:
 
 ![Trusted Root CA Certificates List]({{site.baseurl}}/assets/fpki/verify_trust.png){:style="width:504px;"}
 
@@ -590,7 +590,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 #### GPO-distributed FCPCA G2
 
 - HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\ 
+- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 
 #### Certutil-distributed FCPCA G2
 
@@ -603,7 +603,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ### Use Keychain Access
 
-1. Click the **Spotlight** icon and search for *Keychain Access*.
+1. Click the **Spotlight** icon and search for _Keychain Access_.
 
 2. Double-click the **Keychain Access** icon.
 
@@ -629,7 +629,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ### Debian-based kernels
 
-#### Use the Command Line
+#### Use the Debian/Ubuntu Command Line
 
 1. Launch the command line.
 
@@ -641,7 +641,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
 
-#### Use the Command Line
+#### Use the Red Hat/CentOS Command Line
 
 1. Launch the command line.
 
@@ -701,7 +701,7 @@ Example applications with custom trust stores that may require intermediate CA c
 
 ## Which Certificates Do I Need to Distribute?
 
-Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency. 
+Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency.
 
 A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy G2.
 
@@ -738,57 +738,47 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 
     gpupdate /force
 
-
-
-
 ### Use Apple Configuration Profile
 
-{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %} 
+{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %}
 
-#### Create an Apple Configuration Profile
+#### Distribute Intermediate CA certificates with an Apple Configuration Profile
 
-1. As an administrator, download and verify the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
-2. Download and install *Configurator 2* from the Apple App Store.
-3. Open *Configurator 2* and click **File** > **New Profile**.
-4. On the **General** tab, enter a unique profile **Name** (for example, *FPKI Intermediate CA Certificate Distribution Profile*) and **Identifier** (for example, *FCPCAG2-Intermediate-0001*).
+1. As an administrator, download and verify the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.
+2. Download and install _Configurator 2_ from the Apple App Store.
+3. Open _Configurator 2_ and click **File** > **New Profile**.
+4. On the **General** tab, enter a unique profile **Name** (for example, _FPKI Intermediate CA Certificate Distribution Profile_) and **Identifier** (for example, _FCPCAG2-Intermediate-0001_).
 5. On the **Certificates** tab, click **Configure**.
 6. Browse to and select the certificates you want to distribute.
-7. (*Optional*) Add additional agency-specific configurations or customizations. 
-8. Click **File** > **Save** to save your profile to your preferred location. 
+7. (_Optional_) Add additional agency-specific configurations or customizations.
+8. Click **File** > **Save** to save your profile to your preferred location.
 9. Follow the steps to [distribute](#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
 
-**Note:**The following video shows you how to create an Apple configuration profile. 
-
+**Note:**The following video shows you how to create an Apple configuration profile.
 
 [![The following video shows you how to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
-
 
 ### Use Linux Command Line
 
 The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate](#linux-and-unix-solutions).
 
-
-
 ---
-
-
 
 ### Certificates Issued By the Federal Common Policy CA G2
 
-The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
+The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at <http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c>.
 
-  - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
-  - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
-  - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
-  - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
-  - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
-  - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
-  - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
-  - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
-  - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
+- [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
+- [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
+- [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
+- [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
+- [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
+- [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
+- [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
+- [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
+- [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 
-{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation. Learn more on our <a href=\"#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2\">Frequently Asked Questions</a> page." %}
-
+{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are unable</b> to perform dynamic path validation. Learn more on our <a href=\"#frequently-asked-questions\">Frequently Asked Questions</a> page." %}
 
 #### Issued to: Federal Bridge CA G4
 
@@ -913,10 +903,10 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 1. Browse to and select any of the certificates found on your PIV credential (the **Issued To** column displays your name).
 1. Double-click the certificate and select the **Certification Path** tab.
 1. Verify the certificate chain begins with the **FCPCA G2** (pictured below).
-	
-	**Note:** It's okay if different certification authorities appear below the FCPCA G2 for your certificate. 
 
-<img src="{{site.baseurl}}/assets/fpki/verify-migration-windows.png" alt="verify common migration in Windows." width="224" height="285">
+**Note:** It's okay if different certification authorities appear below the FCPCA G2 for your certificate.
+
+![Verify common migration in Windows]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:style="width:300px;"}
 
 ### Verify Migration on macOS
 
