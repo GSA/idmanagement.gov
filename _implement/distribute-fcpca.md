@@ -1057,4 +1057,4 @@ The following steps will allow Firefox to use the underlying operating system tr
 
 **Note:**The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
 
-<a href="{{site.baseurl}}/assets/fpki/configure-firefox.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/configure-firefox.gif" height="90%" width="90%" alt="A video that shows the steps to configure the Firefox web browser"></a>
+[![A video that shows the steps to configure the Firefox web browser]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:target="_blank"}{:rel="noopener noreferrer"}
