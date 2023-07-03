@@ -574,32 +574,32 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ***Optional:***
 
-1. Open *Microsoft Certificate Manager*:**Start**; then type **certlm.msc** and press **Enter**.
+1. Open _Microsoft Certificate Manager_:**Start**; then type **certlm.msc** and press **Enter**.
 2. Select **Trusted Root Certification Authorities** from the left side panel, then select **View** > **Options**.
-3. In the **View Options** box, select the **Physical certificate stores** checkbox. 
+3. In the **View Options** box, select the **Physical certificate stores** checkbox.
 4. On the left side panel, click the **>** icon next to **Trusted Root Certification Authorities** to see the subdirectories.
-5. Verify the distribution of FCPCA G2:<br />
+5. Verify the distribution of FCPCA G2:
      - For Certutil-distributed copies of FCPCA G2, click **Enterprise** > **Certificates**. *FCPCA G2 should appear in the certificates list.*
      - For GPO-distributed copies of FCPCA G2, click **Group Policy** > **Certificates**. *FCPCA G2 should appear in the certificates list.*
 
 ### Use Microsoft Registry Editor
 
-1. Verify that FCPCA G2 has been distributed to a specific workstation or device:open the *Microsoft Registry Editor*:**Start**; type **regedit.exe** and press **Enter**.
-2. The following registry keys will appear for GPO- or Certutil-distributed copies of FCPCA G2: 
+1. Verify that FCPCA G2 has been distributed to a specific workstation or device:open the _Microsoft Registry Editor_:**Start**; type **regedit.exe** and press **Enter**.
+2. The following registry keys will appear for GPO- or Certutil-distributed copies of FCPCA G2:
 
-#### GPO-distributed FCPCA G2: 
-	- HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-	- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\ 
+#### GPO-distributed FCPCA G2
 
-#### Certutil-distributed FCPCA G2: 
-	- HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-	- HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+- HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\ 
 
+#### Certutil-distributed FCPCA G2
 
+- HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+- HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 
 --------------------------
 
-## macOS Solutions 
+## Verifying - macOS
 
 ### Use Keychain Access
 
@@ -611,11 +611,9 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 <img src="{{site.baseurl}}/assets/fpki/verify_common_macOS.png" alt="verify_common_macOS." width="476" height="284">
 
+--------------------------;
 
-
---------------------------
-
-## iOS Solutions 
+## Verifying - iOS
 
 ### Use Settings
 
@@ -625,22 +623,21 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 <img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
 
+--------------------------;
 
-
---------------------------
-
-## Linux and Unix Solutions
+## Verifying - Linux and Unix
 
 ### Debian-based kernels
 
 #### Use the Command Line
+
 1. Launch the command line.
-	
+
 2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
-   
-   ```
+
+    ``` plaintext
         trust list | grep "Federal Common Policy CA G2"
-   ```
+    ```
 
 
 
