@@ -943,26 +943,28 @@ If you do not see a questions, send it to FPKI at gsa.gov.
 ## What errors can occur in Windows if I don't distribute the FCPCA G2?
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/error_navigation.png" alt="An image showing an error navigation message." width="560" height="397">
+![An image showing an error navigation message]({{site.baseurl}}/assets/fpki/error_navigation.png){:style="width:504px;"}
 
 *Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/error_piv_auth.png" alt="An image showing an error piv authetication message." width="560" height="292">
+![An image showing an error piv authetication message]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:style="width:504px;"}
 
 *Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/error_sig_val.png" alt="An image showing a digital signature invalid error message." width="381" height="242">
+![An image showing a digital signature invalid error messagee]({{site.baseurl}}/assets/fpki/error_sig_val.png){:style="width:381px;"}
 
 ## What errors can occur in macOS if I don't distribute the FCPCA G2?
+
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png" alt="An image showing a safari untrusted ssl error message." width="476" height="284">
+
+![An image showing a safari untrusted ssl error message]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:style="width:476px;"}
 
 *Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/safari_untrusted_auth.png" alt="An image showing a safari untrusted authentication error message." width="476" height="285">
+![An image showing a safari untrusted authentication error message]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:style="width:476px;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png" alt="An image showing a chrome untrusted ssl error message." width="476" height="291">
+![An image showing a chrome untrusted ssl error message]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:style="width:476px;"}
 
 *Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
-<img src="{{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png" alt="An image showing a chrome untrusted authentication error message." width="476" height="290">
+![An image showing a chrome untrusted authentication error message]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:style="width:476px;"}
 
 ## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
