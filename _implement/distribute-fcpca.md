@@ -489,7 +489,7 @@ Next, verify distribution of the FCPCA certificate as an operating system truste
 
 # Step 3 - Verify operating system distribution
 
-To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been distributed to your agency's workstations and devices, use one of these options:
+To verify that the Federal Common Policy CA (FCPCA) certificate has been distributed to your agency's workstations and devices, use one of these options:
 
 ## Verifying - Microsoft Windows
 
@@ -680,7 +680,7 @@ Next, distribute the FCPCA certificate to application trust stores.
 
 Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/university/fpki#fpki-third-party-trust) to verify whether a certificate should be trusted.
 
-Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the Federal Common Policy CA (FCPCA) G2 certificate.
+Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the Federal Common Policy CA (FCPCA) certificate.
 
 **Example applications with custom trust stores:**
 
@@ -725,7 +725,7 @@ Example applications with custom trust stores that may require intermediate CA c
 
 Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency.
 
-A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy G2.
+A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy CA.
 
 If you're not sure which [intermediate CA certificates issued by the FCPCA](#certificates-issued-by-the-federal-common-policy-ca) you need to distribute, consider distributing all of them or email us for help at <fpki@gsa.gov>.
 
@@ -916,7 +916,7 @@ Distrusting the certificate below will prevent workstations from building a path
 | SHA-256 Thumbprint | 0b658c27727dfd6cd47e378ae2390ea376d9708ecf4b06775f8ee7bc50119991 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Federal_Common_Policy_CA_G2_from_FBCAG4.cer)|
 
-The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) G2 is to validate one of your PIV credential certificates.
+The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) is to validate one of your PIV credential certificates.
 
 ### Verify Migration on Windows
 
@@ -991,10 +991,10 @@ If you do not see a questions, send it to FPKI at gsa.gov.
 ## What errors can occur in iOS if I don't distribute the FCPCA root certificate?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-[![An image showing ios safari untrusted ssl]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:style="width:300px;"}]
+![An image showing ios safari untrusted ssl]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:style="width:300px;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-[![An image showing ios chrome untrusted ssl]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:300px;"}]
+![An image showing ios chrome untrusted ssl]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:300px;"}
 
 ## How can I verify that the FCPCA root certificate has been successfully distributed to my workstation or device?
 
