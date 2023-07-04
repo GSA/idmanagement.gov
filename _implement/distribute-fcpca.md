@@ -420,7 +420,7 @@ You can use the Safari web browser to install the FCPCA root certificate on **iO
 {% include alert-info.html content="These steps describe how to install the FCPCA root certificate as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
 
 1. Launch **Safari**.
-1. Navigate to the FCPCA root CA certificate: <http://repo.fpki.gov/fcpca/fcpcag2.crt>. 
+1. Navigate to the FCPCA root CA certificate: <http://repo.fpki.gov/fcpca/fcpcag2.crt>.
 1. System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
 1. Click **Allow**. The FCPCA root certificate configuration profile appears.
 1. Click **More Details**, and then select the FCPCA certificate entry.
@@ -957,16 +957,16 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 1. In the left navigation, click the **Login** keychain.
 1. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
 1. Verify the _This certificate is valid_ message appears beneath the certificate details.
- 
-**Note:** It's okay if a different name appears in the keychain access screen. It should show the name of the user that the PIV certificate was issued to [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+**Note:** It's okay if a different name appears in the keychain access screen. It should show the name of the user that the PIV certificate was issued to. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ![Verify common migration in macOS]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:504px;"}
 
 # Frequently Asked Questions
 
-If you do not see a questions, send it to FPKI at gsa.gov.
+If your question does not appear in this list, send it to FPKI at gsa.gov.
 
-## What happens if I don’t update the FCPCA root certificate?
+## What happens if I don’t distribute the FCPCA root certificate in my environment?
 
 1. **(_High Impact_) Authentication failures**
 
@@ -986,36 +986,44 @@ If you do not see a questions, send it to FPKI at gsa.gov.
 
 ## What errors can occur in Windows if I don't distribute the FCPCA root certificate?
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing an error navigation message]({{site.baseurl}}/assets/fpki/error_navigation.png){:style="width:504px;"}
 
-*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing an error piv authetication message]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:style="width:504px;"}
 
-*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
+*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/error_sig_val.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing a digital signature invalid error messagee]({{site.baseurl}}/assets/fpki/error_sig_val.png){:style="width:381px;"}
 
 ## What errors can occur in macOS if I don't distribute the FCPCA root certificate?
 
-*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
+*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ![An image showing a safari untrusted ssl error message]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:style="width:504px;"}
 
-*Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
+*Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing a safari untrusted authentication error message]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:style="width:504px;"}
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing a chrome untrusted ssl error message]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:style="width:504px;"}
 
-*Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing a chrome untrusted authentication error message]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:style="width:504px;"}
 
 ## What errors can occur in iOS if I don't distribute the FCPCA root certificate?
 
-*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
+*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing ios safari untrusted ssl]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:style="width:300px;"}
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+
 ![An image showing ios chrome untrusted ssl]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:300px;"}
 
 ## How can I verify that the FCPCA root certificate has been successfully distributed to my workstation or device?
@@ -1033,8 +1041,8 @@ As a BYOD program device user, you'll need to distribute the FCPCA root certific
 ## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA?
 
 1. Download a copy of the FCPCA certificate from <http://repo.fpki.gov/fcpca/fcpcag2.crt>
-2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
-3. Update your Trust Store:
+1. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
+1. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
      - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of the FCPCA root certificate. Click **Next** several times until the certificate import process is complete.
@@ -1049,7 +1057,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
      - Use the left-hand navigation to browse to **Trusted Root Certification Authorities** > **Certificates**
      - Press the **F5** key to refresh the folder contents
      - Verify an entry exists for the Federal Common Policy CA (both the **Issued To** and **Issued By** columns will present "Federal Common Policy CA".)
-2. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA
+1. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA
      - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates**
      - Press the **F5** key to refresh the folder contents
      - Sort the data by clicking on the **Issued By** column
@@ -1062,9 +1070,9 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 ## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA?
 
 1. Download a copy of [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
-2. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig.
-3. Navigate to **System Preferences** -> **Profiles**
-4. Verify the profile contents and click **Install** (twice)
+1. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig.
+1. Navigate to **System Preferences** -> **Profiles**
+1. Verify the profile contents and click **Install** (twice)
 
 **Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using an Apple configuration profile on macOS.
 
@@ -1073,18 +1081,18 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 ## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA?
 
 1. Launch **Safari**.
-2. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
+1. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
     > System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
-3. Click **Allow**.
-4. Navigate to **Settings** -> **General** -> **Profile**
-5. Select the "Distribute FCPCA and Intermediate CA Certificates" profile
-6. Select **More Details** and select the certificate entry for the FCPCA
-7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-the-fcpca-root-certificate).
-8. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
-9. When prompted, enter your device **passcode**.
-10. Click **Install** in the upper right corner, and **Install** again.
-11. Click **Done**.
-12. Enable [full trust for the FCPCA](#enable-full-trust-for-fcpca).
+1. Click **Allow**.
+1. Navigate to **Settings** -> **General** -> **Profile**
+1. Select the "Distribute FCPCA and Intermediate CA Certificates" profile
+1. Select **More Details** and select the certificate entry for the FCPCA
+1. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-the-fcpca-root-certificate).
+1. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
+1. When prompted, enter your device **passcode**.
+1. Click **Install** in the upper right corner, and **Install** again.
+1. Click **Done**.
+1. Enable [full trust for the FCPCA](#enable-full-trust-for-fcpca).
 
 **Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using the Safari web browser.
 
@@ -1095,9 +1103,9 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 The following steps will allow Firefox to use the underlying operating system trust store.  Follow these steps only after distributing the Federal Common Policy CA to your Windows or macOS device.
 
 1. Open **Firefox**.
-2. Enter **about:config** in the address bar and continue to the list of preferences.
-3. Set the preference **security.enterprise_roots.enabled** to **true**.  
-4. Restart **Firefox**.
+1. Enter **about:config** in the address bar and continue to the list of preferences.
+1. Set the preference **security.enterprise_roots.enabled** to **true**.  
+1. Restart **Firefox**.
 
 **Note:**The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
 
