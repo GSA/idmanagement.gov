@@ -785,7 +785,7 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 8. Click **File** > **Save** to save your profile to your preferred location.
 9. Follow the steps to [distribute](#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
 
-**Note:**The following video shows you how to create an Apple configuration profile.
+**Note:**The following video shows you how to create an Apple configuration profile. [Click for a larger version]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![The following video shows you how to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
