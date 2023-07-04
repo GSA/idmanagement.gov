@@ -192,7 +192,7 @@ To distribute the Federal Common Policy CA (FCPCA) certificate, use one of these
 
     gpupdate /force
 
-**Note:** The following video shows you how to distribute the FCPCA root certificate with Microsoft GPO. [Click for a larger version]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}.
+**Note:** The following video shows you how to distribute the FCPCA root certificate with Microsoft GPO. [Click for a larger version]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}.
 
 [![A gif that shows the distribution and verification steps performed with Microsoft Group Policy Object also known as GPO]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -245,7 +245,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 1. Click **File** > **Save** to save your profile to your preferred location.
 1. [Distribute the profile across your enterprise](#distribute-an-apple-configuration-profile).
 
-**Note:** The following video shows you how to create an Apple configuration profile. [Click for a larger version]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}.
+**Note:** The following video shows you how to create an Apple configuration profile. [Click for a larger version.]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
