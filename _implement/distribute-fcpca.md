@@ -29,6 +29,8 @@ July 2021
 | :----------: | :-------: | -------- |
 | 1.0 | 07/2023 | Initial Draft |
 
+This guide provides information on distributing the Federal Common Policy CA (FCPCA) certificate to government-furnished workstations and devices as a _trusted root certificate_.
+
 This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root ("FCPCA") within their enterprise. This guide replaces the previous FCPCA migration guide, since the migration to FCPCA has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCA root certificate, and how to verify that the certificate is working as intended.
 
 Enabling Enterprise trust of the FCPCA Root Certificate requires the following steps:
@@ -45,7 +47,7 @@ This guide ends by presenting answers to [Frequently Asked Questions](#frequentl
 
 # Step 1 - Obtain and verify the FCPCA root certificate
 
-This guide provides information on distributing the Federal Common Policy CA (FCPCA) certificate to government-furnished workstations and devices as a _trusted root certificate_.
+The first step in this process is to obtain a copy of the FCPCA root certificate, and verify its authenticity.
 
 ## Download a Copy of the FCPCA root certificate
 
