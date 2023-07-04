@@ -31,10 +31,6 @@ July 2021
 
 This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise. This guide replaces the previous FCPCA2 migration guide, since the migration to FCPCA2 has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCA2 root certificate, and how to verify that the certificate is working as intended.
 
-{% capture alert-content-1 %}
-**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.
-{% endcapture %}
-
 {% include alert-info.html content='**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
 
 # Step 1 - Obtain and verify FCPCA G2
@@ -672,8 +668,7 @@ Next, determine if you need to distribute the CA certificates issued by the FCPC
 
 # Step 5 - Distribute intermediate certificates
 
-{% include alert-success.html content="<b>Depending on agency configurations, you might need to distribute these certificates to systems and applications</b>.  This page will help you understand <a href=\"#do-i-need-to-distribute-the-intermediate-ca-certificates\">when to distribute the intermediate CA certificates</a>, <a class=\"usa-link usa-link--external\" href=\"#which-certificates-do-i-need-to-distribute\">which certificates to distribute</a>, and <a href=\"#how-do-i-distribute-the-intermediate-ca-certificates\">recommended solutions</a>.  This page also lists <a class=\"usa-link usa-link--external\"  href=\"#certificates-issued-by-the-federal-common-policy-ca-g2
-\">intermediate CA certificate details</a>, including download locations." %}
+{% include alert-success.html content="**Depending on agency configurations, you might need to distribute these certificates to systems and applications**.  This page will help you understand [when to distribute the intermediate CA certificates](#do-i-need-to-distribute-the-intermediate-ca-certificates), [which certificates to distribute](#which-certificates-do-i-need-to-distribute), and [recommended solutions](#how-do-i-distribute-the-intermediate-ca-certificates).  This page also lists [intermediate CA certificate details](#certificates-issued-by-the-federal-common-policy-ca-g2), including download locations." %}
 
 ## Do I Need to Distribute the Intermediate CA Certificates?
 
