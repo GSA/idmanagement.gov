@@ -1063,7 +1063,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
      - Sort the data by clicking on the **Issued By** column
      - Verify nine (9) entries for certificates issued by the Federal Common Policy CA
 
-**Note:** The following .gif demonstrates the distribution steps outlined above.
+**Note:** The following video demonstrates the distribution steps outlined above. [Click for a larger version]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![configure unmanaged device]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -1074,7 +1074,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 1. Navigate to **System Preferences** -> **Profiles**
 1. Verify the profile contents and click **Install** (twice)
 
-**Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using an Apple configuration profile on macOS.
+**Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using an Apple configuration profile on macOS. [Click for a larger version]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps to install an Apple configuration profile on macOS]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -1094,7 +1094,7 @@ To verify your distribution (assumes **certmgr.msc** is still open):
 1. Click **Done**.
 1. Enable [full trust for the FCPCA](#enable-full-trust-for-fcpca).
 
-**Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using the Safari web browser.
+**Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using the Safari web browser. [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps to install a mobile configuration file in the Safari web browser]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -1107,6 +1107,6 @@ The following steps will allow Firefox to use the underlying operating system tr
 1. Set the preference **security.enterprise_roots.enabled** to **true**.  
 1. Restart **Firefox**.
 
-**Note:**The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
+**Note:**The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store. [Click for a larger version]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps to configure the Firefox web browser]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:target="_blank"}{:rel="noopener noreferrer"}
