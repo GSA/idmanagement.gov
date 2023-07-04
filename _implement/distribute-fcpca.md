@@ -146,11 +146,17 @@ To distribute the Federal Common Policy CA (FCPCA) certificate, use one of these
 
 1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run the following command:
+
+    ```bash
     certutil -dspublish -f [PATH\]fcpcag2.crt RootCA
+    ```
 
 1. To verify that the FCPCA root certificate was distributed, run the following commands:
-        gpupdate /force
-        certutil -viewstore -enterprise
+
+    ```bash
+    gpupdate /force
+    certutil -viewstore -enterprise
+    ```
 
 1. Confirm that the output details include the FCPCA root certificate.
 1. Verify the certificate details against the [expected values](#step-1---obtain-and-verify-the-fcpca-root-certificate) (for example, serial number, hash, etc.).
