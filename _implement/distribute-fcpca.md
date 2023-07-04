@@ -658,7 +658,7 @@ HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99
 
 2. Verify that _Federal Common Policy CA_ has full trust enabled.
 
-![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust.jpg){:style="width:300px;"}
+![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}
 
 ---
 
