@@ -161,8 +161,9 @@ To distribute the Federal Common Policy CA (FCPCA) certificate, use one of these
 1. Confirm that the output details include the FCPCA root certificate.
 1. Verify the certificate details against the [expected values](#step-1---obtain-and-verify-the-fcpca-root-certificate) (for example, serial number, hash, etc.).
 
-**Note:** The following .gif shows you how to distribute the FCPCA root certificate using Microsoft Certutil.
-[![A gif that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
+**Note:** The following video shows you how to distribute the FCPCA root certificate using Microsoft Certutil. [Click for a larger version]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}.
+
+[![A video that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use Microsoft Group Policy Object (GPO)
 
