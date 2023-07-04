@@ -106,8 +106,8 @@ To verify your copy of the FCPCA root certificate, use one of these options:
 
 After you have verified the certificate, you are ready to distribute the FCPCA root certificate certificate within your environment.
 
-- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems),
-- or you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
+- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems), or
+- you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
 
 # Step 2 - Distribute to operating systems
 
