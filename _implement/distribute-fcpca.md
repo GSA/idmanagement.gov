@@ -360,8 +360,8 @@ You can also manually install a profile.
 {% include alert-info.html content="These steps describe how to install the FCPCA root certificate in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
 1. Click the **Spotlight** icon and search for _Terminal_.
-2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
-3. Run the following command:
+1. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
+1. Run the following command:
 
     ```bash
     sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpcag2.crt
@@ -380,14 +380,14 @@ You can use the System Keychain or Login Keychain to install the FCPCA root cert
 {% include alert-info.html content="These steps describe how to install FCPCA in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
 1. Click the **Spotlight** icon and search for _Keychain Access_.
-2. Double-click the **Keychain Access** icon to open the application.
-3. Click the _System_ keychain from the left-hand navigation.
-4. Click **File** -> **Import Items**
-5. Browse to and select your verified copy of FCPCA.
-6. When prompted, enter your _administrator_ username and password.
-7. Keychain Access will present the installed certificate.
+1. Double-click the **Keychain Access** icon to open the application.
+1. Click the _System_ keychain from the left-hand navigation.
+1. Click **File** -> **Import Items**
+1. Browse to and select your verified copy of FCPCA.
+1. When prompted, enter your _administrator_ username and password.
+1. Keychain Access will present the installed certificate.
 
-**Note:**The following video shows administrators how to install FCPCA by using the Apple Keychain Access import process.
+**Note:**The following video shows administrators how to install FCPCA by using the Apple Keychain Access import process. [Click for a larger version]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps for administrators to install FCPCA using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -396,11 +396,10 @@ You can use the System Keychain or Login Keychain to install the FCPCA root cert
 {% include alert-info.html content="These steps describe how to install FCPCA in the Login Keychain. Both system administrators and non-administrators can perform these steps." %}
 
 1. Browse to your downloaded, verified copy of FCPCA.
-2. Double-click the file.
+1. Double-click the file.
+1. Keychain Access opens and displays the installed certificate.
 
-    Keychain Access opens and displays the installed certificate.
-
-**Note:**The following video shows non-administrators how to install FCPCA using the Apple Keychain Access import process.
+**Note:**The following video shows non-administrators how to install FCPCA using the Apple Keychain Access import process. [Click for a larger version]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps for non-administrators to install FCPCA using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
