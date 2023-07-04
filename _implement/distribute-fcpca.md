@@ -447,10 +447,12 @@ You can now successfully navigate to any intranet website whose SSL certificate 
     cd /usr/local/share/ca-certificates/
 
 1. Convert the FCPCA certificate to PEM and set permissions with the following commands:
+
     sudo openssl x509 -inform der -in [PATH\]fcpcag2.crt -out fcpcag2-pem.crt
     sudo chmod 644 fcpcag2-pem.crt
 
 1. Update Trusted Certificates with the following command:
+
     sudo update-ca-certificates
 
 ### Red Hat Enterprise Linux, CentOS, and Other Non-Debian-Based Kernels
@@ -458,14 +460,17 @@ You can now successfully navigate to any intranet website whose SSL certificate 
 1. Launch the command line.
 
 1. Change directory with the following command:
+
     cd /etc/pki/ca-trust/source/anchors/
 
 1. Copy your verified copy of FCPCA into the folder and set permissions with the following commands:
+
     sudo cp [PATH\]fcpcag2.crt .
     sudo chown root.root fcpcag2.crt
     sudo chmod 644 fcpcag2.crt
 
 1. Update Trusted Certificates with the following command:
+
     sudo /bin/update-ca-trust extract
 
 Next, verify distribution of the FCPCA certificate as an operating system trusted root.
