@@ -849,11 +849,22 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
-| Validity | November 18, 2020 to December 13, 2028 |
-| Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
+| Validity | March 16, 2022 to March 16, 2032 |
+| Serial Number | 231eb3199085ee8187df5c7a598ef336b356092f |
 | SHA-1 Thumbprint | 9aecfbe2de8aea49d220bbf799172c00527fe756 |
 | SHA-256 Thumbprint | ea86e0baf55eef020ed58196af865f2fa72a77d1be70a779b65a9cbf0b5ee3f2 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/DigiCert_Federal_SSP_Intermediate_CA_-_G5.cer)|
+
+#### Issued to: DigiCert Federal SSP Intermediate CA - G6
+
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G6, O=DigiCert, Inc., C=US |
+| Validity | November 18, 2020 to December 13, 2028 |
+| Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
+| SHA-1 Thumbprint | 806b3aa2dbeb6a097bf07920bb77bb1eb9fbb2dd |
+| SHA-256 Thumbprint | ac309ffef2da64de1a360c3194b9b78bcdb65dc4863f02c4fa2797f9d71a773b |
+| Download Location | Click [here]({{site.baseurl}}/implement/certs/DigiCert_Federal_SSP_Intermediate_CA_-_G6.cer)|
 
 #### Issued to: Symantec SSP Intermediate CA - G4
 
