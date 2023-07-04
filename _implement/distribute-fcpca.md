@@ -765,9 +765,9 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 1. Wait for clients to consume the new policy.
 1. (_Optional_) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
 
-```bash
-gpupdate /force
-```
+    ```bash
+    gpupdate /force
+    ```
 
 ### Use Apple Configuration Profile
 
