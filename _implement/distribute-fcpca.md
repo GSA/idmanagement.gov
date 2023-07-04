@@ -780,7 +780,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: Federal Bridge CA G4
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
 | Validity | October 15, 2020 to December 6, 2029 |
@@ -791,7 +791,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: U.S. Department of State AD Root CA
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 18, 2020 to November 18, 2023 |
@@ -802,7 +802,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: US Treasury Root CA
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | April 6, 2022 to April 6, 2025 |
@@ -813,7 +813,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
 | Validity | November 18, 2020 to December 13, 2028 |
@@ -824,7 +824,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: Symantec SSP Intermediate CA - G4
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
 | Validity | November 18, 2020 to November 12, 2024 |
@@ -835,7 +835,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: Entrust Managed Services Root CA
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | November 18, 2020 to August 14, 2029 |
@@ -846,7 +846,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: Verizon SSP CA A2
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
 | Validity | November 18, 2020 to December 6, 2026 |
@@ -857,7 +857,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: ORC SSP 4
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
 | Validity | November 18, 2020 to January 21, 2024 |
@@ -868,7 +868,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: WidePoint ORC SSP CA 5
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
 | Validity | November 19, 2020 to November 5, 2030  |
@@ -883,7 +883,7 @@ Distrusting the certificate below will prevent workstations from building a path
 
 #### Issued by: Federal Bridge CA G4
 
-| Certificate Attribute | Value                                              |
+| Certificate Attribute | Value |
 | :--------  | :--------     |
 | Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
 | Validity | October 15, 2020 to December 6, 2029  |
