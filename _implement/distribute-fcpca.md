@@ -946,17 +946,17 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 1. Double-click the certificate and select the **Certification Path** tab.
 1. Verify the certificate chain begins with the **FCPCA** (pictured below).
 
-**Note:** It's okay if different certification authorities appear below the FCPCA for your certificate.
+**Note:** It's okay if different certification authorities appear below the FCPCA for your certificate. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ![Verify common migration in Windows]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:style="width:300px;"}
 
 ### Verify Migration on macOS
 
 1. Click the **Spotlight** icon and search for _Keychain Access_.
-2. Double-click the **Keychain Access** icon to open the application.
-3. In the left navigation, click the **Login** keychain.
-4. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
-5. Verify the _This certificate is valid_ message appears beneath the certificate details.
+1. Double-click the **Keychain Access** icon to open the application.
+1. In the left navigation, click the **Login** keychain.
+1. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
+1. Verify the _This certificate is valid_ message appears beneath the certificate details. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ![Verify common migration in macOS]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:504px;"}
 
