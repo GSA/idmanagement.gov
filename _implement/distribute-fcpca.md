@@ -74,7 +74,9 @@ To verify your copy of the FCPCA root certificate, use one of these options:
 1. Click **Start**, type **cmd**, and press **Enter**.
 2. Run the following command:
 
+    ```bash
     certutil -hashfile {DOWNLOAD_LOCATION}\fcpcag2.crt SHA256
+    ```
 
 **Note:** The following .gif shows you how to verify your copy of the FCPCA root certificate on Microsoft Server 2016.
 [![A gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
@@ -85,7 +87,9 @@ To verify your copy of the FCPCA root certificate, use one of these options:
 2. Double-click the **Terminal** icon (black monitor icon with white ">_") to open a window.
 3. Run the following command:
 
-    $ shasum -a 256 {DOWNLOAD_LOCATION}/fcpcag2.crt
+    ``` bash
+    shasum -a 256 {DOWNLOAD_LOCATION}/fcpcag2.crt
+    ```
 
 **Note:** The following .gif shows you how to verify your copy of the FCPCA root certificate on macOS Catalina (10.15).
 
@@ -96,7 +100,9 @@ To verify your copy of the FCPCA root certificate, use one of these options:
 1. Open the command line.
 2. Run the following command:
 
-    $ sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
+    ```bash
+    sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
+    ```
 
 After you have verified the certificate, you are ready to distribute the FCPCA root certificate certificate within your environment.
 
