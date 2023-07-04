@@ -301,7 +301,7 @@ To use this profile, copy the XML information and save it as a `.mobileconfig` f
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>Federal Common Policy Certification Authority G2 Profile</string>
+    <string>Federal Common Policy Certification Authority Profile</string>
     <key>PayloadIdentifier</key>
     <string>FCPCA-0001</string>
     <key>PayloadRemovalDisallowed</key>
@@ -418,7 +418,7 @@ You can use the Safari web browser to install the FCPCA root certificate on **iO
 
 **Note:**The following video shows you how to install FCPCA using the Safari web browser.
 
-[![A video that shows the steps to install FCPCA in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A video that shows the steps to install FCPCA in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Enable Full Trust for FCPCA
 
@@ -432,7 +432,7 @@ This option works for **iOS** devices only.
 
 You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-[![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust.jpg){:target="_blank"}{:rel="noopener noreferrer"}
+[![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 ---
 
