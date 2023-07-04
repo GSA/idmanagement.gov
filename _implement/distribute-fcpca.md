@@ -444,16 +444,22 @@ You can now successfully navigate to any intranet website whose SSL certificate 
 
 1. Change directory with the following command:
 
+    ``` bash
     cd /usr/local/share/ca-certificates/
+    ```
 
 1. Convert the FCPCA certificate to PEM and set permissions with the following commands:
 
+    ``` bash
     sudo openssl x509 -inform der -in [PATH\]fcpcag2.crt -out fcpcag2-pem.crt
     sudo chmod 644 fcpcag2-pem.crt
+    ```
 
 1. Update Trusted Certificates with the following command:
 
+    ``` bash
     sudo update-ca-certificates
+    ```
 
 ### Red Hat Enterprise Linux, CentOS, and Other Non-Debian-Based Kernels
 
@@ -513,18 +519,25 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 ### Use BigFix
 
 1. Download the BigFix Enterprise Suite (.bes) analysis file: [_FPKIRootG2Detection.bes_]({{site.baseurl}}/implement/FPKIRootG2Detection.bes){:target="_blank"}{:rel="noopener noreferrer"}.
+1. Use Certutil or another tool to verify the .bes file's SHA-256 hash (_required_):
 
-2. Use Certutil or another tool to verify the .bes file's SHA-256 hash (_required_):
+    ``` bash
     certutil -hashfile [DOWNLOAD_LOCATION]\FPKIRootDetection.bes SHA256
-3. The file's hash must match this one:
+    ```
+
+1. The file's hash must match this one:
+
+    ``` bash
     03bca16f7d21be344d954105b5ccb3caf578588cf6b8bd6f1cd03dfe298361bb
-4. Log into _BigFix_:**Start** > **IBM BigFix** > **IBM BigFix Console**.
-5. Import the _FPKIRootG2Detection.bes_ file:**File** > **Import** > **Open**.
+    ```
+
+1. Log into _BigFix_:**Start** > **IBM BigFix** > **IBM BigFix Console**.
+1. Import the _FPKIRootG2Detection.bes_ file:**File** > **Import** > **Open**.
     The **Create Analysis** window appears.
-6. Assign the file:for **Create in site**, select _site name_, and for **Create in domain**, select _domain name_. Click **Okay**.
-7. On the left side panel, click **Analyses** to see a list of imported analysis files.
-8. Click _Federal Common Policy CA Distribution Detection_ (i.e., _FPKIRootG2Detection.bes_) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**.
-9. For each workstation or device listed, "_Has FCPCA Been Distributed?_" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at <fpkirootupdate@gsa.gov>.
+1. Assign the file:for **Create in site**, select _site name_, and for **Create in domain**, select _domain name_. Click **Okay**.
+1. On the left side panel, click **Analyses** to see a list of imported analysis files.
+1. Click _Federal Common Policy CA Distribution Detection_ (i.e., _FPKIRootG2Detection.bes_) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**.
+1. For each workstation or device listed, "_Has FCPCA Been Distributed?_" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at <fpkirootupdate@gsa.gov>.
 
 ![Sample Output]({{site.baseurl}}/assets/fpki/bigfix-results.jpg){:style="width:504px;"}
 
@@ -540,7 +553,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
         - GPO Distribution
 
-        ``` plaintext
+        ``` bash
         Root Key: HKLM
         Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
         Value: BLOB
@@ -549,7 +562,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
         - Certutil Distribution
 
-        ``` plaintext
+        ``` bash
         Root Key: HKLM
         Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
         Value: BLOB
@@ -560,7 +573,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
         - GPO Distribution
 
-        ``` plaintext
+        ``` bash
         Root Key: HKLM
         Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
         Value: BLOB
@@ -569,7 +582,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
         - Certutil Distribution
 
-        ``` plaintext
+        ``` bash
         Root Key: HKLM
         Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
         Value: BLOB
@@ -653,7 +666,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 2. Run the following command to verify the Federal Common Policy CA has an entry in the system's trust list:
 
-    ``` plaintext
+    ``` bash
         trust list | grep "Federal Common Policy CA"
     ```
 
