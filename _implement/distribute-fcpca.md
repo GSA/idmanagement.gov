@@ -27,7 +27,7 @@ July 2021
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 07/2020| Initial Draft |
+| 1.0 | 07/2023 | Initial Draft |
 
 This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise. This guide replaces the previous FCPCA2 migration guide, since the migration to FCPCA2 has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCA2 root certificate, and how to verify that the certificate is working as intended.
 
@@ -46,8 +46,8 @@ To download a copy of FCPCA G2, use one of these recommended options:
 
 {% include alert-warning.html content="_You should never install a root certificate before you verify it._ The procedures below describe how to verify the authenticity of your copy of the FCPCA G2. Your certificate details and hash must match the expected values in the following table." %}
 
-| **FCPCA G2**  | **Certificate Details**                             |
-| :--------  | :-------------------------------     |
+| **FCPCA G2**  | **Certificate Details** |
+| :--------  | :------- |
 | Distinguished Name | cn=Federal Common Policy CA G2, ou=FPKI, o=U.S. Government, c=US |
 | Serial Number | 21e5b9a0cc956de278ca012ba8fdc58a98b3fbea |
 | SHA-1 Thumbprint | 99B4251E2EEE05D8292E8397A90165293D116028 |
