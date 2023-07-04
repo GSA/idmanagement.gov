@@ -445,7 +445,7 @@ This option works for **iOS** devices only.
 2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA root CA certificate entry.
 3. When the certificate appears, click **Continue**.
 
-You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA. [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
+You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
 [![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -547,8 +547,7 @@ To verify that the Federal Common Policy CA (FCPCA) certificate has been distrib
     ```
 
 1. Log into _BigFix_:**Start** > **IBM BigFix** > **IBM BigFix Console**.
-1. Import the _FPKIRootG2Detection.bes_ file:**File** > **Import** > **Open**.
-    The **Create Analysis** window appears.
+1. Import the _FPKIRootG2Detection.bes_ file:**File** > **Import** > **Open**. The **Create Analysis** window appears.
 1. Assign the file:for **Create in site**, select _site name_, and for **Create in domain**, select _domain name_. Click **Okay**.
 1. On the left side panel, click **Analyses** to see a list of imported analysis files.
 1. Click _Federal Common Policy CA Distribution Detection_ (i.e., _FPKIRootG2Detection.bes_) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**.
@@ -559,10 +558,10 @@ To verify that the Federal Common Policy CA (FCPCA) certificate has been distrib
 ### Use LANDesk 2016
 
 1. Open _LANDesk 2016_:**Start** > **LANDesk Management** > **Desktop Manager**.
-2. Create a custom registry data item:**Tools** > **Reporting/Monitoring** > **Manage software list**.
-3. Expand **Custom Data**, and click **Registry items**.
-4. Click **Add** to add a new registry item.
-5. Add the data shown below for Windows 32-bit or 64-bit versions, based on GPO or Certutil distribution of FCPCA.
+1. Create a custom registry data item:**Tools** > **Reporting/Monitoring** > **Manage software list**.
+1. Expand **Custom Data**, and click **Registry items**.
+1. Click **Add** to add a new registry item.
+1. Add the data shown below for Windows 32-bit or 64-bit versions, based on GPO or Certutil distribution of FCPCA.
 
     - **Microsoft Windows 32-bit Versions**
 
@@ -604,12 +603,12 @@ To verify that the Federal Common Policy CA (FCPCA) certificate has been distrib
         Attribute Name: Custom Data – FCPCAWin64 certutil - Certificate
         ```
 
-6. Create a query for the registry item:on the left side panel, expand **Network View**, and click **Queries**.
-7. Right-click **My Queries**, select **New Query**, and enter a _query name_ (e.g., _FCPCA Verification: Win32 Machines_).
-8. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
-9. For **Boolean**, select **Exists**.
-10. For **Displayed Scanned Values**, click **Insert** and add the _BLOB_ value from above.
-11. Double-click the _new query name_ to verify FCPCA distribution. The results will be similar to these:
+1. Create a query for the registry item:on the left side panel, expand **Network View**, and click **Queries**.
+1. Right-click **My Queries**, select **New Query**, and enter a _query name_ (e.g., _FCPCA Verification: Win32 Machines_).
+1. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
+1. For **Boolean**, select **Exists**.
+1. For **Displayed Scanned Values**, click **Insert** and add the _BLOB_ value from above.
+1. Double-click the _new query name_ to verify FCPCA distribution. The results will be similar to these:
 
 ![Sample Output]({{site.baseurl}}/assets/fpki/landesk-results.jpg){:style="width:504px;"}
 
