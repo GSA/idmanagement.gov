@@ -655,10 +655,8 @@ HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99
 ### Use Keychain Access
 
 1. Click the **Spotlight** icon and search for _Keychain Access_.
-
-2. Double-click the **Keychain Access** icon.
-
-3. Ensure that an entry for FCPCA exists in the **login** or **System** Keychain Certificates repository.
+1. Double-click the **Keychain Access** icon.
+1. Ensure that an entry for FCPCA exists in the **login** or **System** Keychain Certificates repository. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify_common_macOS.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ![Verify Common on MacOS]({{site.baseurl}}/assets/fpki/verify_common_macOS.png){:style="width:476px;"}
 
@@ -669,8 +667,7 @@ HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99
 ### Use Settings
 
 1. Select **Settings** > **About** > **Certificate Trust Settings**.
-
-2. Verify that _Federal Common Policy CA_ has full trust enabled.
+1. Verify that _Federal Common Policy CA_ has full trust enabled.
 
 ![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}
 
@@ -684,9 +681,9 @@ HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99
 
 2. Run the following command to verify the Federal Common Policy CA has an entry in the system's trust list:
 
-    ``` bash
-        trust list | grep "Federal Common Policy CA"
-    ```
+``` bash
+    trust list | grep "Federal Common Policy CA"
+```
 
 Next, distribute the FCPCA certificate to application trust stores.
 
@@ -699,7 +696,7 @@ Collaborate across agency teams to identify applications that rely on custom tru
 **Example applications with custom trust stores:**
 
 - Java and all Java-based applications (for example, Apache Tomcat)
-- Mozilla products (for example, [Firefox](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca){:target="_blank"}{:rel="noopener noreferrer"} or Thunderbird)
+- Mozilla products (for example, [Firefox](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca) or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
 Next, determine if you need to distribute the CA certificates issued by the FCPCA root certificate.
