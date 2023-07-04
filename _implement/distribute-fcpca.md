@@ -607,7 +607,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ***Optional:***
 
-1. Open _Microsoft Certificate Manager_:**Start**; then type **certlm.msc** and press **Enter**.
+1. Open _Microsoft Certificate Manager_: **Start**; then type **certlm.msc** and press **Enter**.
 2. Select **Trusted Root Certification Authorities** from the left side panel, then select **View** > **Options**.
 3. In the **View Options** box, select the **Physical certificate stores** checkbox.
 4. On the left side panel, click the **>** icon next to **Trusted Root Certification Authorities** to see the subdirectories.
@@ -622,13 +622,17 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 #### GPO-distributed FCPCA
 
-- HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+``` bash
+HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+```
 
 #### Certutil-distributed FCPCA
 
-- HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-- HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+``` bash
+HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+```
 
 ---
 
