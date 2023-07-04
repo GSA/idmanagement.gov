@@ -363,9 +363,11 @@ You can also manually install a profile.
 2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
 3. Run the following command:
 
-    $ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpcag2.crt
+    ```bash
+    sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpcag2.crt
+    ```
 
-**Note:**The following video shows you how to install FCPCA using the command line.
+**Note:**The following video shows you how to install FCPCA using the command line. [Click for a larger version]({{site.baseurl}}/assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps to install FCPCA using the macOS command line.]({{site.baseurl}}/assets/fpki/install_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
