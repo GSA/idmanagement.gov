@@ -956,7 +956,9 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 1. Double-click the **Keychain Access** icon to open the application.
 1. In the left navigation, click the **Login** keychain.
 1. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
-1. Verify the _This certificate is valid_ message appears beneath the certificate details. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
+1. Verify the _This certificate is valid_ message appears beneath the certificate details.
+ 
+**Note:** It's okay if a different name appears in the keychain access screen. It should show the name of the user that the PIV certificate was issued to [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 ![Verify common migration in macOS]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:504px;"}
 
