@@ -608,24 +608,24 @@ To verify that the Federal Common Policy CA (FCPCA) certificate has been distrib
 1. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
 1. For **Boolean**, select **Exists**.
 1. For **Displayed Scanned Values**, click **Insert** and add the _BLOB_ value from above.
-1. Double-click the _new query name_ to verify FCPCA distribution. The results will be similar to these:
+1. Double-click the _new query name_ to verify FCPCA distribution. The results will be similar to these ([Click for a larger version]({{site.baseurl}}/assets/fpki/landesk-results.jpg){:target="_blank"}{:rel="noopener noreferrer"}):
 
 ![Sample Output]({{site.baseurl}}/assets/fpki/landesk-results.jpg){:style="width:504px;"}
 
 ### Use Microsoft Certificate Manager
 
 1. Open _Microsoft Certificate Manager_:**Start**; then type **certlm.msc** and press **Enter**.
-2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA was successfully distributed, look for _Federal Common Policy CA_ shown with **Intended Purposes** of _ALL_ and a **Friendly Name** of _None_, as shown here:
+2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA was successfully distributed, look for _Federal Common Policy CA_ shown with **Intended Purposes** of _ALL_ and a **Friendly Name** of _None_, as shown here ([Click for a larger version]({{site.baseurl}}/assets/fpki/verify_trust.png){:target="_blank"}{:rel="noopener noreferrer"}):
 
 ![Trusted Root CA Certificates List]({{site.baseurl}}/assets/fpki/verify_trust.png){:style="width:504px;"}
 
 ***Optional:***
 
 1. Open _Microsoft Certificate Manager_: **Start**; then type **certlm.msc** and press **Enter**.
-2. Select **Trusted Root Certification Authorities** from the left side panel, then select **View** > **Options**.
-3. In the **View Options** box, select the **Physical certificate stores** checkbox.
-4. On the left side panel, click the **>** icon next to **Trusted Root Certification Authorities** to see the subdirectories.
-5. Verify the distribution of FCPCA:
+1. Select **Trusted Root Certification Authorities** from the left side panel, then select **View** > **Options**.
+1. In the **View Options** box, select the **Physical certificate stores** checkbox.
+1. On the left side panel, click the **>** icon next to **Trusted Root Certification Authorities** to see the subdirectories.
+1. Verify the distribution of FCPCA:
      - For Certutil-distributed copies of FCPCA, click **Enterprise** > **Certificates**. *FCPCA should appear in the certificates list.*
      - For GPO-distributed copies of FCPCA, click **Group Policy** > **Certificates**. *FCPCA should appear in the certificates list.*
 
