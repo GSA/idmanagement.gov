@@ -32,10 +32,10 @@ July 2021
 This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root within their enterprise. This guide replaces the previous FCPCA2 migration guide, since the migration to FCPCA2 has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCA2 root certificate, and how to verify that the certificate is working as intended.
 
 {% capture alert-content-1 %}
-**We're calling for all solutions!** If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.
+**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.
 {% endcapture %}
 
-{% include alert-info.html content=alert-content-1 %}
+{% include alert-info.html content='**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
 
 # Step 1 - Obtain and verify FCPCA G2
 
