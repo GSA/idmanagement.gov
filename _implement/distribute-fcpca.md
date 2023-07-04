@@ -420,19 +420,18 @@ You can use the Safari web browser to install the FCPCA root certificate on **iO
 {% include alert-info.html content="These steps describe how to install the FCPCA root certificate as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
 
 1. Launch **Safari**.
-2. Navigate to the FCPCA root CA certificate: <http://repo.fpki.gov/fcpca/fcpcag2.crt>.
-    System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
-3. Click **Allow**.
-    the FCPCA root certificate configuration profile appears.
-4. Click **More Details**, and then select the FCPCA certificate entry.
-5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-the-fcpca-root-certificate).
-6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
-7. When prompted, enter your device **passcode**.
-8. Click **Install** in the upper right corner, and **Install** again.
-9. Click **Done**.
-10. Follow the steps below to enable [full trust for FCPCA](#enable-full-trust-for-fcpca).
+1. Navigate to the FCPCA root CA certificate: <http://repo.fpki.gov/fcpca/fcpcag2.crt>. 
+1. System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
+1. Click **Allow**. The FCPCA root certificate configuration profile appears.
+1. Click **More Details**, and then select the FCPCA certificate entry.
+1. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-the-fcpca-root-certificate).
+1. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
+1. When prompted, enter your device **passcode**.
+1. Click **Install** in the upper right corner, and **Install** again.
+1. Click **Done**.
+1. Follow the steps below to enable [full trust for FCPCA](#enable-full-trust-for-fcpca).
 
-**Note:**The following video shows you how to install FCPCA using the Safari web browser.
+**Note:**The following video shows you how to install FCPCA using the Safari web browser. [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![A video that shows the steps to install FCPCA in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -446,7 +445,7 @@ This option works for **iOS** devices only.
 2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA root CA certificate entry.
 3. When the certificate appears, click **Continue**.
 
-You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
+You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA. [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
 [![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
