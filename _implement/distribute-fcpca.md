@@ -776,7 +776,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 
-{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are unable</b> to perform dynamic path validation. Learn more on our <a href=\"#frequently-asked-questions\">Frequently Asked Questions</a> page." %}
+{% include alert-warning.html content="Important! To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions) page." %}
 
 #### Issued to: Federal Bridge CA G4
 
