@@ -192,7 +192,8 @@ To distribute the Federal Common Policy CA (FCPCA) certificate, use one of these
 
     gpupdate /force
 
-**Note:** The following .gif shows you how to distribute the FCPCA root certificate with Microsoft GPO.
+**Note:** The following video shows you how to distribute the FCPCA root certificate with Microsoft GPO. [Click for a larger version]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}.
+
 [![A gif that shows the distribution and verification steps performed with Microsoft Group Policy Object also known as GPO]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use Third-Party Configuration Management Tools
@@ -202,7 +203,10 @@ To distribute the Federal Common Policy CA (FCPCA) certificate, use one of these
 You can use third-party configuration management tools, such as BigFix.
 
 1. Using BigFix, schedule a task and push the certificate file. Run the following command (example):
+
+    ```bash
     certutil -f -addstore root “fcpcag2.crt”
+    ```
 
 ### Use Microsoft Certificate Manager for Unmanaged Devices
 
@@ -210,16 +214,12 @@ To distribute the FCPCA root certificate to unmanaged devices:
 
 1. Click **Start**, type **certmgr.msc**, and  press **Enter**.
 1. Right-click **Trusted Root Certification Authorities**, and select **All Tasks** > **Import**.
-
-    The Certificate Import Wizard appears.
-
-1. Browse to and select your copy of the FCPCA root certificate.
+1. When the Certificate Import Wizard appears, browse to and select your copy of the FCPCA root certificate.
 1. Verify that the desired **Certificate Store** displays **Trusted Root Certification Authorities**, and select _Next_.
 1. Select _Finish_ to complete the import.
+1. A success message appears.
 
-    A success message appears.
-
-> **Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately).
+**Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately).
 
 ---
 
@@ -245,7 +245,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 1. Click **File** > **Save** to save your profile to your preferred location.
 1. [Distribute the profile across your enterprise](#distribute-an-apple-configuration-profile).
 
-**Note:** The following video shows you how to create an Apple configuration profile.
+**Note:** The following video shows you how to create an Apple configuration profile. [Click for a larger version]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}.
 
 [![A video that shows the steps to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
