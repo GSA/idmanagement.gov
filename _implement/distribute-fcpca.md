@@ -88,7 +88,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 After you have verified the certificate, you are ready to distribute the FCPCA G2 certificate within your environment.
 
-- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems), 
+- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems),
 - or you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
 
 # Step 2 - Distribute to operating systems
@@ -626,9 +626,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 
 ## Verifying - Linux and Unix
 
-### Debian-based kernels
-
-#### Use the Debian/Ubuntu Command Line
+### Use the Command Line
 
 1. Launch the command line.
 
@@ -637,18 +635,6 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
     ``` plaintext
         trust list | grep "Federal Common Policy CA G2"
     ```
-
-### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
-
-#### Use the Red Hat/CentOS Command Line
-
-1. Launch the command line.
-
-2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
-
-   ``` plaintext
-        trust list | grep "Federal Common Policy CA G2"
-   ```
 
 Next, distribute the FCPCA G2 certificate to application trust stores.
 
@@ -781,7 +767,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Federal Bridge CA G4
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
 | Validity | October 15, 2020 to December 6, 2029 |
 | Serial Number | 234200beaa6dada658f53b403f418295290cae82  |
@@ -792,7 +778,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: U.S. Department of State AD Root CA
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 18, 2020 to November 18, 2023 |
 | Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
@@ -803,7 +789,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: US Treasury Root CA
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | April 6, 2022 to April 6, 2025 |
 | Serial Number | 279f09737fe5dd3d7534be0ea51aff9dc4018501 |
@@ -814,7 +800,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
 | Validity | November 18, 2020 to December 13, 2028 |
 | Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
@@ -825,7 +811,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Symantec SSP Intermediate CA - G4
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
 | Validity | November 18, 2020 to November 12, 2024 |
 | Serial Number | 262bd1f025c8af37334545666ea6c9ea946c2c34 |
@@ -836,7 +822,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Entrust Managed Services Root CA
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | November 18, 2020 to August 14, 2029 |
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
@@ -847,7 +833,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: Verizon SSP CA A2
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
 | Validity | November 18, 2020 to December 6, 2026 |
 | Serial Number | 25fca834ada24a4455a2db0ff4cef7c411198e3a |
@@ -858,7 +844,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: ORC SSP 4
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
 | Validity | November 18, 2020 to January 21, 2024 |
 | Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
@@ -869,7 +855,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 #### Issued to: WidePoint ORC SSP CA 5
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
 | Validity | November 19, 2020 to November 5, 2030  |
 | Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
@@ -884,7 +870,7 @@ Distrusting the certificate below will prevent workstations from building a path
 #### Issued by: Federal Bridge CA G4
 
 | Certificate Attribute | Value |
-| :--------  | :--------     |
+| :--------  | :-------- |
 | Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
 | Validity | October 15, 2020 to December 6, 2029  |
 | Serial Number | 129217e6c9126fd816babe02d9192ae2b519e231 |
@@ -997,7 +983,7 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of fpki-unmanaged-bundle.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
 
-To verify your distribution (assumes **certmgr.msc** is still open): 
+To verify your distribution (assumes **certmgr.msc** is still open):
 
 1. Verify an entry for the FCPCA G2
      - Use the left-hand navigation to browse to **Trusted Root Certification Authorities** > **Certificates**
