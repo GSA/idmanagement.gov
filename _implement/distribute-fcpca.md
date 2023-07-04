@@ -756,20 +756,18 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 1. Right-click the newly created GPO and click **Edit**.
 1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
 1. Right-click **Intermediate Certification Authorities**, and select **Import**.
-
-    The Certificate Import Wizard appears
-
+1. The Certificate Import Wizard appears
 1. Browse to and select the certificates [issued by the FCPCA](#certificates-issued-by-the-federal-common-policy-ca) that you want to distribute.
 1. Verify that the target **Certificate Store** presents **Intermediate Certification Authorities**, and select **Next**.
 1. Select **Finish** to complete the import.
-
-    A success message appears.
-
+1. A success message appears.
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
 1. (_Optional_) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
 
-    gpupdate /force
+```bash
+gpupdate /force
+```
 
 ### Use Apple Configuration Profile
 
