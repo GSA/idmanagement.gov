@@ -41,7 +41,7 @@ Enabling Enterprise trust of the FCPCA Root Certificate requires the following s
 
 This guide ends by presenting answers to [Frequently Asked Questions](#frequently-asked-questions)
 
-{% include alert-info.html content='**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub]("https://github.com/GSA/idmanagement.gov/issues/new"){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
+{% include alert-info.html content='**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub](https://github.com/GSA/idmanagement.gov/issues/new){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
 
 # Step 1 - Obtain and verify the FCPCA root certificate
 
