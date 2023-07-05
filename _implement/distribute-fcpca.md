@@ -78,8 +78,9 @@ To verify your copy of the FCPCA root certificate, use one of these options:
     certutil -hashfile {DOWNLOAD_LOCATION}\fcpcag2.crt SHA256
     ```
 
-**Note:** The following .gif shows you how to verify your copy of the FCPCA root certificate on Microsoft Server 2016.
-[![A gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+**Note:** The following video shows you how to verify your copy of the FCPCA root certificate on Microsoft Server 2016. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+[![A video that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### On macOS: Use Terminal
 
@@ -91,9 +92,9 @@ To verify your copy of the FCPCA root certificate, use one of these options:
     shasum -a 256 {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
 
-**Note:** The following .gif shows you how to verify your copy of the FCPCA root certificate on macOS Catalina (10.15).
+**Note:** The following video shows you how to verify your copy of the FCPCA root certificate on macOS Catalina (10.15). [Click for a larger version]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-[![The following gif shows you how to verify your copy of the FCPCA root certificate on macOS Catalina 10 point 15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![The following video shows you how to verify your copy of the FCPCA root certificate on macOS Catalina 10 point 15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### On Linux/Unix: Use the Command Line
 
