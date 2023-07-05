@@ -23,7 +23,7 @@ subnav:
 ---
 
 Version 1.0
-July 2021
+July 2023
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
