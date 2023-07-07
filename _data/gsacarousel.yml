@@ -1,0 +1,81 @@
+# GSA Carousel Config 
+# Date: 03-22-2023
+# File: _data/gsacarousel.yml
+# File used in: _includes/hero.html 
+# Developer: Clayton Barnette <clayton.barnette@gsa.gov>
+# Purpose: Drives Carousel data on the homepage of New IDManagement.gov
+#
+# - orderNumber: Sequential numbering of each carousel item, starts at 0 - n 
+#   initialState: set to active active or leave blank (Note: only one carousel item should be set to active or it breaks the carousel)
+#   delay(default: 5000): number of milliseconds to display the carousel item on the page, before changing 
+#   heroHeading: text for the main hero section of the carousel, keep text length short 1 - 3 words depending on length
+#   heroText: secondary text for the hero section of the carousel, keep text length short as action statements
+#   actionButtonText: text for action button, normally 1 - 3 words, no more than 5
+#   actionLocation: # desired destination of the user after reading action statement, URLs, local URIs or permilinks. Local links (No leading forward slash)
+#   actionTarget(default: _blank): target window, options: _blank or _self if link is internal to site 
+
+# Memo: If a link is internal to the site, actionTarget should be set to "_self" if the lint is external or a PDF or Document of somekind, the "_blank" should be used.
+# Note: leave the / off the internal urls for 'actionLocation:' 
+
+- orderNumber: 0
+  initialState: active
+  delay: 10000
+  heroHeading: FICAM 
+  heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
+  actionButtonText: Learn more about
+  actionLocation: arch/
+  actionTarget: _self
+
+- orderNumber: 1
+  initialState:
+  delay: 10000
+  heroHeading: Zero Trust
+  heroText: concept assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned). Authentication and authorization (both subject and device) are discrete functions performed before a session to an enterprise resource is established.
+  actionButtonText: Learn more about
+  actionLocation: zero-trust/
+  actionTarget: _blank
+
+- orderNumber: 2
+  initialState:
+  delay: 10000
+  heroHeading: Privileged user
+  heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
+  actionButtonText: Learn more about
+  actionLocation: playbooks/pam/
+  actionTarget: _self
+
+- orderNumber: 3
+  initialState:
+  delay: 10000
+  heroHeading: Phishing resistant authenticators (Coming Soon)
+  heroText: are not susceptible to common interception and replay attacks. Phishing-resistant MFA protects users from sophisticated online attacks.
+  actionButtonText: Coming Soon!
+  actionLocation: /
+  actionTarget: _blank
+
+- orderNumber: 4
+  initialState:
+  delay: 10000
+  heroHeading: Single sign on
+  heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
+  actionButtonText: Learn more about
+  actionLocation: playbooks/sso/
+  actionTarget: _self
+
+- orderNumber: 5
+  initialState:
+  delay: 10000
+  heroHeading: User authorization
+  heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
+  actionButtonText: Learn more about
+  actionLocation: playbooks/cloud/
+  actionTarget: _self
+
+- orderNumber: 6
+  initialState:
+  delay: 10000
+  heroHeading: Identity lifecycle management
+  heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
+  actionButtonText: Learn more about
+  actionLocation: playbooks/ilm/
+  actionTarget: _self

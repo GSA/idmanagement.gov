@@ -1,0 +1,113 @@
+# The 11 FICAM Playbooks
+# From: https://playbooks.idmanagement.gov/playbooks/
+# Date: 04/18/2023
+# Data used on site's front page, lower half titled Playbooks.
+
+# This file drives the Playbooks listing on the PoC IDManagement.gov front page lower half.
+# - 05-15--2023: Added the 'header' property for the header graphic for each playbook. 
+#   
+#
+# title: name of the playbook
+# type: type of data the playbook is presented example: PDF, Markdown, HTML, Word Document
+# description: description of the playbook
+# url: internal url to playbook
+# header: internal url to a graphic assect to serve as a header graphic
+# target: _self (replaces page), _blank (opens in a new window)
+# external: yes or no, if yes: logic uses full url of this property, if no: uses internal relative url to domain name
+# Note: If external, the 'header' graphic will still expect a relative path to a graphic located in the assets folder
+#
+
+- title: Cloud Identity Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
+  url: "/playbooks/cloud/"
+  header: "/assets/playbooks/headers/playbook_04.png"
+  target: _self
+
+- title: Digital Autopen Playbook
+  type: Markdown
+  pubdate: 2023-03
+  description: This playbook outlines the process for an agency to implement a Digital Autopen for Federal Register documents.
+  url: "/playbooks/autopen/"
+  header: "/assets/playbooks/headers/playbook_02.png"
+  target: _self
+
+- title: Digital Identity Risk Assessment Playbook
+  type: Markdown
+  pubdate: 2020-09
+  description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
+  url: "/playbooks/dira/"
+  header: "/assets/playbooks/headers/playbook_03.png"
+  target: _self
+
+- title: Digital Worker Identity Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
+  url: "/playbooks/dw/"
+  header: "/assets/playbooks/headers/playbook_05.png"
+  target: _self
+
+- title: Enterprise Single Sign-On Playbook
+  type: Markdown
+  pubdate: 2021-11
+  description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
+  url: "/playbooks/sso/"
+  header: "/assets/playbooks/headers/playbook_09.png"
+  target: _self
+
+- title: ICAM Governance Framework Version 1.0
+  type: PDF
+  pubdate: 2021-09
+  description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies.
+  url: "/docs/playbook-identity-governance-framework.pdf"
+  header: "/assets/playbooks/headers/playbook_07.png"
+  target: _self
+
+- title: Identity Lifecycle Management Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.
+  url: "/playbooks/ilm/"
+  header: "/assets/playbooks/headers/playbook_08.png"
+  target: _self
+
+- title: Privileged Identity Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: This Playbook provides federal agencies with best practices in managing its privileged user population.
+  url: "/playbooks/pam/"
+  header: "/assets/playbooks/headers/playbook_11.png"
+  target: _self
+
+- title: Digitally Sign a Word Document
+  type: Markdown
+  pubdate: 2018-03
+  description: This playbook will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
+  url: "/playbooks/signword/"
+  header: "/assets/playbooks/headers/playbook_01.png"
+  target: _self
+
+- title: Digitally Sign a Federal Register Document
+  type: Markdown
+  pubdate: 2022-08
+  description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+  url: "/playbooks/signfedregister/"
+  header: "/assets/playbooks/headers/playbook_06.png"
+  target: _self
+
+- title: Windows Hello for Business Playbook
+  type: Markdown
+  pubdate: 2022-12
+  description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention.
+  url: "/playbooks/whfb/"
+  header: "/assets/playbooks/headers/playbook_05.png"
+  target: _self
+
+# Removed because it has a status of archived
+# - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
+#   type: PDF
+#   pubdate: 2011-12
+#   description: "The FICAM Roadmap contains processes, procedures, and considerations for planning and managing identity, credential, and access management programs. Note: This document has been superseded by the FICAM Architecture."
+#   url: "docs/roadmap-ficam.pdf"
