@@ -31,7 +31,7 @@ This page is for agencies to view the current service providers that have an ide
 
 The services provided rely upon a level of trust to be established with the U.S. government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI).
 
-If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies]({{site.baseurl}}/fpki/pivcas-and-agencies/){:target="_blank"}{:rel="noopener noreferrer"} or the [FPKI Graph]({{site.baseurl}}/fpki/tools/fpkigraph/){:target="_blank"}{:rel="noopener noreferrer"}.
+If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies]({{site.baseurl}}/fpki/pivcas-and-agencies/){:target="_blank"}{:rel="noopener noreferrer"} or the [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Overview
 

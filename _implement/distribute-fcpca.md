@@ -1,260 +1,170 @@
 ---
 layout: page
-title: Migrate or Install Federal Common Policy
+title: Enabling Enterprise Trust of the Common Policy Certificate
 collection: implement
-permalink: /implement/distribute-fcpca/
+permalink: /implement/trust-fcpca/
 sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
 subnav:
-  - text: 1. Prepare to migrate to the FCPCA G2
-    href: '#step-1---prepare-to-migrate'
-  - text: 2. Obtain and verify FCPCA G2
-    href: '#step-2---obtain-and-verify-fcpca-g2'
-  - text: 3. Distribute the certificate to operating systems
-    href: '#step-3---distribute-to-operating-systems'
-  - text: 4. Verify operating system distribution
-    href: '#step-4---verify-operating-system-distribution'
-  - text: 5. Distribute to applications
-    href: '#step-5---distribute-to-applications'
-  - text: 6. Distribute intermediate certificates
-    href: '#step-6---distribute-intermediate-certificates'
-  - text: 7. Distrust old root and verify
-    href: '#step-7---distrust-old-root-and-verify'
-  - text: Frequently Asked Questions
-    href: '#frequently-asked-quetions'
+  - text: 1. Obtain and verify FCPCA
+    href: '#step-1---obtain-and-verify-the-fcpca-root-certificate'
+  - text: 2. Distribute the certificate to operating systems
+    href: '#step-2---distribute-to-operating-systems'
+  - text: 3. Verify operating system distribution
+    href: '#step-3---verify-operating-system-distribution'
+  - text: 4. Distribute to applications
+    href: '#step-4---distribute-to-applications'
+  - text: 5. Distribute intermediate certificates
+    href: '#step-5---distribute-intermediate-certificates'
+  - text: 6. Frequently Asked Questions
+    href: '#frequently-asked-questions'
 ---
 
-Version 1.1 <br>
-July 2021
+Version 1.0
+July 2023
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.1 | 07/2021 | Updated FAQ with intermediate CAs. |
-| 1.0 | 07/2020| Initial Draft |
+| 1.0 | 07/2023 | Initial Draft |
 
-This guide is written for systems administrators who need to help migrate between Federal PKI Root Certificates or distribute a new Federal PKI root certificate.
+This guide provides information on distributing the Federal Common Policy CA (FCPCA) certificate to government-furnished workstations and devices as a _trusted root certificate_.
 
-- If migrating between roots, start at step 1.
-- If distributing a new root certificate, start at step 2.
+This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root ("FCPCA") within their enterprise. This guide replaces the previous FCPCA migration guide, since the migration to FCPCA has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCA root certificate, and how to verify that the certificate is working as intended.
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an application trust store, create an <a class=\"usa-link usa-link--external\"  href=\"https://github.com/GSA/idmanagement.gov/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+Enabling Enterprise trust of the FCPCA Root Certificate requires the following steps:
 
-# Step 1 - Prepare to Migrate
+1. [Obtain and verify the FCPCA Certificate](#step-1---obtain-and-verify-the-fcpca-root-certificate)
+1. [Distribute the certificate to operating systems](#step-2---distribute-to-operating-systems)
+1. [Verify operating system distribution](#step-3---verify-operating-system-distribution)
+1. [Distribute to applications](#step-4---distribute-to-applications)
+1. [Distribute intermediate certificates](#step-5---distribute-intermediate-certificates)
 
-Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
-- **ENG** - Information technology engineers and system administrators
-- **APP** - Application developers and owners
-- **PM** - Project managers
-- **CIO** - Chief information officers
-- **CSO** - Chief security officers
+This guide ends by presenting answers to [Frequently Asked Questions](#frequently-asked-questions)
 
-Agency staff are encouraged to participate in steps where their roles are listed in bold underlined font.
+{% include alert-info.html content='**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub](https://github.com/GSA/idmanagement.gov/issues/new){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
 
-## FCPCA G2 Migration Checklist	
+# Step 1 - Obtain and verify the FCPCA root certificate
 
-<table>
- <col width="400">
- <col width="200">
+The first step in this process is to obtain a copy of the FCPCA root certificate, and verify its authenticity.
 
- <tr>
-  <th colspan="2" style="background-color:#FFFFFF;font-size:20px;"><b>FCPCA G2 Migration Checklist	</b></th>
-  <th style="background-color:#FFFFFF;font-size:20px;" colspan="5"><b>Recommended Participants</b></th>
- </tr>
+## Download a Copy of the FCPCA root certificate
 
- <tr>
-  <td colspan="2" class="what"><b>1. Communicate upcoming changes across your enterprise</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td><b><u>CIO</u></b></td>
-  <td><b><u>CSO</u></b></td>
- </tr>
+To download a copy of the FCPCA root certificate, use one of these recommended options:
 
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Communicate with relevant stakeholders <strong>early and often</strong> to minimize migration issues.</li>
-	<li>Collaborate and coordinate with a variety of agency stakeholders, including but not limited to domain administrators, website and application administrators, mobile device management administrators. </li>
-	<li>Identify who you need to communicate with, and get started now!</li>
-  </ul>
-  </td>
-</tr>
+- Download the certificate from <http://repo.fpki.gov/fcpca/fcpcag2.crt>
+- Email <fpki-help@gsa.gov> to request an out-of-band copy for download.
 
-<tr>
-  <td colspan="2" class="what"><b>2. Inventory enterprise systems and applications</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td>CIO</td>
-  <td>CSO</td>
- </tr>
+{% include alert-warning.html content="_You should never install a root certificate before you verify it._ The procedures below describe how to verify the authenticity of your copy of the FCPCA root certificate. Your certificate details and hash must match the expected values in the following table." %}
 
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Inventory your agency's systems and applications.</li>
-	<li>Identify how you will deliver the updated FCPCA G2 CA certificate to affected systems or applications. For example, you might distribute the certificate through a Group Policy Object (GPO) or Mobile Device Management (MDM) tool.</li>
-  </ul>
-  </td>
-</tr>
-
- <tr>
-  <td colspan="2" class="what"><b>3. Create and execute a plan for certificate distribution</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td><b><u>CIO</u></b></td>
-  <td><b><u>CSO</u></b></td>
- </tr>
-
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Work with your colleagues to develop, execute, and test a plan to distribute the FCPCA G2 certificate (and, possibly, the CA certificates issued by the FCPCA G2) to affected operating systems and applications across your enterprise.</li>
-	<li>Communication is key! Collaborate with both colleagues and stakeholders across your agency.</li> 
-  </ul>
-  </td>
-</tr>
-
- <tr>
-  <td colspan="2" class="what"><b>4. Test, test, and test again</b></td>
-  <td><b><u>ENG</u></b></td>
-  <td><b><u>APP</u></b></td>
-  <td><b><u>PM</u></b></td>
-  <td><b><u>CIO</u></b></td>
-  <td><b><u>CSO</u></b></td>
- </tr>
-
-<tr>
-  <td colspan="7">
-  <ul>
-	<li>Follow your agency's established enterprise change management process(es). </li>
-	<li>Test the procedures recommended by this guide in a test environment, if possible, to verify the intended results prior to production implementation.</li>
-  </ul>
-  </td>
-</tr>
-
-</table>
-
-Next, obtain and verify the FCPCA G2.
-
-# Step 2 - Obtain and verify FCPCA G2
-
-To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all affected government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
-
-## Download a Copy of FCPCA G2
-
-To download a copy of FCPCA G2, use one of these recommended options:
-- Download the certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
-- Email fpki-help@gsa.gov to request an out-of-band copy for download.
-
-{% include alert-warning.html content="<b>You should never install a root certificate before you verify it.</b> The procedures below describe how to verify the authenticity of your copy of the FCPCA G2. Your certificate details and hash must match the expected values in the following table." %} 
-
-| **FCPCA G2**  | **Certificate Details**                             |
-| :--------  | :-------------------------------     |
-| Distinguished Name | cn=Federal Common Policy CA G2, ou=FPKI, o=U.S. Government, c=US |
+| **FCPCA**  | **Certificate Details** |
+| :--------  | :------- |
+| Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
 | Serial Number | 21e5b9a0cc956de278ca012ba8fdc58a98b3fbea |
 | SHA-1 Thumbprint | 99B4251E2EEE05D8292E8397A90165293D116028 |
 | SHA-256 Thumbprint | 5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC |
 
-## Verify Your Copy of FCPCA G2
+## Verify Your Copy of the FCPCA root certificate
 
-To verify your copy of FCPCA G2, use one of these options: 
+To verify your copy of the FCPCA root certificate, use one of these options:
 
 ### On Windows: Use Microsoft Certutil
+
 1. Click **Start**, type **cmd**, and press **Enter**.
 2. Run the following command:
-<br>
-    ```
-	   certutil -hashfile {DOWNLOAD_LOCATION}\fcpcag2.crt SHA256
+
+    ```bash
+    certutil -hashfile {DOWNLOAD_LOCATION}\fcpcag2.crt SHA256
     ```
 
-**Note:** The following .gif shows you how to verify your copy of FCPCA G2 on Microsoft Server 2016.
-<br>
-[![A gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+**Note:** The following video shows you how to verify your copy of the FCPCA root certificate on Microsoft Server 2016. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-<br>
+[![A video that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/assets/fpki/verify.gif){:style="width:100%;"}]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### On macOS: Use Terminal
+
 1. Click the **Spotlight** icon and search for _Terminal_.
 2. Double-click the **Terminal** icon (black monitor icon with white ">_") to open a window.
 3. Run the following command:
-<br>
-    ```
-	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpcag2.crt
+
+    ``` bash
+    shasum -a 256 {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
 
-**Note:** The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina (10.15).
-<br>
-[![The following gif shows you how to verify your copy of FCPCA G2 on macOS Catalina 10 point 15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
+**Note:** The following video shows you how to verify your copy of the FCPCA root certificate on macOS Catalina (10.15). [Click for a larger version]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+[![The following video shows you how to verify your copy of the FCPCA root certificate on macOS Catalina 10 point 15]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### On Linux/Unix: Use the Command Line
+
 1. Open the command line.
 2. Run the following command:
-<br>
+
+    ```bash
+    sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
-	$ sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
-    ```
 
-<br>
+After you have verified the certificate, you are ready to distribute the FCPCA root certificate certificate within your environment.
 
-Next, distribute the FCPCA G2 certificate as an operating system trusted root.
+- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems), or
+- you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
 
-# Step 3 - Distribute to operating systems
+# Step 2 - Distribute to operating systems
 
-To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of these options:
+To distribute the Federal Common Policy CA (FCPCA) certificate, use one of these options:
 
-## Microsoft Solutions
+## For Microsoft Windows
+
 - [Use Microsoft Certutil](#use-microsoft-certutil)
 - [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object-gpo)
 - [Use third-party configuration management tools](#use-third-party-configuration-management-tools)
 - [Use Microsoft Certificate Manager for unmanaged devices](#use-microsoft-certificate-manager-for-unmanaged-devices)
 
-## macOS Solutions
+## For macOS
+
 - [Use an Apple configuration profile](#create-distribute-and-install-an-apple-configuration-profile)
-- [Use the command line](#install-fcpca-g2-using-command-line)
-- [Use Apple Keychain](#install-fcpca-g2-using-apple-keychain-access)
+- [Use the command line](#install-fcpca-using-command-line)
+- [Use Apple Keychain](#install-fcpca-using-apple-keychain-access)
 
-## iOS Solutions
-- [Use an Apple configuration profile](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)
-- [Use the Safari Web Browser](#install-fcpca-g2-using-safari-web-browser)
-- [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2)
+## For iOS
 
-## Linux/Unix Solutions
+- [Use an Apple configuration profile](#install-fcpca-using-an-apple-configuration-profile-in-ios)
+- [Use the Safari Web Browser](#install-fcpca-using-safari-web-browser)
+- [Enable Full Trust for the FCPCA root certificate](#enable-full-trust-for-fcpca)
+
+## For Linux/Unix
+
 - [Use the command line](#linux-and-unix-solutions)
 
-<br>
-
----------------------------------------------------
+---
 
 ## Microsoft Solutions
 
-### Use Microsoft Certutil 
+### Use Microsoft Certutil
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the domain to use these procedures. The commands must be run from an agency domain controller." %}
 
 1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run the following command:
-    ```
-        certutil -dspublish -f [PATH\]fcpcag2.crt RootCA
-    ```
 
-1. To verify that FCPCA G2 was distributed, run the following commands:
-    ```
-        gpupdate /force
-        certutil -viewstore -enterprise
+    ```bash
+    certutil -dspublish -f [PATH\]fcpcag2.crt RootCA
     ```
 
-1. Confirm that the output details include FCPCA G2.
-2. Verify the certificate details against the [expected values](#step-2---obtain-and-verify-fcpca-g2) (for example, serial number, hash, etc.).
+1. To verify that the FCPCA root certificate was distributed, run the following commands:
 
+    ```bash
+    gpupdate /force
+    certutil -viewstore -enterprise
+    ```
 
-**Note:** The following .gif shows you how to distribute the FCPCA G2 using Microsoft Certutil.
-<br>[![A gif that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
+1. Confirm that the output details include the FCPCA root certificate.
+1. Verify the certificate details against the [expected values](#step-1---obtain-and-verify-the-fcpca-root-certificate) (for example, serial number, hash, etc.).
 
+**Note:** The following video shows you how to distribute the FCPCA root certificate using Microsoft Certutil. [Click for a larger version]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}.
+
+[![A video that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use Microsoft Group Policy Object (GPO)
 
@@ -268,24 +178,23 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 1. Right-click the newly created GPO and click **Edit**.
 1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
 1. Right-click **Trusted Root Certification Authorities**, and select **Import**.
-	
-	The Certificate Import Wizard appears. 
-	
-1. Browse to and select your copy of the FCPCA G2.
+
+    The Certificate Import Wizard appears.
+
+1. Browse to and select your copy of the FCPCA root certificate.
 1. Verify that the target **Certificate Store** presents **Trusted Root Certification Authorities**, and select **Next**.
 1. Select **Finish** to complete the import.
 
-	A success message appears.
-	
+    A success message appears.
+
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
-1. (*Optional*) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
-    ```
-          gpupdate /force
-    ```
+1. (_Optional_) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
 
-**Note:** The following .gif shows you how to distribute the FCPCA G2 with Microsoft GPO.
-<br>
+    gpupdate /force
+
+**Note:** The following video shows you how to distribute the FCPCA root certificate with Microsoft GPO. [Click for a larger version]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}.
+
 [![A gif that shows the distribution and verification steps performed with Microsoft Group Policy Object also known as GPO]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Use Third-Party Configuration Management Tools
@@ -294,267 +203,254 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 You can use third-party configuration management tools, such as BigFix.
 
-1. Using BigFix, schedule a task and push the certificate file. Run the following command (example): 
-    ```
-        certutil -f -addstore root “fcpcag2.crt”
+1. Using BigFix, schedule a task and push the certificate file. Run the following command (example):
+
+    ```bash
+    certutil -f -addstore root “fcpcag2.crt”
     ```
 
 ### Use Microsoft Certificate Manager for Unmanaged Devices
 
-To distribute the FCPCA G2 to unmanaged devices:
+To distribute the FCPCA root certificate to unmanaged devices:
 
 1. Click **Start**, type **certmgr.msc**, and  press **Enter**.
 1. Right-click **Trusted Root Certification Authorities**, and select **All Tasks** > **Import**.
+1. When the Certificate Import Wizard appears, browse to and select your copy of the FCPCA root certificate.
+1. Verify that the desired **Certificate Store** displays **Trusted Root Certification Authorities**, and select _Next_.
+1. Select _Finish_ to complete the import.
+1. A success message appears.
 
-	The Certificate Import Wizard appears. 
-	
-1. Browse to and select your copy of the FCPCA G2.
-1. Verify that the desired **Certificate Store** displays **Trusted Root Certification Authorities**, and select *Next*.
-1. Select *Finish* to complete the import.
-	
-	A success message appears.
+**Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately).
 
-> **Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately). 
-
-<br>
-
----------------------------------------------------
-
+---
 
 ## macOS Solutions
 
 ### Create, Distribute, and Install an Apple Configuration Profile
 
-For **macOS and [iOS](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple configuration profiles (XML files) to distribute and automatically install the FCPCA G2.  
+For **macOS and [iOS](#install-fcpca-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple configuration profiles (XML files) to distribute and automatically install the FCPCA root certificate.  
 
-These steps describe how to create, distribute, and install profiles using Apple’s free *Configurator 2* application. There are also available third-party applications.
+These steps describe how to create, distribute, and install profiles using Apple’s free _Configurator 2_ application. There are also available third-party applications.
 
-{% include alert-warning.html content="Only System or mobile device management (MDM) administrators should create, distribute, and install Apple configuration profiles." %} 
+{% include alert-warning.html content="Only System or mobile device management (MDM) administrators should create, distribute, and install Apple configuration profiles." %}
 
 ### Create an Apple Configuration Profile
 
-1. As an administrator, [download and verify](#step-2---obtain-and-verify-fcpca-g2) a copy of the FCPCA G2 to your device.   
-2. Download and install *Configurator 2* from the Apple App Store.
-3. Open *Configurator 2* and click **File** > **New Profile**.
-4. On the **General** tab, enter a unique profile **Name** (for example, *FCPCA G2 Profile*) and **Identifier** (for example, *FCPCAG2-0001*).
-5. On the **Certificates** tab, click **Configure**. 
-6. Browse to and select your verified copy of the FCPCA G2.
-7. (*Optional*) Add additional agency-specific configurations or customizations. 
-8. Click **File** > **Save** to save your profile to your preferred location. 
-9. [Distribute the profile across your enterprise](#distribute-an-apple-configuration-profile).
+1. As an administrator, [download and verify](#step-1---obtain-and-verify-the-fcpca-root-certificate) a copy of the FCPCA root certificate to your device.
+1. Download and install _Configurator 2_ from the Apple App Store.
+1. Open _Configurator 2_ and click **File** > **New Profile**.
+1. On the **General** tab, enter a unique profile **Name** (for example, _FCPCA Profile_) and **Identifier** (for example, _FCPCA-0001_).
+1. On the **Certificates** tab, click **Configure**.
+1. Browse to and select your verified copy of the FCPCA root certificate.
+1. (_Optional_) Add additional agency-specific configurations or customizations.
+1. Click **File** > **Save** to save your profile to your preferred location.
+1. [Distribute the profile across your enterprise](#distribute-an-apple-configuration-profile).
 
-**Note:** The following video shows you how to create an Apple configuration profile.
-<br>
+**Note:** The following video shows you how to create an Apple configuration profile. [Click for a larger version.]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
 [![A video that shows the steps to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+**APPLE CONFIGURATION PROFILE (EXAMPLE)**
+{:.text-center}
 
-<p align="center">
-<b>APPLE CONFIGURATION PROFILE (EXAMPLE)</b>
-</p>
+{% include alert-warning.html content="Before using this profile, you should verify that it is suitable for your agency." %}
 
-{% include alert-warning.html content="Before using this profile, you should verify that it is suitable for your agency." %} 
-
-To use this profile, copy the XML information and save it as a `.mobileconfig` file. 
+To use this profile, copy the XML information and save it as a `.mobileconfig` file.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>PayloadContent</key>
-	<array>
-		<dict>
-			<key>PayloadCertificateFileName</key>
-			<string>fcpcag2.crt</string>
-			<key>PayloadContent</key>
-			<data>
-			MIIF3TCCA8WgAwIBAgIUIeW5oMyVbeJ4ygErqP3Fipiz++owDQYJKoZIhvcNAQEM
-			BQAwXDELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
-			A1UECxMERlBLSTEkMCIGA1UEAxMbRmVkZXJhbCBDb21tb24gUG9saWN5IENBIEcy
-			MB4XDTIwMTAxNDEzMzUxMloXDTQwMTAxNDEzMzUxMlowXDELMAkGA1UEBhMCVVMx
-			GDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsGA1UECxMERlBLSTEkMCIGA1UE
-			AxMbRmVkZXJhbCBDb21tb24gUG9saWN5IENBIEcyMIICIjANBgkqhkiG9w0BAQEF
-			AAOCAg8AMIICCgKCAgEA19fTFzEmIRgQKkFty6+99sRRjCTYBYh7LloRpCZs4rgp
-			Bk+/5P4aZYd5v01GYBfOKywGJyFh4xk33/Q4yACoOT1uZOloNq/qhhT0r92UogKf
-			77n5JgMhvg/bThVB3lxxahZQMM0YqUhg1rtaKRKsXm0AplhalNT6c3mA3YDSt4+7
-			5i105oE3JbsFjDY5DtGMYB9JIhxobtWTSnhL5E5HzO0GVI9UvhWAPVAhxm8oT4wx
-			SOIjZ/MywXflfBrDktZu1PNsJkkYJpvFgDmSFuEPzivcOrytoPiPfgXMqY/P7zO4
-			opLrh2EV5yA4XYEdoyA2dVD8jmm+Lk7zgRFah/84P2guxNtWpZAtQ9Nsag4w4Emt
-			Rq82JLqZQlyrMbvLvhWFecEkyfDzwGkFRIOBn1IbUfKTtN5GWpndl8HCUPbR2i7h
-			pV9CFfkXTgsLGTwMNV2xPz2xThrLDu0jrDG+3/k42jB7KH3SQse72yo6MyNF46uu
-			mO7vORHlhOTVkWyxotBU327XZfq3BNupUDL6+R4dUG+pQADSstRJ60gePp0IAtQS
-			HZYd1iRiXKpTLl0kofB2Y3LgAFNdYmaHrbrid0dlKIs9QioDwjm+wrDLAmuT4bjL
-			ZePhc3qt8ubjhZN2Naz+4YP5+nfSPPClLiyM/UT2el7eY4l6OaqXMIRfJxNIHwcC
-			AwEAAaOBljCBkzAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNV
-			HQ4EFgQU9CdcqcN8R/T6pqewWZeq3TUmF+MwUQYIKwYBBQUHAQsERTBDMEEGCCsG
-			AQUFBzAFhjVodHRwOi8vcmVwby5mcGtpLmdvdi9mY3BjYS9jYUNlcnRzSXNzdWVk
-			QnlmY3BjYWcyLnA3YzANBgkqhkiG9w0BAQwFAAOCAgEAAWQ3MAzwzr3O1RSBkg06
-			NCj7eIL7/I5fwTBLhpoMhE0XoaoPUie0gqRo3KO2MhuBtacjy55ihIY87hShGoKQ
-			cbA1fh7e4Cly5QkOY+KbQsltkKzgod2zmPyC0bEOYD2LO141HyeDWdQ6dDXDz6dr
-			8ObntOfMzgdo7vodCMuKU8+ysTdxRxTCi6AVz3uqe5k+ObJYpC0aXHNMy1OnFgL6
-			oxMeGMlSecU/QUAIf0ncDurYFSctFwXitTC0CrcLO9/AGHqTFSHzUrIlbrgd/aGO
-			+E3o3QoU+ThCPPnu1K2KZLG4pyMqdBm4y7rVGPRikLmFhIv/b6b2CL8yiYL0+mJD
-			crTVs0PYfALtQxMpSA8n053gajlPwhG3O5jcL8SzqlaGPmGqpnEi9aWAYHJXTzbj
-			zGUAc2u8+Kw8Xv4JffhVWIxVKH4NS5PCtgXwxifgrmPi0/uU1w0crclEsSsya7FI
-			BVRTURoSwwda25wIIWPIkQsQK1snJxgEyUzXi10MUDR0WSDqQAdhbOLcmcyhED5h
-			phYQnf8sD8FpoUDjoLCPkU/ytfZoplmcBM4SQ4Ejgjyk63vMqBDcCMXTHciFTsV2
-			e+aReLvIvU4YmaBQQl3vCFj1qMPIkRsTby1Ff8hRDQG3kH0vefcVtcicsdU8kV2M
-			ee/xJ/c0cIHZWMw0HoRZPbo=
-			</data>
-			<key>PayloadDescription</key>
-			<string>Adds a CA root certificate</string>
-			<key>PayloadDisplayName</key>
-			<string>Federal Common Policy CA G2</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.security.root.1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
-			<key>PayloadType</key>
-			<string>com.apple.security.root</string>
-			<key>PayloadUUID</key>
-			<string>1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-		</dict>
-	</array>
-	<key>PayloadDisplayName</key>
-	<string>Federal Common Policy Certification Authority G2 Profile</string>
-	<key>PayloadIdentifier</key>
-	<string>FCPCAG2-0001</string>
-	<key>PayloadRemovalDisallowed</key>
-	<false/>
-	<key>PayloadType</key>
-	<string>Configuration</string>
-	<key>PayloadUUID</key>
-	<string>AAD17D9A-DA41-4197-9F0F-3C3C6B4512F9</string>
-	<key>PayloadVersion</key>
-	<integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadCertificateFileName</key>
+            <string>fcpcag2.crt</string>
+            <key>PayloadContent</key>
+            <data>
+            MIIF3TCCA8WgAwIBAgIUIeW5oMyVbeJ4ygErqP3Fipiz++owDQYJKoZIhvcNAQEM
+            BQAwXDELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+            A1UECxMERlBLSTEkMCIGA1UEAxMbRmVkZXJhbCBDb21tb24gUG9saWN5IENBIEcy
+            MB4XDTIwMTAxNDEzMzUxMloXDTQwMTAxNDEzMzUxMlowXDELMAkGA1UEBhMCVVMx
+            GDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsGA1UECxMERlBLSTEkMCIGA1UE
+            AxMbRmVkZXJhbCBDb21tb24gUG9saWN5IENBIEcyMIICIjANBgkqhkiG9w0BAQEF
+            AAOCAg8AMIICCgKCAgEA19fTFzEmIRgQKkFty6+99sRRjCTYBYh7LloRpCZs4rgp
+            Bk+/5P4aZYd5v01GYBfOKywGJyFh4xk33/Q4yACoOT1uZOloNq/qhhT0r92UogKf
+            77n5JgMhvg/bThVB3lxxahZQMM0YqUhg1rtaKRKsXm0AplhalNT6c3mA3YDSt4+7
+            5i105oE3JbsFjDY5DtGMYB9JIhxobtWTSnhL5E5HzO0GVI9UvhWAPVAhxm8oT4wx
+            SOIjZ/MywXflfBrDktZu1PNsJkkYJpvFgDmSFuEPzivcOrytoPiPfgXMqY/P7zO4
+            opLrh2EV5yA4XYEdoyA2dVD8jmm+Lk7zgRFah/84P2guxNtWpZAtQ9Nsag4w4Emt
+            Rq82JLqZQlyrMbvLvhWFecEkyfDzwGkFRIOBn1IbUfKTtN5GWpndl8HCUPbR2i7h
+            pV9CFfkXTgsLGTwMNV2xPz2xThrLDu0jrDG+3/k42jB7KH3SQse72yo6MyNF46uu
+            mO7vORHlhOTVkWyxotBU327XZfq3BNupUDL6+R4dUG+pQADSstRJ60gePp0IAtQS
+            HZYd1iRiXKpTLl0kofB2Y3LgAFNdYmaHrbrid0dlKIs9QioDwjm+wrDLAmuT4bjL
+            ZePhc3qt8ubjhZN2Naz+4YP5+nfSPPClLiyM/UT2el7eY4l6OaqXMIRfJxNIHwcC
+            AwEAAaOBljCBkzAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNV
+            HQ4EFgQU9CdcqcN8R/T6pqewWZeq3TUmF+MwUQYIKwYBBQUHAQsERTBDMEEGCCsG
+            AQUFBzAFhjVodHRwOi8vcmVwby5mcGtpLmdvdi9mY3BjYS9jYUNlcnRzSXNzdWVk
+            QnlmY3BjYWcyLnA3YzANBgkqhkiG9w0BAQwFAAOCAgEAAWQ3MAzwzr3O1RSBkg06
+            NCj7eIL7/I5fwTBLhpoMhE0XoaoPUie0gqRo3KO2MhuBtacjy55ihIY87hShGoKQ
+            cbA1fh7e4Cly5QkOY+KbQsltkKzgod2zmPyC0bEOYD2LO141HyeDWdQ6dDXDz6dr
+            8ObntOfMzgdo7vodCMuKU8+ysTdxRxTCi6AVz3uqe5k+ObJYpC0aXHNMy1OnFgL6
+            oxMeGMlSecU/QUAIf0ncDurYFSctFwXitTC0CrcLO9/AGHqTFSHzUrIlbrgd/aGO
+            +E3o3QoU+ThCPPnu1K2KZLG4pyMqdBm4y7rVGPRikLmFhIv/b6b2CL8yiYL0+mJD
+            crTVs0PYfALtQxMpSA8n053gajlPwhG3O5jcL8SzqlaGPmGqpnEi9aWAYHJXTzbj
+            zGUAc2u8+Kw8Xv4JffhVWIxVKH4NS5PCtgXwxifgrmPi0/uU1w0crclEsSsya7FI
+            BVRTURoSwwda25wIIWPIkQsQK1snJxgEyUzXi10MUDR0WSDqQAdhbOLcmcyhED5h
+            phYQnf8sD8FpoUDjoLCPkU/ytfZoplmcBM4SQ4Ejgjyk63vMqBDcCMXTHciFTsV2
+            e+aReLvIvU4YmaBQQl3vCFj1qMPIkRsTby1Ff8hRDQG3kH0vefcVtcicsdU8kV2M
+            ee/xJ/c0cIHZWMw0HoRZPbo=
+            </data>
+            <key>PayloadDescription</key>
+            <string>Adds a CA root certificate</string>
+            <key>PayloadDisplayName</key>
+            <string>Federal Common Policy CA</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.security.root.1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
+            <key>PayloadType</key>
+            <string>com.apple.security.root</string>
+            <key>PayloadUUID</key>
+            <string>1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Federal Common Policy Certification Authority Profile</string>
+    <key>PayloadIdentifier</key>
+    <string>FCPCA-0001</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>AAD17D9A-DA41-4197-9F0F-3C3C6B4512F9</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
 </dict>
 </plist>
-``` 
+```
 
 ### Distribute an Apple Configuration Profile
 
-{% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple configuration profile to someone outside your agency's domain." %} 
+{% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple configuration profile to someone outside your agency's domain." %}
 
-You can use Apple's _Configurator 2_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways: 
+You can use Apple's _Configurator 2_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways:
 
 - Physically connect to the user's device.
-- Email a profile to specific users.* 
+- Email a profile to specific users.*
 - Share a profile on an agency intranet webpage.*
 - [Share via over-the-air profile delivery and configuration (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Third-party applications are also available.
-> ***For iOS only**&nbsp;&mdash;&nbsp;If you download and install the FCPCA G2 from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA G2_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install the FCPCA G2. (See [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).)
+
+> ***For iOS only** -- If you download and install the FCPCA root certificate from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install the FCPCA root certificate. (See [Enable Full Trust for FCPCA](#enable-full-trust-for-fcpca).)
 
 ### Install an Apple Configuration Profile
 
-We recommend using an automated method to install Apple configuration profiles on government-furnished Apple devices (for example, a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpkirootupdate@gsa.gov.)
+We recommend using an automated method to install Apple configuration profiles on government-furnished Apple devices (for example, a desktop configuration management or MDM tool), which will distribute FCPCA. (If you have questions about third-party products, email us at <fpki@gsa.gov>.)
 
-You can also manually install a profile. 
+You can also manually install a profile.
 
-**Note:**&nbsp;&nbsp;The following video shows you how to manually install an Apple configuration profile on **macOS**.
-<br>
+**Note:**The following video shows you how to manually install an Apple configuration profile on **macOS**.
+
 [![A video that shows the steps to manually install an Apple configuration profile]({{site.baseurl}}/assets/fpki/manual_install_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/manual_install_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+### Install FCPCA Using Command Line
 
-### Install FCPCA G2 Using Command Line
+{% include alert-info.html content="These steps describe how to install the FCPCA root certificate in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
-{% include alert-info.html content="These steps describe how to install the FCPCA G2 in the System Keychain. You must have system administrator privileges to perform these steps." %}
+1. Click the **Spotlight** icon and search for _Terminal_.
+1. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
+1. Run the following command:
 
-1. Click the **Spotlight** icon and search for *Terminal*.
-2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
-3. Run the following command:
-
+    ```bash
+    sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
-	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpcag2.crt
-    ```
-    
-**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the command line.
-<br>
-[![A video that shows the steps to install FCPCA G2 using the macOS command line.]({{site.baseurl}}/assets/fpki/install_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+**Note:**The following video shows you how to install FCPCA using the command line. [Click for a larger version]({{site.baseurl}}/assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-### Install FCPCA G2 Using Apple Keychain Access
+[![A video that shows the steps to install FCPCA using the macOS command line.]({{site.baseurl}}/assets/fpki/install_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/install_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-You can use the System Keychain or Login Keychain to install the FCPCA G2.
+### Install FCPCA Using Apple Keychain Access
+
+You can use the System Keychain or Login Keychain to install the FCPCA root certificate.
 
 #### System Keychain
-{% include alert-info.html content="These steps describe how to install FCPCA G2 in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
-1. Click the **Spotlight** icon and search for *Keychain Access*.
-2. Double-click the **Keychain Access** icon to open the application.
-3. Click the *System* keychain from the left-hand navigation.
-4. Click **File** -> **Import Items**
-5. Browse to and select your verified copy of FCPCA G2.
-6. When prompted, enter your *administrator* username and password.
-7. Keychain Access will present the installed certificate.
+{% include alert-info.html content="These steps describe how to install FCPCA in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
-**Note:**&nbsp;&nbsp;The following video shows administrators how to install FCPCA G2 by using the Apple Keychain Access import process.
-<br>
-[![A video that shows the steps for administrators to install FCPCA G2 using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+1. Click the **Spotlight** icon and search for _Keychain Access_.
+1. Double-click the **Keychain Access** icon to open the application.
+1. Click the _System_ keychain from the left-hand navigation.
+1. Click **File** -> **Import Items**
+1. Browse to and select your verified copy of FCPCA.
+1. When prompted, enter your _administrator_ username and password.
+1. Keychain Access will present the installed certificate.
 
+**Note:**The following video shows administrators how to install FCPCA by using the Apple Keychain Access import process. [Click for a larger version]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+[![A video that shows the steps for administrators to install FCPCA using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Login Keychain
 
-{% include alert-info.html content="These steps describe how to install FCPCA G2 in the Login Keychain. Both system administrators and non-administrators can perform these steps." %}
+{% include alert-info.html content="These steps describe how to install FCPCA in the Login Keychain. Both system administrators and non-administrators can perform these steps." %}
 
-1. Browse to your downloaded, verified copy of FCPCA G2.
-2. Double-click the file.
+1. Browse to your downloaded, verified copy of FCPCA.
+1. Double-click the file.
+1. Keychain Access opens and displays the installed certificate.
 
-	Keychain Access opens and displays the installed certificate.
+**Note:**The following video shows non-administrators how to install FCPCA using the Apple Keychain Access import process. [Click for a larger version]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-**Note:**&nbsp;&nbsp;The following video shows non-administrators how to install FCPCA G2 using the Apple Keychain Access import process.
-<br>
-[![A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
+[![A video that shows the steps for non-administrators to install FCPCA using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
----------------------------------------------------
-
+---
 
 ## iOS Solutions
 
-### Install FCPCA G2 Using an Apple Configuration Profile in iOS
-You can use Apple configuration profiles to install the FCPCA G2 on both macOS and iOS devices. 
+### Install FCPCA Using an Apple Configuration Profile in iOS
+
+You can use Apple configuration profiles to install the FCPCA root certificate on both macOS and iOS devices.
 
 Review the [Apple configuration profiles](#install-an-apple-configuration-profile) guidance for instructions.
 
-### Install FCPCA G2 Using Safari Web Browser
-You can use the Safari web browser to install the FCPCA G2 on **iOS devices only**. 
+### Install FCPCA Using Safari Web Browser
 
-{% include alert-info.html content="These steps describe how to install the FCPCA G2 as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
+You can use the Safari web browser to install the FCPCA root certificate on **iOS devices only**.
+
+{% include alert-info.html content="These steps describe how to install the FCPCA root certificate as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
 
 1. Launch **Safari**.
-2. Navigate to the FCPCA G2 root CA certificate: http://repo.fpki.gov/fcpca/fcpcag2.crt.<br>
-> System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
-3. Click **Allow**.<br>
-> The FCPCA G2 configuration profile appears.<br> 
-4. Click **More Details**, and then select the FCPCA G2 certificate entry.
-5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-2---obtain-and-verify-fcpca-g2).
-6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
-7. When prompted, enter your device **passcode**.
-8. Click **Install** in the upper right corner, and **Install** again.
-9. Click **Done**.
-10. Follow the steps below to enable [full trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).
+1. Navigate to the FCPCA root CA certificate: <http://repo.fpki.gov/fcpca/fcpcag2.crt>.
+1. System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
+1. Click **Allow**. The FCPCA root certificate configuration profile appears.
+1. Click **More Details**, and then select the FCPCA certificate entry.
+1. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-the-fcpca-root-certificate).
+1. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
+1. When prompted, enter your device **passcode**.
+1. Click **Install** in the upper right corner, and **Install** again.
+1. Click **Done**.
+1. Follow the steps below to enable [full trust for FCPCA](#enable-full-trust-for-fcpca).
 
-**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the Safari web browser.
-<br>
-<a href="{{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif" height="600" alt="A video that shows the steps to install FCPCA G2 in the Safari web browser."></a>
+**Note:**The following video shows you how to install FCPCA using the Safari web browser. [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+[![A video that shows the steps to install FCPCA in the Safari web browser.]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-g2.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-### Enable Full Trust for FCPCA G2 
+### Enable Full Trust for FCPCA
+
 This option works for **iOS** devices only.
 
-{% include alert-info.html content="These steps describe how to enable “full trust” for certificates that chain to FCPCA G2. Both system administrators and non-administrators can perform these steps." %}
+{% include alert-info.html content="These steps describe how to enable “full trust” for certificates that chain to FCPCA. Both system administrators and non-administrators can perform these steps." %}
 
 1. On the iOS device's **Home** screen, select **Settings** > **General** > **About** > **Certificate Trust Settings**.
-2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA G2 root CA certificate entry. 
+2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA root CA certificate entry.
 3. When the certificate appears, click **Continue**.
 
-	You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
+You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
-<img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
+[![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:target="_blank"}{:rel="noopener noreferrer"}
 
-<br>
-
----------------------------------------------------
-
+---
 
 ## Linux and Unix Solutions
 
@@ -564,26 +460,22 @@ This option works for **iOS** devices only.
 
 1. Change directory with the following command:
 
-    ```
-        cd /usr/local/share/ca-certificates/
+    ``` bash
+    cd /usr/local/share/ca-certificates/
     ```
 
-1. Convert the FCPCAG2 certificate to PEM and set permissions with the following commands:
+1. Convert the FCPCA certificate to PEM and set permissions with the following commands:
 
-    ```
-        sudo openssl x509 -inform der -in [PATH\]fcpcag2.crt -out fcpcag2-pem.crt
-        sudo chmod 644 fcpcag2-pem.crt	
+    ``` bash
+    sudo openssl x509 -inform der -in [PATH\]fcpcag2.crt -out fcpcag2-pem.crt
+    sudo chmod 644 fcpcag2-pem.crt
     ```
 
 1. Update Trusted Certificates with the following command:
 
+    ``` bash
+    sudo update-ca-certificates
     ```
-        sudo update-ca-certificates
-    ```
-
-
-<br>
-
 
 ### Red Hat Enterprise Linux, CentOS, and Other Non-Debian-Based Kernels
 
@@ -591,257 +483,239 @@ This option works for **iOS** devices only.
 
 1. Change directory with the following command:
 
-    ```
-        cd /etc/pki/ca-trust/source/anchors/
+    ``` bash
+    cd /etc/pki/ca-trust/source/anchors/
     ```
 
-1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
+1. Copy your verified copy of FCPCA into the folder and set permissions with the following commands:
 
-    ```
-        sudo cp [PATH\]fcpcag2.crt .
-        sudo chown root.root fcpcag2.crt
-        sudo chmod 644 fcpcag2.crt
+    ``` bash
+    sudo cp [PATH\]fcpcag2.crt .
+    sudo chown root.root fcpcag2.crt
+    sudo chmod 644 fcpcag2.crt
     ```
 
 1. Update Trusted Certificates with the following command:
 
+    ``` bash
+    sudo /bin/update-ca-trust extract
     ```
-        sudo /bin/update-ca-trust extract
-    ```
 
-<br>
+Next, verify distribution of the FCPCA certificate as an operating system trusted root.
 
+# Step 3 - Verify operating system distribution
 
+To verify that the Federal Common Policy CA (FCPCA) certificate has been distributed to your agency's workstations and devices, use one of these options:
 
-Next, verify distribution of the FCPCA G2 certificate as an operating system trusted root.
+## Verifying - Microsoft Windows
 
-# Step 4 - Verify operating system distribution
-
-To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been distributed to your agency's workstations and devices, use one of these options:
-
-### Microsoft Solutions
-- **Automated Solutions (*Recommended*)**
-     - [Use BigFix](#use-bigfix)
-     - [Use LANDesk 2016](#use-landesk-2016)
+- **Automated Solutions (_Recommended_)**
+  - [Use BigFix](#use-bigfix)
+  - [Use LANDesk 2016](#use-landesk-2016)
 - **Manual Solutions**
-     - [Use Microsoft Certificate Manager](#use-microsoft-certificate-manager)
-     - [Use Microsoft Registry Editor](#use-microsoft-registry-editor)
+  - [Use Microsoft Certificate Manager](#use-microsoft-certificate-manager)
+  - [Use Microsoft Registry Editor](#use-microsoft-registry-editor)
 
-### macOS Solutions
+## macOS
+
 - [Use Keychain Access](#use-keychain-access)
 
-### iOS Solutions
+## iOS
+
 - [Use Settings](#use-settings)
-	 
-### Linux/Unix Solutions
+
+## Linux/Unix
+
 - [Use the Command Line](#use-the-command-line)
 
-<br>
+---
 
----------------------------------------------------
-
-## Microsoft Solutions 
+## Verifying on Microsoft Windows
 
 ### Use BigFix
 
-1. Download the BigFix Enterprise Suite (.bes) analysis file: [*FPKIRootG2Detection.bes*]({{site.baseurl}}/implement/FPKIRootG2Detection.bes){:target="_blank"}{:rel="noopener noreferrer"}.
+1. Download the BigFix Enterprise Suite (.bes) analysis file: [_FPKIRootG2Detection.bes_]({{site.baseurl}}/implement/FPKIRootG2Detection.bes){:target="_blank"}{:rel="noopener noreferrer"}.
+1. Use Certutil or another tool to verify the .bes file's SHA-256 hash (_required_):
 
-2. Use Certutil or another tool to verify the .bes file's SHA-256 hash (*required*):
-
-    ```
-          certutil -hashfile [DOWNLOAD_LOCATION]\FPKIRootDetection.bes SHA256
-    ```
-    
-3. The file's hash must match this one:
-
-    ```
-          03bca16f7d21be344d954105b5ccb3caf578588cf6b8bd6f1cd03dfe298361bb
+    ``` bash
+    certutil -hashfile [DOWNLOAD_LOCATION]\FPKIRootDetection.bes SHA256
     ```
 
-4. Log into *BigFix*:&nbsp;&nbsp;**Start** > **IBM BigFix** > **IBM BigFix Console**.
-5. Import the *FPKIRootG2Detection.bes* file:&nbsp;&nbsp;**File** > **Import** > **Open**.
+1. The file's hash must match this one:
 
-	The **Create Analysis** window appears.
-	
-6. Assign the file:&nbsp;&nbsp;for **Create in site**, select *site name*, and for **Create in domain**, select *domain name*. Click **Okay**.
-7. On the left side panel, click **Analyses** to see a list of imported analysis files.
-8. Click *Federal Common Policy CA G2 Distribution Detection* (i.e., *FPKIRootG2Detection.bes*) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**. 
-9. For each workstation or device listed, "*Has FCPCA G2 Been Distributed?*" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at fpkirootupdate@gsa.gov.<br><br /> 
-<img src="{{site.baseurl}}/assets/fpki/bigfix-results.jpg" alt="Sample Output." width="504" height="218">   
+    ``` bash
+    03bca16f7d21be344d954105b5ccb3caf578588cf6b8bd6f1cd03dfe298361bb
+    ```
+
+1. Log into _BigFix_:**Start** > **IBM BigFix** > **IBM BigFix Console**.
+1. Import the _FPKIRootG2Detection.bes_ file:**File** > **Import** > **Open**. The **Create Analysis** window appears.
+1. Assign the file:for **Create in site**, select _site name_, and for **Create in domain**, select _domain name_. Click **Okay**.
+1. On the left side panel, click **Analyses** to see a list of imported analysis files.
+1. Click _Federal Common Policy CA Distribution Detection_ (i.e., _FPKIRootG2Detection.bes_) and click the **Results** tab to see the distribution analysis. If the analysis was not activated _by default_, right-click the file and then click **Activate Globally**.
+1. For each workstation or device listed, "_Has FCPCA Been Distributed?_" should say **True**. If **False**, you'll need to investigate the cause of the failure. If you can't find a cause, please contact us at <fpkirootupdate@gsa.gov>.
+
+![Sample Output]({{site.baseurl}}/assets/fpki/bigfix-results.jpg){:style="width:504px;"}
 
 ### Use LANDesk 2016
 
-1. Open *LANDesk 2016*:&nbsp;&nbsp;**Start** > **LANDesk Management** > **Desktop Manager**.
-2. Create a custom registry data item:&nbsp;&nbsp;**Tools** > **Reporting/Monitoring** > **Manage software list**.
-3. Expand **Custom Data**, and click **Registry items**.
-4. Click **Add** to add a new registry item.
-5. Add the data shown below for Windows 32-bit or 64-bit versions, based on GPO or Certutil distribution of FCPCA G2.
-	
-	**Microsoft Windows 32-bit Versions**
-	- GPO Distribution
-	```
-		Root Key: HKLM
-		Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-		Value: BLOB
-		Attribute Name: Custom Data – FCPCAG2Win32 GPO – Certificate
-	```
-	- Certutil Distribution
-	```
-		Root Key: HKLM
-		Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-		Value: BLOB
-		Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
-	```
-	
-	**Microsoft Windows 64-bit Versions**
-	- GPO Distribution
-	```
-		Root Key: HKLM
-		Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-		Value: BLOB
-		Attribute Name: Custom Data – FCPCAG2Win64 GPO - Certificate
-	```
-	- Certutil Distribution
-	```
-		Root Key: HKLM
-		Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-		Value: BLOB
-		Attribute Name: Custom Data – FCPCAG2Win64 certutil - Certificate
-	```
+1. Open _LANDesk 2016_:**Start** > **LANDesk Management** > **Desktop Manager**.
+1. Create a custom registry data item:**Tools** > **Reporting/Monitoring** > **Manage software list**.
+1. Expand **Custom Data**, and click **Registry items**.
+1. Click **Add** to add a new registry item.
+1. Add the data shown below for Windows 32-bit or 64-bit versions, based on GPO or Certutil distribution of FCPCA.
 
-6. Create a query for the registry item:&nbsp;&nbsp;on the left side panel, expand **Network View**, and click **Queries**. 
-7. Right-click **My Queries**, select **New Query**, and enter a *query name* (e.g., *FCPCA G2 Verification: Win32 Machines*).
-8. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
-9. For **Boolean**, select **Exists**.
-10. For **Displayed Scanned Values**, click **Insert** and add the *BLOB* value from above.
-11. Double-click the *new query name* to verify FCPCA G2 distribution. The results will be similar to these:<br><br />
-    <img src="{{site.baseurl}}/assets/fpki/landesk-results.jpg" alt="Sample Output." width="504" height="35">
+    - **Microsoft Windows 32-bit Versions**
+
+        - GPO Distribution
+
+        ``` bash
+        Root Key: HKLM
+        Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAWin32 GPO – Certificate
+        ```
+
+        - Certutil Distribution
+
+        ``` bash
+        Root Key: HKLM
+        Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAWin32 certutil – Certificate
+        ```
+
+    - **Microsoft Windows 64-bit Versions**
+
+        - GPO Distribution
+
+        ``` bash
+        Root Key: HKLM
+        Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAWin64 GPO - Certificate
+        ```
+
+        - Certutil Distribution
+
+        ``` bash
+        Root Key: HKLM
+        Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+        Value: BLOB
+        Attribute Name: Custom Data – FCPCAWin64 certutil - Certificate
+        ```
+
+1. Create a query for the registry item:on the left side panel, expand **Network View**, and click **Queries**.
+1. Right-click **My Queries**, select **New Query**, and enter a _query name_ (e.g., _FCPCA Verification: Win32 Machines_).
+1. Under **Machine Component**, expand **Computer**, click **Custom Data**, and select the registry item.
+1. For **Boolean**, select **Exists**.
+1. For **Displayed Scanned Values**, click **Insert** and add the _BLOB_ value from above.
+1. Double-click the _new query name_ to verify FCPCA distribution. The results will be similar to these ([Click for a larger version]({{site.baseurl}}/assets/fpki/landesk-results.jpg){:target="_blank"}{:rel="noopener noreferrer"}):
+
+![Sample Output]({{site.baseurl}}/assets/fpki/landesk-results.jpg){:style="width:504px;"}
 
 ### Use Microsoft Certificate Manager
 
-1. Open *Microsoft Certificate Manager*:&nbsp;&nbsp;**Start**; then type **certlm.msc** and press **Enter**.
-2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of *ALL* and a **Friendly Name** of *None*, as shown here:<br><br />
-    <img src="{{site.baseurl}}/assets/fpki/verify_trust.png" alt="Trusted Root CA Certificates List." width="504" height="253">
-    
+1. Open _Microsoft Certificate Manager_:**Start**; then type **certlm.msc** and press **Enter**.
+2. Go to **Trusted Root Certification Authorities** > **Certificates**. To see whether FCPCA was successfully distributed, look for _Federal Common Policy CA_ shown with **Intended Purposes** of _ALL_ and a **Friendly Name** of _None_, as shown here ([Click for a larger version]({{site.baseurl}}/assets/fpki/verify_trust.png){:target="_blank"}{:rel="noopener noreferrer"}):
+
+![Trusted Root CA Certificates List]({{site.baseurl}}/assets/fpki/verify_trust.png){:style="width:504px;"}
 
 ***Optional:***
 
-1. Open *Microsoft Certificate Manager*:&nbsp;&nbsp;**Start**; then type **certlm.msc** and press **Enter**.
-2. Select **Trusted Root Certification Authorities** from the left side panel, then select **View** > **Options**.
-3. In the **View Options** box, select the **Physical certificate stores** checkbox. 
-4. On the left side panel, click the **>** icon next to **Trusted Root Certification Authorities** to see the subdirectories.
-5. Verify the distribution of FCPCA G2:<br />
-     - For Certutil-distributed copies of FCPCA G2, click **Enterprise** > **Certificates**. *FCPCA G2 should appear in the certificates list.*<br>
-     - For GPO-distributed copies of FCPCA G2, click **Group Policy** > **Certificates**. *FCPCA G2 should appear in the certificates list.*
+1. Open _Microsoft Certificate Manager_: **Start**; then type **certlm.msc** and press **Enter**.
+1. Select **Trusted Root Certification Authorities** from the left side panel, then select **View** > **Options**.
+1. In the **View Options** box, select the **Physical certificate stores** checkbox.
+1. On the left side panel, click the **>** icon next to **Trusted Root Certification Authorities** to see the subdirectories.
+1. Verify the distribution of FCPCA:
+     - For Certutil-distributed copies of FCPCA, click **Enterprise** > **Certificates**. *FCPCA should appear in the certificates list.*
+     - For GPO-distributed copies of FCPCA, click **Group Policy** > **Certificates**. *FCPCA should appear in the certificates list.*
 
 ### Use Microsoft Registry Editor
 
-1. Verify that FCPCA G2 has been distributed to a specific workstation or device:&nbsp;&nbsp;open the *Microsoft Registry Editor*:&nbsp;&nbsp;**Start**; type **regedit.exe** and press **Enter**.
-2. The following registry keys will appear for GPO- or Certutil-distributed copies of FCPCA G2: 
+1. Verify that FCPCA has been distributed to a specific workstation or device:open the _Microsoft Registry Editor_:**Start**; type **regedit.exe** and press **Enter**.
+2. The following registry keys will appear for GPO- or Certutil-distributed copies of FCPCA:
 
-#### GPO-distributed FCPCA G2: 
-	- HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-	- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\ 
+#### GPO-distributed FCPCA
 
-#### Certutil-distributed FCPCA G2: 
-	- HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
-	- HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+``` bash
+HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+```
 
-<br>
+#### Certutil-distributed FCPCA
 
---------------------------
+``` bash
+HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
+```
 
-## macOS Solutions 
+---
+
+## Verifying - macOS
 
 ### Use Keychain Access
 
-1. Click the **Spotlight** icon and search for *Keychain Access*.
+1. Click the **Spotlight** icon and search for _Keychain Access_.
+1. Double-click the **Keychain Access** icon.
+1. Ensure that an entry for FCPCA exists in the **login** or **System** Keychain Certificates repository. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify_common_macOS.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-2. Double-click the **Keychain Access** icon.
+![Verify Common on MacOS]({{site.baseurl}}/assets/fpki/verify_common_macOS.png){:style="width:476px;"}
 
-3. Ensure that an entry for FCPCA G2 exists in the **login** or **System** Keychain Certificates repository.
+---
 
-<img src="{{site.baseurl}}/assets/fpki/verify_common_macOS.png" alt="verify_common_macOS." width="476" height="284">
-
-<br>
-
---------------------------
-
-## iOS Solutions 
+## Verifying - iOS
 
 ### Use Settings
 
 1. Select **Settings** > **About** > **Certificate Trust Settings**.
-     
-2. Verify that _Federal Common Policy CA G2_ has full trust enabled.
+1. Verify that _Federal Common Policy CA_ has full trust enabled.
 
-<img src="{{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg" width="300" alt="iOS full trust">
+![iOS full trust]({{site.baseurl}}/assets/fpki/ios_full_trust-g2.jpg){:style="width:300px;"}
 
-<br>
+---
 
---------------------------
+## Verifying - Linux and Unix
 
-## Linux and Unix Solutions
+### Use the Command Line
 
-### Debian-based kernels
-
-#### Use the Command Line
 1. Launch the command line.
-	
-2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
-   
-   ```
-        trust list | grep "Federal Common Policy CA G2"
-   ```
 
-<br>
+2. Run the following command to verify the Federal Common Policy CA has an entry in the system's trust list:
 
-### Red Hat Enterprise Linux, CentOS, and other non-Debian-based kernels
+``` bash
+    trust list | grep "Federal Common Policy CA"
+```
 
-#### Use the Command Line
-1. Launch the command line.
-	
-2. Run the following command to verify the Federal Common Policy CA G2 has an entry in the system's trust list:
-   
-   ```
-        trust list | grep "Federal Common Policy CA G2"
-   ```
+Next, distribute the FCPCA certificate to application trust stores.
 
-<br>
+# Step 4 - Distribute to applications
 
-Next, distribute the FCPCA G2 certificate to application trust stores.
+Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/university/fpki#fpki-third-party-trust) to verify whether a certificate should be trusted.
 
-
-# Step 5 - Distribute to applications
-
-Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/university/fpki#fpki-third-party-trust) to verify whether a certificate should be trusted. 
-
-Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the Federal Common Policy CA (FCPCA) G2 certificate.
+Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the Federal Common Policy CA (FCPCA) certificate.
 
 **Example applications with custom trust stores:**
+
 - Java and all Java-based applications (for example, Apache Tomcat)
-- Mozilla products (for example, [Firefox](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca-g2){:target="_blank"}{:rel="noopener noreferrer"} or Thunderbird)
+- Mozilla products (for example, [Firefox](#how-do-i-configure-the-firefox-web-browser-to-trust-the-new-federal-common-policy-ca) or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
-<br>
+Next, determine if you need to distribute the CA certificates issued by the FCPCA root certificate.
 
-Next, determine if you need to distribute the CA certificates issued by the FCPCA G2.
+# Step 5 - Distribute intermediate certificates
 
-# Step 6 - Distribute intermediate certificates
-
-{% include alert-success.html content="<b>Depending on agency configurations, you might need to distribute these certificates to systems and applications</b>.  <br><br>This page will help you understand <a href=\"#do-i-need-to-distribute-the-intermediate-ca-certificates\">when to distribute the intermediate CA certificates</a>, <a class=\"usa-link usa-link--external\" href=\"#which-certificates-do-i-need-to-distribute\">which certificates to distribute</a>, and <a href=\"#how-do-i-distribute-the-intermediate-ca-certificates\">recommended solutions</a>.  This page also lists <a class=\"usa-link usa-link--external\"  href=\"#certificates-issued-by-the-federal-common-policy-ca-g2
-\">intermediate CA certificate details</a>, including download locations." %}
+{% include alert-success.html content="**Depending on agency configurations, you might need to distribute these certificates to systems and applications**.  This page will help you understand [when to distribute the intermediate CA certificates](#do-i-need-to-distribute-the-intermediate-ca-certificates), [which certificates to distribute](#which-certificates-do-i-need-to-distribute), and [recommended solutions](#how-do-i-distribute-the-intermediate-ca-certificates).  This page also lists [intermediate CA certificate details](#certificates-issued-by-the-federal-common-policy-ca), including download locations." %}
 
 ## Do I Need to Distribute the Intermediate CA Certificates?
 
 ### Operating Systems
 
-You might need to distribute the [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2), depending upon your enterprise operating systems' type and configuration.
+You might need to distribute the [intermediate CA certificates issued by the FCPCA root certificate](#certificates-issued-by-the-federal-common-policy-ca), depending upon your enterprise operating systems' type and configuration.
 
 - **Microsoft Windows**: Intermediate CA certificate distribution is **recommended**.
-     - Typically, Windows clients are able to dynamically build paths to a trusted root CA certificate through Microsoft's Certificate Chaining Engine (CCE).  
-     - Distributing the intermediate CA certificates improves system performance and prioritizes use of the FCPCA G2 over the FCPCA.
-     - There are instances where dynamic validation can fail, for example, when firewall rules prevent Microsoft from navigating to a certificate's Authority Information Access extension Uniform Resource Locator.  Email us at fpkirootupdate@gsa.gov with any questions or issues.
+  - Typically, Windows clients are able to dynamically build paths to a trusted root CA certificate through Microsoft's Certificate Chaining Engine (CCE).  
+  - Distributing the intermediate CA certificates improves system performance and prioritizes use of the FCPCA root certificate.
+  - There are instances where dynamic validation can fail, for example, when firewall rules prevent Microsoft from navigating to a certificate's Authority Information Access extension Uniform Resource Locator.  Email us at <fpki@gsa.gov> with any questions or issues.
 
 - **macOS or iOS**: Intermediate CA certificate distribution is **required**.
 
@@ -851,20 +725,21 @@ You might need to distribute the [intermediate CA certificates issued by the FCP
 
 Many, but not all, software applications leverage the underlying operating system trust store to verify whether a certificate should be trusted.
 
-Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the intermediate CA certificates issued by the FCPCA G2.
+Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the intermediate CA certificates issued by the FCPCA root certificate.
 
 Example applications with custom trust stores that may require intermediate CA certificate installation:
+
 - Java and all Java-based applications (for example, Apache Tomcat)
 - Mozilla products (for example, Firefox or Thunderbird)
 - OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
 
 ## Which Certificates Do I Need to Distribute?
 
-Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency. 
+Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency.
 
-A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy G2. 
+A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead of distributing the new certificates issued by the Federal Common Policy CA.
 
-If you're not sure which [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you need to distribute, consider distributing all of them or email us for help at fpkirootupdate@gsa.gov.
+If you're not sure which [intermediate CA certificates issued by the FCPCA](#certificates-issued-by-the-federal-common-policy-ca) you need to distribute, consider distributing all of them or email us for help at <fpki@gsa.gov>.
 
 ## How Do I Distribute the Intermediate CA Certificates?
 
@@ -882,77 +757,65 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 1. Right-click the newly created GPO and click **Edit**.
 1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
 1. Right-click **Intermediate Certification Authorities**, and select **Import**.
-
-	The Certificate Import Wizard appears
-
-1. Browse to and select the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.
+1. The Certificate Import Wizard appears
+1. Browse to and select the certificates [issued by the FCPCA](#certificates-issued-by-the-federal-common-policy-ca) that you want to distribute.
 1. Verify that the target **Certificate Store** presents **Intermediate Certification Authorities**, and select **Next**.
-1. Select **Finish** to complete the import. 
-
-	A success message appears.
-
+1. Select **Finish** to complete the import.
+1. A success message appears.
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
-1. (*Optional*) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
-    ```
-          gpupdate /force
-    ```
+1. (_Optional_) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
 
-<br>
+    ```bash
+    gpupdate /force
+    ```
 
 ### Use Apple Configuration Profile
 
-{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %} 
+{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %}
 
-#### Create an Apple Configuration Profile
+#### Distribute Intermediate CA certificates with an Apple Configuration Profile
 
-1. As an administrator, download and verify the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
-2. Download and install *Configurator 2* from the Apple App Store.
-3. Open *Configurator 2* and click **File** > **New Profile**.
-4. On the **General** tab, enter a unique profile **Name** (for example, *FPKI Intermediate CA Certificate Distribution Profile*) and **Identifier** (for example, *FCPCAG2-Intermediate-0001*).
+1. As an administrator, download and verify the certificates [issued by the FCPCA](#certificates-issued-by-the-federal-common-policy-ca) that you want to distribute.
+2. Download and install _Configurator 2_ from the Apple App Store.
+3. Open _Configurator 2_ and click **File** > **New Profile**.
+4. On the **General** tab, enter a unique profile **Name** (for example, _FPKI Intermediate CA Certificate Distribution Profile_) and **Identifier** (for example, _FCPCA-Intermediate-0001_).
 5. On the **Certificates** tab, click **Configure**.
 6. Browse to and select the certificates you want to distribute.
-7. (*Optional*) Add additional agency-specific configurations or customizations. 
-8. Click **File** > **Save** to save your profile to your preferred location. 
+7. (_Optional_) Add additional agency-specific configurations or customizations.
+8. Click **File** > **Save** to save your profile to your preferred location.
 9. Follow the steps to [distribute](#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
 
-**Note:**&nbsp;&nbsp;The following video shows you how to create an Apple configuration profile. 
+**Note:**The following video shows you how to create an Apple configuration profile. [Click for a larger version]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-<br>
 [![The following video shows you how to create an Apple configuration profile.]({{site.baseurl}}/assets/fpki/create_profile.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/create_profile.gif){:target="_blank"}{:rel="noopener noreferrer"}
-
 
 ### Use Linux Command Line
 
 The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate](#linux-and-unix-solutions).
 
-<br>
+---
 
----------------------------------------------------
+### Certificates Issued By the Federal Common Policy CA
 
-<br>
+The following certificates are published in the Federal Common Policy CA certificate's Subject Information Access extension bundle located at <http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c>.
 
-### Certificates Issued By the Federal Common Policy CA G2
+- [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
+- [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
+- [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
+- [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
+- [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
+- [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
+- [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
+- [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
+- [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 
-The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
-
-  - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
-  - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
-  - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
-  - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
-  - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
-  - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
-  - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
-  - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
-  - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
-
-{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation. Learn more on our <a href=\"#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2\">Frequently Asked Questions</a> page." %}
-
+{% include alert-warning.html content="**Important!** To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions) page." %}
 
 #### Issued to: Federal Bridge CA G4
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
 | Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
 | Validity | October 15, 2020 to December 6, 2029 |
 | Serial Number | 234200beaa6dada658f53b403f418295290cae82  |
@@ -962,9 +825,9 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: U.S. Department of State AD Root CA
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services,<br> CN=Services, CN=Configuration, DC=state, DC=sbu |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 18, 2020 to November 18, 2023 |
 | Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
 | SHA-1 Thumbprint | 9b3849f7047964a6654988054956e478ccb75ded |
@@ -973,9 +836,9 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: US Treasury Root CA
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | April 6, 2022 to April 6, 2025 |
 | Serial Number | 279f09737fe5dd3d7534be0ea51aff9dc4018501 |
 | SHA-1 Thumbprint | 52de6628d8c70a9df9e1df94fcd84728b33c05ec |
@@ -984,19 +847,30 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
-| Validity | November 18, 2020 to December 13, 2028 |
-| Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
+| Validity | March 16, 2022 to March 16, 2032 |
+| Serial Number | 231eb3199085ee8187df5c7a598ef336b356092f |
 | SHA-1 Thumbprint | 9aecfbe2de8aea49d220bbf799172c00527fe756 |
 | SHA-256 Thumbprint | ea86e0baf55eef020ed58196af865f2fa72a77d1be70a779b65a9cbf0b5ee3f2 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/DigiCert_Federal_SSP_Intermediate_CA_-_G5.cer)|
 
+#### Issued to: DigiCert Federal SSP Intermediate CA - G6
+
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G6, O=DigiCert, Inc., C=US |
+| Validity | November 18, 2020 to December 13, 2028 |
+| Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
+| SHA-1 Thumbprint | 806b3aa2dbeb6a097bf07920bb77bb1eb9fbb2dd |
+| SHA-256 Thumbprint | ac309ffef2da64de1a360c3194b9b78bcdb65dc4863f02c4fa2797f9d71a773b |
+| Download Location | Click [here]({{site.baseurl}}/implement/certs/DigiCert_Federal_SSP_Intermediate_CA_-_G6.cer)|
+
 #### Issued to: Symantec SSP Intermediate CA - G4
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
 | Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
 | Validity | November 18, 2020 to November 12, 2024 |
 | Serial Number | 262bd1f025c8af37334545666ea6c9ea946c2c34 |
@@ -1006,9 +880,9 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: Entrust Managed Services Root CA
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | November 18, 2020 to August 14, 2029 |
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
 | SHA-1 Thumbprint | 07f5dc58f83778d5b5738a988292c00a674a0f40 |
@@ -1017,8 +891,8 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: Verizon SSP CA A2
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
 | Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
 | Validity | November 18, 2020 to December 6, 2026 |
 | Serial Number | 25fca834ada24a4455a2db0ff4cef7c411198e3a |
@@ -1028,8 +902,8 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: ORC SSP 4
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
 | Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
 | Validity | November 18, 2020 to January 21, 2024 |
 | Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
@@ -1039,8 +913,8 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 #### Issued to: WidePoint ORC SSP CA 5
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
 | Validity | November 19, 2020 to November 5, 2030  |
 | Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
@@ -1048,209 +922,22 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | SHA-256 Thumbprint | 70200179049bdc8cbe94b4880730609489f324f2a770477f7c1859401e644c72 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/WidePoint_ORC_SSP_5.cer)|
 
-<br>
+### Certificates issued to the Federal Common Policy CA
 
-### Certificates issued to the Federal Common Policy CA G2
-
-Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.  For more on how to distrust a certificate, [go to Step 7](#step-7---distrut-old-root-and-verify).
+Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.
 
 #### Issued by: Federal Bridge CA G4
 
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US |
 | Validity | October 15, 2020 to December 6, 2029  |
 | Serial Number | 129217e6c9126fd816babe02d9192ae2b519e231 |
 | SHA-1 Thumbprint | edf2d373f4c56b5186087300638e3c5660c9a090 |
 | SHA-256 Thumbprint | 0b658c27727dfd6cd47e378ae2390ea376d9708ecf4b06775f8ee7bc50119991 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Federal_Common_Policy_CA_G2_from_FBCAG4.cer)|
 
-<br>
-
-Next, migrate to the FCPCA G2.
-
-# Step 7 - Distrust old root and verify
-
-For the purpose of these steps, we refer to the existing Federal Common Policy CA (FCPCA) as *FCPCA G1*.
-
-To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal trust anchor, you'll need to:
-1. [**disable enterprise distribution**](#disable-distribution-of-the-fcpca-g1) of the FCPCA G1 as a _trusted root_ CA certificate, and
-2. [**distrust**](#distrust-the-fcpca-g1) the FCPCA G1.
-
-{% include alert-warning.html content="<strong>Heads up!</strong> Test the following steps in a controlled environment <strong>before</strong> you deploy them across your enterprise. If you do not successfully distribute the FCPCA G2 certificate before you begin these steps, you may cause a <strong>denial-of-service</strong>, impacting smart card logon for your applications and systems." %}
-
-**FCPCA G1 certificate details**
-
-| **FCPCA G1**  | **Certificate Details**                             |
-| :--------  | :-------------------------------     |
-| Federal Common Policy CA<br>(sometimes shown as *U.S. Government Common Policy*) | http://http.fpki.gov/fcpca/fcpca.crt |
-| Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
-| Serial Number | 0130 |
-| SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
-| SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
-
-
-## Disable Distribution of the FCPCA G1
-
-Reference the distribution mechanisms [here](#step-3---distribute-to-operating-systems) to review the ways the FCPCA certificate **could** be distributed across your enterprise. Disable all existing distribution mechanisms. Sample procedures to disable the distribution of the FCPCA G1 are listed below using:
-
-- [Microsoft Certutil](#if-the-fcpca-was-distributed-using-microsoft-certutil)
-- [Microsoft Group Policy Object (GPO)](#if-the-fcpca-was-distributed-using-a-microsoft-gpo)
-- [Apple configuration profile (macOS or iOS)](#if-the-fcpca-was-distributed-using-an-apple-configuration-profile)
-
-<br>
-
-### If the FCPCA Was Distributed Using Microsoft Certutil
-{% include alert-warning.html content="You must have enterprise administrator privileges for the domain to perform these steps. You must run these commands from an agency domain controller." %}
-
-1. Navigate to **Server Manager**.
-1. Select **Tools**.
-1. In the drop-down list, select **ADSI Edit**.
-1. In the top navication, select **Action > Connect to** .
-1. In the **Select a well known Naming Context** drop-down list, select **Configuration**, and click **OK**.
-1. Browse to the **CN=AIA** directory (within "CN=Public Key Services, CN=Services"), right-click the entry for the FCPCA, and select **Delete**.
-1. Browse to the **CN=Certification Authorities** directory (within "CN=Public Key Services, CN=Services"), right-click the entry for the FCPCA and select **Delete**.
-
-<br>
-
-### If the FCPCA Was Distributed Using a Microsoft GPO
-{% include alert-warning.html content="You must have enterprise administrator privileges for the domain to perform these steps. You must run these commands from an agency domain controller." %}
-
-1. Navigate to **Server Manager**.
-1. Select **Tools**.
-1. Select **Group Policy Management** from the drop-down list.
-1. Expand the **Group Policy Objects** directory.
-1. Right-click the GPO distributing the FCPCA and select **Delete**.
-
-<br>
-
-### If the FCPCA Was Distributed Using an Apple Configuration Profile
-1. Identify how the profile is being distributed across the enterprise (e.g., over-the-air profile delivery or from an MDM server)
-2. Use local knowledge to disable the distribution.  If you are having trouble with a specific product, email us at fpkirootupdate@gsa.gov.
-
-<br>
-
-## Distrust the FCPCA G1
-
-Use one of the methods below to distrust the FCPCA G1.
-- [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object)
-- [Use macOS Terminal](#use-macos-terminal)
-- [Use Linux Command Line](#use-linux-command-line)
-
-### Use Microsoft Group Policy Object
-
-{% include alert-warning.html content="You must have enterprise administrator privileges for the domain to perform these steps. You must run these commands from an agency domain controller." %}
-
-1. Navigate to **Server Manager**.
-1. Select **Tools**.
-1. Select **Group Policy Management** from the drop-down list.
-1. Right-click your desired domain(s), and select **Create a GPO in this domain, and Link it here**.
-1. Enter a GPO **Name** and click **OK**.
-1. Right-click the newly created *Group Policy Object (GPO)* and click **Edit**.
-1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
-1. Right-click **Untrusted Certificates**, and select **Import**. *The Certificate Import Wizard will open*. 
-1. Browse to and select your copy of FCPCA G1.
-1. Verify that the target **Certificate Store** presents **Untrusted Certificates**, and select **Next**.
-1. Select **Finish** to complete the import.
-
-	A success message appears.
-
-1. Close the **Group Policy Management** window.
-1. Wait for clients to consume the new policy.
-1. (*Optional*) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
-    ```
-          gpupdate /force
-    ```
-	
-Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Server 2016.
-[![Sample Steps]({{site.baseurl}}/assets/fpki/distrust-gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/distrust-gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
-<br>
-
-<br>
-
-### Use macOS Terminal
-
-{% include alert-info.html content="macOS handles certificate distrust differently than Windows does.  The steps below distrust the FCPCA G1 certificate by deleting it from the System and Login Keychains.  The absence of the FCPCA G1 certificate from the Keychains results in the certificate not being trusted by the workstation. Only system administrators should follow these steps." %}
-
-**Note:** Many Mobile Device Management (MDM) platforms allow administrators to push the command below across an enterprise rather than running it on individual workstations. _Use automation wherever possible_.
-
-1. Click the **Spotlight** icon and search for *Terminal*.
-2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
-3. Run the following command:
-
-    ```
-	$ sudo security delete-certificate -c "Federal Common Policy CA" /Library/Keychains/System.keychain && sudo security delete-certificate -c "Federal Common Policy CA" login.keychain
-    ```
-    
-**Note:**&nbsp;&nbsp;This video shows you how to remove the FCPCA G1 certificate using the command line.
-<br>
-[![This video shows you how to remove the FCPCA G1 certificate using the command line.]({{site.baseurl}}/assets/fpki/remove_command_line.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/remove_command_line.gif){:target="_blank"}{:rel="noopener noreferrer"}
-
-
-### Use Linux Command Line
-
-#### Debian-Based Kernels
-
-1. Launch the command line.
-
-1. Change directory with the following command:
-
-    ```
-        cd /usr/local/share/ca-certificates/
-    ```
-
-1. Remove your copy of the Federal Common Policy CA certificate with the following commands (assumes name of certificate file is known):
-
-    ```
-        sudo rm fcpca.crt
-    ```
-
-1. Update Trusted Certificates with the following command:
-
-    ```
-        sudo update-ca-certificates
-    ```
-    
- 1. Run the following command to verify the Federal Common Policy CA no longer has an entry in the system’s trust list:
-
-    ```
-        trust list | grep "Federal Common Policy CA"
-    ```
-
-<br>
-
-#### Red Hat Enterprise Linux, CentOS, and other Non-Debian-Based Kernels
-
-1. Launch the command line.
-
-1. Change directory with the following command:
-
-    ```
-        cd /etc/pki/ca-trust/source/anchors/
-
-    ```
-
-1. Remove your copy of the Federal Common Policy CA certificate with the following commands (assumes name of certificate file is known):
-
-    ```
-        sudo rm fcpca.crt
-    ```
-
-1. Update Trusted Certificates with the following command:
-
-    ```
-        sudo /bin/update-ca-trust extract
-    ```
-
-1. Run the following command to verify the Federal Common Policy CA no longer has an entry in the system’s trust list:
-
-    ```
-        trust list | grep "Federal Common Policy CA"
-    ```
-
-<br>
-
-The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) G2 is to validate one of your PIV credential certificates.
+The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) is to validate one of your PIV credential certificates.
 
 ### Verify Migration on Windows
 
@@ -1258,318 +945,169 @@ The easiest way to verify your migration to the Federal Common Policy CA (FCPCA)
 1. Double-click **Personal**, and then **Certificates**.
 1. Browse to and select any of the certificates found on your PIV credential (the **Issued To** column displays your name).
 1. Double-click the certificate and select the **Certification Path** tab.
-1. Verify the certificate chain begins with the **FCPCA G2** (pictured below).
-	
-	**Note:** It's okay if different certification authorities appear below the FCPCA G2 for your certificate. 
+1. Verify the certificate chain begins with the **FCPCA** (pictured below).
 
-<img src="{{site.baseurl}}/assets/fpki/verify-migration-windows.png" alt="verify common migration in Windows." width="224" height="285">
+**Note:** It's okay if different certification authorities appear below the FCPCA for your certificate. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+![Verify common migration in Windows]({{site.baseurl}}/assets/fpki/verify-migration-windows.png){:style="width:300px;"}
 
 ### Verify Migration on macOS
 
-1. Click the **Spotlight** icon and search for *Keychain Access*.
-2. Double-click the **Keychain Access** icon to open the application.
-3. In the left navigation, click the **Login** keychain.
-4. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
-5. Verify the *This certificate is valid* message appears beneath the certificate details.
+1. Click the **Spotlight** icon and search for _Keychain Access_.
+1. Double-click the **Keychain Access** icon to open the application.
+1. In the left navigation, click the **Login** keychain.
+1. Browse to and select any of the certificates found on your PIV credential (the **Name** column displays your name).
+1. Verify the _This certificate is valid_ message appears beneath the certificate details.
 
-<img src="{{site.baseurl}}/assets/fpki/verify-migration-macos.png" alt="verify common migration in macOS." width="392" height="206">
+**Note:** It's okay if a different name appears in the keychain access screen. It should show the name of the user that the PIV certificate was issued to. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-## Troubleshooting Distrust
+![Verify common migration in macOS]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:504px;"}
 
-- If you're building a path to the FCPCA G1
-	- [Verify you have distrusted the FCPCA G1](#step-7---distrust-old-root-and-verify)
-- If a path isn't building at all
-	- [Verify your distribution of the FCPCA G2](#step-4---verify-operating-system-distribution)
-	- [Distribute the CA certificates issued by the FCPCA G2](#step-6---distribute-intermediate-certificates)
+# Frequently Asked Questions
 
-#  Frequently Asked Questions
+If your question does not appear in this list, send it to FPKI at gsa.gov.
 
-If you do not see a questions, send it to FPKI at gsa.gov.
+## What happens if I don’t distribute the FCPCA root certificate in my environment?
 
-## What happens if I don’t update the FCPCA G2?
+1. **(_High Impact_) Authentication failures**
 
-1. **(*High Impact*) Authentication failures**
-	- Workstations 
-	- Websites  
-	- Applications (internal and cross-agency)
-	- Virtual Private Networks (VPNs)
+    - Workstations
+    - Websites  
+    - Applications (internal and cross-agency)
+    - Virtual Private Networks (VPNs)
 
-2. **(*Medium Impact*) Error fatigue**
-	- Unexpected application errors and system behavior for legacy and government-off-the-shelf (GOTS) products
+2. **(_Medium Impact_) Error fatigue**
 
-3. **(*Low Impact*) Digital signature validation failures**
-	- Email
-	- Documents and files (for example, Microsoft Word)
+    - Unexpected application errors and system behavior for legacy and government-off-the-shelf (GOTS) products
 
-## What errors can occur in Windows if I don't distribute the FCPCA G2?
+3. **(_Low Impact_) Digital signature validation failures**
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/error_navigation.png" alt="An image showing an error navigation message." width="560" height="397">
+- Email
+- Documents and files (for example, Microsoft Word)
 
-*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/error_piv_auth.png" alt="An image showing an error piv authetication message." width="560" height="292">
+## What errors can occur in Windows if I don't distribute the FCPCA root certificate?
 
-*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/error_sig_val.png" alt="An image showing a digital signature invalid error message." width="381" height="242">
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/error_navigation.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-## What errors can occur in macOS if I don't distribute the FCPCA G2?
+![An image showing an error navigation message]({{site.baseurl}}/assets/fpki/error_navigation.png){:style="width:504px;"}
 
-*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png" alt="An image showing a safari untrusted ssl error message." width="476" height="284">
+*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-*Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/safari_untrusted_auth.png" alt="An image showing a safari untrusted authentication error message." width="476" height="285">
+![An image showing an error piv authetication message]({{site.baseurl}}/assets/fpki/error_piv_auth.png){:style="width:504px;"}
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png" alt="An image showing a chrome untrusted ssl error message." width="476" height="291">
+*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/error_sig_val.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-*Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png" alt="An image showing a chrome untrusted authentication error message." width="476" height="290">
+![An image showing a digital signature invalid error messagee]({{site.baseurl}}/assets/fpki/error_sig_val.png){:style="width:381px;"}
 
-## What errors can occur in iOS if I don't distribute the FCPCA G2?
+## What errors can occur in macOS if I don't distribute the FCPCA root certificate?
 
-*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png" height="600" alt="An image showing ios safari untrusted ssl.">
+*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
-     <br>
-     <img src="{{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png" height="600" alt="An image showing ios chrome untrusted ssl.">
+![An image showing a safari untrusted ssl error message]({{site.baseurl}}/assets/fpki/safari_untrusted_ssl.png){:style="width:504px;"}
 
-## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
+*Sample Safari error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-Please review the steps to [verify distribution of the FCPCA G2](#step-4---verify-operating-system-distribution).
+![An image showing a safari untrusted authentication error message]({{site.baseurl}}/assets/fpki/safari_untrusted_auth.png){:style="width:504px;"}
 
-## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
+![An image showing a chrome untrusted ssl error message]({{site.baseurl}}/assets/fpki/chrome_untrusted_ssl.png){:style="width:504px;"}
+
+*Sample Chrome error where client (PIV) authentication fails because a user’s certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+![An image showing a chrome untrusted authentication error message]({{site.baseurl}}/assets/fpki/chrome_untrusted_auth.png){:style="width:504px;"}
+
+## What errors can occur in iOS if I don't distribute the FCPCA root certificate?
+
+*Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+![An image showing ios safari untrusted ssl]({{site.baseurl}}/assets/fpki/ios_safari_untrusted_ssl.png){:style="width:300px;"}
+
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:* [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+![An image showing ios chrome untrusted ssl]({{site.baseurl}}/assets/fpki/ios_chrome_untrusted_ssl.png){:style="width:300px;"}
+
+## How can I verify that the FCPCA root certificate has been successfully distributed to my workstation or device?
+
+Please review the steps to [verify distribution of the FCPCA root certificate](#step-3---verify-operating-system-distribution).
+
+## Do I need to distribute the FCPCA root certificate to my Bring Your Own Device (BYOD) program device?
+
+As a BYOD program device user, you'll need to distribute the FCPCA root certificate if you:
+
 - use your PIV credential to log into intranet sites or VPNs,
 - validate PIV digital signatures in emails or documents, or
-- navigate to intranet pages whose SSL/TLS certificates chain to the FCPCA G2.
+- navigate to intranet pages whose SSL/TLS certificates chain to the FCPCA root certificate.
 
+## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA?
 
-## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
-1. Download a copy of the FCPCA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
-2. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
-3. Update your Trust Store:
+1. Download a copy of the FCPCA certificate from <http://repo.fpki.gov/fcpca/fcpcag2.crt>
+1. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
+1. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
      - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
-     - Browse to and select your copy of the FCPCA G2. Click **Next** several times until the certificate import process is complete.
-     - When prompted, verify the certificate thumbprint matches *99B4251E2EEE05D8292E8397A90165293D116028* (additional spaces may appear depending on your Windows Version).
+     - Browse to and select your copy of the FCPCA root certificate. Click **Next** several times until the certificate import process is complete.
+     - When prompted, verify the certificate thumbprint matches _99B4251E2EEE05D8292E8397A90165293D116028_ (additional spaces may appear depending on your Windows Version).
      - Click **Yes**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of fpki-unmanaged-bundle.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
- 
-To verify your distribution (assumes **certmgr.msc** is still open): 
-1. Verify an entry for the FCPCA G2
+
+To verify your distribution (assumes **certmgr.msc** is still open):
+
+1. Verify an entry for the FCPCA root certificate
      - Use the left-hand navigation to browse to **Trusted Root Certification Authorities** > **Certificates**
      - Press the **F5** key to refresh the folder contents
-     - Verify an entry exists for the Federal Common Policy CA G2 (both the **Issued To** and **Issued By** columns will present "Federal Common Policy CA G2".)
-2. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA G2
-     - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates** 
+     - Verify an entry exists for the Federal Common Policy CA (both the **Issued To** and **Issued By** columns will present "Federal Common Policy CA".)
+1. Verify entries for the intermediate CA certificates issued by the Federal Common Policy CA
+     - Use the left-hand navigation to browse to **Intermediate Certification Authorities** > **Certificates**
      - Press the **F5** key to refresh the folder contents
      - Sort the data by clicking on the **Issued By** column
-     - Verify nine (9) entries for certificates issued by the Federal Common Policy CA G2
+     - Verify nine (9) entries for certificates issued by the Federal Common Policy CA
 
-**Note:** The following .gif demonstrates the distribution steps outlined above.
-<br>
-[![configure unmanaged device]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
+**Note:** The following video demonstrates the distribution steps outlined above. [Click for a larger version]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+[![configure unmanaged device]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/unmanaged-device.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA G2?
+## How do I configure my unmanaged macOS device to trust the new Federal Common Policy CA?
+
 1. Download a copy of [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
-2. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig. 
-3. Navigate to **System Preferences** -> **Profiles**
-4. Verify the profile contents and click **Install** (twice) 
+1. Browse to and double-click on your copy of fpki-unmanaged-bundle.mobileconfig.
+1. Navigate to **System Preferences** -> **Profiles**
+1. Verify the profile contents and click **Install** (twice)
 
-**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using an Apple configuration profile on macOS.
-<br>
-[![A video that shows the steps to install an Apple configuration profile on macOS]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
+**Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using an Apple configuration profile on macOS. [Click for a larger version]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+[![A video that shows the steps to install an Apple configuration profile on macOS]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/macos-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA G2?
+## How do I configure my unmanaged iOS device to trust the new Federal Common Policy CA?
+
 1. Launch **Safari**.
-2. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
-> System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
-3. Click **Allow**.<br>
-4. Navigate to **Settings** -> **General** -> **Profile** 
-5. Select the "Distribute FCPCAG2 and Intermediate CA Certificates" profile
-6. Select **More Details** and select the certificate entry for the FCPCA G2
-7. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-2---obtain-and-verify-fcpca-g2).
-8. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
-9. When prompted, enter your device **passcode**.
-10. Click **Install** in the upper right corner, and **Install** again.
-11. Click **Done**.
-12. Enable [full trust for the FCPCA G2](#enable-full-trust-for-fcpca-g2).
+1. Navigate to a copy of the [fpki-unmanaged-bundle.mobileconfig]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.mobileconfig)
+    > System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
+1. Click **Allow**.
+1. Navigate to **Settings** -> **General** -> **Profile**
+1. Select the "Distribute FCPCA and Intermediate CA Certificates" profile
+1. Select **More Details** and select the certificate entry for the FCPCA
+1. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value](#step-1---obtain-and-verify-the-fcpca-root-certificate).
+1. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
+1. When prompted, enter your device **passcode**.
+1. Click **Install** in the upper right corner, and **Install** again.
+1. Click **Done**.
+1. Enable [full trust for the FCPCA](#enable-full-trust-for-fcpca).
 
-**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 and the intermediate CA certificates using the Safari web browser.
-<br>
-<a href="{{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif" height="600" alt="A video that shows the steps to install a mobile configuration file in the Safari web browser"></a>
+**Note:**The following video shows you how to install FCPCA and the intermediate CA certificates using the Safari web browser. [Click for a larger version]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-## How do I configure the Firefox web browser to trust the new Federal Common Policy CA G2?
-The following steps will allow Firefox to use the underlying operating system trust store.  Follow these steps only after distributing the Federal Common Policy CA G2 to your Windows or macOS device.
+[![A video that shows the steps to install a mobile configuration file in the Safari web browser]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:style="width:300px;"}]({{site.baseurl}}/assets/fpki/ios_safari_configuration-unmanaged.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+## How do I configure the Firefox web browser to trust the new Federal Common Policy CA?
+
+The following steps will allow Firefox to use the underlying operating system trust store.  Follow these steps only after distributing the Federal Common Policy CA to your Windows or macOS device.
+
 1. Open **Firefox**.
-2. Enter **about:config** in the address bar and continue to the list of preferences.
-3. Set the preference **security.enterprise_roots.enabled** to **true**.  
-4. Restart **Firefox**. 
+1. Enter **about:config** in the address bar and continue to the list of preferences.
+1. Set the preference **security.enterprise_roots.enabled** to **true**.  
+1. Restart **Firefox**.
 
-**Note:**&nbsp;&nbsp;The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store.
-<br>
-<a href="{{site.baseurl}}/assets/fpki/configure-firefox.gif" target="_blank" rel="noopener noreferrer"><img src="{{site.baseurl}}/assets/fpki/configure-firefox.gif" height="90%" width="90%" alt="A video that shows the steps to configure the Firefox web browser"></a>
+**Note:**The following video shows you how to configure the Firefox web browser to trust the certificates included in the operating system trust store. [Click for a larger version]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
-## Legacy Questions from FCPCA G1 to FCPCA G2 Migration
-
-### Will my PIV credentials break or need to be updated or replaced when this change occurs?
-
-No. PIV credentials will *not* be affected by this change.  For example, the graphic below shows the current and future state of certificate validation for a PIV credential issued by the USAccess Program.  Although two certificates in the chain are being updated, the PIV credential certificates are *not* affected. 
-<br>
-<img src="{{site.baseurl}}/assets/fpki/FCPCA_G2_Transition.jpg" alt="current and future state." width="560" height="315">
-
-### Is the Federal Common Policy CA changing?
-
-Yes. In **October 2020**, the Federal Government established a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA) known as the **Federal Common Policy CA (FCPCA) G2**. 
-
-Between December 2020 and June 2021, CAs cross-certified by the existing FCPCA will be migrated to the FCPCA G2. Once the migration is complete, the existing FCPCA will be decommissioned (planned for June 2021). 
-
-### When will this change happen?
-
-Timeline:
-- **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) established the new FCPCA G2.
-- **October 15, 2020**: The FPKIMA issued and distributed a cross certificate from the FCPCA G2 to the Federal Bridge CA G4.
-- **November 18, 2020**: The FPKIMA issued and distributed certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2.
-- **December 2020 to June 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.  Certificates issued by the Federal Common Policy CA will be revoked between the end of April and June in coordination with CA operators (revocation schedule below).
-- **June 2021**: The FPKIMA decommissions the existing FCPCA.
-
-### When will the certificates issued by the Federal Common Policy CA get revoked?
-The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
-
-**Note:** This table was last updated on **June 17, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/ficam-playbooks/issues/99){:target="_blank"}{:class="usa-link usa-link--external"} for the latest information possible.
-
-#### Issued to: Federal Bridge CA G4
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
-| Validity | December 12, 2019 to December 12, 2021  |
-| Serial Number | 7994    |
-| SHA-1 Thumbprint | e836f3016bfb6e8df274f27fd8a4a5054517b0f1  |
-| Revocation Date | **April 22, 2021** |
-
-#### Issued to: U.S. Department of State AD Root CA
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
-| Validity | December 18, 2019 to December 18, 2022   |
-| Serial Number | 79f9    |
-| SHA-1 Thumbprint | ce11590010562a39ad8b1455acf76c03737aebf6  |
-| Revocation Date | **April 22, 2021** |
-
-#### Issued to: DigiCert Federal SSP Intermediate CA - G5
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
-| Validity | December 13, 2018 to December 13, 2028  |
-| Serial Number | 66c0    |
-| SHA-1 Thumbprint | 98b58247ac8a2bc6f348f03e8d22884d8345fc0f  |
-| Revocation Date | **April 22, 2021** |
-
-#### Issued to: Symantec SSP Intermediate CA - G4
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
-| Validity | November 12, 2014 to November 12, 2024   |
-| Serial Number | 258e   |
-| SHA-1 Thumbprint | 6a382438fd21037018daf3f422a2132bea2be817  |
-| Revocation Date | **April 22, 2021** |
-
-#### Issued to: Verizon SSP CA A2
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
-| Validity | December 5, 2018 to December 6, 2026  |
-| Serial Number | 65f8   |
-| SHA-1 Thumbprint | 477bf4017d25cde276cdddf756d40ca591d76f6d  |
-| Revocation Date | **April 22, 2021** |
-
-#### Issued to: ORC SSP 4
-
-| Certificate Attribute | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
-| Validity | August 31, 2015 to January 21, 2024  |
-| Serial Number | 2ef9    |
-| SHA-1 Thumbprint | 3a70323069a4c41bc95663152e9ccc7111bb0623  |
-| Revocation Date | **April 22, 2021** |
-
-#### Issued to: US Treasury Root CA
-
-| Certificate Attribute (1 of 2) | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
-| Validity | August 14, 2019 to August 14, 2022  |
-| Serial Number | 734b   |
-| SHA-1 Thumbprint | 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2   |
-| Revocation Date | **June 10, 2021** |
-
-| Certificate Attribute (2 of 2) | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
-| Validity | August 29, 2018 to August 29, 2021   |
-| Serial Number | 6405    |
-| SHA-1 Thumbprint | 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  |
-| Revocation Date | **June 10, 2021** |
-
-#### Issued to: Entrust Managed Services Root CA
-
-| Certificate Attribute (1 of 2) | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
-| Validity | August 14, 2019 to August 14, 2029  |
-| Serial Number | 734a   |
-| SHA-1 Thumbprint | a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  |
-| Revocation Date | **June 17, 2021** |
-
-| Certificate Attribute (2 of 2) | Value                                              |
-| :--------  | :--------------------------------------------------------     |
-| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
-| Validity | July 30, 2015 to July 30, 2025  |
-| Serial Number | 2e26   |
-| SHA-1 Thumbprint | 39c1d3b64e756a3267bfe5fecb103da892ca0611  |
-| Revocation Date | **June 17, 2021** |
-
-### Which types of systems will this change affect?
-
-This change will affect any system that requires the ability to validate certificates issued by the Federal PKI.  This includes systems configured for Personal Identity Verification (PIV) credential authentication to government networks or web applications, systems that require the ability to verify digital signatures that leverage PIV or similar credentials, and systems that host applications or services that leverage the Federal Common Policy CA as a root CA.
-
-Classified systems are not affected by this change.
-
-### Which operating systems will this change affect?
-
-All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be affected.
-
-### My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
-
-This change *does not* affect your PIV credential issuer, nor how agency credentials are generated or issued.
-
-This change *does* affect how federal enterprise workstations and devices validate PIV credential certificates.  
-
-### Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?
-
-Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued before August 13, 2019, chain through an older version of the Entrust Managed Services Root CA on their way to the Federal Common Policy CA than certificates issued since.  This older version of the Entrust Managed Services Root CA will not receive a certificate from the Federal Common Policy CA G2.
-
-To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you should distribute [this]({{site.baseurl}}/implement/certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here](#step-6---distribute-intermediate-certificates).
-
-The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
-
-<img src="{{site.baseurl}}/assets/fpki/link-cert-path.png" alt="An image showing a certificate link path." width="402" height="513">
+[![A video that shows the steps to configure the Firefox web browser]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:style="width:504px;"}]({{site.baseurl}}/assets/fpki/configure-firefox.gif){:target="_blank"}{:rel="noopener noreferrer"}
