@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '>= 2.7.4'
+ruby '>= 2.7.5'
 
 gem "jekyll", "~> 4.0"
 gem "execjs", "2.7.0" # https://github.com/rails/execjs/issues/99
@@ -21,3 +21,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "html-proofer", "~> 3.19", ">= 3.19.4"
+
+

@@ -28,11 +28,11 @@ To contribute to this site, you can:
 - [Add a new page](#add-a-page) - create a new page to add to this site.
 - [Edit an existing page](#edit-a-page) - submit direct changes and line edits to content on this site.
 
-Using GitHub as a first-time user can be overwhelming. An introduction video is available from DigitalGov on YouTube: [Introduction to GitHub](https://youtu.be/uNa9GOtM6NE){:target="_blank"}{:rel="noopener noreferrer"}.
+Using GitHub as a first-time user can be overwhelming. An introduction video is available from DigitalGov on YouTube: [Introduction to GitHub](https://youtu.be/uNa9GOtM6NE){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 ## About This Repository
 
-In the [GitHub repository](https://github.com/GSA/idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}, on the **Code** tab, you can view the content and diagrams on this website:
+In the [GitHub repository](https://github.com/GSA/idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, on the **Code** tab, you can view the content and diagrams on this website:
 
 - **/_arch** - includes page source files for the FICAM Architecture.
 - **/_ficampm** - includes page source files for the FICAM Program Management Playbook.
@@ -59,12 +59,12 @@ Consider the audience when you submit content. Plain language benefits a broad a
 
 The following are useful resources for plain language, writing, and style:
 
-- [18F Content Guide](https://content-guide.18f.gov/){:target="_blank"}{:rel="noopener noreferrer"}
-- [Federal Plain Language Guidelines](http://www.plainlanguage.gov/){:target="_blank"}{:rel="noopener noreferrer"}
+- [18F Content Guide](https://content-guide.18f.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [Federal Plain Language Guidelines](http://www.plainlanguage.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Thanks
 
-The contributing framework, the licensing framework, and the idea for providing this content as open-source are based on work from [the 18F office](https://18f.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}.
+The contributing framework, the licensing framework, and the idea for providing this content as open-source are based on work from [the 18F office](https://18f.gsa.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 ## Open an Issue
 
@@ -73,7 +73,7 @@ Issues are the primary method to share information and discussions with the broa
 - *Suggestions* - you want to suggest a change or addition to the content on this site.
 - *Corrections* - you identified a problem with content on this site and want to discuss a correction.
 
-To submit an issue, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
+To submit an issue, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for your GitHub account.
 
 1. If you identify an issue while you're reading this guide, in the left navigation, click **Submit an Issue Here**.
 
@@ -91,11 +91,11 @@ You can track your issue and comments from your colleagues on the **Issues** tab
 
 Before you add a new page, see the list of existing issues. You can add a new issue to propose a topic, or comment on an existing issue. By creating or discussing an issue, you can clarify a problem, identify a solution, and propose a format for a new page. When you’re ready, comment on the related issue that you want to write the new page.
 
-To add a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
+To add a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for your GitHub account.
 
 First you must **create a page**.
 
-1. (Optional) If you want to begin with a template page, navigate to the [Page Template](https://github.com/GSA/idmanagement.gov/blob/staging/page-template.md){:target="_blank"}{:rel="noopener noreferrer"}.
+1. (Optional) If you want to begin with a template page, navigate to the [Page Template](https://github.com/GSA/idmanagement.gov/blob/staging/page-template.md){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 	The template file includes some instructions for how to organize a page.
 
@@ -135,7 +135,7 @@ First you must **create a page**.
 
 ## Edit a Page
 
-To modify a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"} for your GitHub account.
+To modify a page and open a pull request, you must first [create a GitHub account](https://github.com/join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. We recommend that you [configure two-factor authentication](https://help.github.com/en/articles/configuring-two-factor-authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for your GitHub account.
 
 1. In the upper right corner of a page you want to modify (like this page), click **Edit this page**.
 

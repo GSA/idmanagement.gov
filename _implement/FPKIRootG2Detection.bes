@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Federal Common Policy CA G2 Distribution Detection</Title>
+		<Description><![CDATA[<P>This analysis will detect whether COMMON has been redistributed via GPO or Active Directory.</P>
+<P>Depending on how COMMON is redistributed to end-points, one of two pairs of registry keys is created:</P>
+<P><STRONG>AD Distribution</STRONG><BR>- HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\<BR>- HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\</P>
+<P><STRONG>GPO Distribution</STRONG><BR>- HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\<BR>- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\</P>
+<P>Results: If one of these pairs is detected, the analysis will return a value of "TRUE".</P>]]></Description>
+		<Relevance>true</Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2020-10-15</SourceReleaseDate>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Tue, 20 Oct 2020 18:02:27 +0000</Value>
+		</MIMEField>
+		<Domain>BES </Domain>
+		<Property Name="Operating System" ID="1">operating system</Property>
+		<Property Name="Has FCPCA G2 Been Distributed?" ID="2" EvaluationPeriod="P30D">	((exists key "HKLM\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of registry) AND (exists key "HKLM\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of registry)) OR ((exists key "HKLM\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of native registry) AND (exists key "HKLM\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of native registry)) OR ((exists key "HKLM\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of (if x64 of operating system then (x32 registry; x64 registry) else x32 registry)) AND (exists key "HKLM\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of (if x64 of operating system then (x32 registry; x64 registry) else x32 registry)))  		OR ((exists key "HKLM\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of registry) AND (exists key "HKLM\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of registry)) OR ((exists key "HKLM\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of native registry) AND (exists key "HKLM\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of native registry)) OR ((exists key "HKLM\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of (if x64 of operating system then (x32 registry; x64 registry) else x32 registry)) AND (exists key "HKLM\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028" of (if x64 of operating system then (x32 registry; x64 registry) else x32 registry))) 		</Property>
+	</Analysis>
+</BES>
