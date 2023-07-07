@@ -809,7 +809,7 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
 - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
-- [Issued to: WidePoint SSP Intermediate CA](#issuee-to-widepoint-ssp-intermediate-ca)
+- [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca)
 
 {% include alert-warning.html content="**Important!** To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions) page." %}
 
