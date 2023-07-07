@@ -63,8 +63,8 @@ primary_navigation:
     children:
       - name: ICAM Configuration Guides
         url: /implement/
-      - name: Distribute the FCPCA
-        url: /implement/distribute-fcpca/
+      - name: Enterprise Trust of the FCPCA
+        url: /implement/trust-fcpca/
       - name: Smart Card Logon for Operating Systems
         url: /implement/scl-windows/
       - name: Certificate-based Authentication for Cloud
