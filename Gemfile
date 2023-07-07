@@ -22,9 +22,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "html-proofer", "~> 3.19", ">= 3.19.4"
 
-# RSS Module for RSS Page
-gem "rss"
-
-# Open URI for needed by 'rss' module to pull in content.
-gem 'open-uri'
 
