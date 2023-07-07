@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '>= 2.7.4'
+ruby '>= 2.7.5'
 
 gem "jekyll", "~> 4.0"
 gem "execjs", "2.7.0" # https://github.com/rails/execjs/issues/99
