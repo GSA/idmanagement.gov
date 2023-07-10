@@ -102,12 +102,22 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 
 ## PACS Solutions Awaiting Approval
 
-| Position  |    Solution   | APL Numbers | New/Update | Testing Status |
-| --------- | ------------- | ----------- |------------|----------------|
-| 1 |LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition|10112 & 10113|New Reader add|In queue| 
-| 2 |Datawatch + HID pivCLASS|10117 & 10118|Update|In queue| 
-| 3 |Tyco Security Products C-CURE 9000 with Innometriks Validation System|10115 & 10108|Update|On hold pending vendor action| 
-| 4 |System Galaxy + TI Update|10083 & 10084|Update|On hold pending vendor action|
+| Position | Solution                                                     | APL Numbers       | New/Update   | Testing Status       |
+|----------|--------------------------------------------------------------|-------------------|--------------|----------------------|
+| 1        | LenelS2 OnGuard with Embedded Authentication  (TI Entry Point) + uTrust Reader addition | 10126 & 10127 | New Reader add| In queue|
+| 2        | LenelS2 OnGuard with Embedded Authentication with HID Global Validation System | 10112 & 10113 | Update | In queue|
+| 3        | Gallagher Command Center PACS 13.02                          | 10114             | Update        | In queue|
+| 4        | Gallagher PIV Command Center with HID Global Validation System| 10019 & 10020    | Update        | In queue|
+| 5        | ReconaSense + HID Global Validation System                   | 10131 & 10132     | Update        | In queue|
+| 6        | AMAG Symmetry Professional + HID Global Validation System    | 10047 & 10048     | Update        | In queue|
+| 7        | AMAG Symmetry Professional + Identity One Validation System  | 10143 & 10144     | Update        | In queue|
+| 8        | Genetec Security Center – Synergis with HID Global Validation System | 10061 & 10062 | Update    | In queue|
+| 9        | Software House C●CURE-9000 V2.9 PACS 13.02                   | New               | New           | In queue|
+| 10       | Identiv Velocity + HID Global Validation System              | 10013 & 10014     | Update        | In queue|
+| 11       | Identiv Velocity Security Management System 13.02            | 10103             | Update        | In queue|
+| 12       | Identiv + Allegion Wireless Reader 20.01                     | New               | New Reader add| In queue|
+| 13       | Datawatch + HID pivCLASS                                     | 10117 & 10118     | Update        | In queue|
+| 14       | Tyco Security Products C-CURE 9000 with Innometriks Validation System | 10115 & 10108 | Update   | On hold pending vendor action|
 
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
