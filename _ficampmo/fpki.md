@@ -42,10 +42,10 @@ The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-
 
 | Federal PKI Policy | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
-| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.3]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.2]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
-| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.0]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
-| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.0]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} and <br>[PIV-I for Federal Agencies]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"}  | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
-| Federal Public Trust TLS | Updating Policy. [Archived Copies available in archived documents.]({{site.baseurl}}/fpki/#federal-pki-document-archive) | Updating Profiles | No change proposals |
+| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.4]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.2]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
+| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.1]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
+| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.1]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} and <br>[PIV-I for Federal Agencies]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"}  | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
+| Federal Public Trust TLS | [U.S. Federal Public Trust TLS PKI Certificate Policy v1.1]({{site.baseurl}}/docs/us-federal-public-trust-tls-cp.pdf){:target="_blank"}{:rel="noopener noreferrer"} | Profiles are included in Section 7 of the Policy | No change proposals |
 
 The FPKI has the following supplementary guidance:
 
@@ -73,7 +73,6 @@ Audits are required annually for supporting functions and elements of each entit
 | Entity	| Type	| Annual Review Package Due Date|
 | ------- | :-----: | :-----------------------------: |
 | CertiPath	| Bridge |	June 30 |
-| Drug Enforcement Agency (DEA)	| Trust Partner	| September 30 |
 | DigiCert (ECPS)	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Non-Federal Issuer [NFI])	| Affiliate PKI	| July 31 |
 | DigiCert (Formerly Symantec Shared Service Provider [SSP])	| SSP	| July 31 |
@@ -82,11 +81,11 @@ Audits are required annually for supporting functions and elements of each entit
 | Department of the Treasury	| SSP	| July 31 |
 | Entrust NFI	| Affiliate PKI	| November 30 |
 | Entrust Federal SSP	| SSP	| November 30 |
-| Exostar	| Affiliate PKI	| June 10 |
+| Exostar	| Affiliate PKI	| June 30 |
 | Government Publishing Office (GPO)	| Affiliate PKI	| October 31 |
 | IdenTrust NFI	| Affiliate PKI	| August 31 |
 | Patent and Trademark Office (PTO)	| Affiliate PKI	| October 31 |
-| SAFE Identity	| Bridge	| October 31 |
+| SAFE Identity	| Bridge	| June 30 |
 | Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| November 30 |
 | Transglobal Secure Collaboration Program (TSCP)	| Bridge	| July 31 |
 | Verizon SSP	| SSP	| August 31 |
