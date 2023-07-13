@@ -43,9 +43,6 @@ subnav:
 
 ---
 
-<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
-<br><br>
-
 The purpose of this playbook is to guide administrators through planning, configuring, testing, and implementing Windows Hello for Business (WHfB). WHfB offers two-factor authentication by combining user credentials tied to a device with a biometric or a personal identification number (PIN).
 
 ## About Windows Hello for Business
