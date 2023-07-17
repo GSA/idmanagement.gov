@@ -155,6 +155,7 @@ collections:
     output: true
     permalink: /ficam/:path/
 
+
 # Leaving in place: 
 # Unsure of placement in new site.
   
@@ -233,7 +234,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
-  - staging-ficam-playbooks
+
 assets:
   autoprefixer:
     browsers:
@@ -241,18 +242,13 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  sources:
-  ## Updated to @uswds 3.0
-    - node_modules/@uswds/uswds/dist/css
-    - node_modules/@uswds/uswds/dist/fonts
-    - node_modules/@uswds/uswds/dist/img
-    - node_modules/@uswds/uswds/dist/img/favicons
-    - node_modules/@uswds/uswds/dist/img/material-icons
-    - node_modules/@uswds/uswds/dist/img/usa-icons
-    - node_modules/@uswds/uswds/dist/img/usa-icons-bg
-    - node_modules/@uswds/uswds/dist/img/uswds-icons
-    - node_modules/@uswds/uswds/dist/js
-    - node_modules/@uswds/uswds/dist/scss
-    - node_modules/@uswds/uswds/dist/theme
-    - node_modules/@uswds/uswds/packages
-    - node_modules/netlify-cms/dist
+
+sass:
+  source_dir: _sass
+  load_paths:
+    - node_modules/@uswds/uswds/dist/
+  sourcemap: development
+  quiet_deps: true
+  style: compressed
+  verbose: true
+
