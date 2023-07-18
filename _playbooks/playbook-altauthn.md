@@ -452,27 +452,28 @@ A PIV credential remains the primary authenticator for federal users, but there 
 
 ## Policies
 
-1.	OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles
-2.	OPM Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials
+1.	[OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2.	[OPM Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Standards
 
-1.	NIST Special Publication 800-63B-3 - Digital Identity Guidelines - Authentication and Lifecycle Management
-2.	NIST Special Publication 800-63B-4 *DRAFT*- Digital Identity Guidelines - Authentication and Lifecycle Management
-3.	NIST Special Publication 800-157r1 *DRAFT*- Guidelines for Derived PIV Credentials
+1.	[NIST Special Publication 800-63B-3 - Digital Identity Guidelines - Authentication and Lifecycle Management](https://pages.nist.gov/800-63-3/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2.	[NIST Special Publication 800-63B-4 *DRAFT*- Digital Identity Guidelines - Authentication and Lifecycle Management](){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3.	[NIST Special Publication 800-157r1 *DRAFT*- Guidelines for Derived PIV Credentials](){:rel="noopener noreferrer"}{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Guidance
 
-1.	CISA Fact Sheet - Implementing Phishing-Resistant MFA
-2.	Enterprise Single Sign-On Playbook
-3.	NIST Digital Identity Guidelines Frequently Asked Questions
-4.	NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management
-5.	NSA - Selecting Secure Multi-factor Authentication Solutions
-6.	Windows Hello for Business Playbook 
+1.	[CISA Fact Sheet - Implementing Phishing-Resistant MFA](https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2.  [CISA Secure Cloud Business Applications (SCUBA) Hybrid Identity Solutions Architecture](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2.	[FICAM Enterprise Single Sign-On Playbook](https://playbooks.idmanagement.gov/playbooks/sso/)
+3.  [FICAM Windows Hello for Business Playbook](https://playbooks.idmanagement.gov/playbooks/whfb/)
+3.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4.	[NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management](https://www.nist.gov/system/files/documents/2020/07/02/800-63B%20Conformance%20Criteria_0620.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://media.defense.gov/2020/Sep/22/2002502665/-1/-1/0/CSI_MULTIFACTOR_AUTHENTICATION_SOLUTIONS_UOO17091520.PDF){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 # Appendix B - Resources
 
-1.	https://www.passkeys.io/ - This is a public tool to understand FIDO passkeys and test various devices.
-2.	https://webauthn.io/ - This is a FIDO Alliance and Cisco sponsored tool to understand Web Authentication and test various devices.
-3.	https://webauthn.me/ - This is a public tool to understand and debug Web Authentication and test various devices.
-4.	https://caniuse.com/?search=webauthn - This is a public tool to identify which operating systems and browsers are compatible with WebAuthN and FIDO passkeys.
+1.	[PassKeys.io](https://www.passkeys.io/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This is a public tool to understand FIDO passkeys and test various devices.
+2.	[WebAuthN.io](https://webauthn.io/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This is a FIDO Alliance and Cisco sponsored tool to understand Web Authentication and test various devices.
+3.	[WebAuthN.me](https://webauthn.me/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This is a public tool to understand and debug Web Authentication and test various devices.
+4.	[CanIUse.Com](https://caniuse.com/?search=webauthn){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - This is a public tool to identify which operating systems and browsers are compatible with WebAuthN and FIDO passkeys.
