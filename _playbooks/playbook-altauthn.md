@@ -169,6 +169,7 @@ Table 01. Common MFA Options
             <td>AAL1</td>
             <td>AAL2</td>
             <td>AAL3</td>
+        </tr>
         <tr>
             <td>Single Factor</td>
             <td colspan=2>Multi Factor</td>
@@ -178,7 +179,7 @@ Table 01. Common MFA Options
             <td>1. One Time PIN (Email, SMS, Mobile App)<br>2. Push Notification</td>
             <td>1. PKI including PIV-based credentials<br>2. FIDO including FIDO2 and WebAuthN </td>
         </tr>
-  </tbody>
+    </tbody>
 </table>
 
 These authenticator types aren’t susceptible to phishing because both leverage a technology called public key cryptography which creates a public and private key pair. 
