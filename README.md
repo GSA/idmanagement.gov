@@ -35,9 +35,7 @@ $ npm start
 
 OR
 
-`
-$ bundle exec jekyll serve
-`
+`$ bundle exec jekyll serve`
 
 To build but not serve the site, run 
 
