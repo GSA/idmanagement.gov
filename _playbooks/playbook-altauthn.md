@@ -19,7 +19,7 @@ subnav:
   - text: Step 1. Recognize Authentication Patterns and Use Cases
     href: '#step-1---recognize-authentication-patterns-and-use-cases'
   - text: Step 2. Identify Available Resources and Tools
-    href: '##step-2---identify-available-solutions'
+    href: '#step-2---identify-available-solutions'
   - text: Step 3. Implement a Solution
     href: '#step-3---deploy-a-pilot'
   - text: Appendix A. References
@@ -27,8 +27,6 @@ subnav:
   - text: Appendix B. Resources
     href: '#appendix-b---resources'
 ---
-[hello]()
-
 Version 1.0  
 August xx, 2023
 
