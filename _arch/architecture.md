@@ -75,7 +75,7 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
   </tr>
   <tr>
     <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Identity.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management." width="125"><br></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees and contractors.</td>
+    <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is the process by which an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees, contractors, and Non-Person Entities such as devices, services, or software bots.</td>
   </tr>
   <tr>
     <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_⁮ICAM-Credential.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management." width="125"><br></td>
