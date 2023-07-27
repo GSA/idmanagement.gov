@@ -39,6 +39,7 @@ June 30, 2023
 | 2.0 | 12/2/2011 | Revised to include new Part B:Implementation Guidance<br>1. Chapter 6: ICAM Implementation Planning<br>2. Chapter 7: Initiative 5: Streamline Collection and Sharing of Digital Identity Data<br>3. Chapter 8: Initiative 6: Fully Leverage PIV and PIV-I Credentials<br>4. Chapter 9: Access Control Convergence<br>5. Chapter 10: Initiative 7: Modernize PACS Infrastructure<br>6. Chapter 11: Initiative 8: Modernize LACS Infrastructure<br>7. Chapter 12: Initiative 9: Implement Federated Identity Capability<br>8. Inclusion of Glossary appendix<br>9. Editorial and formatting corrections<br>10. Terminology updates to maintain consistency between Parts A and B<br>11. Updates to content related to the Federal Public Key Infrastructure to reflect infrastructure upgrades since original publication. |
 | 1.0 | 11/10/2009 | Initial publication of the document, including:<br>1. Chapter 1: Introduction<br>2. Chapter 2: Overview of ICAM<br>Part A: ICAM Segment Architecture<br>3. Chapter 3: ICAM Segment Architecture<br>4. Chapter 4: ICAM Use Cases<br>5. Chapter 5: Transition Roadmap and Milestones |
 
+
 # Introduction
 
 FICAM is the federal government’s implementation of Identity, Credential, and Access Management (ICAM).

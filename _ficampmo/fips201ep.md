@@ -101,11 +101,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 
 - [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
   - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
-<<<<<<< HEAD:_sell/fips201ep.md
-  - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)](https://playbooks.idmanagement.gov/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)](https://playbooks.idmanagement.gov/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}, [SP 800-73-4-based Test Runner](https://csrc.nist.gov/News/2016/New-SP-800-73-4-based-Test-Runner-Release){:target="_blank"}{:rel="noopener noreferrer"}, and the [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
-======
   - Remote Testing - testing organizations can leverage the [Card Conformance Tool (CCT)]({{site.baseurl}}/fpki/tools/cct/){:target="_blank"}{:rel="noopener noreferrer"} and [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"}, [SP 800-73-4-based Test Runner](https://csrc.nist.gov/News/2016/New-SP-800-73-4-based-Test-Runner-Release){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, and the [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"} to generate artifacts to be sent along with the testing application form.
->>>>>>> 0613-poc-review:_ficampmo/fips201ep.md
 - [Personal Identity Verification (PIV) Card Body Approval Procedures, V 11.0 (PDF, April 2023)]({{site.baseurl}}/docs/piv-card-body-approval-procedures.pdf){:target="_blank"}{:rel="noopener noreferrer"} – approval procedures that outline the evaluation criteria, approval mechanisms, and validation test reports to be employed and provided by the Evaluation Laboratory based on their evaluation of a vendor/ supplier’s PIV Card body (product), to be provided to the FIPS 201 EP for evaluation to be placed on the Approved Products List (APL).
 
 ## PIV Card Body Application Package Requirements
@@ -118,8 +114,6 @@ All applicants, please complete the following steps:
 4. Complete and provide the [FIPS 201 Evaluation Program Lab Services Agreement, V3.0.0 (PDF)]({{site.baseurl}}/docs/fips201-evaluation-program-lab-services-agreement.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:download}{:download="fips201-evaluation-program-lab-services-agreement.pdf"} – Required for each product submission.
 5. Complete and provide the [FIPS 201 Evaluation Program Attestations to Federal Acquisition Regulations related to the Trade Agreement Act v3.3]({{site.baseurl}}/docs/fips201-evaluation-program-attestations-to-federal-acquisition-regulations-related-to-the-trade-agreement-act.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:download="fips201-evaluation-program-attestations-to-federal-acquisition-regulations-related-to-the-trade-agreement-act.pdf"} – Required for each product submission.
 6. Complete and provide the [FIPS 201 Evaluation Program Attestations Form for PIV Card Body Approval v1.0]({{site.baseurl}}/docs/fips201-evaluation-program-attestation-form-for-piv-card-body-approval.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each product submission.
-
->>>>>>> 0613-poc-review:_ficampmo/fips201ep.md
 
 ## Derived PIV Credentials
 
