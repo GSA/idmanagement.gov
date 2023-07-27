@@ -272,22 +272,23 @@ To help support agencies in aggressively replacing username and passwords, the O
 2.	Small group, usually 4-8 agencies.
 3.	Actively piloting a solution and sharing challenges and lessons learned.
 
-The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authentications like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and Apple FaceID and roaming authenticators like a Yubico Yubikey or WebAuthN authenticators. There are six main lessons learned from the first FIDO2 CoA cohort.
+The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authentications like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and Apple FaceID and roaming authenticators like Yubico Yubikey or WebAuthN authenticators. There are six main lessons learned from the first FIDO2 CoA cohort.
 
 1.	Agencies need a holistic authenticator strategy to stop handling exception use cases. There is not a single authenticator type that both works across authentication patterns and is phishing-resistant. Agencies must be comfortable in alternative, phishing-resistant authenticators like FIDO2 to replace exception policy alternatives.
-2.	FIDO2 is a commercial standard and becoming as ubiquitous as a password as more devices and browsers natively support them. This creates muscle memory in users improving their experience on government devices that support FIDO2.
-3.	FIDO2 provides a more straightforward and cost efficient approach to a passwordless journey. Biometric options such as face and finger recognition are included in FIDO2 without the need for 3rd party middleware, but dependent on device support.
-4.	Agencies may already have the tools in place to deploy FIDO2 and not know it. If you’re using a FedRAMP identity tool such as Azure Active Directory, Okta, or Ping Identity they already natively support FIDO2. Potentially, no extra cost for platform authenticators.
+2.	FIDO2 is a commercial standard becoming as ubiquitous as a password as more devices and browsers natively support them. This creates muscle memory in users, improving their experience on government devices that support FIDO2.
+3.	FIDO2 provides a more straightforward and cost-efficient approach to a passwordless journey. Biometric options such as face and finger recognition are included in FIDO2 without the need for 3rd party middleware, but dependent on device support.
+4.	Agencies may already have the tools to deploy FIDO2 and not know it. If you’re using a FedRAMP identity tool such as Azure Active Directory, Okta, or Ping Identity, they already natively support FIDO2. Potentially, no extra cost for platform authenticators.
 5.	Plan and produce user guidance and user adoption campaigns. One of the biggest challenges in deploying new technology is ensuring you don’t lose your users on the journey. Hold office hours, ask me anything sessions, or have on-demand videos to help users transition to new tools. See the user experience section of the Windows Hello for Business Playbook as an example.
-6.	The FIDO2 standard and specifically WebAuthN is an internet-based service using APIs. It requires a connected device and may not work in low or no bandwidth environments. Cached credentials and refresh tokens can become a challenge to troubleshoot and manage.
- 
+6.	The FIDO2 standard, and specifically WebAuthN, is an internet-based service using APIs. It requires a connected device and may not work in low or no-bandwidth environments. Cached credentials and refresh tokens can become a challenge to troubleshoot and manage.
+
+ 
 # The Passwordless Journey
 
-An agency's journey toward a passwordless future normally start with a pilot. Follow these three steps from the FIDO2 CoA to plan and execute a successful FIDO2 pilot.
+An agency's journey toward a passwordless future normally starts with a pilot. Follow these three steps from the FIDO2 CoA to plan and execute a successful FIDO2 pilot.
 
-[Step 1 - Recognize authentication patterns and use cases](#step-1---recognize-authentication-patterns-and-use-cases) where your agency is using an exception authenticator.
-[Step 2 - Identify available solutions](#step-2---identify-available-solutions) which may include procuring security keys.
-[Step 3 - Deploy a pilot](#step-3---deploy-a-pilot) and make production considerations.
+1. [Step 1 - Recognize authentication patterns and use cases](#step-1---recognize-authentication-patterns-and-use-cases) where your agency is using an exception authenticator.
+2. [Step 2 - Identify available solutions](#step-2---identify-available-solutions) which may include procuring security keys.
+3. [Step 3 - Deploy a pilot](#step-3---deploy-a-pilot) and make production considerations.
 
 ## Step 1 - Recognize Authentication Patterns and Use Cases
 
