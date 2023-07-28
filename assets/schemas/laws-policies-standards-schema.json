@@ -1,0 +1,117 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "title": "schema for idmanagement.gov policy matrix",
+    "description": "A document representing a law, a government policy, or a technical standard.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "type": {
+                "description": "Authority, law, policy, guidance, or Program",
+                "enum": [
+                    "Authority",
+                    "Law",
+                    "Policy",
+                    "Guidance",
+                    "Program",
+                    "Standard"
+                ]
+            },
+            "shortName": {
+                "description": "The short name of the document",
+                "type": "string"
+            },
+            "longName": {
+                "description": "The full name of the document",
+                "type": "string"
+            },
+            "published": {
+                "description": "The publication date",
+                "type": "string",
+                "format": "date"
+            },
+            "externalURL": {
+                "description": "A URL where the original document can be found",
+                "type": "string",
+                "format": "URL"
+            },
+            "description": {
+                "description": "A long description of the document, can be multiline",
+                "type": "string",
+                "format": "multiline"
+            },
+            "scope": {
+                "description": "The scope of the document, can be 'Worforce Identity', if primarily for government personnel, or 'Public Identity' if primarily for citizens.",
+                "type": "array",
+                "items": {
+                    "enum": [
+                        "Workforce Identity",
+                        "Public Identity"
+                    ]
+                }
+            },
+            "ficam-services": {
+                "description": "The FICAM services this document relates to, if any.",
+                "type": "array",
+                "items": {
+                    "enum": [
+                        "Identity Management",
+                        "Identity Management - Creation",
+                        "Identity Management - Identity Proofing",
+                        "Identity Management - Provisioning",
+                        "Identity Management - Maintenance",
+                        "Identity Management - Identity Aggregation",
+                        "Identity Management - Deactivation",
+                        "Credential Management",
+                        "Credential Management - Sponsorship",
+                        "Credential Management - Registration",
+                        "Credential Management - Generation & Issuance",
+                        "Credential Management - Maintenance",
+                        "Credential Management - Revocation",
+                        "Access Management",
+                        "Access Management - Digital Policy Administration",
+                        "Access Management - Authentication",
+                        "Access Management - Authorization",
+                        "Access Management - Privileged Access Management",
+                        "Federation",
+                        "Federation - Policy Alignment",
+                        "Federation - Authentication Broker",
+                        "Federation - Attribute Exchange",
+                        "Governance",
+                        "Governance - Identity Governance",
+                        "Governance - Analytics",
+                        "Governance - Mitigation"
+                    ]
+                }
+            },
+            "authorized-by": {
+                "description": "The law or regulation authorizing this document or program",
+                "type": "array"
+            },
+            "implemented-by": {
+                "description": "The entity implementing or managing this program",
+                "type": "array"
+            },
+            "authored-by": {
+                "description": "The entity authoring the document",
+                "type": "array"
+            },
+            "subgroup-of": {
+                "description": "The group of which this group is a part.",
+                "type": "array"
+            },
+            "rescinds": {
+                "description": "The previous document that this document rescinds",
+                "type": "array"
+            },
+            "amends": {
+                "description": "The previous document that this document amends",
+                "type": "array"
+            },
+            "subspec-of": {
+                "description": "The specification of which this document is a subspecification",
+                "type": "array"
+            }
+        }
+    }
+}

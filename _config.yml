@@ -102,7 +102,7 @@ primary_navigation:
       - name: PACS 101
         url: /university/pacs/
       - name: ICAM Policy Matrix
-        url: /university/policy-matrix/
+        url: /university/policymatrix/
 
 secondary_navigation:
   - name: Contact Us
@@ -252,3 +252,16 @@ sass:
   style: compressed
   verbose: true
 
+# For page generator
+page_gen-dirs: true
+
+page_gen:
+  - data: "laws-policies-standards"
+    template: "standards_detail"
+    name: "shortName"
+    directory: "policies"
+    #debug: true
+  - data: "ficam-services"
+    template: "services_detail"
+    name: "shortName"
+    directory: "ficam_services"

@@ -70,8 +70,12 @@ university:
     href: /university/pivi/
   - text: ICAM PM 101
     href: /university/pm/
+  # - text: ICAM Policy Matrix - Laws, Policies, and Standards
+  #   href: /university/policy-matrix/
   - text: ICAM Policy Matrix - Laws, Policies, and Standards
-    href: /university/policy-matrix/
+    href: /university/policymatrix/
+  - text: ICAM Policy Matrix - Map
+    href: /university/policymap/
 
 playbooks:
   - text: Introduction
