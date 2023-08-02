@@ -8,7 +8,7 @@ sticky_sidenav: true
 
 subnav:
   - text: Back to Policy Matrix
-    href: {{site.baseurl}}/university/policymatrix/
+    href: "{{site.baseurl}}/university/policymatrix/"
 ---
 
 ## Policy Overview
