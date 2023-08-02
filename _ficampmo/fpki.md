@@ -23,8 +23,6 @@ subnav:
     href: '#federal-pki-document-archive'
 ---
 
-{% include alert-error.html heading="Report an Incident" content="To report a potential key compromise, security incident, or fraud, waste, or abuse involving Federal PKI certificates, please contact fpki-help at gsa.gov with supporting evidence of the incident.." %} 
-
 This page contains information to help Federal Public Key Infrastructure (FPKI) program managers and auditors.
 - It includes the FPKI policies and profiles as well as annual FPKI annual review schedule.
 - It can help auditors assess certification authorities (CAs) operated as part of the FPKI. 
@@ -53,6 +51,7 @@ The FPKI has the following supplementary guidance:
 - [Registration Authority Agreement Template v1.0 (Word, April 2017)]({{site.baseurl}}/docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
 - [FPKI Incident Management Plan (PDF, September 2020)]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident. 
 - [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive) - This pages contains three years of FPKI-related documents.
+- **Report an Incident:** To report a potential key compromise, security incident, or fraud, waste, or abuse involving Federal PKI certificates, please contact fpki-help at gsa.gov with supporting evidence of the incident.  
 
 
 # Annual Review Requirements for All Certification Authorities
