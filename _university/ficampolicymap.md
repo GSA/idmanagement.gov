@@ -1,7 +1,7 @@
 ---
 layout: pagewide
 collection: university
-title: FICAM Policy Matrix
+title: FICAM Policy Matrix - Map
 permalink: /university/policymap/
 sidenav: university
 sticky_sidenav: true

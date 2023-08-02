@@ -17,10 +17,6 @@ subnav:
     href: "#federal-policies"
   - text: Federal Technical Guidance
     href: "#federal-technical-guidance"
-  - text: ICAM Activities and Programs
-    href: "#icam-activities-and-programs"
-  - text: Industry Standards
-    href: "#industry-standards"
 ---
 
 ## Introduction
@@ -31,8 +27,6 @@ Laws, executive policies, regulations, and government standards drive multiple f
 * [Laws and Directives](#laws-and-directives)
 * [Federal Policies](#federal-policies)
 * [Federal Technical Guidance](#federal-technical-guidance)
-* [ICAM Activities and Programs](#icam-activities-and-programs)
-* [Industry Standards](#industry-standards)
 
 ## Policy Overview
 
