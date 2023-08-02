@@ -9,8 +9,8 @@ sidenav: implement
 subnav:
   - text: Configuration Guidea
     href: '#configuration-guides'
-  - text: FPKI Troubleshooting Tools
-    href: '#fpki-troubleshooting-tools'
+  - text: ICAM Troubleshooting Tools
+    href: '#icam-troubleshooting-tools'
   - text: Find Additional Guides
     href: '#find-additional-guides'
    
