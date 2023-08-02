@@ -8,7 +8,7 @@ sticky_sidenav: true
 
 subnav:
   - text: Back to Policy Matrix
-    href: {% link _/_university/ficampolicymap.md %}
+    href: {% link _university/ficampolicymap.md %}
 ---
 
 ## Policy Overview
