@@ -9,20 +9,21 @@ sticky_sidenav: true
 subnav:
     - text: Training
       href: '#training'
-    - text: System Components
-      href: '#system-components'
-    - text: Authoritative Sources
-      href: '#authoritative-sources'
-    - text: Identity Management Systems
-      href: '#identity-management-systems'
-    - text: Access Management Systems
-      href: '#access-management-systems'
-    - text: Credential Management Systems
-      href: '#credential-management-systems'
-    - text: Governance Systems
-      href: '#governance-systems'
-    - text: Agency Endpoints
-      href: '#agency-endpoints'
+# Checking association with other data
+    # - text: System Components
+    #   href: '#system-components'
+    # - text: Authoritative Sources
+    #   href: '#authoritative-sources'
+    # - text: Identity Management Systems
+    #   href: '#identity-management-systems'
+    # - text: Access Management Systems
+    #   href: '#access-management-systems'
+    # - text: Credential Management Systems
+    #   href: '#credential-management-systems'
+    # - text: Governance Systems
+    #   href: '#governance-systems'
+    # - text: Agency Endpoints
+    #   href: '#agency-endpoints'
 
 ---
 

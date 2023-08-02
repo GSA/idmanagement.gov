@@ -7,7 +7,7 @@ sticky_sidenav: true
 sidenav: implement
 
 subnav:
-  - text: Configuration Guidea
+  - text: Configuration Guides
     href: '#configuration-guides'
   - text: ICAM Troubleshooting Tools
     href: '#icam-troubleshooting-tools'

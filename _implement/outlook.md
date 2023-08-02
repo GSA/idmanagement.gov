@@ -12,9 +12,9 @@ subnav:
     - text: Send a Signed Email
       href: '#send-a-signed-email'
     - text: Send an Encrypted Email
-      href: '#send-an-Encrypted-email' 
+      href: '#send-an-encrypted-email' 
     - text: Decrypt an Email
-      href: '#Decrypt-an-email'
+      href: '#decrypt-an-email'
     - text: Other Helpful References
       href: '#other-helpful-references'  
       

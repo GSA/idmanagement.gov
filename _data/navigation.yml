@@ -37,7 +37,7 @@ implement:
   - text: Windows Hello for Business on Azure AD
     href: /implement/whfb/
   - text: Certificate-Based Authentication on Azure AD (Coming Soon!)
-    href: '#'
+    href: '/'
   - text: Sign and Encrypt Email in Outlook
     href: /implement/outlook/
   - text: FPKI Ecosystem Changes
