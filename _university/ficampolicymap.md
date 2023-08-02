@@ -1,14 +1,14 @@
 ---
 layout: pagewide
 collection: university
-title: FICAM Policy Matrix
+title: FICAM Policy Matrix - Map
 permalink: /university/policymap/
 sidenav: university
 sticky_sidenav: true
 
 subnav:
   - text: Back to Policy Matrix
-    href: "{{site.baseurl}}/university/policymatrix/"
+    href: {% link _/_university/ficampolicymap.md %}
 ---
 
 ## Policy Overview
