@@ -14,6 +14,40 @@
   remove: 7/31/2026
   
 - category: Federal Bridge Certificate Policy
+  numberProposal: 3.1
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.1
+  date: 08/01/2023
+  url: /docs/archived/fpki-x509-cert-policy-fbca-31.pdf
+  status: post
+  remove: 08/01/2026
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2023-03
+  name: Proposal 2023-03 | Appointment of Trusted Roles and updates in Section 6.3.2
+  description: Clarify the requirements for the appointment of Trusted Roles, increase Root CA certificate private key and certificate lifetimes, and remove incorrect restriction on private keys associated with cross-certificates.
+  date: 08/01/2023
+  url: /docs/archived/fpki-fbca-cp-2303.pdf
+  status: post
+  remove: 08/01/2026
+  
+- category: Common Certificate Policy
+  numberProposal: 2.4
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.4
+  date: 08/01/2023
+  url: /docs/archived/fpki-x509-cert-policy-common-24.pdf
+  status: post
+  remove: 08/01/2026
+
+- category: Common Change Proposal
+  numberProposal: 2023-04
+  name: Proposal 2023-04 | Appointment of Trusted Roles
+  description: Clarify the requirements for the appointment of Trusted Roles.
+  date: 08/01/2023
+  url: /docs/archived/fpki-common-cp-2304.pdf
+  status: post
+  remove: 08/01/2026
+
+- category: Federal Bridge Certificate Policy
   numberProposal: 3.0
   name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.0
   date: 04/17/2023
