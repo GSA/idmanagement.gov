@@ -112,8 +112,8 @@
  branch: Executive
  agency: Department of Transportation
  credentialProvider: FAA Custom
- ssp: DigiCert Federal SSP
- ca: <a href="#us-department-of-transportation-agency-ca-g5">U.S. Department of Transportation Agency CA G5</a>
+ ssp: DigiCert Federal SSP and WidePoint SSP
+ ca: <a href="#us-department-of-transportation-agency-ca-g5">U.S. Department of Transportation Agency CA G5</a> and <a href="#us-department-of-transportation-agency-ca-g6">U.S. Department of Transportation Agency CA G6</a>
 -
  branch: Executive
  agency: Surface Transportation Board
@@ -712,8 +712,8 @@
  branch: Legislative
  agency: Senate
  credentialProvider: Xtec
- ssp: Symantec Non-Federal
- ca: <a href="#senate-piv-i-ca-g4">Senate PIV-I CA G4</a>
+ ssp: Symantec Non-Federal and WidePoint ORC NFI
+ ca: <a href="#senate-piv-i-ca-g4">Senate PIV-I CA G4</a> and <a href="#senate-piv-i-ca-g6">Senate PIV-I CA G6</a>
 -
  branch: Legislative
  agency: General Accounting Office
