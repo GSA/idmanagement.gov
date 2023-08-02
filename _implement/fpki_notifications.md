@@ -480,7 +480,7 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - Validity: June 6, 2019 to June 6, 2029
 - SHA-1 Hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f 
 - CRL DP: [http://pki.treas.gov/DHS_CA3.crl](http://pki.treas.gov/DHS_CA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
-- 
+
 #### DHS CA4 (2 of 2)
 - Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
