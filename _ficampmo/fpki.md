@@ -53,7 +53,6 @@ The FPKI has the following supplementary guidance:
 - [Registration Authority Agreement Template v1.0 (Word, April 2017)]({{site.baseurl}}/docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
 - [FPKI Incident Management Plan (PDF, September 2020)]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident. 
 - [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive) - This pages contains three years of FPKI-related documents.
-- **Report an Incident:** To report a potential key compromise, security incident, or fraud, waste, or abuse involving Federal PKI certificates, please contact fpki-help at gsa.gov with supporting evidence of the incident.  
 
 
 # Annual Review Requirements for All Certification Authorities
@@ -138,7 +137,7 @@ FPKI affiliates include federal agencies and commercial service providers operat
 2. Providing additional investigation support and/or information about incidents to the FPKI Authorities as they become known, and
 3. Conducting remediation activities once an incident is confirmed.
 
-To report an incident please contact both fpki at gsa dot gov and  fpki-help at gsa dot gov, and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+To report a security incident, such as a key compromise, data breach, or other fraud waste or abuse regarding FPKI CAs or certificates, please contact both fpki at gsa dot gov and  fpki-help at gsa dot gov, and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <!-- # Federal PKI Monthly Activity Report
 
