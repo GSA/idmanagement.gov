@@ -5,6 +5,48 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: FPKI Trust Infrastructure Certificate Practice Statement
+  numberProposal: 6.2
+  name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.2
+  date: 12/14/2022
+  url: /docs/archived/fpki-fpkima-cps-v62.pdf
+  status: post
+  remove: 7/31/2026
+  
+- category: Federal Bridge Certificate Policy
+  numberProposal: 3.1
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.1
+  date: 08/01/2023
+  url: /docs/archived/fpki-x509-cert-policy-fbca-31.pdf
+  status: post
+  remove: 08/01/2026
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2023-03
+  name: Proposal 2023-03 | Appointment of Trusted Roles and updates in Section 6.3.2
+  description: Clarify the requirements for the appointment of Trusted Roles, increase Root CA certificate private key and certificate lifetimes, and remove incorrect restriction on private keys associated with cross-certificates.
+  date: 08/01/2023
+  url: /docs/archived/fpki-fbca-cp-2303.pdf
+  status: post
+  remove: 08/01/2026
+  
+- category: Common Certificate Policy
+  numberProposal: 2.4
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.4
+  date: 08/01/2023
+  url: /docs/archived/fpki-x509-cert-policy-common-24.pdf
+  status: post
+  remove: 08/01/2026
+
+- category: Common Change Proposal
+  numberProposal: 2023-04
+  name: Proposal 2023-04 | Appointment of Trusted Roles
+  description: Clarify the requirements for the appointment of Trusted Roles.
+  date: 08/01/2023
+  url: /docs/archived/fpki-common-cp-2304.pdf
+  status: post
+  remove: 08/01/2026
+
 - category: Federal Bridge Certificate Policy
   numberProposal: 3.0
   name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.0
@@ -73,7 +115,7 @@
 
 - category: Federal Bridge Change Proposal
   numberProposal: 2022-04
-  name: Proposal 2022-04 | Consolidated update to the Federal Bridge Certification Authority Certificate Policy and associated profiles
+  name: Proposal 2022-04 | Consolidated Update to the Federal Bridge Certification Authority Certificate Policy and Associated Profiles
   description: Consolidates CPWG policy recommendations dating back to 2018 and aligns to Common Policy where applicable. It also cleans-up outdated references and requirements, clarifies existing requirements, aligns policy with observed agency practices (e.g., certificate naming), and improves readability.
   date: 05/06/2022
   url: /docs/archived/fpki-fbca-cp-2204.pdf
@@ -90,12 +132,12 @@
 
 - category: Common Change Proposal
   numberProposal: 2022-05
-  name: Proposal 2022-05 | Consolidated changes to the Common Policy Certificate and CRL Profiles
+  name: Proposal 2022-05 | Consolidated Changes to the Common Policy Certificate and CRL Profiles
   description: This proposal incorporates multiple change to the Common Policy Certificate and CRL Profiles for the purpose of alignment to RFC 5280, FIPS 201-3, increased interoperability, and to account for known and acceptable certificate practices.
   date: 9/13/2022
   url: /docs/archived/fpki-common-cp-2205.pdf
   status: post
-  remove: 10/17/2025
+  remove: "*10/17/2025"
 
 - category: FPKIMA Audit Letter
   numberProposal: 2021
@@ -225,7 +267,7 @@
 
 - category: Common Change Proposal
   numberProposal: 2020-01 
-  name: Proposal 2020-01 | PIV-I credentials issued under COMMON requirements
+  name: Proposal 2020-01 | PIV-I Credentials Issued Under COMMON Requirements
   description: Support federally issued and managed PIV-I smart cards issued to non-PIV users under COMMON.
   date: 03/10/2020
   url: /docs/archived/fpki-common-cp-2001.pdf
@@ -426,7 +468,7 @@
   date: 02/28/2019
   url: /docs/archived/fpki-fbca-cp-1901.pdf
   status: post
-  remove: 02/28/2022
+  remove: "*02/28/2022"
 
 - category: Federal Bridge Change Proposal
   numberProposal: 2018-06
@@ -647,7 +689,7 @@
   date: 02/08/2019
   url: /docs/archived/fpki-x509-cert-policy-common-131.pdf
   status: post
-  remove: 04/14/2023
+  remove: "*04/14/2023"
 
 - category: Common Certificate Policy
   numberProposal: 1.30
@@ -655,7 +697,7 @@
   date: 10/4/2018
   url: /docs/archived/fpki-x509-cert-policy-common-130.pdf
   status: post
-  remove: 02/08/2022
+  remove: "*02/08/2022"
 
 - category: Common Certificate Policy
   numberProposal: 1.29
@@ -706,7 +748,7 @@
   date: 10/04/2018
   url: /docs/archived/fpki-x509-cert-policy-fbca-234.pdf
   status: post
-  remove: 04/15/2023
+  remove: "*04/15/2023"
 
 - category: Federal Bridge Certificate Policy
   numberProposal: 2.33

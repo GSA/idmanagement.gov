@@ -3,64 +3,345 @@ Use this section to highlight key elements of your site. Some sites will only ha
 eight.
 {% endcomment %}
 
-<section class="ficam-page-container">
+<!-- Start Freq Searched and RSS Feeds (removed for this sprint to seek other display options)-->
+<!-- <section class="ficam-page-container gsa-top-panel" style="padding-top: 25px;">
 	<div class="grid-container">
 		<div class="partners-container grid-row">
 			<div class="desktop:grid-col-12">
-				<div class="home-partners-title margin-bottom-2">
-					<h2 class="text-center">Information for <span class="text-no-wrap">Our Partners</span></h2>
+				<ul class="usa-card-group">
+					<li class="usa-card tablet:grid-col-6">
+						<div class="usa-card__container gsa-card-shadow">
+							<div class="usa-card__header">
+								<h3 class="site-preview-heading">Most viewed</h3>				
+							</div>
+							<div class="usa-card__media">
+								<div class="usa-card__img">
+									  <img
+										src=""
+										alt="Most viewed"
+									  />
+								</div>
+							</div> 
+							<hr>
+							<div class="usa-card__body gsa-card-small">						
+								{% for link in site.data.mostviewed %}
+								<p>
+									<b><a class="usa-link" href="{{link.mvurl}}"  target="_blank">{{link.mvtext}}</a></b>
+									{% if forloop.last == false %}
+									<hr />
+									{% endif %}
+								</p>
+								{% endfor %}								
+							</div>
+							<hr>
+							<br>
+						</div>
+					</li>
+					<li class="usa-card tablet:grid-col-6">
+						<div class="usa-card__container gsa-card-shadow">
+							<div class="usa-card__header">
+								<h3 class="site-preview-heading">Cyber news</h3>
+								
+							</div>
+							<div class="usa-card__media">
+								<div class="usa-card__img">
+									  <img
+										src=""
+										alt="Cyber news"
+									  />
+								</div>
+							</div> 
+							<hr>
+							<div class="usa-card__body gsa-card-small">
+								source: https://www.cisa.gov/news.xml 
+								{% for feed in site.data.rssfeed %}
+								<b><a class="usa-link" href="{{feed.link}}"  target="_blank">{{feed.title}}</a></b>
+								<p class="usa-collection__description">
+									{{feed.description}}
+								</p>
+								{% if forloop.last == false %}
+								<hr />
+								{% endif %}
+								{% endfor %}
+							</div>
+							<hr>
+							<br>
+						</div>
+					</li>
+				</ul>	
 				</div>
 			</div>
 		</div>
-		<div class="partners-container grid-row home-partners-title" style="margin-top: 0;">
-			<div class="desktop:grid-col-4 padding-2">
-				<div class="grid-row">
-					<div class="tablet:grid-col-3 home-partners-icon-container">
-						{% asset ficampm-icon.png class="home-partners-icon" alt="Sell Products and Services" %}
-					</div>
-					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
-						<div class="home-partners-text">
-							<h3>Vendors</h3>
-							<p class="margin-bottom-4">Sell your Identity, Credential, and Access Management (ICAM) products and services to the federal government.</p>
-							<a href="{{site.baseurl}}/sell/" class="usa-button">Start Process</a>
+</section>		 -->
+<!-- Freq Searched and RSS Feed Cards -->		
+
+<!-- Start of Vendors and Partner Cards -->	
+<section class="ficam-page-container bg-test" style="padding-top:25px;background-color: #f0f0f0;">
+	<div class="grid-container">
+		<div class="partners-container grid-row">
+			<div class="desktop:grid-col-12">
+				<h2></h2>
+				<h2 class="hero-heading" style="text-align: center;color:#000000">Partner with us</h2>
+				<hr><br>				
+				<ul class="usa-card-group">							
+					<li class="usa-card tablet:grid-col-4">
+						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/vendors/')" onkeydown="navigateTo('{{site.baseurl}}/vendors/')" aria-label="Vendors">
+							<div class="usa-card__header">
+								<h3 class="site-preview-heading">Vendors</h3>
+							</div>
+							<!-- Card image area -->
+							<!-- <div class="usa-card__media">
+								<div class="usa-card__img">
+									<img
+									src=""
+									alt="Acquisition professionals header"
+									tabindex="-1"
+								  />
+								</div>
+							</div> -->
+							<hr>
+							<div class="usa-card__body">
+								<p>
+									Sell your identity, credential, and access management ICAM products and services to the federal government.
+								</p>
+							</div>
+							<div class="usa-card__footer">
+								<!-- <button type="button" class="usa-button">Start process</button> -->
+							</div>
 						</div>
-					</div>
-				</div>
-				<hr class="partner-divider desktop:display-none">
-			</div>
-			
-			<div class="desktop:grid-col-4 padding-2">
-				<div class="grid-row">
-					<div class="tablet:grid-col-3 home-partners-icon-container">
-						{% asset arch-icon.png class="usa-media-block__img" alt="Buy Products and Services" %}
-					</div>
-					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
-						<div class="home-partners-text">
-							<h3>Acquisition Professionals</h3>
-							<p class="margin-bottom-4">Adopt innovative Identity, Credential, and Access Management (ICAM) products and services to meet your agency’s mission-needs.</p>
-							<a href="{{site.baseurl}}/buy/" class="usa-button">Start Research</a>
+					</li>
+					<li class="usa-card tablet:grid-col-4">
+						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/acquisition-professionals/')" onkeydown="navigateTo('{{site.baseurl}}/acquisition-professionals/')" aria-label="Acquisition professionals">
+							<div class="usa-card__header">
+								<h3 class="site-preview-heading">Acquisition professionals</h3>
+								
+							</div>
+							<!-- Card image area -->
+							<!-- <div class="usa-card__media">
+								<div class="usa-card__img">
+									  <img
+										src=""
+										alt="Acquisition professionals header"
+										tabindex="-1"
+									  />
+								</div>
+							</div> -->
+							<hr>
+							<div class="usa-card__body">
+								<p>
+									Adopt innovative identity, credential, and access nanagement ICAM products and services to meet your agency's mission-needs.
+								</p>
+							</div>
+							<div class="usa-card__footer">
+								<!-- <button type="button" class="usa-button">Start research</button> -->
+							</div>
 						</div>
-					</div>
-				</div>
-				<hr class="partner-divider desktop:display-none">
-			</div>
-			
-			
-			<div class="desktop:grid-col-4 padding-2">
-				<div class="grid-row">
-					<div class="tablet:grid-col-3 home-partners-icon-container">
-						{% asset playbook-icon.png class="usa-media-block__img" alt="FICAM Governance" %}
-					</div>
-					<div class="tablet:grid-col-9 grid-col-fill tablet:padding-left-4">
-						<div class="home-partners-text">
-							<h3>Program Managers</h3>
-							<p class="margin-bottom-4">Govern and operate FICAM-compliant systems and services.</p>
-							<a href="{{site.baseurl}}/governance/" class="usa-button">Collaborate with Us</a>
+					</li>
+					<li class="usa-card tablet:grid-col-4">
+						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/program-managers/')" onkeydown="navigateTo('{{site.baseurl}}/program-managers/')" aria-label="Program managers">
+							<div class="usa-card__header">
+								<h3 class="site-preview-heading">Program managers</h3>
+							</div>
+							<!-- Card image area -->
+							<!-- <div class="usa-card__media">
+								<div class="usa-card__img">
+									  <img
+										src=""
+										alt="Program managers header"
+										tabindex="-1"
+									  />
+								</div>
+							</div> -->
+							<hr>
+							<div class="usa-card__body">
+								<p>
+									Govern and operate ICAM systems and services.
+								</p>
+							</div>
+							<div class="usa-card__footer">
+								<!-- <button type="button" class="usa-button">Collaborate with Us</button> -->
+							</div>
 						</div>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
-			
 		</div>
-	</div>	
+	</div>
+</section>
+<!-- End of Vendors and Partner Cards -->	
+
+<!-- Start of Lower Half - Functions -->
+<section class="usa-graphic-list usa-section usa-section gsa-icon-panel" style="background-color:#214579;color:#f8f9fa;">
+<div class="grid-container">
+		<h2 class="hero-heading" style="text-align: center">Functions</h2>
+		<hr><br>
+	<!-- Required Links -->
+	<div class="desktop:grid-col-12">	<!-- FICAM PMO -->					
+		<ul class="usa-card-group">							
+			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left">
+				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0"  tabindex="0" onclick="navigateTo('{{site.baseurl}}/ficam/')" onkeydown="navigateTo('{{site.baseurl}}/ficam/')" aria-label="FICAM program management office">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">FICAM program management office</h3>
+					</div>
+					<div class="usa-card__media">
+						<div class="usa-card__img">
+								<img
+								src="{{site.baseurl}}/assets/playbooks/headers/playbook_10.png"
+								alt="FICAM program management office"
+								tabindex="-1" aria-label="FICAM program management office"
+								/>
+							</div>
+					</div>
+					<div class="usa-card__body">
+					<hr>
+						<p>
+							The Federal, Identity, Credential, and Access Management program management office is a collaboration with the Federal CIO Council to mature agency ICAM practices and processes through governmentwide guidance like the FICAM architecture and playbooks on idmanagement.gov.
+						</p>
+					<hr>
+					</div>
+					
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Webpage</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="desktop:grid-col-12">						
+		<ul class="usa-card-group">		
+			<li class="usa-card tablet:grid-col-4"> <!-- FPKI --->
+				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fpki/')" onkeydown="navigateTo('{{site.baseurl}}/fpki/')" aria-label="Federal public key infrastructure guide">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">Federal public key infrastructure governance</h3>
+					</div>
+					<div class="usa-card__media">
+						<div class="usa-card__img">
+							  <img
+							  src="{{site.baseurl}}/assets/playbooks/headers/fpki_header.jpg"
+							  alt="Federal public key infrastructure governance"
+							  tabindex="-1" aria-label="Federal public key infrastructure governance"
+							  />
+							</div>
+					</div>
+					<hr>
+					<div class="usa-card__body">
+						<p>This page contains information to help Federal Public Key Infrastructure (FPKI) program managers and auditors. It includes the FPKI policies and profiles, annual FPKI annual review schedule, tools for compliance submissions, and information on compliance status of Federal PKI Certification Authorities.</p>
+					</div>
+					<hr>
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Webpage</span>
+					</div>
+				</div>
+			</li>
+			<li class="usa-card tablet:grid-col-4"> <!-- FIPS201 EP -->
+				<div class="usa-card__container gsa-card-shadow" tabindex="0" aria-label="FIPS 201 evaluation program">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">FIPS 201 evaluation program</h3>
+					</div>
+					<div class="usa-card__media">
+						<div class="usa-card__img">
+						  <img
+							src="{{site.baseurl}}/assets/playbooks/headers/fips201_header.jpg"
+							alt="FIPS 201 evaluation program"
+							tabindex="-1" aria-label="FIPS 201 evaluation program header graphic"
+						  />
+						</div>
+					</div>
+					<hr>
+					<div class="usa-card__body">
+						<p>The Federal information processing standard 201 evaluation program tests and certifies services and commercial products.</p>
+						<hr>
+						<div class="usa-card__body">
+							<p>
+								<a href="{{site.baseurl}}/fips201ep/" aria-label="FIPS 201 evaluation program" class="usa-button usa-button--accent-cool usa-button--active">FIPS 201 evaluation program</a>
+							</p>
+							<p>
+								<a href="{{site.baseurl}}/fips201/#approved-products---physical-access-control-systems" aria-label="Approved products list" class="usa-button usa-button--accent-cool usa-button--active">Approved product list</a>
+							</p>
+							<p>
+								<a href="{{site.baseurl}}/fips201/#removed-product-list" aria-label="Removed products list" class="usa-button usa-button--accent-cool usa-button--active">Removed product list</a>
+							</p>
+						</div>
+						<hr>
+					</div>
+					<hr>
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Webpage</span>
+					</div>
+				</div>
+			</li>
+			<li class="usa-card tablet:grid-col-4"> <!-- GSA PKI SSP -->
+				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/pkissp/')" onkeydown="navigateTo('{{site.baseurl}}/pkissp/')" aria-label="GSA PKI shared service provider program">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">GSA PKI shared service provider program</h3>
+					</div>
+					<div class="usa-card__media">
+					<div class="usa-card__img">
+						  <img
+							src="{{site.baseurl}}/assets/playbooks/headers/playbook_06.png"
+							alt="GSA PKI shared service provider program"
+							tabindex="-1" aria-label="GSA PKI shared service provider program"
+						  />
+					</div>
+					</div>
+					<hr>
+					<div class="usa-card__body">
+						<p>The General Services Administration GSA, Office of Government-wide Policy, manages the GSA Public Key Infrastructure Shared Services Provider program. The primary program focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.</p>
+					</div>
+					<hr>
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: 2023-06 <br><span class="usa-tag bg-accent-warm">Webpage</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<br><br>
+	<h2  class="hero-heading" style="text-align: center">Playbooks</h2>
+	<hr><br>
+	<!-- Playbooks Section - data driven -->
+	<div class="desktop:grid-col-12">						
+		<ul class="usa-card-group">	
+			{% assign playbooks = site.data.playbooks | sort: "title" %}
+			{% for playbook in playbooks %}			
+			<li class="usa-card tablet:grid-col-4">
+				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
+					<div class="usa-card__header">
+						<h3 class="site-preview-heading">{{playbook.title}}</h3>
+					</div>
+					<div class="usa-card__media">
+					<div class="usa-card__img">
+						  <img
+							src="{{site.baseurl}}{{playbook.header}}"
+							alt="{{playbook.title}}"
+							tabindex="-1" aria-label="{{playbook.title}}"
+						  />
+						</div>
+					</div>
+					<hr>
+					<div class="usa-card__body">
+						<p>{{playbook.description}}</p>
+					</div>
+					<hr>
+					<div class="usa-card__footer">
+						<!-- <button type="button" class="usa-button">Button text</button> -->
+						Latest Update: {{playbook.pubdate}} <br><span class="usa-tag bg-accent-warm">{{playbook.type}}</span>
+					</div>
+				</div>
+			</li>
+	{% if forloop.index == 3 %}
+		</ul>
+	</div>
+	<div class="desktop:grid-col-12">						
+		<ul class="usa-card-group">		
+	{% endif %}
+	{% endfor %}
+</ul>
+</div>
+
+</div>
 </section>

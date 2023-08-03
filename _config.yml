@@ -8,7 +8,8 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: IDManagement.gov
+# title: IDManagement.gov (changed to use just IDManagement without the .gov) 
+title: IDManagement
 email: icam@gsa.gov
 description: IDManagement.gov is a collaboration between the Federal CIO Council and GSA to develop and share leading practices in protecting federal IT systems.
 baseurl: ""
@@ -41,18 +42,67 @@ ga:
 # Site Navigation
 primary_navigation:
   - name: Home
-    description: IDmanagement.gov
     url: /
+  - name: Why FICAM
+    children:
+      - name: FICAM Architecture
+        url: /arch/
+      - name: Zero Trust
+        url: /zero-trust/
+      - name: GSA ICAM Solutions Roadmap
+        url: /icamsolutions/
   - name: Partners
     children:
       - name: Vendors
-        url: /sell/
+        url: /vendors/
       - name: Acquisition Professionals
-        url: /buy/
+        url: /acquisition-professionals/
       - name: Program Managers
-        url: /governance/
-  - name: Approved Product List
-    url: /buy#products
+        url: /program-managers/
+  - name: Implement 
+    children:
+      - name: ICAM Configuration Guides
+        url: /implement/
+      - name: Enterprise Trust of the FCPCA
+        url: /implement/trust-fcpca/
+      - name: Smart Card Logon for Operating Systems
+        url: /implement/scl-windows/
+      - name: Certificate-based Authentication for Cloud
+        url: /implement/whfb/
+      - name: Use Smart Cards with Applications
+        url: /implement/outlook/
+      - name: FIDO2 and Web Authentication (Coming Soon!)
+        url: /home/
+      - name: FPKI Ecosystem Changes
+        url: /fpki/notifications/
+  - name: Coordination Functions
+    children: 
+      - name: FICAM Program
+        url: /ficam/
+      - name: Federal PKI Program
+        url: /fpki/
+      - name: FIPS 201 Evaluation Program
+        url: /fips201ep/
+      - name: GSA PKI SSP Program
+        url: /pkissp/
+  - name: Playbooks
+    url: /playbooks/
+  - name: University
+    children: 
+      - name: Introduction
+        url: /university/
+      - name: PKI 101
+        url: /university/pki/
+      - name: FPKI 101
+        url: /university/fpki/
+      - name: PIV 101
+        url: /university/piv/
+      - name: PIV-I 101
+        url: /university/pivi/
+      - name: PACS 101
+        url: /university/pacs/
+      - name: ICAM Policy Matrix
+        url: /university/policymatrix/
 
 secondary_navigation:
   - name: Contact Us
@@ -68,16 +118,9 @@ secondary_navigation:
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
 searchgov:
-
-  # You should not change this.
   endpoint: https://search.usa.gov
-
-  # replace this with your search.gov account
   affiliate: idmprod
-
-  # replace with your access key
   access_key: zCEoL5u4U5XFzfFSxy8y4Iz6vdtTjsb4U539L_rgDTM=
-
   # this renders the results within the page instead of sending to user to search.gov
   inline: false
 
@@ -87,15 +130,41 @@ searchgov:
 ##########################################################################################
 
 collections:
-  buy:
+  why:
     output: true
-    permalink: /buy/:path/
-  sell:
+    permalink: /why/:path/
+  arch:
     output: true
-    permalink: /sell/:path/
-  governance:
+    permalink: /arch/:path/
+  implement:
     output: true
-    permalink: /governance/:path/
+    permalink: /implement/:path/
+  partners:
+    output: true
+    permalink: /partners/:path/
+  university:
+    output: true
+    permalink: /university/:path/   
+  rss:
+    output: true
+    permalink: /rss/:path/ 
+  playbooks:
+    output: true
+    permalink: /playbooks/:path/ 
+  ficampmo:
+    output: true
+    permalink: /ficam/:path/
+
+
+# Leaving in place: 
+# Unsure of placement in new site.
+  
+  # sell:
+  #   output: true
+  #   permalink: /sell/:path/
+  
+  # Turned on for visibility until Combined 743 Playbook on Governance is complete
+
   pages:
     output: true
     permalink: /:path/
@@ -165,6 +234,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
+
 assets:
   autoprefixer:
     browsers:
@@ -172,18 +242,26 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  sources:
-  ## Updated to @uswds 3.0
-    - node_modules/@uswds/uswds/dist/css
-    - node_modules/@uswds/uswds/dist/fonts
-    - node_modules/@uswds/uswds/dist/img
-    - node_modules/@uswds/uswds/dist/img/favicons
-    - node_modules/@uswds/uswds/dist/img/material-icons
-    - node_modules/@uswds/uswds/dist/img/usa-icons
-    - node_modules/@uswds/uswds/dist/img/usa-icons-bg
-    - node_modules/@uswds/uswds/dist/img/uswds-icons
-    - node_modules/@uswds/uswds/dist/js
-    - node_modules/@uswds/uswds/dist/scss
-    - node_modules/@uswds/uswds/dist/theme
-    - node_modules/@uswds/uswds/packages
-    - node_modules/netlify-cms/dist
+
+sass:
+  source_dir: _sass
+  load_paths:
+    - node_modules/@uswds/uswds/dist/
+  sourcemap: development
+  quiet_deps: true
+  style: compressed
+  verbose: true
+
+# For page generator
+page_gen-dirs: true
+
+page_gen:
+  - data: "laws-policies-standards"
+    template: "standards_detail"
+    name: "shortName"
+    directory: "policies"
+    #debug: true
+  - data: "ficam-services"
+    template: "services_detail"
+    name: "shortName"
+    directory: "ficam_services"

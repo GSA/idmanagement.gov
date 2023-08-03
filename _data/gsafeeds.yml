@@ -1,0 +1,15 @@
+- feedid: 001
+  name: CISA Feeds
+  website: https://www.cisa.gov
+  description: CISA Website RSS, I added a long description for text formatting and to see how text looks is the description is long.
+  source: https://www.cisa.gov/news.xml
+  expanded: true
+  status: active 
+
+- feedid: 002
+  name: Fake Feeds 2
+  website: https://www.fakewebsite.gov
+  description: Fake Website RSS Feeds, which are feed from a .yml file located in the data folder. This code loops through each rss feed listed there and displays it on the page.
+  expanded: false
+  source: https://www.cisa.gov/news.xml
+  status: active 

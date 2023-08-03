@@ -1,0 +1,45 @@
+# Most Viewed YAML 
+# for Most viewed section on front page of IDManagement.gov
+# File: mostviewed.yml
+#
+# Legend:
+# 
+# linktext: text to describe the page or resource
+# linkurl: 
+#
+
+# The following links are required to be posted on the website for user access 
+# These links were added to the home page during the Arch Redesign 2023
+
+- mvtext: GSA PKI Shared Service Provider Program Guide
+  mvurl: docs/roadmap-ficam.pdf
+
+- mvtext: Federal Zero Trust Strategy (M-22-09)
+  mvurl: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
+
+- mvtext: "Enabling Mission Delivery through Improved Identity, Credential, and Access"
+  mvurl: https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf
+
+- mvtext: Managing Information as a Strategic Resource (OMB Circular A-130)
+  mvurl: https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/circulars/A130/a130revised.pdf
+
+
+# Links below this level can change and be updated on a regular weekly basis
+# Top 5 page data from the GSA's Google Analytics is used to poulate this section.
+#  
+# - mvtext: Most visited site 1
+#   mvurl: #
+
+# - mvtext: Most visited site 2
+#   mvurl: # 
+
+# - mvtext: Most visited site 3
+#   mvurl: #
+
+# - mvtext: Most visited site 4
+#   mvurl: #
+
+# - mvtext: Most visited site 5
+#   mvurl: #
+
+

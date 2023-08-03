@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/ruby:2.7.5-browsers
+      # - image: cimg/ruby:2.7.5-browsers (older ruby)
+      - image: cimg/ruby:3.1.3-browsers
     steps:
       - checkout
       - restore_cache:

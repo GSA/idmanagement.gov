@@ -1,0 +1,42 @@
+# rss:
+#   channel:
+#     title: CISA News
+#     link: https://www.cisa.gov/
+#     description: ''
+#     language: en
+# item:
+
+- title: Joint Statement on the Strategic Dialogue on Cybersecurity of Civil Society Under Threat of Transnational Repression
+  link: https://www.cisa.gov/news-events/news/joint-statement-strategic-dialogue-cybersecurity-civil-society-under-threat-transnational-repression
+  description: The following is the text of a joint statement committed to by the governments of Australia, Canada, Denmark, Estonia, France, Japan, New Zealand, Norway, the United Kingdom, and the United States.
+  pubDate: Thu, 30 Mar 23 12:00:00 +0000
+  creator: CISA
+  guid: /node/17798
+
+- title: Readout from CISA's Sixth Cybersecurity Advisory Committee Meeting
+  link: https://www.cisa.gov/news-events/news/readout-cisas-sixth-cybersecurity-advisory-committee-meeting
+  description: Today, the Cybersecurity and Infrastructure Security Agency (CISA) held its sixth Cybersecurity Advisory Committee meeting, the first quarterly meeting of 2023.
+  pubDate: Tue, 21 Mar 23 12:00:00 +0000
+  creator: CISA
+  guid: /node/17729
+
+- title: Director Easterly Announces New Members to Join CISA's Cybersecurity Advisory Committee
+  link: https://www.cisa.gov/news-events/news/director-easterly-announces-new-members-join-cisas-cybersecurity-advisory-committee
+  description: Today, the Cybersecurity and Infrastructure Security Agency (CISA) Director Jen Easterly announced the appointment of additional members to the CISA Cybersecurity Advisory Committee (CSAC), bringing onboard additional experts from the public and private sectors.
+  pubDate: Mon, 20 Mar 23 12:00:00 +0000
+  creator: CISA
+  guid: /node/17698
+
+- title: CISA Establishes Ransomware Vulnerability Warning Pilot Program
+  link: https://www.cisa.gov/news-events/news/cisa-establishes-ransomware-vulnerability-warning-pilot-program
+  description: 'Cybersecurity and Infrastructure Security Agency (CISA) announces today the establishment of the Ransomware Vulnerability Warning Pilot (RVWP) as authorized by the Cyber Incident Reporting for Critical Infrastructure Act (CIRCIA) of 2022.'
+  pubDate: Mon, 13 Mar 23 12:00:00 +0000
+  creator: CISA
+  guid: /node/17610
+
+- title: Director Easterly Visits Carnegie Mellon University, Calls for Radical Change for Technology Product Safety in Major Address
+  link: https://www.cisa.gov/news-events/news/readout-director-easterly-visits-carnegie-mellon-university-calls-radical-change-technology-product
+  description: 'Cybersecurity and Infrastructure Security Agency (CISA) Director Jen Easterly travels to Carnegie Mellon University (CMU) to deliver a speech that called on technology providers to do more to prioritize security.'
+  pubDate: Mon, 27 Feb 23 12:00:00 +0000
+  creator: CISA
+  guid: /node/17480

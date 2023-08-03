@@ -1,0 +1,29 @@
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+{% if include.messages.size > 0 %}
+<!-- Message Center will shows when messagecenter has messages -->
+<div id="gsaMessageCenter" class="carousel slide carousel-fade  grid-container"  data-bs-ride="carousel">
+  <div class="carousel-inner grid-container"  style="height: 100%;">
+      <!-- Start of Message Center -->
+      {% for message in include.messages %}
+      {% if forloop.first %}
+      <div class="carousel-item active" data-bs-interval="{{message.displaytime}}">
+      {% else %}
+      <div class="carousel-item" data-bs-interval="{{message.displaytime}}">
+      {% endif %}
+        <div class="usa-alert usa-alert--{{message.type}}">
+          <div class="usa-alert__body">
+            <h4 class="usa-alert__heading">{{message.heading}}</h4>
+            <p class="usa-alert__text">
+              {{message.content}}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!-- End of Message Center -->
+  </div>
+</div>
+{% else %}
+<!-- No Messages in the Message Center -->
+{% endif %}

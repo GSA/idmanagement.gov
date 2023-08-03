@@ -1,0 +1,91 @@
+# GSA: IDManagement.gov 
+# Polices for _university/resources.md
+# Jekyll access: site.data.resources
+# Format: YAML
+# 
+# Legend: 
+# name: name of resource
+# pubdate: the year(YYYY) or full name of month and Year(M YYYY) 
+# url: address on the document or site
+# target: options(_blank|_self) _blank = new browser window, _self = replace current page content
+# summary: description of the additional resource
+# source: web address of website, name of site, governing orgainzation, or regulatory body
+# expanded: options(true|false) default is false, which means the accordion is closed in it's initial state
+# 
+# See: Blank Resource Template at the end of this file to create a new entry
+# General Rule: if the desired default display state of the accordion is `expanded`, set the expanded property to `true` (default is `false`) to keep the page condensed.
+# Note: default setting are listed last, not to get in the way of data entry
+#
+
+- name: "NIST FISMA Implementation Project: Risk Management Framework Overview"
+  summary: The selection and specification of security controls for a system is accomplished as part of an organization-wide information security program that involves the management of organizational risk (that is, the risk to the organization or to individuals associated with the operation of a system). The management of organizational risk is a key element in the organization's information security program and provides an effective framework for selecting the appropriate security controls for a system (the security controls necessary to protect individuals and the operations and assets of the organization).
+  pubdate: August 2020
+  url: https://csrc.nist.gov/projects/risk-management/rmf-overview
+  source: National Institute of Standards and Technology
+  target: _blank
+  expanded: false
+  doctype: Website
+
+- name: "NIST SP 800-63 Frequently Asked Questions (FAQs)"
+  summary: "The Frequently Asked Questions for NIST SP 800-63-3: Digital Identity Guidelines answers recurring questions to provide additional clarification."
+  pubdate: July 2020
+  url: https://pages.nist.gov/800-63-FAQ/
+  source: National Institute of Standards and Technology
+  target: _blank
+  expanded: false
+  doctype: Website
+
+- name: "NIST SP 800-63-3 Implementation Resources"
+  summary: "These resources are intended as informative implementation guidance for NIST SP 800-63-3. These implementation resources provide guidance for SP 800-63-3 in three parts: Part A addresses SP 800-63A, Part B addresses SP 800-63B, and Part C addresses SP 800-63C."
+  pubdate: July 2020
+  url: https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf
+  source: National Institute of Standards and Technology
+  target: _blank
+  expanded: false
+  doctype: PDF
+
+- name: "NIST: Privacy Framework"
+  summary: The Privacy Framework is a voluntary tool intended to help organizations identify and manage privacy risk to build innovative products and services while protecting individuals’ privacy. The Privacy Framework approach to privacy risk is to consider privacy events as potential problems individuals could experience arising from system, product, or service operations with data, whether in digital or non-digital form, through a complete lifecycle from data collection through disposal.
+  pubdate: January 2020
+  url: https://www.nist.gov/privacy-framework/new-framework
+  source: National Institute of Standards and Technology
+  target: _blank
+  expanded: false
+  doctype: Website
+
+- name: "NIST White Paper: Best Practices for Privileged User PIV Authentication"
+  summary: This white paper was developed in response to the Cybersecurity Strategy and Implementation Plan to explain the need for multifactor PIV-based user authentication for privileged users. It provides best practices for agencies implementing PIV authentication for privileged users.
+  pubdate: April 2016
+  url: https://csrc.nist.gov/publications/detail/white-paper/2016/04/21/best-practices-for-privileged-user-piv-authentication/final
+  source: National Institute of Standards and Technology
+  target: _blank
+  expanded: false
+  doctype: Website
+
+- name: "Continuous Diagnostics and Mitigation"
+  summary: "The Continuous Diagnostics and Mitigation (CDM) Program is an approach to fortifying the cybersecurity of government networks and systems. The CDM Program provides cybersecurity tools, integration services, and dashboards to participating agencies to support them in improving their respective security posture. The CDM approach focuses on five areas for the federal enterprise: Data Protection Management, Network Security Management, Identity and Access Management, Asset Management, and Monitoring and Dashboards. "
+  pubdate: 
+  url: https://www.cisa.gov/cdm
+  source: CISA Central
+  target: _blank
+  expanded: false
+  doctype: Website
+
+- name: "Application Rationalization Playbook"
+  summary: This playbook is a practical guide for application rationalization and IT portfolio management under the federal government's Cloud Smart initiatives. Application rationalization will help federal agencies mature IT portfolio management capabilities, empower leaders to make informed decisions, and improve the delivery of key mission and business services. It requires buy-in from stakeholders across the enterprise, including senior leaders, technology staff members, cybersecurity experts, business leads, financial practitioners, acquisition and procurement experts, and end user communities. Rationalization efforts rely on leadership support and continual engagement with stakeholders to deliver sustainable change. 
+  pubdate: June 2019
+  url: https://www.cio.gov/assets/files/Application-Rationalization-Playbook.pdf
+  source: CIO Council
+  target: _blank
+  expanded: false
+  doctype: PDF
+
+# Additional Resource Blank Template
+# - name:
+#   summary:
+#   pubdate:
+#   url:
+#   source: 
+#   target: _blank
+#   expanded: false
+#   doctype: PDF

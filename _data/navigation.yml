@@ -1,45 +1,125 @@
-## Buy
+## sidenav yaml
+arch:
+  - text: FICAM Architecture
+    href: /arch/
+  - text: Zero Trust Alignment
+    href: /zero-trust/
+  - text: GSA ICAM Solutions and Shared Services Roadmap
+    href: /icamsolutions/
 
-buy:
-  - text: Acquisition Overview
-    href: /buy/
-  - text: Trust Services
-    href: /buy/trust-services/
-  - text: GSA ICAM Solutions and Shared Services
-    href: /buy/icamsolutions/
-  - text: GSA PKI Shared Service Provider Program
-    href: /buy/gsapkissp/
-  - text: FIPS 201 Approved Product List - PIV Cards
-    href: /approved-products-list-piv/
-  - text: FIPS 201 Approved Product List - PACS
-    href: /approved-products-list-pacs-products/
-  - text: FIPS 201 Removed Product list
-    href: /buy/removed-products-list/
-    
-## Sell
-    
-sell:
-  - text: Vendor Overview
-    href: /sell/
+partners:
+  - text: Vendors
+    href: /vendors/
+  - text: Acquisition Professionals
+    href: /acquisition-professionals/
+  - text: Program Managers 
+    href: /program-managers/
+  - text: FIPS 201 - Approved Product List
+    href: /fips201/#approved-products---physical-access-control-systems # url updated to list everywhere?
+  - text: Phishing-Resistant Product Criteria
+    href: /phish-criteria/
+  - text: Federal Workforce Identity Services
+    href: /trust-services/
+
+implement:
+  - text: Introduction
+    href: /implement/
+  - text: Enable Trust for the FCPCA
+    href: /implement/trust-fcpca/
+  - text: Smart Card Logon For Windows Domains
+    href: /implement/scl-windows/
+  - text: Smart Card Logon for MacOS
+    href: /implement/scl-macos/
+  - text: Smart Card Logon for SSH
+    href: /implement/scl-ssh/
+  - text: Smart Card Logon for Firefox
+    href: /implement/scl-firefox/
+  - text: Windows Hello for Business on Azure AD
+    href: /implement/whfb/
+  - text: Certificate-Based Authentication on Azure AD (Coming Soon!)
+    href: '/'
+  - text: Sign and Encrypt Email in Outlook
+    href: /implement/outlook/
+  - text: FPKI Ecosystem Changes
+    href: /fpki/notifications/
+  - text: FPKI Test Environment
+    href: /implement/fpkicite/
+
+functions:
+  - text: FICAM Program
+    href: /ficam/
+  - text: Federal PKI Governance
+    href: /fpki/
   - text: FIPS 201 Evaluation Program
-    href: /fips201/
-  - text: FIPS 201 Announcements
-    href: /sell/fipsannouncements/
-    
-## Governance
+    href: /fips201ep/
+  - text: GSA PKI Shared Service Provider Program
+    href: /pkissp/
 
-governance:
-  - text: Governance Overview
-    href: /governance/
-  - text: FICAM Governance
-    href: /governance/ficam/
-  - text: FPKI Policy and Compliance Audit
-    href: /governance/fpkiaudit/
-  - text: FPKI Archived Documents
-    href: /governance/fpkiarchive/
-    
-## Main Site
-    
+university:
+  - text: Introduction
+    href: /university/ 
+  - text: PKI 101
+    href: /university/pki/
+  - text: Federal PKI 101
+    href: /university/fpki/
+  - text: PACS 101
+    href: /university/pacs/
+  - text: PIV 101
+    href: /university/piv/
+  - text: PIV Interoperable 101
+    href: /university/pivi/
+  - text: ICAM PM 101
+    href: /university/pm/
+  # - text: ICAM Policy Matrix - Laws, Policies, and Standards
+  #   href: /university/policy-matrix/
+  - text: ICAM Policy Matrix - Laws, Policies, and Standards
+    href: /university/policymatrix/
+  - text: ICAM Policy Matrix - Map
+    href: /university/policymap/
+
+playbooks:
+  - text: Introduction
+    href: /playbooks/
+  - text: Cloud Identity Playbook
+    href: /playbooks/cloud/
+  - text: Digital Autopen Playbook 
+    href: /playbooks/autopen/ 
+  - text: Digital Identity Risk Assessment Playbook
+    href: /playbooks/dira/ 
+  - text: Digital Worker Identity Playbook
+    href: /playbooks/dw/ 
+  - text: Enterprise Single Sign-On Playbook
+    href: /playbooks/sso/ 
+  - text: ICAM Governance Framework Version 1.0
+    href: /docs/playbook-identity-governance-framework.pdf
+  - text: Identity Lifecycle Management Playbook
+    href: /playbooks/ilm/ 
+  - text: Privileged Identity Playbook
+    href: /playbooks/pam/ 
+  - text: Digitally Sign a Word Document
+    href: /playbooks/signword/
+  - text: Digitally Sign a Federal Register Notice
+    href: /playbooks/signfedregister/
+  - text: Windows Hello for Business Playbook
+    href: /playbooks/whfb/
+
+# Announcements moved to internal page see: /fpki/notifications/#fpki-announcements  
+# fpkiannouncements:
+#   - text: Back to FPKI Page
+#     href: /fpki/notifications
+#   - text: Public Trust TLS PKI CP
+#     href: /fpki/announcements/PT-TLS-CP/
+#   - text: CPCT Tool Update
+#     href: /fpki/announcements/cpct-update101/
+#   - text: FCPCA SIA LDAP Decommissioning (2022) ## Oct 2023
+#     href: /fpki/announcements/ldap-removal/
+#   - text: CPCT Tool Transition
+#     href: /fpki/announcements/cpct-transition/
+#   - text: New Test Tools Available (2021) ## May 2024
+#     href: /fpki/announcements/test-tools/
+#   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
+#     href: /fpki/announcements/common-g2-update/ 
+ 
 policy:
   - text: Contact Us
     href: /contact-us/

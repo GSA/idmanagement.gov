@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/gexfjs.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/jquery-ui-1.13.min.css" />
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/accordion.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/respond.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-migrate-3.3.2.min.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-ui-1.13.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
+
+{% comment %}
+This template is for a single page that does not have a date associated with it. For example, an about page.
+{% endcomment %}
+
+<div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+      {% if sidenav %}
+        <div class="usa-layout-docs__sidenav desktop:grid-col-3{% if page.sticky_sidenav %} usa-sticky-sidenav{% endif %}">
+          {% include sidenav.html links=sidenav %}
+        </div>
+      {% endif %}
+
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose{% if sidenav %} desktop:grid-col-9{% endif %}" id="main-content">
+        {% if page.title %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+        {{ content }}
+      </main>
+    </div>
+  </div>
+</div>

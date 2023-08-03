@@ -1,0 +1,28 @@
+
+- heading: This is a normal message
+  message: This is the first carousel message, no link(Normal)
+  importance: info
+  linkto: #
+  linktext: 
+  seconds: 50000
+
+- heading: This is a link to a PDF
+  message: This is the second message linked to a PDF.(Notice)
+  importance: warning
+  linkto: #
+  linktext: Get the PDF Here.
+  seconds: 50000
+
+- heading: This is a warning... 
+  message: This is a third carousel message which is a warning.(Warning)
+  importance: important
+  linkto: #
+  linktext: Visit IRS.gov
+  seconds: 100000
+
+- heading: This is a success message
+  message: This is the fourth carousel message.(Success)
+  importance: success
+  linkto: https://playbooks.idmanagement.gov
+  linktext: Go to Playbooks Website
+  seconds: 50000

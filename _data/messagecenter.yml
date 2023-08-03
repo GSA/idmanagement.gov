@@ -1,0 +1,50 @@
+# GSA: IDManagement.gov 
+# Description: Displays different types of messages in header of website to user, if more than one set, they rotate.
+# Messages for _include/message-center.html
+# Jekyll access: site.data.messagecenter.yml
+# Format: YAML
+# Note: To make a messge first, make it the first message in the yaml list below.
+# 
+# Legend: 
+# type: the type of message you want to display: options(info, warning, error, success)
+# heading: Bolded heading text for the message
+# content: The actual message you want to display 
+# description:(not displayed) descriptive note for this message
+# displaytime: amount of time in milliseconds message displays if more than one message is set to display (default: 10000 = 10 sec)
+# active:(not displayed) if message is active = true, if not active false
+# date:(not displayed) date this message was posted
+# by:(not displayed) for record keeping of who posted message
+
+- type: info
+  heading: Info
+  content: Operational Status - Open, normal operations.
+  description: Information  Message
+  displaytime: 10000
+  active: true
+  date: 04/04/2023
+
+- type: success
+  heading: Success
+  content: Successful operational Status - Open, normal operations.
+  description: 
+  displaytime: 10000
+  active: true
+  date: 04/04/2023
+
+
+- type: warning
+  heading: Warning
+  content: Website is under development and content being updated.
+  description: Error Messag
+  displaytime: 10000
+  active: true  
+  date: 04/04/2023
+
+
+- type: error
+  heading: Error
+  content: No errors reported.
+  description: Error message for site
+  displaytime: 10000
+  active: true
+  date: 04/04/2023
