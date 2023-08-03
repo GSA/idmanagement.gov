@@ -1,0 +1,116 @@
+- &IDM
+  shortName: "Identity Management"
+  description: >
+    Identity Management is how an agency collects, verifies, and manages attributes 
+    and entitlements to establish and maintain enterprise identities for federal government 
+    employees, contractors, and authorized mission partners.
+- &IDM-CREATION
+  shortName: "Identity Management - Creation"
+  description: >
+    Establish an identity made of attributes that define a person or entity.
+- &IDM-PROOFING
+  shortName: "Identity Management - Identity Proofing"
+  description: >
+    Use identity attributes to connect a digital identity to a real-world entity.
+- &IDM-PROVISIONING
+  shortName: "Identity Management - Provisioning"
+  description: >
+    Create, manage, and delete accounts and entitlements.
+- &IDM-MAINTENANCE
+  shortName: "Identity Management - Maintenance"
+  description: >
+    Maintain accurate and current attributes in an identity record over its lifecycle.
+- &IDM-AGGREGATION
+  shortName: "Identity Management - Identity Aggregation"
+  description: >
+    Find and connect disparate identity records for the same person or entity.
+- &IDM-DEACTIVATION
+  shortName: "Identity Management - Deactivation"
+  description: >
+    Deactivate or remove enterprise identity records.
+- &CRED
+  shortName: "Credential Management"
+  description: >
+    Credential Management is how an agency issues, manages, and revokes credentials bound to 
+    enterprise identities.
+- &CRED-SPONSORSHIP
+  shortName: "Credential Management - Sponsorship"
+  description: >
+    Formally establish that a person or entity requires a credential.
+- &CRED-REGISTRATION
+  shortName: "Credential Management - Registration"
+  description: >
+    Collect the information needed from a person or entity to issue them a credential.
+- &CRED-ISSUANCE
+  shortName: "Credential Management - Generation & Issuance"
+  description: >
+    Assign a credential to a person or entity.
+- &CRED-MAINTENANCE
+  shortName: "Credential Management - Maintenance"
+  description: >
+    Maintain a credential throughout its lifecycle.
+- &CRED-REVOCATION
+  shortName: "Credential Management - Revocation"
+  description: >
+    Revoke a credential from a person or entity, or deactivate an authenticator.
+- &ACCESS
+  shortName: "Access Management"
+  description: >
+    Access Management is how an agency authenticates enterprise identities and authorizes appropriate 
+    access to protected services.
+- &ACCESS-POLICY
+  shortName: "Access Management - Digital Policy Administration"
+  description: >
+    Create and maintain the technical access requirements that govern access to protected agency services.
+- &ACCESS-AUTHENTICATION
+  shortName: "Access Management - Authentication"
+  description: >
+    Verify that a claimed identity is genuine based on valid credentials.
+- &ACCESS-AUTHORIZATION
+  shortName: "Access Management - Authorization"
+  description: >
+    Grant or deny access requests to protected agency services based on access requirements, 
+    identity attributes, and entitlements.
+- &ACCESS-PAM
+  shortName: "Access Management - Privileged Access Management"
+  description: >
+    Protect access to accounts that have access permissions that can affect IT system 
+    configurations and data security (e.g., superusers, domain administrators, or global administrators).
+- &FEDERATION
+  shortName: "Federation"
+  description: >
+    Federation is the technology, policies, standards, and processes that allow an agency to accept digital 
+    identities, attributes, and credentials managed by other agencies.
+- &FEDERATION-POLICY
+  shortName: "Federation - Policy Alignment"
+  description: >
+    Develop relationships and a common understanding between parties by establishing authorities, policies, 
+    standards, and principles.
+- &FEDERATION-BROKER
+  shortName: "Federation - Authentication Broker"
+  description: >
+    Transform an authentication event into an alternative format, such as an assertion, containing claims 
+    about the entity and the authentication transaction, to grant access to a resource.
+- &FEDERATION-ATTRIBUTE
+  shortName: "Federation - Attribute Exchange"
+  description: >
+    Discover and acquire identity or other attributes between different systems to promote access 
+    decisions and interoperability.
+- &GOVERNANCE
+  shortName: "Governance"
+  description: >
+    Governance is the set of practices and systems that guides ICAM functions, activities, and outcomes.
+- &GOVERNANCE-IDENTITY
+  shortName: "Governance - Identity Governance"
+  description: >
+    The systems, solutions, and rules that link enterprise personnel, applications, and data to help 
+    agencies manage access and risk.
+- &GOVERNANCE-ANALYTICS
+  shortName: "Governance - Analytics"
+  description: >
+    Leverage continuous analytics data to identify if someone has entitlements that conflict with access 
+    requirements.
+- &GOVERNANCE-MITIGATION
+  shortName: "Governance - Mitigation"
+  description: >
+    Correct the problems and address risks, discovered by analysis, that may occur during standard operations.

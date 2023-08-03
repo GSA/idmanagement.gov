@@ -7,10 +7,10 @@ sticky_sidenav: true
 sidenav: implement
 
 subnav:
-  - text: Configuration Guidea
+  - text: Configuration Guides
     href: '#configuration-guides'
-  - text: FPKI Troubleshooting Tools
-    href: '#fpki-troubleshooting-tools'
+  - text: ICAM Troubleshooting Tools
+    href: '#icam-troubleshooting-tools'
   - text: Find Additional Guides
     href: '#find-additional-guides'
    

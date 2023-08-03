@@ -17,13 +17,11 @@ subnav:
     href: '#compliance-test-tools-for-annual-reviews'
   - text: Audit Information for the FPKI Management Authority
     href: '#audit-information-for-the-fpki-management-authority'
-  - text: Federal PKI Monthly Activity Report
-    href: '#federal-pki-monthly-activity-report'
+  # - text: Federal PKI Monthly Activity Report
+  #   href: '#federal-pki-monthly-activity-report'
   - text: Federal PKI Document Archive
     href: '#federal-pki-document-archive'
 ---
-
-{% include alert-error.html heading="Report an Incident" content="To report a potential key compromise, security incident, or fraud, waste, or abuse involving Federal PKI certificates, please contact fpki-help at gsa.gov with supporting evidence of the incident.." %} 
 
 This page contains information to help Federal Public Key Infrastructure (FPKI) program managers and auditors.
 - It includes the FPKI policies and profiles as well as annual FPKI annual review schedule.
@@ -38,13 +36,12 @@ The Federal Public Key Infrastructure (FPKI) provides the government with a trus
 - [FPKI 101]({{site.baseurl}}/university/fpki/)
 - [PIV 101]({{site.baseurl}}/university/piv/)
 
-The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-infrastructure-policy-authority) maintains two certificate policies (the Common Policy Framework and the Federal Bridge). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
+The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-infrastructure-policy-authority) maintains three certificate policies (the Common Policy Framework and the Federal Bridge). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
 
 | Federal PKI Policy | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
 | Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.5]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.2]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
-| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.1]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
-| Federal Bridge PIV-I | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.2]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} and <br>[PIV-I for Federal Agencies]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"}  | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
+| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.1]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} <br><br> [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.2]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} <br><br> and [PIV-I for Federal Agencies]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} <br><br> [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) <br><br> [Bridge Change Proposals]({{site.baseurl}}/governance/fpkiarchive/) |
 | Federal Public Trust TLS | [U.S. Federal Public Trust TLS PKI Certificate Policy v1.1]({{site.baseurl}}/docs/us-federal-public-trust-tls-cp.pdf){:target="_blank"}{:rel="noopener noreferrer"} | Profiles are included in Section 7 of the Policy | No change proposals |
 
 The FPKI has the following supplementary guidance:
@@ -54,6 +51,7 @@ The FPKI has the following supplementary guidance:
 - [Registration Authority Agreement Template v1.0 (Word, April 2017)]({{site.baseurl}}/docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
 - [FPKI Incident Management Plan (PDF, September 2020)]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident. 
 - [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive) - This pages contains three years of FPKI-related documents.
+- **Report an Incident:** To report a potential key compromise, security incident, or fraud, waste, or abuse involving Federal PKI certificates, please contact fpki-help at gsa.gov with supporting evidence of the incident.  
 
 
 # Annual Review Requirements for All Certification Authorities
@@ -132,7 +130,7 @@ The FPKIMA Certification Practice Statement (CPS) documents the operational prac
 - [U.S. FPKI Audit Letter of Compliance (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2020-2021 Compliance Audit for the FPKI Trust Infrastructure Systems.
 - [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-# Federal PKI Monthly Activity Report
+<!-- # Federal PKI Monthly Activity Report
 
 Updated: May 3, 2023 
 
@@ -200,7 +198,7 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | U.S. Department of State AD Root CA | FCPCA | 100 |
 | US Treasury Root CA | FCPCA | 100 |
 | Verizon SSP CA A2 | FCPCA	| 100 |
-| WidePoint ORC SSP 5	| FCPCA	| 100 |
+| WidePoint ORC SSP 5	| FCPCA	| 100 | -->
 
 # Federal PKI Document Archive
 
