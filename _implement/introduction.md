@@ -49,9 +49,10 @@ ICAM can leverage a number of open source protocols for interoperability and dat
 
 1. Federal PKI Validation
    1. [FPKI Ecosytem Changes]({{site.baseurl}}/fpki/notifications) - This page contains three sets of information.
-      1. [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph) - The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem
-      2. [PIV Issuer Information]({{site.baseurl}}/fpki/notifications/#piv-issuer-information) - List of active PIV issuing CAs with end entity certificate distribution points.
-      3. [FPKI System Change and Notification]({{site.baseurl}}/fpki/notifications/#notifications) - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
+      1. [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph) - The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem.
+      2. [FPKI Certificate Bundle]({{site.baseurl}}/_implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b){:target="_blank"}{:rel="noopener noreferrer"} - A certificate bundle in .p7b format that contains all CA certificfates that chain to the Common Policy CA and can be viewed in the FPKI Graph.
+      3. [PIV Issuer Information]({{site.baseurl}}/fpki/notifications/#piv-issuer-information) - List of active PIV issuing CAs with end entity certificate distribution points.
+      4. [FPKI System Change and Notification]({{site.baseurl}}/fpki/notifications/#notifications) - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
    2. [Personal Identify Verification (PIV) Cert Validator Tool](https://pv.test.max.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The PIV Certificate Validator is a website application hosted by Max.gov that verifies the certificates found on a PIV card. This tool is helpful in troubleshooting browser authentication issues.
    3. [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"} - A consolidated list of public repository information for FPKI resources.
 2. Federal PKI Deep Analysis
