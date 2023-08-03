@@ -17,6 +17,8 @@ subnav:
     href: '#compliance-test-tools-for-annual-reviews'
   - text: Audit Information for the FPKI Management Authority
     href: '#audit-information-for-the-fpki-management-authority'
+  - text: Report an Incident
+    href: '#report-an-incident'
   # - text: Federal PKI Monthly Activity Report
   #   href: '#federal-pki-monthly-activity-report'
   - text: Federal PKI Document Archive
@@ -129,6 +131,14 @@ The FPKIMA Certification Practice Statement (CPS) documents the operational prac
 - [U.S. FPKI Certification Practice Statement (PDF, May 2022) – Version 6.3]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [U.S. FPKI Audit Letter of Compliance (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2020-2021 Compliance Audit for the FPKI Trust Infrastructure Systems.
 - [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+
+# Report an Incident
+FPKI affiliates include federal agencies and commercial service providers operating a certification authority certified by the Federal PKI Policy Authority. FPKI affiliate responsibilities related to the incident management process include:
+1. Communicating security incidents involving infrastructures or services to the FPKI Authorities, users/customers, and known relying parties.
+2. Providing additional investigation support and/or information about incidents to the FPKI Authorities as they become known, and
+3. Conducting remediation activities once an incident is confirmed.
+
+To report an incident please contact both fpki at gsa dot gov and  fpki-help at gsa dot gov, and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <!-- # Federal PKI Monthly Activity Report
 
