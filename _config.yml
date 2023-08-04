@@ -72,7 +72,7 @@ primary_navigation:
       - name: Use Smart Cards with Applications
         url: /implement/outlook/
       - name: FIDO2 and Web Authentication (Coming Soon!)
-        url: /home/
+        url: /
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
   - name: Coordination Functions
