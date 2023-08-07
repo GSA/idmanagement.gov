@@ -654,7 +654,7 @@ System notifications can be submitted via either GitHub or email.
 
 ### Submit notification via GitHub issue 
 
-  - Select [Add New Notification](https://github.com/GSA/ficam-playbooks/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+  - Select [Add New Notification](https://github.com/GSA/idmanagement.gov/issues/new?assignees=&labels=Federal+PKI+-+System+Notification&projects=&template=fpki-system-notification.md&title=System+Notification+for%3A+%3CYour+Organization%3E){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
   - This will open a new Issue form with input information for notification information.
   - Enter the information and click 'Submit new issue' to submit the notification.
