@@ -37,7 +37,7 @@ A product is removed when it has lost its certification due to security concerns
 
 ## PACS Implementer Self-Assessment Toolkit
 
-The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/partners/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
+The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Services
@@ -48,12 +48,12 @@ The following organizations offer Identity, Credential, and Access Management se
 
 - [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:target="_blank"}{:rel="noopener noreferrer"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
-- [FPKI Shared Service Providers]({{site.baseurl}}/partners/trust-services/#government-identity-services) – Digital certificates for Federal agencies.
+- [FPKI Shared Service Providers]({{site.baseurl}}/trust-services/#government-identity-services) – Digital certificates for Federal agencies.
 
 ## Business Identity Services
 
-- [FPKI Individual Certificate Providers]({{site.baseurl}}/partners/trust-services/#non-government-pki-trust-framework) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
-- [Trust Services for Businesses]({{site.baseurl}}/partners/trust-services/#business-identity-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
+- [FPKI Individual Certificate Providers]({{site.baseurl}}/trust-services/#non-government-pki-trust-framework) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
+- [Trust Services for Businesses]({{site.baseurl}}/trust-services/#business-identity-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
 # FedRAMP
 
