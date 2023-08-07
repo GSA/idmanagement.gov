@@ -13,6 +13,6 @@ sticky_sidenav: true
 
 ## Policy Overview
 
-This diagram presents a visual overview of the FICAM Policy landscape.
+The policy map below presents a visual overview of the laws, policies and standards relevant to FICAM. The documents are organized according to the government body that produced it, and the relationships between the documents are illustrated by arrows connecting them.
 
-![A map of the FICAM Policy Landscape]({{site.baseurl}}/assets/img/ficam-policy-landscape-map.svg)
+![Visual overview of the laws, policies and standards relevant to FICAM, organized according to the government body that produced it. The relationships between the documents are illustrated by arrows connecting them.]({{site.baseurl}}/assets/img/icam-policy-landscape-map.png)
