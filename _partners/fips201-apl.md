@@ -126,7 +126,7 @@ Cycle 2 and 3 updates are moved to the front of the test queue once they are ins
 
 The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
-If you do not see a card below, it's possible it's on the [Removed Product List](#removed-products-list/).
+If you do not see a card below, it's possible it's on the [Removed Product List](#removed-product-list).
 
 Please note:
 

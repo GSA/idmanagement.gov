@@ -233,11 +233,14 @@ h1 {
 #leftcolumn {
     position: absolute; 
     /*display: none;*/
-    top: 280px; 
+    /* top: 280px;  */
+    top: 1425px;
     bottom: 0px; 
     left: -1000px;
+    /* left: -2000px; */
     /*right: 85px;*/
-    width: 250px;
+    /* width: 250px; */
+    width: 400px;
     height: 600px;
     background-color: rgb(250, 250, 252); 
     box-shadow: 2px 0 2px #808090; 
