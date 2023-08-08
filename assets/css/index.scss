@@ -222,12 +222,14 @@
   font-weight: 800;
   color: #00bde3;
   line-height: 1.2;
+  width: auto;
 }
 
 
 // constrain the height to keep the buttons on screen
 .carousel-content {
-  height: 370;
+  // height: 370;
+  height: auto;
 }
 
 // Hover for 6 front icon headers natural state and hover  
