@@ -130,9 +130,16 @@
   box-shadow:  0 3px 20px 0 rgba(0, 0, 0, 0.60);
 }
 
+// Responsive Hero for IDManagement (640 to match break points at in this file)
+.gsa-responsive-hero {
+  height: auto;
+  min-width: 640px; 
+}
+
 // Hero text length shortener-er 
 .gsa-text-width {
-  width: 95%;
+  // width: 95%;
+  width: auto;
 }
 
 // .gsa-no-dec {

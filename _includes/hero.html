@@ -6,9 +6,9 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <!-- start of Hero Section -->
-<section class="usa-hero grid-row" aria-label="IDManagement.gov Hero background graphic">
+<section class="usa-hero grid-row gsa-responsive-hero" aria-label="IDManagement.gov Hero background graphic">
   <!-- start of hero carousel -->
-  <div class="grid-container">
+  <div class="grid-container gsa-responsive-hero">
      <!-- Do not edit the HTML below, this code belows to the GSA Carousel and controls the prev and next buttons -->
    <!-- <div class="gsaCarousel"> -->
 
@@ -34,7 +34,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
       </button>
 
       <!-- Splide is initialized on this element so we can use our custom controls above -->
-      <div class="splide">
+      <div class="splide flex-auto">
         <div class="splide__track">
           <div class="splide__list">
             {% for slide in site.data.gsacarousel %}
@@ -50,7 +50,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
       </div>
 
       <!-- Next button -->
-      <button class="next-button is-control">
+      <button class="next-button is-control" style="margin-top:4px;">
         <span class="fas fa-angle-right" aria-hidden="true"></span>
         <span class="sr-only">Next slide</span>
       </button>
