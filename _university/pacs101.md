@@ -73,7 +73,7 @@ Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but a
 - Interoperate with PIV credentials issued by other agencies.
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
 
-The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/partners/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
+The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
 
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 

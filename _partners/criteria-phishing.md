@@ -97,7 +97,7 @@ product certification.
 
 6. Removal – If a vendor fails to provide accurate information or an issue is found that
 brings into question the security and resiliency, the product is moved to the [Removed
-Product List]({{site.baseurl}}/removed-products-list/) and the community is notified of its removal through idmanagement.gov,
+Product List]({{site.baseurl}}/fips201/#removed-product-list) and the community is notified of its removal through idmanagement.gov,
 ICAMSC, and Digital identity Community of Practice, as well as federal acquisition
 channels.
 
