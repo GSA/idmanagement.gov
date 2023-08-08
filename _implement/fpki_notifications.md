@@ -654,7 +654,7 @@ System notifications can be submitted via either GitHub or email.
 
 ### Submit notification via GitHub issue 
 
-  - Select [Add New Notification](https://github.com/GSA/ficam-playbooks/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&body=notice_date%3A%20%0Achange_type%3A%20%20CA%20Certificate%20Issuance%2C%20CA%20Certificate%20Revocation%2C%20New%20CA%2C%20URI%20Change%2C%20System%20Outage%20%0Astart_datetime%3A%20%0Aend_datetime%3A%20%0Asystem%3A%20%0Achange_description%3A%20%0Acontact%3A%20%0Aca_certificate_hash%3A%20%0Aca_certificate_issuer%3A%20%0Aca_certificate_subject%3A%20%0Acdp_uri%3A%20%0Aaia_uri%3A%20%0Asia_uri%3A%20%0Aocsp_uri%3A%0A%20%0A&labels[]=System%20Notification){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+  - Select [Add New Notification](https://github.com/GSA/idmanagement.gov/issues/new?assignees=&labels=Federal+PKI+-+System+Notification&projects=&template=fpki-system-notification.md&title=System+Notification+for%3A+%3CYour+Organization%3E){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
   - This will open a new Issue form with input information for notification information.
   - Enter the information and click 'Submit new issue' to submit the notification.
@@ -664,15 +664,20 @@ The notification can also be emailed to <span>fpki</span><span>@</span><span>gsa
 
 Subject:  FPKI System Notification - System Name 
   
-- Notice date  
-- System
-- Change type of one of the following: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage, Intent to Issue/Revoke CA Certificate    
-- Change description: Include a start date or end date if applicable
-- Contact email  
-- Issuer 
-- Subject DNs  
-- If the change is a new or revoked CA certificate, include the CA Certificate hash (sha1 thumbprint), 
-- If the change is a new URI, include the new Certificate Revocation List (CRL), Certificate Bundle AIA and SIA, OCSP, EE CRL DP, and/or EE OCSP value. 
+- notice_date: the date you are submitting the issue/notifcation
+- system: the generic PKI provider (e.g., Entrust NFI, WidePoint SSP, etc.)
+- change_type: one of the following - CA Certificate Issuance, CA Certificate Revocation, URI Change, System Outage, Intent to Issue/Revoke CA Certificate
+- change_description: describe the CA certificate activity (to include rekey activities) andinclude activity start and end dates if applicable
+- contact: the best email address regarding the activty, remember to format this by spelling out dashes and dots to prevent automated email scrapers
+- ca_certificate_issuer: the full DN of the issuer
+- ca_certificate_subject: the full DN of the subject
+- ca_certificate_hash: the SHA-1 thumbprint of the CA certificate
+- ca_cdp_uri: Certificate Revocation List link
+- ca_aia_uri: the authority information access certifciate bundle for the CA certificate
+- ca_sia_uri: the subject information access certificate bundle for the CA certificate
+- ca_ocsp_uri: the OCSP address generally conatined in the AIA for the CA certificate
+- ee_cdp_uri: the CRL DP link for end entity certificates signed by the CA certificate
+- ee_ocsp_uri: the OCSP link for end entity certificates signed by the CA certificate
 
 
 ## Notifications
