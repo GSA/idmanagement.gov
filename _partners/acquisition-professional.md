@@ -28,7 +28,7 @@ The FICAM testing program – also known as the [Federal Information Processing 
 
 The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
 
-1. [PIV Cards]({{site.baseurl}}/approved-products-list-piv/)
+1. [PIV Cards]({{site.baseurl}}/fips201/#approved-piv-cards)
 2. [Physical Access Control Systems]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems)
 
 **Why can't I find a category or product?**
