@@ -26,6 +26,66 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: August 11, 2023
+  change_type: CA Certificate Modification
+  system: WidePoint SSP
+  change_description: WidePoint has modified the U.S. Department of Transportation Agency CA G6, an existing CA under the WidePoint SSP Intermediate CA, due to a suject name encoding issue.  Note that this modificaiton is not accompanied by a rekey, so the same CA key pair will be leveraged for the modified CA certificate. Widepoint plans on revoking the old CA certificate in the near future after end-entity certificates have been replaced/reissued.
+  contact: WCSC-PKIPolicy at widepoint dot com 
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Agency CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG6.crl
+  ee_ocsp_uri: http://dotagencyg6.eva.orc.com/
+  
+- notice_date: August 11, 2023
+  change_type: CA Certificate Modification
+  system: WidePoint SSP
+  change_description: WidePoint has modified the U.S. Department of Transportation Device CA G6, an existing CA under the WidePoint SSP Intermediate CA, due to a subject name encoding issue.  Note that this modificaiton is not accompanied by a rekey, so the same CA key pair will be leveraged for the modified CA certificate.  Widepoint plans on revoking the old CA certificate in the near future after end-entity certificates have been replaced/reissued.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Device CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTDeviceCAG6.crl
+  ee_ocsp_uri: http://dotdeviceg6.eva.orc.com/
+  
+- notice_date: August 11, 2023
+  change_type: Intent to revoke a CA Certificate
+  system: WidePoint SSP
+  change_description: WidePoint plans to revoke the U.S. Department of Transportation Agency CA G6 certificate in the near future after its end-entity certificates have been replaced/reissued using the new modified issuer CA certificate.
+  contact: WCSC-PKIPolicy at widepoint dot com 
+  ca_certificate_hash: 7b6dcb34ab284ec897f0ffe1a2f8f95082f09c74
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Agency CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG6.crl
+  ee_ocsp_uri: http://dotagencyg6.eva.orc.com/
+  
+- notice_date: August 11, 2023
+  change_type: Intent to revoke a CA Certificate
+  system: WidePoint SSP
+  change_description: WidePoint plans to revoke the the U.S. Department of Transportation Device CA G6 certificate in the near future after its end-entity certificates have been replaced/reissued using the new modified issuer CA certificate.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: e0f1bd791fe607a6a3b1f5528eab4687dbbb9dce
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O = ORC PKI, C = US
+  ca_certificate_subject: CN=U.S. Department of Transportation Device CA G6, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTDeviceCAG6.crl
+  ee_ocsp_uri: http://dotdeviceg6.eva.orc.com/
+
 - notice_date: July 21, 2023
   change_type: Intent to Issue a CA Certificate
   system: CertiPath Bridge CA
