@@ -67,7 +67,7 @@ This document is primarily for the following audience:
 2. Existing GSA PKI SSP Program members to refresh their knowledge of ongoing maintenance requirements. 
 3. Federal agency customers who want to understand the GSA PKI SSP program or ﬁnd contact information for the program management.
 
-If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](GSAPKISSP@gsa.gov).
+If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov).
 
 # Section I: GSA PKI SSP Program 
 
@@ -142,7 +142,7 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
 
 ### MOA Procedural Guidance:
 
-- Send an email to [GSAPKISSP@gsa.gov](mailt0:GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
+- Send an email to [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
 - SSPs must obtain, review, and sign the MOA from the SSP Program Ofﬁce.
 
 Once an MOA is signed, the GSA PKI SSP will sponsor the vendor to apply to the Federal PKI Policy Authority.

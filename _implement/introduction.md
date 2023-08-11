@@ -35,8 +35,8 @@ The majority of engineering guides are focused on helping agencies configure PIV
    1. [Windows Domains]({{site.baseurl}}/implement/scl-windows)
    2. [MacOS]({{site.baseurl}}/implement/scl-macos)
    3. [Microsoft Outlook (on-premise)]({{site.baseurl}}/implement/outlook)
-   4. [Firefox Browser]({{site.baseurl}}/implement/firefox)
-   5. [SSH Command Line]({{site.baseurl}}/implement/ssh)
+   4. [Firefox Browser]({{site.baseurl}}/implement/scl-firefox)
+   5. [SSH Command Line]({{site.baseurl}}/implement/scl-ssh/)
    6. Certificate-based Authentication on Azure AD (Coming soon!)
    7. Certificate-based Authentication on Okta (Coming soon!)
 2. FIDO2 Configuration

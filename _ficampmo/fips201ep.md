@@ -82,7 +82,7 @@ Product testing is performed by either:
 
 If the product passes testing and review, the vendor is granted a letter of certification, and the product is placed on the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products). The APL includes product information, version, date of certification, and special considerations.
 
-Visit the [Vendors page]({{site.baseurl}}/vendor/) for more on testing and certification.
+Visit the [Vendors page]({{site.baseurl}}/vendors/) for more on testing and certification.
 
 ## Testing Guidance and Documents
 
@@ -120,7 +120,7 @@ All applicants, please complete the following steps:
 Agencies that wish to issue D-PIV credentials should follow these steps:
 1. Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO)
 2. Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs)
-3. Submit sample D-PIV public certificates for testing or provide results from the [Certificate Profile Conformance Tool (CPCT)]({{site.baseurl}}/fpki/tools/cpct/){:target="_blank"}{:rel="noopener noreferrer"} to fips201ep at gsa.gov.
+3. Submit sample D-PIV public certificates for testing or provide results from the [Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases/){:target="_blank"}{:rel="noopener noreferrer"} to fips201ep at gsa.gov.
 
 Upon successful completion of DPCI testing, the agency or organization will be granted approval to issue D-PIV credentials.
 
