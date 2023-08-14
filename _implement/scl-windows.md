@@ -748,7 +748,7 @@ For our use, this complex process is simplified into the following workflows:
     <p>The PIV is damaged.</p>
     <h3>Diagnosis</h3>
     <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV may need to be replaced.</p>
-    <p>To confirm that the card is functional, you can use the <a class="usa-link usa-link--external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="{{site.baseurl}}/fpki/tools/" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
+    <p>To confirm that the card is functional, you can use the <a class="usa-link usa-link--external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="{{site.baseurl}}/implement/#fpki-troubleshooting-tools" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
     <p><strong>On the client:</strong></p>
     <ol type="1">
       <li>Log in to Windows using a password.</li>
@@ -932,7 +932,7 @@ For our use, this complex process is simplified into the following workflows:
       <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event30.png" alt="A screenshot of an Operational window labeled Event 30, CAPI2. Near the top of the screenshot, a row labeled Error is highlighted with yellow. Elsewhere in the screenshot, the subjectName and user name and the Result details are highlighted with yellow." width="766" height="652">
     </ol>
     <h3>Resolution</h3>
-    <p>Follow the steps in the <a href="{{site.baseurl}}/implement/trust-stores/" target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
+    <p>Follow the steps in the <a href="{{site.baseurl}}/implement/scl-windows/#step-3---trust-stores " target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
      <hr />    
     <h2>Symptom</h2>
     <p>During smart card logon attempt, the following error is displayed on the logon screen:  <br><strong>The system could not log you on. Your credentials could not be verified.</strong></p>

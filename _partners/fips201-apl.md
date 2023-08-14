@@ -121,7 +121,7 @@ Cycle 2 and 3 updates are moved to the front of the test queue once they are ins
 
 The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
-If you do not see a card below, it's possible it's on the [Removed Product List](#removed-product-list).
+If you do not see a card below, it's possible it's on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list).
 
 Please note:
 
@@ -152,7 +152,7 @@ Please note:
 
 ## Legacy PIV Cards
 
-Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program. Any cardstock designated as “legacy” is placed on this legacy list and on the [Removed Product List](/removed-products-list/). However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by **June 30, 2024**.
+Legacy PIV cards are no longer approved for purchase by the FIPS 201 Evaluation Program. Any cardstock designated as “legacy” is placed on this legacy list and on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list). However, some federal agencies still need to procure the legacy cardstock to use while existing systems are being upgraded. Agencies must stop using cardstock on the legacy list by **June 30, 2024**.
 
 Legacy PIV cards include the following:
 

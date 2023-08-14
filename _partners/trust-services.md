@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: partners
-title:  Federal Workforce identity Services
+title:  Federal Workforce Identity Services
 permalink: /trust-services/
 sidenav: partners
 sticky_sidenav: true

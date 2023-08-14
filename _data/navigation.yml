@@ -16,8 +16,8 @@ partners:
     href: /program-managers/
   - text: FIPS 201 - Approved Product List
     href: /fips201/#approved-products---physical-access-control-systems # url updated to list everywhere?
-  - text: Phishing-Resistant Product Criteria
-    href: /phish-criteria/
+  # - text: Phishing-Resistant Product Criteria
+  #   href: /phish-criteria/
   - text: Federal Workforce Identity Services
     href: /trust-services/
 
