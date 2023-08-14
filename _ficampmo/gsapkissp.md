@@ -2,7 +2,7 @@
 layout: page
 collection: ficampmo
 title: Shared Service Provider Program Guide
-permalink: /pkissp/
+permalink: /gsapkissp/
 sticky_sidenav: true
 sidenav: functions
 
