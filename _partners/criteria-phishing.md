@@ -2,7 +2,6 @@
 layout: page
 collection: partners
 title: Phishing-Resistant Authenticator Product Criteria
-permalink: /phish-criteria/
 sticky_sidenav: true
 sidenav: partners 
 
