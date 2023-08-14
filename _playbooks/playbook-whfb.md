@@ -61,13 +61,15 @@ The FIDO2 Community of Action is an Office of Management and Budget initiative t
 2. Migrating to a complete cloud Azure configuration with Azure joined devices is possible for agencies with a small on-premise Active Directory footprint. This alleviates the risk of Active Directory vulnerabilities, but agencies must ensure they have the right talent and understanding of Azure AD operations and constraints.
 3. Most agencies have adequate licensing (usually E3 or E5) to leverage conditional access policies and automated device enrollment. It is not required to use WHfB but does help with other security priorities to integrate device-level signals and better user experience.
 4. Once enabled, WHfB provides a more natural authentication experience when using biometrics. Biometrics requires a compatible Windows device.
-5. WHfB is only supported on Windows devices (e.g., iPhone, iPad, and Android Devices) as of June 16th, 2023. For phishing-resistant MFA on mobile devices to Azure, only security keys is supported.
+5. WHfB is only supported on Windows devices as of June 16th, 2023. For phishing-resistant MFA on mobile devices to Azure, only security keys is supported.
 
 ## About Windows Hello for Business
 
-WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination.
+Windows Hello for Business is distinctly different from the consumer version which is Windows Hello.
 
-Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts.
+From Microsoft, "Windows Hello represents the biometric framework provided in Windows. Windows Hello lets users use biometrics to sign in to their devices by securely storing their user name and password and releasing it for authentication when they successfully identify themselves using biometrics. Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate."
+
+WHfB is also separate from Certificate-Based Authentication and security keys.
 
 ### Windows Hello for Business Sign-in Options
 
@@ -77,7 +79,7 @@ The available sign-in options for Windows Hello for Business include the followi
 - Fingerprint recognition
 - PIN (for use as a backup in case the biometric authentication fails or in the absence of camera/fingerprint scanning technology)
 
-Biometric data is stored locally on the device, and it is never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
+WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination. Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the public key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts. Biometric data is stored locally on the device and never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
 # Assumptions
 This playbook assumes that devices are cloud-only joined and that no hybrid configuration with Active Directory exists. Deploying Windows Hello for Business in a hybrid environment requires configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended. More on that here: [Windows Hello for Business cloud Kerberos trust clients configuration and enrollment | Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust-provision?tabs=intune){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
@@ -744,12 +746,6 @@ Follow the prompts to lift your finger and touch the sensor again in order to ma
 ![Figure 54: Windows Hello for Business Fingerprint Scan Complete]({{site.baseurl}}/assets/playbooks/whfb/54-WHfB-Fingerprint-complete.png)
 
 If users choose to do so, they can add multiple fingerprints for improved recognition.
-
-## Windows security key setup
-
-Security keys also can be used for Windows Hello for Business authentication. This feature can be configured through the WHfB **Enrollment Policy** settings or the **Identity Protection Device Configuration Profile**. Users can also set up security keys through the Windows **Settings \> Accounts \> Sign-in options \> Security key.**
-
-Additional methods for enabling Windows security keys can be found [here](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-windows#enable-security-keys-for-windows-sign-in){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 # Windows Hello for Business FAQs
 
