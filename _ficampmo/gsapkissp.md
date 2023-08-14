@@ -277,7 +277,7 @@ A derived PIV certiﬁcate is either a software or hardware certiﬁcate issued 
 
 ### PIV-I Certiﬁcates
 
-PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
+PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
 
 |**Type**|**COMMON OID**|
 |--------|--------------|

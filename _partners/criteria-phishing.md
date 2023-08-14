@@ -137,7 +137,7 @@ Date:<br>
 |6|What methods are used for product security and interoperability testing?| | |
 |7|How often are security and interoperability testing conducted?| | |
 |8|What product implementation documentation applies? Provide links for evidence.| | |
-|9|How does your product map to a [FICAM practice area]({{site.baseurl}}/arch/servicesframework/){:target="_blank"}{:rel="noopener noreferrer"} or CDM architecture?| | |
+|9|How does your product map to a [FICAM practice area]({{site.baseurl}}/arch/#services-framework-and-service-descriptions){:target="_blank"}{:rel="noopener noreferrer"} or CDM architecture?| | |
 |10|Does the product or vendor have other certifications recognized by the US Government?| | |
 
 # Conclusion
