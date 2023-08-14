@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: partners
-title:  Federal Workforce identity Services
+title:  Federal Workforce Identity Services
 permalink: /trust-services/
 sidenav: partners
 sticky_sidenav: true
@@ -49,18 +49,16 @@ We’ve categorized the service providers given below by type of identity and cr
 
 ## Government Identity Services
 
-These organizations operate as FPKI Shared Service Providers (SSPs) for federal agencies. All organizations operate Certification Authorities, are audited, and have and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA dot gov.
-
-All of the Certification Authorities operated by these FPKI SSPs [issue certificates]({{site.baseurl}}/fpki/ca/#certificate-types-within-the-federal-pki){:target="_blank"}{:rel="noopener noreferrer"} for federal workforce identity, including for PIV credentials. A subset of the FPKI SSPs also issue and manage government enterprise device certificates.
+These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://idmanagement.gov/buy/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
 
 Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
-| Organization | Customer Service | Tech Support|  
-|-----------|:-----------:|:-----------:|  
-| Department of the Treasury| Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
-| Entrust Federal Shared Service Provider |	Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
-| Verizon/Cybertrust Federal Shared Service Provider | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
-| WidePoint Federal Shared Service Provider	| Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
+| Organization | Category | Customer Service | Tech Support|  
+|-----------|:-----------:|:-----------:|:-----------:|  
+| Department of the Treasury| FPKI SSP | Daniel Wood<br/>(202) 622-5144 | Joe Gribble<br/>(304) 480-7608 |  
+| Entrust Federal Shared Service Provider |	GSA SSP | Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
+| Verizon/Cybertrust Federal Shared Service Provider | GSA SSP | Russ Weiser<br/>(801) 631-1685 |	Russ Weiser<br/>(801) 631-1685 |
+| WidePoint Federal Shared Service Provider	| GSA SSP | Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.com |
 
 ## Business Identity Services
 

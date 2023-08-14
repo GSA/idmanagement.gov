@@ -4151,10 +4151,15 @@
             "serial-number": "461655586203545523716122",
             "akid": "34 6b 0e 04 f8 b2 af 65 25 b3 ef cb 5c 44 39 2a 4c 84 88 3f",
             "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "status": "Certificate Valid, but no Path to Common",
+            "status": "Certificate Invalid",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "Unable to build Path"
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US:346b0e04f8b2af6525b3efcb5c44392a4c84883f",
+            "validity-dates": {
+                "not-before": "2022-07-13 20:40:35+00:00",
+                "not-after": "2023-08-13 20:40:35+00:00"
             }
         },
         {

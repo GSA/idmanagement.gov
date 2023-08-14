@@ -878,5 +878,5 @@ Agency endpoints may include:
 
 # Policies and Standards
 
-See the [ICAM Policy Matrix]({{site.baseurl}}/university/policy-matrix) for the latest set of ICAM policies and standards.
+See the [ICAM Policy Matrix]({{site.baseurl}}/university/policymatrix/) for the latest set of ICAM policies and standards.
 

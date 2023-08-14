@@ -42,7 +42,7 @@ These playbooks are hosted on GitHub and provide common policy interpretations a
 ## Announcements
 
 - [FIPS 201 Evaluation Program Announcements]({{site.baseurl}}/fips201ep/)
-- [FPKI Program Announcements]({{site.baseurl}}/fpki/announcements/)
+- [FPKI Program Announcements]({{site.baseurl}}/fpki/notifications/#fpki-announcements)
 - [FPKI System Notifications]({{site.baseurl}}/fpki/notifications/)
   
 

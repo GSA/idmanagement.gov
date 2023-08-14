@@ -135,7 +135,7 @@ For PIV-I credentials, there may be federal issuers and NFI who participate. Man
 | Category | Scenario A: Federal Issuer | Scenario B: Non-Federal Issuer |
 |----------|------------------------|--------------------------|
 | **Description**      | **Federal Agency A** has short-term employees who manage data systems, or need access to the federal networks or facilities, but fall outside the requirements for a PIV card. | **Federal Agency B** has affiliates or service providers who need to sign documents or authenticator to agency systems to conduct business, but fall outside the requirements for a PIV card. |
-| **Scenario Outline** | **Federal Agency A**: <br>1. Selects a <a href="{{site.baseurl}}/trust-services/#government-identity-services">government identity service that offers a PIV-I credentialing service</a>.<br>w. Authorizes and directs persons to use a designated PIV-I service and receive PIV-I credentials<br>4. Has responsibility for the sponsoring of persons, lifecycle management, and other activities including revoking the credentials after the person terminates any service. | **Federal Agency B**: <br>1. Requests partners, affiliates, or service providers to have their contracted or employee personnel obtain <a href="{{site.baseurl}}/partners/trust-services/#business-identity-services">PIV-I credentials from an authorized business identity service</a><br>2. Provides the request through a Department or Agency-level Policy, Memorandum, or contract action with the affiliate or service provider<br>3. The partner, affiliates, or service provider chooses the PIV-I service or builds their own, and makes any contractual or other arrangements with the PIV-I service.  |
+| **Scenario Outline** | **Federal Agency A**: <br>1. Selects a <a href="{{site.baseurl}}/trust-services/#government-identity-services">government identity service that offers a PIV-I credentialing service</a>.<br>w. Authorizes and directs persons to use a designated PIV-I service and receive PIV-I credentials<br>4. Has responsibility for the sponsoring of persons, lifecycle management, and other activities including revoking the credentials after the person terminates any service. | **Federal Agency B**: <br>1. Requests partners, affiliates, or service providers to have their contracted or employee personnel obtain <a href="{{site.baseurl}}/trust-services/#business-identity-services">PIV-I credentials from an authorized business identity service</a><br>2. Provides the request through a Department or Agency-level Policy, Memorandum, or contract action with the affiliate or service provider<br>3. The partner, affiliates, or service provider chooses the PIV-I service or builds their own, and makes any contractual or other arrangements with the PIV-I service.  |
 | **Acquisition** | Funded by the Agency. | Funded by the Affiliate or Service Provider. |
 | **Issuer Type**             | _Federal Issuer_ | _Non-Federal Issuer_ |
 | **Credential Type**  | PIV-I | PIV-I |
@@ -159,9 +159,9 @@ The fundamental purpose of an identity credential is to establish a trust founda
 
 Therefore, PIV-I credentials must be issued in a manner that provides the Federal Government with a commensurate level of trust for _identity assurance_ and _authenticator assurance_. Personnel vetting assurance may not be determined from a PIV-I credential.
 
-For Federal Issuers of PIV-I, the full list of requirements for identity and authenticator assurance is in the [X.509 Certificate Policy for the Federal Common Policy Framework]({{site.baseurl}}/partners/fpkiaudit/#fpki-policies-and-profiles).
+For Federal Issuers of PIV-I, the full list of requirements for identity and authenticator assurance is in the [X.509 Certificate Policy for the Federal Common Policy Framework]({{site.baseurl}}/fpki/#federal-pki-policies-and-profiles).
 
-For NFI of PIV-I, the full list of requirements for identity and authenticator assurance for PIV-I credentials is in the [X.509 Certificate Policy for the Federal Bridge Certification Authority]({{site.baseurl}}//partners/fpkiaudit/#fpki-policies-and-profiles).
+For NFI of PIV-I, the full list of requirements for identity and authenticator assurance for PIV-I credentials is in the [X.509 Certificate Policy for the Federal Bridge Certification Authority]({{site.baseurl}}/fpki/#federal-pki-policies-and-profiles).
 
 ### 2.2.1 PIV-I Identity Assurance
 
@@ -303,9 +303,9 @@ This section helps clarify these differences and the boundaries for federal agen
 There are four primary documents referenced for security controls and audit requirements for the systems responsible for issuing either PIV or PIV-I credentials:
 
 1. [NIST Special Publication 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} identifies the security control categories to be used for all systems
-2. Federal PKI defines the [Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems]({{site.baseurl}}/partners/fpkiaudit/#fpki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}
+2. Federal PKI defines the [Security Controls Overlay of Special Publication 800-53 Security Controls for PKI Systems]({{site.baseurl}}/fpki/#federal-pki-policies-and-profiles){:target="_blank"}{:rel="noopener noreferrer"}
 3. [NIST Special Publication 800-79-2](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} identifies operational audits for the PIV credentialing activities
-4. Federal PKI defines the [FPKI Compliance Audit Requirements]({{site.baseurl}}/governance/fpkiaudit/#annual-review-requirements-for-all-certification-authorities).
+4. Federal PKI defines the [FPKI Compliance Audit Requirements]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority).
 
 For auditing, the Federal PKI requires:
 
