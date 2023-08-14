@@ -84,7 +84,7 @@ primary_navigation:
       - name: FIPS 201 Evaluation Program
         url: /fips201ep/
       - name: GSA PKI SSP Program
-        url: /pkissp/
+        url: /gsapkissp/
   - name: Playbooks
     url: /playbooks/
   - name: University

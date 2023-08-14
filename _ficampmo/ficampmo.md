@@ -44,7 +44,7 @@ Through this four-part framework, the GSA FICAM Program leads or coordinates the
 3. Recognition
    1. Workforce identity trust services
    2. FIPS 201 Approved Product List
-   3. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/pkissp/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
+   3. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/gsapkissp/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
 4. Compliance
    1. [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
    2. Federal PKI Annual Review Process
