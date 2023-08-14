@@ -37,8 +37,16 @@ subnav:
 
 ---
 
+Version 1.1<br>
+August 14, 2023
+
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <br><br>
+
+| Version Number | Date | Change Description |
+| :----------: | :-------: | -------- |
+| 1.1 | 08/14/2023 | Remove security key as an option. Add a "why" section and lessons learned. |
+| 1.0 | 05/25/2023 | Initial Draft. |
 
 The purpose of this playbook is to guide ICAM program managers and Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Active Directory. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. WHfB offers two-factor authentication by combining a device authenticator (something you have) and either a PIN (something you know) or a biometric (something you are).
 
