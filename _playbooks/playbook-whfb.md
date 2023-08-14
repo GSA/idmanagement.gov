@@ -40,7 +40,7 @@ subnav:
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <br><br>
 
-The purpose of this playbook is to guide ICAM program managers and Azure Active Directory administrators through planning, configuring, testing, and implementing Windows Hello for Business (WHfB). WHfB offers two-factor authentication by combining a phishing-resistant, Multi-Factor Authenticator that combines user credentials tied to a device with a biometric or personal identification number (PIN).
+The purpose of this playbook is to guide ICAM program managers and Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Active Directory. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. WHfB offers two-factor authentication by combining a device authenticator (something you have) and either a PIN (something you know) or a biometric (something you are).
 
 # Why Windows Hello for Business
 
@@ -65,7 +65,7 @@ The FIDO2 Community of Action is an Office of Management and Budget initiative t
 
 ## About Windows Hello for Business
 
-Windows Hello for Business is distinctly different from the consumer version which is Windows Hello.
+Windows Hello for Business distinctly differs from the consumer version of Windows Hello.
 
 From Microsoft, "Windows Hello represents the biometric framework provided in Windows. Windows Hello lets users use biometrics to sign in to their devices by securely storing their user name and password and releasing it for authentication when they successfully identify themselves using biometrics. Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate."
 
@@ -82,25 +82,24 @@ The available sign-in options for Windows Hello for Business include the followi
 WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination. Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the public key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts. Biometric data is stored locally on the device and never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
 # Assumptions
-This playbook assumes that devices are cloud-only joined and that no hybrid configuration with Active Directory exists. Deploying Windows Hello for Business in a hybrid environment requires configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended. More on that here: [Windows Hello for Business cloud Kerberos trust clients configuration and enrollment | Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust-provision?tabs=intune){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+This playbook assumes that devices are cloud-only joined and that no hybrid configuration with Active Directory exists. Hybrid deployments come in multiple designs with constraints based on on-premise components. This playbook is meant to support agencies in implementing the Fedearl Zero Trust Strategy action steps for application action and reducing the use of network authentication. Deploying Windows Hello for Business in a [hybrid environment](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification#hybrid-deployments){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} comes in four configurations driven by how devices are managed. 
+1. Cloud kerberos trust
+2. Key trust
+3. Certificate trust, mixed managed
+4. Certificate Trust, modern managed
 
-This playbook assumes that all devices have a TPM 2.0 module that complies with Federal Information Processing Standards (FIPS). All devices should be on Windows 10 version 1709 (or later) or Windows 11. Preferably, all devices should be Windows 10 version 1903 or later.
-
-This playbook also assumes that:
-
-- Devices are equipped with an infrared camera or fingerprint reader to perform biometric authentication.
-- Microsoft Intune (Intune) is the Windows MDM solution.
+These hybrid deployments require configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended.
 
 # Prerequisites
-Devices must be Azure AD registered at minimum, and it's preferable that devices are Azure AD joined.
-
-Users must have a Microsoft Intune license feature as a stand-alone license or as part of a bundled license (Microsoft 365 E3 for GCC High and Microsoft 365 E5 for GCC High).
-
-It's also preferrable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
+For cloud-joined deployment, this playbook assumes that:
+- all devices have a TPM 2.0 module that complies with Federal Information Processing Standards (FIPS). All devices should be on Windows 10 version 1709 (or later) or Windows 11. Preferably, all devices should be Windows 10 version 1903 or later.
+- Devices are equipped with an infrared camera or fingerprint reader for biometric authentication.
+- Microsoft Intune (Intune) is the Windows MDM solution.
+- Not required, but it's preferable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
 
 # Technology and terms
 
-[Introduction to device identity and join types](https://learn.microsoft.com/en-us/azure/active-directory/devices/overview){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+See this Microsoft primer on [Introduction to device identity and join types](https://learn.microsoft.com/en-us/azure/active-directory/devices/overview){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 **Join type**
 
