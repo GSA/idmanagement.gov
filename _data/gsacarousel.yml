@@ -39,7 +39,7 @@
   initialState:
   delay: 10000
   heroHeading: Privileged user
-  heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
+  heroText: is authorized (and therefore, trusted) to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, administrator, or superuser.
   actionButtonText: Learn more about
   actionLocation: playbooks/pam/
   actionTarget: _self
@@ -47,16 +47,16 @@
 - orderNumber: 3
   initialState:
   delay: 10000
-  heroHeading: Phishing resistant authenticators (Coming Soon)
-  heroText: are not susceptible to common interception and replay attacks. Phishing-resistant MFA protects users from sophisticated online attacks.
-  actionButtonText: Coming Soon!
-  actionLocation: /
-  actionTarget: _blank
+  heroHeading: Phishing-resistant authenticators
+  heroText: are not susceptible to common interception and replay attacks. Phishing-resistant Multi protects users from sophisticated online attacks.
+  actionButtonText: Learn more about
+  actionLocation: playbooks/altauthn
+  actionTarget: _self
 
 - orderNumber: 4
   initialState:
   delay: 10000
-  heroHeading: Single sign on
+  heroHeading: Single sign-on
   heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
   actionButtonText: Learn more about
   actionLocation: playbooks/sso/
@@ -66,7 +66,7 @@
   initialState:
   delay: 10000
   heroHeading: User authorization
-  heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
+  heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine-grained to help achieve attribute-based access vs. traditional role-based access.
   actionButtonText: Learn more about
   actionLocation: playbooks/cloud/
   actionTarget: _self
@@ -75,7 +75,7 @@
   initialState:
   delay: 10000
   heroHeading: Identity lifecycle management
-  heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
+  heroText: encompasses creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
   actionButtonText: Learn more about
   actionLocation: playbooks/ilm/
   actionTarget: _self

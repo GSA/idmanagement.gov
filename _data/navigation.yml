@@ -88,18 +88,20 @@ playbooks:
     href: /playbooks/dira/ 
   - text: Digital Worker Identity Playbook
     href: /playbooks/dw/ 
+  - text: Digitally Sign a Federal Register Notice
+    href: /playbooks/signfedregister/
+  - text: Digitally Sign a Word Document
+    href: /playbooks/signword/
   - text: Enterprise Single Sign-On Playbook
     href: /playbooks/sso/ 
   - text: ICAM Governance Framework Version 1.0
     href: /docs/playbook-identity-governance-framework.pdf
   - text: Identity Lifecycle Management Playbook
     href: /playbooks/ilm/ 
+  - text: Phishing-Resistant Playbook
+    href: /playbooks/altauthn/
   - text: Privileged Identity Playbook
-    href: /playbooks/pam/ 
-  - text: Digitally Sign a Word Document
-    href: /playbooks/signword/
-  - text: Digitally Sign a Federal Register Notice
-    href: /playbooks/signfedregister/
+    href: /playbooks/pam/
   - text: Windows Hello for Business Playbook
     href: /playbooks/whfb/
 

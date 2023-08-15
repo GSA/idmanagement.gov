@@ -105,6 +105,14 @@
   header: "/assets/playbooks/headers/playbook_05.png"
   target: _self
 
+- title: Phishing-Resistant Authenticator Playbook
+  type: Markdown
+  pubdate: 2023-08
+  description: Learn about phishing-resistant authentication and design a pilot for your agency.
+  url: "/playbooks/altauthn/"
+  header: "/assets/playbooks/headers/playbook_12.png"
+  target: _self
+
 # Removed because it has a status of archived
 # - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
 #   type: PDF
