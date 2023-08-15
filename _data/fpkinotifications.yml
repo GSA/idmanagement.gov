@@ -26,6 +26,69 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+
+- notice_date: July 21, 2023
+  change_type: Intent to Issue a CA Certificate
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Raytheon Technologies Medium Assurance CA.
+  contact: support at certipath dot com
+### The following are all optional fields based on the change type
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Raytheon Technologies Medium Assurance CA, OU=Class3-G3, O=cas, DC=rtx, DC=com
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://pki.treasury.gov/vaca_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.rtx.com/G3/CRLs/Class3-G3_Full.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: June 28, 2023
+  change_type: CA Certificate Issuance
+  system: US Treasury Root CA
+  change_description: The Veterans Affairs CA underwent a key update and a new CA certificate was issued from the US Treasury Root CA on 05/20/2023. Valid until 5/20/2033.
+  contact: pki underscore ops at fiscal dot treasury dot gov
+### The following are all optional fields based on the change type
+  ca_certificate_hash: d81577f94652b7a9eb9d0d4602060f7d16492413
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/vaca_aia.p7c
+  sia_uri: http://pki.treasury.gov/vaca_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.treasury.gov/VA_CA3.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: June 28, 2023
+  change_type: CA Certificate Issuance
+  system: US Treasury Root CA 
+  change_description: The Treasury OCIO CA underwent a key update and a new CA certificate was issued from the US Treasury Root CA on 05/20/2023. Valid until 5/20/2033.
+  contact: pki underscore ops at fiscal dot treasury dot gov
+  ca_certificate_hash: 3f3a62c0d4b5a2d70054ea7de33c9a691937ec02
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/toca_aia.p7c
+  sia_uri: http://pki.treasury.gov/toca_sia.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.treasury.gov/OCIO_CA6.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: June 28, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the DoD Interoperability Root CA2 on 6/8/2023. Valid until 2/7/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: eacd48fc71861e25223deea1815f49483fc1b07d
+  ca_certificate_issuer: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = DoD Interoperability Root CA 2, , OU = PKI, OU = DoD, O = U.S. Government, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: June 13, 2023
   change_type: Intent to Issue CA Certificate
   system: Entrust Managed Services Root CA

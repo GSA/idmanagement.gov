@@ -18,7 +18,7 @@
 #
 
 - title: Cloud Identity Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2022-12
   description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
   url: "/playbooks/cloud/"
@@ -26,7 +26,7 @@
   target: _self
 
 - title: Digital Autopen Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2023-03
   description: This playbook outlines the process for an agency to implement a Digital Autopen for Federal Register documents.
   url: "/playbooks/autopen/"
@@ -34,7 +34,7 @@
   target: _self
 
 - title: Digital Identity Risk Assessment Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2020-09
   description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
   url: "/playbooks/dira/"
@@ -42,7 +42,7 @@
   target: _self
 
 - title: Digital Worker Identity Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2022-12
   description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
   url: "/playbooks/dw/"
@@ -50,7 +50,7 @@
   target: _self
 
 - title: Enterprise Single Sign-On Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2021-11
   description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
   url: "/playbooks/sso/"
@@ -66,7 +66,7 @@
   target: _self
 
 - title: Identity Lifecycle Management Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2022-12
   description: This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.
   url: "/playbooks/ilm/"
@@ -74,7 +74,7 @@
   target: _self
 
 - title: Privileged Identity Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2022-12
   description: This Playbook provides federal agencies with best practices in managing its privileged user population.
   url: "/playbooks/pam/"
@@ -82,7 +82,7 @@
   target: _self
 
 - title: Digitally Sign a Word Document
-  type: Markdown
+  type: Webpage
   pubdate: 2018-03
   description: This playbook will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
   url: "/playbooks/signword/"
@@ -90,7 +90,7 @@
   target: _self
 
 - title: Digitally Sign a Federal Register Document
-  type: Markdown
+  type: Webpage
   pubdate: 2022-08
   description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
   url: "/playbooks/signfedregister/"
@@ -98,7 +98,7 @@
   target: _self
 
 - title: Windows Hello for Business Playbook
-  type: Markdown
+  type: Webpage
   pubdate: 2022-12
   description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention.
   url: "/playbooks/whfb/"

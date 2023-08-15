@@ -2,7 +2,7 @@
 layout: page
 collection: ficampmo
 title: Shared Service Provider Program Guide
-permalink: /pkissp/
+permalink: /gsapkissp/
 sticky_sidenav: true
 sidenav: functions
 
@@ -67,7 +67,7 @@ This document is primarily for the following audience:
 2. Existing GSA PKI SSP Program members to refresh their knowledge of ongoing maintenance requirements. 
 3. Federal agency customers who want to understand the GSA PKI SSP program or ﬁnd contact information for the program management.
 
-If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](GSAPKISSP@gsa.gov).
+If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov).
 
 # Section I: GSA PKI SSP Program 
 
@@ -142,7 +142,7 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
 
 ### MOA Procedural Guidance:
 
-- Send an email to [GSAPKISSP@gsa.gov](mailt0:GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
+- Send an email to [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
 - SSPs must obtain, review, and sign the MOA from the SSP Program Ofﬁce.
 
 Once an MOA is signed, the GSA PKI SSP will sponsor the vendor to apply to the Federal PKI Policy Authority.
@@ -217,7 +217,7 @@ Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to 
 
 ### Step 5 -Apply to GSA MAS and Get Listed as an Identity Trusted Service
 
-Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
+Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
 
 ### Acquisition Procedural Guidance:
 
@@ -226,7 +226,7 @@ Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready
 
 <span style="color:red;">**NOTE:**</span> If the OCISO and SSP Program Ofﬁce believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certiﬁcate services on the day of receiving the ATO letter.
 
-After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on [idmanagement.gov under Government Identity Trust Services]({{site.baseurl}}/partners/trust-services//#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}  to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
+After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on [idmanagement.gov under Government Identity Trust Services]({{site.baseurl}}/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}  to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
 
 ## Maintenance Activities
 
@@ -236,7 +236,7 @@ A GSA PKI SSP must complete ongoing maintenance activity to remain in the progra
 
 A GSA PKI SSP must comply with all federal PKI-directed activities by:
 
-1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements]({{site.baseurl}}/governance/fpkiaudit/#annual-review-requirements-for-all-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} .
+1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority){:target="_blank"}{:rel="noopener noreferrer"} .
 2. Following the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}  in the event of a PKI-related incident.
 
 ### SA&A Maintenance
@@ -277,7 +277,7 @@ A derived PIV certiﬁcate is either a software or hardware certiﬁcate issued 
 
 ### PIV-I Certiﬁcates
 
-PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/playbooks/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
+PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
 
 |**Type**|**COMMON OID**|
 |--------|--------------|

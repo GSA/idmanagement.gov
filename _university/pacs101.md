@@ -51,7 +51,7 @@ The following table defines common PACS components:
 | **Component** | **Description** |
 |----------------|----------|
 | **Access point** | Entrance point or physical barrier where an employee or contractor interacts with the PACS. Example access points include turnstiles, gates, and locking doors. |
-| **PIV credential** | Federal employees and contractors use [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/arch/services/#physical-features){:target="_blank"}{:rel="noopener noreferrer"} to *physically access* federal facilities and *logically access* federal information systems. |
+| **PIV credential** | Federal employees and contractors use [Personal Identity Verification (PIV) credentials]({{site.baseurl}}/fips201ep/#personal-identity-verification-credentials){:target="_blank"}{:rel="noopener noreferrer"} to *physically access* federal facilities and *logically access* federal information systems. |
 | **Credential reader and keypad** | The reader provides power to and reads data from a PIV credential. The reader also sends this data to a control panel to authenticate the PIV credential and request access authorization. Employees and contractors may need to enter a PIN into the keypad and add a biometric, depending on the facility's security classification and risk levels. | 
 | **Biometric reader** | Captures biometric data (for example, fingerprint or iris scan) and verifies it against the PIV credential's biometric data. |
 | **Control panel** | Receives the credential data sent by the reader and verifies its presence in the credential holder data repository. It then makes an access decision and transmits authorization data to the access control server and access point.  |
@@ -73,7 +73,7 @@ Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but a
 - Interoperate with PIV credentials issued by other agencies.
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
 
-The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/partners/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
+The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
 
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -116,7 +116,7 @@ Here are some key E-PACS advantages to consider:
 * One employee and contractor enrollment system that connects multiple enrollment locations.
 * One credential registration and provisioning point.
 * One enterprise-wide system for administrators to modify or terminate access privileges.
-* One enterprise-wide system that regularly polls for [Certificate Revocation List]({{site.baseurl}}/arch/pivdetails/#certificate-revocation){:target="_blank"} (CRL) updates and maintains revocation data.
+* One enterprise-wide system that regularly polls for [Certificate Revocation List]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:target="_blank"} (CRL) updates and maintains revocation data.
 * Reduced costs for system management, such as patching, server system administration, and software updates.
 * Reduced costs for reporting, such as Federal Information Security Modernization Act [FISMA] reporting.
 * Reduced costs for:
@@ -235,7 +235,7 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 Visit the [PKI 101]({{site.baseurl}}/university/piv/) to learn more about certificate trust.
 
-{% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a class=\"usa-link usa-link--external\" href=\"https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
+{% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a class=\"usa-link usa-link--external\" href=\"https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
 
 This page provides a sample PACS Procurement Checklist. You can reuse or tailor this checklist according to your agency’s practices. The checklist highlights common procurement activities as they relate to the following roles:
 - Information Technology or Physical Security Engineers (ENG)
@@ -471,7 +471,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a class="usa-link usa-link--external" href="https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a class="usa-link usa-link--external" href="https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
@@ -592,7 +592,7 @@ PACS project teams consist of both agency employees and contractors. Teams inclu
 {% include alert-info.html content="Agencies that plan to initiate a PACS project should include line items for related employee training in their annual training plans and annual training budgets." %}
 
 ### Department of Homeland Security - Interagency Security Committee
-The [Interagency Security Committee](https://www.dhs.gov/interagency-security-committee){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} developed a series of free, self-paced, [online training courses](https://www.dhs.gov/interagency-security-committee-training){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} that provide an overview of facility security standards, processes, and practices.
+The [Interagency Security Committee](https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} developed a series of free, self-paced, [online training courses](https://www.dhs.gov/interagency-security-committee-training){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} that provide an overview of facility security standards, processes, and practices.
 
 ### Equipment Manufacturers
 [GSA PACS APL]({{site.baseurl}}/acquisition-professionals/#products){:target="_blank"}{:rel="noopener noreferrer"} PACS manufacturers whose products are listed on the GSA PACS APL offer product-specific courses for Operators and Technicians directly or through authorized service providers. Operators and Technicians may obtain certifications for completing some series of courses.
@@ -717,11 +717,11 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 
 [_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Interagency Security Council (ISC), December 2015
 
-[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_](https://{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}{:rel="noopener noreferrer"}, v1.1.0, GSA, February 24, 2015
+[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_]({{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}{:rel="noopener noreferrer"}, v1.1.0, GSA, February 24, 2015
 
 [_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, 2020 Edition
 
-[_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/cdnstatic/General_Supplies__Services/Guide_to_PACS_v2%2006-12-2018.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018
+[_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, June 2018
 
 [_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_]({{site.baseurl}}/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014
 
@@ -748,8 +748,8 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 4. **Authentication Factors** - Authentication systems are often categorized by the number of factors that they incorporate. The three factors often considered as the cornerstone of authentication are something you know (for example, a password), something you have (for example, an ID badge or a cryptographic key), and something you are (for example, a thumbprint or other biometric data). Authentication systems that incorporate all three factors are stronger than systems that only incorporate one or two of the factors.	
 5. **Authorization** - Grants access to only the resources a person needs to perform a job.  A person with an authentic, high-assurance credential (PIV or CAC) will not have access to all resources.  In a large enterprise with thousands of employees and contractors needing access to hundreds of different access points, attempting to manage authorization manually is costly, time consuming, and error-prone.
 6. **Biometric** - A measurable, physical characteristic or personal behavioral trait used to recognize the identity, or verify the claimed identity, of an applicant. Facial images, fingerprints, and iris image samples are all examples of biometrics.
-7. **BIO** - A [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism that is implemented by using a fingerprint or iris images data object sent from the PIV credential to the PACS and which is matched to the credential holder’s live scan.
-8. **BIO-A** - A [FIPS 201](https://csrc.nist.gov/publications/detail/fips/201/2/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism in which the BIO authentication mechanism is performed in the presence of an attendant who supervises the use of the PIV credential and the submission of the PIN and the sample biometric by the credential holder.
+7. **BIO** - A [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism that is implemented by using a fingerprint or iris images data object sent from the PIV credential to the PACS and which is matched to the credential holder’s live scan.
+8. **BIO-A** - A [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism in which the BIO authentication mechanism is performed in the presence of an attendant who supervises the use of the PIV credential and the submission of the PIN and the sample biometric by the credential holder.
 9. **BIO(-A)** - A shorthand used to represent both BIO and BIO-A authentication mechanisms.
 10. **Credential** - A collection of information about a person, attested to by an issuing authority. A credential is a data object, such as a certificate, that can be used to authenticate the credential holder. One or more data object credentials may be stored on the same physical memory device, such as a PIV card.
 11. **Credential Validation** - The process of determining if a credential is valid, which can include the following requirements:

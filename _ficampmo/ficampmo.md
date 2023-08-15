@@ -44,7 +44,7 @@ Through this four-part framework, the GSA FICAM Program leads or coordinates the
 3. Recognition
    1. Workforce identity trust services
    2. FIPS 201 Approved Product List
-   3. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/ssppki/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
+   3. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/gsapkissp/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
 4. Compliance
    1. [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
    2. Federal PKI Annual Review Process
@@ -59,7 +59,7 @@ The GSA FICAM Program coordinates and oversees governmentwide ICAM initiatives a
 
 The [Identity, Credential, and Access Management Subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
-The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://gsa.gov/portal/category/21399){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the federal government and supports collaborative government-wide efforts to:
+The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://www.gsa.gov/about-us/organization/office-of-governmentwide-policy){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the federal government and supports collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;
 - Coordinate interagency efforts to meet agency mission needs;
 - Identify gaps in policies, procedures, standards, guidance, and services; and
@@ -110,19 +110,19 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 ### Activities
 - **Approve Policies and Practices** – Approve Federal Bridge Certification Authority (FBCA) and Federal Common Policy Certification Authority Certificate Policies (CPs), including revisions; approve FPKI Trust Infrastructure Certification Practice Statements.
 - **Approve Entity Cross-Certification** – Establish and administer criteria and methodology for cross-certification with the FBCA; approve cross-certifications and execute Memoranda of Agreement (MOAs); maintain the FPKI Certification Applicant Requirements and the Common Policy CPS Evaluation Matrix.
-- [**Maintain Compliance**](../fpkiaudit/) – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
+- [**Maintain Compliance**]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority) – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
 - **Agreement with FPKI Management Authority** – Oversee the FPKI Management Authority (FPKIMA) to issue and revoke cross-certificates, ensure adherence to the FPKI CPs, and provide documentation to be archived.
 - **Interoperability Practices** – Coordinate legal, policy, technical, and business practices and issues related to FPKI Trust Infrastructure.
 
 ### Membership and Meetings
 
-Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter](../../docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
+Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
 
 The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpki at gsa.gov to participate in the FPKIPA or its working groups.
 
 ## Federal Public Key Infrastructure Management Authority
 
-[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust](../../docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
+[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust]({{site.baseurl}}/docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
 
 ### Activities
 - **Manage digital certificate policies and standards** to ensure secure physical and logical access, document sharing, and communications across federal agencies and between external business partners.

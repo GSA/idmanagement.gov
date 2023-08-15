@@ -12,9 +12,9 @@ subnav:
     - text: Send a Signed Email
       href: '#send-a-signed-email'
     - text: Send an Encrypted Email
-      href: '#send-an-Encrypted-email' 
+      href: '#send-an-encrypted-email' 
     - text: Decrypt an Email
-      href: '#Decrypt-an-email'
+      href: '#decrypt-an-email'
     - text: Other Helpful References
       href: '#other-helpful-references'  
       
@@ -86,7 +86,7 @@ The Global Address List (GAL) is a shared, enterprise-wide contact directory in 
 
 When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list), you may need to load it manually.
 
-1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/arch/pivdetails/) certificate (you may need to ask the intended recipient to export and share their certificate with you)
+1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates) certificate (you may need to ask the intended recipient to export and share their certificate with you)
 2. Click the **Home** tab.
 3. Click the **Address Book**.
 4. Select **File** > **New Entry**.
@@ -112,6 +112,6 @@ PIV users may receive and store encrypted emails througout their tenure in an or
 ## Other Helpful References
 
 - Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/pro/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/storage/mac/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

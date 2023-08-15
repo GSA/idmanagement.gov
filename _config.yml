@@ -71,7 +71,7 @@ primary_navigation:
         url: /playbooks/whfb/
       - name: Use Smart Cards with Applications
         url: /implement/outlook/
-      - name: FIDO2 and Web Authentication (Coming Soon!)
+      - name: FIDO2 and Web Authentication
         url: /playbooks/altauthn/
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
@@ -84,7 +84,7 @@ primary_navigation:
       - name: FIPS 201 Evaluation Program
         url: /fips201ep/
       - name: GSA PKI SSP Program
-        url: /pkissp/
+        url: /gsapkissp/
   - name: Playbooks
     url: /playbooks/
   - name: University
@@ -102,7 +102,7 @@ primary_navigation:
       - name: PACS 101
         url: /university/pacs/
       - name: ICAM Policy Matrix
-        url: /university/policy-matrix/
+        url: /university/policymatrix/
 
 secondary_navigation:
   - name: Contact Us
@@ -154,6 +154,7 @@ collections:
   ficampmo:
     output: true
     permalink: /ficam/:path/
+
 
 # Leaving in place: 
 # Unsure of placement in new site.
@@ -233,7 +234,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
-  - staging-ficam-playbooks
+
 assets:
   autoprefixer:
     browsers:
@@ -241,18 +242,26 @@ assets:
       - "last 2 versions"
       - "IE 11"
       - "not dead"
-  sources:
-  ## Updated to @uswds 3.0
-    - node_modules/@uswds/uswds/dist/css
-    - node_modules/@uswds/uswds/dist/fonts
-    - node_modules/@uswds/uswds/dist/img
-    - node_modules/@uswds/uswds/dist/img/favicons
-    - node_modules/@uswds/uswds/dist/img/material-icons
-    - node_modules/@uswds/uswds/dist/img/usa-icons
-    - node_modules/@uswds/uswds/dist/img/usa-icons-bg
-    - node_modules/@uswds/uswds/dist/img/uswds-icons
-    - node_modules/@uswds/uswds/dist/js
-    - node_modules/@uswds/uswds/dist/scss
-    - node_modules/@uswds/uswds/dist/theme
-    - node_modules/@uswds/uswds/packages
-    - node_modules/netlify-cms/dist
+
+sass:
+  source_dir: _sass
+  load_paths:
+    - node_modules/@uswds/uswds/dist/
+  sourcemap: development
+  quiet_deps: true
+  style: compressed
+  verbose: true
+
+# For page generator
+page_gen-dirs: true
+
+page_gen:
+  - data: "laws-policies-standards"
+    template: "standards_detail"
+    name: "shortName"
+    directory: "policies"
+    #debug: true
+  - data: "ficam-services"
+    template: "services_detail"
+    name: "shortName"
+    directory: "ficam_services"
