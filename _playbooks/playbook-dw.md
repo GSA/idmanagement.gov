@@ -106,7 +106,7 @@ Ensure digital worker identity management has proper governance, score the funct
 
 ## 1.1 Ensure Proper Oversight 
 
-The ICAM governance structure ensures enterprise identity management policies are updated to include digital worker management and use. For ICAM oversight and program management examples, see the [ICAM Program Management Playbook]({{site.baseurl}}/playbooks/pm/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+The ICAM governance structure ensures enterprise identity management policies are updated to include digital worker management and use. For ICAM oversight and program management examples, see the [ICAM Program Management Playbook]({{site.baseurl}}/university/pm/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <p align="center"><b>Update the agency enterprise identity management policies to include digital worker identity management.</b></p>
 
