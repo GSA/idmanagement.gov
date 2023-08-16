@@ -681,7 +681,6 @@ Subject:  FPKI System Notification - System Name
 
 
 ## Notifications
-
 <!-- This block loops through the notifications .yml file under the _data directory. -->
 
 <!-- start of notifications accordion  -->
