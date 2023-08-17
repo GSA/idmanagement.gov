@@ -186,11 +186,20 @@ Table 01. Common MFA Options
     </tbody>
 </table>
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Are there other forms of phishing-resistant authenticators besides those that are based on public key cryptography?</h4>
+    <p class="usa-alert__text">
+      The current phishing-resistant authenticators leverage public key cryptography, but there may be other types in the future.
+    </p>
+  </div>
+</div>
+
 These phishing-resistant authenticator types may not be susceptible to phishing because both leverage public key cryptography, creating a public and private key pair. 
 -	The private key is always stored on a device and never shared or exported, making it extremely hard to compromise. 
 -	The public key is shared with people or things like websites.
 
-The FIDO Alliance is supporting a new capability colloquially called a passkey. A passkey is a term similar to a "password" but describes a FIDO-generated key pair. A passkey is sharable across devices and platforms and even with other people. Cross-device or multi-device passkeys should only be considered as a public user option and further analyzed for workforce use cases. This is an evolving capability, so it will not be discussed further. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+The FIDO Alliance is supporting a new capability colloquially called a passkey. A passkey is a term similar to a "password" but describes a FIDO-generated key pair. A passkey is sharable across devices and platforms and even with other people. Cross-device or multi-device passkeys should only be considered a public user option and further analyzed for workforce use cases. This is an evolving capability, so it will not be discussed further. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 Due to this design, an authenticator leveraging public key cryptography is more resilient to phishing and credential attacks. There are some unique considerations in deciding between PKI and FIDO2.
 
