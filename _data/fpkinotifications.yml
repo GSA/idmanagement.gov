@@ -45,7 +45,7 @@
 - notice_date: August 18, 2023
   change_type: CA Certificate Issuance
   system: Entrust PKI Shared Service Provider
-  change_description: Entrust issued a new certificate to the Entrust Managed Services SSP CA certificate on August 18, 2023, in support of a CA rekey.
+  change_description: Entrust issued a new certificate to the Entrust Managed Services SSP CA certificate, in support of a CA rekey.
   contact: support at entrust dot com
   ca_certificate_hash: 19fea49c468760edce9600a9da9657b484734d24
   ca_certificate_issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
