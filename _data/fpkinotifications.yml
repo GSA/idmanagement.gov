@@ -27,6 +27,156 @@
 # ee_ocsp_uri:
 
 
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: FCPCAG2 issued a certificate to the Entrust Managed Services Root CA certificate on July 14, 2023 in preperation for rekeys of the Entrust Managed Services CAs.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: d6be623683f2b47e94452c04fa1ab3ab631e83eb
+  ca_certificate_issuer: CN = Federal Common Policy CA G2, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://rootweb.managed.entrust.com/CRLs/EMSRootCA4.crl
+  ee_ocsp_uri: N/A
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: Entrust PKI Shared Service Provider
+  change_description: Entrust issued a new certificate to the Entrust Managed Services SSP CA certificate on August 18, 2023, in support of a CA rekey.
+  contact: support at entrust dot com
+  ca_certificate_hash: 19fea49c468760edce9600a9da9657b484734d24
+  ca_certificate_issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+  ca_certificate_subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://rootweb.managed.entrust.com/CRLs/EMSRootCA4.crl
+  aia_uri: http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.managed.entrust.com/OCSP/EMSRootCAResponder
+  ee_cdp_uri: http://sspweb.managed.entrust.com/CRLs/EMSSSPCA4.crl
+  ee_ocsp_uri: http://ocsp.managed.entrust.com/OCSP/EMSSSPCAResponder
+
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 issued a certificate to the DoD Root CA 6 on July 19, 2023.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 917f2ef14bcb85bb6e7a20a0ce2e4055688fdce6
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+  ee_cdp_uri: http://crl.disa.mil/crl/DODROOTCA6.crl
+  ee_ocsp_uri: http://ocsp.disa.mil/
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD ID CA-73.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: d70c595bacc31b5a2948eb9cf259caf9d049d21f
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-73, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODIDCA_73.crl
+  ee_ocsp_uri: http://ocsp.disa.mil
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD ID CA-72.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: ce68b25fa532d959935aeb2c29e1358531903535
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-72, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODIDCA_72.crl
+  ee_ocsp_uri: http://ocsp.disa.mil
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD ID CA-70.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 6005f7e39bd475ce11dd4b74bc85b9c7182b9a53
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD ID CA-70, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODIDCA_70.crl
+  ee_ocsp_uri: http://ocsp.disa.mil  
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD EMAIL CA-73.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: e1a523712ed8a5c581ce5fa6fef646cd1daf0b46
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-73, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODEMAILCA_73.crl
+  ee_ocsp_uri: http://ocsp.disa.mil    
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD EMAIL CA-72.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 8c16e4e39988e295b84f29f80d16094ee4279c47
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-72, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODEMAILCA_72.crl
+  ee_ocsp_uri: http://ocsp.disa.mil   
+
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD EMAIL CA-70.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: d9e0eef2ed4ca189eace2535e4765267a5c368d0
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD EMAIL CA-70, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODEMAILCA_70.crl
+  ee_ocsp_uri: http://ocsp.disa.mil  
+  
+- notice_date: August 18, 2023
+  change_type: CA Certificate Issuance
+  system: DoD Root CA 6
+  change_description: DoD Root CA 6 issued a certificate to DOD SW CA-74.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 2941efe0f6521f186d006931efda110b97dc8248
+  ca_certificate_issuer: CN=DoD Root CA 6, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DOD SW CA-70, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODROOTCA6_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil
+  ee_cdp_uri: http://crl.disa.mil/crl/DODSWCA_74.crl
+  ee_ocsp_uri: http://ocsp.disa.mil  
+
 - notice_date: July 21, 2023
   change_type: Intent to Issue a CA Certificate
   system: CertiPath Bridge CA
