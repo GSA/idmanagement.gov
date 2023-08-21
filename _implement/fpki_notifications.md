@@ -264,10 +264,10 @@ These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authen
 #### Entrust Managed Services SSP CA
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 448107b6
-- Validity: August 13, 2019 to July 13, 2029
-- SHA-1 Hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5
-- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- Serial #: 4481b22f
+- Validity: July 11, 2023 to November 11, 2030
+- SHA-1 Hash: 19fea49c468760edce9600a9da9657b484734d24
+- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA4.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA4.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Entrust Derived Credential SSP CA
 - Subject: OU = Entrust Derived Credential SSP CA, OU = Certification Authorities, O = Entrust, C = US
@@ -522,7 +522,15 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: 6cd6e8bd7acd2f08e21693988a309eca6772c134  
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_49.crl](http://crl.disa.mil/crl/DODIDCA_49.crl){:target="_blank"}{:rel="noopener noreferrer"}  
 
-#### Entrust Managed Services SSP CA 
+#### Entrust Managed Services SSP CA (1 of 2)
+- Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
+- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+- Serial #: 448107b6
+- Validity: August 13, 2019 to July 13, 2029
+- SHA-1 Hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5
+- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
+#### Entrust Managed Services SSP CA (2 of 2)
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
 - Serial #: 448063d5 
