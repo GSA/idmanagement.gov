@@ -2,7 +2,7 @@
 layout: page
 collection: partners
 title: FIPS 201 Approved Product List
-permalink: approved-product-list/
+permalink: /fips201/
 sidenav: partners
 sticky_sidenav: true
 
