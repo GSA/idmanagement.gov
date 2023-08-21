@@ -73,7 +73,7 @@ Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but a
 - Interoperate with PIV credentials issued by other agencies.
 - Use components listed on the GSA FIPS 201 Approved Products List (APL).
 
-The FIPS 201 Evalutation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#icamsc-working-groups){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
+The FIPS 201 Evaluation Program in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#identity-credential-and-access-management-subcommittee){:target="_blank"}{:rel="noopener noreferrer"} created an operational self-assessment tool. The tool helps PACS implementers determine if facility access systems that use PIV credentials are configured according to FICAM and NIST guidelines.
 
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -86,7 +86,7 @@ There are two PACS deployment models.
 
 ## Standalone PACS
 
-A standalone PACS is a local system that controls physical access to a facility or specific areas within it—for example, a Sensitive Compartmented Information Facility (SCIF). Standalone PACSs are facility-centric, and consequently these systems typically do not connect to enterprise networks. While this deployment model tends to be the most common and uncomplicated method of managing access to controlled areas, it has several challenges.
+A standalone PACS is a local system that controls physical access to a facility or specific areas within it—for example, a Sensitive Compartmented Information Facility (SCIF). Standalone PACSs are facility-centric, and consequently, these systems typically do not connect to enterprise networks. While this deployment model tends to be the most common and uncomplicated method of managing access to controlled areas, it has several challenges.
 
 ### Standalone PACS' Operational Challenges
 
@@ -233,7 +233,7 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 {% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA)." %}
 
-Visit the [PKI 101]({{site.baseurl}}/university/piv/) to learn more about certificate trust.
+Visit the [PKI 101]({{site.baseurl}}/university/pki/) to learn more about certificate trust.
 
 {% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a class=\"usa-link usa-link--external\" href=\"https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
 
@@ -546,7 +546,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 {% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa dot gov or call 1-855-482-4348." %}
 
 ## Why Can We Buy Only GSA-Approved Products and Services?
-[GSA’s FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201-2 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201-2, secure operations, and interoperability.   
+[GSA’s FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201, secure operations, and interoperability.   
 
 ## What Other GSA Resources Can Help Us?
 - [GSA Schedules - General Information](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedule-buyers){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
