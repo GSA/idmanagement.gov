@@ -151,7 +151,7 @@ A privileged user policy interacts with multiple initiatives across an agency. E
 
 - **High Value Asset (HVA)** - [OMB Memo 19-03](https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} outlines requirements to identify, track, and manage an agency's most critical assets. [Guidance from CISA](https://www.cisa.gov/sites/default/files/publications/Securing%20High%20Value%20Assets_Version%201.1_July%202018_508c.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} recommends using individual accounts, logging key security events, and implementing multi-factor authentication for all HVA users, particularly privileged users.
 - **Insider threat** - Includes programs to detect and prevent unauthorized disclosure of sensitive information. An insider threat program provides, access to information, centralized information integration, analysis, response, insider threat awareness training, and user activity monitoring on government computers.
-- **Cybersecurity/ICAM** - Responsible for identity, credential, and access management services and coordination. Privileged Access Management is a service area under [Access Management]({{siate.baseurl}}arch/services/#access-management).
+- **Cybersecurity/ICAM** - Responsible for identity, credential, and access management services and coordination. Privileged Access Management is a service area under [Access Management]({{site.baseurl}}/arch/#access-management).
 - **Continuous Diagnostic and Mitigation (CDM)** - Cybersecurity tools, integration services, and dashboards to help agencies reduce the attack surface, increase visibility into cybersecurity posture, improve response, and streamline FISMA reporting.
 - **Risk Management** - Identify and track the implementation and operation of security controls.
 
@@ -408,7 +408,7 @@ The following documentation references help inform the development and direction
 6. [NIST Interagency Report 7966 - Security of Interactive and Automated Access Management Using Secure Shell (SSH)](https://csrc.nist.gov/publications/detail/nistir/7966/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
   - This publication assists organizations in understanding the basics of SSH interactive and automated access management in an enterprise, focusing on the management of SSH user keys.
 
-7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management]({{site.baseurl}}/arch/servicesframework/#access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+7. [Federal Identity, Credentials, and Access Management (FICAM) Architecture - Access Management]({{site.baseurl}}/arch/#access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
      - The FICAM Architecture is a framework for an agency to use in ICAM program and solution roadmap planning. Privileged Access Management is identified as a distinct service within the access management portion of the ICAM services framework.
 
 8. [Common Sense Guide to Mitigating Insider Threats (6th Edition), February 2019](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=540644){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
