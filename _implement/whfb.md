@@ -5,7 +5,7 @@ title: Configure Windows Hello for Business in Azure AD
 pubdate: 2023-06
 type: Markdown
 permalink: /implement/whfb/
-description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention. 
+description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implementation. 
 sidenav: implement
 sticky_sidenav: true
 
