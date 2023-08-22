@@ -42,12 +42,12 @@ Through this four-part framework, the GSA FICAM Program leads or coordinates the
    2. NIST Special Publication 800-63
    3. GSA FIPS 201 Functional Requirements and Test Cases
 3. Recognition
-   1. Workforce identity trust services
-   2. FIPS 201 Approved Product List
+   1. [Workforce identity trust services]({{site.baseurl}}/trust-services) - The current service providers that have an identity federation agreement with the U.S. government.
+   2. [FIPS 201 Approved Product List]({{site.baseurl}}/fips201/) - List of tested and certified products from the FIPS 201 Evaluation Program.
    3. [GSA PKI Shared Service Provider Program]({{site.baseurl}}/gsapkissp/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
 4. Compliance
-   1. [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
-   2. Federal PKI Annual Review Process
+   1. [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
+   2. [Federal PKI Annual Review Process]({{site.baseurl}}/fpki/#annual-review-requirements-for-all-certification-authorities) - Independent compliance audit requirement and schedule of Federal PKI Certification Authorities.
 
 # ICAM Governance Bodies
 
