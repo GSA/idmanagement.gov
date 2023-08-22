@@ -30,7 +30,7 @@ subnav:
 Version 1.0  
 August xx, 2023
 
-The FIDO2 Community of Action along with the ICAM Subcommittee Phishing-Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan an phishing-resistant alternative authenticator pilot.
+The Fast IDentity Online (FIDO) 2 Community of Action along with the ICAM Subcommittee Phishing-Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan an phishing-resistant alternative authenticator pilot.
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
@@ -68,11 +68,12 @@ These are key terms used throughout this Playbook. A linked term denotes it is a
 - [Authenticator](https://csrc.nist.gov/glossary/term/authenticator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Something the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a token.
 - [Credential](https://csrc.nist.gov/glossary/term/credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An object or data structure that authoritatively binds an identity - via an identifier or identifiers - and (optionally) additional attributes, to at least one authenticator possessed and controlled by a subscriber. 
 - [Derived PIV Credential](https://csrc.nist.gov/glossary/term/derived_piv_credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} — A credential issued based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices.
+- [FIDO Certification](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A vendor product is found compliant through an authorized FIDO testing center or event with the FIDO Universal Authentication Framework (UAF), Universal 2 Factor (U2F), or FIDO2 specification and listed on the [FIDO Certified website](https://fidoalliance.org/certification/fido-certified-products/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+- FIDO2 Platform Authenticator - A FIDO-certified hardware-based authenticator leveraging the Trusted Platform Module built into a device such as a laptop, tablet, or smartphone.
+- FIDO2 Roaming Authenticator - A FIDO-certified hardware-based USB security key or smart card. A platform authenticator can also act as a roaming authenticator in some instances.
 - [Multi-factor Authentication (MFA)](https://csrc.nist.gov/glossary/term/multi_factor_authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An authentication system that requires more than one distinct authentication factor for successful authentication. Multi-factor authentication can be performed using a multi-factor authentication or by a combination of authenticators that provide different factors. The three authentication factors are something you know, something you have, and something you are.
 - [Phishing](https://csrc.nist.gov/glossary/term/phishing){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A technique for attempting to acquire sensitive data, such as bank account numbers, through a fraudulent solicitation in email or on a web site, in which the perpetrator masquerades as a legitimate business or reputable person.
 - Phishing-resistant Authentication - A form of authentication not susceptible to interception or replay attacks.
-- FIDO2 Platform Authenticator - A FIDO-certified hardware-based authenticator leveraging the Trusted Platform Module built into a device such as a laptop, tablet, or smartphone.
-- FIDO2 Roaming Authenticator - A FIDO-certified hardware-based USB security key or smart card. A platform authenticator can also act as a roaming authenticator in some instances.
 - [Verifier Impersonation](https://csrc.nist.gov/glossary/term/verifier_impersonation){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  Verifier impersonation attacks, sometimes referred to as “phishing attacks,” are attempts by fraudulent verifiers and RPs to fool an unwary claimant into authenticating to an impostor website. In prior versions of SP 800-63, protocols resistant to verifier-impersonation attacks were also referred to as “strongly MitM resistant.
 
 ## Audience
@@ -187,6 +188,39 @@ These authenticator types aren’t susceptible to phishing because both leverage
 -	The private key is always stored on a device and never shared or exported making it extremely hard to compromise. 
 -	The public key is shared with people or things like websites.
 
+NIST Special Publication on Digital Identity Guidelines includes a list of requirements to meet their definition of phishing-resistant otherwise known as verifier impersonation resistant. **Any authenticator that invovles the manual entry of an authenticator output, such as a one time PIN or other knowledge factor, is not considered phishing-resistant**. 
+
+ <table class="usa-table usa-table">
+    <style> 
+        th {text-align: center; vertical-align: middle;}
+    </style>
+    <thead>
+        <tr>
+            <th scope="col">800-63 Requirement</th>
+            <th scope="col">FIDO2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Verifier Authenticated Channel</th>
+            <td>1. The keys are.</td>
+        </tr>
+        <tr>
+            <th scope="row">Verified Channel Binding</th>
+            <td>1. Can be a compl.</td>
+        </tr>
+        <tr>
+            <th scope="row">Verifier Signature Validation</th>
+            <td>1. Can be a compl.</td>
+        </tr>
+        <tr>
+            <th scope="row">Approved Cryptographic Algorithm</th>
+            <td>1. Can be a compl.</td>
+        </tr>
+  </tbody>
+</table>
+<br>
+
 An authenticator leveraging public key cryptography is more resilient to phishing and credential attacks due to this design. There are some unique considerations between PKI and FIDO2.
 
 Table 02. Comparison of PKI and FIDO2
@@ -227,11 +261,11 @@ Table 02. Comparison of PKI and FIDO2
 
 ## What is FIDO?
 
-This section provides a high level overview of the FIDO Alliance and what they provide. The FIDO Alliance is a non-profit industry association of technology vendors who publish MFA standards and test and certify vendor products. They’ve developed two standards.
+This section provides a high level overview of the FIDO Alliance and what they provide. The FIDO Alliance is a non-profit industry association of technology vendors who publish MFA standards and test and certify vendor products. They’ve developed three specifications; Universal Two Factor (U2F), Universal Authentication Framework (UAF), and FIDO2.
 
 1.	FIDO1 (Dec 2014)
-    1. Universal Two Factor (U2F) – Now called Client to Authenticator Protocol 1 (CTAP 1) is a simple protocol to bootstrap a username/password authentication with a 2nd factor over USB, Near Field Communication (NFC), or Bluetooth (BT) on supported operating systems and browsers. 
-    2. Universal Authentication Framework (UAF) - This is a passwordless protocol designed for mobile applications.
+    1. U2F – Now called Client to Authenticator Protocol 1 (CTAP 1) is a simple protocol to bootstrap a username/password authentication with a 2nd factor over USB, Near Field Communication (NFC), or Bluetooth (BT) on supported operating systems and browsers. 
+    2. UAF - This is a passwordless protocol designed for mobile applications.
 2.	FIDO2 (Apr 2018)
     1. CTAP2 - Added mobile device support and a passwordless experience when used with WebAuthN.
     2. WebAuthN - A World Wide Web Consortium (W3C) standard for a set of javascript Application Programming Interfaces (API) to allow UAF and CTAP2 authentication to browsers through devices.
@@ -248,7 +282,17 @@ This section provides a high level overview of the FIDO Alliance and what they p
 Figure 3. Example of a FIDO2 Authentication Transaction
  <img src="{{site.baseurl}}/assets/playbooks/pra-3-example.png" align="center" alt="An authenticator uses CTAP to talk to a client or platform. The client or platform then use Web Authentication to register to authenticate to a Relying Party. Both transactions are encrypted between the authenticator and the device and from the device to the relying party.">
 
-Figure 3 demonstrates a basic outline for a FIDO authenticator registration and authentication. It is a 
+A FIDO transaction for registration and authentication includes four main steps.
+1. **Enroll a FIDO authenticator** with a new online service.
+   1. For services that support a FIDO authenticator, the user is prompted to select an available FIDO option such as a security key or platform authenticator (usually shows up as an option for phone or tablet). The online service establishes the list of acceptable authenticator options.
+   2. The user unlocks the FIDO authenticator (which is a separate process from unlocking the device) using either a biometric, PIN, or tapping the device. This unlocks the device to create a new key pair. Any biometric capture or use is on the local device and not shared according to the FIDO specification.
+   3. User's device creates a new public/private key pair unique to the local device, the online service, and the user's account identifier.
+   4. The public key is sent to the online service to register the user and device to the user's account in the service.
+2. **Login using a FIDO authenticator** process.
+   1. The user navigates to the online service and is prompted for the FIDO authenticator.
+   2. The online service sends a challenge-response request. The user selects the FIDO option used to register with the service. They unlock the FIDO authenticator following the method used for enrollment.
+   3. The device selects the appropriate user account identifier and key to sign a challenge-response request to the online service.
+   4. The device sends the signed challenge
  
 A FIDO authenticator comes in two main forms.
 1.	Platform authenticator - A TPM chip built into devices. Some examples include Apple Face ID and Windows Hello for Business.
@@ -283,7 +327,7 @@ Table 03. Advantages and disadvantages of Platform versus Roaming Authenticator
 </table>
 <br>
 
-The FIDO Alliance is supporting a new capability which is called a passkey. A passkey is a term similar to a "password" but to describe a FIDO-generated key pair. This is an evolving capability so will not be discussed further. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+The FIDO Alliance is supporting a new capability which is called a passkey. A passkey is a colloquial term to describe a FIDO-generated key pair. At the time of this writing, passkeys are a public-focused solution where the passkey can be shared across devices and with other people. This is an evolving capability so will not be discussed further. Using FIDO2 does not mean you're using a passkey. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
@@ -295,15 +339,17 @@ The FIDO Alliance is supporting a new capability which is called a passkey. A pa
   </div>
 </div>
 
-## Lessons Learned from the FIDO2 Community of Action
+## FIDO2 Community of Action
 
-To help support agencies in aggressively replacing username and passwords, the Office of Management and Budget, Cybersecurity and Infrastructure Agency, and the ICAM Subcommittee established a FIDO2 Community of Action. The primary characteristics of a CoA are outlined below.
+To help support agencies in aggressively replacing username and passwords, the Office of Management and Budget, Cybersecurity and Infrastructure Agency, and the ICAM Subcommittee established a FIDO2 Community of Action (CoA). The primary characteristics of a CoA are outlined below.
 
 1.	Short term, usually six months.
 2.	Small group, usually 4-8 agencies.
 3.	Actively piloting a solution and sharing challenges and lessons learned.
 
-The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authentications like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and Apple Face ID and roaming authenticators like a Yubico Yubikey or WebAuthN authenticators. There are six main lessons learned from the first FIDO2 CoA cohort.
+### Challenges and Lessons Learned
+
+The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authentications like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and roaming authenticators like a Yubico Yubikey, RSA DS100, and WebAuthN authenticators. There are six main lessons learned and challenges from the first FIDO2 CoA cohort.
 
 1.	Agencies need a holistic authenticator strategy to stop handling exception use cases. There is not a single authenticator type that both works across authentication patterns and is phishing-resistant. Agencies must be comfortable in alternative, phishing-resistant authenticators like FIDO2 to replace exception policy alternatives.
 2.	FIDO2 is a commercial standard and becoming as ubiquitous as a password as more devices and browsers natively support them. This creates muscle memory in users improving their experience on government devices that support FIDO2.
