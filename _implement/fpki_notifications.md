@@ -179,7 +179,7 @@ These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authen
 - Serial #: 49  
 - Validity: May 16, 2023 to May 15, 2029
 - SHA-1 Hash: ce68b25fa532d959935aeb2c29e1358531903535
-- CRL DP: [http://crl.disa.mil/crl/DODIDCA_70.crl](http://crl.disa.mil/crl/DODIDCA_70.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://crl.disa.mil/crl/DODIDCA_73.crl](http://crl.disa.mil/crl/DODIDCA_73.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 **DoD ID CA-72 (Not Yet Operational)**
 - Subject: CN = DOD ID CA-72, OU = PKI, OU = DoD, O = U.S. Government, C = US  
