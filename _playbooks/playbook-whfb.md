@@ -5,7 +5,7 @@ title: Windows Hello for Business Playbook
 pubdate: 2023-06
 type: Markdown
 permalink: /playbooks/whfb/
-description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention. 
+description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implementation. 
 sidenav: playbooks
 sticky_sidenav: true
 
