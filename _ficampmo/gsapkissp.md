@@ -84,7 +84,7 @@ If a vendor fails to be added to the Multiple Award Schedule, GSA will rescind t
 ### Should My Company Apply to the Program?
 There are multiple advantages to becoming a GSA PKI SSP. They are as follows:
 
-- You will leverage your existing PKI platform to also offer federal PKI certiﬁcates.
+- You will provide a platform to offer federal digital certificates.
 - Your Federal Government customers will want to procure your services with a GSA Multiple Award Schedule.
 - You will expand your federal customer footprint by marketing your service through the GSA Multiple Award Schedule (MAS).
 
