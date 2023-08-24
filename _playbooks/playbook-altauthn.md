@@ -71,8 +71,11 @@ These are key terms used throughout this playbook. A linked term denotes an offi
 - [FIDO Platform Authenticator](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.22-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A type of authenticator built into a client device. This can be implemented with hardware, such as a Trusted Platform Module (TPM) chip, to store the private keys. A gesture can be provided with a PIN or biometrics, such as fingerprint readers or facial recognition.
 - [FIDO Roaming Authenticator](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.22-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An authenticator external to the client device that can connect to it using protocols such as Universal Serial Bus (USB), Near Field Communication (NFC), or Bluetooth (BT). Usually, keys are encrypted by another key on the roaming authenticator and then stored on the server. This allows the roaming authenticator to secure an unlimited number of keys theoretically. 
 - [Multi-factor Authentication (MFA)](https://csrc.nist.gov/glossary/term/multi_factor_authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An authentication system that requires more than one distinct authentication factor for successful authentication. Multi-factor authentication can be performed using a multi-factor authentication or by a combination of authenticators that provide different factors. The three authentication factors are something you know, something you have, and something you are.
+- Only Locally Trusted (OLT) - A Public Key Infrastructure used internally to an agency and not trusted outside of an agency boundary. Examples of an OLT PKI are Active Directory Certificate Services for domain controllers.
 - [Phishing](https://csrc.nist.gov/glossary/term/phishing){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A technique for attempting to acquire sensitive data, such as bank account numbers, through a fraudulent solicitation in email or on a web site, in which the perpetrator masquerades as a legitimate business or reputable person.
 - [Phishing-resistant Authentication](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#references){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Authentication processes designed to detect and prevent disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system.
+- [PIV Credential](https://csrc.nist.gov/glossary/term/piv_credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A credential that authoritatively binds an identity (and, optionally, additional attributes) to the authenticated cardholder that is issued, managed, and used in accordance with the PIV standards. These credentials include public key certificates stored on a PIV Card as well as other authenticators bound to a PIV identity account as derived PIV credentials.
+- [PIV-Interoperable (PIV-I) Credential](https://www.idmanagement.gov/university/pivi/) - An identity credential that is conformant with the Federal Government PIV Standards for identity assurance and authenticator assurance but asserts no personnel vetting assurance in a baseline, standardized manner.
 - [Verifier](https://csrc.nist.gov/glossary/term/verifier){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber’s identifier and check their status.
 - [Verifier Impersonation](https://csrc.nist.gov/glossary/term/verifier_impersonation){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier.
 - Workforce Identity - Using identity, credential, and access management capabilities to provide employees and other internal users, such as contractors and partners, secure access to organization-owned resources.
@@ -152,7 +155,7 @@ Figure 2. MITRE ATT&CK TTPs for Phishing and Credential-based attacks.
 
 ## What is Phishing-Resistant?
 
-Previous sections identified how credentials are susceptible to phishing and other attack types; this section identifies which types of MFA are phishing-resistant. Not all MFA are created equal, with some stronger than others. Phishing-resistant authentication is designed to detect and prevent the disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system. The two main phishing-resistant authenticators deployed by agencies include PKI (PIV-based, PIV-I, or Only Locally Trusted) and FIDO2, including WebAuthN authenticators. 
+Previous sections identified how credentials are susceptible to phishing and other attack types; this section identifies which types of MFA are phishing-resistant. Not all MFA are created equal, with some stronger than others. Phishing-resistant authentication is designed to detect and prevent the disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system. The two leading phishing-resistant authenticators agencies deploy include PKI (PIV-based, PIV-I, or Only Locally Trusted) and FIDO2, including WebAuthN authenticators.
 
 Table 01. Common MFA Options
  <table class="usa-table usa-table">
@@ -179,16 +182,16 @@ Table 01. Common MFA Options
         <tr>
             <td>Username / Password</td>
             <td>1. One Time PIN (Email, SMS, Mobile App)<br>2. Push Notification</td>
-            <td>1. PKI including PIV-based, PIV-I, and Only Locally Trusted credentials<br>2. FIDO including FIDO2 and WebAuthN </td>
+            <td>1. PKI including PIV-based, PIV-I, and Only Locally Trusted credentials<br>2. FIDO2 including WebAuthN </td>
         </tr>
     </tbody>
 </table>
 
-These authenticator types aren’t susceptible to phishing because both leverage a technology called public key cryptography which creates a public and private key pair. 
--	The private key is always stored on a device and never shared or exported making it extremely hard to compromise. 
+These phishing-resistant authenticator types aren’t susceptible to phishing because both leverage public key cryptography technology, which creates a public and private key pair. 
+-	The private key is always stored on a device and never shared or exported, making it extremely hard to compromise. 
 -	The public key is shared with people or things like websites.
 
-NIST Special Publication on Digital Identity Guidelines includes a list of requirements to meet their definition of phishing-resistant otherwise known as verifier impersonation resistant. **Any authenticator that involves the manual entry of an authenticator output, such as a one time PIN or other knowledge factor, is not considered phishing-resistant**. An authenticator leveraging public key cryptography is more resilient to phishing and credential attacks due to this design. There are some unique considerations between PKI and FIDO2.
+NIST Special Publication on Digital Identity Guidelines includes a list of requirements to meet their definition of phishing-resistant, otherwise known as verifier impersonation-resistant. **Any authenticator that involves the manual entry of an authenticator output, such as a one-time PIN or other knowledge factor, is not considered phishing-resistant**. Due to this design, an authenticator leveraging public key cryptography is more resilient to phishing and credential attacks. There are some unique considerations between PKI and FIDO2.
 
 Table 02. Comparison of PKI and FIDO2
  <table class="usa-table usa-table">
@@ -205,13 +208,13 @@ Table 02. Comparison of PKI and FIDO2
     <tbody>
         <tr>
             <th scope="row">Advantage</th>
-            <td>1. The keys are bound to people or things in the certificate.<br>2. A trusted infrastructure; keys are generated against policy that others can trust.<br>3. Non-repudiation in the certificate if issued after a high assurance identity proofing process.	</td>
-            <td>1. Natively supported in leading identity products.<br>2. Does not require the additional infrastructure (e.g., checking and revocation infrastructure).<br>3. The keys are bound to a person through an identity or directory account.</td>
+            <td>1. The keys are bound to people or things in the certificate.<br>2. A trusted infrastructure; keys are generated against a policy others can trust.<br>3. Non-repudiation if the certificate is issued after a high assurance identity proofing process.	</td>
+            <td>1. Natively supported in leading identity products.<br>2. Does not require additional public key infrastructure (e.g., checking and revocation infrastructure).<br>3. The keys are bound to a device and a user's account through an identity or directory account.</td>
         </tr>
         <tr>
             <th scope="row">Disadvantage</th>
-            <td>1. Can be a complicated endeavor for both establishing and operating.<br>2. Benefits of revocation checking becomes a single point of failure if the verification authority is taken offline or validation software is compromised.<br>3. Trust store management is a challenge.</td>
-            <td>1. Can’t revoke a FIDO key pair. They must be unregistered to the identity or directory record.<br>2. Talent shortage in people who understand and can implement FIDO2.</td>
+            <td>1. It can be complicated to establish and operate.<br>2. The benefits of revocation checking become a single point of failure if the verification authority is taken offline or validation software is compromised.<br>3. Trust store management is a challenge.</td>
+            <td>1. You can’t revoke a FIDO key pair. They must be unregistered to the identity or directory record or deleted off the device.<br>2. The talent shortage in people who understand and can implement FIDO2.<br>3. Requires modern access management tools and devices that support FIDO2.</td>
         </tr>
   </tbody>
 </table>
@@ -221,7 +224,7 @@ Table 02. Comparison of PKI and FIDO2
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">What is the difference between an authenticator and a credential?</h4>
     <p class="usa-alert__text">
-      A credential is an authenticator, but it also validates the person to the authenticator all in one. A passport, drivers license, or PIV are all examples of a credential, but it may be a diploma or certificate as well. An authenticator doesn’t have the validation part. For example, a password without a username is an example of an authenticator. You don’t know who it belongs to, but someone can use it to authenticate to something.
+      A credential is an authenticator but also validates the person to the authenticator. A passport, driver's license, or PIV are examples of a credential, but they may also be a diploma or certificate. An authenticator doesn’t have the validation part. For example, a password without a username is an example of an authenticator. You don’t know who it belongs to, but someone can use it to authenticate something.
     </p>
   </div>
 </div>
