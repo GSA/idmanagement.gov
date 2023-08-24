@@ -30,7 +30,7 @@ subnav:
 Version 1.0  
 August xx, 2023
 
-The Fast IDentity Online (FIDO) 2 Community of Action (CoA) along with the Identity, Credential, and Access Management (ICAM) Subcommittee Phishing-Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan an phishing-resistant alternative authenticator pilot.
+The Fast IDentity Online (FIDO) 2 Community of Action (CoA) along with the Identity, Credential, and Access Management (ICAM) Subcommittee Phishing-Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing-resistant alternative authenticator pilot.
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
@@ -42,7 +42,7 @@ The Fast IDentity Online (FIDO) 2 Community of Action (CoA) along with the Ident
 
 # Executive Summary
 
-The identity pillar of the Federal Zero Trust Strategy outlines an aggressive move to reduce system vulnerabilities by implementing phishing–resistant authenticators. Agencies have implemented the Personal Identity Verification (PIV) credential as the gold standard for credentials, but it also comes with procedural and operational challenges which hinder its everyday use. While agencies must continue to follow Office of Personnel Management (OPM) credentialing policy, there are modern phishing-resistant options agencies can deploy today to  either remove password exception policies or passwords entirely. 
+The identity pillar of the Federal Zero Trust Strategy outlines new methods to reduce system vulnerabilities by implementing phishing–resistant authenticators. Agencies have implemented the Personal Identity Verification (PIV) credential as the gold standard for credentials, but it also comes with procedural and operational challenges which hinder its everyday use. While agencies must continue to follow Office of Personnel Management (OPM) credentialing policy, there are modern phishing-resistant options agencies can deploy today to either remove password exception policies or passwords entirely. 
 
 This playbook includes an educational 101 section, but also a three step process to help agencies identify use cases, solutions, and outline a FIDO2 pilot based on experience from the FIDO2 CoA and content developed by the ICAM Subcommittee Phishing-Resistant Authenticator Working Group. The three step pilot process includes:
 
@@ -52,20 +52,19 @@ This playbook includes an educational 101 section, but also a three step process
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Towards a Passwordless Journey</h4>
+    <h4 class="usa-alert__heading">Pursue Greater use of Passwordless Multi-factor Authentication</h4>
     <p class="usa-alert__text">
       The Federal Zero Trust Strategy permits agencies to use phishing-resistant authenticators like FIDO2 and Web Authentication (WebAuthN) when a PIV credential is impractical. This encourages agencies to pursue greater use of passwordless multi-factor authentication.
     </p>
   </div>
 </div>
 
-While moving to zero trust can be a multi-year journey, most agencies have reduced their use of passwords through a FIDO2 pilot in only a couple of weeks to months. 
-This playbook is a tool designed to assist agency ICAM program managers and enterprise and application architects reduce or completely remove passwords at their agency or within applications. While using this playbook is optional, implementing phishing-resistant authenticators for your workforce is required. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value incorporating this playbook in their planning.
+While moving to a zero trust architecture can be a multi-year journey, most agencies have reduced their use of passwords through a FIDO2 pilot in only a couple of weeks to months. This playbook is a tool designed to assist agency ICAM program managers and enterprise and application architects reduce or completely remove passwords at their agency or within applications. While using this playbook is optional, implementing phishing-resistant authenticators for your workforce is required. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value incorporating this playbook in their planning.
 
 ## Key Terms
 
-These are key terms used throughout this Playbook. A linked term denotes it is an official term from a federal policy, NIST Glossary, or a NIST publication. An unlinked term is defined for the purposes of this document.
-- [Authenticator](https://csrc.nist.gov/glossary/term/authenticator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Something the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity. In previous editions of SP 800-63, this was referred to as a token.
+These are key terms used throughout this playbook. A linked term denotes it is an official term from a federal policy, NIST Glossary, or a NIST publication. An unlinked term is defined for the purposes of this document.
+- [Authenticator](https://csrc.nist.gov/glossary/term/authenticator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Something the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity.
 - [Credential](https://csrc.nist.gov/glossary/term/credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An object or data structure that authoritatively binds an identity - via an identifier or identifiers - and (optionally) additional attributes, to at least one authenticator possessed and controlled by a subscriber.
 - [Derived PIV Credential](https://csrc.nist.gov/glossary/term/derived_piv_credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} — A credential issued based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices.
 - [FIDO Certification](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A vendor product is found compliant through an authorized FIDO testing center or event with the FIDO Universal Authentication Framework (UAF), Universal 2 Factor (U2F), or FIDO2 specification and listed on the [FIDO Certified website](https://fidoalliance.org/certification/fido-certified-products/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
@@ -76,28 +75,25 @@ These are key terms used throughout this Playbook. A linked term denotes it is a
 - [Phishing-resistant Authentication](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#references){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Authentication processes designed to detect and prevent disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system.
 - [Verifier](https://csrc.nist.gov/glossary/term/verifier){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or two authenticators using an authentication protocol. To do this, the verifier may also need to validate credentials that link the authenticator(s) to the subscriber’s identifier and check their status.
 - [Verifier Impersonation](https://csrc.nist.gov/glossary/term/verifier_impersonation){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A scenario where the attacker impersonates the verifier in an authentication protocol, usually to capture information that can be used to masquerade as a subscriber to the real verifier.
-- Workforce Identity - 
+- Workforce Identity - The use of identity, credential, and access management capabilities to provide employees, and other internal users such as contractors and partners, secure access to organization-owned resources.
 
 ## Audience
 
-This playbook is designed for agency ICAM program managers and enterprise and application architects interested in reducing or completely removing password use in their agency or applications. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning.
+This playbook is designed for agency ICAM program managers and enterprise and application architects interested in reducing or completely removing passwords in their agency or applications. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning.
 
 ## Disclaimer
 
-The FIDO2 Community of Action developed this Playbook along with the content developed by the Phishing-Resistant Authenticator Working Group of the ICAM Subcommittee. U.S. Federal Executive Branch agencies can use this Playbook to plan and integrate alternative authenticators. This Playbook is not official policy, mandated action, nor does it provide authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon Office of Management and Budget Memorandum 22-09 and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as credentialing, lifecycle management, authenticator binding, and authenticator assurance levels are considered only to the extent that they relate to identifying and implementing alternative authenticators. Privileged access management (e.g., superusers, domain administrators) is out of scope for this playbook.
+The FIDO2 CoA developed this playbook along with content developed by the Phishing-Resistant Authenticator Working Group of the ICAM Subcommittee. U.S. Federal Executive Branch agencies can use this playbook to plan and integrate phishing-resistant authenticators into their agency ICAM processes. This playbook is not an official policy, mandated action, nor does it provide authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon Office of Management and Budget Memorandum 22-09 and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as credentialing, lifecycle management, authenticator binding, and authenticator assurance levels are considered only to the extent that they relate to identifying and implementing phishing-resistant authentication. Privileged access management (e.g., superusers, domain administrators) is out of scope for this playbook.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">NIST 800-63-4 Updates</h4>
-    <p class="usa-alert__text">
-      This playbook will be updated when NIST 800-63-4 is finalized.
-    </p>
+    <h4 class="usa-alert__heading">This playbook will be updated when NIST Special Publication 800-63-4 and 800--157-1 is published.</h4>
   </div>
 </div>
 
 # Phishing-Resistant 101
 
-While network attacks have become more complex, phishing continues to be one of the main tactics used to infiltrate networks and move laterally to compromise data. While smart timeout and lockout mechanisms can prevent brute force attacks on remote services, passwords are often easily compromised through a breach corpus, keylogging, sniffing of passwords sent in the clear, malicious Transport Layer Security inspection, social engineering, and lack of user awareness. Even though a PIV credential is the primary authentication method for federal users, many agencies continue to rely on passwords and One-Time Pins (OTP) when a user does not have a PIV credential. Agencies must focus on replacing these susceptible authenticators with phishing-resistant methods.
+While network attacks have become more complex, phishing continues to be one of the main tactics used to compromise credentials and infiltrate networks to move laterally and compromise data. While smart timeout and lockout mechanisms can prevent brute force attacks on remote services, passwords are often easily compromised through a breach corpus, keylogging, sniffing of passwords sent in the clear, malicious Transport Layer Security inspection, social engineering, and lack of user awareness. Even though a PIV credential is the primary authentication method for federal users, many agencies continue to rely on passwords and One-Time Pins (OTP) when a user does not have a PIV credential. Agencies must focus on replacing these susceptible authenticators with phishing-resistant methods.
 
 <div class="usa-alert usa-alert--success">
   <div class="usa-alert__body">
@@ -465,7 +461,7 @@ The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a si
 
 ### Lifecycle Management
 
-This is a very common question that may be over analyzed because of the PKI-centric nature of authenticators in the federal government. For specific lifecycle questions regarding Derived PIV authenticators see [NIST Special Publication 800–157](https://csrc.nist.gov/publications/detail/sp/800-157/rev-1/draft){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls over account lifecycle management.
+This is a very common question that may be over analyzed because of the PKI-centric nature of authenticators in the federal government. For specific lifecycle questions regarding Derived PIV authenticators see [NIST Special Publication 800–157](https://csrc.nist.gov/publications/detail/sp/800-157/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls covering account lifecycle management.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
@@ -516,13 +512,15 @@ A PIV credential remains the primary authenticator for federal users, but there 
 ## Standards
 
 1.	[NIST Special Publication 800-63B-3 - Digital Identity Guidelines - Authentication and Lifecycle Management](https://pages.nist.gov/800-63-3/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-2.	[NIST Special Publication 800-63B-4 *DRAFT*- Digital Identity Guidelines - Authentication and Lifecycle Management](){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-3.	[NIST Special Publication 800-157r1 *DRAFT*- Guidelines for Derived PIV Credentials](){:rel="noopener noreferrer"}{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+
+## Specification
+1.  [Web Authentication: An API for Accessing Public Key Credentials (April 8, 2021)](https://www.w3.org/TR/webauthn-2/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2.  [FIDO Alliance including FIDO2 CTAP, U2F, and UAF](https://fidoalliance.org/specifications/download/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Guidance
 
 1.	[CISA Fact Sheet - Implementing Phishing-Resistant MFA](https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-2.  [CISA Secure Cloud Business Applications (SCUBA) Hybrid Identity Solutions Architecture](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2.  [CISA Secure Cloud Business Applications (SCuBA) Hybrid Identity Solutions Architecture - Technical Summary of FIDO2](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2.	[FICAM Enterprise Single Sign-On Playbook](https://playbooks.idmanagement.gov/playbooks/sso/)
 3.  [FICAM Windows Hello for Business Playbook](https://playbooks.idmanagement.gov/playbooks/whfb/)
 3.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
