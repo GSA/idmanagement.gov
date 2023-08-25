@@ -66,9 +66,11 @@ While moving to a zero trust architecture can be a multi-year journey, most agen
 These are key terms used throughout this playbook. A linked term denotes an official term from a federal policy, a National Institute of Standards and Technology (NIST) glossary, or a NIST publication. An unlinked term is defined for this playbook.
 - [Authentication Factor](https://csrc.nist.gov/glossary/term/authentication_factor){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}) - The three types of authentication factors are something you know, something you have, and something you are. Every authenticator has one or more authentication factors.
 - [Authenticator](https://csrc.nist.gov/glossary/term/authenticator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Something the claimant possesses and controls (typically a cryptographic module or password) that is used to authenticate the claimant’s identity.
+- Certificate-Based Authentication - This is a type of phishing-resistant authentication that leverages a digital certificate such as a PIV authentication certificate or other types of digital certificates.
 - [Credential](https://csrc.nist.gov/glossary/term/credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An object or data structure that authoritatively binds an identity - via an identifier or identifiers - and (optionally) additional attributes, to at least one authenticator possessed and controlled by a subscriber.
 - [Derived PIV Credential](https://csrc.nist.gov/glossary/term/derived_piv_credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} — A credential issued based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices.
-- [Fast IDentity Online (FIDO) 2] - FIDO2 is a FIDO specification, Client-to-Authenticator Protocol (CTAP), and a World Wide Web Consortium (W3C) standard, Web Authentication (WebAuthN).  FIDO2 is backwards compatible with its predecessor, FIDO Universal 2nd Factor (U2F).
+- [Fast IDentity Online (FIDO) 2] - FIDO2 is a FIDO specification, Client-to-Authenticator Protocol (CTAP), and a World Wide Web Consortium (W3C) standard, Web Authentication (WebAuthN).  FIDO2 is backward compatible with its predecessor, FIDO Universal 2nd Factor (U2F).
+- FIDO Passkey (otherwise known as a FIDO discoverable credential)- Similar to a platform authenticator, but **the individual unique keys** are exportable and shareable between devices and people.
 - [FIDO Certification](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A vendor product is found compliant through an authorized FIDO testing center or event with the FIDO Universal Authentication Framework (UAF), Universal 2 Factor (U2F), or FIDO2 specification and listed on the [FIDO Certified website](https://fidoalliance.org/certification/fido-certified-products/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - [FIDO Platform Authenticator](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.22-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A type of authenticator built into a client device. This can be implemented with hardware, such as a Trusted Platform Module (TPM) chip, to store the private keys. A gesture can be provided with a PIN or biometrics, such as fingerprint readers or facial recognition.
 - [FIDO Roaming Authenticator](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.22-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An authenticator external to the client device that can connect to it using protocols such as Universal Serial Bus (USB), Near Field Communication (NFC), or Bluetooth (BT). Colloquially called a security key, private keys are encrypted by another key on the roaming authenticator and then stored on a server. This allows the roaming authenticator to secure an unlimited number of keys theoretically. 
@@ -88,11 +90,11 @@ This playbook is designed for agency ICAM program managers and enterprise and ap
 
 ## Disclaimer
 
-The FIDO2 CoA developed this playbook, along with content developed by the Phishing-Resistant Authenticator Working Group of the ICAM Subcommittee. U.S. Federal Executive Branch agencies can use this playbook to plan and integrate phishing-resistant authenticators into their agency ICAM processes. This playbook is not an official policy, mandates agency action, nor does it provide authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon Office of Management and Budget Memorandum 22-09 and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as credentialing, lifecycle management, authenticator binding, and authenticator assurance levels, are considered only to the extent they relate to identifying and implementing phishing-resistant authentication. Privileged access management (e.g., superusers, domain administrators) is out of the scope of this playbook.
+The FIDO2 CoA developed this playbook, along with content developed by the Phishing-Resistant Authenticator Working Group of the ICAM Subcommittee. U.S. Federal Executive Branch agencies can use this playbook to plan and integrate phishing-resistant authenticators into their agency ICAM processes. This playbook is not an official policy, mandates agency action, nor does it provide authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon Office of Management and Budget Memorandum 22-09 and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as identity proofing, lifecycle management, authenticator binding, credentialing standards, and authenticator assurance levels, are considered only to the extent they relate to identifying and implementing phishing-resistant authentication. Privileged access management (e.g., superusers, domain administrators) is out of the scope of this playbook.
 
-<div class="usa-alert usa-alert--info">
+<div class="usa-alert usa-alert--slim">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">This playbook will be updated when NIST Special Publication 800-63-4 and 800-157-1 is published.</h4>
+    <p class="usa-alert__text">This playbook will be updated when NIST Special Publication 800-63-4 and 800-157-1 is published.</p>
   </div>
 </div>
 
@@ -102,7 +104,7 @@ While network attacks have become more complex, phishing remains one of the main
 
 <div class="usa-alert usa-alert--success">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Phishing-resistant authentication refers to authentication processes designed to detect and prevent disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system.</h4>
+    <p class="usa-alert__text">Phishing-resistant authentication refers to authentication processes designed to detect and prevent disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system.</p>
   </div>
 </div>
 
@@ -259,7 +261,7 @@ A FIDO transaction for registration and authentication includes four main steps 
 1. **Enroll a FIDO authenticator** with a new online service.
    1. For services supporting a FIDO authenticator, the user is prompted to select an available FIDO option (usually available for a phone or tablet or a security key). The online service establishes the list of acceptable authenticator options.
    2. The user unlocks the FIDO authenticator (a separate process from unlocking the device) using either a biometric, PIN, or tapping the device. This unlocks the device to create a new key pair. Any biometric capture or use is on the local device and not shared according to the FIDO specification.
-   3. The user's device creates a new public/private key pair unique to the local device, the online service, and the user's account identifier.
+   3. The user's device creates a new public/private key pair unique to the local device, the online service, and the user's account identifier. **A unique key pair is created per online service**.
    4. The public key is sent to the online service to register the user and device to the user's account in the online service.
 2. **Login using a FIDO authenticator** process.
    1. The user navigates to the online service and is prompted for the FIDO authenticator.
@@ -270,7 +272,7 @@ A FIDO transaction for registration and authentication includes four main steps 
 A FIDO authenticator comes in three main types.
 1.	Platform authenticator - A type of authenticator built into a client device. This can be implemented with hardware, such as a TPM chip, to store the private keys. A gesture can be provided with a PIN or biometrics, such as fingerprint readers or facial recognition.
 2.	Roaming authenticator - Colloquially called a security key, a USB-A or C-based physical device that can be used wirelessly across devices over NFC and BT. Some examples include Yubico's Yubikey, Identiv's UTrust, RSA's DS-100, and others. If a PIV credential was also FIDO-certified, it would be categorized as a roaming authenticator.
-3.  Passkeys - Passkeys are a recent addition to the FIDO2 ecosystem. The technical term for a passkey is a discoverable credential in the FIDO specification. Passkeys are similar to a platform authenticator, but the keys are exportable and shareable between devices and people. While not desirable in a workforce identity context, passkeys may be valuable tools for agencies in certain low-assurance situations and other use cases to replace passwords. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+3.  Passkeys - Passkeys are a recent addition to the FIDO2 ecosystem. The technical term for a passkey is a discoverable credential in the FIDO specification. Passkeys are similar to a platform authenticator, but **the individual unique keys** are exportable and shareable between devices and people. While not desirable in a workforce identity context, passkeys may be valuable tools for agencies in certain low-assurance situations and other use cases to replace passwords. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 Since FIDO2 leverages public key cryptography and is hardware-based, it is categorized as either a **single-factor or multi-factor cryptographic device** authenticator type in NIST Special Publication 800-63 and could achieve Authenticator Assurance Level 2 or 3. The specific level is dependent on multiple criteria with the authenticator as just one piece of an authentication transaction. 
 
@@ -305,8 +307,8 @@ Table 03. Advantages and disadvantages of platform versus roaming authenticator
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">A Case Study on Authenticator Disaster Recovery and Business Continuity</h4>
     <p class="usa-alert__text">
-      Agencies need a plan or approved alternative when a user doesn't have a PIV credential or if the PIV validation infrastructure is compromised or not available. In May 2022, Microsoft released a patch that changed how PKI certificates (including PIV credential certificates) are mapped in Active Directory. These changes broke certificate-based authentication for many agencies that mapped PKI certificates using the User Principal Name (usually an email address). This patch also caught a lot of agencies off guard as they saw rolling outages as Domain Controllers updated. For agencies that only relied on PIV credentials, this was a dire risk management decision to apply an agency–wide username/password exception or run vulnerable servers. CISA
-      <a class="usa-link" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch-tuesday-update-cve-2022-26925" target="_blank" rel="noopener noreferrer">released guidance on applying the Microsoft patch</a> outlining remediation steps which included applying the patch and turning on a compatibility mode. This compatibility mode is only temporary and agencies must either manually or determine an automated way to update certificate mapping to a stronger method identified by Microsoft such as by a subject key identifier. Some agencies took action to have a comparable alternative authenticator as either an ongoing secondary option or as a backup in case there is another potential compromise of PKI validation software or with PKI certificates directly.
+      Agencies need a plan or approved alternative when a user doesn't have a PIV credential or if the PIV validation infrastructure is compromised or unavailable. In May 2022, Microsoft released a patch that changed how PKI certificates (including PIV credential certificates) are mapped in Active Directory. These changes broke certificate-based authentication for many agencies that mapped PKI certificates using the User Principal Name (usually an email address). This patch also caught a lot of agencies off guard as they saw rolling outages as Domain Controllers updated. For agencies that only relied on PIV credentials, this was a dire risk management decision to apply an agency–wide username/password exception or run vulnerable servers. CISA
+      <a class="usa-link" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch-tuesday-update-cve-2022-26925" target="_blank" rel="noopener noreferrer">released guidance on applying the Microsoft patch</a> outlining remediation steps which included applying the patch and turning on a compatibility mode. This compatibility mode is only temporary, and agencies must either manually or determine an automated way to update certificate mapping to a stronger method identified by Microsoft, such as by a subject key identifier. Some agencies took action to have a comparable alternative authenticator as either an ongoing secondary option or as a backup in case there is another potential compromise of PKI validation software or with PKI certificates directly.
     </p>
   </div>
 </div>
@@ -330,16 +332,16 @@ The first FIDO2 CoA included eight agencies either actively piloting a solution 
 #### Lessons Learned
 1.	**No authenticator type is a silver bullet** - Agencies need a holistic authenticator strategy to stop handling exception use cases. There is not a single authenticator type that works across authentication patterns and is phishing-resistant. Agencies must be comfortable with alternative, phishing-resistant authenticators like FIDO2 to replace exception policy alternatives like passwords and OTP.
 2.	**User training and guidance** - Plan and produce user guidance and adoption campaigns. One of the biggest challenges in deploying new technology is ensuring you don’t lose your users on the journey. Hold office hours and Ask Me Anything sessions, or have on-demand videos to help users transition to new tools. See the user experience section of the Windows Hello for Business Playbook as an example.
-3.	**Platform authenticators cost advantage** - FIDO2 platform authenticators provide a more straightforward and cost-efficient approach to meeting broader organization adoption of phishing-resistant authentication for all users. Biometric options such as face and finger recognition are included in FIDO2 without needing 3rd party middleware but depend on device support.
-4.	**In Most instances, FIDO2 requires internet connectivity** - The FIDO2 standard, specifically WebAuthN, is an internet-based service using APIs. It may require a connected device and may not work in low or no-bandwidth environments. Cached credentials and refresh tokens can become a challenge to troubleshoot and manage.
+3.	**Platform authenticator cost advantage** - FIDO2 platform authenticators provide a more straightforward and cost-efficient approach to meeting broader organization adoption of phishing-resistant authentication for all users. Biometric options such as face and finger recognition are included in FIDO2 without needing 3rd party middleware but depend on device support and using modern access management tools (e.g., not natively supported in legacy tools such as Active Directory or Active Directory Federation Services).
+4.	**In Most instances, FIDO2 requires internet connectivity** - The FIDO2 standard, specifically WebAuthN, is an internet-based service using APIs. It may require a connected device and not work in low or no-bandwidth environments. Cached credentials and refresh tokens can become a challenge to troubleshoot and manage.
 
 Table xx. FIDO CoA Cohort 1 pilot with results
  
-# The Passwordless Journey
+# Run a FIDO2 Pilot
 
 An agency's journey toward a passwordless future typically starts with a pilot. Follow these three steps from the FIDO2 CoA to plan and execute a successful FIDO2 pilot.
 
-[Step 1 - Recognize authentication patterns and use cases](#step-1---recognize-authentication-patterns-and-use-cases) where your agency is using an exception authenticator.
+[Step 1 - Recognize authentication patterns and use cases](#step-1---recognize-authentication-patterns-and-use-cases) where your agency uses an exception authenticator.
 [Step 2 - Identify available solutions](#step-2---identify-available-solutions), which may include procuring security keys.
 [Step 3 - Deploy a pilot](#step-3---deploy-a-pilot) and make production considerations.
 
@@ -350,57 +352,57 @@ The first step for many agencies is identifying use cases, authentication patter
 Figure 4. Authentication patterns toward a holistic authenticator strategy
  <img src="{{site.baseurl}}/assets/playbooks/pra-4-patterns.png" align="center" alt="Authentication patterns focus on the authentication events between a user (an employee, contractor, or partner) and data. The five primary authentication patterns inlude personal devices, government devices, enterprise single sign on tool, direct authentication through a web portal, and a non-application interface such as a command line.">
 
-Figure 4 identifies the five most common authenticator patterns between a user and data and grouped into two main categories.
+Figure 4 identifies the five most common authenticator patterns between a user and data and is grouped into two main categories.
 
-1.	Device authentication - This is the first authentication attempt to gain data access. Two device authentication patterns include a bring your own (BYOD) or personal device or a Government Furnished Equipment (GFE).
-    1.	BYOD - Some agencies support BYOD access for a limited number of applications like email or collaboration tools. Most often these are unmanaged devices so it's difficult to deploy or enforce certificate-based options.
-    2.	GFE - This is the primary method most agencies rely on for data access. These are managed devices where agencies deploy certificate-based options. One challenge by most agencies is managing a plethora of operating system types which may also limit how certificates are supported.
-2.	Application authentication - This is often the 2nd authentication attempt to gain data access. Three application authentication patterns include an enterprise Single Sign-On tool, direct access through a web application, or a non-application interface.
-    1.	[Single Sign On (SSO)](https://playbooks.idmanagement.gov/playbooks/sso/) - Agencies are centralizing application access using an enterprise SSO tool. This is often where PIV enforcement occurs with most SSO tools supporting certificate-based authentication.
-    2.	Web Application - This is direct authentication at a web page over HTTPS. Most often certificate-based options are difficult to support so most agencies deploy a username password or OTP. Some agencies have outsourced authentication to a shared service such as Max Authentication or Login.gov.
-    3.	Non-App Interface - This is a catch all for any type of data access that is not over HTTPS such as command line, SSH, or other non–HTTPs protocols. Most agencies rely on either [Privileged Access tools](https://playbooks.idmanagement.gov/playbooks/pam/) or username and passwords.
+1.	**Device authentication** is the first attempt to gain data access. Two device authentication patterns include managed and unmanaged devices.
+    1.	**Unmanaged Devices** include any device not under the organization's control. Some agencies support Bring Your Own Device access for a limited number of applications like email or collaboration tools. Deploying or enforcing certificate-based options, compliance profiles, or baseline images is difficult.
+    2.	**Managed Devices** include any device under direct control or with a managed profile, such as Government Furnished Equipment (GPE) or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access. One challenge for most agencies is managing many operating system types, which may also limit how certificates are supported.
+2.	**Application authentication** is often the 2nd authentication attempt to gain data access. Three application authentication patterns include an enterprise Single Sign-On tool, direct access through a web application, or a non-application interface.
+    1.	**[Single Sign On (SSO)](https://playbooks.idmanagement.gov/playbooks/sso/)** - Agencies are centralizing application access using an enterprise SSO tool. This is often where PIV enforcement occurs, with most SSO tools supporting certificate-based authentication.
+    2.	**Web Application** - This is direct HTTPS authentication at a web page. The most common implementation is partner access use cases across agencies because most organizations have or are centralizing access to their internal applications with an enterprise SSO tool. Certificate-based options are often difficult to support, so most agencies deploy a password or OTP. Some agencies have outsourced authentication to a shared service such as Max Authentication or Login.gov.
+    3.	**Non-App Interface** - This is a catch-all for data access, not over HTTPS, such as command line, SSH, or other non–HTTP protocols. Most agencies rely on either [Privileged Access tools](https://playbooks.idmanagement.gov/playbooks/pam/), Secure Shell (SSH) keys, or passwords with additional network-based access control such as a jump box.
 
 
-<div class="usa-alert usa-alert--warning">
+<div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Don’t Forget the Suitability Determination!</h4>
+    <h4 class="usa-alert__heading">OPM supplemental credentialing standards.</h4>
     <p class="usa-alert__text">
-      No matter the credential or authenticator used, all agencies must continue to follow OPM credentialing policy for suitability and background investigations as well as issuing a PIV credential. 
-    </p>
+      Follow OPM's six basic standards for issuing an alternative authentication for individuals who do not require a suitability determination or security clearance.</p>
+      <ol>
+        <li>1. The individual is not known or reasonably suspected of being a terrorist. This includes checking names against law enforcement records.<</li>
+        <li>2. The employer is unable to verify the individual's claimed identity.</li>
+        <li>3. There is a reasonable basis to believe the individual has submitted fraudulent information concerning their identity. A reasonable basis to believe occurs when a disinterested observer, with knowledge of the same facts and circumstances, would reasonably reach the same conclusion.</li>
+        <li>4. There is a reasonable basis to believe the individual will attempt to gain unauthorized access to classified documents, information protected by the Privacy Act, proprietary information, or other sensitive or protected information.</li>
+        <li>5. There is a reasonable basis to believe the individual will use an identity credential outside the workplace unlawfully or inappropriately.</li> 
+        <li>6. There is a reasonable basis to believe the individual will use Federally-controlled information systems unlawfully, make unauthorized modifications to such systems, corrupt or destroy such systems, or engage in inappropriate uses of such systems.</li>
+      </ol>
   </div>
 </div>
 
 Once we identify the authenticator gaps, we can identify the primary use cases of our holistic strategy. There are five primary use cases where a phishing-resistant option can close gaps.
 
-1.	Alternative authenticator or “I don’t have a card reader” - This is the primary use case to replace exception authenticators like passwords or OTPs. This use case includes mobile device access or application access where a certificate-based authentication option is not available. Agencies deploy an alternative authenticator like a platform authenticator as an always available option. Some agencies deploy Derived PIV.
-2.	Back–up authenticator or “I don’t have my PIV credential” - This use case user doesn't have a PIV credential yet meaning it hasn’t been delivered as a new issuance or a replacement. Some agencies prefer to only have a PIV credential and control the use of any other authenticator. This use case replaces an exception policy authenticator with a phishing-resistant option. Some agencies deploy PIV Interoperable or agency specific alternative tokens as well.
-3.	Ineligible PIV user or “I can’t get a PIV credential” - This use case covers the entire short-term user community that falls outside of the OPM credentialing policy. This community includes short term employees or contractors, partners, or other user types.  Some agencies deploy PIV Interoperable, agency–specific alternative tokens, or username/password and OTP.
-4.	Technology limitations – Any certificate–based authenticator comes with its own challenges and limitations. Cloud applications and mobile devices usually do not natively support certificate–based options without 3rd party tools. 
-5.	Mission application for public users - The Federal Zero Trust Strategy recognizes that phishing-resistant authenticators are not just a workforce challenge, but should be an option for public users as well. While it’s easier to enforce authenticators types on your workforce, agencies should consider adding a phishing–resistant option to public facing websites.
+1.	Alternative authenticator or “I don’t have a card reader” - This is the primary use case to replace exception authenticators like passwords or OTPs. This use case includes mobile device or application access where a certificate-based authentication option is unavailable or untenable. Agencies deploy an alternative authenticator like a platform authenticator as an always available option. Some agencies deploy Derived PIV.
+2.	Back–up authenticator or “I don’t have my PIV credential” - This use case user doesn't have a PIV credential yet, meaning it hasn’t been delivered as a new issuance or a replacement. This use case replaces an exception policy authenticator with a phishing-resistant option until the user has their PIV credential. Some agencies deploy PIV Interoperable or agency-specific alternative tokens as well.
+3.	Ineligible PIV user or “I can’t get a PIV credential” - This use case covers the user community outside the OPM credentialing standards. This community includes short-term employees, contractors, partners, and users who do not meet the continuous six-month access requirement.  Some agencies deploy PIV Interoperable, agency–specific alternative tokens, or username/password and OTP.
+4.	Technology limitations – Any certificate–based authenticator has challenges and limitations, as outlined in the 101 section. Cloud applications and mobile devices usually do not natively support certificate–based options without 3rd party tools. 
+5.	Mission application for public users - The Federal Zero Trust Strategy recognizes that phishing-resistant authenticators are not just a workforce challenge but should also be an option for public users. Agencies should consider adding a phishing–resistant option to public-facing websites.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Wait, so can we support bring your own devices and authenticators?</h4>
+    <h4 class="usa-alert__heading">Can we support bring your own devices and authenticators?</h4>
     <p class="usa-alert__text">
-      It is a local risk decision to support BYOD or bring your own authenticators. This is a more common use case for partner applications such as Max.gov or Federal Acquisition Institute than for an agency enterprise SSO tools. Consider data sensitivity when supporting BYOD data access. One unique feature of FIDO2 is the ability to limit the types of FIDO authenticators that can be registered with an account. For example, an agency can limit to a specific vendor and even a specific batch of security keys (such as only FIPS certified security keys). 
+      It is an agency risk decision to support BYOD or Bring Your Own Authenticators (BYOA). A BYOA is a user's authenticator that they've personally purchased and controlled. Supporting BYOA is an everyday use case for applications that leverage an external access tool such as Max.gov or Login.gov rather than for an agency enterprise SSO tool. However, some agencies are exploring the benefits and risks of allowing employees to use personal authenticators. Consider data sensitivity when supporting BYOD and BYOA data access. One unique feature of FIDO2 is limiting the types of FIDO authenticators registered with an account. For example, an agency can limit to a specific vendor and batch of security keys (such as only FIPS-certified). 
     </p>
   </div>
 </div>
 
 ## Step 2 - Identify Available Solutions
 
-Most agencies are surprised to find out that their agency enterprise SSO tool supports FIDO2, usually without any additional license or equipment costs. 
+Most agencies are surprised that their agency enterprise SSO tool supports FIDO2, usually without any additional license or equipment costs. FIDO2 platform and device support is a crosswalk between operating systems and browsers, with some operating systems supporting some browsers and vice versa. FIDO2 platform authenticators are single operating system specific, so they will not work in a multi-operating system use case (e.g., Windows Hello for Business can not be used to authenticate to or on an Apple device). Due to this, the user experience may also be different between operating systems and browsers.
 
-Unfortunately -
-1.	FIDO2 support is a crosswalk between operating systems and browsers with some operating systems supporting some browsers and vice versa.
-2.	FIDO2 platform authenticators are single operating system specific so will not work in a multi-operating system use case (e.g., Windows Hello for Business can not be used to authenticate to or on an Apple device).
-3.	The user experience may be different between operating systems and browsers as well.
+Fortunately, the FIDO Alliance and their supported vendor community have several resources to identify platform and device support in addition to compatibility issues. They also have a growing base of vendor support and certified products. 
 
-Fortunately - 
-1.	The FIDO Alliance along with their supported vendor community have a number of resources to identify compatibility as well as compatibility issues.
-2.	Growing base of vendor support and certified products. 
-
-There are four main platforms and four main browsers that support FIDO2 and WebAuthN.
+There are four leading platforms and four main browsers that support FIDO2 and WebAuthN.
 1.	Platform (Operating Systems)
     1.	Windows 10 or later
     2.	MacOS Big Sur or later
@@ -416,21 +418,21 @@ There are four main platforms and four main browsers that support FIDO2 and WebA
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">What's the advantage of a platform authenticator versus roaming?</h4>
     <p class="usa-alert__text">
-      Platform authenticators have a cost and user experience advantage over roaming authenticators. They are most likely supported on GFE and provide a more seamless experience than a roaming authenticator. Roaming authenticators are more widely supported in multi-operating system environments, but come with the additional acquisition cost and lifecycle activities that comes with a physical authenticator.
+      Platform authenticators have a cost and user experience advantage over roaming authenticators. They are most likely supported on GFE and provide a more seamless experience than a roaming authenticator. Roaming authenticators are more widely supported in multi-operating system environments but come with the additional acquisition cost and lifecycle activities that come with a physical authenticator.
     </p>
   </div>
 </div>
 
-Listing a crosswalk here may not be able to keep up with the latest operating system and browser updates which is why public tools are recommended for verification and testing.
+Listing a crosswalk in this playbook may be unable to keep up with the latest operating system and browser updates, so public tools are recommended for verification and testing.
 
-1.	[https://webauthn.io/](https://webauthn.io/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. is a Cisco / FIDO Alliance sponsored website to test WebAuthN. It also includes common libraries and languages used to implement WebAuthN in web applications.
-2.	[https://webauthn.me/](https://webauthn.me/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. is a Auth0 sponsored website to test and debug WebAuthN. It also includes a compatibility chart of which operating systems and browsers support platform and roaming authenticators.
+1.	[https://webauthn.io/](https://webauthn.io/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. is a Cisco / FIDO Alliance sponsored website to test WebAuthN. It also includes shared libraries and languages used to implement WebAuthN in web applications.
+2.	[https://webauthn.me/](https://webauthn.me/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. is a Auth0 sponsored website to test and debug WebAuthN. It also includes a compatibility chart of which operating systems and browsers support platforms and roaming authenticators.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">What about IA–2(6) control enhancement and platform authenticators?</h4>
     <p class="usa-alert__text">
-      NIST 800–53 control enhancement (IA-2(6)) requires that one of the factors is provided by a device separate from the system gaining access. This is not a baseline control, but a control enhancement meaning agencies are not required to implement it and agencies handle the exception process. While this could mean a platform authentication is not separate another interpretation is the TPM on a device is separate from the device itself. Two OMB Memos (M-6-16 and M-7-17) stated this control enhancement as well, but both memos were rescinded. There are inherent cost benefits to using an integrated authenticator like a platform authenticator.
+      NIST 800–53 control enhancement (IA-2(6)) requires that one of the factors is provided by a device separate from the system gaining access. This is not a baseline control but a control enhancement, meaning agencies are not required to implement it, and agencies handle the exception process. While this could mean platform authentication is not separate, another interpretation is the TPM on a device is separate from the device itself. Two OMB Memos (M-6-16 and M-7-17) also stated this control enhancement, but both memos were rescinded. There are inherent cost benefits to using an integrated authenticator like a platform authenticator.
     </p>
   </div>
 </div>
@@ -439,14 +441,14 @@ Listing a crosswalk here may not be able to keep up with the latest operating sy
 
 There are two main patterns to acquiring security keys.
 
-1.	[GSA Advantage](https://www.gsaadvantage.gov/advantage/ws/main/start_page?_gl=1*1ipxsrg*_ga*MTQ5NDY5NjQxNy4xNjUyMjczMzIw*_ga_HBYXWFP794*MTY4ODE2OTgwMC4xNDQuMC4xNjg4MTY5ODAwLjAuMC4w){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a centralized acquisition portal that also includes FIDO2 security keys. Search for FIDO2 and verify if the vendor meets your requirements such as FIPS certification. This is a good approach for purchase card or small quantities such as 100 or less.
+1.	[GSA Advantage](https://www.gsaadvantage.gov/advantage/ws/main/start_page?_gl=1*1ipxsrg*_ga*MTQ5NDY5NjQxNy4xNjUyMjczMzIw*_ga_HBYXWFP794*MTY4ODE2OTgwMC4xNDQuMC4xNjg4MTY5ODAwLjAuMC4w){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a centralized acquisition portal that also includes FIDO2 security keys. Search for FIDO2 and verify if the vendor meets your requirements, such as FIPS certification. This is a good approach for purchase card or small quantities such as 100 or less.
 2.	Some FIDO2 security key vendors provide enterprise contracts that include additional benefits such as replacement and discounted pricing. These agreements often require large purchase orders of several hundred to thousands of security keys.
 
-Due to the secure nature of a security key, it is recommended to acquire them from a trusted source and verify the packaging on receipt.
+Due to the secure nature of a security key, acquiring it from a trusted source and verifying the packaging on receipt is recommended.
 
 ## Step 3 - Deploy a Pilot
 
-The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a six part pilot plan for a successful pilot. Agencies can add in additional sections, but these six should be included at a minimum.
+The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a six-part pilot plan for a successful pilot. Agencies can add additional sections, but these six should be included at a minimum.
 
 1.	Identifying objectives and use cases - This playbook is a great resource to help identify pilot objectives and use cases.
 2.	Pilot size and executive support - Identify a pilot user group that is commensurate with the production population. For most piloting agencies this was 5%. Ensure your pilot has CIO or CISO support.
