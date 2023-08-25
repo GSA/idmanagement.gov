@@ -39,7 +39,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
           <div class="splide__list" style="height:auto;">
             {% for slide in site.data.gsacarousel %}
             <div class="splide__slide splide_fix" style="width:auto;padding-right:50px;" role="group" aria-label="Slide about {{slide.heroHeading}}">
-                  <h2 class="hero-heading" style="width:auto;height:auto;overflow-wrap: break-word;" >{{ slide.heroHeading }}</h2>
+                  <h2 class="hero-heading" style="width:auto;height:auto;" >{{ slide.heroHeading }}</h2>
                   <p class="hero-text gsa-text-width" style="width:auto;" >{{ slide.heroText }}</p>
                   <a class="usa-button" style="width: auto;"  href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer" title="{{ slide.actionButtonText }} {{slide.heroHeading}}" aria-label="{{ slide.actionButtonText }} {{slide.heroHeading}}">{{ slide.actionButtonText }} {{ slide.heroHeading }}</a>            
             </div>
