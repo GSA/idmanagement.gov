@@ -313,16 +313,16 @@ To help support agencies aggressively replace passwords, the Office of Managemen
 
 ### Challenges and Lessons Learned
 
-The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authentications like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and roaming authenticators like a Yubico Yubikey, RSA DS100, and WebAuthn authenticators. Six main lessons learned and challenges from the first FIDO2 CoA cohort.
+The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authenticators like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and roaming authenticators like Yubico Yubikey and RSA DS--100.
 
 #### Challenges
 1.  **This is not federally approved** - 
 2.	**Organizational compliance mentality** - 
 
 #### Lessons Learned
-1.	**No authenticator type is a silver bullet** - Agencies need a holistic authenticator strategy to stop handling exception use cases. There is not a single authenticator type that works across authentication patterns and is phishing-resistant. Agencies must be comfortable with alternative, phishing-resistant authenticators like FIDO2 to replace exception policy alternatives like passwords and OTP.
+1.	**No authenticator type is a silver bullet** - Agencies need a holistic authentication strategy to stop handling exception use cases. There is not a single authenticator type that works across authentication patterns and is phishing-resistant. Agencies must be comfortable with alternative, phishing-resistant authenticators like FIDO2 to replace exception policy alternatives like passwords and OTP.
 2.	**User training and guidance** - Plan and produce user guidance and adoption campaigns. One of the biggest challenges in deploying new technology is ensuring you don’t lose your users on the journey. Hold office hours and Ask Me Anything sessions, or have on-demand videos to help users transition to new tools. See the user experience section of the Windows Hello for Business Playbook as an example.
-3.	**Platform authenticator cost advantage** - FIDO2 platform authenticators provide a more straightforward and cost-efficient approach to meeting broader organization adoption of phishing-resistant authentication for all users. Biometric options such as face and finger recognition are included in FIDO2 without needing 3rd party middleware but depend on device support and using modern access management tools (e.g., not natively supported in legacy tools such as Active Directory or Active Directory Federation Services).
+3.	**Platform authenticator cost advantage** - FIDO2 platform authenticators provide a more straightforward and cost-efficient approach to meeting broader organization adoption of phishing-resistant authentication for all users. Biometric options such as face and finger recognition are supported in FIDO2 without needing 3rd party middleware but depend on device support and using modern access management tools (e.g., not natively supported in legacy tools such as Active Directory or Active Directory Federation Services).
 4.	**In Most instances, FIDO2 requires internet connectivity** - The FIDO2 standard, specifically WebAuthn, is an internet-based service using APIs. It may require a connected device and not work in low or no-bandwidth environments. Cached credentials and refresh tokens can become a challenge to troubleshoot and manage.
 
 Table 04. FIDO CoA Cohort 1 pilot with results
@@ -387,7 +387,7 @@ Table 04. FIDO CoA Cohort 1 pilot with results
 An agency's journey toward a passwordless future typically starts with a pilot. Follow these three steps from the FIDO2 CoA to plan and execute a successful FIDO2 pilot.
 
 [Step 1 - Recognize authentication patterns and use cases](#step-1---recognize-authentication-patterns-and-use-cases) where your agency uses an exception authenticator.
-[Step 2 - Identify available solutions](#step-2---identify-available-solutions), which may include procuring security keys.
+[Step 2 - Identify available solutions](#step-2---identify-available-solutions), which may include procuring FIDO2 security keys.
 [Step 3 - Deploy a pilot](#step-3---deploy-a-pilot) and make production considerations.
 
 ## Step 1 - Recognize Authentication Patterns and Use Cases
@@ -443,11 +443,11 @@ Once we identify the authenticator gaps, we can identify the primary use cases o
 
 ## Step 2 - Identify Available Solutions
 
-Most agencies are surprised that their agency enterprise SSO tool supports FIDO2, usually without any additional license or equipment costs. FIDO2 platform and device support is a crosswalk between operating systems and browsers, with some operating systems supporting some browsers and vice versa. FIDO2 platform authenticators are single operating system specific, so they will not work in a multi-operating system use case (e.g., Windows Hello for Business can not be used to authenticate to or on an Apple device). Due to this, the user experience may also be different between operating systems and browsers.
+Most agencies are surprised that their agency enterprise SSO tool supports FIDO2, usually without any additional license or equipment costs. FIDO2 platform and device support require a crosswalk between operating systems and browsers, with some operating systems supporting some browsers and vice versa. FIDO2 platform authenticators are single operating system specific, so they will not work in a multi-operating system use case (e.g., Windows Hello for Business can not be used to authenticate to or on an Apple device). However, some cross-device workflows can enable a FIDO2 platform authenticator on a smartphone to be used to log in via a PC or laptop.  Due to this, the user experience may also be different between operating systems and browsers.
 
-Fortunately, the FIDO Alliance and their supported vendor community have several resources to identify platform and device support in addition to compatibility issues. They also have a growing base of vendor support and certified products. 
+Fortunately, the FIDO Alliance and their supported vendor community have several resources to identify platform and device support in addition to compatibility issues. They also have a growing base of vendor support, and more than 1,000 products have attained [FIDO certification](https://fidoalliance.org/certification/fido-certified-products/):target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
-There are four leading platforms and four main browsers that support FIDO2 and WebAuthn.
+Four leading platforms and four browsers support FIDO2 and WebAuthn.
 1.	Platform (Operating Systems)
     1.	Windows 10 or later
     2.	MacOS Big Sur or later
@@ -463,21 +463,21 @@ There are four leading platforms and four main browsers that support FIDO2 and W
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">What's the advantage of a platform authenticator versus roaming?</h4>
     <p class="usa-alert__text">
-      Platform authenticators have a cost and user experience advantage over roaming authenticators. They are most likely supported on GFE and provide a more seamless experience than a roaming authenticator. Roaming authenticators are more widely supported in multi-operating system environments but come with the additional acquisition cost and lifecycle activities that come with a physical authenticator.
+      Platform authenticators have some cost and user experience advantages over roaming authenticators. They are most likely supported on GFE and provide a more seamless experience than a roaming authenticator if a user only logs into a single device. Roaming authenticators are more widely supported in multi-operating system environments but come with the additional acquisition cost and lifecycle activities that come with a physical authenticator.
     </p>
   </div>
 </div>
 
 Listing a crosswalk in this playbook may be unable to keep up with the latest operating system and browser updates, so public tools are recommended for verification and testing.
 
-1.	[https://webauthn.io/](https://webauthn.io/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. is a Cisco / FIDO Alliance sponsored website to test WebAuthn. It also includes shared libraries and languages used to implement WebAuthn in web applications.
-2.	[https://webauthn.me/](https://webauthn.me/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. is a Auth0 sponsored website to test and debug WebAuthn. It also includes a compatibility chart of which operating systems and browsers support platforms and roaming authenticators.
+1.	[https://webauthn.io/](https://webauthn.io/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a Cisco / FIDO Alliance sponsored website to test WebAuthn. It also includes shared libraries and languages used to implement WebAuthn in web applications.
+2.	[https://webauthn.me/](https://webauthn.me/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a Auth0 sponsored website to test and debug WebAuthn. It also includes a compatibility chart of which operating systems and browsers support platforms and roaming authenticators.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">What about IA–2(6) control enhancement and platform authenticators?</h4>
     <p class="usa-alert__text">
-      NIST 800–53 control enhancement (IA-2(6)) requires that one of the factors is provided by a device separate from the system gaining access. This is not a baseline control but a control enhancement, meaning agencies are not required to implement it, and agencies handle the exception process. While this could mean platform authentication is not separate, another interpretation is the TPM on a device is separate from the device itself. Two OMB Memos (M-6-16 and M-7-17) also stated this control enhancement, but both memos were rescinded. There are inherent cost benefits to using an integrated authenticator like a platform authenticator.
+      NIST 800–53 control enhancement (IA-2(6)) requires that one of the factors is provided by a device separate from the system gaining access. This is not a baseline control but a control enhancement, meaning agencies are not required to implement it, and agencies handle the exception process. While this could mean platform authentication is not separate, another interpretation is the TPM (Windows), TEE (Android), or SE (Apple) on a device is separate from the device itself. Two OMB Memos (M-6-16 and M-7-17) also stated this control enhancement, but both memos were rescinded.
     </p>
   </div>
 </div>
@@ -487,7 +487,7 @@ Listing a crosswalk in this playbook may be unable to keep up with the latest op
 There are two main patterns to acquiring security keys.
 
 1.	[GSA Advantage](https://www.gsaadvantage.gov/advantage/ws/main/start_page?_gl=1*1ipxsrg*_ga*MTQ5NDY5NjQxNy4xNjUyMjczMzIw*_ga_HBYXWFP794*MTY4ODE2OTgwMC4xNDQuMC4xNjg4MTY5ODAwLjAuMC4w){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a centralized acquisition portal that also includes FIDO2 security keys. Search for FIDO2 and verify if the vendor meets your requirements, such as FIPS certification. This is a good approach for purchase card or small quantities such as 100 or less.
-2.	Some FIDO2 security key vendors provide enterprise contracts that include additional benefits such as replacement and discounted pricing. These agreements often require large purchase orders of several hundred to thousands of security keys.
+2.	Some FIDO2 security key vendors provide enterprise contracts with additional benefits such as replacement and discounted pricing. These agreements often require large purchase orders of several hundred to thousands of security keys.
 
 Due to the secure nature of a security key, acquiring it from a trusted source and verifying the packaging on receipt is recommended.
 
@@ -496,15 +496,15 @@ Due to the secure nature of a security key, acquiring it from a trusted source a
 The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a six-part pilot plan for a successful pilot. Agencies can add additional sections, but these six should be included at a minimum.
 
 1.	Identifying objectives and use cases - This playbook is a great resource to help identify pilot objectives and use cases.
-2.	Pilot size and executive support - Identify a pilot user group that is commensurate with the production population. For most piloting agencies this was 5%. Ensure your pilot has CIO or CISO support.
-3.	Timeline - Pilots range in size from a couple months to a year including all research and planning based on size and complexity. The actual pilot may only run for a couple of weeks.
-4.	Pilot team and resources– Identify and engage with all stakeholders including identifying a pilot lead and support team. For some agencies this could include multiple teams spread across network, directory, cloud, HSPD-12, security, and other offices. Also identify your pilot components such as operating system, access tools, browser, and platform or roaming authenticator types.
-5.	Risk and challenges – List your known and anticipated risks and challenges. These can include those listed in this playbook or agency specific like resource limitations or user adoption.
+2.	Pilot size and executive support - Identify a pilot user group commensurate with the production population. For most piloting agencies, this was 5%. Ensure your pilot has CIO or CISO support.
+3.	Timeline - Pilots range in size from a couple of months to a year, including all research and planning based on size and complexity. The actual pilot may only run for a couple of weeks.
+4.	Pilot team and resources– Identify and engage with all stakeholders, including identifying a pilot lead and support team. For some agencies, this could include multiple teams spread across network, directory, cloud, HSPD-12, security, and other offices. Also, identify your pilot components such as operating system, access tools, browser, and platform or roaming authenticator types.
+5.	Risk and challenges – List your known and anticipated risks and challenges. These can include those listed in this playbook or agency-specific, like resource limitations or user adoption.
 6.	Success metrics - There are a range of success metrics. Here are some examples.
     1.	Totally remove passwords as an authenticator option from our enterprise SSO tool.
     2.	Reduce the number of policy exceptions to less than 1%.
-    3.	99% of user accounts have more than one phishing resistant authenticator registered.
-    4.	Support two or more phishing resistant authenticator options.
+    3.	99% of user accounts have more than one phishing-resistant authenticator registered.
+    4.	Support two or more phishing-resistant authenticator options.
     5.	Implement a self-service capability.
     6.	Improve user experience survey results by 5%.
 
@@ -512,25 +512,25 @@ The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a si
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">What is a good pilot size?</h4>
     <p class="usa-alert__text">
-      The FIDO2 CoA advises to base your pilot user size on a cross section of production users. A good size group is 50-100 users for platform authenticators and half that for roaming authenticators. The intent of a FIDO2 pilot should focus on validating enterprise use cases with an intent to deploy it in production as either an alternative or back-up authenticator.
+      The FIDO2 CoA advises basing your pilot user size on a cross-section of production users. A good size group is 50-100 users for platform authenticators and half that for roaming authenticators. The intent of a FIDO2 pilot should focus on validating enterprise use cases with an intent to deploy it in production as either an alternative or backup authenticator.
     </p>
   </div>
 </div>
 
 ### Lifecycle Management
 
-This is a very common question that may be over analyzed because of the PKI-centric nature of authenticators in the federal government. For specific lifecycle questions regarding Derived PIV authenticators see [NIST Special Publication 800–157](https://csrc.nist.gov/publications/detail/sp/800-157/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls covering account lifecycle management.
+This is a very common question that may be over-analyzed because of the PKI-centric nature of authenticators in the federal government. For specific lifecycle questions regarding Derived PIV authenticators, see [NIST Special Publication 800–157](https://csrc.nist.gov/publications/detail/sp/800-157/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls covering account lifecycle management.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Is this a Derived PIV?</h4>
+    <h4 class="usa-alert__heading">Is FIOD2 a Derived PIV?</h4>
     <p class="usa-alert__text">
-      A Derived PIV is any credential issued based on proof of possession and control of a PIV Card with additional controls as outlined in Special Publication 800-157. If your agency requires proof of possession of a PIV card and implements additional controls before issuing a FIDO2 authenticator, then it is a Derived PIV. If your agency doesn’t, then it is not a Derived PIV. In the current version of NIST Special Publication 800-157, a Derived PIV is limited to a digital certificate, but the next draft version includes non-PKI types.
+      A Derived PIV is any credential issued based on proof of possession and control of a PIV Card with additional controls as outlined in Special Publication 800-157. If your agency requires proof of possession of a PIV card and implements additional controls before issuing a FIDO2 authenticator, then it is a Derived PIV. If your agency doesn’t, then it is not a Derived PIV. In the current version of NIST Special Publication 800-157, a Derived PIV is limited to a digital certificate, but the next draft version includes non-PKI Authenticator Level 2 and 3 options as well as associating other authenticators to the PIV identity record rather than just the PIV credential. FIDO2 authenticators are the only standards-based non-PKI phishing-resistant authenticator for Derived PIV.
     </p>
   </div>
 </div>
 
-There are three lifecycle stages for an non-PKI authenticator including FIDO.
+There are three lifecycle stages for a non-PKI authenticator, including FIDO.
 
 1.	**Issuance**
    1. FIDO2 roaming or platform authenticators only support hardware-based devices. 
