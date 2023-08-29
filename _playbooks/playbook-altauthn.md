@@ -12,10 +12,10 @@ sticky_sidenav: true
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
-  - text: Phishing-Resistant 101
-    href: '#phishing-resistant-101'
-  - text: The Passwordless Journey
-    href: '#the-passwordless-journey'
+  - text: Phishing-Resistance 101
+    href: '#phishing-resistance-101'
+  - text: Run a FIOD2 Pilot
+    href: '#run-a-fido2-pilot'
   - text: Step 1. Recognize Authentication Patterns and Use Cases
     href: '#step-1---recognize-authentication-patterns-and-use-cases'
   - text: Step 2. Identify Available Resources and Tools
@@ -337,10 +337,6 @@ Table 04. FIDO CoA Cohort 1 pilot with results
             <th scope="col">Agency 2</th>
             <th scope="col">Agency 3</th>
             <th scope="col">Agency 4</th>
-            <th scope="col">Agency 5</th>
-            <th scope="col">Agency 6</th>
-            <th scope="col">Agency 7</th>
-            <th scope="col">Agency 8</th>
         </tr>
     </thead>
     <tbody>
@@ -350,10 +346,6 @@ Table 04. FIDO CoA Cohort 1 pilot with results
             <td>Alternative Authenticator</td>
             <td>Cloud Environments</td>
             <td>Alternative Authenticator</td>
-            <td>External Partners</td>
-            <td>Cloud Environment</td>
-            <td>Alternative Authenticator</td>
-            <td>Alternative Authenticator</td>
         </tr>
         <tr>
             <th scope="row"># of Pilot Users</th>
@@ -361,10 +353,6 @@ Table 04. FIDO CoA Cohort 1 pilot with results
             <td>25</td>
             <td>500 (Full Production)</td>
             <td>8</td>
-            <td>5</td>
-            <td>27k (Full Production)</td>
-            <td>Pilot - 200 / Production - 130k</td>
-            <td>4% of Exemption Policy Users</td>
         </tr>
         <tr>
             <th scope="row">Architecture</th>
@@ -372,6 +360,40 @@ Table 04. FIDO CoA Cohort 1 pilot with results
             <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
             <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
             <td>Platform: ForgeRock<br>Authenticator: Yubico FIPS Yubikey</td>
+        </tr>
+  </tbody>
+</table>
+<br>
+<table class="usa-table usa-table">
+    <style> 
+        th {text-align: center; vertical-align: middle;}
+    </style>
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Agency 5</th>
+            <th scope="col">Agency 6</th>
+            <th scope="col">Agency 7</th>
+            <th scope="col">Agency 8</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Use Case</th>
+            <td>External Partners</td>
+            <td>Cloud Environment</td>
+            <td>Alternative Authenticator</td>
+            <td>Alternative Authenticator</td>
+        </tr>
+        <tr>
+            <th scope="row"># of Pilot Users</th>
+            <td>5</td>
+            <td>27k (Full Production)</td>
+            <td>Pilot - 200 / Production - 130k</td>
+            <td>4% of Exemption Policy Users</td>
+        </tr>
+        <tr>
+            <th scope="row">Architecture</th>
             <td>Platform: Vanguard<br>Authenticator: Yubico FIPS Yubikey</td>
             <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
             <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
@@ -380,6 +402,7 @@ Table 04. FIDO CoA Cohort 1 pilot with results
   </tbody>
 </table>
 <br>
+
 
  
 # Run a FIDO2 Pilot
