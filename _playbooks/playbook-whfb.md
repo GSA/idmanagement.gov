@@ -65,11 +65,11 @@ Traditionally in these scenarios, agencies leverage a policy exception process w
 
 The FIDO2 Community of Action is an Office of Management and Budget initiative to help agencies rapidly replace exception authenticators with a phishing-resistant alternative either as an alternative or a backup authenticator. The most common authenticators piloted by the CoA agencies include WHfB, FIDO2 security keys, and Derived PIV on a government mobile device or a FIDO2 security key. For common questions with WHfB, see the FAQs. Below is a list of lessons learned from CoA agencies in the piloting and production use of WHfB.
 
-1. Depending on the size of your agency, the prerequisites to using WHfB could be a major technology shift. The most time-intensive activity includes migrating device management to Azure AD, or a hybrid Azure join, which also means becoming comfortable with leveraging Azure group policies over traditional Microsoft Group Policy Object.
+1. Depending on the size of your agency, the prerequisites to using WHfB could be a major technology shift. The most time-intensive activity includes migrating device management to Azure AD or a hybrid Azure join, which also means becoming comfortable with leveraging Azure group policies over traditional Microsoft Group Policy Object.
 2. Migrating to a complete cloud Azure configuration with Azure joined devices is possible for agencies with a small on-premise Active Directory footprint. This alleviates the risk of Active Directory vulnerabilities, but agencies must ensure they have the right talent and understanding of Azure AD operations and constraints.
 3. Most agencies have adequate licensing (usually E3 or E5) to leverage conditional access policies and automated device enrollment. It is not required to use WHfB but does help with other security priorities to integrate device-level signals and better user experience.
-4. Once enabled, WHfB provides a more natural authentication experience when using biometrics. Biometrics requires a compatible Windows device.
-5. WHfB is only supported on Windows devices as of June 16th, 2023. For phishing-resistant MFA on mobile devices to Azure, only security keys is supported.
+4. Once enabled, WHfB provides a more natural authentication experience when using biometrics. Biometrics requires a compatible Windows device. Communicate with employees and unions on how biometrics are used. Biometrics are only stored on the device and not used for other purposes.
+5. WHfB is only supported on Windows devices as of June 16th, 2023. Only security keys are supported for phishing-resistant MFA on mobile devices to Azure.
 
 ## About Windows Hello for Business
 
