@@ -74,7 +74,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
-**Last Update**: August 14, 2023
+**Last Update**: August 21, 2023
 
 {% include graph.html %}
 
@@ -179,7 +179,7 @@ These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authen
 - Serial #: 49  
 - Validity: May 16, 2023 to May 15, 2029
 - SHA-1 Hash: ce68b25fa532d959935aeb2c29e1358531903535
-- CRL DP: [http://crl.disa.mil/crl/DODIDCA_70.crl](http://crl.disa.mil/crl/DODIDCA_70.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://crl.disa.mil/crl/DODIDCA_73.crl](http://crl.disa.mil/crl/DODIDCA_73.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 **DoD ID CA-72 (Not Yet Operational)**
 - Subject: CN = DOD ID CA-72, OU = PKI, OU = DoD, O = U.S. Government, C = US  
@@ -264,10 +264,10 @@ These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authen
 #### Entrust Managed Services SSP CA
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 448107b6
-- Validity: August 13, 2019 to July 13, 2029
-- SHA-1 Hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5
-- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- Serial #: 4481b22f
+- Validity: July 11, 2023 to November 11, 2030
+- SHA-1 Hash: 19fea49c468760edce9600a9da9657b484734d24
+- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA4.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA4.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Entrust Derived Credential SSP CA
 - Subject: OU = Entrust Derived Credential SSP CA, OU = Certification Authorities, O = Entrust, C = US
@@ -522,7 +522,15 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: 6cd6e8bd7acd2f08e21693988a309eca6772c134  
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_49.crl](http://crl.disa.mil/crl/DODIDCA_49.crl){:target="_blank"}{:rel="noopener noreferrer"}  
 
-#### Entrust Managed Services SSP CA 
+#### Entrust Managed Services SSP CA (1 of 2)
+- Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
+- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+- Serial #: 448107b6
+- Validity: August 13, 2019 to July 13, 2029
+- SHA-1 Hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5
+- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl){:target="_blank"}{:rel="noopener noreferrer"}
+
+#### Entrust Managed Services SSP CA (2 of 2)
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
 - Serial #: 448063d5 
@@ -681,34 +689,158 @@ Subject:  FPKI System Notification - System Name
 
 
 ## Notifications
+<!-- This block loops through the notifications .yml file under the _data directory. -->
 
-<!-- This block loops through the notifications yml file under the data directory. -->
-
-<div class="usa-width-one-whole">
- 
-{% for notification in site.data.fpkinotifications %}
-  <ul class="usa-unstyled-list">
+<!-- start of notifications accordion  -->
+<div class="usa-accordion usa-accordion--bordered">
+  <!-- Start of current notifications -->
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="true"
+      aria-controls="n-a1">2023 (Current)</button>
+  </h4>
+  <div id="n-a1" class="usa-accordion__content usa-prose">
+    <div class="usa-width-one-whole">
+      {% for notification in site.data.fpkinotifications %}
+        {% assign nnd = notification.notice_date | split:" " %}
+        {% if nnd.last == '2023' %}
+        <ul class="usa-unstyled-list">
+          <hr>
+          <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
+          <li><strong>System:</strong> {{ notification.system }} </li>
+          <li><strong>Type:</strong> {{ notification.change_type }} </li>
+          <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+          <li><strong>Contact:</strong> {{ notification.contact }}</li>
+          <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+          <li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+          <li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li>
+          <li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
+          <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
+          <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
+          <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+          <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
+          <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
+        </ul>
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- end of current notifications -->
     <hr>
-    <li><strong>Notice Date: </strong> {{ notification.notice_date }} </li>
-    <li><strong>System:</strong> {{ notification.system }} </li>
-    <li><strong>Type:</strong> {{ notification.change_type }} </li>
-    <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
-    <li><strong>Contact:</strong> {{ notification.contact }}</li>
-    <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
-    <li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
-    <li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li> 
-    <li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
-    <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
-    <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
-    <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
-    <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
-    <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
-  </ul>
-
-{% endfor %}
-
+  <!-- Start of 2022 notifications -->
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="n-a2">2022</button>
+  </h4>
+  <div id="n-a2" class="usa-accordion__content usa-prose">
+   <div class="usa-width-one-whole">
+      {% for notification in site.data.fpkinotifications %}
+        {% assign nnd = notification.notice_date | split:" " %}
+        {% if nnd.last == '2022' %}
+        <ul class="usa-unstyled-list">
+          <hr>
+          <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
+          <li><strong>System:</strong> {{ notification.system }} </li>
+          <li><strong>Type:</strong> {{ notification.change_type }} </li>
+          <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+          <li><strong>Contact:</strong> {{ notification.contact }}</li>
+          <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+          <li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+          <li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li>
+          <li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
+          <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
+          <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
+          <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+          <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
+          <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
+        </ul>
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- end of 2022 notifications -->
+  <!-- Start of 2021 notifications -->
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="n-a4">2021</button>
+  </h4>
+  <div id="n-a4" class="usa-accordion__content usa-prose">
+   <div class="usa-width-one-whole">
+      {% for notification in site.data.fpkinotifications %}
+        {% assign nnd = notification.notice_date | split:" " %}
+        {% if nnd.last == '2021' %}
+        <ul class="usa-unstyled-list">
+          <hr>
+          <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
+          <li><strong>System:</strong> {{ notification.system }} </li>
+          <li><strong>Type:</strong> {{ notification.change_type }} </li>
+          <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+          <li><strong>Contact:</strong> {{ notification.contact }}</li>
+          <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+          <li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+          <li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li>
+          <li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
+          <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
+          <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
+          <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+          <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
+          <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
+        </ul>
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- end of 201 notifications -->
+  <!-- Start of older notifications -->
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="n-a3">Older</button>
+  </h4>
+  <div id="n-a3" class="usa-accordion__content usa-prose">
+   <div class="usa-width-one-whole">
+      {% for notification in site.data.fpkinotifications %}
+        {% assign nnd = notification.notice_date | split:" " %}
+        {% if nnd.last < '2021' %}
+        <ul class="usa-unstyled-list">
+          <hr>
+          <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
+          <li><strong>System:</strong> {{ notification.system }} </li>
+          <li><strong>Type:</strong> {{ notification.change_type }} </li>
+          <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+          <li><strong>Contact:</strong> {{ notification.contact }}</li>
+          <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+          <li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+          <li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li>
+          <li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
+          <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
+          <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
+          <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+          <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
+          <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
+        </ul>
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- end of older notifications -->
+<!-- end of notifications accordion  -->
 </div>
-
-
-
-

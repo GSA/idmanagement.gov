@@ -3717,10 +3717,7 @@
             ],
             "sia-entries": {},
             "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-                ]
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": []
             }
         },
         {
@@ -3741,10 +3738,7 @@
             ],
             "sia-entries": {},
             "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-                ]
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": []
             }
         },
         {
@@ -3774,10 +3768,7 @@
                 ]
             },
             "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-                ]
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": []
             }
         },
         {
@@ -3797,10 +3788,7 @@
             ],
             "sia-entries": {},
             "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-                ]
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": []
             }
         },
         {
@@ -3820,10 +3808,7 @@
             ],
             "sia-entries": {},
             "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-                ]
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": []
             }
         },
         {
@@ -3843,10 +3828,7 @@
             ],
             "sia-entries": {},
             "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-                ]
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": []
             }
         },
         {
