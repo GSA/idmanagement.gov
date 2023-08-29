@@ -26,8 +26,9 @@ subnav:
 ---
 
 <!-- Version 1.0
-July 2023
+July 2023 -->
 
+<!-- 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.0 | 07/2023 | Initial Draft | -->
