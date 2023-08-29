@@ -7,6 +7,9 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
+version: 1.0
+pubdate: July 2023
+
 subnav:
   - text: 1. Obtain and verify FCPCA
     href: '#step-1---obtain-and-verify-the-fcpca-root-certificate'
@@ -22,12 +25,47 @@ subnav:
     href: '#frequently-asked-questions'
 ---
 
-Version 1.0
+<!-- Version 1.0
 July 2023
 
 | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 07/2023 | Initial Draft |
+| 1.0 | 07/2023 | Initial Draft | -->
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="fcpca1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="fcpca1" class="usa-accordion__content usa-prose">
+    <table>
+    <caption>Enterprise Trust version table</caption>
+    <thead>
+    <tr>
+        <th scope='col'>
+        Version Number
+        </th>
+        <th scope='col'>
+        Date
+        </th>
+        <th scope='col'>
+        Change Description
+        </th>
+    </tr>
+    </thead>
+    <tr>
+        <th scope='row'>
+        1.0
+        </th>
+        <td>07/2023</td>
+        <td>Initial Draft</td>
+    </tr>
+    </table>
+  </div>
+</div>
+<br>
+
 
 This guide provides information on distributing the Federal Common Policy CA G2 (FCPCAG2) certificate to government-furnished workstations and devices as a _trusted root certificate_.
 
