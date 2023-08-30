@@ -9,6 +9,9 @@ description: The Enterprise SSO Playbook is a five-step playbook to aid agencies
 sidenav: playbooks
 sticky_sidenav: true
 
+version: 1.1
+pubdate: November 16, 2021
+
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
@@ -28,18 +31,59 @@ subnav:
     href: '#appendix-a-troubleshooting-single-sign-on'
 ---
 
-Version 1.1<br>
-November 16, 2021
+<!-- Version 1.1<br>
+November 16, 2021 -->
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy identity Assurance and Trusted Access Division
 
-| Version Number | Date | Change Description |
+<br>
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="vtbl1" class="usa-accordion__content usa-prose">
+    <table>
+    <caption>Enterprise Single Sign-On version table</caption>
+    <thead>
+    <tr>
+        <th scope='col'>
+        Version Number
+        </th>
+        <th scope='col'>
+        Date
+        </th>
+        <th scope='col'>
+        Change Description
+        </th>
+    </tr>
+    </thead>
+    <tr>
+        <th scope='row'>
+        1.1
+        </th>
+        <td>11/16/2021</td>
+        <td>Add SSO US code reference. Added Appendix A of SSO troubleshooting steps.</td>
+    </tr>
+    <tr>
+        <th scope='row'>
+        1.0
+        </th>
+        <td>02/12/2021</td>
+        <td>Initial Draft</td>
+    </tr>
+    </table>
+  </div>
+</div>
+
+<!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.1 | 11/16/2021 | Add SSO US code reference. Added Appendix A of SSO troubleshooting steps. |
-| 1.0 | 02/12/2021 | Initial Draft |
+| 1.0 | 02/12/2021 | Initial Draft | -->
 
 ## Executive Summary
 The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies implement or modernize an SSO service for federal employee access to government applications. SSO is a component of Identity, Credential, and Access Management (ICAM) that agencies use to centralize access to applications. SSO enables end users to log in to multiple applications using extensible multi-factor authentication options. It also extends capabilities for applications that don’t natively support multi-factor authentication. Other benefits of Enterprise SSO include: 

@@ -9,6 +9,9 @@ description: This playbook can aid agencies in understanding how to shift the fo
 sidenav: playbooks
 sticky_sidenav: true
 
+version: 1.2
+pubdate: December 15, 2022
+
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
@@ -30,8 +33,8 @@ subnav:
     href: '#appendix-a-policies-standards-and-guidance'
 ---
 
-Version 1.2  
-December 15, 2022
+<!-- Version 1.2  
+December 15, 2022 -->
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
 
@@ -39,11 +42,58 @@ The Identity Lifecycle Management Working Group of the Federal Chief Information
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <br><br><br>
 
-| Version Number | Date | Change Description |
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="vtbl1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Identity Lifecycle Management version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>
+          Version Number
+        </th>
+        <th scope='col'>
+          Date
+        </th>
+        <th scope='col'>
+          Change Description
+        </th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>
+         1.2 
+        </th>
+        <td>12/15/2022</td>
+        <td>Minor editorial updates.</td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          1.1
+        </th>
+        <td>10/11/2022</td>
+        <td>10/11/2022 | Move 3rd party federation content to Cloud Identity Playbook federation section.</td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          1.0
+        </th>
+        <td>06/30/2022</td>
+        <td>Initial Draft.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.2 | 12/15/2022 | Minor editorial updates. |
 | 1.1 | 10/11/2022 | Move 3rd party federation content to Cloud Identity Playbook federation section. |
-| 1.0 | 06/30/2022 | Initial Draft. |
+| 1.0 | 06/30/2022 | Initial Draft. | -->
 
 ## Executive Summary
 
