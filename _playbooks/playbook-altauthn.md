@@ -451,7 +451,7 @@ Figure 4 identifies the five most common authenticator patterns between a user a
   </div>
 </div>
 
-Once we identify the authenticator gaps, we can identify the primary use cases of our holistic strategy. There are five primary use cases where a phishing-resistant option can close gaps
+Once we identify the authenticator gaps, we can identify the primary use cases of our holistic strategy. Four workforce identity use cases and one public identity use case identify where a phishing-resistant option can close those gaps.
 
 **Workforce Identity Use Case**
 
@@ -460,8 +460,9 @@ Once we identify the authenticator gaps, we can identify the primary use cases o
 3.	**Ineligible PIV user or “I can’t get a PIV credential”** - This use case covers the user community outside the OPM credentialing standards. This community includes short-term employees, contractors, partners, and users who do not meet the continuous six-month access requirement.  Some agencies deploy PIV Interoperable, agency–specific alternative tokens, or username/password and OTP.
 4. **Technology limitations** – Any certificate–based authenticator has challenges and limitations, as outlined in the 101 section. Cloud applications and mobile devices usually do not natively support certificate–based options without 3rd party tools. Partner applications are another example where maintaining a Federal PKI trust store is an untenable activity or creates user friction in using your applications.
 
-**Public Identity Use Case**<br>
-5. **Mission application for public users** - The Federal Zero Trust Strategy recognizes that phishing-resistant authenticators are not just a workforce challenge but should also be an option for public users. Agencies should consider adding a phishing–resistant option to public-facing websites.
+**Public Identity Use Case**
+
+1. **Mission application for public users** - The Federal Zero Trust Strategy recognizes that phishing-resistant authenticators are not just a workforce challenge but should also be an option for public users. Agencies should consider adding a phishing–resistant option to public-facing websites.
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
