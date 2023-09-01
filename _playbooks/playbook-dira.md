@@ -195,14 +195,14 @@ Application owners and the information security team collaborate to identify, an
 
 Finally, map the community of users to the common roles. Most applications have several different user roles, each with different access privileges. Examples of common user roles include:
 -	**General users**
-    - Can access: Information resources provided by the application
-    - Examples: Employees, general public
+  - Can access: Information resources provided by the application
+  - Examples: Employees, general public
 -	**Functional privileged users**
-    -	Can access: Information resources provided by the application, and approval workflows
-    -	Examples: Managers
+  -	Can access: Information resources provided by the application, and approval workflows
+  -	Examples: Managers
 -	**Information Technology (IT) privileged users**
-    -	Can access: IT systems with read, write, or change access
-    -	Examples: System administrators, security analysts
+  -	Can access: IT systems with read, write, or change access
+  -	Examples: System administrators, security analysts
 
 Table 2 provides examples of user types, transactions, and roles. 
 
