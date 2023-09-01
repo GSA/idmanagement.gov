@@ -688,19 +688,6 @@ Refer to the [AMA Step-by-Step Guide](https://technet.microsoft.com/en-us/librar
 
 # Troubleshooting PIV Logon
 
----
-layout: page
-collection: implement
-title: Troubleshooting PIV Logon
-permalink: /implement/troubleshooting/
-sticky_sidenav: true
-sidenav: implement
-
-subnav:
-  - text: Logon Process Overview
-    href: '#logon-process-overview'
----
-
 Within the federal enterprise, Windows smart card logon with a PIV card (PIV logon) is one method to satisfy Federal Information Security Management Act (FISMA) and National Institute of Standards and Technology (NIST) Risk Management Framework security controls for authentication. A PIV card enables Authenticator Assurance Level 3, two-factor authentication to a Windows desktop. Under normal conditions, this system is simple and easy for an end user to use. However, if this logon mechanism breaks, it can be difficult to troubleshoot logon and authentication errors. This page includes common symptoms and suggested steps to diagnose and solve these issues.
 
 ## Logon Process Overview
@@ -711,7 +698,7 @@ The figure below, from the “Smart card sign-in flow in Windows” section of t
 
 For our use, this complex process is simplified into the following workflows:
 
-<div class="usa-accordion" aria-multiselectable="true">
+<div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading"> <!-- Process Start-->
     <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a1">Process Start</button>
   </h4>
