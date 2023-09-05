@@ -7,6 +7,9 @@ description: This guide helps federal agencies understand how federal issuers an
 sidenav: university
 sticky_sidenav: true
 
+version: 2.1
+pubdate: April 2022
+
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
@@ -28,8 +31,6 @@ subnav:
     href: '#appendix-d-document-references'
 ---
 
-Version 2.1  
-April 2022
 
 This guide helps federal agencies understand how federal issuers and Non-Federal Issuers (NFI) of PIV-Interoperable (PIV-I) achieve interoperability with the PIV infrastructure. The scope of this guide is limited to the issuance of PIV-I credentials. Federal departments and agencies must continue to make their own authorization decisions to allow or deny access when using a PIV-I credential for authentication.
 
@@ -37,12 +38,67 @@ This guide helps federal agencies understand how federal issuers and Non-Federal
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <br><br><br>
 
-| Version Number | Date | Change Description |
+<!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 2.1 | 04/2022 | Updated OMB, NIST, and Federal PKI references to latest publication versions and requirements. | 
 | 2.0.1 | 12/2016 | Updated Table 4 <now table 2> to clarify for Legislative and Judicial branches of federal government |
 | 2.0 | 11/2016 | - Removed most duplicative references to requirements stated in other government documents.<br>- Updated references to Memorandums, Standards, and common terminology<br>- Added clarification for federal agencies on the boundaries of security, auditing, and procurement requirements |
-| 1.0 | 07/2010 | Initial Draft |
+| 1.0 | 07/2010 | Initial Draft | -->
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="vtbl1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Personal Identity Verification Interoperable version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>
+          Version Number
+        </th>
+        <th scope='col'>
+          Date
+        </th>
+        <th scope='col'>
+          Change Description
+        </th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>
+          2.1
+        </th>
+        <td>04/2022</td>
+        <td>Updated OMB, NIST, and Federal PKI references to latest publication versions and requirements.</td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          2.0.1
+        </th>
+        <td>12/2016</td>
+        <td>Updated Table 4 <now table 2> to clarify for Legislative and Judicial branches of federal government</td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          2.0
+        </th>
+        <td>11/2016</td>
+        <td><ul><li>Removed most duplicative references to requirements stated in other government documents.</li><li>Updated references to Memorandums, Standards, and common terminology</li><li>Added clarification for federal agencies on the boundaries of security, auditing, and procurement requirements</li></ul></td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          1.0
+        </th>
+        <td>07/2010</td>
+        <td>Initial Draft.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 
 # Executive Summary
 
