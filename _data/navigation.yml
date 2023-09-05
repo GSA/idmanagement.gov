@@ -16,8 +16,8 @@ partners:
     href: /program-managers/
   - text: FIPS 201 - Approved Product List
     href: /fips201/
-  # - text: Phishing-Resistant Product Criteria
-  #   href: /phish-criteria/
+  - text: FICAM Product Criteria
+    href: /product-criteria/
   - text: Federal Workforce Identity Services
     href: /trust-services/
 
