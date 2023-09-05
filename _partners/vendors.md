@@ -15,7 +15,7 @@ subnav:
 ---
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration (GSA) supports these requirements through testing and identifying products and services.
-- The GSA Federal Acqusition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
+- The GSA Federal Acquisition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
 - The GSA Office of Government-wide Policy provides testing and certification services for specific product categories.
 
 In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government must apply to a Multiple Award Schedule Special Item Number (SIN). Vendors must submit an appropriate self-assessment that demonstrates policy compliance with the following directives or standards.
