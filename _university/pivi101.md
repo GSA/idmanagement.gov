@@ -47,11 +47,11 @@ This guide helps federal agencies understand how federal issuers and Non-Federal
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
     </button>
   </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
+  <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
       <caption>Personal Identity Verification Interoperable version table</caption>
       <thead>

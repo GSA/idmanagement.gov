@@ -42,11 +42,11 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 <br>
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
     </button>
   </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
+  <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
     <caption>Enterprise Single Sign-On version table</caption>
     <thead>
@@ -161,7 +161,7 @@ Table 3. Key Enterprise SSO Risks
 | Signing Key Security | Refer to NIST Special Publication 800-63C Digital Identity Guidelines Federation and Assertions (PDF, June 2017) for specific guidance and considerations for the protection of your SSO’s assertion signing key. |
 | Assertion Validation | Each application validates that the assertions it receives are from a trusted source and appropriate for its sub-domain, functionality, and required attributes. |
 
-{% include alert-error.html heading="Cyberattacks" content="Targeted cyberattacks may pose a heightened risk to your agency’s IT assets, such as enterprise directories, identity stores, and Enterprise SSO servers. Your SSO should be managed and monitored as part of your agency’s cybersecurity program and in coordination with the DHS CDM initiative." %} 
+{% include alert-error.html heading="Cyberattacks" content="Targeted cyberattacks may pose a heightened risk to your agency’s IT assets, such as enterprise directories, identity stores, and Enterprise SSO servers. Your SSO should be managed and monitored as part of your agency’s cybersecurity program and in coordination with the DHS CDM initiative." %}
 
 Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt. Don’t ask users to provide their credentials if the security posture of their sessions has not changed.
 
