@@ -672,7 +672,7 @@ The notification can also be emailed to <span>fpki</span><span>@</span><span>gsa
 
 Subject:  FPKI System Notification - System Name 
   
-- notice_date: the date you are submitting the issue/notifcation
+- notice_date: the date you are submitting the issue/notification
 - system: the generic PKI provider (e.g., Entrust NFI, WidePoint SSP, etc.)
 - change_type: one of the following - CA Certificate Issuance, CA Certificate Revocation, URI Change, System Outage, Intent to Issue/Revoke CA Certificate
 - change_description: describe the CA certificate activity (to include rekey activities) andinclude activity start and end dates if applicable
