@@ -12,6 +12,8 @@ subnav:
     href: '#products'
   - text: PACS Assessment Toolkit
     href: '#pacs-implementer-self-assessment-toolkit'
+  - text: Product Criteria
+    href: 'product-criteria'
   - text: Services
     href: '#services'
   - text: GSA MAS
@@ -24,21 +26,35 @@ Other current and planned products and services can be found on the [GSA ICAM So
 
 # Products
 
-The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
+The [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you buy products that provide value and work well together. For more information on the FIPS 201 Evaluation Program or the Approved Product List, email FIPS201EP at gsa.gov.
 
-The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
+The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product categories:
 
 1. [PIV Cards]({{site.baseurl}}/fips201/#approved-piv-cards)
 2. [Physical Access Control Systems]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems)
 
 **Why can't I find a category or product?**
 
-A product is removed when it has lost its certification due to security concerns. It is placed on the [Removed Products List (RPL)]({{site.baseurl}}/fips201/#removed-product-list). A category is deprecated after it has reached broad adoption or maturity. Any further testing is no longer needed (for example, card readers for logical access). A deprecated category is not the same as a removed product. Deprecated categories are [shared through a FIPS 201 Evaluation Program announcement]({{site.baseurl}}/fips201ep/#program-announcements). [Contact us]({{site.baseurl}}/contact-us/) if you’re unsure if a product is fit for government use.
+A product is removed when it has lost its certification due to security concerns. It is placed on the [Removed Products List (RPL)]({{site.baseurl}}/fips201/#removed-product-list). A category is deprecated after it has reached broad adoption or maturity. You don't need any additional testing (for example, card readers for logical access). A deprecated category is not the same as a removed product. Deprecated categories are [shared through a FIPS 201 Evaluation Program announcement]({{site.baseurl}}/fips201ep/#program-announcements). [Contact us]({{site.baseurl}}/contact-us/) if you’re unsure if a product is fit for government use.
 
 ## PACS Implementer Self-Assessment Toolkit
 
 The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+
+# FICAM Product Criteria
+
+The [FICAM Product Criteria]({{site.baseurl}}/ficampc/) do two things.
+1. Recognize 3rd party programs that test or accredit digital identity products that either conform or align to the NIST Special Publication 800-63 Digital Identity Guidelines.
+2. Verify additional information submitted by a vendor to be listed on management.gov
+
+The FICAM Product Criteria does not test products but reviews and recognizes 3rd party testing labs and assurance programs that test or assess digital identity products.
+
+The **Product Criteria List** contains a list of products by category that have submitted testing or assurance documentation from a recognized 3rd party program. GSA OGP reviews this documentation. There is currently one category.
+
+1. [Phishing Resistant Authenticators]({{site.baseurl}}/buy/product-criteria#phishing-resistant-authenticators/)
+
+For more information on FICAM product criteria or recognition criteria, email ICAM at gsa.gov.
 
 # Services
 
