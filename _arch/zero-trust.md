@@ -52,7 +52,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
     <th><strong>FICAM guidance</strong></th>
   </tr>
   <tr>
-    <td>Access Management - Authentication</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#access-management/" target="_blank" rel="noopener noreferrer">Access Management - Authentication</a></td>
     <td>Authentication - agency continuously validates identity with phishing-resistant MFA, not just when access is initially granted.</td>
     <td>
       <ul>
@@ -65,7 +65,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
     </td>
   </tr>
   <tr>
-    <td>Identity Management - Identity Aggregation</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#identity-management/" target="_blank" rel="noopener noreferrer">Identity Management - Identity Aggregation</a></td>
     <td>Identity stores - agencies securely integrate their identity stores across all partners and environments as appropriate.</td>
     <td>
         <ul>
@@ -76,7 +76,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
       </td>
   </tr>
   <tr>
-    <td>Governance - Analytics</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#governance/" target="_blank" rel="noopener noreferrer">Governance - Analytics</a></td>
     <td>Risk assessments - agencies determine identity risk in real-time based on continuous analysis and dynamic rules to deliver ongoing protection.</td>
     <td>
       <ul>
@@ -86,7 +86,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
     </td>
   </tr>
   <tr>
-    <td>Access Management - Authorization</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#access-management/" target="_blank" rel="noopener noreferrer">Access Management - Authorization</a></td>
     <td>Access management - agency uses automation to authorize just-in-time and just-enough access tailored to individual actions and resource needs.</td>
     <td>
       <ul>
@@ -97,7 +97,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
     </td>
   </tr>
   <tr>
-    <td>Governance - Analytics</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#governance/" target="_blank" rel="noopener noreferrer">Governance - Analytics</a></td>
     <td>Visibility and analytics capability - agencies maintain comprehensive visibility and situational awareness across enterprises by performing automated analysis over user activity log types, including behavior-based analytics.</td>
     <td>
       <ul>
@@ -109,7 +109,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
     </td>
   </tr>
   <tr>
-    <td>Governance - Identity Governance</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#governance/" target="_blank" rel="noopener noreferrer">Governance - Identity Governance</a></td>
     <td>Automation and orchestration capability - agencies automate the orchestration of all identities with full integration across all environments based on behaviors, enrollments, and deployment needs.</td>
     <td>
       <ul>
@@ -119,7 +119,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
     </td>
   </tr>
   <tr>
-    <td>Access Management - Digital Policy Administration</td>
+    <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#access-management/" target="_blank" rel="noopener noreferrer">Access Management - Digital Policy Administration</a></td>
     <td>Governance capability - agencies implement and fully automate enterprise-wide identity policies for all users and entities across all systems with continuous enforcement and dynamic updates.</td>
     <td>
       <ul>
