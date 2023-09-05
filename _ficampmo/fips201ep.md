@@ -142,7 +142,7 @@ Review the test procedures, choose one of the application packages, and submit t
 
 All applicants, please complete the following steps:
 
-1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completeing the Approved Product List Application Form.
+1. Review the - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Instructions for completing the Approved Product List Application Form.
 2. Complete the [Approved Product List Application Form (Word, April 2022)]({{site.baseurl}}/docs/fips201ep-application-form.docx){:target="_blank"}{:rel="noopener noreferrer"} – Required for each solution submission, new or upgrade.
 3. Provide the equipment table from the Approved Product List Application as a separate file. [Equipment Table GSA PACS Application v0.1 (XLSX, February 2023)]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx){:target="_blank"}{:rel="noopener noreferrer"}
 4. [Reseller Acknowledgement Form (MS Word, September 2014)]({{site.baseurl}}/docs/fips201ep-resellerform.docx){:target="_blank"}{:rel="noopener noreferrer"} – If you are reselling another product, this must be disclosed, and the signed agreement submitted.
