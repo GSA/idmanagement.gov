@@ -93,11 +93,16 @@
 .usa-hero {
   //background-image: asset_url("new-header-graphic.png");
   background-image: url("{{site.baseurl}}/assets/images/new-background-30-fade.png");
-  //background-image: asset_url("hero-image2-blur.png");
   background-position: 50%;
   background-size: cover;
-  height: 380px;
+  // height: 380px;
+  height: auto;
   margin: 0px;
+}
+
+// To make both sides of a slide the same. see: _include/hero.html for element styles
+.splide__slide {
+  padding-left: 50px;
 }
 
 // Back to top button, displays in lower right corner after 500px of scroll.
@@ -132,8 +137,8 @@
 
 // Responsive Hero for IDManagement
 .gsa-responsive-hero {
-  height: auto;
-  min-width: 300px; 
+  height:auto;
+  min-width: 220px; 
 }
 
 // Hero text length shortener-er 
@@ -142,13 +147,11 @@
   width: auto;
 }
 
-// .gsa-no-dec {
-//   text-decoration: none;
-// }
-
+// GSA Slide positions and height: also see: gsa-responsive-hero
 .gsa-slide {
   position: relative;
-  height: 380px;
+  // height: 380px;
+  height:auto;
   display: flex;
   align-items: center;
 }
@@ -188,7 +191,7 @@
 }
 // Fix problem with carousel's first slide not displaying at same width as proceeding slides and added tinting to cover busy images that are being selected as headers. 
 .gsa-carousel-fix {
-  width: 100%;
+  width: auto;
   padding: 20px;
  //background-color: rgba(#000000, 0.7);
 }
@@ -323,5 +326,26 @@
   }
   .paginate-button {
     display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .paginate-link {
+    display: none;
+  }
+  .paginate-button {
+    display: block;
+  }
+  // Mobile Carousel adjustments
+  .hero-heading {
+    font-size: 2rem;
+  }
+  
+  .hero-text {
+    font-size: 1rem;
+  }
+  
+  .usa-button {
+    font-size: 0.9rem;
   }
 }

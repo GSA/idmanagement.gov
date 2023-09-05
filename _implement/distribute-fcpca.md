@@ -7,6 +7,9 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
+version: 1.0
+pubdate: July 2023
+
 subnav:
   - text: 1. Obtain and verify FCPCA
     href: '#step-1---obtain-and-verify-the-fcpca-root-certificate'
@@ -22,12 +25,39 @@ subnav:
     href: '#frequently-asked-questions'
 ---
 
-Version 1.0
-July 2023
-
-| Version Number | Date | Change Description |
-| :----------: | :-------: | -------- |
-| 1.0 | 07/2023 | Initial Draft |
+<div class="usa-accordion" aria-multiselectable="false">
+    <h4 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a1">Date: August 31, 2023 - Version: 1.1</button>
+    </h4>
+    <div id="m-a1" class="usa-accordion__content usa-prose">
+      
+<table class="usa-table">
+  <caption>
+    FCPCA enterprise trust change table
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Version Number</th>
+      <th scope="col">Date</th>
+      <th scope="col">Change Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1.1</th>
+      <td>08/31/2023</td>
+      <td>Updated with Entrust rollover certificate.</td>
+    </tr>
+    <tr>
+      <th scope="row">1.0</th>
+      <td>07/02/2023</td>
+      <td>Initial draft after migration.</td>
+    </tr>
+  </tbody>
+</table>
+    <!-- Version Table End -->
+    </div>
+</div>
 
 This guide provides information on distributing the Federal Common Policy CA G2 (FCPCAG2) certificate to government-furnished workstations and devices as a _trusted root certificate_.
 
