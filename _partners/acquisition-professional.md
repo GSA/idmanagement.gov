@@ -44,7 +44,7 @@ The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization W
 
 # FICAM Product Criteria
 
-The [FICAM Product Criteria]({{site.baseurl}}/ficampc/) do two things.
+The [FICAM Product Criteria process]({{site.baseurl}}/ficampc/) do two things.
 1. Recognize 3rd party programs that test or accredit digital identity products that either conform or align to the NIST Special Publication 800-63 Digital Identity Guidelines.
 2. Verify additional information submitted by a vendor to be listed on management.gov
 
@@ -52,7 +52,7 @@ The FICAM Product Criteria does not test products but reviews and recognizes 3rd
 
 The **Product Criteria List** contains a list of products by category that have submitted testing or assurance documentation from a recognized 3rd party program. GSA OGP reviews this documentation. There is currently one category.
 
-1. [Phishing Resistant Authenticators]({{site.baseurl}}/buy/product-criteria#phishing-resistant-authenticators/)
+1. [Phishing Resistant Authenticators]({{site.baseurl}}/ficampcl/#phishing-resistant-authenticators)
 
 For more information on FICAM product criteria or recognition criteria, email ICAM at gsa.gov.
 
