@@ -26,36 +26,6 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
-- notice_date: August 29, 2023
-  change_type: CA Certificate Issuance
-  system: TSCP SHA256 Bridge CA
-  change_description: The TSCP Bridge CA issued a cross-certificate to the DocuSign Root CA.
-  contact: info at tscp dot org
-  ca_certificate_hash: 1f237153e9baf737ada108d20684c79467709c59
-  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
-  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
-  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
-  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
-  sia_uri: N/A
-  ocsp_uri: N/A
-  ee_cdp_uri: http://crl.dsf.docusign.net/DocuSignCAforTSCPG1.crl
-  ee_ocsp_uri: N/A
-
-- notice_date: August 29, 2023
-  change_type: CA Certificate Issuance
-  system: TSCP SHA256 Bridge CA
-  change_description: The TSCP Bridge CA issued a cross-certificate to Carillon Federal Services PIV-I CA2.
-  contact: info at tscp dot org
-  ca_certificate_hash: 5e9af6c211fc6a6be1719c7765d4d6b386322b47
-  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
-  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
-  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
-  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
-  sia_uri: N/A
-  ocsp_uri: N/A
-  ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA2.crl
-  ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
-
 
 - notice_date: August 18, 2023
   change_type: CA Certificate Issuance

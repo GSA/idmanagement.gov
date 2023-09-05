@@ -50,7 +50,7 @@ Tentative time-line:
 
 To prevent issues, agencies **must** distribute the Federal Common Policy CA G2 root certificate as a trusted Root Certification Authority to workstations and servers.
 
-To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/implement/announcements/02_microsoft_constraint/).
+To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/fpki/common).
 
 ## Who Can I Contact for Help or More Information?
 Email us at fpkirootupdate@gsa.gov. 

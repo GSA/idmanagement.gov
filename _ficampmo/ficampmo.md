@@ -23,8 +23,6 @@ subnav:
 
 The GSA Federal ICAM (FICAM) program helps federal agencies plan and manage enterprise identity, credentialing, and access management (ICAM) through collaboration opportunities and guidance on IT policy, standards, implementation, and architecture. Most of the guidance and best practices found on this website are developed through interagency working groups. The FICAM Program is a Federal CIO Council initiative managed by the GSA Office of Government-wide Policy.
 
-The main difference between the GSA OGP FICAM program and an agency ICAM program (including GSA's own enterprise ICAM program) is the GSA OGP FICAM program focuses on government-wide initiatives that support interoperability between organizations.
-
 # Federal Workforce Identity Framework
 
 The FICAM Program governs through a four-part framework for identity federations.

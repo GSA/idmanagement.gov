@@ -32,49 +32,21 @@ subnav:
 
 ---
 
+Version: {{page.version}}  
+{{page.pubdate}}  
+Author: {{page.author}}  
+
+
 <!-- ## [June 30, 2023] DRAFT / PRE-DECISIONAL (PDF /docs/roadmap-ficam.pdf)-->
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 
-<br><br>
+<br><br><br>
 
-<br>
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="ssp1">
-      Date: {{page.pubdate}} - Version: {{page.version}}
-    </button>
-  </h4>
-  <div id="ssp1" class="usa-accordion__content usa-prose">
-    <table>
-      <caption>Shared Service Provider version table</caption>
-      <thead>
-      <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
-      </tr>
-      </thead>
-      <tr>
-        <th scope='row'>
-          1.0
-        </th>
-        <td>02/14/2023</td>
-        <td>Initial draft</td>
-      </tr>
-    </table>
-  </div>
-</div>
 
-<!-- | Version Number | Date | Change Description |
+| Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 02/14/2023 | Initial draft | -->
+| 1.0 | 02/14/2023 | Initial draft |
 
 
 # Overview

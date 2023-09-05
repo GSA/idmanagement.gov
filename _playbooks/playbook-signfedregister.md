@@ -11,9 +11,6 @@ description: This playbook will walk you through the procedures for digitally si
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.1
-pubdate: August 17, 2022
-
 subnav:
   - text: Add Invisible Digital Signatures in MS Word
     href: '#add-invisible-digital-signatures-in-ms-word'
@@ -27,56 +24,16 @@ subnav:
     href: '#faqs'
 ---
 
-<!-- Version 1.1  
-August 17, 2022 -->
+Version 1.1  
+August 17, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
-      Date: {{page.pubdate}} - Version: {{page.version}}
-    </button>
-  </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
-   <table>
-   <caption>Federal Register version table</caption>
-   <thead>
-   <tr>
-      <th scope='col'>
-         Version Number
-      </th>
-      <th scope='col'>
-         Date
-      </th>
-      <th scope='col'>
-         Change Description
-      </th>
-   </tr>
-   </thead>
-   <tr>
-      <th scope='row'>
-         1.1
-      </th>
-      <td>08/17/2022</td>
-      <td>Update remove P7M and PKCS7 Signing Tool references.</td>
-   </tr>
-   <tr>
-      <th scope='row'>
-         1.0
-      </th>
-      <td>01/05/2018</td>
-      <td>Initial Draft.</td>
-   </tr>
-   </table>
-  </div>
-</div>
-
-<!-- | Version Number | Date | Change Description |
+| Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.1 | 08/17/2022 | Update remove P7M and PKCS7 Signing Tool references. |
-| 1.0 | 01/05/2018 | Initial Draft. | -->
+| 1.0 | 01/05/2018 | Initial Draft. |
 
 This guide will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register (OFR) using your PIV credential or similar digital certificate.
 

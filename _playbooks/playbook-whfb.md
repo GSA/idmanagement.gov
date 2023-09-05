@@ -9,9 +9,6 @@ description: Windows Hello for Business (WHfB) is a playbook to guide administra
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.1
-pubdate: August 14, 2023
-
 subnav:
   - text: Why Windows Hello for Business
     href: '#why-windows-hello-for-business'
@@ -40,56 +37,16 @@ subnav:
 
 ---
 
-<!-- Version 1.1<br>
-August 14, 2023 -->
+Version 1.1<br>
+August 14, 2023
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
-<br><br><br>
+<br><br>
 
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
-      Date: {{page.pubdate}} - Version: {{page.version}}
-    </button>
-  </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
-    <table>
-      <caption>Windows Hello for Business version table</caption>
-      <thead>
-      <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
-      </tr>
-      </thead>
-      <tr>
-        <th scope='row'>
-          1.1
-        </th>
-        <td>08/14/2023</td>
-        <td>Remove security key as an option. Add a "why" section and lessons learned.</td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          1.0
-        </th>
-        <td>05/25/2023</td>
-        <td>Initial Draft.</td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-<!-- | Version Number | Date | Change Description |
+| Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.1 | 08/14/2023 | Remove security key as an option. Add a "why" section and lessons learned. |
-| 1.0 | 05/25/2023 | Initial Draft. | -->
+| 1.0 | 05/25/2023 | Initial Draft. |
 
 The purpose of this playbook is to guide ICAM program managers and Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Active Directory. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. WHfB offers two-factor authentication by combining a device authenticator (something you have) and either a PIN (something you know) or a biometric (something you are).
 

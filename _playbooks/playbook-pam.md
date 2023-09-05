@@ -9,9 +9,6 @@ description: This Playbook provides federal agencies with best practices in mana
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.2
-pubdate: December 29, 2022
-
 subnav:
     - text: Executive Summary
       href: '#executive-summary'
@@ -41,65 +38,18 @@ subnav:
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
   
-<!-- Version 1.2<br>
-December 29, 2022 -->
+Version 1.2<br>
+December 29, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cisa.png" width="64" height='64' align="left" alt="U.S. Department of Homeland Security Cybersecurity and Infrastructure Security Agency Logo"><br><br><br>
 
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
-      Date: {{page.pubdate}} - Version: {{page.version}}
-    </button>
-  </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
-    <table>
-      <caption>Privileged Identity version table</caption>
-      <thead>
-      <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
-      </tr>
-      </thead>
-      <tr>
-        <th scope='row'>
-          1.2
-        </th>
-        <td>12/29/2022</td>
-        <td>Fixed Acknowledgment word usage.</td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          1.1
-        </th>
-        <td>12/15/2022</td>
-        <td>Clarify activites around automated discovery of entitlements and microservices.</td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          1.0
-        </th>
-        <td>09/25/2022</td>
-        <td>Initial Draft.</td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-<!-- | Version Number | Date | Change Description |
+| Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.2 | 12/29/2022 | Fixed Acknowledgment word usage. |
 | 1.1 | 12/15/2022 | Clarify activites around automated discovery of entitlements and microservices. |
-| 1.0 | 09/25/2022 | Initial Draft. | -->
+| 1.0 | 09/25/2022 | Initial Draft. |
 
 This playbook is a collaboration among the General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
 

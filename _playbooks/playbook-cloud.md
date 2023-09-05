@@ -9,9 +9,6 @@ description: The Cloud Identity Playbook is a four-step playbook to start or fur
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.2
-pubdate: December 29, 2022
-
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
@@ -34,66 +31,19 @@ subnav:
     
 ---
 
-<!-- Version 1.2  
-December 29, 2022 -->
+Version 1.2  
+December 29, 2022
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 This playbook is a collaboration between the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee and the Federal Chief Information Officer Council Cloud and Infrastructure Community of Practice.
 
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
-      Date: {{page.pubdate}} - Version: {{page.version}}
-    </button>
-  </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
-    <table>
-      <caption>Cloud Identity version table</caption>
-      <thead>
-      <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
-      </tr>
-      </thead>
-      <tr>
-        <th scope='row'>
-          1.2
-        </th>
-        <td>12/29/22</td>
-        <td>Updated link in Appendix A</td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          1.1
-        </th>
-        <td>10/11/22</td>
-        <td>Updated federation section for trust framework examples.</td>
-      </tr>
-      <tr>
-        <th scope='row'>
-          1.0
-        </th>
-        <td>01/20/22</td>
-        <td>Initial draft.</td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-<!-- | Version Number | Date | Change Description |
+| Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.2 | 12/29/22 | Updated link in Appendix A |
 | 1.1 | 10/11/22 | Updated federation section for trust framework examples. |
-| 1.0 | 01/20/22 | Initial draft. | -->
+| 1.0 | 01/20/22 | Initial draft. |
 
 # Executive Summary
 

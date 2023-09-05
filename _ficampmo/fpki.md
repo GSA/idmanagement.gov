@@ -41,7 +41,7 @@ The Federal Public Key Infrastructure (FPKI) provides the government with a trus
 
 The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-infrastructure-policy-authority) maintains three certificate policies (the Common Policy Framework, the Federal Bridge Certification Authority Certificate Policy, and the Federal Public Trust TLS Certificate Policy). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
 
-|Federal PKI Policy | Policy Name | Profile | Change Proposals |
+| Federal PKI Policy | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
 | Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.5]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.2]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/fpki/#federal-pki-document-archive) |
 | Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.2]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} <br><br> and [PIV-I for Federal Agencies]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/fpki/#federal-pki-document-archive) |
@@ -237,7 +237,7 @@ A blank category indicates no updates in the previous three years. If you seek a
   <tbody>
     {% for category in categories %}
       <tr class="docs-table-category-heading" data-category="{{ category }}">
-        <th colspan="2" scope="colgroup" class="docs-table-heading" id="docs-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
+        <th colspan="2" class="docs-table-heading" id="docs-table-heading-{{ category | slugify }}"><b>{{ category }}</b></th>
       </tr>
       {% for docs in site.data.fpkidocs %}
         {% if docs.status == "post" %}

@@ -77,7 +77,7 @@ Devices must be Azure AD registered at minimum, and it's preferable that devices
 
 Users must have a Microsoft Intune license feature as a stand-alone license or as part of a bundled license (Microsoft 365 E3 for GCC High and Microsoft 365 E5 for GCC High).
 
-It's also preferable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
+It's also preferrable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
 
 # Technology and terms
 
