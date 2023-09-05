@@ -392,11 +392,11 @@ Enterprise SSO limits the complexity and risks of direct credential enablement. 
 Table 5 provides a comparison of some benefits and drawbacks of federation and direct enablement. 
 
 <h3 class="site-preview-heading">Federation vs Direct Enablement Comparison</h3>
-<div class="usa-accordion" aria-multiselectable="true">
+<div class="usa-accordion usa-accordion--bordered usa-accordion--multiselectable" data-allow-multiple>
     <h4 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1">Configuration Management</button>
+        <button class="usa-accordion__button" aria-expanded="true" aria-controls="n-a1">Configuration Management</button>
     </h4>
-    <div id="m-a1" class="usa-accordion__content usa-prose">
+    <div id="n-a1" class="usa-accordion__content usa-prose">
         <table class="usa-table usa-table--borderless">
             <thead>
                 <tr>
@@ -425,10 +425,10 @@ Table 5 provides a comparison of some benefits and drawbacks of federation and d
         </table>
     </div>
 
-<h4 class="usa-accordion__heading">
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Security and Accreditation</button>
+  <h4 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="n-a2">Security and Accreditation</button>
   </h4>
-  <div id="m-a2" class="usa-accordion__content usa-prose">
+  <div id="n-a2" class="usa-accordion__content usa-prose">
         <table class="usa-table usa-table--borderless">
               <thead>
                 <tr>
@@ -458,9 +458,9 @@ Table 5 provides a comparison of some benefits and drawbacks of federation and d
     </div>
 
   <h4 class="usa-accordion__heading">
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">Help Desk Support</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="n-a3">Help Desk Support</button>
   </h4>
-  <div id="m-a3" class="usa-accordion__content usa-prose">
+  <div id="n-a3" class="usa-accordion__content usa-prose">
         <table class="usa-table usa-table--borderless">
             <tbody>
             <thead>
