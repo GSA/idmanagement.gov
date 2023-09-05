@@ -19,15 +19,13 @@
 }
 
 // Important: Colors for H1 and H2 in usa-layout-docs element
-// Updated to primary-darker(#205493)
-// see: https://18f.gsa.gov/assets/blog/web-design-standards/library/14-primary-colors.png
+// Updated to base in uswds css file (#005ea2)
+// primary gsa colors are here: https://18f.gsa.gov/assets/blog/web-design-standards/library/14-primary-colors.png
 .usa-layout-docs h1 {
-  // color:#005ea2;
-  color: #205493;
+  color:#005ea2;
 }
 .usa-layout-docs h2 {
-  // color:#005ea2;
-  color: #205493;
+  color:#005ea2;
 }
 
 // Use to undecorate a span of content withing an anchor tag

@@ -353,7 +353,7 @@ Authorizations are based on progressive, fine-grained access models. Most agenci
 | Description | A static list of entities with their access rights. | Access based on a user's static pre-defined role. | Access based on a user's assigned attributes which may be static or dynamic. | Access based on dynamic risk factors. |
 | Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. | -->
 
-|   Granularity   | Access Model | Description |   Example   |
+|   Granularity  | Access Model | Description |   Example   |
 |:---------------:|:--------------:|:-------------:|:-------------:|
 |      Least       |  Access Control Lists(ACLs) | A static list of entities with their access rights. | Allow Jane Doe access to email application |
 |      More       |  Role-Based Access Control (RBAC) | Access based on a user’s static pre-defined role. | Jane Doe is assigned the user role “New Employee” which grants access to email and sharepoint. |
