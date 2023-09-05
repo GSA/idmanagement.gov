@@ -1,4 +1,5 @@
 ---
+
 layout: page
 collection: implement
 title: Configure Smart Card Logon on Windows Domains
