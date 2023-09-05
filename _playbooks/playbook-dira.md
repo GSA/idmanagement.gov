@@ -11,6 +11,9 @@ pdf: "docs/playbook-dira.pdf"
 sidenav: playbooks
 sticky_sidenav: true
 
+version: 1.2
+pubdate: December 29, 2022
+
 subnav:
   - text: Step 1. Identify Users, Transactions, and Roles
     href: '#step-1-identify-users-transactions-and-roles'
@@ -39,17 +42,64 @@ subnav:
   
 ---
 
-Version 1.2  
-December 29, 2022
+<!-- Version 1.2  
+December 29, 2022 -->
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
-| Version Number | Date | Change Description |
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="vtbl1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Digital Identity Risk Assessment version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>
+          Version Number
+        </th>
+        <th scope='col'>
+          Date
+        </th>
+        <th scope='col'>
+          Change Description
+        </th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>
+          1.2
+        </th>
+        <td>12/29/22</td>
+        <td>Fixed heading typo, updated Appendix A. links</td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          1.1
+        </th>
+        <td>11/17/21</td>
+        <td>Inserted Key Point box at the end of Step 2.</td>
+      </tr>
+      <tr>
+        <th scope='row'>
+          1.0
+        </th>
+        <td>09/13/20</td>
+        <td>Initial Draft</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.2 | 12/29/22 | Fixed heading typo, updated Appendix A. links |
 | 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
-| 1.0 | 09/13/20 | Initial Draft |
+| 1.0 | 09/13/20 | Initial Draft | -->
 
 # Acknowledgments
 
@@ -145,14 +195,14 @@ Application owners and the information security team collaborate to identify, an
 
 Finally, map the community of users to the common roles. Most applications have several different user roles, each with different access privileges. Examples of common user roles include:
 -	**General users**
-    - Can access: Information resources provided by the application
-    - Examples: Employees, general public
+  - Can access: Information resources provided by the application
+  - Examples: Employees, general public
 -	**Functional privileged users**
-    -	Can access: Information resources provided by the application, and approval workflows
-    -	Examples: Managers
+  -	Can access: Information resources provided by the application, and approval workflows
+  -	Examples: Managers
 -	**Information Technology (IT) privileged users**
-    -	Can access: IT systems with read, write, or change access
-    -	Examples: System administrators, security analysts
+  -	Can access: IT systems with read, write, or change access
+  -	Examples: System administrators, security analysts
 
 Table 2 provides examples of user types, transactions, and roles. 
 

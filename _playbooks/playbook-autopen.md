@@ -9,6 +9,9 @@ description: This playbook outlines the process for an agency to implement a Dig
 sidenav: playbooks
 sticky_sidenav: true
 
+version: 1.0
+pubdate: March 29, 2023
+
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
@@ -30,8 +33,8 @@ subnav:
     href: '#appendix-c-templates'
 ---
 
-Version 1.0  
-March 29, 2023
+<!-- Version 1.0  
+March 29, 2023 -->
 
 The Delegated Digital Signature Working Group of the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee developed this playbook to outline the process for a federal agency to implement a digital autopen for *Federal Register* documents.
 
@@ -39,9 +42,42 @@ The Delegated Digital Signature Working Group of the Federal Chief Information S
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <br><br><br>
 
-| Version Number | Date | Change Description |
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="vtbl1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Digital Autopen version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>
+          Version Number
+        </th>
+        <th scope='col'>
+          Date
+        </th>
+        <th scope='col'>
+          Change Description
+        </th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>
+          1.0
+        </th>
+        <td>06/30/2022</td>
+        <td>Initial Draft.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.0 | 06/30/2022 | Initial Draft. |
+| 1.0 | 06/30/2022 | Initial Draft. | -->
 
 ## Executive Summary
 
@@ -192,7 +228,7 @@ Due to unique agency risks, the working group identifies the below optional cont
 
 ## Step 3. Obtain a Digital Autopen Certificate
 
-A digital autopen certificate is available from any Federal PKI Shared Service Provider. [Federal Agency Legacy PKI]({{site.baseurl}}/fpki/ca/#all-federal-pki-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate for their agency. An agency must request a **ROLE-BASED SIGNATURE CERTIFICATE**. Check with your Homeland Security Presidential Directive-12 Security Office or PIV card issuer if they can issue a role-based certificate. Federal PKI Shared Service Providers are listed as government identity providers on [idmanagement.gov]({{site.baseurl}}/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. They provide Federal PKI certificates and PIV services.
+A digital autopen certificate is available from any Federal PKI Shared Service Provider. [Federal Agency Legacy PKI]({{site.baseurl}}/university/fpki/){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate for their agency. An agency must request a **ROLE-BASED SIGNATURE CERTIFICATE**. Check with your Homeland Security Presidential Directive-12 Security Office or PIV card issuer if they can issue a role-based certificate. Federal PKI Shared Service Providers are listed as government identity providers on [idmanagement.gov]({{site.baseurl}}/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. They provide Federal PKI certificates and PIV services.
 
 While OFR accepts any Federal PKI digital signature certificate, this playbook recommends a hardware-based certificate issued to a FIPS-140 Level 2 certified hardware device such as a visually distinct, approved smart card or USB device such as a FIDO authenticator. Below are examples of the Common Name used in digital autopen certificates.
 

@@ -7,6 +7,9 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
+version: 1.0
+pubdate: July 2023
+
 subnav:
   - text: 1. Obtain and verify FCPCA
     href: '#step-1---obtain-and-verify-the-fcpca-root-certificate'
