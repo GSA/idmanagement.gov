@@ -169,7 +169,7 @@ Users who are trained to enter their credentials without thinking can unintentio
 With any project, a business case is used to capture the strategic, business, and technical benefits from a project. Use examples in Table 4 below to craft your business case. The main benefits include:
 
 <h3 class="site-preview-heading">Single Sign-On Strategic and Technical Benefits</h3>
-<div class="usa-accordion" aria-multiselectable="true">
+<div class="usa-accordion usa-accordion--bordered usa-accordion--multiselectable" data-allow-multiple>
     <h4 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1">Support IT Modernization and Cloud Adoption Projects</button>
     </h4>
@@ -387,7 +387,7 @@ Once an application is configured and tested, it can be released to the user com
 ## Step 5. Federate Application Access
 In FICAM, federation is the sharing and acceptance of digital identities, attributes, and credentials managed by other agencies. Prior to this step, it’s very possible many applications are individually configured to directly manage or accept a wide variety of credentials or authenticators, known as direct enablement. This model allows applications to support disparate user populations, but is both time consuming and resource intensive to maintain. Direct enablement and local credential management increase the risks associated with account deprovisioning. For instance, a user may have been separated from their role or organization, but accounts and credentials (e.g., local username/password) in individual applications may be unknowingly left active.
 
-Enterprise SSO limits the complexity and risks of direct credential enablement. With SSO-based identity federation, authentication transactions are standardized regardless of the credentials or authenticators, and user management activities can be consolidated under the Enterprise SSO. 
+Enterprise SSO limits the complexity and risks of direct credential enablement. With SSO-based identity federation, authentication transactions are standardized regardless of the credentials or authenticators, and user management activities can be consolidated under the Enterprise SSO.
 
 Table 5 provides a comparison of some benefits and drawbacks of federation and direct enablement. 
 

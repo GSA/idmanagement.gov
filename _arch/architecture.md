@@ -40,11 +40,11 @@ June 30, 2023 -->
 | 1.0 | 11/10/2009 | Initial publication of the document, including:<br>1. Chapter 1: Introduction<br>2. Chapter 2: Overview of ICAM<br>Part A: ICAM Segment Architecture<br>3. Chapter 3: ICAM Segment Architecture<br>4. Chapter 4: ICAM Use Cases<br>5. Chapter 5: Transition Roadmap and Milestones | -->
 
 <br>
-<div class="usa-accordion" aria-multiselectable="false">
+<div class="usa-accordionusa-accordion usa-accordion--bordered">
     <h4 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a1">Date: June 30, 2023 - Version: 3.3</button>
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="n-a1">Date: June 30, 2023 - Version: 3.3</button>
     </h4>
-    <div id="m-a1" class="usa-accordion__content usa-prose">
+    <div id="n-a1" class="usa-accordion__content usa-prose">
 
 <table class="usa-table">
   <caption>
@@ -420,10 +420,10 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
 <hr>
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-    <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
     <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All" tabindex=0>   +   </li>
+    <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
 </ul>
-<div id="use-case-1" class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+<div id="use-case-1" class="usa-accordion usa-accordion--bordered usa-accordion--multiselectable" data-allow-multiple>
     <h4 id="use-case-1" class="usa-accordion__heading"> <!-- Use Case 1 -->
         <button
         class="usa-accordion__button gsa-target-accordion-header"
