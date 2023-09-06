@@ -97,7 +97,7 @@ Joining a device is an extension to registering a device. It provides you with a
 
 Azure AD registered devices support the bring your own device (BYOD) scenario. In BYOD, a user can access your organization's Azure AD controlled resources using a personal device.
 
-Learn more about [Azure AD registered devices.]https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Azure AD registered devices here"}.
+Learn more about [Azure AD registered devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Azure AD registered devices here"}.
 
 **Azure AD join**
 
