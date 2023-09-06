@@ -97,7 +97,7 @@ Joining a device is an extension to registering a device. It provides you with a
 
 Azure AD registered devices support the bring your own device (BYOD) scenario. In BYOD, a user can access your organization's Azure AD controlled resources using a personal device.
 
-Learn more about Azure AD registered devices [here](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Azure AD registered devices here"}.
+Learn more about [Azure AD registered devices.]https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Azure AD registered devices here"}.
 
 **Azure AD join**
 
@@ -433,7 +433,7 @@ Select  **Next**  to continue.
 
 # WHfB user experience
 
-This section details the user experience for setting up Windows Hello for Business. The minimum device requirements for fingerprint and facial recognition sensors can be found [here](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="The minimum device requirements for fingerprint and facial recognition sensors can be found here"}.
+This section details the user experience for setting up Windows Hello for Business. View the [minimum device requirements for fingerprint and facial recognition sensors.](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="The minimum device requirements for fingerprint and facial recognition sensors"}.
 
 By default, users will be prompted for facial recognition and PIN creation if biometric authentication is enabled. Fingerprints can be added later from the **Settings \> Accounts \> Sign-in options** menu.
 
@@ -698,7 +698,7 @@ Once the facial scanning is complete, the user will be prompted to improve recog
 
 ## Windows fingerprint biometric setup
 
-Increasingly, device vendors are adding built-in fingerprint sensors to keyboards. Sample keyboard layouts with built-in fingerprint sensors can be found [here](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-fingerprint-authentication#sample-keyboard-layouts){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Sample keyboard layouts with built-in fingerprint sensors can be found here"}. If a device does not have a built-in fingerprint sensor, a USB fingerprint sensor can be used with Windows Hello for Business.
+Increasingly, device vendors are adding built-in fingerprint sensors to keyboards. View the [sample keyboard layouts with built-in fingerprint sensors.](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-fingerprint-authentication#sample-keyboard-layouts){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Sample keyboard layouts with built-in fingerprint sensors"}. If a device does not have a built-in fingerprint sensor, a USB fingerprint sensor can be used with Windows Hello for Business.
 
 Fingerprint setup can occur during Windows Hello enrollment or afterward by visiting **Settings \> Accounts \> Sign-in options \> Fingerprint recognition**. Multiple fingerprints can be registered with Windows Hello.
 
@@ -732,11 +732,11 @@ If users choose to do so, they can add multiple fingerprints for improved recogn
 
 Security keys also can be used for Windows Hello for Business authentication. This feature can be configured through the WHfB **Enrollment Policy** settings or the **Identity Protection Device Configuration Profile**. Users can also set up security keys through the Windows **Settings \> Accounts \> Sign-in options \> Security key.**
 
-Additional methods for enabling Windows security keys can be found [here](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-windows#enable-security-keys-for-windows-sign-in){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+View [additional methods for enabling Windows security keys](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-windows#enable-security-keys-for-windows-sign-in){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="additional methods for enabling Windows security keys"}.
 
 # Windows Hello for Business FAQs
 
-Some of the most commonly asked questions about WHfB are presented below. A full list of common questions can be found [here](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-faq){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="A full list of common questions can be found here"}.
+Some of the most commonly asked questions about WHfB are presented below. View the [full list of common questions](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-faq){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="full list of common questions"}.
 
 **What's the difference between Windows Hello and Windows Hello for Business?**
 
