@@ -40,11 +40,11 @@ June 30, 2023 -->
 | 1.0 | 11/10/2009 | Initial publication of the document, including:<br>1. Chapter 1: Introduction<br>2. Chapter 2: Overview of ICAM<br>Part A: ICAM Segment Architecture<br>3. Chapter 3: ICAM Segment Architecture<br>4. Chapter 4: ICAM Use Cases<br>5. Chapter 5: Transition Roadmap and Milestones | -->
 
 <br>
-<div class="usa-accordion" aria-multiselectable="false">
+<div class="usa-accordionusa-accordion usa-accordion--bordered">
     <h4 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a1">Date: June 30, 2023 - Version: 3.3</button>
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="n-a1">Date: June 30, 2023 - Version: 3.3</button>
     </h4>
-    <div id="m-a1" class="usa-accordion__content usa-prose">
+    <div id="n-a1" class="usa-accordion__content usa-prose">
 
 <table class="usa-table">
   <caption>
@@ -317,7 +317,7 @@ Examples of access requirements include:
 
 In providing access services, it can be challenging to conduct an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
 
-### Authentication
+## Authentication
 
 Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -335,7 +335,7 @@ Authentication is generally a two-step process:
 - Does the person know the PIN for the credential?
 - Does the person have the private key on the smart card for the certificate presented to a website?
 
-### Authorization
+## Authorization
 
 Authorization is how you decide whether you should allow someone to access an agency resource. Access requirements usually dictate whether you’ll allow someone to:
 
@@ -347,11 +347,18 @@ Usually, authorization occurs immediately after authentication. When you log in 
 
 Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:class="usa-link usa-link--external"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
 
-| | Less Fine-Grained | --> | --> | More Fine-Grained |
+<!-- | | Less Fine-Grained | \--\> | \--\> | More Fine-Grained |
 | |:----:|:----:|:----:|:----:|
 | Access Model | Access Control Lists (ACLs) | Role-Based Access Control (RBAC) | Attribute-Based Access Control (ABAC)| Risk Adaptive Access Control (RAAC) |
 | Description | A static list of entities with their access rights. | Access based on a user's static pre-defined role. | Access based on a user's assigned attributes which may be static or dynamic. | Access based on dynamic risk factors. |
-| Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. |
+| Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. | -->
+
+|   Granularity  | Access Model | Description |   Example   |
+|:---------------:|:--------------:|:-------------:|:-------------:|
+|      Least       |  Access Control Lists(ACLs) | A static list of entities with their access rights. | Allow Jane Doe access to email application |
+|      More       |  Role-Based Access Control (RBAC) | Access based on a user’s static pre-defined role. | Jane Doe is assigned the user role “New Employee” which grants access to email and sharepoint. |
+|      More       |  Attribute-Based Access Control (ABAC) | Access based on a user’s assigned attributes which may be static or dynamic. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). |
+|      Most       |  Risk Adaptive Access Control (RAAC) | Access based on dynamic risk factors. | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. |
 
 Each authorization model has benefits and limitations. The policies and access requirements defined by agency business owners help define the model that best suits their needs. More robust access control models, such as ABAC, can help agencies with improved automation, and they are increasingly adopted by cloud-native and cloud-friendly services.
 
@@ -420,10 +427,10 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
 <hr>
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-    <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
     <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All" tabindex=0>   +   </li>
+    <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex=0>   -   </li>
 </ul>
-<div id="use-case-1" class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+<div id="use-case-1" class="usa-accordion usa-accordion--bordered usa-accordion--multiselectable" data-allow-multiple>
     <h4 id="use-case-1" class="usa-accordion__heading"> <!-- Use Case 1 -->
         <button
         class="usa-accordion__button gsa-target-accordion-header"
