@@ -192,30 +192,30 @@ Each factor has an associated score, and the sum of these six-factor scores is t
 
 **Table 1. Digital Worker Impact Evaluation Matrix**[^4]
 
-| Score each factor based on the most applicable scenario |     | 
-| ------------------------ | ------------ | 
-| **Factor 1 - Is the digital worker attended or unattended?** | **Score** | 
-| ● Attended | 0 | 
+| **Factors:** score each factor based on the most applicable scenario |  **Score**   | 
+| ------------------------ |:------------:| 
+| **Factor 1 - Is the digital worker attended or unattended?** | **+** | 
+| ● Attended  | 0 | 
 | ● Unattended | 10 |
-| **Factor 2 - What is the highest level of data access by the digital worker?** |     | 
+| **Factor 2 - What is the highest level of data access by the digital worker?** |  **+**   | 
 | ● Data available to the public (either without a user account or with unvetted user account) | 0 | 
 | ● Agency operational data, controlled unclassified information (CUI), or data on individuals in low volumes. Doesn’t contain personally identifiable information (PII) or personal health information (PHI). | 5 |
 | ● PII and/or PHI | 55 | 
 | ● Agency critical operational data or data that could impact life, health, or safety of individuals/systems relied upon for health and safety; or very high volumes of agency operational data | 90 |
-| **Factor 3 - Does the digital worker have access to internal and/or external networks?** |     | 
+| **Factor 3 - Does the digital worker have access to internal and/or external networks?** |  **+**   | 
 | ● No internal intranet or external Internet connection | 0 | 
 | ● Either internal intranet access only OR external Internet access (not both) | 5 |
 | ● Internal and external network access (i.e., Internet and intranet) | 10 | 
-| **Factor 4 - What is the impact of the digital worker output?** |     | 
+| **Factor 4 - What is the impact of the digital worker output?** |  **+**   | 
 | ● Output impacts general internal business operations, but not for critical processes or decisions | 5 | 
 | ● Output impacts outside organizations in general business operations or public reporting (e.g., public facing websites or chatbots), but not for critical processes or decisions | 25 |
 | ● Output impacts mission critical organization operations of the agency or other organizations, health or safety of individuals, national economic stability, national security, critical infrastructure, or similarly consequential operations | 90 | 
-| **Factor 5 - What type of system account privileges does the digital worker require?** |     | 
+| **Factor 5 - What type of system account privileges does the digital worker require?** |  **+**  | 
 | ● No system accounts used | 0 | 
 | ● Standard system account(s) (roles limited by the business function) | 10 |
 | ● System admin account (privileged access) | 35 | 
 | ● Multiple system admin accounts (multiple privileged access roles) | 40 |
-| **Factor 6 - Does the digital worker act on its own insights?** |     | 
+| **Factor 6 - Does the digital worker act on its own insights?** |  **+**   | 
 | ● Digital worker develops insights, but doesn’t take action on its insights | 0 | 
 | ● Digital worker develops insights and acts on the insights after human review | 5 |
 | ● Digital worker develops insights and acts on the insights without human review or approval before the action is taken | 10 | 
