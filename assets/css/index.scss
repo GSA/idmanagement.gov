@@ -13,12 +13,40 @@
 .gsa-target-accordion-content-area {} // for accordion content targeting
 .gsa-card{cursor: pointer;} // adds a pointer to a card.
 
-// 508 contrast nudes.. to get contrast color right. 
+// 508 contrast update for correct contrast color. 
 .bg-accent-warm {
   background-color: #bf5906;
 }
 
+// 508 issue #516: top banner accordion button text color
+// Contrast Ratio: 7.09 
+.usa-banner__button {
+  // color: #005ea2; previous 5.9
+  color: #00528e;
+}
+
+// 508 issue #516: sidenav not currently selected or is a button
+// Contrast Ration: 7.07
+.usa-sidenav a:not(.usa-button):not(.usa-current) {
+  // color: #565c65; previous 6.74
+  color: #535961;
+}
+
+// 508 issue #516: 
+// Recommend: default HTML5 link colors, may look dated but contrast remains high. 
+.usa-link, a, .link-primary, a:hover {
+  // color: #005ea2; previous
+  color: #0000ee; 
+}
+
+// 508 Overide #540: # Line Height to 1.5
+.usa-banner__header-text, .usa-identifier__identity-domain, .usa-identifier__identity-disclaimer, .footer-logo-text{
+  line-height: 1.5;
+}
+
 // Important: Colors for H1 and H2 in usa-layout-docs element
+// Updated to base in uswds css file (#005ea2)
+// primary gsa colors are here: https://18f.gsa.gov/assets/blog/web-design-standards/library/14-primary-colors.png
 .usa-layout-docs h1 {
   color:#005ea2;
 }

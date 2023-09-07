@@ -25,32 +25,6 @@ For information on how to contribute to the site, visit the Contribute page [her
 
 Direct changes and line edits to the content may be submitted by clicking 'Edit this page'. You do not need to install any software to submit content. You can use GitHub's in-browser editor to edit files and submit a request for your changes to be merged.
 
-### Running the locally application
-With locally installed node and ruby
-```
-$ npm install
-$ bundle install
-$ npm start 
-```
-
-OR
-
-`$ bundle exec jekyll serve`
-
-To build but not serve the site, run 
-
-`npm run build or bundle exec jekyll build`
-
-### With Docker
-```
-$ docker-compose run node npm install
-$ docker-compose build
-$ docker-compose up
-```
-To build but not serve the site, run:
-
-`docker-compose run ruby bundle exec jekyll build`
-
 ## Public domain
 
 This project is in the worldwide [public domain](/_pages/license.md/). 

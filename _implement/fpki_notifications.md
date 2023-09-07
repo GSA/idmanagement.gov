@@ -74,7 +74,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
-**Last Update**: August 21, 2023
+**Last Update**: September 06, 2023
 
 {% include graph.html %}
 
@@ -672,11 +672,11 @@ The notification can also be emailed to <span>fpki</span><span>@</span><span>gsa
 
 Subject:  FPKI System Notification - System Name 
   
-- notice_date: the date you are submitting the issue/notifcation
+- notice_date: the date you are submitting the issue/notification
 - system: the generic PKI provider (e.g., Entrust NFI, WidePoint SSP, etc.)
 - change_type: one of the following - CA Certificate Issuance, CA Certificate Revocation, URI Change, System Outage, Intent to Issue/Revoke CA Certificate
-- change_description: describe the CA certificate activity (to include rekey activities) andinclude activity start and end dates if applicable
-- contact: the best email address regarding the activty, remember to format this by spelling out dashes and dots to prevent automated email scrapers
+- change_description: describe the CA certificate activity (to include rekey activities) and include activity start and end dates if applicable
+- contact: the best email address regarding the activity, remember to format this by spelling out dashes and dots to prevent automated email scrapers
 - ca_certificate_issuer: the full DN of the issuer
 - ca_certificate_subject: the full DN of the subject
 - ca_certificate_hash: the SHA-1 thumbprint of the CA certificate

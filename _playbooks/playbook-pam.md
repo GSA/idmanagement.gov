@@ -50,11 +50,11 @@ December 29, 2022 -->
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
     </button>
   </h4>
-  <div id="vtbl1" class="usa-accordion__content usa-prose">
+  <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
       <caption>Privileged Identity version table</caption>
       <thead>
@@ -82,7 +82,7 @@ December 29, 2022 -->
           1.1
         </th>
         <td>12/15/2022</td>
-        <td>Clarify activites around automated discovery of entitlements and microservices.</td>
+        <td>Clarify activities around automated discovery of entitlements and microservices.</td>
       </tr>
       <tr>
         <th scope='row'>
@@ -98,7 +98,7 @@ December 29, 2022 -->
 <!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
 | 1.2 | 12/29/2022 | Fixed Acknowledgment word usage. |
-| 1.1 | 12/15/2022 | Clarify activites around automated discovery of entitlements and microservices. |
+| 1.1 | 12/15/2022 | Clarify activities around automated discovery of entitlements and microservices. |
 | 1.0 | 09/25/2022 | Initial Draft. | -->
 
 This playbook is a collaboration among the General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.

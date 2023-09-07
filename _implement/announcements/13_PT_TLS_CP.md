@@ -18,6 +18,6 @@ The current version (v1.0) of the [US Federal Public Trust TLS Certificate Polic
 
 **Document Updates**
 
-As the initial operational capability of the US Federal Public Trust PKI is nearing, the US Federal Public Trust TLS Certificate Policy is currently undergoing revisions in order to accomodate the Certification Authority/Browser (CA/B) Forum's most recent updates to their [baseline requirements](https://cabforum.org/baseline-requirements-documents/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for public trust TLS. 
+As the initial operational capability of the US Federal Public Trust PKI is nearing, the US Federal Public Trust TLS Certificate Policy is currently undergoing revisions in order to accommodate the Certification Authority/Browser (CA/B) Forum's most recent updates to their [baseline requirements](https://cabforum.org/baseline-requirements-documents/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for public trust TLS. 
 
-Moving forward the updated certificate policy will be appoved by the FPKIPA and published to [devicepki.idmanagement.gov](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, and will be annouced here in the [FPKI Playbook Annoucements]({{site.baseurl}}/fpki/announcements/), stay tuned.
+Moving forward the updated certificate policy will be approved by the FPKIPA and published to [devicepki.idmanagement.gov](https://devicepki.idmanagement.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, and will be announced here in the [FPKI Playbook Annoucements]({{site.baseurl}}/fpki/announcements/), stay tuned.

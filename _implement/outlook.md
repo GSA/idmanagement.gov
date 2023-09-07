@@ -102,7 +102,7 @@ When sending an encrypted email, the message is encrypted using the public key i
 
 ## Decrypt an Email
 
-PIV users may receive and store encrypted emails througout their tenure in an organization.  These emails may have been encrypted with various public key management keys are now retired or replaced.  Many PIV card issuers provide historical key management keys when they issue a PIV card, but others may not.  Outlook, via the Cryptographic Application Programming Interface (CAPI), can decrypt these emails if the associated private keys are available.  The following steps outline how to decrypt an email when the private decryption keys are available via CAPI:
+PIV users may receive and store encrypted emails throughout their tenure in an organization.  These emails may have been encrypted with various public key management keys are now retired or replaced.  Many PIV card issuers provide historical key management keys when they issue a PIV card, but others may not.  Outlook, via the Cryptographic Application Programming Interface (CAPI), can decrypt these emails if the associated private keys are available.  The following steps outline how to decrypt an email when the private decryption keys are available via CAPI:
 
 1. Select an encrypted email
 2. Enter your PIV card PIN or private key password when prompted

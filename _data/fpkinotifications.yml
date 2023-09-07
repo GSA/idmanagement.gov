@@ -60,7 +60,7 @@
 - notice_date: August 18, 2023
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description: FCPCAG2 issued a certificate to the Entrust Managed Services Root CA certificate on July 14, 2023 in preperation for rekeys of the Entrust Managed Services CAs.
+  change_description: FCPCAG2 issued a certificate to the Entrust Managed Services Root CA certificate on July 14, 2023 in preparation for rekeys of the Entrust Managed Services CAs.
   contact: fpki dash help at gsa.gov
   ca_certificate_hash: d6be623683f2b47e94452c04fa1ab3ab631e83eb
   ca_certificate_issuer: CN = Federal Common Policy CA G2, OU = FPKI, O = U.S. Government, C = US
@@ -891,7 +891,7 @@
 - notice_date: November 23, 2022
   change_type: CRL and OCSP Outage
   system: Entrust Federal CRL and OCSP Service
-  change_description: On Wendnesday, Novebmer 23, 2022, Entrust reported intermittent availabiltiy issues their CRL and Federal OCSP Service between 11 AM ET and 4:45 PM ET.
+  change_description: On Wendnesday, Novebmer 23, 2022, Entrust reported intermittent availability issues their CRL and Federal OCSP Service between 11 AM ET and 4:45 PM ET.
   contact: support at entrust dot com
   cdp_uri: Multiple, http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl, http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA1.crl
   ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com

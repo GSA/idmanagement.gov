@@ -92,7 +92,7 @@ Other ICAM working groups may be charted under other committess or subcommittees
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
-| [**Derived-PIV Working Group**](https://community.max.gov/display/Egov/Derived-PIV+Working+Group){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} | Accelerate the implementation of mobile identity management across the federal government. | Document and share PKI and non-PKI uses cases to increase the available technical and information resources. Provide a feedback look to inform policy and standard. | Federal employees and designated contractors | Monthy |
+| [**Derived-PIV Working Group**](https://community.max.gov/display/Egov/Derived-PIV+Working+Group){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} | Accelerate the implementation of mobile identity management across the federal government. | Document and share PKI and non-PKI uses cases to increase the available technical and information resources. Provide a feedback look to inform policy and standard. | Federal employees and designated contractors | Monthly |
 
 ### ICAM Community Listserv
 
