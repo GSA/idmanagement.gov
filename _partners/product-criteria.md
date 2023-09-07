@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FICAM Product Criteria List
-permalink: /ficampcl/
+permalink: /product-criteria/
 collection: partners
 sticky_sidenav: true
 sidenav: buy
