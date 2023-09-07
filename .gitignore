@@ -7,3 +7,4 @@ node_modules
 *.code-workspace
 .idea
 .ds_store
+dockerfile
