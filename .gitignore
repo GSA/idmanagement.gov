@@ -8,3 +8,4 @@ node_modules
 .idea
 .ds_store
 dockerfile
+docker-compose.yml
