@@ -57,12 +57,6 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
   </thead>
   <tbody>
       {% for guide in site.data.fips201pacs1301 %}
-          <!-- <tr class="pacs-table-row" data-category="{{ guide.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infraapl">{{ guide.infraapl }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.validation}}</a></td>
-             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-valapl">{{ guide.valapl }}</td>
-          </tr> -->
           <tr>
             <th scope="row" role="rowheader"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></th>
             <td  data-sort-value="{{ guide.infraapl }}">{{ guide.infraapl }}</td>
@@ -84,10 +78,6 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
     Approved 13.02 Topology PACS Products List
   </caption>
   <thead>
-    <!-- <tr>
-      <th id="pacs-table-heading-infra" scope="col">PACS Infrastructure and Validation System</th>
-      <th id="pacs-table-heading-infraapl" scope="col"> APL # </th>
-    </tr> -->
     <tr>
       <th data-sortable scope="col" role="columnheader">PACS Infrastructure and Validation System</th>
       <th data-sortable scope="col" role="columnheader" aria-sort="ascending"> APL # </th>
@@ -95,10 +85,6 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
   </thead>
   <tbody>
       {% for guide in site.data.fips201pacs1302 %}
-          <!-- <tr class="pacs-table-row" data-category="{{ guide.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infraapl">{{ guide.infraapl }}</td>
-          </tr> -->
           <tr>
             <th scope="row" role="rowheader"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></th>
             <td data-sort-value="{{ guide.infraapl }}">{{ guide.infraapl }}</td>
@@ -151,18 +137,6 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 </table>
 <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 
-<!-- | Position | Solution                                                     | APL Numbers       | New/Update   | Testing Status       |
-|----------|--------------------------------------------------------------|-------------------|--------------|----------------------|
-| 1        | ReconaSense + HID Global Validation System | 10131 & 10132 | Update| In queue |
-| 2        | Gallagher PIV Command Center with HID Global Validation System | 10019 & 10020 | Update | In queue |
-| 3        | Datawatch + HID pivCLASS  | 10117 & 10118             | Update        | In queue|
-| 4        | Software House Câ—CURE-9000 V2.9 PACS 13.02| New    | New        | In queue|
-| 5        | AMAG Symmetry Professional + HID Global Validation System    | 10047 & 10048     | Update        | In queue |
-| 6        | AMAG Symmetry Professional + Identity One Validation System    | 10143 & 10144     | Update        | In queue |
-| 7        | Genetec Security Center â€“ Synergis with HID Global Validation System | 10061 & 10062 | Update    | In queue |
-| 8        | Identiv Velocity Security Management System 13.02 | 10103 | Update    | In queue |
-| 9        | LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition | 10126 & 10127 | New Reader add | In queue | -->
-
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
 
@@ -185,11 +159,6 @@ Please note:
     Approved PIV Cards List
   </caption>
   <thead>
-    <!-- <tr>
-      <th id="apl-table-heading-number" scope="col">APL Number</th>
-      <th id="apl-table-heading-name" scope="col">Product Name</th>
-      <th id="apl-table-heading-date" scope="col">Valid Date</th>
-    </tr>     -->
     <tr>
       <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL Number</th>
       <th data-sortable scope="col" role="columnheader">Product Name</th>
@@ -198,11 +167,6 @@ Please note:
   </thead>
   <tbody>
     {% for apl in site.data.fips201piv %}
-      <!-- <tr class="apl-table-row" data-category="{{ apl.category }}">
-          <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
-         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
-        <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
-       </tr> -->
       <tr>
         <th scope="row" role="rowheader">{{ apl.aplnumber }}</th>
         <td data-sort-value="{{ apl.productname }}"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
