@@ -1,0 +1,75 @@
+# PACS Solutions Awaiting Approval
+# File: _data/fips201pacs-await-list.yml
+# Page Use: https://www.idmanagement.gov/fips201/
+# Updated on: Clayton Barnette and Nelson Ross 
+# Updated by: 
+#
+# Legend:
+#  position: sequencial numbers from 1 to n#
+#  solution: company name or name of system
+#  state: current state: Update|New| or whatever status provided
+#  teststatus: current testing status
+# 
+# Note: Normally updated along with APL Letters provided by Sutapa.   
+
+# Template for new data:
+#
+# - position: [number]
+#   solution: [string]
+#   aplnumbers: [numbers and chars]
+#   state: [string]
+#   teststatus: [string] 
+
+- position: 1
+  solution: ReconaSense + HID Global Validation System
+  aplnumbers: 10131 & 10132
+  state: Update
+  teststatus: In queue
+
+- position: 2
+  solution: Gallagher PIV Command Center with HID Global Validation System
+  aplnumbers: 10019 & 10020
+  state: Update
+  teststatus: In queue
+
+- position: 3
+  solution: Datawatch + HID pivCLASS
+  aplnumbers: 10117 & 10118
+  state: Update
+  teststatus: In queue
+
+- position: 4
+  solution: Software House C●CURE-9000 V2.9 PACS 13.02
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
+- position: 5
+  solution: AMAG Symmetry Professional + HID Global Validation System
+  aplnumbers: 10047 & 10048
+  state: Update
+  teststatus: In queue
+
+- position: 6
+  solution: AMAG Symmetry Professional + Identity One Validation System
+  aplnumbers: 10143 & 10144
+  state: Update
+  teststatus: In queue
+
+- position: 7
+  solution: "Genetec Security Center – Synergis with HID Global Validation System"
+  aplnumbers: 10061 & 10062
+  state: Update
+  teststatus: In queue
+
+- position: 8
+  solution: Identiv Velocity Security Management System 13.02
+  aplnumbers: 10103
+  state: Update
+  teststatus: In queue
+
+- position: 9
+  solution: LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition
+  aplnumbers: 10126 & 10127
+  state: "New Reader add"
+  teststatus: In queue

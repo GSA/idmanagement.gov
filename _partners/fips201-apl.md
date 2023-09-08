@@ -124,7 +124,34 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 
 ## PACS Solutions Awaiting Approval
 
-| Position | Solution                                                     | APL Numbers       | New/Update   | Testing Status       |
+<table class="usa-table">
+  <caption>
+    PACS Solutions Awaiting Approval List
+  </caption>
+  <thead>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">Position</th>
+      <th data-sortable scope="col" role="columnheader">Solution</th>
+      <th data-sortable scope="col" role="columnheader">APL Numbers</th>
+      <th data-sortable scope="col" role="columnheader">New/Update</th>
+      <th data-sortable scope="col" role="columnheader">Testing Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for psaal in site.data.fips201pacs-await-list %}
+    <tr>
+      <th scope="row" role="rowheader">{{ psaal.position }}</th>
+      <td data-sort-value="{{ psaal.solution }}">{{ psaal.solution }}</td>
+      <td data-sort-value="{{ psaal.aplnumbers }}">{{ psaal.aplnumbers }}</td>
+      <td data-sort-value="{{ psaal.state }}">{{ psaal.state }}</td>
+      <td data-sort-value="{{ psaal.teststatus }}">{{ psaal.teststatus }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
+
+<!-- | Position | Solution                                                     | APL Numbers       | New/Update   | Testing Status       |
 |----------|--------------------------------------------------------------|-------------------|--------------|----------------------|
 | 1        | ReconaSense + HID Global Validation System | 10131 & 10132 | Update| In queue |
 | 2        | Gallagher PIV Command Center with HID Global Validation System | 10019 & 10020 | Update | In queue |
@@ -134,7 +161,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 | 6        | AMAG Symmetry Professional + Identity One Validation System    | 10143 & 10144     | Update        | In queue |
 | 7        | Genetec Security Center â€“ Synergis with HID Global Validation System | 10061 & 10062 | Update    | In queue |
 | 8        | Identiv Velocity Security Management System 13.02 | 10103 | Update    | In queue |
-| 9        | LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition | 10126 & 10127 | New Reader add | In queue |
+| 9        | LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition | 10126 & 10127 | New Reader add | In queue | -->
 
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
