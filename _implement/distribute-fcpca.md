@@ -7,8 +7,8 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
-version: 1.0
-pubdate: July 2023
+version: 1.1
+pubdate: August 31, 2023
 
 subnav:
   - text: 1. Obtain and verify FCPCA
@@ -27,9 +27,10 @@ subnav:
 
 <div class="usa-accordion" aria-multiselectable="false">
     <h4 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a1">Date: August 31, 2023 - Version: 1.1</button>
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
+        Date: {{page.pubdate}} - Version: {{page.version}}</button>
     </h4>
-    <div id="m-a1" class="usa-accordion__content usa-prose">
+    <div id="v-a1" class="usa-accordion__content usa-prose">
       
 <table class="usa-table">
   <caption>
@@ -83,7 +84,7 @@ The first step in this process is to obtain a copy of the FCPCAG2 root certifica
 
 To download a copy of the FCPCAG2 root certificate, use one of these recommended options:
 
-- Download the certificate from <http://repo.fpki.gov/fcpca/fcpcag2.crt>
+- Download the certificate from [http://repo.fpki.gov/fcpca/fcpcag2.crt](http://repo.fpki.gov/fcpca/fcpcag2.crt){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - Email <fpki-help@gsa.gov> to request an out-of-band copy for download.
 
 {% include alert-warning.html content="_You should never install a root certificate before you verify it._ The procedures below describe how to verify the authenticity of your copy of the FCPCA root certificate. Your certificate details and hash must match the expected values in the following table." %}
@@ -451,7 +452,7 @@ You can use the Safari web browser to install the FCPCA root certificate on **iO
 {% include alert-info.html content="These steps describe how to install the FCPCA root certificate as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
 
 1. Launch **Safari**.
-1. Navigate to the FCPCA root CA certificate: <http://repo.fpki.gov/fcpca/fcpcag2.crt>.
+1. Navigate to the FCPCA root CA certificate: [http://repo.fpki.gov/fcpca/fcpcag2.crt](http://repo.fpki.gov/fcpca/fcpcag2.crt){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 1. System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*
 1. Click **Allow**. The FCPCA root certificate configuration profile appears.
 1. Click **More Details**, and then select the FCPCA certificate entry.
@@ -828,7 +829,7 @@ The steps to distribute an intermediate CA certificate are the same as the steps
 
 ### Certificates Issued By the Federal Common Policy CA
 
-The following certificates are published in the Federal Common Policy CA certificate's Subject Information Access extension bundle located at <http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c>.
+The following certificates are published in the Federal Common Policy CA certificate's Subject Information Access extension bundle located at [http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c](http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
 - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
@@ -1092,7 +1093,7 @@ As a BYOD program device user, you'll need to distribute the FCPCAG2 root certif
 
 ## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA?
 
-1. Download a copy of the FCPCA certificate from <http://repo.fpki.gov/fcpca/fcpcag2.crt>
+1. Download a copy of the FCPCA certificate from [http://repo.fpki.gov/fcpca/fcpcag2.crt](http://repo.fpki.gov/fcpca/fcpcag2.crt){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 1. Download the [bundle of FPKI intermediate CA certificates for unmanaged devices]({{site.baseurl}}/implement/certs/fpki-unmanaged-bundle.p7b) (fpki-unmanaged-bundle.p7b)
 1. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
