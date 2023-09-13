@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: 9/13/2023
+  change_type: CA Certificate Issuance
+  system: IdenTrust Global Common Root CA 1
+  change_description: Issued new CA certificate to Advanced Health Systems Inc, valid from 9/6/2023, valid through 9/2/2033
+  contact: product at IdenTrust dot com
+  ca_certificate_hash: 6e5b4ce0f68333d86456c85faaeeee6cdebc3124
+  ca_certificate_issuer: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
+  ca_certificate_subject: CN = Advanced Health Systems Inc Direct CA 2, OU = IdenTrust Global Common, O = IdenTrust, S = Mississippi, C = US
+  cdp_uri: http://validation.identrust.com/crl/igcrootca1.crl
+  aia_uri: http://validation.identrust.com/roots/igcrootca1.p7c
+  sia_uri: N/A
+  ocsp_uri: http://igc.ocsp.identrust.com
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
 - notice_date: August 29, 2023
   change_type: CA Certificate Issuance
   system: TSCP SHA256 Bridge CA
