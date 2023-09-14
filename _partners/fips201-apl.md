@@ -43,48 +43,56 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 
 ## Approved 13.01 Topology PACS Products
 
-<table class="usa-table--borderless">
-  <thead class="usa-sr">
+<table class="usa-table usa-table--borderless">
+  <caption>
+    Approved 13.01 Topology PACS Products List
+  </caption>
+  <thead>
     <tr>
-      <th id="pacs-table-heading-infra" scope="col">PACS Infrastructure</th>
-      <th id="pacs-table-heading-fipsstatus" scope="col">PACS APL #</th>
-      <th id="pacs-table-heading-validation" scope="col">Validation System</th>
-      <th id="pacs-table-heading-cardreader" scope="col">Validation APL #</th>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">PACS Infrastructure</th>
+      <th data-sortable scope="col" role="columnheader">PACS APL #</th>
+      <th data-sortable scope="col" role="columnheader">Validation System</th>
+      <th data-sortable scope="col" role="columnheader">Validation APL #</th>
     </tr>
   </thead>
   <tbody>
       {% for guide in site.data.fips201pacs1301 %}
-          <tr class="pacs-table-row" data-category="{{ guide.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infraapl">{{ guide.infraapl }}</td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-validation"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.validation}}</a></td>
-             <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-valapl">{{ guide.valapl }}</td>
+          <tr>
+            <th scope="row" role="rowheader"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></th>
+            <td  data-sort-value="{{ guide.infraapl }}">{{ guide.infraapl }}</td>
+            <th scope="row" role="rowheader"><a href="{{ guide.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.validation}}</a></th>
+             <td data-sort-value="{{ guide.valapl }}">{{ guide.valapl }}</td>
           </tr>
       {% endfor %}
   </tbody>
 </table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 
 **NOTE:** APL listings 10027 and 10028 are consolidated into APL listings 10112 and 10113, respectively.
 
 
 ## Approved 13.02 Topology PACS Products
 
-<table class="usa-table--borderless">
-  <thead class="usa-sr">
+<table class="usa-table usa-table--borderless">
+  <caption>
+    Approved 13.02 Topology PACS Products List
+  </caption>
+  <thead>
     <tr>
-      <th id="pacs-table-heading-infra" scope="col">PACS Infrastructure and Validation System</th>
-      <th id="pacs-table-heading-infraapl" scope="col"> APL # </th>
+      <th data-sortable scope="col" role="columnheader">PACS Infrastructure and Validation System</th>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending"> APL # </th>
     </tr>
   </thead>
   <tbody>
       {% for guide in site.data.fips201pacs1302 %}
-          <tr class="pacs-table-row" data-category="{{ guide.category }}">
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infrastructure"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></td>
-            <td headers="pacs-table-heading-{{ category | slugify }} pacs-table-heading-infraapl">{{ guide.infraapl }}</td>
+          <tr>
+            <th scope="row" role="rowheader"><a href="{{ guide.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ guide.infrastructure }}</a></th>
+            <td data-sort-value="{{ guide.infraapl }}">{{ guide.infraapl }}</td>
           </tr>
       {% endfor %}
   </tbody>
 </table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 
 ## PACS Readers
 
@@ -102,17 +110,32 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 
 ## PACS Solutions Awaiting Approval
 
-| Position | Solution                                                     | APL Numbers       | New/Update   | Testing Status       |
-|----------|--------------------------------------------------------------|-------------------|--------------|----------------------|
-| 1        | ReconaSense + HID Global Validation System | 10131 & 10132 | Update| In queue |
-| 2        | Gallagher PIV Command Center with HID Global Validation System | 10019 & 10020 | Update | In queue |
-| 3        | Datawatch + HID pivCLASS  | 10117 & 10118             | Update        | In queue|
-| 4        | Software House C●CURE-9000 V2.9 PACS 13.02| New    | New        | In queue|
-| 5        | AMAG Symmetry Professional + HID Global Validation System    | 10047 & 10048     | Update        | In queue |
-| 6        | AMAG Symmetry Professional + Identity One Validation System    | 10143 & 10144     | Update        | In queue |
-| 7        | Genetec Security Center – Synergis with HID Global Validation System | 10061 & 10062 | Update    | In queue |
-| 8        | Identiv Velocity Security Management System 13.02 | 10103 | Update    | In queue |
-| 9        | LenelS2 OnGuard with Embedded Authentication (TI Entry Point) + uTrust Reader addition | 10126 & 10127 | New Reader add | In queue |
+<table class="usa-table">
+  <caption>
+    PACS Solutions Awaiting Approval List
+  </caption>
+  <thead>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">Position</th>
+      <th data-sortable scope="col" role="columnheader">Solution</th>
+      <th data-sortable scope="col" role="columnheader">APL Numbers</th>
+      <th data-sortable scope="col" role="columnheader">New/Update</th>
+      <th data-sortable scope="col" role="columnheader">Testing Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for psaal in site.data.fips201pacs-await-list %}
+    <tr>
+      <th scope="row" role="rowheader">{{ psaal.position }}</th>
+      <td data-sort-value="{{ psaal.solution }}">{{ psaal.solution }}</td>
+      <td data-sort-value="{{ psaal.aplnumbers }}">{{ psaal.aplnumbers }}</td>
+      <td data-sort-value="{{ psaal.state }}">{{ psaal.state }}</td>
+      <td data-sort-value="{{ psaal.teststatus }}">{{ psaal.teststatus }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
@@ -131,24 +154,28 @@ Please note:
 
 ## Approved PIV Cards
 
-<table class="usa-table-borderless">
-  <thead class="usa-sr">
+<table class="usa-table">
+  <caption>
+    Approved PIV Cards List
+  </caption>
+  <thead>
     <tr>
-      <th id="apl-table-heading-number" scope="col">APL Number</th>
-      <th id="apl-table-heading-name" scope="col">Product Name</th>
-      <th id="apl-table-heading-date" scope="col">Valid Date</th>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL Number</th>
+      <th data-sortable scope="col" role="columnheader">Product Name</th>
+      <th data-sortable scope="col" role="columnheader">Valid Date</th>
     </tr>    
   </thead>
   <tbody>
     {% for apl in site.data.fips201piv %}
-      <tr class="apl-table-row" data-category="{{ apl.category }}">
-          <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-description">{{ apl.aplnumber }}</td>
-         <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-name"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
-        <td headers="apl-table-heading-{{ category | slugify }} apl-table-heading-date">{{ apl.validdate }}</td>
-       </tr>
+      <tr>
+        <th scope="row" role="rowheader">{{ apl.aplnumber }}</th>
+        <td data-sort-value="{{ apl.productname }}"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
+        <td data-sort-value="{{ apl.validdate }}">{{ apl.validdate }}</td>
+      </tr>
     {% endfor %} <!--apl-->
   </tbody>
 </table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 
 ## Legacy PIV Cards
 
@@ -184,35 +211,37 @@ Note that GSA will provide the Office of the Federal Chief Information Officer (
 
 The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were at one time on the Approved Products List but are no longer approved for government use. Due to security concerns, products on the RPL are not recommended for government acquisition. Products will be removed from the RPL after 3 years.
 
-<table class="usa-table--borderless rpl-table">
-  <thead class="usa-sr">
+<br>
+{% for category in categories %}
+<table class="usa-table">
+  <caption>{{ category }} Category List</caption>
+  <thead>
     <tr>
-      <th id="rpl-table-heading-numberApl" scope="col">APL #</th>
-      <th id="rpl-table-heading-supplier" scope="col">Supplier</th>
-      <th id="rpl-table-heading-nameProduct" scope="col">Product Name(s)</th>
-      <th id="rpl-table-heading-numberProduct" scope="col">Product Number</th>
-      <th id="rpl-table-heading-dateRemoval" scope="col">Removal Date</th>
-      <th id="rpl-table-heading-reason" scope="col">Reason For Removal</th>
+        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
+    </tr>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
+      <th data-sortable scope="col" role="columnheader" >Supplier</th>
+      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
+      <th data-sortable scope="col" role="columnheader" >Product Number</th>
+      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
+      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
     </tr>
   </thead>
   <tbody>
-    {% for category in categories %}
-      <tr class="rpl-table-category-heading" data-category="{{ category }}">
-        <th colspan="6" class="rpl-table-heading" id="rpl-table-heading-{{ category | slugify }}"><b>{{ category }} Category</b></th>
-      </tr>
-      {% for rpl in site.data.fips201rpl %}
+   {% for rpl in site.data.fips201rpl %}
         {% if rpl.category == category %}
-          <tr class="rpl-table-row" data-category="{{ rpl.category }}">
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberApl">{{ rpl.numberApl }}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-supplier">{{ rpl.supplier }}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-nameProduct">{{ rpl.nameProduct}}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-numberProduct">{{ rpl.numberProduct }}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-dateRemoval">{{ rpl.dateRemoval}}</td>
-            <td headers="rpl-table-heading-{{ category | slugify }} rpl-table-heading-reason">{{ rpl.reason}}</td>
+          <tr>
+            <th scope="row">{{ rpl.numberApl }}</th>
+            <td data-sort-value="{{ rpl.supplier }}">{{ rpl.supplier }}</td>
+            <td data-sort-value="{{ rpl.nameProduct}}">{{ rpl.nameProduct}}</td>
+            <td data-sort-value="{{ rpl.numberProduct }}">{{ rpl.numberProduct }}</td>
+            <td data-sort-value="{{ rpl.dateRemoval}}">{{ rpl.dateRemoval}}</td>
+            <td data-sort-value="{{ rpl.reason}}">{{ rpl.reason}}</td>
           </tr>
         {% endif %}
-      {% endfor %} <!--rpl-->
-    {% endfor %}<!--category-->
+    {% endfor %} <!--rpl-->
   </tbody>
 </table>
-
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
+{% endfor %}<!--category-->
