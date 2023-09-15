@@ -26,7 +26,7 @@ The following guide walks you through configuring Outlook to leverage the digita
 
 ## Configure Outlook to Send Secure Email
 
-{% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryptoin (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME cpabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
+{% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryption (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME cpabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
 
 The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find addtional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references).
 
