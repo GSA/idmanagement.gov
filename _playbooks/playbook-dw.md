@@ -68,7 +68,7 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
           1.2
         </th>
         <td>12/29/2022</td>
-        <td>Fixed Acknowlegment(US) word usage</td>
+        <td>Fixed Acknowledgment(US) word usage</td>
       </tr>
       <tr>
         <th scope='row'>
@@ -90,7 +90,7 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 
 <!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
-| 1.2 | 12/29/2022 | Fixed Acknowlegment(US) word usage |
+| 1.2 | 12/29/2022 | Fixed Acknowledgment(US) word usage |
 | 1.1 | 11/18/2021 | Renumbered tables |
 | 1.0 | 01/05/2021 | Initial Draft | -->
 
