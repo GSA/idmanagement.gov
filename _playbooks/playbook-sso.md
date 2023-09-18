@@ -91,7 +91,7 @@ The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federa
 1. Supporting IT modernization and cloud adoption projects - Provide a centralized access point to onboard on-premise and cloud applications.
 2. Supporting remote workforce - Efficiently adapt to any location, various authenticators, and any device workforce.
 3. Improving user experience - Streamline the user experience across all agency applications configured with the service.
-4. Reducing identity-related help desk tickets - Allow automated provisioning and deprovisioning or self-service to reduce identity-related help desk tickets.
+4. Reducing identity-related help desk tickets - Allow automated provisioning and de-provisioning or self-service to reduce identity-related help desk tickets.
 5. Improving security posture - Quickly resolve unauthorized access actions by centralizing authentication and monitoring activity.
 
 Agencies can use this playbook to centralize application access for agency employees and contractors or federate access with other federal executive agencies. Updates to this playbook may include federating outside of the federal executive branch, but it is not included in this current version.
@@ -179,7 +179,7 @@ With any project, a business case is used to capture the strategic, business, an
             <li>Facilitate use of modular and plug-and-play authentication options.</li>
             <li>Provide real-time data on application use.</li>
             <li>Provide a central user profile across all applications.</li>
-            <li>Support centralized provisioning and deprovisioning.</li>
+            <li>Support centralized provisioning and de-provisioning.</li>
         </ul>
     </div>
 
@@ -289,7 +289,7 @@ The Enterprise SSO service serves as your primary authentication channel, but is
 Conduct an architecture review to determine what existing components you should integrate, such as:
 
 - Authoritative source databases for user accounts (directories or databases),
-- User provisioning and deprovisioning processes, or
+- User provisioning and de-provisioning processes, or
 - Integration with other security tools such as a SIEM tool.
 
 In addition to system integration, the architecture review should include:
@@ -322,7 +322,7 @@ As discussed in step 2, application variability may require different models to 
 
 The Enterprise SSO service operators and application owners should collaborate in the following areas:
 - Establishing an assertion protocol between the service and the application;
-- Enabling application registration, provisioning, and deprovisioning (manual or automated);
+- Enabling application registration, provisioning, and de-provisioning (manual or automated);
 - Resolving user identities (directory synchronization exceptions) and other attributes,
 - Identifying roles and responsibilities for operations and maintenance of the integration; and
 - Updating end user support and help desk processes, where applicable.
@@ -385,7 +385,7 @@ Once an application is configured, it should go through a test cycle to ensure i
 Once an application is configured and tested, it can be released to the user community. This should come with an agency communication announcing the use of an SSO service, if not already in use. This may also include training or other communications to help user adoption and experience.
 
 ## Step 5. Federate Application Access
-In FICAM, federation is the sharing and acceptance of digital identities, attributes, and credentials managed by other agencies. Prior to this step, it’s very possible many applications are individually configured to directly manage or accept a wide variety of credentials or authenticators, known as direct enablement. This model allows applications to support disparate user populations, but is both time consuming and resource intensive to maintain. Direct enablement and local credential management increase the risks associated with account deprovisioning. For instance, a user may have been separated from their role or organization, but accounts and credentials (e.g., local username/password) in individual applications may be unknowingly left active.
+In FICAM, federation is the sharing and acceptance of digital identities, attributes, and credentials managed by other agencies. Prior to this step, it’s very possible many applications are individually configured to directly manage or accept a wide variety of credentials or authenticators, known as direct enablement. This model allows applications to support disparate user populations, but is both time consuming and resource intensive to maintain. Direct enablement and local credential management increase the risks associated with account de-provisioning. For instance, a user may have been separated from their role or organization, but accounts and credentials (e.g., local username/password) in individual applications may be unknowingly left active.
 
 Enterprise SSO limits the complexity and risks of direct credential enablement. With SSO-based identity federation, authentication transactions are standardized regardless of the credentials or authenticators, and user management activities can be consolidated under the Enterprise SSO.
 
@@ -441,7 +441,7 @@ Table 5 provides a comparison of some benefits and drawbacks of federation and d
                     <td>
                         <ul>
                             <li>An SSO’s Identification and Authentication security controls can be inherited by integrated applications.</li>
-                            <li>User deprovisioning can be centralized and automated.</li>
+                            <li>User de-provisioning can be centralized and automated.</li>
                             <li>Authentication auditing and logging events can be centralized and more efficiently integrated with security tools.</li>
                         </ul>
                     </td>
