@@ -26,7 +26,7 @@ Other current and planned products and services can be found on the [GSA ICAM So
 
 The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
 
-The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product cagtegories:
+The **Approved Products List (APL)** contains the official list of these tested products. There are currently two approved product categories:
 
 1. [PIV Cards]({{site.baseurl}}/fips201/#approved-piv-cards)
 2. [Physical Access Control Systems]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems)
