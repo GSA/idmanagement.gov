@@ -663,7 +663,7 @@ Download and install the app:
 
     ![Figure 34: Microsoft Authenticator for Android Add Account]({{site.baseurl}}/assets/playbooks/whfb/34-WHfB-Android-MFA-addacct.png)
 
-5. Select **Work or school account** (seeFigure 35).
+5. Select **Work or school account** (see Figure 35).
 
     **Figure 35: Microsoft Authenticator for Android Account Type Selection**
 
