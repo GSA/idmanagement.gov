@@ -26,7 +26,9 @@ The following guide walks you through configuring Outlook to leverage the digita
 
 ## Configure Outlook to Send Secure Email
 
-The following steps pertain to Microsoft Outlook 2016. 
+{% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryption (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME cpabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
+
+The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find addtional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references).
 
 1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings...** and select **Email Security**.
@@ -48,7 +50,7 @@ The following steps pertain to Microsoft Outlook 2016.
 
 ### Publish Your Certificates to the Global Address List
 
-The Global Address List (GAL) is a shared, enterprise-wide contact directory in Microsoft Outlook.  Publishing your certificates to the GAL will add your encryption certificate to an enterprise address book, making it easier for other agency users to send you an encrypted email.
+The Global Address List (GAL) is a shared, enterprise-wide contact list in Microsoft Active Directory.  Publishing your certificates to the GAL will add your encryption certificate and assoicated public key to an enterprise address book, making it easier for other internal agency users to send you an encrypted email.
 
 1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings** and select **Email Security**.
@@ -115,3 +117,4 @@ PIV users may receive and store encrypted emails throughout their tenure in an o
 - Enabling S/MIME on [Thurderbird email client](https://docs.nitrokey.com/storage/mac/smime-thunderbird.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- S/MIME with [Exchange Online](https://learn.microsoft.com/en-us/exchange/security-and-compliance/smime-exo/configure-smime-exo){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
