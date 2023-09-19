@@ -211,7 +211,7 @@ If you do have a local enterprise CA, [here are some tips](#step-7---local-certi
 
 # Step 3 - Trust Stores
 
-Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide](#step-3---distribute-to-operating-systems).
+Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide]({{site.baseurl}}/implement/trust-fcpca/#step-2---distribute-to-operating-systems).
 
 # Step 4 - Account Linking
 
