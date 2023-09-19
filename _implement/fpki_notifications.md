@@ -681,7 +681,7 @@ Subject:  FPKI System Notification - System Name
 - ca_certificate_subject: the full DN of the subject
 - ca_certificate_hash: the SHA-1 thumbprint of the CA certificate
 - ca_cdp_uri: Certificate Revocation List link
-- ca_aia_uri: the authority information access certifciate bundle for the CA certificate
+- ca_aia_uri: the authority information access certificate bundle for the CA certificate
 - ca_sia_uri: the subject information access certificate bundle for the CA certificate
 - ca_ocsp_uri: the OCSP address generally conatined in the AIA for the CA certificate
 - ee_cdp_uri: the CRL DP link for end entity certificates signed by the CA certificate
