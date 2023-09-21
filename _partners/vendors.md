@@ -73,7 +73,7 @@ After testing and approval, apply to have your product or service listed on the 
 
 The GSA MAS Program also referred to as the "Schedule," is the premier contract vehicle for the federal government. The MAS Program is a long-term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for a business, but it requires effort and commitment to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/selling-through-schedule/prospective-schedule-contractors-is-the-schedule-a-good-fit-for-me){:target= "_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-- [Sell through GSA MAS](https://www.gsa.gov/portal/category/100519){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}  – Agencies use the MAS to fulfill their technology products and services needs.
+- [Sell through GSA MAS](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/multiple-award-schedule-it/sell-through-mas-information-technology){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}  – Agencies use the MAS to fulfill their technology products and services needs.
 
 # Professional Services
 
