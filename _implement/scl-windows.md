@@ -70,16 +70,16 @@ Check the following items **before** reviewing these network guides and lessons 
 
 There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:
 
-1. [Network Ports and Protocols](#step-1----network-ports-and-protocols)
-2. [Domain Controllers](#step-2---domain-controllers/)
-3. [Trust Stores](#step-3----trust-stores/)
-4. [Account Linking: Associating PIV credentials with User Accounts](#step-4---account-linking/)
-5. [Group Policies and Enforcement](#step-5---group-policies/)
+1. [Network Ports and Protocols](#step-1---network-ports-and-protocols) 
+2. [Domain Controllers](#step-2---domain-controllers)
+3. [Trust Stores](#step-3---trust-stores)
+4. [Account Linking: Associating PIV credentials with User Accounts](#step-4---account-linking)
+5. [Group Policies and Enforcement](#step-5---group-policies-and-enforcement) 
 
 There are five additional guides:
 
-6. [Network Tuning](#step-6---network-tuning/)
-7. [Local Certification Authority](#step-7---local-certificate-authority)
+6. [Network Tuning](#step-6---network-tuning)
+7. [Local Certification Authority](#step-7---local-certification-authority)
 8. [Authentication Assurance](#step-8---authentication-assurance)
 
 We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
