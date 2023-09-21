@@ -213,7 +213,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/pacs/#glossary/#accesscontrol){:target="_blank"}{:rel="noopener noreferrer"} 
     - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
     - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
     - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
@@ -742,7 +742,7 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 
 {% include alert-info.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
 
-1. **Access Control** - The process of granting or denying specific requests to: (1) obtain and use information and related information processing services; and (2) enter physical facilities, such as federal buildings, military establishments, and border crossing entrances.
+1. <a name="accesscontrol">**Access Control**</a> - The process of granting or denying specific requests to: (1) obtain and use information and related information processing services; and (2) enter physical facilities, such as federal buildings, military establishments, and border crossing entrances.
 2. **Access Point** - An access point can be a door, turnstile, or other physical barrier where granting access can be electronically controlled.
 3. **Authentication** - The process of establishing confidence in the authenticity and validity of a person’s identity.
 4. **Authentication Factors** - Authentication systems are often categorized by the number of factors that they incorporate. The three factors often considered as the cornerstone of authentication are something you know (for example, a password), something you have (for example, an ID badge or a cryptographic key), and something you are (for example, a thumbprint or other biometric data). Authentication systems that incorporate all three factors are stronger than systems that only incorporate one or two of the factors.	
