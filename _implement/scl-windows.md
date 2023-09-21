@@ -74,7 +74,7 @@ There are five configuration categories to review with your colleagues.  All fiv
 2. [Domain Controllers](#step-2---domain-controllers)
 3. [Trust Stores](#step-3---trust-stores)
 4. [Account Linking: Associating PIV credentials with User Accounts](#step-4---account-linking)
-5. [Group Policies and Enforcement](#step-5---group-policies)
+5. [Group Policies and Enforcement](#step-5---group-policies-and-enforcement) 
 
 There are five additional guides:
 
