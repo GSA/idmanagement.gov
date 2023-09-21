@@ -213,13 +213,13 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/glossary/#pki-auth){:target="_blank"}{:rel="noopener noreferrer"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/glossary/#pki-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/glossary/#sym-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/glossary/#bio){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/university/glossary/#occ-auth){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/university/pacs/#glossary){:target="_blank"}{:rel="noopener noreferrer"} 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
 
