@@ -906,7 +906,7 @@
 - notice_date: November 23, 2022
   change_type: CRL and OCSP Outage
   system: Entrust Federal CRL and OCSP Service
-  change_description: On Wendnesday, Novebmer 23, 2022, Entrust reported intermittent availability issues their CRL and Federal OCSP Service between 11 AM ET and 4:45 PM ET.
+  change_description: On Wednesday, Novebmer 23, 2022, Entrust reported intermittent availability issues their CRL and Federal OCSP Service between 11 AM ET and 4:45 PM ET.
   contact: support at entrust dot com
   cdp_uri: Multiple, http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl, http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA1.crl
   ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com

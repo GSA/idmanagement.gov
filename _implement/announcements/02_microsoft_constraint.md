@@ -71,7 +71,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 Testing by government teams did not allow locally administered certificate stores to override the Microsoft CTL distributed settings.  The decision was made to remove COMMON entirely from Microsoft's trust store.  No further testing on overriding the CTL settings will be conducted. 
 
 <!-- Link below not found on both sites -->
-To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing]({{ site.baseurl }}/ctltestprocedures/){:target="_blank"}{:rel="noopener noreferrer"}.
+To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing](https://github.com/GSA/fpki-guides/projects/2){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Frequently Asked Questions
 

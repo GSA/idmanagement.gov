@@ -174,7 +174,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
 
-{% include alert-info.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class\"usa-link usa-link--externa\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
+{% include alert-info.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--externa\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_1.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
 
 ## Categorize Security Areas
 
@@ -213,13 +213,13 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-2 specifies these authentication mechanisms for PIV credentials:
-    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/glossary/#pki-auth){:target="_blank"}{:rel="noopener noreferrer"} 
-    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/glossary/#pki-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/glossary/#sym-cak){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/glossary/#bio){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/university/glossary/#bio-a){:target="_blank"}{:rel="noopener noreferrer"} 
-    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/university/glossary/#occ-auth){:target="_blank"}{:rel="noopener noreferrer"} 
+    - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/pacs/#pki-auth){:rel="noopener noreferrer"} 
+    - PKI authentication using the Card Authentication Certificate [(PKI-CAK)]({{site.baseurl}}/university/pacs/#pki-cak){:rel="noopener noreferrer"} 
+    - Authentication using the Symmetric Card Authentication Key [(SYM-CAK)]({{site.baseurl}}/university/pacs/#sym-cak){:rel="noopener noreferrer"} 
+    - Unattended authentication using off-card biometric comparisons [(BIO)]({{site.baseurl}}/university/pacs/#bio){:rel="noopener noreferrer"} 
+    - Attended authentication using off-card biometric comparisons [(BIO-A)]({{site.baseurl}}/university/pacs/#bioa){:rel="noopener noreferrer"} 
+    - Either attended or unattended authentication using off-card biometric comparisons [(BIO(-A))]({{site.baseurl}}/university/pacs/#bio-a){:rel="noopener noreferrer"} 
+    - Authentication using on-card biometric comparisons [(OCC-AUTH)]({{site.baseurl}}/university/pacs/#occ-auth){:rel="noopener noreferrer"} 
 
 The table below gives the possible authentication mechanisms for the three (3) security area categories defined by NIST SP 800-116, Revision 1:
 
@@ -742,32 +742,32 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 
 {% include alert-info.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
 
-1. **Access Control** - The process of granting or denying specific requests to: (1) obtain and use information and related information processing services; and (2) enter physical facilities, such as federal buildings, military establishments, and border crossing entrances.
-2. **Access Point** - An access point can be a door, turnstile, or other physical barrier where granting access can be electronically controlled.
-3. **Authentication** - The process of establishing confidence in the authenticity and validity of a person’s identity.
-4. **Authentication Factors** - Authentication systems are often categorized by the number of factors that they incorporate. The three factors often considered as the cornerstone of authentication are something you know (for example, a password), something you have (for example, an ID badge or a cryptographic key), and something you are (for example, a thumbprint or other biometric data). Authentication systems that incorporate all three factors are stronger than systems that only incorporate one or two of the factors.	
-5. **Authorization** - Grants access to only the resources a person needs to perform a job.  A person with an authentic, high-assurance credential (PIV or CAC) will not have access to all resources.  In a large enterprise with thousands of employees and contractors needing access to hundreds of different access points, attempting to manage authorization manually is costly, time consuming, and error-prone.
-6. **Biometric** - A measurable, physical characteristic or personal behavioral trait used to recognize the identity, or verify the claimed identity, of an applicant. Facial images, fingerprints, and iris image samples are all examples of biometrics.
-7. **BIO** - A [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism that is implemented by using a fingerprint or iris images data object sent from the PIV credential to the PACS and which is matched to the credential holder’s live scan.
-8. **BIO-A** - A [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism in which the BIO authentication mechanism is performed in the presence of an attendant who supervises the use of the PIV credential and the submission of the PIN and the sample biometric by the credential holder.
-9. **BIO(-A)** - A shorthand used to represent both BIO and BIO-A authentication mechanisms.
-10. **Credential** - A collection of information about a person, attested to by an issuing authority. A credential is a data object, such as a certificate, that can be used to authenticate the credential holder. One or more data object credentials may be stored on the same physical memory device, such as a PIV card.
-11. **Credential Validation** - The process of determining if a credential is valid, which can include the following requirements:
+1. <strong id="access-control">Access Control</strong> - The process of granting or denying specific requests to: (1) obtain and use information and related information processing services; and (2) enter physical facilities, such as federal buildings, military establishments, and border crossing entrances.
+2. <strong id="access-point">Access Point</strong> - An access point can be a door, turnstile, or other physical barrier where granting access can be electronically controlled.
+3. <strong id="authentication">Authentication</strong> - The process of establishing confidence in the authenticity and validity of a person’s identity.
+4. <strong id="authentication-factors">Authentication Factors</strong> - Authentication systems are often categorized by the number of factors that they incorporate. The three factors often considered as the cornerstone of authentication are something you know (for example, a password), something you have (for example, an ID badge or a cryptographic key), and something you are (for example, a thumbprint or other biometric data). Authentication systems that incorporate all three factors are stronger than systems that only incorporate one or two of the factors.	
+5. <strong id="authorization">Authorization</strong> - Grants access to only the resources a person needs to perform a job.  A person with an authentic, high-assurance credential (PIV or CAC) will not have access to all resources.  In a large enterprise with thousands of employees and contractors needing access to hundreds of different access points, attempting to manage authorization manually is costly, time consuming, and error-prone.
+6. <strong id="biometric">Biometric</strong> - A measurable, physical characteristic or personal behavioral trait used to recognize the identity, or verify the claimed identity, of an applicant. Facial images, fingerprints, and iris image samples are all examples of biometrics.
+7. <strong id="bio">BIO</strong> - A [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism that is implemented by using a fingerprint or iris images data object sent from the PIV credential to the PACS and which is matched to the credential holder’s live scan.
+8. <strong id="bioa">BIO-A</strong> - A [FIPS 201](https://csrc.nist.gov/pubs/fips/201-3/final){:target="_blank"}{:rel="noopener noreferrer"} authentication mechanism in which the BIO authentication mechanism is performed in the presence of an attendant who supervises the use of the PIV credential and the submission of the PIN and the sample biometric by the credential holder.
+9. <strong id="bio-a">BIO(-A)</strong> - A shorthand used to represent both BIO and BIO-A authentication mechanisms.
+10. <strong id="credential">Credential</strong> - A collection of information about a person, attested to by an issuing authority. A credential is a data object, such as a certificate, that can be used to authenticate the credential holder. One or more data object credentials may be stored on the same physical memory device, such as a PIV card.
+11. <strong id="credential-validation">Credential Validation</strong> - The process of determining if a credential is valid, which can include the following requirements:
   - The credential was legitimately issued.
   - The credential's activation date has been reached.
   - The credential has not expired.
   - The credential has not been tampered with.
   - The credential has not been suspended or revoked by the issuing authority.
-12. **Certificate Revocation List** - A list of revoked public key certificates created and digitally signed by a certification authority.	
-13. **Identity Management System (IDMS)** - A system comprising one or more systems or applications that manages the identity verification, validation, and issuance process.
-14. **Identity Registration** - The process of making a person’s identity known to the PIV system, associating a unique identifier with that identity, and collecting and recording the person’s relevant attributes in the system.
-15. **Identity Verification** - The process of confirming or denying that a claimed identity is correct by comparing the credentials (something you know, something you have, something you are) of a person requesting access with those previously proven and stored in the PIV credential or system and associated with the identity being claimed.
-16. **Interoperability** - The quality of allowing any government facility or information system to verify a credential holder’s identity using the credentials on the PIV credential, regardless of issuer.
-17. **OCC-AUTH** - A two-factor authentication mechanism that uses secure messaging and an on-credential comparison of credential holder fingerprint(s).
-18. **Physical Access Control System** - An electronic system that controls the ability of people to enter a protected area, by means of authentication and authorization at access control points.
-19. **PKI-AUTH** - A PIV authentication mechanism that is implemented by an asymmetric key challenge/response protocol using the PIV
+12. <strong id="certificate-revocation-list">Certificate Revocation List</strong> - A list of revoked public key certificates created and digitally signed by a certification authority.	
+13. <strong id="identity-management-system-idms">Identity Management System (IDMS)</strong> - A system comprising one or more systems or applications that manages the identity verification, validation, and issuance process.
+14. <strong id="identity-registration">Identity Registration</strong> - The process of making a person’s identity known to the PIV system, associating a unique identifier with that identity, and collecting and recording the person’s relevant attributes in the system.
+15. <strong id="identity-verification">Identity Verification</strong> - The process of confirming or denying that a claimed identity is correct by comparing the credentials (something you know, something you have, something you are) of a person requesting access with those previously proven and stored in the PIV credential or system and associated with the identity being claimed.
+16. <strong id="interoperability">Interoperability</strong> - The quality of allowing any government facility or information system to verify a credential holder’s identity using the credentials on the PIV credential, regardless of issuer.
+17. <strong id="occ-auth">OCC-AUTH</strong> - A two-factor authentication mechanism that uses secure messaging and an on-credential comparison of credential holder fingerprint(s).
+18. <strong id="physical-access-control-system">Physical Access Control System</strong> - An electronic system that controls the ability of people to enter a protected area, by means of authentication and authorization at access control points.
+19. <strong id="pki-auth">PKI-AUTH</strong> - A PIV authentication mechanism that is implemented by an asymmetric key challenge/response protocol using the PIV
 Authentication certificate and key.
-20. **PKI-CAK** - A PIV authentication mechanism that is implemented by an asymmetric key challenge/response protocol using the Card Authentication certificate and key.
-21. **Provisioning** - The process of specifying for each identity both the credential used (for example, a PIV, CAC, or PIV-I card) and the privileges granted to access specific resources (for example, a particular facility, door, or access point), and ensuring that a complex set of rules is enforced.
-22. **SYM-CAK** - An authentication mechanism based on the optional symmetric card authentication key. As the name implies, the purpose of the SYM-CAK authentication mechanism is to authenticate the credential and thereby the credential holder.
-23. **Validation** - The process of determining that an identity credential was legitimately issued and is still valid (that is, the credential has not expired or been revoked).
+20. <strong id="pki-cak">PKI-CAK</strong> - A PIV authentication mechanism that is implemented by an asymmetric key challenge/response protocol using the Card Authentication certificate and key.
+21. <strong id="provisioning">Provisioning</strong> - The process of specifying for each identity both the credential used (for example, a PIV, CAC, or PIV-I card) and the privileges granted to access specific resources (for example, a particular facility, door, or access point), and ensuring that a complex set of rules is enforced.
+22. <strong id="sym-cak">SYM-CAK</strong> - An authentication mechanism based on the optional symmetric card authentication key. As the name implies, the purpose of the SYM-CAK authentication mechanism is to authenticate the credential and thereby the credential holder.
+23. <strong id="validation">Validation</strong> - The process of determining that an identity credential was legitimately issued and is still valid (that is, the credential has not expired or been revoked).
