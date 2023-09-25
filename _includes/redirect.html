@@ -1,45 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="refresh" content="0;url={{ include.redirect_to }}" />
-</head>
-<body>
-    <h1>Redirecting to an external site...</h1>
-      <a href="{{ include.redirect_to }}">Click here if you are not redirected.<a>
-</body>
-</html>
-<!--  
-  
-  Date: 05/30/2023
 
-  This file is used to provide a way to link directly to an external URL from a dropdown menu item.
+<script>
+  // redirects user to a new location 
+  // redirect: Location to send user
+  const pagetimeout = window.setTimeout(redirect(),0);
+  function redirect(){
+    document.location = "{{include.redirect}}";
+  }
+</script>
 
-  Issue this solves: 
-  - Direct external links in dropdown menus do not work in federalist preview
-  - Putting single quotes around the external link works on local builds but not in federalist preview
-  - Allows a work around for difficult linkage due to how Jekyll builds its URL graph
-
-  Usage: 
-  - Create an .md file along side the content related to the redirect
-  - Add 'title' and 'permalink' to the files Front Matter
-  - Include 'redirect.html' file from '_includes/' directory with a 'redirect_to=' property set to the URL you are redirecting to. 
-  - Additionally, add an HTML or Liquid comment for more info at a later time
-  - Default delay on redirect is 0 seconds
-
-    Front Matter:
-    - title: title for the page
-    - permalink: url to the page, site or resource
-    - description: descriptive note of reason for redirect
-    - comments: notes for later reference about this redirect, exp: purpose, approval, requirement
-
-    Redirect body: 
-    - Set the 'redirect_to=' to the url, site, or resource  
-    - In your include for redirect.html, set redirect_to="[website url, document or url]"
-
-    Note: If quoted url strings work in dropdown items on the productions site like it 
-           works on a locally run site, then use quoted url strings over using this redirect.
-
-  - Clayton Barnette
-
--->
+The address for this page has changed, we are redirecting you to it's new location...
+<p><a href="{{include.redirect}}">{{site.url}}{{include.redirect}}</a></p>

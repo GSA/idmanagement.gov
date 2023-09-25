@@ -11,15 +11,6 @@ site, this is the place to do it.
   {% unless site.branch == "federalist-pages" %}
     <meta name="robots" content="noindex, nofollow">
   {% endunless %}
-
-  <!-- Start of Redirect section -->
-  <!-- Please place redirects in _data/redirects.yml -->
-  {% for redirect in  site.data.redirects %}
-  {% if site.baseurl + page.url == site.baseurl + redirect.request %}
-   <script>document.location = {{site.baseurl}}{{redirect.destination}}</script>
-  {% endif %}
-  {% endfor %}
-  <!-- End of Redirect section -->
   
   <!-- Comment out for AMP testing
   <meta http-equiv="Content-Security-Policy" content="default-src 'self';
