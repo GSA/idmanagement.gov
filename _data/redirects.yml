@@ -1,0 +1,39 @@
+# ============================================
+# Yaml records for redirects: for SEO mostly.
+#  Use: for managing 301 and 404 HTTP Status Codes
+#  For more info see: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+#  Developer: Clayton Barnette <clayton.barnette@gsa.gov>
+#
+# File Name: _data/redirects.yml
+# Used in: _includes/meta.html
+# 
+# Redirects based on: 
+#  - if the requested url matches a target url is listed in this file.
+#  - if a target match is found, user is redirected to destination listed.
+#  - if no match is found, user is send to requested page. 
+#
+# Legend for redirects.yml structure
+# - name: Title of destination page for referencing purposes (not used in redirect).
+#   request: requested page url after the domain name, example: /arch/lostpage.
+#   destination: page url after the domain name, example: /arch.
+#   date: [mm/dd/yyyy] date entry added to this file (not used in redirect).
+#   by: name or initials of person making entry.
+#   memo: note for record keeping, tracking, and reasoning. (not used in redirect).
+#
+# Note: Please remember to update the by:, date:, and memo: fields (the future you will thank you.)
+# ==========================================================
+
+- request: /approved-products-list-apl/
+  destination: /fips201/
+  name: FIPS 201 Approved Product List
+  date: 09/22/2023
+  by: Clayton Barnette
+  memo: redirect for approved products list from playbooks site
+ 
+# Template for new redirect record. 
+# - name: 
+#   target: 
+#   destination: 
+#   date: 
+#   by: 
+#   memo: 

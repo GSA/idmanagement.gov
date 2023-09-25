@@ -2,79 +2,7 @@
 Use this section to highlight key elements of your site. Some sites will only have two while others may have six to
 eight.
 {% endcomment %}
-
-<!-- Start Freq Searched and RSS Feeds (removed for this sprint to seek other display options)-->
-<!-- <section class="ficam-page-container gsa-top-panel" style="padding-top: 25px;">
-	<div class="grid-container">
-		<div class="partners-container grid-row">
-			<div class="desktop:grid-col-12">
-				<ul class="usa-card-group">
-					<li class="usa-card tablet:grid-col-6">
-						<div class="usa-card__container gsa-card-shadow">
-							<div class="usa-card__header">
-								<h3 class="site-preview-heading">Most viewed</h3>				
-							</div>
-							<div class="usa-card__media">
-								<div class="usa-card__img">
-									  <img
-										src=""
-										alt="Most viewed"
-									  />
-								</div>
-							</div> 
-							<hr>
-							<div class="usa-card__body gsa-card-small">						
-								{% for link in site.data.mostviewed %}
-								<p>
-									<b><a class="usa-link" href="{{link.mvurl}}"  target="_blank">{{link.mvtext}}</a></b>
-									{% if forloop.last == false %}
-									<hr />
-									{% endif %}
-								</p>
-								{% endfor %}								
-							</div>
-							<hr>
-							<br>
-						</div>
-					</li>
-					<li class="usa-card tablet:grid-col-6">
-						<div class="usa-card__container gsa-card-shadow">
-							<div class="usa-card__header">
-								<h3 class="site-preview-heading">Cyber news</h3>
-								
-							</div>
-							<div class="usa-card__media">
-								<div class="usa-card__img">
-									  <img
-										src=""
-										alt="Cyber news"
-									  />
-								</div>
-							</div> 
-							<hr>
-							<div class="usa-card__body gsa-card-small">
-								source: https://www.cisa.gov/news.xml 
-								{% for feed in site.data.rssfeed %}
-								<b><a class="usa-link" href="{{feed.link}}"  target="_blank">{{feed.title}}</a></b>
-								<p class="usa-collection__description">
-									{{feed.description}}
-								</p>
-								{% if forloop.last == false %}
-								<hr />
-								{% endif %}
-								{% endfor %}
-							</div>
-							<hr>
-							<br>
-						</div>
-					</li>
-				</ul>	
-				</div>
-			</div>
-		</div>
-</section>		 -->
-<!-- Freq Searched and RSS Feed Cards -->		
-
+	
 <!-- Start of Vendors and Partner Cards -->	
 <section class="ficam-page-container bg-test" style="padding-top:25px;background-color: #f0f0f0;">
 	<div class="grid-container">
@@ -258,10 +186,10 @@ eight.
 								<a href="{{site.baseurl}}/fips201ep/" aria-label="FIPS 201 evaluation program" class="usa-button usa-button--accent-cool usa-button--active">FIPS 201 evaluation program</a>
 							</p>
 							<p>
-								<a href="{{site.baseurl}}/fips201/" aria-label="Approved products list" class="usa-button usa-button--accent-cool usa-button--active">Approved product list</a>
+								<a href="{{site.baseurl}}/fips201/" aria-label="Approved product list" class="usa-button usa-button--accent-cool usa-button--active">Approved product list</a>
 							</p>
 							<p>
-								<a href="{{site.baseurl}}/fips201/#removed-product-list" aria-label="Removed products list" class="usa-button usa-button--accent-cool usa-button--active">Removed product list</a>
+								<a href="{{site.baseurl}}/fips201/#removed-product-list" aria-label="Removed product list" class="usa-button usa-button--accent-cool usa-button--active">Removed product list</a>
 							</p>
 						</div>
 						<hr>

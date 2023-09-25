@@ -11,6 +11,17 @@ site, this is the place to do it.
   {% unless site.branch == "federalist-pages" %}
     <meta name="robots" content="noindex, nofollow">
   {% endunless %}
+
+  <!-- Start of Redirect section -->
+  <!-- Please place redirects in _data/redirects.yml -->
+  {% for redirect in  site.data.redirects %}
+  {% if redirect.request == page.url %}
+  {% assign new_resource_location = {{ site.newsite }}{{ redirect.destination }} %}
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <meta http-equiv="refresh" content="10;url={{ site.baseurl }}{{ redirect.destination }}" />
+  {% endif %}
+  {% endfor %}
+  <!-- End of Redirect section -->
   
   <!-- Comment out for AMP testing
   <meta http-equiv="Content-Security-Policy" content="default-src 'self';
