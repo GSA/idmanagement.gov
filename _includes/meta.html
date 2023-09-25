@@ -15,10 +15,8 @@ site, this is the place to do it.
   <!-- Start of Redirect section -->
   <!-- Please place redirects in _data/redirects.yml -->
   {% for redirect in  site.data.redirects %}
-  {% if redirect.request == page.url %}
-  {% assign new_resource_location = {{ site.newsite }}{{ redirect.destination }} %}
-     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-     <meta http-equiv="refresh" content="10;url={{ site.baseurl }}{{ redirect.destination }}" />
+  {% if site.baseurl + page.url == site.baseurl + redirect.request %}
+   <script>document.location = {{site.baseurl}}{{redirect.destination}}</script>
   {% endif %}
   {% endfor %}
   <!-- End of Redirect section -->
