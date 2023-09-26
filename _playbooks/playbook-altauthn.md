@@ -162,7 +162,7 @@ Figure 2. MITRE ATT&CK TTPs for Phishing and Credential-based attacks.
 
 ## What is Phishing-Resistance?
 
-Previous sections identified how credentials are susceptible to phishing and other attack types; this section identifies which types of MFA are phishing-resistant. Not all types of MFA are created equal, with some stronger than others. Phishing-resistant authentication is designed to prevent the disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system. The two leading phishing-resistant authenticators agencies deploy include PKI (PIV-based, PIV-I, or Only Locally Trusted) and FIDO2 authenticators. Note that FIDO2 is sometimes described as WebAuthn authenticators. WebAuthn is a World Wide Web Consortium (W3C) standard in FIDO2.
+Previous sections identified how credentials are susceptible to phishing and other attack types; this section identifies which types of MFA are phishing-resistant. Not all types of MFA are created equal, with some stronger than others. Phishing-resistant authentication is designed to prevent the disclosure of authentication secrets and outputs to a website or application masquerading as a legitimate system. The two leading forms of phishing-resistant authentication include PKI (PIV-based, PIV-I, or Only Locally Trusted) and FIDO2 authenticators. Depending on configuration, these authenticator types can be either Authenticator Assurance Level 2 or AAL3. Note that FIDO2 is sometimes described as WebAuthn authenticators. WebAuthn is a World Wide Web Consortium (W3C) standard in FIDO2. While these are two leading methods today, there may be other methods in the future.
 
 Table 01. Common MFA Options
  <table class="usa-table usa-table">
@@ -180,7 +180,7 @@ Table 01. Common MFA Options
         <tr>
             <td>AAL1</td>
             <td>AAL2</td>
-            <td>AAL3</td>
+            <td>AAL2 or AAL3</td>
         </tr>
         <tr>
             <td>Single Factor</td>
@@ -255,17 +255,19 @@ A FIDO transaction for registration and authentication includes four main steps 
    4. The public key is sent to the online service to register the user and device to the user's account in the online service.
 2. **Login using a FIDO authenticator** process.
    1. The user navigates to the online service and is prompted for the FIDO authenticator.
-   2. The online service sends a challenge-response request. The user selects the FIDO option used to register with the service. They unlock the FIDO authenticator following the method used for enrollment.
-   3. The device selects the appropriate user account identifier and key to sign a challenge-response request to the online service.
+   2. The online service sends an encrypted challenge-response request. The user selects the FIDO option used to register with the service. They unlock the FIDO authenticator following the method used for enrollment.
+   3. The device selects the appropriate user account identifier and key to sign a challenge-response request to the online service, which binds the user's public key to the request.
    4. The device sends the signed challenge back to the online service, which verifies the signature with the user's stored public key.
+
+The FIDO2 authentication process conforms to the NIST 800-63 mechanism for verifier impersonation resistance. This includes establishing a protected channel, binding the channel identifier to the authenticator output, and the verifier validating the signature. 
  
 A FIDO authenticator comes in two main types.
 1.	Platform authenticator - Delivered via a secure, isolated execution environment (such as a TPM chip, Trusted Execution Environment (TEE), or Secure Enclave (SE) chip built into devices. One example includes Windows Hello for Business.
 2.	Roaming authenticator - Colloquially called a security key, a USB-A or C-based physical device that can be used wirelessly across devices over NFC and BT. Some examples include Yubico's Yubikey, Identiv's UTrust, RSA's DS-100, and Google Titan. If a PIV credential were also FIDO-certified, it would be categorized as a roaming authenticator.
 
-You may hear FIDO authentication referred to as a “passkey.” This is a new term that many companies are using to describe passwordless FIDO experiences; consumers are being urged to create a passkey instead of a password for improved security and user experience. Behind the scenes, a passkey is a FIDO-generated key pair, but the private key may be synced across a user’s devices for increased usability. Syncable passkeys, called discoverable credentials in the FIDO specification, are well-suited for most consumer/public-facing use cases. However, some aspects of using syncable keys in enterprise applications are still evolving, and this paper does not recommend their use in the enterprise at this time. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+You may hear FIDO authentication referred to as a “passkey.” This is a new term that many companies are using to describe passwordless FIDO experiences; consumers are being urged to create a passkey instead of a password for improved security and user experience. Behind the scenes, a passkey is a FIDO-generated key pair, but the private key may be synced across a user’s devices for increased usability. Syncable passkeys, called discoverable credentials in the FIDO specification, are well-suited for most consumer/public-facing use cases. However, some aspects of using syncable keys in enterprise applications are still evolving, and this paper does not recommend their use in the enterprise at this time. **Enabling passkeys in enterprise tools is configurable and usually off by default. Verify with your tool vendor if they support passkeys and how to turn them off**. For more information on passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
-Since FIDO2 leverages public key cryptography and is hardware-based, it is categorized as a **single-factor or multi-factor cryptographic device** authenticator type in NIST Special Publication 800-63. It could achieve either Authenticator Assurance Level (AAL) 2 or 3. The specific level depends on multiple criteria, with the authenticator type as just one piece of an overall assessment. 
+Since FIDO2 leverages public key cryptography and is hardware-based, it is categorized as a **single-factor or multi-factor cryptographic device** authenticator type. It could achieve either AAL2 or AAL3, depending on the configuration and security control baseline.
 
 Table 03. Advantages and disadvantages of platform versus roaming authenticator
  <table class="usa-table usa-table">
@@ -317,7 +319,7 @@ The first FIDO2 CoA included eight agencies either actively piloting a solution 
 
 #### Challenges
 
-1. **PIV Mentality** - The security approval to use FIDO2 hasn’t been filtered to all levels of agency leadership and operational teams. This is not a PIV versus something else argument, but that authenticator exception policies are a weak link in a security plan.
+1. **Compliance Mentality** - Some organizations take a strict compliance approach to only use PIV or Derived PIV credentials because this is the only "Homeland Security Presidential Directive 12 approved credential". When a PIV-based credential is unavailable, relying on a time-boxed access exception policy leveraging a password is acceptable until the user has a PIV credential. This mentality is inaccurate and grounded in rescinded OMB memos and deprecated FISMA metrics. While agencies must continue to follow the OPM credentialing policy to complete a suitability determination, agencies are not required to use PIV for logical authentication. OMB Memo 22-09, updated FISMA metrics, and NIST 800-53 security controls allow an agency to use other types of phishing-resistant authenticators and not rely solely on a PIV credential. The decision to use any authenticator is dependent on an individual organization's risk appetite, security control tailoring, and data security.
 2. **Inconsistent user experience** - Although FIDO2 is a specification, vendors can introduce their variations and brands (e.g., the Apple platform authenticator is Face ID, while Android doesn't have a branded name). These small variations can lead to an inconsistent user experience when working in multi-device, operating system, and browser environments. Follow the guidance in this playbook to test across all organization-supported operating systems and browsers and document the process to publish as user stories during your authenticator adoption campaigns. This vendor branding is not unique either. The Federal PIV-I credential also has a similar challenge in how vendors decide to make a PIV-I visually distinct from a PIV.
 3. **Registration and account recovery continue to be an attack vector** - The initial onboarding of an individual is either in-person or through a remote authentication process leveraging a lower assurance authenticator, such as enrolling an email for an OTP to associate a higher assurance authenticator like a phishing-resistant authenticator. Account recovery is the organizational process for users to recover access to their account using a backup authenticator when their primary authenticator is locked, forgotten, or unavailable. An organization's account recovery process often relies on a lower assurance authenticator, such as an email or SMS OTP.
 4. **Technology continues to rely on passwords** - Removing passwords depends more on architecture and technology choices and is a trade-off between mission delivery and budget. Some platforms require passwords even if they are masked and stored in background processes. The only option at some point is to modernize from legacy systems (e.g., Active Directory and Active Directory Federation Services) to modern options that do not require passwords or use passwords in the background.
@@ -425,9 +427,9 @@ Figure 4. Authentication patterns toward a holistic authenticator strategy
 
 Figure 4 identifies the five most common authenticator patterns between a user and data and is grouped into two main categories.
 
-**Device authentication** is the first attempt to gain data access. Two device authentication patterns include managed and unmanaged devices.
+**Device authentication** is the first attempt to gain data access. Two device authentication patterns include managed and unmanaged devices.<br>
     1.	**Unmanaged Devices** include any device not under the organization's control. Some agencies support Bring Your Own Device or contractor-furnished device access for a limited number of applications like email or collaboration tools. Deploying or enforcing certificate-based options, compliance profiles, or baseline images is difficult. This is a growing access method as more agencies support unmanaged device access to cloud applications.<br>
-    2.	**Managed Devices** include any device under direct control or with a managed profile, such as Government Furnished Equipment (GPE) and contractor-furnished equipment or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access. One challenge for most agencies is managing many operating system types, which may also limit how certificates are supported.<br>
+    2. **Managed Devices** include any device under direct control or with a managed profile, such as Government Furnished Equipment (GPE) and contractor-furnished equipment or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access. One challenge for most agencies is managing many operating system types, which may also limit how certificates are supported.<br>
 
 **Application authentication** is often the 2nd authentication attempt to gain data access. Three application authentication patterns include an enterprise Single Sign-On tool, direct access through a web application, or a non-application interface.<br>
     3.	**[Single Sign On (SSO)](https://playbooks.idmanagement.gov/playbooks/sso/)** - Agencies are centralizing application access using an enterprise SSO tool. This is often where PIV enforcement occurs, with most SSO tools supporting certificate-based authentication.<br>
@@ -568,7 +570,7 @@ There are three lifecycle stages for a non-PKI authenticator, including FIDO.
 1.	**Issuance**
     1. FIDO2 roaming or platform authenticators only support hardware-based devices. 
     2. Agencies should follow NIST 800-63 guidance that states a federally-issued authenticator be to a FIPS 140 Level 1 or 2 device. 
-    3. Agencies should ensure that the issuance process includes an MFA prompt at the same or higher Authenticator Assurance Level (AAL) of the issued authenticator over a secured channel like mutually authenticated HTTPS. 
+    3. Agencies should ensure that the issuance process includes an MFA prompt at the same or higher AAL of the issued authenticator over a secured channel like mutually authenticated HTTPS. 
     4. The authenticator is registered to an identity account in an agency ICAM system following the FIDO2 specification. 
     5. PIN length is recommended as at least six digits.
 2.	**Maintenance**
