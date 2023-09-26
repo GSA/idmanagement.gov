@@ -1,12 +1,11 @@
 
 <script>
   // redirects user to a new location 
-  // redirect: Location to send user
-  const pagetimeout = window.setTimeout(redirect(),0);
   function redirect(){
-    document.location = "{{include.redirect}}";
+    document.location = "{{site.baseurl}}{{include.redirect}}";
   }
+  redirect();
 </script>
 
 The address for this page has changed, we are redirecting you to it's new location...
-<p><a href="{{include.redirect}}">{{site.url}}{{include.redirect}}</a></p>
+<p><a href="{{site.baseurl}}{{include.redirect}}">{{site.baseurl}}{{include.redirect}}</a></p>
