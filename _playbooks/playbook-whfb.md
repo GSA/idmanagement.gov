@@ -172,7 +172,7 @@ Learn more about Azure AD registered devices [here](https://learn.microsoft.com/
 
 Azure AD join is intended for organizations that desire to be cloud-first or cloud-only. There's no restriction on the size or type of organizations that can deploy Azure AD join. Azure AD join also works in a hybrid environment and can enable access to on-premises applications and resources.
 
-Learn more about Azure AD joined devices [here](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Azure AD joined devices"}.
+Learn more about [Azure AD joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Azure AD joined devices"}.
 
 **Hybrid Azure AD join**
 
@@ -185,7 +185,7 @@ Typically, organizations with an on-premises footprint rely on imaging methods t
 
 If your environment has an on-premises AD footprint and you want to benefit from the capabilities provided by Azure AD, you can implement hybrid Azure AD joined devices. These devices are joined to both your on-premises Active Directory and your Azure AD.
 
-Learn more about hybrid Azure AD joined devices [here](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about hybrid Azure AD joined devices"}.
+Learn more about [hybrid Azure AD joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="hybrid Azure AD joined devices"}.
 
 **Mobile device management**
 
@@ -317,7 +317,7 @@ After enabling the policy, a series of policy choices must be made. Recommended 
       <li>This setting applies to biometric facial recognition.</li>
       <li>What is anti-spoofing for facial recognition? An attacker with physical access to a Windows 10/11 device with WHfB set as the authentication method can use an Infrared (IR) photo of the user's face, save the frames to a custom USB device, and plug the USB into the computer. This tactic bypasses the built-in camera, and WHfB will search for frames on the external USB.</li>
       <li>Microsoft fixed this vulnerability in Update KB 5005478 (Windows Hello CVE-2021-34466).</li>
-      <li>Read more <a class="usa-link usa-link--external" href="https://www.cyberark.com/resources/threat-research-blog/bypassing-windows-hello-without-masks-or-plastic-surgery" aria-label="Read more on the CyberArk website.">here</a> on the CyberArk website.</li>
+      <li>Read more on <a class="usa-link usa-link--external" href="https://www.cyberark.com/resources/threat-research-blog/bypassing-windows-hello-without-masks-or-plastic-surgery" aria-label="the CyberArk website.">the CyberArk website.</a> </li>
     </ol>
   </li>
   <li>
@@ -745,7 +745,7 @@ Download and install the app:
 
 ## Windows infrared camera biometric set-up
 
-Facial recognition can be set up during Windows Hello enrollment or after by visiting **Settings \> Accounts \> Sign-in options \> Facial recognition**. To learn more about Windows Hello facial recognition and how the infrared camera prevents spoofing click [here](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication#benefits-of-near-infrared){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="learn more about Windows Hello facial recognition and how the infrared camera prevents spoofing"}.
+Facial recognition can be set up during Windows Hello enrollment or after by visiting **Settings \> Accounts \> Sign-in options \> Facial recognition**. To learn more about [Windows Hello facial recognition and how the infrared camera prevents spoofing](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication#benefits-of-near-infrared){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Windows Hello facial recognition and how the infrared camera prevents spoofing"}.
 
 Choose **Get started** to begin the facial recognition process (see Figure 47).
 
@@ -825,7 +825,7 @@ The maximum number of supported enrollments on a single device is 10. This lets 
 
 **Can I use third-party MFA providers with Windows Hello for Business?**
 
-Yes, if you're using federated hybrid deployment, you can use any third-party that provides an AD FS MFA adapter. A list of third-party MFA adapters can be found [here](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="A list of third-party MFA adapters"}.
+Yes, if you're using federated hybrid deployment, you can use any third-party that provides an AD FS MFA adapter. Here is a [list of third-party MFA adapters](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="list of third-party MFA adapters"}.
 
 **Is Windows Hello for Business considered multi-factor authentication?**
 
