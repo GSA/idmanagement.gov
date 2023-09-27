@@ -8,10 +8,10 @@
     // Note: delaytime is in milliseconds: 1 sec = 1000
     if((delaytime + '{{page.delaytime}}') > 0){
       window.setTimeout(function(){
-        document.location = "{{page.redirect}}";
+        document.location = "{{site.url}}{{page.redirect}}";
       }, delaytime + '{{page.delaytime}}');
     } else {
-      document.location = "{{page.redirect}}";
+      document.location = "{{site.url}}{{page.redirect}}";
     }
   }
   // Execute redirect function. 
@@ -20,5 +20,5 @@
 
 <p>The address for <i>{{page.title}}</i> has changed, we are redirecting you to it's new location...</p>
 <ul>  
-  <li><strong>Please update your bookmark:</strong>  <a href="{{page.redirect}}">{{{site.url}}{{page.redirect}}</a></li>
+  <li><strong>Please update your bookmark:</strong>  <a href="{{site.url}}{{page.redirect}}">{{site.url}}{{page.redirect}}</a></li>
 </ul>
