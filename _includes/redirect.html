@@ -10,12 +10,10 @@
     // Note: delaytime is in milliseconds: 1 sec = 1000
     if((delaytime + '{{page.delaytime}}') > 0){
       window.setTimeout(function(){
-        document.location = document.location.protocol + "//" + document.location.host + document.location.pathname + "{{page.redirect}}";
-        //document.location = "{{page.redirect}}";
+          document.location = "{{page.redirect}}";
       }, delaytime + '{{page.delaytime}}');
     } else {
-      document.location = document.location.protocol + "//" + document.location.host + document.location.pathname + "{{page.redirect}}";
-      //document.location = "{{page.redirect}}";
+        document.location = "{{page.redirect}}";
     }
   }
   // Execute redirect function. 
