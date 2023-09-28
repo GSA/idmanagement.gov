@@ -495,9 +495,9 @@ Once we identify the authenticator gaps, we can identify the primary use cases o
 
 Most agencies are surprised that their agency enterprise SSO tool supports FIDO2, usually without any additional license or equipment costs. FIDO2 platform and device support require a crosswalk between operating systems and browsers, with some operating systems supporting some browsers and vice versa. FIDO2 platform authenticators are single operating system specific, so they will not work in a multi-operating system use case (e.g., Windows Hello for Business can not be used to authenticate to or on an Apple device). However, some cross-device workflows can enable a FIDO2 platform authenticator on a smartphone to be used to log in via a PC or laptop. Due to this, the user experience may also be different between operating systems and browsers.
 
-Fortunately, the FIDO Alliance and their supported vendor community have several resources to identify platform and device support in addition to compatibility issues. They also have a growing base of vendor support, and more than 1,000 products have attained [FIDO certification](https://fidoalliance.org/certification/fido-certified-products/):target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
+Fortunately, the FIDO Alliance and their supported vendor community have several resources to identify platform and device support in addition to compatibility issues. They also have a growing base of vendor support, and more than 1,000 products have attained [FIDO certification](https://fidoalliance.org/certification/fido-certified-products/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
-Five leading platforms and four browsers support FIDO2 and WebAuthn.
+Five leading platforms and four browsers support FIDO2. **Reminder: Not all platform authenticators work with all browsers. You should always test for interoperability following your use cases.**
 1.	Platform (Operating Systems)
     1.	Windows 10 or later
     2.	Apple MacOS Big Sur (11) or later
