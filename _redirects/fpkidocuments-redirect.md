@@ -6,7 +6,7 @@ title: Federal PKI Document Archive
 permalink: /fpki-documents/
 redirect: /fpki/#federal-pki-document-archive 
 delaytime: 0
-note: redirect for fpki-documents
+memo: redirect for fpki-documents
 
 ---
 
