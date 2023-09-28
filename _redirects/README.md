@@ -26,22 +26,25 @@ The setting for each redirect page are located in the front matter section of th
 layout: page
 title: PIV Issuer Information
 permalink: /piv-i-for-issuers/
-redirect: /fpki/notifications/#piv-issuer-information
+redirect: https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information
 delaytime: 0
 note: redirect for piv-issuers information
 ---
 ```
->*Note:* the `---` above and below the fields is required by jekyll as [front matter](https://jekyllrb.com/docs/front-matter/) fencing. 
+> **Note:** for the redirect you will always use the full URL for example: `https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information` and for the permalink you will always use the short form of the requested page. for  example: `/piv-i-for-issuers/`
+
+>*Note:* the `---` above and below the fields is required by jekyll as [front matter](https://jekyllrb.com/docs/front-matter/) fencing.
 
 **File Structure**
 - `layout:` is the layout file used for this type of page. 
 - `title:` the title of the destination page.
 - `permalink:` the url of the requested or missing page.
-- `redirect:` url of the destination page after redirect.
+- `redirect:` the full url of the destination page to redirect to. `example: https://www.idmanagement.gov/fpki/`
 - `delaytime:` the amount of time in *milliseconds* to wait before sending the user to the destination page. (default: 0)
 - `memo:` note for record keeping or providing additional information.
 
 Once you have provided these settings, you new redirect is configured and ready for testing. 
+
 
 ### Testing a new redirect page
 
