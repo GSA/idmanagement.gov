@@ -1,18 +1,18 @@
 ## Redirects
 
-This directory contains redirect pages configured to respond to addresses that generate `301` or `404` [HTTP Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). Each redirect page listens for that page address, answers if requested, then redirect the user to the correct file location.
+This directory contains redirect pages configured to respond to addresses that generate `301` or `404` [HTTP Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). Each redirect page listens for that page address, answers if requested, then redirect the user to the correct page(file) location.
 
-Each page contains settings in its [front matter](https://jekyllrb.com/docs/front-matter/), which control the redirect process independently of other redirect pages. This means that more than one redirect page can redirect to the same resource on the website, but only one redirect page can answer to a specific address.
+Each page contains settings in its [front matter](https://jekyllrb.com/docs/front-matter/), which control the redirect process independently of other redirect pages. This means that more than one redirect page can redirect to the same resource on the website, but only one redirect page can answer to a specific request.
 
 ### How to create a new redirect page.
 
 Each redirect page contains a minimun set of fields required to conduct a page redirect. To create a new redirect, do the following:  
 
-1. Create a copy an existing redirect file located in this folder.
+1. Create a copy of `template-redirect.md` redirect file located in this folder.
 2. Rename it. `ex: [new_name]-redirect.md`
 3. Then update the fields located in the front matter portion of the redirect page you copied. (see: Redirect settings)
 
-> **File location:** redirect files can be located outside of the `_redirects` folder, but as a best practice you should keep them all here in one place under this folder for maintainability reasons. 
+> **File location:** redirect files can be located outside of the `_redirects` folder, but as a best practice you should keep them all here in one place under this folder for maintainability reasons.
 
 >**Naming convensions:** A redirect file name should end with `-redirect.md` to make the file self identifying, if placed outside of the _redirects folder.
 
@@ -28,7 +28,7 @@ title: PIV Issuer Information
 permalink: /piv-i-for-issuers/
 redirect: https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information
 delaytime: 0
-note: redirect for piv-issuers information
+memo: redirect for piv-issuers information
 ---
 ```
 > **Note:** for the redirect you will always use the full URL for example: `https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information` and for the permalink you will always use the short form of the requested page. for  example: `/piv-i-for-issuers/`
@@ -53,17 +53,19 @@ After adding the necessary setting for your redirect:
 - If using GitHub, visit the site preview link for your new branch.
 - If developing locally, visit `http://localhost:4000`
 
-Once on the `Homepage` of the preview or local view of the site, cut and paste the `permalink` address after the domain name in the browser and press enter to navigate to the redirect page. If everything is configured correctly, you should be redirected to new destination. If not, double chech the destination address for correctness. 
+Once on the `Homepage` of the preview or local view of the site, cut and paste the `permalink` address after the domain name in the browser and press enter to navigate to the redirect page. If everything is configured correctly, you should be redirected to the destination page. If not, double chech the destination address for correctness.
+
+> **Note:** since the destination page is the full address on the live website, this is the address you will be directed to, no matter which development environment you are testing in, local or in a branch preview.
 
 ### Delay message
 
 If it has been determined that a delay message needs to be presented to the visitor of a page before sending them to the destination page, do the following.  
 
 Change the `delaytime` in the front matter to the desired amount of time: ( `in milliseconds`):
+
 - `example: 1 second = 1000 milliseconds`
 - `10000 = 10 seconds`
 
 Then test your page to make sure the new changes are working. (*see: Testing a new redirect page*) 
 
-You should now land on the redirect page and see the delay message, for a secified amount of time then after the specified amount of time, be directed to the new location.
-
+You should now land on the redirect page and see the delay message, for a secified amount of time, then after the specified amount of time, be directed to the destination page.
