@@ -135,8 +135,10 @@ Review the test procedures, choose one of the application packages, and submit t
     - [Backend Registration Companion Paper (PDF, March 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [FRTC Express Companion Paper (PDF, March 2021)]({{site.baseurl}}/docs/fips201ep-frtcexpress.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [PACS FRTC PIN Usage Policy Addendum (PDF, August 2018)]({{site.baseurl}}/docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-
     - Review this Addendum for help resetting PIN retry counters, and determining the number of remaining PIN retries during Discovery Object testing.
+- [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 2023)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - This document will be continuously updated as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov) by November 30, 2023.
+
 
 ## PACS Application Package for New Systems or for Updates to Previously Approved Systems
 
