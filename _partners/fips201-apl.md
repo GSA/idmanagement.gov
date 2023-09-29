@@ -107,6 +107,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 - [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-130-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## PACS Solutions Awaiting Approval
 
