@@ -76,7 +76,7 @@ This guide ends by presenting answers to [Frequently Asked Questions](#frequentl
 
 {% include alert-info.html content='**We’re calling for all solutions!** If you’d like to share your agency’s playbook on how to distribute a trusted root CA certificate to an application trust store, create an [issue on GitHub](https://github.com/GSA/idmanagement.gov/issues/new){:target="_blank"}{:rel="noopener noreferrer"} or email us at <fpki@gsa.gov>.' %}
 
-# Step 1 - Obtain and verify the FCPCA root certificate
+## Step 1 - Obtain and verify the FCPCA root certificate
 
 The first step in this process is to obtain a copy of the FCPCAG2 root certificate, and verify its authenticity.
 
@@ -141,7 +141,7 @@ After you have verified the certificate, you are ready to distribute the FCPCA r
 - [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems), or
 - you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
 
-# Step 2 - Distribute to operating systems
+## Step 2 - Distribute to operating systems
 
 To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of these options:
 
@@ -534,7 +534,7 @@ You can now successfully navigate to any intranet website whose SSL certificate 
 
 Next, verify distribution of the FCPCAG2 certificate as an operating system trusted root.
 
-# Step 3 - Verify operating system distribution
+## Step 3 - Verify operating system distribution
 
 To verify that the Federal Common Policy CA G2 (FCPCAG2) certificate has been distributed to your agency's workstations and devices, use one of these options:
 
@@ -719,7 +719,7 @@ HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99
 
 Next, distribute the FCPCA certificate to application trust stores.
 
-# Step 4 - Distribute to applications
+## Step 4 - Distribute to applications
 
 Many, but not all, software applications leverage the underlying operating system [trust store]({{site.baseurl}}/university/fpki#fpki-third-party-trust) to verify whether a certificate should be trusted.
 
@@ -733,7 +733,7 @@ Collaborate across agency teams to identify applications that rely on custom tru
 
 Next, determine if you need to distribute the CA certificates issued by the FCPCAG2 root certificate.
 
-# Step 5 - Distribute intermediate certificates
+## Step 5 - Distribute intermediate certificates
 
 {% include alert-success.html content="**Depending on agency configurations, you might need to distribute these certificates to systems and applications**.  This page will help you understand [when to distribute the intermediate CA certificates](#do-i-need-to-distribute-the-intermediate-ca-certificates), [which certificates to distribute](#which-certificates-do-i-need-to-distribute), and [recommended solutions](#how-do-i-distribute-the-intermediate-ca-certificates).  This page also lists [intermediate CA certificate details](#certificates-issued-by-the-federal-common-policy-ca), including download locations." %}
 
@@ -1016,7 +1016,7 @@ The easiest way to verify your migration to the Federal Common Policy CA G2 (FCP
 
 ![Verify common migration in macOS]({{site.baseurl}}/assets/fpki/verify-migration-macos.png){:style="width:504px;"}
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 
 If your question does not appear in this list, send it to FPKI at gsa.gov.
 
