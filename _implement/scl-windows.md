@@ -49,7 +49,7 @@ subnav:
   </div>
 </div>
 
-# Introduction
+## Introduction
 
 These Windows Domain configuration guides will help you configure your Windows _network domain_ for smart card logon using PIV credentials.
 
@@ -89,7 +89,7 @@ Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener 
 
 <!-- from https://playbooks.idmanagement.gov/piv/network/ports/  is now an internal page link to here(#ports-and-protocols) instead of its own guilde -->
 
-# Step 1 - Network Ports and Protocols
+## Step 1 - Network Ports and Protocols
 
 Your workstations, servers, network domain controllers, and applications need to validate the [revocation status]({{site.baseurl}}/university/pki/#revocation-checking) of the PIV certificates and all intermediate certificate authority (CA) certificates.  In addition, the [certificate chain]({{site.baseurl}}/university/pki/#establishing-trust) path building may retrieve and download the intermediate CA certificates.
 
@@ -163,7 +163,7 @@ To enable communications with these Federal Common Policy Certificate Authority 
 
 You should consider allowing two protocols (ports): HTTP (80) and DNS (53).  Although the web services for publishing CRLs are not currently served over HTTPS (443), you may want to allow HTTPS (443) to future proof for any expansion.
 
-# Step 2 - Domain Controllers
+## Step 2 - Domain Controllers
 
 To use smart cards and PIV credentials for network authentication, all domain controllers need to have domain controller authentication certificates.
 
@@ -209,11 +209,11 @@ Collaborate with your CISO or Information Security Office for a definitive answe
 
 If you do have a local enterprise CA, [here are some tips](#step-7---local-certificate-authority).
 
-# Step 3 - Trust Stores
+## Step 3 - Trust Stores
 
 Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide]({{site.baseurl}}/implement/trust-fcpca/#step-2---distribute-to-operating-systems).
 
-# Step 4 - Account Linking
+## Step 4 - Account Linking
 
 *Account linking* refers to the process of associating a certificate on a user's PIV credential with their domain account.
 
@@ -373,7 +373,7 @@ It's possible to revert to UPN account linking by removing the registry setting 
 
 Use group policy objects or other centralized management options to manage registry options.
 
-# Step 5 - Group Policies and Enforcement
+## Step 5 - Group Policies and Enforcement
 
 The U.S. federal government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smart card (PIV) logon and should be referenced first.
 
@@ -429,7 +429,7 @@ These prompts happen when the kerberos ticket lifetime expires and a new authent
 You can find additional information on configuring kerberos policies given the following [reference documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/maximum-lifetime-for-user-ticket){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 
-# Step 6 - Network Tuning
+## Step 6 - Network Tuning
 
 You can tune the network domain settings to help you and your users have a better experience and reduce errors.  This section highlights some of the _common_ tuning configurations for network domain logon.  There are additional tuning configurations and we encourage you to start with these first and contribute others.
 
@@ -473,7 +473,7 @@ By default, Microsoft Windows will retrieve and cache 50 OCSP Responses for any 
 
 Source:&nbsp; [Optimizing the Revocation Experience](https://technet.microsoft.com/en-us/library/ee619783%28v=ws.10%29.aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-#  Step 7 - Local Certification Authority
+##  Step 7 - Local Certification Authority
 
 This page provides some tips for using a local certification authority (CA) to issue a domain controller certificate.  This is for local Microsoft CAs. Other platforms may be used and have different procedures.    
 
@@ -553,7 +553,7 @@ The domain controller(s) certificate must contain valid information. These steps
   
   If successful, you will see a new domain controller certificate in the **_Certificate (Local Computer) -&gt; Personal -&gt; Certificates folder_**. At the **Certificate Template** tab, you will also see a certificate generated with the custom certificate template.
 
-#  Step 8 - Authentication Assurance
+##  Step 8 - Authentication Assurance
 
 When a user authenticates to your network and you've enabled Single Sign-on to applications inside your network domain, you need to know which of these authenticators was used: 
 
@@ -687,7 +687,7 @@ Use the Windows Registry Editor to set the _AMA Priority_ above _Most Recently I
 
 Refer to the [AMA Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=WS.10).aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to understand the implementation of AMA.
 
-# Troubleshooting PIV Logon
+## Troubleshooting PIV Logon
 
 Within the federal enterprise, Windows smart card logon with a PIV card (PIV logon) is one method to satisfy Federal Information Security Management Act (FISMA) and National Institute of Standards and Technology (NIST) Risk Management Framework security controls for authentication. A PIV card enables Authenticator Assurance Level 3, two-factor authentication to a Windows desktop. Under normal conditions, this system is simple and easy for an end user to use. However, if this logon mechanism breaks, it can be difficult to troubleshoot logon and authentication errors. This page includes common symptoms and suggested steps to diagnose and solve these issues.
 
