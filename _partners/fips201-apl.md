@@ -30,11 +30,11 @@ This page is for program managers and acquisition professionals looking for appr
 
 If you think this page is missing something, [contact us]({{site.baseurl}}/contact-us) to ask a question.
 
-# How To Purchase
+## How To Purchase
 
 Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/) to view FICAM products, services and purchasing guidance.
 
-# Approved Products - Physical Access Control Systems
+## Approved Products - Physical Access Control Systems
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal Government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
@@ -140,7 +140,7 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
 
-# Approved Products - PIV Smart Cards
+## Approved Products - PIV Smart Cards
 
 The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
@@ -200,7 +200,7 @@ Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (
 
 Note that GSA will provide the Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB) with copies of all memos submitted.
 
-# Removed Product List
+## Removed Product List
 
 {% assign categories = "" | split: "" %}
 {% for rpl in site.data.fips201rpl %}
