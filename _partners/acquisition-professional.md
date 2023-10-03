@@ -22,7 +22,7 @@ Find approved products and services for Federal Identity, Credential, and Access
 
 Other current and planned products and services can be found on the [GSA ICAM Solutions Catalog and GSA ICAM Roadmap]({{site.baseurl}}/icamsolutions/).
 
-# Products
+## Products
 
 The FICAM testing program – also known as the [Federal Information Processing Standard 201 (FIPS 201) Evaluation Program]({{site.baseurl}}/fips201ep/) – tests commercial products used in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures (PKI). These products are tested and approved to ensure you're buying products that provide value and work well together.
 
@@ -40,7 +40,7 @@ A product is removed when it has lost its certification due to security concerns
 The FIPS 201 Evaluation Program, in collaboration with the [PACS Modernization Working Group]({{site.baseurl}}/ficam/#icamsc-working-groups){:target="_blank"}, created an operational self-assessment tool. The tool helps PACS implementers assess facility access systems that use PIV credentials. The assessment provides results to show alignment or disparity with FICAM and NIST guidelines.
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-# Services
+## Services
 
 The following organizations offer Identity, Credential, and Access Management services to the federal government. If your organization has a relevant Identity, Credential, or Access Management service, [contact us]({{site.baseurl}}/contact-us/) so we can add it to the list.
 
@@ -55,11 +55,11 @@ The following organizations offer Identity, Credential, and Access Management se
 - [FPKI Individual Certificate Providers]({{site.baseurl}}/trust-services/#non-government-pki-trust-framework) – Offers small numbers of digital certificates for business organizations and business persons, which are used to digitally sign documents and authenticate to a small number of government applications.
 - [Trust Services for Businesses]({{site.baseurl}}/trust-services/#business-identity-services) – Approved identity and credentialing services for businesses, and which the government has approved for federated identity services.
 
-# FedRAMP
+## FedRAMP
 
 - The [Federal Risk and Authorization Management Program (FedRAMP)](https://www.fedramp.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} website contains a marketplace with federal workforce and citizen identity products.
 
-# GSA Multiple Award Schedule
+## GSA Multiple Award Schedule
 
 GSA Multiple Award Schedule (MAS) provides access to long-term government-wide contracts. These contacts are with commercial firms that offer millions of commercial products and services at volume discount pricing. The MAS provides tools and expertise to shorten acquisition cycles, ensure compliance, and obtain the best value for innovative technology products, services, and solutions.
 

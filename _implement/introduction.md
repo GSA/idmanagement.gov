@@ -29,7 +29,7 @@ ICAM Engineering Guides are for system administrators configuring agency infrast
 
 The majority of engineering guides are focused on helping agencies configure PIV credential authentication in the most common operating systems and applications. A new series of FIDO multi-factor authentication playbooks are also include.
 
-# Configuration Guides
+## Configuration Guides
 
 1. Smart Card Configuration
    1. [Windows Domains]({{site.baseurl}}/implement/scl-windows)
@@ -43,7 +43,7 @@ The majority of engineering guides are focused on helping agencies configure PIV
    1. [Windows Hello for Business]({{site.baseurl}}/implement/whfb)
    2. Security keys (Coming soon!)
 
-# ICAM Troubleshooting Tools
+## ICAM Troubleshooting Tools
 
 ICAM can leverage a number of open source protocols for interoperability and data transfer. The Federal PKI is also a large, distributed ecosystem of over 180 certification authorities. Each certification authority operate independently which presents a challenge in trying to troubleshoot why a PIV card can't validate. This is a list of tools to help troubleshoot ICAM issues.
 
@@ -67,7 +67,7 @@ ICAM can leverage a number of open source protocols for interoperability and dat
 5. Federation Tools
    1. Coming soon!
 
-# Find Additional Guides
+## Find Additional Guides
 
 You can find additional guides across agency websites by using a few simple methods: 
 
