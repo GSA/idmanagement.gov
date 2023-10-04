@@ -409,7 +409,7 @@ The Governance services in the FICAM architecture include Identity Governance, A
 
 | Service | Description | Keywords |
 | --- | ------ | -----|
-| Identity Governance | The systems, solutions, and rules that link enterprise personnel, applications, and data to help agencies manage access and risk. | Management Framework, Rules and Procedures, Access Reviews and Recertifications | 
+| Identity Governance | The systems, solutions, and rules that link enterprise personnel, applications, and data to help agencies manage access and risk. | Management Framework, Rules and Procedures, Access Reviews and Re-certifications | 
 | Analytics | Leverage continuous analytics data to identify if someone has entitlements that conflict with access requirements. | Data collection, Monitoring, Review, Data Certification, Auditing and Reporting | 
 | Mitigation | Correct the problems and address risks, discovered by analysis, that may occur during standard operations. | Redress, Remediation |
 
