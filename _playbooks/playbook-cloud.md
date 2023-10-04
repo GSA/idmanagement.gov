@@ -95,7 +95,7 @@ This playbook is a collaboration between the Federal Chief Information Security 
 | 1.1 | 10/11/22 | Updated federation section for trust framework examples. |
 | 1.0 | 01/20/22 | Initial draft. | -->
 
-# Executive Summary
+## Executive Summary
 
 This Cloud Identity Playbook is a practical guide to assist federal agencies as they start to or further expand the use of workforce Identity, Credential, and Access Management (ICAM) services in a cloud operating model. Workforce identities are digital identities or accounts owned and managed by the agency, including employees and contractors. The most common Cloud Identity example is Identity as a Service (IDaaS). An IDaaS is typically an Identity Provider that offers Single Sign-on, multifactor authentication, and directory services in a single platform as a core set. It also may provide additional features.
 
@@ -149,7 +149,7 @@ The primary audience for this playbook is agency Identity, Credential, and Acces
 The Cloud Identity Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee, in collaboration with the Federal Chief Information Officer Council Cloud & Infrastructure Community of Practice, developed this playbook. U.S. Federal Executive Branch agencies can use this playbook to plan Cloud Identity services related to the [FICAM Architecture Services Framework]({{site.baseurl}}/arch/#services-framework-and-service-descriptions){:target="_blank"}{:rel="noopener noreferrer"}. This playbook is not official policy or mandated action, and it does not provide authoritative information technology terms. It includes best practices to supplement existing federal policies and builds upon [Executive Order 14028](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, [Office of Management and Budget Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, and existing Federal ICAM (FICAM) guidance and playbooks. Subject areas with intersecting scopes, such as cloud operating models, Federal Risk and Authorization Management Program (FedRAMP), and enterprise governance, are considered only to the extent that they relate to ICAM services delivered in a cloud service model. Privileged access management (e.g., superusers, domain administrators) is outside the scope of this playbook.
 
 
-# Cloud Identity 101
+## Cloud Identity 101
 
 Identity is foundational to security both on-premises and within cloud environments. It is the first touchpoint to access data and impact user experience. In cloud environments, application access acts as a perimeter to protect applications and workloads. Traditionally, network-based defenses perform this function. In this playbook, on-premises refers to an agency operating identity services on agency-owned and -maintained infrastructure.
 
@@ -179,7 +179,7 @@ The adoption of cloud services adds challenges. Cloud services operate on a shar
 
 See the [Data Center and Cloud OptimizationInitiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Cloud Smart Strategy](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} to understand the federal government's overarching strategic guidance on cloud adoption.
 
-# Cloud Identity Journey Steps
+## Cloud Identity Journey Steps
 
 Any journey has a map, but not all are the same. Use these four steps to plan your Cloud Identity Journey. Your agency may already support and encourage cloud services while others do not.
 
@@ -514,7 +514,7 @@ IDaaS products may vary in configuration and operation. This section provides te
    5. Testing.
 4. **Test and Implement Workflow.** After finding an optimal workflow, it is time to test and implement it. If possible, test in a non-production environment. If testing is only available in production, limit the impact to a small community of users or a non-mission critical task.
 
-# Emerging Topics
+## Emerging Topics
 
 The Cloud Identity Working Group discussed two emerging topics: Cloud Infrastructure Entitlement Management and DevSecOps Identity.
 
@@ -541,7 +541,7 @@ Since the goal of the DevOps team is to get software operating in production qui
 
 See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_blank"}{:rel="noopener noreferrer"} on DevSecOps for more information.
 
-# Appendix A. Policies, Standards, and Guidance
+## Appendix A. Policies, Standards, and Guidance
 
 ## Policies
 
@@ -578,7 +578,7 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 16. [Open Authorization (OAuth)](https://oauth.net/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 17. [System for Cross-Domain Identity Management (SCIM)](https://scim.cloud){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-# Appendix B. Acronyms
+## Appendix B. Acronyms
 
 | Acronym | Definition |
 | --- | --- |
