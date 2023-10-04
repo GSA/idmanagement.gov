@@ -88,7 +88,7 @@ The ICAMSC charters working groups based on a defined-purpose and timeline. See 
 
 ### Other ICAM Working Groups
 
-Other ICAM working groups may be charted under other committess or subcommittees of the Federal CIO Council.
+Other ICAM working groups may be charted under other committees or subcommittees of the Federal CIO Council.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
