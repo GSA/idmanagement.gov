@@ -416,10 +416,10 @@ This is the only difference when implementing the policy: which objects in your 
 
 You can set the policy option on a single user by checking the _Smart Card is required for interactive logon_ check box in the user account properties.  You can also apply this setting using group policy objects. When the **scforceoption** setting is applied, the SMARTCARD_REQUIRED flag is added to the UserAccountControl (UAC) and the DONT_EXPIRE_PASSWORD attribute is set to true.
 
-## Defining Kerberos Policies for Reauthentication
+## Defining Kerberos Policies for Re-authentication
 Although users can PIV authenticate to domain controllers, the client and the domain controller mantain those sessions using kerberos tickets.  
 
-Group policies can be configured by domain administrators to align with local security policies for maximum lifetimes of kerberos user tickets.  This may cause users to be prompted to reauthenticate with their PIV when prompted with one of the following options:
+Group policies can be configured by domain administrators to align with local security policies for maximum lifetimes of kerberos user tickets.  This may cause users to be prompted to re-authenticate with their PIV when prompted with one of the following options:
 
 - Windows Needs Your Current Credentials
 - Please Lock this computer, then unlock it using your most recent password or smart card
