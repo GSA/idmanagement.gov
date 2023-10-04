@@ -143,7 +143,7 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 
 The table below lists the current test to production OID equivalent used by the FPKIMA and CITE Participants.
 
-1. [Federal PKI Trust Infrascture Test OIDs](#federal-pki-trust-infrastructure-test-oids)
+1. [Federal PKI Trust Infrastructure Test OIDs](#federal-pki-trust-infrastructure-test-oids)
 2. [Federal Agency PKI Test OIDs](#federal-agency-pki-test-oids)
 3. [Federal Shared Service Provider (SSP) Test OIDs](#federal-shared-service-provider-ssp-test-oids)
 4. [Non-Federal Issuer (NFI) Test OIDs](#non-federal-issuer-nfi-test-oids)
