@@ -165,7 +165,7 @@ It’s common in the federal ICAM community to synonymously refer to everything 
 
 This playbook has two distinct sections.
 1.	The first section is an overview of identity lifecycle management. It explains the distinct processes involved in managing identities and gives a brief description of the similarities and differences in managing a PIV card versus managing an identity.
-2.	The second section contains plays on how to create an identity lifecycle management process within your agency. It includes four steps to create a policy, architect a solution, create a master user record, and then integrate the master user record for entrprise-wide use.
+2.	The second section contains plays on how to create an identity lifecycle management process within your agency. It includes four steps to create a policy, architect a solution, create a master user record, and then integrate the master user record for enterprise-wide use.
 
 The next section will outline the identity lifecycle process.
 

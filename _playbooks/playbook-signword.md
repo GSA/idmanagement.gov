@@ -118,7 +118,7 @@ _Each successive approver will be able to open the document and double-click the
 
 ## Add Multiple Invisible Digital Signatures
 
-Multiple approvers may digitally sign a document. Use the same procedures as you would to add one invisibile digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature). 
+Multiple approvers may digitally sign a document. Use the same procedures as you would to add one invisible digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature). 
 
 _The final approver will see multiple "invisible" signatures in the document._<br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-12.png" alt="A screenshot of a Microsoft Word Valid Signatures box, with two names highlighted and dates beside the names." width="333" height="138">
