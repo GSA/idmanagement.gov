@@ -94,7 +94,7 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 | 1.1 | 11/18/2021 | Renumbered tables |
 | 1.0 | 01/05/2021 | Initial Draft | -->
 
-# Executive Summary
+## Executive Summary
 
 The Digital Worker Identity Playbook is a practical guide to manage digital worker identities. This playbook helps federal agency ICAM programs as well as CIO and CISO offices determine the risk of and define a process for digital worker identity management. A digital worker is an automated, software-based tool, application, or agent that performs a business task or process similar to a human user and uses Artificial Intelligence (AI) or other autonomous decision-making capabilities. OMB memo 19-17 requires agencies to ensure the digital identity of automated technologies are “distinguishable, auditable, and consistently managed.” However, agencies face implementation challenges when establishing identities for digital workers. Most often, they attempt to use human worker processes, which may hinder digital worker creation or access. Common challenges include:
 -	Human worker identity attributes that do not apply to a digital worker. For example, some agencies create ad hoc digital worker identity attributes based on requirements for human users, some of which do not apply (e.g., work station location). Conversely, the scope of identity attributes required for human users may not include some attributes that are needed for digital workers (e.g., custodian names).
@@ -126,7 +126,7 @@ The list below includes the most common types of digital workers.
 
 This playbook was developed by the General Services Administration Office of Government-wide Policy with input from federal IT practitioners. This document shouldn’t be interpreted as official policy or mandated action, and doesn’t provide authoritative definitions for IT terms. Instead, this playbook supplements existing federal IT policies and builds upon the Office of Management and Budget (OMB) Memorandum 19-17 (M-19-17), Enabling Mission Delivery through Improved Identity, Credential, and Access Management and existing federal identity guidance and playbooks. Subject areas with intersecting scope, such as the ethical use and development of digital workers, are considered only to the extent that they relate to digital identity management and credentialing for digital workers. Specific security control implementations are out of scope of this playbook, as are any elements of data protection requirements and the suitability process for a digital worker sponsor and custodian.
 
-# A Three-Step Process for Digital Worker Identity Management
+## A Three-Step Process for Digital Worker Identity Management
 
 The three-step process outlined below is a structured, iterative approach with discrete actions to create a digital worker identity management process. _CIO and CISO offices_ are the intended audience for this guide. Use this guide to write, update, or enhance existing enterprise identity management policies. Agencies are encouraged to tailor these steps to meet organizational structures, unique requirements, and mission needs. 
 
@@ -149,7 +149,7 @@ The Digital Worker Impact Evaluation Matrix is a scoring tool. It uses six facto
 
 This playbook should aid agencies in integrating digital worker identity management processes into existing enterprise identity management policies.
 
-# Step 1. Determine the Impact
+## Step 1. Determine the Impact
 
 <img src="{{site.baseurl}}/assets/playbooks/dw-blue-step one.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 portion is dark blue. The Step 2 and Step 3 portions are gray." width="560" height="78">
 
@@ -246,7 +246,7 @@ The four adverse impact levels represent a different scale of harm a digital wor
 | 56-90 | **High** | Effects of an error or accident are wide-ranging and could result in serious or long-term impact on organizational missions/business functions, organizational assets, or the nation. This includes significant financial losses for the agency; substantially reduced capacity to conduct mission critical business; loss of PII, Business Identifiable Information, or PHI; and/or damage to agency image or reputation. |
 | 91+ | **Critical** | Effects of an error or accident are extensive and will have severe or catastrophic impact on organizational missions/business functions, assets, or the nation. This includes major financial losses for the agency or other organizations, loss of government continuity of operations or ability to conduct mission critical business, life-threatening injury or loss of life, and/or harm to national security. |
 
-# Step 2. Create an Identity
+## Step 2. Create an Identity
 
 <img src="{{site.baseurl}}/assets/playbooks/dw-red-step-two.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 portion is gray. The Step 2 portion is dark red. The Step 3 portion is gray." width="560" height="78">
 
@@ -306,11 +306,11 @@ Use Table 5 for specific validation actions aligned with adverse impact level.
 | VD-6 | **Validate the sponsor has recertified acknowledgment of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification annually | <b>✓</b><br>Verify sponsor recertification every six months |
 | VD-7| **Validate the custodian has recertified acknowledgment of responsibility for the digital worker at required intervals.** | N/A | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification annually | <b>✓</b><br>Verify custodian recertification every six months |
 
-{% include alert-info.html heading="Key Point" content="SP-3 is a similar but separate activity than VD-6. In SP-3 the sponsor acknowledges their role and responsibilities initially and reacknowledges them every six months. VD-6 is validation of the acknowledgment. Perform each action together or separately, but they are tracked separately for flexibility." %}
+{% include alert-info.html heading="Key Point" content="SP-3 is a similar but separate activity than VD-6. In SP-3 the sponsor acknowledges their role and responsibilities initially and re-acknowledges them every six months. VD-6 is validation of the acknowledgment. Perform each action together or separately, but they are tracked separately for flexibility." %}
 
 {% include alert-info.html heading="Key Point" content="VD-3, VD-4, and VD-5 are validating the code, ethics, and bias reviews that have been conducted. It is up to the individual agencies to ensure a standard for conducting such reviews is followed. Agency representatives, such as the sponsor or custodian, should collaborate within a community of practice to capture best practices on how to perform the various reviews in Step 2.2." %}
 
-# Step 3. Provision an Identity
+## Step 3. Provision an Identity
 
 <img src="{{site.baseurl}}/assets/playbooks/dw-green-step-three.png" alt="The process of establishing digital worker identities. Step 1 is Determine the impact. Step 2 is Create an identity. Step 3 is Provision an identity. The Step 1 and Step 2 portions are gray. The Step 3 portion is dark green." width="560" height="78">
 
@@ -359,7 +359,7 @@ Agencies may store and track identity governance data elements in an existing sy
 | DF-17 | **Digital Worker Bias Review Completion Date** | _Specify the digital worker bias review completion date (refer to VD-5 for more details). Recommend including the date in the format specified by agency guidelines (e.g., 01/01/2020)._ |
 | DF-18 | **Next Bias Review Date**<br>_(optional)_ | _Track when the next bias review date must be conducted. This can be tracked as a formula based on the last bias review date and adverse impact level requirements, or a format and method specified by agency guidelines._ |
 
-# Conclusion
+## Conclusion
 
 Digital worker identity management requires new government-wide policies and guidance tailored to digital workers' unique functional and security considerations. Government-wide adoption and implementation of this playbook provide agencies distinct actions on how to manage and maintain their digital workforce.
 
@@ -369,7 +369,7 @@ Digital worker identity management requires new government-wide policies and gui
 
 This playbook is iterative, and agencies are encouraged to collaborate, share best practices, and share lessons learned. Consider joining a federal committee and community of practice to learn and engage in digital worker identity management.
 
-# Appendix A. Digital Worker Impact Evaluation Factors
+## Appendix A. Digital Worker Impact Evaluation Factors
 
 This section provides a detailed breakdown of the information contained in Table 1, the Digital Worker Impact Evaluation Matrix.
 
@@ -440,7 +440,7 @@ This factor assesses the extent to which a human is involved in approving the de
 | **6b)** Digital worker develops insights and acts on the insights after human review | The digital worker is used first to develop insights. A human then reviews the insight and either edits or approves the insight. (e.g., a digital worker is used to diagnose a patient based on medical history data, then the tool will use the data to develop a diagnosis and recommended treatment [insight]. The doctor will review the diagnosis and recommended treatment. If the doctor disagrees with the insight, they will amend it; if the doctor agrees, they will approve it. Then, the digital worker administers the treatment to the patient.) | 5 |
 | **6c)** Digital worker develops insight and acts on the insights without human review or approval before the action is taken | The tool develops insights and then uses the insight to determine a course of action. The tool proceeds with this action without human review of the initial insight. (e.g., a digital worker recommends a diagnosis and treatment based on data from the patient’s medical history. The digital worker acts on this recommendation by administering treatment to the patient without a doctor’s intermediary review.) | 10 |
 
-# Appendix B. Critical Case Study
+## Appendix B. Critical Case Study
 
 A government hospital uses a digital worker to diagnose patients. 
 -	The digital worker uses an unattended machine learning algorithm on internal networks.
@@ -514,7 +514,7 @@ After the sponsorship and validation activities are complete and documented, the
 | DF-18 | **DW Bias Review Completion Date** | 07/11/2020 |
 | DF-19 | **DW Next Bias Review Date** _(optional)_ | 01/11/2021 |
 
-# Appendix C. Low Case Study
+## Appendix C. Low Case Study
 
 A digital worker helps the General Services Administration gather data on COVID-19.
 -	The digital worker is unattended, uses a standard system account, and has internal and external network access.
@@ -542,7 +542,7 @@ A digital worker helps the General Services Administration gather data on COVID-
 
 This digital worker impact level is Low. Its effect of an error or accident is minimal, resulting in negligible impacts. Low does not require a unique identity for a digital worker. The impact level is documented and a reminder is set to reassess the impact level with any code change. 
 
-# Footnotes
+## Footnotes
 
 [^1]: Digital worker is not synonymous with non-person entity (NPE), as NPE encompasses all entities with a digital identity including organizations, hardware devices, software applications, and information artifacts.
 [^2]: OMB Memorandum 19-17 instructs federal agencies to designate an integrated agency-wide ICAM office, team, or other governance structure in support of its Enterprise Risk Management capability to effectively govern and enforce ICAM efforts.

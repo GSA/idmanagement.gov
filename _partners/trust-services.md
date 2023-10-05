@@ -22,7 +22,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">DigiCert PKI Shared Services Decommission and Transition</h4>
     <p class="usa-alert__text">
-      DigiCert announced it is decommissiong it's federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
+      DigiCert announced it is decommissioning its federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
     </p>
   </div>
 </div>

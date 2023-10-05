@@ -31,7 +31,7 @@ This page contains information that is helpful in identifying changes in the Fed
 3. [PIV Issuer Information](#piv-issuer-information) - List of active PIV issuing CAs with end entity certificate distribution points.
 4. [FPKI System Change and Notification](#notifications) - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
 
-# FPKI Announcements
+## FPKI Announcements
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations. Announcements are removed after three years.
 
@@ -57,7 +57,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
   </tbody>
 </table>
 
-# FPKI Graph
+## FPKI Graph
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/gexfjs.css" />
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/jquery-ui-1.13.min.css" />
@@ -74,7 +74,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
-**Last Update**: September 25, 2023
+**Last Update**: October 02, 2023
 
 {% include graph.html %}
 
@@ -106,7 +106,7 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 
 The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://www.icsi.berkeley.edu/icsi/node/5065){:target="_blank"}{:rel="noopener noreferrer"}. 
 
-# PIV Issuer Information
+## PIV Issuer Information
 
 {% assign branches = "" | split: "" %}
 {% for piv in site.data.fpkicustomers %}
@@ -642,7 +642,7 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: dc5b590800765864587902af983c21a7209be320
 - CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG4/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG4/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
-# FPKI System Changes and Notifications
+## FPKI System Changes and Notifications
 
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
 
@@ -683,7 +683,7 @@ Subject:  FPKI System Notification - System Name
 - ca_cdp_uri: Certificate Revocation List link
 - ca_aia_uri: the authority information access certificate bundle for the CA certificate
 - ca_sia_uri: the subject information access certificate bundle for the CA certificate
-- ca_ocsp_uri: the OCSP address generally conatined in the AIA for the CA certificate
+- ca_ocsp_uri: the OCSP address generally contained in the AIA for the CA certificate
 - ee_cdp_uri: the CRL DP link for end entity certificates signed by the CA certificate
 - ee_ocsp_uri: the OCSP link for end entity certificates signed by the CA certificate
 

@@ -30,7 +30,7 @@ subnav:
 
 ---
 
-# Introduction
+## Introduction
 
 The **Physical Access Control System (PACS) 101** will help you understand concepts related to _Federal Identity, Credential, and Access Management_-compliant PACSs.  At a high level, a PACS is a collection of technologies that control physical access at one or more federal agency sites by electronically authenticating employees, contractors, and visitors. 
 
@@ -40,7 +40,7 @@ The **Physical Access Control System (PACS) 101** will help you understand conce
 
 We want to thank the Secure Technology Alliance, especially the members of the Access Control Council, for contributions to the original PACS Guides which is now the PACS 101 page and permission to reuse content from their presentations and the *How to Plan, Procure and Deploy a pacs-Enabled Physical Access Control System* webinar training.
 
-# PACS Explained
+## PACS Explained
 
 A Physical Access Control System (PACS) grants access to employees and contractors who work at or visit a site by electronically authenticating their PIV credentials. Although PACSs are information technology (IT) systems, they must be designed, deployed, and operated in cooperation with Physical Security teams to successfully meet agency mission needs. 
 
@@ -61,7 +61,7 @@ The following table defines common PACS components:
 
 {% include alert-info.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"/acquisition-professionals/#products\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
 
-# Compliant PACS Characteristics
+## Compliant PACS Characteristics
 
 In May 2019, the Office of Management and Budget (OMB) released memorandum [M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, _Enabling Mission Delivery through Improved Identity, Credential, and Access
 Management_. Related to PACS, M-19-17 rescinded memorandum [M-11-11](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, _Continued Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors_. The updated guidance adds further specificity to require the use of PIV credentials for physical access to federal facilities, implemented per _[The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}_ and NIST [SP 800-116, Revision 1](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, _ Guidelines for the Use of PIV Credentials in Facility Access_.
@@ -77,7 +77,7 @@ The FIPS 201 Evaluation Program in collaboration with the [PACS Modernization Wo
 
 - [PACS Assessment Toolkit Version 1.0]({{site.baseurl}}/docs/fips201ep-pacs-self-tool.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-# Deployment Models
+## Deployment Models
 
 There are two PACS deployment models.
 
@@ -123,7 +123,7 @@ Here are some key E-PACS advantages to consider:
     * Server hardware
     * System security assessment and accreditation
 	
-# Aligning Facility Security Level and Authentication
+## Aligning Facility Security Level and Authentication
 
 Federal agencies rely on Physical Access Control Systems (PACSs) and Personal Identity Verification (PIV) credentials to confirm that an employee, contractor, or visitor _is_ or _is not_ authorized to access a site and its critical assets, such as systems, information, and people. 
 
@@ -246,7 +246,7 @@ This page provides a sample PACS Procurement Checklist. You can reuse or tailor 
 
 Agency staff are encouraged to participate in steps where their roles are listed in bold underlined font.
 
-# PACS Procurement Best Practices 
+## PACS Procurement Best Practices 
 
 <table>
  <col width="400">
@@ -557,7 +557,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 - [GSA’s eBuy](https://www.ebuy.gsa.gov/ebuy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} RFQ online system enables you to post requirements, obtain quotes, and issue orders electronically. 
 - Approved [Certified System Engineer ICAM PACS (CSEIP) List]( https://www.securetechalliance.org/activities-cseip-registry/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.  Agencies must use FIPS 201-approved integrators and other contractors. The "lead designer" for FIPS 201-approved integrators must possess a Certified System Engineer ICAM PACS (CSEIP) certification or be certified by another federally recognized certification program.    
 
-# Training
+## Training
 
 Specialized training is essential for Physical Access Control System (PACS) technical leads and team members. This page describes roles, responsibilities, and training opportunities. 
 
@@ -614,7 +614,7 @@ In 2018, GSA hosted a _PACS Reverse Industry Day_ conference that featured gover
 - [Morning Session](https://www.youtube.com/watch?v=r9X1XtrLjMg){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [Afternoon Session](https://www.youtube.com/watch?v=bS8jdkW_WUI){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-# Lessons Learned
+## Lessons Learned
 
 Federal agencies have shared these PACS lessons learned:
 
@@ -667,7 +667,7 @@ Federal agencies have shared these PACS lessons learned:
 - Create and maintain a training plan that formally documents training requirements.
 - Provide role-specific training to agency stakeholders, such as HR, IT, or Security.
 
-# References
+## References
 
 ## Public Law
 
@@ -738,7 +738,7 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 ["Federal Building Security:
 Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"](https://www.gao.gov/products/GAO-19-138){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Government Accountability Office (GAO), December 20, 2018 
 
-# Glossary
+## Glossary
 
 {% include alert-info.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
 

@@ -101,11 +101,11 @@ December 29, 2022 -->
 | 1.1 | 11/17/21 | Inserted Key Point box at the end of Step 2. |
 | 1.0 | 09/13/20 | Initial Draft | -->
 
-# Acknowledgments
+## Acknowledgments
 
 This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential, and Access Management Subcommittee (ICAMSC). The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA). 
 
-# Introduction
+## Introduction
 
 Digital identity represents each individual engaged in an online transaction. However, an individual’s real-life identity may not be known when used to access a digital service.[^1] Identity proofing helps establish that the individual is who they claim to be. Digital authentication provides reasonable risk-based assurances that the individual accessing the application is the same individual who previously accessed the service.  This playbook is a method to apply the National Institute of Standards and Technology (NIST) Special Publication 800-63-3 Digital Identity Guidelines. Federal agencies can perform a Digital Identity Risk Assessment (DIRA) to determine the appropriate identity, authenticator, or federation level outlined to access an application.
 
@@ -149,7 +149,7 @@ This playbook does not apply to:
 
 The following sections describe a basic DIRA process and provide plays to help you implement efficiency into your agency’s processes. 
 
-# High-Level DIRA Process
+## High-Level DIRA Process
 
 The DIRA process begins when a new application or system is identified or a time-driven or event-driven reassessment is triggered. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a Digital Identity Assessment Statement (DIAS), as shown in Figure 1.
 
@@ -349,7 +349,7 @@ If an event triggers a security impact analysis, an agency may perform a DIRA ou
 - How information, including PII, is processed; or
 - How information is processed, stored, or transmitted by the system.
 
-# Agency Process Plays
+## Agency Process Plays
 
 This section introduces six plays for your agency to create efficient and consistent processes for a DIRA. 
 
@@ -439,7 +439,7 @@ Reconsider the business process carefully and validate the current and future de
 
 {% include alert-info.html heading="Key Point" content="Some public, business, or partner users may only interact with the government process and application once a year or less.<br><br> Revisit your process and application, and allow users to complete the transaction once before opting in to create an account." %}
 
-# Appendix A. Policy, Standards, and Guidance
+## Appendix A. Policy, Standards, and Guidance
 
 This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations.  NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for agencies, and [Implementation Resources](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for solution developers. 
 
@@ -463,7 +463,7 @@ This section provides links to the federal laws, policies, standards and other g
 | NIST SP 800-53A | NIST Special Publication 800-53A, Revision 5, [Assessing Security and Privacy Controls in Information Systems and Organizations](https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Updated January 2022 | 
 | NIST RMF Overview&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | NIST [Risk Management Framework Overview](https://csrc.nist.gov/projects/risk-management/about-rmf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, November 30, 2016| 
 
-# Appendix B. Examples and Templates
+## Appendix B. Examples and Templates
 
 This appendix provides examples and templates of existing resources to help establish or improve DIRA processes. It includes the following sections:
 
@@ -507,7 +507,7 @@ This section includes additional example process flow diagrams used by some agen
 
 This [Digital Identity Acceptance Statement template]({{site.baseurl}}/docs/playbook-dira-dias-template.docx){:target="_blank"}{:rel="noopener noreferrer"} is provided as one sample for agencies.   
 
-# Appendix C. NIST Special Publication 800-63-3, Requirements Traceability Matrix
+## Appendix C. NIST Special Publication 800-63-3, Requirements Traceability Matrix
 
 This appendix includes both normative requirements and informative references from NIST SP 800-63-3 Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included. The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development. 
 
@@ -526,7 +526,7 @@ This appendix includes both normative requirements and informative references fr
 | Agencies shall implement procedures to document both the justification for any departure from normative requirements and detail the compensating control(s) employed. | 5.4 | Supports the proposed process step to standardize Digital Identity Acceptance Statements and the examples provided by agencies. |
 | In analyzing risks, agencies shall consider all of the expected direct and indirect results of an authentication failure, including the possibility that there will be more than one failure or harms to more than one person or organization.<br><br>The definitions of potential impacts contain some relative terms, like “serious” or “minor,” whose meaning will depend on context. The agency should consider the context and the nature of the persons or entities affected to decide the relative significance of these harms. Over time, the meaning of these terms will become more definite as agencies gain practical experience with these issues. The analysis of harms to agency programs or other public interests depends strongly on the context; the agency should consider these issues with care. | 6 | Supports the proposed play to add context when determining risk with application owners and business teams. |
 
-# Appendix D. Updates to NIST Special Publication 800-63
+## Appendix D. Updates to NIST Special Publication 800-63
 
 In June 2017, NIST replaced the Electronic Authentication Guideline[^24] with the Digital Identity Guidelines.[^25] The new standard provides agencies increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. It outlines the digital identity risk assessment methodology that federal agencies must implement. 
 
@@ -558,7 +558,7 @@ The revised guidance provides individual assurance levels that can be mixed and 
 -	Enhanced privacy, and 
 -	Reduced risk.
 
-# Footnotes
+## Footnotes
 
 [^1]:	A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet.
 [^2]:	A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and NIST Special Publication 800-63-3 Digital Identity Guidelines.

@@ -97,7 +97,7 @@ Review the testing agreements, and sign and submit the appropriate agreement wit
 - [Approved Product List Application Guidance Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides a checklist of which documents are required when submitting a new or upgraded solution. 
 - [Removed Products List (RPL) Process Document (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If your product has been removed from the APL, review this document for the procedures.
 
-# Personal Identity Verification Credentials
+## Personal Identity Verification Credentials
 
 - [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} – If you are an agency or organization applying for your Annual Review Audit for the Federal Public Key Infrastructure (FPKI), submit this form to fips201ep at gsa.gov; two testing options are available:
   - In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their application form, or
@@ -124,7 +124,7 @@ Agencies that wish to issue D-PIV credentials should follow these steps:
 
 Upon successful completion of DPCI testing, the agency or organization will be granted approval to issue D-PIV credentials.
 
-# Physical Access Control System
+## Physical Access Control System
 
 GSA tests and validates the interoperability of PIV and CAC credentials with the software and hardware used to restrict physical access to government facilities. 
 
@@ -135,8 +135,10 @@ Review the test procedures, choose one of the application packages, and submit t
     - [Backend Registration Companion Paper (PDF, March 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [FRTC Express Companion Paper (PDF, March 2021)]({{site.baseurl}}/docs/fips201ep-frtcexpress.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [PACS FRTC PIN Usage Policy Addendum (PDF, August 2018)]({{site.baseurl}}/docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-
     - Review this Addendum for help resetting PIN retry counters, and determining the number of remaining PIN retries during Discovery Object testing.
+- [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 2023)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - This document will be continuously updated as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov) by November 30, 2023.
+
 
 ## PACS Application Package for New Systems or for Updates to Previously Approved Systems
 

@@ -30,11 +30,11 @@ This page is for program managers and acquisition professionals looking for appr
 
 If you think this page is missing something, [contact us]({{site.baseurl}}/contact-us) to ask a question.
 
-# How To Purchase
+## How To Purchase
 
 Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/) to view FICAM products, services and purchasing guidance.
 
-# Approved Products - Physical Access Control Systems
+## Approved Products - Physical Access Control Systems
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal Government. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies:
 
@@ -103,10 +103,11 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 - [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-10023-10038-10039-10099-10102-10143-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-5-6-7-19-identiv.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-130-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-32-33-34-35-92-93-94-95-96-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-92-96-63-67-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
 ## PACS Solutions Awaiting Approval
 
@@ -140,7 +141,7 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 
 Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
 
-# Approved Products - PIV Smart Cards
+## Approved Products - PIV Smart Cards
 
 The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. These are blank PIV cards available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL). 
 
@@ -200,7 +201,7 @@ Submit the memo to [GSA’s Associate Administrator for Government-wide Policy (
 
 Note that GSA will provide the Office of the Federal Chief Information Officer (OFCIO) at the Office of Management and Budget (OMB) with copies of all memos submitted.
 
-# Removed Product List
+## Removed Product List
 
 {% assign categories = "" | split: "" %}
 {% for rpl in site.data.fips201rpl %}

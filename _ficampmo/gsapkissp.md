@@ -77,7 +77,7 @@ subnav:
 | 1.0 | 02/14/2023 | Initial draft | -->
 
 
-# Overview
+## Overview
 
 The General Services Administration (GSA), Ofﬁce of Government-wide Policy, manages the Public Key Infrastructure (PKI) Shared Services Provider (SSP) program. The primary program focus is to help agencies meet the policy intent of Homeland Security Presidential Directive 12, as well as achieve digital signature interoperability.
 
@@ -87,7 +87,7 @@ A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI complia
 - [Section 2](#section-ii-ssp-application-and-maintenance-activities) -Deﬁnes the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.
 - [Section 3](#section-iii-digital-certiﬁcate-services) -Lists available services that a SSP should offer.
 
-# Audience
+## Audience
 
 This document is primarily for the following audience:
 
@@ -97,7 +97,7 @@ This document is primarily for the following audience:
 
 If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov).
 
-# Section I: GSA PKI SSP Program 
+## Section I: GSA PKI SSP Program 
 
 The GSA SSP Program has a long history of successfully providing digital certiﬁcate services for employees, contractors, and afﬁliates. The program was started in December 2004 when the Ofﬁce of Management and Budget (OMB) issued a directive, M-05-05, directing federal agencies to buy their digital certiﬁcate services through the SSP Program. Almost 20 years later, the program is a cornerstone for some federal agencies despite the drive to expand new services in a thin market. 
 
@@ -144,7 +144,7 @@ The GSA, Ofﬁce of Chief Information Security Ofﬁcer (OCISO) provides securit
 
 The GSA Federal Acquisition Service (FAS) connects government buyers with the GSA PKI SSPs. The FAS organization captures the GSA PKI SSP services and sets prices, terms, and conditions of the Special Item Number (SIN) on the [GSA Multiple Award Schedule](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. The SSP SIN is intended to make it easier for potential buyers to search for the digital certiﬁcate services offered by the GSA PKI SSPs.
 
-# Section II: SSP Application and Maintenance Activities  
+## Section II: SSP Application and Maintenance Activities  
 
 Federal agencies requiring digital certiﬁcate services from a SSP will send a Request for Quotation or a Request for Proposal based on the SSP SIN—sending alerts to SSPs. Federal agencies can expect a response from the SSPs that reﬂects the due diligence completed by the Federal Acquisition Service (FAS) to offer SSPs that satisfy federal requirements.
 
@@ -275,7 +275,7 @@ The GSA PKI SSP Program Ofﬁce and GSA’s security team perform continuous mon
 
 The vendor must maintain its GSA PKI SSP MAS Contract to stay in compliance with the GSA PKI SSP MOA. If a vendor cannot maintain a GSA PKI SSP MAS Contract, the PKI vendor will coordinate decommission activity through the GSA PKI SSP Program Ofﬁce with customer agencies, the Federal PKI Policy Authority, and supporting GSA ofﬁces.
 
-# Section III: Digital Certiﬁcate Services
+## Section III: Digital Certiﬁcate Services
 
 While the SSP Program has primarily focused on digital certiﬁcates for Personal Identity Veriﬁcation (PIV) cards, the [COMMON CP] provides opportunities (and supporting Object Identiﬁers (OIDs) for SSPs to offer additional services to federal agencies.
 
@@ -335,11 +335,11 @@ A digital signature certiﬁcate is used to digitally sign documents such as PDF
 
 Key Management Services store and manage private keys associated with encryption certiﬁcates. Examples might include Key Escrow and Recovery, Key History, and Data Decryption Services.
 
-# Conclusion
+## Conclusion
 
 GSA established the GSA PKI SSP Program to help agencies identify and procure federally-compliant PKI services and digital certiﬁcates. There may be multiple types of PKI SSPsrs, but only one type of GSA PKI SSP. This clear deﬁnition not only helps agencies identify approved services, but also leverage the governmentwide acquisition vehicles for customer agencies to receive consistent pricing, terms, and services. The GSA PKI SSP Program Ofﬁce maintains the SSP Program and coordinates government activity on behalf of the GSA PKI SSPs.
 
-# Appendix A - Sample MOA
+## Appendix A - Sample MOA
 
 <p align="center">
   <b>

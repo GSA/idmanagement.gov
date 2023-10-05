@@ -26,9 +26,9 @@ The following guide walks you through configuring Outlook to leverage the digita
 
 ## Configure Outlook to Send Secure Email
 
-{% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryption (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME cpabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
+{% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryption (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME capabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
 
-The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find addtional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references).
+The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find additional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references).
 
 1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings...** and select **Email Security**.
@@ -50,7 +50,7 @@ The following steps pertain to Microsoft Outlook 2016, and may also be applicabl
 
 ### Publish Your Certificates to the Global Address List
 
-The Global Address List (GAL) is a shared, enterprise-wide contact list in Microsoft Active Directory.  Publishing your certificates to the GAL will add your encryption certificate and assoicated public key to an enterprise address book, making it easier for other internal agency users to send you an encrypted email.
+The Global Address List (GAL) is a shared, enterprise-wide contact list in Microsoft Active Directory.  Publishing your certificates to the GAL will add your encryption certificate and associated public key to an enterprise address book, making it easier for other internal agency users to send you an encrypted email.
 
 1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings** and select **Email Security**.

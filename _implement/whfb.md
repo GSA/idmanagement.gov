@@ -62,7 +62,7 @@ The available sign-in options for Windows Hello for Business include:
 
 Biometric data is stored locally on the device, and it is never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
-# Assumptions
+## Assumptions
 This playbook assumes that devices are cloud-only and there is no hybrid device configuration with Active Directory. Deploying Windows Hello for Business in a hybrid environment requires configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended. More on that here: [Windows Hello for Business cloud Kerberos trust clients configuration and enrollment | Microsoft Learn](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust-provision?tabs=intune){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 This playbook assumes that all devices have a TPM 2.0 module that complies with Federal Information Processing Standards (FIPS). All devices should be on Windows 10 version 1709 (or later) or Windows 11. Preferably, all devices should be Windows 10 version 1903 or later.
@@ -72,14 +72,14 @@ This playbook also assumes that:
 - Devices are equipped with an infrared camera or fingerprint reader to perform biometric authentication.
 - Microsoft Intune (Intune) is the Windows MDM solution.
 
-# Prerequisites
+## Prerequisites
 Devices must be Azure AD registered at minimum, and it's preferable that devices are Azure AD joined.
 
 Users must have a Microsoft Intune license feature as a stand-alone license or as part of a bundled license (Microsoft 365 E3 for GCC High and Microsoft 365 E5 for GCC High).
 
 It's also preferable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
 
-# Technology and terms
+## Technology and terms
 
 [Introduction to device identity and join types](https://learn.microsoft.com/en-us/azure/active-directory/devices/overview){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
@@ -122,7 +122,7 @@ Learn more about [hybrid Azure AD joined devices](https://learn.microsoft.com/en
 
 Device management enables organizations to administer and maintain devices, including virtual machines, physical computers, mobile devices, and IoT devices. Microsoft Intune is the mobile device management (MDM) solution for the Microsoft 365 platform.
 
-# Prepare users to use Windows Hello
+## Prepare users to use Windows Hello
 
 ### Using Windows Hello and biometrics
 
@@ -161,7 +161,7 @@ Suppose you sign in on  **Device B**  and change your password for your Microsof
 5. Sign in with new password.
 6. The next time that you sign in, you can select  **Sign-in options \> PIN**  to resume using your PIN.
 
-# WHfB policy configuration
+## WHfB policy configuration
 
 Windows Hello for Business can be enabled multiple ways through Microsoft Intune. The first method is through Windows Device Enrollment. This method can be used for devices that are Azure AD joined but have not yet enrolled in Intune. The second method, Device Configuration Profile, is used for devices already enrolled in Intune.
 
@@ -431,7 +431,7 @@ Select  **Next**  to continue.
 ![Figure 13: Windows Hello for Business Configuration Profile Completion]({{site.baseurl}}/assets/playbooks/whfb/13-Intune-WHfB-ConfigProfile-review.png)
 
 
-# WHfB user experience
+## WHfB user experience
 
 This section details the user experience for setting up Windows Hello for Business. View the [minimum device requirements for fingerprint and facial recognition sensors.](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="The minimum device requirements for fingerprint and facial recognition sensors"}.
 
@@ -734,7 +734,7 @@ Security keys also can be used for Windows Hello for Business authentication. Th
 
 View [additional methods for enabling Windows security keys](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-windows#enable-security-keys-for-windows-sign-in){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="additional methods for enabling Windows security keys"}.
 
-# Windows Hello for Business FAQs
+## Windows Hello for Business FAQs
 
 Some of the most commonly asked questions about WHfB are presented below. View the [full list of common questions](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-faq){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="full list of common questions"}.
 

@@ -22,7 +22,7 @@ This section contains information on the GSA ICAM Solutions Catalog and GSA ICAM
 - [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
 - [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
 
-# GSA ICAM Solutions and Shared Services Roadmap
+## GSA ICAM Solutions and Shared Services Roadmap
 
 [This document]({{site.baseurl}}/docs/gsa-icam-roadmap.pdf){:target="_blank"}{:rel="noopener noreferrer"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services and developed activities to address identified gaps based on the ICAM Services Framework.
 The roadmap aligns actions to the following three phases:
@@ -163,7 +163,7 @@ The following table provides a summary of the roadmap activities. This roadmap i
   </tbody>
 </table>
 
-# GSA ICAM Solutions Catalog
+## GSA ICAM Solutions Catalog
 
 On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential, and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation; therefore, new SIN designations have been included.
 
@@ -256,7 +256,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
   </tr>
 </table>
 
-# GSA eBuy Ordering Instructions For Agencies
+## GSA eBuy Ordering Instructions For Agencies
 
 Buyers are required to register on GSA Advantage. Buyers can use the same User ID and Password on GSA eBuy and GSA Advantage. Vendor listings change regularly and are available in eBuy. Below are modified steps to access the GSA eBuy Buyer website:
 
@@ -271,7 +271,7 @@ Buyers are required to register on GSA Advantage. Buyers can use the same User I
 9. Submit – Review and submit the RFQ/RFI.
 
 
-# Additional Resources
+## Additional Resources
 
 - [GSA eBuy Job Aid](https://www.ebuy.gsa.gov/ebuy/assets/content/eBuy-Buyer_jobaid.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [GSA ICAM](https://www.gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

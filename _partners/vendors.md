@@ -29,7 +29,7 @@ Two product categories require additional testing at a testing facility before a
 
 Please get in touch with fips201ep at gsa dot gov if you have product approval questions.
 
-# Product Approval Process
+## Product Approval Process
 
 It takes three steps to get a product approved for federal use. **If your product does not require additional testing under one of the categories listed above, skip to step 3.**
 
@@ -75,7 +75,7 @@ The GSA MAS Program also referred to as the "Schedule," is the premier contract 
 
 - [Sell through GSA MAS](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/multiple-award-schedule-it/sell-through-mas-information-technology){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}  – Agencies use the MAS to fulfill their technology products and services needs.
 
-# Professional Services
+## Professional Services
 
 Professional services involve integrating solutions and helping agencies deploy and operate identity and credentialing systems related to ICAM implementations.
 

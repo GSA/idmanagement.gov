@@ -154,7 +154,9 @@ collections:
   ficampmo:
     output: true
     permalink: /ficam/:path/
-
+  redirects:
+    output: true
+    permalink: /redirects/:path/
 
 # Leaving in place: 
 # Unsure of placement in new site.

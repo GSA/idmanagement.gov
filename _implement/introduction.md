@@ -29,7 +29,7 @@ ICAM Engineering Guides are for system administrators configuring agency infrast
 
 The majority of engineering guides are focused on helping agencies configure PIV credential authentication in the most common operating systems and applications. A new series of FIDO multi-factor authentication playbooks are also include.
 
-# Configuration Guides
+## Configuration Guides
 
 1. Smart Card Configuration
    1. [Windows Domains]({{site.baseurl}}/implement/scl-windows)
@@ -43,12 +43,12 @@ The majority of engineering guides are focused on helping agencies configure PIV
    1. [Windows Hello for Business]({{site.baseurl}}/implement/whfb)
    2. Security keys (Coming soon!)
 
-# ICAM Troubleshooting Tools
+## ICAM Troubleshooting Tools
 
 ICAM can leverage a number of open source protocols for interoperability and data transfer. The Federal PKI is also a large, distributed ecosystem of over 180 certification authorities. Each certification authority operate independently which presents a challenge in trying to troubleshoot why a PIV card can't validate. This is a list of tools to help troubleshoot ICAM issues.
 
 1. Federal PKI Validation
-   1. [FPKI Ecosytem Changes]({{site.baseurl}}/fpki/notifications) - This page contains three distinct pages of information as well as an associated certificate bundle.
+   1. [FPKI Ecosystem Changes]({{site.baseurl}}/fpki/notifications) - This page contains three distinct pages of information as well as an associated certificate bundle.
       1. [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph) - The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem.
       2. [PIV Issuer Information]({{site.baseurl}}/fpki/notifications/#piv-issuer-information) - List of active PIV issuing CAs with end entity certificate distribution points.
       3. [FPKI System Change and Notification]({{site.baseurl}}/fpki/notifications/#notifications) - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
@@ -67,7 +67,7 @@ ICAM can leverage a number of open source protocols for interoperability and dat
 5. Federation Tools
    1. Coming soon!
 
-# Find Additional Guides
+## Find Additional Guides
 
 You can find additional guides across agency websites by using a few simple methods: 
 

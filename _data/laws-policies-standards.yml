@@ -672,7 +672,7 @@
   shortName: "ICAM Governance Framework"
   longName: "Identity, Credential, and Access Management Governance Framework"
   description: >-
-    The ICAM Governance Frameowork Working Group, composed of ICAM practitioners from
+    The ICAM Governance Framework Working Group, composed of ICAM practitioners from
     several federal agencies, developed this ICAM Governance Framework as a tool to help
     agencies build and improve ICAM governance structures, processes, and policies.
   published: 2021-09-01
@@ -686,7 +686,7 @@
   shortName: "NISTIR 8149"
   longName: "NIST Interagency Report 8149: Developing Trust Frameworks to Support Identity Federations"
   description: >-
-    Desecribes trust frameworks for identity federations, which provide a secure method for leveraging shared 
+    Describes trust frameworks for identity federations, which provide a secure method for leveraging shared 
     identity credentials across communities of similarly-focused online service providers.
   published: 2018-01-12
   externalURL: "https://csrc.nist.gov/publications/detail/nistir/8149/final"
@@ -863,7 +863,7 @@
     - Access Management - Authentication
 - &PLAYBOOKS
   type: Guidance
-  shortName: "FICAM Playboks"
+  shortName: "FICAM Playbooks"
   longName: "FICAM Playbooks"
   description: >-
     A playbook is a comprehensive guide on a technical topic, describing both overarching strategy 

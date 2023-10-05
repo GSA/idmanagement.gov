@@ -3,6 +3,16 @@
 # If announcement content is full summary, leave 'url' blank, set soure to 'IDManagement.gov' and doctype = 'Announcement'
 # HTML tags can be included inline with summary information.
 
+- name: GSA FIPS 201 EP initial version of the FRTC for PACS Alternative Authenticators, version 1.0 
+  summary: <p>The initial version of the FRTC for PACS Alternative Authenticators, version 1.0 has been published for public review and comments under the Physical Access Control System section.</p><p>This document will be continuously updated as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to <a href="mailto&#58;fips201ep@gsa.gov">fips201ep@gsa.gov</a> by November 30, 2023.</p>
+  pubdate: September 26, 2023
+  url: 
+  source: IDManagement.gov
+  target: _blank
+  expanded: false
+  doctype: Announcement
+  status: Active
+
 - name: GSA FIPS 201 Testing Lab Re-opening
   summary: It is our great pleasure to announce the reopening of the FIPS201 Evaluation Program's compliance testing lab. An email announcing the reopening of the lab was sent out to the community on Wednesday, July 20, 2022. Due to a recent change in contract vehicles the lab had to physically move to a new location. Even though the distance was not far, the move itself was time consuming. We would like to thank those PACS vendors who took the time to certify their current installations prior to the move, and you may be called upon to verify that everything moved over is in working order. You will be contacted by the lab team if further assistance is needed. For those of you who have been waiting to submit new applications, or conduct updates, we appreciate your patience. You are now free to send the paperwork to our group email address fips201ep at gsa dot gov.
   pubdate: July 27, 2022
