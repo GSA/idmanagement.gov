@@ -34,7 +34,7 @@ subnav:
 
 The **Physical Access Control System (PACS) 101** will help you understand concepts related to _Federal Identity, Credential, and Access Management_-compliant PACSs.  At a high level, a PACS is a collection of technologies that control physical access at one or more federal agency sites by electronically authenticating employees, contractors, and visitors. 
 
-{% include alert-info.html content="The contents of these 101 guides are meant to be informative and do not serve as the basis for determining PACS compliance. Agency-specific guidance should supersede the recommendations within these guides, where appropriate." %}
+{% include alert-no-icon.html content="The contents of these 101 guides are meant to be informative and do not serve as the basis for determining PACS compliance. Agency-specific guidance should supersede the recommendations within these guides, where appropriate." %}
 
 ## Acknowledgment
 
@@ -59,7 +59,7 @@ The following table defines common PACS components:
 | **Credential<br>holder data repository** | Contains employee and contractor data and physical access privileges. Control panels use this authoritative data to validate credential data. |
 | **Auxiliary Systems** | Agencies may integrate the PACS with additional facility monitoring systems such as surveillance systems, fire alarm systems, and evacuation systems. |
 
-{% include alert-info.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"/acquisition-professionals/#products\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
+{% include alert-no-icon.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"/acquisition-professionals/#products\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Certification and Accreditation and obtain an Authority to Operate from your agency before connecting to the network." %}
 
 ## Compliant PACS Characteristics
 
@@ -98,7 +98,7 @@ Agencies that use standalone PACSs have encountered operational challenges:
 * Agencies experience reduced situational awareness (for example, logs cannot be correlated across the enterprise).
 * Agencies with many standalone PACSs see increased human error, such as data entry errors.
 
-{% include alert-success.html content="Can agencies centrally control physical access for most, or all, of their sites?  Yes. The answer is to implement an Enterprise Physical Access Control System." %}
+{% include alert-no-icon-success.html content="Can agencies centrally control physical access for most, or all, of their sites?  Yes. The answer is to implement an Enterprise Physical Access Control System." %}
 
 ## Enterprise PACS
 
@@ -106,7 +106,7 @@ An Enterprise PACS (E-PACS) extends the concept of a standalone PACS to act as a
 
 E-PACSs rely on the same components as standalone PACSs. However, an essential architectural distinction is that an E-PACS connects to an agency's enterprise network, whereas a PACS typically does not.
 
-{% include alert-info.html content="Some agencies need standalone PACSs for their unique sites and missions, but most agencies could benefit from transitioning to an E-PACS." %}
+{% include alert-no-icon.html content="Some agencies need standalone PACSs for their unique sites and missions, but most agencies could benefit from transitioning to an E-PACS." %}
 
 ### Would an Enterprise PACS Work for Our Agency?
 
@@ -133,7 +133,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 ## Assess Facility Security Level 
 
-{% include alert-info.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks:<br> - <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
+{% include alert-no-icon.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks:<br> - <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
@@ -174,11 +174,11 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
 
-{% include alert-info.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--externa\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_1.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
+{% include alert-no-icon.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--externa\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_1.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
 
 ## Categorize Security Areas
 
-{% include alert-info.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>." %}
+{% include alert-no-icon.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>." %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
 - Once you've inventoried and mapped assets by risk and impact level, it's time to categorize security areas.
@@ -195,7 +195,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
 
 ## Determine Authentication Factors
 
-{% include alert-info.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a> recommends the following method to determine authentication factors for Exclusion, Limited and Controlled security areas." %}
+{% include alert-no-icon.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a> recommends the following method to determine authentication factors for Exclusion, Limited and Controlled security areas." %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
 - Once you have categorized all security area categories, you will select the minimum number of authentication factors (1, 2, or 3) needed to access and safeguard the facility:
@@ -208,7 +208,7 @@ Additional guidance regarding aligning FSL to PACS authentication factors can be
   
 ## Select Authentication Mechanisms 
 
-{% include alert-info.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/fips/201/3/final\" target=\"_blank\" rel=\"noopener noreferrer\">FIPS 201-3</a>, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
+{% include alert-no-icon.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/fips/201/3/final\" target=\"_blank\" rel=\"noopener noreferrer\">FIPS 201-3</a>, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanism for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
@@ -231,11 +231,11 @@ The table below gives the possible authentication mechanisms for the three (3) s
 
 **Note:** Some authentication mechanisms defined by NIST SP 800-116, Revision 1 might not be available on all user-population cards (for example, on-card biometric comparison or PKI-CAK). 
 
-{% include alert-info.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA)." %}
+{% include alert-no-icon.html content="When using PKI-CAK and PKI-AUTH as authentication mechanisms, certificates must be validated. Verify the certificate against a Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) server response. Also, verify that the certificate chains to the Federal Common Policy root certification authority (CA)." %}
 
 Visit the [PKI 101]({{site.baseurl}}/university/pki/) to learn more about certificate trust.
 
-{% include alert-info.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a class=\"usa-link usa-link--external\" href=\"https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
+{% include alert-no-icon.html content="A good starting point that will help you understand Physical Access Control System procurements is GSA’s <a class=\"usa-link usa-link--external\" href=\"https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide. </a>" %}
 
 This page provides a sample PACS Procurement Checklist. You can reuse or tailor this checklist according to your agency’s practices. The checklist highlights common procurement activities as they relate to the following roles:
 - Information Technology or Physical Security Engineers (ENG)
@@ -543,7 +543,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
  
 </table>
 
-{% include alert-info.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa dot gov or call 1-855-482-4348." %}
+{% include alert-no-icon.html content="If at any time you have PACS procurement questions, contact the GSA IT Customer Service at ITCSC at gsa dot gov or call 1-855-482-4348." %}
 
 ## Why Can We Buy Only GSA-Approved Products and Services?
 [GSA’s FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201, secure operations, and interoperability.   
@@ -572,9 +572,9 @@ PACS project teams consist of both agency employees and contractors. Teams inclu
 | Technician | Installs, administers, and maintains network and system components. |
 | Operator | Uses physical security functions, such as setting access privileges or taking actions to resolve system-generated events and alarms.|
 
-{% include alert-info.html content="IT Architects, Engineers, and Operators may be federal employees and/or contractors. Technicians are typically contractors." %}
+{% include alert-no-icon.html content="IT Architects, Engineers, and Operators may be federal employees and/or contractors. Technicians are typically contractors." %}
 
-{% include alert-info.html content="Teams also include a PACS Project Manager, Procurements Official or Specialist, project management specialists, budget analysts, lawyer(s), etc." %}
+{% include alert-no-icon.html content="Teams also include a PACS Project Manager, Procurements Official or Specialist, project management specialists, budget analysts, lawyer(s), etc." %}
 
 ## Recommended Technical Training
 
@@ -585,11 +585,11 @@ PACS project teams consist of both agency employees and contractors. Teams inclu
 | Technicians | Should complete PACS product manufacturers' training (i.e., PACS APL products) related to the PACS solution implementation.| 
 | Operators | Should complete tailored training in federal government policies and standards related to PACS. Completing PACS product manufacturers' (i.e., PACS APL products) certification related to the PACS implementation is recommended.|
 
-{% include alert-info.html content="Agencies must specify their requirements for specific roles, responsibilities, and training in their Request for Information (RFI) (that is, request for contractor qualifications statements) and Statement of Work (SOW)." %}
+{% include alert-no-icon.html content="Agencies must specify their requirements for specific roles, responsibilities, and training in their Request for Information (RFI) (that is, request for contractor qualifications statements) and Statement of Work (SOW)." %}
 
 ## Training Opportunities
 
-{% include alert-info.html content="Agencies that plan to initiate a PACS project should include line items for related employee training in their annual training plans and annual training budgets." %}
+{% include alert-no-icon.html content="Agencies that plan to initiate a PACS project should include line items for related employee training in their annual training plans and annual training budgets." %}
 
 ### Department of Homeland Security - Interagency Security Committee
 The [Interagency Security Committee](https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} developed a series of free, self-paced, [online training courses](https://www.dhs.gov/interagency-security-committee-training){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} that provide an overview of facility security standards, processes, and practices.
@@ -740,7 +740,7 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 
 ## Glossary
 
-{% include alert-info.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
+{% include alert-no-icon.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
 
 1. <strong id="access-control">Access Control</strong> - The process of granting or denying specific requests to: (1) obtain and use information and related information processing services; and (2) enter physical facilities, such as federal buildings, military establishments, and border crossing entrances.
 2. <strong id="access-point">Access Point</strong> - An access point can be a door, turnstile, or other physical barrier where granting access can be electronically controlled.
