@@ -32,7 +32,7 @@ This page contains information to help Federal Public Key Infrastructure (FPKI) 
 
 For any questions, please contact fpki at gsa.gov.
 
-# Federal PKI Policies and Profiles
+## Federal PKI Policies and Profiles
 
 The Federal Public Key Infrastructure (FPKI) provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. For more information on the FPKI,  PIV, and PIV-I visit the following links:
 - [FPKI 101]({{site.baseurl}}/university/fpki/)
@@ -56,7 +56,7 @@ The FPKI has the following supplementary guidance:
 - [Archived copies of Certificate Polices, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive) - This pages contains three years of FPKI-related documents.
 
 
-# Annual Review Requirements for All Certification Authorities
+## Annual Review Requirements for All Certification Authorities
 
 Independent compliance audits are the primary way that the Federal Public Key Infrastructure Policy Authority (FPKIPA) ensures that entities participating in the FPKI comply with the requirements identified in the appropriate Certificate Policies (CPs). Audits are an important component of the Annual Review Requirements.
 
@@ -92,7 +92,7 @@ Audits are required annually for supporting functions and elements of each entit
 | WidePoint NFI	| Affiliate PKI	| May 31 |
 | WidePoint SSP	| SSP	| May 31 |
 
-# Compliance Test Tools for Annual Reviews
+## Compliance Test Tools for Annual Reviews
 
 The FPKI Program support two remote PIV, PIV-I and digital certificate test tools to support FPKI annual reviews.
 
@@ -119,7 +119,7 @@ If you are running the Card Conformance Tool as part of the annual requirement t
 
 {% include alert-warning.html heading="Note" content="Failure to submit a complete CCT Package may delay review of your testing results and completion of your annual FPKI PIV/PIV-I testing requirement." %}
 
-# Audit Information for the FPKI Management Authority
+## Audit Information for the FPKI Management Authority
 
 This section contains information on audits performed on the Federal Common Policy Certification Authority and the Federal Bridge Certification Authority.
 
@@ -132,7 +132,7 @@ The FPKIMA Certification Practice Statement (CPS) documents the operational prac
 - [U.S. FPKI Audit Letter of Compliance (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the 2020-2021 Compliance Audit for the FPKI Trust Infrastructure Systems.
 - [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-# Report an Incident
+## Report an Incident
 FPKI affiliates include federal agencies and commercial service providers operating a certification authority certified by the Federal PKI Policy Authority. FPKI affiliate responsibilities related to the incident management process include:
 1. Communicating security incidents involving infrastructures or services to the FPKI Authorities, users/customers, and known relying parties.
 2. Providing additional investigation support and/or information about incidents to the FPKI Authorities as they become known, and
@@ -210,7 +210,7 @@ Repository availability is an uptime metric for Certificate Revocation List avai
 | Verizon SSP CA A2 | FCPCA	| 100 |
 | WidePoint ORC SSP 5	| FCPCA	| 100 | -->
 
-# Federal PKI Document Archive
+## Federal PKI Document Archive
 
 {% assign categories = "" | split: "" %}
 {% for docs in site.data.fpkidocs %}

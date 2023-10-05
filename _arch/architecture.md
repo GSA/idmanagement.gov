@@ -95,7 +95,7 @@ June 30, 2023 -->
 </div>
 
 
-# Introduction
+## Introduction
 
 FICAM is the federal government’s implementation of Identity, Credential, and Access Management (ICAM).
 
@@ -181,7 +181,7 @@ In 2015, ICAM experts from across the federal government collaborated on an upda
 
 This site contains the current version for the FICAM Architecture.  The FICAM Roadmap and Implementation Guidance v2.0 is superseded by both the FICAM Architecture updates and other complementary modernized playbooks developed by ICAM committees across government. 
 
-# Goals and Objectives
+## Goals and Objectives
 
 The Goals and Objectives identify the aims and outcomes of a federal agency enterprise ICAM program. The goals and objectives align with ICAM functions and map to government-wide policies, cross-agency priorities, and strategic government initiatives.
 
@@ -212,7 +212,7 @@ The visual below presents the three goals, each with its own objectives.
 - 3.2 Evaluate, rationalize, and migrate to modern, cloud-smart solutions for ICAM services.
 - 3.3 Promote interoperability and efficiency across the federal government by buying and building ICAM solutions that use open, commercially adopted standards.
 
-# Services Framework and Service Descriptions
+## Services Framework and Service Descriptions
 
 The Services Framework is a tool designed for ICAM program managers and information technology enterprise architects. It identifies the services that provide functionality within the scope of ICAM and assists in distinguishing between business requirements and technical solutions. The services framework includes the five practice areas and services within.
 
@@ -413,7 +413,7 @@ The Governance services in the FICAM architecture include Identity Governance, A
 | Analytics | Leverage continuous analytics data to identify if someone has entitlements that conflict with access requirements. | Data collection, Monitoring, Review, Data Certification, Auditing and Reporting | 
 | Mitigation | Correct the problems and address risks, discovered by analysis, that may occur during standard operations. | Redress, Remediation |
 
-# Use Cases
+## Use Cases
 
 These use cases are designed for ICAM Enterprise Architects and business owners and describe some of the most common ICAM business processes.
 
@@ -801,7 +801,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
 </div>
 <hr>
 
-# Reference Example
+## Reference Example
 
 This reference example include sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The reference examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications and the business requirements.
 
@@ -883,7 +883,7 @@ Agency endpoints may include:
 - Government cloud email services
 - Government facilities
 
-# Policies and Standards
+## Policies and Standards
 
 See the [ICAM Policy Matrix]({{site.baseurl}}/university/policymatrix/) for the latest set of ICAM policies and standards.
 

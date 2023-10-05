@@ -100,7 +100,7 @@ This guide helps federal agencies understand how federal issuers and Non-Federal
 </div>
 
 
-# Executive Summary
+## Executive Summary
 
 Federal agencies are interested in issuing and acquiring identity credentials and credential services that are not Personal Identity Verification (PIV) credentials, but rather are:
 
@@ -122,7 +122,7 @@ This guide advocates a set of minimum requirements for PIV-I credentials that th
 
 For additional information on PIV-I, please contact fpki at gsa.gov.
 
-# 1. Introduction
+## 1. Introduction
 
 The Federal Government's reliance (trust) on PIV credentials establishes a baseline for identity assurance, authenticator assurance, and personnel vetting assurance. Federal agencies and issuers of identity credentials express a desire to produce interoperable smart card-based credentials with the Federal Government PIV infrastructure. Agencies can trust these PIV interoperable credentials in authenticating facilities, networks, and systems. This guide provides a definition for a PIV-I credential to address the following:
 
@@ -152,7 +152,7 @@ The following assumptions apply:
 3. User privileges and entitlements (authorization) are determined solely by the federal government relying party.
 4. PIV-I credentials will not be considered a substitute or alternative credential for populations otherwise subject to PIV requirements.
 
-# 2. Minimum Credential Requirements
+## 2. Minimum Credential Requirements
 
 There is a lack of standard terminology to distinguish between characteristics of PIV and PIV-I credentials. This lack of common language results in confusion, uncertainty, or misunderstanding when identifying and understanding how to integrate PIV-I credentials in a federal agency.
 
@@ -343,7 +343,7 @@ Table 3 outlines the different scenarios for issuers of PIV-I credentials, the p
 
 {% include alert-info.html heading="Use Card UUID for Account Linking" content="In all scenarios, it is recommended that agencies update their PACS to use the Card UUID value for PIV-I account linking." %}
 
-# 3. Special Considerations for Federal Agencies
+## 3. Special Considerations for Federal Agencies
 
 Federal agencies have identified the need to clarify the differences between:
 
@@ -435,7 +435,7 @@ This must be a condition of the contract; contract language should make it clear
 
 The System of Records Notice (SORN) should also be taken into consideration. Many agencies should, wherever possible, be able to leverage the SORN associated with the issuance of PIV credentials for PIV-I credentials, since the purpose of PIV-I issuance is within its scope.
 
-# Appendix A: Technical Information
+## Appendix A: Technical Information
 
 This appendix provides additional technical information in support of the technical requirements. The following table provides a comparison of the requirements for each credential type.
 
@@ -515,7 +515,7 @@ This appendix provides additional technical information in support of the techni
   </tbody>
 </table>
 
-# Appendix B: Glossary
+## Appendix B: Glossary
 
 | Term | Definition |
 |:----:|------------|
@@ -529,7 +529,7 @@ This appendix provides additional technical information in support of the techni
 | PIV-I credential | An identity credential that is conformant with the federal PIV Standards for identity assurance and authentication assurance. |
 | Public Key Infrastructure (PKI) | A service that provides cryptographic keys needed to perform digital signature- based identity verification, and to protect communications and storage of sensitive data.|
 
-# Appendix C: Acronyms
+## Appendix C: Acronyms
 
 | Acronym | Definition |
 |:-------:|------------|
@@ -556,7 +556,7 @@ This appendix provides additional technical information in support of the techni
 | U.S.| United States |
 | UUID | Universally Unique Identifier |
 
-# Appendix D: Document References
+## Appendix D: Document References
 
 ## Policies
 1. [HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
@@ -575,7 +575,7 @@ This appendix provides additional technical information in support of the techni
 5. [NIST SP 800-78: Cryptographic Algorithms and Key Sizes for Personal Identity Verification](https://csrc.nist.gov/publications/detail/sp/800-78/4/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 6. [NIST SP 800-79: Guidelines for the Authorization of Personal Identity (PIV) Verification Card Issuers (PCI) and Derived PIV Credential Issuers (DPCI)](https://csrc.nist.gov/publications/detail/sp/800-79/2/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-# Footnotes
+## Footnotes
 
 [^1]: In particular, these requirements are specified in FIPS 201-3 Section 2.1 Control Objectives, related to adjudication of fitness and personnel vetting, and are common minimum personnel assurance for all federal PIV holders.
 [^2]: This includes Card Management Systems and any associated software or hardware components used to collect and manage information used in the issuance and lifecycle management for PIV or PIV-I credentials. 

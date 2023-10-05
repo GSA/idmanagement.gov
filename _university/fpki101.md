@@ -16,7 +16,7 @@ subnav:
 
 ---
 
-# Introduction
+## Introduction
 
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI.
 
@@ -87,7 +87,7 @@ The Federal PKI is important to federal agencies, other government entities, and
 * [X.509 Certificate and CRL Extensions Profile for PIV-I Cards]({{site.baseurl}}/docs/fpki-x509-cert-profiles-pivi.pdf){:target="_blank"}{:rel="noopener noreferrer"} specifies certificate and CRL extensions profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
 * [OMB Circular A-130, Managing Information as a Strategic Resource (2016)](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf?msclkid=b1259175c7f211ec8144311a36ca5067){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} establishes general policy for the planning, budgeting, governance, acquisition, and management of federal information, personnel, equipment, funds, IT resources, and supporting infrastructure and services.
 
-# Certification Authorities
+## Certification Authorities
 
 A **_certification authority_** is a system that issues digital certificates. These digital certificates are based on _cryptography_ and follow the X.509 standards defined for information security.
 
@@ -152,7 +152,7 @@ The overarching policies of the Federal PKI are the Federal Common Policy Framew
 
 **Code signing certificates are not allowed under the Federal Common Certificate Policy.**
 
-# FPKI Third Party Trust
+## FPKI Third Party Trust
 
 The Federal Common Policy leverages third party trust stores or public trust store to ensure interoperability of federally-issued digital certificates.
 
