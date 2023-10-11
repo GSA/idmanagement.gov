@@ -6,7 +6,6 @@
         ]
     },
     "issuers": [
-        "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
         "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
         "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US",
@@ -119,6 +118,7 @@
         "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
         "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
         "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
+        "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US",
         "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US",
         "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
@@ -1401,6 +1401,30 @@
             }
         },
         {
+            "subject": "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+            "serial-number": "1359",
+            "akid": "33 5b a5 6f 7a 55 60 2b 81 4b 26 14 cc 79 bf 4a ba 8b 32 bd",
+            "skid": "56 d5 90 1a ea 95 d1 6f db 2a d1 0e 0e fb 79 75 08 05 94 5e",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://crl.disa.mil/issuedto/ECAROOTCA4_IT.p7c": [
+                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
             "serial-number": "1574",
@@ -2568,29 +2592,6 @@
             "serial-number": "85078457301024616269625919823409842992",
             "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
             "skid": "3f 8b 47 ae 61 1d eb 65 23 95 c4 3a 2d ed bb 48 d5 23 29 22",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://validation.identrust.com/roots/igcrootca1.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
-            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
-            "serial-number": "85078591550210560575502040891770142861",
-            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
-            "skid": "c0 e9 6c 3f 3a d7 7c 22 65 40 9f 9e 90 48 71 1a 9e f6 7a 71",
             "status": "Certificate Valid and Chains to Common",
             "pathbuilder-result": {
                 "result": "true",
@@ -4348,18 +4349,6 @@
             }
         },
         {
-            "subject": "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1359",
-            "akid": "33 5b a5 6f 7a 55 60 2b 81 4b 26 14 cc 79 bf 4a ba 8b 32 bd",
-            "skid": "56 d5 90 1a ea 95 d1 6f db 2a d1 0e 0e fb 79 75 08 05 94 5e",
-            "status": "Revocation Check Failed",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Pathbuilder timed out"
-            }
-        },
-        {
             "subject": "common_name:Exostar Digital Certificate Service Signing CA 1,organization_name:Exostar UK Limited,country_name:GB",
             "issuer": "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US",
             "serial-number": "1025834279162425889105434662153385551908044805",
@@ -4404,6 +4393,18 @@
             "status": "unchecked",
             "pathbuilder-result": {
                 "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
+            }
+        },
+        {
+            "subject": "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
+            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "serial-number": "85078591550210560575502040891770142861",
+            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
+            "skid": "c0 e9 6c 3f 3a d7 7c 22 65 40 9f 9e 90 48 71 1a 9e f6 7a 71",
+            "status": "Status set to other because we didn't handle an error condition well",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Path Built but could not be validated"
             }
         },
         {
@@ -5134,12 +5135,6 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
-            "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
@@ -5495,6 +5490,13 @@
             "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+            "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
