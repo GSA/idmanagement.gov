@@ -15,7 +15,6 @@
         "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-        "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD EMAIL CA-59,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD EMAIL CA-62,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD EMAIL CA-63,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
@@ -116,8 +115,6 @@
         "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
         "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-        "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
-        "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
         "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US",
         "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US",
@@ -797,31 +794,6 @@
             "aia-entries": {
                 "http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c": [
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1218",
-            "akid": "6c 8a 94 a2 77 b1 80 72 1d 81 7a 16 aa f2 dc ce 66 ee 45 c0",
-            "skid": "08 89 3a ce 13 bc 1c f2 3a 2d 98 31 0b a9 fe 38 79 fd 82 22",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c": [
-                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:US DoD CCEB Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -3305,54 +3277,6 @@
             }
         },
         {
-            "subject": "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
-            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-            "serial-number": "211915914620421814630739146678823081726843118985",
-            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
-            "skid": "af 9a 21 c5 b3 17 29 ab a8 39 95 3e 71 15 75 a1 f0 f5 16 07",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US"
-            ],
-            "sia-entries": {
-                "http://aia1.ssp-strong-id.net/CA/VAuserCA.p7c": [
-                    "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov"
-                ]
-            },
-            "aia-entries": {
-                "http://aia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
-            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-            "serial-number": "541183969108318241482288737465085124701815448830",
-            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
-            "skid": "e3 76 e0 a5 94 27 e8 35 7d f8 63 3c ff f3 f8 56 5b 68 17 2f",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://aia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US",
             "issuer": "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "serial-number": "122397600369708333189105718797387903666113840099",
@@ -4349,6 +4273,18 @@
             }
         },
         {
+            "subject": "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "serial-number": "1218",
+            "akid": "6c 8a 94 a2 77 b1 80 72 1d 81 7a 16 aa f2 dc ce 66 ee 45 c0",
+            "skid": "08 89 3a ce 13 bc 1c f2 3a 2d 98 31 0b a9 fe 38 79 fd 82 22",
+            "status": "Revocation Check Failed",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Pathbuilder timed out"
+            }
+        },
+        {
             "subject": "common_name:Exostar Digital Certificate Service Signing CA 1,organization_name:Exostar UK Limited,country_name:GB",
             "issuer": "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US",
             "serial-number": "1025834279162425889105434662153385551908044805",
@@ -4684,6 +4620,30 @@
             }
         },
         {
+            "subject": "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
+            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+            "serial-number": "541183969108318241482288737465085124701815448830",
+            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
+            "skid": "e3 76 e0 a5 94 27 e8 35 7d f8 63 3c ff f3 f8 56 5b 68 17 2f",
+            "status": "Revocation Check Failed",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Pathbuilder timed out"
+            }
+        },
+        {
+            "subject": "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
+            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+            "serial-number": "211915914620421814630739146678823081726843118985",
+            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
+            "skid": "af 9a 21 c5 b3 17 29 ab a8 39 95 3e 71 15 75 a1 f0 f5 16 07",
+            "status": "Revocation Check Failed",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Pathbuilder timed out"
+            }
+        },
+        {
             "subject": "common_name:ORC NFI CA 3,organization_name:ORC PKI,country_name:US",
             "issuer": "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "serial-number": "685358773232249855141408445553331689950506020848",
@@ -4997,16 +4957,6 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-            "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-            "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -5392,13 +5342,6 @@
             "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:DOD EMAIL CA-64,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
