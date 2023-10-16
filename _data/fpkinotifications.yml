@@ -29,6 +29,21 @@
 - notice_date: 10/6/2023
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DirectTrust Identity Bridge CA between 10/23/2023 and 10/30/2023
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DirectTrust Identity Bridge CA, OU=Certification Authorities, O=DirectTrust.org, inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.makeidentitysafe.com/issuedby-sibca.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: 10/6/2023
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the USPTO_INTR_CA1 between 10/19/2023 and 10/26/2023
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: N/A
