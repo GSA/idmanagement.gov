@@ -4,7 +4,7 @@ title: FICAM Product Criteria List
 permalink: /product-criteria/
 collection: partners
 sticky_sidenav: true
-sidenav: buy
+sidenav: partners
 
 subnav:
     - text: Objective
