@@ -137,7 +137,7 @@ The page lists the certification authorities *currently* used for Personal Ident
         {% if piv.branch == branch %}
           <tr class="piv-table-row" data-branch="{{ piv.branch }}">
             <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-agency">{{ piv.agency }}</td>
-            <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca"><a href="{{ piv.url }}">{{ piv.ca }}</a></td>
+            <td headers="piv-table-heading-{{ branch | slugify }} piv-table-heading-ca">{{ piv.ca }}</td>
           </tr>
         {% endif %}
       {% endfor %} <!--piv-->
