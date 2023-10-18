@@ -3,7 +3,7 @@
 # If announcement content is full summary, leave 'url' blank, set soure to 'IDManagement.gov' and doctype = 'Announcement'
 # HTML tags can be included inline with summary information.
 
-- name: "Removed Product List (RPL) Update: Identiv Velocity (APL #10013) with HID Global Validation System for Hirsch-Identiv Velocity (APL #10014) is moved to the RPL, effective October 16, 2023" 
+- name: "Removed Product List (RPL) Update: Identiv Velocity (APL #10013) with HID Global Validation System for Hirsch-Identiv Velocity (APL #10014) is moved to the RPL." 
   summary: "<p>As requested by the vendor the, Identiv Velocity (APL #10013) with HID Global Validation System for Hirsch-Identiv Velocity (APL #10014) is moved to the RPL, effective October 16, 2023.</p>"
   pubdate: October 16, 2023
   url: 
