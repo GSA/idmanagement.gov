@@ -2,10 +2,12 @@
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
         "new_certs": [
-            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov:1670195540"
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:126546498029106345695576450243366027392959108778",
+            "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US:85078606240852691966475790938087722282"
         ]
     },
     "issuers": [
+        "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
         "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
         "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US",
@@ -15,6 +17,7 @@
         "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
+        "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD EMAIL CA-59,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD EMAIL CA-62,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD EMAIL CA-63,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
@@ -49,8 +52,6 @@
         "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US",
         "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-        "common_name:Eid Passport LRA 2 CA,organizational_unit_name:Eid Passport PIV-I LRA Network,organization_name:Eid Passport, Inc.,country_name:US",
-        "common_name:Eid Passport LRA CA 3,organizational_unit_name:RAPIDGate PIV Interoperable LRA,organization_name:Eid Passport, Inc.,country_name:US",
         "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
         "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US",
         "common_name:Exostar Federated Identity Service Signing CA 3,domain_component:evincible,domain_component:com",
@@ -90,14 +91,9 @@
         "common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US",
         "common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US",
         "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
-        "common_name:Senate PIV-I CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
         "common_name:Senate PIV-I CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
         "common_name:Senate PIV-I CA G6,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-        "common_name:Senate PIV-I Device CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
         "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-        "common_name:SureID Inc. CA1,organizational_unit_name:SureID PIV-I,organization_name:SureID, Inc.,country_name:US",
-        "common_name:SureID Inc. Device CA2,organization_name:SureID, Inc.,country_name:US",
-        "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
         "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
         "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
         "common_name:Trans Sped Mobile eIDAS QCA G2,organizational_unit_name:Individual Subscriber CA,organization_name:Trans Sped SRL,country_name:RO",
@@ -115,6 +111,8 @@
         "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
         "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+        "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
+        "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
         "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US",
         "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US",
@@ -794,6 +792,31 @@
             "aia-entries": {
                 "http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c": [
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "serial-number": "1218",
+            "akid": "6c 8a 94 a2 77 b1 80 72 1d 81 7a 16 aa f2 dc ce 66 ee 45 c0",
+            "skid": "08 89 3a ce 13 bc 1c f2 3a 2d 98 31 0b a9 fe 38 79 fd 82 22",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c": [
+                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:US DoD CCEB Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -1826,6 +1849,38 @@
             }
         },
         {
+            "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "126546498029106345695576450243366027392959108778",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {
+                "http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c": [
+                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
+                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
+                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
+                ]
+            },
+            "aia-entries": {
+                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
+                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
+                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US",
+                    "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US",
             "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "132098792477909172339608631958225016525047285552",
@@ -1873,38 +1928,6 @@
                 "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {},
-            "aia-entries": {
-                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
-                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US",
-                    "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "134386946227104801741451160400873158627767087350",
-            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
-            "skid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c": [
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
-                ]
-            },
             "aia-entries": {
                 "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
                     "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
@@ -2001,46 +2024,6 @@
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US"
-                ]
-            },
-            "aia-entries": {
-                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
-                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US",
-                    "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "92755267400756876025975519437427891162422109922",
-            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
-            "skid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c": [
-                    "common_name:Eid Passport LRA 2 CA,organizational_unit_name:Eid Passport PIV-I LRA Network,organization_name:Eid Passport, Inc.,country_name:US",
-                    "common_name:Eid Passport LRA CA 3,organizational_unit_name:RAPIDGate PIV Interoperable LRA,organization_name:Eid Passport, Inc.,country_name:US",
-                    "common_name:SureID Inc. CA1,organizational_unit_name:SureID PIV-I,organization_name:SureID, Inc.,country_name:US",
-                    "common_name:SureID Inc. Device CA2,organization_name:SureID, Inc.,country_name:US",
-                    "common_name:Senate PIV-I CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-                    "common_name:Senate PIV-I Device CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-                    "common_name:Booz Allen Hamilton Device CA 02,organizational_unit_name:Certification Authorities,organization_name:Booz Allen Hamilton,country_name:US",
-                    "common_name:RAPIDGate PIV-I Device CA,organization_name:Eid Passport, Inc.,country_name:US",
-                    "common_name:RAPIDGate-Premier CA,organization_name:Eid Passport, Inc.,country_name:US",
-                    "common_name:RAPIDGate-Premier Device CA,organization_name:Eid Passport, Inc.,country_name:US",
-                    "common_name:Senate PIV-I Device CA G2,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -2582,6 +2565,29 @@
             }
         },
         {
+            "subject": "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
+            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "serial-number": "85078606240852691966475790938087722282",
+            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
+            "skid": "c0 e9 6c 3f 3a d7 7c 22 65 40 9f 9e 90 48 71 1a 9e f6 7a 71",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://validation.identrust.com/roots/igcrootca1.p7c": [
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:Lockheed Martin Certification Authority 4 G2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,country_name:US",
             "issuer": "common_name:Lockheed Martin Root Certification Authority 2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US",
             "serial-number": "458536645303207850934278",
@@ -2729,144 +2735,6 @@
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Senate PIV-I CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "110038874541808826960604812829693291308",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "db 2a 6b 84 da 95 5f 32 56 af 56 c5 82 0b 25 2a 69 bc 08 7a",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:SureID Inc. CA1,organizational_unit_name:SureID PIV-I,organization_name:SureID, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "132025895878954392828503980591851300291",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "02 c2 06 6d b0 e7 0c 9a 7a 65 ba a5 05 94 b1 33 68 c0 b4 98",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Eid Passport LRA 2 CA,organizational_unit_name:Eid Passport PIV-I LRA Network,organization_name:Eid Passport, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "155491132254238840593112465237250815652",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "ea ae 18 cf b6 d9 07 0d 51 19 ed e2 70 43 81 42 77 6c 5b 9c",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Eid Passport LRA CA 3,organizational_unit_name:RAPIDGate PIV Interoperable LRA,organization_name:Eid Passport, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "15718198061221236806412961647967919871",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "ae d0 de a0 5c 85 2d 68 a5 7a 3a 5b a8 ec e0 f2 8c a0 ec 5b",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Senate PIV-I Device CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "53800010435992276497060680011803240840",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "a6 d8 69 51 63 d6 d0 ea 4b ea 6d 4a b6 b9 6d 97 d8 d9 ce f7",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:SureID Inc. Device CA2,organization_name:SureID, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "58448713043005985765759931041965735749",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "62 60 d2 57 b2 af 99 e2 a8 0e 47 a0 f0 2a 2f 22 39 01 2f b3",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -3217,9 +3085,9 @@
         {
             "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "issuer": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "serial-number": "1277783878",
-            "akid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
-            "skid": "df 3f 39 db ad 60 65 50 5f 33 91 9a 47 a6 8e 41 4e b5 4f db",
+            "serial-number": "1670195539",
+            "akid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
+            "skid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
             "status": "Certificate Valid and Chains to Common",
             "pathbuilder-result": {
                 "result": "true",
@@ -3239,18 +3107,17 @@
             },
             "aia-entries": {
                 "http://ipki.uspto.gov/IPKI/Certs/CAcertsIssuedToUSPTO.p7c": [
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
                 ]
             }
         },
         {
-            "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "issuer": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "serial-number": "1670195540",
-            "akid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
-            "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
+            "subject": "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
+            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+            "serial-number": "211915914620421814630739146678823081726843118985",
+            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
+            "skid": "af 9a 21 c5 b3 17 29 ab a8 39 95 3e 71 15 75 a1 f0 f5 16 07",
             "status": "Certificate Valid and Chains to Common",
             "pathbuilder-result": {
                 "result": "true",
@@ -3258,21 +3125,38 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
+                "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US"
             ],
             "sia-entries": {
-                "http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c": [
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
+                "http://aia1.ssp-strong-id.net/CA/VAuserCA.p7c": [
+                    "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov"
                 ]
             },
             "aia-entries": {
-                "http://ipki.uspto.gov/IPKI/Certs/CAcertsIssuedToUSPTO.p7c": [
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                "http://aia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2.p7c": [
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
+            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+            "serial-number": "541183969108318241482288737465085124701815448830",
+            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
+            "skid": "e3 76 e0 a5 94 27 e8 35 7d f8 63 3c ff f3 f8 56 5b 68 17 2f",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://aia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2.p7c": [
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -3431,10 +3315,41 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://nfirootweb.managed.entrust.com/AIA/CertsIssuedToNFIRootCA.p7c": [
+                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ],
                 "ldap://nfirootdir.managed.entrust.com/ou=Entrust Managed Services NFI Root CA,ou=Certification Authorities,o=Entrust,c=US?cACertificate;binary,crossCertificatePair;binary": []
+            }
+        },
+        {
+            "subject": "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "issuer": "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "serial-number": "1252616535",
+            "akid": "f3 ed 39 b9 da 1b 4d 03 3c 26 15 39 d8 33 b5 08 ef 38 3e 39",
+            "skid": "fa df 23 01 c4 aa ec 23 e3 ad 6f 0d 34 a5 0d cf 39 64 65 5e",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+            ],
+            "sia-entries": {
+                "http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c": [
+                    "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+                ]
+            },
+            "aia-entries": {
+                "http://nfirootweb.managed.entrust.com/AIA/CertsIssuedToNFIRootCA.p7c": [
+                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
             }
         },
         {
@@ -3456,6 +3371,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://nfirootweb.managed.entrust.com/AIA/CertsIssuedToNFIRootCA.p7c": [
+                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
@@ -4273,18 +4189,6 @@
             }
         },
         {
-            "subject": "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1218",
-            "akid": "6c 8a 94 a2 77 b1 80 72 1d 81 7a 16 aa f2 dc ce 66 ee 45 c0",
-            "skid": "08 89 3a ce 13 bc 1c f2 3a 2d 98 31 0b a9 fe 38 79 fd 82 22",
-            "status": "Revocation Check Failed",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Pathbuilder timed out"
-            }
-        },
-        {
             "subject": "common_name:Exostar Digital Certificate Service Signing CA 1,organization_name:Exostar UK Limited,country_name:GB",
             "issuer": "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US",
             "serial-number": "1025834279162425889105434662153385551908044805",
@@ -4322,6 +4226,23 @@
             }
         },
         {
+            "subject": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "92755267400756876025975519437427891162422109922",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:79f00049eb7f77c25d410265348a90239b1e076f",
+            "validity-dates": {
+                "not-before": "2020-10-22 17:04:19+00:00",
+                "not-after": "2023-10-22 17:04:19+00:00"
+            }
+        },
+        {
             "subject": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "193519736577664692092527670379836328600325585898",
@@ -4329,18 +4250,6 @@
             "status": "unchecked",
             "pathbuilder-result": {
                 "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
-            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
-            "serial-number": "85078591550210560575502040891770142861",
-            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
-            "skid": "c0 e9 6c 3f 3a d7 7c 22 65 40 9f 9e 90 48 71 1a 9e f6 7a 71",
-            "status": "Status set to other because we didn't handle an error condition well",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Path Built but could not be validated"
             }
         },
         {
@@ -4461,91 +4370,6 @@
             }
         },
         {
-            "subject": "common_name:Booz Allen Hamilton Device CA 02,organizational_unit_name:Certification Authorities,organization_name:Booz Allen Hamilton,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "55469870391430608810331427335506193828",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "c2 d0 3b 04 2c 1f 34 95 1e 5c 93 b0 bb 3a b4 2d 87 8e ea fe",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US:35267d5095e1a1c1bd05d5c39d7742c70c13968c",
-            "validity-dates": {
-                "not-before": "2017-08-31 00:00:00+00:00",
-                "not-after": "2020-07-30 23:59:59+00:00"
-            }
-        },
-        {
-            "subject": "common_name:RAPIDGate PIV-I Device CA,organization_name:Eid Passport, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "156191355034242590032939777050152283062",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "b4 c3 23 95 e8 ea 0c 3c 47 64 10 fa 03 4b f5 39 d1 f1 31 08",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US:35267d5095e1a1c1bd05d5c39d7742c70c13968c",
-            "validity-dates": {
-                "not-before": "2017-08-31 00:00:00+00:00",
-                "not-after": "2020-05-16 23:59:59+00:00"
-            }
-        },
-        {
-            "subject": "common_name:RAPIDGate-Premier CA,organization_name:Eid Passport, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "80085406841947420234452467798305229067",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "3f 32 16 52 27 1c d2 dd 1c 02 ec a8 73 35 6c 66 84 78 a4 65",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US:35267d5095e1a1c1bd05d5c39d7742c70c13968c",
-            "validity-dates": {
-                "not-before": "2017-08-31 00:00:00+00:00",
-                "not-after": "2020-12-04 23:59:59+00:00"
-            }
-        },
-        {
-            "subject": "common_name:RAPIDGate-Premier Device CA,organization_name:Eid Passport, Inc.,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "169398193977462355542544319003757850477",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "c5 67 dc ba 36 f6 37 e2 d0 7c f9 95 05 d6 b0 8e 97 44 64 2b",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US:35267d5095e1a1c1bd05d5c39d7742c70c13968c",
-            "validity-dates": {
-                "not-before": "2017-08-31 00:00:00+00:00",
-                "not-after": "2020-12-04 23:59:59+00:00"
-            }
-        },
-        {
-            "subject": "common_name:Senate PIV-I Device CA G2,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "107610448752987855551660357633897005794",
-            "akid": "35 26 7d 50 95 e1 a1 c1 bd 05 d5 c3 9d 77 42 c7 0c 13 96 8c",
-            "skid": "30 b5 7f 83 f0 24 06 8b 88 d1 94 36 81 6f 31 43 d4 83 c0 14",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US:35267d5095e1a1c1bd05d5c39d7742c70c13968c",
-            "validity-dates": {
-                "not-before": "2017-08-31 00:00:00+00:00",
-                "not-after": "2019-07-20 23:59:59+00:00"
-            }
-        },
-        {
             "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
             "serial-number": "146086627209023830719395084362843904594",
@@ -4609,38 +4433,13 @@
         {
             "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "issuer": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "serial-number": "1670195539",
-            "akid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
-            "skid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
+            "serial-number": "1670195540",
+            "akid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
+            "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
             "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer",
                 "result": "false",
                 "details": "Unable to build Path"
-            }
-        },
-        {
-            "subject": "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
-            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-            "serial-number": "541183969108318241482288737465085124701815448830",
-            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
-            "skid": "e3 76 e0 a5 94 27 e8 35 7d f8 63 3c ff f3 f8 56 5b 68 17 2f",
-            "status": "Revocation Check Failed",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Pathbuilder timed out"
-            }
-        },
-        {
-            "subject": "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov",
-            "issuer": "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
-            "serial-number": "211915914620421814630739146678823081726843118985",
-            "akid": "fb 37 dd 47 41 3f 3d 71 22 60 7f 9f 82 84 02 40 09 aa ca 8b",
-            "skid": "af 9a 21 c5 b3 17 29 ab a8 39 95 3e 71 15 75 a1 f0 f5 16 07",
-            "status": "Revocation Check Failed",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Pathbuilder timed out"
             }
         },
         {
@@ -4811,6 +4610,7 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
         ],
         [
@@ -4832,11 +4632,6 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -4957,6 +4752,16 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+            "common_name:Veterans Affairs User CA B1,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
+            "common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -5085,6 +4890,12 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
@@ -5128,42 +4939,6 @@
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
             "common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Eid Passport LRA 2 CA,organizational_unit_name:Eid Passport PIV-I LRA Network,organization_name:Eid Passport, Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Eid Passport LRA CA 3,organizational_unit_name:RAPIDGate PIV Interoperable LRA,organization_name:Eid Passport, Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "common_name:SureID Inc. CA1,organizational_unit_name:SureID PIV-I,organization_name:SureID, Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "common_name:SureID Inc. Device CA2,organization_name:SureID, Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Senate PIV-I CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec Class 3 SSP Intermediate CA - G3,organizational_unit_name:Symantec Trust Network,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Senate PIV-I Device CA G4,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -5348,6 +5123,13 @@
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:DOD SW CA-66,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
         ],
         [
@@ -5468,12 +5250,6 @@
             "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust ECA S22,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
