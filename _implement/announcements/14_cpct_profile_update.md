@@ -12,7 +12,7 @@ sidenav: fpkiannouncements
       
 ---
 
-In order to keep this tool up-to-date and using the latest Certificate Profiles, users are required to update any local copies of the CPCT Tool they have previously installed to the latest release of the CPCT Tool (CPCT). First, removing the old version, then download and install the latest release version: see the download link below.
+In order to keep this tool up-to-date and using the latest Certificate Profiles, users are required to update any local copies of the CPCT Tool they have previously installed to the latest release of the CPCT Tool (CPCT). First, by removing the old version, then downloading and installing the latest release version: see the download link below.
 
 - [Download the latest CPCT Tool release](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
