@@ -46,7 +46,7 @@ In order to update the CPCT tool you will need to remove any existing instances 
 - The CPCT Tool (CPCT) is a Dockerized version of the Certificate Profile Conformance Tool (CPCT) you install on your computer via Docker Desktop. This is GSA's recommended way to install and use the CPCT Tool
 - The Certificate Profile Conformance Tool (CPCT) is the original code of the web hosted version of the tool, which was removed from service on October 10, 2022.
 
-For more information see: [CPCT Tool transition from Cloud.gov](/implement/announcements/cpct-transition/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+For more information see: [CPCT Tool transition from Cloud.gov]({{site.url}}/implement/announcements/cpct-transition/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 If you have any questions regarding this action please contact:
 fpki dash help at gsa dot gov
