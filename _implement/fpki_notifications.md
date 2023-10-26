@@ -641,7 +641,7 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - Validity: December 10, 2014 to November 11, 2024
 - SHA-1 Hash: dc5b590800765864587902af983c21a7209be320
 - CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG4/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG4/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}
-- 
+
 #### USPTO INTR CA1
 - Subject: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
 - Issuer: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
