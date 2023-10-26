@@ -23,5 +23,28 @@
 </script>
 {% endif %}
 
+<!-- Structured Data JSON-LD -->
+<script type="application/ld+json">
+  {
+    "@context":"http://schema.org",
+    "@type":"GovernmentOrganization",
+    "name":"ID Management.gov",
+    "parentOrganization":"U.S. General Services Administration",
+    "department":"Office of Government-wide Policy",
+    "url":"http://www.idmanagement.gov/",
+    "email":"icam at gsa.gov",
+    "description": "IDManagement.gov is a collaboration between the Federal CIO Council and GSA to develop and share leading practices in protecting federal IT systems.",
+    "keywords":"GSA, FICAM, FPKI, ICAM, FIPS 201, PKI, PIV-I, PACS, Playbooks, Federal Identity, Credentials, Identity Management, Identity Lifecycle, Vendors, Acquisition Professionals, Program Managers, Privileged Identity, Single Sign On, User Authrization, Identity Lifecycle Management",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "postalCode": "20405",
+        "streetAddress": "1800 F Street, NW"
+      },
+     "sameAs":["https://www.gsa.gov", "https://www.linkedin.com/company/gsa/", "https://www.facebook.com/GSA/", "https://www.instagram.com/usgsa/", "https://www.youtube.com/@usgsa", "https://twitter.com/USGSA"]
+    }
+</script>
+
 <script src="{{site.baseurl}}/assets/js/uswds.min.js"></script>
 <script src="{{site.baseurl}}/assets/js/app.js"></script>
