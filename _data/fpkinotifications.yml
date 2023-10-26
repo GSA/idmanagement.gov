@@ -27,7 +27,7 @@
 # ee_ocsp_uri:
 
 - notice_date: October 25, 2023
-  change_type: CA Certificate Issuance
+  change_type: Intent to Issue a CA Certificate
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
   change_description: The Federal Common Policy CA G2 intends to issue a new cross certificate to the U.S. Department of State AD Root CA between 11/08/2023 and 11/15/2023
   contact: fpki dash help at gsa dot gov
