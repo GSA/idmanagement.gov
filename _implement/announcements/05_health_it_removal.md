@@ -4,7 +4,7 @@ title: Removal of CAs from Federal PKI
 pubDate: 03/05/2019
 archiveDate: 03/04/2020
 removeDate: 03/04/2022
-collection: implement
+# collection: implement
 category: Removal
 #permalink: /fpki/announcements/2019removal/
 description: This announcement provides information related to the Health IT CAs removed from the Federal PKI.
