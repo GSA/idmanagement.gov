@@ -30,56 +30,56 @@
   description: The FPKIMA will be decommissioning the LDAP service associated with the old FCPCA root's SIA repository.
   status: Active
 
-- title: New FPKI Tools Available
-  pubDate: May 18, 2021
-  url: /implement/announcements/test-tools/
-  description: Release announcement for the Federal PKI Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
-  status: Active
+# - title: New FPKI Tools Available
+#   pubDate: May 18, 2021
+#   url: /implement/announcements/test-tools/
+#   description: Release announcement for the Federal PKI Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
+#   status: Remove
 
-- title: Federal Common <br> Policy CA G2 Update
-  pubDate: October 12, 2020
-  url: /implement/announcements/common-g2-update/
-  description: This announcement details the FCPCA update timeline and actions agencies need to perform.
-  status: Active
+# - title: Federal Common <br> Policy CA G2 Update
+#   pubDate: October 12, 2020
+#   url: /implement/announcements/common-g2-update/
+#   description: This announcement details the FCPCA update timeline and actions agencies need to perform.
+#   status: Removed
 
-- title: Upcoming Migration of Federal PKI Certificate Repository Services
-  pubDate: April 1, 2019
-  url: /implement/announcements/2019fpkimigration/
-  description: On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution.
-  status: Removed
+# - title: Upcoming Migration of Federal PKI Certificate Repository Services
+#   pubDate: April 1, 2019
+#   url: /implement/announcements/2019fpkimigration/
+#   description: On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution.
+#   status: Removed
 
-- title: DigiCert CA Decommissioning 
-  pubDate: April 1, 2019
-  url: /implement/announcements/2019digicert/
-  description: DigiCert Incorporated is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes.
-  status: Removed
+# - title: DigiCert CA Decommissioning 
+#   pubDate: April 1, 2019
+#   url: /implement/announcements/2019digicert/
+#   description: DigiCert Incorporated is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes.
+#   status: Removed
 
-- title: Removal of Health CAs from Federal PKI
-  pubDate: March 5, 2019
-  url: /implement/announcements/2019removal/
-  description: Federal PKI teams recently performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is not a distrust action.
-  status: Removed
+# - title: Removal of Health CAs from Federal PKI
+#   pubDate: March 5, 2019
+#   url: /implement/announcements/2019removal/
+#   description: Federal PKI teams recently performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is not a distrust action.
+#   status: Removed
 
-- title: Federal Common Policy CA Removal from Apple Trust Stores Impact
-  pubDate: September 13, 2018
-  url: implement/announcements/2018applepkichanges/
-  description: This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September 2018**. This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
-  status: Removed
+# - title: Federal Common Policy CA Removal from Apple Trust Stores Impact
+#   pubDate: September 13, 2018
+#   url: implement/announcements/2018applepkichanges/
+#   description: This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September 2018**. This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
+#   status: Removed
 
-- title: Chrome Certificate Transparency Requirements
-  pubDate: August 10, 2018
-  url: /implement/announcements/2018chromect/
-  description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
-  status: Removed
+# - title: Chrome Certificate Transparency Requirements
+#   pubDate: August 10, 2018
+#   url: /implement/announcements/2018chromect/
+#   description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
+#   status: Removed
 
-- title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
-  pubDate: May 18, 2018
-  url: /implement/announcements/2018mspkichanges/
-  description: This change will cause Windows users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
-  status: Removed
+# - title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
+#   pubDate: May 18, 2018
+#   url: /implement/announcements/2018mspkichanges/
+#   description: This change will cause Windows users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
+#   status: Removed
 
-- title: Chrome TLS Certificate Lifetime Requirement
-  pubDate: May 10, 2018
-  url: /implement/announcements/2018tlslifetime/
-  description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
-  status: Removed
+# - title: Chrome TLS Certificate Lifetime Requirement
+#   pubDate: May 10, 2018
+#   url: /implement/announcements/2018tlslifetime/
+#   description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
+#   status: Removed
