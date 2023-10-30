@@ -103,10 +103,11 @@ playbooks:
   - text: Windows Hello for Business Playbook
     href: /playbooks/whfb/
 
-# Announcements moved to internal page see: /fpki/notifications/#fpki-announcements  
-# fpkiannouncements:
-#   - text: Back to FPKI Page
-#     href: /fpki/notifications
+# Announcements moved to internal page see: /fpki/notifications/#fpki-announcements
+# Added 'Back to FPKI Notifications' to help users return to notifications 
+fpkiannouncements:
+  - text: Back to FPKI Announcements
+    href: /fpki/notifications 
 #   - text: Public Trust TLS PKI CP
 #     href: /fpki/announcements/PT-TLS-CP/
 #   - text: CPCT Tool Update
