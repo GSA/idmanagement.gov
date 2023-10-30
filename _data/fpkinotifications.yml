@@ -26,7 +26,67 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
-- notice_date: 10/6/2023
+- notice_date: October 26, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the DirectTrust Identity Bridge CA
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ddd7246c86b2e0a3ac2fc7a7dbb7430b935eba2f
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DirectTrust Identity Bridge CA, OU=Certification Authorities, O=DirectTrust.org, inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 25, 2023
+  change_type: Intent to Issue a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to issue a new cross certificate to the U.S. Department of State AD Root CA between 11/08/2023 and 11/15/2023
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 20, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the USPTO_INTR_CA1 with validity from 10/19/2023 to 10/19/2026
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 02ecec9eb7229055c57caeaade6f1ae056fb4327
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=USPTO_INTR_CA1, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=uspto, DC=gov
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: October 20, 2023
+  change_type: CA Certificate Issuance
+  system: IdenTrust Global Common Root CA 1
+  change_description: Issued new CA certificate to Advanced Health Systems Inc, valid from 10/12/2023 to 10/8/2033
+  contact: product at IdenTrust dot com
+  ca_certificate_hash: c6fa3d4cdf28e118b9bc2790734e9cf257279c1f
+  ca_certificate_issuer: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
+  ca_certificate_subject: CN = Advanced Health Systems Inc Direct CA 2, OU = IdenTrust Global Common, O = IdenTrust, S = Mississippi, C = US
+  cdp_uri: http://validation.identrust.com/crl/igcrootca1.crl
+  aia_uri: http://validation.identrust.com/roots/igcrootca1.p7c
+  sia_uri: N/A
+  ocsp_uri: http://igc.ocsp.identrust.com
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 6, 2023
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DirectTrust Identity Bridge CA between 10/23/2023 and 10/30/2023
@@ -41,7 +101,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
 
-- notice_date: 10/6/2023
+- notice_date: October 6, 2023
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the USPTO_INTR_CA1 between 10/19/2023 and 10/26/2023
@@ -55,22 +115,7 @@
   ocsp_uri: N/A
   ee_cdp_uri: http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl
   ee_ocsp_uri: N/A
-  
-- notice_date: 9/13/2023
-  change_type: CA Certificate Issuance
-  system: IdenTrust Global Common Root CA 1
-  change_description: Issued new CA certificate to Advanced Health Systems Inc, valid from 9/6/2023, valid through 9/2/2033
-  contact: product at IdenTrust dot com
-  ca_certificate_hash: 6e5b4ce0f68333d86456c85faaeeee6cdebc3124
-  ca_certificate_issuer: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
-  ca_certificate_subject: CN = Advanced Health Systems Inc Direct CA 2, OU = IdenTrust Global Common, O = IdenTrust, S = Mississippi, C = US
-  cdp_uri: http://validation.identrust.com/crl/igcrootca1.crl
-  aia_uri: http://validation.identrust.com/roots/igcrootca1.p7c
-  sia_uri: N/A
-  ocsp_uri: http://igc.ocsp.identrust.com
-  ee_cdp_uri: N/A
-  ee_ocsp_uri: N/A
-  
+   
 - notice_date: August 29, 2023
   change_type: CA Certificate Issuance
   system: TSCP SHA256 Bridge CA
@@ -100,7 +145,6 @@
   ocsp_uri: N/A
   ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA2.crl
   ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
-
 
 - notice_date: August 18, 2023
   change_type: CA Certificate Issuance
