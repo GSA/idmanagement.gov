@@ -3,12 +3,12 @@ layout: page
 title: New Test Tools Available
 pubDate: 05/18/2021
 removeDate: 05/18/2024
-collection: implement
-permalink: /implement/announcements/test-tools/
+# collection: implement
+# permalink: /implement/announcements/test-tools/
 description: Release announcement for the Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
 category: Active
 sticky_sidenav: true
-sidenav: fpkiannouncements
+# sidenav: fpkiannouncements
 
 ---
 

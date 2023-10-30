@@ -24,11 +24,11 @@
   description: The FPKIMA will be decommissioning the LDAP service associated with the old FCPCA root's SIA repository.
   status: Active
 
-- title: New FPKI Tools Available
-  pubDate: May 18, 2021
-  url: /implement/announcements/test-tools/
-  description: Release announcement for the Federal PKI Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
-  status: Active
+# - title: New FPKI Tools Available
+#   pubDate: May 18, 2021
+#   url: /implement/announcements/test-tools/
+#   description: Release announcement for the Federal PKI Card Conformance Tool (CCT) and Certificate Profile Conformance Tool (CPCT).
+#   status: Remove
 
 # - title: Federal Common <br> Policy CA G2 Update
 #   pubDate: October 12, 2020
