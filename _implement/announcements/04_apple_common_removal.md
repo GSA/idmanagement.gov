@@ -8,21 +8,21 @@ removeDate: 09/12/2021
 category: Apple
 # permalink: /fpki/announcements/2018applepkichanges/
 description: Upcoming changes regarding Apple's remove of the U.S. Government Root CA.
-sidenav: fpkiarchivedannouncements
+# sidenav: fpkiarchivedannouncements
 category: implement
 sticky_sidenav: true
 
-subnav:
-  - text: How Does This Work?
-    href: '#how-does-this-work'
-  - text: What Will Be Impacted?
-    href: '#what-will-be-impacted'
-  - text: What Should I Do?
-    href: '#what-should-i-do'
-  - text: Frequently Asked Questions
-    href: '#frequently-asked-questions'
-  - text: Additional Resources
-    href: '#additional-resources'
+# subnav:
+#   - text: How Does This Work?
+#     href: '#how-does-this-work'
+#   - text: What Will Be Impacted?
+#     href: '#what-will-be-impacted'
+#   - text: What Should I Do?
+#     href: '#what-should-i-do'
+#   - text: Frequently Asked Questions
+#     href: '#frequently-asked-questions'
+#   - text: Additional Resources
+#     href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}

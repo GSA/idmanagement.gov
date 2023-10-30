@@ -7,23 +7,23 @@ removeDate: 08/09/2021
 # collection: implement
 category: Google
 description: All TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
-sidenav: implement
+# sidenav: implement
 category: Removed
 sticky_sidenav: true
 
-subnav:
-   - text: How Does This Work?
-     href: '#how-does-this-work'
-   - text: What Will Be Impacted?
-     href: '#what-will-be-impacted'
-   - text: When Will This Start?
-     href: '#when-will-this-start'
-   - text: What Should I Do?
-     href: '#what-should-i-do'
-   - text: Frequently Asked Questions
-     href: '#frequently-asked-questions'
-   - text: Additional Resources
-     href: '#additional-resources'
+# subnav:
+#    - text: How Does This Work?
+#      href: '#how-does-this-work'
+#    - text: What Will Be Impacted?
+#      href: '#what-will-be-impacted'
+#    - text: When Will This Start?
+#      href: '#when-will-this-start'
+#    - text: What Should I Do?
+#      href: '#what-should-i-do'
+#    - text: Frequently Asked Questions
+#      href: '#frequently-asked-questions'
+#    - text: Additional Resources
+#      href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}

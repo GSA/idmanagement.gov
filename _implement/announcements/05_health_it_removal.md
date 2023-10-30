@@ -8,21 +8,21 @@ removeDate: 03/04/2022
 category: Removal
 #permalink: /fpki/announcements/2019removal/
 description: This announcement provides information related to the Health IT CAs removed from the Federal PKI.
-sidenav: implement
+# sidenav: implement
 sticky_sidenav: true
 category: Archive
 
-subnav: 
-  - text: What Was the Change?
-    href: '#what-was-the-change'
-  - text: What Certification Authorities Were Impacted?
-    href: '#what-certification-authorities-were-impacted'
-  - text: What Should I Do?
-    href: '#what-should-i-do'
-  - text: Who Can I Contact for Help or More Information?
-    href: '#who-can-i-contact-for-help-or-more-information'
-  - text: Additional Resources
-    href: '#additional-resources'
+# subnav: 
+#   - text: What Was the Change?
+#     href: '#what-was-the-change'
+#   - text: What Certification Authorities Were Impacted?
+#     href: '#what-certification-authorities-were-impacted'
+#   - text: What Should I Do?
+#     href: '#what-should-i-do'
+#   - text: Who Can I Contact for Help or More Information?
+#     href: '#who-can-i-contact-for-help-or-more-information'
+#   - text: Additional Resources
+#     href: '#additional-resources'
 ---
 
 Federal PKI teams performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is related to efforts to assess and maintain the mission scope for Federal PKI and reduce burden for commercial and non-profit organizations. This change is **not a distrust** action. 

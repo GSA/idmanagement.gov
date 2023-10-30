@@ -8,22 +8,22 @@ removeDate: 05/19/2021
 category: Microsoft
 description: UUpcoming changes regarding Microsoft's remove of the U.S. Government Root CA.
 category: Removed
-sidenav: implement
+# sidenav: implement
 sticky_sidenav: true
 
-subnav: 
-    - text: How Does this Work?
-      href: '#how-does-this-work'
-    - text: What Will Be Impacted?
-      href: '#what-will-be-impacted'
-    - text: What Should I Do?
-      href: '#what-should-i-do'
-    - text: How Can I Test?
-      href: '#how-can-i-test'
-    - text: Frequently Asked Questions
-      href: '#frequently-asked-questions'
-    - text: Additional Resources
-      href: '#additional-resources'
+# subnav: 
+#     - text: How Does this Work?
+#       href: '#how-does-this-work'
+#     - text: What Will Be Impacted?
+#       href: '#what-will-be-impacted'
+#     - text: What Should I Do?
+#       href: '#what-should-i-do'
+#     - text: How Can I Test?
+#       href: '#how-can-i-test'
+#     - text: Frequently Asked Questions
+#       href: '#frequently-asked-questions'
+#     - text: Additional Resources
+#       href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}

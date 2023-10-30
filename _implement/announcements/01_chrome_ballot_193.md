@@ -7,19 +7,19 @@ removeDate: 05/09/2021
 # collection: implement
 tag: Chrome
 description: Starting March 1, 2018, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.
-sidenav: implement
+# sidenav: implement
 sticky_sidenav: true
 category: Removed
 
-subnav: 
-    - text: What Will Be Impacted?
-      href: '#what-will-be-impacted'
-    - text: What Other Browsers Enforce This Requirement?
-      href: '#what-other-browsers-enforce-this-requirement'
-    - text: What Should I Do?
-      href: '#what-should-i-do'
-    - text: Additional Resources
-      href: '#additional-resources'
+# subnav: 
+#     - text: What Will Be Impacted?
+#       href: '#what-will-be-impacted'
+#     - text: What Other Browsers Enforce This Requirement?
+#       href: '#what-other-browsers-enforce-this-requirement'
+#     - text: What Should I Do?
+#       href: '#what-should-i-do'
+#     - text: Additional Resources
+#       href: '#additional-resources'
 ---
 
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}

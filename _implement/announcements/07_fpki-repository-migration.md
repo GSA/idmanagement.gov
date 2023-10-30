@@ -8,19 +8,19 @@ removeDate: 03/30/2022
 category: Migration
 #permalink: /fpki/announcements/2019fpkimigration/
 description: Information related to the upcoming migration.
-sidenav: implement
+# sidenav: implement
 sticky_sidenav: true
 category: Removed
 
-subnav:
-    - text: What Will Be Impacted?
-      href: '#what-will-be-impacted'
-    - text: When Will This Change Take Place?
-      href: '#when-will-this-change-take-place'
-    - text: What Should I Do?
-      href: '#what-should-i-do'
-    - text: Who Can I Contact for Help or More Information?
-      href: '#who-can-i-contact-for-help-or-more-information'
+# subnav:
+#     - text: What Will Be Impacted?
+#       href: '#what-will-be-impacted'
+#     - text: When Will This Change Take Place?
+#       href: '#when-will-this-change-take-place'
+#     - text: What Should I Do?
+#       href: '#what-should-i-do'
+#     - text: Who Can I Contact for Help or More Information?
+#       href: '#who-can-i-contact-for-help-or-more-information'
 
 ---
 

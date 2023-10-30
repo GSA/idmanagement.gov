@@ -8,7 +8,7 @@ removeDate: 03/02/2022
 category: Decommission
 #permalink: /fpki/announcements/2019digicert/
 description: Information related to the DigiCert CAs affected by this change.
-sidenav: implement
+#sidenav: implement
 sticky_sidenav: true
 category: Removed
 

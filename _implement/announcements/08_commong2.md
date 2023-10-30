@@ -4,21 +4,21 @@ title: Federal Common Policy CA Update
 date: 10/12/2020
 removeDate: 10/11/2023
 # collection: implement
-permalink: /implement/announcements/common-g2-update/
+# permalink: /implement/announcements/common-g2-update/
 description: Details on the Federal Common Policy CA G2 timeline and actions agencies need to perform.
 category: Active
 sticky_sidenav: true
-sidenav: fpkiannouncements
+# sidenav: fpkiannouncements
 
-subnav:
-    - text: What Will Be Impacted?
-      href: '#what-will-be-impacted'
-    - text: When Will This Change Take Place?
-      href: '#when-will-this-change-take-place'
-    - text: What Should I Do?
-      href: '#what-should-i-do'
-    - text: Who Can I Contact for Help or More Information?
-      href: '#who-can-i-contact-for-help-or-more-information'
+# subnav:
+#     - text: What Will Be Impacted?
+#       href: '#what-will-be-impacted'
+#     - text: When Will This Change Take Place?
+#       href: '#when-will-this-change-take-place'
+#     - text: What Should I Do?
+#       href: '#what-should-i-do'
+#     - text: Who Can I Contact for Help or More Information?
+#       href: '#who-can-i-contact-for-help-or-more-information'
 ---
 
 {% include alert-info.html content="Upcoming changes to the Federal Common Policy Certification Authority (CA) will impact your agency.  This announcement will be updated as more information is available." %}
