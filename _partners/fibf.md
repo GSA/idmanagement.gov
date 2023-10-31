@@ -9,7 +9,7 @@ last_review: 10/30/23
 
 subnav:
   - text: NOTICE - Comment on Draft FIBF Business Lifecycles for FICAM
-    href: '#notice---comment-on-ficam-fibf'
+    href: '#NOTICE---comment-on-draft-fibf-business-lifecycles-for-ficam'
   - text: M-19-16
     href: '#M---19---16---centralized-mission-support-capabilities-for-icam'
   - text: What is FIBF
@@ -67,7 +67,7 @@ FIBF is generally accepted in the Federal Government as a tool for  documenting
 common business requirements; it is currently being used by 13 other Federal
 Functional Areas including Financial Management, IT Services, and Cybersecurity. 
 
-To learn more about FIBF, visit the website for the Office of Shared Services and
+To learn more about FIBF, visit the [website](https://ussm.gsa.gov/fibf/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for the Office of Shared Services and
 Performance Improvement. 
 
 ## ICAM FIBF Team?
@@ -81,7 +81,7 @@ requirements. In addition, GSA Office of Technology Policy (OTP) will provide bo
 ICAM subject matter expertise, as well as coordination support. Working in tandem
 as the ICAMSC-chartered FIBF Working Group, the group fosters cross-agency
 agreement, as well as alignment with other FIBF functional areas. To join the team,
-please send a request to vanessa.arias@gsa.gov.
+please send a request to icam@gsa.gov.
 
 ## How Agencies can use the FIBF for ICAM
 
