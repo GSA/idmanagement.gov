@@ -17,7 +17,7 @@ subnav:
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
   - text: How Agencies Can Use The FIBF for ICAM
-    href: '#how-agencies-can-use-the-fibf-for-icam'
+    href: '#How-Agencies-can-use-the-FIBF-for-ICAM'
   - text: Translating Policy into Practice
     href: '#translating-policy-into-practice'
   - text: Procurement
@@ -46,7 +46,7 @@ Please download the FICAM-FIBF to review the Business LifeCycles and submit
 your feedback in the Cross-Agency Feedback Template. Comment period will end
 November 30, 2023.
 
-## M-19-16 - Centralized Mission Support Capabilities for ICAM 
+## M 19 16 Centralized Mission Support Capabilities for ICAM 
 
 Centralized Mission Support Capabilities for the Federal Government [M-19-16]
 calls for the Government to establish a process to identify mission support functions
