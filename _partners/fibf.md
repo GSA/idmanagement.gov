@@ -11,13 +11,13 @@ subnav:
   - text: NOTICE - Comment on FICAM in FIBF
     href: '#notice---comment-on-ficam-in-fibf'
   - text: M 19 16 Centralized Mission Support Capabilities for ICAM
-    href: '#M-19-16-centralized-mission-support-capabilities-for-icam'
+    href: '#m-19-16-centralized-mission-support-capabilities-for-icam'
   - text: What is FIBF
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
   - text: How Agencies Can Use The FIBF for ICAM
-    href: '#How-Agencies-can-use-the-FIBF-for-ICAM'
+    href: '#how-agencies-can-use-the-fibf-for-icam'
   - text: Translating Policy into Practice
     href: '#translating-policy-into-practice'
   - text: Procurement
