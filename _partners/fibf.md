@@ -16,7 +16,7 @@ subnav:
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
-  - text: FIBF for ICAM
+  - text: How-Agencies-can-use-the-FIBF-for-ICAM
     href: '#How-Agencies-can-use-the-FIBF-for-ICAM'
   - text: Translating Policy into Practice
     href: '#translating-policy-into-practice'
@@ -27,7 +27,7 @@ subnav:
   - text: Assess Readiness for Shared Services
     href: '#assess-readiness-for-shared-services'
   - text: Agreement Across Mission Support Function
-    href: '#agreement-across-mission-support-function'
+    href: '#Agreement-Across-Mission-Support-Functions'
     
 ---
 
