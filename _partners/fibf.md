@@ -10,13 +10,13 @@ last_review: 10/30/23
 subnav:
   - text: NOTICE - Comment on FICAM in FIBF
     href: '#notice---comment-on-ficam-in-fibf'
-  - text: M-19-16
-    href: '#M---19---16-centralized-mission-support-capabilities-for-icam'
+  - text: M 19 16 Centralized Mission Support Capabilities for ICAM
+    href: '#M-19-16-centralized-mission-support-capabilities-for-icam'
   - text: What is FIBF
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
-  - text: How-Agencies-can-use-the-FIBF-for-ICAM
+  - text: How Agencies Can Use The FIBF for ICAM
     href: '#How-Agencies-can-use-the-FIBF-for-ICAM'
   - text: Translating Policy into Practice
     href: '#translating-policy-into-practice'
@@ -26,8 +26,8 @@ subnav:
     href: '#agency-investment-review'
   - text: Assess Readiness for Shared Services
     href: '#assess-readiness-for-shared-services'
-  - text: Agreement Across Mission Support Function
-    href: '#Agreement-Across-Mission-Support-Functions'
+  - text: Agreement Across Mission Support Functions
+    href: '#agreement-across-mission-support-functions'
     
 ---
 
