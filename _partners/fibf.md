@@ -33,8 +33,7 @@ subnav:
 
 ## NOTICE - Comment on FICAM in FIBF
 
-The ICAMSC through its Federal Integrated Business Framework (FIBF) Working
-Group seeks comments on the first component of the business framework -
+The ICAMSC through its Federal Integrated Business Framework (FIBF) Working Group seeks comments on the first component of the business framework -
 Business Lifecycles. FIBF helps define and agree to common business
 requirements, as well as align ICAM with other federal functions such as Human
 Resource Management and Cybersecurity. The initial work has been developed by
