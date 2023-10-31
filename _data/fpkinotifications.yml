@@ -46,7 +46,7 @@
   system: DirectTrust Identity Bridge CA
   change_description: DirectTrust issued a cross certificate from the bridge to the Trans Sped Root CA on October 30, 2023.
   contact: Kyle dot Neuman at DirectTrust dot org
-  ca_certificate_hash: 
+  ca_certificate_hash: d0575156c2333a2493890b3aee7900fc6ff8620f
   ca_certificate_issuer: CN = DirectTrust Identity Bridge CA, OU = Certification Authorities, O = DirectTrust.org, inc., C = US
   ca_certificate_subject: CN = Trans Sped Root CA G3, OU = Trans Sped Trust Services, O = Trans Sped S.A./organizationIdentifier = VATRO-12458924, C = RO
   cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
