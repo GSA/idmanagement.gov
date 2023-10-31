@@ -8,10 +8,10 @@ sticky_sidenav: true
 last_review: 10/30/23
 
 subnav:
-  - text: NOTICE - Comment on Draft FIBF Business Lifecycles for FICAM
-    href: '#NOTICE---comment-on-draft-fibf-business-lifecycles-for-ficam'
+  - text: NOTICE - Comment on FICAM in FIBF
+    href: '#NOTICE-Comment-on-FICAM-in-FIBF'
   - text: M-19-16
-    href: '#M---19---16---centralized-mission-support-capabilities-for-icam'
+    href: '#M-19-16-centralized-mission-support-capabilities-for-icam'
   - text: What is FIBF
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
