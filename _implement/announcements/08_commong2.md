@@ -4,7 +4,6 @@ title: Federal Common Policy CA Update
 date: 10/12/2020
 removeDate: 10/11/2023
 collection: implement
-permalink: /implement/announcements/common-g2-update/
 description: Details on the Federal Common Policy CA G2 timeline and actions agencies need to perform.
 category: Active
 sticky_sidenav: true
