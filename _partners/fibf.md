@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: partners
-title: FICAM in the Federal Integrated Business Framework (FIBF) - Opportunity to Comment
+title: ICAM in the Federal Integrated Business Framework (ICAM-FIBF) 
 permalink: /icam-fibf/
 sidenav: partners
 sticky_sidenav: true
@@ -27,7 +27,7 @@ The Identity Credentialing and Access Management (ICAM) Subcommittee  through it
 
 The working group is chartered to define the ICAM function using FIBF with workforce identity as the initial scope. The first component of the framework is in draft and the working group seeks agency comments. 
 
-<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.PNG" alt="icam fibf comment timeline." width="560" height="319">
+<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.PNG" alt="icam fibf comment timeline." width="560" height="280">
 
 Please download the [ICAM FIBF Draft]({{site.baseurl}}/docs/icam-fibf-draft.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review the Business LifeCycles and submit your feedback in the [Cross Agency Feedback Form]({{site.baseurl}}/docs/agency-feedback-form.xlsx){:target="_blank"}{:rel="noopener noreferrer"}. Comment period will end November 30, 2023. 
 
