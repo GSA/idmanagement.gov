@@ -20,6 +20,8 @@ partners:
   #   href: /phish-criteria/
   - text: Federal Workforce Identity Services
     href: /trust-services/
+  - text: ICAM FIBF For Comment
+    href: /icam-fibf/
 
 implement:
   - text: Introduction
