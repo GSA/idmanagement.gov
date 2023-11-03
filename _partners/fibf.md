@@ -29,7 +29,7 @@ The working group is chartered to define the ICAM function using FIBF with workf
 
 <img src="{{site.baseurl}}/assets/img/framework-comment-timeline.PNG" alt="icam fibf comment timeline." width="560" height="319">
 
-Please download the [ICAM FIBF Draft]({{site.baseurl}}/docs/icam-fibf-draft.xlsl){:target="_blank"}{:rel="noopener noreferrer"} to review the Business LifeCycles and submit your feedback in the [Cross Agency Feedback Form]({{site.baseurl}}/docs/agency-feedback-form.xlsl){:target="_blank"}{:rel="noopener noreferrer"}. Comment period will end November 30, 2023. 
+Please download the [ICAM FIBF Draft]({{site.baseurl}}/docs/icam-fibf-draft.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review the Business LifeCycles and submit your feedback in the [Cross Agency Feedback Form]({{site.baseurl}}/docs/agency-feedback-form.xlsx){:target="_blank"}{:rel="noopener noreferrer"}. Comment period will end November 30, 2023. 
 
 ## ICAM-FIBF Background 
 
