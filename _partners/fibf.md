@@ -29,7 +29,7 @@ The working group is chartered to define the ICAM function using FIBF with workf
 
 <img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="319">
 
-Please download the ICAM-FIBF (Workforce Identity Focused)_Website Version (Excel spreadsheet) to review the Business LifeCycles and submit your feedback in the Cross-Agency Feedback Template (Excel spreadsheet). Comment period will end November 30, 2023. 
+Please download the [icam fibf workforce identity focus ]({{site.baseurl}}/docs/ICAM FIBF Draft.xlsl){:target="_blank"}{:rel="noopener noreferrer"} to review the Business LifeCycles and submit your feedback in the [agency feedback form ]({{site.baseurl}}/docs/Agency-Feedback-Form.xlsl){:target="_blank"}{:rel="noopener noreferrer"}. Comment period will end November 30, 2023. 
 
 ## ICAM-FIBF Background 
 
