@@ -9,7 +9,7 @@ last_review: 10/30/23
 
 subnav:
   - text: NOTICE - Opportunity to Comment on the Draft ICAM-FIBF
-    href: '#notice-opportunity-to-comment-on-the-draft-icam-fibf'
+    href: '#opportunity-to-comment-on-the-draft-icam-fibf'
   - text: ICAM - FIBF Background
     href: '#icam-fibf-background'
   - text: What is FIBF
@@ -21,7 +21,7 @@ subnav:
     
 ---
 
-## NOTICE - Opportunity to Comment on the Draft ICAM FIBF
+## Opportunity to Comment on the Draft ICAM FIBF
 
 The Identity Credentialing and Access Management (ICAM) Subcommittee  through its Federal Integrated Business Framework (FIBF) Working Group is establishing ICAM as a federal function that will support and enable practically every mission support area. This will affect not only ICAM programs, but also areas such as Financial Management, Cybersecurity, Electronic Records Management and Human Resource Management, etc.   
 
