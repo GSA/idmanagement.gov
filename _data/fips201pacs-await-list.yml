@@ -5,7 +5,7 @@
 # Updated by: 
 #
 # Legend:
-#  position: sequencial numbers from 1 to n#
+#  position: sequential numbers from 1 to nth#
 #  solution: company name or name of system
 #  state: current state: Update|New| or whatever status provided
 #  teststatus: current testing status
@@ -27,15 +27,15 @@
   teststatus: In queue
 
 - position: 2	
-  solution: Datawatch + HID pivCLASS	
-  aplnumbers: New	
-  state: New	
-  teststatus: In queue
-
-- position: 3	
   solution: Identiv Velocity Security Management System 13.02	
   aplnumbers: 10103
   state: Update
+  teststatus: In queue
+
+- position: 3	
+  solution: Datawatch + HID pivCLASS
+  aplnumbers: New
+  state: New
   teststatus: In queue
 
 - position: 4	
@@ -62,8 +62,3 @@
   state: New
   teststatus: In queue
 
-- position: 8	
-  solution: Tyco Security Products C-CURE 9000 with Innometrics validation System	
-  aplnumbers: 10115 & 10108
-  state: Update
-  teststatus: On Hold by vendor
