@@ -5,6 +5,14 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: FPKIMA Audit Letter
+  numberProposal: 2022
+  name: FPKIMA Audit Letter 2022
+  date: 9/12/2022
+  url: /docs/archived/fpki-fpkima-audit-letter-2022.pdf
+  status: post
+  remove: 11/9/2026
+
 - category: FPKI Trust Infrastructure Certificate Practice Statement
   numberProposal: 6.2
   name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.2
