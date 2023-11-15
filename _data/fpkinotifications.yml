@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: November 14, 2023
+  change_type: Intent to Rekey CA Certificate
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 intends to rekey the WidePoint ORC NFI 4 CA on or after November 27, 2023.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
 - notice_date: November 13, 2023
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
