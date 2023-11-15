@@ -29,7 +29,7 @@
 - notice_date: November 14, 2023
   change_type: Intent to Rekey CA Certificate
   system: WidePoint Non-Federal Issuer
-  change_description: WidePoint NFI Root 2 intends to rekey the WidePoint ORC NFI 4 CA on or after November 27, 2023.
+  change_description: WidePoint NFI Root 2 intends to rekey the WidePoint ORC NFI 4 CA on or after December 8, 2023.
   contact: pkipolicy at orc dot com
   ca_certificate_hash: TBD
   ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
