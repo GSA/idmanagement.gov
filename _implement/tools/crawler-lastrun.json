@@ -2375,34 +2375,6 @@
             }
         },
         {
-            "subject": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-            "issuer": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "224865367551876005217662603190122430757144890377",
-            "akid": "f4 27 5c a9 c3 7c 47 f4 fa a6 a7 b0 59 97 aa dd 35 26 17 e3",
-            "skid": "cc 00 68 61 a6 a5 03 93 10 0a 1b 61 b7 87 18 c1 45 56 da 82",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c": [
-                    "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-                    "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu"
-                ]
-            },
-            "aia-entries": {
-                "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "226197281861747171001742527929153572507297613057",
