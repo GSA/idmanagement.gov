@@ -34,8 +34,8 @@
   ca_certificate_hash: TBD
   ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
   ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
-  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
-  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1_1.crl
+  aia_uri: http://aia.xca.xpki.com/AIA/IssuedCertsforXTec_PIVI_CA1_1.p7c
   sia_uri: N/A
   ocsp_uri: N/A
   ee_cdp_uri: N/A
