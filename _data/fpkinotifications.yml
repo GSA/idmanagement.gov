@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: December 5, 2023
+  change_type: CA Certificate Issuance
+  system: DirectTrust Identity Bridge CA
+  change_description: DirectTrust issued a cross certificate from the bridge to the FBCA. Valid from 10/17/2023 to 10/31/2026.
+  contact: admin at DirectTrust dot org 
+  ca_certificate_hash: 1623a303cd6d5c61cf049f1b65d6aae2f1e8e19f
+  ca_certificate_issuer: CN = DirectTrust Identity Bridge CA, OU = Certification Authorities, O = DirectTrust.org, inc., C = US
+  ca_certificate_subject: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: November 27, 2023
   change_type: Rekey CA Certificate Issuance
   system: WidePoint Non-Federal Issuer
