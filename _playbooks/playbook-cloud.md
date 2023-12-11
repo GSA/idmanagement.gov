@@ -177,7 +177,7 @@ The adoption of cloud services adds challenges. Cloud services operate on a shar
 
 <img src="{{site.baseurl}}/assets/playbooks/cloud-shared-model.png" alt="A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility." width="560" height="332">
 
-See the [Data Center and Cloud OptimizationInitiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Cloud Smart Strategy](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} to understand the federal government's overarching strategic guidance on cloud adoption.
+See the [Data Center and Cloud Optimization Initiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Cloud Smart Strategy](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} to understand the federal government's overarching strategic guidance on cloud adoption.
 
 ## Cloud Identity Journey Steps
 
