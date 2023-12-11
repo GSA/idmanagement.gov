@@ -104,7 +104,7 @@ The documents in this section provide guidance and information necessary for eva
 - [Approved Product List Application Guidance Document, version 1.1.0 (PDF, Nov 30, 2023)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides information and lists of the documents required when submitting a new or upgraded solution for testing and instructions for completing the Approved Product List Application form.
 - [Removed Products List (RPL) Process Document, v1.0.2 (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-rplprocess.pdf) – If your product has been removed from the APL, review this document for the procedures.
 
-## Functional Requirements and Test Cases Guidance Documents:
+**Functional Requirements and Test Cases Guidance Documents:**
 
 - [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. C (PDF, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}
     - [Secure Messaging and On Card Comparison Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}
@@ -113,7 +113,7 @@ The documents in this section provide guidance and information necessary for eva
     - [Approved PACS Topology Mapping Form (PACS 13.01 13.02) PIN Usage Policy Testing Addendum, version 1.3.3 Rev. F (PDF, August 21, 2018)]({{site.baseurl}}/docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Review this Addendum for help resetting PIN retry counters and determining the number of remaining PIN retries during Discovery Object testing.
     - [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 26, 2023)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This document will updated continuously as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov) by November 30, 2023.
 
-## Topology Guidance Documents:
+**Topology Guidance Documents:**
 
 - Review the following guidance documentation and select from the appropriate topology that best describes your solution: 
     - [Approved PACS Topology Mapping Document (PACS 13.01), version 1.3.3 Rev G (PDF, February 1, 2019).]({{site.baseurl}}/docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}
