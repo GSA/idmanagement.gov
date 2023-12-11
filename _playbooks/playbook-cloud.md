@@ -177,7 +177,7 @@ The adoption of cloud services adds challenges. Cloud services operate on a shar
 
 <img src="{{site.baseurl}}/assets/playbooks/cloud-shared-model.png" alt="A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility." width="560" height="332">
 
-See the [Data Center and Cloud OptimizationInitiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Cloud Smart Strategy](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} to understand the federal government's overarching strategic guidance on cloud adoption.
+See the [Data Center and Cloud Optimization Initiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Cloud Smart Strategy](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"} to understand the federal government's overarching strategic guidance on cloud adoption.
 
 ## Cloud Identity Journey Steps
 
@@ -554,7 +554,7 @@ See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_bl
 
 1. [NIST Special Publication 800-63 - Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [NIST Special Publication 800-145 - The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-3. [NIST Special Publication 800-204B - Attribute-Based Access Control for Microservices-Bbased Applications Using a Service Mesh](https://csrc.nist.gov/publications/detail/sp/800-204b/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [NIST Special Publication 800-204B - Attribute-Based Access Control for Microservices-based Applications Using a Service Mesh](https://csrc.nist.gov/publications/detail/sp/800-204b/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [NIST Special Publication 800-207 - Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 5. [NIST Special Publication 800-210 - General Access Control Guidance for Cloud Systems](https://csrc.nist.gov/publications/detail/sp/800-210/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
