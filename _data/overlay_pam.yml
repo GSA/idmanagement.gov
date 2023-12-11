@@ -171,7 +171,7 @@
     category: 'Personnel Security'
     countermeasure: 'Develop, document, and disseminate clear policies on personnel security'
     control: 'PS-1'
-    explanation: 'An agency should monitor employees with elevated access beginning with the hiring process. In managing components of a workforce, clearly documented personnel policies are important. The privileged user should be aware of all facets of the agency's duties and abilities to determine access rights for, adjust responsibilities of, and monitor its privileged user population. This not only provides legal protection for the agency, but the ramifications of misuse or abuse serve as a deterrent to unwanted behavior by privileged users.'
+    explanation: 'An agency should monitor employees with elevated access beginning with the hiring process. In managing components of a workforce, clearly documented personnel policies are important. The privileged user should be aware of all facets of the agency duties and abilities to determine access rights for, adjust responsibilities of, and monitor its privileged user population. This not only provides legal protection for the agency, but the ramifications of misuse or abuse serve as a deterrent to unwanted behavior by privileged users.'
     resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
 -
     category: 'Personnel Security'
@@ -189,7 +189,7 @@
     category: 'Personnel Security'
     countermeasure: 'Follow secure and comprehensive personnel termination procedures'
     control: 'PS-4'
-    explanation: 'Termination procedures are especially important if the departing employee had been granted elevated access, because a disgruntled, privileged user poses an even greater risk to an agency's protected resources than a disgruntled user with standard access. When terminating an employee, the agency should: <ul><li>Immediately terminate the employees physical and logical access (i.e., PIV card, keys, system administration manuals), especially if the termination occurred under unfavorable circumstances, to prevent unwanted access to protected resources once termination is finalized.</li><li>Notify security personnel and the departing employees colleagues of the departure, so these individuals do not assist the departed employee in accessing the protected resources because of their familiarity.</li></ul> Definition can be found in 5 C.F.R. 731.106.'
+    explanation: 'Termination procedures are especially important if the departing employee had been granted elevated access, because a disgruntled, privileged user poses an even greater risk to an agency protected resources than a disgruntled user with standard access. When terminating an employee, the agency should: <ul><li>Immediately terminate the employees physical and logical access (i.e., PIV card, keys, system administration manuals), especially if the termination occurred under unfavorable circumstances, to prevent unwanted access to protected resources once termination is finalized.</li><li>Notify security personnel and the departing employees colleagues of the departure, so these individuals do not assist the departed employee in accessing the protected resources because of their familiarity.</li></ul> Definition can be found in 5 C.F.R. 731.106.'
     resource: '<ul><li>Content and data</li><li>Applications and web services</li><li>Networks and infrastructure</li><li>Facilities</li></ul>'
 -
     category: 'Personnel Security'
