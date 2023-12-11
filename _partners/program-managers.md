@@ -24,7 +24,7 @@ The Federal ICAM (FICAM) program helps federal agencies plan and manage enterpri
 
 ## ICAM Program Management 101
 
-The [ICAM Program Management 101]({{site.baseurl}}/university/pm/) explains how to plan, implement, and manage an agenbct ICAM Program. Here, you’ll find content for ICAM program managers who need agency-level planning guides and templates to drive adoption of ICAM services within their organizations as well as information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
+The [ICAM Program Management 101]({{site.baseurl}}/university/pm/) explains how to plan, implement, and manage an ICAM Program. Here, you’ll find content for ICAM program managers who need agency-level planning guides and templates to drive adoption of ICAM services within their organizations as well as information on how to govern the program, identify and communicate with stakeholders, manage risk, and other related topics.
 
 This 101 guide answers the most common ICAM program organization and management questions, including:
 - How can I establish governance to ensure ICAM alignment at the agency level?
