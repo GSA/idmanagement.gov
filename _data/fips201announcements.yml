@@ -3,6 +3,18 @@
 # If announcement content is full summary, leave 'url' blank, set soure to 'IDManagement.gov' and doctype = 'Announcement'
 # HTML tags can be included inline with summary information.
 
+- name: "GSA FICAM Test Lab’s 2023 Holiday Schedule" 
+  summary: "<p>The GSA FICAM Testing Lab located in Reston, VA will be operating on limited in-person availability from December 20, 2023, through January 2, 2024, and as such will not be
+scheduling any appointments during that period. Vendors are requested to schedule an appointment by December 15, 2023, so that the lab personnel can make every effort to provide
+availability and assistance before December 20, 2023. <br><br>Your patience is greatly appreciated. <br>Thank you.</p>"
+  pubdate: December 11, 2023
+  url: 
+  source: IDManagement.gov
+  target: _blank
+  expanded: true
+  doctype: Announcement
+  status: Active
+
 - name: "Removed Product List (RPL) Update: Identiv Velocity (APL #10013) with HID Global Validation System for Hirsch-Identiv Velocity (APL #10014) moved to the RPL." 
   summary: "<p>As requested by the vendor, the Identiv Velocity (APL #10013) with HID Global Validation System for Hirsch-Identiv Velocity (APL #10014) will be moved to the RPL, effective October 16, 2023</p>"
   pubdate: October 16, 2023
