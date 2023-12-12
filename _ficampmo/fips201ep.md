@@ -9,16 +9,21 @@ sticky_sidenav: true
 subnav:
   - text: Program Announcements
     href: '#program-announcements'
-  - text: Testing and Certification
-    href: '#testing-and-certification'
-  - text: Personal Identity Verification (PIV) Credentials
-    href: '#personal-identity-verification-credentials'
-  - text: PIV Card Body Application Package Requirements
-    href: '#piv-card-body-application-package-requirements'
-  - text: Derived PIV (D-PIV) Credentials
-    href: '#derived-piv-credentials'
+  - text: Testing and Evaluation
+    href: '#testing-and-evaluation'
   - text: Physical Access Control System (PACS)
     href: '#physical-access-control-system'
+  - text: PACS APL Guidance Documents
+    href: '#pacs-apl-guidance-documents'
+  - text: Personal Identity Verification (PIV) Credentials
+    href: '#personal-identity-verification-credentials'
+  - text: Derived PIV (D-PIV) Credentials
+    href: '#derived-piv-credentials'
+  - text: PIV Card Body
+    href: '#piv-card-body'
+  - text: Test Card Loaners
+    href: '#Test Card Loaners'
+
     
 ---
 

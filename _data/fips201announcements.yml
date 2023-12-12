@@ -4,7 +4,7 @@
 # HTML tags can be included inline with summary information.
 
 - name: "Updates to the processes and documents outlined in the Testing and Evaluation Section (November 30, 2023)" 
-  summary: "<p>The Testing and Evaluation section has been updated to streamline the FIPS 201 Evaluation Processes. The guidance and application documents required for the Physical Access Control Systems (PACS) evaluation have been updated, and clarification for the Personal Identity Verification and Credentials evaluation process has been added.</p>"
+  summary: "<p>The Testing and Evaluation section has been updated to streamline the process and documentation for the FIPS 201 Evaluation Program. The guidance and application documents required for the Physical Access Control Systems (PACS) evaluation have been updated, and clarification for the Personal Identity Verification and Credentials evaluation process has been added.</p>"
   pubdate: November 30, 2023
   url: 
   source: IDManagement.gov
