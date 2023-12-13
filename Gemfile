@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 gem "jekyll", "4.2.2" # pinned awaiting release of https://github.com/jekyll/jekyll/pull/9304 
-gem "execjs", "2.7.0" # https://github.com/rails/execjs/issues/99
+# gem "execjs", "2.7.0" # https://github.com/rails/execjs/issues/99
+gem "execjs", "2.9.1" # https://github.com/rails/execjs/issues/99
 gem "autoprefixer-rails"
 gem "webrick" # not included in jekyll directly until 4.3.0 https://github.com/jekyll/jekyll/pull/8524
 
