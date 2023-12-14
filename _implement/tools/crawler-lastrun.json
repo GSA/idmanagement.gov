@@ -1,7 +1,9 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": []
+        "new_certs": [
+            "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US:727950861198378025251722092527930740627714912024"
+        ]
     },
     "issuers": [
         "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
@@ -95,6 +97,7 @@
         "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
         "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
         "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
+        "common_name:Trans Sped Root CA G3,organizational_unit_name:Trans Sped Trust Services,organization_identifier:VATRO-12458924,organization_name:Trans Sped S.A.,country_name:RO",
         "common_name:U.S. Department of Education Agency CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Education Agency CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Education Device CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
@@ -691,6 +694,29 @@
             "aia-entries": {
                 "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG6.p7c": [
                     "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:Trans Sped Root CA G3,organizational_unit_name:Trans Sped Trust Services,organization_identifier:VATRO-12458924,organization_name:Trans Sped S.A.,country_name:RO",
+            "issuer": "common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US",
+            "serial-number": "139104064299125699434615892021445118399",
+            "akid": "99 a4 1a cd dc 6f c6 a8 08 3e ad b6 96 6c 7e d7 cf 37 a4 c9",
+            "skid": "73 c0 cf 30 f3 84 ee f5 6b 10 1f 73 af 01 83 c6 08 b7 e4 73",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://aia.makeidentitysafe.com/sibca.p7c": [
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -1722,7 +1748,7 @@
             ],
             "sia-entries": {
                 "http://crl-server.orc.com/caCerts/caCertsIssuedByWIDEPOINTNFIROOT2.p7c": [
-                    "common_name:ORC NFI CA 3,organization_name:ORC PKI,country_name:US",
+                    "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
                     "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
                     "common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US",
                     "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US",
@@ -1755,7 +1781,7 @@
             ],
             "sia-entries": {
                 "http://aia.makeidentitysafe.com/issuedby-sibca.p7c": [
-                    "common_name:Trans Sped Mobile eIDAS QCA G2,organizational_unit_name:Individual Subscriber CA,organization_name:Trans Sped SRL,country_name:RO",
+                    "common_name:Trans Sped Root CA G3,organizational_unit_name:Trans Sped Trust Services,organization_identifier:VATRO-12458924,organization_name:Trans Sped S.A.,country_name:RO",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             },
@@ -3189,6 +3215,29 @@
             }
         },
         {
+            "subject": "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
+            "issuer": "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
+            "serial-number": "727950861198378025251722092527930740627714912024",
+            "akid": "9d 39 ad 66 b0 f2 a3 b6 7f e0 40 59 92 b9 51 75 51 a2 84 3e",
+            "skid": "56 10 f4 84 1b 4a 51 78 9c 4a e3 4c af 49 c1 2c 2d 34 82 2a",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c": [
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:U.S. Department of Transportation Agency CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US",
             "serial-number": "277501450847652725292183190161223444827312153402",
@@ -4111,6 +4160,18 @@
         },
         {
             "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US",
+            "serial-number": "61853595351567431390719863489048903930",
+            "akid": "99 a4 1a cd dc 6f c6 a8 08 3e ad b6 96 6c 7e d7 cf 37 a4 c9",
+            "skid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "status": "Certificate Valid, but no Path to Common",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Unable to build Path"
+            }
+        },
+        {
+            "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "serial-number": "2502",
             "akid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
@@ -4267,28 +4328,6 @@
         },
         {
             "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US",
-            "serial-number": "55052056998865178576625535228225613350",
-            "akid": "99 a4 1a cd dc 6f c6 a8 08 3e ad b6 96 6c 7e d7 cf 37 a4 c9",
-            "skid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:Trans Sped Mobile eIDAS QCA G2,organizational_unit_name:Individual Subscriber CA,organization_name:Trans Sped SRL,country_name:RO",
-            "issuer": "common_name:SAFE Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:SAFE Identity,country_name:US",
-            "serial-number": "26445761548339073864057105944852044423",
-            "akid": "99 a4 1a cd dc 6f c6 a8 08 3e ad b6 96 6c 7e d7 cf 37 a4 c9",
-            "skid": "1d 50 4e 45 8b 23 40 14 d5 6b 17 7a 17 d6 5a 36 eb cf 4d fd",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
             "serial-number": "279",
             "akid": "19 c1 ce 87 49 33 80 b6 f7 5a ac 65 c3 74 f0 7f 37 92 a5 61",
@@ -4375,23 +4414,6 @@
             "pathbuilder-result": {
                 "result": "false",
                 "details": "Unable to build Path"
-            }
-        },
-        {
-            "subject": "common_name:ORC NFI CA 3,organization_name:ORC PKI,country_name:US",
-            "issuer": "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
-            "serial-number": "685358773232249855141408445553331689950506020848",
-            "akid": "9d 39 ad 66 b0 f2 a3 b6 7f e0 40 59 92 b9 51 75 51 a2 84 3e",
-            "skid": "d9 1f 2c b3 87 29 5d 07 fe 49 68 2d 80 f2 dd 66 f6 4f a4 86",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US:9d39ad66b0f2a3b67fe0405992b9517551a2843e",
-            "validity-dates": {
-                "not-before": "2020-02-08 22:23:48+00:00",
-                "not-after": "2023-05-15 14:00:00+00:00"
             }
         },
         {
@@ -4776,6 +4798,12 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US",
+            "common_name:Trans Sped Root CA G3,organizational_unit_name:Trans Sped Trust Services,organization_identifier:VATRO-12458924,organization_name:Trans Sped S.A.,country_name:RO"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
         ],
@@ -4874,6 +4902,12 @@
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
+            "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",

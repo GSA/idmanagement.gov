@@ -5,6 +5,14 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: FPKI Trust Infrastructure Certificate Practice Statement
+  numberProposal: 6.3
+  name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.3
+  date: 5/22/2025
+  url: /docs/archived/fpki-fpkima-cps-v63.pdf
+  status: post
+  remove: 12/7/2026
+
 - category: Federal Bridge Certificate Policy
   numberProposal: 3.2
   name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.2
