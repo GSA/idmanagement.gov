@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: December 14, 2023
+  change_type: System Outage
+  system: WidePoint Non-Federal Issuer
+  change_description:  Automated CRL publication was delayed for the WidePoint ORC NFI CA 4, which caused a short period where the associated public CRL had expired. WidePoint had manually published a current CRL within 2 hours of discovery and has subsequently corrected their automated CRL publication processes.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 5a95aea990a7aec492134a5b437cf3324f260793
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1_1.crl
+  ee_ocsp_uri: N/A
+
 - notice_date: December 5, 2023
   change_type: CA Certificate Issuance
   system: DirectTrust Identity Bridge CA
