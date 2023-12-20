@@ -1,9 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US:727950861198378025251722092527930740627714912024"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
