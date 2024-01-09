@@ -135,7 +135,7 @@ All applicants, please complete the following steps:
 2. Complete and sign the [Approved Products List Application Form, v1.1.0 (MS Word, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-application-form.docx) (Mandatory) – Required for each solution submission, new or upgrade.
 3. Complete and sign the [FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0 (MS Word, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-agreement.docx) (Mandatory) – Required for each solution submission, new or upgrade. 
 4. List the equipment used for the APL testing in the equipment table linked here – [Equipment Table GSA PACS Application v0.2.0 (MS Excel, November 2023)]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx) (Mandatory).  
-5. Complete the [PACS FRTC Workbook (MS Excel, October 2021)]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx) (Mandatory) for your topology.
+5. Complete the [PACS FRTC Workbook, v1.4.2 Rev B (MS Excel, October 2021)]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx) (Mandatory) for your topology.
 6. Provide a solution Configuration Guide (Mandatory) that includes, at a minimum: 
     - Screenshots and instructions on configuring the submitted solution to meet the test cases.
     - Location of all log files needed to verify that the solution performs the test cases.
