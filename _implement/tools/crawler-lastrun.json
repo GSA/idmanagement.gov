@@ -86,7 +86,6 @@
         "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
         "common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
         "common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
-        "common_name:ORC SSP 4,organization_name:ORC PKI,country_name:US",
         "common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
         "common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US",
         "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
@@ -2075,31 +2074,6 @@
             }
         },
         {
-            "subject": "common_name:ORC SSP 4,organization_name:ORC PKI,country_name:US",
-            "issuer": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "186275779149375119680836444361313523668440728235",
-            "akid": "f4 27 5c a9 c3 7c 47 f4 fa a6 a7 b0 59 97 aa dd 35 26 17 e3",
-            "skid": "14 0b 99 1f 98 1f 64 8c 6f c3 ff 7a d5 ff f5 f8 4e 49 9c 21",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://crlserver.orc.com/caCerts/ORCSSP4.p7c": [
-                    "common_name:ORC SSP 4,organization_name:ORC PKI,country_name:US"
-                ]
-            },
-            "aia-entries": {
-                "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:WidePoint ORC SSP 5,organization_name:ORC PKI,country_name:US",
             "issuer": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "188647499826587402713844393501128965656689788059",
@@ -2173,7 +2147,6 @@
                     "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:ORC SSP 4,organization_name:ORC PKI,country_name:US",
                     "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
                     "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
                     "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
@@ -4448,10 +4421,6 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:ORC SSP 4,organization_name:ORC PKI,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
