@@ -21,9 +21,9 @@
 - orderNumber: 0
   initialState: active
   delay: 20000
-  heroHeading: FIBF WG completed Component 1 
-  heroText: "The ICAM FIBF WG has completed Component 1: Business Lifecycle, Functions and Activities, continues with Component 2: Business Capabilities."
-  actionButtonText: Learn more about how 
+  heroHeading: ICAM FIBF components and Working Group 
+  heroText: "The ICAM FIBF Working Group is working on establishing ICAM as a federal function."
+  actionButtonText: Learn more about the 
   actionLocation: icam-fibf/
   actionTarget: _self
 
