@@ -3,9 +3,9 @@
 -   category: 'PACS Validation System'
     supplier: 'HID Global'
     nameProduct: '13.01 - pivCLASS validation system 5.20 for Hirsch-Identiv Velocity 3.8.4'
-    numberProduct: 'PVCP-D/S-08-00, PVC-CM, PVC-FXRDR, PVC-IDPubULN, 91000BNNN'
+    numberProduct: 'N/A'
     dateRemoval: 'Monday, October 16, 2023'
-    numberApl: 'N/A'
+    numberApl: '10014'
     reason: 'Per vendor request'
     status: post
 
