@@ -21,7 +21,7 @@
 - orderNumber: 0
   initialState: active
   delay: 20000
-  heroHeading: ICAM FIBF components and Working Group 
+  heroHeading: "ICAM FIBF components<br> and Working Group" 
   heroText: "The ICAM FIBF Working Group is working on establishing ICAM as a federal function."
   actionButtonText: Learn more about the 
   actionLocation: icam-fibf/
