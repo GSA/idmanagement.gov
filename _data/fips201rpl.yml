@@ -12,7 +12,7 @@
 -   category: 'PACS Infrastructure'
     supplier: 'Identiv'
     nameProduct: 'Identiv Velocity 3.8.4 w/pivCLASS validation 5.20'
-    numberProduct: 'VELFED, MX1/ MX2/ MX4/ MX8, SNIB3'
+    numberProduct: 'N/A'
     dateRemoval: 'Monday, October 16, 2023'
     numberApl: '10013'
     reason: 'Per vendor request'
