@@ -210,7 +210,7 @@ Note that GSA will provide the Office of the Federal Chief Information Officer (
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were at one time on the Approved Products List but are no longer approved for government use. Due to security concerns, products on the RPL are not recommended for government acquisition. Products will be removed from the RPL after 3 years.
+The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were at one time on the Approved Products List but are no longer approved for government procurement. Due to security concerns, products on the RPL are not recommended for government acquisition. Products will be removed from the RPL after 3 years.
 
 <br>
 {% for category in categories %}
