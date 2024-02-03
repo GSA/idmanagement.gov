@@ -27,6 +27,21 @@
 # ee_ocsp_uri:
 
 - notice_date: February 1, 2024
+  change_type: Intent to Renew a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G4
+  change_description: The Federal Bridge CA G4 intends to perform a certificate renewal to TSCP SHA256 Bridge CA between 02/16/2024 and 02/22/2024. The current certificate is expiring 2/23/2024.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: dd68894ac1ae380449190487a5ff24f9fdbcd82f
+  ca_certificate_issuer: CN=Federal Common Policy CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 1, 2024
   change_type: Intent to Revoke a CA Certificate
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
   change_description: The Federal Common Policy CA G2 intends to revoke a dated instance of the WidePoint ORC SSP 5 CA in support of the recent certificate modification (certificate serial number 210b3f17db750e616eb25f3f0b4933e5a98c449b)
@@ -44,9 +59,9 @@
 - notice_date: February 1, 2024
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description:  
+  change_description: The Federal Common Policy CA G2 issued a modified to WidePoint ORC SSP 5 which includes Derived PIV policies
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: 
+  ca_certificate_hash: N/A
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
   cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
@@ -59,9 +74,9 @@
 - notice_date: February 1, 2024
   change_type: Intent to Issue a CA Certificate
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description:  
+  change_description: The Federal Common Policy CA G2 intends to issue a modified certificate for PIV Derived Policies to WidePoint ORC SSP 5 between 2/1/2024 and 2/8/2024. Once the new certificate is accepted and published the previous certificate will be revoked.
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: 
+  ca_certificate_hash: N/A
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
   cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
