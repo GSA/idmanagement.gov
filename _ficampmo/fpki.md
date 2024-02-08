@@ -81,7 +81,6 @@ Audits are required annually for supporting functions and elements of each entit
 | Entrust NFI	| Affiliate PKI	| November 30 |
 | Entrust Federal SSP	| SSP	| November 30 |
 | Exostar	| Affiliate PKI	| June 30 |
-| Government Publishing Office (GPO)	| Affiliate PKI	| October 31 |
 | IdenTrust NFI	| Affiliate PKI	| August 31 |
 | Patent and Trademark Office (PTO)	| Affiliate PKI	| October 31 |
 | SAFE Identity	| Bridge	| June 30 |
