@@ -49,7 +49,7 @@
   initialState:
   delay: 10000
   heroHeading: Privileged user
-  heroText: is authorized and trusted to perform security-relevant functions that ordinary users cannot perform—also known as a privileged IT user, privileged network user, or superuser.
+  heroText: is authorized and trusted to perform security-relevant functions that ordinary users cannot perform—also known as a administrator or superuser.
   actionButtonText: Learn more about
   actionLocation: playbooks/pam/
   actionTarget: _self
@@ -57,10 +57,10 @@
 - orderNumber: 4
   initialState:
   delay: 10000
-  heroHeading: Phishing resistant authenticators (Coming Soon)
+  heroHeading: Phishing resistant authenticators
   heroText: are not susceptible to common interception and replay attacks. Phishing-resistant MFA protects users from sophisticated online attacks.
   actionButtonText: Learn more about
-  actionLocation: /
+  actionLocation: playbooks/altauthn
   actionTarget: _blank
 
 - orderNumber: 5
