@@ -5,6 +5,16 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+
+- category: Federal Public Key Infrastructure Key Recovery Policy
+  numberProposal: 1.0
+  name: FPKI Key Recovery Policy
+  description: The FPKI Key Recovery Policy (KRP) (Subsumed 2021) supplements the FPKI Certificate Policies and describes the procedural and technical security controls needed to operate a Key Recovery System (KRS) securely, in accordance with FPKIPA requirements
+  date: 10/06/2017
+  url: /docs/archived/fpki-key-recovery_20240205.pdf
+  status: post
+  remove: 10/06/2024
+
 - category: FPKI Trust Infrastructure Certificate Practice Statement
   numberProposal: 6.3
   name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.3
