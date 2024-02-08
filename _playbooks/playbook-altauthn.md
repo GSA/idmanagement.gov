@@ -298,8 +298,8 @@ Table 02. FIDO CoA Cohort 2 pilot with results
         <td>Moved to production.</td>
         <td>Piloted.</td>
       </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 <table class="usa-table usa-table">
   <style> 
     th {text-align: center; vertical-align: middle;}
@@ -343,8 +343,7 @@ Table 02. FIDO CoA Cohort 2 pilot with results
       <td>Moved to production</td>
     </tr>
   </tbody>
-</table>
-<br>
+</table><br>
 
 # Phishing Resistance 101
 
