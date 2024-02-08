@@ -19,6 +19,15 @@
 
 - orderNumber: 0
   initialState: active
+  delay: 20000
+  heroHeading: "ICAM FIBF" 
+  heroText: "The ICAM FIBF Working Group is working on establishing ICAM as a federal function."
+  actionButtonText: Learn more about the 
+  actionLocation: icam-fibf/
+  actionTarget: _self
+  
+- orderNumber: 1
+  initialState: active
   delay: 10000
   heroHeading: FICAM 
   heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
@@ -26,7 +35,7 @@
   actionLocation: arch/
   actionTarget: _self
 
-- orderNumber: 1
+- orderNumber: 2
   initialState:
   delay: 10000
   heroHeading: Zero Trust
@@ -35,7 +44,7 @@
   actionLocation: zero-trust/
   actionTarget: _blank
 
-- orderNumber: 2
+- orderNumber: 3
   initialState:
   delay: 10000
   heroHeading: Privileged user
@@ -44,7 +53,7 @@
   actionLocation: playbooks/pam/
   actionTarget: _self
 
-- orderNumber: 3
+- orderNumber: 4
   initialState:
   delay: 10000
   heroHeading: Phishing-resistant authenticators
@@ -53,7 +62,7 @@
   actionLocation: playbooks/altauthn
   actionTarget: _self
 
-- orderNumber: 4
+- orderNumber: 5
   initialState:
   delay: 10000
   heroHeading: Single sign-on
@@ -62,7 +71,7 @@
   actionLocation: playbooks/sso/
   actionTarget: _self
 
-- orderNumber: 5
+- orderNumber: 6
   initialState:
   delay: 10000
   heroHeading: User authorization
@@ -71,7 +80,7 @@
   actionLocation: playbooks/cloud/
   actionTarget: _self
 
-- orderNumber: 6
+- orderNumber: 7
   initialState:
   delay: 10000
   heroHeading: Identity lifecycle management
