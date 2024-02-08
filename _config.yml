@@ -67,12 +67,12 @@ primary_navigation:
         url: /implement/trust-fcpca/
       - name: Smart Card Logon for Operating Systems
         url: /implement/scl-windows/
-      - name: Certificate-based Authentication for Cloud
-        url: /implement/whfb/
+      - name: Certificate-based Authentication for Cloud (Coming Soon!)
+        url: /
       - name: Use Smart Cards with Applications
         url: /implement/outlook/
       - name: FIDO2 and Web Authentication
-        url: /playbooks/altauthn/
+        url: /implement/whfb/
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
   - name: Coordination Functions
