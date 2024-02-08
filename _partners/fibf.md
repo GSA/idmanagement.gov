@@ -29,7 +29,7 @@ The working group is chartered to define the ICAM function using FIBF with workf
 
 The comment period for ICAM Business Lifecycle is closed. Posted here is the final draft. ICAM Business Capabilities will be briefed at the FIBF Working Group on December 12, 2023 and its review will commence January 9, 2024.
 
-<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.PNG" alt="icam fibf comment timeline." width="560" height="280">
+<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">
 
 Please download the [ICAM FIBF Draft]({{site.baseurl}}/docs/icam-fibf-draft.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review the Business LifeCycles. 
 
