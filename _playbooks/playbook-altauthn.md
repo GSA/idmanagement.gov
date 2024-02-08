@@ -28,8 +28,8 @@ subnav:
     href: '#step-3---deploy-a-pilot'
   - text: Appendix A. References
     href: '#appendix-a---references'
-  - text: Appendix B. Resources
-    href: '#appendix-b---resources'
+  - text: Appendix B. External Resources
+    href: '#appendix-b---external-resources'
 ---
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
