@@ -189,10 +189,10 @@ Table 01. FIDO CoA Cohort 1 pilot with results
     </tr>
     <tr>
       <th scope="row"># of Pilot Users</th>
-        <td>30</td>
-        <td>25</td>
-        <td>500 (Full Production)</td>
-        <td>8</td>
+      <td>30</td>
+      <td>25</td>
+      <td>500 (Full Production)</td>
+      <td>8</td>
     </tr>
     <tr>
       <th scope="row">Architecture</th>
@@ -211,47 +211,47 @@ Table 01. FIDO CoA Cohort 1 pilot with results
   </tbody>
 </table>
 <table class="usa-table usa-table">
-    <style> 
-        th {text-align: center; vertical-align: middle;}
-    </style>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Agency 5</th>
-            <th scope="col">Agency 6</th>
-            <th scope="col">Agency 7</th>
-            <th scope="col">Agency 8</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Use Case</th>
-            <td>Ineligible PIV user / external partners</td>
-            <td>Technology limitation / cloud environment</td>
-            <td>Alternative authenticator / mobile device</td>
-            <td>Alternative authenticator / mobile device</td>
-        </tr>
-        <tr>
-            <th scope="row"># of Pilot Users</th>
-            <td>5</td>
-            <td>27k (Full Production)</td>
-            <td>Pilot - 200 / Production - 130k</td>
-            <td>4% of Exemption Policy Users</td>
-        </tr>
-        <tr>
-            <th scope="row">Architecture</th>
-            <td>Platform: Vanguard<br>Authenticator: Yubico FIPS Yubikey</td>
-            <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
-            <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
-            <td>Platform: Azure Active Direcotry<br>Authenticator: Windows Hello for Business</td>
-        </tr>
-        <tr>
-            <th scope="row">Result</th>
-            <td>Piloted.</td>
-            <td>Moved to production.</td>
-            <td>Moved to production.</td>
-            <td>Piloted.</td>
-        </tr>
+  <style> 
+    th {text-align: center; vertical-align: middle;}
+  </style>
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Agency 5</th>
+      <th scope="col">Agency 6</th>
+      <th scope="col">Agency 7</th>
+      <th scope="col">Agency 8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Use Case</th>
+      <td>Ineligible PIV user / external partners</td>
+      <td>Technology limitation / cloud environment</td>
+      <td>Alternative authenticator / mobile device</td>
+      <td>Alternative authenticator / mobile device</td>
+    </tr>
+    <tr>
+      <th scope="row"># of Pilot Users</th>
+      <td>5</td>
+      <td>27k (Full Production)</td>
+      <td>Pilot - 200 / Production - 130k</td>
+      <td>4% of Exemption Policy Users</td>
+    </tr>
+    <tr>
+      <th scope="row">Architecture</th>
+      <td>Platform: Vanguard<br>Authenticator: Yubico FIPS Yubikey</td>
+      <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
+      <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
+      <td>Platform: Azure Active Direcotry<br>Authenticator: Windows Hello for Business</td>
+    </tr>
+    <tr>
+      <th scope="row">Result</th>
+      <td>Piloted.</td>
+      <td>Moved to production.</td>
+      <td>Moved to production.</td>
+      <td>Piloted.</td>
+    </tr>
   </tbody>
 </table>
 <br>
@@ -302,27 +302,27 @@ Table 02. FIDO CoA Cohort 2 pilot with results
   </tbody>
 </table>
 <table class="usa-table usa-table">
-    <style> 
-        th {text-align: center; vertical-align: middle;}
-    </style>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Agency 5</th>
-            <th scope="col">Agency 6</th>
-            <th scope="col">Agency 7</th>
-            <th scope="col">Agency 8</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Use Case</th>
-            <td>Alternative authenticator</td>
-            <td>Alternative authenticator</td>
-            <td>Alternative authenticator</td>
-            <td>Alternative authenticator</td>
-        </tr>
-        <tr>
+  <style> 
+    th {text-align: center; vertical-align: middle;}
+  </style>
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Agency 5</th>
+      <th scope="col">Agency 6</th>
+      <th scope="col">Agency 7</th>
+      <th scope="col">Agency 8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Use Case</th>
+      <td>Alternative authenticator</td>
+      <td>Alternative authenticator</td>
+      <td>Alternative authenticator</td>
+      <td>Alternative authenticator</td>
+    </tr>
+    <tr>
             <th scope="row"># of Pilot Users</th>
             <td>300</td>
             <td>10-15</td>
