@@ -253,8 +253,7 @@ Table 01. FIDO CoA Cohort 1 pilot with results
       <td>Piloted.</td>
     </tr>
   </tbody>
-</table>
-<be>
+</table><br>
 
 Table 02. FIDO CoA Cohort 2 pilot with results
   <table class="usa-table usa-table">
