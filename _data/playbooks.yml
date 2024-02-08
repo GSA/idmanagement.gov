@@ -97,14 +97,6 @@
   header: "/assets/playbooks/headers/playbook_06.png"
   target: _self
 
-- title: Windows Hello for Business Playbook
-  type: Webpage
-  pubdate: 2022-12
-  description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implemention.
-  url: "/playbooks/whfb/"
-  header: "/assets/playbooks/headers/playbook_05.png"
-  target: _self
-
 - title: Phishing-Resistant Authenticator Playbook
   type: Markdown
   pubdate: 2023-08
