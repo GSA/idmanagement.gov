@@ -28,8 +28,8 @@ subnav:
     href: '#step-3---deploy-a-pilot'
   - text: Appendix A. References
     href: '#appendix-a---references'
-  - text: Appendix B. External Resources
-    href: '#appendix-b---external-resources'
+  - text: Appendix B. Resources
+    href: '#appendix-b---resources'
 ---
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
@@ -69,7 +69,7 @@ subnav:
   </div>
 </div>
 
-The Fast IDentity Online 2 Community of Action, along with content developed by the Phishing Resistant Authenticator Working Group of the ICAM Subcommittee and a brainstorming session at the October 2023 FIDO Authenticate conference, developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing-resistant authenticator pilot. This playbook will be updated as the standards evolve and more forms of phishing-resistant authenticators are identified.
+The Fast IDentity Online 2 Community of Action, along with content developed by the ICAM Subcommittee Phishing Resistant Authenticator Working Group and a brainstorming session at the October 2023 FIDO Authenticate conference, developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing-resistant authenticator pilot. This playbook will be updated as the standards evolve and more forms of phishing-resistant authenticators are identified.
 
 In collaboration with the FIDO2 CoA members, the FIDO Alliance also published a sister publication on more FIDO-specific areas. See the [FIDO White Paper on FIDO Alliance Guidance for U.S. Government Agency Deployment of FIDO Authentication](https://fidoalliance.org/white-paper-fido-alliance-guidance-for-u-s-government-agency-deployment-of-fido-authentication/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
@@ -531,15 +531,13 @@ Figure 4. Authentication patterns toward a holistic authenticator strategy
  <img src="{{site.baseurl}}/assets/playbooks/pra-4-patterns.png" align="center" alt="Authentication patterns focus on the authentication events between a user (an employee, contractor, or partner) and data. The five primary authentication patterns include unmanaged devices, managed devices, enterprise single sign-on tool, direct authentication through a web portal, and a non-application interface such as a command line.">
 
 **Device authentication** is the first attempt to gain data access. Two device authentication patterns include managed and unmanaged devices.<br>
-
-    1. **Unmanaged Devices** include any device not under the organization's control. Some agencies support Bring Your Own Device or contractor-furnished device access for a limited number of applications like email or collaboration tools. Deploying or enforcing certificate-based options, compliance profiles, or baseline images is difficult. This is a growing access method as more agencies support unmanaged device access to cloud applications.<br>
-    2. **Managed Devices** include any device under direct control or with a managed profile, such as Government Furnished Equipment and contractor-furnished equipment or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access. One challenge for most agencies is managing many operating system types, which may also limit how certificates are supported.<br>
+1. **Unmanaged Devices** include any device not under the organization's control. Some agencies support Bring Your Own Device or contractor-furnished device access for a limited number of applications like email or collaboration tools. Deploying or enforcing certificate-based options, compliance profiles, or baseline images is difficult. This is a growing access method as more agencies support unmanaged device access to cloud applications.<br>
+2. **Managed Devices** include any device under direct control or with a managed profile, such as Government Furnished Equipment and contractor-furnished equipment or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access. One challenge for most agencies is managing many operating system types, which may also limit how certificates are supported.<br>
 
 **Application authentication** is often the 2nd authentication attempt to gain data access. Three application authentication patterns include an enterprise Single Sign-On tool, direct access through a web application, or a non-application interface.<br>
-
-    3.	**[Single Sign On (SSO)]({{site.baseurl}}/playbooks/sso/)** - Agencies are centralizing application access using an enterprise SSO tool. This is often where PIV enforcement occurs, with most SSO tools supporting certificate-based authentication.<br>
-    4.	**Web Application** - Direct HTTPS authentication at a web page. The most common implementation is partner access use cases across agencies because most organizations have or are centralizing access to their internal applications with an enterprise SSO tool. Certificate-based options are often difficult to support, so most agencies deploy a password or OTP. Some agencies have outsourced authentication to a shared service such as Login.gov.<br>
-    5.	**Non-Application Interface** - This is a catch-all for data access, not over HTTPS, such as command line, SSH, databases, or other non–HTTP protocols. Most agencies rely on either [Privileged Access tools]({{site.baseurl}}/playbooks/pam/), Secure Shell (SSH) keys, or passwords with additional network-based access control such as a jump box.<br>
+3.	**[Single Sign On (SSO)]({{site.baseurl}}/playbooks/sso/)** - Agencies are centralizing application access using an enterprise SSO tool. This is often where PIV enforcement occurs, with most SSO tools supporting certificate-based authentication.<br>
+4.	**Web Application** - Direct HTTPS authentication at a web page. The most common implementation is partner access use cases across agencies because most organizations have or are centralizing access to their internal applications with an enterprise SSO tool. Certificate-based options are often difficult to support, so most agencies deploy a password or OTP. Some agencies have outsourced authentication to a shared service such as Login.gov.<br>
+5.	**Non-Application Interface** - This is a catch-all for data access, not over HTTPS, such as command line, SSH, databases, or other non–HTTP protocols. Most agencies rely on either [Privileged Access tools]({{site.baseurl}}/playbooks/pam/), Secure Shell (SSH) keys, or passwords with additional network-based access control such as a jump box.<br>
 
 Once we identify the authenticator gaps, we can identify the primary use cases of our holistic strategy. Four workforce identity use cases and one public identity use case identify where a phishing-resistant option can close those gaps. These are generic use cases that an organization can adopt or modify if they fit their mission needs.
 
