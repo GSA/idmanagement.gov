@@ -17,6 +17,7 @@
 # Memo: If a link is internal to the site, actionTarget should be set to "_self" if the lint is external or a PDF or Document of somekind, the "_blank" should be used.
 # Note: leave the / off the internal urls for 'actionLocation:' 
 
+
 - orderNumber: 0
   initialState: active
   delay: 20000
