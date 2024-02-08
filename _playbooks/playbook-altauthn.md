@@ -182,10 +182,10 @@ Table 01. FIDO CoA Cohort 1 pilot with results
     <tbody>
         <tr>
             <th scope="row">Use Case</th>
-            <td>Back-up authenticator/outside of CONUS employees</td>
+            <td>Back-up authenticator / outside of CONUS employees</td>
             <td>Alternative Authenticator</td>
-            <td>Technology limitation/cloud environment</td>
-            <td>Alternative authenticator/mobile device</td>
+            <td>Technology limitation / cloud environment</td>
+            <td>Alternative authenticator / mobile device</td>
         </tr>
         <tr>
             <th scope="row"># of Pilot Users</th>
@@ -210,7 +210,6 @@ Table 01. FIDO CoA Cohort 1 pilot with results
         </tr>
   </tbody>
 </table>
-<br>
 <table class="usa-table usa-table">
     <style> 
         th {text-align: center; vertical-align: middle;}
@@ -227,10 +226,10 @@ Table 01. FIDO CoA Cohort 1 pilot with results
     <tbody>
         <tr>
             <th scope="row">Use Case</th>
-            <td>Ineligible PIV user/external partners</td>
-            <td>Technology limitation/cloud environment</td>
-            <td>Alternative authenticator/mobile device</td>
-            <td>Alternative authenticator/mobile device</td>
+            <td>Ineligible PIV user / external partners</td>
+            <td>Technology limitation / cloud environment</td>
+            <td>Alternative authenticator / mobile device</td>
+            <td>Alternative authenticator / mobile device</td>
         </tr>
         <tr>
             <th scope="row"># of Pilot Users</th>
@@ -255,7 +254,7 @@ Table 01. FIDO CoA Cohort 1 pilot with results
         </tr>
   </tbody>
 </table>
-<be>
+<br>
 
 Table 02. FIDO CoA Cohort 2 pilot with results
  <table class="usa-table usa-table">
@@ -274,9 +273,9 @@ Table 02. FIDO CoA Cohort 2 pilot with results
     <tbody>
         <tr>
             <th scope="row">Use Case</th>
-            <td>Alternative authenticator/mobile device</td>
-            <td>Ineligible PIV user/mobile device</td>
-            <td>Ineligible PIV user/mobile devicetd>
+            <td>Alternative authenticator / mobile device</td>
+            <td>Ineligible PIV user / mobile device</td>
+            <td>Ineligible PIV user / mobile devicetd>
             <td>Alternative authenticator</td>
         </tr>
         <tr>
@@ -302,7 +301,6 @@ Table 02. FIDO CoA Cohort 2 pilot with results
         </tr>
   </tbody>
 </table>
-<br>
 <table class="usa-table usa-table">
     <style> 
         th {text-align: center; vertical-align: middle;}
@@ -351,13 +349,13 @@ Table 02. FIDO CoA Cohort 2 pilot with results
 
 # Phishing Resistance 101
 
-While network attacks have become more complex, phishing remains one of the main tactics used to compromise credentials and infiltrate networks to move laterally and compromise data. In recent years attackers have moved beyond phishing passwords from users to phishing OTP codes and push notifications that have been used to add a second factor to protect accounts. As CISA has noted, “Cyber threat actors have used multiple methods to gain access to MFA credentials,” using tactics such as:
+While network attacks have become more complex, phishing remains one of the main tactics used to compromise credentials and infiltrate networks to move laterally and compromise data. In recent years, attackers have moved beyond phishing passwords from users to phishing OTP codes and push notifications that have been used to add a second factor to protect accounts. As CISA has noted, “Cyber threat actors have used multiple methods to gain access to MFA credentials,” using tactics such as:
 - **Phishing** is a form of social engineering in which cyber threat actors use email or malicious websites to solicit information. For example, in a widely used phishing technique, a threat actor sends an email to a target that convinces the user to visit a threat actor-controlled website that mimics a company’s legitimate login portal. The user submits their password and the 6-digit code from their mobile phone’s authenticator app. 
-- **Push bombing** also known as push fatigue is where cyber threat actors bombard users with push notifications until they press the “Accept” button, granting threat actors access to the network. 
+- **Push bombing**, also known as push fatigue, is where cyber threat actors bombard users with push notifications until they press the “Accept” button, granting threat actors access to the network. 
 - **The exploitation of SS7 protocol vulnerabilities** is where cyber threat actors exploit SS7 protocol vulnerabilities in communications infrastructure to obtain MFA codes sent via text message or voice to a phone. 
 - **SIM Swap** is a form of social engineering in which cyber threat actors convince cellular carriers to transfer control of the user’s phone number to a threat actor-controlled SIM card, which allows the threat actor to gain control over the user’s phone.
 
-Even though a PIV credential is the primary authentication method for federal users and is phishing-resistant, many agencies rely on passwords, OTP, or push-based MFA when a user does not have a PIV credential. Agencies must focus on replacing these susceptible authenticators with phishing resistant methods.
+Even though a PIV credential is the primary authentication method for federal users and is phishing-resistant, many agencies rely on passwords, OTP, or push-based MFA when a user does not have a PIV credential. Agencies must focus on replacing these susceptible authenticators with phishing-resistant options.
 
 <div class="usa-alert usa-alert--success">
   <div class="usa-alert__body">
@@ -365,14 +363,14 @@ Even though a PIV credential is the primary authentication method for federal us
   </div>
 </div>
 
-The requirement for phishing resistant methods is outlined in OMB Memo 22-09, the Federal Zero Trust Strategy. While agencies may continue to deploy PIV and Derived PIV credentials to meet this requirement, the underlying technology behind PIV credentials, PKI, and smart cards (like the PIV and PIV-Interoperable credential) have specific challenges that limit their use with all users and on all systems. While these challenges are specific to PKI, they may also exist for other phishing-resistant authenticator options. These challenges include:
-1.	**Device limitations with physical card readers** – Card readers are optimized for desktops or laptops, but more and more federal workforce use mobile devices. Some agencies leverage a Derived PIV solution for mobile devices, but this presents cost and complexity challenges over natively supported phishing-resistance options.
-2.	**PIV credential issuance requirements and supply chain disruptions** - A PIV credential recipient must physically go to an issuance station; not all recipients live within 50 miles of an issuance station. The average time to receive a PIV credential is about two weeks, and this can be further delayed by acquisition, appointment availability, or the global supply chain availability of smart cards.
+The requirement for phishing-resistant options is outlined in OMB Memo 22-09, the Federal Zero Trust Strategy. While agencies may continue to deploy PIV and Derived PIV credentials to meet this requirement, the underlying technology behind PIV credentials, PKI, and smart cards (like the PIV and PIV-Interoperable credentials) have specific challenges that limit their use with all users and on all systems. While these challenges are specific to PKI, they may also exist for other phishing-resistant authenticator options. These challenges include:
+1.	**Device limitations with physical card readers** – Card readers are optimized for desktops or laptops, but more and more of the federal workforce uses mobile devices. Some agencies leverage a Derived PIV solution for mobile devices, but this presents cost and complexity challenges over natively supported phishing-resistance options.
+2.	**PIV credential issuance delays** - Someone has completed and received a favorable suitability determination but can not start work because they do not have their PIV credential. A PIV credential recipient must physically go to an issuance station; not all recipients live within 50 miles of an issuance station. The average time to receive a PIV credential is about two weeks, and this can be further delayed by acquisition, appointment availability, or the global supply chain availability of smart cards.
 3.	**Ineligible PIV population** - A PIV credential is only issued to individuals needing physical and logical access beyond six months.
-4.	**PKI validation software compromise or availability** - As experienced over the summer of 2023, an outage in validation software can break the availability of PKI-based credentials such as PIV and Derived PIV. Agencies must identify and deploy phishing resistant alternatives when a PIV credential is unavailable.
+4.	**PKI validation software compromise or availability** - As experienced over the summer of 2023, an outage in validation software can break the availability of PKI-based credentials such as PIV and Derived PIV. Agencies must identify and deploy phishing-resistant alternatives when a PIV credential is unavailable.
 5.	**Modern technology doesn’t support PKI** - This challenge is decreasing as more software providers natively support PKI through native certificate-based authentication. Another perspective of this challenge is an agency's inability to leverage PIV credentials issued by other agencies. This could include a detailee or a collaboration between agencies as well. Some agency tools don't or can't support external PKI credentials.
 
-To this point, separate access management systems or exception policies that often rely on passwords or other weak authentication are the typical agency approaches to handle users and systems that can't use PKI or without a PIV credential. Both approaches add cost and complexity and introduce manual processes, risking an agency's mission or data. In order to mitigate potential risks, OMB Memo 22-09 details that agencies use other phishing resistant authenticators such as FIDO2. Additionally, agencies are encouraged to use passwordless MFA, authentication solutions that eliminate knowledge factors like passwords and OTPs, and instead rely on a possession factor that is unlocked using a biometric or PIN.
+Some agencies deploy separate access management systems or implement password exception policies or other weak authentication to handle users and systems that can't use PKI or users without a PIV credential. Separate access systems add cost and complexity and introduce manual processes, risking an agency's mission or data.
 
 Figure 1. Types of Passwordless MFA
 <img src="{{site.baseurl}}/assets/playbooks/pra-1-passwordless.png" align="center" alt="Multifactor Authentication includes using two different factors; something you have like a phone or laptop, something you are like a fingerprint or face recognition, or something you know like a password or security question answer. Passwordless can either be an MFA that doesn't use a password, or that doesn't use a knowledge factor.">
