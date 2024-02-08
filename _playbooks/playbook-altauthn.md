@@ -274,7 +274,7 @@ Table 02. FIDO CoA Cohort 2 pilot with results
         <th scope="row">Use Case</th>
         <td>Alternative authenticator / mobile device</td>
         <td>Ineligible PIV user / mobile device</td>
-        <td>Ineligible PIV user / mobile devicetd>
+        <td>Ineligible PIV user / mobile device</td>
         <td>Alternative authenticator</td>
       </tr>
       <tr>
@@ -386,7 +386,7 @@ Figure 2. MITRE ATT&CK TTPs for Phishing and Credential-based attacks.
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Does using phishing-resistant authentication really resist phishing?</h4>
     <p class="usa-alert__text">
-      Phishing-resistant authentication prevents phishing attacks that target the authentication process – in other words, stealing credentials. Some types of phishing campaigns attempt to convince the victim to open a malicous file , malware, attached in an email, which is not an attack on authentication and thus not prevented by phishing resistant authentication.
+      Phishing-resistant authentication prevents phishing attacks that target the authentication process – in other words, stealing credentials. Some types of phishing campaigns attempt to convince the victim to open a malicious file , malware, attached in an email, which is not an attack on authentication and thus not prevented by phishing-resistant authentication.
     </p>
   </div>
 </div>
