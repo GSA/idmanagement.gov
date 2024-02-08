@@ -144,11 +144,11 @@ To help support agencies aggressively replace passwords, the Office of Managemen
 2.	Small group, usually 4-8 agencies.
 3.	Actively piloting a solution, sharing challenges and lessons learned.
 
-### Challenges and Lessons Learned
+## Challenges and Lessons Learned
 
 The first FIDO2 CoA included eight agencies either actively piloting a solution or evolving a pilot to their entire production community. The pilots included a combination of platform authenticators like [Windows Hello for Business](https://playbooks.idmanagement.gov/playbooks/whfb/) and roaming authenticators like Yubico Yubikey and RSA DS-100.
 
-#### Challenges
+### Challenges
 
 1. **Compliance Mentality** - Some organizations take a strict compliance approach to only use PIV or Derived PIV credentials because this is the only "Homeland Security Presidential Directive 12 approved credential". When a PIV-based credential is unavailable, relying on a time-boxed access exception policy leveraging a password is acceptable until the user has a PIV credential. This mentality is inaccurate and grounded in rescinded OMB memos and deprecated FISMA metrics. While agencies must continue to follow the OPM credentialing policy to complete a suitability determination, agencies are not required to use PIV for logical authentication. OMB Memo 22-09, updated FISMA metrics, and NIST 800-53 security controls allow an agency to use other types of phishing-resistant authenticators and not rely solely on a PIV credential. The decision to use any authenticator is dependent on an individual organization's risk appetite, security control tailoring, and data security.
 2. **Inconsistent user experience** - Although FIDO2 is a specification, vendors can introduce their variations and brands (e.g., the Apple platform authenticator is Face ID, while Android doesn't have a branded name). These small variations can lead to an inconsistent user experience when working in multi-device, operating system, and browser environments. Follow the guidance in this playbook to test across all organization-supported operating systems and browsers and document the process to publish as user stories during your authenticator adoption campaigns. This vendor branding is not unique either. The Federal PIV-I credential also has a similar challenge in how vendors decide to make a PIV-I visually distinct from a PIV.
@@ -156,58 +156,58 @@ The first FIDO2 CoA included eight agencies either actively piloting a solution 
 4. **Technology continues to rely on passwords** - Removing passwords depends more on architecture and technology choices and is a trade-off between mission delivery and budget. Some platforms require passwords even if they are masked and stored in background processes. The only option at some point is to modernize from legacy systems (e.g., Active Directory and Active Directory Federation Services) to modern options that do not require passwords or use passwords in the background.
 5. **Confusing lexicon** - Derived PIV, alternative authenticator, FIDO Token, FIDO Key, WebAuthn Login, different authenticator, Derived FIDO credential, etc. Context is important when using the right terminology. For this playbook, a Derived PIV is defined by NIST Special Publication 800-157 as a credential issued based on proof of possession and control of a PIV Card. Any other type of authenticator is an alternative authenticator.
 
-#### Lessons Learned
+### Lessons Learned
 
 1. **No authenticator type is a silver bullet** - Agencies need a holistic authentication strategy to stop handling access exception policies. There is not a single authenticator type that works across all authentication patterns and is phishing-resistant. Agencies must be comfortable with platform-native phishing-resistant authenticators like FIDO2 to replace the most common exception policy alternatives like passwords and OTP that are not phishing-resistant.
 2. **User training and guidance** - Plan and produce user guidance and adoption campaigns across agency ICAM programs. One of the biggest challenges in deploying new technology is ensuring you don’t lose your users on the journey. Hold office hours and Ask Me Anything sessions, or have on-demand videos to educate users and help them transition to new tools. See the [user experience section of the Windows Hello for Business Playbook](https://www.idmanagement.gov/implement/whfb/#whfb-user-experience) as an example. FIDO brown bag presentations are another good resource for engaging and learning about phishing-resistant authenticator products and services. Contact ICAM at GSA.gov to get added to the group. 
 3. **Platform authenticator cost advantage** - FIDO2 platform authenticators provide a more straightforward and cost-efficient approach to meeting broader organization adoption of phishing-resistant authentication for all users. Biometric options such as face and finger recognition are supported in FIDO2 without needing 3rd party middleware but depend on device support and using modern access management tools (e.g., not natively supported in legacy tools such as Active Directory, Active Directory Federation Services, mainframes, and Siteminder).
 4. **Challenge organizational assumptions** - Large organizations with digital identity functions spread across multiple teams experience a high barrier to change. Many commonly believe they must only use a PIV credential or PKI with no alternatives. Challenge those assumptions as you promote more resilient authentication solutions or request a phishing-resistant authentication workshop from the General Services Administration at ICAM at GSA.gov.
 
-The table below outlines the completion status of the FIDO CoA Cohort 1 and 2 pilots. See the [FIDO pilot use cases](#run-a-fido2-pilot) for an overview of each use case.
+The table below outlines the completion status of the FIDO CoA Cohort 1 and 2 pilots. Please look at the [FIDO pilot use cases](#run-a-fido2-pilot) for an overview of each use case.
 
 Table 01. FIDO CoA Cohort 1 pilot with results
- <table class="usa-table usa-table">
-    <style> 
-        th {text-align: center; vertical-align: middle;}
-    </style>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Agency 1</th>
-            <th scope="col">Agency 2</th>
-            <th scope="col">Agency 3</th>
-            <th scope="col">Agency 4</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Use Case</th>
-            <td>Back-up authenticator / outside of CONUS employees</td>
-            <td>Alternative Authenticator</td>
-            <td>Technology limitation / cloud environment</td>
-            <td>Alternative authenticator / mobile device</td>
-        </tr>
-        <tr>
-            <th scope="row"># of Pilot Users</th>
-            <td>30</td>
-            <td>25</td>
-            <td>500 (Full Production)</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <th scope="row">Architecture</th>
-            <td>Platform: Okta<br>Authenticator: RSA DS-100 & WebAuthn</td>
-            <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
-            <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
-            <td>Platform: ForgeRock<br>Authenticator: Yubico FIPS Yubikey</td>
-        </tr>
-        <tr>
-            <th scope="row">Result</th>
-            <td>Piloted.</td>
-            <td>Moved to production.</td>
-            <td>Moved to production.</td>
-            <td>Piloted.</td>
-        </tr>
+<table class="usa-table usa-table">
+  <style> 
+    th {text-align: center; vertical-align: middle;}
+  </style>
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Agency 1</th>
+      <th scope="col">Agency 2</th>
+      <th scope="col">Agency 3</th>
+      <th scope="col">Agency 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Use Case</th>
+      <td>Back-up authenticator / outside of CONUS employees</td>
+      <td>Alternative Authenticator</td>
+      <td>Technology limitation / cloud environment</td>
+      <td>Alternative authenticator / mobile device</td>
+    </tr>
+    <tr>
+      <th scope="row"># of Pilot Users</th>
+        <td>30</td>
+        <td>25</td>
+        <td>500 (Full Production)</td>
+        <td>8</td>
+    </tr>
+    <tr>
+      <th scope="row">Architecture</th>
+      <td>Platform: Okta<br>Authenticator: RSA DS-100 & WebAuthn</td>
+      <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
+      <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
+      <td>Platform: ForgeRock<br>Authenticator: Yubico FIPS Yubikey</td>
+    </tr>
+    <tr>
+      <th scope="row">Result</th>
+      <td>Piloted.</td>
+      <td>Moved to production.</td>
+      <td>Moved to production.</td>
+      <td>Piloted.</td>
+    </tr>
   </tbody>
 </table>
 <table class="usa-table usa-table">
@@ -343,7 +343,7 @@ Table 02. FIDO CoA Cohort 2 pilot with results
             <td>Piloted.</td>
             <td>Moved to production</td>
         </tr>
-  </tbody>
+    </tbody>
 </table>
 <br>
 
@@ -370,12 +370,8 @@ The requirement for phishing-resistant options is outlined in OMB Memo 22-09, th
 4.	**PKI validation software compromise or availability** - As experienced over the summer of 2023, an outage in validation software can break the availability of PKI-based credentials such as PIV and Derived PIV. Agencies must identify and deploy phishing-resistant alternatives when a PIV credential is unavailable.
 5.	**Modern technology doesn’t support PKI** - This challenge is decreasing as more software providers natively support PKI through native certificate-based authentication. Another perspective of this challenge is an agency's inability to leverage PIV credentials issued by other agencies. This could include a detailee or a collaboration between agencies as well. Some agency tools don't or can't support external PKI credentials.
 
-Some agencies deploy separate access management systems or implement password exception policies or other weak authentication to handle users and systems that can't use PKI or users without a PIV credential. Separate access systems add cost and complexity and introduce manual processes, risking an agency's mission or data.
-
 Figure 1. Types of Passwordless MFA
 <img src="{{site.baseurl}}/assets/playbooks/pra-1-passwordless.png" align="center" alt="Multifactor Authentication includes using two different factors; something you have like a phone or laptop, something you are like a fingerprint or face recognition, or something you know like a password or security question answer. Passwordless can either be an MFA that doesn't use a password, or that doesn't use a knowledge factor.">
-
-Some agencies are deploying FIDO2 solutions leveraging a laptop Truste Platform Module and biometrics to replace MFA leveraging passwords and OTP. This improves the user login and authentication experience. 
 
 ## What is Phishing?
 
