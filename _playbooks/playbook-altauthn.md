@@ -31,7 +31,6 @@ subnav:
   - text: Appendix B. Resources
     href: '#appendix-b---resources'
 ---
-The Fast Identity Online 2 Community of Action and the Identity, Credential, and Access Management Subcommittee Phishing Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing-resistant authenticator pilot. The current forms of phishing-resistant authentication include Public Key Infrastructure and FIDO2. This playbook will be updated as the standards evolve and more forms of phishing-resistant authenticators are identified. FIDO2 standard is resilient to phishing attacks and should be considered where PKI solutions cannot be used. 
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
@@ -45,7 +44,7 @@ The Fast Identity Online 2 Community of Action and the Identity, Credential, and
   </h4>
   <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
-      <caption>Cloud Identity version table</caption>
+      <caption>Phishing-resistant authenticator version table</caption>
       <thead>
       <tr>
         <th scope='col'>
@@ -69,6 +68,8 @@ The Fast Identity Online 2 Community of Action and the Identity, Credential, and
     </table>
   </div>
 </div>
+
+The Fast Identity Online 2 Community of Action and the Identity, Credential, and Access Management Subcommittee Phishing Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing-resistant authenticator pilot. The current forms of phishing-resistant authentication include Public Key Infrastructure and FIDO2. This playbook will be updated as the standards evolve and more forms of phishing-resistant authenticators are identified. FIDO2 standard is resilient to phishing attacks and should be considered where PKI solutions cannot be used. 
 
 # Executive Summary
 
