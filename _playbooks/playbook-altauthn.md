@@ -2,12 +2,14 @@
 layout: page
 collection: playbooks
 title: Phishing-Resistant Authenticator Playbook
-pubdate: 2023-09
 type: Markdown
 permalink: /playbooks/altauthn/
 description: This playbook helps agencies understand phishing-resistant authenticators and plan an authenticator pilot.
 sidenav: playbooks
 sticky_sidenav: true
+
+pubdate: February 28,2024
+version: 1.0
 
 subnav:
   - text: Executive Summary
@@ -29,19 +31,44 @@ subnav:
   - text: Appendix B. Resources
     href: '#appendix-b---resources'
 ---
-Version 1.0<br>
-October xx, 2023
-
-The Fast Identity Online 2 Community of Action , along with the Identity, Credential, and Access Management Subcommittee Phishing Resistant Authenticator Working Group, developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing resistant authenticator pilot. The current forms of phishing-resistant authentication include Public Key Infrastructure and FIDO2. This playbook will be updated as the standards evolve and more forms of phishing resistant authenticators identified. FIDO2 standard is resilient to phishing attacks and should be considered where PKI solutions cannot be used. 
+The Fast Identity Online 2 Community of Action and the Identity, Credential, and Access Management Subcommittee Phishing Resistant Authenticator Working Group developed this playbook to help agencies understand phishing-resistant authentication and plan a phishing-resistant authenticator pilot. The current forms of phishing-resistant authentication include Public Key Infrastructure and FIDO2. This playbook will be updated as the standards evolve and more forms of phishing-resistant authenticators are identified. FIDO2 standard is resilient to phishing attacks and should be considered where PKI solutions cannot be used. 
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
 <br><br><br>
 
-| Version Number | Date | Change Description |
-| :----------: | :-------: | -------- |
-| 1.0 | 10/xx/2023 | Initial draft |
-| 1.5 | 01/16/2024 | Adjudicated comments, final draft |
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-a1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Cloud Identity version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>
+          Version Number
+        </th>
+        <th scope='col'>
+          Date
+        </th>
+        <th scope='col'>
+          Change Description
+        </th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>
+          1.0
+        </th>
+        <td>02/28/2024</td>
+        <td>Initial draft.</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 # Executive Summary
 
