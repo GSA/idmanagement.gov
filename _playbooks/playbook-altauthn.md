@@ -254,51 +254,51 @@ Table 01. FIDO CoA Cohort 1 pilot with results
     </tr>
   </tbody>
 </table>
-<br>
+<be>
 
 Table 02. FIDO CoA Cohort 2 pilot with results
- <table class="usa-table usa-table">
+  <table class="usa-table usa-table">
     <style> 
-        th {text-align: center; vertical-align: middle;}
+      th {text-align: center; vertical-align: middle;}
     </style>
     <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Agency 1</th>
-            <th scope="col">Agency 2</th>
-            <th scope="col">Agency 3</th>
-            <th scope="col">Agency 4</th>
-        </tr>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Agency 1</th>
+        <th scope="col">Agency 2</th>
+        <th scope="col">Agency 3</th>
+        <th scope="col">Agency 4</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">Use Case</th>
-            <td>Alternative authenticator / mobile device</td>
-            <td>Ineligible PIV user / mobile device</td>
-            <td>Ineligible PIV user / mobile devicetd>
-            <td>Alternative authenticator</td>
-        </tr>
-        <tr>
-            <th scope="row"># of Pilot Users</th>
-            <td>5k</td>
-            <td>300</td>
-            <td>100</td>
-            <td>10-50</td>
-        </tr>
-        <tr>
-            <th scope="row">Architecture</th>
-            <td>Platform: RSA SecureID FedRAMP<br>Authenticator: DS100</td>
-            <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
-            <td>Platform: Okta<br>Authenticator: Yubico FIPS Yubikey</td>
-            <td>Platform: Agency IdP<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
-        </tr>
-        <tr>
-            <th scope="row">Result</th>
-            <td>Moved to production.</td>
-            <td>Piloted.</td>
-            <td>Moved to production.</td>
-            <td>Piloted.</td>
-        </tr>
+      <tr>
+        <th scope="row">Use Case</th>
+        <td>Alternative authenticator / mobile device</td>
+        <td>Ineligible PIV user / mobile device</td>
+        <td>Ineligible PIV user / mobile devicetd>
+        <td>Alternative authenticator</td>
+      </tr>
+      <tr>
+        <th scope="row"># of Pilot Users</th>
+        <td>5k</td>
+        <td>300</td>
+        <td>100</td>
+        <td>10-50</td>
+      </tr>
+      <tr>
+        <th scope="row">Architecture</th>
+        <td>Platform: RSA SecureID FedRAMP<br>Authenticator: DS100</td>
+        <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
+        <td>Platform: Okta<br>Authenticator: Yubico FIPS Yubikey</td>
+        <td>Platform: Agency IdP<br>Authenticator: Windows Hello for Business & Yubico FIPS Yubikey</td>
+      </tr>
+      <tr>
+        <th scope="row">Result</th>
+        <td>Moved to production.</td>
+        <td>Piloted.</td>
+        <td>Moved to production.</td>
+        <td>Piloted.</td>
+      </tr>
   </tbody>
 </table>
 <table class="usa-table usa-table">
@@ -323,27 +323,27 @@ Table 02. FIDO CoA Cohort 2 pilot with results
       <td>Alternative authenticator</td>
     </tr>
     <tr>
-            <th scope="row"># of Pilot Users</th>
-            <td>300</td>
-            <td>10-15</td>
-            <td>25</td>
-            <td>70</td>
-        </tr>
-        <tr>
-            <th scope="row">Architecture</th>
-            <td>Platform: Azure Active Directory, Okta<br>Authenticator: Yubico FIPS Yubikey</td>
-            <td>Platform: Okta<br>Authenticator: Yubico FIPS Yubikey</td>
-            <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
-            <td>Platform: Azure Active Direcotry<br>Authenticator: Yubico FIPS Yubikey</td>
-        </tr>
-        <tr>
-            <th scope="row">Result</th>
-            <td>Moved to production.</td>
-            <td>Piloted.</td>
-            <td>Piloted.</td>
-            <td>Moved to production</td>
-        </tr>
-    </tbody>
+      <th scope="row"># of Pilot Users</th>
+      <td>300</td>
+      <td>10-15</td>
+      <td>25</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th scope="row">Architecture</th>
+      <td>Platform: Azure Active Directory, Okta<br>Authenticator: Yubico FIPS Yubikey</td>
+      <td>Platform: Okta<br>Authenticator: Yubico FIPS Yubikey</td>
+      <td>Platform: Azure Active Directory<br>Authenticator: Windows Hello for Business</td>
+      <td>Platform: Azure Active Direcotry<br>Authenticator: Yubico FIPS Yubikey</td>
+    </tr>
+    <tr>
+      <th scope="row">Result</th>
+      <td>Moved to production.</td>
+      <td>Piloted.</td>
+      <td>Piloted.</td>
+      <td>Moved to production</td>
+    </tr>
+  </tbody>
 </table>
 <br>
 
