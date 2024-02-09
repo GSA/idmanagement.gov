@@ -54,7 +54,7 @@ The FPKI has the following supplementary guidance:
 - [FPKI Incident Management Plan (PDF, September 2020)]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident.
   <li>[Archived copies of Certificate Polices, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive) - This pages contains three years of FPKI-related documents.</li>
   <ul>
-    <li>[FPKI Key Recovery Policy (Subsumed, October 2017)]({{site.baseurl}}/docs/archive/fpki-key-recovery-policy.pdf){:target="_blank"}{:rel="noopener noreferrer"}) - for reference only, original consolidated key recovery policy</li>
+    <li>[FPKI Key Recovery Policy (Subsumed, October 2017)]({{site.baseurl}}/docs/archived/fpki-key-recovery-policy.pdf){:target="_blank"}{:rel="noopener noreferrer"}) - for reference only, original consolidated key recovery policy</li>
   </ul>
 </ul> 
 
