@@ -11,9 +11,9 @@
   name: FPKI Key Recovery Policy
   description: The FPKI Key Recovery Policy (KRP) (Subsumed 2021) supplements the FPKI Certificate Policies and describes the procedural and technical security controls needed to operate a Key Recovery System (KRS) securely, in accordance with FPKIPA requirements
   date: 10/06/2017
-  url: /docs/archived/fpki-key-recovery_20240205.pdf
+  url: /docs/archived/fpki-key-recovery-policy.pdf
   status: post
-  remove: 10/06/2024
+  remove: 02/05/2050
 
 - category: FPKI Trust Infrastructure Certificate Practice Statement
   numberProposal: 6.3
