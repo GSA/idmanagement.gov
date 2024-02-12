@@ -122,7 +122,7 @@ searchgov:
   affiliate: idmprod
   access_key: zCEoL5u4U5XFzfFSxy8y4Iz6vdtTjsb4U539L_rgDTM=
   # this renders the results within the page instead of sending to user to search.gov
-  inline: false
+  inline: true
 
 ##########################################################################################
 # The values below here are more advanced and should only be
