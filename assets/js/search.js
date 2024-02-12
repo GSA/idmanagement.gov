@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
             searchgovParams.dataset.endpoint + "/api/v2/search/i14y"
         );
         var resultsPerPage = 20;
-        var page = parseInt(urlParams.get("page"), 10) ?? 1;
+        var page = urlParams.get("page") ?? 1;
+        page = parseInt(page, 10);
         var offset = (page - 1) * resultsPerPage;
         var totalResults = 0;
         params = {
