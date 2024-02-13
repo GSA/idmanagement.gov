@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var searchgovParams = document.getElementById("searchgov-params");
         var currentURL = new URL(window.location.href);
         var urlParams = new URLSearchParams(window.location.search);
+        var searchKeyword = urlParams.get("query");
+        var sanitizedSearchKeyword = sanitize(searchKeyword);
         var searchEndpoint = new URL(
             searchgovParams.dataset.endpoint + "/api/v2/search/i14y"
         );
@@ -16,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
         params = {
             affiliate: searchgovParams.dataset.affiliate,
             access_key: searchgovParams.dataset.accessKey,
-            query: urlParams.get("query"),
+            query: sanitizedSearchKeyword,
             offset: offset,
         };
         searchResults.setAttribute("start", offset + 1);
 
         var inputElement = document.getElementById("extended-search-field-small");
-        inputElement.value = urlParams.get("query");
+        inputElement.value = sanitizedSearchKeyword;
         inputElement.focus();
 
         Object.keys(params).forEach((key) =>
@@ -36,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(function (posts) {
                 totalResults = posts.web.total;
                 document.getElementById("search-params").innerHTML =
-                    urlParams.get("query");
+                  sanitizedSearchKeyword;
                 document.getElementById("search-keyword").innerHTML =
-                    urlParams.get("query");
+                  sanitizedSearchKeyword;
                 document.getElementById("results-count").innerHTML = totalResults;
                 updateResultsVisibility();
 
@@ -182,5 +184,18 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             resultsHeaderDiv.style.display = "block"; // Show the div
         }
+    }
+
+    function sanitize(string) {
+        const map = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#x27;',
+            "/": '&#x2F;',
+        };
+        const reg = /[&<>"'/]/ig;
+        return string.replace(reg, (match)=>(map[match]));
     }
 });
