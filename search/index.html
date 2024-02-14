@@ -1,8 +1,13 @@
 ---
 permalink: /search/
-layout: page
+layout: wide
 title: Search Results
 ---
+<section class="usa-layout-docs usa-layout-docs__main grid-container">
+  <div class="usa-prose margin-top-4 margin-bottom-2">
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
 
 <section class="usa-graphic-list grid-container">
 {% if site.searchgov %}
@@ -32,7 +37,7 @@ title: Search Results
     </ul>
 
   </div>
-  <div id="pager" class="text-center margin-top-5"></div>
+  <div id="pager" class="text-center margin-top-5 margin-bottom-2"></div>
 
   {% if site.searchgov.affiliate == "federalist-uswds-example" %}
     <div class="usa-alert usa-alert--info">
