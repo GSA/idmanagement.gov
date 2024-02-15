@@ -53,12 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         render_result(
                             `
           <li class="padding-bottom-3 margin-top-4 usa-prose border-bottom-05 border-base-lightest">
-            <a href="${posts.web.results[item]["url"]}">${posts.web.results[
+            <a href="${posts.web.results[item]["url"]}"
+            aria-label="${posts.web.results[item]['title']} ${posts.web.results[item]['url']}"
+            >${posts.web.results[
                                 item
                                 ]["title"]
                                 .replace(/\uE000/g, '<span class="text-bold">')
                                 .replace(/\uE001/g, "</span>")}</a>
-            <div class="text-green"> ${posts.web.results[item]["url"]} </div>
+            <div class="text-green search-link"> ${posts.web.results[item]["url"]} </div>
             <div> ${posts.web.results[item]["snippet"]
                                 .replace(/\uE000/g, '<span class="text-bold">')
                                 .replace(/\uE001/g, "</span>")} </div>
@@ -88,35 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const previous = document.getElementById("search-results").innerHTML;
         document.getElementById("search-results").innerHTML =
             append == true ? previous + content : content;
-    }
-
-    function update_pager_old() {
-        var pager = document.getElementById("pager");
-        var pagerLinks = "";
-
-        pager.innerHTML = "";
-
-        // Calculate start and end page numbers for the pager
-        var startPage = Math.max(1, page - 2);
-        var endPage = Math.min(startPage + 4, Math.ceil(totalResults / resultsPerPage));
-
-        if (page > 1) {
-            pagerLinks += '<a href="' + getLinkToPage(page - 1) + '" class="margin-1" aria-label="Previous page">«&nbsp;Previous</a>';
-        }
-
-        for (var i = startPage; i <= endPage; i++) {
-            if (i === page) {
-                pagerLinks += '<span class="current-page margin-1">' + i + '</span>';
-            } else {
-                pagerLinks += '<a href="' + getLinkToPage(i) + '" class="margin-1">' + i + '</a>';
-            }
-        }
-
-        if (totalResults > (page * resultsPerPage)) {
-            pagerLinks += '<a href="' + getLinkToPage(parseInt(page) + 1) + '" class="margin-1" aria-label="Next page">Next&nbsp;»</a>';
-        }
-
-        pager.innerHTML = pagerLinks;
     }
 
     function update_pager() {
