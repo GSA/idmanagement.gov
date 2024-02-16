@@ -92,7 +92,7 @@ Do NOT use the _Insert Signature_ function (under the **INSERT** tab in the **Wo
 
 ## Add Invisible Digital Signatures in MS Word
 
-{% include alert-warning.html content = "IMPORTANT: The following instructions apply to MS Word 2013. The signing process for other MS Word versions (e.g., 2010, 2016, Office 365) may vary somewhat. If you have trouble with the signing process, contact OFR at ofrtechgroup@gpo.gov or (202) 741-6020 or your IT support." %}
+{% include alert-warning.html content = "IMPORTANT: The following instructions apply to MS Word 2013. The signing process for other MS Word versions (e.g., 2010, 2016, Office 365) may vary somewhat. If you have trouble with the signing process, contact your IT support." %}
 
 1. Open the MS Word document on your computer in Word. Save any changes before signing.
 2. If you have a purchased PKI credential installed on your computer, proceed to Step 3. Otherwise, insert your federal government-issued Personal Identity Verification (PIV) card into your card reader.
@@ -188,8 +188,8 @@ Paper-and-disk submission. Don't forget the CD and the signed certification lett
 ### All we need is MS Word 2010 or later?
 Yes, that and your signing credential, either the one on your PIV card or the one your agency purchased that is currently installed on your computer.  
 
-### We purchased our signing certificates from GPO or another vendor. We use them to sign, which creates the "p7m" file. What do we do now?
-If you are using purchased certificates, such as from an Entrust vendor, you can continue to use them. Instead of being on a PIV card, your certificate is installed on your computer. Follow the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) instructions above to sign your MS Word file.
+### We purchased our signing certificates from a PKI vendor. We use them to sign, which creates the "p7m" file. What do we do now?
+If you are using purchased certificates, such as from a trusted PKI vendor, you can continue to use them. Instead of being on a PIV card, your certificate is installed on your computer. Follow the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) instructions above to sign your MS Word file.
 
 ### How do I identify the Purchased Certificates and PIV Card Certificates when signing a document?
 When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](#add-invisible-digital-signatures-in-ms-word) instructions above, note the different icons for the PIV and purchased certificates:<br/>
