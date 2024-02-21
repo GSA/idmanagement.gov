@@ -245,11 +245,11 @@ Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to 
 
 ### Step 5 -Apply to GSA MAS and Get Listed as an Identity Trusted Service
 
-Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
+Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
 
 ### Acquisition Procedural Guidance:
 
-- Submit an Information Technology Package for GSA Special Item Number (SIN) 541519PKI on the GSA MAS. For assistance, please visit the GSA’s website: [https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule/mas-roadmap](https://www.gsa.gov/buy-through-us/purchasing-programs/gsa-multiple-award-schedule/mas-roadmap){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
+- Submit an Information Technology Package for GSA Special Item Number (SIN) 541519PKI on the GSA MAS. For assistance, please visit the GSA’s website: [https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/help-with-mas-contracts-to-sell-to-government/roadmap-to-get-a-mas-contract](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/help-with-mas-contracts-to-sell-to-government/roadmap-to-get-a-mas-contract){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 - Collaborate with the FAS to clarify or supplement the package for contract determination.
 
 <span style="color:red;">**NOTE:**</span> If the OCISO and SSP Program Ofﬁce believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certiﬁcate services on the day of receiving the ATO letter.
