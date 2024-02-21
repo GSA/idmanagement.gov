@@ -96,7 +96,7 @@
   ca_certificate_subject: CN= Northrop Grumman Corporate Root-384, OU=Northrop Grumman Enterprise Services, O=Northrop Grumman Corporation, C=US
   cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
-  sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-G2.p7c
+  sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-384.p7c
   ocsp_uri: N/A
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
