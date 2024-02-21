@@ -48,7 +48,7 @@
   contact: support at certipath dot com
   ca_certificate_hash: TBD
   ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
-  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, O=Carillon Federal Services Inc, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc, C=US
   cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
   sia_uri: https://pub.carillon.ca/CAcerts/CISCA1.p7
