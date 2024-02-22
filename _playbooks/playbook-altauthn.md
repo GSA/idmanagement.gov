@@ -679,7 +679,7 @@ There are three lifecycle stages for a non-PKI authenticator, including FIDO. As
 ### Best Practices with Biometrics in Authentication
 
 Using a biometric platform authenticator can improve the user's experience and be cost-effective because it leverages native device features. In the future, roaming authenticators may also support a biometric capability. Today's most common platform authenticators include Apple's Face ID, Touch ID, and Microsoft's Windows Hello for Business. Android also supports a biometric platform authenticator but does not have a branded name. NIST Special Publication 800-63b outlines best practices when using biometrics as an authentication factor. 
-1.	For multi-factor authentication, always use a biometric with a physical device (something you have) and never with a knowledge factor (something you know).
+1.	As part of a multi-factor authentication, always use a biometric with a physical device (something you have) and never with only a knowledge factor (something you know).
 2.	The biometric capture device uses a protected channel and is authenticated with the verifier before capturing a biometric.
 3.	Operate with a False Match Rate (FMR) or False Accept Rate (FAR) of at least 1 in 1000 (<0.001%).
 4.	Biometric systems should implement Presentation Attack Detection (e.g., liveness detection).
