@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: February 21, 2024
+  change_type: CA Certificate Renewal
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 published the renewed TSCP SHA256 Bridge CA certificate. The validity dates are 2/16/2024 to 10/21/2025.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 7c30bace50cbdc8a7b64990b40c4f3fb6eee3e8b
+  ca_certificate_issuer: CN=Federal Common Policy CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: February 16, 2024
   change_type: Intent to Issue a CA Certificate
   system: CertiPath Bridge CA
