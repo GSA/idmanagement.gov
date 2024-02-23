@@ -6,6 +6,49 @@
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
 
+- category: Common Certificate Policy
+  numberProposal: 2.6
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.6
+  date: 11/03/2023
+  url: /docs/archived/fpki-x509-cert-policy-common-26.pdf
+  status: post
+  remove: 02/23/2027
+
+- category: Common Change Proposal
+  numberProposal: 2024-02
+  name: Proposal 2024-02 | Remote Workstation Clarification
+  description: Clarify the definition of a “remote workstation used to administer the CA” in order to accommodate current secure practices.
+  date: 02/02/2024
+  url: /docs/archived/fpki-common-cp-2402.pdf
+  status: post
+  remove: 02/23/2027
+
+- category: Common Change Proposal
+  numberProposal: 2024-03
+  name: Proposal 2024-03 | Certificate Policy Clarifications
+  description: Clarify the language in CP based on 2023 FPKI Annual PKI Compliance Audit
+  date: 02/02/2024
+  url: /docs/archived/fpki-common-cp-2403.pdf
+  status: post
+  remove: 02/23/2027
+
+- category: Federal Bridge Certificate Policy
+  numberProposal: 3.3
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.3
+  date: 11/03/2023
+  url: /docs/archived/fpki-x509-cert-policy-fbca-33.pdf
+  status: post
+  remove: 02/23/2027
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2024-01
+  name: Proposal 2024-01 | Remote Workstation Clarification
+  description: Clarify the definition of a “remote workstation used to administer the CA” in order to accommodate current secure practices.
+  date: 02/02/2024
+  url: /docs/archived/fpki-fbca-cp-2401.pdf
+  status: post
+  remove: 02/23/2027
+
 - category: Federal Public Key Infrastructure Key Recovery Policy
   numberProposal: 1.0
   name: FPKI Key Recovery Policy
