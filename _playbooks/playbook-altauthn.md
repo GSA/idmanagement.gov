@@ -8,8 +8,8 @@ description: This playbook helps agencies understand phishing-resistant authenti
 sidenav: playbooks
 sticky_sidenav: true
 
-pubdate: February 28, 2024
-version: 1.0
+pubdate: February 22, 2024
+version: 1.1
 
 subnav:
   - text: Executive Summary
@@ -51,22 +51,19 @@ In collaboration with the FIDO2 CoA members, the FIDO Alliance also published a 
       <caption>Phishing-resistant authenticator version table</caption>
       <thead>
       <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
       </tr>
       </thead>
       <tr>
-        <th scope='row'>
-          1.0
-        </th>
-        <td>02/28/2024</td>
+        <th scope='row'>1.1</th>
+        <td>02/22/2024</td>
+        <td>Clarified passkey, added FIDO attestation example, added pilot criteria, and examples in lifecycle. See [#798](https://github.com/GSA/idmanagement.gov/issues/798)</td>
+      </tr>
+      <tr>
+        <th scope='row'>1.0</th>
+        <td>02/15/2024</td>
         <td>Initial draft.</td>
       </tr>
     </table>
