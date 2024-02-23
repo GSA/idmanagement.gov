@@ -59,7 +59,7 @@ In collaboration with the FIDO2 CoA members, the FIDO Alliance also published a 
       <tr>
         <th scope='row'>1.1</th>
         <td>02/22/2024</td>
-        <td>Clarified passkey, added FIDO attestation example, added pilot criteria, and examples in lifecycle. See [#798](https://github.com/GSA/idmanagement.gov/issues/798)</td>
+        <td>Clarified passkey, added FIDO attestation example, added pilot criteria, and examples in lifecycle. See <a href="https://github.com/GSA/idmanagement.gov/issues/798">Issue 798</a>.</td>
       </tr>
       <tr>
         <th scope='row'>1.0</th>
