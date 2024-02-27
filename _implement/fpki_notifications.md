@@ -745,9 +745,9 @@ Subject:  FPKI System Notification - System Name
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="n-a2">2023</button>
+      aria-controls="n-a6">2023</button>
   </h4>
-  <div id="n-a2" class="usa-accordion__content usa-prose">
+  <div id="n-a6" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
@@ -782,9 +782,9 @@ Subject:  FPKI System Notification - System Name
       type="button"
       class="usa-accordion__button"
       aria-expanded="false"
-      aria-controls="n-a2">2022</button>
+      aria-controls="n-a5">2022</button>
   </h4>
-  <div id="n-a2" class="usa-accordion__content usa-prose">
+  <div id="n-a5" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
