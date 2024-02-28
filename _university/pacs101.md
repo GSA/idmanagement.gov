@@ -549,7 +549,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 [GSA’s FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:target="_blank"}{:rel="noopener noreferrer"} tests all GSA-listed PACS products, topologies, and services for compliance with FIPS 201 requirements. Purchasing products listed on the GSA APL ensures product compliance with FIPS 201, secure operations, and interoperability.   
 
 ## What Other GSA Resources Can Help Us?
-- [GSA Schedules - General Information](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/schedule-buyers){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [GSA Schedules - General Information](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/help-with-mas-buying){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [GSA Schedules - Tools and Resources](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/we-are-here-to-help){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [GSA Multiple Awards Schedule (MAS)](https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [GSA Multiple Awards Schedule (MAS) Categories](https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedules/gsa-schedule-offerings/mas-categories){:target="_blank"}{:class="usa-link usa-link--external"}{:rel="noopener noreferrer"}

@@ -8,8 +8,8 @@ description: This playbook helps agencies understand phishing-resistant authenti
 sidenav: playbooks
 sticky_sidenav: true
 
-pubdate: February 28, 2024
-version: 1.0
+pubdate: February 22, 2024
+version: 1.1
 
 subnav:
   - text: Executive Summary
@@ -51,22 +51,19 @@ In collaboration with the FIDO2 CoA members, the FIDO Alliance also published a 
       <caption>Phishing-resistant authenticator version table</caption>
       <thead>
       <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
       </tr>
       </thead>
       <tr>
-        <th scope='row'>
-          1.0
-        </th>
-        <td>02/28/2024</td>
+        <th scope='row'>1.1</th>
+        <td>02/22/2024</td>
+        <td>Clarified passkey, added FIDO attestation example, added pilot criteria, and examples in lifecycle. See <a href="https://github.com/GSA/idmanagement.gov/issues/798">Issue 798</a>.</td>
+      </tr>
+      <tr>
+        <th scope='row'>1.0</th>
+        <td>02/15/2024</td>
         <td>Initial draft.</td>
       </tr>
     </table>
@@ -114,8 +111,8 @@ These are key terms used throughout this playbook. A linked term denotes an offi
 - [Credential](https://csrc.nist.gov/glossary/term/credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An object or data structure that authoritatively binds an identity - via an identifier or identifiers - and (optionally) additional attributes, to at least one authenticator possessed and controlled by a subscriber.
 - [Derived PIV (DPIV) Credential](https://csrc.nist.gov/glossary/term/derived_piv_credential){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} — A credential issued based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices.
 - Fast IDentity Online (FIDO) 2 - FIDO2 is a FIDO specification, Client-to-Authenticator Protocol (CTAP), and a World Wide Web Consortium (W3C) standard, Web Authentication (WebAuthn). FIDO2 is backward compatible with its predecessor, FIDO Universal 2nd Factor (U2F).
-- FIDO Passkey (otherwise known as a FIDO discoverable credential)- Similar to a platform authenticator, but the **individual unique keys** are exportable and shareable between devices and people.
 - [FIDO Certification](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A vendor product is found compliant through an authorized FIDO testing center or event with the FIDO Universal Authentication Framework (UAF), Universal 2 Factor (U2F), or FIDO2 specification and listed on the [FIDO Certified website](https://fidoalliance.org/certification/fido-certified-products/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+- [FIDO Passkey (Discoverable Credential)](https://passkeys.dev/docs/reference/terms/#passkey){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The high level, end-user centric term for a FIDO2/WebAuthn Discoverable Credential. Like “password”, “passkey” is a common noun intended to be used in everyday conversations and experiences. Passkeys can be either synced or device-bound. 
 - [FIDO Platform Authenticator](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.22-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A hardware-based authenticator built into a device such as a laptop, tablet, or smartphone that implements the FIDO2 specification in an authenticator that is embedded in the device, typically in a restricted execution environment in that device. Some FIDO platform authenticators may also double as a FIDO Passkey, but are not exportable.
 - [FIDO Roaming Authenticator](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.22-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A hardware-based security key that can connect to a client device via USB or NFC. They may also take other forms, such as a smart card, or be a component of a device like a smartphone.
 - [Multi-factor Authentication (MFA)](https://csrc.nist.gov/glossary/term/multi_factor_authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - An authentication system that requires more than one distinct authentication factor for successful authentication.
@@ -479,7 +476,10 @@ There are two categories of FIDO authenticators.
 1.	Platform authenticator - Delivered via a secure, isolated execution environment (such as a TPM chip, Trusted Execution Environment (TEE), or Secure Enclave (SE) chip built into devices). One example includes Windows Hello for Business. **Note** Windows Hello for business differs from the consumer Windows Hello, which is not a FIDO platform authenticator.
 2.	Roaming authenticator - Colloquially called a security key, a USB-A or USB-C-based physical device that can be used wirelessly across devices over NFC and BT. Some examples include Yubico's Yubikey, Identiv's UTrust, RSA's DS-100, and Google Titan. If a PIV credential were also FIDO-certified, it would be categorized as a roaming authenticator.
 
-You may hear FIDO authentication referred to as a “passkey.” This is a term that many companies are using to describe passwordless FIDO experiences; consumers are being urged to create a passkey instead of a password for improved security and user experience. Behind the scenes, a passkey is a FIDO-generated key pair, but the private key may be synced across a user’s devices for increased usability. Syncable passkeys, called discoverable credentials in the FIDO specification, are well-suited for most consumer / public-facing use cases. However, some aspects of using syncable keys in enterprise applications are still evolving, and some organizations are risk-averse to the idea of syncable keys. **Enabling syncable passkeys in enterprise tools is configurable and usually off by default. Verify with your tool vendor if they support it and how to turn them on or off**. One potential enterprise advantage to syncable passkey is to improve the account recovery process. For more information on syncable passkeys, see this [FIDO Alliance white paper](https://fidoalliance.org/passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [Auth0 blog post](https://auth0.com/blog/our-take-on-passkeys/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+You may hear FIDO authentication referred to as a “passkey.” This is a term that many companies are using to describe passwordless FIDO experiences; consumers are being urged to create a passkey instead of a password for improved security and user experience. Behind the scenes, a passkey is a discoverable FIDO-generated key pair, but the private key handling can vary. Passkeys may be:
+1. device-bound in a FIPS-validated cryptographic container, or
+2. synced across a user’s devices for increased usability.
+Passkeys, like PKI-based credentials, can be issued at an AAL2 or AAL3 corresponding to the keys' lifecycle. Synced passkeys are well-suited for most consumer / public-facing use cases. However, enterprise applications can use attestation to distinguish device-bound passkeys from synced passkeys. Leveraging attestation in passkey implementations is similar to Object Identifier (OID) checking in PKI authentication. Vendor support for attestation in synced passkey implementations is still evolving, and passkey standards do not include assurance of passkey sync fabrics. **Enabling syncable passkeys in enterprise tools is configurable and usually off by default. Verify with your tool vendor if they support it and how to turn them on or off**. One potential enterprise advantage of synced passkeys is to improve the account recovery process. For more information on FIDO in the Enterprise, including choices surrounding synced passkeys, see these [FIDO Alliance enterprise web resources](https://fidoalliance.org/fido-in-the-enterprise/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and FIDO Alliance [Guidance for US Government Agency Deployment of FIDO Authentication]{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 Since FIDO2 leverages public key cryptography and can be hardware-based, it is categorized as a **single-factor or multi-factor cryptographic device** authenticator type. It achieves either AAL2 or AAL3, depending on the configuration and security control baseline.
 
@@ -621,7 +621,7 @@ Because of the secure nature of a security key, acquire them from a trusted sour
 The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a six-part pilot plan for a successful pilot. Agencies can add more sections, but these six should be included at least.
 
 1.	Identifying objectives and use cases - This playbook is a great resource to help identify pilot objectives and use cases.
-2.	Pilot size and executive support - Gain CIO and CISO sponsorship and identify a pilot user group commensurate with the production population. A pilot size should include users from the general population and not be limited to IT staff only. For most piloting agencies, this was 5%.
+2.	Pilot size and executive support - Gain CIO and CISO sponsorship and identify a pilot user group commensurate with the production population. A pilot size should include users from the general population and not be limited to IT staff only. For most piloting agencies, this was 5%. Executive support can also include a video of them using the authenticator shared as part of an onboarding or training campaign.
 3.	Timeline - Pilots range from a couple of months to a year, including all research and planning based on size and complexity. The actual pilot may only run for a couple of weeks.
 4.	Pilot team and resources– Identify and engage with all stakeholders, including identifying a pilot lead and support team. For some agencies, this could include multiple teams spread across a network, directory, cloud, HSPD-12, security, and other offices. Also, identify your pilot components such as operating system, access tools, devices, browsers, and platform or roaming authenticator types.
 5.	Risk and challenges – List your known and anticipated risks and challenges. These can include those listed in this playbook or agency-specific, like resource limitations or user adoption.
@@ -646,7 +646,7 @@ The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a si
 
 All authenticators follow a similar lifecycle management process. For specific lifecycle questions regarding Derived PIV authenticators, see [NIST Special Publication 800–157](https://csrc.nist.gov/publications/detail/sp/800-157/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls covering account lifecycle management.
 
-There are three lifecycle stages for a non-PKI authenticator, including FIDO.
+There are three lifecycle stages for a non-PKI authenticator, including FIDO. As part of lifecycle management, integrate help desk personnel on both pilot and implementation planning.
 
 1.	**Issuance**
     1. FIDO2 roaming or platform authenticators only support hardware-based devices. 
@@ -656,7 +656,7 @@ There are three lifecycle stages for a non-PKI authenticator, including FIDO.
     5. PIN length is recommended as at least six digits.
     6. Register (or bind) the authenticator using a comparable Identity Assurance Level. See NIST 800-63-3 Section 6.1.1 on binding at enrollment. Agencies are encouraged to maintain at least two valid authenticators at existing authenticator levels to mitigate the risk of account recovery takeover.
 2.	**Maintenance**
-    1. FIDO2 authenticators do not have an expiration date or need to be reissued at set intervals unless they are compromised. 
+    1. FIDO2 authenticators do not have an expiration date or need to be reissued at set intervals unless they are compromised. Users should be reminded to use them regularly, monthly, or every 30 to 60 days.
     2. If the identity account is updated, it is possible that a new FIDO registration must take place.
     3. Platform authenticators may require biometric factors to be updated.
     4. Roaming authenticators that are security keys may require maintenance from normal usage or damage.
@@ -676,7 +676,7 @@ There are three lifecycle stages for a non-PKI authenticator, including FIDO.
 ### Best Practices with Biometrics in Authentication
 
 Using a biometric platform authenticator can improve the user's experience and be cost-effective because it leverages native device features. In the future, roaming authenticators may also support a biometric capability. Today's most common platform authenticators include Apple's Face ID, Touch ID, and Microsoft's Windows Hello for Business. Android also supports a biometric platform authenticator but does not have a branded name. NIST Special Publication 800-63b outlines best practices when using biometrics as an authentication factor. 
-1.	For multi-factor authentication, always and only use a biometric with a physical device (something you have) and never with a knowledge factor (something you know).
+1.	As part of a multi-factor authentication, always use a biometric with a physical device (something you have) and never with only a knowledge factor (something you know).
 2.	The biometric capture device uses a protected channel and is authenticated with the verifier before capturing a biometric.
 3.	Operate with a False Match Rate (FMR) or False Accept Rate (FAR) of at least 1 in 1000 (<0.001%).
 4.	Biometric systems should implement Presentation Attack Detection (e.g., liveness detection).
