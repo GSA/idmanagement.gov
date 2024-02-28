@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: February 26, 2024
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 revoked a dated instance of the WidePoint ORC SSP 5 CA in support of the recent certificate modification (certificate serial number 210b3f17db750e616eb25f3f0b4933e5a98c449b)
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 80f4731a60fd5f2eb0468d0629310daa50ad210d
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WidePointORCSSP5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTORCSSP5.crl
+  ee_ocsp_uri: http://ssp5.eva.orc.com
+
 - notice_date: February 21, 2024
   change_type: CA Certificate Renewal
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
