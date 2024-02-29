@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var searchResults = document.getElementById("search-results");
+    const affiliate = 'idmprod';
 
     if (searchResults !== null) {
         var searchgovParams = document.getElementById("searchgov-params");
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var offset = (page - 1) * resultsPerPage;
         var totalResults = 0;
         params = {
-            affiliate: searchgovParams.dataset.affiliate,
+            affiliate: affiliate,
             access_key: searchgovParams.dataset.accessKey,
             query: sanitizedSearchKeyword,
             offset: offset,
