@@ -75,7 +75,7 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://w
 - **Facilitate Communications and Information Sharing:** acts as a vehicle for cross-government collaboration by sharing information, lessons learned, and best practices related to ICAM.
 
 ### Membership and Meetings
-Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Connect.gov](https://community.connect.gov/display/Egov/ICAMSC+Meeting+Materials){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using a PIV/CAC. See the ICAMSC Charter (PDF, September 2023) for information on membership requirements, voting rights, etc.
+Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Connect.gov](https://community.connect.gov/display/Egov/ICAMSC+Meeting+Materials){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using a PIV/CAC. See the [ICAMSC Charter (PDF, September 2023)]({{site.baseurl}}/docs/202309-charter-icamsc.pdf){:target="_blank"}{:rel="noopener noreferrer"} for information on membership requirements, voting rights, etc.
 
 ### ICAMSC Working Groups
 
