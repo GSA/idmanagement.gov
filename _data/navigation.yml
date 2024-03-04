@@ -20,6 +20,8 @@ partners:
   #   href: /phish-criteria/
   - text: Federal Workforce Identity Services
     href: /trust-services/
+  - text: ICAM FIBF For Comment
+    href: /icam-fibf/
 
 implement:
   - text: Introduction
@@ -86,27 +88,28 @@ playbooks:
     href: /playbooks/autopen/ 
   - text: Digital Identity Risk Assessment Playbook
     href: /playbooks/dira/ 
+  - text: Digitally Sign a Federal Register Notice
+    href: /playbooks/signfedregister/
+  - text: Digitally Sign a Word Document
+    href: /playbooks/signword/
   - text: Digital Worker Identity Playbook
     href: /playbooks/dw/ 
   - text: Enterprise Single Sign-On Playbook
     href: /playbooks/sso/ 
+  - text: Phishing-Resistant Authenticator Playbook
+    href: /playbooks/altauthn/
   - text: ICAM Governance Framework Version 1.0
     href: /docs/playbook-identity-governance-framework.pdf
   - text: Identity Lifecycle Management Playbook
     href: /playbooks/ilm/ 
   - text: Privileged Identity Playbook
     href: /playbooks/pam/ 
-  - text: Digitally Sign a Word Document
-    href: /playbooks/signword/
-  - text: Digitally Sign a Federal Register Notice
-    href: /playbooks/signfedregister/
-  - text: Windows Hello for Business Playbook
-    href: /playbooks/whfb/
 
-# Announcements moved to internal page see: /fpki/notifications/#fpki-announcements  
-# fpkiannouncements:
-#   - text: Back to FPKI Page
-#     href: /fpki/notifications
+# Announcements moved to internal page see: /fpki/notifications/#fpki-announcements
+# Added 'Back to FPKI Notifications' to help users return to notifications 
+fpkiannouncements:
+  - text: Back to FPKI Announcements
+    href: /fpki/notifications 
 #   - text: Public Trust TLS PKI CP
 #     href: /fpki/announcements/PT-TLS-CP/
 #   - text: CPCT Tool Update

@@ -1,0 +1,119 @@
+---
+# File: sitemap.xml for IDManagement.gov
+# Note: Collection-based: Each collection added to the site should be added here also
+# Date: 1026/2023
+#
+layout: 
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- arch collection -->
+  {% for docs in site.arch %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- ficampmo collection -->
+  {% for docs in site.ficampmo %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- implement collection -->
+  {% for docs in site.implement %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- partners collection -->
+  {% for docs in site.partners %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- playbooks collection -->
+  {% for docs in site.playbooks %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- university collection -->
+  {% for docs in site.university %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- Pages (Only a few pages)  -->
+  {% for page in site.pages %}
+  {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
+      <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  {% endif %}
+  {% endfor %}
+
+</urlset>

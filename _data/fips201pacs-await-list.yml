@@ -5,7 +5,7 @@
 # Updated by: 
 #
 # Legend:
-#  position: sequencial numbers from 1 to n#
+#  position: sequential numbers from 1 to nth#
 #  solution: company name or name of system
 #  state: current state: Update|New| or whatever status provided
 #  teststatus: current testing status
@@ -28,42 +28,31 @@
 
 - position: 2	
   solution: Datawatch + HID pivCLASS	
-  aplnumbers: New	
-  state: New	
+  aplnumbers: New
+  state: New
   teststatus: In queue
 
 - position: 3	
-  solution: Identiv Velocity Security Management System 13.02	
-  aplnumbers: 10103
-  state: Update
-  teststatus: In queue
-
-- position: 4	
   solution: AMAG Symmetry Professional + HID Global Validation System
   aplnumbers: 10047 & 10048
   state: Update
   teststatus: In queue
 
-- position: 5	
+- position: 4	
   solution: Genetec Security Center – Synergis with HID Global Validation System
   aplnumbers: 10061 & 10062
   state: Update
   teststatus: In queue
 
-- position: 6	
+- position: 5	
   solution: AMAG Symmetry Professional + Identity One Validation System
   aplnumbers: 10143 & 10144
   state: Update
   teststatus: In queue
 
-- position: 7	
-  solution: NAPCO Security	
+- position: 6	
+  solution: NAPCO Security
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 8	
-  solution: Tyco Security Products C-CURE 9000 with Innometrics validation System	
-  aplnumbers: 10115 & 10108
-  state: Update
-  teststatus: On Hold by vendor

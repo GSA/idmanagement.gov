@@ -26,7 +26,427 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
-- notice_date: 10/6/2023
+- notice_date: February 28, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Carillon Federal Services PIV-I CA1 that is valid from 2/20/2024 to 2/28/2025.
+  contact: support at certipath dot com
+  ca_certificate_hash: 90f0fb909eff6b6925ea6bb73ae09ca201fbe225
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: https://pub.carillon.ca/CAcerts/CISCA1.p7
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: http://pub.carillon.ca/CISCA1-ocsp
+
+- notice_date: February 28, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Carillon PKI Services G2 Root CA 2 that is valid from 2/20/2024 to 2/28/2025.
+  contact: support at certipath dot com
+  ca_certificate_hash: 99c7ce28d37d62bc212f7fcc1b3ea8636b2bd7bc
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: https://pub.carillon.ca/CAcerts/CISCA1.p7
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: http://pub.carillon.ca/CISCA2-ocsp
+
+- notice_date: February 28, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3 that is valid from 2/20/2024 to 2/28/2025.
+  contact: support at certipath dot com
+  ca_certificate_hash: 0c9bf55a7612badf1e48f7664b8b72b10d91b8b4
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN= Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3, 2.5.4.97=NTRNL-27370985, O=Ministerie van Defensie, 2.5.4.97=NTRNL-27370985, C=NL
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 28, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Northrop Grumman Corporate Root CA-G2 that is valid from 2/20/2024 to 2/28/2025.
+  contact: support at certipath dot com
+  ca_certificate_hash: 558191735579b2512e48ffbdeea7c13866e0cdee
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN= Northrop Grumman Corporate Root CA-G2,OU=Northrop Grumman Information Technology, O=Northrop Grumman Corporation, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-G2.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 28, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Northrop Grumman Corporate Root-384 that is valid from 2/20/2024 to 2/28/2025.
+  contact: support at certipath dot com
+  ca_certificate_hash: 6e53dcda07d72a88068b10eca6f2c6953502c3d4
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN= Northrop Grumman Corporate Root-384, OU=Northrop Grumman Enterprise Services, O=Northrop Grumman Corporation, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-384.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 26, 2024
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 revoked a dated instance of the WidePoint ORC SSP 5 CA in support of the recent certificate modification (certificate serial number 210b3f17db750e616eb25f3f0b4933e5a98c449b)
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 80f4731a60fd5f2eb0468d0629310daa50ad210d
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WidePointORCSSP5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTORCSSP5.crl
+  ee_ocsp_uri: http://ssp5.eva.orc.com
+
+- notice_date: February 21, 2024
+  change_type: CA Certificate Renewal
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 published the renewed TSCP SHA256 Bridge CA certificate. The validity dates are 2/16/2024 to 10/21/2025.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 7c30bace50cbdc8a7b64990b40c4f3fb6eee3e8b
+  ca_certificate_issuer: CN=Federal Common Policy CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 16, 2024
+  change_type: Intent to Issue a CA Certificate
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Carillon Federal Services PIV-I CA1 on or about February 22.
+  contact: support at certipath dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: https://pub.carillon.ca/CAcerts/CISCA1.p7
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: http://pub.carillon.ca/CISCA1-ocsp
+
+- notice_date: February 16, 2024
+  change_type: Intent to Issue a CA Certificate
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Carillon PKI Services G2 Root CA 2 on or about February 22.
+  contact: support at certipath dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: https://pub.carillon.ca/CAcerts/CISCA1.p7
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: http://pub.carillon.ca/CISCA2-ocsp
+
+- notice_date: February 16, 2024
+  change_type: Intent to Issue a CA Certificate
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3 on or about February 22.
+  contact: support at certipath dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN= Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3, 2.5.4.97=NTRNL-27370985, O=Ministerie van Defensie, 2.5.4.97=NTRNL-27370985, C=NL
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 16, 2024
+  change_type: Intent to Issue a CA Certificate
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Northrop Grumman Corporate Root CA-G2 on or about February 22.
+  contact: support at certipath dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN= Northrop Grumman Corporate Root CA-G2,OU=Northrop Grumman Information Technology, O=Northrop Grumman Corporation, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-G2.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 16, 2024
+  change_type: Intent to Issue a CA Certificate
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Northrop Grumman Corporate Root-384 on or about February 22.
+  contact: support at certipath dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN= Northrop Grumman Corporate Root-384, OU=Northrop Grumman Enterprise Services, O=Northrop Grumman Corporation, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-384.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 1, 2024
+  change_type: Intent to Renew a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to perform a certificate renewal to TSCP SHA256 Bridge CA between 02/16/2024 and 02/22/2024. The current certificate is expiring 2/23/2024.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: dd68894ac1ae380449190487a5ff24f9fdbcd82f
+  ca_certificate_issuer: CN=Federal Common Policy CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: February 1, 2024
+  change_type: Intent to Revoke a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to revoke a dated instance of the WidePoint ORC SSP 5 CA in support of the recent certificate modification (certificate serial number 210b3f17db750e616eb25f3f0b4933e5a98c449b)
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 80f4731a60fd5f2eb0468d0629310daa50ad210d
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WidePointORCSSP5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTORCSSP5.crl
+  ee_ocsp_uri: http://ssp5.eva.orc.com
+
+- notice_date: February 1, 2024
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a modified to WidePoint ORC SSP 5 which includes Derived PIV policies
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WidePointORCSSP5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTORCSSP5.crl
+  ee_ocsp_uri: http://ssp5.eva.orc.com
+  
+- notice_date: February 1, 2024
+  change_type: Intent to Issue a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to issue a modified certificate for PIV Derived Policies to WidePoint ORC SSP 5 between 2/1/2024 and 2/8/2024. Once the new certificate is accepted and published the previous certificate will be revoked.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WidePointORCSSP5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTORCSSP5.crl
+  ee_ocsp_uri: http://ssp5.eva.orc.com
+
+- notice_date: December 14, 2023
+  change_type: System Outage
+  system: WidePoint Non-Federal Issuer
+  change_description:  Automated CRL publication was delayed for the WidePoint ORC NFI CA 4, which caused a short period where the associated public CRL had expired. WidePoint had manually published a current CRL within 2 hours of discovery and has subsequently corrected their automated CRL publication processes.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 5a95aea990a7aec492134a5b437cf3324f260793
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1_1.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: December 5, 2023
+  change_type: CA Certificate Issuance
+  system: DirectTrust Identity Bridge CA
+  change_description: DirectTrust issued a cross certificate from the bridge to the FBCA. Valid from 10/17/2023 to 10/31/2026.
+  contact: admin at DirectTrust dot org 
+  ca_certificate_hash: 1623a303cd6d5c61cf049f1b65d6aae2f1e8e19f
+  ca_certificate_issuer: CN = DirectTrust Identity Bridge CA, OU = Certification Authorities, O = DirectTrust.org, inc., C = US
+  ca_certificate_subject: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: November 27, 2023
+  change_type: Rekey CA Certificate Issuance
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 intends to rekey the WidePoint ORC NFI 4 CA on or after December 8, 2023.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: 0471dae1836979a68d973b6ca0b5fe44b0bae362
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1_2.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: November 20, 2023
+  change_type: System Outage
+  system: WidePoint Non-Federal Issuer
+  change_description:  Due to a hardware failure, automated CRL publication was delayed for the WidePoint ORC NFI CA 4, which caused a short period where the associated public CRL had expired. WidePoint had manually published a current CRL within 4 hours of discovery and has subsequently corrected their automated CRL publication processes.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 5a95aea990a7aec492134a5b437cf3324f260793
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1_1.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: November 14, 2023
+  change_type: Intent to Rekey CA Certificate
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 intends to rekey the WidePoint ORC NFI 4 CA on or after December 8, 2023.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.xca.xpki.com/CRLs/XTec_PIVI_CA1_2.crl
+  ee_ocsp_uri: N/A
+  
+- notice_date: November 13, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a new cross certificate to the U.S. Department of State AD Root CA valid from 11/8/2023 - 11/8/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: b47df20b16966f65b0e4859d426d05c452b76bd6
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 30, 2023
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to revoke the original cross certificate to the  USPTO_INTR_CA1 that was issued on 11/9/2022 between 11/13/2023 and 11/17/2023.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: e35da05374246a6d0a892f5eec31f74cdbd794b0
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=USPTO_INTR_CA1, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=uspto, DC=gov
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl
+  ee_ocsp_uri: N/A
+  
+- notice_date: October 30, 2023
+  change_type: CA Certificate Issuance
+  system: DirectTrust Identity Bridge CA
+  change_description: DirectTrust issued a cross certificate from the bridge to the Trans Sped Root CA on October 30, 2023.
+  contact: Kyle dot Neuman at DirectTrust dot org
+  ca_certificate_hash: d0575156c2333a2493890b3aee7900fc6ff8620f
+  ca_certificate_issuer: CN = DirectTrust Identity Bridge CA, OU = Certification Authorities, O = DirectTrust.org, inc., C = US
+  ca_certificate_subject: CN = Trans Sped Root CA G3, OU = Trans Sped Trust Services, O = Trans Sped S.A./organizationIdentifier = VATRO-12458924, C = RO
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: http://ocsp.transsped.ro/
+
+- notice_date: October 26, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the DirectTrust Identity Bridge CA
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ddd7246c86b2e0a3ac2fc7a7dbb7430b935eba2f
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DirectTrust Identity Bridge CA, OU=Certification Authorities, O=DirectTrust.org, inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 25, 2023
+  change_type: Intent to Issue a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to issue a new cross certificate to the U.S. Department of State AD Root CA between 11/08/2023 and 11/15/2023
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 20, 2023
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new cross certificate to the USPTO_INTR_CA1 with validity from 10/19/2023 to 10/19/2026
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 02ecec9eb7229055c57caeaade6f1ae056fb4327
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=USPTO_INTR_CA1, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=uspto, DC=gov
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: October 20, 2023
+  change_type: CA Certificate Issuance
+  system: IdenTrust Global Common Root CA 1
+  change_description: Issued new CA certificate to Advanced Health Systems Inc, valid from 10/12/2023 to 10/8/2033
+  contact: product at IdenTrust dot com
+  ca_certificate_hash: c6fa3d4cdf28e118b9bc2790734e9cf257279c1f
+  ca_certificate_issuer: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
+  ca_certificate_subject: CN = Advanced Health Systems Inc Direct CA 2, OU = IdenTrust Global Common, O = IdenTrust, S = Mississippi, C = US
+  cdp_uri: http://validation.identrust.com/crl/igcrootca1.crl
+  aia_uri: http://validation.identrust.com/roots/igcrootca1.p7c
+  sia_uri: N/A
+  ocsp_uri: http://igc.ocsp.identrust.com
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 6, 2023
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the DirectTrust Identity Bridge CA between 10/23/2023 and 10/30/2023
@@ -41,7 +461,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
 
-- notice_date: 10/6/2023
+- notice_date: October 6, 2023
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 intends to issue a new cross certificate to the USPTO_INTR_CA1 between 10/19/2023 and 10/26/2023
@@ -55,22 +475,7 @@
   ocsp_uri: N/A
   ee_cdp_uri: http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl
   ee_ocsp_uri: N/A
-  
-- notice_date: 9/13/2023
-  change_type: CA Certificate Issuance
-  system: IdenTrust Global Common Root CA 1
-  change_description: Issued new CA certificate to Advanced Health Systems Inc, valid from 9/6/2023, valid through 9/2/2033
-  contact: product at IdenTrust dot com
-  ca_certificate_hash: 6e5b4ce0f68333d86456c85faaeeee6cdebc3124
-  ca_certificate_issuer: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
-  ca_certificate_subject: CN = Advanced Health Systems Inc Direct CA 2, OU = IdenTrust Global Common, O = IdenTrust, S = Mississippi, C = US
-  cdp_uri: http://validation.identrust.com/crl/igcrootca1.crl
-  aia_uri: http://validation.identrust.com/roots/igcrootca1.p7c
-  sia_uri: N/A
-  ocsp_uri: http://igc.ocsp.identrust.com
-  ee_cdp_uri: N/A
-  ee_ocsp_uri: N/A
-  
+   
 - notice_date: August 29, 2023
   change_type: CA Certificate Issuance
   system: TSCP SHA256 Bridge CA
@@ -100,7 +505,6 @@
   ocsp_uri: N/A
   ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA2.crl
   ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
-
 
 - notice_date: August 18, 2023
   change_type: CA Certificate Issuance

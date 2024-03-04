@@ -1,5 +1,11 @@
 ## FPKI announcements
 
+- title: CPCT Tool Update:<br>New Certificate Profiles
+  pubDate: October 18, 2023
+  url: /implement/announcements/cpct-profile-update/
+  description: The Certificate Profiles used by the CPCT Tool have updated to Common SSP (v2.5) and FBCA (v3.2). CPCT Tool update required.
+  status: Active
+
 - title: Public Trust PKI Certificate Policy
   pubDate: February 10, 2023
   url: /implement/announcements/PT-TLS-CP/
@@ -34,7 +40,7 @@
   pubDate: October 12, 2020
   url: /implement/announcements/common-g2-update/
   description: This announcement details the FCPCA update timeline and actions agencies need to perform.
-  status: Active
+  status: Removed
 
 - title: Upcoming Migration of Federal PKI Certificate Repository Services
   pubDate: April 1, 2019

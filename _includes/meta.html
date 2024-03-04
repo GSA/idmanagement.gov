@@ -59,7 +59,7 @@ site, this is the place to do it.
     ================================================== -->
 
   <!-- 128x128 -->
- <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl}}/assets/img/favicons/favicon.ico">
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl}}/assets/img/favicons/favicon.ico">
   <link rel="icon" type="image/png" href="{{ site.baseurl}}/assets/img/favicons/favicon.png">
   <!-- 192x192, as recommended for Android http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android-->
   <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
@@ -76,7 +76,12 @@ site, this is the place to do it.
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/uswds.min.css">
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/index.css">
 
-<!-- Bootstrap 5 CSS Library -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- Sitemap.xml -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <script src="{{ site.baseurl }}/assets/js/search.js?{{ site.time | date: '%s%N' }}"></script>
+
+  <!-- Bootstrap 5 CSS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
