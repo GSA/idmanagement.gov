@@ -150,7 +150,7 @@ To help support agencies aggressively replace passwords and other phishable auth
 
 ## Challenges and Lessons Learned
 
-The FIDO2 CoA completed two cohorts, which included eight agencies that either piloted a solution or evolved a pilot to their entire production community. The pilots included a combination of platform authenticators like [Windows Hello for Business]({{site.baseurl}}/playbooks/whfb/) and roaming authenticators like Yubico Yubikey and RSA DS-100.
+The FIDO2 CoA completed two cohorts, which included eight agencies that either piloted a solution or evolved a pilot to their entire production community. The pilots included a combination of platform authenticators like [Windows Hello for Business]({{site.baseurl}}/implement/whfb/) and roaming authenticators like Yubico Yubikey and RSA DS-100.
 
 ### Challenges
 
