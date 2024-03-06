@@ -711,7 +711,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Card Selection -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry<br>Symption or Error: "Smart card icon is not displayed; user is not prompted for PIN."</button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
     <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.</p>
@@ -758,7 +758,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Cred Auth -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">Credential Authentication and Secure Connection to Logon Server</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">Credential Authentication and Secure Connection to Logon Server<br>Symption or Error: "Signing in with a smart card isn’t supported for your account. For more information, contact your administrator."</button>
   </h4>
   <div id="m-a3" class="usa-accordion__content usa-prose">
     <p>After the user enters their PIN, Windows tries to unlock the card using the PIN entered. After the card has been unlocked, the workstation packages the user’s PIV authentication certificate and sends it to the logon server, also known as a domain controller. The workstation must be able to trust the domain controller so that the workstation can securely connect to it. Use the information below to troubleshoot symptoms encountered after the PIN is entered but before logon occurs.</p>
@@ -833,7 +833,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Name Mapping -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">Name Mapping and PIV Validation</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">Name Mapping and PIV Validation<br>Symption or Error:<br>1. "An untrusted certification authority was detected while processing the smart card certificate used for authentication."<br>2. "The smart card used for authentication has been revoked."<br>3. "The system could not log you on. Your credentials could not be verified."</button>
   </h4>
   <div id="m-a4" class="usa-accordion__content usa-prose">
     <p>After the domain controller’s authentication certificate is used to make a secure link from the workstation to the domain controller, the certificate data for the user’s smart card is sent to the domain controller for validation. The domain controller does the following to validate the credential:</p>
@@ -852,6 +852,12 @@ For our use, this complex process is simplified into the following workflows:
       <img src="{{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png" alt="A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication." width="664" height="448">
       <li><strong>The smart card used for authentication has been revoked.</strong></li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png" alt="A screenshot of a logon window that includes the words The smart card used for authentication has been revoked." width="664" height="448">
+      <li>In some environments, under some circumstances, distribution of the root by GPO can sometimes cause PIV certificates to appear to be untrusted intermittently.
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/valid-root-ca-certificates-untrusted">Microsoft has published</a>
+      a description of the issue and identified a workaround.</li>
+    </p>
+  </div>
+</div>
     </ol>
     <hr />
     <h2>Possible Cause 1 - Certificate Fails Path Discovery and Validation</h2>

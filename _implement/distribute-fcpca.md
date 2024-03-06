@@ -7,8 +7,8 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
-version: 1.1
-pubdate: August 31, 2023
+version: 1.2
+pubdate: March 6, 2024
 
 subnav:
   - text: 1. Obtain and verify FCPCA
@@ -44,6 +44,11 @@ subnav:
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row">1.2</th>
+      <td>03/06/2024</td>
+      <td>Add Note on the difference between NTAuth and Enterprise Trust. Add note on intermittent trust issue after GPO distribution.</td>
+    </tr>
     <tr>
       <th scope="row">1.1</th>
       <td>08/31/2023</td>
@@ -197,6 +202,22 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 
 [![A video that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">NTAuth versus Enterprise Trust</h4>
+    <p class="usa-alert__text">
+      Just pushing new Federal PKI intermediates over GPO may not fix domain login. Microsoft has two primary locations to store certificates for network login and other uses: NTAuth and Enterprise Trust.
+      <ul>
+        <li>NTAUTH is a registry location at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a certificate store.</li>
+        <li>The NTAuthCertificates determine which CAs are trusted for domain authentication use cases. NTAuth (or NTAuthCertificates) is not a Windows certificate store but an Active Directory object containing certificates.</li>
+        <li>add store is used to add a certificate to a certificate store, while publish publishes values into the directory.</li>
+        <li>With gpupdate /force,  the update starts immediately, but replication can take some time depending on the deployment's complexity (e.g., number of domain controllers or network configuration). The average default delay for gpupdate without force is around 90 minutes. This behavior occurs when Group Policy settings are updated and the client-side extension responsible for autoenrollment runs.</li>
+        <li>The registry is not updated in specific scenarios, such as AD replication latency or when the “Do not enroll certificates automatically” policy setting is enabled. In these scenarios, run the following command manually to insert the certificate into the registry location: certutil -enterprise -addstore NTAuth issuing_ca_name.cer.</li> 
+      </ul>
+    </p>
+  </div>
+</div>
+
 ### Use Microsoft Group Policy Object (GPO)
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
@@ -227,6 +248,17 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 **Note:** The following video shows you how to distribute the FCPCA root certificate with Microsoft GPO. [Click for a larger version]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}.
 
 [![A gif that shows the distribution and verification steps performed with Microsoft Group Policy Object also known as GPO]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">PIV certificates appear untrusted after GPO distribution</h4>
+    <p class="usa-alert__text">
+      In some environments, under some circumstances, distribution of the root by GPO can sometimes cause PIV certificates to intermittently appear to be untrusted.
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/valid-root-ca-certificates-untrusted">Microsoft has published</a>
+      a description of the issue and identified a workaround.
+    </p>
+  </div>
+</div>
 
 ### Use Third-Party Configuration Management Tools
 
