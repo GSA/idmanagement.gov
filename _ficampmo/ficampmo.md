@@ -61,7 +61,7 @@ The GSA FICAM Program coordinates and oversees governmentwide ICAM initiatives a
 
 The [Identity, Credential, and Access Management Subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the principal interagency forum for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. It’s a sub-committee of the [Federal CIO Council’s Chief Information Security Officer (CISO) Council](https://www.cio.gov/about/members-and-leadership/ciso-council/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
-The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://www.gsa.gov/about-us/organization/office-of-governmentwide-policy){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and another volunteer agency (currently the Department of Justice). The ICAMSC aligns the identity management activities of the federal government and supports collaborative government-wide efforts to:
+The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://www.gsa.gov/about-us/organization/office-of-governmentwide-policy){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Department of Justice and Department of Homeland Security, Cybersecurity and Infrastructure Security Agency. The ICAMSC aligns the identity management activities of the federal government and supports collaborative government-wide efforts to:
 - Increase agency flexibility in addressing ICAM challenges;
 - Coordinate interagency efforts to meet agency mission needs;
 - Identify gaps in policies, procedures, standards, guidance, and services; and
@@ -75,8 +75,7 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://w
 - **Facilitate Communications and Information Sharing:** acts as a vehicle for cross-government collaboration by sharing information, lessons learned, and best practices related to ICAM.
 
 ### Membership and Meetings
-
-Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Max.gov](https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FpageId%253D234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using either Max Secure+ or a PIV/CAC.
+Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Connect.gov](https://community.connect.gov/display/Egov/ICAMSC+Meeting+Materials){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using a PIV/CAC. See the [ICAMSC Charter (PDF, September 2023)]({{site.baseurl}}/docs/202309-charter-icamsc.pdf){:target="_blank"}{:rel="noopener noreferrer"} for information on membership requirements, voting rights, etc.
 
 ### ICAMSC Working Groups
 
