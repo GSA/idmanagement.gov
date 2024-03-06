@@ -47,7 +47,7 @@ subnav:
     <tr>
       <th scope="row">1.2</th>
       <td>03/06/2024</td>
-      <td>Add Note on the difference between NTAuth and Enterprise Trust.</td>
+      <td>Add Note on the difference between NTAuth and Enterprise Trust. Add note on intermittent trust issue after GPO distribution.</td>
     </tr>
     <tr>
       <th scope="row">1.1</th>
