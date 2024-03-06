@@ -711,7 +711,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Card Selection -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry<br>Symption: Smart card icon is not displayed; user is not prompted for PIN.</button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
     <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.</p>
