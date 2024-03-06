@@ -711,7 +711,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Card Selection -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry<br>Symption or Error: Smart card icon is not displayed; user is not prompted for PIN.</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2">Card Selection and PIN Entry<br>Symption or Error: "Smart card icon is not displayed; user is not prompted for PIN."</button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
     <p>When the logon screen appears, if the system has detected a smart card reader and an attached (inserted) smart card with suitable certificates, the smart card logon option is displayed and the user is prompted to enter a PIN. Use the information below to troubleshoot symptoms encountered with card selection before PIN entry.</p>
@@ -758,7 +758,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Cred Auth -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">Credential Authentication and Secure Connection to Logon Server<br>Symption or Error: Signing in with a smart card isn’t supported for your account. For more information, contact your administrator.</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">Credential Authentication and Secure Connection to Logon Server<br>Symption or Error: "Signing in with a smart card isn’t supported for your account. For more information, contact your administrator."</button>
   </h4>
   <div id="m-a3" class="usa-accordion__content usa-prose">
     <p>After the user enters their PIN, Windows tries to unlock the card using the PIN entered. After the card has been unlocked, the workstation packages the user’s PIV authentication certificate and sends it to the logon server, also known as a domain controller. The workstation must be able to trust the domain controller so that the workstation can securely connect to it. Use the information below to troubleshoot symptoms encountered after the PIN is entered but before logon occurs.</p>
@@ -833,7 +833,7 @@ For our use, this complex process is simplified into the following workflows:
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Name Mapping -->
-    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">Name Mapping and PIV Validation<br>Symption or Error: 1. An untrusted certification authority was detected while processing the smart card certificate used for authentication.<br>2. The smart card used for authentication has been revoked.<br>3. The system could not log you on. Your credentials could not be verified.</button>
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">Name Mapping and PIV Validation<br>Symption or Error:<br>1. "An untrusted certification authority was detected while processing the smart card certificate used for authentication."<br>2. "The smart card used for authentication has been revoked."<br>3. "The system could not log you on. Your credentials could not be verified."</button>
   </h4>
   <div id="m-a4" class="usa-accordion__content usa-prose">
     <p>After the domain controller’s authentication certificate is used to make a secure link from the workstation to the domain controller, the certificate data for the user’s smart card is sent to the domain controller for validation. The domain controller does the following to validate the credential:</p>
