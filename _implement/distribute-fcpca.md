@@ -197,6 +197,15 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 
 [![A video that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">NTAuth versus Enterprise Trust</h4>
+    <p class="usa-alert__text">
+      Microsoft has multiple locations to deploy certificates, primarily NTAuth and Enterprise trust. NTAUTH is a registry location at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a certificate store. With gpupdate /force,  the update starts immediately, but replication can take some time depending on the deployment's complexity (e.g., number of domain controllers or network configuration). The average default delay for gpupdate without force is around 90 minutes. This behavior occurs when Group Policy settings are updated and when the client-side extension that is responsible for autoenrollment runs. The registry is not updated in specific scenarios, such as AD replication latency or when the “Do not enroll certificates automatically” policy setting is enabled. In these scenarios, run the following command manually to insert the certificate into the registry location: certutil -enterprise -addstore NTAuth issuing_ca_name.cer. Add a clarifier that Enterprise Trust stores through GPO is used by domain-joined clients to determine if a cert is good for a specific purpose, much like the 3rd-party "roots" are used. The NTAuthCertificates determine which CAs are trusted for domain authentication use cases. Just pushing new FPKI intermediates over GPO may not fix domain login. NTAuth (or NTAuthCertificates) is not a Windows certificate store; instead, it's an Active Directory object containing certificates. add store is used to add a certificate to a certificate store, while publish publishes values into the directory.
+    </p>
+  </div>
+</div>
+
 ### Use Microsoft Group Policy Object (GPO)
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
