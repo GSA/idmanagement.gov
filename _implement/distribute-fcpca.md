@@ -249,6 +249,17 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 
 [![A gif that shows the distribution and verification steps performed with Microsoft Group Policy Object also known as GPO]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">PIV certificates appear untrusted after GPO distribution</h4>
+    <p class="usa-alert__text">
+      In some environments, under some circumstances, distribution of the root by GPO can sometimes cause PIV certificates to intermittently appear to be untrusted.
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/valid-root-ca-certificates-untrusted">Microsoft has published</a>
+      a description of the issue and identified a workaround.
+    </p>
+  </div>
+</div>
+
 ### Use Third-Party Configuration Management Tools
 
 {% include alert-warning.html content="To follow these steps, you must have Enterprise Administrator privileges for the Domain. You will need to run these commands from an agency domain controller." %}
