@@ -7,8 +7,8 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
-version: 1.1
-pubdate: August 31, 2023
+version: 1.2
+pubdate: March 6, 2024
 
 subnav:
   - text: 1. Obtain and verify FCPCA
@@ -44,6 +44,11 @@ subnav:
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row">1.2</th>
+      <td>03/06/2024</td>
+      <td>Add Note on the difference between NTAuth and Enterprise Trust.</td>
+    </tr>
     <tr>
       <th scope="row">1.1</th>
       <td>08/31/2023</td>
