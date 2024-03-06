@@ -852,6 +852,12 @@ For our use, this complex process is simplified into the following workflows:
       <img src="{{site.baseurl}}/assets/piv/pivauth-untrusted-ca-logon-screen.png" alt="A screenshot of a logon window that includes the words An untrusted certification authority was detected while processing the smart card certificate used for authentication." width="664" height="448">
       <li><strong>The smart card used for authentication has been revoked.</strong></li>
       <img src="{{site.baseurl}}/assets/piv/pivauth-smart-card-revoked-logon-screen.png" alt="A screenshot of a logon window that includes the words The smart card used for authentication has been revoked." width="664" height="448">
+      <li>In some environments, under some circumstances, distribution of the root by GPO can sometimes cause PIV certificates to appear to be untrusted intermittently.
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/valid-root-ca-certificates-untrusted">Microsoft has published</a>
+      a description of the issue and identified a workaround.</li>
+    </p>
+  </div>
+</div>
     </ol>
     <hr />
     <h2>Possible Cause 1 - Certificate Fails Path Discovery and Validation</h2>
