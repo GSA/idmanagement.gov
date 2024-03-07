@@ -1,4 +1,21 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/GSA/idmanagement.gov/0512-identity-policy-matrix/assets/schemas/laws-policies-standards-schema.json
+# &6USC1523
+#  type: Law
+#  shortName: "6 USC 1523"
+#  longName: "6 USC 1523 - Federal Cybersecurity Requirements"
+#  published: 2017-01-06
+#  description: >-
+#    Directs the head of each agency to implement a single sign-on for public websites that require user authentication as developed by the General Services Administration. Additionally, implement multi-factor authentication for remote access and accounts with elevated privileges.
+#  externalURL: "https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements"
+#  authored-by:
+#    - *CONGRESS
+#  scope:
+#    - "Workforce Identity"
+#    - "Public Identity"
+#  ficam-services:
+#    - "Access Management - Authentication"
+#    - "Access Management - Authorization"
+
 # CORE AUTHORITIES - White House and Congress - these are authorized by the constitution
 - &WH
   type: Authority
@@ -16,10 +33,9 @@
 - &6USC1523
   type: Law
   shortName: "6 USC 1523"
-  longName: "Federal Cybersecurity Requirements"
+  longName: "6 USC 1523: Federal Cybersecurity Requirements"
   published: 2017-01-06
-  description: >-
-    Directs the head of each agency to implement a single sign-on for public websites that require user authentication as developed by the General Services Administration. Additionally, implement multi-factor authentication for remote access and accounts with elevated privileges.
+  description: "Directs the head of each agency to implement a single sign-on for public websites that require user authentication as developed by the General Services Administration. Additionally, implement multi-factor authentication for remote access and accounts with elevated privileges."
   externalURL: "https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements"
   authored-by:
     - *CONGRESS
@@ -35,8 +51,7 @@
   longName: "Homeland Security Presidential Directive 12"
   published: 2004-08-27
   description: >-
-    Directive requires the development and agency implementation of a mandatory, government-wide standard 
-    for secure and reliable forms of identification for Federal employees and contractors.
+    Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors.
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
   authored-by:
     - *WH
@@ -57,6 +72,9 @@
     - "Governance - Identity Governance"
   authored-by:
     - *CONGRESS
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &FITARA2017
   type: Law
   shortName: "FITARA Enhancement Act of 2017"
@@ -69,6 +87,9 @@
   externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
   authored-by:
     - *CONGRESS
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &EO13467
   type: Law
   shortName: "E.O. 13467"
@@ -85,10 +106,12 @@
     - Credential Management
     - Access Management
     - Governance
+  scope:
+    - "Workforce Identity"
 - &PRIVACYACT1974
   type: Law
   shortName: "Privacy Act of 1974"
-  longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a - Privacy Act of 1974"
+  longName: "5 USC 552a: Records maintained on individuals - Privacy Act of 1974"
   description: >-
     This Act protects certain federal government records pertaining to individuals. 
     In particular, the Act covers systems of records that an agency maintains and 
@@ -101,6 +124,9 @@
   ficam-services:
     - Identity Management
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &ESIGN2000
   type: Law
   shortName: "E-SIGN Act of 2000"
@@ -116,6 +142,9 @@
   ficam-services:
     - Federation
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &GPEA1998
   type: Law
   shortName: "Government Paperwork Elimination Act"
@@ -133,6 +162,9 @@
     - *CONGRESS
   ficam-services:
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &EO13681
   type: Law
   shortName: "E.O. 13681"
