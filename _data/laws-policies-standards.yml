@@ -41,6 +41,7 @@
 #
 # LAWS and Executive Orders (Authorized by WH and Congress)
 #
+
 - &6USC1523
   type: Law
   shortName: "6 USC 1523"
@@ -56,13 +57,13 @@
   ficam-services:
     - "Access Management - Authentication"
     - "Access Management - Authorization"
+    
 - &HSPD12
   type: Law
   shortName: "HSPD-12"
   longName: "Homeland Security Presidential Directive 12"
   published: 2004-08-27
-  description: >-
-    Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors.
+  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
   authored-by:
     - *WH
@@ -70,6 +71,7 @@
     - "Workforce Identity"
   ficam-services:
     - "Identity Management - Identity Proofing"
+    
 - &FISMA2014
   type: Law
   shortName: "FISMA 2014"
@@ -86,6 +88,7 @@
   scope:
     - "Workforce Identity"
     - "Public Identity"
+    
 - &FITARA2017
   type: Law
   shortName: "FITARA Enhancement Act of 2017"
@@ -101,13 +104,14 @@
   scope:
     - "Workforce Identity"
     - "Public Identity"
+    
 - &EO13467
   type: Law
   shortName: "E.O. 13467"
   longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
   description: >-
     This Executive Order mandates a common background check process across the civilian, unclassified 
-    federal government, leading to acceptance of PIV cards across agency boundaries.
+    the federal government, leading to the acceptance of PIV cards across agency boundaries.
   published: 2008-06-30
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
   authored-by:
@@ -119,6 +123,7 @@
     - Governance
   scope:
     - "Workforce Identity"
+    
 - &PRIVACYACT1974
   type: Law
   shortName: "Privacy Act of 1974"
@@ -138,6 +143,7 @@
   scope:
     - "Workforce Identity"
     - "Public Identity"
+    
 - &ESIGN2000
   type: Law
   shortName: "E-SIGN Act of 2000"
@@ -156,6 +162,7 @@
   scope:
     - "Workforce Identity"
     - "Public Identity"
+    
 - &GPEA1998
   type: Law
   shortName: "Government Paperwork Elimination Act"
@@ -176,6 +183,7 @@
   scope:
     - "Workforce Identity"
     - "Public Identity"
+    
 - &EO13681
   type: Law
   shortName: "E.O. 13681"
@@ -191,6 +199,9 @@
     - Identity Management
     - Federation
     - Governance
+  scope:
+    - "Public Identity"
+    
 - &EO13556
   type: Law
   shortName: E.O. 13556
@@ -206,6 +217,10 @@
   ficam-services:
     - Federation
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &EO13286
   type: Law
   shortName: E.O. 13286
@@ -218,6 +233,9 @@
   published: 2003-05-03
   authored-by:
     - *WH
+  scope:
+    - "Workforce Identity"
+    
 - &EO14028
   type: Law
   shortName: "E.O. 14028"
@@ -231,27 +249,46 @@
     - *WH
   ficam-services:
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 #
 # Secondary Authorities - established by a Law or Executive Order
 #
+
 - &NIST
   type: Authority
   shortName: "NIST"
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
+  subgroup-of:
+    - *DOC
+    
+- &DOC
+  type: Authority
+  shortName: "DOC"
+  longName: "U.S Department of Commerce"
+  description: "Mission: To create the conditions for economic growth and opportunity for all communities."
+  externalURL: "https://www.commerce.gov"
+  
 - &GSA
   type: Authority
   shortName: "GSA"
   longName: "General Services Administration"
   description: "Mission: To deliver the best customer experience and value in real estate, acquisition, and technology services to the government and the American people."
   externalURL: "https://www.gsa.gov"
+  
 - &OMB
   type: Authority
   shortName: "OMB"
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+  subgroup-of:
+    - *WH
+    
 - &OPM
   type: Authority
   shortName: OPM
@@ -259,6 +296,7 @@
   description: >-
     OPM works in several broad categories to lead and serve the Federal Government in enterprise human 
     resource management by delivering policies and services to achieve a trusted effective civilian workforce.
+    
 - &DNI
   type: Authority
   shortName: DNI
@@ -266,6 +304,7 @@
   description: >-
     Our mission is to lead intelligence integration and forge an intelligence community that delivers the most 
     insightful intelligence possible
+    
 - &CIOCOUNCIL
   type: Authority
   shortName: "Federal CIO Council"
@@ -274,6 +313,9 @@
   externalURL: "https://www.cio.gov/"
   authorized-by:
     - *FISMA2014
+  subgroup-of:
+    - *OMB
+    
 - &CISOCOUNCIL
   type: Authority
   shortName: "Federal CISO Council"
@@ -282,6 +324,7 @@
   externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
   subgroup-of:
     - *CIOCOUNCIL
+    
 - &ICAMSC
   type: Authority
   shortName: "ICAMSC"
@@ -290,6 +333,7 @@
   externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
   subgroup-of:
     - *CISOCOUNCIL
+    
 - &PACSMODWG
   type: Authority
   shortName: "PACSmod WG"
@@ -303,7 +347,9 @@
     processes related to modernizing enterprise PACS within the Federal Government (USG), thereby 
     increasing security, coordination, and compliance with national-level policies and standards.
   subgroup-of:
+    - *ISC
     - *ICAMSC
+    
 - &FPKIPA
   type: Authority
   shortName: "FPKI PA"
@@ -312,6 +358,7 @@
   externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
   subgroup-of:
     - *ICAMSC
+    
 - &DHS
   type: Authority
   shortName: "DHS"
@@ -322,6 +369,7 @@
     and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
     Our duties are wide-ranging, and our goal is clear - keeping America safe.
   externalURL: "https://www.dhs.gov/"
+  
 - &CISA
   type: Authority
   shortName: "CISA"
@@ -332,6 +380,7 @@
   externalURL: "https://www.cisa.gov/"
   subgroup-of:
     - *DHS
+    
 - &ISC
   type: Authority
   shortName: ISC
@@ -342,6 +391,7 @@
   externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
   authorized-by:
     - *EO13286
+    
 - &USDS
   type: Authority
   shortName: "USDS"
@@ -350,12 +400,14 @@
     To deliver better government services to the American people through technology and design.
   subgroup-of:
     - *WH
+    
 - &DOD
   type: Authority
   shortName: "DoD"
   longName: "Department of Defense"
   description: >-
     The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
+    
 - &FEDRAMP
   type: Authority
   shortName: "FedRAMP"
@@ -369,6 +421,7 @@
     - *GSA
     - *DHS
     - *DOD
+    
 - &NSA
   type: Authority
   shortName: "NSA"
@@ -376,14 +429,19 @@
   description: >-
     We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
     national defense and secure national security systems.
+  subgroup-of:
+    - *DOD
+    
 - &CMU
   type: Authority
   shortName: "CMU"
   longName: "Carnegie Mellon University"
   externalURL: "https://www.cmu.edu/"
+
 #
 # POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
 #
+
 - &M0524
   type: Policy
   shortName: "M-05-24"
@@ -399,6 +457,7 @@
     - *OMB
   ficam-services:
     - "Identity Management - Identity Proofing"
+    
 - &FBCACP
   type: Policy
   shortName: "FBCA CP"
@@ -407,7 +466,8 @@
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf"
   scope:
-    - Workforce Identity
+    - "Workforce Identity"
+    - "Public Identity"
   ficam-services:
     - "Identity Management - Identity Proofing"
     - "Credential Management - Generation & Issuance"
@@ -415,6 +475,7 @@
     - "Federation - Policy Alignment"
   authored-by:
     - *FPKIPA
+    
 - &COMMONCP
   type: Policy
   shortName: "Common CP"
@@ -431,6 +492,7 @@
     - "Federation - Policy Alignment"
   authored-by:
     - *FPKIPA
+    
 - &M1917
   type: Policy
   shortName: "M-19-17"
@@ -441,13 +503,14 @@
   authored-by:
     - *OMB
   scope:
-    - Workforce Identity
-    - Public Identity
+    - "Workforce Identity"
+    - "Public Identity"
   ficam-services:
     - "Identity Management - Identity Proofing"
     - "Credential Management - Generation & Issuance"
     - "Credential Management - Revocation"
     - "Federation - Policy Alignment"
+    
 - &M1919
   type: Policy
   shortName: M-19-19
@@ -464,6 +527,10 @@
     - *OMB
   authorized-by:
     - *FITARA2017
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &A130
   type: Policy
   shortName: "OMB Circular A-130"
@@ -483,6 +550,10 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &M1513
   type: Policy
   shortName: "M-15-13"
@@ -496,6 +567,9 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2015/m-15-13.pdf"
   authored-by:
     - *OMB
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &M1916
   type: Policy
   shortName: "M-19-16"
@@ -507,6 +581,10 @@
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2019/04/M-19-16.pdf"
   authored-by:
     - *OMB
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &SPRINGERMEMO
   type: Policy
   shortName: "Springer Memo"
@@ -527,6 +605,9 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
+    
 - &PIVISSUANCESUSPENSION
   type: Policy
   shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
@@ -550,6 +631,9 @@
     - Credential Management - Generation & Issuance
     - Credential Management - Revocation
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
+    
 - &CREDSTANDARDS
   type: Policy
   shortName: "Credentialing Standards Memo 2020"
@@ -576,6 +660,9 @@
     - Identity Management
     - Credential Management
     - Access Management
+  scope:
+    - "Workforce Identity"
+    
 - &CSSCDM
   type: Policy
   shortName: "Clearance Decision-Making Guide"
@@ -594,6 +681,9 @@
   ficam-services:
     - Identity Management - Identity Proofing
     - Credential Management - Generation & Issuance
+  scope:
+    - "Workforce Identity"
+    
 - &M1903
   type: Policy
   shortName: "M-19-03"
@@ -611,6 +701,10 @@
     - Access Management - Privileged Access Management
     - Credential Management - Generation & Issuance
     - Federation - Attribute Exchange
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &A108
   type: Policy
   shortName: "OMB Circular A-108"
@@ -628,6 +722,10 @@
   ficam-services:
     - Federation
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &M2209
   type: Policy
   shortName: "M-22-09"
@@ -646,6 +744,10 @@
     - Access Management
     - Credential Management
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
+    
 - &5CFR731
   type: Policy
   shortName: "5 CFR 731"
@@ -663,9 +765,13 @@
     - Identity Management
     - Credential Management
     - Federation
+  scope:
+    - "Workforce Identity"
+    
 #
 # SECTION: GUIDANCE
 #
+
 - &SP800207
   type: Guidance
   shortName: "NIST SP 800-207"
@@ -681,6 +787,9 @@
   ficam-services:
     - Identity Management
     - Credential Management
+  scope:
+    - "Workforce Identity"
+
 - &CLOUDSECREFARCH
   type: Guidance
   shortName: "Cloud Security Architecture"
