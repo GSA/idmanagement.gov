@@ -9,26 +9,20 @@ layout: page
 {% endif %}
 
 {% if page.scope %}
-<p><b>Identity Scope:</b><br />
+<p><b>Identity Scope:</b>
 <ul>
     {% for scope in page.scope %}
-    <li>
-        <a href="{{site.baseurl}}/laws-policies-standards{{scope | datapage_url: laws-policies-standards }}">{{ scope }}</a>
-    </li>
-
+        <li><a href="{{site.baseurl}}/laws-policies-standards{{scope | datapage_url: laws-policies-standards }}">{{ scope }}</a></li>
     {% endfor %}
 </ul>
 </p>
 {% endif %}
 
 {% if page.ficam-services %}
-<p><b>FICAM Services Alignment:</b><br />
+<p><b>FICAM Services Alignment:</b>
 <ul>
     {% for category in page.ficam-services %}
-    <li>
-        <a href="{{site.baseurl}}/ficam-services{{category | datapage_url: ficam-services }}">{{ category }}</a>
-    </li>
-
+        <li><a href="{{site.baseurl}}/ficam-services{{category | datapage_url: ficam-services }}">{{ category }}</a></li>
     {% endfor %}
 </ul>
 </p>
