@@ -30,10 +30,12 @@
 
 # IDENTITY SCOPE
 - &WORK
+  type: Scope
   shortName: "Workforce Identity"
   longName: "Workforce Identity"
   description: "Law, policy, or guidance specific to how agencies manage federal government employees, contractors, mission partners, and business partner identity."
 - &PUBLIC
+  type: Scope
   shortName: "Public Identity"
   longName: "Public Identity"
   description: "Law, policy, or guidance specific to how agencies manage non-workforce identity such as citizens or non-citizens interacting with a federal government service or website."
