@@ -166,8 +166,8 @@ If this is an Identity Scope, find the elements scoped to it.
 <ul>
     {% for item in site.data.laws-policies-standards %}
     {% if item.scope | size > 0 %}
-    {% for group in item.scope %}
-    {% if group.shortName == page.shortName %}
+    {% for scope in item.scope %}
+    {% if page.shortName contains scope %}
     <li>
         <a href="{{site.baseurl}}/laws-policies-standards{{item.shortName | datapage_url: laws-policies-standards }}">{{item.shortName}}</a>
     </li>
