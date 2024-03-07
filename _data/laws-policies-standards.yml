@@ -28,6 +28,21 @@
     - "Workforce Identity"
   ficam-services:
     - "Identity Management - Identity Proofing"
+- &HSPD12
+  type: Law
+  shortName: "HSPD-12"
+  longName: "Homeland Security Presidential Directive 12"
+  published: 2004-08-27
+  description: >-
+    Directive requires the development and agency implementation of a mandatory, government-wide standard 
+    for secure and reliable forms of identification for Federal employees and contractors.
+  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
+  authored-by:
+    - *WH
+  scope:
+    - "Workforce Identity"
+  ficam-services:
+    - "Identity Management - Identity Proofing"
 - &FISMA2014
   type: Law
   shortName: "FISMA 2014"
@@ -72,7 +87,7 @@
 - &PRIVACYACT1974
   type: Law
   shortName: "Privacy Act of 1974"
-  longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a"
+  longName: "USC Title 5, Part I, Chapter 5, Subchapter II, §552a - Privacy Act of 1974"
   description: >-
     This Act protects certain federal government records pertaining to individuals. 
     In particular, the Act covers systems of records that an agency maintains and 
