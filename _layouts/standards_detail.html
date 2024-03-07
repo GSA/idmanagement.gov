@@ -9,10 +9,15 @@ layout: page
 {% endif %}
 
 {% if page.scope %}
-<p><b>SCOPE:</b><br>
+<p><b>SCOPE:</b><br />
+<ul>
     {% for scope in page.scope %}
-    {{ scope }}<br />
+    <li>
+        <a href="{{site.baseurl}}/ficam-services{{scope | datapage_url: ficam-services }}">{{ scope }}</a>
+    </li>
+
     {% endfor %}
+</ul>
 </p>
 {% endif %}
 
@@ -21,9 +26,7 @@ layout: page
 <ul>
     {% for category in page.ficam-services %}
     <li>
-        <a href="{{site.baseurl}}/ficam-services{{category | datapage_url: ficam-services }}">
-            {{ category }}
-        </a>
+        <a href="{{site.baseurl}}/ficam-services{{category | datapage_url: ficam-services }}">{{ category }}</a>
     </li>
 
     {% endfor %}
