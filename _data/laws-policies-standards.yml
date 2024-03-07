@@ -291,6 +291,7 @@
   externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
   subgroup-of:
     - *CIOCOUNCIL
+    - *OMB
 - &ICAMSC
   type: Authority
   shortName: "ICAMSC"
@@ -299,6 +300,8 @@
   externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
   subgroup-of:
     - *CISOCOUNCIL
+    - *CIOCOUNCIL
+    - *OMB
 - &PACSMODWG
   type: Authority
   shortName: "PACSmod WG"
@@ -314,6 +317,8 @@
   subgroup-of:
     - *ISC
     - *ICAMSC
+    - *CIOCOUNCIL
+    - *OMB
 - &FPKIPA
   type: Authority
   shortName: "FPKI PA"
@@ -322,15 +327,14 @@
   externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
   subgroup-of:
     - *ICAMSC
+    - *CIOCOUNCIL
+    - *CISOCOUNCIL
+    - *OMB
 - &DHS
   type: Authority
   shortName: "DHS"
   longName: "Department of Homeland Security"
-  description: >-
-    The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
-    we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
-    and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
-    Our duties are wide-ranging, and our goal is clear - keeping America safe.
+  description: "The Department of Homeland Security has a vital mission: to secure the nation from the many threats we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation and border security to emergency response, from cybersecurity analyst to chemical facility inspector. Our duties are wide-ranging, and our goal is clear - keeping America safe."
   externalURL: "https://www.dhs.gov/"
 - &CISA
   type: Authority
