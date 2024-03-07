@@ -1353,7 +1353,7 @@
   ficam-services:
     - Identity Management
     - Credential Management
-    scope:
+  scope:
     - "Workforce Identity"
     - "Public Identity"
 
