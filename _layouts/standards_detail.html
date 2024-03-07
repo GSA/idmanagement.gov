@@ -35,11 +35,11 @@ layout: page
 {% endif %}
 
 {% if page.published %}
-    {% if page.published | date: "%m%d" > 1001 %}
-        {% assign FY = page.published | date: "%Y" + 1 %}
-        {% else %}
-        {% assign FY = page.published | date: "%Y" %}
-    {% endif %}
+{% if page.published | date: "%m%d" > 1001 %}
+{% assign FY = page.published | date: "%Y" + 1 %}
+{% else %}
+{% assign FY = page.published | date: "%Y" %}
+{% endif %}
 <p><b>Publication Date:</b> {{page.published}}</p>
 <p><b>Fiscal Year:</b> {{ FY }}</p>
 {% endif %}
