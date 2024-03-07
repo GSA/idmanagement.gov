@@ -13,21 +13,22 @@
 #
 # LAWS and Executive Orders (Authorized by WH and Congress)
 #
-- &HSPD12
+- &6USC1523
   type: Law
-  shortName: "HSPD-12"
-  longName: "Homeland Security Presidential Directive 12"
-  published: 2004-08-27
+  shortName: "6 USC 1523"
+  longName: "Federal Cybersecurity Requirements"
+  published: 2017-01-06
   description: >-
-    Directive requires the development and agency implementation of a mandatory, government-wide standard 
-    for secure and reliable forms of identification for Federal employees and contractors.
-  externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
+    Directs the head of each agency to implement a single sign-on for public websites that require user authentication as developed by the General Services Administration. Additionally, implement multi-factor authentication for remote access and accounts with elevated privileges.
+  externalURL: "https://uscode.house.gov/view.xhtml?req=6+USC+1523:+Federal+cybersecurity+requirements"
   authored-by:
-    - *WH
+    - *CONGRESS
   scope:
     - "Workforce Identity"
+    - "Public Identity"
   ficam-services:
-    - "Identity Management - Identity Proofing"
+    - "Access Management - Authentication"
+    - "Access Management - Authorization"
 - &HSPD12
   type: Law
   shortName: "HSPD-12"
