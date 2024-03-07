@@ -267,3 +267,7 @@ page_gen:
     template: "services_detail"
     name: "shortName"
     directory: "ficam_services"
+  - data: "laws-policies-standards"
+    template: "scope_detail"
+    name: "scope"
+    directory: "scope"
