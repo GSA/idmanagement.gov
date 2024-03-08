@@ -12,8 +12,6 @@ pubdate: March 2024
 version: 1.0
 
 subnav:
-  - text: Introduction
-    href: '#introduction'
   - text: Why Certificate Based Authentication
     href: '#why-certificate-based-authentication'
   - text: Prerequisites
@@ -36,7 +34,6 @@ subnav:
 
 // Are logos needed here? - Office of Government-wide Policy, Office of Technology Policy, Identity and Trusted Access Division
 
-## Certificate-Based Authentication Playbook
 
 This playbook is designed to guide Identity, Credential, and Access Management program managers and Entra ID administrators through the process of planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. This configuration is often selected by agencies moving workloads to the cloud due to its compatibility with current technologies. While a similar setup exists for Entra ID joined devices, this guide focuses on hybrid joined devices. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating either a hybrid joined device or a compliant device. The hybrid joined device will guarantee the device is a device typically managed by an on-premises active directory and group policy. Microsoft Intune could also help manage these devices and device signal would be considered a compliant device, which means policies are checked against a set standard.
 
@@ -78,7 +75,7 @@ There are four major steps involved with configuring CBA:
 
 ### Step 1: Configure the certification authorities
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global Administrator.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} as a Global Administrator.
 2. Browse to **Protection** > **Show more** > **Security Center** (or **Identity Secure Score**) > **Certificate Authorities**.
 3. To upload a CA, select **Upload**:
    - Select the CA file.
@@ -88,22 +85,22 @@ There are four major steps involved with configuring CBA:
    - Select **Add**.
 4. Continue adding certificates until all root and intermediate certificates are uploaded.
 
-![Certificate Authorities](images/CBAP1.png)
+![Certificate Authorities]({{site.baseurl}}/assets/playbooks/cba/CBAP1.png)
 
 ### Step 2: Enable CBA on the tenant
 
 To enable the certificate-based authentication in the Microsoft Entra admin center, complete the following steps:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least an [Authentication Policy Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least an [Authentication Policy Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. Browse to **Protection** > **Authentication methods** > **Certificate-Based Authentication** and select Certificate-based authentication.
 
-![Enable Certificate-Based Authentication](images/CBAP2.png)
+![Enable Certificate-Based Authentication]({{site.baseurl}}/assets/playbooks/cba/CBAP2.png)
 
 3. Under **Enable and Target**, select **Enable**.
 4. Select **All users** or select **Add groups** to select specific groups.
 5. For now, set this to **Select groups** and add your target group below.
 
-![Target Group](images/CBAP3.png)
+![Target Group]({{site.baseurl}}/assets/playbooks/cba/CBAP3.png)
 
 **Note**: Once a certificate-based authentication method is enabled on the tenant, all users in the tenant will see the option to sign in with a certificate. However, only users who are enabled for certificate-based authentication will be able to authenticate using the X.509 certificate.
 
@@ -117,52 +114,52 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 1. From the screen above, select **Configure** to set up authentication binding and username binding.
 
-![Configure Binding](images/CBAP4.png)
+![Configure Binding]({{site.baseurl}}/assets/playbooks/cba/CBAP4.png)
 
 2. The protection level attribute has a default value of **Single-factor authentication**. Select **Multifactor authentication** to change the default value to MFA. This change will ensure all users authenticating to the tenant have their logon sessions stamped as X.509, Multifactor logins for the duration of their session.
 3. Select the **Low** affinity binding here.
 
 **Note**: You can also set up custom authentication binding rules. Follow the relevant Microsoft documentation to configure custom rules.
 
-![Authentication Binding Policy](images/CBAP5.png)
+![Authentication Binding Policy]({{site.baseurl}}/assets/playbooks/cba/CBAP5.png)
 
 ### Step 4: Configure username binding policy
 
 1. Create the username binding by selecting one of the X.509 certificate fields to bind with one of the user attributes. The username binding order represents the priority level of the binding. The first one has the highest priority and so on.
 
-![Username Binding](images/CBAP6.png)
+![Username Binding]({{site.baseurl}}/assets/playbooks/cba/CBAP6.png)
 
 2. For now, select **PrincipalName** as the preferred binding.
 
-![PrincipalName Binding](images/CBAP7.png)
+![PrincipalName Binding]({{site.baseurl}}/assets/playbooks/cba/CBAP7.png)
 
 3. In this next step, you are telling CBA which field on your X.509 cert matches a specific field for your user's account. So, select either the **userPrincipalName** or the **OnPremisesUserPrincipalName** field to map to and select **Save**.
 
 > **Note**: The **OnPremisesUserPrincipalName** field can often resolve mapping issues the **userPrincipalName** field can't, so review your Certificate mappings carefully to determine the best approach.
 
-![User Account Mapping](images/CBAP8.png)
+![User Account Mapping]({{site.baseurl}}/assets/playbooks/cba/CBAP8.png)
 
 **Note**: How your user's accounts are configured to determine your mapping strategy (your **CertficateUserIds** will be found under the **Authorization Info** field):
 
-![User Account Configuration](images/CBAP9.png)
+![User Account Configuration]({{site.baseurl}}/assets/playbooks/cba/CBAP9.png)
 
 When you've completed this section, your final settings should look like this:
 
-![Final Settings](images/CBAP10.png)
+![Final Settings]({{site.baseurl}}/assets/playbooks/cba/CBAP10.png)
 
 ### Step 5: Login with your certificate to test CBA
 
 1. Now login with an account you've added to your target group in Step 2 above. In this case, the user should be in the AZ.CBA-Users group to be targeted for CBA. You can use portal.azure.com as your test login location and you should see the following prompt -- you may see a different prompt if you have other authentication methods enabled.
 
-![Login Prompt](images/CBAP11.png)
+![Login Prompt]({{site.baseurl}}/assets/playbooks/cba/CBAP11.png)
 
 2. If you get a prompt to enter your password, select **Use a certificate or smart card** and select **Sign in**:
 
-![Use Certificate or Smart Card](images/CBAP12.png)
+![Use Certificate or Smart Card]({{site.baseurl}}/assets/playbooks/cba/CBAP12.png)
 
 3. Select the correct cert in the certificate picker UI and select **OK**.
 
-![Certificate Picker](images/CBAP13.png)
+![Certificate Picker]({{site.baseurl}}/assets/playbooks/cba/CBAP13.png)
 
 4. You should now be signed into the Azure portal.
 
@@ -171,4 +168,3 @@ When you've completed this section, your final settings should look like this:
 You should now make sure your Windows devices are configured as **Entra ID Hybrid Joined** and build a Conditional Access Policy to require MFA and an Entra ID Hybrid Joined device. This final step will ensure your users are logging in with agency-owned devices and with CBA. As an advanced step, you'll define an **authentication strength** policy to pair with your Conditional Access Policy and specifically require a phishing-resistant MFA authentication strength to sign in.
 
 For more information, please visit general instructions provided by Microsoft.
-```
