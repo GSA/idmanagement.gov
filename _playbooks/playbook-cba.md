@@ -32,7 +32,7 @@ subnav:
     href: '#final-steps'
 ---
 
-// Are logos needed here? - Office of Government-wide Policy, Office of Technology Policy, Identity and Trusted Access Division
+<!-- Are logos needed here? - Office of Government-wide Policy, Office of Technology Policy, Identity and Trusted Access Division -->
 
 
 This playbook is designed to guide Identity, Credential, and Access Management program managers and Entra ID administrators through the process of planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. This configuration is often selected by agencies moving workloads to the cloud due to its compatibility with current technologies. While a similar setup exists for Entra ID joined devices, this guide focuses on hybrid joined devices. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating either a hybrid joined device or a compliant device. The hybrid joined device will guarantee the device is a device typically managed by an on-premises active directory and group policy. Microsoft Intune could also help manage these devices and device signal would be considered a compliant device, which means policies are checked against a set standard.
@@ -91,7 +91,7 @@ There are four major steps involved with configuring CBA:
 
 To enable the certificate-based authentication in the Microsoft Entra admin center, complete the following steps:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least an [Authentication Policy Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} as at least an [Authentication Policy Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#authentication-policy-administrator){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. Browse to **Protection** > **Authentication methods** > **Certificate-Based Authentication** and select Certificate-based authentication.
 
 ![Enable Certificate-Based Authentication]({{site.baseurl}}/assets/playbooks/cba/CBAP2.png)
