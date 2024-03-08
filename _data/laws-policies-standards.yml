@@ -256,6 +256,8 @@
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+  subgroup-of:
+    - *WH
 - &OPM
   type: Authority
   shortName: OPM
