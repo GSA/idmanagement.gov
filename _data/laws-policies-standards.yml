@@ -262,12 +262,10 @@
   type: Authority
   shortName: OPM
   longName: "U.S. Office of Personnel Management"
-  description: >-
-    OPM works in several broad categories to lead and serve the Federal Government in enterprise human 
-    resource management by delivering policies and services to achieve a trusted effective civilian workforce.
+  description: "OPM works in several broad categories to lead and serve the Federal Government in enterprise human resource management by delivering policies and services to achieve a trusted effective civilian workforce."
 - &DNI
   type: Authority
-  shortName: DNI
+  shortName: "DNI"
   longName: "Director of National Intelligence"
   description: "Our mission is to lead intelligence integration and forge an intelligence community that delivers the most insightful intelligence possible."
 - &CIOCOUNCIL
