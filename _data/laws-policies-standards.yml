@@ -238,6 +238,14 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
+  subgroup-of:
+    - *DOC
+- &DOC
+  type: Authority
+  shortName: "DOC"
+  longName: "U.S Department of Commerce"
+  description: "Mission: To create the conditions for economic growth and opportunity for all communities."
+  externalURL: "https://www.commerce.gov"
 - &GSA
   type: Authority
   shortName: "GSA"
@@ -250,20 +258,18 @@
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+  subgroup-of:
+    - *WH
 - &OPM
   type: Authority
   shortName: OPM
   longName: "U.S. Office of Personnel Management"
-  description: >-
-    OPM works in several broad categories to lead and serve the Federal Government in enterprise human 
-    resource management by delivering policies and services to achieve a trusted effective civilian workforce.
+  description: "OPM works in several broad categories to lead and serve the Federal Government in enterprise human resource management by delivering policies and services to achieve a trusted effective civilian workforce."
 - &DNI
   type: Authority
   shortName: DNI
   longName: "Director of National Intelligence"
-  description: >-
-    Our mission is to lead intelligence integration and forge an intelligence community that delivers the most 
-    insightful intelligence possible
+  description: "Our mission is to lead intelligence integration and forge an intelligence community that delivers the most insightful intelligence possible."
 - &CIOCOUNCIL
   type: Authority
   shortName: "Federal CIO Council"
@@ -272,6 +278,8 @@
   externalURL: "https://www.cio.gov/"
   authorized-by:
     - *FISMA2014
+  subgroup-of:
+    - *OMB
 - &CISOCOUNCIL
   type: Authority
   shortName: "Federal CISO Council"
@@ -280,6 +288,7 @@
   externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
   subgroup-of:
     - *CIOCOUNCIL
+    - *OMB
 - &ICAMSC
   type: Authority
   shortName: "ICAMSC"
@@ -288,20 +297,18 @@
   externalURL: "https://community.max.gov/pages/viewpage.action?pageId=234815732"
   subgroup-of:
     - *CISOCOUNCIL
+    - *CIOCOUNCIL
+    - *OMB
 - &PACSMODWG
   type: Authority
   shortName: "PACSmod WG"
   longName: "PACS Modernization Working Group"
-  description: >-
-    The Physical Access Control System Modernization Working Group (PACSMod WG) is chartered 
-    under the direction of the Co-Chairs of the Federal Chief Information Security Officer Council 
-    (FCIOC), Identity, Credentialing and Access Management Subcommittee (ICAMSC), and the Program 
-    Director of the Department of Homeland Security (DHS), Interagency Security Committee (ISC). 
-    The purpose of the PACSMod WG is to facilitate the implementation and use of technology and 
-    processes related to modernizing enterprise PACS within the Federal Government (USG), thereby 
-    increasing security, coordination, and compliance with national-level policies and standards.
+  description: "The Physical Access Control System Modernization Working Group (PACSMod WG) is chartered under the direction of the Co-Chairs of the Federal Chief Information Security Officer Council (FCIOC), Identity, Credentialing and Access Management Subcommittee (ICAMSC), and the Program Director of the Department of Homeland Security (DHS), Interagency Security Committee (ISC). The purpose of the PACSMod WG is to facilitate the implementation and use of technology and processes related to modernizing enterprise PACS within the Federal Government (USG), thereby increasing security, coordination, and compliance with national-level policies and standards."
   subgroup-of:
+    - *ISC
     - *ICAMSC
+    - *CIOCOUNCIL
+    - *OMB
 - &FPKIPA
   type: Authority
   shortName: "FPKI PA"
@@ -310,23 +317,20 @@
   externalURL: "https://www.idmanagement.gov/docs/fpkipa-charter.pdf"
   subgroup-of:
     - *ICAMSC
+    - *CIOCOUNCIL
+    - *CISOCOUNCIL
+    - *OMB
 - &DHS
   type: Authority
   shortName: "DHS"
   longName: "Department of Homeland Security"
-  description: >-
-    The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
-    we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
-    and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
-    Our duties are wide-ranging, and our goal is clear - keeping America safe.
+  description: "The Department of Homeland Security has a vital mission: to secure the nation from the many threats we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation and border security to emergency response, from cybersecurity analyst to chemical facility inspector. Our duties are wide-ranging, and our goal is clear - keeping America safe."
   externalURL: "https://www.dhs.gov/"
 - &CISA
   type: Authority
   shortName: "CISA"
   longName: "Cybersecurity & Infrastruture Security Agency"
-  description: >-
-    CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
-    infrastructure security and resilience.
+  description: "CISA is the operational lead for federal cybersecurity and the national coordinator for critical infrastructure security and resilience."
   externalURL: "https://www.cisa.gov/"
   subgroup-of:
     - *DHS
@@ -334,9 +338,7 @@
   type: Authority
   shortName: ISC
   longName: Interagency Security Committee
-  description: >-
-    The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the 
-    nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
+  description: "The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the nonmilitary federal community supporting physical security programs that are comprehensive and risk based."
   externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
   authorized-by:
     - *EO13286
@@ -344,25 +346,19 @@
   type: Authority
   shortName: "USDS"
   longName: "United States Digital Service"
-  description: >-
-    To deliver better government services to the American people through technology and design.
+  description: "To deliver better government services to the American people through technology and design."
   subgroup-of:
     - *WH
 - &DOD
   type: Authority
   shortName: "DoD"
   longName: "Department of Defense"
-  description: >-
-    The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
+  description: "The Department of Defense provides the military forces needed to deter war and ensure our nation's security."
 - &FEDRAMP
   type: Authority
   shortName: "FedRAMP"
   longName: "Federal Risk and Automation Management Program"
-  description: >-
-    The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to 
-    provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
-    the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an 
-    emphasis on security and protection of federal information.
+  description: "The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to provide a cost-effective, risk-based approach for the adoption and use of cloud services by the federal government. FedRAMP empowers agencies to use modern cloud technologies, with an emphasis on security and protection of federal information."
   subgroup-of:
     - *GSA
     - *DHS
@@ -371,17 +367,17 @@
   type: Authority
   shortName: "NSA"
   longName: "National Security Agency"
-  description: >-
-    We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
-    national defense and secure national security systems.
+  description: "We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen national defense and secure national security systems."
+  subgroup-of:
+    - *DOD
 - &CMU
   type: Authority
-  shortName: "CMU"
-  longName: "Carnegie Mellon University"
+  shortName: "CMU SEI"
+  longName: "Carnegie Mellon University Software Engineering Institute"
+  description: "CERT experts are a diverse group of researchers, software engineers, security analysts, and digital intelligence specialists working together to research security vulnerabilities in software products, contribute to long-term changes in networked systems, and develop cutting-edge information and training to improve the practice of cybersecurity."
   externalURL: "https://www.cmu.edu/"
-#
+
 # POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
-#
 - &M0524
   type: Policy
   shortName: "M-05-24"
