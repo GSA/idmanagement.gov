@@ -105,6 +105,14 @@
   header: "/assets/playbooks/headers/playbook_05.png"
   target: _self
 
+- title: Certificate-Based Authentication Playbook
+  type: Webpage
+  pubdate: 2024-03
+  description: This playbook helps implement a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. 
+  url: "/playbooks/cba/"
+  header: "/assets/playbooks/headers/playbook_02.png"
+  target: _self
+  
 # Removed because it has a status of archived
 # - title: Federal Identity, Credential, and Access Management Roadmap Version 2.0 (Archived)
 #   type: PDF
