@@ -238,6 +238,8 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
+  subgroup-of:
+    - *DOC
 - &DOC
   type: Authority
   shortName: "DOC"
@@ -256,6 +258,8 @@
   longName: "Office of Management and Budget"
   description: "The Office of Management and Budget oversees the implementation of the President's vision across the Executive Branch."
   externalURL: "https://www.whitehouse.gov/omb/"
+  subgroup-of:
+    - *WH
 - &OPM
   type: Authority
   shortName: OPM
@@ -358,12 +362,11 @@
   type: Authority
   shortName: "DoD"
   longName: "Department of Defense"
-  description: >-
-    The Department of Defense provides the military forces needed to deter war and ensure our nation's security.
+  description: "The Department of Defense provides the military forces needed to deter war and ensure our nation's security."
 - &FEDRAMP
   type: Authority
   shortName: "FedRAMP"
-  longName: "Federal Risk and Automation Management Program"
+  longName: "Federal Risk and Authorization Management Program"
   description: >-
     The Federal Risk and Authorization Management Program (FedRAMP) was established in 2011 to 
     provide a cost-effective, risk-based approach for the adoption and use of cloud services by 
@@ -380,6 +383,8 @@
   description: >-
     We leverage our advantages in technology and cybersecurity consistent with our authorities to strengthen 
     national defense and secure national security systems.
+  subgroup-of:
+    - *DOD
 - &CMU
   type: Authority
   shortName: "CMU"
