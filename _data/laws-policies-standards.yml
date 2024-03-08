@@ -238,8 +238,6 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
-  subgroup-of:
-    - *DOC
 - &DOC
   type: Authority
   shortName: "DOC"
