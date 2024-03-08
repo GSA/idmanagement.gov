@@ -32,15 +32,13 @@
 - &WORK
   type: Scope
   shortName: "Workforce Identity"
-  description: "Management of federal government employees, contractors, mission partners, and business partner identity."
+  description: "Management of workforce identities such as federal government employees, contractors, mission partners, and business partners that help an agency deliver its mission."
 - &PUBLIC
   type: Scope
   shortName: "Public Identity"
-  description: "Management of non-workforce identity such as citizens or non-citizens interacting with a federal government service or website."
+  description: "Management of non-workforce identities such as citizens or non-citizens interacting with a federal government service or website."
   
-#
 # LAWS and Executive Orders (Authorized by WH and Congress)
-#
 - &6USC1523
   type: Law
   shortName: "6 USC 1523"
