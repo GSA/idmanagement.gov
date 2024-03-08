@@ -390,7 +390,8 @@
   published: 2023-04-17
   externalURL: "https://www.idmanagement.gov/docs/fpki-x509-cert-policy-fbca.pdf"
   scope:
-    - Workforce Identity
+    - "Workforce Identity"
+    - "Public Identity"
   ficam-services:
     - "Identity Management - Identity Proofing"
     - "Credential Management - Generation & Issuance"
@@ -424,8 +425,8 @@
   authored-by:
     - *OMB
   scope:
-    - Workforce Identity
-    - Public Identity
+    - "Workforce Identity"
+    - "Public Identity"
   ficam-services:
     - "Identity Management - Identity Proofing"
     - "Credential Management - Generation & Issuance"
@@ -466,6 +467,9 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &M1513
   type: Policy
   shortName: "M-15-13"
@@ -510,6 +514,8 @@
     - Credential Management - Generation & Issuance
     - Access Management - Authentication
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
 - &PIVISSUANCESUSPENSION
   type: Policy
   shortName: "Guidance on Executive Branch-Wide Requirements for Issuing Personal Identity Verification (PIV) Credentials and Suspension Mechanism"
@@ -533,6 +539,8 @@
     - Credential Management - Generation & Issuance
     - Credential Management - Revocation
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
 - &CREDSTANDARDS
   type: Policy
   shortName: "Credentialing Standards Memo 2020"
@@ -559,6 +567,8 @@
     - Identity Management
     - Credential Management
     - Access Management
+  scope:
+    - "Workforce Identity"
 - &CSSCDM
   type: Policy
   shortName: "Clearance Decision-Making Guide"
@@ -577,6 +587,8 @@
   ficam-services:
     - Identity Management - Identity Proofing
     - Credential Management - Generation & Issuance
+  scope:
+    - "Workforce Identity"
 - &M1903
   type: Policy
   shortName: "M-19-03"
@@ -629,6 +641,9 @@
     - Access Management
     - Credential Management
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &5CFR731
   type: Policy
   shortName: "5 CFR 731"
@@ -646,6 +661,8 @@
     - Identity Management
     - Credential Management
     - Federation
+  scope:
+    - "Workforce Identity"
 #
 # SECTION: GUIDANCE
 #
@@ -664,6 +681,9 @@
   ficam-services:
     - Identity Management
     - Credential Management
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &CLOUDSECREFARCH
   type: Guidance
   shortName: "Cloud Security Architecture"
@@ -681,6 +701,9 @@
     - *FEDRAMP
   authorized-by:
     - *EO14028
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &ZEROTRUSTMATURITY
   type: Guidance
   shortName: "Zero Trust Maturity Model"
@@ -695,6 +718,9 @@
     - *CISA
   authorized-by:
     - *EO14028
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &SSOPLAYBOOK
   type: Guidance
   shortName: "SSO Playbook"
@@ -709,6 +735,8 @@
     - *GSA
   ficam-services:
     - Federation
+  scope:
+    - "Workforce Identity"
 - &ICAMGOVFRAMEWORK
   type: Guidance
   shortName: "ICAM Governance Framework"
@@ -723,6 +751,8 @@
     - *ICAMSC
   ficam-services:
     - Governance
+  scope:
+    - "Workforce Identity"
 - &NISTIR8149
   type: Guidance
   shortName: "NISTIR 8149"
@@ -736,19 +766,22 @@
     - *NIST
   ficam-services:
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &NISTIR8335
   type: Guidance
   shortName: "NISTIR 8335"
   longName: "NIST Interagency Report 8335: Identity as a Service for Public Safety Organizations"
-  description: >-
-    This report informs [Public Safety Organizations] about [Identity as a Service] and how they can 
-    benefit from it.
+  description: "This report informs [Public Safety Organizations] about [Identity as a Service] and how they can benefit from it."
   published: 2021-06-16
   externalURL: "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8335-draft.pdf"
   authored-by:
     - *NIST
   ficam-services:
     - Access Management - Authentication
+  scope:
+    - "Workforce Identity"
 - &SP180013
   type: Guidance
   shortName: "NIST SP 1800-13"
@@ -763,13 +796,13 @@
   ficam-services:
     - Identity Management
     - Credential Management
+  scope:
+    - "Workforce Identity"
 - &CLOUDVULN
   type: Guidance
   shortName: "Mitigating Cloud Vulnerabilities"
   longName: "National Security Agency - Cybersecurity Information: Mitigating Cloud Vulnerabilities"
-  description: >-
-    This document contains specific recommendations for improving ICAM practices to reduce cloud 
-    vulnerabilities.
+  description: "This document contains specific recommendations for improving ICAM practices to reduce cloud vulnerabilities."
   published: 2020-01-22
   externalURL: "https://media.defense.gov/2020/Jan/22/2002237484/-1/-1/0/CSI-MITIGATING-CLOUD-VULNERABILITIES_20200121.PDF"
   authored-by:
@@ -777,6 +810,8 @@
   ficam-services:
     - Access Management - Authentication
     - Access Management - Authorization
+  scope:
+    - "Workforce Identity"
 - &NISTIR7966
   type: Guidance
   shortName: "NISTIR 7966"
@@ -793,6 +828,8 @@
     - Credential Management - Maintenance
     - Access Management - Privileged Access Management
     - Access Management - Authentication
+  scope:
+    - "Workforce Identity"
 - &GUIDEINSIDERTHREAT
   type: Guidance
   shortName: "Common Sense Guide to Mitigating Insider Threats, Sixth Edition"
@@ -811,6 +848,8 @@
     - *CMU
   ficam-services:
     - Access Management - Privileged Access Management
+  scope:
+    - "Workforce Identity"
 - &SOFAB
   type: Guidance
   shortName: "SOFA-B"
@@ -824,6 +863,9 @@
     - *NIST
   ficam-services:
     - Credential Management
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &TRANSITIONMFA
   type: Guidance
   shortName: "Transition to Multi-factor Authentication"
@@ -842,13 +884,15 @@
     - *NSA
   ficam-services:
     - Access Management - Authentication
+  scope:
+    - "Workforce Identity"
 - &FICAMARCH
   type: Guidance
   shortName: "FICAM Architecture"
   longName: "Federal Identity, Credential, and Access Management (FICAM) Architecture"
   description: "This version of the FICAM Architecture encompasses the enterprise ICAM policies, technologies, and system approaches for government employees, contractors, and authorized partners."
   published: 2021-01-06
-  externalURL: "https://playbooks.idmanagement.gov/arch/"
+  externalURL: "https://idmanagement.gov/arch/"
   authored-by:
     - *ICAMSC
   ficam-services:
@@ -857,62 +901,60 @@
     - Credential Management - Revocation
     - Access Management - Authentication
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
 - &ICAMPMPLAYBOOK
   type: Guidance
-  shortName: "ICAM PM Playbook"
-  longName: "Identity, Credential, and Access Management Program Management Playbook"
-  description: "The ICAM Program Management Playbook explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
+  shortName: "ICAM PM 101"
+  longName: "Identity, Credential, and Access Management Program Management 101"
+  description: "The ICAM Program Management 101 explains how to plan and implement an Identity, Credential, and Access Management (ICAM) Program, as outlined in the Federal Identity, Credential, and Access Management (FICAM) Architecture."
   published: 2022-06-10
-  externalURL: "https://playbooks.idmanagement.gov/pm/"
+  externalURL: "https://www.idmanagement.gov/university/pm/"
   authored-by:
     - *ICAMSC
   ficam-services:
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
 - &FPKIGUIDE
   type: Guidance
-  shortName: "FPKI Guide"
-  longName: "Federal Public Key Infrastructure Guide"
-  description: "This guide describes the structure, purpose, and current operational status of the FPKI."
-  externalURL: "https://playbooks.idmanagement.gov/fpki/"
+  shortName: "FPKI 101"
+  longName: "Federal Public Key Infrastructure 101"
+  description: "This FPKI 101 describes the structure, purpose, and current operational status of the FPKI."
+  externalURL: "https://www.idmanagement.gov/university/fpki/"
   authored-by:
     - *ICAMSC
   ficam-services:
     - Credential Management
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &PACSGUIDE
   type: Guidance
-  shortName: "PACS Guide"
-  longName: "Physical Access Control System Guide"
+  shortName: "PACS 101"
+  longName: "Physical Access Control System 101"
   description: >-
-    The Physical Access Control System (PACS) Guides will help you understand concepts related 
+    The Physical Access Control System (PACS) 101 will help you understand concepts related 
     to Federal Identity, Credential, and Access Management-compliant PACSs.
-  externalURL: "https://playbooks.idmanagement.gov/pacs/"
+  externalURL: "https://www.idmanagement.gov/university/pacs/"
   authored-by:
     - *ICAMSC
   ficam-services:
     - Access Management
+  scope:
+    - "Workforce Identity"
 - &PIVGUIDE
   type: Guidance
-  shortName: "PIV Guides"
-  longName: "Personal Identity Verification Guides"
-  description: >-
-    These Personal Identity Verification (PIV) Guides are intended to help you implement common 
-    PIV configurations at your organization. The guides focus on using PIV credentials for logical 
-    access such as authenticating to networks or applications or digitally signing and encrypting.
-  externalURL: "https://playbooks.idmanagement.gov/piv/"
+  shortName: "PIV 101"
+  longName: "Personal Identity Verification 101"
+  description: "This Personal Identity Verification (PIV) 101 is intended to help you understand the purpose and uses of a PIV credential at your organization."
+  externalURL: "https://www.idmanagement.gov/university/piv/"
   authored-by:
     - *ICAMSC
   ficam-services:
     - Access Management - Authentication
-- &PLAYBOOKS
-  type: Guidance
-  shortName: "FICAM Playbooks"
-  longName: "FICAM Playbooks"
-  description: >-
-    A playbook is a comprehensive guide on a technical topic, describing both overarching strategy 
-    and tactical approaches. These playbooks cover a variety of FICAM relevant subjects.
-  externalURL: "https://playbooks.idmanagement.gov/playbooks/"
-  authored-by:
-    - *ICAMSC
+  scope:
+    - "Workforce Identity"
 - &FBCAPROF
   type: Guidance
   shortName: "FBCA Profiles"
@@ -923,6 +965,9 @@
   published: 2022-10-18
   authored-by:
     - *FPKIPA
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &COMMONPROF
   type: Guidance
   shortName: "Common Profiles"
@@ -935,6 +980,8 @@
   published: 2022-09-30
   authored-by:
     - *FPKIPA
+  scope:
+    - "Workforce Identity"
 - &IAMROADMAP
   type: Guidance
   shortName: "NIST IAM Roadmap"
@@ -951,6 +998,9 @@
     - Credential Management - Generation & Issuance
     - Credential Management - Revocation
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &SP80063
   type: Guidance
   shortName: "NIST SP 800-63"
@@ -971,10 +1021,9 @@
     - *FISMA2014
     - *A130
   ficam-services:
-    - Identity Management - Identity Proofing
-    - Credential Management
-    - Federation
     - Governance
+  scope:
+    - "Public Identity"
 - &SP80063A
   type: Guidance
   shortName: "NIST SP 800-63A"
@@ -995,7 +1044,8 @@
     - *A130
   ficam-services:
     - Identity Management
-    - Credential Management
+  scope:
+    - "Public Identity"
 - &SP80063B
   type: Guidance
   shortName: "NIST SP 800-63B"
@@ -1016,6 +1066,9 @@
     - *A130
   ficam-services:
     - Access Management - Authentication
+    - Credential Management
+  scope:
+    - "Public Identity"
 - &SP80063C
   type: Guidance
   shortName: "NIST SP 800-63C"
@@ -1036,6 +1089,8 @@
     - *A130
   ficam-services:
     - Federation
+  scope:
+    - "Public Identity"
 - &FEDRAMPDIDREQS
   type: Guidance
   shortName: "FedRamp Digital Identity Requirements"
@@ -1051,7 +1106,9 @@
   subspec-of:
     - *SP80063
   ficam-services:
-    - Identity Management
+    - Governance
+  scope:
+    - "Public Identity"
 - &SP800116
   type: Guidance
   shortName: "NIST SP 800-116"
@@ -1068,6 +1125,8 @@
     - Credential Management
     - Access Management
     - Governance
+  scope:
+    - "Workforce Identity"
 - &PIVPRIV
   type: Guidance
   shortName: "PIV Privileged User Guide"
@@ -1086,6 +1145,8 @@
     - Access Management - Privileged Access Management
     - Credential Management
     - Identity Management
+  scope:
+    - "Workforce Identity"
 - &SP800205
   type: Guidance
   shortName: "NIST SP 800-205"
@@ -1101,6 +1162,8 @@
     - *FISMA2014
   ficam-services:
     - Access Management
+  scope:
+    - "Workforce Identity"
 - &SP80053
   type: Guidance
   shortName: "NIST SP 800-53"
@@ -1117,6 +1180,9 @@
     - *FISMA2014
   ficam-services:
     - Identity Management
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &SP80053A
   type: Guidance
   shortName: "NIST SP 800-53A"
@@ -1131,6 +1197,9 @@
     - *NIST
   authorized-by:
     - *FISMA2014
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &SP800162
   type: Guidance
   shortName: "NIST SP 800-162"
@@ -1148,6 +1217,8 @@
     - *FISMA2014
   ficam-services:
     - Access Management
+  scope:
+    - "Workforce Identity"
 - &SP800122
   type: Guidance
   shortName: "NIST SP 800-122"
@@ -1167,6 +1238,9 @@
   ficam-services:
     - Identity Management
     - Credential Management
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &NISTRMF
   type: Guidance
   shortName: "NIST RMF"
@@ -1258,6 +1332,8 @@
   ficam-services:
     - Access Management
     - Credential Management
+  scope:
+    - "Workforce Identity"
 - &HTTPSGUIDE
   type: Guidance
   shortName: HTTPS Compliance Guide
@@ -1284,6 +1360,8 @@
   externalURL: "https://www.idmanagement.gov/docs/pacs-piv-epacs.pdf"
   authored-by:
     - *ICAMSC
+  scope:
+    - "Workforce Identity"
 - &RISKMANAGEMENTFACILITIES
   type: Guidance
   shortName: "Risk Management Process for Federal Facilities"
@@ -1301,6 +1379,8 @@
     - *EO13286
   ficam-services:
     - Access Management
+  scope:
+    - "Workforce Identity"
 - &80053PACSOVERLAY
   type: Guidance
   shortName: "ePACS 800-53 Overlay"
@@ -1321,6 +1401,8 @@
     - *PACSMODWG
   authorized-by:
     - *M1917
+  scope:
+    - "Workforce Identity"
 - &80053FPKIOVERLAY
   type: Guidance
   shortName: "FPKI 800-53 Overlay"
@@ -1333,6 +1415,8 @@
   externalURL: "https://www.idmanagement.gov/docs/fpki-overlay-sp-800-53.pdf"
   authored-by:
     - *FPKIPA
+  scope:
+    - "Workforce Identity"
 - &FIPS201
   type: Guidance
   shortName: "FIPS 201"
@@ -1369,6 +1453,8 @@
   ficam-services:
     - Identity Management
     - Governance - Identity Governance
+  scope:
+    - "Workforce Identity"
 - &SP80096
   type: Guidance
   shortName: "NIST SP 800-96"
@@ -1383,6 +1469,8 @@
   ficam-services:
     - Identity Management
     - Governance - Identity Governance
+  scope:
+    - "Workforce Identity"
 - &SP80073
   type: Guidance
   shortName: "NIST SP 800-73"
@@ -1398,6 +1486,8 @@
     - Identity Management - Maintenance
     - Governance - Identity Governance
     - Federation - Attribute Exchange
+  scope:
+    - "Workforce Identity"
 - &SP80079
   type: Guidance
   shortName: "NIST SP 800-79"
@@ -1411,6 +1501,8 @@
     - *FIPS201
   ficam-services:
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
 - &SP80085
   type: Guidance
   shortName: "NIST SP 800-85"
@@ -1426,6 +1518,8 @@
     - Governance - Identity Governance
     - Federation - Policy Alignment
     - Identity Management
+  scope:
+    - "Workforce Identity"
 - &SP800157
   type: Guidance
   shortName: "NIST SP 800-157"
@@ -1442,6 +1536,8 @@
     - Credential Management - Generation & Issuance
     - Credential Management - Revocation
     - Federation - Policy Alignment
+  scope:
+    - "Workforce Identity"
 - &SP80076
   type: Guidance
   shortName: "NIST SP 800-76"
@@ -1457,6 +1553,8 @@
     - Identity Management - Maintenance
     - Governance - Identity Governance
     - Federation - Attribute Exchange
+  scope:
+    - "Workforce Identity"
 - &SP80078
   type: Guidance
   shortName: "NIST SP 800-78"
@@ -1474,6 +1572,8 @@
     - Identity Management - Maintenance
     - Governance - Identity Governance
     - Federation - Attribute Exchange
+  scope:
+    - "Workforce Identity"
 - &ICAMACQUISITION
   type: Guidance
   shortName: "ICAM Acquisition Guide"
@@ -1486,6 +1586,8 @@
   externalURL: "https://www.dhs.gov/sites/default/files/publications/icam_acquisition_guidance_final_version_-_092019.pdf"
   authored-by:
     - *DHS
+  scope:
+    - "Workforce Identity"
 - &NISTIR8344
   type: Guidance
   shortName: "NISTIR 8344"
@@ -1501,6 +1603,8 @@
     - *NIST
   ficam-services:
     - Access Management - Authentication
+  scope:
+    - "Workforce Identity"
 - &SUITABILITYFAQ
   type: Guidance
   shortName: "HSPD-12/PIV Suspension and Revocation FAQ"
@@ -1518,6 +1622,8 @@
     - *CREDSTANDARDS
   ficam-services:
     - Identity Management - Deactivation
+  scope:
+    - "Workforce Identity"
 - &SELECTINGMFA
   type: Guidance
   shortName: "Selecting Secure MFA"
@@ -1539,6 +1645,8 @@
     - *SP80063
   ficam-services:
     - Access Management - Authentication
+  scope:
+    - "Workforce Identity"
 - &PACSBESTPRACTICES
   type: Guidance
   shortName: "Best Practices for Planning and Managing Physical Security Resources"
@@ -1552,6 +1660,8 @@
   externalURL: "https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf"
   authored-by:
     - *ISC
+  scope:
+    - "Workforce Identity"
 - &PACSRFP
   type: Guidance
   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
@@ -1564,6 +1674,8 @@
     - *GSA
   authorized-by:
     - *M1917
+  scope:
+    - "Workforce Identity"
 - &FACILITYACCESSCONTROL
   type: Guidance
   shortName: "FACILITY ACCESS CONTROL"
@@ -1578,16 +1690,20 @@
   ficam-services:
     - Access Management - Authentication
     - Access Management - Authorization
+  scope:
+    - "Workforce Identity"
 - &APL
   type: Guidance
-  shortName: "FICAM APL"
-  longName: "FICAM Approved Products List"
+  shortName: "FIPS201 APL"
+  longName: "FIPS201 Approved Products List"
   description: >-
     The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
-  externalURL: "https://www.idmanagement.gov/buy/#products"
+  externalURL: "https://www.idmanagement.gov/fips201/"
   authored-by:
     - *GSA
   authorized-by:
     - *FIPS201
   ficam-services:
     - Governance
+  scope:
+    - "Workforce Identity"
