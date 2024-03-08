@@ -238,6 +238,12 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
+- &DOC
+  type: Authority
+  shortName: "DOC"
+  longName: "U.S Department of Commerce"
+  description: "Mission: To create the conditions for economic growth and opportunity for all communities."
+  externalURL: "https://www.commerce.gov"
 - &GSA
   type: Authority
   shortName: "GSA"
