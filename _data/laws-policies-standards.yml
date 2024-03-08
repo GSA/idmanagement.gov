@@ -238,8 +238,6 @@
   longName: "National Institute of Standards and Technology"
   description: "Mission: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life."
   externalURL: "https://www.nist.gov"
-  subgroup-of:
-    - *DOC
 - &DOC
   type: Authority
   shortName: "DOC"
@@ -274,7 +272,7 @@
     insightful intelligence possible
 - &CIOCOUNCIL
   type: Authority
-  shortName: "Federal CIO Council"
+  shortName: "CIOC"
   longName: "Federal CIO Council"
   description: "The Federal CIO Council is the principal interagency forum to improve agency practices related to the design, acquisition, development, modernization, sustainment, use, sharing, and performance of Federal Government information technology (IT)."
   externalURL: "https://www.cio.gov/"
@@ -282,7 +280,7 @@
     - *FISMA2014
 - &CISOCOUNCIL
   type: Authority
-  shortName: "Federal CISO Council"
+  shortName: "CISOC"
   longName: "Federal CISO Council"
   description: "The Federal Chief Information Security Officer (CISO) Council is the primary body for inter-agency CISO collaboration and communication. The Council is led by the Federal CISO, who works in the White House Office of Management and Budget (OMB), and a co-chair who's a member of the Council, elected to serve in that role."
   externalURL: "https://www.cio.gov/about/members-and-leadership/ciso-council/"
