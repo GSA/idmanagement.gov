@@ -1704,3 +1704,18 @@
     - Governance
   scope:
     - "Workforce Identity"
+- &M2104
+  type: Policy
+  shortName: "M-21-04"
+  longName: "OMB Memo 21-04: Modernizing Access to and Consent for Disclosure of Records Subject to the Privacy Act"
+  description: "This Memorandum provides guidance for Federal agencies to modernize the processes by which individuals may request access to, and consent to the disclosure of, records protected under the Privacy Act of 1974. As required by the Creating Advanced Streamlined Electronic Services for Constituents Act of 2019 ('CASES Act'), this guidance outlines the responsibilities of agencies for accepting access and consent forms provided in a digital format from individuals who are properly identity-proofed and authenticated."
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2020/11/M-21-04.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *PRIVACYACT1974
+  ficam-services:
+    - "Identity Management - Identity Proofing"
+    - "Access Management - Authentication"
+  scope:
+    - "Public Identity"
