@@ -53,14 +53,13 @@
     - "Public Identity"
   ficam-services:
     - "Access Management - Authentication"
-    - "Access Management - Authorization"
+    - Federation
 - &HSPD12
   type: Law
   shortName: "HSPD-12"
   longName: "Homeland Security Presidential Directive 12"
   published: 2004-08-27
-  description: >-
-    Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors.
+  description: "Directive requires the development and agency implementation of a mandatory, government-wide standard for secure and reliable forms of identification for Federal employees and contractors."
   externalURL: "https://www.opm.gov/suitability/suitability-executive-agent/policy/final-credentialing-standards.pdf"
   authored-by:
     - *WH
@@ -81,9 +80,6 @@
     - "Governance - Identity Governance"
   authored-by:
     - *CONGRESS
-  scope:
-    - "Workforce Identity"
-    - "Public Identity"
 - &FITARA2017
   type: Law
   shortName: "FITARA Enhancement Act of 2017"
@@ -96,16 +92,13 @@
   externalURL: "https://www.congress.gov/bill/115th-congress/house-bill/3243/text"
   authored-by:
     - *CONGRESS
-  scope:
-    - "Workforce Identity"
-    - "Public Identity"
 - &EO13467
   type: Law
   shortName: "E.O. 13467"
   longName: "Executive Order 13467: Reforming Processes Related to Suitability for Government Employment, Fitness for Contractor Employees, and Eligibility for Access to Classified National Security Information"
   description: >-
     This Executive Order mandates a common background check process across the civilian, unclassified 
-    federal government, leading to acceptance of PIV cards across agency boundaries.
+    the federal government, leading to the acceptance of PIV cards across agency boundaries.
   published: 2008-06-30
   externalURL: "https://www.federalregister.gov/documents/2008/07/02/08-1409/reforming-processes-related-to-suitability-for-government-employment-fitness-for-contractor"
   authored-by:
@@ -171,9 +164,6 @@
     - *CONGRESS
   ficam-services:
     - Governance
-  scope:
-    - "Workforce Identity"
-    - "Public Identity"
 - &EO13681
   type: Law
   shortName: "E.O. 13681"
@@ -189,6 +179,8 @@
     - Identity Management
     - Federation
     - Governance
+  scope:
+    - "Public Identity"
 - &EO13556
   type: Law
   shortName: E.O. 13556
@@ -204,6 +196,9 @@
   ficam-services:
     - Federation
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 - &EO13286
   type: Law
   shortName: E.O. 13286
@@ -216,6 +211,8 @@
   published: 2003-05-03
   authored-by:
     - *WH
+  scope:
+    - "Workforce Identity"
 - &EO14028
   type: Law
   shortName: "E.O. 14028"
@@ -229,6 +226,9 @@
     - *WH
   ficam-services:
     - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
 #
 # Secondary Authorities - established by a Law or Executive Order
 #
