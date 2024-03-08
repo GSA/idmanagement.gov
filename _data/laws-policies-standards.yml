@@ -385,9 +385,10 @@
     - *DOD
 - &CMU
   type: Authority
-  shortName: "CMU"
-  longName: "Carnegie Mellon University"
-  externalURL: "https://www.cmu.edu/"
+  shortName: "CMU SEI"
+  longName: "Carnegie Mellon University Software Engineering Institute"
+  description: "CERT experts are a diverse group of researchers, software engineers, security analysts, and digital intelligence specialists working together to research security vulnerabilities in software products, contribute to long-term changes in networked systems, and develop cutting-edge information and training to improve the practice of cybersecurity."
+  externalURL: "https://www.sei.cmu.edu/about/divisions/cert/"
 
 # POLICIES - Directives issued by the executive branch, excluding the president, to the executive branch
 - &M0524
