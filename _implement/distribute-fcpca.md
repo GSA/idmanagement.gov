@@ -990,10 +990,10 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
-| Validity | November 19, 2020 to November 5, 2030  |
-| Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
-| SHA-1 Thumbprint | 80f4731a60fd5f2eb0468d0629310daa50ad210d |
-| SHA-256 Thumbprint | 70200179049bdc8cbe94b4880730609489f324f2a770477f7c1859401e644c72 |
+| Validity | February 1, 2024 to November 5, 2030  |
+| Serial Number | 2119cb5014c8049bcdb3d901c105182afdaf9e08 |
+| SHA-1 Thumbprint | e4776896b9a21e65b86d07034d0e231c0bced192 |
+| SHA-256 Thumbprint | 222f8115d0c91fdc6342276961bd81092f71b3a99ae30915cb5cea8576dd7f5a |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/WidePoint_ORC_SSP_5.cer)|
 
 #### Issued to: WidePoint SSP Intermediate CA
