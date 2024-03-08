@@ -627,9 +627,7 @@
   type: Policy
   shortName: "M-22-09"
   longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principles"
-  description: >-
-    This strategy places significant emphasis on stronger enterprise identity and access controls, 
-    including multi-factor authentication (MFA).
+  description: "This strategy places significant emphasis on stronger enterprise identity and access controls, including multi-factor authentication (MFA)."
   published: 2022-01-26
   externalURL: "https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
   authored-by:
@@ -1696,8 +1694,7 @@
   type: Guidance
   shortName: "FIPS201 APL"
   longName: "FIPS201 Approved Products List"
-  description: >-
-    The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards.
+  description: "The Approved Products List (APL) contains the official list of products tested for conformance to PIV Standards."
   externalURL: "https://www.idmanagement.gov/fips201/"
   authored-by:
     - *GSA
@@ -1707,3 +1704,51 @@
     - Governance
   scope:
     - "Workforce Identity"
+- &M2104
+  type: Policy
+  shortName: "M-21-04"
+  longName: "OMB Memo 21-04: Modernizing Access to and Consent for Disclosure of Records Subject to the Privacy Act"
+  description: "This Memorandum provides guidance for Federal agencies to modernize the processes by which individuals may request access to, and consent to the disclosure of, records protected under the Privacy Act of 1974. As required by the Creating Advanced Streamlined Electronic Services for Constituents Act of 2019 ("CASES Act"),2 this guidance outlines the responsibilities of agencies for accepting access and consent forms provided in a digital format from individuals who are properly identity-proofed and authenticated. 
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2020/11/M-21-04.pdf"
+  authored-by:
+    - *OMB
+  authorized-by:
+    - *PRIVACYACT1974
+  ficam-services:
+    - "Identity Management - Identity Proofing"
+    - "Access Management - Authentication"
+  scope:
+    - "Public Identity"
+- &CLOUDPLAYBOOK
+  type: Guidance
+  shortName: "Cloud Identity Playbook"
+  longName: "Cloud Identity Playbook"
+  description: "This Cloud Identity Playbook is a practical guide to assist federal agencies as they start to or further expand the use of workforce Identity, Credential, and Access Management (ICAM) services in a cloud operating model."
+  published: 2022-12-29
+  externalURL: "https://playbooks.idmanagement.gov/playbooks/cloud/"
+  authored-by:
+    - *ICAMSC
+    - *GSA
+  ficam-services:
+    - Federation
+    - Identity Management
+    - Credential Management
+    - Access Management
+    - Governance
+  scope:
+    - "Workforce Identity"
+- &DIRAPLAYBOOK
+  type: Guidance
+  shortName: "DIRA Playbook"
+  longName: "Digital Identity Risk Assessment Playbook"
+  description: "This Digital Identity Risk Assessment playbook helps federal agency Chief Information Officer (CIO) and Chief Information Security Officer (CISO) teams and business application owners to update and maintain consistent processes; determine whether an agency application requires a DIRA; integrate DIRA into agency Risk Management Framework (RMF) processes; and learn practices to implement DIRA processes."
+  published: 2022-12-29
+  externalURL: "https://playbooks.idmanagement.gov/playbooks/dira/"
+  authored-by:
+    - *ICAMSC
+    - *GSA
+  ficam-services:
+    - Governance
+  scope:
+    - "Workforce Identity"
+    - "Public Identity"
