@@ -322,19 +322,13 @@
   type: Authority
   shortName: "DHS"
   longName: "Department of Homeland Security"
-  description: >-
-    The Department of Homeland Security has a vital mission: to secure the nation from the many threats 
-    we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation 
-    and border security to emergency response, from cybersecurity analyst to chemical facility inspector. 
-    Our duties are wide-ranging, and our goal is clear - keeping America safe.
+  description: "To secure the nation from the many threats we face. This requires the hard work of more than 260,000 employees in jobs that range from aviation and border security to emergency response, from cybersecurity analyst to chemical facility inspector. Our duties are wide-ranging, and our goal is clear - keeping America safe."
   externalURL: "https://www.dhs.gov/"
 - &CISA
   type: Authority
   shortName: "CISA"
   longName: "Cybersecurity & Infrastruture Security Agency"
-  description: >-
-    CISA is the operational lead for federal cybersecurity and the national coordinator for critical 
-    infrastructure security and resilience.
+  description: "CISA is the operational lead for federal cybersecurity and the national coordinator for critical infrastructure security and resilience."
   externalURL: "https://www.cisa.gov/"
   subgroup-of:
     - *DHS
@@ -342,9 +336,7 @@
   type: Authority
   shortName: ISC
   longName: Interagency Security Committee
-  description: >-
-    The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the 
-    nonmilitary federal community supporting physical security programs that are comprehensive and risk based.
+  description: "The Interagency Security Committee (ISC) is a collaborative organization that provides leadership to the nonmilitary federal community supporting physical security programs that are comprehensive and risk based."
   externalURL: "https://www.cisa.gov/resources-tools/groups/interagency-security-committee-isc"
   authorized-by:
     - *EO13286
@@ -352,8 +344,7 @@
   type: Authority
   shortName: "USDS"
   longName: "United States Digital Service"
-  description: >-
-    To deliver better government services to the American people through technology and design.
+  description: "To deliver better government services to the American people through technology and design."
   subgroup-of:
     - *WH
 - &DOD
