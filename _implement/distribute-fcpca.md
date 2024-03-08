@@ -871,7 +871,6 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
 - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
 - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
-- [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 - [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca)
 
@@ -973,17 +972,6 @@ The following certificates are published in the Federal Common Policy CA certifi
 | SHA-1 Thumbprint | b2167fd38ff47bb910d8dcc32fcc3b7b63a09ff7 |
 | SHA-256 Thumbprint | 226508d2a1c926a7092218e743ccd01bab8273291feef66941691592fa7c12b8 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Verizon_SSP_CA_A2.cer)|
-
-#### Issued to: ORC SSP 4
-
-| Certificate Attribute | Value |
-| :--------  | :-------- |
-| Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
-| Validity | November 18, 2020 to January 21, 2024 |
-| Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
-| SHA-1 Thumbprint | 3e6610b03daca9fa07e1093b60ccb8927c42d83b  |
-| SHA-256 Thumbprint | 7cd7f21d04beb99d9f833be8697138e3ad4e11313897ee573c066132d21ab5f8 |
-| Download Location | Click [here]({{site.baseurl}}/implement/certs/ORC_SSP_4.cer)|
 
 #### Issued to: WidePoint ORC SSP CA 5
 
