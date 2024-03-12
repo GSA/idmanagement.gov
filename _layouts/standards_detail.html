@@ -9,23 +9,20 @@ layout: page
 {% endif %}
 
 {% if page.scope %}
-<p><b>SCOPE:</b><br>
+<p><b>Identity Scope:</b>
+<ul>
     {% for scope in page.scope %}
-    {{ scope }}<br />
+        <li><a href="{{site.baseurl}}/laws-policies-standards{{scope | datapage_url: laws-policies-standards }}">{{ scope }}</a></li>
     {% endfor %}
+</ul>
 </p>
 {% endif %}
 
 {% if page.ficam-services %}
-<p><b>CATEGORIES:</b><br />
+<p><b>FICAM Services Alignment:</b>
 <ul>
     {% for category in page.ficam-services %}
-    <li>
-        <a href="{{site.baseurl}}/ficam-services{{category | datapage_url: ficam-services }}">
-            {{ category }}
-        </a>
-    </li>
-
+        <li><a href="{{site.baseurl}}/ficam-services{{category | datapage_url: ficam-services }}">{{ category }}</a></li>
     {% endfor %}
 </ul>
 </p>
@@ -82,7 +79,6 @@ layout: page
     </li>
     {% endfor %}
 </ul>
-
 {% endif %}
 
 {% if page.authored-by | size > 0 %}
@@ -178,10 +174,33 @@ If this is an Authority, find the sub-groups under it.
 </p>
 {% endif %}
 
+{% comment %}
+If this is an Identity Scope, find the elements scoped to it.
+{% endcomment %}
+
+{% if page.type == "Scope" %}
+<p>
+    <b>Laws, Policies, and Guidance related to {{page.shortName}}</b>
+<ul>
+    {% for item in site.data.laws-policies-standards %}
+    {% if item.scope | size > 0 %}
+    {% for scope in item.scope %}
+    {% if page.shortName contains scope %}
+    <li>
+        <a href="{{site.baseurl}}/laws-policies-standards{{item.shortName | datapage_url: laws-policies-standards }}">{{item.shortName}}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</ul>
+</p>
+{% endif %}
 
 {% comment %}
 Find the elements authorized by this element.
 {% endcomment %}
+{% if page.authorized-by | size > 0 %}
 <p>
     <b>Items Authorized by {{page.shortName}}</b>
 <ul>
@@ -200,6 +219,7 @@ Find the elements authorized by this element.
     {% endfor %}
 </ul>
 </p>
+{% endif %}
 
 
 {% comment %}

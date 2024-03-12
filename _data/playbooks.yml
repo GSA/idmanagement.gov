@@ -97,11 +97,11 @@
   header: "/assets/playbooks/headers/playbook_06.png"
   target: _self
 
-- title: Windows Hello for Business Playbook
+- title: Phishing-Resistant Authenticator Playbook
   type: Webpage
-  pubdate: 2022-12
-  description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implementation.
-  url: "/playbooks/whfb/"
+  pubdate: 2024-02
+  description: This playbook helps an agency identify phishing-resistant alternative authenticators and design a pilot.
+  url: "/playbooks/altauthn/"
   header: "/assets/playbooks/headers/playbook_05.png"
   target: _self
 

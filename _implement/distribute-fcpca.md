@@ -7,8 +7,8 @@ sticky_sidenav: true
 sidenav: implement
 site.baseurl: site.baseurl
 
-version: 1.1
-pubdate: August 31, 2023
+version: 1.2
+pubdate: March 6, 2024
 
 subnav:
   - text: 1. Obtain and verify FCPCA
@@ -44,6 +44,11 @@ subnav:
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row">1.2</th>
+      <td>03/06/2024</td>
+      <td>Add Note on the difference between NTAuth and Enterprise Trust. Add note on intermittent trust issue after GPO distribution.</td>
+    </tr>
     <tr>
       <th scope="row">1.1</th>
       <td>08/31/2023</td>
@@ -197,6 +202,22 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 
 [![A video that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/assets/fpki/certutil.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/certutil.gif){:target="_blank"}{:rel="noopener noreferrer"}
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">NTAuth versus Enterprise Trust</h4>
+    <p class="usa-alert__text">
+      Just pushing new Federal PKI intermediates over GPO may not fix domain login. Microsoft has two primary locations to store certificates for network login and other uses: NTAuth and Enterprise Trust.
+      <ul>
+        <li>NTAUTH is a registry location at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a certificate store.</li>
+        <li>The NTAuthCertificates determine which CAs are trusted for domain authentication use cases. NTAuth (or NTAuthCertificates) is not a Windows certificate store but an Active Directory object containing certificates.</li>
+        <li>add store is used to add a certificate to a certificate store, while publish publishes values into the directory.</li>
+        <li>With gpupdate /force,  the update starts immediately, but replication can take some time depending on the deployment's complexity (e.g., number of domain controllers or network configuration). The average default delay for gpupdate without force is around 90 minutes. This behavior occurs when Group Policy settings are updated and the client-side extension responsible for autoenrollment runs.</li>
+        <li>The registry is not updated in specific scenarios, such as AD replication latency or when the “Do not enroll certificates automatically” policy setting is enabled. In these scenarios, run the following command manually to insert the certificate into the registry location: certutil -enterprise -addstore NTAuth issuing_ca_name.cer.</li> 
+      </ul>
+    </p>
+  </div>
+</div>
+
 ### Use Microsoft Group Policy Object (GPO)
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
@@ -227,6 +248,17 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 **Note:** The following video shows you how to distribute the FCPCA root certificate with Microsoft GPO. [Click for a larger version]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}.
 
 [![A gif that shows the distribution and verification steps performed with Microsoft Group Policy Object also known as GPO]({{site.baseurl}}/assets/fpki/gpo.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/gpo.gif){:target="_blank"}{:rel="noopener noreferrer"}
+
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">PIV certificates appear untrusted after GPO distribution</h4>
+    <p class="usa-alert__text">
+      In some environments, under some circumstances, distribution of the root by GPO can sometimes cause PIV certificates to intermittently appear to be untrusted.
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/valid-root-ca-certificates-untrusted">Microsoft has published</a>
+      a description of the issue and identified a workaround.
+    </p>
+  </div>
+</div>
 
 ### Use Third-Party Configuration Management Tools
 
@@ -839,7 +871,6 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
 - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
 - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
-- [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
 - [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca)
 
@@ -861,10 +892,10 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
-| Validity | November 18, 2020 to November 18, 2023 |
-| Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
-| SHA-1 Thumbprint | 9b3849f7047964a6654988054956e478ccb75ded |
-| SHA-256 Thumbprint | 9744734dbd34f28d3c87a9094387388e7623a272437c612e88d251138c1db93c |
+| Validity | November 8, 2023 to November 8, 2026 |
+| Serial Number | 23d03cb4df4c43d5ab11ce630f41ef9d38da7fa1 |
+| SHA-1 Thumbprint | b47df20b16966f65b0e4859d426d05c452b76bd6 |
+| SHA-256 Thumbprint | 04aae03b527b1d3de0f3c7b53e73f196984172a33abacc7668b3c2bfb83792cf |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/US_Department_of_State_AD_Root_CA.cer)|
 
 #### Issued to: US Treasury Root CA
@@ -942,26 +973,15 @@ The following certificates are published in the Federal Common Policy CA certifi
 | SHA-256 Thumbprint | 226508d2a1c926a7092218e743ccd01bab8273291feef66941691592fa7c12b8 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Verizon_SSP_CA_A2.cer)|
 
-#### Issued to: ORC SSP 4
-
-| Certificate Attribute | Value |
-| :--------  | :-------- |
-| Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
-| Validity | November 18, 2020 to January 21, 2024 |
-| Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
-| SHA-1 Thumbprint | 3e6610b03daca9fa07e1093b60ccb8927c42d83b  |
-| SHA-256 Thumbprint | 7cd7f21d04beb99d9f833be8697138e3ad4e11313897ee573c066132d21ab5f8 |
-| Download Location | Click [here]({{site.baseurl}}/implement/certs/ORC_SSP_4.cer)|
-
 #### Issued to: WidePoint ORC SSP CA 5
 
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
-| Validity | November 19, 2020 to November 5, 2030  |
-| Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
-| SHA-1 Thumbprint | 80f4731a60fd5f2eb0468d0629310daa50ad210d |
-| SHA-256 Thumbprint | 70200179049bdc8cbe94b4880730609489f324f2a770477f7c1859401e644c72 |
+| Validity | February 1, 2024 to November 5, 2030  |
+| Serial Number | 2119cb5014c8049bcdb3d901c105182afdaf9e08 |
+| SHA-1 Thumbprint | e4776896b9a21e65b86d07034d0e231c0bced192 |
+| SHA-256 Thumbprint | 222f8115d0c91fdc6342276961bd81092f71b3a99ae30915cb5cea8576dd7f5a |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/WidePoint_ORC_SSP_5.cer)|
 
 #### Issued to: WidePoint SSP Intermediate CA

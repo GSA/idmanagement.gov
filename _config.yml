@@ -67,12 +67,12 @@ primary_navigation:
         url: /implement/trust-fcpca/
       - name: Smart Card Logon for Operating Systems
         url: /implement/scl-windows/
-      - name: Certificate-based Authentication for Cloud
-        url: /implement/whfb/
+      - name: Certificate-based Authentication for Cloud (Coming Soon!)
+        url: /
       - name: Use Smart Cards with Applications
         url: /implement/outlook/
-      - name: FIDO2 and Web Authentication (Coming Soon!)
-        url: /
+      - name: FIDO2 and Web Authentication
+        url: /implement/whfb/
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
   - name: Coordination Functions
@@ -122,7 +122,7 @@ searchgov:
   affiliate: idmprod
   access_key: zCEoL5u4U5XFzfFSxy8y4Iz6vdtTjsb4U539L_rgDTM=
   # this renders the results within the page instead of sending to user to search.gov
-  inline: false
+  inline: true
 
 ##########################################################################################
 # The values below here are more advanced and should only be
@@ -171,7 +171,7 @@ collections:
     output: true
     permalink: /:path/
 
-permalink: pretty
+# permalink: pretty
 
 markdown: kramdown
 plugins:
@@ -267,3 +267,7 @@ page_gen:
     template: "services_detail"
     name: "shortName"
     directory: "ficam_services"
+  - data: "laws-policies-standards"
+    template: "services_detail"
+    name: "shortName"
+    directory: "scope"

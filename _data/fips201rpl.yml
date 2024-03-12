@@ -1,5 +1,23 @@
 # FIPS 201 Removed Product List
 
+-   category: 'PACS Validation System'
+    supplier: 'HID Global'
+    nameProduct: '13.01 - pivCLASS validation system 5.20 for Hirsch-Identiv Velocity 3.8.4'
+    numberProduct: 'N/A'
+    dateRemoval: 'Monday, October 16, 2023'
+    numberApl: '10014'
+    reason: 'Per vendor request'
+    status: post
+
+-   category: 'PACS Infrastructure'
+    supplier: 'Identiv'
+    nameProduct: '13.01 - Identiv Velocity 3.8.4 w/pivCLASS validation 5.20'
+    numberProduct: 'N/A'
+    dateRemoval: 'Monday, October 16, 2023'
+    numberApl: '10013'
+    reason: 'Per vendor request'
+    status: post
+
 -   category: 'PACS Infrastructure'
     supplier: 'American Direct Procurement, Inc.'
     nameProduct: 'Quintron AccessNsite'
@@ -29,7 +47,7 @@
 
 -   category: 'PACS Validation System'
     supplier: 'Technology Industries'
-    nameProduct: 'Technology Industries Validation SYstem for AMAG Professional'
+    nameProduct: 'Technology Industries Validation System for AMAG Professional'
     numberProduct: 'EP-IDM-STE'
     dateRemoval: 'Thursday, June 9, 2022'
     numberApl: '10086'
