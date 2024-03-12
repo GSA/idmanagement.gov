@@ -82,7 +82,7 @@ university:
 playbooks:
   - text: Introduction
     href: /playbooks/
-  - text: Certificate-Based Authentication Playbook
+  - text: Certificate-Based Authentication Guide
     href: /playbooks/cba/
   - text: Cloud Identity Playbook
     href: /playbooks/cloud/
