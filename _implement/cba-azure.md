@@ -36,7 +36,32 @@ subnav:
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-opm.svg" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo">
 <img src="{{site.baseurl}}/assets/img/logo-ed.png" width="64" height='64' align="left" alt="U.S. Department of Education Logo">
-<br><br><br>
+<br>
+  
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-c1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-c1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Certificate-Based Authentication on Azure version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>1.0</th>
+        <td>03/12/2024</td>
+        <td>Initial draft.</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 This guide is a collaboration among the U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education.
 
@@ -71,7 +96,7 @@ Key benefits include:
 
 ## CBA Configuration
 
-There are four major steps involved with configuring CBA:
+There are four major steps involved with configuring CBA.
 
 1. Configure your certificates.
 2. Configure your authentication bindings.
@@ -82,7 +107,7 @@ There are four major steps involved with configuring CBA:
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} as a Global Administrator.
 2. Browse to **Protection** > **Show more** > **Security Center** (or **Identity Secure Score**) > **Certificate Authorities**.
-3. To upload a CA, select **Upload**:
+3. To upload a CA, select **Upload**.
    - Select the CA file.
    - Select **Yes** if the CA is a root certificate, otherwise select **No**.
    - For **Certificate Revocation List URL**, set the internet-facing URL for the CA-based CRL that contains all revoked certificates. If the URL isn't set, authentication with revoked certificates won't fail.
@@ -144,11 +169,11 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 ![User Account Mapping]({{site.baseurl}}/assets/playbooks/cba/CBAP8.png)
 
-**Note** -- How your user's accounts are configured to determine your mapping strategy (your **CertficateUserIds** will be found under the **Authorization Info** field):
+**Note** -- How your user's accounts are configured to determine your mapping strategy, your **CertficateUserIds**, will be found under the **Authorization Info** field.
 
 ![User Account Configuration]({{site.baseurl}}/assets/playbooks/cba/CBAP9.png)
 
-When you've completed this section, your final settings should look like this:
+When you've completed this section, your final settings should look like this.
 
 ![Final Settings]({{site.baseurl}}/assets/playbooks/cba/CBAP10.png)
 
@@ -158,7 +183,7 @@ When you've completed this section, your final settings should look like this:
 
 ![Login Prompt]({{site.baseurl}}/assets/playbooks/cba/CBAP11.png)
 
-2. If you get a prompt to enter your password, select **Use a certificate or smart card** and select **Sign in**:
+2. If you get a prompt to enter your password, select **Use a certificate or smart card** and select **Sign in**.
 
 ![Use Certificate or Smart Card]({{site.baseurl}}/assets/playbooks/cba/CBAP12.png)
 
