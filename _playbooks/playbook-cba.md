@@ -18,15 +18,15 @@ subnav:
     href: '#prerequisites'
   - text: CBA Configuration
     href: '#cba-configuration'
-  - text: Step 1 - Configure Certification Authorities
+  - text: Step 1. Configure Certification Authorities
     href: '#step-1-configure-the-certification-authorities'  
-  - text: Step 2 - Enable CBA on Tenant
+  - text: Step 2. Enable CBA on Tenant
     href: '#step-2-enable-cba-on-the-tenant'
-  - text: Step 3 - Configure Authentication Binding
+  - text: Step 3. Configure Authentication Binding
     href: '#step-3-configure-the-authentication-binding-policy'
-  - text: Step 4 - Configure Username Binding 
+  - text: Step 4. Configure Username Binding 
     href: '#step-4-configure-username-binding-policy'
-  - text: Step 5 - Test CBA Login
+  - text: Step 5. Test CBA Login
     href: '#step-5-login-with-your-certificate-to-test-cba'
   - text: Final Steps
     href: '#final-steps'
@@ -76,7 +76,7 @@ There are four major steps involved with configuring CBA:
 3. Configure your user account bindings.
 4. Enable CBA as an authentication method.
 
-### Step 1 -- Configure the certification authorities
+### Step 1. Configure the certification authorities
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} as a Global Administrator.
 2. Browse to **Protection** > **Show more** > **Security Center** (or **Identity Secure Score**) > **Certificate Authorities**.
@@ -90,7 +90,7 @@ There are four major steps involved with configuring CBA:
 
 ![Certificate Authorities]({{site.baseurl}}/assets/playbooks/cba/CBAP1.png)
 
-### Step 2 -- Enable CBA on the tenant
+### Step 2. Enable CBA on the tenant
 
 To enable the certificate-based authentication in the Microsoft Entra admin center, complete the following steps:
 
@@ -107,7 +107,7 @@ To enable the certificate-based authentication in the Microsoft Entra admin cent
 
 **Note**: Once a certificate-based authentication method is enabled on the tenant, all users in the tenant will see the option to sign in with a certificate. However, only users who are enabled for certificate-based authentication will be able to authenticate using the X.509 certificate.
 
-### Step 3 -- Configure the authentication binding policy
+### Step 3. Configure the authentication binding policy
 
 The authentication binding policy helps determine the strength of authentication to either a single factor or multifactor. An Authentication Policy Administrator can change the default value from single factor to multifactor and configure custom policy rules by mapping to issuer Subject or policy OID fields in the certificate.
 
@@ -126,7 +126,7 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 ![Authentication Binding Policy]({{site.baseurl}}/assets/playbooks/cba/CBAP5.png)
 
-### Step 4 -- Configure username binding policy
+### Step 4. Configure username binding policy
 
 1. Create the username binding by selecting one of the X.509 certificate fields to bind with one of the user attributes. The username binding order represents the priority level of the binding. The first one has the highest priority and so on.
 
@@ -150,7 +150,7 @@ When you've completed this section, your final settings should look like this:
 
 ![Final Settings]({{site.baseurl}}/assets/playbooks/cba/CBAP10.png)
 
-### Step 5 -- Login with your certificate to test CBA
+### Step 5. Login with your certificate to test CBA
 
 1. Now login with an account you've added to your target group in Step 2 above. In this case, the user should be in the AZ.CBA-Users group to be targeted for CBA. You can use portal.azure.com as your test login location and you should see the following prompt -- you may see a different prompt if you have other authentication methods enabled.
 
