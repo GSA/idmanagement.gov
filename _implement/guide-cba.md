@@ -40,7 +40,7 @@ This guide is a collaboration among the U.S. General Services Administration Off
 
 This guide is designed to direct Identity, Credential, and Access Management program managers and Entra ID administrators through the process of planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. This configuration is often selected by agencies moving workloads to the cloud due to its compatibility with current technologies. While a similar setup exists for Entra ID joined devices, this guide focuses on hybrid joined devices. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating either a hybrid joined device or a compliant device. The hybrid joined device will guarantee the device is a device typically managed by an on-premises active directory and group policy. Microsoft Intune could also help manage these devices and device signal would be considered a compliant device, which means policies are checked against a set standard.
 
-**Note**: If one of the above checks is not completed, a user could access systems and resources with a personal device.
+**Note** -- If one of the above checks is not completed, a user could access systems and resources with a personal device.
 
 ## Why Certificate-Based Authentication
 
@@ -65,7 +65,7 @@ Key benefits include:
 4. An internet accessible Certificate Revocation List (CRL).
 5. Hybrid joined devices optional, but highly recommended.
 
-**Note:** When you switch your authentication method to CBA, you are changing from a federated IdP to using an Entra ID managed environment. To make this transition smoother and to test out CBA features, it's easier to use "Staged Rollout" rather cut over your entire domain at one time.
+**Note** -- When you switch your authentication method to CBA, you are changing from a federated IdP to using an Entra ID managed environment. To make this transition smoother and to test out CBA features, it's easier to use "Staged Rollout" rather cut over your entire domain at one time.
 
 ## CBA Configuration
 
@@ -105,7 +105,7 @@ To enable the certificate-based authentication in the Microsoft Entra admin cent
 
 ![Target Group]({{site.baseurl}}/assets/playbooks/cba/CBAP3.png)
 
-**Note**: Once a certificate-based authentication method is enabled on the tenant, all users in the tenant will see the option to sign in with a certificate. However, only users who are enabled for certificate-based authentication will be able to authenticate using the X.509 certificate.
+**Note** -- Once a certificate-based authentication method is enabled on the tenant, all users in the tenant will see the option to sign in with a certificate. However, only users who are enabled for certificate-based authentication will be able to authenticate using the X.509 certificate.
 
 ### Step 3. Configure the authentication binding policy
 
@@ -122,7 +122,7 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 2. The protection level attribute has a default value of **Single-factor authentication**. Select **Multifactor authentication** to change the default value to MFA. This change will ensure all users authenticating to the tenant have their logon sessions stamped as X.509, Multifactor logins for the duration of their session.
 3. Select the **Low** affinity binding here.
 
-**Note**: You can also set up custom authentication binding rules. Follow the relevant Microsoft documentation to configure custom rules.
+**Note** -- You can also set up custom authentication binding rules. Follow the relevant Microsoft documentation to configure custom rules.
 
 ![Authentication Binding Policy]({{site.baseurl}}/assets/playbooks/cba/CBAP5.png)
 
@@ -138,7 +138,7 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 3. In this next step, you are telling CBA which field on your X.509 cert matches a specific field for your user's account. So, select either the **userPrincipalName** or the **OnPremisesUserPrincipalName** field to map to and select **Save**.
 
-> **Note**: The **OnPremisesUserPrincipalName** field can often resolve mapping issues the **userPrincipalName** field can't, so review your Certificate mappings carefully to determine the best approach.
+> **Note** -- The **OnPremisesUserPrincipalName** field can often resolve mapping issues the **userPrincipalName** field can't, so review your Certificate mappings carefully to determine the best approach.
 
 ![User Account Mapping]({{site.baseurl}}/assets/playbooks/cba/CBAP8.png)
 
