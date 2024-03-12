@@ -1,11 +1,11 @@
 ---
 layout: page
-collection: playbooks
+collection: implement
 title: Certificate-Based Authentication Guide 
 type: Markdown
-permalink: /playbooks/cba/
-description: This guide directs agencies through the process of planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices.
-sidenav: playbooks
+permalink: /implement/cba-azure/
+description: This guide directs agencies through planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices.
+sidenav: implement
 sticky_sidenav: true
 
 pubdate: March 2024  
