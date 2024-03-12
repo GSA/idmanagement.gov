@@ -63,19 +63,36 @@ subnav:
   </div>
 </div>
 
-This guide is a collaboration among the U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education.
+The U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education developed this guide to help Identity, Credential, and Access Management (ICAM) program managers and Azure Entra ID administrators implement Certificate-based Authentication with Entra ID. This guide identifies steps for planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices to leverage a **device-level signal** to determine data authorization. OMB Memo 22-09, Federal Zero Trust Strategy, tasks agencies to work to incorporate at least one device-level signal alongside identity information about the authenticated user.
+1. Device-level signal - Compliant device.
+2. Identity information - User's certificate
 
-This guide is designed to help Identity, Credential, and Access Management (ICAM) program managers and Azure Entra ID administrators through planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. This configuration is often selected by agencies moving workloads to the cloud due to its compatibility with current technologies. While a similar setup exists for Entra ID joined devices, this guide focuses on hybrid joined devices. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating either a hybrid joined device or a compliant device. The hybrid joined device will guarantee the device is a device typically managed by an on-premises active directory and group policy. Microsoft Intune could also help manage these devices, and the device signal would be considered a compliant device, which means policies are checked against a set standard.
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">What about other types of "joined" devices?</h4>
+    <p class="usa-alert__text">
+      The scope of this guide is on Entra hybrid joined devices, but agencies may achieve the same functionality with Entra joined or using a different vendor's Mobile Device Management product. For agencies with Entra native devices, the same steps apply and can be deployed today. For agencies using a different vendor's Mobile Device Management product, check with your vendor how and if their compliant device signal can be used in Entra ID through an API or other method.
+    </p>
+  </div>
+</div>
 
-**Note** -- If a compliant device check is not enabled, a user with a trusted certificate could access systems and resources from a personal device.
+This Entra hybrid-join configuration is often selected as agencies move workloads to the cloud due to its compatibility with on-premises requirements. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating a compliant device signal achieved. A joined device guarantees an enterprise policy manages the device.
+
+**Note** If a compliant device check is not enabled, a user with a trusted certificate could access systems and resources from an unmanaged device, such as a personal device.
+
+## Terminology
+1. [Entra Hybrid Join](https://learn.microsoft.com/en-us/entra/identity/devices/concept-hybrid-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  - Devices are joined to an on-premises Active Directory and registered with Microsoft Entra ID. The device is managed with an Active Directory Group Policy.
+2. [Entra Join](https://learn.microsoft.com/en-us/entra/identity/devices/concept-directory-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Devices are managed by Azure policy.
+3. Managed device - Any device under direct control or with a managed profile, such as Government-Furnished Equipment (GFE), contractor-furnished equipment, or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access.
+4. Unmanaged device - Any device not under the organization’s control. Some agencies support Bring Your Own Device or contractor-furnished device access for a limited number of applications, such as email or collaboration tools. Deploying or enforcing certificate-based options, compliance profiles, or baseline images is difficult. This is a growing access method as more agencies support unmanaged device access to cloud applications.
 
 ## Why Certificate-Based Authentication
 
-Certificate-Based Authentication enables agencies to authenticate with X.509 certificates directly through Microsoft's Entra ID, providing phishing-resistant authentication against their Public Key Infrastructure (PKI). Previously, federated certificate-based authentication was required, necessitating deployment of Active Directory Federation Services (ADFS) to authenticate with X.509 certificates. Direct authentication with Entra ID ensures a phishing-resistant login, verifiable using Conditional Access policies. Unlike ADFS, where login signals could potentially be spoofed or the infrastructure hacked, this method offers tighter security.
+Certificate-Based Authentication (CBA) enables agencies to authenticate with X.509 certificates directly through Microsoft's Entra ID, providing phishing-resistant authentication against their Public Key Infrastructure (PKI). Previously, federated certificate-based authentication was required, necessitating the Active Directory Federation Services (ADFS) deployment to authenticate with X.509 certificates. Direct authentication with Entra ID ensures a phishing-resistant login that is verifiable using Conditional Access policies. Unlike ADFS, where login signals could be spoofed or the infrastructure hacked, this method offers tighter security.
 
 Key benefits include:
 
-- CBA is compliant with M-19-17, which requires moving the digital identity provider to a centralized cloud-based identity management solution.
+- CBA complies with M-19-17, which requires moving the digital identity provider to a centralized cloud-based identity management solution.
 - Direct authentication with Entra ID eliminates reliance on ADFS, removing a lateral movement path from Active Directory.
 - Entra ID can verify the type of Multifactor Authentication (MFA) used, whereas ADFS often depends on Kerberos, which can't ensure MFA usage or the specific type.
 - CBA is recognized in Azure as an MFA assurance level and can be incorporated into Conditional Access Policies for authorization.
@@ -102,6 +119,7 @@ There are four major steps involved with configuring CBA.
 2. Configure your authentication bindings.
 3. Configure your user account bindings.
 4. Enable CBA as an authentication method.
+5. Test CBA
 
 ### Step 1. Configure the certification authorities
 
@@ -116,6 +134,17 @@ There are four major steps involved with configuring CBA.
 4. Continue adding certificates until all root and intermediate certificates are uploaded.
 
 ![Certificate Authorities]({{site.baseurl}}/assets/playbooks/cba/CBAP1.png)
+
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">How do I know if I have the right certification authorities?</h4>
+    <p class="usa-alert__text">
+      The Federal PKI maintains a list of 
+      <a class="usa-link" href="https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information" target="_blank" rel="noopener noreferrer">the lastest PIV certifications authorities</a>
+      . Contact ICAM at GSA.gov If you need help finding the right CA or think one needs to be updated.
+    </p>
+  </div>
+</div>
 
 ### Step 2. Enable CBA on the tenant
 
