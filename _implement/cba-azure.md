@@ -192,17 +192,17 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 ![PrincipalName Binding]({{site.baseurl}}/assets/playbooks/cba/CBAP7.png)
 
-3. In this next step, you are telling CBA which field on your X.509 cert matches a specific field for your user's account. So, select either the **userPrincipalName** or the **OnPremisesUserPrincipalName** field to map to and select **Save**.
+3. In this next step, you tell CBA which field on your X.509 cert matches a specific field for your user's account. So, select either the **userPrincipalName** or the **OnPremisesUserPrincipalName** field to map to and select **Save**.
 
 > **Note** -- The **OnPremisesUserPrincipalName** field can often resolve mapping issues the **userPrincipalName** field can't, so review your Certificate mappings carefully to determine the best approach.
 
 ![User Account Mapping]({{site.baseurl}}/assets/playbooks/cba/CBAP8.png)
 
-**Note** -- How your user's accounts are configured to determine your mapping strategy, your **CertficateUserIds**, will be found under the **Authorization Info** field.
+**Note** -- Your ** CertficateUserIds **, which determines how your user accounts are configured to determine your mapping strategy, can be found under the **Authorization Info** field.
 
 ![User Account Configuration]({{site.baseurl}}/assets/playbooks/cba/CBAP9.png)
 
-When you've completed this section, your final settings should look like this.
+After completing this section, your final settings should look like this.
 
 ![Final Settings]({{site.baseurl}}/assets/playbooks/cba/CBAP10.png)
 
