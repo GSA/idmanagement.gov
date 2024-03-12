@@ -36,7 +36,7 @@ subnav:
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-opm.svg" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo">
 <img src="{{site.baseurl}}/assets/img/logo-ed.png" width="64" height='64' align="left" alt="U.S. Department of Education Logo">
-<br><br><be>
+<br><br><br>
 
 This guide is a collaboration among the U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education.
 
@@ -173,3 +173,7 @@ When you've completed this section, your final settings should look like this:
 You should now make sure your Windows devices are configured as **Entra ID Hybrid Joined** and build a Conditional Access Policy to require MFA and an Entra ID Hybrid Joined device. This final step will ensure your users are logging in with agency-owned devices and with CBA. As an advanced step, you'll define an **authentication strength** policy to pair with your Conditional Access Policy and specifically require a phishing-resistant MFA authentication strength to sign in.
 
 For more information, please visit [general instructions](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provided by Microsoft.
+
+## Troubleshooting Steps
+
+See the [Microsoft Entra authentication and authorization error codes](https://learn.microsoft.com/en-us/entra/identity-platform/reference-error-codes){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for common error codes and solutions.
