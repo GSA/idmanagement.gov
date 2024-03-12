@@ -34,13 +34,15 @@ subnav:
 
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/img/logo-opm.svg" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo">
+<img src="{{site.baseurl}}/assets/img/logo-ed.png" width="64" height='64' align="left" alt="U.S. Department of Education Logo">
 <br><br><be>
 
-This guide is a collaboration among the U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, and the Office of Personnel Management and the Department of Education.
+This guide is a collaboration among the U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education.
 
-This guide is designed to direct Identity, Credential, and Access Management program managers and Entra ID administrators through the process of planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. This configuration is often selected by agencies moving workloads to the cloud due to its compatibility with current technologies. While a similar setup exists for Entra ID joined devices, this guide focuses on hybrid joined devices. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating either a hybrid joined device or a compliant device. The hybrid joined device will guarantee the device is a device typically managed by an on-premises active directory and group policy. Microsoft Intune could also help manage these devices and device signal would be considered a compliant device, which means policies are checked against a set standard.
+This guide is designed to help Identity, Credential, and Access Management (ICAM) program managers and Azure Entra ID administrators through planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices. This configuration is often selected by agencies moving workloads to the cloud due to its compatibility with current technologies. While a similar setup exists for Entra ID joined devices, this guide focuses on hybrid joined devices. CBA utilizes two-factor authentication, combining something you have, a smart card, with something you know, a PIN. To enhance security under the Zero Trust model, agencies should require a device-level signal, necessitating either a hybrid joined device or a compliant device. The hybrid joined device will guarantee the device is a device typically managed by an on-premises active directory and group policy. Microsoft Intune could also help manage these devices, and the device signal would be considered a compliant device, which means policies are checked against a set standard.
 
-**Note** -- If one of the above checks is not completed, a user could access systems and resources with a personal device.
+**Note** -- If a compliant device check is not enabled, a user with a trusted certificate could access systems and resources from a personal device.
 
 ## Why Certificate-Based Authentication
 
