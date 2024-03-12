@@ -34,7 +34,7 @@ subnav:
 
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
-<img src="{{site.baseurl}}/assets/img/logo-opm.svg" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo">
+<img src="{{site.baseurl}}/assets/img/logo-opm.png" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo">
 <img src="{{site.baseurl}}/assets/img/logo-ed.png" width="64" height='64' align="left" alt="U.S. Department of Education Logo">
 <br>
   
@@ -201,4 +201,13 @@ For more information, please visit [general instructions](https://learn.microsof
 
 ## Troubleshooting Steps
 
-See the [Microsoft Entra authentication and authorization error codes](https://learn.microsoft.com/en-us/entra/identity-platform/reference-error-codes){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for common error codes and solutions.
+See the [Microsoft Entra authentication and authorization error codes](https://learn.microsoft.com/en-us/entra/identity-platform/reference-error-codes){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for common error codes and solutions. Below is a list of common errors reported by various agencies.
+
+<ol>
+  <li><strong>AADSTS1001009</strong>: No value in the certificate, as request by tenant policy, is able to validate the user claim.</li>
+    <ol>
+      <li>From Microsoft - AADSTS81009	DesktopSsoAuthorizationHeaderValueWithBadFormat - Unable to validate user's Kerberos ticket.</li>
+      <li>Solution — This is specific to hybrid joined identities and related to username binding. Verify the user binding settings or try a different setting in Entra ID. If you're using issuer and subject, try SKI instead.</li>
+    </ol>
+  </li>
+</ol>
