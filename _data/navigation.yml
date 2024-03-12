@@ -38,8 +38,8 @@ implement:
     href: /implement/scl-firefox/
   - text: Windows Hello for Business on Azure AD
     href: /implement/whfb/
-  - text: Certificate-Based Authentication on Azure AD (Coming Soon!)
-    href: '/'
+  - text: Certificate-Based Authentication on Azure
+    href: /implement/cba-azure/
   - text: Sign and Encrypt Email in Outlook
     href: /implement/outlook/
   - text: FPKI Ecosystem Changes
@@ -72,8 +72,6 @@ university:
     href: /university/pivi/
   - text: ICAM PM 101
     href: /university/pm/
-  # - text: ICAM Policy Matrix - Laws, Policies, and Standards
-  #   href: /university/policy-matrix/
   - text: ICAM Policy Matrix - Laws, Policies, and Standards
     href: /university/policymatrix/
   - text: ICAM Policy Matrix - Map
@@ -82,8 +80,6 @@ university:
 playbooks:
   - text: Introduction
     href: /playbooks/
-  - text: Certificate-Based Authentication Guide
-    href: /playbooks/cba/
   - text: Cloud Identity Playbook
     href: /playbooks/cloud/
   - text: Digital Autopen Playbook 
