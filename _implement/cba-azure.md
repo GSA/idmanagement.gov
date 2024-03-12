@@ -142,7 +142,7 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 ![User Account Mapping]({{site.baseurl}}/assets/playbooks/cba/CBAP8.png)
 
-**Note**: How your user's accounts are configured to determine your mapping strategy (your **CertficateUserIds** will be found under the **Authorization Info** field):
+**Note** -- How your user's accounts are configured to determine your mapping strategy (your **CertficateUserIds** will be found under the **Authorization Info** field):
 
 ![User Account Configuration]({{site.baseurl}}/assets/playbooks/cba/CBAP9.png)
 
