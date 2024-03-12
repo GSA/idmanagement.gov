@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Certificate-Based Authentication Guide 
+title: Certificate-Based Authentication on Azure Guide 
 type: Markdown
 permalink: /implement/cba-azure/
 description: This guide directs agencies through planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices.
