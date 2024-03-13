@@ -27,19 +27,23 @@ subnav:
 
 ICAM Engineering Guides are for system administrators configuring agency infrastructure, servers, and enterprise applications for authentication and other ICAM processes. The guides are focused on U.S. federal government implementations.
 
-The majority of engineering guides are focused on helping agencies configure PIV credential authentication in the most common operating systems and applications. A new series of FIDO multi-factor authentication playbooks are also include.
+The majority of engineering guides are focused on helping agencies configure PIV credential authentication in the most common operating systems and applications. A new series of FIDO multi-factor authentication playbooks are also included.
 
 ## Configuration Guides
 
-1. Smart Card Configuration
-   1. [Windows Domains]({{site.baseurl}}/implement/scl-windows)
-   2. [MacOS]({{site.baseurl}}/implement/scl-macos)
-   3. [Microsoft Outlook (on-premise)]({{site.baseurl}}/implement/outlook)
-   4. [Firefox Browser]({{site.baseurl}}/implement/scl-firefox)
-   5. [SSH Command Line]({{site.baseurl}}/implement/scl-ssh/)
-   6. Certificate-based Authentication on Azure AD (Coming soon!)
-   7. Certificate-based Authentication on Okta (Coming soon!)
-2. FIDO2 Configuration
+1. On-Premise Smart Card Configuration
+   1. [Windows Domains]({{site.baseurl}}/implement/trust-fcpca/)
+   2. [Windows Devices]({{site.baseurl}}/implement/scl-windows)
+   3. [MacOS Devices]({{site.baseurl}}/implement/scl-macos)
+   4. [SSH Command Line]({{site.baseurl}}/implement/scl-ssh/)
+   5. [Firefox Browser]({{site.baseurl}}/implement/scl-firefox)
+   6. [Microsoft Outlook]({{site.baseurl}}/implement/outlook)
+  
+2. Cloud Certificate-based Authentication Configuration
+   1. [Cloud or Hybrid-Joined Azure Entra ID]({{site.baseurl}}/implement/cba-azure/)
+   2. Okta (Coming soon!)
+
+3. FIDO2 Configuration
    1. [Windows Hello for Business]({{site.baseurl}}/implement/whfb)
    2. Security keys (Coming soon!)
 

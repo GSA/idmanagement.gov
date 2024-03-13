@@ -238,5 +238,4 @@ See the [Microsoft Entra authentication and authorization error codes](https://l
       <li>From Microsoft - AADSTS81009	DesktopSsoAuthorizationHeaderValueWithBadFormat - Unable to validate user's Kerberos ticket.</li>
       <li>Solution — This is specific to hybrid joined identities and related to username binding. Verify the user binding settings or try a different setting in Entra ID. If you're using issuer and subject, try SKI instead.</li>
     </ol>
-  </li>
 </ol>

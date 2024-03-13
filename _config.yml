@@ -51,6 +51,8 @@ primary_navigation:
         url: /zero-trust/
       - name: GSA ICAM Solutions Roadmap
         url: /icamsolutions/
+      - name: ICAM Federal Integrated Business Framework
+        url: /icam-fibf/
   - name: Partners
     children:
       - name: Vendors
@@ -95,12 +97,14 @@ primary_navigation:
         url: /university/pki/
       - name: FPKI 101
         url: /university/fpki/
+      - name: PACS 101
+        url: /university/pacs/
       - name: PIV 101
         url: /university/piv/
       - name: PIV-I 101
         url: /university/pivi/
-      - name: PACS 101
-        url: /university/pacs/
+      - name: ICAM PM 101
+        url: /university/pm/
       - name: ICAM Policy Matrix
         url: /university/policymatrix/
 
