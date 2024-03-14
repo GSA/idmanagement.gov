@@ -41,7 +41,7 @@
                 "format": "multiline"
             },
             "scope": {
-                "description": "The scope of the document, can be 'Worforce Identity', if primarily for government personnel, or 'Public Identity' if primarily for citizens.",
+                "description": "The scope of the document, can be 'Worforce Identity', if primarily for government personnel, mission, and business partners, or 'Public Identity' if primarily non-workforce people.",
                 "type": "array",
                 "items": {
                     "enum": [
