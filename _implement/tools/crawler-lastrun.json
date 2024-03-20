@@ -4091,10 +4091,15 @@
             "serial-number": "175158942848335742094376338922828684634181",
             "akid": "e9 ba 67 43 40 ad 41 22 9a fe fa 09 43 88 f3 62 b8 6b af 2a",
             "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "status": "Certificate Valid, but no Path to Common",
+            "status": "Certificate Invalid",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "Unable to build Path"
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US:e9ba674340ad41229afefa094388f362b86baf2a",
+            "validity-dates": {
+                "not-before": "2023-03-08 18:54:14+00:00",
+                "not-after": "2024-03-12 18:54:14+00:00"
             }
         },
         {
@@ -4115,10 +4120,15 @@
             "serial-number": "14251171306422",
             "akid": "fe 01 17 a6 8a 2e 7a 0a db 99 ee 0f 4b 94 83 04 8a dc 91 91",
             "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "status": "Certificate Valid, but no Path to Common",
+            "status": "Certificate Invalid",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "Unable to build Path"
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA:fe0117a68a2e7a0adb99ee0f4b9483048adc9191",
+            "validity-dates": {
+                "not-before": "2023-03-08 16:11:36+00:00",
+                "not-after": "2024-03-12 16:11:36+00:00"
             }
         },
         {
