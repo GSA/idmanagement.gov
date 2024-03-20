@@ -565,9 +565,18 @@ You need to know the type of authenticator to implement increasingly granular au
 
 To grant a user access, based on the type of authenticator used, you can use a Windows Active Directory (AD) feature called _Authentication Mechanism Assurance (AMA)_. AMA allows you to add a group membership identifier to the user’s Kerberos token.
 
-{% include alert-warning.html content="Do not use AMA to provide privileged user access." %}
+<div class="usa-alert usa-alert--warning">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Do not uses AMA to provide privileged access</h4>
+    <p class="usa-alert__text">
+      Privileged users should not rely on single sign-on and should always use the highest assurance credential. Their account should be separate and distinct from their normal user account. See the 
+      <a class="usa-link" href="{{site.baseurl}}/playbooks/pam/" target="_blank" rel="noopener noreferrer"}>Privileged Identity Playbook</a>
+      for best practices in reducing risk associated with privileged accounts and access.
+    </p>
+  </div>
+</div>
 
-AMA is available for domains operating on Windows Server 2008 R2 and later versions.
+AMA is available for Windows Server 2008 R2 domains and later versions.
 
 ## Implementation
 
