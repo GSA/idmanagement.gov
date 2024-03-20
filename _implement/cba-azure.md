@@ -82,7 +82,7 @@ This Microsoft Entra hybrid-join configuration is often selected as agencies mov
 
 ## Terminology
 1. [Microsoft Entra Hybrid Join](https://learn.microsoft.com/en-us/entra/identity/devices/concept-hybrid-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  - Devices are joined to an on-premises Active Directory and registered with Microsoft Entra ID. The device is managed with an Active Directory Group Policy.
-2. [Entra Join](https://learn.microsoft.com/en-us/entra/identity/devices/concept-directory-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Devices are managed by Azure policy.
+2. [Microsoft Entra Join](https://learn.microsoft.com/en-us/entra/identity/devices/concept-directory-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Devices are managed by Azure policy.
 3. Managed device - Any device under direct control or with a managed profile, such as Government-Furnished Equipment (GFE), contractor-furnished equipment, or personal devices with an organizational profile or container. GFE is the primary method most agencies use for data access.
 4. Unmanaged device - Any device not under the organization’s control. Some agencies support Bring Your Own Device or contractor-furnished device access for a limited number of applications, such as email or collaboration tools. Deploying or enforcing certificate-based options, compliance profiles, or baseline images is difficult. This is a growing access method as more agencies support unmanaged device access to cloud applications.
 
