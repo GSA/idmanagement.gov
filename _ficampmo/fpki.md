@@ -93,12 +93,13 @@ Audits are required annually for supporting functions and elements of each entit
 
 ## Compliance Test Tools for Annual Reviews
 
-The FPKI Program support two remote PIV, PIV-I and digital certificate test tools to support FPKI annual reviews.
+The FPKI Program supports three remote PIV, PIV-I, and digital certificate test tools to support FPKI annual reviews as listed below:
 
-1. The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model.
-2. The [Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is an self-hosted application that analyzes public X.509 certificates for conformance to a specified FPKI profile.
+1. The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model.
+2. The [Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"} is a self-hosted application that analyzes public X.509 certificates for conformance to a specified FPKI profile.
+3. The [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"} is Java API hosted on GitHub and used to leverage that the information stored in the PIV/ PIV-I applets conform to NIST SP 800-73.
 
-To request an official report on your CPCT and CCT results, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} and send it with outputs and testing artifacts to fips201ep at gsa.gov.
+To request the annual testing report for PIV/PIV-I cards, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf) and send it with Compliance Test Tool outputs and testing artifacts (for remote testing) to fips201ep@ gsa.gov.
 
 ## Submitting a Test Results Package
 If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
