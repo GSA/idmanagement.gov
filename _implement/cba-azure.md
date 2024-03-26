@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Certificate-Based Authentication on Azure Guide 
+title: Certificate-Based Authentication on Microsoft Entra ID Guide 
 type: Markdown
 permalink: /implement/cba-azure/
 description: This guide directs agencies through planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices.
@@ -63,7 +63,7 @@ subnav:
   </div>
 </div>
 
-The U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education developed this guide to help Identity, Credential, and Access Management (ICAM) program managers and Azure Entra ID administrators implement Certificate-based Authentication with Entra ID. This guide identifies steps for planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices to leverage a **device-level signal** to determine data authorization. OMB Memo 22-09, Federal Zero Trust Strategy, tasks agencies to work to incorporate at least one device-level signal alongside identity information about the authenticated user.
+The U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education developed this guide to help Identity, Credential, and Access Management (ICAM) program managers and Microsoft Entra ID administrators implement Certificate-based Authentication with Entra ID. This guide identifies steps for planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Entra ID hybrid joined devices to leverage a **device-level signal** to determine data authorization. OMB Memo 22-09, Federal Zero Trust Strategy, tasks agencies to work to incorporate at least one device-level signal alongside identity information about the authenticated user.
 1. Device-level signal - Compliant device.
 2. Identity information - User's certificate
 
@@ -88,36 +88,35 @@ This Entra hybrid-join configuration is often selected as agencies move workload
 
 ## Why Certificate-Based Authentication
 
-Certificate-Based Authentication (CBA) enables agencies to authenticate with X.509 certificates directly through Microsoft's Entra ID, providing phishing-resistant authentication against their Public Key Infrastructure (PKI). Previously, federated certificate-based authentication was required, necessitating the Active Directory Federation Services (ADFS) deployment to authenticate with X.509 certificates. Direct authentication with Entra ID ensures a phishing-resistant login that is verifiable using Conditional Access policies. Unlike ADFS, where login signals could be spoofed or the infrastructure hacked, this method offers tighter security.
+Certificate-Based Authentication (CBA) enables agencies to authenticate with X.509 certificates directly through Microsoft's Entra ID, providing phishing-resistant authentication using x.509 certificates issued from their trusted Public Key Infrastructure (PKI). Previously, federated certificate-based authentication was required, necessitating the Active Directory Federation Services (ADFS) deployment to authenticate with X.509 certificates. Direct authentication with Entra ID ensures a phishing-resistant login that is verifiable using Conditional Access policies. Unlike ADFS, where login signals could be spoofed or the infrastructure hacked, for these reasons authenticating to Entra ID directly with x.509 certificate method offers tighter security.
 
 Key benefits include:
 
 - CBA complies with M-19-17, which requires moving the digital identity provider to a centralized cloud-based identity management solution.
-- Direct authentication with Entra ID eliminates reliance on ADFS, removing a lateral movement path from Active Directory.
+- Direct authentication with Entra ID eliminates reliance on a federated IdP (such as ADFS), removing a lateral movement path from Active Directory.
 - Entra ID can verify the type of Multifactor Authentication (MFA) used, whereas ADFS often depends on Kerberos, which can't ensure MFA usage or the specific type.
-- CBA is recognized in Azure as an MFA assurance level and can be incorporated into Conditional Access Policies for authorization.
-- CBA integrates with Hybrid and Entra ID joined devices, offering a seamless Single Sign-On (SSO) experience directly from the Personal Identification Verification (PIV) authentication during desktop and laptop Windows device logins.
-- Improved and centralized logon auditing includes the CBA credential along with other signal types, such as Entra ID Sign-in logs.
-- The ability to send and validate phishing-resistant MFA credentials to Entra ID partners in B2B scenarios.
-- MFA fatigue can be reduced by integrating MFA into the initial login process.
+- Entra CBA can be configured in Entra ID as MFA and and can be incorporated into Conditional Access Policies for authorization.
+- Entra CBA integrates with Hybrid and Entra ID joined devices, offering a seamless Single Sign-On (SSO) experience using the Personal Identification Verification (PIV) authentication during desktop and laptop Windows device logins, reducing MFA fatigue
+- Improved and centralized sign-in information with Entra Sign-in logs, including CBA credential details. 
+- The ability for your agency's Entra ID to send authentication details to the partner's agency's Entra ID allowing the partner to validate phishing-resistance, MFA, and additional properties of the authentication method using authentication strengths in B2B scenarios.
 
 ## Prerequisites
 
-1. An Active Directory on-premises infrastructure synced to Entra ID.
-2. A PKI environment.
-3. User certificates issued from the PKI.
-4. An internet accessible Certificate Revocation List (CRL).
-5. Hybrid joined devices optional, but highly recommended.
+1. A PKI environment.
+2. User certificates issued from the PKI.
+3. An internet accessible Certificate Revocation List (CRL).
+4. Hybrid/Entra ID joined devices optional, but highly recommended.
+5. In Hybrid configuration, An Active Directory on-premises infrastructure synced to Entra ID.
 
-**Note** -- When you switch your authentication method to CBA, you are changing from a federated IdP to using an Entra ID managed environment. To make this transition smoother and to test out CBA features, it's easier to use "Staged Rollout" rather cut over your entire domain at one time.
+**Note** -- When you switch your authentication method to CBA, you are changing from a federated IdP to using an Entra ID managed environment. To make this transition smoother and to test out CBA features, it's easier to use "Staged Rollout" rather then to cut over your entire domain at one time.
 
 ## CBA Configuration
 
 There are four major steps involved with configuring CBA.
 
-1. Configure your certificates.
+1. Configure your trusted CA certificates.
 2. Configure your authentication bindings.
-3. Configure your user account bindings.
+3. Configure your user account bindings (Protection and Affinity Levels).
 4. Enable CBA as an authentication method.
 5. Test CBA
 
@@ -128,7 +127,7 @@ There are four major steps involved with configuring CBA.
 3. To upload a CA, select **Upload**.
    - Select the CA file.
    - Select **Yes** if the CA is a root certificate, otherwise select **No**.
-   - For **Certificate Revocation List URL**, set the internet-facing URL for the CA-based CRL that contains all revoked certificates. If the URL isn't set, authentication with revoked certificates won't fail.
+   - For **Certificate Revocation List URL**, set the internet-facing URL for the CA-based CRL that contains all revoked certificates. By default in Entra ID CBA does not require the CRL URL to be set. If the URL isn't set/configured empty, a CRL check is not performed for certificates issued from that CA. 
    - For **Delta Certificate Revocation List URL**, set the internet-facing URL for the CRL that contains all revoked certificates since the last base CRL was published.
    - Select **Add**.
 4. Continue adding certificates until all root and intermediate certificates are uploaded.
@@ -165,7 +164,7 @@ To enable the certificate-based authentication in the Microsoft Entra admin cent
 
 ### Step 3. Configure the authentication binding policy
 
-The authentication binding policy helps determine the strength of authentication to either a single factor or multifactor. An Authentication Policy Administrator can change the default value from single factor to multifactor and configure custom policy rules by mapping to issuer Subject or policy OID fields in the certificate.
+The authentication binding policy helps determine the strength of authentication to either a single factor or multifactor. An Authentication Policy Administrator can change the default value from single factor to multifactor and configure custom policy rules by mapping to issuer Subject, policy OID or by combining Issuer Subject and Policy OID fields in the certificate.
 
 Authentication binding rules map certificate attributes, such as Issuer, Policy OID, or Issuer and Policy OID, to a value and select default protection level for that rule. You can create multiple rules.
 
@@ -175,7 +174,7 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 ![Configure Binding]({{site.baseurl}}/assets/playbooks/cba/CBAP4.png)
 
-2. The protection level attribute has a default value of **Single-factor authentication**. Select **Multifactor authentication** to change the default value to MFA. This change will ensure all users authenticating to the tenant have their logon sessions stamped as X.509, Multifactor logins for the duration of their session.
+2. The protection level attribute has a default value of **Single-factor authentication**. Selecting **Multifactor authentication** changes the default value to MFA. This change will cause all users authenticating to the tenant with Entra ID CBA to have their logon sessions stamped as X.509, Multifactor logins for the duration of their session. It is recommended to keep the default protection level as **single factor** and use custom authentication binding rules with Issuer Subject, Policy OID or combination of Issuer Subject & Policy OID to specifically control the issuance of MFA claim for Entra ID CBA authentication. 
 3. Select the **Low** affinity binding here.
 
 **Note** -- You can also set up custom authentication binding rules. Follow the relevant Microsoft documentation to configure custom rules.
@@ -184,7 +183,7 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 ### Step 4. Configure username binding policy
 
-1. Create the username binding by selecting one of the X.509 certificate fields to bind with one of the user attributes. The username binding order represents the priority level of the binding. The first one has the highest priority and so on.
+1. Create the username binding by selecting one of the X.509 certificate fields to bind with one of the user attributes. 
 
 ![Username Binding]({{site.baseurl}}/assets/playbooks/cba/CBAP6.png)
 
@@ -194,11 +193,11 @@ To enable CBA and configure user bindings in the Microsoft Entra admin center, c
 
 3. In this next step, you tell CBA which field on your X.509 cert matches a specific field for your user's account. So, select either the **userPrincipalName** or the **OnPremisesUserPrincipalName** field to map to and select **Save**.
 
-> **Note** -- The **OnPremisesUserPrincipalName** field can often resolve mapping issues the **userPrincipalName** field can't, so review your Certificate mappings carefully to determine the best approach.
+> **Note** -- Using the **certificateUserIDs** property with the PrincipalName mapping (X509:<PN>Bob@AGENCY.GOV) field can often resolve mapping issues the **userPrincipalName** field can't, so review your Certificate mappings carefully to determine the best approach. **OnPremisesUserPrincipalName** may also be an option. 
 
 ![User Account Mapping]({{site.baseurl}}/assets/playbooks/cba/CBAP8.png)
 
-**Note** -- Your ** CertficateUserIds **, which determines how your user accounts are configured to determine your mapping strategy, can be found under the **Authorization Info** field.
+**Note** -- Your **CertficateUserIds**, which determines how your user accounts are configured to determine your mapping strategy, can be found under the **Authorization Info** field.
 
 ![User Account Configuration]({{site.baseurl}}/assets/playbooks/cba/CBAP9.png)
 
@@ -209,6 +208,8 @@ After completing this section, your final settings should look like this.
 ### Step 5. Login with your certificate to test CBA
 
 1. Now login with an account you've added to your target group in Step 2 above. In this case, the user should be in the AZ.CBA-Users group to be targeted for CBA. You can use portal.azure.com as your test login location and you should see the following prompt -- you may see a different prompt if you have other authentication methods enabled.
+
+**Note** -- If the user is on a Hybrid or Entra Joined Windows device and has signed into the Windows desktop/session with PIV, by default the user will obtain a [Primary Refresh Token (PRT)](https://learn.microsoft.com/en-us/entra/identity/devices/concept-primary-refresh-token){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and have a single sign-on (SSO) expereince. The PRT also faciliates application of conditional access policies with MFA/Authentication Strength and device grant controls such as requiring that a user is only able to access a specific application(s) having authenticated with a PIV, from a Hybrid Entra joined or compliant device. 
 
 ![Login Prompt]({{site.baseurl}}/assets/playbooks/cba/CBAP11.png)
 
