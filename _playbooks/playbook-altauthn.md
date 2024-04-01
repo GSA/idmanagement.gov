@@ -644,7 +644,7 @@ The next natural step is to plan and deploy a pilot. The FIDO2 CoA outlined a si
 
 ### Lifecycle Management
 
-All authenticators follow a similar lifecycle management process. For specific lifecycle questions regarding Derived PIV authenticators, see [NIST Special Publication 800–157](https://csrc.nist.gov/publications/detail/sp/800-157/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls covering account lifecycle management.
+All authenticators follow a similar lifecycle management process. For specific lifecycle questions regarding Derived PIV authenticators, see [NIST Special Publication 800–157](https://csrc.nist.gov/news/2014/draft-sp-800-157-and-draft-nistir-7981-are-now-ava){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A FIDO authenticator is registered to an account with most agencies following NIST Special Publication 800-53 controls covering account lifecycle management.
 
 There are three lifecycle stages for a non-PKI authenticator, including FIDO. As part of lifecycle management, integrate help desk personnel on both pilot and implementation planning.
 
