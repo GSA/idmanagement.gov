@@ -1,7 +1,9 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": []
+        "new_certs": [
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:112618528111711298987738388977170889060396050464"
+        ]
     },
     "issuers": [
         "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
@@ -1721,6 +1723,45 @@
                     "common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US",
                     "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US",
                     "common_name:Senate PIV-I CA G6,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
+                ]
+            },
+            "aia-entries": {
+                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
+                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
+                    "common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US",
+                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
+                    "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "112618528111711298987738388977170889060396050464",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {
+                "http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c": [
+                    "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
+                    "common_name:IGC CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+                    "common_name:IGC Device CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+                    "common_name:IGC Device CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+                    "common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos",
+                    "common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US",
+                    "common_name:IGC Server CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+                    "common_name:VA Patient Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+                    "common_name:VA Provider Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
                 ]
             },
             "aia-entries": {
