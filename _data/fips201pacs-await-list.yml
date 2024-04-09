@@ -1,8 +1,8 @@
 # PACS Solutions Awaiting Approval
 # File: _data/fips201pacs-await-list.yml
 # Page Use: https://www.idmanagement.gov/fips201/
-# Updated on: Clayton Barnette and Nelson Ross 
-# Updated by: 
+# Updated on: 04/09/2024
+# Updated by: Clayton Barnette
 #
 # Legend:
 #  position: sequential numbers from 1 to nth#
@@ -21,26 +21,26 @@
 #   teststatus: [string] 
 
 - position: 1	
-  solution: Gallagher PIV Command Center with HID Global Validation		
-  aplnumbers: 10019 & 10020
-  state: Update
-  teststatus: In queue
-
-- position: 2	
-  solution: Datawatch + HID pivCLASS	
+  solution: NAPCO Security		
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 3	
-  solution: AMAG Symmetry Professional + HID Global Validation System
-  aplnumbers: 10047 & 10048
+- position: 2	
+  solution: Genetec Security Center – Synergis with HID Global Validation System	
+  aplnumbers: 10061 & 10062
   state: Update
   teststatus: In queue
 
+- position: 3	
+  solution: Datawatch + HID pivCLASS
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
 - position: 4	
-  solution: Genetec Security Center – Synergis with HID Global Validation System
-  aplnumbers: 10061 & 10062
+  solution: AMAG Symmetry Professional + HID Global Validation System
+  aplnumbers: 10047 & 10048
   state: Update
   teststatus: In queue
 
@@ -51,8 +51,8 @@
   teststatus: In queue
 
 - position: 6	
-  solution: NAPCO Security
-  aplnumbers: New
-  state: New
+  solution: DAQ Starwatch SMS 6.90 with HID pivCLASS
+  aplnumbers: 10071 & 10072
+  state: Update
   teststatus: In queue
 
