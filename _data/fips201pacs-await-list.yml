@@ -52,7 +52,7 @@
 
 - position: 6	
   solution: DAQ Starwatch SMS 6.90 with HID pivCLASS
-  aplnumbers: New
-  state: New
+  aplnumbers: 10071 & 10072
+  state: Update
   teststatus: In queue
 
