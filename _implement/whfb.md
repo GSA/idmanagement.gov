@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Configure Windows Hello for Business in Azure AD
+title: Configure Windows Hello for Business in Microsoft Entra ID
 type: Markdown
 permalink: /implement/whfb/
 description: Windows Hello for Business (WHfB) is a playbook to guide administrators through planning, configuring, testing, and implementation. 
@@ -90,11 +90,11 @@ August 14, 2023 -->
 | 1.1 | 08/14/2023 | Remove security key as an option. Add a "why" section and lessons learned. |
 | 1.0 | 05/25/2023 | Initial Draft. | -->
 
-The purpose of this playbook is to guide ICAM program managers and Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Active Directory. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. WHfB offers two-factor authentication by combining a device authenticator (something you have) and either a PIN (something you know) or a biometric (something you are).
+The purpose of this playbook is to guide ICAM program managers and Microsoft Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Microsoft Entra ID. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. WHfB offers two-factor authentication by combining a device authenticator (something you have) and either a PIN (something you know) or a biometric (something you are).
 
 ## Why Windows Hello for Business
 
-Windows Hello for Business is a phishing-resistant FIDO2 platform authenticator native to Azure AD that does not require additional hardware or software. It is an alternative authenticator for use cases where using PIV is impractical. An agency could also develop a Derived PIV solution for WHfB requiring PIV authentication before registering WHfB. Some everyday use cases where PIV is impractical or unavailable may include the following:
+Windows Hello for Business is a phishing-resistant FIDO2 platform authenticator native to Microsoft Entra ID that does not require additional hardware or software. It is an alternative authenticator for use cases where using PIV is impractical. An agency could also develop a Derived PIV solution for WHfB requiring PIV authentication before registering WHfB. Some everyday use cases where PIV is impractical or unavailable may include the following:
 
 1. Agency staff completing a fitness determination and eligible to begin work. However, issuing a PIV card may take weeks or months due to supply chain issues or proximity to a PIV issuance station.
 2. Agency staff who've lost or damaged their PIV card and need a temporary authenticator until they can get a new PIV card.
@@ -107,8 +107,8 @@ Traditionally in these scenarios, agencies leverage a policy exception process w
 
 The FIDO2 Community of Action is an Office of Management and Budget initiative to help agencies rapidly replace exception authenticators with a phishing-resistant alternative either as an alternative or a backup authenticator. The most common authenticators piloted by the CoA agencies include WHfB, FIDO2 security keys, and Derived PIV on a government mobile device or a FIDO2 security key. For common questions with WHfB, see the FAQs. Below is a list of lessons learned from CoA agencies in the piloting and production use of WHfB.
 
-1. Depending on the size of your agency, the prerequisites to using WHfB could be a major technology shift. The most time-intensive activity includes migrating device management to Azure AD, or a hybrid Azure join, which also means becoming comfortable with leveraging Azure group policies over traditional Microsoft Group Policy Object.
-2. Migrating to a complete cloud Azure configuration with Azure joined devices is possible for agencies with a small on-premise Active Directory footprint. This alleviates the risk of Active Directory vulnerabilities, but agencies must ensure they have the right talent and understanding of Azure AD operations and constraints.
+1. Depending on the size of your agency, the prerequisites to using WHfB could be a major technology shift. The most time-intensive activity includes migrating device management to Microsoft Entra ID, or a Microsoft Entra Hydrid join, which also means becoming comfortable with leveraging Azure group policies over traditional Microsoft Group Policy Object.
+2. Migrating to a complete cloud Azure configuration with Microsoft Entra joined devices is possible for agencies with a small on-premise Microsoft Entra ID footprint. This alleviates the risk of Microsoft Entra ID vulnerabilities, but agencies must ensure they have the right talent and understanding of Entra ID operations and constraints.
 3. Most agencies have adequate licensing (usually E3 or E5) to leverage conditional access policies and automated device enrollment. It is not required to use WHfB but does help with other security priorities to integrate device-level signals and better user experience.
 4. Once enabled, WHfB provides a more natural authentication experience when using biometrics. Biometrics requires a compatible Windows device.
 5. WHfB is only supported on Windows devices as of June 16th, 2023. For phishing-resistant MFA on mobile devices to Azure, only security keys is supported.
@@ -129,23 +129,23 @@ The available sign-in options for Windows Hello for Business include the followi
 - Fingerprint recognition
 - PIN (for use as a backup in case the biometric authentication fails or in the absence of camera/fingerprint scanning technology)
 
-WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Azure Active Directory (Azure AD) User Principal Name and Password combination. Device PIN creation establishes a trusted relationship with the identity provider (Azure AD). It also creates an asymmetric key pair that is used for authentication. Transmittal of the public key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts. Biometric data is stored locally on the device and never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
+WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Microsoft Entra ID (ME-ID) User Principal Name and Password combination. Device PIN creation establishes a trusted relationship with the identity provider (ME-ID). It also creates an asymmetric key pair that is used for authentication. Transmittal of the public key to the authentication server completes the sign-in request. When paired with a Trusted Platform Module (TPM) chip, tamper protection is enabled. This feature protects the key material from attackers and locks the device after too many incorrect PIN attempts. Biometric data is stored locally on the device and never sent to external devices or servers. As stated previously, authentication occurs via the asymmetric key. Users can delete or remove their biometric information by visiting **Settings** \> **Accounts** \> **Sign-in options.**
 
 ## Assumptions
-This playbook assumes that devices are cloud-only joined and that no hybrid configuration with Active Directory exists. Hybrid deployments come in multiple designs with constraints based on on-premise components. This playbook is meant to support agencies in implementing the Federal Zero Trust Strategy action steps for application action and reducing the use of network authentication. Deploying Windows Hello for Business in a [hybrid environment](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification#hybrid-deployments){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} comes in four configurations driven by how devices are managed. 
+This playbook assumes that devices are cloud-only joined and that no hybrid configuration with Microsoft Entra ID exists. Hybrid deployments come in multiple designs with constraints based on on-premise components. This playbook is meant to support agencies in implementing the Federal Zero Trust Strategy action steps for application action and reducing the use of network authentication. Deploying Windows Hello for Business in a [hybrid environment](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification#hybrid-deployments){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} comes in four configurations driven by how devices are managed. 
 1. Cloud kerberos trust
 2. Key trust
 3. Certificate trust, mixed managed
 4. Certificate Trust, modern managed
 
-These hybrid deployments require configuring Azure AD Connect, Azure AD Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Active Directory, or a hybrid certificate trust deployment, which requires Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended.
+These hybrid deployments require configuring Microsoft Entra Connect, Microsoft Entra Kerberos and deploying either a Cloud Trust Device Configuration Profile in Microsoft Intune (Intune), a Key trust deployment in on-premises Microsoft Entra ID, or a hybrid certificate trust deployment, which requires <!-- No name change for ADSF --> Active Directory Federated Services (ADFS). Of these three hybrid options, the Cloud Kerberos trust deployment is recommended.
 
 ## Prerequisites
 For cloud-joined deployment, this playbook assumes that:
 - all devices have a TPM 2.0 module that complies with Federal Information Processing Standards (FIPS). All devices should be on Windows 10 version 1709 (or later) or Windows 11. Preferably, all devices should be Windows 10 version 1903 or later.
 - Devices are equipped with an infrared camera or fingerprint reader for biometric authentication.
 - Microsoft Intune (Intune) is the Windows MDM solution.
-- Not required, but it's preferable that all users have an Azure AD Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Azure AD. Azure AD Premium P1 licenses also grant access to Azure AD Multi-Factor Authentication (MFA) through Conditional Access policies.
+- Not required, but it's preferable that all users have an Microsoft Entra Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Entra ID. Microsoft Entra Premium P1 licenses also grant access to Microsoft Entra multifactor authentication (MFA) through Conditional Access policies.
 
 ## Technology and terms
 
@@ -153,38 +153,38 @@ See this Microsoft primer on [Introduction to device identity and join types](ht
 
 **Join type**
 
-Join type refers to how devices are associated with Azure AD. For a device to authenticate to Azure AD, it must be registered or joined.
+Join type refers to how devices are associated with Entra ID. For a device to authenticate to Microsoft Entra ID, it must be registered or joined.
 
-Registering a device to Azure AD enables you to manage a device's identity. When a device is registered, Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs in to Azure AD. You can use the identity to enable or disable a device.
+Registering a device to Microsoft Entra ID enables you to manage a device's identity. When a device is registered, Microsoft Entra ID device registration provides the device with an identity that is used to authenticate the device when a user signs in to Microsoft Entra ID. You can use the identity to enable or disable a device.
 
-When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Azure AD are updated with additional information about the device. This feature allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance. For more information on enrolling devices in Microsoft Intune, see [Enroll devices for management in Intune](https://learn.microsoft.com/en-us/mem/intune/enrollment/device-enrollment-manager-enroll){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} in Intune.
+When combined with a mobile device management (MDM) solution such as Microsoft Intune, the device attributes in Microsoft Entra ID are updated with additional information about the device. This feature allows you to create conditional access rules that enforce access from devices to meet your standards for security and compliance. For more information on enrolling devices in Microsoft Intune, see [Enroll devices for management in Intune](https://learn.microsoft.com/en-us/mem/intune/enrollment/device-enrollment-manager-enroll){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} in Intune.
 
 Joining a device is an extension to registering a device. It provides you with all the benefits of registering a device and changes the local state of a device. Changing the local state enables users to sign in to a device using an organizational, work, or school account instead of a personal account.
 
-**Azure AD registration**
+**Microsoft Entra ID registration**
 
-Azure AD registered devices support the bring your own device (BYOD) scenario. In BYOD, a user can access your organization's Azure AD controlled resources using a personal device.
+Microsoft Entra ID registered devices support the bring your own device (BYOD) scenario. In BYOD, a user can access your organization's Microsoft Entra ID controlled resources using a personal device.
 
-Learn more about Azure AD registered devices [here](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Azure AD registered devices here"}.
+Learn more about Microsoft Entra ID registered devices [here](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Learn more about Microsoft Entra ID registered devices here"}.
 
-**Azure AD join**
+**Microsoft Entra ID join**
 
-Azure AD join is intended for organizations that desire to be cloud-first or cloud-only. There's no restriction on the size or type of organizations that can deploy Azure AD join. Azure AD join also works in a hybrid environment and can enable access to on-premises applications and resources.
+Microsoft Entra ID join is intended for organizations that desire to be cloud-first or cloud-only. There's no restriction on the size or type of organizations that can deploy Microsoft Entra ID join. Microsoft Entra ID join also works in a hybrid environment and can enable access to on-premises applications and resources.
 
-Learn more about [Azure AD joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Azure AD joined devices"}.
+Learn more about [Microsoft Entra ID joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Microsoft Entra ID joined devices"}.
 
-**Hybrid Azure AD join**
+**Microsoft Entra ID Hybrid join**
 
-For more than a decade, organizations have used the domain join to their on-premises Active Directory to enable:
+For more than a decade, organizations have used the domain join to their on-premises Microsoft Entra ID to enable:
 
 - IT departments to manage work-owned devices from a central location.
-- Users to sign in to their devices with their Active Directory work or school accounts.
+- Users to sign in to their devices with their Microsoft Entra ID work or school accounts.
 
 Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use or group policy to manage them.
 
-If your environment has an on-premises AD footprint and you want to benefit from the capabilities provided by Azure AD, you can implement hybrid Azure AD joined devices. These devices are joined to both your on-premises Active Directory and your Azure AD.
+If your environment has an on-premises AD footprint and you want to benefit from the capabilities provided by Microsoft Entra ID, you can implement Microsoft Entra Hybrid joined devices. These devices are joined to both your on-premises Microsoft Entra Hydrid and your Microsoft Entra ID.
 
-Learn more about [hybrid Azure AD joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="hybrid Azure AD joined devices"}.
+Learn more about [Microsoft Entra Hybrid joined devices](https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="Microsoft Entra Hybrid joined devices"}.
 
 **Mobile device management**
 
@@ -204,7 +204,7 @@ In establishing a policy requiring WHfB use in the workplace, you must educate u
 
 After enrolling in WHfB, users should use their gesture (such as a PIN or fingerprint) for access to corporate resources. This gesture is only valid on the enrolled device.
 
-Although the organization may require users to change their Active Directory or Azure AD account password at regular intervals, password changes will not affect WHfB.
+Although the organization may require users to change their Microsoft Entra ID or Microsoft Entra ID account password at regular intervals, password changes will not affect WHfB.
 
 Individuals using virtual or physical smart cards for authentication can use their virtual smart card to verify their identity when they set up WHfB.
 
@@ -231,7 +231,7 @@ Suppose you sign in on  **Device B**  and change your password for your Microsof
 
 ## WHfB policy configuration
 
-Windows Hello for Business can be enabled multiple ways through Microsoft Intune. The first method is through Windows Device Enrollment. This method can be used for devices that are Azure AD joined but have not yet enrolled in Intune. The second method, Device Configuration Profile, is used for devices already enrolled in Intune.
+Windows Hello for Business can be enabled multiple ways through Microsoft Intune. The first method is through Windows Device Enrollment. This method can be used for devices that are Microsoft Entra joined but have not yet enrolled in Intune. The second method, Device Configuration Profile, is used for devices already enrolled in Intune.
 
 ## WHfB device enrollment configuration steps
 
@@ -312,7 +312,7 @@ After enabling the policy, a series of policy choices must be made. Recommended 
     <strong>Use enhanced anti-spoofing, when available</strong>: Yes
     <ol type="i">
       <li>This is a requirement of the Windows 10/11 DISA STIG baseline.</li>
-      <li>This setting only applies to Intune enrolled and Azure AD joined devices.</li>
+      <li>This setting only applies to Intune enrolled and Microsoft Entra joined devices.</li>
       <li>This setting applies to biometric facial recognition.</li>
       <li>What is anti-spoofing for facial recognition? An attacker with physical access to a Windows 10/11 device with WHfB set as the authentication method can use an Infrared (IR) photo of the user's face, save the frames to a custom USB device, and plug the USB into the computer. This tactic bypasses the built-in camera, and WHfB will search for frames on the external USB.</li>
       <li>Microsoft fixed this vulnerability in Update KB 5005478 (Windows Hello CVE-2021-34466).</li>
@@ -507,7 +507,7 @@ By default, users will be prompted for facial recognition and PIN creation if bi
 
 ## First time setup for new device/PIN creation
 
-Enter the username and password for an Azure AD user on a Windows 10 or 11 device, as shown in Figure 14.
+Enter the username and password for an Microsoft Entra ID user on a Windows 10 or 11 device, as shown in Figure 14.
 
 **Figure 14: Windows Sign-in**
 
