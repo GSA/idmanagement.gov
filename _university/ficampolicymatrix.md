@@ -79,7 +79,7 @@ Laws are sorted by date, from oldest to newest.
 
 Click on the name of a law or directive to see more details about it, and for a link to the law itself.
 
-{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | group_by: "authored-by" %}
+{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | sort: "authored-by" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
