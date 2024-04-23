@@ -30,7 +30,44 @@ Laws, executive policies, regulations, and government standards drive multiple f
 
 ## Policy Overview
 
-The policy map below presents a visual overview of the laws, policies and standards relevant to FICAM. The documents are organized according to the government body that produced it, and the relationships between the documents are illustrated by arrows connecting them.
+The FICAM policy map below presents a visual overview of the laws, policies and standards relevant to FICAM. The documents are organized according to the government body that produced it, and the relationships between the documents are illustrated by arrows connecting them.
+
+Use the legend below in conjuction with the FICAM policy map to navigate to your desired information. 
+
+<style>
+  /* for legend pointer */
+  tr.rowhover:hover {
+    background-color: #cfcfcf;
+    cursor: pointer;
+  }
+</style>
+<table width="75%" style="border:1px solid #c0c0c0;">
+  <tr>
+    <th style="background-color: #dfe1e2;text-align:center;" colspan="2"><strong>Legend</strong></th>
+  </tr>
+  <tr>
+    <th style="background-color: #dfe1e2;"><strong>Type</strong></th>
+    <th style="background-color: #dfe1e2;"><strong>Role</strong></th>
+  </tr>
+  <tr class="rowhover" onclick="location.href='#laws-and-directives';">
+    <td><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
+    <td>A directive issued by the Office of the Presidency providing a basis for Federal Policies.</td>
+  </tr>
+  <tr class="rowhover" onclick="location.href='#laws-and-directives';">
+    <td><span class="badge" style="color:#000;background-color:#ffcc99;padding:14px;border-size:1;border-color:#000;">Act of Congress</span></td>
+    <td>A law passed by Congress providing a basis for Federal Policies.</td>
+  </tr>
+  <tr class="rowhover" onclick="location.href='#federal-policies';">
+    <td><span class="badge" style="color:#000;background-color:#cce5ff;padding:14px;border-size:1;border-color:#000;">Federal Policy</span></td>
+    <td>Rules governing the behavior of federal agencies.</td>
+  </tr>
+  <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
+    <td><span class="badge" style="color:#000;background-color:#d8d8d8;padding:14px;border-size:1;border-color:#000;">Technical Standard</span></td>
+    <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
+  </tr>
+</table>
+
+<br>
 
 [![Visual overview of the laws, policies and standards relevant to FICAM, organized according to the government body that produced it. The relationships between the documents are illustrated by arrows connecting them.]({{site.baseurl}}/assets/img/icam-policy-landscape-map.png)]({{site.baseurl}}/university/policymap/){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -42,7 +79,7 @@ Laws are sorted by date, from oldest to newest.
 
 Click on the name of a law or directive to see more details about it, and for a link to the law itself.
 
-{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" %}
+{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | sort: "authored-by" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -54,14 +91,24 @@ Click on the name of a law or directive to see more details about it, and for a 
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
+
 {%- for document in sorted_laws %}
+
+{% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
+  {% assign lawcolor = "#cdeb8b" %}
+{% endif %}
+
+{% if document.authored-by[0].shortName == "U.S. Congress" and document.type == "Law" %}
+  {% assign lawcolor = "#ffcc99" %}
+{% endif %}
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0">
+  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0" style="border-color: {{lawcolor}}">
         <p>{% if document.published %} Date: {{document.published | date_to_string }} {% endif %}</p>
         <p>
           {{document.description}}
@@ -73,6 +120,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   </div>
 </div>
 {% endfor %}
+
 <br>
 <hr/>
 
@@ -84,7 +132,7 @@ Laws are sorted by date, from oldest to newest.
 
 Click on the name of a policy to see more details about it, and for a link to the policy itself.
 
-{% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" %}
+{% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" | sort: "shortName" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -96,14 +144,20 @@ Click on the name of a policy to see more details about it, and for a link to th
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
+
 {%- for policies in sorted_policies %}
+
+{% if policies.authored-by[0].shortName == "OMB" or policies.authored-by[0].shortName == "DNI" or policies.authored-by[0].shortName == "OPM" %}
+  {% assign polcolor = "#cce5ff" %}
+{% endif %}
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{polcolor}}">
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
+  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}}">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -113,6 +167,7 @@ Click on the name of a policy to see more details about it, and for a link to th
   </div>
 </div>
 {% endfor %}
+
 <br>
 <hr/>
 
@@ -122,7 +177,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
 
 Click on the name of a guidance document to see more details about it, and for a link to the document itself.
 
-{% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" %}
+{% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "shortName" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -135,14 +190,18 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
+
 {%- for guidance in sorted_guidance %}
+
+{% assign guicolor = "#d8d8d8" %}
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}" style="background-color: {{guicolor}}">
       <strong>{{guidance.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}}">
         <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
         <p>{{guidance.description}}</p>
         <hr/>
@@ -152,3 +211,17 @@ Click on the name of a guidance document to see more details about it, and for a
   </div>
 </div>
 {% endfor %}
+
+
+### Annual Updates
+
+Annually and throughout the year, when documents from this authoring organization are updated, deprecated, or superseded, a schedule of when each affected document is expected to be replaced or updated by this authoring organization will be placed below. 
+
+Please return to this section often to ensure you are accessing the most up-to-date information.     
+
+<hr>
+
+- No document updates at this time. 
+
+<br>
+<br><br>
