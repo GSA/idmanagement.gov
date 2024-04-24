@@ -250,18 +250,13 @@ Click on the name of a guidance document to see more details about it, and for a
 | [ {{guidance.shortName}} ]({{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}) | {{ guidance.description }} | {{guidance.published | date_to_string }} |
 {%-  endfor %} -->
 
-{% if guidance.authored-by[0].shortName == "GSA" or guidance.authored-by[0].shortName == "CIOC" or guidance.authored-by[0].shortName == "ICAMSC"  or guidance.authored-by[0].shortName == "FPKIPA" %}
-{% endif %}
-
-{% if guidance.authored-by[0].shortName == "NIST" or guidance.authored-by[0].shortName == "ISC" or guidance.authored-by[0].shortName == "NSA"  or guidance.authored-by[0].shortName == "FedRAMP"%}
-  {% assign guicolor = "rgb(216, 216, 216)" %}
-{% endif %}
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
 {%- for authority in guidance_authority %}
+<h2>{{authority.shortName}}</h2>
 {%- for guidance in sorted_guidance | group_by:guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
