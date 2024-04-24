@@ -96,7 +96,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for document in sorted_laws | group_by: authored_by %}
+{%- for document in sorted_laws | group_by: "shortName" %}
 
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
   {% assign lawcolor = "#cdeb8b" %}
