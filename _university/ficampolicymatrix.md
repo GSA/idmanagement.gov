@@ -181,7 +181,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
 
 Click on the name of a guidance document to see more details about it, and for a link to the document itself.
 
-{% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "longName" | group_by: "shortName" %}
+{% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "longName" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -195,7 +195,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for guidance in sorted_guidance %}
+{%- for guidance in sorted_guidance | group_by:guidance.longName %}
 
 {% if guidance.authored-by[0].shortName == "GSA" or guidance.authored-by[0].shortName == "CIOC" or guidance.authored-by[0].shortName == "ICAMSC"  or guidance.authored-by[0].shortName == "FPKIPA" %}
   {% assign guicolor = "rgb(221, 214, 229)" %}
