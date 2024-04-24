@@ -242,7 +242,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
 Click on the name of a guidance document to see more details about it, and for a link to the document itself.
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "longName" %}
-{% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" | sort: "shortName" %}
+{% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" | where: shortName, sorted_guidance.shortName %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -255,7 +255,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for authority in guidance_authority | where: guidance.type == "Guidance" %}
+{%- for authority in guidance_authority %}
 <h2>{{authority.shortName}}</h2>
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
