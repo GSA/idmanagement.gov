@@ -257,8 +257,8 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for authority in guidance_authority | where: authority.shortName != "White House" | where: authority.shortName != "U.S. Congress" %}
 <h2>{{authority.shortName}}</h2>
-{%- for guidance in sorted_guidance | group_by:guidance.longName %}
-{% if guidance.authored-by[0].shortName == authority.shortName and guidance.authored-by != nil %}
+{%- for guidance in sorted_guidance | group_by: guidance.longName %}
+{% if guidance.authored-by[0].shortName == authority.shortName and guidance.type == "Guidance" %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
