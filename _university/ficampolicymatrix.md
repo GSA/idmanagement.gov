@@ -66,7 +66,7 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
     <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td><span class="badge" style="color:#000;background-color:#ddde65;padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
+    <td><span class="badge" style="color:#000;background-color:rgb(221, 214, 229);padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
     <td> [SHORT TEXT NEEDED] </td>
   </tr>
 </table>
