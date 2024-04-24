@@ -149,7 +149,7 @@ Click on the name of a policy to see more details about it, and for a link to th
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for policies in sorted_policies %}
+{%- for policies in sorted_policies | group_by: policies.longName %}
 
 {% if policies.authored-by[0].shortName == "OMB" or policies.authored-by[0].shortName == "DNI" or policies.authored-by[0].shortName == "OPM" %}
   {% assign polcolor = "#cce5ff" %}
