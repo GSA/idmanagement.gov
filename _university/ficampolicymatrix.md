@@ -170,11 +170,8 @@ Click on the name of a policy to see more details about it, and for a link to th
 </ul>
 
 {%- for policies in sorted_policies | group_by: policies.longName %}
-
-{% if policies.authored-by[0].shortName == "OMB" or policies.authored-by[0].shortName == "DNI" or policies.authored-by[0].shortName == "OPM" %}
-  {% assign polcolor = "#cce5ff" %}
-{% endif %}
-
+{% if policies.authored-by[0].shortName == "DNI" %}
+{% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{polcolor}}">
@@ -190,6 +187,49 @@ Click on the name of a policy to see more details about it, and for a link to th
         </div>
   </div>
 </div>
+{% endif %}
+{% endfor %}
+
+{%- for policies in sorted_policies | group_by: policies.longName %}
+{% if policies.authored-by[0].shortName == "OMB" %}
+{% assign polcolor = "#cce5ff" %}
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{polcolor}}">
+      <strong>{{policies.longName}}</strong> 
+    </button>
+  </h4>
+  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}}">
+        <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
+        <p>{{policies.description}}</p>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">  
+          <span class="gsa-source usa-link">Source: {{policies.shortName}}</span>
+        </div>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+{%- for policies in sorted_policies | group_by: policies.longName %}
+{% if policies.authored-by[0].shortName == "OPM" %}
+{% assign polcolor = "#cce5ff" %}
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{polcolor}}">
+      <strong>{{policies.longName}}</strong> 
+    </button>
+  </h4>
+  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}}">
+        <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
+        <p>{{policies.description}}</p>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">  
+          <span class="gsa-source usa-link">Source: {{policies.shortName}}</span>
+        </div>
+  </div>
+</div>
+{% endif %}
 {% endfor %}
 
 <br>
