@@ -242,6 +242,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
 Click on the name of a guidance document to see more details about it, and for a link to the document itself.
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "longName" %}
+{% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" | sort: "shortName" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -249,22 +250,21 @@ Click on the name of a guidance document to see more details about it, and for a
 | [ {{guidance.shortName}} ]({{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}) | {{ guidance.description }} | {{guidance.published | date_to_string }} |
 {%-  endfor %} -->
 
-
-<ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
-  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
-  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
-</ul>
-
-{%- for guidance in sorted_guidance | group_by:guidance.longName %}
-
 {% if guidance.authored-by[0].shortName == "GSA" or guidance.authored-by[0].shortName == "CIOC" or guidance.authored-by[0].shortName == "ICAMSC"  or guidance.authored-by[0].shortName == "FPKIPA" %}
-  {% assign guicolor = "rgb(221, 214, 229)" %}
 {% endif %}
 
 {% if guidance.authored-by[0].shortName == "NIST" or guidance.authored-by[0].shortName == "ISC" or guidance.authored-by[0].shortName == "NSA"  or guidance.authored-by[0].shortName == "FedRAMP"%}
   {% assign guicolor = "rgb(216, 216, 216)" %}
 {% endif %}
+<ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
+  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
+</ul>
 
+{%- for authority in guidance_authority %}
+{%- for guidance in sorted_guidance | group_by:guidance.longName %}
+{% if guidance.authored-by[0].shortName == authority.shortName %}
+{% assign guicolor = "rgb(216, 216, 216)" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}" style="background-color: {{guicolor}}">
@@ -280,7 +280,9 @@ Click on the name of a guidance document to see more details about it, and for a
         </div>
   </div>
 </div>
+{% endif %}
 {% endfor %}
+% endfor %
 
 
 ### Annual Updates
