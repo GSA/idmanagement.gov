@@ -255,10 +255,10 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for authority in guidance_authority | where: authority.shortName, sorted_guidance.shortName | sort: shortName %}
+{%- for authority in sorted_guidance.shortName %}
 <h2>{{authority.shortName}}</h2>
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
-{% if guidance.authored-by[0].shortName == authority.shortName %}
+{% if guidance.authored-by[0].shortName %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
