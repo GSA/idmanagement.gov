@@ -255,8 +255,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for authority in guidance_authority | sort: shortName %}
-{% if sorted_guidance.shortName == authority.shortName %}
+{%- for authority in guidance_authority | where: authority.shortName, sorted_guidance.shortName | sort: shortName %}
 <h2>{{authority.shortName}}</h2>
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
@@ -278,7 +277,6 @@ Click on the name of a guidance document to see more details about it, and for a
 </div>
 {% endif %}
 {% endfor %}
-{% endif %}
 {% endfor %}
 
 
