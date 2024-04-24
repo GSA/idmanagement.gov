@@ -99,12 +99,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 {%- for document in sorted_laws | group_by: document.authored-by[0].shortName %}
 
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
-  {% assign lawcolor = "#cdeb8b" %}
-{% endif %}
-
-{% if document.authored-by[0].shortName == "U.S. Congress" and document.type == "Law" %}
-  {% assign lawcolor = "#ffcc99" %}
-{% endif %}
+{% assign lawcolor = "#cdeb8b" %}
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
@@ -123,6 +118,31 @@ Click on the name of a law or directive to see more details about it, and for a 
         </div>
   </div>
 </div>
+{% endif %}
+{% endfor %}
+
+{%- for document in sorted_laws | group_by: document.authored-by[0].shortName %}
+{% if document.authored-by[0].shortName == "U.S. Congress" and document.type == "Law" %}
+{% assign lawcolor = "#ffcc99" %}
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
+      <strong>{{document.longName}}</strong> 
+    </button>
+  </h4>
+  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0" style="border-color: {{lawcolor}}">
+        <p>{% if document.published %} Date: {{document.published | date_to_string }} {% endif %}</p>
+        <p>
+          {{document.description}}
+        </p>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">  
+          <span class="gsa-source usa-link">Source: {{document.shortName}}</span>
+        </div>
+  </div>
+</div>
+{% endif %}
 {% endfor %}
 
 <br>
