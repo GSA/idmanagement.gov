@@ -254,7 +254,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for authority in sorted_guidance | uniq | where: shortName != nil %}
+{%- for authority in sorted_guidance | uniq | where: "type", "Guidance" %}
 <h2>{{authority.shortName}}</h2>
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
