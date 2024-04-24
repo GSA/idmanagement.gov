@@ -65,6 +65,10 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
     <td><span class="badge" style="color:#000;background-color:#d8d8d8;padding:14px;border-size:1;border-color:#000;">Technical Standard</span></td>
     <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
   </tr>
+  <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
+    <td><span class="badge" style="color:#000;background-color:#ddde65;padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
+    <td> [SHORT TEXT NEEDED] </td>
+  </tr>
 </table>
 
 <br>
@@ -193,7 +197,13 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for guidance in sorted_guidance %}
 
-{% assign guicolor = "#d8d8d8" %}
+{% if policies.authored-by[0].shortName == "GSA" or policies.authored-by[0].shortName == "CIOC" or policies.authored-by[0].shortName == "ICAMSC"  or policies.authored-by[0].shortName == "FPKIPA" %}
+  {% assign guicolor = "#ddde65" %}
+{% endif %}
+
+{% if policies.authored-by[0].shortName == "NIST" or policies.authored-by[0].shortName == "ISC" or policies.authored-by[0].shortName == "NSA"  or policies.authored-by[0].shortName == "FedRAMP"%}
+  {% assign guicolor = "#d8d8d8" %}
+{% endif %}
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
