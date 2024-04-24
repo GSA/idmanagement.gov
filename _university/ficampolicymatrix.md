@@ -197,11 +197,11 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for guidance in sorted_guidance %}
 
-{% if policies.authored-by[0].shortName == "GSA" or policies.authored-by[0].shortName == "CIOC" or policies.authored-by[0].shortName == "ICAMSC"  or policies.authored-by[0].shortName == "FPKIPA" %}
+{% if guidance.authored-by[0].shortName == "GSA" or guidance.authored-by[0].shortName == "CIOC" or guidance.authored-by[0].shortName == "ICAMSC"  or guidance.authored-by[0].shortName == "FPKIPA" %}
   {% assign guicolor = "rgb(221, 214, 229)" %}
 {% endif %}
 
-{% if policies.authored-by[0].shortName == "NIST" or policies.authored-by[0].shortName == "ISC" or policies.authored-by[0].shortName == "NSA"  or policies.authored-by[0].shortName == "FedRAMP"%}
+{% if guidance.authored-by[0].shortName == "NIST" or guidance.authored-by[0].shortName == "ISC" or guidance.authored-by[0].shortName == "NSA"  or guidance.authored-by[0].shortName == "FedRAMP"%}
   {% assign guicolor = "rgb(216, 216, 216)" %}
 {% endif %}
 
