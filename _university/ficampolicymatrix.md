@@ -83,7 +83,7 @@ Laws are sorted by date, from oldest to newest.
 
 Click on the name of a law or directive to see more details about it, and for a link to the law itself.
 
-{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | sort: "authored-by" %}
+{% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | sort: "longName" %}
 
 <!-- | Document | Description | Date Published |
 | --- | --- | --- |
@@ -96,7 +96,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for document in sorted_laws | group_by: document.longName %}
+{%- for document in sorted_laws | group_by: authored_by %}
 
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
   {% assign lawcolor = "#cdeb8b" %}
