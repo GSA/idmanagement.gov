@@ -256,7 +256,7 @@ Click on the name of a guidance document to see more details about it, and for a
 </ul>
 
 {%- for authority in guidance_authority | sort: authority.shortName  %}
-{% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" %}
+{% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
 <h2>{{authority.shortName}}</h2>
 {% endif %}
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
