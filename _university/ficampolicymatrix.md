@@ -257,7 +257,13 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-<h2>{{authority.shortName}}</h2>
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}" style="background-color: {{guicolor}}">
+      <strong>{{authority.shortName}}</strong> 
+    </button>
+  </h4>
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}}">
 {% endif %}
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
@@ -279,6 +285,8 @@ Click on the name of a guidance document to see more details about it, and for a
 </div>
 {% endif %}
 {% endfor %}
+  </div>
+</div>
 {% endfor %}
 
 
