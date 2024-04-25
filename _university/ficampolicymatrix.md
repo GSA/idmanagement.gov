@@ -101,16 +101,16 @@ Click on the name of a law or directive to see more details about it, and for a 
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
 {% assign lawcolor = "#cdeb8b" %}
 <style>
- .whhover:hover {
-  background-color: #d5e8d4;
- }
- .congresshover:hover {
-  background-color: #ffe6cc;
- }
+  .whitehouse {
+    background-color: #cdeb8b;
+  }
+  .whitehouse:hover {
+    background-color: #d5e8d4;
+  }
 </style>
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading ">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header whhover" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header whitehouse" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
