@@ -91,18 +91,33 @@ Click on the name of a law or directive to see more details about it, and for a 
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
 {%- endfor %} -->
 <style>
+  /* For White House Accordions */
   .whitehouse {
     background-color: #cdeb8b;
   }
   .whitehouse:hover {
-    background-color: #b4cf79;
+    background-color: #b4cf79; /* New */
   }
-
+  /* For Congress Accordions */
   .congress {
     background-color: #ffcc99;
   }
   .congress:hover {
-    background-color: #e2b588;
+    background-color: #e2b588; /* New */
+  }
+  /* For Federal Accordions */
+  .federal {
+    background-color: #cce5ff;
+  }
+  .federal:hover {
+    background-color: #b2cae2; /* New */
+  }
+  /* For Guidance Accordions */
+  .guidance {
+    background-color: #d8d8d8;
+  }
+  .guidance:hover {
+    background-color: #bbbbbb; /* New */
   }
 </style>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
@@ -188,7 +203,7 @@ Click on the name of a policy to see more details about it, and for a link to th
 {% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}" style="background-color: {{polcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header federal" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}">
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
@@ -209,7 +224,7 @@ Click on the name of a policy to see more details about it, and for a link to th
 {% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}" style="background-color: {{polcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header federal" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}">
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
@@ -230,7 +245,7 @@ Click on the name of a policy to see more details about it, and for a link to th
 {% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}" style="background-color: {{polcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header federal" aria-expanded="false" aria-controls="gsa-c{{forloop.index}}">
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
@@ -285,7 +300,7 @@ Click on the name of a guidance document to see more details about it, and for a
 {% assign guicolor = "rgb(216, 216, 216)" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-e{{forloop.index}}" style="background-color: {{guicolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-expanded="false" aria-controls="gsa-e{{forloop.index}}">
       <strong>{{guidance.longName}}</strong> 
     </button>
   </h4>
