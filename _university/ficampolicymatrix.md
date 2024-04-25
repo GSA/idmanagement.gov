@@ -47,7 +47,7 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
   </tr>
   <tr>
     <th style="background-color: #dfe1e2;"><strong>Type</strong></th>
-    <th style="background-color: #dfe1e2;" colspan="3"><strong>Role</strong></th>
+    <th style="background-color: #dfe1e2;" colspan="2"><strong>Role</strong></th>
   </tr>
   <tr class="rowhover" onclick="location.href='#laws-and-directives';">
     <td><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
