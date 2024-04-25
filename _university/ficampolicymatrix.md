@@ -91,10 +91,10 @@ Click on the name of a law or directive to see more details about it, and for a 
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
 {%- endfor %} -->
 <style>
-  whitehouse {
+  .whitehouse {
     background-color: #cdeb8b;
   }
-  whitehouse:hover {
+  .whitehouse:hover {
     background-color: #b4cf79;
   }
 </style>
