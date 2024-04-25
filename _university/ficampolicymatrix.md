@@ -284,9 +284,9 @@ Click on the name of a guidance document to see more details about it, and for a
   </div>
 </div>  
 {% endif %}
+</div>
 {% endfor %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-</div>
 </div>
 {% endif %}
 {% endfor %}
