@@ -295,7 +295,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0">
 {% endif %}
 <!-- Start of internal accordions -->
-{%- for guidance in sorted_guidance | group_by: guidance.longName %}
+{%- for guidance in sorted_guidance | group_by: guidance.shortName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
 <div class="usa-accordion usa-accordion--bordered">
