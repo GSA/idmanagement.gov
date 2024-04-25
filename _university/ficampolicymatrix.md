@@ -50,24 +50,25 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
     <th style="background-color: #dfe1e2;"><strong>Role</strong></th>
   </tr>
   <tr class="rowhover" onclick="location.href='#laws-and-directives';">
-    <td><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
+    <td colspan=2><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
     <td>A directive issued by the Office of the Presidency providing a basis for Federal Policies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#laws-and-directives';">
-    <td><span class="badge" style="color:#000;background-color:#ffcc99;padding:14px;border-size:1;border-color:#000;">Act of Congress</span></td>
+    <td colspan=2><span class="badge" style="color:#000;background-color:#ffcc99;padding:14px;border-size:1;border-color:#000;">Act of Congress</span></td>
     <td>A law passed by Congress providing a basis for Federal Policies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-policies';">
-    <td><span class="badge" style="color:#000;background-color:#cce5ff;padding:14px;border-size:1;border-color:#000;">Federal Policy</span></td>
+    <td colspan=2><span class="badge" style="color:#000;background-color:#cce5ff;padding:14px;border-size:1;border-color:#000;">Federal Policy</span></td>
     <td>Rules governing the behavior of federal agencies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td><span class="badge" style="color:#000;background-color:#d8d8d8;padding:14px;border-size:1;border-color:#000;">Technical Standard</span></td>
-    <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
+    <td colspan=2><span class="badge" style="color:#000;background-color:rgb(221, 214, 229);padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
+    <td>An entity that issues laws, policies or technical standards.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td><span class="badge" style="color:#000;background-color:rgb(221, 214, 229);padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
-    <td>An entity that issues laws, policies or technical standards.</td>
+    <td>&npsp;</td>
+    <td><span class="badge" style="color:#000;background-color:#d8d8d8;padding:14px;border-size:1;border-color:#000;">Technical Standard</span></td>
+    <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
   </tr>
 </table>
 
@@ -119,6 +120,11 @@ Click on the name of a law or directive to see more details about it, and for a 
   .guidance:hover {
     background-color: rgb(187, 187, 187); /* New */
   }
+  /* For Goverment Body - color only */
+  .govbody {
+      background-color: rgb(221, 214, 229);
+  }
+
 </style>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
@@ -286,13 +292,15 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
+{% assign govbody = "rgb(221, 214, 229)" %}
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
       <strong>{{authority.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0">
+  <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
 <!-- Start of internal accordions -->
 {%- for guidance in sorted_guidance | group_by: guidance.shortName %}
