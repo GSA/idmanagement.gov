@@ -141,7 +141,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{lawcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header congress" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
