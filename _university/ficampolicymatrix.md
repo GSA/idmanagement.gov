@@ -97,6 +97,13 @@ Click on the name of a law or directive to see more details about it, and for a 
   .whitehouse:hover {
     background-color: #b4cf79;
   }
+
+  .congress {
+    background-color: #ffcc99;
+  }
+  .congress:hover {
+    background-color: #e2b588;
+  }
 </style>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
