@@ -50,23 +50,23 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
     <th style="background-color: #dfe1e2;"><strong>Role</strong></th>
   </tr>
   <tr class="rowhover" onclick="location.href='#laws-and-directives';">
-    <td colspan=2><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
-    <td>A directive issued by the Office of the Presidency providing a basis for Federal Policies.</td>
+    <td><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
+    <td colspan=2>A directive issued by the Office of the Presidency providing a basis for Federal Policies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#laws-and-directives';">
-    <td colspan=2><span class="badge" style="color:#000;background-color:#ffcc99;padding:14px;border-size:1;border-color:#000;">Act of Congress</span></td>
-    <td>A law passed by Congress providing a basis for Federal Policies.</td>
+    <td><span class="badge" style="color:#000;background-color:#ffcc99;padding:14px;border-size:1;border-color:#000;">Act of Congress</span></td>
+    <td colspan=2>A law passed by Congress providing a basis for Federal Policies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-policies';">
-    <td colspan=2><span class="badge" style="color:#000;background-color:#cce5ff;padding:14px;border-size:1;border-color:#000;">Federal Policy</span></td>
-    <td>Rules governing the behavior of federal agencies.</td>
+    <td><span class="badge" style="color:#000;background-color:#cce5ff;padding:14px;border-size:1;border-color:#000;">Federal Policy</span></td>
+    <td colspan=2>Rules governing the behavior of federal agencies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td colspan=2><span class="badge" style="color:#000;background-color:rgb(221, 214, 229);padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
-    <td>An entity that issues laws, policies or technical standards.</td>
+    <td><span class="badge" style="color:#000;background-color:rgb(221, 214, 229);padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
+    <td colspan=2>An entity that issues laws, policies or technical standards.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td style="border-left: 1px solid #fff";border-bottom: 1px solid #fff> </td>
+    <td> </td>
     <td><span class="badge" style="color:#000;background-color:#d8d8d8;padding:14px;border-size:1;border-color:#000;">Technical Standard</span></td>
     <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
   </tr>
