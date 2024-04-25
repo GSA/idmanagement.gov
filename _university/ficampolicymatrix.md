@@ -295,7 +295,7 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-{% assign govbody = "rgb(221, 214, 229)" %}
+{% assign govbody = "rgb(221,214,229)" %}
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
@@ -306,7 +306,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
 <!-- Start of internal accordions -->
-{%- for guidance in sorted_guidance | group_by: guidance.shortName %}
+{%- for guidance in sorted_guidance | sort: guidance.shortName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
 <div class="usa-accordion usa-accordion--bordered">
