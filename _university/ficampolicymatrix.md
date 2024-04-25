@@ -96,7 +96,7 @@ Click on the name of a law or directive to see more details about it, and for a 
     background-color: #cdeb8b;
   }
   .whitehouse-border {
-    background-color: #cdeb8b;
+    border-color: #cdeb8b;
   }
   .whitehouse:hover {
     background-color: #b4cf79; /* New */
@@ -106,7 +106,7 @@ Click on the name of a law or directive to see more details about it, and for a 
     background-color: #ffcc99;
   }
   .congress-border {
-    background-color: #ffcc99;
+    border-color: #ffcc99;
   }
   .congress:hover {
     background-color: #e2b588; /* New */
@@ -116,7 +116,7 @@ Click on the name of a law or directive to see more details about it, and for a 
     background-color: #cce5ff;
   }
   .federal-border {
-    background-color: #cce5ff;
+    border-color: #cce5ff;
   }
   .federal:hover {
     background-color: #d3e5ff; /* New */
@@ -126,7 +126,7 @@ Click on the name of a law or directive to see more details about it, and for a 
     background-color: rgb(216, 216, 216);
   }
   .guidance-border {
-    background-color: rgb(216, 216, 216);
+    border-color: rgb(216, 216, 216);
   }
   .guidance:hover {
     background-color: rgb(187, 187, 187); /* New */
