@@ -263,8 +263,9 @@ Click on the name of a guidance document to see more details about it, and for a
       <strong>{{authority.shortName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" aria-label="{{guidance.longName}}" tabindex="0">
+  <div id="gsa-n{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0">
 {% endif %}
+
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
@@ -285,10 +286,12 @@ Click on the name of a guidance document to see more details about it, and for a
 </div>  
 {% endif %}
 {% endfor %}
+
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
+ </div>
 </div>
 {% endif %}
-</div>
+
 {% endfor %}
 
 
