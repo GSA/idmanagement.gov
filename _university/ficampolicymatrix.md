@@ -90,7 +90,14 @@ Click on the name of a law or directive to see more details about it, and for a 
 {%- for document in sorted_laws %}
 | [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
 {%- endfor %} -->
-
+<style>
+  whitehouse {
+    background-color: #cdeb8b;
+  }
+  whitehouse:hover {
+    background-color: #b4cf79;
+  }
+</style>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
@@ -103,7 +110,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header whitehouse" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
