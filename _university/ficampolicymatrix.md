@@ -100,17 +100,10 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
 {% assign lawcolor = "#cdeb8b" %}
-<style>
-  .whitehouse {
-    background-color: #cdeb8b;
-  }
-  .whitehouse:hover {
-    background-color: #d5e8d4;
-  }
-</style>
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header whitehouse" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
@@ -264,7 +257,6 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-<!-- Accordion for {{authority.shortName}} -->
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
