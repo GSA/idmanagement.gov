@@ -307,12 +307,13 @@ Click on the name of a guidance document to see more details about it, and for a
 {% endif %}
 <!-- Start of internal accordions -->
 {%- for guidance in sorted_guidance | sort: guidance.shortName %}
+
 {% if guidance.authored-by[0].shortName == authority.shortName %}
-{% assign guicolor = "rgb(216, 216, 216)" %}
+{% assign guicolor = "rgb(216,216,216)" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-expanded="false" aria-controls="gsa-e{{forloop.index}}">
-      <strong>{{guidance.longName}}</strong> 
+      <strong>{{guidance.longName}} - {{guidance.authored-by}}({{guidance.authored-by.size()}})</strong> 
     </button>
   </h4>
   <div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
