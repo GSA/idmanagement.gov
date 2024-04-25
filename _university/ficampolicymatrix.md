@@ -110,14 +110,14 @@ Click on the name of a law or directive to see more details about it, and for a 
     background-color: #cce5ff;
   }
   .federal:hover {
-    background-color: #b2cae2; /* New */
+    background-color: rgb(178, 202, 226); /* New */
   }
   /* For Guidance Accordions */
   .guidance {
-    background-color: #d8d8d8;
+    background-color: rgb(216, 216, 216);
   }
   .guidance:hover {
-    background-color: #bbbbbb; /* New */
+    background-color: rgb(187, 187, 187); /* New */
   }
 </style>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
