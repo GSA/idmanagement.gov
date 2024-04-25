@@ -43,11 +43,11 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
 </style>
 <table width="75%" style="border:1px solid #c0c0c0;">
   <tr>
-    <th style="background-color: #dfe1e2;text-align:center;" colspan="2"><strong>Legend</strong></th>
+    <th style="background-color: #dfe1e2;text-align:center;" colspan="3"><strong>Legend</strong></th>
   </tr>
   <tr>
     <th style="background-color: #dfe1e2;"><strong>Type</strong></th>
-    <th style="background-color: #dfe1e2;"><strong>Role</strong></th>
+    <th style="background-color: #dfe1e2;" colspan="3"><strong>Role</strong></th>
   </tr>
   <tr class="rowhover" onclick="location.href='#laws-and-directives';">
     <td><span class="badge" style="color:#000;background-color:#cdeb8b;padding:14px;border-size:1;border-color:#000;">Executive Order</span></td>
