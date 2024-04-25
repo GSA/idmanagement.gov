@@ -100,9 +100,13 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
 {% assign lawcolor = "#cdeb8b" %}
-
+<style>
+ .lawhover:hover {
+    background-color: #d5e8d4;
+ }
+</style>
 <div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
+  <h4 class="usa-accordion__heading lawhover">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
       <strong>{{document.longName}}</strong> 
     </button>
@@ -126,7 +130,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 {% assign lawcolor = "#ffcc99" %}
 
 <div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
+  <h4 class="usa-accordion__heading lawhover">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{lawcolor}}">
       <strong>{{document.longName}}</strong> 
     </button>
@@ -257,6 +261,7 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
+<!-- Accordion for {{authority.shortName}} -->
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
@@ -265,7 +270,7 @@ Click on the name of a guidance document to see more details about it, and for a
   </h4>
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0">
 {% endif %}
-
+<!-- Start of internal accordions -->
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
 {% assign guicolor = "rgb(216, 216, 216)" %}
@@ -286,7 +291,7 @@ Click on the name of a guidance document to see more details about it, and for a
 </div>  
 {% endif %}
 {% endfor %}
-
+<!-- End of internal accordions -->
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
  </div>
 </div>
