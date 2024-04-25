@@ -282,11 +282,13 @@ Click on the name of a guidance document to see more details about it, and for a
           <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span>
         </div>
   </div>
+</div>  
+</div>
 </div>
 {% endif %}
-  </div>
-</div>
+
 {% endfor %}
+
 {% endfor %}
 
 
