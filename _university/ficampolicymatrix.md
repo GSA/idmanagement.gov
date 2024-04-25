@@ -66,7 +66,7 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
     <td>An entity that issues laws, policies or technical standards.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td style="border-left: 1px solid #fff";broder-bottom: 1px solid #fff> </td>
+    <td style="border-left: 1px solid #fff";border-bottom: 1px solid #fff> </td>
     <td><span class="badge" style="color:#000;background-color:#d8d8d8;padding:14px;border-size:1;border-color:#000;">Technical Standard</span></td>
     <td>Technical specifications that describe how to implement systems in accordance with Federal Policies.</td>
   </tr>
