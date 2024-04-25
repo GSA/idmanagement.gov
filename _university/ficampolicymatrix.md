@@ -109,7 +109,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   }
 </style>
 <div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading ">
+  <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header whitehouse" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}">
       <strong>{{document.longName}}</strong> 
     </button>
@@ -133,8 +133,8 @@ Click on the name of a law or directive to see more details about it, and for a 
 {% assign lawcolor = "#ffcc99" %}
 
 <div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading lawhover">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header congresshover" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{lawcolor}}">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-b{{forloop.index}}" style="background-color: {{lawcolor}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
