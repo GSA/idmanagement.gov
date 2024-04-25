@@ -110,7 +110,7 @@ Click on the name of a law or directive to see more details about it, and for a 
     background-color: #cce5ff;
   }
   .federal:hover {
-    background-color: rgb(117, 221, 240) /* New */
+    background-color: rgb(187, 231, 255) /* New */
   }
   /* For Guidance Accordions */
   .guidance {
