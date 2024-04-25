@@ -95,7 +95,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   .whitehouse {
     background-color: #cdeb8b;
   }
-  .whitehouse-border {
+  .whitehouseborder {
     border-color: #cdeb8b;
   }
   .whitehouse:hover {
@@ -105,7 +105,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   .congress {
     background-color: #ffcc99;
   }
-  .congress-border {
+  .congressborder {
     border-color: #ffcc99;
   }
   .congress:hover {
@@ -115,7 +115,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   .federal {
     background-color: #cce5ff;
   }
-  .federal-border {
+  .federalborder {
     border-color: #cce5ff;
   }
   .federal:hover {
@@ -125,7 +125,7 @@ Click on the name of a law or directive to see more details about it, and for a 
   .guidance {
     background-color: rgb(216, 216, 216);
   }
-  .guidance-border {
+  .guidanceborder {
     border-color: rgb(216, 216, 216);
   }
   .guidance:hover {
@@ -148,7 +148,7 @@ Click on the name of a law or directive to see more details about it, and for a 
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card whitehouse-border" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0">
+  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card whitehouseborder" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0">
         <p>{% if document.published %} Date: {{document.published | date_to_string }} {% endif %}</p>
         <p>
           {{document.description}}
@@ -172,7 +172,7 @@ Click on the name of a law or directive to see more details about it, and for a 
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card congress-border" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0">
+  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card congressborder" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{document.longName}}" tabindex="0">
         <p>{% if document.published %} Date: {{document.published | date_to_string }} {% endif %}</p>
         <p>
           {{document.description}}
@@ -219,7 +219,7 @@ Click on the name of a policy to see more details about it, and for a link to th
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card federal-border" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card federalborder" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -240,7 +240,7 @@ Click on the name of a policy to see more details about it, and for a link to th
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card federal-border" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card federalborder" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -261,7 +261,7 @@ Click on the name of a policy to see more details about it, and for a link to th
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card federal-border" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card federalborder" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{policies.longName}}" tabindex="0">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -316,7 +316,7 @@ Click on the name of a guidance document to see more details about it, and for a
       <strong>{{guidance.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card guidance-border" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0">
+  <div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card guidanceborder" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0">
         <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
         <p>{{guidance.description}}</p>
         <hr/>
