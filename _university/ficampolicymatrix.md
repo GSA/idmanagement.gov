@@ -115,14 +115,17 @@ Click on the name of a law or directive to see more details about it, and for a 
   }
   /* For Guidance Accordions */
   .guidance {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(216,216,216);
   }
   .guidance:hover {
-    background-color: rgb(187, 187, 187); /* New */
+    background-color: rgb(187,187,187); /* New */
   }
   /* For Goverment Body - color only */
   .govbody {
-      background-color: rgb(221, 214, 229);
+      background-color: rgb(221,214,229);
+  }
+  .govbody:hover {
+      background-color: rgb(188,179,198);
   }
 
 </style>
