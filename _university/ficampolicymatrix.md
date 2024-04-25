@@ -260,7 +260,7 @@ Click on the name of a guidance document to see more details about it, and for a
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
-      <strong>{{authority.shortName}}</strong> 
+      <strong>{{authority.longName}}</strong> 
     </button>
   </h4>
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0">
