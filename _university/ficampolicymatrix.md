@@ -110,7 +110,7 @@ Click on the name of a law or directive to see more details about it, and for a 
 </style>
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading ">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header lawhover" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header whhover" aria-expanded="false" aria-controls="gsa-a{{forloop.index}}" style="background-color: {{lawcolor}}">
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
