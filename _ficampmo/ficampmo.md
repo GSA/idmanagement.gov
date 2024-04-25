@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: ficampmo
-title:  FICAM Program Office
+title:  FICAM Program
 permalink: /ficam/
 sidenav: functions
 sticky_sidenav: true
