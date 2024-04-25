@@ -263,7 +263,7 @@ Click on the name of a guidance document to see more details about it, and for a
       <strong>{{authority.shortName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}}">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" aria-label="{{guidance.longName}}" tabindex="0">
 {% endif %}
 {%- for guidance in sorted_guidance | group_by: guidance.longName %}
 {% if guidance.authored-by[0].shortName == authority.shortName %}
@@ -284,9 +284,9 @@ Click on the name of a guidance document to see more details about it, and for a
   </div>
 </div>
 {% endif %}
-{% endfor %}
   </div>
 </div>
+{% endfor %}
 {% endfor %}
 
 
