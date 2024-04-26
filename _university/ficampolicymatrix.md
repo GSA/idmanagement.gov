@@ -346,11 +346,11 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>  
 {%- for guidance in sorted_guidance | sort: guidance.shortName | group_by: guidance.shortName %}
-<h3>{{guidance.shortName}}</h3>
-<ul>
   {%- for g in guidance.authored-by  %}
-  <li>{{ g.shortName }} ({{g.type}})</li>
+  <h3>{{ g.shortName }} ({{g.type}})</h3>
+  <ul>
+    <li>{{guidance.shortName}}</li>
+  </ul>
   {% endfor %}
-</ul>
 {% endfor %}
 <br><br>
