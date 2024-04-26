@@ -354,8 +354,8 @@ Please return to this section often to ensure you are accessing the most up-to-d
   {% if authors.shortName == authors2.shortName %} 
   <li>{{guidance.longName}}</li>
   {% endif %}
+ {% endfor %} 
  <ul>
- {% endfor %}
 {% endfor %}
 {% endif %}
 {% endfor %}
