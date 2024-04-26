@@ -345,10 +345,10 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>  
-{%- for guidance in sorted_guidance | sort: guidance.shortName %}
+{%- for guidance in sorted_guidance | sort: guidance.shortName | group_by: guidance.shortName %}
 <h3>{{guidance.shortName}}</h3>
 <ul>
-  {%- for g in guidance.authored-by %}
+  {%- for g in guidance.authored-by  %}
   <li>{{ g.shortName }} ({{g.type}})</li>
   {% endfor %}
 </ul>
