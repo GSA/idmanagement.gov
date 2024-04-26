@@ -344,13 +344,18 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 - No document updates at this time. 
 
-<br>  
+<br>
+{% assign prev = "" %}  
 {% for guidance in sorted_guidance %}
-{% for authors in guidance.authored-by | uniq | sort: authors.shortName %}
+{% for authors in guidance.authored-by %}
+
 <h3>{{authors.longName}} ({{authors.shortName}})</h3>
+{% if authors.longName == prev %}
  <ul> 
     <li>{{guidance.longName}}</li>
 </ul>
+{% endif %}
+{% assign prev = authors.longName %}
 {% endfor %}
 {% endfor %}
 <br><br>
