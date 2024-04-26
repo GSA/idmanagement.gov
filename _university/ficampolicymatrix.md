@@ -306,9 +306,10 @@ Click on the name of a guidance document to see more details about it, and for a
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
 <!-- Start of internal accordions -->
-{%- for guidance in sorted_guidance | sort: guidance.shortName %}
-{% if guidance.authored-by[0].shortName == authority.shortName %}
+{% for guidance in sorted_guidance %}
+{% for authors in guidance.authored-by %}
 {% assign guicolor = "rgb(216,216,216)" %}
+{% if authority.shortName == authors.shortName %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-expanded="false" aria-controls="gsa-e{{forloop.index}}">
@@ -323,7 +324,10 @@ Click on the name of a guidance document to see more details about it, and for a
           <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span>
         </div>
   </div>
-</div>  
+</div>
+{% endif %}
+{% endfor %}
+{% endfor %}
 {% endif %}
 {% endfor %}
 <!-- End of internal accordions -->
