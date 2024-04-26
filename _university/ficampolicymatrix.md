@@ -348,7 +348,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% assign prev = "" %}  
 {% for guidance in sorted_guidance %}
 <ul>
-{% for authors in guidance.authored-by %}
+{% for authors in guidance.authored-by  | uniq %}
   <li>{{authors.longName}} ({{authors.shortName}})</li>
 {% endfor %}
 </ul>
