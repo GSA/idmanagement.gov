@@ -345,19 +345,15 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>
+{% assign prev = "" %}  
 {% for guidance in sorted_guidance %}
-{% if guidance.authored-by.size > 0 %}
+<ul>
 {% for authors in guidance.authored-by %}
-<h3>{{authors.longName}} ({{authors.shortName}})</h3>
- <ul>
- {% for authors2 in guidance.authored-by %}
-  {% if authors.shortName == authors2.shortName %} 
-  <li>{{guidance.longName}}</li>
-  {% endif %}
- {% endfor %} 
- <ul>
+  <li>{{authors.longName}} ({{authors.shortName}})</li>
 {% endfor %}
-{% endif %}
+</ul>
 {% endfor %}
-{{allauthors}}
 <br><br>
+
+{{ site.members | where_exp:"item",
+"item.projects contains 'foo'" }}
