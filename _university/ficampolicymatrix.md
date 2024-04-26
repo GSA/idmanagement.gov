@@ -355,5 +355,3 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% endfor %}
 <br><br>
 
-{{ site.members | where_exp:"item",
-"item.projects contains 'foo'" }}
