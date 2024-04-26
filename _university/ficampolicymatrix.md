@@ -347,7 +347,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br>  
 {%- for guidance in sorted_guidance | sort: guidance.shortName | group_by: guidance.shortName %}
   {%- for g in guidance.authored-by  %}
-  <h3>{{ g.shortName }} ({{g.type}})</h3>
+  <h3>{{ g.shortName }} ({{g.type}}) [{{g.size}}]</h3>
   <ul>
     <li>{{guidance.shortName}}</li>
   </ul>
