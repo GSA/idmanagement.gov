@@ -351,7 +351,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
 {% for authors in guidance.authored-by %}
 <ul>
-{% if authors1.longName == authors.shortName %}
+{% if authors1.shortName == authors.shortName %}
 {% for guidance in sorted_guidance %}
 <li>{{guidance.longName}}</li>
 {% endfor %}
