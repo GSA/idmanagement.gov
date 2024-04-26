@@ -347,12 +347,12 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br>
 {% for guidance in sorted_guidance %}
 {% if guidance.authored-by.size > 0 %}
-{% for authors in guidance.authored-by %}
 <h3>{{authors.longName}} ({{authors.shortName}})</h3>
 <ul>
+{% for authors in guidance.authored-by %}
   <li>{{guidance.longName}}</li>
-</ul>
 {% endfor %}
+</ul>
 {% endif %}
 {% endfor %}
 {{allauthors}}
