@@ -346,8 +346,11 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>  
 {% for guidance in sorted_guidance %}
+{% for authors in guidance.authored-by %}
+{{authors.longName}}
  <ul> 
     <li>{{guidance.longName}} ({{guidance.shortName}})</li>
 </ul>
+{% endfor %}
 {% endfor %}
 <br><br>
