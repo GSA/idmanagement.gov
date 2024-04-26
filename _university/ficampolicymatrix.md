@@ -350,5 +350,5 @@ Please return to this section often to ensure you are accessing the most up-to-d
     {{ assign authors[g.shortName] = guidance.shortName }}  
   {% endfor %}
 {% endfor %}
-{{auths}}
+{{authors}}
 <br><br>
