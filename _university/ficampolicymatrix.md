@@ -348,9 +348,12 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% assign prev = "" %}  
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-
-<h3>{{authors.longName}} ({{authors.shortName}})</h3>
 {% if authors.longName == prev %}
+ <ul> 
+    <li>{{guidance.longName}}</li>
+</ul>
+{% else %}
+<h3>{{authors.longName}} ({{authors.shortName}})</h3>
  <ul> 
     <li>{{guidance.longName}}</li>
 </ul>
