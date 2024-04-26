@@ -346,11 +346,20 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
-<ul>
+
 {% for authors1 in guidance_authority %}
-  <li>{{authors1.longName}} ({{authors1.shortName}})</li>
+{% for authors in guidance.authored-by %}
+<h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
+<ul>
+{% if authors1.shortName == authors.shortName %}
+{% for guidance in sorted_guidance %}
+<li>{{guidance.longName}}</li>
+{% endfor %}
 {% endfor %}
 </ul>
+{% endfor %}
+{% endfor %}
+
 
 <br><br>
 
