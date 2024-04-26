@@ -354,7 +354,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
     <li>{{guidance.longName}}</li>
 </ul>
 {% assign prev = authors.longName %}
-{% else %}
+{% elsif authors.longName == prev %}
  <ul> 
     <li>{{guidance.longName}}</li>
 </ul>
