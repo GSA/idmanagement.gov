@@ -345,9 +345,9 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>  
-{% assign authors = sorted_guidance | map: "authored-by" %}
+{% assign authors = sorted_guidance.authored-by | map: "shortName" %}
 <ul>
-{% for shortnames in authors | map: "shortName" %}
+{% for shortnames in authors %}
   <li>{{shortnames}}</li>
 {% endfor %}
 </ul>
