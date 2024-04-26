@@ -292,22 +292,21 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
-
+{% assign govbody = "rgb(221,214,229)" %}
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-{% assign govbody = "rgb(221,214,229)" %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
-      <strong>{{authority.longName}}</strong> 
+      <strong>{{authority.longName}} ({{authority.shortName}})</strong> 
     </button>
   </h4>
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
 <!-- Start of internal accordions -->
+{% assign guicolor = "rgb(216,216,216)" %}
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-{% assign guicolor = "rgb(216,216,216)" %}
 {% if authority.shortName == authors.shortName %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
@@ -332,7 +331,6 @@ Click on the name of a guidance document to see more details about it, and for a
  </div>
 </div>
 {% endif %}
-
 {% endfor %}
 
 
