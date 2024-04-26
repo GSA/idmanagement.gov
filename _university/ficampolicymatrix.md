@@ -346,7 +346,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>  
 {%- for guidance in sorted_guidance | sort: guidance.shortName %}
-<h1>{{guidance.authored-b.shortName}}</h1>
+<h1>{{guidance.authored-by.shortName}}</h1>
 <ul>
   {%- for g in guidance.authored-by %}
   <li>{{ g.shortName }}</li>
