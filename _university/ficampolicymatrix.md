@@ -347,8 +347,8 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br>
 {% assign allauthors = "" %}  
 {% for guidance in sorted_guidance %}
-{% for authors in = guidance.authored-by %}
-{% assign allauthors | concat: authors  %}
+{% for authors in guidance.authored-by %}
+{% assign allauthors = authors | concat: authors  %}
 {% endfor %}
 {% endfor %}
 {{allauthors}}
