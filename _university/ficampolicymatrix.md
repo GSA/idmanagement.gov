@@ -345,10 +345,9 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>  
-{% assign authors = sorted_guidance.authored-by | map: "shortName" %}
-<ul>
-{% for shortnames in authors %}
-  <li>{{shortnames}}</li>
-{% endfor %}
+{% for guidance in sorted_guidance %}
+ <ul> 
+    <li>{{guidance.longName}} ({{guidance.shortName}})</li>
 </ul>
+{% endfor %}
 <br><br>
