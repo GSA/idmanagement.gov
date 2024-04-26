@@ -348,9 +348,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
 <ul>
 {% for authors1 in guidance_authority %}
-<!-- {% for guidance in sorted_guidance %} -->
   <li>{{authors1.longName}} ({{authors1.shortName}})</li>
-<!-- {% endfor %} -->
 {% endfor %}
 </ul>
 
