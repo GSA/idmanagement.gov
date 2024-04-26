@@ -348,7 +348,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
 
 {% for authors1 in guidance_authority %}
-{% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "USDS" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
+{% if authors1.shortName != "White House" and authors1.shortName != "U.S. Congress" and authors1.shortName != "USDS" and authors1.shortName != "DOC" and authors1.shortName != "OMB" and authors1.shortName != "DNI" and authors1.shortName != "CISOC" %} 
 <h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
