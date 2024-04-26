@@ -355,7 +355,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for guidance in sorted_guidance %}
 <li>{{guidance.longName}}</li>
 {% endfor %}
-{% endfor %}
+{% endif %}
 </ul>
 {% endfor %}
 {% endfor %}
