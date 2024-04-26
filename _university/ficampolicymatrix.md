@@ -347,14 +347,14 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br>
 {% assign prev = "" %}  
 {% for guidance in sorted_guidance %}
-{% for authors in guidance.authored-by %}
+{% for authors in guidance.authored-by | group_by: authors.shortName %}
 {% if authors.shortName != prev %}
+{% assign prev = authors.shortName %}
 <h3>{{authors.longName}} ({{authors.shortName}})</h3>
  <ul> 
     <li>{{guidance.longName}}</li>
 </ul>
-{% assign prev = authors.shortName %}
-{% elsif authors.shortName == prev  %}
+{% elsif authors.shortName == prev %}
  <ul> 
     <li>{{guidance.longName}}</li>
 </ul>
