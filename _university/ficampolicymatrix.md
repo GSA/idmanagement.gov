@@ -344,5 +344,17 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 - No document updates at this time. 
 
-<br>
+<br>  
+{%- for guidance in sorted_guidance | sort: guidance.shortName %}
+<h1>{{guidance.shortName}}</h1>
+<ul>
+  {%- if guidance.authored-by.size > 0 %}
+  <li>{{guidance.authored-by[forloop.index]}}</li>
+  {% else %}
+  {% comment %}
+    {% guidance.shortName %} authored-by is empty.
+  {% endcomment %}
+  {% endif %}
+</ul>
+{% endfor %}
 <br><br>
