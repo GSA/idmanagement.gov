@@ -349,7 +349,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <h1>{{guidance.shortName}}</h1>
 <ul>
   {%- if guidance.authored-by.size > 0 %}
-  <li>{{guidance.authored-by[forloop.index]}}</li>
+  <li>{{ guidance.authored-by }}</li>
   {% else %}
   {% comment %}
     {% guidance.shortName %} authored-by is empty.
