@@ -346,10 +346,13 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>  
 {%- for guidance in sorted_guidance | sort: guidance.shortName | group_by: guidance.shortName %}
-  {%- for g in guidance.authored-by | sort: g.shortName %}
+  {%- for g in guidance.authored-by | group_by: guidance.shortName %}
+  
   <h3>{{ g.shortName }} ({{g.type}}) [{{guidance.authored-by.size}}]</h3>
   <ul>
+  {% if guidance.shortName == g.shortName %}
     <li>{{guidance.shortName}}</li>
+  {% endif %}
   </ul>
   {% endfor %}
 {% endfor %}
