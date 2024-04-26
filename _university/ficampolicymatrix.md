@@ -351,10 +351,14 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
 <ul>
 {% for guidance in sorted_guidance %}
+{% for authors in guidance.authored-by %}
+{% if authors1.longName == authors.shortName %}
 <li>{{guidance.longName}}</li>
+{% endif %}
+{% endfor %}
 {% endfor %}
 </ul>
-{% endfor %}
+
 
 
 
