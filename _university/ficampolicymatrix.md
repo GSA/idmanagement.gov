@@ -345,11 +345,15 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>
-{% assign allauthors = "" %}  
 {% for guidance in sorted_guidance %}
+{% if guidance.authored-by.size > 0 %}
 {% for authors in guidance.authored-by %}
-{% assign allauthors = authors | concat: authors  %}
+<h3>{{authors.longName}} ({{authors.shortName}})</h3>
+<ul>
+  <li>{{guidance.longName}}</li>
+</ul>
 {% endfor %}
+{% endif %}
 {% endfor %}
 {{allauthors}}
 <br><br>
