@@ -348,13 +348,9 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {%- for guidance in sorted_guidance | sort: guidance.shortName %}
 <h1>{{guidance.authored-b.shortName}}</h1>
 <ul>
-  {%- if guidance.authored-by.size > 0 %}
-  <li>{{ guidance.authored-by }}</li>
-  {% else %}
-  {% comment %}
-    {% guidance.shortName %} authored-by is empty.
-  {% endcomment %}
-  {% endif %}
+  {%- for g in guidance.authored-by %}
+  <li>{{ g.shortName }}</li>
+  {% endfor %}
 </ul>
 {% endfor %}
 <br><br>
