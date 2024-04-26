@@ -346,5 +346,9 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>  
 {% assign authors = sorted_guidance | map: "authored-by" %}
-{{authors}}
+<ul>
+{% for auth in authors %}
+  <li>{{authors.longName}} ({{authors.shortName}})</li>
+{% endfor %}
+</ul>
 <br><br>
