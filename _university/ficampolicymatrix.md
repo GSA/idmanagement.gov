@@ -351,7 +351,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% if authors.shortName != prev %}
 <h3>{{authors.longName}} ({{authors.shortName}})</h3>
  <ul> 
-    <li>{{guidance.shortName}}</li>
+    <li>{{guidance.longName}}</li>
 </ul>
 {% assign prev = authors.shortName %}
 {% elsif authors.shortName == prev  %}
