@@ -345,13 +345,14 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>
-{% assign prev = "" %}  
-{% for guidance in sorted_guidance %}
+{% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
 <ul>
-{% for authors in guidance.authored-by  | uniq %}
-  <li>{{authors.longName}} ({{authors.shortName}})</li>
+{% for authors1 in guidance_authority %}
+<!-- {% for guidance in sorted_guidance %} -->
+  <li>{{authors1.longName}} ({{authors1.shortName}})</li>
+<!-- {% endfor %} -->
 {% endfor %}
 </ul>
-{% endfor %}
+
 <br><br>
 
