@@ -348,7 +348,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
 <h3>{{authors.longName}} ({{authors.shortName}})</h3>
-{% if %}
  <ul> 
     <li>{{guidance.longName}}</li>
 </ul>
