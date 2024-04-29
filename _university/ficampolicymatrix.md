@@ -358,7 +358,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for authors in guidance.authored-by %}
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
-{% for nn in nistorder %}
 {% if authority.shortName == "NIST" | contains: "NIST Special Publication 800-" %}
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
@@ -392,7 +391,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
   </div>
 </div>
 {% endif %}
-{% endfor %}
 
 {% endif %}
 
