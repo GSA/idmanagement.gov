@@ -296,7 +296,7 @@ Click on the name of a guidance document to see more details about it, and for a
 
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-e"  aria-expanded="false">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-e{{ innerloop }}"  aria-expanded="false">
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
