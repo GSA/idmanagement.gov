@@ -342,8 +342,9 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 {% if authors1.shortName == authors.shortName %}
 
-{% if authors.shortName == "NIST" | continue %}
+{% if authors.shortName == "NIST" %}
 {{guidance.longName}} ({{forloop.index}})
+{% continue %}
 {% endif %}
 
 {{guidance.longName}}
