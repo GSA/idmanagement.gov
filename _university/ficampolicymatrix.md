@@ -361,7 +361,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-et1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-t1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
