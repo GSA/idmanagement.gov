@@ -291,7 +291,7 @@ Click on the name of a guidance document to see more details about it, and for a
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}" >
       <strong>{{authority.longName}} ({{authority.shortName}})</strong> 
     </button>
   </h4>
@@ -302,9 +302,10 @@ Click on the name of a guidance document to see more details about it, and for a
 {% for authors in guidance.authored-by %}
 
 {% if authority.shortName == authors.shortName %}
+{% assign guicolor = "rgb(216,216,216)" %}
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance"  aria-controls="gsa-e{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-controls="gsa-e{{forloop.index}}"  aria-expanded="false" onload="explandToggle();">
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
