@@ -316,9 +316,6 @@ Click on the name of a guidance document to see more details about it, and for a
   </div>
 </div>
 {% endif %}
-<script>
-  collapseToggle();
-</script>
 {% endfor %}
 
 
@@ -333,37 +330,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
 - No document updates at this time. 
 
 <br>
-
----
-
-<!-- Start of internal accordions -->
-{% assign guicolor = "rgb(216,216,216)" %}
-{% for guidance in sorted_guidance %}
-{% for authors in guidance.authored-by %}
-{% if authority.shortName == authors.shortName %}
-<div class="usa-accordion usa-accordion--bordered">
-  <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-expanded="false"  aria-controls="gsa-e{{forloop.index}}">
-      <strong>{{guidance.longName}}</strong> 
-    </button>
-  </h4>
-  <div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
-        <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
-        <p>{{guidance.description}}</p>
-        <hr/>
-        <div class="display-flex flex-column flex-align-end">  
-          <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span>
-        </div>
-  </div>
-</div>
-{% endif %}
-{% endfor %}
-{% endfor %}
-<!-- End of internal accordions -->
-
----
-
-
 
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
 
