@@ -307,8 +307,7 @@ Click on the name of a guidance document to see more details about it, and for a
         </div>
   </div>
 </div>
-{% increment variable %}
-{% decrement variable %}
+{% increment variable %} | {% variable %}
 {% endif %}
 
 {% endfor %}
