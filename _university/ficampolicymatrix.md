@@ -333,11 +333,10 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br><br>
 
 <!-- Testing below -->
-
+{% assign nistorder = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,21,22,23,24,25,26,17,28,29,0,1,2,3}%}
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "shortName" %}
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
-{% assign nistorder = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,21,22,23,24,25,26,17,28,29,0,1,2,3}%}
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
@@ -358,7 +357,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
 {% if authority.shortName == authors.shortName %}
-
 {% assign guicolor = "rgb(216,216,216);" %}
 {% assign innerloop = 0 | increment %}
 <div class="usa-accordion usa-accordion--bordered">
@@ -376,6 +374,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
         </div>
   </div>
 </div>
+
 {% endif %}
 
 {% endfor %}
@@ -386,6 +385,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 </div>
 {% endif %}
 {% endfor %}
+
 
 
 <br><br>
