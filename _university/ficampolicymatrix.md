@@ -333,22 +333,24 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br>
 
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
-
+{% assign nist_ordering = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,21,22,23,24,25,26,17,28,29,0,1,2,3}%}
 {% for authors1 in guidance_authority %}
 {% if authors1.shortName != "White House" and authors1.shortName != "U.S. Congress" and authors1.shortName != "USDS" and authors1.shortName != "DOC" and authors1.shortName != "OMB" and authors1.shortName != "DNI" and authors1.shortName != "CISOC" %} 
 <h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-
+{% for nisto in nist_ordering %}
 {% if authors1.shortName == authors.shortName %}
 
-{% if authors.shortName == "NIST" and authors.forloop.index == 4 %}
-{{guidance.longName}} (This one)
+{% if authors.shortName == "NIST" %}
+{{guidance.longName[nisto]}}
 {% continue %}
 {% endif %}
 
 {{guidance.longName}}
 {% endif %}
+
+{% endfor %}
 
 {% endfor %}
 {% endfor %}
