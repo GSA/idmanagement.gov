@@ -356,7 +356,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-{% if authority.shortName == authors.shortName %}
+{% if authority.shortName == authors.shortName and authority.shortName == "NIST" %}
 {% assign guicolor = "rgb(216,216,216);" %}
 
 <div class="usa-accordion usa-accordion--bordered">
