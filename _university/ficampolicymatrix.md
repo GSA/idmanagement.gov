@@ -310,7 +310,7 @@ Click on the name of a guidance document to see more details about it, and for a
 {% if authority.shortName == authors.shortName %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-expanded="false" aria-controls="gsa-e{{forloop.index}}">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance" aria-expanded="false"  aria-controls="gsa-e{{forloop.index}}">
       <strong>{{guidance.longName}}</strong> 
     </button>
   </h4>
@@ -325,13 +325,12 @@ Click on the name of a guidance document to see more details about it, and for a
 </div>
 {% endif %}
 {% endfor %}
+{% endfor %}
 <!-- End of internal accordions -->
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
   </div>
 </div>
 {% endif %}
-{% endfor %}
-
 {% endfor %}
 
 
