@@ -289,7 +289,6 @@ Click on the name of a guidance document to see more details about it, and for a
 
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-{% assign innerloop = 0 %}
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
 
