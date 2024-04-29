@@ -359,7 +359,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
 {% for nn in nistorder %}
-{% if authority.shortName[nn] == "NIST" %}
+{% if authority.shortName == "NIST" | contains: "NIST Special Publication 800-" %}
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-e1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
