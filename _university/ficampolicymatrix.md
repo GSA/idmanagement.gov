@@ -307,7 +307,7 @@ Click on the name of a guidance document to see more details about it, and for a
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
 
-{% if authors1.shortName == authors.shortName %}
+{% if authority.shortName == authors.shortName %}
 {{guidance.longName}}
 {% endif %}
 
