@@ -302,7 +302,6 @@ Click on the name of a guidance document to see more details about it, and for a
 {% for authors in guidance.authored-by %}
 
 {% if authority.shortName == authors.shortName %}
-
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header guidance"  aria-controls="gsa-e{{forloop.index}}">
@@ -310,13 +309,14 @@ Click on the name of a guidance document to see more details about it, and for a
     </button>
 </h4>
   <div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
-
-  Testing.
-
-
+        <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
+        <p>{{guidance.description}}</p>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">  
+          <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span>
+        </div>
   </div>
 </div>
-
 {% endif %}
 
 {% endfor %}
