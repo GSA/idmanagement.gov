@@ -342,7 +342,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 {% if authors1.shortName == authors.shortName %}
 
-{% if authors.shortName == "NIST" and guidance.longName | contains: "800-157" %}
+{% if authors.shortName == "NIST" and authors.forloop.index == 4 %}
 {{guidance.longName}} (This one)
 {% continue %}
 {% endif %}
