@@ -347,11 +347,11 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}" >
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-t{{forloop.index}}" >
       <strong>{{authority.longName}} ({{authority.shortName}})</strong> 
     </button>
   </h4>
-  <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
+  <div id="gsa-t{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
 
 {% for guidance in sorted_guidance %}
@@ -361,11 +361,11 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-e1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-et1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
-  <div id="gsa-e1{% increment innerloop -1 %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
+  <div id="gsa-t1{% increment innerloop -1 %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
         <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
         <p>{{guidance.description}}</p>
         <hr/>
