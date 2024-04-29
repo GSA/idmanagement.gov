@@ -275,7 +275,7 @@ Click on the name of a guidance document to see more details about it, and for a
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
-{% assign govbody = "rgb(221,214,229)" %}
+{% assign govbody = "rgb(221,214,229);" %}
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
 <div class="usa-accordion usa-accordion--bordered">
@@ -291,7 +291,7 @@ Click on the name of a guidance document to see more details about it, and for a
 {% for authors in guidance.authored-by %}
 
 {% if authority.shortName == authors.shortName %}
-{% assign guicolor = "rgb(216,216,216)" %}
+{% assign guicolor = "rgb(216,216,216);" %}
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-m{{forloop.index}}"  aria-expanded="false">
