@@ -303,6 +303,27 @@ Click on the name of a guidance document to see more details about it, and for a
   </h4>
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
+
+{% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+
+### Annual Updates
+
+Annually and throughout the year, when documents from this authoring organization are updated, deprecated, or superseded, a schedule of when each affected document is expected to be replaced or updated by this authoring organization will be placed below. 
+
+Please return to this section often to ensure you are accessing the most up-to-date information.     
+
+<hr>
+
+- No document updates at this time. 
+
+<br>
+
+
 <!-- Start of internal accordions -->
 {% assign guicolor = "rgb(216,216,216)" %}
 {% for guidance in sorted_guidance %}
@@ -327,24 +348,11 @@ Click on the name of a guidance document to see more details about it, and for a
 {% endfor %}
 {% endfor %}
 <!-- End of internal accordions -->
-{% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-  </div>
-</div>
-{% endif %}
-{% endfor %}
 
 
-### Annual Updates
 
-Annually and throughout the year, when documents from this authoring organization are updated, deprecated, or superseded, a schedule of when each affected document is expected to be replaced or updated by this authoring organization will be placed below. 
 
-Please return to this section often to ensure you are accessing the most up-to-date information.     
 
-<hr>
-
-- No document updates at this time. 
-
-<br>
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
 
 {% for authors1 in guidance_authority %}
