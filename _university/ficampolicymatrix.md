@@ -342,7 +342,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 {% if authors1.shortName == authors.shortName %}
 
-{% if authors.shortName == "NIST" and forloop.index > 6 %}
+{% if authors.shortName == "NIST" | forloop.index => 6 %}
 {{guidance.longName}}
 {% else %}
 {{guidance.longName}}
