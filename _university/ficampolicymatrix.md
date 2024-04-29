@@ -86,11 +86,10 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 {% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | sort: "longName" %}
 
-<!-- | Document | Description | Date Published |
-| --- | --- | --- |
-{%- for document in sorted_laws %}
-| [ {{document.shortName}} ]({{site.baseurl}}/laws-policies-standards{{document.shortName | datapage_url: laws-policies-standards }}) | {{ document.description }} | {{document.published | date_to_string }} |
-{%- endfor %} -->
+<script>
+  window.load(collapseToggle());
+</script>
+
 <style>
   /* For White House Accordions */
   .whitehouse {
@@ -195,12 +194,6 @@ Laws are sorted by date, from oldest to newest.
 Click on the name of a policy to see more details about it, and for a link to the policy itself.
 
 {% assign sorted_policies = site.data.laws-policies-standards | where: "type", "Policy" | sort: "published", "last" | sort: "shortName" %}
-
-<!-- | Document | Description | Date Published |
-| --- | --- | --- |
-{%- for policies in sorted_policies %}
-| [ {{policies.shortName}} ]({{site.baseurl}}/laws-policies-standards{{policies.shortName | datapage_url: laws-policies-standards }}) | {{ policies.description }} | {{policies.published | date_to_string }} |
-{%- endfor %} -->
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
