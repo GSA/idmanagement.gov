@@ -304,6 +304,16 @@ Click on the name of a guidance document to see more details about it, and for a
   <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
 {% endif %}
 
+{% for guidance in sorted_guidance %}
+{% for authors in guidance.authored-by %}
+
+{% if authors1.shortName == authors.shortName %}
+{{guidance.longName}}
+{% endif %}
+
+{% endfor %}
+{% endfor %}
+
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
   </div>
 </div>
@@ -361,11 +371,11 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-<ul>
+
 {% if authors1.shortName == authors.shortName %}
-<li>{{guidance.longName}}</li>
+{{guidance.longName}}
 {% endif %}
-</ul>
+
 {% endfor %}
 {% endfor %}
 {% endif %}
