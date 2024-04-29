@@ -339,15 +339,12 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <h3>{{authors1.longName}} ({{authors1.shortName}})</h3>
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
+
 {% for nisto in nist_ordering %}
-{% if authors1.shortName == authors.shortName %}
 
-{% if authors.shortName == "NIST" %}
-{{guidance.longName[nisto]}}
+{% if authors1.shortName == authors.shortName and authors.shortName == "NIST" %}
+{{authors1[n].shortName}}
 {% continue %}
-{% endif %}
-
-{{guidance.longName}}
 {% endif %}
 
 {% endfor %}
