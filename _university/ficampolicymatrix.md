@@ -358,7 +358,8 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for authors in guidance.authored-by %}
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
-{% if authority.shortName == "NIST" | offset: 5  %}
+{% for nn in nistorder %}
+{% if authority.shortName[nn] == "NIST" %}
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-e1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
@@ -391,6 +392,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
   </div>
 </div>
 {% endif %}
+{% endfor %}
 
 {% endif %}
 
