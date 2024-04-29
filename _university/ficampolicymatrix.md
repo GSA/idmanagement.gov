@@ -288,7 +288,6 @@ Click on the name of a guidance document to see more details about it, and for a
 {% endif %}
 
 {% for guidance in sorted_guidance %}
-{% assign innerloop = 0 %}
 {% for authors in guidance.authored-by %}
 
 {% if authority.shortName == authors.shortName %}
@@ -300,7 +299,7 @@ Click on the name of a guidance document to see more details about it, and for a
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
-  <div id="gsa-e{% innerloop %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0">
+  <div id="gsa-e{% increment innerloop %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0">
         <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
         <p>{{guidance.description}}</p>
         <hr/>
