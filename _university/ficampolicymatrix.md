@@ -323,6 +323,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 <br>
 
+---
 
 <!-- Start of internal accordions -->
 {% assign guicolor = "rgb(216,216,216)" %}
@@ -349,7 +350,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% endfor %}
 <!-- End of internal accordions -->
 
-
+---
 
 
 
