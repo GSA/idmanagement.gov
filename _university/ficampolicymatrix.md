@@ -86,10 +86,6 @@ Click on the name of a law or directive to see more details about it, and for a 
 
 {% assign sorted_laws = site.data.laws-policies-standards | where: "type", "Law" | sort: "published", "last" | sort: "longName" %}
 
-<script>
-  window.load(collapseToggle());
-</script>
-
 <style>
   /* For White House Accordions */
   .whitehouse {
@@ -320,6 +316,9 @@ Click on the name of a guidance document to see more details about it, and for a
   </div>
 </div>
 {% endif %}
+<script>
+  collapseToggle();
+</script>
 {% endfor %}
 
 
