@@ -330,34 +330,67 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 - No document updates at this time. 
 
-<br>
+<br><br>
+
+<!-- Testing below -->
+
+
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "shortName" %}
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
-{% assign nist_ordering = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,21,22,23,24,25,26,17,28,29,0,1,2,3}%}
+{% assign nistorder = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,21,22,23,24,25,26,17,28,29,0,1,2,3}%}
 
+<ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
+  <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
+  <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
+</ul>
 {% assign govbody = "rgb(221,214,229);" %}
-<ul>
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
-<li>
-{{authority.longName}} ({{authority.shortName}})
-<ul>
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-d{{forloop.index}}" >
+      <strong>{{authority.longName}} ({{authority.shortName}})</strong> 
+    </button>
+  </h4>
+  <div id="gsa-d{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{govbody}}">
+{% endif %}
+
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
-{% if authority.shortName == authors.shortName %}
+{% if authority.shortName == authors.shortName and authority.shortName == "NIST" %}
+
+{% for nist in nistorder %}
+
 {% assign guicolor = "rgb(216,216,216);" %}
 {% assign innerloop = 0 | increment %}
-<li>{{guidance.longName}}</li>
+<div class="usa-accordion usa-accordion--bordered">
+<h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-e1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
+      <strong>{{guidance[nist].longName}}</strong> 
+    </button>
+</h4>
+  <div id="gsa-e1{% increment innerloop -1 %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
+        <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
+        <p>{{guidance.description}}</p>
+        <hr/>
+        <div class="display-flex flex-column flex-align-end">  
+          <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span>
+        </div>
+  </div>
+</div>
+
+{% endfor %}
 {% endif %}
+
 {% endfor %}
 {% endfor %}
-</ul>
-</li>
+
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
   </div>
 </div>
 {% endif %}
 {% endfor %}
+
 
 <br><br>
 
