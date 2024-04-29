@@ -341,6 +341,10 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for authors in guidance.authored-by %}
 
 {% if authors1.shortName == authors.shortName %}
+
+{% if authors.shortName == "NIST" and forloop.index > 6 %}
+{{guidance.longName}}
+{% else %}
 {{guidance.longName}}
 {% endif %}
 
