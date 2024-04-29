@@ -342,8 +342,8 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 {% if authors1.shortName == authors.shortName %}
 
-{% if authors.shortName == "NIST" | forloop.index => 6 %}
-{{guidance.longName}}
+{% if authors.shortName == "NIST" %}
+{{guidance.longName}} ({{forloop.index}})
 {% else %}
 {{guidance.longName}}
 {% endif %}
