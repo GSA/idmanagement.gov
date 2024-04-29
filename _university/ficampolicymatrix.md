@@ -282,12 +282,6 @@ Click on the name of a guidance document to see more details about it, and for a
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "shortName" %}
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
 
-<!-- | Document | Description | Date Published |
-| --- | --- | --- |
-{%- for guidance in sorted_guidance %}
-| [ {{guidance.shortName}} ]({{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}) | {{ guidance.description }} | {{guidance.published | date_to_string }} |
-{%-  endfor %} -->
-
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
@@ -315,7 +309,7 @@ Click on the name of a guidance document to see more details about it, and for a
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
-<div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
+  <div id="gsa-e{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
 
   Testing.
 
