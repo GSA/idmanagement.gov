@@ -356,17 +356,15 @@ Please return to this section often to ensure you are accessing the most up-to-d
 
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
+
+{% if authority.shortName == "NIST" | shift guidance %}
+
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
-
-
-
-{% if authority.shortName == "NIST" %}
-{% for 1..3 | shift: guidance %}
-
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-t1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
+    
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
@@ -379,8 +377,8 @@ Please return to this section often to ensure you are accessing the most up-to-d
         </div>
   </div>
 </div>
-{% endfor %}
 {% endif %}
+
 {% endif %}
 
 
