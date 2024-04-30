@@ -333,7 +333,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
 <br><br>
 
 <!-- Testing below -->
-{% assign nistorder = {4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,21,22,23,24,25,26,17,28,29,0,1,2,3}%}
 
 {% assign sorted_guidance = site.data.laws-policies-standards | where: "type", "Guidance" | sort: "published", "last" | sort: "shortName" %}
 {% assign guidance_authority = site.data.laws-policies-standards | where: "type", "Authority" %}
@@ -345,6 +344,7 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% assign govbody = "rgb(221,214,229);" %}
 {%- for authority in guidance_authority | sort: authority.shortName %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
+
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header govbody" aria-expanded="false" aria-controls="gsa-t{{forloop.index}}" >
@@ -358,6 +358,11 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for authors in guidance.authored-by %}
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
+
+
+
+{% if authority.shortName == "NIST" %}
+{% for 1..3 | shift: guidance %}
 
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
@@ -374,7 +379,8 @@ Please return to this section often to ensure you are accessing the most up-to-d
         </div>
   </div>
 </div>
-
+{% endfor %}
+{% endif %}
 {% endif %}
 
 
