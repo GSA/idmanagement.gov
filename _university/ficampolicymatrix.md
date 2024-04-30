@@ -357,15 +357,13 @@ Please return to this section often to ensure you are accessing the most up-to-d
 {% for guidance in sorted_guidance %}
 {% for authors in guidance.authored-by %}
 
-{% if authority.shortName == "NIST" | shift guidance %}
-
 {% if authority.shortName == authors.shortName %}
 {% assign guicolor = "rgb(216,216,216);" %}
 <div class="usa-accordion usa-accordion--bordered">
 <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-controls="gsa-t1{% increment innerloop %}"  aria-expanded="false" style="background-color: {{guicolor}};">
     
-      <strong>{{guidance.longName}}</strong> 
+      <strong>{{guidance.longName}} | {{forloop.index0}}</strong> 
     </button>
 </h4>
   <div id="gsa-t1{% increment innerloop -1 %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" onkeydown="navigateTo('{{site.baseurl}}/laws-policies-standards{{guidance.shortName | datapage_url: laws-policies-standards }}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
@@ -377,8 +375,6 @@ Please return to this section often to ensure you are accessing the most up-to-d
         </div>
   </div>
 </div>
-{% endif %}
-
 {% endif %}
 
 
