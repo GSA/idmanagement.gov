@@ -1,26 +1,7 @@
-
-
- 
-
- 
-
- 
-
- 
-
- 
-
- Federal Identity, Credential, and Access Management Sub Committee
-
- 
-
- 
-
- 
-
- 
-
- 
+---
+title: "[]{#_h833pg8v86mn .anchor} Federal Identity, Credential, and
+  Access Management Sub Committee"
+---
 
 **Security Controls Mapping of**
 
@@ -30,122 +11,52 @@
 
 **against Special Publication 800-63**
 
-** **
-
 Version 1.0
-
- 
 
 April 24, 2024
 
- 
-
 **Revision History**
 
-** **
+  ------------------------------------------------------------------------
+  **Document          **Document Date**  **Revision Details**
+  Version**                              
+  ------------------- ------------------ ---------------------------------
+  1.0                 04//24/2024        Initial Mapping of IA Controls
 
+                                         
 
-<table>
-  <tr>
-   <td><strong>Document Version</strong>
-   </td>
-   <td><strong>Document Date</strong>
-   </td>
-   <td><strong>Revision Details</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>1.0
-   </td>
-   <td>04//24/2024
-   </td>
-   <td>Initial Mapping of IA Controls
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-	 
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-	 
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-	 
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-	 
-   </td>
-  </tr>
-  <tr>
-   <td>
-   </td>
-   <td>
-   </td>
-   <td>
-	 
-   </td>
-  </tr>
-</table>
+                                         
 
+                                         
 
- 
+                                         
 
- 
+                                         
+  ------------------------------------------------------------------------
 
-**Table of Contents**
+**[Table of Contents]{.smallcaps}**
 
-**Introduction**
+[**Introduction**](#introduction)
 
-**Applicability and Use**
+[**Applicability and Use**](#applicability-and-use)
 
-**Informational Policy Mapping**
+[**Informational Policy Mapping**](#informational-policy-mapping)
 
-**Policy Crosswalk**
+[**Policy Crosswalk**](#policy-crosswalk)
 
+> [Policy crosswalk overview Table](#policy-crosswalk-overview-table)
+>
+> [Detailed Policy Crosswalk](#detailed-policy-crosswalk)
+>
+> [800-63-4](#section)
+>
+> [800-63A-4](#a-4)
+>
+> [800-63B-4](#b-4)
+>
+> [800-63C-4](#c-4)
 
-	Policy crosswalk overview Table
-
-
-	Detailed Policy Crosswalk
-
-
-	800-63-4
-
-
-	800-63A-4
-
-
-	800-63B-4
-
-
-	800-63C-4
-
-**_References_**
-
-** **
-
+[***References***](#references)
 
 # **Introduction**
 
