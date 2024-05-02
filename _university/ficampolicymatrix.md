@@ -17,6 +17,8 @@ subnav:
     href: "#federal-policies"
   - text: Federal Technical Guidance
     href: "#federal-technical-guidance"
+  - text: Annual Updates
+    href: "#annual-updates"
 ---
 
 ## Introduction
@@ -320,7 +322,7 @@ Click on the name of a guidance document to see more details about it, and for a
 {% endfor %}
 
 
-### Annual Updates
+## Annual Updates
 
 Annually and throughout the year, when documents from this authoring organization are updated, deprecated, or superseded, a schedule of when each affected document is expected to be replaced or updated by this authoring organization will be placed below. 
 
