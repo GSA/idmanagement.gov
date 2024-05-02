@@ -1,5 +1,5 @@
 ---
-title: Federal Identity, Credential, and Access Management Sub-Committee
+title: Federal Identity, Credential, and Access Management Sub Committee
 ---
 
 **Security Controls Mapping of Special Publication 800-53 Revision 5, Identification and Authentication (IA), against Special Publication 800-63**
@@ -10,22 +10,15 @@ April 24, 2024
 
 **Revision History**
 
-  ------------------------------------------------------------------------
-  **Document          **Document Date**  **Revision Details**
-  Version**                              
-  ------------------- ------------------ ---------------------------------
-  1.0                 04//24/2024        Initial Mapping of IA Controls
-
-                                         
-
-                                         
-
-                                         
-
-                                         
-
-                                         
-  ------------------------------------------------------------------------
+|                      |                   |                                |
+|----------------------|-------------------|--------------------------------|
+| **Document Version** | **Document Date** | **Revision Details**           |
+| 1.0                  | 04//24/2024       | Initial Mapping of IA Controls |
+|                      |                   |                                |
+|                      |                   |                                |
+|                      |                   |                                |
+|                      |                   |                                |
+|                      |                   |                                |
 
 **[Table of Contents]{.smallcaps}**
 
