@@ -1,6 +1,5 @@
 ---
-title: <span id="_h833pg8v86mn" class="anchor"></span> Federal Identity,
-  Credential, and Access Management Sub Committee
+title: Federal Identity, Credential, and Access Management Sub Committee
 ---
 
 **Security Controls Mapping of Special Publication 800-53 Revision 5, Identification and Authentication (IA), against Special Publication 800-63**
