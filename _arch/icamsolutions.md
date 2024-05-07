@@ -274,5 +274,5 @@ Buyers are required to register on GSA Advantage. Buyers can use the same User I
 ## Additional Resources
 
 - [GSA eBuy Job Aid](https://www.ebuy.gsa.gov/ebuy/assets/content/eBuy-Buyer_jobaid.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- [GSA ICAM](https://www.gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [GSA ICAM](https://www.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [MAS Consolidation Newsletter](https://interact.gsa.gov/sites/default/files/mas_quarterly_summer_2019_508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
