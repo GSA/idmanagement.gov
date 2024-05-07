@@ -65,7 +65,7 @@ Use the legend below in conjuction with the FICAM policy map to navigate to your
     <td colspan=2>Rules governing the behavior of federal agencies.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
-    <td><span class="badge" style="color:#000;background-color:rgb(221,214,229);padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
+    <td><span class="badge" style="color:#000;background-color:#b59fcd;padding:14px;border-size:1;border-color:#000;">Government Body</span></td>
     <td colspan=2>An entity that issues laws, policies or technical standards.</td>
   </tr>
   <tr class="rowhover" onclick="location.href='#federal-technical-guidance';">
@@ -120,7 +120,8 @@ Click on the name of a law or directive to see more details about it, and for a 
   }
   /* For Goverment Body - color only */
   .govbody {
-      background-color: rgb(221,214,229);
+      /* background-color: rgb(221,214,229); */
+      background-color: #b59fcd;
   }
   .govbody:hover {
       background-color: rgb(188,179,198);
