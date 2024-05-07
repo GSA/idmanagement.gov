@@ -711,7 +711,7 @@ A PIV credential remains the primary authenticator for federal users, but there 
 5.	[FICAM - Configure Windows Hello for Business in Azure AD](https://www.idmanagement.gov/implement/whfb/)
 3.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4.	[NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management](https://www.nist.gov/system/files/documents/2020/07/02/800-63B%20Conformance%20Criteria_0620.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-5.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://media.defense.gov/2020/Sep/22/2002502665/-1/-1/0/CSI_MULTIFACTOR_AUTHENTICATION_SOLUTIONS_UOO17091520.PDF){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3560788/how-to-protect-against-evolving-phishing-attacks/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 # Appendix B - External Resources
 
