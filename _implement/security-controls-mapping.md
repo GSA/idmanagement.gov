@@ -10178,10 +10178,6 @@ Considerations (Informative)</h3></td>
 </tbody>
 </table>
 
-# 
-
-# 
-
 # References
 
 <table>
