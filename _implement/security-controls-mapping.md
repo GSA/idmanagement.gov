@@ -5,6 +5,8 @@ title: Federal Identity, Credential, and Access Management Sub Committee
 permalink: /implement/security-controls/
 sticky_sidenav: true
 sidenav: implement
+pubdate: February 22, 2024
+version: 1.1
 
 subnav:
   - text: Applicability and Use
@@ -28,9 +30,6 @@ subnav:
 ---
 
 **Security Controls Mapping of Special Publication 800-53 Revision 5, Identification and Authentication (IA), against Special Publication 800-63**
-
-pubdate: February 22, 2024
-version: 1.1
 
 **Revision History**
 <div class="usa-accordion usa-accordion--bordered">
