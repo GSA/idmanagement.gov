@@ -47,28 +47,6 @@ April 24, 2024
 
 **<span class="smallcaps">Table of Contents</span>**
 
-[**Introduction**](#_36i838177bfn)
-
-[**Applicability and Use**](#applicability-and-use)
-
-[**Informational Policy Mapping**](#informational-policy-mapping)
-
-[**Policy Crosswalk**](#policy-crosswalk)
-
-> [Policy crosswalk overview Table](#policy-crosswalk-overview-table)
->
-> [Detailed Policy Crosswalk](#detailed-policy-crosswalk)
->
-> [800-63-4](#section)
->
-> [800-63A-4](#a-4)
->
-> [800-63B-4](#b-4)
->
-> [800-63C-4](#c-4)
-
-[***References***](#references)
-
 # Introduction
 
 This document provides guidance for organizations who need to comply
