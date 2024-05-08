@@ -34,18 +34,35 @@ Version 1.0
 April 24, 2024
 
 **Revision History**
-
-|                      |                   |                                |
-|----------------------|-------------------|--------------------------------|
-| **Document Version** | **Document Date** | **Revision Details**           |
-| 1.0                  | 04//24/2024       | Initial Mapping of IA Controls |
-|                      |                   |                                |
-|                      |                   |                                |
-|                      |                   |                                |
-|                      |                   |                                |
-|                      |                   |                                |
-
-**<span class="smallcaps">Table of Contents</span>**
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-a1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Phishing-resistant authenticator version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>Document Version</th>
+        <th scope='col'>Document Date</th>
+        <th scope='col'>Revision Details</th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>1.0</th>
+        <td>02/22/2024</td>
+        <td>Clarified passkey, added FIDO attestation example, added pilot criteria, and examples in lifecycle. See <a href="https://github.com/GSA/idmanagement.gov/issues/798">Issue 798</a>.</td>
+      </tr>
+      <tr>
+        <th scope='row'>1.0</th>
+        <td>04/24/2024</td>
+        <td>Initial Mapping of IA Controls</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 # Introduction
 
