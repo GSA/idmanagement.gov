@@ -77,6 +77,8 @@ primary_navigation:
         url: /implement/whfb/
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
+      - name: Security Controls Mapping
+        url: /implement/security-controls/
   - name: Coordination Functions
     children: 
       - name: FICAM Program
