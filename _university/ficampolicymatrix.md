@@ -124,7 +124,8 @@ Click on the name of a law or directive to see more details about it, and for a 
       background-color: #b59fcd;
   }
   .govbody:hover {
-      background-color: rgb(188,179,198);
+      /* background-color: rgb(188,179,198); */
+      background-color: #9d8ab2;
   }
 
 </style>
