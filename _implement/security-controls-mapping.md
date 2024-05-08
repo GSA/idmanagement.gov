@@ -50,7 +50,6 @@ April 24, 2024
         <th scope='col'>Revision Details</th>
       </tr>
       </thead>
-      </tr>
       <tr>
         <th scope='row'>1.0</th>
         <td>04/24/2024</td>
