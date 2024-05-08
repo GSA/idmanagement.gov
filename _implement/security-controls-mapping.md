@@ -29,9 +29,8 @@ subnav:
 
 **Security Controls Mapping of Special Publication 800-53 Revision 5, Identification and Authentication (IA), against Special Publication 800-63**
 
-Version 1.0
-
-April 24, 2024
+pubdate: February 22, 2024
+version: 1.1
 
 **Revision History**
 <div class="usa-accordion usa-accordion--bordered">
