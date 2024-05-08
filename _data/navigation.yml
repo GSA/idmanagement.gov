@@ -46,6 +46,8 @@ implement:
     href: /fpki/notifications/
   - text: FPKI Test Environment
     href: /implement/fpkicite/
+  - text: Security Controls Mapping
+    href: /implement/security-controls/
 
 functions:
   - text: FICAM Program
