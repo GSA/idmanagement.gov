@@ -42,7 +42,7 @@ April 24, 2024
   </h4>
   <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
-      <caption>Phishing-resistant authenticator version table</caption>
+      <caption>Security Controls Mapping</caption>
       <thead>
       <tr>
         <th scope='col'>Document Version</th>
@@ -50,10 +50,6 @@ April 24, 2024
         <th scope='col'>Revision Details</th>
       </tr>
       </thead>
-      <tr>
-        <th scope='row'>1.0</th>
-        <td>02/22/2024</td>
-        <td>Clarified passkey, added FIDO attestation example, added pilot criteria, and examples in lifecycle. See <a href="https://github.com/GSA/idmanagement.gov/issues/798">Issue 798</a>.</td>
       </tr>
       <tr>
         <th scope='row'>1.0</th>
