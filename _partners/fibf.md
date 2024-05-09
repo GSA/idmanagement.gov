@@ -9,7 +9,7 @@ last_review: 05/09/2024
 
 subnav:
   - text: Draft ICAM-FIBF
-    href: '#draft-icam-fibf--notice-draft-for-comment'
+    href: '#draft-icam-fibf'
   - text: ICAM - FIBF Background
     href: '#icam-fibf-background'
   - text: What is FIBF
@@ -21,7 +21,9 @@ subnav:
     
 ---
 
-## Draft ICAM-FIBF<br>(NOTICE: DRAFT FOR COMMENT)    
+## Draft ICAM-FIBF
+
+### (NOTICE: DRAFT FOR COMMENT)    
 
 **[(Download ICAM FIBF Components 2 & 3)]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
 
