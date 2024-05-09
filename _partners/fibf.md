@@ -1,11 +1,11 @@
 ---
 layout: page
 collection: partners
-title: FICAM in the Federal Integrated Business Framework (FIBF) - Opportunity to Comment
+title: FICAM in the Federal Integrated Business Framework (FIBF)
 permalink: /icam-fibf/
 sidenav: partners
 sticky_sidenav: true
-last_review: 10/30/23
+last_review: 05/09/2024
 
 subnav:
   - text: Draft ICAM-FIBF
@@ -21,9 +21,9 @@ subnav:
     
 ---
 
-## Draft ICAM-FIBF - NOTICE DRAFT FOR COMMENT    
+## Draft ICAM-FIBF<br>(NOTICE: DRAFT FOR COMMENT)    
 
-[(Download ICAM FIBF Components 2 & 3)]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}
+**[(Download ICAM FIBF Components 2 & 3)]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
 
 The Identity Credentialing and Access Management (ICAM) Subcommittee  through its Federal Integrated Business Framework (FIBF) Working Group is establishing ICAM as a federal function that will support and enable practically every mission support area. This will affect not only ICAM programs, but also areas such as Financial Management, Cybersecurity, Electronic Records Management and Human Resource Management, etc.   
 
