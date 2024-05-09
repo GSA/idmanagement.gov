@@ -2,7 +2,7 @@
 layout: page
 collection: implement
 title: Federal Identity, Credential, and Access Management Sub Committee
-permalink: /implement/security-controls/
+permalink: /implement/Mapping-of-SP800-53-IA-to-SP-800-63/
 sticky_sidenav: true
 sidenav: implement
 pubdate: February 22, 2024
@@ -1212,13 +1212,13 @@ href="#additional-requirements-for-federal-agencies"><u>5.1.5</u></a>,
 href="#requirements-for-interacting-with-minors"><u>5.1.10</u></a></td>
 <td><a href="#authentication-assurance-levels"><u>4.</u></a>, <a
 href="#authenticator-and-verifier-requirements"><u>4.1.2</u></a>, <a
-href="#security-controls"><u>4.1.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63"><u>4.1.4</u></a>, <a
 href="#records-retention-policy"><u>4.1.5</u></a>, <a
 href="#authenticator-and-verifier-requirements-1"><u>4.2.2</u></a>, <a
-href="#security-controls-1"><u>4.2.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63-1"><u>4.2.4</u></a>, <a
 href="#records-retention-policy-1"><u>4.2.5</u></a>, <a
 href="#authenticator-and-verifier-requirements-2"><u>4.3.2</u></a>, <a
-href="#security-controls-2"><u>4.3.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63-2"><u>4.3.4</u></a>, <a
 href="#records-retention-policy-2"><u>4.3.5</u></a>, <a
 href="#privacy-requirements"><u>4.4</u></a>, <a
 href="#memorized-secret-verifiers"><u>5.1.1.2</u></a>, <a
@@ -1489,11 +1489,11 @@ contained in 6*</td>
 <td></td>
 <td></td>
 <td><a href="#authenticator-and-verifier-requirements"><u>4.1.2</u></a>,
-<a href="#security-controls"><u>4.1.4</u></a>, <a
+<a href="#Mapping-of-SP800-53-IA-to-SP-800-63"><u>4.1.4</u></a>, <a
 href="#authenticator-and-verifier-requirements-1"><u>4.2.2</u></a>, <a
-href="#security-controls-1"><u>4.2.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63-1"><u>4.2.4</u></a>, <a
 href="#authenticator-and-verifier-requirements-2"><u>4.3.2</u></a>, <a
-href="#security-controls-2"><u>4.3.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63-2"><u>4.3.4</u></a>, <a
 href="#memorized-secret-verifiers"><u>5.1.1.2</u></a>, <a
 href="#look-up-secret-authenticators"><u>5.1.2.1</u></a>, <a
 href="#look-up-secret-verifiers"><u>5.1.2.2</u></a>, <a
@@ -1643,9 +1643,9 @@ href="#binding-at-enrollment"><u>6.1.1</u></a></td>
 <td>IA-5 (6)</td>
 <td></td>
 <td></td>
-<td><a href="#security-controls"><u>4.1.4</u></a>, <a
-href="#security-controls-1"><u>4.2.4</u></a>, <a
-href="#security-controls-2"><u>4.3.4</u></a>, <a
+<td><a href="#Mapping-of-SP800-53-IA-to-SP-800-63"><u>4.1.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63-1"><u>4.2.4</u></a>, <a
+href="#Mapping-of-SP800-53-IA-to-SP-800-63-2"><u>4.3.4</u></a>, <a
 href="#physical-authenticators"><u>5.2.1</u></a></td>
 <td></td>
 </tr>
@@ -4438,7 +4438,7 @@ when this time limit is reached.</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><h3 id="security-controls">4.1.4. Security Controls</h3></td>
+<td><h3 id="Mapping-of-SP800-53-IA-to-SP-800-63">4.1.4. Security Controls</h3></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -4645,7 +4645,7 @@ just before the inactivity timeout.</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><h3 id="security-controls-1">4.2.4. Security Controls</h3></td>
+<td><h3 id="Mapping-of-SP800-53-IA-to-SP-800-63-1">4.2.4. Security Controls</h3></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -4859,7 +4859,7 @@ just before the inactivity timeout.</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><h3 id="security-controls-2">4.3.4. Security Controls</h3></td>
+<td><h3 id="Mapping-of-SP800-53-IA-to-SP-800-63-2">4.3.4. Security Controls</h3></td>
 <td></td>
 </tr>
 <tr class="even">
