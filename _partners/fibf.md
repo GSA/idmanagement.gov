@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: partners
-title: FICAM in the Federal Integrated Business Framework (FIBF)
+title: FICAM in the Federal Integrated Business Framework (ICAM-FIBF)
 permalink: /icam-fibf/
 sidenav: partners
 sticky_sidenav: true
