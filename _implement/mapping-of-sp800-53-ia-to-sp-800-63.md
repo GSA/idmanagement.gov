@@ -40,7 +40,7 @@ subnav:
   </h4>
   <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
-      <caption>Security Controls Mapping</caption>
+      <caption>Security Controls Mapping of Special Publication 800-53 Revision 5</caption>
       <thead>
       <tr>
         <th scope='col'>Document Version</th>
