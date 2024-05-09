@@ -23,7 +23,7 @@ subnav:
 
 ## Draft ICAM-FIBF
 
-### (NOTICE: DRAFT FOR COMMENT)    
+### NOTICE: DRAFT FOR COMMENT    
 
 - **[(Download ICAM FIBF Components 2 & 3)]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
 
@@ -31,7 +31,9 @@ The Identity Credentialing and Access Management (ICAM) Subcommittee  through it
 
 The working group is chartered to define the ICAM business requirements using the Federal Integrated Business Framework (FIBF). To date, three of the five FIBF components are drafted and when finalized, will establish the interoperable business and data standards for ICAM use across the federal government.
 
-**The project timeline is as follows:**
+## Project Timeline
+
+The project timeline is as follows:
 
 [<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">]({{site.baseurl}}/assets/img/framework-comment-timeline.png){:target="_blank"}{:rel="noopener noreferrer"}
 
