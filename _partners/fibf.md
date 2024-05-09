@@ -31,7 +31,7 @@ The working group is chartered to define the ICAM business requirements using th
 
 The project timeline is as follows:
 
-<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">
+[<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">]({{site.baseurl}}/assets/img/framework-comment-timeline.png){:target="_blank"}{:rel="noopener noreferrer"}
 
 Please download the [ICAM FIBF (Workforce Identity Focused) Website Version Excel Spreadsheet]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review Component 2, Business Capabilities and Component 3, Business Use Cases. Please submit your feedback once your review is complete. The comment period will end **May 30th 2024**. 
 
