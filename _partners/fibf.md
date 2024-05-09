@@ -15,7 +15,7 @@ subnav:
   - text: ICAM - FIBF Background
     href: '#icam-fibf-background'
   - text: What is FIBF?
-    href: '#what-is-fibf?'
+    href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
   - text: How Agencies can use the FIBF for ICAM
