@@ -14,8 +14,8 @@ subnav:
     href: '#project-timeline'
   - text: ICAM - FIBF Background
     href: '#icam-fibf-background'
-  - text: What is FIBF
-    href: '#what-is-fibf'
+  - text: What is FIBF?
+    href: '#what-is-fibf?'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
   - text: How Agencies can use the FIBF for ICAM
@@ -39,7 +39,12 @@ The project timeline is as follows:
 
 [<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">]({{site.baseurl}}/assets/img/framework-comment-timeline.png){:target="_blank"}{:rel="noopener noreferrer"}
 
-Please download the [ICAM FIBF (Workforce Identity Focused) Website Version Excel Spreadsheet]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review Component 2, Business Capabilities and Component 3, Business Use Cases. Please submit your feedback once your review is complete. The comment period will end **May 30th 2024**. 
+Please download the [ICAM FIBF (Workforce Identity Focused) Website Version Excel Spreadsheet]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review: 
+
+- Component 2, Business Capabilities
+- Component 3, Business Use Cases 
+
+Please submit your feedback once your review is complete. The comment period will end **May 30th 2024**. 
 
 ## ICAM-FIBF Background 
 
@@ -72,7 +77,7 @@ Service Measures define how the government measures successful delivery of outco
 
 To learn more about FIBF, visit the [website](https://ussm.gsa.gov/fibf/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for OSSPI. 
 
-## ICAM FIBF Team?
+## ICAM FIBF Team
 
 The GSA ICAMSC Co-Chair serves as the Business Standards Lead for ICAM
 and participates in the Business Standard Council (BSC) meetings and projects.
