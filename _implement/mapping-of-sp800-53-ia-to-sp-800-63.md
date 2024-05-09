@@ -5,8 +5,8 @@ title: Federal Identity, Credential, and Access Management Sub Committee
 permalink: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
 sticky_sidenav: true
 sidenav: implement
-pubdate: February 22, 2024
-version: 1.1
+pubdate: April 24, 2024
+version: 1.0
 
 subnav:
   - text: Applicability and Use
@@ -15,7 +15,7 @@ subnav:
     href: '#informational-policy-mapping'
   - text: Policy Crosswalk
     href: '#policy-crosswalk'
-  - text: Policy crosswalk overview Table
+  - text: Policy Crosswalk Overview Table
     href: '#policy-crosswalk-overview-table'
   - text: Detailed Policy Crosswalk
     href: '#detailed-policy-crosswalk'
@@ -1155,7 +1155,7 @@ organization-defined identity assurance level].</td>
 
 # Policy Crosswalk
 
-## Policy crosswalk overview Table
+## Policy Crosswalk Overview Table
 
 This table presents a high-level summary of the relationship of controls
 in 800-53 to sections in the 800-63 set of documents. Because we are
