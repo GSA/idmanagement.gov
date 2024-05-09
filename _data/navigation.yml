@@ -46,8 +46,8 @@ implement:
     href: /fpki/notifications/
   - text: FPKI Test Environment
     href: /implement/fpkicite/
-  - text: Security Controls Mapping
-    href: /implement/security-controls/
+  - text: Mapping of SP800-53 IA to SP 800-63
+    href: /implement/Mapping-of-SP800-53-IA-to-SP-800-63/
 
 functions:
   - text: FICAM Program
