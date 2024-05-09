@@ -25,7 +25,7 @@ subnav:
 
 ## Draft ICAM-FIBF
 
-### NOTICE: DRAFT FOR COMMENT    
+### NOTICE: DRAFT FOR COMMENT
 
 - **[Download ICAM FIBF Components 2 & 3]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
 
