@@ -10,6 +10,8 @@ last_review: 05/09/2024
 subnav:
   - text: Draft ICAM-FIBF
     href: '#draft-icam-fibf'
+  - text: Project Timeline
+    href: '#project-timeline'
   - text: ICAM - FIBF Background
     href: '#icam-fibf-background'
   - text: What is FIBF
