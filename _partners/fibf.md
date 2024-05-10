@@ -1,18 +1,20 @@
 ---
 layout: page
 collection: partners
-title: ICAM in the Federal Integrated Business Framework (ICAM-FIBF) 
+title: FICAM in the Federal Integrated Business Framework (ICAM-FIBF)
 permalink: /icam-fibf/
 sidenav: partners
 sticky_sidenav: true
-last_review: 10/30/23
+last_review: 05/09/2024
 
 subnav:
-  - text: The Draft ICAM-FIBF
-    href: '#opportunity-to-comment-on-the-draft-icam-fibf'
+  - text: Draft ICAM-FIBF
+    href: '#draft-icam-fibf'
+  - text: Project Timeline
+    href: '#project-timeline'
   - text: ICAM - FIBF Background
     href: '#icam-fibf-background'
-  - text: What is FIBF
+  - text: What is FIBF?
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
@@ -21,17 +23,28 @@ subnav:
     
 ---
 
-## The Draft ICAM FIBF
+## Draft ICAM-FIBF
+
+### NOTICE: DRAFT FOR COMMENT
+
+- **[Download ICAM FIBF Components 2 & 3]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
 
 The Identity Credentialing and Access Management (ICAM) Subcommittee  through its Federal Integrated Business Framework (FIBF) Working Group is establishing ICAM as a federal function that will support and enable practically every mission support area. This will affect not only ICAM programs, but also areas such as Financial Management, Cybersecurity, Electronic Records Management and Human Resource Management, etc.   
 
-The working group is chartered to define the ICAM function using FIBF with workforce identity as the initial scope. 
+The working group is chartered to define the ICAM business requirements using the Federal Integrated Business Framework (FIBF). To date, three of the five FIBF components are drafted and when finalized, will establish the interoperable business and data standards for ICAM use across the federal government.
 
-The comment period for ICAM Business Lifecycle is closed. Posted here is the final draft. ICAM Business Capabilities will be briefed at the FIBF Working Group on December 12, 2023 and its review will commence January 9, 2024.
+## Project Timeline
 
-<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">
+The project timeline is as follows:
 
-Please download the [ICAM FIBF Draft]({{site.baseurl}}/docs/icam-fibf-draft.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review the Business LifeCycles. 
+[<img src="{{site.baseurl}}/assets/img/framework-comment-timeline.png" alt="icam fibf comment timeline." width="560" height="280">]({{site.baseurl}}/assets/img/framework-comment-timeline.png){:target="_blank"}{:rel="noopener noreferrer"}
+
+Please download the [ICAM FIBF (Workforce Identity Focused) Website Version Excel Spreadsheet]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"} to review: 
+
+- Component 2, Business Capabilities
+- Component 3, Business Use Cases 
+
+Please submit your feedback once your review is complete. The comment period will end **May 30th 2024**. 
 
 ## ICAM-FIBF Background 
 
@@ -45,9 +58,26 @@ FIBF is generally accepted in the Federal Government as a tool for documenting
 common business requirements; it is currently being used by 13 other Federal
 Functional Areas including Financial Management, IT Services, and Cybersecurity.  
 
+- **Component #1 - Business Lifecyles**<br>
+Federal Business Lifecycles, functional areas, functions, and activities serve as the basis for a common understanding of what services agencies need and solutions that should be offered.
+
+
+- **Component #2 - Business Capabilities**<br>
+Business Capabilities are the outcome-based business needs mapped to Federal government authoritative references, forms, inputs, outputs, and data standards.
+ 
+- **Component #3 - Business Use Cases**<br>
+Business Use Cases are a set of agency “stories” that document the key activities, inputs, outputs, and other line of business intersections to describe how the Federal government operates in the ICAM space.
+
+- **Component #4 - Standard Data Elements**<br>
+Standard Data Elements identify the minimum data fields required to support the inputs and outputs noted in the Business Use Cases and Business Capabilities.
+
+
+- **Component #5 - Service Measures**<br>
+Service Measures define how the government measures successful delivery of outcomes based on timeliness, efficiency, and accuracy targets.
+
 To learn more about FIBF, visit the [website](https://ussm.gsa.gov/fibf/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for OSSPI. 
 
-## ICAM FIBF Team?
+## ICAM FIBF Team
 
 The GSA ICAMSC Co-Chair serves as the Business Standards Lead for ICAM
 and participates in the Business Standard Council (BSC) meetings and projects.
