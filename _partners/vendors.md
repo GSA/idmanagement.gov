@@ -15,12 +15,12 @@ subnav:
 ---
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration (GSA) supports these requirements through testing and identifying products and services.
-- The GSA Federal Acquisition Service  issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre negotiated pricing.
+- The GSA Federal Acquisition Service issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre-negotiated pricing.
 - The GSA Office of Government-wide Policy provides testing and certification services for specific product categories.
 
-In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government must apply to a Multiple Award Schedule Special Item Number (SIN). Vendors must submit an appropriate self-assessment that demonstrates policy compliance with the following directives or standards.
+In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government must apply to a Multiple Award Schedule (MAS) Special Item Number (SIN). All ICAM-related SINs require a technical evaluation. In the case of [SIN 541519CSP - Credential Service Provider (CSP)]({{site.baseurl}}/docs/csp-capabilities-template-march-2024.docx){:target="_blank"}{:rel="noopener noreferrer"}, the provided capabilities template must be thoroughly completed.
 - [Homeland Security Presidential Directive 12 (HSPD-12)](https://www.dhs.gov/homeland-security-presidential-directive-12){:class="usa-link usa-link--external"}.
-- [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63](https://pages.nist.gov/800-63-3/){:class="usa-link usa-link--external"}. 
+- [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63](https://pages.nist.gov/800-63-3/){:class="usa-link usa-link--external"}.
 - [NIST Federal Information Processing Standard (FIPS) 201: Personal Identity Verification (PIV) of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:class="usa-link usa-link--external"}.
 
 Two product categories require additional testing at a testing facility before applying to the Multiple Award Schedule.

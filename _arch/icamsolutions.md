@@ -217,7 +217,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
     <td style="width:350px">Includes DHS approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
     <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by the Department of Homeland Security (DHS)</td>
-    <td><a class="usa-link usa-link--external" href="https://www.gsa.gov/technology/technology-products-services/it-security/continuous-diagnostics-mitigation-tools" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
+    <td><a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/CDM%20Tools%20Product%20Ordering%20Procedure.pdf" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
   <tr>
     <td>Identity Management <br><br> Access Management <br><br> Credential Management</td>
@@ -274,5 +274,5 @@ Buyers are required to register on GSA Advantage. Buyers can use the same User I
 ## Additional Resources
 
 - [GSA eBuy Job Aid](https://www.ebuy.gsa.gov/ebuy/assets/content/eBuy-Buyer_jobaid.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- [GSA ICAM](https://www.gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [GSA ICAM](https://www.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [MAS Consolidation Newsletter](https://interact.gsa.gov/sites/default/files/mas_quarterly_summer_2019_508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

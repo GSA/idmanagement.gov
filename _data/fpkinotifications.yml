@@ -26,6 +26,105 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: May 8, 2024
+  change_type: Intent to Modify a CA Certificate
+  system: WidePoint SSP
+  change_description: The WidePoint SSP Intermediate CA intends to issue a modified certificate to the U.S. Department of Transportation Agency CA G6 on or about 5/29/2024. Once the new certificate is accepted and published, the previous certificate will be revoked.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 69e17e8c900f3f853e16f05fc2a45e7941ef5d29
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
+  ca_certificate_subject: CN = U.S. Department of Transportation Agency CA G6, OU = U.S. Department of Transportation, O = U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG6.crl
+  ee_ocsp_uri: http://dotagencyg6.eva.orc.com/
+
+- notice_date: May 8, 2024
+  change_type: Intent to Modify a CA Certificate
+  system: WidePoint SSP
+  change_description: The WidePoint SSP Intermediate CA intends to issue a modified certificate to the U.S. Department of Transportation Device CA G6 on or about 5/29/2024. Once the new certificate is accepted and published, the previous certificate will be revoked.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 4638aa1b34ed72deb2de3aab780291f3bb70d3f5
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
+  ca_certificate_subject: CN = U.S. Department of Transportation Device CA G6, OU = U.S. Department of Transportation, O = U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntCA.p7c
+  ocsp_uri: http://ssp5.eva.orc.com
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTDeviceCAG6.crl
+  ee_ocsp_uri: http://dotdeviceg6.eva.orc.com/
+
+- notice_date: May 8, 2024
+  change_type: Intent to Revoke a CA Certificate
+  system: WidePoint SSP
+  change_description: The WidePoint SSP Intermediate CA intends to revoke a CA certificate issued to the U.S. Department of Transportation Agency CA G6 on or about 5/29/2024. This certificate is being replaced by a modified CA certificate.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: 7b6dcb34ab284ec897f0ffe1a2f8f95082f09c74
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
+  ca_certificate_subject: CN = U.S. Department of Transportation Agency CA G6, OU = U.S. Department of Transportation, O = U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG6.crl
+  ee_ocsp_uri: http://dotagencyg6.eva.orc.com/
+
+- notice_date: May 8, 2024
+  change_type: Intent to Revoke a CA Certificate
+  system: WidePoint SSP
+  change_description: The WidePoint SSP Intermediate CA intends to revoke a CA certificate issued to the U.S. Department of Transportation device CA G6 on or about 5/29/2024. This certificate is being replaced by a modified CA certificate.
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: e0f1bd791fe607a6a3b1f5528eab4687dbbb9dce
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
+  ca_certificate_subject: CN = U.S. Department of Transportation Device CA G6, OU = U.S. Department of Transportation, O = U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTDeviceCAG6.crl
+  ee_ocsp_uri: http://dotdeviceg6.eva.orc.com/
+
+- notice_date: April 29, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 6 on April 23, 2024.
+  contact: support at certipath dot com
+  ca_certificate_hash: 9be5b2354aae8641d4f9f43a7fb5af33e002f8e6
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 6, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://crl.external.lmco.com/crl/certupd/issuedby-lmrca6.p7c
+  ocsp_uri: N/A
+
+- notice_date: April 29, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath intends to issue a new cross certificate to Lockheed Martin Root CA 2 on April 23, 2024.
+  contact: support at certipath dot com
+  ca_certificate_hash: cccd407e90bc9184f04996181bd230a34b583da6
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 2, OU=Certification Authorities , O=Lockheed Martin Corporation, L=Denver, S=Colorado C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://crl.external.lmco.com/crl/certupd/issuedby-lmrca2.p7c
+  ocsp_uri: N/A
+
+- notice_date: April 29, 2024
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath issued a new cross certificate to the Boeing Company on April 23, 2024.
+  contact: support at certipath dot com
+  ca_certificate_hash: cb2bad7fc503492d4c9e68fa74f904fd429bf337
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Boeing PCA G3, OU = certservers, O = Boeing, C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://crl.boeing.com/crl/IssuedByBoeingPCAG3.p7c
+  ocsp_uri: N/A
+
 - notice_date: April 3, 2024
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA - G3
@@ -66,7 +165,7 @@
   ocsp_uri: N/A
 
 - notice_date: April 2, 2024
-  change_type: Intent for CA Certificate Issuance
+  change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 performed a certificate renewal to IdenTrust Global Common Root CA 1.
   contact: fpki dash help at gsa dot gov
