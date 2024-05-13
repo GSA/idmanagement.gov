@@ -1257,7 +1257,7 @@
     - *NIST
 - &SP80037
   type: Guidance
-  shortName: SP 800-37
+  shortName: NIST SP 800-37
   longName: "NIST Special Publication 800-37 Revision 2: Risk Management Framework for Information Systems and Organizations"
   description: >-
     This publication describes the Risk Management Framework (RMF) and provides guidelines for 
@@ -1316,7 +1316,7 @@
     - *M1919
 - &SP800171
   type: Guidance
-  shortName: SP 800-171
+  shortName: NIST SP 800-171
   longName: "NIST Special Publication 800-171 Revision 2: Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations"
   description: >-
     This publication provides guidance for operators of non-federal (e.g. commercial) systems hosting Controlled 
