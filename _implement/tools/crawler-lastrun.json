@@ -1,11 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US:163231335780907917625370921897028831257",
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US:1337989560731214305624018328250324572",
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US:28804242187730079923902306788963778304"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
