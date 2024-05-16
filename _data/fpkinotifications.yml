@@ -26,10 +26,40 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date:  May 14, 2024
+  change_type: CA Certificate Issuance
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 issued a new cross certificate to ECA Root CA 5 on 5/7/2024.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: d4a8acc6608fa7152d6d5eaabe87c10f7c3460de
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN = ECA Root CA 5, OU = ECA, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/ECAROOTCA5_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: May 14, 2024
+  change_type: CA Certificate Issuance
+  system: ECA Root CA 5
+  change_description: The ECA Root CA 5 issued a new subordinate CA certificate to WidePoint ECA 9 on 5/7/2024; however, it is unknown when end-entity certificates will begin to be issued.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: 259d0edd9b3d87b8ecddc9053e0fc8c253bac9e8
+  ca_certificate_issuer: CN = ECA Root CA 5, OU = ECA, O = U.S. Government, C = US
+  ca_certificate_subject: CN = WidePoint ECA 9, OU= Certification Authorities, OU=ECA, O=U.S. Government, C=US
+  cdp_uri: http://crl.disa.mil/crl/ECAROOTCA5.crl
+  aia_uri: http://crl.disa.mil/issuedby/ECAROOTCA5_IT.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.disa.mil/
+  ee_cdp_uri: http://eca.orc.com/CRLs/WIDEPOINTECA9.crl
+  ee_ocsp_uri: http://eva.orc.com/
+
 - notice_date: May 8, 2024
   change_type: Intent to Modify a CA Certificate
   system: WidePoint SSP
-  change_description: The WidePoint SSP Intermediate CA intends to issue a modified certificate to the U.S. Department of Transportation Agency CA G6 on or about 5/29/2024. Once the new certificate is accepted and published, the previous certificate will be revoked.
+  change_description: The WidePoint SSP Intermediate CA intends to issue a modified certificate to the U.S. Department of Transportation Agency CA G6 on or about 5/22/2024. Once the new certificate is accepted and published, the previous certificate will be revoked.
   contact: WCSC-PKIPolicy at widepoint dot com
   ca_certificate_hash: 69e17e8c900f3f853e16f05fc2a45e7941ef5d29
   ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
@@ -44,7 +74,7 @@
 - notice_date: May 8, 2024
   change_type: Intent to Modify a CA Certificate
   system: WidePoint SSP
-  change_description: The WidePoint SSP Intermediate CA intends to issue a modified certificate to the U.S. Department of Transportation Device CA G6 on or about 5/29/2024. Once the new certificate is accepted and published, the previous certificate will be revoked.
+  change_description: The WidePoint SSP Intermediate CA intends to issue a modified certificate to the U.S. Department of Transportation Device CA G6 on or about 5/22/2024. Once the new certificate is accepted and published, the previous certificate will be revoked.
   contact: WCSC-PKIPolicy at widepoint dot com
   ca_certificate_hash: 4638aa1b34ed72deb2de3aab780291f3bb70d3f5
   ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
@@ -59,7 +89,7 @@
 - notice_date: May 8, 2024
   change_type: Intent to Revoke a CA Certificate
   system: WidePoint SSP
-  change_description: The WidePoint SSP Intermediate CA intends to revoke a CA certificate issued to the U.S. Department of Transportation Agency CA G6 on or about 5/29/2024. This certificate is being replaced by a modified CA certificate.
+  change_description: The WidePoint SSP Intermediate CA intends to revoke a CA certificate issued to the U.S. Department of Transportation Agency CA G6 on or about 6/22/2024. This certificate is being replaced by a modified CA certificate.
   contact: WCSC-PKIPolicy at widepoint dot com
   ca_certificate_hash: 7b6dcb34ab284ec897f0ffe1a2f8f95082f09c74
   ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
@@ -74,7 +104,7 @@
 - notice_date: May 8, 2024
   change_type: Intent to Revoke a CA Certificate
   system: WidePoint SSP
-  change_description: The WidePoint SSP Intermediate CA intends to revoke a CA certificate issued to the U.S. Department of Transportation device CA G6 on or about 5/29/2024. This certificate is being replaced by a modified CA certificate.
+  change_description: The WidePoint SSP Intermediate CA intends to revoke a CA certificate issued to the U.S. Department of Transportation device CA G6 on or about 6/22/2024. This certificate is being replaced by a modified CA certificate.
   contact: WCSC-PKIPolicy at widepoint dot com
   ca_certificate_hash: e0f1bd791fe607a6a3b1f5528eab4687dbbb9dce
   ca_certificate_issuer: CN = WidePoint SSP Intermediate CA, O=ORC PKI, C=US
