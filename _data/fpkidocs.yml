@@ -5,6 +5,39 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: Common Certificate Policy
+  numberProposal: 2.7
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.7
+  date: 02/02/2024
+  url: /docs/archived/fpki-x509-cert-policy-common-27.pdf
+  status: post
+  remove: 06/08/2027
+
+- category: Common Change Proposal
+  numberProposal: 2024-05
+  name: Proposal 2024-05 | Remote Workstation Clarification
+  description: Clarify the definition of a “remote workstation used to administer the CA” in order to more clearly delineate parity with CA security controls.
+  date: 05/08/2024
+  url: /docs/archived/fpki-common-cp-2405.pdf
+  status: post
+  remove: 06/08/2027
+
+- category: Federal Bridge Certificate Policy
+  numberProposal: 3.4
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.4
+  date: 02/02/2024
+  url: /docs/archived/fpki-x509-cert-policy-fbca-34.pdf
+  status: post
+  remove: 06/08/2027
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2024-04
+  name: Proposal 2024-04 | Remote Workstation Clarification
+  description: Clarify the definition of a “remote workstation used to administer the CA” in order to more clearly delineate parity with CA security controls.
+  date: 05/08/2024
+  url: /docs/archived/fpki-fbca-cp-2404.pdf
+  status: post
+  remove: 06/08/2027
 
 - category: Common Certificate Policy
   numberProposal: 2.6
