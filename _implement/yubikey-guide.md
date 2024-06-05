@@ -667,6 +667,7 @@ applications.
 ## Yubikey FAQs
 
 **Why do I need a PIN for my YubiKey?**
+
 1. Think of your YubiKey like a debit card for digital security. Just as your bank card
 uses a PIN to keep your money safe, your YubiKey uses a PIN for an extra layer of
 protection. This means that if someone ever gets their hands on your security key, they
@@ -676,31 +677,31 @@ it's really you who's activating it.
 
 **What are Platform Authenticators and how come I can’t use my smartphone to enroll a security key?**
 
-1. Platform authenticators (aka Internal Authenticators): These are devices that you
-typically own, such as smartphones and laptops. Depending on the hardware and
-software version they meet the FIDO2 standards, which allow you to prove your identity
-using methods like a PIN, your fingerprint, or facial recognition, utilizing the built-in
-security features of your device just like a YubiKey.
+1.  Platform authenticators (aka Internal Authenticators): These are devices that you
+    typically own, such as smartphones and laptops. Depending on the hardware and
+    software version they meet the FIDO2 standards, which allow you to prove your identity
+    using methods like a PIN, your fingerprint, or facial recognition, utilizing the built-in
+    security features of your device just like a YubiKey.
 
-The core of FIDO2 lies in what we call resident keys also known as "private keys" —
-think of them as digital versions of a physical key for a locked door. In a typical setup,
-these private keys are securely stored on your device itself. However, in certain
-situations, depending on your device's setup and type, there's a possibility that these
-keys could be stored in the cloud. This scenario might present security and audit risks,
-primarily because of uncertainties about where exactly these private keys are stored.
+    The core of FIDO2 lies in what we call resident keys also known as "private keys" —
+    think of them as digital versions of a physical key for a locked door. In a typical setup,
+    these private keys are securely stored on your device itself. However, in certain
+    situations, depending on your device's setup and type, there's a possibility that these
+    keys could be stored in the cloud. This scenario might present security and audit risks,
+    primarily because of uncertainties about where exactly these private keys are stored.
 
-Since different users have various types of devices and settings, and because of the
-potential cloud storage of private keys, platform authenticators might pose security
-challenges in terms of administration and management of organizational security
-standards. This variability is why, in most organizational contexts, platform
-authenticators may not be recommended or allowed.
+    Since different users have various types of devices and settings, and because of the
+    potential cloud storage of private keys, platform authenticators might pose security
+    challenges in terms of administration and management of organizational security
+    standards. This variability is why, in most organizational contexts, platform
+    authenticators may not be recommended or allowed.
 
-2. External authenticators (aka USB Authenticators): Are independent devices such as
-your YubiKey that have one single purpose. These store the resident keys directly on
-the device itself, meaning the private keys reside solely within the physical bounds of
-the external authenticator. This approach generally offers a higher level of security
-because the private keys are not stored or replicated anywhere else, thus reducing the
-risk of unauthorized access.
+2.  External authenticators (aka USB Authenticators): Are independent devices such as
+    your YubiKey that have one single purpose. These store the resident keys directly on
+    the device itself, meaning the private keys reside solely within the physical bounds of
+    the external authenticator. This approach generally offers a higher level of security
+    because the private keys are not stored or replicated anywhere else, thus reducing the
+    risk of unauthorized access.
 
 ---
 
