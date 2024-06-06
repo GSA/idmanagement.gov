@@ -669,12 +669,12 @@ applications.
 **Why do I need a PIN for my YubiKey?**
 
 
-1. Think of your YubiKey like a debit card for digital security. Just as your bank card
-uses a PIN to keep your money safe, your YubiKey uses a PIN for an extra layer of
-protection. This means that if someone ever gets their hands on your security key, they
-still can't use it unless they know your unique PIN. Additionally, the policies which
-govern IDM at Okta requires a PIN when you first set up your security key, ensuring that
-it's really you who's activating it.
+1.  Think of your YubiKey like a debit card for digital security. Just as your bank card
+    uses a PIN to keep your money safe, your YubiKey uses a PIN for an extra layer of
+    protection. This means that if someone ever gets their hands on your security key, they
+    still can't use it unless they know your unique PIN. Additionally, the policies which
+    govern IDM at Okta requires a PIN when you first set up your security key, ensuring that
+    it's really you who's activating it.
 
 **What are Platform Authenticators and how come I can’t use my smartphone to enroll a security key?**
 
