@@ -20,14 +20,14 @@ subnav:
     href: '#prerequisites'
   - text: Device enrollment configuration with Okta set-up
     href: '#device-enrollment-configuration-with-okta-set-up'
-  - text: First-time setup for new device/PIN creation MacOS
-    href: '#first-time-setup-for-new-devicepin-creation-macos'
+  - text: First-time setup for new device PIN creation MacOS
+    href: '#first-time-setup-for-new-device-pin-creation-macos'
   - text: Enrolling a Security Key on CMS Okta IDM - MacOS
     href: '#enrolling-a-security-key-on-cms-okta-idm-macos'
   - text: Login to CMS Okta with Security Key-MacOS
     href: '#login-to-cms-okta-with-security-key-macos'
-  - text: First-time setup for new device/PIN creation Windows
-    href: '#first-time-setup-for-new-devicepin-creation-windows'
+  - text: First-time setup for new device PIN creation Windows
+    href: '#first-time-setup-for-new-device-pin-creation-windows'
   - text: Enroll Security Key on CMS IDM-Windows
     href: '#enroll-security-key-on-cms-idm-windows'
   - text: Login to CMS IDM with Security Key-Windows
@@ -435,7 +435,7 @@ appropriate fields.
 
 <!-- Start of Section 4 -->
 
-## First-time setup for new device/PIN creation Windows
+## First-time setup for new device PIN creation Windows
 
 ### Step 1 - Install YubiKey Manager
 
