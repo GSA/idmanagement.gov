@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Okta / Yubikey Implementation Guide
+title: Okta Yubikey Implementation Guide
 type: Markdown
 permalink: /implement/yuvikey-guide/
 description: Description needed
@@ -45,7 +45,7 @@ subnav:
 <!-- Start of Header -->
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"> 
 <img src="{{site.baseurl}}/assets/img/logo-opm.png" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo"> 
-<img src="{{site.baseurl}}/assets/img/logo-ed.png" width="64" height='64' align="left" alt="U.S. Department of Education Logo">
+<img src="{{site.baseurl}}/assets/img/logo-cms.png" height='64' align="left" alt="U.S. Centers for Medicare & Medicaid Services"> 
 <br><br><br>
   
 <div class="usa-accordion usa-accordion--bordered">
@@ -56,7 +56,7 @@ subnav:
   </h4>
   <div id="v-c1" class="usa-accordion__content usa-prose">
     <table>
-      <caption>Okta / Yubikey Implementation Guide</caption>
+      <caption>Okta Yubikey Implementation Guide</caption>
       <thead>
       <tr>
         <th scope='col'>Version Number</th>
@@ -84,7 +84,7 @@ subnav:
 <!-- Start of Section 1 -->
 ## Executive Summary
 
-This document details the implementation and usage of YubiKey, a durable and portable
+This guide details the implementation and usage of YubiKey, a durable and portable
 external security device, by federal employees and contractors to enhance the security of
 federal systems through FIDO2 compliant multi-factor authentication (MFA). It highlights the
 benefits of YubiKey, emphasizing its resistance to phishing attacks and broad compatibility with
@@ -121,41 +121,41 @@ authenticity. This minimizes phishing risks, including cross-site scripting, typ
 man-in-the-middle attacks. Additionally, YubiKey requires physical interaction and may use
 PINs, ensuring data transmission only occurs with user consent, further enhancing security.
 
-### Other features of YubiKeys include:
+### Other features of YubiKeys include
 
-- **Rugged and Portable:** The YubiKey is made with solid materials (like glass-fiber reinforced
+- **Rugged and Portable** The YubiKey is made with solid materials (like glass-fiber reinforced
 plastic), can handle water and dust, and it does not need batteries.
 
-- **Easy to Connect:** YubiKeys are available in USB-A and USB-C formats, as well as having a
+- **Easy to Connect** YubiKeys are available in USB-A and USB-C formats, as well as having a
 Near Field Communication (NFC) option for mobile devices, making it compatible with most
 computers and smartphones.
 
-- **Broad Compatibility:** The YubiKey is compatible with many operating systems like Windows,
+- **Broad Compatibility** The YubiKey is compatible with many operating systems like Windows,
 macOS, Chrome OS, Linux, and popular web browsers like Chrome, Safari, and Edge. It can
 help secure access to most online services and platforms.
 
-- **FIPS Certified:** The YubiKey series also offers FIPS compliant versions which are required by
+- **FIPS Certified** The YubiKey series also offers FIPS compliant versions which are required by
 government agencies and regulated industries like healthcare.
 
 --- 
 
 ## Prerequisites
 
-To use YubiKey for FIDO2 authentication on Okta, several prerequisites must be met to ensure a successful deployment and operation:
+To use YubiKey for FIDO2 authentication on Okta, several prerequisites must be met to ensure a successful deployment and operation
 
-- **Compatible YubiKey Device:** Ensure that the YubiKey model you intend to use supports FIDO2. YubiKey 5 Series or newer models are typically compatible.
+- **Compatible YubiKey Device** Ensure that the YubiKey model you intend to use supports FIDO2. YubiKey 5 Series or newer models are typically compatible.
 
-- **Supported Web Browsers:** The web browser used to access Okta must support WebAuthn. Popular browsers such as Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari typically have this support.
+- **Supported Web Browsers** The web browser used to access Okta must support WebAuthn. Popular browsers such as Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari typically have this support.
 
-- **Okta Configuration:** Okta must be configured to allow FIDO2 as an authentication method. This involves setting up and enabling FIDO2 in the Okta admin dashboard under the authentication and security settings. (See Device Enrollment Configuration with Okta set-up)
+- **Okta Configuration** Okta must be configured to allow FIDO2 as an authentication method. This involves setting up and enabling FIDO2 in the Okta admin dashboard under the authentication and security settings. (See Device Enrollment Configuration with Okta set-up)
 
-- **Operating System Compatibility:** The operating system on the user’s device must be compatible with the YubiKey model being used. This includes support for the necessary USB or NFC interfaces provided by the YubiKey. User Training and Onboarding: Users will need to learn how to use their YubiKey, including initial setup, PIN creation, and using it to login.
+- **Operating System Compatibility** The operating system on the user’s device must be compatible with the YubiKey model being used. This includes support for the necessary USB or NFC interfaces provided by the YubiKey. User Training and Onboarding - Users will need to learn how to use their YubiKey, including initial setup, PIN creation, and using it to login.
 
 <!-- Start of Section 2 -->
 
 ## Device enrollment configuration with Okta set-up
 
-### Prerequisites:
+### Prerequisites
 
 <u>Disable use of Syncable Passkeys</u>
 
@@ -215,16 +215,16 @@ requiring the use of FIPS compliant security tokens.
 1. Click the "Add authenticator group" button. 
 ![Figure 7]({{site.baseurl}}/assets/okta/p2fig7-okta-configuration.jpg)
 
-2. Enter a name for this group, for example "Yubikey FIPS Only": 
+2. Enter a name for this group, for example "Yubikey FIPS Only" 
 ![Figure 8]({{site.baseurl}}/assets/okta/p2fig8-okta-configuration.jpg)
 
 3. Search for the desired devices and select all that apply. 
 ![Figure 9]({{site.baseurl}}/assets/okta/p2fig9-okta-configuration.jpg)
 
-4. When all of the desired devices are selected click “Add authenticator group”: 
+4. When all of the desired devices are selected click “Add authenticator group” 
 ![Figure 10]({{site.baseurl}}/assets/okta/p2fig10-okta-configuration.jpg)
 
-5. When finished you will see your group created: 
+5. When finished you will see your group created 
 ![Figure 11]({{site.baseurl}}/assets/okta/p2fig11-okta-configuration.jpg)
 
 ---
@@ -233,7 +233,7 @@ requiring the use of FIPS compliant security tokens.
 
 1. The final step is to create an enrollment policy which will apply the desired group.
 
-2. From the left menu navigate to **Security** > **Authenticators**, select the **“Enrollment”** tab, click **“Add Policy”**:
+2. From the left menu navigate to **Security** > **Authenticators**, select the **“Enrollment”** tab, click **“Add Policy”**
 ![Figure 12]({{site.baseurl}}/assets/okta/p2fig12-okta-configuration.jpg)
 
 3. Enter a name for the policy.
@@ -261,9 +261,9 @@ requiring the use of FIPS compliant security tokens.
 
 ## First-time setup for new device/PIN creation MacOS
 
-### Step 1: Install YubiKey Manager
+### Step 1 - Install YubiKey Manager
 
-1. Download the Yubikey Manager: Access the [download link](https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-latest-mac.pkg){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provided and save the file to your Mac.
+1. Download the Yubikey Manager - Access the [download link](https://developers.yubico.com/yubikey-manager-qt/Releases/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provided and save the file to your Mac.
 
 2. Run the Installer
 
@@ -295,7 +295,7 @@ requiring the use of FIPS compliant security tokens.
 
 ---
 
-### Step 2: Setup YubiKey PIN
+### Step 2 - Setup YubiKey PIN
 1. Navigate to PIN Setup
 
 2. In the YubiKey Manager, go to **Applications** > **FIDO2**
@@ -314,7 +314,7 @@ requiring the use of FIPS compliant security tokens.
     
     <div class="usa-alert usa-alert--warning">
       <div class="usa-alert__body">
-        <h4 class="usa-alert__heading"><strong>Caution:</strong></h4>
+        <h4 class="usa-alert__heading"><strong>Caution</strong></h4>
         <p class="usa-alert__text">
           Avoid simple sequences or commonly used numbers such as <strong>password</strong> or <strong>123456</strong>.
         </p>
@@ -411,7 +411,7 @@ appropriate fields.
 
 3. Click the checkbox to Agree to the Terms & Conditions and then click Sign In.
 
-4. Note: Session cookies from a previous authentication may remain valid and CMS IDM may not prompt you to re-authenticate after login. In this circumstance, click your Name in the top right-hand corner to expand the drop-down list and click Log Out to return to the Sign In screen.
+4. Note - Session cookies from a previous authentication may remain valid and CMS IDM may not prompt you to re-authenticate after login. In this circumstance, click your Name in the top right-hand corner to expand the drop-down list and click Log Out to return to the Sign In screen.
 ![Figure 23]({{site.baseurl}}/assets/okta/p3fig23-ux-mac-setup.jpg)
 
 5. MFA Challenge with Security Key
@@ -437,12 +437,12 @@ appropriate fields.
 
 ## First-time setup for new device/PIN creation Windows
 
-### Step 1: Install YubiKey Manager
+### Step 1 - Install YubiKey Manager
 
-Download the Yubikey Manager:
-- Access the [download link](https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-latest-win64.exe){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provided and save the file to your computer.
+Download the Yubikey Manager
+- Access the [download link](https://developers.yubico.com/yubikey-manager-qt/Releases/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provided and save the file to your computer.
 
-### Run the Installer:
+### Run the Installer
 
 1. Locate the downloaded file, usually in your Downloads folder, and double-click to open it.
 
@@ -464,7 +464,7 @@ Download the Yubikey Manager:
     <br>
     <div class="usa-alert usa-alert--info">
       <div class="usa-alert__body">
-        <h4 class="usa-alert__heading"><strong>Notice:</strong></h4>
+        <h4 class="usa-alert__heading"><strong>Notice</strong></h4>
         <p class="usa-alert__text">
           Run the Yubikey Manager as an <strong>Administrator</strong> for initial setup
         </p>
@@ -482,7 +482,7 @@ it by searching for it in the Start menu.
 
 ---
 
-### Step 2: Setup YubiKey PIN
+### Step 2 - Setup YubiKey PIN
 
 12. Navigate to PIN Setup
 
@@ -612,53 +612,53 @@ Out
 
 ## Glossary of Terms
 
-**FIDO2** Authentication: A modern authentication standard that strengthens security by allowing
+**FIDO2** Authentication - A modern authentication standard that strengthens security by allowing
 users to utilize local biometrics and security keys for passwordless logins or as a part of multifactor
 authentication. FIDO2 is an enhancement of the original FIDO standards, adding support
 for passwordless authentication and expanded browser support through its WebAuthn
 component.
 
-**WebAuthn** (Web Authentication): A web standard published by the World Wide Web
+**WebAuthn** (Web Authentication) - A web standard published by the World Wide Web
 Consortium (W3C) in collaboration with the FIDO Alliance, which specifies a built-in browser API
 enabling online services to offer a secure, passwordless login experience using public key
 cryptography. WebAuthn allows users to authenticate themselves on the internet using
 biometrics, mobile devices, or FIDO2 devices like security keys, instead of relying on traditional
 passwords.
 
-**FIPS** (Federal Information Processing Standards): U.S. government standards that coordinate
+**FIPS** (Federal Information Processing Standards) - U.S. government standards that coordinate
 the requirements for cryptographic modules, including both hardware and software components,
 used within a security system to protect sensitive but unclassified information.
 
-**Passkey:** A digital credential used in place of traditional passwords, often part of modern
+**Passkey** - A digital credential used in place of traditional passwords, often part of modern
 authentication systems like FIDO2, to provide a more secure and easy login experience.
 Passkeys enhance security by using cryptographic techniques, meaning they are resistant to
 phishing and cannot be reused across different sites, significantly reducing the risk of credential
 theft.
 
-**PIN** (Personal Identification Number): A numeric or alphanumeric password used in the
+**PIN** (Personal Identification Number) - A numeric or alphanumeric password used in the
 authentication process to verify the identity of a user accessing a system or device.
 
-**Multi-Factor Authentication** (MFA): A security system that requires more than one method of
+**Multi-Factor Authentication** (MFA) - A security system that requires more than one method of
 authentication from independent categories of credentials to verify the user's identity for a login
 or other transaction.
 
-**Security Key:** A physical device used to access computers, networks, and online accounts by
+**Security Key** - A physical device used to access computers, networks, and online accounts by
 proving possession of the key as a form of authentication.
 
-**USB-C:** A type of USB connector that is reversible, allowing it to be plugged in either direction,
+**USB-C** - A type of USB connector that is reversible, allowing it to be plugged in either direction,
 and supports faster data transfer, increased power flow, and video delivery.
 
-**USB-A:** The original standard USB connector, which is flat and rectangular in shape, commonly
+**USB-A** - The original standard USB connector, which is flat and rectangular in shape, commonly
 used to connect devices like keyboards, mice, and external hard drives to computers.
 
-**NFC** (Near Field Communication): A set of communication protocols that enable two electronic
+**NFC** (Near Field Communication) - A set of communication protocols that enable two electronic
 devices, one of which is usually a portable device such as a smartphone, to establish
 communication by bringing them within 4 cm of each other.
 
-**YubiKey:** A small hardware device produced by Yubico, that provides secure two-factor, multifactor,
+**YubiKey** - A small hardware device produced by Yubico, that provides secure two-factor, multifactor,
 and passwordless authentication that supports protocols such as FIDO2 and U2F.
 
-**Okta:** A cloud-based service that provides identity management and access management
+**Okta** - A cloud-based service that provides identity management and access management
 solutions, enabling secure authentication and user verification across various platforms and
 applications.
 
@@ -677,7 +677,7 @@ it's really you who's activating it.
 
 **What are Platform Authenticators and how come I can’t use my smartphone to enroll a security key?**
 
-1.  Platform authenticators (aka Internal Authenticators): These are devices that you
+1.  Platform authenticators (aka Internal Authenticators) - These are devices that you
     typically own, such as smartphones and laptops. Depending on the hardware and
     software version they meet the FIDO2 standards, which allow you to prove your identity
     using methods like a PIN, your fingerprint, or facial recognition, utilizing the built-in
@@ -696,7 +696,7 @@ it's really you who's activating it.
     standards. This variability is why, in most organizational contexts, platform
     authenticators may not be recommended or allowed.
 
-2.  External authenticators (aka USB Authenticators): Are independent devices such as
+2.  External authenticators (aka USB Authenticators) - Are independent devices such as
     your YubiKey that have one single purpose. These store the resident keys directly on
     the device itself, meaning the private keys reside solely within the physical bounds of
     the external authenticator. This approach generally offers a higher level of security
@@ -707,7 +707,7 @@ it's really you who's activating it.
 
 ## How do I unlink the YubiKey from CMS IDM?
 
-To remove your YubiKey from CMS IDM:
+To remove your YubiKey from CMS IDM
 1. Login to the CMS IDM portal
 
 2. Click your name to expand the drop down list and then select Settings
@@ -720,7 +720,7 @@ To remove your YubiKey from CMS IDM:
 ---
 
 ## What should I do if I forget my YubiKey PIN?
-1. To reset your YubiKey PIN:
+1. To reset your YubiKey PIN
 
 2. Navigate to the YubiKey Manager page and click **Applications** > **FIDO2**.
 ![Figure 4]({{site.baseurl}}/assets/okta/p5fig4-ux-supplement-glossary-faq.jpg)
@@ -734,7 +734,7 @@ the process of enrolling a security key, just as you did when you first got it.
 
 5. If you're without your YubiKey or forgot your PIN and had to reset, you can still access
 
-6. CMS IDM by choosing an alternative MFA method during the login process:
+6. CMS IDM by choosing an alternative MFA method during the login process
 
 7. Log into CMS IDM as usual until you reach the MFA prompt.
 
@@ -756,3 +756,4 @@ Verify or Google Authenticator
 ![Figure 9]({{site.baseurl}}/assets/okta/p5fig9-ux-supplement-glossary-faq.jpg)
 
 <br>
+<!-- last updated 06/06/2024 - CJB -->

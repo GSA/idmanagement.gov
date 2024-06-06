@@ -48,7 +48,7 @@ implement:
     href: /implement/fpkicite/
   - text: Mapping of SP800-53 IA to SP 800-63
     href: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
-  - text: Okta / Yubikey Implementation Guide
+  - text: Okta Yubikey Implementation Guide
     href: /implement/yuvikey-guide/
 
 functions:
