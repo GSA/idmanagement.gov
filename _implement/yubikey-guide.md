@@ -668,6 +668,7 @@ applications.
 
 **Why do I need a PIN for my YubiKey?**
 
+
 1. Think of your YubiKey like a debit card for digital security. Just as your bank card
 uses a PIN to keep your money safe, your YubiKey uses a PIN for an extra layer of
 protection. This means that if someone ever gets their hands on your security key, they
@@ -689,7 +690,18 @@ it's really you who's activating it.
     situations, depending on your device's setup and type, there's a possibility that these
     keys could be stored in the cloud. This scenario might present security and audit risks,
     primarily because of uncertainties about where exactly these private keys are stored.
+    The core of FIDO2 lies in what we call resident keys also known as "private keys" —
+    think of them as digital versions of a physical key for a locked door. In a typical setup,
+    these private keys are securely stored on your device itself. However, in certain
+    situations, depending on your device's setup and type, there's a possibility that these
+    keys could be stored in the cloud. This scenario might present security and audit risks,
+    primarily because of uncertainties about where exactly these private keys are stored.
 
+    Since different users have various types of devices and settings, and because of the
+    potential cloud storage of private keys, platform authenticators might pose security
+    challenges in terms of administration and management of organizational security
+    standards. This variability is why, in most organizational contexts, platform
+    authenticators may not be recommended or allowed.
     Since different users have various types of devices and settings, and because of the
     potential cloud storage of private keys, platform authenticators might pose security
     challenges in terms of administration and management of organizational security
