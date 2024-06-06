@@ -42,9 +42,9 @@ subnav:
     href: '#what-should-i-do-if-i-forget-my-yubikey-pin'
 
 ---
+
 <!-- Start of Header -->
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo"> 
-<img src="{{site.baseurl}}/assets/img/logo-opm.png" width="64" height='64' align="left" alt="U.S. Office of Personnel Management Logo"> 
 <img src="{{site.baseurl}}/assets/img/logo-cms.png" height='64' align="left" alt="U.S. Centers for Medicare & Medicaid Services"> 
 <br><br><br>
   
@@ -97,7 +97,6 @@ context, and troubleshooting tips for issues like forgotten PINs or device reset
 document is a crucial resource for federal employees and contractors tasked with maintaining
 high security standards using YubiKey on federal systems.
 
----
 
 ## Why YubiKey?
 
@@ -137,7 +136,6 @@ help secure access to most online services and platforms.
 - **FIPS Certified** The YubiKey series also offers FIPS compliant versions which are required by
 government agencies and regulated industries like healthcare.
 
---- 
 
 ## Prerequisites
 
@@ -170,7 +168,6 @@ To use YubiKey for FIDO2 authentication on Okta, several prerequisites must be m
 5. Ensure the feature **"Block passkeys for FIDO2 (WebAuthn) Authenticators"** is toggled to the enable position.
 ![Figure 1]({{site.baseurl}}/assets/okta/p2fig1-okta-configuration.jpg)
 
----
 
 ### Create a Group for the WebAuthn policy
 
@@ -182,7 +179,7 @@ To use YubiKey for FIDO2 authentication on Okta, several prerequisites must be m
 3. Enter a name and description and save the group.
 ![Figure 3]({{site.baseurl}}/assets/okta/p2fig3-okta-configuration.jpg)
 
----
+
 
 ### Procedure
 
@@ -201,7 +198,7 @@ To use YubiKey for FIDO2 authentication on Okta, several prerequisites must be m
 5. Click the **“Add”** button. 
 ![Figure 6]({{site.baseurl}}/assets/okta/p2fig6-okta-configuration.jpg)
 
----
+
 
 ### Optional Device Restrictions
 
@@ -227,7 +224,7 @@ requiring the use of FIPS compliant security tokens.
 5. When finished you will see your group created 
 ![Figure 11]({{site.baseurl}}/assets/okta/p2fig11-okta-configuration.jpg)
 
----
+
 
 ### Create Enrollment Policy
 
@@ -255,7 +252,6 @@ requiring the use of FIPS compliant security tokens.
 10. This concludes the configuration steps.
 ![Figure 15]({{site.baseurl}}/assets/okta/p2fig15-okta-configuration.jpg)
 
----
 
 <!-- Start of Section 3 -->
 
@@ -293,7 +289,7 @@ requiring the use of FIPS compliant security tokens.
 13. Plug your YubiKey into the appropriate USB port on your Mac.
 ![Figure 4]({{site.baseurl}}/assets/okta/p3fig4-ux-mac-setup.jpg)
 
----
+
 
 ### Step 2 - Setup YubiKey PIN
 1. Navigate to PIN Setup
@@ -330,7 +326,7 @@ requiring the use of FIPS compliant security tokens.
 10. Click Set PIN to finalize your PIN setup. This PIN will be required for enrolling your security key and for subsequent access to Okta.
 ![Figure 8]({{site.baseurl}}/assets/okta/p3fig8-ux-mac-setup.jpg)
 
----
+
 
 ## Enrolling a Security Key on CMS Okta IDM-MacOS
 
@@ -400,7 +396,7 @@ requiring the use of FIPS compliant security tokens.
 27. Confirm that you see an indication that your security key has been successfully added to your MFA application.
 ![Figure 22]({{site.baseurl}}/assets/okta/p3fig22-ux-mac-setup.jpg)
 
----
+
 
 ## Login to CMS Okta with Security Key-MacOS
 
@@ -431,7 +427,7 @@ appropriate fields.
 
 11. You have successfully completed the security key login process and can access resources protected by CMS ID
 
----
+
 
 <!-- Start of Section 4 -->
 
@@ -480,7 +476,7 @@ it by searching for it in the Start menu.
 12. Plug your YubiKey into the appropriate USB port on your Windows system
 ![Figure 2]({{site.baseurl}}/assets/okta/p4fig2-ux-windows-setup.jpg)
 
----
+
 
 ### Step 2 - Setup YubiKey PIN
 
@@ -508,7 +504,7 @@ Confirm PIN Setup
 20. Click Set PIN to finalize your PIN setup. This PIN will be required for enrolling your security key and for subsequent access to Okta.
 ![Figure 6]({{site.baseurl}}/assets/okta/p4fig6-ux-windows-setup.jpg)
 
----
+
 
 ## Enroll Security Key on CMS IDM-Windows
 
@@ -575,7 +571,7 @@ you see an indication that your security key has been successfully added to your
 application.
 ![Figure 20]({{site.baseurl}}/assets/okta/p4fig20-ux-windows-setup.jpg)
 
----
+
 
 ## Login to CMS IDM with Security Key-Windows
 
@@ -606,7 +602,7 @@ Out
 10. You have successfully completed the security key login process
 ![Figure 25]({{site.baseurl}}/assets/okta/p4fig25-ux-windows-setup.jpg)
 
----
+
 
 <!-- Start of Section 5 -->
 
@@ -662,7 +658,7 @@ and passwordless authentication that supports protocols such as FIDO2 and U2F.
 solutions, enabling secure authentication and user verification across various platforms and
 applications.
 
----
+
 
 ## Yubikey FAQs
 
@@ -715,7 +711,7 @@ applications.
     because the private keys are not stored or replicated anywhere else, thus reducing the
     risk of unauthorized access.
 
----
+
 
 ## How do I unlink the YubiKey from CMS IDM?
 
@@ -729,7 +725,7 @@ To remove your YubiKey from CMS IDM
 3. Navigate to the Extra Verifications section and click the Remove button adjacent to the YubiKey 5 FIPS with NFC menu option.
 ![Figure 3]({{site.baseurl}}/assets/okta/p5fig3-ux-supplement-glossary-faq.jpg)
 
----
+
 
 ## What should I do if I forget my YubiKey PIN?
 1. To reset your YubiKey PIN
