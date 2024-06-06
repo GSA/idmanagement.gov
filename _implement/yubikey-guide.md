@@ -22,7 +22,7 @@ subnav:
     href: '#device-enrollment-configuration-with-okta-set-up'
   - text: First-time setup for new device PIN creation MacOS
     href: '#first-time-setup-for-new-device-pin-creation-macos'
-  - text: Enrolling a Security Key on CMS Okta IDM - MacOS
+  - text: Enrolling a Security Key on CMS Okta IDM-MacOS
     href: '#enrolling-a-security-key-on-cms-okta-idm-macos'
   - text: Login to CMS Okta with Security Key-MacOS
     href: '#login-to-cms-okta-with-security-key-macos'
@@ -332,7 +332,7 @@ requiring the use of FIPS compliant security tokens.
 
 ---
 
-## Enrolling a Security Key on CMS Okta IDM - MacOS
+## Enrolling a Security Key on CMS Okta IDM-MacOS
 
 1. Login to CMS IDM portal
 
