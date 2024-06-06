@@ -22,7 +22,7 @@ subnav:
     href: '#device-enrollment-configuration-with-okta-set-up'
   - text: First-time setup for new device/PIN creation MacOS
     href: '#first-time-setup-for-new-devicepin-creation-macos'
-  - text: Enrolling a Security Key on CMS Okta (IDM)-MacOS
+  - text: Enrolling a Security Key on CMS Okta IDM - MacOS
     href: '#enrolling-a-security-key-on-cms-okta-idm-macos'
   - text: Login to CMS Okta with Security Key-MacOS
     href: '#login-to-cms-okta-with-security-key-macos'
@@ -86,7 +86,7 @@ subnav:
 
 This guide details the implementation and usage of YubiKey, a durable and portable
 external security device, by federal employees and contractors to enhance the security of
-federal systems through FIDO2 compliant multi-factor authentication (MFA). It highlights the
+federal systems through FIDO2 compliant multi-factor authentication MFA. It highlights the
 benefits of YubiKey, emphasizing its resistance to phishing attacks and broad compatibility with
 various platforms, making it an ideal choice for securing sensitive government data.
 The guide provides comprehensive instructions for initial setup on both MacOS and Windows,
@@ -103,7 +103,7 @@ high security standards using YubiKey on federal systems.
 
 The YubiKey is a small, external authenticator, also known as a security key, designed to make
 your online accounts more resistant to phishing and compromise. It is used to perform multifactor
-authentication (MFA) when users access secure systems. The YubiKey represents an
+authentication MFA when users access secure systems. The YubiKey represents an
 advancement in MFA technology by offering a more secure and user-friendly alternative to
 traditional methods like text-based codes or mobile authenticator apps. A key feature of the
 YubiKey is the touch sensor which is used to show that there is someone at that device. The
@@ -112,7 +112,7 @@ diagram below shows the different YubiKey Series 5 dongles and highlights the se
 ![Secure Against Phishing Attacks]({{site.baseurl}}/assets/okta/p1fig1-executive-summary.jpg)
 
 Using YubiKey is generally considered more secure than conventional MFA methods like Onetime
-Passwords (OTP) or Time-based One-time Passwords (TOTP) used by mobile apps such
+Passwords OTP or Time-based One-time Passwords TOTP used by mobile apps such
 as Google Authenticator or Okta Verify. With OTP and TOTP, users must verify the authenticity
 of a website and secure their connection, introducing elevated phishing risks. The YubiKey
 Series 5 employs FIDO2 technology, which uses cryptographic credentials to validate
@@ -123,11 +123,11 @@ PINs, ensuring data transmission only occurs with user consent, further enhancin
 
 ### Other features of YubiKeys include
 
-- **Rugged and Portable** The YubiKey is made with solid materials (like glass-fiber reinforced
-plastic), can handle water and dust, and it does not need batteries.
+- **Rugged and Portable** The YubiKey is made with solid materials like glass-fiber reinforced
+plastic, can handle water and dust, and it does not need batteries.
 
 - **Easy to Connect** YubiKeys are available in USB-A and USB-C formats, as well as having a
-Near Field Communication (NFC) option for mobile devices, making it compatible with most
+Near Field Communication NFC option for mobile devices, making it compatible with most
 computers and smartphones.
 
 - **Broad Compatibility** The YubiKey is compatible with many operating systems like Windows,
@@ -147,7 +147,7 @@ To use YubiKey for FIDO2 authentication on Okta, several prerequisites must be m
 
 - **Supported Web Browsers** The web browser used to access Okta must support WebAuthn. Popular browsers such as Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari typically have this support.
 
-- **Okta Configuration** Okta must be configured to allow FIDO2 as an authentication method. This involves setting up and enabling FIDO2 in the Okta admin dashboard under the authentication and security settings. (See Device Enrollment Configuration with Okta set-up)
+- **Okta Configuration** Okta must be configured to allow FIDO2 as an authentication method. This involves setting up and enabling FIDO2 in the Okta admin dashboard under the authentication and security settings. See Device Enrollment Configuration with Okta set-up
 
 - **Operating System Compatibility** The operating system on the user’s device must be compatible with the YubiKey model being used. This includes support for the necessary USB or NFC interfaces provided by the YubiKey. User Training and Onboarding - Users will need to learn how to use their YubiKey, including initial setup, PIN creation, and using it to login.
 
@@ -259,7 +259,7 @@ requiring the use of FIPS compliant security tokens.
 
 <!-- Start of Section 3 -->
 
-## First-time setup for new device/PIN creation MacOS
+## First-time setup for new device PIN creation MacOS
 
 ### Step 1 - Install YubiKey Manager
 
@@ -285,7 +285,7 @@ requiring the use of FIPS compliant security tokens.
 
 10. Open the YubiKey Manager
 
-11. You can open the YubiKey Manager either by using Spotlight search (**Command** + **Spacebar** and type **"YubiKey"**) or by going directly to your Applications folder
+11. You can open the YubiKey Manager either by using Spotlight search **Command** + **Spacebar** and type **"YubiKey"** or by going directly to your Applications folder
 ![Figure 3]({{site.baseurl}}/assets/okta/p3fig3-ux-mac-setup.jpg)
 
 12. Prepare the YubiKey
@@ -332,7 +332,7 @@ requiring the use of FIPS compliant security tokens.
 
 ---
 
-## Enrolling a Security Key on CMS Okta (IDM)-MacOS
+## Enrolling a Security Key on CMS Okta IDM - MacOS
 
 1. Login to CMS IDM portal
 
@@ -618,14 +618,14 @@ authentication. FIDO2 is an enhancement of the original FIDO standards, adding s
 for passwordless authentication and expanded browser support through its WebAuthn
 component.
 
-**WebAuthn** (Web Authentication) - A web standard published by the World Wide Web
-Consortium (W3C) in collaboration with the FIDO Alliance, which specifies a built-in browser API
+**WebAuthn** Web Authentication - A web standard published by the World Wide Web
+Consortium W3C in collaboration with the FIDO Alliance, which specifies a built-in browser API
 enabling online services to offer a secure, passwordless login experience using public key
 cryptography. WebAuthn allows users to authenticate themselves on the internet using
 biometrics, mobile devices, or FIDO2 devices like security keys, instead of relying on traditional
 passwords.
 
-**FIPS** (Federal Information Processing Standards) - U.S. government standards that coordinate
+**FIPS** Federal Information Processing Standards - U.S. government standards that coordinate
 the requirements for cryptographic modules, including both hardware and software components,
 used within a security system to protect sensitive but unclassified information.
 
@@ -635,10 +635,10 @@ Passkeys enhance security by using cryptographic techniques, meaning they are re
 phishing and cannot be reused across different sites, significantly reducing the risk of credential
 theft.
 
-**PIN** (Personal Identification Number) - A numeric or alphanumeric password used in the
+**PIN** Personal Identification Number - A numeric or alphanumeric password used in the
 authentication process to verify the identity of a user accessing a system or device.
 
-**Multi-Factor Authentication** (MFA) - A security system that requires more than one method of
+**Multi-Factor Authentication** MFA - A security system that requires more than one method of
 authentication from independent categories of credentials to verify the user's identity for a login
 or other transaction.
 
@@ -651,7 +651,7 @@ and supports faster data transfer, increased power flow, and video delivery.
 **USB-A** - The original standard USB connector, which is flat and rectangular in shape, commonly
 used to connect devices like keyboards, mice, and external hard drives to computers.
 
-**NFC** (Near Field Communication) - A set of communication protocols that enable two electronic
+**NFC** Near Field Communication - A set of communication protocols that enable two electronic
 devices, one of which is usually a portable device such as a smartphone, to establish
 communication by bringing them within 4 cm of each other.
 
@@ -678,7 +678,7 @@ applications.
 
 **What are Platform Authenticators and how come I can’t use my smartphone to enroll a security key?**
 
-1.  Platform authenticators (aka Internal Authenticators) - These are devices that you
+1.  Platform authenticators, aka Internal Authenticators - These are devices that you
     typically own, such as smartphones and laptops. Depending on the hardware and
     software version they meet the FIDO2 standards, which allow you to prove your identity
     using methods like a PIN, your fingerprint, or facial recognition, utilizing the built-in
@@ -708,7 +708,7 @@ applications.
     standards. This variability is why, in most organizational contexts, platform
     authenticators may not be recommended or allowed.
 
-2.  External authenticators (aka USB Authenticators) - Are independent devices such as
+2.  External authenticators, aka USB Authenticators - Are independent devices such as
     your YubiKey that have one single purpose. These store the resident keys directly on
     the device itself, meaning the private keys reside solely within the physical bounds of
     the external authenticator. This approach generally offers a higher level of security
