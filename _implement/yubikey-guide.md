@@ -28,16 +28,16 @@ subnav:
     href: '#login-to-cms-okta-with-security-key-macos'
   - text: First-time setup for new device PIN creation Windows
     href: '#first-time-setup-for-new-device-pin-creation-windows'
-  - text: Enroll Security Key on CMS IDM-Windows
+  - text: Enroll Security Key on Okta-Windows
     href: '#enroll-security-key-on-cms-idm-windows'
-  - text: Login to CMS IDM with Security Key-Windows
+  - text: Login to Okta with Security Key-Windows
     href: '#login-to-cms-idm-with-security-key-windows'
   - text: Glossary of Terms
     href: '#glossary-of-terms'
   - text: Yubikey FAQs
     href: '#yubikey-faqs'
-  - text: How do I unlink the YubiKey from CMS IDM?
-    href: '#how-do-i-unlink-the-yubikey-from-cms-idm'
+  - text: How do I unlink the YubiKey from Okta?
+    href: '#how-do-i-unlink-the-yubikey-from-okya'
   - text: What should I do if I forget my YubiKey PIN?
     href: '#what-should-i-do-if-i-forget-my-yubikey-pin'
 
@@ -330,9 +330,9 @@ requiring the use of FIPS compliant security tokens.
 
 ## Enrolling a Security Key on CMS Okta IDM-MacOS
 
-1. Login to CMS IDM portal
+1. Login to Okta portal
 
-2. Navigate to CMS IDM and sign in using your EUA Username and Password.
+2. Navigate to Okta and sign in using your EUA Username and Password.
 
 3. Click the checkbox to Agree to the Terms & Conditions.
 
@@ -356,58 +356,56 @@ requiring the use of FIPS compliant security tokens.
 
 11. Within the Extra Verification menu, click the Setup button next to the Security Key or Biometric Authenticator menu option.
 
-13. Avoid selecting the YubiKey option. 
-
-14. This menu option is used for legacy FIDO devices
+12. Avoid selecting the YubiKey option. This menu option is used for legacy FIDO devices.
 ![Figure 13]({{site.baseurl}}/assets/okta/p3fig13-ux-mac-setup.jpg)
 
-15. Enroll Your Security Key
+13. Enroll Your Security Key
 
-16. Navigate to the Multifactor Authentication section and then click Setup.
+14. Navigate to the Multifactor Authentication section and then click Setup.
 ![Figure 14]({{site.baseurl}}/assets/okta/p3fig14-ux-mac-setup.jpg)
 
-17. Click Enroll.
+15. Click Enroll.
 ![Figure 15]({{site.baseurl}}/assets/okta/p3fig15-ux-mac-setup.jpg)
 
-18. Click the Use a different passkey button.
+16. Click the Use a different passkey button.
 ![Figure 16]({{site.baseurl}}/assets/okta/p3fig16-ux-mac-setup.jpg)
 
-19. Select the Use a phone, tablet, or security key menu option.
+17. Select the Use a phone, tablet, or security key menu option.
 ![Figure 17]({{site.baseurl}}/assets/okta/p3fig17-ux-mac-setup.jpg)
 
-20. Activate your YubiKey by touching the gold sensor on the device.
+18. Activate your YubiKey by touching the gold sensor on the device.
 
-21. If it doesn’t respond, unplug and re-insert the YubiKey
+10. If it doesn’t respond, unplug and re-insert the YubiKey
 ![Figure 18]({{site.baseurl}}/assets/okta/p3fig18-ux-mac-setup.jpg)
 
-22. Enter your PIN and click Next
+20. Enter your PIN and click Next
 ![Figure 19]({{site.baseurl}}/assets/okta/p3fig19-ux-mac-setup.jpg)
 
-23. Press the gold sensor on the YubiKey again.
+21. Press the gold sensor on the YubiKey again.
 ![Figure 20]({{site.baseurl}}/assets/okta/p3fig20-ux-mac-setup.jpg)
 
-24. Click Allow to complete the enrollment process.
+22. Click Allow to complete the enrollment process.
 ![Figure 21]({{site.baseurl}}/assets/okta/p3fig21-ux-mac-setup.jpg)
 
-25. Completion
+23. Completion
 
-26. Open your MFA application and navigate to the Extra Verification menu. 
+24. Open your MFA application and navigate to the Extra Verification menu. 
 
-27. Confirm that you see an indication that your security key has been successfully added to your MFA application.
+25. Confirm that you see an indication that your security key has been successfully added to your MFA application.
 ![Figure 22]({{site.baseurl}}/assets/okta/p3fig22-ux-mac-setup.jpg)
 
 
 
 ## Login to CMS Okta with Security Key-MacOS
 
-1. Login to CMS IDM portal
+1. Login to Okta portal
 
-2. Navigate to CMS IDM and enter your EUA Username and Password into the
+2. Navigate to Okta and enter your EUA Username and Password into the
 appropriate fields.
 
 3. Click the checkbox to Agree to the Terms & Conditions and then click Sign In.
 
-4. Note - Session cookies from a previous authentication may remain valid and CMS IDM may not prompt you to re-authenticate after login. In this circumstance, click your Name in the top right-hand corner to expand the drop-down list and click Log Out to return to the Sign In screen.
+4. Note - Session cookies from a previous authentication may remain valid and Okta may not prompt you to re-authenticate after login. In this circumstance, click your Name in the top right-hand corner to expand the drop-down list and click Log Out to return to the Sign In screen.
 ![Figure 23]({{site.baseurl}}/assets/okta/p3fig23-ux-mac-setup.jpg)
 
 5. MFA Challenge with Security Key
@@ -423,7 +421,7 @@ appropriate fields.
 9. Touch the gold sensor on the YubiKey once more
 ![Figure 26]({{site.baseurl}}/assets/okta/p3fig26-ux-mac-setup.jpg)
 
-10. Successful Authentication into CMS IDM
+10. Successful Authentication into Okta
 
 11. You have successfully completed the security key login process and can access resources protected by CMS ID
 
@@ -506,9 +504,9 @@ Confirm PIN Setup
 
 
 
-## Enroll Security Key on CMS IDM-Windows
+## Enroll Security Key on Okta-Windows
 
-1. Login to CMS IDM portal
+1. Login to Okta portal
 
 2. Use the provided link to sign in with your EUA Username and Password.
 
@@ -535,7 +533,7 @@ Confirm PIN Setup
 
 11. Enroll Your Security Key
 
-12. Open CMS IDM and navigate to the Multifactor Authentication section and then click
+12. Open Okta and navigate to the Multifactor Authentication section and then click
 Setup.
 ![Figure 12]({{site.baseurl}}/assets/okta/p4fig12-ux-windows-setup.jpg)
 
@@ -573,15 +571,15 @@ application.
 
 
 
-## Login to CMS IDM with Security Key-Windows
+## Login to Okta with Security Key-Windows
 
-1. Login to CMS IDM portal
+1. Login to Okta portal
 
 2. Use the provided link to sign in with your EUA Username and Password. 
 
 3. Agree to the Terms & Conditions and select Sign In
 
-4. Your session cookie might still be valid and CMS IDM will not require you to reauthenticate
+4. Your session cookie might still be valid and Okta will not require you to reauthenticate
 to log back in, select your name in the top right hand corner and click Log
 Out
 ![Figure 21]({{site.baseurl}}/assets/okta/p4fig21-ux-windows-setup.jpg)
@@ -597,7 +595,7 @@ Out
 8. Touch the gold sensor on the YubiKey
 ![Figure 24]({{site.baseurl}}/assets/okta/p4fig24-ux-windows-setup.jpg)
 
-9. Authenticated with CMS IDM
+9. Authenticated with Okta
 
 10. You have successfully completed the security key login process
 ![Figure 25]({{site.baseurl}}/assets/okta/p4fig25-ux-windows-setup.jpg)
@@ -713,10 +711,10 @@ applications.
 
 
 
-## How do I unlink the YubiKey from CMS IDM?
+## How do I unlink the YubiKey from Okta?
 
-To remove your YubiKey from CMS IDM
-1. Login to the CMS IDM portal
+To remove your YubiKey from Okta
+1. Login to the Okta portal
 
 2. Click your name to expand the drop down list and then select Settings
 ![Figure 1]({{site.baseurl}}/assets/okta/p5fig1-ux-supplement-glossary-faq.jpg)
@@ -742,9 +740,9 @@ the process of enrolling a security key, just as you did when you first got it.
 
 5. If you're without your YubiKey or forgot your PIN and had to reset, you can still access
 
-6. CMS IDM by choosing an alternative MFA method during the login process
+6. Okta by choosing an alternative MFA method during the login process
 
-7. Log into CMS IDM as usual until you reach the MFA prompt.
+7. Log into Okta as usual until you reach the MFA prompt.
 
 8. Click Cancel.
 ![Figure 6]({{site.baseurl}}/assets/okta/p5fig6-ux-supplement-glossary-faq.jpg)
