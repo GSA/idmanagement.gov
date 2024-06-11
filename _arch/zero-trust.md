@@ -61,7 +61,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/implement/cba-azure/" target="_blank" rel="noopener noreferrer">Azure Entra ID Certificate-Based Authentication Guide</li>
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/implement/scl-windows/" target="_blank" rel="noopener noreferrer">PIV Implementation Guide</a></li>
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf" target="_blank" rel="noopener noreferrer">CISA Hybrid Identity Playbook</a></li>
-        </ul>
+        </ul> 
       </td>
     </tr>
     <tr>
@@ -73,7 +73,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
             <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.cisa.gov/resources-tools/programs/continuous-diagnostics-and-mitigation-cdm-program/program-approved-products-list-apl" target="_blank" rel="noopener noreferrer">DHS CDM Master User Record Architecture</a></li>
             <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/playbooks/pam/" target="_blank" rel="noopener noreferrer">Privileged Identity Playbook</a></li>
           </ul>
-        </td>
+      </td>
     </tr>
     <tr>
       <td><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/arch/#governance" target="_blank" rel="noopener noreferrer">Governance - Analytics</a></td>
