@@ -58,7 +58,7 @@ The [CISA Zero Trust Maturity Model](https://www.cisa.gov/sites/default/files/20
         <ul>
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/playbooks/altauthn/" target="_blank" rel="noopener noreferrer">Phishing-Resistant Authenticator Playbook</a></li>
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/implement/whfb/" target="_blank" rel="noopener noreferrer">WHfB Configuration Guide</a></li>
-          <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/implement/cba-azure/" target="_blank" rel="noopener noreferrer">Azure Entra ID Certificate-Based Authentication Guide</li>
+          <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/implement/cba-azure/" target="_blank" rel="noopener noreferrer">Azure Entra ID Certificate-Based Authentication Guide</a></li>
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.idmanagement.gov/implement/scl-windows/" target="_blank" rel="noopener noreferrer">PIV Implementation Guide</a></li>
           <li><a class="usa-link usa-link--external" class="usa-link" href="https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf" target="_blank" rel="noopener noreferrer">CISA Hybrid Identity Playbook</a></li>
         </ul>
