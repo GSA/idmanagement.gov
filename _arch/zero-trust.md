@@ -7,8 +7,8 @@ sidenav: arch
 sticky_sidenav: true
 
 subnav:
-  - text: Defined
-    href: '#defined'
+  - text: Definition
+    href: '#definition'
   - text: FICAM areas aligned to M-22-09
     href: '#ficam-areas-aligned-to-m-22-09'
   - text: FICAM alignment to CISA Zero Trust Maturity Model
