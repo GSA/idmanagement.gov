@@ -70,7 +70,7 @@ In collaboration with the FIDO2 CoA members, the FIDO Alliance also published a 
   </div>
 </div>
 
-# Executive Summary
+## Executive Summary
 
 This Phishing-Resistant Authenticator Playbook is a practical guide to help agencies understand and implement multiple types of phishing-resistant authentication. Office of Management and Budget Memo 22-09, Federal Zero Trust Strategy, provides ongoing guidance for modernizing Homeland Security Presidential Directive 12 for logical IT access. M-22-09 outlines that **Agencies must require their users, including employees, contractors, and other workforce users such as mission and business partners, to use a phishing-resistant method to access agency resources.** This includes removing any authentication option that fails to resist credential-based attacks, such as phishing, push bombing, SIM swap, and adversary-in-the-middle One-Time PIN (OTP) interception. These phishable and replayable authentication options used by most agencies include SMS or voice one-time pins (OTP), Time-based OTP (TOTP) for mobile, email, and tokens, or mobile application push notifications. Only phishing-resistant authentication options reduce an agency's risk associated with credential-based attacks, often leading to account compromise and network/cloud lateral movement. 
 
