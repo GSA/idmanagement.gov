@@ -2,13 +2,22 @@
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
 
-![U.S. General Services Administration Logo]
+
+<img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
 #### **Date: June 18, 2024 - Version: 1.3**
 
-<table><thead><tr><th><h2><a id="_74454emp3a44"></a><strong>Version Number</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>Date</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>Change Description</strong></h2></th></tr><tr><th><h2><a id="_74454emp3a44"></a><strong>1.3</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>6/18/2024</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>Incorporated Zero Trust elements.</strong></h2></th></tr><tr><th><h2><a id="_74454emp3a44"></a><strong>1.2</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>12/15/2022</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>Minor editorial updates.</strong></h2></th></tr><tr><th><h2><a id="_74454emp3a44"></a><strong>1.1</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>10/11/2022</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>10/11/2022 | Move 3rd party federation content to the Cloud Identity Playbook federation section.</strong></h2></th></tr><tr><th><h2><a id="_74454emp3a44"></a><strong>1.0</strong></h2></th><th><h2><a id="_74454emp3a44"></a><strong>06/30/2022</strong></h2></th><th><h2><a id="_bok0ylmhaicl"></a><strong>Initial Draft.</strong></h2></th></tr></thead></table>
+### Version History
 
-##
+| **Version Number** | **Date**      | **Change Description**                                                                 |
+|--------------------|---------------|----------------------------------------------------------------------------------------|
+| 1.3                | 6/18/2024     | Incorporated Zero Trust elements.                                                      |
+| 1.2                | 12/15/2022    | Minor editorial updates.                                                                |
+| 1.1                | 10/11/2022    | Move 3rd party federation content to the Cloud Identity Playbook federation section.    |
+| 1.0                | 06/30/2022    | Initial Draft.                                                                         |
+
+
 
 ## **Executive Summary**
 
