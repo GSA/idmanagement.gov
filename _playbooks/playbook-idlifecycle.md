@@ -184,7 +184,7 @@ Identity lifecycle management is the evolution of an identity from creation to r
 
 **Figure 1: Identity Lifecycle Process**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="Diagram illustrating the three phases of the Identity Lifecycle Process: Creation, Provisioning, and Deactivation" width="560" height="276">
 
 Stage 1 - Creation
 
@@ -204,7 +204,7 @@ Deactivation - Deactivate or remove identities associated with a master user rec
 
 With the Executive Order 14028 that enabled OMB M 22-09 agencies should centralize their identity management, credential management, and access management with services that leverage the identity access governance process. In doing so, agencies then can enhance their security posture to the “greatest extent possible” and centrally implement alternate phishing resistant authenticators support in their enterprise identity management systems, so that these authenticators are centrally managed and connected to enterprise identities.” – As the identity pillar, ZTA foundation is set in place for MB 22-09 agencies can then start to create their Master User Record (MUR) with the intent to implement IGA across the enterprise, set all users to required identity management and zero trust principles.
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-zero-trust-tree.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-zero-trust-tree.png" alt="Flowchart showing how user accounts and attributes from various sources are combined into a single Master User Record for access management." width="560" height="276">
 
 This playbook will move into the section for implementing identity lifecycle management leveraging the Master User Record.
 
@@ -287,7 +287,7 @@ Adhering to Zero Trust principles, automated and centralizing the ILM services w
 
 **Figure 3: ILM Automation**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-automation-arrow-chart.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-automation-arrow-chart.png" alt="Flowchart demonstrating the automation process within Identity Lifecycle Management, highlighting the integration of IGA and master user records." width="560" height="276">
 
 ### **ILM Journey**
 
@@ -326,7 +326,7 @@ Each tool has a distinct purpose. Your agency should consider your overall ICAM 
 
 **Figure 4: DHS CDM Master User Record Architecture**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-cdm-mur.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-cdm-mur.png" alt="Diagram showing the Department of Homeland Security's Continuous Diagnostics and Mitigation (CDM) Master User Record architecture." width="560" height="276">
 
 ### **Create the Master User Record**
 
@@ -340,7 +340,7 @@ These are sources that you use to create a digital identity. The attributes are 
 
 **Figure 5: Example of an Orphan Account**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-orphan-account.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-orphan-account.png" alt="Illustration depicting an orphan account scenario where an account is active but no longer associated with a current employee or application." width="560" height="276">
 
 To properly implement attribute changes, you should identify authoritative data sources that drive how the attribute change is implemented and are shared with connected systems. However, if there is not a process in place to drive the use of the authoritative data sources, the process will be inefficient and may result in vulnerabilities, like excess, “orphaned” accounts. An orphaned account is a potential risk because it is either unmanaged, not owned, or not linked to a digital identity.
 
@@ -366,7 +366,7 @@ An agency can further leverage the benefit of an automated ILM by integrating th
 
 **Figure 6: ILM Integration with Single Sign-On**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-sso-integration.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-sso-integration.png" alt="Diagram showing the integration of Identity Lifecycle Management with Single Sign-On systems to streamline access and identity management." width="560" height="276">
 
 The following is an example of the benefits of a master user record and integration with an access management tool for a cross-agency federation use case.
 
