@@ -1,3 +1,31 @@
+---
+layout: page
+collection: playbooks
+title: Identity Lifecycle Management Playbook
+pubdate: 2024-06-XX
+type: Markdown
+permalink: /playbooks/identity-lifecycle-management/
+description: The Identity Lifecycle Management Playbook helps federal agencies understand and plan identity lifecycle management initiatives based on Zero Trust Architecture principles.
+sidenav: playbooks
+sticky_sidenav: true
+
+version: 1.3
+pubdate: June XX, 2024
+
+subnav:
+  - text: Executive Summary
+    href: '#executive-summary'
+  - text: Identity Lifecycle Management 101
+    href: '#identity-lifecycle-management-101'
+  - text: Stage 1. Creation
+    href: '#stage-1-creation'
+  - text: Stage 2. Provisioning / Identity Governance Administration (IGA)
+    href: '#stage-2-provisioning-identity-governance-administration-iga'
+  - text: Stage 3. Deactivation
+    href: '#stage-3-deactivation'
+  - text: Key Terms
+    href: '#key-terms'
+
 # **Identity Lifecycle Management Playbook**
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
