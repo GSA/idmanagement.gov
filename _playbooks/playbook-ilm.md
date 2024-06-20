@@ -204,6 +204,8 @@ Deactivation - Deactivate or remove identities associated with a master user rec
 
 With the Executive Order 14028 that enabled OMB M 22-09 agencies should centralize their identity management, credential management, and access management with services that leverage the identity access governance process. In doing so, agencies then can enhance their security posture to the “greatest extent possible” and centrally implement alternate phishing resistant authenticators support in their enterprise identity management systems, so that these authenticators are centrally managed and connected to enterprise identities.” – As the identity pillar, ZTA foundation is set in place for MB 22-09 agencies can then start to create their Master User Record (MUR) with the intent to implement IGA across the enterprise, set all users to required identity management and zero trust principles.
 
+**Figure 2: Core Zero Trust Logical Components**
+
 <img src="{{site.baseurl}}/assets/playbooks/ilm-zero-trust-tree.png" alt="Flowchart showing how user accounts and attributes from various sources are combined into a single Master User Record for access management." width="560" height="276">
 
 This playbook will move into the section for implementing identity lifecycle management leveraging the Master User Record.
@@ -212,9 +214,9 @@ A key element of lifecycle management is the concept and provisioning of a maste
 
 A Master User Record is a unique representation of a user’s accounts, personas, attributes, entitlements, and credentials within an organization.
 
-**Figure 2: Account Aggregation Process to Create a Master User Record**
+**Figure 3: Account Aggregation Process to Create a Master User Record**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-account-aggregation.png" alt="XXXXXXXXXXX" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-account-aggregation.png" alt="A two-pane diagram. The left pane shows three accounts for the same user that are treated as separate accounts. The right page shows the same three accounts that are connected to the same user through a master user record." width="560" height="276">
 
 A master user record aggregates user accounts, attributes, entitlements, and issued credentials to understand in a single view the access and authorization of a specific user. Within the DHS Continuous Diagnostics and Mitigation (CDM) data model, a Master User Record contains aggregated attributes from multiple authoritative sources. The below table is an overview of authoritative sources, the object types, and attributes collected.
 
@@ -285,7 +287,7 @@ This playbook intends to help agencies achieve OMB Memo 19-17 outcomes to shift 
 
 Adhering to Zero Trust principles, automated and centralizing the ILM services we can leverage our IGA to remove access from the identity at the enterprise level and specific levels and accounts.
 
-**Figure 3: ILM Automation**
+**Figure 4: ILM Automation**
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-automation-arrow-chart.png" alt="Flowchart demonstrating the automation process within Identity Lifecycle Management, highlighting the integration of IGA and master user records." width="560" height="276">
 
@@ -324,7 +326,7 @@ The solution is how your agency will implement ILM. Most solutions are based on 
 
 Each tool has a distinct purpose. Your agency should consider your overall ICAM architecture to understand the cost, overlapping capabilities, and talent necessary to implement and maintain an ILM capability.
 
-**Figure 4: DHS CDM Master User Record Architecture**
+**Figure 5: DHS CDM Master User Record Architecture**
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-cdm-mur.png" alt="Diagram showing the Department of Homeland Security's Continuous Diagnostics and Mitigation (CDM) Master User Record architecture." width="560" height="276">
 
@@ -338,7 +340,7 @@ An authoritative attribute source is a repository or system that contains one or
 
 These are sources that you use to create a digital identity. The attributes are what you pull from the authoritative sources to add to that digital identity.
 
-**Figure 5: Example of an Orphan Account**
+**Figure 6: Example of an Orphan Account**
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-orphan-account.png" alt="Illustration depicting an orphan account scenario where an account is active but no longer associated with a current employee or application." width="560" height="276">
 
@@ -364,7 +366,7 @@ The main benefits of a master user record include:
 
 An agency can further leverage the benefit of an automated ILM by integrating the master user record with other agency enterprise ICAM IGA services. This integration can aid agencies to automate provisioning, de-provisioning, and reporting as well as in federating both within and external to an agency. In this context, the federation is transferring identity and authentication between networked systems rather than relying on siloed information specific to the target application.
 
-**Figure 6: ILM Integration with Single Sign-On**
+**Figure 7: ILM Integration with Single Sign-On**
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-sso-integration.png" alt="Diagram showing the integration of Identity Lifecycle Management with Single Sign-On systems to streamline access and identity management." width="560" height="276">
 
