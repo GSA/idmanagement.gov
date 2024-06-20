@@ -80,7 +80,7 @@ primary_navigation:
       - name: Mapping of SP800-53 IA to SP 800-63
         url: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
       - name: Okta Yubikey Implementation Guide
-        url: /implement/yuvikey-guide/
+        url: /implement/yubikey-guide/
 
   - name: Coordination Functions
     children: 
