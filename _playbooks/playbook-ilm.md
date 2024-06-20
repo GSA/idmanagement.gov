@@ -184,7 +184,7 @@ Identity lifecycle management is the evolution of an identity from creation to r
 
 **Figure 1: Identity Lifecycle Process**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="Diagram illustrating the three phases of the Identity Lifecycle Process: Creation, Provisioning, and Deactivation" width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="Diagram illustrating the three phases of the Identity Lifecycle Process: Creation, Provisioning, and Deactivation" width="800">
 
 Stage 1 - Creation
 
@@ -206,7 +206,7 @@ With the Executive Order 14028 that enabled OMB M 22-09 agencies should centrali
 
 **Figure 2: Core Zero Trust Logical Components**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-zero-trust-tree.png" alt="Flowchart showing how user accounts and attributes from various sources are combined into a single Master User Record for access management." width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-zero-trust-tree.png" alt="Flowchart showing how user accounts and attributes from various sources are combined into a single Master User Record for access management." width="800">
 
 This playbook will move into the section for implementing identity lifecycle management leveraging the Master User Record.
 
@@ -289,7 +289,7 @@ Adhering to Zero Trust principles, automated and centralizing the ILM services w
 
 **Figure 4: ILM Automation**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-automation-arrow-chart.png" alt="Flowchart demonstrating the automation process within Identity Lifecycle Management, highlighting the integration of IGA and master user records." width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-automation-arrow-chart.png" alt="Flowchart demonstrating the automation process within Identity Lifecycle Management, highlighting the integration of IGA and master user records." width="800">
 
 ### **ILM Journey**
 
@@ -342,7 +342,7 @@ These are sources that you use to create a digital identity. The attributes are 
 
 **Figure 6: Example of an Orphan Account**
 
-<img src="{{site.baseurl}}/assets/playbooks/ilm-orphan-account.png" alt="Illustration depicting an orphan account scenario where an account is active but no longer associated with a current employee or application." width="560" height="276">
+<img src="{{site.baseurl}}/assets/playbooks/ilm-orphan-account.png" alt="Illustration depicting an orphan account scenario where an account is active but no longer associated with a current employee or application." width="800">
 
 To properly implement attribute changes, you should identify authoritative data sources that drive how the attribute change is implemented and are shared with connected systems. However, if there is not a process in place to drive the use of the authoritative data sources, the process will be inefficient and may result in vulnerabilities, like excess, “orphaned” accounts. An orphaned account is a potential risk because it is either unmanaged, not owned, or not linked to a digital identity.
 
