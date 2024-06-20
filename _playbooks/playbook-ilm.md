@@ -4,7 +4,7 @@ collection: playbooks
 title: Identity Lifecycle Management Playbook
 pubdate: 2024-06-18
 type: Markdown
-permalink: /playbooks/identity-lifecycle-management/
+permalink: /playbooks/ilm/
 description: The Identity Lifecycle Management Playbook helps federal agencies understand and plan identity lifecycle management initiatives based on Zero Trust Architecture principles.
 sidenav: playbooks
 sticky_sidenav: true
