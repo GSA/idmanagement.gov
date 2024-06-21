@@ -49,7 +49,7 @@ implement:
   - text: Mapping of SP800-53 IA to SP 800-63
     href: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
   - text: Okta Yubikey Implementation Guide
-    href: /implement/yuvikey-guide/
+    href: /implement/yubikey-guide/
 
 functions:
   - text: FICAM Program

@@ -3,7 +3,7 @@ layout: page
 collection: implement
 title: Okta Yubikey Implementation Guide
 type: Markdown
-permalink: /implement/yuvikey-guide/
+permalink: /implement/yubikey-guide/
 description: Description needed
 sidenav: implement
 sticky_sidenav: true
