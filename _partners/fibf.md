@@ -88,7 +88,7 @@ requirements. In addition, GSA Office of Technology Policy (OTP) will provide bo
 ICAM subject matter expertise, as well as coordination support. Working in tandem
 as the ICAMSC-chartered FIBF Working Group, the group fosters cross-agency
 agreement, as well as alignment with other FIBF functional areas. To join the team,
-please send a request to icam@gsa.gov.
+please send a request to [icam@gsa.gov](mailto:icam@gsa.gov).
 
 
 ## How Agencies can use the FIBF for ICAM
