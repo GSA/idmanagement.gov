@@ -25,7 +25,7 @@ subnav:
 
 The Identity Credentialing and Access Management (ICAM) Subcommittee  through its Federal Integrated Business Framework (FIBF) Working Group is establishing ICAM as a federal function that will support and enable practically every mission support area. This will affect not only ICAM programs, but also areas such as Financial Management, Cybersecurity, Electronic Records Management and Human Resource Management, etc.   
 
-All five ICAM-FIBF components are drafted and establish the ICAM baseline for interoperable business and data standards. 
+All five ICAM FIBF components are drafted and establish the ICAM baseline for interoperable business and data standards. 
 
 
 ## Project Timeline
