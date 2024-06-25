@@ -34,7 +34,7 @@ The project timeline is as follows:
 
 [<img src="{{site.baseurl}}/assets/fibf/framework-timeline.png" alt="icam fibf comment timeline." width="560" height="280">]({{site.baseurl}}/assets/fibf/framework-timeline.png){:target="_blank"}{:rel="noopener noreferrer"} 
 
-Please download DRAFT ICAM FIBF Components 4 & 5 below to review: 
+Please download **DRAFT ICAM FIBF Components 4 & 5** below to review: 
 - **[DRAFT ICAM FIBF Components 4 & 5]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
 - Component 4, Standard Data Elements
 - Component 5, Service Measures 
