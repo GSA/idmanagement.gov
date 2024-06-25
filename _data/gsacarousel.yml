@@ -22,7 +22,7 @@
   initialState: active
   delay: 20000
   heroHeading: "ICAM FIBF" 
-  heroText: "The ICAM FIBF Working Group has released Component 2 and 3 for Comment."
+  heroText: "The ICAM FIBF Working Group has released Component 4 and 5 for Comment."
   actionButtonText: Learn more about the 
   actionLocation: icam-fibf/
   actionTarget: _self
