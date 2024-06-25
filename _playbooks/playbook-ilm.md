@@ -42,7 +42,7 @@ The Identity Lifecycle Management Working Group of the Federal Chief Information
   </h4>
   <div id="v-a1" class="usa-accordion__content usa-prose">
     <table>
-      <caption>Phishing-resistant authenticator version table</caption>
+      <caption>Identity Lifecycle Management version table</caption>
       <thead>
       <tr>
         <th scope='col'>Version Number</th>
