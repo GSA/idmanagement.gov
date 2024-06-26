@@ -18,15 +18,14 @@ subnav:
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
-  - text: How Agencies can use the FIBF for ICAM
-    href: '#how-agencies-can-use-the-fibf-for-icam'
+  - text: How Agencies can use the ICAM FIBF
+    href: '#how-agencies-can-use-the-icam-fibf'
     
 ---
 
 The Identity Credentialing and Access Management (ICAM) Subcommittee  through its Federal Integrated Business Framework (FIBF) Working Group is establishing ICAM as a federal function that will support and enable practically every mission support area. This will affect not only ICAM programs, but also areas such as Financial Management, Cybersecurity, Electronic Records Management and Human Resource Management, etc.   
 
 All five ICAM FIBF components are drafted and establish the ICAM baseline for interoperable business and data standards. 
-
 
 ## Project Timeline
 
@@ -86,7 +85,7 @@ agreement, as well as alignment with other FIBF functional areas. To join the te
 please send a request to [icam@gsa.gov](mailto:icam@gsa.gov).
 
 
-## How Agencies can use the FIBF for ICAM
+## How Agencies can use the ICAM FIBF
 
 Upon approval from the BSC and the Office of Management and Budget, the framework may be used to validate ICAM components such as policy, management, technology, data, and process to ensure standardization and interoperability. Specifically, it can be used in the following ways:
 
