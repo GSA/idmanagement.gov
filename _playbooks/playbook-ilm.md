@@ -74,7 +74,7 @@ The Identity Lifecycle Management Working Group of the Federal Chief Information
   </div>
 </div>
 
-## **Executive Summary**
+## Executive Summary
 
 The Identity Lifecycle Management (ILM) Playbook is a practical guide to help federal agencies understand how to shift the focus from managing the access based on credentials to managing the lifecycle of identities and their associated, accounts and credentials that are binded to the identity as outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf). This focus shift will help agencies achieve a centralized identity management system mentioned in [OMB Memo 22-09 and adhere to Zero Trust principals .](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity)
 
@@ -144,7 +144,7 @@ The ILM playbook also outlines a four-step process that an agency can utilize to
 
 This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their identity management process. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning.
 
-### **Key Terms**
+### Key Terms
 
 Below are key terms used throughout this Playbook. A linked term denotes it is an official term from a federal policy, NIST Glossary, or a NIST publication. An unlinked term is defined for this document.
 
@@ -170,7 +170,7 @@ Below are key terms used throughout this Playbook. A linked term denotes it is a
 - Orphan Account - A system account that is not linked to a digital identity or is unmanaged.
 - [Vetting](https://www.federalregister.gov/documents/2017/01/23/2017-01623/amending-the-civil-service-rules-executive-order-13488-and-executive-order-13467-to-modernize-the) - The process by which covered individuals undergo investigation, evaluation, and adjudication of whether they are, and remain over time, suitable or fit for federal employment. This includes eligibility to occupy a sensitive position, access to classified information, serve as a non-appropriated fund employee or a contractor, serve in the military, or be authorized to be issued a federal identity credential. This ensures individuals continue to meet the applicable standards for the position for which they were favorably adjudicated.
 
-### **Audience**
+### Audience
 
 The primary audience is an agency Identity, Credential, and Access Management (ICAM) Program Manager. The table below lists secondary audience members and how to engage them.
 
@@ -188,11 +188,11 @@ The primary audience is an agency Identity, Credential, and Access Management (I
 
 
 
-### **Disclaimer**
+### Disclaimer
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this Playbook. U.S. Federal Executive Branch agencies can use this Playbook to plan identity lifecycle activities and services related to the FICAM Architecture Services Framework. This Playbook is not official policy, mandated action, or provides authoritative information technology terms. It includes best practices to supplement existing federal policies and builds Office of Management and Budget Memorandum 19-17, and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as credentialing standards, human resources processes, and Continuous Diagnostic and Mitigation (CDM) are considered only to the extent that they relate to ICAM services delivered in a cloud service model. Privileged access management (e.g., superusers, domain administrators) is out of scope for this Playbook.
 
-## **Identity Lifecycle Management 101**
+## Identity Lifecycle Management 101
 
 Identity Lifecycle Management is a core identity service to protect federal data. As with our human identities, our digital identities follow a similar process from creation to retirement. Employees complete vetting/identity proofing, have accounts created on multiple systems, get promoted, and eventually leave an organization. Identity Lifecycle Management encompasses the activities of creating, identity proofing/vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system. This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf) and meeting the hard requirements of [OMB Memo 22-09 Zero Trust Architecture](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf). It’s common in the federal ICAM community to synonymously refer to everything identity related as PIV and compare processes to how an agency would do an identity process with a PIV or a NIST approved phishing resistant MFA. A key distinction between a digital identity and a PIV is formalized in a master user record which is a unique representation of a user’s accounts, personas, attributes, entitlements, and all their credentials within an organization. One digital identity is linked to one PIV, but that one identity may have multiple accounts, attributes, entitlements, and potentially other non-PIV credentials (e.g., username and password, one-time pin apps, FIDO.) that are used to access applications where a PIV card is not used. This playbook can also help agencies understand how to support non-PIV authenticators outlined in the [identity section of OMB Memo 22-09](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity)
 
@@ -203,7 +203,7 @@ This playbook has two distinct sections.
 
 The next section will outline adopting an integrated Identity Lifecycle Management process for credentialing all user types doing business with the federal government. User types may result with PIV and credentialing them with NIST approved phishing resistant MFAs. The integration of IGA and MUR leverages how to manage the identity and their credentials by leveraging the centralized Identity Access Governance process within a Zero Trust Architecture.
 
-### **Identity Lifecycle Process**
+### Identity Lifecycle Process
 
 Identity lifecycle management is the evolution of an identity from creation to retirement. The lifecycle management process includes three distinct phases with individual steps within each phase. These phases are known as the
 
@@ -432,26 +432,26 @@ Make attributes available for authorization decisions. Federation is not only ac
 
 See the [Cloud Identity Playbook Federation section](https://www.idmanagement.gov/playbooks/cloud/#federation) for more information on federation and using trust frameworks for government, mission partner, or public identity federation.
 
-## **Summary**
+## Summary
 
 The ILM playbook outlined an identity lifecycle process and four steps to create a master user record and lifecycle process within your agency. ILM is the evolution of an identity from creation to deactivation. There are specific steps within each lifecycle phase of the IGA, create - provision- deactivate process. A master user record is the core of ILM and acts as an aggregation point of identity data for all agency users. A master user record integrated with IGA access management provides a foundation for more mature ICAM processes resulting in efficiently managing the identity and all their accounts, credentials, and access rather than just the credential, path to Zero Trust.
 
-## **Appendix A. Policies, Standards, and Guidance**
+## Appendix A. Policies, Standards, and Guidance
 
-### **Federal Policies**
+### Federal Policies
 
 1. [Executive Order 14028 - Improving the Nation’s Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles](https://zerotrust.cyber.gov/downloads/M-22-09%20Federal%20Zero%20Trust%20Strategy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [OMB Memo 21-31 - Improving the Federal Government’s Investigation and Remediation Capabilities Related to Cybersecurity Incidents](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [OMB Memo 19-17 - Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-### **Government Standards**
+### Government Standards
 
 1. [Federal Information Processing Standard 201 - Personal Identity Verification of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [NIST Special Publication 800-63 - Digital identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [NIST Special Publication 800-157 - Guidelines for Derived PIV Credentials](https://csrc.nist.gov/publications/detail/sp/800-157/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-### **Government-Wide Guidance**
+### Government-Wide Guidance
 
 1. [FICAM Architecture](https://www.idmanagement.gov/why/icam/)
 2. [ICAM Governance Framework](https://www.idmanagement.gov/docs/playbook-identity-governance-framework.pdf)
@@ -459,7 +459,7 @@ The ILM playbook outlined an identity lifecycle process and four steps to create
 4. [NIST Interagency Report 8149 - Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 5. [OPM Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for PIV Credentials](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-### **References**
+### References
 
 1. [Department of Defense ICAM Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [DHS CDM Max.gov Page](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
