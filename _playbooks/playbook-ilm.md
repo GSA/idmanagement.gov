@@ -27,58 +27,87 @@ subnav:
     href: '#key-terms'
 
 ---
-
-<!-- Version 1.3  
-June 18, 2024 -->
+<!-- Updated by CJB 06-25-2024 -->
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
-# **Identity Lifecycle Management Playbook**
-
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
 
-### Version History
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-a1" class="usa-accordion__content usa-prose">
+    <table>
+      <caption>Identity Lifecycle Management version table</caption>
+      <thead>
+      <tr>
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>1.3</th>
+        <td>6/18/2024</td>
+        <td>Incorporated Zero Trust elements.</td>
+      </tr>
+      <tr>
+        <th scope='row'>1.2</th>
+        <td>12/15/2022</td>
+        <td>Minor editorial updates.</td>
+      </tr>
+      <tr>
+        <th scope='row'>1.1</th>
+        <td>10/11/2022</td>
+        <td>Move 3rd party federation content to the Cloud Identity Playbook federation section.</td>
+      </tr>
+      <tr>
+        <th scope='row'>1.0</th>
+        <td>06/30/2022</td>
+        <td>Initial Draft.</td>
+      </tr>
+    </table>
+  </div>
+</div>
 
-| **Version Number** | **Date**      | **Change Description**                                                                 |
-|--------------------|---------------|----------------------------------------------------------------------------------------|
-| 1.3                | 6/18/2024     | Incorporated Zero Trust elements.                                                      |
-| 1.2                | 12/15/2022    | Minor editorial updates.                                                                |
-| 1.1                | 10/11/2022    | Move 3rd party federation content to the Cloud Identity Playbook federation section.    |
-| 1.0                | 06/30/2022    | Initial Draft.                                                                         |
+## Executive Summary
 
-
-
-## **Executive Summary**
-
-The Identity Lifecycle Management (ILM) Playbook is a practical guide to help federal agencies understand how to shift the focus from managing the access based on credentials to managing the lifecycle of identities and their associated, accounts and credentials that are binded to the identity as outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf). This focus shift will help agencies achieve a centralized identity management system mentioned in [OMB Memo 22-09 and adhere to Zero Trust principals .](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity)
+The Identity Lifecycle Management (ILM) Playbook is a practical guide to help federal agencies understand how to shift the focus from managing the access based on credentials to managing the lifecycle of identities and their associated, accounts and credentials that are binded to the identity as outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. This focus shift will help agencies achieve a centralized identity management system mentioned in [OMB Memo 22-09 and adhere to Zero Trust principals .](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 The Executive Order 14028 Improving the Nation's Cybersecurity which developed the OMB 22-09 guidance – Federal Zero Trust Strategy. OMB 22-09 mandated that departments and agencies shall enforce the transition to a Zero Trust Architecture (ZTA) and that all authentication shall be phishing resistant. NIST 800-207 defined the five pillars of a ZTA with the Identity Pillar to be the foundation in a ZTA and the need for agencies and departments to shift the focus on managing identities rather than credentials.
 
 The former ILM life cycle process known as the Joiner, Mover, Leaver, that was driven from the Master User Record (MUR) was updated in this draft to be driven from a ZTA foundation as Creator, Provision, Deactivation, applied with Identity Governance Administration and leverage the Master User Record for all digital identities information.
 
-The updates to the ILMplaybook defines ILM as stages of an identity from creation to retirement from a ZTA perspective and how the ILM is driven by ZTA principles described as the Identity Governance Administration, of Creator, Provisioning, Deactivation process
+The updates to the ILMplaybook defines ILM as stages of an identity from creation to retirement from a ZTA perspective and how the ILM is driven by ZTA principles described as the Identity Governance Administration, of Creator, Provisioning, Deactivation process.
 
 Importantly the updates in this document also include the alternatives to PIV with NIST approved non-PIV phishing resistant credentials such as Fast Identity Online (FIDO) and capturing additional information in the MUR.
 
-The intent of implementing a lifecycle management process is to ensure an agency has visibility into all identities and their associated access the agency controls . For example, the process can help in the following ways:
+The intent of implementing a lifecycle management process is to ensure an agency has visibility into all identities and their associated access the agency controls. 
+
+For example, the process can help in the following ways:
 
 1. Ensure only active employees can access federal resources.
 2. Extend identity verification and phishing resistant credentials to all user types
-3. Ensure accounts management and credentials as controlled by the ILM process
-4. Remove access when employees haven’t completed the required security
+3. Ensure accounts management and credentials as controlled by the ILM process.
+4. Remove access when employees haven’t completed the required security Training.
+5. Enforce attestation for all credentials within the ILM centralized identity management system Ensure least privilege is enforced when accounts are created or a user changes roles.
+6. Apply Dynamic Access Controls
+7. Track access and privileges of compromised accounts.
 
-Training.
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Agency Goal: M-22-09 Action Plan</h4>
+    <p class="usa-alert__text">
+      Per OMB Memo 22-09, agencies should have a plan to centralized identity management and access control for all users, implement remote identity proofing, enable all active users with phishing resistant credentials and options to use phishing resistant credentials for external partners. All agencies must be able to create and maintain a master user record (MUR) of all agency users at the enterprise level. The update to this ILM playbook helps agencies understand why and how to expand their PIV infrastructure for identity proofing, credentialing, and management of accounts for Non PIV phishing resistant authenticators included under the centralized ILM process. Agencies leverage their master user record capability that shall be achieved through either the DHS CDM program or in collaboration with an integrator or vendor.
+    </p>
+  </div>
+</div>
 
-1. Enforce attestation for all credentials within the ILM centralized identity management system Ensure least privilege is enforced when accounts are created or a user changes roles.
-2. Apply Dynamic Access Controls
-3. Track access and privileges of compromised accounts.
-
-### Agency Goal: M-22-09 Action Plan
-
-Per OMB Memo 22-09, agencies should have a plan to centralized identity management and access control for all users, implement remote identity proofing, enable all active users with phishing resistant credentials and options to use phishing resistant credentials for external partners. All agencies must be able to create and maintain a master user record (MUR) of all agency users at the enterprise level. The update to this ILM playbook helps agencies understand why and how to expand their PIV infrastructure for identity proofing, credentialing, and management of accounts for Non PIV phishing resistant authenticators included under the centralized ILM process. Agencies leverage their master user record capability that shall be achieved through either the DHS CDM program or in collaboration with an integrator or vendor.
-
-The updates in this ILM playbook can also assist agencies in understanding how to support [phishing-resistant authenticators as outlined in the identity section of OMB Memo 22-09](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity) and leverage NIST 800-207 using the practices of enhanced identity governance. Agency’s should also reference in line with the ILM Process the Phishing resistant MFA Playbook. OMB 22-09 states that all users will be required to have a phishing resistant credential for authentication. External users will have the Option to use a phishing resistant credential.
+The updates in this ILM playbook can also assist agencies in understanding how to support [phishing-resistant authenticators as outlined in the identity section of OMB Memo 22-09](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and leverage NIST 800-207 using the practices of enhanced identity governance. Agency’s should also reference in line with the ILM Process the Phishing resistant MFA Playbook. OMB 22-09 states that all users will be required to have a phishing resistant credential for authentication. External users will have the Option to use a phishing resistant credential.
 
 ### Actions
 
@@ -115,37 +144,37 @@ The ILM playbook also outlines a four-step process that an agency can utilize to
 
 This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their identity management process. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning.
 
-### **Key Terms**
+### Key Terms
 
 Below are key terms used throughout this Playbook. A linked term denotes it is an official term from a federal policy, NIST Glossary, or a NIST publication. An unlinked term is defined for this document.
 
-- [Attribute](https://csrc.nist.gov/glossary/term/attribute) - A quality or characteristic used to describe a digital identity (e.g., user type, employment status, work role).
+- [Attribute](https://csrc.nist.gov/glossary/term/attribute){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A quality or characteristic used to describe a digital identity (e.g., user type, employment status, work role).
 - Authoritative Attribute Source - A repository or system that contains attributes about an individual and is considered the primary or most reliable source for this information. This is also referred to as an authoritative data source.
-- [Card Management System](https://pages.nist.gov/FIPS201/FIPS201.html#s-c) - The system that manages the lifecycle of a PIV Card application.
-- [Derived PIV Credential](https://pages.nist.gov/FIPS201/FIPS201.html#s-c) - A credential issued based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices.
-- Alternative Phishing Resistant Credential - A credential that is equivalent to a PIV per NIST xAL requirements issued to identies where PIV is not accessible, mobile, interim, external, use cases
-- [Federal Enterprise Identity](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf) - Refers to the unique representation of an employee, a contractor, an enterprise user, such as a mission or business partner, a device, or a technology that a federal agency manages to achieve its mission and business objectives. This is also known as a Workforce Identity.
-- [Federation](https://csrc.nist.gov/glossary/term/federation) - A process that allows for the conveyance of identity and authentication information across a set of networked systems.
+- [Card Management System](https://pages.nist.gov/FIPS201/FIPS201.html#s-c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The system that manages the lifecycle of a PIV Card application.
+- [Derived PIV Credential](https://pages.nist.gov/FIPS201/FIPS201.html#s-c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A credential issued based on proof of possession and control of a PIV Card. Derived PIV credentials are typically used in situations that do not easily accommodate a PIV Card, such as in conjunction with mobile devices.
+- Alternative Phishing Resistant Credential - A credential that is equivalent to a PIV per NIST xAL requirements issued to identies where PIV is not accessible, mobile, interim, external, use cases.
+- [Federal Enterprise Identity](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Refers to the unique representation of an employee, a contractor, an enterprise user, such as a mission or business partner, a device, or a technology that a federal agency manages to achieve its mission and business objectives. This is also known as a Workforce Identity.
+- [Federation](https://csrc.nist.gov/glossary/term/federation){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - A process that allows for the conveyance of identity and authentication information across a set of networked systems.
 - Federated Credential - A phishing resistant credential that can be used to access an IDP after compliantly registering with the relying party
 - FIDO - Fast Identity Online, a NIST approved alternative phishing resistant credential where PIV may not be accessible, use case such as, mobile, external, interim user, lost of expired PIV
-- [Identity](https://csrc.nist.gov/glossary/term/identity) - The set of physical and behavioral characteristics by which an individual is uniquely recognizable. The digital representation of this is called a Digital Identity.
+- [Identity](https://csrc.nist.gov/glossary/term/identity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The set of physical and behavioral characteristics by which an individual is uniquely recognizable. The digital representation of this is called a Digital Identity.
 - Identity Lifecycle Management - The evolution of an identity from creation to deactivation.
-- [Identity Management System (IDMS)](https://pages.nist.gov/FIPS201/FIPS201.html#s-c) - One or more systems or applications that perform Identity Lifecycle Management functions such as identity proofing, registration, and issuance processes.
+- [Identity Management System (IDMS)](https://pages.nist.gov/FIPS201/FIPS201.html#s-c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - One or more systems or applications that perform Identity Lifecycle Management functions such as identity proofing, registration, and issuance processes.
 - Identity Governance and Administration (IGA) System - A centralized source used to manage entitlements and account provisioning to one or more systems. The Account Management System may also refer to IGA.
-- [Identity Proofing](https://pages.nist.gov/FIPS201/FIPS201.html#s-c) - The process by which information is collected, validated, and verified about a person to issue credentials to that person.
+- [Identity Proofing](https://pages.nist.gov/FIPS201/FIPS201.html#s-c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The process by which information is collected, validated, and verified about a person to issue credentials to that person.
 - Master User Record (MUR) - A unique representation of a user’s accounts, personas, attributes, entitlements, and credentials within an organization.
 - Persona - A digital identity unambiguously associated with a single person or non-person entity (NPE). A single person or NPE may have multiple personas, each managed by the same or different organization.
 - Passkeys - A passkey is a consumer-friendly term for a discoverable FIDO credential
-- [Public Identity](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf) - The unique representation of a subject that a federal agency interacts with, but does not directly manage, to achieve its mission and business objectives.
-- [PIV Identity Account](https://pages.nist.gov/FIPS201/FIPS201.html#s-c) - The logical record containing credentialing information for a given PIV cardholder. This is stored within the issuer’s identity management system and includes PIV enrollment data, cardholder identity attributes, information regarding the cardholder’s PIV Card, and any derived PIV credentials bound to the account.
+- [Public Identity](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The unique representation of a subject that a federal agency interacts with, but does not directly manage, to achieve its mission and business objectives.
+- [PIV Identity Account](https://pages.nist.gov/FIPS201/FIPS201.html#s-c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The logical record containing credentialing information for a given PIV cardholder. This is stored within the issuer’s identity management system and includes PIV enrollment data, cardholder identity attributes, information regarding the cardholder’s PIV Card, and any derived PIV credentials bound to the account.
 - Orphan Account - A system account that is not linked to a digital identity or is unmanaged.
-- [Vetting](https://www.federalregister.gov/documents/2017/01/23/2017-01623/amending-the-civil-service-rules-executive-order-13488-and-executive-order-13467-to-modernize-the) - The process by which covered individuals undergo investigation, evaluation, and adjudication of whether they are, and remain over time, suitable or fit for federal employment. This includes eligibility to occupy a sensitive position, access to classified information, serve as a non-appropriated fund employee or a contractor, serve in the military, or be authorized to be issued a federal identity credential. This ensures individuals continue to meet the applicable standards for the position for which they were favorably adjudicated.
+- [Vetting](https://www.federalregister.gov/documents/2017/01/23/2017-01623/amending-the-civil-service-rules-executive-order-13488-and-executive-order-13467-to-modernize-the){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - The process by which covered individuals undergo investigation, evaluation, and adjudication of whether they are, and remain over time, suitable or fit for federal employment. This includes eligibility to occupy a sensitive position, access to classified information, serve as a non-appropriated fund employee or a contractor, serve in the military, or be authorized to be issued a federal identity credential. This ensures individuals continue to meet the applicable standards for the position for which they were favorably adjudicated.
 
-### **Audience**
+### Audience
 
 The primary audience is an agency Identity, Credential, and Access Management (ICAM) Program Manager. The table below lists secondary audience members and how to engage them.
 
-### Table 1: Stakeholder Table
+**Table 1: Stakeholder Table**
 
 | **Stakeholder**         | **Stakeholder Type** | **Engagement Point**                                                          |
 |-------------------------|----------------------|-------------------------------------------------------------------------------|
@@ -159,38 +188,38 @@ The primary audience is an agency Identity, Credential, and Access Management (I
 
 
 
-### **Disclaimer**
+### Disclaimer
 
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this Playbook. U.S. Federal Executive Branch agencies can use this Playbook to plan identity lifecycle activities and services related to the FICAM Architecture Services Framework. This Playbook is not official policy, mandated action, or provides authoritative information technology terms. It includes best practices to supplement existing federal policies and builds Office of Management and Budget Memorandum 19-17, and existing FICAM guidance and playbooks. Subject areas with intersecting scopes, such as credentialing standards, human resources processes, and Continuous Diagnostic and Mitigation (CDM) are considered only to the extent that they relate to ICAM services delivered in a cloud service model. Privileged access management (e.g., superusers, domain administrators) is out of scope for this Playbook.
 
-## **Identity Lifecycle Management 101**
+## Identity Lifecycle Management 101
 
-Identity Lifecycle Management is a core identity service to protect federal data. As with our human identities, our digital identities follow a similar process from creation to retirement. Employees complete vetting/identity proofing, have accounts created on multiple systems, get promoted, and eventually leave an organization. Identity Lifecycle Management encompasses the activities of creating, identity proofing/vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system. This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf) and meeting the hard requirements of [OMB Memo 22-09 Zero Trust Architecture](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf). It’s common in the federal ICAM community to synonymously refer to everything identity related as PIV and compare processes to how an agency would do an identity process with a PIV or a NIST approved phishing resistant MFA. A key distinction between a digital identity and a PIV is formalized in a master user record which is a unique representation of a user’s accounts, personas, attributes, entitlements, and all their credentials within an organization. One digital identity is linked to one PIV, but that one identity may have multiple accounts, attributes, entitlements, and potentially other non-PIV credentials (e.g., username and password, one-time pin apps, FIDO.) that are used to access applications where a PIV card is not used. This playbook can also help agencies understand how to support non-PIV authenticators outlined in the [identity section of OMB Memo 22-09](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity)
+Identity Lifecycle Management is a core identity service to protect federal data. As with our human identities, our digital identities follow a similar process from creation to retirement. Employees complete vetting/identity proofing, have accounts created on multiple systems, get promoted, and eventually leave an organization. Identity Lifecycle Management encompasses the activities of creating, identity proofing/vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system. This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and meeting the hard requirements of [OMB Memo 22-09 Zero Trust Architecture](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. It’s common in the federal ICAM community to synonymously refer to everything identity related as PIV and compare processes to how an agency would do an identity process with a PIV or a NIST approved phishing resistant MFA. A key distinction between a digital identity and a PIV is formalized in a master user record which is a unique representation of a user’s accounts, personas, attributes, entitlements, and all their credentials within an organization. One digital identity is linked to one PIV, but that one identity may have multiple accounts, attributes, entitlements, and potentially other non-PIV credentials (e.g., username and password, one-time pin apps, FIDO.) that are used to access applications where a PIV card is not used. This playbook can also help agencies understand how to support non-PIV authenticators outlined in the [identity section of OMB Memo 22-09](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 This playbook has two distinct sections.
 
-1. The first section is an overview of identity lifecycle management. It explains the distinct processes involved and gives a brief description of the similarities and differences in managing a PIV credential versus managing an identity. The purpose of this section is to drive the identity in from the Identity verification process to create and appropriately credentialed the identity for IGA in the MUR
+1. The first section is an overview of identity lifecycle management. It explains the distinct processes involved and gives a brief description of the similarities and differences in managing a PIV credential versus managing an identity. The purpose of this section is to drive the identity in from the Identity verification process to create and appropriately credentialed the identity for IGA in the MUR.
 2. The second section contains plays on how to provision the identity lifecycle management process within your agency.
 
 The next section will outline adopting an integrated Identity Lifecycle Management process for credentialing all user types doing business with the federal government. User types may result with PIV and credentialing them with NIST approved phishing resistant MFAs. The integration of IGA and MUR leverages how to manage the identity and their credentials by leveraging the centralized Identity Access Governance process within a Zero Trust Architecture.
 
-### **Identity Lifecycle Process**
+### Identity Lifecycle Process
 
 Identity lifecycle management is the evolution of an identity from creation to retirement. The lifecycle management process includes three distinct phases with individual steps within each phase. These phases are known as the
 
-- Creation of the identity, ID verification, onboarding the identity
-- Provisioning the identity, registration, Identity access governance, master user record reporting
-- Deactivation - remove identity, remove access, remove from master user record
+- Creation of the identity, ID verification, onboarding the identity.
+- Provisioning the identity, registration, Identity access governance, master user record reporting.
+- Deactivation - remove identity, remove access, remove from master user record.
 
 **Figure 1: Identity Lifecycle Process**
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="Diagram illustrating the three phases of the Identity Lifecycle Process: Creation, Provisioning, and Deactivation" width="800">
 
-Stage 1 - Creation
+**Stage 1 - Creation**
 
 Creation -The creation stage establishing the identity by completing the identity proofing/ verification stage where the identity is verified about the person. This stage is mandatory for federal employees, contratos and anyone working for or on behalf of the government this phase will include the prerequisite vetting investigation and adjudication. Processes associated with identity proofing include source document validation, identity verification, remote proofing, or in-person proofing. Depending on the user type the credentialing may result to different types of phishing resistant authenticators
 
-Stage 2 - Provisioning / Identity Governance Administration (IGA)
+**Stage 2 - Provisioning / Identity Governance Administration (IGA)**
 
 Provisioning - Create, manage identity, credentials and accounts using the IGA practice is core to the identity lifecycle management process. When users finish Stage 1 their identities are created to then be provisioned and credentialed. The IGA process provides dependent systems such as authoritative attribute sources as directories or consuming sources such as single sign-on systems and applications with provisioning processes. Processes associated with provisioning include entitlement management, grant access, remove access, account management, and account creation.
 
@@ -198,7 +227,7 @@ Maintain accurate and current attributes and entitlements associated with a mast
 
 Identity Aggregation - Find and connect disparate digital identities to a master user record. Processes associated with identity aggregation include identity reconciliation, identity resolution, master user record, account linking, and separation of duty analysis.
 
-Stage 3 - Deactivation
+**Stage 3 - Deactivation**
 
 Deactivation - Deactivate or remove identities associated with a master user record. IGA Processes associated with deactivation include suspension, archive, or deletion of accounts and credentials
 
@@ -220,7 +249,7 @@ A Master User Record is a unique representation of a user’s accounts, personas
 
 A master user record aggregates user accounts, attributes, entitlements, and issued credentials to understand in a single view the access and authorization of a specific user. Within the DHS Continuous Diagnostics and Mitigation (CDM) data model, a Master User Record contains aggregated attributes from multiple authoritative sources. The below table is an overview of authoritative sources, the object types, and attributes collected.
 
-Table 2: Data Elements in the DHS CDM Master User Record
+**Table 2: Data Elements in the DHS CDM Master User Record**
 
 | **Authoritative Attribute Source** | **Object Type** | **Attributes Collected** |
 |-----------------------------------|-----------------|--------------------------|
@@ -245,13 +274,13 @@ Vetting incorporates all steps in the end-to-end process, including:
 6. Provide administrative due process or other procedural rights.
 7. Perform ongoing assessments (to include continuous vetting or reinvestigation) to ensure that individuals continue to meet the applicable standards for the position for which they were favorably adjudicated.
 
-For specific information on how DHS CDM created a Master User Record including which tools they’ve used, go to the [CDM document repository on Max.gov](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2). A master user record is most often created using either a virtual directory, identity governance and administration (IGA) tool, or potentially a Single Sign-On tool if it also supports a virtual directory capability.
+For specific information on how DHS CDM created a Master User Record including which tools they’ve used, go to the [CDM document repository on Max.gov](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. A master user record is most often created using either a virtual directory, identity governance and administration (IGA) tool, or potentially a Single Sign-On tool if it also supports a virtual directory capability.
 
-### **Managing Identity Lifecycle vs Managing Credential Lifecycle**
+### Managing Identity Lifecycle vs Managing Credential Lifecycle
 
 A key theme in OMB Memo 19-17 is for federal agencies to shift the focus from managing the lifecycle of credentials to managing the lifecycle of identities. What does this mean? The main focus of this statement is for federal agencies to create a centralized and agile identity and access management system that leverages attributes for fine-grained authorization rather than based on a credential. This focus shift will help agencies achieve an enterprise ICAM system that is agile to support technology modernization. Examples of shifting the operating model include the following.
 
-Table 3: Identity-Centric Versus Credential-Centric
+**Table 3: Identity-Centric Versus Credential-Centric**
 
 | **Identity-Centric** | **Credential-Centric** |
 |----------------------|------------------------|
@@ -260,14 +289,18 @@ Table 3: Identity-Centric Versus Credential-Centric
 | Support a variety of phishing-resistant authenticators with a path toward a total passwordless architecture. | Only support PIV card authentication or Username and Password as a backup. |
 | Leverage attributes aggregated through a MUR for fine-grained authorization. | Leverage attributes only from a PIV Card for authorization. |
 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Myth Busted - A PIV Card is my only option</h4>
+    <p class="usa-alert__text">
+      While an employee using PIV is the ultimate security goal, what happens when a PIV is either not available or not compatible with the access requirements? Employees lose PIV cards and it may take days, weeks, or months for an employee to receive their new or replacement PIV. An agency should have a phishing-resistant alternative when a PIV card is not available. Allowing username and password as a backup option should not be the default policy exception.
+    </p>
+  </div>
+</div>
 
-### Myth Busted - A PIV Card is my only option
+### Phishing-Resistant Authenticator Binding
 
-While an employee using PIV is the ultimate security goal, what happens when a PIV is either not available or not compatible with the access requirements? Employees lose PIV cards and it may take days, weeks, or months for an employee to receive their new or replacement PIV. An agency should have a phishing-resistant alternative when a PIV card is not available. Allowing username and password as a backup option should not be the default policy exception.
-
-### **Phishing-Resistant Authenticator Binding**
-
-A PIV card is the result of identity proofing/vetting. After identity proofing and initial identity vetting are complete (to include interim eligibility through favorable review of fingerprint results and initiation of required investigation), a human identity is bound to a PIV card through the public key infrastructure certificate issued on the PIV smart card. The smart card is bound to the digital identity in an agency’s Master User Record and enterprise identity management system. This can then be provisioned to other directories, applications, physical access control systems, and single sign-on systems. Without the binding, the PIV card to these directories and applications is just a physical identification badge. The same process to bind a PIV to a digital identity is the same process an agency can use to bind other PKI and Non-PKI Derived PIV credentials. [Federal Information Processing Standard (FIPS) 201-3 section 2.10](https://pages.nist.gov/FIPS201/FIPS201.html#s-2-10) states the following on Derived PIV credentials.
+A PIV card is the result of identity proofing/vetting. After identity proofing and initial identity vetting are complete (to include interim eligibility through favorable review of fingerprint results and initiation of required investigation), a human identity is bound to a PIV card through the public key infrastructure certificate issued on the PIV smart card. The smart card is bound to the digital identity in an agency’s Master User Record and enterprise identity management system. This can then be provisioned to other directories, applications, physical access control systems, and single sign-on systems. Without the binding, the PIV card to these directories and applications is just a physical identification badge. The same process to bind a PIV to a digital identity is the same process an agency can use to bind other PKI and Non-PKI Derived PIV credentials. [Federal Information Processing Standard (FIPS) 201-3 section 2.10](https://pages.nist.gov/FIPS201/FIPS201.html#s-2-10){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} states the following on Derived PIV credentials.
 
 1. Binding and issuing of Derived PIV credentials shall use valid PIV Cards to establish cardholder identity.
 2. Derived PIV credentials shall meet the requirements for Authenticator Assurance Level (AAL) 2 or 3 specified in NIST Special Publication 800-63.
@@ -275,13 +308,18 @@ A PIV card is the result of identity proofing/vetting. After identity proofing a
 
 Derived PIV credentials are not embedded in the PIV card, but are stand-alone credentials integrated into a variety of devices or platforms. This binding of multiple Derived PIV Credentials is possible through creating a Master User Record. These Derived PIV credentials can include a stand-alone Fast ID Online (FIDO) 2 using Web Authentication (WebAuthN) mentioned in OMB Memo 22-09.
 
-The most common way to integrate non-PKI-derived credentials is through a modern Single Sign-On tool or operating system that supports FIDO2 or WebAuthN. Derived PIV credentials play an important role in environments where a smart card is not cost effective or supported such as chrome operating system, mobile devices, and secure offices. Per [OPM, December 2020 guidance](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf) if the PIV credential is suspended or revoked, any associated derived credentials must also be suspended or revoked.
+The most common way to integrate non-PKI-derived credentials is through a modern Single Sign-On tool or operating system that supports FIDO2 or WebAuthN. Derived PIV credentials play an important role in environments where a smart card is not cost effective or supported such as chrome operating system, mobile devices, and secure offices. Per [OPM, December 2020 guidance](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} if the PIV credential is suspended or revoked, any associated derived credentials must also be suspended or revoked.
 
-### Myth Busted - This authenticator is not HSPD-12 or FIPS 201 compliant
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Myth Busted - This authenticator is not HSPD-12 or FIPS 201 compliant</h4>
+    <p class="usa-alert__text">
+      HSPD-12 identifies four criteria for secure and reliable forms of identification. FIPS 201 outlines the criteria to issue a PKI-based smart card credential. Agencies use One-Time Pin tokens and One-Time PIN mobile applications while they migrate to a phishing-resistant option. Agencies may make a risk decision to use a variety of phishing-resistant authenticators like PIV or other PKI or and non-PKI FIDO certified phishing-resistant authenticators.
+    </p>
+  </div>
+</div>
 
-HSPD-12 identifies four criteria for secure and reliable forms of identification. FIPS 201 outlines the criteria to issue a PKI-based smart card credential. Agencies use One-Time Pin tokens and One-Time PIN mobile applications while they migrate to a phishing-resistant option. Agencies may make a risk decision to use a variety of phishing-resistant authenticators like PIV or other PKI or and non-PKI FIDO certified phishing-resistant authenticators.
-
-## **Shift From Managing Credentials to Managing Identities**
+## Shift From Managing Credentials to Managing Identities
 
 This playbook intends to help agencies achieve OMB Memo 19-17 outcomes to shift the focus operating model from managing access based solely on credentials to managing the lifecycle of identities and the appropriate job functions and roles as they evolve over time in an agency or the federal government. The [Identity Management services in the Federal ICAM architecture](https://www.idmanagement.gov/arch/#services-framework-and-service-descriptions) include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are collectively known as Identity Lifecycle Management (ILM).
 
@@ -311,13 +349,16 @@ Document an agency policy to identify the roles and responsibilities required to
 
 An agency policy ensures an agency-wide commitment to implementing and operating an identity lifecycle management process.
 
-### Myth Busted - We don’t need a specific policy for Identity Lifecycle Management
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Myth Busted - We don’t need a specific policy for Identity Lifecycle Management</h4>
+    <p class="usa-alert__text">
+      It is true an agency doesn’t need a specific policy for ILM, but either having a policy or integrating lifecycle management into your agency policy ensures a consistent approach with executive leadership support. Without leadership support, your ILM initiative may not achieve enterprise-wide adoption.
+    </p>
+  </div>
+</div>
 
-It is true an agency doesn’t need a specific policy for ILM, but either having a policy or integrating lifecycle management into your agency policy ensures a consistent approach with executive leadership support. Without leadership support, your ILM initiative may not achieve enterprise-wide adoption.
-
-
-
-### **Architect the Solution**
+### Architect the Solution
 
 The solution is how your agency will implement ILM. Most solutions are based on two technologies.
 
@@ -330,7 +371,7 @@ Each tool has a distinct purpose. Your agency should consider your overall ICAM 
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-cdm-mur.png" alt="Diagram showing the Department of Homeland Security's Continuous Diagnostics and Mitigation (CDM) Master User Record architecture." width="800">
 
-### **Create the Master User Record**
+### Create the Master User Record
 
 An authoritative attribute source is a repository or system that contains one or more attributes about a digital identity and is considered the primary or most reliable source for this information. For example, the most reliable source for an employee status attribute (active, leave, suspended, deactivated) is usually in a human resources system. The first step in identifying authoritative attribute sources is understanding what attributes are needed within your agency. This data analysis and collection process may include:
 
@@ -351,9 +392,14 @@ An example of an orphaned account includes active employee accounts where the em
 - Legacy and on-premises applications most likely support LDAP.
 - Cloud applications most likely support an API or SCIM.
 
-### No Orphaned Accounts
-
-Agencies should focus on identifying and reducing the number of orphaned accounts and especially orphaned accounts with privileged access.
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">No Orphaned Accounts</h4>
+    <p class="usa-alert__text">
+      Agencies should focus on identifying and reducing the number of orphaned accounts and especially orphaned accounts with privileged access.
+    </p>
+  </div>
+</div>
 
 The main benefits of a master user record include:
 
@@ -362,7 +408,7 @@ The main benefits of a master user record include:
 3. Aid in cyberstat reporting for ICAM questions.
 4. A foundational element to implement more mature identity processes when integrated with other agency systems such as access management and information technology service management (ITSM).
 
-### **Step 4. Integrate with Agency Enterprise Services**
+### Step 4. Integrate with Agency Enterprise Services
 
 An agency can further leverage the benefit of an automated ILM by integrating the master user record with other agency enterprise ICAM IGA services. This integration can aid agencies to automate provisioning, de-provisioning, and reporting as well as in federating both within and external to an agency. In this context, the federation is transferring identity and authentication between networked systems rather than relying on siloed information specific to the target application.
 
@@ -386,36 +432,36 @@ Make attributes available for authorization decisions. Federation is not only ac
 
 See the [Cloud Identity Playbook Federation section](https://www.idmanagement.gov/playbooks/cloud/#federation) for more information on federation and using trust frameworks for government, mission partner, or public identity federation.
 
-## **Summary**
+## Summary
 
 The ILM playbook outlined an identity lifecycle process and four steps to create a master user record and lifecycle process within your agency. ILM is the evolution of an identity from creation to deactivation. There are specific steps within each lifecycle phase of the IGA, create - provision- deactivate process. A master user record is the core of ILM and acts as an aggregation point of identity data for all agency users. A master user record integrated with IGA access management provides a foundation for more mature ICAM processes resulting in efficiently managing the identity and all their accounts, credentials, and access rather than just the credential, path to Zero Trust.
 
-## **Appendix A. Policies, Standards, and Guidance**
+## Appendix A. Policies, Standards, and Guidance
 
-### **Federal Policies**
+### Federal Policies
 
-1. [Executive Order 14028 - Improving the Nation’s Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity)
-2. [OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles](https://zerotrust.cyber.gov/downloads/M-22-09%20Federal%20Zero%20Trust%20Strategy.pdf)
-3. [OMB Memo 21-31 - Improving the Federal Government’s Investigation and Remediation Capabilities Related to Cybersecurity Incidents](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf)
-4. [OMB Memo 19-17 - Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf)
+1. [Executive Order 14028 - Improving the Nation’s Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [OMB Memo 22-09 - Moving the U.S. Government Toward Zero Trust Cybersecurity Principles](https://zerotrust.cyber.gov/downloads/M-22-09%20Federal%20Zero%20Trust%20Strategy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [OMB Memo 21-31 - Improving the Federal Government’s Investigation and Remediation Capabilities Related to Cybersecurity Incidents](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [OMB Memo 19-17 - Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-### **Government Standards**
+### Government Standards
 
-1. [Federal Information Processing Standard 201 - Personal Identity Verification of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final)
-2. [NIST Special Publication 800-63 - Digital identity Guidelines](https://pages.nist.gov/800-63-3/)
-3. [NIST Special Publication 800-157 - Guidelines for Derived PIV Credentials](https://csrc.nist.gov/publications/detail/sp/800-157/final)
+1. [Federal Information Processing Standard 201 - Personal Identity Verification of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [NIST Special Publication 800-63 - Digital identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [NIST Special Publication 800-157 - Guidelines for Derived PIV Credentials](https://csrc.nist.gov/publications/detail/sp/800-157/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-### **Government-Wide Guidance**
+### Government-Wide Guidance
 
 1. [FICAM Architecture](https://www.idmanagement.gov/why/icam/)
 2. [ICAM Governance Framework](https://www.idmanagement.gov/docs/playbook-identity-governance-framework.pdf)
-3. [NIST Special Publication 800-63 Additional Information Sources Including Conformance Criteria](https://pages.nist.gov/800-63-3/)
-4. [NIST Interagency Report 8149 - Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final)
-5. [OPM Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for PIV Credentials](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf)
+3. [NIST Special Publication 800-63 Additional Information Sources Including Conformance Criteria](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [NIST Interagency Report 8149 - Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5. [OPM Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for PIV Credentials](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-### **References**
+### References
 
-1. [Department of Defense ICAM Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf)
-2. [DHS CDM Max.gov Page](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2)
-3. [IDPro Body of Knowledge - An Overview of Digital Identity Lifecycle](https://bok.idpro.org/article/id/31/)
-4. [System for Cross-domain Identity Management (SCIM)](https://scim.cloud/)
+1. [Department of Defense ICAM Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Cyber/DoD_Enterprise_ICAM_Reference_Design.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [DHS CDM Max.gov Page](https://community.max.gov/download/attachments/1843519190/CDM-ARCH-2017-01.1.1-MUR-FUNCT-DESCR%2012082017.pdf?version=1&modificationDate=1568732697362&api=v2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+3. [IDPro Body of Knowledge - An Overview of Digital Identity Lifecycle](https://bok.idpro.org/article/id/31/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [System for Cross-domain Identity Management (SCIM)](https://scim.cloud/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
