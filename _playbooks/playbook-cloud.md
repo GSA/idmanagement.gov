@@ -1,4 +1,4 @@
----
+-Forbidden--
 layout: page
 collection: playbooks
 title: Cloud Identity Playbook
