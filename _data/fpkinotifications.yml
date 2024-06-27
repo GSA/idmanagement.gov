@@ -29,7 +29,7 @@
 - notice_date: June 20, 2024
   change_type: Intent to Issue a CA Certificate 
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description: The Federal Common Policy CA G2 plans to issue a new certificate to the Entrust Managed PKI Federal Root CA G2 on or around June 28th, 2024.
+  change_description: The Federal Common Policy CA G2 plans to issue a new certificate to the Entrust Managed PKI Federal Root CA G2 between July 9 and July 15, 2024.
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash: TBD
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
