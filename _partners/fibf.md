@@ -18,8 +18,8 @@ subnav:
     href: '#what-is-fibf'
   - text: ICAM FIBF Team
     href: '#icam-fibf-team'
-  - text: How Agencies can use the ICAM FIBF
-    href: '#how-agencies-can-use-the-icam-fibf'
+  - text: Envisioning the Use of ICAM FIBF
+    href: '#envisioning-the-use-of-icam-fibf'
     
 ---
 
@@ -85,9 +85,9 @@ agreement, as well as alignment with other FIBF functional areas. To join the te
 please send a request to [icam@gsa.gov](mailto:icam@gsa.gov).
 
 
-## How Agencies can use the ICAM FIBF
+## Envisioning the Use of ICAM FIBF
 
-Upon approval from the BSC and the Office of Management and Budget, the framework may be used to validate ICAM components such as policy, management, technology, data, and process to ensure standardization and interoperability. Specifically, it can be used in the following ways:
+It is envisioned that the framework can be used to validate ICAM components such as policy, management, technology, data, and process to ensure standardization and interoperability. Specifically, it can be used in the following ways:
 
 - **Translating Policy into Practice.** The policies and directives that agencies receive create business needs such as the use of accredited card issuers or establishing an ICAM governance structure. And we, as federal agencies, respond to these business needs with systems, processes, and other business capabilities. However, our responses to these policies are often done in a manner that is uncoordinated. With common ICAM business requirements, it is envisioned that the ICAM FIBF could be used to validate ICAM policies with the aim of recognizing and documenting new business requirements and services needed within the ICAM environment.
 
