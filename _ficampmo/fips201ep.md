@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages
 title:  FIPS 201 Evaluation Program
 collection: ficampmo
 permalink: /fips201ep/
