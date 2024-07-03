@@ -334,11 +334,6 @@ Usually, authorization occurs immediately after authentication. When you log in 
 
 Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:class="usa-link usa-link--external"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
 
-<!-- | | Less Fine-Grained | \--\> | \--\> | More Fine-Grained |
-| |:----:|:----:|:----:|:----:|
-| Access Model | Access Control Lists (ACLs) | Role-Based Access Control (RBAC) | Attribute-Based Access Control (ABAC)| Risk Adaptive Access Control (RAAC) |
-| Description | A static list of entities with their access rights. | Access based on a user's static pre-defined role. | Access based on a user's assigned attributes which may be static or dynamic. | Access based on dynamic risk factors. |
-| Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. | -->
 
 |   Granularity  | Access Model | Description |   Example   |
 |:---------------:|:--------------:|:-------------:|:-------------:|
@@ -796,7 +791,7 @@ The system's components are representative examples only. Some solutions chosen 
 
 The following figure is an example for a small selection of system components only. You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
 
-<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas." width="560" height="319">
+<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas.">
 
 ## Authoritative Sources
 An authoritative source is a trusted repository of identity attribute data.  It’s possible to have multiple authoritative sources for attributes.
