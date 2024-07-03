@@ -20,7 +20,7 @@ To provide up-to-date security updates to the software components used in the CP
 
 In order to update the CPCT Tool to the latest release, your current installation of the tool will need to removed from Docker Desktop before installing the the latest release.  
 
-Please following the links below for more detailed instructions on removal and update process:
+Please following the links below for more detailed instructions on the removal and update process:
 1. [Remove the current Docker image](https://github.com/GSA/cpct-tool/wiki/Removing-Docker-Images){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 2. [Update the CPCT Tool](https://github.com/GSA/cpct-tool/wiki/Updating-the-CPCT-Tool){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 3. Please visit the [CPCT Tool Wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more details on what has been updated or changed. 
