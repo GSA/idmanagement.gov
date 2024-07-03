@@ -67,7 +67,7 @@
 
 - title: Identity Lifecycle Management Playbook
   type: Webpage
-  pubdate: 2022-12
+  pubdate: 2024-18
   description: This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.
   url: "/playbooks/ilm/"
   header: "/assets/playbooks/headers/playbook_08.png"
