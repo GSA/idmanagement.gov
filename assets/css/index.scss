@@ -7,6 +7,19 @@
 @forward "uswds-theme";
 @forward "uswds-theme-custom-styles";
 
+// USWD Typography adjustments to fix width of text.
+  // This also adjusts length of bullet points
+  // Improves image sizes and readability
+.usa-prose>p {
+  max-width: 100%;
+}
+.usa-list li,.usa-prose>ol li,.usa-prose>ul li {
+  max-width: 85%;
+}
+.usa-paragraph {
+  max-width: 100%;
+}
+
 
 // CSS targets, not used for styling, keep empty, used in js to target classes.
 .gsa-target-accordion-header {} // for accordion header targeting

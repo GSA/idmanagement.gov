@@ -22,22 +22,9 @@ subnav:
 
 ---
 
-<!-- Version 3.3<br>
-June 30, 2023 -->
 
 <img src="{{site.baseurl}}/assets/img/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/img/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br>
-
-<!-- ## Version Table
-
-| Version Number | Date | Change Description |
-| :----------: | :-------: | -------- |
-| 3.3 | 6/20/2023 | Combined separate architecture pages into a single web page. Updated change table to reflect all version updates. |
-| 3.2 | 9/30/2022 | Editorial updates.<br>1. Consolidated use cases into a table format.<br>2. Combined services framework and services description.<br>3. Updated access management services description to differentiate authentication from authorization and include an overview of difference access models.<br>Map FICAM playbooks to FICAM Roadmap Part B content. **Version 3.2 sunsets FICAM Roadmap Part B content**. | 
-| 3.1 | 1/6/2021 | FICAM Architecture v3.1 incorporates updates proposed by the Federal CISO Council ICAM Subcommittee.<br>1. Clarified introduction, goals, and objectives section.<br>2. Added Privileged Access Management as Access Management Service.<br> 3. Added Identity Governance as Governance Services.<br>4. Streamlined use case language and order.<br>5. Updated system component examples.<br>6. Updated standards and policies.<br>7. Updated graphics. |
-| 3.0 | 11/27/2019 | Version 3.0 for the Architecture represents the baseline changes to FICAM Roadmap Part A released in 2016. **Version 3.0 sunsets FICAM Roadmap Part A content**. |
-| 2.0 | 12/2/2011 | Revised to include new Part B:Implementation Guidance<br>1. Chapter 6: ICAM Implementation Planning<br>2. Chapter 7: Initiative 5: Streamline Collection and Sharing of Digital Identity Data<br>3. Chapter 8: Initiative 6: Fully Leverage PIV and PIV-I Credentials<br>4. Chapter 9: Access Control Convergence<br>5. Chapter 10: Initiative 7: Modernize PACS Infrastructure<br>6. Chapter 11: Initiative 8: Modernize LACS Infrastructure<br>7. Chapter 12: Initiative 9: Implement Federated Identity Capability<br>8. Inclusion of Glossary appendix<br>9. Editorial and formatting corrections<br>10. Terminology updates to maintain consistency between Parts A and B<br>11. Updates to content related to the Federal Public Key Infrastructure to reflect infrastructure upgrades since original publication. |
-| 1.0 | 11/10/2009 | Initial publication of the document, including:<br>1. Chapter 1: Introduction<br>2. Chapter 2: Overview of ICAM<br>Part A: ICAM Segment Architecture<br>3. Chapter 3: ICAM Segment Architecture<br>4. Chapter 4: ICAM Use Cases<br>5. Chapter 5: Transition Roadmap and Milestones | -->
 
 <br>
 <div class="usa-accordionusa-accordion usa-accordion--bordered">
@@ -105,7 +92,7 @@ This version of the FICAM Architecture encompasses the **enterprise** ICAM polic
 
 The following diagram is a high-level view of the ICAM practice areas and supporting elements. 
 
-<img src="{{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png" alt="A diagram with definitions and icons for identity, credential, and access management and definitions for federation and governance." width="870" height="352">
+<img src="{{site.baseurl}}/assets/arch/intro_ConceptualDiagram.png" alt="A diagram with definitions and icons for identity, credential, and access management and definitions for federation and governance.">
 
 The FICAM Architecture includes government-wide enterprise architecture views with the flexibility to support each agency’s unique business or mission needs. Use the FICAM Architecture as a tool to continuously improve upon your agency’s approach and align with federal security and privacy initiatives.
 
@@ -347,11 +334,6 @@ Usually, authorization occurs immediately after authentication. When you log in 
 
 Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:class="usa-link usa-link--external"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
 
-<!-- | | Less Fine-Grained | \--\> | \--\> | More Fine-Grained |
-| |:----:|:----:|:----:|:----:|
-| Access Model | Access Control Lists (ACLs) | Role-Based Access Control (RBAC) | Attribute-Based Access Control (ABAC)| Risk Adaptive Access Control (RAAC) |
-| Description | A static list of entities with their access rights. | Access based on a user's static pre-defined role. | Access based on a user's assigned attributes which may be static or dynamic. | Access based on dynamic risk factors. |
-| Example | Allow Jane Doe access to email application | Jane Doe is assigned the user role "New Employee" which grants access to email and sharepoint. | Allow Jane Doe to access email if on a government device (device attribute) and in the United States (location attribute). | If Jane Doe is in assigned work location, allow email access from any managed device. If Jane Doe is not in assigned work location, only allow email access from a government device. | -->
 
 |   Granularity  | Access Model | Description |   Example   |
 |:---------------:|:--------------:|:-------------:|:-------------:|
@@ -809,7 +791,7 @@ The system's components are representative examples only. Some solutions chosen 
 
 The following figure is an example for a small selection of system components only. You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
 
-<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas." width="560" height="319">
+<img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas.">
 
 ## Authoritative Sources
 An authoritative source is a trusted repository of identity attribute data.  It’s possible to have multiple authoritative sources for attributes.
