@@ -109,21 +109,12 @@ playbooks:
 
 # Announcements moved to internal page see: /fpki/notifications/#fpki-announcements
 # Added 'Back to FPKI Notifications' to help users return to notifications 
+# Old commented out announcements removed on 07/03/2024 - CJB
+
 fpkiannouncements:
   - text: Back to FPKI Announcements
     href: /fpki/notifications 
-#   - text: Public Trust TLS PKI CP
-#     href: /fpki/announcements/PT-TLS-CP/
-#   - text: CPCT Tool Update
-#     href: /fpki/announcements/cpct-update101/
-#   - text: FCPCA SIA LDAP Decommissioning (2022) ## Oct 2023
-#     href: /fpki/announcements/ldap-removal/
-#   - text: CPCT Tool Transition
-#     href: /fpki/announcements/cpct-transition/
-#   - text: New Test Tools Available (2021) ## May 2024
-#     href: /fpki/announcements/test-tools/
-#   - text: Federal Common Policy CA G2 Update (2020) ## Oct 2023
-#     href: /fpki/announcements/common-g2-update/ 
+
  
 policy:
   - text: Contact Us
