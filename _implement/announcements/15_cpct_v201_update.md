@@ -14,7 +14,7 @@ sidenav: fpkiannouncements
 
 **CPCT Tool v2.0.1 Update:**
 
-To provide current security updates to the software components used in the CPCT Tool, a new version of the tool has been released (v2.0.1). This update requires any local copies of the CPCT tool to be updated by removing the old version and reinstalling the [latest release](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+To provide up-to-date security updates to the software components used in the CPCT Tool, a new version of the tool has been released (v2.0.1). This update requires any local copies of the CPCT tool to be updated by removing the old version and reinstalling the [latest release](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 **CPCT Update Instructions:**
 
