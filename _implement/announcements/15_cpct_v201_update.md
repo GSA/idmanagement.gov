@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CPCT Tool 2.0.1 Update
+title: CPCT Tool v2.0.1 Update
 pubDate: 07/05/2024
 removeDate: 07/05/2027
 collection: implement
