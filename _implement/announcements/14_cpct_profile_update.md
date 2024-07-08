@@ -49,5 +49,4 @@ In order to update the CPCT tool you will need to remove any existing instances 
 
 For more information see: [CPCT Tool transition from Cloud.gov]({{site.url}}/implement/announcements/cpct-transition/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-If you have any questions regarding this action please contact:
-fpki dash help at gsa dot gov
+If you have any questions regarding this action please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov). 
