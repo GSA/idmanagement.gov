@@ -25,5 +25,4 @@ Please following the links below for more detailed instructions on the removal a
 2. [Update the CPCT Tool](https://github.com/GSA/cpct-tool/wiki/Updating-the-CPCT-Tool){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 3. Please visit the [CPCT Tool Wiki](https://github.com/GSA/cpct-tool/wiki){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more details on what has been updated or changed. 
 
-If you have any questions regarding this action please contact:
-fpki dash help at gsa dot gov
+If you have any questions regarding this action please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov)
