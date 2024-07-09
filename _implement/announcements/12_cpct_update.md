@@ -22,5 +22,4 @@ In order to update the CPCT tool you will need to remove any existing instances 
 1. [Remove the current Docker image](https://github.com/GSA/cpct-tool/wiki/Removing-Docker-Images){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 2. [Update the CPCT Tool](https://github.com/GSA/cpct-tool/wiki/Updating-the-CPCT-Tool){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 
-If you have any questions regarding this action please contact:
-fpki dash help at gsa dot gov
+If you have any questions regarding this action please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov)

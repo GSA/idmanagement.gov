@@ -18,5 +18,4 @@ In order to better serve the Federal PKI community, the CPCT application will tr
 **Mitigating Factors:**
 The next version of the tool and instructions for obtaining and installing it will be provided in the coming weeks.
 
-If you have any questions regarding this action please contact:
-fpki dash help at gsa dot gov
+If you have any questions regarding this action please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov)
