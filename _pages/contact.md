@@ -12,7 +12,7 @@ Use the following emails for specific program questions or comments:
 - Federal PKI policies, programs, or operations- fpki at gsa.gov
 
 ## Have a Question or Comment?
-A quick check of some common resources may answer your question more quickly than waiting for a return email. Please check the [FICAM Playbooks](https://playbooks.idmanagement.gov){:target="_blank"}{:rel="noopener noreferrer"} for general information about Federal Identity, Credential, and Access Management (FICAM). Other common tasks include:
+A quick check of some common resources may answer your question more quickly than waiting for a return email. Please check the [FICAM Playbooks]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"} for general information about Federal Identity, Credential, and Access Management (FICAM). Other common tasks include:
 
 - Find approved [FICAM products and services]({{site.baseurl}}/icamsolutions/)
 - Get your product/service onto the [Approved Products List]({{site.baseurl}}/acquisition-professionals/#products)
