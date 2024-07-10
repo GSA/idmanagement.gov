@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
-    <meta lastmodifieddate="2024-07-02">
+    <meta lastmodifieddate="2024-07-10">
         <creator>py-crawler</creator>
-        <description>Created by Py-Crawler on 2024-07-02</description>
+        <description>Created by Py-Crawler on 2024-07-10</description>
     </meta>
     <graph defaultedgetype="directed" mode="static">
         <nodes>
@@ -699,9 +699,6 @@
             <edge id="common_name:Trans Sped Root CA G3,organizational_unit_name:Trans Sped Trust Services,organization_identifier:VATRO-12458924,organization_name:Trans Sped S.A.,country_name:RO" source="common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US" target="common_name:Trans Sped Root CA G3,organizational_unit_name:Trans Sped Trust Services,organization_identifier:VATRO-12458924,organization_name:Trans Sped S.A.,country_name:RO" label="Trans Sped Root CA G3" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
-            <edge id="common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" source="common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="ECA Root CA 4" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
             <edge id="common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" source="common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DoD Root CA 3" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
@@ -709,6 +706,9 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:ECA Root CA 5,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" source="common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:ECA Root CA 5,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="ECA Root CA 5" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
+            <edge id="common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" source="common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="ECA Root CA 4" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" source="common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD DERILITY CA-1" weight="1.0">
