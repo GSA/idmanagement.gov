@@ -1,4 +1,11 @@
-## FPKI announcements
+## FPKI Announcements Location: https://www.idmanagement.gov/fpki/notifications/#fpki-announcements
+## see the fpkiannouncements collection settings in the _data/navigation.yml file.
+
+- title: CPCT Tool v2.0.1 Update
+  pubDate: July 05, 2024
+  url: /implement/announcements/cpct-201-update/
+  description: To provide current security updates to the software components used in the CPCT Tool, a new version of the tool has been released (v2.0.1).
+  status: Active
 
 - title: CPCT Tool Update:<br>New Certificate Profiles
   pubDate: October 18, 2023
