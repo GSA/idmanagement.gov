@@ -726,38 +726,6 @@
             }
         },
         {
-            "subject": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "serial-number": "2056",
-            "akid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
-            "skid": "33 5b a5 6f 7a 55 60 2b 81 4b 26 14 cc 79 bf 4a ba 8b 32 bd",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://crl.disa.mil/issuedby/ECAROOTCA4_IB.p7c": [
-                    "common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-                    "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-                    "common_name:IdenTrust ECA S22C,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-                    "common_name:WidePoint ORC ECA 7,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-                    "common_name:IdenTrust ECA S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-                    "common_name:IdenTrust ECA S22,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
-                ]
-            },
-            "aia-entries": {
-                "http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "serial-number": "2171",
@@ -854,6 +822,37 @@
             "sia-entries": {
                 "http://crl.disa.mil/issuedby/ECAROOTCA5_IB.p7c": [
                     "common_name:WidePoint ECA 9,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
+                ]
+            },
+            "aia-entries": {
+                "http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c": [
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "serial-number": "2767",
+            "akid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
+            "skid": "33 5b a5 6f 7a 55 60 2b 81 4b 26 14 cc 79 bf 4a ba 8b 32 bd",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {
+                "http://crl.disa.mil/issuedby/ECAROOTCA4_IB.p7c": [
+                    "common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+                    "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+                    "common_name:IdenTrust ECA S22C,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+                    "common_name:IdenTrust ECA S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+                    "common_name:IdenTrust ECA S22,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -4147,6 +4146,18 @@
             }
         },
         {
+            "subject": "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
+            "serial-number": "43861959598221215318739122296333550165",
+            "akid": "b5 ed 2e 96 04 4b a9 18 f4 f4 bd 12 f1 63 85 84 97 5f 3e 5a",
+            "skid": "1b 7c 53 c3 1d e0 ee 6c 39 5e c6 22 cb f6 f1 27 00 04 86 1b",
+            "status": "Revocation Check Failed",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Pathbuilder timed out"
+            }
+        },
+        {
             "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:DirectTrust Identity Bridge CA,organizational_unit_name:Certification Authorities,organization_name:DirectTrust.org, inc.,country_name:US",
             "serial-number": "61853595351567431390719863489048903930",
@@ -4168,23 +4179,6 @@
             "pathbuilder-result": {
                 "result": "false",
                 "details": "Unable to build Path"
-            }
-        },
-        {
-            "subject": "common_name:WidePoint ORC ECA 7,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
-            "serial-number": "564",
-            "akid": "33 5b a5 6f 7a 55 60 2b 81 4b 26 14 cc 79 bf 4a ba 8b 32 bd",
-            "skid": "62 3c 50 34 79 39 e0 2a ec e3 43 28 f9 45 a4 63 7a 60 a8 e3",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US:335ba56f7a55602b814b2614cc79bf4aba8b32bd",
-            "validity-dates": {
-                "not-before": "2018-06-05 13:49:28+00:00",
-                "not-after": "2024-06-05 13:49:28+00:00"
             }
         },
         {
@@ -4846,12 +4840,6 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
             "common_name:Senate PIV-I CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
         ],
         [
@@ -5330,6 +5318,12 @@
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
+            "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
         ]
     ]
 }

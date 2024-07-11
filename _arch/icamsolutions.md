@@ -210,7 +210,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 517312</i>: Wireless Mobility Solutions</td>
     <td style="width:350px">Includes a variety of services that address the mobility needs of government agencies. Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC.</td>
     <td>Digital Certificates <br><br> Derived PIV <br><br> Other mobility offerings on this SIN</td>
-    <td><a href="https://hallways.cap.gsa.gov/app/#/applet/rfq" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
+    <td><a href="https://acquisitiongateway.gov/" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
@@ -275,4 +275,4 @@ Buyers are required to register on GSA Advantage. Buyers can use the same User I
 
 - [GSA eBuy Job Aid](https://www.ebuy.gsa.gov/ebuy/assets/content/eBuy-Buyer_jobaid.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [GSA ICAM](https://www.idmanagement.gov/arch/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- [MAS Consolidation Newsletter](https://interact.gsa.gov/sites/default/files/mas_quarterly_summer_2019_508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [MAS Consolidation Newsletter](https://buy.gsa.gov/interact/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

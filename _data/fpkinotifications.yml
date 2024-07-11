@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date:  July 10, 2024
+  change_type: CA Certificate Issuance
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 issued a new cross certificate to ECA Root CA 4 on 6/25/2024.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: caae84764872dd246fa9cf9e5a8ed09e9379161b
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN = ECA Root CA 4, OU = ECA, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/ECAROOTCA5_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: June 20, 2024
   change_type: Intent to Issue a CA Certificate 
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
