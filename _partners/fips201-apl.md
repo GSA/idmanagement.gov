@@ -101,7 +101,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 - [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-10023-10038-10039-10099-10102-10185-10186-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-4-5-6-7-8-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-10187-89-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-Signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
