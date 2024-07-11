@@ -29,9 +29,9 @@ subnav:
   - text: First-time setup for new device PIN creation Windows
     href: '#first-time-setup-for-new-device-pin-creation-windows'
   - text: Enroll Security Key on Okta-Windows
-    href: '#enroll-security-key-on-cms-idm-windows'
+    href: '#enroll-security-key-on-okta-windows'
   - text: Login to Okta with Security Key-Windows
-    href: '#login-to-cms-idm-with-security-key-windows'
+    href: '#login-to-okta-with-security-key-windows'
   - text: Glossary of Terms
     href: '#glossary-of-terms'
   - text: Yubikey FAQs
