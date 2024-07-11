@@ -37,9 +37,9 @@ subnav:
   - text: Yubikey FAQs
     href: '#yubikey-faqs'
   - text: How do I unlink the YubiKey from Okta?
-    href: '#how-do-i-unlink-the-yubikey-from-okya'
+    href: '#how-do-i-unlink-the-yubikey-from-okta?'
   - text: What should I do if I forget my YubiKey PIN?
-    href: '#what-should-i-do-if-i-forget-my-yubikey-pin'
+    href: '#what-should-i-do-if-i-forget-my-yubikey-pin?'
 
 ---
 
