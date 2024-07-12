@@ -215,7 +215,7 @@ Identity lifecycle management is the evolution of an identity from creation to r
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="Diagram illustrating the three phases of the Identity Lifecycle Process: Creation, Provisioning, and Deactivation" width="800">
 
-**Stage 1 - Creation**
+<a name="stage-1--creation">**Stage 1 - Creation**</a>
 
 Creation -The creation stage establishing the identity by completing the identity proofing/ verification stage where the identity is verified about the person. This stage is mandatory for federal employees, contratos and anyone working for or on behalf of the government this phase will include the prerequisite vetting investigation and adjudication. Processes associated with identity proofing include source document validation, identity verification, remote proofing, or in-person proofing. Depending on the user type the credentialing may result to different types of phishing resistant authenticators
 
