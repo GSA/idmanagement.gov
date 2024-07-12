@@ -18,11 +18,11 @@ subnav:
   - text: Identity Lifecycle Management 101
     href: '#identity-lifecycle-management-101'
   - text: Stage 1. Creation
-    href: '#stage-1-creation'
+    href: '#stage-1---creation'
   - text: Stage 2. Provisioning / Identity Governance Administration (IGA)
-    href: '#stage-2-provisioning-identity-governance-administration-iga'
+    href: '#stage-2---provisioning--identity-governance-administration-iga'
   - text: Stage 3. Deactivation
-    href: '#stage-3-deactivation'
+    href: '#stage-3---deactivation'
   - text: Key Terms
     href: '#key-terms'
 
