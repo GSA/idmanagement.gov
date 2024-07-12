@@ -215,11 +215,11 @@ Identity lifecycle management is the evolution of an identity from creation to r
 
 <img src="{{site.baseurl}}/assets/playbooks/ilm-process-tree.png" alt="Diagram illustrating the three phases of the Identity Lifecycle Process: Creation, Provisioning, and Deactivation" width="800">
 
-<a name="stage-1--creation">**Stage 1 - Creation**</a>
+<a name="stage-1-creation">**Stage 1 - Creation**</a>
 
 Creation -The creation stage establishing the identity by completing the identity proofing/ verification stage where the identity is verified about the person. This stage is mandatory for federal employees, contratos and anyone working for or on behalf of the government this phase will include the prerequisite vetting investigation and adjudication. Processes associated with identity proofing include source document validation, identity verification, remote proofing, or in-person proofing. Depending on the user type the credentialing may result to different types of phishing resistant authenticators
 
-**Stage 2 - Provisioning / Identity Governance Administration (IGA)**
+<a name="stage-2-provisioning-identity-governance-administration-iga">**Stage 2 - Provisioning / Identity Governance Administration (IGA)**</a>
 
 Provisioning - Create, manage identity, credentials and accounts using the IGA practice is core to the identity lifecycle management process. When users finish Stage 1 their identities are created to then be provisioned and credentialed. The IGA process provides dependent systems such as authoritative attribute sources as directories or consuming sources such as single sign-on systems and applications with provisioning processes. Processes associated with provisioning include entitlement management, grant access, remove access, account management, and account creation.
 
