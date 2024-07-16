@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
-    <meta lastmodifieddate="2024-07-10">
+    <meta lastmodifieddate="2024-07-16">
         <creator>py-crawler</creator>
-        <description>Created by Py-Crawler on 2024-07-10</description>
+        <description>Created by Py-Crawler on 2024-07-16</description>
     </meta>
     <graph defaultedgetype="directed" mode="static">
         <nodes>
@@ -199,7 +199,7 @@
             <node id="common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Federal SSP Intermediate CA - G6">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="81.0" y="59.0" z="0.0"/>
+                <viz:position x="85.0" y="55.0" z="0.0"/>
             </node>
             <node id="common_name:DigiCert Federated ID CA - G2,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Federated ID CA - G2">
                 <size value="10.0"/>
@@ -251,6 +251,11 @@
                 <viz:color r="153" g="0" b="153"/>
                 <viz:position x="105.0" y="171.0" z="0.0"/>
             </node>
+            <node id="common_name:Entrust Managed PKI Federal Root CA G2,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed PKI Federal Root CA G2">
+                <size value="10.0"/>
+                <viz:color r="153" g="0" b="153"/>
+                <viz:position x="42.0" y="91.0" z="0.0"/>
+            </node>
             <node id="common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US" label="Exostar Federated Identity Service Root CA 2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
@@ -269,7 +274,7 @@
             <node id="common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Bridge CA G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="31.0" y="96.0" z="0.0"/>
+                <viz:position x="-14.0" y="99.0" z="0.0"/>
             </node>
             <node id="common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US" label="HHS-FPKI-Intermediate-CA-E1">
                 <size value="10.0"/>
@@ -439,7 +444,7 @@
             <node id="common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US" label="Symantec SSP Intermediate CA - G4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-30.0" y="96.0" z="0.0"/>
+                <viz:position x="-65.0" y="76.0" z="0.0"/>
             </node>
             <node id="common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US" label="TSCP SHA256 Bridge CA">
                 <size value="10.0"/>
@@ -479,7 +484,7 @@
             <node id="common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu" label="U.S. Department of State AD Root CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-80.0" y="59.0" z="0.0"/>
+                <viz:position x="-95.0" y="29.0" z="0.0"/>
             </node>
             <node id="common_name:U.S. Department of Transportation Agency CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US" label="U.S. Department of Transportation Agency CA G4">
                 <size value="10.0"/>
@@ -519,7 +524,7 @@
             <node id="common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US" label="Verizon SSP CA A2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-100.0" y="1.0" z="0.0"/>
+                <viz:position x="-95.0" y="-28.0" z="0.0"/>
             </node>
             <node id="common_name:Veterans Affairs CA B3,organizational_unit_name:PKI,organizational_unit_name:Services,domain_component:va,domain_component:gov" label="Veterans Affairs CA B3">
                 <size value="10.0"/>
@@ -564,12 +569,12 @@
             <node id="common_name:WidePoint ORC SSP 5,organization_name:ORC PKI,country_name:US" label="WidePoint ORC SSP 5">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-80.0" y="-58.0" z="0.0"/>
+                <viz:position x="-65.0" y="-75.0" z="0.0"/>
             </node>
             <node id="common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US" label="WidePoint SSP Intermediate CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-30.0" y="-95.0" z="0.0"/>
+                <viz:position x="-14.0" y="-98.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:DHS CA4,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Homeland Security,organization_name:U.S. Government,country_name:US" label="DHS CA4">
                 <size value="10.0"/>
@@ -589,7 +594,7 @@
             <node id="organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed Services Root CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="31.0" y="-95.0" z="0.0"/>
+                <viz:position x="42.0" y="-90.0" z="0.0"/>
             </node>
             <node id="organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed Services SSP CA">
                 <size value="10.0"/>
@@ -624,7 +629,7 @@
             <node id="organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US" label="US Treasury Root CA">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="81.0" y="-58.0" z="0.0"/>
+                <viz:position x="85.0" y="-54.0" z="0.0"/>
             </node>
             <node id="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Common Policy CA G2">
                 <size value="10.0"/>
@@ -877,6 +882,9 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US" label="WidePoint SSP Intermediate CA" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
+            <edge id="common_name:Entrust Managed PKI Federal Root CA G2,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:Entrust Managed PKI Federal Root CA G2,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed PKI Federal Root CA G2" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos" source="common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US" target="common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos" label="Leidos FBCA Cloud PKI CA-1" weight="1.0">
