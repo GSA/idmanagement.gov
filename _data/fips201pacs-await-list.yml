@@ -1,7 +1,7 @@
 # PACS Solutions Awaiting Approval
 # File: _data/fips201pacs-await-list.yml
 # Page Use: https://www.idmanagement.gov/fips201/
-# Updated on: 04/09/2024
+# Updated on: 07/11/2024
 # Updated by: Clayton Barnette
 #
 # Legend:
@@ -27,32 +27,56 @@
   teststatus: In queue
 
 - position: 2	
-  solution: Genetec Security Center – Synergis with HID Global Validation System	
-  aplnumbers: 10061 & 10062
+  solution: AMAG Symmetry Professional + Identity One Validation System	
+  aplnumbers: 10143 & 10144
   state: Update
   teststatus: In queue
 
 - position: 3	
+  solution: Lenel + HID pivCLASS
+  aplnumbers: 10112 & 10113
+  state: Update
+  teststatus: In queue
+
+- position: 4	
   solution: Datawatch + HID pivCLASS
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 4	
+- position: 5	
+  solution: Lenel + TI Entry Point
+  aplnumbers: 10126 & 10127
+  state: Update
+  teststatus: In queue
+
+- position: 6	
+  solution: Kastle Systmes CPS (EP) PACS and Validation Infrastructure
+  aplnumbers: 10116
+  state: Update
+  teststatus: In queue
+
+- position: 7	
   solution: AMAG Symmetry Professional + HID Global Validation System
   aplnumbers: 10047 & 10048
   state: Update
   teststatus: In queue
 
-- position: 5	
-  solution: AMAG Symmetry Professional + Identity One Validation System
-  aplnumbers: 10143 & 10144
+- position: 8	
+  solution: Gallagher PIV Command Centre vEL9.10 +  HID Global Validation System for Gallagher Command Center
+  aplnumbers: 10019 & 10020
   state: Update
   teststatus: In queue
 
-- position: 6	
-  solution: DAQ Starwatch SMS 6.90 with HID pivCLASS
-  aplnumbers: 10071 & 10072
+- position: 9	
+  solution: Gallagher Command Centre PACS (13.02)
+  aplnumbers: 10114
+  state: Update
+  teststatus: In queue
+
+- position: 10	
+  solution: Identiv Velocity Security Management System (13.02)
+  aplnumbers: 10103
   state: Update
   teststatus: In queue
 

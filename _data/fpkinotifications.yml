@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: July 15, 2024
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a new certificate to the Entrust Managed PKI Federal Root CA G2 on July 9.
+  contact: fpki dash help at gsa dot gov 
+  ca_certificate_hash: 437fcb8964811d84a1ab1a3c03d3ef485cb341c0
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Entrust Managed PKI Federal Root CA G2, OU=Certification Authorities, O=Entrust, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CACertsIssuedByFedRootG2CA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://fedrootg2crl.managed.entrust.com/CRLs/FedRootG2CA.crl
+  ee_ocsp_uri: http://fedrootg2ocsp.managed.entrust.com
+
 - notice_date:  July 10, 2024
   change_type: CA Certificate Issuance
   system: DoD Interoperability Root CA 2

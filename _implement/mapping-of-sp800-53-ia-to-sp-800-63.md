@@ -22,11 +22,11 @@ subnav:
   - text: 800-63-4
     href: '#800-63-4'
   - text: 800-63A-4
-    href: '#800-63A-4'
+    href: '#800-63a-4'
   - text: 800-63B-4
-    href: '#800-63B-4'
+    href: '#800-63b-4'
   - text: 800-63C-4
-    href: '#800-63C-4'
+    href: '#800-63c-4'
 ---
 
 **Security Controls Mapping of Special Publication 800-53 Revision 5, Identification and Authentication (IA), against Special Publication 800-63**
