@@ -29,7 +29,7 @@
 - notice_date: July 17, 2024
   change_type: Intent to Renew a CA Certificate 
   system: TSCP SHA256 Bridge CA
-  change_description: The TSCP Bridge CA intends to issue a cross-certificate to Carillon Federal Services PIV-I CA2 in early to mid-August.
+  change_description: The TSCP Bridge CA intends to renew a cross-certificate to Carillon Federal Services PIV-I CA2 in early to mid-August.
   contact: info at tscp dot org
   ca_certificate_hash: TBD
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
