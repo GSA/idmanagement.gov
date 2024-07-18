@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: July 17, 2024
+  change_type: Intent to Renew a CA Certificate 
+  system: TSCP SHA256 Bridge CA
+  change_description: The TSCP Bridge CA intends to renew a cross-certificate to Carillon Federal Services PIV-I CA2 in early to mid-August.
+  contact: info at tscp dot org
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA2.crl
+  ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
+
 - notice_date: July 15, 2024
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
