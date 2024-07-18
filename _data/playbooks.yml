@@ -16,13 +16,14 @@
 # external: yes or no, if yes: logic uses full url of this property, if no: uses internal relative url to domain name
 # Note: If external, the 'header' graphic will still expect a relative path to a graphic located in the assets folder
 #
+# Moved to webp for image optimization (thanks Google) on 07-18-2024 - CJB 
 
 - title: Cloud Identity Playbook
   type: Webpage
   pubdate: 2022-12
   description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
   url: "/playbooks/cloud/"
-  header: "/assets/playbooks/headers/playbook_04.png"
+  header: "/assets/playbooks/headers/playbook_04.webp"
   target: _self
 
 - title: Digital Autopen Playbook
@@ -30,7 +31,7 @@
   pubdate: 2023-03
   description: This playbook outlines the process for an agency to implement a Digital Autopen for Federal Register documents.
   url: "/playbooks/autopen/"
-  header: "/assets/playbooks/headers/playbook_02.png"
+  header: "/assets/playbooks/headers/playbook_02.webp"
   target: _self
 
 - title: Digital Identity Risk Assessment Playbook
@@ -38,7 +39,7 @@
   pubdate: 2020-09
   description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
   url: "/playbooks/dira/"
-  header: "/assets/playbooks/headers/playbook_03.png"
+  header: "/assets/playbooks/headers/playbook_03.webp"
   target: _self
 
 - title: Digital Worker Identity Playbook
@@ -46,7 +47,7 @@
   pubdate: 2022-12
   description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
   url: "/playbooks/dw/"
-  header: "/assets/playbooks/headers/playbook_05.png"
+  header: "/assets/playbooks/headers/playbook_05.webp"
   target: _self
 
 - title: Enterprise Single Sign-On Playbook
@@ -54,7 +55,7 @@
   pubdate: 2021-11
   description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
   url: "/playbooks/sso/"
-  header: "/assets/playbooks/headers/playbook_09.png"
+  header: "/assets/playbooks/headers/playbook_09.webp"
   target: _self
 
 - title: ICAM Governance Framework Version 1.0
@@ -62,7 +63,7 @@
   pubdate: 2021-09
   description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies.
   url: "/docs/playbook-identity-governance-framework.pdf"
-  header: "/assets/playbooks/headers/playbook_07.png"
+  header: "/assets/playbooks/headers/playbook_07.webp"
   target: _self
 
 - title: Identity Lifecycle Management Playbook
@@ -70,7 +71,7 @@
   pubdate: 2024-18
   description: This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.
   url: "/playbooks/ilm/"
-  header: "/assets/playbooks/headers/playbook_08.png"
+  header: "/assets/playbooks/headers/playbook_08.webp"
   target: _self
 
 - title: Privileged Identity Playbook
@@ -78,7 +79,7 @@
   pubdate: 2022-12
   description: This Playbook provides federal agencies with best practices in managing its privileged user population.
   url: "/playbooks/pam/"
-  header: "/assets/playbooks/headers/playbook_11.png"
+  header: "/assets/playbooks/headers/playbook_11.webp"
   target: _self
 
 - title: Digitally Sign a Word Document
@@ -86,7 +87,7 @@
   pubdate: 2018-03
   description: This playbook will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
   url: "/playbooks/signword/"
-  header: "/assets/playbooks/headers/playbook_01.png"
+  header: "/assets/playbooks/headers/playbook_01.webp"
   target: _self
 
 - title: Digitally Sign a Federal Register Document
@@ -94,7 +95,7 @@
   pubdate: 2022-08
   description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
   url: "/playbooks/signfedregister/"
-  header: "/assets/playbooks/headers/playbook_06.png"
+  header: "/assets/playbooks/headers/playbook_06.webp"
   target: _self
 
 - title: Phishing-Resistant Authenticator Playbook
@@ -102,7 +103,7 @@
   pubdate: 2024-02
   description: This playbook helps an agency identify phishing-resistant alternative authenticators and design a pilot.
   url: "/playbooks/altauthn/"
-  header: "/assets/playbooks/headers/playbook_05.png"
+  header: "/assets/playbooks/headers/playbook_05.webp"
   target: _self
   
 # Removed because it has a status of archived
