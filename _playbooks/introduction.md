@@ -15,28 +15,33 @@ subnav:
 
 <hr>
 <p>
+<ul class="usa-card-group">  
 {% assign playbooks = site.data.playbooks | sort: "title" %}
-{% for playbook in playbooks %}	
-<!-- Updated 06/20/2024 CJB -->
-<div class="usa-accordion usa-accordion--bordered" tabindex=0 >
-  <h4 class="usa-accordion__heading">
-    <button
-      type="button" style="cursor:auto;"
-      class="usa-accordion__button"
-      aria-expanded="false"
-      aria-controls="b-a{{forloop.index}}" >
-     {{playbook.title}}
-    </button>
-  </h4>
-  <div id="b-a{{forloop.index}}" class="usa-accordion__content usa-prose" style="cursor: pointer;" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')">
-    <p>
-    {{playbook.description}}
-    <hr>
-    <div>
-        <!-- <button type="button" class="usa-button">Button text</button> -->
-        Latest Update: {{playbook.pubdate}} 
+{% for playbook in playbooks %}			
+<li class="usa-card tablet:grid-col-6">
+    <div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
+        <div class="usa-card__header">
+            <h3 class="site-preview-heading">{{playbook.title}}</h3>
+        </div>
+        <div class="usa-card__media">
+        <div class="usa-card__img">
+                <img
+                src="{{site.baseurl}}{{playbook.header}}"
+                alt="{{playbook.title}}"
+                tabindex="-1" aria-label="{{playbook.title}}" />
+            </div>
+        </div>
+        <hr>
+        <div class="usa-card__body">
+            <p>{{playbook.description}}</p>
+        </div>
+        <hr>
+        <div class="usa-card__footer">
+            <!-- <button type="button" class="usa-button">Button text</button> -->
+            Latest Update: {{playbook.pubdate}} <br><span class="usa-tag bg-accent-warm">{{playbook.type}}</span>
+        </div>
     </div>
-    </p>
-  </div>
-</div>
-{% endfor %}	
+</li>
+{% endfor %}
+</ul>
+</p>
