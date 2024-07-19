@@ -133,7 +133,7 @@
 
 .usa-hero {
   //background-image: asset_url("new-header-graphic.png");
-  background-image: url("{{site.baseurl}}/assets/images/new-background-30-fade.png");
+  background-image: url("{{site.baseurl}}/assets/images/new-background-30-fade.webp");
   background-position: 50%;
   background-size: cover;
   // height: 380px;
@@ -290,7 +290,7 @@
 
 // For bottom icon panel on front page, to cover blue with same image in header
 .gsa-icon-panel {
-  background-image: url("{{site.baseurl}}/assets/images/bottom-panel-background.png");
+  background-image: url("{{site.baseurl}}/assets/images/bottom-panel-background.webp");
   //background-image: asset_url("hero-image2-blur.png");
   background-position: 100%;
   background-repeat: no-repeat;

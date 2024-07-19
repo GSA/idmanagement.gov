@@ -40,7 +40,3 @@ subnav:
   </div>
 </div>
 {% endfor %}	
-
-
-
-
