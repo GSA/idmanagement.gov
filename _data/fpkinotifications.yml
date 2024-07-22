@@ -27,7 +27,7 @@
 # ee_ocsp_uri:
 
 
-- notice_date: July 19, 2023
+- notice_date: July 19, 2024
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA
   change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Raytheon Technologies Medium Assurance CA.
