@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: July 19, 2023
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Raytheon Technologies Medium Assurance CA.
+  contact: support at certipath dot com
+  ca_certificate_hash: 966BE877C8CF8A6AD71301234CDCF93717F75765
+  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Raytheon Technologies Medium Assurance CA, OU=Class3-G3, O=cas, DC=rtx, DC=com
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://aia.certipath.com/IssuedBy-CertiPathBridgeCA-G3.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.rtx.com/G3/CRLs/Class3-G3_Full.crl
+  ee_ocsp_uri: N/A
+
 - notice_date: July 17, 2024
   change_type: Intent to Renew a CA Certificate 
   system: TSCP SHA256 Bridge CA
