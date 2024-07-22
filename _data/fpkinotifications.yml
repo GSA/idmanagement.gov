@@ -32,7 +32,7 @@
   change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Raytheon Technologies Medium Assurance CA.
   contact: support at certipath dot com
   ca_certificate_hash: 966BE877C8CF8A6AD71301234CDCF93717F75765
-  ca_certificate_issuer: OCN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
   ca_certificate_subject: CN=Raytheon Technologies Medium Assurance CA, OU=Class3-G3, O=cas, DC=rtx, DC=com
   cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
