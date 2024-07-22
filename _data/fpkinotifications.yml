@@ -26,6 +26,7 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+
 - notice_date: July 19, 2023
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA
