@@ -27,6 +27,51 @@
 # ee_ocsp_uri:
 
 
+- notice_date: July 22, 2024
+  change_type: Intent to Revoke CA Certificate
+  system: DirectTrust Identity Bridge CA
+  change_description: DirectTrust intends to revoke a cross certificate from the DirectTrust Identity Bridge CA to the FBCA G4 in support of their planned cessation of operations. A Long Term CRL is scheduled to be issued and published 8/22/2024.
+  contact: admin at DirectTrust dot org 
+  ca_certificate_hash: 1623a303cd6d5c61cf049f1b65d6aae2f1e8e19f
+  ca_certificate_issuer: CN = DirectTrust Identity Bridge CA,OU = Certification Authorities,O = DirectTrust.org, inc.,C = US
+  ca_certificate_subject: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = U
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
+- notice_date: July 22, 2024
+  change_type: Intent to Revoke CA Certificate
+  system: DirectTrust Identity Bridge CA
+  change_description: DirectTrust intends to revoke a cross certificate from the DirectTrust Identity Bridge CA to the Trans Sped Root CA G3 n support of their planned cessation of operations. A Long term CRL is scheduled to be issued and published 8/22/2024.
+  contact: admin at DirectTrust dot org 
+  ca_certificate_hash: d0575156c2333a2493890b3aee7900fc6ff8620f
+  ca_certificate_issuer: CN = DirectTrust Identity Bridge CA,OU = Certification Authorities,O = DirectTrust.org, inc.,C = US
+  ca_certificate_subject: CN = Trans Sped Root CA G3,OU = Trans Sped Trust Services,2.5.4.97 = VATRO-12458924,O = Trans Sped S.A.,C = RO
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
+- notice_date: July 22, 2024
+  change_type: Intent to Revoke a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to revoke a cross certificate to the DirectTrust Identity Bridge CA on or about 8/22/2024 n support of the DirectTrust planned cessation of operations.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ddd7246c86b2e0a3ac2fc7a7dbb7430b935eba2f
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DirectTrust Identity Bridge CA, OU=Certification Authorities, O=DirectTrust.org, inc., C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.makeidentitysafe.com/issuedby-sibca.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: July 19, 2024
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA
