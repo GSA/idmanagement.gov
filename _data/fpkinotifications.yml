@@ -60,7 +60,7 @@
 - notice_date: July 22, 2024
   change_type: Intent to Revoke a CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
-  change_description: The Federal Bridge CA G4 intends to revoke a cross certificate to the DirectTrust Identity Bridge CA on or about 8/22/2024 n support of the DirectTrust planned cessation of operations.
+  change_description: The Federal Bridge CA G4 intends to revoke the cross certificate to the DirectTrust Identity Bridge CA on or about 8/22/2024 at the request of DirectTrust in support of their planned cessation of operations.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: ddd7246c86b2e0a3ac2fc7a7dbb7430b935eba2f
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
