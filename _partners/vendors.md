@@ -54,9 +54,6 @@ Three approved testing labs test PIV card stock:
 - [Booz Allen Hamilton Cyber Assurance Testing Laboratory](http://csrc.nist.gov/groups/STM/testing_labs/#24){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
   - Contact:  Eric Winterton
   - Phone: (410) 684-6691
-- [Leidos](https://www.leidos.com/CC-FIPS140){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
-  - Contact: Michael Powers
-  - Phone: (443) 367-7422
 
 GSA manages testing and certification for PACS as well as annual audit testing of production PIV credentials for federal agencies:
 
