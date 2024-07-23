@@ -58,7 +58,7 @@ Three approved testing labs test PIV card stock:
 GSA manages testing and certification for PACS as well as annual audit testing of production PIV credentials for federal agencies:
 
 - GSA FICAM Testing Lab
-  - Contact: fips201ep at gsa dot gov
+  - Contact: [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov)
 
 If your product completes the testing process, two things occur.
 1. You will receive a signed approval document.
