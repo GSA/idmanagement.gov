@@ -45,7 +45,7 @@
 - notice_date: July 22, 2024
   change_type: Intent to Revoke CA Certificate
   system: DirectTrust Identity Bridge CA
-  change_description: DirectTrust intends to revoke a cross certificate from the DirectTrust Identity Bridge CA to the Trans Sped Root CA G3 n support of their planned cessation of operations. A Long term CRL is scheduled to be issued and published 8/22/2024.
+  change_description: DirectTrust intends to revoke a cross certificate from the DirectTrust Identity Bridge CA to the Trans Sped Root CA G3 in support of their planned cessation of operations. A Long term CRL is scheduled to be issued and published 8/22/2024.
   contact: admin at DirectTrust dot org 
   ca_certificate_hash: d0575156c2333a2493890b3aee7900fc6ff8620f
   ca_certificate_issuer: CN = DirectTrust Identity Bridge CA,OU = Certification Authorities,O = DirectTrust.org, inc.,C = US
