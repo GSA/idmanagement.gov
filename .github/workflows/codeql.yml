@@ -15,9 +15,9 @@ on:
   push:
     branches: [ "staging", "federalist-pages" ]
   pull_request:
-    branches: [ "staging", "federalist-pages" ]
+    branches: [ "staging" ]
   schedule:
-    - cron: '21 10 * * 4'
+    - cron: '38 10 * * 5'
 
 jobs:
   analyze:
