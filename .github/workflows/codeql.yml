@@ -77,6 +77,13 @@ jobs:
     # "We were unable to automatically build your code", modify the matrix above
     # to set the build mode to "manual" for that language. Then modify this step
     # to build your code.
+    
+    # Autobuild to v3
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v3
+    
+    # Note: Section below was commented out on previous version, but left active in this version since this section only applies if the matrix.build-modes are set to manual, which is not needed for ruby and javascript.
+
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
     - if: matrix.build-mode == 'manual'
