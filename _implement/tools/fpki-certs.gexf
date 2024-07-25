@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
-    <meta lastmodifieddate="2024-07-16">
+    <meta lastmodifieddate="2024-07-23">
         <creator>py-crawler</creator>
-        <description>Created by Py-Crawler on 2024-07-16</description>
+        <description>Created by Py-Crawler on 2024-07-23</description>
     </meta>
     <graph defaultedgetype="directed" mode="static">
         <nodes>
@@ -656,9 +656,6 @@
             <edge id="common_name:Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3,organization_identifier:NTRNL-27370985,organization_name:Ministerie van Defensie,country_name:NL" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3,organization_identifier:NTRNL-27370985,organization_name:Ministerie van Defensie,country_name:NL" label="Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
-            <edge id="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" label="Raytheon Technologies Medium Assurance CA" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
             <edge id="common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US" label="Boeing PCA G3" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
@@ -666,6 +663,9 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Lockheed Martin Root Certification Authority 6,organizational_unit_name:Certification Authority,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Lockheed Martin Root Certification Authority 6,organizational_unit_name:Certification Authority,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US" label="Lockheed Martin Root Certification Authority 6" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
+            <edge id="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" label="Raytheon Technologies Medium Assurance CA" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US" label="Carillon Federal Services PIV-I CA1" weight="1.0">
