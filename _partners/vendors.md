@@ -60,6 +60,8 @@ GSA manages testing and certification for PACS as well as annual audit testing o
 - GSA FICAM Testing Lab
   - Contact: [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov)
 
+<!-- above updated on 07/23/2024 cjb -->
+
 If your product completes the testing process, two things occur.
 1. You will receive a signed approval document.
 2. Your product will be listed on the [Approved Products List (APL)]({{site.baseurl}}/fips201/) under the appropriate category.
