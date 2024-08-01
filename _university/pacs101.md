@@ -474,7 +474,7 @@ Agency staff are encouraged to participate in steps that list their roles in **b
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a class="usa-link usa-link--external" href="https://www.gsa.gov/system/files/General_Supplies__Services/Guide_to_GSA_PACS_An_Ordering_Guide_-_July_2020.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/Guide%20to%20GSA%20%20PACS%20%20An%20Ordering%20Guide%20-%20January%202021.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
