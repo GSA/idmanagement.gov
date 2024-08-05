@@ -869,6 +869,7 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: DigiCert Federal SSP Intermediate CA - G6](#issued-to-digicert-federal-ssp-intermediate-ca---g6)
 - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
 - [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
+- [Issued to: Entrust Managed PKI Federal Root CA G2](#issued-to-entrust-managed-pki-federal-root-ca-g2)
 - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
 - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
@@ -941,6 +942,17 @@ The following certificates are published in the Federal Common Policy CA certifi
 | SHA-1 Thumbprint | 4c40f62b5c3f13533a8f8a1d44f8b027aaa0fd3d |
 | SHA-256 Thumbprint | 09d3f1a7d2e0be1a8d043fdf5d16bf8bf18e0dff2f397f27b0b8ee962de59de5 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Symantec_SSP_Intermediate_CA_-_G4.cer)|
+
+#### Issued to: Entrust Managed PKI Federal Root CA G2
+
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | OU=Entrust Managed PKI Federal Root CA G2, OU=Certification Authorities, O=Entrust, C=US |
+| Validity | July 9, 2024 to July 9, 2034 |
+| Serial Number | 29237f41950465269051730e2ac3757add090883 |
+| SHA-1 Thumbprint | 437fcb8964811d84a1ab1a3c03d3ef485cb341c0 |
+| SHA-256 Thumbprint | cf42c4b69d203dee12386f9fb7ffa12382f4313bd88e4debcb12852e2c78c287 |
+| Download Location | Click [here]({{site.baseurl}}/implement/certs/Entrust_Managed_PKI_Federal_Root_CA_G2.cer) |
 
 #### Issued to: Entrust Managed Services Root CA
 
