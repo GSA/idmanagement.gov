@@ -261,6 +261,14 @@ These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authen
 - SHA-1 Hash: 4b8818edc75e6983904ee71513c85e165f2d897c
 - CRL DP: [http://nfimediumsspweb.managed.entrust.com/CRLs/NFIMEDIUMSSPCA1.crl](http://nfimediumsspweb.managed.entrust.com/CRLs/NFIMEDIUMSSPCA1.crl){:target="_blank"}{:rel="noopener noreferrer"} 
 
+#### Entrust Managed PKI Federal Issuing CA G2
+- Subject: OU = Entrust Managed PKI Federal Issuing CA G2, OU = Certification Authorities, O = Entrust, C = US
+- Issuer: OU = Entrust Managed PKI Federal Root CA G2, OU = Certification Authorities, O = Entrust, C = US
+- Serial #: 6c64ace173da144034b6b67769838a4c
+- Validity: June 28, 2024 to June 28, 2034
+- SHA-1 Hash: 3b94eeab90e1d577f4892705a35abaa076d78849
+- CRL DP: [[http://fedrootg2crl.managed.entrust.com/CRLs/FedIssuingG2CA.crl](http://fedrootg2crl.managed.entrust.com/CRLs/FedIssuingG2CA.crl)]{:target="_blank"}{:rel="noopener noreferrer"}
+
 #### Entrust Managed Services SSP CA
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
