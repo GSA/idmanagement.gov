@@ -59,12 +59,12 @@ The following table defines common PACS components:
 | **Credential<br>holder data repository** | It contains employee and contractor data and physical access privileges. Control panels use this authoritative data to validate credential data. |
 | **Auxiliary Systems** | Agencies may integrate the PACS with additional facility monitoring systems, such as surveillance, fire alarm, and evacuation systems.|
 
-{% include alert-no-icon.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from <a href=\"/acquisition-professionals/#products\" target=\"_blank\" rel=\"noopener noreferrer\">GSA's Approved Products List (APL) for PACS Products</a>. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Assessment and Authorization (A & A) and obtain an Authority to Operate from your agency before connecting to the network." %}
+{% include alert-no-icon.html content="All agency-purchased PACS components must be FIPS 201-compliant and selected from [GSA's Approved Products List (APL) for PACS Products](/acquisition-professionals/#products){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}. The products in this list have undergone vulnerability and interoperability testing through the FIPS 201 Evaluation Program. As an IT system, a PACS must still complete Assessment and Authorization (A & A) and obtain an Authority to Operate from your agency before connecting to the network." %}
 
 ## Compliant PACS Characteristics
 
 In May 2019, the Office of Management and Budget (OMB) released memorandum [M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, _Enabling Mission Delivery through Improved Identity, Credential, and Access
-Management_. Related to PACS, M-19-17 rescinded memorandum [M-11-11](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, _Continued Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors_. The updated guidance adds further specificity to require the use of PIV credentials for physical access to federal facilities, implemented per _[The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}_ and NIST [SP 800-116, Revision 1](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Guidelines for the Use of PIV Credentials in Facility Access.
+Management_. Related to PACS, M-19-17 rescinded memorandum [M-11-11](https://obamawhitehouse.archives.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, _Continued Implementation of Homeland Security Presidential Directive (HSPD) 12 – Policy for a Common Identification Standard for Federal Employees and Contractors_. The updated guidance adds further specificity to require the use of PIV credentials for physical access to federal facilities, implemented per _[The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The Risk Management Process - 2021 Edition_2.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}_ and NIST [SP 800-116, Revision 1](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Guidelines for the Use of PIV Credentials in Facility Access.
 
 Characteristics of NIST SP 800-116, Revision 1, compliant systems include, but are not limited to:
 - Use high-assurance credentials for electronic authentication of employees and contractors.
@@ -135,7 +135,10 @@ The Security Control Overlay for Electronic Physical Access Control Systems (ePA
 
 ## Assess Facility Security Level 
 
-{% include alert-no-icon.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks:<br> - <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard </a> <br> - <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access. </a>" %}
+{% include alert-no-icon.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks: 
+
+- [The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The Risk Management Process - 2021 Edition_2.pdf){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"} 
+- [NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}" %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
@@ -176,7 +179,7 @@ The Security Control Overlay for Electronic Physical Access Control Systems (ePA
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
 
-{% include alert-no-icon.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--externa\" href=\"https://www.cisa.gov/resources-tools/resources/isc-standard-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
+{% include alert-no-icon.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/resources-tools/resources/isc-standard-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
 
 ## Categorize Security Areas
 
@@ -197,7 +200,7 @@ The Security Control Overlay for Electronic Physical Access Control Systems (ePA
 
 ## Determine Authentication Factors
 
-{% include alert-no-icon.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a> , recommends the following method to determine authentication factors for Exclusion, Limited, and Controlled security areas." %}
+{% include alert-no-icon.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>, recommends the following method to determine authentication factors for Exclusion, Limited, and Controlled security areas." %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
 - Once you have categorized all security area categories, you will select the minimum number of authentication factors (1, 2, or 3) needed to access and safeguard the facility:
@@ -210,7 +213,7 @@ The Security Control Overlay for Electronic Physical Access Control Systems (ePA
   
 ## Select Authentication Mechanisms 
 
-{% include alert-no-icon.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/fips/201/3/final\" target=\"_blank\" rel=\"noopener noreferrer\">FIPS 201-3</a>, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
+{% include alert-no-icon.html content="[FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanisms for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
@@ -238,7 +241,7 @@ Certificates must be validated when using PKI-CAK and PKI-AUTH as authentication
 
 Visit [PKI 101]({{site.baseurl}}/university/pki/) to learn more about certificate trust.
 
-{% include alert-no-icon.html content=" GSA’s <a class=\"usa-link usa-link--external\" href=\"https://buy.gsa.gov/docviewer?id=2038&docTitle=Physical%20Access%20Control%20Systems%20Ordering%20Guide&category=Security%20%20Protection,%20Security%20Systems&docType=Buyers%20Guide" target=\"_blank\" rel=\"noopener noreferrer\">PACS Customer Ordering Guide is a good starting point for understanding Physical Access Control System procurements. </a>" %}
+{% include alert-no-icon.html content="GSA’s [PACS Customer Ordering Guide is a good starting point for understanding Physical Access Control System procurements](https://buy.gsa.gov/docviewer?id=2038&docTitle=Physical Access Control Systems Ordering Guide&category=Security  Protection, Security Systems&docType=Buyers Guide)." %}
 
 This page provides a sample PACS Procurement Checklist. You can reuse or tailor this checklist according to your agency’s practices. The checklist highlights common procurement activities as they relate to the following roles:
 - Information Technology or Physical Security Engineers (ENG)
@@ -763,7 +766,7 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 
 ## Glossary
 
-{% include alert-no-icon.html content="NIST SP-800-116, Revision 1, \"Guidelines for the Use of PIV Credentials in Facility Access\" <a href=\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf\" target=\"_blank\"  rel=\"noopener noreferrer\">Appendix G </a> contains additional PACS-related terms and definitions." %}
+{% include alert-no-icon.html content="NIST SP-800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access [Appendix G](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}  contains additional PACS-related terms and definitions." %}
 
 1. <strong id="access-control">Access Control</strong> - The process of granting or denying specific requests to: (1) obtain and use information and related information processing services; and (2) enter physical facilities, such as federal buildings, military establishments, and border crossing entrances.
 2. <strong id="access-point">Access Point</strong> - An access point can be a door, turnstile, or other physical barrier that can be electronically controlled to grant access.
