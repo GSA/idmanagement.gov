@@ -181,11 +181,11 @@ These federal standards provide guidance for assessing FSL, including how to cat
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
 
-{% include alert-no-icon.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/resources-tools/resources/isc-standard-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>." %}
+{% include alert-no-icon.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/resources-tools/resources/isc-standard-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>" %}
 
 ## Categorize Security Areas
 
-{% include alert-no-icon.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>." %}
+{% include alert-no-icon.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>" %}
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
 - Once you've inventoried and mapped assets by risk and impact level, it's time to categorize security areas.
