@@ -33,50 +33,50 @@
   teststatus: In queue
 
 - position: 3	
-  solution: Lenel + HID pivCLASS
-  aplnumbers: 10112 & 10113
-  state: Update
-  teststatus: In queue
-
-- position: 4	
   solution: Datawatch + HID pivCLASS
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 5	
-  solution: Lenel + TI Entry Point
-  aplnumbers: 10126 & 10127
-  state: Update
-  teststatus: In queue
-
-- position: 6	
+- position: 4	
   solution: Kastle Systems CPS (EP) PACS and Validation Infrastructure
   aplnumbers: 10116
-  state: Update
+  state: New
   teststatus: In queue
 
-- position: 7	
+- position: 5	
   solution: AMAG Symmetry Professional + HID Global Validation System
   aplnumbers: 10047 & 10048
   state: Update
   teststatus: In queue
 
-- position: 8	
-  solution: Gallagher PIV Command Centre vEL9.10 +  HID Global Validation System for Gallagher Command Center
+- position: 6	
+  solution: Gallagher PIV Command Centre +  HID Global Validation System for Gallagher Command Center
   aplnumbers: 10019 & 10020
   state: Update
   teststatus: In queue
 
-- position: 9	
+- position: 7	
   solution: Gallagher Command Centre PACS (13.02)
   aplnumbers: 10114
   state: Update
   teststatus: In queue
 
-- position: 10	
+- position: 8	
   solution: Identiv Velocity Security Management System (13.02)
   aplnumbers: 10103
+  state: Update
+  teststatus: In queue
+
+- position: 9	
+  solution: Advantor Suite for Networks V6.2 + HID pivCLASS 5.28
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
+- position: 10	
+  solution: Software House C-Cure 9000 v3.003 (13.02)
+  aplnumbers: 10159
   state: Update
   teststatus: In queue
 
