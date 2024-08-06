@@ -733,7 +733,7 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 
 [NIST SP 800-60, Volume II, Revision 1, _Appendices to Guide for Mapping Types of Information and Information Systems to Security Categories_](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v2r1.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, August 2008
 
-[NIST SP 800-73-4, _Interfaces for Personal Identity Verification_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73pt1-5.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Parts 1 and 2, May 2015 (Updated February 8, 2016)
+[NIST SP 800-73pt1-5, _Interfaces for Personal Identity Verification_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73pt1-5.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Parts 1 ,July 2024
 
 [NIST SP 800-116, Revision 1, _Guidelines for the Use of PIV Credentials in Facility Access_](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-116r1.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, June 2018 
 
