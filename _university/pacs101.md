@@ -138,7 +138,7 @@ The Security Control Overlay for Electronic Physical Access Control Systems (ePA
 {% include alert-no-icon.html content="
 These federal standards provide guidance for assessing FSL, including how to categorize site risks: 
 
-- [The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The Risk Management Process - 2021 Edition_2.pdf){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"} 
+- [The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The%20Risk%20Management%20Process%20-%202021%20Edition_2.pdf){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"} 
 - [NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}" %}
 
 
