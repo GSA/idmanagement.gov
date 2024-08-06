@@ -135,10 +135,12 @@ The Security Control Overlay for Electronic Physical Access Control Systems (ePA
 
 ## Assess Facility Security Level 
 
-{% include alert-no-icon.html content="These federal standards provide guidance for assessing FSL, including how to categorize site risks: 
+{% include alert-no-icon.html content="
+These federal standards provide guidance for assessing FSL, including how to categorize site risks: 
 
 - [The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard](https://www.cisa.gov/sites/default/files/publications/The Risk Management Process - 2021 Edition_2.pdf){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"} 
 - [NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}" %}
+
 
 ![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
