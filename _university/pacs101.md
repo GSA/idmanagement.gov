@@ -243,7 +243,7 @@ Certificates must be validated when using PKI-CAK and PKI-AUTH as authentication
 
 Visit [PKI 101]({{site.baseurl}}/university/pki/) to learn more about certificate trust.
 
-{% include alert-no-icon.html content="GSA’s [PACS Customer Ordering Guide is a good starting point for understanding Physical Access Control System procurements](https://buy.gsa.gov/docviewer?id=2038&docTitle=Physical Access Control Systems Ordering Guide&category=Security  Protection, Security Systems&docType=Buyers Guide)." %}
+{% include alert-no-icon.html content="GSA’s [PACS Customer Ordering Guide](https://buy.gsa.gov/docviewer?id=2038&docTitle=Physical Access Control Systems Ordering Guide&category=Security  Protection, Security Systems&docType=Buyers Guide) is a good starting point for understanding Physical Access Control System procurements." %}
 
 This page provides a sample PACS Procurement Checklist. You can reuse or tailor this checklist according to your agency’s practices. The checklist highlights common procurement activities as they relate to the following roles:
 - Information Technology or Physical Security Engineers (ENG)
@@ -540,7 +540,7 @@ Agency staff are encouraged to participate in steps that list their roles in **b
   <ul>
 	<li>After the contract award, your integrator will help you:
 	<ul>
-	<li>Choose the best PACS topology (an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="{{site.baseurl}}/fips201ep/" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
+	<li>Choose the best PACS topology (an end-to-end solution of hardware, software, a Certificate Validation System, and PIV credential readers) listed on the <a href="{{site.baseurl}}/fips201/" target="_blank" rel="noopener noreferrer">GSA PACS APL</a> for the PIV authentication mechanisms selected for your facility.</li>
 	<li>Buy the products and additional services you need by using the <a class="usa-link usa-link--external" href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank" rel="noopener noreferrer">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
@@ -753,7 +753,7 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 
 [_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_]({{site.baseurl}}/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014
 
-[_Personal Identity Verification Interoperability for Issuers_]({{site.baseurl}}/docs/archived/fpki-pivi-for-issuers.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017
+[_Personal Identity Verification Interoperability for Issuers_]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.0.1, July 27, 2017
 
 [_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/publications/isc-risk-management-process-2016-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, ISC, 2nd Edition, November 2016
 
