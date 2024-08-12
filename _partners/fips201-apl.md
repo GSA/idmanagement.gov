@@ -104,6 +104,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 - [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [IDFactors Readers]({{site.baseurl}}/docs/apl-10112-10113-idfactors.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-10092-96-10163-67-10186-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
