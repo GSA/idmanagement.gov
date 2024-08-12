@@ -132,7 +132,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
       <td>{{ psaal.solution }}</td>
       <td>{{ psaal.aplnumbers }}</td>
       <td>{{ psaal.state }}</td>
-      <td">{{ psaal.teststatus }}</td>
+      <td>{{ psaal.teststatus }}</td>
     </tr>
   {% endfor %}
   </tbody>
