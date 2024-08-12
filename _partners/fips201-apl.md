@@ -118,20 +118,20 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
   </caption>
   <thead>
     <tr>
-      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">Position</th>
-      <th data-sortable scope="col" role="columnheader">Solution</th>
-      <th data-sortable scope="col" role="columnheader">APL Numbers</th>
-      <th data-sortable scope="col" role="columnheader">New/Update</th>
-      <th data-sortable scope="col" role="columnheader">Testing Status</th>
+      <th role="columnheader" aria-sort="ascending">Position</th>
+      <th role="columnheader">Solution</th>
+      <th role="columnheader">APL Numbers</th>
+      <th role="columnheader">New/Update</th>
+      <th role="columnheader">Testing Status</th>
     </tr>
   </thead>
   <tbody>
   {% for psaal in site.data.fips201pacs-await-list %}
     <tr>
       <th scope="row" role="rowheader">{{ psaal.position }}</th>
-      <td data-sort-value="{{ psaal.solution }}">{{ psaal.solution }}</td>
-      <td data-sort-value="{{ psaal.aplnumbers }}">{{ psaal.aplnumbers }}</td>
-      <td data-sort-value="{{ psaal.state }}">{{ psaal.state }}</td>
+      <td>{{ psaal.solution }}</td>
+      <td>{{ psaal.aplnumbers }}</td>
+      <td>{{ psaal.state }}</td>
       <td data-sort-value="{{ psaal.teststatus }}">{{ psaal.teststatus }}</td>
     </tr>
   {% endfor %}
