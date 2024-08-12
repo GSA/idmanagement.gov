@@ -267,7 +267,7 @@ These CA certificates are actively issuing PIV , PIV-I and/or Derived PIV authen
 - Serial #: 6c64ace173da144034b6b67769838a4c
 - Validity: June 28, 2024 to June 28, 2034
 - SHA-1 Hash: 3b94eeab90e1d577f4892705a35abaa076d78849
-- CRL DP: [http://fedrootg2crl.managed.entrust.com/CRLs/FedIssuingG2CA.crl](http://fedrootg2crl.managed.entrust.com/CRLs/FedIssuingG2CA.crl){:target="_blank"}{:rel="noopener noreferrer"}
+- CRL DP: [http://fedrootg2crl.managed.entrust.com/CRLs/FedSSPIssuingCAG2.crl](http://fedrootg2crl.managed.entrust.com/CRLs/FedSSPIssuingCAG2.crl){:target="_blank"}{:rel="noopener noreferrer"}
 
 #### Entrust Managed Services SSP CA
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
