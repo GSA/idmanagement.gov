@@ -104,6 +104,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 - [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [IDFACTORS Readers]({{site.baseurl}}/docs/apl-10112-10113-idfactors.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-10092-96-10163-67-10186-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
@@ -117,21 +118,21 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
   </caption>
   <thead>
     <tr>
-      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">Position</th>
-      <th data-sortable scope="col" role="columnheader">Solution</th>
-      <th data-sortable scope="col" role="columnheader">APL Numbers</th>
-      <th data-sortable scope="col" role="columnheader">New/Update</th>
-      <th data-sortable scope="col" role="columnheader">Testing Status</th>
+      <th role="columnheader" aria-sort="ascending">Position</th>
+      <th role="columnheader">Solution</th>
+      <th role="columnheader">APL Numbers</th>
+      <th role="columnheader">New/Update</th>
+      <th role="columnheader">Testing Status</th>
     </tr>
   </thead>
   <tbody>
   {% for psaal in site.data.fips201pacs-await-list %}
     <tr>
       <th scope="row" role="rowheader">{{ psaal.position }}</th>
-      <td data-sort-value="{{ psaal.solution }}">{{ psaal.solution }}</td>
-      <td data-sort-value="{{ psaal.aplnumbers }}">{{ psaal.aplnumbers }}</td>
-      <td data-sort-value="{{ psaal.state }}">{{ psaal.state }}</td>
-      <td data-sort-value="{{ psaal.teststatus }}">{{ psaal.teststatus }}</td>
+      <td>{{ psaal.solution }}</td>
+      <td>{{ psaal.aplnumbers }}</td>
+      <td>{{ psaal.state }}</td>
+      <td>{{ psaal.teststatus }}</td>
     </tr>
   {% endfor %}
   </tbody>
