@@ -26,6 +26,20 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: August 6, 2024
+  change_type: CA Certificate Issuance
+  system: Entrust Managed PKI Federal Root CA G2
+  change_description: Entrust Managed PKI Federal Root CA G2 issued a renewed cross certificate to Entrust Managed PKI Federal Issuing CA G2 on June 28, 2024.
+  contact: support at entrust dot com 
+  ca_certificate_hash: 3b94eeab90e1d577f4892705a35abaa076d78849
+  ca_certificate_issuer: CN = Entrust Managed PKI Federal Root CA G2, OU = Certification Authorities, O = Entrust, C = US
+  ca_certificate_subject: CN = Entrust Managed PKI Federal Issuing CA G2, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://fedrootg2crl.managed.entrust.com/CRLs/FedRootG2CA.crl
+  aia_uri: http://fedrootg2crl.managed.entrust.com/AIA/CertsIssuedToFedRootCAG2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
 
 - notice_date: July 22, 2024
   change_type: Intent to Revoke CA Certificate
