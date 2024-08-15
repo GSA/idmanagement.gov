@@ -97,6 +97,7 @@ GEM
     tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
+    wdm (0.1.1)
     webrick (1.8.1)
     yell (2.2.2)
 
@@ -116,6 +117,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   tzinfo-data
+  wdm (~> 0.1.0)
   webrick
 
 BUNDLED WITH
