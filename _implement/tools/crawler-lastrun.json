@@ -8,7 +8,6 @@
         "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
         "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US",
         "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-        "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
         "common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
@@ -49,7 +48,6 @@
         "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-        "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US",
         "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:ECA Root CA 5,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
@@ -2993,54 +2991,6 @@
             }
         },
         {
-            "subject": "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US",
-            "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "serial-number": "36580706539538580600374127093589216343",
-            "akid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "skid": "99 6a 10 45 b9 9b 67 88 d2 c8 5a 80 82 f5 a1 2b 0f 66 1d 48",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "serial-number": "84526438388262659173869312777578696793",
-            "akid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "skid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "serial-number": "1370515962",
@@ -3803,7 +3753,6 @@
             "skid": "75 61 da 1f 31 92 6e 2e 2a 64 5e a3 65 19 85 65 80 e8 c7 2b",
             "status": "Certificate Valid and Chains to Common",
             "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer",
                 "result": "true",
                 "details": "CRL Only Validation"
             },
@@ -4143,18 +4092,6 @@
             }
         },
         {
-            "subject": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "issuer": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "serial-number": "175567204229783743591458183087529700129959",
-            "akid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
-            "skid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "status": "Certificate Valid, but no Path to Common",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Unable to build Path"
-            }
-        },
-        {
             "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "issuer": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
             "serial-number": "14251171306423",
@@ -4414,6 +4351,40 @@
             "pathbuilder-result": {
                 "result": "false",
                 "details": "Unable to build Path"
+            }
+        },
+        {
+            "subject": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
+            "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
+            "serial-number": "84526438388262659173869312777578696793",
+            "akid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
+            "skid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US:b85162663045bee50c571c23687ee64ff70b3ef7",
+            "validity-dates": {
+                "not-before": "2023-08-17 00:00:00+00:00",
+                "not-after": "2024-08-16 23:59:59+00:00"
+            }
+        },
+        {
+            "subject": "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US",
+            "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
+            "serial-number": "36580706539538580600374127093589216343",
+            "akid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
+            "skid": "99 6a 10 45 b9 9b 67 88 d2 c8 5a 80 82 f5 a1 2b 0f 66 1d 48",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US:b85162663045bee50c571c23687ee64ff70b3ef7",
+            "validity-dates": {
+                "not-before": "2023-08-17 00:00:00+00:00",
+                "not-after": "2024-08-16 23:59:59+00:00"
             }
         },
         {
@@ -4965,18 +4936,6 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
         ],
@@ -5322,12 +5281,6 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:Department of Veterans Affairs CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Veterans Affairs,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:DHS CA4,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Homeland Security,organization_name:U.S. Government,country_name:US"
         ],
         [
@@ -5354,6 +5307,12 @@
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
+            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
+            "organizational_unit_name:Department of Veterans Affairs CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Veterans Affairs,organization_name:U.S. Government,country_name:US"
         ]
     ]
 }
