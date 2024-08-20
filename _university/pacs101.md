@@ -821,6 +821,3 @@ Authentication certificate and key.
 22. <strong id="provisioning">Provisioning</strong> - The process of specifying for each identity both the credential used (for example, a PIV, CAC, or PIV-I card) and the privileges granted to access specific resources (for example, a particular facility, door, or access point), and ensuring that a complex set of rules is enforced.
 23. <strong id="sym-cak">SM-AUTH</strong> - A PIV authentication mechanism implemented by an elliptic curve key challenge/response protocol using the Secure Message key.
 24. <strong id="validation">Validation</strong> - The process of determining that an identity credential was legitimately issued and is still valid (the credential has not expired or been revoked).
-
----
-
