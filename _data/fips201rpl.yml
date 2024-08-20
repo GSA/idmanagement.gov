@@ -72,14 +72,14 @@
    reason: 'Not approved for FRTC 1.3.3'
    status: post
     
--   category: 'PACS Infrastructure'
-    supplier: 'Galaxy Control Systems'
-    nameProduct: 'System Galaxy Software'
-    numberProduct: '90-0600-20-#SD'
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10097'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
+# -   category: 'PACS Infrastructure'
+#     supplier: 'Galaxy Control Systems'
+#     nameProduct: 'System Galaxy Software'
+#     numberProduct: '90-0600-20-#SD'
+#     dateRemoval: 'Thursday, February 13, 2020'
+#     numberApl: '10097'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: post
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -89,15 +89,15 @@
     numberApl: '10098'
     reason: 'Not approved for FRTC 1.3.3'
     status: post
--
-    category: 'PACS Infrastructure'
-    supplier: 'Monitor Dynamics'
-    nameProduct: SafeNet
-    numberProduct: F50-101xx-SP4
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10024'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
+# -
+    # category: 'PACS Infrastructure'
+    # supplier: 'Monitor Dynamics'
+    # nameProduct: SafeNet
+    # numberProduct: F50-101xx-SP4
+    # dateRemoval: 'Thursday, February 13, 2020'
+    # numberApl: '10024'
+    # reason: 'Not approved for FRTC 1.3.3'
+    # status: post
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
@@ -107,15 +107,15 @@
     numberApl: '10025'
     reason: 'Not approved for FRTC 1.3.3'
     status: post
--
-    category: 'PACS Infrastructure'
-    supplier: BridgePoint
-    nameProduct: 'BridgePoint TrustZone PACS Software'
-    numberProduct: 67-32-0xxx
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10049'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: BridgePoint
+#     nameProduct: 'BridgePoint TrustZone PACS Software'
+#     numberProduct: 67-32-0xxx
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10049'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: post
 -
     category: 'PACS Validation System'
     supplier: BridgePoint
@@ -143,24 +143,24 @@
     numberApl: '10012'
     reason: 'Not approved for FRTC 1.3.3'
     status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: 'Johnson Controls'
-    nameProduct: 'P2000 Security Management System, Network Controller, 8-Door Reader Module, 2-Door Reader Module'
-    numberProduct: 'P2000, CK721-A, S300-DIN-RDR8S, S300-DIN-RDR2S-A'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10017'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: 'Secure Network Systems'
-    nameProduct: 'CRITSEC B100 Door Access Blade,CRITSEC Client Appliance,CRITSEC Master Appliance'
-    numberProduct: 'B100, CS-CU-5, CS-2000-32'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10040'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'Johnson Controls'
+#     nameProduct: 'P2000 Security Management System, Network Controller, 8-Door Reader Module, 2-Door Reader Module'
+#     numberProduct: 'P2000, CK721-A, S300-DIN-RDR8S, S300-DIN-RDR2S-A'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10017'
+#     reason: 'Not approved for FRTC 1.3.3'
+# #     status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'Secure Network Systems'
+#     nameProduct: 'CRITSEC B100 Door Access Blade,CRITSEC Client Appliance,CRITSEC Master Appliance'
+#     numberProduct: 'B100, CS-CU-5, CS-2000-32'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10040'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
 -
     category: 'PACS Validation System'
     supplier: 'Technology Industries'
@@ -179,23 +179,23 @@
     numberApl: '10066'
     reason: 'Not approved for FRTC 1.3.3'
 -
-    category: 'PACS Infrastructure'
-    supplier: 'The Will-Burt Company'
-    nameProduct: 'LINX Predator Elite Server Appliance, LINX Predator Elite Workstation Appliance, VIP-E Panel, LINX VIP Panel'
-    numberProduct: '5069705, 5069706, 5069706, 5069702'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10065'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: 'Johnson Controls/Tyco'
-    nameProduct: 'C*CURE 800 PACS Software'
-    numberProduct: CC800
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10011'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
+#     category: 'PACS Infrastructure'
+#     supplier: 'The Will-Burt Company'
+#     nameProduct: 'LINX Predator Elite Server Appliance, LINX Predator Elite Workstation Appliance, VIP-E Panel, LINX VIP Panel'
+#     numberProduct: '5069705, 5069706, 5069706, 5069702'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10065'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'Johnson Controls/Tyco'
+#     nameProduct: 'C*CURE 800 PACS Software'
+#     numberProduct: CC800
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10011'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
 -
     category: 'PIV Card'
     supplier: Gemalto
@@ -439,15 +439,15 @@
     numberApl: '424'
     reason: 'Not Compliant with FIPS 201-2'
     status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: Brivo
-    nameProduct: 'Brivo OnAir for Government'
-    numberProduct: B-OAG-RDR-1
-    dateRemoval: 'Saturday, March 18, 2017'
-    numberApl: '10073'
-    reason: 'Discontinued product'
-    status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: Brivo
+#     nameProduct: 'Brivo OnAir for Government'
+#     numberProduct: B-OAG-RDR-1
+#     dateRemoval: 'Saturday, March 18, 2017'
+#     numberApl: '10073'
+#     reason: 'Discontinued product'
+#     status: archive
 -
     category: 'PACS Validation System'
     supplier: 'HID Global'
