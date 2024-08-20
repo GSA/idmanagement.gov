@@ -9,50 +9,50 @@
   compliantwithtaa: Yes
   url: /docs/apl-1512-IDOne-cosmo8_2.pdf
 
-- productname: ID-One PIV v 2.4.0 on Cosmo V8.1 (EEPROM)
-  productnumber: 1501381 (applet in EEPROM)
-  category: PIV Card
-  supplier: IDEMIA
-  aplnumber: 1428
-  validdate: 08/15/2017
-  compliantwithtaa: Yes
-  url: /docs/apl-1428-idone-piv-240.pdf
+# - productname: ID-One PIV v 2.4.0 on Cosmo V8.1 (EEPROM)
+#   productnumber: 1501381 (applet in EEPROM)
+#   category: PIV Card
+#   supplier: IDEMIA
+#   aplnumber: 1428
+#   validdate: 08/15/2017
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1428-idone-piv-240.pdf
 
-- productname: ID-One PIV v 2.4.1 on Cosmo V8.1 (ROM)
-  productnumber: 1585242 (applet in ROM)
-  category: PIV Card
-  supplier: IDEMIA
-  aplnumber: 1428
-  validdate: 11/13/2017
-  compliantwithtaa: Yes
-  url: /docs/apl-1428-idone-piv.pdf
+# - productname: ID-One PIV v 2.4.1 on Cosmo V8.1 (ROM)
+#   productnumber: 1585242 (applet in ROM)
+#   category: PIV Card
+#   supplier: IDEMIA
+#   aplnumber: 1428
+#   validdate: 11/13/2017
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1428-idone-piv.pdf
 
-- productname: ID-One PIV v 2.4.1 on Cosmo V8.1 (EEPROM)
-  productnumber: 1501381 (applet in EEPROM)
-  category: PIV Card
-  supplier: IDEMIA
-  aplnumber: 1428
-  validdate: 11/13/2017
-  compliantwithtaa: Yes
-  url: /docs/apl-1428-idone-piv.pdf
+# - productname: ID-One PIV v 2.4.1 on Cosmo V8.1 (EEPROM)
+#   productnumber: 1501381 (applet in EEPROM)
+#   category: PIV Card
+#   supplier: IDEMIA
+#   aplnumber: 1428
+#   validdate: 11/13/2017
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1428-idone-piv.pdf
 
-- productname: ID-One PIV v 2.3.5 on Cosmo V8 (High Speed)
-  productnumber: 1276885-XS
-  category: PIV Card
-  supplier: Oberthur Technologies
-  aplnumber: 1355
-  validdate: 06/17/2015
-  compliantwithtaa: Yes
-  url: /docs/apl-1355-idone-piv.pdf
+# - productname: ID-One PIV v 2.3.5 on Cosmo V8 (High Speed)
+#   productnumber: 1276885-XS
+#   category: PIV Card
+#   supplier: Oberthur Technologies
+#   aplnumber: 1355
+#   validdate: 06/17/2015
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1355-idone-piv.pdf
 
-- productname: ID-One PIV v 2.3.5 on Cosmo V8
-  productnumber: 1276885
-  category: PIV Card
-  supplier: Oberthur Technologies
-  aplnumber: 1354
-  validdate: 06/17/2015
-  compliantwithtaa: Yes
-  url: /docs/apl-1354-idone-piv.pdf
+# - productname: ID-One PIV v 2.3.5 on Cosmo V8
+#   productnumber: 1276885
+#   category: PIV Card
+#   supplier: Oberthur Technologies
+#   aplnumber: 1354
+#   validdate: 06/17/2015
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1354-idone-piv.pdf
 
 - productname: IDEMIA Cosmo V8.0
   productnumber: 1340074
@@ -63,57 +63,57 @@
   compliantwithtaa: Yes
   url: /docs/apl-1511-idemia-cosmo.pdf
 
-- productname: HID Global Crescendo PIV
-  productnumber: 40030M-D14
-  category: PIV Card
-  supplier: HID Global
-  aplnumber: 1431
-  validdate: 01/24/2018
-  compliantwithtaa: Yes
-  url: /docs/apl-1431-hid-global.pdf
+# - productname: HID Global Crescendo PIV
+#   productnumber: 40030M-D14
+#   category: PIV Card
+#   supplier: HID Global
+#   aplnumber: 1431
+#   validdate: 01/24/2018
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1431-hid-global.pdf
 
-- productname: Gemalto TOP DL v2.1 with HID Global ActivID Applet Suite v2.7.4
-  productnumber: O1115095
-  category: PIV Card
-  supplier: Gemalto, Inc.
-  aplnumber: 1500
-  validdate: 08/03/2018
-  compliantwithtaa: Yes
-  url: /docs/apl-1500-gemalto-top.pdf
+# - productname: Gemalto TOP DL v2.1 with HID Global ActivID Applet Suite v2.7.4
+#   productnumber: O1115095
+#   category: PIV Card
+#   supplier: Gemalto, Inc.
+#   aplnumber: 1500
+#   validdate: 08/03/2018
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1500-gemalto-top.pdf
 
-- productname: Safenet IDPrime PIV v3.0
-  productnumber: O1138439
-  category: PIV Card
-  supplier: Gemalto, Inc.
-  aplnumber: 1510
-  validdate: 08/01/2019
-  compliantwithtaa: Yes
-  url: /docs/apl-1510-safenet-idprime.pdf
+# - productname: Safenet IDPrime PIV v3.0
+#   productnumber: O1138439
+#   category: PIV Card
+#   supplier: Gemalto, Inc.
+#   aplnumber: 1510
+#   validdate: 08/01/2019
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1510-safenet-idprime.pdf
 
-- productname: Gemalto IDPrime PIV v2.1
-  productnumber: O1110994
-  category: PIV Card
-  supplier: Gemalto, Inc.
-  aplnumber: 1430
-  validdate: 01/10/2018
-  compliantwithtaa: Yes
-  url: /docs/apl-1430-gemalto-idprime.pdf
+# - productname: Gemalto IDPrime PIV v2.1
+#   productnumber: O1110994
+#   category: PIV Card
+#   supplier: Gemalto, Inc.
+#   aplnumber: 1430
+#   validdate: 01/10/2018
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1430-gemalto-idprime.pdf
 
-- productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
-  productnumber: 50192769
-  category: PIV Card
-  supplier: Giesecke+Devrient
-  aplnumber: 1429
-  validdate: 11/09/2017
-  compliantwithtaa: Yes
-  url: /docs/apl-1429-gd-with-hid-applet.pdf
+# - productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
+#   productnumber: 50192769
+#   category: PIV Card
+#   supplier: Giesecke+Devrient
+#   aplnumber: 1429
+#   validdate: 11/09/2017
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1429-gd-with-hid-applet.pdf
 
-- productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with StarSign Applet v1.0
-  productnumber: 50254711
-  category: PIV Card
-  supplier: Giesecke+Devrient
-  aplnumber: 1502
-  validdate: 12/13/2018
-  compliantwithtaa: Yes
-  url: /docs/apl-1502-gd-mobile.pdf
+# - productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with StarSign Applet v1.0
+#   productnumber: 50254711
+#   category: PIV Card
+#   supplier: Giesecke+Devrient
+#   aplnumber: 1502
+#   validdate: 12/13/2018
+#   compliantwithtaa: Yes
+#   url: /docs/apl-1502-gd-mobile.pdf
   
