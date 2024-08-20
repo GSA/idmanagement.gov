@@ -814,11 +814,13 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 16. <strong id="interoperability">Interoperability</strong> - The quality of allowing any government facility or information system to verify a credential holder’s identity using the credentials on the PIV credential, regardless of the issuer.
 17. <strong id="occ-auth">OCC-AUTH</strong> - A two-factor authentication mechanism that uses secure messaging and an on-credential comparison of credential holder fingerprint(s).
 18. <strong id="physical-access-control-system">Physical Access Control System</strong> - An electronic system that controls the ability of people to enter a protected area, utilizing authentication and authorization at access control points.
-19.<strong id="pacs-alt-auth">PACS Alternative Authenticator - Derived PKI-CAK</strong> - A PIV authentication mechanism implemented on an approved alternative authenticator (token) using an asymmetric key challenge/response protocol of a Derived (NIST SP 800-157) Card Authentication certificate and key.
+19. <strong id="pacs-alt-auth">PACS Alternative Authenticator - Derived PKI-CAK</strong> - A PIV authentication mechanism implemented on an approved alternative authenticator (token) using an asymmetric key challenge/response protocol of a Derived (NIST SP 800-157) Card Authentication certificate and key.
 20. <strong id="pki-auth">PKI-AUTH</strong> - A PIV authentication mechanism implemented by an asymmetric key challenge/response protocol using the PIV
 Authentication certificate and key.
 21. <strong id="pki-cak">PKI-CAK (PACS)</strong> - A PIV authentication mechanism implemented by an asymmetric key challenge/response protocol using the Card Authentication certificate and key.
 22. <strong id="provisioning">Provisioning</strong> - The process of specifying for each identity both the credential used (for example, a PIV, CAC, or PIV-I card) and the privileges granted to access specific resources (for example, a particular facility, door, or access point), and ensuring that a complex set of rules is enforced.
 23. <strong id="sym-cak">SM-AUTH</strong> - A PIV authentication mechanism implemented by an elliptic curve key challenge/response protocol using the Secure Message key.
-24. <strong id="validation">Validation</strong> - The process of determining that an identity credential was legitimately issued and is still valid (the credential has not expired or been revoked). <br>
+24. <strong id="validation">Validation</strong> - The process of determining that an identity credential was legitimately issued and is still valid (the credential has not expired or been revoked).
+
+---
 
