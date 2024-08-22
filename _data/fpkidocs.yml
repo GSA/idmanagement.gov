@@ -5,6 +5,14 @@
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
 
+- category: FPKIMA Audit Letter
+  numberProposal: 2023
+  name: FPKIMA Audit Letter 2023
+  date: 8/20/2024
+  url: /docs/archived/fpki-fpkima-audit-letter-2023.pdf
+  status: post
+  remove: 8/20/2027
+
 - category: Common Certificate Policy
   numberProposal: 2.7
   name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.7
