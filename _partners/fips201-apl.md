@@ -240,7 +240,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
   </thead>
   <tbody>
    {% for rpl in site.data.fips201rpl %}
-        {% if rpl.category == category %}
+        {% if rpl.category == category and rpl.reason != "CMVP certificate is now historical" %}
           <tr>
             <th scope="row">{{ rpl.numberApl }}</th>
             <td data-sort-value="{{ rpl.supplier }}">{{ rpl.supplier }}</td>
