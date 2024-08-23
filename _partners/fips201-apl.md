@@ -255,3 +255,52 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 </table>
 <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 {% endfor %}<!--category-->
+
+
+
+<br>
+<!-- PACS and Validation Infrastructure Category -->
+{% for category in categories %}
+<table class="usa-table">
+  <caption>{{ category }} Category List</caption>
+  <thead>
+    <tr>
+        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
+    </tr>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
+      <th data-sortable scope="col" role="columnheader" >Supplier</th>
+      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
+      <th data-sortable scope="col" role="columnheader" >Product Number</th>
+      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
+      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
+    </tr> 
+   {% for fvi in site.data.fips201pacs-validation-inf %}
+        {% if fvi.category == category %}
+          <tr>
+            <th scope="row">{{ fvi.numberApl }}</th>
+            <td data-sort-value="{{ fvi.supplier }}">{{ fvi.supplier }}</td>
+            <td data-sort-value="{{ fvi.nameProduct}}">{{ fvi.nameProduct}}</td>
+            <td data-sort-value="{{ fvi.numberProduct }}">{{ fvi.numberProduct }}</td>
+            <td data-sort-value="{{ fvi.dateRemoval}}">{{ fvi.dateRemoval}}</td>
+            <td data-sort-value="{{ fvi.reason}}">{{ fvi.reason}}</td>
+          </tr>
+        {% endif %}
+    {% endfor %} <!-- fvi -->
+  </tbody>
+</table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
+{% endfor %}<!--category-->
+
+
+
+
+
+
+
+
+
+
+
+
+
