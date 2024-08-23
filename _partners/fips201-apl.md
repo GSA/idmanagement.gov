@@ -257,7 +257,61 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 {% endfor %}<!--category-->
 
 
+<br>
+{% for category in categories %}
+<table class="usa-table">
+  <caption>{{ category }} Category List</caption>
+  <thead>
+    <tr>
+        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
+    </tr>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
+      <th data-sortable scope="col" role="columnheader" >Supplier</th>
+      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
+      <th data-sortable scope="col" role="columnheader" >Product Number</th>
+      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
+      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
+    </tr>
+  </thead>
+  <tbody>
+   {% for rpl in site.data.fips201rpl %}
+        {% if rpl.category == category and rpl.reason == "CMVP certificate is now historical" %}
+          <tr>
+            <th scope="row">{{ rpl.numberApl }}</th>
+            <td data-sort-value="{{ rpl.supplier }}">{{ rpl.supplier }}</td>
+            <td data-sort-value="{{ rpl.nameProduct}}">{{ rpl.nameProduct}}</td>
+            <td data-sort-value="{{ rpl.numberProduct }}">{{ rpl.numberProduct }}</td>
+            <td data-sort-value="{{ rpl.dateRemoval}}">{{ rpl.dateRemoval}}</td>
+            <td data-sort-value="{{ rpl.reason}}">{{ rpl.reason}}</td>
+          </tr>
+        {% endif %}
+    {% endfor %} <!--rpl-->
+  </tbody>
+</table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
+{% endfor %}<!--category-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- old code -->
 <br>
 <!-- PACS and Validation Infrastructure Category -->
 {% for category in categories %}
