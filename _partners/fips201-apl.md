@@ -301,12 +301,12 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 
 
 
-
-
-
-
-
-
+{% assign categories = "" | split: "" %}
+{% for fvi in site.data.fips201pacs-validation-inf %}
+  {% assign category = fvi.category | strip %}
+  {% assign categories = categories | push: category | uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
 
 
 
