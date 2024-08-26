@@ -185,7 +185,7 @@ The FIPS 201 Evaluation Program no longer approves the purchase of legacy PIV ca
 
 Legacy PIV cards include the following:
 
-- Idemia ID-One PIV 2.4 on Cosmos v8.1 (EEPROM), part number 1501381, APL #1428
+<!-- - Idemia ID-One PIV 2.4 on Cosmos v8.1 (EEPROM), part number 1501381, APL #1428
 - Idemia ID-One PIV v 2.4.1 on Cosmo V8.1 (ROM), part number 1585242, APL #1428
 - Oberthur ID-One PIV v 2.3.5 on Cosmo V8 (High Speed), part number 1276885-XS, APL #1355
 - Oberthur ID-One PIV v 2.3.5 on Cosmo V8, part number 1276885, APL #1354
@@ -194,7 +194,37 @@ Legacy PIV cards include the following:
 - Gemalto Safenet IDPrime PIV v3.0, part number 01138439, APL #1510
 - Gemalto IDPrime PIV v.2.1, part number 01110994, APL #1430
 - Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5, part number 50192769, APL #1429
-- Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with StarSign Applet v1.0, part number 50254711, APL #1502
+- Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with StarSign Applet v1.0, part number 50254711, APL #1502 -->
+
+<table class="usa-table">
+  <caption>Legacy PIV Card List</caption>
+  <thead>
+    <tr>
+        <th scope="col" role="columnheader" colspan="6"><b>Legacy PIV Card Category</b></th>
+    </tr>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
+      <th data-sortable scope="col" role="columnheader" >Supplier</th>
+      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
+      <th data-sortable scope="col" role="columnheader" >Product Number</th>
+      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
+      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
+    </tr> 
+  </thead>
+  <tbody> 
+   {% for lpiv in site.data.fips201-legacy-piv %}
+          <tr>
+            <th scope="row">{{ lpiv.numberApl }}</th>
+            <td data-sort-value="{{ lpiv.supplier }}">{{ lpiv.supplier }}</td>
+            <td data-sort-value="{{ lpiv.nameProduct}}">{{ lpiv.nameProduct}}</td>
+            <td data-sort-value="{{ lpiv.numberProduct }}">{{ lpiv.numberProduct }}</td>
+            <td data-sort-value="{{ lpiv.dateRemoval}}">{{ lpiv.dateRemoval}}</td>
+            <td data-sort-value="{{ lpiv.reason}}">{{ lpiv.reason}}</td>
+          </tr>
+    {% endfor %} 
+  </tbody>
+</table> 
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 
 
 Agencies procuring cardstock from the legacy list assume all risks associated with its use.

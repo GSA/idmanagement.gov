@@ -1,0 +1,114 @@
+# fips201-legacy-piv.yml
+# Created: 08/26/2024 by Clayton
+# purpose: to move piv cards to legacy per Matt
+# Note: items are listed as is, no category sorting
+#
+# Format of record
+# - category: ''
+#   supplier: ''
+#   nameProduct: ''
+#   numberProduct: ''
+#   dateRemoval: ''
+#   numberApl: ''
+#   reason: ''
+#   status: 
+
+- category: 'PIV Card'
+  supplier: 'Idemia'
+  nameProduct: 'ID-One PIV v2.4 on Cosmos V8.1 (EEPROM)'
+  numberProduct: '1501381'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1428'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Idemia'
+  nameProduct: 'ID-One PIV v2.4.1 on Cosmo V8.1 (ROM)'
+  numberProduct: '1585242'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1428'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Oberthur'
+  nameProduct: 'ID-One PIV v2.3.5 on Cosmo V8 (High Speed)'
+  numberProduct: '1276885-XS'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1355'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Oberthur'
+  nameProduct: 'ID-One PIV v2.3.5 on Cosmo V8'
+  numberProduct: '1276885'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1354'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'HID'
+  nameProduct: 'HID Global Crescendo PIV'
+  numberProduct: '40030M-D14'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1431'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Gemalto'
+  nameProduct: 'Gemalto TOP DL v2.1 with HID Global ActivID Applet Suite v2.7.4'
+  numberProduct: 'O1115095'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1500'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Gemalto'
+  nameProduct: 'Safenet IDPrime PIV v3.0'
+  numberProduct: 'O1138439'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1510'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Gemalto'
+  nameProduct: 'IDPrime PIV v.2.1'
+  numberProduct: 'O1110994'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1430'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Giesecke + Devrient Mobile Security'
+  nameProduct: 'SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5'
+  numberProduct: '50192769'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1429'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Giesecke + Devrient Mobile Security'
+  nameProduct: 'SmartCafe Expert 7.0 with StarSign Applet v1.0'
+  numberProduct: '50254711'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1502'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
