@@ -181,7 +181,7 @@ Tri-Interface cards are not approved for federal government PIV or CAC card use,
 
 ## Legacy PIV Cards
 
-The FIPS 201 Evaluation Program no longer approves the purchase of legacy PIV cards. Any cardstock designated as “legacy” is placed on this legacy list for three (3) years and then placed on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list)for three (3) years. However, some federal agencies still need to procure the legacy cardstock while upgrading existing systems. Agencies must stop using cardstock on the legacy list by June 30, 2027.
+The FIPS 201 Evaluation Program no longer approves the purchase of legacy PIV cards. Any cardstock designated as “legacy” is placed on this legacy list for three (3) years and then placed on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list) for three (3) years. However, some federal agencies still need to procure the legacy cardstock while upgrading existing systems. Agencies must stop using cardstock on the legacy list by June 30, 2027.
 
 Legacy PIV cards include the following:
 
@@ -212,9 +212,7 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 
 ## Removed Product List
 
-
-
-The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were once on the Approved Products List but are no longer approved for government procurement. Due to security concerns, products on the RPL are not recommended for government acquisition. Products will be removed from the RPL after 3 years.
+The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were once on the Approved Products List but are no longer approved for government procurement. Due to security concerns, products on the RPL are not recommended for government acquisition.  Products will be removed from the RPL after 3 years of the removal date.
 
 <br>
 {% assign categories = "" | split: "" %}
