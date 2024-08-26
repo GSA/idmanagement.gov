@@ -212,6 +212,11 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 
 ## Removed Product List
 
+
+
+The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were once on the Approved Products List but are no longer approved for government procurement. Due to security concerns, products on the RPL are not recommended for government acquisition. Products will be removed from the RPL after 3 years.
+
+<br>
 {% assign categories = "" | split: "" %}
 {% for rpl in site.data.fips201rpl %}
   {% assign category = rpl.category | strip %}
@@ -219,12 +224,9 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were once on the Approved Products List but are no longer approved for government procurement. Due to security concerns, products on the RPL are not recommended for government acquisition. Products will be removed from the RPL after 3 years.
-
-<br>
 {% for category in categories %}
 <table class="usa-table">
-  <caption>{{ category }} Category List</caption>
+  <caption> {{ category }} List</caption>
   <thead>
     <tr>
         <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
@@ -238,68 +240,27 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
       <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
     </tr>
   </thead>
-  <tbody>
-   {% for rpl in site.data.fips201rpl %}
-        {% if category == "PACS Validation System" %}
-          <tr>
-            <th scope="row">{{ rpl.numberApl }}</th>
-            <td data-sort-value="{{ rpl.supplier }}">{{ rpl.supplier }}</td>
-            <td data-sort-value="{{ rpl.nameProduct}}">{{ rpl.nameProduct}}</td>
-            <td data-sort-value="{{ rpl.numberProduct }}">{{ rpl.numberProduct }}</td>
-            <td data-sort-value="{{ rpl.dateRemoval}}">{{ rpl.dateRemoval}}</td>
-            <td data-sort-value="{{ rpl.reason}}">{{ rpl.reason}}</td>
-          </tr>
-        {% endif %}
-    {% endfor %} <!--rpl-->
+  <tbody> 
+  {% for rpln in site.data.fips201rpl %}
+    {% if rpln.category == category %}          
+            <tr>
+              <th scope="row">{{ rpln.numberApl }}</th>
+              <td data-sort-value="{{ rpln.supplier }}">{{ rpln.supplier }}</td>
+              <td data-sort-value="{{ rpln.nameProduct}}">{{ rpln.nameProduct}}</td>
+              <td data-sort-value="{{ rpln.numberProduct }}">{{ rpln.numberProduct }}</td>
+              <td data-sort-value="{{ rpln.dateRemoval}}">{{ rpln.dateRemoval}}</td>
+              <td data-sort-value="{{ rpln.reason}}">{{ rpln.reason}}</td>
+            </tr>
+    {% endif %}
+  {% endfor %}
   </tbody>
 </table>
 <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
-{% endfor %}<!--category-->
+{% endfor %}
 
-
-<br>
-{% for category in categories %}
-<table class="usa-table">
-  <caption>{{ category }} Category List</caption>
-  <thead>
-    <tr>
-        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
-    </tr>
-    <tr>
-      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
-      <th data-sortable scope="col" role="columnheader" >Supplier</th>
-      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
-      <th data-sortable scope="col" role="columnheader" >Product Number</th>
-      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
-      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
-    </tr>
-  </thead>
-  <tbody>
-   {% for rpl in site.data.fips201rpl %}
-        {% if rpl.category == category and rpl.reason == "CMVP certificate is now historical" %}
-          <tr>
-            <th scope="row">{{ rpl.numberApl }}</th>
-            <td data-sort-value="{{ rpl.supplier }}">{{ rpl.supplier }}</td>
-            <td data-sort-value="{{ rpl.nameProduct}}">{{ rpl.nameProduct}}</td>
-            <td data-sort-value="{{ rpl.numberProduct }}">{{ rpl.numberProduct }}</td>
-            <td data-sort-value="{{ rpl.dateRemoval}}">{{ rpl.dateRemoval}}</td>
-            <td data-sort-value="{{ rpl.reason}}">{{ rpl.reason}}</td>
-          </tr>
-        {% endif %}
-    {% endfor %} <!--rpl-->
-  </tbody>
-</table>
-<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
-{% endfor %}<!--category-->
-
-
-
-
-
-
-
-
-
+<!-- Empty table initially - CJB -->
+<!-- New Section added 08/26/2024 -->
+<!-- PACS and Validation Infrastructure Category -->
 
 {% assign categories = "" | split: "" %}
 {% for fvi in site.data.fips201pacs-validation-inf %}
@@ -308,15 +269,9 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-
-
-
-<!-- old code -->
-<br>
-<!-- PACS and Validation Infrastructure Category -->
 {% for category in categories %}
 <table class="usa-table">
-  <caption>{{ category }} Category List</caption>
+  <caption>{{ category }} List</caption>
   <thead>
     <tr>
         <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
@@ -329,6 +284,8 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
       <th data-sortable scope="col" role="columnheader" >Removal Date</th>
       <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
     </tr> 
+  </thead>
+  <tbody> 
    {% for fvi in site.data.fips201pacs-validation-inf %}
         {% if fvi.category == category %}
           <tr>
@@ -340,13 +297,11 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
             <td data-sort-value="{{ fvi.reason}}">{{ fvi.reason}}</td>
           </tr>
         {% endif %}
-    {% endfor %} <!-- fvi -->
+    {% endfor %} 
   </tbody>
-</table>
+</table> 
 <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
-{% endfor %}<!--category-->
-
-
+{% endfor %}
 
 
 
