@@ -28,8 +28,8 @@
     status: post
     
 -   category: 'PACS Infrastructure'
-    supplier: 'Amag Symmetry Professional V8.1'
-    nameProduct: 'Amag Symmetry'
+    supplier: 'AMAG Symmetry Professional V8.1'
+    nameProduct: 'AMAG Symmetry'
     numberProduct: 'PRO-PLAT-v8.1-HSE'
     dateRemoval: 'Thursday, June 9, 2022'
     numberApl: '10087'
