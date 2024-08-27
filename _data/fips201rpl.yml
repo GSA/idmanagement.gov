@@ -75,7 +75,7 @@
 
 # Added PAC Validation back to list per Sutapa 
 # for correct [a-z] listing of categories.
-- category: 'PACS Validation Infrastructure'
+- category: 'PACS and Validation Infrastructure'
   supplier: '---'
   nameProduct: '---'
   numberProduct: '---'
