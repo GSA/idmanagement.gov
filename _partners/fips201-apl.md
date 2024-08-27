@@ -207,7 +207,7 @@ Legacy PIV cards include the following:
       <th data-sortable scope="col" role="columnheader" >Supplier</th>
       <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
       <th data-sortable scope="col" role="columnheader" >Product Number</th>
-      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
+      <th data-sortable scope="col" role="columnheader" >Legacy Date</th>
       <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
     </tr> 
   </thead>
@@ -229,7 +229,7 @@ Legacy PIV cards include the following:
 
 Agencies procuring cardstock from the legacy list assume all risks associated with its use.
 
-Suppose your agency needs to purchase cardstock from this legacy list. In that case, you must submit an Assumption of Risk Memorandum (memo) from the agency's Chief Information Officer(s) to the General Services Administration (GSA). The memo must contain the following information:
+If your agency needs to purchase cardstock from this legacy list. In that case, you must submit an Assumption of Risk Memorandum (memo) from the agency's Chief Information Officer(s) to the General Services Administration (GSA). The memo must contain the following information:
 
 - Acknowledgement of the assumption of all associated security risks;
 - Acknowledgement of non-compliance with NIST standards;
