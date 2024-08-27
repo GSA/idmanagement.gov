@@ -81,6 +81,7 @@
   numberApl: '---'
   reason: '---'
   status: '---'
+  system: 
 
 # Added PAC Validation back to list per Sutapa 
 # for correct [a-z] listing of categories.
@@ -92,7 +93,7 @@
   numberApl: '---'
   reason: '---'
   status: '---'
-  system: '13.02'
+  system: 13.02
 
 # - category: 'PIV Card'
 #   supplier: 'Idemia'
