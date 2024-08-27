@@ -257,7 +257,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
   <caption> {{ category }} List</caption>
   <thead>
     <tr>
-        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
+        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b> ( v{{ rpl.system }} )</th>
     </tr>
     <tr>
       <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
@@ -274,10 +274,10 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
             <tr>
               <th scope="row">{{ rpln.numberApl }}</th>
               <td data-sort-value="{{ rpln.supplier }}">{{ rpln.supplier }}</td>
-              <td data-sort-value="{{ rpln.nameProduct}}">{{ rpln.nameProduct}}</td>
+              <td data-sort-value="{{ rpln.nameProduct }}">{{ rpln.nameProduct}}</td>
               <td data-sort-value="{{ rpln.numberProduct }}">{{ rpln.numberProduct }}</td>
-              <td data-sort-value="{{ rpln.dateRemoval}}">{{ rpln.dateRemoval}}</td>
-              <td data-sort-value="{{ rpln.reason}}">{{ rpln.reason}}</td>
+              <td data-sort-value="{{ rpln.dateRemoval }}">{{ rpln.dateRemoval}}</td>
+              <td data-sort-value="{{ rpln.reason }}">{{ rpln.reason}}</td>
             </tr>
     {% endif %}
   {% endfor %}
