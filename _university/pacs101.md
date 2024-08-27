@@ -765,7 +765,7 @@ NIST SP 800-207, ["Zero Trust Architecture"](https://nvlpubs.nist.gov/nistpubs/S
 
 [_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_]({{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}{:rel="noopener noreferrer"}, v1.1.0, GSA, February 24, 2015
 
-[_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, 2020 Edition
+[_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/resources-tools/resources/isc-best-practices-facility-access-control){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, 2020 Edition
 
 [_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/system/files?file=Guide-to-GSA-PACS-An-Ordering-Guide-June-12-2024.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, June 2024
 
