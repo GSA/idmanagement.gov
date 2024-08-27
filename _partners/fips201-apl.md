@@ -257,7 +257,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
   <caption> {{ category }} Category List</caption>
     {% for rplsys in site.data.fips201rpl %}
       {% if rplsys.category == category %}
-        {% assign system = rplsys %}
+        {% assign system = rplsys.system %}
       {% endif %}
     {% endfor %}
   <thead>
