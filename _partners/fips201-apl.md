@@ -262,7 +262,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
     {% endfor %}
   <thead>
     <tr>
-        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b> ( v{{ system }} )</th>
+        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b> {% if system %}( v{{ system }} ){% endif %}</th>
     </tr>
     <tr>
       <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
