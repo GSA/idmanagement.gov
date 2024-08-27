@@ -725,8 +725,6 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 
 ## Regulations
 
-[_Federal Acquisition Regulation (FAR)_](https://www.acquisition.gov/browsefar){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-
 [_Federal Acquisition Regulation (FAR)_](https://www.acquisition.gov/browsefar){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, requirement to procure PACS for GSA FIPS 201 EP APL
 
 ## Standards
@@ -777,7 +775,7 @@ NIST SP 800-207, ["Zero Trust Architecture"](https://nvlpubs.nist.gov/nistpubs/S
 
 [_Personal Identity Verification Interoperable 101_]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"}, Version 2.1, April 2022
 
-[_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/2024-07/The_Risk_Management_Process_2024_Edition.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, ISC, 23rd Edition, 2021
+[_The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard_](https://www.cisa.gov/sites/default/files/2024-07/The_Risk_Management_Process_2024_Edition.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, ISC, 2024 Edition, July 2024
 
 [_Security Control Overlay of Special Publication 800-53 Revision 5: Security Controls for Electronic Physical Access Control Systems (ePACS)_]({{site.baseurl}}/docs/pacs-800-53-overlay.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Version 1.0, December 2020
 
