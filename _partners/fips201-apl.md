@@ -254,7 +254,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 
 {% for category in categories %}
 <table class="usa-table">
-  <caption> {{ category }} List</caption>
+  <caption> {{ category }} Category List</caption>
   <thead>
     <tr>
         <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b> ( v{{ rpl.system }} )</th>
