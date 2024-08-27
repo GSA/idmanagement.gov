@@ -73,6 +73,17 @@
   reason: '---'
   status: '---'
 
+# Added PAC Validation back to list per Sutapa 
+# for correct [a-z] listing of categories.
+- category: 'PACS Validation Infrastructure'
+  supplier: '---'
+  nameProduct: '---'
+  numberProduct: '---'
+  dateRemoval: '---'
+  numberApl: '---'
+  reason: '---'
+  status: '---'
+
 # - category: 'PIV Card'
 #   supplier: 'Idemia'
 #   nameProduct: 'ID-One PIV v2.4 on Cosmos V8.1 (EEPROM)'
