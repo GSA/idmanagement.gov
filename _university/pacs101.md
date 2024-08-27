@@ -769,7 +769,7 @@ NIST SP 800-207, ["Zero Trust Architecture"](https://nvlpubs.nist.gov/nistpubs/S
 
 [_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, 2020 Edition
 
-[_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/system/files?file=Guide-to-GSA-PACS-An-Ordering-Guide-June-12-2024.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, January 2021
+[_PACS Customer Ordering Guide (v2.0)_](https://www.gsa.gov/system/files?file=Guide-to-GSA-PACS-An-Ordering-Guide-June-12-2024.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, June 2024
 
 [_Personal Identity Verification (PIV) in Enterprise Physical Access Control Systems (E-PACS)_]({{site.baseurl}}/docs/pacs-piv-epacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}, Interagency Security Committee (ISC), Version 3.0, March 26, 2014
 
