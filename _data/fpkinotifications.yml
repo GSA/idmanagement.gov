@@ -26,6 +26,36 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: August 26, 2024
+  change_type: Intent to Renew CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to perform a certificate renewal to Entrust Managed Services NFI Root CA between 09/11/2024 and 09/18/2024.  The current certificate is expiring 11/03/2024.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU = Entrust Managed Services NFI Root CA, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 22, 2024
+  change_type: CA Certificate Revocation
+  system: Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 has revoked the DirectTrust Identity Bridge CA on August 22, 2024.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ddd7246c86b2e0a3ac2fc7a7dbb7430b935eba2f
+  ca_certificate_issuer: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = DirectTrust Identity Bridge CA, OU = Certification Authorities, O = DirectTrust.org, inc., C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crlhttp://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.makeidentitysafe.com/issuedby-sibca.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: August 15, 2024
   change_type: CA Certificate Issuance
   system: TSCP SHA256 Bridge CA
