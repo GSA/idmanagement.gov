@@ -547,7 +547,7 @@ Agency staff are encouraged to participate in steps that list their roles in **b
 	<li>Buy the products and additional services you need by using the <a class="usa-link usa-link--external" href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology" target="_blank" rel="noopener noreferrer">GSA Multiple Award Schedule (MAS)</a>. Your chosen integrator will help your agency choose the right PACS products and services according to your agency’s preferred GSA purchasing vehicle(s).</li>
 	</ul>
 	</li>
-	<li>Want to learn more about GSA Schedules? Training is available: <a class="usa-link usa-link--external" href="https://www.cisa.gov/resources-tools/programs/continuous-diagnostics-and-mitigation-cdm-program/program-approved-products-list-apl" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at NCSCcustomer dot service at gsa dot gov or call 1-800-488-3111.</li>
+	<li>Want to learn more about GSA Schedules? Training is available: <a class="usa-link usa-link--external" href="https://icatalog.dau.edu/onlinecatalog/tabnavlas.aspx" target="_blank" rel="noopener noreferrer">On-demand GSA Schedules Training</a>. For help with GSA Schedules, email the GSA National Customer Service Center at <a href="mailto:NCSCcustomer.service@gsa.gov">NCSCcustomer.service@gsa.gov</a> or call 1-800-488-3111.</li>
   </ul>
   </td>
 </tr>
