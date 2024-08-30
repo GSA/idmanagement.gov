@@ -125,16 +125,6 @@ Agencies can use this playbook
 3. Expand current PIV infrastructure for alternative phishing resistant credential
 4. Integrate centralized identity management system
 
-This playbook also outlines a four-step process that an agency can utilize to implement identify lifecycle management:
-
-1. Document the purpose and goals of identity lifecycle management in an agency comprehensive ICAM policy.
-2. Architect a centralized identity solution based on either using a virtual directory or an identity governance and administration (IGA) tool.
-3. Create a master user record that aggregates digital identity attributes, entitlements, accounts, credentials, and other information.
-4. Integrate identity lifecycle management into agency enterprise services.
-5. Implement federation across agencies with NIST approved alternative phishing resistant credentials
-
-This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their identity management process to include alternative phishing resistant and remote identity vetting processes. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning.
-
 The ILM playbook also outlines a four-step process that an agency can utilize to implement identify lifecycle management:
 
 1. Document the purpose and goals of identity lifecycle management in an agency policy.
