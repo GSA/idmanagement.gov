@@ -1,9 +1,25 @@
-# announcements for FIPS 201 Evaluation Program
+# Used on page: https://www.idmanagement.gov/fips201ep/
+# Announcements for FIPS 201 Evaluation Program
 # Set status to Archive after 4 years.
 # If announcement content is full summary, leave 'url' blank, set soure to 'IDManagement.gov' and doctype = 'Announcement'
 # HTML tags can be included inline with summary information.
  
-- name: "GSA FICAM Test Lab’s 2023 Holiday Schedule" 
+- name: "PACS Application Package - Updated Equipment Table GSA PACS Application v0.3.0 (MS Excel, August 2024) (Mandatory)" 
+  summary: "<p>In an effort to streamline and accurately capture the components and to allow the same table to be used across 
+  multiple forms for the solution being submitted for evaluation, the FIPS 201 Evaluation Program has updated the Equipment Table 
+  spreadsheet to be broken out by individual tabs for 13.01 PACS Infrastructure, 13.01 Validation System, 13.01 PACS Readers, 13.02 
+  PACS and Validation Infrastructure and 13.02 PACS Readers. Vendors are requested to use this updated spreadsheet as part of their 
+  application submission package moving forward. Please feel free to reach out to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a> 
+  with any questions or concerns.</p>"
+  pubdate: August 30, 2024
+  url: 
+  source: IDManagement.gov
+  target: _blank
+  expanded: false
+  doctype: Announcement
+  status: Active
+
+- name: "GSA FICAM Test Lab's 2023 Holiday Schedule" 
   summary: "<p>The GSA FICAM Testing Lab located in Reston, VA will be operating on limited in-person availability from December 20, 2023, through January 2, 2024, and as such will not be
 scheduling any appointments during that period. Vendors are requested to schedule an appointment by December 15, 2023, so that the lab personnel can make every effort to provide
 availability and assistance before December 20, 2023. <br><br>Your patience is greatly appreciated. <br>Thank you.</p>"
