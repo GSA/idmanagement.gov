@@ -153,7 +153,7 @@ There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you 
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Externally Issued PIV Revocation Resources</h4>
     <p class="usa-alert__text">
-     You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information from externally issued <a class="usa-link usa-link--external" href="(https://www.idmanagement.gov/fpki/notifications/#active-issuing-ca-certificate-details" target="_blank">PIV CAs</a>.
+     You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information from externally issued <a class="usa-link usa-link--external" href="https://www.idmanagement.gov/fpki/notifications/#active-issuing-ca-certificate-details" target="_blank">PIV CAs</a>.
     </p>
   </div>
 </div>
