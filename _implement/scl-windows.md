@@ -206,7 +206,7 @@ Domain controller certificates must be issued with a set of specific extensions 
 
 - It is also recommended to include a non-critical Security Identifier (ObjectSID) extention in your DC certificates, for example:
 
-            1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
+            1.3.6.1.4.1.311.25.2=S-1-5-domain-516
 
 ## Issue Domain Controller Certificates
 
@@ -222,7 +222,7 @@ If you do have a local enterprise CA, [here are some tips](#step-7---local-certi
 
 Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide]({{site.baseurl}}/implement/trust-fcpca/#step-2---distribute-to-operating-systems).
 
-{% include alert-info.html heading = "Mutual Trust" content="Note that both the client machine and domain controller trust stores must be configured for mutual authentication. As a result, the domain controller issuging and root CA certificates needs to be included in the client trust store and the client PIV authentication issuing, intermediate and root certifiates need to be able to be trusted by the domain controller." %}  
+{% include alert-info.html heading = "Mutual Trust" content="Note that both the client machine and domain controller trust stores must be configured for mutual authentication. As a result, the domain controller issuing and root CA certificates needs to be included in the client trust store and the client PIV authentication issuing, intermediate and root certifiates need to be able to be trusted by the domain controller." %}  
 
 ## Step 4 - Account Linking
 
