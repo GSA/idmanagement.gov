@@ -33,6 +33,15 @@ subnav:
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Sept 2024 - Update to Microsoft Network Authentication Issue</h4>
+    <p class="usa-alert__text">
+      As of September 10th 2024, Microsoft has released a work around solution for Active Directory network authentication issue that resulted from their June 2022 AD patches impacting some PIV authenications.  This recent patch applies to Windows Server 2019 and later and includes a mechanism for continued support of what are considered "weak" identifiers asserted by PIV or other trusted network authentication certificates (e.g., UPN, X509RFC822, or X509IssuerSubject) and mapped to AD user accounts.  This patch provides the ability for AD admins to add registry keys that include what is being termed a "Triple Mapping" that allows the domain controller to determine if the certificate is issued from a trusted Certification Authority (CA), and if the certificate asserts an acceptable policy OID, before defining acceptable AD user identifiers.  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>"
+    </p>
+  </div>
+</div>
+
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Dec 2022 - Update to Microsoft Network Authentication Issue</h4>
     <p class="usa-alert__text">
       The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
