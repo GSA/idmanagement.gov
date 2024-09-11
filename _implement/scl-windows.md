@@ -35,28 +35,13 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Sept 2024 - Update to Microsoft Network Authentication Issue</h4>
     <p class="usa-alert__text">
-      As of September 10th 2024, Microsoft has released a work around solution for Active Directory network authentication issue that resulted from their May 2022 AD patches impacting some PIV authenication transactions.  This recent patch applies to Windows Server 2019 and later and includes a mechanism for continued support of what are considered "weak" identifiers asserted by PIV or other trusted network authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  This patch provides the ability for AD admins to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if the certificate is issued from a trusted Certification Authority (CA), and if the certificate asserts an acceptable policy OID, before defining acceptable AD user identifiers.  You can read more about these AD changes and work arounds in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Other interim solutions that have been in place since June 2022, such as compatibility mode for use of weak identifiers, are still planned for retirement on Feburary 11, 2025 when full enforcement mode for strong identifiers goes into effect.
+      As of September 10th 2024, Microsoft has released a solution for Active Directory network authentication issues resulting from the May 2022 AD patches that impacted some PIV network authenications. This patch applies to Windows Server 2019 and later and includes a mechanism for support of what are considered "weak" identifiers asserted by PIV authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  AD administrators now have the ability to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if an authentication certificate is issued from a trusted Certification Authority (CA), and if it asserts an acceptable policy OID, before defining acceptable identifiers which are then considered "strong."  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Full enforcement mode for use of strong identifiers, is still planned to go into effect on Feburary 11, 2025, when any implementers still using weak identifiers for PIV will have to establish the "Policy Tuble" mapping solution.
     </p>
   </div>
 </div>
 
-<div class="usa-alert usa-alert--error" role="alert">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Dec 2022 - Update to Microsoft Network Authentication Issue</h4>
-    <p class="usa-alert__text">
-      The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
-    </p>
-  </div>
-</div>
+{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a "strong" altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action to continue support for network PIV authenticaiton." %}
 
-<div class="usa-alert usa-alert--error" role="alert">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">May 2022 - Known PIV Network Authentication Issue</h4>
-    <p class="usa-alert__text">
-      Some PIV-based authentication to Microsoft Domain Controllers are impacted by May 2022 Windows server patches.  If you encounter these PIV network logon issues, please review the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> which is supported by the following <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> page.  Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
-    </p>
-  </div>
-</div>
 
 ## Introduction
 
@@ -219,6 +204,12 @@ Domain controller certificates must be issued with a set of specific extensions 
             Other Name: 1.3.6.1.4.1.311.25.1 = ac 4b 29 06 bb d6 5d 4f e3 9c 4c ab c3 6a 55 d9
 
     > The domain controller's certificate must be installed in the domain controller's local computer's **_personal certificate store_**.
+
+{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are credentialed via Active Directory Certificate Services (ADCS) which may be operating from an "Only Locally Trusted" CA heirarchy. ADCS implmenters will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent AD changes. For those AD implmeenters who recieve DC certifcates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
+
+- It is also recommended to include a non-critical Security Identifier (ObjectSID) extention in your DC certificates, for example:
+
+            1.3.6.1.4.1.311.25.2=S-1-5-domain-516
 
 ## Issue Domain Controller Certificates
 
