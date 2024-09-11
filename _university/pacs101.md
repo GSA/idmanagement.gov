@@ -99,7 +99,7 @@ Agencies that use standalone PACSs have encountered operational challenges:
 * Agencies with many standalone PACSs see increased human error, such as data entry errors.
 
 
-{% include alert-no-icon-success.html content="Can agencies centrally control physical access for most or all of their sites?  Yes. The answer is to implement an Enterprise Physical Access Control System." %}
+{% include alert-no-icon.html content="Can agencies centrally control physical access for most or all of their sites?  Yes. The answer is to implement an Enterprise Physical Access Control System." %}
 
 ## Enterprise PACS
 
