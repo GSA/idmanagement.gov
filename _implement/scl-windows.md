@@ -72,8 +72,8 @@ Check the following items **before** reviewing these network guides and lessons 
 
 1. Users have PIV credentials and PIV card readers.
 1. You are using Microsoft Active Directory to manage your Windows network.
-1. Domain Controllers are Microsoft 2012 or newer.
-1. User workstations **are joined** to your network and are Windows 8 or Windows 10-based.
+1. Domain Controllers are running Microsoft Windows Server 2019 or newer.
+1. User workstations **are joined** to your network and are Windows 8 or newer.
 
 ## Configuration Checklist
 
@@ -91,7 +91,7 @@ There are five additional guides:
 7. [Local Certification Authority](#step-7---local-certification-authority)
 8. [Authentication Assurance](#step-8---authentication-assurance)
 
-We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
+We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring for other operating systems.  
 
 Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
 
@@ -163,6 +163,18 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 Lightweight Directory Application Protocol (LDAP) for retrieving information is not preferred and has been increasingly deprecated; therefore, LDAP is not included.
 
 There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you have users with PIV credentials from other agencies or partners, identifying all the URLs to verify against your network configurations will be more complex.
+
+{% include alert-info.html heading = "Externally Issued PIV Revocation Checking Resources" content="You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information from externally issued PIV CAs." %}
+
+<div class="usa-alert usa-alert--success">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Externally Issued PIV Revocation Resources</h4>
+    <p class="usa-alert__text">
+     You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information from externally issued PIV CAs.   
+      <a class="usa-link usa-link--external" href="(https://www.idmanagement.gov/fpki/notifications/#active-issuing-ca-certificate-details" target="_blank">PIV CAs</a>
+    </p>
+  </div>
+</div>
 
 ## Web Services for the Federal Public Key Infrastructure
 
