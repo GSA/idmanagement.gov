@@ -138,7 +138,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web Services for Validating PIV Certificates
 
-[Revocation]({{site.baseurl}}/university/pki/#revocation-checking)) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/university/piv/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
+[Revocation]({{site.baseurl}}/university/pki/#revocation-checking) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/university/piv/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|
@@ -268,23 +268,32 @@ First, you need to link each user's PIV Authentication certificate to their doma
 
 Adding altSecurityIdentities attributes **will not** break existing UPN account linking or cause smart card logon to fail. It's possible to plan your transition carefully and to take your time populating the altSecurityIdentities attribute for domain users. 
 
-There are six mapping options to choose from, but most organizations use **Issuer and Subject**.
+There are six mapping options to choose from; however, Microsoft considers 3 of these to be "weak" identifiers that will either need to be migrated to a "strong" identifier or Policy Tuble mappings will need to be implmented to allow for use of a "weak," identifier. 
 
-| Options       | Tag     | Example | Considerations |
+| Options       | Tag     | Example | Strength | Considerations |
 | ------------- |-------------| -----|-----|
-| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 |  For certificates which assert the UID identifier (0.9.2342.19200300.100.1.1) or other object identifier in the common name, the identifier is prepended with the _OID_ qualifier. |
-| Issuer and Subject     | X509:\<I>\<S>  | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=47001003151020 | Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
-| Issuer and Serial Number | X509:\<I>\<SR> | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<SR>46a65d49 | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
-| Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 |  Not generally recommended; may be difficult to manage. |
-| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Not generally recommended; may be difficult to manage.   |
-| RFC822 name | X509:\<RFC822>      |   Not recommended |    Not recommended; not commonly populated in PIV Authentication certificates. |
+| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Weak - Deprecated | For certificates which assert the UID identifier (0.9.2342.19200300.100.1.1) or other object identifier in the common name, the identifier is prepended with the _OID_ qualifier. |
+| Issuer and Subject     | X509:\<I>\<S>  | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=47001003151020 | Weak | Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
+| Issuer and Serial Number | X509:\<I>\<SR> | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<SR>46a65d49 | Strong | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
+| Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Strong | Not generally recommended; may be difficult to manage. |
+| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Strong | Not generally recommended; may be difficult to manage.   |
+| RFC822 name | X509:\<RFC822>      |   X509:\<RFC822>john.smith@hhs.gov |  Weak |  Not recommended; not commonly populated in PIV Authentication certificates. |
+
+Policy tuple mappings to accomodate weak identifiers are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via registry keys that define three things to include:
+   1. Trusted issuing CA - identified by its certificate thumbprint
+   2. Trusted certificat policy OID - ensures that the client certificate is issued from a certain policy, and
+   3. Name matching - defines what field to extract from the certificate that meets the previous two conditions for correlation to AD user accounts
+
+Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe issuing CA thumbprints..
 
 ### Gathering PIV Authentication Certificates for Mapping into AD
 
 Identity certificates used for Windows logon can generally be found: 
 -	On the smart card itself. 
--	By requesting the certificates directly from the smart card issuer. 
+-	By requesting the certificates directly from the smart card issuer (either the CA or RA). 
 -	By exporting the certificates from a third party application in which the certificates are already registered.
+
+{% include alert-info.html heading = "PIV Authentication Certificate Sources" content="USAccess customers can recieve PIV authentication certifciates via their SIP interface. Reach out to usaccess at gsa dot gov for additional information." %}  
 
 Each of these options is discussed below.
 
