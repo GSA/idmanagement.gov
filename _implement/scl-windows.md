@@ -33,9 +33,9 @@ subnav:
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Sept 2024 - Update to Microsoft Network Authentication Issue</h4>
+    <h4 class="usa-alert__heading">September 2024 - Update to Microsoft Network Authentication Issue</h4>
     <p class="usa-alert__text">
-      As of September 10th 2024, Microsoft has released a solution for Active Directory network authentication issues resulting from the May 2022 AD patches that impacted some PIV network authenications. This patch applies to Windows Server 2019 and later and includes a mechanism for support of what are considered "weak" identifiers asserted by PIV authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  AD administrators now have the ability to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if an authentication certificate is issued from a trusted Certification Authority (CA), and if it asserts an acceptable policy OID, before defining acceptable identifiers which are then considered "strong."  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Full enforcement mode for use of strong identifiers, is still planned to go into effect on Februrary 11, 2025, when any implementers still using weak identifiers for PIV will have to establish the "Policy Tuble" mapping solution.
+      As of September 10th 2024, Microsoft has released a solution for Active Directory network authentication issues resulting from the May 2022 AD patches that impacted some PIV network authenications. This patch applies to Windows Server 2019 and later and includes a mechanism for support of what are considered "weak" identifiers asserted by PIV authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  AD administrators now have the ability to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if an authentication certificate is issued from a trusted Certification Authority (CA), and if it asserts an acceptable policy OID, before defining acceptable identifiers which are then considered "strong."  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Full enforcement mode for use of strong identifiers, is still planned to go into effect on Februrary 11, 2025 and compatibility mode will be fully retired in September 2025.
     </p>
   </div>
 </div>
@@ -279,12 +279,12 @@ There are six mapping options to choose from; however, Microsoft considers 3 of 
 | SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Strong | Not generally recommended; may be difficult to manage.   |
 | RFC822 name | X509:\<RFC822>      |   X509:\<RFC822>john.smith@hhs.gov |  Weak |  Not recommended; not commonly populated in PIV Authentication certificates. |
 
-Policy tuple mappings to accomodate weak identifiers are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via registry keys that define three things to include:
+Policy tuple mappings to accomodate weak identifiers are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via group policy, specifically *Administrative Settings / System / KDC* under an entry titled **"Allow name-based strong mappings for certificates"**  wherein administrators can define three things to include:
    1. Trusted issuing CA - identified by its certificate thumbprint
    2. Trusted certificat policy OID - ensures that the client certificate is issued from a certain policy, and
    3. Name matching - defines what field to extract from the certificate that meets the previous two conditions for correlation to AD user accounts
 
-Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe issuing CA thumbprints..
+Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe issuing CA thumbprints.
 
 ### Gathering PIV Authentication Certificates for Mapping into AD
 
@@ -292,8 +292,6 @@ Identity certificates used for Windows logon can generally be found:
 -	On the smart card itself. 
 -	By requesting the certificates directly from the smart card issuer (either the CA or RA). 
 -	By exporting the certificates from a third party application in which the certificates are already registered.
-
-{% include alert-info.html heading = "PIV Authentication Certificate Sources" content="USAccess customers can recieve PIV authentication certifciates via their SIP interface. Reach out to usaccess at gsa dot gov for additional information." %}  
 
 Each of these options is discussed below.
 
@@ -327,6 +325,8 @@ To gather the certificate from the smart card using a Windows workstation, have 
 
 **Request Certificates from the Smart Card Issuer** <br>
 Your organization’s credential issuer may have a copy of certificates issued to current users. You will need to specifically request from the issuer the most recent valid identity certificates suitable for smart card logon. The issuer will produce these certificates in a variety of ways, based on the certification authority or the Card Management System in use. 
+
+{% include alert-info.html heading = "PIV Authentication Certificate Sources" content="USAccess customers can recieve PIV authentication certifciates via their SIP interface. Reach out to usaccess at gsa dot gov for additional information." %} 
 
 **Export Certificates from a Third Party System** <br>
 Your organization may have already collected the relevant certificates as part of the enrollment process for a third party application, such as a FIPS 201-compliant PACS system. Depending on the system and configuration in use, you may be able to export your cardholders’ certificates from the database where they are enrolled. Speak with your PACS integrator to understand what options are available to you.
