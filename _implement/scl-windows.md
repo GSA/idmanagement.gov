@@ -40,7 +40,7 @@ subnav:
   </div>
 </div>
 
-{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a *strong* altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action to continue support for network PIV authenticaiton." %}
+{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a strong altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action to continue support for network PIV authenticaiton." %}
 
 
 ## Introduction
