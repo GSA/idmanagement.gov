@@ -35,12 +35,12 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">September 2024 - Update to Microsoft Network Authentication Issue</h4>
     <p class="usa-alert__text">
-      As of September 10th 2024, Microsoft has released a solution for Active Directory network authentication issues resulting from the May 2022 AD patches that impacted some PIV network authenications. This patch applies to Windows Server 2019 and later and includes a mechanism for support of what are considered "weak" identifiers asserted by PIV authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  AD administrators now have the ability to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if an authentication certificate is issued from a trusted Certification Authority (CA), and if it asserts an acceptable policy OID, before defining acceptable identifiers which are then considered "strong."  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Full enforcement mode for use of strong identifiers, is still planned to go into effect on Februrary 11, 2025 and compatibility mode will be fully retired in September 2025.
+      As of September 10th 2024, Microsoft has released a solution for Active Directory network authentication issues resulting from the May 2022 patches that impacted some PIV network authenications. The September patch applies to Windows Server 2019 and later and includes a mechanism for support of what are considered "weak" identifiers asserted by PIV authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  AD administrators now have the ability to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if an authentication certificate is issued from a trusted Certification Authority (CA), and if it asserts an acceptable policy OID, before defining acceptable identifiers which are then considered "strong."  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Full enforcement mode for use of strong identifiers is still planned to go into effect on Februrary 11, 2025 and compatibility mode will be fully retired on September 10th, 2025.  See Step 4 below regarding Account Linking for further details.
     </p>
   </div>
 </div>
 
-{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a \"strong\" altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action to continue support for network PIV authenticaiton." %}
+{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a \"strong\" altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action as a result of recent Microsoft updates." %}
 
 
 ## Introduction
@@ -153,7 +153,7 @@ There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you 
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Externally Issued PIV Revocation Resources</h4>
     <p class="usa-alert__text">
-     You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information from externally issued <a class="usa-link usa-link--external" href="https://www.idmanagement.gov/fpki/notifications/#active-issuing-ca-certificate-details" target="_blank">PIV CAs</a>.
+     You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information for externally issued <a class="usa-link usa-link--external" href="https://www.idmanagement.gov/fpki/notifications/#active-issuing-ca-certificate-details" target="_blank">PIV CAs</a>.
     </p>
   </div>
 </div>
@@ -202,7 +202,7 @@ Domain controller certificates must be issued with a set of specific extensions 
 
     > The domain controller's certificate must be installed in the domain controller's local computer's **_personal certificate store_**.
 
-{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are credentialed via Active Directory Certificate Services (ADCS) that may be operating an Only Locally Trusted CA hierarchy. ADCS implementers will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent Microsoft changes. For those AD implementers who receive DC certificates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
+{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are issued device certificates via Active Directory Certificate Services (ADCS) that may be operating an Only Locally Trusted PKI also known as an \"Enterprise\" PKI. Those ADCS implementers will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent Microsoft changes. For other AD implementers who receive DC certificates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
 
 - It is also recommended to include a non-critical Security Identifier (ObjectSID) extention in your DC certificates, for example:
 
@@ -281,12 +281,10 @@ There are six mapping options to choose from; however, Microsoft considers 3 of 
 
 Policy tuple mappings to accomodate weak identifiers are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via group policy, specifically *Administrative Settings / System / KDC* under an entry titled **"Allow name-based strong mappings for certificates"**  wherein administrators can define three things to include:
    1. Trusted issuing CA - identified by its certificate thumbprint
-   2. Trusted certificat policy OID - ensures that the client certificate is issued from a certain policy, and
+   2. Trusted certificate policy OID - ensures that the client certificate is issued from a certain policy, and
    3. Name matching - defines what field to extract from the certificate that meets the previous two conditions for correlation to AD user accounts
 
-Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe issuing CA thumbprints.
-
-### Gathering PIV Authentication Certificates for Mapping into AD
+Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe thumbprints of each issuing CA .
 
 Identity certificates used for Windows logon can generally be found: 
 -	On the smart card itself. 
@@ -394,6 +392,8 @@ It's possible to revert to UPN account linking by removing the registry setting 
 Use group policy objects or other centralized management options to manage registry options.
 
 ## Step 5 - Group Policies and Enforcement
+
+{% include alert-info.html heading = "Group Policy to Support \"Weak\" Identifiers" content="Administrators can enable <b>Allow name-based strong mappings for certificates<b>, in conjunction with policy tuple mappings mentioned in Step 4, to continue to use \"weak\" PIV alternate security identifiers for user account correlation." %} 
 
 The U.S. federal government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smart card (PIV) logon and should be referenced first.
 
