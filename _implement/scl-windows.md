@@ -202,7 +202,7 @@ Domain controller certificates must be issued with a set of specific extensions 
 
     > The domain controller's certificate must be installed in the domain controller's local computer's **_personal certificate store_**.
 
-{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are credentialed via Active Directory Certificate Services (ADCS) which may be operating from an "Only Locally Trusted" CA heirarchy. ADCS implmenters will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent AD changes. For those AD implmeenters who recieve DC certifcates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
+{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are credentialed via Active Directory Certificate Services (ADCS) which may be operating from an Only Locally Trusted CA heirarchy. ADCS implmenters will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent AD changes. For those AD implmeenters who recieve DC certifcates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
 
 - It is also recommended to include a non-critical Security Identifier (ObjectSID) extention in your DC certificates, for example:
 
