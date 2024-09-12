@@ -393,7 +393,7 @@ Use group policy objects or other centralized management options to manage regis
 
 ## Step 5 - Group Policies and Enforcement
 
-{% include alert-info.html heading = "Group Policy to Support \"Weak\" Identifiers" content="Administrators can enable <b>Allow name-based strong mappings for certificates<b>, in conjunction with policy tuple mappings mentioned in Step 4, to continue to use \"weak\" PIV alternate security identifiers for user account correlation." %} 
+{% include alert-info.html heading = "Group Policy to Support \"Weak\" Identifiers" content="Administrators can enable <b>Allow name-based strong mappings for certificates</b>, in conjunction with policy tuple mappings mentioned in Step 4, to continue to use \"weak\" PIV alternate security identifiers for user account correlation." %} 
 
 The U.S. federal government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smart card (PIV) logon and should be referenced first.
 
