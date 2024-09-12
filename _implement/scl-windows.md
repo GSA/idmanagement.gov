@@ -570,7 +570,7 @@ To grant a user access, based on the type of authenticator used, you can use a W
     <h4 class="usa-alert__heading">Do not uses AMA to provide privileged access</h4>
     <p class="usa-alert__text">
       Privileged users should not rely on single sign-on and should always use the highest assurance credential. Their account should be separate and distinct from their normal user account. See the 
-      <a class="usa-link" href="{{site.baseurl}}/playbooks/pam/" target="_blank" rel="noopener noreferrer"}>Privileged Identity Playbook</a>
+      <a class="usa-link" href="{{site.baseurl}}/playbooks/pam/" target="_blank" rel="noopener noreferrer">Privileged Identity Playbook</a>
       for best practices in reducing risk associated with privileged accounts and access.
     </p>
   </div>
