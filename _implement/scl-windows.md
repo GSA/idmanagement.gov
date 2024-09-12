@@ -40,7 +40,7 @@ subnav:
   </div>
 </div>
 
-{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a strong altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action to continue support for network PIV authenticaiton." %}
+{% include alert-info.html heading = "Strong AltSecID Implmentations" content="If your on-premise Active Directory implmentations alreaady use what Microsoft considers to be a \"strong\" altsecid user mapping, such as X509SKI or X509IssuerSerialNumber, you will not need to take any action to continue support for network PIV authenticaiton." %}
 
 
 ## Introduction
@@ -202,11 +202,11 @@ Domain controller certificates must be issued with a set of specific extensions 
 
     > The domain controller's certificate must be installed in the domain controller's local computer's **_personal certificate store_**.
 
-{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are credentialed via Active Directory Certificate Services (ADCS) which may be operating from an Only Locally Trusted CA heirarchy. ADCS implmenters will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent AD changes. For those AD implmeenters who recieve DC certifcates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
+{% include alert-info.html heading = "Domain Controller Strong Identifiers" content="Many Domain Controllers are credentialed via Active Directory Certificate Services (ADCS) that may be operating an Only Locally Trusted CA hierarchy. ADCS implementers will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent Microsoft changes. For those AD implementers who receive DC certificates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
 
 - It is also recommended to include a non-critical Security Identifier (ObjectSID) extention in your DC certificates, for example:
 
-            1.3.6.1.4.1.311.25.2=S-1-5-domain-516
+            1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
 
 ## Issue Domain Controller Certificates
 
