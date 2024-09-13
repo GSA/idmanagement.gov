@@ -278,8 +278,8 @@ There are six altsecid mapping options to choose from; however, three of these a
 | Issuer and Serial Number | X509:\<I>\<SR> | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<SR>46a65d49 | Strong | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
 | Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Strong | Highly unique; may be difficult to manage. |
 | SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Strong | Highly unique; may be difficult to manage.   |
-| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Deprecated | This field is no longer supported for altsecid mapping as of Sept 2024 as it was was considered too weak. |
-| RFC822 name | X509:\<RFC822>      |   X509:\<RFC822>john.smith@hhs.gov |  Deprecated |  This field is no longer supported for altsecid mapping as of Sept 2024 as it was was considered too weak. |
+| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Deprecated | This field is no longer supported for altsecid mapping as of Sept 2024. |
+| RFC822 name | X509:\<RFC822>      |   X509:\<RFC822>john.smith@hhs.gov |  Deprecated |  This field is no longer supported for altsecid mapping as of Sept 2024. |
 
 {% include alert-info.html heading = "Use of Security Identifiers (SID)" content="Although it is not mandated by FPKI certificate profiles, an SID is a Microsoft priorietary identifier that can be asserted as a non-critical extention in a PIV authentication certificate and used for AD user account mapping." %} 
 
