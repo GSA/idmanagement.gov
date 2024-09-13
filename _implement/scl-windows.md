@@ -268,16 +268,16 @@ First, you need to link each user's PIV Authentication certificate to their doma
 
 Adding altSecurityIdentities attributes **will not** break existing UPN account linking or cause smart card logon to fail. It's possible to plan your transition carefully and to take your time populating the altSecurityIdentities attribute for domain users. 
 
-There are six altsecid mapping options to choose from; however, three of these are considered to be "weak" identifiers that will either need to be migrated to a "strong" identifier or Policy Tuble mappings will need to be implmented to allow for use of a Issuer/Subject identifier. 
+There are six altsecid mapping options to choose from; however, three of these are considered to be "weak" identifiers that will either need to be migrated to a "strong" identifier or policy tuble mappings will need to be implmented to allow for use of an Issuer/Subject altsecid. 
 
 {% include alert-warning.html heading = "Depricaticated Mappings" content="As of September 2024, Microsoft has depricated the use of Subject and RFC822 altsecid mappings as they were considered vulnerable to spoofing attempts." %} 
 
 | Options       | Tag     | Example | Strength | Considerations |
 | ------------- |-------------| -----|-----|
-| Issuer and Subject     | X509:\<I>\<S>  | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=47001003151020 | Weak | Implementers will need to leverage a policy tuple mapping to accomodate this mapping.  Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
+| Issuer and Subject     | X509:\<I>\<S>  | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=47001003151020 | Weak | Implementers will need to leverage a policy tuple to accomodate this altsecid.  Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
 | Issuer and Serial Number | X509:\<I>\<SR> | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<SR>46a65d49 | Strong | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
-| Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Strong | Not generally recommended; may be difficult to manage. |
-| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Strong | Not generally recommended; may be difficult to manage.   |
+| Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Strong | Highly unique; may be difficult to manage. |
+| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Strong | Highly unique; may be difficult to manage.   |
 | Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Deprecated | This field is no longer supported for altsecid mapping as of Sept 2024 as it was was considered too weak. |
 | RFC822 name | X509:\<RFC822>      |   X509:\<RFC822>john.smith@hhs.gov |  Deprecated |  This field is no longer supported for altsecid mapping as of Sept 2024 as it was was considered too weak. |
 
