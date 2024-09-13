@@ -268,23 +268,41 @@ First, you need to link each user's PIV Authentication certificate to their doma
 
 Adding altSecurityIdentities attributes **will not** break existing UPN account linking or cause smart card logon to fail. It's possible to plan your transition carefully and to take your time populating the altSecurityIdentities attribute for domain users. 
 
-There are six mapping options to choose from; however, Microsoft considers 3 of these to be "weak" identifiers that will either need to be migrated to a "strong" identifier or Policy Tuble mappings will need to be implmented to allow for use of a "weak," identifier. 
+There are six altsecid mapping options to choose from; however, three of these are considered to be "weak" identifiers that will either need to be migrated to a "strong" identifier or Policy Tuble mappings will need to be implmented to allow for use of a "weak," identifier. 
+
+{% include alert-warning.html heading = "Deprication of Subject Only Mapping" content="As of September 2024, Microsoft has depricated the use of Subject Name altsecid mappings as they were considered vulnerable to spoofing attempts." %} 
 
 | Options       | Tag     | Example | Strength | Considerations |
 | ------------- |-------------| -----|-----|
-| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Weak - Deprecated | For certificates which assert the UID identifier (0.9.2342.19200300.100.1.1) or other object identifier in the common name, the identifier is prepended with the _OID_ qualifier. |
+| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Deprecated | This field is no longer supported for altsecid mapping as of Sept 2024 as it was was considered too weak |
 | Issuer and Subject     | X509:\<I>\<S>  | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=47001003151020 | Weak | Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
 | Issuer and Serial Number | X509:\<I>\<SR> | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<SR>46a65d49 | Strong | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
 | Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Strong | Not generally recommended; may be difficult to manage. |
 | SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Strong | Not generally recommended; may be difficult to manage.   |
 | RFC822 name | X509:\<RFC822>      |   X509:\<RFC822>john.smith@hhs.gov |  Weak |  Not recommended; not commonly populated in PIV Authentication certificates. |
 
-Policy tuple mappings to accomodate weak identifiers are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via group policy, specifically *Administrative Settings / System / KDC* under an entry titled **"Allow name-based strong mappings for certificates"**  wherein administrators can define three things to include:
+{% include alert-warning.html heading = "Use of Security Identifiers (SID)" content="Although it is not mandated by FPKI certificate profiles, an SID is a Microsoft priorietary identifier that can be asserted as a non-critical extention in a PIV authentication certificate and used for AD user account mapping." %} 
+
+Policy tuple mappings to accomodate some altsecid weak identifier mappings are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via group policy, specifically *Administrative Settings / System / KDC* under an entry titled **"Allow name-based strong mappings for certificates"**  wherein administrators can define three things to include:
    1. Trusted issuing CA - identified by its certificate thumbprint
    2. Trusted certificate policy OID - ensures that the client certificate is issued from a certain policy, and
    3. Name matching - defines what field to extract from the certificate that meets the previous two conditions for correlation to AD user accounts
 
-Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe thumbprints of each issuing CA .
+Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe thumbprints of each issuing CA.
+
+The following examples provide a few options for various potential policy tuple values that can be used to identify a few types of certificate based network authentication credentials.
+
+1. UPN only policy tuple for a standard internal PIV or dPIV user
+
+            1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
+   
+3. Altsecid policy tuple for a Priviledged ALT token (Common-Hardware) user
+
+            1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
+   
+5. Altsecid policy tuple for an external PIV or dPIV user
+
+            1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
 
 Identity certificates used for Windows logon can generally be found: 
 -	On the smart card itself. 
