@@ -1050,7 +1050,7 @@ The easiest way to verify your migration to the Federal Common Policy CA G2 (FCP
 
 ## Frequently Asked Questions
 
-If your question does not appear in this list, send it to FPKI at gsa.gov.
+If your question does not appear in this list, send it to [fpki@gsa.gov](mailto:fpki@gsa.gov).
 
 ## What happens if I don’t distribute the FCPCAG2 root certificate in my environment?
 
