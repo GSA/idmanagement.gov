@@ -138,7 +138,7 @@ FPKI affiliates include federal agencies and commercial service providers operat
 2. Providing additional investigation support and/or information about incidents to the FPKI Authorities as they become known, and
 3. Conducting remediation activities once an incident is confirmed.
 
-To report a security incident, such as a key compromise, data breach, or other fraud waste or abuse regarding FPKI CAs or certificates, please contact both fpki at gsa dot gov and  fpki-help at gsa dot gov, and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+To report a security incident, such as a key compromise, data breach, or other fraud waste or abuse regarding FPKI CAs or certificates, please contact both [fpki@gsa.gov](mailto:fpki@gsa.gov) and  [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov), and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 
 <!-- # Federal PKI Monthly Activity Report
 
