@@ -22,7 +22,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">DigiCert PKI Shared Services Decommission and Transition</h4>
     <p class="usa-alert__text">
-      DigiCert announced it is decommissioning its federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact FPKI at GSA.gov.
+      DigiCert announced it is decommissioning its federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
     </p>
   </div>
 </div>
@@ -49,7 +49,7 @@ We’ve categorized the service providers given below by type of identity and cr
 
 ## Government Identity Services
 
-These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://www.idmanagement.gov/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact FPKI at GSA.gov.
+These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://www.idmanagement.gov/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
 
 Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
