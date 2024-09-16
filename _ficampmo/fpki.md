@@ -102,7 +102,7 @@ The FPKI Program supports three remote PIV, PIV-I, and digital certificate test 
 To request the annual testing report for PIV/PIV-I cards, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf) and send it with Compliance Test Tool outputs and testing artifacts (for remote testing) to fips201ep@ gsa.gov.
 
 ## Submitting a Test Results Package
-If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to fips201ep at gsa.gov.
+If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
 
 1.	A completed [testing application]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} for each PCI configuration evaluated (See Section 1 of the application for more information).
 2.	All accompanying Card Conformance Tool Log files, these reside in the same directory as the extracted package after the tests have been run:
