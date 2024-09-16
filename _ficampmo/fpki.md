@@ -60,7 +60,7 @@ The FPKI has the following supplementary guidance:
 
 Independent compliance audits are the primary way that the Federal Public Key Infrastructure Policy Authority (FPKIPA) ensures that entities participating in the FPKI comply with the requirements identified in the appropriate Certificate Policies (CPs). Audits are an important component of the Annual Review Requirements.
 
-Audits are required annually for supporting functions and elements of each entity.  Annual review packages should be submitted to fpki at gsa.gov.
+Audits are required annually for supporting functions and elements of each entity.  Annual review packages should be submitted to [fpki@gsa.gov](mailto:fpki@gsa.gov).
 
 - [FPKI Annual Review Requirements (PDF, May 2022)]({{site.baseurl}}/docs/fpki-annual-review-requirements.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This document includes requirements for performing and reporting annual compliance audits.
 - [RA Audit Guidance Memorandum (PDF, October 2022]({{site.baseurl}}/docs/fpki-ra-audit-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This FPKIPA Memorandum reiterates the necessity of RA audits in supporting PKI operations, normalizes differing terminology used across various references, and provides options for reducing potential duplication of RA audit efforts, as applicable to PIV issuers.
