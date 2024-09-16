@@ -58,7 +58,7 @@ Check the following items **before** reviewing these network guides and lessons 
 1. Users have PIV credentials and PIV card readers.
 1. You are using Microsoft Active Directory to manage your Windows network.
 1. Domain Controllers are running Microsoft Windows Server 2019 or newer.
-1. User workstations **are joined** to your network and are Windows 8 or newer.
+1. User workstations **are joined** to your network and are Windows 10 or newer.
 
 ## Configuration Checklist
 
