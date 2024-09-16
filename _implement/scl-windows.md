@@ -208,6 +208,8 @@ Domain controller certificates must be issued with a set of specific extensions 
 
             1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
 
+{% include alert-waring.html heading = "Prohibited Exceptions to SID Usage" content="Under no circumstances shall a Domain Controller auto-enrolled in ADCS for certificate issuance be identified in a policy tuple exception in GPO "Allow name-based strong mappings for certificates." See Step 4 below regarding policy tuples. %}
+
 ## Issue Domain Controller Certificates
 
 U.S. federal civilian agencies have a variety of information security policies.  These policies cover whether you should use a domain controller certificate issued from your agency's local enterprise certification authority (CA) or whether the certificate must be issued from a CA managed and certified under the Federal Public Key Infrastructure (FPKI).  Each agency's information security policy should be followed.
