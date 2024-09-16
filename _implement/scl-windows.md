@@ -342,7 +342,7 @@ If you are designing an automated process to transition users from Principal Nam
     <p class="usa-alert__text">
       We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above. Check out the script in our    
       <a class="usa-link usa-link--external" href="https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId" target="_blank">public scripts repository</a>
-      or contact [icam@gsa.gov](mailto:icam@gsa.gov) for more information.
+      or contact <a href="mailto:icam@gsa.gov">icam@gsa.gov</a> for more information.
     </p>
   </div>
 </div>
