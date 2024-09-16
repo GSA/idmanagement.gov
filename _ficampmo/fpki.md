@@ -99,7 +99,7 @@ The FPKI Program supports three remote PIV, PIV-I, and digital certificate test 
 2. The [Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"} is a self-hosted application that analyzes public X.509 certificates for conformance to a specified FPKI profile.
 3. The [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"} is Java API hosted on GitHub and used to leverage that the information stored in the PIV/ PIV-I applets conform to NIST SP 800-73.
 
-To request the annual testing report for PIV/PIV-I cards, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf) and send it with Compliance Test Tool outputs and testing artifacts (for remote testing) to fips201ep@ gsa.gov.
+To request the annual testing report for PIV/PIV-I cards, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf) and send it with Compliance Test Tool outputs and testing artifacts (for remote testing) to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
 
 ## Submitting a Test Results Package
 If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
