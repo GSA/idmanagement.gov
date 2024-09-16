@@ -26,11 +26,11 @@ subnav:
 ---
 
 This page contains information to help Federal Public Key Infrastructure (FPKI) program managers and auditors.
-- It includes the FPKI policies and profiles as well as annual FPKI annual review schedule.
+- It includes the FPKI policies and profiles as well as the FPKI annual review schedule.
 - It can help auditors assess certification authorities (CAs) operated as part of the FPKI. 
 - It can help the general public understand how the FPKI Management Authority (FPKIMA) provides trusted PKI and CA operations.
 
-For any questions, please contact fpki at gsa.gov.
+For any questions, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
 
 ## Federal PKI Policies and Profiles
 
