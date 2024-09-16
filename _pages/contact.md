@@ -19,7 +19,7 @@ A quick check of some common resources may answer your question more quickly tha
 - Find information for [FICAM developers]({{site.baseurl}}/playbooks/){:target="_blank"}{:rel="noopener noreferrer"}
 - Find information for [FICAM program managers]({{site.baseurl}}/program-managers/)
 
-If none of these resources answer your question, or you wish to report an issue with the IDManagement.gov website, please email icam at gsa.gov. Thank you!
+If none of these resources answer your question, or you wish to report an issue with the IDManagement.gov website, please email [icam@gsa.gov](mailto:icam@gsa.gov). Thank you!
 
 ## Our Email Policy
 
@@ -27,4 +27,4 @@ We’ll make every effort to respond to your email within two business days (muc
 
 ## Reporting Incidents
 
-To report a potential key compromise, security incident, or fraud, waste, or abuse involving FPKI certificates, please contact fpki at gsa.gov with supporting evidence of the incident.
+To report a potential key compromise, security incident, or fraud, waste, or abuse involving FPKI certificates, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov) with supporting evidence of the incident.
