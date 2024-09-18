@@ -6,11 +6,7 @@
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
         "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
-        "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US",
         "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-        "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-        "common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-        "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
         "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
@@ -74,13 +70,6 @@
         "common_name:Lockheed Martin Root Certification Authority 2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US",
         "common_name:Lockheed Martin Root Certification Authority 6,organizational_unit_name:Certification Authority,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US",
         "common_name:Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3,organization_identifier:NTRNL-27370985,organization_name:Ministerie van Defensie,country_name:NL",
-        "common_name:NRC PROD G6 Fed SSP CA,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-        "common_name:NRC SSP Agency CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-        "common_name:NRC SSP Agency CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-        "common_name:NRC SSP Device CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-        "common_name:NRC SSP Device CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-        "common_name:Naval Reactors SSP Agency CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US",
-        "common_name:Naval Reactors SSP Device CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US",
         "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
         "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
         "common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
@@ -88,22 +77,12 @@
         "common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
         "common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US",
         "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
-        "common_name:Senate PIV-I CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
         "common_name:Senate PIV-I CA G6,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-        "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
         "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
         "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-        "common_name:U.S. Department of Education Agency CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-        "common_name:U.S. Department of Education Agency CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-        "common_name:U.S. Department of Education Device CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-        "common_name:U.S. Department of Education Device CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
         "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-        "common_name:U.S. Department of Transportation Agency CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-        "common_name:U.S. Department of Transportation Agency CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Agency CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-        "common_name:U.S. Department of Transportation Device CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-        "common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
         "common_name:Verizon SSP CA A2,organizational_unit_name:SSP,organization_name:Verizon,country_name:US",
@@ -156,54 +135,6 @@
             }
         },
         {
-            "subject": "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-            "issuer": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-            "serial-number": "14251171306420",
-            "akid": "fe 01 17 a6 8a 2e 7a 0a db 99 ee 0f 4b 94 83 04 8a dc 91 91",
-            "skid": "9d 3e c7 6a 08 2a 51 c0 0b b5 b2 fd 54 3d f9 c2 de 77 4f 94",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-                "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://pub.carillon.ca/CAcerts/CISG2RCA2.p7c": [
-                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-            "issuer": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-            "serial-number": "9782744517218",
-            "akid": "fe 01 17 a6 8a 2e 7a 0a db 99 ee 0f 4b 94 83 04 8a dc 91 91",
-            "skid": "21 f8 19 47 44 c7 7c 18 91 bd 8e 0f 35 13 55 06 d4 e3 ef a5",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-                "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://pub.carillon.ca/CAcerts/CISG2RCA2.p7c": [
-                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
             "issuer": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "serial-number": "118321666526806459352504907081952240690",
@@ -221,9 +152,7 @@
             ],
             "sia-entries": {
                 "http://pub.carillon.ca/CAcerts/IssuedByCISG2RCA2.p7c": [
-                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-                    "common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-                    "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
+                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -498,206 +427,6 @@
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
                     "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "43861959598221215318739122296333550165",
-            "akid": "b5 ed 2e 96 04 4b a9 18 f4 f4 bd 12 f1 63 85 84 97 5f 3e 5a",
-            "skid": "1b 7c 53 c3 1d e0 ee 6c 39 5e c6 22 cb f6 f1 27 00 04 86 1b",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Senate PIV-I CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "62371839725226728951509527006625686661",
-            "akid": "b5 ed 2e 96 04 4b a9 18 f4 f4 bd 12 f1 63 85 84 97 5f 3e 5a",
-            "skid": "2e fb c0 8c ab 5f 57 e0 89 f0 ea fe a7 64 3d 14 90 27 f0 c6",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/NFSSP/Certs_issued_to_Class3SSPCA-G4.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:NRC SSP Device CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "106472201366226283376658495351285060839",
-            "akid": "57 19 e5 d8 d6 ac de 78 e2 42 f5 e4 45 b4 d9 39 93 0b bd da",
-            "skid": "9c 2b 5d d9 aa ed 03 a4 d3 3d 63 1f 4e 61 d2 9c e1 07 47 75",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Education Agency CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "122474469216174262946210501330480753740",
-            "akid": "57 19 e5 d8 d6 ac de 78 e2 42 f5 e4 45 b4 d9 39 93 0b bd da",
-            "skid": "b4 4e bf 67 a5 12 f7 10 84 73 fe 37 87 32 c6 b7 b9 1c 48 3c",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Transportation Agency CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "19731299792238581470727072537051304730",
-            "akid": "57 19 e5 d8 d6 ac de 78 e2 42 f5 e4 45 b4 d9 39 93 0b bd da",
-            "skid": "a2 69 3f 35 18 ed 9e 21 c0 13 09 80 f4 10 0c 04 86 0c 56 e8",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "25585890544022256105160242623422874972",
-            "akid": "57 19 e5 d8 d6 ac de 78 e2 42 f5 e4 45 b4 d9 39 93 0b bd da",
-            "skid": "5f 3a eb 94 e5 f0 42 bf 69 55 49 b2 56 8e a3 d5 91 57 85 4c",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:NRC SSP Agency CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "77844788509031658092721785593641019955",
-            "akid": "57 19 e5 d8 d6 ac de 78 e2 42 f5 e4 45 b4 d9 39 93 0b bd da",
-            "skid": "49 da c3 33 0b c7 0f 7d 48 a3 b7 1f 08 96 37 89 84 cc fe aa",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Education Device CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "80619783524217779367966203132156907219",
-            "akid": "57 19 e5 d8 d6 ac de 78 e2 42 f5 e4 45 b4 d9 39 93 0b bd da",
-            "skid": "86 19 e5 25 c4 47 ef 19 2b ac 69 c2 ed 75 5b e6 eb b4 44 2f",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:NRC PROD G6 Fed SSP CA,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US",
-            "serial-number": "114021135536908476815362446042034061518",
-            "akid": "1d 76 05 6a 49 8f 11 59 ba df 0b eb 4d b2 b7 0c fa 26 b1 c9",
-            "skid": "37 66 be 84 56 97 ce c6 84 14 fe 3b 77 2d e7 91 dc 6a cd f5",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG6.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -1796,10 +1525,7 @@
                 "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {
-                "http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c": [
-                    "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US",
-                    "common_name:Senate PIV-I CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
-                ]
+                "http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c": []
             },
             "aia-entries": {
                 "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
@@ -2049,11 +1775,7 @@
                 "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {
-                "http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US",
-                    "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
-                ]
+                "http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c": []
             },
             "aia-entries": {
                 "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
@@ -2165,9 +1887,7 @@
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {
-                "http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG6.p7c": [
-                    "common_name:NRC PROD G6 Fed SSP CA,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
-                ]
+                "http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG6.p7c": []
             },
             "aia-entries": {
                 "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
@@ -2255,14 +1975,7 @@
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {
-                "http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c": [
-                    "common_name:U.S. Department of Education Agency CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-                    "common_name:NRC SSP Device CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-                    "common_name:NRC SSP Agency CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of Transportation Agency CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of Education Device CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US"
-                ]
+                "http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c": []
             },
             "aia-entries": {
                 "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
@@ -2343,17 +2056,7 @@
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {
-                "http://ssp-sia.symauth.com/SSP/Certs_issued_by_SYMCSSPCAG4.p7c": [
-                    "common_name:U.S. Department of Education Agency CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of Education Device CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-                    "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US",
-                    "common_name:Naval Reactors SSP Agency CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US",
-                    "common_name:Naval Reactors SSP Device CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of Transportation Device CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of Transportation Agency CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-                    "common_name:NRC SSP Agency CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-                    "common_name:NRC SSP Device CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
-                ]
+                "http://ssp-sia.symauth.com/SSP/Certs_issued_by_SYMCSSPCAG4.p7c": []
             },
             "aia-entries": {
                 "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
@@ -2720,228 +2423,6 @@
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Transportation Agency CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "129812922938216859689063236509710654082",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "67 c3 0f be 3e 9a 17 2e 5a 2c 89 f0 6a 1f d6 3e 1b cb 0e 55",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:NRC SSP Agency CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "21345651322204733595857675541721232166",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "9c 97 7f 77 72 78 a2 4d d7 9e 3b ad 9f 5e 9c 06 09 30 3c 82",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Naval Reactors SSP Agency CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "32604639746667506826995315714207597048",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "0d 5f 01 1f 0f ac 28 69 07 ee b7 52 b0 de 88 31 c9 5d 24 a1",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Education Agency CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "45582359287469491320956602576967934522",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "58 2f 7b f7 7b 17 0c a2 69 a9 ff 52 40 68 05 04 43 ed 42 f3",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "46967434023387379744209484247117610904",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "11 02 11 64 53 48 0f f4 55 5b 04 14 6f 2e 2e 90 63 55 a9 e7",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Naval Reactors SSP Device CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "521243065425169319770905616737063525",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "5a ac d0 6d 40 59 77 da 89 bf 0a bc cd c5 ff 0c 73 f1 75 af",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Transportation Device CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "58496904966071151652674053679528407534",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "fe dc 22 87 33 a7 51 81 64 36 f7 d7 27 55 71 d4 b1 68 f6 20",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of Education Device CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "62934515723633559071211471637902624777",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "50 28 e5 6a 4f 82 40 55 3a 92 35 d4 a9 4c 11 e2 97 f2 dd bd",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:NRC SSP Device CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "serial-number": "83084684980805758681729582593862520938",
-            "akid": "ff cc 34 d1 db 4a e1 e1 c2 0b d2 db eb 80 7c 73 0c 75 5f 66",
-            "skid": "c0 57 65 60 76 d4 fa 5b 1b 60 61 1f 38 d9 ba 38 bc ce 27 aa",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://ssp-aia.symauth.com/SSP/Certs_issued_to_SSPCAG4.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "serial-number": "66472002233790706042142615816560370398",
-            "akid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "skid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
                 ]
             }
         },
@@ -4048,18 +3529,6 @@
             }
         },
         {
-            "subject": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "issuer": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "serial-number": "175567204229783743591458183087529700129959",
-            "akid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
-            "skid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "status": "Certificate Valid, but no Path to Common",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Unable to build Path"
-            }
-        },
-        {
             "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "issuer": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
             "serial-number": "14251171306423",
@@ -4310,23 +3779,6 @@
             }
         },
         {
-            "subject": "common_name:DocuSign Root CA,organizational_unit_name:TSCP,organization_name:DocuSign Inc.,country_name:US",
-            "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "serial-number": "36580706539538580600374127093589216343",
-            "akid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "skid": "99 6a 10 45 b9 9b 67 88 d2 c8 5a 80 82 f5 a1 2b 0f 66 1d 48",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US:b85162663045bee50c571c23687ee64ff70b3ef7",
-            "validity-dates": {
-                "not-before": "2023-08-17 00:00:00+00:00",
-                "not-after": "2024-08-16 23:59:59+00:00"
-            }
-        },
-        {
             "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
             "serial-number": "63714391470181454330808577115309781940",
@@ -4469,41 +3921,6 @@
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:U.S. Department of Education Agency CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:NRC SSP Device CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:NRC SSP Agency CA G4,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:U.S. Department of Transportation Agency CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:U.S. Department of Education Device CA - G5,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:NRC PROD G6 Fed SSP CA,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Entrust Managed PKI Federal Root CA G2,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "common_name:Entrust Managed PKI Federal Issuing CA G2,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
         ],
@@ -4586,51 +4003,6 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:U.S. Department of Education Agency CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:U.S. Department of Education Device CA - G4,organizational_unit_name:U.S. Department of Education,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Bureau of the Census Agency CA,organizational_unit_name:Department of Commerce,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Naval Reactors SSP Agency CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:Naval Reactors SSP Device CA G3,organizational_unit_name:U.S. Department of Energy,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:U.S. Department of Transportation Device CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:U.S. Department of Transportation Agency CA G4,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:NRC SSP Agency CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Symantec SSP Intermediate CA - G4,organization_name:Symantec Corporation,country_name:US",
-            "common_name:NRC SSP Device CA G3,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -4774,18 +4146,6 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:Senate PIV-I Device CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
-            "common_name:Senate PIV-I CA G5 PROD,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
         ],
@@ -4864,12 +4224,6 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
-            "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
         ],
@@ -4921,20 +4275,6 @@
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Lockheed Martin Root Certification Authority 2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US",
             "common_name:Lockheed Martin Certification Authority 4 G2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-            "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-            "common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-            "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
-            "common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",

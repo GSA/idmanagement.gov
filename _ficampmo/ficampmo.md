@@ -79,7 +79,7 @@ Membership is open to federal agency employees with a .gov or .mil email address
 
 ### ICAMSC Working Groups
 
-The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Send an email to icam at gsa.gov for more information and join a working group.
+The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Send an email to [icam@gsa.gov](mailto:icam@gsa.gov) for more information and join a working group.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
@@ -119,7 +119,7 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 
 Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
 
-The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpki at gsa.gov to participate in the FPKIPA or its working groups.
+The FPKIPA meets in the morning on the second Tuesday of each month. Contact [fpki@gsa.gov](mailto:fpki@gsa.gov) to participate in the FPKIPA or its working groups.
 
 ## Federal Public Key Infrastructure Management Authority
 
@@ -143,13 +143,13 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact fpk
 - [FPKIMA Newsletter (Spring 2019) "The Big Bridge Issue" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-62.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 - [FPKIMA Newsletter (Winter 2018) "GSA ACES Program Sunset Update" (PDF)]({{site.baseurl}}/docs/fpki-fpkima-newsletter-61.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-If your agency is experiencing issues related to the FBCA or FCPCA, contact fpki-help at gsa.gov
+If your agency is experiencing issues related to the FBCA or FCPCA, contact [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov)
 
 ### Federal Public Key Infrastructure Working Groups
 
 The FPKIPA charters three ongoing working groups and potentially other short-term working groups and tiger teams. 
 
-If you meet the membership criteria and wish to join a working group, email fpki at gsa.gov and include the text "Request to Join xx," where "xx" is the name of the working group.
+If you meet the membership criteria and wish to join a working group, email [fpki@gsa.gov](mailto:fpki@gsa.gov) and include the text "Request to Join xx," where "xx" is the name of the working group.
 
 | Working Group Name | Purpose | Activities | Membership Requirements | Meeting Schedule | 
 | --------- | ---- | ---------- | ------- | ----------- |
