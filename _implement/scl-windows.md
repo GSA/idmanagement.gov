@@ -208,13 +208,11 @@ Domain controller certificates must be issued with a set of specific extensions 
 
             1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
 
-{% include alert-warning.html heading = "Prohibited Exceptions to SID Usage" content="Under no circumstances shall a Domain Controller autoenrolled in ADCS for certificate issuance be identified in a policy tuple exception in GPO \"Allow name-based strong mappings for certificates.\" See Step 4 below regarding policy tuples." %}
-
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Avoid Vulnerabilities with Device Identifiers</h4>
     <p class="usa-alert__text">
-      Vulnerabilities identified in CVEs reported in May 2022 have outlined potential avenues for network authentication based on spoofed or emulated device certifiates that have not been issued by trusted CAs.  In order to avoid these vulnerabilities, AD implmenters must prohibit the use of any non-person entity (NPE or Device) certifiates issued by CAs listed in GPO policy tuples.  Please see the following <a class="usa-link usa-link--external" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">Microsoft Knowledge Blog</a> for additional specifics regarding these vulnerabilities. 
+      Vulnerabilities identified in CVEs reported in May 2022 have outlined potential avenues for network authentication based on spoofed or emulated device certifiates that have not been issued by trusted CAs.  In order to avoid these vulnerabilities, AD implmenters must prohibit the use of any non-person entity (NPE or Devices to include DCs) certificates issued by CAs listed in GPO policy tuples.  Please see the following <a class="usa-link usa-link--external" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">Microsoft Knowledge Blog</a> for additional specifics regarding these vulnerabilities. 
     </p>
   </div>
 </div>
