@@ -167,7 +167,7 @@ The following table provides a summary of the roadmap activities. This roadmap i
 
 On May 21, 2019, the Office of Management and Budget (OMB) released a new Identity, Credential, and Access Management (ICAM) policy (M-19-17). This memo mandated that GSA publish “a consolidated catalog of existing ICAM solutions and shared services.” The attached catalog includes several special item numbers (SINs) within the Multiple Award Schedules (MAS). Please note that MAS has recently gone through a consolidation; therefore, new SIN designations have been included.
 
-Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions, shared services, have also been included such as login.gov and Max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework helps agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
+Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quotation (RFQ) tool designed to facilitate the request for submission of quotations for a wide range of products and services. Non-MAS solutions and shared services have also been included, such as login.gov and Max.gov. For convenience and clarity, the corresponding practice area and services provided by the ICAM Services Framework are identified for each solution. The ICAM Services Framework helps agencies translate between requirements and technical solutions. Agencies can leverage these solutions now to begin meeting the requirements of the OMB ICAM policy.
 
 <table>
   <tr>
@@ -215,7 +215,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
   <tr>
     <td>Access Management</td>
     <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
-    <td style="width:350px">Includes DHS approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
+    <td style="width:350px">Includes DHS-approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
     <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by the Department of Homeland Security (DHS)</td>
     <td><a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/CDM%20Tools%20Product%20Ordering%20Procedure.pdf" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
