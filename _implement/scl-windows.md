@@ -283,10 +283,10 @@ There are six altsecid mapping options to choose from; however, three of these a
 
 | Options       | Tag     | Example | Strength | Considerations |
 | ------------- |-------------| -----|-----|
-| Issuer and Subject     | X509:\<I>\<S>  | X509:\<br/><I>C=US,O=U.S. Government,<br/>OU=Certification Authorities,OU=Government Demonstration CA<br/>\<S>C=US,O=U.S. Government,<br/>OU=Government Agency,<br/>CN=JANE DOE OID.0.9.2342.19200300.100.1.1=<br/>47001003151020 | Supported with Policy Tuple | Implementers will need to leverage a policy tuple to accomodate this altsecid.  Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
-| Issuer and Serial Number | X509:\<I>\<SR> | X509:\<br/><I>C=US,O=U.S. Government,<br/>OU=Certification Authorities,<br/>OU=Government Demonstration CA<br/>\<SR>46a65d49 | Supported | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
+| Issuer and Subject     | X509:\<I>\<S>  | X509:<br/>\<I>C=US,O=U.S. Government,<br/>OU=Certification Authorities,OU=Government Demonstration CA<br/>\<S>C=US,O=U.S. Government,<br/>OU=Government Agency,<br/>CN=JANE DOE OID.0.9.2342.19200300.100.1.1=<br/>47001003151020 | Supported with Policy Tuple | Implementers will need to leverage a policy tuple to accomodate this altsecid.  Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
+| Issuer and Serial Number | X509:\<I>\<SR> | X509:<br/>\<I>C=US,O=U.S. Government,<br/>OU=Certification Authorities,<br/>OU=Government Demonstration CA<br/>\<SR>46a65d49 | Supported | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
 | Subject Key Identifier     | X509:\<br/><SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Supported | Highly unique; may be difficult to manage. |
-| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<br/><SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Supported | Highly unique; may be difficult to manage.   |
+| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:<br/>\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Supported | Highly unique; may be difficult to manage.   |
 | Subject     | X509:\<S> | X509:<br/>\<S>C=US,O=U.S. Government,<br/>OU=Government Agency,<br/>CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Deprecated | This field is no longer supported for altsecid mapping as of Sept 2024. |
 | RFC822 name | X509:\<RFC822>      |   X509:<br/>\<RFC822>john.smith@hhs.gov |  Deprecated |  This field is no longer supported for altsecid mapping as of Sept 2024. |
 
