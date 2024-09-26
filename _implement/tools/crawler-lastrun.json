@@ -1,9 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:132909504651575765812721185148367737576559902907"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
