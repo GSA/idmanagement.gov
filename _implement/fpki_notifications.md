@@ -74,7 +74,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
-**Last Update**: September 09, 2024
+**Last Update**: September 20, 2024
 
 {% include graph.html %}
 
@@ -117,7 +117,7 @@ The FPKI Graph was built by using the same tools and code as the [Berkley ICSI S
 
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV), PIV-Interoperable (PIV-I), or Derived PIV (dPIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust.
 
-{% include alert-info.html content="This table was last updated on <b>August  2, 2023</b>. Please email fpki at gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>August  2, 2023</b>. Please email [fpki@gsa.gov](mailto:fpki@gsa.gov) to suggest an update or correction." %} 
 
 <br>
   
