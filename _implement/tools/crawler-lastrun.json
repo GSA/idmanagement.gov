@@ -4032,10 +4032,15 @@
             "serial-number": "175567204229783743591458183087529700129959",
             "akid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
             "skid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "status": "Certificate Valid, but no Path to Common",
+            "status": "Certificate Invalid",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "Unable to build Path"
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US:09e478564102a46b20da93e845f631e14cc4c4fc",
+            "validity-dates": {
+                "not-before": "2023-09-26 14:12:18+00:00",
+                "not-after": "2024-09-30 14:12:18+00:00"
             }
         },
         {
