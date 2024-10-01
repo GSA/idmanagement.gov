@@ -15,7 +15,7 @@ subnav:
 ---
 
 Federal agencies require systems and services to be functional, secure, and compatible with other products. The General Services Administration (GSA) supports these requirements through testing and identifying products and services.
-- The GSA Federal Acquisition Service issues long-term governmentwide contracts that provide federal, state, and local government buyers access to commercial products, services and solutions at pre-negotiated pricing.
+- The GSA Federal Acquisition Service issues long-term government-wide contracts that provide federal, state, and local government buyers access to commercial products, services, and solutions at pre-negotiated pricing.
 - The GSA Office of Government-wide Policy provides testing and certification services for specific product categories.
 
 In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government must apply to a Multiple Award Schedule (MAS) Special Item Number (SIN). All ICAM-related SINs require a technical evaluation. In the case of [SIN 541519CSP - Credential Service Provider (CSP)]({{site.baseurl}}/docs/credential-service-provider-capabilities-template-may-2024.docx){:target="_blank"}{:rel="noopener noreferrer"}, the provided capabilities template must be thoroughly completed.
@@ -25,7 +25,7 @@ In most cases, vendors who wish to sell Identity, Credentialing, and Access Mana
 
 Two product categories require additional testing at a testing facility before applying to the Multiple Award Schedule.
 1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards]({{site.baseurl}}/fips201/#approved-products---piv-smart-cards ) category.
-2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems) category.
+2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure, require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems) category.
 
 Please get in touch with fips201ep at gsa dot gov if you have product approval questions.
 
@@ -70,7 +70,7 @@ After testing and approval, apply to have your product or service listed on the 
 
 ## Step 3 – Get on a GSA Schedule
 
-The GSA MAS Program also referred to as the "Schedule," is the premier contract vehicle for the federal government. The MAS Program is a long-term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for a business, but it requires effort and commitment to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/help-with-mas-contracts-to-sell-to-government/team-up-with-other-mas-contractors){:target= "_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}
+The GSA MAS Program, also referred to as the "Schedule," is the premier contract vehicle for the federal government. The MAS Program is a long-term government-wide contract between commercial suppliers and the federal government. Holding a Schedule contract can open doors for a business, but it requires effort and commitment to succeed. [See if the Schedule is a good fit for your business first.](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule/help-with-mas-contracts-to-sell-to-government/team-up-with-other-mas-contractors){:target= "_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 - [Sell through GSA MAS](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/multiple-award-schedule-it/sell-through-mas-information-technology){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"}  – Agencies use the MAS to fulfill their technology products and services needs.
 
