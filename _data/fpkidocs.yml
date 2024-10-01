@@ -1001,7 +1001,7 @@
   status: post
   remove: 02/06/2026
 
-- category: Annual Reviews
+- category: Annual Review Requirements
   numberProposal: 1.2
   name: FPKI Annual Review Requirements v1.2
   date: 05/06/2022
@@ -1009,7 +1009,7 @@
   status: post
   remove: 09/13/2027
 
-- category: Annual Reviews
+- category: Annual Review Requirements
   numberProposal: 1.01
   name: FPKI Annual Review Requirements v1.01
   date: 09/29/2021
@@ -1017,7 +1017,7 @@
   status: post
   remove: 09/29/2024
 
-- category: Annual Reviews
+- category: Annual Review Requirements
   numberProposal: 1.0
   name: FPKI Annual Review Requirements v1.0
   date: 04/11/2017
