@@ -48,7 +48,7 @@ The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/), tests [comme
 Once you have reviewed the testing documents, contact one of the Testing Labs listed below. The lab will walk you through the application and testing process.
 
 Three approved testing labs test PIV card stock:
-- [atsec information security corporation](http://www.atsec.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
+- [Atsec Information Security Corporation](http://www.atsec.com/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
   - Contact: Andreas Fabis
   - Phone: (512) 615-7300
 - [Booz Allen Hamilton Cyber Assurance Testing Laboratory](http://csrc.nist.gov/groups/STM/testing_labs/#24){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
