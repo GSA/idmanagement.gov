@@ -425,6 +425,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <div id="m-a1" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px"  width="156" height="156"/></p>
         <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
+        <br>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
@@ -511,6 +512,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <div id="m-a3" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
         <p>You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.</p>
+        <br>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to assign entitlements to an employee or contractor.</p>
@@ -548,6 +550,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <div id="m-a4" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
         <p>After you identity proof an individual, you’ll issue some proof of that individual’s claimed identity. A credential (like a physical card) is a type of authenticator that serves as a tool for an employee or contractor to gain access to agency services.</p>
+        <br>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to issue a credential to an employee or contractor.</p>
