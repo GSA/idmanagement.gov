@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
-    <meta lastmodifieddate="2024-09-09">
+    <meta lastmodifieddate="2024-09-30">
         <creator>py-crawler</creator>
-        <description>Created by Py-Crawler on 2024-09-09</description>
+        <description>Created by Py-Crawler on 2024-09-30</description>
     </meta>
     <graph defaultedgetype="directed" mode="static">
         <nodes>
@@ -31,16 +31,6 @@
                 <viz:color r="153" g="0" b="153"/>
                 <viz:position x="275.0" y="123.0" z="0.0"/>
             </node>
-            <node id="common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" label="Carillon PKI Services CA 1">
-                <size value="10.0"/>
-                <viz:color r="153" g="0" b="153"/>
-                <viz:position x="395.0" y="65.0" z="0.0"/>
-            </node>
-            <node id="common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" label="Carillon PKI Services CA 2">
-                <size value="10.0"/>
-                <viz:color r="153" g="0" b="153"/>
-                <viz:position x="380.0" y="127.0" z="0.0"/>
-            </node>
             <node id="common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" label="Carillon PKI Services G2 Root CA 2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
@@ -54,132 +44,132 @@
             <node id="common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD DERILITY CA-1">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="355.0" y="186.0" z="0.0"/>
+                <viz:position x="395.0" y="68.0" z="0.0"/>
             </node>
             <node id="common_name:DOD DERILITY CA-3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD DERILITY CA-3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="320.0" y="241.0" z="0.0"/>
+                <viz:position x="378.0" y="134.0" z="0.0"/>
             </node>
             <node id="common_name:DOD DERILITY CA-4,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD DERILITY CA-4">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="278.0" y="289.0" z="0.0"/>
+                <viz:position x="350.0" y="196.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-59,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-59">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="228.0" y="330.0" z="0.0"/>
+                <viz:position x="312.0" y="252.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-62,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-62">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="172.0" y="362.0" z="0.0"/>
+                <viz:position x="265.0" y="301.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-63,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-63">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="112.0" y="385.0" z="0.0"/>
+                <viz:position x="210.0" y="341.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-64,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-64">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="49.0" y="398.0" z="0.0"/>
+                <viz:position x="150.0" y="372.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-65,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-65">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-16.0" y="400.0" z="0.0"/>
+                <viz:position x="85.0" y="392.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-70">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-80.0" y="392.0" z="0.0"/>
+                <viz:position x="17.0" y="400.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-71,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-71">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-141.0" y="375.0" z="0.0"/>
+                <viz:position x="-50.0" y="397.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-72,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-72">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-199.0" y="347.0" z="0.0"/>
+                <viz:position x="-117.0" y="383.0" z="0.0"/>
             </node>
             <node id="common_name:DOD EMAIL CA-73,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-73">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-252.0" y="310.0" z="0.0"/>
+                <viz:position x="-180.0" y="358.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-59,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-59">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-299.0" y="266.0" z="0.0"/>
+                <viz:position x="-237.0" y="322.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-62,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-62">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-338.0" y="214.0" z="0.0"/>
+                <viz:position x="-288.0" y="277.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-63,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-63">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-367.0" y="157.0" z="0.0"/>
+                <viz:position x="-331.0" y="224.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-64,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-64">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-388.0" y="96.0" z="0.0"/>
+                <viz:position x="-364.0" y="165.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-65,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-65">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-398.0" y="33.0" z="0.0"/>
+                <viz:position x="-387.0" y="101.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-70">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-398.0" y="-32.0" z="0.0"/>
+                <viz:position x="-398.0" y="34.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-71,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-71">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-388.0" y="-95.0" z="0.0"/>
+                <viz:position x="-398.0" y="-33.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-72,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-72">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-367.0" y="-156.0" z="0.0"/>
+                <viz:position x="-387.0" y="-100.0" z="0.0"/>
             </node>
             <node id="common_name:DOD ID CA-73,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD ID CA-73">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-338.0" y="-213.0" z="0.0"/>
+                <viz:position x="-364.0" y="-164.0" z="0.0"/>
             </node>
             <node id="common_name:DOD SW CA-60,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-60">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-299.0" y="-265.0" z="0.0"/>
+                <viz:position x="-331.0" y="-223.0" z="0.0"/>
             </node>
             <node id="common_name:DOD SW CA-66,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-66">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-252.0" y="-309.0" z="0.0"/>
+                <viz:position x="-288.0" y="-276.0" z="0.0"/>
             </node>
             <node id="common_name:DOD SW CA-67,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-67">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-200.0" y="-346.0" z="0.0"/>
+                <viz:position x="-237.0" y="-321.0" z="0.0"/>
             </node>
             <node id="common_name:DOD SW CA-74,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-74">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-141.0" y="-374.0" z="0.0"/>
+                <viz:position x="-180.0" y="-357.0" z="0.0"/>
             </node>
             <node id="common_name:DOD SW CA-75,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-75">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-80.0" y="-391.0" z="0.0"/>
+                <viz:position x="-117.0" y="-382.0" z="0.0"/>
             </node>
             <node id="common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US" label="DOE SSP CA">
                 <size value="10.0"/>
@@ -294,22 +284,22 @@
             <node id="common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA Component S23">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="-16.0" y="-399.0" z="0.0"/>
+                <viz:position x="-50.0" y="-396.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust ECA S22,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA S22">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="49.0" y="-397.0" z="0.0"/>
+                <viz:position x="17.0" y="-399.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust ECA S22C,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA S22C">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="112.0" y="-384.0" z="0.0"/>
+                <viz:position x="85.0" y="-391.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust ECA S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA S23">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="172.0" y="-361.0" z="0.0"/>
+                <viz:position x="150.0" y="-371.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US" label="IdenTrust Global Common Root CA 1">
                 <size value="10.0"/>
@@ -329,12 +319,12 @@
             <node id="common_name:Lockheed Martin Certification Authority 4 G2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,country_name:US" label="Lockheed Martin Certification Authority 4 G2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="228.0" y="-329.0" z="0.0"/>
+                <viz:position x="210.0" y="-340.0" z="0.0"/>
             </node>
             <node id="common_name:Lockheed Martin Certification Authority 6 G3,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,country_name:US" label="Lockheed Martin Certification Authority 6 G3">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="278.0" y="-288.0" z="0.0"/>
+                <viz:position x="265.0" y="-300.0" z="0.0"/>
             </node>
             <node id="common_name:Lockheed Martin Root Certification Authority 2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US" label="Lockheed Martin Root Certification Authority 2">
                 <size value="10.0"/>
@@ -399,12 +389,12 @@
             <node id="common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Signing CA-384">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="320.0" y="-240.0" z="0.0"/>
+                <viz:position x="312.0" y="-251.0" z="0.0"/>
             </node>
             <node id="common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Signing CA-G2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="355.0" y="-185.0" z="0.0"/>
+                <viz:position x="350.0" y="-195.0" z="0.0"/>
             </node>
             <node id="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" label="Raytheon Technologies Medium Assurance CA">
                 <size value="10.0"/>
@@ -529,12 +519,12 @@
             <node id="common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="WidePoint ECA 8">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="380.0" y="-126.0" z="0.0"/>
+                <viz:position x="378.0" y="-133.0" z="0.0"/>
             </node>
             <node id="common_name:WidePoint ECA 9,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="WidePoint ECA 9">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="395.0" y="-64.0" z="0.0"/>
+                <viz:position x="395.0" y="-67.0" z="0.0"/>
             </node>
             <node id="common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US" label="WidePoint NFI CA 5">
                 <size value="10.0"/>
@@ -629,12 +619,6 @@
         </nodes>
         <edges>
             <edge id="common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US" source="common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US" target="common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US" label="Boeing Medium Assurance Hardware Issuing CA G3" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
-            <edge id="common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" source="common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" target="common_name:Carillon PKI Services CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" label="Carillon PKI Services CA 2" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
-            <edge id="common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" source="common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" target="common_name:Carillon PKI Services CA 1,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" label="Carillon PKI Services CA 1" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA" label="Carillon PKI Services G2 Root CA 2" weight="1.0">

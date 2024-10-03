@@ -33,21 +33,15 @@ subnav:
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Dec 2022 - Update to Microsoft Network Authentication Issue</h4>
+    <h4 class="usa-alert__heading">September 2024 - Update to Microsoft Network Authentication Issue</h4>
     <p class="usa-alert__text">
-      The Microsoft KB mentioned above is updated. Note that the "disabled" mode retirement is still targeted at 2/14/23. CISA encourages any agency still reliant on "disabled" mode to move to "compatibility mode" by following the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> as soon as possible while a timeline and plans around long term resolution of this issue is finalized with Microsoft. Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
+      As of September 10th 2024, Microsoft has released a solution for Active Directory network authentication issues resulting from the May 2022 patches that impacted some PIV network authentications. The September patch applies to Windows Server 2019 and later and includes a mechanism for support of some deprecated identifiers asserted by PIV authentication certificates (e.g., UPN or X509IssuerSubject altsecid) and mapped to AD user accounts.  AD administrators now have the ability to add registry keys that include what is being termed a "Triple Mapping" or "Policy Tuple" that allows the domain controller to determine if an authentication certificate is issued from a trusted Certification Authority (CA) and if it asserts an acceptable policy OID before defining acceptable identifiers for user account mapping.  You can read more about these AD changes in the following <a class="usa-link usa-link--external" href="https://techcommunity.microsoft.com/t5/public-sector-blog/enable-strong-name-based-mapping-in-government-scenarios/ba-p/4240402" target="_blank" rel="noopener noreferrer">Microsoft Public Sector Blog</a>.  Full enforcement mode for use of approved identifiers is still planned to go into effect on February 11, 2025 and compatibility mode will be fully retired on September 10th, 2025.  See Step 4 below regarding Account Linking for further details.
     </p>
   </div>
 </div>
 
-<div class="usa-alert usa-alert--error" role="alert">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">May 2022 - Known PIV Network Authentication Issue</h4>
-    <p class="usa-alert__text">
-      Some PIV-based authentication to Microsoft Domain Controllers are impacted by May 2022 Windows server patches.  If you encounter these PIV network logon issues, please review the <a class="usa-link usa-link--external" href="https://www.cisa.gov/guidance-applying-june-microsoft-patch" target="_blank" rel="noopener noreferrer">CISA Guidance</a> which is supported by the following <a class="usa-link" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">KB5014754—Certificate-based authentication changes on Windows domain controllers</a> page.  Additional technical guidance can be requested through cyberlaison at CISA dot DHS dot gov.
-    </p>
-  </div>
-</div>
+{% include alert-info.html heading = "Approved AltSecID Identifiers" content="If your on-premise Active Directory user account mappings alreaady use X509SKI or X509IssuerSerialNumber altsecid, you will not need to take any action as a result of the September 2024 Microsoft updates." %}
+
 
 ## Introduction
 
@@ -63,8 +57,8 @@ Check the following items **before** reviewing these network guides and lessons 
 
 1. Users have PIV credentials and PIV card readers.
 1. You are using Microsoft Active Directory to manage your Windows network.
-1. Domain Controllers are Microsoft 2012 or newer.
-1. User workstations **are joined** to your network and are Windows 8 or Windows 10-based.
+1. Domain Controllers are running Microsoft Windows Server 2019 or newer.
+1. User workstations **are joined** to your network and are Windows 10 or newer.
 
 ## Configuration Checklist
 
@@ -82,7 +76,7 @@ There are five additional guides:
 7. [Local Certification Authority](#step-7---local-certification-authority)
 8. [Authentication Assurance](#step-8---authentication-assurance)
 
-We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring MacOSX and other operating systems.  
+We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring for other operating systems.  
 
 Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
 
@@ -144,7 +138,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web Services for Validating PIV Certificates
 
-[Revocation]({{site.baseurl}}/university/pki/#revocation-checking)) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/university/piv/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
+[Revocation]({{site.baseurl}}/university/pki/#revocation-checking) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/university/piv/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|
@@ -154,6 +148,15 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 Lightweight Directory Application Protocol (LDAP) for retrieving information is not preferred and has been increasingly deprecated; therefore, LDAP is not included.
 
 There are dozens of OCSP and CRL URLs for *all* issued PIV credentials.  If you have users with PIV credentials from other agencies or partners, identifying all the URLs to verify against your network configurations will be more complex.
+
+<div class="usa-alert usa-alert--success">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Externally Issued PIV Revocation Resources</h4>
+    <p class="usa-alert__text">
+     You can find end-entity CRL Distrobution Point and OCSP URIs under our Active PIV Issuing CA page in the event you require revocation information for externally issued <a class="usa-link usa-link--external" href="https://www.idmanagement.gov/fpki/notifications/#active-issuing-ca-certificate-details" target="_blank">PIV CAs</a>.
+    </p>
+  </div>
+</div>
 
 ## Web Services for the Federal Public Key Infrastructure
 
@@ -199,6 +202,21 @@ Domain controller certificates must be issued with a set of specific extensions 
 
     > The domain controller's certificate must be installed in the domain controller's local computer's **_personal certificate store_**.
 
+{% include alert-info.html heading = "Supported Domain Controller Identifiers" content="Many Domain Controllers are issued device certificates via Active Directory Certificate Services (ADCS) that may be operating an Only Locally Trusted PKI also known as an \"Enterprise\" PKI. Those ADCS implementers will want to include the Microsoft proprietary Security Identifier (SID) in their DC certificate profile to ensure compliance with recent Microsoft changes. For other AD implementers who receive DC certificates from their PIV Shared Service Provider, you may want to work with that provider to include the SID in any renewed or rekeyed DC certificates." %}  
+
+- It is also recommended to include a non-critical Security Identifier (ObjectSID) extention in your DC certificates, for example:
+
+            1.3.6.1.4.1.311.25.2 = S-1-5-domain-516
+
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Avoid Vulnerabilities with Device Identifiers</h4>
+    <p class="usa-alert__text">
+      Vulnerabilities identified in CVEs reported in May 2022 have outlined potential avenues for network authentication based on spoofed or emulated device certificates that have not been issued by trusted CAs.  In order to avoid these vulnerabilities, AD implmenters must prohibit the use of any non-person entity (NPE or Devices to include DCs) certificates issued by CAs listed in GPO policy tuples.  Please see the following <a class="usa-link usa-link--external" href="https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16" target="_blank" rel="noopener noreferrer">Microsoft Knowledge Blog</a> for additional specifics regarding these vulnerabilities. 
+    </p>
+  </div>
+</div>
+
 ## Issue Domain Controller Certificates
 
 U.S. federal civilian agencies have a variety of information security policies.  These policies cover whether you should use a domain controller certificate issued from your agency's local enterprise certification authority (CA) or whether the certificate must be issued from a CA managed and certified under the Federal Public Key Infrastructure (FPKI).  Each agency's information security policy should be followed.
@@ -212,6 +230,8 @@ If you do have a local enterprise CA, [here are some tips](#step-7---local-certi
 ## Step 3 - Trust Stores
 
 Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide]({{site.baseurl}}/implement/trust-fcpca/#step-2---distribute-to-operating-systems).
+
+{% include alert-info.html heading = "Mutual Trust" content="Note that both the client machine and domain controller trust stores must be configured for mutual authentication. As a result, the domain controller issuing and root CA certificates needs to be included in the client trust store and the client PIV authentication issuing, intermediate and root certifiates need to be able to be trusted by the domain controller." %}  
 
 ## Step 4 - Account Linking
 
@@ -257,22 +277,45 @@ First, you need to link each user's PIV Authentication certificate to their doma
 
 Adding altSecurityIdentities attributes **will not** break existing UPN account linking or cause smart card logon to fail. It's possible to plan your transition carefully and to take your time populating the altSecurityIdentities attribute for domain users. 
 
-There are six mapping options to choose from, but most organizations use **Issuer and Subject**.
+There are six altsecid mapping options to choose from; however, three of these are considered to be "weak" identifiers that will either need to be migrated to a "strong" identifier or policy tuble mappings will need to be implmented to allow for use of an Issuer/Subject altsecid. 
 
-| Options       | Tag     | Example | Considerations |
+{% include alert-warning.html heading = "Depricaticated Mappings" content="As of September 2024, Microsoft has depricated the use of Subject and RFC822 altsecid mappings as they were considered vulnerable to spoofing attempts." %} 
+
+| Options       | Tag     | Example | Strength | Considerations |
 | ------------- |-------------| -----|-----|
-| Subject     | X509:\<S> | X509:\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 |  For certificates which assert the UID identifier (0.9.2342.19200300.100.1.1) or other object identifier in the common name, the identifier is prepended with the _OID_ qualifier. |
-| Issuer and Subject     | X509:\<I>\<S>  | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<S>C=US,O=U.S. Government,OU=Government Agency,CN=JANE DOE OID.0.9.2342.19200300.100.1.1=47001003151020 | Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
-| Issuer and Serial Number | X509:\<I>\<SR> | X509:\<I>C=US,O=U.S. Government,OU=Certification Authorities,OU=Government Demonstration CA\<SR>46a65d49 | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
-| Subject Key Identifier     | X509:\<SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 |  Not generally recommended; may be difficult to manage. |
-| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Not generally recommended; may be difficult to manage.   |
-| RFC822 name | X509:\<RFC822>      |   Not recommended |    Not recommended; not commonly populated in PIV Authentication certificates. |
+| Issuer and Subject     | X509:\<I>\<S>  | X509:<br/>\<I>C=US,O=U.S. Government,<br/>OU=Certification Authorities,OU=Government Demonstration CA<br/>\<S>C=US,O=U.S. Government,<br/>OU=Government Agency,<br/>CN=JANE DOE OID.0.9.2342.19200300.100.1.1=<br/>47001003151020 | Supported with Policy Tuple | Implementers will need to leverage a policy tuple to accomodate this altsecid.  Note the spaces carefully when testing machine-readable formats of the certificate extensions versus the human-readable formats. |
+| Issuer and Serial Number | X509:\<I>\<SR> | X509:<br/>\<I>C=US,O=U.S. Government,<br/>OU=Certification Authorities,<br/>OU=Government Demonstration CA<br/>\<SR>46a65d49 | Supported | Serial number is stored in a reversed byte order from the human-readable version, starting at the most significant byte. |
+| Subject Key Identifier     | X509:\<br/><SKI> |   X509:\<SKI>df2f4b04462a5aba81fec3a42e3b94beb8f2e087 | Supported | Highly unique; may be difficult to manage. |
+| SHA1 hash of public key| X509:\<SHA1-PUKEY> |  X509:<br/>\<SHA1-PUKEY>50bf88e67522ab8ce093ce51830ab0bcf8ba7824 |  Supported | Highly unique; may be difficult to manage.   |
+| Subject     | X509:\<S> | X509:<br/>\<S>C=US,O=U.S. Government,<br/>OU=Government Agency,<br/>CN=JANE DOE OID.0.9.2342.19200300.100.1.1=25001003151020 | Deprecated | This field is no longer supported for altsecid mapping as of Sept 2024. |
+| RFC822 name | X509:\<RFC822>      |   X509:<br/>\<RFC822>john.smith@hhs.gov |  Deprecated |  This field is no longer supported for altsecid mapping as of Sept 2024. |
 
-### Gathering PIV Authentication Certificates for Mapping into AD
+{% include alert-info.html heading = "Use of Security Identifiers (SID)" content="Although it is not mandated by FPKI PIV certificate profiles, an SID is a Microsoft priorietary identifier that can be asserted as a non-critical extention in a PIV authentication certificate and used for AD user account mapping." %} 
+
+Policy tuple mappings to accomodate some weak identifier mappings are available in Windows Server 2019 and later as of September 10th, 2024.  Tuple mappings are defined via group policy, specifically *Administrative Settings / System / KDC* under an entry titled **"Allow name-based strong mappings for certificates"**  wherein administrators can define three things to include:
+   1. Trusted issuing CA - identified by its certificate thumbprint, each tuple will be unique to each issuing CA thumbprint
+   2. Trusted certificate policy OID - ensures that the client certificate is issued acording to a certain policy or policies, and
+   3. Name matching - defines what field to extract from the certificate that meets the previous two conditions for correlation to AD user accounts, this will generally be UPN suffix and/or altsecid IssuerSubject
+
+Note that if you authenticate PIV certificates from multiple issuing CAs you will require several registry entries with the tuple mapping to account for the uniqe thumbprints of each issuing CA.
+
+The following examples provide a few options for various potential policy tuple values that can be used to identify a few types of certificate based network authentication credentials.
+
+1. UPN only policy tuple for a standard internal PIV user (Entrust Managed Services SSP CA, PIV Authentication OID, Department of Health and Human Services UPN Suffix)
+
+            19fea49c468760edce9600a9da9657b484734d24; 2.16.840.1.101.3.2.1.3.13; UPNsuffix=hhs.gov
+   
+3. Altsecid policy tuple for a priviledged administrator with an ALT token (Entrust Managed Services SSP CA, Common-Hardware Token, Issuer/Subject altsecid)
+
+            19fea49c468760edce9600a9da9657b484734d24; 2.16.840.1.101.3.2.1.3.7; IssuerSubject
+   
+5. Altsecid policy tuple for an external PIV or dPIV user (NASA Operational CA, PIV Authentication and dPIV Authentication OIDs, Issuer/Subject altsecid)
+
+            67ddd6f4be3b69568f591bf999db2ef3085f7c5bl, 2.16.840.1.101.3.2.1.3.13, 2.16.840.1.101.3.2.1.3.40; IssuerSubject
 
 Identity certificates used for Windows logon can generally be found: 
 -	On the smart card itself. 
--	By requesting the certificates directly from the smart card issuer. 
+-	By requesting the certificates directly from the smart card issuer (either the CA or RA). 
 -	By exporting the certificates from a third party application in which the certificates are already registered.
 
 Each of these options is discussed below.
@@ -308,6 +351,8 @@ To gather the certificate from the smart card using a Windows workstation, have 
 **Request Certificates from the Smart Card Issuer** <br>
 Your organization’s credential issuer may have a copy of certificates issued to current users. You will need to specifically request from the issuer the most recent valid identity certificates suitable for smart card logon. The issuer will produce these certificates in a variety of ways, based on the certification authority or the Card Management System in use. 
 
+{% include alert-info.html heading = "PIV Authentication Certificate Sources" content="USAccess customers can recieve PIV authentication certifciates via their SIP interface. Reach out to usaccess at gsa dot gov for additional information." %} 
+
 **Export Certificates from a Third Party System** <br>
 Your organization may have already collected the relevant certificates as part of the enrollment process for a third party application, such as a FIPS 201-compliant PACS system. Depending on the system and configuration in use, you may be able to export your cardholders’ certificates from the database where they are enrolled. Speak with your PACS integrator to understand what options are available to you.
 <img src="{{site.baseurl}}/assets/piv/pivaccount-card-ops.png" alt="A screenshot of a Card Operations window that shows several rows of card IDs and other information." width="624" height="268">
@@ -342,7 +387,7 @@ If you are designing an automated process to transition users from Principal Nam
     <p class="usa-alert__text">
       We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above. Check out the script in our    
       <a class="usa-link usa-link--external" href="https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId" target="_blank">public scripts repository</a>
-      or contact ICAM at GSA.Gov for more information.
+      or contact <a href="mailto:icam@gsa.gov">icam@gsa.gov</a> for more information.
     </p>
   </div>
 </div>
@@ -374,6 +419,8 @@ It's possible to revert to UPN account linking by removing the registry setting 
 Use group policy objects or other centralized management options to manage registry options.
 
 ## Step 5 - Group Policies and Enforcement
+
+{% include alert-info.html heading = "Group Policy to Support \"Weak\" Identifiers" content="Administrators can enable <b>Allow name-based strong mappings for certificates</b>, in conjunction with policy tuple mappings mentioned in Step 4, to continue to use \"weak\" PIV alternate security identifiers for user account correlation." %} 
 
 The U.S. federal government publishes the [United States Government Configuration Baseline (USGCB)](http://usgcb.nist.gov/usgcb_content.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for use by Executive Branch agencies to promote uniform configurations for commonly used operating systems.  The USGCB configuration guidelines for specific operating systems include references to some configurations related to smart card (PIV) logon and should be referenced first.
 
