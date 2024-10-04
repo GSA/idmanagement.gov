@@ -43,7 +43,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 
 ## Approved 13.01 Topology PACS Products
 
-<table class="usa-table usa-table--borderless">
+<table class="usa-table usa-table--borderless usa-table--sticky-header">
   <caption>
     Approved 13.01 Topology PACS Products List
   </caption>
@@ -73,7 +73,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 
 ## Approved 13.02 Topology PACS Products
 
-<table class="usa-table usa-table--borderless">
+<table class="usa-table usa-table--borderless usa-table--sticky-header">
   <caption>
     Approved 13.02 Topology PACS Products List
   </caption>
@@ -112,7 +112,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 
 ## PACS Solutions Awaiting Approval
 
-<table class="usa-table">
+<table class="usa-table usa-table--sticky-header">
   <caption>
     PACS Solutions Awaiting Approval List
   </caption>
@@ -156,7 +156,7 @@ Please note:
 
 ## Approved PIV Cards
 
-<table class="usa-table">
+<table class="usa-table usa-table--sticky-header">
   <caption>
     Approved PIV Cards List
   </caption>
@@ -215,7 +215,7 @@ The FIPS 201 Evaluation Programâ€™s Removed Products List (RPL) displays product
 
 <br>
 {% for category in categories %}
-<table class="usa-table">
+<table class="usa-table usa-table--sticky-header">
   <caption>{{ category }} Category List</caption>
   <thead>
     <tr>
