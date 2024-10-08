@@ -67,7 +67,7 @@ subnav:
 
 This guide provides information on distributing the Federal Common Policy CA G2 (FCPCAG2) certificate to government-furnished workstations and devices as a _trusted root certificate_.
 
-This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root G2 ("FCPCAG2") within their enterprise. This guide replaces the previous FCPCA migration guide, since the migration to FCPCAG2 has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCAG2 root certificate, and how to verify that the certificate is working as intended.
+This guide is written for systems administrators who need to enable trust for the Federal Common Policy Root G2 ("FCPCAG2") within their enterprise. This guide replaces the previous FCPCA migration guide since the migration to FCPCAG2 has been completed. This guide contains the portions of the previous guide that are still useful, including information about how to distribute the FCPCAG2 root certificate, and how to verify that the certificate is working as intended.
 
 Enabling Enterprise trust of the FCPCA Root Certificate requires the following steps:
 
@@ -83,7 +83,7 @@ This guide ends by presenting answers to [Frequently Asked Questions](#frequentl
 
 ## Step 1 - Obtain and verify the FCPCA root certificate
 
-The first step in this process is to obtain a copy of the FCPCAG2 root certificate, and verify its authenticity.
+The first step in this process is to obtain a copy of the FCPCAG2 root certificate and verify its authenticity.
 
 ## Download a Copy of the FCPCA root certificate
 
@@ -143,7 +143,7 @@ To verify your copy of the FCPCA root certificate, use one of these options:
 
 After you have verified the certificate, you are ready to distribute the FCPCA root certificate certificate within your environment.
 
-- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems), or
+- [You can distribute it to operating systems in your environment](#step-2---distribute-to-operating-systems) or
 - you can [distribute it to applications within your environment](#step-3---verify-operating-system-distribution).
 
 ## Step 2 - Distribute to operating systems
@@ -210,7 +210,7 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
       <ul>
         <li>NTAUTH is a registry location at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a certificate store.</li>
         <li>The NTAuthCertificates determine which CAs are trusted for domain authentication use cases. NTAuth (or NTAuthCertificates) is not a Windows certificate store but an Active Directory object containing certificates.</li>
-        <li>add store is used to add a certificate to a certificate store, while publish publishes values into the directory.</li>
+        <li>Add store is used to add a certificate to a certificate store, while publish publishes values into the directory.</li>
         <li>With gpupdate /force,  the update starts immediately, but replication can take some time depending on the deployment's complexity (e.g., number of domain controllers or network configuration). The average default delay for gpupdate without force is around 90 minutes. This behavior occurs when Group Policy settings are updated and the client-side extension responsible for autoenrollment runs.</li>
         <li>The registry is not updated in specific scenarios, such as AD replication latency or when the “Do not enroll certificates automatically” policy setting is enabled. In these scenarios, run the following command manually to insert the certificate into the registry location: certutil -enterprise -addstore NTAuth issuing_ca_name.cer.</li> 
       </ul>
@@ -225,7 +225,7 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
 1. Navigate to **Server Manager**.
 1. Select **Tools**.
 1. Select **Group Policy Management** from the drop-down list.
-1. Right-click your desired domain(s), and select **Create a GPO in this domain, and Link it here**.
+1. Right-click your desired domain(s) and select **Create a GPO in this domain, and Link it here**.
 1. Enter a GPO **Name**, and click **OK**.
 1. Right-click the newly created GPO and click **Edit**.
 1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
