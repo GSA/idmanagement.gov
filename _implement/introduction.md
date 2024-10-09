@@ -41,7 +41,7 @@ The majority of engineering guides are focused on helping agencies configure PIV
   
 2. Cloud Certificate-based Authentication Configuration
    1. [Cloud or Hybrid-Joined Azure Entra ID]({{site.baseurl}}/implement/cba-azure/)
-   2. Okta (Coming soon!)
+   2. [Okta Yubikey Implementation Guide]({{site.baseurl}}/implement/yubikey-guide/)
 
 3. FIDO2 Configuration
    1. [Windows Hello for Business]({{site.baseurl}}/implement/whfb)
