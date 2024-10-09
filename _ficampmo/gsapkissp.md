@@ -237,16 +237,12 @@ The Security Authorization provides organizational accountability by requiring a
 - If approved, the AO signs and issues an ATO.
 - The SSP performs risk management activities documented in the IT Security Procedural Guide: *Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 and the SSP Handbook.*
 
-{% include alert-warning.html heading="" content="The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufﬁcient for their continued use.
-
-To avoid signiﬁcant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities.
-
-Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP." %}
+{% include alert-warning.html heading="" content="The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufﬁcient for their continued use<br><br>To avoid signiﬁcant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities.<br><br>Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP." %}
 
 
 ### Step 5 -Apply to GSA MAS and Get Listed as an Identity Trusted Service
 
-Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
+Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready to apply [to the GSA MAS](https://www.gsa.gov/buy-through-us/purchasing-programs/multiple-award-schedule){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to offer digital certiﬁcate services governmentwide. The schedule provides a customer agency with a level of assurance that the SSP has been pre-vetted and is offering the best value. Once a SSP is on a schedule, it affords them access to other GSA schedule opportunities.
 
 ### Acquisition Procedural Guidance:
 
