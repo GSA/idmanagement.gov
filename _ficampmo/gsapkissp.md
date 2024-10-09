@@ -237,7 +237,7 @@ The Security Authorization provides organizational accountability by requiring a
 - If approved, the AO signs and issues an ATO.
 - The SSP performs risk management activities documented in the IT Security Procedural Guide: *Managing Enterprise Cybersecurity Risk CIO-IT Security-06-30 and the SSP Handbook.*
 
-{% include alert-warning.html heading="" content="The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufﬁcient for their continued use<br><br>To avoid signiﬁcant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities.<br><br>Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP." %}
+{% include alert-warning.html heading="" content="The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufﬁcient for their continued use. To avoid signiﬁcant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities. Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP." %}
 
 
 ### Step 5 -Apply to GSA MAS and Get Listed as an Identity Trusted Service
