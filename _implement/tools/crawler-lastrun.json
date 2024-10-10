@@ -1,7 +1,9 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": []
+        "new_certs": [
+            "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US:85078751516815692571400155738459603179"
+        ]
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -58,6 +60,7 @@
         "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
         "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
         "common_name:IGC CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+        "common_name:IGC CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
         "common_name:IGC Device CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
         "common_name:IGC Device CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
         "common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
@@ -1715,7 +1718,8 @@
                     "common_name:Advanced Health Systems Inc Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,state_or_province_name:Mississippi,country_name:US",
                     "common_name:IGC Server CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
                     "common_name:VA Patient Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
-                    "common_name:VA Provider Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
+                    "common_name:VA Provider Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+                    "common_name:IGC CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -2576,6 +2580,30 @@
             }
         },
         {
+            "subject": "common_name:IGC CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
+            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "serial-number": "85078751516815692571400155738459603179",
+            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
+            "skid": "96 9e 7f 30 b7 fc 9c bd 92 e6 09 e2 31 f0 b5 99 56 ad a4 0a",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://validation.identrust.com/roots/igcrootca1.p7c": [
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:Lockheed Martin Certification Authority 4 G2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,country_name:US",
             "issuer": "common_name:Lockheed Martin Root Certification Authority 2,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,locality_name:Denver,state_or_province_name:Colorado,country_name:US",
             "serial-number": "458536645303207850934278",
@@ -3228,8 +3256,8 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://nfirootweb.managed.entrust.com/AIA/CertsIssuedToNFIRootCA.p7c": [
-                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ],
                 "ldap://nfirootdir.managed.entrust.com/ou=Entrust Managed Services NFI Root CA,ou=Certification Authorities,o=Entrust,c=US?cACertificate;binary,crossCertificatePair;binary": []
@@ -3259,8 +3287,8 @@
             },
             "aia-entries": {
                 "http://nfirootweb.managed.entrust.com/AIA/CertsIssuedToNFIRootCA.p7c": [
-                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -3284,8 +3312,8 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://nfirootweb.managed.entrust.com/AIA/CertsIssuedToNFIRootCA.p7c": [
-                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -4029,18 +4057,13 @@
         {
             "subject": "common_name:TSCP SHA256 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP Inc.,country_name:US",
             "issuer": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "serial-number": "175567204229783743591458183087529700129959",
+            "serial-number": "175272005652931965381182741546838956747257",
             "akid": "09 e4 78 56 41 02 a4 6b 20 da 93 e8 45 f6 31 e1 4c c4 c4 fc",
             "skid": "b8 51 62 66 30 45 be e5 0c 57 1c 23 68 7e e6 4f f7 0b 3e f7",
-            "status": "Certificate Invalid",
+            "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Carillon Federal Services PIV-I CA2,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US:09e478564102a46b20da93e845f631e14cc4c4fc",
-            "validity-dates": {
-                "not-before": "2023-09-26 14:12:18+00:00",
-                "not-after": "2024-09-30 14:12:18+00:00"
+                "details": "Unable to build Path"
             }
         },
         {
@@ -4130,23 +4153,6 @@
             "pathbuilder-result": {
                 "result": "false",
                 "details": "Unable to build Path"
-            }
-        },
-        {
-            "subject": "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "134438939907708807470910238709384261307369289854",
-            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
-            "skid": "fa df 23 01 c4 aa ec 23 e3 ad 6f 0d 34 a5 0d cf 39 64 65 5e",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:79f00049eb7f77c25d410265348a90239b1e076f",
-            "validity-dates": {
-                "not-before": "2020-10-29 13:28:01+00:00",
-                "not-after": "2023-10-29 13:28:01+00:00"
             }
         },
         {
@@ -4838,6 +4844,12 @@
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "common_name:IGC CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
