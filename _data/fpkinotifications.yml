@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: October 10, 2024
+  change_type: CA Certificate Issuance
+  system: IdenTrust Global Common CA 1
+  change_description: The IdenTrust Global Common CA 1 issued a CA certificate for a new IdenTrust Global Common CA 2 on 010/2/2024.
+  contact: product at IdenTrust dot com
+  ca_certificate_hash: d1cf02d15fccc26e7b621c8d2f90259d9a3f93b3
+  ca_certificate_issuer: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
+  ca_certificate_subject: CN = IGC CA 2, OU = IdenTrust Global Common, O = IdenTrust, C = US
+  cdp_uri: http://validation.identrust.com/crl/igcrootca1.crl
+  aia_uri: http://validation.identrust.com/roots/igcrootca1.p7c
+  sia_uri: N/A
+  ocsp_uri: http://igc.ocsp.identrust.com/
+  ee_cdp_uri: http://igc.ocsp.identrust.com/
+  ee_ocsp_uri: http://validation.identrust.com/crl/igcca2.crl
+
 - notice_date: August 26, 2024
   change_type: Intent to Renew CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
