@@ -4,6 +4,8 @@
 # Status Post - Post it to the website; 
 # Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
 # Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
+# 
+# Used on: https://www.idmanagement.gov/fpki/
 
 - category: FPKIMA Audit Letter
   numberProposal: 2023
@@ -117,7 +119,7 @@
   
 - category: Federal Bridge Change Proposal
   numberProposal: 2023-05
-  name: Proposal 2023-05 | Certificate Modificaitons and Restorations
+  name: Proposal 2023-05 | Certificate Modifications and Restorations
   description: Clarify the requirements around certificate modifications, define requirements for certificate restoration, align audit and archive terminology for certificate status changes, and clarify the relationship between the CMS and the PIV-I content signer.
   date: 11/29/2023
   url: /docs/archived/fpki-fbca-cp-2305.pdf
@@ -324,14 +326,6 @@
   url: /docs/archived/fpki-fbca-cp-2202.pdf
   status: post
   remove: 05/06/2025
-
-- category: Supplementary Guidance
-  numberProposal: 1.01
-  name: FPKI Annual Audit Review Guidelines v1.01
-  date: 09/29/2021
-  url: /docs/archived/fpki-annual-review-requirements_v1.01_20210929.pdf
-  status: post
-  remove: 09/29/2024
 
 - category: Supplementary Guidance
   numberProposal: 2.0.1
@@ -952,14 +946,6 @@
   remove: 06/28/2024
 
 - category: Supplementary Guidance
-  numberProposal: 1.0
-  name: FPKI Annual Audit Review Guidelines v1.0
-  date: 04/11/2017
-  url: /docs/archived/fpki-annual-review-requirements-v1-20170411.pdf
-  status: post
-  remove: 09/30/2024
-
-- category: Supplementary Guidance
   numberProposal: 2.0
   name: NIST SP 800-53 Security Controls Overlay for PKI Systems v2.0
   date: 04/14/2014
@@ -1014,3 +1000,27 @@
   url: /docs/archived/us-federal-public-trust-tls-cp-v1-0-final.pdf
   status: post
   remove: 02/06/2026
+
+- category: Annual Review Guidance
+  numberProposal: 1.2
+  name: FPKI Annual Review Requirements v1.2
+  date: 05/06/2022
+  url: /docs/archived/fpki-annual-review-requirements_v1.2_20240913.pdf
+  status: post
+  remove: 09/13/2027
+
+- category: Annual Review Guidance
+  numberProposal: 1.01
+  name: FPKI Annual Review Requirements v1.01
+  date: 09/29/2021
+  url: /docs/archived/fpki-annual-review-requirements_v1.01_20210929.pdf
+  status: post
+  remove: 09/29/2024
+
+- category: Annual Review Guidance
+  numberProposal: 1.0
+  name: FPKI Annual Review Requirements v1.0
+  date: 04/11/2017
+  url: /docs/archived/fpki-annual-review-requirements_v1.0_20170411.pdf
+  status: post
+  remove: 09/30/2024

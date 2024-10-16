@@ -120,7 +120,7 @@ This guide advocates a set of minimum requirements for PIV-I credentials that th
 3. Technical requirements – Meet basic requirements for identity credentials to be interoperable with the federal PIV infrastructure.
 4. Security and auditing – The boundaries for auditing and compliance requirements require clarification for federal agencies.
 
-For additional information on PIV-I, please contact fpki at gsa.gov.
+For additional information on PIV-I, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
 
 ## 1. Introduction
 

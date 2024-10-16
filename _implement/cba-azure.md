@@ -140,7 +140,7 @@ There are four major steps involved with configuring CBA.
     <p class="usa-alert__text">
       The Federal PKI maintains a list of 
       <a class="usa-link" href="https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information" target="_blank" rel="noopener noreferrer">the lastest PIV certifications authorities</a>
-      . Contact ICAM at GSA.gov If you need help finding the right CA or think one needs to be updated.
+      . Contact <a href="mailto:icam@gsa.gov">icam@gsa.gov</a> If you need help finding the right CA or think one needs to be updated.
     </p>
   </div>
 </div>

@@ -100,7 +100,7 @@ Copy the graphics and text throughout this playbook to use at your agency to dri
 
 ## What Is ICAM?
 
-ICAM is the set of tools, policies, and systems that an agency uses to enable the right individual to access the right resource, at the right time, for the right reason in support of federal business objectives.
+ICAM is the set of tools, policies, and systems that an agency uses to enable the right individual to access the right resource at the right time for the right reason in support of federal business objectives.
 
 Agencies implement ICAM services and solutions to unify their IT services, improve physical access control, and improve information security and decisions. Understanding the building blocks of ICAM is key to understanding the FICAM Architecture. ICAM has three practice areas and two supporting elements. The supporting elements enhance the capabilities of the practice areas.
 
@@ -137,16 +137,16 @@ Agencies implement ICAM services and solutions to unify their IT services, impro
   </tr>
   <tr>
     <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Governance.png" alt="Three hexagons with the letters I in orange, C in green, and A in blue, with a navy banner for Governance." width="125"><br></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Governance</span> is the set of practices and systems that guides ICAM functions, activities, and outcomes.</td>
+    <td class="tg-0pky"><span style="font-weight:bold">Governance</span> is the set of practices and systems that guide ICAM functions, activities, and outcomes.</td>
   </tr>
 </table>
 
 ## What Is the FICAM Architecture?
 FICAM is the federal government’s enterprise approach to design, plan, and execute common ICAM processes.
 
-The FICAM Architecture is a framework for an agency to use in ICAM program and solution roadmap planning. The FICAM Architecture focuses on enterprise identity processes, practices, policies, and information security disciplines. 
+The FICAM Architecture is a framework for an agency to use in the ICAM program and solution roadmap planning. The FICAM Architecture focuses on enterprise identity processes, practices, policies, and information security disciplines. 
 
->  A federal enterprise identity is the unique representation of an employee, contractor, or enterprise user, which could be a mission or business partner, or even a device or technology managed by a Federal agency to achieve its mission and business goals [(OMB Memorandum 19-17)](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+>  A federal enterprise identity is the unique representation of an employee, contractor, or enterprise user, which could be a mission, business partner, or even a device or technology managed by a Federal agency to achieve its mission and business goals [(OMB Memorandum 19-17)](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ## Who Is the FICAM Architecture for?
 The FICAM Architecture is for agency personnel. An enterprise architecture is primarily used by:
@@ -154,19 +154,19 @@ The FICAM Architecture is for agency personnel. An enterprise architecture is pr
 - **Program Managers** to find common definitions and frameworks for use in planning.
 - **Enterprise and Application Architects** to use a common framework for designing and governing IT systems, applications, and implementations.
 
-There are four main governmentwide initiatives to help agencies implement and manage an Agency ICAM program and technology.
+There are four main government-wide initiatives to help agencies implement and manage an Agency ICAM program and technology.
 
-  1. **Planning and Configuration Guidance** The FICAM Architecture and accompanying [playbooks]({{site.baseurl}}/playbooks/) provides an overall guide for meeting federal ICAM requirements in an efficient and secure way. It focuses on enterprise identity processes, practices, policies, and information security disciplines. Playbooks offer stakeholders overarching strategies and tactical approaches for implementing technical FICAM topics.
+  1. **Planning and Configuration Guidance** The FICAM Architecture and accompanying [playbooks]({{site.baseurl}}/playbooks/) provide an overall guide for meeting federal ICAM requirements in an efficient and secure way. It focuses on enterprise identity processes, practices, policies, and information security disciplines. Playbooks offer stakeholders overarching strategies and tactical approaches for implementing technical FICAM topics.
   2. [Interagency Forum and Subcommittee]({{site.baseurl}}/ficam/#icam-governance-bodies): The Federal Chief Information Security Officer (CISO) Council is a primary resource for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. The ICAM Subcommittee aligns identity management activities of the federal government and supports collaborative government-wide efforts.
   3. [Approved Products Lists (APL)]({{site.baseurl}}/fips201/): The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program not only tests commercial products for use in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures but also publish APLs. Federal acquisition professionals rely on these APLs to purchase commercial products that fully comply with federal ICAM mandates.
   4. [Federal Public Key Infrastructure (PKI)]({{site.baseurl}}/university/fpki/): The Federal PKI is a network of certification authorities (CAs) that issue PIV credentials and person identity certificates; PIV-Interoperable credentials and person identity certificates; and other person identity certificates. CA-issued digital certificates, which employ cryptography, close security gaps in user identification and authentication, encryption of sensitive data, and data integrity.
 
 ## What Is the History of the FICAM Architecture?
-The FICAM Architecture was created in 2009 to provide a common ICAM segment architecture for federal agencies. The FICAM Architecture was the primary foundation of what later became the _FICAM Roadmap and Implementation Plan_ enhanced with complementary implementation sections.  
+The FICAM Architecture was created in 2009 to provide a common ICAM segment architecture for federal agencies. The FICAM Architecture was the primary foundation of what later became the _FICAM Roadmap and Implementation Plan_, enhanced with complementary implementation sections.  
 
 In 2015, ICAM experts from across the federal government collaborated on an updated FICAM Architecture.  This update was intended to be more concise, easy to understand, and visually appealing while reflecting the latest updates in cybersecurity, enterprise architecture, and ICAM policy and technology.
 
-This site contains the current version for the FICAM Architecture.  The FICAM Roadmap and Implementation Guidance v2.0 is superseded by both the FICAM Architecture updates and other complementary modernized playbooks developed by ICAM committees across government. 
+This site contains the current version of the FICAM Architecture.  The FICAM Roadmap and Implementation Guidance v2.0 is superseded by both the FICAM Architecture updates and other complementary modernized playbooks developed by ICAM committees across government. 
 
 ## Goals and Objectives
 
@@ -213,7 +213,7 @@ The graphic below illustrates the five ICAM practice areas and provides a list o
 
 <img src="{{site.baseurl}}/assets/arch/services/services_identity_management.png" alt="An orange box with the list of Identity Management services defined later in the body text of this page."  width="314" height="400" align="right" style="padding-left:30px">
 
-Identity Management is how an agency collects, verifies, manages attributes, and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
+Identity Management is how an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise identities for federal government employees, contractors, and authorized mission partners. This service does not apply to public or consumer identity management.
 
 An enterprise identity record is the set of attributes or characteristics that describes a person within a given context:
 
@@ -228,7 +228,7 @@ Agencies should manage identity attributes as centrally as possible and distribu
 - *Contact attributes* - Physical location, government phone number, and government email address.
 - *Authorization attributes* - Clearance, training, and job codes.
 
-An entitlement is a specific type of authorization attribute that refers to an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and de-provision activities as well as for auditing and reporting purposes. For example, a new employee may require access to ten core enterprise applications on the first day of work. An agency can create a new employee group with new employee entitlements and automate provisioning of the ten core applications rather than treat them as individual access requests.
+An entitlement is a specific type of authorization attribute that refers to an application permission. Entitlements management is the act of managing those permissions. An agency may group multiple entitlements into a specific role or group to streamline provision and de-provision activities as well as for auditing and reporting purposes. For example, a new employee may require access to ten core enterprise applications on the first day of work. An agency can create a new employee group with new employee entitlements and automate the provisioning of the ten core applications rather than treat them as individual access requests.
 Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include:
 
 Attributes and entitlements are created or aggregated through a number of manual and automated mechanisms. Mechanisms may include: 
@@ -237,7 +237,7 @@ Attributes and entitlements are created or aggregated through a number of manual
 - Allow employees to update contact attributes in an employee record.
 - Automate integration between a training system and an identity governance and administration tool to create and update annual security training.
 
-Identity proofing is how an agency verifies an enterprise identity. The complexity of this process depends on the Identity Assurance Level (IAL) required for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver’s license or utility bill. The agency verifies the identity documents and the individual’s photo (biometric).
+Identity proofing is how an agency verifies an enterprise's identity. The complexity of this process depends on the Identity Assurance Level (IAL) required for an identity. Federal agencies require a minimum IAL3 for employees and contractors. For example, a federal employee or contractor presents identity attributes via a driver’s license or utility bill. The agency verifies the identity documents and the individual’s photo (biometric).
 
 An identifier is a unique attribute used to locate an identity in a system:
 
@@ -286,7 +286,7 @@ The Credential Management services in the FICAM architecture include Sponsorship
 | Registration | Collect the information needed from a person or entity to issue them a credential. | Enrollment |
 | Generation & Issuance | Assign a credential to a person or entity. | Activation, Token, Authenticator |
 | Maintenance | Maintain a credential throughout its lifecycle. | Renewal, Reset, Suspension, Reissuance |
-| Revocation | Revoke a credential from a person or entity, or deactivate an authenticator. | Termination |
+| Revocation | Revoke a credential from a person or entity or deactivate an authenticator. | Termination |
 
 ## Access Management
 
@@ -332,7 +332,7 @@ Authorization is how you decide whether you should allow someone to access an ag
 
 Usually, authorization occurs immediately after authentication. When you log in to a service, you present your credentials. The service then confirms that your credentials are valid (authentication) and grants or denies you access based on your assigned permissions (authorization).
 
-Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access such as attribute-based or risk adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:class="usa-link usa-link--external"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
+Authorizations are based on progressive, fine-grained access models. Most agencies implement role-based access and move toward more fine-grained access, such as attribute-based or risk-adaptive access control, as outlined in the [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/federal-zero-trust-strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:class="usa-link usa-link--external"}. While there are defined access models, vendors may implement them in different or overlapping ways. Ensure your agency develops use cases and understands how a vendor meets the use case.
 
 
 |   Granularity  | Access Model | Description |   Example   |
@@ -381,9 +381,9 @@ The Federation services in the FICAM architecture include Policy Alignment, Auth
 
 <img src="{{site.baseurl}}/assets/arch/services/services_governance.png" alt="A navy box with the list of Governance services defined later in the body text of this page." width="314" height="400" align="right" style="padding-left:30px">
 
-Governance is the set of practices and systems that guides ICAM functions, activities, and outcomes.
+Governance is the set of practices and systems that guide ICAM functions, activities, and outcomes.
 
-To perform effective governance, agencies must collect data about ICAM functions from many sources, such as policies and entitlements stores, and analyze this data. Proper data analytics help agencies monitor compliance with established information security policies.
+To perform effective governance, agencies must collect and analyze data about ICAM functions from many sources, such as policies and entitlements stores. Proper data analytics help agencies monitor compliance with established information security policies.
 
 If your agency identifies problems during data collection and analysis, you should remediate these issues as quickly as possible. Real-time monitoring and risk mitigation are crucial to ensure employees and contractors have only the appropriate access, following the principle of least privilege.
 
@@ -393,7 +393,7 @@ The Governance services in the FICAM architecture include Identity Governance, A
 | --- | ------ | -----|
 | Identity Governance | The systems, solutions, and rules that link enterprise personnel, applications, and data to help agencies manage access and risk. | Management Framework, Rules and Procedures, Access Reviews and Re-certifications | 
 | Analytics | Leverage continuous analytics data to identify if someone has entitlements that conflict with access requirements. | Data collection, Monitoring, Review, Data Certification, Auditing and Reporting | 
-| Mitigation | Correct the problems and address risks, discovered by analysis, that may occur during standard operations. | Redress, Remediation |
+| Mitigation | Correct the problems and address risks discovered by analysis that may occur during standard operations. | Redress, Remediation |
 
 ## Use Cases
 
@@ -425,6 +425,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <div id="m-a1" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_creation.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in red for Identity Management, with a red banner for the Creation service." align="right" style="padding-left:15px"  width="156" height="156"/></p>
         <p>When you onboard an employee or contractor at your agency, you collect identity information from the individual and store parts of that information as identity attributes. These attributes serve as a digital proxy for the individual’s identity, also known as an enterprise identity.</p>
+        <br>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
@@ -511,6 +512,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <div id="m-a3" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_provisioning.png" alt="Three hexagons with the letters I, C, and A. The I is highlighted in orange for Identity Management, with an orange banner for the Provisioning service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
         <p>You can assign access entitlements to individuals, roles, and groups. These entitlements define an employee or contractor’s access to agency services, so you’ll need to assign entitlements before an employee or contractor can access an agency service.</p>
+        <br>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to assign entitlements to an employee or contractor.</p>
@@ -548,6 +550,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
     <div id="m-a4" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_issuance.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Issuance service. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
         <p>After you identity proof an individual, you’ll issue some proof of that individual’s claimed identity. A credential (like a physical card) is a type of authenticator that serves as a tool for an employee or contractor to gain access to agency services.</p>
+        <br>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to issue a credential to an employee or contractor.</p>
@@ -785,11 +788,11 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
 
 ## Reference Example
 
-This reference example include sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The reference examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications and the business requirements.
+This reference example includes sample enterprise ICAM tools (e.g., solutions, applications, and software) aligned with ICAM service areas that illustrate ICAM functionality at an agency. The reference examples are designed for enterprise architects, security engineers, and solution architects to facilitate discussions regarding the technology solutions to integrate with enterprise applications and business requirements.
 
 The system's components are representative examples only. Some solutions chosen by your agency may span across more than one service area.
 
-The following figure is an example for a small selection of system components only. You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
+The following figure is an example of a small selection of system components only. You can modify the graphic or incorporate it as is and target state system components for enterprise roadmap planning.
 
 <img src="{{site.baseurl}}/assets/arch/ComponentExamples.png" alt="A diagram that shows example components for each service area, and relationships between practice areas.">
 
@@ -846,7 +849,7 @@ Access management system components may include:
 - Network access management tools
 
 ## Governance Systems
-Governance is the set of components to centralize management, develop insights, and assist in managing ICAM areas and services. Applications across all service areas include auditing such as standard audit logs or configuration of auditable events. Governance includes the aggregation of individual auditing and reporting into centralized tools to perform real-time or near real-time analysis, identify anomalies, and trigger mitigations for anomalous authentication or authorization events. Tools are increasingly incorporating machine learning or adaptive algorithms. 
+Governance is the set of components to centralize management, develop insights, and assist in managing ICAM areas and services. Applications across all service areas include auditing, such as standard audit logs or configuration of auditable events. Governance includes the aggregation of individual auditing and reporting into centralized tools to perform real-time or near real-time analysis, identify anomalies, and trigger mitigations for anomalous authentication or authorization events. Tools are increasingly incorporating machine learning or adaptive algorithms. 
 
 Governance systems components may include:
 

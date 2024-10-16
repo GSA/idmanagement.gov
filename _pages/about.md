@@ -21,4 +21,4 @@ Office of Government-wide Policy<br>
 1800 F Street, NW<br>
 Washington, DC 20405
 
-If you have questions about the FICAM program, or this website, please email icam at gsa.gov.
+If you have questions about the FICAM program, or this website, please email [icam@gsa.gov](mailto:icam@gsa.gov).

@@ -89,7 +89,7 @@ This playbook outlines the process for an agency to implement a Digital Autopen 
 
 This playbook recommends using a role-based signature certificate issued to a hardware device (e.g., smart card, USB hardware device, or other FIPS–140 Level 2  certified hardware) from a [Federal PKI Certification Authority]({{site.baseurl}}/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"}. [Federal Agency Certification Authorities]({{site.baseurl}}/fpki/#annual-review-requirements-for-all-certification-authorities){:target="_blank"}{:rel="noopener noreferrer"} may also issue this certificate on their own. The digital autopen certificate can only digitally sign documents. An agency should consider additional controls to limit its use only to sign *Federal Register* documents. This playbook supports [OMB Circular A-130 goals](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, including developing and implementing processes to support employee digital signatures.
 
-Send any questions on the process to ICAM at gsa.gov. 
+Send any questions on the process to [icam@gsa.gov](mailto:icam@gsa.gov). 
 
 ### Key Terms
 
@@ -97,7 +97,7 @@ Send any questions on the process to ICAM at gsa.gov.
 - Digital autopen - The digital equivalent of a physical autopen solution.
 - Digital autopen certificate - A Federal PKI role-based digital signature certificate used to sign Federal Register documents when approved by the authorizing sponsor.
 - Digital autopen recipient - The person identified by the authorizing sponsor to use the digital autopen to affix the authorizing sponsor's signature to a Federal Register document.
-- Federal PKI - The Federal PKI is a network of certification authorities (CAs) that issue, PIV credentials and person identity certificates, PIV-Interoperable credentials and person identity certificates, and other person identity certificates. For more information n the Federal PKI contact FPKI at gsa.gov.
+- Federal PKI - The Federal PKI is a network of certification authorities (CAs) that issue, PIV credentials and person identity certificates, PIV-Interoperable credentials and person identity certificates, and other person identity certificates. For more information n the Federal PKI contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
 - *Federal Register* document - A document drafted for the express purpose of publication in the Federal Register. 
 - Office of the Federal Register (OFR) - The agency responsible for publishing the Federal Register.
 
@@ -152,7 +152,7 @@ An agency may implement or update a process by following these three playbook st
 2. [Define controls](#step-2-define-controls) to ensure the certificate and associated key are used only for the intended purpose. 
 3. [Obtain a role-based digital signature certificate](#step-3-obtain-a-digital-autopen-certificate) from a PKI Shared Service Provider. 
 
-Send any process questions or concerns to ICAM at gsa.gov.
+Send any process questions or concerns to [icam@gsa.gov](mailto:icam@gsa.gov).
 
 ## Step 1. Define the Agency Process
 
