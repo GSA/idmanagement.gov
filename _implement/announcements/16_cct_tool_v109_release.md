@@ -12,9 +12,9 @@ sidenav: fpkiannouncements
       
 ---
 
-An updated version of the CCT Tool was release to provide an updated cacerts.jks Keystore file with current trust chains, including the DOD Test CAC. Read the **What's New** and **User Guide** sections below for additional information.
+An updated version of the CCT Tool was release to provide an updated *cacerts.jks Keystore file* with current trust chains, including the DOD Test CAC. Read the **What's New** and **User Guide** sections below for additional information.
 
-Click the link below to download the latest version of the CCT Tool: 
+Click the link below to download the latest release of the **CCT Tool**: 
 - [Latest Release](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 ## What's New
