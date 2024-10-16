@@ -28,4 +28,4 @@ Click this link to download the [latest release](https://github.com/GSA/piv-conf
 - [Submit Test Results](https://github.com/GSA/piv-conformance/wiki/Submit-Test-Results-to-the-FIPS-201-Evaluation-Lab)
 - [Diagnostics](https://github.com/GSA/piv-conformance/wiki/Diagnostics)
 
-If you have any questions regarding this release please contact: 
+If you have any questions regarding this release please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov).
