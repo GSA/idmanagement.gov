@@ -4,7 +4,7 @@
 - title: CCT Tool v1.0.9 Release
   pubDate: October 16, 2024
   url: /implement/announcements/cct-tool-new-release/
-  description: An updated version of the CCT Tool was released with the addition of current federal and test trust chains to the JavaKey Store (JKS) to reduce false positives errors.
+  description: An updated version of the CCT Tool was released with the addition of current federal and test trust chains to the JavaKey Store (JKS) to reduce false positives/errors.
   status: Active
 
 - title: CPCT Tool v2.0.1 Update

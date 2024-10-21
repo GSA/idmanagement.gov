@@ -12,7 +12,7 @@ sidenav: fpkiannouncements
       
 ---
 
-An updated version of the CCT Tool was released with the addition of current federal and test trust chains to the JavaKey Store (JKS) to reduce false positives errors.
+An updated version of the CCT Tool was released with the addition of current federal and test trust chains to the JavaKey Store (JKS) to reduce false positives/errors.
 
 Click the link below to download the latest release of the **CCT Tool**: 
 - [Latest Release](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
