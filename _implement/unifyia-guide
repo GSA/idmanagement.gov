@@ -1,0 +1,13 @@
+---
+---
+layout: page
+collection: implement
+title: Okta Yubikey Implementation Guide
+type: Markdown
+permalink: /implement/yubikey-guide/
+description: Description needed
+sidenav: implement
+sticky_sidenav: true
+
+pubdate: October 23, 2024  
+version: 1.0
