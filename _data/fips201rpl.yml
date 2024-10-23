@@ -28,8 +28,8 @@
     status: post
     
 -   category: 'PACS Infrastructure'
-    supplier: 'Amag Symmetry Professional V8.1'
-    nameProduct: 'Amag Symmetry'
+    supplier: 'AMAG Symmetry Professional V8.1'
+    nameProduct: 'AMAG Symmetry'
     numberProduct: 'PRO-PLAT-v8.1-HSE'
     dateRemoval: 'Thursday, June 9, 2022'
     numberApl: '10087'
@@ -63,406 +63,516 @@
     reason: 'Components end of sale'
     status: post
 
--  category: 'PACS and Validation Infrastructure'
-   supplier: Vicount
-   nameProduct: 'PACS and Validation Software for Viscount Freedom 1302'
-   numberProduct: '30-1302-PVS,50-1302-PIV,30-1302-FCM,50-1302-1'
-   dateRemoval: 'Wednesday, November 25, 2020'
-   numberApl: '10029'
-   reason: 'Not approved for FRTC 1.3.3'
-   status: post
+# # Creates a blank entry in the PIV Card Table
+# - category: 'PIV Card'
+#   supplier: '---'
+#   nameProduct: '---'
+#   numberProduct: '---'
+#   dateRemoval: '---'
+#   numberApl: '---'
+#   reason: '---'
+#   status: '---'
+
+- category: 'PIV Card'
+  supplier: 'Idemia'
+  nameProduct: 'ID-One PIV v2.4 on Cosmos V8.1 (EEPROM)'
+  numberProduct: '1501381'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1428'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Idemia'
+  nameProduct: 'ID-One PIV v2.4.1 on Cosmo V8.1 (ROM)'
+  numberProduct: '1585242'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1428'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Oberthur'
+  nameProduct: 'ID-One PIV v2.3.5 on Cosmo V8 (High Speed)'
+  numberProduct: '1276885-XS'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1355'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Oberthur'
+  nameProduct: 'ID-One PIV v2.3.5 on Cosmo V8'
+  numberProduct: '1276885'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1354'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'HID'
+  nameProduct: 'HID Global Crescendo PIV'
+  numberProduct: '40030M-D14'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1431'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Gemalto'
+  nameProduct: 'Gemalto TOP DL v2.1 with HID Global ActivID Applet Suite v2.7.4'
+  numberProduct: 'O1115095'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1500'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Gemalto'
+  nameProduct: 'Safenet IDPrime PIV v3.0'
+  numberProduct: 'O1138439'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1510'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Gemalto'
+  nameProduct: 'IDPrime PIV v.2.1'
+  numberProduct: 'O1110994'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1430'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Giesecke + Devrient Mobile Security'
+  nameProduct: 'SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5'
+  numberProduct: '50192769'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1429'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+- category: 'PIV Card'
+  supplier: 'Giesecke + Devrient Mobile Security'
+  nameProduct: 'SmartCafe Expert 7.0 with StarSign Applet v1.0'
+  numberProduct: '50254711'
+  dateRemoval: 'Monday, July 1, 2024'
+  numberApl: '1502'
+  reason: 'CMVP certificate is now historical'
+  status: post
+  note: 'moved to legacy'
+
+# -  category: 'PACS and Validation Infrastructure'
+#    supplier: Vicount
+#    nameProduct: 'PACS and Validation Software for Viscount Freedom 1302'
+#    numberProduct: '30-1302-PVS,50-1302-PIV,30-1302-FCM,50-1302-1'
+#    dateRemoval: 'Wednesday, November 25, 2020'
+#    numberApl: '10029'
+#    reason: 'Not approved for FRTC 1.3.3'
+#    status: post
     
--   category: 'PACS Infrastructure'
-    supplier: 'Galaxy Control Systems'
-    nameProduct: 'System Galaxy Software'
-    numberProduct: '90-0600-20-#SD'
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10097'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS Registration Engine for Galaxy GCS'
-    numberProduct: PVCP-D/S-32-00
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10098'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Infrastructure'
-    supplier: 'Monitor Dynamics'
-    nameProduct: SafeNet
-    numberProduct: F50-101xx-SP4
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10024'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'FIPS 201 SDK Runtime with SafeNET Plug-in'
-    numberProduct: PVC-API-RTL-25-00
-    dateRemoval: 'Thursday, February 13, 2020'
-    numberApl: '10025'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Infrastructure'
-    supplier: BridgePoint
-    nameProduct: 'BridgePoint TrustZone PACS Software'
-    numberProduct: 67-32-0xxx
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10049'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
--
-    category: 'PACS Validation System'
-    supplier: BridgePoint
-    nameProduct: 'Trust Alert Enrollment Software, 1-factor Enrollment Reader'
-    numberProduct: '67-32-1216, 78-02-1102'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10050'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS Registration Engine for JCI P2000'
-    numberProduct: PVCP-D/S-11-00
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10018'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS Registration Engine for C*CURE 800'
-    numberProduct: PVCP-D/S-23-01
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10012'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: 'Johnson Controls'
-    nameProduct: 'P2000 Security Management System, Network Controller, 8-Door Reader Module, 2-Door Reader Module'
-    numberProduct: 'P2000, CK721-A, S300-DIN-RDR8S, S300-DIN-RDR2S-A'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10017'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: 'Secure Network Systems'
-    nameProduct: 'CRITSEC B100 Door Access Blade,CRITSEC Client Appliance,CRITSEC Master Appliance'
-    numberProduct: 'B100, CS-CU-5, CS-2000-32'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10040'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Validation System'
-    supplier: 'Technology Industries'
-    nameProduct: 'EntryPoint PACS Connector for JCI P2000'
-    numberProduct: EP-PACS-2000
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10045'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Validation System'
-    supplier: 'Technology Industries'
-    nameProduct: 'EntryPoint PACS Connector for Lynx Predator, Identity Management Suite, Validation Service, High Assurance Reader Service'
-    numberProduct: EP-PACS-LINX
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10066'
-    reason: 'Not approved for FRTC 1.3.3'
--
-    category: 'PACS Infrastructure'
-    supplier: 'The Will-Burt Company'
-    nameProduct: 'LINX Predator Elite Server Appliance, LINX Predator Elite Workstation Appliance, VIP-E Panel, LINX VIP Panel'
-    numberProduct: '5069705, 5069706, 5069706, 5069702'
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10065'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: 'Johnson Controls/Tyco'
-    nameProduct: 'C*CURE 800 PACS Software'
-    numberProduct: CC800
-    dateRemoval: 'Thursday, September 13, 2018'
-    numberApl: '10011'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Card v1.55 (128K v2 dual-interface)'
-    numberProduct: '1025345'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1246'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Credential v2.0 (128K v2 tri-interface)'
-    numberProduct: PIV155WLV2
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1245'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Card v1.55 (72K v1 dual-interface)'
-    numberProduct: '1025347'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1247'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Card v1.55 (72K v1 dual-interface)'
-    numberProduct: '1025346'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1249'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Credential v1.55 (72K v2 tri-interface)'
-    numberProduct: PIV155WMV1
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1248'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Credential v2.0 (128K v2 dual-interface)'
-    numberProduct: '1030610'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1250'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: '(Protiva PIV) IDPrime PIV Credential v2.0 (128K v2 tri-interface)'
-    numberProduct: '1030611'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1251'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Gemalto TOP DL with ActivIdentity Digital Identity Applet Suite'
-    numberProduct: DL4-AI-PIV
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '428'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Gemalto TOP DM with ActivIdentity Digital Identity Applet Suite'
-    numberProduct: DM4-AI-PIV
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '406'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Protiva PIV v1.55 on TOP DL'
-    numberProduct: PIV155DLV1
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '590'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Protiva PIV v1.55 on TOP DM'
-    numberProduct: PIV155DMV1
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '591'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Protiva PIV v1.55 on TOP WM'
-    numberProduct: PIV155WMV1
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '592'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Protiva PIV v1.55 using TOP DL v2'
-    numberProduct: O1020725-HSPD12
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '671'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'Provita PIV v1.55 using TOP WL v2'
-    numberProduct: O1020726-HSPD12
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '672'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'SafesITe FIPS 201 w/ HID Prox Card'
-    numberProduct: GC72DIP1HD-HSPD12
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '589'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'SafesITe FIPS 201 w/ HID Prox Card'
-    numberProduct: GC72DIP1HD-HSPD12
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '581'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'SafesITe PIV TPC DM'
-    numberProduct: GC72DIP0-HSPD12
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '378'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: Gemalto
-    nameProduct: 'IDCore 3020 v1, 128k dual-interface with ActivIdentity Digital Identity Applet Suite'
-    numberProduct: O1025344
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1244'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Giesecke & Devrient'
-    nameProduct: 'G&D StarSign(R) SmartCafe(R) Expert 144K with PIV Applet'
-    numberProduct: '20018731'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '525'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Giesecke & Devrient'
-    nameProduct: 'G&D StarSign(R) SmartCafe(R) Expert 80K with PIV Applet'
-    numberProduct: '20018732'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '519'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS smart card v1.0'
-    numberProduct: 405000U(M)
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '1169'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Oberthur Technologies'
-    nameProduct: 'ID-One PIV (Type A) Large D'
-    numberProduct: '1107252'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '587'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Oberthur Technologies'
-    nameProduct: 'ID-One PIV (Type A) Large D Hybrid 125'
-    numberProduct: '1107256'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '595'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Oberthur Technologies'
-    nameProduct: 'ID-One PIV (Type A) Large D Hybrid 125 G'
-    numberProduct: '1142697'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '598'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Oberthur Technologies'
-    nameProduct: 'ID-One PIV (Type A) Standard D'
-    numberProduct: '1107253'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '594'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Oberthur Technologies'
-    nameProduct: 'ID-One PIV (Type A) Standard D Hybrid 125'
-    numberProduct: '1107257'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '596'
-    reason: 'Retired RNG'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'TecSec Incorporated'
-    nameProduct: 'TecSec Eagle Card'
-    numberProduct: 'Eagle 1000'
-    dateRemoval: 'Saturday, June 30, 2018'
-    numberApl: '424'
-    reason: 'Not Compliant with FIPS 201-2'
-    status: archive
--
-    category: 'PACS Infrastructure'
-    supplier: Brivo
-    nameProduct: 'Brivo OnAir for Government'
-    numberProduct: B-OAG-RDR-1
-    dateRemoval: 'Saturday, March 18, 2017'
-    numberApl: '10073'
-    reason: 'Discontinued product'
-    status: archive
--
-    category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS Registration Engine (Brivo OnAir for Government)'
-    numberProduct: 'PVCP-D/S 03-01'
-    dateRemoval: 'Saturday, March 18, 2017'
-    numberApl: '10074'
-    reason: 'Discontinued product'
-    status: archive
--
-    category: 'PIV Card'
-    supplier: 'Oberthur Technologies'
-    nameProduct: 'ID-One PIV (Type A) Large D'
-    numberProduct: '1107252'
-    dateRemoval: 'Wednesday, June 17, 2015'
-    numberApl: '530'
-    reason: 'Replaced by APL# 587'
-    status: archive
+# -   category: 'PACS Infrastructure'
+#     supplier: 'Galaxy Control Systems'
+#     nameProduct: 'System Galaxy Software'
+#     numberProduct: '90-0600-20-#SD'
+#     dateRemoval: 'Thursday, February 13, 2020'
+#     numberApl: '10097'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: post
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'HID Global'
+#     nameProduct: 'pivCLASS Registration Engine for Galaxy GCS'
+#     numberProduct: PVCP-D/S-32-00
+#     dateRemoval: 'Thursday, February 13, 2020'
+#     numberApl: '10098'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: post
+# -
+    # category: 'PACS Infrastructure'
+    # supplier: 'Monitor Dynamics'
+    # nameProduct: SafeNet
+    # numberProduct: F50-101xx-SP4
+    # dateRemoval: 'Thursday, February 13, 2020'
+    # numberApl: '10024'
+    # reason: 'Not approved for FRTC 1.3.3'
+    # status: post
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'HID Global'
+#     nameProduct: 'FIPS 201 SDK Runtime with SafeNET Plug-in'
+#     numberProduct: PVC-API-RTL-25-00
+#     dateRemoval: 'Thursday, February 13, 2020'
+#     numberApl: '10025'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: post
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: BridgePoint
+#     nameProduct: 'BridgePoint TrustZone PACS Software'
+#     numberProduct: 67-32-0xxx
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10049'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: post
+# -
+#     category: 'PACS Validation System'
+#     supplier: BridgePoint
+#     nameProduct: 'Trust Alert Enrollment Software, 1-factor Enrollment Reader'
+#     numberProduct: '67-32-1216, 78-02-1102'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10050'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'HID Global'
+#     nameProduct: 'pivCLASS Registration Engine for JCI P2000'
+#     numberProduct: PVCP-D/S-11-00
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10018'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'HID Global'
+#     nameProduct: 'pivCLASS Registration Engine for C*CURE 800'
+#     numberProduct: PVCP-D/S-23-01
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10012'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'Johnson Controls'
+#     nameProduct: 'P2000 Security Management System, Network Controller, 8-Door Reader Module, 2-Door Reader Module'
+#     numberProduct: 'P2000, CK721-A, S300-DIN-RDR8S, S300-DIN-RDR2S-A'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10017'
+#     reason: 'Not approved for FRTC 1.3.3'
+# #     status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'Secure Network Systems'
+#     nameProduct: 'CRITSEC B100 Door Access Blade,CRITSEC Client Appliance,CRITSEC Master Appliance'
+#     numberProduct: 'B100, CS-CU-5, CS-2000-32'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10040'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'Technology Industries'
+#     nameProduct: 'EntryPoint PACS Connector for JCI P2000'
+#     numberProduct: EP-PACS-2000
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10045'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'Technology Industries'
+#     nameProduct: 'EntryPoint PACS Connector for Lynx Predator, Identity Management Suite, Validation Service, High Assurance Reader Service'
+#     numberProduct: EP-PACS-LINX
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10066'
+#     reason: 'Not approved for FRTC 1.3.3'
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'The Will-Burt Company'
+#     nameProduct: 'LINX Predator Elite Server Appliance, LINX Predator Elite Workstation Appliance, VIP-E Panel, LINX VIP Panel'
+#     numberProduct: '5069705, 5069706, 5069706, 5069702'
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10065'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: 'Johnson Controls/Tyco'
+#     nameProduct: 'C*CURE 800 PACS Software'
+#     numberProduct: CC800
+#     dateRemoval: 'Thursday, September 13, 2018'
+#     numberApl: '10011'
+#     reason: 'Not approved for FRTC 1.3.3'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Card v1.55 (128K v2 dual-interface)'
+#     numberProduct: '1025345'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1246'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Credential v2.0 (128K v2 tri-interface)'
+#     numberProduct: PIV155WLV2
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1245'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Card v1.55 (72K v1 dual-interface)'
+#     numberProduct: '1025347'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1247'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Card v1.55 (72K v1 dual-interface)'
+#     numberProduct: '1025346'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1249'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Credential v1.55 (72K v2 tri-interface)'
+#     numberProduct: PIV155WMV1
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1248'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Credential v2.0 (128K v2 dual-interface)'
+#     numberProduct: '1030610'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1250'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: '(Protiva PIV) IDPrime PIV Credential v2.0 (128K v2 tri-interface)'
+#     numberProduct: '1030611'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1251'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Gemalto TOP DL with ActivIdentity Digital Identity Applet Suite'
+#     numberProduct: DL4-AI-PIV
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '428'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Gemalto TOP DM with ActivIdentity Digital Identity Applet Suite'
+#     numberProduct: DM4-AI-PIV
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '406'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Protiva PIV v1.55 on TOP DL'
+#     numberProduct: PIV155DLV1
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '590'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Protiva PIV v1.55 on TOP DM'
+#     numberProduct: PIV155DMV1
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '591'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Protiva PIV v1.55 on TOP WM'
+#     numberProduct: PIV155WMV1
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '592'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Protiva PIV v1.55 using TOP DL v2'
+#     numberProduct: O1020725-HSPD12
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '671'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'Provita PIV v1.55 using TOP WL v2'
+#     numberProduct: O1020726-HSPD12
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '672'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'SafesITe FIPS 201 w/ HID Prox Card'
+#     numberProduct: GC72DIP1HD-HSPD12
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '589'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'SafesITe FIPS 201 w/ HID Prox Card'
+#     numberProduct: GC72DIP1HD-HSPD12
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '581'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'SafesITe PIV TPC DM'
+#     numberProduct: GC72DIP0-HSPD12
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '378'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: Gemalto
+#     nameProduct: 'IDCore 3020 v1, 128k dual-interface with ActivIdentity Digital Identity Applet Suite'
+#     numberProduct: O1025344
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1244'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Giesecke & Devrient'
+#     nameProduct: 'G&D StarSign(R) SmartCafe(R) Expert 144K with PIV Applet'
+#     numberProduct: '20018731'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '525'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Giesecke & Devrient'
+#     nameProduct: 'G&D StarSign(R) SmartCafe(R) Expert 80K with PIV Applet'
+#     numberProduct: '20018732'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '519'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'HID Global'
+#     nameProduct: 'pivCLASS smart card v1.0'
+#     numberProduct: 405000U(M)
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '1169'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Oberthur Technologies'
+#     nameProduct: 'ID-One PIV (Type A) Large D'
+#     numberProduct: '1107252'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '587'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Oberthur Technologies'
+#     nameProduct: 'ID-One PIV (Type A) Large D Hybrid 125'
+#     numberProduct: '1107256'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '595'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Oberthur Technologies'
+#     nameProduct: 'ID-One PIV (Type A) Large D Hybrid 125 G'
+#     numberProduct: '1142697'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '598'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Oberthur Technologies'
+#     nameProduct: 'ID-One PIV (Type A) Standard D'
+#     numberProduct: '1107253'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '594'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Oberthur Technologies'
+#     nameProduct: 'ID-One PIV (Type A) Standard D Hybrid 125'
+#     numberProduct: '1107257'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '596'
+#     reason: 'Retired RNG'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'TecSec Incorporated'
+#     nameProduct: 'TecSec Eagle Card'
+#     numberProduct: 'Eagle 1000'
+#     dateRemoval: 'Saturday, June 30, 2018'
+#     numberApl: '424'
+#     reason: 'Not Compliant with FIPS 201-2'
+#     status: archive
+# -
+#     category: 'PACS Infrastructure'
+#     supplier: Brivo
+#     nameProduct: 'Brivo OnAir for Government'
+#     numberProduct: B-OAG-RDR-1
+#     dateRemoval: 'Saturday, March 18, 2017'
+#     numberApl: '10073'
+#     reason: 'Discontinued product'
+#     status: archive
+# -
+#     category: 'PACS Validation System'
+#     supplier: 'HID Global'
+#     nameProduct: 'pivCLASS Registration Engine (Brivo OnAir for Government)'
+#     numberProduct: 'PVCP-D/S 03-01'
+#     dateRemoval: 'Saturday, March 18, 2017'
+#     numberApl: '10074'
+#     reason: 'Discontinued product'
+#     status: archive
+# -
+#     category: 'PIV Card'
+#     supplier: 'Oberthur Technologies'
+#     nameProduct: 'ID-One PIV (Type A) Large D'
+#     numberProduct: '1107252'
+#     dateRemoval: 'Wednesday, June 17, 2015'
+#     numberApl: '530'
+#     reason: 'Replaced by APL# 587'
+#     status: archive

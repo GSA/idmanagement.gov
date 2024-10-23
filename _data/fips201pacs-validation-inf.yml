@@ -1,0 +1,22 @@
+# PACS Validation Infrastructure Category
+# Date: 08/23/2024 by Nelson R. 
+#
+# -   category: 'PACS Validation Infrastructure'
+#     supplier: ''
+#     nameProduct: ''
+#     numberProduct: ''
+#     dateRemoval: ''
+#     numberApl: ''
+#     reason: ''
+#     status: 
+#
+
+
+-   category: 'PACS Validation Infrastructure'
+    supplier: '---'
+    nameProduct: '---'
+    numberProduct: '---'
+    dateRemoval: '---'
+    numberApl: '---'
+    reason: '---'
+    status: '---'
