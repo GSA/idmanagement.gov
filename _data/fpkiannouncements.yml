@@ -1,6 +1,12 @@
 ## FPKI Announcements Location: https://www.idmanagement.gov/fpki/notifications/#fpki-announcements
 ## see the fpkiannouncements collection settings in the _data/navigation.yml file.
 
+- title: CCT Tool v1.0.9 Release
+  pubDate: October 16, 2024
+  url: /implement/announcements/cct-tool-new-release/
+  description: An updated version of the CCT Tool was released with the addition of current federal and test trust chains to the JavaKey Store (JKS) to reduce false positives/errors.
+  status: Active
+
 - title: CPCT Tool v2.0.1 Update
   pubDate: July 05, 2024
   url: /implement/announcements/cpct-201-update/
