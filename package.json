@@ -11,7 +11,7 @@
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
   },
   "dependencies": {
-    "@uswds/uswds": "3.8.2"
+    "@uswds/uswds": "3.9.0"
   },
   "devDependencies": {
     "pa11y-ci": "^2.4.0",
