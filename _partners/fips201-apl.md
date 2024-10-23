@@ -245,6 +245,46 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays products and services that were once on the Approved Products List but are no longer approved for government procurement. Due to security concerns, products on the RPL are not recommended for government acquisition.  Products will be removed from the RPL after 3 years of the removal date.
 
 <br>
+{% assign categories = "" | split: "" %}
+{% for rpl in site.data.fips201rpl %}
+  {% assign category = rpl.category | strip %}
+  {% assign categories = categories | push: category | uniq | sort %}
+{% endfor %}
+{% assign categories = categories | uniq | sort %}
+
+{% for category in categories %}
+<table class="usa-table">
+  <caption> {{ category }} List</caption>
+  <thead>
+    <tr>
+        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
+    </tr>
+    <tr>
+      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
+      <th data-sortable scope="col" role="columnheader" >Supplier</th>
+      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
+      <th data-sortable scope="col" role="columnheader" >Product Number</th>
+      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
+      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
+    </tr>
+  </thead>
+  <tbody> 
+  {% for rpln in site.data.fips201rpl %}
+    {% if rpln.category == category %}          
+            <tr>
+              <th scope="row">{{ rpln.numberApl }}</th>
+              <td data-sort-value="{{ rpln.supplier }}">{{ rpln.supplier }}</td>
+              <td data-sort-value="{{ rpln.nameProduct}}">{{ rpln.nameProduct}}</td>
+              <td data-sort-value="{{ rpln.numberProduct }}">{{ rpln.numberProduct }}</td>
+              <td data-sort-value="{{ rpln.dateRemoval}}">{{ rpln.dateRemoval}}</td>
+              <td data-sort-value="{{ rpln.reason}}">{{ rpln.reason}}</td>
+            </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
+<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
+{% endfor %}
 
 <!-- Empty table initially - CJB -->
 <!-- New Section added 08/26/2024 -->
@@ -257,7 +297,7 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 {% endfor %}
 {% assign categories = categories | uniq | sort %}
 
-{% for category in categories | sort %}
+{% for category in categories %}
 <table class="usa-table">
   <caption>{{ category }} List</caption>
   <thead>
@@ -290,51 +330,3 @@ The FIPS 201 Evaluation Program’s Removed Products List (RPL) displays product
 </table> 
 <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
 {% endfor %}
-
-{% assign categories = "" | split: "" %}
-{% for rpl in site.data.fips201rpl %}
-  {% assign category = rpl.category | strip %}
-  {% assign categories = categories | push: category | uniq | sort %}
-{% endfor %}
-{% assign categories = categories | uniq | sort %}
-
-{% for category in categories %}
-<table class="usa-table">
-  <caption> {{ category }} Category List</caption>
-    {% for rplsys in site.data.fips201rpl %}
-      {% if rplsys.category == category %}
-        {% assign system = rplsys.system %}
-      {% endif %}
-    {% endfor %}
-  <thead>
-    <tr>
-        <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b> {% if system or system != NULL %}( {{ system }} ){% endif %}</th>
-    </tr>
-    <tr>
-      <th data-sortable scope="col" role="columnheader" aria-sort="ascending">APL #</th>
-      <th data-sortable scope="col" role="columnheader" >Supplier</th>
-      <th data-sortable scope="col" role="columnheader" >Product Name(s)</th>
-      <th data-sortable scope="col" role="columnheader" >Product Number</th>
-      <th data-sortable scope="col" role="columnheader" >Removal Date</th>
-      <th data-sortable scope="col" role="columnheader" >Reason For Removal</th>
-    </tr>
-  </thead>
-  <tbody> 
-  {% for rpln in site.data.fips201rpl %}
-    {% if rpln.category == category %}          
-            <tr>
-              <th scope="row">{{ rpln.numberApl }}</th>
-              <td data-sort-value="{{ rpln.supplier }}">{{ rpln.supplier }}</td>
-              <td data-sort-value="{{ rpln.nameProduct }}">{{ rpln.nameProduct}}</td>
-              <td data-sort-value="{{ rpln.numberProduct }}">{{ rpln.numberProduct }}</td>
-              <td data-sort-value="{{ rpln.dateRemoval }}">{{ rpln.dateRemoval}}</td>
-              <td data-sort-value="{{ rpln.reason }}">{{ rpln.reason}}</td>
-            </tr>
-    {% endif %}
-  {% endfor %}
-  </tbody>
-</table>
-<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
-{% endfor %}
-<!-- end of RPL Listing -->
-
