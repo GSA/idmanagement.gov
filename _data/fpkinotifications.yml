@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: October 24, 2024
+  change_type: Intent to Renew a CA Certificate
+  system: DoD Interoperability Root CA 2
+  change_description: The DoD Interoperability Root CA 2 will be renewing a cross-certificate to the DoD Root CA 3; however, it will not be published in public repositories until the current expiration date of November 16th.
+  contact: dodpke at mail dot mil
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  ca_certificate_subject: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US
+  cdp_uri: http://crl.disa.mil/crl/DODINTEROPERABILITYROOTCA2.crl
+  aia_uri: http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c
+  sia_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c
+  ocsp_uri: http://ocsp.disa.mil/
+  ee_cdp_uri: http://crl.disa.mil/crl/DODROOTCA3.crl
+  ee_ocsp_uri: http://ocsp.disa.mil/
+
 - notice_date: October 10, 2024
   change_type: CA Certificate Issuance
   system: IdenTrust Global Common CA 1
