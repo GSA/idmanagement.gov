@@ -129,7 +129,7 @@
 #   numberProduct: '---'
 #   dateRemoval: '---'
 #   numberApl: '---'
-#   system: '' # blank
+#   # system: '' # blank or not exist
 #   reason: '---'
 #   status: '---'
 #
@@ -139,7 +139,7 @@
   numberProduct: '1501381'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1428'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -150,7 +150,7 @@
   numberProduct: '1585242'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1428'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -161,7 +161,7 @@
   numberProduct: '1276885-XS'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1355'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -172,7 +172,7 @@
   numberProduct: '1276885'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1354'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -183,7 +183,7 @@
   numberProduct: '40030M-D14'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1431'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -194,7 +194,7 @@
   numberProduct: 'O1115095'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1500'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -205,7 +205,7 @@
   numberProduct: 'O1138439'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1510'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -216,7 +216,7 @@
   numberProduct: 'O1110994'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1430'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -227,7 +227,7 @@
   numberProduct: '50192769'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1429'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
@@ -238,7 +238,7 @@
   numberProduct: '50254711'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1502'
-  system: '' # blank
+  # system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
   note: 'now legacy card data'
