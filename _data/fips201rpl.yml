@@ -49,6 +49,7 @@
     numberProduct: 'F96-002-600-XX**'
     dateRemoval: 'Tuesday, November 1, 2022'
     numberApl: '10043'
+    system: '13.01'
     reason: 'Not approved for FRTC 1.4.2'
     status: post
 
@@ -58,6 +59,7 @@
     numberProduct: 'PRO-PLAT-v8.1-HSE'
     dateRemoval: 'Thursday, June 9, 2022'
     numberApl: '10087'
+    system: '13.01'
     reason: 'Not approved for FRTC 1.3.3'
     status: post
 
@@ -67,6 +69,7 @@
     numberProduct: 'B-OSS-BA(X), B-ACS5000(y), B-ACS5000-DB, B-ACS-IPDC-(Z)A, B-ACS6000-DB, B-ACS300-A, B-ACS300-A-FIPS, B-ACS6000-A-FIPS'
     dateRemoval: 'Wednesday, October 13, 2021 '
     numberApl: '10009 & 10010'
+    system: '13.01'
     reason: 'Components end of sale'
     status: post
 
@@ -242,7 +245,7 @@
 
 # Table 4:
 # PACS Validation Infrastructure Category Table
-# memo: system is  13.02 for PACS Validation Infrastructure Category
+# memo: system is 13.02 for PACS Validation Infrastructure Category
 #
 # Template:
 # -   category: 'PACS Validation Infrastructure'
