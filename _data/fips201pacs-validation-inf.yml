@@ -7,6 +7,7 @@
 #     numberProduct: ''
 #     dateRemoval: ''
 #     numberApl: ''
+#     system: '13.02'
 #     reason: ''
 #     status: 
 #
@@ -18,5 +19,6 @@
     numberProduct: '---'
     dateRemoval: '---'
     numberApl: '---'
+    system: 13.02
     reason: '---'
     status: '---'
