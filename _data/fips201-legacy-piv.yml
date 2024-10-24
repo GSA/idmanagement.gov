@@ -1,12 +1,14 @@
 # FIPS-201 Legacy PIV Cards 
 # File Name: fips201-legacy-piv.yml
+# Use on: https://www.idmanagement.gov/fips201/#removed-product-list#legacy-piv-cards
+
 # Updated: 10/22/2024 CJB and Nelson Ross
 # Created: 08/26/2024 by Clayton
 # - purpose: to move piv cards to legacy per Matt
-#
 # 10/23/2024 legacy data was moved backto the PIV Card table, see: 'fips201rpl.yml' for those records. CJB
-#
-# Records in this file are liste in one table under: Legacy PIV Cards section
+
+# Data Entry Section:
+# records in this file are liste in one table under 'Legacy PIV Cards' section
 # Memo: to create a empty table, remove all entries, then place a single entry using the template provided below. 
 # 
 # Template: 
