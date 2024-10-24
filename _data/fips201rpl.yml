@@ -1,20 +1,45 @@
 # FIPS 201 Removed Product List
+# Updated: 10/24/2024 CJB and Nelson Ross
+# Used on: https://www.idmanagement.gov/fips201/#removed-product-list
+# 
+# This record is subdivided into section for each table on this page, each table is 
+# listed in one loop. If reordering of the listing is desired, you are limited to the 
+# filters of the Liquid Templating Language(Liquid)[https://shopify.github.io/liquid/]. 
+#
+# See: the 'sort' and 'sort_natural' filters on the Liquid website above for correct usage.
+# - sort: Sorts items in an array in case-sensitive order.
+# - sort_natural: Sorts items in an array in case-insensitive order.   
+#
+# File organization: 
+# This file was reorganized in sections to keep the separation of data clean when parsing
+# data from this file via Jekyll in a Liquid script. 
 
--   category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: '13.01 - pivCLASS validation system 5.20 for Hirsch-Identiv Velocity 3.8.4'
-    numberProduct: 'N/A'
-    dateRemoval: 'Monday, October 16, 2023'
-    numberApl: '10014'
-    reason: 'Per vendor request'
-    status: post
 
+# Data Entry Section: (Please put data in its correct section to keep this record clean and maintainable)
+# Important: To clear a table, remove all entries from that section, then add a single blank entry with the template provided in each section.
+
+# Table 1:
+# PACS Infrastructure Category Table
+# memo: system is 13.01 for PACS Infrastructure Category
+#
+# Template: 
+# -   category: 'PACS Infrastructure'
+#     supplier: '---'
+#     nameProduct: '---'
+#     numberProduct: 'N/A'
+#     dateRemoval: '---'
+#     numberApl: '---'
+#     system: '13.01' 
+#     reason: 'Per vendor request'
+#     status: post
+#    
 -   category: 'PACS Infrastructure'
     supplier: 'Identiv'
     nameProduct: '13.01 - Identiv Velocity 3.8.4 w/pivCLASS validation 5.20'
     numberProduct: 'N/A'
     dateRemoval: 'Monday, October 16, 2023'
     numberApl: '10013'
+    system: '13.01'
     reason: 'Per vendor request'
     status: post
 
@@ -26,31 +51,13 @@
     numberApl: '10043'
     reason: 'Not approved for FRTC 1.4.2'
     status: post
-    
+
 -   category: 'PACS Infrastructure'
     supplier: 'AMAG Symmetry Professional V8.1'
     nameProduct: 'AMAG Symmetry'
     numberProduct: 'PRO-PLAT-v8.1-HSE'
     dateRemoval: 'Thursday, June 9, 2022'
     numberApl: '10087'
-    reason: 'Not approved for FRTC 1.3.3'
-    status: post
-    
--   category: 'PACS Validation System'
-    supplier: 'HID Global'
-    nameProduct: 'pivCLASS Registration Engine for AccesNsite'
-    numberProduct: 'PVCP-D/S-17-00'
-    dateRemoval: 'Tuesday, November 1, 2022'
-    numberApl: '10044'
-    reason: 'Not approved for FRTC 1.4.2'
-    status: post
-
--   category: 'PACS Validation System'
-    supplier: 'Technology Industries'
-    nameProduct: 'Technology Industries Validation System for AMAG Professional'
-    numberProduct: 'EP-IDM-STE'
-    dateRemoval: 'Thursday, June 9, 2022'
-    numberApl: '10086'
     reason: 'Not approved for FRTC 1.3.3'
     status: post
 
@@ -63,25 +70,76 @@
     reason: 'Components end of sale'
     status: post
 
-# # Creates a blank entry in the PIV Card Table
+# Table 2:
+# PACS Validation System Category Table
+# memo: system is 13.01 for PACS Validation System
+#
+# Template: 
+# -   category: 'PACS Validation System'
+#     supplier: '---'
+#     nameProduct: '---'
+#     numberProduct: 'N/A'
+#     dateRemoval: '---'
+#     numberApl: '---'
+#     system: '13.01'
+#     reason: '---'
+#     status: post
+#
+-   category: 'PACS Validation System'
+    supplier: 'HID Global'
+    nameProduct: '13.01 - pivCLASS validation system 5.20 for Hirsch-Identiv Velocity 3.8.4'
+    numberProduct: 'N/A'
+    dateRemoval: 'Monday, October 16, 2023'
+    numberApl: '10014'
+    system: '13.01'
+    reason: 'Per vendor request'
+    status: post
+
+-   category: 'PACS Validation System'
+    supplier: 'HID Global'
+    nameProduct: 'pivCLASS Registration Engine for AccesNsite'
+    numberProduct: 'PVCP-D/S-17-00'
+    dateRemoval: 'Tuesday, November 1, 2022'
+    numberApl: '10044'
+    system: '13.01'
+    reason: 'Not approved for FRTC 1.4.2'
+    status: post
+
+-   category: 'PACS Validation System'
+    supplier: 'Technology Industries'
+    nameProduct: 'Technology Industries Validation System for AMAG Professional'
+    numberProduct: 'EP-IDM-STE'
+    dateRemoval: 'Thursday, June 9, 2022'
+    system: '13.01'
+    numberApl: '10086'
+    reason: 'Not approved for FRTC 1.3.3'
+    status: post
+
+# Table 3:
+# PIV Card Table 
+# memo: system is blank for PIV Card
+#
+# Template:
 # - category: 'PIV Card'
 #   supplier: '---'
 #   nameProduct: '---'
 #   numberProduct: '---'
 #   dateRemoval: '---'
 #   numberApl: '---'
+#   system: '' # blank
 #   reason: '---'
 #   status: '---'
-
+#
 - category: 'PIV Card'
   supplier: 'Idemia'
   nameProduct: 'ID-One PIV v2.4 on Cosmos V8.1 (EEPROM)'
   numberProduct: '1501381'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1428'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Idemia'
@@ -89,9 +147,10 @@
   numberProduct: '1585242'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1428'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Oberthur'
@@ -99,9 +158,10 @@
   numberProduct: '1276885-XS'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1355'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Oberthur'
@@ -109,9 +169,10 @@
   numberProduct: '1276885'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1354'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'HID'
@@ -119,9 +180,10 @@
   numberProduct: '40030M-D14'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1431'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Gemalto'
@@ -129,9 +191,10 @@
   numberProduct: 'O1115095'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1500'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Gemalto'
@@ -139,9 +202,10 @@
   numberProduct: 'O1138439'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1510'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Gemalto'
@@ -149,9 +213,10 @@
   numberProduct: 'O1110994'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1430'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Giesecke + Devrient Mobile Security'
@@ -159,9 +224,10 @@
   numberProduct: '50192769'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1429'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
 
 - category: 'PIV Card'
   supplier: 'Giesecke + Devrient Mobile Security'
@@ -169,9 +235,41 @@
   numberProduct: '50254711'
   dateRemoval: 'Monday, July 1, 2024'
   numberApl: '1502'
+  system: '' # blank
   reason: 'CMVP certificate is now historical'
   status: post
-  note: 'moved to legacy'
+  note: 'now legacy card data'
+
+# Table 4:
+# PACS Validation Infrastructure Category Table
+# memo: system is  13.02 for PACS Validation Infrastructure Category
+#
+# Template:
+# -   category: 'PACS Validation Infrastructure'
+#     supplier: '---'
+#     nameProduct: '---'
+#     numberProduct: '---'
+#     dateRemoval: '---'
+#     numberApl: '---'
+#     system: '13.02'
+#     reason: '---'
+#     status: '---'
+#
+-   category: 'PACS Validation Infrastructure' # blank entry, replace with new data using template above
+    supplier: '---'
+    nameProduct: '---'
+    numberProduct: '---'
+    dateRemoval: '---'
+    numberApl: '---'
+    system: 13.02
+    reason: '---'
+    status: '---'
+
+
+
+
+
+
 
 # -  category: 'PACS and Validation Infrastructure'
 #    supplier: Vicount
