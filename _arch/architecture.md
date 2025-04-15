@@ -842,6 +842,7 @@ Access management system components may include:
 - Physical or facility access control systems 
 - Privileged access management applications
 - Access policy and access rules repositories
+- Policy information point
 - Policy enforcement points 
 - Policy decision points
 - Virtual private networks
