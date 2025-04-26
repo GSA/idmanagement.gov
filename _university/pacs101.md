@@ -764,7 +764,7 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 ## Other Relevant Publications
 
 ["Federal Building Security:
-Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"](https://www.gao.gov/products/GAO-19-138){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Government Accountability Office (GAO), December 20, 2018 
+Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access Control"](https://www.gao.gov/products/gao-19-138){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Government Accountability Office (GAO), December 20, 2018 
 
 ## Glossary
 

@@ -26,6 +26,68 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+
+- notice_date: April 24, 2025
+  change_type: Intent to issue CA Certificate
+  system: WidePoint SSP
+  change_description: WidePoint plans to sign a new issuing CA under the WidePoint SSP Intermediate CA 2, the U.S. Department of Transportation Agency CA G7 is expected to be signed on or about 5/5/2025
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA 2, O = ORC PKI, C = US
+  ca_certificate_subject: CN= U.S. Department of Transportation Agency CA G7, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG7.crl
+  ee_ocsp_uri: http://dotagencyg7.eva.orc.com/
+
+- notice_date: April 24, 2025
+  change_type: Intent to issue CA Certificate
+  system: WidePoint SSP
+  change_description: WidePoint plans to sign a new issuing CA under the WidePoint SSP Intermediate CA 2, the U.S. Department of Transportation Device CA G7 is expected to be signed on or about 5/5/2025
+  contact: WCSC-PKIPolicy at widepoint dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = WidePoint SSP Intermediate CA 2, O = ORC PKI, C = US
+  ca_certificate_subject: CN= U.S. Department of Transportation Device CA G7, OU=U.S. Department of Transportation, O=U.S. Government, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WPSSPIntCA2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA2.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl-server.orc.com/CRLs/DoTAgencyCAG7.crl
+  ee_ocsp_uri: http://dotagencyg7.eva.orc.com/
+
+- notice_date: April 16, 2025
+  change_type: Intent to issue CA Certificate
+  system: CertiPath Bridge Certification Authority
+  change_description: The CertiPath Bridge CA intends to issue a new cross certificate to the Lockheed Martin Root Certification Authority 6 prior to April 30, 2025.
+  contact: judith dot spencer at certipath dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 6, OU=Certification Authority, O=Lockheed Martin Corporation, L=Denver, S=Colorado, C=US
+  
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://crl.external.lmco.com/crl/certupd/issuedby-lmrca6.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: April 14, 2025
+  change_type: Intent to issue CA Certificate
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State issued a new PIV issuing CA certificate. The new CA is scheduled to go into production in May 2025.
+  contact: newtonpj at state dot gov
+  ca_certificate_hash: 4a4e87b992264fbf9f92fcc4ab89840df6fcb89d
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: OU = U.S. Department of State PIV CA3, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c
+  sia_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
 - notice_date: April 2, 2025
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2

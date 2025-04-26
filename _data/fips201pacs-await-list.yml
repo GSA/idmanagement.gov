@@ -14,7 +14,7 @@
 
 # Template for new data:
 #
-# - position: [number]
+# - position: [number] (start at 1)
 #   solution: [string]
 #   aplnumbers: [numbers and chars]
 #   state: [string]
@@ -33,14 +33,9 @@
   teststatus: In queue
 
 - position: 3	
-  solution: Gallagher PIV Command Centre + HID Global Validation System for Gallagher Command Center
+  solution: Gallagher PIV Command Centre +  HID Global Validation System for Gallagher Command Center
   aplnumbers: 10019 & 10020
   state: Update
   teststatus: In queue
 
-- position: 4	
-  solution: Datawatch + HID pivCLASS
-  aplnumbers: New
-  state: New
-  teststatus: In queue
 
