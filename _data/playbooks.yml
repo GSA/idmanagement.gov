@@ -66,6 +66,14 @@
   header: "/assets/playbooks/headers/playbook_07.webp"
   target: _self
 
+- title: Identity Fraud Detection Playbook
+  type: Webpage
+  pubdate: 2025-02
+  description: This playbook serves as a resource and provides a foundational understanding of identity fraud techniques, detection methods, and mitigation strategies.
+  url: "/playbooks/idfraud/"
+  header: "/assets/playbooks/headers/playbook_06.webp"
+  target: _self
+
 - title: Identity Lifecycle Management Playbook
   type: Webpage
   pubdate: 2024-18

@@ -20,11 +20,11 @@
 
 - orderNumber: 0
   initialState: active
-  delay: 20000
-  heroHeading: "ICAM FIBF" 
-  heroText: "The ICAM FIBF Working Group has released Component 4 and 5 for Comment."
+  delay: 30000
+  heroHeading: "Identity Fraud Detection Playbook" 
+  heroText: "This playbook serves as a resource and provides a foundational understanding of identity fraud techniques, detection methods, and mitigation strategies."
   actionButtonText: Learn more about the 
-  actionLocation: icam-fibf/
+  actionLocation: playbooks/idfraud/
   actionTarget: _self
 
 - orderNumber: 1
@@ -81,11 +81,3 @@
   actionLocation: playbooks/cloud/
   actionTarget: _self
 
-- orderNumber: 7
-  initialState:
-  delay: 10000
-  heroHeading: Identity lifecycle management
-  heroText: encompasses the activities of creating, identity proofing, vetting, provisioning, aggregating, maintaining, and deactivating digital identities on an agency’s enterprise identity, credential, and access management (ICAM) system.
-  actionButtonText: Learn more about
-  actionLocation: playbooks/ilm/
-  actionTarget: _self

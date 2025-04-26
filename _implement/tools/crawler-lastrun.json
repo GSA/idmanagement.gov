@@ -1,9 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:222986917805494347232538603055430054580611057625"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -3553,60 +3551,6 @@
             }
         },
         {
-            "subject": "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US",
-            "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1312391407",
-            "akid": "68 84 15 48 8c 54 70 7f 2d 12 58 0e ec 1c 78 ef 3c 2e 59 64",
-            "skid": "16 cd d6 ce 7f cf 17 f9 7e 21 85 f4 b1 e7 2c 33 ff 10 45 09",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer",
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-                "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://pki.treasury.gov/ssaca_sia.p7c": []
-            },
-            "aia-entries": {
-                "http://pki.treasury.gov/ssaca_aia.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "organizational_unit_name:OCIO CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1312391425",
-            "akid": "68 84 15 48 8c 54 70 7f 2d 12 58 0e ec 1c 78 ef 3c 2e 59 64",
-            "skid": "d7 ce 28 4c c8 24 6a 56 46 5b 75 65 8b 67 c4 fa c8 e0 88 a5",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer",
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-                "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://pki.treasury.gov/toca_sia.p7c": []
-            },
-            "aia-entries": {
-                "http://pki.treasury.gov/toca_aia.p7c": [
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "organizational_unit_name:NASA Operational CA,organizational_unit_name:Certification Authorities,organizational_unit_name:NASA,organization_name:U.S. Government,country_name:US",
             "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "serial-number": "1312391446",
@@ -4448,6 +4392,40 @@
             }
         },
         {
+            "subject": "organizational_unit_name:OCIO CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
+            "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
+            "serial-number": "1312391425",
+            "akid": "68 84 15 48 8c 54 70 7f 2d 12 58 0e ec 1c 78 ef 3c 2e 59 64",
+            "skid": "d7 ce 28 4c c8 24 6a 56 46 5b 75 65 8b 67 c4 fa c8 e0 88 a5",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US:688415488c54707f2d12580eec1c78ef3c2e5964",
+            "validity-dates": {
+                "not-before": "2015-04-19 15:17:45+00:00",
+                "not-after": "2025-04-19 15:47:45+00:00"
+            }
+        },
+        {
+            "subject": "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US",
+            "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
+            "serial-number": "1312391407",
+            "akid": "68 84 15 48 8c 54 70 7f 2d 12 58 0e ec 1c 78 ef 3c 2e 59 64",
+            "skid": "16 cd d6 ce 7f cf 17 f9 7e 21 85 f4 b1 e7 2c 33 ff 10 45 09",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US:688415488c54707f2d12580eec1c78ef3c2e5964",
+            "validity-dates": {
+                "not-before": "2015-04-19 15:04:29+00:00",
+                "not-after": "2025-04-19 15:34:29+00:00"
+            }
+        },
+        {
             "subject": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "serial-number": "1144956730",
@@ -5280,18 +5258,6 @@
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:NASA Operational CA,organizational_unit_name:Certification Authorities,organizational_unit_name:NASA,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:OCIO CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
