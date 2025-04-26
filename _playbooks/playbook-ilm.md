@@ -224,8 +224,22 @@ Identity Lifecycle Management is a strategic enabler for federal agencies to mee
 
 This Playbook is a roadmap for agencies to modernize their approach to identity management and build dynamic mission capabilities on a resilient cybersecurity foundation.
 
+### Managing Identity Lifecycle vs Managing Credential Lifecycle
+
+A key theme in OMB Memo 19-17 is for federal agencies to shift the focus from managing the lifecycle of credentials to managing the lifecycle of identities. What does this mean? The main focus of this statement is for federal agencies to create a centralized and agile identity and access management system that leverages attributes for fine-grained authorization rather than based on a credential. This focus shift will help agencies achieve an enterprise ICAM system that is agile to support technology modernization. Examples of shifting the operating model include the following.
+
+**Table 3: Identity-Centric Versus Credential-Centric**
+
+| **Identity-Centric** | **Credential-Centric** |
+|----------------------|------------------------|
+| Enable Single Sign-On for agency applications | Manage authentication at each individual application. |
+| Federate application for external partner access. | Application-specific authentication using a PIV card or Username and Password. |
+| Support a variety of phishing-resistant authenticators with a path toward a total passwordless architecture. | Only support PIV card authentication or Username and Password as a backup. |
+| Leverage attributes aggregated through a MUR for fine-grained authorization. | Leverage attributes only from a PIV Card for authorization. |
+
+
 ##  Threats
-Effective identity governance within an ILM program can mitigate the impacts of [prevalent IAM threats]():
+Effective identity governance within an ILM program can help mitigate the impacts of [prevalent IAM threats](https://media.defense.gov/2023/Mar/21/2003183448/-1/-1/0/ESF%20IDENTITY%20AND%20ACCESS%20MANAGEMENT%20RECOMMENDED%20BEST%20PRACTICES%20FOR%20ADMINISTRATORS%20PP-23-0248_508C.PDF):
 + **Phishing, spear phishing, or social engineering**: Identity governance cannot directly prevent these attacks, but can reduce the potential impact of user account compromise using these techniques. A compromised account with excessive privileges can do more damage than one whose privileges are contained. In addition, Segregation of Duty controls enforced through identity governance can ensure that compromising a single account does not provide access to key business processes and data.
 + **Insider threats**: As with phishing and other account compromise threats, identity governance cannot prevent insiders from abusing their privileges, but it can reduce the impact when these events happen if they do not have excessive privileges. 
 + **Creating accounts to maintain persistence**: Attackers who compromise privileged accounts may attempt to create additional user accounts to maintain access to a system even if the initially compromised accounts are revoked or disabled. Identity governance systems monitor account creations and can help an organization identify unauthorized account creation.
@@ -235,11 +249,11 @@ This playbook has two distinct sections.
 
 1. The first section is an overview of the identity lifecycle. It explains ILM processes and how they address agency challenges and goals.
 
-2. The second section describes plays that implement ILM within an agency.
+2. The second section describes steps that implement ILM within an agency.
 
 ## The Identity Lifecycle
 
-Identity lifecycle management is the evolution of an identity from creation to deletion. The lifecycle management process consists of three distinct phases, which match the basic (C)reate, (R)ead, (U)pdate, and (D)elete functions of software applications on persistent storage. 
+Identity lifecycle management is the evolution of an identity from creation to deletion. The lifecycle management process consists of three distinct phases, which align to the basic (C)reate, (R)ead, (U)pdate, and (D)elete functions of software applications on persistent storage. 
 
 **Figure 1: Identity Lifecycle Process**
 
@@ -276,15 +290,13 @@ Reviewing access is critical to user accountability. Access reviews are critical
 
 IGA tools typically include analytic capabilities to identify unmanaged accounts. Unmanaged accounts may indicate adversary activity or poor local account controls. Flagging these accounts for review is important. Agencies may elect to automate locking accounts which suspicious activity to allow for mitigation. 
 
-Agencies that previously leveraged the CDM Dashboard to implement CRED, BEHAVE, TRUST, and PRIV capabilities for privileged and general users can configure their IGA tools to achieve consistent outcomes. Doing so will be described in more detail in the tool portion of this playbook.
+Agencies that previously leveraged the CDM Dashboard to implement CRED, BEHAVE, TRUST, and PRIV capabilities for privileged and general users can configure their IGA tools to achieve similar outcomes with visualizations and event handling in IdMS or other cybersecurity tools. 
 
 ### **Stage 3 - Deactivate: Delete**
 
 Deactivation - Deactivate or remove identities associated with a user record. IGA Processes associated with deactivation include suspension, archive, or deletion of accounts and credentials. IGA tools implement variations of "delete" can be a "hard" or "soft" delete. Consider requiring a human user action to perform a hard delete, and implement second-person review to confirm it. 
 
 Agencies will need to review their privacy, record retention, and log retention requirements when defining the "end" of identity lifecycles in agency ILM policies and when configuring IGA tools. 
-
-With the Executive Order 14028 that enabled OMB M-22-09 agencies should centralize their identity management, credential management, and access management with services that leverage the identity access governance process. In doing so, agencies then can enhance their security posture to the greatest extent possible and centrally implement alternate phishing resistant authenticators support in their enterprise identity management systems, so that these authenticators are centrally managed and connected to enterprise identities.” – As the identity pillar, ZTA foundation is set in place for MB 22-09 agencies can then start to create their Master User Record (MUR) with the intent to implement IGA across the enterprise, set all users to required identity management and zero trust principles.
 
 #  Agency Actions
 ## Step 1. **Document the Process in an Agency Policy**
@@ -299,7 +311,7 @@ Document an agency policy to identify the roles and responsibilities required to
     4. Application Owners to identify entitlements that are appropriate to a role and assigned to a user.
     5. Identify other offices as needed.
     6. Assign credentials
-3. Specific steps or actions for roles at each step of the ILM Create - Provision - Deactivate process that aligns with the FICAM architecture identity management services.
+3. Specific steps or actions for roles at each step of the ILM Create - Use - Deactivate process that aligns with the FICAM architecture identity management services.
 4. Agency or government references.
 5. A point of contact.
 
@@ -315,7 +327,7 @@ An agency policy ensures an agency-wide commitment to implementing and operating
 </div>
 
 ### Construct the User Journey
-Agencies should describe ILM from the user's perspective to help orient stakeholders and ensure focus on the user experience. A positive user experience is the outcome of an effective and efficient ILM program. The [FIDO Alliance Guidance for U.S. Government Agency Deployment of FIDO Authentication](https://fidoalliance.org/white-paper-fido-alliance-guidance-for-u-s-government-agency-deployment-of-fido-authentication/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} describes such a user journey that includes support for Pre-PIV and No-PIV use cases. Agencies should consider establishing performance metrics for onboarding across use cases to support continuous improvement. 
+Agencies should describe ILM from the user's perspective to help orient stakeholders and ensure focus on the user experience. A positive user experience is an important outcome of an effective and efficient ILM program. The [FIDO Alliance Guidance for U.S. Government Agency Deployment of FIDO Authentication](https://fidoalliance.org/white-paper-fido-alliance-guidance-for-u-s-government-agency-deployment-of-fido-authentication/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} describes such a user journey that includes support for Pre-PIV and No-PIV use cases. Agencies should consider establishing performance metrics for onboarding and offboarding across use cases to help identify problems that arise and support continuous improvement. 
 
 <img src="{{site.baseurl}}/assets/playbooks/fido-alliance-user-journey-diagram.png" alt="Diagram illustrating a typical agency user journey" width="800">
 
@@ -332,7 +344,7 @@ ILM is an important part of identity orchestration and applying the principle of
 
 Agencies should leverage [NIST SP 1800-35, Implementing a Zero Trust Architecture](https://pages.nist.gov/zero-trust-architecture/index.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} when planning ILM solutions as a part of their Zero Trust Architecture. The NCCoE initiated the [Implementing a Zero Trust Architecture project](https://www.nccoe.nist.gov/projects/implementing-zero-trust-architecture){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} "in collaboration with industry participants to demonstrate several approaches to a zero trust architecture applied to a conventional, general purpose enterprise information technology (IT) infrastructure on premises and in the cloud, which will be designed and deployed according to the concepts and tenets documented in [NIST Special Publication (SP) 800-207, Zero Trust Architecture](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. The example implementations integrate commercial and open-source products that leverage cybersecurity standards and recommended practices to showcase the robust security features of zero trust architectures." 
 
-This Playbook is intentionally consistent with the "Crawl" and "Run" Enhanced Identity Governance (EIG) implementations. The NIST-led effort leverages typical agency IdMS tools, including those originally deployed as part of CDM Phase 2.
+This Playbook is intentionally consistent with the "Crawl" and "Run" Enhanced Identity Governance (EIG) implementations, which leverage typical agency IdMS tools, including those originally deployed as part of CDM Phase 2.
 
 ILM solutions are typically based on two technologies.
 
@@ -379,9 +391,13 @@ Consistent with CDM, a MUR contains aggregated attributes from multiple authorit
 | Vetting System                    | TRUST           | Eligibility, Status, Type of vetting completed |
 | Training System/Learning Management System          | BEHAVE          | Security Training Status, Training Types |
 
-In most circumstances, the MUR's authoritative role makes it the logical capability to host agency's PIV identity accounts for PIV-eligible personnel. Agencies will typically include PIV-ineligible users within their MUR in order to authoritatively operate ILM for their IdPs and resources. Although the requirement to check PIV status is required by NIST SP 800-157-1 and NIST SP 800-217, specific requirements for how this should be implemented is not defined at this writing.  
+In most circumstances, the MUR's authority is consistent with the requirements for PIV identity accounts for PIV-eligible agency personnel. Agencies will also typically include PIV-ineligible users within their MUR in order to authoritatively operate ILM for their IdPs and resources. 
 
-Per [OPM, December 2020 guidance](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} if the PIV credential is suspended or revoked, any associated derived credentials must also be suspended or revoked.
+The MUR should use its own identifiers for specific users to avoid collisions and facilitate identity resolution and probabalistic matching when separate identity records for a single human user are aggregated. Ideally, MUR identifiers are not human readable.
+
+Importantly, the syncing of status performed by an ILM capability between a specific user's PIV identity account in the MUR and the user's managed IdP subscriber account for a derived PIV meets the requirement to check PIV identity account status per federated transaction by NIST SP 800-157-1 and NIST SP 800-217. The active syncing of PIV status is called "coupling" in these requirements. 
+
+[OPM, December 2020 guidance](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} further requires any associated derived credentials to be suspended or revoked if the PIV credential is suspended or revoked.
 
 Vetting incorporates all steps in the end-to-end process, including:
 
@@ -393,11 +409,19 @@ Vetting incorporates all steps in the end-to-end process, including:
 6. Provide administrative due process or other procedural rights.
 7. Perform ongoing assessments (to include continuous vetting or reinvestigation) to ensure that individuals continue to meet the applicable standards for the position for which they were favorably adjudicated.
 
-The MUR can be provided by virtual directory or identity fabric tools, or within enterprise platforms or Identity as a Service solutions. Rather than naming tools, agencies should define the architecture around the designated MUR, with flow to the MUR from authoritative sources, by attribute, and the flow from the MUR to downstream identity records to implement ILM. 
+
 
 ###  Connecting authoritative data sources to the MUR ##
 #### Establishing source-destination directionality    ### 
-Although the MUR is not likely the authoritative source of most identity attributes, the MUR is typically the exclusive provider to other capabilities that maintain identity records and accounts, including subscriber accounts at IdPs and platforms. Agencies should designate authoritative sources of specific attributes, rather than entire systems, and ensure those capabilities subscribe to MUR for updates to other identity attributes for which they are not the authoritative source. 
+Although the MUR is not likely the authoritative source of most enterprise identity attributes, the MUR is typically the exclusive provider to other capabilities that maintain identity records and accounts, including subscriber accounts at IdPs and platforms. Agencies should designate authoritative sources of specific attributes, rather than entire systems, and ensure those capabilities subscribe to MUR for updates to other identity attributes for which they are not the authoritative source. 
+
+The MUR is an important policy management, access review, and event management capability for governance stakeholders across business areas, cyber operations centers, and monitoring functions. These users need access to sensitive MUR data to perform their authorized duties. MUR access requirements and methods should be defined during planning and closely monitored, as well. 
+
+Figure X, below, provides a view of potential MUR data connections within a mature and complete IdMS services suite in a ZTA.
+
+**Figure X: MUR Data Connections**
+
+<img src="{{site.baseurl}}/assets/playbooks/notional-mur-idms-connections.png" alt="Depiction of MUR connections within IdMS to authoritative attribute sources, policy contributors and governance stakeholders, and IdPs and relying parties." width="800">
 
 "Directionality" is an important conecpt in IGA by presenting clear flow of CRUD events that make up ILM. In defining these flows, agencies should be careful to avoid "loops" in syncing relationships where the source also becomes a destination of the same attribute, either directly, or a multi-hop flow.  
 
@@ -457,20 +481,6 @@ An example of an orphaned account includes active employee accounts where the em
     </p>
   </div>
 </div>
-
-#### Managing Identity Lifecycle vs Managing Credential Lifecycle
-
-A key theme in OMB Memo 19-17 is for federal agencies to shift the focus from managing the lifecycle of credentials to managing the lifecycle of identities. What does this mean? The main focus of this statement is for federal agencies to create a centralized and agile identity and access management system that leverages attributes for fine-grained authorization rather than based on a credential. This focus shift will help agencies achieve an enterprise ICAM system that is agile to support technology modernization. Examples of shifting the operating model include the following.
-
-**Table 3: Identity-Centric Versus Credential-Centric**
-
-| **Identity-Centric** | **Credential-Centric** |
-|----------------------|------------------------|
-| Enable Single Sign-On for agency applications | Manage authentication at each individual application. |
-| Federate application for external partner access. | Application-specific authentication using a PIV card or Username and Password. |
-| Support a variety of phishing-resistant authenticators with a path toward a total passwordless architecture. | Only support PIV card authentication or Username and Password as a backup. |
-| Leverage attributes aggregated through a MUR for fine-grained authorization. | Leverage attributes only from a PIV Card for authorization. |
-
 
 
 ## Summary
