@@ -76,7 +76,7 @@ The Identity Lifecycle Management Working Group of the Federal Chief Information
 
 ## Executive Summary
 
-The Identity Lifecycle Management (ILM) Playbook serves as a practical guide for federal agencies, offering insights on transitioning from managing access based solely on credentials to managing the entire lifecycle of identities. This includes overseeing associated accounts and credentials tied to each identity, as outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank" rel="noopener noreferrer" class="usa-link usa-link--external"}.
+The Identity Lifecycle Management (ILM) Playbook serves as a practical guide for federal agencies, offering insights on transitioning from managing access based solely on credentials to managing the entire lifecycle of identities. This includes overseeing associated accounts and credentials tied to each identity, as outlined in [section III of OMB Memo 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{rel="noopener noreferrer"}{class="usa-link usa-link--external"}.
 
 [Executive Order 14028 - Improving the Nation’s Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} paved the way for the creation of [OMB Memo 22-09](https://zerotrust.cyber.gov/federal-zero-trust-strategy/#identity){:target="_blank" rel="noopener noreferrer" class="usa-link usa-link--external"}, known as the Federal Zero Trust Strategy. M-22-09 directs
 
