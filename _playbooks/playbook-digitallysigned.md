@@ -3,10 +3,11 @@ layout: page
 collection: playbooks
 title: Digitally Sign a Microsoft Word Document for Submission to OFR
 category: Digitally Sign
-pubdate: 2005-06-03
-date: June 3, 2025
-type: Markdown
+
 version: 1.2
+pubdate: 2005-06-03June 3, 2025
+
+type: Markdown
 permalink: /playbooks/digitallysigned/
 description: This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.
 sidenav: playbooks
