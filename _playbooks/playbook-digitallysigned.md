@@ -5,7 +5,7 @@ title: Digitally Sign a Microsoft Word Document for Submission to OFR
 category: Digitally Sign
 
 version: 1.2
-pubdate: 2005-06-03June 3, 2025
+pubdate: June 3, 2025
 
 type: Markdown
 permalink: /playbooks/digitallysigned/
