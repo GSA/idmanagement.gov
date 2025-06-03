@@ -169,11 +169,11 @@ You can add an *invisible digital signature* to prevent  a signer’s name from 
 
 1. Open your document and click the File tab.  
 2. Click **Info** and then click **Protect Document**.<br/>
-<img src="/assets/piv/ofr_word_add_digital_signature_1.png" alt="A screenshot showing how to click Info and then Protect Document." width="392" height="291">
+<img src="{{site.baseurl}}/assets/piv/ofr_word_add_digital_signature_1.png" alt="A screenshot showing how to click Info and then Protect Document." width="392" height="291">
 
 3. From the Protect Document drop-down menu, click **Add a Digital Signature.**  
 4. Select a Commitment Type, such as ‘*created and approved this document*,’ verify the appropriate signing certificate is identified in the ‘Signing as’ field (if it is not the correct certificate, see steps 5-8 of adding a visible signature), and then click **Sign.** <br>
-<img src="/assets/piv/ofr_sign_box_with_name_appears_here_3.png" alt="A screenshot of a digital signature box." width="420" height="299">
+<img src="{{site.baseurl}}/assets/piv/ofr_sign_box_with_name_appears_here_3.png" alt="A screenshot of a digital signature box." width="420" height="299">
 
 5. Insert your PIV card into the card reader. Enter your smart card (PIV) PIN and click **OK.**<br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-5.png" alt="A screenshot of the Microsoft Word Windows Security Smart Card window." width="465" height="277">
