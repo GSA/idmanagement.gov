@@ -90,21 +90,21 @@
   header: "/assets/playbooks/headers/playbook_11.webp"
   target: _self
 
-- title: Digitally Sign a Word Document
+- title: Digitally Sign a Microsoft Word Document for Submission to OFR
   type: Webpage
-  pubdate: 2018-03
-  description: This playbook will walk you through the steps for digitally signing a Microsoft Word document with your PIV credential or similar digital certificate.
-  url: "/playbooks/signword/"
+  pubdate: 2005-06*03
+  description: This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.
+  url: "/playbooks/digitallysigned/"
   header: "/assets/playbooks/headers/playbook_01.webp"
   target: _self
 
-- title: Digitally Sign a Federal Register Document
-  type: Webpage
-  pubdate: 2022-08
-  description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
-  url: "/playbooks/signfedregister/"
-  header: "/assets/playbooks/headers/playbook_06.webp"
-  target: _self
+# - title: Digitally Sign a Federal Register Document
+#   type: Webpage
+#   pubdate: 2022-08
+#   description: This playbook will walk you through the procedures for digitally signing a Microsoft Word document for submission to the Office of the Federal Register using your PIV credential or similar digital certificate.
+#   url: "/playbooks/signfedregister/"
+#   header: "/assets/playbooks/headers/playbook_06.webp"
+#   target: _self
 
 - title: Phishing-Resistant Authenticator Playbook
   type: Webpage
