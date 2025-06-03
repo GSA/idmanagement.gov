@@ -327,7 +327,7 @@ If you are using purchased certificates, such as from a trusted PKI vendor, you 
 
 When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](https://www.idmanagement.gov/playbooks/signfedregister/#add-invisible-digital-signatures-in-ms-word) instructions above, note the different icons for the PIV and purchased certificates:  
 
-<img src="{{site.baseurl}}/assets/piv/piv-certificate.png" alt="A screenshot of a PIV Certificates.">
+<img src="{{site.baseurl}}/assets/piv/piv-certificate.png" alt="A screenshot of a PIV Certificates." width="50%">
 
 ### **Some of our signers use MS Word for Apple on iPad. Will this work for PKI submission?**
 
