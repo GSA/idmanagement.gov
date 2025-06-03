@@ -9,8 +9,8 @@ description: The Enterprise SSO Playbook is a five-step playbook to aid agencies
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.1
-pubdate: November 16, 2021
+version: 1.2
+pubdate: May 30, 2025
 
 subnav:
   - text: Executive Summary
@@ -31,8 +31,8 @@ subnav:
     href: '#appendix-a-troubleshooting-single-sign-on'
 ---
 
-<!-- Version 1.1<br>
-November 16, 2021 -->
+<!-- Version 1.2<br>
+May 30, 2025 -->
 
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
@@ -62,7 +62,14 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
         </th>
     </tr>
     </thead>
-    <tr>
+     <tr>
+        <th scope='row'>
+        1.2
+        </th>
+        <td>5/30/2025</td>
+        <td>Update content to align to final public draft of NIST SP 800-63C-4 and provide planning considerations for FAL3.</td>
+    </tr>
+      <tr>
         <th scope='row'>
         1.1
         </th>
@@ -82,11 +89,12 @@ This playbook is a collaboration between the Identity, Credential, and Access Ma
 
 <!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
+| 1.2 | 5/30/2025 | Update content to align to final public draft of NIST SP 800-63C-4 and provide planning considerations for FAL3. |
 | 1.1 | 11/16/2021 | Add SSO US code reference. Added Appendix A of SSO troubleshooting steps. |
 | 1.0 | 02/12/2021 | Initial Draft | -->
 
 ## Executive Summary
-The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies implement or modernize an SSO service for federal employee access to government applications. SSO is a component of Identity, Credential, and Access Management (ICAM) that agencies use to centralize access to applications. SSO enables end users to log in to multiple applications using extensible multi-factor authentication options. It also extends capabilities for applications that don’t natively support multi-factor authentication. Other benefits of Enterprise SSO include: 
+The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federal agencies implement or modernize an SSO service for federal employee access to internal government applications. SSO is a component of Identity, Credential, and Access Management (ICAM) that agencies use to centralize access to applications. SSO enables end users to log in to multiple applications using extensible multi-factor authentication options. It also extends capabilities for applications that don’t natively support multi-factor authentication. Other benefits of Enterprise SSO include: 
 
 1. Supporting IT modernization and cloud adoption projects - Provide a centralized access point to onboard on-premise and cloud applications.
 2. Supporting remote workforce - Efficiently adapt to any location, various authenticators, and any device workforce.
@@ -94,7 +102,7 @@ The Enterprise Single Sign-On (SSO) Playbook is a practical guide to help federa
 4. Reducing identity-related help desk tickets - Allow automated provisioning and de-provisioning or self-service to reduce identity-related help desk tickets.
 5. Improving security posture - Quickly resolve unauthorized access actions by centralizing authentication and monitoring activity.
 
-Agencies can use this playbook to centralize application access for agency employees and contractors or federate access with other federal executive agencies. Updates to this playbook may include federating outside of the federal executive branch, but it is not included in this current version.
+Agencies can use this playbook to centralize application access for agency employees and contractors which can pave the way for future efforts to federate access with other federal executive agencies.
 This playbook outlines a five-step process to implement or modernize an Enterprise SSO service aligned with the [Federal Identity, Credential, and Access Management (FICAM) architecture]({{site.baseurl}}/arch/){:target="_blank"}{:rel="noopener noreferrer"}. This playbook is designed for identity program managers and enterprise and application architects interested in modernizing their access management systems for federal employee access to internal or external applications. Agencies are encouraged to tailor this playbook to fit their unique organizational structure, mission needs, and requirements. Other IT program participants, including program managers and application teams, may find value in incorporating this playbook approach in their planning. 
 
 ### Key Terms
@@ -131,7 +139,7 @@ SSO is a technology pattern used to centralize authentication among multiple app
 | SAML | An XML-based open standard for exchanging authentication and authorization data. | [SAML 2.0 Technical Overview](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
 | OIDC | A JavaScript Object Notation (JSON)-based authentication layer of the OAuth 2.0 authorization protocol used to transmit basic user profile information. | [Open ID Connect Foundation](https://openid.net/connect/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} |
 
-{% include alert-info.html heading="SAML or OIDC?" content="Picking an assertion protocol is dependent on application support. If possible, defer to a more modern protocol such as OIDC if it’s supported by the application. Assertion protocols are specific to web-based (on-premise and cloud) or mobile applications. Some SSO vendors can extend their products to integrate with workstations, Virtual Private Networks (VPN), Virtual Desktop Interfaces, or other on-premise applications and services." %} 
+{% include alert-info.html heading="SAML or OIDC?" content="Picking an assertion protocol is dependent on application support. If possible, defer to a more modern protocol such as OIDC if it’s supported by the application; however, legacy applications may only work with SAML, making it worth supporting both protocols. Assertion protocols are specific to web-based (on-premise and cloud) or mobile applications. Some SSO vendors can extend their products to integrate with workstations, Virtual Private Networks (VPN), Virtual Desktop Interfaces, or other on-premise applications and services." %} 
 
 <img src="{{site.baseurl}}/assets/playbooks/sso-overview.png" alt="Basic components required to perform single sign-on." width="560" height="276">
 
@@ -153,17 +161,23 @@ Table 2. Enterprise SSO Overview
 ### 1.2 Security Considerations
 Applications rely on your Enterprise SSO to accurately and securely communicate and store user identity and attribute information. The centralized benefits of SSO can also increase the potential impact of security vulnerabilities. Table 3 highlights the most common SSO-specific risks that require mitigation strategies.
 
-Table 3. Key Enterprise SSO Risks
+Table 3. Critical Enterprise SSO Risks
 
 | SSO-Specific Risks | Recommendations | 
 | ------------------ | --------------- |
-| Session Key Browser Caching | Use encryption to secure connections and enforce time-restricted access and caching based on agency policies. Protection of assertion-bearing cookies is key to mitigating client browser attacks. |
-| Signing Key Security | Refer to NIST Special Publication 800-63C Digital Identity Guidelines Federation and Assertions (PDF, June 2017) for specific guidance and considerations for the protection of your SSO’s assertion signing key. |
-| Assertion Validation | Each application validates that the assertions it receives are from a trusted source and appropriate for its sub-domain, functionality, and required attributes. |
+| Session Key Browser Caching | Use approved encryption to secure connections and enforce time-restricted access and caching based on agency policies. Protection of assertion-bearing cookies is key to mitigating client browser attacks. |
+| Signing Key Security | NIST Special Publication 800-63C Digital Identity Guidelines Federation and Assertions (PDF, June 2017) requires a minimum of FIPS 140 level 1 storage for FAL2 and FAL3 assertion signing keys that are used by Federal agencies. |
+| Assertion Validation | Each application validates that the assertions it receives are from a trusted source and appropriate for its sub-domain, functionality, required attributes, and that other protections against injection and replay attacks are implemented. |
 
 {% include alert-error.html heading="Cyberattacks" content="Targeted cyberattacks may pose a heightened risk to your agency’s IT assets, such as enterprise directories, identity stores, and Enterprise SSO servers. Your SSO should be managed and monitored as part of your agency’s cybersecurity program and in coordination with the DHS CDM initiative." %}
 
-Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt. Don’t ask users to provide their credentials if the security posture of their sessions has not changed.
+{% include alert-error.html heading="Application Security Responsibilities" content="A holistic approach is needed to mitigate threats against Federated SSO solutions, to include security controls by relying on party applications.  If an assertion is directly requested by the application, inclusion of a nonce in that request and establishing an assertion expiration via a trust agreement can mitigate several potential injection and replay threats." %}
+
+{% include alert-info.html heading="User Credential Fatigue" content="Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt. Don’t ask users to provide their credentials if the security posture of their sessions has not changed." %} 
+
+Of particular note, SSO assertion signing keys are inherently trusted by RPs and can be considered a single point of failure in all Federated environments, including SSOs that use federation assertions.  As a result, depending on the protocol used for signing (e.g., asymmetric vs MAC), there may not be a revocation mechanism for compromised SSO assertion signing keys.  Exploitation of this particular signing key compromise would mean that a malicious actor may be able to forge trusted federation assertions at will, leading to widespread access to all integrated applications.  Even at FAL3, where an RP must independently validate the Holder-of-Key (HoK), a malicious actor could substitute their own public key into the assertion and sign with a compromised SSO assertion signing key. In order to mitigate assertion signing key compromises, NIST mandates the use of FIPS 140 level 1 key storage for FAL2 and FAL3 solutions and it is highly recommended to leverage hardware technologies and chipsets that prevent export of private signing keys (e.g., FIPS 140 level 2 HSM or TPM).
+
+{% include alert-info.html heading="SSO Security Reference" content="A more authoritative list of threats to Federation assertions and their associated mitigation strategies are included in NIST Special Publication 800-63C-4 Digital Identity Guidelines Federation and Assertions, Chapter 6." %} 
 
 ### 1.3 Build the Business Case
 With any project, a business case is used to capture the strategic, business, and technical benefits from a project. Use examples in Table 4 below to craft your business case. The main benefits include:
@@ -268,7 +282,7 @@ After inventorying applications, document these application requirements:
 - Provisioning support and the attribute requirements, and
 - Endpoint or redirect Uniform Resource Locators (URLs).
 
-Many of the items above can be automatically generated within either the SSO service or the application, but be prepared to configure them. Not every application supports an assertion protocol, but several web application vendors and development frameworks provide extensions that support SAML and OIDC.
+Many of the items above can be automatically generated within either the SSO service or the application, but be prepared to configure them. Not every application supports an assertion protocol, but several web application vendors and development frameworks provide extensions that support SAML or OIDC.
 
 Applications may also support automated account provisioning as part of the assertion protocol. Review application support and processes to perform automated provisioning.
 
@@ -305,7 +319,7 @@ For additional information related to the architecture, visit the [FICAM Archite
 
 <p align="center"><b>Figure 3: Example System Components for an Agency Enterprise ICAM Program</b></p>
 
-{% include alert-info.html heading="Identity Synchronization" content="User data (e.g., identity) synchronization between the Enterprise SSO service and data repositories fall into two categories of one-way (unidirectional) or dual (bidirectional) syncs. One-way sync from the source directory to the service usually includes identity data and sometimes, passwords. Identify which service should be the authoritative source for data based on the sync method and plan accordingly." %} 
+{% include alert-info.html heading="Identity Synchronization" content="User data (e.g., identity) synchronization between the Enterprise SSO service and data repositories fall into two categories of one-way (unidirectional) or dual (bidirectional) syncs. One-way sync from the source directory to the service usually includes identity data and, sometimes, passwords. Identify which service should be the authoritative source for data based on the sync method and plan accordingly." %} 
 
 ### 3.2 Environmental Considerations
 Agencies with applications that are accessible from a public cloud or use private or hybrid cloud services may need to plan for additional architecture and network considerations. Consider these questions in your planning:
@@ -367,12 +381,12 @@ Application configuration is usually performed in one of two patterns.
 
 Configuring the application usually involves sharing configuration data between the SSO service and the application. What and how information is shared is dependent on the assertion protocol, but most SSO vendors have comprehensive configuration documentation. Every application may have a unique process to enable SSO. Even though the application may be unique, the assertion protocol is standardized.
 
-- SAML - Configuration usually entails sharing a metadata file of connection information between the SSO service and the application. This creates the secure connection and ability to share identity information.
+- SAML - Configuration usually entails sharing a metadata file of connection information between the SSO service and the application. This creates a secure connection and ability to share identity information.
 - OIDC - Configuration is usually more automated. It usually entails logging into the application and authorizing the connection to the SSO service. It may also follow a similar metadata process to SAML.
 
 Although SAML and OIDC may require some manual configuration, it’s usually a short and straightforward process. Part of the application configuration includes the format of identity attribute sharing. During the application inventory, document the application username format. It may be different from what is used to authenticate to the SSO service. In step 2, you determined whether the application can support account provisioning within the assertion protocol. As part of the application configuration, you can set other user attributes required to establish an application account.
 
-{% include alert-info.html heading="Unique Identifiers" content="SSO vendors rely on the use of a unique identifier (e.g., an email, an agency-defined identifier). This is usually the username used to access the SSO service. Application-specific username formats may also be supported. For example, jane.doe@agency.gov is used to log into the SSO service and then, the service may convert that to an application specific name such as janedoe01." %} 
+{% include alert-info.html heading="Unique User Identifiers" content="SSO vendors rely on the use of a unique user identifier (e.g., an email, an agency-defined identifier). This is usually the username used to access the SSO service. Application-specific username formats may also be supported. For example, jane.doe@agency.gov is used to log into the SSO service and then, the service may convert that to an application specific name such as janedoe01." %} 
 
 #### Test
 Once an application is configured, it should go through a test cycle to ensure it functions properly and maintains or improves the user experience. Testing may include:
@@ -525,6 +539,8 @@ Each application integration should follow a similar configure, test, and releas
 - Schedule a phased capability rollout to user communities, if applicable.
 - Iterate on your system and processes regularly.
 
+Other security specific security considerations should be planned for by the application in the event FAL3 is needed.  Specifically, applications will need to have a capability to verify the Holder-of-Key (HoK), which is an independent function from simply consuming a federation assertion.  In these FAL3 scenarios, the SSO still passes information regarding the authenticator to the application, but the application then needs additional mechanisms to ensure the authenticator is being used by the intended subject.  In many cases, these HoK verification processes require the application to encrypt a challenge with the user's public key from the assertion.
+
 ### 5.2 Agreements/Building Trust between Federal Executive Agencies
 Technical trust is established between agencies participating in an identity federation through the use of agreed-upon assertion protocols and recorded in interface control documents. However, a business and mission-level agreement is frequently required to document inter-agency agreements in the form of an agency CIO-signed federation agreement. 
 
@@ -545,7 +561,7 @@ Sometimes it's the simple things. If users are reporting that they can't access 
 When a user reports that they are unable to access an application, they may blame the SSO infrastructure when the problem actually lies in the end application. SSO administrators should try an app that is known to work in order to distinguish app issues from SSO infrastructure issues. Ideally, the administrator team should have a sample application which will allow them, and the user to validate SSO access.
 
 ### 4. Check Certificates
-For signed assertions, an expired certificate can cause the assertions to not be trusted. If access is failing for an application or a set of applications, confirm that the certificate is not expired. This may be recorded as an error by the end applications.
+For signed assertions, an expired SSO signing certificate can cause the assertions to not be trusted. If access is failing for an application or a set of applications, confirm that the certificate is not expired. This may be recorded as an error by the end applications.
 
 ### 5. Check application configuration
 Changes in the configuration of the application assertion receiving and processing are a frequent error cause. This may be due to an application upgrade, or to an inadvertent change by an application administrator. This configuration error should show up in the application logs, but the errors may not be very clear.

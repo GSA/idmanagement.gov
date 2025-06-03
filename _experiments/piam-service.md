@@ -2,7 +2,7 @@
 
 layout: page
 collection: experiments
-title: PIAM Service Guide
+title: Public Identity and Access Management Service Guide
 permalink: /experiments/pid/service/
 sidenav: papers
 sticky_sidenav: true
@@ -26,6 +26,8 @@ subnav:
     href: '#7-appendix'
 
 ---
+
+{% include alert-warning.html heading="Draft" content="The following document is a Draft and should not be interpreted as a finalized rule." %}
 
 **Release {{page.release}}**
 

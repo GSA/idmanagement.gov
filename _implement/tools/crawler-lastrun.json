@@ -1,10 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:WidePoint SSP Intermediate CA 2,organization_name:ORC PKI,country_name:US:315067610926806300466484279482296592371496621649",
-            "common_name:WidePoint SSP Intermediate CA 2,organization_name:ORC PKI,country_name:US:309971348727576383998985322149337405223463428045"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -48,7 +45,6 @@
         "common_name:DOD SW CA-75,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD SW CA-82,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
         "common_name:DOD SW CA-83,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-        "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
         "common_name:DigiCert Class 3 SSP Intermediate CA - G4,organization_name:DigiCert, Inc.,country_name:US",
         "common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US",
         "common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US",
@@ -3275,33 +3271,6 @@
             }
         },
         {
-            "subject": "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
-            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "serial-number": "1149291415",
-            "akid": "a9 53 be 64 84 83 4b 5d 26 c6 27 3e 2e d1 84 68 55 3c d0 75",
-            "skid": "42 2a e6 4a c1 2c 3b 0e 71 68 92 97 e0 13 0f 76 0a cb 94 7d",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer",
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "serial-number": "1149306747",
@@ -4330,6 +4299,23 @@
             }
         },
         {
+            "subject": "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
+            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "serial-number": "1149291415",
+            "akid": "a9 53 be 64 84 83 4b 5d 26 c6 27 3e 2e d1 84 68 55 3c d0 75",
+            "skid": "42 2a e6 4a c1 2c 3b 0e 71 68 92 97 e0 13 0f 76 0a cb 94 7d",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US:a953be6484834b5d26c6273e2ed18468553cd075",
+            "validity-dates": {
+                "not-before": "2018-03-01 14:13:47+00:00",
+                "not-after": "2025-06-01 14:43:47+00:00"
+            }
+        },
+        {
             "subject": "organizational_unit_name:OCIO CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "serial-number": "1312391425",
@@ -5156,12 +5142,6 @@
             "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",

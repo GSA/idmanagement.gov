@@ -2,7 +2,7 @@
 
 layout: page
 collection: experiments
-title: PIAM Framework Guide
+title: Public Identity and Access Management Framework Guide
 permalink: /experiments/pid/framework/
 sidenav: papers
 sticky_sidenav: true
@@ -24,6 +24,8 @@ subnav:
     href: '#6-public-identity--access-management-piam-services-framework'
 
 ---
+
+{% include alert-warning.html heading="Draft" content="The following document is a Draft and should not be interpreted as a finalized rule." %}
 
 **Release {{page.release}}**
 
