@@ -236,7 +236,7 @@ Click the File tab and select Info. Then click View Signatures.<br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-11.png" alt="A screenshot of the Microsoft Word Info pane with the View Signatures option highlighted." width="560" height="311">
 
 Another way to view the signatures pane is from the bottom of the Word window, it may have a small document with a certificate seal next to the word counter.  If you click on this icon, the software will open the Signatures Pane where you can view all signatures and details as normal.<br>
-<img src="{{site.baseurl}}/assets/piv/signature_pane.png" alt="Signature Pane">
+<img src="{{site.baseurl}}/assets/piv/signature-pane.png" alt="Signature Pane">
 
 For any of the above options, you will be able to see the digital signature details in the Signatures pane. <br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-17.png" alt="A screenshot of a Microsoft Word Signature Details box." width="517" height="558">
@@ -327,7 +327,7 @@ If you are using purchased certificates, such as from a trusted PKI vendor, you 
 
 When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](https://www.idmanagement.gov/playbooks/signfedregister/#add-invisible-digital-signatures-in-ms-word) instructions above, note the different icons for the PIV and purchased certificates:  
 
-<img src="{{site.baseurl}}/assets/piv/piv_certificate.png" alt="A screenshot of a PIV Certificates.">
+<img src="{{site.baseurl}}/assets/piv/piv-certificate.png" alt="A screenshot of a PIV Certificates.">
 
 ### **Some of our signers use MS Word for Apple on iPad. Will this work for PKI submission?**
 
