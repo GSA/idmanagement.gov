@@ -14,22 +14,33 @@ sidenav: playbooks
 sticky_sidenav: true
 
 subnav:
-  # - text: Add a Digital Signature Using a Signature Line
-  #   href: '#add-a-digital-signature-using-a-signature-line'
-  # - text: Add an Invisible Digital Signature
-  #   href: '#add-an-invisible-digital-signature'
-  # - text: Add Multiple Digital Signatures Using Signature Lines
-  #   href: '#add-multiple-digital-signatures-using-signature-lines'
-  # - text: Add Multiple Invisible Digital Signatures
-  #   href: '#add-multiple-invisible-digital-signatures'
-  # - text: View Digital Signatures
-  #   href: '#view-digital-signatures'
-  # - text: Remove a Digital Signature
-  #   href: '#remove-a-digital-signature'
-  # - text: Verify Digital Signature Settings
-  #   href: '#verify-digital-signature-settings'
-  # - text: Additional Resources
-  #   href: '#additional-resources'
+  - text: Introduction
+    href: '#introduction'
+  - text: Software Version Compatibility
+    href: '#software-version-compatibility'
+  - text: General Tips for Working with Digitally Signed Files
+    href: '#general-tips-for-working-with-digitally-signed-files'
+  - text: Individual Signatures
+    href: '#individual-signatures'
+  - text: Add a Visible Digital Signature
+    href: '#add-a-visible-digital-signature'
+  - text: Add an Invisible Digital Signature
+    href: '#add-an-invisible-digital-signature'
+  - text: Add Multiple Visible Digital Signatures
+    href: '#add-multiple-visible-digital-signatures'
+  - text: Add Multiple Invisible Digital Signatures
+    href: '#add-multiple-invisible-digital-signatures'
+  - text: View Digital Signatures
+    href: '#view-digital-signatures'
+  - text: Remove a Digital Signature
+    href: '#remove-a-digital-signature'
+  - text: Verify Digital Signature Settings
+    href: '#verify-digital-signature-settings'
+  - text: Additional Resources
+    href: '#additional-resources'
+  - text: OFR Submission FAQs
+    href: '#ofr-submission-faqs'
+
 ---
 
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
