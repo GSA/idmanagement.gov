@@ -162,7 +162,7 @@ Some organizations or use cases may require a visible signature block in their d
 <img src="{{site.baseurl}}/assets/piv/word-signature-6.png" alt="A screenshot of the Microsoft Word Signature Confirmation window." width="408" height="148"><br>
 <img src="{{site.baseurl}}/assets/piv/word-signature-7.png" alt="A screenshot of the Microsoft Word Marked as Final box." width="560" height="31">
 
-{% include alert-info.html content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry,you can always go back to Step 1 and re-apply your digital signature." %}
+{% include alert-warning.html content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry,you can always go back to Step 1 and re-apply your digital signature." %}
 
 ## Add an Invisible Digital Signature
 
