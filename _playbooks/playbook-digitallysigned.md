@@ -275,7 +275,7 @@ Word 2016 (or later):  Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Of
 
 <table class="usa-table">
   <caption>
-    Computer registry key values.
+    Computer registry settings.
   </caption>
   <thead>
     <tr>
