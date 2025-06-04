@@ -110,7 +110,7 @@ There are many options and use cases for digital signatures throughout the Feder
 
 There may be some minor differences between various versions of Microsoft Office as it relates to applying or viewing digital signatures; however, all versions starting with Office 2007 have a standardized ability to add an **invisible** digital signature to Word, Excel and PowerPoint files.  Versions prior to Office 2007 that do not leverage XML based file formats (e.g., older .doc vs newer .docx formats) will present unique challenges verifying digital signatures when opened with more modern versions.  Newer versions of Microsoft Office, including Office 365, include the capability for inserting **visible** signature blocks in Word and Excel files that also result in legitimate cryptographic digital signatures, which are verified in the same manner as invisible digital signatures.
 
-{% include alert-info.html content="Mac Compatibility Issue - Please note that if you are using Microsoft Office for Mac, you may not have any options for applying a digital signature.  You may need to leverage Office 365, if available, to digitally sign Office documents." %}
+{% include alert-info.html heading="Mac Compatibility Issue" content="Please note that if you are using Microsoft Office for Mac, you may not have any options for applying a digital signature.  You may need to leverage Office 365, if available, to digitally sign Office documents." %}
 
 ## General Tips for Working with Digitally Signed Files
 
