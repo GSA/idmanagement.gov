@@ -86,7 +86,7 @@ This guide will outline the benefits of digital signatures and will walk you thr
 
 The Office of the Federal Register (OFR) requires that document submissions be digitally signed (using the invisible signature capability) and submitted in Word (.docx) format.  Instructions regarding individual signatures can be used for documents and proposed rules being submitted by one agency; however, multiple signatures may be needed for multi-agency submissions to OFR. 
 
-For OFR submissions, the digital signatory of a document MUST be the same person whose name is typed in the signature block. The names must match exactly or meet the accepted standards listed in the OFR [Document Drafting Handbook,](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf) Chapter 1.
+For OFR submissions, the digital signatory of a document MUST be the same person whose name is typed in the signature block. The names must match exactly or meet the accepted standards listed in the OFR [Document Drafting Handbook,](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} Chapter 1.
 
 ## Introduction
 
