@@ -186,7 +186,7 @@ You can add an *invisible digital signature* to prevent  a signer’s name from 
 
 Once you digitally sign a document, you can have others also digitally sign it. (Note:   If you are the first approver, you should create the visible signature lines for all of the approvers. Then send the document to the second approver.)
 
-1. If you are the second (or other) approver, open the document you’ve received. Double-click your signature line to sign. Follow Steps 4 through 10 from [Add a Digital Signature Using a Signature Line](https://www.idmanagement.gov/playbooks/signword/#add-a-digital-signature-using-a-signature-line).<br/>
+1. If you are the second (or other) approver, open the document you’ve received. Double-click your signature line to sign. Follow Steps 4 through 10 from [Add a Digital Signature Using a Signature Line]({{site.baseurl}}/playbooks/signword/#add-a-digital-signature-using-a-signature-line).<br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-1.png" alt="A screenshot of the Microsoft Word ribbon with the Insert tab and the Signature Line option highlighted." width="560" height="55">
 
 2. *A Signature Setup pop-up box appears.* Enter your information in the text fields and click OK. <br/>
@@ -212,7 +212,7 @@ Once you digitally sign a document, you can have others also digitally sign it. 
 
 ## Add Multiple Invisible Digital Signatures
 
-Multiple approvers may digitally sign a document. Use the same procedures as you would to add one invisible digital signature: [Add an Invisible Digital Signature](https://www.idmanagement.gov/playbooks/signword/#add-an-invisible-digital-signature).
+Multiple approvers may digitally sign a document. Use the same procedures as you would to add one invisible digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature).
 
 If multiple agencies are submitting a document for Federal Register publication, OFR receives only one document, signed by all agency authorised representatives. For example, if six agencies are jointly issuing a rule, OFR does NOT get six submissions of the same rule. Regardless of the method of submission, the legal signatory requirements are the same.
 
@@ -259,7 +259,7 @@ The ability to remove a digital signature might be necessary if last-minute docu
 {% include alert-info.html content="Please ask your Technical Support staff for help. Administrator privileges are required for these steps.
 " %} 
 
-By default, Microsoft Word uses the SHA-1 hash algorithm to generate digital signatures. The SHA-1 hash algorithm is no longer considered secure. More secure hash algorithms, such as SHA-256, should be used. [(See NIST’s guidance on hash functions)](https://csrc.nist.gov/Projects/Hash-Functions/NIST-Policy-on-Hash-Functions)
+By default, Microsoft Word uses the SHA-1 hash algorithm to generate digital signatures. The SHA-1 hash algorithm is no longer considered secure. More secure hash algorithms, such as SHA-256, should be used. [(See NIST’s guidance on hash functions)](https://csrc.nist.gov/Projects/Hash-Functions/NIST-Policy-on-Hash-Functions){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 You can use either option below to verify/change the hash algorithm settings for Microsoft Office:
 
