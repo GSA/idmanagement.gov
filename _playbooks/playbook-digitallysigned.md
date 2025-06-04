@@ -76,7 +76,7 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html content=" If you are using this guide for submitting signed documents to OFR please see the sections on adding an invisible signature or adding multiple invisible signatures below.." %}
+{% include alert-warning.html content=" If you are using this guide for submitting signed documents to OFR please see the sections on [**adding an invisible signature**](#add-an-invisible-digital-signature) or [**adding multiple invisible signatures**](#add-multiple-visible-digital-signatures) below." %}
 
 {% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the Verify Digital Signature Settings section below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
 
