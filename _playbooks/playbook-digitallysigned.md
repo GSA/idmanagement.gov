@@ -114,7 +114,7 @@ There may be some minor differences between various versions of Microsoft Office
 
 ## General Tips for Working with Digitally Signed Files
 
-{% include alert-info.html content="Do NOT open a document for digital signature directly from an email. Save the document to your computer first. Then, use the document file saved on your computer for signing purposes." %}
+{% include alert-info.html content="Do **NOT** open a document for digital signature directly from an email. Save the document to your computer first. Then, use the document file saved on your computer for signing purposes." %}
 
 Microsoft saves Office files upon application of a digital signature, to include subsequent digital signatures in the event there are several in one document.  As a result, it is important to take document file version control into consideration when digitally signing.  It is recommended to save the document under a new file name prior to signature, to distinguish signed versions from editable versions.  Additionally, if files are being sent to signers via email it is important that the signers should save the file locally before applying their signature.
 
