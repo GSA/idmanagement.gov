@@ -273,10 +273,27 @@ Word 2016 (or later):  Computer\HKEY_CURRENT_USER\Software\Policies\Microsoft\Of
 ```
 - Add or update these values:
 
-| Value Name | signaturehashalg |
-| :---- | :---- |
-| Value Type | REG_SZ |
-| Value | sha256 |
+<table class="usa-table">
+  <caption>
+    Computer registry key values.
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Value Name</th>
+      <th scope="col">signaturehashalg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Value Type</th>
+      <td>REG_SZ</td>
+    </tr>
+    <tr>
+      <th scope="row">Value</th>
+      <td>sha256</td>
+    </tr>
+  </tbody>
+</table>
 
 - Save the registry settings and restart the computer.
 
