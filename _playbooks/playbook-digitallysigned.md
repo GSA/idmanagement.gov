@@ -118,19 +118,19 @@ There may be some minor differences between various versions of Microsoft Office
 
 Microsoft saves Office files upon application of a digital signature, to include subsequent digital signatures in the event there are several in one document.  As a result, it is important to take document file version control into consideration when digitally signing.  It is recommended to save the document under a new file name prior to signature, to distinguish signed versions from editable versions.  Additionally, if files are being sent to signers via email it is important that the signers should save the file locally before applying their signature.
 
-## **Individual Signatures**
+## Individual Signatures
 
 The following sections outline the instructions to add one digital signature to Word documents.  
 
-{% include alert-info.html content="Some use cases may require multiple signatures in support of document approvals, please see the **Multiple Signatures** section for further instructions on those scenarios where several signers are required for one document." %}
+{% include alert-info.html content="Some use cases may require multiple signatures in support of document approvals, please see the [**Multiple Signatures**](#add-multiple-visible-digital-signatures) section for further instructions on those scenarios where several signers are required for one document." %}
 
 ## Add a Visible Digital Signature
 
 Some organizations or use cases may require a visible signature block in their documents, naming the approval authority for the specific document using a signature line.  Word does support the insertion of a visible signature block that contains several details about the **intended** signer.
 
-{% include alert-info.html content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
+{% include alert-warning.html content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
 
-{% include alert-info.html content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the ‘Add an Invisible Signature’ instructions below to sign the document as this is the format OFR will accept." %}
+{% include alert-warning.html content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the ‘Add an Invisible Signature’ instructions below to sign the document as this is the format OFR will accept." %}
 
 1. To add a digital signature, open your Microsoft Word document and in the body of the document, click where you’d like to add your signature line.  
 2. From the Word ribbon selection menu, select the **Insert** tab and then click **Signature Line** in the Text group. If the document has not yet been saved, you will be prompted to save the document before continuing to apply the digital signature.<br/>
