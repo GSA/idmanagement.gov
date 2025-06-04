@@ -159,7 +159,7 @@ Some organizations or use cases may require a visible signature block in their d
 <img src="{{site.baseurl}}/assets/piv/word-signature-5.png" alt="A screenshot of the Microsoft Word Windows Security Smart Card window." width="465" height="277">
 
 10. *The Signature Confirmation box tells you that Word saved your digital signature.* Click **OK.**<br/>
-<img src="{{site.baseurl}}/assets/piv/word-signature-6.png" alt="A screenshot of the Microsoft Word Signature Confirmation window." width="408" height="148"><br>
+<img src="{{site.baseurl}}/assets/piv/word-signature-6.png" alt="A screenshot of the Microsoft Word Signature Confirmation window." width="408" height="148"><br><br>
 <img src="{{site.baseurl}}/assets/piv/word-signature-7.png" alt="A screenshot of the Microsoft Word Marked as Final box." width="560" height="31">
 
 {% include alert-warning.html content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry,you can always go back to Step 1 and re-apply your digital signature." %}
