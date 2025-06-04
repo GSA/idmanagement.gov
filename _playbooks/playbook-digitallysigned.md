@@ -338,11 +338,11 @@ Yes, that and your signing credential, either the one on your PIV card or the on
 
 ### **We purchased our signing certificates from a PKI vendor. We use them to sign, which creates the “p7m” file. What do we do now?**
 
-If you are using purchased certificates, such as from a trusted PKI vendor, you can continue to use them. Instead of being on a PIV card, your certificate is installed on your computer. Follow the [Add Invisible Digital Signatures in MS Word](https://www.idmanagement.gov/playbooks/signfedregister/#add-invisible-digital-signatures-in-ms-word) instructions above to sign your MS Word file.
+If you are using purchased certificates, such as from a trusted PKI vendor, you can continue to use them. Instead of being on a PIV card, your certificate is installed on your computer. Follow the [Add Invisible Digital Signatures in MS Word](#add-an-invisible-digital-signature) instructions above to sign your MS Word file.
 
 ### **How do I identify the Purchased Certificates and PIV Card Certificates when signing a document?**
 
-When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](https://www.idmanagement.gov/playbooks/signfedregister/#add-invisible-digital-signatures-in-ms-word) instructions above, note the different icons for the PIV and purchased certificates:  
+When checking for the correct certificate, as detailed in Step 7 of the [Add Invisible Digital Signatures in MS Word](#add-an-invisible-digital-signature) instructions above, note the different icons for the PIV and purchased certificates:  
 
 <img src="{{site.baseurl}}/assets/piv/piv-certificate.png" alt="A screenshot of a PIV Certificates." width="50%">
 
