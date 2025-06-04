@@ -186,7 +186,7 @@ You can add an *invisible digital signature* to prevent  a signer’s name from 
 
 Once you digitally sign a document, you can have others also digitally sign it. (Note:   If you are the first approver, you should create the visible signature lines for all of the approvers. Then send the document to the second approver.)
 
-1. If you are the second (or other) approver, open the document you’ve received. Double-click your signature line to sign. Follow Steps 4 through 10 from [Add a Digital Signature Using a Signature Line]({{site.baseurl}}/playbooks/signword/#add-a-digital-signature-using-a-signature-line).<br/>
+1. If you are the second (or other) approver, open the document you’ve received. Double-click your signature line to sign. Follow Steps 4 through 10 from [Add a Digital Signature Using a Signature Line](#add-a-visible-digital-signature).<br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-1.png" alt="A screenshot of the Microsoft Word ribbon with the Insert tab and the Signature Line option highlighted." width="560" height="55">
 
 2. *A Signature Setup pop-up box appears.* Enter your information in the text fields and click OK. <br/>
