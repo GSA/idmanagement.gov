@@ -8,7 +8,7 @@ version: 1.2
 pubdate: June 3, 2025
 
 type: Markdown
-permalink: /playbooks/digitallysigned/
+permalink: /playbooks/digitallysign/
 description: This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.
 sidenav: playbooks
 sticky_sidenav: true
@@ -236,7 +236,7 @@ Click the File tab and select Info. Then click View Signatures.<br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-11.png" alt="A screenshot of the Microsoft Word Info pane with the View Signatures option highlighted." width="560" height="311">
 
 Another way to view the signatures pane is from the bottom of the Word window, it may have a small document with a certificate seal next to the word counter.  If you click on this icon, the software will open the Signatures Pane where you can view all signatures and details as normal.<br>
-<img src="{{site.baseurl}}/assets/piv/signature-pane.png" alt="Signature Pane">
+<img src="{{site.baseurl}}/assets/piv/signature-pane.png" alt="Signature Pane" width="50%">
 
 For any of the above options, you will be able to see the digital signature details in the Signatures pane. <br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-17.png" alt="A screenshot of a Microsoft Word Signature Details box." width="517" height="558">
