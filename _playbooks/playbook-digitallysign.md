@@ -71,7 +71,7 @@ subnav:
    <tr>
       <th scope='row'>1.2</th>
       <td>06/03/2025</td>
-      <td>Combined Digitally Signed Word Documents and Digitally Signed Register Playbooks.</td>
+      <td>Combined Digitally Sign a Word Document and Digitally Sign a Register Register Notice Playbooks.</td>
    </tr>
    <tr>
       <th scope='row'>1.1</th>
@@ -87,9 +87,9 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html content=" If you are using this guide for submitting signed documents to OFR please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
+{% include alert-warning.html content=" If you are using this guide for submitting signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
 
-{% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the Verify Digital Signature Settings section below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
+{% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
 
 This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.  
 
@@ -173,11 +173,11 @@ Some organizations or use cases may require a visible signature block in their d
 <img src="{{site.baseurl}}/assets/piv/word-signature-6.png" alt="A screenshot of the Microsoft Word Signature Confirmation window." width="408" height="148"><br><br>
 <img src="{{site.baseurl}}/assets/piv/word-signature-7.png" alt="A screenshot of the Microsoft Word Marked as Final box." width="560" height="31">
 
-{% include alert-warning.html content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry,you can always go back to Step 1 and re-apply your digital signature." %}
+{% include alert-info.html content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry, you can always go back to Step 1 and re-apply your digital signature." %}
 
 ## Add an Invisible Digital Signature
 
-You can add an *invisible digital signature* to prevent  a signer’s name from appearing in the body of a document.  Invisible signatures are the approved digital signature method for submissions to the OFR.
+You can add an *invisible digital signature* to prevent  a signer’s name from appearing in the body of a document.  **Invisible signatures** are the approved digital signature method for submissions to the OFR.
 
 1. Open your document and click the File tab.  
 2. Click **Info** and then click **Protect Document**.<br/>
@@ -227,10 +227,12 @@ Multiple approvers may digitally sign a document. Use the same procedures as you
 
 If multiple agencies are submitting a document for Federal Register publication, OFR receives only one document, signed by all agency authorised representatives. For example, if six agencies are jointly issuing a rule, OFR does NOT get six submissions of the same rule. Regardless of the method of submission, the legal signatory requirements are the same.
 
-{% include alert-info.html content="For multiple-signatory documents (e.g., dual-agency submissions) being submitted to the OFR, the first signer forwards the signed document to the next signer, who repeats the signing process on the already-signed file. All digital signatories must have their names and titles typed into a separate signature block in the signature area of the document body." %}
+{% include alert-warning.html content="If you are submitting a document to OFR that requires multiple signatures, be sure to include all required signature blocks in the body of the document **before** any signatures are applied, otherwise the document will need to be edited which will remove all signatures up to that point." %}
 
 *The final approver will see multiple “invisible” signatures in the document.* <br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-12.png" alt="A screenshot of a Microsoft Word Valid Signatures box, with two names highlighted and dates beside the names." width="333" height="138">
+
+{% include alert-info.html content="For multiple-signatory documents (e.g., dual-agency submissions) being submitted to the OFR, the first signer forwards the signed document to the next signer, who repeats the signing process on the already-signed file. All digital signatories must have their names and titles typed into a separate signature block in the signature area of the document body." %}
 
 ## View Digital Signatures
 
