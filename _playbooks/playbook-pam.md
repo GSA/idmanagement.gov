@@ -233,7 +233,7 @@ In addition to setting a policy, strategy, and technical direction, an agency sh
 
 {% include alert-info.html heading="Why Additional Controls?" content="Most attacks start by compromising lower-level accounts. An attacker can find an orphaned privileged account through network discovery and escalate their privileges to access applications, data, and compromise entire agency networks or data sets." %} 
 
-Metrics are an essential aspect of privileged user management which can help identify risks and efficiencies. The following metrics are modified from the [GSA DevSecOps Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+Metrics are an essential aspect of privileged user management which can help identify risks and efficiencies. The following metrics are modified from the [GSA DevSecOps Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%5BCIO-IT-Security-19-102-Rev-2%5D-04-19-2023.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 <p align="center"><b>Table 3: Example Privileged User Metrics</b></p>
 
