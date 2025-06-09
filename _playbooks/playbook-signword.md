@@ -8,7 +8,7 @@ version: 1.2
 pubdate: June 3, 2025
 
 type: Markdown
-permalink: /playbooks/digitallysign/
+permalink: /playbooks/signword/
 description: This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.
 sidenav: playbooks
 sticky_sidenav: true
