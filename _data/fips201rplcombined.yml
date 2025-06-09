@@ -32,15 +32,15 @@
   dateCode: 2025-05-01
   reason: "Didn't meet the APL resubmission timeline."
 
-- category: 13.01 PACS and Validation Infrastructure
-  status: Approved
-  infrastructure: Honeywell Pro-Watch CE 6.0
-  infraapl: 10063
-  validation: HID Global Validation System for Pro-Watch 5.20.0
-  valapl: 10064
-  dateRemoval: 05/01/2025
-  dateCode: 2025-05-01
-  reason: "Didn't meet the APL resubmission timeline."
+# - category: 13.01 PACS and Validation Infrastructure
+#   status: Approved
+#   infrastructure: Honeywell Pro-Watch CE 6.0
+#   infraapl: 10063
+#   validation: HID Global Validation System for Pro-Watch 5.20.0
+#   valapl: 10064
+#   dateRemoval: 05/01/2025
+#   dateCode: 2025-05-01
+#   reason: "Didn't meet the APL resubmission timeline."
 
 - category: 13.01 PACS and Validation Infrastructure
   status: Approved
