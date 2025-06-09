@@ -232,7 +232,7 @@ If multiple agencies are submitting a document for Federal Register publication,
 *The final approver will see multiple “invisible” signatures in the document.* <br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-12.png" alt="A screenshot of a Microsoft Word Valid Signatures box, with two names highlighted and dates beside the names." width="333" height="138">
 
-{% include alert-info.html content="For multiple-signatory documents (e.g., dual-agency submissions) being submitted to the OFR, the first signer forwards the signed document to the next signer, who repeats the signing process on the already-signed file. All digital signatories must have their names and titles typed into a separate signature block in the signature area of the document body." %}
+{% include alert-info.html heading="Coordinating Multiple Signatures" content="For multiple-signatory documents (e.g., dual-agency submissions) being submitted to the OFR, the first signer forwards the signed document to the next signer, who repeats the signing process on the already-signed file. All digital signatories must have their names and titles typed into a separate signature block in the signature area of the document body." %}
 
 ## View Digital Signatures
 
