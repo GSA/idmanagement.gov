@@ -87,13 +87,13 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html content=" If you are using this guide for submitting signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
+{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
 
-{% include alert-info.html content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
+{% include alert-info.html heading="Critical Office Configurations" content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
 
 This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.  
 
-{% include alert-info.html content="See the [Delegated Digital Signature Playbook](https://www.idmanagement.gov/playbooks/dds/) for guidance on how to implement a capability for delegating the authority of a senior official to sign OFR documents and obtain associated PKI hardware credentials." %}
+{% include alert-info.html heading="Signatory Authorities and PKI Digital Signature" content="See the [Delegated Digital Signature Playbook](https://www.idmanagement.gov/playbooks/dds/) for guidance on how to implement a capability for delegating the authority of a senior official to sign OFR documents and obtain associated PKI hardware credentials." %}
 
 The Office of the Federal Register (OFR) requires that document submissions be digitally signed (using the invisible signature capability) and submitted in Word (.docx) format.  Instructions regarding individual signatures can be used for documents and proposed rules being submitted by one agency; however, multiple signatures may be needed for multi-agency submissions to OFR. 
 
@@ -125,7 +125,7 @@ There may be some minor differences between various versions of Microsoft Office
 
 ## General Tips for Working with Digitally Signed Files
 
-{% include alert-info.html content="Do **NOT** open a document for digital signature directly from an email. Save the document to your computer first. Then, use the document file saved on your computer for signing purposes." %}
+{% include alert-info.html heading="Document Version Control" content="Do **NOT** open a document for digital signature directly from an email. Save the document to your computer first. Then, use the document file saved on your computer for signing purposes." %}
 
 Microsoft saves Office files upon application of a digital signature, to include subsequent digital signatures in the event there are several in one document.  As a result, it is important to take document file version control into consideration when digitally signing.  It is recommended to save the document under a new file name prior to signature, to distinguish signed versions from editable versions.  Additionally, if files are being sent to signers via email it is important that the signers should save the file locally before applying their signature.
 
@@ -133,15 +133,15 @@ Microsoft saves Office files upon application of a digital signature, to include
 
 The following sections outline the instructions to add one digital signature to Word documents.  
 
-{% include alert-info.html content="Some use cases may require multiple signatures in support of document approvals, please see the [Multiple Signatures](#add-multiple-visible-digital-signatures) section for further instructions on those scenarios where several signers are required for one document." %}
+{% include alert-info.html heading="Multiple Signatory Authorities" content="Some use cases may require multiple signatures in support of document approvals, please see the [Multiple Signatures](#add-multiple-visible-digital-signatures) section for further instructions on those scenarios where several signers are required for one document." %}
 
 ## Add a Visible Digital Signature
 
 Some organizations or use cases may require a visible signature block in their documents, naming the approval authority for the specific document using a signature line.  Word does support the insertion of a visible signature block that contains several details about the **intended** signer.
 
-{% include alert-warning.html content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
+{% include alert-warning.html heading="Who Acutally Signed This Document?" content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
 
-{% include alert-warning.html content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the [Add an Invisible Signature](#add-an-invisible-digital-signature) instructions below to sign the document as this is the format OFR will accept." %}
+{% include alert-warning.html heading="Invisible Signatures for OFR Submission" content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the [Add an Invisible Signature](#add-an-invisible-digital-signature) instructions below to sign the document as this is the format OFR will accept." %}
 
 1. To add a digital signature, open your Microsoft Word document and in the body of the document, click where you’d like to add your signature line.  
 2. From the Word ribbon selection menu, select the **Insert** tab and then click **Signature Line** in the Text group. If the document has not yet been saved, you will be prompted to save the document before continuing to apply the digital signature.<br/>
@@ -173,7 +173,7 @@ Some organizations or use cases may require a visible signature block in their d
 <img src="{{site.baseurl}}/assets/piv/word-signature-6.png" alt="A screenshot of the Microsoft Word Signature Confirmation window." width="408" height="148"><br><br>
 <img src="{{site.baseurl}}/assets/piv/word-signature-7.png" alt="A screenshot of the Microsoft Word Marked as Final box." width="560" height="31">
 
-{% include alert-info.html content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry, you can always go back to Step 1 and re-apply your digital signature." %}
+{% include alert-info.html heading="Editing After Signature" content="Once you’ve digitally signed your document, if you subsequently edit it, Word will remove the digital signature. Don’t worry, you can always go back to Step 1 and re-apply your digital signature." %}
 
 ## Add an Invisible Digital Signature
 
@@ -227,7 +227,7 @@ Multiple approvers may digitally sign a document. Use the same procedures as you
 
 If multiple agencies are submitting a document for Federal Register publication, OFR receives only one document, signed by all agency authorised representatives. For example, if six agencies are jointly issuing a rule, OFR does NOT get six submissions of the same rule. Regardless of the method of submission, the legal signatory requirements are the same.
 
-{% include alert-warning.html content="If you are submitting a document to OFR that requires multiple signatures, be sure to include all required signature blocks in the body of the document **before** any signatures are applied, otherwise the document will need to be edited which will remove all signatures up to that point." %}
+{% include alert-warning.html heading="OFR Rules for Multiple Signatories" content="If you are submitting a document to OFR that requires multiple signatures, be sure to include all required signature blocks in the body of the document **before** any signatures are applied, otherwise the document will need to be edited which will remove all signatures up to that point." %}
 
 *The final approver will see multiple “invisible” signatures in the document.* <br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-12.png" alt="A screenshot of a Microsoft Word Valid Signatures box, with two names highlighted and dates beside the names." width="333" height="138">
@@ -236,7 +236,7 @@ If multiple agencies are submitting a document for Federal Register publication,
 
 ## View Digital Signatures
 
-{% include alert-warning.html content="If you use Word 2013 or newer, and open a digitally signed Word 2007 or 2010 document, you may have compatibility issues." %} 
+{% include alert-warning.html heading="Word Version Compatibility Issues" content="If you use Word 2013 or newer, and open a digitally signed Word 2007 or 2010 document, you may have compatibility issues." %} 
 
 You can view digital signatures in an incompatible Word document in one of three ways:
 
