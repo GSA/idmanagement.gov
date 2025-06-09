@@ -531,7 +531,7 @@ Since the goal of the DevOps team is to get software operating in production qui
 3. **Practice Production Security Practices.** It is common to share credentials across non-production environments or not apply common identity best practices (e.g., a simple lab password or no MFA). Sharing credentials enables one compromised password to create a persistent access point. Practice production security practices in your test environments.
 4. **Manage Programmatic Access.** Create and maintain a continuous device inventory for all environments, including the DEV, TEST, and STAGING environments. Inventory all of the tools with programmatic access and the component owner. A continuous inventory lessens the potential for introducing unknown devices or code.
 
-See the [GSA Guide](https://tech.gsa.gov/guides/dev_sec_ops_guide/){:target="_blank"}{:rel="noopener noreferrer"} on DevSecOps for more information.
+See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%5BCIO-IT-Security-19-102-Rev-2%5D-04-19-2023.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} on DevSecOps for more information.
 
 ## Appendix A. Policies, Standards, and Guidance
 
