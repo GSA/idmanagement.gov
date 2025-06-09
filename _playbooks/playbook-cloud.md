@@ -232,7 +232,7 @@ The pros and cons of each approach depend on an agency's architecture, budget, a
 
 ### Generate and Share User Stories
 
-[Writing Effective User Stories](https://tech.gsa.gov/guides/effective_user_stories/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} increases understanding of the user’s purpose. Having descriptive summaries and detailed acceptance criteria will help your team know when a user story is complete. Table 4 presents a modified user story example provided by the GSA Chief Technology Officer Office.
+Writing Effective User Stories increases understanding of the user’s purpose. Having descriptive summaries and detailed acceptance criteria will help your team know when a user story is complete. Table 4 presents a modified user story example provided by the GSA Chief Technology Officer Office.
 
 <p align="center"><b>Table 4: Example User Story</b></p>
 
