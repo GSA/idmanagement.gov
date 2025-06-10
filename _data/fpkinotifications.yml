@@ -118,7 +118,7 @@
 - notice_date: April 14, 2025
   change_type: Intent to issue CA Certificate
   system: U.S. Department of State AD Root CA
-  change_description: The Department of State issued a new PIV issuing CA certificate. The new CA is scheduled to go into production in May 2025.
+  change_description: The Department of State issued a new PIV issuing CA certificate. The new CA is scheduled to go into production in July 2025.
   contact: newtonpj at state dot gov
   ca_certificate_hash: 4a4e87b992264fbf9f92fcc4ab89840df6fcb89d
   ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
