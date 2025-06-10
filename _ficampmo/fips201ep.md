@@ -164,7 +164,7 @@ All applicants, please complete the following steps:
           <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#fingerprint"></use></svg>
         </div>
         <div class="usa-icon-list__content">
-          <p class="margin-bottom-2">In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
+          <p class="margin-bottom-2"><strong>In-person Lab Testing</strong> - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
         </div>
       </li>      
     </ul>
@@ -175,7 +175,7 @@ All applicants, please complete the following steps:
           <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#language"></use></svg>
         </div>
         <div class="usa-icon-list__content">
-          <p class="margin-bottom-2">Remote Testing - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+          <p class="margin-bottom-2"><strong>Remote Testing</strong> - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
         </div>
       </li>
    </ul>
