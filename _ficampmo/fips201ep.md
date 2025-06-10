@@ -158,12 +158,26 @@ All applicants, please complete the following steps:
 
 <ol class="usa-process-list">
   <li class="usa-process-list__item"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" tarket="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov); two testing options are available:
-    <ul class="usa-list">
-      <li>In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</li>
+    <ul class="usa-icon-list">
+      <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon">
+          <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#fingerprint"></use></svg>
+        </div>
+        <div class="usa-icon-list__content">
+          In-person Lab Testing - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.
+        </div>
+      </li>      
     </ul>
     <p><strong>OR</strong></p>
-    <ul class="usa-list">
-      <li>Remote Testing - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</li>
+    <ul class="usa-icon-list">
+      <li class="usa-icon-list__item">
+        <div class="usa-icon-list__icon">
+          <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#language"></use></svg>
+        </div>
+        <div class="usa-icon-list__content">
+          Remote Testing - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
+        </div>
+      </li>
    </ul>
   </li>
   <li class="usa-process-list__item">
@@ -171,7 +185,7 @@ All applicants, please complete the following steps:
   <ul class="usa-icon-list">
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon">
-        <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#credit_card"></use></svg>
+        <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg>
       </div>
       <div class="usa-icon-list__content">
         <p class="margin-bottom-2">High-resolution front and back images of the PIV/PIV-I card being tested.</p>
