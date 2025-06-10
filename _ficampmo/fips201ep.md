@@ -166,7 +166,9 @@ All applicants, please complete the following steps:
       <li>Remote Testing - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</li>
    </ul>
   </li>
-  <li class="usa-process-list__item">All applicants must provide the following required artifacts as part of the Annual PCI review:
+  <li class="usa-process-list__item">
+  All applicants must provide the following required artifacts as part of the Annual PCI review:
+  <br>
   <ul class="usa-icon-list">
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon">
