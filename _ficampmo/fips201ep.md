@@ -15,6 +15,8 @@ subnav:
     href: '#physical-access-control-system'
   - text: PACS APL Guidance Documents
     href: '#pacs-apl-guidance-documents'
+  - text: PACS Application Submission
+    href: '#pacs-application-submission'
   - text: Personal Identity Verification (PIV) Credentials
     href: '#personal-identity-verification-credentials'
   - text: Derived PIV (D-PIV) Credentials
@@ -124,7 +126,7 @@ The documents in this section provide guidance and information necessary for eva
     - [Provisionally-Approved Mobile Handheld Validation Reader Topology Mapping Form (MHVR 14.02), version 1.3.3 Rev B (PDF, November 3, 2017).]({{site.baseurl}}/docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"} - **NOTE:** When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
     - [Approved PACS Wireless Reader Topology (PACS 20.01), FRTC version 1.3.3 Rev G (PDF, November 17, 2020).]({{site.baseurl}}/docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
 
-
+{:id="pacs-application-submission"}
 ## PACS Application Package Submission Requirements for New Systems or Updates to Previously Approved Systems
 
 All applicants, please complete the following steps:
