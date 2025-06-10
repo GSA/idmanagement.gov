@@ -215,7 +215,7 @@ All applicants, please complete the following steps:
               <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#build"></use></svg>
             </div>
             <div class="usa-icon-list__content">
-              <a class="usa-link usa-link--external" href="https://csrc.nist.gov/News/2016/New-SP-800-73-4-based-Test-Runner-Release" target="_blank">SP 800-73-4-based Test Runner</a> <span class="usa-tag usa-tag">(Optional)</span>
+              <a class="usa-link usa-link--external" href="https://csrc.nist.gov/News/2016/New-SP-800-73-4-based-Test-Runner-Release" target="_blank">SP 800-73-4-based Test Runner</a> <span class="usa-tag"> (Optional) </span>
             </div>          
           </li>
         </ul>
