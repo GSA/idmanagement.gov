@@ -157,7 +157,7 @@ All applicants, please complete the following steps:
 ## Personal Identity Verification Credentials
 
 <ol class="usa-process-list">
-  <li class="usa-process-list__item"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" tarket="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
+  <li class="usa-process-list__item"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" tarket="_blank">Annual PIV Credential Issuer (PCI) <p class="margin-bottom-2">Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:</p>
     <ul class="usa-icon-list">
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon">
