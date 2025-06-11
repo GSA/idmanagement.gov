@@ -139,7 +139,7 @@ The following sections outline the instructions to add one digital signature to 
 
 Some organizations or use cases may require a visible signature block in their documents, naming the approval authority for the specific document using a signature line.  Word does support the insertion of a visible signature block that contains several details about the **intended** signer.
 
-{% include alert-warning.html heading="Who Acutally Signed This Document?" content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
+{% include alert-warning.html heading="Who Actually Signed This Document?" content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
 
 {% include alert-warning.html heading="Invisible Signatures for OFR Submission" content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the [Add an Invisible Signature](#add-an-invisible-digital-signature) instructions below to sign the document as this is the format OFR will accept." %}
 
