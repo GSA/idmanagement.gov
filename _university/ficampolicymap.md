@@ -347,7 +347,7 @@ sticky_sidenav: true
     </g>
   <!-- Act of Congress Section -->
   <g id="Privacy_Act_of_1974" data-name="Privacy Act of 1974">
-      <a href="https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section552a&num=0&edition=prelim" title="Privacy Act of 1974" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.dodig.mil/Portals/48/Documents/Programs/Privacy%20Program/pa1974.pdf" title="Privacy Act of 1974" target="_blank" rel="noopener noreferrer">
       <rect id="aocrect" class="aocbutton" x="304.5" y="275.3" width="97" height="40" />
       <text transform="translate(313.21 294.1)" style="font-family: Arial-BoldMT, Arial; font-size: 12px; font-weight: 700;"><tspan x="0" y="0">Privacy</tspan><tspan x="42.7" y="0" style="letter-spacing: -.04em;"> </tspan><tspan x="45.59" y="0" xml:space="preserve">Act of  </tspan><tspan x="26.45" y="11">1974 </tspan></text>
       </a>
