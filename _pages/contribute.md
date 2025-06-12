@@ -59,7 +59,7 @@ Consider the audience when you submit content. Plain language benefits a broad a
 
 The following are useful resources for plain language, writing, and style:
 
-- [18F Content Guide](https://content-guide.18f.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+<!-- - [18F Content Guide](https://content-guide.18f.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} -->
 - [Federal Plain Language Guidelines](http://www.plainlanguage.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Thanks
