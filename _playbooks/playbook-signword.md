@@ -87,9 +87,9 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
+{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting digitally signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
 
-{% include alert-info.html heading="Critical Office Configurations" content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
+{% include alert-info.html heading="Critical Software Configurations" content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
 
 This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.  
 
