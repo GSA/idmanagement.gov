@@ -87,25 +87,25 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
+{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting digitally signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature) or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures) below." %}
 
-{% include alert-info.html heading="Critical Office Configurations" content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
+{% include alert-info.html heading="Critical Software Configurations" content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings) below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
 
 This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.  
 
-{% include alert-info.html heading="Signatory Authorities and PKI Digital Signature" content="See the [Delegated Digital Signature Playbook](https://www.idmanagement.gov/playbooks/dds/) for guidance on how to implement a capability for delegating the authority of a senior official to sign OFR documents and obtain associated PKI hardware credentials." %}
+{% include alert-info.html heading="Signatory Authorities and PKI Certificates" content="See the [Delegated Digital Signature Playbook](https://www.idmanagement.gov/playbooks/dds/) for guidance on how to implement a capability for delegating the authority of a senior official to sign OFR documents and obtain associated PKI hardware credentials." %}
 
 The Office of the Federal Register (OFR) requires that document submissions be digitally signed (using the invisible signature capability) and submitted in Word (.docx) format.  Instructions regarding individual signatures can be used for documents and proposed rules being submitted by one agency; however, multiple signatures may be needed for multi-agency submissions to OFR. 
 
-For OFR submissions, the digital signatory of a document MUST be the same person whose name is typed in the signature block. The names must match exactly or meet the accepted standards listed in the OFR [Document Drafting Handbook,](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} Chapter 1.
+For OFR submissions, the digital signatory of a document MUST be the same person whose name is typed in the signature block within the document itself. The names must match exactly or meet the accepted standards listed in the OFR [Document Drafting Handbook,](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} Chapter 1.
 
 ## Introduction
 
 Digital signatures provide cryptographic mechanisms for recipients of a signed document to verify that the contents of the document have not been modified.  Additionally, they can also provide proof of origin (traced back to individual signatories) and a basis for intent to apply a signature (legal binding).
 
-All of these benefits can be leveraged by applying high assurance PIV credential capabilities in support of Federal digital signature use cases.
+All of these benefits can be leveraged by applying high assurance PIV credential capabilities in support of Federal digital signature use cases as applied to Word documents.
 
-There are many options and use cases for digital signatures throughout the Federal landscape, as a result, this playbook is organized into several sections:
+There are many options and use cases for digital signatures on Word documents throughout the Federal landscape, as a result, this playbook is organized into several sections:
 
 - Individual Signatures  
   - Add a Visible Signature Line with Digital Signature  
@@ -139,7 +139,7 @@ The following sections outline the instructions to add one digital signature to 
 
 Some organizations or use cases may require a visible signature block in their documents, naming the approval authority for the specific document using a signature line.  Word does support the insertion of a visible signature block that contains several details about the **intended** signer.
 
-{% include alert-warning.html heading="Who Acutally Signed This Document?" content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
+{% include alert-warning.html heading="Who Actually Signed This Document?" content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
 
 {% include alert-warning.html heading="Invisible Signatures for OFR Submission" content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the [Add an Invisible Signature](#add-an-invisible-digital-signature) instructions below to sign the document as this is the format OFR will accept." %}
 
@@ -223,16 +223,18 @@ Once you digitally sign a document, you can have others also digitally sign it. 
 
 ## Add Multiple Invisible Digital Signatures
 
-Multiple approvers may digitally sign a document. Use the same procedures as you would to add one invisible digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature).
+Multiple approvers may digitally sign a Word document. This signature process uses the same procedures as you would to add one invisible digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature); however, the completed document must be coordinated with multiple signing parties who chronologically apply their individual digital signature.  
 
 If multiple agencies are submitting a document for Federal Register publication, OFR receives only one document, signed by all agency authorised representatives. For example, if six agencies are jointly issuing a rule, OFR does NOT get six submissions of the same rule. Regardless of the method of submission, the legal signatory requirements are the same.
 
-{% include alert-warning.html heading="OFR Rules for Multiple Signatories" content="If you are submitting a document to OFR that requires multiple signatures, be sure to include all required signature blocks in the body of the document **before** any signatures are applied, otherwise the document will need to be edited which will remove all signatures up to that point." %}
+{% include alert-warning.html heading="OFR Rules for Multiple Signatories" content="If you are submitting a document to OFR that requires multiple signatures, be sure to include **all** required signature blocks in the body of the document **before** any signatures are applied, otherwise the document will need to be edited which will remove all signatures up to that point." %}
 
 *The final approver will see multiple “invisible” signatures in the document.* <br/>
 <img src="{{site.baseurl}}/assets/piv/word-signature-12.png" alt="A screenshot of a Microsoft Word Valid Signatures box, with two names highlighted and dates beside the names." width="333" height="138">
 
-{% include alert-info.html heading="Coordinating Multiple Signatures" content="For multiple-signatory documents (e.g., dual-agency submissions) being submitted to the OFR, the first signer forwards the signed document to the next signer, who repeats the signing process on the already-signed file. All digital signatories must have their names and titles typed into a separate signature block in the signature area of the document body." %}
+{% include alert-info.html heading="Coordinating Multiple Signatures" content="For multiple-signatory documents (e.g., dual-agency submissions) being submitted to the OFR, the first signer forwards the signed document to the next signer, who repeats the signing process on the already-signed file. All digital signatories must have their names and titles incorporated into a separate signature block in the signature area of the document body before the signing coordination process begins." %}
+
+It is highly recommended that a signature coordiantion representative be appointed to assist in the file control and communication between each signer.
 
 ## View Digital Signatures
 
