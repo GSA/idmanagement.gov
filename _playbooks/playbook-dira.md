@@ -475,7 +475,7 @@ Table 6 summarizes the control objectives and gives user profiles for each of th
 
 <table class="usa-table">
   <caption>
-    Bordered table
+    Table 6: FAL Control Objectives
   </caption>
   <thead>
     <tr>
