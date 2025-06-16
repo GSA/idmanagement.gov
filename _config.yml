@@ -123,9 +123,9 @@ primary_navigation:
         url: /experiments/cdns/paper1/
       - name: CDN Paper 2
         url: /experiments/cdns/paper2/
-      - name: Personal Security and Identity Management
+      - name: CDN Paper 3
         url: /experiments/cdns/paper3/ 
-      - name: Public Identity Best Practice Guide
+      - name: CDN Paper 4
         url: /experiments/pid/bestpractice/
       - name: PIAM Service Guide
         url: /experiments/pid/service/
