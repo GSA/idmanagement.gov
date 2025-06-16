@@ -364,7 +364,7 @@ Table 4 summarizes the control objectives and gives user profiles for each of th
 
 <table class="usa-table">
   <caption>
-    Bordered table
+    Table 4: IAL Control Objectives
   </caption>
   <thead>
     <tr>
@@ -411,7 +411,7 @@ Table 5 summarizes the control objectives and gives user profiles for each of th
 
 <table class="usa-table">
   <caption>
-    Bordered table
+    Table 5: AAL Control Objectives
   </caption>
   <thead>
     <tr>
