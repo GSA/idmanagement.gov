@@ -52,7 +52,9 @@ implement:
     href: /implement/yubikey-guide/
   - text: Unifyia Implementation Guide for Passkeys (FIDO2)
     href: /implement/unifyia-guide/
-
+  - name: Shatterproof Digital Identity - GSA PQC Experiment
+    href: /implement/unifyia-pqc-experiment/
+    
 functions:
   - text: FICAM Program
     href: /ficam/
@@ -90,7 +92,8 @@ experiments:
     href: /experiments/
   - text: Coming Soon
     href: /experiments/#coming-soon
-
+  - text: Mobile PIV (mPIV) Experiment
+    href: /experiments/unifyia-mpiv-experiment/
 papers:
   - text: Back to Experiments
     href: /experiments/
