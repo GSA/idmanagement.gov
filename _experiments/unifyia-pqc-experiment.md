@@ -3,7 +3,7 @@ layout: page
 collection: implement
 title: Shatterproof Digital Identity - GSA PQC Experiment
 type: Markdown
-permalink: /implement/unifyia-pqc-experiment/
+permalink: /experiments/unifyia-pqc-experiment/
 description: Shatterproof Digital Identity - GSA PQC Experiment
 sidenav: implement
 sticky_sidenav: true

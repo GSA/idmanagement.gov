@@ -94,6 +94,7 @@ experiments:
     href: /experiments/#coming-soon
   - text: Mobile PIV (mPIV) Experiment
     href: /experiments/unifyia-mpiv-experiment/
+
 papers:
   - text: Back to Experiments
     href: /experiments/
@@ -111,9 +112,12 @@ papers:
     href: /experiments/pid/framework/
   - text: PIAM Process Guide
     href: /experiments/pid/process/
+  - text: Mobile PIV (mPIV) Experiment
+    href: /experiments/unifyia-mpiv-experiment/
+  - text: Shatterproof Digital Identity - GSA PQC Experiment
+    href: /experiments/unifyia-pqc-experiment/
   - text: Coming Soon
     href: /experiments/#coming-soon
-
 
 playbooks:
   - text: Introduction
