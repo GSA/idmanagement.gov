@@ -5,7 +5,7 @@ title: Shatterproof Digital Identity - GSA PQC Experiment
 type: Markdown
 permalink: /experiments/unifyia-pqc-experiment/
 description: Shatterproof Digital Identity - GSA PQC Experiment
-sidenav: experiments
+sidenav: papers
 sticky_sidenav: true
 
 pubdate: June 2025

@@ -5,7 +5,7 @@ title: Mobile PIV (mPIV) Experiment
 type: Markdown
 permalink: /experiments/unifyia-mpiv-experiment/
 description: Mobile PIV (mPIV) Experiment
-sidenav: experiments
+sidenav: papers
 sticky_sidenav: true
 
 pubdate: June 2025
