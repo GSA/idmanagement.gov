@@ -24,9 +24,9 @@ subnav:
 - text: PIAM Process Guide
   href: '#piam-process-guide'
 - text: Mobile PIV (mPIV) Experiment
-  href: '#mobile-piv--mpib--experiment'
+  href: '#mobile-piv-mpiv-experiment'
 - text: Shatterproof Digital Identity - GSA PQC Experiment
-  href: '#shatterproof-digital-identity--gsa-pqc-experiment'
+  href: '#shatterproof-digital-identity---gsa-pqc-experiment'
 
 ---
 
