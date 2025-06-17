@@ -110,11 +110,6 @@ Public key cryptography has long served as the cornerstone of digital trust, ena
 
 [Read Shatterproof Digital Identity - GSA PQC Experiment]({{site.baseurl}}/experiments/unifyia-mpiv-experiment/){:class="usa-button"}
 
-
-
-
-
-
 ## Coming Soon
 
 We are continuously adding new content to the Experiments section, the following is a list of whats next. 
