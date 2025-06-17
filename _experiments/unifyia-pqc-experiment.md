@@ -80,6 +80,8 @@ subnav:
     href: "#normative-references"
 ---
 
+{% include alert-warning.html heading="Draft" content="The following document is a Draft and should not be interpreted as a finalized rule." %}
+
 <!-- Start of Header -->
 <div style="margin-bottom: 20px;">
     <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" style="margin-right: 15px;border:0px;" alt="U.S. General Services Administration Logo">
