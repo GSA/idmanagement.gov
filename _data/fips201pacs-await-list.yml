@@ -19,6 +19,8 @@
 #   aplnumbers: [numbers and chars]
 #   state: [string]
 #   teststatus: [string] 
+#
+# Note: for some strings, double ("") quotes maybe needed.
 
 - position: 1	
   solution: AMAG Symmetry Professional + HID Global Validation System
@@ -27,22 +29,17 @@
   teststatus: In queue
 
 - position: 2	
-  solution: Gallagher Command Centre PACS (13.02)
-  aplnumbers: 10114
-  state: Update
-  teststatus: In queue
-
-- position: 3	
   solution: Gallagher PIV Command Centre +  HID Global Validation System for Gallagher Command Center
   aplnumbers: 10019 & 10020
   state: Update
   teststatus: In queue
 
-- position: 4	
+- position: 3	
   solution: LenelS2 OnGuard 8.3 + HID pivCLASS 5.32.0
   aplnumbers: 10112 & 10113
   state: Update
   teststatus: In queue
+
 
 
 
