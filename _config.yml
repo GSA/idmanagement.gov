@@ -83,6 +83,8 @@ primary_navigation:
         url: /implement/yubikey-guide/
       - name: Unifyia Implementation Guide for Passkeys (FIDO2)
         url: /implement/unifyia-guide/
+      - name: Shatterproof Digital Identity - GSA PQC Experiment
+        url: /implement/unifyia-pqc-experiment/
   - name: Functions
     children: 
       - name: FICAM Program
@@ -133,7 +135,8 @@ primary_navigation:
         url: /experiments/pid/framework/
       - name: PIAM Process Guide
         url: /experiments/pid/process/
-
+      - name: Mobile PIV (mPIV) Experiment
+        url: /experiments/unifyia-mpiv-experiment/
 secondary_navigation:
   - name: Contact Us
     url: /contact-us/
