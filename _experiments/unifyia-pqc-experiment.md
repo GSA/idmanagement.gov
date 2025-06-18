@@ -161,6 +161,7 @@ subnav:
 
 <!-- Start of Section 1 -->
 
+
 ## Executive Summary
 
 <p align="justify">Public key cryptography has long served as the cornerstone of digital trust, enabling secure identity verification, encrypted communication, and data integrity—essential elements of Internet security. Algorithms like RSA and Elliptic Curve Cryptography (ECC) form the backbone of today’s digital infrastructure, securing systems such as the federal Personal Identity Verification (PIV) framework. However, the rapid advancement of quantum computing poses a serious threat to these classical algorithms, especially for high-assurance systems reliant on public key infrastructure (PKI).</p>
