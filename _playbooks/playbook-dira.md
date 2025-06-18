@@ -745,8 +745,6 @@ This section provides links to the federal laws, policies, standards and other g
 
 
 <table class="usa-table">
-  <caption>
-  </caption>
   <thead>
     <tr>
       <th scope="col">Short Name</th>
