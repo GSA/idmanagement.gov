@@ -30,3 +30,12 @@
   compliantwithtaa: Yes
   url: /docs/apl-1512-IDOne-cosmo8_2.pdf
   
+- productname: IDEMIA ID-One PIV 243
+  productnumber: 2292732
+  category: PIV Card
+  supplier: IDEMIA
+  aplnumber: 1513
+  validdate: 6/17/2025
+  dateCode: 2025-06-17
+  compliantwithtaa: Yes
+  url: /docs/apl-1513-idone-piv-243.pdf
