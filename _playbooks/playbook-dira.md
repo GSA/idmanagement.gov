@@ -669,7 +669,7 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
 
 <table class="usa-table">
   <caption>
-    Bordered table
+    Table 6: DIRA Shortcut Guide
   </caption>
   <thead>
     <tr>
@@ -743,9 +743,9 @@ Reconsider the business process carefully and validate the current and future de
 
 This section provides links to the federal laws, policies, standards and other guidance that impact and shape DIRA implementations. NIST also publishes useful [Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for agencies, and [Implementation Resources](https://www.nist.gov/system/files/documents/2020/07/02/SP-800-63-3-Implementation-Resources_07012020.pdf){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for solution developers.
 
+
 <table class="usa-table">
   <caption>
-    Bordered table
   </caption>
   <thead>
     <tr>
