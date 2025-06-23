@@ -618,7 +618,7 @@ Table 4 provides examples of how agencies add agency-specific terms or context f
 
 <table class="usa-table">
   <caption>
-    Bordered table
+    Table 5: Example Transactions and Impact Levels
   </caption>
   <thead>
     <tr>
