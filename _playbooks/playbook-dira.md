@@ -148,7 +148,7 @@ The following sections describe a basic DIRA process and provide plays to help y
 
 The DIRA process begins when a new online service that requires trust in the identity of the person or trust in the authenticator is identified or a time-driven or event-driven reassessment is triggered. The information identified in step 1 helps to determine the level of trust required. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a Digital Identity Assessment Statement ([DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx)), as shown in Figure 1. Using the DIAS template can help guide agencies through the DIRA process
 
-![Figure 1: Example DIRA Process]({{site.baseurl}}/assets/playbooks/dira/fingure1.jpg)
+![Figure 1: Example DIRA Process]({{site.baseurl}}/assets/playbooks/dira/figure1.jpg)
 
 The high-level DIRA process includes five steps:
 
