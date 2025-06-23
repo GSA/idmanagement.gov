@@ -554,7 +554,7 @@ This section introduces six plays for your agency to create efficient and consis
 
 The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A\&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 5 shows an alignment of this playbook’s example DIRA process steps with the RMF.
 
-![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/fingure5.jpg)
+![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/figure5.jpg)
 
 Figure 5: Example DIRA Process Steps in Risk Management Framework Phase
 
