@@ -665,7 +665,9 @@ It’s a best practice that agencies develop standardized templates to promote c
 
 All federal applications that perform digital transactions and require identity proofing or authentication require a Digital Identity Acceptance Statement, regardless of how the system is hosted. However, not all federal applications require the full example DIRA process and efforts.
 
+
 Table 6 provides an example shortcut guide for determining whether to perform a full DIRA process based on application characteristics. IAL, AAL, and FAL levels in this table are examples. Applications must follow agency policies, which may be more stringent than the examples in this table.
+
 
 <table class="usa-table">
   <caption>
@@ -694,9 +696,9 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
       <p>
       Examples include:
         <ul class="usa-list">  
-        <li>Agency primary websites (i.e., www.gsa.gov)</li>  
-        <li>Informational websites</li>
-        <li>Open government APIs</li>
+          <li>Agency primary websites (i.e., www.gsa.gov)</li>  
+          <li>Informational websites</li>
+          <li>Open government APIs</li>
         </ul>
       </p>
       </th>
