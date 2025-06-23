@@ -207,7 +207,8 @@ First, identify the user types and communities of users impacted by the applicat
 
 A digital transaction is
 
-### **“**... a discrete digital event between a user and a system that supports a business or programmatic purpose.**”**
+### “... a discrete digital event between a user and a system that supports a business or programmatic purpose.”
+
 
 {% include alert-info.html heading="Key Point" content="A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment. Application owners and the information security team collaborate to identify, analyze, and assess the application’s digital transactions. Examples of transactions and transaction types are phrased as actions on data: Create, Read, Modify, Delete." %}
 
