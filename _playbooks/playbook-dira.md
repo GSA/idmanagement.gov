@@ -169,9 +169,7 @@ The first step is to identify the functional scope and description of the online
 
 These definitions simplify complex requirements for individuals’ privacy, information security, identity, and access management.
 
-### Key Point
-
-Identifying categories of users helps define the requirements for more than the Digital Identity Risk Assessments. For example, requirements for privacy, records retention, and monitoring are based on user types and categories.
+{% include alert-info.html heading="Key Point" content="Identifying categories of users helps define the requirements for more than the Digital Identity Risk Assessments. For example, requirements for privacy, records retention, and monitoring are based on user types and categories." %}
 
 First, identify the user types and communities of users impacted by the application . Identifying an application’s community of users is important to the DIRA processes, as communities have different privacy, regulatory, and solution requirements to consider in risk assessments. Table 1 identifies user types and five common examples of communities of users. 
 
