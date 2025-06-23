@@ -73,7 +73,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an SSH authentication agent that uses Microsoft's CAPI.  
 
  
-{% include alert-info.html heading="Pageant Install" content="Pageant is included in **WinSCP installation package**, you can also download it separately from [WinSCP download page](https://winscp.net/eng/downloads.php#putty_additional){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
+{% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**, you can also download it separately from the [WinSCP download page](https://winscp.net/eng/downloads.php#putty_additional){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
 
 1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder if downloaded separately. 
 2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
