@@ -838,12 +838,16 @@ This section includes example process flow diagrams used by some agencies for th
 
 ![Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment]({{site.baseurl}}/assets/playbooks/dira/figure9.jpg)
 
+**Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment**
+
 
 ![Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase]({{site.baseurl}}/assets/playbooks/dira/figure10.jpg)
 
+**Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase**
 
 ![Figure 11: A Six-Step Process of What is Required to Implement a DIRA]({{site.baseurl}}/assets/playbooks/dira/figure11.jpg)
 
+**Figure 11: A Six-Step Process of What is Required to Implement a DIRA**
 
 ## 2. Digital Identity Acceptance Statement Example Template
 
