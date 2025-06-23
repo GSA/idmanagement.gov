@@ -157,26 +157,18 @@ All applicants, please complete the following steps:
 ## Personal Identity Verification Credentials
 
 <ol class="usa-process-list">
-  <li class="usa-process-list__item"><p class="margin-bottom-2"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:</p>
-    <ul class="usa-icon-list">
-      <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon">
-          <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#fingerprint"></use></svg>
-        </div>
-        <div class="usa-icon-list__content">
-          <p class="margin-bottom-2"><strong>In-person Lab Testing</strong> - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
-        </div>
-      </li>      
-    </ul>
-    <p><strong>OR</strong></p>
-    <ul class="usa-icon-list">
-      <li class="usa-icon-list__item">
-        <div class="usa-icon-list__icon">
-          <svg class="usa-icon" aria-hidden="true" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#language"></use></svg>
-        </div>
-        <div class="usa-icon-list__content">
-          <p class="margin-bottom-2"><strong>Remote Testing</strong> - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
-        </div>
+  <li class="usa-process-list__item"><p class="margin-bottom-2"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to
+        <ul class="usa-list">
+            <li>
+              <p><strong>In-person Lab Testing</strong> - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
+            </li>      
+          </ul>
+          <p><strong>OR</strong></p>
+          <ul class="usa-list">
+            <li>
+              <p><strong>Remote Testing</strong> - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+            </li>
+        </ul>
       </li>
    </ul>
   </li>
