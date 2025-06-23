@@ -691,7 +691,7 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
       <td>Requires proof of identity (IAL3).<a href="{{site.baseurl}}/playbooks/dira/#fn:23">23</a> Multi-factor authentication to agency application (AAL2) federation between agency applications (FAL2). Additionally, requires affiliation as a federal employee or contractor.</td>
     </tr>
     <tr>
-      <th scope="row"><p>Data and other resources available are approved for public release, are intended to be freely shared, and public users aren’t required to create accounts to access this information.<p>
+      <th scope="row"><p>Data and other resources available are approved for public release, are intended to be freely shared, and public users aren’t required to create accounts to access this information.</p>
       <p>
       Examples include:
         <ul class="usa-list">  
