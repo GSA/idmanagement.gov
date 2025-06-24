@@ -922,19 +922,28 @@ This appendix includes both normative requirements and informative references fr
       </td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">The level of impact for each user group identified in Sec. 3.1 <strong>SHALL</strong> be considered separately based on the transactions available to that user group.</th>
+      <td>3.2</td>
+      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">While impacts to user groups, the organization, and other entities are primary considerations for impact assessments, organizations <strong>SHOULD</strong> also consider scale (e.g., number of persons impacted by transactions).</th>
+      <td>3.2</td>
+      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row"><p>At a minimum, organizations <strong>SHALL</strong> include the following impact categories in their impact assessments:
+        <ul class="usa-list">
+          <li>Degradation of mission delivery</li>
+          <li>Damage to trust, standing, or reputation</li>
+          <li>Unauthorized access to information</li>
+          <li>Financial loss or liability</li>
+          <li>Loss of life or danger to human safety, human health, or environmental health</li>
+        </ul>
+      </p>
+      </th>
+      <td>3.2.1</td>
+      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1150,28 +1159,13 @@ This appendix includes both normative requirements and informative references fr
 
     </tr>
     <tr>
-      <th scope="row">The level of impact for each user group identified in Sec. 3.1 <strong>SHALL</strong> be considered separately based on the transactions available to that user group.</th>
-      <td>3.2</td>
-      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
+
     </tr>
     <tr>
-      <th scope="row">While impacts to user groups, the organization, and other entities are primary considerations for impact assessments, organizations <strong>SHOULD</strong> also consider scale (e.g., number of persons impacted by transactions).</th>
-      <td>3.2</td>
-      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
+
     </tr>
     <tr>
-      <th scope="row"><p>At a minimum, organizations <strong>SHALL</strong> include the following impact categories in their impact assessments:
-        <ul class="usa-list">
-          <li>Degradation of mission delivery</li>
-          <li>Damage to trust, standing, or reputation</li>
-          <li>Unauthorized access to information</li>
-          <li>Financial loss or liability</li>
-          <li>Loss of life or danger to human safety, human health, or environmental health</li>
-        </ul>
-      </p>
-      </th>
-      <td>3.2.1</td>
-      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
+
     </tr>
     <tr>
       <th scope="row">Organizations <strong>SHOULD</strong> include additional impact categories, as appropriate, based on their mission and business objectives. Each impact category <strong>SHALL</strong> be documented and consistently applied when implementing the DIRM process across different online services offered by the organization.</th>
