@@ -145,9 +145,9 @@ NIST publishes implementation guides[3](#fnref:3){:id="fn:3"} and frequently ask
 
 This playbook is divided into three major sections. Read the entire playbook or jump directly to the section that will help your agency.
 
-- [High-Level DIRA Process]({{site.baseurl}}/playbooks/dira/#high-level-dira-process) - A step-by-step guide on how to approach a DIRA process for each agency.  
-- [Agency Process Plays]({{site.baseurl}}/playbooks/dira/#agency-process-plays) - Six plays to create efficient and consistent processes. For example, [Play \#4]({{site.baseurl}}/playbooks/dira/#play-4-shortcut-decision-trees) includes a shortcut decision tree for a streamlined DIRA for some applications.  
-- [Appendices]({{site.baseurl}}/playbooks/dira/#appendix-a-policy-standards-and-guidance) - Example diagrams and templates, and references to policies and standards to use in your agency for communications.
+- [High-Level DIRA Process](#high-level-dira-process) - A step-by-step guide on how to approach a DIRA process for each agency.  
+- [Agency Process Plays](#agency-process-plays) - Six plays to create efficient and consistent processes. For example, [Play #4](#play-4-shortcut-decision-trees) includes a shortcut decision tree for a streamlined DIRA for some applications.  
+- [Appendices](#appendix-a-policy-standards-and-guidance) - Example diagrams and templates, and references to policies and standards to use in your agency for communications.
 
 ## Scope
 
@@ -351,14 +351,14 @@ Table 3 lists the five impact categories to use. This table is a guideline for c
     <tr>
       <th scope="row">Financial loss or financial liability</th>
       <td>Expected to result in limited financial loss or liability to any party.</td>
-      <td>Expected to result in a serious financial loss or liability to any party. </td>
+      <td>Expected to result in a serious financial loss or liability to any party.</td>
       <td>Expected to result in severe or catastrophic financial loss or liability to any party.</td>
     </tr>
     <tr>
-      <th scope="row">Loss of life or danger to human safety, human health, or environmental health </th>
+      <th scope="row">Loss of life or danger to human safety, human health, or environmental health</th>
       <td>Expected to result in a limited impact on human safety or health that resolves on its own or with a minor amount of medical attention or a limited impact on environmental health that requires at most minor intervention to prevent further damage or reverse existing damage.</td>
       <td>Expected to result in a serious impact on human safety or health that requires significant medical attention, serious impact on environmental health that results in a period of uninhabitability and requires significant intervention to prevent further damage or reverse existing damage, or the compounding impacts of multiple low-impact events.</td>
-      <td>Expected to result in a severe or catastrophic impact on human safety or health such as severe injury, trauma, or death, a severe or catastrophic impact on environmental health that results in long-term or permanent uninhabitability and requires extensive intervention to prevent further damage or reverse existing damage, or the compounding impacts of multiple moderate impact events. </td>
+      <td>Expected to result in a severe or catastrophic impact on human safety or health such as severe injury, trauma, or death, a severe or catastrophic impact on environmental health that results in long-term or permanent uninhabitability and requires extensive intervention to prevent further damage or reverse existing damage, or the compounding impacts of multiple moderate impact events.</td>
     </tr>
   </tbody>
 </table>
@@ -367,21 +367,12 @@ Table 3 lists the five impact categories to use. This table is a guideline for c
 
 Identity Assurance Levels (IALs) define the processes and solutions used to identity proof users attempting to sign up for a digital service or perform an application transaction. IALs mitigate impacts of providing a benefit or information to the wrong user.
 
-* Identity Assurance is: “Are you who you say you are?”  
-* Impacts are: “What are the risks to the government or to you if you aren’t?”
+- Identity Assurance is: “Are you who you say you are?”  
+- Impacts are: “What are the risks to the government or to you if you aren’t?”
 
 Defining the IALs for each community of users and transactions from Step 1 is one of the more challenging aspects of a DIRA. The initial IAL correlates to how much personal data[10](#fnref:10){:id="fn:10"} is validated and verified for that user during the identity proofing process.[11](#fnref:11){:id="fn:11"}
 
 If the service doesn’t require the user to have a unique digital identity or prove who they are, then there is no IAL. Identity Assurance Level 1 (IAL1) provides basic confidence that the digital identity belongs to a real person and that person is who they say they are. Core attributes are collected from identity evidence or, if the identity evidence doesn’t provide all the necessary core attributes, they may be self-asserted by the user.   Identity evidence needs to be validated against authoritative or credible sources and the attributes need to be linked to the user.  .. At Identity Assurance Level 2 (IAL2) or 3 (IAL3), increasingly more personal information about the user needs to be validated and verified. NIST SP 800-63A-4, Section 4 specifies the requirements for each identity assurance level. 
-
-
-Key Point
-The risks and impacts of excessive information collection for identity proofing needs to be strongly considered for each community of users and the transactions.
-
-For public users and other non-organizational users, privacy benefits and privacy principles are key factors to consider.
-
-Application owners and agency processes need to include the Senior Agency Official for Privacy to define the risks, impact levels, and the Identity Assurance Levels .
-
 
 {% include alert-info.html heading="Key Point" content="<p>The risks and impacts of excessive information collection for identity proofing needs to be strongly considered for each community of users and the transactions.</p><p>For public users and other non-organizational users, privacy benefits and privacy principles are key factors to consider.</p>
 <p>Application owners and agency processes need to include the Senior Agency Official for Privacy to define the risks, impact levels, and the Identity Assurance Levels .</p>" %}
