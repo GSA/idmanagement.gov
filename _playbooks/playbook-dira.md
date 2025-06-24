@@ -1188,7 +1188,7 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 - Reduced risk.
 
 ## Footnotes
-<!-- 
+
 1. A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet. [↩]({{site.baseurl}}/playbooks/dira/#fnref:1)  
 2. A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and described in NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩]({{site.baseurl}}/playbooks/dira/#fnref:2)  
 3. For more information, refer to NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩]({{site.baseurl}}/playbooks/dira/#fnref:3)  
@@ -1206,5 +1206,5 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 15. NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4, Tailor and Document Assurance Levels. [↩]({{site.baseurl}}/playbooks/dira/#fnref:20)  
 16. NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4.4, Digital Identity Acceptance Statement. [↩]({{site.baseurl}}/playbooks/dira/#fnref:21)  
 17. Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). [↩]({{site.baseurl}}/playbooks/dira/#fnref:22)  
-18. Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩]({{site.baseurl}}/playbooks/dira/#fnref:23)   -->
+18. Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩]({{site.baseurl}}/playbooks/dira/#fnref:23)
     
