@@ -170,7 +170,7 @@ All applicants, please complete the following steps:
     <p class="margin-top-05">
     Include the following document when licensing an existing product that is already on the GSA PACS Reader APL, signed by a C- or VP-level individual:
       <ul class="usa-list">
-        <li></li>
+        <li><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</li>
       </ul>
     </p>
   </li>
@@ -204,7 +204,7 @@ All applicants, please complete the following steps:
 ## Personal Identity Verification Credentials
 
 <ol class="usa-process-list">
-  <li class="usa-process-list__item"><p class="margin-bottom-2"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
+  <li class="usa-process-list__item"><p class="margin-bottom-2 margin-top-05"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
       <ul class="usa-list">
         <li>
           <p><strong>In-person Lab Testing</strong> - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
