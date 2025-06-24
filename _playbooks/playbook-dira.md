@@ -986,8 +986,7 @@ This appendix includes both normative requirements and informative references fr
         <li><strong>IAL</strong> - The robustness of the identity proofing process to determine the identity of an individual. The IAL is selected to mitigate risks that result from potential identity proofing failures.</li>
         <li><strong>AAL</strong> - The robustness of the authentication process itself, and the binding between an authenticator and a specific individual's identifier. The AAL is selected to mitigate risks that result from potential authentication failures.</li>
         <li><strong>FAL</strong> - The robustness of the federation process used to communicate authentication and attribute information to an RP from an IdP. The FAL is selected to mitigate risks that result from potential federation failures.</li>
-      <ul>
-      </p></th>
+      <ul></p></th>
       <td>3.3.1</td>
       <td>Supports the proposed process recommendations to independently assess the assurance levels by the community of users and transactions.</td>
     </tr>
