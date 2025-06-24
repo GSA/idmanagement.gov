@@ -133,22 +133,22 @@ All applicants, please complete the following steps:
 
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Review, complete, and sign the <a href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
+    <p class="margin-top-04">Review, complete, and sign the <a href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
+    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0</a> (MS Word, November 30, 2023) (Mandatory) – Required for each solution submission, new or upgrade.</p>
+    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0</a> (MS Word, November 30, 2023) (Mandatory) – Required for each solution submission, new or upgrade.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">List the equipment used for the APL testing in the equipment table linked here – <a href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
+    <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Complete the <a href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev B</a> (MS Excel, October 2021) (Mandatory) for your topology.</p>
+    <p class="margin-top-04">Complete the <a href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev B</a> (MS Excel, October 2021) (Mandatory) for your topology.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">
+    <p class="margin-top-04">
     Provide a solution Configuration Guide (Mandatory) that includes, at a minimum: 
       <ul class="usa-list">
         <li>Screenshots and instructions on configuring the submitted solution to meet the test cases.</li>
@@ -159,7 +159,7 @@ All applicants, please complete the following steps:
     </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">
+    <p class="margin-top-04">
     Include the following document when adding a new series or adding a new product to a prior listed series, signed by a C- or VP-level individual:
      <ul class="usa-list">
       <li><a href="{{site.baseurl}}/docs/pacsapp-seriesform.docx" target="_blank" rel="noopener noreferrer">Product Series and Exemplar Self-Attestation Form v1.0.0</a> (Mandatory, if applicable) (MS Word, November 30, 2023).</li>
@@ -167,7 +167,7 @@ All applicants, please complete the following steps:
     </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">
+    <p class="margin-top-04">
     Include the following document when licensing an existing product that is already on the GSA PACS Reader APL, signed by a C- or VP-level individual:
       <ul class="usa-list">
         <li><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</li>
@@ -175,28 +175,28 @@ All applicants, please complete the following steps:
     </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05"><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</p>
+    <p class="margin-top-04"><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Complete and sign the <a href="{{site.baseurl}}/docs/pacsapp-supplyattestationform.docx" target="_blank" rel="noopener noreferrer">Supply Chain Self-Attestation Form, v1.4.2</a> (MS Word, March 3, 2020) (Mandatory).</p>
+    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/pacsapp-supplyattestationform.docx" target="_blank" rel="noopener noreferrer">Supply Chain Self-Attestation Form, v1.4.2</a> (MS Word, March 3, 2020) (Mandatory).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Include all applicable VPAT statements, <a class="usa-link usa-link--external" href="https://www.section508.gov/sell/vpat/" target="_blank" rel="noopener noreferrer">https://www.section508.gov/sell/vpat/</a> (Mandatory, if applicable).</p>
+    <p class="margin-top-04">Include all applicable VPAT statements, <a class="usa-link usa-link--external" href="https://www.section508.gov/sell/vpat/" target="_blank" rel="noopener noreferrer">https://www.section508.gov/sell/vpat/</a> (Mandatory, if applicable).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Include all relevant UL-294 listing documents (Mandatory, if applicable).</p>
+    <p class="margin-top-04">Include all relevant UL-294 listing documents (Mandatory, if applicable).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Include all applicable FIPS 140-2/140-3 listing documents (Mandatory, if applicable).</p>
+    <p class="margin-top-04">Include all applicable FIPS 140-2/140-3 listing documents (Mandatory, if applicable).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the <a href="{{site.baseurl}}/docs/vendor-self-attestation-form.docx" target="_blank" rel="noopener noreferrer">Vendor Self-Attestation Form for ISO/IEC Test Reports</a>, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.</p>
+    <p class="margin-top-04">The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the <a href="{{site.baseurl}}/docs/vendor-self-attestation-form.docx" target="_blank" rel="noopener noreferrer">Vendor Self-Attestation Form for ISO/IEC Test Reports</a>, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Respond to the <a href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.2.0</a> (Mandatory).</p>
+    <p class="margin-top-04">Respond to the <a href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.2.0</a> (Mandatory).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-05">Submit all completed forms to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+    <p class="margin-top-04">Submit all completed forms to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
   </li>
 </ol>
 
