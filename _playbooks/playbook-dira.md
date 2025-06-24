@@ -1117,11 +1117,11 @@ This appendix includes both normative requirements and informative references fr
     <tr>
       <th scope="row"><p>Organizations <strong>SHALL</strong> prepare a DIAS for their online service that includes, at a minimum:
       <ul class="usa-list">
-        <li>Initial impact assessment results,<li>
-        <li>Initially assessed xALs,<li>
-        <li>Tailored xAL and rationale if the tailored xAL differs from the initially assessed xAL,<li>
-        <li>All compensating controls with their comparability or residual risks, and<li>
-        <li>All supplemental controls.<li>
+        <li>Initial impact assessment results,</li>
+        <li>Initially assessed xALs,</li>
+        <li>Tailored xAL and rationale if the tailored xAL differs from the initially assessed xAL,</li>
+        <li>All compensating controls with their comparability or residual risks, and</li>
+        <li>All supplemental controls.</li>
       </ul>
       </p></th>
       <td>3.4.4</td>
