@@ -209,6 +209,7 @@ A digital transaction is
 
 ### “... a discrete digital event between a user and a system that supports a business or programmatic purpose.”
 
+<br><br>
 
 {% include alert-info.html heading="Key Point" content="A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment. Application owners and the information security team collaborate to identify, analyze, and assess the application’s digital transactions. Examples of transactions and transaction types are phrased as actions on data: Create, Read, Modify, Delete." %}
 
@@ -702,19 +703,19 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
       </p>
       </th>
       <td>No</td>
-      <td><p>Public users don’t create accounts or login.</p>
+      <td><p>Public users don't create accounts or login.</p>
       <p>Agency-affiliated privileged users with permissions to edit content still require higher IAL and a minimum AAL2 (two-factor).</p>
       </td>
     </tr>
     <tr>
-      <th scope="row">Data and other resources are intended for public release. Doesn’t include any controlled unclassified information, but allows public users to create accounts to better support the public user’s experience.</th>
+      <th scope="row">Data and other resources are intended for public release. Doesn't include any controlled unclassified information, but allows public users to create accounts to better support the public user’s experience.</th>
       <td>Yes</td>
-      <td>Doesn’t require proof of a real-life identity (No IAL). Single or multi-factor authentication (AAL1).</td>
+      <td>Doesn't require proof of a real-life identity (No IAL). Single or multi-factor authentication (AAL1).</td>
     </tr>
     <tr>
       <th scope="row">Allows public users to input and access their own personally identifiable information (PII) or protected health information (PHI) for informational purposes. The information isn’t required to be verified. The application doesn’t allow public users to access anyone else’s PII or PHI.</th>
       <td>Yes</td>
-      <td>Doesn’t require proof of a real-life identity (No IAL). Multi-factor authentication (AAL2).</td>
+      <td>Doesn't require proof of a real-life identity (No IAL). Multi-factor authentication (AAL2).</td>
     </tr>
   </tbody>
 </table>
@@ -1020,13 +1021,15 @@ This appendix includes both normative requirements and informative references fr
       <td>Supports the proposed process recommendations to independently assess the assurance levels by the community of users and transactions.</td>
     </tr>
     <tr>
-      <th scope="row"><p>Using the initial xALs selected in Sec. 3.3.3, the organization <strong>SHALL</strong> identify the applicable baseline controls for each user group as follows:
-        <ul class="usa-list">
-          <li>Initial IAL and related technical and process controls from SP 800-63A-4</li>
-          <li>Initial AAL and related technical and process controls from SP 800-63B-4</li>
-          <li>Initial FAL and related technical and process controls from SP 800-63C-4</li>
-        </ul>
-      </p></th>
+      <th scope="row">
+        <p>Using the initial xALs selected in Sec. 3.3.3, the organization <strong>SHALL</strong> identify the applicable baseline controls for each user group as follows:
+          <ul class="usa-list">
+            <li>Initial IAL and related technical and process controls from SP 800-63A-4</li>
+            <li>Initial AAL and related technical and process controls from SP 800-63B-4</li>
+            <li>Initial FAL and related technical and process controls from SP 800-63C-4</li>
+          </ul>
+        </p>
+      </th>
       <td>3.3.4</td>
       <td>Supports Step 3 of the DIRA process.</td>
     </tr>
@@ -1060,9 +1063,9 @@ This appendix includes both normative requirements and informative references fr
     <tr>
       <th scope="row"><p>At a minimum, organizations <strong>SHALL</strong> assess the impacts and potential unintended consequences related to the following areas:
         <ul class="usa-list">
-          <li><strong>Privacy</strong> – Identify unintended consequences to the privacy of individuals who will be subject to the controls at an assessed xAL and of individuals affected by organizational or third-party practices related to the establishment, management, or federation of a digital identity. A privacy assessment <strong>SHOULD</strong> leverage an existing Privacy Threshold Analysis (PTA) or Privacy Impact Assessment (PIA) as inputs during the privacy assessment process[^NISTPF]. However, as the goal of the privacy assessment is to identify privacy risks that arise from the initial assurance level selection, additional assessments and evaluations that are specific to the baseline controls for the assurance levels may be required for the underlying information system.</li>
-          <li>**Customer Experience** – Determine whether implementation of the initial assurance levels may create substantial or unacceptable barriers to individuals seeking to access services. Customer experience assessments <strong>SHALL</strong> consider impacts that result from the identity management controls to ensure that they do not cause undue burdens, frustrations, or frictions for individuals and that there are pathways to provide service to users of all capabilities, resources, technology access, and economic statuses.</li>
-          <li><strong>Threat Resistance</strong> – Determine whether the defined assurance level and related controls will address specific threats to the online service based on the operational environment, its threat actors, and known tactics, techniques, and procedures (TTPs). Threat assessments <strong>SHALL</strong> consider specific known and potential threats, threat actors, and TTPs within the implementation environment for the identity management functions. For example, certain benefits programs may be more subject to familial threats or collusion. Based on their assessments, organizations <strong>MAY</strong>implement supplemental controls specific to the communities served by their online service. Conversely, organizations <strong>MAY</strong>tailor their assessed xAL down or modify their baseline controls if their threat assessment indicates that a reduced threat posture is appropriate based on their environment.</li>
+          <li><strong>Privacy</strong> - Identify unintended consequences to the privacy of individuals who will be subject to the controls at an assessed xAL and of individuals affected by organizational or third-party practices related to the establishment, management, or federation of a digital identity. A privacy assessment <strong>SHOULD</strong> leverage an existing Privacy Threshold Analysis (PTA) or Privacy Impact Assessment (PIA) as inputs during the privacy assessment process[^NISTPF]. However, as the goal of the privacy assessment is to identify privacy risks that arise from the initial assurance level selection, additional assessments and evaluations that are specific to the baseline controls for the assurance levels may be required for the underlying information system.</li>
+          <li>**Customer Experience** - Determine whether implementation of the initial assurance levels may create substantial or unacceptable barriers to individuals seeking to access services. Customer experience assessments <strong>SHALL</strong> consider impacts that result from the identity management controls to ensure that they do not cause undue burdens, frustrations, or frictions for individuals and that there are pathways to provide service to users of all capabilities, resources, technology access, and economic statuses.</li>
+          <li><strong>Threat Resistance</strong> - Determine whether the defined assurance level and related controls will address specific threats to the online service based on the operational environment, its threat actors, and known tactics, techniques, and procedures (TTPs). Threat assessments <strong>SHALL</strong> consider specific known and potential threats, threat actors, and TTPs within the implementation environment for the identity management functions. For example, certain benefits programs may be more subject to familial threats or collusion. Based on their assessments, organizations <strong>MAY</strong>implement supplemental controls specific to the communities served by their online service. Conversely, organizations <strong>MAY</strong>tailor their assessed xAL down or modify their baseline controls if their threat assessment indicates that a reduced threat posture is appropriate based on their environment.</li>
         </ul>
       </p></th>
       <td>3.4.1</td>
