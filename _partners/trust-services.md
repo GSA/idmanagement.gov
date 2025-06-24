@@ -55,9 +55,9 @@ Information on publicly trusted device certificates used for TLS (HTTPS) on the 
 
 | Organization | Category | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|:-----------:|  
-| [Department of the Treasury](https://pki.treasury.gov/about_ssp.htm){:target="_blank"}{:rel="noopener noreferrer"}| FPKI SSP |  Greg Elspas (202) 765-9513 or<br/>Joe Gribble (304) 480-7608 | pki.pmo at fiscal.treasury.gov or<br/>_DL_PKIPolicy at treasury.gov |  
+| [Department of the Treasury](https://pki.treasury.gov/about_ssp.htm){:target="_blank"}{:rel="noopener noreferrer"}| FPKI SSP |  Greg Elspas or<br/>Joe Gribble<br/>_DL_PKIPolicy at treasury.gov | pki.pmo at fiscal.treasury.gov or<br/>_DL_PKIPolicy at treasury.gov |  
 | Entrust Federal Shared Service Provider |	GSA SSP | Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
-| WidePoint Federal Shared Service Provider	| GSA SSP | Jason Holloway, Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.widepoint.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.widepoint.com |
+| WidePoint Federal Shared Service Provider	| GSA SSP | Jason Holloway or<br/>Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.widepoint.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.widepoint.com |
 
 ## Business Identity Services
 
