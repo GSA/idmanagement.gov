@@ -198,7 +198,7 @@ All applicants, please complete the following steps:
   <li class="usa-process-list__item">
     <p class="margin-top-05">Submit all completed forms to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
   </li>
-<ol>
+</ol>
 
 
 ## Personal Identity Verification Credentials
