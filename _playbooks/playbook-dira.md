@@ -130,7 +130,7 @@ A digital identity represents each individual engaged in an online transaction. 
 
 Most federal agencies offer services through an IT system or application, such as a website, to their employees, other agencies, and the public. To access an application, users may need to provide identity information, create an account, and log in. These actions are part of the digital identity and authentication process.
 
-DIRAs determine the assurance levels for the digital transactions that involve digital identity or require human authentication.[2](#fn:2) When agencies build or buy applications that use the most current identity proofing and authentication standards, they protect both the digital transactions, and the user and agency data behind the applications.
+DIRAs determine the assurance levels for the digital transactions that involve digital identity or require human authentication.[2](#fn:2){:id="#fn:2"} When agencies build or buy applications that use the most current identity proofing and authentication standards, they protect both the digital transactions, and the user and agency data behind the applications.
 
 This Digital Identity Risk Assessment playbook helps federal agency Chief Information Officer (CIO) and Chief Information Security Officer (CISO) teams and business application owners to:
 
