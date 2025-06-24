@@ -874,14 +874,14 @@ This appendix includes both normative requirements and informative references fr
   </thead>
   <tbody>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">Federal RPs SHALL implement the DIRM process for all online services.</th>
+      <td>3</td>
+      <td>This supports the assertion that federal agencies should apply the DIRA process to their online services.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">At a minimum, organizations <strong>SHALL</strong> execute and document each step and complete and document the normative mandates and outcomes of each step, regardless of any organization-specific processes or tools used in the overall DIRM process.</th>
+      <td>3</td>
+      <td>This supports the documentation of the DIRA process in a DIAS.</td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1114,14 +1114,10 @@ This appendix includes both normative requirements and informative references fr
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Federal RPs SHALL implement the DIRM process for all online services.</th>
-      <td>3</td>
-      <td>This supports the assertion that federal agencies should apply the DIRA process to their online services.</td>
+
     </tr>
     <tr>
-      <th scope="row">At a minimum, organizations <strong>SHALL</strong> execute and document each step and complete and document the normative mandates and outcomes of each step, regardless of any organization-specific processes or tools used in the overall DIRM process.</th>
-      <td>3</td>
-      <td>This supports the documentation of the DIRA process in a DIAS.</td>
+
     </tr>
     <tr>
       <th scope="row"><p>RPs <strong>SHALL</strong> develop a description of the online service that includes, at minimum:
