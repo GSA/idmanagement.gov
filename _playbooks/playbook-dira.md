@@ -976,14 +976,20 @@ This appendix includes both normative requirements and informative references fr
       <td>Supports Step 4, to formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS).</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">Organizations SHALL document the approach they use to combine their impact assessment into an overall impact level for each of their defined user groups and SHALL apply it consistently across all of its online services. At the conclusion of the combinatorial analysis, organizations SHALL document the impact for each user group.</th>
+      <td>3.2.4</td>
+      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row"><p>The RP SHALL identify the types of assurance levels that apply to their online service from the following:
+      <ul class="usa-list">
+        <li><strong>IAL</strong> - The robustness of the identity proofing process to determine the identity of an individual. The IAL is selected to mitigate risks that result from potential identity proofing failures.</li>
+        <li><strong>AAL</strong> - The robustness of the authentication process itself, and the binding between an authenticator and a specific individual's identifier. The AAL is selected to mitigate risks that result from potential authentication failures.</li>
+        <li><strong>FAL</strong> - The robustness of the federation process used to communicate authentication and attribute information to an RP from an IdP. The FAL is selected to mitigate risks that result from potential federation failures.</li>
+      <ul>
+      </p></th>
+      <td>3.3.1</td>
+      <td>Supports the proposed process recommendations to independently assess the assurance levels by the community of users and transactions.</td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1186,20 +1192,10 @@ This appendix includes both normative requirements and informative references fr
 
     </tr>
     <tr>
-      <th scope="row">Organizations SHALL document the approach they use to combine their impact assessment into an overall impact level for each of their defined user groups and SHALL apply it consistently across all of its online services. At the conclusion of the combinatorial analysis, organizations SHALL document the impact for each user group.</th>
-      <td>3.2.4</td>
-      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
+
     </tr>
     <tr>
-      <th scope="row"><p>The RP SHALL identify the types of assurance levels that apply to their online service from the following:
-      <ul class="usa-list">
-        <li><strong>IAL</strong> - The robustness of the identity proofing process to determine the identity of an individual. The IAL is selected to mitigate risks that result from potential identity proofing failures.</li>
-        <li><strong>AAL</strong> - The robustness of the authentication process itself, and the binding between an authenticator and a specific individual's identifier. The AAL is selected to mitigate risks that result from potential authentication failures.</li>
-        <li><strong>FAL</strong> - The robustness of the federation process used to communicate authentication and attribute information to an RP from an IdP. The FAL is selected to mitigate risks that result from potential federation failures.</li>
-      <ul>
-      </p></th>
-      <td>3.3.1</td>
-      <td>Supports the proposed process recommendations to independently assess the assurance levels by the community of users and transactions.</td>
+
     </tr>
     <tr>
       <th scope="row">Organizations SHALL develop and document a process and governance model for selecting initial assurance levels and controls based on the potential impacts of failures in the digital identity system.</th>
