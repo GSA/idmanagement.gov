@@ -15,35 +15,65 @@ version: 1.2
 pubdate: December 29, 2022
 
 subnav:
-  # - text: Step 1. Identify Users, Transactions, and Roles
-  #   href: '#step-1-identify-users-transactions-and-roles'
-  # - text: Step 2. Identify Risks
-  #   href: '#step-2-identify-risks-and-assurance-levels'
-  # - text: Step 3. Determine Steps
-  #   href: '#step-3-determine-steps-to-meet-assurance-levels'
-  # - text: Step 4. Finalize DIAS
-  #   href: '#step-4-finalize-digital-identity-acceptance-statement'
-  # - text: Step 5. Reassess
-  #   href: '#step-5-reassess'
-  # - text: Play 1. Streamline RMF
-  #   href: '#play-1-streamline-risk-management-and-assessment-processes'
-  # - text: Play 2. Add Context
-  #   href: '#play-2-add-context-for-the-mission'
-  # - text: Play 3. Use Templates
-  #   href: '#play-3-use-templates'
-  # - text: Play 4. Shortcut Trees
-  #   href: '#play-4-shortcut-decision-trees'
-  # - text: Play 5. Leverage Tools
-  #   href: '#play-5-leverage-existing-agency-tools'
-  # - text: Play 6. Less Is More
-  #   href: '#play-6-less-is-more'
-  # - text: References
-  #   href: "#appendix-a-policy-standards-and-guidance"
-  
+  - text: Acknowledgments
+    href: '#acknowledgments'
+  - text: Introduction
+    href: '#introduction'
+  - text: Purpose
+    href: '#purpose'
+  - text: How to Use This Playbook
+    href: '#how-to-use-this-playbook'
+  - text: Scope
+    href: '#scope'
+  - text: High-Level DIRA Process
+    href: '#high-level-dira-process'
+  - text: Step 1. Identify Users, Transactions, and Roles
+    href: '#step-1-identify-users-transactions-and-roles'
+  - text: Step 2. Identify Risks and Assurance Levels
+    href: '#step-2-identify-risks-and-assurance-levels'
+  - text: Authentication Assurance
+    href: '#authentication-assurance'
+  - text: Federation Assurance
+    href: '#federation-assurance'
+  - text: Step 3. Determine Steps to Meet Assurance Levels
+    href: '#step-3-determine-steps-to-meet-assurance-levels'
+  - text: Step 4. Finalize Digital Identity Acceptance Statement
+    href: '#step-4-finalize-digital-identity-acceptance-statement'
+  - text: Step 5. Reassess
+    href: '#step-5-reassess'
+  - text: Agency Process Plays
+    href: '#agency-process-plays'
+  - text: Play 1. Streamline Risk Management and Assessment Processes
+    href: '#play-1-streamline-risk-management-and-assessment-processes'
+  - text: Play 2. Add Context for the Mission
+    href: '#play-2-add-context-for-the-mission'
+  - text: Play 3. Use Templates
+    href: '#play-3-use-templates'
+  - text: Play 4. Shortcut Decision Guides
+    href: '#play-4-shortcut-decision-guides'
+  - text: Play 5. Leverage Existing Agency Tools
+    href: '#play-5-leverage-existing-agency-tools'
+  - text: Play 6. Less Is More
+    href: '#play-6-less-is-more'
+  - text: Appendix A. Policy, Standards, and Guidance
+    href: '#appendix-a-policy-standards-and-guidance'
+  - text: Appendix B. Examples and Templates
+    href: '#appendix-b-examples-and-templates'
+  - text: 1. Process Flow Examples
+    href: '#1-process-flow-examples'
+  - text: 2. Digital Identity Acceptance Statement Example Template
+    href: '#2-digital-identity-acceptance-statement-example-template'
+  - text: Appendix C. NIST Special Publication 800-63-4, Requirements Traceability Matrix
+    href: '#appendix-c-nist-special-publication-800-63-4-requirements-traceability-matrix'
+  - text: Appendix D. Updates to NIST Special Publication 800-63
+    href: '#appendix-d-updates-to-nist-special-publication-800-63'
+  - text: Mix and Match xALs
+    href: '#mix-and-match-xals'
+  - text: Footnotes
+    href: '#footnotes'
+
 ---
 
-<!-- Version 1.2  
-December 29, 2022 -->
 
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
