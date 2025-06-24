@@ -1171,13 +1171,17 @@ This appendix includes both normative requirements and informative references fr
 
 ## Appendix D. Updates to NIST Special Publication 800-63
 
-In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
+<p>In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.</p>
+
 
 ![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
 
+
 - The SP 800-63-4 parent document outlines the digital identity risk assessment methodology that federal agencies must implement. The other three documents address the three assurance level categories: Identity Assurance Level (IAL), Authentication Assurance Level (AAL), and Federation Assurance Level (FAL). These three assurance levels are known collectively as xALs. 
 
+
 ## Mix and Match xALs
+
 
 The xALs in the revised guidance can be mixed and matched, giving agencies the flexibility to deploy strong authentication without having to prove a user’s identity (i.e., if the collection of sensitive information is not required). The mix and match assurance levels allow opportunities for:
 
