@@ -862,7 +862,7 @@ This [Digital Identity Acceptance Statement template]({{site.baseurl}}/docs/play
 This appendix includes both normative requirements and informative references from NIST SP 800-63-4 Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included. The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development.
 
 
-<table class="usa-table">
+<!-- <table class="usa-table">
   <caption>
     Requirements & Playbook Considerations
   </caption>
@@ -1167,7 +1167,7 @@ This appendix includes both normative requirements and informative references fr
       <td>Supports Step 5 of the DIRA process to periodically reassess the findings of the DIRA for gaps and areas needing improvement.</td>
     </tr>
   </tbody>
-</table>
+</table> -->
 
 
 ## Appendix D. Updates to NIST Special Publication 800 63
