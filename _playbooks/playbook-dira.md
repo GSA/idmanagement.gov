@@ -145,9 +145,15 @@ NIST publishes implementation guides[3](#fnref:3){:id="fn:3"} and frequently ask
 
 This playbook is divided into three major sections. Read the entire playbook or jump directly to the section that will help your agency.
 
+<<<<<<< HEAD
+- [High-Level DIRA Process](#high-level-dira-process) - A step-by-step guide on how to approach a DIRA process for each agency.  
+- [Agency Process Plays](#agency-process-plays) - Six plays to create efficient and consistent processes. For example, [Play \#4](#play-4-shortcut-decision-trees) includes a shortcut decision tree for a streamlined DIRA for some applications.  
+- [Appendices](#appendix-a-policy-standards-and-guidance) - Example diagrams and templates, and references to policies and standards to use in your agency for communications.
+=======
 - [High-Level DIRA Process](#high-level-dira-process) - A step-by-step guide on how to approach a DIRA process for each agency.  
 - [Agency Process Plays](#agency-process-plays) - Six plays to create efficient and consistent processes. For example, [Play #4](#play-4-shortcut-decision-trees) includes a shortcut decision tree for a streamlined DIRA for some applications.  
 - [Appendices](#appendix-a-policy-standards-and-guidance) - Example diagrams and templates, and references to policies and standards to use in your agency for communications.
+>>>>>>> 602877f631ec1705248cef4bd3daac6e0c69260c
 
 ## Scope
 
@@ -1212,7 +1218,7 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 7. The working group members determined Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations. The working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications. [↩](#fn:7){:id="fnref:7"}  
 8. Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014. [↩](#fn:8){:id="fnref:8"}  
 9. Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Appendix B, Glossary. [↩](#fn:9){:id="fnref:9"}  
-10. Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual. [↩]({{#fn:10){:id="fnref:10"}  
+10. Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual. [↩]({#fn:10){:id="fnref:10"}  
 11. Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules. [↩]({{#fn:11){:id="fnref:11"}  
 12. Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.2 Authentication Assurance Level 2.[↩](#fn:14){:id="fnref:14"}  
 13. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.3 Authentication Assurance Level 3. [↩](#fn:15){:id="fnref:15"}    
