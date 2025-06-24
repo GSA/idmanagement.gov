@@ -861,6 +861,25 @@ This [Digital Identity Acceptance Statement template]({{site.baseurl}}/docs/play
 
 This appendix includes both normative requirements and informative references from NIST SP 800-63-4 Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included. The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development.
 
+<table class="usa-table">
+  <caption>
+    Requirements & Playbook Considerations
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Requirement</th>
+      <th scope="col">Section</th>
+      <th scope="col">Playbook Consideration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">.</th>
+      <td>.</td>
+      <td>.</td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- <table class="usa-table">
   <caption>
@@ -895,8 +914,7 @@ This appendix includes both normative requirements and informative references fr
         <li>The set of entities (to include users of the online service, organizations, and populations served) that will be impacted by the online service and the broader business process of which it is a part</li>
         <li>The results of any pre-existing DIRM assessments (as an input) and the current state of any pre-existing identity technologies (i.e., proofing, authentication, or federation)</li>
         <li>The estimated availability of the types of identity evidence required for identity proofing across all user groups served</li>
-      </ul>
-      </p>
+      </ul></p>
       </th>
       <td>3.1</td>
       <td>Supports Step 1 of the DIRA process to identify the functional scope and description of the online service, the user groups to be served, the types of online transactions that will be available, and the underlying data that the service will process through its interfaces.</td>
@@ -917,8 +935,7 @@ This appendix includes both normative requirements and informative references fr
           <li>Identifying a set of impact categories and the potential harms for each impact category,</li>
           <li>Identifying the levels of impact, and</li>
           <li>Assessing the level of impact for each user group.</li>
-        </ul>
-      </p>
+        </ul></p>
       </th>
       <td>3.2</td>
       <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.
@@ -1172,7 +1189,7 @@ This appendix includes both normative requirements and informative references fr
 
 ## Appendix D. Updates to NIST Special Publication 800 63
 
-<p>In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.</p>
+In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
 
 
 ![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
