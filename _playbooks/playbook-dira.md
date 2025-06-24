@@ -961,19 +961,19 @@ This appendix includes both normative requirements and informative references fr
       <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">The impact analysis SHALL consider the level of impact for each impact category for each type of impacted entity if an intruder obtains unauthorized access as a member of each user group. Because different sets of transactions are available to each user group, it is important to consider each user group separately for this analysis.</th>
+      <td>3.2.3</td>
+      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">The impact analysis SHALL be performed for each user group that has access to the online service.</th>
+      <td>3.2.3</td>
+      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">The output of this impact analysis is a set of impact levels for each user group that SHALL be documented in a suitable format for further analysis in accordance with Sec. 3.4.</th>
+      <td>3.2.3</td>
+      <td>Supports Step 4, to formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS).</td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1177,19 +1177,13 @@ This appendix includes both normative requirements and informative references fr
 
     </tr>
     <tr>
-      <th scope="row">The impact analysis SHALL consider the level of impact for each impact category for each type of impacted entity if an intruder obtains unauthorized access as a member of each user group. Because different sets of transactions are available to each user group, it is important to consider each user group separately for this analysis.</th>
-      <td>3.2.3</td>
-      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
+
     </tr>
     <tr>
-      <th scope="row">The impact analysis SHALL be performed for each user group that has access to the online service.</th>
-      <td>3.2.3</td>
-      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
+
     </tr>
     <tr>
-      <th scope="row">The output of this impact analysis is a set of impact levels for each user group that SHALL be documented in a suitable format for further analysis in accordance with Sec. 3.4.</th>
-      <td>3.2.3</td>
-      <td>Supports Step 4, to formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS).</td>
+
     </tr>
     <tr>
       <th scope="row">Organizations SHALL document the approach they use to combine their impact assessment into an overall impact level for each of their defined user groups and SHALL apply it consistently across all of its online services. At the conclusion of the combinatorial analysis, organizations SHALL document the impact for each user group.</th>
