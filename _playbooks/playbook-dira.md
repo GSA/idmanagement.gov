@@ -946,19 +946,19 @@ This appendix includes both normative requirements and informative references fr
       <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">Organizations <strong>SHOULD</strong> include additional impact categories, as appropriate, based on their mission and business objectives. Each impact category <strong>SHALL</strong> be documented and consistently applied when implementing the DIRM process across different online services offered by the organization.</th>
+      <td>3.2.1</td>
+      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">For each impact category, organizations <strong>SHALL</strong> consider potential harms for each of the impacted entities identified in Sec. 3.1.</th>
+      <td>3.2.1</td>
+      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">To provide a more objective basis for impact level assignments, organizations SHOULD develop thresholds and examples for the impact levels for each impact category. Where this is done, particularly with specifically defined quantifiable values, these thresholds SHALL be documented and used consistently in the DIRM assessments across an organization to allow for a common understanding of risks.</th>
+      <td>3.2.2</td>
+      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1168,19 +1168,13 @@ This appendix includes both normative requirements and informative references fr
 
     </tr>
     <tr>
-      <th scope="row">Organizations <strong>SHOULD</strong> include additional impact categories, as appropriate, based on their mission and business objectives. Each impact category <strong>SHALL</strong> be documented and consistently applied when implementing the DIRM process across different online services offered by the organization.</th>
-      <td>3.2.1</td>
-      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users for the transactions.</td>
+
     </tr>
     <tr>
-      <th scope="row">For each impact category, organizations <strong>SHALL</strong> consider potential harms for each of the impacted entities identified in Sec. 3.1.</th>
-      <td>3.2.1</td>
-      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
+
     </tr>
     <tr>
-      <th scope="row">To provide a more objective basis for impact level assignments, organizations SHOULD develop thresholds and examples for the impact levels for each impact category. Where this is done, particularly with specifically defined quantifiable values, these thresholds SHALL be documented and used consistently in the DIRM assessments across an organization to allow for a common understanding of risks.</th>
-      <td>3.2.2</td>
-      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.</td>
+
     </tr>
     <tr>
       <th scope="row">The impact analysis SHALL consider the level of impact for each impact category for each type of impacted entity if an intruder obtains unauthorized access as a member of each user group. Because different sets of transactions are available to each user group, it is important to consider each user group separately for this analysis.</th>
