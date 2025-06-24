@@ -846,6 +846,7 @@ This section includes example process flow diagrams used by some agencies for th
 
 **Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase**
 
+
 ![Figure 11: A Six-Step Process of What is Required to Implement a DIRA]({{site.baseurl}}/assets/playbooks/dira/figure11.jpg)
 
 **Figure 11: A Six-Step Process of What is Required to Implement a DIRA**
@@ -856,7 +857,7 @@ This section includes example process flow diagrams used by some agencies for th
 This [Digital Identity Acceptance Statement template]({{site.baseurl}}/docs/playbook-dira-dias-template.docx) is provided as an example for agencies to use or modify as needed
 
 
-## **Appendix C. NIST Special Publication 800-63-4, Requirements Traceability Matrix**
+## Appendix C. NIST Special Publication 800-63-4, Requirements Traceability Matrix
 
 This appendix includes both normative requirements and informative references from NIST SP 800-63-4 Digital Identity Guidelines. Only requirements related to the agency processes for digital identity risk assessments are included. The Playbook Consideration column includes comments on the standards statements and alignment to this playbook’s development.
 
