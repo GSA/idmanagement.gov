@@ -89,35 +89,28 @@ subnav:
       <caption>Digital Identity Risk Assessment version table</caption>
       <thead>
       <tr>
-        <th scope='col'>
-          Version Number
-        </th>
-        <th scope='col'>
-          Date
-        </th>
-        <th scope='col'>
-          Change Description
-        </th>
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
       </tr>
       </thead>
       <tr>
-        <th scope='row'>
-          1.2
-        </th>
+        <th scope='row'> -- </th>
+        <td> -- </td>
+        <td> -- </td>
+      </tr>
+      <tr>
+        <th scope='row'>1.2</th>
         <td>12/29/22</td>
         <td>Fixed heading typo, updated Appendix A. links</td>
       </tr>
       <tr>
-        <th scope='row'>
-          1.1
-        </th>
+        <th scope='row'>1.1</th>
         <td>11/17/21</td>
         <td>Inserted Key Point box at the end of Step 2.</td>
       </tr>
       <tr>
-        <th scope='row'>
-          1.0
-        </th>
+        <th scope='row'>1.0</th>
         <td>09/13/20</td>
         <td>Initial Draft</td>
       </tr>
