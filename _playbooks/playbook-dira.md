@@ -884,9 +884,20 @@ This appendix includes both normative requirements and informative references fr
       <td>This supports the documentation of the DIRA process in a DIAS.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row"><p>RPs <strong>SHALL</strong> develop a description of the online service that includes, at minimum:
+      <ul class="usa-list">
+        <li>The organizational mission and business objectives supported by the online service</li>
+        <li>The mission and business partner dependencies associated with the online service</li>
+        <li>Legal, regulatory, and contractual requirements, including privacy obligations that apply to the online service</li>
+        <li>The functionality of the online service and the data that it is expected to process</li>
+        <li>User groups that need to have access to the online service as well as the types of online transactions and access privileges available to each user group</li>
+        <li>The set of entities (to include users of the online service, organizations, and populations served) that will be impacted by the online service and the broader business process of which it is a part</li>
+        <li>The results of any pre-existing DIRM assessments (as an input) and the current state of any pre-existing identity technologies (i.e., proofing, authentication, or federation)</li>
+        <li>The estimated availability of the types of identity evidence required for identity proofing across all user groups served</li>
+      </ul></p>
+      </th>
+      <td>3.1</td>
+      <td>Supports Step 1 of the DIRA process to identify the functional scope and description of the online service, the user groups to be served, the types of online transactions that will be available, and the underlying data that the service will process through its interfaces.</td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1120,20 +1131,7 @@ This appendix includes both normative requirements and informative references fr
 
     </tr>
     <tr>
-      <th scope="row"><p>RPs <strong>SHALL</strong> develop a description of the online service that includes, at minimum:
-      <ul class="usa-list">
-        <li>The organizational mission and business objectives supported by the online service</li>
-        <li>The mission and business partner dependencies associated with the online service</li>
-        <li>Legal, regulatory, and contractual requirements, including privacy obligations that apply to the online service</li>
-        <li>The functionality of the online service and the data that it is expected to process</li>
-        <li>User groups that need to have access to the online service as well as the types of online transactions and access privileges available to each user group</li>
-        <li>The set of entities (to include users of the online service, organizations, and populations served) that will be impacted by the online service and the broader business process of which it is a part</li>
-        <li>The results of any pre-existing DIRM assessments (as an input) and the current state of any pre-existing identity technologies (i.e., proofing, authentication, or federation)</li>
-        <li>The estimated availability of the types of identity evidence required for identity proofing across all user groups served</li>
-      </ul></p>
-      </th>
-      <td>3.1</td>
-      <td>Supports Step 1 of the DIRA process to identify the functional scope and description of the online service, the user groups to be served, the types of online transactions that will be available, and the underlying data that the service will process through its interfaces.</td>
+
     </tr>
     <tr>
       <th scope="row">The scope of impact assessments <strong>SHALL</strong> include individuals who use the online application as well as the organization itself.</th>
