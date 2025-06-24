@@ -900,19 +900,26 @@ This appendix includes both normative requirements and informative references fr
       <td>Supports Step 1 of the DIRA process to identify the functional scope and description of the online service, the user groups to be served, the types of online transactions that will be available, and the underlying data that the service will process through its interfaces.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">The scope of impact assessments <strong>SHALL</strong> include individuals who use the online application as well as the organization itself.</th>
+      <td>3.1</td>
+      <td>Supports the proposed process recommendations to independently assess the impacts by the community of users.</td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row">Organizations <strong>SHALL</strong> document all impacted entities (both internal and external to the organization) when conducting their impact assessments.</th>
+      <td>3.1</td>
+      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users. </td>
     </tr>
     <tr>
-      <th scope="row">.</th>
-      <td>.</td>
-      <td>.</td>
+      <th scope="row"><p>The impact assessment <strong>SHALL</strong> include:
+        <ul class="usa-list">
+          <li>Identifying a set of impact categories and the potential harms for each impact category,</li>
+          <li>Identifying the levels of impact, and</li>
+          <li>Assessing the level of impact for each user group.</li>
+        </ul></p>
+      </th>
+      <td>3.2</td>
+      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.
+      </td>
     </tr>
     <tr>
       <th scope="row">.</th>
@@ -1134,26 +1141,13 @@ This appendix includes both normative requirements and informative references fr
 
     </tr>
     <tr>
-      <th scope="row">The scope of impact assessments <strong>SHALL</strong> include individuals who use the online application as well as the organization itself.</th>
-      <td>3.1</td>
-      <td>Supports the proposed process recommendations to independently assess the impacts by the community of users.</td>
+
     </tr>
     <tr>
-      <th scope="row">Organizations <strong>SHALL</strong> document all impacted entities (both internal and external to the organization) when conducting their impact assessments.</th>
-      <td>3.1</td>
-      <td>Supports the proposed process recommendations for the risks and impact assessments to consider both the agency and the users. </td>
+
     </tr>
     <tr>
-      <th scope="row"><p>The impact assessment <strong>SHALL</strong> include:
-        <ul class="usa-list">
-          <li>Identifying a set of impact categories and the potential harms for each impact category,</li>
-          <li>Identifying the levels of impact, and</li>
-          <li>Assessing the level of impact for each user group.</li>
-        </ul></p>
-      </th>
-      <td>3.2</td>
-      <td>Supports Step 2 recommendation to determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.
-      </td>
+
     </tr>
     <tr>
       <th scope="row">The level of impact for each user group identified in Sec. 3.1 <strong>SHALL</strong> be considered separately based on the transactions available to that user group.</th>
