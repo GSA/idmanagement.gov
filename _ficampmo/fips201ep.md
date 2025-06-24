@@ -131,33 +131,80 @@ The documents in this section provide guidance and information necessary for eva
 
 All applicants, please complete the following steps:
 
-1. Review, complete, and sign the [FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0]({{site.baseurl}}/docs/pacsapp-package-checklist.docx) (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.
-2. Complete and sign the [Approved Products List Application Form, v1.2.0]({{site.baseurl}}/docs/fips201ep-application-form.docx) (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.
-3. Complete and sign the [FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0]({{site.baseurl}}/docs/fips201ep-agreement.docx) (MS Word, November 30, 2023) (Mandatory) – Required for each solution submission, new or upgrade. 
-4. List the equipment used for the APL testing in the equipment table linked here – [Equipment Table GSA PACS Application v1.3.0]({{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx) (MS Excel, August 2024) (Mandatory). 
-5. Complete the [PACS FRTC Workbook, v1.4.2 Rev B]({{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx) (MS Excel, October 2021) (Mandatory) for your topology.
-6. Provide a solution Configuration Guide (Mandatory) that includes, at a minimum: 
-    - Screenshots and instructions on configuring the submitted solution to meet the test cases.
-    - Location of all log files needed to verify that the solution performs the test cases.
-    - Steps necessary to verify the hardware, software, and firmware of all items listed on the equipment table in the APL application.
-    - Responses to the Vendor FRTC Questionnaire linked in #13.
-7. Include the following document when adding a new series or adding a new product to a prior listed series, signed by a C- or VP-level individual:
-    - [Product Series and Exemplar Self-Attestation Form v1.0.0]({{site.baseurl}}/docs/pacsapp-seriesform.docx) (Mandatory, if applicable) (MS Word, November 30, 2023). 
-8. Include the following document when licensing an existing product that is already on the GSA PACS Reader APL, signed by a C- or VP-level individual:
-    - [Product Licensing Self-Attestation Form v1.0.0]({{site.baseurl}}/docs/pacsapp-licensingform.docx) (MS Word, November 30, 2023) (Mandatory, if applicable).
-9. Complete and sign the [Supply Chain Self-Attestation Form, v1.4.2]({{site.baseurl}}/docs/pacsapp-supplyattestationform.docx) (MS Word, March 3, 2020) (Mandatory).  
-10. Include all applicable VPAT statements, [https://www.section508.gov/sell/vpat/](https://www.section508.gov/sell/vpat/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} (Mandatory, if applicable).
-11. Include all relevant UL-294 listing documents (Mandatory, if applicable).
-12. Include all applicable FIPS 140-2/140-3 listing documents (Mandatory, if applicable).
-13. The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the [Vendor Self-Attestation Form for ISO/IEC Test Reports]({{site.baseurl}}/docs/vendor-self-attestation-form.docx){:target="_blank"}{:rel="noopener noreferrer"}, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.
-14. Respond to the [Vendor FRTC Questionnaire, v1.2.0]({{site.baseurl}}/docs/vendor-frtc-questions.docx){:target="_blank"}{:rel="noopener noreferrer"} (Mandatory).
-15. Submit all completed forms to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
+<ol class="usa-process-list">
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Review, complete, and sign the <a href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0</a> (MS Word, November 30, 2023) (Mandatory) – Required for each solution submission, new or upgrade.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Complete the <a href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev B</a> (MS Excel, October 2021) (Mandatory) for your topology.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">
+    Provide a solution Configuration Guide (Mandatory) that includes, at a minimum: 
+      <ul class="usa-list">
+        <li>Screenshots and instructions on configuring the submitted solution to meet the test cases.</li>
+        <li>Location of all log files needed to verify that the solution performs the test cases.</li>
+        <li>Steps necessary to verify the hardware, software, and firmware of all items listed on the equipment table in the APL application.</li>
+        <li>Responses to the Vendor FRTC Questionnaire linked in #13.</li>
+      </ul>
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">
+    Include the following document when adding a new series or adding a new product to a prior listed series, signed by a C- or VP-level individual:
+     <ul class="usa-list">
+      <li><a href="{{site.baseurl}}/docs/pacsapp-seriesform.docx" target="_blank" rel="noopener noreferrer">Product Series and Exemplar Self-Attestation Form v1.0.0</a> (Mandatory, if applicable) (MS Word, November 30, 2023).</li>
+     </ul>
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">
+    Include the following document when licensing an existing product that is already on the GSA PACS Reader APL, signed by a C- or VP-level individual:
+      <ul class="usa-list">
+        <li><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</li>
+      </ul>
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04"><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/pacsapp-supplyattestationform.docx" target="_blank" rel="noopener noreferrer">Supply Chain Self-Attestation Form, v1.4.2</a> (MS Word, March 3, 2020) (Mandatory).</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Include all applicable VPAT statements, <a class="usa-link usa-link--external" href="https://www.section508.gov/sell/vpat/" target="_blank" rel="noopener noreferrer">https://www.section508.gov/sell/vpat/</a> (Mandatory, if applicable).</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Include all relevant UL-294 listing documents (Mandatory, if applicable).</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Include all applicable FIPS 140-2/140-3 listing documents (Mandatory, if applicable).</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the <a href="{{site.baseurl}}/docs/vendor-self-attestation-form.docx" target="_blank" rel="noopener noreferrer">Vendor Self-Attestation Form for ISO/IEC Test Reports</a>, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Respond to the <a href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.2.0</a> (Mandatory).</p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-04">Submit all completed forms to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+  </li>
+</ol>
 
 
 ## Personal Identity Verification Credentials
 
 <ol class="usa-process-list">
-  <li class="usa-process-list__item"><p class="margin-bottom-2"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
+  <li class="usa-process-list__item"><p class="margin-bottom-2 margin-top-05"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
       <ul class="usa-list">
         <li>
           <p><strong>In-person Lab Testing</strong> - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
