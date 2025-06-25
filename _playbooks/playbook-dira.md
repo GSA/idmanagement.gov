@@ -173,6 +173,8 @@ The DIRA process begins when a new online service that requires trust in the ide
 
 ![Figure 1: Example DIRA Process]({{site.baseurl}}/assets/playbooks/dira/figure1.jpg)
 
+**Figure 1: Example DIRA Process**
+
 The high-level DIRA process includes five steps:
 
 1. [Identify Users, Transactions, and Roles](#step-1-identify-users-transactions-and-roles)  
@@ -571,7 +573,7 @@ The Risk Management Framework (RMF) forms the basis of your agency application A
 
 ![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/figure5.jpg)
 
-Figure 5: Example DIRA Process Steps in Risk Management Framework Phase
+**Figure 5: Example DIRA Process Steps in Risk Management Framework Phase**
 
 Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system,<sup>[22](#fnref:22){:id="fn:22"}</sup> application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.
 
@@ -1188,6 +1190,7 @@ In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with
 
 ![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
 
+**Figure 12: Digital Identity Guideline Information Locations**
 
 - The SP 800-63-4 parent document outlines the digital identity risk assessment methodology that federal agencies must implement. The other three documents address the three assurance level categories: Identity Assurance Level (IAL), Authentication Assurance Level (AAL), and Federation Assurance Level (FAL). These three assurance levels are known collectively as xALs. 
 
