@@ -72,7 +72,7 @@ Many people inadvertently create a false sense of security, mistaking the feelin
 
 The federal government has identity proofing guidelines established by the National Institute of Standards and Technology, but these guidelines are not uniformly followed—particularly when ensuring linkage between a claimed identity and the person presenting the evidence. The practice of adhering to these guidelines must become standard across the federal landscape when citizens access federal services online. 
 
-[Read the PIAM Best Practice]({{site.baseurl}}/experiments/pid/bestpractice/){:class="usa-button"}
+[Read PIAM Best Practice]({{site.baseurl}}/experiments/pid/bestpractice/){:class="usa-button"}
 
 
 ## PIAM Service Guide
