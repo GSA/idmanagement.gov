@@ -16,7 +16,7 @@ subnav:
 - text: CDN Paper 3
   href: '#cdn-paper-3' 
 - text: PIAM Best Practice
-  href: '#'
+  href: '#piam-best-practice'
 - text: PIAM Service Guide 
   href: '#piam-service-guide'
 - text: PIAM Framework Guide 
@@ -67,6 +67,7 @@ Many people inadvertently create a false sense of security, mistaking the feelin
 
 [Read CDN Paper 3]({{site.baseurl}}/experiments/cdns/paper3/){:class="usa-button"}
 
+{:id="piam-best-practice"}
 ## PIAM Best Practice
 
 The federal government has identity proofing guidelines established by the National Institute of Standards and Technology, but these guidelines are not uniformly followed—particularly when ensuring linkage between a claimed identity and the person presenting the evidence. The practice of adhering to these guidelines must become standard across the federal landscape when citizens access federal services online. 
