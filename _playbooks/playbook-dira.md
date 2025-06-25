@@ -1064,8 +1064,8 @@ This appendix includes both normative requirements and informative references fr
       <th scope="row"><p>Organizations <strong>SHALL</strong> establish and document their xAL tailoring process. At a minimum, this process:
         <ul class="usa-list">
           <li><strong>SHALL</strong> follow a documented governance approach to allow for decision-making</li>
-          <li><strong>SHALL</strong> document all decisions in the tailoring process, including the assessed xALs, modified xALs, and supplemental and compensating controls in the Digital Identity Acceptance Statement (see <a href="#IDacceptStmt">Sec. 3.4.4</a>)</li>
-          <li><strong>SHALL</strong> justify and document all risk-based decisions or modifications to the initially assessed xALs in the Digital Identity Acceptance Statement (see <a href="#IDacceptStmt">Sec. 3.4.4</a>)</li>
+          <li><strong>SHALL</strong> document all decisions in the tailoring process, including the assessed xALs, modified xALs, and supplemental and compensating controls in the Digital Identity Acceptance Statement (see <a href="#2-digital-identity-acceptance-statement-example-template">Sec. 3.4.4</a>)</li>
+          <li><strong>SHALL</strong> justify and document all risk-based decisions or modifications to the initially assessed xALs in the Digital Identity Acceptance Statement (see <a href="#2-digital-identity-acceptance-statement-example-template">Sec. 3.4.4</a>)</li>
           <li><strong>SHOULD</strong> establish a cross-functional capability to support subject-matter analysis of xAL selection impacts in the tailoring process (e.g., subject-matter experts who can speak about risks and considerations related to privacy, customer experience, fraud and impersonation impacts, and other germane areas)</li>
       </ul>
       </p></th>
