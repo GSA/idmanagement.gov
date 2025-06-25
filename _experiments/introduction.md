@@ -15,8 +15,8 @@ subnav:
   href: '#cdn-paper-2'
 - text: CDN Paper 3
   href: '#cdn-paper-3' 
-- text: CDN Paper 4
-  href: '#cdn-paper-4'
+- text: PIAM Best Practice
+  href: '#'
 - text: PIAM Service Guide 
   href: '#piam-service-guide'
 - text: PIAM Framework Guide 
@@ -67,33 +67,33 @@ Many people inadvertently create a false sense of security, mistaking the feelin
 
 [Read CDN Paper 3]({{site.baseurl}}/experiments/cdns/paper3/){:class="usa-button"}
 
-## CDN Paper 4
+## PIAM Best Practice
 
 The federal government has identity proofing guidelines established by the National Institute of Standards and Technology, but these guidelines are not uniformly followed—particularly when ensuring linkage between a claimed identity and the person presenting the evidence. The practice of adhering to these guidelines must become standard across the federal landscape when citizens access federal services online. 
 
-[Read CDN Paper 4]({{site.baseurl}}/experiments/pid/bestpractice/){:class="usa-button"}
+[Read the PIAM Best Practice]({{site.baseurl}}/experiments/pid/bestpractice/){:class="usa-button"}
 
 
 {:id="piam-service-guide"}
-## Public Identity and Access Management Service Guide
+## PIAM Service Guide
 
 This practical guide is to assist federal agencies as they start to or further expand the use of Public Identity and Access Management (PIAM) services to provide citizen access to agencies' services. Public identities are digital identities or accounts owned and managed by the agency, including US citizens, federal employees and contractors, service providers that assist US citizens and state and local affiliates. 
 
-[Read the Public Identity Access Management Service Guide]({{site.baseurl}}/experiments/pid/service/){:class="usa-button"}
+[Read the PIAM Service Guide]({{site.baseurl}}/experiments/pid/service/){:class="usa-button"}
 
 {:id="piam-framework-guide"}
-## Public Identity and Access Management Framework Guide
+## PIAM Framework Guide
 
 The PIAM framework encompasses the technologies, processes, and policies required to regulate and authorize individual access to resources. By implementing robust identity and access management, agencies can ensure that individuals access only authorized assets. This framework is thus instrumental in safeguarding agency assets from both internal and external threats, enforcing security protocols, and adhering to security guidelines and best practices.
 
-[Read the Public Identity Access Management Framework Guide]({{site.baseurl}}/experiments/pid/framework/){:class="usa-button"}
+[Read the PIAM Framework Guide]({{site.baseurl}}/experiments/pid/framework/){:class="usa-button"}
 
 {:id="piam-process-guide"}
-## Public Identity and Access Management Process Guide
+## PIAM Process Guide
 
 In today's complex business landscape, successful public citizen onboarding is essential for building strong relationships and driving positive public user experience. In this guide, learn how Persona-based access control uses user "personas" (archetypes or roles) is used to define access permissions, streamlining security management and ensuring users only have access to what they need.
 
-[Read the Public Identity Access Management Framework Guide]({{site.baseurl}}/experiments/pid/process/){:class="usa-button"}
+[Read the PIAM Process Guide]({{site.baseurl}}/experiments/pid/process/){:class="usa-button"}
 
 
 ## Coming Soon

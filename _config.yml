@@ -125,7 +125,7 @@ primary_navigation:
         url: /experiments/cdns/paper2/
       - name: CDN Paper 3
         url: /experiments/cdns/paper3/ 
-      - name: CDN Paper 4
+      - name: PIAM Best Practice
         url: /experiments/pid/bestpractice/
       - name: PIAM Service Guide
         url: /experiments/pid/service/
