@@ -18,7 +18,7 @@ where we provide an easy way to manage your navigation system
         {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
         <li class="usa-nav__primary-item">
           <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-            href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
+            href="{{ nav_item.url | prepend: site.baseurl}}" aria-label="{{ nav_item.name | escape }}"><span>{{ nav_item.name | escape }}</span></a>
         </li>
         {% else %}
         {% assign nav_id = 'primary-nav-' | append: forloop.index %}
