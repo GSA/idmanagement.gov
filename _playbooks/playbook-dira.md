@@ -574,9 +574,11 @@ This section introduces six plays for your agency to create efficient and consis
 
 The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A\&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 5 shows an alignment of this playbook’s example DIRA process steps with the RMF.
 
-{:class="flex-align-center"} ![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/figure5.jpg)
+{:align="center"}
+![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/figure5.jpg)
 
-{:class="flex-align-center"} **Figure 5: Example DIRA Process Steps in Risk Management Framework Phase**
+{:align="center"}
+**Figure 5: Example DIRA Process Steps in Risk Management Framework Phase**
 
 Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system,<sup>[22](#fnref:22){:id="fn:22"}</sup> application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.
 
@@ -856,19 +858,23 @@ This appendix provides examples and templates of existing resources to help esta
 
 This section includes example process flow diagrams used by some agencies for the Digital Identity Risk Assessment processes. Choose and reuse any process flow that works best for your agency.
 
-{:class="flex-align-center"} ![Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment]({{site.baseurl}}/assets/playbooks/dira/figure9.jpg)
+{:align="center"}
+![Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment]({{site.baseurl}}/assets/playbooks/dira/figure9.jpg)
 
-{:class="flex-align-center"} **Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment**
+{:align="center"}
+**Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment**
 
+{:align="center"}
+![Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase]({{site.baseurl}}/assets/playbooks/dira/figure10.jpg)
 
-{:class="flex-align-center"} ![Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase]({{site.baseurl}}/assets/playbooks/dira/figure10.jpg)
+{:align="center"}
+**Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase**
 
-{:class="flex-align-center"} **Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase**
+{:align="center"}
+![Figure 11: A Six-Step Process of What is Required to Implement a DIRA]({{site.baseurl}}/assets/playbooks/dira/figure11.jpg)
 
-
-{:class="flex-align-center"} ![Figure 11: A Six-Step Process of What is Required to Implement a DIRA]({{site.baseurl}}/assets/playbooks/dira/figure11.jpg)
-
-{:class="flex-align-center"} **Figure 11: A Six-Step Process of What is Required to Implement a DIRA**
+{:align="center"}
+**Figure 11: A Six-Step Process of What is Required to Implement a DIRA**
 
 
 ## 2. Digital Identity Acceptance Statement Example Template
@@ -1190,10 +1196,11 @@ This appendix includes both normative requirements and informative references fr
 
 In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
 
+{:align="center"}
+![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
 
-{:class="flex-align-center"} ![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
-
-{:class="flex-align-center"} **Figure 12: Digital Identity Guideline Information Locations**
+{:align="center"}
+**Figure 12: Digital Identity Guideline Information Locations**
 
 - The SP 800-63-4 parent document outlines the digital identity risk assessment methodology that federal agencies must implement. The other three documents address the three assurance level categories: Identity Assurance Level (IAL), Authentication Assurance Level (AAL), and Federation Assurance Level (FAL). These three assurance levels are known collectively as xALs. 
 
