@@ -1204,22 +1204,22 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 ## Footnotes
 
 
- 1. {:id="fnref:1"} A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet. [↩](#fn:1)
- 2. {:id="fnref:2"} A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and described in NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:2)     
- 3. {:id="fnref:3"} For more information, refer to NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:3)
-4. NIST Special Publication 800-63-4 Digital Identity Guidelines, Frequently Asked Questions. [↩](#fn:4){:id="fnref:4"}  
-5. Pursuant to 0MB Circular A-130, “information system” means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. System and application are used synonymously throughout this playbook. [↩](#fn:5){:id="fnref:5"}  
-6. Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 1.1, Scope and Applicability. [↩](#fn:6){:id="fnref:6"}  
-7. The working group members determined Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations. The working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications. [↩](#fn:7){:id="fnref:7"}  
-8. Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014. [↩](#fn:8){:id="fnref:8"}  
-9. Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Appendix B, Glossary. [↩](#fn:9){:id="fnref:9"}  
-10. Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual. [↩]({#fn:10){:id="fnref:10"}  
-11. Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules. [↩]({#fn:11){:id="fnref:11"}  
-12. Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.2 Authentication Assurance Level 2.[↩](#fn:14){:id="fnref:14"}  
-13. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.3 Authentication Assurance Level 3. [↩](#fn:15){:id="fnref:15"}    
-14. See NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 2.4, Federation and Assertions. [↩](#fn:17){:id="fnref:17"}  
-15. NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4, Tailor and Document Assurance Levels. [↩](#fn:20){:id="fnref:20"}  
-16. NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4.4, Digital Identity Acceptance Statement. [↩](#fn:21){:id="fnref:21"}  
-17. Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). [↩](#fn:22){:id="fnref:22"}  
-18. Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩](#fn:23){:id="fnref:23"}
+1. {:id="fnref:1"} A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet. [↩](#fn:1)
+2. {:id="fnref:2"} A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and described in NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:2)     
+3. {:id="fnref:3"} For more information, refer to NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:3)
+4. {:id="fnref:4"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Frequently Asked Questions. [↩](#fn:4)  
+5. {:id="fnref:5"} Pursuant to 0MB Circular A-130, “information system” means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. System and application are used synonymously throughout this playbook. [↩](#fn:5)  
+6. {:id="fnref:6"} Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 1.1, Scope and Applicability. [↩](#fn:6)  
+7. {:id="fnref:7"} The working group members determined Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations. The working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications. [↩](#fn:7)  
+8. {:id="fnref:8"} Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014. [↩](#fn:8)  
+9. {:id="fnref:9"} Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Appendix B, Glossary. [↩](#fn:9)  
+10. {:id="fnref:10"} Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual. [↩]({#fn:10)  
+11. {:id="fnref:11"} Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules. [↩]({#fn:11)  
+12. {:id="fnref:14"} Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.2 Authentication Assurance Level 2.[↩](#fn:14)  
+13. {:id="fnref:15"} Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.3 Authentication Assurance Level 3. [↩](#fn:15)    
+14. {:id="fnref:17"} See NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 2.4, Federation and Assertions. [↩](#fn:17)  
+15. {:id="fnref:20"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4, Tailor and Document Assurance Levels. [↩](#fn:20) 
+16. {:id="fnref:21"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4.4, Digital Identity Acceptance Statement. [↩](#fn:21) 
+17. {:id="fnref:22"} Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). [↩](#fn:22) 
+18. {:id="fnref:23"} Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩](#fn:23)
     
