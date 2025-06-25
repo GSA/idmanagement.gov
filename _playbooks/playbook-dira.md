@@ -163,7 +163,7 @@ This playbook does not apply to:
 - Non-person entities,<sup>[6](#fnref:6){:id="fn:6"}</sup> such as devices, Robotic Process Automation (RPA), or Machine Learning;  
 - Facilities access;  
 - Federation Assurance Level 3 solutions;<sup>[7](#fnref:7){:id="fn:7"}</sup> or  
-- National security systems (NSS).[8]<sup>(#fnref:8){:id="fn:8"}</sup>
+- National security systems (NSS).<sup>[8](#fnref:8){:id="fn:8"}</sup>
 
 The following sections describe a basic DIRA process and provide plays to help you implement efficiency into your agency’s processes.
 
@@ -171,9 +171,9 @@ The following sections describe a basic DIRA process and provide plays to help y
 
 The DIRA process begins when a new online service that requires trust in the identity of the person or trust in the authenticator is identified or a time-driven or event-driven reassessment is triggered. The information identified in step 1 helps to determine the level of trust required. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a Digital Identity Assessment Statement ([DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx)), as shown in Figure 1. Using the DIAS template can help guide agencies through the DIRA process
 
-![Figure 1: Example DIRA Process]({{site.baseurl}}/assets/playbooks/dira/figure1.jpg)
+{:class="flex-align-center"} ![Figure 1: Example DIRA Process]({{site.baseurl}}/assets/playbooks/dira/figure1.jpg)
 
-**Figure 1: Example DIRA Process**
+{:class="flex-align-center"} **Figure 1: Example DIRA Process**
 
 The high-level DIRA process includes five steps:
 
@@ -230,7 +230,7 @@ First, identify the user types and communities of users impacted by the applicat
 </table>
 
 
-A digital transaction is
+A digital transaction<sup>[9](#fnref:9){:id="fn:9"}</sup> is
 
 ### “... a discrete digital event between a user and a system that supports a business or programmatic purpose.”
 
@@ -311,9 +311,9 @@ Table 2 provides examples of user types, transactions, and roles.
 
 Determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.
 
-- Identity Assurance Levels (IALs) indicate robustness of the identity proofing process to determine the identity of an individual and the level of confidence in that claimed identity.  
-- Authentication Assurance Levels (AALs) indicate the    robustness of the authentication process and the binding between an authenticator and a specific individual’s identifier. .  
-- Federation Assurance Levels (FALs) indicate robustness of the federation process used to communicate authentication and attribute information and the level of confidence in an assertion used to communicate identity or authentication information across applications or agencies.
+- **Identity Assurance Levels (IALs)** indicate robustness of the identity proofing process to determine the identity of an individual and the level of confidence in that claimed identity.  
+- **Authentication Assurance Levels (AALs)** indicate the    robustness of the authentication process and the binding between an authenticator and a specific individual’s identifier. .  
+- **Federation Assurance Levels (FALs)** indicate robustness of the federation process used to communicate authentication and attribute information and the level of confidence in an assertion used to communicate identity or authentication information across applications or agencies.
 
 The risks and impact assessment considers the risks to both the agency and the user for the transactions. The risk to one can be significant while not negatively impacting the other. It’s common for government applications to have different assurance levels based on differing impacts and risks for each community of users and transactions.
 
@@ -333,31 +333,31 @@ Table 3 lists the five impact categories to use. This table is a guideline for c
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Degradation of mission delivery</th>
+      <th scope="row"><strong>Degradation of mission delivery</strong></th>
       <td>Expected to result in limited mission capability degradation such that the organization is still able to perform its primary functions but with some reduced effectiveness. </td>
       <td>Expected to result in serious mission capability degradation such that the organization is still able to perform its primary functions but with significantly reduced effectiveness. </td>
       <td>Expected to result in severe or catastrophic mission capability degradation or loss over a duration such that the organization is unable to perform one or more of its primary functions. </td>
     </tr>
     <tr>
-      <th scope="row">Damage to trust, standing, or reputation </th>
+      <th scope="row"><strong>Damage to trust, standing, or reputation</strong></th>
       <td>Expected to result in limited, short-term inconvenience, distress, or embarrassment to any party. </td>
       <td>Expected to result in serious short-term or limited long-term inconvenience, distress, or damage to the standing or reputation of any party.</td>
       <td>Expected to result in severe or serious long-term inconvenience, distress, or damage to the standing or reputation of any party or many individuals. </td>
     </tr>
     <tr>
-      <th scope="row">Unauthorized access to information</th>
+      <th scope="row"><strong>Unauthorized access to information</strong></th>
       <td>Expected to have a limited adverse effect on organizational operations, organizational assets, or individuals as defined in FIPS 199.</td>
       <td>Expected to have a serious adverse effect on organizational operations, organizational assets, or individuals as defined in FIPS 199.</td>
       <td>Expected to have a severe or catastrophic adverse effect on organizational operations, organizational assets, or individuals as defined in FIPS 199.</td>
     </tr>
     <tr>
-      <th scope="row">Financial loss or financial liability</th>
+      <th scope="row"><strong>Financial loss or financial liability</strong></th>
       <td>Expected to result in limited financial loss or liability to any party.</td>
       <td>Expected to result in a serious financial loss or liability to any party.</td>
       <td>Expected to result in severe or catastrophic financial loss or liability to any party.</td>
     </tr>
     <tr>
-      <th scope="row">Loss of life or danger to human safety, human health, or environmental health</th>
+      <th scope="row"><strong>Loss of life or danger to human safety, human health, or environmental health</strong></th>
       <td>Expected to result in a limited impact on human safety or health that resolves on its own or with a minor amount of medical attention or a limited impact on environmental health that requires at most minor intervention to prevent further damage or reverse existing damage.</td>
       <td>Expected to result in a serious impact on human safety or health that requires significant medical attention, serious impact on environmental health that results in a period of uninhabitability and requires significant intervention to prevent further damage or reverse existing damage, or the compounding impacts of multiple low-impact events.</td>
       <td>Expected to result in a severe or catastrophic impact on human safety or health such as severe injury, trauma, or death, a severe or catastrophic impact on environmental health that results in long-term or permanent uninhabitability and requires extensive intervention to prevent further damage or reverse existing damage, or the compounding impacts of multiple moderate impact events.</td>
@@ -571,9 +571,9 @@ This section introduces six plays for your agency to create efficient and consis
 
 The Risk Management Framework (RMF) forms the basis of your agency application Assessment and Authorization (A\&A) lifecycle. A DIRA process integrates into the routine phases of the RMF to streamline processes and enables efficient reuse of application and agency resources. Figure 5 shows an alignment of this playbook’s example DIRA process steps with the RMF.
 
-![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/figure5.jpg)
+{:class="flex-align-center"} ![Figure 5: Example DIRA Process Steps in Risk Management Framework Phase]({{site.baseurl}}/assets/playbooks/dira/figure5.jpg)
 
-**Figure 5: Example DIRA Process Steps in Risk Management Framework Phase**
+{:class="flex-align-center"} **Figure 5: Example DIRA Process Steps in Risk Management Framework Phase**
 
 Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system,<sup>[22](#fnref:22){:id="fn:22"}</sup> application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.
 
@@ -853,19 +853,19 @@ This appendix provides examples and templates of existing resources to help esta
 
 This section includes example process flow diagrams used by some agencies for the Digital Identity Risk Assessment processes. Choose and reuse any process flow that works best for your agency.
 
-![Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment]({{site.baseurl}}/assets/playbooks/dira/figure9.jpg)
+{:class="flex-align-center"} ![Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment]({{site.baseurl}}/assets/playbooks/dira/figure9.jpg)
 
-**Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment**
-
-
-![Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase]({{site.baseurl}}/assets/playbooks/dira/figure10.jpg)
-
-**Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase**
+{:class="flex-align-center"} **Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment**
 
 
-![Figure 11: A Six-Step Process of What is Required to Implement a DIRA]({{site.baseurl}}/assets/playbooks/dira/figure11.jpg)
+{:class="flex-align-center"} ![Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase]({{site.baseurl}}/assets/playbooks/dira/figure10.jpg)
 
-**Figure 11: A Six-Step Process of What is Required to Implement a DIRA**
+{:class="flex-align-center"} **Figure 10: Describes the DIRA Process Flow from the Data Collection Phase to the Ongoing Assessment Phase**
+
+
+{:class="flex-align-center"} ![Figure 11: A Six-Step Process of What is Required to Implement a DIRA]({{site.baseurl}}/assets/playbooks/dira/figure11.jpg)
+
+{:class="flex-align-center"} **Figure 11: A Six-Step Process of What is Required to Implement a DIRA**
 
 
 ## 2. Digital Identity Acceptance Statement Example Template
@@ -1188,9 +1188,9 @@ This appendix includes both normative requirements and informative references fr
 In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
 
 
-![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
+{:class="flex-align-center"} ![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
 
-**Figure 12: Digital Identity Guideline Information Locations**
+{:class="flex-align-center"} **Figure 12: Digital Identity Guideline Information Locations**
 
 - The SP 800-63-4 parent document outlines the digital identity risk assessment methodology that federal agencies must implement. The other three documents address the three assurance level categories: Identity Assurance Level (IAL), Authentication Assurance Level (AAL), and Federation Assurance Level (FAL). These three assurance levels are known collectively as xALs. 
 
