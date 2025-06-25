@@ -1203,15 +1203,10 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 
 ## Footnotes
 
-{:id="fnref:1"}
-1. A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet. [↩](#fn:1)
 
-{:id="fnref:2"}
-2. A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and described in NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:2)
-
-{:id="fnref:3"}     
-3. For more information, refer to NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:3)
-
+{:id="fnref:1"} 1. A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet. [↩](#fn:1)
+{:id="fnref:2"} 2. A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and described in NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:2)     
+{:id="fnref:3"} 3. For more information, refer to NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:3)
 4. NIST Special Publication 800-63-4 Digital Identity Guidelines, Frequently Asked Questions. [↩](#fn:4){:id="fnref:4"}  
 5. Pursuant to 0MB Circular A-130, “information system” means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. System and application are used synonymously throughout this playbook. [↩](#fn:5){:id="fnref:5"}  
 6. Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 1.1, Scope and Applicability. [↩](#fn:6){:id="fnref:6"}  
