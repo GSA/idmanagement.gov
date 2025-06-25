@@ -146,7 +146,7 @@ NIST publishes implementation guides<sup>[3](#fnref:3){:id="fn:3"}</sup> and fre
 This playbook is divided into three major sections. Read the entire playbook or jump directly to the section that will help your agency.
 
 - [High-Level DIRA Process](#high-level-dira-process) - A step-by-step guide on how to approach a DIRA process for each agency.  
-- [Agency Process Plays](#agency-process-plays) - Six plays to create efficient and consistent processes. For example, [Play #4](#play-4-shortcut-decision-trees) includes a shortcut decision tree for a streamlined DIRA for some applications.  
+- [Agency Process Plays](#agency-process-plays) - Six plays to create efficient and consistent processes. For example, [Play #4](#play-4-shortcut-decision-guides) includes a shortcut decision tree for a streamlined DIRA for some applications.  
 - [Appendices](#appendix-a-policy-standards-and-guidance) - Example diagrams and templates, and references to policies and standards to use in your agency for communications.
 
 ## Scope
