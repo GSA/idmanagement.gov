@@ -11,8 +11,8 @@ pdf: "docs/playbook-dira.pdf"
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.2
-pubdate: December 29, 2022
+version: 2.0
+pubdate: June 15, 2025
 
 subnav:
   - text: Acknowledgments
@@ -95,9 +95,9 @@ subnav:
       </tr>
       </thead>
       <tr>
-        <th scope='row'> -- </th>
-        <td> -- </td>
-        <td> -- </td>
+        <th scope='row'>2.0</th>
+        <td>06/15/2025</td>
+        <td>Updated based changes to NIST SP800-63-4</td>
       </tr>
       <tr>
         <th scope='row'>1.2</th>
