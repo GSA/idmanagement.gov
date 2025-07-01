@@ -423,9 +423,9 @@ Authentication Assurance Levels indicate the strength of the authentication proc
 
 Authentication Assurance Level 1 (AAL1), provides basic confidence that the user controls the authenticator and that it’s bound to the user’s digital Identity. AAL1 only requires single-factor authentication, but multi-factor authentication options should be available and encouraged. Successful authentication requires that the claimant prove possession and control of the authenticator. 
 
-Authentication Assurance Level 2 (AAL2) provides high confidence that the user controls one or more authenticators that are bound to the user’s digital identity. AAL2 also requires at least two factors, such as a one-time password (OTP) managed by a mobile application on a personal or government mobile phone with an integrated biometric sensor that activates the phone.<sup>[14](#fnref:14){:id="fn:14"}</sup> 
+Authentication Assurance Level 2 (AAL2) provides high confidence that the user controls one or more authenticators that are bound to the user’s digital identity. AAL2 also requires at least two factors, such as a one-time password (OTP) managed by a mobile application on a personal or government mobile phone with an integrated biometric sensor that activates the phone.<sup>[12](#fnref:12){:id="fn:12"}</sup> 
 
-Authentication Assurance Level 3 (AAL3) provides very high confidence that the user controls the authenticators that are bound to the user’s digital identity. Authentication at AAL3 is based on proof of possession of a key through the use of a cryptographic protocol along with either an activation factor or a password. AAL3 requires the use of a hardware-based authenticator that provides phishing resistance.<sup>[15](#fnref:15){:id="fn:15"}</sup>
+Authentication Assurance Level 3 (AAL3) provides very high confidence that the user controls the authenticators that are bound to the user’s digital identity. Authentication at AAL3 is based on proof of possession of a key through the use of a cryptographic protocol along with either an activation factor or a password. AAL3 requires the use of a hardware-based authenticator that provides phishing resistance.<sup>[13](#fnref:13){:id="fn:13"}</sup>
 
 {% include alert-info.html heading="Key Point" content="<p>Two-factor authentication is rapidly becoming the expected default for applications.</p><p>Recurring public and other non-organizational users may want to create an account. Agencies and application owners should always consider allowing and providing two-factor options.</p><p>For employees and other organizational government users, two-factor authentication is a government-wide policy requirement.</p>" %}
 
@@ -467,7 +467,7 @@ Federation Assurance Levels (FALs) indicate the assertion protocol used by an ap
 
 {% include alert-info.html heading="Key Point" content="<p>Federation is an advanced topic with many different acronyms and terms.</p><p>Use outcome-based examples and demonstrations with application owners and business teams to help identify the FALs.</p>" %}
 
-This playbook explains FALs with the outcomes first before explaining the high-level requirements and the risk process.<sup>[17](#fnref:17){:id="fn:17"}</sup> To determine if your application requires an FAL, consider the following questions:
+This playbook explains FALs with the outcomes first before explaining the high-level requirements and the risk process.<sup>[14](#fnref:14){:id="fn:14"}</sup> To determine if your application requires an FAL, consider the following questions:
 
 For *existing* applications and defined users and transactions (Step 1):
 
@@ -535,7 +535,7 @@ Analyze available technology and solutions at your agency, determine if they are
 - User experience (UX) and usability (for non-organizational users (i.e., public, business, partner)); and  
 - Direct and indirect benefits to reuse enterprise-level chosen solutions, including consolidated support desks.
 
-Your agency may need to tailor the initial assurance levels and baseline controls  from the NIST-recommended guidance for the assessed assurance levels based on:<sup>[20](#fnref:20){:id="fn:20"}</sup>
+Your agency may need to tailor the initial assurance levels and baseline controls  from the NIST-recommended guidance for the assessed assurance levels based on:<sup>[15](#fnref:15){:id="fn:15"}</sup>
 
 - Your mission,  
 - Your risk tolerance,  
@@ -548,7 +548,7 @@ All determinations  should be documented and justified.
 
 ## Step 4. Finalize Digital Identity Acceptance Statement
 
-Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels.<sup>[21](#fnref:21){:id="fn:21"}</sup>
+Formalize the results of the assessment process with a Digital Identity Acceptance Statement (DIAS). A DIAS must include a minimum set of information about the risk assessment and the assessed and implemented assurance levels.<sup>[16](#fnref:16){:id="fn:16"}</sup>
 
 An example of a [DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx) is included in [Appendix B. Examples and Templates](#appendix-b-examples-and-templates).
 
@@ -580,7 +580,7 @@ The Risk Management Framework (RMF) forms the basis of your agency application A
 {:align="center"}
 **Figure 5: Example DIRA Process Steps in Risk Management Framework Phase**
 
-Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system,<sup>[22](#fnref:22){:id="fn:22"}</sup> application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.
+Step 1 of the example DIRA process happens in the Categorize phase. When categorizing a system,<sup>[17](#fnref:17){:id="fn:17"}</sup> application owners and security officers identify overall system data types and assign impact levels for each of the confidentiality, integrity, and availability security objectives.
 
 A Privacy Threshold Analysis (PTA) is typically included in this phase. The identification of the DIRA IALs, AALs, and FALs directly correlates to the collection of PII; who has access to what information; whether information is self-asserted or verified; and the risks of excessive identity proofing.
 
@@ -710,7 +710,7 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
     <tr>
       <th scope="row">The application leverages the agency enterprise single sign on (SSO)/enterprise access manager for authentication of employees and contractors.</th>
       <td>Yes</td>
-      <td>Requires proof of identity (IAL3).<sup><a id="fn:23" href="#fnref:23">23</a></sup> Multi-factor authentication to agency application (AAL2) federation between agency applications (FAL2). Additionally, requires affiliation as a federal employee or contractor.</td>
+      <td>Requires proof of identity (IAL3).<sup><a id="fn:18" href="#fnref:18">18</a></sup> Multi-factor authentication to agency application (AAL2) federation between agency applications (FAL2). Additionally, requires affiliation as a federal employee or contractor.</td>
     </tr>
     <tr>
       <th scope="row"><p>Data and other resources available are approved for public release, are intended to be freely shared, and public users aren’t required to create accounts to access this information.</p>
@@ -1228,11 +1228,11 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 9. {:id="fnref:9"} Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Appendix B, Glossary. [↩](#fn:9)  
 10. {:id="fnref:10"} Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual. [↩]({#fn:10)  
 11. {:id="fnref:11"} Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules. [↩]({#fn:11)  
-12. {:id="fnref:14"} Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.2 Authentication Assurance Level 2.[↩](#fn:14)  
-13. {:id="fnref:15"} Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.3 Authentication Assurance Level 3. [↩](#fn:15)    
-14. {:id="fnref:17"} See NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 2.4, Federation and Assertions. [↩](#fn:17)  
-15. {:id="fnref:20"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4, Tailor and Document Assurance Levels. [↩](#fn:20) 
-16. {:id="fnref:21"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4.4, Digital Identity Acceptance Statement. [↩](#fn:21) 
-17. {:id="fnref:22"} Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). [↩](#fn:22) 
-18. {:id="fnref:23"} Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩](#fn:23)
+12. {:id="fnref:12"} Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.2 Authentication Assurance Level 2.[↩](#fn:12)  
+13. {:id="fnref:13"} Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.3 Authentication Assurance Level 3. [↩](#fn:13)    
+14. {:id="fnref:14"} See NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 2.4, Federation and Assertions. [↩](#fn:14)  
+15. {:id="fnref:15"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4, Tailor and Document Assurance Levels. [↩](#fn:15) 
+16. {:id="fnref:16"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4.4, Digital Identity Acceptance Statement. [↩](#fn:16) 
+17. {:id="fnref:17"} Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). [↩](#fn:17) 
+18. {:id="fnref:18"} Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩](#fn:18)
     
