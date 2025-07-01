@@ -1197,7 +1197,7 @@ This appendix includes both normative requirements and informative references fr
 In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
 
 {:align="center"}
-![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.jpg)
+![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.png)
 
 {:align="center"}
 **Figure 12: Digital Identity Guideline Information Locations**
