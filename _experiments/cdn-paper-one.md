@@ -2,7 +2,7 @@
 
 layout: page
 collection: experiments
-title: CDN - Reliability, Assumptions, and Vulnerabilities
+title: CDN Reliability, Assumptions, and Vulnerabilities
 permalink: /experiments/cdns/paper1/
 sidenav: papers
 sticky_sidenav: true

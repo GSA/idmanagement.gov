@@ -9,20 +9,20 @@ sticky_sidenav: true
 subnav:
 - text: IARPA HIATUS
   href: '#iarpa-hiatus'
-- text: CDN Paper 1
-  href: '#cdn-paper-1'
-- text: CDN Paper 2
-  href: '#cdn-paper-2'
-- text: CDN Paper 3
-  href: '#cdn-paper-3' 
-- text: PIAM Best Practice
-  href: '#piam-best-practice'
-- text: PIAM Service Guide 
-  href: '#piam-service-guide'
-- text: PIAM Framework Guide 
-  href: '#piam-framework-guide'
-- text: PIAM Process Guide
-  href: '#piam-process-guide'
+- text: CDN Reliability
+  href: '#cdn-reliability'
+- text: CDN Attack Vectors
+  href: '#cdn-attack-vectors'
+- text: Personal Security
+  href: '#personal-security' 
+- text: PIAM Identity Proofing
+  href: '#piam-dentity-proofing'
+- text: PIAM Service 
+  href: '#piam-service'
+- text: PIAM Framework 
+  href: '#piam-framework'
+- text: PIAM Process
+  href: '#piam-process'
 
 ---
 
@@ -49,51 +49,51 @@ To learn more about the **IARPA HIATUS** program and how it works, click the but
   <button class="usa-button usa-link usa-link--external" style="color:#ffffff;">Explore Further</button>
 </a>
 
-## CDN Paper 1
+## CDN Reliability
 
 Content Delivery Networks (CDNs) are integral to modern web infrastructure, offering improved performance, scalability, and security. However, they are often assumed to be infallible, which can cause people to overlook the potential vulnerabilities that cyber actors can exploit to access individual digital profiles, credentials, and sensitive information. In this paper, we examine these assumptions and associated risks.
 
-[Read CDN Paper 1]({{site.baseurl}}/experiments/cdns/paper1/){:class="usa-button"}
+[Read about CDN Reliability]({{site.baseurl}}/experiments/cdns/paper1/){:class="usa-button"}
 
-## CDN Paper 2
+## CDN Attack Vectors
 
 Content Delivery Networks (CDNs) are critical to ensuring fast and reliable web services. However, their ubiquity and central role in web infrastructure make them attractive targets for attackers. This paper provides a detailed analysis of attack methods, including supply chain attacks, cache poisoning, and DNS spoofing, which can exploit CDNs to spread malicious scripts and compromise digital personas.
 
-[Read CDN Paper 2]({{site.baseurl}}/experiments/cdns/paper2/){:class="usa-button"}
+[Read about CDN Attack Vectors]({{site.baseurl}}/experiments/cdns/paper2/){:class="usa-button"}
 
-## CDN Paper 3
+## Personal Security
 
 Many people inadvertently create a false sense of security, mistaking the feeling of safety for actual security. To truly protect yourself and your loved ones, it’s vital to explore the distinction between feeling secure and being secure. While feeling secure is comforting, genuine security is what ultimately matters. Security can seem overwhelming, but the PDD™ framework simplifies it by providing an organized approach to assess and enhance your security strategy.
 
-[Read CDN Paper 3]({{site.baseurl}}/experiments/cdns/paper3/){:class="usa-button"}
+[Read about Personal Security]({{site.baseurl}}/experiments/cdns/paper3/){:class="usa-button"}
 
 
-## PIAM Best Practice
+## PIAM Identity Proofing
 
 The federal government has identity proofing guidelines established by the National Institute of Standards and Technology, but these guidelines are not uniformly followed—particularly when ensuring linkage between a claimed identity and the person presenting the evidence. The practice of adhering to these guidelines must become standard across the federal landscape when citizens access federal services online. 
 
-[Read PIAM Best Practice]({{site.baseurl}}/experiments/pid/bestpractice/){:class="usa-button"}
+[Read about PIAM Identity Proofing]({{site.baseurl}}/experiments/pid/bestpractice/){:class="usa-button"}
 
 
-## PIAM Service Guide
+## PIAM Service
 
 This practical guide is to assist federal agencies as they start to or further expand the use of Public Identity and Access Management (PIAM) services to provide citizen access to agencies' services. Public identities are digital identities or accounts owned and managed by the agency, including US citizens, federal employees and contractors, service providers that assist US citizens and state and local affiliates. 
 
-[Read the PIAM Service Guide]({{site.baseurl}}/experiments/pid/service/){:class="usa-button"}
+[Read about PIAM Service]({{site.baseurl}}/experiments/pid/service/){:class="usa-button"}
 
 
-## PIAM Framework Guide
+## PIAM Framework
 
 The PIAM framework encompasses the technologies, processes, and policies required to regulate and authorize individual access to resources. By implementing robust identity and access management, agencies can ensure that individuals access only authorized assets. This framework is thus instrumental in safeguarding agency assets from both internal and external threats, enforcing security protocols, and adhering to security guidelines and best practices.
 
-[Read the PIAM Framework Guide]({{site.baseurl}}/experiments/pid/framework/){:class="usa-button"}
+[Read about PIAM Framework]({{site.baseurl}}/experiments/pid/framework/){:class="usa-button"}
 
 
-## PIAM Process Guide
+## PIAM Process
 
 In today's complex business landscape, successful public citizen onboarding is essential for building strong relationships and driving positive public user experience. In this guide, learn how Persona-based access control uses user "personas" (archetypes or roles) is used to define access permissions, streamlining security management and ensuring users only have access to what they need.
 
-[Read the PIAM Process Guide]({{site.baseurl}}/experiments/pid/process/){:class="usa-button"}
+[Read about PIAM Process]({{site.baseurl}}/experiments/pid/process/){:class="usa-button"}
 
 
 ## Coming Soon

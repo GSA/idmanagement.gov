@@ -119,19 +119,19 @@ primary_navigation:
     children:
       - name: Experiments
         url: /experiments/
-      - name: CDN Paper 1
+      - name: CDN Reliability
         url: /experiments/cdns/paper1/
-      - name: CDN Paper 2
+      - name: CDN Attack Vectors
         url: /experiments/cdns/paper2/
-      - name: CDN Paper 3
+      - name: Personal Security
         url: /experiments/cdns/paper3/ 
-      - name: PIAM Best Practice
+      - name: PIAM Identity Proofing
         url: /experiments/pid/bestpractice/
-      - name: PIAM Service Guide
+      - name: PIAM Service
         url: /experiments/pid/service/
-      - name: PIAM Framework Guide
+      - name: PIAM Framework
         url: /experiments/pid/framework/
-      - name: PIAM Process Guide
+      - name: PIAM Process
         url: /experiments/pid/process/
 
 secondary_navigation:
