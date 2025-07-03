@@ -2,7 +2,7 @@
 
 layout: page
 collection: experiments
-title: Public Identity Best Practice Guide
+title: Identity Proofing Best Practice
 permalink: /experiments/pid/bestpractice/
 sidenav: papers
 sticky_sidenav: true
