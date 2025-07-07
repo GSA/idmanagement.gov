@@ -74,11 +74,11 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
-**Last Update**: June 23, 2025
+**Last Update**: July 07, 2025
 
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).**
+The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** Note that the Common Policy Root Certificate is included in this bundle. Before installing it in a trusted root store, verify the authenticity of the certificate by comparing the thumbprint as documented [here](https://www.idmanagement.gov/implement/trust-fcpca/#step-1---obtain-and-verify-the-fcpca-root-certificate)
 
 The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs.
 
@@ -101,10 +101,6 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 - To use this SIA, retrieve the file (.p7c) using the link above and open it.   
 - You will find a dozen or more certificates that are issued by COMMON (Root) to other intermediate or issuing CAs.  
 - The SIA URIs from each of these certificates can then be retrieved to find the next set of signed certificates.
-
-### Acknowledgment
-
-The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://www.icsi.berkeley.edu/icsi/node/5065){:target="_blank"}{:rel="noopener noreferrer"}. 
 
 ## PIV Issuer Information
 {% comment %}
