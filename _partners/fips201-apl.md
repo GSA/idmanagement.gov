@@ -32,18 +32,18 @@ subnav:
 
 This page is for program managers and acquisition professionals looking for approved products for physical access control systems and PIV cards. This page also contains the removed products list.
 
-If you think this page is missing something, [contact us]({{site.baseurl}}/contact-us) to ask a question.
+If you think this page is missing something, [contact us]({{site.baseurl}}/contact-us){:rel="noopener noreferrer"}{:class="usa-link"} to ask a question.
 
 ## How To Purchase
 
-Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/) to view FICAM products, services and purchasing guidance.
+Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/){:rel="noopener noreferrer"}{:class="usa-link"} to view FICAM products, services and purchasing guidance.
 
 ## Approved Products - 13.01 and 13.02 Topology
 
 The Physical Access Control System (PACS) products listed under the “Approved” section below have met the security and functional requirements set by GSA’s FIPS 201 Evaluation Program, and have been approved for use by the Federal Government. The agency deploying the solution is responsible for verifying that the deployment architecture (e.g., on-site, private cloud, public cloud, etc.) meets the agency's security requirements, such as FedRAMP. Note that the Approved PACS Products below are grouped by either 13.01 or 13.02 topologies and indicated as Cloud infrastructure where appropriate:
 
-- [13.01 Topology](#approved-1301-topology-pacs-products) – end-to-end systems that integrate components from three categories: PACS Infrastructure, Validation System, and PIV PACS Reader.
-- [13.02 Topology](#approved-1302-topology-pacs-products) – end-to-end systems that integrate the first two components (PACS Infrastructure and Validation System) into a PACS Validation Infrastructure, which is then integrated with the third component category (PIV PACS Reader).
+- [13.01 Topology](#approved-1301-topology-pacs-products){:class="usa-link"} – end-to-end systems that integrate components from three categories: PACS Infrastructure, Validation System, and PIV PACS Reader.
+- [13.02 Topology](#approved-1302-topology-pacs-products){:class="usa-link"} – end-to-end systems that integrate the first two components (PACS Infrastructure and Validation System) into a PACS Validation Infrastructure, which is then integrated with the third component category (PIV PACS Reader).
 
 ## Approved 13.01 Topology PACS Products
 <!-- Start of Approved 13.01 Topology PACS Products -->
@@ -63,9 +63,9 @@ The Physical Access Control System (PACS) products listed under the “Approved�
       {% assign pacs1301topology = site.data.fips201pacs1301 | sort: "infrastructure" %}
       {% for pacs1301top in pacs1301topology %}
           <tr>
-            <th scope="row" role="rowheader"><a href="{{ pacs1301top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301top.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301top.infrastructure }}</a></th>
             <td  data-sort-value="{{ pacs1301top.infraapl }}">{{ pacs1301top.infraapl }}</td>
-            <th scope="row" role="rowheader"><a href="{{ pacs1301top.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301top.validation}}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301top.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301top.validation}}</a></th>
              <td data-sort-value="{{ pacs1301top.valapl }}">{{ pacs1301top.valapl }}</td>
           </tr>
       {% endfor %}
@@ -92,9 +92,9 @@ The Physical Access Control System (PACS) products listed under the “Approved�
       {% assign pacs1301cloudtopology = site.data.fips201pacs1301cloud | sort: "infrastructure" %}
       {% for pacs1301cloud in pacs1301cloudtopology %}
           <tr>
-            <th scope="row" role="rowheader"><a href="{{ pacs1301cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301cloud.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301cloud.infrastructure }}</a></th>
             <td  data-sort-value="{{ pacs1301cloud.infraapl }}">{{ pacs1301cloud.infraapl }}</td>
-            <th scope="row" role="rowheader"><a href="{{ pacs1301cloud.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301cloud.validation}}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301cloud.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301cloud.validation}}</a></th>
              <td data-sort-value="{{ pacs1301cloud.valapl }}">{{ pacs1301cloud.valapl }}</td>
           </tr>
       {% endfor %}
@@ -122,7 +122,7 @@ The Physical Access Control System (PACS) products listed under the “Approved�
       {% assign pacs1302topology = site.data.fips201pacs1302 | sort: "infraapl" %}
       {% for pacs1302top in pacs1302topology %}
           <tr>
-            <th scope="row" role="rowheader"><a href="{{ pacs1302top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1302top.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1302top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1302top.infrastructure }}</a></th>
             <td data-sort-value="{{ pacs1302top.infraapl }}">{{ pacs1302top.infraapl }}</td>
           </tr>
       {% endfor %}
@@ -147,7 +147,7 @@ The Physical Access Control System (PACS) products listed under the “Approved�
       {% assign pacs1302cloudtopology = site.data.fips201pacs1302cloud | sort: "infraapl" %}
       {% for pacs1302cloud in pacs1302cloudtopology %}
           <tr>
-            <th scope="row" role="rowheader"><a href="{{ pacs1302cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1302cloud.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1302cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1302cloud.infrastructure }}</a></th>
             <td data-sort-value="{{ pacs1302cloud.infraapl }}">{{ pacs1302cloud.infraapl }}</td>
           </tr>
       {% endfor %}
@@ -161,18 +161,18 @@ The Physical Access Control System (PACS) products listed under the “Approved�
 ## PACS Readers
 
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letters lists the approved reader types, associated APL#, and tested PACS solution.
-- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-10129-10133-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-10023-10038-10039-10099-10102-10185-10186-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-96-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [IDFACTORS Readers]({{site.baseurl}}/docs/apl-10112-10113-idfactors.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-10129-10133-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-10023-10038-10039-10099-10102-10185-10186-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-96-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [IDFACTORS Readers]({{site.baseurl}}/docs/apl-10112-10113-idfactors.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 ## PACS Solutions Awaiting Approval
 <!-- Start of PACS Solutions Awaiting Approval -->
@@ -211,7 +211,7 @@ Cycle 2 and 3 updates are moved to the front of the test queue once they are ins
 
 <p id="apl-summary">The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. They are blank PIV cards that are available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL).</p>
  
-If you do not see a card below, it's possible it's on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list).
+If you do not see a card below, it's possible it's on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 Please note:
 
@@ -237,7 +237,7 @@ Please note:
     {% for apl in approvedpiv %}
       <tr>
         <th scope="row" role="rowheader">{{ apl.aplnumber }}</th>
-        <td data-sort-value="{{ apl.productname }}"><a href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
+        <td data-sort-value="{{ apl.productname }}"><a class="usa-link" href="{{ apl.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ apl.productname }}</a></td>
         <td data-sort-value="{{ apl.dateCode }}">{{ apl.validdate }}</td>
       </tr>
     {% endfor %} 
@@ -248,7 +248,7 @@ Please note:
 
 ## Legacy PIV Cards
 
-<p id="legacy-summary">The FIPS 201 Evaluation Program no longer approves the purchase of legacy PIV cards. Any cardstock designated as "legacy" is placed on this legacy list for three (3) years and then placed on the <a href="{{site.baseurl}}/fips201/#removed-product-list">Removed Product List</a> for three (3) years. However, some federal agencies still need to procure the legacy cardstock while upgrading existing systems. Agencies must stop using cardstock on the legacy list by June 30, 2027.</p>
+<p id="legacy-summary">The FIPS 201 Evaluation Program no longer approves the purchase of legacy PIV cards. Any cardstock designated as "legacy" is placed on this legacy list for three (3) years and then placed on the <a class="usa-link" href="{{site.baseurl}}/fips201/#removed-product-list" rel="noopener noreferrer" >Removed Product List</a> for three (3) years. However, some federal agencies still need to procure the legacy cardstock while upgrading existing systems. Agencies must stop using cardstock on the legacy list by June 30, 2027.</p>
 
 Legacy PIV cards include the following:
 <!-- Start of Legacy PIV Card Listing -->
@@ -268,7 +268,7 @@ Legacy PIV cards include the following:
     {% for lpc in legacypiv %}
       <tr>
         <th scope="row" role="rowheader" data-sort-value="{{ lpc.aplnumber }}">{{ lpc.aplnumber }}</th>
-        <td data-sort-value="{{ lpc.productname }}"><a href="{{ lpc.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ lpc.productname }}</a></td>
+        <td data-sort-value="{{ lpc.productname }}"><a class="usa-link" href="{{ lpc.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ lpc.productname }}</a></td>
         <td data-sort-value="{{ lpc.dateCode }}">{{ lpc.validdate }}</td>
       </tr>
     {% endfor %} 
