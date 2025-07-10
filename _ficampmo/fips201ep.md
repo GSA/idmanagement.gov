@@ -31,7 +31,7 @@ The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (s
 
 ## Program Announcements
 
-Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us) if you have any questions.
+Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us){:class="usa-link"} if you have any questions.
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
@@ -76,7 +76,7 @@ We test and evaluate a variety of products and services, such as:
 - Physical access control systems for buildings, including readers and infrastructure.
 - Service providers who manage, install, or provide hosted solutions for issuing Personal Identity Verification (PIV) and CAC credentials.
 
-If you’re looking for testing procedures related to products not listed above, review the [Program Announcements](#program-announcements). Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
+If you’re looking for testing procedures related to products not listed above, review the [Program Announcements](#program-announcements){:class="usa-link"}. Over the years, some product testing has been deprecated to eliminate redundancy, or the product categories have become stable and represent general commercial use products.
 
 
 ## Product Testing
@@ -86,45 +86,45 @@ Product testing is performed by either:
 - Third-party accredited testing labs, OR
 - GSA-managed testing labs
 
-If the product passes testing and review, the vendor is granted a certification letter, and the product is placed on the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products). The APL includes product information, version, date of certification, and special considerations.
+If the product passes testing and review, the vendor is granted a certification letter, and the product is placed on the [Approved Products List (APL)]({{site.baseurl}}/acquisition-professionals/#products){:rel="noopener noreferrer"}{:class="usa-link"}. The APL includes product information, version, date of certification, and special considerations.
 
-Visit the [Vendors page]({{site.baseurl}}/vendors/) for more on testing and certification.
+Visit the [Vendors page]({{site.baseurl}}/vendors/){:rel="noopener noreferrer"}{:class="usa-link"} for more on testing and certification.
 
 
 ## Testing Guidance and Documents
 
-The sections below provide the guidance and application documents associated with the testing and evaluation of the various products and services indicated in the Testing and Evaluation section above. Functional requirements for the products are outlined in each test procedure. Review the testing agreements and the test procedure for your specific product and submit the associated agreement and package to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
+The sections below provide the guidance and application documents associated with the testing and evaluation of the various products and services indicated in the Testing and Evaluation section above. Functional requirements for the products are outlined in each test procedure. Review the testing agreements and the test procedure for your specific product and submit the associated agreement and package to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}.
 
 
 ## Physical Access Control System
 
 GSA tests and validates the interoperability of PIV and CAC credentials with the software and hardware used for physical access control to government facilities.
 
-Review the PACS APL Guidance Documents and PACS Application Package Requirements listed below, choose the application documentation that applies to your solution to be evaluated, and submit it to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
+Review the PACS APL Guidance Documents and PACS Application Package Requirements listed below, choose the application documentation that applies to your solution to be evaluated, and submit it to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}.
 
 ## PACS APL Guidance Documents
 
 The documents in this section provide guidance and information necessary for evaluating a PACS solution to be listed on the FIPS 201 Evaluation Program’s Approved Products List (APL) and the criteria followed for the Removed Products List (RPL). It is recommended that the applicant review all the guidance documents listed in this section before submitting the Approved Product List Application Form.
 
-- [Approved Product List Application Guidance Document, version 1.1.0 (PDF, Nov 30, 2023)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Provides information and lists of the documents required when submitting a new or upgraded solution for testing and instructions for completing the Approved Product List Application form.
-- [Removed Products List (RPL) Process Document, v1.0.2 (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-rplprocess.pdf) – If your product has been removed from the APL, review this document for the procedures.
+- [Approved Product List Application Guidance Document, version 1.1.0 (PDF, Nov 30, 2023)]({{site.baseurl}}/docs/fips201ep-Application-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Provides information and lists of the documents required when submitting a new or upgraded solution for testing and instructions for completing the Approved Product List Application form.
+- [Removed Products List (RPL) Process Document, v1.0.2 (PDF, April 2022)]({{site.baseurl}}/docs/fips201ep-rplprocess.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – If your product has been removed from the APL, review this document for the procedures.
 
 **Functional Requirements and Test Cases Guidance Documents:**
 
-- [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. C (PDF, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - [Secure Messaging and On Card Comparison Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - [FRTC Section 4 Backend Registration and Data Model Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - [FRTC Express Process Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-frtcexpress.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - [Approved PACS Topology Mapping Form (PACS 13.01 13.02) PIN Usage Policy Testing Addendum, version 1.3.3 Rev. F (PDF, August 21, 2018)]({{site.baseurl}}/docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Review this Addendum for help resetting PIN retry counters and determining the number of remaining PIN retries during Discovery Object testing.
-    - [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 26, 2023)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This document will updated continuously as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov) by November 30, 2023.
+- [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. C (PDF, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [Secure Messaging and On Card Comparison Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [FRTC Section 4 Backend Registration and Data Model Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [FRTC Express Process Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-frtcexpress.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [Approved PACS Topology Mapping Form (PACS 13.01 13.02) PIN Usage Policy Testing Addendum, version 1.3.3 Rev. F (PDF, August 21, 2018)]({{site.baseurl}}/docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Review this Addendum for help resetting PIN retry counters and determining the number of remaining PIN retries during Discovery Object testing.
+    - [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 26, 2023)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – This document will updated continuously as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"} by November 30, 2023.
 
 **Topology Guidance Documents:**
 
 - Review the following guidance documentation and select from the appropriate topology that best describes your solution: 
-    - [Approved PACS Topology Mapping Document (PACS 13.01), version 1.3.3 Rev G (PDF, February 1, 2019).]({{site.baseurl}}/docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - [Approved PACS Topology Mapping Document (PACS 13.02), version 1.3.3 Rev G (PDF, February 1, 2018).]({{site.baseurl}}/docs/pacsapp-pacs1302.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-    - [Provisionally-Approved Mobile Handheld Validation Reader Topology Mapping Form (MHVR 14.02), version 1.3.3 Rev B (PDF, November 3, 2017).]({{site.baseurl}}/docs/pacsapp-mobile1402.pdf){:target="_blank"}{:rel="noopener noreferrer"} - **NOTE:** When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
-    - [Approved PACS Wireless Reader Topology (PACS 20.01), FRTC version 1.3.3 Rev G (PDF, November 17, 2020).]({{site.baseurl}}/docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+    - [Approved PACS Topology Mapping Document (PACS 13.01), version 1.3.3 Rev G (PDF, February 1, 2019).]({{site.baseurl}}/docs/pacsapp-pacs1301.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [Approved PACS Topology Mapping Document (PACS 13.02), version 1.3.3 Rev G (PDF, February 1, 2018).]({{site.baseurl}}/docs/pacsapp-pacs1302.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [Provisionally-Approved Mobile Handheld Validation Reader Topology Mapping Form (MHVR 14.02), version 1.3.3 Rev B (PDF, November 3, 2017).]({{site.baseurl}}/docs/pacsapp-mobile1402.pdf){:target="_blank"}{:class="usa-link"}{:rel="noopener noreferrer"} - **NOTE:** When you complete the FRTC Workbook, use the mapping in the workbook, not the mapping inside the Mobile Handheld Topology document.
+    - [Approved PACS Wireless Reader Topology (PACS 20.01), FRTC version 1.3.3 Rev G (PDF, November 17, 2020).]({{site.baseurl}}/docs/pacsapp-wireless2001.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 {:id="pacs-application-submission"}
 ## PACS Application Package Submission Requirements for New Systems or Updates to Previously Approved Systems
@@ -133,19 +133,19 @@ All applicants, please complete the following steps:
 
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Review, complete, and sign the <a href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
+    <p class="margin-top-04">Review, complete, and sign the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
+    <p class="margin-top-04">Complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/fips201ep-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0</a> (MS Word, November 30, 2023) (Mandatory) – Required for each solution submission, new or upgrade.</p>
+    <p class="margin-top-04">Complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/fips201ep-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program – Evaluation Agreement, version 2.1.0</a> (MS Word, November 30, 2023) (Mandatory) – Required for each solution submission, new or upgrade.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
+    <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a class="usa-link" href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete the <a href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev B</a> (MS Excel, October 2021) (Mandatory) for your topology.</p>
+    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev B</a> (MS Excel, October 2021) (Mandatory) for your topology.</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">
@@ -162,7 +162,7 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">
     Include the following document when adding a new series or adding a new product to a prior listed series, signed by a C- or VP-level individual:
      <ul class="usa-list">
-      <li><a href="{{site.baseurl}}/docs/pacsapp-seriesform.docx" target="_blank" rel="noopener noreferrer">Product Series and Exemplar Self-Attestation Form v1.0.0</a> (Mandatory, if applicable) (MS Word, November 30, 2023).</li>
+      <li><a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-seriesform.docx" target="_blank" rel="noopener noreferrer">Product Series and Exemplar Self-Attestation Form v1.0.0</a> (Mandatory, if applicable) (MS Word, November 30, 2023).</li>
      </ul>
     </p>
   </li>
@@ -170,15 +170,15 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">
     Include the following document when licensing an existing product that is already on the GSA PACS Reader APL, signed by a C- or VP-level individual:
       <ul class="usa-list">
-        <li><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</li>
+        <li><a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</li>
       </ul>
     </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04"><a href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</p>
+    <p class="margin-top-04"><a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-licensingform.docx" target="_blank" rel="noopener noreferrer">Product Licensing Self-Attestation Form v1.0.0</a> (MS Word, November 30, 2023) (Mandatory, if applicable).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete and sign the <a href="{{site.baseurl}}/docs/pacsapp-supplyattestationform.docx" target="_blank" rel="noopener noreferrer">Supply Chain Self-Attestation Form, v1.4.2</a> (MS Word, March 3, 2020) (Mandatory).</p>
+    <p class="margin-top-04">Complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-supplyattestationform.docx" target="_blank" rel="noopener noreferrer">Supply Chain Self-Attestation Form, v1.4.2</a> (MS Word, March 3, 2020) (Mandatory).</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">Include all applicable VPAT statements, <a class="usa-link usa-link--external" href="https://www.section508.gov/sell/vpat/" target="_blank" rel="noopener noreferrer">https://www.section508.gov/sell/vpat/</a> (Mandatory, if applicable).</p>
@@ -190,13 +190,13 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">Include all applicable FIPS 140-2/140-3 listing documents (Mandatory, if applicable).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the <a href="{{site.baseurl}}/docs/vendor-self-attestation-form.docx" target="_blank" rel="noopener noreferrer">Vendor Self-Attestation Form for ISO/IEC Test Reports</a>, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.</p>
+    <p class="margin-top-04">The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/vendor-self-attestation-form.docx" target="_blank" rel="noopener noreferrer">Vendor Self-Attestation Form for ISO/IEC Test Reports</a>, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Respond to the <a href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.2.0</a> (Mandatory).</p>
+    <p class="margin-top-04">Respond to the <a class="usa-link" href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.2.0</a> (Mandatory).</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Submit all completed forms to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+    <p class="margin-top-04">Submit all completed forms to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
   </li>
 </ol>
 
@@ -204,7 +204,7 @@ All applicants, please complete the following steps:
 ## Personal Identity Verification Credentials
 
 <ol class="usa-process-list">
-  <li class="usa-process-list__item"><p class="margin-bottom-2 margin-top-05"><a href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
+  <li class="usa-process-list__item"><p class="margin-bottom-2 margin-top-05"><a class="usa-link" href="{{site.baseurl}}/docs/fips201ep-pcitestform.pdf" target="_blank">Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)</a> – If you are an agency or organization submitting for Annual PCI Review, submit this application form signed along with all the testing artifacts listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>; two testing options are available:
       <ul class="usa-list">
         <li>
           <p><strong>In-person Lab Testing</strong> - testing organizations can provide available dates and times to visit the GSA FIPS 201 lab when sending in their signed application form.</p>
@@ -213,7 +213,7 @@ All applicants, please complete the following steps:
       <p><strong>OR</strong></p>
       <ul class="usa-list">
         <li>
-          <p><strong>Remote Testing</strong> - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+          <p><strong>Remote Testing</strong> - testing organizations can leverage the tools listed below and email the outputs generated and card images to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
         </li>
       </ul>
     </p>
@@ -275,7 +275,7 @@ All applicants, please complete the following steps:
   </li>
 </ol>
 
-If you do not receive a confirmation email acknowledging the receipt of your Test Results Package within 24 hours of submission, please follow up promptly with the FIPS 201 Evaluation Program (EP) team at [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov), ensuring that the follow-up email does not include any attachments. Timely follow-up helps confirm the successful receipt of your Test Results Package and prevents potential delays in processing your annual evaluation.
+If you do not receive a confirmation email acknowledging the receipt of your Test Results Package within 24 hours of submission, please follow up promptly with the FIPS 201 Evaluation Program (EP) team at [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}, ensuring that the follow-up email does not include any attachments. Timely follow-up helps confirm the successful receipt of your Test Results Package and prevents potential delays in processing your annual evaluation.
 
 
 ## Derived PIV Credentials
@@ -290,7 +290,7 @@ Agencies that wish to issue D-PIV credentials should follow these steps:
     <p><h4 class="display-inline-block"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg></h4>&nbsp;&nbsp;&nbsp;Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs).</p>
   </li>
   <li class="usa-process-list__item">
-    <p><h4 class="display-inline-block"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#send"></use></svg></h4>&nbsp;&nbsp;&nbsp;Submit sample D-PIV public certificates for testing or provide results from the <a href="https://github.com/GSA/cpct-tool/releases/" target="_blank" rel="noopener noreferrer">Certificate Profile Conformance Tool (CPCT)</a> to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+    <p><h4 class="display-inline-block"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#send"></use></svg></h4>&nbsp;&nbsp;&nbsp;Submit sample D-PIV public certificates for testing or provide results from the <a class="usa-link" href="https://github.com/GSA/cpct-tool/releases/" target="_blank" rel="noopener noreferrer">Certificate Profile Conformance Tool (CPCT)</a> to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
   </li>
 </ol>
 
@@ -307,25 +307,25 @@ Upon successful completion of Derived PIV Card Issuer (DPCI) testing, the agency
   <h4 class="usa-process-list__heading">
   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#local_library"></use></svg>&nbsp;&nbsp;Read and follow Approval Procedures</h4>
     <p class="margin-top-05">
-      <a href="{{site.baseurl}}/docs/piv-card-body-approval-procedures.pdf" rel="noopener noreferrer" target="_blank">Personal Identity Verification (PIV) Card Body Approval Procedures v11.1</a> (PDF, May 2025) indicates the approval procedures, outlines the evaluation criteria, approval mechanisms, and validation test reports to be employed and provided by the Evaluation Laboratory based on their evaluation of a vendor/ supplier’s PIV Card body (product), to be provided to the FIPS 201 EP for evaluation to be placed on the Approved Products List (APL). A web version may be found here: <a href="{{site.baseurl}}/pivcardbody/" rel="noopener noreferrer" target="_blank">PIV Card Body Approval Procedures</a>.
+      <a href="{{site.baseurl}}/docs/piv-card-body-approval-procedures.pdf" rel="noopener noreferrer" target="_blank">Personal Identity Verification (PIV) Card Body Approval Procedures v11.1</a> (PDF, May 2025) indicates the approval procedures, outlines the evaluation criteria, approval mechanisms, and validation test reports to be employed and provided by the Evaluation Laboratory based on their evaluation of a vendor/ supplier’s PIV Card body (product), to be provided to the FIPS 201 EP for evaluation to be placed on the Approved Products List (APL). A web version may be found here: <a class="usa-link" href="{{site.baseurl}}/pivcardbody/" rel="noopener noreferrer" target="_blank">PIV Card Body Approval Procedures</a>.
     </p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete Application Form</h4>
     <p>
-       Complete and provide the <a href="{{site.baseurl}}/docs/fips201-piv-card-apl-evaluation-application-and-services-agreement.docx" rel="noopener noreferrer" target="_blank">PIV Card APL EP Application and Service Agreement v1.0</a> (Word, May 2025).
+       Complete and provide the <a class="usa-link" href="{{site.baseurl}}/docs/fips201-piv-card-apl-evaluation-application-and-services-agreement.docx" rel="noopener noreferrer" target="_blank">PIV Card APL EP Application and Service Agreement v1.0</a> (Word, May 2025).
     </p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete Attestations Form</h4>
     <p>
-      Complete and provide the <a href="{{site.baseurl}}/docs/fips201-evaluation-program-attestation-form-for-piv-card-body-approval.docx" rel="noopener noreferrer" target="_blank">FIPS 201 Evaluation Program Attestations Form for PIV Card Body Approval v1.1</a> (Word, May 2025).
+      Complete and provide the <a class="usa-link" href="{{site.baseurl}}/docs/fips201-evaluation-program-attestation-form-for-piv-card-body-approval.docx" rel="noopener noreferrer" target="_blank">FIPS 201 Evaluation Program Attestations Form for PIV Card Body Approval v1.1</a> (Word, May 2025).
     </p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete and sign Trade Agreement Form</h4>
     <p>
-       Complete and provide a signed <a href="{{site.baseurl}}/docs/fips201-evaluation-program-attestations-to-federal-acquisition-regulations-related-to-the-trade-agreement-act.pdf" rel="noopener noreferrer" target="_blank">FIPS 201 Evaluation Program Attestations to Federal Acquisition Regulations related to the Trade Agreement Act v3.3</a>.
+       Complete and provide a signed <a class="usa-link" href="{{site.baseurl}}/docs/fips201-evaluation-program-attestations-to-federal-acquisition-regulations-related-to-the-trade-agreement-act.pdf" rel="noopener noreferrer" target="_blank">FIPS 201 Evaluation Program Attestations to Federal Acquisition Regulations related to the Trade Agreement Act v3.3</a>.
     </p>
   </li>
   <li class="usa-process-list__item">
@@ -342,7 +342,7 @@ Upon successful completion of Derived PIV Card Issuer (DPCI) testing, the agency
       </address>
     </p>
     <p>
-      If you have any questions or need clarification regarding the PIV Card Body APL process, please contact the <i>FIPS 201 Evaluation Program</i> at: <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
+      If you have any questions or need clarification regarding the PIV Card Body APL process, please contact the <i>FIPS 201 Evaluation Program</i> at: <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
     </p>
   </li>
 </ol>
@@ -352,9 +352,9 @@ Upon successful completion of Derived PIV Card Issuer (DPCI) testing, the agency
 
 GSA can loan you test cards to help you pre-test your physical access control system products.
 
-- [PACS Test Card Loaner Process (PDF, November 2019).]({{site.baseurl}}/docs/pacstest-process.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [PACS Test Card Loaner Set Request Form (MS Word, October 2019)]({{site.baseurl}}/docs/pacstest-loanerrequestform.docx){:target="_blank"}{:rel="noopener noreferrer"} – Sign and submit this form to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
-- [PACS Test Card User Guide (PDF, January 2019).]({{site.baseurl}}/docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [PACS Test Card Loaner Process (PDF, November 2019).]({{site.baseurl}}/docs/pacstest-process.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [PACS Test Card Loaner Set Request Form (MS Word, October 2019)]({{site.baseurl}}/docs/pacstest-loanerrequestform.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Sign and submit this form to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}.
+- [PACS Test Card User Guide (PDF, January 2019).]({{site.baseurl}}/docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 ---
 
