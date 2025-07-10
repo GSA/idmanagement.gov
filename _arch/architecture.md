@@ -176,7 +176,7 @@ The Goals and Objectives identify the aims and outcomes of a federal agency ente
 
 The visual below presents the three goals, each with its own objectives.
 
-<a href="{{site.baseurl}}/assets/arch/all_goals.png" target="_blank">
+<a class="usa-link" href="{{site.baseurl}}/assets/arch/all_goals.png" target="_blank">
   <img src="{{site.baseurl}}/assets/arch/all_goals.png" alt="Three boxes that define the goals and their corresponding objectives.">
 </a>
 
@@ -478,7 +478,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         <li><strong>IAL2</strong> - first and last name, email address, and address of record, supported by appropriate identity documentation and verified as strong.</li>
         <li><strong>IAL3</strong> - first and last name, email address, address of record, and fingerprints, supported by appropriate identity documentation and verified as superior.</li>
         </ul>
-        <p>For more information about identity proofing and IALs, see <a href="https://pages.nist.gov/800-63-3/sp800-63a.html#22-identity-assurance-levels" target="_blank">NIST SP 800-63A</a> (Section 2.2).</p>
+        <p>For more information about identity proofing and IALs, see <a class="usa-link" href="https://pages.nist.gov/800-63-3/sp800-63a.html#22-identity-assurance-levels" target="_blank">NIST SP 800-63A</a> (Section 2.2).</p>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
@@ -626,9 +626,9 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintain_revoke.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
         <p>Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:</p>
         <ul>
-        <li><strong><a href="#reset-a-credential">Reset a credential</a></strong> - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.</li>
-        <li><strong><a href="#renew-a-credential">Renew a credential</a></strong> - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date; otherwise, the employee or contractor must go through the issuance process again.</li>
-        <li><strong><a href="#revoke-a-credential">Revoke a credential</a></strong> - An employee or contractor is no longer eligible for their credential (like separating from the issuing agency). The sponsor, supervisor, or administrator requests a revocation of all associated credentials and enterprise accounts.</li>
+        <li><strong><a class="usa-link" href="#reset-a-credential">Reset a credential</a></strong> - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.</li>
+        <li><strong><a class="usa-link" href="#renew-a-credential">Renew a credential</a></strong> - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date; otherwise, the employee or contractor must go through the issuance process again.</li>
+        <li><strong><a class="usa-link" href="#revoke-a-credential">Revoke a credential</a></strong> - An employee or contractor is no longer eligible for their credential (like separating from the issuing agency). The sponsor, supervisor, or administrator requests a revocation of all associated credentials and enterprise accounts.</li>
         </ul>
         <p>You should periodically review your employee or contractors’ eligibility for credentials to identify potential orphaned data.</p>
         <hr />
@@ -721,7 +721,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         </tr>
         <tr>
             <td style="width:250px;border:0px;"><strong>2. Authenticate the employee or contractor</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-2.png" width="250" alt="A diagram showing an employee or contractor presenting either an IAL2 or IAL3 authenticator to an access control system." /></td>
-            <td style="border:0px;">The employee or contractor presents an authenticator to the ACS that meets the protected resource’s minimum assurance requirements:<ul><li><strong>AAL2</strong> (two-factor) - Something you know + something you have, like a one-time passcode.</li><li><strong>AAL3</strong> (two-factor + hardware) - Something you know + something you have, like a one-time passcode generated by a hardware-based authenticator; or a PIV credential. For more information about AAL values, see <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5" target="_blank" rel="noopener noreferrer">NIST SP 800-63B Section 5: Authenticator and Verifier Requirements</a>.</li></ul></td>
+            <td style="border:0px;">The employee or contractor presents an authenticator to the ACS that meets the protected resource’s minimum assurance requirements:<ul><li><strong>AAL2</strong> (two-factor) - Something you know + something you have, like a one-time passcode.</li><li><strong>AAL3</strong> (two-factor + hardware) - Something you know + something you have, like a one-time passcode generated by a hardware-based authenticator; or a PIV credential. For more information about AAL values, see <a class="usa-link" href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5" target="_blank" rel="noopener noreferrer">NIST SP 800-63B Section 5: Authenticator and Verifier Requirements</a>.</li></ul></td>
         </tr>
         <tr>
             <td style="width:250px;border:0px;"><strong>3. Determine the access entitlements and access requirements</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-3.png" width="250" alt="A diagram showing an access control system determining the access entitlements and access requirements." /></td>
