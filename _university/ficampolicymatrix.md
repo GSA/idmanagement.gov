@@ -152,11 +152,6 @@ Laws, executive policies, regulations, and government standards drive multiple f
 </table>
 
 
-<!-- * [Policy Overview](#policy-overview)
-* [Laws and Directives](#laws-and-directives)
-* [Federal Policies](#federal-policies)
-* [Federal Technical Guidance](#federal-technical-guidance) -->
-
 ## Policy Overview
 
 The FICAM policy map presents a visual overview of the laws, policies and standards relevant to FICAM. The documents are organized according to the government body that produced it, and the relationships between the documents are illustrated by arrows connecting them.
@@ -170,7 +165,6 @@ Click the button below to navigate to the FICAM Policy Matrix Map.
   </a>
 </p>
 
-<!-- [![Visual overview of the laws, policies and standards relevant to FICAM, organized according to the government body that produced it. The relationships between the documents are illustrated by arrows connecting them.]({{site.baseurl}}/assets/img/icam-policy-landscape-map-nokey.png)]({{site.baseurl}}/university/policymap/){:target="_blank"}{:rel="noopener noreferrer"} -->
 
 ## Laws and Directives
 
