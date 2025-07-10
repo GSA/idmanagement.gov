@@ -146,7 +146,7 @@ FICAM is the federal government’s enterprise approach to design, plan, and exe
 
 The FICAM Architecture is a framework for an agency to use in the ICAM program and solution roadmap planning. The FICAM Architecture focuses on enterprise identity processes, practices, policies, and information security disciplines. 
 
->  A federal enterprise identity is the unique representation of an employee, contractor, or enterprise user, which could be a mission, business partner, or even a device or technology managed by a Federal agency to achieve its mission and business goals [(OMB Memorandum 19-17)](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+>  A federal enterprise identity is the unique representation of an employee, contractor, or enterprise user, which could be a mission, business partner, or even a device or technology managed by a Federal agency to achieve its mission and business goals [(OMB Memorandum 19-17)](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
 
 ## Who Is the FICAM Architecture for?
 The FICAM Architecture is for agency personnel. An enterprise architecture is primarily used by:
@@ -156,10 +156,10 @@ The FICAM Architecture is for agency personnel. An enterprise architecture is pr
 
 There are four main government-wide initiatives to help agencies implement and manage an Agency ICAM program and technology.
 
-  1. **Planning and Configuration Guidance** The FICAM Architecture and accompanying [playbooks]({{site.baseurl}}/playbooks/) provide an overall guide for meeting federal ICAM requirements in an efficient and secure way. It focuses on enterprise identity processes, practices, policies, and information security disciplines. Playbooks offer stakeholders overarching strategies and tactical approaches for implementing technical FICAM topics.
-  2. [Interagency Forum and Subcommittee]({{site.baseurl}}/ficam/#icam-governance-bodies): The Federal Chief Information Security Officer (CISO) Council is a primary resource for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. The ICAM Subcommittee aligns identity management activities of the federal government and supports collaborative government-wide efforts.
-  3. [Approved Products Lists (APL)]({{site.baseurl}}/fips201/): The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program not only tests commercial products for use in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures but also publish APLs. Federal acquisition professionals rely on these APLs to purchase commercial products that fully comply with federal ICAM mandates.
-  4. [Federal Public Key Infrastructure (PKI)]({{site.baseurl}}/university/fpki/): The Federal PKI is a network of certification authorities (CAs) that issue PIV credentials and person identity certificates; PIV-Interoperable credentials and person identity certificates; and other person identity certificates. CA-issued digital certificates, which employ cryptography, close security gaps in user identification and authentication, encryption of sensitive data, and data integrity.
+  1. **Planning and Configuration Guidance** The FICAM Architecture and accompanying [playbooks]({{site.baseurl}}/playbooks/){:rel="noopener noreferrer"}{:class="usa-link"} provide an overall guide for meeting federal ICAM requirements in an efficient and secure way. It focuses on enterprise identity processes, practices, policies, and information security disciplines. Playbooks offer stakeholders overarching strategies and tactical approaches for implementing technical FICAM topics.
+  2. [Interagency Forum and Subcommittee]({{site.baseurl}}/ficam/#icam-governance-bodies){:rel="noopener noreferrer"}{:class="usa-link"}: The Federal Chief Information Security Officer (CISO) Council is a primary resource for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. The ICAM Subcommittee aligns identity management activities of the federal government and supports collaborative government-wide efforts.
+  3. [Approved Products Lists (APL)]({{site.baseurl}}/fips201/){:rel="noopener noreferrer"}{:class="usa-link"}: The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program not only tests commercial products for use in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures but also publish APLs. Federal acquisition professionals rely on these APLs to purchase commercial products that fully comply with federal ICAM mandates.
+  4. [Federal Public Key Infrastructure (PKI)]({{site.baseurl}}/university/fpki/){:rel="noopener noreferrer"}{:class="usa-link"}: The Federal PKI is a network of certification authorities (CAs) that issue PIV credentials and person identity certificates; PIV-Interoperable credentials and person identity certificates; and other person identity certificates. CA-issued digital certificates, which employ cryptography, close security gaps in user identification and authentication, encryption of sensitive data, and data integrity.
 
 ## What Is the History of the FICAM Architecture?
 The FICAM Architecture was created in 2009 to provide a common ICAM segment architecture for federal agencies. The FICAM Architecture was the primary foundation of what later became the _FICAM Roadmap and Implementation Plan_, enhanced with complementary implementation sections.  
@@ -302,11 +302,11 @@ Examples of access requirements include:
 - “Grant access to any agency employee or contractor with an authenticated PIV card.”
 - “Grant access to anyone who is a federal employee, GS-12 or higher, cleared Top Secret, trained in first aid, and certified as a project manager.”
 
-In providing access services, it can be challenging to conduct an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
+In providing access services, it can be challenging to conduct an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 ## Authentication
 
-Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}
+Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 Authentication is generally a two-step process:
 
@@ -401,7 +401,7 @@ These use cases are designed for ICAM Enterprise Architects and business owners 
 
 Each use case includes a high-level summary of the scenario, individuals and systems involved in the use case, illustrations that show the required steps to achieve the end goal, and an icon that indicates the practice area and the service with which the use case most closely aligns.
 
-For details about ICAM services, see the [Services Framework](#services-framework-and-service-descriptions).
+For details about ICAM services, see the [Services Framework](#services-framework-and-service-descriptions){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies.
 
@@ -870,5 +870,5 @@ Agency endpoints may include:
 
 ## Policies and Standards
 
-See the [ICAM Policy Matrix]({{site.baseurl}}/university/policymatrix/) for the latest set of ICAM policies and standards.
+See the [ICAM Policy Matrix]({{site.baseurl}}/university/policymatrix/){:rel="noopener noreferrer"}{:class="usa-link"} for the latest set of ICAM policies and standards.
 
