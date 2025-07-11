@@ -28,7 +28,7 @@ The following guide walks you through configuring Outlook to leverage the digita
 
 {% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryption (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME capabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
 
-The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find additional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references).
+The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find additional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references){:class="usa-link"} .
 
 1. Insert your PIV card in your computer's smart card reader.
 2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings...** and select **Email Security**.
@@ -86,9 +86,9 @@ The Global Address List (GAL) is a shared, enterprise-wide contact list in Micro
 
 ### Manually Import a User's Encryption Certificate
 
-When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list), you may need to load it manually.
+When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list){:class="usa-link"} , you may need to load it manually.
 
-1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates) certificate (you may need to ask the intended recipient to export and share their certificate with you)
+1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:class="usa-link"}  certificate (you may need to ask the intended recipient to export and share their certificate with you)
 2. Click the **Home** tab.
 3. Click the **Address Book**.
 4. Select **File** > **New Entry**.
@@ -96,7 +96,7 @@ When sending an encrypted email, the message is encrypted using the public key i
 6. Populate the recipient's contact information, minimally including name and email address.
 7. Click the **Certificates** icon.
 8. Click **Import** and browse to the intended recipient's encryption certificate.
-9. Click **Save & Close** and then follow the steps to [send an encrypted email](#send-an-encrypted-email).
+9. Click **Save & Close** and then follow the steps to [send an encrypted email](#send-an-encrypted-email){:class="usa-link"} .
 
  **Note:** The following screenshot shows a certificate loaded into a contact entry.
 

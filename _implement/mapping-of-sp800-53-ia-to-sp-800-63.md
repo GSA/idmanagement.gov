@@ -104,7 +104,7 @@ private sector partners accessing collaboration spaces. However, it also
 applies to federal systems accessed by employees and contractors.
 
 A supplement to 800-63
-([<u>https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63Bsup1.pdf</u>](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63Bsup1.pdf))
+([<u>https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63Bsup1.pdf</u>](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63Bsup1.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"})
 was released as this mapping document was being finalized. The
 requirements of the supplement were not included in this document due to
 time constraints. Those updates may be reflected in a future version of
