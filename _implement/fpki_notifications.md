@@ -115,7 +115,7 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV), PIV-Interoperable (PIV-I), or Derived PIV (dPIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust.
 
 {% comment %}
-{% include alert-info.html content="This list was last updated on <b>August  2, 2023</b>. Please email [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"} to suggest an update or correction." %} 
+{% include alert-info.html content="This list was last updated on <b>August  2, 2023</b>. Please email [fpki@gsa.gov](mailto:fpki@gsa.gov){:class=\"usa-link\"} to suggest an update or correction." %} 
 
 <br>
 
