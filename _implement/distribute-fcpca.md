@@ -767,7 +767,7 @@ Next, determine if you need to distribute the CA certificates issued by the FCPC
 
 ## Step 5 - Distribute intermediate certificates
 
-{% include alert-success.html content="**Depending on agency configurations, you might need to distribute these certificates to systems and applications**.  This page will help you understand [when to distribute the intermediate CA certificates](#do-i-need-to-distribute-the-intermediate-ca-certificates){:class="usa-link"}, [which certificates to distribute](#which-certificates-do-i-need-to-distribute){:class="usa-link"}, and [recommended solutions](#how-do-i-distribute-the-intermediate-ca-certificates){:class="usa-link"}.  This page also lists [intermediate CA certificate details](#certificates-issued-by-the-federal-common-policy-ca){:class="usa-link"}, including download locations." %}
+{% include alert-success.html content="**Depending on agency configurations, you might need to distribute these certificates to systems and applications**.  This page will help you understand [when to distribute the intermediate CA certificates](#do-i-need-to-distribute-the-intermediate-ca-certificates){:class=\"usa-link\"}, [which certificates to distribute](#which-certificates-do-i-need-to-distribute){:class=\"usa-link\"}, and [recommended solutions](#how-do-i-distribute-the-intermediate-ca-certificates){:class=\"usa-link\"}.  This page also lists [intermediate CA certificate details](#certificates-issued-by-the-federal-common-policy-ca){:class=\"usa-link\"}, including download locations." %}
 
 ## Do I Need to Distribute the Intermediate CA Certificates?
 
@@ -874,7 +874,7 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5){:class="usa-link"}
 - [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca){:class="usa-link"}
 
-{% include alert-warning.html content="**Important!** To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions){:class="usa-link"} page." %}
+{% include alert-warning.html content="**Important!** To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions){:class=\"usa-link\"} page." %}
 
 #### Issued to: Federal Bridge CA G4
 

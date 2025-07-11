@@ -86,7 +86,7 @@ The FPKI Community can use CITE to evaluate PKI or application changes in a test
 
 Testing and support requests (to include certificate issuance and management requests) shall be scheduled and coordinated in advance. This will allow CITE Participants to appropriately plan and schedule any technical support needed for successful testing.
 
-{% include alert-info.html content="Testing requests can be submitted to the FPKI Technical Working Group at [fpki-ttips@listserv.gsa.gov](mailto:fpki-ttips@listserv.gsa.gov){:class="usa-link"}. All testing requests should be submitted ten business days in advance." %} <br>
+{% include alert-info.html content="Testing requests can be submitted to the FPKI Technical Working Group at [fpki-ttips@listserv.gsa.gov](mailto:fpki-ttips@listserv.gsa.gov){:class=\"usa-link\"}. All testing requests should be submitted ten business days in advance." %} <br>
 
 For unscheduled testing, the CITE and FPKI Partner repositories are internet accessible and available for testing (including vendors and other Relying Parties). Unscheduled testing may be conducted at any time if the below is true.
 1. All parties involved agree to provide the necessary support; or
