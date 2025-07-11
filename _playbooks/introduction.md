@@ -29,7 +29,7 @@ subnav:
                 src="{{site.baseurl}}{{playbook.header}}"
                 alt="{{playbook.title}}"
                 tabindex="-1" aria-label="{{playbook.title}}" />
-            </div>
+        </div>
         </div>
         <hr class="gsa-hr">
         <div class="usa-card__body">
