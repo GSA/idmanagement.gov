@@ -7,6 +7,22 @@
 @forward "uswds-theme";
 @forward "uswds-theme-custom-styles";
 
+// Removed Bootstrap, to defaut to USWDS, 
+  // This carried over only one style used from Bootstrap's Reboot
+  // This sets the diplay of the Cards on the homepage and Playbook Card listing
+  // cjb - 07/11/2025
+.gsa-card-heading {
+	font-size: calc(1.3rem + .6vw);
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit;
+}
+// This is for the associated HR tag
+.gsa-hr {
+  color: #1b1b1b;
+  height: 1px;
+}
+
 // USWD Typography adjustments to fix width of text.
   // This also adjusts length of bullet points
   // Improves image sizes and readability

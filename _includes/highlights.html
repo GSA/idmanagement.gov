@@ -3,15 +3,6 @@ Use this section to highlight key elements of your site. Some sites will only ha
 eight.
 {% endcomment %}
 
-<style>
-.gsa-hero-header {
-	font-size: calc(1.3rem + .6vw);
-	font-weight: 500;
-	line-height: 1.2;
-	color: inherit;
-}
-</style>
-
 <!-- Start of Vendors and Partner Cards -->	
 <section class="ficam-page-container bg-test" style="padding-top:25px;background-color: #f0f0f0;">
 	<div class="grid-container">
@@ -24,7 +15,7 @@ eight.
 					<li class="usa-card tablet:grid-col-4">
 						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/vendors/')" onkeydown="navigateTo('{{site.baseurl}}/vendors/')" aria-label="Vendors">
 							<div class="usa-card__header">
-								<h3 class="gsa-hero-header">Vendors</h3>
+								<h3 class="gsa-card-heading">Vendors</h3>
 							</div>
 							<!-- Card image area -->
 							<hr>
@@ -41,7 +32,7 @@ eight.
 					<li class="usa-card tablet:grid-col-4">
 						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/acquisition-professionals/')" onkeydown="navigateTo('{{site.baseurl}}/acquisition-professionals/')" aria-label="Acquisition professionals">
 							<div class="usa-card__header">
-								<h3 class="site-preview-heading">Acquisition professionals</h3>
+								<h3 class="gsa-card-heading">Acquisition professionals</h3>
 								
 							</div>
 							<!-- Card image area -->
@@ -59,7 +50,7 @@ eight.
 					<li class="usa-card tablet:grid-col-4">
 						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/program-managers/')" onkeydown="navigateTo('{{site.baseurl}}/program-managers/')" aria-label="Program managers">
 							<div class="usa-card__header">
-								<h3 class="site-preview-heading">Program managers</h3>
+								<h3 class="gsa-card-heading">Program managers</h3>
 							</div>
 							<!-- Card image area -->
 							<hr>
@@ -91,7 +82,7 @@ eight.
 			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left">
 				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0"  tabindex="0" onclick="navigateTo('{{site.baseurl}}/ficam/')" onkeydown="navigateTo('{{site.baseurl}}/ficam/')" aria-label="FICAM program management office">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">FICAM program management office</h3>
+						<h3 class="gsa-card-heading">FICAM program management office</h3>
 					</div>
 					<div class="usa-card__media">
 						<div class="usa-card__img">
@@ -103,11 +94,11 @@ eight.
 							</div>
 					</div>
 					<div class="usa-card__body">
-					<hr>
+					<hr class="gsa-hr">
 						<p>
 							The Federal, Identity, Credential, and Access Management program management office is a collaboration with the Federal CIO Council to mature agency ICAM practices and processes through governmentwide guidance like the FICAM architecture and playbooks on idmanagement.gov.
 						</p>
-					<hr>
+					<hr class="gsa-hr">
 					</div>
 					
 					<div class="usa-card__footer">
@@ -123,7 +114,7 @@ eight.
 			<li class="usa-card tablet:grid-col-4"> <!-- FPKI --->
 				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fpki/')" onkeydown="navigateTo('{{site.baseurl}}/fpki/')" aria-label="Federal public key infrastructure guide">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">Federal public key infrastructure governance</h3>
+						<h3 class="gsa-card-heading">Federal public key infrastructure governance</h3>
 					</div>
 					<div class="usa-card__media">
 						<div class="usa-card__img">
@@ -148,7 +139,7 @@ eight.
 			<li class="usa-card tablet:grid-col-4"> <!-- FIPS201 EP -->
 				<div class="usa-card__container gsa-card-shadow" tabindex="0" aria-label="FIPS 201 evaluation program">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">FIPS 201 evaluation program</h3>
+						<h3 class="gsa-card-heading">FIPS 201 evaluation program</h3>
 					</div>
 					<div class="usa-card__media">
 						<div class="usa-card__img">
@@ -186,7 +177,7 @@ eight.
 			<li class="usa-card tablet:grid-col-4"> <!-- GSA PKI SSP -->
 				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/gsapkissp/')" onkeydown="navigateTo('{{site.baseurl}}/gsapkissp/')" aria-label="GSA PKI shared service provider program">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">GSA PKI shared service provider program</h3>
+						<h3 class="gsa-card-heading">GSA PKI shared service provider program</h3>
 					</div>
 					<div class="usa-card__media">
 					<div class="usa-card__img">
@@ -221,7 +212,7 @@ eight.
 			<li class="usa-card tablet:grid-col-4">
 				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
 					<div class="usa-card__header">
-						<h3 class="site-preview-heading">{{playbook.title}}</h3>
+						<h3 class="gsa-card-heading">{{playbook.title}}</h3>
 					</div>
 					<div class="usa-card__media">
 					<div class="usa-card__img">
