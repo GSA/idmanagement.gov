@@ -60,7 +60,7 @@ When Microsoft removes COMMON, government users of Windows will receive errors. 
 4. Opening an email in Microsoft Outlook that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON.
 5. Opening a Microsoft Office document that was digitally signed with a certificate issued by a Federal PKI CA that validates to COMMON.
 
-{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: fpki@gsa.gov." %} 
+{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}." %} 
 
 This change will also impact partner users that rely on COMMON. For example, a Department of Defense employee sending a digitally signed email to a business partner.
 
@@ -71,7 +71,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 Testing by government teams did not allow locally administered certificate stores to override the Microsoft CTL distributed settings.  The decision was made to remove COMMON entirely from Microsoft's trust store.  No further testing on overriding the CTL settings will be conducted. 
 
 <!-- Link below not found on both sites -->
-To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing](https://github.com/GSA/fpki-guides/projects/2){:target="_blank"}{:rel="noopener noreferrer"}.
+To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing](https://github.com/GSA/fpki-guides/projects/2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
 
 ## Frequently Asked Questions
 
@@ -110,7 +110,7 @@ If COMMON is already in the Trusted Root Certification Authorities or Enterprise
 
 ### 4.&nbsp;&nbsp;Is PIV network login impacted?  
 
-Yes. See [Install Using Group Policy Objects](#install-using-group-policy-objects) to mitigate this risk.
+Yes. See [Install Using Group Policy Objects](#install-using-group-policy-objects){:class="usa-link"} to mitigate this risk.
 
 ### 5.&nbsp;&nbsp;Do I need to remove the "baked-in" version of COMMON?  
 No, don't remove COMMON.  When Microsoft does the update for the CTL, it will be removed during normal patching cycles. 

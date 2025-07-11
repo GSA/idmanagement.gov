@@ -42,122 +42,122 @@ Each CA is listed by common name with a link to additional CA certificate detail
 
 **CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA**  
 
-- [DigiCert Federated Trust CA](#digicert-federated-trust-ca)  
-- [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1)  
-- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)  
-- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)  
-- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)  
-- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)  
-- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)  
-- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)  
+- [DigiCert Federated Trust CA](#digicert-federated-trust-ca){:class="usa-link"}  
+- [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1){:class="usa-link"}  
+- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca){:class="usa-link"}  
+- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca){:class="usa-link"}  
+- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca){:class="usa-link"}  
+- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca){:class="usa-link"}  
+- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca){:class="usa-link"}  
+- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca){:class="usa-link"}  
 
 
 **CA Certificates _Issued By_ DigiCert Federated Trust CA**  
 
-- [What Was the Change?](#what-was-the-change)
-- [What Certification Authorities Were Impacted?](#what-certification-authorities-were-impacted)
-- [What Should I Do?](#what-should-i-do)
-- [Who Can I Contact for Help or More Information?](#who-can-i-contact-for-help-or-more-information)
-- [Additional Resources](#additional-resources)
-    - [CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA](#ca-certificates-issued-by-digicert-federated-id-ca-1-ca)
-      - [DigiCert Federated Trust CA](#digicert-federated-trust-ca)
-      - [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1)
-      - [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
-      - [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)
-      - [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)
-      - [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)
-      - [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)
-      - [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)
-    - [CA Certificates _Issued By_ DigiCert Federated Trust CA](#ca-certificates-issued-by-digicert-federated-trust-ca)
-      - [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
-      - [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
-      - [Axesson Direct CA](#axesson-direct-ca)
-      - [Care360 Direct Intermediate CA](#care360-direct-intermediate-ca)
-      - [Cerner Corporation Direct Intermediate CA](#cerner-corporation-direct-intermediate-ca)
-      - [Cerner Corporation Resonance Intermediate CA](#cerner-corporation-resonance-intermediate-ca)
-      - [CompuGroup Medical Certificate Authority](#compugroup-medical-certificate-authority)
-      - [Corepoint Direct Intermediate CA](#corepoint-direct-intermediate-ca)
-      - [DigiCert Accredited Direct Med CA](#digicert-accredited-direct-med-ca)
-      - [DigiCert Direct Non-Provider CA](#digicert-direct-non-provider-ca)
-      - [DigiCert Federated Healthcare CA](#digicert-federated-healthcare-ca)
-      - [DigiCert Governmental Direct CA](#digicert-governmental-direct-ca)
-      - [DigiCert Provisional Direct Med CA](#digicert-provisional-direct-med-ca)
-      - [Indian Health Service-RPMS DIRECT Messaging CA](#indian-health-service-rpms-direct-messaging-ca)
-      - [Inpriva Direct Federated CA](#inpriva-direct-federated-ca)
-      - [INTEGRIS Direct Intermediate CA](#integris-direct-intermediate-ca)
-      - [iShare Medical Direct Intermediate CA](#ishare-medical-direct-intermediate-ca)
-      - [MedicaSoft Direct Intermediate CA](#medicasoft-direct-intermediate-ca)
-      - [Medicity Direct CA](#medicity-direct-ca)
-      - [MHIN Direct CA](#mhin-direct-ca)
-      - [Mirth Direct Intermediate CA](#mirth-direct-intermediate-ca)
-      - [MobileMD Direct Intermediate CA](#mobilemd-direct-intermediate-ca)
-      - [MRO Direct Intermediate CA](#mro-direct-intermediate-ca)
-      - [Oregon Health Authority Direct CA](#oregon-health-authority-direct-ca)
-      - [Orion Health Direct Secure Messaging CA](#orion-health-direct-secure-messaging-ca)
-      - [RelayHealth Direct CA](#relayhealth-direct-ca)
-      - [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)
-      - [SCHIEx Direct CA](#schiex-direct-ca)
-    - [CA Certificates _Issued By_ DigiCert Federated Trust CA-1](#ca-certificates-issued-by-digicert-federated-trust-ca-1)
-      - [MIDIGATE CA](#midigate-ca)
-      - [Trinity Health Direct CA](#trinity-health-direct-ca)
-    - [CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA](#ca-certificates-issued-by-orion-health-direct-secure-messaging-ca)
-      - [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
-      - [Cal INDEX CA](#cal-index-ca)
-      - [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
-      - [Greenville Health System CA](#greenville-health-system-ca)
-      - [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca)
-      - [Huntsville Hospital System CA](#huntsville-hospital-system-ca)
-      - [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange)
-      - [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca)
-      - [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca)
-      - [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca)
-      - [Mary Washington Healthcare CA](#mary-washington-healthcare-ca)
-      - [Mass HIway CA](#mass-hiway-ca)
-      - [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca)
-      - [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca)
-      - [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca)
-      - [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca)
-      - [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca)
-      - [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca)
-      - [Optioncare CA](#optioncare-ca)
-      - [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca)
-      - [Rush Health CA](#rush-health-ca)
-      - [Sutter Health CA](#sutter-health-ca)
-      - [The Koble Group CA](#the-koble-group-ca)
-      - [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
+- [What Was the Change?](#what-was-the-change){:class="usa-link"}
+- [What Certification Authorities Were Impacted?](#what-certification-authorities-were-impacted){:class="usa-link"}
+- [What Should I Do?](#what-should-i-do){:class="usa-link"}
+- [Who Can I Contact for Help or More Information?](#who-can-i-contact-for-help-or-more-information){:class="usa-link"}
+- [Additional Resources](#additional-resources){:class="usa-link"}
+    - [CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA](#ca-certificates-issued-by-digicert-federated-id-ca-1-ca){:class="usa-link"}
+      - [DigiCert Federated Trust CA](#digicert-federated-trust-ca){:class="usa-link"}
+      - [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1){:class="usa-link"}
+      - [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca){:class="usa-link"}
+      - [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca){:class="usa-link"}
+      - [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca){:class="usa-link"}
+      - [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca){:class="usa-link"}
+      - [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca){:class="usa-link"}
+      - [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca){:class="usa-link"}
+    - [CA Certificates _Issued By_ DigiCert Federated Trust CA](#ca-certificates-issued-by-digicert-federated-trust-ca){:class="usa-link"}
+      - [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca){:class="usa-link"}
+      - [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca){:class="usa-link"}
+      - [Axesson Direct CA](#axesson-direct-ca){:class="usa-link"}
+      - [Care360 Direct Intermediate CA](#care360-direct-intermediate-ca){:class="usa-link"}
+      - [Cerner Corporation Direct Intermediate CA](#cerner-corporation-direct-intermediate-ca){:class="usa-link"}
+      - [Cerner Corporation Resonance Intermediate CA](#cerner-corporation-resonance-intermediate-ca){:class="usa-link"}
+      - [CompuGroup Medical Certificate Authority](#compugroup-medical-certificate-authority){:class="usa-link"}
+      - [Corepoint Direct Intermediate CA](#corepoint-direct-intermediate-ca){:class="usa-link"}
+      - [DigiCert Accredited Direct Med CA](#digicert-accredited-direct-med-ca){:class="usa-link"}
+      - [DigiCert Direct Non-Provider CA](#digicert-direct-non-provider-ca){:class="usa-link"}
+      - [DigiCert Federated Healthcare CA](#digicert-federated-healthcare-ca){:class="usa-link"}
+      - [DigiCert Governmental Direct CA](#digicert-governmental-direct-ca){:class="usa-link"}
+      - [DigiCert Provisional Direct Med CA](#digicert-provisional-direct-med-ca){:class="usa-link"}
+      - [Indian Health Service-RPMS DIRECT Messaging CA](#indian-health-service-rpms-direct-messaging-ca){:class="usa-link"}
+      - [Inpriva Direct Federated CA](#inpriva-direct-federated-ca){:class="usa-link"}
+      - [INTEGRIS Direct Intermediate CA](#integris-direct-intermediate-ca){:class="usa-link"}
+      - [iShare Medical Direct Intermediate CA](#ishare-medical-direct-intermediate-ca){:class="usa-link"}
+      - [MedicaSoft Direct Intermediate CA](#medicasoft-direct-intermediate-ca){:class="usa-link"}
+      - [Medicity Direct CA](#medicity-direct-ca){:class="usa-link"}
+      - [MHIN Direct CA](#mhin-direct-ca){:class="usa-link"}
+      - [Mirth Direct Intermediate CA](#mirth-direct-intermediate-ca){:class="usa-link"}
+      - [MobileMD Direct Intermediate CA](#mobilemd-direct-intermediate-ca){:class="usa-link"}
+      - [MRO Direct Intermediate CA](#mro-direct-intermediate-ca){:class="usa-link"}
+      - [Oregon Health Authority Direct CA](#oregon-health-authority-direct-ca){:class="usa-link"}
+      - [Orion Health Direct Secure Messaging CA](#orion-health-direct-secure-messaging-ca){:class="usa-link"}
+      - [RelayHealth Direct CA](#relayhealth-direct-ca){:class="usa-link"}
+      - [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca){:class="usa-link"}
+      - [SCHIEx Direct CA](#schiex-direct-ca){:class="usa-link"}
+    - [CA Certificates _Issued By_ DigiCert Federated Trust CA-1](#ca-certificates-issued-by-digicert-federated-trust-ca-1){:class="usa-link"}
+      - [MIDIGATE CA](#midigate-ca){:class="usa-link"}
+      - [Trinity Health Direct CA](#trinity-health-direct-ca){:class="usa-link"}
+    - [CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA](#ca-certificates-issued-by-orion-health-direct-secure-messaging-ca){:class="usa-link"}
+      - [Alaska eHealth Network CA](#alaska-ehealth-network-ca){:class="usa-link"}
+      - [Cal INDEX CA](#cal-index-ca){:class="usa-link"}
+      - [Catholic Health Initiatives CA](#catholic-health-initiatives-ca){:class="usa-link"}
+      - [Greenville Health System CA](#greenville-health-system-ca){:class="usa-link"}
+      - [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca){:class="usa-link"}
+      - [Huntsville Hospital System CA](#huntsville-hospital-system-ca){:class="usa-link"}
+      - [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange){:class="usa-link"}
+      - [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca){:class="usa-link"}
+      - [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca){:class="usa-link"}
+      - [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca){:class="usa-link"}
+      - [Mary Washington Healthcare CA](#mary-washington-healthcare-ca){:class="usa-link"}
+      - [Mass HIway CA](#mass-hiway-ca){:class="usa-link"}
+      - [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca){:class="usa-link"}
+      - [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca){:class="usa-link"}
+      - [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca){:class="usa-link"}
+      - [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca){:class="usa-link"}
+      - [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca){:class="usa-link"}
+      - [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca){:class="usa-link"}
+      - [Optioncare CA](#optioncare-ca){:class="usa-link"}
+      - [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca){:class="usa-link"}
+      - [Rush Health CA](#rush-health-ca){:class="usa-link"}
+      - [Sutter Health CA](#sutter-health-ca){:class="usa-link"}
+      - [The Koble Group CA](#the-koble-group-ca){:class="usa-link"}
+      - [Western Connecticut Health Network CA](#western-connecticut-health-network-ca){:class="usa-link"}
 
 
 **CA Certificates _Issued By_ DigiCert Federated Trust CA-1**   
  
-- [MIDIGATE CA](#midigate-ca)  
-- [Trinity Health Direct CA](#trinity-health-direct-ca)  
+- [MIDIGATE CA](#midigate-ca){:class="usa-link"}  
+- [Trinity Health Direct CA](#trinity-health-direct-ca){:class="usa-link"}  
 
 **CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA**  
 
-- [Alaska eHealth Network CA](#alaska-ehealth-network-ca)  
-- [Cal INDEX CA](#cal-index-ca)  
-- [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)  
-- [Greenville Health System CA](#greenville-health-system-ca)  
-- [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca)  
-- [Huntsville Hospital System CA](#huntsville-hospital-system-ca)  
-- [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange)  
-- [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca)  
-- [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca)  
-- [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca)  
-- [Mary Washington Healthcare CA](#mary-washington-healthcare-ca)  
-- [Mass HIway CA](#mass-hiway-ca)  
-- [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca)  
-- [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca)  
-- [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca)  
-- [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca)  
-- [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca)  
-- [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca)  
-- [Optioncare CA](#optioncare-ca)  
-- [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca)  
-- [Rush Health CA](#rush-health-ca)  
-- [Sutter Health CA](#sutter-health-ca)  
-- [The Koble Group CA](#the-koble-group-ca)  
-- [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)  
+- [Alaska eHealth Network CA](#alaska-ehealth-network-ca){:class="usa-link"}  
+- [Cal INDEX CA](#cal-index-ca){:class="usa-link"}  
+- [Catholic Health Initiatives CA](#catholic-health-initiatives-ca){:class="usa-link"}  
+- [Greenville Health System CA](#greenville-health-system-ca){:class="usa-link"}  
+- [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca){:class="usa-link"}  
+- [Huntsville Hospital System CA](#huntsville-hospital-system-ca){:class="usa-link"}  
+- [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange){:class="usa-link"}  
+- [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca){:class="usa-link"}  
+- [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca){:class="usa-link"}  
+- [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca){:class="usa-link"}  
+- [Mary Washington Healthcare CA](#mary-washington-healthcare-ca){:class="usa-link"}  
+- [Mass HIway CA](#mass-hiway-ca){:class="usa-link"}  
+- [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca){:class="usa-link"}  
+- [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca){:class="usa-link"}  
+- [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca){:class="usa-link"}  
+- [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca){:class="usa-link"}  
+- [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca){:class="usa-link"}  
+- [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca){:class="usa-link"}  
+- [Optioncare CA](#optioncare-ca){:class="usa-link"}  
+- [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca){:class="usa-link"}  
+- [Rush Health CA](#rush-health-ca){:class="usa-link"}  
+- [Sutter Health CA](#sutter-health-ca){:class="usa-link"}  
+- [The Koble Group CA](#the-koble-group-ca){:class="usa-link"}  
+- [Western Connecticut Health Network CA](#western-connecticut-health-network-ca){:class="usa-link"}  
 
 
 ## What Should I Do?
@@ -174,7 +174,7 @@ Removing the CAs from these trust list configurations may improve performance an
 
 
 ## Who Can I Contact for Help or More Information?  
-Email us at fpki@gsa.gov
+Email us at [fpki@gsa.gov](fpki@gsa.gov){:class="usa-link"}
 
 ## Additional Resources
 Details of each CA affected by this change are listed below.  You can also download files with copies of the CA certificates.   

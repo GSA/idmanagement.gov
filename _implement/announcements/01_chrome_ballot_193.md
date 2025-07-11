@@ -25,7 +25,7 @@ subnav:
 {% include alert-warning.html content="This announcement has been archived and is hosted solely for historical reference. It is no longer being updated or maintained." %}
 
 
-Recent changes to Chrome could affect your agency. Chrome now requires that TLS/SSL certificates issued on or after **March 1, 2018**, have a maximum lifetime of 825 days. Google is enforcing this change for Chrome as a result of the Certification Authority/Browser (CA/B) Forum's Ballot 193 to promote increased web security.<sup>[1](#1)</sup>  
+Recent changes to Chrome could affect your agency. Chrome now requires that TLS/SSL certificates issued on or after **March 1, 2018**, have a maximum lifetime of 825 days. Google is enforcing this change for Chrome as a result of the Certification Authority/Browser (CA/B) Forum's Ballot 193 to promote increased web security.<sup>[1](#1){:class="usa-link"}</sup>  
 
 ## What Will Be Impacted?
 A government user will receive an "untrusted site" error when browsing to an intranet website or application if all of the following are true: 

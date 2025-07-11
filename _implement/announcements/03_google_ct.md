@@ -60,7 +60,7 @@ CT enforcement has begun. As of **July 24, 2018**, Google is now enforcing CT fo
 
 To mitigate the impact on the federal enterprise, you must disable CT enforcement for the affected intranet websites. 
 
-Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-ct-enforcement-for-government-furnished-equipment).
+Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-ct-enforcement-for-government-furnished-equipment){:class="usa-link"}.
 
 
 ### Disable CT Enforcement for Government-Furnished Equipment
