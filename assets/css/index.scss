@@ -17,12 +17,16 @@
 	line-height: 1.2;
 	color: inherit;
 }
-// This is for the associated HR tag
-.gsa-hr {
-  height: 0;
-  box-sizing: content-box;
-  overflow: visible;
+// Partner Buttons on Homepage. 
+.gsa-hr-top {
+ border-top:1px solid #c0c0c0;
 }
+// This is to create the hr look for the card contents
+.gsa-hr-both {
+ border-top:1px solid #c0c0c0;
+ border-bottom: 1px solid #c0c0c0;
+}
+
 
 // USWD Typography adjustments to fix width of text.
   // This also adjusts length of bullet points
