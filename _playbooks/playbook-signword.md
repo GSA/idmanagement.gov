@@ -87,13 +87,13 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting digitally signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature){:class="usa-link"} or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures){:class=\"usa-link\"} below." %}
+{% include alert-warning.html heading="OFR Submission Digital Signatures" content=" If you are using this guide for submitting digitally signed documents to the Office of the Federal Register (OFR) please see the sections on [adding an invisible signature](#add-an-invisible-digital-signature){:class=\"usa-link\"} or [adding multiple invisible signatures](#add-multiple-visible-digital-signatures){:class=\"usa-link\"} below." %}
 
 {% include alert-info.html heading="Critical Software Configurations" content="Before you begin digitally signing documents, please ask your Technical Support team to verify the digital signature settings on your computer by following the steps in the [Verify Digital Signature Settings section](#verify-digital-signature-settings){:class=\"usa-link\"} below.  This will ensure you are using appropriate cryptographic functions to maintain document integrity with digital signatures." %}
 
 This guide will outline the benefits of digital signatures and will walk you through the various options and the specific steps for digitally signing a document in Microsoft Word using a PIV credential, delegated digital signature certificate, or another PKI-based digital signature certificate.  
 
-{% include alert-info.html heading="Signatory Authorities and PKI Certificates" content="See the [Delegated Digital Signature Playbook]({{ site.baseurl }}/playbooks/dds/){:rel="noopener noreferrer"}{:class=\"usa-link\"} for guidance on how to implement a capability for delegating the authority of a senior official to sign OFR documents and obtain associated PKI hardware credentials." %}
+{% include alert-info.html heading="Signatory Authorities and PKI Certificates" content="See the [Delegated Digital Signature Playbook]({{ site.baseurl }}/playbooks/dds/){:rel=\"noopener noreferrer\"}{:class=\"usa-link\"} for guidance on how to implement a capability for delegating the authority of a senior official to sign OFR documents and obtain associated PKI hardware credentials." %}
 
 The Office of the Federal Register (OFR) requires that document submissions be digitally signed (using the invisible signature capability) and submitted in Word (.docx) format.  Instructions regarding individual signatures can be used for documents and proposed rules being submitted by one agency; however, multiple signatures may be needed for multi-agency submissions to OFR. 
 
@@ -133,7 +133,7 @@ Microsoft saves Office files upon application of a digital signature, to include
 
 The following sections outline the instructions to add one digital signature to Word documents.  
 
-{% include alert-info.html heading="Multiple Signatory Authorities" content="Some use cases may require multiple signatures in support of document approvals, please see the [Multiple Signatures](#add-multiple-visible-digital-signatures){:class="usa-link"} section for further instructions on those scenarios where several signers are required for one document." %}
+{% include alert-info.html heading="Multiple Signatory Authorities" content="Some use cases may require multiple signatures in support of document approvals, please see the [Multiple Signatures](#add-multiple-visible-digital-signatures){:class=\"usa-link\"} section for further instructions on those scenarios where several signers are required for one document." %}
 
 ## Add a Visible Digital Signature
 
@@ -141,7 +141,7 @@ Some organizations or use cases may require a visible signature block in their d
 
 {% include alert-warning.html heading="Who Actually Signed This Document?" content="Visible signatures can be modified by the document author to assert any name, title and email address and may not be reflective of the actual person who applies their corresponding digital signature.  As a result, verifiers of digital signatures should be very careful to view the signing certificate information to ensure it is consistent with the named entity in the visible signature line." %}
 
-{% include alert-warning.html heading="Invisible Signatures for OFR Submission" content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the [Add an Invisible Signature](#add-an-invisible-digital-signature){:class="usa-link"} instructions below to sign the document as this is the format OFR will accept." %}
+{% include alert-warning.html heading="Invisible Signatures for OFR Submission" content=" If you are signing a document for submission to OFR, DO NOT use the visible Insert Signature function (under the INSERT tab in the Word ribbon). Follow the [Add an Invisible Signature](#add-an-invisible-digital-signature){:class=\"usa-link\"} instructions below to sign the document as this is the format OFR will accept." %}
 
 1. To add a digital signature, open your Microsoft Word document and in the body of the document, click where you’d like to add your signature line.  
 2. From the Word ribbon selection menu, select the **Insert** tab and then click **Signature Line** in the Text group. If the document has not yet been saved, you will be prompted to save the document before continuing to apply the digital signature.<br/>
