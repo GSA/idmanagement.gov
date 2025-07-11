@@ -311,7 +311,7 @@ The most common way to integrate non-PKI-derived credentials is through a modern
 
 ## Shift From Managing Credentials to Managing Identities
 
-This playbook intends to help agencies achieve OMB Memo 19-17 outcomes to shift the focus operating model from managing access based solely on credentials to managing the lifecycle of identities and the appropriate job functions and roles as they evolve over time in an agency or the federal government. The [Identity Management services in the Federal ICAM architecture](https://www.idmanagement.gov/arch/#services-framework-and-service-descriptions) include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are collectively known as Identity Lifecycle Management (ILM).
+This playbook intends to help agencies achieve OMB Memo 19-17 outcomes to shift the focus operating model from managing access based solely on credentials to managing the lifecycle of identities and the appropriate job functions and roles as they evolve over time in an agency or the federal government. The [Identity Management services in the Federal ICAM architecture]({{site.baseurl}}/arch/#services-framework-and-service-descriptions){:rel="noopener noreferrer"}{:class="usa-link"} include Creation, Identity Proofing, Provisioning, Maintenance, Identity Aggregation, and Deactivation. These services are collectively known as Identity Lifecycle Management (ILM).
 
 Adhering to Zero Trust principles, automated and centralizing the ILM services we can leverage our IGA to remove access from the identity at the enterprise level and specific levels and accounts.
 
@@ -323,7 +323,7 @@ Adhering to Zero Trust principles, automated and centralizing the ILM services w
 
 ### **Document the Process in an Agency Policy**
 
-Document an agency policy to identify the roles and responsibilities required to implement an identity lifecycle management process. It is a good practice to coordinate the document through the agency’s ICAM governance body to ensure all interested stakeholders are aware of the initiative and their respective responsibilities. This document should complement or be included in the agency’s existing ICAM policy. For more information on ICAM program management or the ICAM governance body, see the [ICAM Program Management Playbook](https://www.idmanagement.gov/university/pm/#program-governance-and-leadership) or the [ICAM Governance Framework](https://www.idmanagement.gov/docs/playbook-identity-governance-framework.pdf). The agency policy should include the following elements.
+Document an agency policy to identify the roles and responsibilities required to implement an identity lifecycle management process. It is a good practice to coordinate the document through the agency’s ICAM governance body to ensure all interested stakeholders are aware of the initiative and their respective responsibilities. This document should complement or be included in the agency’s existing ICAM policy. For more information on ICAM program management or the ICAM governance body, see the [ICAM Program Management Playbook]({{ site.baseurl }}/university/pm/#program-governance-and-leadership){:rel="noopener noreferrer"}{:class="usa-link"} or the [ICAM Governance Framework]({{ site.baseurl }}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}. The agency policy should include the following elements.
 
 1. Outline the purpose of implementing ILM.
 2. The roles and responsibilities are mapped to the authoritative attribute source. Such as:
@@ -367,7 +367,7 @@ An authoritative attribute source is a repository or system that contains one or
 
 - Agency Vetting System - Contains investigative and adjudicative results on suitability or fitness for federal employment, eligibility to occupy a sensitive position, eligibility for access to classified information, and eligibility for a federal identity credential (e.g., PIV) and include the NIST 800-63r4 Alternative credential of authentications that feed into the IGA. Consult your Security/Vetting office on IT integration planning and implementation with ILM processes .
 - Credential Management System - An agency’s card management system that assigns PIV, Tokens, and other credential types.
-- Application Analysis - Conducting an internal application analysis from the [Single Sign-On Playbook](https://www.idmanagement.gov/playbooks/sso/#step-2-plan-application-integration) to identify which attributes are used across which applications. For example, employee access is dependent on current and complete IT security training. The security training attribute is most likely in the agency’s training system, but specific to application access.
+- Application Analysis - Conducting an internal application analysis from the [Single Sign-On Playbook]({{ site.baseurl }}/playbooks/sso/#step-2-plan-application-integration){:rel="noopener noreferrer"}{:class="usa-link"} to identify which attributes are used across which applications. For example, employee access is dependent on current and complete IT security training. The security training attribute is most likely in the agency’s training system, but specific to application access.
 
 These are sources that you use to create a digital identity. The attributes are what you pull from the authoritative sources to add to that digital identity.
 
@@ -420,7 +420,7 @@ Make attributes available for authorization decisions. Federation is not only ac
 - Focus on the best practice of using assertion protocols rather than exposing attributes externally.
 - Focus on authorization through federation rather than on PIV. PIV is a static credential with static attributes. SSO with Federation is dynamic-based on the SSO integration with a master user record. It is easier to update a directory than a PIV credential.
 
-See the [Cloud Identity Playbook Federation section](https://www.idmanagement.gov/playbooks/cloud/#federation) for more information on federation and using trust frameworks for government, mission partner, or public identity federation.
+See the [Cloud Identity Playbook Federation section]({{ site.baseurl }}/playbooks/cloud/#federation){:rel="noopener noreferrer"}{:class="usa-link"} for more information on federation and using trust frameworks for government, mission partner, or public identity federation.
 
 ## Summary
 
@@ -443,8 +443,8 @@ The ILM playbook outlined an identity lifecycle process and four steps to create
 
 ### Government-Wide Guidance
 
-1. [FICAM Architecture](https://www.idmanagement.gov/why/icam/)
-2. [ICAM Governance Framework](https://www.idmanagement.gov/docs/playbook-identity-governance-framework.pdf)
+1. [FICAM Architecture]({{ site.baseurl }}/why/icam/){:class="usa-link"}
+2. [ICAM Governance Framework]({{ site.baseurl }}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 3. [NIST Special Publication 800-63 Additional Information Sources Including Conformance Criteria](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [NIST Interagency Report 8149 - Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 5. [OPM Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for PIV Credentials](https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
