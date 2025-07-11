@@ -31,11 +31,9 @@ subnav:
                 tabindex="-1" aria-label="{{playbook.title}}" />
         </div>
         </div>
-        <hr class="gsa-hr">
-        <div class="usa-card__body">
-            <p>{{playbook.description}}</p>
+        <div class="usa-card__body gsa-hr-both">
+            <p style="padding: 10px">{{playbook.description}}</p>
         </div>
-        <hr class="gsa-hr">
         <div class="usa-card__footer">
             <!-- <button type="button" class="usa-button">Button text</button> -->
             Latest Update: {{playbook.pubdate}} <br><span class="usa-tag bg-accent-warm">{{playbook.type}}</span>
