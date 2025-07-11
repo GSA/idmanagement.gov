@@ -19,9 +19,9 @@
 }
 // This is for the associated HR tag
 .gsa-hr {
-  color: #1b1b1b;
-  height: auto;
-  width: 100%;
+  height: 0;
+  box-sizing: content-box;
+  overflow: visible;
 }
 
 // USWD Typography adjustments to fix width of text.
