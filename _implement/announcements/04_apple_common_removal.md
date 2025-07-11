@@ -77,7 +77,7 @@ This change will also impact Federal Government partners that rely on COMMON&mda
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
 
-{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}." %} 
+{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at [fpki@gsa.gov](mailto:fpki@gsa.gov){:class=\"usa-link\"}." %} 
 
 ## Frequently Asked Questions
 

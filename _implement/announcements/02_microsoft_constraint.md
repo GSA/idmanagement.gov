@@ -60,7 +60,7 @@ When Microsoft removes COMMON, government users of Windows will receive errors. 
 4. Opening an email in Microsoft Outlook that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON.
 5. Opening a Microsoft Office document that was digitally signed with a certificate issued by a Federal PKI CA that validates to COMMON.
 
-{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}." %} 
+{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: [fpki@gsa.gov](mailto:fpki@gsa.gov){:class=\"usa-link\"}." %} 
 
 This change will also impact partner users that rely on COMMON. For example, a Department of Defense employee sending a digitally signed email to a business partner.
 
