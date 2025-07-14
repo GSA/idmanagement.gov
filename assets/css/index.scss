@@ -95,7 +95,7 @@
   color:#005ea2;
 }
 
-// Use to undecorate a span of content withing an anchor tag
+// Use to undecorate a span of content within an anchor tag
 .gsa-no-dec {
   text-decoration: none;
   color: inherit;
@@ -207,7 +207,8 @@
 // Responsive Hero for IDManagement
 .gsa-responsive-hero {
   height:auto;
-  min-width: 220px; 
+  min-width: 220px;
+  padding: 10px;
 }
 
 // Hero text length shortener-er 
