@@ -14,14 +14,15 @@
 .gsa-card-heading {
 	font-size: calc(1.3rem + .6vw);
 	font-weight: 500;
-	line-height: 1.2;
+	// line-height: 1.2;
+	line-height: 1.0;
 	color: inherit;
 }
-// Partner Buttons on Homepage. 
+// Partner Buttons at top of Homepage. 
 .gsa-hr-top {
  border-top:1px solid #c0c0c0;
 }
-// This is to create the hr look for the card contents
+// This is to create the hr above and below the card contents for Playbook and Front Page cards
 .gsa-hr-both {
  border-top:1px solid #c0c0c0;
  border-bottom: 1px solid #c0c0c0;
