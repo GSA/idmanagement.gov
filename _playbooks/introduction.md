@@ -22,7 +22,6 @@ subnav:
     <div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
         <div class="usa-card__header">
             <h3 class="gsa-card-heading">{{playbook.title}}</h3>
-            <br>
         </div>
         <div class="usa-card__media">
         <div class="usa-card__img">
