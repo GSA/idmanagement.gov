@@ -7,11 +7,6 @@
 @forward "uswds-theme";
 @forward "uswds-theme-custom-styles";
 
-// Added spacer for rotator ~ for distance between bottom rotator buttons and slides.
-.gsa-spacer {
- padding: 5px;
-}
-
 // Removed Bootstrap, to defaut to USWDS, 
   // This carried over only one style used from Bootstrap's Reboot
   // This sets the diplay of the Cards on the homepage and Playbook Card listing
