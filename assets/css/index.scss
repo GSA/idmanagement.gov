@@ -208,7 +208,12 @@
 .gsa-responsive-hero {
   height:auto;
   min-width: 220px;
-  padding: 15px 5px 15px;
+  padding: 10px;
+}
+// padding testing on responsice hero
+.grid-container > .gsa-responsive-hero {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 // Hero text length shortener-er 
