@@ -36,7 +36,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
       <!-- Splide is initialized on this element so we can use our custom controls above -->
       <div class="splide flex-auto">
         <div class="splide__track" style="height:auto;">
-          <div class="splide__list" style="height:auto;">
+          <div class="splide__list" style="height:auto;margin-bottom:8px;">
             {% for slide in site.data.gsacarousel %}
             <div class="splide__slide splide_fix" style="width:auto;padding-right:50px;" role="group" aria-label="Slide about {{slide.heroHeading}}">
                   <h2 class="hero-heading" style="width:auto;height:auto;margin-top:0px;margin-bottom:0px" >{{ slide.heroHeading }}</h2>
@@ -44,8 +44,6 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
                   <a class="usa-button" style="width: auto;"  href="{{ slide.actionLocation }}" target="{{ slide.actionTarget }}" rel="noopener noreferrer" title="{{ slide.actionButtonText }} {{slide.heroHeading}}" aria-label="{{ slide.actionButtonText }} {{slide.heroHeading}}">{{ slide.actionButtonText }} {{ slide.heroHeading }}</a>            
             </div>
             {% endfor %}
-            <!-- Spacer for botton of Slides -->
-            <br>
           </div>
           
         </div>
