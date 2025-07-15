@@ -98,19 +98,19 @@ experiments:
 papers:
   - text: Back to Experiments
     href: /experiments/
-  - text: CDN Paper 1
+  - text: CDN Reliability
     href: /experiments/cdns/paper1/
-  - text: CDN Paper 2
+  - text: CDN Attack Vectors
     href: /experiments/cdns/paper2/
-  - text: Personal Security and Identity Management
+  - text: Personal Security
     href: /experiments/cdns/paper3/ 
-  - text: Public Identity Best Practice Guide
+  - text: PIAM Identity Proofing
     href: /experiments/pid/bestpractice/
-  - text: PIAM Service Guide
+  - text: PIAM Service
     href: /experiments/pid/service/
-  - text: PIAM Framework Guide
+  - text: PIAM Framework
     href: /experiments/pid/framework/
-  - text: PIAM Process Guide
+  - text: PIAM Process
     href: /experiments/pid/process/
   - text: Mobile PIV (mPIV) Experiment
     href: /experiments/unifyia-mpiv-experiment/
