@@ -33,11 +33,11 @@ Two product categories require additional testing at a testing facility before a
 1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards]({{site.baseurl}}/fips201/#approved-products---piv-smart-cards ){:rel="noopener noreferrer"}{:class="usa-link"} category.
 2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure, require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems){:rel="noopener noreferrer"}{:class="usa-link"} category.
 
-Please get in touch with fips201ep at gsa dot gov if you have product approval questions.
+Please get in touch with [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"} if you have product approval questions.
 
 ## FIPS 201 Products and Services Approval Process
 
-The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:rel="noopener noreferrer"}{:class="usa-link"} (EP) evaluates commercial products and services, as defined by the [FAR](https://www.acquisition.gov/far/2.101)url){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, to be used in PIV credentialing systems and PACS.
+The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:rel="noopener noreferrer"}{:class="usa-link"} (EP) evaluates commercial products and services, as defined by the [FAR](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, to be used in PIV credentialing systems and PACS.
 
 We test and evaluate a variety of products and services, such as:
 
