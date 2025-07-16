@@ -59,7 +59,7 @@ After testing and approval, submit your application to have your product or serv
 
 ## Physical Access Control Systems (PACS)
 
-GSA tests, evaluates, and validates the interoperability of PIV, PIV-I, and CAC credentials with the hardware and software used for physical access control to government facilities. GSA manages testing and certification for PACS as well as annual audit testing of production PIV credentials for federal agencies. Vendors that want to have their products approved for procurement by federal agencies should review the documentation and procedures listed here: [Physical Access Control System]({{site.baseurl}}/fips201ep/#physical-access-control-system){:rel="noopener noreferrer"}{:class="usa-link"}
+GSA tests, evaluates, and validates the interoperability of PIV, PIV-I, and CAC credentials with the hardware and software used for physical access control to government facilities. GSA manages testing and certification for PACS as well as annual audit testing of production PIV credentials for federal agencies. Vendors that want to have their products approved for procurement by federal agencies should review the documentation and procedures listed here: [Physical Access Control System]({{site.baseurl}}/fips201ep/#physical-access-control-system){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 If your product completes the process and the FIPS 201 EP Program Manager recommends it for approval, two things happen.
 
