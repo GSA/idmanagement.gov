@@ -44,7 +44,7 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 <br><br>
 <img src="{{site.baseurl}}/assets/piv/ssh-putty-cac-1.png" alt="PuTTY configuration window." width="470" height="449">
 <br><br>
-4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates).
+4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:rel="noopener noreferrer"}{:class="usa-link"}.
 <br><br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A PuTTY select certificate for authentication screenshot." width="454" height="377">
 <br>
@@ -76,7 +76,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 {% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**, you can also download it separately from the [WinSCP download page](https://winscp.net/eng/downloads.php#putty_additional){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
 
 1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder if downloaded separately. 
-2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
+2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
 3. Double-click _WinSCP-Setup.exe_ to launch the _WinSCP installer_ and use the recommended installation settings.
 4. Double-click _pageant.exe_ to launch **Pageant**. 
 5. Next, at the **Windows** taskbar, click the _up-arrow_ and right-click the **Pageant** icon (_computer wearing a Fedora_). 
@@ -91,7 +91,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-4.PNG" alt="A screenshot showing Add CAPI Cert selected." width="247" height="275">
 <br>
-8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:target="_blank"}{:rel="noopener noreferrer"}.)
+8. From the **Windows Security** screen, select your PIV/CAC authentication certificate, and click _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.)
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A screenshot showing a PuTTY select certificate for authentication window with the OK button selected." width="269" height="223">
 <br>

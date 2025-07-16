@@ -43,7 +43,7 @@ digital autopen-like capability for Federal Register documents.
 
 Version 2.0 of this playbook was developed by Federal PKI Policy Authority support
 based on modifications to the [X.509 Certificate Policy for the U.S. Federal PKI
-Common Policy Framework](/docs/fpki-x509-cert-policy-common.pdf), specifically starting with [Version 2.9](/docs/archived/fpki-x509-cert-policy-common-29.pdf) supporting the use
+Common Policy Framework](/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}, specifically starting with [Version 2.9](/docs/archived/fpki-x509-cert-policy-common-29.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} supporting the use
 case of role-based digital delegated signatures for OFR submissions.
 
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
@@ -107,11 +107,11 @@ the document. This playbook assumes that the agency has existing rules governing
 the delegation of authority and builds upon such rules to outline a three-step
 process to create a delegated digital signature to sign a Federal Register document.
 
-1. [Define the agency process](#step-1-define-the-agency-process) to delegate the authority for signing Federal
+1. [Define the agency process](#step-1-define-the-agency-process){:class="usa-link"} to delegate the authority for signing Federal
 Register documents.
-2. [Define controls](#step-2-define-controls) to ensure the certificate and associated private key are used
+2. [Define controls](#step-2-define-controls){:class="usa-link"} to ensure the certificate and associated private key are used
 only for the intended purpose 
-3. [Obtain a role-based delegated digital signature certificate](#step-3-obtain-a-delegated-digital-signature-certificate) from a Federal
+3. [Obtain a role-based delegated digital signature certificate](#step-3-obtain-a-delegated-digital-signature-certificate){:class="usa-link"} from a Federal
 Public Key Infrastructure (PKI) Shared Service Provider or other approved
 Federal PKI issuer.
  
@@ -123,7 +123,7 @@ of the signer." %}
 This playbook recommends using a role-based delegated digital signature certificate
 issued to a hardware device (e.g., smart card, USB hardware device, or other
 FIPS–140 Level 2 certified hardware) from a [Federal PKI Certification Authority.
-Federal Agency Certification Authorities]({{site.baseurl}}/trust-services/#government-identity-services){:target="_blank"}{:rel="noopener noreferrer"} may also be configured to issue these
+Federal Agency Certification Authorities]({{site.baseurl}}/trust-services/#government-identity-services){:rel="noopener noreferrer"}{:class="usa-link"} may also be configured to issue these
 delegated digital signature certificates from their own managed Certification
 Authorities (CAs) that assert the id-fpki-common-hardware certificate
 policy object identifier defined by the Federal Common Policy CA. The delegated
@@ -135,8 +135,8 @@ controls to limit its use to **only**  sign _Federal Register_ documents. This p
 supports [OMB Circular A-130 goals](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, including developing and implementing
 processes to support employee digital signatures.
 
-Send any questions on the process to [icam@gsa.gov](mailto:icam@gsa.gov), and certificate
-implementation questions should be sent to [fpki@gsa.gov](mailto:fpki@gsa.gov).
+Send any questions on the process to [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}, and certificate
+implementation questions should be sent to [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 
 ### Key Terms
 - Authorizing sponsor – The federal official authorized to sign Federal Register
@@ -162,7 +162,7 @@ certificate is considered trusted based on the security requirements of the
 systems, the adherence to the agreed upon set of issuance procedures for
 asserting a claimed set of identity attributes in the public certificate, and
 protection of the associated private key. For more information on the Federal
-PKI contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
+PKI contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 - _Federal Register_ document - A document drafted for the express purpose of
 publication in the Federal Register.
 - Office of the Federal Register (OFR) - The agency responsible for publishing
@@ -200,7 +200,7 @@ members include:
 - Internal Revenue Service
 - National Archives and Records Administration
 
-[Appendix B](#appendix-b-policy-recommendations) includes recommended policy and guidance updates identified by the working group. Many of these recommendations have been addressed since the release of v1.0 of this playbook.
+[Appendix B](#appendix-b-policy-recommendations){:class="usa-link"} includes recommended policy and guidance updates identified by the working group. Many of these recommendations have been addressed since the release of v1.0 of this playbook.
 
 ## The Delegated Digital Signature
 
@@ -274,17 +274,17 @@ the purpose of submitting official documents to the Federal Register. It outline
 controls around the delegated digital signature certificate to meet the OFR’s digital
 signature requirements for Federal Register documents and federal cybersecurity.
 For instructions on digitally signing a Federal Register document, see the [FICAM
-Playbook Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/).
+Playbook Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 An agency may implement or update a process by following these three playbook
 steps.
 
-1. [Define the agency process](#step-1-define-the-agency-process) to delegate signing Federal Register documents.
-2. [Define controls](#step-2-define-controls) to ensure the certificate and associated key are used only for the intended purpose.
-3. [Obtain a role-based digital signature certificate](#step-3-obtain-a-digital-autopen-certificate) from a PKI Shared Service
+1. [Define the agency process](#step-1-define-the-agency-process){:class="usa-link"} to delegate signing Federal Register documents.
+2. [Define controls](#step-2-define-controls){:class="usa-link"} to ensure the certificate and associated key are used only for the intended purpose.
+3. [Obtain a role-based digital signature certificate](#step-3-obtain-a-digital-autopen-certificate){:class="usa-link"} from a PKI Shared Service
 Provider.
 
-Send any process questions or concerns to [icam@gsa.gov](mailto:icam@gsa.gov), and certificate implementation questions should also be sent to [fpki@gsa.gov](mailto:fpki@gsa.gov).
+Send any process questions or concerns to [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}, and certificate implementation questions should also be sent to [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 
 ## Step 1. Define the Agency Process
 
@@ -321,18 +321,18 @@ or Standard Operating Procedure should include the following elements.
 1. An agency policy that delegates the Federal Register signing authority to
 leverage a delegated digital signature certificate.
 2. A process to receive delegation approval and affix a delegated digital
-signature to a document. See [Appendix C](#appendix-c-templates) for an example of a decision
+signature to a document. See [Appendix C](#appendix-c-templates){:class="usa-link"} for an example of a decision
 document.
 3. A process to request and obtain a role-based delegated digital signature
-certificate. Mandatory and optional controls are in [Step 2](#step-2-define-controls).
+certificate. Mandatory and optional controls are in [Step 2](#step-2-define-controls){:class="usa-link"}.
 
-See [Appendix C](#appendix-c-templates) for sample artifact templates including standard operating procedures.
+See [Appendix C](#appendix-c-templates){:class="usa-link"} for sample artifact templates including standard operating procedures.
 
 ### Agency User Agreement
 
 A user authorized to sign a Federal Register document conveying the authority of the
 sponsor must understand their responsibilities and the requirements to use and
-protect a delegated digital signature certificate. See the [Appendix C](#appendix-c-templates) for an example
+protect a delegated digital signature certificate. See the [Appendix C](#appendix-c-templates){:class="usa-link"} for an example
 of a user agreement. An agency may define additional annual training or refresher
 requirements to ensure the protection of the individually issued private key. The user
 must sign an agreement to obtain a delegated digital signature certificate.
@@ -361,7 +361,7 @@ The agency senior security official or designee verifies the request with suppor
 documentation and approves or disapproves the request, as appropriate. Once the
 request is approved, the agency submits the required information to their certificate
 issuer or Registration Authority (RA) and stores the evidence for audit or review
-purposes. See [Appendix C](#appendix-c-templates) for an issuance request example.
+purposes. See [Appendix C](#appendix-c-templates){:class="usa-link"} for an issuance request example.
 
 ## Step 2. Define Controls
 
@@ -379,15 +379,15 @@ administrative controls and may inherit several certificate controls.
 ### Required Administrative Controls
 
 1. Review the delegated digital signature standard operating procedures annually, or more
-frequently ([Template](#appendix-c-templates)).
+frequently ([Template](#appendix-c-templates){:class="usa-link"}).
 2. Before selegated digital signature certificate issuance, verify the authorizing sponsor and each
 certificate recipient has a valid PIV card through an auditable
 authentication or signing event.
 3. The delegated digital signature certificate recipient must be a federal employee.
-4. The delegated digital siganture certificate recipient must sign an agency user agreement ([Template](#appendix-c-templates)).
+4. The delegated digital siganture certificate recipient must sign an agency user agreement ([Template](#appendix-c-templates){:class="usa-link"}).
 5. The authorizing sponsor must separately authorize each application of the
 delegated digital signature, and the delegated digital signature certificate
-recipient must keep a record of each approval ([Template](#appendix-c-templates)).
+recipient must keep a record of each approval ([Template](#appendix-c-templates){:class="usa-link"}).
 6. Maximum of two delegated digital siganture certificate recipients to one authorizing sponsor which
 shall be enforced by the requesting agency.
 
@@ -476,7 +476,7 @@ Table 01. Example Common Name in Role-Based Digital Signature Certificates
 | Administrator | CN: Administrator NASA Jane Smith (OFR) | Exclusive to the Administrator Role. |
 | Director | CN: Director ATF Jane Smith (OFR) | Exclusive to the Director Role. |
 
-{% include alert-info.html content="If your PKI SSP does not currently provide delegated digital signature certificates, you will need to coordinate with them to build an appropriate CA certificate template based on the [Common Certificate Profiles Worksheet 18](https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf#page=43){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}, and also potentially work with your RA or Card Management System administrators to create templates for these new delegated digital signature certificate hardware credentials." %}
+{% include alert-info.html content="If your PKI SSP does not currently provide delegated digital signature certificates, you will need to coordinate with them to build an appropriate CA certificate template based on the [Common Certificate Profiles Worksheet 18](https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf#page=43){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link\"}, and also potentially work with your RA or Card Management System administrators to create templates for these new delegated digital signature certificate hardware credentials." %}
 
 ## Summary
 
@@ -492,8 +492,8 @@ the CIO Council E-Signature Document.
 1. [Office of the Federal Register’s Document Drafting Handbook](https://www.archives.gov/files/federal-register/write/handbook/ddh.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [Federal CIO Council & Federal Public Key Infrastructure Policy Authority
 (FPKIPA) - Use of Electronic Signatures in Federal Organization Transactions](https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/1151/2016/10/Use_of_ESignatures_in_Federal_Agency_Transactions_v1-0_20130125.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}
-4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+3. [FICAM Playbook - How to Digitally Sign an Office of the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 
 ## Appendix B. Policy Recommendations
@@ -517,7 +517,7 @@ procedures to issue a delegated digital signature certificate.
 ### Recommendation 3. Update FICAM Playbook on Digitally Signing an OFR Document
 
 **Recommendation:** Update the [FICAM Playbook - How to Digitally Sign an Office of
-the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"} in line with this paper. 
+the Federal Register Document]({{site.baseurl}}/playbooks/signfedregister/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} in line with this paper. 
 
 **Resolution:** Pending final delegated digital signature paper.
 
@@ -530,7 +530,7 @@ paper.
 
 ## Appendix C. Templates
 
-1. [Standard Operating Procedure]({{site.baseurl}}/docs/autopen-template-sop.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
-2. [User Agreement]({{site.baseurl}}/docs/autopen-template-user-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
-3. [Issuance Request]({{site.baseurl}}/docs/autopen-template-issuance-request.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
-4. [Decision Document]({{site.baseurl}}/docs/autopen-template-decision-document.docx){:target="_blank"}{:rel="noopener noreferrer"} (MS Word, March 2023)
+1. [Standard Operating Procedure]({{site.baseurl}}/docs/autopen-template-sop.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} (MS Word, March 2023)
+2. [User Agreement]({{site.baseurl}}/docs/autopen-template-user-agreement.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} (MS Word, March 2023)
+3. [Issuance Request]({{site.baseurl}}/docs/autopen-template-issuance-request.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} (MS Word, March 2023)
+4. [Decision Document]({{site.baseurl}}/docs/autopen-template-decision-document.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} (MS Word, March 2023)

@@ -30,45 +30,45 @@ This page contains information to help Federal Public Key Infrastructure (FPKI) 
 - It can help auditors assess certification authorities (CAs) operated as part of the FPKI. 
 - It can help the general public understand how the FPKI Management Authority (FPKIMA) provides trusted PKI and CA operations.
 
-For any questions, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
+For any questions, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"} .
 
 ## Federal PKI Policies and Profiles
 
 The Federal Public Key Infrastructure (FPKI) provides the government with a trust framework and infrastructure to administer digital certificates and public-private key pairs. For more information on the FPKI,  PIV, and PIV-I visit the following links:
-- [FPKI 101]({{site.baseurl}}/university/fpki/)
-- [PIV 101]({{site.baseurl}}/university/piv/)
-- [PIV-I 101]({{site.baseurl}}/university/pivi/)
+- [FPKI 101]({{site.baseurl}}/university/fpki/){:rel="noopener noreferrer"}{:class="usa-link"}
+- [PIV 101]({{site.baseurl}}/university/piv/){:rel="noopener noreferrer"}{:class="usa-link"}
+- [PIV-I 101]({{site.baseurl}}/university/pivi/){:rel="noopener noreferrer"}{:class="usa-link"}
 
-The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-infrastructure-policy-authority) maintains three certificate policies (the Common Policy Framework, the Federal Bridge Certification Authority Certificate Policy, and the Federal Public Trust TLS Certificate Policy). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
+The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-infrastructure-policy-authority){:rel="noopener noreferrer"}{:class="usa-link"} maintains three certificate policies (the Common Policy Framework, the Federal Bridge Certification Authority Certificate Policy, and the Federal Public Trust TLS Certificate Policy). All cross-certified CA certificate policies are mapped to the Federal Bridge certificate policy.
 
 | Federal PKI Policy | Policy Name | Profile | Change Proposals |
 | -------------- | ----------- | ------- | ---------------- |
-| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.11]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Common Policy X.509 Certificate and CRL Profiles v2.3]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}  | [Common Change Proposals]({{site.baseurl}}/fpki/#federal-pki-document-archive) |
-| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.7]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} <br><br> and [PIV-I for Federal Agencies]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"} | [Bridge Change Proposals]({{site.baseurl}}/fpki/#federal-pki-document-archive) |
-| Federal Public Trust TLS | [U.S. Federal Public Trust TLS PKI Certificate Policy v1.2]({{site.baseurl}}/docs/us-federal-public-trust-tls-cp.pdf){:target="_blank"}{:rel="noopener noreferrer"} | Profiles are included in Section 7 of the Policy | No change proposals |
+| Federal Common Policy | [X.509 Certificate Policy for the U.S. FPKI Common Policy Framework v2.11]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} | [Common Policy X.509 Certificate and CRL Profiles v2.3]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}  | [Common Change Proposals]({{site.baseurl}}/fpki/#federal-pki-document-archive){:rel="noopener noreferrer"}{:class="usa-link"} |
+| Federal Bridge | [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) v3.7]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} <br><br> and [PIV-I for Federal Agencies]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} | [Federal Bridge Certification Authority (FBCA) X.509 Certificate and CRL Extensions Profile v2.0]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} | [Bridge Change Proposals]({{site.baseurl}}/fpki/#federal-pki-document-archive){:rel="noopener noreferrer"}{:class="usa-link"} |
+| Federal Public Trust TLS | [U.S. Federal Public Trust TLS PKI Certificate Policy v1.2]({{site.baseurl}}/docs/us-federal-public-trust-tls-cp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} | Profiles are included in Section 7 of the Policy | No change proposals |
 
 The FPKI has the following supplementary guidance:
 
-- [CPWG Cloud PKI Tiger Team Report (PDF, October 2024)]({{site.baseurl}}/docs/fpki_cloud_guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – A final report including a summary and equivalent controls guidance as developed by the CPWG PKI in the Cloud Tiger Team.  This docment includes the history of the Cloud PKI Tiger Team and provides equivalent control guidance to define cloud PKI design characteristics that meet the intent of FPKI policies.
-- [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for FPKI Systems (PDF, February 2021)]({{site.baseurl}}/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a CA that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
-- [FBCA: Cross-Certification Evaluation Framework v5.0 (PDF, September 2024)]({{site.baseurl}}/docs/fbca-cross-certification-eval-fw.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides a general framework for conducting FPKI cross-certification. This framework includes pre-conditions for being considered as an applicant, the cross-certification process, maintenance of the cross-certified status, and circumstances for terminating the
+- [CPWG Cloud PKI Tiger Team Report (PDF, October 2024)]({{site.baseurl}}/docs/fpki_cloud_guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – A final report including a summary and equivalent controls guidance as developed by the CPWG PKI in the Cloud Tiger Team.  This docment includes the history of the Cloud PKI Tiger Team and provides equivalent control guidance to define cloud PKI design characteristics that meet the intent of FPKI policies.
+- [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for FPKI Systems (PDF, February 2021)]({{site.baseurl}}/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a CA that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
+- [FBCA: Cross-Certification Evaluation Framework v5.0 (PDF, September 2024)]({{site.baseurl}}/docs/fbca-cross-certification-eval-fw.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} - This document provides a general framework for conducting FPKI cross-certification. This framework includes pre-conditions for being considered as an applicant, the cross-certification process, maintenance of the cross-certified status, and circumstances for terminating the
 cross-certification relationship.
-- [Registration Authority Agreement Template v1.0 (Word, April 2017)]({{site.baseurl}}/docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
-- [FPKI Incident Management Plan (PDF, September 2020)]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident.
-- [Archived copies of Certificate Policies, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive) - This page contains three years of FPKI-related documents.
-  - [FPKI Key Recovery Policy (PDF, Subsumed, October 2017)]({{site.baseurl}}/docs/archived/fpki-key-recovery-policy.pdf){:target="_blank"}{:rel="noopener noreferrer"} - for reference only, original consolidated key recovery policy.  All requirements and controls have been mapped and subsumed into other FPKI Certificate Policy documents.
+- [Registration Authority Agreement Template v1.0 (Word, April 2017)]({{site.baseurl}}/docs/fpki-ssp-raa.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} - The purpose of this document is to identify and explain the roles and responsibilities of an enrollment/registration agent under the Federal PKI COMMON Policy Framework.
+- [FPKI Incident Management Plan (PDF, September 2020)]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} - This document provides guidance on the roles and responsibilities applicable to the FPKI Policy Authority (FPKIPA), FPKI Management Authority (FPKIMA), and FPKI affiliates in the event of an incident.
+- [Archived copies of Certificate Policies, Profiles, and other FPKI-related documents]({{site.baseurl}}/fpki/#federal-pki-document-archive){:rel="noopener noreferrer"}{:class="usa-link"} - This page contains three years of FPKI-related documents.
+  - [FPKI Key Recovery Policy (PDF, Subsumed, October 2017)]({{site.baseurl}}/docs/archived/fpki-key-recovery-policy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} - for reference only, original consolidated key recovery policy.  All requirements and controls have been mapped and subsumed into other FPKI Certificate Policy documents.
 
 
 ## Annual Review Requirements for All Certification Authorities
 
 Independent compliance audits are the primary way that the Federal Public Key Infrastructure Policy Authority (FPKIPA) ensures that entities participating in the FPKI comply with the requirements identified in the appropriate Certificate Policies (CPs). Audits are an important component of the Annual Review Requirements.
 
-Audits are required annually for supporting functions and elements of each entity.  Annual review packages should be submitted to [fpki@gsa.gov](mailto:fpki@gsa.gov).
+Audits are required annually for supporting functions and elements of each entity.  Annual review packages should be submitted to [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 
-- [FPKI Annual Review Requirements (PDF, September 2024)]({{site.baseurl}}/docs/fpki-annual-review-requirements.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This document includes requirements for performing and reporting annual compliance audits.
-- [RA Audit Guidance Memorandum (PDF, October 2022]({{site.baseurl}}/docs/fpki-ra-audit-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"} – This FPKIPA Memorandum reiterates the necessity of RA audits in supporting PKI operations, normalizes differing terminology used across various references, and provides options for reducing potential duplication of RA audit efforts, as applicable to PIV issuers.
-- Annual PIV and PIV-I Credential Issuer (PCI) Test Report: This test report supports the FPKI Annual Reviews and can be done either in person at the GSA FIPS 201 lab or remotely by the package submitter. Further details related to the Annual PCI Testing are located [here]({{site.baseurl}}/fips201ep/#personal-identity-verification-credentials).
-- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)]({{site.baseurl}}/docs/fpki-nmf.pdf){:target="_blank"}{:rel="noopener noreferrer"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations in which an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
+- [FPKI Annual Review Requirements (PDF, September 2024)]({{site.baseurl}}/docs/fpki-annual-review-requirements.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – This document includes requirements for performing and reporting annual compliance audits.
+- [RA Audit Guidance Memorandum (PDF, October 2022]({{site.baseurl}}/docs/fpki-ra-audit-guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – This FPKIPA Memorandum reiterates the necessity of RA audits in supporting PKI operations, normalizes differing terminology used across various references, and provides options for reducing potential duplication of RA audit efforts, as applicable to PIV issuers.
+- Annual PIV and PIV-I Credential Issuer (PCI) Test Report: This test report supports the FPKI Annual Reviews and can be done either in person at the GSA FIPS 201 lab or remotely by the package submitter. Further details related to the Annual PCI Testing are located [here]({{site.baseurl}}/fips201ep/#personal-identity-verification-credentials){:rel="noopener noreferrer"}{:class="usa-link"}.
+- [Non-Compliance Management Framework For The Federal Public Key Infrastructure (FPKI) (PDF, January 2016)]({{site.baseurl}}/docs/fpki-nmf.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} - This document provides guidance for the FPKI Policy Authority (FPKIPA) for responding to situations in which an FPKI FBCA member is not meeting their Memorandum of Agreement (MOA) requirements and obligations.
 
 
 ## Annual Review Schedule
@@ -95,16 +95,16 @@ Audits are required annually for supporting functions and elements of each entit
 
 The FPKI Program supports three remote PIV, PIV-I, and digital certificate test tools to support FPKI annual reviews as listed below:
 
-1. The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model.
-2. The [Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"} is a self-hosted application that analyzes public X.509 certificates for conformance to a specified FPKI profile.
-3. The [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"} is Java API hosted on GitHub and used to leverage that the information stored in the PIV/ PIV-I applets conform to NIST SP 800-73.
+1. The [Card Conformance Tool (CCT)](https://github.com/GSA/piv-conformance/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} is a GSA managed, Java tool hosted on GitHub that can verify that a Personal Identity Verification (PIV) or PIV-Interoperable (PIV-I) conforms to the PIV data model.
+2. The [Certificate Profile Conformance Tool (CPCT)](https://github.com/GSA/cpct-tool/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} is a self-hosted application that analyzes public X.509 certificates for conformance to a specified FPKI profile.
+3. The [KSJavaAPI](https://github.com/grandamp/KSJavaAPI){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} is Java API hosted on GitHub and used to leverage that the information stored in the PIV/ PIV-I applets conform to NIST SP 800-73.
 
-To request the annual testing report for PIV/PIV-I cards, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf) and send it with Compliance Test Tool outputs and testing artifacts (for remote testing) to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
+To request the annual testing report for PIV/PIV-I cards, fill out the [Annual PIV Credential Issuer (PCI) Testing Application Form (PDF, February 2020)]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} and send it with Compliance Test Tool outputs and testing artifacts (for remote testing) to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}.
 
 ## Submitting a Test Results Package
-If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov).
+If you are running the Card Conformance Tool as part of the annual requirement to undergo PIV/PIV-I testing, you must email the artifacts listed below to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}.
 
-1.	A completed [testing application]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"} for each PCI configuration evaluated (See Section 1 of the application for more information).
+1.	A completed [testing application]({{site.baseurl}}/docs/fips201ep-pcitestform.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} for each PCI configuration evaluated (See Section 1 of the application for more information).
 2.	All accompanying Card Conformance Tool Log files, these reside in the same directory as the extracted package after the tests have been run:
   - logs (directory)   
   - piv-artifacts (directory)   
@@ -117,7 +117,7 @@ If you are running the Card Conformance Tool as part of the annual requirement t
 
 If you do not receive a confirmation email acknowledging the receipt of your Test
 Results Package within 24 hours of submission, please follow up promptly with the
-FIPS 201 Evaluation Program (EP) team at [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov), ensuring that the
+FIPS 201 Evaluation Program (EP) team at [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}, ensuring that the
 follow-up email does not include any attachments. Timely follow-up helps confirm
 the successful receipt of your Test Results Package and prevents potential delays in
 processing your annual evaluation.
@@ -135,9 +135,9 @@ This section contains information on audits performed on the Federal Common Poli
 
 The FPKIMA Certification Practice Statement (CPS) documents the operational practices required to ensure trusted operations. Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided below.
 
-- [U.S. FPKI Certification Practice Statement (PDF, May 2025) – Version 6.5]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}
-- [U.S. FPKI Audit Letter of Compliance (PDF, August 2024)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"} – Results of the August 2023-August 2024 Compliance Audit for the FPKI Trust Infrastructure Systems.
-- [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}
+- [U.S. FPKI Certification Practice Statement (PDF, May 2025) – Version 6.5]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [U.S. FPKI Audit Letter of Compliance (PDF, August 2024)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Results of the August 2023-August 2024 Compliance Audit for the FPKI Trust Infrastructure Systems.
+- [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Community Interoperability Test Environment (CITE)]({{site.baseurl}}/implement/fpkicite/){:target="_blank"}{:rel="noopener noreferrer"} - information regarding the test FPKI environment to include test CA respsitory information and test certificate policy object identifiers.
 
 ## Report an Incident
@@ -146,7 +146,7 @@ FPKI affiliates include federal agencies and commercial service providers operat
 2. Providing additional investigation support and/or information about incidents to the FPKI Authorities as they become known, and
 3. Conducting remediation activities once an incident is confirmed.
 
-To report a security incident, such as a key compromise, data breach, or other fraud waste or abuse regarding FPKI CAs or certificates, please contact both [fpki@gsa.gov](mailto:fpki@gsa.gov) and  [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov), and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+To report a security incident, such as a key compromise, data breach, or other fraud waste or abuse regarding FPKI CAs or certificates, please contact both [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"} and  [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov){:class="usa-link"}, and include any relevant known information on the incident up to that point.  Further information will be requested from the affiliate per the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
 
 <!-- # Federal PKI Monthly Activity Report
 
@@ -233,7 +233,7 @@ A Federal PKI document may be needed for three years for compliance review purpo
 - Supplementary Guidance
 - Change Proposals
 
-A blank category indicates no updates in the previous three years. If you seek a document that is older than three years or is not listed here, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov) or look in the [archived document repository on github](https://github.com/GSA/idmanagement.gov/tree/staging/docs/archived){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
+A blank category indicates no updates in the previous three years. If you seek a document that is older than three years or is not listed here, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"} or look in the [archived document repository on github](https://github.com/GSA/idmanagement.gov/tree/staging/docs/archived){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 
 <table class="usa-table usa-table--borderless usa-table--striped">
   <thead>
@@ -251,7 +251,7 @@ A blank category indicates no updates in the previous three years. If you seek a
         {% if docs.status == "post" %}
           {% if docs.category == category %}
             <tr class="docs-table-row" data-category="{{ docs.category }}">
-              <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-name"><a href="{{ docs.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ docs.name}}</a></td>
+              <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-name"><a class="usa-link" href="{{ docs.url | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ docs.name}}</a></td>
               <td headers="docs-table-heading-{{ category | slugify }} docs-table-heading-date">{{ docs.remove }}</td>
             </tr>
            {% endif %} 

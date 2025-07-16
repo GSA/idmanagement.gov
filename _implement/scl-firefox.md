@@ -68,5 +68,5 @@ Launch **_Firefox_** and load a new _Security Device_ (i.e., the Security Device
 * Click _OK_ and restart _Firefox_.
 
 ### Test Authentication
-* Browse to a web application that requires authentication with a PIV credential.  A common web application to use as a test is [MAX.gov](https://max.gov/maxportal/home.action){:target="_blank"}{:rel="noopener noreferrer"}. (**Note:** You'll need to have an existing MAX.gov account for this to work.)
+* Browse to a web application that requires authentication with a PIV credential.  A common web application to use as a test is [MAX.gov](https://max.gov/maxportal/home.action){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}. (**Note:** You'll need to have an existing MAX.gov account for this to work.)
 * Firefox will prompt you to enter your PIV credential PIN and select a certificate for authentication.

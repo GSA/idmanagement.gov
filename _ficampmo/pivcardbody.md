@@ -39,18 +39,17 @@ subnav:
 
 ---
 
-
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Card Manufacturers or Suppliers/Vendors</h4>
     <p class="usa-alert__text">
-      If you are looking for the <i>PIV Card Body</i> application form required to submit each of your products, please use the button below to access that form and email the completed and signed form to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>. 
+      If you are looking for the <i>PIV Card Body</i> application form required to submit each of your products, please use the button below to access that form and email the completed and signed form to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>. 
       <br/><br/>
-        <a href="{{site.baseurl}}/docs/fips201-piv-card-apl-evaluation-application-and-services-agreement.docx" target="_blank" aria-label="PIV Card APL Evaluation Program Application Form">
+        <a class="usa-link" href="{{site.baseurl}}/docs/fips201-piv-card-apl-evaluation-application-and-services-agreement.docx" target="_blank" aria-label="PIV Card APL Evaluation Program Application Form">
           <button class="usa-button" type="button">FIPS 201 PIV Card APL EP Application and Services Agreement</button>
         </a>
       <br/><br/>
-      Additional required forms can be found on the <a href="{{site.baseurl}}/fips201ep/#piv-card-body">FIPS 201 Evaluation Program</a> page.
+      Additional required forms can be found on the <a href="{{site.baseurl}}/fips201ep/#piv-card-body" rel="noopener noreferrer" class="usa-link">FIPS 201 Evaluation Program</a> page.
     </p>
   </div>
 </div>
@@ -224,7 +223,7 @@ subnav:
       An <i>Applicant</i> desiring to submit a PIV Card body (hereafter referred to as the Product) for evaluation must follow these Approval Procedures. These procedures provide the necessary category-specific details for the EP to evaluate an <i>Applicant’s</i> Product and place it on the Approved Products List (APL).
     </p>
     <p>
-      If you have any questions or need clarification regarding the PIV Card Body APL process, please contact the FIPS 201 Evaluation Program at <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
+      If you have any questions or need clarification regarding the PIV Card Body APL process, please contact the FIPS 201 Evaluation Program at <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
     </p>
     <p><strong>1.2 Category Description</strong></p>
     <p>    
@@ -243,7 +242,7 @@ subnav:
   <li class="usa-process-list__item">
     <h5 class="usa-process-list__heading">Application Package Contents</h5>
     <p>
-      The Application Package Contents include the artifacts, documentation, and product that the <i>Lab</i> must submit to the EP to perform validation and add to the APL. Submit the associated agreements and reports listed below to <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a> and mail the product to the FIPS 201 EP address provided below.
+      The Application Package Contents include the artifacts, documentation, and product that the <i>Lab</i> must submit to the EP to perform validation and add to the APL. Submit the associated agreements and reports listed below to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a> and mail the product to the FIPS 201 EP address provided below.
     </p>
     <p>
       The Application Package Contents for this category include the following:
@@ -258,13 +257,13 @@ subnav:
           </ul>
         </li>
         <li>
-          Complete and provide the <a href="{{site.baseurl}}/docs/fips201-piv-card-apl-evaluation-application-and-services-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 EP PIV Card APL Application and Service Agreement, v1.0 (Word, May 2025)</a>.
+          Complete and provide the <a class="usa-link" href="{{site.baseurl}}/docs/fips201-piv-card-apl-evaluation-application-and-services-agreement.docx" target="_blank" rel="noopener noreferrer">FIPS 201 EP PIV Card APL Application and Service Agreement, v1.0 (Word, May 2025)</a>.
         </li>
         <li>
-          Complete and provide the <a href="{{site.baseurl}}/docs/fips201-evaluation-program-attestation-form-for-piv-card-body-approval.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program Attestations Form for PIV Card Body Approval, v1.1 (Word, May 2025)</a> – Required for each product submission.
+          Complete and provide the <a class="usa-link" href="{{site.baseurl}}/docs/fips201-evaluation-program-attestation-form-for-piv-card-body-approval.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program Attestations Form for PIV Card Body Approval, v1.1 (Word, May 2025)</a> – Required for each product submission.
         </li>
         <li>
-          Completed and signed <a href="{{site.baseurl}}/docs/fips201-evaluation-program-attestations-to-federal-acquisition-regulations-related-to-the-trade-agreement-act.pdf" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program Attestations to Federal Acquisition Regulations related to the Trade Agreement Act v3.3</a>.
+          Completed and signed <a class="usa-link" href="{{site.baseurl}}/docs/fips201-evaluation-program-attestations-to-federal-acquisition-regulations-related-to-the-trade-agreement-act.pdf" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program Attestations to Federal Acquisition Regulations related to the Trade Agreement Act v3.3</a>.
         </li>
         <li>
         <p>
@@ -447,7 +446,7 @@ subnav:
         <tr>
           <th scope="row">PIV-C.25</th>
           <td>
-            A validation certificate from The NIST Cryptographic Module Validation Program (CMVP), which validates cryptographic modules to the Federal Information Processing Standard (FIPS) 140-3, Security Requirements for Cryptographic Modules: <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" target="_blank" rel="noopener noreferrer">https://csrc.nist.gov/projects/cryptographic-module-validation-program</a>
+            A validation certificate from The NIST Cryptographic Module Validation Program (CMVP), which validates cryptographic modules to the Federal Information Processing Standard (FIPS) 140-3, Security Requirements for Cryptographic Modules: <a class="usa-link" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" target="_blank" rel="noopener noreferrer">https://csrc.nist.gov/projects/cryptographic-module-validation-program</a>
           </td>
           <td>SP 800-73 Appendix A - PIV Data Model</td>
           <td>Card Manufacturer, or the <i>Applicant</i>, or the ISO/ANSI Approved Labs, or the Evaluating Lab.</td>
@@ -496,45 +495,45 @@ subnav:
       The <i>Lab</i> will perform the necessary activities to ensure the authenticity and validity of the certification status for the Product being tested and provide the following:
       <ul>
         <li>
-          A validation certificate from the NIST Personal Identity Verification Program (NPIVP) detailing that the Product being tested is listed in the PIV Card Application Validation list as conformant, as defined in SP 800-73: <a class="usa-link usa-link--external" href="https://csrc.nist.gov/Projects/nist-personal-identity-verification-program/Validation-Lists/piv-card-application-validation-list" rel="noopener noreferrer" target="_blank">https://csrc.nist.gov/Projects/nist-personal-identity-verification-program/Validation-Lists/piv-card-application-validation-list</a>.
+          A validation certificate from the NIST Personal Identity Verification Program (NPIVP) detailing that the Product being tested is listed in the PIV Card Application Validation list as conformant, as defined in SP 800-73: <a class="usa-link" class="usa-link usa-link--external" href="https://csrc.nist.gov/Projects/nist-personal-identity-verification-program/Validation-Lists/piv-card-application-validation-list" rel="noopener noreferrer" target="_blank">https://csrc.nist.gov/Projects/nist-personal-identity-verification-program/Validation-Lists/piv-card-application-validation-list</a>.
         </li>
         <li>
-          A validation certificate from the NIST Cryptographic Module Validation Program (CMVP), which validates cryptographic modules to the Federal Information Processing Standard (FIPS) 140-3, Security Requirements for Cryptographic Modules: <a class="usa-link usa-link--external" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" rel="noopener noreferrer" target="_blank">https://csrc.nist.gov/projects/cryptographic-module-validation-program</a>.
+          A validation certificate from the NIST Cryptographic Module Validation Program (CMVP), which validates cryptographic modules to the Federal Information Processing Standard (FIPS) 140-3, Security Requirements for Cryptographic Modules: <a class="usa-link" class="usa-link usa-link--external" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program" rel="noopener noreferrer" target="_blank">https://csrc.nist.gov/projects/cryptographic-module-validation-program</a>.
         </li>
       </ul>
     </p>
     <p>
-      If you have any questions or need clarification regarding the PIV Card Body APL process, please contact the FIPS 201 Evaluation Program at <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
+      If you have any questions or need clarification regarding the PIV Card Body APL process, please contact the FIPS 201 Evaluation Program at <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
     </p>
   </li>
   <li class="usa-process-list__item">
     <h5 class="usa-process-list__heading">Lab Resources</h5>
     <p>
-      While GSA does not endorse any specific laboratory, the following lab resources are provided for informational purposes only to assist applicants in the evaluation process. If your lab has one of the required certifications and wishes to be added to this list, please contact <a href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
+      While GSA does not endorse any specific laboratory, the following lab resources are provided for informational purposes only to assist applicants in the evaluation process. If your lab has one of the required certifications and wishes to be added to this list, please contact <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.
     </p>
     <p>Evaluation Lab (Alphabetical Order):
       <ol>
         <li>ATSEC: Information Security Corporation
           <ul>
             <li>Contact: Andreas Fabis</li>
-            <li>Phone: <a href="tel:5126157300">(512) 615-7300</a></li>
-            <li>Email: <a href="mailto:fabis@atsec.com">fabis@atsec.com</a></li>
+            <li>Phone: <a class="usa-link" href="tel:5126157300">(512) 615-7300</a></li>
+            <li>Email: <a class="usa-link" href="mailto:fabis@atsec.com">fabis@atsec.com</a></li>
             <li><a class="usa-link usa-link--external" href="https://www.atsec.com" rel="noopener noreferrer" target="_blank">https://www.atsec.com</a></li>
           </ul>
         </li>
         <li>Eclipse Laboratories:
           <ul>
             <li>Contact: Dr. Bradley A. Paulson</li>
-            <li>Phone: <a href="tel:9529468843">(952) 946-8843</a></li>
-            <li>Email: <a href="mailto:bpaulson@eclipselaboratories.com">bpaulson@eclipselaboratories.com</a></li>
+            <li>Phone: <a class="usa-link" href="tel:9529468843">(952) 946-8843</a></li>
+            <li>Email: <a class="usa-link" href="mailto:bpaulson@eclipselaboratories.com">bpaulson@eclipselaboratories.com</a></li>
             <li>Website: <a class="usa-link usa-link--external" href="http://www.eclipselaboratories.com/" rel="noopener noreferrer" target="_blank">http://www.eclipselaboratories.com/</a></li>
           </ul>
         </li>
         <li>Exponent:
           <ul>
             <li>Contact: Brad A. McGoran, P.E., CSCIP, GIAC</li>
-            <li>Phone: <a href="tel:6506887013">(650) 688-7013</a></li>
-            <li>Email: <a href="mailto:bmcgoran@exponent.com">bmcgoran@exponent.com</a></li>
+            <li>Phone: <a class="usa-link" href="tel:6506887013">(650) 688-7013</a></li>
+            <li>Email: <a class="usa-link" href="mailto:bmcgoran@exponent.com">bmcgoran@exponent.com</a></li>
             <li>Website: <a class="usa-link usa-link--external" href="https://www.exponent.com/testing-evaluations" rel="noopener noreferrer" target="_blank">https://www.exponent.com/testing-evaluations</a></li>
           </ul>
         </li>
@@ -545,16 +544,16 @@ subnav:
         <li>Eclipse Laboratories:
           <ul>
             <li>Contact: Dr. Bradley A. Paulson</li>
-            <li>Phone: <a href="tel:9529468843">(952) 946-8843</a></li>
-            <li>Email: <a href="mailto:bpaulson@eclipselaboratories.com">bpaulson@eclipselaboratories.com</a></li>
+            <li>Phone: <a class="usa-link" href="tel:9529468843">(952) 946-8843</a></li>
+            <li>Email: <a class="usa-link" href="mailto:bpaulson@eclipselaboratories.com">bpaulson@eclipselaboratories.com</a></li>
             <li>Website: <a class="usa-link usa-link--external" href="http://www.eclipselaboratories.com/" rel="noopener noreferrer" target="_blank">http://www.eclipselaboratories.com/</a></li>
           </ul>
         </li>
         <li>Exponent:
           <ul>
             <li>Contact: Brad A. McGoran, P.E., CSCIP, GIAC</li>
-            <li>Phone: <a href="tel:6506887013">(650) 688-7013</a></li>
-            <li>Email: <a href="mailto:bmcgoran@exponent.com">bmcgoran@exponent.com</a></li>
+            <li>Phone: <a class="usa-link" href="tel:6506887013">(650) 688-7013</a></li>
+            <li>Email: <a class="usa-link" href="mailto:bmcgoran@exponent.com">bmcgoran@exponent.com</a></li>
             <li>Website: <a class="usa-link usa-link--external" href="https://www.exponent.com/testing-evaluations" rel="noopener noreferrer" target="_blank">https://www.exponent.com/testing-evaluations</a></li>
           </ul>
         </li>

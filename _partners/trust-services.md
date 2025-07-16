@@ -22,7 +22,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">DigiCert PKI Shared Services Decommission and Transition</h4>
     <p class="usa-alert__text">
-      DigiCert announced it is decommissioning its federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact <a href="mailto:fpki@gsa.gov">fpki@gsa.gov</a>.
+      DigiCert announced it is decommissioning its federal shared services platform and transitioning out of the PKI Shared Service Provider program by 2024. They will transition existing customers and not accept any new customers. For transition information, contact <a class="usa-link" href="mailto:fpki@gsa.gov">fpki@gsa.gov</a>.
     </p>
   </div>
 </div>
@@ -31,7 +31,7 @@ This page is for agencies to view the current service providers that have an ide
 
 The services provided rely upon a level of trust to be established with the U.S. government. This trust is managed through legal agreements; technology agreements; and regular auditing of the services, procedures, and practices. These agreements and audits are managed by the Federal Public Key Infrastructure (FPKI).
 
-If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies]({{site.baseurl}}/fpki/notifications/#PivIssuer){:target="_blank"}{:rel="noopener noreferrer"} or the [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph){:target="_blank"}{:rel="noopener noreferrer"}.
+If you are looking for a list of all possible Certification Authorities in the FPKI, please review the [list of PIV CAs and Agencies]({{site.baseurl}}/fpki/notifications/#PivIssuer){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} or the [FPKI Graph]({{site.baseurl}}/fpki/notifications/#fpki-graph){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
 
 ## Overview
 
@@ -43,19 +43,19 @@ Trust Services providers offer services related to identity and credentialing of
 
 We’ve categorized the service providers given below by type of identity and credential and what population is served:
 
-- [Government Identity Services](#government-identity-services) – FPKI Shared Service Providers (SSPs)
-- [Business Identity Services](#business-identity-services) – PIV-Interoperable (PIV-I), and other PKI certificates
-- [Private Sector PKI Trust Framework](#private-sector-pki-trust-framework) – Private sector PKI Bridges that are cross-certified into the FPKI
+- [Government Identity Services](#government-identity-services){:class="usa-link"} – FPKI Shared Service Providers (SSPs)
+- [Business Identity Services](#business-identity-services){:class="usa-link"} – PIV-Interoperable (PIV-I), and other PKI certificates
+- [Private Sector PKI Trust Framework](#private-sector-pki-trust-framework){:class="usa-link"} – Private sector PKI Bridges that are cross-certified into the FPKI
 
 ## Government Identity Services
 
-These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://www.idmanagement.gov/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov).
+These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs](https://www.idmanagement.gov/gsapkissp/). A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 
 Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 | Organization | Category | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|:-----------:|  
-| [Department of the Treasury](https://pki.treasury.gov/about_ssp.htm){:target="_blank"}{:rel="noopener noreferrer"}| FPKI SSP |  Greg Elspas or<br/>Joe Gribble<br/>_DL_PKIPolicy at treasury.gov | pki.pmo at fiscal.treasury.gov or<br/>_DL_PKIPolicy at treasury.gov |  
+| [Department of the Treasury](https://pki.treasury.gov/about_ssp.htm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}| FPKI SSP |  Greg Elspas or<br/>Joe Gribble<br/>_DL_PKIPolicy at treasury.gov | pki.pmo at fiscal.treasury.gov or<br/>_DL_PKIPolicy at treasury.gov |  
 | Entrust Federal Shared Service Provider |	GSA SSP | Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
 | WidePoint Federal Shared Service Provider	| GSA SSP | Jason Holloway or<br/>Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.widepoint.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.widepoint.com |
 

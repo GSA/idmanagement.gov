@@ -18,14 +18,14 @@ Federal agencies require systems and services to be functional, secure, and comp
 - The GSA Federal Acquisition Service issues long-term government-wide contracts that provide federal, state, and local government buyers access to commercial products, services, and solutions at pre-negotiated pricing.
 - The GSA Office of Government-wide Policy provides testing and certification services for specific product categories.
 
-In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government must apply to a Multiple Award Schedule (MAS) Special Item Number (SIN). All ICAM-related SINs require a technical evaluation. In the case of [SIN 541519CSP - Credential Service Provider (CSP)]({{site.baseurl}}/docs/credential-service-provider-capabilities-template-feb-2025.docx){:target="_blank"}{:rel="noopener noreferrer"}, the provided capabilities template must be thoroughly completed.
+In most cases, vendors who wish to sell Identity, Credentialing, and Access Management products or services to the federal government must apply to a Multiple Award Schedule (MAS) Special Item Number (SIN). All ICAM-related SINs require a technical evaluation. In the case of [SIN 541519CSP - Credential Service Provider (CSP)]({{site.baseurl}}/docs/credential-service-provider-capabilities-template-feb-2025.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}, the provided capabilities template must be thoroughly completed.
 - [Homeland Security Presidential Directive 12 (HSPD-12)](https://www.dhs.gov/homeland-security-presidential-directive-12){:class="usa-link usa-link--external"}.
 - [National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63](https://pages.nist.gov/800-63-3/){:class="usa-link usa-link--external"}.
 - [NIST Federal Information Processing Standard (FIPS) 201: Personal Identity Verification (PIV) of Federal Employees and Contractors](https://csrc.nist.gov/publications/detail/fips/201/3/final){:class="usa-link usa-link--external"}.
 
 Two product categories require additional testing at a testing facility before applying to the Multiple Award Schedule.
-1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards]({{site.baseurl}}/fips201/#approved-products---piv-smart-cards ) category.
-2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure, require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems) category.
+1. Smart card credentials require testing by GSA or an approved lab. Products are listed on the [GSA FIPS 201 Approved Products List - PIV Cards]({{site.baseurl}}/fips201/#approved-products---piv-smart-cards ){:rel="noopener noreferrer"}{:class="usa-link"} category.
+2. Physical Access Control Systems (PACS) for buildings, including readers and infrastructure, require testing by GSA. Products are listed on the [GSA FIPS 201 Approved Products List - Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems){:rel="noopener noreferrer"}{:class="usa-link"} category.
 
 Please get in touch with fips201ep at gsa dot gov if you have product approval questions.
 
@@ -39,9 +39,9 @@ It takes three steps to get a product approved for federal use. **If your produc
 
 ## Step 1 – Review Testing Documents
 
-The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/), tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"} used in PIV credentialing systems and PACS.
+The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:rel="noopener noreferrer"}{:class="usa-link"}, tests [commercial products](https://www.acquisition.gov/far/2.101){:target="_blank"}{:rel= "noopener noreferrer"}{:class="usa-link usa-link--external"} used in PIV credentialing systems and PACS.
 
-[Review testing documents and procedures]({{site.baseurl}}/fips201ep/)
+[Review testing documents and procedures]({{site.baseurl}}/fips201ep/){:rel="noopener noreferrer"}{:class="usa-link"}
 
 ## Step 2 – Contact a Testing Lab
 
@@ -58,13 +58,13 @@ Three approved testing labs test PIV card stock:
 GSA manages testing and certification for PACS as well as annual audit testing of production PIV credentials for federal agencies:
 
 - GSA FICAM Testing Lab
-  - Contact: [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov)
+  - Contact: [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}
 
 <!-- above updated on 07/23/2024 cjb -->
 
 If your product completes the testing process, two things occur.
 1. You will receive a signed approval document.
-2. Your product will be listed on the [Approved Products List (APL)]({{site.baseurl}}/fips201/) under the appropriate category.
+2. Your product will be listed on the [Approved Products List (APL)]({{site.baseurl}}/fips201/){:rel="noopener noreferrer"}{:class="usa-link"} under the appropriate category.
 
 After testing and approval, apply to have your product or service listed on the GSA's Multiple Award Schedule (MAS).
 
