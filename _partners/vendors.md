@@ -96,5 +96,5 @@ The Certified System Engineer ICAM PACS (CSEIP) is a certification for PACS inte
 
 The GSA MAS Program, also called the “Schedule,” is the premier contract vehicle for the federal government. The MAS Program is a long-term, government-wide contract between commercial suppliers and the federal government. Being awarded a Schedule contract can open doors for your business, but it requires effort and dedication to succeed. First, determine if the [Schedule](https://www.gsa.gov/sell-to-government?topnav=sell-to-government){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} suits your business.
 
-* [Sell through GSA MAS](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/multiple-award-schedule-it/sell-through-mas-information-technology){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Agencies use the MAS to fulfill their technology products and services needs.
+* [Sell through GSA MAS](https://www.gsa.gov/sell-to-government?topnav=sell-to-government){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Agencies use the MAS to fulfill their technology products and services needs.
 
