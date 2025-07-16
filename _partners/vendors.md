@@ -53,7 +53,7 @@ To get product approval for federal use and meet FIPS 201 standards, first ident
 
 ## PIV Card Body Approval Procedures
 
-For smart card manufacturers or suppliers/vendors seeking to have their product listed on the PIV Card Body Approved Products list, review the documentation and procedures available here: [https://www.idmanagement.gov/pivcardbody/]({{site.baseurl}}/pivcardbody/){:rel="noopener noreferrer"}{:class="usa-link"}
+For smart card manufacturers or suppliers/vendors seeking to have their product listed on the PIV Card Body Approved Products list, review the documentation and procedures available here: [PIV Card Body Approval Procedures]({{site.baseurl}}/pivcardbody/){:rel="noopener noreferrer"}{:class="usa-link"}
 
 If your product completes the process and the FIPS 201 EP Program Manager recommends it for approval, two things happen.
 
