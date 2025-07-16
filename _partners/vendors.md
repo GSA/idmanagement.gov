@@ -7,10 +7,16 @@ sidenav: partners
 sticky_sidenav: true
 
 subnav:
-  - text: Product Approval Process
-    href: '#product-approval-process'
+  - text: FIPS 201 Products and Services Approval Process
+    href: '#fips-201-products-and-services-approval-process'
+  - text: PIV Card Body Approval Procedures
+    href: '#piv-card-body-approval-procedures'
+  - text: Physical Access Control Systems (PACS)
+    href: '#physical-access-control-systems-pacs'
   - text: Professional Services
     href: '#professional-services'
+  - text: Get on a GSA Schedule
+    href: '#get-on-a-gsa-schedule'
 
 ---
 
