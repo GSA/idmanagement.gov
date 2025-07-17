@@ -31,16 +31,16 @@ This University section serves as a knowledge base for all things identity. Expl
 
 A number of 101 guides are available to understand identity topics in general or specific to the federal government.
 
-1. [Public Key Infrastructure]({{site.baseurl}}/university/pki)
-2. [Federal Public Key Infrastructure]({{site.baseurl}}/university/fpki)
-3. [Physical Access Control Systems]({{site.baseurl}}/university/pacs)
-4. [Personal Identity Verification Credential]({{site.baseurl}}/university/piv)
-5. [Personal Identity Verification Interoperable Credential]({{site.baseurl}}/university/pivi)
-6. [ICAM Program Management]({{site.baseurl}}/university/pm)
+1. [Public Key Infrastructure]({{site.baseurl}}/university/pki){:class="usa-link"}
+2. [Federal Public Key Infrastructure]({{site.baseurl}}/university/fpki){:class="usa-link"}
+3. [Physical Access Control Systems]({{site.baseurl}}/university/pacs){:class="usa-link"}
+4. [Personal Identity Verification Credential]({{site.baseurl}}/university/piv){:class="usa-link"}
+5. [Personal Identity Verification Interoperable Credential]({{site.baseurl}}/university/pivi){:class="usa-link"}
+6. [ICAM Program Management]({{site.baseurl}}/university/pm){:class="usa-link"}
 
 ## Training
 
-This is a list of available courses with a focus for free, on-demand training. Vendor offered training does not mean an endorsement of a specific product or service. Suggest new courses by [contacting us]({{site.baseurl}}/contact-us).
+This is a list of available courses with a focus for free, on-demand training. Vendor offered training does not mean an endorsement of a specific product or service. Suggest new courses by [contacting us]({{site.baseurl}}/contact-us){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 1. The [Federal Virtual Training Environment](https://niccs.cisa.gov/education-training/cisa-learning){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a free training resource for all federal employees. Here is a short list of some of the identity courses that are offered.
    1. Micro Learn: IdAM- Identity and Access Management with the CDM Agency Dashboard

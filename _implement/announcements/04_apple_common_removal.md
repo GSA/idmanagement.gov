@@ -77,7 +77,7 @@ This change will also impact Federal Government partners that rely on COMMON&mda
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
 
-{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at fpki@gsa.gov." %} 
+{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at [fpki@gsa.gov](mailto:fpki@gsa.gov){:class=\"usa-link\"}." %} 
 
 ## Frequently Asked Questions
 
@@ -85,7 +85,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 Yes. 
 
 ### 2.&nbsp;&nbsp;What versions are affected?
-Please see [What Will Be Impacted?](#what-will-be-impacted). 
+Please see [What Will Be Impacted?](#what-will-be-impacted){:class="usa-link"}. 
 
 ## Additional Resources
 1. [macOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT202858){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

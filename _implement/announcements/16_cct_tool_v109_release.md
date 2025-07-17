@@ -24,9 +24,9 @@ Click the link below to download the latest release of the **CCT Tool**:
 - No code changes.
 
 ## User Guide
-- [Running the Card Conformance Tool](https://github.com/GSA/piv-conformance/wiki/Running-the-CCT)
-- [Viewing Test Results](https://github.com/GSA/piv-conformance/wiki/Test-results)
-- [Submit Test Results](https://github.com/GSA/piv-conformance/wiki/Submit-Test-Results-to-the-FIPS-201-Evaluation-Lab)
-- [Diagnostics](https://github.com/GSA/piv-conformance/wiki/Diagnostics)
+- [Running the Card Conformance Tool](https://github.com/GSA/piv-conformance/wiki/Running-the-CCT){:class="usa-link"}
+- [Viewing Test Results](https://github.com/GSA/piv-conformance/wiki/Test-results){:class="usa-link"}
+- [Submit Test Results](https://github.com/GSA/piv-conformance/wiki/Submit-Test-Results-to-the-FIPS-201-Evaluation-Lab){:class="usa-link"}
+- [Diagnostics](https://github.com/GSA/piv-conformance/wiki/Diagnostics){:class="usa-link"}
 
-If you have any questions regarding this release please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov).
+If you have any questions regarding this release please contact: [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov){:class="usa-link"}.

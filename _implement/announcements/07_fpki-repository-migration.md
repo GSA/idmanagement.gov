@@ -46,7 +46,7 @@ The FPKI Community Interoperability Test Environment HTTP repository [http://htt
 
 A new base URL is available for anyone who would like to test the planned repository service update before the April 22, 2019 migration. For example, to download a copy of the Federal Common Policy CA certificate using the cloud-based hosting solution, navigate to [http://cdn.http.fpki.gov/fcpca/fcpca.crt](http://cdn.http.fpki.gov/fcpca/fcpca.crt){:class="usa-link usa-link--external"}. 
 
-Contact fpki-help@gsa.gov with the subject “CDN Test Issue” if you'd like to learn more about testing or if you have any issues.
+Contact [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov){:class="usa-link"} with the subject “CDN Test Issue” if you'd like to learn more about testing or if you have any issues.
 
 ## Who Can I Contact for Help or More Information?
-Email us at fpki-help@gsa.gov. 
+Email us at [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov){:class="usa-link"}. 

@@ -19,12 +19,12 @@ subnav:
 ---
 
 This section contains information on the GSA ICAM Solutions Catalog and GSA ICAM Solutions and Shared Services Roadmap in response to [OMB Memorandum 19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. This roadmap is maintained by the GSA Federal Acquisition Service in collaboration with the ICAM Subcommittee.
-- [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap) - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
-- [GSA Solutions Catalog](#gsa-icam-solutions-catalog) - A consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
+- [GSA Solutions and Shared Services Roadmap](#gsa-icam-solutions-and-shared-services-roadmap){:class="usa-link"}  - A roadmap for providing or updating GSA Multiple Award Schedule solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.
+- [GSA Solutions Catalog](#gsa-icam-solutions-catalog){:class="usa-link"}  - A consolidated catalog of existing GSA Multiple Award Schedule ICAM solutions and shared services.
 
 ## GSA ICAM Solutions and Shared Services Roadmap
 
-[This document]({{site.baseurl}}/docs/gsa-icam-roadmap.pdf){:target="_blank"}{:rel="noopener noreferrer"} provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services and developed activities to address identified gaps based on the ICAM Services Framework.
+[This document]({{site.baseurl}}/docs/gsa-icam-roadmap.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}  provides a response to the Office of Management and Budget (OMB) memorandum M-19-17, “Enabling Mission Delivery through Improved Identity, Credential, and Access Management.” The memorandum outlines the federal government's Identity, Credential, and Access Management (ICAM) policy and establishes government-wide responsibilities that include the General Services Administration (GSA). GSA is specifically tasked with developing and maintaining "a roadmap for providing or updating GSA solutions and shared services that allow agencies to achieve the outcomes in OMB ICAM policy and NIST standards and guidelines.” GSA analyzed the current state of ICAM solutions and shared services and developed activities to address identified gaps based on the ICAM Services Framework.
 The roadmap aligns actions to the following three phases:
 
 1. **Foundation** focuses on modifications to the existing services catalog to address critical gaps.
@@ -210,7 +210,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 517312</i>: Wireless Mobility Solutions</td>
     <td style="width:350px">Includes a variety of services that address the mobility needs of government agencies. Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC.</td>
     <td>Digital Certificates <br><br> Derived PIV <br><br> Other mobility offerings on this SIN</td>
-    <td><a href="https://acquisitiongateway.gov/" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
+    <td><a class="usa-link" href="https://acquisitiongateway.gov/" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
   </tr>
   <tr>
     <td>Access Management</td>
@@ -231,14 +231,14 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td><i>SIN 541519PKI</i>: Public Key Infrastructure (PKI) Shared Service Providers (SSP) Program</td>
     <td style="width:350px">This program provides PKI services and digital certificates for use by federal employees and contractors to the federal government.</td>
     <td>Current PKI Shared Service Providers</td>
-    <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Credential Management</td>
     <td><i>SIN 541519IPIV</i>: Homeland Security Presidential Directive-12 Product and Service Components</td>
     <td style="width:350px">PIV products and PIV services to implement the requirements of HSPD-12, FIPS-201, and associated NIST special publications. Implementation components specified under this SIN are: <ul><li>PIV enrollment and registration services</li><li>PIV systems infrastructure</li><li>PIV card management and production services</li><li>PIV card finalization services</li><li>Logical access control products and services</li><li>PIV system integration services. Installation services and FIPS 201 compliant PACS (Physical Access Control System) products.</li></ul></td>
     <td>PKI Shared Service Provider for PIV and additional products support</td>
-    <td><a href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
     <td>Access Management</td>

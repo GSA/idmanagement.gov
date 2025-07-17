@@ -20,8 +20,8 @@ subnav:
 {% for playbook in playbooks %}			
 <li class="usa-card tablet:grid-col-6">
     <div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
-        <div class="usa-card__header">
-            <h3 class="site-preview-heading">{{playbook.title}}</h3>
+        <div class="usa-card__header" style="padding-bottom: 20px;">
+            <h3 class="gsa-card-heading">{{playbook.title}}</h3>
         </div>
         <div class="usa-card__media">
         <div class="usa-card__img">
@@ -29,13 +29,11 @@ subnav:
                 src="{{site.baseurl}}{{playbook.header}}"
                 alt="{{playbook.title}}"
                 tabindex="-1" aria-label="{{playbook.title}}" />
-            </div>
         </div>
-        <hr>
-        <div class="usa-card__body">
-            <p>{{playbook.description}}</p>
         </div>
-        <hr>
+        <div class="usa-card__body gsa-hr-both">
+            <p style="padding: 10px">{{playbook.description}}</p>
+        </div>
         <div class="usa-card__footer">
             <!-- <button type="button" class="usa-button">Button text</button> -->
             Latest Update: {{playbook.pubdate}} <br><span class="usa-tag bg-accent-warm">{{playbook.type}}</span>

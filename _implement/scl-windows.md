@@ -64,28 +64,28 @@ Check the following items **before** reviewing these network guides and lessons 
 
 There are five configuration categories to review with your colleagues.  All five include steps that must be completed; it's best to review and complete the configuration categories in this order:
 
-1. [Network Ports and Protocols](#step-1---network-ports-and-protocols) 
-2. [Domain Controllers](#step-2---domain-controllers)
-3. [Trust Stores](#step-3---trust-stores)
-4. [Account Linking: Associating PIV credentials with User Accounts](#step-4---account-linking)
-5. [Group Policies and Enforcement](#step-5---group-policies-and-enforcement) 
+1. [Network Ports and Protocols](#step-1---network-ports-and-protocols){:class="usa-link"} 
+2. [Domain Controllers](#step-2---domain-controllers){:class="usa-link"}
+3. [Trust Stores](#step-3---trust-stores){:class="usa-link"}
+4. [Account Linking: Associating PIV credentials with User Accounts](#step-4---account-linking){:class="usa-link"}
+5. [Group Policies and Enforcement](#step-5---group-policies-and-enforcement){:class="usa-link"} 
 
 There are five additional guides:
 
-6. [Network Tuning](#step-6---network-tuning)
-7. [Local Certification Authority](#step-7---local-certification-authority)
-8. [Authentication Assurance](#step-8---authentication-assurance)
+6. [Network Tuning](#step-6---network-tuning){:class="usa-link"}
+7. [Local Certification Authority](#step-7---local-certification-authority){:class="usa-link"}
+8. [Authentication Assurance](#step-8---authentication-assurance){:class="usa-link"}
 
 We want to add additional information for installing Online Certificate Status Protocol (OCSP) services, addressing common errors and troubleshooting, and configuring for other operating systems.  
 
-Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
+Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
 
 
 <!-- from https://playbooks.idmanagement.gov/piv/network/ports/  is now an internal page link to here(#ports-and-protocols) instead of its own guilde -->
 
 ## Step 1 - Network Ports and Protocols
 
-Your workstations, servers, network domain controllers, and applications need to validate the [revocation status]({{site.baseurl}}/university/pki/#revocation-checking) of the PIV certificates and all intermediate certificate authority (CA) certificates.  In addition, the [certificate chain]({{site.baseurl}}/university/pki/#establishing-trust) path building may retrieve and download the intermediate CA certificates.
+Your workstations, servers, network domain controllers, and applications need to validate the [revocation status]({{site.baseurl}}/university/pki/#revocation-checking){:rel="noopener noreferrer"}{:class="usa-link"} of the PIV certificates and all intermediate certificate authority (CA) certificates.  In addition, the [certificate chain]({{site.baseurl}}/university/pki/#establishing-trust){:rel="noopener noreferrer"}{:class="usa-link"} path building may retrieve and download the intermediate CA certificates.
 
 The validation occurs in real time (with some caching) and requires ensuring network traffic is open and available to the destination web services, ports, and protocols.  Many U.S. federal agencies implement a layered network security model with demilitarized zones (DMZs), proxies, and Trusted Internet Connections (TICs) to monitor, defend, and protect the networks, applications and users.
 
@@ -138,7 +138,7 @@ The graphical user interface allows you to check OCSP, CRL, and AIA (intermediat
 
 ## Web Services for Validating PIV Certificates
 
-[Revocation]({{site.baseurl}}/university/pki/#revocation-checking) status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/university/piv/#view-your-piv-credential-certificates) are accessible from all workstations and domain controllers.
+[Revocation]({{site.baseurl}}/university/pki/#revocation-checking){:rel="noopener noreferrer"}{:class="usa-link"} status is validated using using either Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs). To meet your initial network requirements, you should ensure the OCSP and CRL URLs included in *your agency* users' [PIV Credential Certificates]({{site.baseurl}}/university/piv/#view-your-piv-credential-certificates){:rel="noopener noreferrer"}{:class="usa-link"} are accessible from all workstations and domain controllers.
 
 | Type | Certificate Extension | Protocol (Port) | Considerations|
 | ----- | -------| -------| ------|
@@ -225,11 +225,11 @@ It is not recommended to set up a local enterprise CA just to issue domain contr
 
 Collaborate with your CISO or Information Security Office for a definitive answer and direction.
 
-If you do have a local enterprise CA, [here are some tips](#step-7---local-certificate-authority).
+If you do have a local enterprise CA, [here are some tips](#step-7---local-certificate-authority){:class="usa-link"}.
 
 ## Step 3 - Trust Stores
 
-Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide]({{site.baseurl}}/implement/trust-fcpca/#step-2---distribute-to-operating-systems).
+Follow [Step 3 - Distribute to Operating System from the distribute FCPCA configuration guide]({{site.baseurl}}/implement/trust-fcpca/#step-2---distribute-to-operating-systems){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 {% include alert-info.html heading = "Mutual Trust" content="Note that both the client machine and domain controller trust stores must be configured for mutual authentication. As a result, the domain controller issuing and root CA certificates needs to be included in the client trust store and the client PIV authentication issuing, intermediate and root certificates need to be able to be trusted by the domain controller." %}  
 
@@ -251,7 +251,7 @@ It's not possible to configure a domain to use *both* altSecurityIdentities *and
 - Users are presented with an additional field during network authentication to identify which account the user wants to access. This field is known as the _User Name Hint_.
      - The User Name Hint informs Windows which account the user is trying to log in to if the mapped certificate is associated with multiple accounts.
      - Entering a User Name Hint is optional if the user's PIV Authentication certificate UPN matches their Windows logon name.
-- You can choose from one of [six options](#1-link-the-piv-authentication-certificate) to map a certificate to a given account.
+- You can choose from one of [six options](#1-link-the-piv-authentication-certificate){:class="usa-link"} to map a certificate to a given account.
 - There is more flexibility for accepting PIV credentials issued by other government agencies or partners, including PIV-Interoperable (PIV-I) credentials.
 
 ### User Principal Name Approach
@@ -267,9 +267,9 @@ If you have a large network with many domains, you should carefully plan the mig
 {% include alert-warning.html heading = "Use of UPN by Applications" content="You may find that you have many applications that rely on User Principal Name values.  There is no need to remove existing or stop populating new User Principal Name values in your transition to altSecurityIdentities." %} 
 
 There are three steps to implement altSecurityIdentities account linking:
-  1. [Link the PIV Authentication Certificate](#option-1-link-the-piv-authentication-certificate)
-  2. [Enable User Name Hints](#option-2-enable-user-name-hints)
-  3. [Disable User Principal Name Mapping](#option-3-disable-user-principal-name-mapping)
+  1. [Link the PIV Authentication Certificate](#option-1-link-the-piv-authentication-certificate){:class="usa-link"}
+  2. [Enable User Name Hints](#option-2-enable-user-name-hints){:class="usa-link"}
+  3. [Disable User Principal Name Mapping](#option-3-disable-user-principal-name-mapping){:class="usa-link"}
 
 
 ## Option 1. Link the PIV Authentication Certificate
@@ -387,7 +387,7 @@ If you are designing an automated process to transition users from Principal Nam
     <p class="usa-alert__text">
       We're working with a small number of agencies to pilot a simple PowerShell script to help with some of the functional requirements above. Check out the script in our    
       <a class="usa-link usa-link--external" href="https://github.com/GSA/ficam-scripts-public/tree/master/_altSecId" target="_blank">public scripts repository</a>
-      or contact <a href="mailto:icam@gsa.gov">icam@gsa.gov</a> for more information.
+      or contact <a class="usa-link" href="mailto:icam@gsa.gov">icam@gsa.gov</a> for more information.
     </p>
   </div>
 </div>
@@ -480,7 +480,7 @@ You can find additional information on configuring kerberos policies given the f
 
 You can tune the network domain settings to help you and your users have a better experience and reduce errors.  This section highlights some of the _common_ tuning configurations for network domain logon.  There are additional tuning configurations and we encourage you to start with these first and contribute others.
 
-You can also send questions to the ICAM Technology listserve ([icam-community-tech-request@listserv.gsa.gov](mailto:icam-community-tech-request@listserv.gsa.gov)) to ask your government colleagues for their additional tips and tricks!
+You can also send questions to the ICAM Technology listserve ([icam-community-tech-request@listserv.gsa.gov](mailto:icam-community-tech-request@listserv.gsa.gov){:class="usa-link"}) to ask your government colleagues for their additional tips and tricks!
 
 ## Cached Logon Credential Limit
 
@@ -763,7 +763,7 @@ For our use, this complex process is simplified into the following workflows:
     <p>PIV logon begins at the client workstation. First, the system discovers smart card reader devices that are built into or attached to the workstation. Next, acceptable smart card logon certificates from any connected cards are provided to the Windows logon screen. In general, PIV cards are engineered to have one authenticate certificate marked eligible for smart card logon. However, in some instances, more than one certificate may have been inadvertently made eligible, meaning the user may first be asked to select the correct certificate for smart card logon. Conversely, the user may have a Facility Access Card (FAC) that omits access to any workstation. For more details on what is in use at your organization, speak with your agency’s credential issuer or Identity, Credential, and Access Management (ICAM) office.</p>
     <img src="{{site.baseurl}}/assets/piv/pivauth-logon-screen.png" alt="A screenshot of a logon screen that includes icons for entering a password or inserting a smart card." style="padding-left:15px">
     <br>
-    <a href="#logon-process-overview">Back to Process Overview</a>
+    <a class="usa-link" href="#logon-process-overview">Back to Process Overview</a>
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Card Selection -->
@@ -792,7 +792,7 @@ For our use, this complex process is simplified into the following workflows:
     <p>The PIV is damaged.</p>
     <h3>Diagnosis</h3>
     <p>If faulty workstation hardware or software is ruled out, and the card does not work on other readers, the PIV may need to be replaced.</p>
-    <p>To confirm that the card is functional, you can use the <a class="usa-link usa-link--external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a href="{{site.baseurl}}/implement/#fpki-troubleshooting-tools" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
+    <p>To confirm that the card is functional, you can use the <a class="usa-link usa-link--external" href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil" target="_blank" rel="noopener noreferrer">Certutil Tool</a>, listed on the <a class="usa-link" href="{{site.baseurl}}/implement/#fpki-troubleshooting-tools" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, on a known working Windows workstation.</p>
     <p><strong>On the client:</strong></p>
     <ol type="1">
       <li>Log in to Windows using a password.</li>
@@ -810,7 +810,7 @@ For our use, this complex process is simplified into the following workflows:
     <h3>Resolution</h3>
     <p>Replace the PIV card if necessary.</p>
     <br>
-    <a href="#logon-process-overview">Back to Process Overview</a>
+    <a class="usa-link" href="#logon-process-overview">Back to Process Overview</a>
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Cred Auth -->
@@ -885,7 +885,7 @@ For our use, this complex process is simplified into the following workflows:
       <img src="{{site.baseurl}}/assets/piv/pivauth-cert-enrollment.png" alt="A screenshot of a Certificate Enrollment window. The words Certificate Installation Results appear in blue near the top of the screenshot. The screenshot includes Active Directory Enrollment Policy Domain Controller Authentication status and details. A green bar runs below the Certificate Enrollment window and the Finish button is highlighted.">
     </ol>
     <br>
-    <a href="#logon-process-overview">Back to Process Overview</a>
+    <a class="usa-link" href="#logon-process-overview">Back to Process Overview</a>
   </div>
 
   <h4 class="usa-accordion__heading"> <!-- Name Mapping -->
@@ -894,9 +894,9 @@ For our use, this complex process is simplified into the following workflows:
   <div id="m-a4" class="usa-accordion__content usa-prose">
     <p>After the domain controller’s authentication certificate is used to make a secure link from the workstation to the domain controller, the certificate data for the user’s smart card is sent to the domain controller for validation. The domain controller does the following to validate the credential:</p>
     <ol type="1">
-      <li>The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the <a href="#step-4---account-linking " target="_blank" rel="noopener noreferrer">Account Linking Playbook</a></li>
-      <li>The certificate is sent to the Microsoft Crypto-API (CAPI) service running on the domain controller for path discovery and validation. CAPI performs basic certificate checks through <a href="{{site.baseurl}}/university/pki/#certification-path-validation" target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
-      <li>The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the <a href="#step-3---trust-stores " target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a></li>
+      <li>The domain controller looks up the user’s account in Active Directory (AD) using information found in the user’s PIV authentication certificate. This process is known as name mapping. More information about user name mapping can be found in the <a class="usa-link" href="#step-4---account-linking " target="_blank" rel="noopener noreferrer">Account Linking Playbook</a></li>
+      <li>The certificate is sent to the Microsoft Crypto-API (CAPI) service running on the domain controller for path discovery and validation. CAPI performs basic certificate checks through <a class="usa-link" href="{{site.baseurl}}/university/pki/#certification-path-validation" target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
+      <li>The domain controller checks its local copy of the Enterprise NTAUTH store for the presence of the issuing certification authority (CA) for the PIV authentication certificate. Steps for adding a certificate to this store can be found in the <a class="usa-link" href="#step-3---trust-stores " target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a></li>
     </ol>
     <p><strong>Note:</strong> Certificate validation of the PIV authentication certificate for smart card logon only occurs on the individual domain controller processing the logon request. The client computer does not check the validity of the logon certificate. Other applications outside of Windows logon may perform certificate validation locally, so it may still be a good idea to have a valid path installed on your organization’s client computers. if you have multiple logon servers in your environment, only the one responding to the individual logon request performs validation. Therefore, it is important to maintain a consistent configuration across your domain controllers.</p>
     <p>Use the information below to troubleshoot additional symptoms encountered after the PIN is entered, but before logon occurs.</p>
@@ -966,12 +966,12 @@ For our use, this complex process is simplified into the following workflows:
     <p><strong>Example 3: The revocation status is unreachable, or the revocation status signature cannot be validated due to an invalid trust path.</strong></p>
     <img src="{{site.baseurl}}/assets/piv/pivauth-example3.png" alt="A screenshot of a window labeled Event 11, CAPI2. The subjectName and the Cert Trust Revocation Status Unknown details are highlighted with yellow." width="766" height="652">
     <p><strong>Note:</strong> The error status in Example 3 will occur for any certificate lower in the path than the above Examples for 1 and 2. For example, if a trusted root cannot be found at the top of the path, no valid revocation status will be found for any certificate issued below the trusted root, including the issuing CA certificate and the end user’s PIV authentication certificate. This situation occurs because the revocation data cannot have its signature verified for the same reasons that the certificate itself cannot.</p>
-<p>You can also use the <a class="usa-link usa-link--external" href="http://pkif.sourceforge.net/pitt.html" target="_blank" rel="noopener noreferrer">PKI Interoperability Test Tool (PITT)</a>, listed on the <a href="{{site.baseurl}}/implement/#fpki-troubleshooting-tools" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, to validate the certificate path on the logon server. The <a class="usa-link usa-link--external" href="http://pkif.sourceforge.net/pitt_usage.pdf" target="_blank" rel="noopener noreferrer">PITT Usage Guide</a> contains procedures for using the tool.</p>    
+<p>You can also use the <a class="usa-link usa-link--external" href="http://pkif.sourceforge.net/pitt.html" target="_blank" rel="noopener noreferrer">PKI Interoperability Test Tool (PITT)</a>, listed on the <a class="usa-link" href="{{site.baseurl}}/implement/#fpki-troubleshooting-tools" target="_blank" rel="noopener noreferrer">Useful Tools page</a>, to validate the certificate path on the logon server. The <a class="usa-link usa-link--external" href="http://pkif.sourceforge.net/pitt_usage.pdf" target="_blank" rel="noopener noreferrer">PITT Usage Guide</a> contains procedures for using the tool.</p>    
     <h3>Resolution</h3>
     <ol type="1">
       <li>On the domain controller, work through any path validation issues identified in the above steps and examples. Keep in mind that that path building comes before validation and that a path is built from the bottom up. In this instance, the PIV authentication certificate chains to a trust anchor, such as Federal Common Policy G2. <strong>Ensure that the correct trust anchor for your organization’s PIV credentials is installed on every domain controller.</strong> If you also trust certificates from other agencies and organizations, the appropriate roots and cross-certificates may need to be installed to complete the path. </li>
       <li>Find expired and revoked certificates that may be installed in your domain controller certificate store and delete them as appropriate. In a Windows environment, unexpected errors often result if you have duplicates of a certificate installed in a given store or have accidently installed an intermediate CA in the trusted root store or vice versa. </li>
-      <li>Lastly, you will need to allow outbound access over port TCP 80 from each domain controller to each of the CRL, OCSP, and AIA distribution points listed in the certificates in the path. For more information, see <a href="{{site.baseurl}}/university/pki/#path-discovery-and-validation " target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
+      <li>Lastly, you will need to allow outbound access over port TCP 80 from each domain controller to each of the CRL, OCSP, and AIA distribution points listed in the certificates in the path. For more information, see <a class="usa-link" href="{{site.baseurl}}/university/pki/#path-discovery-and-validation " target="_blank" rel="noopener noreferrer">Path Discovery and Validation (PDVal)</a>.</li>
     </ol>
     <h2>Possible Cause 2 - CA Not in the NTAuth Store</h2>
     <ol type="1">
@@ -982,7 +982,7 @@ For our use, this complex process is simplified into the following workflows:
       <img src="{{site.baseurl}}/assets/piv/pivauth-operational-event30.png" alt="A screenshot of an Operational window labeled Event 30, CAPI2. Near the top of the screenshot, a row labeled Error is highlighted with yellow. Elsewhere in the screenshot, the subjectName and user name and the Result details are highlighted with yellow." width="766" height="652">
     </ol>
     <h3>Resolution</h3>
-    <p>Follow the steps in the <a href="{{site.baseurl}}/implement/scl-windows/#step-3---trust-stores " target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
+    <p>Follow the steps in the <a class="usa-link" href="{{site.baseurl}}/implement/scl-windows/#step-3---trust-stores " target="_blank" rel="noopener noreferrer">Trust Stores Playbook</a> to add the appropriate issuing CA for the PIV card to the Enterprise NTAuth trust store.</p>
      <hr />    
     <h2>Symptom</h2>
     <p>During smart card logon attempt, the following error is displayed on the logon screen:  <br><strong>The system could not log you on. Your credentials could not be verified.</strong></p>
@@ -1012,6 +1012,6 @@ For our use, this complex process is simplified into the following workflows:
     <img src="{{site.baseurl}}/assets/piv/pivauth-local-group-policy-editor.png" alt="A screenshot of a Local Group Policy Editor window with two columns of folder and item icons and labels. The screenshot includes an inset Interactive Number of previous logons to cache window.">
     <p>If a future logon is attempted while the user’s workstation is disconnected from the organization’s network, and the logon token is cached, the workstation will only authenticate the PIV authentication certificate via PIN and, upon successful entry, will log the user into their desktop using their cached token and permissions. If the value is set to 0, caching does not occur and logon will only occur when the workstation is connected to the network and can communicate with a domain controller.</p>
     <br>
-    <a href="#logon-process-overview">Back to Process Overview</a>
+    <a class="usa-link" href="#logon-process-overview">Back to Process Overview</a>
   </div>
 </div>

@@ -7,6 +7,29 @@
 @forward "uswds-theme";
 @forward "uswds-theme-custom-styles";
 
+// Removed Bootstrap, to defaut to USWDS, 
+  // This carried over only one style used from Bootstrap's Reboot
+  // This sets the diplay of the Cards on the homepage and Playbook Card listing
+  // cjb - 07/11/2025
+.gsa-card-heading {
+	// font-size: calc(1.3rem + .6vw);
+	font-size: calc(1.0rem + .6vw);
+	font-weight: 500;
+	// line-height: 1.2;
+	line-height: 1.0;
+	color: inherit;
+}
+// Partner Buttons at top of Homepage. 
+.gsa-hr-top {
+ border-top:1px solid #c0c0c0;
+}
+// This is to create the hr above and below the card contents for Playbook and Front Page cards
+.gsa-hr-both {
+ border-top:1px solid #c0c0c0;
+ border-bottom: 1px solid #c0c0c0;
+}
+
+
 // USWD Typography adjustments to fix width of text.
   // This also adjusts length of bullet points
   // Improves image sizes and readability
@@ -72,7 +95,7 @@
   color:#005ea2;
 }
 
-// Use to undecorate a span of content withing an anchor tag
+// Use to undecorate a span of content within an anchor tag
 .gsa-no-dec {
   text-decoration: none;
   color: inherit;
@@ -184,7 +207,8 @@
 // Responsive Hero for IDManagement
 .gsa-responsive-hero {
   height:auto;
-  min-width: 220px; 
+  min-width: 220px;
+  padding: 10px;
 }
 
 // Hero text length shortener-er 
@@ -272,6 +296,9 @@
   color: #00bde3;
   line-height: 1.2;
   width: auto;
+  // Added to fix hero headings on homepage. - cjb  
+  margin-top: 5px; 
+  margin-bottom: 5px;
 }
 
 

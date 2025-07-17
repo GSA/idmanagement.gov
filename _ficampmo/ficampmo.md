@@ -41,18 +41,18 @@ Through this four-part framework, the GSA FICAM Program leads or coordinates the
 
 1. Governance
    - ICAM Governance - Maintain and update idmanagement.gov which includes the FICAM Architecture and accompanying playbooks and configuration guidance as well as secretary/co-chair the Federal CISO Council ICAM Subcommittee. Lead governmentwide ICAM initiatives like the FIDO2 Community of Action and Digital Identity Community of Practice.
-   - [Federal PKI Governance]({{site.baseurl}}/fpki/) - Review Federal PKI 3rd party PKI audits and secretary/co-chair the Federal PKI Policy Authority
+   - [Federal PKI Governance]({{site.baseurl}}/fpki/){:rel="noopener noreferrer"}{:class="usa-link"} - Review Federal PKI 3rd party PKI audits and secretary/co-chair the Federal PKI Policy Authority
 2. Technical and Security Requirements
    - FIPS 201 and accompanying Special Publications
    - NIST Special Publication 800-63
    - GSA FIPS 201 Functional Requirements and Test Cases
 3. Recognition
-   - [Workforce identity trust services]({{site.baseurl}}/trust-services) - The current service providers that have an identity federation agreement with the U.S. government.
-   - [FIPS 201 Approved Product List]({{site.baseurl}}/fips201/) - List of tested and certified products from the FIPS 201 Evaluation Program.
-   - [GSA PKI Shared Service Provider Program]({{site.baseurl}}/gsapkissp/) - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
+   - [Workforce identity trust services]({{site.baseurl}}/trust-services){:rel="noopener noreferrer"}{:class="usa-link"} - The current service providers that have an identity federation agreement with the U.S. government.
+   - [FIPS 201 Approved Product List]({{site.baseurl}}/fips201/){:rel="noopener noreferrer"}{:class="usa-link"} - List of tested and certified products from the FIPS 201 Evaluation Program.
+   - [GSA PKI Shared Service Provider Program]({{site.baseurl}}/gsapkissp/){:rel="noopener noreferrer"}{:class="usa-link"} - Manage commercial PKI service providers that issue Federally-compliant digital certificates.
 4. Compliance
-   - [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/) - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
-   - [Federal PKI Annual Review Process]({{site.baseurl}}/fpki/#annual-review-requirements-for-all-certification-authorities) - Independent compliance audit requirement and schedule of Federal PKI Certification Authorities.
+   - [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:rel="noopener noreferrer"}{:class="usa-link"} - Tests and certify services and commercial products used in PIV credentialing systems and physical access control systems.
+   - [Federal PKI Annual Review Process]({{site.baseurl}}/fpki/#annual-review-requirements-for-all-certification-authorities){:rel="noopener noreferrer"}{:class="usa-link"} - Independent compliance audit requirement and schedule of Federal PKI Certification Authorities.
 
 ## ICAM Governance Bodies
 
@@ -75,7 +75,7 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://w
 - **Facilitate Communications and Information Sharing** - acts as a vehicle for cross-government collaboration by sharing information, lessons learned, and best practices related to ICAM.
 
 ### Membership and Meetings
-Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Connect.gov](https://community.connect.gov/display/Egov/ICAMSC+Meeting+Materials){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using a PIV/CAC. See the [ICAMSC Charter (PDF, September 2023)]({{site.baseurl}}/docs/202309-charter-icamsc.pdf){:target="_blank"}{:rel="noopener noreferrer"} for information on membership requirements, voting rights, etc.
+Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Connect.gov](https://community.connect.gov/display/Egov/ICAMSC+Meeting+Materials){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using a PIV/CAC. See the [ICAMSC Charter (PDF, September 2023)]({{site.baseurl}}/docs/202309-charter-icamsc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} for information on membership requirements, voting rights, etc.
 
 ### ICAMSC Working Groups 
 
@@ -91,7 +91,7 @@ Membership is open to federal agency employees with a .gov or .mil email address
 
 **Identity Focused WG** - formerly Derived-PIV.
 
-The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Send an email to [icam@gsa.gov](mailto:icam@gsa.gov) for more information and join a working group.
+The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC Max.gov page](https://community.max.gov/pages/viewpage.action?pageId=234815732){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Send an email to [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"} for more information and join a working group.
 
 
 ### Other ICAM Working Groups
@@ -103,7 +103,7 @@ Other ICAM working groups may be charted under other committees or subcommittees
 
 The Federal ICAM Community Technical Listserv (ICAM-COMMUNITY-TECH List) aims to provide a communications platform to share and discuss technical issues impacting the Federal ICAM Community. We hope to leverage the knowledge of ICAM Subject Matter Experts to identify, share, and hopefully resolve technical issues that exist in Agencies and Departments. This list is open to anyone with a .gov email.
 
-Subscribe by contacting the list owner: [icam-community-tech-request@listserv.gsa.gov](mailto:icam-community-tech-request@listserv.gsa.gov)  with subscribe in the subject line.
+Subscribe by contacting the list owner: [icam-community-tech-request@listserv.gsa.gov](mailto:icam-community-tech-request@listserv.gsa.gov){:class="usa-link"}  with subscribe in the subject line.
 
 ## Federal Public Key Infrastructure Policy Authority
 
@@ -114,19 +114,19 @@ It is co-chaired by the GSA Office of Government-wide Policy. The GSA Office of 
 ### Activities
 - **Approve Policies and Practices** – Approve Federal Bridge Certification Authority (FBCA) and Federal Common Policy Certification Authority Certificate Policies (CPs), including revisions; approve FPKI Trust Infrastructure Certification Practice Statements.
 - **Approve Entity Cross-Certification** – Establish and administer criteria and methodology for cross-certification with the FBCA; approve cross-certifications and execute Memoranda of Agreement (MOAs); maintain the FPKI Certification Applicant Requirements and the Common Policy CPS Evaluation Matrix.
-- [**Maintain Compliance**]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority) – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
+- [**Maintain Compliance**]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority){:class="usa-link"} – Ensure cross-certified entities are compatible with the FBCA Certificate Policy (CP) (or the Federal Common Policy Certification Authority (FCPCA) CP for Federal Legacy CAs).
 - **Agreement with FPKI Management Authority** – Oversee the FPKI Management Authority (FPKIMA) to issue and revoke cross-certificates, ensure adherence to the FPKI CPs, and provide documentation to be archived.
 - **Interoperability Practices** – Coordinate legal, policy, technical, and business practices and issues related to FPKI Trust Infrastructure.
 
 ### Membership and Meetings
 
-Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
+Members are appointed by each federal agency’s CIO, and the group operates under the authority of the Federal CIO Council through the Information Security and Identity Management Committee (ISIMC) and the Identity, Credential, and Access Management Subcommittee (ICAMSC). See the [FPKIPA Charter]({{site.baseurl}}/docs/fpkipa-charter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} (PDF, August 2021) for information on membership requirements, voting rights, etc.
 
-The FPKIPA meets in the morning on the second Tuesday of each month. Contact [fpki@gsa.gov](mailto:fpki@gsa.gov) to participate in the FPKIPA or its working groups.
+The FPKIPA meets in the morning on the second Tuesday of each month. Contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"} to participate in the FPKIPA or its working groups.
 
 ## Federal Public Key Infrastructure Management Authority
 
-[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust]({{site.baseurl}}/docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
+[The Federal Public Key Infrastructure Management Authority (FPKIMA) enables government-wide trust]({{site.baseurl}}/docs/fpki-fpkima-wp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} by providing trust infrastructure services to federal agencies. The FPKIMA is governed under the FPKI Policy Authority (FPKIPA) and managed by the GSA Federal Acquisition Service.
 
 ### Activities
 - **Manage digital certificate policies and standards** to ensure secure physical and logical access, document sharing, and communications across federal agencies and between external business partners.
@@ -138,13 +138,13 @@ The FPKIPA meets in the morning on the second Tuesday of each month. Contact [fp
 
 Previous versions of the FPKIMA Newsletters are archived and can be found in the IDManagement.gov repo under the [docs folder](https://github.com/GSA/idmanagement.gov/tree/staging/docs){:target="_blank"}{:rel="noopener noreferrer"}. 
 
-If your agency is experiencing issues related to the FBCA or FCPCA, contact [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov)
+If your agency is experiencing issues related to the FBCA or FCPCA, contact [fpki-help@gsa.gov](mailto:fpki-help@gsa.gov){:class="usa-link"}
 
 ### Federal Public Key Infrastructure Working Groups
 
 The FPKIPA charters two ongoing working groups and potentially other short-term working groups and tiger teams. 
 
-If you meet the membership criteria and wish to join a working group, email [fpki@gsa.gov](mailto:fpki@gsa.gov) and include the text "Request to Join xx," where "xx" is the name of the working group.
+If you meet the membership criteria and wish to join a working group, email [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"} and include the text "Request to Join xx," where "xx" is the name of the working group.
 
 **Certificate Policy (CPWG)** - The Federal Bridge and Common policies advisory group facilitates proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. Members must be a Federal employees, designated contractors, and PKI providers involved in the FPKI.
 

@@ -33,4 +33,4 @@ The following CAs are planned for revocation and decommissioning:
 | 404d442e9c097771209218ac534936c3 | Eid Passport LRA Device 2 CA | Symantec Class 3 SSP Intermediate CA - G3 |
 
 ## Who Can I Contact for Help or More Information?  
-Email us at fpki@gsa.gov.
+Email us at [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
