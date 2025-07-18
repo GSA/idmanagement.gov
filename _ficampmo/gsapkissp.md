@@ -274,7 +274,7 @@ A GSA PKI SSP must complete ongoing maintenance activity to remain in the progra
 
 A GSA PKI SSP must comply with all federal PKI-directed activities by:
 
-1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
+1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority){:rel="noopener noreferrer"}{:class="usa-link"}.
 2. Following the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} in the event of a PKI-related incident.
 
 ### SA&A Maintenance
