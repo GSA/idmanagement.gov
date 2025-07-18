@@ -114,57 +114,57 @@ subnav:
   </h4>
   <div id="v-c2" class="usa-accordion__content usa-prose">
 <ol>
-<li><a href="#executive-summary">Executive Summary</a></li>
-<li><a href="#scope">Scope</a></li>
-<li><a href="#unifyia-platform">Unifyia Platform</a></li>
-<li><a href="#passkeys-fido2-fundamentals">FIDO2 Passkeys Fundamentals</a></li>
-<li><a href="#passkeys-fido2-implementation-using-the-unifyia-platform">FIDO2 Passkeys Implementation Using the Unifyia Platform</a>
+<li><a class="usa-link" href="#executive-summary">Executive Summary</a></li>
+<li><a class="usa-link" href="#scope">Scope</a></li>
+<li><a class="usa-link" href="#unifyia-platform">Unifyia Platform</a></li>
+<li><a class="usa-link" href="#passkeys-fido2-fundamentals">FIDO2 Passkeys Fundamentals</a></li>
+<li><a class="usa-link" href="#passkeys-fido2-implementation-using-the-unifyia-platform">FIDO2 Passkeys Implementation Using the Unifyia Platform</a>
   <ol type="a">
-    <li><a href="#system-configurations">System Configurations</a></li> 
+    <li><a class="usa-link" href="#system-configurations">System Configurations</a></li> 
   </ol>
 </li>
-<li><a href="#user-self-issuance-of-passkeys-fido2">User Self-Issuance of Passkeys</a>
+<li><a class="usa-link" href="#user-self-issuance-of-passkeys-fido2">User Self-Issuance of Passkeys</a>
   <ol type="a">
-    <li><a href="#log-in-using-idp-credentials-to-issue-passkeys-fido2">Log In Using IDP Credentials to Issue Passkeys</a></li>
-    <li><a href="#log-in-using-piv-id-to-issue-derived-passkeys-dfcs">Log In Using PIV ID to Issue Derived Passkeys</a></li>
-    <li><a href="#fido2-provisioning-on-behalf-of-relying-parties">FIDO2 Provisioning on Behalf of Relying Parties</a></li>
+    <li><a class="usa-link" href="#log-in-using-idp-credentials-to-issue-passkeys-fido2">Log In Using IDP Credentials to Issue Passkeys</a></li>
+    <li><a class="usa-link" href="#log-in-using-piv-id-to-issue-derived-passkeys-dfcs">Log In Using PIV ID to Issue Derived Passkeys</a></li>
+    <li><a class="usa-link" href="#fido2-provisioning-on-behalf-of-relying-parties">FIDO2 Provisioning on Behalf of Relying Parties</a></li>
 </ol>
 </li>
-<li><a href="#user-issuing-mobile-credentials-on-the-unifyia-id-wallet-app">User Issuing Mobile Credentials on the Unifyia ID Wallet App</a></li>
-<li><a href="#operator-issuance-of-passkeys-fido2">Operator Issuance of Passkeys</a>
+<li><a class="usa-link" href="#user-issuing-mobile-credentials-on-the-unifyia-id-wallet-app">User Issuing Mobile Credentials on the Unifyia ID Wallet App</a></li>
+<li><a class="usa-link" href="#operator-issuance-of-passkeys-fido2">Operator Issuance of Passkeys</a>
   <ol type="a">
-    <li><a href="#sponsor-user">Sponsor User</a></li>
-    <li><a href="#enroll-user">Enroll User</a></li>
-    <li><a href="#issue-passkeys-fido2">Issue Passkeys (FIDO2)</a></li>
-    <li><a href="#issue-derived-fido2-credential">Issue Derived FIDO2 Credential</a></li>
-    <li><a href="#operator-issuing-mobile-credentials-on-the-unifyia-id-wallet-app">Operator Issuing Mobile Credentials on the Unifyia ID Wallet App</a></li>
+    <li><a class="usa-link" href="#sponsor-user">Sponsor User</a></li>
+    <li><a class="usa-link" href="#enroll-user">Enroll User</a></li>
+    <li><a class="usa-link" href="#issue-passkeys-fido2">Issue Passkeys (FIDO2)</a></li>
+    <li><a class="usa-link" href="#issue-derived-fido2-credential">Issue Derived FIDO2 Credential</a></li>
+    <li><a class="usa-link" href="#operator-issuing-mobile-credentials-on-the-unifyia-id-wallet-app">Operator Issuing Mobile Credentials on the Unifyia ID Wallet App</a></li>
   </ol>
 </li>
-<li><a href="#user-authentication-using-the-issued-credentials">User Authentication Using the Issued Credentials</a>
+<li><a class="usa-link" href="#user-authentication-using-the-issued-credentials">User Authentication Using the Issued Credentials</a>
     <ol type="a">
-      <li><a href="#authenticate-using-the-passkeys-fido2">Authenticate Using the Passkeys</a>
+      <li><a class="usa-link" href="#authenticate-using-the-passkeys-fido2">Authenticate Using the Passkeys</a>
         <ol type="i">
-          <li><a href="#scan-a-qr-code-to-authenticate">Scan a QR Code to Authenticate</a></li>
-          <li><a href="#use-security-keys-to-authenticate">Use Security Keys to Authenticate</a></li>
+          <li><a class="usa-link" href="#scan-a-qr-code-to-authenticate">Scan a QR Code to Authenticate</a></li>
+          <li><a class="usa-link" href="#use-security-keys-to-authenticate">Use Security Keys to Authenticate</a></li>
         </ol>
       </li>
-      <li><a href="#authenticate-using-the-unifyia-id-wallet-credentials">Authenticate Using the Unifyia ID Wallet Credentials</a>
+      <li><a class="usa-link" href="#authenticate-using-the-unifyia-id-wallet-credentials">Authenticate Using the Unifyia ID Wallet Credentials</a>
         <ol type="i">
-          <li><a href="#fido2-credential">FIDO2 Credential</a></li>
-          <li><a href="#pki-credential">PKI Credential</a></li>
-          <li><a href="#consent-credential-push-verify">Consent Credential - Push Verify</a></li>
-          <li><a href="#otp-credential">OTP Credential</a></li> 
+          <li><a class="usa-link" href="#fido2-credential">FIDO2 Credential</a></li>
+          <li><a class="usa-link" href="#pki-credential">PKI Credential</a></li>
+          <li><a class="usa-link" href="#consent-credential-push-verify">Consent Credential - Push Verify</a></li>
+          <li><a class="usa-link" href="#otp-credential">OTP Credential</a></li> 
         </ol>
       </li>
     </ol>
 </li> 
-<li><a href="#granular-lifecycle-management-of-the-passkeys-fido2">Granular Lifecycle Management of the Passkeys</a>
+<li><a class="usa-link" href="#granular-lifecycle-management-of-the-passkeys-fido2">Granular Lifecycle Management of the Passkeys</a>
   <ol type="a">
-  <li><a href="#operator-lifecycle-actions">Operator Lifecycle Actions</a></li>
-  <li><a href="#user-lifecycle-actions">User Lifecycle Actions</a></li>
+  <li><a class="usa-link" href="#operator-lifecycle-actions">Operator Lifecycle Actions</a></li>
+  <li><a class="usa-link" href="#user-lifecycle-actions">User Lifecycle Actions</a></li>
   </ol>
 </li>
-<li><a href="#glossary">Glossary</a></li>
+<li><a class="usa-link" href="#glossary">Glossary</a></li>
 </ol>
 </div>
 </div>
@@ -317,7 +317,7 @@ This document does not include detailed system configurations required to suppor
 ## Passkeys Implementation Using the Unifyia Platform
 
 <p align="justify"> Implementing the passkeys within federal agencies involves technical and policy aspects while ensuring alignment with federal standards. The issuance of the passkeys can be operator-based or self-issued by a user based on the organization's policies. The passkeys implementation for government and federal agencies using the Unifyia platform focuses on issuing passkeys on external security keys/smart cards and the Unifyia ID Wallet app. The following are the considerations for implementing the strategy:</p>
-![Passkeys Implementation Strategy]({{site.baseurl}}/assets/unifyia/0-fido2-implementation-strategy.png)
+![Passkeys Implementation Strategy]({{site.baseurl}}/assets/unifyia/0-fido2-implementation-strategy.png){:rel="noopener noreferrer"}{:class="usa-link"}
 
 - **Role-based access control** Define granular user controls by allowing role-based access privileges. The Unifyia platform supports PIV and generic operator and administrator roles. It allows you to assign privileges as required to a specific role.
 - **Configure FIDO2 policies and workflows** Define the policy considerations for the implementation and configure the FIDO2 policies and workflows required for the defined implementation.

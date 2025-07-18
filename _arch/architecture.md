@@ -146,7 +146,7 @@ FICAM is the federal government’s enterprise approach to design, plan, and exe
 
 The FICAM Architecture is a framework for an agency to use in the ICAM program and solution roadmap planning. The FICAM Architecture focuses on enterprise identity processes, practices, policies, and information security disciplines. 
 
->  A federal enterprise identity is the unique representation of an employee, contractor, or enterprise user, which could be a mission, business partner, or even a device or technology managed by a Federal agency to achieve its mission and business goals [(OMB Memorandum 19-17)](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+>  A federal enterprise identity is the unique representation of an employee, contractor, or enterprise user, which could be a mission, business partner, or even a device or technology managed by a Federal agency to achieve its mission and business goals [(OMB Memorandum 19-17)](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
 
 ## Who Is the FICAM Architecture for?
 The FICAM Architecture is for agency personnel. An enterprise architecture is primarily used by:
@@ -156,10 +156,10 @@ The FICAM Architecture is for agency personnel. An enterprise architecture is pr
 
 There are four main government-wide initiatives to help agencies implement and manage an Agency ICAM program and technology.
 
-  1. **Planning and Configuration Guidance** The FICAM Architecture and accompanying [playbooks]({{site.baseurl}}/playbooks/) provide an overall guide for meeting federal ICAM requirements in an efficient and secure way. It focuses on enterprise identity processes, practices, policies, and information security disciplines. Playbooks offer stakeholders overarching strategies and tactical approaches for implementing technical FICAM topics.
-  2. [Interagency Forum and Subcommittee]({{site.baseurl}}/ficam/#icam-governance-bodies): The Federal Chief Information Security Officer (CISO) Council is a primary resource for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. The ICAM Subcommittee aligns identity management activities of the federal government and supports collaborative government-wide efforts.
-  3. [Approved Products Lists (APL)]({{site.baseurl}}/fips201/): The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program not only tests commercial products for use in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures but also publish APLs. Federal acquisition professionals rely on these APLs to purchase commercial products that fully comply with federal ICAM mandates.
-  4. [Federal Public Key Infrastructure (PKI)]({{site.baseurl}}/university/fpki/): The Federal PKI is a network of certification authorities (CAs) that issue PIV credentials and person identity certificates; PIV-Interoperable credentials and person identity certificates; and other person identity certificates. CA-issued digital certificates, which employ cryptography, close security gaps in user identification and authentication, encryption of sensitive data, and data integrity.
+  1. **Planning and Configuration Guidance** The FICAM Architecture and accompanying [playbooks]({{site.baseurl}}/playbooks/){:rel="noopener noreferrer"}{:class="usa-link"} provide an overall guide for meeting federal ICAM requirements in an efficient and secure way. It focuses on enterprise identity processes, practices, policies, and information security disciplines. Playbooks offer stakeholders overarching strategies and tactical approaches for implementing technical FICAM topics.
+  2. [Interagency Forum and Subcommittee]({{site.baseurl}}/ficam/#icam-governance-bodies){:rel="noopener noreferrer"}{:class="usa-link"}: The Federal Chief Information Security Officer (CISO) Council is a primary resource for identity management, secure access, authentication, authorization, credentials, privileges, and access lifecycle management. The ICAM Subcommittee aligns identity management activities of the federal government and supports collaborative government-wide efforts.
+  3. [Approved Products Lists (APL)]({{site.baseurl}}/fips201/){:rel="noopener noreferrer"}{:class="usa-link"}: The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program not only tests commercial products for use in Personal Identity Verification (PIV) credentialing systems, physical access control systems (PACS), and public key infrastructures but also publish APLs. Federal acquisition professionals rely on these APLs to purchase commercial products that fully comply with federal ICAM mandates.
+  4. [Federal Public Key Infrastructure (PKI)]({{site.baseurl}}/university/fpki/){:rel="noopener noreferrer"}{:class="usa-link"}: The Federal PKI is a network of certification authorities (CAs) that issue PIV credentials and person identity certificates; PIV-Interoperable credentials and person identity certificates; and other person identity certificates. CA-issued digital certificates, which employ cryptography, close security gaps in user identification and authentication, encryption of sensitive data, and data integrity.
 
 ## What Is the History of the FICAM Architecture?
 The FICAM Architecture was created in 2009 to provide a common ICAM segment architecture for federal agencies. The FICAM Architecture was the primary foundation of what later became the _FICAM Roadmap and Implementation Plan_, enhanced with complementary implementation sections.  
@@ -176,7 +176,7 @@ The Goals and Objectives identify the aims and outcomes of a federal agency ente
 
 The visual below presents the three goals, each with its own objectives.
 
-<a href="{{site.baseurl}}/assets/arch/all_goals.png" target="_blank">
+<a class="usa-link" href="{{site.baseurl}}/assets/arch/all_goals.png" target="_blank">
   <img src="{{site.baseurl}}/assets/arch/all_goals.png" alt="Three boxes that define the goals and their corresponding objectives.">
 </a>
 
@@ -302,11 +302,11 @@ Examples of access requirements include:
 - “Grant access to any agency employee or contractor with an authenticated PIV card.”
 - “Grant access to anyone who is a federal employee, GS-12 or higher, cleared Top Secret, trained in first aid, and certified as a project manager.”
 
-In providing access services, it can be challenging to conduct an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}
+In providing access services, it can be challenging to conduct an application discovery and inventory for both physical and logical access. For logical access, see the [Application Inventory and Identity Risk Analysis section of the Enterprise Single Sign-On Playbook.]({{site.baseurl}}/playbooks/sso/#step-2-plan-application-integration){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 ## Authentication
 
-Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}
+Authentication is how you verify the claimed identity of someone trying to access an agency resource. Typically, you’ll verify an identity using an authenticator associated with a credential. To determine the appropriate authenticator level, use the [Digital Identity Risk Assessment Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 Authentication is generally a two-step process:
 
@@ -401,7 +401,7 @@ These use cases are designed for ICAM Enterprise Architects and business owners 
 
 Each use case includes a high-level summary of the scenario, individuals and systems involved in the use case, illustrations that show the required steps to achieve the end goal, and an icon that indicates the practice area and the service with which the use case most closely aligns.
 
-For details about ICAM services, see the [Services Framework](#services-framework-and-service-descriptions).
+For details about ICAM services, see the [Services Framework](#services-framework-and-service-descriptions){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 While each use case describes a particular ICAM business process, the use cases are all interrelated. The use cases generalize the activities and technologies to make sure they apply across many agencies.
 
@@ -478,7 +478,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         <li><strong>IAL2</strong> - first and last name, email address, and address of record, supported by appropriate identity documentation and verified as strong.</li>
         <li><strong>IAL3</strong> - first and last name, email address, address of record, and fingerprints, supported by appropriate identity documentation and verified as superior.</li>
         </ul>
-        <p>For more information about identity proofing and IALs, see <a href="https://pages.nist.gov/800-63-3/sp800-63a.html#22-identity-assurance-levels" target="_blank">NIST SP 800-63A</a> (Section 2.2).</p>
+        <p>For more information about identity proofing and IALs, see <a class="usa-link" href="https://pages.nist.gov/800-63-3/sp800-63a.html#22-identity-assurance-levels" target="_blank">NIST SP 800-63A</a> (Section 2.2).</p>
         <hr />
         <h2 id="use-case">Use Case</h2>
         <p>In this use case, an administrator needs to collect or manage identity data for an employee or contractor for the purpose of creating an enterprise identity record and maintaining it throughout its lifecycle.</p>
@@ -626,9 +626,9 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         <p><img src="{{site.baseurl}}/assets/arch/usecases/credentials_maintain_revoke.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management, with a green banner for the Maintenance and Revocation services. " align="right" style="padding-left:15px"  width="156" height="156" /></p>
         <p>Active credentials require regular maintenance. This use case describes the most common credential maintenance activities:</p>
         <ul>
-        <li><strong><a href="#reset-a-credential">Reset a credential</a></strong> - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.</li>
-        <li><strong><a href="#renew-a-credential">Renew a credential</a></strong> - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date; otherwise, the employee or contractor must go through the issuance process again.</li>
-        <li><strong><a href="#revoke-a-credential">Revoke a credential</a></strong> - An employee or contractor is no longer eligible for their credential (like separating from the issuing agency). The sponsor, supervisor, or administrator requests a revocation of all associated credentials and enterprise accounts.</li>
+        <li><strong><a class="usa-link" href="#reset-a-credential">Reset a credential</a></strong> - An employee or contractor forgets the password or PIN associated with a credential and requests a reset.</li>
+        <li><strong><a class="usa-link" href="#renew-a-credential">Renew a credential</a></strong> - An employee or contractor’s credential is expiring or their identity information changes, so they request a replacement credential. You must renew a credential prior to the expiration date; otherwise, the employee or contractor must go through the issuance process again.</li>
+        <li><strong><a class="usa-link" href="#revoke-a-credential">Revoke a credential</a></strong> - An employee or contractor is no longer eligible for their credential (like separating from the issuing agency). The sponsor, supervisor, or administrator requests a revocation of all associated credentials and enterprise accounts.</li>
         </ul>
         <p>You should periodically review your employee or contractors’ eligibility for credentials to identify potential orphaned data.</p>
         <hr />
@@ -721,7 +721,7 @@ You can combine or build upon the ICAM use cases to support your agency’s scen
         </tr>
         <tr>
             <td style="width:250px;border:0px;"><strong>2. Authenticate the employee or contractor</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-2.png" width="250" alt="A diagram showing an employee or contractor presenting either an IAL2 or IAL3 authenticator to an access control system." /></td>
-            <td style="border:0px;">The employee or contractor presents an authenticator to the ACS that meets the protected resource’s minimum assurance requirements:<ul><li><strong>AAL2</strong> (two-factor) - Something you know + something you have, like a one-time passcode.</li><li><strong>AAL3</strong> (two-factor + hardware) - Something you know + something you have, like a one-time passcode generated by a hardware-based authenticator; or a PIV credential. For more information about AAL values, see <a href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5" target="_blank" rel="noopener noreferrer">NIST SP 800-63B Section 5: Authenticator and Verifier Requirements</a>.</li></ul></td>
+            <td style="border:0px;">The employee or contractor presents an authenticator to the ACS that meets the protected resource’s minimum assurance requirements:<ul><li><strong>AAL2</strong> (two-factor) - Something you know + something you have, like a one-time passcode.</li><li><strong>AAL3</strong> (two-factor + hardware) - Something you know + something you have, like a one-time passcode generated by a hardware-based authenticator; or a PIV credential. For more information about AAL values, see <a class="usa-link" href="https://pages.nist.gov/800-63-3/sp800-63b.html#sec5" target="_blank" rel="noopener noreferrer">NIST SP 800-63B Section 5: Authenticator and Verifier Requirements</a>.</li></ul></td>
         </tr>
         <tr>
             <td style="width:250px;border:0px;"><strong>3. Determine the access entitlements and access requirements</strong> <br /> <img src="{{site.baseurl}}/assets/arch/usecases/7-3.png" width="250" alt="A diagram showing an access control system determining the access entitlements and access requirements." /></td>
@@ -870,5 +870,5 @@ Agency endpoints may include:
 
 ## Policies and Standards
 
-See the [ICAM Policy Matrix]({{site.baseurl}}/university/policymatrix/) for the latest set of ICAM policies and standards.
+See the [ICAM Policy Matrix]({{site.baseurl}}/university/policymatrix/){:rel="noopener noreferrer"}{:class="usa-link"} for the latest set of ICAM policies and standards.
 

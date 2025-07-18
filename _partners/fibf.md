@@ -29,10 +29,10 @@ All five ICAM FIBF components are drafted and establish the ICAM baseline for in
 
 The project timeline is as follows:
 
-[<img src="{{site.baseurl}}/assets/fibf/framework-timeline.png" alt="icam fibf comment timeline.">]({{site.baseurl}}/assets/fibf/framework-timeline.png){:target="_blank"}{:rel="noopener noreferrer"} 
+[<img src="{{site.baseurl}}/assets/fibf/framework-timeline.png" alt="icam fibf comment timeline.">]({{site.baseurl}}/assets/fibf/framework-timeline.png){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
 
 Please download **DRAFT ICAM FIBF Components 4 & 5** below to review: 
-- **[DRAFT ICAM FIBF Components 4 & 5]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}**
+- **[DRAFT ICAM FIBF Components 4 & 5]({{site.baseurl}}/docs/icam-fibf-workforce-identity-focused-excel-spreadsheet.xlsx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}**
 - Component 4, Standard Data Elements
 - Component 5, Service Measures 
 
@@ -80,7 +80,7 @@ requirements. In addition, GSA Office of Technology Policy (OTP) will provide bo
 ICAM subject matter expertise, as well as coordination support. Working in tandem
 as the ICAMSC-chartered FIBF Working Group, the group fosters cross-agency
 agreement, as well as alignment with other FIBF functional areas. To join the team,
-please send a request to [icam@gsa.gov](mailto:icam@gsa.gov).
+please send a request to [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}.
 
 
 ## Envisioning the Use of ICAM FIBF

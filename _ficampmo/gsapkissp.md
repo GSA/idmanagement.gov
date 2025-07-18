@@ -83,9 +83,9 @@ The General Services Administration (GSA), Ofﬁce of Government-wide Policy, ma
 
 A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certiﬁcation authority certiﬁcate and is listed on the GSA Multiple Award Schedule. This document is reviewed annually and has three major sections:
 
-- [Section 1](#section-i-gsa-pki-ssp-program) -Outlines GSA management and acquisition controls of the PKI SSP Program.
-- [Section 2](#section-ii-ssp-application-and-maintenance-activities) -Deﬁnes the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.
-- [Section 3](#section-iii-digital-certiﬁcate-services) -Lists available services that a SSP should offer.
+- [Section 1](#section-i-gsa-pki-ssp-program){:class="usa-link"} -Outlines GSA management and acquisition controls of the PKI SSP Program.
+- [Section 2](#section-ii-ssp-application-and-maintenance-activities){:class="usa-link"} -Deﬁnes the application and ongoing maintenance process to apply and stay in the GSA PKI SSP Program.
+- [Section 3](#section-iii-digital-certiﬁcate-services){:class="usa-link"} -Lists available services that a SSP should offer.
 
 ## Audience
 
@@ -95,7 +95,7 @@ This document is primarily for the following audience:
 2. Existing GSA PKI SSP Program members to refresh their knowledge of ongoing maintenance requirements. 
 3. Federal agency customers who want to understand the GSA PKI SSP program or ﬁnd contact information for the program management.
 
-If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov).
+If you have questions about this document or the outlined process, contact [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov){:class="usa-link"}.
 
 ## Section I: GSA PKI SSP Program 
 
@@ -170,18 +170,18 @@ A PKI Vendor will be asked for proof or to provide attestations regarding their 
 
 ### MOA Procedural Guidance:
 
-- Send an email to [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov) requesting admission to the GSA PKI SSP Program.
+- Send an email to [GSAPKISSP@gsa.gov](mailto:GSAPKISSP@gsa.gov){:class="usa-link"} requesting admission to the GSA PKI SSP Program.
 - SSPs must obtain, review, and sign the MOA from the SSP Program Ofﬁce.
 
 Once an MOA is signed, the GSA PKI SSP will sponsor the vendor to apply to the Federal PKI Policy Authority.
 
 ### Step 2 -Complete PKI Pre-Conditions
 
-A prospective GSA PKI SSP must meet the following basic pre-conditions as outlined in the [X.509 Certiﬁcate Policy for the  U.S.  Federal PKI Common Policy Framework [COMMON CP]]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"} to demonstrate readiness for the PKI certiﬁcation process.
+A prospective GSA PKI SSP must meet the following basic pre-conditions as outlined in the [X.509 Certiﬁcate Policy for the  U.S.  Federal PKI Common Policy Framework [COMMON CP]]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to demonstrate readiness for the PKI certiﬁcation process.
 
 1. Provide Certiﬁcation Authority (CA), repository, and archive services. The PKI Vendor must operate a self-signed CA instead of relying on a certiﬁcate issued from the Federal Common Policy CA. This ensures that if there is an issue with the GSA PKI SSP, the Federal PKI can revoke the certiﬁcate from the Federal Common Policy CA without impacting the GSA PKI SSP customer certiﬁcates.
 2. Develop and maintain a Certiﬁcation Practice Statement (CPS) covering PKI operations that comply with [COMMON CP] and issue certiﬁcates according to the [Common Policy X.509 Certiﬁcate and Certiﬁcate Revocation List (CRL)
-proﬁles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}.
+proﬁles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
 3. Work with its customers to ensure registration practices ﬁt smoothly within its overall CPS package and comply with [COMMON CP].
 4. Implement all applicable PIV-related policies, such as common-authentication, common-cardAuth, and common-piv-contentSigning.
 5. Ensure it understands and can fulﬁll its customers’ archive requirements and understands its obligation to do so.
@@ -260,7 +260,7 @@ Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready
   <div class="usa-alert__body">
       <h4 class="usa-alert__heading"></h4>
       <p class="usa-alert__text">
-        If the OCISO and SSP Program Ofﬁce believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certiﬁcate services on the day of receiving the ATO letter. After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on <a href="{{site.baseurl}}/trust-services/#government-identity-services" target="_blank" rel="noopener noreferrer">idmanagement.gov under Government Identity Trust Service</a> to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
+        If the OCISO and SSP Program Ofﬁce believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certiﬁcate services on the day of receiving the ATO letter. After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on <a class="usa-link" href="{{site.baseurl}}/trust-services/#government-identity-services" target="_blank" rel="noopener noreferrer">idmanagement.gov under Government Identity Trust Service</a> to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
       </p>
   </div>
 </div>
@@ -274,8 +274,8 @@ A GSA PKI SSP must complete ongoing maintenance activity to remain in the progra
 
 A GSA PKI SSP must comply with all federal PKI-directed activities by:
 
-1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority){:target="_blank"}{:rel="noopener noreferrer"} .
-2. Following the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}  in the event of a PKI-related incident.
+1. Completing annual PKI compliance activities as outlined in the [Federal PKI Annual Review requirements]({{site.baseurl}}/fpki/#audit-information-for-the-fpki-management-authority){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
+2. Following the [FPKI Incident Management Plan]({{site.baseurl}}/docs/fpki-imp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} in the event of a PKI-related incident.
 
 ### SA&A Maintenance
 
@@ -315,7 +315,7 @@ A derived PIV certiﬁcate is either a software or hardware certiﬁcate issued 
 
 ### PIV-I Certiﬁcates
 
-PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"} for more details.
+PIV Interoperable(PIV-I) is a hardware-based smart card that follows the same technical standard as the PIV card, can interoperate with the PIV infrastructure, but does not require a favorably adjudicated Tier 1 or higher federal background investigation. A PIV-I card is issued to individuals who do not qualify for a PIV card. See the [PIV-I playbook]({{site.baseurl}}/university/pivi/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} for more details.
 
 |**Type**|**COMMON OID**|
 |--------|--------------|
@@ -335,7 +335,7 @@ Device certiﬁcates can be issued to devices such as domain controllers, web si
 
 ### Digital Signature Certiﬁcates
 
-A digital signature certiﬁcate is used to digitally sign documents such as PDFs or Microsoft Word or digitally sign emails. An agency may also request a [Digital Autopen]({{site.baseurl}}/playbooks/autopen/){:target="_blank"}{:rel="noopener noreferrer"}  signature certiﬁcate to sign documents for the Federal Register.
+A digital signature certiﬁcate is used to digitally sign documents such as PDFs or Microsoft Word or digitally sign emails. An agency may also request a [Digital Autopen]({{site.baseurl}}/playbooks/autopen/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} signature certiﬁcate to sign documents for the Federal Register.
 
 |**Type**|**COMMON OID**|
 |--------|-------------------|
