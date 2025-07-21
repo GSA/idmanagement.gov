@@ -126,7 +126,7 @@ Microsoft Operating Systems use different physical containers and logical views 
 | :--------  | :------------------------------- | :--------- | :----------- |
 | Trusted Root Certification Authorities | Certificate Authorities Container tab|  Root and RootCA | Root | 
 
-It can be confusing--the easiest model is to follow one of the two methods in [What Should I Do?](#what-should-i-do)
+It can be confusing--the easiest model is to follow one of the two methods in [What Should I Do?](#what-should-i-do){:class="usa-link}
 
 To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
