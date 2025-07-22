@@ -222,7 +222,7 @@ Laws are sorted by date, from oldest to newest.
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for document in sorted_laws | group_by: document.authored-by[0].shortName %}
+{%- for document in sorted_laws %}
 {% if document.authored-by[0].shortName == "U.S. Congress" and document.type == "Law" %}
 {% assign lawcolor = "#ffcc99" %}
 
@@ -246,7 +246,7 @@ Laws are sorted by date, from oldest to newest.
 {% endif %}
 {% endfor %}
 
-{%- for document in sorted_laws | group_by: document.authored-by[0].shortName %}
+{%- for document in sorted_laws %}
 {% if document.authored-by[0].shortName == "White House" and document.type == "Law" %}
 {% assign lawcolor = "#cdeb8b" %}
 
@@ -288,7 +288,7 @@ Laws are sorted by date, from oldest to newest.
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 
-{%- for policies in sorted_policies | group_by: policies.longName %}
+{%- for policies in sorted_policies %}
 {% if policies.authored-by[0].shortName == "DNI" %}
 {% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
@@ -309,7 +309,7 @@ Laws are sorted by date, from oldest to newest.
 {% endif %}
 {% endfor %}
 
-{%- for policies in sorted_policies | group_by: policies.longName %}
+{%- for policies in sorted_policies %}
 {% if policies.authored-by[0].shortName == "OMB" %}
 {% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
@@ -330,7 +330,7 @@ Laws are sorted by date, from oldest to newest.
 {% endif %}
 {% endfor %}
 
-{%- for policies in sorted_policies | group_by: policies.longName %}
+{%- for policies in sorted_policies %}
 {% if policies.authored-by[0].shortName == "OPM" %}
 {% assign polcolor = "#cce5ff" %}
 <div class="usa-accordion usa-accordion--bordered">
@@ -368,7 +368,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
   <li class="gsa-collapse-button" onclick="collapseToggle()" onkeydown="collapseToggle()" title="Collapse All" aria-label="Collapse All" tabindex="0">   -   </li>
 </ul>
 {% assign govbody = "rgb(221,214,229);" %}
-{%- for authority in guidance_authority | sort: authority.shortName %}
+{%- for authority in guidance_authority %}
 {% if authority.shortName != "White House" and authority.shortName != "U.S. Congress" and authority.shortName != "DOC" and authority.shortName != "OMB" and authority.shortName != "DNI" and authority.shortName != "CISOC" %} 
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
@@ -395,7 +395,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
         <p>{{guidance.description}}</p>
         <hr/>
         <div class="display-flex flex-column flex-align-end">  
-          <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span>
+          <span class="gsa-source usa-link">Source: {{guidance.shortName}}</span> 
         </div>
   </div>
 </div>
