@@ -2,7 +2,7 @@
   "name": "federalist-uswds-jekyll",
   "version": "1.3.0",
   "scripts": {
-    "local": "bundler install && npm run start",
+    "local": "bundler install && sleep 5 && npm install",
     "build": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",
     "reset": "npx rimraf .git",
