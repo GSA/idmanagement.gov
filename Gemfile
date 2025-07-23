@@ -43,3 +43,6 @@ gem 'wdm', '~> 0.2.0' if Gem.win_platform?
 # Uncomment the line below if you need the fiddle gem.
 # Note: The version is set to '~> 1.1' to match compatibility with Jekyll 4.2.2.
 # gem 'fiddle', '~> 1.1', '>= 1.1.8'
+
+# Installing logger gem to avoid warning about missing logger when running local server. 
+gem 'logger', '~> 1.7'
