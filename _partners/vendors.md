@@ -64,8 +64,18 @@ For smart card manufacturers or suppliers/vendors seeking to have their product 
 
 If your product completes the process and the FIPS 201 EP Program Manager recommends it for approval, two things happen.
 
-1. You will receive a signed approval document.  
-2. Your product will be included on the [Approved Products List (APL)]({{site.baseurl}}/fips201/#approved-products---piv-smart-cards){:rel="noopener noreferrer"}{:class="usa-link"} under the correct category.
+<ol class="usa-process-list">
+  <li class="usa-process-list__item">
+    <p class="margin-top-05">
+      You will receive a signed approval document. 
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-05">
+      Your product will be included on the <a class="usa-link" href="{{site.baseurl}}/fips201/#approved-products---piv-smart-cards"  rel="noopener noreferrer">Approved Products List (APL)</a> under the correct category.
+    </p>
+  </li>
+</ol>
 
 After testing and approval, submit your application to have your product or service listed on the GSA’s Multiple Award Schedule (MAS).
 
@@ -75,8 +85,18 @@ GSA tests, evaluates, and validates the interoperability of PIV, PIV-I, and CAC 
 
 If your product completes the process and the FIPS 201 EP Program Manager recommends it for approval, two things happen.
 
-1. You will receive a signed approval document.  
-2. Your product will be included on the [Approved Products List (APL)]({{site.baseurl}}/fips201/){:rel="noopener noreferrer"}{:class="usa-link"} under the correct category.
+<ol class="usa-process-list">
+  <li class="usa-process-list__item">
+    <p class="margin-top-05">
+      You will receive a signed approval document. 
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+    <p class="margin-top-05">
+      Your product will be included on the <a class="usa-link" href="{{site.baseurl}}/fips201/" rel="noopener noreferrer">Approved Products List (APL)</a> under the correct category.
+    </p>
+  </li>
+</ol>
 
 After testing and approval, submit your application to have your product or service listed on the GSA’s Multiple Award Schedule (MAS).
 
