@@ -285,17 +285,17 @@ Agencies that wish to issue D-PIV credentials should follow these steps:
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
     <div class="usa-icon-list__content">
-      <p><svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#assessment"></use></svg> Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO).</p>
+      <p><svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#assessment"></use></svg> Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO).</p>
     </div>  
   </li>
   <li class="usa-process-list__item">
     <div class="usa-icon-list__content">
-      <p><svg class="usa-icon " aria-hidden="true" focusable="false" role="img" style="font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg> Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs).</p>
+      <p><svg class="usa-icon " aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg> Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs).</p>
     </div>  
   </li>
   <li class="usa-process-list__item">
     <div class="usa-icon-list__content">
-      <p><svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#send"></use></svg> Submit sample D-PIV public certificates for testing or provide results from the <a class="usa-link" href="https://github.com/GSA/cpct-tool/releases/" target="_blank" rel="noopener noreferrer">Certificate Profile Conformance Tool (CPCT)</a> to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+      <p><svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#send"></use></svg> Submit sample D-PIV public certificates for testing or provide results from the <a class="usa-link" href="https://github.com/GSA/cpct-tool/releases/" target="_blank" rel="noopener noreferrer">Certificate Profile Conformance Tool (CPCT)</a> to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
     </div>  
   </li>
 </ol>
