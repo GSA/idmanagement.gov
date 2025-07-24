@@ -368,7 +368,7 @@ GSA can loan your company test cards to help with pre-testing your physical acce
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
   <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete PACS Test Card Loaner Set Request Form</h4>
-    <p class="margin-top-05">Complete and provide to the program the <a class="usa-link" href="{{site.baseurl}}/docs/pacstest-loanerrequestform.docx" target="_blank" rel="noopener noreferrer">PACS Test Card Loaner Set Request Form</a> (Word, August 2022\) electronically, indicating that the Vendor intends to submit a PACS product for testing and therefore requests a Loaner Set of PACS Test Cards (Loaner Set).</p>
+    <p class="margin-top-05">Complete and provide to the program the <a class="usa-link" href="{{site.baseurl}}/docs/pacstest-loanerrequestform.docx" target="_blank" rel="noopener noreferrer">PACS Test Card Loaner Set Request Form</a> (Word, August 2022) electronically, indicating that the Vendor intends to submit a PACS product for testing and therefore requests a Loaner Set of PACS Test Cards (Loaner Set).</p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
