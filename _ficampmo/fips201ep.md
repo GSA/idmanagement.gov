@@ -400,7 +400,7 @@ GSA can loan your company test cards to help with pre-testing your physical acce
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#help_outline"></use></svg>&nbsp;&nbsp;Program Performs QA on the Returned Loaner Set of Cards</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#help"></use></svg>&nbsp;&nbsp;Program Performs QA on the Returned Loaner Set of Cards</h4>
     <p class="margin-top-05">Within one week of receiving the Loner Set, the Program performs a Quality Assurance (QA) review to verify that all cards in the Loaner Set are still in functional/usable condition.</p>
   </li>
 </ol>
