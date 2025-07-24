@@ -362,17 +362,17 @@ GSA can loan your company test cards to help with pre-testing your physical acce
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#local_library"></use></svg>&nbsp;&nbsp;Read and adhere to the Approval Procedures</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;><use href="{{site.baseurl}}/assets/img/sprite.svg#local_library"></use></svg>&nbsp;&nbsp;Read and adhere to the Approval Procedures</h4>
     <p class="margin-top-05"><a class="usa-link" href="{{site.baseurl}}/docs/pacstest-process.pdf" rel="noopener noreferrer">PACS Test Card Loaner Process</a> (PDF, August 2022). For applicants who wish to request a PACS Test Card Loaner Set, the Vendor submits a pre-paid shipping box (sufficient to hold the Loaner Set and cover full shipping costs) and a completed PACS Test Card Loaner Set Request Form.</p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete PACS Test Card Loaner Set Request Form</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete PACS Test Card Loaner Set Request Form</h4>
     <p class="margin-top-05">Complete and provide to the program the <a class="usa-link" href="{{site.baseurl}}/docs/pacstest-loanerrequestform.docx" target="_blank" rel="noopener noreferrer">PACS Test Card Loaner Set Request Form</a> (Word, August 2022\) electronically, indicating that the Vendor intends to submit a PACS product for testing and therefore requests a Loaner Set of PACS Test Cards (Loaner Set).</p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#mail_outline"></use></svg>&nbsp;&nbsp;Pre-Paid Shipping Box Address</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;><use href="{{site.baseurl}}/assets/img/sprite.svg#mail_outline"></use></svg>&nbsp;&nbsp;Pre-Paid Shipping Box Address</h4>
     <p class="margin-top-05">The pre-paid shipping box should be sent to:</p>
     <p>
       <strong>GSA ICAM Lab</strong><br>  
@@ -383,7 +383,7 @@ GSA can loan your company test cards to help with pre-testing your physical acce
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg>&nbsp;&nbsp;Use the Loaner Set to Complete the FRTC</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg>&nbsp;&nbsp;Use the Loaner Set to Complete the FRTC</h4>
     <p class="margin-top-05">The Vendor uses the Loaner Set to test its PACS product against the Program's PACS Functional Requirements and Test Cases.</p>
     <p><i>The return address is:</i></p>
     <p>
@@ -395,12 +395,12 @@ GSA can loan your company test cards to help with pre-testing your physical acce
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#mail"></use></svg>&nbsp;&nbsp;Vendor Returns the PACS Loaner Set of Cards</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;><use href="{{site.baseurl}}/assets/img/sprite.svg#mail"></use></svg>&nbsp;&nbsp;Vendor Returns the PACS Loaner Set of Cards</h4>
     <p class="margin-top-05">The Vendor returns the Loaner Set in a manner that ensures the Program receives it by no later than the first business day after the 30-day loan period ends.</p>
   </li>
   <li class="usa-process-list__item">
   <h4 class="usa-process-list__heading">
-  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#info"></use></svg>&nbsp;&nbsp;Program Performs QA on the Returned Loaner Set of Cards</h4>
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#help_outline"></use></svg>&nbsp;&nbsp;Program Performs QA on the Returned Loaner Set of Cards</h4>
     <p class="margin-top-05">Within one week of receiving the Loner Set, the Program performs a Quality Assurance (QA) review to verify that all cards in the Loaner Set are still in functional/usable condition.</p>
   </li>
 </ol>
