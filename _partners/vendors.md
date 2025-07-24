@@ -13,8 +13,8 @@ subnav:
     href: '#piv-card-body-approval-procedures'
   - text: Physical Access Control Systems (PACS)
     href: '#physical-access-control-systems-pacs'
-  - text: Professional Services
-    href: '#professional-services'
+  - text: ICAM Professional Services
+    href: '#icam-professional-services'
   - text: Get on a GSA Schedule
     href: '#get-on-a-gsa-schedule'
 
