@@ -32,7 +32,7 @@ Two FIPS 201 product categories require additional testing at a testing facility
 
 1. Smart card credentials PIV Card Bodies -  Products are listed on the [GSA FIPS 201 Approved Products List \- PIV Cards]({{site.baseurl}}/fips201/#approved-products---piv-smart-cards){:rel="noopener noreferrer"}{:class="usa-link"} category.
 
-2. Physical Access Control Systems (PACS) - Products are listed on the [GSA FIPS 201 Approved Products List \- Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} category.
+2. Physical Access Control Systems (PACS) - Products are listed on the [GSA FIPS 201 Approved Products List \- Physical Access Control System Components]({{site.baseurl}}/fips201/#approved-products---physical-access-control-systems){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} category.
 
 Please contact [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"} if you have questions regarding product approval.
 
@@ -51,7 +51,7 @@ The GSA [FIPS 201 Evaluation Program]({{site.baseurl}}/fips201ep/){:rel="noopene
 
 We test and evaluate a variety of products and services, such as:
 
-- Smart cards (secure elements) used in Personal Identity Verification (PIV), Personal Identity Verification \- Interoperable (PIV-I), and Common Access Card (CAC) credentials are collectively known as PIV Card Bodies.  
+- Smart cards (secure elements) used in Personal Identity Verification (PIV), Personal Identity Verification - Interoperable (PIV-I), and Common Access Card (CAC) credentials are collectively known as PIV Card Bodies.  
 - Physical access control systems (PACS) for buildings, including readers and infrastructure.
 
 If you’re seeking testing procedures for products not listed above, review the [Program Announcements]({{site.baseurl}}/fips201ep/#program-announcements){:rel="noopener noreferrer"}{:class="usa-link"}. Over time, some product testing has been discontinued to avoid redundancy, or the product categories have become stable and now represent common commercial use products.
