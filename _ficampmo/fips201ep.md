@@ -31,7 +31,7 @@ The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (s
 
 ## Program Announcements
 
-Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us){:class="usa-link"} if you have any questions.
+Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us){:rel="noopener noreferrer"}{:class="usa-link"} if you have any questions.
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
@@ -112,11 +112,12 @@ The documents in this section provide guidance and information necessary for eva
 **Functional Requirements and Test Cases Guidance Documents:**
 
 - [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. C (PDF, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+    - [PACS Test Card User Guide (PDF, January 2019)]({{site.baseurl}}/docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
     - [Secure Messaging and On Card Comparison Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [FRTC Section 4 Backend Registration and Data Model Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [FRTC Express Process Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-frtcexpress.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [Approved PACS Topology Mapping Form (PACS 13.01 13.02) PIN Usage Policy Testing Addendum, version 1.3.3 Rev. F (PDF, August 21, 2018)]({{site.baseurl}}/docs/fips201ep-pacsfrtcpin.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Review this Addendum for help resetting PIN retry counters and determining the number of remaining PIN retries during Discovery Object testing.
-    - [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 26, 2023)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – This document will updated continuously as emerging technology and standards supporting FICAM compliance become available. Please review the document and provide your comments to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"} by November 30, 2023.
+    - [FRTC for PACS Alternative Authenticators, version 1.0 (PDF, September 26, 2023\)]({{site.baseurl}}/docs/fips201ep-frtc-pacs.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – This document will be updated continuously as emerging technology and standards supporting FICAM compliance become available.
 
 **Topology Guidance Documents:**
 
@@ -145,7 +146,7 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a class="usa-link" href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev B</a> (MS Excel, October 2021) (Mandatory) for your topology.</p>
+    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev C</a> (MS Excel, July 2025) (Mandatory) for your topology.</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">
@@ -284,13 +285,19 @@ Agencies that wish to issue D-PIV credentials should follow these steps:
 
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
-    <p><h4 class="display-inline-block"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#assessment"></use></svg></h4>&nbsp;&nbsp;&nbsp;Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO).</p>
+    <div class="usa-icon-list__content">
+      <p><svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#assessment"></use></svg> Perform a NIST SP 800-79 assessment and receive an Authority To Operate (ATO).</p>
+    </div>  
   </li>
   <li class="usa-process-list__item">
-    <p><h4 class="display-inline-block"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg></h4>&nbsp;&nbsp;&nbsp;Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs).</p>
+    <div class="usa-icon-list__content">
+      <p><svg class="usa-icon " aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg> Work with your Shared Service Provider (SSP) to obtain D-PIV Object Identifiers (OIDs).</p>
+    </div>  
   </li>
   <li class="usa-process-list__item">
-    <p><h4 class="display-inline-block"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#send"></use></svg></h4>&nbsp;&nbsp;&nbsp;Submit sample D-PIV public certificates for testing or provide results from the <a class="usa-link" href="https://github.com/GSA/cpct-tool/releases/" target="_blank" rel="noopener noreferrer">Certificate Profile Conformance Tool (CPCT)</a> to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+    <div class="usa-icon-list__content">
+      <p><svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;font-size:1.46rem;margin-right:5px;"><use href="{{site.baseurl}}/assets/img/sprite.svg#send"></use></svg> Submit sample D-PIV public certificates for testing or provide results from the <a class="usa-link" href="https://github.com/GSA/cpct-tool/releases/" target="_blank" rel="noopener noreferrer">Certificate Profile Conformance Tool (CPCT)</a> to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
+    </div>  
   </li>
 </ol>
 
@@ -350,14 +357,56 @@ Upon successful completion of Derived PIV Card Issuer (DPCI) testing, the agency
 {:style="margin-top:10px"}
 ## Test Card Loaners
 
-GSA can loan you test cards to help you pre-test your physical access control system products.
+GSA can loan your company test cards to help with pre-testing your physical access control system products.
 
-- [PACS Test Card Loaner Process (PDF, November 2019).]({{site.baseurl}}/docs/pacstest-process.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [PACS Test Card Loaner Set Request Form (MS Word, October 2019)]({{site.baseurl}}/docs/pacstest-loanerrequestform.docx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Sign and submit this form to [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}.
-- [PACS Test Card User Guide (PDF, January 2019).]({{site.baseurl}}/docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+<ol class="usa-process-list">
+  <li class="usa-process-list__item">
+  <h4 class="usa-process-list__heading">
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#local_library"></use></svg>&nbsp;&nbsp;Read and adhere to the Approval Procedures</h4>
+    <p class="margin-top-05"><a class="usa-link" href="{{site.baseurl}}/docs/pacstest-process.pdf" target="_blank" rel="noopener noreferrer">PACS Test Card Loaner Process</a> (PDF, August 2022). For applicants who wish to request a PACS Test Card Loaner Set, the Vendor submits a pre-paid shipping box (sufficient to hold the Loaner Set and cover full shipping costs) and a completed PACS Test Card Loaner Set Request Form.</p>
+  </li>
+  <li class="usa-process-list__item">
+  <h4 class="usa-process-list__heading">
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#edit"></use></svg>&nbsp;&nbsp;Complete PACS Test Card Loaner Set Request Form</h4>
+    <p class="margin-top-05">Complete and provide to the program the <a class="usa-link" href="{{site.baseurl}}/docs/pacstest-loanerrequestform.docx" target="_blank" rel="noopener noreferrer">PACS Test Card Loaner Set Request Form</a> (Word, August 2022) electronically, indicating that the Vendor intends to submit a PACS product for testing and therefore requests a Loaner Set of PACS Test Cards (Loaner Set).</p>
+  </li>
+  <li class="usa-process-list__item">
+  <h4 class="usa-process-list__heading">
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#mail_outline"></use></svg>&nbsp;&nbsp;Pre-Paid Shipping Box Address</h4>
+    <p class="margin-top-05">The pre-paid shipping box should be sent to:</p>
+    <p>
+      <strong>GSA ICAM Lab</strong><br>  
+      c/o Electrosoft<br>
+      1893 Metro Center Dr., Ste 228<br>  
+      Reston, VA 20190<br>
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+  <h4 class="usa-process-list__heading">
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#identification"></use></svg>&nbsp;&nbsp;Use the Loaner Set to Complete the FRTC</h4>
+    <p class="margin-top-05">The Vendor uses the Loaner Set to test its PACS product against the Program's PACS Functional Requirements and Test Cases.</p>
+    <p><i>The return address is:</i></p>
+    <p>
+      <strong>GSA ICAM Lab</strong><br>  
+      c/o Electrosoft<br />
+      1893 Metro Center Dr., Ste 228<br>  
+      Reston, VA 20190<br>
+    </p>
+  </li>
+  <li class="usa-process-list__item">
+  <h4 class="usa-process-list__heading">
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#mail"></use></svg>&nbsp;&nbsp;Vendor Returns the PACS Loaner Set of Cards</h4>
+    <p class="margin-top-05">The Vendor returns the Loaner Set in a manner that ensures the Program receives it by no later than the first business day after the 30-day loan period ends.</p>
+  </li>
+  <li class="usa-process-list__item">
+  <h4 class="usa-process-list__heading">
+  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img" style="vertical-align:bottom;"><use href="{{site.baseurl}}/assets/img/sprite.svg#help"></use></svg>&nbsp;&nbsp;Program Performs QA on the Returned Loaner Set of Cards</h4>
+    <p class="margin-top-05">Within one week of receiving the Loner Set, the Program performs a Quality Assurance (QA) review to verify that all cards in the Loaner Set are still in functional/usable condition.</p>
+  </li>
+</ol>
 
+<!-- 
 ---
-
 <p class="margin-top-4">
   <strong class="margin-right-3">Still need help?</strong><a class="usa-button usa-button--outline" href="mailto:fips201ep@gsa.gov"><svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#mail"></use></svg>Contact us</a>
-</p>
+</p> -->
