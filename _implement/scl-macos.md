@@ -33,7 +33,7 @@ Agencies may additionally choose a machine or user-based enforcement which disab
 1. Machine-Based Enforcement (MBE): This implementation removes the option for password-based authentication in favor of smart card-only authentication for any account accessible by the macOS device (local or network).
 2. User-Based Enforcement (UBE): This implementation creates an exception to smart card-only authentication for specific users or groups of users (e.g., network admins, device admins, and individuals waived from smart card requirements).
 
-This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/implement/scl-windows/#step-5---group-policies-and-enforcement){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} can be found here.
+This [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/configure-macos-smart-cardonly-authentication-depfce8de48b/1/web/1.0){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provides some additional detail on MBE vs. UBE. Additional details on [Windows authentication enforcement models]({{site.baseurl}}/implement/scl-windows/#step-5---group-policies-and-enforcement){:rel="noopener noreferrer"}{:class="usa-link"} can be found here.
 
 ## Local Account Pairing
 Local Account Pairing is a user-prompted process.
