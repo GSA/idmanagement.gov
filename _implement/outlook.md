@@ -86,9 +86,9 @@ The Global Address List (GAL) is a shared, enterprise-wide contact list in Micro
 
 ### Manually Import a User's Encryption Certificate
 
-When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list){:class="usa-link"} , you may need to load it manually.
+When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list){:rel="noopener noreferrer"}{:class="usa-link"} , you may need to load it manually.
 
-1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:class="usa-link"}  certificate (you may need to ask the intended recipient to export and share their certificate with you)
+1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:rel="noopener noreferrer"}{:class="usa-link"}  certificate (you may need to ask the intended recipient to export and share their certificate with you)
 2. Click the **Home** tab.
 3. Click the **Address Book**.
 4. Select **File** > **New Entry**.
