@@ -31,7 +31,7 @@ The Federal Information Processing Standard 201 (FIPS 201) Evaluation Program (s
 
 ## Program Announcements
 
-Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us){:class="usa-link"} if you have any questions.
+Announcements older than four years are removed. [Contact us]({{site.baseurl}}/contact-us){:rel="noopener noreferrer"}{:class="usa-link"} if you have any questions.
 
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-expand-button" onclick="expandToggle()" onkeydown="expandToggle()" title="Expand All" aria-label="Expand All" tabindex="0">   +   </li>
