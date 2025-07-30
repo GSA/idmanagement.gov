@@ -104,6 +104,7 @@
         "common_name:U.S. Department of Transportation Agency CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Agency CA G7,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
+        "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Device CA G7,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
         "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
@@ -3110,6 +3111,28 @@
             }
         },
         {
+            "subject": "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US",
+            "serial-number": "712506960167482858209640766521968305286018647680",
+            "akid": "8b 23 07 b7 8e 0a 20 f2 36 f6 b9 61 34 bf b8 f5 c3 6b be e9",
+            "skid": "0e 1b 46 8b 6e 74 30 b2 bc f3 2a 5b b5 ed 26 32 b3 fd 83 13",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c": [
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "issuer": "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "serial-number": "1252571626",
@@ -4168,18 +4191,6 @@
             }
         },
         {
-            "subject": "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US",
-            "serial-number": "712506960167482858209640766521968305286018647680",
-            "akid": "8b 23 07 b7 8e 0a 20 f2 36 f6 b9 61 34 bf b8 f5 c3 6b be e9",
-            "skid": "0e 1b 46 8b 6e 74 30 b2 bc f3 2a 5b b5 ed 26 32 b3 fd 83 13",
-            "status": "Revocation Check Failed",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Pathbuilder timed out"
-            }
-        },
-        {
             "subject": "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
             "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "serial-number": "1149291415",
@@ -4545,6 +4556,11 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US",
+            "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
