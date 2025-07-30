@@ -26,10 +26,10 @@ subnav:
 
 This page contains information that is helpful in identifying changes in the Federal PKI. This includes identifying PIV issuing CA and operational changes such as URL endpoints and system outages.
 
-1. [FPKI Announcements](#fpki-announcements) - Hot topics impact the Federal PKI.
-2. [FPKI Graph](#fpki-graph) - The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem
-3. [PIV Issuer Information](#piv-issuer-information) - List of active PIV issuing CAs with end entity certificate distribution points.
-4. [FPKI System Change and Notification](#notifications) - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
+1. [FPKI Announcements](#fpki-announcements){:class="usa-link"} - Hot topics impact the Federal PKI.
+2. [FPKI Graph](#fpki-graph){:class="usa-link"} - The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem
+3. [PIV Issuer Information](#piv-issuer-information){:class="usa-link"} - List of active PIV issuing CAs with end entity certificate distribution points.
+4. [FPKI System Change and Notification](#notifications){:class="usa-link"} - List of changes to FPKI CA endpoint URL such as Certificate Revocation List Distribution Points, Online Certificate Status Protocol (OCSP) endpoints and other CA certificate activity.
 
 ## FPKI Announcements
 
@@ -78,7 +78,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** Note that the Common Policy Root Certificate is included in this bundle. Before installing it in a trusted root store, verify the authenticity of the certificate by comparing the thumbprint as documented [here](https://www.idmanagement.gov/implement/trust-fcpca/#step-1---obtain-and-verify-the-fcpca-root-certificate){:class="usa-link"}
+The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** Note that the Common Policy Root Certificate is included in this bundle. Before installing it in a trusted root store, verify the authenticity of the certificate by comparing the thumbprint as documented [here]({{site.baseurl}}/implement/trust-fcpca/#step-1---obtain-and-verify-the-fcpca-root-certificate){:rel="noopener noreferrer"}{:class="usa-link"}
 
 The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs.
 
