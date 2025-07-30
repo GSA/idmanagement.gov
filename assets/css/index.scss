@@ -1,11 +1,13 @@
---- 
---- 
+---
+---
 
-@forward "uswds";
-@forward "usa-accordion";
-@forward "usa-icon";
-@forward "uswds-theme";
-@forward "uswds-theme-custom-styles";
+// This file is used to import and forward USWDS styles and custom styles.
+// @forward "uswds";
+// @forward "usa-accordion";
+// @forward "usa-icon";
+// @forward "uswds-theme";
+// @forward "uswds-theme-custom-styles";
+
 
 // Removed Bootstrap, to defaut to USWDS, 
   // This carried over only one style used from Bootstrap's Reboot
