@@ -71,7 +71,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 Testing by government teams did not allow locally administered certificate stores to override the Microsoft CTL distributed settings.  The decision was made to remove COMMON entirely from Microsoft's trust store.  No further testing on overriding the CTL settings will be conducted. 
 
 <!-- Link below not found on both sites -->
-To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing](https://github.com/GSA/fpki-guides/projects/2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
+To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing](https://github.com/GSA/fpki-guides/projects/2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 ## Frequently Asked Questions
 
@@ -126,7 +126,7 @@ Microsoft Operating Systems use different physical containers and logical views 
 | :--------  | :------------------------------- | :--------- | :----------- |
 | Trusted Root Certification Authorities | Certificate Authorities Container tab|  Root and RootCA | Root | 
 
-It can be confusing--the easiest model is to follow one of the two methods in [What Should I Do?](#what-should-i-do)
+It can be confusing--the easiest model is to follow one of the two methods in [What Should I Do?](#what-should-i-do){:class="usa-link}
 
 To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
