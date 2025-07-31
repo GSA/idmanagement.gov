@@ -1,8 +1,9 @@
-// @forward "uswds-theme";
-// @forward "uswds";
-// @forward "uswds-theme-custom-styles";
----
----
+@forward "uswds-theme";
+@forward "uswds";
+@forward "uswds-theme-custom-styles";
+@forward "usa-accordion";
+@forward "usa-icon";
+
 // https://jekyllrb.com/docs/assets/
 /*
 * * * * * ==============================
