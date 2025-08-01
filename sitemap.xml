@@ -123,7 +123,7 @@ layout:
 
   <!-- Pages (Only a few pages)  -->
   {% for page in site.pages %}
-    {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
+    {% if page.url contains '.xml' or page.url contains 'assets' or page.url contains '.ttf' or or page.url contains '.woff' or page.url contains 'woff2' %}{% else %}
         <url>
           <loc>{{ site.url }}{{ page.url }}</loc>
           <changefreq>monthly</changefreq>
