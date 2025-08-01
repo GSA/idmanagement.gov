@@ -25,8 +25,8 @@ layout:
     {% endfor %}
   {% endfor %}
 
-  <!-- ficampmo collection -->
-  {% for docs in site.ficampmo %}
+  <!-- partners collection -->
+  {% for docs in site.partners %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
         <changefreq>weekly</changefreq>
@@ -57,8 +57,8 @@ layout:
     {% endfor %}
   {% endfor %}
 
-  <!-- partners collection -->
-  {% for docs in site.partners %}
+    <!-- ficampmo collection -->
+  {% for docs in site.ficampmo %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
         <changefreq>weekly</changefreq>
@@ -75,6 +75,22 @@ layout:
 
   <!-- playbooks collection -->
   {% for docs in site.playbooks %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- experiments collection -->
+  {% for docs in site.experiments %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
         <changefreq>weekly</changefreq>
@@ -107,13 +123,13 @@ layout:
 
   <!-- Pages (Only a few pages)  -->
   {% for page in site.pages %}
-  {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
-      <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  {% endif %}
+    {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
+        <url>
+          <loc>{{ site.url }}{{ page.url }}</loc>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+        </url>
+    {% endif %}
   {% endfor %}
 
 </urlset>
