@@ -104,21 +104,6 @@ layout:
        </url>
     {% endfor %}
   {% endfor %}
-  <!-- papers collections are inside of each experiments page -->
-  {% for docs in site.papers %}
-      <url>
-        <loc>{{ site.url }}{{ docs.permalink }}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-       </url>
-    {% for sub in docs.subnav %}
-      <url>
-        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-       </url>
-    {% endfor %}
-  {% endfor %}
 
   <!-- university collection -->
   {% for docs in site.university %}
