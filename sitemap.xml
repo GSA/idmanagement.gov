@@ -9,7 +9,7 @@ layout:
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- arch collection -->
+  <!-- arch collection (FICAM) -->
   {% for docs in site.arch %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
@@ -25,39 +25,7 @@ layout:
     {% endfor %}
   {% endfor %}
 
-  <!-- ficampmo collection -->
-  {% for docs in site.ficampmo %}
-      <url>
-        <loc>{{ site.url }}{{ docs.permalink }}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-       </url>
-    {% for sub in docs.subnav %}
-      <url>
-        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-       </url>
-    {% endfor %}
-  {% endfor %}
-
-  <!-- implement collection -->
-  {% for docs in site.implement %}
-      <url>
-        <loc>{{ site.url }}{{ docs.permalink }}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-       </url>
-    {% for sub in docs.subnav %}
-      <url>
-        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-       </url>
-    {% endfor %}
-  {% endfor %}
-
-  <!-- partners collection -->
+  <!-- partners collection (Partners) -->
   {% for docs in site.partners %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
@@ -73,7 +41,39 @@ layout:
     {% endfor %}
   {% endfor %}
 
-  <!-- playbooks collection -->
+  <!-- implement collection (Implement) -->
+  {% for docs in site.implement %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+    <!-- ficampmo collection (Functions) -->
+  {% for docs in site.ficampmo %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+
+  <!-- playbooks collection (Playbooks) -->
   {% for docs in site.playbooks %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
@@ -89,8 +89,24 @@ layout:
     {% endfor %}
   {% endfor %}
 
-  <!-- university collection -->
+  <!-- university collection (University) -->
   {% for docs in site.university %}
+      <url>
+        <loc>{{ site.url }}{{ docs.permalink }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% for sub in docs.subnav %}
+      <url>
+        <loc>{{ site.url }}{{docs.permalink}}{{ sub.href }}</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+       </url>
+    {% endfor %}
+  {% endfor %}
+  
+  <!-- experiments collection (Experiments) -->
+  {% for docs in site.experiments %}
       <url>
         <loc>{{ site.url }}{{ docs.permalink }}</loc>
         <changefreq>weekly</changefreq>
@@ -107,13 +123,13 @@ layout:
 
   <!-- Pages (Only a few pages)  -->
   {% for page in site.pages %}
-  {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
-      <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  {% endif %}
+    {% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}
+        <url>
+          <loc>{{ site.url }}{{ page.url }}</loc>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+        </url>
+    {% endif %}
   {% endfor %}
 
 </urlset>
