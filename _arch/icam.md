@@ -2,7 +2,7 @@
 layout: page
 collection: why
 title:  ICAM
-# Turned of permalink until I know I can remove page - cjb
+# Turned off permalink until I know I can remove page - cjb
 # permalink: /why/icam/
 sidenav: why
 sticky_sidenav: true
