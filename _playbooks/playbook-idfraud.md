@@ -291,7 +291,7 @@ A digital photograph file, of individual, individual’s location,  or documents
 
 **Analyst Task - Determine if presented image is generated or manipulated; localize the manipulation if present**
 
-Algorithms, such as those displayed in the DARPA SemaFor program prototype user interface depicted below, analyze the image and provide a finding of “Likely Manipulated,” along with detailed information to assist the analyst in making a judgement on a particular piece of media, in this case a generated image. 
+Algorithms, such as those displayed in the DARPA SemaFor program prototype user interface depicted below, analyze the image and provide a finding of “Likely Manipulated,” along with detailed information to assist the analyst in making a judgment on a particular piece of media, in this case a generated image. 
 
 **Figure 2 - Image**
 
