@@ -52,10 +52,15 @@ Click on the big green "<> Code" button or clone the repo if you are familiar wi
 Once the repo of the site is downloaded, change to that directory on the command line and run the following command: 
 
 <style>
-  pre {
+  pre, language-plaintext, language-shell {
     background-color: #c0c0c0;
     padding: 5px;
     padding-left: 10px;
+    border-radius: 10px;
+  }
+  language-plaintext, language-shell {
+    background-color: #c0c0c0;
+    padding: 2px;
     border-radius: 10px;
   }
 </style>
