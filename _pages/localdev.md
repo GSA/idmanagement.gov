@@ -48,7 +48,7 @@ To start local development of IDManagement.gov, first download the contents of t
 
 Click on the big green "<> Code" button or clone the repo if you are familiar with the using Git on the command line.
 
-## Building IDManagement.gov
+## Building IDManagement.gov locally
 Once the repo of the site is downloaded, change to that directory on the command line and run the following command: 
 
 <style>
@@ -66,14 +66,14 @@ npm run local
 
 This should download all of the required Gems and Nodjs packages needed by to run the site locally.
 
-## Running the site Locally
+## Running the site locally
 
 Once the `npm run local` command is complete, run the following command to launch IDManagement.gov locally on port `4000`. 
 
 ```shell
 npm run start
 ```
-This should go through the build process, once complete, it will show the address used to connect locally. 
+This should go through the build process, once complete, go to **https://localhost:4000** to connect to the site locally. Then open up the code for the site in your editor of choice to make changes. The site should live reload the page to show changes and updates.  
 
 ## GitHub Codespaces
 
