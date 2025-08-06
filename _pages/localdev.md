@@ -61,7 +61,6 @@ Once the repo of the site is downloaded, change to that directory on the command
 
 ```shell
 npm run local
-
 ```
 
 This should download all of the required Gems and Nodjs packages needed by to run the site locally.
