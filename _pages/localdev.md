@@ -95,7 +95,7 @@ Then:
 ```shell
 npm run start
 ```
-This should launch the site on a local port `4000` within your codespace note, the performance and browsing may be slower than local development, if this becomes an issue, use local development instead.
+This should launch the site on a local port `4000` within your codespace. Note, the performance and browsing may be slower than local development, if this becomes an issue, use local development instead.
 
 
 
