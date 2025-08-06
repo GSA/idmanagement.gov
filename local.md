@@ -1,36 +1,42 @@
 # Run IDManagement.gov Locally
 
-IDManagement.gov is open-source, the development of this site exists in an open and transparent, the  Federal Identity, Credential, and Access Management (FICAM) community incouraged to contribute their thoughts and ideas. To do so, IDManagement.gov can be downloaded, and ran locally for development of new content, then those changes submitted via a Pull Request (PR) through GitHub. Please, first to communicate with someone who helps manage the IDManagement.gov website before you start the process of contibuting. 
+IDManagement.gov is open-source, the development of this site exists in an open and transparent format, the  Federal Identity, Credential, and Access Management (FICAM) community is incouraged to contribute their thoughts and ideas. To do so, IDManagement.gov can be downloaded, and ran locally for development of new content, then those changes submitted via a Pull Request (PR) through GitHub. Contributors are first encourages to establish communication with someone who helps govern or manage IDManagement.gov website before you starting the process of contibuting, see contact list below. 
+
+- ICAM or HSPD-12 policies or programs - [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}
+- FIPS 201 product testing or approved products - [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}
+- Federal PKI policies, programs, or operations- [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}
 
 ## Prerequisite
 Before running IDManagement.gov locally, there are a few requirements needed on your machine to run the site locally. 
- - Permission to access and change files on your machine, your machine is company issued, you may require additional help from your IT department.
+ - Permission to access and change files on your machine, if your machine is company issued, you may require additional help from your company's IT department.
  - Access to the Command Line and permissions to run commands:
    - `CMD prompt` - for Windows.
    - `Powershell` - for Windows.
    - `Terminal` - if you are on Mac or Linux. 
-   - [GitBash](https://git-scm.com/downloads)  - If Git is installed locally.
- - [Git](https://git-scm.com/downloads) - To manage files and versioning. 
- - [Ruby](https://www.ruby-lang.org/en/downloads/) - the programming environment for the Ruby programming language, this can be obtained from [ruby-lang.org](https://www.ruby-lang.org/en/downloads/).
- - [Node.js](https://nodejs.org/en/download) for support and dependencies.
+   - [GitBash](https://git-scm.com/downloads){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  - If Git is installed locally.
+ - [Git](https://git-scm.com/downloads){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - To manage files and versioning. 
+ - [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - the programming environment for the Ruby programming language, this can be obtained from [ruby-lang.org](https://www.ruby-lang.org/en/downloads/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+ - [Node.js](https://nodejs.org/en/download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for support and dependencies.
    - NPM - if installed separately from Node.js.
 
 ### Editors:
 
-There are many editor, and those that may be required by your organization, but any code editor that can do basic code editing will do, below is a list of common code editors:
+There are many editors to choose from, including those that may be required by your organization to do work, but any code editor that can do basic code editing can be used. Below is a list of common code editors that can be downloaded and used:
 
-   - [VS Code](https://code.visualstudio.com/download)
-   - [Sublime](https://www.sublimetext.com/download)
-   - [Netbeans](https://netbeans.apache.org) 
-   - [Eclipse](https://eclipseide.org/)
+   - [VS Code](https://code.visualstudio.com/download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+   - [Sublime](https://www.sublimetext.com/download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+   - [Netbeans](https://netbeans.apache.org){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
+   - [Eclipse](https://eclipseide.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
+
+## Next 
 Once all of these requirements are present on your machine, you can proceed to the download or clone stage. 
 
 ## Download or Clone the Repo
 
 To start local development of IDManagement.gov, first download the contents of this repo via the Git repository: 
 
-- [https://github.com/GSA/idmanagement.gov](https://github.com/GSA/idmanagement.gov)
+- [https://github.com/GSA/idmanagement.gov](https://github.com/GSA/idmanagement.gov){:rel="noopener noreferrer"}{:class="usa-link"}
 
 Click on the big green "<> Code" button or clone the repo if you are familiar with the using Git on the command line.
 
@@ -55,7 +61,7 @@ This should go through the build process, once complete, it will show the addres
 
 ## GitHub Codespaces
 
-The IDManagement.gov repo can also be developed in [GitHub Codespaces](https://github.com/features/codespaces):
+The IDManagement.gov repo can also be developed in [GitHub Codespaces](https://github.com/features/codespaces){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}:
 
 - Open IDManagement.gov in a codespace, wait for it to set up.
 - Once set up, on the command line run the following commands:
