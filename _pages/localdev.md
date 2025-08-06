@@ -73,7 +73,7 @@ Once the `npm run local` command is complete, run the following command to launc
 ```shell
 npm run start
 ```
-This should go through the build process, once complete, go to **https://localhost:4000** to connect to the site locally. Then open up the code for the site in your editor of choice to make changes. The site should live reload the page to show changes and updates.  
+This should go through the build process, once complete, go to **https://localhost:4000** to connect to the site locally. Then open up the code for the site in your editor of choice to make changes, the site should live reload the page to show any changes and updates you make.  
 
 ## GitHub Codespaces
 
