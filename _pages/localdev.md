@@ -55,6 +55,7 @@ Once the repo of the site is downloaded, change to that directory on the command
   pre {
     background-color: #c0c0c0;
     padding: 5px;
+    padding-left: 10px;
     border-radius: 10px;
   }
 </style>
