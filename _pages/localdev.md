@@ -51,6 +51,7 @@ Click on the big green "<> Code" button or clone the repo if you are familiar wi
 ## Building IDManagement.gov
 Once the repo of the site is downloaded, change to that directory on the command line and run the following command: 
 
+{style="background-color:c0c0c0;"}
 ```shell
 npm run local
 
@@ -62,6 +63,7 @@ This should download all of the required Gems and Nodjs packages needed by to ru
 
 Once the `npm run local` command is complete, run the following command to launch IDManagement.gov locally on port `4000`. 
 
+{style="background-color:c0c0c0;"}
 ```shell
 npm run start
 ```
@@ -75,10 +77,12 @@ The IDManagement.gov repo can also be developed in [GitHub Codespaces](https://g
 - Once set up, on the command line run the following commands:
 
 First: 
+{style="background-color:c0c0c0;"}
 ```shell
 npm run local
 ```
 Then: 
+{style="background-color:c0c0c0;"}
 ```shell
 npm run start
 ```
