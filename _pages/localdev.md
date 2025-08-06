@@ -15,7 +15,7 @@ Contributors are first encourages to establish communication with a department o
 - Federal PKI policies, programs, or operations- [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}
 
 ## Prerequisite
-Before running IDManagement.gov locally, there are a few requirements needed on your machine to run the site locally. 
+Before running **IDManagement.gov** locally, there are a few requirements needed on your machine to run the site locally. 
  - Permission to access and change files on your machine, if your machine is company issued, you may require additional help from your company's IT department.
  - Access to the Command Line and permissions to run commands:
    - `CMD prompt` - for Windows.
@@ -68,7 +68,7 @@ This should download all of the required Gems and Nodjs packages needed by to ru
 
 ## Running the site locally
 
-Once the `npm run local` command is complete, run the following command to launch IDManagement.gov locally on port `4000`. 
+Once the `npm run local` command is complete, run the following command to launch **IDManagement.gov** locally on port `4000`. 
 
 ```shell
 npm run start
