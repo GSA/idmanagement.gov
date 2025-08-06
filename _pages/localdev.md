@@ -58,10 +58,10 @@ Once the repo of the site is downloaded, change to that directory on the command
     padding-left: 10px;
     border-radius: 10px;
   }
-  language-plaintext, language-shell {
+  .language-plaintext, .language-shell {
     background-color: #c0c0c0;
     padding: 2px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 </style>
 
