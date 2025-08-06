@@ -46,7 +46,7 @@ To start local development of IDManagement.gov, first download the contents of t
 
 - [https://github.com/GSA/idmanagement.gov](https://github.com/GSA/idmanagement.gov){:rel="noopener noreferrer"}{:class="usa-link"}
 
-Click on the big green <span style="background-color: ##29903b;color:#FFFFFF;padding-left:4px;padding-right:4px;> <> Code </span> button or clone the repo if you are familiar with the using Git on the command line.
+Click on the big green <span style="background-color: ##29903b;color:#FFFFFF;padding-left:4px;padding-right:4px;"> <> Code </span> button or clone the repo if you are familiar with the using Git on the command line.
 
 ## Building IDManagement.gov locally
 Once the repo of the site is downloaded, change to that directory on the command line and run the following command: 
