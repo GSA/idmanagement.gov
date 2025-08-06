@@ -7,6 +7,48 @@
 # 
 # Used on: https://www.idmanagement.gov/fpki/
 
+- category: Common Profile
+  numberProposal: 2.3
+  name: Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles v2.3
+  date: 8/5/2025
+  url: /docs/archived/fpki-common-profile-23.pdf
+  status: post
+  remove: 8/5/2028
+
+- category: Federal Bridge Certificate Policy
+  numberProposal: 3.7
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.7
+  date: 8/5/2025
+  url: /docs/archived/fpki-x509-cert-policy-fbca-37.pdf
+  status: post
+  remove: 8/5/2028
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2025-05
+  name: Proposal 2025-05 | Clarifications on KRA authentication and PKI Sponsor definition
+  description: Clarify KRA authentication and PKI Sponsor definition.
+  date: 8/5/2025
+  url: /docs/archived/fpki-fbca-cp-2505.pdf
+  status: post
+  remove: 8/5/2028
+
+- category: Common Certificate Policy
+  numberProposal: 2.11
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.11
+  date: 8/5/2025
+  url: /docs/archived/fpki-x509-cert-policy-common-211.pdf
+  status: post
+  remove: 8/5/2028
+
+- category: Common Change Proposal
+  numberProposal: 2025-04
+  name: Proposal 2025-04 | Clarifications on Delegated Digital Signature Certificate naming, KRA authentication, and PKI Sponsor definition
+  description: Clarify Delegated Digital Signature Certificate naming, KRA authentication and PKI Sponsor definition.
+  date: 8/5/2025
+  url: /docs/archived/fpki-common-cp-2504.pdf
+  status: post
+  remove: 8/5/2028
+
 - category: FPKI Trust Infrastructure Certificate Practice Statement
   numberProposal: 6.4
   name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.4
