@@ -53,7 +53,8 @@ Once the repo of the site is downloaded, change to that directory on the command
 
 <style>
   .code {
-    background-color:c0c0c0;
+    background-color: #c0c0c0;
+    padding: 10px;
     border-radius: 10px;
   }
 </style>
