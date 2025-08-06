@@ -6,9 +6,9 @@ sidenav: policy
 sticky_sidenav: true
 ---
 
-IDManagement.gov is open-source, the development of this site exists in an open and transparent format where the Federal Identity, Credential, and Access Management (FICAM) community is encouraged to contribute their thoughts and ideas. To do so, the IDManagement.gov repo can be downloaded to your machine and ran locally to development new content or submit changes to existing content. Once your new content or change is complete, a Pull Request (PR) can be submitted through GitHub for review, and if approved, inclusion on the IDManagement.gov website. 
+**IDManagement.gov** is open-source, the development of this site exists in an open and transparent format where the Federal Identity, Credential, and Access Management (FICAM) community is encouraged to contribute their thoughts and ideas. To do so, the IDManagement.gov repo can be downloaded to your machine and ran locally to development new content or submit changes to existing content. Once your new content or change is complete, a Pull Request (PR) can be submitted through GitHub for review, and if approved, inclusion on the **IDManagement.gov** website. 
 
-Contributors are first encourages to establish communication with a department or agency that governs or manages IDManagement.gov website before you starting the process of contributing new content or changes, see the contact list below. 
+Contributors are first encourages to establish communication with a department or agency that governs or helps manages **IDManagement.gov** website before you starting the process of contributing new content or changes, see the contact list below. 
 
 - ICAM or HSPD-12 policies or programs - [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}
 - FIPS 201 product testing or approved products - [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}
