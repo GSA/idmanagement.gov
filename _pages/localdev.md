@@ -49,7 +49,7 @@ To dowload the files the [**IDManagement.gov**](https://github.com/GSA/idmanagem
 
 On matter which option you use, once you have the files, you can start development locally, run the site locally to view your changes. Then, when read, submit a Pull Request (PR) through GitHub for review. If approved, your submitted updates or changes will be merged into Staging, where it will continue the review process. If your submitted changes require no further edits or update, they will be merged into the live IDManagement.gov website.
 
-## Building IDManagement.gov locally
+## Building the site locally
 Once the repo of the site is downloaded, using the command line, change to the directory where you downloaded or cloned the repo files, run the following commands: 
 
 <style>
