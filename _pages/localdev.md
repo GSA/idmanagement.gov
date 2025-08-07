@@ -84,7 +84,7 @@ npm run start
 This should go through the build process, once complete, in a browser, go to [**https://localhost:4000**](https://localhost:4000){:usa-link} to connect to the website locally. 
 
 ## Editing and making changes
-While the site is running locally, open up the Code Editor of your choice to make changes to the site. The site should rebuild the site and live reload the page to show any changes or updates you have made.  
+While the site is running locally, open up the Code Editor of your choice to make changes to the site. The site should rebuild and live reload the page to show any changes or updates you have made.  
 
 ## GitHub Codespaces
 The IDManagement.gov repo can also be developed in [GitHub Codespaces](https://github.com/features/codespaces){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}:
