@@ -16,16 +16,16 @@ Contributors are encourages to first establish communication with a department o
 
 ## Prerequisite
 Before running **IDManagement.gov** locally, there are a few requirements needed on your machine to run the site locally. 
- - Permission to access and change files on your machine, if your machine is company issued, you may require additional help from your company's IT department.
- - [Git](https://git-scm.com/downloads){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - To manage files and versioning. 
+ - Permission to access and change files on your machine, if your machine is company issued, you may require additional help from your IT department.
+ - [Git](https://git-scm.com/downloads){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - to manage files and versioning. 
  - Access to the Command Line and permissions to run commands:
    - `CMD prompt` - for Windows.
    - `Powershell` - for Windows.
    - `Terminal` - for Mac or Linux. 
    - [GitBash](https://git-scm.com/downloads){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  - If Git is installed locally.
- - [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - the programming environment for the Ruby programming language, this can be obtained from [ruby-lang.org](https://www.ruby-lang.org/en/downloads/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+ - [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - the programming environment for the Ruby programming language.
  - [Node.js](https://nodejs.org/en/download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for support and dependencies needed to build the site.
-   - NPM - if installed separately from Node.js, NPM is often installed when Node.js is installed.
+   - [NPM](https://www.npmjs.com/) - if installed separately from Node.js (NPM is often installed when Node.js is installed).
 
 ### Editors:
 There are many editors to choose from, including those that may be required by your organization to do work, but any code editor that can do basic code editing can be used. Below is a list of common code editors that can be downloaded and used:
