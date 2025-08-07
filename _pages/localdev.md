@@ -76,7 +76,7 @@ This should download all of the required Gems and Nodjs packages needed by to bu
 
 ## Running the site locally
 
-Once the `npm run local` command is finished running, run the following command to run **IDManagement.gov** locally on your machine, on port `4000`. 
+Once the `npm run local` command is finished running, run the following command to run the website locally on your machine, on port `4000`. 
 
 ```shell
 npm run start
