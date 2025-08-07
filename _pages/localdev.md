@@ -43,9 +43,9 @@ Once all of these requirements are present on your machine, you can proceed to t
 ## Download or Clone the Repo
 To dowload the files the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/){:target=""}{:usa-link} repo files to your local machine, you have a few options based on your experience working with source control systems like GitHub.
 
-  1. Create a fork of the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/){:target=""}{:usa-link} repo, then download the files from the repo as a .zip file to your local machine.
-  2. Use the command line tool **Git** or [GitHub Desktop](https://desktop.github.com/download/){:target=""}{:usa-link} to clone the **IDManagement.gov** repo locally.
-  3. Use the Git or GitHub integration included in your Code Editor like: VS Code to clone the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/){:target=""}{:usa-link} repo locally. 
+  1. Create a fork of the repo, then download the files from the repo as a .zip file to your local machine.
+  2. Use the command line tool **Git** or [GitHub Desktop](https://desktop.github.com/download/){:target=""}{:usa-link} to clone the repo locally.
+  3. Use the Git or GitHub integration included in your Code Editor like: VS Code to clone the repo locally. 
 
 On matter which option you use, once you have the files, you can start development locally, run the site locally to view your changes. Then, when read, submit a Pull Request (PR) through GitHub for review. If approved, your submitted updates or changes will be merged into Staging, where it will continue the review process. If your submitted changes require no further edits or update, they will be merged into the live IDManagement.gov website.
 
