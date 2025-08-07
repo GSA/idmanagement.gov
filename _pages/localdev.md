@@ -52,12 +52,14 @@ Click on the big green <span style="background-color:#29903b;color:#FFFFFF;paddi
 Once the repo of the site is downloaded, change to that directory on the command line and run the following command: 
 
 <style>
-  pre, language-plaintext, language-shell {
+  /* Style for codeboxes */
+  pre {
     background-color: #c0c0c0;
     padding: 5px;
     padding-left: 10px;
     border-radius: 10px;
   }
+  /*  Style for highlighted text  */
   .language-plaintext, .language-shell {
     background-color: #c0c0c0;
     padding: 2px;
