@@ -41,7 +41,7 @@ Below is a list of common code editors that can be downloaded and used:
 Once all of these requirements are present on your machine, you can proceed to the download or clone stage. 
 
 ## Download or Clone the Repo
-To dowload the files the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/){:target=""}{:usa-link} repo files to your local machine, you have a few options based on your experience working with source control systems like GitHub.
+To dowload the files the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/){:target=""}{:usa-link} repo files to your local machine, you have a few options based on your experience working with source control systems like [GitHub](https://www.github.io).
 
   1. Create a fork of the repo, then download the files from the repo as a .zip file to your local machine.
   2. Use the command line tool **Git** or [GitHub Desktop](https://desktop.github.com/download/){:target=""}{:usa-link} to clone the repo locally.
@@ -81,7 +81,7 @@ Once the `npm run local` command is finished running, run the following command 
 ```shell
 npm run start
 ```
-This should go through the build process, once complete, in a browser, go to **https://localhost:4000** to connect to the website locally. 
+This should go through the build process, once complete, in a browser, go to [**https://localhost:4000**](https://localhost:4000){:usa-link} to connect to the website locally. 
 
 ## Editing and making changes
 While the site is running locally, open up the Code Editor of your choice to make changes to the site. The site should rebuild the site and live reload the page to show any changes or updates you have made.  
