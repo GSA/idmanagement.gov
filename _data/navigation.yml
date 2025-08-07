@@ -90,7 +90,7 @@ experiments:
     href: /experiments/
   - text: Coming Soon
     href: /experiments/#coming-soon
-
+# papers are associated with the experiments section
 papers:
   - text: Back to Experiments
     href: /experiments/

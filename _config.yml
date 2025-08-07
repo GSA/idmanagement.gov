@@ -160,9 +160,6 @@ searchgov:
 ##########################################################################################
 
 collections:
-  why:
-    output: true
-    permalink: /why/:path/
   arch:
     output: true
     permalink: /arch/:path/
@@ -175,9 +172,6 @@ collections:
   university:
     output: true
     permalink: /university/:path/   
-  rss:
-    output: true
-    permalink: /rss/:path/ 
   playbooks:
     output: true
     permalink: /playbooks/:path/ 
@@ -190,6 +184,10 @@ collections:
   experiments:
     output: true
     permalink: /experiments/:path/
+  rss:
+    output: true
+    permalink: /rss/:path/ 
+
 
 # Leaving in place: 
 # Unsure of placement in new site.
