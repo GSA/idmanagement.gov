@@ -6,9 +6,9 @@ sidenav: policy
 sticky_sidenav: true
 ---
 
-**IDManagement.gov** is open-source, the development of this site exists in an open and transparent format where the Federal Identity, Credential, and Access Management (FICAM) community is encouraged to contribute their thoughts and ideas. 
+**IDManagement.gov** website is open-source, the development of this site exists in an open and transparent format where the Federal Identity, Credential, and Access Management (FICAM) community is encouraged to contribute their thoughts and ideas. 
 
-Contributors are encourages to first establish communication with a department or agency that governs or helps manage content on the **IDManagement.gov** website, before starting the process of creating new content or submitting changes, see the contact list below. 
+Contributors are encourages to first establish communication with a department or agency that governs or helps manage content on **IDManagement.gov**, before starting the process of creating new content or submitting changes, see the contact list below. 
 
 - ICAM or HSPD-12 policies or programs - [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}
 - FIPS 201 product testing or approved products - [fips201ep@gsa.gov](mailto:fips201ep@gsa.gov){:class="usa-link"}
@@ -28,7 +28,9 @@ Before running **IDManagement.gov** locally, there are a few requirements needed
    - [NPM](https://www.npmjs.com/) - if installed separately from Node.js (NPM is often installed when Node.js is installed).
 
 ### Editors:
-There are many editors to choose from, including those that may be required by your organization to do work, but any code editor that can do basic code editing can be used. Below is a list of common code editors that can be downloaded and used:
+There are many editors to choose from, including those that may be required by your organization to do work, but any code editor that can do basic code editing can be used. 
+
+Below is a list of common code editors that can be downloaded and used:
 
    - [VS Code](https://code.visualstudio.com/download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
    - [Sublime](https://www.sublimetext.com/download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
@@ -39,9 +41,9 @@ There are many editors to choose from, including those that may be required by y
 Once all of these requirements are present on your machine, you can proceed to the download or clone stage. 
 
 ## Download or Clone the Repo
-To dowload the files the **IDManagement.gov** repo files to your local machine, you have a few options based on your experience working with source control systems like GitHub.
+To dowload the files the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/) repo files to your local machine, you have a few options based on your experience working with source control systems like GitHub.
 
-  1. Create a fork of the **IDManagement.gov** repo, then download the files from the repo as a .zip file to your local machine.
+  1. Create a fork of the [**IDManagement.gov**](https://github.com/GSA/idmanagement.gov/) repo, then download the files from the repo as a .zip file to your local machine.
   2. Use the command line tool **Git** or [GitHub Desktop](https://desktop.github.com/download/) to clone the **IDManagement.gov** repo locally.
   3. Use the Git or GitHub integration included in your Code Editor like: VS Code to clone the **IDManagement.gov** repo locally. 
 
