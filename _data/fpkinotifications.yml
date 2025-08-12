@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: August 12, 2025
+  change_type: Repository Outage
+  system: Department of State PKI
+  change_description: Starting at 7:00 AM ET on Tuesday, August 12, 2025 users reported errors with the availability of the Department of State PKI repositories to include CRLs, AIA and SIA in the crls.pki.state.gov domain.
+  contact: FPKI at GSA dot gov
+  ca_certificate_hash: N/A
+  ca_certificate_issuer: N/A
+  ca_certificate_subject: N/A
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSPIVCA3.p7c, http://crls.pki.state.gov/AIA/CertsIssuedToDoSPIVCA2.p7c
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri: N/A, OCSP is still currently available
+  ee_cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIPIVCA3.crl, http://crls.pki.state.gov/crls/DoSADPKIPIVCA2.crl
+  ee_ocsp_uri: N/A, OCSP is still currently available
+
 - notice_date: August 4, 2025
   change_type: CA Certificate Revocation
   system: Entrust PKI SSP

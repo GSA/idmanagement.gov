@@ -1,10 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US:115788906515005120579462654239943587842",
-            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US:68122329620642578712620071376290644910"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -4039,7 +4036,7 @@
         {
             "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "issuer": "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-            "serial-number": "1602704562",
+            "serial-number": "1742848196",
             "akid": "55 36 cb 95 22 02 7d 41 cd ff 58 2a ba cf 9e 74 a9 cd c4 18",
             "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
             "status": "unchecked",
