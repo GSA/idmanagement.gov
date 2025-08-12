@@ -34,10 +34,12 @@
   ca_certificate_hash: N/A
   ca_certificate_issuer: N/A
   ca_certificate_subject: N/A
-  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIPIVCA3.crl, http://crls.pki.state.gov/crls/DoSADPKIPIVCA2.crl, http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
   aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSPIVCA3.p7c, http://crls.pki.state.gov/AIA/CertsIssuedToDoSPIVCA2.p7c
   sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
   ocsp_uri: N/A, OCSP is still currently available
+  ee_cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIPIVCA3.crl, http://crls.pki.state.gov/crls/DoSADPKIPIVCA2.crl
+  ee_ocsp_uri: N/A, OCSP is still currently available
 
 - notice_date: August 4, 2025
   change_type: CA Certificate Revocation
