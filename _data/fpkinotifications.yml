@@ -29,7 +29,7 @@
 - notice_date: August 12, 2025
   change_type: Repository Outage
   system: Department of State PKI
-  change_description: Starting at 7:00 AM ET on Tuesday, August 12, 2025 users reported errors with the availability of the Department of State PKI repositories to include CRLs, AIA and SIA in the crls.pki.state.gov domain.
+  change_description: Starting at 7:00 AM ET on Tuesday, August 12, 2025 through roughly 4:00 PM ET on Wednesday, August 13, 2025 users reported errors with the availability of the Department of State PKI repositories to include CRLs, AIA and SIA in the crls.pki.state.gov domain.  Services have been restored to include complete SIA packages.
   contact: FPKI at GSA dot gov
   ca_certificate_hash: N/A
   ca_certificate_issuer: N/A
