@@ -189,7 +189,7 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - SHA-1 Hash: 87887e73aec1b617d417e420b82c0e046dc5cce0
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_79.crl](http://crl.disa.mil/crl/DODIDCA_79.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-**DoD ID CA-78 (Operations expected by April 2025)**
+**DoD ID CA-78**
 - Subject: CN = DOD ID CA-78, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
 - Serial #: 0173  
