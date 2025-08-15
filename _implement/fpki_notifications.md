@@ -168,33 +168,33 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 **DoD ID CA-81**
 - Subject: CN = DOD ID CA-81, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
+- Serial #: 0176  
 - Validity: January 23, 2025 to January 23, 2031
-- SHA-1 Hash: TBD
+- SHA-1 Hash: bdfa9d0ab661fb1880207d7bbbf0f0817c7315f3
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_81.crl](http://crl.disa.mil/crl/DODIDCA_81.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 **DoD ID CA-80**
 - Subject: CN = DOD ID CA-80, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
+- Serial #: 0175  
 - Validity: January 23, 2025 to January 23, 2031
-- SHA-1 Hash: TBD
+- SHA-1 Hash: 6aaef812197286acfdb5136858e0509a1dc7f90f
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_80.crl](http://crl.disa.mil/crl/DODIDCA_80.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 **DoD ID CA-79**
 - Subject: CN = DOD ID CA-79, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
+- Serial #: 0174  
 - Validity: January 23, 2025 to January 23, 2031
-- SHA-1 Hash: TBD
+- SHA-1 Hash: 87887e73aec1b617d417e420b82c0e046dc5cce0
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_79.crl](http://crl.disa.mil/crl/DODIDCA_79.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 **DoD ID CA-78 (Operations expected by April 2025)**
 - Subject: CN = DOD ID CA-78, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
+- Serial #: 0173  
 - Validity: January 23, 2025 to January 23, 2031
-- SHA-1 Hash: TBD
+- SHA-1 Hash: 38aea6b42463b3ed2ac6497506f8dc90dc0aa656
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_78.crl](http://crl.disa.mil/crl/DODIDCA_78.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 **DoD ID CA-73**
