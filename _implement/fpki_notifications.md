@@ -165,36 +165,36 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - CRL DP: [http://pki.treas.gov/DHS_CA4.crl](http://pki.treas.gov/DHS_CA4.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 #### DoD Issuing CAs
-**DoD ID CA-81 (Operations expected by April 2025)**
+**DoD ID CA-81**
 - Subject: CN = DOD ID CA-81, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
-- Validity: January 23, 2025 to TBD
-- SHA-1 Hash: TBD
+- Serial #: 0176  
+- Validity: January 23, 2025 to January 23, 2031
+- SHA-1 Hash: bdfa9d0ab661fb1880207d7bbbf0f0817c7315f3
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_81.crl](http://crl.disa.mil/crl/DODIDCA_81.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-**DoD ID CA-80 (Operations expected by April 2025)**
+**DoD ID CA-80**
 - Subject: CN = DOD ID CA-80, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
-- Validity: January 23, 2025 to TBD
-- SHA-1 Hash: TBD
+- Serial #: 0175  
+- Validity: January 23, 2025 to January 23, 2031
+- SHA-1 Hash: 6aaef812197286acfdb5136858e0509a1dc7f90f
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_80.crl](http://crl.disa.mil/crl/DODIDCA_80.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-**DoD ID CA-79 (Operations expected by April 2025)**
+**DoD ID CA-79**
 - Subject: CN = DOD ID CA-79, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
-- Validity: January 23, 2025 to TBD
-- SHA-1 Hash: TBD
+- Serial #: 0174  
+- Validity: January 23, 2025 to January 23, 2031
+- SHA-1 Hash: 87887e73aec1b617d417e420b82c0e046dc5cce0
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_79.crl](http://crl.disa.mil/crl/DODIDCA_79.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-**DoD ID CA-78 (Operations expected by April 2025)**
+**DoD ID CA-78**
 - Subject: CN = DOD ID CA-78, OU = PKI, OU = DoD, O = U.S. Government, C = US  
 - Issuer: CN = DoD Root CA 6, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: TBD  
-- Validity: January 23, 2025 to TBD
-- SHA-1 Hash: TBD
+- Serial #: 0173  
+- Validity: January 23, 2025 to January 23, 2031
+- SHA-1 Hash: 38aea6b42463b3ed2ac6497506f8dc90dc0aa656
 - CRL DP: [http://crl.disa.mil/crl/DODIDCA_78.crl](http://crl.disa.mil/crl/DODIDCA_78.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 **DoD ID CA-73**
@@ -259,15 +259,7 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - Serial #: 054a  
 - Validity: April 6, 2021 to April 7, 2027
 - SHA-1 Hash: 14f4cfd8364412a6a27e5bba82c5342ff9b337a7
-- CRL DP: [http://crl.disa.mil/crl/DODIDCA_62.crl](http://crl.disa.mil/crl/DODIDCA_62.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-**DoD ID CA-59**
-- Subject: CN = DOD ID CA-59, OU = PKI, OU = DoD, O = U.S. Government, C = US  
-- Issuer: CN = DoD Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
-- Serial #: 0305  
-- Validity: April 2, 2019 to April 2, 2025
-- SHA-1 Hash: 1907fc2b223ee0301b45745bdb59aad90fe7c5d7 
-- CRL DP: [http://crl.disa.mil/crl/DODIDCA_59.crl](http://crl.disa.mil/crl/DODIDCA_59.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
+- CRL DP: [http://crl.disa.mil/crl/DODIDCA_62.crl](http://crl.disa.mil/crl/DODIDCA_62.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
 
 #### Entrust NFI Medium Assurance SSP CA
 - Subject: OU = Entrust NFI Medium Assurance SSP CA, OU = Certification Authorities, O = Entrust, C = US
@@ -329,7 +321,7 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
 - Serial #: 6334559d  
-- Validity: April 8, 2023 to April 8 2033 
+- Validity: April 8, 2023 to April 8, 2033 
 - SHA-1 Hash: 67ddd6f4be3b69568f591bf999db2ef3085f7c5b
 - CRL DP: [https://pki.treas.gov/NASA_Operational_CA5.crl](https://pki.treas.gov/NASA_Operational_CA5.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
@@ -357,6 +349,14 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - SHA-1 Hash: 3f3a62c0d4b5a2d70054ea7de33c9a691937ec02
 - CRL DP: [https://pki.treas.gov/OCIO_CA6.crl](https://pki.treas.gov/OCIO_CA6.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
+#### U.S. Department of State PIV CA3
+- Subject: OU = U.S. Department of State PIV CA3, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
+- Issuer: CN = U.S. Department of State AD Root CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu, 
+- Serial #: 650cccc7
+- Validity: March 13, 2025 to March 13, 2035
+- SHA-1 Hash: 4a4e87b992264fbf9f92fcc4ab89840df6fcb89d
+- CRL DP: [http://crls.pki.state.gov/crls/DoSADPKIPIVCA3.crl](http://crls.pki.state.gov/crls/DoSADPKIPIVCA3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+
 #### U.S. Department of State PIV CA2
 - Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
 - Issuer: CN = U.S. Department of State AD Root CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu, 
@@ -380,22 +380,6 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - Validity: October 19, 2023 to October 19, 2026
 - SHA-1 Hash: 02ecec9eb7229055c57caeaade6f1ae056fb4327
 - CRL DP: [http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl](http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### Veterans Affairs User CA B1 (Decommissioning expected 3/14/2025)
-- Subject: CN = Veterans Affairs User CA B1, OU = PKI, OU = Services, DC = va, DC = gov
-- Issuer: CN = Verizon SSP CA A2, OU = SSP, O = Verizon, C = US
-- Serial #: 251ea36536cfebb0e9d1334d0cb96102bab16589
-- Validity: January 25, 2017 to January 25, 2027
-- SHA-1 Hash: 671461948b8ef765fe5e1248222af3fcdd457564
-- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VET-SSP-CA-B1.crl](http://crl.pki.va.gov/PKI/CRL/VET-SSP-CA-B1.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### Veterans Affairs CA B3 (Decommissioning expected 3/14/2025)
-- Subject: CN = Veterans Affairs CA B3, OU = PKI, OU = Services, DC = va, DC = gov
-- Issuer: CN = Verizon SSP CA A2, OU = SSP, O = Verizon, C = US
-- Serial #: 5ecb874a1b24b1113848e40e76dc3ea4449624fe
-- Validity: December 15, 2017 to December 15, 2027
-- SHA-1 Hash: fddb25c3cda647fd56954b58de95878422fb9c11
-- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VACAB3.crl](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 #### WidePoint ORC NFI 4
 - Subject: CN = WidePoint ORC NFI 4, OU = Certification Authorities, O = WidePoint, C = US
@@ -431,7 +415,7 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 
 
 ## Maintenance Mode Issuing CA Certificate Details
-These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations. 
+These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication certificates previously and are in maintenance mode only.  Agency system administrators may need to include these CAs in configurations to ensure continued operation with valid credentials. 
 
 #### Department of Veterans Affairs CA (1 of 2)
 - Subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
@@ -449,7 +433,7 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: e2edb0df1fe8068717a08e38741b5bc4c38029d0 
 - CRL DP: [http://pki.treasury.gov/VA_CA1.crl](http://pki.treasury.gov/VA_CA1.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-#### DHS CA4 (1 of 2)
+#### DHS CA4
 - Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 5ccb31ca 
@@ -457,17 +441,9 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f 
 - CRL DP: [http://pki.treas.gov/DHS_CA3.crl](http://pki.treas.gov/DHS_CA3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-#### DHS CA4 (2 of 2)
-- Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-- Serial #: 4e398128 
-- Validity: June 13, 2015 to June 13, 2025
-- SHA-1 Hash: a31a5df2f1c1019b9cf5b7ca4e3b26650b9ca93f 
-- CRL DP: [http://pki.treasury.gov/DHS_CA2.crl](http://pki.treasury.gov/DHS_CA2.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
 #### DoD Issuing CAs (Expired CAs have been removed)  
 
-#### Entrust Managed Services SSP CA (1 of 2)
+#### Entrust Managed Services SSP CA
 - Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
 - Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
 - Serial #: 448107b6
@@ -475,45 +451,13 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5
 - CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-#### Entrust Managed Services SSP CA (2 of 2)
-- Subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
-- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 448063d5 
-- Validity: July 30, 2015 to July 23, 2025 
-- SHA-1 Hash: dec01bf40c153fbc38bf2ca766b04f9dfbda3064 
-- CRL DP: [http://sspweb.managed.entrust.com/CRLs/EMSSSPCA2.crl](http://sspweb.managed.entrust.com/CRLs/EMSSSPCA2.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### Entrust Derived Credential SSP CA
-- Subject: OU = Entrust Derived Credential SSP CA, OU = Certification Authorities, O = Entrust, C = US
-- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 4480b181
-- Validity: July 13, 2017 to July 13, 2025
-- SHA-1 Hash: e9245a056b17cb5be2e36abf1b8dae6dff9d3729
-- CRL DP: [http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl](http://feddcsweb.managed.entrust.com/CRLs/FedDCSCA.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### HHS-FPKI-Intermediate-CA-E1
-- Subject: CN = HHS-FPKI-Intermediate-CA-E1, OU = Certification Authorities, OU = HHS, O = U.S. Government, C = US 
-- Issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-- Serial #: 44809a90 
-- Validity: December 20, 2016 to July 20, 2025 
-- SHA-1 Hash: d5e311406437c35a79bc023c2bbb57049f5d8f77 
-- CRL DP: [http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA1.crl](http://hhspkicrl.managed.entrust.com/CRLs/HHSEntrustCA1.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### NASA Operational CA (1 of 2) 
+#### NASA Operational CA 
 - Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
 - Serial #: 5ccb3196  
 - Validity: May 4 2019 to May 4 2029 
 - SHA-1 Hash: f504012b1fe57b4381e3bf5ba9f491144ed76ee1
 - CRL DP: [https://pki.treas.gov/NASA_Operational_CA4.crl](https://pki.treas.gov/NASA_Operational_CA4.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### NASA Operational CA (2 of 2)
-- Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-- Serial #: 4e398116   
-- Validity: June 13, 2015 to June 13, 2025 
-- SHA-1 Hash: fe7572bbde7b7f44152acc8e1715c18714dc9d63  
-- CRL DP: [http://pki.treasury.gov/NASA_Operational_CA3.crl](http://pki.treasury.gov/NASA_Operational_CA3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
    
 #### NRC SSP Agency CA G4
 - Subject: CN = NRC SSP Agency CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
@@ -522,14 +466,6 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - Validity: December 17, 2018 to December 12, 2028
 - SHA-1 Hash: 1a03581dcf159d206accd7bdd176c788a0862353
 - CRL DP: [http://pki-crl.symauth.com/ca_23580f2ce24946eab1793386d8e1b510/LatestCRL.crl](http://pki-crl.symauth.com/ca_23580f2ce24946eab1793386d8e1b510/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### NRC SSP Agency CA G3
-- Subject: CN = NRC SSP Agency CA G3, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
-- Issuer: CN = Symantec SSP Intermediate CA - G4, O = Symantec Corporation, C = US  
-- Serial #: 100f05dd316ca819d9d39febc661b326   
-- Validity: November 24, 2014 to November 11, 2024 
-- SHA-1 Hash: e40bee41cf7afa2ddba4eb10ff3a39f81ec48d20 
-- CRL DP: [http://onsite-crl.pki.digicert.com/USNuclearRegulatoryCommissionSSPPIVG3/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USNuclearRegulatoryCommissionSSPPIVG3/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 #### NRC PROD G6 Fed SSP CA
 - Subject: CN = NRC SSP Agency CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
@@ -547,15 +483,7 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: 816a2c18db2e5673205d17a98d0fffef8bf4777e 
 - CRL DP: [http://pki-crl.symauth.com/ca_fc26996dc726cf860f12aa77d4270098/LatestCRL.crl](http://pki-crl.symauth.com/ca_fc26996dc726cf860f12aa77d4270098/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-#### Senate PIV-I CA G4
-- Subject: CN = Senate PIV-I CA G4, OU = Office of the Sergeant at Arms, OU = U.S. Senate, O = U.S. Government, C = US 
-- Issuer: CN = Symantec Class 3 SSP Intermediate CA - G3, OU = Symantec Trust Network, O = Symantec Corporation, C = US 
-- Serial #: 52c8b762e38b30212288790964b7ab2c 
-- Validity: August 1, 2016 to September 28, 2024 
-- SHA-1 Hash: 3c9d0bc463dd1ac0f91012b440e9bdc1cdcd0eff 
-- CRL DP: [http://onsite-crl.pki.digicert.com/USSenateSSPPIVIG4PROD/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USSenateSSPPIVIG4PROD/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### Social Security Administration Certification Authority (1 of 2)
+#### Social Security Administration Certification Authority
 - Subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 5bf45959 
@@ -563,29 +491,13 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: 897a79fd488d426d6c50d0ba026f698bca3334f4
 - CRL DP: [https://pki.treas.gov/SSA_CA3.crl](https://pki.treas.gov/SSA_CA3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-#### Social Security Administration Certification Authority (2 of 2)
-- Subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-- Serial #: 4e3980ef  
-- Validity: April 19, 2015 to April 19, 2025 
-- SHA-1 Hash: bb6c62e648d503f1beab75ef5f69b17256175993 
-- CRL DP: [http://pki.treasury.gov/SSA_CA2.crl](http://pki.treasury.gov/SSA_CA2.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### Treasury OCIO CA (1 of 2)
+#### Treasury OCIO CA
 - Subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 5ccb31fe
 - Validity: June 22, 2019 to June 22, 2029
 - SHA-1 Hash: e651a5dc6a1305613a22e46548e1666650c2825f
 - CRL DP: [https://pki.treas.gov/OCIO_CA5.crl](https://pki.treas.gov/OCIO_CA5.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### Treasury OCIO CA (2 of 2)
-- Subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-- Serial #: 4e398101 
-- Validity: April 19, 2015 to April 19, 2025 
-- SHA-1 Hash: 5ad254c3ecebb5b7e108caa0cc8030598a7b7709 
-- CRL DP: [http://pki.treasury.gov/OCIO_CA4.crl](http://pki.treasury.gov/OCIO_CA4.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 #### U.S. Department of Education Agency CA - G5
 - Subject: CN = U.S. Department of Education Agency CA - G5, OU = U.S. Department of Education, O = U.S. Government, C = US
@@ -594,14 +506,6 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - Validity: June 9, 2020 to December 12, 2028 
 - SHA-1 Hash: 6F48424AE8A01C2A77213A9D34F5761DAACD9EAC
 - CRL DP: [http://pki-crl.symauth.com/ca_db1ff205d5a9b79af46c7896d15cb2a9/LatestCRL.crl](http://pki-crl.symauth.com/ca_db1ff205d5a9b79af46c7896d15cb2a9/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-#### U.S. Department of Education Agency CA - G4
-- Subject: CN = U.S. Department of Education Agency CA - G4, OU = U.S. Department of Education, O = U.S. Government, C = US
-- Issuer: CN = Symantec SSP Intermediate CA - G4, O = Symantec Corporation, C = US
-- Serial #: 224ad7d35a9d34350671f9b8be45a23a
-- Validity: July 20, 2015 to November 11, 2024 
-- SHA-1 Hash: 69e2abc173047f844e3f53cb2cbd138ba9063de8
-- CRL DP:  [http://onsite-crl.pki.digicert.com/USDepartmentofEducationDoEDG4PIV/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofEducationDoEDG4PIV/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 #### U.S. Department of State PIV CA2
 - Subject: OU = U.S. Department of State PIV CA2, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
@@ -627,14 +531,6 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - SHA-1 Hash: b1d05e5b9e025ea4b3b3e30dc3f45a19f9ec51f6
 - CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG5/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG5/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
-#### U.S. Department of Transportation Agency CA G4
-- Subject: CN = U.S. Department of Transportation Agency CA G4, OU = U.S. Department of Transportation, O = U.S. Government, C = US
-- Issuer: CN = Symantec SSP Intermediate CA - G4, O = Symantec Corporation, C = US
-- Serial #: 61a90f3e5ff532f9fe6209d931279a82
-- Validity: December 10, 2014 to November 11, 2024
-- SHA-1 Hash: dc5b590800765864587902af983c21a7209be320
-- CRL DP: [http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG4/LatestCRL.crl](http://onsite-crl.pki.digicert.com/USDepartmentofTransportationFAAPIVG4/LatestCRL.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
 #### USPTO INTR CA1
 - Subject: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
 - Issuer: CN = USPTO_INTR_CA1, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = uspto, DC = gov
@@ -642,6 +538,22 @@ These CA certificates have issued PIV, PIV-I and/or Derived PIV authentication c
 - Validity: April 7, 2018 to December 7, 2029
 - SHA-1 Hash: bc67b9e65ee05c3742c27187259ded3e6112a587
 - CRL DP: [http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL3.crl](http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+
+#### Veterans Affairs User CA B1 (Decommissioned 3/14/2025, all issuing CAs and subscriber certificates revoked)
+- Subject: CN = Veterans Affairs User CA B1, OU = PKI, OU = Services, DC = va, DC = gov
+- Issuer: CN = Verizon SSP CA A2, OU = SSP, O = Verizon, C = US
+- Serial #: 251ea36536cfebb0e9d1334d0cb96102bab16589
+- Validity: January 25, 2017 to January 25, 2027
+- SHA-1 Hash: 671461948b8ef765fe5e1248222af3fcdd457564
+- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VET-SSP-CA-B1.crl](http://crl.pki.va.gov/PKI/CRL/VET-SSP-CA-B1.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+
+#### Veterans Affairs CA B3 (Decommissioned 3/14/2025, all issuing CAs and subscriber certificates revoked)
+- Subject: CN = Veterans Affairs CA B3, OU = PKI, OU = Services, DC = va, DC = gov
+- Issuer: CN = Verizon SSP CA A2, OU = SSP, O = Verizon, C = US
+- Serial #: 5ecb874a1b24b1113848e40e76dc3ea4449624fe
+- Validity: December 15, 2017 to December 15, 2027
+- SHA-1 Hash: fddb25c3cda647fd56954b58de95878422fb9c11
+- CRL DP: [http://crl.pki.va.gov/PKI/CRL/VACAB3.crl](http://crl.pki.va.gov/PKI/CRL/VACAB3.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 ## FPKI System Changes and Notifications
 
