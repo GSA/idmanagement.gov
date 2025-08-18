@@ -520,14 +520,14 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 
 ## Appendix A. Policies, Standards, and Guidance
 
-## Policies
+### Policies
 
 1. [Executive Order 14028 - Improving the Nation's Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [Federal Cloud Smart Strategy](https://cloud.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [Office of Management and Budget Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-## Standards
+### Standards
 
 1. [NIST Special Publication 800-63 - Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [NIST Special Publication 800-145 - The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
@@ -535,7 +535,7 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 4. [NIST Special Publication 800-207 - Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 5. [NIST Special Publication 800-210 - General Access Control Guidance for Cloud Systems](https://csrc.nist.gov/publications/detail/sp/800-210/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-## Guidance
+### Guidance
 
 1. [CISA Cloud Security Technical Reference Architecture](https://www.cisa.gov/publication/cloud-security-technical-reference-architecture){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [CISA Zero Trust Maturity Model](https://www.cisa.gov/publication/zero-trust-maturity-model){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
