@@ -68,7 +68,7 @@ functions:
     href: /gsapkissp/
 
 university:
-  - text: Introduction
+  - text: University
     href: /university/ 
   - text: PKI 101
     href: /university/pki/
@@ -92,9 +92,7 @@ experiments:
     href: /experiments/
   - text: Coming Soon
     href: /experiments/#coming-soon
-  - text: Mobile PIV (mPIV) Experiment
-    href: /experiments/unifyia-mpiv-experiment/
-
+# papers are associated with the experiments section
 papers:
   - text: Back to Experiments
     href: /experiments/
