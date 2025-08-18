@@ -234,22 +234,21 @@ The pros and cons of each approach depend on an agency's architecture, budget, a
 
 Writing Effective User Stories increases understanding of the user’s purpose. Having descriptive summaries and detailed acceptance criteria will help your team know when a user story is complete. Table 4 presents a modified user story example provided by the GSA Chief Technology Officer Office.
 
-<p align="center"><b>Table 4: Example User Story</b></p>
-
-<table>
+<table class="usa-table">
+  <caption>Table 4: Example User Story</caption>
   <thead>
     <tr>
-      <th>Epic</th>
-      <th>User Story</th>
-      <th>Acceptance Criteria</th>
+      <th scope="col">Epic</th>
+      <th scope="col">User Story</th>
+      <th scope="col">Acceptance Criteria</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="9">As an <b>Acquisition Gateway User, I need</b> to access the Acquisition ordering platform behind a
-        secure login <b>so that</b> I can purchase products.</td>
-      <td rowspan="4">As an <b>Acquisition Gateway User, I need</b> to select a phishing-resistant authenticator <b>to</b> log in.</td>
-      <td rowspan="4">Ensure the Acquisition Gateway User can: <br><br>
+      <th scope="row" rowspan="2">As an <b>Acquisition Gateway User, I need</b> to access the Acquisition ordering platform behind a
+        secure login <b>so that</b> I can purchase products.</th>
+      <td>As an <b>Acquisition Gateway User, I need</b> to select a phishing-resistant authenticator <b>to</b> log in.</td>
+      <td>Ensure the Acquisition Gateway User can: <br><br>
         <ul>
           <li>Use an authenticator over the WebAuthN API.</li>
           <li>Log in to the Acquisition Gateway.</li>
@@ -257,15 +256,9 @@ Writing Effective User Stories increases understanding of the user’s purpose. 
       </td>
     </tr>
     <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td rowspan="5">As an <b>Acquisition Gateway User, I need</b> to review my previous bids in the Acquisition
+      <td>As an <b>Acquisition Gateway User, I need</b> to review my previous bids in the Acquisition
         ordering platform <b>so that</b> I can remove expired bids.</td>
-      <td rowspan="5">Ensure the Acquisition Gateway User is able to:<br><br>
+      <td>Ensure the Acquisition Gateway User is able to:<br><br>
         <ul>
           <li>Log in to the Acquisition Gateway.</li>
           <li>Access the page to review items previously bid upon.</li>
@@ -273,14 +266,6 @@ Writing Effective User Stories increases understanding of the user’s purpose. 
           <li>Remove expired bids based on having the correct privilege.</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
     </tr>
   </tbody>
 </table>
