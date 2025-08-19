@@ -40,7 +40,7 @@ subnav:
 
 This playbook is a collaboration between the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee and the Federal Chief Information Officer Council Cloud and Infrastructure Community of Practice.
 
-<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion usa-accordion--bordered margin-top-2">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
