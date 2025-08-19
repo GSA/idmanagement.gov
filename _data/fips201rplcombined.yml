@@ -21,16 +21,16 @@
 #   dateCode: [same as dateRemoval but in the following format: yyyy-mm-dd (for sorting purposes)]
 #   reason: "[string in single quotes of the reason for removal]"
 
-# 11 updated on 05/12/2025 from APL Master - cjb
-- category: 13.01 PACS and Validation Infrastructure
-  status: Approved
-  infrastructure: Motoroloa Solutions Avigilon ACM 6.28
-  infraapl: 10122
-  validation: Validation System for Avigilon ACM HID Global pivCLASS 5.18
-  valapl: 10123
-  dateRemoval: 05/01/2025
-  dateCode: 2025-05-01
-  reason: "Didn't meet the APL resubmission timeline."
+# removed from RPL on 08/18/2025 - cjb
+# - category: 13.01 PACS and Validation Infrastructure
+#   status: Approved
+#   infrastructure: Motoroloa Solutions Avigilon ACM 6.28
+#   infraapl: 10122
+#   validation: Validation System for Avigilon ACM HID Global pivCLASS 5.18
+#   valapl: 10123
+#   dateRemoval: 05/01/2025
+#   dateCode: 2025-05-01
+#   reason: "Didn't meet the APL resubmission timeline."
 
 # - category: 13.01 PACS and Validation Infrastructure
 #   status: Approved
