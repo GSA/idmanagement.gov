@@ -122,7 +122,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
       {% assign pacs1302topology = site.data.fips201pacs1302 | sort: "infraapl" %}
       {% for pacs1302top in pacs1302topology %}
           <tr>
-            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1302top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1302top.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1302top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" style="font-weight:normal;">{{ pacs1302top.infrastructure }}</a></th>
             <td data-sort-value="{{ pacs1302top.infraapl }}">{{ pacs1302top.infraapl }}</td>
           </tr>
       {% endfor %}
@@ -147,7 +147,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
       {% assign pacs1302cloudtopology = site.data.fips201pacs1302cloud | sort: "infraapl" %}
       {% for pacs1302cloud in pacs1302cloudtopology %}
           <tr>
-            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1302cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1302cloud.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1302cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" style="font-weight:normal;">{{ pacs1302cloud.infrastructure }}</a></th>
             <td data-sort-value="{{ pacs1302cloud.infraapl }}">{{ pacs1302cloud.infraapl }}</td>
           </tr>
       {% endfor %}
