@@ -380,7 +380,7 @@ administrative controls and may inherit several certificate controls.
 
 1. Review the delegated digital signature standard operating procedures annually, or more
 frequently ([Template](#appendix-c-templates){:class="usa-link"}).
-2. Before selegated digital signature certificate issuance, verify the authorizing sponsor and each
+2. Before delegated digital signature certificate issuance, verify the authorizing sponsor and each
 certificate recipient has a valid PIV card through an auditable
 authentication or signing event.
 3. The delegated digital signature certificate recipient must be a federal employee.
