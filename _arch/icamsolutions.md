@@ -179,7 +179,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <th><b>Where to Purchase</b></th>
   </thead>
   <tr>
-    <th scope="row">Identity Management</th>
+    <th scope="row" class="gsa-th-normal">Identity Management</th>
     <td>Homeland Security Information Network (HSIN) Identity Proofing Service</td>
     <td style="width:350px">HSIN is a user-driven, web-based, information-sharing platform that connects all homeland security mission partners within a wide spectrum of homeland security mission areas. HSIN is an Identity Provider within the National Information Exchange Federation (NIEF), a collection of U.S. agencies that have come together to share sensitive law enforcement information.</td>
     <td>Identity Proofing</td>
