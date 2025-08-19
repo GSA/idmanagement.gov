@@ -9,8 +9,8 @@
 // @forward "uswds-theme-custom-styles";
 
 // Version 3.13 changed the table th treatment, added this rule to override user-agent stylesheets
-.gsa-th-normal {
-  background-color: inherit;
+.gsa-th {
+  background-color: #ffffff;
 }
 
 // Removed Bootstrap, to defaut to USWDS, 

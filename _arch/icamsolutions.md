@@ -179,77 +179,77 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <th><b>Where to Purchase</b></th>
   </thead>
   <tr>
-    <th scope="row" class="gsa-th-normal">Identity Management</th>
+    <th scope="row" class="gsa-th">Identity Management</th>
     <td>Homeland Security Information Network (HSIN) Identity Proofing Service</td>
     <td style="width:350px">HSIN is a user-driven, web-based, information-sharing platform that connects all homeland security mission partners within a wide spectrum of homeland security mission areas. HSIN is an Identity Provider within the National Information Exchange Federation (NIEF), a collection of U.S. agencies that have come together to share sensitive law enforcement information.</td>
     <td>Identity Proofing</td>
     <td><a class="usa-link usa-link--external" href="https://www.dhs.gov/how-join-hsin" target="_blank" rel="noopener noreferrer">How to Join HSIN</a></td>
   </tr>
   <tr>
-    <th scope="row">Identity Management <br><br> Access Management <br><br> Federation</th>
+    <th scope="row" class="gsa-th">Identity Management <br><br> Access Management <br><br> Federation</th>
     <td>Login.gov</td>
     <td style="width:350px">Offers the public secure and private online access to participating government programs. With one login.gov account, users can sign into multiple government agencies.</td>
     <td>Account Linking <br><br> Authentication</td>
     <td><a class="usa-link usa-link--external" href="http://login.gov/" target="_blank" rel="noopener noreferrer">login.gov</a></td>
   </tr>
   <tr>
-    <th scope="row">Access Management <br><br> Federation</th>
+    <th scope="row" class="gsa-th">Access Management <br><br> Federation</th>
     <td>MAX Authentication</td>
     <td style="width:350px">Authentication as a Service (AaaS) Automatic registration for federal users by email domain. HSPD-12-PIV /DoD CAC cards and SMS 2-factor authentication for sensitive activities. Enterprise Federated Partner Automated Login (i.e., single sign-on) with agencies.</td>
     <td>Authentication Services <br><br> Federation</td>
     <td><a class="usa-link usa-link--external" href="http://max.gov/" target="_blank" rel="noopener noreferrer">Max.gov</a></td>
   </tr>
   <tr>
-  <th scope="row">Credential Management</th>
+  <th scope="row" class="gsa-th">Credential Management</th>
     <td>USAccess</td>
     <td style="width:350px">The GSA HSPD-12 Managed Service Office (MSO) established the USAccess program as an efficient way for federal agencies to issue common, HSPD-12-approved credentials to their employees and contractors.</td>
     <td>PIV card</td>
     <td><a class="usa-link usa-link--external" href="http://fedidcard.gov/" target="_blank" rel="noopener noreferrer">fedidcard.gov</a></td>
   </tr>
   <tr>
-    <th scope="row">Credential Management</th>
+    <th scope="row" class="gsa-th">Credential Management</th>
     <td><i>SIN 517312</i>: Wireless Mobility Solutions</td>
     <td style="width:350px">Includes a variety of services that address the mobility needs of government agencies. Subcategory #9 – Mobile Identity Management (MIM) is the secure integration of the attributes that unerringly identify a person in the physical and online environments, within the mobile device. MIM is a set of complementary products and solutions that issue and maintain certificates, which may include Derived PIV Credential (DPC) usage. A valid PIV card is required to issue a DPC.</td>
     <td>Digital Certificates <br><br> Derived PIV <br><br> Other mobility offerings on this SIN</td>
     <td><a class="usa-link" href="https://acquisitiongateway.gov/" target="_blank" rel="noopener noreferrer">Acquisition Gateway RFQ Generator</a></td>
   </tr>
   <tr>
-    <th scope="row">Access Management</th>
+    <th scope="row" class="gsa-th">Access Management</th>
     <td><i>SIN 541519CDM</i>: Continuous Diagnostics and Mitigation (CDM) Tools</td>
     <td style="width:350px">Includes DHS-approved hardware and software products. The full complement of CDM Tools SIN products and services includes tools, associated maintenance, and other related activities such as training.</td>
     <td>ICAM tools on CDM Approved Products List (APL) maintained and updated monthly by the Department of Homeland Security (DHS)</td>
     <td><a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/CDM%20Tools%20Product%20Ordering%20Procedure.pdf" target="_blank" rel="noopener noreferrer">CDM Tools SIN Information for Ordering Organizations</a></td>
   </tr>
   <tr>
-    <th scope="row">Identity Management <br><br> Access Management <br><br> Credential Management</th>
+    <th scope="row" class="gsa-th">Identity Management <br><br> Access Management <br><br> Credential Management</th>
     <td><i>SIN 541519ICAM</i>: Identity, Credential, and Access Management (ICAM)</td>
     <td style="width:350px">Managed service offerings for electronic credentials, identity and access management, authentication, and identity and access management professional services.</td>
     <td>Digital credentials <br><br> Authentication <br><br> Professional Services</td>
     <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
-    <th scope="row">Credential Management</th>
+    <th scope="row" class="gsa-th">Credential Management</th>
     <td><i>SIN 541519PKI</i>: Public Key Infrastructure (PKI) Shared Service Providers (SSP) Program</td>
     <td style="width:350px">This program provides PKI services and digital certificates for use by federal employees and contractors to the federal government.</td>
     <td>Current PKI Shared Service Providers</td>
     <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
-    <th scope="row">Credential Management</th>
+    <th scope="row" class="gsa-th">Credential Management</th>
     <td><i>SIN 541519IPIV</i>: Homeland Security Presidential Directive-12 Product and Service Components</td>
     <td style="width:350px">PIV products and PIV services to implement the requirements of HSPD-12, FIPS-201, and associated NIST special publications. Implementation components specified under this SIN are: <ul><li>PIV enrollment and registration services</li><li>PIV systems infrastructure</li><li>PIV card management and production services</li><li>PIV card finalization services</li><li>Logical access control products and services</li><li>PIV system integration services. Installation services and FIPS 201 compliant PACS (Physical Access Control System) products.</li></ul></td>
     <td>PKI Shared Service Provider for PIV and additional products support</td>
     <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
-    <th scope="row">Access Management</th>
+    <th scope="row" class="gsa-th">Access Management</th>
     <td><i>SIN 334290L</i>: Physical Access Control System (PACS)</td>
     <td style="width:350px">Includes PACS, such as card-controlled access, biometrics, security barriers, etc.</td>
     <td>PACS components</td>
     <td><a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/?returnUrl=%2Fbuyer%3Ffrom%3Delibrary" target="_blank" rel="noopener noreferrer">GSA eBuy</a></td>
   </tr>
   <tr>
-    <th scope="row">Access Management</th>
+    <th scope="row" class="gsa-th">Access Management</th>
     <td><i>SIN 541330SEC</i>: Security System Integration, Design, Management, and Life Cycle Support</td>
     <td style="width:350px">Includes services related to PACS design, integration, implementation, and installation/testing. Offerors under this SIN have at least one employee who is CSEIP (Certified System Engineer ICAM PACS) certified and such certification can be verified at IDmanagment.gov.</td>
     <td>PACS integration (installation and configuration)</td>
