@@ -63,9 +63,9 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
       {% assign pacs1301topology = site.data.fips201pacs1301 | sort: "infrastructure" %}
       {% for pacs1301top in pacs1301topology %}
           <tr>
-            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301top.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301top.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" style="font-weight:normal;">{{ pacs1301top.infrastructure }}</a></th>
             <td  data-sort-value="{{ pacs1301top.infraapl }}">{{ pacs1301top.infraapl }}</td>
-            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301top.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301top.validation}}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301top.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" style="font-weight:normal;">{{ pacs1301top.validation}}</a></th>
              <td data-sort-value="{{ pacs1301top.valapl }}">{{ pacs1301top.valapl }}</td>
           </tr>
       {% endfor %}
@@ -92,9 +92,9 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
       {% assign pacs1301cloudtopology = site.data.fips201pacs1301cloud | sort: "infrastructure" %}
       {% for pacs1301cloud in pacs1301cloudtopology %}
           <tr>
-            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301cloud.infrastructure }}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301cloud.infraurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" style="font-weight:normal;">{{ pacs1301cloud.infrastructure }}</a></th>
             <td  data-sort-value="{{ pacs1301cloud.infraapl }}">{{ pacs1301cloud.infraapl }}</td>
-            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301cloud.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ pacs1301cloud.validation}}</a></th>
+            <th scope="row" role="rowheader"><a class="usa-link" href="{{ pacs1301cloud.valurl | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" style="font-weight:normal;">{{ pacs1301cloud.validation}}</a></th>
              <td data-sort-value="{{ pacs1301cloud.valapl }}">{{ pacs1301cloud.valapl }}</td>
           </tr>
       {% endfor %}
