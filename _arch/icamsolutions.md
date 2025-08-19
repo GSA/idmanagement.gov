@@ -41,7 +41,7 @@ The roadmap also identifies five areas that align with GSA's vision:
 
 The following table provides a summary of the roadmap activities. This roadmap is considered a living document; this first iteration is designed to gain leadership support and endorsement. Foundation activities are targeted for completion in the next one to two years. Federation activities are targeted for three to four years. Emerging trends activities are likely to require more than four years to complete, as they may depend on earlier phase activities or require further definition before they can begin.
 
-<table class="usa-table usa-table--borderless usa-table--striped">
+<table class="usa-table usa-table usa-table--striped">
   <thead>
     <tr>
       <th scope="col" style="text-align:center">Focus Area</th>
