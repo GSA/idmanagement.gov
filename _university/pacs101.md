@@ -640,7 +640,7 @@ Webinar sessions feature industry and government experts covering:
 You may download or view the recordings of completed webinars. Additionally, the webinar presentation is available for download. Please use the links below. 
 
 <ol class="usa-process-list">
-  <li class="usa-process-list__item padding-bottom-4">
+  <li class="usa-process-list__item padding-bottom-4"> <i class="fa-solid fa-film"></i>
     <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-1/" target="_blank" rel="noopener noreferrer">How to Plan, Procure, and Deploy a PIV-Enabled Physical Access Control System</a>
   </li>
   <li class="usa-process-list__item padding-bottom-4">
