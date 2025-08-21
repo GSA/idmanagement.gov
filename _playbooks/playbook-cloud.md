@@ -35,11 +35,12 @@ subnav:
 ---
 
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
-<img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
+<img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
+<br><br><br>
 
 This playbook is a collaboration between the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee and the Federal Chief Information Officer Council Cloud and Infrastructure Community of Practice.
 
-<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion usa-accordion--bordered margin-top-2">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
@@ -234,22 +235,21 @@ The pros and cons of each approach depend on an agency's architecture, budget, a
 
 Writing Effective User Stories increases understanding of the user’s purpose. Having descriptive summaries and detailed acceptance criteria will help your team know when a user story is complete. Table 4 presents a modified user story example provided by the GSA Chief Technology Officer Office.
 
-<p align="center"><b>Table 4: Example User Story</b></p>
-
-<table>
+<table class="usa-table">
+  <caption>Table 4: Example User Story</caption>
   <thead>
     <tr>
-      <th>Epic</th>
-      <th>User Story</th>
-      <th>Acceptance Criteria</th>
+      <th scope="col">Epic</th>
+      <th scope="col">User Story</th>
+      <th scope="col">Acceptance Criteria</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="9">As an <b>Acquisition Gateway User, I need</b> to access the Acquisition ordering platform behind a
-        secure login <b>so that</b> I can purchase products.</td>
-      <td rowspan="4">As an <b>Acquisition Gateway User, I need</b> to select a phishing-resistant authenticator <b>to</b> log in.</td>
-      <td rowspan="4">Ensure the Acquisition Gateway User can: <br><br>
+      <th scope="row" rowspan="2">As an <b>Acquisition Gateway User, I need</b> to access the Acquisition ordering platform behind a
+        secure login <b>so that</b> I can purchase products.</th>
+      <td>As an <b>Acquisition Gateway User, I need</b> to select a phishing-resistant authenticator <b>to</b> log in.</td>
+      <td>Ensure the Acquisition Gateway User can: <br><br>
         <ul>
           <li>Use an authenticator over the WebAuthN API.</li>
           <li>Log in to the Acquisition Gateway.</li>
@@ -257,15 +257,9 @@ Writing Effective User Stories increases understanding of the user’s purpose. 
       </td>
     </tr>
     <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-      <td rowspan="5">As an <b>Acquisition Gateway User, I need</b> to review my previous bids in the Acquisition
+      <td>As an <b>Acquisition Gateway User, I need</b> to review my previous bids in the Acquisition
         ordering platform <b>so that</b> I can remove expired bids.</td>
-      <td rowspan="5">Ensure the Acquisition Gateway User is able to:<br><br>
+      <td>Ensure the Acquisition Gateway User is able to:<br><br>
         <ul>
           <li>Log in to the Acquisition Gateway.</li>
           <li>Access the page to review items previously bid upon.</li>
@@ -273,14 +267,6 @@ Writing Effective User Stories increases understanding of the user’s purpose. 
           <li>Remove expired bids based on having the correct privilege.</li>
         </ul>
       </td>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-    <tr>
     </tr>
   </tbody>
 </table>
@@ -535,14 +521,14 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 
 ## Appendix A. Policies, Standards, and Guidance
 
-## Policies
+### Policies
 
 1. [Executive Order 14028 - Improving the Nation's Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [Federal Cloud Smart Strategy](https://cloud.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [Office of Management and Budget Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-## Standards
+### Standards
 
 1. [NIST Special Publication 800-63 - Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [NIST Special Publication 800-145 - The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
@@ -550,7 +536,7 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 4. [NIST Special Publication 800-207 - Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 5. [NIST Special Publication 800-210 - General Access Control Guidance for Cloud Systems](https://csrc.nist.gov/publications/detail/sp/800-210/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-## Guidance
+### Guidance
 
 1. [CISA Cloud Security Technical Reference Architecture](https://www.cisa.gov/publication/cloud-security-technical-reference-architecture){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [CISA Zero Trust Maturity Model](https://www.cisa.gov/publication/zero-trust-maturity-model){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}

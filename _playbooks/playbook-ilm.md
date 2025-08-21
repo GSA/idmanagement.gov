@@ -443,7 +443,7 @@ The ILM playbook outlined an identity lifecycle process and four steps to create
 
 ### Government-Wide Guidance
 
-1. [FICAM Architecture]({{ site.baseurl }}/why/icam/){:class="usa-link"}
+1. [FICAM Architecture]({{ site.baseurl }}/arch/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 2. [ICAM Governance Framework]({{ site.baseurl }}/docs/playbook-identity-governance-framework.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 3. [NIST Special Publication 800-63 Additional Information Sources Including Conformance Criteria](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [NIST Interagency Report 8149 - Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
