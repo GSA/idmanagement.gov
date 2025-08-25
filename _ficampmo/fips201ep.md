@@ -134,7 +134,7 @@ All applicants, please complete the following steps:
 
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Review, complete, and sign the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
+    <p class="margin-top-04">Review, complete, and sign the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.3.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">Complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
