@@ -146,7 +146,7 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a class="usa-link" href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev C</a> (MS Excel, July 2025) (Mandatory) for your topology.</p>
+    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev. D</a> (MS Excel, August 2025) (Mandatory) for your topology.</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">
