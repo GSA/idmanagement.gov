@@ -111,7 +111,7 @@ The documents in this section provide guidance and information necessary for eva
 
 **Functional Requirements and Test Cases Guidance Documents:**
 
-- [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. C (PDF, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. D. (PDF, August 25, 2025)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [PACS Test Card User Guide (PDF, January 2019)]({{site.baseurl}}/docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
     - [Secure Messaging and On Card Comparison Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [FRTC Section 4 Backend Registration and Data Model Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
