@@ -21,6 +21,8 @@ subnav:
     href: '#pacs-procurement-best-practices'
   - text: PACS Training Resources
     href: '#training'
+  - text: PACS Industry Training
+    href: '#industry-training'
   - text: Planning, Procurement, and Operations Lessons Learned
     href: '#lessons-learned'
   - text: References
@@ -615,32 +617,49 @@ Industry certifications are vendor neutral and standards based. GSA requires tha
 
 Commercial vendors offer additional certification opportunities.
 
-### Industry Training
-
-The Secure Technology Alliance Access Control Council held a six-part webinar on planning, procuring, and implementing PIV-enabled physical access control systems (PACS) for government facilities. The series was created for systems engineers, facility managers, physical security personnel, and other government facility stakeholders.
-
-Webinar sessions feature industry and government experts covering:
--Identifying stakeholders involved in deploying a PIV-enabled PACS
--Planning implementation: facility characterization and risks
--Establishing the project scope
--Developing and implementing the procurement strategy
--Deploying the chosen solution
--Reviewing use cases and agency lessons learned
-
-Recordings of completed webinars are available.
-Part 1: How to Plan, Procure, and Deploy a PIV-Enabled Physical Access Control System
-Part 2: Facility Characterization and Risk Management
-Part 3: Establishing the Project Scope
-Part 4: Developing the Procurement Strategy
-Part 5: Implementing the Solution
-Part 6: Use Cases and Lessons Learned
-
 ### GSA PACS Reverse Industry Day Conference (2018)
 
 In 2018, GSA hosted a PACS Reverse Industry Day conference featuring government and industry experts on various PACS topics. Event videos are available via the GSA YouTube channe: 
 
 - [Morning Session](https://www.youtube.com/watch?v=r9X1XtrLjMg){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [Afternoon Session](https://www.youtube.com/watch?v=bS8jdkW_WUI){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+
+## Industry Training
+
+The Secure Technology Alliance Access Control Council held a six-part webinar on planning, procuring, and implementing PIV-enabled physical access control systems (PACS) for government facilities. The series was created for systems engineers, facility managers, physical security personnel, and other government facility stakeholders.
+
+Webinar sessions feature industry and government experts covering: 
+
+- Identifying stakeholders involved in deploying a PIV-enabled PACS   
+- Planning implementation: facility characterization and risks   
+- Establishing the project scope   
+- Developing and implementing the procurement strategy   
+- Deploying the chosen solution   
+- Reviewing use cases and agency lessons learned.
+
+You may download or view the recordings of completed webinars. Additionally, the webinar presentation is available for download. Please use the links below. 
+
+<ol class="usa-process-list">
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-1/" target="_blank" rel="noopener noreferrer">How to Plan, Procure, and Deploy a PIV-Enabled Physical Access Control System</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-2/" target="_blank" rel="noopener noreferrer">Facility Characterization and Risk Management</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-3/" target="_blank" rel="noopener noreferrer">Establishing the Project Scope</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-4/" target="_blank" rel="noopener noreferrer">Developing the Procurement Strategy</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-5/" target="_blank" rel="noopener noreferrer">Implementing the Solution</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-6/" target="_blank" rel="noopener noreferrer">Use Cases and Lessons Learned</a>
+  </li>
+</ol>
+
 
 ## Lessons Learned
 
