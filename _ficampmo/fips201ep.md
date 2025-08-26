@@ -111,7 +111,7 @@ The documents in this section provide guidance and information necessary for eva
 
 **Functional Requirements and Test Cases Guidance Documents:**
 
-- [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. C (PDF, November 30, 2023)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [PACS Functional Requirements and Test Cases Guidance Document v1.4.2 Rev. D. (PDF, August 25, 2025)]({{site.baseurl}}/docs/fips201ep-pacsfrtc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [PACS Test Card User Guide (PDF, January 2019)]({{site.baseurl}}/docs/pacstest-testuserguide.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} 
     - [Secure Messaging and On Card Comparison Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-smocc.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
     - [FRTC Section 4 Backend Registration and Data Model Companion Paper, FRTC version 1.4.2 Rev A (PDF, March 31, 2021)]({{site.baseurl}}/docs/fips201ep-brcp.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
@@ -134,7 +134,7 @@ All applicants, please complete the following steps:
 
 <ol class="usa-process-list">
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Review, complete, and sign the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.2.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
+    <p class="margin-top-04">Review, complete, and sign the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-package-checklist.docx" target="_blank" rel="noopener noreferrer">FIPS 201 Evaluation Program PACS Application Package Checklist, v1.3.0</a> (Mandatory), and ensure all the applicable and mandatory paperwork is submitted along with the application document.</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">Complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/fips201ep-application-form.docx" target="_blank" rel="noopener noreferrer">Approved Products List Application Form, v1.2.0</a> (MS Word, May 21, 2025) (Mandatory) – Required for each solution submission, new or upgrade.</p>
@@ -146,7 +146,7 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">List the equipment used for the APL testing in the equipment table linked here – <a class="usa-link" href="{{site.baseurl}}/docs/equipment-table-gsa-pacs-application.xlsx" target="_blank" rel="noopener noreferrer">Equipment Table GSA PACS Application v1.3.0</a> (MS Excel, August 2024) (Mandatory). </p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev C</a> (MS Excel, July 2025) (Mandatory) for your topology.</p>
+    <p class="margin-top-04">Complete the <a class="usa-link" href="{{site.baseurl}}/docs/pacsapp-frtcworkbook.xlsx" target="_blank" rel="noopener noreferrer">PACS FRTC Workbook, v1.4.2 Rev. D</a> (MS Excel, August 2025) (Mandatory) for your topology.</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">
@@ -194,7 +194,7 @@ All applicants, please complete the following steps:
     <p class="margin-top-04">The vendors must submit the ISO 7816 and ISO 14443 test reports for new PIV PACS Readers. If the vendor has determined that the reports contain company-sensitive information, they may complete and sign the <a class="usa-link" href="{{site.baseurl}}/docs/vendor-self-attestation-form.docx" target="_blank" rel="noopener noreferrer">Vendor Self-Attestation Form for ISO/IEC Test Reports</a>, confirming ISO/IEC 7816 conformance to satisfy FRTC Test Case # 7.07.09 and ISO/IEC 10373-6:2020 and ISO/IEC 10373-6:2020/Amd.1:2022 conformance to satisfy FRTC Test Case # 7.07.10.</p>
   </li>
   <li class="usa-process-list__item">
-    <p class="margin-top-04">Respond to the <a class="usa-link" href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.2.0</a> (Mandatory).</p>
+    <p class="margin-top-04">Respond to the <a class="usa-link" href="{{site.baseurl}}/docs/vendor-frtc-questions.docx" target="_blank" rel="noopener noreferrer">Vendor FRTC Questionnaire, v1.3.0</a> (Mandatory).</p>
   </li>
   <li class="usa-process-list__item">
     <p class="margin-top-04">Submit all completed forms to <a class="usa-link" href="mailto:fips201ep@gsa.gov">fips201ep@gsa.gov</a>.</p>
