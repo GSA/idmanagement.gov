@@ -40,7 +40,7 @@ subnav:
   </div>
 </div>
 
-{% include alert-info.html heading = "Approved AltSecID Identifiers" content="If your on-premise Active Directory user account mappings alreaady use X509SKI or X509IssuerSerialNumber altsecid, you will not need to take any action as a result of the September 2024 Microsoft updates." %}
+{% include alert-info.html heading = "Approved AltSecID Identifiers" content="If your on-premise Active Directory user account mappings already use X509SKI or X509IssuerSerialNumber altsecid, you will not need to take any action as a result of the September 2024 Microsoft updates." %}
 
 
 ## Introduction
