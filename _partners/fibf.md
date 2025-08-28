@@ -50,7 +50,7 @@ FIBF is generally accepted in the Federal Government as a tool for documenting
 common business requirements; it is currently being used by 13 other Federal
 Functional Areas including Financial Management, IT Services, and Cybersecurity.  
 
-- **Component #1 - Business Lifecyles**<br>
+- **Component #1 - Business Lifecycles**<br>
 Federal Business Lifecycles, functional areas, functions, and activities serve as the basis for a common understanding of what services agencies need and solutions that should be offered.
 
 
