@@ -225,7 +225,7 @@ Once you digitally sign a document, you can have others also digitally sign it. 
 
 Multiple approvers may digitally sign a Word document. This signature process uses the same procedures as you would to add one invisible digital signature: [Add an Invisible Digital Signature](#add-an-invisible-digital-signature){:class="usa-link"}; however, the completed document must be coordinated with multiple signing parties who chronologically apply their individual digital signature.  
 
-If multiple agencies are submitting a document for Federal Register publication, OFR receives only one document, signed by all agency authorised representatives. For example, if six agencies are jointly issuing a rule, OFR does NOT get six submissions of the same rule. Regardless of the method of submission, the legal signatory requirements are the same.
+If multiple agencies are submitting a document for Federal Register publication, OFR receives only one document, signed by all agency authorized representatives. For example, if six agencies are jointly issuing a rule, OFR does NOT get six submissions of the same rule. Regardless of the method of submission, the legal signatory requirements are the same.
 
 {% include alert-warning.html heading="OFR Rules for Multiple Signatories" content="If you are submitting a document to OFR that requires multiple signatures, be sure to include **all** required signature blocks in the body of the document **before** any signatures are applied, otherwise the document will need to be edited which will remove all signatures up to that point." %}
 

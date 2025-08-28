@@ -98,7 +98,7 @@ In today's complex business landscape, successful public citizen onboarding is e
 
 ## Coming Soon
 
-We are continuously adding new content to the Experiments section, the following is a list of whats next. 
+We are continuously adding new content to the Experiments section, the following is a list of what's next. 
 
 - Post Quantum Crypto(PQC) and Post Quantum Encryption(PQE) for logical and Physical Access
 - Mobile PIV
