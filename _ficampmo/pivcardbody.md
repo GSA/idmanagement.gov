@@ -289,8 +289,8 @@ subnav:
     </p>
     <p>
       <table class="usa-table">
+        <caption>Table 1 - Applicable Requirements</caption>
         <thead>
-          <caption>Table 1 - Applicable Requirements</caption>
         <tr>
           <th scope="col">Identifier #</th>
           <th scope="col">Requirement Description</th>
