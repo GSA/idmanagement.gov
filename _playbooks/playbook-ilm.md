@@ -30,12 +30,12 @@ subnav:
 <!-- Updated by CJB 06-25-2024 -->
 
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
-<img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br>
-<p>
+<img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br>
+<p class="padding-top-4">
 The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.
 </p>
 
-<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion usa-accordion--bordered padding-top-4">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
