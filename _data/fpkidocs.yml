@@ -7,6 +7,22 @@
 # 
 # Used on: https://www.idmanagement.gov/fpki/
 
+- category: FPKIMA Audit Letter
+  numberProposal: 2024
+  name: FPKIMA Audit Letter 2024
+  date: 9/3/2025
+  url: /docs/archived/fpki-fpkima-audit-letter-2023.pdf
+  status: post
+  remove: 9/3/2028
+
+- category: FPKI Trust Infrastructure Certificate Practice Statement
+  numberProposal: 6.5
+  name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.5
+  date: 9/3/2025
+  url: /docs/archived/fpki-fpkima-cps-v65.pdf
+  status: post
+  remove: 9/3/2028
+
 - category: Common Profile
   numberProposal: 2.3
   name: Common Policy X.509 Certificate and Certificate Revocation List (CRL) Profiles v2.3
