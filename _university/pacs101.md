@@ -481,7 +481,7 @@ Agency staff are encouraged to participate in steps that list their roles in **b
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/Guide%20to%20GSA%20%20PACS%20%20An%20Ordering%20Guide%20-%20January%202021.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a class="usa-link" href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer" class="usa-link"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/Guide%20to%20GSA%20%20PACS%20%20An%20Ordering%20Guide%20-%20January%202021.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer" class="usa-link"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
@@ -763,8 +763,6 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 [_Compliance Guide: The HTTPS-Only Standard_](https://https.cio.gov/guide/#are-federally-operated-certificate-revocation-services-crl-ocsp-also-required-to-move-to-https){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 [_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Interagency Security Council (ISC), December 2015
-
-[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_]({{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}, v1.1.0, GSA, February 24, 2015
 
 [_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, 2020 Edition
 

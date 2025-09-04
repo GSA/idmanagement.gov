@@ -40,7 +40,7 @@ The Fast IDentity Online 2 Community of Action, along with content developed by 
 
 In collaboration with the FIDO2 CoA members, the FIDO Alliance also published a sister publication on more FIDO-specific areas. See the [FIDO White Paper on FIDO Alliance Guidance for U.S. Government Agency Deployment of FIDO Authentication](https://fidoalliance.org/white-paper-fido-alliance-guidance-for-u-s-government-agency-deployment-of-fido-authentication/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information.
 
-<div class="usa-accordion usa-accordion--bordered">
+<div class="usa-accordion usa-accordion--bordered padding-top-4">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
       Date: {{page.pubdate}} - Version: {{page.version}}
