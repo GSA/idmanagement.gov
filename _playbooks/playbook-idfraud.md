@@ -56,6 +56,10 @@ subnav:
 }
 </style>
 
+<img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
+<img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height='64' align="left" alt="U.S. Federal Chief Information Officer Council Logo">
+<br><br><br>
+
 This playbook is a collaboration between the Federal Chief Information Security Officer Council Identity, Credential, and Access Management Subcommittee and the Digital Identity Community of Practice, and the DOD DARPA SemaFor Program team. For additional context and to request a conversation or demo of the tools mentioned within this document please contact [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}.
 
 <br/>
