@@ -1664,20 +1664,21 @@
     - *ISC
   scope:
     - "Workforce Identity"
-- &PACSRFP
-  type: Guidance
-  shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
-  longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
-  description: >-
-    This document provides language for E-PACS related procurements to ensure compliance with applicable policies
-  published: 2015-02-24
-  externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
-  authored-by:
-    - *GSA
-  authorized-by:
-    - *M1917
-  scope:
-    - "Workforce Identity"
+# Note: removed on 09/03/2025 - retired document, approved by Vanessa - cjb
+# - &PACSRFP
+#   type: Guidance
+#   shortName: "Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
+#   longName: "Enabling Strong Authentication with Personal Identification Verification Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs"
+#   description: >-
+#     This document provides language for E-PACS related procurements to ensure compliance with applicable policies
+#   published: 2015-02-24
+#   externalURL: "https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"
+#   authored-by:
+#     - *GSA
+#   authorized-by:
+#     - *M1917
+#   scope:
+#     - "Workforce Identity"
 - &FACILITYACCESSCONTROL
   type: Guidance
   shortName: "FACILITY ACCESS CONTROL"

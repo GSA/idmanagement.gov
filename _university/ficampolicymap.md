@@ -198,10 +198,6 @@ sticky_sidenav: true
           <path d="M507.2,604.3c-1.06-2.84-2.86-6.36-4.77-8.54l4.76,1.71,4.75-1.73c-1.9,2.19-3.7,5.71-4.75,8.55Z"/>
         </g>
         <g>
-          <polyline points="521.24 447.8 521.48 554.44 587.6 554.44 587.57 653.77" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
-          <path d="M587.57,659.8c-1.05-2.84-2.85-6.36-4.75-8.55l4.76,1.72,4.76-1.72c-1.9,2.18-3.7,5.71-4.76,8.55Z"/>
-        </g>
-        <g>
           <polyline points="537.26 447.8 537.53 535.22 697.64 535.22 697.82 1347.26" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
           <path d="M697.82,1353.3c-1.05-2.84-2.85-6.36-4.76-8.55l4.76,1.72,4.75-1.72c-1.9,2.18-3.7,5.71-4.75,8.55Z"/>
         </g>
@@ -794,12 +790,6 @@ sticky_sidenav: true
       <a href="https://www.nist.gov/identity-access-management/identity-and-access-management-roadmap" title="NIST IAM Roadmap" target="_blank" rel="noopener noreferrer">
       <rect class="tsbutton" id="gbrect-36" data-name="gbrect" x="497.39" y="605.3" width="71.11" height="38.89" />
       <text id="NIST_IAM_Roadmap1-2" data-name="NIST_IAM_Roadmap1-2" transform="translate(513.94 623.24) scale(.79 1)" style="font-family: Arial-BoldMT, Arial; font-size: 11px; font-weight: 700;"><tspan x="0" y="0">NIST IAM</tspan><tspan x="-.92" y="11">Roadmap</tspan></text>
-      </a>
-    </g>
-    <g id="EPACS_Box" data-name="EPACS Box">
-      <a href="https://www.idmanagement.gov/docs/pacs-pki-epacs-procurement.pdf"  title="Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs" target="_blank" rel="noopener noreferrer">
-      <rect class="tsbutton" id="gbrect-37" data-name="gbrect" x="526.39" y="660.3" width="134.11" height="51" />
-      <text id="EPACS_Box-2" data-name="EPACS Box" transform="translate(544.57 677.74) scale(.79 1)" style="font-family: Arial-BoldMT, Arial; font-size: 11px; font-weight: 700;"><tspan x="0" y="0">E-</tspan><tspan x="11" y="0" style="letter-spacing: -.07em;">P</tspan><tspan x="17.52" y="0">ACS Recommended</tspan><tspan x="-.1" y="12">Procurement Language</tspan><tspan x="38.41" y="24">for RFPs</tspan></text>
       </a>
     </g>
     <g id="NIST_Inter-Agency_Box" data-name="NIST Inter-Agency Box">

@@ -21,6 +21,8 @@ subnav:
     href: '#pacs-procurement-best-practices'
   - text: PACS Training Resources
     href: '#training'
+  - text: PACS Industry Training
+    href: '#industry-training'
   - text: Planning, Procurement, and Operations Lessons Learned
     href: '#lessons-learned'
   - text: References
@@ -479,7 +481,7 @@ Agency staff are encouraged to participate in steps that list their roles in **b
 <tr>
   <td colspan="7">
   <ul>
-	<li>You can reuse the <a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/Guide%20to%20GSA%20%20PACS%20%20An%20Ordering%20Guide%20-%20January%202021.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help creating an RFP, see <a class="usa-link" href="{{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf" target="_blank" rel="noopener noreferrer">Enabling Strong Authentication with PIV Cards: PKI in Enterprise PACS Recommended Procurement Language for RFPs Version 1.1.0</a>. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer" class="usa-link"> GSA’s eBuy RFQ Online Tool</a>.</li>
+	<li>You can reuse the <a class="usa-link usa-link--external" href="https://buy.gsa.gov/api/system/files/documents/Guide%20to%20GSA%20%20PACS%20%20An%20Ordering%20Guide%20-%20January%202021.pdf" target="_blank" rel="noopener noreferrer">GSA PACS Customer Ordering Guide’s Sample Statement of Work</a>, page 17. For help with Requests for Quotations (RFQs), see <a class="usa-link usa-link--external" href="https://www.ebuy.gsa.gov/ebuy/" target="_blank" rel="noopener noreferrer" class="usa-link"> GSA’s eBuy RFQ Online Tool</a>.</li>
   </ul>
   </td>
 </tr>
@@ -615,32 +617,49 @@ Industry certifications are vendor neutral and standards based. GSA requires tha
 
 Commercial vendors offer additional certification opportunities.
 
-### Industry Training
-
-The Secure Technology Alliance Access Control Council held a six-part webinar on planning, procuring, and implementing PIV-enabled physical access control systems (PACS) for government facilities. The series was created for systems engineers, facility managers, physical security personnel, and other government facility stakeholders.
-
-Webinar sessions feature industry and government experts covering:
--Identifying stakeholders involved in deploying a PIV-enabled PACS
--Planning implementation: facility characterization and risks
--Establishing the project scope
--Developing and implementing the procurement strategy
--Deploying the chosen solution
--Reviewing use cases and agency lessons learned
-
-Recordings of completed webinars are available.
-Part 1: How to Plan, Procure, and Deploy a PIV-Enabled Physical Access Control System
-Part 2: Facility Characterization and Risk Management
-Part 3: Establishing the Project Scope
-Part 4: Developing the Procurement Strategy
-Part 5: Implementing the Solution
-Part 6: Use Cases and Lessons Learned
-
 ### GSA PACS Reverse Industry Day Conference (2018)
 
 In 2018, GSA hosted a PACS Reverse Industry Day conference featuring government and industry experts on various PACS topics. Event videos are available via the GSA YouTube channe: 
 
 - [Morning Session](https://www.youtube.com/watch?v=r9X1XtrLjMg){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - [Afternoon Session](https://www.youtube.com/watch?v=bS8jdkW_WUI){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+
+## Industry Training
+
+The Secure Technology Alliance Access Control Council held a six-part webinar on planning, procuring, and implementing PIV-enabled physical access control systems (PACS) for government facilities. The series was created for systems engineers, facility managers, physical security personnel, and other government facility stakeholders.
+
+Webinar sessions feature industry and government experts covering: 
+
+- Identifying stakeholders involved in deploying a PIV-enabled PACS   
+- Planning implementation: facility characterization and risks   
+- Establishing the project scope   
+- Developing and implementing the procurement strategy   
+- Deploying the chosen solution   
+- Reviewing use cases and agency lessons learned.
+
+You may download or view the recordings of completed webinars. Additionally, the webinar presentation is available for download. Please use the links below. 
+
+<ol class="usa-process-list">
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-1/" target="_blank" rel="noopener noreferrer">How to Plan, Procure, and Deploy a PIV-Enabled Physical Access Control System</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-2/" target="_blank" rel="noopener noreferrer">Facility Characterization and Risk Management</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-3/" target="_blank" rel="noopener noreferrer">Establishing the Project Scope</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-4/" target="_blank" rel="noopener noreferrer">Developing the Procurement Strategy</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-5/" target="_blank" rel="noopener noreferrer">Implementing the Solution</a>
+  </li>
+  <li class="usa-process-list__item padding-bottom-4">
+    <a  class="usa-link usa-link--external" href="https://www.securetechalliance.org/how-to-plan-procure-and-deploy-a-piv-enabled-physical-access-control-system-part-6/" target="_blank" rel="noopener noreferrer">Use Cases and Lessons Learned</a>
+  </li>
+</ol>
+
 
 ## Lessons Learned
 
@@ -745,8 +764,6 @@ E.O. 13636 and PPD-21 - ["Fact Sheet: Improving Critical Infrastructure Cybersec
 
 [_Best Practices for Planning and Managing Physical Security Resources: An Interagency Security Committee Guide_](https://www.cisa.gov/sites/default/files/publications/isc-planning-managing-physical-security-resources-dec-2015-508.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, Interagency Security Council (ISC), December 2015
 
-[_Enabling Strong Authentication with PIV Cards: Public Key Infrastructure (PKI) in Enterprise Physical Access Control Systems (E-PACS) Recommended Procurement Language for RFPs_]({{site.baseurl}}/docs/pacs-pki-epacs-procurement.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}, v1.1.0, GSA, February 24, 2015
-
 [_Facility Access Control: An Interagency Security Committee Best Practice_](https://www.cisa.gov/sites/default/files/publications/Facility%20Access%20Control%20-%20An%20Interagency%20Security%20Committee%20Best%20Practice.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, 2020 Edition
 
 [_PACS Customer Ordering Guide (v2.0)_](https://buy.gsa.gov/docviewer?id=2038&docTitle=Physical%20Access%20Control%20Systems%20Ordering%20Guide&category=Security%20%20Protection,%20Security%20Systems&docType=Buyers%20Guide){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, GSA Schedule 84 - Security, Fire, & Law Enforcement, January 2021
@@ -792,7 +809,7 @@ Actions Needed to Help Achieve Vision for Secure, Interoperable Physical Access 
 15. <strong id="identity-verification">Identity Verification</strong> - The process of confirming or denying that a claimed identity is correct by comparing the credentials (something you know, something you have, something you are) of a person requesting access with those previously proven and stored in the PIV credential or system and associated with the identity being claimed.
 16. <strong id="interoperability">Interoperability</strong> - The quality of allowing any government facility or information system to verify a credential holder’s identity using the credentials on the PIV credential, regardless of the issuer.
 17. <strong id="occ-auth">OCC-AUTH</strong> - A two-factor authentication mechanism that uses secure messaging and an on-credential comparison of credential holder fingerprint(s).
-18. <strong id="physical-access-control-system">Physical Access Control System</strong> - An electronic system that controls the ability of people to enter a protected area utiizing authentication and authorization at access control points.
+18. <strong id="physical-access-control-system">Physical Access Control System</strong> - An electronic system that controls the ability of people to enter a protected area utilizing authentication and authorization at access control points.
 19. <strong id="occ-auth">PACS Alternative Authenticator- Derived PKI-CAK</strong> - A PIV authentication mechanism implemented on an approved alternative authenticator (token) using wireless asymmetric key challenge/response protocol of a Derived (NIST SP 800-157) Card Authentication certificate and key.
 20. <strong id="pki-auth">PKI-AUTH</strong> - A PIV authentication mechanism implemented by an asymmetric key challenge/response protocol using the PIV
 Authentication certificate and key.

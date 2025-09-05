@@ -49,7 +49,7 @@ The [FPKI Policy Authority (FPKIPA)]({{site.baseurl}}/ficam/#federal-public-key-
 
 The FPKI has the following supplementary guidance:
 
-- [CPWG Cloud PKI Tiger Team Report (PDF, October 2024)]({{site.baseurl}}/docs/fpki_cloud_guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – A final report including a summary and equivalent controls guidance as developed by the CPWG PKI in the Cloud Tiger Team.  This docment includes the history of the Cloud PKI Tiger Team and provides equivalent control guidance to define cloud PKI design characteristics that meet the intent of FPKI policies.
+- [CPWG Cloud PKI Tiger Team Report (PDF, October 2024)]({{site.baseurl}}/docs/fpki_cloud_guidance.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – A final report including a summary and equivalent controls guidance as developed by the CPWG PKI in the Cloud Tiger Team.  This document includes the history of the Cloud PKI Tiger Team and provides equivalent control guidance to define cloud PKI design characteristics that meet the intent of FPKI policies.
 - [Security Controls Overlay of NIST Special Publication 800-53 Revision 5 Security Controls for FPKI Systems (PDF, February 2021)]({{site.baseurl}}/docs/fpki-overlay-sp-800-53.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – The application of NIST Special Publication (SP) 800-53 security controls is required to operate a CA that is used in the FPKI and contains federal data. Review the controls overlay document to understand the requirements and details of each applicable control.
 - [FBCA: Cross-Certification Evaluation Framework v5.0 (PDF, September 2024)]({{site.baseurl}}/docs/fbca-cross-certification-eval-fw.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} - This document provides a general framework for conducting FPKI cross-certification. This framework includes pre-conditions for being considered as an applicant, the cross-certification process, maintenance of the cross-certified status, and circumstances for terminating the
 cross-certification relationship.
@@ -135,8 +135,8 @@ This section contains information on audits performed on the Federal Common Poli
 
 The FPKIMA Certification Practice Statement (CPS) documents the operational practices required to ensure trusted operations. Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided below.
 
-- [U.S. FPKI Certification Practice Statement (PDF, May 2025) – Version 6.5]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [U.S. FPKI Audit Letter of Compliance (PDF, August 2024)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Results of the August 2023-August 2024 Compliance Audit for the FPKI Trust Infrastructure Systems.
+- [U.S. FPKI Certification Practice Statement (PDF, September 2025) – Version 6.6]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [U.S. FPKI Audit Letter of Compliance (PDF, August 2025)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Results of the August 2024-August 2025 Compliance Audit for the FPKI Trust Infrastructure Systems.
 - [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Community Interoperability Test Environment (CITE)]({{site.baseurl}}/implement/fpkicite/){:rel="noopener noreferrer"}{:class="usa-link"} - information regarding the test FPKI environment to include test CA respsitory information and test certificate policy object identifiers.
 
