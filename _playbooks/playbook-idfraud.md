@@ -321,7 +321,7 @@ The workflow selects analytics appropriate to the type of file submitted for ana
 **Figure 4 - Audio**
 
 <figure>
-  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure4-audio.jpg" alt="Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis."><figcaption>Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis.</figcaption>
+  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure4-audio.jpg" alt="Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis."><figcaption  class="gsa-figcaption">Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis.</figcaption>
 </figure>
 
 
@@ -336,7 +336,7 @@ Analytics process both the audio track and video tracks for semantic consistency
 **Figure 5: Video**
 
 <figure>
-  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure5-video.jpg" alt="Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes."><figcaption>Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes.</figcaption>
+  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure5-video.jpg" alt="Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes."><figcaption  class="gsa-figcaption">Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes.</figcaption>
 </figure>
 
 **Deepfake Scenario Impacts for Image, Audio, Video**
