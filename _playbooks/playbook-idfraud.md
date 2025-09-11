@@ -196,7 +196,7 @@ This playbook was developed by the General Services Administration Office of Gov
 
 ### What is it?
 
-*“The impact of identity theft on the government sector reaches far and wide, costing Americans tens of billions of dollars every year”* *<sub>__(LexisNexis, 2016, pg.9)__<sup>[^1]</sup></sub>*.
+<strong>“The impact of identity theft on the government sector reaches far and wide, costing Americans tens of billions of dollars every year”</strong> <strong><sub>__(LexisNexis, 2016, pg.9)__<sup>[^1]</sup></sub></strong>.
 
 Identity fraud in the federal government happens when someone uses a stolen identity or a fake identity to gain access to a government system. This type of fraud has evolved with time and has grown increasingly sophisticated. Awareness of different identity fraud techniques will help agency fraud prevention, encourage compliance with federal policies, and promote unified interagency approach.
 
