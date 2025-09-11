@@ -145,7 +145,7 @@ These are key terms used throughout this document:
 
 The primary audience for this playbook are agency digital identity and security program managers. Table 1 lists stakeholders and stakeholder types digital identity program managers engage with during identity fraud prevention, detection and mitigation. An internal stakeholder is within the agency and external stakeholders are outside the agency.
 
-<br>
+<!-- <br>
 
 <table class="usa-table">
 <caption>Table 1: Stakeholder Table</caption>
@@ -185,7 +185,7 @@ The primary audience for this playbook are agency digital identity and security 
   <td headers="stakeholder-type">External</td>
 </tr>
 </tbody>
-</table>
+</table> -->
 
 
 ## Disclaimer
