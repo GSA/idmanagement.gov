@@ -1186,13 +1186,13 @@ YubiKey 5.7 does not support the Dilithium algorithm.
 <img src="{{site.baseurl}}/assets/unifyia-pqc/27-tls-usecase-x25519.png" alt="TLS Use Case with X25519">
 <p align="justify">To enable secure communications and transactions over TLS 1.2 and TLS 1.3, the cipher suites were added in the NGINX server config file to use X25519 algorithm.</p>
 <img src="{{site.baseurl}}/assets/unifyia-pqc/28-tls1.png" alt="TLS Use Case with X25519">
-<p align="justify">The image presented below displays that the X25519 was used during secure communications between NGINX and browser. 172.18.0.15 is NGINX server container IP address and 183.82.106.20 is public IP address (from browser). The NGINX server uses x25519 for key exchange.</p>
+<p align="justify">The image presented below displays that the X25519 was used during secure communications between NGINX and the browser. 172.18.0.15 is the NGINX server container IP address and 183.82.106.20 is the public IP address (from browser). The NGINX server uses x25519 for key exchange.</p>
 <img src="{{site.baseurl}}/assets/unifyia-pqc/29-tls2.png" alt="TLS Use Case with X25519">
-<p align="justify">The below image clearly displays that the authentication service (IP Address 172.18.0.3) successfully communicates using x25519 algorithm with the browser (client). </p>
+<p align="justify">The below image clearly displays that the authentication service (IP Address 172.18.0.3) successfully communicates using the x25519 algorithm with the browser (client). </p>
 <img src="{{site.baseurl}}/assets/unifyia-pqc/30-tls3.png" alt="TLS Use Case with X25519">
 <p align="justify">The below image clearly displays that the authentication service (IP Address 172.18.0.3) communicates using x25519 algorithm with the internal microservices (e.g., usermanagement). </p>
 <img src="{{site.baseurl}}/assets/unifyia-pqc/31-tls4.png" alt="TLS Use Case with X25519">
-<p align="justify">These results confirm that there is a feasibility to use modern cryptographic algorithms in the communication channels. The channel becomes significantly secure and resistant to potential breaches, aligning with the cryptographic agility goals of the PQC enabled PIV infrastructure.</p>
+<p align="justify">These results confirm that there is a feasibility to use modern cryptographic algorithms in the communication channels. The channel becomes significantly more secure and resistant to potential breaches, aligning with the cryptographic agility goals of the PQC enabled PIV infrastructure.</p>
 
 <!-- Start of Section 11 -->
 
@@ -1214,7 +1214,7 @@ YubiKey 5.7 does not support the Dilithium algorithm.
 
 ## Conclusion 
 
-<p align="justify">The transition to a post-quantum cryptography (PQC) enabled PIV ecosystem marks a significant step toward future-proofing federal identity systems against emerging quantum threats. This experiment has demonstrated that while promising progress is being made through experimenting, the path to full adoption will be incremental. Encouraging results have been achieved in issuing and using PQC-enabled credentials on modern hardware platforms with vendor supported upgrades, validating their potential to support high-assurance digital signature use case as shown with this experiment.</p>
+<p align="justify">The transition to a post-quantum cryptography (PQC) enabled PIV ecosystem marks a significant step toward future-proofing federal identity systems against emerging quantum threats. This experiment has demonstrated that while promising progress is being made through experimenting, the path to full adoption will be incremental. Encouraging results have been achieved in issuing and using PQC-enabled credentials on modern hardware platforms with vendor supported upgrades, validating their potential to support high-assurance digital signature use cases as shown with this experiment.</p>
 
 <img src="{{site.baseurl}}/assets/unifyia-pqc/32-implementation-gaps.png" alt="Implementation Gaps">
 
