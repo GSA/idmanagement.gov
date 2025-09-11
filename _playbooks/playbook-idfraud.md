@@ -147,92 +147,45 @@ The primary audience for this playbook are agency digital identity and security 
 
 <table class="usa-table">
   <caption>
-    Bordered table
+    Table 1: Stakeholder Table
   </caption>
   <thead>
     <tr>
-      <th scope="col">Document title</th>
-      <th scope="col">Description</th>
-      <th scope="col">Year</th>
+      <th scope="col">Stakeholder</th>
+      <th scope="col">Stakeholder Type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Declaration of Independence</th>
-      <td>
-        Statement adopted by the Continental Congress declaring independence
-        from the British Empire.
-      </td>
-      <td>1776</td>
+      <th scope="row" headers="stakeholder">Digital Identity and Security Program Managers</th>
+      <td>Internal</td>
     </tr>
     <tr>
-      <th scope="row">Bill of Rights</th>
-      <td>
-        The first ten amendments of the U.S. Constitution guaranteeing rights
-        and freedoms.
-      </td>
-      <td>1791</td>
+      <th scope="row" headers="stakeholder">Security Operations</th>
+      <td>Internal</td>
     </tr>
     <tr>
-      <th scope="row">Declaration of Sentiments</th>
-      <td>
-        A document written during the Seneca Falls Convention outlining the
-        rights that American women should be entitled to as citizens.
-      </td>
-      <td>1848</td>
+      <th scope="row" headers="stakeholder">IT / System Administrators</th>
+      <td>Internal</td>
     </tr>
     <tr>
-      <th scope="row">Emancipation Proclamation</th>
-      <td>
-        An executive order granting freedom to slaves in designated southern
-        states.
-      </td>
-      <td>1863</td>
+      <th scope="row" headers="stakeholder">Human Resources</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Users</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Third-Party Assessors</th>
+      <td>External</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Law Enforcement Agencies</th>
+      <td>External</td>
     </tr>
   </tbody>
 </table>
-
-<!-- <br>
-
-<table class="usa-table">
-<caption>Table 1: Stakeholder Table</caption>
-<thead>
-  <tr>
-    <th scope="col" id="stakeholder">Stakeholder</th>
-    <th scope="col" id="stakeholder-type">Stakeholder Type</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td scope="row" headers="stakeholder">Digital Identity and Security Program Managers</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Security Operations</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">IT / System Administrators</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Human Resources</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Users</th>
-  <td headers="stakeholder-type">Internal/External</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Third-Party Assessors</th>
-  <td headers="stakeholder-type">External</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Law Enforcement Agencies</th>
-  <td headers="stakeholder-type">External</td>
-</tr>
-</tbody>
-</table> -->
 
 
 ## Disclaimer
