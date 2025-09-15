@@ -145,45 +145,46 @@ These are key terms used throughout this document:
 
 The primary audience for this playbook are agency digital identity and security program managers. Table 1 lists stakeholders and stakeholder types digital identity program managers engage with during identity fraud prevention, detection and mitigation. An internal stakeholder is within the agency and external stakeholders are outside the agency.
 
-
 <table class="usa-table">
-<caption>Table 1: Stakeholder Table</caption>
-<thead>
-  <tr>
-    <th scope="col" id="stakeholder">Stakeholder</th>
-    <th scope="col" id="stakeholder-type">Stakeholder Type</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td scope="row" headers="stakeholder">Digital Identity and Security Program Managers</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Security Operations</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">IT / System Administrators</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Human Resources</th>
-  <td headers="stakeholder-type">Internal</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Users</th>
-  <td headers="stakeholder-type">Internal/External</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Third-Party Assessors</th>
-  <td headers="stakeholder-type">External</td>
-</tr>
-<tr>
-  <td scope="row" headers="stakeholder">Law Enforcement Agencies</th>
-  <td headers="stakeholder-type">External</td>
-</tr>
-</tbody>
+  <caption>
+    Table 1: Stakeholder Table
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Stakeholder</th>
+      <th scope="col">Stakeholder Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" headers="stakeholder">Digital Identity and Security Program Managers</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Security Operations</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">IT / System Administrators</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Human Resources</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Users</th>
+      <td>Internal</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Third-Party Assessors</th>
+      <td>External</td>
+    </tr>
+    <tr>
+      <th scope="row" headers="stakeholder">Law Enforcement Agencies</th>
+      <td>External</td>
+    </tr>
+  </tbody>
 </table>
 
 
@@ -195,7 +196,7 @@ This playbook was developed by the General Services Administration Office of Gov
 
 ### What is it?
 
-*“The impact of identity theft on the government sector reaches far and wide, costing Americans tens of billions of dollars every year”* *<sub>__(LexisNexis, 2016, pg.9)__<sup>[^1]</sup></sub>*.
+“The impact of identity theft on the government sector reaches far and wide, costing Americans tens of billions of dollars every year” <sub><u>(LexisNexis, 2016, pg.9)</u></sub> [^1].
 
 Identity fraud in the federal government happens when someone uses a stolen identity or a fake identity to gain access to a government system. This type of fraud has evolved with time and has grown increasingly sophisticated. Awareness of different identity fraud techniques will help agency fraud prevention, encourage compliance with federal policies, and promote unified interagency approach.
 
@@ -320,7 +321,7 @@ The workflow selects analytics appropriate to the type of file submitted for ana
 **Figure 4 - Audio**
 
 <figure>
-  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure4-audio.jpg" alt="Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis.">Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis.</figcaption>
+  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure4-audio.jpg" alt="Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis."><figcaption  class="gsa-figcaption">Multiple algorithms analyze the audio and provide findings of generated audio, along with detailed information to assist the analyst in making an assessment. In the file-level findings illustrated above, the audio file is identified as manipulated by several analytics. The audio pattern in red indicates the portion of the audio identified as manipulated in the analysis.</figcaption>
 </figure>
 
 
@@ -335,7 +336,7 @@ Analytics process both the audio track and video tracks for semantic consistency
 **Figure 5: Video**
 
 <figure>
-  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure5-video.jpg" alt="Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes.">Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes.</figcaption>
+  <img src="{{site.baseurl}}/assets/experiments/idfraud/figure5-video.jpg" alt="Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes."><figcaption  class="gsa-figcaption">Workflow output, with the higher analytic score on the right of the image, indicates this video is probably manipulated. This video is identified as a deepfake with an analytic runtime of approximately two minutes.</figcaption>
 </figure>
 
 **Deepfake Scenario Impacts for Image, Audio, Video**
@@ -570,63 +571,63 @@ This playbook is a comprehensive guide for agencies to have a common understandi
 </thead>
 <tbody>
   <tr>
-    <td scope="row" headers="acronym">CISA</th>
+    <th scope="row" headers="acronym">CISA</th>
     <td scope="row" headers="definition">Cybersecurity and Infrastructure Security Agency</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">DARPA</th>
+    <th scope="row" headers="acronym">DARPA</th>
     <td scope="row" headers="definition">Defense Advanced Research Projects Agency</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">FBI</th>
+    <th scope="row" headers="acronym">FBI</th>
     <td scope="row" headers="definition">Federal Bureau of Investigation</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">FISMA</th>
+    <th scope="row" headers="acronym">FISMA</th>
     <td scope="row" headers="definition">Federal Information Security Management Act</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">GAN</th>
+    <th scope="row" headers="acronym">GAN</th>
     <td scope="row" headers="definition">Generative Adversarial Network</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">GAO</th>
+    <th scope="row" headers="acronym">GAO</th>
     <td scope="row" headers="definition">Government Accountability Office</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">GSA</th>
+    <th scope="row" headers="acronym">GSA</th>
     <td scope="row" headers="definition">General Services Agency</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">ICAM</th>
+    <th scope="row" headers="acronym">ICAM</th>
     <td scope="row" headers="definition">Identity, Credential, and Access Management</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">IRP</th>
+    <th scope="row" headers="acronym">IRP</th>
     <td scope="row" headers="definition">Incident Response Planning</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">NIST</th>
+    <th scope="row" headers="acronym">NIST</th>
     <td scope="row" headers="definition">National Institute of Standards and Technology</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">OGP</th>
+    <th scope="row" headers="acronym">OGP</th>
     <td scope="row" headers="definition">Office of Government-wide Policy</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">OIG</th>
+    <th scope="row" headers="acronym">OIG</th>
     <td scope="row" headers="definition">Office of Inspector General</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">OMB</th>
+    <th scope="row" headers="acronym">OMB</th>
     <td scope="row" headers="definition">Office of Management and Budget</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">SemaFor</th>
+    <th scope="row" headers="acronym">SemaFor</th>
     <td scope="row" headers="definition">Semantic Forensics</td>
   </tr>
   <tr>
-    <td scope="row" headers="acronym">SMS</th>
+    <th scope="row" headers="acronym">SMS</th>
     <td scope="row" headers="definition">Short Message Service</td>
   </tr>
 </tbody>
