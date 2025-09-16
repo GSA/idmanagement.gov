@@ -239,7 +239,7 @@ The Security Authorization provides organizational accountability by requiring a
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
+    <!-- <h4 class="usa-alert__heading"></h4> -->
     <p class="usa-alert__text">
       The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufﬁcient for their continued use. To avoid signiﬁcant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities. Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP.
     </p>
