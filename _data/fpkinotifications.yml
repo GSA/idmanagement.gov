@@ -44,7 +44,7 @@
 - notice_date: August 4, 2025
   change_type: CA Certificate Revocation
   system: Entrust PKI SSP
-  change_description: The Entrust Managed Services Root CA revoked the rekeyed CA certificate to the Department of Energy that was valid from 3/28/2025 to 11/28/2030. All subscriber certificates signed by the DoD SSP CA are also revoked.
+  change_description: The Entrust Managed Services Root CA revoked the rekeyed CA certificate to the Department of Energy that was valid from 3/28/2025 to 11/28/2030. All subscriber certificates signed by the DoE SSP CA are also revoked.
   contact: support at entrust dot com
   ca_certificate_hash: b964d4b90d3146b195e9fb258a06698c28f97cf1
   ca_certificate_issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US

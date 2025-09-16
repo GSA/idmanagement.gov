@@ -235,15 +235,15 @@
   background-color: #112e51;
 }
 
-// Lower front panel
-.gas-lower-panel {
-  //background-image: asset_url("new-header-graphic.png");
-  background-image: url("{{site.baseurl}}/assets/images/lower_section_background.png");
-  //background-image: asset_url("hero-image2-blur.png");
-  background-position: 50%;
-  background-size: cover;
-  margin: 0px;
-}
+// // Lower front panel
+// .gas-lower-panel {
+//   //background-image: asset_url("new-header-graphic.png");
+//   background-image: url("{{site.baseurl}}/assets/images/lower_section_background.png");
+//   //background-image: asset_url("hero-image2-blur.png");
+//   background-position: 50%;
+//   background-size: cover;
+//   margin: 0px;
+// }
 
 // Controls the height of small cards like ones on front of website.
 .gsa-card-small {
@@ -420,7 +420,7 @@
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 755px) {
   .paginate-link {
     display: none;
   }
@@ -431,6 +431,26 @@
   .hero-heading {
     font-size: 2rem;
   }
+
+  .usa-hero {
+  //background-image: asset_url("new-header-graphic.png");
+  background-image: url("{{site.baseurl}}/assets/images/new-background-30-fade-mobile.webp");
+  background-position: 50%;
+  background-size: cover;
+  // height: 380px;
+  height: auto;
+  margin: 0px;
+}
+
+
+  // For bottom icon panel on front page, to cover blue with same image in header
+.gsa-icon-panel {
+  background-image: url("{{site.baseurl}}/assets/images/bottom-panel-background-mobile.webp");
+  //background-image: asset_url("hero-image2-blur.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   
   .hero-text {
     font-size: 1rem;
