@@ -23,6 +23,10 @@ subnav:
   href: '#piam-framework'
 - text: PIAM Process
   href: '#piam-process'
+- text: Mobile PIV (mPIV) Experiment
+  href: '#mobile-piv-mpiv-experiment'
+- text: Shatterproof Digital Identity - GSA PQC Experiment
+  href: '#shatterproof-digital-identity---gsa-pqc-experiment'
 
 ---
 
