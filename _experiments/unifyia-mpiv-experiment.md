@@ -1,0 +1,1362 @@
+---
+layout: page
+collection: experiments
+title: Mobile PIV (mPIV) Experiment
+type: Markdown
+permalink: /experiments/unifyia-mpiv-experiment/
+description: Mobile PIV (mPIV) Experiment
+sidenav: papers
+sticky_sidenav: true
+
+pubdate: June 2025
+version: 1.0.2
+
+subnav:
+  - text: Executive Summary
+    href: "#executive-summary"
+  - text: Purpose
+    href: "#purpose"
+  - text: Scope
+    href: "#scope"
+  - text: Target Audience
+    href: "#target-audience"
+  - text: What is mPIV?
+    href: "#what-is-mpiv"
+  - text: What is mdoc?
+    href: "#what-is-mdoc"
+  - text: What is Derived mPIV?
+    href: "#what-is-derived-mpiv"
+  - text: mPIV Ecosystem
+    href: "#mpiv-ecosystem"
+  - text: Implementation Strategy
+    href: "#implementation-strategy"
+  - text: Standards Compliance
+    href: "#standards-compliance"
+  - text: Design Strategy
+    href: "#design-strategy"
+  - text: Functional Requirements
+    href: "#functional-requirements"
+  - text: mPIV Implementation Framework Overview
+    href: "#mpiv-implementation-framework-overview"
+  - text: Issuing Authority and the Unifyia ID Wallet Framework
+    href: "#issuing-authority-and-the-unifyia-id-wallet-framework"
+  - text: Authentication and Identity Verification Framework
+    href: "#authentication-and-identity-verification-framework"
+  - text: Relying Parties and Issuance Authority Framework
+    href: "#relying-parties-and-issuance-authority-framework"
+  - text: Unifyia ID Wallet, Verifiers, and Third-Party Trust Providers
+    href: "#unifyia-id-wallet-verifiers-and-third-party-trust-providers"
+  - text: mPIV Use Cases
+    href: "#mpiv-use-cases"
+  - text: Recommendations for mPIV Adoption    
+    href: "#recommendations-for-mpiv-adoption"
+  - text: Lessons Learned
+    href: "#lessons-learned"
+  - text: Future Outlook
+    href: "#future-outlook"
+  - text: Abbreviations	
+    href: "#abbreviations"
+  - text: Terms and Definitions
+    href: "#terms-and-definitions"
+  - text: Normative References
+    href: "#normative-references"
+---
+
+{% include alert-warning.html heading="Draft" content="The following document is a Draft and should not be interpreted as a finalized rule." %}
+
+<!-- Start of Header -->
+<div style="margin-bottom: 20px;">
+    <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" style="margin-right: 15px;border:0px;" alt="U.S. General Services Administration Logo">
+    <!-- <img src="{{site.baseurl}}/assets/logo/logo-sandia.png" style="margin-right: 15px;border:0px;" alt="Sandia National Laboratories Logo"> -->
+    <!-- <img src="{{site.baseurl}}/assets/logo/logo-lawrence.png" style="margin-right: 15px;border:0px;" alt="Lawrence Livermore National Laboratory Logo"> -->
+</div>
+  
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-c1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-c1" class="usa-accordion__content usa-prose">
+    <table>
+      <thead>
+      <tr>
+        <th scope='col' colspan="3">Mobile PIV (mPIV) Experiment</th>
+      </tr>
+      <tr>  
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>1.0.2</th>
+        <td>June 17, 2025</td>
+        <td>First Version</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-c2">
+      Table of Contents
+    </button>
+  </h4>
+  <div id="v-c2" class="usa-accordion__content usa-prose">
+<ul>
+<li><a href="#executive-summary">Executive Summary</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#scope">Scope</a></li>
+<li><a href="#target-audience">Target Audience</a></li>
+<li><a href="#what-is-mpiv">What is mPIV?</a></li>
+<li><a href="#what-is-mdoc">What is mdoc?</a></li>
+<li><a href="#what-is-derived-mpiv">What is Derived mPIV?</a></li>
+<li><a href="#mpiv-ecosystem">mPIV Ecosystem </a></li>
+<li><a href="#implementation-strategy">Implementation Strategy </a>
+<ul>
+<li><a href="#standards-compliance"> Standards Compliance </a></li>
+<li><a href="#design-strategy">Design Strategy </a></li>
+<li><a href="#functional-requirements">Functional Requirements </a></li>
+</ul>
+</li>
+<li><a href="#mpiv-implementation-framework-overview">mPIV Implementation Framework Overview </a>
+<ul>
+<li><a href="#issuing-authority-and-the-unifyia-id-wallet-framework">Issuing Authority and the Unifyia ID Wallet Framework </a></li>
+<li><a href="#authentication-and-identity-verification-framework">Authentication and Identity Verification Framework </a></li>
+<li><a href="#relying-parties-and-issuance-authority-framework">Relying Parties and Issuance Authority Framework </a></li>
+<li><a href="#unifyia-id-wallet-verifiers-and-third-party-trust-providers">Unifyia ID Wallet, Verifiers, and Third-Party Trust Providers </a></li>
+</ul>
+</li>
+<li><a href="#mpiv-use-cases">mPIV Usecases</a></li>
+<li><a href="#recommendations-for-mpiv-adoption">Recommendations for mPIV Adoption </a></li>
+<li><a href="#lessons-learned">Lessons Learned </a></li>
+<li><a href="#future-outlook">Future Outlook </a></li>
+<li><a href="#abbreviations">Abbreviations </a></li>
+<li><a href="#terms-and-definitions">Terms and Definitions</a></li>
+<li><a href="#normative-references">Normative References </a></li>
+</ul>
+</div>
+</div>
+
+<!-- Style for screenshots to add padding to top and bottom with redoing all images in PS. -->
+<style>
+  img {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #bfbaba;
+  }
+</style>
+<style>
+.note-box {
+  border-left: 6px solid #2196F3;
+  background-color: #e7f3fe;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+</style>
+
+<!-- Start of Section 1 -->
+
+## Executive Summary
+
+<p align="justify">The General Services Administration (GSA) partnered with Unifyia to explore Mobile Personal Identity Verification (mPIV) as a next-generation solution for secure digital identity in the federal enterprise. This experimental effort aimed to evaluate mPIV’s architecture, ecosystem, implementation strategy, and key use cases highlighting its potential as a scalable, standards-based alternative to traditional PIV cards.</p>
+
+<p align="justify">The experiment successfully demonstrated:</p>
+
+- A complete framework for issuing mPIV and derived mPIV with mdoc credentials using the Unifyia platform and Unifyia ID Wallet app, based on existing NIST and international standards.
+- Support for authentication, digital signature, and encryption use cases using mobile credentials.
+- Secure, standards-aligned methods for full and selective identity verification by third parties while maintaining user control over data in accordance with modern privacy and identity assurance principles.
+
+<p align="justify">For decades, PIV cards have served as the U.S. federal government’s gold standard for secure identity verification and access. However, rapid advancements in mobile technology, evolving digital identity standards (e.g., NIST SP 800-157, NIST SP 800-63-4, ISO/IEC 18013, W3C Verifiable Credentials, and eIDAS 2.0), and the global shift toward decentralized identity (DID) and self-sovereign identity (SSI) are accelerating the transition to more flexible, privacy-preserving, and interoperable digital identity models.</p>
+
+<p align="justify">Mobile devices, with their widespread use, user-centric interfaces, and secure hardware, offer an ideal platform for delivering such digital identities. Unifyia’s mPIV initiative embraces this mobile-first future by integrating core U.S. federal standards such as FIPS 201, NIST SP 800-157, and NIST SP 800-63 with global frameworks such as ISO/IEC 18013 (Parts 5 and 7) and W3C Verifiable Credentials.</p>
+
+<p align="justify">Powered by the Unifyia platform and Unifyia ID Wallet, mPIV credentials combine a standards-based visual ID, PKI certificates, and verifiable credentials into a single, mobile-friendly identity. Together, they enable secure, privacy-enhancing, and interoperable identity verification, authentication, signing, and encryption.</p>
+
+<p align="justify">This experiment confirmed mPIV’s potential as a secure, scalable, and user-centric evolution of the PIV model, laying a strong foundation for the future of digital identity in the federal landscape.</p>
+
+<!-- Start of Section 2 -->
+
+## Purpose
+
+<p align="justify">The purpose of this document is to define the concept of mPIV and its strategic importance in modernizing identity verification. It outlines how mPIV can securely replicate the capabilities of a physical PIV card on a mobile device, while also offering new modes of privacy-preserving and context-aware authentication. The key objectives include:</p>
+
+- Introducing mPIV as a mobile extension of the PIV program on Android and iOS mobile devices.
+- Understanding derived mPIV as a secondary cryptographic credential. 
+- Showcasing the Unifyia platform as the operational foundation for issuing and managing mPIV credentials.
+- Explaining how the issued credentials can be utilized to enable passwordless authentication and identity verification within a zero-trust security framework.
+- Exploring readiness of mPIV for future innovations like post-quantum cryptography (PQC).
+- Describing how mPIV supports federal mandates for digital modernization, mobile access, and zero trust security.
+- Positioning mPIV for future interoperability with commercial, federal, government, and international mobile identity systems.
+
+<!-- Start of Section 3 -->
+
+## Scope
+
+<p align="justify">This document covers the following areas:</p>
+
+- Definition of mPIV, its ecosystem, and how it builds upon the existing FIPS 201 PIV framework.
+- Derived mPIV as a secondary cryptographic credential that is created from an individual's primary PIV credential. 
+- Overview of mdoc’s ability to provide strong authentication and strong identification in-person or remotely, and its technical alignment with ISO/IEC 18013-5 and ISO/IEC 18013-7 mdoc standards (including data model, cryptographic protections, reader-device interactions, and privacy design).
+- Implementation considerations, including credential provisioning, cryptographic key management, offline and online identity verification modes, and lifecycle. 
+
+<!-- Start of Section 4 -->
+
+## Target Audience
+
+This content is intended for:
+
+- **Federal identity and access management stakeholders**, including PIV card issuers, PKI administrators, and policymakers.
+- **Security architects and IT leaders** implementing zero trust frameworks and mobile security strategies.
+- **Standards organizations and technology vendors** developing mPIV-compatible solutions, such as mobile wallet providers, secure element manufacturers, and identity verification platforms.
+- **Program managers and decision-makers** in federal agencies seeking to enhance identity assurance, mobility, and user experience across physical and digital domains.
+
+## What is mPIV?
+
+<p align="justify">Mobile Personal Identity Verification (mPIV) is the next-generation evolution of the U.S. federal government’s PIV card, designed for secure identity verification using mobile devices. It builds on established federal standards such as FIPS 201, NIST SP 800-157 (Derived Credentials), and NIST SP 800-63 (Digital Identity Guidelines) while embracing mobile-first design, user-centric privacy, and security. mPIV enables secure, phishing-resistant, passwordless authentication, digital signature, and encryption through PKI certificates and verifiable credentials in the evolving federal zero-trust identity ecosystem. </p>
+
+<p align="justify">mPIV also incorporates international standards like ISO/IEC 18013 for mobile documents, W3C Verifiable Credentials, and eIDAS 2.0, supporting interoperability and privacy-centric identity solutions. Issued on the Unifyia ID Wallet and managed by the Unifyia platform, mPIV credentials offer a scalable, secure, and user-controlled alternative to physical ID cards that enables faster issuance, dynamic updates, and compliance with modern identity assurance principles. </p>
+
+<p align="justify">mPIV serves as a verified proof of an individual’s identity in digital environments. It is bound cryptographically to the user. Like physical PIV cards, these credentials can be provided by trusted entities, such as federal government agencies, to verify identity and enable both logical and physical access. Upon issuance, the mPIV holder receives credentials such as visual ID (Photo ID), mdoc verifiable credentials, and PKI certificates (authentication, digital signature, encryption). Depending on the type of credential, they may be used for identity verification, authentication, encryption, or authorization (like a digital signature). mPIV offers individuals a robust, digitally secure mobile identity and adds another layer of trust to their digital persona. The following are the examples of mPIV use cases: </p>
+
+- Logical access systems (e.g., SSO, VPN, Microsoft Office 365, Outlook, Apple Mail client, Cloud services on the mobile device).
+- Identity verification
+- Date of birth or age verification (over 18, over 21, etc.) 
+- Secure emails
+- Digital Signatures
+- Role or clearance level verification in enterprises
+
+
+## What is mdoc?
+
+<p align="justify">Short for mobile document, “mdoc” refers to a digital representation of a physical identity document, such as a driver’s license, passport, or ID card, stored securely on a mobile device (Android or iOS). It can be presented and verified in both in-person and remote (online) scenarios while preserving security and user privacy. The concept is standardized by ISO/IEC 18013-5 and ISO/IEC 18013-7, originally developed for mobile driver’s licenses (mDLs), but extensible to a wide range of government-issued credentials such as passports, health IDs, and permanent resident cards. These standards support robust device-to-device interactions (both offline and online), with PKI-based cryptographic trust models.</p>
+
+<p align="justify">The mdoc model aligns with broader international efforts to modernize digital identity systems, such as the eIDAS 2.0 European Digital Identity Wallet, which mandates secure and interoperable digital credentials for EU citizens, and the W3C Verifiable Credentials framework, which enables privacy-preserving, decentralized identity verification across platforms. Typically stored in a secure digital wallet on the mobile device, mdocs leverage strong cryptographic binding between the credential and the hardware. Native support in Android and iOS ecosystems allows for seamless, secure interactions using technologies like Near Field Communication (NFC) and Bluetooth Low Energy (BLE), enabling scalable, privacy-respecting digital identity verification in both physical and online environments.</p>
+
+**Key Characteristics of mdoc:**
+
+- **Structured Data Format:** mdocs follow a defined data model called namespaces that contain data attributes (e.g., name, date of birth, document number), issuer signatures, and metadata.
+- **Cryptographic Security:** The mdoc is digitally signed by the issuer, ensuring authenticity, integrity, and resistance to tampering.
+- **User Control & Privacy:** The holder (e.g., mobile phone user) can selectively disclose specific data fields when presenting the mdoc, enhancing privacy.
+- **Interoperability:** mdocs are designed for interoperable verification, either offline (device-to-device, using NFC, Bluetooth, Wi-FiAware (out of current scope)) or online (issuer servers via secure Web APIs or OIDC).
+- **Trust Model:** Built upon PKI, the issuers and verifiers rely on the third-party trust providers (VICAL - Verifier Identity Certificate Authority List) that host and manage VICAL registries and root trust anchors. The issuers publish VICAL metadata for their certificates, and the verifiers consume VICAL metadata to establish trust in mdoc signatures.
+
+**Example:**
+
+<p align="justify">A mobile driver's license on a smartphone that can be shown to law enforcement or used to verify age when purchasing alcohol, without revealing the holder's address or full ID number.</p>
+
+<p align="justify">As this experiment shows, mdoc can also be purpose-built to create an mPIV credential that is a cryptographically secure mobile version of a PIV credential, designed to support federal zero trust frameworks and mobile access use cases. It can be designed to align with federal mandates like OMB M-22-09 for the Federal Zero Trust Strategy, which emphasizes phishing-resistant, hardware-backed multi-factor authentication for all federal users.</p>
+
+## What is Derived mPIV?
+
+<p align="justify">A Derived Mobile Personal Identity Verification (mPIV) credential is the new offering from Unifyia. It is a mobile-based extension of a traditional PIV card, enabling federal employees and contractors to securely authenticate using their mobile devices instead of physical smart cards. It is “derived” from the original PIV credentials issued under FIPS 201 and adheres to the guidelines specified in NIST SP 800-157, which defines how PIV credentials can be extended to mobile and other non-traditional platforms while maintaining the same assurance levels.</p>
+
+<p align="justify">The derived mPIV credential is typically provisioned to a mobile device using a secure issuance workflow that authenticates the user via their original PIV card or another trusted mechanism. Once installed, the derived mPIV can be used for secure mobile authentication, digital signatures, and data encryption—mirroring the functionality of a physical PIV card. This approach enables greater flexibility and mobility for federal users while aligning with the zero-trust framework and modern device-centric security strategies. When integrated with standards such as ISO/IEC 18013 (mobile documents) and W3C Verifiable Credentials, derived mPIV credentials support interoperable and privacy-respecting identity verification across domains.</p>
+
+**How are mPIV and Derived mPIV different from Derived PIV?**
+
+<p align="justify">Derived PIV (dPIV) is a mobile credential defined by NIST SP 800-157, created by deriving a single X.509 authentication certificate from an existing PIV card. It enables mobile authentication for federal users but is limited in scope, offering no support for digital signature, encryption, visual ID, or other identity formats.</p>
+
+<p align="justify">mPIV, on the other hand, is a standalone mobile identity that does not require a pre-existing PIV card. It can be issued independently and includes a rich set of credentials such as authentication, digital signature, and encryption certificates, as well as a standards-based visual ID, ISO/IEC-compliant mobile documents (mdocs), and Verifiable Credentials (VCs).</p>
+
+<p align="justify">Derived mPIV is similar to mPIV in terms of features and capabilities but is explicitly derived from an existing, valid PIV credential. It is issued only after the original PIV identity is verified. Like mPIV, it includes the full suite of PIV certificates, a visual identity, mdocs, and VCs. The key distinction is that derived mPIV maintains a strong cryptographic link to the original PIV, making it well-suited for federated organizations seeking a phased, trust-preserving transition to mobile identity.</p>
+
+
+<!-- Start of Section 5 -->
+## mPIV Ecosystem
+
+<p align="justify">Unifyia’s mPIV ecosystem is derived from the FIPS 201, NIST SP 800-157 (Derived Credentials), NIST SP 800-63 (Digital Identity Guidelines) and mdoc standard guidelines defined by ISO/IEC 18013-5 and ISO/IEC 18013-7. It involves several stakeholders and entities that play critical roles and align closely with the traditional PIV ecosystem but with extensions or new responsibilities in initiating, onboarding, enrolling, approving, issuing, managing, and consuming mobile PIV credentials. The stakeholder list includes the following entities with their respective roles/responsibilities in the mPIV ecosystem:</p>
+
+**Issuing Authority**
+
+<p align="justify">The issuing authority in the mPIV ecosystem is the organization responsible for the identity proofing, credential issuance, and lifecycle management of mPIV credentials.</p>
+
+- Conduct identity proofing of the mPIV holder per IAL3 requirements as defined in NIST SP 800 - 63A.
+- Support in-person, remote, or federated proofing mechanisms.
+- Approve or deny credential issuance.
+- Onboard, enroll, approve, issue, and manage mPIV credentials using the Unifyia Platform.
+- Evaluate and audit the mPIV ecosystem for compliance with federal policy and security standards.
+- Ensure alignment with FIPS 201, NIST SP 800-63 digital identity guidelines, and agency-specific policies.
+- Provide recommendations for remediation and policy enforcement.
+
+**Example**: Federal agencies issuing trusted PIV identities for federal employees and contractors
+
+**Issuing Authority Certificate Authority**
+
+<p align="justify">The issuing authority certificate authority (IACA) is an entity that issues digital certificates such as authentication, card authentication, digital signature, and encryption certificates that are part of the mPIV credential. It may be noted that the issuance of the card authentication certificate and its use cases are not part of this implementation. For this mPIV experiment, the Enterprise Java Beans Certificate Authority (EJBCA) is the IACA. Depending on the use case, organizations can use enterprise CAs, Public CAs, or federal PKI (FPKI) CAs.</p>
+
+- Support certificate profiles for the issuance of mobile credentials.
+- Support key escrow and key management activities.
+- Publish and maintain certificate status via Certificate Revocation Lists (CRLs) or Online Certificate Status Protocol to check the revocation status of digital certificates in real-time.
+
+**Examples:** WidePoint, DigitCert, EJBCA, MSCA, Entrust CA, Federal Public Key Infrastructure (FPKI) CA.
+
+**Technology Provider**
+
+<p align="justify">Digital identity technology providers are entities that provide technologies to create digital identities for individuals by onboarding, enrolling, and issuing digital credentials. They also store and manage the user’s data and credentials. In the context of our experimental implementation, Unifyia acts as the technology provider that offers the next-generation zero-trust identity and access management solutions. It has two offerings – the <b>Unifyia platform (Issuer)</b> and <b>Unifyia ID Wallet (mPIV Holder app)</b>.</p>
+
+<!-- <u><strong>Unifyia Platform</strong></u> -->
+
+*Unifyia Platform*
+
+<p align="justify">The Unifyia platform is a cloud-native, advanced solution built on a microservices framework, delivering a seamless experience for issuers, holders, and verifiers. It supports the issuance and granular lifecycle management of a wide range of identity types and credentials, including PIV, PIV-I, CIV, passkeys (FIDO2), mobile credentials, Derived PIV (DPIV), Derived FIDO2 (DFIDO2), and Derived Mobile ID (DMobile ID). Among its offerings, mPIV and Derived mPIV are the latest additions. Currently, they are in their experimental phase as they progress toward a production-ready solution.</p>
+
+<p align="justify">The Unifyia platform serves as a centralized hub for integrating services across the mPIV ecosystem, supporting multiple functionalities – secure digital identity issuance and management, fast identity verification for verifiers (relying parties (RPs)), encryption, and digital signatures. When combined with the Unifyia ID Wallet app, it delivers a comprehensive, fully vendor-agnostic, next-generation identity and credential management solution for now and into the future for physical and digital identities. </p>
+
+
+- Support the creation of customizable workflows for standards-compliant identity issuance.
+- Integration of third-party Identity Document Verifiers (IDVs) for identity document verification to confirm a person’s identity by validating their physical or digital credentials.
+- Manage onboarding and enrollment of the user in compliance with FIPS 201-3 standard for issuance of mPIV credentials similar to physical PIV ID issuance.
+- Allow operator or self-provisioning of mPIV/Derived mPIV credentials directly to the holder’s mobile device app (Unifyia ID Wallet).
+- Ensure compliance with privacy regulations and safeguard personally identifiable information (PII) in digital transactions with the same level of rigor applied to physical card issuance.
+- Implement robust security measures to defend against threats such as phishing, cloning, tampering, man-in-the-middle (MITM) attacks, and data breaches.
+- Manage the full credential lifecycle, including revocation, reissuance, and updates.
+- Enable timely synchronization of relevant data changes to the mPIV credential as needed.
+
+<!-- <u><strong></strong></u> -->
+*Unifyia ID Wallet*
+
+<p align="justify">The Unifyia ID Wallet app is a comprehensive solution for digital identity management, delivering tailored experiences for issuing authorities, credential holders, verifiers, and trusted partners. Powered by the Unifyia platform and designed to meet the specific needs of enterprises, government bodies, and federal agencies, the app enables the automated issuance and management of a wide range of credentials—spanning visual IDs, PKI credentials, consent credential, and portable identity attributes. Additionally, it allows the issuance of derived credentials such as DPIV and DMobile ID that leverage the existing, active PIV identity. The new offerings are the mPIV identity and derived mPIV, which are extensions of the federal PIV that enable the secure issuance, storage, and use of PIV credentials on Android and iOS mobile devices.  </p>
+
+<p align="justify">The Unifyia ID Wallet acts as a personal identity hub (digital ID wallet), centralizing control and enhancing the management of digital credentials. mPIV holders have the ability to consent and share the credentials with the right level of assurance for identity verification, login to online applications, digital signature, and encryption. </p>
+
+- Stores a variety of credentials, including mPIV Visual ID, PKI, Consent, and mdoc.
+- Facilitates identity verification, authentication, digital signatures, and encryption.
+- Allows holders to selectively disclose specific attributes (e.g., age, name, citizenship) based on context or request.
+- Performs verifier and reader authentication during secure transactions for identity verification.
+- Manages the issuance and administration of mobile digital credentials on behalf of integrated identity providers.
+- Supports the device's native authentication mechanisms for app access.
+- Complies with industry standards such as FIPS 201-3 compliant mPIV, ISO 18013-5, ISO 18013-7 mdoc, and NIST SP 800-63 Digital Identity Guidelines.
+
+**Mobile Device Platform Providers**
+
+<p align="justify">The mobile device platform providers develop and maintain the hardware and software platforms where mPIV credentials reside. 
+</p>
+- Support secure credential storage (e.g., Secure Enclave, Secure Element, Trusted Execution Environments (TEE)).
+- Provide APIs for cryptographic operations and contactless interactions (e.g., NFC, BLE).
+- Ensure platform integrity and update compliance.
+
+**Examples**: Apple (iOS), Google (Android)
+
+**mPIV Holder**
+
+<p align="justify">The mPIV holder is the individual who receives the mPIV credential on an Android or iOS mobile device via the Unifyia ID Wallet, following rigorous identity proofing and authorization.</p>
+
+- Undergoes identity vetting, enrollment, and approval for mPIV issuance.
+- Needs user-friendly mobile interfaces and secure storage (e.g., secure element or Trusted Execution Environment).
+- Uses and manages the mPIV credentials on a mobile device.
+- Presents the portable identity attributes digitally across multiple services or relying parties for identity verification.
+- Manages selective disclosure of specific attributes (e.g., age, name, citizenship) based on the context or request.
+- Manages authentication during logical access control transactions.
+- Maintains device hygiene and promptly reports device loss/theft.
+
+**Examples**: Federal employees, contractors, and enterprise employees.
+
+**Verifiers**
+
+<p align="justify">The verifier, aka a relying party or service provider, is an entity that consumes mPIV for identity verification, authentication, authorization, and eligibility decisions to provide services to the mPIV holder. It is a service/product provider with whom the mPIV holder is seeking a transaction. The verifier implements an mPIV reader and consumes the mPIV holder’s identity credentials or portable identity attributes retrieved from the mobile device. While a verifier generally is considered a single participant, real-world implementations will likely require the participation of multiple collaborators or types of entities to support a complete use case or a business process. This is currently out of scope for this proof of concept (POC) experiment.</p>
+
+- Authenticate and authorize access to secure systems and applications.
+- Verify the holder’s digital identity using the portable identity attributes based on the context.
+- Verify digital signatures, certificates, and validity status.
+- Ensure policy alignment with FIPS 201-3, ISO 18013-5, ISO 18013-7, NIST SP 800-63 Digital Identity Guidelines, and zero trust requirements.
+- Maintain audit and access control mechanisms.
+
+**Examples**:
+
+- Federal agencies
+- Law enforcement
+- Event access
+- Service providers that trust the existing identities to issue passports, voter IDs, etc.
+- Liquor stores that need to verify age
+- Identity checks at airport security 
+
+
+**mPIV Reader**
+
+<p align="justify">The mPIV reader is a mobile app or a server developed and implemented by the verifier that requests, receives, and processes mPIV data from a holder’s mobile device in a secure manner. The mPIV reader initiates a request for specific identity attributes (e.g., name, date of birth, role, or other context-specific attributes such as airport security, or event access) from the mPIV holder. It establishes a secure communication channel (usually via NFC, BLE, or QR code initiation) with the mPIV holder device, using public key cryptography to ensure data integrity and authenticity. The mPIV reader functions in both online (server retrieval) and offline modes (device retrieval). The offline mode doesn’t require network connectivity and verifies mPIV data and signatures using preloaded trust anchors. In the online mode, the reader connects to a backend system (issuer) to validate the data and trust anchors (e.g., VICAL for revocation checks) in real-time. </p>
+
+- Sends cryptographically signed, tamper-resistant requests for context-specific data attributes for verification.
+- Verifies the authenticity of the mPIV data (e.g., via digital signatures from the issuing authority with the trust anchors hosted on the VICALs).
+- Verifies the validity of the credential (e.g., check if it's expired or revoked using VICALs).
+- Requests authorization to access specific data elements via the holder’s consent.
+- Enables access to services.
+
+**Examples:** All third-party applications that conform to the ISO 18013-5 standard for mdoc readers.
+
+**Third-Party Trust Provider**
+
+<div class="note-box">
+  <strong>Note:</strong> 
+<p>The mPIV ecosystem is still emerging, and standardized VICAL providers or trust service frameworks specific to mPIV have not yet been formally established. This presents a gap in trust infrastructure that the trust framework providers and policy authorities need to address to enable broad federation and interoperability across agencies and jurisdictions.</p>
+<p>Another potential approach is to collaborate with existing VICAL providers already supporting the mDL trust framework such as AAMVA (American Association of Motor Vehicle Administrators), the European Union Digital Identity Wallet Framework (EUDI Wallet), state-level DMVs or ministries of transportation involved in mDL pilots, and commercial providers like IDEMIA and Thales to explore feasible solutions for extending trust services to the mPIV ecosystem.</p>
+</div>
+
+<p align="justify">A Third-Party Trust Services Provider, commonly known as a VICAL (Verifier Identity Certificate Authority List), plays a vital role in managing trust within the mPIV ecosystem similar to its function in mDL ecosystems by ensuring secure and authorized interactions between credential holders and verifiers. Its main role is establishing trust boundaries between identity issuers, mPIV holders, and verifiers (mPIV Readers). </p>
+
+- Maintains trusted root and intermediate certificates for issuers and verifiers, facilitating mutual trust.
+- Serves certificate revocation lists (CRLs) or supports OCSP (Online Certificate Status Protocol) to help verify the current status of the verifier certificates.
+- Enables mPIV holders to verify who is requesting their data (i.e., the reader).
+- Enables the mPIV holder to authenticate the reader to determine if the verifier is authorized to receive requested attributes.
+- Enables mPIV readers to verify the authenticity of mPIV data.
+- Ensures that only authorized parties participate in identity exchanges.
+
+
+**Trust Framework Providers/Policy Authorities**
+
+<p align="justify">The trust framework providers and the policy authorities define the governance, standards, and compliance requirements for mPIV implementations.</p>
+
+- Publish technical specifications and interoperability profiles.
+- Accredit issuers and assess conformity with federal standards.
+- Maintain the root of trust hierarchies and metadata services.
+
+**Examples**:
+
+- U.S. General Services Administration (GSA)
+- Federal Public Key Infrastructure Policy Authority (FPKI Policy Authority)
+- National Institute of Standards and Technology (NIST)
+- International Organization for Standardization (ISO)
+- International Electrotechnical Commission (IEC)
+- White House Office of Management and Budget (OMB)
+- World Wide Web Consortium (W3C)
+
+## Implementation Strategy
+
+<p align="justify">The mPIV implementation strategy described in the succeeding sections serves as the foundational approach for issuing and managing mobile-based PIV credentials within federal or enterprise environments. It defines how mPIV integrates with existing identity infrastructure, adheres to applicable standards, and leverages mobile technologies to deliver strong authentication, verification, portability, and interoperability. This strategy focuses on ensuring compliance with standards, optimizing design for mobile platforms, and detailing the system framework, interfaces, and technology required for a scalable, secure deployment.</p>
+
+### Standards Compliance
+
+<p align="justify">The mPIV implementation aligns with applicable U.S. federal and international standards, including FIPS 201, SP 800-63-4, NIST SP 800-157, ISO/IEC 18013-5 (mdoc - Part 5), and ISO/IEC 18013-5 (mdoc - Part 7). Compliance ensures interoperability, trust, and security across government and partner environments in identity verification and authentication processes.</p>
+
+- **FIPS 201-3 (Personal Identity Verification - PIV)**: Defines the overall requirements for identity proofing, credential issuance, and use of PIV credentials, including provisions for mobile and derived credentials.
+- **NIST SP 800-63-4 (Digital Identity Guidelines)**: Provides identity assurance levels (IAL), authenticator assurance levels (AAL), and federation assurance levels (FAL), all of which guide the assurance expectations for mPIV deployments.
+- **NIST SP 800-157 (Guidelines for Derived PIV Credentials):** Specifies the issuance, lifecycle management, and usage requirements for PIV credentials on mobile platforms.
+- **ISO/IEC 18013-5 (mdoc - Part 5):** Specifies the format and communication mechanisms for mobile identity credentials (mdocs with photoID namespace), including secure and privacy-preserving data exchange over NFC, BLE, and QR.
+- **ISO/IEC 18013-7 (mdoc - Part 7):** Focuses on device-to-device authentication and transport-layer security for mdocs, enabling secure online identity verification and remote credential presentation.
+
+<p align="justify">Alignment with NIST SP 800-157, ISO/IEC 18013-5, and -7 enables mPIV credentials to function as secure, standards-compliant derived mobile PIV (similar to derived PIV) and mobile documents (e.g., for photo-based identity, mobile driver's license equivalents). These standards complement traditional PIV and PKI structures by supporting flexible, privacy-aware interactions across both physical and digital environments. Collectively, these standards ensure that the mPIV solution is secure, interoperable, and capable of meeting both current and evolving identity assurance requirements. They support seamless integration with existing federated identity systems while providing a foundation that is adaptable to emerging technologies and future standards.  
+</p>
+
+### Design Strategy
+
+<p align="justify">The mPIV design strategy emphasizes a mobile-first, user-centric approach that balances security and usability. It focuses on secure portability of identity, robust authentication, and operational efficiency for mobile devices. The strategy ensures that mobile identity solutions can function both online and offline, with strong cryptographic protections and streamlined lifecycle management for credential issuance, validation, and revocation.</p>
+
+**Mobile-First and Platform-Agnostic:** The design supports both iOS and Android ecosystems with secure storage mechanisms like Trusted Execution Environments (TEE), Secure Enclave, or Secure Elements.
+
+**Credential Issuance:** Credentials are issued to the mobile device as digital versions of the physical PIV card, using the same strong identity-proofing process. Additionally, the ISO/IEC 18013-5 mdoc-defined org.iso.18013.5.1 photoID namespace standard is leveraged to issue mdoc verifiable credential. This ensures they match the security and assurance levels of the original PIV card and remain tied to the same issuing authority.
+
+**Zero Trust Compatibility:** Identity assurance and access controls are enforced in line with Zero Trust Architecture (ZTA) principles, supporting continuous authentication and adaptive access policies.
+
+**Offline and Online Operations:** The mobile credential supports cryptographic authentication even in offline scenarios (e.g., using digital certificates or signed data objects), with online validation where possible.
+
+**User Experience and Lifecycle Management:** The design includes intuitive enrollment, credential recovery, revocation, and renewal workflows, minimizing user friction while maintaining a strong security posture.
+
+**Integration of mDoc PhotoID attributes for mPIV identity:** This refers to the process of securely incorporating the portrait (face image) and associated visual identity elements from the mdoc into the mPIV verifiable credential structure along with the PIV visual ID. This supports both visual verification and digital trust in mobile identity use cases.
+
+### Functional Requirements
+
+<p align="justify">The mPIV system design objectives must meet the functional requirements of FIPS 201-3, NIST SP 800-157, ISO/IEC 18013-5, and ISO/IEC 18013-7 (mdoc standards). The core functional requirements can be divided into the following aspects: PKI Certificates, consent, and mdoc verifiable credentials. </p>
+
+*PKI Certificates*
+
+- **Certificate-to-Holder Binding:** mPIV certificates must be securely bound to the individual user.
+- **Credential Use:** The mPIV certificates must support authentication, digital signature, and encryption to enable:
+  - Strong authentication to systems and applications.
+  - Digital signing of documents or transactions.
+  - Secure message encryption and decryption for protected communications.
+- **Secure Certificate Lifecycle:** Certificate issuance, storage, usage, and revocation must be secured end-to-end, with protection against cloning, unauthorized access, or export of keys and certificates.
+
+*Consent*
+
+- **Explicit User Consent:** Users must approve each request to share personal information with or without PKI credential.
+- **Revocable and Auditable:** Users can revoke consent at any time, and all actions are logged.
+
+*mdoc Verifiable Credentials*
+
+<p align="justify">The mdoc verifiable credentials must support the following objectives:
+</p>
+**Trusted Data Verification:** Verifiers must be able to request and receive mPIV data and validate its integrity and authenticity using cryptographic (public-private key) mechanisms, including digital signatures applied by the issuing authority.
+
+**Independent Verifier Validation:** Verifiers that are not directly connected to the issuing authority can verify the integrity and authenticity of the mPIV identity credentials using certificate chains or public trust anchors.
+
+**Credential-to-Holder Binding:** mPIV identity credentials must be securely bound to the individual user. Device-bound private keys, along with biometric or PIN-based authentication, and the holder’s photo, confirm that the person presenting the credential is its rightful holder.
+
+**Selective Data Disclosure:** Users must be able to share only specific data elements (e.g., name, affiliation, role) with relying parties, supporting privacy and data minimization per mdoc standards.
+
+**Secure Credential Lifecycle:** Credential issuance, storage, usage, and revocation must be secured end-to-end, with protection against cloning, unauthorized access, or export of keys.
+
+**Offline and Online Usability:** The system must support both offline (e.g., in-person NFC or QR presentation) and online (e.g., authentication or digital signing) use cases to ensure operational flexibility.
+
+## mPIV Implementation Framework Overview
+
+<p align="justify">The mPIV implementation framework enables secure enrollment, identity proofing, credential issuance, storage, and use of mPIV credentials on mobile devices. It includes entities such as issuance authorities, the Unifyia platform, mPIV holders, third-party trust frameworks, and RPs/verifiers. It leverages existing enterprise PIV infrastructure while extending capabilities to mobile platforms. The framework supports authentication, identity verification, digital signature, and encryption use cases across federal and partner environments.  
+</p>
+- **Issuance Authority**: Authorizes in-person or remote issuance of credentials.
+- **Unifyia Platform:** Enrolls users, issues credentials, and manages mPIV/Derived mPIV in compliance with the FIPS 201, NIST SP 800-157, SP 800-63-4, and mdoc standards using secure enrollment and issuance workflows (in-person or remote). Manages credential lifecycle functions, including issuance, update, suspension, and revocation. It interfaces with the holder app, RPs, and third-party trust providers. Unifyia platform functions as the Issuer of the mPIV/ Derived mPIV credentials and also the credential management system.
+- **Federal Agencies:** Rely on digital certificates and federation protocols to assert and validate the identity across organizational boundaries.
+- **Issuing Authority Certificate Authority:** The Issuing Authority Certificate Authority (IACA) is an entity that issues issuer digital signing certificates, issuer certificates, and client certificates such as authentication, digital signature, and encryption certificates that are part of the mPIV credential.
+- **mPIV Holder:** A secure application on the mobile device that stores and protects the credential (e.g., in the Secure Enclave or Trusted Execution Environment). It includes logic for cryptographic operations and hardware-bound security. Unifyia ID Wallet app functions as the mPIV holder or holder app. 
+- **mPIV Verifiers:** RPs who verify user identity data shared by the holders using the mPIV reader apps to provide products and services.
+- **Third-Party Trust Providers:** Maintain trusted root and intermediate certificates for issuers and verifiers, facilitating mutual trust.
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/1-mpiv-framework.png" alt="mPIV Framework">
+
+<p align="justify">The mPIV framework includes four key entities and their interactions - the Issuing Authority Framework, Unifyia ID Wallet app (mPIV Holder), RPs (including federal agencies, enterprises, verifiers (reader apps), and third-party services such as Microsoft Office 365, Mail Client, Microsoft Exchange, and Outlook for CBA authentication) and third-party trust providers.</p>
+<ul>
+<li><strong>Implementation Framework 1:</strong> The framework and interactions between the issuing authority framework and the Unifyia ID Wallet app.</li>
+<li><strong>Implementation Framework 2:</strong> The framework and interactions for authentication and identity verification.
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/2-framework-2a.png" alt="Implementation Framework - 2A">
+<ul>
+<li><strong>2A:</strong> The framework and interactions between the Unifyia ID Wallet app and the online applications for authentication, digital signature, and message encryption.</li>
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/3-framework-2b-2c-3.png" alt="Implementation Framework - 2B, 2C, & 3">
+<li><strong>2B:</strong> The framework and interactions in an offline mode between the relying party reader and the Unifyia ID Wallet for digitally signed data exchange (device-to-device) for identity verification and selective data sharing.</li>
+<li><strong>2C:</strong> The framework and interactions in an online mode between the relying party server and the Unifyia ID Wallet for digitally signed data exchange (server-to-device) for identity verification and selective data sharing.</li>
+
+</ul>
+</li>
+<li><strong>Implementation Framework 3:</strong> The framework and online interactions between the verifier reader and the issuing authority framework for identity verification.</li>
+<li><strong>Implementation Framework 4:</strong> The framework and interactions between the issuing authority framework, Unifyia ID Wallet, Verifiers, and third-party trust providers for trust anchors.
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/4-framework-4a-4b.png" alt="Implementation Framework 4A & 4B">
+<ul>
+<li><strong>4A:</strong> Holder Trust Validation</li>
+<li><strong>4B:</strong> Verifier Trust Validation</li>
+</ul>
+</li>
+</ul>
+
+## Issuing Authority and the Unifyia ID Wallet Framework
+
+<p align="justify">Implementation framework 1 includes the framework and interactions between the issuing authority framework and the Unifyia ID Wallet app in compliance with the federal identity standards, including FIPS 201-3 and NIST SP 800 - 63A. It focuses on the end-to-end lifecycle of mobile PIV credentials, from enrollment to issuance.
+</p>
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/5-mpiv-issuance.png" alt="mPIV and Derived mPIV Issuance and Lifecycle">
+
+The framework includes the following:
+
+- Issuing authority for authorization and identity proofing of the user.
+- Issuing authority certificate authority for certificate issuance.
+- Hardware security modules for secure key generation, encryption, storage, and management.
+- Unifyia platform for enrollment, approval, issuance, and granular lifecycle management of the issued mPIV credentials on iOS and Android mobiles.
+
+### Issuance of mPIV and Derived mPIV
+
+<p align="justify">Unifyia platform supports the following ways of issuing the mPIV or derived mPIV credentials:</p>
+
+<ul>
+<li>Self-issuance of mPIV by user with identity verification using an Identity Verification (IDV) Solution Provider.</li>
+<li>Self-issuance derived mPIV by a federated user by verifying the existing active PIV ID.</li>
+<li>Operator issued mPIV.</li>
+</ul>
+
+**Self-issuance of mPIV by user with identity verification using an Identity Verification (IDV) Solution Provider**
+
+*Prerequisite:*
+
+- Identity Verification (IDV) is integrated with the Unifyia platform to perform user verification
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/6-mpiv-issuance-idv-flow.png" alt="User mPIV Issuance with IDV Solution">
+
+**Self-issuance derived mPIV by a federated user by verifying the existing active PIV ID**
+
+*Prerequisites:*
+
+- Federated user has an active PIV ID.
+- The issuer certificate of the federated user is trusted by the Unifyia platform.
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/7-mpiv-issuance-federated-flow.png" alt="Federated User Derived mPIV Issuance">
+
+**Operator Issued mPIV**
+
+<p align="justify">The users must complete enrollment and receive approval before the issuance of the mPIV credentials on their mobile device. They present the mobile device to the operator who then scans the QR to complete the process of issuing the mPIV credentials. </p>
+
+*Prerequisites:*
+
+- User must be present in person with a mobile device. 
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/8-mpiv-issuance-operator-flow.png" alt="Operator Issued mPIV">
+
+## Authentication and Identity Verification Framework
+
+<p align="justify">Implementation framework 2 defines the operational framework and technical interactions between the Unifyia ID Wallet app, online applications, and RPs (reader devices and servers) in compliance with the federal and international identity standards, including FIPS 201-3, NIST SP 800 - 63, NIST SP 800-157, ISO/IEC 18013-5, and ISO/IEC 18013-7. It focuses on how the issued credentials are used by the holder for authentication and identity verification. This framework supports secure authentication and identity verification using the mPIV credentials issued on the Unifyia ID Wallet app and stored in the device's secure enclave.   
+</p>
+### Unifyia ID Wallet App and Online Applications Framework 
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/9-implementation-framework-2a.png" alt="Implementation Framework 2A">
+
+<p align="justify">This component of the framework outlines how the Unifyia ID Wallet interacts directly with online, web-based applications such as the Unifyia platform and Microsoft Office 365 that require user authentication, and with mobile applications such as Outlook that require digital signing of emails and encryption of emails or files during a transaction. </p>
+
+<p align="justify">In online mode, the user’s mobile device is connected to the internet, enabling real-time interactions between the Unifyia ID Wallet and the target applications. Key functionalities include:</p>
+
+- **Authentication:** The Wallet app uses PKI protocols to authenticate the user to the online applications. The authentication process typically involves cryptographic challenge-response flows using credentials stored securely on the device.
+- **Digital Signatures:** The Wallet app can digitally sign documents or transactions on behalf of the user using the stored mPIV digital signature certificate. This supports non-repudiation and legally binding operations.
+- **Message Encryption:** The holder can encrypt an email being sent through the Outlook application or Apple Mail Client (iOS devices) using the encryption certificate securely stored on the mobile device.
+
+### Unifyia ID Wallet App and Relying Party Readers – Offline Identity Verification
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/10-implementation-framework-2b-offline-mode.png" alt="ID Verification (Device-to-Device) – Offline Mode">
+  
+*Prerequisites:*
+
+- Holder app supports either BLE, NFC, or both but the reader app must support both BLE and NFC.
+- For reader authentication, reader authentication option must be enabled on the reader app.
+- Issuer certificate from the IACA is stored on the reader app.
+- Issuer DS certificate is present on the holder app.
+
+<p align="justify">This component of the framework outlines how the Unifyia ID Wallet interacts with the verifier readers in offline scenarios where there is no connectivity. The Unifyia ID Wallet supports device-to-device data exchanges (full and selective) using protocols such as NFC or BLE (QR code scanning).</p>
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/11-implementation-framework-2b-offline-mode-flowchart.png" alt="ID Verification (Holder-to-Reader) - Offline Mode Flow Chart">
+
+- Identity attributes and digital credentials are shared with the reader apps directly from the ID Wallet app.
+- Data shared is cryptographically signed and timestamped to ensure authenticity, integrity, and freshness.
+- Offline mode supports use cases like law enforcement identity checks, age verification, and in-person service delivery without requiring backend server availability.
+
+### Relying Party Server and the Unifyia ID Wallet – Online Identity Verification
+
+*Prerequisites:*
+
+- Issuer certificate from the IACA is stored on the verifier’s reader app.
+- Holder’s issuer DS certificate is present on the holder app.
+ 
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/12-implementation-framework-2c-online-mode.png" alt="ID Verification (Server-to-Holder) - Online Mode">
+
+<p align="justify">This component of the framework addresses how backend systems (i.e., servers operated by federal agencies, enterprises, or verifiers) interact with the Unifyia ID Wallet app to validate identity information and facilitate access decisions.</p>
+
+<p align="justify">In this mode, the relying party server initiates a real-time interaction with the Unifyia ID Wallet on the holder’s device.</p>
+
+- The relying party server sends a challenge or request for identity attributes to the ID Wallet app (holder’s device) with a referrer URL.
+- The ID Wallet app sets up a secure data transmission channel.
+- It presents requested attributes (e.g., name, date of birth, photo) as signed mobile document (mdoc) data, in compliance with ISO/IEC 18013-7 standard.
+- The relying party verifies the cryptographic signature and issuer certificate to ensure the authenticity of the data.
+- This server-to-device interaction model is designed to support high-assurance identity verification with minimal reliance on third-party intermediaries.
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/13-implementation-framework-2c-online-mode-flowchart.png" alt="ID Verification (Server-to-Holder) - Online Mode Flow Chart">
+
+## Relying Parties and Issuance Authority Framework
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/14-framework-3-reader-online-mode.png" alt="Implementation Framework 3 - ID Verification (Reader-to-Server) - Online Mode">
+
+<p align="justify">Implementation framework 3 includes the framework and interactions between the issuing authority framework and relying parties in compliance with the international identity standards, including FIPS 201-3, NIST SP 800 - 63A, and ISO/IEC 18013-5. It describes the identity verification interactions that occur directly between a relying party (verifier) and the issuing authority framework in an online mode, without requiring the mPIV holder's continuous involvement or online presence during the verification event.</p>
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/15-implementation-framework-3-online-mode-flowchart.png" alt="Implementation Framework 3 - ID Verification (Reader-to-Server) – Online Mode Flow Chart">
+
+*Prerequisite*
+
+- Issuer certificate from the IACA is stored on the verifier’s reader app.
+ 
+<p align="justify">In this model, the verifier (e.g., mDL reader or application) scans a QR code that contains a web token. This web token is presented to the server that validates it and shares a JSON Web Token (JWT) with the verifier. This token contains the user’s identity information. The server retrieval token acts as a scoped authorization credential, allowing secure retrieval without persistent connectivity between the holder and verifier. This mode is one of the most flexible and quickest identity verification approaches provided both parties can interact online.</p>
+
+<p align="justify">The framework supports interoperability with a wide range of verification applications by relying on established and standards-based protocols (OIDC4VP, WebAPIs mentioned in the standard ISO/IEC 18013-5).</p>
+
+## Unifyia ID Wallet, Verifiers, and Third-Party Trust Providers
+
+<p align="justify">Ensuring the integrity and security of digital identity transactions requires a carefully designed trust framework. Implementation framework 4 defines the roles and interactions among the Issuing Authority, Holder (Unifyia ID Wallet App), Verifier (Reader App), and Third-Party Trust Providers. Its core objective is to establish mutual trust through cryptographic validation of digital credentials and authenticators while upholding user privacy. By utilizing third-party trust providers and adhering to standard Public Key Infrastructure (PKI) practices, this framework supports secure, interoperable identity data exchanges, laying the groundwork for mobile identity solutions in both public and private sector environments.</p>
+
+<p align="justify">Third-party trust providers play a critical role in the mobile identity ecosystem by maintaining trusted root and intermediate certificates for issuers and verifiers, enabling mutual trust. They support real-time certificate status checks through CRLs or OCSP, allowing verification of the current validity of the verifier certificates. These trust providers empower mPIV holders to authenticate readers before sharing data and enable readers to confirm the authenticity of mPIV credentials. Ultimately, they ensure that only authorized parties can participate in secure identity transactions. This framework captures the bidirectional trust validation flow between the identity Holder, the Verifier, and the Third-Party Trust Provider, establishing a cryptographically secure mechanism for trusted interactions. The framework is divided into two complementary sub-frameworks:</p>
+
+
+- Holder Trust Validation
+- Verifier Trust Validation
+
+### Holder Trust Validation
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/16-framework-4a-holder-trust.png" alt="Implementation Framework - 4B Holder Trust Validation">
+
+<p align="justify">This framework describes how a holder app authenticates the verifier (reader app) before releasing identity data. It ensures that the holder only responds to verified and authorized parties. The verification happens at two levels – reader authentication (optional) and reader certificate authentication. For the reader authentication to occur, the verifier app must have enabled the option to perform reader authentication by the holder app. </p>
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/17-framework-4a-holder-trust-flowchart.png" alt="Implementation Framework – 4A Holder Trust Validation Flow Chart">
+
+*Prerequisite:*
+
+- Reader certificate is listed with the third-party trust provider (VICAL).
+- Reader authentication is enabled on the reader app.
+
+<p align="justify">This framework outlines the process by which the holder app authenticates the verifier certificates and the reader app before sharing identity data. It ensures that the holder only interacts with verified and authorized entities. Verification occurs on two levels: reader authentication (if enabled) and the reader’s certificate. For reader authentication to take place, the verifier app must support and enable the capability for the holder app to perform this validation. Also, the reader’s certificate must be registered with a third-party trust provider.</p>
+
+<p align="justify">Upon receiving a data request from a reader app or verifier server, the holder performs reader authentication by verifying the document signer certificate using the EMAC key or mPIV authentication key. If the reader authentication option is not enabled on the reader app, and the holder attempts to perform this check, the validation cannot be completed due to the absence of confirmation from the verifier. On successful validation, the holder app contacts a third-party trust provider to verify the digital certificate presented by the reader. The trust provider responds with a validation result indicating whether the reader’s certificate is recognized and valid.</p>
+
+<p align="justify">Upon receiving a data request from a reader app or verifier server, the holder performs reader authentication by verifying the document signer certificate using the EMAC key or mPIV authentication key. If the reader authentication option is not enabled on the reader app, and the holder attempts to perform this check, the validation cannot be completed due to the absence of confirmation from the verifier. On successful validation, the holder app contacts a third-party trust provider to verify the digital certificate presented by the reader. The trust provider responds with a validation result indicating whether the reader’s certificate is recognized and valid.</p>
+
+### Verifier Trust Validation
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/18-framework-4b-verifier-trust.png" alt="Implementation Framework – 4A Holder Trust Validation">
+
+*Prerequisite:*
+
+- Issuer certificate from the IACA is listed on the Trust Providers (VICAL).
+
+<p align="justify">This framework addresses how the verifier authenticates the digital identity data received from the holder or issuer. It ensures that credentials presented by the holder are genuine and issued by a trusted source. The Issuer’s certificate must be available through a Trust Provider (e.g., listed in the VICAL repository under the IACA model). When the verifier’s reader app receives digitally signed identity data from the holder or issuer, it validates the issuer’s certificate, which is retrieved from a third-party trust provider. This step confirms that the data was issued by an authorized and trusted issuing authority. This framework ensures that Verifiers can make informed decisions based on verified and cryptographically trustworthy identity data.</p>
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/19-framework-4b-verifier-trust-flowchart.png" alt="Implementation Framework – 4B Verifier Trust Validation Flow Chart">
+
+**Benefits of the Framework**
+
+- **Mutual Authentication:** Both Holders and Verifiers validate each other before any data exchange.
+- **Privacy Preservation:** Holders retain control over when and with whom identity data is shared.
+- **Scalability:** Leveraging third-party trust providers enables broad interoperability across ecosystems.
+- **Security:** The use of cryptographic signatures and certificates ensures data integrity and non-repudiation.
+
+## mPIV Use Cases
+
+<p align="justify">The mPIV credential extends federal identity assurance into mobile and digital-first environments, enabling a wide range of identity functions on secure mobile devices. It supports both in-person and remote workflows. These same capabilities are also available with the derived mPIV. Therefore, to simplify the explanation, the following sections focus on the primary use cases of mPIV, which apply equally to derived mPIV.</p>
+
+- ID Verification with Attribute Presentation
+  - Using QR Code via BLE (Offline Mode)
+  - Using NFC Device (Offline Mode)
+- ID Verification Using Unifyia Platform (Online Mode)
+- Remote Identity Verification
+- Certificate-Based Authentication (CBA) to a Web Application
+- Authentication to the Unifyia Platform Using Push Verify with PKI or Push Verify
+- Single Sign-On on the Unifyia Platform
+- Email Signing and Encryption
+
+**ID Verification with Attribute Presentation**
+
+<p align="justify">The mPIV credential supports <b>full</b> and <b>selective disclosure</b> of identity attributes using the mdoc photoID namespace, enabling privacy-preserving identity interactions. mPIV credentials can be presented in-person or online to verify a user's identity with cryptographic assurance. Verification may be done using device-to-device transmission via NFC or BLE (QR Code scanning) or device-to-server (online mode) to share signed attributes with a verifier. All attributes are cryptographically signed and verifiable by RPs while maintaining user privacy and data minimization, even in offline mode. The identity data shared offline is signed using digital credentials issued by a trusted authority on the holder's app. This allows the reader to validate that the data was issued by an authorized source and has not been altered, even without connecting to a backend validation service. While offline, the reader may rely on locally cached certificate trust chains (e.g., through pre-loaded trusted root certificates and revocation data) to validate the issuer’s signature on the mPIV attributes. This enables robust trust decisions without requiring online certificate status verification at the time of interaction. Examples include:</p>
+
+- Presenting only the date of birth to prove age.
+- Sharing organizational affiliation without disclosing PII.
+- Verifying clearance or role information for secure site access.
+- Verifying identity at Transportation Security Administration (TSA) checkpoints.
+- Access to e-government services to file taxes and check benefit eligibility.
+- Identity verification to meet KYC regulation to open a new account in a bank.
+
+
+*Using QR Code (Offline Mode)*
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/20-id-verify-qr-code.png" alt="ID Verification with Attribute Presentation Using QR Code (Offline Mode)">
+
+<p align="justify">QR code-based identity verification provides a dependable and secure offline mechanism for exchanging identity data between the mPIV holder and the verifier (reader) applications. The process enables context-driven attribute requests and responses through QR code scanning, while Bluetooth Low Energy (BLE) enhances the interaction by enabling secure communication and mitigating spoofing risks. This method is particularly well-suited for environments with limited or no connectivity, such as secure government facilities, field operations, or temporary checkpoints.</p>
+
+<p align="justify">In this flow, the holder app generates a QR code. The verifier app scans this QR code using the device’s camera and sends the data request. The user receives the request, selects the required attributes based on the context, and approves to share. The shared identity attributes are digitally signed using the mPIV digital signature credential and encoded. The verifier can validate the signature using cached trust anchors to confirm the data was issued by a trusted authority and has not been tampered with.</p>
+
+*Using NFC Device (Offline Mode)*
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/21-id-verify-nfc.png" alt="ID Verification with Attribute Presentation Using NFC Device (Offline Mode)">
+
+<p align="justify">Near Field Communication (NFC) is a foundational capability for secure, contactless identity verification in offline environments. In the context of mPIV, NFC enables the holder and verifier (reader) apps to exchange identity credentials and attributes securely, without requiring internet or cellular connectivity.</p>
+
+<p align="justify">In this mode, the mPIV credential, stored securely on the holder’s mobile device, is presented by bringing the device into proximity with an NFC-enabled reader. Once initiated, the reader transmits a structured request for specific identity attributes (e.g., name, affiliation, clearance level, or photograph). The holder app processes this request, prompts the user for consent if applicable, and then securely transmits the requested, cryptographically signed attributes to the reader.</p>
+
+**ID Verification Using Unifyia Platform (Online Mode)**
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/22-id-verify-unifyia-platform.png" alt="ID Verification Using Unifyia Platform (Online Mode)">
+
+<p align="justify">The reader apps scan the QR code on the holder app and can directly connect to the Unifyia Platform to verify the mPIV credentials through real-time communication with the issuing authority and associated trust infrastructure. Through secure APIs and identity protocols, reader applications initiate a verification request to the Unifyia Platform, which in turn validates the mPIV credential using authoritative data sources and trust anchors. This real-time interaction enhances security, flexibility, and policy enforcement, making it ideal for high-value transactions and environments that require up-to-the-minute trust decisions.
+</p>
+
+
+**Remote Identity Verification**
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/23-remote-id-verify.png" alt="Remote Identity Verification">
+
+<p align="justify">mPIV enables secure remote identity proofing and verification for telework, remote onboarding, and distributed operations. By supporting cryptographically signed attribute exchanges and reader authentication, it maintains high assurance levels in virtual or hybrid environments without requiring physical presence. This retrieval mechanism allows a relying party to retrieve identity data directly from the issuing authority using an access token or OpenID Connect.</p>
+
+- mPIV can be integrated into remote identity verification workflows as both an authoritative identity source and a reusable credential for future transactions. For example:
+  - The holder scans the QR or clicks a deep link on the mobile device to present the identity data to a remote verifier application.
+  - The verifier retrieves and validates identity attributes signed by the issuing authority.
+- This capability reduces the need for document scans or in-person proofing appointments.
+- Unifyia has successfully tested this use case for identity verification on the [NIST’s mDoc Reader Reference Implementation](https://www-s.nist.gov/mdl/) site by accessing the deep link on the mobile device with the mPIV credentials.
+
+**Certificate-Based Authentication (CBA) to a Web Application**
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/24-cba.png" alt="CBA to a Web Application">
+
+<p align="justify">mPIV enables strong, phishing-resistant authentication for government and enterprise applications. Users can access services using a single, device-anchored credential that meets AAL2/AAL3 assurance levels. mPIV support for browser-based and native mobile application authentication ensures wide compatibility. The mPIV issuer certificate must be trusted by the web applications. mPIV credentials can be used to perform certificate-based authentication to secure web applications, replacing username/password credentials with strong, phishing-resistant authentication. This supports Zero Trust Architecture (ZTA) initiatives and complies with federal mandates for phishing-resistant MFA.</p>
+
+**Authentication to the Unifyia Platform Using Push Verify with PKI or Push Verify**
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/25-passwordless-auth-push-verify.png" alt="Push Verify with PKI or Push Verify">
+
+<p align="justify">mPIV enables high-assurance authentication to the Unifyia platform through Push Verify with PKI or a simple Push Verify. In the Push Verify with PKI approach, a cryptographic challenge is sent to the user’s registered mobile device, where the user approves the request using their private key securely stored in a hardware-backed enclave. This method not only provides strong mutual authentication but also supports digital signature and encryption use cases, making it ideal for zero-trust environments and sensitive transactions. In the simple Push Verify approach, a request for consent is sent to the ID wallet app which the user approves to complete authentication.
+</p>
+
+**Single Sign-On on the Unifyia Platform**
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/26-sso-unifyia-platform.png" alt="Single Sign-On on the Unifyia Platform">
+
+<p align="justify">By leveraging identity federation standards such as SAML, OpenID Connect (OIDC), and WS-Federation (WS-Fed), mPIV enables seamless Single Sign-On (SSO) across services within the Unifyia Platform. This integration minimizes user friction while upholding strong security through credential validation and trust chaining. Key features of mPIV integration with federated identity systems include:</p>
+
+- Support for identity federation using SAML, OIDC, or WS-Fed protocols
+- Centralized credential management by the designated issuing authority
+- Session continuity across desktop, mobile, and cloud environments
+
+<p align="justify">SSO streamlines user access, reduces login fatigue, and strengthens security, especially within zero-trust architecture where continuous verification is essential.</p>
+
+**Email Signing and Encryption**
+
+<img src="{{site.baseurl}}/assets/unifyia-mpiv/27-email-signing.png" alt="Email Signing and Encryption">
+
+<p align="justify">mPIV credentials can be used for digital signing and encryption of email communications, ensuring message authenticity, integrity, and confidentiality. This supports secure communication within and across government agencies and aligns with federal information security policies.</p>
+
+<p align="justify">The above-described use cases indicate that by extending the capabilities of PIV into mobile and digital domains, mPIV provides a secure, standards-based solution that addresses the evolving needs of identity assurance. Its versatility across both online and offline use cases makes it a critical component of modern, flexible federal identity ecosystems.</p>
+
+## Recommendations for mPIV Adoption
+
+<p align="justify">By aligning with global standards, embedding privacy-preserving design, and integrating with established trust infrastructures, mPIV can become a cornerstone of secure digital identity across government, enterprise, and public service ecosystems. These recommendations lay the groundwork for a trusted, interoperable, and scalable mPIV ecosystem. To support the widespread and interoperable adoption of mobile PIV (mPIV), agencies and organizations should consider the following key recommendations:</p>
+
+- **Implement an organizational framework that promotes the mPIV adoption:** Establish a coordinated organizational strategy to promote mPIV deployment within and across agencies. This includes governance structures, policy guidance, stakeholder engagement, and investment in workforce training. A formal framework ensures that mPIV is adopted consistently and sustainably across the ecosystem.
+- **Adopt ISO/IEC 18013-5, -7, and mDoc specifications:** Adopt the ISO/IEC 18013-5, ISO/IEC 18013-7 (test methods), and the mDoc framework to guide the structure, security, transmission, and use of mPIV identity. These international standards provide a foundation for secure, contactless attribute presentation and verification, ensuring global interoperability and high assurance.
+- **Establish standards for mPIV/Derived mPIV credential issuance and use:** Promote the creation and adoption of mPIV-specific standards and profiles within the federal and commercial sectors in compliance with the FIPS 201, NIST SP 800-157, and NIST 800-63 standards to suit the mPIV issuance similar to the ISO/IEC 23220 standard for Mobile driver's license (mDL), mobile ID (mID) and eIDAS 2.0. These should address credential formats, authentication mechanisms, key escrow, retired certificates, trust models, and lifecycle management for mPIV. Standardization will drive consistency, enable cross-platform compatibility, and simplify implementation for relying parties.
+- **Implement privacy-preserving defaults for attribute requests:** Design mPIV systems to follow privacy-by-default principles. Attribute requests should be minimized and purpose-specific, with holder consent as a prerequisite for data release. This approach aligns with modern privacy regulations and enhances user trust by ensuring that only the necessary data is shared with verifiers.
+- **Participate in and support the VICAL trust network:** Leverage the VICAL (Verified Issuer Certificate Authority List) network or create a new trust anchor framework to facilitate real-time trust decisions for mPIV. By participating in a shared, authoritative certificate registry, issuers, and verifiers can validate credentials against known trust anchors, ensuring authenticity and reducing the risk of fraud.
+
+## Lessons Learned
+
+- The experiment confirmed that modern mobile devices, equipped with secure hardware elements and standards-compliant identity frameworks, can effectively support high-assurance credentials such as authentication, digital signatures, and encryption that have traditionally been tied to physical PIV cards.
+- Introducing derived mPIV allows organizations to build on existing PIV infrastructure while piloting mobile-first capabilities. This incremental approach supports broader adoption without disrupting current identity systems.
+- Mobile-first design must strike a balance between usability, security, and compliance requirements to ensure user acceptance and trust.
+- Credential lifecycle management must be carefully designed to integrate seamlessly with existing identity infrastructure and is critical to achieving operational efficiency.
+- Aligning mPIV with U.S. federal standards (FIPS 201, NIST SP 800-157/63-4) and global frameworks (ISO/IEC 18013-5/7, W3C Verifiable Credentials, eIDAS 2.0) enables cross-platform compatibility and positions the solution for future scalability.
+- Usage, acceptance, and interoperability across domains and jurisdictions are achievable only through the coordinated efforts of all stakeholders and entities within the identity ecosystem.
+- Ecosystem interoperability, particularly with Physical Access Control Systems (PACS) and legacy middleware remains a challenge that requires coordinated modernization efforts.
+- The mPIV experiment underscores the need for updated policies that reflect the realities of mobile issuance, remote identity verification, and user-controlled credential sharing.
+
+## Future Outlook
+
+<p align="justify">The U.S. government stands at a pivotal moment in the evolution of identity and access management. As cybersecurity threats increase and post-quantum cryptography (PQC) reshapes the landscape of secure communication, mobile-based identity solutions such as mobile PIV (mPIV) offer a more agile, future-proof alternative to traditional smart cards.</p>
+
+<p align="justify">Smart cards like PIV have served the government well, but they lack the flexibility and computational power needed for rapid adaptation in a world where cryptographic algorithms may need to evolve faster than ever. In contrast, mobile phones equipped with secure elements, biometric sensors, and software-defined update mechanisms provide a dynamic platform capable of quickly supporting new cryptographic standards and identity workflows.</p>
+
+<p align="justify">As federal and commercial adoption of mobile credentials accelerates, mPIV is poised to become a cornerstone of modern digital identity infrastructure. The future of mPIV includes several key developments:</p>
+
+- **Cross-Domain Interoperability**: Integration with mobile driver’s licenses (mDLs), enabling trust and identity verification across jurisdictions and sectors.
+- **Expansion to Other Digital Credentials**: Issuance of eIDAS 2.0 and mDoc-compliant credentials such as:
+  - eIDAS 2.0 (Electronic Identification, Authentication, and Trust Services 2.0) European Union's digital identity framework
+  - Mobile Vehicle Registration Cards (mVRC)
+  - Mobile Health Certificates (mHealth/eHealth)
+  - Mobile Passports (mPassports/ePassports) aligned with ICAO 9303 standards
+- **Post-Quantum Readiness**: mPIV credentials can incorporate PQC algorithms, making them better suited to counter emerging quantum threats compared to static smart cards.
+- **Use by Public and Private Sectors**: Adoption by service providers, contractors, and agencies for identity verification and secure authentication.
+- **Broader Interoperability via VICAL Expansion**: Virtual credentials and federated frameworks will enable wider usage across borders and domains.
+- **Standards Development**: Continued development of mPIV standards and ISO/IEC namespaces (mirroring mDL efforts) will support interoperability and trust on a global scale.
+
+<p align="justify">Ultimately, mPIV will evolve into a secure, user-centric identity solution that bridges the physical and digital realms. It offers strong cryptographic protection, user privacy, and the flexibility to adapt to rapidly changing security requirements. From secure facility access and remote work authentication to international travel and healthcare verification, mPIV credentials will redefine how the U.S. government and its partners establish and verify trust in a mobile-first, post-quantum era.</p>
+
+## Abbreviations
+
+<table>
+<thead>
+<th scope="col" width="25%">
+Abbreviations
+</th>
+<th scope="col">
+Definition
+</th>
+</thead>
+<tbody>
+<tr>
+<td>
+BLE
+</td>
+<td>
+Bluetooth Low Energy
+</td>
+</tr>
+<tr>
+<td>
+CA
+</td>
+<td>
+Certificate Authority
+</td>
+</tr>
+<tr>
+<td>
+CBOR
+</td>
+<td>
+Concise Binary Object Representation
+</td>
+</tr>
+<tr>
+<td>
+CMS
+</td>
+<td>
+Credential Management System
+</td>
+</tr>
+<tr>
+<td>
+CRL
+</td>
+<td>
+Certificate Revocation List
+</td>
+</tr>
+<tr>
+<td>
+DS
+</td>
+<td>
+Document Signer
+</td>
+</tr>
+<tr>
+<td>
+FIPS
+</td>
+<td>
+Federal Information Processing Standards
+</td>
+</tr>
+<tr>
+<td>
+FPKI Policy Authority
+</td>
+<td>
+Federal Public Key Infrastructure Policy Authority
+</td>
+</tr>
+<tr>
+<td>
+GSA
+</td>
+<td>
+U.S. General Services Administration
+</td>
+</tr>
+<tr>
+<td>
+IA
+</td>
+<td>
+Issuing Authority
+</td>
+</tr>
+<tr>
+<td>
+IACA
+</td>
+<td>
+Issuing Authority Certificate Authority
+</td>
+</tr>
+<tr>
+<td>
+IEC
+</td>
+<td>
+International Electrotechnical Commission
+</td>
+</tr>
+<tr>
+<td>
+ISO
+</td>
+<td>
+International Organization for Standardization
+</td>
+</tr>
+<tr>
+<td>
+NFC
+</td>
+<td>
+Near Field Communication
+</td>
+</tr>
+<tr>
+<td>
+NIST
+</td>
+<td>
+National Institute of Standards and Technology
+</td>
+</tr>
+<tr>
+<td>
+OCSP
+</td>
+<td>
+Online Certificate Status Protocol
+</td>
+</tr>
+<tr>
+<td>
+OID
+</td>
+<td>
+Object Identifier
+</td>
+</tr>
+<tr>
+<td>
+OIDC
+</td>
+<td>
+OpenID Connect
+</td>
+</tr>
+<tr>
+<td>
+OID4VP
+</td>
+<td>
+OpenID for Verifiable Presentations
+</td>
+</tr>
+<tr>
+<td>
+OMB
+</td>
+<td>
+White House Office of Management and Budget
+</td>
+</tr>
+<tr>
+<td>
+PIV
+</td>
+<td>
+Personal Identity Verification
+</td>
+</tr>
+<tr>
+<td>
+PKI
+</td>
+<td>
+Public Key Infrastructure
+</td>
+</tr>
+<tr>
+<td>
+TLS
+</td>
+<td>
+Transport Layer Security
+</td>
+</tr>
+<tr>
+<td>
+URI
+</td>
+<td>
+Uniform Resource Identifier
+</td>
+</tr>
+<tr>
+<td>
+URL
+</td>
+<td>
+Uniform Resource Locator
+</td>
+</tr>
+<tr>
+<td>
+VICAL
+</td>
+<td>
+Verified Issuer Certificate Authority List
+</td>
+</tr>
+</tbody>
+</table>
+
+## Terms and Definitions
+
+<table>
+<thead>
+<th scope="col" width="25%">Terms</th>
+<th scope="col">Definitions</th>
+</thead>
+<tbody>
+<tr>
+<td>
+BLE
+</td>
+<td>
+Bluetooth Low Energy (BLE) devices encompass a wide range of products that communicate wirelessly using the BLE protocol.
+</td>
+</tr>
+<tr>
+<td>
+Device Retrieval
+</td>
+<td>
+A method of mPIV data transfer where the mPIV is read directly from the holder&'s mobile device (e.g., via NFC, BLE, QR).
+</td>
+</tr>
+<tr>
+<td>
+Derived mPIV
+</td>
+<td>
+Derived Mobile Personal Identity Verification is a credential derived from a PIV card, used to authenticate users on mobile devices and other environments where PIV cards cannot be used directly.
+</td>
+</tr>
+<tr>
+<td>
+Ephemeral MAC
+</td>
+<td>
+An ephemeral MAC (Message Authentication Code) key is a cryptographic key used for a single session or a short period of time, designed to ensure the integrity and authenticity of data within that specific context.&nbsp;Unlike long-lived keys, ephemeral MAC keys are discarded after use, enhancing security by minimizing the window of vulnerability if compromised.&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+Issuer
+</td>
+<td>
+The software application engaged by the Issuing Authority that enrolls, issues, and manages mPIV identity. It interacts with the verifiers.
+</td>
+</tr>
+<tr>
+<td>
+Issuing Authority
+</td>
+<td>
+The organization or entity that officially authorizes the issuance of the mPIV.
+</td>
+</tr>
+<tr>
+<td>
+Issuing Authority CA
+</td>
+<td>
+The Certificate Authority is operated by or on behalf of the issuing authority that signs digital certificates used to secure and validate mPIV.
+</td>
+</tr>
+<tr>
+<td>
+Issuing Authority Infrastructure
+</td>
+<td>
+The systems, services, and processes that support the issuance and management of mPIVs, including security controls and credential issuance.
+</td>
+</tr>
+<tr>
+<td>
+JWT
+</td>
+<td>
+JSON Web Token is a compact, URL-safe token format used to represent claims securely between two parties. A JWT typically contains three parts: a header, a payload (claims), and a signature.
+</td>
+</tr>
+<tr>
+<td>
+JWS
+</td>
+<td>
+JSON Web Signature is a mechanism for signing data (such as a JWT) using a digital signature to ensure integrity and authenticity. A JWS is a signed JWT. Every signed JWT is a JWS, but not all JWTs are necessarily signed (they could also be encrypted &mdash; JWE).
+</td>
+</tr>
+<tr>
+<td>
+mDL
+</td>
+<td>
+A mobile Driving License (mDL) is a digital version of a driver's license stored on a mobile device, conforming to ISO/IEC 18013-5.
+</td>
+</tr>
+<tr>
+<td>
+mdoc
+</td>
+<td>
+A mobile document&mdash;typically a digital identity document (e.g., driver&'s license, mPIV) stored securely on a mobile device and conforming to ISO/IEC 18013-5.
+</td>
+</tr>
+<tr>
+<td>
+MFA
+</td>
+<td>
+MFA (Multi-Factor Authentication) is a security process that requires two or more independent credentials (factors) for verifying a user's identity, such as something they know (password), something they have (token), and something they are (biometrics).
+</td>
+</tr>
+<tr>
+<td>
+mPIV Holder
+</td>
+<td>
+The individual who owns or controls the mPIV document on their device.
+</td>
+</tr>
+<tr>
+<td>
+mPIV Reader
+</td>
+<td>
+A device or application that reads data from a mobile Personal Identity Verification (mPIV) during a transaction.
+</td>
+</tr>
+<tr>
+<td>
+mPIV Verifier
+</td>
+<td>
+The entity that verifies the authenticity and integrity of the data presented from the mPIV.
+</td>
+</tr>
+<tr>
+<td>
+NFC
+</td>
+<td>
+NFC (Near Field Communication) is a short-range wireless technology that allows devices to exchange information when placed in proximity, commonly used in mobile payments and access control.
+</td>
+</tr>
+<tr>
+<td>
+OID4VP
+</td>
+<td>
+OID4VP stands for OpenID for Verifiable Presentations. It defines a mechanism on top of OAuth 2.0 for requesting and delivering presentations of credentials. It is a specification developed under the OpenID Foundation that defines how Verifiable Presentations (VPs)&mdash;typically containing Verifiable Credentials (VCs)&mdash;can be presented securely and privately using OpenID Connect protocols.
+</td>
+</tr>
+<tr>
+<td>
+OMB
+</td>
+<td>
+The White House Office of Management and Budget (OMB) is a U.S. federal office that assists the President in overseeing the preparation and implementation of the federal budget, along with setting government-wide policies for administrative management, including IT and cybersecurity.
+</td>
+</tr>
+<tr>
+<td>
+PIN
+</td>
+<td>
+Personal Identification Number is a numeric code used as a security measure to verify a user's identity, often required in conjunction with a smart card or other authentication methods for secure access to systems or services.
+</td>
+</tr>
+<tr>
+<td>
+PIV
+</td>
+<td>
+Personal Identity Verification is a U.S. federal government smart card used for secure authentication of federal employees and contractors, based on Public Key Infrastructure (PKI).
+</td>
+</tr>
+<tr>
+<td>
+PKI
+</td>
+<td>
+Public Key Infrastructure (PKI): A framework that manages digital certificates and encryption keys, enabling secure communications and authentication by binding public keys to identities through a trusted certificate authority (CA).
+</td>
+</tr>
+<tr>
+<td>
+Relying party
+</td>
+<td>
+An application or service that relies on an identity provider (IDP) to authenticate users and grant them access.&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+Server Retrieval
+</td>
+<td>
+A method of mPIV data access where the verifier retrieves mPIV data from a backend server rather than directly from the mPIV holder device.
+</td>
+</tr>
+<tr>
+<td>
+Server Retrieval Token
+</td>
+<td>
+A token provided by the holder that allows the verifier to retrieve the mPIV data securely from a server.
+</td>
+</tr>
+<tr>
+<td>
+Web APIs
+</td>
+<td>
+A Web API is an application programming interface for the Web. It defines the touchpoints between a client application and a server application.
+</td>
+</tr>
+</tbody>
+</table>
+
+## Normative References 
+
+<table>
+<thead>
+<th scope="col" width="25%">Standards</th>
+<th scope="col">Description</th>
+</thead>
+<tbody>
+<tr>
+<td>
+FIPS 201-3
+</td>
+<td>
+Personal Identity Verification (PIV) of Federal Employees and Contractors
+</td>
+</tr>
+<tr>
+<td>
+ISO/IEC 18013-5
+</td>
+<td>
+An international standard that defines the specifications for mDLs, including their secure storage, transmission, and validation, primarily for in-person verification
+</td>
+</tr>
+<tr>
+<td>
+ISO/IEC 18013-7
+</td>
+<td>
+An international standard that builds upon the ISO/IEC 18013-5, enabling mDLs to be presented and verified remotely over the internet, expanding their use to online scenarios.
+</td>
+</tr>
+<tr>
+<td>
+ISO/IEC 23220
+</td>
+<td>
+The ISO/IEC 23220 series is a set of international standards focused on mobile driver's licenses (mDLs) and mobile IDs (mIDs).
+</td>
+</tr>
+<tr>
+<td>
+ICAO 9303
+</td>
+<td>
+ICAO Doc 9303, focuses on machine-readable travel documents (MRTDs) and includes specifications for passport design, data format, and security features. These standards aim to facilitate automated border control and ensure document integrity, including the use of a machine-readable zone (MRZ).
+</td>
+</tr>
+<tr>
+<td>
+NIST SP 800-63
+</td>
+<td>
+NIST Special Publication (SP) 800-63 is a set of digital identity guidelines published by the National Institute of Standards and Technology (NIST) in the United States. It provides comprehensive guidance on digital identity proofing, authentication, and federation for federal systems, but is also widely adopted in the private sector.
+</td>
+</tr>
+<tr>
+<td>
+NIST SP 800-157 (Guidelines for Derived PIV Credentials)
+</td>
+<td>
+Provides technical specifications for implementing secure and reliable PKI-based identity credentials on mobile devices.
+</td>
+</tr>
+<tr>
+<td>
+eIDAS
+</td>
+<td>
+Short for Electronic Identification, Authentication, and Trust Services, is an EU regulation that establishes a framework for electronic identification and trust services in the European Union. The eIDAS 2.0 Regulation represents a significant advancement in the European Union's approach to digital identity and trust services. Building upon the original eIDAS framework established in 2014, eIDAS 2.0 aims to provide EU citizens and businesses with secure, user-controlled digital identities that are recognized across all member states.
+</td>
+</tr>
+<tr>
+<td>
+W3C
+</td>
+<td>
+The World Wide Web Consortium (W3C) is the principal international organization responsible for developing open standards to ensure the long-term growth and interoperability of the World Wide Web. Established in 1994 by Tim Berners-Lee, the inventor of the Web, W3C operates as a public-interest non-profit organization headquartered in Cambridge, Massachusetts, with a global staff and membership base.
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- First updated 06/17/2025 - Sree -->
