@@ -22,6 +22,11 @@ partners:
     href: /trust-services/
   - text: ICAM FIBF For Comment
     href: /icam-fibf/
+  - text: Mobile PIV (mPIV) Experiment
+    href: /experiments/unifyia-mpiv-experiment/
+  - text: Shatterproof Digital Identity - GSA PQC Experiment
+    href: /experiments/unifyia-pqc-experiment/
+
 
 implement:
   - text: Introduction
@@ -52,7 +57,9 @@ implement:
     href: /implement/yubikey-guide/
   - text: Unifyia Implementation Guide for Passkeys (FIDO2)
     href: /implement/unifyia-guide/
-
+  - name: Shatterproof Digital Identity - GSA PQC Experiment
+    href: /implement/unifyia-pqc-experiment/
+    
 functions:
   - text: FICAM Program
     href: /ficam/
@@ -108,9 +115,12 @@ papers:
     href: /experiments/pid/framework/
   - text: PIAM Process
     href: /experiments/pid/process/
+  - text: Mobile PIV (mPIV) Experiment
+    href: /experiments/unifyia-mpiv-experiment/
+  - text: Shatterproof Digital Identity - GSA PQC Experiment
+    href: /experiments/unifyia-pqc-experiment/
   - text: Coming Soon
     href: /experiments/#coming-soon
-
 
 playbooks:
   - text: Introduction
