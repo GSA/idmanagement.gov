@@ -239,7 +239,7 @@ The Security Authorization provides organizational accountability by requiring a
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
+    <!-- <h4 class="usa-alert__heading"></h4> -->
     <p class="usa-alert__text">
       The ATO is not a governmentwide risk acceptance. Each federal agency must issue an ATO for its own use of the SSP services and review continuous monitoring deliverables to ensure the security posture remains sufﬁcient for their continued use. To avoid signiﬁcant delays, a SSP should not use their own versions of SA&A-related documents or templates. It is important for the SSP to consider the resources needed for ongoing risk management activities. Once a vendor receives an ATO, they apply to the GSA Multiple Award Schedule to complete the process and be recognized as a GSA PKI SSP.
     </p>
@@ -258,7 +258,7 @@ Upon receiving an ATO and being conﬁrmed as a GSA PKI SSP, the vendor is ready
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
-      <h4 class="usa-alert__heading"></h4>
+      <!-- <h4 class="usa-alert__heading"></h4> -->
       <p class="usa-alert__text">
         If the OCISO and SSP Program Ofﬁce believe the SAR will be favorable based on preliminary reviews and discussions, the SSP does not have to wait for the ATO letter to submit an Information Technology Package to FAS. These efforts can be worked in parallel to offer digital certiﬁcate services on the day of receiving the ATO letter. After the vendor is listed on the GSA MAS, the vendor submits a business and technical point of contact to the GSA PKI SSP Program Ofﬁce. This information is publicly posted on <a class="usa-link" href="{{site.baseurl}}/trust-services/#government-identity-services" target="_blank" rel="noopener noreferrer">idmanagement.gov under Government Identity Trust Service</a> to identify the vendor as a GSA PKI SSP and assist agencies in identifying federally-compliant PKI services. GSA will market the Multiple Award Schedule and vendors listed on it as the premier vehicle for Federal Government agencies to acquire federally-compliant PKI services.
       </p>
