@@ -151,7 +151,7 @@ The primary audience for this playbook are agency digital identity and security 
   </caption>
   <thead>
     <tr>
-      <th scope="col">Stakeholder</th>
+      <th scope="col" id="stakeholder">Stakeholder</th>
       <th scope="col">Stakeholder Type</th>
     </tr>
   </thead>
