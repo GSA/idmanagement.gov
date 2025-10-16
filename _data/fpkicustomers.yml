@@ -1,5 +1,15 @@
 # data file for piv customers list
-
+# File: fpkicustomers.yml 
+# Page Use: https://www.idmanagement.gov/fpki/notifications/
+#
+# Template for new data:
+#
+# - branch: [string] - corporate level
+#   agency: [string] - department
+#   credentialProvider: [string] - creditial provider
+#   ssp: [string] - supplier
+#   ca: [string] - HTML fragment
+##
 -
  branch: Executive
  agency: Executive Office of the President
