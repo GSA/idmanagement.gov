@@ -1,4 +1,21 @@
-# List of PACS Systems for PACS List
+# List of PACS 13.01 Systems for PACS List
+# File: fips201pacs1301.yml 
+# Page Use: https://www.idmanagement.gov/fips201/
+#
+# Template for new data:
+#
+# - category: [number] (13.01)
+#   fipsstatus: [string] (Approved)
+#   infrastructure: [string] - Infrastructure name 
+#   infraurl: [string] - URL
+#   infraapl: [number] - apl number 
+#   validation: [string] - validation
+#   valurl: [string] - url to validation pdf
+#   valapl: [number] - validation number
+#   reader#: [string] - name of reader
+#   reader#url: [string] - relative path to reader apl pdf 
+#   reader#apl: [string] - reader apl
+# Note: reader# repeat in sequence = to the nubmer of readers
 
 - category: 13.01
   fipsstatus: Approved
