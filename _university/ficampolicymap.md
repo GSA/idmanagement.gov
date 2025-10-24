@@ -567,7 +567,7 @@ sticky_sidenav: true
     </g>
     <g id="M-22-09">
       <g id="eorect-12" data-name="eorect">
-        <a href="https://zerotrust.cyber.gov/downloads/M-22-09%20Federal%20Zero%20Trust%20Strategy.pdf" title="m-22-09" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf" title="m-22-09" target="_blank" rel="noopener noreferrer">
         <rect class="fpbutton" x="657.5" y="374.8" width="73" height="24.5" />
         <text id="M-22-09-2" data-name="M-22-09" transform="translate(673.26 391.85) scale(.93 1)" style="font-family: Arial-BoldMT, Arial; font-size: 12px; font-weight: 700;"><tspan x="0" y="0">M-22-09 </tspan></text>
         </a>
