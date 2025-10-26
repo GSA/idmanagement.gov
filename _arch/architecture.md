@@ -29,7 +29,7 @@ subnav:
 <br>
 <div class="usa-accordionusa-accordion usa-accordion--bordered">
     <h4 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="n-a1">Date: June 30, 2023 - Version: 3.3</button>
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="n-a1">Date: October 25, 2025 - Version: 3.3</button>
     </h4>
     <div id="n-a1" class="usa-accordion__content usa-prose">
 
