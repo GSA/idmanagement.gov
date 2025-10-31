@@ -28,3 +28,4 @@ This project is in the worldwide [public domain](/_pages/license.md/).
 This site is based on GitHub Pages and Jekyll templates. 
 
 Special thanks to the teams at [18F](https://18f.gsa.gov/), [18F Pages](https://pages.18f.gov/), and [US Digital Services Playbooks](https://playbook.cio.gov/) for their open and transparent model which benefits citizens, government, and technology.
+ 
