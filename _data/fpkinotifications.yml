@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: October 31, 2025
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new certificate to TSCP SHA384 Bridge CA between 11/14/2025 and 11/19/2025
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA384 Bridge CA, OU=CAs, O=TSCP LLC, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://cacerts.digicert.com/IssuedBy-tscpbcasha384.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.one.digicert.com/tscpbcasha384.crl
+  ee_ocsp_uri: N/A
+
 - notice_date: October 22, 2025
   change_type: CA Certificate Issuance
   system: U.S. Department of State AD Root CA
