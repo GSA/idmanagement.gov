@@ -26,6 +26,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: October 22, 2025
+  change_type: CA Certificate Issuance
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State issued a new PIV issuing CA certificate.  The new CA is scheduled to go into production on October 31, 2025.
+  contact: NewtonPJ at state dot gov
+  ca_certificate_hash: 4a4e87b992264fbf9f92fcc4ab89840df6fcb89d
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: OU = U.S. Department of State PIV CA3, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c
+  sia_uri: N/A 
+  ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: August 12, 2025
   change_type: Repository Outage
   system: Department of State PKI
