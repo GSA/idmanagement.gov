@@ -144,7 +144,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
 - [NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access](https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}" %}
 
 
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
+![Inventory critical assets for each agency site]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Inventory critical assets for each agency site**
 - When you inventory critical assets, also document any challenges to secure them.  <br><br>Examples of critical assets include:
     - People
     - Information systems and IT infrastructure
@@ -156,7 +156,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
     - Impact on national security from potential asset loss, compromise, or damage
     - Cost of replacing the asset
     
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Assess site, critical asset risks, and risks to tenant agencies' assets**
+![Assess site, critical asset risks, and risks to tenant agencies' assets]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp; **Assess site, critical asset risks, and risks to tenant agencies' assets**
 - Examples of potential risks to a site and its critical assets include: 
     - Site mission(s) (those of the agency, its organizations, and tenant agencies)
     - Site “symbolism” (public perception of the agency, its organizations, tenant agencies, or missions)
@@ -171,7 +171,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
     - Sensitivity - Does it contain classified or sensitive information?
     - Likelihood - What is the probability of loss, compromise, or damage?
     
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize each asset by risk impact level**
+![Categorize each asset by risk impact level]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize each asset by risk impact level**
 - [FIPS 199](https://csrc.nist.gov/publications/detail/fips/199/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} defines three (3) impact levels on organizations and people (that is, a loss of confidentiality, integrity, or availability): 
    
 |Impact Level | Description |
@@ -180,7 +180,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
 | *Moderate* | The loss of confidentiality, integrity, or availability could seriously affect organizational operations, assets, or individuals.| 
 |*High* | The loss of confidentiality, integrity, or availability could have a **severe or catastrophic** adverse effect on organizational operations, organizational assets, or individuals. |
 
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
+![Create a site map of categorized assets]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Create a site map of categorized assets**
 - This map will help you determine each security area's minimum security level.
 
 {% include alert-no-icon.html content="As an alternative to assessing a site's risk, you can select a pre-determined FSL as described in <a class=\"usa-link usa-link--external\" href=\"https://www.cisa.gov/resources-tools/resources/isc-standard-risk-management-process\" target=\"_blank\" rel=\"noopener noreferrer\">The Risk Management Process for Federal Facilities: An Interagency Security Committee Standard</a>" %}
@@ -189,7 +189,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
 
 {% include alert-no-icon.html content="Agencies may use different terms for their security areas; however, each agency should establish its criteria for authentication mechanisms, according to <a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>" %}
 
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
+![Categorize security areas]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Categorize security areas**
 - Once you've inventoried and mapped assets by risk and impact level, it's time to categorize security areas.
 - NIST SP 800-116, Revision 1, defines three (3) security area categories: 
 
@@ -206,7 +206,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
 
 {% include alert-no-icon.html content="<a class=\"usa-link usa-link--external\" href=\"https://csrc.nist.gov/publications/detail/sp/800-116/rev-1/final\" target=\"_blank\" rel=\"noopener noreferrer\">NIST SP 800-116, Revision 1, Guidelines for the Use of PIV Credentials in Facility Access</a>, recommends the following method to determine authentication factors for Exclusion, Limited, and Controlled security areas." %}
 
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
+![Determine authentication factors required for security area categories]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Determine authentication factors required for security area categories**
 - Once you have categorized all security area categories, you will select the minimum number of authentication factors (1, 2, or 3) needed to access and safeguard the facility:
 
 | Category| Minimum Number of Factors | Description|
@@ -219,7 +219,7 @@ These federal standards provide guidance for assessing FSL, including how to cat
 
 {% include alert-no-icon.html content="[FIPS 201-3](https://csrc.nist.gov/publications/detail/fips/201/3/final){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}, Personal Identity Verification (PIV) of Federal Employees and Contractors, defines authentication mechanisms at four assurance levels (Little or No, Some, High, and Very High)." %}
 
-![]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanisms for each security area**
+![Select authentication mechanisms for each security area]({{site.baseurl}}/assets/img/check-box.png){:style="float:center"} &nbsp;**Select authentication mechanisms for each security area**
 - Based on the security area categories and required authentication factors for each security area, choose the PIV credential authentication mechanism(s) that enforce these factors at each access point. 
 - FIPS 201-3 specifies these authentication mechanisms for PIV credentials:
     - PKI authentication using the PIV Authentication Certificate [(PKI-AUTH)]({{site.baseurl}}/university/pacs/#pki-auth){:rel="noopener noreferrer"}{:class="usa-link"} 

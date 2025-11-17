@@ -1,3 +1,7 @@
+# Policy Matrix Laws, Policies, and Standards
+# File: laws-policies-standards.yml
+# Page Use: https://www.idmanagement.gov/
+#
 # yaml-language-server: $schema=https://github.com/GSA/idmanagement.gov/blob/staging/assets/schemas/laws-policies-standards-schema.json
 # &6USC1523
 #  type: Law
@@ -629,7 +633,7 @@
   longName: "OMB Memo 22-09: Moving the U.S. Government Toward Zero Trust Cybersecurity Principles"
   description: "This strategy places significant emphasis on stronger enterprise identity and access controls, including multi-factor authentication (MFA)."
   published: 2022-01-26
-  externalURL: "https://zerotrust.cyber.gov/downloads/M-22-09%20Federal%20Zero%20Trust%20Strategy.pdf"
+  externalURL: "https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
   authored-by:
     - *OMB
   authorized-by:

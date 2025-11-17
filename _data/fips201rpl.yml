@@ -1,17 +1,20 @@
 # FIPS 201 Removed Product List
+# File: fips201rpl.yml
+# Page Use: https://www.idmanagement.gov/fips201/
+#
 # Note: to create a blank table, use the template below with only the category filled out.
-
+#
 # Template
-# - category: ''
-#   supplier: ''
-#   nameProduct: ''
-#   numberProduct: ''
-#   dateRemoval: 
-#   dateCode: 
-#   numberApl: ''
-#   reason: ''
-#   status: post
-
+# - category: [string]
+#   supplier: [string]
+#   nameProduct: [string]
+#   numberProduct: [number]
+#   dateRemoval: [date] - example: 10/16/2023 
+#   dateCode: [date] - example: 2023-10-16
+#   numberApl: [number] - apl number
+#   reason: [string] - notes or reason for action
+#   status: [string] - post
+## 
 
 - category: '13.01 PACS Infrastructure'
   supplier: 'Identiv'
