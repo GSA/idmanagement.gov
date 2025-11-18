@@ -93,7 +93,7 @@ This playbook is a collaboration between the Federal Chief Information Security 
 
 ## Acknowledgments 
 
-This playbook was developed by GSA’s Office of Technology Policy’s Identity and Trusted Access Division. Technical contributions pertaining to media forensics were made by the members of the Defense Advanced Research Projects Agency Semantic Forensics (SemaFor) program team. OGP IATAD appreciates the collaboration and ongoing support from DARPA on this effort and looks forward to jointly collaborating on other high impact engagements as opportunities arise.
+This playbook was developed by GSA’s Office of Technology Policy’s Identity and Trusted Access Division. Technical contributions pertaining to media forensics were made by the members of the Defense Advanced Research Projects Agency Semantic Forensics (SemaFor) program team. OGP and the Federal Identity and Cybersecurity Division appreciates the collaboration and ongoing support from DARPA on this effort and looks forward to jointly collaborating on other high impact engagements as opportunities arise.
 
 ## Executive Summary
 
