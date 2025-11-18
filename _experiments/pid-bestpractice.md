@@ -165,7 +165,7 @@ The primary audience is persons developing or maintaining a federal public-facin
 
 ## 8. Disclaimer
 
-GSA Office of Government-wide Policy, Identity Assurance and Trusted Access Division  
+GSA Office of Government-wide Policy, Federal Identity and Cybersecurity Division  
 developed this best practice guide. U.S. Federal Executive Branch agencies can use this guide to plan identity proofing  processes and services. This guide is not an official policy or mandated action. However, it provides information backed by federal authoritative sources.
 
 ## 9. Identity Proofing Assurance Levels & Methods
