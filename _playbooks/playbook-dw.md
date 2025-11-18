@@ -45,7 +45,7 @@ subnav:
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height="64" align="left" alt="U.S. General Services Administration Logo">
 <img src="{{site.baseurl}}/assets/logo/logo-cio-round.png" width="64" height="64" align="left" alt="U.S. Federal Chief Information Officer Council Logo"><br><br><br>
 
-This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy Federal Identity and Cybersecurity Division.
+This playbook is a collaboration between the Identity, Credential, and Access Management Subcommittee of the Federal Chief Information Security Officer (CISO) Council and the General Services Administration Office of Government-wide Policy, Federal Identity and Cybersecurity Division.
 
 <br>
 <div class="usa-accordion usa-accordion--bordered">
