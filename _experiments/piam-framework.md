@@ -185,7 +185,7 @@ Listed below are key terms used throughout this document.
 
 ## 3. Disclaimer
 
-The U.S. General Services Administration’s Office of Government-wide Policy, Identity Assurance and Trusted Access Division developed this best practice guide. U.S. Federal Executive Branch agencies can use this guide as a reference point for processes and services to manage citizen identity and their access. This guide is not an official policy or mandated action. However, it does provide information backed by federal authoritative sources.
+The U.S. General Services Administration’s Office of Government-wide Policy, Federal Identity and Cybersecurity Division developed this best practice guide. U.S. Federal Executive Branch agencies can use this guide as a reference point for processes and services to manage citizen identity and their access. This guide is not an official policy or mandated action. However, it does provide information backed by federal authoritative sources.
 
 ## 4.  Public Identity & Access Management (PIAM) Overview
 
