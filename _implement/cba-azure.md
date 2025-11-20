@@ -63,7 +63,7 @@ subnav:
   </div>
 </div>
 
-The U.S. General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, the Office of Personnel Management, and the Department of Education developed this guide to help Identity, Credential, and Access Management (ICAM) program managers and Microsoft Entra ID administrators implement Certificate-based Authentication with Microsoft Entra ID. This guide identifies steps for planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Microsoft Entra Hybrid joined devices to leverage a **device-level signal** to determine data authorization. OMB Memo 22-09, Federal Zero Trust Strategy, tasks agencies to work to incorporate at least one device-level signal alongside identity information about the authenticated user.
+The U.S. General Services Administration Office of Government-wide Policy Federal Identity and Cybersecurity Division, the Office of Personnel Management, and the Department of Education developed this guide to help Identity, Credential, and Access Management (ICAM) program managers and Microsoft Entra ID administrators implement Certificate-based Authentication with Microsoft Entra ID. This guide identifies steps for planning, configuring, testing, and implementing a Certificate-Based Authentication deployment with Microsoft Entra Hybrid joined devices to leverage a **device-level signal** to determine data authorization. OMB Memo 22-09, Federal Zero Trust Strategy, tasks agencies to work to incorporate at least one device-level signal alongside identity information about the authenticated user.
 1. Device-level signal - Compliant device.
 2. Identity information - User's certificate
 
