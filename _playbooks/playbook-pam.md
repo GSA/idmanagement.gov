@@ -101,7 +101,7 @@ December 29, 2022 -->
 | 1.1 | 12/15/2022 | Clarify activities around automated discovery of entitlements and microservices. |
 | 1.0 | 09/25/2022 | Initial Draft. | -->
 
-This playbook is a collaboration among the General Services Administration Office of Government-wide Policy Identity Assurance and Trusted Access Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
+This playbook is a collaboration among the General Services Administration Office of Government-wide Policy, Federal Identity and Cybersecurity Division, Federal Chief Information Security Officer Council ICAM Subcommittee, and the Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA) Continuous Diagnostic and Mitigation (CDM) Program.
 
 ## Executive Summary
 Privileged users are unique user types that perform various security-related duties. As such, privileged accounts are most likely to be targeted by cybercriminals or abused by malicious insiders. **Unwanted behavior or compromised privileged accounts are responsible for the most high-profile federal and private security breaches.** It is a critical Identity, Credential, and Access Management (ICAM) capability to secure privileged access.

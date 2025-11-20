@@ -1,4 +1,7 @@
-# list of Legacy PIV Cards products
+# List of Legacy PIV Cards products
+# File: legacy-piv.yml
+# Page Use: https://www.idmanagement.gov/fips201/
+#
 
 - productname: ID-One PIV v 2.4.0 on Cosmo V8.1 (EEPROM)
   productnumber: 1501381 (applet in EEPROM)

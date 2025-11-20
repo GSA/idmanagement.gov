@@ -1,11 +1,7 @@
-#data file for fpki-guides change notification
-
-# Instructions to directly add the notifications to the yml file. Please follow the guidelines in this document to insert a system change or planned outage notification into the FPKI system change notifications. _fpki/7_fpki_notifications.md processes the data in the notifications.yml for display. The latest notification entry in notification.yml will be displayed at the top of the notification list. The other notifications are displayed in the descending order of the notification time. The notification data can be provided as a GitHub issue or via email. Once the notification data is received, a member of the FPKI team OR the submitting organization should follow the instructions below to add the notification to the list.
-
-# Retrieve notification from GitHub Issue: Access the FPKI-Guide issues list at https://github.com/GSA/fpki-guides/issues. Select 'System Notification' tag. Retrieve the latest issues under 'System Notification'. Add an Issue comment to each that you are updating the System Notifications
-
-# Retrieve notification from an email: Retrieve the notification data from the email.
-
+# FPKI Notifications 
+# File: fpkinotifications.yml
+# Page Use: https://www.idmanagement.gov/fpki/notifications/ 
+#
 # Add the Notification to GitHub: Click on the edit icon. Copy/paste the notification content to the end of _data/notifications.yml file. Add a dash "-" at the beginning of what you added (refer to existing notification entries for position and spacing). Submit a Pull Request, OR commit directly to the staging branch if you have permissions In your commit, add the comment "fixes " and the Issue number that you are adding to the notifications page
 
 # View the new item at https://demo.idmanagement.gov
@@ -25,6 +21,36 @@
 # ocsp_uri:
 # ee_cdp_uri:
 # ee_ocsp_uri:
+
+- notice_date: November 17, 2025
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new certificate to TSCP SHA384 Bridge CA
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: 9f8e5593b8a6c10da2751dd46d470aef8506747a
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA384 Bridge CA, OU=CAs, O=TSCP LLC, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://cacerts.digicert.com/IssuedBy-tscpbcasha384.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.one.digicert.com/tscpbcasha384.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: October 31, 2025
+  change_type: Intent to issue a CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new certificate to TSCP SHA384 Bridge CA between 11/14/2025 and 11/19/2025
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA384 Bridge CA, OU=CAs, O=TSCP LLC, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://cacerts.digicert.com/IssuedBy-tscpbcasha384.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.one.digicert.com/tscpbcasha384.crl
+  ee_ocsp_uri: N/A
 
 - notice_date: October 22, 2025
   change_type: CA Certificate Issuance

@@ -30,7 +30,7 @@ subnav:
 
 ---
 
-This section of IDManagement.gov is dedicated to ongoing experiments and research initiated by the GSA Office of Government-wide Policy, Identity Assurance and Trusted Access Division, other agencies, industry and academia partners. 
+This section of IDManagement.gov is dedicated to ongoing experiments and research initiated by the GSA Office of Government-wide Policy, Federal Identity and Cybersecurity Division, other agencies, industry and academia partners. 
 
 Please reach out to [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"} with ideas, questions, and collaboration opportunities for us to consider.  
 

@@ -1,4 +1,19 @@
 # list of APL PIV Cards products
+# File: fips201piv.yml
+# Page Use: https://www.idmanagement.gov/fips201/
+#
+# Template for new data:
+#  
+# - productname: [string] - name
+#   productnumber: [number] - product number
+#   category: [string] - example: PIV Card
+#   supplier: [string] - name
+#   aplnumber: [number] - apl number
+#   validdate: [date] - example: 11/09/2017
+#   dateCode: [date] - exmple: 2017-11-09
+#   compliantwithtaa: [string] - (Yes|No)
+#   url: [string] -   apl url
+##
 
 - productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
   productnumber: 50192769
