@@ -50,7 +50,7 @@
   valapl: 10084
   dateRemoval: 05/01/2025
   dateCode: 2025-05-01
-  reason: "13.01 removed per vendor request. The approved 13.02 Software House CCURE-9000 V3.0 PACS is APL #10159"
+  reason: "Not approved for FRTC 1.3.3"
 
 - category: 13.01 PACS and Validation Infrastructure
   status: Approved
