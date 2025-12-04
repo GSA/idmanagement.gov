@@ -47,7 +47,7 @@
   teststatus: In queue
 
 - position: 5
-  solution: AccessNSite 7.9 + HID pivCLASS 5.32.0
+  solution: AccessNsite 7.9 + HID pivCLASS 5.32.0
   aplnumbers: 10043 & 10044
   state: Update
   teststatus: In queue
