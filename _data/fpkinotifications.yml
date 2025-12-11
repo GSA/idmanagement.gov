@@ -37,7 +37,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
 
-  - notice_date: December 5, 2025
+- notice_date: December 5, 2025
   change_type: Intent to issue a CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a new certificate to the CertiPath Bridge CA-G3 between 12/12/2025 and 12/18/2025.
