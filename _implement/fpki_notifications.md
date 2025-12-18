@@ -694,7 +694,6 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a7" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
-      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2024' %}
@@ -735,7 +734,6 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a6" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
-      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2023' %}
@@ -776,7 +774,6 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a5" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
-      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2022' %}
@@ -817,7 +814,6 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a4" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
-      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2021' %}
@@ -858,7 +854,6 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a3" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
-      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last < '2021' %}
