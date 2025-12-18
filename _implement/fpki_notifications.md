@@ -602,8 +602,8 @@ Subject:  FPKI System Notification - System Name
 
 
 ## Notifications
-<!-- This block loops through the notifications .yml file under the _data directory. -->
-
+<!-- This block loops through the fpkinotifications.yml file under the _data directory. -->
+<!-- Note: There is a section for each year, to add a new year, updated the year in the first current year section to reflect the new year in two places, then duplicated the second section from the previous year, including the comments (update the comments previous year). Then update the year to the new previous year, then increment the number plus 1 for aria-controls='n-a#' and <div id="n-a#" (must match), and set the aria-expanded to false. Let site build check the preview -->
 <!-- start of notifications accordion  -->
 <div class="usa-accordion usa-accordion--bordered">
   <!-- Start of current years (2026) notifications -->
@@ -654,6 +654,7 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a8" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
+      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2025' %}
@@ -693,6 +694,7 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a7" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
+      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2024' %}
@@ -732,6 +734,7 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a6" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
+      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2023' %}
@@ -771,6 +774,7 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a5" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
+      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2022' %}
@@ -810,6 +814,7 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a4" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
+      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2021' %}
@@ -849,6 +854,7 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a3" class="usa-accordion__content usa-prose">
    <div class="usa-width-one-whole">
+      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last < '2021' %}
