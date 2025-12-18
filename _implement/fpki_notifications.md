@@ -635,7 +635,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -673,7 +673,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -710,7 +710,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -747,7 +747,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -784,7 +784,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -821,7 +821,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -858,7 +858,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
-        {% unless forloop.last %}<hr>{% endunless %}
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
