@@ -657,7 +657,9 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2025' %}
+        {% if index != 1%}
         <hr>
+        {% endif %}
         <ul class="usa-unstyled-list">
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
