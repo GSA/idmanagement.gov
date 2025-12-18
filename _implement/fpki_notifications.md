@@ -603,7 +603,7 @@ Subject:  FPKI System Notification - System Name
 
 ## Notifications
 <!-- This block loops through the fpkinotifications.yml file under the _data directory. -->
-<!-- Note: There is a section for each year, to add a new year, updated the year in the first current year section to reflect the new year in two places, then duplicated the second section from the previous year, including the comments (update the comments previous year). Then update the year to the new previous year, then increment the number plus 1 for aria-controls='n-a#' and <div id="n-a#" (must match), and set the aria-expanded to false. Let site build check the preview -->
+<!-- Note: There is a section for each year, to add a new year, updated the year in the first current year section to reflect the new year in two places, then duplicated the second section from the previous year, including the comments (update the comments previous year). Then update the year to the new previous year, then increment the number plus 1 for aria-controls='n-a#' and <div id="n-a#" (must match), and set the aria-expanded to false. Let site build check the preview. -->
 <!-- start of notifications accordion  -->
 <div class="usa-accordion usa-accordion--bordered">
   <!-- Start of current years (2026) notifications -->
