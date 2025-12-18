@@ -696,7 +696,9 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2024' %}
+        {% if forloop.index != 1 %}
         <hr>
+        {% endif %}
         <ul class="usa-unstyled-list">
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
@@ -733,7 +735,9 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2023' %}
+        {% if forloop.index != 1 %}
         <hr>
+        {% endif %}
         <ul class="usa-unstyled-list">
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
@@ -770,7 +774,9 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2022' %}
+        {% if forloop.index != 1 %}
         <hr>
+        {% endif %}
         <ul class="usa-unstyled-list">
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
@@ -807,7 +813,9 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2021' %}
+        {% if forloop.index != 1 %}
         <hr>
+        {% endif %}
         <ul class="usa-unstyled-list">
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
@@ -844,7 +852,9 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last < '2021' %}
+        {% if forloop.index != 1 %}
         <hr>
+        {% endif %}
         <ul class="usa-unstyled-list">
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
