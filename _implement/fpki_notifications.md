@@ -654,11 +654,11 @@ Subject:  FPKI System Notification - System Name
   </h4>
   <div id="n-a8" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
-      {% assign notification = "" %}
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2025' %}
-        {% if forloop.index != 1 %}
+        {% if forloop.first %}
+        {% else %}
         <hr>
         {% endif %}
         <ul class="usa-unstyled-list">
@@ -698,7 +698,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2024' %}
-        {% if forloop.index != 1 %}
+        {% if forloop.first %}
+        {% else %}
         <hr>
         {% endif %}
         <ul class="usa-unstyled-list">
@@ -738,7 +739,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2023' %}
-        {% if forloop.index != 1 %}
+        {% if forloop.first %}
+        {% else %}
         <hr>
         {% endif %}
         <ul class="usa-unstyled-list">
@@ -778,7 +780,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2022' %}
-        {% if forloop.index != 1 %}
+        {% if forloop.first %}
+        {% else %}
         <hr>
         {% endif %}
         <ul class="usa-unstyled-list">
@@ -818,7 +821,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2021' %}
-        {% if forloop.index != 1 %}
+        {% if forloop.first %}
+        {% else %}
         <hr>
         {% endif %}
         <ul class="usa-unstyled-list">
@@ -858,7 +862,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last < '2021' %}
-        {% if forloop.index != 1 %}
+        {% if forloop.first %}
+        {% else %}
         <hr>
         {% endif %}
         <ul class="usa-unstyled-list">
