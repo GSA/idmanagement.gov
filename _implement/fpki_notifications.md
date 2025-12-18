@@ -657,8 +657,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2025' %}
+        <hr>
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -694,8 +694,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2024' %}
+        <hr>
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -731,8 +731,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2023' %}
+        <hr>
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -768,8 +768,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2022' %}
+        <hr>
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -805,8 +805,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2021' %}
+        <hr>
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -842,8 +842,8 @@ Subject:  FPKI System Notification - System Name
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last < '2021' %}
+        <hr>
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
