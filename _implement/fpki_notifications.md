@@ -611,7 +611,7 @@ Subject:  FPKI System Notification - System Name
     <button
       type="button"
       class="usa-accordion__button"
-      aria-expanded="true"
+      aria-expanded="false"
       aria-controls="n-a1">2026 (Current)</button>
   </h4>
   <div id="n-a1" class="usa-accordion__content usa-prose">
