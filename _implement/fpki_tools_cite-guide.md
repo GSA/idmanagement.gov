@@ -115,16 +115,19 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 | FPKI CA Certificates | Website URL |
 | ------------ | ----------- |
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crt |
+| Test PQC FCPCA | placeholder |
 
 
 | FPKI CA CRLs | CRL URL |
 | ------------ | ----------- |
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crl |
+| Test PQC FCPCA | placeholder |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/Testfbcag4.crl |
 
 | FPKI CA p7c |  SIA URL |   AIA URL |
 | ------------ | ----------- | ----------- | 
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://cite.fpki.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
+| Test PQC FCPCA | placeholder |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag4.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag4.p7c |
 
 | Test Partner CRLs | CRL URL |
@@ -434,3 +437,4 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
 | 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
 | 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
+
