@@ -611,8 +611,8 @@ Subject:  FPKI System Notification - System Name
     <button
       type="button"
       class="usa-accordion__button"
-      aria-expanded="false"
-      aria-controls="n-a1">2026</button>
+      aria-expanded="true"
+      aria-controls="n-a1">2026 (Current)</button>
   </h4>
   <div id="n-a1" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
@@ -649,8 +649,8 @@ Subject:  FPKI System Notification - System Name
     <button
       type="button"
       class="usa-accordion__button"
-      aria-expanded="true"
-      aria-controls="n-a8">2025 (Current)</button>
+      aria-expanded="false"
+      aria-controls="n-a8">2025</button>
   </h4>
   <div id="n-a8" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
