@@ -602,25 +602,24 @@ Subject:  FPKI System Notification - System Name
 
 
 ## Notifications
-<!-- This block loops through the notifications .yml file under the _data directory. -->
-
+<!-- This block loops through the fpkinotifications.yml file under the _data directory. -->
+<!-- Note: There is a section for each year, to add a new year, updated the year in the first current year section to reflect the new year in two places, then duplicated the second section from the previous year, including the comments (update the comments previous year). Then update the year to the new previous year, then increment the number plus 1 for aria-controls='n-a#' and <div id="n-a#" (must match), and set the aria-expanded to false. Let site build check the preview. -->
 <!-- start of notifications accordion  -->
 <div class="usa-accordion usa-accordion--bordered">
-  <!-- Start of current years (2025) notifications -->
+  <!-- Start of current years (2026) notifications -->
   <h4 class="usa-accordion__heading">
     <button
       type="button"
       class="usa-accordion__button"
       aria-expanded="true"
-      aria-controls="n-a1">2025 (Current)</button>
+      aria-controls="n-a1">2026 (Current)</button>
   </h4>
   <div id="n-a1" class="usa-accordion__content usa-prose">
     <div class="usa-width-one-whole">
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
-        {% if nnd.last == '2025' %}
+        {% if nnd.last == '2026' %}
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -636,14 +635,52 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
       {% endfor %}
     </div>
   </div>
-  <!-- end of current years (2025) notifications -->
+  <!-- end of current years (2026) notifications -->
   <hr>
+  <!-- Start of 2025 notifications -->
+  <h4 class="usa-accordion__heading">
+    <button
+      type="button"
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="n-a8">2025</button>
+  </h4>
+  <div id="n-a8" class="usa-accordion__content usa-prose">
+    <div class="usa-width-one-whole">
+      {% for notification in site.data.fpkinotifications %}
+        {% assign nnd = notification.notice_date | split:" " %}
+        {% if nnd.last == '2025' %}
+        <ul class="usa-unstyled-list">
+          <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
+          <li><strong>System:</strong> {{ notification.system }} </li>
+          <li><strong>Type:</strong> {{ notification.change_type }} </li>
+          <li><strong>Change Description:</strong> {{ notification.change_description }} </li>
+          <li><strong>Contact:</strong> {{ notification.contact }}</li>
+          <li><strong>Certificate Issuer:</strong> {{ notification.ca_certificate_issuer }}</li>
+          <li><strong>Certificate Subject:</strong> {{ notification.ca_certificate_subject }}</li>
+          <li><strong>Certificate SHA1 Hash:</strong> {{ notification.ca_certificate_hash }}</li>
+          <li><strong>Certificate Revocation List:</strong> {{ notification.cdp_uri }}</li>
+          <li><strong>Certificate Bundle (AIA):</strong> {{ notification.aia_uri }}</li>
+          <li><strong>Certificate Bundle (SIA):</strong> {{ notification.sia_uri }}</li>
+          <li><strong>OCSP:</strong> {{ notification.ocsp_uri }}</li>
+          <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
+          <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
+        </ul>
+        <hr>
+        {% else %}
+          {% continue %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- end of 2025 notifications -->
   <!-- Start of 2024 notifications -->
   <h4 class="usa-accordion__heading">
     <button
@@ -658,7 +695,6 @@ Subject:  FPKI System Notification - System Name
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2024' %}
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -674,6 +710,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -695,7 +732,6 @@ Subject:  FPKI System Notification - System Name
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2023' %}
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -711,6 +747,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -732,7 +769,6 @@ Subject:  FPKI System Notification - System Name
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2022' %}
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -748,6 +784,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -769,7 +806,6 @@ Subject:  FPKI System Notification - System Name
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last == '2021' %}
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -785,6 +821,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
@@ -806,7 +843,6 @@ Subject:  FPKI System Notification - System Name
         {% assign nnd = notification.notice_date | split:" " %}
         {% if nnd.last < '2021' %}
         <ul class="usa-unstyled-list">
-          <hr>
           <li><strong>Notice Date: </strong>{{ notification.notice_date }} </li>
           <li><strong>System:</strong> {{ notification.system }} </li>
           <li><strong>Type:</strong> {{ notification.change_type }} </li>
@@ -822,6 +858,7 @@ Subject:  FPKI System Notification - System Name
           <li><strong>EE CRL DP:</strong> {{ notification.ee_cdp_uri }}</li>
           <li><strong>EE OCSP:</strong> {{ notification.ee_ocsp_uri }}</li>
         </ul>
+        <hr>
         {% else %}
           {% continue %}
         {% endif %}
