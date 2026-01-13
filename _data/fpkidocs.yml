@@ -10,6 +10,40 @@
 # 
 # Used on: https://www.idmanagement.gov/fpki/
 
+- category: Federal Bridge Certificate Policy
+  numberProposal: 3.8
+  name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.8
+  date: 12/16/2025
+  url: /docs/archived/fpki-x509-cert-policy-fbca-38.pdf
+  status: post
+  remove: 1/8/2029
+  
+- category: Federal Bridge Change Proposal
+  numberProposal: 2025-07
+  name: Proposal 2025-07 | Clarifications on Public Repository Requirements
+  description: Clarify that AIA and SIA materials in public repositories are encoded in binary (DER) format in alignment with established FPKI certificate profile documents.
+  date: 12/16/2025
+  url: /docs/archived/fpki-fbca-cp-2507.pdf
+  status: post
+  remove: 1/8/2029
+
+- category: Common Certificate Policy
+  numberProposal: 2.12
+  name: X.509 Certificate Policy For The U.S. FPKI Common Policy Framework v2.12
+  date: 12/16/2025
+  url: /docs/archived/fpki-x509-cert-policy-common-212.pdf
+  status: post
+  remove: 1/8/2029
+
+- category: Common Change Proposal
+  numberProposal: 2025-06
+  name: Proposal 2025-06 | Clarification on Public Repository Requirements and Changes to Authentication/Authorization for Delegated Digital Signature Certificates
+  description: Clarify that AIA and SIA materials in public repositories are encoded in binary (DER) format in alignment with established FPKI certificate profile documents. Define acceptable alternatives for authentication and authorization artifacts supporting issuance of a Delegated Digital Signature certificate in the event a role-holder is not available.
+  date: 12/16/2025
+  url: /docs/archived/fpki-common-cp-2506.pdf
+  status: post
+  remove: 1/8/2029
+
 - category: FPKIMA Audit Letter
   numberProposal: 2024
   name: FPKIMA Audit Letter 2024

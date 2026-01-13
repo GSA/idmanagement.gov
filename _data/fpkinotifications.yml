@@ -22,6 +22,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 
+- notice_date: January 6, 2026
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a new certificate to the CertiPath Bridge CA-G3 on 12/15/2025.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: cb6c8f8c34a176f38cb0cd92c84f708deda980a3
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=CertiPath Bridge CA-G3, OU=CAs, O=CertiPath, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.certipath.com/IssuedBy-CertiPathBridgeCA-G3.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: December 8, 2025
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4

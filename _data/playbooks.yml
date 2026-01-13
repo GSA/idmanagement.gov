@@ -36,7 +36,7 @@
 
 - title: Digital Identity Risk Assessment Playbook
   type: Webpage
-  pubdate: 2020-09
+  pubdate: 2025-06
   description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
   url: "/playbooks/dira/"
   header: "/assets/playbooks/headers/playbook_03.webp"
@@ -44,7 +44,7 @@
 
 - title: Digital Worker Identity Playbook
   type: Webpage
-  pubdate: 2022-12
+  pubdate: 2025-04
   description: The Digital Worker Identity Playbook is a practical guide for managing digital worker identities.
   url: "/playbooks/dw/"
   header: "/assets/playbooks/headers/playbook_05.webp"
@@ -52,7 +52,7 @@
 
 - title: Enterprise Single Sign-On Playbook
   type: Webpage
-  pubdate: 2021-11
+  pubdate: 2025-05
   description: The Enterprise SSO Playbook is a five-step playbook to aid agencies in planning an SSO or Identity Federation service.
   url: "/playbooks/sso/"
   header: "/assets/playbooks/headers/playbook_09.webp"
@@ -76,7 +76,7 @@
 
 - title: Identity Lifecycle Management Playbook
   type: Webpage
-  pubdate: 2024-18
+  pubdate: 2024-06
   description: This playbook can aid agencies in understanding how to shift the focus from managing the lifecycle of credentials to the lifecycle of identities outlined in section III of OMB Memo 19-17.
   url: "/playbooks/ilm/"
   header: "/assets/playbooks/headers/playbook_08.webp"
@@ -98,6 +98,7 @@
   header: "/assets/playbooks/headers/playbook_01.webp"
   target: _self
 
+# Redirect created in /redirects to send users to the Digitally Sign a 
 # - title: Digitally Sign a Federal Register Document
 #   type: Webpage
 #   pubdate: 2022-08
