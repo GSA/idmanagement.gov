@@ -481,7 +481,7 @@ In summary, identity proofing is a multifaceted process that combines various me
 
 ### References
 
-1. [https://login.gov/docs/login-gov-roadmap-dec-2024.pdf](https://login.gov/docs/login-gov-roadmap-dec-2024.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+1. [https://login.gov/docs/login-gov-roadmap-dec-2025.pdf](https://login.gov/docs/login-gov-roadmap-dec-2025.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 2. [https://pages.nist.gov/800-63-3-Implementation-Resources/63A/](https://pages.nist.gov/800-63-3-Implementation-Resources/63A/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  
 3. [https://www.cbpp.org/research/health/remote-identity-proofing-better-solutions-needed-to-ensure-equitable-access](https://www.cbpp.org/research/health/remote-identity-proofing-better-solutions-needed-to-ensure-equitable-access){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [https://www.voteriders.org/wp-content/uploads/2023/04/CDCE\_VoteRiders\_ANES2020Report\_Spring2023.pdf](https://www.voteriders.org/wp-content/uploads/2023/04/CDCE_VoteRiders_ANES2020Report_Spring2023.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
