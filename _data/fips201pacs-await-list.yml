@@ -29,7 +29,7 @@
 #   state: Update
 #   teststatus: In queue
 # removed on 01-14-2026 per Nick
-# - position: 1
+# - position: 2
 #   solution: Gallagher PIV Command Centre vEL9.20 + HID pivCLASS 5.31.0
 #   aplnumbers: 10019 & 10020
 #   state: Update
