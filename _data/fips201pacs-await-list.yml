@@ -39,13 +39,13 @@
   solution: LenelS2 OnGuard 8.3 + HID pivCLASS 5.32.0
   aplnumbers: 10112 & 10113
   state: Update
-  teststatus: In queue
+  teststatus: In-Progress
 
 - position: 2
   solution: Honeywell Pro-Watch 6.5.2 + HID pivCLASS 5.33
   aplnumbers: 10063 & 10064
   state: Update
-  teststatus: In queue
+  teststatus: In-Progress
 
 - position: 3
   solution: AccessNsite 7.9 + HID pivCLASS 5.32.0
