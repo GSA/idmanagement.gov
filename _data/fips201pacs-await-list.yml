@@ -22,31 +22,32 @@
 #
 # Note: for some strings, double ("") quotes are sometimes needed.
 
-- position: 1
-  solution: AMAG Symmetry Professional 9.8 + HID pivCLASS 5.30.84
-  aplnumbers: 10047 & 10048
-  state: Update
-  teststatus: In queue
+# removed on 01-14-2026 per Nick
+# - position: 1
+#   solution: AMAG Symmetry Professional 9.8 + HID pivCLASS 5.30.84
+#   aplnumbers: 10047 & 10048
+#   state: Update
+#   teststatus: In queue
+# removed on 01-14-2026 per Nick
+# - position: 2
+#   solution: Gallagher PIV Command Centre vEL9.20 + HID pivCLASS 5.31.0
+#   aplnumbers: 10019 & 10020
+#   state: Update
+#   teststatus: In queue
 
-- position: 2
-  solution: Gallagher PIV Command Centre vEL9.20 + HID pivCLASS 5.31.0
-  aplnumbers: 10019 & 10020
-  state: Update
-  teststatus: In queue
-
-- position: 3
+- position: 1 
   solution: LenelS2 OnGuard 8.3 + HID pivCLASS 5.32.0
   aplnumbers: 10112 & 10113
   state: Update
-  teststatus: In queue
+  teststatus: In-Progress
 
-- position: 4
+- position: 2
   solution: Honeywell Pro-Watch 6.5.2 + HID pivCLASS 5.33
   aplnumbers: 10063 & 10064
   state: Update
-  teststatus: In queue
+  teststatus: In-Progress
 
-- position: 5
+- position: 3
   solution: AccessNsite 7.9 + HID pivCLASS 5.32.0
   aplnumbers: 10043 & 10044
   state: Update

@@ -19,10 +19,10 @@
 
 - category: 13.01
   fipsstatus: Approved
-  infrastructure: AMAG Symmetry Professional v9.3
+  infrastructure: AMAG Symmetry Professional v9.8
   infraurl: /docs/apl-10047-symmetry.pdf
   infraapl: 10047
-  validation: HID Global Validation System for AMAG Symmetry Professional v9.3
+  validation: HID Global Validation System for AMAG Symmetry Professional v9.8
   valurl: /docs/apl-10048-amag.pdf
   valapl: 10048
   reader1: pivCLASS RKCLB40 Contact/Contactless Reader + PIN + BIO
