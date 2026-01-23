@@ -24,6 +24,21 @@
 
 - notice_date: January 13, 2026
   change_type: Intent to issue a CA Certificate
+  system: U.S. Department of Health and Human Services - HHS FPKI Intermediate CA E1
+  change_description: The Entrust Managed Services Root CA issued a new certificate on hold to the HHS FPKI Intermediate CA E1 on 01/08/2026 and will complete key update on a date TBD.
+  contact: support at entrust dot com
+  ca_certificate_hash: 07B025B237400A87182B30D6233C7A6C6A472D9D
+  ca_certificate_issuer: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  ca_certificate_subject: CN=HHS-FPKI-Intermediate-CA-E1, OU=Certification Authorities, OU=HHS, O=U.S. Government, C=US 
+  cdp_uri: http://rootweb.managed.entrust.com/CRLs/EMSRootCA4.crl
+  aia_uri: http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.managed.entrust.com/OCSP/EMSRootCAResponder
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: January 13, 2026
+  change_type: Intent to issue a CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 will issue a new certificate to the DoD Interoperability Root CA 2 between 01/21/2026 and 01/27/2026.
   contact: fpki dash help at gsa.gov
