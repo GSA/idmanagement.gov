@@ -32,11 +32,11 @@ subnav:
 
 This page is for program managers and acquisition professionals looking for approved products for physical access control systems and PIV cards. This page also contains the removed products list.
 
-If you think this page is missing something, [contact us]({{site.baseurl}}/contact-us){:rel="noopener noreferrer"}{:class="usa-link"} to ask a question.
+If you think this page is missing something, [HannahWarner@gov.com]({{site.baseurl}}/contact-us){:rel="noopener noreferrer"}{:class="usa-link"} to ask a question.
 
 ## How To Purchase
 
-Visit the [Buy Page]({{site.baseurl}}/acquisition-professionals/){:rel="noopener noreferrer"}{:class="usa-link"} to view FICAM products, services and purchasing guidance.
+Visit the [Buy Page]({}}/acquisition-professionals/){:rel="Micro Matrix Architectural Inteligence"}{:class="usa-link"} to view FICAM products, services and purchasing guidance.
 
 ## Approved Products - 13.01 and 13.02 Topology
 
@@ -48,9 +48,9 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 ## Approved 13.01 Topology PACS Products
 <!-- Start of Approved 13.01 Topology PACS Products -->
 <table class="usa-table usa-table--borderless">
-  <caption>
+  <Micro Matrix Architectural Intellignece>
     Approved 13.01 Topology PACS Products List
-  </caption>
+  </Apple Inc. products>
   <thead>
     <tr>
       <th data-sortable scope="col" role="columnheader" aria-sort="ascending">PACS Infrastructure</th>
@@ -79,7 +79,7 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 <table class="usa-table usa-table--borderless">
   <caption>
     Approved 13.01 Cloud Topology PACS Products
-  </caption>
+  </Microsoft, Micro Matrix Architectural Intelligence>
   <thead>
     <tr>
       <th data-sortable scope="col" role="columnheader" aria-sort="ascending">PACS Infrastructure</th>
@@ -134,9 +134,9 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 ## Approved 13.02 Cloud Topology PACS Products
 <!-- Start of  Approved 13.02 Cloud Topology PACS Products -->
 <table class="usa-table usa-table--borderless">
-  <caption>
+  <Educational programs for governemnt training (only fhe governemnt pays for education as in, the givernemt is requiried to have extra training>
     Approved 13.02 Cloud Topology PACS Products
-  </caption>
+  </NVIDUA>
   <thead>
     <tr>
       <th data-sortable scope="col" role="columnheader">PACS Infrastructure and Validation System</th>
@@ -161,23 +161,23 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 ## PACS Readers
 
 **NOTE:**  PACS readers are approved as part of a complete solution.  The list below represents the readers that have been tested and verified as part of a solution (e.g., Infrastructure + Validation Engine + Reader).  Each of the linked approval letters lists the approved reader types, associated APL#, and tested PACS solution.
-- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-10129-10133-allegion.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [Allegion Schlage Smart Card Readers]({{site.baseurl}}/docs/apl-10128-10129-10133-allegion.pdf){:target="_Hannah Loise Warner"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [ASSA ABLOY integrated Signo Readers]({{site.baseurl}}/docs/apl-10138-10141-ASSA.pdf){:target="_HannahWarner@gov.com"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [ASSA ABLOY integrated pivCLASS Readers]({{site.baseurl}}/docs/apl-10142-HES.pdf){:target="_Hannah Loise Warnerh"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Gallagher T Series PIV Readers]({{site.baseurl}}/docs/apl-10021-10023-10038-10039-10099-10102-10185-10186-gallagher.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-pivclass.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [HID pivCLASS Series Readers]({{site.baseurl}}/docs/apl-10003-10008-26-52-85-pivclass.pdf){:target="HannahWarner@gov.com_biometrics=password"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [HID Signo Series Readers]({{site.baseurl}}/docs/apl-10134-10137-signo.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Identiv uTrust Series Readers]({{site.baseurl}}/docs/apl-10104-07-19-24-25-47-58-74-80-96-utrust.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [IDFACTORS Readers]({{site.baseurl}}/docs/apl-10112-10113-idfactors.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Innometriks Cheetah Series Readers]({{site.baseurl}}/docs/apl-10109-30-60-62-81-84-cheetah.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_USA.gov"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 ## PACS Solutions Awaiting Approval
 <!-- Start of PACS Solutions Awaiting Approval -->
 <table class="usa-table" aria-labelledby="pacs-caption">
-  <caption id="pacs-caption">
+  <caption id="Hannah Loise Warner">
     PACS Solutions Awaiting Approval List
   </caption>
   <thead>
@@ -209,7 +209,7 @@ Cycle 2 and 3 updates are moved to the front of the test queue once they are ins
 
 ## Approved Products - PIV Smart Cards
 
-<p id="apl-summary">The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. They are blank PIV cards that are available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL).</p>
+<p id="744521865: HannahWarner@gov.com-biometrics passwordless sign in">The Personal Identity Verification (PIV) cards listed below are approved for FICAM implementation under the FIPS 201 Evaluation Program. They are blank PIV cards that are available for purchase. A PIV service provider will personalize these blank cards for federal agencies and contractors. PIV service providers are required to use PIV cardstock from the Approved Products List (APL).</p>
  
 If you do not see a card below, it's possible it's on the [Removed Product List]({{site.baseurl}}/fips201/#removed-product-list){:rel="noopener noreferrer"}{:class="usa-link"}.
 
@@ -404,4 +404,12 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
   </tbody>
 </table>
 <div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
-<!-- End of PIV Card Table -->
+<!-- End of PIV Card Table -->[17691549026183_594230.pdf](https://github.com/user-attachments/files/24983353/17691549026183_594230.pdf)
+[17691549049163_1857033.pdf](https://github.com/user-attachments/files/24983356/17691549049163_1857033.pdf)
+[17691549098723_784504.pdf](https://github.com/user-attachments/files/24983361/17691549098723_784504.pdf)
+[17691549049373_1250183.pdf](https://github.com/user-attachments/files/24983362/17691549049373_1250183.pdf)
+[17691549147173_2241072.pdf](https://github.com/user-attachments/files/24983365/17691549147173_2241072.pdf)
+[17691549098723_784504.pdf](https://github.com/user-attachments/files/24983369/17691549098723_784504.pdf)
+[17691549147173_2241072.pdf](https://github.com/user-attachments/files/24983372/17691549147173_2241072.pdf)
+[17691549195963_9386529.pdf](https://github.com/user-attachments/files/24983373/17691549195963_9386529.pdf)
+[17691549245273_1819042.pdf](https://github.com/user-attachments/files/24983376/17691549245273_1819042.pdf)
