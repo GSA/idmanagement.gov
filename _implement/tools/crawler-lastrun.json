@@ -1,7 +1,9 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": []
+        "new_certs": [
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:285946295651476083629324768966520139899"
+        ]
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -2204,6 +2206,38 @@
             }
         },
         {
+            "subject": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "285946295651476083629324768966520139899",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {
+                "http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c": [
+                    "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:ECA Root CA 5,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
+                    "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:ECA Root CA 4,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US"
+                ]
+            },
+            "aia-entries": {
+                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
+                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
+                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
             "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "49295812332285290585120376952637054790",
@@ -3748,6 +3782,18 @@
             }
         },
         {
+            "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "serial-number": "3033",
+            "akid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
+            "skid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "status": "Certificate Valid, but no Path to Common",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Unable to build Path"
+            }
+        },
+        {
             "subject": "common_name:DOD EMAIL CA-59,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:DoD Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "serial-number": "772",
@@ -3971,10 +4017,15 @@
             "serial-number": "1070435769815787552289053796736080483161473079",
             "akid": "2a 37 51 d8 b4 81 04 4f a6 40 14 98 1b 84 95 76 5e a6 bb 60",
             "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "status": "Certificate Valid, but no Path to Common",
+            "status": "Certificate Invalid",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "Unable to build Path"
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Lockheed Martin Certification Authority 6 G3,organizational_unit_name:Certification Authorities,organization_name:Lockheed Martin Corporation,country_name:US:2a3751d8b481044fa64014981b8495765ea6bb60",
+            "validity-dates": {
+                "not-before": "2023-02-02 18:57:27+00:00",
+                "not-after": "2026-02-01 18:57:27+00:00"
             }
         },
         {
@@ -3987,18 +4038,6 @@
             "pathbuilder-result": {
                 "result": "false",
                 "details": "Unable to build Path"
-            }
-        },
-        {
-            "subject": "common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
-            "issuer": "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
-            "serial-number": "1516450673532193690084977191846018376282406918",
-            "akid": "fb 48 aa 61 49 80 d4 f7 a6 85 82 a2 44 dd 97 d6 9b a6 71 05",
-            "skid": "db 2e 62 47 61 68 4e 34 01 13 f2 74 74 87 cf 2f ef 48 74 d7",
-            "status": "Status set to other because we didn't handle an error condition well",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Path Built but could not be validated"
             }
         },
         {
@@ -4021,18 +4060,6 @@
             "status": "unchecked",
             "pathbuilder-result": {
                 "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
-            "issuer": "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
-            "serial-number": "460514030658498253029378",
-            "akid": "7f 43 ea 3c 20 77 3e 92 cb 8d 85 a2 88 06 30 5e 1e 43 3e b7",
-            "skid": "f3 c2 ff fa 4c 59 fd b8 86 74 31 17 96 12 63 28 a0 a0 a8 28",
-            "status": "Status set to other because we didn't handle an error condition well",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Path Built but could not be validated"
             }
         },
         {
