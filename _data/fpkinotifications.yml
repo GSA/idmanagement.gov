@@ -52,7 +52,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: http://pub.carillon.ca/CISCA1-ocsp
 
-- notice_date: February 5, 2025
+- notice_date: February 5, 2026
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA
   change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Carillon PKI Services G2 Root CA 2 between February 17 and February 28.
@@ -67,7 +67,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: http://pub.carillon.ca/CISCA2-ocsp
   
-- notice_date: February 5, 2025
+- notice_date: February 5, 2026
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA
   change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Ministerie van Defensie PKIoverheid Organisatie Persoon CA – G3 between February 17 and February 28.
@@ -82,7 +82,7 @@
   ee_cdp_uri: N/A
   ee_ocsp_uri: N/A
   
-- notice_date: February 5, 2025
+- notice_date: February 5, 2026
   change_type: Intent to Issue CA Certificate
   system: CertiPath Bridge CA
   change_description: The CertiPath Bridge CA-G3 plans to issue a renewed cross certificate to the Northrop Grumman Corporate Root CA-G2 between February 17 and February 28.
