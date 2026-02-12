@@ -3997,18 +3997,6 @@
             }
         },
         {
-            "subject": "common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
-            "issuer": "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
-            "serial-number": "1516450673532193690084977191846018376282406918",
-            "akid": "fb 48 aa 61 49 80 d4 f7 a6 85 82 a2 44 dd 97 d6 9b a6 71 05",
-            "skid": "db 2e 62 47 61 68 4e 34 01 13 f2 74 74 87 cf 2f ef 48 74 d7",
-            "status": "Status set to other because we didn't handle an error condition well",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Path Built but could not be validated"
-            }
-        },
-        {
             "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "issuer": "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
             "serial-number": "1850961851696815824028221940352654997540831274",
@@ -4028,18 +4016,6 @@
             "status": "unchecked",
             "pathbuilder-result": {
                 "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
-            "issuer": "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
-            "serial-number": "460514030658498253029378",
-            "akid": "7f 43 ea 3c 20 77 3e 92 cb 8d 85 a2 88 06 30 5e 1e 43 3e b7",
-            "skid": "f3 c2 ff fa 4c 59 fd b8 86 74 31 17 96 12 63 28 a0 a0 a8 28",
-            "status": "Status set to other because we didn't handle an error condition well",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "Path Built but could not be validated"
             }
         },
         {
