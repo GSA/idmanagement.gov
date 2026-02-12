@@ -41,17 +41,48 @@
   state: Update
   teststatus: In-Progress
 
-- position: 2
+- position: 2 
   solution: Honeywell Pro-Watch 6.5.2 + HID pivCLASS 5.33
   aplnumbers: 10063 & 10064
   state: Update
   teststatus: In-Progress
 
-- position: 3
+- position: 3 
   solution: AccessNsite 7.9 + HID pivCLASS 5.32.0
   aplnumbers: 10043 & 10044
-  state: Update
+  state: New
+  teststatus: In-Progress
+
+- position: 4 
+  solution: Motorola - Avigilon
+  aplnumbers: New
+  state: New
   teststatus: In queue
+
+- position: 5 
+  solution: Software House - CCURE pivClass
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
+- position: 6 
+  solution: Siemens Government Technologies - SiPass
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
+- position: 7 
+  solution: Galaxy Systems
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
+- position: 8 
+  solution: HIRSCH Secure (Formerly Identiv)
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
     
 
 
