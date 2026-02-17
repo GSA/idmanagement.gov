@@ -16,10 +16,18 @@ subnav:
     href: '#why-windows-hello-for-business'
   - text: Prerequisites
     href: '#prerequisites'
+  - text: NIST 800-63 DIRM Requirements
+    href: '#nist-800-63-digital-identity-risk-management-dirm'
+  - text: AAL Compliance Mapping
+    href: '#nist-800-63b-authentication-assurance-level-compliance'
   - text: Prepare users to use WHfB
     href: '#prepare-users-to-use-windows-hello'
+  - text: Accessibility Requirements
+    href: '#accessibility-and-inclusive-design-requirements'
   - text: Policy configuration
     href: '#whfb-policy-configuration'
+  - text: User Support Procedures
+    href: '#user-support-and-redress-procedures'
   - text: Device enrollment configuration steps
     href: '#whfb-device-enrollment-configuration-steps'
   - text: Device configuration profile steps
@@ -36,15 +44,16 @@ subnav:
     href: '#windows-security-key-setup'
   - text: WHfB FAQs
     href: '#windows-hello-for-business-faqs'
+  - text: Continuous Monitoring
+    href: '#continuous-monitoring-and-performance-evaluation'
 
 ---
 
-<!-- Version 1.1<br>
-August 14, 2023 -->
 
+<!-- Version 1.2<br>
+[Current Date] -->
 <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" width="64" height='64' align="left" alt="U.S. General Services Administration Logo">
 <br><br><br>
-
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="vtbl1">
@@ -69,6 +78,13 @@ August 14, 2023 -->
       </thead>
       <tr>
         <th scope='row'>
+          1.2
+        </th>
+        <td>02/17/2026</td>
+        <td>Add NIST 800-63 compliance requirements, DIRM process, AAL mapping, accessibility guidelines, user support procedures, and continuous monitoring framework.</td>
+      </tr>
+      <tr>
+        <th scope='row'>
           1.1
         </th>
         <td>08/14/2023</td>
@@ -87,10 +103,25 @@ August 14, 2023 -->
 
 <!-- | Version Number | Date | Change Description |
 | :----------: | :-------: | -------- |
+| 1.2 | 02/17/2026 | Add NIST 800-63 compliance requirements, DIRM process, AAL mapping, accessibility guidelines, user support procedures, and continuous monitoring framework. |
 | 1.1 | 08/14/2023 | Remove security key as an option. Add a "why" section and lessons learned. |
 | 1.0 | 05/25/2023 | Initial Draft. | -->
 
-The purpose of this playbook is to guide ICAM program managers and Microsoft Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Microsoft Entra ID. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. WHfB offers two-factor authentication by combining a device authenticator (something you have) and either a PIN (something you know) or a biometric (something you are).
+The purpose of this playbook is to guide ICAM program managers and Microsoft Entra ID administrators through planning, configuring, testing, and implementing a **Windows Hello for Business (WHfB) configuration when devices are cloud-joined**. WHfB also allows design for hybrid-joined devices. Hybrid-joined relies on either a 3rd party mobile device manager or Windows devices managed through an on-premise Microsoft Entra ID. This configuration can be more complex and architecture-specific. Due to this, the playbook only covers a cloud-join configuration. 
+
+**_NIST 800-63 COMPLIANCE NOTICE:_**
+- Windows Hello for Business provides single-factor cryptographic authentication that meets Authentication Assurance Level 1 (AAL1) requirements under NIST 800-63B.
+ 
+**Authentication Factor Classification:**
+- WHfB uses cryptographic proof of possession (single factor)
+- PIN/biometric serves as local activation factor only
+- For AAL2 compliance (multi-factor authentication), WHfB MUST be combined with an additional independent authentication factor
+
+**Multi-Factor Authentication Requirements:**
+- AAL2: WHfB + SMS, push notification, or authenticator app
+- AAL3: WHfB + hardware security key or additional cryptographic authenticator
+
+See Section [NIST 800-63B Authentication Assurance Level Compliance](#nist-800-63b-authentication-assurance-level-compliance) for complete AAL compliance mapping and configuration guidance.
 
 ## Why Windows Hello for Business
 
@@ -147,6 +178,62 @@ For cloud-joined deployment, this playbook assumes that:
 - Microsoft Intune (Intune) is the Windows MDM solution.
 - Not required, but it's preferable that all users have an Microsoft Entra Premium P1 or P2 subscription, which is needed for automatic MDM enrollment when the device joins Entra ID. Microsoft Entra Premium P1 licenses also grant access to Microsoft Entra multifactor authentication (MFA) through Conditional Access policies.
 
+## NIST 800-63 Digital Identity Risk Management (DIRM)
+
+**MANDATORY REQUIREMENT:** Federal agencies SHALL complete the DIRM process before implementing WHfB per NIST 800-63 Section 3.
+
+### Step 1: Define the Online Service
+Document the following for each service using WHfB:
+- ☐ Organizational mission and business objectives
+- ☐ User groups and their transaction privileges
+- ☐ Data processed by the online service
+- ☐ Entities impacted by service compromise
+- ☐ Legal and regulatory requirements
+
+### Step 2: Conduct Initial Impact Assessment
+Assess potential harm if unauthorized users gain access through compromised WHfB:
+- ☐ Degradation of mission delivery (Low/Moderate/High)
+- ☐ Damage to trust, standing, or reputation (Low/Moderate/High)
+- ☐ Unauthorized access to information (Low/Moderate/High)
+- ☐ Financial loss or liability (Low/Moderate/High)
+- ☐ Loss of life or danger to safety (Low/Moderate/High)
+
+### Step 3: Select Initial Assurance Levels
+- Low Impact = AAL1 (WHfB alone may be sufficient)
+- Moderate Impact = AAL2 (WHfB + additional factor required)
+- High Impact = AAL3 (WHfB + hardware security key)
+
+### Step 4: Tailoring Assessment
+Evaluate and document:
+- ☐ Privacy impacts of biometric collection
+- ☐ Customer experience barriers
+- ☐ Threat resistance against specific attack vectors
+- ☐ Compensating controls if needed
+- ☐ Supplemental controls for enhanced protection
+
+### Step 5: Create Digital Identity Acceptance Statement (DIAS)
+**Document:**
+- ☐ Impact assessment results
+- ☐ Selected AAL with rationale
+- ☐ Tailoring decisions and compensating controls
+- ☐ Continuous evaluation plan
+
+**DIRM Documentation Template:**
+
+**[Organization Name] Digital Identity Acceptance Statement**
+
+**Service:** _______________
+
+**Impact Assessment:** _______________
+
+**Selected AAL:** _______________
+
+**Rationale:** _______________
+
+**Tailoring Decisions:** _______________
+
+**Approval:** _______________ **Date:** _______________
+
 ## Technology and terms
 
 See this Microsoft primer on [Introduction to device identity and join types](https://learn.microsoft.com/en-us/azure/active-directory/devices/overview){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
@@ -190,6 +277,45 @@ Learn more about [Microsoft Entra Hybrid joined devices](https://learn.microsoft
 
 Device management enables organizations to administer and maintain devices, including virtual machines, physical computers, mobile devices, and IoT devices. Microsoft Intune is the mobile device management (MDM) solution for the Microsoft 365 platform.
 
+## NIST 800-63B Authentication Assurance Level Compliance
+
+### AAL Compliance Matrix
+
+| Assurance Level | WHfB Configuration | Additional Requirements | Use Cases |
+|---|---|---|---|
+| AAL1 | WHfB with PIN or biometric | None | Basic access, low-impact systems |
+| AAL2 | WHfB with PIN or biometric | SMS, push notification, or app | Personal data access, moderate-impact |
+| AAL3 | WHfB with PIN or biometric | Hardware security key | High-impact, classified systems |
+
+### Configuration Requirements by AAL
+
+**AAL1 Configuration (Current WHfB Standard):**
+- TPM 2.0 required
+- Minimum PIN length: 6 characters
+- Enhanced anti-spoofing enabled
+- Biometric authentication optional
+
+**AAL2 Configuration (Multi-Factor Required):**
+- All AAL1 requirements PLUS:
+- Azure AD Conditional Access requiring additional verification
+- Microsoft Authenticator app or SMS backup
+- Risk-based authentication policies
+
+**AAL3 Configuration (Highest Security):**
+- All AAL2 requirements PLUS:
+- Hardware security key (FIDO2) required
+- Phishing-resistant verification only
+- Enhanced monitoring and logging
+
+### Policy Configuration Examples
+
+For AAL2 Compliance in Azure AD:
+1. Create Conditional Access policy
+2. Require "Require multi-factor authentication"
+3. Include WHfB as primary method
+4. Require secondary verification method
+5. Apply to user groups based on risk assessment
+
 ## Prepare users to use Windows Hello
 
 ### Using Windows Hello and biometrics
@@ -228,6 +354,48 @@ Suppose you sign in on  **Device B**  and change your password for your Microsof
 4. Select  **Password.**
 5. Sign in with new password.
 6. The next time that you sign in, you can select  **Sign-in options \> PIN**  to resume using your PIN.
+
+### Accessibility and Inclusive Design Requirements
+
+**Alternative Authentication Methods**
+
+Organizations SHALL provide alternatives for users who cannot use biometric authentication:
+
+**For Users with Visual Impairments:**
+- PIN-only authentication option
+- Screen reader compatibility verification
+- Voice-guided setup instructions
+- High-contrast setup interfaces
+
+**For Users with Motor Impairments:**
+- Extended PIN entry timeouts
+- Alternative PIN input methods
+- Larger touch targets for setup
+- Voice activation options where available
+
+**For Users with Cognitive Disabilities:**
+- Simplified setup procedures
+- Multiple setup attempt allowances
+- Clear, plain-language instructions
+- Human assistance options
+
+**Device Accommodation Requirements**
+- ☐ Verify assistive technology compatibility
+- ☐ Test with screen readers (NVDA, JAWS)
+- ☐ Ensure keyboard-only navigation
+- ☐ Provide alternative input devices support
+
+**Digital Equity Considerations**
+- Consider users without personal smartphones for MFA
+- Provide institutional devices for enrollment if needed
+- Offer multiple enrollment locations
+- Account for varying technology literacy levels
+
+**Implementation Checklist:**
+- ☐ Accessibility testing completed
+- ☐ Alternative authentication methods configured
+- ☐ User training materials in accessible formats
+- ☐ Help desk trained on accessibility accommodations
 
 ## WHfB policy configuration
 
@@ -498,7 +666,57 @@ Select  **Next**  to continue.
 
 ![Figure 13: Windows Hello for Business Configuration Profile Completion]({{site.baseurl}}/assets/playbooks/whfb/13-Intune-WHfB-ConfigProfile-review.png)
 
+## User Support and Redress Procedures
 
+### Account Recovery Processes
+
+**PIN Recovery:**
+- User reports PIN forgotten to help desk
+- Verify user identity through alternative method
+- Initiate PIN reset via Intune device action
+- User re-enrolls PIN on next sign-in
+- Document incident for trend analysis
+
+**Biometric Recovery:**
+- User reports biometric not working
+- Troubleshoot hardware and software issues
+- If unresolvable, enable PIN-only authentication
+- Re-enroll biometrics when issue resolved
+- Track for pattern identification
+
+**Device Replacement:**
+- User receives new device
+- Old device WHfB credentials automatically invalidated
+- User re-enrolls WHfB on new device
+- Verify successful authentication
+- Update device inventory records
+
+### Help Desk Procedures
+
+**Tier 1 Support (Basic Issues):**
+- PIN reset assistance
+- Biometric re-enrollment guidance
+- Basic troubleshooting steps
+- Escalation criteria definition
+
+**Tier 2 Support (Complex Issues):**
+- Device policy troubleshooting
+- Azure AD integration issues
+- Hardware compatibility problems
+- Privacy concern resolution
+
+### Human Oversight Requirements
+- ☐ All automated lockouts reviewed by human within 24 hours
+- ☐ Fraud indicators investigated by security team
+- ☐ Privacy complaints escalated to privacy officer
+- ☐ Accessibility issues addressed by specialized support
+
+**Redress Documentation:**
+- Issue tracking system integration
+- Resolution time targets (4 hours for urgent, 24 hours for standard)
+- User satisfaction follow-up
+- Root cause analysis for recurring issues
+  
 ## WHfB user experience
 
 This section details the user experience for setting up Windows Hello for Business. The minimum device requirements for fingerprint and facial recognition sensors can be found [here](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}{:aria-label="The minimum device requirements for fingerprint and facial recognition sensors can be found here"}.
@@ -833,3 +1051,37 @@ Windows Hello for Business is two-factor authentication based on the observed au
 **Can I use both a PIN and biometrics to unlock my device?**
 
 You can use _multi-factor unlock_ to require users to provide an extra factor to unlock their device. Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop. To learn more, see [Multi-factor unlock](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/feature-multifactor-unlock){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+
+## Continuous Monitoring and Performance Evaluation
+
+### Required Performance Metrics (NIST 800-63 Table 4)
+
+**Authentication Metrics:**
+- Authentication failure rate: Target <5%
+- Account lockout incidents: Monthly tracking
+- PIN reset requests: Weekly monitoring
+- Biometric enrollment success rate: Target >90%
+
+**User Experience Metrics:**
+- Setup completion time: Target <10 minutes
+- Help desk calls related to WHfB: Monthly count
+- User satisfaction surveys: Quarterly collection
+- Abandonment rate during enrollment: Target <15%
+
+**Security Metrics:**
+- Suspected fraud incidents: Real-time monitoring
+- Confirmed unauthorized access: Immediate investigation
+- Policy violation attempts: Daily review
+- Security control effectiveness: Annual assessment
+
+### Monitoring Implementation
+1. Configure Azure AD sign-in logs analysis
+2. Set up automated alerts for failure thresholds
+3. Establish monthly metric reporting
+4. Create user feedback collection mechanism
+
+### Evaluation Process
+- ☐ Monthly metric review meetings
+- ☐ Quarterly user experience assessment
+- ☐ Annual threat landscape evaluation
+- ☐ Bi-annual policy effectiveness review
