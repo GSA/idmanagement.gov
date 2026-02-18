@@ -8,8 +8,8 @@ description: Windows Hello for Business (WHfB) is a playbook to guide administra
 sidenav: implement
 sticky_sidenav: true
 
-version: 1.1
-pubdate: August 14, 2023
+version: 1.2
+pubdate: February 17, 2023
 
 subnav:
   - text: Why Windows Hello for Business
