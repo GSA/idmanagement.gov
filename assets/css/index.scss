@@ -473,10 +473,6 @@
     display: none;
   }
 
-  .gsa-logo {
-    height: 50%;
-  }
-
 }
 
 @media (max-width: 1024px) {
@@ -503,6 +499,11 @@
   // attempt to fix mobile after update of uswds 3.11.0 - CJB
   .gsa-mobile {
     display: none;
+  }
+
+  .gsa-logo {
+    height: auto;
+    padding: 3px;
   }
 
 }
