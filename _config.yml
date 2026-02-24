@@ -67,7 +67,7 @@ primary_navigation:
         url: /implement/
       - name: Enterprise Trust of the FCPCA
         url: /implement/trust-fcpca/
-      - name: Smart Card Logon for Operating Systems
+      - name: Smart Card Logon For Windows Domains
         url: /implement/scl-windows/
       - name: Certificate-based Authentication for Cloud
         url: /implement/cba-azure/
