@@ -31,7 +31,7 @@ partners:
 implement:
   - text: Introduction
     href: /implement/
-  - text: Enable Trust for the FCPCA
+  - text: Enterprise Trust of the FCPCA
     href: /implement/trust-fcpca/
   - text: Smart Card Logon For Windows Domains
     href: /implement/scl-windows/
@@ -41,9 +41,9 @@ implement:
     href: /implement/scl-ssh/
   - text: Smart Card Logon for Firefox
     href: /implement/scl-firefox/
-  - text: Windows Hello for Business for Azure
+  - text: Windows Hello for Business
     href: /implement/whfb/
-  - text: Certificate-Based Authentication for Azure
+  - text: Certificate-Based Authentication
     href: /implement/cba-azure/
   - text: Sign and Encrypt Email in Outlook
     href: /implement/outlook/
@@ -55,7 +55,7 @@ implement:
     href: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
   - text: Okta Yubikey Implementation Guide
     href: /implement/yubikey-guide/
-  - text: Unifyia Implementation Guide for Passkeys (FIDO2)
+  - text: GSA Implementation Guide for Passkeys (FIDO2)
     href: /implement/unifyia-guide/
 
     
