@@ -75,6 +75,8 @@ primary_navigation:
         url: /implement/scl-ssh/
       - name: Smart Card Logon for Firefox
         url: /implement/scl-firefox/
+      - name: Windows Hello for Business
+        url: /implement/whfb/
       - name: Certificate-based Authentication for Cloud
         url: /implement/cba-azure/
       - name: Use Smart Cards with Applications
