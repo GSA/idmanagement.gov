@@ -43,7 +43,7 @@ implement:
     href: /implement/scl-firefox/
   - text: Windows Hello for Business
     href: /implement/whfb/
-  - text: Certificate-Based Authentication for Azure
+  - text: Certificate-Based Authentication
     href: /implement/cba-azure/
   - text: Sign and Encrypt Email in Outlook
     href: /implement/outlook/

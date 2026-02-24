@@ -77,7 +77,7 @@ primary_navigation:
         url: /implement/scl-firefox/
       - name: Windows Hello for Business
         url: /implement/whfb/
-      - name: Certificate-based Authentication for Cloud
+      - name: Certificate-based Authentication
         url: /implement/cba-azure/
       - name: Use Smart Cards with Applications
         url: /implement/outlook/
