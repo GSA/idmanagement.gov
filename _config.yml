@@ -70,7 +70,7 @@ primary_navigation:
       - name: Smart Card Logon For Windows Domains
         url: /implement/scl-windows/
       - name: Smart Card Logon for MacOS
-        href: /implement/scl-macos/
+        url: /implement/scl-macos/
       - name: Certificate-based Authentication for Cloud
         url: /implement/cba-azure/
       - name: Use Smart Cards with Applications
