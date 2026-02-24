@@ -25,15 +25,15 @@
   doctype: Announcement
   status: Active
 
-- name: "GSA FICAM Test Lab's 2024 Holiday Schedule" 
-  summary: "<p>The GSA FICAM Testing Lab in Reston, VA will have limited in-person availability from Monday, December 23, 2024, through Thursday, January 2, 2025. As a result, no appointments will be scheduled during this time. Vendors are kindly asked to schedule any in-person visits by Friday, December 20, 2024, to ensure that lab personnel can accommodate requests and provide assistance before December 23, 2024.<br><br>We appreciate your understanding and patience.<br>Thank you.</p>"
-  pubdate: December 16, 2024
-  url: 
-  source: IDManagement.gov
-  target: _blank
-  expanded: false
-  doctype: Announcement
-  status: Active
+# - name: "GSA FICAM Test Lab's 2024 Holiday Schedule" 
+#   summary: "<p>The GSA FICAM Testing Lab in Reston, VA will have limited in-person availability from Monday, December 23, 2024, through Thursday, January 2, 2025. As a result, no appointments will be scheduled during this time. Vendors are kindly asked to schedule any in-person visits by Friday, December 20, 2024, to ensure that lab personnel can accommodate requests and provide assistance before December 23, 2024.<br><br>We appreciate your understanding and patience.<br>Thank you.</p>"
+#   pubdate: December 16, 2024
+#   url: 
+#   source: IDManagement.gov
+#   target: _blank
+#   expanded: false
+#   doctype: Announcement
+#   status: Active
 
 - name: "PACS Application Package - Updated Equipment Table GSA PACS Application v0.3.0 (MS Excel, August 2024) (Mandatory)" 
   summary: "<p>In an effort to streamline and accurately capture the components and to allow the same table to be used across multiple forms for the solution being submitted for evaluation, the FIPS 201 Evaluation Program has updated the Equipment Table spreadsheet to be broken out by individual tabs for 13.01 PACS Infrastructure, 13.01 Validation System, 13.01 PACS Readers, 13.02 PACS and Validation Infrastructure and 13.02 PACS Readers. Vendors are requested to use this updated spreadsheet as part of their application submission package moving forward. Please feel free to reach out to <a href=\"mailto:fips201ep@gsa.gov\">fips201ep@gsa.gov</a> with any questions or concerns.</p>"
@@ -45,15 +45,15 @@
   doctype: Announcement
   status: Active
 
-- name: "GSA FICAM Test Lab's 2023 Holiday Schedule" 
-  summary: "<p>The GSA FICAM Testing Lab located in Reston, VA will be operating on limited in-person availability from December 20, 2023, through January 2, 2024, and as such will not be scheduling any appointments during that period. Vendors are requested to schedule an appointment by December 15, 2023, so that the lab personnel can make every effort to provide availability and assistance before December 20, 2023. <br><br>Your patience is greatly appreciated. <br>Thank you.</p>"
-  pubdate: December 11, 2023
-  url: 
-  source: IDManagement.gov
-  target: _blank
-  expanded: false
-  doctype: Announcement
-  status: Active
+# - name: "GSA FICAM Test Lab's 2023 Holiday Schedule" 
+#   summary: "<p>The GSA FICAM Testing Lab located in Reston, VA will be operating on limited in-person availability from December 20, 2023, through January 2, 2024, and as such will not be scheduling any appointments during that period. Vendors are requested to schedule an appointment by December 15, 2023, so that the lab personnel can make every effort to provide availability and assistance before December 20, 2023. <br><br>Your patience is greatly appreciated. <br>Thank you.</p>"
+#   pubdate: December 11, 2023
+#   url: 
+#   source: IDManagement.gov
+#   target: _blank
+#   expanded: false
+#   doctype: Announcement
+#   status: Active
   
 - name: "Updates to the processes and documents outlined in the Testing and Evaluation Section" 
   summary: "<p>The Testing and Evaluation section has been updated to streamline the process and documentation for the FIPS 201 Evaluation Program. The guidance and application documents required for the Physical Access Control Systems (PACS) evaluation have been updated, and clarification for the Personal Identity Verification and Credentials evaluation process has been added.</p>"

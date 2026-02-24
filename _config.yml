@@ -67,21 +67,31 @@ primary_navigation:
         url: /implement/
       - name: Enterprise Trust of the FCPCA
         url: /implement/trust-fcpca/
-      - name: Smart Card Logon for Operating Systems
+      - name: Smart Card Logon For Windows Domains
         url: /implement/scl-windows/
-      - name: Certificate-based Authentication for Cloud
-        url: /implement/cba-azure/
-      - name: Use Smart Cards with Applications
-        url: /implement/outlook/
-      - name: FIDO2 and Web Authentication
+      - name: Smart Card Logon for MacOS
+        url: /implement/scl-macos/
+      - name: Smart Card Logon for SSH
+        url: /implement/scl-ssh/
+      - name: Smart Card Logon for Firefox
+        url: /implement/scl-firefox/
+      - name: Windows Hello for Business
         url: /implement/whfb/
+      - name: Certificate-Based Authentication
+        url: /implement/cba-azure/
+      - name: Sign and Encrypt Email in Outlook
+        url: /implement/outlook/
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
+      - name: FPKI Test Environment
+        url: /implement/fpkicite/        
+      # - name: FIDO2 and Web Authentication
+      #   url: /implement/whfb/
       - name: Mapping of SP800-53 IA to SP 800-63
         url: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
       - name: Okta Yubikey Implementation Guide
         url: /implement/yubikey-guide/
-      - name: Unifyia Implementation Guide for Passkeys (FIDO2)
+      - name: GSA Implementation Guide for Passkeys (FIDO2)
         url: /implement/unifyia-guide/
   - name: Functions
     children: 

@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: How to implement ICAM
+title: ICAM Configuration Guides
 permalink: /implement/
 sticky_sidenav: true
 sidenav: implement
