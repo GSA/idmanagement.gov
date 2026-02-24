@@ -71,8 +71,10 @@ primary_navigation:
         url: /implement/scl-windows/
       - name: Smart Card Logon for MacOS
         url: /implement/scl-macos/
-      - text: Smart Card Logon for SSH
+      - name: Smart Card Logon for SSH
         url: /implement/scl-ssh/
+      - name: Smart Card Logon for Firefox
+        url: /implement/scl-firefox/
       - name: Certificate-based Authentication for Cloud
         url: /implement/cba-azure/
       - name: Use Smart Cards with Applications
