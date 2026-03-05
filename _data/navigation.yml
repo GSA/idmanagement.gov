@@ -23,9 +23,9 @@ partners:
   - text: ICAM FIBF For Comment
     href: /icam-fibf/
   - text: Mobile PIV (mPIV) Experiment
-    href: /experiments/unifyia-mpiv-experiment/
+    href: /experiments/gas-mpiv-experiment/
   - text: Shatterproof Digital Identity - GSA PQC Experiment
-    href: /experiments/unifyia-pqc-experiment/
+    href: /experiments/gsa-pqc-experiment/
 
 
 implement:
@@ -56,7 +56,7 @@ implement:
   - text: Okta Yubikey Implementation Guide
     href: /implement/yubikey-guide/
   - text: GSA Implementation Guide for Passkeys (FIDO2)
-    href: /implement/unifyia-guide/
+    href: /implement/gsa-guide/
 
     
 functions:
