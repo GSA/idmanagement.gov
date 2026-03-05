@@ -3,7 +3,7 @@ layout: page
 collection: experiments
 title: Mobile PIV (mPIV) Experiment
 type: Markdown
-permalink: /experiments/unifyia-mpiv-experiment/
+permalink: /experiments/gsa-mpiv-experiment/
 description: Mobile PIV (mPIV) Experiment
 sidenav: papers
 sticky_sidenav: true

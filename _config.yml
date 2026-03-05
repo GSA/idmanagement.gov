@@ -92,7 +92,7 @@ primary_navigation:
       - name: Okta Yubikey Implementation Guide
         url: /implement/yubikey-guide/
       - name: GSA Implementation Guide for Passkeys (FIDO2)
-        url: /implement/unifyia-guide/
+        url: /implement/gsa-guide/
   - name: Functions
     children: 
       - name: FICAM Program
@@ -144,9 +144,9 @@ primary_navigation:
       - name: PIAM Process
         url: /experiments/pid/process/
       - name: Mobile PIV (mPIV) Experiment
-        url: /experiments/unifyia-mpiv-experiment/
+        url: /experiments/gsa-mpiv-experiment/
       - name: Shatterproof Digital Identity - GSA PQC Experiment
-        url: /experiments/unifyia-pqc-experiment/
+        url: /experiments/gsa-pqc-experiment/
         
 secondary_navigation:
   - name: Contact Us
