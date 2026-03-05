@@ -3,7 +3,7 @@ layout: page
 collection: implement
 title: FIDO2.1 Implementation using the Unifyia Platform - Initial Release
 type: Markdown
-permalink: /implement/unifyia-guide/
+permalink: /implement/gsa-guide/
 description: FIDO2.1 Implementation using the Unifyia Platform
 sidenav: implement
 sticky_sidenav: true
