@@ -23,7 +23,7 @@ partners:
   - text: ICAM FIBF For Comment
     href: /icam-fibf/
   - text: Mobile PIV (mPIV) Experiment
-    href: /experiments/gas-mpiv-experiment/
+    href: /experiments/gsa-mpiv-experiment/
   - text: Shatterproof Digital Identity - GSA PQC Experiment
     href: /experiments/gsa-pqc-experiment/
 
@@ -115,9 +115,9 @@ papers:
   - text: PIAM Process
     href: /experiments/pid/process/
   - text: Mobile PIV (mPIV) Experiment
-    href: /experiments/unifyia-mpiv-experiment/
+    href: /experiments/gsa-mpiv-experiment/
   - text: Shatterproof Digital Identity - GSA PQC Experiment
-    href: /experiments/unifyia-pqc-experiment/
+    href: /experiments/gsa-pqc-experiment/
   - text: Coming Soon
     href: /experiments/#coming-soon
 
