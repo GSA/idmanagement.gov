@@ -142,6 +142,7 @@ The FPKIMA has developed [draft PQC Certificate and CRL Profiles]({{site.baseurl
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://cite.fpki.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag4.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag4.p7c |
 | Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedByDevfbcaD1.p7c | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedToDevfcpcaD1.p7c |
+| Dev FBCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedByDevfcpcaD1.p7c | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedToDevfbcaD1.p7c |
 
 | Test Partner CRLs | CRL URL |
 | ------------ | ----------- |
@@ -450,6 +451,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
 | 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
 | 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
+
 
 
 
