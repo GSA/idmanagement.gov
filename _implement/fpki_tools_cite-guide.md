@@ -36,7 +36,7 @@ Updated: March 9, 2026 <br>
 
 The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that tries to mimic the production FPKI hierarchy and is managed by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
 
-The Bridge & Root Authority Working Lab (BRAWL) is a devopement environment that can be used by issuing partners wishing to conduct PKI experiments. While BRAWL provides the foundation for path discovery and validation testing, partner CA hardware and software environments do not necessarily need to reflect planned or future systems, allowing partners flexibiilty for their own PKI experimentation (e.g., application testing, processing times, etc.).  The initial iteration of BRAWLS is meant to facilitate partner PQC experiments, providing a ML-DSA-87 self-signed Root CA certificate from which partners can request intermediate or issuing CA certificates. The [draft PQC Certificate and CRL Profiles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common-pqc.pdf){:rel="noopener noreferrer"}{:class="usa-link"} should be used by all BRAWL participants to faciliate various end-entity certificate based applicaiton testing. 
+The Bridge & Root Authority Working Lab (BRAWL) is a development environment that can be used by issuing partners wishing to conduct PKI experiments. While BRAWL provides the foundation for path discovery and validation testing, partner CA hardware and software environments do not necessarily need to reflect planned or future systems, allowing partners flexibility for their own PKI experimentation (e.g., application testing, processing times, etc.).  The initial iteration of BRAWL is meant to facilitate partner PQC experiments, providing a ML-DSA-87 self-signed Root CA certificate and Bridge CA from which partners can request intermediate CA certificates, issuing CA certificates, or cross-certificates. The [draft PQC Certificate and CRL Profiles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common-pqc.pdf){:rel="noopener noreferrer"}{:class="usa-link"} should be used by all BRAWL participants to faciliate various end-entity certificate based application testing. 
 
 - [Testing Use Cases](#testing-use-cases){:class="usa-link"}
 - [Technical Specifications](#technical-specifications){:class="usa-link"}
@@ -46,7 +46,7 @@ The Bridge & Root Authority Working Lab (BRAWL) is a devopement environment that
 - [Test Websites](#test-websites){:class="usa-link"}
 - [Appendix A - Test Policy Object Identifiers](#appendix-a---test-policy-object-identifiers){:class="usa-link"}
 
-This guide is a practice guide for FPKI Partners who want to either become CITE participants, leverage CITE for FPKI testing, or who would like to leverage BRAWL for PQC experiments. As new vendor products mature (e.g., CA, HSM, CMS, etc.) the FPKIMA plans to expand to additional developement CAs.
+This guide is a practice guide for FPKI Partners who want to either become CITE participants, leverage CITE for FPKI testing, or who would like to leverage BRAWL for PQC experiments. As vendor products used by the FPKIMA mature (e.g., CA, HSM, etc.) the FPKIMA plans to create different developement CAs.
 
 ## Testing Use Cases
 
@@ -450,6 +450,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
 | 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
 | 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
+
 
 
 
