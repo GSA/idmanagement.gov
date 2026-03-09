@@ -149,12 +149,18 @@ The FPKIMA has developed [draft PQC Certificate and CRL Profiles]({{site.baseurl
 | Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA.crl |
 | DoD | http://crl.nit.disa.mil/crl/DODJITCINTEROPERABILITYROOTCA2.crl |
 | Entrust SSP | http://dsspweb.managed.entrust.com/CRLs/EMSDemoFRootCA2.crl | 
+| WidePoint SSP | http://testcrl-server.orc.com/CRLs/WPSSPIntTESTCA.crl |
+| WidePoint NFI | http://testcrl-server.orc.com/CRLs/WIDEPOINTTESTNFIROOT2.crl |
+| XTEC SSP |  http://crl.xcacompacttest.xpki.com/CRLs/XTec_SSP_Test_Root_CA_1.crl |
 
 | Test Partner CA p7cs | p7c URLs |
 | ------------ | ----------- |
 | Treasury | SIA:http://devpki.treasury.gov/devroot_sia.p7c AIA:http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
 | DoD | SIA:http://crl.nit.disa.mil/issuedby/DODJITCINTEROPERABILITYROOTCA2_IB.p7c AIA:http://crl.nit.disa.mil/issuedto/DODJITCINTEROPERABILITYROOTCA2_IT.p7c |
 | Entrust SSP | SIA:http://dsspweb.managed.entrust.com/SIA/CAcertsIssuedByEMSDemoFRootCA.p7c AIA:http://dsspweb.managed.entrust.com/AIA/CertsIssuedToEMSDemoFRootCA.p7c |
+| WidePoint SSP | SIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntTESTCA.p7c AIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntTESTCA.p7c |
+| WidePoint NFI | SIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedByWIDEPOINTTESTNFIROOT2.p7c AIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedToWIDEPOINTTESTNFIROOT2.p7c |
+| XTEC SSP | SIA:http://aia.xcacompacttest.xpki.com/AIA/IssuedCertsByXTec_SSP_Test_Root_CA_1.p7c AIA:http://aia.xcacompacttest.xpki.com/AIA/IssuedCertsforXTec_SSP_Test_Root_CA_1.p7c |
 
 ## Appendix A - Test Policy Object Identifiers
 
@@ -451,6 +457,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
 | 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
 | 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
+
 
 
 
