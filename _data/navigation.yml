@@ -62,6 +62,8 @@ implement:
 functions:
   - text: FICAM Program
     href: /ficam/
+  - text: Post Quantum Cryptography
+    href: /pqc/
   - text: Federal PKI Governance
     href: /fpki/
   - text: FIPS 201 Evaluation Program

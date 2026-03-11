@@ -97,6 +97,8 @@ primary_navigation:
     children: 
       - name: FICAM Program
         url: /ficam/
+      - name: Post Quantum Cryptography
+        url: /pqc/
       - name: Federal PKI Program
         url: /fpki/
       - name: FIPS 201 Evaluation Program
