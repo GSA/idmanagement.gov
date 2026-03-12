@@ -19,6 +19,8 @@ subnav:
       href: '#repository-availability'
     - text: Technical Support Availability
       href: '#technical-support-availability'
+    - text: Test Certificate Profiles
+      href: '#test-certificate-profiles'
     - text: Test Websites
       href: '#test-websites'
     - text: Test Policy Object Identifiers
@@ -28,31 +30,33 @@ subnav:
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Updated: September 7, 2022 <br>
+Updated: March 9, 2026 <br>
 
 ## Overview
 
 The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that tries to mimic the production FPKI hierarchy and is managed by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
 
+The Bridge & Root Authority Working Lab (BRAWL) is a development environment that can be used by issuing partners wishing to conduct PKI experiments. While BRAWL provides the foundation for path discovery and validation testing, partner CA hardware and software environments do not necessarily need to reflect planned or future systems, allowing partners flexibility for their own PKI experimentation (e.g., application testing, processing times, etc.).  The initial iteration of BRAWL is meant to facilitate partner PQC experiments, providing a ML-DSA-87 self-signed Root CA certificate and Bridge CA from which partners can request intermediate CA certificates, issuing CA certificates, or cross-certificates. The [draft PQC Certificate and CRL Profiles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common-pqc.pdf){:rel="noopener noreferrer"}{:class="usa-link"} should be used by all BRAWL participants to faciliate various end-entity certificate based application testing. 
+
 - [Testing Use Cases](#testing-use-cases){:class="usa-link"}
 - [Technical Specifications](#technical-specifications){:class="usa-link"}
 - [Scheduled and Unscheduled Testing](#scheduled-and-unscheduled-testing){:class="usa-link"}
 - [Repository Availability](#repository-availability){:class="usa-link"}
-- [Technical Support Availability](#technical-support-availability){:class="usa-link"}
+- [Test Certificate Profiles](#test-certificate-profiles){:class="usa-link"}
 - [Test Websites](#test-websites){:class="usa-link"}
 - [Appendix A - Test Policy Object Identifiers](#appendix-a---test-policy-object-identifiers){:class="usa-link"}
 
-This guide is a practice guide for FPKI Partners who want to either become CITE participants or leverage CITE for FPKI testing.
+This guide is a practice guide for FPKI Partners who want to either become CITE participants, leverage CITE for FPKI testing, or who would like to leverage BRAWL for PQC experiments. As vendor products used by the FPKIMA mature (e.g., CA, HSM, etc.) the FPKIMA plans to create different developement CAs.
 
 ## Testing Use Cases
 
-The main purpose of CITE is interoperability and infrastructure testing of PKI components and Relying Party applications. Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE Participants. CITE should not be used for system stress testing. Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes to the production FPKI do not adversely affect interoperability.
+The main purpose of CITE and BRAWL is interoperability and infrastructure testing of PKI components and Relying Party applications. Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE or BRAWL Participants. CITE should not be used for system stress testing. Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes to the production FPKI do not adversely affect interoperability.
 
 Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system performs as expected and can properly process transactions that rely on FPKI certificates.
 
-This document does not define how to perform testing in CITE. That is a responsibility of the CITE Participants. Some examples of testing conducted in CITE include:
+This document does not define how to perform testing via CITE nor BRAWL. That is a responsibility of the testing Participants. Some examples of relevant testing include:
 1. Interoperability testing between cross-certified Certification Authorities (CAs);
-2. Transition testing to new algorithms (e.g., SHA-2, ECC);
+2. Transition testing to new algorithms (e.g., SHA-2, ECC, PQC);
 3. PIV and PIV-I credential interoperability testing;
 4. Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
 5. Path discovery and/or validation testing for an application
@@ -110,34 +114,53 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 
 {% include alert-warning.html content="CITE Participant technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %} <br>
 
+## Test Certificate Profiles
+
+CITE participants, to include applicants of the Shared Service Provider (SSP) program, should leverage the following FPKIPA defined certificate profiles to facilitate their use case or compliance testing (links provided will always reference the most updated profile version):
+- [Common Policy X.509 Certificate and CRL Profiles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [Federal Bridge Certification Authority FBCA X.509 Certificate and CRL Extensions Profiles]({{site.baseurl}}/docs/fpki-x509-cert-profiles-fbca.pdf){:rel="noopener noreferrer"}{:class="usa-link"}
+
+The FPKIMA has developed [draft PQC Certificate and CRL Profiles]({{site.baseurl}}/docs/fpki-x509-cert-profile-common-pqc.pdf){:rel="noopener noreferrer"}{:class="usa-link"} to allow potential CITE and BRAWL participants the ability to develop appropriate CA and end entity certificates that leverage draft or final PQC cryptography.  Test certificate policy object identifiers (OIDs) are consistent with those defined in [Appendix A](#appendix-a---test-policy-object-identifiers){:class="usa-link"} below for consistency, however, other relevant certificate fields such as signature algorithm and public key have been updated to facilitate PQC test cases.
+
 ## Test Websites
 
-| FPKI CA Certificates | Website URL |
-| ------------ | ----------- |
-| Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crt |
+| FPKI CA Certificates | Website URL | SHA256 Thumbprint |
+| ------------ | ----------- | ----------- |
+| Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crt | f96181ac558c9975b410648d52dbd60185ca3c0a62763bd8d71fe00411e12ea2 |
+| Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/DevfcpcaD1.crt | 7b97fe8848ce4897a231924520973ac74a5e6b5a1f4294413b197a8a591c4cb5 |
 
 
 | FPKI CA CRLs | CRL URL |
 | ------------ | ----------- |
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crl |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/Testfbcag4.crl |
+| Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/DevfcpcaD1.crl |
+| Dev FBCA D1 | http://repo.brawl.fpki-lab.gov/bridge/DevfbcaD1.crl |
 
 | FPKI CA p7c |  SIA URL |   AIA URL |
 | ------------ | ----------- | ----------- | 
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://cite.fpki.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag4.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag4.p7c |
+| Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedByDevfbcaD1.p7c | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedToDevfcpcaD1.p7c |
+| Dev FBCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedByDevfcpcaD1.p7c | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedToDevfbcaD1.p7c |
 
 | Test Partner CRLs | CRL URL |
 | ------------ | ----------- |
 | Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA.crl |
 | DoD | http://crl.nit.disa.mil/crl/DODJITCINTEROPERABILITYROOTCA2.crl |
 | Entrust SSP | http://dsspweb.managed.entrust.com/CRLs/EMSDemoFRootCA2.crl | 
+| WidePoint SSP | http://testcrl-server.orc.com/CRLs/WPSSPIntTESTCA.crl |
+| WidePoint NFI | http://testcrl-server.orc.com/CRLs/WIDEPOINTTESTNFIROOT2.crl |
+| XTEC SSP |  http://crl.xcacompacttest.xpki.com/CRLs/XTec_SSP_Test_Root_CA_1.crl |
 
 | Test Partner CA p7cs | p7c URLs |
 | ------------ | ----------- |
 | Treasury | SIA:http://devpki.treasury.gov/devroot_sia.p7c AIA:http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
 | DoD | SIA:http://crl.nit.disa.mil/issuedby/DODJITCINTEROPERABILITYROOTCA2_IB.p7c AIA:http://crl.nit.disa.mil/issuedto/DODJITCINTEROPERABILITYROOTCA2_IT.p7c |
 | Entrust SSP | SIA:http://dsspweb.managed.entrust.com/SIA/CAcertsIssuedByEMSDemoFRootCA.p7c AIA:http://dsspweb.managed.entrust.com/AIA/CertsIssuedToEMSDemoFRootCA.p7c |
+| WidePoint SSP | SIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedByWPSSPIntTESTCA.p7c AIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntTESTCA.p7c |
+| WidePoint NFI | SIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedByWIDEPOINTTESTNFIROOT2.p7c AIA:http://testcrl-server.orc.com/caCerts/caCertsIssuedToWIDEPOINTTESTNFIROOT2.p7c |
+| XTEC SSP | SIA:http://aia.xcacompacttest.xpki.com/AIA/IssuedCertsByXTec_SSP_Test_Root_CA_1.p7c AIA:http://aia.xcacompacttest.xpki.com/AIA/IssuedCertsforXTec_SSP_Test_Root_CA_1.p7c |
 
 ## Appendix A - Test Policy Object Identifiers
 
@@ -434,3 +457,12 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
 | 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
 | 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
+
+
+
+
+
+
+
+
+
