@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: arch
-title:  Preparing Federal ICAM for the Quantum Era
+title:  FICAM Drives Federal Quantum Readiness
 permalink: /pqc/
 sidenav: arch
 sticky_sidenav: true
@@ -12,7 +12,7 @@ subnav:
 
 ---
 
-The GSA OGP FICAM program is helping to lead federal efforts to prepare for post-quantum cryptography (PQC) to protect identities, credentials, and access at enterprise scale. 
+The Federal Identity, Cybersecurity, and Access Management (FICAM) program is helping to lead federal efforts to prepare for post-quantum cryptography (PQC) to protect identities, credentials, and access at enterprise scale. 
 
 Quantum computers could break the cryptographic algorithms that currently protect federal identity systems. While this technology doesn't exist today, experts predict it could potentially emerge as soon as 2030. Every PIV card, digital certificate, and secure connection in the Federal PKI relies on cryptography that quantum computers could compromise.
 
@@ -26,7 +26,7 @@ To date, our initial experiments have identified viable pathways for integrating
 
 ## Resources
 
-### Experiments
+### Experiments and Pilots
 
 GSA’s PQC experimentation aligns with federal priorities to prepare for the advent of quantum computing, which poses significant risks to the security of classical public key cryptographic systems used in both physical and logical access controls.
 
@@ -36,7 +36,7 @@ GSA’s PQC experimentation aligns with federal priorities to prepare for the ad
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Complete</h4>
     <p class="usa-alert__text">
-      OGP published its findings from Phase 1 of the PQC experiment in June 2025 <a href="https://www.idmanagement.gov/experiments/gsa-pqc-experiment/" target="_blank">read the report here</a>.
+      OGP published its <a href="https://www.idmanagement.gov/experiments/gsa-pqc-experiment/" target="_blank">findings from Phase 1</a> of the PQC experiment in June 2025.
     </p>
   </div>
 </div>
