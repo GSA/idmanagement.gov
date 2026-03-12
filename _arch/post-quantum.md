@@ -26,7 +26,7 @@ To date, our initial experiments have identified viable pathways for integrating
 
 ## Resources
 
-### Experiments
+### Experiments and Pilots
 
 GSA’s PQC experimentation aligns with federal priorities to prepare for the advent of quantum computing, which poses significant risks to the security of classical public key cryptographic systems used in both physical and logical access controls.
 
