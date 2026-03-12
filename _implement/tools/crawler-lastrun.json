@@ -3734,23 +3734,6 @@
             }
         },
         {
-            "subject": "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
-            "issuer": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-            "serial-number": "47918415529350729818657007952723708426",
-            "akid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "skid": "fb 48 aa 61 49 80 d4 f7 a6 85 82 a2 44 dd 97 d6 9b a6 71 05",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US:7a8b3c0692dc1ea8d282ac1b746f743d4ed1a89b",
-            "validity-dates": {
-                "not-before": "2025-02-19 00:00:00+00:00",
-                "not-after": "2026-02-28 23:59:59+00:00"
-            }
-        },
-        {
             "subject": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "serial-number": "3033",
