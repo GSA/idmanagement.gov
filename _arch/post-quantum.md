@@ -12,7 +12,7 @@ subnav:
 
 ---
 
-The GSA OGP FICAM program is helping to lead federal efforts to prepare for post-quantum cryptography (PQC) to protect identities, credentials, and access at enterprise scale. 
+The Federal Identity, Cybersecurity, and Access Management (FICAM) program is helping to lead federal efforts to prepare for post-quantum cryptography (PQC) to protect identities, credentials, and access at enterprise scale. 
 
 Quantum computers could break the cryptographic algorithms that currently protect federal identity systems. While this technology doesn't exist today, experts predict it could potentially emerge as soon as 2030. Every PIV card, digital certificate, and secure connection in the Federal PKI relies on cryptography that quantum computers could compromise.
 
