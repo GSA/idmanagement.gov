@@ -36,7 +36,7 @@ GSA’s PQC experimentation aligns with federal priorities to prepare for the ad
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Complete</h4>
     <p class="usa-alert__text">
-      OGP published its findings from Phase 1 of the PQC experiment in June 2025 ([read the report here](https://www.idmanagement.gov/experiments/gsa-pqc-experiment/))
+      OGP published its findings from Phase 1 of the PQC experiment in June 2025 <a href="https://www.idmanagement.gov/experiments/gsa-pqc-experiment/" target="_blank">read the report here</a>.
     </p>
   </div>
 </div>
@@ -49,7 +49,7 @@ Phase 1 piloted next-generation PIV technology to improve secure digital identit
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">In Progress</h4>
     <p class="usa-alert__text">
-      Agencies interested in learning more about the ongoing Phase 2 experimentation should contact [icam@gsa.gov](mailto:icam@gsa.gov).
+      Agencies interested in learning more about the ongoing Phase 2 experimentation should contact <a href="mailto:icam@gsa.gov">icam@gsa.gov</a>.
     </p>
   </div>
 </div>
