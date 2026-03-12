@@ -125,7 +125,7 @@ The FPKIMA has developed [draft PQC Certificate and CRL Profiles]({{site.baseurl
 ## Test Websites
 
 | FPKI CA Certificates | Website URL | SHA256 Thumbprint |
-| ------------ | ----------- |
+| ------------ | ----------- | ----------- |
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/Testfcpcag2.crt | f96181ac558c9975b410648d52dbd60185ca3c0a62763bd8d71fe00411e12ea2 |
 | Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/DevfcpcaD1.crt | 7b97fe8848ce4897a231924520973ac74a5e6b5a1f4294413b197a8a591c4cb5 |
 
@@ -457,6 +457,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy){:cla
 | 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
 | 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
 | 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
+
 
 
 
