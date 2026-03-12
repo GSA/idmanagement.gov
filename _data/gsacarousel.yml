@@ -19,65 +19,22 @@
 
 
 - orderNumber: 0
-  initialState: active
-  delay: 30000
-  heroHeading: "Identity Fraud Detection Playbook" 
-  heroText: "This playbook serves as a resource and provides a foundational understanding of identity fraud techniques, detection methods, and mitigation strategies."
-  actionButtonText: Learn more about the 
-  actionLocation: playbooks/idfraud/
-  actionTarget: _self
+  initialState:
+  delay: 10000
+  heroHeading: FICAM Drives Federal Quantum Readiness
+  heroText: Implementing quantum-resistant cryptographic standards that protect digital identities against future quantum computing capabilities.  
+  actionButtonText: Learn more about post Quantum Cryptography
+  actionLocation: pqc/
+  actionTarget: _blank
 
 - orderNumber: 1
-  initialState: active
-  delay: 10000
-  heroHeading: FICAM 
-  heroText: helps the U.S Government agencies achieve Zero Trust cyber maturity quickly.
-  actionButtonText: Learn more about
-  actionLocation: arch/
-  actionTarget: _self
-
-- orderNumber: 2
   initialState:
   delay: 10000
   heroHeading: Zero Trust
   heroText: concept assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location or based on asset ownership.
-  actionButtonText: Learn more about
+  actionButtonText: Learn more about Zero Trust
   actionLocation: zero-trust/
   actionTarget: _blank
 
-- orderNumber: 3
-  initialState:
-  delay: 10000
-  heroHeading: Privileged user
-  heroText: is authorized and trusted to perform security-relevant functions that ordinary users cannot perform—also known as a administrator or superuser.
-  actionButtonText: Learn more about
-  actionLocation: playbooks/pam/
-  actionTarget: _self
 
-- orderNumber: 4
-  initialState:
-  delay: 10000
-  heroHeading: Phishing resistant authenticators
-  heroText: are not susceptible to common interception and replay attacks. Phishing-resistant MFA protects users from sophisticated online attacks.
-  actionButtonText: Learn more about
-  actionLocation: playbooks/altauthn
-  actionTarget: _blank
-
-- orderNumber: 5
-  initialState:
-  delay: 10000
-  heroHeading: Single sign on
-  heroText: centralizes application access for agency employees and contractors or federate access with other federal executive agencies.
-  actionButtonText: Learn more about
-  actionLocation: playbooks/sso/
-  actionTarget: _self
-
-- orderNumber: 6
-  initialState:
-  delay: 10000
-  heroHeading: User authorization
-  heroText: is a decision whether to grant access to a user or machine account following authentication. Authorization to resources can be fine grained to help achieve attribute based access vs the traditional role based access.
-  actionButtonText: Learn more about
-  actionLocation: playbooks/cloud/
-  actionTarget: _self
 
