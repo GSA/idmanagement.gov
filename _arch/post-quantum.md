@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: ficampmo
+collection: arch
 title:  Preparing Federal ICAM for the Quantum Era
 permalink: /pqc/
-sidenav: functions
+sidenav: arch
 sticky_sidenav: true
 
 subnav:
@@ -14,13 +14,13 @@ subnav:
 
 The GSA OGP FICAM program is helping to lead federal efforts to prepare for post-quantum cryptography (PQC) to protect identities, credentials, and access at enterprise scale. 
 
-Quantum computers could break the cryptographic algorithms that currently protect federal identity systems. While this technology doesn't exist today, experts predict it could potentially emerge as soon as 2030\. Every PIV card, digital certificate, and secure connection in the Federal PKI relies on cryptography that quantum computers could compromise.
+Quantum computers could break the cryptographic algorithms that currently protect federal identity systems. While this technology doesn't exist today, experts predict it could potentially emerge as soon as 2030. Every PIV card, digital certificate, and secure connection in the Federal PKI relies on cryptography that quantum computers could compromise.
 
 Through coordinated experimentation and strategic planning, the FICAM program is identifying quantum-resistant solutions to protect the PIV cards, digital certificates, and trust infrastructure that secure federal operations. Our approach addresses post-quantum readiness across three fronts: 
 
-* Policy development through the ICAM Subcommittee;  
-* Hands-on experimentation with quantum-resistant algorithms; and  
-* Operational preparation for government-wide migration
+- Policy development through the ICAM Subcommittee;  
+- Hands-on experimentation with quantum-resistant algorithms; and  
+- Operational preparation for government-wide migration
 
 To date, our initial experiments have identified viable pathways for integrating quantum-resistant algorithms into federal identity systems, while revealing the hardware, software, and policy updates required for successful implementation. The FICAM program will continue to experiment with post-quantum cryptography algorithms and technologies until all aspects of federal ICAM are quantum-resistant and fully protected against future cryptographic threats.
 
