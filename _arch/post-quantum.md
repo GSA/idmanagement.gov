@@ -12,8 +12,46 @@ subnav:
 
 ---
 
+The GSA OGP FICAM program is helping to lead federal efforts to prepare for post-quantum cryptography (PQC) to protect identities, credentials, and access at enterprise scale. 
 
+Quantum computers could break the cryptographic algorithms that currently protect federal identity systems. While this technology doesn't exist today, experts predict it could potentially emerge as soon as 2030\. Every PIV card, digital certificate, and secure connection in the Federal PKI relies on cryptography that quantum computers could compromise.
 
+Through coordinated experimentation and strategic planning, the FICAM program is identifying quantum-resistant solutions to protect the PIV cards, digital certificates, and trust infrastructure that secure federal operations. Our approach addresses post-quantum readiness across three fronts: 
 
+* Policy development through the ICAM Subcommittee;  
+* Hands-on experimentation with quantum-resistant algorithms; and  
+* Operational preparation for government-wide migration
+
+To date, our initial experiments have identified viable pathways for integrating quantum-resistant algorithms into federal identity systems, while revealing the hardware, software, and policy updates required for successful implementation. The FICAM program will continue to experiment with post-quantum cryptography algorithms and technologies until all aspects of federal ICAM are quantum-resistant and fully protected against future cryptographic threats.
 
 ## Resources
+
+### Experiments
+
+GSA’s PQC experimentation aligns with federal priorities to prepare for the advent of quantum computing, which poses significant risks to the security of classical public key cryptographic systems used in both physical and logical access controls.
+
+**Phase 1**
+
+<div class="usa-alert usa-alert--success">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Complete</h4>
+    <p class="usa-alert__text">
+      OGP published its findings from Phase 1 of the PQC experiment in June 2025 ([read the report here](https://www.idmanagement.gov/experiments/gsa-pqc-experiment/))
+    </p>
+  </div>
+</div>
+
+Phase 1 piloted next-generation PIV technology to improve secure digital identity, with a focus on secure, quantum-resilient issuance and management of PIV credentials. It involved testing the use of 3K, 4K, ED25519, X25519, Dilithium 4, 5, and 6 algorithms for PIV credential issuance, authentication, digital signing, and full certificate lifecycle management.
+
+**Phase 2**
+
+<div class="usa-alert usa-alert--warning">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">In Progress</h4>
+    <p class="usa-alert__text">
+      Agencies interested in learning more about the ongoing Phase 2 experimentation should contact [icam@gsa.gov](mailto:icam@gsa.gov).
+    </p>
+  </div>
+</div>
+
+Phase 2 seeks to deliver a deployable, standards-aligned, PQC PKI CA service blueprint and an operational pilot that can scale across agencies while maintaining compatibility with Federal PKI trust expectations and existing PIV workflows.
