@@ -47,6 +47,8 @@ primary_navigation:
     children:
       - name: FICAM Architecture
         url: /arch/
+      - name: Post Quantum Cryptography
+        url: /pqc/
       - name: Zero Trust
         url: /zero-trust/
       - name: GSA ICAM Solutions Roadmap
@@ -97,8 +99,6 @@ primary_navigation:
     children: 
       - name: FICAM Program
         url: /ficam/
-      - name: Post Quantum Cryptography
-        url: /pqc/
       - name: Federal PKI Program
         url: /fpki/
       - name: FIPS 201 Evaluation Program
