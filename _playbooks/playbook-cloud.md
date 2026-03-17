@@ -9,8 +9,8 @@ description: The Cloud Identity Playbook is a four-step playbook to start or fur
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.2
-pubdate: December 29, 2022
+version: 1.3
+pubdate: March 17, 2026
 
 subnav:
   - text: Executive Summary
