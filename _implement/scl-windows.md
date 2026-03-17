@@ -547,7 +547,7 @@ Use group policy objects or other centralized management options to manage regis
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Group Policy to Support "Weak" Identifiers</h4>
     <p class="usa-alert__text">
-     Administrators can enable <b>Allow name-based strong mappings for certificates<b> option, in conjunction with policy tuple mappings mentioned in <a class="usa-link usa-link--external" href="https://www.idmanagement.gov/implement/scl-windows/#step-4---account-linking" target="_blank">Step 4</a>, to continue to use “weak” PIV alternate security identifiers for user account correlation.
+     Administrators can enable <b>Allow name-based strong mappings for certificates</b> option, in conjunction with policy tuple mappings mentioned in <a class="usa-link usa-link--external" href="https://www.idmanagement.gov/implement/scl-windows/#step-4---account-linking" target="_blank">Step 4</a>, to continue to use “weak” PIV alternate security identifiers for user account correlation.
     </p>
   </div>
 </div>
