@@ -64,6 +64,13 @@ This playbook is a collaboration between the Federal Chief Information Security 
       </thead>
       <tr>
         <th scope='row'>
+          1.3
+        </th>
+        <td>3/17/26</td>
+        <td>Updated links to reflect NIST SP 800-63 v4</td>
+      </tr>
+      <tr>
+        <th scope='row'>
           1.2
         </th>
         <td>12/29/22</td>
