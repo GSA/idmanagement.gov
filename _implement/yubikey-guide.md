@@ -21,9 +21,9 @@ subnav:
   - text: Device enrollment configuration with Okta set-up
     href: '#device-enrollment-configuration-with-okta-set-up'
   - text: Setting up Yubico Authenticator for Mac
-    href: '#Setting up Yubico Authenticator for Mac'
+    href: '#setting-up-yubico-authenticator-for-mac'
   - text: Setting Up Yubico Authenticator for Windows Machines
-    href: '#Setting Up Yubico Authenticator for Windows Machines'
+    href: '#setting-up-yubico-authenticator-for-windows-machines'
   - text: Glossary of Terms
     href: '#glossary-of-terms'
   - text: Yubikey FAQs
