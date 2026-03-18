@@ -20,26 +20,14 @@ subnav:
     href: '#prerequisites'
   - text: Device enrollment configuration with Okta set-up
     href: '#device-enrollment-configuration-with-okta-set-up'
-  - text: First-time setup for new device PIN creation MacOS
-    href: '#first-time-setup-for-new-device-pin-creation-macos'
-  - text: Enrolling a Security Key on CMS Okta IDM-MacOS
-    href: '#enrolling-a-security-key-on-cms-okta-idm-macos'
-  - text: Login to CMS Okta with Security Key-MacOS
-    href: '#login-to-cms-okta-with-security-key-macos'
-  - text: First-time setup for new device PIN creation Windows
-    href: '#first-time-setup-for-new-device-pin-creation-windows'
-  - text: Enroll Security Key on Okta-Windows
-    href: '#enroll-security-key-on-okta-windows'
-  - text: Login to Okta with Security Key-Windows
-    href: '#login-to-okta-with-security-key-windows'
+  - text: Setting up Yubico Authenticator for Mac
+    href: '#Setting up Yubico Authenticator for Mac'
+  - text: Setting Up Yubico Authenticator for Windows Machines
+    href: '#Setting Up Yubico Authenticator for Windows Machines'
   - text: Glossary of Terms
     href: '#glossary-of-terms'
   - text: Yubikey FAQs
     href: '#yubikey-faqs'
-  - text: How do I unlink the YubiKey from Okta?
-    href: '#how-do-i-unlink-the-yubikey-from-okta'
-  - text: What should I do if I forget my YubiKey PIN?
-    href: '#what-should-i-do-if-i-forget-my-yubikey-pin'
 
 ---
 
