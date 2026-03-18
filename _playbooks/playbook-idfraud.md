@@ -7,8 +7,8 @@ description: This playbook serves as a resource and provides a foundational unde
 sidenav: playbooks
 sticky_sidenav: true
 
-pubdate: February 2025
-version: 1.0
+pubdate: March 2026
+version: 1.0.1
 
 subnav:
   - text: Acknowledgments
@@ -81,6 +81,12 @@ This playbook is a collaboration between the Federal Chief Information Security 
         <th scope='col'>Change/Updates</th>
       </tr>
       </thead>
+      <tr>
+        <th scope='row'>1.0.1</th>
+        <td>OGP Identity Assurance and Trust Access Division</td>
+        <td>March 2026</td>
+        <td>Verified alignment with NIST SP 800-63-4.</td>
+      </tr>
       <tr>
         <th scope='row'>1.0</th>
         <td>OGP Identity Assurance and Trust Access Division</td>
