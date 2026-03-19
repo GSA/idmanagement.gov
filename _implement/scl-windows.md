@@ -44,7 +44,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Use of Strong Identifiers</h4>
     <p class="usa-alert__text">
-      If you are having issues with your on-premise Active Directory PIV logon after Microsoft’s full enforcement of strong identifiers in September 2025, see [Step 4](#step-4---account-linking) below for guidance on resolution.
+      If you are having issues with your on-premise Active Directory PIV logon after Microsoft’s full enforcement of strong identifiers in September 2025, see <a class="usa-link" href="#step-4---account-linking">Step 4</a> below for guidance on resolution.
     </p>
   </div>
 </div>
