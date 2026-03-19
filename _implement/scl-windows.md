@@ -55,7 +55,7 @@ These Windows domain configuration guides will help you configure your on-premis
 
 There are many useful pages and technical articles available online that include details on configurations and using generic smart cards. The information presented here addresses common questions and configurations specific to the U.S. federal government, PIV smart cards, and U.S. federal civilian agency Certification Authorities (CAs). 
 
-This guide ensures that your domain configuration meets industry best practices for the secure use of PIV which is a phishing-resistant, smart card based, multi-factor, cryptographic authenticator categorized as Authentication Assurance Level (AAL) 3 in NIST SP 800-63B-4.
+This guide ensures that your domain configuration meets industry best practices for the secure use of PIV which is a phishing-resistant, smart card based, multi-factor, cryptographic authenticator categorized as Authentication Assurance Level (AAL) 3 in NIST SP 800-B-4.
 
 <div class="usa-alert usa-alert--info" role="alert">
   <div class="usa-alert__body">
@@ -153,9 +153,7 @@ There is also a graphical user interface to help perform these verification chec
   certutil -v -url mypiv_auth.cer
 ```
 
-The graphical user interface (GUI) allows you to check OCSP, CRL, and AIA (intermediate certificate retrievals).
-
-Using this interface provides a visual method to verify that the network and CA infrastructure meet the mandatory revocation and path validation requirements for AAL3 authenticators as specified in NIST SP 800-63-4.
+The graphical user interface (GUI) allows you to check OCSP, CRL, and AIA (intermediate certificate retrievals). Using this interface provides a visual method to verify that the network configurations allow for appropriate path discovery and validation best practices for PKI authenticators.
 
 <div class="usa-alert usa-alert--error" role="alert">
   <div class="usa-alert__body">
@@ -231,7 +229,8 @@ Domain controller certificates must be issued with a set of specific extensions 
       Client Authentication (1.3.6.1.5.5.7.3.2)
       Server Authentication (1.3.6.1.5.5.7.3.1)
 
-This specific EKU configuration is required for the Kerberos (PKINIT) service to complete the default mutual authentication conducted by Windows Domain Controllers.
+This specific EKU configuration is required for the Kerberos (PKINIT) service to complete
+the default mutual authentication conducted by Windows Domain Controllers.
 ```
 
 * The certificate Subject Alternative Name extension must contain the Domain Name System (DNS) qualifier and fully qualified domain controller name. For example:
