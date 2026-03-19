@@ -8,8 +8,8 @@ description: This guide directs agencies through planning, configuring, testing,
 sidenav: implement
 sticky_sidenav: true
 
-pubdate: March 2024  
-version: 1.0
+pubdate: March 2026  
+version: 2.0
 
 subnav:
   - text: Why Certificate Based Authentication
@@ -54,6 +54,11 @@ subnav:
         <th scope='col'>Change Description</th>
       </tr>
       </thead>
+      <tr>
+        <th scope='row'>2.0</th>
+        <td>03/17/2026</td>
+        <td>Reviewed and validated</td>
+      </tr>
       <tr>
         <th scope='row'>1.0</th>
         <td>03/12/2024</td>
