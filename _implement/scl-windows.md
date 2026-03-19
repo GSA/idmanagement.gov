@@ -35,7 +35,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Network Logon - Summary Notes</h4>
     <p class="usa-alert__text">
-      This technical implementation guide provides very detailed information on configuration of multiple components needed for enabling PIV network logon via an on-premise Active Directory Domain Controller.  Depending on your level of familiarity with some of these elements, you may benefit from a higher level summary of the pre-requisites and concepts provided in this <a class="usa-link" href="../docs/AD-SC-logon-summary.pdf" target="_blank" rel="noopener noreferrer">Summary Paper</a>.
+      This technical implementation guide provides very detailed information on configuration of multiple components needed for enabling PIV network logon via an on-premise Active Directory Domain Controller.  Depending on your level of familiarity with some of these elements, you may benefit from a higher level summary of the pre-requisites and concepts provided in this <a class="usa-link" href="{{site.baseurl}}/docs/AD-SC-logon-summary.pdf" target="_blank" rel="noopener noreferrer">Summary Paper</a>.
     </p>
   </div>
 </div>
