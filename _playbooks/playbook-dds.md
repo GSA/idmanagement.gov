@@ -81,6 +81,13 @@ case of role-based digital delegated signatures for OFR submissions.
       </tr>
       <tr>
         <th scope='row'>
+          2.0
+        </th>
+        <td>03/15/2025</td>
+        <td>Update to align to FPKI policy/certificate profile changes and align terminology</td>
+      </tr>
+      <tr>
+        <th scope='row'>
           1.0
         </th>
         <td>06/30/2022</td>
