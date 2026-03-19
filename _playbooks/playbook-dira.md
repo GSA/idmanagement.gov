@@ -11,8 +11,8 @@ pdf: "docs/playbook-dira.pdf"
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 2.0
-pubdate: June 15, 2025
+version: 2.1
+pubdate: March 18, 2026
 
 subnav:
   - text: Acknowledgments
@@ -96,6 +96,11 @@ subnav:
       </thead>
       <tr>
         <th scope='row'>2.0</th>
+        <td>03/18/2026</td>
+        <td>Updated based changes to NIST SP800-63-4</td>
+      </tr>
+      <tr>
+        <th scope='row'>2.0</th>
         <td>06/15/2025</td>
         <td>Updated based changes to NIST SP800-63-4</td>
       </tr>
@@ -120,56 +125,57 @@ subnav:
 
 ## Acknowledgments
 
-This playbook reflects the contributions of the Digital Identity Risk Assessment working group of the Identity, Credential, and Access Management Subcommittee (ICAMSC). The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA).
+This playbook reflects the original contributions of the Digital Identity Risk Assessment Working Group of the Identity, Credential, and Access Management Subcommittee (ICAMSC) and General Services Administration (GSA) updates. The working group was co-chaired by members from the Internal Revenue Service (IRS) and the Environmental Protection Agency (EPA). Contributions were made by the members of services or agencies representing the Center of Medicare and Medicaid Services (CMS), Department of Defense (DOD), Department of Health and Human Services (HHS), Department of Homeland Security (DHS), Department of Justice (DOJ), Department of the Treasury (USDT), Department of Transportation (DOT), and General Services Administration (GSA).
+GSA is pleased to announce the 2026 update of the Digital Identity Risk Assessment (DIRA) Playbook, finalized to ensure full alignment with the NIST Special Publication 800-63-4 suite. This modernization reflects GSA’s commitment to advancing the DIRM Framework (RMF) across the federal enterprise. By incorporating the latest standards for security, privacy, and equity, this updated playbook provides agencies with a streamlined, risk-driven methodology for selecting appropriate Identity, Authentication, and Federation Assurance Levels (xALs). This evolution empowers federal partners to deliver more secure and inclusive digital services while effectively mitigating emerging threats in an increasingly complex identity landscape. 
 
 ## Introduction
 
-A digital identity represents each individual engaged in an online transaction. However, in some cases an individual could have multiple digital identities and the real-life identity may not be known when used to access a digital service.<sup>[1](#fnref:1){:id="fn:1"}{:class="usa-link"}</sup> When confidence in an individual’s real-life identity is required to provide trust between the individual and the service being accessed, the identity proofing process establishes that the individual is who they claim to be and binds that identity to the authenticator used to access the service. The digital authentication process provides reasonable risk-based assurances that the authenticator being used is in the control of the individual who is authorized to access the service. This playbook presents  guidance in applying the National Institute of Standards and Technology (NIST) Special Publication 800-63-4 Digital Identity Guidelines series to perform a Digital Identity Risk Assessment (DIRA).
+A digital identity represents each individual engaged in an online transaction. However, in some cases an individual could have multiple digital identities and the real-life identity may not be known when used to access a digital service.<sup>[1](#fnref:1){:id="fn:1"}{:class="usa-link"}</sup> When confidence in an individual’s real-life identity is required to provide trust between the individual and the service being accessed, the identity proofing process establishes that the individual is who they claim to be and binds that identity to the authenticator used to access the service. The digital authentication process provides reasonable risk-based assurances that the authenticator being used is in the control of the individual who is authorized to access the service. This playbook presents  guidance in applying the National Institute of Standards and Technology (NIST) Special Publication 800-63-4 Digital Identity Guidelines series to perform a DIRA.
 
 ## Purpose
 
-Most federal agencies offer services through an IT system or application, such as a website, to their employees, other agencies, and the public. To access an application, users may need to provide identity information, create an account, and log in. These actions are part of the digital identity and authentication process.
+When agencies build or buy applications that use the most current identity proofing and authentication standards, they protect both the digital transactions, and the user and agency data behind the applications. DIRAs implement the DIRM process to determine the assurance levels for the digital transactions that involve digital identity or require human authentication. 
+This playbook supports federal agencies in meeting requirements from OMB Memorandum M-19-17 and NIST SP 800-63-4 by providing a structured, repeatable methodology to:
 
-DIRAs determine the assurance levels for the digital transactions that involve digital identity or require human authentication.<sup>[2](#fnref:2){:id="fn:2"}{:class="usa-link"}</sup> When agencies build or buy applications that use the most current identity proofing and authentication standards, they protect both the digital transactions, and the user and agency data behind the applications.
-
-This Digital Identity Risk Assessment playbook helps federal agency Chief Information Officer (CIO) and Chief Information Security Officer (CISO) teams and business application owners to:
-
-- Update and maintain consistent processes;  
-- Determine whether an agency application requires a DIRA;  
-- Integrate DIRA into agency Risk Management Framework (RMF) processes; and  
+- Identify risks to online services involving digital identity; 
+- Determine the appropriate assurance levels based on impact analysis;
+- Select and tailor controls to mitigate identified risks;
+- Document the risk management decisions and rationale; and
 - Learn practices to implement DIRA processes.
 
-NIST publishes implementation guides<sup>[3](#fnref:3){:id="fn:3"}{:class="usa-link"}</sup> and frequently asked questions (FAQs)<sup>[4](#fnref:4){:id="fn:4"}{:class="usa-link"}</sup> for agencies and service providers to use to create information technology solutions to meet these standards. This playbook promotes consistency, effectiveness, and efficiency in your agency’s processes.
+<sup>[3](#fnref:3){:id="fn:3"}{:class="usa-link"}</sup> <sup>[4](#fnref:4){:id="fn:4"}{:class="usa-link"}</sup> 
 
 ## How to Use This Playbook 
 
 This playbook is divided into three major sections. Read the entire playbook or jump directly to the section that will help your agency.
 
-- [High-Level DIRA Process](#high-level-dira-process){:class="usa-link"} - A step-by-step guide on how to approach a DIRA process for each agency.  
-- [Agency Process Plays](#agency-process-plays){:class="usa-link"} - Six plays to create efficient and consistent processes. For example, [Play #4](#play-4-shortcut-decision-guides){:class="usa-link"} includes a shortcut decision tree for a streamlined DIRA for some applications.  
-- [Appendices](#appendix-a-policy-standards-and-guidance){:class="usa-link"} - Example diagrams and templates, and references to policies and standards to use in your agency for communications.
+- [High-Level DIRA Process](#high-level-dira-process){:class="usa-link"} - A step-by-step guide on how to approach the DIRA process for each agency. This process implements the DIRM methodology required by NIST SP 800-63 Revision 4. 
+- [Agency Process Plays](#agency-process-plays){:class="usa-link"} - Six plays to create efficient and consistent processes. For example, [Play #4](#play-4-shortcut-decision-guides){:class="usa-link"} includes a shortcut decision tree for a streamlined DIRA for some applications. These plays support tailoring and continuous monitoring as emphasized in SP 800-63-4. 
+- [Appendices](#appendix-a-policy-standards-and-guidance){:class="usa-link"} - Example diagrams and templates, and references to policies and standards to use in your agency for communications. Appendix C provides a traceability matrix to SP 800-63-4 normative requirements.
 
 ## Scope
 
-The DIRA playbook applies to all federal Information Technology (IT) systems and applications that need identity proofing and authentication.<sup>[5](#fnref:5){:id="fn:5"}{:class="usa-link"}</sup> This playbook complements the following standards and policy:
+The DIRA Playbook applies to all federal Information Technology (IT) systems and applications that need identity proofing and authentication.<sup>[5](#fnref:5){:id="fn:5"}{:class="usa-link"}</sup> This playbook complements the following standards and policy:
 
 - [NIST Special Publication 800-63-4: Digital Identity Guidelines](https://pages.nist.gov/800-63-4/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  
 - [Office of Management and Budget Memorandum (OMB) M-19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
-All agency information technology systems should use the DIRA process as part of the Risk Management Framework (RMF) and Federal Information Security Modernization Act (FISMA) processes. Business owners and information security officers produce a Digital Identity Assessment Statement (DIAS) to document the assurance levels determined by collecting and analyzing the system or application data as part of the assessment process.
+All agency information technology systems should use the DIRA process as part of the RMF and FISMA processes to implement DIRM as required by SP 800-63-4. Business owners and information security officers produce a Digital Identity Acceptance Statement (DIAS) to document the assurance levels determined by collecting and analyzing the system or application data as part of the assessment process.
 
 This playbook does not apply to:
 
 - Non-person entities,<sup>[6](#fnref:6){:id="fn:6"}{:class="usa-link"}</sup> such as devices, Robotic Process Automation (RPA), or Machine Learning;  
 - Facilities access;  
-- Federation Assurance Level 3 solutions;<sup>[7](#fnref:7){:id="fn:7"}{:class="usa-link"}</sup> or  
+- High-assurance federation scenarios<sup>[7](#fnref:7){:id="fn:7"}{:class="usa-link"}</sup> requiring advanced bound authenticator verification; or  
 - National security systems (NSS).<sup>[8](#fnref:8){:id="fn:8"}{:class="usa-link"}</sup>
 
 The following sections describe a basic DIRA process and provide plays to help you implement efficiency into your agency’s processes.
 
 ## High-Level DIRA Process
 
-The DIRA process begins when a new online service that requires trust in the identity of the person or trust in the authenticator is identified or a time-driven or event-driven reassessment is triggered. The information identified in step 1 helps to determine the level of trust required. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a Digital Identity Assessment Statement ([DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx){:rel="noopener noreferrer"}{:class="usa-link"}), as shown in Figure 1. Using the DIAS template can help guide agencies through the DIRA process
+The DIRA process is the practical application used by federal agencies to fulfill the DIRM requirements established in NIST SP 800-63-4.
+
+The DIRA process begins when a new online service that requires trust in the identity of the person or trust in the authenticator is identified or a time-driven or event-driven reassessment is triggered. The information identified in step 1 helps to determine the level of trust required. Once it is determined that a DIRA is needed, application data is identified, collected, and analyzed to determine the assurance levels and produce a [DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx){:rel="noopener noreferrer"}{:class="usa-link"}, as shown in Figure 1. Using the DIAS template or equivalent can help guide agencies through the DIRA process.
 
 {:align="center"}
 ![Figure 1: Example DIRA Process]({{site.baseurl}}/assets/playbooks/dira/figure1.jpg)
@@ -197,7 +203,7 @@ The first step is to identify the functional scope and description of the online
 
 These definitions simplify complex requirements for individuals’ privacy, information security, identity, and access management.
 
-{% include alert-info.html heading="Key Point" content="Identifying categories of users helps define the requirements for more than the Digital Identity Risk Assessments. For example, requirements for privacy, records retention, and monitoring are based on user types and categories." %}
+{% include alert-info.html heading="Key Point" content="Identifying categories of users helps define the requirements for more than the DIRAs. For example, requirements for privacy, records retention, and monitoring are based on user types and categories." %}
 
 First, identify the user types and communities of users impacted by the application . Identifying an application’s community of users is important to the DIRA processes, as communities have different privacy, regulatory, and solution requirements to consider in risk assessments. Table 1 identifies user types and five common examples of communities of users. 
 
@@ -239,7 +245,9 @@ A digital transaction<sup>[9](#fnref:9){:id="fn:9"}{:class="usa-link"}</sup> is
 
 <br>
 
-{% include alert-info.html heading="Key Point" content="A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall digital identity risk assessment. Application owners and the information security team collaborate to identify, analyze, and assess the application’s digital transactions. Examples of transactions and transaction types are phrased as actions on data: Create, Read, Modify, Delete." %}
+{% include alert-info.html heading="Key Point" content="A government digital system may have multiple categories or types of transactions, which may require separate analysis within the overall DIRA. Application owners and the information security team collaborate to identify, analyze, and assess the application’s digital transactions. Examples of transactions and transaction types are phrased as actions on data: Create, Read, Modify, Delete." %}
+
+This step supports the DIRM impact analysis in NIST SP 800-63-4 by identifying user populations and transaction types that inform potential harm categories (including equity considerations).
 
 Finally, map the community of users to the common roles. Most applications have several different user roles, each with different access privileges and permissions. Examples of common user roles include:
 
@@ -312,10 +320,12 @@ Table 2 provides examples of user types, transactions, and roles.
 
 ## Step 2. Identify Risks and Assurance Levels 
 
+This step performs the impact analysis required by the DIRM process in NIST SP 800-63-4.
+
 Determine the digital identity risk for each assurance category by assessing the impacts for each community of user, user type, common role, and transactions identified in Step 1.
 
 - **Identity Assurance Levels (IALs)** indicate robustness of the identity proofing process to determine the identity of an individual and the level of confidence in that claimed identity.  
-- **Authentication Assurance Levels (AALs)** indicate the    robustness of the authentication process and the binding between an authenticator and a specific individual’s identifier. .  
+- **Authentication Assurance Levels (AALs)** indicate the    robustness of the authentication process and the binding between an authenticator and a specific individual’s identifier, including through bound authenticators.  
 - **Federation Assurance Levels (FALs)** indicate robustness of the federation process used to communicate authentication and attribute information and the level of confidence in an assertion used to communicate identity or authentication information across applications or agencies.
 
 The risks and impact assessment considers the risks to both the agency and the user for the transactions. The risk to one can be significant while not negatively impacting the other. It’s common for government applications to have different assurance levels based on differing impacts and risks for each community of users and transactions.
@@ -377,7 +387,7 @@ Identity Assurance Levels (IALs) define the processes and solutions used to iden
 
 Defining the IALs for each community of users and transactions from Step 1 is one of the more challenging aspects of a DIRA. The initial IAL correlates to how much personal data<sup>[10](#fnref:10){:id="fn:10"}{:class="usa-link"}</sup> is validated and verified for that user during the identity proofing process.<sup>[11](#fnref:11){:id="fn:11"}{:class="usa-link"}</sup>
 
-If the service doesn’t require the user to have a unique digital identity or prove who they are, then there is no IAL. Identity Assurance Level 1 (IAL1) provides basic confidence that the digital identity belongs to a real person and that person is who they say they are. Core attributes are collected from identity evidence or, if the identity evidence doesn’t provide all the necessary core attributes, they may be self-asserted by the user.   Identity evidence needs to be validated against authoritative or credible sources and the attributes need to be linked to the user.  .. At Identity Assurance Level 2 (IAL2) or 3 (IAL3), increasingly more personal information about the user needs to be validated and verified. NIST SP 800-63A-4, Section 4 specifies the requirements for each identity assurance level. 
+If the service doesn’t require the user to have a unique digital identity or prove who they are, then there is no IAL. Identity Assurance Level 1 (IAL1) provides basic confidence that the digital identity belongs to a real person and that person is who they say they are. Core attributes are collected from identity evidence or, if the identity evidence doesn’t provide all the necessary core attributes, they may be self-asserted by the user.   Identity evidence needs to be validated against authoritative or credible sources and the attributes need to be linked to the user. At Identity Assurance Level 2 (IAL2) or 3 (IAL3), increasingly more personal information about the user needs to be validated and verified. NIST SP 800-63A-4, Section 4 specifies the requirements for each identity assurance level. 
 
 {% include alert-info.html heading="Key Point" content="<p>The risks and impacts of excessive information collection for identity proofing needs to be strongly considered for each community of users and the transactions.</p><p>For public users and other non-organizational users, privacy benefits and privacy principles are key factors to consider.</p>
 <p>Application owners and agency processes need to include the Senior Agency Official for Privacy to define the risks, impact levels, and the Identity Assurance Levels .</p>" %}
@@ -398,25 +408,25 @@ Table 4 summarizes the control objectives and gives user profiles for each of th
   <tbody>
     <tr>
       <th scope="row">IAL1</th>
-      <td>Limit highly scalable attacks. Protect against synthetic identity. Protect against attacks that use compromised personal information.</td>
-      <td>Access to personal information is required but limited. User actions are limited (e.g., viewing and making modifications to individual personal information). Fraud cannot be directly perpetrated through available user functions. Users cannot receive payments until an offline or manual process is conducted.</td>
+      <td>Provide some confidence in the claimed identity by requiring the collection of self-asserted attributes to support basic service delivery and usability.</td>
+      <td>Authorized user access to non-sensitive services where identity verification is not required and data retention is strictly limited to preferences for customization.</td>
     </tr>
     <tr>
       <th scope="row">IAL2</th>
-      <td>Limit scaled and targeted attacks. Protect against basic evidence falsification and theft. Protect against basic social engineering.</td>
-      <td>Users can view and change financial information (e.g., a direct deposit location). Individuals can directly perpetrate financial fraud through the available application functionality. A user can view or modify other users’ personal information. Users have visibility into or access to proprietary information.</td>
+      <td>Provide high confidence in the claimed identity by requiring the remote or in-person validation of superior identity evidence and the verification of the claimant’s association with that evidence.</td>
+      <td>Authorized user access to personal information or sensitive services where high-confidence identity verification is required to prevent fraudulent enrollment or account takeover.</td>
     </tr>
     <tr>
       <th scope="row">IAL3</th>
-      <td>Limit sophisticated attacks. Protect against advanced evidence falsification, theft, and repudiation. Protect against advanced social engineering attacks.</td>
-      <td>Users have direct access to multiple highly sensitive records; administrator access to servers, systems, or security data; the ability to access large sets of data that may reveal sensitive information about one or many users; or access that could result in a breach that would constitute a major incident under OMB guidance.</td>
+      <td>Provide very high confidence in the claimed identity by requiring the in-person or supervised remote validation of multiple pieces of superior identity evidence and the presence of an authorized representative.</td>
+      <td>Authorized user access to classified information or high-value transactions where a compromise would constitute a major incident under federal guidance.</td>
     </tr>
   </tbody>
 </table>
 
 ## Authentication Assurance
 
-Authentication Assurance Levels indicate the strength of the authentication process and the binding between an authenticator and a specific individual’s identifier. AALs mitigate potential authentication errors (i.e., an attacker accessing a user’s account).
+Authentication Assurance Levels (AAls) indicate the strength of the authentication process and the binding between an authenticator and a specific individual’s identifier. AALs mitigate potential authentication errors (i.e., an attacker accessing a user’s account).
 
 - Authentication Assurance is: “Is this the same user as before?”  
 - Impacts are: “What are the risks to the government or to you if you are not the same user as before?”
@@ -445,18 +455,18 @@ Table 5 summarizes the control objectives and gives user profiles for each of th
   <tbody>
     <tr>
       <th scope="row">AAL1</th>
-      <td>Provide minimal protections against attacks. Deter password-focused attacks.</td>
-      <td>No personal information is available to any users, but some profile or preference data may be retained to support usability and the customization of applications.</td>
+      <td>Provide some confidence in identity continuity by requiring secure credential management and protecting against basic automated authentication attacks; phishing-resistant options are promoted to enhance user security.</td>
+      <td>Authorized users access non-sensitive services where data retention is strictly limited to preferences required for usability and customization; no sensitive PII is collected or exposed.</td>
     </tr>
     <tr>
       <th scope="row">AAL2</th>
-      <td>Require multifactor authentication. Offer phishing-resistant options.</td>
-      <td>Individual personal information can be viewed or modified by users. Limited proprietary information can be viewed by users.</td>
+      <td>Provide high confidence in identity continuity by requiring multi-factor authentication (MFA) and ensuring that verifiers offer at least one phishing-resistant option to protect against credential stuffing, verifier impersonation, and unauthorized session access.</td>
+      <td>Authorized user access to view or modify individual personal information and view limited proprietary data where high-confidence protection is required to prevent unauthorized disclosure or integrity loss.</td>
     </tr>
     <tr>
       <th scope="row">AAL3</th>
-      <td>Require phishing resistance and verifier compromise protections.</td>
-      <td>Highly sensitive information can be viewed or modified. Multiple proprietary records can be viewed or modified by users. Privileged user access could result in a breach that would constitute a major incident under OMB guidance.</td>
+      <td>Provide very high confidence in identity continuity by requiring hardware-based, phishing-resistant multi-factor authentication to protect against sophisticated impersonation and man-in-the-middle attacks</td>
+      <td>Authorized user access to view or modify highly sensitive or multiple proprietary records, or execution of privileged user access where a compromise would constitute a major incident under federal guidance.</td>
     </tr>
   </tbody>
 </table>
@@ -481,7 +491,7 @@ For *new* applications and defined users and transactions (Step 1):
 
 If your agency and application owner answers “Yes” to any of these questions, then the application is federated, *or could be federated* during the solution definition step (Step 3), and needs an FAL defined for each user community and transaction.
 
-{% include alert-info.html heading="Key Point" content="<p>Applications that don’t implement a federated capability document the rationale in the final Digital Identity Acceptance Statement.</p><p>FAL1 and FAL2 are good for most use cases across the federal government. Agencies and application owners should consider implementations based on the community of users and transactions.</p>" %}
+{% include alert-info.html heading="Key Point" content="<p>Applications that don’t implement a federated capability document the rationale in the final DIAS.</p><p>FAL1 and FAL2 are good for most use cases across the federal government. Agencies and application owners should consider implementations based on the community of users and transactions.</p>" %}
 
 FALs are implemented using standard-based protocols across the federal government. These protocols are commonly used in many applications and transactions globally and are routinely supported in commercial off-the-shelf (COTS), native cloud software-as-a-service, and consumer and enterprise mobile applications. Each FAL defines *minimum* requirements for how the integrations are performed and the requirements if the user’s information is passed between applications. For example, for some implementations, the federation assurance levels map to commonly used federation protocols such as OpenID Connect (OIDC) and Security Assertion Markup Language (SAML). How those implementations are done maps to the increasing FAL options.
 
@@ -509,18 +519,18 @@ Table 6 summarizes the control objectives and gives user profiles for each of th
   <tbody>
     <tr>
       <th scope="row">FAL1</th>
-      <td>Protect against forged assertions.</td>
-      <td>No sensitive personal information is available to any users but some profile or preference data may be retained to support usability or the customization of applications.</td>
+      <td>Protect against forged assertions by enforcing cryptographic signature validation and audience restriction for all federated bearer assertions.</td>
+      <td>Authorized users access non-sensitive services where data retention is strictly limited to preferences required for usability and customization; no sensitive PII is processed or exposed, and transactions require a minimum of AAL1.</td>
     </tr>
     <tr>
       <th scope="row">FAL2</th>
-      <td>Protect against forged assertions and injection attacks.</td>
-      <td>Users can access personal information and other sensitive data with appropriate authentication assurance levels (e.g., AAL2 or above).</td>
+      <td>Protect against forged assertions and injection attacks by requiring RP-initiated flows and encrypted, audience-restricted assertions to ensure transaction confidentiality.</td>
+      <td>Authorized users can access personal information and other sensitive data requiring a minimum of AAL2 authentication.</td>
     </tr>
     <tr>
       <th scope="row">FAL3</th>
-      <td>Protect against IdP compromise.</td>
-      <td>Federation primarily supports attribute exchange. Users have access to classified or highly sensitive information or services that could result in a breach that would constitute a major incident under OMB guidance.</td>
+      <td>Protect against IdP compromise by enforcing holder-of-key (HoK) binding to guarantee non-repudiation and subscriber identity verification during high-impact transactions.</td>
+      <td>Authorized users access classified or highly sensitive information where a compromise would constitute a major incident under OMB guidance; all transactions require a minimum of AAL3 and must enforce cryptographic binding of the identity assertion.</td>
     </tr>
   </tbody>
 </table>
@@ -528,6 +538,8 @@ Table 6 summarizes the control objectives and gives user profiles for each of th
 {% include alert-info.html heading="Key Point" content="<p>The DIRA provides a minimum level and does not change established credentialing processes. For example, if a DIRA arrives at AAL2, agency leadership may decide to allow an AAL2 credential but it should not downgrade or alter an AAL3 credentialing process to AAL2.</p>" %}
 
 ## Step 3. Determine Steps to Meet Assurance Levels
+
+This step supports the control selection and tailoring phase of the DIRM process in NIST SP 800-63-4.
 
 Analyze available technology and solutions at your agency, determine if they are sufficient enough to meet the application needs, and identify what you need to implement. Use data and agency enterprise defined needs when choosing solutions, including:
 
@@ -544,7 +556,7 @@ Your agency may need to tailor the initial assurance levels and baseline control
 - The availability of data that provides similar mitigations to those described in the Digital Identity Guidelines, or  
 - Other capabilities unique to the agency.
 
-All determinations  should be documented and justified.
+All determinations  should be documented and justified, including compensating or supplemental controls for any tailoring, in accordance with NIST SP 800-63-4's tailoring guidance.
 
 ## Step 4. Finalize Digital Identity Acceptance Statement
 
@@ -552,7 +564,11 @@ Formalize the results of the assessment process with a Digital Identity Acceptan
 
 An example of a [DIAS]({{site.baseurl}}/docs/playbook-dira-dias-template.docx){:rel="noopener noreferrer"}{:class="usa-link"} is included in [Appendix B. Examples and Templates](#appendix-b-examples-and-templates){:class="usa-link"}.
 
+**Best Practices:** The DIAS is a living document that should be reviewed and updated during continuous monitoring and reassessment (Step 5) or when significant changes occur to the service, user population, or threat landscape.
+
 ## Step 5. Reassess
+
+This step supports the continuous monitoring and reassessment phase of the DIRM process in NIST SP 800-63-4.
 
 A digital identity reassessment may be time-driven or event-driven and applies to a reassessment of the DIRA. This step allows you to reevaluate and assess areas to 
 
@@ -565,6 +581,8 @@ If an event triggers a security impact analysis, an agency may perform a DIRA ou
 - Risk environment;  
 - How information, including PII, is processed; or  
 - How information is processed, stored, or transmitted by the system.
+
+Agencies should integrate DIRA reassessment into their ongoing RMF and continuous monitoring processes to ensure assurance levels remain appropriate throughout the service lifecycle.
 
 ## Agency Process Plays
 
@@ -585,7 +603,7 @@ Step 1 of the example DIRA process happens in the Categorize phase. When categor
 A Privacy Threshold Analysis (PTA) is typically included in this phase. The identification of the DIRA IALs, AALs, and FALs directly correlates to the collection of PII; who has access to what information; whether information is self-asserted or verified; and the risks of excessive identity proofing.
 
 
-{% include alert-info.html heading="Key Point" content="<p>Align Step 1 in a DIRA process with the Categorize System phase of the Risk Management Framework.</p>" %}
+{% include alert-info.html heading="Key Point" content="<p>Align Step 1 in a DIRA process with the Categorize System phase of the RMF. The Digital Identity Acceptance Statement must include the IALs, AALs, and FALs where the application was assessed and the implementations made. </p>" %}
 
 Meanwhile, Step 4 of the example DIRA process aligns with the Assessment phase. The Digital Identity Acceptance Statement must include the IALs, AALs, and FALs where the application was assessed and the implementations made.
 
@@ -709,8 +727,8 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
     </tr>
     <tr>
       <th scope="row">The application leverages the agency enterprise single sign on (SSO)/enterprise access manager for authentication of employees and contractors.</th>
-      <td>Yes</td>
-      <td>Requires proof of identity (IAL3).<sup><a class="usa-link" id="fn:18" href="#fnref:18">18</a></sup> Multi-factor authentication to agency application (AAL2) federation between agency applications (FAL2). Additionally, requires affiliation as a federal employee or contractor.</td>
+      <td>No</td>
+      <td>Requires proof of identity (IAL3).<sup><a class="usa-link" id="fn:18" href="#fnref:18">18</a></sup> consistent with federal workforce requirements (typically IAL2). Phishing-resistant multi-factor authentication (typically AAL2 or higher) and federation between agency applications (typically FAL1). Additionally, requires affiliation as a federal employee or contractor.</td>
     </tr>
     <tr>
       <th scope="row"><p>Data and other resources available are approved for public release, are intended to be freely shared, and public users aren’t required to create accounts to access this information.</p>
@@ -723,27 +741,37 @@ Table 6 provides an example shortcut guide for determining whether to perform a 
         </ul>
       </p>
       </th>
-      <td>No</td>
+      <td><p>No (for public users)</p>
+      <p>Yes (for agency privileged users)</p>
+      </td>
       <td><p>Public users don't create accounts or login.</p>
       <p>Agency-affiliated privileged users with permissions to edit content still require higher IAL and a minimum AAL2 (two-factor).</p>
       </td>
     </tr>
     <tr>
       <th scope="row">Data and other resources are intended for public release. Doesn't include any controlled unclassified information, but allows public users to create accounts to better support the public user’s experience.</th>
-      <td>Yes</td>
-      <td>Doesn't require proof of a real-life identity (No IAL). Single or multi-factor authentication (AAL1).</td>
+      <td><p>No (for public users)</p>
+      <p>Yes (for agency privileged users)</p>
+      </td>
+      <td><p>IAL1 (Self-asserted; no proof of real-life identity required). AAL1 (Single-factor).</p>
+      <p>Agency-affiliated privileged users require a higher IAL and a minimum of AAL2.</p>
+      </td>
     </tr>
     <tr>
       <th scope="row">Allows public users to input and access their own personally identifiable information (PII) or protected health information (PHI) for informational purposes. The information isn’t required to be verified. The application doesn’t allow public users to access anyone else’s PII or PHI.</th>
-      <td>Yes</td>
-      <td>Doesn't require proof of a real-life identity (No IAL). Multi-factor authentication (AAL2).</td>
+      <td><p>No (for public users)</p>
+      <p>Yes (for agency privileged users)</p>
+      </td>
+     <td><p>IAL1 (Self-asserted); AAL1 (Single-factor); FAL1 (Bearer assertion).</p>
+      <p>Higher IAL (Per agency policy); Minimum AAL2 (Multi-factor).</p>
+      </td>
     </tr>
   </tbody>
 </table>
 
 ## Play 5. Leverage Existing Agency Tools
 
-Leverage existing tools at your agency to automate and create repeatable and consistent DIRA processes. For example, one agency integrated the DIRA process into its Governance Risk and Compliance (GRC) tool. The agency was able to simplify integration with the Risk Management Framework (RMF) lifecycle and support the inclusion of the DIAS with other system artifacts. Agencies that use commercial GRC tools should consider integrating DIRAs into the workflows.
+Leverage existing tools at your agency to automate and create repeatable and consistent DIRA processes. For example, one agency integrated the DIRA process into its Governance Risk and Compliance (GRC) tool. The agency was able to simplify integration with the RMF lifecycle and support the inclusion of the DIAS with other system artifacts. Agencies that use commercial GRC tools should consider integrating DIRAs into the workflows.
 
 There are an increasing number of AI-driven tools entering the market that can help to facilitate the DIRA process. For example,  AI- powered Identity verification and fraud prevention tools can help reduce overall identity risks and streamline many different on-boarding processes.
 
@@ -781,15 +809,15 @@ This section provides links to the federal laws, policies, standards and other g
     </tr>
     <tr>
       <th scope="row">NIST SP 800-63A-4</th>
-      <td>National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63A-4; <a class="usa-link usa-link--external" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf" rel="noopener noreferrer" target="_blank">Digital Identity Guidelines: Enrollment and Identity Proofing</a>, June 22, 2017</td>
+      <td>National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63A-4; <a class="usa-link usa-link--external" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf" rel="noopener noreferrer" target="_blank">Digital Identity Guidelines: Enrollment and Identity Proofing</a>, 2024</td>
     </tr>
     <tr>
       <th scope="row">NIST SP 800-63B-4</th>
-      <td>National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63B-4; <a class="usa-link usa-link--external" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf" rel="noopener noreferrer" target="_blank">Digital Identity Guidelines: Authentication and Lifecycle Management</a>, June 2017</td>
+      <td>National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63B-4; <a class="usa-link usa-link--external" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf" rel="noopener noreferrer" target="_blank">Digital Identity Guidelines: Authentication and Lifecycle Management</a>, 2024</td>
     </tr>
     <tr>
       <th scope="row">NIST SP 800-63C-4</th>
-      <td>National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63C-4; <a class="usa-link usa-link--external" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63c.pdf" rel="noopener noreferrer" target="_blank">Digital Identity Guidelines: Federation and Assertions</a>, June 22, 2017</td>
+      <td>National Institute of Standards and Technology (NIST) Special Publication (SP) 800-63C-4; <a class="usa-link usa-link--external" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63c.pdf" rel="noopener noreferrer" target="_blank">Digital Identity Guidelines: Federation and Assertions</a>, 2024</td>
     </tr>
     <tr>
       <th scope="row">FISMA</th>
@@ -804,8 +832,8 @@ This section provides links to the federal laws, policies, standards and other g
       <td>Executive Order 13681, <a class="usa-link usa-link--external" href="https://obamawhitehouse.archives.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions" rel="noopener noreferrer" target="_blank">Improving the Security of Consumer Financial Transactions</a>, October 2014</td>
     </tr>
     <tr>
-      <th scope="row">EO 13800</th>
-      <td>Executive Order 13800, <a class="usa-link usa-link--external" href="https://obamawhitehouse.archives.gov/the-press-office/2014/10/17/executive-order-improving-security-consumer-financial-transactions" rel="noopener noreferrer" target="_blank">Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure</a>, May 2017</td>
+      <th scope="row">EO 14306</th>
+      <td>Executive Order 14306, <a class="usa-link usa-link--external" href="https://www.whitehouse.gov/presidential-actions/2025/06/sustaining-select-efforts-to-strengthen-the-nations-cybersecurity-and-amending-executive-order-13694-and-executive-order-14144/" rel="noopener noreferrer" target="_blank">Sustaining Select Efforts to Strengthen the Nation's Cybersecurity and Amending Executive Order 13694 and Executive Order 14144</a>, June 6, 2025</td>
     </tr>
     <tr>
       <th scope="row">A-130</th>
@@ -856,7 +884,7 @@ This appendix provides examples and templates of existing resources to help esta
 
 ## 1. Process Flow Examples
 
-This section includes example process flow diagrams used by some agencies for the Digital Identity Risk Assessment processes. Choose and reuse any process flow that works best for your agency.
+This section includes example process flow diagrams used by some agencies for the DIRA processes. Choose and reuse any process flow that works best for your agency.
 
 {:align="center"}
 ![Figure 9:  The DIRA Process from Data Collection to Ongoing Assessment]({{site.baseurl}}/assets/playbooks/dira/figure9.jpg)
@@ -1194,7 +1222,7 @@ This appendix includes both normative requirements and informative references fr
 
 ## Appendix D. Updates to NIST Special Publication 800-63
 
-In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In 2025, NIST updated SP 800-63-3 with SP 800-63-4. This update expanded security, privacy, and customer experience considerations, updated the digital identity models to include a user-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and streamlined the digital identity risk management process.NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Figure 12 depicts updated content details.
+In June 2017, NIST replaced SP 800-63-2,Electronic Authentication Guideline,with SP 800-63-3, Digital Identity Guidelines. The new standard provided agencies with increased security and privacy, more flexibility to meet their mission and constituent needs, and better alignment with digital identity best practices. In late 2025, NIST superseded SP 800-63-3 with the finalized SP 800-63-4 suite.. This update expanded security, privacy, and equity considerations, updated the digital identity models to include a subscriber-controlled wallet federation model that addresses the increased attention and adoption of digital wallets, and formalized the DIRM framework. NIST’s Digital Identity Guidelines identify the implementation requirements for conducting a DIRA and enable modernized risk-driven approaches for digital identities. Appendix C contains the Requirements Traceability Matrix for the content details.
 
 {:align="center"}
 ![Figure 12: Digital Identity Guideline Information Locations]({{site.baseurl}}/assets/playbooks/dira/figure12.png)
@@ -1218,21 +1246,21 @@ The xALs in the revised guidance can be mixed and matched, giving agencies the f
 
 
 1. {:id="fnref:1"} A digital service is any federal Information Technology (IT) system or application accessible over the public internet or agency intranet. [↩](#fn:1)
-2. {:id="fnref:2"} A Digital Identity Risk Assessment is a method of applying Digital Identity Risk Management required by OMB Memorandum 19-17: Enabling Mission Delivery through Improved Identity, Credential, and Access Management, and described in NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:2)     
+2. {:id="fnref:2"} The DIRA process is a method of applying the DIRM framework as established in the finalized NIST SP 800-63-4. The older 800-63-3 version has been officially superseded [↩](#fn:2)     
 3. {:id="fnref:3"} For more information, refer to NIST Special Publication 800-63-4 Digital Identity Guidelines. [↩](#fn:3)
 4. {:id="fnref:4"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Frequently Asked Questions. [↩](#fn:4)  
 5. {:id="fnref:5"} Pursuant to 0MB Circular A-130, “information system” means a discrete set of information resources organized for the collection, processing, maintenance, use, sharing, dissemination, or disposition of information. System and application are used synonymously throughout this playbook. [↩](#fn:5)  
-6. {:id="fnref:6"} Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 1.1, Scope and Applicability. [↩](#fn:6)  
+6. {:id="fnref:6"} Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 1, Introduction and Section 2, Concepts. [↩](#fn:6)  
 7. {:id="fnref:7"} The working group members determined Federation Assurance Level 3 was complex and not widely supported in commercial products and implementations. The working group decided the Federation Assurance Level 3 explanations were better served by agency technical exchanges or deferred to details included in NIST Special Publications. [↩](#fn:7)  
 8. {:id="fnref:8"} Federal Information Security Modernization Act of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283, December 8, 2014. [↩](#fn:8)  
 9. {:id="fnref:9"} Refer to NIST Special Publication 800-63-4 Digital Identity Guidelines, Appendix B, Glossary. [↩](#fn:9)  
 10. {:id="fnref:10"} Personal data is personally identifiable information (PII). As defined by OMB Circular A-130, PII is information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specific individual. [↩]({#fn:10)  
 11. {:id="fnref:11"} Agencies collecting identity information as part of identity proofing may be subject to specific retention policies in accordance with applicable laws, regulations, or policies, including any National Archives and Records Administration (NARA) records retention schedules. [↩]({#fn:11)  
-12. {:id="fnref:12"} Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.2 Authentication Assurance Level 2.[↩](#fn:12)  
-13. {:id="fnref:13"} Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 2.3 Authentication Assurance Level 3. [↩](#fn:13)    
+12. {:id="fnref:12"} Examples only. Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 3.2 Authentication Assurance Level 2.[↩](#fn:12)  
+13. {:id="fnref:13"} Refer to NIST Special Publication 800-63B-4 Digital Identity Guidelines, Authentication and Authenticator Management. Section 3.3 Authentication Assurance Level 3. [↩](#fn:13)    
 14. {:id="fnref:14"} See NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 2.4, Federation and Assertions. [↩](#fn:14)  
 15. {:id="fnref:15"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4, Tailor and Document Assurance Levels. [↩](#fn:15) 
 16. {:id="fnref:16"} NIST Special Publication 800-63-4 Digital Identity Guidelines, Section 3.4.4, Digital Identity Acceptance Statement. [↩](#fn:16) 
 17. {:id="fnref:17"} Federal Information Processing Standards Publication 199 (FIPS 199) Standards for Security Categorization of Federal Information and Information Systems, Section 3, Categorization of Information and Information Systems (page 1). [↩](#fn:17) 
-18. {:id="fnref:18"} Satisfied by the full PIV issuance processes, in accordance with government-wide policy and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors. [↩](#fn:18)
+18. {:id="fnref:18"}  Satisfied by the full PIV issuance process in accordance with FIPS 201-3, government-wide policy, and Office of Personnel Management (OPM) credentialing requirements for federal executive branch employees and contractors; this process typically meets the requirements for IAL2 and phishing-resistant AAL2. [↩](#fn:18)
     
