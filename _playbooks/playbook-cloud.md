@@ -9,8 +9,8 @@ description: The Cloud Identity Playbook is a four-step playbook to start or fur
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 1.2
-pubdate: December 29, 2022
+version: 1.3
+pubdate: March 17, 2026
 
 subnav:
   - text: Executive Summary
@@ -64,6 +64,13 @@ This playbook is a collaboration between the Federal Chief Information Security 
       </thead>
       <tr>
         <th scope='row'>
+          1.3
+        </th>
+        <td>3/17/26</td>
+        <td>Updated links to reflect NIST SP 800-63 v4</td>
+      </tr>
+      <tr>
+        <th scope='row'>
           1.2
         </th>
         <td>12/29/22</td>
@@ -101,7 +108,7 @@ This playbook answers these questions with two distinct sections. The executive-
 
 The Cloud Identity Journey answers the second question. While written for ICAM program managers, it can benefit anyone planning Cloud Identity projects or initiatives. There are four Cloud Identity journey steps:
 
-1. [Gain leadership support](#step-1-gain-support){:class="usa-link"} through collaboration on a migration path. Create user stories that encourage Cloud Identity services to improve user experience and business processes. Capture these in a business case. Align your business case with your agency’s zero trust architecture (ZTA) initiative.
+1. [Gain leadership support](#step-1-gain-support){:class="usa-link"} through collaboration on a migration path. Create user stories that encourage Cloud Identity services to improve user experience and business processes. Capture these in a business case. Align your business case with your agency’s zero trust architecture (ZTA) initiative. For more information, see [NIST Special Publication 800-207 - Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 2. Identify your success factors and [document a plan](#step-2-document-your-plan){:class="usa-link"} that addresses policy and strategy.
 3. Understand unique Cloud Identity [architecture considerations](#step-3-architecture-considerations){:class="usa-link"} across identity management, credential management, access management, governance, and federation.
 4. [Test and deploy](#step-4-test-and-deploy-identity-automation){:class="usa-link"} identity automation.
@@ -110,12 +117,12 @@ This playbook offers recommendations and lessons learned from the Cloud Identity
 
 ## Key Terms
 
-- **Assertion** - A digital statement from a verifier (usually an Identity Provider) to a Relying Party (usually an application) that contains subscriber (usually a username) information. It also may have additional attributes such as government employee, law enforcement agent, or authenticator type used in an access control decision.v
-- **Cloud Computing** - A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
+- **Assertion** - A digital statement from a verifier (usually an Identity Provider) to a Relying Party (usually an application) that contains subscriber (usually a username) information. It also may have additional attributes such as government employee, law enforcement agent, or authenticator type used in an access control decision.
+- **Cloud Computing** - A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. For more information, see [NIST Special Publication 800-145 - The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - **Cloud Service Model** - A Cloud Service Provider service model includes Software as a Service (SaaS), Platform as a Service (PaaS), and Infrastructure as a Service (IaaS).
 - **Credential Service Provider (CSP)** - Issues and manages credentials.
 - **Digital Worker Identity** - A type of non-person entity specific to digital identity for software. Examples of digital worker identities include artificial intelligence, machine learning, bots, and potentially other software programs or services.
-- **Federation** - The technology, policies, standards, and processes that allow an agency to share digital identities, attributes, and credentials between trust domains or organizations. Federation usually occurs through an assertion.
+- **Federation** - The technology, policies, standards, and processes that allow an agency to share digital identities, attributes, and credentials between trust domains or organizations. Federation usually occurs through an assertion. [NIST Special Publication 800-63C](https://pages.nist.gov/800-63-4/sp800-63c.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - **Identity as a Service (IDaaS)** - An ICAM service delivered in a Software as a Service cloud service model.
 - **Identity Provider (IdP)** - Manages user authenticators and issues assertions used for federation. An Identity Provider could also operate as a Credential Service Provider if it issues credentials.
 - **Machine Identity** - A digital identity for physical hardware and a class of non-person entities in cyberspace. Examples of machine identities include servers, switches, printers, and other hardware devices.
@@ -293,14 +300,14 @@ A vital element of a business case is a stakeholder analysis. Follow the analysi
 | Identity | IDaaS incorporates SSO, MFA, and directory services in a single platform that supports multiple phishing-resistant authenticator options. It may allow an Application Programming Interface to quickly query IDaaS identity stores information, making it easier to answer security questions from a single location. A cloud service operates on modern platforms and can integrate new protocols and features faster than on-premises Identity Providers. Agencies can focus more on delivering identity services than on maintaining identity infrastructure. |
 | Device | An IDaaS may act as a policy enforcement point and leverage device identification and health attributes such as device type, operating system, operating system version, and location to aid access and authorization decisions. |
 | Network | Software-defined network tools, cloud access security brokers, and other zero trust network solutions must integrate with an Identity Provider to provide identity attributes as part of an access and authorization decision. Cloud solutions often integrate more efficiently with other cloud solutions. An IDaaS may have the capability to act on risk indicators to detect a real-time session change (e.g., the user location changes from Virginia to California in a minute and triggers a re-authentication). |
-| Application | An IDaaS may act as a centralized policy enforcement point. IDaaS may integrate more efficiently with threat protection data sources and leverage artificial intelligence and machine learning to apply continuous authorization decisions, creating a dynamic enforcement point. Centralizing access also improves an agency's ability to [gather log data to investigate and remediate cybersecurity incidents](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. |
+| Application | An IDaaS may act as a centralized policy enforcement point. IDaaS may integrate more efficiently with threat protection data sources and leverage artificial intelligence and machine learning to apply continuous authorization decisions, creating a dynamic enforcement point. Centralizing access also improves an agency's ability to [gather log data to investigate and remediate cybersecurity incidents](https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-31-Improving-the-Federal-Governments-Investigative-and-Remediation-Capabilities-Related-to-Cybersecurity-Incidents.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. For more information see, [NIST Interagency Report 8360 - Machine Learning for Access Control Policy Verification](https://csrc.nist.gov/publications/detail/nistir/8360/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. |
 | Data | An IDaaS may support advanced access policies that use data tags as part of an access decision. |
 
 ## Step 2. Document Your Plan
 
 The first step in any journey is identifying the destination. Document your plan in three stages:
 
-1. Draft a [Cloud Identity strategy](#cloud-identity-strategy-and-goals){:class="usa-link"}, that outlines strategic goals and an approach.
+1. Draft a [Cloud Identity strategy](#cloud-identity-strategy-and-goals){:class="usa-link"} that outlines strategic goals and an approach.
 2. Include [quantifiable metrics](#establish-quantifiable-metrics){:class="usa-link"} to gauge success.
 3. Write a [policy](#cloud-identity-policy){:class="usa-link"} to capture specific governance elements to help achieve the strategy.
 
@@ -326,7 +333,7 @@ Table 6 lists business requirements and cloud options for core FICAM services.
 | Credential Management | Promote interoperability and efficiency across the federal government by buying and building ICAM solutions that use open, commercially- adopted standards. | Leverage an IDaaS that supports multiple types of phishing-resistant authenticators. An agency should target implementing passwordless options or completely removing passwords, even as part of an MFA. |
 | Access Management | Adopt and use cloud-ready systems that provide an efficient and secure way to access resources. | A primary feature of IDaaS is SSO. |
 | Governance | Monitor and respond to user behavior and events by using data as a strategic asset to make adaptive and risk-based decisions. | Ensure that your IDaaS services can export logs to support user behavior analytics. A part of technical identity governance is performing access certifications and analytics for role mining, automated provisioning, de-provisioning, and account discovery. |
-| Federation | Leverage federated solutions to accept identity and authentication assertions made by other agency and mission partners when efficient. | Implement federated access through an SSO tool. As part of a federation, you may decide to operate an Open Authorization (OAuth) service for authorization tokens. A vital part of external federations is legal agreements to document the governance and technical requirements. |
+| Federation | Leverage federated solutions to accept identity and authentication assertions made by other agency and mission partners when efficient. | Implement federated access through an SSO tool. As part of a federation, you may decide to operate an [Open Authorization (OAuth)](https://oauth.net/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} service for authorization tokens. A vital part of external federations is legal agreements to document the governance and technical requirements. |
 
 Here are a five goals to consider as you define your Cloud Identity strategy:
 
@@ -392,15 +399,15 @@ A smart card is not automatically a PIV just as authenticators are not automatic
 
 1. **Allow Multiple Phishing-Resistant Authenticators.** The government issues federal employees and contractors PIV cards for physical and digital access, but the cards may not fit every digital use case, such as cloud, mobile, or command lines. Employees also need a comparable authenticator alternative in case they lose or cannot use a PIV card. Use the [Digital Identity Risk]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} Assessment process to identify a minimum authenticator assurance level based on the user transaction risk. See the National Security Agency fact sheet on [potential secondary authenticator options](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3562460/nsa-shares-recommendations-to-advance-device-security-within-a-zero-trust-frame/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for workforce use cases.
 2. **NPE Credentialing.** Agencies should conduct risk assessments on NPE access. Part of this process determines if, how, and when to enforce more stringent controls, auditing, and monitoring. Compromise of an NPE credential can occur in much the same way as a human user’s credential, and detection may not occur for an extended period. An IDaaS may have the capability to act as an API access key centralized repository for easier management and auditing.
-3. **Memorized Secrets.** A memorized secret is a password or a PIN. Only use passwords as part of an MFA and as a last resort with additional controls. Until an agency can implement passwordless, phishing-resistant authenticators, follow [NIST Special Publication 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} guidelines for passwords in IDaaS:
+3. **Passwords.** A password or a PIN. Only use passwords as part of an MFA and as a last resort with additional controls. Until an agency can implement passwordless, phishing-resistant authenticators, follow [NIST Special Publication 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} guidelines for passwords in IDaaS:
 
-- Allow passphrases.
-- Check against breach corpora, dictionary words, repetitive characters, or context-specific and denied.
-- Offer a password strength meter.
-- Limit the number of failed attempts before a lock-out or a password reset.
-- Not require periodic password updates.
-- Use as part of a multifactor authenticator.
-- Allow a user to cut and paste a password.
+* Allow passphrases.  
+* Check against breach corpora, dictionary words, repetitive characters, or context-specific and denied.  
+* Offer a password strength meter.  
+* Limit the number of failed attempts before a lock-out or a password reset.  
+* Not require periodic password updates.  
+* Use as part of a multifactor authenticator.  
+* Allow a user to cut and paste a password.
 
 {% include alert-warning.html heading="Risk Management Challenge - Unique Credentials" content="Credentials should be assigned on an individual basis and not shared. If a credential must be shared, NIST recommends requiring individual authentication to access the shared credential." %} 
 
@@ -411,7 +418,7 @@ A primary IDaaS capability is a centralized policy enforcement point that may in
 1. **Integrate Identity and Cloud Access.** Access in this context means creating network paths for users from an agency network (direct or through a virtual private network) and potentially for users not on an agency network. For example, the Email as a Service logon page is accessible off-network but requires SSO, which is only accessible on the agency network. [Trusted Internet Connection 3.0](https://www.cisa.gov/publication/tic-30-core-guidance-documents){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} provides two cloud access options through either a Cloud Access Security Broker or a Security Gateway. Both may operate in a forward or reverse proxy mode to monitor agency traffic or bring your own device and apply access policies in real time. This feature typically requires integration with an IdP.
 
 2. **Protocol Monitoring.** Access comes in many protocols. Monitor access attempts over all possible protocols, such as HTTPS and secure shell. Factor in port translation technology that converts ports and protocols (e.g., Converts HTTPS into Secure Shell (SSH)).
-3. **Enable Risk-Based Access Control.** Many cloud access tools can leverage telemetry decisions such as device type, browser type, and location for Attribute-Based Access Control. Some IDaaS may provide native or, through an API, risk information to enforce risk-based access control, including behavior analytics and threat information feeds. Verify how and if an IDaaS can support this capability.
+3. **Enable Risk-Based Access Control.** Many cloud access tools can leverage telemetry decisions such as device type, browser type, and location for Attribute-Based Access Control (ABAC). Some IDaaS may provide native or, through an API, risk information to enforce risk-based access control, including behavior analytics and threat information feeds. Verify how and if an IDaaS can support this capability. For more information, see [NIST Special Publication 800-204B - Attribute-Based Access Control for Microservices-based Applications Using a Service Mesh](https://csrc.nist.gov/publications/detail/sp/800-204b/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [NIST Special Publication 800-210 - General Access Control Guidance for Cloud Systems](https://csrc.nist.gov/publications/detail/sp/800-210/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 {% include alert-info.html heading="Access Policy by User Type" content="Application owners can determine ideal conditions for access, such as during working hours, from the United States, on government-furnished equipment, or on an approved device, by reviewing access or activity logs. Centrally identify, implement, and track access policies and exceptions with an IDaaS." %} 
 
@@ -453,21 +460,22 @@ Agencies leverage trust frameworks daily for different purposes. The Federal Pub
 See [NIST Interagency Report 8149](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} for more information on trust frameworks.
 
 Federation trust frameworks also exist in the Federal Government.
-- [Max Authentication Federated Login](https://login.max.gov/cas/login?service=https%3A%2F%2Fportal.max.gov%2Fhome%2Flogin%2Fcas){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Provides a government-to-government federation service for either access to Max.gov or an agency application. Typically, customer agencies must sign an agreement and use the Max.gov assertion profile.
+- [Max Authentication Federated Login](https://login.max.gov/cas/login?service=https%3A%2F%2Fportal.max.gov%2Fhome%2Flogin%2Fcas){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Provides a government-to-government federation service for either access to connect.gov or an agency application. Typically, customer agencies must sign an agreement and use the connect.gov assertion profile.
 - [GSA Login.gov](https://partners.login.gov/product/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Provides primarily a public-to-government federation service. It requires an agency customer agreement and adhering to the [login.gov assertion profile](https://developers.login.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 Some government agencies also recognize, participate in, and leverage non-government trust frameworks. Often, these organizations   do not manage identities or credentials directly. Most certify and annually audit services that provide identity proofing and credentialing.
 
 - The Federal PKI Policy Authority reviews the PKI trust frameworks of a small number of [non-government organizations]({{site.baseurl}}/trust-services/#non-government-pki-trust-framework){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to determine whether the policies, processes, legal agreements, privacy protections, security controls, and audit requirements are comparable to Federal PKI requirements. If comparable, the organizations that manage their communities’ rules act as a PKI bridge. 
-- GSA is a member of the [Kantara Initiative](https://kantarainitiative.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, which is a nonprofit, non-government trust framework program. It operates conformity assessment and assurance and grants trust marks to companies that show conformance to a Kantara standard based on NIST Special Publication 800-63-3. The Kantara Initiative accredits full identity service providers, component services, and Kantara-accredited assessors. An agency may recognize a Kantara trust mark to federate with an external Identity Provider. GSA is also are an associate member of the [Certification Authority / Browser Forum](https://cabforum.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, an industry forum that develops PKI baseline requirements for server, code signing, and secure email certificates.
+- GSA is a member of the [Kantara Initiative](https://kantarainitiative.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, which is a nonprofit, non-government trust framework program. It operates conformity assessment and assurance and grants trust marks to companies that show conformance to a Kantara standard based on NIST Special Publication 800-63-4. The Kantara Initiative accredits full identity service providers, component services, and Kantara-accredited assessors. An agency may recognize a Kantara trust mark to federate with an external Identity Provider. GSA is also an associate member of the [Certification Authority / Browser Forum](https://cabforum.org/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, an industry forum that develops PKI baseline requirements for server, code signing, and secure email certificates.
 - The [DirectTrust Health Information Service Provider](https://directtrust.org/who-we-are){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} is a PKI trust framework for the healthcare community collaboration leveraged by the Department of Health and Human Services (HHS). It is a nonprofit trade alliance that is an ANSI-accredited standards body, a trust framework supported by policy, and an accredited person or organization for reliable and trusted exchange across the DirectTrust network.
-- NIST is a member of the [Fast Identity Online (FIDO) Alliance](https://fidoalliance.org/overview/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, which is an open industry association that promotes the development of, use, and compliance with standards for authentication and device attestation. The FIDO Alliance certifies vendor products to conform to their [FIDO standard, including Functional Certification, Certified Authenticator Levels, and Biometric Component Certification programs](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. The FIDO2 authenticators are mentioned in the OMB Memorandum M-22-09 as an example of a phishing-resistant authenticator approach and in NIST Special Publication 800-63-3 implementation guidance as an example of impersonation-resistant authenticator.
+- NIST is a member of the [Fast Identity Online (FIDO) Alliance](https://fidoalliance.org/overview/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}, which is an open industry association that promotes the development of, use, and compliance with standards for authentication and device attestation. The FIDO Alliance certifies vendor products to conform to their [FIDO standard, including Functional Certification, Certified Authenticator Levels, and Biometric Component Certification programs](https://fidoalliance.org/certification/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. * W3C WebAuthn, which is used by authenticators that implement the FIDO2 specifications, is an example of a standard that provides phishing resistance. For more information, see [OMB Memorandum M-22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} and [NIST Special Publication 800-63-4](https://pages.nist.gov/800-63-4/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+
 
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Use Case - Using a third-party credential service provider (CSP)</h4>
     <p class="usa-alert__text">
-      The integrity of a Trust Framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure the identity proofing, authenticator, and federation assertion meets the intent of <a class="usa-link usa-link--external" href="https://pages.nist.gov/800-63-3/" target="_blank" rel="noopener noreferrer">NIST Special Publication 800-63-3 requirements</a>.  Using a third-party audit service provides the additional assurance of secure and compliant operations. In the context of FedRAMP, it is a third-party assessment organization or an annual compliance audit for the Federal Public Key Infrastructure Shared Service Providers. External examples used by federal agencies include the Kantara Initiative for federal full or component identity services and the DirectTrust for the Health Information Service Provider. The Trust Framework requirements set the assurance for how external digital identities and what NPEs are trusted to access an agency resource.
+      The integrity of a Trust Framework is vital when federating with external identities. The trust framework partners should have governance processes that may include a verified accreditation or audit process to ensure the identity proofing, authenticator, and federation assertion meets the intent of <a class="usa-link usa-link--external" href="https://pages.nist.gov/800-63-4/" target="_blank" rel="noopener noreferrer">NIST Special Publication 800-63-4 requirements</a>.  Using a third-party audit service provides the additional assurance of secure and compliant operations. In the context of FedRAMP, it is a third-party assessment organization or an annual compliance audit for the Federal Public Key Infrastructure Shared Service Providers. External examples used by federal agencies include the Kantara Initiative for federal full or component identity services and the DirectTrust for the Health Information Service Provider. The Trust Framework requirements set the assurance for how external digital identities and what NPEs are trusted to access an agency resource.
     </p>
   </div>
 </div>
@@ -527,14 +535,17 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 2. [Federal Cloud Smart Strategy](https://cloud.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [Office of Management and Budget Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5. [Office of Management and Budget Memorandum](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) M-22-09{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ### Standards
 
-1. [NIST Special Publication 800-63 - Digital Identity Guidelines](https://pages.nist.gov/800-63-3/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-2. [NIST Special Publication 800-145 - The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-3. [NIST Special Publication 800-204B - Attribute-Based Access Control for Microservices-based Applications Using a Service Mesh](https://csrc.nist.gov/publications/detail/sp/800-204b/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-4. [NIST Special Publication 800-207 - Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-5. [NIST Special Publication 800-210 - General Access Control Guidance for Cloud Systems](https://csrc.nist.gov/publications/detail/sp/800-210/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+1. [NIST Special Publication 800-63 - Digital Identity Guidelines](https://pages.nist.gov/800-63-4/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [NIST Special Publication 800-63B \- Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  
+3. [NIST Special Publication 800-63C \- Federation and Assertions](https://pages.nist.gov/800-63-4/sp800-63c.html){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+4. [NIST Special Publication 800-145 - The NIST Definition of Cloud Computing](https://csrc.nist.gov/publications/detail/sp/800-145/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5. [NIST Special Publication 800-204B - Attribute-Based Access Control for Microservices-based Applications Using a Service Mesh](https://csrc.nist.gov/publications/detail/sp/800-204b/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+6. [NIST Special Publication 800-207 - Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+7. [NIST Special Publication 800-210 - General Access Control Guidance for Cloud Systems](https://csrc.nist.gov/publications/detail/sp/800-210/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ### Guidance
 
@@ -551,10 +562,9 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 11. [NIST Interagency Report 8149 - Developing Trust Frameworks to Support Identity Federations](https://csrc.nist.gov/publications/detail/nistir/8149/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 12. [NIST Interagency Report 8335 - Identity as a Service for Public Safety Organizations](https://csrc.nist.gov/publications/detail/nistir/8335/draft){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 13. [NIST Interagency Report 8360 - Machine Learning for Access Control Policy Verification](https://csrc.nist.gov/publications/detail/nistir/8360/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-14. [NIST Special Publication 1800-13 - Mobile Application Single Sign-on](https://csrc.nist.gov/publications/detail/sp/1800-13/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-15. [National Security Agency Cybersecurity Information Sheet - Mitigating Cloud Vulnerabilities](https://media.defense.gov/2020/Jan/22/2002237484/-1/-1/0/CSI-MITIGATING-CLOUD-VULNERABILITIES_20200121.PDF){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-16. [Open Authorization (OAuth)](https://oauth.net/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-17. [System for Cross-Domain Identity Management (SCIM)](https://scim.cloud){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+14. [National Security Agency Cybersecurity Information Sheet - Mitigating Cloud Vulnerabilities](https://media.defense.gov/2020/Jan/22/2002237484/-1/-1/0/CSI-MITIGATING-CLOUD-VULNERABILITIES_20200121.PDF){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+15. [Open Authorization (OAuth)](https://oauth.net/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+16. [System for Cross-Domain Identity Management (SCIM)](https://scim.cloud){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ## Appendix B. Acronyms
 
