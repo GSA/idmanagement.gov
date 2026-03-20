@@ -58,9 +58,9 @@
   header: "/assets/playbooks/headers/playbook_09.webp"
   target: _self
 
-- title: ICAM Governance Framework Version 1.0
+- title: ICAM Governance Framework Version 2.1
   type: PDF
-  pubdate: 2021-09
+  pubdate: 2026-03
   description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies.
   url: "/docs/playbook-identity-governance-framework.pdf"
   header: "/assets/playbooks/headers/playbook_07.webp"
