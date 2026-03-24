@@ -96,8 +96,15 @@ The SSH key will look like this:
 
 WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an authentication agent that can also integrate with Microsoft's CAPI.  
 
- 
-{% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**; however, the included version does not contain appropriate plug-ins for CAPI.  You will want to download the latest release of PuTTY-CAC to ensure appropriate integration. See [PuTTY-CAC Releases](https://github.com/NoMoreFood/putty-cac/releases){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
+<!-- changed from jekyll include to USWDS HTML version - cjb -->
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Pageant Install</h4>
+    <p class="usa-alert__text">
+      Pageant is included in the <strong>WinSCP installation package</strong>; however, the included version does not contain appropriate plug-ins for CAPI.  You will want to download the latest release of PuTTY-CAC to ensure appropriate integration. See <a class="usa-link usa-link--external" href="https://github.com/NoMoreFood/putty-cac/releases" target="_blank" rel="noopener noreferrer">[PuTTY-CAC Releases</a>." 
+    </p>
+  </div>
+</div>
 
 1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder if downloaded separately. 
 2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
