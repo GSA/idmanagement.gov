@@ -7,16 +7,16 @@ sticky_sidenav: true
 sidenav: implement
 
 subnav:
-     - text: SSH from Windows - Using PuTTY-CAC
-       href: '#ssh-using-putty-cac'
-     - text: SSH from Windows - Using WinSCP and Pageant
-       href: '#ssh-using-winscp-and-pageant'
-     - text: SSH from macOS - Built-in and OpenSC
-       href: '#ssh-from-macos'
-     - text: Configure a Linux Server
-       href: '#configure-a-linux-server'
-     - text: Special Thanks
-       href: '#special-thanks'
+  - text: SSH from Windows - Using PuTTY-CAC
+    href: '#ssh-using-putty-cac'
+  - text: SSH from Windows - Using WinSCP and Pageant
+    href: '#ssh-using-winscp-and-pageant'
+  - text: SSH from macOS - Built-in and OpenSC
+    href: '#ssh-from-macos'
+  - text: Configure a Linux Server
+    href: '#configure-a-linux-server'
+  - text: Special Thanks
+    href: '#special-thanks'
 ---
 
 This guide is primarily intended for network engineers and server administrators, though other types of users accessing SSH-enabled remote resources may also benefit. For network engineers, this guide will help you authenticate with your PIV/CAC credential and use SSH to access a remote Linux server from a Windows or macOS computer. For server administrators, this guide will help you configure a Linux server for remote access.
