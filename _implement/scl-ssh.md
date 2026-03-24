@@ -28,7 +28,7 @@ This guide uses open-source options:
 
 Commercial solutions are also available.
 
-{% include alert-info.html content="Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction meets the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the "credential roaming" or unauthorized key duplication common with traditional software-based SSH keys." %}
+{% include alert-info.html content="Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction meets the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the 'credential roaming' or unauthorized key duplication common with traditional software-based SSH keys." %}
 
 {% include alert-info.html content="Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure." %}
 
@@ -38,7 +38,7 @@ Commercial solutions are also available.
 
 ### SSH Using PuTTY-CAC
 
-PuTTY-CAC is an open-source SSH client that integrates with Microsoft’s CryptoAPI (CAPI). The Pageant authentication client included in the software isn’t needed with PuTTY-CAC for this SSH usage. By selecting one of your personal PIV certificates for default use in this tool, the integrated CAPI "service," ensures the SSH session can only be established  after activation of the private key physically contained in the PIV card. This process ensures only the assigned PIV user, with knowledge of the PIN, can authenticate to the target via this service.
+PuTTY-CAC is an open-source SSH client that integrates with Microsoft’s CryptoAPI (CAPI). The Pageant authentication client included in the software isn’t needed with PuTTY-CAC for this SSH usage. By selecting one of your personal PIV certificates for default use in this tool, the integrated CAPI "service," ensures the SSH session can only be established after activation of the private key physically contained in the PIV card. This process ensures only the assigned PIV user, with knowledge of the PIN, can authenticate to the target via this service.
 
 1. You'll need to download [**PuTTY-CAC**](https://www.github.com/NoMoreFood/putty-cac/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to _C:\ssh\putty.exe_ or a similar folder. Select either _32-bit_ or _64-bit_, based on your Windows OS. (Pageant and MSI Installers aren't needed.)
 2. Double-click on _putty.exe_ and insert your PIV/CAC card into your card reader.
@@ -60,7 +60,7 @@ The SSH key will look like this:
       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyPn2dShOF...
       CAPI:05bf4653b3098a87b67816d81049f489d5b5ffb4
    ```    
-6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.)Traditionally, providing the administrator with this public key allows them to register the PIV authenticator to a pre-provisioned remote access account.  Some more modern implementations may also fetch your public PIV keys from a centralized directory, making the manual registration step unnecessary.<br>
+6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.) Traditionally, providing the administrator with this public key allows them to register the PIV authenticator to a pre-provisioned remote access account.  Some more modern implementations may also fetch your public PIV keys from a centralized directory, making the manual registration step unnecessary.<br>
 7. While waiting for an account, you can create SSH session profiles for target remote servers:<br>
 	- Click _Session_ and enter a remote server's _hostname_ or _IP address_.<br> 
 	- For _Connection type_, click _SSH_. (Notice that under _Port_, _22_ appears.)<br>
