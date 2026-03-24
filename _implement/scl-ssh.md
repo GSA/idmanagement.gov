@@ -28,9 +28,24 @@ This guide uses open-source options:
 
 Commercial solutions are also available.
 
-{% include alert-info.html content="Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction meets the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the 'credential roaming' or unauthorized key duplication common with traditional software-based SSH keys." %}
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading"></h4>
+    <p class="usa-alert__text">
+      Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction meets the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the 'credential roaming' or unauthorized key duplication common with traditional software-based SSH keys.
+    </p>
+  </div>
+</div>
 
-{% include alert-info.html content="Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure." %}
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading"></h4>
+    <p class="usa-alert__text">
+      Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure.
+    </p>
+  </div>
+</div>
+
 
 ## SSH from Windows
 
