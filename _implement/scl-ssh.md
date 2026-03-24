@@ -28,13 +28,13 @@ This guide uses open-source options:
 
 Commercial solutions are also available.
 
-{% include alert-info.html content = "Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction useless the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the "credential roaming" or unauthorized key duplication common with traditional software-based SSH keys. " %}
+{% include alert-info.html heading="Benefits of PIV for SSH" content="Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction meets the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the "credential roaming" or unauthorized key duplication common with traditional software-based SSH keys. " %}
 
-{% include alert-info.html content = "Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure." %} 
+{% include alert-info.html heading="Defense in Depth" content="Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure." %} 
 
 ## SSH from Windows
 
-{% include alert-warning.html content = "Network administrator privileges are needed to use SSH for remote access." %}
+{% include alert-warning.html content="Network administrator privileges are needed to use SSH for remote access." %}
 
 ### SSH Using PuTTY-CAC
 
@@ -79,7 +79,7 @@ The SSH key will look like this:
 
 ### SSH Using WinSCP and Pageant
 
-WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an SSH authentication agent that uses Microsoft's CAPI.  
+WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an authentication agent that can also integrate with Microsoft's CAPI.  
 
  
 {% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**; however, the included version does not contain appropriate plug-ins for CAPI.  You will want to download the latest release of PuTTY-CAC to ensure appropriate integration. See [PuTTY-CAC Releases](https://github.com/NoMoreFood/putty-cac/releases){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
@@ -137,7 +137,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 
 ## SSH from macOS
 
-{% include alert-warning.html content = "Network administrator privileges are needed to use SSH for remote access." %}
+{% include alert-warning.html content="Network administrator privileges are needed to use SSH for remote access." %}
 
 There are two options for configuring SSH clients to use a PIV/CAC device as the SSH key store:
 
@@ -155,7 +155,7 @@ See https://support.apple.com/en-us/HT208372 for additional information
 
 You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.
 
-{% include alert-warning.html heading = "If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED. Using the most current stable release of OpenSC (0.26.1 as of January 2025) is recommended to ensure the SSH "service" remains compatible with emerging cryptographic protocols, as it leverages OpenSSL as the backbone in many of its functions." %}
+{% include alert-warning.html heading="If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED. Using the most current stable release of OpenSC (0.26.1 as of January 2025) is recommended to ensure the SSH "service" remains compatible with emerging cryptographic protocols, as it leverages OpenSSL as the backbone in many of its functions." %}
 
 1. Install [OpenSC](https://github.com/OpenSC/OpenSC/wiki#download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 2. Insert your PIV/CAC into your card reader.
@@ -200,9 +200,9 @@ You can use OpenSC on your macOS computer to authenticate to a remote server wit
 
 ## Configure a Linux Server
 
-{% include alert-warning.html content = "Server administrators must have root privileges for these steps." %}
+{% include alert-warning.html content="Server administrators must have root privileges for these steps." %}
  
-{% include alert-info.html content = "The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account setups by using centralized configuration management tools that can push or remove authorized_keys." %}
+{% include alert-info.html content="The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account setups by using centralized configuration management tools that can push or remove authorized_keys." %}
 
 By default, SSH keys are read from the _.ssh/authorized_keys_ file in your home directory. 
 
