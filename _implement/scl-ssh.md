@@ -23,8 +23,8 @@ This guide is primarily intended for network engineers and server administrators
 
 This guide uses open-source options:
 
-* Windows: PuTTY-CAC (without Pageant) and WinSCP with Pageant  
-* macOS: OpenSC
+- Windows: PuTTY-CAC (without Pageant) and WinSCP with Pageant  
+- macOS: OpenSC
 
 Commercial solutions are also available.
 
@@ -90,7 +90,7 @@ The SSH key will look like this:
 12. Enter your account username. (A dialog box displays your PIV/CAC authentication certificate.) 
 13. Click _Yes_ to permit the _signing operation_ and enter your PIV/CAC PIN. (You'll then be logged into the remote server.) 
 
-{% include alert-warning.html content = "The card reader may flash. Do not remove your card until you're logged in." %}
+{% include alert-warning.html content="The card reader may flash. Do not remove your card until you're logged in." %}
 
 ### SSH Using WinSCP and Pageant
 
@@ -148,7 +148,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br><br>
 20. When prompted, enter your PIV/CAC PIN. You'll then be logged into the server.
 
-{% include alert-warning.html content = "The card reader may flash. Do not remove your card until you're logged in." %}
+{% include alert-warning.html content="The card reader may flash. Do not remove your card until you're logged in." %}
 
 ## SSH from macOS
 
@@ -211,7 +211,7 @@ You can use OpenSC on your macOS computer to authenticate to a remote server wit
      ```
 11. Enter your PIV/CAC PIN when prompted. Once it's validated, you'll be logged into the remote server.
 
-{% include alert-warning.html content = "The card reader may flash. Do not remove your card until you're logged in." %}
+{% include alert-warning.html content="The card reader may flash. Do not remove your card until you're logged in." %}
 
 ## Configure a Linux Server
 
