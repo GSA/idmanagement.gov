@@ -141,7 +141,7 @@ playbooks:
     href: /playbooks/sso/ 
   - text: Phishing-Resistant Authenticator Playbook
     href: /playbooks/altauthn/
-  - text: ICAM Governance Framework Version 1.0
+  - text: ICAM Governance Framework
     href: /docs/playbook-identity-governance-framework.pdf
   - text: Identity Fraud Detection Playbook
     href: /playbooks/idfraud/
