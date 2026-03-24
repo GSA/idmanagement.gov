@@ -19,17 +19,18 @@ subnav:
        href: '#special-thanks'
 ---
 
-For network engineers, this guide will help you authenticate with your PIV/CAC credential and use SSH to access a remote Linux server from a Windows or macOS computer. For server administrators, this guide will help you configure a Linux server for remote access.
+This guide is primarily intended for network engineers and server administrators, though other types of users accessing SSH-enabled remote resources may also benefit. For network engineers, this guide will help you authenticate with your PIV/CAC credential and use SSH to access a remote Linux server from a Windows or macOS computer. For server administrators, this guide will help you configure a Linux server for remote access.
 
-This guide uses open-source options: 
-* **Windows:** PuTTY-CAC (without Pageant) and WinSCP with Pageant
-* **macOS:**  OpenSC 
+This guide uses open-source options:
+
+* Windows: PuTTY-CAC (without Pageant) and WinSCP with Pageant  
+* macOS: OpenSC
 
 Commercial solutions are also available.
 
-{% include alert-info.html content = "Your PIV/CAC credential contains an authentication certificate key pair (public and private) for smart card logon. Using a PIV/CAC key pair is very similar to using a self-signed key pair for SSH. " %}
+{% include alert-info.html content = "Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction useless the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the "credential roaming" or unauthorized key duplication common with traditional software-based SSH keys. " %}
 
-{% include alert-info.html content = "Your Chief Information Security Officer must determine that security controls are in place and approve SSH scenarios. You should also review your agency's policies and use your physical or virtual jump servers to restrict users from using SSH directly from workstations." %} 
+{% include alert-info.html content = "Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure." %} 
 
 ## SSH from Windows
 
@@ -37,32 +38,40 @@ Commercial solutions are also available.
 
 ### SSH Using PuTTY-CAC
 
-PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (Pageant isn't needed with PuTTY-CAC for this solution.)
+PuTTY-CAC is an open-source SSH client that integrates with Microsoft’s CryptoAPI (CAPI). The Pageant authentication client included in the software isn’t needed with PuTTY-CAC for this SSH usage. By selecting one of your personal PIV certificates for default use in this tool, the integrated CAPI "service," ensures the SSH session can only be established  after activation of the private key physically contained in the PIV card. This process ensures only the assigned PIV user, with knowledge of the PIN, can authenticate to the target via this service.
+
 1. You'll need to download [**PuTTY-CAC**](https://www.github.com/NoMoreFood/putty-cac/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to _C:\ssh\putty.exe_ or a similar folder. Select either _32-bit_ or _64-bit_, based on your Windows OS. (Pageant and MSI Installers aren't needed.)
 2. Double-click on _putty.exe_ and insert your PIV/CAC card into your card reader.
-3. At the **PuTTY Configuration** window, go to _Category:_ &gt; _Connection_ &gt; _SSH_ &gt; _Certificate_. Click the _Set CAPI Cert..._ button and _OK_.
+3. At the PuTTY Configuration window, go to _Category:_ &gt; _Connection_ &gt; _SSH_ &gt; _Certificate_. Click the _Set CAPI Cert..._ button and _OK_. This sets the default as public.
 <br><br>
 <img src="{{site.baseurl}}/assets/piv/ssh-putty-cac-1.png" alt="PuTTY configuration window." width="470" height="449">
 <br><br>
-4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. (For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:rel="noopener noreferrer"}{:class="usa-link"}.
+4. From the **Windows Security** list, select your PIV/CAC authentication certificate by clicking _OK_. If you don't see your certificate, click _More choices_. For help with certificates, see [Understanding PIV Certificates]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:rel="noopener noreferrer"}{:class="usa-link"}.
 <br><br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A PuTTY select certificate for authentication screenshot." width="454" height="377">
 <br>
-5. Back at the **PuTTY Configuration** window, click the _Copy to Clipboard_ button and paste the SSH key into a text file. (**Note:** PuTTY-CAC derives the SSH key from the public key of your authentication certificate.) The SSH key will look like this:
+5. Back at the **PuTTY Configuration** window, click the _Copy to Clipboard_ button and paste the SSH key into a text file. (**Note:** PuTTY-CAC derives the SSH key from the public key of your authentication certificate.) 
+<br><br>
+<img src="{{site.baseurl}}/assets/piv/putty-cac-2.png" alt="A PuTTY configuration windoow." width="454" height="377">
+<br>
+The SSH key will look like this:
 
    ```
       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyPn2dShOF...
       CAPI:05bf4653b3098a87b67816d81049f489d5b5ffb4
    ```    
-6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.)<br>
+6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.)Traditionally, providing the administrator with this public key allows them to register the PIV authenticator to a pre-provisioned remote access account.  Some more modern implementations may also fetch your public PIV keys from a centralized directory, making the manual registration step unnecessary.<br>
 7. While waiting for an account, you can create SSH session profiles for target remote servers:<br>
 	- Click _Session_ and enter a remote server's _hostname_ or _IP address_.<br> 
 	- For _Connection type_, click _SSH_. (Notice that under _Port_, _22_ appears.)<br>
 	- Enter a session name in _Saved Sessions_ and click _Save_.<br>
+<br><br>
+<img src="{{site.baseurl}}/assets/piv/putty-cac-3.png" alt="A PuTTY configuration windoow." width="454" height="377">
+<br>
 8. Once you have an account, open PuTTY-CAC and insert your PIV/CAC card into your card reader. 
 9. Click a _Saved Session_ and _Load_. 
 10. Click _Open_ to connect to the remote server. (A dialog box displays the server's key thumbprint.) 
-11. Verify the server key and accept it by clicking _Yes_.
+11. Verify the server key and accept it by clicking _Yes_. This manual verification of the server's host key ensures that the SSH "service" is connected to the intended target server. It provides mutual authentication as part of the protocol and helps to prevent a potential man-in-the-middle attack.
 12. Enter your account username. (A dialog box displays your PIV/CAC authentication certificate.) 
 13. Click _Yes_ to permit the _signing operation_ and enter your PIV/CAC PIN. (You'll then be logged into the remote server.) 
 
@@ -73,17 +82,17 @@ PuTTY-CAC is an open-source SSH client that uses Microsoft's CryptoAPI (CAPI). (
 WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an SSH authentication agent that uses Microsoft's CAPI.  
 
  
-{% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**, you can also download it separately from the [WinSCP download page](https://winscp.net/eng/downloads.php#putty_additional){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
+{% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**; however, the included version does not contain appropriate plug-ins for CAPI.  You will want to download the latest release of PuTTY-CAC to ensure appropriate integration. See [PuTTY-CAC Releases](https://github.com/NoMoreFood/putty-cac/releases){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
 
 1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder if downloaded separately. 
 2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
 3. Double-click _WinSCP-Setup.exe_ to launch the _WinSCP installer_ and use the recommended installation settings.
-4. Double-click _pageant.exe_ to launch **Pageant**. 
+4. Double-click _pageant.exe_ to launch **Pageant**. Running Pageant as a background agent allows multiple applications to leverage available authenticators.
 5. Next, at the **Windows** taskbar, click the _up-arrow_ and right-click the **Pageant** icon (_computer wearing a Fedora_). 
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-2.PNG" alt="A screenshot showing how to access pageant." width="282" height="162">
 <br>
-6. A **Pageant** dialog box appears. Click _Cert Auth Prompting_.
+6. A **Pageant** dialog box appears. Ensure both *Remember Certs & Keys* and *Cert & Key Auth Prompting are enabled*.
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-3.PNG" alt="Enable Cert Auth Prompting." width="246" height="276">
 <br>
@@ -96,7 +105,7 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <img src="{{site.baseurl}}/assets/piv/winSCP-5.PNG" alt="A screenshot showing a PuTTY select certificate for authentication window with the OK button selected." width="269" height="223">
 <br>
 9. Double-click the **Pageant** icon to confirm that your certificate appears on the _Pageant Key List_.   
-10. The _Pageant Key List_ shows the certificate's SSH key attributes, such as type, size, thumbprint, etc. Click your certificate and the _Copy to Clipboard_ button. (**Note:** Pageant derives the SSH key from the public key of your authentication certificate.) Close the _Pageant Key List_.
+10. The _Pageant Key List_ shows the certificate's SSH key attributes, such as type, size, thumbprint, etc. Click your certificate and the _Copy to Clipboard_ button. (**Note:** Pageant derives the SSH key from the public key of your authentication certificate.) Close the _Pageant Key List_. This step automatically converts the public key in your selected PIV certificate into a consumable  format.
 <br>
 <img src="{{site.baseurl}}/assets/piv/winSCP-6.PNG" alt="A screenshot showing a pageant key list." width="269" height="193">
 <br>
@@ -146,7 +155,7 @@ See https://support.apple.com/en-us/HT208372 for additional information
 
 You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.
 
-{% include alert-warning.html heading = "Use OpenSC Version Greater Than 0.20.0 to avoid Authentication Errors" content="If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED." %}
+{% include alert-warning.html heading = "If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED. Using the most current stable release of OpenSC (0.26.1 as of January 2025) is recommended to ensure the SSH "service" remains compatible with emerging cryptographic protocols, as it leverages OpenSSL as the backbone in many of its functions." %}
 
 1. Install [OpenSC](https://github.com/OpenSC/OpenSC/wiki#download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 2. Insert your PIV/CAC into your card reader.
@@ -217,8 +226,8 @@ By default, SSH keys are read from the _.ssh/authorized_keys_ file in your home 
 	     AuthorizedKeysFile /etc/ssh/authorized_keys/%u  
 	     PasswordAuthentication no
    ```
-**Note:**&nbsp;&nbsp;If you change the default settings, you'll need to create a corresponding directory for _authorized_keys_ under _/etc/ssh_ and place the _authorized_keys_ there vs. in the user's home folder.
+**Note:**&nbsp;&nbsp;If you change the default settings, you’ll need to create a corresponding directory for authorized_keys under /etc/ssh and place the authorized_keys there vs. in the user’s home folder. Moving these registered public keys to a root-owned directory like /etc/ssh/authorized_keys/ prevents users from potentially bypassing security controls..
 
 ## Special Thanks
 
-Special thanks to the Department of Homeland Security, Office of the Chief Information Officer, Identity Services Branch, Information Sharing and Services Office (IS2O), for sharing its WinSCP and Pageant procedures.
+Special thanks to the Department of Homeland Security, Office of the Chief Information Officer, Identity Services Branch, Information Sharing and Services Office (IS2O), for sharing its WinSCP and Pageant procedures. Collaborative efforts across the Executive Branch ensure that these technical implementation guides reflect best practices and provide a common approach to expanding the use of PIV as an authenticator.
