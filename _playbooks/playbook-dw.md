@@ -109,8 +109,9 @@ Federal agencies use digital workers to automate processes, increase efficiencie
 This playbook is iterative, and agencies are encouraged to collaborate, share best practices, and share lessons learned. Federal employees may consider joining a relevant committee or community of practice to learn and engage in digital worker identity management.
 
 - [Identity, Credential, and Access Management subcommittee (ICAMSC)](https://community.max.gov/pages/viewpage.action?pageId=234815732){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-<!-- [Robotic Process Automation Community of Practice](https://digital.gov/communities/rpa/){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-[Artificial Intelligence Community of Practice](https://digital.gov/communities/artificial-intelligence/){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} -->
+- [Robotic Process Automation Community of Practice](https://www.gsa.gov/technology/government-it-initiatives/federal-automation-community-of-practice?_gl=1%2Ajugxx6%2A_ga%2AODU1MTQ0OTU2LjE3NzEzNDYxNzQ.%2A_ga_HBYXWFP794%2AczE3NzMxNDg5NTQkbzEkZzAkdDE3NzMxNDg5NTQkajYwJGwwJGgw){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- [Artificial Intelligence Community of Practice](https://www.gsa.gov/technology/government-it-initiatives/artificial-intelligence){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+
 
 ## Key Terms
 
@@ -282,37 +283,66 @@ Agencies may adjust recertification frequency, but should meet or exceed the rec
 | SP-5 | Have the sponsor notify the custodian of their responsibility. | N/A | ✓ | ✓ | ✓ |
 | SP-6 | Confirm the custodian acknowledges responsibility for the digital worker on an initial and routine basis. | N/A | ✓ Recertify custodian annually | ✓ Recertify custodian annually | ✓ Recertify custodian every six months |
 
-### 2.2 Validate Worker Access
+### 2.2 Enhanced Authentication Requirements 
 
-Validation actions record the activities to ensure the digital worker continues to behave as expected throughout the lifecycle. The agency’s ICAM governance structure should ensure completion and tracking of validation process actions, but individual agencies must define a process that fits their mission needs and requirements. The following factors provide a starting point for validation. Agencies may include other mission-specific review factors as needed.
+**_NIST 800-63-B AUTHENTICATION COMPLIANCE:_**
+*   Digital worker authentication SHALL align with Authentication Assurance Level (AAL) framework
+*   Authenticator selection based on adverse impact level and threat assessment
+*   Mandatory phishing-resistant authentication for High/Critical impact digital workers
 
-1. **Employ least privilege (VD-1).** Like a human worker, a digital worker should have the lowest access required to complete a task. The sponsor should review the use of an elevated account before initially granting it or upgrading an account already in use.
+**Digital Worker Authentication Assurance Levels:**
 
-2. **Separation of duties (VD-2)** is a principle that prevents any single person or entity from completing all the functions in a critical or sensitive process in order to prevent fraud, theft, and errors. The sponsor should review the digital worker role to ensure it does not create a separation-of-duty conflict. If there is a conflict, the sponsor should document the exception.
+**AAL1 Requirements (Low Impact: 0-35):**
+*   Single-factor or multi-factor authentication permitted
+*   Password-based authentication with complexity requirements
+*   Software-based OTP or push notification authenticators
+*   Certificate-based authentication for service accounts
 
-3. **Code review (VD-3). **Digital worker code may include worker logic and decision-making processes. Include design or other system documentation as part of code review for reasoning and decision-making intent.
+**AAL2 Requirements (Moderate Impact: 36-55):**
+*   MANDATORY: Multi-factor authentication required
+*   Hardware or software cryptographic authenticators
+*   Certificate-based authentication with private key protection
+*   Biometric activation factors permitted for multi-factor
 
-4. **Ethics and bias review (VD-4 and VD-5).** While government-wide standards for ethics and bias are in development, agencies should define their own ethics standards or collaborate with other agencies that align with the agency mission.
+**AAL3 Requirements (High/Critical Impact: 56+):**
+*   MANDATORY: Phishing-resistant authentication required
+*   Hardware cryptographic authenticators with non-exportable keys
+*   Certificate-based authentication in hardware security modules
+*   Cryptographic authentication protocols only
 
-5. **Recertification acknowledgment (VD-6 and VD-7).** Recertification is the act of reviewing access on a periodic basis. It should occur on an annual or biannual schedule based on the adverse impact level.
+**Digital Worker Authenticator Lifecycle Management:**
 
-{% include alert-success.html heading="Key Point" content="Existing validation activities can be leveraged and integrated into the digital worker validation process. Even though there are no activities for low impact, reassess a digital worker impact level every time there is a code change or update to ensure the impact level has not changed." %}
+**Authenticator Binding Requirements:**
+Organizations SHALL ensure:
+*   ☐ Cryptographic binding between authenticator and digital worker account
+*   ☐ Authenticator registration includes sponsor/custodian verification
+*   ☐ Unique authenticator assignment (no shared service account authenticators)
+*   ☐ Verification of authenticator possession during binding process
 
-**Table 5: Validation (VD) Process**
+**Rotation and Renewal Procedures:**
 
-|    ID    | Action    | Low | Moderate | High | Critical |
-| :---: | ----- | :---: | :---: | :---: | :---: |
-| VD-1 | Validate that the digital worker role employs the least privilege necessary to accomplish its task. | N/A | ✓ | ✓ | ✓ |
-| VD-2 | Validate that the digital worker role does not create separation-of-duty conflicts for the digital worker or any human users. | N/A | ✓ | ✓ | ✓ |
-| VD-3 | Validate that the digital worker has undergone a code review prior to release. Additional code reviews are required for any code changes at higher impact. | N/A | ✓ Following major changes to code | ✓ Following any changes to code | ✓ Following any changes to code |
-| VD-4 | Validate that the digital worker has undergone a review of ethics according to applicable government and/or agency standards. | N/A | N/A | ✓ Conduct initial review and annual periodic review | ✓ Conduct initial review and periodic review every six months |
-| VD-5 | Validate that the digital worker has undergone review for bias according to applicable government standards. | N/A | ✓ Conduct initial bias review | ✓ Conduct initial bias review and annual periodic review | ✓ Conduct initial bias review and periodic review every six months |
-| VD-6 | Validate that the sponsor has recertified acknowledgment of responsibility for the digital worker at required intervals. | N/A | ✓ Verify sponsor recertification annually | ✓ Verify sponsor recertification annually | ✓ Verify sponsor recertification every six months |
-| VD-7 | Validate that the custodian has recertified acknowledgment of responsibility for the digital worker at required intervals. | N/A | ✓ Verify custodian recertification annually | ✓ Verify custodian recertification annually | ✓ Verify custodian recertification every six months |
+| Authenticator Type | Rotation Frequency | Renewal Authority |
+| :---: | :---: | :---: |
+| Password/PIN | 90 days (High/Critical), 180 days (Moderate) | Custodian with sponsor approval |
+| Cryptographic Keys | Annually or on compromise | CSP with documented justification |
+| Digital Certificates | Per certificate lifetime (max 3 years) | PKI authority with audit trail |
+| Hardware Tokens | 5 years or on failure | Procurement with security review |
 
-{% include alert-success.html heading="Key Point" content="SP-3 is a similar but separate activity than VD-6. In SP-3, sponsors acknowledge their roles and responsibilities initially and reacknowledge them every six months. VD-6 is validation of the acknowledgment. Perform each action together or separately, but track them separately for flexibility." %}
+**Authenticator Compromise Response:**
+1.  Immediate Revocation: Suspend compromised authenticator within 4 hours
+2.  Impact Assessment: Evaluate scope of potential unauthorized access
+3.  Incident Documentation: Record compromise details and response actions
+4.  Re-authentication: Issue replacement authenticator with enhanced verification
+5.  Monitoring Enhancement: Increase surveillance for affected digital worker
 
-{% include alert-success.html heading="Key Point" content="VD-3, VD-4, and VD-5 validate that the code, ethics, and bias reviews have been conducted. It is up to individual agencies to ensure they follow a standard for conducting such reviews. Agency representatives, such as the sponsor or custodian, should collaborate within a community of practice to capture best practices on how to perform the various reviews in Step 2.2." %}
+**Phishing-Resistant Implementation:**
+For High/Critical impact digital workers, organizations SHALL implement:
+*   FIDO2/WebAuthn cryptographic authenticators
+*   PKI-based certificate authentication
+*   Hardware security module integration
+*   Cryptographic protocol authentication only (no knowledge-based factors)
+
+See Section [Federation Requirements] for cross-domain authenticator acceptance procedures.
 
 ## Step 3. Provision an Identity
 
@@ -459,7 +489,145 @@ When a digital worker is no longer required or is being replaced, it should be d
 | DV-7 | Notify relevant stakeholders of deprovisioning |  |  |  |  |
 | DV-8 | Document deprovisioning process and maintain logs for auditing and reporting |  |  |  |  |
 
+### 4.3 Digital Worker Incident Response and Redress Procedures
 
+Organizations SHALL implement accessible redress processes for digital worker malfunctions, unauthorized actions, or access disputes per NIST 800-63 Section 3.6.
+
+**Digital Worker Redress Framework:**
+
+**Incident Categories Requiring Redress:**Bias/Discrimination: Digital worker demonstrates unfair treatment across user populations
+4.  Privacy Violation: Digital worker processes personal information beyond authorized scope
+5.  Security Breach: Digital worker credentials compromised or system infiltrated
+
+**Redress Process Workflow:**
+1.  Incident Detection: Automated monitoring or user/stakeholder report (24/7 capability)
+2.  Initial Response: Acknowledge incident within 2 hours, begin containment procedures
+3.  Impact Assessment: Evaluate scope and severity within 8 hours of detection
+4.  Investigation: Comprehensive analysis with documented findings within 5 business days
+5.  Resolution: Implement corrective actions with stakeholder notification
+6.  Follow-up: Verify resolution effectiveness and update procedures as needed
+
+**Human Oversight Requirements:**
+Organizations SHALL ensure:
+*   ☐ Technical Override Capability: Human operators can immediately halt digital worker operations
+*   ☐ Expert Review Authority: Subject matter experts can challenge automated decisions
+*   ☐ Escalation Procedures: Clear path to senior officials for complex or sensitive incidents
+*   ☐ Alternative Service Options: Manual processes available during digital worker suspension
+
+**Stakeholder Notification Procedures:**
+
+| Incident Severity | Notification Timeline | Required Recipients |
+| :---: | :---: | :---: |
+| Critical (Life/Safety/Security) | Immediate (within 1 hour) | Sponsor, Custodian, CISO, Senior Officials |
+| High (Financial/Privacy Impact) | Within 4 hours | Sponsor, Custodian, Privacy Officer, Legal |
+| Moderate (Operational Impact) | Within 24 hours | Sponsor, Custodian, IT Operations |
+| Low (Minor Malfunction) | Within 72 hours | Custodian, System Administrator |
+
+**Documentation and Audit Trail:**
+All redress activities SHALL include:
+*   Detailed incident description and timeline
+*   Root cause analysis and contributing factors
+*   Corrective actions implemented and their effectiveness
+*   Impact on affected stakeholders and systems
+*   Lessons learned and process improvements
+*   Legal and regulatory notification compliance
+
+**Support Personnel Training:**
+Organizations SHALL ensure redress support staff receive training on:
+*   ☐ Digital worker technical capabilities and limitations
+*   ☐ Incident response procedures and escalation protocols
+*   ☐ Stakeholder communication and notification requirements
+*   ☐ Legal and regulatory compliance obligations
+*   ☐ Alternative service delivery methods during incidents
+
+**Continuous Improvement Integration:**
+*   ☐ Monthly incident pattern analysis for systemic issue identification
+*   ☐ Quarterly redress process effectiveness evaluation
+*   ☐ Annual training update based on emerging incident types
+*   ☐ Cross-organizational best practice sharing and lessons learned
+*   ☐ Integration with enterprise risk management and business continuity planning
+
+See Section [Enhanced Performance Metrics] for redress process monitoring and evaluation procedures.
+
+### 4.4 Enhanced Performance Metrics
+
+**_NIST 800-63 PERFORMANCE MONITORING COMPLIANCE:_**
+*   Organizations SHALL implement continuous evaluation programs per NIST 800-63 Section 3.5
+*   Performance data must support risk-based decision making and control effectiveness
+*   Quarterly reporting required for digital worker system performance and stakeholder impact
+
+**Core Digital Worker Performance Metrics:**
+
+| Metric Category | Measurement | Target | Frequency |
+| :---: | :---: | :---: | :---: |
+| Identity Creation | Successful digital worker provisioning rate | > 95% | Daily |
+| Authentication Success | Valid authentication events | > 99% | Real-time |
+| Authorization Accuracy | Proper access control enforcement | > 99.5% | Daily |
+| System Availability | Digital worker operational uptime | 99.9% | Continuous |
+| Response Time | Average task completion duration | <established SLA | Real-time |
+| Error Rate | Failed operations per total attempts | <2% | Daily |
+
+**Security and Compliance Metrics:**
+
+| Security Metric | Measurement | Target | Tracking |
+| :---: | :---: | :---: | :---: |
+| Unauthorized Access Attempts | Failed authentication events | <1% of total | Daily |
+| Privilege Escalation Incidents | Unauthorized permission expansion | 0 events | Monthly |
+| Data Breach Events | Confirmed unauthorized data access | 0 events | Per incident |
+| Compliance Violations | Policy or regulatory non-compliance | 0 events | Quarterly |
+| Vulnerability Response | Time to patch critical vulnerabilities | <72 hours | Per vulnerability |
+| Audit Finding Resolution | Time to address audit recommendations | <30 days | Per finding |
+
+**Stakeholder Experience Metrics:**
+
+| Experience Metric | Measurement | Target | Frequency |
+| :---: | :---: | :---: | :---: |
+| Sponsor Satisfaction | Digital worker effectiveness rating | 8.0/10 | Quarterly |
+| Custodian Workload | Hours spent on digital worker management | <5 hrs/week | Monthly |
+| Help Desk Requests | Support tickets per digital worker | <2/month | Monthly |
+| Training Effectiveness | Personnel competency assessment scores | > 85% | Annually |
+| Resolution Time | Average incident response duration | <4 hours | Per incident |
+| Redress Success Rate | Incidents resolved satisfactorily | > 95% | Quarterly |
+
+**Digital Worker Impact Assessment Metrics:**
+Adverse Impact Tracking by Level:
+*   Low Impact (0-35): Basic operational metrics with monthly reporting
+*   Moderate Impact (36-55): Enhanced monitoring with weekly reporting and trend analysis
+*   High Impact (56-90): Comprehensive metrics with daily reporting and real-time alerting
+*   Critical Impact (91+): Continuous monitoring with immediate escalation procedures
+
+**Business Value and Efficiency Metrics:**
+*   ☐ Cost Reduction: Quantified savings from digital worker automation
+*   ☐ Process Improvement: Time savings and efficiency gains measured
+*   ☐ Quality Enhancement: Error reduction and accuracy improvement tracking
+*   ☐ Scalability Benefits: Capacity increase without proportional resource growth
+*   ☐ Innovation Enablement: New capabilities delivered through digital worker deployment
+
+**Bias and Fairness Monitoring:**
+Organizations SHALL track digital worker performance across:
+*   ☐ Different user populations and demographic groups
+*   ☐ Various transaction types and complexity levels
+*   ☐ Multiple time periods and operational conditions
+*   ☐ Cross-system interactions and federation scenarios
+*   ☐ Accessibility compliance for users with disabilities
+
+**Quarterly Performance Reporting:**
+Required reports must include:
+*   ☐ Trend analysis comparing current to previous periods
+*   ☐ Performance issue identification with remediation plans
+*   ☐ Digital worker effectiveness assessment and ROI analysis
+*   ☐ Security incident summary and lessons learned
+*   ☐ Stakeholder feedback analysis and satisfaction scores
+*   ☐ Recommendations for system improvements and optimization
+
+**Continuous Improvement Integration:**
+*   ☐ Monthly performance review with sponsor and custodian
+*   ☐ Quarterly digital worker optimization assessment
+*   ☐ Annual threat landscape evaluation and control adjustment
+*   ☐ Cross-organizational best practice sharing and benchmarking
+*   ☐ Integration with enterprise risk management reporting cycles
+
+See Section [Redress Mechanisms] for incident response and stakeholder satisfaction tracking procedures.
 ## Digital Worker Identity Management Checklist
 
 ### Step 1: Determine the Impact
