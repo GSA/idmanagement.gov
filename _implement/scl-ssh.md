@@ -7,38 +7,53 @@ sticky_sidenav: true
 sidenav: implement
 
 subnav:
-     - text: SSH from Windows - Using PuTTY-CAC
-       href: '#ssh-using-putty-cac'
-     - text: SSH from Windows - Using WinSCP and Pageant
-       href: '#ssh-using-winscp-and-pageant'
-     - text: SSH from macOS - Built-in and OpenSC
-       href: '#ssh-from-macos'
-     - text: Configure a Linux Server
-       href: '#configure-a-linux-server'
-     - text: Special Thanks
-       href: '#special-thanks'
+  - text: SSH from Windows - Using PuTTY-CAC
+    href: '#ssh-using-putty-cac'
+  - text: SSH from Windows - Using WinSCP and Pageant
+    href: '#ssh-using-winscp-and-pageant'
+  - text: SSH from macOS - Built-in and OpenSC
+    href: '#ssh-from-macos'
+  - text: Configure a Linux Server
+    href: '#configure-a-linux-server'
+  - text: Special Thanks
+    href: '#special-thanks'
 ---
 
 This guide is primarily intended for network engineers and server administrators, though other types of users accessing SSH-enabled remote resources may also benefit. For network engineers, this guide will help you authenticate with your PIV/CAC credential and use SSH to access a remote Linux server from a Windows or macOS computer. For server administrators, this guide will help you configure a Linux server for remote access.
 
 This guide uses open-source options:
 
-* Windows: PuTTY-CAC (without Pageant) and WinSCP with Pageant  
-* macOS: OpenSC
+- Windows: PuTTY-CAC (without Pageant) and WinSCP with Pageant  
+- macOS: OpenSC
 
 Commercial solutions are also available.
 
-{% include alert-info.html content = "Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction useless the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the "credential roaming" or unauthorized key duplication common with traditional software-based SSH keys. " %}
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading"></h4>
+    <p class="usa-alert__text">
+      Your PIV/CAC credential contains an authentication key pair (public and private) for smart card logon. Using a PIV/CAC key pair is procedurally very similar to using a standard software key pair for SSH. Leveraging hardware-backed key material for SSH means the authentication transaction meets the Authentication Assurance Level 3 (AAL3) definition for non-exportable cryptographic authenticators as defined in NIST SP 800-63-4, effectively preventing the 'credential roaming' or unauthorized key duplication common with traditional software-based SSH keys.
+    </p>
+  </div>
+</div>
 
-{% include alert-info.html content = "Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure." %} 
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading"></h4>
+    <p class="usa-alert__text">
+      Your Chief Information Security Officer must determine that security controls are in place and approve SSH usage scenarios. You should also review your agency’s policies and use your physical or virtual jump servers to restrict users from establishing SSH sessions directly from their workstations. Utilizing jump servers as an intermediate transit point provides a distinct level of defense in depth, and provided appropriate controls, may assist in securing sensitive infrastructure.
+    </p>
+  </div>
+</div>
+
 
 ## SSH from Windows
 
-{% include alert-warning.html content = "Network administrator privileges are needed to use SSH for remote access." %}
+{% include alert-warning.html content="Network administrator privileges are needed to use SSH for remote access." %}
 
 ### SSH Using PuTTY-CAC
 
-PuTTY-CAC is an open-source SSH client that integrates with Microsoft’s CryptoAPI (CAPI). The Pageant authentication client included in the software isn’t needed with PuTTY-CAC for this SSH usage. By selecting one of your personal PIV certificates for default use in this tool, the integrated CAPI "service," ensures the SSH session can only be established  after activation of the private key physically contained in the PIV card. This process ensures only the assigned PIV user, with knowledge of the PIN, can authenticate to the target via this service.
+PuTTY-CAC is an open-source SSH client that integrates with Microsoft’s CryptoAPI (CAPI). The Pageant authentication client included in the software isn’t needed with PuTTY-CAC for this SSH usage. By selecting one of your personal PIV certificates for default use in this tool, the integrated CAPI "service," ensures the SSH session can only be established after activation of the private key physically contained in the PIV card. This process ensures only the assigned PIV user, with knowledge of the PIN, can authenticate to the target via this service.
 
 1. You'll need to download [**PuTTY-CAC**](https://www.github.com/NoMoreFood/putty-cac/releases){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} to _C:\ssh\putty.exe_ or a similar folder. Select either _32-bit_ or _64-bit_, based on your Windows OS. (Pageant and MSI Installers aren't needed.)
 2. Double-click on _putty.exe_ and insert your PIV/CAC card into your card reader.
@@ -60,7 +75,7 @@ The SSH key will look like this:
       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyPn2dShOF...
       CAPI:05bf4653b3098a87b67816d81049f489d5b5ffb4
    ```    
-6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.)Traditionally, providing the administrator with this public key allows them to register the PIV authenticator to a pre-provisioned remote access account.  Some more modern implementations may also fetch your public PIV keys from a centralized directory, making the manual registration step unnecessary.<br>
+6. Send the text file to the server administrator and request an account. (Notice that the _Attempt Certificate Authentication_ box is now checked.) Traditionally, providing the administrator with this public key allows them to register the PIV authenticator to a pre-provisioned remote access account.  Some more modern implementations may also fetch your public PIV keys from a centralized directory, making the manual registration step unnecessary.<br>
 7. While waiting for an account, you can create SSH session profiles for target remote servers:<br>
 	- Click _Session_ and enter a remote server's _hostname_ or _IP address_.<br> 
 	- For _Connection type_, click _SSH_. (Notice that under _Port_, _22_ appears.)<br>
@@ -75,14 +90,21 @@ The SSH key will look like this:
 12. Enter your account username. (A dialog box displays your PIV/CAC authentication certificate.) 
 13. Click _Yes_ to permit the _signing operation_ and enter your PIV/CAC PIN. (You'll then be logged into the remote server.) 
 
-{% include alert-warning.html content = "The card reader may flash. Do not remove your card until you're logged in." %}
+{% include alert-warning.html content="The card reader may flash. Do not remove your card until you're logged in." %}
 
 ### SSH Using WinSCP and Pageant
 
-WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an SSH authentication agent that uses Microsoft's CAPI.  
+WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer protocol (SFTP) client. Pageant is an authentication agent that can also integrate with Microsoft's CAPI.  
 
- 
-{% include alert-info.html heading="Pageant Install" content="Pageant is included in the **WinSCP installation package**; however, the included version does not contain appropriate plug-ins for CAPI.  You will want to download the latest release of PuTTY-CAC to ensure appropriate integration. See [PuTTY-CAC Releases](https://github.com/NoMoreFood/putty-cac/releases){:target=\"_blank\"}{:rel=\"noopener noreferrer\"}{:class=\"usa-link usa-link--external\"}." %}
+<!-- changed from jekyll include to USWDS HTML version - cjb -->
+<div class="usa-alert usa-alert--info">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Pageant Install</h4>
+    <p class="usa-alert__text">
+      Pageant is included in the <strong>WinSCP installation package</strong>; however, the included version does not contain appropriate plug-ins for CAPI.  You will want to download the latest release of PuTTY-CAC to ensure appropriate integration. See <a class="usa-link usa-link--external" href="https://github.com/NoMoreFood/putty-cac/releases" target="_blank" rel="noopener noreferrer">[PuTTY-CAC Releases</a>." 
+    </p>
+  </div>
+</div>
 
 1. Download **Pageant** to _C:\ssh\pageant.exe_ or a similar folder if downloaded separately. 
 2. Download the [**WinSCP installer**](https://winscp.net/eng/download.php){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to _C:\ssh\WinSCP-Setup.exe_ or a similar folder.
@@ -133,11 +155,11 @@ WinSCP is an open-source, secure copy protocol (SCP) and secure file transfer pr
 <br><br>
 20. When prompted, enter your PIV/CAC PIN. You'll then be logged into the server.
 
-{% include alert-warning.html content = "The card reader may flash. Do not remove your card until you're logged in." %}
+{% include alert-warning.html content="The card reader may flash. Do not remove your card until you're logged in." %}
 
 ## SSH from macOS
 
-{% include alert-warning.html content = "Network administrator privileges are needed to use SSH for remote access." %}
+{% include alert-warning.html content="Network administrator privileges are needed to use SSH for remote access." %}
 
 There are two options for configuring SSH clients to use a PIV/CAC device as the SSH key store:
 
@@ -155,7 +177,14 @@ See https://support.apple.com/en-us/HT208372 for additional information
 
 You can use OpenSC on your macOS computer to authenticate to a remote server with your PIV/CAC card.
 
-{% include alert-warning.html heading = "If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED. Using the most current stable release of OpenSC (0.26.1 as of January 2025) is recommended to ensure the SSH "service" remains compatible with emerging cryptographic protocols, as it leverages OpenSSL as the backbone in many of its functions." %}
+<div class="usa-alert usa-alert--warning">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Use OpenSC Version Greater Than 0.20.0 to avoid Authentication Errors</h4>
+    <p class="usa-alert__text">
+    If a version of OpenSC less than 0.20.0 is used, users will encounter errors when performing mTLS with servers that offer TLS 1.3. This can include browser errors like ERR_SSL_CLIENT_AUTH_SIGNATURE_FAILED. Using the most current stable release of OpenSC (0.26.1 as of January 2025) is recommended to ensure the SSH "service" remains compatible with emerging cryptographic protocols, as it leverages OpenSSL as the backbone in many of its functions."
+    </p>
+  </div>
+</div>
 
 1. Install [OpenSC](https://github.com/OpenSC/OpenSC/wiki#download){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. 
 2. Insert your PIV/CAC into your card reader.
@@ -196,13 +225,13 @@ You can use OpenSC on your macOS computer to authenticate to a remote server wit
      ```
 11. Enter your PIV/CAC PIN when prompted. Once it's validated, you'll be logged into the remote server.
 
-{% include alert-warning.html content = "The card reader may flash. Do not remove your card until you're logged in." %}
+{% include alert-warning.html content="The card reader may flash. Do not remove your card until you're logged in." %}
 
 ## Configure a Linux Server
 
-{% include alert-warning.html content = "Server administrators must have root privileges for these steps." %}
+{% include alert-warning.html content="Server administrators must have root privileges for these steps." %}
  
-{% include alert-info.html content = "The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account setups by using centralized configuration management tools that can push or remove authorized_keys." %}
+{% include alert-info.html content="The following SSH configurations are examples only. Other options are available, including Pluggable Authentication Modules (PAM) that look up user accounts and authorizations through directories. You can automate account setups by using centralized configuration management tools that can push or remove authorized_keys." %}
 
 By default, SSH keys are read from the _.ssh/authorized_keys_ file in your home directory. 
 
