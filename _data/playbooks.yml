@@ -20,7 +20,7 @@
 
 - title: Cloud Identity Playbook
   type: Webpage
-  pubdate: 2022-12
+  pubdate: 2026-03
   description: The Cloud Identity Playbook is a four-step playbook to start or further expand the use of Workforce ICAM Services delivered in a cloud operating model.
   url: "/playbooks/cloud/"
   header: "/assets/playbooks/headers/playbook_04.webp"
@@ -58,9 +58,9 @@
   header: "/assets/playbooks/headers/playbook_09.webp"
   target: _self
 
-- title: ICAM Governance Framework Version 1.0
+- title: ICAM Governance Framework Version 2.1
   type: PDF
-  pubdate: 2021-09
+  pubdate: 2026-03
   description: The ICAM Governance Framework is a tool to help agencies build and improve agency ICAM governance structures, processes, and policies.
   url: "/docs/playbook-identity-governance-framework.pdf"
   header: "/assets/playbooks/headers/playbook_07.webp"
@@ -68,7 +68,7 @@
 
 - title: Identity Fraud Detection Playbook
   type: Webpage
-  pubdate: 2025-02
+  pubdate: 2026-03
   description: This playbook serves as a resource and provides a foundational understanding of identity fraud techniques, detection methods, and mitigation strategies.
   url: "/playbooks/idfraud/"
   header: "/assets/playbooks/headers/playbook_06.webp"

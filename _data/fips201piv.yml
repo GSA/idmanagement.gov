@@ -15,6 +15,16 @@
 #   url: [string] -   apl url
 ##
 
+- productname: ZTPass PIV Applet v2.0 FIDO2.1 on NXP P71D600
+  productnumber: B9F1
+  category: PIV Card
+  supplier: ZTPass, Inc.
+  aplnumber: 1514
+  validdate: 03/06/2026
+  dateCode: 2026-03-06
+  compliantwithtaa: Yes
+  url: /docs/apl-1514-ztpass.pdf
+
 - productname: Giesecke+Devrient Mobile Security SmartCafe Expert 7.0 with HID Global ActivID Applet v2.7.5
   productnumber: 50192769
   category: PIV Card
