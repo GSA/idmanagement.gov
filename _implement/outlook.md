@@ -1,120 +1,174 @@
 ---
 layout: page
 collection: implement
-title: Sign and Encrypt Emails in Microsoft Outlook
+title: Sign and Encrypt Email in Microsoft Outlook
 permalink: /implement/outlook/
 sticky_sidenav: true
 sidenav: implement
-
 subnav:
-    - text: Configure Outlook to Send Secure Email
-      href: '#configure-outlook-to-send-secure-email'
-    - text: Send a Signed Email
-      href: '#send-a-signed-email'
+    - text: Version History
+      href: '#version-history'
+    - text: Before You Begin
+      href: '#before-you-begin'
+    - text: Configure S/MIME in Outlook
+      href: '#configure-s-mime-in-outlook'
+    - text: Certificate Publication in Modern Microsoft 365
+      href: '#certificate-publication-in-modern-microsoft-365'
+    - text: Send a Digitally Signed Email
+      href: '#send-a-digitally-signed-email'
     - text: Send an Encrypted Email
-      href: '#send-an-encrypted-email' 
-    - text: Decrypt an Email
-      href: '#decrypt-an-email'
+      href: '#send-an-encrypted-email'
+    - text: Decrypt an Encrypted Email
+      href: '#decrypt-an-encrypted-email'
     - text: Other Helpful References
       href: '#other-helpful-references'  
-      
 ---
 
-Personal Identity Verification (PIV) cards contain digital certificates that can help users send secure email. In general, "secure email" refers to digitally signed and/or encrypted emails.  Digitally signed emails give us confidence that the individual who claimed to send a message actually did (non-repudiation) and that the message was not modified while in transit (integrity).  Encrypted emails prevent the message from being read by unintended recipients (confidentiality).  
+## Version History
 
-The following guide walks you through configuring Outlook to leverage the digital signature and key management certificates found on your PIV to enable secure email. By default, Outlook will only allow sign and encrypt emails when the configured email address on the client is same email address as encoded on the PIV card.
+| Version Number | Date | Change Description |
+| :---: | :---: | :--- |
+| 2.0 | 03/24/2026 | Updated guidance for classic Outlook for Windows (Microsoft 365 Apps). |
+| 1.0 | 06/13/2023 | Initial guidance for Microsoft Outlook 2016. |
 
-## Configure Outlook to Send Secure Email
+*This guide was developed in collaboration with the United States Office of Personnel Management*
 
-{% include alert-info.html heading = "Know your Email Provider Capabilities" content="Although several email client applications have options to support digital signatures or encryption (S/MIME), not all email providers organically support S/MIME with third party PKI certificates.  S/MIME support often times varies with different tiers of service.  Coordinate with your email and workstation administrators to ensure S/MIME capabilities are available on both email servers and user workstations, especially if accessed through a browser." %}
+Personal Identity Verification (PIV) cards contain cryptographic certificates that support S/MIME secure email. Secure email includes two protections:
 
-The following steps pertain to Microsoft Outlook 2016, and may also be applicable to newer versions up through Outlook 2021.  These steps may not be applicable to cloud email users, but you may find additional configurations below for both Exchange Online and O365 in [Other Helpful References](#other-helpful-references){:class="usa-link"} .
+* **Digital signatures**, which verify who sent the message and prevent tampering
+* **Encryption**, which ensures only the intended recipient can read the message
 
-1. Insert your PIV card in your computer's smart card reader.
-2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings...** and select **Email Security**.
-3. Click **Settings...** beneath the *Encrypted Email* heading.
-4. Click **New** to create a new security preference.
-5. Assign a *Security Settings Name* (for example, "Secure Email - PIV").
-6. Click **Choose** next to *Signing Certificate*.
-     - Select your PIV card's digital signature certificate and click **OK**.
-     - Select **SHA256** as the *Hash Algorithm*.
-7. Click **Choose** next to *Encryption Certificate*.
-     - Select your PIV card's digital signature certificate and click **OK**.
-     - Select **AES (256-bit)** as the *Encryption Algorithm*.
-8. Enable the **Send these certificates with signed messages** selection box.
-9. Click **OK** three times.
+These instructions apply to **classic Outlook for Windows included with Microsoft 365**.
+
+Outlook requires that your account's email address matches the email address encoded on your PIV certificates.
+
+## Before You Begin
+
+Before configuring Outlook:
+
+* Confirm your organization supports **S/MIME** with third-party PKI certificates.
+* Ensure your **PIV card**, **middleware**, and **smart card reader** are functioning.
+* Browser-based Outlook requires a separate extension for S/MIME, which may not be enabled.
+
+## Configure S/MIME in Outlook
+
+These steps reflect the current configuration experience in **classic Outlook for Windows (Microsoft 365 Apps)**.
+
+1. Insert your **PIV card**.
+
+2. Open Outlook and go to **File > Options > Trust Center > Trust Center Settings**.
+
+3. Select **Email Security**.
+
+4. Under **Encrypted Email**, select **Settings**.
+
+5. Select **New** to create a new security configuration.
+
+6. Enter a name such as **PIV Secure Email**.
+
+7. Select **Choose** next to **Signing Certificate**.
+   * Choose your **PIV digital signature certificate**, then select **OK**.
+   * Set **Hash Algorithm** to **SHA256**.
+
+8. Select **Choose** next to **Encryption Certificate**.
+   * Choose your **PIV key management or encryption certificate**, then select **OK**.
+   * Set **Encryption Algorithm** to **AES 256-bit**.
+
+9. Enable **Send these certificates with signed messages**.
+
+10. Select **OK** to save.
 
 **Note:** The following screenshot shows an example of a completed security preference configuration.
 
-<img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration.png" alt="A completed security preference configuration." width="476" height="388">
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss1.png" alt="Security Preference Configuration." width="454" height="377">
+<br>
 
-### Publish Your Certificates to the Global Address List
+## Certificate Publication in Modern Microsoft 365
 
-The Global Address List (GAL) is a shared, enterprise-wide contact list in Microsoft Active Directory.  Publishing your certificates to the GAL will add your encryption certificate and associated public key to an enterprise address book, making it easier for other internal agency users to send you an encrypted email.
+Many Microsoft 365 tenants no longer display the older **Publish to GAL** button. When this option is absent, certificate publication occurs in one of the following ways:
 
-1. Insert your PIV card in your computer's smart card reader.
-2. Browse to **File** > **Options** > **Trust Center** > **Trust Center Settings** and select **Email Security**.
-3. Click **Publish to GAL...** beneath the *Digital IDs (Certificates)* heading.
-4. Click **OK** when warned about Outlook publishing your default security certificates to the Global Address List.
-5. Enter your PIV card PIN when prompted.
-6. Click **OK** twice.
+### Automatic Publication (Default for Many Tenants)
+Exchange Online automatically makes your certificate available internally after you send a **digitally signed email**.
 
-**Note:** The following screenshot shows the location of the **Publish to GAL...** button.
+### Administrator-Managed Publication
+Your organization may publish certificates centrally using Active Directory, Entra ID, or automated provisioning.
 
-<img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration-publish-gal.png" alt="The Publish to GAL button is located in the Trust Center." width="476" height="389">
+### Certificate Sharing via Signed Messages
+When you send a **digitally signed** message, Outlook includes your public signing and encryption certificates. This allows recipients to encrypt messages to you even without GAL publishing.
 
-## Send a Signed Email
-1. Compose an email.
-2. Click the **Options** tab.
-3. Enable the **Sign** icon (appears as a red ribbon icon).
-4. Click **Send**.
-5. Enter your PIV card PIN when prompted.
+## Send a Digitally Signed Email
 
-**Note:** The following screenshot shows a signed email.
+1. Compose a new message.
 
-<img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration-signed-email.png" alt="A signed email." width="476" height="344">
+2. In the ribbon, select **Options**.
+
+3. Select **Sign** (red ribbon icon).
+
+4. Send the email.
+
+5. Enter your PIV PIN when prompted.
 
 ## Send an Encrypted Email
-1. Compose an email.
-2. Click the **Options** tab.
-3. Enable the **Encrypt** icon (appears as a yellow lock icon).
-4. Click **Send**.
 
-**Note:** It is common practice to sign a message when encrypting it below.
+1. Compose a new message.
 
-<img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration-encrypted-email.png" alt="A signed and encrypted email." width="476" height="343">
+2. Select **Options**.
 
-### Manually Import a User's Encryption Certificate
+3. Select **More Options**.
 
-When sending an encrypted email, the message is encrypted using the public key in the intended recipient's certificate.  If Outlook cannot find the intended recipient's public key through the [Global Address List](#publish-your-certificates-to-the-global-address-list){:rel="noopener noreferrer"}{:class="usa-link"} , you may need to load it manually.
+4. Select **Security Settings**.
 
-1. Obtain a copy of the intended recipient's [Key Management]({{site.baseurl}}/university/piv/#how-to-view-piv-credential-certificates){:rel="noopener noreferrer"}{:class="usa-link"}  certificate (you may need to ask the intended recipient to export and share their certificate with you)
-2. Click the **Home** tab.
-3. Click the **Address Book**.
-4. Select **File** > **New Entry**.
-5. Select **New Contact** and then click **OK**.
-6. Populate the recipient's contact information, minimally including name and email address.
-7. Click the **Certificates** icon.
-8. Click **Import** and browse to the intended recipient's encryption certificate.
-9. Click **Save & Close** and then follow the steps to [send an encrypted email](#send-an-encrypted-email){:class="usa-link"} .
+5. Check **Encrypt message contents and attachments**.
 
- **Note:** The following screenshot shows a certificate loaded into a contact entry.
+6. Select **OK**.
 
-<img src="{{site.baseurl}}/assets/piv/outlook-certificate-configuration-contact-entry.png" alt="A completed contact entry." width="476" height="297">
+7. Send the message.
 
-## Decrypt an Email
+**Note:** It is common to enable **both** encryption and signing so the recipient automatically receives your certificates.
 
-PIV users may receive and store encrypted emails throughout their tenure in an organization.  These emails may have been encrypted with various public key management keys are now retired or replaced.  Many PIV card issuers provide historical key management keys when they issue a PIV card, but others may not.  Outlook, via the Cryptographic Application Programming Interface (CAPI), can decrypt these emails if the associated private keys are available.  The following steps outline how to decrypt an email when the private decryption keys are available via CAPI:
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss2.png" alt="Encrypt Email with S/MIME." width="454" height="377">
+<br>
 
-1. Select an encrypted email
-2. Enter your PIV card PIN or private key password when prompted
+### Import a Recipient's Encryption Certificate Manually
 
-**Note:** Your organization may not recover previously issued encryption keys onto your PIV. Instead, it may maintain a separate key recovery service. Please reach out to your local IT department to determine if you can recover retired key management keys.
+Use this process when Outlook cannot locate a recipient's certificate through your directory or a prior signed email.
+
+1. Obtain the recipient's **public encryption (key management) certificate**.
+
+2. Open the **Home** tab.
+
+3. Select **Address Book**.
+
+4. Go to **File > New Entry**.
+
+5. Select **New Contact**, then **OK**.
+
+6. Add the recipient's **name** and **email address**.
+
+7. Select the **Certificates** tab.
+
+8. Select **Import** and choose the certificate file.
+
+9. Select **Save & Close**.
+
+## Decrypt an Encrypted Email
+
+Outlook can decrypt encrypted messages if the matching private keys are available from your PIV card or from Windows's cryptographic key store.
+
+1. Open the encrypted message.
+
+2. Insert your **PIV card** when prompted.
+
+3. Enter your **PIN**.
+
+If you cannot decrypt older messages, your organization may maintain historical key management keys separately. Contact your IT administrators for recovery if needed.
 
 ## Other Helpful References
 
-- Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- Enabling S/MIME on [Thurderbird email client](https://support.mozilla.org/en-US/kb/thunderbird-help-setup-account-e2ee){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- S/MIME with [O365](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- S/MIME with [Exchange Online](https://learn.microsoft.com/en-us/exchange/security-and-compliance/smime-exo/configure-smime-exo){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* Enabling S/MIME on [Mac Mail](https://support.apple.com/guide/mail/sign-or-encrypt-emails-mlhlp1180/mac){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* Enabling S/MIME on [Thunderbird email client](https://support.mozilla.org/en-US/kb/thunderbird-help-setup-account-e2ee){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* S/MIME with [Gmail](https://support.google.com/a/topic/9061730?hl=en&ref_topic=2683828){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* S/MIME with [New Outlook](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-web-app-2e57e4bd-4cc2-4531-9a39-426e7c873e26){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* S/MIME with [Exchange Online](https://learn.microsoft.com/en-us/exchange/security-and-compliance/smime-exo/configure-smime-exo){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
