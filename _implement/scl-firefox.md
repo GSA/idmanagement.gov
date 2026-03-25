@@ -30,7 +30,11 @@ OpenSC will enable a user's PIV credential to work with Firefox and some signing
 
 First, you will need to install and test **OpenSC**. OpenSC has installers for multiple operating systems, including Windows, macOS, and Linux flavors. The installers can be downloaded directly from GitHub and the OpenSC wiki:
 
+### OpenSC Configuration Resources
 * [View instructions and installation procedures for OpenSC](https://github.com/OpenSC/OpenSC/wiki/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* [OpenSC Download (Version 0.26.1)](https://github.com/OpenSC/OpenSC/releases/tag/0.26.1){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+* [OpenSC README](https://github.com/OpenSC/OpenSC/blob/master/README.md){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+
 
 When installing OpenSC, you need to consider some items that are specific for the federal government: 
 
@@ -46,7 +50,7 @@ When installing OpenSC, you need to consider some items that are specific for th
 ### Load New Security Device
 
 Launch **_Firefox_** and load a new _Security Device_ (i.e., the Security Device is your PIV credential) using the OpenSC PKCS #11 driver:
-* From the _Firefox_ taskbar, click the _Options_ icon ("gear" shape). 
+* From the _Firefox_ taskbar, click the _Three Lines_ icon at the top right of your browser. Once you have done that, navigate to and click the _Settings_ option.
 * Click the _Privacy & Security_ menu from the left-hand navigation.
 * Scroll down until you see the _Certificates_ heading, and then click _Security Devices_.
 * At the _Device Manager_ window, click the _Load_ button and enter this module name: _OpenSC PKCS#11 Module_.
