@@ -55,3 +55,9 @@ Phase 1 piloted next-generation PIV technology to improve secure digital identit
 </div>
 
 Phase 2 seeks to deliver a deployable, standards-aligned, PQC PKI CA service blueprint and an operational pilot that can scale across agencies while maintaining compatibility with Federal PKI trust expectations and existing PIV workflows.
+
+## FPKI Bridge & Root Authority Working Lab
+
+Federal PKI has recently introduced the Bridge & Root Authority Working Lab (BRAWL). The initial iteration of BRAWL facilitates partner PQC experiments by providing a ML-DSA-87 self-signed Root CA certificate and Bridge CA from which PKI issuing partners can request intermediate CA certificates, issuing CA certificates, or cross-certificates. This allows PKI partners to conduct end entity certificate PQC tests (e.g., application usage, processing times, etc.) with full path discovery and validation capabilities, as expected in a PQC pure FPKI environment.
+
+Please see [this link](https://www.idmanagement.gov/implement/fpkicite/) for additional information to include the [FPKI draft PQC certificate and CRL profiles](https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common-pqc.pdf) as well as contact information for requesting a CA certificate from BRAWL.
