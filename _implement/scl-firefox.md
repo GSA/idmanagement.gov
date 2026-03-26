@@ -51,9 +51,21 @@ When installing OpenSC, you need to consider some items that are specific for th
 
 Launch **_Firefox_** and load a new _Security Device_ (i.e., the Security Device is your PIV credential) using the OpenSC PKCS #11 driver:
 * From the _Firefox_ taskbar, click the _Three Lines_ icon at the top right of your browser. Once you have done that, navigate to and click the _Settings_ option.
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/firefox ss1.png" alt="firefox pkcs setup step 1 screen shot." width="454">
+<br>
 * Click the _Privacy & Security_ menu from the left-hand navigation.
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/firefox ss2.png" alt="firefox pkcs setup step 2 screen shot." width="454">
+<br>
 * Scroll down until you see the _Certificates_ heading, and then click _Security Devices_.
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/firefox ss3.png" alt="firefox pkcs setup step 3 screen shot." width="454">
+<br>
 * At the _Device Manager_ window, click the _Load_ button and enter this module name: _OpenSC PKCS#11 Module_.
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/firefox ss4.png" alt="firefox pkcs setup step 4 screen shot." width="454">
+<br>
 * Select the directory where the OpenSC PKCS #11 driver is located. The default locations are:
 
 | **OS** | **Default Driver Location** | **Driver File Name** | 
@@ -68,7 +80,13 @@ Launch **_Firefox_** and load a new _Security Device_ (i.e., the Security Device
 ### Import PIV Issuer Certificate
 * Click the _View Certificates_ button. If prompted, enter your PIV credential PIN.
 * Click the _Authorities_ tab from the top navigation.
-* Click the _Import_ button to import a copy of your PIV credential issuer's certification authority (CA) certificate. When prompted, trust the certificate for identifying websites _and_ email users.
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/firefox ss5.png" alt="firefox pkcs setup step 5 screen shot." width="454">
+<br>
+* Scroll down and click the _Import_ button to import a copy of your PIV credential issuer's certification authority (CA) certificate. When prompted, trust the certificate for identifying websites _and_ email users.
+<br><br>
+<img src="{{site.baseurl}}/assets/playbooks/firefox ss6.png" alt="firefox pkcs setup step 6 screen shot." width="454">
+<br>
 * Click _OK_ and restart _Firefox_.
 
 ### Test Authentication
