@@ -150,7 +150,7 @@ publication in the Federal Register.
 - Office of the Federal Register (OFR) - The agency responsible for publishing
 the Federal Register.
 
-- Role Holder - The federal official authorized to sign Federal Register documents, and whose name appears in the subject field of a delegated digital signature certificate; Federal PKI certificate policy similarily referres to this individual as the “role-holder.” This individual is ultimately responsible for all documents that carry a digital signature that asserts their name.
+- Role Holder - The federal official authorized to sign Federal Register documents, and whose name appears in the subject field of a delegated digital signature certificate; Federal PKI certificate policy similarily refers to this individual as the “role-holder.” This individual is ultimately responsible for all documents that carry a digital signature that asserts their name.
 
 ### Disclaimer
 
