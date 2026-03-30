@@ -9,8 +9,8 @@ description: This playbook outlines the process for an agency to implement a Del
 sidenav: playbooks
 sticky_sidenav: true
 
-version: 2.0
-pubdate: March 15, 2025
+version: 2.1
+pubdate: March 27, 2026
 
 subnav:
   - text: Executive Summary
