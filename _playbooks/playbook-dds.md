@@ -136,11 +136,11 @@ implementation questions should be sent to [fpki@gsa.gov](mailto:fpki@gsa.gov){:
 ### Key Terms
 - Authorizing sponsor – An individual other than the role holder or private key holder that can attest to the need to issue a delegated signature certificate under the authority of the role holder in support of a documented business practice (e.g., the chief of staff, legal counsel, etc, for the role holder) .
 
-- Delegated digital signature - A cryptographic digital signature generated using control over a private asymmetric key and associated with a public certificate that conveys the authority of the identified authorizing sponsor.
+- Delegated digital signature - A cryptographic digital signature generated using control over a private asymmetric key and associated with a public certificate that conveys the authority of the identified role holder.
 
-- Delegated digital signature certificate - A Federal PKI role-based digital signature certificate, asserting the identity of the authorizing sponsor, but issued to a delegated signer on a hardware security module, used to sign Federal Register documents when approved by the authorizing sponsor.
+- Delegated digital signature certificate - A Federal PKI role-based digital signature certificate, asserting the identity of the role holder, but issued to a delegated signer on a hardware security module, used to sign Federal Register documents when approved by the role holder.
 
-- Delegated digital signature certificate recipient - The person identified by the authorizing sponsor to use the private key associated with the delegated digital signature certificate to affix the authorizing sponsor’s signature to a Federal Register document; the delegated digital signature certificate recipient is referred to as the “private key holder” in the context of the Federal PKI certificate policy.
+- Delegated digital signature certificate recipient - The person identified by the role holder to use the private key associated with the delegated digital signature certificate to affix the role holder's signature to a Federal Register document; the delegated digital signature certificate recipient is referred to as the “private key holder” in the context of the Federal PKI certificate policy.
 
 - Federal PKI - A set of policies, processes, and information technology systems (to include Certification Authorities (CAs)) used for the purpose of creating, maintaining and revoking certificates and public-private key pairs. A PKI certificate is considered trusted based on the security requirements of the systems, the adherence to the agreed upon set of issuance procedures for asserting a claimed set of identity attributes in the public certificate, and protection of the associated private key. For more information on the Federal PKI contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 
@@ -150,7 +150,7 @@ publication in the Federal Register.
 - Office of the Federal Register (OFR) - The agency responsible for publishing
 the Federal Register.
 
-- Role Holder - The federal official authorized to sign Federal Register documents, and whose name appears in the subject field of a delegated digital signature certificate; Federal PKI certificate policy also referred to this individual as the “role-holder.” This individual is ultimately responsible for all documents that carry a digital signature that asserts their name.
+- Role Holder - The federal official authorized to sign Federal Register documents, and whose name appears in the subject field of a delegated digital signature certificate; Federal PKI certificate policy similarily referres to this individual as the “role-holder.” This individual is ultimately responsible for all documents that carry a digital signature that asserts their name.
 
 ### Disclaimer
 
@@ -244,7 +244,7 @@ This section is written for executive staff to understand an overall delegated d
 
 1. A delegation of authority through an agency policy.
 2. A delegated digital signature standard operating procedure.
-3. Signed user agreements from the Authorizing Sponsor and Delegated Digital
+3. An appointment form signed by the Role Holder or Authorizing Sponsor and a signed user agreement from the Delegated Digital
 Signature Certificate Recipient.
 4. Senior security official approval.
 
@@ -269,7 +269,7 @@ See [Appendix C](#appendix-c-templates){:class="usa-link"} for sample artifact t
 ### Agency User Agreement
 
 A user authorized to sign a Federal Register document conveying the authority of the
-sponsor must understand their responsibilities and the requirements to use and
+Role Holder must understand their responsibilities and the requirements to use and
 protect a delegated digital signature certificate. See the [Appendix C](#appendix-c-templates){:class="usa-link"} for an example
 of a user agreement. An agency may define additional annual training or refresher
 requirements to ensure the protection of the individually issued private key. The user
@@ -282,9 +282,9 @@ must sign an agreement to obtain a delegated digital signature certificate.
 The final step involves an agency defining the issuance request procedures. The issuance request procedure document is signed by the agency’s senior security official such as the Chief Security Officer or Chief Information Security Office. As part of the delegated digital signature certificate issuance request, the requesting office may submit the following verification documents:
 
 1. An official agency artifact conveying the delegation of signatory authority of
-the authorizing sponsor to an office or a designated individual.
+the Role Holder to an office or a designated individual.
 2. The requesting office document that individually identifies the intended
-recipient of the delegated digital signature certificate/key.
+recipient of the delegated digital signature certificate/key, signed by the Role Holder or Authorizing Sponsor.
 3. The current version of a delegated digital signature standard operating
 procedure.
 4. Verify this request does not exceed the maximum number of allowed
@@ -324,11 +324,11 @@ agency requesting the delegated digital signature certificate.
 factor, the physically printed topography of the card:
     1. must be visually distinct from a PIV card.
     2. must not have a printed photo, or other personally identifiable
-  information (e.g., authorizing sponsor or recipient’s name, title or role).
+  information (e.g., role holder or recipient’s name, title or role).
     3. may contain printed information that identifies the card holder such as
   its requesting office or user.
 4. Authentication of the Role Holder or their Authorizing Sponsor as well as the delegated digital signature certificate recipient is performed using their PIV cards, such as a signed object, such as a user agreement or authorization memo, leveraging their PIV signature certificate(s).
-5. The common name in the certificate must state the role of Role Holder such as “Secretary of Homeland Security” or “[Secretary Name] - Secretary of Homeland Security”, and be suffixed with a certificate purpose such as “(OFR).” Note that OFR signature block requirements include the authorizing sponsor’s name to align with the document signature block.
+5. The common name in the certificate must state the role of Role Holder such as “Secretary of Homeland Security” or “[Secretary Name] - Secretary of Homeland Security”, and be suffixed with a certificate purpose such as “(OFR).” Note that OFR signature block requirements include the role holder's name to align with the document signature block.
   1. Example - CN=Secretary of the Treasury, Alexander Hamilton (OFR)
 6. The Subject Alternative Name (SAN) of the delegated digital signature certificate must include a unique identifier for the recipient of the delegated digital signature certificate (e.g., RFC822 email, UPN, or another internal identifier such as an EDIPI).
 7. The validity period of the delegated digital signature certificate must:
