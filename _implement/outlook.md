@@ -81,7 +81,7 @@ These steps reflect the current configuration experience in **classic Outlook fo
 **Note:** The following screenshot shows an example of a completed security preference configuration.
 
 <br><br>
-<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss1.png" alt="Security Preference Configuration." width="454" height="377">
+<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss1.png" alt="Security Preference Configuration." width="454">
 <br>
 
 ## Certificate Publication in Modern Microsoft 365
@@ -128,7 +128,7 @@ When you send a **digitally signed** message, Outlook includes your public signi
 **Note:** It is common to enable **both** encryption and signing so the recipient automatically receives your certificates.
 
 <br><br>
-<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss2.png" alt="Encrypt Email with S/MIME." width="454" height="377">
+<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss2.png" alt="Encrypt Email with S/MIME." width="454">
 <br>
 
 ### Import a Recipient's Encryption Certificate Manually
