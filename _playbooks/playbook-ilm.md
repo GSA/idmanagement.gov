@@ -2,20 +2,19 @@
 layout: page
 collection: playbooks
 title: Identity Lifecycle Management Playbook
-pubdate: 2026-03-31
-type: Markdown
 permalink: /playbooks/ilm/
 description: The Identity Lifecycle Management Playbook helps federal agencies understand and plan identity lifecycle management initiatives based on Zero Trust Architecture principles.
 sidenav: playbooks
 sticky_sidenav: true
-
 version: 2.0
-
+pubdate: March 2026
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
-  - text: Introduction
-    href: '#introduction'
+  - text: Key Terms
+    href: '#key-terms'
+  - text: Disclaimer
+    href: '#disclaimer'
   - text: Identity Lifecycle Management 101
     href: '#identity-lifecycle-management-101'
   - text: Stage 1. Creation (Provisioning)
@@ -26,8 +25,20 @@ subnav:
     href: '#stage-3---deletion-deprovisioningrevocation'
   - text: Shifting Focus from Authenticators to Identities
     href: '#shifting-the-focus-from-managing-authenticator-lifecycles-to-managing-identity-lifecycles'
-  - text: Key Terms
-    href: '#key-terms'
+  - text: Implementing ILM
+    href: '#implementing-ilm'
+  - text: Step 1. Create and Document an Agency ILM Policy
+    href: '#step-1-create-and-document-an-agency-ilm-policy-that-follows-zta-and-iga-best-practices'
+  - text: Step 2. Architect the Solution
+    href: '#step-2-architect-the-solution'
+  - text: Step 3. Create the Master User Record
+    href: '#step-3-create-the-master-user-record'
+  - text: Step 4. Integrate with Agency Enterprise Services
+    href: '#step-4-integrate-with-agency-enterprise-services'
+  - text: Summary
+    href: '#summary'
+  - text: Appendix A. Policies, Standards, and Guidance
+    href: '#appendix-a-policies-standards-and-guidance'
 ---
 
 # Identity Lifecycle Management Playbook
