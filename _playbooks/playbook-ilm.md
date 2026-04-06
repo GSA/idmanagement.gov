@@ -8,7 +8,9 @@ permalink: /playbooks/ilm/
 description: The Identity Lifecycle Management Playbook helps federal agencies understand and plan identity lifecycle management initiatives based on Zero Trust Architecture principles.
 sidenav: playbooks
 sticky_sidenav: true
+
 version: 2.0
+
 subnav:
   - text: Executive Summary
     href: '#executive-summary'
@@ -37,7 +39,6 @@ subnav:
 <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
 Date: {{page.pubdate}} - Version: {{page.version}}
 </button>
-
 <div id="v-a1" class="usa-accordion__content usa-prose">
 <table>
   <caption>Identity Lifecycle Management version table</caption>
@@ -48,15 +49,13 @@ Date: {{page.pubdate}} - Version: {{page.version}}
     <th scope='col'>Change Description</th>
   </tr>
   </thead>
+  <tbody>
   <tr>
     <th scope='row'>2.0</th>
     <td>3/31/2026</td>
     <td>Major update incorporating Enhanced Authentication Standards, Federation Requirements, Privacy Impact Assessment Requirements, Incident Response Framework, and Performance Metrics aligned with NIST 800-63 standards.</td>
   </tr>
   <tr>
-    <th scope='row'>1.3</th>
-    <td>6/18
-      <tr>
     <th scope='row'>1.3</th>
     <td>6/18/2024</td>
     <td>Incorporated Zero Trust elements.</td>
@@ -76,6 +75,7 @@ Date: {{page.pubdate}} - Version: {{page.version}}
     <td>06/30/2022</td>
     <td>Initial Draft.</td>
   </tr>
+  </tbody>
 </table>
 </div>
 
