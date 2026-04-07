@@ -177,7 +177,7 @@ The adoption of cloud services adds challenges. Cloud services operate on a shar
 
 <img src="{{site.baseurl}}/assets/playbooks/cloud-shared-model.png" alt="A chart showing how responsibilities are shared between an agency customer and a cloud service provider. ICAM is always an Agency Customer responsibility." width="560" height="332">
 
-See the [Data Center and Cloud Optimization Initiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Cloud Smart Strategy](https://cloud.cio.gov/strategy/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to understand the federal government's overarching strategic guidance on cloud adoption.
+See the [Data Center and Cloud Optimization Initiative Cloud Strategy Guide](https://community.max.gov/display/Egov/Agency%2BIT%2BModernization%3A%2BEducational%2BResources%2BBuilding%2BBlocks){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for a holistic cloud strategy. Additionally, read the [OMB Federal Cloud Computing Strategy](https://trumpwhitehouse.archives.gov/wp-content/uploads/2019/06/Cloud-Strategy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to understand the federal government's overarching strategic guidance on cloud adoption.
 
 ## Cloud Identity Journey Steps
 
@@ -532,10 +532,10 @@ See the [GSA Guide](https://www.gsa.gov/system/files/DevSecOps-Program-OCISO%20%
 ### Policies
 
 1. [Executive Order 14028 - Improving the Nation's Cybersecurity](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-2. [Federal Cloud Smart Strategy](https://cloud.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [Federal Cloud Computing Strategy](https://trumpwhitehouse.archives.gov/wp-content/uploads/2019/06/Cloud-Strategy.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [Federal Zero Trust Strategy](https://zerotrust.cyber.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 4. [Office of Management and Budget Memorandum M-19-17](https://www.whitehouse.gov/wp-content/uploads/2019/05/M-19-17.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-5. [Office of Management and Budget Memorandum](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) M-22-09{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5. [Office of Management and Budget Memorandum M-22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 ### Standards
 
