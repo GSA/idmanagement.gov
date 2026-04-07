@@ -182,7 +182,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -212,7 +211,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -246,7 +244,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -281,7 +278,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -311,7 +307,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -341,7 +336,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -371,7 +365,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -406,7 +399,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -440,7 +432,6 @@
                     "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
                     "common_name:Raytheon Technologies Root CA,organizational_unit_name:Root-G3,organization_name:CAs,domain_component:rtx,domain_component:com",
-                    "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
                     "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
                 ]
@@ -3675,36 +3666,14 @@
         },
         {
             "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
-            "issuer": "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "serial-number": "175135604597360705096789010144143972299105",
-            "akid": "e9 ba 67 43 40 ad 41 22 9a fe fa 09 43 88 f3 62 b8 6b af 2a",
-            "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US:e9ba674340ad41229afefa094388f362b86baf2a",
-            "validity-dates": {
-                "not-before": "2025-03-13 19:36:01+00:00",
-                "not-after": "2026-03-18 19:36:01+00:00"
-            }
-        },
-        {
-            "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "issuer": "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "serial-number": "175608214024723469826365958916079507107490",
+            "serial-number": "175668845367252558734542430301183168288315",
             "akid": "c2 2e 25 8e 14 f0 8e 58 bc 2e 09 af e3 48 12 ab 60 b1 86 1c",
             "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
-            "status": "Certificate Invalid",
+            "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US:c22e258e14f08e58bc2e09afe34812ab60b1861c",
-            "validity-dates": {
-                "not-before": "2025-03-13 20:28:38+00:00",
-                "not-after": "2026-03-18 20:28:38+00:00"
+                "details": "Unable to build Path"
             }
         },
         {
@@ -3722,6 +3691,18 @@
             "validity-dates": {
                 "not-before": "2025-03-13 15:51:49+00:00",
                 "not-after": "2026-03-18 15:51:49+00:00"
+            }
+        },
+        {
+            "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
+            "issuer": "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
+            "serial-number": "41041020778841",
+            "akid": "fe 01 17 a6 8a 2e 7a 0a db 99 ee 0f 4b 94 83 04 8a dc 91 91",
+            "skid": "7a 8b 3c 06 92 dc 1e a8 d2 82 ac 1b 74 6f 74 3d 4e d1 a8 9b",
+            "status": "Certificate Valid, but no Path to Common",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Unable to build Path"
             }
         },
         {
