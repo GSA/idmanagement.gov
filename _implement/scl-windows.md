@@ -87,7 +87,7 @@ There are five configuration categories to review with your colleagues. All five
 
 There are three additional guides:
 
-1. [Network Tuning]({{site.baseurl}}.gov/implement/scl-windows/#step-6---network-tuning){:rel="noopener noreferrer"}{:class="usa-link"} - provides tips for faster authentication  
+1. [Network Tuning]({{site.baseurl}}/implement/scl-windows/#step-6---network-tuning){:rel="noopener noreferrer"}{:class="usa-link"} - provides tips for faster authentication  
 2. [Local Certification Authority]({{site.baseurl}}/implement/scl-windows/#step-7---local-certification-authority){:rel="noopener noreferrer"}{:class="usa-link"} - provides detailed steps for establishing an internal PKI/CAs for credentialing your domain controllers  
 3. [Authentication Assurance]({{site.baseurl}}/implement/scl-windows/#step-8---authentication-assurance){:rel="noopener noreferrer"}{:class="usa-link"} - provides some guidance on downstream or federated use of logon information for internal applications
 
