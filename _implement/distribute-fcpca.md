@@ -44,6 +44,11 @@ subnav:
     </tr>
   </thead>
   <tbody>
+     <tr>
+      <th scope="row">1.3</th>
+      <td>03/06/2024</td>
+      <td>Minor editorial updates and updated intermediate CA certificates section.</td>
+    </tr>
     <tr>
       <th scope="row">1.2</th>
       <td>03/06/2024</td>
@@ -113,6 +118,7 @@ To verify your copy of the FCPCA root certificate, use one of these options:
     ```bash
     certutil -hashfile {DOWNLOAD_LOCATION}\fcpcag2.crt SHA256
     ```
+3. Compare the output of the command to the associated thumbprint in the table above to verify you have the correct certificate.
 
 **Note:** The following video shows you how to verify your copy of the FCPCA root certificate on Microsoft Server 2016. [Click for a larger version]({{site.baseurl}}/assets/fpki/verify.gif){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
@@ -127,6 +133,7 @@ To verify your copy of the FCPCA root certificate, use one of these options:
     ``` bash
     shasum -a 256 {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
+4. Compare the output of the command to the associated thumbprint in the table above to verify you have the correct certificate.
 
 **Note:** The following video shows you how to verify your copy of the FCPCA root certificate on macOS Catalina (10.15). [Click for a larger version]({{site.baseurl}}/assets/fpki/download_and_verify.gif){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
@@ -140,6 +147,7 @@ To verify your copy of the FCPCA root certificate, use one of these options:
     ```bash
     sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
+3. Compare the output of the command to the associated thumbprint in the table above to verify you have the correct certificate.
 
 After you have verified the certificate, you are ready to distribute the FCPCA root certificate certificate within your environment.
 
@@ -208,7 +216,7 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
     <p class="usa-alert__text">
       Just pushing new Federal PKI intermediates over GPO may not fix domain login. Microsoft has two primary locations to store certificates for network login and other uses: NTAuth and Enterprise Trust.
       <ul>
-        <li>NTAUTH is a registry location at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a certificate store.</li>
+        <li>NTAUTH is a registry location that only stores data attributes from the certifiate at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a full certificate store that maintains the entire X.509 file to include the digital signature.</li>
         <li>The NTAuthCertificates determine which CAs are trusted for domain authentication use cases. NTAuth (or NTAuthCertificates) is not a Windows certificate store but an Active Directory object containing certificates.</li>
         <li>Add store is used to add a certificate to a certificate store, while publish publishes values into the directory.</li>
         <li>With gpupdate /force,  the update starts immediately, but replication can take some time depending on the deployment's complexity (e.g., number of domain controllers or network configuration). The average default delay for gpupdate without force is around 90 minutes. This behavior occurs when Group Policy settings are updated and the client-side extension responsible for autoenrollment runs.</li>
@@ -274,7 +282,7 @@ You can use third-party configuration management tools, such as BigFix.
 
 ### Use Microsoft Certificate Manager for Unmanaged Devices
 
-To distribute the FCPCAG2 root certificate to unmanaged devices:
+To distribute the FCPCAG2 root certificate to individual unmanaged devices:
 
 1. Click **Start**, type **certmgr.msc**, and  press **Enter**.
 1. Right-click **Trusted Root Certification Authorities**, and select **All Tasks** > **Import**.
@@ -283,7 +291,7 @@ To distribute the FCPCAG2 root certificate to unmanaged devices:
 1. Select _Finish_ to complete the import.
 1. A success message appears.
 
-**Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately).
+**Note:** If several users share a device, you can run the **certlm.msc** (local machine trust store) to simultaneously update the certificate stores for all of the accounts on the device (vs. updating each account separately).
 
 ---
 
@@ -293,15 +301,15 @@ To distribute the FCPCAG2 root certificate to unmanaged devices:
 
 For **macOS and [iOS](#install-fcpca-using-an-apple-configuration-profile-in-ios){:class="usa-link"}** government-furnished devices, you can use Apple configuration profiles (XML files) to distribute and automatically install the FCPCAG2 root certificate.  
 
-These steps describe how to create, distribute, and install profiles using Apple’s free _Configurator 2_ application. There are also available third-party applications.
+These steps describe how to create, distribute, and install profiles using Apple’s free _Configurator_ application. There are also  third-party applications available.
 
 {% include alert-warning.html content="Only System or mobile device management (MDM) administrators should create, distribute, and install Apple configuration profiles." %}
 
 ### Create an Apple Configuration Profile
 
 1. As an administrator, [download and verify](#step-1---obtain-and-verify-the-fcpca-root-certificate){:class="usa-link"} a copy of the FCPCA root certificate to your device.
-1. Download and install _Configurator 2_ from the Apple App Store.
-1. Open _Configurator 2_ and click **File** > **New Profile**.
+1. Download and install _Configurator_ from the Apple App Store.
+1. Open _Configurator_ and click **File** > **New Profile**.
 1. On the **General** tab, enter a unique profile **Name** (for example, _FCPCA Profile_) and **Identifier** (for example, _FCPCA-0001_).
 1. On the **Certificates** tab, click **Configure**.
 1. Browse to and select your verified copy of the FCPCAG2 root certificate.
@@ -399,7 +407,7 @@ To use this profile, copy the XML information and save it as a `.mobileconfig` f
 
 {% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple configuration profile to someone outside your agency's domain." %}
 
-You can use Apple's _Configurator 2_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways:
+You can use Apple's _Configurator_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways:
 
 - Physically connect to the user's device.
 - Email a profile to specific users.*
@@ -407,7 +415,7 @@ You can use Apple's _Configurator 2_ to distribute your Apple configuration prof
 - [Share via over-the-air profile delivery and configuration (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 - [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}. Third-party applications are also available.
 
-> ***For iOS only** -- If you download and install the FCPCAG2 root certificate from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install the FCPCAG2 root certificate. (See [Enable Full Trust for FCPCA](#enable-full-trust-for-fcpca).)
+> ***For iOS only** -- If you download and install the FCPCAG2 root certificate from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA_. This is not needed if you use Configurator with over-the-air (OTA) methods or an MDM enrollment profile to install the FCPCAG2 root certificate. (See [Enable Full Trust for FCPCA](#enable-full-trust-for-fcpca).)
 
 ### Install an Apple Configuration Profile
 
@@ -463,7 +471,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA root cert
 1. Double-click the file.
 1. Keychain Access opens and displays the installed certificate.
 
-**Note:**The following video shows non-administrators how to install FCPCA using the Apple Keychain Access import process. [Click for a larger version]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+**Note:** The following video shows non-administrators how to install FCPCA using the Apple Keychain Access import process. [Click for a larger version]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
 [![A video that shows the steps for non-administrators to install FCPCA using the Apple Keychain Access import process.]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:style="width:85%;"}]({{site.baseurl}}/assets/fpki/keychain_gui_non_admin.gif){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
@@ -840,8 +848,8 @@ Recommended solutions for distributing intermediate CA certificates are listed b
 #### Distribute Intermediate CA certificates with an Apple Configuration Profile
 
 1. As an administrator, download and verify the certificates [issued by the FCPCA](#certificates-issued-by-the-federal-common-policy-ca){:class="usa-link"} that you want to distribute.
-2. Download and install _Configurator 2_ from the Apple App Store.
-3. Open _Configurator 2_ and click **File** > **New Profile**.
+2. Download and install _Configurator_ from the Apple App Store.
+3. Open _Configurator_ and click **File** > **New Profile**.
 4. On the **General** tab, enter a unique profile **Name** (for example, _FPKI Intermediate CA Certificate Distribution Profile_) and **Identifier** (for example, _FCPCA-Intermediate-0001_).
 5. On the **Certificates** tab, click **Configure**.
 6. Browse to and select the certificates you want to distribute.
@@ -870,9 +878,9 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5){:class="usa-link"}
 - [Issued to: Entrust Managed PKI Federal Root CA G2](#issued-to-entrust-managed-pki-federal-root-ca-g2){:class="usa-link"}
 - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca){:class="usa-link"}
-- [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2){:class="usa-link"}
 - [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5){:class="usa-link"}
 - [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca){:class="usa-link"}
+- [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca-2){:class="usa-link"}
 
 {% include alert-warning.html content="**Important!** To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions){:class=\"usa-link\"} page." %}
 
@@ -961,17 +969,6 @@ The following certificates are published in the Federal Common Policy CA certifi
 | SHA-1 Thumbprint | 07f5dc58f83778d5b5738a988292c00a674a0f40 |
 | SHA-256 Thumbprint | e3d6b1b33d0a5df0630b32bf17f9fb632b0471a6cac561f164aa6429ef0699a1 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Entrust_Managed_Services_Root_CA.cer){:class="usa-link"} |
-
-#### Issued to: Verizon SSP CA A2 (Planned for Revocation on 3/14/2025)
-
-| Certificate Attribute | Value |
-| :--------  | :-------- |
-| Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
-| Validity | November 18, 2020 to December 6, 2026 |
-| Serial Number | 25fca834ada24a4455a2db0ff4cef7c411198e3a |
-| SHA-1 Thumbprint | b2167fd38ff47bb910d8dcc32fcc3b7b63a09ff7 |
-| SHA-256 Thumbprint | 226508d2a1c926a7092218e743ccd01bab8273291feef66941691592fa7c12b8 |
-| Download Location | Click [here]({{site.baseurl}}/implement/certs/Verizon_SSP_CA_A2.cer){:class="usa-link"}|
 
 #### Issued to: WidePoint ORC SSP CA 5
 
