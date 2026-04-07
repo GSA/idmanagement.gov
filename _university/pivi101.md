@@ -560,7 +560,7 @@ This appendix provides additional technical information in support of the techni
 
 ## Policies
 1. [HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors](https://www.dhs.gov/homeland-security-presidential-directive-12){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-2. [OMB A-130: Management of Federal Information Resources](https://www.cio.gov/policies-and-priorities/circular-a-130/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+2. [OMB A-130: Management of Federal Information Resources](https://www.federalregister.gov/documents/2016/07/28/2016-17872/revision-of-omb-circular-no-a-130-managing-information-as-a-strategic-resource){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3. [X.509 Certificate Policy for the Federal Bridge Certification Authority]({{site.baseurl}}/docs/fpki-x509-cert-policy-fbca.pdf){:rel="noopener noreferrer"}{:class="usa-link"}
 4. [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework]({{site.baseurl}}/docs/fpki-x509-cert-policy-common.pdf){:rel="noopener noreferrer"}{:class="usa-link"}
 
