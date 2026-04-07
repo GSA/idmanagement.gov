@@ -45,7 +45,7 @@ This is a list of available courses with a focus for free, on-demand training. V
 1. The [Federal Virtual Training Environment](https://niccs.cisa.gov/education-training/cisa-learning){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is a free training resource for all federal employees. Here is a short list of some of the identity courses that are offered.
    1. Micro Learn: IdAM- Identity and Access Management with the CDM Agency Dashboard
    2. CDM 201 – Identity and Access Management Capabilities within the CDM Agency Dashboard
-2. The [CIO Council Cloud and Infrastructure Community of Practice](https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} offer [quarterly training](https://community.max.gov/display/Egov/Cloud+Training+Resources){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} focused on cloud and security certification boot camps. The courses change every quarter. Here is a short list of previous courses offered.
+2. The CIO Council Cloud and Infrastructure Community of Practice offers [quarterly training](https://community.max.gov/display/Egov/Cloud+Training+Resources){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} focused on cloud and security certification boot camps. The courses change every quarter. Here is a short list of previous courses offered.
    1. AWS Foundations, Architect, and Developer
    2. Certified Cloud Security Engineer
    3. Certified Information Systems Security Professional 
