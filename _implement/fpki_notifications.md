@@ -75,9 +75,9 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
 <<<<<<< 0406-fpki-graph-update
-**Last Update**: April 06, 2026
+**Last Update**: April 14, 2026
 =======
-**Last Update**: April 01, 2026
+**Last Update**: April 14, 2026
 >>>>>>> staging
 
 {% include graph.html %}
