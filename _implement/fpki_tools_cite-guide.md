@@ -30,7 +30,7 @@ subnav:
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Updated: March 9, 2026 <br>
+Updated: April 21, 2026 <br>
 
 ## Overview
 
