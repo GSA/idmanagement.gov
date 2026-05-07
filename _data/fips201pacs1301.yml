@@ -633,7 +633,7 @@
   valurl: /docs/apl-10193-Identity-one-validation.pdf
   valapl: 10193
 
-  - category: 13.01
+- category: 13.01
   fipsstatus: Approved
   infrastructure: AccessNsite V 7.9.45
   infraurl: /docs/apl-10197-accessnsite.pdf
