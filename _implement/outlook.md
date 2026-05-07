@@ -128,7 +128,7 @@ When you send a **digitally signed** message, Outlook includes your public signi
 **Note:** It is common to enable **both** encryption and signing so the recipient automatically receives your certificates.
 
 <br><br>
-<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss2.png" alt="Encrypt Email with S/MIME." width="454">
+<img src="{{site.baseurl}}/assets/playbooks/microsoft sign and encrpyt ss2 (edit).png" alt="Encrypt Email with S/MIME." width="454">
 <br>
 
 ### Import a Recipient's Encryption Certificate Manually
