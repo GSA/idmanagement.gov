@@ -632,3 +632,12 @@
   validation: Identity One Validation System for NAPCO CA4K
   valurl: /docs/apl-10193-Identity-one-validation.pdf
   valapl: 10193
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: AccessNsite V 7.9.45
+  infraurl: /docs/apl-10197-accessnsite.pdf
+  infraapl: 10197
+  validation: Unified Door & Hardware Group AccessNsite 7.9.45 + HID 13.01
+  valurl: /docs/apl-10198-hid-validation.pdf
+  valapl: 10198
