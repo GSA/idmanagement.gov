@@ -47,43 +47,44 @@
   state: Update
   teststatus: In-Progress
 
-- position: 3 
-  solution: AccessNsite 7.9 + HID pivCLASS 5.32.0
-  aplnumbers: 10043 & 10044
-  state: New
-  teststatus: In-Progress
+# Removed on 05/14/2026, per Nick - cjb
+# - position: 3 
+#   solution: AccessNsite 7.9 + HID pivCLASS 5.32.0
+#   aplnumbers: 10043 & 10044
+#   state: New
+#   teststatus: In-Progress
 
-- position: 4 
+- position: 3 
   solution: Motorola - Avigilon
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 5 
+- position: 4 
   solution: Software House - CCURE pivClass
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 6 
+- position: 5 
   solution: Siemens Government Technologies - SiPass
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 7 
+- position: 6 
   solution: Galaxy Systems
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 8 
+- position: 7 
   solution: HIRSCH Secure (Formerly Identiv)
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 9 
+- position: 8 
   solution: MDI Security Systems Inc.
   aplnumbers: New
   state: New
