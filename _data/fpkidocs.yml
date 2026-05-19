@@ -18,6 +18,14 @@
   status: post
   remove: 5/18/2029
 
+ - category: Federal Public Trust TLS Certificate Policy
+  numberProposal: 1.1
+  name: U.S. Federal Public Trust TLS Certifiate Policy v1.1
+  date: 6/6/2023
+  url: /docs/archived/us-federal-public-trust-cp-11.pdf
+  status: post
+  remove: 6/6/2026 
+
 - category: Federal Bridge Certificate Policy
   numberProposal: 3.8
   name: X.509 Certificate Policy For The Federal Bridge CA (FBCA) v3.8
