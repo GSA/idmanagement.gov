@@ -14,7 +14,7 @@
   numberProposal: 1.2
   name: U.S. Federal Public Trust TLS Certifiate Policy v1.2
   date: 1/17/2025
-  url: /docs/archived/us-federal-public-trust-cp-12.pdf
+  url: /docs/archived/us-federal-public-trust-tls-cp-12.pdf
   status: post
   remove: 5/18/2029
 
@@ -22,7 +22,7 @@
   numberProposal: 1.1
   name: U.S. Federal Public Trust TLS Certifiate Policy v1.1
   date: 6/6/2023
-  url: /docs/archived/us-federal-public-trust-cp-11.pdf
+  url: /docs/archived/us-federal-public-trust-tls-cp-11.pdf
   status: post
   remove: 6/6/2027 
 
