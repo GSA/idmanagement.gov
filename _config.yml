@@ -203,6 +203,11 @@ collections:
   rss:
     output: true
     permalink: /rss/:path/ 
+# Uncomment this to enable FAQs on IDM
+# also see: _data/faqs.yml 
+  faqs:
+    output: true
+    permalink: /faqs/:path/ 
 
 
 # Leaving in place: 
