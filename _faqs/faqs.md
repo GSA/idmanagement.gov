@@ -27,19 +27,24 @@ subnav:
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{faq.expanded}}" aria-controls="gsa-{{forloop.index}}">
-      <p><span class="usa-tag"> Q: </span> {{faq.question}}</p>
+      <p><span style="font-weight:700"> Q: </span> {{faq.question}}</p>
       <hr>
       {% assign tags = faq.tags | split: ", " %}
-      <span class="text-right">
+      {% if tags.length > 1 %}
+        {% assign taglabel = "Tags:" %}
+      {% else %}
+        {% assign taglabel = "Tag:" %}
+      {% endfi %}
+      <div style="text-align: right">{{tablabel}} 
       {% for tag in tags %}
         <span class="usa-tag">{{tag}}</span>
       {% endfor %}
-      </span>
+      </div>
     </button>
   </h4>
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
-        <span class="usa-tag"> A: </span> {{faq.answer}}
+        <span  style="font-weight:700"> A: </span> {{faq.answer}}
         {% if faq.link != "" %}
         <div class="display-flex flex-column flex-align-end">
         <a href="{{faq.link}}" target="_blank" rel="noopener noreferrer">
