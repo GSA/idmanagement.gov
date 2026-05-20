@@ -48,12 +48,10 @@ subnav:
         {% for tag in tags %}
           <span class="usa-tag">{{tag}}</span>
         {% endfor %}
-        <span class="display-flex flex-column flex-align-end"> 
         {% if faq.link != "" %}
-        <a href="{{faq.link}}" target="_blank" rel="noopener noreferrer">
+        <a style="text-align: right" href="{{faq.link}}" target="_blank" rel="noopener noreferrer">
             <span class="usa-tag"> Learn more... </span>
         </a>
-        </span> 
         </div>
         {% endif %}
     </p>
