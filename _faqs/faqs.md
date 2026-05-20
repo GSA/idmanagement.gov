@@ -34,7 +34,7 @@ subnav:
       {% assign tags = faq.tags | split: ", " %}
       <div style="text-align: right">
       <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-        <use href="/assets/img/sprite.svg#local_offer"></use></svg> 
+        <use href="{{site.baseurl}}/assets/img/sprite.svg#local_offer"></use></svg> 
       {% for tag in tags %}
         <span class="usa-tag">{{tag}}</span>
       {% endfor %}
