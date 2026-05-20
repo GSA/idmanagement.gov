@@ -19,15 +19,15 @@ subnav:
 ---
 
 {% assign faqs = site.data.faqs %}
-{% assign categories = site.data.faqs.category %}
+{% assign categories = faqs.category %}
 {% for category in categories %}
-{% if faq.category == category %}
 <hr>
 <h2>{{faq.category}}</h2>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
   <li class="gsa-collapse-button" onclick="collapseToggle()" title="Collapse All" aria-label="Collapse All">   -   </li>
   <li class="gsa-expand-button" onclick="expandToggle()" title="Expand All" aria-label="Expand All">   +   </li>
 </ul>
+{% if faq.category == category %}
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{faq.expanded}}" aria-controls="gsa-{{forloop.index}}">
