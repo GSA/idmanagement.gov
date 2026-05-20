@@ -31,27 +31,28 @@ subnav:
       <p>
        <span style="font-weight:700"> Q: </span> {{faq.question}}
       </p>
-      <hr>
-      {% assign tags = faq.tags | split: ", " %}
-      <div style="text-align: right">
-      {% if tags.size > 1 %}
-        <span>TAGS: </span>
-      {% else %}
-        <span>TAG: </span>
-      {% endif %}
-      {% for tag in tags %}
-        <span class="usa-tag">{{tag}}</span>
-      {% endfor %}
-      </div>
     </button>
   </h4>
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
         <span  style="font-weight:700"> A: </span> {{faq.answer}}
+
+        <hr>
+        {% assign tags = faq.tags | split: ", " %}
+        <div>
+        {% if tags.size > 1 %}
+          <span>TAGS: </span>
+        {% else %}
+          <span>TAG: </span>
+        {% endif %}
+        {% for tag in tags %}
+          <span class="usa-tag">{{tag}}</span>
+        {% endfor %}
+        </div>
+        <div class="display-flex flex-column flex-align-end"> 
         {% if faq.link != "" %}
-        <div class="display-flex flex-column flex-align-end">
         <a href="{{faq.link}}" target="_blank" rel="noopener noreferrer">
-            <button class="usa-button">Learn more...</button>
+            <span ="usa-tag"> Learn more... </span>
         </a>
         </div>
         {% endif %}
