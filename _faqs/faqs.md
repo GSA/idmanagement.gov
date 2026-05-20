@@ -28,7 +28,12 @@ subnav:
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{faq.expanded}}" aria-controls="gsa-{{forloop.index}}">
       <p>{{faq.question}}</p>
-      <span class="usa-tag">{{faq.category}}</span>
+      <hr>
+      {% assign tags = faq.tags | split: ", " %}
+      {% for tag in tags %}
+        <span class="usa-tag">{{tag}}</span>
+      {% endfor %}
+      
     </button>
   </h4>
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">

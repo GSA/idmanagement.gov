@@ -18,7 +18,7 @@
 #   link: link to related content as a "Learn more..." button (link only, button text static), if left blank, no button displays.
 
 - question: How does the FAQ work on IDM?
-  category: FICAM
+  category: FICAM, FIPS
   answer: The FAQ was built into the site during a redesign in 2023, but was not implemented at that time.  
   expanded: false
   link: https://www.idmanagement.gov/playbooks/
@@ -34,13 +34,13 @@
   link: https://www.idmanagement.gov/ficam/
 
 - question: I added my content to the faqs.yml, but I don't see my content on the page, how to I fix this?
-  category: PIV
+  category: PIV, ICAM
   answer: You need to add the faqs to the config.yml collections so the faqs will display on the page, see the comments in the faqs.yml file.
   link: 
 
 - question: Can I provide a link to internal and external content within the faq? 
   category: PACS
-  answer: If you provided the full URL to a resource like a website or file, \"Learn more...\" button will display, linking to the resource your provided. Click the button below to visit the NIST website.
+  answer: If you provided the full URL to a resource like a website or file, "Learn more..." button will display, linking to the resource your provided. Click the button below to visit the NIST website.
   link: https://www.nist.gov
 
 - question: How do I disable this feature from the IDManagement.gov website?  
