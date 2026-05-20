@@ -4,7 +4,7 @@
 # URL: /faqs/
 # Jekyll access: site.data.faqs
 # Format: YAML
-# Note: To enable, add the code below to the collections in the _config.yml
+# Note: To enable faques, uncomment the collection entry in _config.yml
 # 
 #   faqs:
 #     output: true
