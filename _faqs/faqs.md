@@ -27,15 +27,12 @@ subnav:
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{faq.expanded}}" aria-controls="gsa-{{forloop.index}}">
-      <p><span style="font-weight:700"> Q: </span> {{faq.question}}</p>
+      <span style="font-weight:700"> Q: </span> {{faq.question}}</p>
       <hr>
       {% assign tags = faq.tags | split: ", " %}
-      {% if tags.length > 1 %}
-        {% assign taglabel = "Tags:" %}
-      {% else %}
-        {% assign taglabel = "Tag:" %}
-      {% endfi %}
-      <div style="text-align: right">{{tablabel}} 
+      <div style="text-align: right">
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+        <use href="/assets/img/sprite.svg#local_offer"></use></svg> :
       {% for tag in tags %}
         <span class="usa-tag">{{tag}}</span>
       {% endfor %}
