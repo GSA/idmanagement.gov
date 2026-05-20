@@ -12,38 +12,38 @@
 
 # Legend: 
 # - question: the faq question.
-#   category: name of question, example categories [FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM]
+#   tags: singluar or comma seperated list of tags, here are some example tags that can be uses (FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM)
 #   answer: the answer to the faq
 #   expanded: if the faq's inital accordion state is expanded. Default: false
 #   link: link to related content as a "Learn more..." button (link only, button text static), if left blank, no button displays.
 
 - question: How does the FAQ work on IDM?
-  category: FICAM, FIPS
+  tags: FICAM, FIPS
   answer: The FAQ was built into the site during a redesign in 2023, but was not implemented at that time.  
   expanded: false
   link: https://www.idmanagement.gov/playbooks/
 
 - question: How do I configure the content on this page?
-  category: FICAM
+  tags: FICAM
   answer:  You can configure the FAQs on this page throught a YAML file located in the _data folder named faqs.yml
   link:
 
 - question: Can I set up different categories of FAQs to display on this page? 
-  category: PIV
+  tags: PIV
   answer: Yes, there is a Category property that can be set for each FAQ in the faqs.yml file, this controls dislpy of the categories 
   link: https://www.idmanagement.gov/ficam/
 
 - question: I added my content to the faqs.yml, but I don't see my content on the page, how to I fix this?
-  category: PIV, ICAM
+  tags: PIV, ICAM
   answer: You need to add the faqs to the config.yml collections so the faqs will display on the page, see the comments in the faqs.yml file.
   link: 
 
 - question: Can I provide a link to internal and external content within the faq? 
-  category: PACS
+  tags: PACS
   answer: If you provided the full URL to a resource like a website or file, "Learn more..." button will display, linking to the resource your provided. Click the button below to visit the NIST website.
   link: https://www.nist.gov
 
 - question: How do I disable this feature from the IDManagement.gov website?  
-  category: PACS
+  tags: PACS, PIV, ICAM, Other
   answer: To disable this feature, simply remove or comment out the faqs collection entry in the _config.yml file, this should disable it from displaying on the site. 
   link: 
