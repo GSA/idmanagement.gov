@@ -46,5 +46,4 @@ subnav:
     </p>
   </div>
 </div>
-{% endif %}
 {% endfor %}
