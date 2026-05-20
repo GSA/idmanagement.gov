@@ -21,7 +21,7 @@ subnav:
 {% assign faqs = site.data.faqs %}
 {% assign categories = faqs.category %}
 {% for cat in categories %}
-<pre>{% categories %}</pre>
+<pre>{{categories}}</pre>
 <hr>
 <h2>{{faq.category}}</h2>
 <ul class="gsa-expand-collapse-group" title="Expand or Collapse All" aria-label="Expand or Collapse All">
