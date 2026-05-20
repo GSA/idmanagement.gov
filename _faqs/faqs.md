@@ -27,7 +27,7 @@ subnav:
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button gsa-normal-text gsa-target-accordion-header" aria-expanded="{{faq.expanded}}" aria-controls="gsa-{{forloop.index}}">
-      <p>{{faq.question}}</p>
+      <p><span class="usa-tag"> Q: </span> {{faq.question}}</p>
       <hr>
       {% assign tags = faq.tags | split: ", " %}
       {% for tag in tags %}
@@ -38,7 +38,7 @@ subnav:
   </h4>
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
     <p>
-        <strong>A:</strong> {{faq.answer}}
+        <span class="usa-tag"> A: </span> {{faq.answer}}
         {% if faq.link != "" %}
         <div class="display-flex flex-column flex-align-end">
         <a href="{{faq.link}}" target="_blank" rel="noopener noreferrer">
