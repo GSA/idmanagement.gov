@@ -1,8 +1,8 @@
 # FPKI Announcements 
 # File: fpkiannouncements.yml
-# Page Use: https://www.idmanagement.gov/fpki/notifications/#fpki-announcements
-#
-# see the fpkiannouncements collection settings in the _data/navigation.yml file.
+# Page Use: https://www.idmanagement.gov/fpki/notifications/
+# See: fpkiannouncements collection settings in the _data/navigation.yml file.
+# Record Keeping: 3 Years
 #
 # - title [string] - Title of announcement
 # - pubDate: [date] - Date published
