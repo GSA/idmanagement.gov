@@ -33,10 +33,10 @@ subnav:
       <hr>
       {% assign tags = faq.tags | split: ", " %}
       <div style="text-align: right">
-      {% if tags.length > 1 %}
-        <strong>Tags: </strong>
+      {% if tags.size > 1 %}
+        <span>TAGS: </span>
       {% else %}
-        <strong>Tag: </strong>
+        <span>TAG: </span>
       {% endif %}
       {% for tag in tags %}
         <span class="usa-tag">{{tag}}</span>
