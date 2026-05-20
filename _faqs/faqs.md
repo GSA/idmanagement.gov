@@ -30,10 +30,11 @@ subnav:
       <p><span class="usa-tag"> Q: </span> {{faq.question}}</p>
       <hr>
       {% assign tags = faq.tags | split: ", " %}
+      <span class="text-right">
       {% for tag in tags %}
         <span class="usa-tag">{{tag}}</span>
       {% endfor %}
-      
+      </span>
     </button>
   </h4>
   <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area">
