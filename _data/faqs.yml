@@ -1,21 +1,21 @@
 # File: faqs.yml
 # Description: FAQ for the IDMananagement.gov
-# File used in: _faq/faqs.md, 
+# File used in: _faqs/faqs.md, 
 # URL: /faqs/
 # Jekyll access: site.data.faqs
 # Format: YAML
-# Note: To enable faques, uncomment the collection entry in _config.yml
+# Note: To enable faqs, uncomment the collection entry in _config.yml
 # 
 #   faqs:
 #     output: true
 #     permalink: /faqs/:path/ 
-#
+
 # Legend: 
 # - question: the faq question.
-#   category: name of question category [FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM]
+#   category: name of question, example categories [FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM]
 #   answer: the answer to the faq
 #   expanded: if the faq's inital accordion state is expanded. Default: false
-#   link: link to related content as a "Learn more..." button (link only, button text static)
+#   link: link to related content as a "Learn more..." button (link only, button text static), if left blank, no button displays.
 
 - question: How does the FAQ work on IDM?
   category: FICAM
