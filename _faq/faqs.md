@@ -2,7 +2,7 @@
 layout: page
 collection: faq
 title:  Frequently Asked Questions
-permalink: /faq/
+permalink: /faqs/
 sidenav: faq
 sticky_sidenav: true
 
