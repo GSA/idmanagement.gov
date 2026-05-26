@@ -3,18 +3,12 @@ layout: page
 collection: faq
 title:  Frequently Asked Questions
 permalink: /faqs/
-sidenav: faq
+sidenav: faqs
 sticky_sidenav: true
 
 subnav:
   # - text: FAQ Section 1
   #   href: '#faq-1'
-  # - text: FAQ Section 2
-  #   href: '#faq-2'
-  # - text: FAQ Section 3
-  #   href: '#faq-3'
-  # - text: FAQ Section 4
-  #   href: '#faq-4'
 
 ---
 
