@@ -12,10 +12,11 @@
 
 # Legend: 
 # - question: the faq question.
-#   tags: singluar or comma seperated list of tags, here are some example tags that can be uses (FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM)
+#   tags: singular or comma seperated list of tags, here are some example tags that can be uses (FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM)
 #   answer: the answer to the faq
 #   expanded: if the faq's inital accordion state is expanded. Default: false
 #   link: link to related content as a "Learn more..." button (link only, button text static), if left blank, no button displays.
+# Note: display should be updated to desired look and feel. --cjb.
 
 - question: How does the FAQ work on IDM?
   tags: FICAM, FIPS
