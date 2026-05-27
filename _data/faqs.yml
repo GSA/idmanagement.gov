@@ -1,10 +1,9 @@
 # GSA: IDManagement.gov 
 # Description: FAQ for the website
-# Messages for _faq/faqs.md, /faqs/
-# Jekyll access: site.data.faqs
-# Format: YAML
-# Note: 
-# 
+# Page Usage: _faq/faqs.md, 
+# Page URL: https://www.idmanagement.gov/faqs/
+# Note: this feature is DISABLED since redesign (2023), to turn on FAQs, uncomment the collection entry in _config.yml
+
 # Legend: 
 # question: the faq question.
 # answer: the answer to the faq
