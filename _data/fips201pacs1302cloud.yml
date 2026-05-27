@@ -1,8 +1,9 @@
-# FIPS201 PACS 13.02 Cloud (since: 04/07/2025) (cjb)
 # File: fips201pacs1302cloud.yml
-# Page Use: https://www.idmanagement.gov/fips201/
+# Page Usage: _partners/fips201-apl.md
+# Page URL: https://www.idmanagement.gov/fips201/#approved-1302-cloud-topology-pacs-products
+# Description: Approved 13.02 Cloud Topology PACS Products 
 #
-# Cloud records are taken from fips201pacs1302.yml
+# Cloud records are moved here from fips201pacs1302.yml (since: 04/07/2025) (cjb)
 #
 # Template for new data:
 #
