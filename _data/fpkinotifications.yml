@@ -1,16 +1,25 @@
-# FPKI Notifications 
 # File: fpkinotifications.yml
-# Page Use: https://www.idmanagement.gov/fpki/notifications/ 
+# Page Usage: _implement/fpki_notifications.md
+# Page URL: https://www.idmanagement.gov/fpki/notifications/#notifications
+# Description: FPKI Notifications
+# Note: The current year notifications listing is hard coded and the code must be manually updated each year in the last week of December to list notifications in the new year.
+# Notification: A shared calendar has been created to remind the team of this change.
+# 
+## Instructions: Six steps to add a Notification via GitHub to tehe IDM Notifications page: 
+# 1. Create a new branch from Staging, navigate to _data/notifications.yml file, then Click the edit icon. 
+# 2. Copy/paste the new notification content to the end of _data/notifications.yml file. 
+# 3. Add a dash "-" at the beginning of what you added (refer to existing notification entries for position and spacing). 
+# 4. Submit a Pull Request, OR commit directly to the staging branch if you have permissions 
+# 5. In your commit, add the comment "fixes " and the Issue number that you are adding to the notifications page
+# 6. Once your Pull Request is merged to staging, you can view the new item at https://qa.idmanagement.gov/fpki/notifications/#notifications
+# Note: You can also preview your update from the repo listing
 #
-# Add the Notification to GitHub: Click on the edit icon. Copy/paste the notification content to the end of _data/notifications.yml file. Add a dash "-" at the beginning of what you added (refer to existing notification entries for position and spacing). Submit a Pull Request, OR commit directly to the staging branch if you have permissions In your commit, add the comment "fixes " and the Issue number that you are adding to the notifications page
-
-# View the new item at https://demo.idmanagement.gov
-
-#notice_date: notice date in <Month Day, Year>
-#change_type: < CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New URI in Certificates, OCSP Outage, CRL Outage >
-#system: <what is the system known as>
-#change_description: <detailed statement>
-#contact: <email, phone>
+### The following fields are required
+# notice_date: notice date in <Month Day, Year>
+# change_type: < CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New URI in Certificates, OCSP Outage, CRL Outage >
+# system: <what is the system known as>
+# change_description: <detailed statement>
+# contact: <email, phone>
 ### The following are all optional fields based on the change type
 # ca_certificate_hash: <the sha1 thumbprint of the certificate>
 # ca_certificate_issuer: <the issuer DN of the CA certificate>
@@ -21,6 +30,7 @@
 # ocsp_uri:
 # ee_cdp_uri:
 # ee_ocsp_uri:
+#
 
 - notice_date: March 2, 2026
   change_type: CA Certificate Issuance
