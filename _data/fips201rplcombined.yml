@@ -1,15 +1,16 @@
-# FIPS 201 Removed Product List
-# Note: to create a blank table, use the template below with only the category filled out.
-# 05/12/2025 - Infrastructure and Validation RPLs were combined to display like the APL, a new combined template is below
+# Description: FIPS 201 Removed Product List
+# Page Usage: _partners/fips201-apl.md
+# Page URL: https://www.idmanagement.gov/fips201/#removed-product-list
+# Note: 05/12/2025 - Infrastructure and Validation RPLs were combined to display like the APL, a new combined template is below.
 #
 # This file contains the following categories of RPLs:
 # 1. 13.01 PACS and Validation Infrastructure
 # 2. 13.02 PACS and Validation Infrastructure
 # 3. PIV Card
-# used on page: https://www.idmanagement.gov/fips201/
-# Note: data is designed to be pulled separate for each category.
-# Developer: cjb
+# Note: this data and code on the page are designed to list each category in a seperate table. (cjb)
 
+# Note: to create a blank table, use the template below with only the category filled out.
+#
 # New Combined Template for Infrastruture and Validation
 # - category: 13.01 PACS and Validation Infrastructure
 #   status: Approved
@@ -20,6 +21,7 @@
 #   dateRemoval: [mm/dd/yyyy]
 #   dateCode: [same as dateRemoval but in the following format: yyyy-mm-dd (for sorting purposes)]
 #   reason: "[string in single quotes of the reason for removal]"
+##
 
 # removed from RPL on 08/18/2025 - cjb
 # - category: 13.01 PACS and Validation Infrastructure
