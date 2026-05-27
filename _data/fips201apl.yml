@@ -1,7 +1,8 @@
-# Description: list of APL PIV Cards products, all fields required.
+# Description: list of Approved PIV Cards.
 # File Name: fips201apl.yml
-# Page Usage: _ficampmo/fips201ep.md
+# Page Usage: _partners/fips201-apl.md
 # Page URL: https://www.idmanagement.gov/fips201/#approved-piv-cards
+
 
 - productname: ID-One PIV v 2.4.2 on Cosmo V8.2
   productnumber: 1759285
