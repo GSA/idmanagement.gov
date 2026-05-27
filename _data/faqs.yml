@@ -1,8 +1,8 @@
-# GSA: IDManagement.gov 
 # Description: FAQ for the website
 # Page Usage: _faq/faqs.md, 
 # Page URL: https://www.idmanagement.gov/faqs/
-# Note: this feature is DISABLED since redesign (2023), to turn on FAQs, uncomment the collection entry in _config.yml
+# Note: this feature has been DISABLED since redesign (2023), to turn on FAQs, uncomment the collection entry in _config.yml
+# Note: 05/2026: Added some new fuctionality: tag(s), cleaner headings, and format of faqs.yml --cjb
 
 # Legend: 
 # question: the faq question.
