@@ -1,7 +1,7 @@
+# Description: FPKI Notifications
 # File: fpkinotifications.yml
 # Page Usage: _implement/fpki_notifications.md
 # Page URL: https://www.idmanagement.gov/fpki/notifications/#notifications
-# Description: FPKI Notifications
 # Note: The current year notifications listing is hard coded and the code must be manually updated each year in the last week of December to list notifications in the new year.
 # Notification: A shared calendar has been created to remind the team of this change.
 # 
