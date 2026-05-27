@@ -12,7 +12,7 @@
 # 4. Submit a Pull Request, OR commit directly to the staging branch if you have permissions 
 # 5. In your commit, add the comment "fixes " and the Issue number that you are adding to the notifications page
 # 6. Once your Pull Request is merged to staging, you can view the new item at https://qa.idmanagement.gov/fpki/notifications/#notifications
-# Note: You can also preview your update from the repo listing
+# Note: You can also preview your update from the repo listing, by clicking the green check mark. 
 #
 ### The following fields are required
 # notice_date: notice date in <Month Day, Year>
