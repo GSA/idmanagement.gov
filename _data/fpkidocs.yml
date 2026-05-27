@@ -1,14 +1,17 @@
-# list of archived fpki documents
 # File: fpkidocs.yml
-# Page Use: https://www.idmanagement.gov/fpki/ 
+# Page Usage: _ficampmo/fpki.md
+# Page URL: https://www.idmanagement.gov/fpki/ 
+# Description: list of archived fpki documents
+# Status Check: monthly
 #
+# category - category of document 
 # numberProposal - Version number of the document or number of the change proposal
-# date = date on the document
-# Status Post - Post it to the website; 
-# Status Archive - Document is three years old or no longer valid. The document is actually retained in this repository, but not posted to the website.
-# Remove - Date to change status from post to archive. This could be three years for change proposals or three years from when a document was replaced.
-# 
-# Used on: https://www.idmanagement.gov/fpki/
+# name - name or title of document
+# date - document listed in date
+# url - location of PDF file; 
+# status (post) - Document is valid and listed on the site 
+# status (archived) - Documents three years or older no longer valid. (document is actually retained in this repository, but not posted to the website.)
+# Remove - Date to change status from post to archive. (This could be three years for change proposals or three years from when a document was replaced.)
 
 - category: Federal Public Trust TLS Certificate Policy
   numberProposal: 1.2
