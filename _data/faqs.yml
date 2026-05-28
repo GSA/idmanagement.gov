@@ -1,33 +1,50 @@
-# GSA: IDManagement.gov 
-# Description: FAQ for the website
-# Messages for _faq/faqs.md, /faqs/
+# File: faqs.yml
+# Description: FAQ for the IDMananagement.gov
+# File used in: _faqs/faqs.md, 
+# URL: /faqs/
 # Jekyll access: site.data.faqs
 # Format: YAML
-# Note: 
+# Note: To enable faqs, uncomment the collection entry in _config.yml
 # 
+#   faqs:
+#     output: true
+#     permalink: /faqs/:path/ 
+
 # Legend: 
-# question: the faq question.
-# answer: the answer to the faq
-# expanded: if the faq's inital state is expanded. Default: false
-# link: link to content  
+# - question: the faq question.
+#   tags: singular or comma seperated list of tags, here are some example tags that can be uses (FPKI, FIPS, QPC, PKI, PACS, PIAM, PIV, PIVI, ICAM)
+#   answer: the answer to the faq
+#   expanded: if the faq's inital accordion state is expanded. Default: false
+#   link: link to related content as a "Learn more..." button (link only, button text static), if left blank, no button displays.
+# Note: display should be updated to desired look and feel. --cjb.
 
-- question: First faq question for website.
-  answer: Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.
+- question: How does the FAQ work on IDM?
+  tags: FICAM, FIPS
+  answer: The FAQ was built into the site during a redesign in 2023, but was not implemented at that time.  
   expanded: false
-  link: #
+  link: https://www.idmanagement.gov/playbooks/
 
-- question: Second faq question for website.
-  answer:  A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.
-  link: #
+- question: How do I configure the content on this page?
+  tags: FICAM
+  answer:  You can configure the FAQs on this page throught a YAML file located in the _data folder named faqs.yml
+  link:
 
-- question: Third faq question for website.
-  answer: No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.
-  link: #
+- question: Can I set up different categories of FAQs to display on this page? 
+  tags: PIV
+  answer: Yes, there is a Category property that can be set for each FAQ in the faqs.yml file, this controls dislpy of the categories 
+  link: https://www.idmanagement.gov/ficam/
 
-- question: Fourth faq question for website.
-  answer: The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
-  link: #
+- question: I added my content to the faqs.yml, but I don't see my content on the page, how to I fix this?
+  tags: PIV, ICAM
+  answer: You need to add the faqs to the config.yml collections so the faqs will display on the page, see the comments in the faqs.yml file.
+  link: 
 
-- question: Fifth faq question for website.
-  answer: No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.
-  link: #
+- question: Can I provide a link to internal and external content within the faq? 
+  tags: PACS
+  answer: If you provided the full URL to a resource like a website or file, "Learn more..." button will display, linking to the resource your provided. Click the button below to visit the NIST website.
+  link: https://www.nist.gov
+
+- question: How do I disable this feature from the IDManagement.gov website?  
+  tags: PACS, PIV, ICAM, Other
+  answer: To disable this feature, simply remove or comment out the faqs collection entry in the _config.yml file, this should disable it from displaying on the site. 
+  link: 

@@ -3614,10 +3614,15 @@
             "serial-number": "1025834279162425889105434662153385551908044805",
             "akid": "54 0b 11 b0 1d f9 57 cf b0 7a 2d 52 52 f3 b3 a7 8c 52 f4 ac",
             "skid": "45 0c c3 6b 59 a7 f8 97 0f db 76 f2 81 1a cc 2e c6 73 d2 73",
-            "status": "Certificate Valid, but no Path to Common",
+            "status": "Certificate Invalid",
             "pathbuilder-result": {
                 "result": "false",
-                "details": "Unable to build Path"
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US:540b11b01df957cfb07a2d5252f3b3a78c52f4ac",
+            "validity-dates": {
+                "not-before": "2016-05-26 15:21:41+00:00",
+                "not-after": "2026-05-26 15:21:41+00:00"
             }
         },
         {
