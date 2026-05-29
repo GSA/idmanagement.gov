@@ -1,6 +1,7 @@
-# data file for piv customers list
+# Description: List of PIV Issuer Information (customers) data
 # File: fpkicustomers.yml 
-# Page Use: https://www.idmanagement.gov/fpki/notifications/
+# Page Use: _implement/fpki_notifications.md
+# Page URL: https://www.idmanagement.gov/fpki/notifications/#piv-issuer-information
 #
 # Template for new data:
 #

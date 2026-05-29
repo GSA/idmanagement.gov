@@ -1,7 +1,7 @@
-# The FICAM Playbooks
-# From: https://playbooks.idmanagement.gov/playbooks/
-# Date: 04/18/2023
-# Data used on site's front page, lower half titled Playbooks.
+# Description: The FICAM Playbooks Listing
+# Page Usage: _playbooks/introduction.md (playbooks page) and _includes/highlights.html (site's index page)
+# Page URL: https://www.idmanagement.gov/playbooks/ (playbooks page) and https://www.idmanagement.gov (site's index page)
+# Note: since 04/18/2023 site redesign.
 
 # This file drives the Playbooks listing on the PoC IDManagement.gov front page lower half.
 # - 05-15--2023: Added the 'header' property for the header graphic for each playbook. 
