@@ -93,15 +93,6 @@ There are three additional guides:
 
 Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
 
-
-
-
-
-
-
-
-
-
 ## Step 1 - Network Ports and Protocols
 Your workstations, servers, network domain controllers, and applications need to validate the [revocation status]({{site.baseurl}}/university/pki/#revocation-checking){:rel="noopener noreferrer"}{:class="usa-link"} of the PIV certificates and all intermediate CA certificates to prevent potentially unauthorized access. In addition, the [certificate chain]({{site.baseurl}}/university/pki/#establishing-trust){:rel="noopener noreferrer"}{:class="usa-link"} path building may need to be able to reach out to retrieve any intermediate CA certificates not directly installed in enterprise trust stores.
 
@@ -522,9 +513,9 @@ To finalize the transition from UPN mapping to altSecurityIdentities account lin
 
 <div class="usa-alert usa-alert--warning">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
+    <h4 class="usa-alert__heading">Note:</h4>
     <p class="usa-alert__text">
-     Note: Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability before implementing changes in their production IT environments. The registry configuration below will cause smart card logon to fail for any user missing the altSecurityIdentities attribute.
+    Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability before implementing changes in their production IT environments. The registry configuration below will cause smart card logon to fail for any user missing the altSecurityIdentities attribute.
     </p>
   </div>
 </div>
