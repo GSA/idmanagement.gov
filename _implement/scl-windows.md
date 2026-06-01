@@ -725,9 +725,8 @@ The domain controller(s) certificate must contain valid information. These steps
 
 If successful, you will see a new domain controller certificate in the *Certificate (Local Computer) -> Personal -> Certificates folder*. At the Certificate Template tab, you will also see a certificate generated with the custom certificate template.
 
-  <div class="usa-alert usa-alert--warning">
+  <div class="usa-alert usa-alert--warning usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
      This Auto-Enrollment option is recommended after the September 2025 removal of compatibility mode for Windows enforcement of “strong identifiers.”  In your CA certificate template, under the “Subject Name” tab, you will want to ensure that the “Build from this Active Directory Information” button is toggled to ensure SID is automatically included in your ADCS device PKI certificates to include Domain Controllers. 
     </p>
