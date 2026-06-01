@@ -848,9 +848,8 @@ During and after the employee’s logon to the network, the following steps were
 
 In this use case and steps, the user did not have to authenticate directly with a PIV credential to the other agency’s application. A federation model was used.
 
-<div class="usa-alert usa-alert--info">
+<div class="usa-alert usa-alert--info usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
       One example for viewing this implementation pattern is Connect.gov. If you click the Login button, you will be redirected to the Max.gov federated login page. The top section allows for direct logon using a PIV/CAC and the bottom section allows you to select a home agency. Each of these icons redirects the user back to that agency’s Federation Service, if available. In this scenario, the agency's Federation Service acts as the authoritative "service" to confirm that the user has performed an authentication using their PIV credential and passes identity attributes associated with the registered account at Connect.gov.
     </p>
