@@ -511,11 +511,10 @@ Management of smart card settings should be deployed using a group policy object
 ## Option 3. Disable User Principal Name Mapping
 To finalize the transition from UPN mapping to altSecurityIdentities account linking, you will need to configure a registry setting on all domain controllers. Only configure the registry setting below once you have completed the above steps and are ready to disable UPN mapping.
 
-<div class="usa-alert usa-alert--warning">
+<div class="usa-alert usa-alert--warning usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Note:</h4>
     <p class="usa-alert__text">
-    Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability before implementing changes in their production IT environments. The registry configuration below will cause smart card logon to fail for any user missing the altSecurityIdentities attribute.
+    Note: Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability before implementing changes in their production IT environments. The registry configuration below will cause smart card logon to fail for any user missing the altSecurityIdentities attribute.
     </p>
   </div>
 </div>
