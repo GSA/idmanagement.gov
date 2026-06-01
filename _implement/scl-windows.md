@@ -648,9 +648,8 @@ Source:  [Optimizing the Revocation Experience](https://technet.microsoft.com/en
 
 This page provides some tips for using a local certification authority (CA) to issue a domain controller certificate. This is for local Microsoft CAs. Other platforms may be used and have different procedures.
 
-  <div class="usa-alert usa-alert--info">
+  <div class="usa-alert usa-alert--info usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
      These procedures are accurate for using Microsoft 2012 Server, Standard Edition, for CA and domain controller servers as of March 2017.
     </p>
