@@ -46,7 +46,7 @@ The Bridge & Root Authority Working Lab (BRAWL) is a development environment tha
 - [Test Websites](#test-websites){:class="usa-link"}
 - [Appendix A - Test Policy Object Identifiers](#appendix-a---test-policy-object-identifiers){:class="usa-link"}
 
-This guide is a practice guide for FPKI Partners who want to either become CITE participants, leverage CITE for FPKI testing, or who would like to leverage BRAWL for PQC experiments. As vendor products used by the FPKIMA mature (e.g., CA, HSM, etc.) the FPKIMA plans to create different developement CAs.
+This guide is a practice guide for FPKI Partners who want to either become CITE participants, leverage CITE for FPKI testing, or who would like to leverage BRAWL for PQC experiments. As vendor products used by the FPKIMA mature (e.g., CA, HSM, etc.) the FPKIMA plans to create different development CAs.
 
 ## Testing Use Cases
 
