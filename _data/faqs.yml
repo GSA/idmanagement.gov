@@ -1,14 +1,8 @@
-# File: faqs.yml
-# Description: FAQ for the IDMananagement.gov
-# File used in: _faqs/faqs.md, 
-# URL: /faqs/
-# Jekyll access: site.data.faqs
-# Format: YAML
-# Note: To enable faqs, uncomment the collection entry in _config.yml
-# 
-#   faqs:
-#     output: true
-#     permalink: /faqs/:path/ 
+# Description: FAQ for the website
+# Page Usage: _faq/faqs.md, 
+# Page URL: https://www.idmanagement.gov/faqs/
+# Note: this feature has been DISABLED since redesign (2023), to turn on FAQs, uncomment the collection entry in _config.yml
+# Note: 05/2026: Added some new fuctionality: tag(s), cleaner headings, and format of faqs.yml --cjb
 
 # Legend: 
 # - question: the faq question.

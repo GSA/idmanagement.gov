@@ -1,9 +1,10 @@
-# GSA Carousel Config 
-# Date: 03-22-2023
-# File: _data/gsacarousel.yml
-# File used in: _includes/hero.html 
-# Developer: Clayton Barnette <clayton.barnette@gsa.gov>
+# Description: GSA Carousel Config 
 # Purpose: Drives Carousel data on the homepage of New IDManagement.gov
+# File: _data/gsacarousel.yml
+# Page Usage: _includes/hero.html
+# Page URL: https://www.idmanagement.gov  
+# Note: since 03-22-2023
+# Developer: Clayton Barnette <clayton.barnette@gsa.gov>
 #
 # - orderNumber: Sequential numbering of each carousel item, starts at 0 - n 
 #   initialState: set to active active or leave blank (Note: only one carousel item should be set to active or it breaks the carousel)

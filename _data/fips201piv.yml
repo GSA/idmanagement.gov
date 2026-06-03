@@ -1,6 +1,7 @@
-# list of APL PIV Cards products
+# Description: list of Approved PIV Cards
 # File: fips201piv.yml
-# Page Use: https://www.idmanagement.gov/fips201/
+# Page Usage: _partners/fips201-apl.md
+# Page URL: https://www.idmanagement.gov/fips201/#approved-piv-cards
 #
 # Template for new data:
 #  

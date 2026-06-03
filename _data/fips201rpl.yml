@@ -1,7 +1,7 @@
-# FIPS 201 Removed Product List
+# Description: FIPS 201 Removed Product List (PIV Card Category List)
 # File: fips201rpl.yml
-# Page Use: https://www.idmanagement.gov/fips201/
-#
+# Page Usage: _partners/fips201-apl.md
+# Page URL: https://www.idmanagement.gov/fips201/#removed-product-list (bottom table)
 # Note: to create a blank table, use the template below with only the category filled out.
 #
 # Template

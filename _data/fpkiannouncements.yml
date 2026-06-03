@@ -1,16 +1,15 @@
-# FPKI Announcements 
-# File: fpkiannouncements.yml
-# Page Use: https://www.idmanagement.gov/fpki/notifications/
-# See: fpkiannouncements collection settings in the _data/navigation.yml file.
-# Record Keeping: 3 Years
+# Description: FPKI Announcements 
+# File: fpkiannouncements.yml 
+# Page Usage: _implement/fpki_notifications.md
+# Page URL: https://www.idmanagement.gov/fpki/notifications/#fpki-announcements
+# Note: see the fpkiannouncements collection settings in the _data/navigation.yml file.
 #
 # - title [string] - Title of announcement
 # - pubDate: [date] - Date published
 # - url: [string] - URL to announcement
 # - description: [string] - announcement description
 # - status: [string] - (Active)
-#
-##
+
 
 - title: CCT Tool v1.0.9 Release
   pubDate: October 16, 2024

@@ -1,6 +1,8 @@
-# List of PACS 13.01 Systems for PACS List
-# File: fips201pacs1301.yml 
-# Page Use: https://www.idmanagement.gov/fips201/
+# Description: List of PACS 13.01 Systems for PACS List
+# File: fips201pacs1301.yml
+# Page Usage: _partners/fips201-apl.md 
+# Page URL: https://www.idmanagement.gov/fips201/#approved-1301-topology-pacs-products
+# Note: two documents required to add updated to this listing: APL Letter and Validation. 
 #
 # Template for new data:
 #

@@ -93,15 +93,6 @@ There are three additional guides:
 
 Submit an [Issue]({{site.repourl}}/issues/new){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} to identify information that would be helpful to you, or consider contributing a page to these guides with your lessons learned.
 
-
-
-
-
-
-
-
-
-
 ## Step 1 - Network Ports and Protocols
 Your workstations, servers, network domain controllers, and applications need to validate the [revocation status]({{site.baseurl}}/university/pki/#revocation-checking){:rel="noopener noreferrer"}{:class="usa-link"} of the PIV certificates and all intermediate CA certificates to prevent potentially unauthorized access. In addition, the [certificate chain]({{site.baseurl}}/university/pki/#establishing-trust){:rel="noopener noreferrer"}{:class="usa-link"} path building may need to be able to reach out to retrieve any intermediate CA certificates not directly installed in enterprise trust stores.
 
@@ -520,11 +511,10 @@ Management of smart card settings should be deployed using a group policy object
 ## Option 3. Disable User Principal Name Mapping
 To finalize the transition from UPN mapping to altSecurityIdentities account linking, you will need to configure a registry setting on all domain controllers. Only configure the registry setting below once you have completed the above steps and are ready to disable UPN mapping.
 
-<div class="usa-alert usa-alert--warning">
+<div class="usa-alert usa-alert--warning usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
-     Note: Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability before implementing changes in their production IT environments. The registry configuration below will cause smart card logon to fail for any user missing the altSecurityIdentities attribute.
+    Note: Organizations should carefully plan their transition to the altSecurityIdentities account linking approach and test interoperability before implementing changes in their production IT environments. The registry configuration below will cause smart card logon to fail for any user missing the altSecurityIdentities attribute.
     </p>
   </div>
 </div>
@@ -658,9 +648,8 @@ Source:  [Optimizing the Revocation Experience](https://technet.microsoft.com/en
 
 This page provides some tips for using a local certification authority (CA) to issue a domain controller certificate. This is for local Microsoft CAs. Other platforms may be used and have different procedures.
 
-  <div class="usa-alert usa-alert--info">
+  <div class="usa-alert usa-alert--info usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
      These procedures are accurate for using Microsoft 2012 Server, Standard Edition, for CA and domain controller servers as of March 2017.
     </p>
@@ -736,9 +725,8 @@ The domain controller(s) certificate must contain valid information. These steps
 
 If successful, you will see a new domain controller certificate in the *Certificate (Local Computer) -> Personal -> Certificates folder*. At the Certificate Template tab, you will also see a certificate generated with the custom certificate template.
 
-  <div class="usa-alert usa-alert--warning">
+  <div class="usa-alert usa-alert--warning usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
      This Auto-Enrollment option is recommended after the September 2025 removal of compatibility mode for Windows enforcement of “strong identifiers.”  In your CA certificate template, under the “Subject Name” tab, you will want to ensure that the “Build from this Active Directory Information” button is toggled to ensure SID is automatically included in your ADCS device PKI certificates to include Domain Controllers. 
     </p>
@@ -860,9 +848,8 @@ During and after the employee’s logon to the network, the following steps were
 
 In this use case and steps, the user did not have to authenticate directly with a PIV credential to the other agency’s application. A federation model was used.
 
-<div class="usa-alert usa-alert--info">
+<div class="usa-alert usa-alert--info usa-alert--no-icon">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading"></h4>
     <p class="usa-alert__text">
       One example for viewing this implementation pattern is Connect.gov. If you click the Login button, you will be redirected to the Max.gov federated login page. The top section allows for direct logon using a PIV/CAC and the bottom section allows you to select a home agency. Each of these icons redirects the user back to that agency’s Federation Service, if available. In this scenario, the agency's Federation Service acts as the authoritative "service" to confirm that the user has performed an authentication using their PIV credential and passes identity attributes associated with the registered account at Connect.gov.
     </p>

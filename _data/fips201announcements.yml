@@ -1,7 +1,12 @@
-# Used on page: https://www.idmanagement.gov/fips201ep/
-# Announcements for FIPS 201 Evaluation Program
-# Set an Announcement's status to Archived after 4 years and comment out.
-# If announcement content is the full summary, leave 'url' blank, set soure to 'IDManagement.gov' and doctype = 'Announcement'
+# Description: Announcements for FIPS 201 Evaluation Program
+# Page Use: _ficampmo/fips201ep.md
+# Page URL: https://www.idmanagement.gov//fips201ep/#program-announcements
+# Note: Announcements should be retained for 4 years, it's status changed to archived.  
+#
+# Archiving an announcement 
+# - set the Announcement's status to 'Archived' (after 4 years).
+#
+# Note: If an announcement is the full summary of the announcement, leave the 'url' field blank, and set the soure to 'IDManagement.gov' and doctype = 'Announcement'
 # HTML tags can be included inline with summary information in quotes.
 
 # Announcement Template
@@ -12,7 +17,7 @@
 #   source: IDManagement.gov
 #   target: _blank
 #   expanded: false
-#   doctype: Announcement
+#   doctype: Announcement 
 #   status: Active
 
 - name: "FIPS 201 EP's guidance on solution deployment" 

@@ -1,4 +1,5 @@
 ## Access Control
+# Note: this information is not being used, but not sure if the data should be removed right away. (05/27/2026 - cjb)
 -  
    category: 'Access Control'
    countermeasure: 'Dynamic Privilege Management'
