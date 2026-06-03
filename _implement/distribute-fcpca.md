@@ -216,7 +216,7 @@ To distribute the Federal Common Policy CA G2 (FCPCAG2) certificate, use one of 
     <p class="usa-alert__text">
       Just pushing new Federal PKI intermediates over GPO may not fix domain login. Microsoft has two primary locations to store certificates for network login and other uses: NTAuth and Enterprise Trust.
       <ul>
-        <li>NTAUTH is a registry location that only stores data attributes from the certifiate at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a full certificate store that maintains the entire X.509 file to include the digital signature.</li>
+        <li>NTAUTH is a registry location that only stores data attributes from the certificate at HKEY_LOCAL_MACHINE\Software\Microsoft\EnterpriseCertificates\NTAuth\Certificates, while Enterprise trust is a full certificate store that maintains the entire X.509 file to include the digital signature.</li>
         <li>The NTAuthCertificates determine which CAs are trusted for domain authentication use cases. NTAuth (or NTAuthCertificates) is not a Windows certificate store but an Active Directory object containing certificates.</li>
         <li>Add store is used to add a certificate to a certificate store, while publish publishes values into the directory.</li>
         <li>With gpupdate /force,  the update starts immediately, but replication can take some time depending on the deployment's complexity (e.g., number of domain controllers or network configuration). The average default delay for gpupdate without force is around 90 minutes. This behavior occurs when Group Policy settings are updated and the client-side extension responsible for autoenrollment runs.</li>
