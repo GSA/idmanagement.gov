@@ -30,7 +30,9 @@ subnav:
                     {{cap.name}}
                 </h4>
                 <div class="usa-summary-box__text">
-                    {{cap.detail}}
+                    <p style="margin: "5px 0 2px", fontSize: 11, color: r.text, lineHeight: 1.5, opacity: 0.9 ">
+                        {{cap.detail}}
+                    </p>
                 </div>
             </div>
         </div>
@@ -38,13 +40,13 @@ subnav:
         <p>
             <h5>Standards</h5>
             {% for standard in arch.standards %}
-                    <span class="usa-tag" style="padding: 4px;border-radius: 20px;">{{standard}}</span>
+                    <span class="usa-tag" style="padding: 4px;border-radius: 20px;padding-right: 5px;padding-left: 5px;display: table-cell">{{standard}}</span>
             {% endfor %}
         </p>
         <p>
         <h5>Docs</h5>
             {% for doc in arch.docs %}
-                    <span class="usa-tag" style="padding: 4px;border-radius: 20px;">{{doc}} </span>
+                    <span class="usa-tag" style="padding: 4px;border-radius: 25px; ">{{doc}} </span>
             {% endfor %}
         </p>
     </div>
