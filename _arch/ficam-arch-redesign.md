@@ -1,9 +1,9 @@
 ---
 layout: page
-collection: why
+sidenav: arch
 title:  FICAM Arch - Redesign
 permalink: /ficam-dev/
-sidenav: why
+sidenav: arch
 sticky_sidenav: true
 
 subnav:
