@@ -30,7 +30,7 @@ subnav:
                     {{cap.name}}
                 </h4>
                 <div class="usa-summary-box__text">
-                    <p style="margin: "5px 0 2px", fontSize: 11, color: r.text, lineHeight: 1.5, opacity: 0.9 ">
+                    <p style="margin: "5px 0 2px; fontSize: 11; lineHeight: 1.5, opacity: 0.9">
                         {{cap.detail}}
                     </p>
                 </div>
