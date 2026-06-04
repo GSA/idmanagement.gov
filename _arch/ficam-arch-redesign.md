@@ -1,8 +1,9 @@
 ---
+
 layout: page
 sidenav: arch
 title:  FICAM Arch - Redesign
-permalink: /ficam-dev/
+permalink: /development/
 sidenav: arch
 sticky_sidenav: true
 
@@ -10,10 +11,8 @@ subnav:
 
 ---
 
-
-
-
-{% for arch in site.data.ficam-arch %}
+# Hello
+<!-- {% for arch in site.data.ficam-arch %}
     <div
     class="usa-summary-box"
     role="region"
@@ -26,4 +25,4 @@ subnav:
         {{arch.summary}}
         </div>
     </div>
-{% endfor %}
+{% endfor %} -->
