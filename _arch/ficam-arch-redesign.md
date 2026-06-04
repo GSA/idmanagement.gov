@@ -27,10 +27,10 @@ subnav:
         <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
             <div class="usa-summary-box__body">
                 <h4 class="usa-summary-box__heading" id="summary-box-key-information">
-                    {{cape.name}}
+                    {{cap.name}}
                 </h4>
                 <div class="usa-summary-box__text">
-                    {{cape.detail}}
+                    {{cap.detail}}
                 </div>
             </div>
         </div>
