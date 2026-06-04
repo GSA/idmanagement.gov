@@ -1,25 +1,4 @@
-# import { useState } from "react";
-
-# const RAMPS = {
-#   gray:   { bg: "#F1EFE8", border: "#888780", text: "#444441", lt: "#D3D1C7" },
-#   teal:   { bg: "#E1F5EE", border: "#0F6E56", text: "#085041", lt: "#9FE1CB" },
-#   purple: { bg: "#EEEDFE", border: "#534AB7", text: "#3C3489", lt: "#CECBF6" },
-#   blue:   { bg: "#E6F1FB", border: "#185FA5", text: "#0C447C", lt: "#B5D4F4" },
-#   coral:  { bg: "#FAECE7", border: "#993C1D", text: "#712B13", lt: "#F5C4B3" },
-#   pink:   { bg: "#FBEAF0", border: "#993556", text: "#72243E", lt: "#F4C0D1" },
-#   green:  { bg: "#EAF3DE", border: "#3B6D11", text: "#27500A", lt: "#C0DD97" },
-#   amber:  { bg: "#FAEEDA", border: "#854F0B", text: "#633806", lt: "#FAC775" },
-# };
-
-# const DOC = {
-#   mdl:   { label: "mDL",   ramp: "amber" },
-#   fido2: { label: "FIDO2", ramp: "green" },
-#   mpiv:  { label: "mPIV",  ramp: "pink"  },
-#   pqc:   { label: "PQC",   ramp: "purple"},
-#   vc:    { label: "VC",    ramp: "blue"  },
-# };
-
-# arch
+# arch |===================================
 - id: "gov"
   label: "Governance"
   ramp: "gray"
@@ -78,7 +57,7 @@
       detail: "Pairing a classical algorithm with a PQC algorithm in the same certificate or key exchange; maintains backward compatibility with non-PQC-capable relying parties during migration." 
     - name: "Harvest-now-decrypt-later"
       detail: "Adversaries collecting encrypted ICAM traffic today for future quantum decryption; prioritize TLS migration and long-lived identity records for early remediation per OMB M-23-02." 
-    - name: "Cryptographic inventory:
+    - name: "Cryptographic inventory"
       detail: "Agency-wide inventory of quantum-vulnerable ICAM systems, credentials, and protocols; mandatory per OMB M-23-02; used to prioritize migration sequencing." 
   standards: ["NIST FIPS 203", "NIST FIPS 204", "NIST FIPS 205", "NIST SP 800-208", "OMB M-23-02", "NSA CNSA 2.0", "NIST SP 800-131Ar3"]
   docs: ["pqc"]
@@ -106,8 +85,7 @@
   standards: ["W3C VC DM 2.0", "SD-JWT (IETF RFC 7519)", "OID4VC / OID4VP", "W3C DID Core 1.0", "DIF Presentation Exchange", "ISO 18013-7", "VC Status List 2021"]
   docs: ["vc"]
 
-
-# practice
+# practice |===================================
 - id: "identity"
   label: "Identity management"
   ramp: "purple"
