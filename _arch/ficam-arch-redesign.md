@@ -41,14 +41,14 @@ subnav:
             <h4 class="usa-summary-box__heading">Standards</h4>
             <hr>
             {% for standard in arch.standards %}
-                    <span class="usa-tag" style="padding: 4px;border-radius: 10px;padding-right: 10px;padding-left: 10px;display: table-cell;margin: 10[x];">{{standard}}</span>
+                    <span class="usa-tag" style="padding: 4px;border-radius: 10px;padding-right: 10px;padding-left: 10px;inline-block;margin: 10[x];">{{standard}}</span>
             {% endfor %}
         </p>
         <p>
         <h4 class="usa-summary-box__heading">Docs</h4>
           <hr>
             {% for doc in arch.docs %}
-                    <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;"> {{doc}} </span>
+                    <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;inline-block;"> {{doc}} </span>
             {% endfor %}
         </p>
     </div>
