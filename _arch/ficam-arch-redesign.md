@@ -41,7 +41,7 @@ subnav:
             <h4 class="usa-summary-box__heading">Standards</h4>
             <hr>
             {% for standard in arch.standards %}
-                    <span class="usa-tag" style="padding: 4px;border-radius: 10px;padding-right: 10px;padding-left: 10px;inline-block;margin: 10[x];">{{standard}}</span>
+                    <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;inline-block;">{{standard}}</span>
             {% endfor %}
         </p>
         <p>
