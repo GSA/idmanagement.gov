@@ -1,0 +1,322 @@
+# import { useState } from "react";
+
+# const RAMPS = {
+#   gray:   { bg: "#F1EFE8", border: "#888780", text: "#444441", lt: "#D3D1C7" },
+#   teal:   { bg: "#E1F5EE", border: "#0F6E56", text: "#085041", lt: "#9FE1CB" },
+#   purple: { bg: "#EEEDFE", border: "#534AB7", text: "#3C3489", lt: "#CECBF6" },
+#   blue:   { bg: "#E6F1FB", border: "#185FA5", text: "#0C447C", lt: "#B5D4F4" },
+#   coral:  { bg: "#FAECE7", border: "#993C1D", text: "#712B13", lt: "#F5C4B3" },
+#   pink:   { bg: "#FBEAF0", border: "#993556", text: "#72243E", lt: "#F4C0D1" },
+#   green:  { bg: "#EAF3DE", border: "#3B6D11", text: "#27500A", lt: "#C0DD97" },
+#   amber:  { bg: "#FAEEDA", border: "#854F0B", text: "#633806", lt: "#FAC775" },
+# };
+
+# const DOC = {
+#   mdl:   { label: "mDL",   ramp: "amber" },
+#   fido2: { label: "FIDO2", ramp: "green" },
+#   mpiv:  { label: "mPIV",  ramp: "pink"  },
+#   pqc:   { label: "PQC",   ramp: "purple"},
+#   vc:    { label: "VC",    ramp: "blue"  },
+# };
+
+archs:
+  - id: "gov"
+    label: "Governance"
+    ramp: "gray"
+    summary: "Enterprise ICAM program oversight, policy alignment, and risk management"
+    caps: 
+      - name: "Policy & standards"
+        detail: "FISMA, OMB M-19-17, M-22-09, NIST SP 800-63 and 800-53, agency ICAM policy statements, and the FICAM Architecture v3.3."
+      - name: "Identity governance"
+        detail: "Role lifecycle management, periodic access certification campaigns, segregation of duties controls, and entitlement review workflows."
+      - name: "Privileged access mgmt"
+        detail: "Just-in-time access provisioning, session recording and monitoring, least-privilege enforcement, and PAM credential vaulting."
+      - name: "Audit & compliance"
+        detail: "Continuous monitoring of ICAM controls, ICAM metrics reporting, POA&M tracking, and inspector general audit support."
+      - name: "Program management"
+        detail: "ICAM PMO structure, governance board charters, capital planning, and performance measurement under the federal ICAM common baseline."
+    standards: ["NIST SP 800-53", "NIST SP 800-63", "OMB M-19-17", "OMB M-22-09", "EO 14028", "FICAM Architecture v3.3"]
+    docs: []
+
+  - id: "fed"
+    label: "Federation"
+    ramp: "teal"
+    summary: "Trust frameworks and protocols enabling cross-agency and partner identity interoperability"
+    caps:
+      - name: "Cross-agency trust"
+        detail: "SAML 2.0 and OIDC federation across agencies; bilateral federation agreements; max.gov as the federal identity provider hub for inter-agency access." 
+      - name: "Attribute sharing"
+        detail: "Minimum-necessary disclosure policies, attribute release frameworks, and consent management for sharing identity attributes across trust domains." 
+      - name: "Federal PKI trust"
+        detail: "Federal PKI Common Policy CA as the government-wide trust anchor; cross-certification with bridge CAs; certificate path validation and revocation (CRL/OCSP)." 
+      - name: "mDL / REAL ID trust"
+        detail: "State-to-federal mDL acceptance framework under DHS/TSA waiver process; ISO 18013-5 device authentication; trust relationships between state DMV issuers and federal verifiers." 
+      - name: "FIDO2 MDS trust"
+        detail: "FIDO Metadata Service as the authenticator attestation trust registry; AAGUID-based allowlisting policies; agency-defined acceptable authenticator models." 
+      - name: "VC trust registries"
+        detail: "Issuer registry infrastructure for verifiable credentials; FPKI-rooted VC signing keys; OID4VP presentation protocol for cross-domain VC acceptance without bilateral agreements." 
+    standards: ["SAML 2.0", "OIDC / OAuth 2.0", "ISO 18013-5", "FIDO2 MDS v3", "W3C DID Core 1.0", "OID4VP", "RFC 8705"]
+    docs: ["mdl", "fido2", "mpiv", "vc"]
+
+  - id: "pqc"
+    label: "Post-quantum cryptography"
+    ramp: "purple"
+    summary: "Migration from quantum-vulnerable algorithms to NIST-standardized PQC across all ICAM systems"
+    caps:
+      - name: "ML-KEM — FIPS 203"
+        detail: "Module-Lattice Key Encapsulation Mechanism; replaces RSA and ECDH for key exchange in TLS sessions, PIV key transport, and encrypted token containers." 
+      - name: "ML-DSA — FIPS 204"
+        detail: "Module-Lattice Digital Signature Algorithm; replaces RSA/ECDSA for certificate signing, SAML and OIDC token signing, and VC issuer signatures." 
+      - name: "SLH-DSA — FIPS 205"
+        detail: "Stateless hash-based digital signature algorithm; preferred for high-assurance long-lived signing such as root CA certificates and firmware signing." 
+      - name: "Crypto-agile PKI"
+        detail: "Algorithm-agile CA infrastructure supporting dual-stack certificate issuance; FPKI PQC migration workstream led by GSA and the FPKI Policy Authority." 
+      - name: "Hybrid classical + PQ"
+        detail: "Pairing a classical algorithm with a PQC algorithm in the same certificate or key exchange; maintains backward compatibility with non-PQC-capable relying parties during migration." 
+      - name: "Harvest-now-decrypt-later"
+        detail: "Adversaries collecting encrypted ICAM traffic today for future quantum decryption; prioritize TLS migration and long-lived identity records for early remediation per OMB M-23-02." 
+      - name: "Cryptographic inventory:
+        detail: "Agency-wide inventory of quantum-vulnerable ICAM systems, credentials, and protocols; mandatory per OMB M-23-02; used to prioritize migration sequencing." 
+    standards: ["NIST FIPS 203", "NIST FIPS 204", "NIST FIPS 205", "NIST SP 800-208", "OMB M-23-02", "NSA CNSA 2.0", "NIST SP 800-131Ar3"]
+    docs: ["pqc"]
+
+  - id: "vc"
+    label: "Verifiable credentials"
+    ramp: "blue"
+    summary: "W3C-standardized cryptographically signed claims enabling portable, privacy-preserving, decentralized identity"
+    caps:
+      - name: "W3C VC Data Model 2.0"
+        detail: "JSON-LD and JWT serializations of issuer-signed credential objects; credential status lists (VC Status List 2021) for offline revocation checking without real-time issuer contact." 
+      - name: "SD-JWT"
+        detail: "Selective Disclosure JWT (IETF); holder presents only the specific claims required by the verifier, without revealing the full credential; supports privacy-preserving identity proofing workflows." 
+      - name: "BBS+ signatures"
+        detail: "Unlinkable selective disclosure using multi-message signature scheme; enables zero-knowledge proof of credential possession without issuer correlation across presentations." 
+      - name: "OID4VC / OID4VP"
+        detail: "OpenID for Verifiable Credential Issuance and Presentation; bridges existing OIDC infrastructure with VC wallet model; primary protocol for federal VC issuance and relying party acceptance." 
+      - name: "Decentralized identifiers"
+        detail: "W3C DID Core 1.0; did:web and did:jwk methods for verifiable issuer and holder identification without centralized registry dependency; FPKI-rootable for federal trust." 
+      - name: "Holder-bound authorization"
+        detail: "VC cryptographically bound to holder's authenticator key (FIDO2 or PIV); verifier confirms presenter is legitimate holder; prevents VC theft and replay attacks in access decisions." 
+      - name: "mDL / VC convergence"
+        detail: "ISO 18013-7 aligns mDL presentation protocol with OID4VP; enables mDLs to be carried and presented alongside other VCs in a unified OID4VP-compatible digital wallet." 
+    standards: ["W3C VC DM 2.0", "SD-JWT (IETF RFC 7519)", "OID4VC / OID4VP", "W3C DID Core 1.0", "DIF Presentation Exchange", "ISO 18013-7", "VC Status List 2021"]
+    docs: ["vc"]
+
+
+practice:
+  - id: "identity"
+    label: "Identity management"
+    ramp: "purple"
+    summary: "Collect, verify, and manage attributes to establish and maintain enterprise identities for people and systems"
+    caps:
+    - name: "Identity proofing"
+      detail: "IAL-3 in-person and remote proofing workflows; document verification; biometric facial comparison; supervised remote proofing; NIST SP 800-63A evidence strength requirements." 
+    - name: "Attribute management"
+      detail: "Authoritative attribute sources (HR systems, PIV data stores); attribute quality and freshness policies; reconciliation workflows for multi-source identity data." 
+    - name: "Lifecycle management"
+      detail: "Joiner-mover-leaver provisioning workflows; role mining and assignment; periodic access certification; deprovisioning SLA enforcement; orphaned account remediation." 
+    - name: "mDL-based proofing"
+      detail: "mDL as an IAL2 identity evidence source; ISO 18013-5 device authentication confirms document authenticity; selective attribute disclosure minimizes data exposure during proofing." 
+    - name: "FIDO2 device binding"
+      detail: "Authenticator enrollment tied to a proofed enterprise identity; AAGUID-based allowlisting for permitted authenticator models; device attestation records maintained in identity registry." 
+    - name: "mPIV enrollment"
+      detail: "FIPS 201-3 compliant enrollment on mobile secure element; in-person biometric capture at initial enrollment; remote re-enrollment for existing PIV holders using on-file biometric." 
+    - name: "VC issuance workflow"
+      detail: "Agency acting as VC issuer for employment, role, and entitlement credentials; SD-JWT attribute packaging for selective disclosure; credential bound to holder's enterprise identity." 
+    - name: "Privacy by design"
+      detail: "Minimum-necessary data collection at proofing; informed consent management; Privacy Act of 1974 compliance; Privacy Impact Assessment (PIA) requirements for ICAM systems." 
+    standards: ["NIST SP 800-63A", "FIPS 201-3", "NIST SP 800-157r1", "ISO 18013-5", "W3C VC DM 2.0", "Privacy Act of 1974", "OMB M-03-22"]
+    docs: ["mdl", "fido2", "mpiv", "vc"]
+    
+  - id: "credential"
+    label: "Credential management"
+    ramp: "coral"
+    summary: "Issue, manage, and revoke credentials bound to verified enterprise identities across all credential types"
+    caps:
+    - name: "PIV / CAC"
+      detail: "FIPS 201-3 smart card with PIV Authentication, Card Authentication, digital signature, and encryption certificates; FPKI-chained; mandatory for federal employees and contractors." 
+    - name: "PIV-I / derived PIV"
+      detail: "PIV-Interoperable for non-federal entities; derived PIV credential on mobile per SP 800-157r1; supports AAL2 and AAL3 without a physical smart card." 
+    - name: "mPIV"
+      detail: "FIPS 201-3 PIV credential on mobile device's secure element or TEE; NFC tap and BLE proximity presentation; device-bound biometric cardholder verification method (CVM)." 
+    - name: "FIDO2 / passkeys"
+      detail: "Hardware security keys meeting AAL3 (YubiKey, Titan); platform passkeys meeting AAL2 (Windows Hello, Apple, Google); no shared secrets; private key never leaves the authenticator." 
+    - name: "mDL"
+      detail: "ISO/IEC 18013-5 state-issued credential on mobile device; NFC and QR presentation; device authentication; selective attribute disclosure; REAL ID-compliant when issued under DHS/TSA waiver." 
+    - name: "PQC credentials"
+      detail: "Credentials issued with ML-DSA signing keys and ML-KEM key encapsulation; hybrid classical+PQC during transition period; crypto-agile issuance infrastructure supporting future algorithm rotation." 
+    - name: "Verifiable credentials"
+      detail: "W3C VC-format employment, role, and entitlement claims; SD-JWT packaging; holder-controlled presentation; revocation via VC Status List without real-time issuer query." 
+    - name: "PKI / FPKI"
+      detail: "Federal PKI Shared Service Provider (SSP) program; FPKI Common Policy CA chain; CRL and OCSP revocation services; cross-certification with external trust anchors." 
+    standards: ["FIPS 201-3", "NIST SP 800-157r1", "FIPS 140-3", "ISO 18013-5", "NIST FIPS 203/204", "W3C VC DM 2.0", "NIST SP 800-63B"]
+    docs: ["mdl", "fido2", "mpiv", "pqc", "vc"]
+  
+  - id: "access"
+    label: "Access management"
+    ramp: "blue"
+    summary: "Authenticate identities and enforce authorization policies for logical and physical access to federal resources"
+    caps: 
+    - name: "Authentication — AAL1-3"
+      detail: "Single-factor through hardware-bound phishing-resistant MFA; NIST SP 800-63B AAL requirements; risk-based and step-up authentication policies; session management and re-authentication intervals."
+    - name: "Authorization"
+      detail: "RBAC, ABAC, and Policy-Based Access Control (PBAC); real-time attribute resolution against authoritative sources; zero-standing privilege enforcement; policy decision and enforcement points." 
+    - name: "Privileged access"
+      detail: "PAM credential vaulting; just-in-time privilege elevation; privileged session recording and monitoring; break-glass procedures; MFA required for all privileged operations." 
+    - name: "Physical access — PACS"
+      detail: "PIV and mPIV-capable card readers; PACS controllers; FICAM PACS topology (E-PACS); visitor management; SP 800-116r1 PIV-in-PACS implementation guidance." 
+    - name: "mPIV authentication"
+      detail: "NFC tap and BLE proximity presentation at PACS readers for physical access; certificate-based logical access using PIV auth certificate; MDM device health posture as additional factor." 
+    - name: "FIDO2 authentication"
+      detail: "WebAuthn relying party integration; CTAP2 authenticator protocol; origin-scoped credentials prevent credential phishing; primary mechanism for OMB M-22-09 phishing-resistant MFA compliance." 
+    - name: "PQC-secured channels"
+      detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions." 
+    - name: "VC-based authorization"
+      detail: "Holder presents VC at resource server; verifier validates issuer signature offline; fine-grained ABAC using structured entitlement claims; no real-time issuer query required for access decision." 
+    - name: "Digital services / SSO"
+      detail: "Agency identity provider (IdP) issuing SAML assertions or OIDC tokens; max.gov for inter-agency SSO; session management; MFA enforcement at IdP; step-up authentication for sensitive transactions." 
+    standards: ["NIST SP 800-63B", "NIST SP 800-116r1", "FIDO2 / WebAuthn W3C", "NIST FIPS 203", "OMB M-22-09", "OID4VP", "SAML 2.0", "OIDC / OAuth 2.0"]
+    docs: ["fido2", "mpiv", "pqc", "vc"]
+
+## Code below is from Claude Code, and is designed for a React based site, which is not what IDM is. 
+#     <span
+#       onClick={onClick}
+#       style={{
+#         display: "inline-block", fontSize: 11, lineHeight: 1,
+#         padding: "3px 9px", borderRadius: 20, margin: "2px",
+#         background: r.bg, border: `1px solid ${r.border}`, color: r.text,
+#         cursor: onClick ? "pointer" : "default",
+#         fontFamily: "var(--font-sans)",
+#       }}
+#     >{label}{onClick ? " ↗" : ""}</span>
+  
+
+# function CapRow({ cap, ramp }) {
+#   const [open, setOpen] = useState(false);
+#   const r = RAMPS[ramp];
+#   return (
+#     <div
+#       onClick={e => { e.stopPropagation(); setOpen(o => !o); }}
+#       style={{
+#         padding: "5px 8px", borderRadius: 6, marginBottom: 2,
+#         background: open ? r.lt + "55" : "transparent",
+#         border: `1px solid ${open ? r.border : r.border + "44"}`,
+#         cursor: "pointer", transition: "all .12s",
+#       }}
+#     >
+#       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+#         <span style={{ fontSize: 12, fontWeight: open ? 500 : 400, color: r.text }}>{cap.name}</span>
+#         <span style={{ fontSize: 9, color: r.border, marginLeft: 6, flexShrink: 0 }}>{open ? "▲" : "▼"}</span>
+#       </div>
+#       {open && (
+#         <p style={{ margin: "5px 0 2px", fontSize: 11, color: r.text, lineHeight: 1.5, opacity: 0.9 }}>
+#           {cap.detail}
+#         </p>
+#       )}
+#     </div>
+#   );
+# }
+
+# function Label({ text, color }) {
+#   return (
+#     <div style={{
+#       fontSize: 10, fontWeight: 500, color,
+#       textTransform: "uppercase", letterSpacing: "0.06em",
+#       margin: "10px 0 4px",
+#     }}>{text}</div>
+#   );
+# }
+
+# function Section({ data, variant }) {
+#   const [open, setOpen] = useState(false);
+#   const r = RAMPS[data.ramp];
+#   const isLayer = variant === "layer";
+
+#   return (
+#     <div
+#       onClick={() => setOpen(o => !o)}
+#       style={{
+#         borderRadius: isLayer ? 8 : 10,
+#         background: r.bg,
+#         border: `1.5px solid ${open ? r.border : r.bg}`,
+#         padding: isLayer ? "9px 14px" : "10px",
+#         cursor: "pointer",
+#         transition: "border-color .15s",
+#         marginBottom: isLayer ? 4 : 0,
+#       }}
+#     >
+#       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+#         <div>
+#           <span style={{ fontSize: 13, fontWeight: 500, color: r.text }}>{data.label}</span>
+#           {!open && (
+#             <span style={{ fontSize: 11, color: r.border, marginLeft: 8 }}>{data.summary}</span>
+#           )}
+#         </div>
+#         <span style={{ fontSize: 10, color: r.border, marginLeft: 8, flexShrink: 0 }}>
+#           {open ? "▲" : "▼"}
+#         </span>
+#       </div>
+
+#       {!open && (
+#         <div style={{ marginTop: 6, display: "flex", flexWrap: "wrap" }}>
+#           {data.caps.slice(0, isLayer ? 4 : 3).map(c => (
+#             <Tag key={c.name} label={c.name} ramp={data.ramp} />
+#           ))}
+#           {data.caps.length > (isLayer ? 4 : 3) && (
+#             <span style={{ fontSize: 11, color: r.border, alignSelf: "center", margin: "2px 4px" }}>
+#               +{data.caps.length - (isLayer ? 4 : 3)} more
+#             </span>
+#           )}
+#         </div>
+#       )}
+
+#       {open && (
+#         <div onClick={e => e.stopPropagation()}>
+#           <p style={{ margin: "8px 0 4px", fontSize: 12, color: r.text, lineHeight: 1.5, opacity: 0.8 }}>
+#             {data.summary}
+#           </p>
+#           <Label text="Capabilities" color={r.text} />
+#           {data.caps.map(c => <CapRow key={c.name} cap={c} ramp={data.ramp} />)}
+#           <Label text="Standards" color={r.text} />
+#           <div style={{ marginBottom: 6 }}>
+#             {data.standards.map(s => <Tag key={s} label={s} ramp="gray" />)}
+#           </div>
+#           {data.docs.length > 0 && (
+#             <>
+#               <Label text="Document sections" color={r.text} />
+#               {data.docs.map(d => (
+#                 <Tag
+#                   key={d} label={DOC[d].label} ramp={DOC[d].ramp}
+#                   onClick={() => sendPrompt(`Show me the ${DOC[d].label} section of the FICAM architecture document`)}
+#                 />
+#               ))}
+#             </>
+#           )}
+#         </div>
+#       )}
+#     </div>
+#   );
+# }
+
+# export default function App() {
+#   return (
+#     <div style={{ fontFamily: "var(--font-sans)", padding: "10px 2px" }}>
+#       <div style={{ marginBottom: 12 }}>
+#         {ARCH.layers.map(l => <Section key={l.id} data={l} variant="layer" />)}
+#       </div>
+#       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6, alignItems: "start" }}>
+#         {ARCH.practice.map(p => <Section key={p.id} data={p} variant="practice" />)}
+#       </div>
+#       <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 6 }}>
+#         {Object.entries(DOC).map(([id, d]) => (
+#           <Tag key={id} label={d.label} ramp={d.ramp}
+#             onClick={() => sendPrompt(`Show me the ${d.label} section of the FICAM architecture document`)}
+#           />
+#         ))}
+#       </div>
+#       <div style={{ marginTop: 6, fontSize: 11, color: "var(--color-text-tertiary)", textAlign: "center" }}>
+#         Tap a section to expand · tap a capability for detail · tap doc tags to open sections
+#       </div>
+#     </div>
+#   );
+# }
