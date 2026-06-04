@@ -14,14 +14,29 @@ subnav:
 ---
 
 {% for arch in site.data.ficam-arch %}
-<div class="usa-accordion usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
-    <h4 class="usa-accordion__heading usa-summary-box__heading usa-accordion__button"
-        aria-expanded="true"
-        aria-controls="a1">
-        {{arch.label}}
-    </h4>
-    <div id="a1" class="usa-accordion__content usa-prose usa-summary-box__text">
-        {{arch.summary}}
+<div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
+    <div class="usa-summary-box__body">
+        <h4 class="usa-summary-box__heading" id="summary-box-key-information">
+            {{arch.label}}
+        </h4>
+        <div class="usa-summary-box__text">
+            {{arch.summary}}
+        </div>
+
+        {% for cap in arch.caps %}
+        <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
+            <div class="usa-summary-box__body">
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information">
+                    {{cape.name}}
+                </h4>
+                <div class="usa-summary-box__text">
+                    {{cape.detail}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
     </div>
 </div>
 {% endfor %}
