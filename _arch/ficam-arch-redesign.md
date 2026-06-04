@@ -22,7 +22,7 @@ subnav:
         <div class="usa-summary-box__text">
             {{arch.summary}}
         </div>
-        <h5>Capabilities</h5>
+        <h4>Capabilities</h4>
         {% for cap in arch.caps %}
         <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
             <div class="usa-summary-box__body">
@@ -38,13 +38,13 @@ subnav:
         </div>
         {% endfor %}
         <p>
-            <h5>Standards</h5>
+            <h4>Standards</h4>
             {% for standard in arch.standards %}
-                    <span class="usa-tag" style="padding: 4px;border-radius: 20px;padding-right: 5px;padding-left: 5px;display: table-cell">{{standard}}</span>
+                    <span class="usa-tag" style="padding: 4px;border-radius: 20px;padding-right: 10px;padding-left: 10px;display: table-cell;margin: 10[x];">{{standard}}</span>
             {% endfor %}
         </p>
         <p>
-        <h5>Docs</h5>
+        <h4>Docs</h4>
             {% for doc in arch.docs %}
                     <span class="usa-tag" style="padding: 4px;border-radius: 25px; ">{{doc}} </span>
             {% endfor %}
