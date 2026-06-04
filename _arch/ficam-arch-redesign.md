@@ -24,7 +24,7 @@ subnav:
         </div>
         <h4 class="usa-summary-box__heading">Capabilities</h4>
         {% for cap in arch.caps %}
-        <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
+        <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.ramp}};">
             <div class="usa-summary-box__body">
                 <h4 class="usa-summary-box__heading" id="summary-box-key-information">
                     {{cap.name}}

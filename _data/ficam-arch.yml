@@ -1,7 +1,7 @@
 # arch |===================================
 - id: "gov"
   label: "Governance"
-  ramp: "#888780" #gray
+  ramp: "#D3D1C7" #gray
   type: arch
   summary: "Enterprise ICAM program oversight, policy alignment, and risk management"
   caps: 
@@ -20,7 +20,7 @@
 
 - id: "fed"
   label: "Federation"
-  ramp: "#0F6E56" #teal
+  ramp: "#9FE1CB" #teal
   type: arch
   summary: "Trust frameworks and protocols enabling cross-agency and partner identity interoperability"
   caps:
@@ -41,7 +41,7 @@
 
 - id: "pqc"
   label: "Post-quantum cryptography"
-  ramp: "#534AB7" #purple
+  ramp: "#CECBF6" #purple
   type: arch
   summary: "Migration from quantum-vulnerable algorithms to NIST-standardized PQC across all ICAM systems"
   caps:
@@ -64,7 +64,7 @@
 
 - id: "vc"
   label: "Verifiable credentials"
-  ramp: "#185FA5" #blue
+  ramp: "#B5D4F4" #blue
   type: arch
   summary: "W3C-standardized cryptographically signed claims enabling portable, privacy-preserving, decentralized identity"
   caps:
@@ -88,7 +88,7 @@
 # practice |===================================
 - id: "identity"
   label: "Identity management"
-  ramp: "#534AB7" #purple
+  ramp: "#CECBF6" #purple
   type: practice
   summary: "Collect, verify, and manage attributes to establish and maintain enterprise identities for people and systems"
   caps:
@@ -113,7 +113,7 @@
   
 - id: "credential"
   label: "Credential management"
-  ramp: "#993C1D" #coral
+  ramp: "#F5C4B3" #coral
   type: practice
   summary: "Issue, manage, and revoke credentials bound to verified enterprise identities across all credential types"
   caps:
@@ -138,7 +138,7 @@
 
 - id: "access"
   label: "Access management"
-  ramp: "#185FA5" #blue
+  ramp: "#B5D4F4" #blue
   type: practice
   summary: "Authenticate identities and enforce authorization policies for logical and physical access to federal resources"
   caps: 
