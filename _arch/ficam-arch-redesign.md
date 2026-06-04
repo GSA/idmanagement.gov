@@ -46,7 +46,7 @@ subnav:
         <p>
         <h4>Docs</h4>
             {% for doc in arch.docs %}
-                    <span class="usa-tag" style="padding: 4px;border-radius: 25px;width: auto;">{{doc}} </span>
+                    <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;"> {{doc}} </span>
             {% endfor %}
         </p>
     </div>
