@@ -2,7 +2,7 @@
 layout: page
 collection: why
 title:  FICAM Arch - Redesign
-permalink: /ficam-arch/
+permalink: /ficam-dev/
 sidenav: why
 sticky_sidenav: true
 
@@ -12,9 +12,9 @@ subnav:
 
 
 
-{% assign arch = site.data.ficam-arch %}
+{% assign archs = site.data.ficam-archs %}
 
-{% for arch.archs %}
+{% for arch in archs %}
 <div
   class="usa-summary-box"
   role="region"
