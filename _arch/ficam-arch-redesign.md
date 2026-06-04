@@ -36,8 +36,8 @@ subnav:
                 </div>
             </div>
         </div>
-        <p>
-        {% endfor %}
+       {% endfor %}
+       <br>
         <h4 class="usa-summary-box__heading">Standards</h4>             
             <hr>
             <p>
@@ -45,16 +45,14 @@ subnav:
                     <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;inline-block;">{{standard}}</span>
             {% endfor %}
             </p>
-        </p>
-        <p>
         <h4 class="usa-summary-box__heading">Document Section</h4>
           <hr>
-            <p>
+          <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;inline-block;"> {{doc}} </span>
             {% endfor %}
-            </p>
         </p>
+        
     </div>
 </div>
 {% endfor %}
