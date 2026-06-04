@@ -14,10 +14,6 @@ subnav:
 ---
 
 {% for arch in site.data.ficam-arch %}
-
-{% endfor %}
-
-
 <div class="usa-accordion">
     <h4 class="usa-accordion__heading">
         <div class="usa-summary-box usa-accordion__button"
@@ -38,3 +34,4 @@ subnav:
         </div>
     </div>
 </div>
+{% endfor %}
