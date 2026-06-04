@@ -19,7 +19,7 @@
 #   vc:    { label: "VC",    ramp: "blue"  },
 # };
 
-archs:
+arch:
   - id: "gov"
     label: "Governance"
     ramp: "gray"

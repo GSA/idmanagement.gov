@@ -12,9 +12,9 @@ subnav:
 
 
 
-{% assign archs = site.data.ficam-archs %}
+{% assign ficam = site.data.ficam-arch %}
 
-{% for arch in archs %}
+{% for arch in ficam.arch %}
 <div
   class="usa-summary-box"
   role="region"
