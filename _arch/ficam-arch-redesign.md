@@ -35,7 +35,9 @@ subnav:
             </div>
         </div>
         {% endfor %}
-
+        {% for standard in arch.standards %}
+            <span class="usa-tag">{{standard}}</span>
+        {% endfor %}
 
     </div>
 </div>
