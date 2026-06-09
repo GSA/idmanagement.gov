@@ -13,6 +13,9 @@ subnav:
 
 ---
 
+
+
+
 {% for arch in site.data.ficam-arch %}
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
     <div class="usa-summary-box__body">
@@ -37,12 +40,11 @@ subnav:
             </div>
         </div>
        {% endfor %}
-       <br>
         <h4 class="usa-summary-box__heading">Standards</h4>             
             <hr>
             <p style="line-break: strict;">
             {% for standard in arch.standards %}
-                    <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;inline-block;">{{standard}}</span>
+                    <span class="usa-tag radius-pill">{{standard}}</span>
             {% endfor %}
             </p>
         <h4 class="usa-summary-box__heading">Document Section</h4>
