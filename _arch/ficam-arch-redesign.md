@@ -35,13 +35,13 @@ subnav:
                 class="usa-accordion__button radius-lg"  
                 style="background-color:{{arch.color}};border-color:{{arch.border}};"
                 aria-expanded="false"
-                aria-controls="b{{forloop.index}}"
+                aria-controls="{{cap.type}}-{{forloop.index}}"
                 >
                 {{cap.name}}
                 </button>
             </h4>
             <div 
-            id="b{{forloop.index}}"
+            id="{{cap.type}}-{{forloop.index}}"
             style="background-color:{{arch.color}};border-color:{{arch.border}};"
             class="usa-accordion__content usa-prose radius-lg">
                 <p>
