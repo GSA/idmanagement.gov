@@ -46,6 +46,7 @@ subnav:
             </div>
         </div>
        {% endfor %}
+       <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
             <hr>
             <p>
@@ -53,6 +54,7 @@ subnav:
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
             {% endfor %}
             </p>
+        <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
           <hr>
           <p>
