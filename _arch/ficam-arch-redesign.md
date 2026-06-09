@@ -38,7 +38,7 @@ subnav:
                 {{cap.name}}
                 </button>
             </h4>
-            <div id="b-a{{forloop.index}}" class="usa-accordion__content usa-proseradius-bottom-lg">
+            <div id="b-a{{forloop.index}}" class="usa-accordion__content usa-prose radius-bottom-lg">
                 <p>
                     {{cap.detail}}
                 </p>
