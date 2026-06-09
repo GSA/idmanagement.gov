@@ -92,7 +92,7 @@
 # practice |===================================
 - id: "identity"
   label: "Identity management"
-  color: "#CECBF6, #" #purple
+  color: "#CECBF6" #purple
   border: "#534AB7"
   type: practice
   summary: "Collect, verify, and manage attributes to establish and maintain enterprise identities for people and systems"
