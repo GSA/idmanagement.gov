@@ -8,7 +8,6 @@
         "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
         "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
         "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-        "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
         "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
         "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
@@ -2682,29 +2681,6 @@
             }
         },
         {
-            "subject": "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
-            "issuer": "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
-            "serial-number": "5900079674176563254376406674317696149",
-            "akid": "82 85 44 75 33 61 be 57 80 45 3b e7 65 8e fb 92 f8 f7 24 e0",
-            "skid": "07 c0 56 6c de 1b 67 19 d0 01 0d 2a ad 63 95 54 48 0d 60 85",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://cacerts.one.digicert.com/IssuedTo-tscpbcasha384.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "serial-number": "1370515962",
@@ -3809,6 +3785,18 @@
             }
         },
         {
+            "subject": "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
+            "issuer": "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
+            "serial-number": "5900079674176563254376406674317696149",
+            "akid": "82 85 44 75 33 61 be 57 80 45 3b e7 65 8e fb 92 f8 f7 24 e0",
+            "skid": "07 c0 56 6c de 1b 67 19 d0 01 0d 2a ad 63 95 54 48 0d 60 85",
+            "status": "Status set to other because we didn't handle an error condition well",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Path Built but could not be validated"
+            }
+        },
+        {
             "subject": "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "serial-number": "1311970641",
@@ -4331,12 +4319,6 @@
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
             "common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
-            "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
