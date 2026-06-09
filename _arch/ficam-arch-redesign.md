@@ -27,8 +27,8 @@ subnav:
         </div>
         <h4 class="usa-summary-box__heading">Capabilities</h4>
         {% for cap in arch.caps %}
-        <div class="usa-accordion usa-accordion--bordered" style="background-color:{{arch.color}};border-color:{{arch.border}};">
-            <h4 class="usa-accordion__heading">
+        <div class="usa-accordion usa-accordion--bordered">
+            <h4 class="usa-accordion__heading" style="background-color:{{arch.color}};border-color:{{arch.border}};">
                 <button
                 type="button"
                 class="usa-accordion__button radius-lg"
