@@ -28,7 +28,7 @@ subnav:
         <br>
         <h4 class="usa-summary-box__heading">Capabilities</h4>
         {% for cap in arch.caps %}
-        <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple style="border: 1px solid {{arch.border}};">
+        <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple style="border-color:{{arch.border}};">
             <h4 class="usa-accordion__heading">
                 <button
                 type="button"
