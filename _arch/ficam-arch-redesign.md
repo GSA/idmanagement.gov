@@ -25,6 +25,7 @@ subnav:
         <div class="usa-summary-box__text">
             {{arch.summary}}
         </div>
+        <br>
         <h4 class="usa-summary-box__heading">Capabilities</h4>
         {% for cap in arch.caps %}
         <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple>
