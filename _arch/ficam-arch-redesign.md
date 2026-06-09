@@ -32,7 +32,7 @@ subnav:
                 <button
                 type="button"
                 class="usa-accordion__button radius-lg"  
-                style="background-color:{{arch.color}};border-color:{{arch.border}};
+                style="background-color:{{arch.color}};border-color:{{arch.border}};"
                 aria-expanded="false"
                 aria-controls="b-a{{forloop.index}}"
                 >
