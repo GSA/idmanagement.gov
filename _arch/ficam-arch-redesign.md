@@ -38,7 +38,7 @@ subnav:
                 {{cap.name}}
                 </button>
             </h4>
-            <div id="b-a1" class="usa-accordion__content usa-prose">
+            <div id="b-a{{forloop.index}}" class="usa-accordion__content usa-prose">
                 <p>
                     {{cap.detail}}
                 </p>
