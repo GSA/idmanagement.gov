@@ -190,9 +190,9 @@ subnav:
 {% endfor %}
 
 
-<!-- Verifiable credentials -->
+<!-- Identity management -->
 {% for arch in site.data.ficam-arch %}
-{% if arch.id == "vc" %}
+{% if arch.id == "identity" %}
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
     <div class="usa-summary-box__body">
         <h4 class="usa-summary-box__heading" id="summary-box-key-information">
@@ -211,13 +211,13 @@ subnav:
                 class="usa-accordion__button radius-lg"  
                 style="background-color:{{arch.color}};border-color:{{arch.border}};"
                 aria-expanded="false"
-                aria-controls="d-{{forloop.index}}"
+                aria-controls="e-{{forloop.index}}"
                 >
                 {{cap.name}}
                 </button>
             </h4>
             <div 
-            id="d-{{forloop.index}}"
+            id="e-{{forloop.index}}"
             style="background-color:{{arch.color}};border-color:{{arch.border}};"
             class="usa-accordion__content usa-prose radius-lg">
                 <p>
