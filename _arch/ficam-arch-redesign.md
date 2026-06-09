@@ -330,7 +330,7 @@ subnav:
                 class="usa-accordion__button radius-lg"  
                 style="background-color:{{arch.color}};border-color:{{arch.border}};"
                 aria-expanded="false"
-                aria-controls=f-{{forloop.index}}"
+                aria-controls="f-{{forloop.index}}"
                 >
                 {{cap.name}}
                 </button>
