@@ -31,7 +31,7 @@ subnav:
             <h4 class="usa-accordion__heading" style="background-color:{{arch.color}};border-color:{{arch.border}};">
                 <button
                 type="button"
-                class="usa-accordion__button radius-lg"
+                class="usa-accordion__button radius-lg" 
                 aria-expanded="true"
                 aria-controls="b-a{{forloop.index}}"
                 >
