@@ -51,7 +51,7 @@ subnav:
           <hr>
           <p style="line-break: strict;">
             {% for doc in arch.docs %}
-                    <span class="usa-tag" style="padding-left: 10px; padding-right: 10px;border-radius: 25px;inline-block;"> {{doc}} </span>
+                    <span class="usa-tag radius-pill"> {{doc}} </span>
             {% endfor %}
         </p>
         
