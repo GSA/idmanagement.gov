@@ -52,7 +52,6 @@ subnav:
        {% endfor %}
        <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -60,7 +59,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
@@ -109,8 +107,7 @@ subnav:
         </div>
        {% endfor %}
        <br />
-        <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
+        <h4 class="usa-summary-box__heading">Standards</h4>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -118,7 +115,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
@@ -169,7 +165,6 @@ subnav:
        {% endfor %}
        <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -177,7 +172,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
@@ -228,7 +222,6 @@ subnav:
        {% endfor %}
        <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -236,7 +229,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
@@ -288,7 +280,6 @@ subnav:
        {% endfor %}
        <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -296,7 +287,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
@@ -347,7 +337,6 @@ subnav:
        {% endfor %}
        <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -355,7 +344,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
@@ -406,7 +394,6 @@ subnav:
        {% endfor %}
        <br />
         <h4 class="usa-summary-box__heading">Standards</h4>             
-            <hr>
             <p>
             {% for standard in arch.standards %}
                     <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
@@ -414,7 +401,6 @@ subnav:
             </p>
         <br />
         <h4 class="usa-summary-box__heading">Document Section</h4>
-          <hr>
           <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
