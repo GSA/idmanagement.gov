@@ -31,14 +31,14 @@ subnav:
             <h4 class="usa-accordion__heading" style="background-color:{{arch.color}};border-color:{{arch.border}};">
                 <button
                 type="button"
-                class="usa-accordion__button radius-lg" 
+                class="usa-accordion__button radius-top-lg" 
                 aria-expanded="true"
                 aria-controls="b-a{{forloop.index}}"
                 >
                 {{cap.name}}
                 </button>
             </h4>
-            <div id="b-a{{forloop.index}}" class="usa-accordion__content usa-prose">
+            <div id="b-a{{forloop.index}}" class="usa-accordion__content usa-prose radius-bottom-lg">
                 <p>
                     {{cap.detail}}
                 </p>
