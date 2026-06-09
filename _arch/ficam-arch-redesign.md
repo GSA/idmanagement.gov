@@ -27,13 +27,13 @@ subnav:
         </div>
         <h4 class="usa-summary-box__heading">Capabilities</h4>
         {% for cap in arch.caps %}
-        <div class="usa-accordion usa-accordion--bordered">
+        <div class="usa-accordion usa-accordion--bordered radius-lg" style="background-color:{{arch.color}};border-color:{{arch.border}};">
             <h4 class="usa-accordion__heading">
                 <button
                 type="button"
                 class="usa-accordion__button"
                 aria-expanded="true"
-                aria-controls="b-a1"
+                aria-controls="b-a{{forloop.index}}"
                 >
                 {{cap.name}}
                 </button>
