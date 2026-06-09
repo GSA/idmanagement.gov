@@ -72,7 +72,7 @@ subnav:
 {% endif %}
 {% endfor %}
 
-<!-- Governance  -->
+<!-- Federation -->
 {% for arch in site.data.ficam-arch %}
 {% if arch.id == "fed" %}
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
