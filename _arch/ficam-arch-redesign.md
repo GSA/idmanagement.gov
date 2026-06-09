@@ -14,7 +14,7 @@ subnav:
 ---
 
 
-<!-- Governance  -->
+<!-- Governance   -->
 {% for arch in site.data.ficam-arch %}
 {% if arch.id == "gov" %}
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
