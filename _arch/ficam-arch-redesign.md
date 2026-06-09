@@ -48,14 +48,14 @@ subnav:
        {% endfor %}
         <h4 class="usa-summary-box__heading">Standards</h4>             
             <hr>
-            <p style="line-break: strict;">
+            <p>
             {% for standard in arch.standards %}
-                    <span class="usa-tag radius-pill display-inline-block">{{standard}}</span>
+                    <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
             {% endfor %}
             </p>
         <h4 class="usa-summary-box__heading">Document Section</h4>
           <hr>
-          <p style="line-break: strict;">
+          <p>
             {% for doc in arch.docs %}
                     <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
             {% endfor %}
