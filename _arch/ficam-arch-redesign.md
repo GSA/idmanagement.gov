@@ -17,6 +17,7 @@ subnav:
 
 
 {% for arch in site.data.ficam-arch %}
+{% if arch.id == "gov" %}
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
     <div class="usa-summary-box__body">
         <h4 class="usa-summary-box__heading" id="summary-box-key-information">
@@ -69,4 +70,5 @@ subnav:
         
     </div>
 </div>
+{% endif %}
 {% endfor %}
