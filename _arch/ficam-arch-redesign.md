@@ -93,13 +93,13 @@ subnav:
                 class="usa-accordion__button radius-lg"  
                 style="background-color:{{arch.color}};border-color:{{arch.border}};"
                 aria-expanded="false"
-                aria-controls="{{cap.id}}-{{forloop.index}}"
+                aria-controls="b-{{forloop.index}}"
                 >
                 {{cap.name}}
                 </button>
             </h4>
             <div 
-            id="{{cap.id}}-{{forloop.index}}"
+            id="b-{{forloop.index}}"
             style="background-color:{{arch.color}};border-color:{{arch.border}};"
             class="usa-accordion__content usa-prose radius-lg">
                 <p>
