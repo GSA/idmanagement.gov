@@ -27,12 +27,12 @@ subnav:
         </div>
         <h4 class="usa-summary-box__heading">Capabilities</h4>
         {% for cap in arch.caps %}
-        <div class="usa-accordion usa-accordion--bordered">
+        <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple>
             <h4 class="usa-accordion__heading" style="background-color:{{arch.color}};border-color:{{arch.border}};">
                 <button
                 type="button"
                 class="usa-accordion__button radius-lg" 
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="b-a{{forloop.index}}"
                 >
                 {{cap.name}}
@@ -44,20 +44,6 @@ subnav:
                 </p>
             </div>
         </div>
-
-        <!-- <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
-            <div class="usa-summary-box__body">
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information">
-                    {{cap.name}}
-                </h4>
-                <div class="usa-summary-box__text">
-                    <p style="margin: 5px 0 2px; fontSize: 11; lineHeight: 1.5, opacity: 0.9">
-                        {{cap.detail}}
-                    </p>
-                </div>
-            </div>
-        </div> -->
-
        {% endfor %}
         <h4 class="usa-summary-box__heading">Standards</h4>             
             <hr>
