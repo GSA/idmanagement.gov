@@ -48,12 +48,12 @@ subnav:
                                     type="button"
                                     class="usa-accordion__button"
                                     aria-expanded="false"
-                                    aria-controls="b1"
+                                    aria-controls="b{{forloop.index}}"
                                     >
                                     {{cap.name}}
                                     </button>
                                 </h4>
-                                <div id="b1" class="usa-accordion__content usa-prose">
+                                <div id="b{{forloop.index}}" class="usa-accordion__content usa-prose">
                                     <p>{{cap.detail}}</p>
                                 </div>
                             </div>
