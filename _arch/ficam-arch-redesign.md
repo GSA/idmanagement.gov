@@ -83,7 +83,7 @@ subnav:
                 </div>
                 {% endfor %}
                 <br>
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};>STANDARDS</h4>
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">STANDARDS</h4>
              <!-- First Accordion Summary Box End -->
             </div>
             <!-- Standard Section -->
