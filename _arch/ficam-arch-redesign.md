@@ -66,7 +66,7 @@ subnav:
                                     <button
                                     type="button"
                                     class="usa-accordion__button"
-                                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
+                                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};margin-bottom:3px;"
                                     aria-expanded="false"
                                     aria-controls="b{{forloop.index}}"
                                     >
