@@ -33,7 +33,7 @@ subnav:
 
   body {
     font-family: var(--font);
-    background: #f8f7f3;
+    /* background: #f8f7f3; */
     color: #222;
     padding: 24px 16px 48px;
     max-width: 960px;
