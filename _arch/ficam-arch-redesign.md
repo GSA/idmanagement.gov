@@ -35,7 +35,7 @@ subnav:
 {% for arch in site.data.ficam-arch %}
 {% if arch.id == "gov" %}
 <!-- Main Summary Box -->
-<div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};">
+<div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};padding:10px;">
     <div class="usa-summary-box__body">
         <!-- First Accordion -->      
         <div class="usa-accordion">
