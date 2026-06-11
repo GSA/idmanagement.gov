@@ -33,7 +33,7 @@ subnav:
 {% for arch in site.data.ficam-arch %}
 {% if arch.id == "gov" %}
 <!-- Main Summary Box -->
-<div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
+<div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};">
     <div class="usa-summary-box__body">
         <!-- First Accordion -->      
         <div class="usa-accordion">
@@ -42,14 +42,14 @@ subnav:
                 id="usa-accordion__button.solid-triangle-icon"
                 type="button"
                 class="usa-accordion__button"
-                style="background-color:{{arch.color}};color:{{arch.textcolor}};"
+                style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
                 aria-expanded="false"
                 aria-controls="a1"
                 >
                  {{arch.label}}
                 </button>
             </h4>
-            <div id="a1" class="usa-accordion__content usa-prose" style="background-color:{{arch.color}};">
+            <div id="a1" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};">
                 <!-- Main Summary Text -->
                 <p style="color:{{arch.textcolor}};">{{arch.summary}}</p>
                 <!-- Main Summary Text -->
@@ -57,7 +57,7 @@ subnav:
                 <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">CAPABILITIES</h4>
                 <!-- Loop start here -->
                 {% for cap in arch.caps %}
-                <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
+                <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};">
                     <div class="usa-summary-box__body">
                         <div class="usa-summary-box__text">
                             <!-- Capabilities Accordion Loop -->
@@ -66,14 +66,14 @@ subnav:
                                     <button
                                     type="button"
                                     class="usa-accordion__button"
-                                    style="background-color:{{arch.color}};color:{{arch.textcolor}};"
+                                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
                                     aria-expanded="false"
                                     aria-controls="b{{forloop.index}}"
                                     >
                                     {{cap.name}}
                                     </button>
                                 </h4>
-                                <div id="b{{forloop.index}}" class="usa-accordion__content usa-prose" style="background-color:{{arch.color}};color:{{arch.textcolor}};">
+                                <div id="b{{forloop.index}}" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};">
                                     <p>{{cap.detail}}</p>
                                 </div>
                             </div>
@@ -82,13 +82,13 @@ subnav:
                     </div>
                 </div>
                 {% endfor %}
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;">STANDARDS</h4>
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;">STANDARDS</h4>
              <!-- First Accordion Summary Box End -->
             </div>
             <!-- Standard Section -->
             <p>
                 {% for standard in arch.standards %}
-                        <span class="usa-tag radius-pill display-inline-block"  style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;"> {{standard}} </span>
+                        <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;"> {{standard}} </span>
                 {% endfor %}
             </p>
             <!-- Standards Section End -->
