@@ -37,18 +37,18 @@ subnav:
     <div class="usa-summary-box__body">
         <!-- First Accordion -->      
         <div class="usa-accordion">
-            <h2 class="usa-accordion__heading">
+            <h4 class="usa-accordion__heading">
                 <button
                 id="usa-accordion__button.solid-triangle-icon"
                 type="button"
                 class="usa-accordion__button"
-                style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
+                style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};font-size:24pt;"
                 aria-expanded="false"
                 aria-controls="a1"
                 >
                  {{arch.label}}
                 </button>
-            </h2>
+            </h4>
             <div id="a1" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};">
                 <!-- Main Summary Text -->
                 <p style="color:{{arch.textcolor}};">{{arch.summary}}</p>
