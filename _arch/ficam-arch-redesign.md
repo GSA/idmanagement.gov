@@ -87,7 +87,7 @@ subnav:
              <!-- First Accordion Summary Box End -->
             </div>
             <!-- Standard Section -->
-            <p style="margin-top: 2px;">
+            <p style="margin-top: 2px;padding-left: 3px;">
                 {% for standard in arch.standards %}
                         <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;"> {{standard}} </span>
                 {% endfor %}
