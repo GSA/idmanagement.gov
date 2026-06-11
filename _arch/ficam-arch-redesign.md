@@ -54,7 +54,7 @@ subnav:
             <div id="a1" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};">
                 <!-- Main Summary Text -->
                 <p style="color:{{arch.textcolor}};">{{arch.summary}}</p>
-                <!-- Main Summary Text -->
+                <!-- Main Summary Text --> 
                 <!-- First Accordion Summary Box -->
                 <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">CAPABILITIES</h4>
                 <!-- Loop start here -->
