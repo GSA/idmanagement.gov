@@ -12,61 +12,26 @@ subnav:
 #     href: 
 
 ---
-
-
-<!-- Governance   -->
-<!-- {% for arch in site.data.ficam-arch %}
-{% if arch.id == "gov" %} -->
+<!-- Main Summary Box -->
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
     <div class="usa-summary-box__body">
-
-
-
-    </div>
-</div>
-        
-        <!-- Boxes -->
-        <!-- <h4 class="usa-summary-box__heading">Capabilities</h4>
-        {% for cap in arch.caps %}
-        <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple style="border-color:{{arch.border}};">
+        <!-- First Accordion -->      
+        <div class="usa-accordion">
             <h4 class="usa-accordion__heading">
                 <button
                 type="button"
-                class="usa-accordion__button radius-lg"  
-                style="background-color:{{arch.color}};border-color:{{arch.border}};"
-                aria-expanded="false"
-                aria-controls="a-{{forloop.index}}"
+                class="usa-accordion__button"
+                aria-expanded="true"
+                aria-controls="a1"
                 >
-                {{cap.name}}
+                Governance
                 </button>
             </h4>
-            <div 
-            id="a-{{forloop.index}}"
-            style="background-color:{{arch.color}};border-color:{{arch.border}};"
-            class="usa-accordion__content usa-prose radius-lg">
-                <p>
-                    {{cap.detail}}
-                </p>
+            <div id="a1" class="usa-accordion__content usa-prose">
+                <p>Governance Summary Text</p>
             </div>
         </div>
-       {% endfor %}
-       <br />
-        <h4 class="usa-summary-box__heading">Standards</h4>             
-            <p>
-            {% for standard in arch.standards %}
-                    <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
-            {% endfor %}
-            </p>
-        <br />
-        <h4 class="usa-summary-box__heading">Document Section</h4>
-          <p>
-            {% for doc in arch.docs %}
-                    <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
-            {% endfor %}
-        </p>
-        
+        <!-- First Accordion End -->
     </div>
 </div>
-{% endif %}
-{% endfor %} -->
-
+<!-- Main Summary Box End -->
