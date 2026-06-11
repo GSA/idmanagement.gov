@@ -12,7 +12,23 @@ subnav:
 #     href: 
 
 ---
+<style>
+/* Custom class matching the exact structural vectors of the USWDS design system */
+.usa-accordion__button.solid-triangle-icon {
+  padding-right: 3rem;
+  background-position: right 1.25rem center;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  
+  /* Render the solid down triangle caret */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%231b1b1b'><path d='M7 10l5 5 5-5z'/></svg>") !important;
+}
 
+/* Swap to the solid up triangle caret when expanded */
+.usa-accordion__button.solid-triangle-icon[aria-expanded="true"] {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%231b1b1b'><path d='M7 14l5-5 5 5z'/></svg>") !important;
+}
+</style>
 {% for arch in site.data.ficam-arch %}
 {% if arch.id == "gov" %}
 <!-- Main Summary Box -->
