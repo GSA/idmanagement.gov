@@ -24,7 +24,7 @@
   label: "Federation"
   bgcolor: "#9FE1CB" #teal
   border: "#0F6E56"
-  textcolor: "#444441"
+  textcolor: "#085041"
   type: arch
   summary: "Trust frameworks and protocols enabling cross-agency and partner identity interoperability"
   caps:
@@ -47,7 +47,7 @@
   label: "Post-quantum cryptography"
   bgcolor: "#CECBF6" #purple
   border: "#534AB7"
-  textcolor: "#444441"
+  textcolor: "#3C3489"
   type: arch
   summary: "Migration from quantum-vulnerable algorithms to NIST-standardized PQC across all ICAM systems"
   caps:
@@ -72,7 +72,7 @@
   label: "Verifiable credentials"
   bgcolor: "#B5D4F4" #blue
   border: "#185FA5"
-  textcolor: "#444441"
+  textcolor: "#0C447C"
   type: arch
   summary: "W3C-standardized cryptographically signed claims enabling portable, privacy-preserving, decentralized identity"
   caps:
@@ -98,7 +98,7 @@
   label: "Identity management"
   bgcolor: "#CECBF6" #purple
   border: "#534AB7"
-  textcolor: "#444441"
+  textcolor: "#3C3489"
   type: practice
   summary: "Collect, verify, and manage attributes to establish and maintain enterprise identities for people and systems"
   caps:
@@ -125,7 +125,7 @@
   label: "Credential management"
   bgcolor: "#F5C4B3" #coral
   border: "#993C1D"
-  textcolor: "#444441"
+  textcolor: "#712B13"
   type: practice
   summary: "Issue, manage, and revoke credentials bound to verified enterprise identities across all credential types"
   caps:
@@ -152,7 +152,7 @@
   label: "Access management"
   bgcolor: "#B5D4F4" #blue
   border: "#185FA5"
-  textcolor: "#444441"
+  textcolor: "#0C447C"
   type: practice
   summary: "Authenticate identities and enforce authorization policies for logical and physical access to federal resources"
   caps: 
