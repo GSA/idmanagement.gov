@@ -223,7 +223,6 @@ subnav:
   .c-pink   { --bg: var(--pink-bg);   --bd: var(--pink-bd);   --tx: var(--pink-tx);   }
 </style>
 
-<h1>FICAM Architecture</h1>
 <p class="subtitle">Federal Identity, Credential, and Access Management · Tap any section to expand</p>
 
 <div id="app"></div>
