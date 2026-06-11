@@ -28,8 +28,11 @@ subnav:
                 </button>
             </h4>
             <div id="a1" class="usa-accordion__content usa-prose">
+                <!-- Main Summary Text -->
+                <p>Main Summary Text Here...</p>
+                <!-- Main Summary Text -->
                 <!-- First Accordion Summary Box -->
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information">Capabilities</h4>
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information">CAPABILITIES</h4>
                 <!-- Loop start here -->
                 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
                     <div class="usa-summary-box__body">
@@ -60,6 +63,9 @@ subnav:
                     </div>
                 </div>
              <!-- First Accordion Summary Box End -->
+             <!-- Standard Section -->
+             <h4 class="usa-summary-box__heading" id="summary-box-key-information">STANDARDS</h4>
+             <!-- Standards Section End -->
             </div>
         </div>
         <!-- First Accordion End -->
