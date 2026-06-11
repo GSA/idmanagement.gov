@@ -1,7 +1,7 @@
 # arch |===================================
 - id: "gov"
   label: "Governance"
-  bgcolor: "#D3D1C7" #gray
+  bgcolor: "#F1EFE8" #gray
   border: "#888780"
   textcolor: "#444441"
   type: arch
@@ -22,7 +22,7 @@
 
 - id: "fed"
   label: "Federation"
-  bgcolor: "#9FE1CB" #teal
+  bgcolor: "#E1F5EE" #teal
   border: "#0F6E56"
   textcolor: "#085041"
   type: arch
@@ -45,7 +45,7 @@
 
 - id: "pqc"
   label: "Post-quantum cryptography"
-  bgcolor: "#CECBF6" #purple
+  bgcolor: "#EEEDFE" #purple
   border: "#534AB7"
   textcolor: "#3C3489"
   type: arch
@@ -70,7 +70,7 @@
 
 - id: "vc"
   label: "Verifiable credentials"
-  bgcolor: "#B5D4F4" #blue
+  bgcolor: "#E6F1FB" #blue
   border: "#185FA5"
   textcolor: "#0C447C"
   type: arch
@@ -96,7 +96,7 @@
 # practice |===================================
 - id: "identity"
   label: "Identity management"
-  bgcolor: "#CECBF6" #purple
+  bgcolor: "#EEEDFE" #purple
   border: "#534AB7"
   textcolor: "#3C3489"
   type: practice
@@ -123,7 +123,7 @@
   
 - id: "credential"
   label: "Credential management"
-  bgcolor: "#F5C4B3" #coral
+  bgcolor: "#FAECE7" #coral
   border: "#993C1D"
   textcolor: "#712B13"
   type: practice
@@ -150,7 +150,7 @@
 
 - id: "access"
   label: "Access management"
-  bgcolor: "#B5D4F4" #blue
+  bgcolor: "#E6F1FB" #blue
   border: "#185FA5"
   textcolor: "#0C447C"
   type: practice
