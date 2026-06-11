@@ -94,7 +94,7 @@ subnav:
             </p>
             <!-- Standards Section End -->
                 <!-- Start of Docs section -->
-            <!-- <h4 class="usa-summary-box__heading">DOCUMENT SECTION</h4>
+            <!-- <h4 class="usa-summary-box__heading" style="color:{{arch.textcolor}};">DOCUMENT SECTION</h4>
             <p>
                 {% for doc in arch.docs %}
                         <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;> {{doc}} </span>
