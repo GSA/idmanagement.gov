@@ -38,8 +38,9 @@ subnav:
         <div class="usa-accordion">
             <h4 class="usa-accordion__heading">
                 <button
+                id="usa-accordion__button.solid-triangle-icon"
                 type="button"
-                class="usa-accordion__button usa-accordion__button.solid-triangle-icon"
+                class="usa-accordion__button"
                 style="background-color:{{arch.color}};"
                 aria-expanded="false"
                 aria-controls="a1"
