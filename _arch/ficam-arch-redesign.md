@@ -64,9 +64,10 @@ subnav:
                     </div>
                 </div>
                 {% endfor %}
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information">STANDARDS</h4>
+                
              <!-- First Accordion Summary Box End -->
             </div>
+            <h4 class="usa-summary-box__heading" id="summary-box-key-information">STANDARDS</h4>
         </div>
         <!-- First Accordion End -->
         <!-- Standard Section -->
