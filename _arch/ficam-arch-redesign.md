@@ -12,6 +12,9 @@ subnav:
 #     href: 
 
 ---
+
+{% for arch in site.data.ficam-arch %}
+{% if arch.id == "gov" %}
 <!-- Main Summary Box -->
 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.color}};border-color:{{arch.border}};">
     <div class="usa-summary-box__body">
@@ -24,16 +27,17 @@ subnav:
                 aria-expanded="false"
                 aria-controls="a1"
                 >
-                Governance
+                 {{arch.label}}
                 </button>
             </h4>
             <div id="a1" class="usa-accordion__content usa-prose">
                 <!-- Main Summary Text -->
-                <p>Main Summary Text Here...</p>
+                <p>{{arch.summary}}</p>
                 <!-- Main Summary Text -->
                 <!-- First Accordion Summary Box -->
                 <h4 class="usa-summary-box__heading" id="summary-box-key-information">CAPABILITIES</h4>
                 <!-- Loop start here -->
+                {% for cap in arch.caps %}
                 <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information">
                     <div class="usa-summary-box__body">
                         <div class="usa-summary-box__text">
@@ -46,29 +50,40 @@ subnav:
                                     aria-expanded="false"
                                     aria-controls="b1"
                                     >
-                                    First Amendment
+                                    {{cap.name}}
                                     </button>
                                 </h4>
                                 <div id="b1" class="usa-accordion__content usa-prose">
-                                    <p>
-                                    Congress shall make no law respecting an establishment of religion, or
-                                    prohibiting the free exercise thereof; or abridging the freedom of speech,
-                                    or of the press; or the right of the people peaceably to assemble, and to
-                                    petition the Government for a redress of grievances.
-                                    </p>
+                                    <p>{{cap.detail}}</p>
                                 </div>
                             </div>
                             <!-- Capabilities Accordion Loop End -->
                         </div>
                     </div>
                 </div>
+                {% endfor %}
              <!-- First Accordion Summary Box End -->
              <!-- Standard Section -->
              <h4 class="usa-summary-box__heading" id="summary-box-key-information">STANDARDS</h4>
+                <p>
+                    {% for standard in arch.standards %}
+                            <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
+                    {% endfor %}
+                </p>
              <!-- Standards Section End -->
+             <!-- Start of Docs section -->
+            <h4 class="usa-summary-box__heading">DOCUMENT SECTION</h4>
+            <p>
+                {% for doc in arch.docs %}
+                        <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
+                {% endfor %}
+            </p>
+            <!-- End of docs section -->
             </div>
         </div>
         <!-- First Accordion End -->
     </div>
 </div>
 <!-- Main Summary Box End -->
+{% endif %}
+{% endfor %}
