@@ -27,6 +27,7 @@ subnav:
 /* Swap to the solid up triangle caret when expanded */
 .usa-accordion__button.solid-triangle-icon[aria-expanded="true"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%231b1b1b'><path d='M7 14l5-5 5 5z'/></svg>") !important;
+  color: #c0c0c0;
 }
 </style>
 {% for arch in site.data.ficam-arch %}
@@ -81,13 +82,13 @@ subnav:
                     </div>
                 </div>
                 {% endfor %}
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">STANDARDS</h4>
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="background-color:#c0c0c0;border: 1px solid #818181;color:#818181;">STANDARDS</h4>
              <!-- First Accordion Summary Box End -->
             </div>
             <!-- Standard Section -->
             <p>
                 {% for standard in arch.standards %}
-                        <span class="usa-tag radius-pill display-inline-block"  style="color:{{arch.textcolor}};"> {{standard}} </span>
+                        <span class="usa-tag radius-pill display-inline-block"  style="background-color:#c0c0c0;border: 1px solid #818181;color:#818181;"> {{standard}} </span>
                 {% endfor %}
             </p>
             <!-- Standards Section End -->
