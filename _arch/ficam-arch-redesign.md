@@ -64,27 +64,26 @@ subnav:
                     </div>
                 </div>
                 {% endfor %}
-                
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information">STANDARDS</h4>
              <!-- First Accordion Summary Box End -->
             </div>
-            <h4 class="usa-summary-box__heading" id="summary-box-key-information">STANDARDS</h4>
+            <!-- Standard Section -->
+            <p>
+                {% for standard in arch.standards %}
+                        <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
+                {% endfor %}
+            </p>
+            <!-- Standards Section End -->
+                <!-- Start of Docs section -->
+            <!-- <h4 class="usa-summary-box__heading">DOCUMENT SECTION</h4>
+            <p>
+                {% for doc in arch.docs %}
+                        <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
+                {% endfor %}
+            </p> -->
+            <!-- End of docs section -->
         </div>
         <!-- First Accordion End -->
-        <!-- Standard Section -->
-        <p>
-            {% for standard in arch.standards %}
-                    <span class="usa-tag radius-pill display-inline-block"> {{standard}} </span>
-            {% endfor %}
-        </p>
-        <!-- Standards Section End -->
-            <!-- Start of Docs section -->
-        <!-- <h4 class="usa-summary-box__heading">DOCUMENT SECTION</h4>
-        <p>
-            {% for doc in arch.docs %}
-                    <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
-            {% endfor %}
-        </p> -->
-        <!-- End of docs section -->
     <!-- Main Summary Box End -->
     </div>
 </div>
