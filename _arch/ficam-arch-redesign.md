@@ -352,3 +352,259 @@ subnav:
 </div>
 {% endif %}
 {% endfor %}
+
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="tablet:grid-col">
+    
+    <!-- Identity management -->
+    {% for arch in site.data.ficam-arch %}
+    {% if arch.id == "identity" %}
+    <!-- Main Summary Box -->
+    <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};padding:10px;">
+        <div class="usa-summary-box__body">
+            <!-- First Accordion -->      
+            <div class="usa-accordion">
+                <h4 class="usa-accordion__heading">
+                    <button
+                    id="usa-accordion__button.solid-triangle-icon"
+                    type="button"
+                    class="usa-accordion__button"
+                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};font-size:24pt;margin-bottom: 0px;padding-bottom: 2px;padding-left: 0px;"
+                    aria-expanded="false"
+                    aria-controls="i1"
+                    >
+                    {{arch.label}}
+                    </button>
+                </h4>
+                <div id="i1" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};">
+                    <!-- Main Summary Text -->
+                    <p style="color:{{arch.textcolor}};">{{arch.summary}}</p>
+                    <!-- Main Summary Text -->
+                    <!-- First Accordion Summary Box -->
+                    <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">CAPABILITIES</h4>
+                    <!-- Loop start here -->
+                    {% for cap in arch.caps %}
+                    <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};">
+                        <div class="usa-summary-box__body">
+                            <div class="usa-summary-box__text">
+                                <!-- Capabilities Accordion Loop -->
+                                <div class="usa-accordion">
+                                    <h4 class="usa-accordion__heading">
+                                        <button
+                                        type="button"
+                                        class="usa-accordion__button"
+                                        style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
+                                        aria-expanded="false"
+                                        aria-controls="j{{forloop.index}}"
+                                        >
+                                        {{cap.name}}
+                                        </button>
+                                    </h4>
+                                    <div id="j{{forloop.index}}" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};">
+                                        <p>{{cap.detail}}</p>
+                                    </div>
+                                </div>
+                                <!-- Capabilities Accordion Loop End -->
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <br>
+                    <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">STANDARDS</h4>
+                <!-- First Accordion Summary Box End -->
+                </div>
+                <!-- Standard Section -->
+                <p style="margin-top: 2px;padding-left: 3px;">
+                    {% for standard in arch.standards %}
+                            <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;"> {{standard}} </span>
+                    {% endfor %}
+                </p>
+                <!-- Standards Section End -->
+                    <!-- Start of Docs section -->
+                <!-- <h4 class="usa-summary-box__heading" style="color:{{arch.textcolor}};">DOCUMENT SECTION</h4>
+                <p>
+                    {% for docs in arch.docs %}
+                            <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;> {{docs}} </span>
+                    {% endfor %}
+                </p> -->
+                <!-- End of docs section -->
+            </div>
+            <!-- First Accordion End -->
+        <!-- Main Summary Box End -->
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}    
+    
+    </div>
+    <div class="tablet:grid-col">
+
+    <!-- Credential management -->
+    {% for arch in site.data.ficam-arch %}
+    {% if arch.id == "credential" %}
+    <!-- Main Summary Box -->
+    <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};padding:10px;">
+        <div class="usa-summary-box__body">
+            <!-- First Accordion -->      
+            <div class="usa-accordion">
+                <h4 class="usa-accordion__heading">
+                    <button
+                    id="usa-accordion__button.solid-triangle-icon"
+                    type="button"
+                    class="usa-accordion__button"
+                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};font-size:24pt;margin-bottom: 0px;padding-bottom: 2px;padding-left: 0px;"
+                    aria-expanded="false"
+                    aria-controls="k1"
+                    >
+                    {{arch.label}}
+                    </button>
+                </h4>
+                <div id="k1" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};">
+                    <!-- Main Summary Text -->
+                    <p style="color:{{arch.textcolor}};">{{arch.summary}}</p>
+                    <!-- Main Summary Text -->
+                    <!-- First Accordion Summary Box -->
+                    <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">CAPABILITIES</h4>
+                    <!-- Loop start here -->
+                    {% for cap in arch.caps %}
+                    <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};">
+                        <div class="usa-summary-box__body">
+                            <div class="usa-summary-box__text">
+                                <!-- Capabilities Accordion Loop -->
+                                <div class="usa-accordion">
+                                    <h4 class="usa-accordion__heading">
+                                        <button
+                                        type="button"
+                                        class="usa-accordion__button"
+                                        style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
+                                        aria-expanded="false"
+                                        aria-controls="l{{forloop.index}}"
+                                        >
+                                        {{cap.name}}
+                                        </button>
+                                    </h4>
+                                    <div id="l{{forloop.index}}" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};">
+                                        <p>{{cap.detail}}</p>
+                                    </div>
+                                </div>
+                                <!-- Capabilities Accordion Loop End -->
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <br>
+                    <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">STANDARDS</h4>
+                <!-- First Accordion Summary Box End -->
+                </div>
+                <!-- Standard Section -->
+                <p style="margin-top: 2px;padding-left: 3px;">
+                    {% for standard in arch.standards %}
+                            <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;"> {{standard}} </span>
+                    {% endfor %}
+                </p>
+                <!-- Standards Section End -->
+                    <!-- Start of Docs section -->
+                <!-- <h4 class="usa-summary-box__heading" style="color:{{arch.textcolor}};">DOCUMENT SECTION</h4>
+                <p>
+                    {% for docs in arch.docs %}
+                            <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;> {{docs}} </span>
+                    {% endfor %}
+                </p> -->
+                <!-- End of docs section -->
+            </div>
+            <!-- First Accordion End -->
+        <!-- Main Summary Box End -->
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}     
+    
+    </div>
+    <div class="tablet:grid-col">
+    
+
+    <!-- Access management -->
+    {% for arch in site.data.ficam-arch %}
+    {% if arch.id == "access" %}
+    <!-- Main Summary Box -->
+    <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};padding:10px;">
+        <div class="usa-summary-box__body">
+            <!-- First Accordion -->      
+            <div class="usa-accordion">
+                <h4 class="usa-accordion__heading">
+                    <button
+                    id="usa-accordion__button.solid-triangle-icon"
+                    type="button"
+                    class="usa-accordion__button"
+                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};font-size:24pt;margin-bottom: 0px;padding-bottom: 2px;padding-left: 0px;"
+                    aria-expanded="false"
+                    aria-controls="m1"
+                    >
+                    {{arch.label}}
+                    </button>
+                </h4>
+                <div id="m1" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};">
+                    <!-- Main Summary Text -->
+                    <p style="color:{{arch.textcolor}};">{{arch.summary}}</p>
+                    <!-- Main Summary Text -->
+                    <!-- First Accordion Summary Box -->
+                    <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">CAPABILITIES</h4>
+                    <!-- Loop start here -->
+                    {% for cap in arch.caps %}
+                    <div class="usa-summary-box" role="region" aria-labelledby="summary-box-key-information" style="background-color:{{arch.bgcolor}};border-color:{{arch.border}};">
+                        <div class="usa-summary-box__body">
+                            <div class="usa-summary-box__text">
+                                <!-- Capabilities Accordion Loop -->
+                                <div class="usa-accordion">
+                                    <h4 class="usa-accordion__heading">
+                                        <button
+                                        type="button"
+                                        class="usa-accordion__button"
+                                        style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
+                                        aria-expanded="false"
+                                        aria-controls="n{{forloop.index}}"
+                                        >
+                                        {{cap.name}}
+                                        </button>
+                                    </h4>
+                                    <div id="n{{forloop.index}}" class="usa-accordion__content usa-prose" style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};">
+                                        <p>{{cap.detail}}</p>
+                                    </div>
+                                </div>
+                                <!-- Capabilities Accordion Loop End -->
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <br>
+                    <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};">STANDARDS</h4>
+                <!-- First Accordion Summary Box End -->
+                </div>
+                <!-- Standard Section -->
+                <p style="margin-top: 2px;padding-left: 3px;">
+                    {% for standard in arch.standards %}
+                            <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;"> {{standard}} </span>
+                    {% endfor %}
+                </p>
+                <!-- Standards Section End -->
+                    <!-- Start of Docs section -->
+                <!-- <h4 class="usa-summary-box__heading" style="color:{{arch.textcolor}};">DOCUMENT SECTION</h4>
+                <p>
+                    {% for docs in arch.docs %}
+                            <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;> {{docs}} </span>
+                    {% endfor %}
+                </p> -->
+                <!-- End of docs section -->
+            </div>
+            <!-- First Accordion End -->
+        <!-- Main Summary Box End -->
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}     
+    
+    
+    </div>
+  </div>
+</div>
