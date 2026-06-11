@@ -42,7 +42,7 @@ subnav:
                 id="usa-accordion__button.solid-triangle-icon"
                 type="button"
                 class="usa-accordion__button"
-                style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};font-size:24pt;"
+                style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};font-size:24pt;margin-bottom: 1px;"
                 aria-expanded="false"
                 aria-controls="a1"
                 >
@@ -66,7 +66,7 @@ subnav:
                                     <button
                                     type="button"
                                     class="usa-accordion__button"
-                                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};margin-bottom:3px;"
+                                    style="background-color:{{arch.bgcolor}};color:{{arch.textcolor}};"
                                     aria-expanded="false"
                                     aria-controls="b{{forloop.index}}"
                                     >
