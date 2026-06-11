@@ -82,7 +82,7 @@ subnav:
                     </div>
                 </div>
                 {% endfor %}
-                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;">STANDARDS</h4>
+                <h4 class="usa-summary-box__heading" id="summary-box-key-information" style="color:{{arch.textcolor}};>STANDARDS</h4>
              <!-- First Accordion Summary Box End -->
             </div>
             <!-- Standard Section -->
@@ -96,7 +96,7 @@ subnav:
             <!-- <h4 class="usa-summary-box__heading">DOCUMENT SECTION</h4>
             <p>
                 {% for doc in arch.docs %}
-                        <span class="usa-tag radius-pill display-inline-block"> {{doc}} </span>
+                        <span class="usa-tag radius-pill display-inline-block" style="background-color: #dfdfdf;border: 1px solid #818181;color:#818181;margin-top:3px;margin-bottom:3px;> {{doc}} </span>
                 {% endfor %}
             </p> -->
             <!-- End of docs section -->
