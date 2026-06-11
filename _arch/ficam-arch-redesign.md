@@ -30,7 +30,7 @@ subnav:
                  {{arch.label}}
                 </button>
             </h4>
-            <div id="a1" class="usa-accordion__content usa-prose">
+            <div id="a1" class="usa-accordion__content usa-prose" style="background-color:{{arch.color}};">
                 <!-- Main Summary Text -->
                 <p>{{arch.summary}}</p>
                 <!-- Main Summary Text -->
