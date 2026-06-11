@@ -44,12 +44,12 @@ subnav:
                                     type="button"
                                     class="usa-accordion__button"
                                     aria-expanded="true"
-                                    aria-controls="a1"
+                                    aria-controls="b1"
                                     >
                                     First Amendment
                                     </button>
                                 </h4>
-                                <div id="a1" class="usa-accordion__content usa-prose">
+                                <div id="b1" class="usa-accordion__content usa-prose">
                                     <p>
                                     Congress shall make no law respecting an establishment of religion, or
                                     prohibiting the free exercise thereof; or abridging the freedom of speech,
