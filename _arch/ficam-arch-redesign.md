@@ -75,13 +75,15 @@ subnav:
   }
 
   .section-title {
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 16px;
     font-weight: 600;
     color: var(--tx);
   }
 
   .section-summary {
-    font-size: 11px;
+    /* font-size: 11px; */
+    font-size: 14px;
     color: var(--bd);
     margin-top: 1px;
   }
