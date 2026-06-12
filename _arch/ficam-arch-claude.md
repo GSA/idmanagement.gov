@@ -2,8 +2,8 @@
 
 layout: page
 sidenav: arch
-title:  FICAM Arch - Claude
-permalink: /claude/
+title:  FICAM Arch - Demo
+permalink: /development/
 sidenav: arch
 sticky_sidenav: true
 

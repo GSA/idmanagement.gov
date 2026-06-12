@@ -3,7 +3,7 @@
 layout: page
 sidenav: arch
 title:  FICAM Arch - Redesign
-permalink: /development/
+# permalink: /development/
 sidenav: arch
 sticky_sidenav: true
 
