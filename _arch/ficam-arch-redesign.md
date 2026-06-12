@@ -162,14 +162,16 @@ subnav:
   }
 
   .cap-name {
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 14px;
     color: var(--tx);
   }
 
   .cap-row.open .cap-name { font-weight: 600; }
 
   .cap-chevron {
-    font-size: 9px;
+    /* fo0nt-size: 9px; */
+    font-size: 10px;
     color: var(--bd);
     flex-shrink: 0;
     margin-left: 6px;
@@ -177,7 +179,8 @@ subnav:
   }
 
   .cap-detail {
-    font-size: 11px;
+    /* font-size: 11px; */
+    font-size: 13px;
     color: var(--tx);
     line-height: 1.5;
     opacity: .9;
