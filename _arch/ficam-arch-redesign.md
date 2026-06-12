@@ -76,7 +76,7 @@ subnav:
 
   .section-title {
     /* font-size: 13px; */
-    font-size: 18px;
+    font-size: 17px; /* add font size to keep bottom div box titles from wrapping */
     font-weight: 600;
     color: var(--tx);
   }
