@@ -130,7 +130,8 @@ subnav:
   .section.open .tags-row { display: none; }
 
   .row-label {
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .06em;
