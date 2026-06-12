@@ -104,7 +104,8 @@ subnav:
 
   .tag {
     display: inline-block;
-    font-size: 11px;
+    /* font-size: 11px; */
+    font-size: 14px;
     line-height: 1;
     padding: 3px 9px;
     border-radius: 20px;
