@@ -17,7 +17,8 @@ subnav:
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --gray-bg: #F1EFE8; --gray-bd: #888780; --gray-tx: #444441;
+    /* --gray-bg: #F1EFE8; --gray-bd: #888780; --gray-tx: #444441; */
+    --gray-bg: #F1EFE8; --gray-bd: ##6e6d66; --gray-tx: #444441; /* ANDI suggested color for --gray-bd */
     --teal-bg: #E1F5EE; --teal-bd: #0F6E56; --teal-tx: #085041;
     --purple-bg: #EEEDFE; --purple-bd: #534AB7; --purple-tx: #3C3489;
     --blue-bg: #E6F1FB; --blue-bd: #185FA5; --blue-tx: #0C447C;
@@ -30,15 +31,15 @@ subnav:
   }
 
 
-
-  body {
+  /* disabled so existing government style succeed. */
+  /* body {
     font-family: var(--font);
-    /* background: #f8f7f3; */
+    background: #f8f7f3; 
     color: #222;
     padding: 24px 16px 48px;
     max-width: 960px;
     margin: 0 auto;
-  }
+  } */
 
   h1 {
     font-size: 20px;
@@ -212,7 +213,8 @@ subnav:
 
   .hint {
     font-size: 11px;
-    color: #999;
+    /* color: #999; */
+    color: #767676; /*ANDI suggested color */
     text-align: center;
     margin-top: 6px;
   }
