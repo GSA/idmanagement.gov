@@ -48,7 +48,8 @@ subnav:
   }
 
   .subtitle {
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 16px;
     color: var(--gray-bd);
     margin-bottom: 20px;
   }
