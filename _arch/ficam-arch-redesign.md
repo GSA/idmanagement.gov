@@ -12,7 +12,7 @@ subnav:
 #     href: 
 
 ---
-<!-- From Claude Code per Babur -->
+<!-- From Claude Code via Babur -->
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
