@@ -351,7 +351,7 @@ const ARCH = {
         { name: "FIDO2 authentication", detail: "WebAuthn relying party integration; CTAP2 authenticator protocol; origin-scoped credentials prevent credential phishing; primary mechanism for OMB M-22-09 phishing-resistant MFA compliance." },
         { name: "PQC-secured channels", detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions." },
         { name: "VC-based authorization", detail: "Holder presents VC at resource server; verifier validates issuer signature offline; fine-grained ABAC using structured entitlement claims; no real-time issuer query required for access decision." },
-        { name: "Digital services / SSO", detail: "Agency identity provider (IdP) <b>issuing SAML</b> assertions or OIDC tokens; max.gov for inter-agency SSO; session management; MFA enforcement at IdP; step-up authentication for sensitive transactions." },
+        { name: "Digital services / SSO", detail: "Agency identity provider (IdP) issuing SAML assertions or OIDC tokens; max.gov for inter-agency SSO; session management; MFA enforcement at IdP; step-up authentication for sensitive transactions." },
       ],
       standards: ["NIST SP 800-63B","NIST SP 800-116r1","FIDO2 / WebAuthn W3C","NIST FIPS 203","OMB M-22-09","OID4VP","SAML 2.0","OIDC / OAuth 2.0"],
       docs: ["fido2","mpiv","pqc","vc"],
