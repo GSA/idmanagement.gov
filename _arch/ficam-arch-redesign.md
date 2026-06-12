@@ -211,7 +211,7 @@ subnav:
   }
 
   .hint {
-    font-size: 11px;
+    font-size: 14px;
     /* color: #999; */
     color: #767676; /*ANDI suggested color */
     text-align: center;
