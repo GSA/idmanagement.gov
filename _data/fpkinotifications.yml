@@ -32,6 +32,36 @@
 # ee_ocsp_uri:
 #
 
+- notice_date: June 15, 2026
+  change_type: Intent to issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a new certificate to the XTec NFI SSP Root CA 1 between 06/29/2026 and 07/06/2026
+  contact:  fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=XTec NFI SSP Root CA 1, OU=Certification Authorities, O=XTec Incorporated, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.xca.xpki.com/AIA/IssuedCertsByXTec_NFI_SSP_Root_CA_1.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: June 15, 2026
+  change_type: CA Certificate Issuance
+  system: Entrust Managed Services Root CA
+  change_description: The Entrust Managed Services Root CA issued a new certificate to the HHS FPKI Intermediate CA E1 on 01/08/2026. The key update was completed June 2026.
+  contact: support at entrust dot com
+  ca_certificate_hash: 07B025B237400A87182B30D6233C7A6C6A472D9D
+  ca_certificate_issuer: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  ca_certificate_subject: CN=HHS-FPKI-Intermediate-CA-E1, OU=Certification Authorities, OU=HHS, O=U.S. Government, C=US 
+  cdp_uri: http://rootweb.managed.entrust.com/CRLs/EMSRootCA4.crl
+  aia_uri: http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.managed.entrust.com/OCSP/EMSRootCAResponder
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+  
 - notice_date: March 2, 2026
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA-G3
