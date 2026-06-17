@@ -1,0 +1,27 @@
+# Document section references for FICAM architecture pages
+# Used in section metadata to link to relevant documentation
+
+mdl:
+  label: "mDL"
+  ramp: "amber"
+  url: "#mdl"
+
+fido2:
+  label: "FIDO2"
+  ramp: "green"
+  url: "#fido2"
+
+mpiv:
+  label: "mPIV"
+  ramp: "pink"
+  url: "#mpiv"
+
+pqc:
+  label: "PQC"
+  ramp: "purple"
+  url: "#pqc"
+
+vc:
+  label: "VC"
+  ramp: "blue"
+  url: "#vc"

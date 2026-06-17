@@ -1,0 +1,310 @@
+/**
+ * FICAM Section Renderer Module
+ * Modular JavaScript library for rendering FICAM architecture and practice sections
+ * Decouples rendering logic from data, enabling independent section rendering
+ * 
+ * Usage:
+ *   const renderer = new FicamSectionRenderer();
+ *   
+ *   // Render single section
+ *   renderer.renderSection(sectionData, containerId);
+ *   
+ *   // Render multiple sections
+ *   renderer.renderLayers(layersArray, containerId);
+ *   renderer.renderPractices(practicesArray, containerId);
+ *   
+ *   // Render complete page
+ *   renderer.renderPage(layersArray, practicesArray, docsObj, containerId);
+ */
+
+class FicamSectionRenderer {
+  constructor() {
+    this.docConfig = {};
+  }
+
+  /**
+   * Initialize with document configuration
+   * @param {Object} docsConfig - Document references (mdl, fido2, mpiv, pqc, vc)
+   */
+  setDocConfig(docsConfig) {
+    this.docConfig = docsConfig;
+  }
+
+  /**
+   * Create a styled tag element
+   * @param {string} label - Tag label text
+   * @param {string} ramp - Color ramp class (gray, teal, purple, etc.)
+   * @param {string} href - Optional URL for clickable tags
+   * @returns {HTMLElement} Tag element
+   */
+  createTag(label, ramp, href = null) {
+    const el = document.createElement(href ? 'a' : 'span');
+    const opensNewContext = href && /^(https?:)?\/\//.test(href);
+    el.className = `tag c-${ramp}${href ? ' clickable' : ''}`;
+    el.textContent = label + (href ? ' ↗' : '');
+    if (href) {
+      el.href = href;
+      if (opensNewContext) {
+        el.target = '_blank';
+        el.rel = 'noopener';
+      }
+    }
+    return el;
+  }
+
+  /**
+   * Create an expandable capability row
+   * @param {Object} capability - { name, detail }
+   * @param {string} ramp - Color ramp
+   * @returns {HTMLElement} Capability row element
+   */
+  createCapRow(capability, ramp) {
+    const row = document.createElement('div');
+    row.className = `cap-row c-${ramp}`;
+
+    const header = document.createElement('div');
+    header.className = 'cap-header';
+
+    const name = document.createElement('span');
+    name.className = 'cap-name';
+    name.textContent = capability.name;
+
+    const chevron = document.createElement('span');
+    chevron.className = 'cap-chevron';
+    chevron.textContent = '▼';
+
+    const detail = document.createElement('p');
+    detail.className = 'cap-detail';
+    detail.textContent = capability.detail;
+
+    header.appendChild(name);
+    header.appendChild(chevron);
+    row.appendChild(header);
+    row.appendChild(detail);
+
+    row.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = row.classList.toggle('open');
+      chevron.textContent = isOpen ? '▲' : '▼';
+    });
+
+    return row;
+  }
+
+  /**
+   * Create a row label (Capabilities, Standards, Documents)
+   * @param {string} text - Label text
+   * @returns {HTMLElement} Row label element
+   */
+  createRowLabel(text) {
+    const el = document.createElement('div');
+    el.className = 'row-label';
+    el.textContent = text;
+    return el;
+  }
+
+  /**
+   * Render a complete section (layer or practice area)
+   * @param {Object} sectionData - Section data object
+   * @param {boolean} isLayer - Whether this is a layer (affects preview count)
+   * @returns {HTMLElement} Complete section element
+   */
+  renderSection(sectionData, isLayer = false) {
+    const wrap = document.createElement('div');
+    wrap.className = `section c-${sectionData.ramp}`;
+    wrap.style.background = `var(--${sectionData.ramp}-bg)`;
+
+    // Header section
+    const header = document.createElement('div');
+    header.className = 'section-header';
+
+    const left = document.createElement('div');
+    const title = document.createElement('div');
+    title.className = 'section-title';
+    title.textContent = sectionData.label;
+
+    const summary = document.createElement('div');
+    summary.className = 'section-summary';
+    summary.textContent = sectionData.summary;
+
+    left.appendChild(title);
+    left.appendChild(summary);
+
+    const chevron = document.createElement('span');
+    chevron.className = 'chevron';
+    chevron.textContent = '▼';
+
+    header.appendChild(left);
+    header.appendChild(chevron);
+
+    // Preview row (shows capability names before expanding)
+    const preview = document.createElement('div');
+    preview.className = 'tags-row';
+    const maxPreview = isLayer ? 4 : 3;
+    const capabilities = sectionData.capabilities || [];
+
+    capabilities.slice(0, maxPreview).forEach((cap) => {
+      preview.appendChild(this.createTag(cap.name, sectionData.ramp));
+    });
+
+    if (capabilities.length > maxPreview) {
+      const more = document.createElement('span');
+      more.style.cssText = `font-size:11px;color:var(--${sectionData.ramp}-bd);align-self:center;margin:2px 4px`;
+      more.textContent = `+${capabilities.length - maxPreview} more`;
+      preview.appendChild(more);
+    }
+
+    // Body section (hidden until expanded)
+    const body = document.createElement('div');
+    body.className = 'section-body';
+
+    // Capabilities
+    body.appendChild(this.createRowLabel('Capabilities'));
+    capabilities.forEach((cap) => {
+      body.appendChild(this.createCapRow(cap, sectionData.ramp));
+    });
+
+    // Standards
+    body.appendChild(this.createRowLabel('Standards'));
+    const standardsRow = document.createElement('div');
+    standardsRow.className = 'tags-row';
+    standardsRow.style.display = 'flex';
+    (sectionData.standards || []).forEach((std) => {
+      standardsRow.appendChild(this.createTag(std, 'gray'));
+    });
+    body.appendChild(standardsRow);
+
+    // Document links (if any)
+    if (sectionData.documents && sectionData.documents.length > 0) {
+      body.appendChild(this.createRowLabel('Document sections'));
+      const docsRow = document.createElement('div');
+      docsRow.className = 'tags-row';
+      docsRow.style.display = 'flex';
+      sectionData.documents.forEach((docId) => {
+        const docInfo = this.docConfig[docId];
+        if (docInfo) {
+          docsRow.appendChild(
+            this.createTag(docInfo.label, docInfo.ramp, docInfo.url)
+          );
+        }
+      });
+      body.appendChild(docsRow);
+    }
+
+    wrap.appendChild(header);
+    wrap.appendChild(preview);
+    wrap.appendChild(body);
+
+    // Toggle expand/collapse
+    wrap.addEventListener('click', () => {
+      const isOpen = wrap.classList.toggle('open');
+      chevron.textContent = isOpen ? '▲' : '▼';
+    });
+
+    return wrap;
+  }
+
+  /**
+   * Render multiple layers into a container
+   * @param {Array} layers - Array of layer data objects
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderLayers(layers, container) {
+    const cont = this.getContainer(container);
+    const layersDiv = document.createElement('div');
+    layersDiv.className = 'layers';
+
+    layers.forEach((layer) => {
+      layersDiv.appendChild(this.renderSection(layer, true));
+    });
+
+    cont.appendChild(layersDiv);
+  }
+
+  /**
+   * Render multiple practices into a container
+   * @param {Array} practices - Array of practice data objects
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderPractices(practices, container) {
+    const cont = this.getContainer(container);
+    const grid = document.createElement('div');
+    grid.className = 'practice-grid';
+
+    practices.forEach((practice) => {
+      grid.appendChild(this.renderSection(practice, false));
+    });
+
+    cont.appendChild(grid);
+  }
+
+  /**
+   * Render document links bar
+   * @param {Array|Object} docs - Document references (array of IDs or object)
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderDocBar(docs, container) {
+    const cont = this.getContainer(container);
+    const bar = document.createElement('div');
+    bar.className = 'doc-bar';
+
+    const docArray = Array.isArray(docs) ? docs : Object.entries(docs).map(([_, d]) => d);
+
+    docArray.forEach((doc) => {
+      const docId = typeof doc === 'string' ? doc : doc.id;
+      const docInfo = typeof doc === 'string' ? this.docConfig[docId] : doc;
+      if (docInfo) {
+        bar.appendChild(
+          this.createTag(docInfo.label, docInfo.ramp, docInfo.url)
+        );
+      }
+    });
+
+    cont.appendChild(bar);
+  }
+
+  /**
+   * Render hint text
+   * @param {string} hint - Hint text
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderHint(hint, container) {
+    const cont = this.getContainer(container);
+    const hintEl = document.createElement('p');
+    hintEl.className = 'hint';
+    hintEl.textContent = hint;
+    cont.appendChild(hintEl);
+  }
+
+  /**
+   * Render complete page (layers + practices + docs + hint)
+   * @param {Array} layers - Layer data
+   * @param {Array} practices - Practice data
+   * @param {Object} docs - Document config
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderPage(layers, practices, docs, container) {
+    this.setDocConfig(docs);
+    this.renderLayers(layers, container);
+    this.renderPractices(practices, container);
+    this.renderDocBar(docs, container);
+    this.renderHint('Tap a section to expand · tap a capability for detail · tap doc tags to navigate', container);
+  }
+
+  /**
+   * Get container element from ID or element
+   * @param {string|HTMLElement} container
+   * @returns {HTMLElement} Container element
+   */
+  getContainer(container) {
+    if (typeof container === 'string') {
+      return document.getElementById(container);
+    }
+    return container;
+  }
+}
+
+// Export for use in different module systems
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = FicamSectionRenderer;
+}

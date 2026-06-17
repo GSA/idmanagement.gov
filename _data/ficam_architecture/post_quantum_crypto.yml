@@ -1,0 +1,41 @@
+# FICAM Architecture Layer: Post-Quantum Cryptography
+# Migration from quantum-vulnerable algorithms to NIST-standardized PQC across all ICAM systems
+
+id: pqc
+label: "Post-quantum cryptography"
+ramp: purple
+summary: "Migration from quantum-vulnerable algorithms to NIST-standardized PQC across all ICAM systems"
+
+capabilities:
+  - name: "ML-KEM — FIPS 203"
+    detail: "Module-Lattice Key Encapsulation Mechanism; replaces RSA and ECDH for key exchange in TLS sessions, PIV key transport, and encrypted token containers."
+  
+  - name: "ML-DSA — FIPS 204"
+    detail: "Module-Lattice Digital Signature Algorithm; replaces RSA/ECDSA for certificate signing, SAML and OIDC token signing, and VC issuer signatures."
+  
+  - name: "SLH-DSA — FIPS 205"
+    detail: "Stateless hash-based digital signature algorithm; preferred for high-assurance long-lived signing such as root CA certificates and firmware signing."
+  
+  - name: "Crypto-agile PKI"
+    detail: "Algorithm-agile CA infrastructure supporting dual-stack certificate issuance; FPKI PQC migration workstream led by GSA and the FPKI Policy Authority."
+  
+  - name: "Hybrid classical + PQ"
+    detail: "Pairing a classical algorithm with a PQC algorithm in the same certificate or key exchange; maintains backward compatibility with non-PQC-capable relying parties during migration."
+  
+  - name: "Harvest-now-decrypt-later"
+    detail: "Adversaries collecting encrypted ICAM traffic today for future quantum decryption; prioritize TLS migration and long-lived identity records for early remediation per OMB M-23-02."
+  
+  - name: "Cryptographic inventory"
+    detail: "Agency-wide inventory of quantum-vulnerable ICAM systems, credentials, and protocols; mandatory per OMB M-23-02; used to prioritize migration sequencing."
+
+standards:
+  - "NIST FIPS 203"
+  - "NIST FIPS 204"
+  - "NIST FIPS 205"
+  - "NIST SP 800-208"
+  - "OMB M-23-02"
+  - "NSA CNSA 2.0"
+  - "NIST SP 800-131Ar3"
+
+documents:
+  - pqc

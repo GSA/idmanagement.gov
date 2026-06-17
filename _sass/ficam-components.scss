@@ -1,0 +1,241 @@
+// FICAM Architecture Components Stylesheet
+// Extracted from ficam-arch-redesign.md for modular reusability
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color scheme - 8 color ramps */
+  --gray-bg: #F1EFE8; --gray-bd: #6e6d66; --gray-tx: #444441;
+  --teal-bg: #E1F5EE; --teal-bd: #0F6E56; --teal-tx: #085041;
+  --purple-bg: #EEEDFE; --purple-bd: #534AB7; --purple-tx: #3C3489;
+  --blue-bg: #E6F1FB; --blue-bd: #185FA5; --blue-tx: #0C447C;
+  --coral-bg: #FAECE7; --coral-bd: #993C1D; --coral-tx: #712B13;
+  --pink-bg: #FBEAF0; --pink-bd: #993556; --pink-tx: #72243E;
+  --green-bg: #EAF3DE; --green-bd: #3B6D11; --green-tx: #27500A;
+  --amber-bg: #FAEEDA; --amber-bd: #854F0B; --amber-tx: #633806;
+  
+  /* Typography & layout */
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --radius: 8px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--gray-tx);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--gray-bd);
+  margin-bottom: 20px;
+}
+
+/* Layers section */
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+/* Section container (for layers and practice areas) */
+.section {
+  border-radius: var(--radius);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  padding: 10px 14px;
+  background: var(--bg);
+
+  &.open {
+    border-color: var(--bd);
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--tx);
+}
+
+.section-summary {
+  font-size: 14px;
+  color: var(--bd);
+  margin-top: 1px;
+}
+
+.chevron {
+  font-size: 10px;
+  color: var(--bd);
+  flex-shrink: 0;
+  margin-top: 2px;
+  user-select: none;
+}
+
+/* Tags and labels */
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1;
+  padding: 3px 9px;
+  border-radius: 20px;
+  margin: 2px;
+  border: 1px solid var(--bd);
+  background: var(--bg);
+  color: var(--tx);
+  cursor: default;
+  white-space: nowrap;
+
+  &.clickable {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+  }
+}
+
+.section-body {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--bd);
+  display: none;
+}
+
+.section.open .section-body {
+  display: block;
+}
+
+.section.open .tags-row {
+  display: none;
+}
+
+.row-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tx);
+  margin: 10px 0 4px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Capability rows */
+.cap-row {
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.12s;
+
+  &:hover {
+    border-color: var(--bd);
+  }
+
+  &.open {
+    border-color: var(--bd);
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.cap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cap-name {
+  font-size: 14px;
+  color: var(--tx);
+}
+
+.cap-row.open .cap-name {
+  font-weight: 600;
+}
+
+.cap-chevron {
+  font-size: 10px;
+  color: var(--bd);
+  flex-shrink: 0;
+  margin-left: 6px;
+  user-select: none;
+}
+
+.cap-detail {
+  font-size: 13px;
+  color: var(--tx);
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-top: 5px;
+  display: none;
+}
+
+.cap-row.open .cap-detail {
+  display: block;
+}
+
+/* Practice grid layout */
+.practice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Document links bar */
+.doc-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.hint {
+  font-size: 14px;
+  color: #767676;
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* Color ramp classes - maps color schemes to CSS variables */
+.c-gray { --bg: var(--gray-bg); --bd: var(--gray-bd); --tx: var(--gray-tx); }
+.c-teal { --bg: var(--teal-bg); --bd: var(--teal-bd); --tx: var(--teal-tx); }
+.c-purple { --bg: var(--purple-bg); --bd: var(--purple-bd); --tx: var(--purple-tx); }
+.c-blue { --bg: var(--blue-bg); --bd: var(--blue-bd); --tx: var(--blue-tx); }
+.c-coral { --bg: var(--coral-bg); --bd: var(--coral-bd); --tx: var(--coral-tx); }
+.c-amber { --bg: var(--amber-bg); --bd: var(--amber-bd); --tx: var(--amber-tx); }
+.c-green { --bg: var(--green-bg); --bd: var(--green-bd); --tx: var(--green-tx); }
+.c-pink { --bg: var(--pink-bg); --bd: var(--pink-bd); --tx: var(--pink-tx); }

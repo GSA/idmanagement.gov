@@ -1,0 +1,33 @@
+# FICAM Architecture Layer: Governance
+# Enterprise ICAM program oversight, policy alignment, and risk management
+
+id: gov
+label: Governance
+ramp: gray
+summary: "Enterprise ICAM program oversight, policy alignment, and risk management"
+
+capabilities:
+  - name: "Policy & standards"
+    detail: "FISMA, OMB M-19-17, M-22-09, NIST SP 800-63 and 800-53, agency ICAM policy statements, and the FICAM Architecture v3.3."
+  
+  - name: "Identity governance"
+    detail: "Role lifecycle management, periodic access certification campaigns, segregation of duties controls, and entitlement review workflows."
+  
+  - name: "Privileged access mgmt"
+    detail: "Just-in-time access provisioning, session recording and monitoring, least-privilege enforcement, and PAM credential vaulting."
+  
+  - name: "Audit & compliance"
+    detail: "Continuous monitoring of ICAM controls, ICAM metrics reporting, POA&M tracking, and inspector general audit support."
+  
+  - name: "Program management"
+    detail: "ICAM PMO structure, governance board charters, capital planning, and performance measurement under the federal ICAM common baseline."
+
+standards:
+  - "NIST SP 800-53"
+  - "NIST SP 800-63"
+  - "OMB M-19-17"
+  - "OMB M-22-09"
+  - "EO 14028"
+  - "FICAM Architecture v3.3"
+
+documents: []

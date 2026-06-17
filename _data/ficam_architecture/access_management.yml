@@ -1,0 +1,51 @@
+# FICAM Practice Area: Access Management
+# Authenticate identities and enforce authorization policies for logical and physical access
+
+id: access
+label: "Access management"
+ramp: blue
+summary: "Authenticate identities and enforce authorization policies for logical and physical access"
+
+capabilities:
+  - name: "Authentication — AAL1–3"
+    detail: "Single-factor through hardware-bound phishing-resistant MFA; NIST SP 800-63B AAL requirements; risk-based and step-up authentication policies; session management and re-authentication intervals."
+  
+  - name: "Authorization"
+    detail: "RBAC, ABAC, and Policy-Based Access Control (PBAC); real-time attribute resolution against authoritative sources; zero-standing privilege enforcement; policy decision and enforcement points."
+  
+  - name: "Privileged access"
+    detail: "PAM credential vaulting; just-in-time privilege elevation; privileged session recording and monitoring; break-glass procedures; MFA required for all privileged operations."
+  
+  - name: "Physical access — PACS"
+    detail: "PIV and mPIV-capable card readers; PACS controllers; FICAM PACS topology (E-PACS); visitor management; SP 800-116r1 PIV-in-PACS implementation guidance."
+  
+  - name: "mPIV authentication"
+    detail: "NFC tap and BLE proximity presentation at PACS readers for physical access; certificate-based logical access using PIV auth certificate; MDM device health posture as additional factor."
+  
+  - name: "FIDO2 authentication"
+    detail: "WebAuthn relying party integration; CTAP2 authenticator protocol; origin-scoped credentials prevent credential phishing; primary mechanism for OMB M-22-09 phishing-resistant MFA compliance."
+  
+  - name: "PQC-secured channels"
+    detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions."
+  
+  - name: "VC-based authorization"
+    detail: "Holder presents VC at resource server; verifier validates issuer signature offline; fine-grained ABAC using structured entitlement claims; no real-time issuer query required for access decision."
+  
+  - name: "Digital services / SSO"
+    detail: "Agency identity provider (IdP) issuing SAML assertions or OIDC tokens; max.gov for inter-agency SSO; session management; MFA enforcement at IdP; step-up authentication for sensitive transactions."
+
+standards:
+  - "NIST SP 800-63B"
+  - "NIST SP 800-116r1"
+  - "FIDO2 / WebAuthn W3C"
+  - "NIST FIPS 203"
+  - "OMB M-22-09"
+  - "OID4VP"
+  - "SAML 2.0"
+  - "OIDC / OAuth 2.0"
+
+documents:
+  - fido2
+  - mpiv
+  - pqc
+  - vc
