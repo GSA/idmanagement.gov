@@ -32,6 +32,21 @@
 # ee_ocsp_uri:
 #
 
+- notice_date: June 18, 2026
+  change_type: Intent to Issue CA Certificate
+  system: Entrust PKI SSP
+  change_description: The Entrust Managed Services Root CA will be issuing a new Entrust Managed Services SSP CA certificate on July 7, 2026.
+  contact: support at entrust dot com
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+  ca_certificate_subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://rootweb.managed.entrust.com/CRLs/EMSRootCA5.crl
+  aia_uri: http://sspweb.managed.entrust.com/AIA/CertsIssuedToEMSSSPCA.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.managed.entrust.com/OCSP/EMSRootCAResponder
+  ee_cdp_uri: http://sspweb.managed.entrust.com/CRLs/EMSSSPCA5.crl
+  ee_ocsp_uri: http://ocsp.managed.entrust.com/OCSP/EMSSSPCAResponder
+
 - notice_date: June 16, 2026
   change_type: Intent to Issue CA Certificate
   system: Entrust PKI SSP
