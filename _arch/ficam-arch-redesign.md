@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('verifiable-credentials-layer').appendChild(renderer.renderSection(VERIFIABLE_CREDENTIALS, true));
 
   renderer.renderPractices(PRACTICES, 'practice-areas');
-  renderer.renderDocBar(DOCS, 'document-links');
-  renderer.renderHint('Tap a section to expand · tap a capability for detail · tap doc tags to navigate', 'interaction-hint');
+  // Bottom document tags are intentionally hidden for now.
+  // The DOCS data and document-links container remain in place for restoration.
+  // renderer.renderDocBar(DOCS, 'document-links');
+  renderer.renderHint('Tap a section to expand · tap a capability for detail', 'interaction-hint');
 });
 </script>
 

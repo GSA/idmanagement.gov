@@ -3,39 +3,57 @@
 
 id: fed
 label: Federation
+isnew: false
 ramp: teal
 summary: "Trust frameworks and protocols enabling cross-agency and partner identity interoperability"
 
 capabilities:
   - name: "Cross-agency trust"
+    isnew: false
     detail: "SAML 2.0 and OIDC federation across agencies; bilateral federation agreements; max.gov as the federal identity provider hub for inter-agency access."
   
   - name: "Attribute sharing"
+    isnew: false
     detail: "Minimum-necessary disclosure policies, attribute release frameworks, and consent management for sharing identity attributes across trust domains."
   
   - name: "Federal PKI trust"
+    isnew: false
     detail: "Federal PKI Common Policy CA as the government-wide trust anchor; cross-certification with bridge CAs; certificate path validation and revocation (CRL/OCSP)."
   
   - name: "mDL / REAL ID trust"
+    isnew: false
     detail: "State-to-federal mDL acceptance framework under DHS/TSA waiver process; ISO 18013-5 device authentication; trust relationships between state DMV issuers and federal verifiers."
   
   - name: "FIDO2 MDS trust"
+    isnew: false
     detail: "FIDO Metadata Service as the authenticator attestation trust registry; AAGUID-based allowlisting policies; agency-defined acceptable authenticator models."
   
   - name: "VC trust registries"
+    isnew: false
     detail: "Issuer registry infrastructure for verifiable credentials; FPKI-rooted VC signing keys; OID4VP presentation protocol for cross-domain VC acceptance without bilateral agreements."
 
-standards:
-  - "SAML 2.0"
-  - "OIDC / OAuth 2.0"
-  - "ISO 18013-5"
-  - "FIDO2 MDS v3"
-  - "W3C DID Core 1.0"
-  - "OID4VP"
-  - "RFC 8705"
+references:
+  - label: "SAML 2.0"
+    isnew: false
+  - label: "OIDC / OAuth 2.0"
+    isnew: false
+  - label: "ISO 18013-5"
+    isnew: false
+  - label: "FIDO2 MDS v3"
+    isnew: false
+  - label: "W3C DID Core 1.0"
+    isnew: false
+  - label: "OID4VP"
+    isnew: false
+  - label: "RFC 8705"
+    isnew: false
 
 documents:
-  - mdl
-  - fido2
-  - mpiv
-  - vc
+  - id: mdl
+    isnew: false
+  - id: fido2
+    isnew: false
+  - id: mpiv
+    isnew: false
+  - id: vc
+    isnew: false

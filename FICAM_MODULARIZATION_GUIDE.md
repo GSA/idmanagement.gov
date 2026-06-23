@@ -61,12 +61,23 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('verifiable-credentials-layer').appendChild(renderer.renderSection(VERIFIABLE_CREDENTIALS, true));
 
   renderer.renderPractices(PRACTICES, 'practice-areas');
-  renderer.renderDocBar(DOCS, 'document-links');
-  renderer.renderHint('Tap a section to expand · tap a capability for detail · tap doc tags to navigate', 'interaction-hint');
+  // Bottom document tags are intentionally hidden for now.
+  // The DOCS data and document-links container remain in place for restoration.
+  // renderer.renderDocBar(DOCS, 'document-links');
+  renderer.renderHint('Tap a section to expand · tap a capability for detail', 'interaction-hint');
 });
 ```
 
 Use `renderer.renderSection(sectionData, true)` for a single architecture layer box. Use `renderer.renderPractices(practicesArray, container)` for the three-box practice row.
+
+## Current Document Tag Display Status
+
+As of 2026-06-23, document tag display has been intentionally commented out without changing the site structure or YAML data files.
+
+- The per-section **Document sections** rows are commented out in `assets/js/ficam-renderer.js`.
+- The bottom five document tags are commented out in `_arch/ficam-arch-redesign.md` by disabling `renderer.renderDocBar(DOCS, 'document-links')`.
+- The `DOCS` JavaScript object, `_data/ficam_architecture/documents.yml`, and `<div id="document-links"></div>` container remain in place.
+- To restore document tags later, uncomment the document-links block in `assets/js/ficam-renderer.js` and the `renderer.renderDocBar(DOCS, 'document-links')` call in `_arch/ficam-arch-redesign.md`.
 
 ---
 
@@ -162,7 +173,7 @@ _arch/
 - **Lines of JavaScript refactored**: ~500 (split into modular class)
 - **YAML data files created**: 8
 - **Total capabilities documented**: 44 (across 7 sections)
-- **Total standards referenced**: ~60+ unique standards
+- **Total references documented**: ~60+ unique references
 
 ---
 
@@ -196,22 +207,31 @@ To update the **Governance** layer capabilities:
 ```yaml
 id: governance                         # Unique identifier
 label: "Governance"                   # Display name
+isnew: false                          # True displays a New tag beside the section heading
 ramp: gray                            # Color ramp (gray, teal, purple, blue, coral, pink, green, amber)
 summary: "Enterprise ICAM program..." # Short description
 
 capabilities:                         # Array of capabilities
   - name: "Policy & standards"       # Capability name (displayed first)
+    isnew: false                     # True displays a New tag beside the capability heading
     detail: "FISMA, OMB M-19-17..."  # Detailed explanation (shown on expand)
 
-standards:                            # Array of standards/references
-  - "NIST SP 800-53"
-  - "NIST SP 800-63"
+references:                           # Array of references displayed under the References heading
+  - label: "NIST SP 800-53"
+    isnew: false                     # True displays a New tag beside this reference
+  - label: "NIST SP 800-63"
+    isnew: false
 
 documents:                            # Array of document section IDs to link
-  - mdl
-  - fido2
-  - pqc
+  - id: mdl
+    isnew: false                     # True displays a New tag beside this document tag
+  - id: fido2
+    isnew: false
+  - id: pqc
+    isnew: false
 ```
+
+The `isnew` option is stored as an explicit true/false value in the architecture data files. Set `isnew: true` on a section to display a small **New** tag beside the section heading. Set `isnew: true` on an individual capability, reference, or document entry to display the tag beside that item. This does not change the page layout; it only adds a label when the flag is explicitly true.
 
 ### Example: Adding a New Capability
 
@@ -221,6 +241,7 @@ documents:                            # Array of document section IDs to link
 capabilities:
   # ... existing capabilities ...
   - name: "Risk management"                    # NEW
+    isnew: true                                # Shows the New tag beside this capability
     detail: "Enterprise risk assessment..."    # NEW
 ```
 
@@ -238,21 +259,27 @@ capabilities:
    ```yaml
    id: zero_trust
    label: "Zero Trust Architecture"
+   isnew: false
    ramp: "purple"
    summary: "Assume breach model with continuous verification..."
    
    capabilities:
      - name: "Identity verification"
+       isnew: false
        detail: "Every access request verified..."
      - name: "Encryption everywhere"
+       isnew: false
        detail: "All data encrypted in transit..."
    
-   standards:
-     - "NIST SP 800-207"
+   references:
+     - label: "NIST SP 800-207"
+       isnew: false
    
    documents:
-     - fido2
-     - pqc
+     - id: fido2
+       isnew: false
+     - id: pqc
+       isnew: false
    ```
 
 3. **Update** `_arch/ficam-arch-redesign.md` to include the new section.
@@ -434,10 +461,13 @@ renderer.renderHint('Custom hint text', 'container-id');
 **File**: `_data/ficam_architecture/federation.yml`
 
 ```yaml
-standards:
-  - "SAML 2.0"
-  - "OIDC / OAuth 2.0"
-  - "NEW STANDARD HERE"  # Add new line
+references:
+  - label: "SAML 2.0"
+    isnew: false
+  - label: "OIDC / OAuth 2.0"
+    isnew: false
+  - label: "NEW REFERENCE HERE"
+    isnew: true
 ```
 
 ### Rename a Capability
@@ -543,7 +573,7 @@ Changes are **data-only** — updating section content doesn't affect layout or 
 ## Next Steps
 
 - **Update** existing sections using the YAML files
-- **Add** new capabilities/standards to expand sections
+- **Add** new capabilities/references to expand sections
 - **Create** new layers or practices as needed
 - **Embed** individual sections in other pages
 - **Customize** styling by modifying `ficam-components.scss`

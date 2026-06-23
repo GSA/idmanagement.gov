@@ -66,6 +66,10 @@ h1 {
 }
 
 .section-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
   font-size: 17px;
   font-weight: 600;
   color: var(--tx);
@@ -112,6 +116,33 @@ h1 {
     &:hover {
       filter: brightness(0.95);
     }
+  }
+}
+
+.new-tag {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--bd);
+  background: #fff;
+  color: var(--tx);
+  vertical-align: middle;
+}
+
+.tag-status-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 2px;
+
+  .tag {
+    margin: 0;
   }
 }
 
@@ -166,6 +197,16 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
+}
+
+.cap-name-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 6px;
+  min-width: 0;
 }
 
 .cap-name {

@@ -53,6 +53,87 @@ class FicamSectionRenderer {
   }
 
   /**
+   * Check whether a data item should display the New label.
+   * Defaults to false and accepts the canonical lowercase YAML key.
+   * @param {Object} item - Section or capability data
+   * @returns {boolean}
+   */
+  isNewItem(item) {
+    if (!item) {
+      return false;
+    }
+    const values = [item.isnew, item.new, item.isNew, item.is_new];
+    return values.some((value) => value === true || value === 'true');
+  }
+
+  /**
+   * Create the visual New label used beside section and capability headings.
+   * @returns {HTMLElement}
+   */
+  createNewTag() {
+    const el = document.createElement('span');
+    el.className = 'new-tag';
+    el.textContent = 'New';
+    return el;
+  }
+
+  /**
+   * Create a tag and optional New label for reference/document tag rows.
+   * @param {string} label - Tag label text
+   * @param {string} ramp - Color ramp class
+   * @param {string} href - Optional URL for clickable tags
+   * @param {Object} item - Source item with optional isnew flag
+   * @returns {HTMLElement}
+   */
+  createTagWithStatus(label, ramp, href = null, item = null) {
+    const tag = this.createTag(label, ramp, href);
+
+    if (!this.isNewItem(item)) {
+      return tag;
+    }
+
+    const wrap = document.createElement('span');
+    wrap.className = 'tag-status-wrap';
+    wrap.appendChild(tag);
+    wrap.appendChild(this.createNewTag());
+    return wrap;
+  }
+
+  /**
+   * Normalize reference data from either a string or object.
+   * @param {string|Object} reference
+   * @returns {Object}
+   */
+  normalizeReference(reference) {
+    if (typeof reference === 'string') {
+      return { label: reference, isnew: false };
+    }
+    return {
+      label: reference.label || reference.name || '',
+      isnew: reference.isnew
+    };
+  }
+
+  /**
+   * Resolve document data from either an ID string or object.
+   * @param {string|Object} doc
+   * @returns {Object|null}
+   */
+  resolveDocument(doc) {
+    const docId = typeof doc === 'string' ? doc : doc.id;
+    const docInfo = typeof doc === 'string' ? this.docConfig[docId] : this.docConfig[docId] || doc;
+
+    if (!docInfo) {
+      return null;
+    }
+
+    return {
+      ...docInfo,
+      isnew: typeof doc === 'object' && doc.isnew !== undefined ? doc.isnew : docInfo.isnew
+    };
+  }
+
+  /**
    * Create an expandable capability row
    * @param {Object} capability - { name, detail }
    * @param {string} ramp - Color ramp
@@ -65,9 +146,17 @@ class FicamSectionRenderer {
     const header = document.createElement('div');
     header.className = 'cap-header';
 
+    const nameWrap = document.createElement('span');
+    nameWrap.className = 'cap-name-wrap';
+
     const name = document.createElement('span');
     name.className = 'cap-name';
     name.textContent = capability.name;
+    nameWrap.appendChild(name);
+
+    if (this.isNewItem(capability)) {
+      nameWrap.appendChild(this.createNewTag());
+    }
 
     const chevron = document.createElement('span');
     chevron.className = 'cap-chevron';
@@ -77,7 +166,7 @@ class FicamSectionRenderer {
     detail.className = 'cap-detail';
     detail.textContent = capability.detail;
 
-    header.appendChild(name);
+    header.appendChild(nameWrap);
     header.appendChild(chevron);
     row.appendChild(header);
     row.appendChild(detail);
@@ -92,7 +181,7 @@ class FicamSectionRenderer {
   }
 
   /**
-   * Create a row label (Capabilities, Standards, Documents)
+   * Create a row label (Capabilities, References, Documents)
    * @param {string} text - Label text
    * @returns {HTMLElement} Row label element
    */
@@ -121,7 +210,14 @@ class FicamSectionRenderer {
     const left = document.createElement('div');
     const title = document.createElement('div');
     title.className = 'section-title';
-    title.textContent = sectionData.label;
+
+    const titleText = document.createElement('span');
+    titleText.textContent = sectionData.label;
+    title.appendChild(titleText);
+
+    if (this.isNewItem(sectionData)) {
+      title.appendChild(this.createNewTag());
+    }
 
     const summary = document.createElement('div');
     summary.className = 'section-summary';
@@ -164,32 +260,36 @@ class FicamSectionRenderer {
       body.appendChild(this.createCapRow(cap, sectionData.ramp));
     });
 
-    // Standards
-    body.appendChild(this.createRowLabel('Standards'));
-    const standardsRow = document.createElement('div');
-    standardsRow.className = 'tags-row';
-    standardsRow.style.display = 'flex';
-    (sectionData.standards || []).forEach((std) => {
-      standardsRow.appendChild(this.createTag(std, 'gray'));
+    // References
+    body.appendChild(this.createRowLabel('References'));
+    const referencesRow = document.createElement('div');
+    referencesRow.className = 'tags-row';
+    referencesRow.style.display = 'flex';
+    (sectionData.references || sectionData.standards || []).forEach((reference) => {
+      const referenceInfo = this.normalizeReference(reference);
+      referencesRow.appendChild(
+        this.createTagWithStatus(referenceInfo.label, 'gray', null, referenceInfo)
+      );
     });
-    body.appendChild(standardsRow);
+    body.appendChild(referencesRow);
 
-    // Document links (if any)
-    if (sectionData.documents && sectionData.documents.length > 0) {
-      body.appendChild(this.createRowLabel('Document sections'));
-      const docsRow = document.createElement('div');
-      docsRow.className = 'tags-row';
-      docsRow.style.display = 'flex';
-      sectionData.documents.forEach((docId) => {
-        const docInfo = this.docConfig[docId];
-        if (docInfo) {
-          docsRow.appendChild(
-            this.createTag(docInfo.label, docInfo.ramp, docInfo.url)
-          );
-        }
-      });
-      body.appendChild(docsRow);
-    }
+    // Document links are intentionally hidden from section bodies for now.
+    // The data remains in YAML and can be restored by uncommenting this block.
+    // if (sectionData.documents && sectionData.documents.length > 0) {
+    //   body.appendChild(this.createRowLabel('Document sections'));
+    //   const docsRow = document.createElement('div');
+    //   docsRow.className = 'tags-row';
+    //   docsRow.style.display = 'flex';
+    //   sectionData.documents.forEach((doc) => {
+    //     const docInfo = this.resolveDocument(doc);
+    //     if (docInfo) {
+    //       docsRow.appendChild(
+    //         this.createTagWithStatus(docInfo.label, docInfo.ramp, docInfo.url, docInfo)
+    //       );
+    //     }
+    //   });
+    //   body.appendChild(docsRow);
+    // }
 
     wrap.appendChild(header);
     wrap.appendChild(preview);
@@ -248,14 +348,13 @@ class FicamSectionRenderer {
     const bar = document.createElement('div');
     bar.className = 'doc-bar';
 
-    const docArray = Array.isArray(docs) ? docs : Object.entries(docs).map(([_, d]) => d);
+    const docArray = Array.isArray(docs) ? docs : Object.entries(docs).map(([id, d]) => ({ id, ...d }));
 
     docArray.forEach((doc) => {
-      const docId = typeof doc === 'string' ? doc : doc.id;
-      const docInfo = typeof doc === 'string' ? this.docConfig[docId] : doc;
+      const docInfo = this.resolveDocument(doc);
       if (docInfo) {
         bar.appendChild(
-          this.createTag(docInfo.label, docInfo.ramp, docInfo.url)
+          this.createTagWithStatus(docInfo.label, docInfo.ramp, docInfo.url, docInfo)
         );
       }
     });
@@ -287,8 +386,9 @@ class FicamSectionRenderer {
     this.setDocConfig(docs);
     this.renderLayers(layers, container);
     this.renderPractices(practices, container);
-    this.renderDocBar(docs, container);
-    this.renderHint('Tap a section to expand · tap a capability for detail · tap doc tags to navigate', container);
+    // Document bar is intentionally hidden from the complete-page helper.
+    // this.renderDocBar(docs, container);
+    this.renderHint('Tap a section to expand · tap a capability for detail', container);
   }
 
   /**

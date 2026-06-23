@@ -2,6 +2,20 @@
 
 Date: 2026-06-17
 
+## 2026-06-23 Update
+
+- Commented out document tag rendering without changing the page structure or YAML data files.
+- Hid the per-section **Document sections** rows by commenting the document-link rendering block in `assets/js/ficam-renderer.js`.
+- Hid the bottom five document tags by commenting out `renderer.renderDocBar(DOCS, 'document-links')` in `_arch/ficam-arch-redesign.md`.
+- Kept `DOCS`, `_data/ficam_architecture/documents.yml`, and the `<div id="document-links"></div>` placeholder in place so the document tags can be restored by uncommenting the relevant code.
+- Updated the interaction hint so the page no longer tells users to navigate by hidden document tags.
+- Added `isnew: true` support for section headings and individual capability headings. The renderer displays a small **New** tag only when the flag is explicitly true.
+- Added `.new-tag` component styling in `_sass/ficam-components.scss` for consistent spacing beside headings without changing the site structure.
+- Changed the rendered row heading from **Standards** to **References**.
+- Normalized architecture data files to use lowercase `isnew` and added explicit `isnew: false` defaults where content is not marked new.
+- Renamed architecture data arrays from `standards` to `references` so the YAML key matches the rendered **References** heading.
+- Added `isnew` support to reference entries and document entries so reference/document tags can display **New** when enabled. Document rendering remains commented out, but the data and renderer now support the flag.
+
 Reference branch: https://github.com/GSA/idmanagement.gov/tree/0612-ficam-arch-redesign-dev
 
 Reference file reviewed:

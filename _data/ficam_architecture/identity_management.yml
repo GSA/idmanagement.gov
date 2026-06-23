@@ -3,45 +3,65 @@
 
 id: identity
 label: "Identity management"
+isnew: false
 ramp: purple
 summary: "Collect, verify, and manage attributes to establish and maintain enterprise identities"
 
 capabilities:
   - name: "Identity proofing"
+    isnew: false
     detail: "IAL1–3 in-person and remote proofing workflows; document verification; biometric facial comparison; supervised remote proofing; NIST SP 800-63A evidence strength requirements."
   
   - name: "Attribute management"
+    isnew: false
     detail: "Authoritative attribute sources (HR systems, PIV data stores); attribute quality and freshness policies; reconciliation workflows for multi-source identity data."
   
   - name: "Lifecycle management"
+    isnew: false
     detail: "Joiner-mover-leaver provisioning workflows; role mining and assignment; periodic access certification; deprovisioning SLA enforcement; orphaned account remediation."
   
   - name: "mDL-based proofing"
+    isnew: false
     detail: "mDL as an IAL2 identity evidence source; ISO 18013-5 device authentication confirms document authenticity; selective attribute disclosure minimizes data exposure during proofing."
   
   - name: "FIDO2 device binding"
+    isnew: false
     detail: "Authenticator enrollment tied to a proofed enterprise identity; AAGUID-based allowlisting for permitted authenticator models; device attestation records maintained in identity registry."
   
   - name: "mPIV enrollment"
+    isnew: false
     detail: "FIPS 201-3 compliant enrollment on mobile secure element; in-person biometric capture at initial enrollment; remote re-enrollment for existing PIV holders using on-file biometric."
   
   - name: "VC issuance workflow"
+    isnew: false
     detail: "Agency acting as VC issuer for employment, role, and entitlement credentials; SD-JWT attribute packaging for selective disclosure; credential bound to holder's enterprise identity."
   
   - name: "Privacy by design"
+    isnew: false
     detail: "Minimum-necessary data collection at proofing; informed consent management; Privacy Act of 1974 compliance; Privacy Impact Assessment (PIA) requirements for ICAM systems."
 
-standards:
-  - "NIST SP 800-63A"
-  - "FIPS 201-3"
-  - "NIST SP 800-157r1"
-  - "ISO 18013-5"
-  - "W3C VC DM 2.0"
-  - "Privacy Act of 1974"
-  - "OMB M-03-22"
+references:
+  - label: "NIST SP 800-63A"
+    isnew: false
+  - label: "FIPS 201-3"
+    isnew: false
+  - label: "NIST SP 800-157r1"
+    isnew: false
+  - label: "ISO 18013-5"
+    isnew: false
+  - label: "W3C VC DM 2.0"
+    isnew: false
+  - label: "Privacy Act of 1974"
+    isnew: false
+  - label: "OMB M-03-22"
+    isnew: false
 
 documents:
-  - mdl
-  - fido2
-  - mpiv
-  - vc
+  - id: mdl
+    isnew: false
+  - id: fido2
+    isnew: false
+  - id: mpiv
+    isnew: false
+  - id: vc
+    isnew: false

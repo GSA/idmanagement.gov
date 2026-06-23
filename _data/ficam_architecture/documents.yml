@@ -3,25 +3,30 @@
 
 mdl:
   label: "mDL"
+  isnew: false
   ramp: "amber"
   url: "#mdl"
 
 fido2:
   label: "FIDO2"
+  isnew: false
   ramp: "green"
   url: "#fido2"
 
 mpiv:
   label: "mPIV"
+  isnew: false
   ramp: "pink"
   url: "#mpiv"
 
 pqc:
   label: "PQC"
+  isnew: false
   ramp: "purple"
   url: "#pqc"
 
 vc:
   label: "VC"
+  isnew: false
   ramp: "blue"
   url: "#vc"
