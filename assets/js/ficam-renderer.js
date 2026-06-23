@@ -86,16 +86,31 @@ class FicamSectionRenderer {
    * @returns {HTMLElement}
    */
   createTagWithStatus(label, ramp, href = null, item = null) {
-    const tag = this.createTag(label, ramp, href);
-
     if (!this.isNewItem(item)) {
-      return tag;
+      return this.createTag(label, ramp, href);
     }
 
     const wrap = document.createElement('span');
-    wrap.className = 'tag-status-wrap';
-    wrap.appendChild(tag);
-    wrap.appendChild(this.createNewTag());
+    wrap.className = `split-tag c-${ramp}${href ? ' clickable' : ''}`;
+
+    const status = document.createElement('span');
+    status.className = 'split-tag-status';
+    status.textContent = 'NEW';
+
+    const text = document.createElement(href ? 'a' : 'span');
+    text.className = 'split-tag-text';
+    text.textContent = label + (href ? ' ↗' : '');
+    if (href) {
+      const opensNewContext = /^(https?:)?\/\//.test(href);
+      text.href = href;
+      if (opensNewContext) {
+        text.target = '_blank';
+        text.rel = 'noopener';
+      }
+    }
+
+    wrap.appendChild(status);
+    wrap.appendChild(text);
     return wrap;
   }
 

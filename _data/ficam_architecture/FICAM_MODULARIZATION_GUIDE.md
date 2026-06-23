@@ -157,7 +157,7 @@ _arch/
 | **ficam-renderer.js** | `assets/js/ficam-renderer.js` | Modular JavaScript renderer class (~240 lines) |
 | **ficam-components.scss** | `_sass/ficam-components.scss` | SASS stylesheet with all component styles (~250 lines) |
 | **ficam-architecture.scss** | `assets/css/ficam-architecture.scss` | Jekyll stylesheet entrypoint that imports the component Sass and compiles to `ficam-architecture.css` |
-| **FICAM_MODULARIZATION_GUIDE.md** | `FICAM_MODULARIZATION_GUIDE.md` | Complete documentation for updating & extending sections |
+| **FICAM_MODULARIZATION_GUIDE.md** | `_data/ficam_architecture/FICAM_MODULARIZATION_GUIDE.md` | Complete documentation for updating & extending sections |
 
 ### Modified Files
 
@@ -231,7 +231,7 @@ documents:                            # Array of document section IDs to link
     isnew: false
 ```
 
-The `isnew` option is stored as an explicit true/false value in the architecture data files. Set `isnew: true` on a section to display a small **New** tag beside the section heading. Set `isnew: true` on an individual capability, reference, or document entry to display the tag beside that item. This does not change the page layout; it only adds a label when the flag is explicitly true.
+The `isnew` option is stored as an explicit true/false value in the architecture data files. Set `isnew: true` on a section to display a small **New** tag beside the section heading. Set `isnew: true` on an individual capability to display the same heading badge beside that capability. Set `isnew: true` on a reference or document entry to display a split tag with **NEW** on the left and the reference or document text on the right. This does not change the page layout; it only changes the tag presentation when the flag is explicitly true.
 
 ### Example: Adding a New Capability
 

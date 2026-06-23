@@ -135,15 +135,45 @@ h1 {
   vertical-align: middle;
 }
 
-.tag-status-wrap {
+.split-tag {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  overflow: hidden;
   margin: 2px;
+  border: 1px solid var(--bd);
+  border-radius: 20px;
+  background: var(--bg);
+  color: var(--tx);
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
 
-  .tag {
-    margin: 0;
+  &.clickable {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
   }
+}
+
+.split-tag-status,
+.split-tag-text {
+  display: inline-block;
+  padding: 3px 8px;
+}
+
+.split-tag-status {
+  border-right: 1px solid var(--bd);
+  background: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.split-tag-text {
+  color: var(--tx);
+  text-decoration: none;
 }
 
 .section-body {

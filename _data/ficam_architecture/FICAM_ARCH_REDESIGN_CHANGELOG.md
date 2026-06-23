@@ -15,6 +15,8 @@ Date: 2026-06-17
 - Normalized architecture data files to use lowercase `isnew` and added explicit `isnew: false` defaults where content is not marked new.
 - Renamed architecture data arrays from `standards` to `references` so the YAML key matches the rendered **References** heading.
 - Added `isnew` support to reference entries and document entries so reference/document tags can display **New** when enabled. Document rendering remains commented out, but the data and renderer now support the flag.
+- Moved `FICAM_ARCH_REDESIGN_CHANGELOG.md` and `FICAM_MODULARIZATION_GUIDE.md` into `_data/ficam_architecture/` so architecture data and related documentation live together.
+- Updated reference/document `isnew: true` rendering to use a split tag with **NEW** on the left and the item label on the right. Set the `W3C VC DM 2.0` reference in `verifiable_credentials.yml` to `isnew: true` as the visible example.
 
 Reference branch: https://github.com/GSA/idmanagement.gov/tree/0612-ficam-arch-redesign-dev
 
@@ -29,7 +31,8 @@ That branch stores the FICAM architecture demo as a single page with inline CSS,
 | Status | File | Location | Purpose |
 | --- | --- | --- | --- |
 | Updated | `ficam-arch-redesign.md` | `_arch/ficam-arch-redesign.md` | Main Jekyll page for `/development/`. It now loads the compiled component stylesheet and renderer module, loads YAML data through Jekyll, and renders the four layer boxes and practice-area row independently. |
-| Added/Updated | `FICAM_MODULARIZATION_GUIDE.md` | `FICAM_MODULARIZATION_GUIDE.md` | Documentation explaining the modular data files, renderer, component Sass, document tags, linkable `url` values, independent rendering pattern, and update workflow. |
+| Added/Updated | `FICAM_MODULARIZATION_GUIDE.md` | `_data/ficam_architecture/FICAM_MODULARIZATION_GUIDE.md` | Documentation explaining the modular data files, renderer, component Sass, document tags, linkable `url` values, independent rendering pattern, and update workflow. |
+| Added/Updated | `FICAM_ARCH_REDESIGN_CHANGELOG.md` | `_data/ficam_architecture/FICAM_ARCH_REDESIGN_CHANGELOG.md` | Change log for the FICAM architecture redesign and modularization updates. |
 | Added/Updated | `ficam-renderer.js` | `assets/js/ficam-renderer.js` | Reusable JavaScript renderer for architecture sections, practice rows, document tag bars, and hint text. Restores the document-tag arrow while keeping same-page and site-relative links in the current tab. |
 | Added | `ficam-architecture.scss` | `assets/css/ficam-architecture.scss` | Jekyll stylesheet entrypoint that imports `_sass/ficam-components.scss` and compiles to `/assets/css/ficam-architecture.css`. |
 | Added/Updated | `ficam-components.scss` | `_sass/ficam-components.scss` | Shared Sass component styles for section boxes, capability rows, tags, document bar, color ramps, and the responsive practice grid. |
