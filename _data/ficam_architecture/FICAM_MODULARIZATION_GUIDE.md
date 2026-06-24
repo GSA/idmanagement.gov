@@ -208,30 +208,41 @@ To update the **Governance** layer capabilities:
 id: governance                         # Unique identifier
 label: "Governance"                   # Display name
 isnew: false                          # True displays a New tag beside the section heading
+status: none                          # Displayed beside the section heading when not none
 ramp: gray                            # Color ramp (gray, teal, purple, blue, coral, pink, green, amber)
 summary: "Enterprise ICAM program..." # Short description
 
 capabilities:                         # Array of capabilities
   - name: "Policy & standards"       # Capability name (displayed first)
     isnew: false                     # True displays a New tag beside the capability heading
+    status: none                     # UPDATED, DRAFT, WITHDRAWN, or DEPRECATED displays beside the heading
     detail: "FISMA, OMB M-19-17..."  # Detailed explanation (shown on expand)
 
 references:                           # Array of references displayed under the References heading
   - label: "NIST SP 800-53"
     isnew: false                     # True displays a New tag beside this reference
+    status: none                     # UPDATED, DRAFT, WITHDRAWN, or DEPRECATED displays on the reference tag
   - label: "NIST SP 800-63"
     isnew: false
+    status: none
 
 documents:                            # Array of document section IDs to link
   - id: mdl
     isnew: false                     # True displays a New tag beside this document tag
+    status: none
   - id: fido2
     isnew: false
+    status: none
   - id: pqc
     isnew: false
+    status: none
 ```
 
 The `isnew` option is stored as an explicit true/false value in the architecture data files. Set `isnew: true` on a section to display a small **New** tag beside the section heading. Set `isnew: true` on an individual capability to display the same heading badge beside that capability. Set `isnew: true` on a reference or document entry to display a split tag with **NEW** on the left and the reference or document text on the right. This does not change the page layout; it only changes the tag presentation when the flag is explicitly true.
+
+The `status` option is independent from `isnew`. Use `status: none` or omit the property to hide the status tag. Set `status` to `UPDATED`, `DRAFT`, `WITHDRAWN`, or `DEPRECATED` to display that value beside section headings and capability headings, or on the left side of reference and document split tags. A record can have both `isnew: true` and a non-`none` status; both labels will display.
+
+When a reference or document tag has both `isnew: true` and a visible `status`, the left side of the split tag stacks both labels with a centered dot separator. For example, `isnew: true` plus `status: UPDATED` displays as `NEW · UPDATED | Reference Label`; `status: DRAFT` displays as `NEW · DRAFT | Reference Label`; and `status: DEPRECATED` displays as `NEW · DEPRECATED | Reference Label`.
 
 ### Example: Adding a New Capability
 
@@ -260,26 +271,32 @@ capabilities:
    id: zero_trust
    label: "Zero Trust Architecture"
    isnew: false
+   status: none
    ramp: "purple"
    summary: "Assume breach model with continuous verification..."
    
    capabilities:
      - name: "Identity verification"
        isnew: false
+       status: none
        detail: "Every access request verified..."
      - name: "Encryption everywhere"
        isnew: false
+       status: none
        detail: "All data encrypted in transit..."
    
    references:
      - label: "NIST SP 800-207"
        isnew: false
+       status: none
    
    documents:
      - id: fido2
        isnew: false
+       status: none
      - id: pqc
        isnew: false
+       status: none
    ```
 
 3. **Update** `_arch/ficam-arch-redesign.md` to include the new section.

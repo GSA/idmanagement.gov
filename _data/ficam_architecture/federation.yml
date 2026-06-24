@@ -4,56 +4,74 @@
 id: fed
 label: Federation
 isnew: false
+status: none
 ramp: teal
 summary: "Trust frameworks and protocols enabling cross-agency and partner identity interoperability"
 
 capabilities:
   - name: "Cross-agency trust"
     isnew: false
+    status: none
     detail: "SAML 2.0 and OIDC federation across agencies; bilateral federation agreements; max.gov as the federal identity provider hub for inter-agency access."
   
   - name: "Attribute sharing"
     isnew: false
+    status: none
     detail: "Minimum-necessary disclosure policies, attribute release frameworks, and consent management for sharing identity attributes across trust domains."
   
   - name: "Federal PKI trust"
     isnew: false
+    status: none
     detail: "Federal PKI Common Policy CA as the government-wide trust anchor; cross-certification with bridge CAs; certificate path validation and revocation (CRL/OCSP)."
   
   - name: "mDL / REAL ID trust"
     isnew: false
+    status: none
     detail: "State-to-federal mDL acceptance framework under DHS/TSA waiver process; ISO 18013-5 device authentication; trust relationships between state DMV issuers and federal verifiers."
   
   - name: "FIDO2 MDS trust"
     isnew: false
+    status: none
     detail: "FIDO Metadata Service as the authenticator attestation trust registry; AAGUID-based allowlisting policies; agency-defined acceptable authenticator models."
   
   - name: "VC trust registries"
     isnew: false
+    status: none
     detail: "Issuer registry infrastructure for verifiable credentials; FPKI-rooted VC signing keys; OID4VP presentation protocol for cross-domain VC acceptance without bilateral agreements."
 
 references:
   - label: "SAML 2.0"
     isnew: false
+    status: none
   - label: "OIDC / OAuth 2.0"
     isnew: false
+    status: none
   - label: "ISO 18013-5"
     isnew: false
+    status: none
   - label: "FIDO2 MDS v3"
     isnew: false
+    status: none
   - label: "W3C DID Core 1.0"
     isnew: false
+    status: none
   - label: "OID4VP"
     isnew: false
+    status: none
   - label: "RFC 8705"
     isnew: false
+    status: none
 
 documents:
   - id: mdl
     isnew: false
+    status: none
   - id: fido2
     isnew: false
+    status: none
   - id: mpiv
     isnew: false
+    status: none
   - id: vc
     isnew: false
+    status: none

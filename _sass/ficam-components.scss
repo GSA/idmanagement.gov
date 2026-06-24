@@ -135,6 +135,22 @@ h1 {
   vertical-align: middle;
 }
 
+.status-tag {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--bd);
+  background: var(--bd);
+  color: #fff;
+  vertical-align: middle;
+}
+
 .split-tag {
   display: inline-flex;
   align-items: center;

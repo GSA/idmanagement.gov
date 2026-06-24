@@ -78,6 +78,77 @@ class FicamSectionRenderer {
   }
 
   /**
+   * Normalize optional status values for display.
+   * Missing, empty, and none statuses are intentionally hidden.
+   * @param {Object} item - Section, capability, reference, or document data
+   * @returns {string|null}
+   */
+  getDisplayStatus(item) {
+    if (!item || item.status === undefined || item.status === null) {
+      return null;
+    }
+
+    const value = String(item.status).trim();
+
+    if (!value || value.toLowerCase() === 'none') {
+      return null;
+    }
+
+    return value.toUpperCase();
+  }
+
+  /**
+   * Create a visual status label for headings.
+   * @param {string} status - Display status text
+   * @returns {HTMLElement}
+   */
+  createStatusTag(status) {
+    const el = document.createElement('span');
+    el.className = `status-tag status-tag--${status.toLowerCase()}`;
+    el.textContent = status;
+    return el;
+  }
+
+  /**
+   * Append New and status labels to a heading wrapper.
+   * These states are independent, so both can display together.
+   * @param {HTMLElement} wrap - Heading wrapper
+   * @param {Object} item - Source item
+   */
+  appendStateTags(wrap, item) {
+    if (this.isNewItem(item)) {
+      wrap.appendChild(this.createNewTag());
+    }
+
+    const status = this.getDisplayStatus(item);
+
+    if (status) {
+      wrap.appendChild(this.createStatusTag(status));
+    }
+  }
+
+  /**
+   * Return labels used in split reference/document tags.
+   * @param {Object} item - Source item
+   * @returns {Array<string>}
+   */
+  getSplitTagStateLabels(item) {
+    const labels = [];
+
+    if (this.isNewItem(item)) {
+      labels.push('NEW');
+    }
+
+    const status = this.getDisplayStatus(item);
+
+    if (status) {
+      labels.push(status);
+    }
+
+    return labels;
+  }
+
+  /**
    * Create a tag and optional New label for reference/document tag rows.
    * @param {string} label - Tag label text
    * @param {string} ramp - Color ramp class
@@ -86,7 +157,9 @@ class FicamSectionRenderer {
    * @returns {HTMLElement}
    */
   createTagWithStatus(label, ramp, href = null, item = null) {
-    if (!this.isNewItem(item)) {
+    const stateLabels = this.getSplitTagStateLabels(item);
+
+    if (!stateLabels.length) {
       return this.createTag(label, ramp, href);
     }
 
@@ -95,7 +168,7 @@ class FicamSectionRenderer {
 
     const status = document.createElement('span');
     status.className = 'split-tag-status';
-    status.textContent = 'NEW';
+    status.textContent = stateLabels.join(' · ');
 
     const text = document.createElement(href ? 'a' : 'span');
     text.className = 'split-tag-text';
@@ -125,7 +198,8 @@ class FicamSectionRenderer {
     }
     return {
       label: reference.label || reference.name || '',
-      isnew: reference.isnew
+      isnew: reference.isnew,
+      status: reference.status
     };
   }
 
@@ -144,7 +218,8 @@ class FicamSectionRenderer {
 
     return {
       ...docInfo,
-      isnew: typeof doc === 'object' && doc.isnew !== undefined ? doc.isnew : docInfo.isnew
+      isnew: typeof doc === 'object' && doc.isnew !== undefined ? doc.isnew : docInfo.isnew,
+      status: typeof doc === 'object' && doc.status !== undefined ? doc.status : docInfo.status
     };
   }
 
@@ -169,9 +244,7 @@ class FicamSectionRenderer {
     name.textContent = capability.name;
     nameWrap.appendChild(name);
 
-    if (this.isNewItem(capability)) {
-      nameWrap.appendChild(this.createNewTag());
-    }
+    this.appendStateTags(nameWrap, capability);
 
     const chevron = document.createElement('span');
     chevron.className = 'cap-chevron';
@@ -230,9 +303,7 @@ class FicamSectionRenderer {
     titleText.textContent = sectionData.label;
     title.appendChild(titleText);
 
-    if (this.isNewItem(sectionData)) {
-      title.appendChild(this.createNewTag());
-    }
+    this.appendStateTags(title, sectionData);
 
     const summary = document.createElement('div');
     summary.className = 'section-summary';
