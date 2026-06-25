@@ -14,20 +14,20 @@ capabilities:
     status: none
     detail: "The systems, solutions, and rules that link enterprise personnel, NHIs, applications, and data to help agencies manage access and risk."
   
-  - name: "Privileged access mgmt"
-    isnew: false
-    status: none
-    detail: "Just-in-time access provisioning, session recording and monitoring, least-privilege enforcement, and PAM credential vaulting."
+  # - name: "Privileged access mgmt"
+  #   isnew: false
+  #   status: none
+  #   detail: "Just-in-time access provisioning, session recording and monitoring, least-privilege enforcement, and PAM credential vaulting."
   
-  - name: "Audit & compliance"
-    isnew: false
-    status: none
-    detail: "Continuous monitoring of ICAM controls, ICAM metrics reporting, POA&M tracking, and inspector general audit support."
+  # - name: "Audit & compliance"
+  #   isnew: false
+  #   status: none
+  #   detail: "Continuous monitoring of ICAM controls, ICAM metrics reporting, POA&M tracking, and inspector general audit support."
   
-  - name: "Program management"
-    isnew: false
-    status: none
-    detail: "ICAM PMO structure, governance board charters, capital planning, and performance measurement under the federal ICAM common baseline."
+  # - name: "Program management"
+  #   isnew: false
+  #   status: none
+  #   detail: "ICAM PMO structure, governance board charters, capital planning, and performance measurement under the federal ICAM common baseline."
 
 references:
   - label: "NIST SP 800-53"
