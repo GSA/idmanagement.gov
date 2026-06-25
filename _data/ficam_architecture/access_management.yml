@@ -58,7 +58,7 @@ capabilities:
 references:
   - label: "NIST SP 800-63B"
     isnew: false
-    status: DEPRECATED
+    status: none
   - label: "NIST SP 800-116r1"
     isnew: false
     status: none
