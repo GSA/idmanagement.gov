@@ -6,28 +6,37 @@ label: "Identity"
 isnew: false
 status: none
 ramp: purple
-summary: "Collect, verify, and manage attributes to establish and maintain enterprise identities"
+summary: "How an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise human identities and NHIs."
 
 capabilities:
   - name: "Identity proofing"
     isnew: false
     status: none
-    detail: "IAL1–3 in-person and remote proofing workflows; document verification; biometric facial comparison; supervised remote proofing; NIST SP 800-63A evidence strength requirements."
+    detail: "The processes used to collect, validate, and verify information about a subject to establish assurance in the subject’s claimed identity."
   
   - name: "Attribute management"
     isnew: false
     status: none
-    detail: "Authoritative attribute sources (HR systems, PIV data stores); attribute quality and freshness policies; reconciliation workflows for multi-source identity data."
+    detail: "Attribute management includes orchestrating, validating, and lifecycle-managing the distinctive technical data points and metadata that uniquely define both human users and NHIs."
   
   - name: "Lifecycle management"
     isnew: false
     status: none
-    detail: "Joiner-mover-leaver provisioning workflows; role mining and assignment; periodic access certification; deprovisioning SLA enforcement; orphaned account remediation."
+    detail: "Identity Lifecycle Management is the administrative and technical activities required to manage a human digital identity or NHI throughout its lifecycle - creation, modification, and deactivation."
   
-  - name: "mDL-based proofing"
+  - name: "Mobile Driver License-based Proofing"
     isnew: false
     status: none
-    detail: "mDL as an IAL2 identity evidence source; ISO 18013-5 device authentication confirms document authenticity; selective attribute disclosure minimizes data exposure during proofing."
+    detail: "ISO 18013-5 compliant mDLs, a cryptographically signed digital credential by a state  DMV and provisioned directly to the holder’s secure device wallet qualifies as SUPERIOR identity evidence (NIST SP 800-63A-4)"
+
+  - name: "Fraud Detection and Mitigation"
+    isnew: false
+    status: none
+    detail: |
+    Fraud Detection involves implementing comprehensive surveillance and monitoring techniques to identify unusual or unauthorized activities. This includes analyzing system access logs for anomalies, utilizing advanced analytics and machine learning tools to detect patterns indicative of fraud, and employing phishing resistant multi-factor authentication. Agencies should also incorporate deepfake detection tools that analyze video and audio for inconsistencies that may indicate manipulation. Establishing internal hotlines for reporting suspicious activities and regularly auditing identity management systems to ensure compliance with security protocols are also crucial steps.
+
+
+    Fraud Mitigation includes immediately revoking access to compromised accounts, contacting relevant authorities and internal security teams, and notifying potentially affected individuals or departments. Agencies should deploy incident response teams to perform a comprehensive analysis of the breach and implement temporary measures such as suspending system components involved in the fraud.
   
   - name: "FIDO2 device binding"
     isnew: false
