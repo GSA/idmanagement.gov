@@ -9,7 +9,7 @@ ramp: blue
 summary: "The set of practices that enables only those permitted the ability to perform an action on a particular resource. The three most common Access Management services you encounter every day perhaps without realizing it are: Policy Administration, Authentication, and Authorization."
 
 capabilities:
-  - name: "Authentication — AAL1–3"
+  - name: "Authentication"
     isnew: false
     status: DRAFT
     detail: "Single-factor through hardware-bound phishing-resistant MFA; NIST SP 800-63B AAL requirements; risk-based and step-up authentication policies; session management and re-authentication intervals."
