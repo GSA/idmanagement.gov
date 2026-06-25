@@ -11,7 +11,7 @@ summary: "The set of practices that enables only those permitted the ability to 
 capabilities:
   - name: "Authentication"
     isnew: false
-    status: DRAFT
+    status: none
     detail: "Verifying the identity of a human or NHI user, process, or device, often as a prerequisite to allowing access to resources in an information system"
   
   - name: "Authorization"
@@ -57,7 +57,7 @@ capabilities:
 
 references:
   - label: "NIST SP 800-63B"
-    isnew: true
+    isnew: false
     status: DEPRECATED
   - label: "NIST SP 800-116r1"
     isnew: false
