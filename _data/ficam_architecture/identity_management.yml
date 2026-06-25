@@ -32,7 +32,7 @@ capabilities:
   - name: "Fraud Detection and Mitigation"
     isnew: false
     status: none
-    detail: |
+    detail: >
     Fraud Detection involves implementing comprehensive surveillance and monitoring techniques to identify unusual or unauthorized activities. This includes analyzing system access logs for anomalies, utilizing advanced analytics and machine learning tools to detect patterns indicative of fraud, and employing phishing resistant multi-factor authentication. Agencies should also incorporate deepfake detection tools that analyze video and audio for inconsistencies that may indicate manipulation. Establishing internal hotlines for reporting suspicious activities and regularly auditing identity management systems to ensure compliance with security protocols are also crucial steps.
 
 
