@@ -12,7 +12,7 @@ capabilities:
   - name: "Identity governance"
     isnew: false
     status: none
-    detail: "Role lifecycle management, periodic access certification campaigns, segregation of duties controls, and entitlement review workflows."
+    detail: "The systems, solutions, and rules that link enterprise personnel, NHIs, applications, and data to help agencies manage access and risk."
   
   - name: "Privileged access mgmt"
     isnew: false
