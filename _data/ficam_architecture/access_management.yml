@@ -4,7 +4,7 @@
 id: access
 label: "Access"
 isnew: false
-status: UPDATED
+status: none
 ramp: blue
 summary: "The set of practices that enables only those permitted the ability to perform an action on a particular resource. The three most common Access Management services you encounter every day perhaps without realizing it are: Policy Administration, Authentication, and Authorization."
 
@@ -12,47 +12,48 @@ capabilities:
   - name: "Authentication"
     isnew: false
     status: DRAFT
-    detail: "Single-factor through hardware-bound phishing-resistant MFA; NIST SP 800-63B AAL requirements; risk-based and step-up authentication policies; session management and re-authentication intervals."
+    detail: "Verifying the identity of a human or NHI user, process, or device, often as a prerequisite to allowing access to resources in an information system"
   
   - name: "Authorization"
     isnew: false
     status: none
-    detail: "RBAC, ABAC, and Policy-Based Access Control (PBAC); real-time attribute resolution against authoritative sources; zero-standing privilege enforcement; policy decision and enforcement points."
+    detail: "The right or a permission that is granted to a system entity to access a system resource."
   
-  - name: "Privileged access"
+  - name: "Privileged Access Management (PAM)"
     isnew: false
     status: none
-    detail: "PAM credential vaulting; just-in-time privilege elevation; privileged session recording and monitoring; break-glass procedures; MFA required for all privileged operations."
+    detail: "Monitoring, controlling and auditing the use of privileged accounts which include local and domain administrative accounts, emergency accounts, application management, and service accounts. Privilege accounts provide elevated, often nonrestricted, access to IT resources and technology."
   
-  - name: "Physical access — PACS"
+  - name: "Physical Access Systems (PACS)"
     isnew: false
     status: none
-    detail: "PIV and mPIV-capable card readers; PACS controllers; FICAM PACS topology (E-PACS); visitor management; SP 800-116r1 PIV-in-PACS implementation guidance."
+    detail: "a collection of technologies that control physical access at one or more federal agency sites by electronically authenticating employees, contractors, and visitors."
   
   - name: "mPIV authentication"
     isnew: false
     status: none
-    detail: "NFC tap and BLE proximity presentation at PACS readers for physical access; certificate-based logical access using PIV auth certificate; MDM device health posture as additional factor."
+    detail: "Performed using hardware-backed cryptographic keys and PKI certificates stored within a mobile digital wallet. Relying parties (agencies) verify these credentials via remote online protocols or local wireless connections, e.g., NFC or BLE after the user approves the transaction using a PIN or biometrics."
   
   - name: "FIDO2 authentication"
     isnew: false
     status: none
-    detail: "WebAuthn relying party integration; CTAP2 authenticator protocol; origin-scoped credentials prevent credential phishing; primary mechanism for OMB M-22-09 phishing-resistant MFA compliance."
-  
-  - name: "PQC-secured channels"
-    isnew: false
-    status: none
-    detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions."
+    detail: "FIDO2 is phishing resistant MFA based on public key cryptography combining WebAuthn and the FIDO Alliance's Client to Authenticator Protocol (CTAP2) standard."
+
+  ## RECOMMEND REMOVING THIS ALTOGETHER.  We can include in narrative in the PQC section. -- cjb
+  # - name: "PQC-secured channels"
+  #   isnew: false
+  #   status: none
+  #   detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions."
   
   - name: "VC-based authorization"
     isnew: false
     status: none
-    detail: "Holder presents VC at resource server; verifier validates issuer signature offline; fine-grained ABAC using structured entitlement claims; no real-time issuer query required for access decision."
+    detail: "The holder presents a VC to the resource server; the verifier validates the issuer's signature offline and applies fine-grained ABAC using structured entitlement claims, with no real-time issuer query required."
   
   - name: "Digital services / SSO"
     isnew: false
     status: none
-    detail: "Agency identity provider (IdP) issuing SAML assertions or OIDC tokens; max.gov for inter-agency SSO; session management; MFA enforcement at IdP; step-up authentication for sensitive transactions."
+    detail: "An authentication process by which one account and its authenticators are used to access multiple applications in a seamless manner, generally implemented with a federation protocol."
 
 references:
   - label: "NIST SP 800-63B"
