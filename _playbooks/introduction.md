@@ -26,6 +26,7 @@ subnav:
         <div class="usa-card__media">
         <div class="usa-card__img">
                 <img
+                fetchpriority="high"
                 src="{{site.baseurl}}{{playbook.header}}"
                 alt="{{playbook.title}}"
                 tabindex="-1" aria-label="{{playbook.title}}" />
