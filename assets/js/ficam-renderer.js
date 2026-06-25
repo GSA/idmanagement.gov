@@ -347,7 +347,7 @@ class FicamSectionRenderer {
     });
 
     // References
-    body.appendChild(this.createRowLabel('References'));
+    body.appendChild(this.createRowLabel('Policies & Standards'));
     const referencesRow = document.createElement('div');
     referencesRow.className = 'tags-row';
     referencesRow.style.display = 'flex';
