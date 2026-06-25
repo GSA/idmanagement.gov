@@ -9,35 +9,35 @@ ramp: purple
 summary: "Migration from quantum-vulnerable algorithms to NIST-standardized PQC across all ICAM systems"
 
 capabilities:
-  - name: "ML-KEM — FIPS 203"
+  - name: "ML-KEM (FIPS 203)"
     isnew: true
     status: none
-    detail: "Module-Lattice Key Encapsulation Mechanism; replaces RSA and ECDH for key exchange in TLS sessions, PIV key transport, and encrypted token containers."
+    detail: "A key-encapsulation mechanism (KEM) is a set of algorithms that, under certain conditions, can be used by two parties to establish a shared secret key over a public channel. A shared secret key that is securely established using a KEM can then be used with symmetric-key cryptographic algorithms to perform basic tasks in secure communications, such as encryption and authentication."
   
-  - name: "ML-DSA — FIPS 204"
+  - name: "ML-DSA (FIPS 204)"
     isnew: true
     status: none
-    detail: "Module-Lattice Digital Signature Algorithm; replaces RSA/ECDSA for certificate signing, SAML and OIDC token signing, and VC issuer signatures."
+    detail: "A set of lattice-based algorithms that can be used to generate and verify digital signatures. ML-DSA is  believed to be secure, even against adversaries in possession of a large-scale quantum computer."
   
-  - name: "SLH-DSA — FIPS 205"
+  - name: "SLH-DSA (FIPS 205)"
     isnew: true
     status: none
-    detail: "Stateless hash-based digital signature algorithm; preferred for high-assurance long-lived signing such as root CA certificates and firmware signing."
+    detail: "SLH-DSA stands for Stateless Hash-Based Digital Signature Algorithm.  Based on SPHINCS+, which was selected for standardization as part of the NIST Post-Quantum Cryptography Standardization process."
   
   - name: "Crypto-agile PKI"
     isnew: true
     status: none
-    detail: "Algorithm-agile CA infrastructure supporting dual-stack certificate issuance; FPKI PQC migration workstream led by GSA and the FPKI Policy Authority."
+    detail: "Crypto-Agile PKI refers to the capabilities needed to replace and adapt cryptographic algorithms in protocols, applications, software, hardware, firmware, and infrastructures while preserving security and ongoing operations. The transition to post-quantum cryptography (PQC) has highlighted significant challenges to adapting applications to new algorithms."
   
   - name: "Hybrid classical + PQ"
     isnew: true
     status: none
     detail: "Pairing a classical algorithm with a PQC algorithm in the same certificate or key exchange; maintains backward compatibility with non-PQC-capable relying parties during migration."
   
-  - name: "Harvest-now-decrypt-later"
+  - name: "Harvest Now, Decrypt Later (HNDL) threat"
     isnew: true
     status: none
-    detail: "Adversaries collecting encrypted ICAM traffic today for future quantum decryption; prioritize TLS migration and long-lived identity records for early remediation per OMB M-23-02."
+    detail: "Globally, adversaries are actively intercepting and storing encrypted data today even though they cannot read it yet, with plans to decrypt it the moment cryptographically relevant quantum computers (CRQC) are available. Prioritize TLS migration and long-lived identity records for early remediation per OMB M-23-02."
   
   - name: "Cryptographic inventory"
     isnew: true
@@ -64,6 +64,12 @@ references:
     isnew: false
     status: none
   - label: "NIST SP 800-131Ar3"
+    isnew: false
+    status: none
+  - label: "EO 14409"
+    isnew: false
+    status: none
+  - label: "EO 14411"
     isnew: false
     status: none
 
