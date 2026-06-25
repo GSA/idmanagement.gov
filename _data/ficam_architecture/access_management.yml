@@ -6,7 +6,7 @@ label: "Access"
 isnew: false
 status: UPDATED
 ramp: blue
-summary: "Authenticate identities and enforce authorization policies for logical and physical access"
+summary: "The set of practices that enables only those permitted the ability to perform an action on a particular resource. The three most common Access Management services you encounter every day perhaps without realizing it are: Policy Administration, Authentication, and Authorization."
 
 capabilities:
   - name: "Authentication — AAL1–3"
