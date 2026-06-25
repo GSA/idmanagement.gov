@@ -8,12 +8,7 @@ status: none
 ramp: gray
 summary: "Enterprise ICAM program oversight, policy alignment, and risk management"
 
-capabilities:
-  - name: "Policy & standards"
-    isnew: false
-    status: none
-    detail: "FISMA, OMB M-19-17, M-22-09, NIST SP 800-63 and 800-53, agency ICAM policy statements, and the FICAM Architecture v3.3."
-  
+capabilities:  
   - name: "Identity governance"
     isnew: false
     status: none
