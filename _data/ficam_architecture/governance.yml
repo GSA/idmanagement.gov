@@ -1,0 +1,83 @@
+# FICAM Architecture Layer: Governance
+# Enterprise ICAM program oversight, policy alignment, and risk management
+
+id: gov
+label: Governance
+isnew: false
+status: none
+ramp: gray
+summary: "Enterprise ICAM program oversight, policy alignment, and risk management"
+
+capabilities:  
+  - name: "Identity governance"
+    isnew: false
+    status: none
+    detail: "The systems, solutions, and rules that link enterprise personnel, NHIs, applications, and data to help agencies manage access and risk."
+  
+  - name: "Analytics"
+    isnew: false
+    status: none
+    detail: "Continuous analytics data to identify if an individual or NHI has entitlements that conflict with access requirements."
+
+  - name: "Mitigation"
+    isnew: false
+    status: none
+    detail: "Correct the problems and address risks discovered by analysis that may occur during standard operations."
+
+  - name: "Cryptographic Inventory"
+    isnew: false
+    status: none
+    detail: "OMB Memorandum M-23-02 requires agencies to submit annual cryptographic inventories, focusing heavily on identifying high-value assets (HVAs) and systems processing Controlled Unclassified Information (CUI)."
+
+  - name: "User Entity and Behavior Analytics (UEBA)"
+    isnew: false
+    status: none
+    detail: "The process of collecting activity data on people and nonperson entities, applying advanced analytics and comparing the results to accepted baselines and peer activities."
+
+  - name: "Security Orchestration, Automation and Response (SOAR)"
+    isnew: false
+    status: none
+    detail: "Security Orchestration, Automation and Response (SOAR) is used security to continuously monitor log events for known malicious and suspicious activity and to generate reports on their findings"
+
+  - name: "Identity Governance and Administration (IGA)"
+    isnew: false
+    status: none
+    detail: "Identity governance and administration (IGA) is the cybersecurity discipline that manages regulatory compliance for digital identities and user access rights in a computer system. "
+
+  ## Commented out, not in Markup for Changes (clean v2) - cjb 
+  # - name: "Privileged access mgmt"
+  #   isnew: false
+  #   status: none
+  #   detail: "Just-in-time access provisioning, session recording and monitoring, least-privilege enforcement, and PAM credential vaulting."
+  
+  # - name: "Audit & compliance"
+  #   isnew: false
+  #   status: none
+  #   detail: "Continuous monitoring of ICAM controls, ICAM metrics reporting, POA&M tracking, and inspector general audit support."
+  
+  # - name: "Program management"
+  #   isnew: false
+  #   status: none
+  #   detail: "ICAM PMO structure, governance board charters, capital planning, and performance measurement under the federal ICAM common baseline."
+
+references:
+  - label: "NIST SP 800-53"
+    isnew: false
+    status: none
+  - label: "NIST SP 800-63"
+    isnew: false
+    status: none
+  - label: "OMB M-19-17"
+    isnew: false
+    status: none
+  - label: "OMB M-22-09"
+    isnew: false
+    status: none
+  - label: "EO 14028"
+    isnew: false
+    status: none
+  - label: "FICAM Architecture v3.3"
+    isnew: false
+    status: none
+
+documents: []

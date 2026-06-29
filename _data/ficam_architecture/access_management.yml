@@ -1,0 +1,96 @@
+# FICAM Practice Area: Access Management
+# Authenticate identities and enforce authorization policies for logical and physical access
+
+id: access
+label: "Access"
+isnew: false
+status: none
+ramp: blue
+summary: "The set of practices that enables only those permitted the ability to perform an action on a particular resource. The three most common Access Management services you encounter every day perhaps without realizing it are: Policy Administration, Authentication, and Authorization."
+
+capabilities:
+  - name: "Authentication"
+    isnew: false
+    status: none
+    detail: "Verifying the identity of a human or NHI user, process, or device, often as a prerequisite to allowing access to resources in an information system"
+  
+  - name: "Authorization"
+    isnew: false
+    status: none
+    detail: "The right or a permission that is granted to a system entity to access a system resource."
+  
+  - name: "Privileged Access Management (PAM)"
+    isnew: false
+    status: none
+    detail: "Monitoring, controlling and auditing the use of privileged accounts which include local and domain administrative accounts, emergency accounts, application management, and service accounts. Privilege accounts provide elevated, often nonrestricted, access to IT resources and technology."
+  
+  - name: "Physical Access Systems (PACS)"
+    isnew: false
+    status: none
+    detail: "a collection of technologies that control physical access at one or more federal agency sites by electronically authenticating employees, contractors, and visitors."
+  
+  - name: "mPIV authentication"
+    isnew: false
+    status: none
+    detail: "Performed using hardware-backed cryptographic keys and PKI certificates stored within a mobile digital wallet. Relying parties (agencies) verify these credentials via remote online protocols or local wireless connections, e.g., NFC or BLE after the user approves the transaction using a PIN or biometrics."
+  
+  - name: "FIDO2 authentication"
+    isnew: false
+    status: none
+    detail: "FIDO2 is phishing resistant MFA based on public key cryptography combining WebAuthn and the FIDO Alliance's Client to Authenticator Protocol (CTAP2) standard."
+
+  ## RECOMMEND REMOVING THIS ALTOGETHER.  We can include in narrative in the PQC section. -- cjb
+  # - name: "PQC-secured channels"
+  #   isnew: false
+  #   status: none
+  #   detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions."
+  
+  - name: "VC-based authorization"
+    isnew: false
+    status: none
+    detail: "The holder presents a VC to the resource server; the verifier validates the issuer's signature offline and applies fine-grained ABAC using structured entitlement claims, with no real-time issuer query required."
+  
+  - name: "Digital services / SSO"
+    isnew: false
+    status: none
+    detail: "An authentication process by which one account and its authenticators are used to access multiple applications in a seamless manner, generally implemented with a federation protocol."
+
+references:
+  - label: "NIST SP 800-63B"
+    isnew: false
+    status: none
+  - label: "NIST SP 800-116r1"
+    isnew: false
+    status: none
+  - label: "FIDO2 / WebAuthn W3C"
+    isnew: false
+    status: none
+  - label: "NIST FIPS 203"
+    isnew: false
+    status: none
+  - label: "OMB M-22-09"
+    isnew: false
+    status: none
+  - label: "OID4VP"
+    isnew: false
+    status: none
+  - label: "SAML 2.0"
+    isnew: false
+    status: none
+  - label: "OIDC / OAuth 2.0"
+    isnew: false
+    status: none
+
+documents:
+  - id: fido2
+    isnew: false
+    status: none
+  - id: mpiv
+    isnew: false
+    status: none
+  - id: pqc
+    isnew: false
+    status: none
+  - id: vc
+    isnew: false
+    status: none

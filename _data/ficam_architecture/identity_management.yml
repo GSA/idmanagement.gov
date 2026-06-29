@@ -1,0 +1,92 @@
+# FICAM Practice Area: Identity Management
+# Collect, verify, and manage attributes to establish and maintain enterprise identities
+
+id: identity
+label: "Identity"
+isnew: false
+status: none
+ramp: purple
+summary: "How an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise human identities and NHIs."
+
+capabilities:
+  - name: "Identity proofing"
+    isnew: false
+    status: none
+    detail: "The processes used to collect, validate, and verify information about a subject to establish assurance in the subject’s claimed identity."
+  
+  - name: "Attribute management"
+    isnew: false
+    status: none
+    detail: "Attribute management includes orchestrating, validating, and lifecycle-managing the distinctive technical data points and metadata that uniquely define both human users and NHIs."
+  
+  - name: "Lifecycle management"
+    isnew: false
+    status: none
+    detail: "Identity Lifecycle Management is the administrative and technical activities required to manage a human digital identity or NHI throughout its lifecycle - creation, modification, and deactivation."
+  
+  - name: "Mobile Driver License-based Proofing"
+    isnew: false
+    status: none
+    detail: "ISO 18013-5 compliant mDLs, a cryptographically signed digital credential by a state  DMV and provisioned directly to the holder’s secure device wallet qualifies as SUPERIOR identity evidence (NIST SP 800-63A-4)"
+
+  - name: "Fraud Detection and Mitigation"
+    isnew: false
+    status: none
+    detail: "Fraud Detection involves analyzing access logs for anomalies, applying machine learning to identify fraudulent patterns, requiring phishing-resistant MFA, and deploying deepfake detection tools, with internal reporting hotlines and periodic audits reinforcing compliance. Fraud Mitigation requires revoking compromised account access, notifying authorities, security teams, and affected parties, and deploying incident response teams to analyze breaches and suspend compromised system components."
+  
+  - name: "FIDO2 device binding"
+    isnew: false
+    status: none
+    detail: "Authenticator enrollment tied to a proofed enterprise identity; AAGUID-based allowlisting for permitted authenticator models; device attestation records maintained in identity registry."
+  
+  - name: "mPIV enrollment"
+    isnew: false
+    status: none
+    detail: "FIPS 201-3 compliant enrollment on mobile secure element; in-person biometric capture at initial enrollment; remote re-enrollment for existing PIV holders using on-file biometric."
+  
+  - name: "VC issuance workflow"
+    isnew: false
+    status: none
+    detail: "Agency acting as VC issuer for employment, role, and entitlement credentials; SD-JWT attribute packaging for selective disclosure; credential bound to holder's enterprise identity."
+  
+  - name: "Privacy by design"
+    isnew: false
+    status: none
+    detail: "Minimum-necessary data collection at proofing; informed consent management; Privacy Act of 1974 compliance; Privacy Impact Assessment (PIA) requirements for ICAM systems."
+
+references:
+  - label: "NIST SP 800-63A"
+    isnew: false
+    status: none
+  - label: "FIPS 201-3"
+    isnew: false
+    status: none
+  - label: "NIST SP 800-157r1"
+    isnew: false
+    status: none
+  - label: "ISO 18013-5"
+    isnew: false
+    status: none
+  - label: "W3C VC DM 2.0"
+    isnew: false
+    status: none
+  - label: "Privacy Act of 1974"
+    isnew: false
+    status: none
+  - label: "OMB M-03-22"
+    isnew: false
+    status: none
+
+documents:
+  - id: mdl
+    isnew: false
+    status: none
+  - id: fido2
+    isnew: false
+    status: none
+  - id: mpiv
+    isnew: false
+    status: none
+  - id: vc
+    isnew: false
+    status: none
