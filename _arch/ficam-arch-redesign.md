@@ -2,7 +2,7 @@
 
 layout: page
 sidenav: arch
-title:  FICAM Arch - Demo (Dev 2)
+title:  FICAM Arch - Demo (Dev)
 permalink: /development/
 sticky_sidenav: true
 
