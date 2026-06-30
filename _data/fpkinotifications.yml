@@ -32,6 +32,21 @@
 # ee_ocsp_uri:
 #
 
+- notice_date: June 29, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to issue a new certificate to Entrust Managed Services Root CA between 7/10/2026 and 7/16/2023.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: June 18, 2026
   change_type: Intent to Issue CA Certificate
   system: Entrust PKI SSP
