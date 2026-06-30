@@ -70,20 +70,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 Use `renderer.renderSection(sectionData, true)` for a single architecture layer box. Use `renderer.renderPractices(practicesArray, container)` for the three-box practice row.
 
-## Current Document Tag Display Status
+## Current Reference And Document Display
 
-As of 2026-06-23, document tag display has been intentionally commented out without changing the site structure or YAML data files.
+References and documents are controlled independently in each section YAML file.
 
-- The per-section **Document sections** rows are commented out in `assets/js/ficam-renderer.js`.
-- The bottom five document tags are commented out in `_arch/ficam-arch-redesign.md` by disabling `renderer.renderDocBar(DOCS, 'document-links')`.
-- The `DOCS` JavaScript object, `_data/ficam_architecture/documents.yml`, and `<div id="document-links"></div>` container remain in place.
-- To restore document tags later, uncomment the document-links block in `assets/js/ficam-renderer.js` and the `renderer.renderDocBar(DOCS, 'document-links')` call in `_arch/ficam-arch-redesign.md`.
+- `references_enabled: true` displays the **References** row. Set it to `false` to hide references for that section.
+- `documents_enabled: false` hides the **Document sections** row by default. Set it to `true` to display documents for that section.
+- Reference and document badges are in-page triggers. Selecting a badge opens a lower detail panel with a divider, linked title, and optional description.
+- The detail-panel title uses the stored `link` value, opens in a new tab, and uses the USWDS external-link style.
+- The bottom document tag bar remains disabled in `_arch/ficam-arch-redesign.md` by leaving `renderer.renderDocBar(DOCS, 'document-links')` commented out.
 
 ---
 
 ## How Component Styles Are Used
 
 The component styles live in `_sass/ficam-components.scss`. This file is a Sass partial: it contains the actual rules for architecture boxes, capability rows, document tags, the three-column practice grid, color ramps, and responsive behavior.
+
+Section box spacing is controlled by the `.section` rule in `_sass/ficam-components.scss`. The current padding is `10px 14px 13px`, giving each section 3px more bottom space for visual balance.
 
 Jekyll does not publish files from `_sass/` directly. Instead, the page loads the compiled stylesheet from this entrypoint:
 
@@ -218,22 +221,37 @@ capabilities:                         # Array of capabilities
     status: none                     # UPDATED, DRAFT, WITHDRAWN, or DEPRECATED displays beside the heading
     detail: "FISMA, OMB M-19-17..."  # Detailed explanation (shown on expand)
 
-references:                           # Array of references displayed under the References heading
-  - label: "NIST SP 800-53"
+references_enabled: true               # False hides the References row for this section
+references:                           # Array of reference badges displayed under References
+  - title: "NIST SP 800-53"
+    link: "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    description: "Security and privacy control catalog..."
     isnew: false                     # True displays a New tag beside this reference
     status: none                     # UPDATED, DRAFT, WITHDRAWN, or DEPRECATED displays on the reference tag
-  - label: "NIST SP 800-63"
+  - title: "NIST SP 800-63"
+    link: "https://csrc.nist.gov/pubs/sp/800/63/4/final"
+    description: "Digital identity guidelines..."
     isnew: false
     status: none
 
-documents:                            # Array of document section IDs to link
+documents_enabled: false               # True displays the Document sections row for this section
+documents:                            # Array of document section badges
   - id: mdl
+    title: "mDL"
+    link: "#mdl"
+    description: "Mobile driver's license material..."
     isnew: false                     # True displays a New tag beside this document tag
     status: none
   - id: fido2
+    title: "FIDO2"
+    link: "#fido2"
+    description: "FIDO2 and WebAuthn material..."
     isnew: false
     status: none
   - id: pqc
+    title: "PQC"
+    link: "#pqc"
+    description: "Post-quantum cryptography material..."
     isnew: false
     status: none
 ```
@@ -285,16 +303,26 @@ capabilities:
        status: none
        detail: "All data encrypted in transit..."
    
+   references_enabled: true
    references:
-     - label: "NIST SP 800-207"
+     - title: "NIST SP 800-207"
+       link: "https://csrc.nist.gov/pubs/sp/800/207/final"
+       description: "NIST zero trust architecture guidance."
        isnew: false
        status: none
    
+   documents_enabled: false
    documents:
      - id: fido2
+       title: "FIDO2"
+       link: "#fido2"
+       description: "FIDO2 and WebAuthn material covering phishing-resistant authentication."
        isnew: false
        status: none
      - id: pqc
+       title: "PQC"
+       link: "#pqc"
+       description: "Post-quantum cryptography material covering migration planning."
        isnew: false
        status: none
    ```
@@ -342,67 +370,75 @@ Choose from these predefined color schemes:
 
 ## Document References
 
-The `documents` field controls which document tags appear inside an expanded architecture box. Each value must match a key in `_data/ficam_architecture/documents.yml`.
+The `documents_enabled` field controls whether document badges appear inside an expanded architecture box. It defaults to `false`; set it to `true` in an individual section file to display that section's document badges.
+
+The `documents` field lists the document badges available for that section. Keep the `id` value so the renderer can fall back to `_data/ficam_architecture/documents.yml`, and include `title`, `link`, and `description` directly in the section file when you want the section to be self-documenting or override shared values.
 
 ```yaml
+documents_enabled: true
 documents:
-  - mdl      # #mdl section on the page
-  - fido2    # #fido2 section on the page
-  - mpiv     # #mpiv section on the page
-  - pqc      # #pqc section on the page
-  - vc       # #vc section on the page
+  - id: mdl
+    title: "mDL"
+    link: "#mdl"
+    description: "Mobile driver's license material covering ISO/IEC 18013-based identity evidence and presentation patterns."
+    isnew: false
+    status: none
 ```
 
-The tag label, color, and link target are defined in `_data/ficam_architecture/documents.yml`:
+Shared fallback values are defined in `_data/ficam_architecture/documents.yml`:
 
 ```yaml
 mdl:
-  label: "mDL"
+  title: "mDL"
   ramp: "amber"
-  url: "#mdl"
+  link: "#mdl"
+  description: "Mobile driver's license material..."
 ```
 
-### Making Document Tags Linkable
+### Making Document Detail Titles Linkable
 
-To make a document tag clickable, add or update its `url` in `_data/ficam_architecture/documents.yml`.
+Reference and document badges open an in-page detail panel. The title inside that panel is the link. Add or update `link` in the relevant YAML entry.
 
 Use a same-page anchor when the target appears on the current page:
 
 ```yaml
 mdl:
-  label: "mDL"
+  title: "mDL"
   ramp: "amber"
-  url: "#mdl"
+  link: "#mdl"
 ```
 
 Use a site-relative path when the target is another page on idmanagement.gov:
 
 ```yaml
 fido2:
-  label: "FIDO2"
+  title: "FIDO2"
   ramp: "green"
-  url: "/implement/gsa-guide/"
+  link: "/implement/gsa-guide/"
 ```
 
 Use a full URL when linking to an external site:
 
 ```yaml
 pqc:
-  label: "PQC"
+  title: "PQC"
   ramp: "purple"
-  url: "https://csrc.nist.gov/projects/post-quantum-cryptography"
+  link: "https://csrc.nist.gov/projects/post-quantum-cryptography"
 ```
 
 Then reference the document key from any section YAML file:
 
 ```yaml
 documents:
-  - mdl
-  - fido2
-  - pqc
+  - id: mdl
+    title: "mDL"
+    link: "#mdl"
+    description: "Mobile driver's license material..."
+    isnew: false
+    status: none
 ```
 
-The renderer displays each referenced document as a clickable tag with an arrow. External `http://` and `https://` links open in a new tab; same-page anchors and site-relative links stay in the current tab.
+The renderer displays each referenced document as a trigger badge. Selecting it opens the lower detail panel. The title in that panel is the actual link and opens in a new tab.
 
 ---
 
@@ -479,11 +515,17 @@ renderer.renderHint('Custom hint text', 'container-id');
 
 ```yaml
 references:
-  - label: "SAML 2.0"
+  - title: "SAML 2.0"
+    link: "https://docs.oasis-open.org/security/saml/v2.0/"
+    description: "Federation standard for exchanging security assertions."
     isnew: false
-  - label: "OIDC / OAuth 2.0"
+  - title: "OIDC / OAuth 2.0"
+    link: "https://openid.net/developers/specs/"
+    description: "Protocol family for modern sign-in and delegated authorization."
     isnew: false
-  - label: "NEW REFERENCE HERE"
+  - title: "NEW REFERENCE HERE"
+    link: "https://example.gov/reference"
+    description: "Short explanation shown in the reference detail panel."
     isnew: true
 ```
 
@@ -502,16 +544,28 @@ capabilities:
 1. Add to `_data/ficam_architecture/documents.yml`:
    ```yaml
    bts:
-     label: "BTS"
+     title: "BTS"
      ramp: "teal"
-     url: "#bts"
+     link: "#bts"
+     description: "Brief description shown in the document detail panel."
    ```
 
 2. Add to section's `documents` array:
    ```yaml
+   documents_enabled: true
    documents:
-     - mdl
-     - bts  # NEW
+     - id: mdl
+       title: "mDL"
+       link: "#mdl"
+       description: "Mobile driver's license material..."
+       isnew: false
+       status: none
+     - id: bts
+       title: "BTS"
+       link: "#bts"
+       description: "Brief description shown in the document detail panel."
+       isnew: true
+       status: none
    ```
 
 ### Add Multiple New Capabilities

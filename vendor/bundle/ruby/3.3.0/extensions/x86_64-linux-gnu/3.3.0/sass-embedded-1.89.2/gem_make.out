@@ -1,0 +1,5 @@
+current directory: /home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.89.2/ext/sass
+/usr/bin/ruby3.3 -I/usr/lib/ruby/vendor_ruby -rrubygems /home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/gems/rake-13.3.0/exe/rake RUBYARCHDIR\=/home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux-gnu/3.3.0/sass-embedded-1.89.2 RUBYLIBDIR\=/home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux-gnu/3.3.0/sass-embedded-1.89.2
+gem install --force --install-dir /home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.89.2/ext/sass/ruby --no-document --ignore-dependencies --platform x86_64-linux-gnu --version 1.89.2 sass-embedded
+mv /home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.89.2/ext/sass/ruby/gems/sass-embedded-1.89.2-x86_64-linux-gnu/ext/sass/dart-sass dart-sass
+rm -rf /home/merc/Projects/IDM/idmanagement.gov/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.89.2/ext/sass/ruby

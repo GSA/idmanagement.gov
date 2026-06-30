@@ -60,24 +60,38 @@ capabilities:
   #   status: none
   #   detail: "ICAM PMO structure, governance board charters, capital planning, and performance measurement under the federal ICAM common baseline."
 
+references_enabled: true
 references:
-  - label: "NIST SP 800-53"
+  - title: "NIST SP 800-53"
+    link: "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    description: "Security and privacy control catalog used to govern federal systems and assess ICAM-related control implementation."
     isnew: false
     status: none
-  - label: "NIST SP 800-63"
+  - title: "NIST SP 800-63"
+    link: "https://csrc.nist.gov/pubs/sp/800/63/4/final"
+    description: "Digital identity guidelines covering identity proofing, authentication, and federation requirements."
     isnew: false
     status: none
-  - label: "OMB M-19-17"
+  - title: "OMB M-19-17"
+    link: "https://bidenwhitehouse.archives.gov/wp-content/uploads/2019/05/M-19-17.pdf"
+    description: "Federal identity, credential, and access management policy memorandum establishing enterprise ICAM expectations."
     isnew: false
     status: none
-  - label: "OMB M-22-09"
+  - title: "OMB M-22-09"
+    link: "https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/01/M-22-09.pdf"
+    description: "Federal zero trust strategy memorandum that ties identity modernization to stronger access control."
     isnew: false
     status: none
-  - label: "EO 14028"
+  - title: "EO 14028"
+    link: "https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity"
+    description: "Executive order directing federal cybersecurity modernization, including zero trust and stronger identity practices."
     isnew: false
     status: none
-  - label: "FICAM Architecture v3.3"
+  - title: "FICAM Architecture v3.3"
+    link: "https://playbooks.idmanagement.gov/arch/"
+    description: "Governmentwide FICAM architecture reference describing ICAM practice areas, services, and supporting elements."
     isnew: false
     status: none
 
+documents_enabled: false
 documents: []
