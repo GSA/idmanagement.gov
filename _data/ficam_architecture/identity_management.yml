@@ -54,39 +54,67 @@ capabilities:
     status: none
     detail: "Minimum-necessary data collection at proofing; informed consent management; Privacy Act of 1974 compliance; Privacy Impact Assessment (PIA) requirements for ICAM systems."
 
+references_enabled: true
 references:
-  - label: "NIST SP 800-63A"
+  - title: "NIST SP 800-63A"
+    link: "https://csrc.nist.gov/pubs/sp/800/63/a/4/final"
+    description: "Identity proofing and enrollment guidance for collecting, validating, and verifying identity evidence."
     isnew: false
     status: none
-  - label: "FIPS 201-3"
+  - title: "FIPS 201-3"
+    link: "https://csrc.nist.gov/pubs/fips/201/3/final"
+    description: "Federal PIV standard defining requirements for identity credentials issued to employees and contractors."
     isnew: false
     status: none
-  - label: "NIST SP 800-157r1"
+  - title: "NIST SP 800-157r1"
+    link: "https://csrc.nist.gov/pubs/sp/800/157/r1/final"
+    description: "Guidance for derived PIV credentials and mobile credential enrollment tied to an established identity."
     isnew: false
     status: none
-  - label: "ISO 18013-5"
+  - title: "ISO 18013-5"
+    link: "https://www.iso.org/standard/69084.html"
+    description: "Mobile driver's license standard relevant to high-quality identity evidence and wallet-based presentation."
     isnew: false
     status: none
-  - label: "W3C VC DM 2.0"
+  - title: "W3C VC DM 2.0"
+    link: "https://www.w3.org/TR/vc-data-model-2.0/"
+    description: "Verifiable credential data model for representing issuer-signed identity, role, and entitlement claims."
     isnew: false
     status: none
-  - label: "Privacy Act of 1974"
+  - title: "Privacy Act of 1974"
+    link: "https://www.justice.gov/opcl/privacy-act-1974"
+    description: "Privacy law governing federal collection, maintenance, use, and disclosure of records about individuals."
     isnew: false
     status: none
-  - label: "OMB M-03-22"
+  - title: "OMB M-03-22"
+    link: "https://georgewbush-whitehouse.archives.gov/omb/memoranda/m03-22.html"
+    description: "OMB guidance for privacy policies and data collection practices on federal websites."
     isnew: false
     status: none
 
+documents_enabled: false
 documents:
   - id: mdl
+    title: "mDL"
+    link: "#mdl"
+    description: "Mobile driver's license material covering ISO/IEC 18013-based identity evidence and presentation patterns."
     isnew: false
     status: none
   - id: fido2
+    title: "FIDO2"
+    link: "#fido2"
+    description: "FIDO2 and WebAuthn material covering phishing-resistant authentication, passkeys, and authenticator trust signals."
     isnew: false
     status: none
   - id: mpiv
+    title: "mPIV"
+    link: "#mpiv"
+    description: "Mobile PIV material covering derived and mobile credentials, wallet storage, and PIV-aligned authentication flows."
     isnew: false
     status: none
   - id: vc
+    title: "VC"
+    link: "#vc"
+    description: "Verifiable credential material covering issuer-signed claims, holder-controlled presentation, and verifier validation."
     isnew: false
     status: none

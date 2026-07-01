@@ -44,39 +44,64 @@ capabilities:
     status: none
     detail: "Agency-wide inventory of quantum-vulnerable ICAM systems, credentials, and protocols; mandatory per OMB M-23-02; used to prioritize migration sequencing."
 
+references_enabled: true
 references:
-  - label: "NIST FIPS 203"
+  - title: "NIST FIPS 203"
+    link: "https://csrc.nist.gov/pubs/fips/203/final"
+    description: "NIST standard for ML-KEM, the module-lattice-based key-encapsulation mechanism selected for post-quantum key establishment."
     isnew: false
     status: none
-  - label: "NIST FIPS 204"
+  - title: "NIST FIPS 204"
+    link: "https://csrc.nist.gov/pubs/fips/204/final"
+    description: "NIST standard for ML-DSA, a lattice-based digital signature algorithm for post-quantum signing."
     isnew: false
     status: none
-  - label: "NIST FIPS 205"
+  - title: "NIST FIPS 205"
+    link: "https://csrc.nist.gov/pubs/fips/205/final"
+    description: "NIST standard for SLH-DSA, a stateless hash-based post-quantum digital signature algorithm."
     isnew: false
     status: none
-  - label: "NIST SP 800-208"
+  - title: "NIST SP 800-208"
+    link: "https://csrc.nist.gov/pubs/sp/800/208/final"
+    description: "NIST recommendation for stateful hash-based signature schemes used in constrained signing scenarios."
     isnew: false
     status: none
-  - label: "OMB M-23-02"
+  - title: "OMB M-23-02"
+    link: "https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/11/M-23-02-M-Memo-on-Migrating-to-Post-Quantum-Cryptography.pdf"
+    description: "Federal memorandum directing agencies to inventory vulnerable cryptography and plan migration to post-quantum cryptography."
     isnew: false
     status: none
-  - label: "NSA CNSA 2.0"
+  - title: "NSA CNSA 2.0"
+    link: "https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3148990/nsa-releases-future-quantum-resistant-qr-algorithm-requirements-for-national-se/"
+    description: "NSA guidance describing quantum-resistant algorithm requirements for national security systems."
     isnew: false
     status: none
-  - label: "NIST SP 800-131Ar3"
+  - title: "NIST SP 800-131Ar3"
+    link: "https://csrc.nist.gov/pubs/sp/800/131/a/r3/final"
+    description: "NIST transitions guidance for cryptographic algorithms and key lengths, including migration considerations."
     isnew: false
     status: none
-  - label: "EO 14409"
+  - title: "EO 14409"
+    link: "https://www.federalregister.gov/executive-order/14409"
+    description: "Executive order reference included for post-quantum planning context."
     isnew: false
     status: none
-  - label: "EO 14411"
+  - title: "EO 14411"
+    link: "https://www.federalregister.gov/executive-order/14411"
+    description: "Executive order reference included for post-quantum planning context."
     isnew: false
     status: none
-  - label: "OMB M-26-15"
+  - title: "OMB M-26-15"
+    link: "https://www.whitehouse.gov/omb/information-for-agencies/memoranda/"
+    description: "OMB memorandum reference included for federal post-quantum migration planning context."
     isnew: false
     status: none
 
+documents_enabled: false
 documents:
   - id: pqc
+    title: "PQC"
+    link: "#pqc"
+    description: "Post-quantum cryptography material covering migration from quantum-vulnerable algorithms to NIST-standardized PQC."
     isnew: false
     status: none

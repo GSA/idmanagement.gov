@@ -2,6 +2,15 @@
 
 Date: 2026-06-17
 
+## 2026-06-30 Update
+
+- Added `references_enabled` and `documents_enabled` section-level toggles. References default to visible; document sections default to hidden until explicitly enabled per section.
+- Updated reference and document badges so they act as in-page detail triggers. The lower detail panel displays a divider, linked title, and optional description.
+- Updated detail-panel title links to use the USWDS external-link style and open in a new tab.
+- Added `title`, `link`, and `description` metadata to references and document entries across the architecture data files.
+- Added 3px of additional bottom padding to `.section` in `_sass/ficam-components.scss` for more balanced spacing.
+- Refreshed `FICAM_MODULARIZATION_GUIDE.md` to document the current toggle, trigger, detail-panel, and document metadata behavior.
+
 ## 2026-06-23 Update
 
 - Commented out document tag rendering without changing the page structure or YAML data files.

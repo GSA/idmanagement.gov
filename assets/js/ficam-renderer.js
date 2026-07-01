@@ -37,19 +37,62 @@ class FicamSectionRenderer {
    * @param {string} href - Optional URL for clickable tags
    * @returns {HTMLElement} Tag element
    */
-  createTag(label, ramp, href = null) {
+  createTag(label, ramp, href = null, title = null) {
     const el = document.createElement(href ? 'a' : 'span');
     const opensNewContext = href && /^(https?:)?\/\//.test(href);
     el.className = `tag c-${ramp}${href ? ' clickable' : ''}`;
     el.textContent = label + (href ? ' ↗' : '');
+    if (title) {
+      el.title = title;
+    }
     if (href) {
       el.href = href;
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
       if (opensNewContext) {
         el.target = '_blank';
         el.rel = 'noopener';
       }
     }
     return el;
+  }
+
+  /**
+   * Create a badge button that opens a detail panel instead of navigating.
+   * @param {Object} item - Reference or document data
+   * @param {string} ramp - Color ramp class
+   * @param {Function} onSelect - Selection handler
+   * @returns {HTMLElement}
+   */
+  createDetailTrigger(item, ramp, onSelect) {
+    const stateLabels = this.getSplitTagStateLabels(item);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `${stateLabels.length ? 'split-tag' : 'tag'} c-${ramp} detail-trigger`;
+    button.title = item.title || item.label;
+
+    if (stateLabels.length) {
+      const status = document.createElement('span');
+      status.className = 'split-tag-status';
+      status.textContent = stateLabels.join(' · ');
+
+      const text = document.createElement('span');
+      text.className = 'split-tag-text';
+      text.textContent = item.label;
+
+      button.appendChild(status);
+      button.appendChild(text);
+    } else {
+      button.textContent = item.label;
+    }
+
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      onSelect(item, button);
+    });
+
+    return button;
   }
 
   /**
@@ -95,6 +138,25 @@ class FicamSectionRenderer {
     }
 
     return value.toUpperCase();
+  }
+
+  /**
+   * Resolve section display toggles from YAML.
+   * @param {Object} sectionData - Section data object
+   * @param {string} key - Toggle key
+   * @param {boolean} defaultValue - Value used when the key is missing
+   * @returns {boolean}
+   */
+  isEnabled(sectionData, key, defaultValue) {
+    if (!sectionData || sectionData[key] === undefined || sectionData[key] === null) {
+      return defaultValue;
+    }
+
+    if (typeof sectionData[key] === 'boolean') {
+      return sectionData[key];
+    }
+
+    return String(sectionData[key]).trim().toLowerCase() === 'true';
   }
 
   /**
@@ -158,13 +220,17 @@ class FicamSectionRenderer {
    */
   createTagWithStatus(label, ramp, href = null, item = null) {
     const stateLabels = this.getSplitTagStateLabels(item);
+    const title = item && item.title ? item.title : null;
 
     if (!stateLabels.length) {
-      return this.createTag(label, ramp, href);
+      return this.createTag(label, ramp, href, title);
     }
 
     const wrap = document.createElement('span');
     wrap.className = `split-tag c-${ramp}${href ? ' clickable' : ''}`;
+    if (title) {
+      wrap.title = title;
+    }
 
     const status = document.createElement('span');
     status.className = 'split-tag-status';
@@ -176,6 +242,9 @@ class FicamSectionRenderer {
     if (href) {
       const opensNewContext = /^(https?:)?\/\//.test(href);
       text.href = href;
+      text.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
       if (opensNewContext) {
         text.target = '_blank';
         text.rel = 'noopener';
@@ -197,7 +266,10 @@ class FicamSectionRenderer {
       return { label: reference, isnew: false };
     }
     return {
-      label: reference.label || reference.name || '',
+      label: reference.title || reference.label || reference.name || '',
+      title: reference.title || reference.label || reference.name || '',
+      link: reference.link || reference.url || null,
+      description: reference.description || '',
       isnew: reference.isnew,
       status: reference.status
     };
@@ -210,16 +282,56 @@ class FicamSectionRenderer {
    */
   resolveDocument(doc) {
     const docId = typeof doc === 'string' ? doc : doc.id;
-    const docInfo = typeof doc === 'string' ? this.docConfig[docId] : this.docConfig[docId] || doc;
+    const docOverrides = typeof doc === 'object' ? doc : {};
+    const docInfo = {
+      ...(this.docConfig[docId] || {}),
+      ...docOverrides
+    };
 
-    if (!docInfo) {
+    if (!docInfo || !Object.keys(docInfo).length) {
       return null;
     }
 
     return {
       ...docInfo,
-      isnew: typeof doc === 'object' && doc.isnew !== undefined ? doc.isnew : docInfo.isnew,
-      status: typeof doc === 'object' && doc.status !== undefined ? doc.status : docInfo.status
+      label: docInfo.title || docInfo.label || doc.id || doc,
+      title: docInfo.title || docInfo.label || doc.id || doc,
+      link: docInfo.link || docInfo.url || null,
+      description: docInfo.description || '',
+      isnew: docInfo.isnew,
+      status: docInfo.status
+    };
+  }
+
+  /**
+   * Create the lower reference/document detail panel.
+   * @returns {Object}
+   */
+  createDetailPanel() {
+    const panel = document.createElement('div');
+    panel.className = 'reference-detail-panel';
+    panel.hidden = true;
+
+    const title = document.createElement('a');
+    title.className = 'reference-detail-title usa-link usa-link--external';
+    title.target = '_blank';
+    title.rel = 'noopener';
+
+    const description = document.createElement('p');
+    description.className = 'reference-detail-description';
+
+    panel.appendChild(title);
+    panel.appendChild(description);
+
+    return {
+      panel,
+      show: (item) => {
+        title.textContent = item.title || item.label;
+        title.href = item.link || '#';
+        description.textContent = item.description || '';
+        description.hidden = !item.description;
+        panel.hidden = false;
+      }
     };
   }
 
@@ -339,6 +451,15 @@ class FicamSectionRenderer {
     // Body section (hidden until expanded)
     const body = document.createElement('div');
     body.className = 'section-body';
+    const detailPanel = this.createDetailPanel();
+    const detailTriggers = [];
+    const selectDetail = (item, trigger) => {
+      detailTriggers.forEach((el) => {
+        el.classList.remove('selected');
+      });
+      trigger.classList.add('selected');
+      detailPanel.show(item);
+    };
 
     // Capabilities
     body.appendChild(this.createRowLabel('Capabilities'));
@@ -346,36 +467,37 @@ class FicamSectionRenderer {
       body.appendChild(this.createCapRow(cap, sectionData.ramp));
     });
 
-    // References
-    body.appendChild(this.createRowLabel('References'));
-    const referencesRow = document.createElement('div');
-    referencesRow.className = 'tags-row';
-    referencesRow.style.display = 'flex';
-    (sectionData.references || sectionData.standards || []).forEach((reference) => {
-      const referenceInfo = this.normalizeReference(reference);
-      referencesRow.appendChild(
-        this.createTagWithStatus(referenceInfo.label, 'gray', null, referenceInfo)
-      );
-    });
-    body.appendChild(referencesRow);
+    if (this.isEnabled(sectionData, 'references_enabled', true)) {
+      body.appendChild(this.createRowLabel('References'));
+      const referencesRow = document.createElement('div');
+      referencesRow.className = 'tags-row';
+      referencesRow.style.display = 'flex';
+      (sectionData.references || sectionData.standards || []).forEach((reference) => {
+        const referenceInfo = this.normalizeReference(reference);
+        const trigger = this.createDetailTrigger(referenceInfo, 'gray', selectDetail);
+        detailTriggers.push(trigger);
+        referencesRow.appendChild(trigger);
+      });
+      body.appendChild(referencesRow);
+    }
 
-    // Document links are intentionally hidden from section bodies for now.
-    // The data remains in YAML and can be restored by uncommenting this block.
-    // if (sectionData.documents && sectionData.documents.length > 0) {
-    //   body.appendChild(this.createRowLabel('Document sections'));
-    //   const docsRow = document.createElement('div');
-    //   docsRow.className = 'tags-row';
-    //   docsRow.style.display = 'flex';
-    //   sectionData.documents.forEach((doc) => {
-    //     const docInfo = this.resolveDocument(doc);
-    //     if (docInfo) {
-    //       docsRow.appendChild(
-    //         this.createTagWithStatus(docInfo.label, docInfo.ramp, docInfo.url, docInfo)
-    //       );
-    //     }
-    //   });
-    //   body.appendChild(docsRow);
-    // }
+    if (this.isEnabled(sectionData, 'documents_enabled', false) && sectionData.documents && sectionData.documents.length > 0) {
+      body.appendChild(this.createRowLabel('Document sections'));
+      const docsRow = document.createElement('div');
+      docsRow.className = 'tags-row';
+      docsRow.style.display = 'flex';
+      sectionData.documents.forEach((doc) => {
+        const docInfo = this.resolveDocument(doc);
+        if (docInfo) {
+          const trigger = this.createDetailTrigger(docInfo, docInfo.ramp, selectDetail);
+          detailTriggers.push(trigger);
+          docsRow.appendChild(trigger);
+        }
+      });
+      body.appendChild(docsRow);
+    }
+
+    body.appendChild(detailPanel.panel);
 
     wrap.appendChild(header);
     wrap.appendChild(preview);
@@ -440,7 +562,7 @@ class FicamSectionRenderer {
       const docInfo = this.resolveDocument(doc);
       if (docInfo) {
         bar.appendChild(
-          this.createTagWithStatus(docInfo.label, docInfo.ramp, docInfo.url, docInfo)
+          this.createTagWithStatus(docInfo.label, docInfo.ramp, docInfo.link, docInfo)
         );
       }
     });

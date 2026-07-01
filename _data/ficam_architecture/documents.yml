@@ -2,36 +2,41 @@
 # Used in section metadata to link to relevant documentation
 
 mdl:
-  label: "mDL"
+  title: "mDL"
   isnew: false
   status: none
   ramp: "amber"
-  url: "#mdl"
+  link: "#mdl"
+  description: "Mobile driver's license material covering ISO/IEC 18013-based identity evidence and presentation patterns."
 
 fido2:
-  label: "FIDO2"
+  title: "FIDO2"
   isnew: false
   status: none
   ramp: "green"
-  url: "#fido2"
+  link: "#fido2"
+  description: "FIDO2 and WebAuthn material covering phishing-resistant authentication, passkeys, and authenticator trust signals."
 
 mpiv:
-  label: "mPIV"
+  title: "mPIV"
   isnew: false
   status: none
   ramp: "pink"
-  url: "#mpiv"
+  link: "#mpiv"
+  description: "Mobile PIV material covering derived and mobile credentials, wallet storage, and PIV-aligned authentication flows."
 
 pqc:
-  label: "PQC"
+  title: "PQC"
   isnew: false
   status: none
   ramp: "purple"
-  url: "#pqc"
+  link: "#pqc"
+  description: "Post-quantum cryptography material covering migration from quantum-vulnerable algorithms to NIST-standardized PQC."
 
 vc:
-  label: "VC"
+  title: "VC"
   isnew: false
   status: none
   ramp: "blue"
-  url: "#vc"
+  link: "#vc"
+  description: "Verifiable credential material covering issuer-signed claims, holder-controlled presentation, and verifier validation."
