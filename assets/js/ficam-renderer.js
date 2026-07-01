@@ -211,6 +211,24 @@ class FicamSectionRenderer {
   }
 
   /**
+   * Return true when a value has non-whitespace display text.
+   * @param {*} value
+   * @returns {boolean}
+   */
+  hasData(value) {
+    return value !== undefined && value !== null && String(value).trim() !== '';
+  }
+
+  /**
+   * Normalize optional display text with a consistent empty-data fallback.
+   * @param {*} value
+   * @returns {string}
+   */
+  displayOrFallback(value) {
+    return this.hasData(value) ? String(value).trim() : 'No data provided';
+  }
+
+  /**
    * Create a tag and optional New label for reference/document tag rows.
    * @param {string} label - Tag label text
    * @param {string} ramp - Color ramp class
@@ -265,8 +283,9 @@ class FicamSectionRenderer {
     if (typeof reference === 'string') {
       return { label: reference, isnew: false };
     }
+    const label = reference.title || reference.label || reference.name || '';
     return {
-      label: reference.title || reference.label || reference.name || '',
+      label: this.displayOrFallback(label),
       title: reference.title || reference.label || reference.name || '',
       link: reference.link || reference.url || null,
       description: reference.description || '',
@@ -294,7 +313,7 @@ class FicamSectionRenderer {
 
     return {
       ...docInfo,
-      label: docInfo.title || docInfo.label || doc.id || doc,
+      label: this.displayOrFallback(docInfo.title || docInfo.label || doc.id || doc),
       title: docInfo.title || docInfo.label || doc.id || doc,
       link: docInfo.link || docInfo.url || null,
       description: docInfo.description || '',
@@ -312,24 +331,45 @@ class FicamSectionRenderer {
     panel.className = 'reference-detail-panel';
     panel.hidden = true;
 
-    const title = document.createElement('a');
+    let title = document.createElement('span');
     title.className = 'reference-detail-title usa-link usa-link--external';
-    title.target = '_blank';
-    title.rel = 'noopener';
+
+    const link = document.createElement('p');
+    link.className = 'reference-detail-link';
 
     const description = document.createElement('p');
     description.className = 'reference-detail-description';
 
     panel.appendChild(title);
+    panel.appendChild(link);
     panel.appendChild(description);
 
     return {
       panel,
       show: (item) => {
-        title.textContent = item.title || item.label;
-        title.href = item.link || '#';
-        description.textContent = item.description || '';
-        description.hidden = !item.description;
+        const titleText = this.displayOrFallback(item.title || item.label);
+        const linkText = this.displayOrFallback(item.link);
+        const descriptionText = this.displayOrFallback(item.description);
+
+        if (this.hasData(item.link)) {
+          const linkedTitle = document.createElement('a');
+          linkedTitle.className = 'reference-detail-title usa-link usa-link--external';
+          linkedTitle.href = String(item.link).trim();
+          linkedTitle.target = '_blank';
+          linkedTitle.rel = 'noopener';
+          linkedTitle.textContent = titleText;
+          title.replaceWith(linkedTitle);
+          title = linkedTitle;
+        } else {
+          const plainTitle = document.createElement('span');
+          plainTitle.className = 'reference-detail-title';
+          plainTitle.textContent = titleText;
+          title.replaceWith(plainTitle);
+          title = plainTitle;
+        }
+
+        link.textContent = `Link: ${linkText}`;
+        description.textContent = descriptionText;
         panel.hidden = false;
       }
     };

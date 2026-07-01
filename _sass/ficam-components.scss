@@ -254,6 +254,14 @@ h1 {
   color: var(--tx);
 }
 
+.reference-detail-link {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--bd);
+  overflow-wrap: anywhere;
+}
+
 .section-body {
   margin-top: 10px;
   padding-top: 10px;
