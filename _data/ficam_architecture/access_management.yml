@@ -55,42 +55,72 @@ capabilities:
     status: none
     detail: "An authentication process by which one account and its authenticators are used to access multiple applications in a seamless manner, generally implemented with a federation protocol."
 
+references_enabled: true
 references:
-  - label: "NIST SP 800-63B"
+  - title: "NIST SP 800-63B"
+    link: "https://csrc.nist.gov/pubs/sp/800/63/b/4/final"
+    description: "Federal digital identity guidance for authenticators, authentication ceremonies, session management, and authenticator assurance levels."
     isnew: false
     status: none
-  - label: "NIST SP 800-116r1"
+  - title: "NIST SP 800-116r1"
+    link: "https://csrc.nist.gov/pubs/sp/800/116/r1/final"
+    description: "Guidance for using PIV credentials in physical access control systems, including risk-based implementation considerations."
     isnew: false
     status: none
-  - label: "FIDO2 / WebAuthn W3C"
+  - title: "FIDO2 / WebAuthn W3C"
+    link: "https://www.w3.org/TR/webauthn-3/"
+    description: "Web authentication standard used with FIDO2 authenticators to enable phishing-resistant public-key authentication."
     isnew: false
     status: none
-  - label: "NIST FIPS 203"
+  - title: "NIST FIPS 203"
+    link: "https://csrc.nist.gov/pubs/fips/203/final"
+    description: "NIST standard for ML-KEM, a post-quantum key-establishment mechanism used to protect encrypted channels."
     isnew: false
     status: none
-  - label: "OMB M-22-09"
+  - title: "OMB M-22-09"
+    link: "https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/01/M-22-09.pdf"
+    description: "Federal zero trust strategy memorandum emphasizing strong identity, phishing-resistant MFA, and modern access controls."
     isnew: false
     status: none
-  - label: "OID4VP"
+  - title: "OID4VP"
+    link: "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html"
+    description: "OpenID protocol for requesting and presenting verifiable credentials between wallets and relying parties."
     isnew: false
     status: none
-  - label: "SAML 2.0"
+  - title: "SAML 2.0"
+    link: "https://docs.oasis-open.org/security/saml/v2.0/"
+    description: "Federation protocol for exchanging authentication and authorization assertions between identity providers and service providers."
     isnew: false
     status: none
-  - label: "OIDC / OAuth 2.0"
+  - title: "OIDC / OAuth 2.0"
+    link: "https://openid.net/developers/specs/"
+    description: "Modern identity and authorization protocols commonly used for single sign-on and delegated access."
     isnew: false
     status: none
 
+documents_enabled: false
 documents:
   - id: fido2
+    title: "FIDO2"
+    link: "#fido2"
+    description: "FIDO2 and WebAuthn material covering phishing-resistant authentication, passkeys, and authenticator trust signals."
     isnew: false
     status: none
   - id: mpiv
+    title: "mPIV"
+    link: "#mpiv"
+    description: "Mobile PIV material covering derived and mobile credentials, wallet storage, and PIV-aligned authentication flows."
     isnew: false
     status: none
   - id: pqc
+    title: "PQC"
+    link: "#pqc"
+    description: "Post-quantum cryptography material covering migration from quantum-vulnerable algorithms to NIST-standardized PQC."
     isnew: false
     status: none
   - id: vc
+    title: "VC"
+    link: "#vc"
+    description: "Verifiable credential material covering issuer-signed claims, holder-controlled presentation, and verifier validation."
     isnew: false
     status: none

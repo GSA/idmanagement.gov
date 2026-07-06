@@ -50,7 +50,7 @@ h1 {
   border: 1.5px solid transparent;
   cursor: pointer;
   transition: border-color 0.15s;
-  padding: 10px 14px;
+  padding: 10px 14px 13px;
   background: var(--bg);
 
   &.open {
@@ -99,15 +99,29 @@ h1 {
 .tag {
   display: inline-block;
   font-size: 13px;
+  font-family: inherit;
   line-height: 1;
   padding: 3px 9px;
   border-radius: 20px;
   margin: 2px;
   border: 1px solid var(--bd);
+  appearance: none;
   background: var(--bg);
   color: var(--tx);
   cursor: default;
   white-space: nowrap;
+
+  &.detail-trigger {
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible,
+    &.selected {
+      background: var(--bd);
+      color: #fff;
+      outline: none;
+    }
+  }
 
   &.clickable {
     cursor: pointer;
@@ -157,12 +171,36 @@ h1 {
   overflow: hidden;
   margin: 2px;
   border: 1px solid var(--bd);
+  appearance: none;
+  padding: 0;
   border-radius: 20px;
   background: var(--bg);
   color: var(--tx);
   font-size: 13px;
+  font-family: inherit;
   line-height: 1;
   white-space: nowrap;
+
+  &.detail-trigger {
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible,
+    &.selected {
+      background: var(--bd);
+      color: #fff;
+      outline: none;
+
+      .split-tag-status {
+        background: var(--bd);
+        color: #fff;
+      }
+
+      .split-tag-text {
+        color: #fff;
+      }
+    }
+  }
 
   &.clickable {
     cursor: pointer;
@@ -190,6 +228,38 @@ h1 {
 .split-tag-text {
   color: var(--tx);
   text-decoration: none;
+}
+
+.reference-detail-panel {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--bd);
+}
+
+.reference-detail-title {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tx);
+
+  &:hover {
+    color: var(--bd);
+  }
+}
+
+.reference-detail-description {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--tx);
+}
+
+.reference-detail-link {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--bd);
+  overflow-wrap: anywhere;
 }
 
 .section-body {

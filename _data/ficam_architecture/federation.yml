@@ -39,39 +39,67 @@ capabilities:
     status: none
     detail: "Verifiable data registries provide issuer registry infrastructure for verifiable credentials, mediating the creation and verification of identifiers, verification material, and other data—such as VC schemas and revocation registries—and rooting VC signing keys in FPKI. They support the OID4VP presentation protocol for cross-domain VC acceptance without bilateral agreements."
 
+references_enabled: true
 references:
-  - label: "SAML 2.0"
+  - title: "SAML 2.0"
+    link: "https://docs.oasis-open.org/security/saml/v2.0/"
+    description: "Federation standard for exchanging security assertions between identity providers and relying parties."
     isnew: false
     status: none
-  - label: "OIDC / OAuth 2.0"
+  - title: "OIDC / OAuth 2.0"
+    link: "https://openid.net/developers/specs/"
+    description: "Protocol family for modern sign-in, identity claims, delegated authorization, and API access."
     isnew: false
     status: none
-  - label: "ISO 18013-5"
+  - title: "ISO 18013-5"
+    link: "https://www.iso.org/standard/69084.html"
+    description: "Mobile driver's license standard supporting cryptographic verification of in-person presentations."
     isnew: false
     status: none
-  - label: "FIDO2 MDS v3"
+  - title: "FIDO2 MDS v3"
+    link: "https://fidoalliance.org/specs/mds/fido-metadata-service-v3.1-ps-20250521.html"
+    description: "FIDO Metadata Service specification for distributing authenticator metadata and trust information."
     isnew: false
     status: none
-  - label: "W3C DID Core 1.0"
+  - title: "W3C DID Core 1.0"
+    link: "https://www.w3.org/TR/did-core/"
+    description: "W3C standard for decentralized identifiers and their associated verification material."
     isnew: false
     status: none
-  - label: "OID4VP"
+  - title: "OID4VP"
+    link: "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html"
+    description: "OpenID protocol for presenting verifiable credentials from a holder wallet to a verifier."
     isnew: false
     status: none
-  - label: "RFC 8705"
+  - title: "RFC 8705"
+    link: "https://www.rfc-editor.org/rfc/rfc8705"
+    description: "OAuth 2.0 mutual-TLS profile used to bind tokens to client certificates and strengthen federation trust."
     isnew: false
     status: none
 
+documents_enabled: false
 documents:
   - id: mdl
+    title: "mDL"
+    link: "#mdl"
+    description: "Mobile driver's license material covering ISO/IEC 18013-based identity evidence and presentation patterns."
     isnew: false
     status: none
   - id: fido2
+    title: "FIDO2"
+    link: "#fido2"
+    description: "FIDO2 and WebAuthn material covering phishing-resistant authentication, passkeys, and authenticator trust signals."
     isnew: false
     status: none
   - id: mpiv
+    title: "mPIV"
+    link: "#mpiv"
+    description: "Mobile PIV material covering derived and mobile credentials, wallet storage, and PIV-aligned authentication flows."
     isnew: false
     status: none
   - id: vc
+    title: "VC"
+    link: "#vc"
+    description: "Verifiable credential material covering issuer-signed claims, holder-controlled presentation, and verifier validation."
     isnew: false
     status: none
