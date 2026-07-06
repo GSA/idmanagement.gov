@@ -15,7 +15,7 @@ The FICAM architecture sections are now **fully modular**. Each section (layer o
 
 The redesign page is assembled from four separate pieces:
 
-1. **Data**: Each architecture layer or practice area lives in its own YAML file under `_data/ficam_architecture/`.
+1. **Data**: Each architecture layer, practice area, document reference, and legend item lives in YAML under `_data/ficam_architecture/`.
 2. **Styles**: `_sass/ficam-components.scss` contains the component styles. `assets/css/ficam-architecture.scss` imports those styles and Jekyll compiles it to `/assets/css/ficam-architecture.css`.
 3. **Renderer**: `assets/js/ficam-renderer.js` converts YAML-derived JavaScript objects into expandable boxes.
 4. **Page composition**: `_arch/ficam-arch-redesign.md` decides which boxes appear on the page and where each independently rendered group is inserted.
@@ -39,6 +39,7 @@ The script then loads each YAML file through Jekyll, initializes the renderer, a
 
 ```javascript
 const DOCS = {{ site.data.ficam_architecture.documents | jsonify }};
+const LEGEND = {{ site.data.ficam_architecture.legend | jsonify }};
 
 const GOVERNANCE = {{ site.data.ficam_architecture.governance | jsonify }};
 const FEDERATION = {{ site.data.ficam_architecture.federation | jsonify }};
@@ -54,6 +55,7 @@ const PRACTICES = [
 document.addEventListener('DOMContentLoaded', function() {
   const renderer = new FicamSectionRenderer();
   renderer.setDocConfig(DOCS);
+  renderer.setLegendConfig(LEGEND);
 
   document.getElementById('governance-layer').appendChild(renderer.renderSection(GOVERNANCE, true));
   document.getElementById('federation-layer').appendChild(renderer.renderSection(FEDERATION, true));
@@ -69,6 +71,57 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 
 Use `renderer.renderSection(sectionData, true)` for a single architecture layer box. Use `renderer.renderPractices(practicesArray, container)` for the three-box practice row.
+
+## Legend And Capability Color Coding
+
+The architecture legend is data driven from `_data/ficam_architecture/legend.yml`. The file controls:
+
+- `title`: the legend heading.
+- `summary`: the explanatory sentence shown beside the heading.
+- `items`: the color-coded legend entries and tooltip text.
+
+Each legend item uses this structure:
+
+```yaml
+- key: mdl
+  label: "mDL — mobile driver's license"
+  short_label: "mDL"
+  tooltip: "mobile driver's license"
+  ramp: amber
+```
+
+The `key` value is what capabilities reference through `legend_key`. The `short_label` value is the visible text in the split legend button. The `tooltip` value is shown on hover/focus. The `ramp` value maps to the existing color ramps in `_sass/ficam-components.scss` such as `amber`, `green`, `pink`, `purple`, and `blue`.
+
+Capabilities can opt into legend coloring by adding `legend_key`:
+
+```yaml
+capabilities:
+  - name: "FIDO2 authentication"
+    legend_key: fido2
+    isnew: false
+    status: none
+    detail: "..."
+```
+
+Capabilities without `legend_key` render as core/default rows. `legend_key` is separate from `isnew` and `status`: it only controls row color. `isnew` still controls the NEW badge, and `status` still controls status badges.
+
+The nested architecture renderer appends the legend below the Governance box automatically:
+
+```javascript
+renderer.renderNestedArchitecture(LAYERS, PRACTICES, 'architecture-canvas');
+```
+
+The legend can also be rendered by itself into any container:
+
+```html
+<div id="standalone-legend"></div>
+```
+
+```javascript
+const renderer = new FicamSectionRenderer();
+renderer.setLegendConfig(LEGEND);
+renderer.renderLegend('standalone-legend');
+```
 
 ## Current Reference And Document Display
 
@@ -120,6 +173,7 @@ Use `_sass/ficam-components.scss` for shared component styles. Use `_arch/ficam-
 ```
 _data/ficam_architecture/
 ├── documents.yml                    # Document references (mDL, FIDO2, etc.)
+├── legend.yml                       # Legend title, summary, item labels, and color ramps
 ├── governance.yml                  # Layer: Governance
 ├── federation.yml                  # Layer: Federation
 ├── post_quantum_crypto.yml         # Layer: Post-quantum cryptography
@@ -157,6 +211,7 @@ _arch/
 | **credential_management.yml** | `_data/ficam_architecture/credential_management.yml` | Credential management practice: Issuance & lifecycle (8 capabilities) |
 | **access_management.yml** | `_data/ficam_architecture/access_management.yml` | Access management practice: Authentication & authorization (9 capabilities) |
 | **documents.yml** | `_data/ficam_architecture/documents.yml` | Document section references (mDL, FIDO2, mPIV, PQC, VC) |
+| **legend.yml** | `_data/ficam_architecture/legend.yml` | Legend title, summary, item labels, keys, and color ramps used by capability `legend_key` values |
 | **ficam-renderer.js** | `assets/js/ficam-renderer.js` | Modular JavaScript renderer class (~240 lines) |
 | **ficam-components.scss** | `_sass/ficam-components.scss` | SASS stylesheet with all component styles (~250 lines) |
 | **ficam-architecture.scss** | `assets/css/ficam-architecture.scss` | Jekyll stylesheet entrypoint that imports the component Sass and compiles to `ficam-architecture.css` |

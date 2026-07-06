@@ -1,0 +1,29 @@
+title: "FICAM ARCHITECTURE LEGEND"
+summary: "Nested boxes = hierarchy of scope · NEW badge = additions vs. FICAM v3.3 baseline · Light rows = core v3.3 services"
+
+items:
+  - key: mdl
+    label: "mDL — mobile driver's license"
+    short_label: "mDL"
+    tooltip: "mobile driver's license"
+    ramp: amber
+  - key: fido2
+    label: "FIDO2 — passkeys"
+    short_label: "FIDO2"
+    tooltip: "passkeys"
+    ramp: green
+  - key: mpiv
+    label: "mPIV — mobile PIV"
+    short_label: "mPIV"
+    tooltip: "mobile PIV"
+    ramp: pink
+  - key: pqc
+    label: "PQC — post-quantum crypto"
+    short_label: "PQC"
+    tooltip: "post-quantum crypto"
+    ramp: purple
+  - key: vc
+    label: "VC — verifiable credentials"
+    short_label: "VC"
+    tooltip: "verifiable credentials"
+    ramp: blue

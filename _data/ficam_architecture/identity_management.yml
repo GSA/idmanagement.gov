@@ -25,6 +25,7 @@ capabilities:
     detail: "Identity Lifecycle Management is the administrative and technical activities required to manage a human digital identity or NHI throughout its lifecycle - creation, modification, and deactivation."
   
   - name: "Mobile Driver License-based Proofing"
+    legend_key: mdl
     isnew: false
     status: none
     detail: "ISO 18013-5 compliant mDLs, a cryptographically signed digital credential by a state  DMV and provisioned directly to the holder’s secure device wallet qualifies as SUPERIOR identity evidence (NIST SP 800-63A-4)"
@@ -35,16 +36,19 @@ capabilities:
     detail: "Fraud Detection involves analyzing access logs for anomalies, applying machine learning to identify fraudulent patterns, requiring phishing-resistant MFA, and deploying deepfake detection tools, with internal reporting hotlines and periodic audits reinforcing compliance. Fraud Mitigation requires revoking compromised account access, notifying authorities, security teams, and affected parties, and deploying incident response teams to analyze breaches and suspend compromised system components."
   
   - name: "FIDO2 device binding"
+    legend_key: fido2
     isnew: false
     status: none
     detail: "Authenticator enrollment tied to a proofed enterprise identity; AAGUID-based allowlisting for permitted authenticator models; device attestation records maintained in identity registry."
   
   - name: "mPIV enrollment"
+    legend_key: mpiv
     isnew: false
     status: none
     detail: "FIPS 201-3 compliant enrollment on mobile secure element; in-person biometric capture at initial enrollment; remote re-enrollment for existing PIV holders using on-file biometric."
   
   - name: "VC issuance workflow"
+    legend_key: vc
     isnew: false
     status: none
     detail: "Agency acting as VC issuer for employment, role, and entitlement credentials; SD-JWT attribute packaging for selective disclosure; credential bound to holder's enterprise identity."

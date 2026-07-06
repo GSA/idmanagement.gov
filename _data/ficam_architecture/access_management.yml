@@ -30,11 +30,13 @@ capabilities:
     detail: "a collection of technologies that control physical access at one or more federal agency sites by electronically authenticating employees, contractors, and visitors."
   
   - name: "mPIV authentication"
+    legend_key: mpiv
     isnew: false
     status: none
     detail: "Performed using hardware-backed cryptographic keys and PKI certificates stored within a mobile digital wallet. Relying parties (agencies) verify these credentials via remote online protocols or local wireless connections, e.g., NFC or BLE after the user approves the transaction using a PIN or biometrics."
   
   - name: "FIDO2 authentication"
+    legend_key: fido2
     isnew: false
     status: none
     detail: "FIDO2 is phishing resistant MFA based on public key cryptography combining WebAuthn and the FIDO Alliance's Client to Authenticator Protocol (CTAP2) standard."
@@ -46,6 +48,7 @@ capabilities:
   #   detail: "TLS 1.3 with hybrid ML-KEM key exchange as the highest-priority HNDL mitigation; IPsec PQC migration for site-to-site VPN; audit logging of all PQC-negotiated sessions."
   
   - name: "VC-based authorization"
+    legend_key: vc
     isnew: false
     status: none
     detail: "The holder presents a VC to the resource server; the verifier validates the issuer's signature offline and applies fine-grained ABAC using structured entitlement claims, with no real-time issuer query required."

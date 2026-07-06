@@ -20,6 +20,8 @@
 class FicamSectionRenderer {
   constructor() {
     this.docConfig = {};
+    this.legendConfig = { items: [] };
+    this.legendMap = {};
   }
 
   /**
@@ -31,17 +33,34 @@ class FicamSectionRenderer {
   }
 
   /**
+   * Initialize with legend configuration used for row color coding and legend display.
+   * @param {Object} legendConfig - Legend title, summary, and items
+   */
+  setLegendConfig(legendConfig) {
+    this.legendConfig = legendConfig || { items: [] };
+    this.legendMap = {};
+    (this.legendConfig.items || []).forEach((item) => {
+      if (item && item.key) {
+        this.legendMap[String(item.key).trim().toLowerCase()] = item;
+      }
+    });
+  }
+
+  /**
    * Create a styled tag element
    * @param {string} label - Tag label text
    * @param {string} ramp - Color ramp class (gray, teal, purple, etc.)
    * @param {string} href - Optional URL for clickable tags
    * @returns {HTMLElement} Tag element
    */
-  createTag(label, ramp, href = null, title = null) {
-    const el = document.createElement(href ? 'a' : 'span');
+  createTag(label, ramp, href = null, title = null, tagName = null) {
+    const el = document.createElement(tagName || (href ? 'a' : 'span'));
     const opensNewContext = href && /^(https?:)?\/\//.test(href);
     el.className = `tag c-${ramp}${href ? ' clickable' : ''}`;
     el.textContent = label + (href ? ' ↗' : '');
+    if (el.tagName === 'BUTTON') {
+      el.type = 'button';
+    }
     if (title) {
       el.title = title;
     }
@@ -383,7 +402,9 @@ class FicamSectionRenderer {
    */
   createCapRow(capability, ramp) {
     const row = document.createElement('div');
-    row.className = `cap-row c-${ramp}`;
+    const legendClass = this.getLegendClass(capability.legend_key);
+    const legendRamp = this.getLegendRamp(capability.legend_key);
+    row.className = `cap-row c-${ramp}${legendClass ? ` ${legendClass} c-${legendRamp}` : ''}`;
 
     const header = document.createElement('div');
     header.className = 'cap-header';
@@ -421,6 +442,35 @@ class FicamSectionRenderer {
   }
 
   /**
+   * Map optional capability legend keys to visual classes.
+   * Values align to the architecture legend: mdl, fido2, mpiv, pqc, vc.
+   * @param {string} legendKey
+   * @returns {string|null}
+   */
+  getLegendClass(legendKey) {
+    if (!legendKey) {
+      return null;
+    }
+
+    const normalized = String(legendKey).trim().toLowerCase();
+    return this.legendMap[normalized] ? `legend-${normalized}` : null;
+  }
+
+  /**
+   * Resolve a legend key to its configured color ramp.
+   * @param {string} legendKey
+   * @returns {string}
+   */
+  getLegendRamp(legendKey) {
+    if (!legendKey) {
+      return 'gray';
+    }
+
+    const normalized = String(legendKey).trim().toLowerCase();
+    return (this.legendMap[normalized] && this.legendMap[normalized].ramp) || 'gray';
+  }
+
+  /**
    * Create a row label (Capabilities, References, Documents)
    * @param {string} text - Label text
    * @returns {HTMLElement} Row label element
@@ -438,14 +488,26 @@ class FicamSectionRenderer {
    * @param {boolean} isLayer - Whether this is a layer (affects preview count)
    * @returns {HTMLElement} Complete section element
    */
-  renderSection(sectionData, isLayer = false) {
+  renderSection(sectionData, isLayer = false, nestedContent = null, options = {}) {
+    const defaultOpen = options.defaultOpen === true;
+    const showPreview = options.showPreview !== false;
+    const isCollapsible = showPreview || !defaultOpen;
+    const sectionClass = options.sectionClass ? ` ${options.sectionClass}` : '';
+    const showCapabilityLabel = options.showCapabilityLabel !== false;
+    const showReferenceLabel = options.showReferenceLabel !== false;
+    const addCapabilitiesDivider = options.addCapabilitiesDivider === true;
     const wrap = document.createElement('div');
-    wrap.className = `section c-${sectionData.ramp}`;
+    wrap.className = `section c-${sectionData.ramp}${defaultOpen ? ' open' : ''}${sectionClass}`;
     wrap.style.background = `var(--${sectionData.ramp}-bg)`;
 
     // Header section
     const header = document.createElement('div');
     header.className = 'section-header';
+    if (isCollapsible) {
+      header.setAttribute('role', 'button');
+      header.setAttribute('tabindex', '0');
+      header.setAttribute('aria-expanded', String(defaultOpen));
+    }
 
     const left = document.createElement('div');
     const title = document.createElement('div');
@@ -466,14 +528,20 @@ class FicamSectionRenderer {
 
     const chevron = document.createElement('span');
     chevron.className = 'chevron';
-    chevron.textContent = '▼';
+    chevron.textContent = defaultOpen ? '▲' : '▼';
 
     header.appendChild(left);
-    header.appendChild(chevron);
+    if (isCollapsible) {
+      header.appendChild(chevron);
+    }
 
     // Preview row (shows capability names before expanding)
     const preview = document.createElement('div');
-    preview.className = 'tags-row';
+    preview.className = 'tags-row capability-preview-row';
+    preview.setAttribute('role', 'button');
+    preview.setAttribute('tabindex', '0');
+    preview.setAttribute('aria-expanded', 'false');
+    preview.setAttribute('aria-label', `${sectionData.label} capabilities`);
     const maxPreview = isLayer ? 4 : 3;
     const capabilities = sectionData.capabilities || [];
 
@@ -483,6 +551,7 @@ class FicamSectionRenderer {
 
     if (capabilities.length > maxPreview) {
       const more = document.createElement('span');
+      more.className = `tag c-${sectionData.ramp}`;
       more.style.cssText = `font-size:11px;color:var(--${sectionData.ramp}-bd);align-self:center;margin:2px 4px`;
       more.textContent = `+${capabilities.length - maxPreview} more`;
       preview.appendChild(more);
@@ -502,13 +571,22 @@ class FicamSectionRenderer {
     };
 
     // Capabilities
-    body.appendChild(this.createRowLabel('Capabilities'));
+    if (showCapabilityLabel) {
+      body.appendChild(this.createRowLabel('Capabilities'));
+    }
     capabilities.forEach((cap) => {
       body.appendChild(this.createCapRow(cap, sectionData.ramp));
     });
 
     if (this.isEnabled(sectionData, 'references_enabled', true)) {
-      body.appendChild(this.createRowLabel('References'));
+      if (addCapabilitiesDivider) {
+        const divider = document.createElement('div');
+        divider.className = 'capabilities-divider';
+        body.appendChild(divider);
+      }
+      if (showReferenceLabel) {
+        body.appendChild(this.createRowLabel('References'));
+      }
       const referencesRow = document.createElement('div');
       referencesRow.className = 'tags-row';
       referencesRow.style.display = 'flex';
@@ -540,14 +618,53 @@ class FicamSectionRenderer {
     body.appendChild(detailPanel.panel);
 
     wrap.appendChild(header);
-    wrap.appendChild(preview);
+    if (showPreview) {
+      wrap.appendChild(preview);
+    }
     wrap.appendChild(body);
+    if (nestedContent) {
+      const nestedWrap = document.createElement('div');
+      nestedWrap.className = 'nested-content';
+      nestedWrap.appendChild(nestedContent);
+      wrap.appendChild(nestedWrap);
+    }
 
-    // Toggle expand/collapse
-    wrap.addEventListener('click', () => {
-      const isOpen = wrap.classList.toggle('open');
+    const setSectionOpen = (isOpen) => {
+      wrap.classList.toggle('open', isOpen);
       chevron.textContent = isOpen ? '▲' : '▼';
-    });
+      preview.setAttribute('aria-expanded', String(isOpen));
+      if (isCollapsible) {
+        header.setAttribute('aria-expanded', String(isOpen));
+      }
+    };
+
+    if (showPreview) {
+      preview.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setSectionOpen(true);
+      });
+
+      preview.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setSectionOpen(true);
+        }
+      });
+    }
+
+    if (isCollapsible) {
+      header.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setSectionOpen(false);
+      });
+
+      header.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setSectionOpen(false);
+        }
+      });
+    }
 
     return wrap;
   }
@@ -576,14 +693,166 @@ class FicamSectionRenderer {
    */
   renderPractices(practices, container) {
     const cont = this.getContainer(container);
+    cont.appendChild(this.createPracticeGrid(practices));
+  }
+
+  /**
+   * Create the three-column practice area grid.
+   * @param {Array} practices - Array of practice data objects
+   * @returns {HTMLElement}
+   */
+  createPracticeGrid(practices) {
+    const block = document.createElement('div');
+    block.className = 'practice-area-block';
+
     const grid = document.createElement('div');
     grid.className = 'practice-grid';
 
     practices.forEach((practice) => {
-      grid.appendChild(this.renderSection(practice, false));
+      grid.appendChild(this.renderSection(practice, false, null, {
+        defaultOpen: true,
+        showPreview: false,
+        sectionClass: 'practice-section',
+        showCapabilityLabel: false,
+        showReferenceLabel: false,
+        addCapabilitiesDivider: true
+      }));
     });
 
-    cont.appendChild(grid);
+    const flowNote = document.createElement('p');
+    flowNote.className = 'architecture-flow-note';
+    flowNote.textContent = 'Identity is established → credentials are bound to it → access decisions rely on those credentials';
+
+    block.appendChild(grid);
+    block.appendChild(flowNote);
+
+    return block;
+  }
+
+  /**
+   * Render layers as nested boxes with the practice grid inside the innermost layer.
+   * Expanding a layer inserts its capability details above the nested child content,
+   * so the inner architecture is pushed down instead of hidden.
+   * @param {Array} layers - Ordered outer-to-inner layer data
+   * @param {Array} practices - Practice data shown inside the innermost layer
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderNestedArchitecture(layers, practices, container) {
+    const cont = this.getContainer(container);
+    let child = this.createPracticeGrid(practices);
+
+    layers.slice().reverse().forEach((layer) => {
+      child = this.renderSection(layer, true, child);
+    });
+
+    cont.appendChild(child);
+    cont.appendChild(this.createArchitectureLegend());
+  }
+
+  /**
+   * Create the architecture legend shown below the nested Governance box.
+   * @returns {HTMLElement}
+   */
+  createArchitectureLegend() {
+    const legendItems = this.legendConfig.items || [];
+
+    const legend = document.createElement('div');
+    legend.className = 'architecture-legend';
+
+    const header = document.createElement('div');
+    header.className = 'architecture-legend-header';
+
+    const title = document.createElement('span');
+    title.className = 'architecture-legend-title';
+    title.textContent = this.legendConfig.title || 'LEGEND';
+
+    const note = document.createElement('span');
+    note.className = 'architecture-legend-note';
+    note.textContent = this.legendConfig.summary || '';
+
+    header.appendChild(title);
+    header.appendChild(note);
+
+    const items = document.createElement('div');
+    items.className = 'architecture-legend-items';
+
+    legendItems.forEach((legendItem) => {
+      const key = String(legendItem.key || '').trim().toLowerCase();
+      const ramp = legendItem.ramp || 'gray';
+      const labelParts = this.resolveLegendLabel(legendItem, key);
+      const item = document.createElement('button');
+      item.type = 'button';
+      item.className = `architecture-legend-item usa-tooltip legend-${key} c-${ramp}`;
+      item.title = labelParts.tooltip;
+      item.dataset.position = 'top';
+
+      const swatch = document.createElement('span');
+      swatch.className = 'architecture-legend-swatch';
+      swatch.setAttribute('aria-hidden', 'true');
+
+      const text = document.createElement('span');
+      text.className = 'architecture-legend-label';
+      text.textContent = labelParts.visible;
+
+      item.appendChild(swatch);
+      item.appendChild(text);
+      items.appendChild(item);
+    });
+
+    legend.appendChild(header);
+    legend.appendChild(items);
+
+    return legend;
+  }
+
+  /**
+   * Split legend labels into visible text and tooltip text.
+   * Supports em dash, en dash, and hyphen separators.
+   * @param {string} label
+   * @returns {{visible: string, tooltip: string}}
+   */
+  splitLegendLabel(label) {
+    const text = String(label || '').trim();
+    const parts = text.split(/\s+[—–-]\s+/);
+
+    if (parts.length < 2) {
+      return {
+        visible: text,
+        tooltip: text
+      };
+    }
+
+    return {
+      visible: parts[0].trim(),
+      tooltip: parts.slice(1).join(' - ').trim()
+    };
+  }
+
+  /**
+   * Resolve visible and tooltip legend text from explicit YAML fields.
+   * Falls back to splitting the full label for older legend data.
+   * @param {Object} legendItem
+   * @param {string} fallback
+   * @returns {{visible: string, tooltip: string}}
+   */
+  resolveLegendLabel(legendItem, fallback) {
+    if (legendItem.short_label || legendItem.tooltip) {
+      const visible = String(legendItem.short_label || legendItem.label || fallback).trim();
+      const tooltip = String(legendItem.tooltip || legendItem.label || visible).trim();
+
+      return { visible, tooltip };
+    }
+
+    return this.splitLegendLabel(legendItem.label || fallback);
+  }
+
+  /**
+   * Render the architecture legend by itself into any container.
+   * @param {string|HTMLElement} container - Container ID or element
+   */
+  renderLegend(container) {
+    const cont = this.getContainer(container);
+    cont.appendChild(this.createArchitectureLegend());
   }
 
   /**
