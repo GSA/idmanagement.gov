@@ -1,7 +1,9 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": []
+        "new_certs": [
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:186981345856711198160613626650968361456"
+        ]
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -98,6 +100,7 @@
         "common_name:U.S. Department of Transportation Device CA G5,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Device CA G6,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
         "common_name:U.S. Department of Transportation Device CA G7,organizational_unit_name:U.S. Department of Transportation,organization_name:U.S. Government,country_name:US",
+        "common_name:U.S.-Department-of-State-DPC-CA,domain_component:derived,domain_component:state,domain_component:sbu",
         "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
         "common_name:WidePoint ECA 8,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:WidePoint ECA 9,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
@@ -108,6 +111,8 @@
         "common_name:WidePoint ORC SSP 5,organization_name:ORC PKI,country_name:US",
         "common_name:WidePoint SSP Intermediate CA 2,organization_name:ORC PKI,country_name:US",
         "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US",
+        "common_name:XTec NFI SSP CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+        "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
         "organizational_unit_name:DHS CA4,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Homeland Security,organization_name:U.S. Government,country_name:US",
         "organizational_unit_name:Department of Veterans Affairs CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Veterans Affairs,organization_name:U.S. Government,country_name:US",
         "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
@@ -1969,6 +1974,34 @@
             }
         },
         {
+            "subject": "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "186981345856711198160613626650968361456",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "89 ac 36 a8 f6 af 4c 01 1d e7 52 c0 d2 07 75 7d f3 61 44 c7",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {
+                "http://aia.xca.xpki.com/AIA/IssuedCertsByXTec_NFI_SSP_Root_CA_1.p7c": [
+                    "common_name:XTec NFI SSP CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
+                ]
+            },
+            "aia-entries": {
+                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
+                    "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
+                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "218235107572222579229664670376797197163",
@@ -2228,7 +2261,8 @@
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
                     "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
+                    "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
+                    "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -2253,11 +2287,11 @@
             ],
             "sia-entries": {
                 "http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c": [
-                    "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-                    "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
+                    "common_name:U.S.-Department-of-State-DPC-CA,domain_component:derived,domain_component:state,domain_component:sbu",
+                    "organizational_unit_name:U.S. Department of State PIV CA3,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:U.S. Department of State PIV CA3,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US"
+                    "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu"
                 ]
             },
             "aia-entries": {
@@ -2751,6 +2785,29 @@
             }
         },
         {
+            "subject": "common_name:U.S.-Department-of-State-DPC-CA,domain_component:derived,domain_component:state,domain_component:sbu",
+            "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
+            "serial-number": "1606758636",
+            "akid": "cc 00 68 61 a6 a5 03 93 10 0a 1b 61 b7 87 18 c1 45 56 da 82",
+            "skid": "45 51 e6 60 d5 16 eb 0f 63 c2 87 be 70 04 2e c9 d0 ef 1e be",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "ldap://dir.pki.state.gov/cn=U.S. Department of State AD Root CA,cn=AIA,cn=Public Key Services,cn=Services,cn=Configuration,dc=state,dc=sbu?cACertificate;binary,crossCertificatePair;binary": [],
+                "http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c": [
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
             "subject": "organizational_unit_name:U.S. Department of State PIV CA3,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "serial-number": "1695337671",
@@ -3003,6 +3060,30 @@
             "aia-entries": {
                 "http://crl-server.orc.com/caCerts/caCertsIssuedToWPSSPIntCA.p7c": [
                     "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:XTec NFI SSP CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+            "issuer": "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+            "serial-number": "72082895690268674",
+            "akid": "89 ac 36 a8 f6 af 4c 01 1d e7 52 c0 d2 07 75 7d f3 61 44 c7",
+            "skid": "85 9d 49 80 34 51 ea 34 47 82 42 9c 74 bb 83 d8 3e 09 19 00",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://aia.xca.xpki.com/AIA/IssuedCertsforXTec_NFI_SSP_Root_CA_1.p7c": [
+                    "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -3834,17 +3915,6 @@
             }
         },
         {
-            "subject": "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-            "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-            "serial-number": "1311970641",
-            "akid": "6f 83 fe 82 50 64 65 77 3e fd df 03 9a ce 29 d1 2f 30 cc ec",
-            "skid": "2f 4a ea b0 a5 54 3f 07 92 4d 49 9b 3e 7d 08 5a d2 43 b9 4b",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
             "subject": "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
             "serial-number": "1370498050",
@@ -3893,6 +3963,18 @@
             "serial-number": "1670195540",
             "akid": "8d 47 4a d1 5e 45 ea ee 2f 51 58 47 21 4f 12 eb ca 7a a1 5f",
             "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
+            "status": "Certificate Valid, but no Path to Common",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Unable to build Path"
+            }
+        },
+        {
+            "subject": "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+            "issuer": "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+            "serial-number": "72082895690268673",
+            "akid": "89 ac 36 a8 f6 af 4c 01 1d e7 52 c0 d2 07 75 7d f3 61 44 c7",
+            "skid": "89 ac 36 a8 f6 af 4c 01 1d e7 52 c0 d2 07 75 7d f3 61 44 c7",
             "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
                 "result": "false",
@@ -4135,8 +4217,18 @@
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-            "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu"
+            "common_name:U.S.-Department-of-State-DPC-CA,domain_component:derived,domain_component:state,domain_component:sbu"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
+            "organizational_unit_name:U.S. Department of State PIV CA3,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -4146,7 +4238,7 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-            "organizational_unit_name:U.S. Department of State PIV CA3,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US"
+            "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -4391,6 +4483,12 @@
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:Senate PIV-I CA G6,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
+            "common_name:XTec NFI SSP CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
