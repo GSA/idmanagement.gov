@@ -92,6 +92,12 @@ references:
     description: "Governmentwide FICAM architecture reference describing ICAM practice areas, services, and supporting elements."
     isnew: false
     status: none
+  - title: "Digital Identity Risk Management"
+    link: "https://csrc.nist.gov/publications/detail/sp/800-63b/final"
+    description: "NIST SP 800-63B and NIST SP 800-63C provide guidance on risk management for digital identity systems, including authentication and federation."
+    isnew: false
+    status: none
+
 
 documents_enabled: false
 documents: []

@@ -9,7 +9,7 @@ ramp: purple
 summary: "How an agency collects, verifies, and manages attributes and entitlements to establish and maintain enterprise human identities and NHIs."
 
 capabilities:
-  - name: "Identity proofing"
+  - name: "Identity Proofing (IAL1, IAL2, IAL3)"
     isnew: false
     status: none
     detail: "The processes used to collect, validate, and verify information about a subject to establish assurance in the subject’s claimed identity."
@@ -19,8 +19,8 @@ capabilities:
     status: none
     detail: "Attribute management includes orchestrating, validating, and lifecycle-managing the distinctive technical data points and metadata that uniquely define both human users and NHIs."
   
-  - name: "Lifecycle management"
-    isnew: false
+  - name: "Lifecycle Management (Joiner, Mover Leaver)"
+    isnew: true
     status: none
     detail: "Identity Lifecycle Management is the administrative and technical activities required to manage a human digital identity or NHI throughout its lifecycle - creation, modification, and deactivation."
   
@@ -57,6 +57,46 @@ capabilities:
     isnew: false
     status: none
     detail: "Minimum-necessary data collection at proofing; informed consent management; Privacy Act of 1974 compliance; Privacy Impact Assessment (PIA) requirements for ICAM systems."
+
+  - name: "Identity Evidence"
+    isnew: false
+    status: none
+    detail: "Identity evidence systems."
+
+  - name: "Physical Documents"
+    isnew: false
+    status: none
+    detail: "Physical documents used for identity proofing, such as passports, driver's licenses, and other government-issued identification cards."
+
+  - name: "Electronic Documents"
+    isnew: true
+    status: none
+    detail: "Electronic documents used for identity proofing, such as digital passports, online driver's licenses, and other government-issued digital identification cards."
+
+  - name: "Non-Human Identity enrollment"
+    isnew: true
+    status: none
+    detail: "Enrollment of non-human identities (NHIs) such as IoT devices, service accounts, and software agents; includes proofing, attribute management, and lifecycle management for NHIs."
+
+  - name: "mPIV Enrollment"
+    isnew: true
+    status: none
+    detail: "Enrollment of non-human identities (NHIs) such as IoT devices, service accounts, and software agents; includes proofing, attribute managementifecycle management for NHIs."
+
+  - name: "Verifiable Credentials Issuance"
+    isnew: true
+    status: none
+    detail: "Issuance of verifiable credentials (VCs) for both human and non-human identities; includes proofing, attribute management, and lifecycle management for VCs."
+
+  - name: "Privacy by Design"
+    isnew: true
+    status: none
+    detail: "Privacy by design principles integrated into the development and deployment of identity management systems."
+
+  - name: "Attribute Management"
+    isnew: true
+    status: none
+    detail: "Management of identity attributes across different systems and platforms."
 
 references_enabled: true
 references:

@@ -31,13 +31,13 @@ capabilities:
   
   - name: "mPIV authentication"
     legend_key: mpiv
-    isnew: false
+    isnew: true
     status: none
     detail: "Performed using hardware-backed cryptographic keys and PKI certificates stored within a mobile digital wallet. Relying parties (agencies) verify these credentials via remote online protocols or local wireless connections, e.g., NFC or BLE after the user approves the transaction using a PIN or biometrics."
   
   - name: "FIDO2 authentication"
     legend_key: fido2
-    isnew: false
+    isnew: true
     status: none
     detail: "FIDO2 is phishing resistant MFA based on public key cryptography combining WebAuthn and the FIDO Alliance's Client to Authenticator Protocol (CTAP2) standard."
 
@@ -52,6 +52,18 @@ capabilities:
     isnew: false
     status: none
     detail: "The holder presents a VC to the resource server; the verifier validates the issuer's signature offline and applies fine-grained ABAC using structured entitlement claims, with no real-time issuer query required."
+  
+  - name: "Verifiable Credentials / mDLs"
+    legend_key: vc
+    isnew: true
+    status: none
+    detail: "Verifiable Credentials (VCs) are cryptographically signed digital credentials that can be issued by a trusted authority and presented by the holder to a verifier. Mobile Driver Licenses (mDLs) are a specific type of VC that can be used for identity verification and access control."
+
+  - name: "Policy DecisionPoint (PDP) / Policy Enforcement Point (PEP)"
+    legend_key: vc
+    isnew: true
+    status: none
+    detail: "Policy Decision Points (PDPs) evaluate access requests and make authorization decisions, while Policy Enforcement Points (PEPs) enforce those decisions by controlling access to resources."
   
   - name: "Digital services / SSO"
     isnew: false
