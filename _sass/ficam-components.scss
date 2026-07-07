@@ -361,6 +361,7 @@ h1 {
 
 /* Capability rows */
 .cap-row {
+  position: relative;
   padding: 5px 8px;
   border-radius: 6px;
   margin-bottom: 6px;
@@ -381,13 +382,13 @@ h1 {
 .cap-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 
 .cap-name-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex: 1;
   gap: 6px;
@@ -396,11 +397,22 @@ h1 {
 
 .cap-name {
   font-size: 14px;
+  line-height: 1.2;
   color: var(--tx);
 }
 
 .cap-row.open .cap-name {
   font-weight: 600;
+}
+
+.cap-row.has-new-tag .cap-name-wrap {
+  padding-left: 48px;
+}
+
+.cap-row.has-new-tag .cap-name-wrap .new-tag {
+  position: absolute;
+  top: 5px;
+  left: 8px;
 }
 
 .cap-chevron {
@@ -446,18 +458,28 @@ h1 {
   text-align: center;
 }
 
+.practice-section .cap-row.has-new-tag .cap-name-wrap {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.practice-section .cap-row.has-new-tag .cap-name-wrap .new-tag {
+  top: 6px;
+  left: 8px;
+}
+
 .practice-section .cap-chevron {
   position: absolute;
   right: 8px;
-  top: 50%;
+  top: 8px;
   margin-left: 0;
-  transform: translateY(-50%);
 }
 
 .practice-section .cap-detail {
   margin: 0;
   padding: 8px 10px 9px;
   border-top: 1px solid var(--bd);
+  text-align: center;
 }
 
 .cap-row.legend-mdl,

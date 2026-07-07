@@ -11,36 +11,43 @@ summary: "A process that allows for the conveyance of identity and authenticatio
 capabilities:
   - name: "Cross-agency trust"
     isnew: false
+    optional: false
     status: none
     detail: "Cross-agency trust is dependent on a trust agreement which is a set of conditions under which a CSP, IdP, and RP are allowed to participate in a federation transaction to establish an authentication session between the subscriber and the RP using federation protocols SAML 2.0 and OIDC."
   
   - name: "Attribute sharing"
     isnew: false
+    optional: false
     status: none
     detail: "Attribute sharing is the process of identifying relevant user characteristics (like job title, department, location, security clearance) and making them accessible to an authorization system, allowing it to make fine-grained access control decisions based on those attributes rather than just user roles, enabling more dynamic and context-aware permissions across different applications and situations."
   
   - name: "Federal PKI trust"
     isnew: false
+    optional: false
     status: none
     detail: "Federal Common Policy CA (FCPCA) as the government-wide PKI trust anchor; FPKI Policy Authority governance over cross-certification with bridge CAs; PKI SSPs and PIV-I providers operating under legal, technology, and audit agreements; certificate path validation and revocation (CRL/OCSP)."
   
   - name: "mDL Trust"
     isnew: true
+    optional: true
     status: none
     detail: "Under ISO/IEC 18013-5, AAMVA’s Digital Trust Services manages the VICAL to provide relying parties with the public keys needed to verify DMV-issued mDLs. To accept these digital IDs for boarding a plane at TSA checkpoints, states can use TSA guidance to apply for a 6 CFR § 37.7 waiver. Similarly, remote presentation under ISO/IEC 18013-7 secures online identity checks through real-time registry verification and hardware-backed device binding."
   
   - name: "FIDO2 MDS trust"
     isnew: true
+    optional: false
     status: none
     detail: "The FIDO Metadata Service (MDS) serves as a global registry that helps organizations differentiate between trusted, certified authenticators and unverified implementations. It equips an agency’s FIDO server with the intelligence to make data-driven decisions by automatically downloading the Metadata BLOB, a digitally signed file of all FIDO-certified devices. In federation, an Identity Provider (IdP) uses this server to validate a user's passkey capabilities in real time against the registry. Based on these verified hardware standards, the IdP embeds security characteristics into tokens passed to downstream Service Providers, enforcing precise access controls across the federated ecosystem."
   
   - name: "Verifiable Data Registries"
     isnew: true
+    optional: true
     status: none
     detail: "Verifiable data registries provide issuer registry infrastructure for verifiable credentials, mediating the creation and verification of identifiers, verification material, and other data—such as VC schemas and revocation registries—and rooting VC signing keys in FPKI. They support the OID4VP presentation protocol for cross-domain VC acceptance without bilateral agreements."
   
   - name: "TLS 1.3 for PQC key exchange"
     isnew: true
+    optional: false
     status: none
     detail: "TLS 1.3 provides enhanced security features for post-quantum cryptography (PQC) key exchange, ensuring secure communication channels even in the presence of quantum computing threats."
 

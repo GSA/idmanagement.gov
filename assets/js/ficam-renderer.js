@@ -129,13 +129,27 @@ class FicamSectionRenderer {
   }
 
   /**
+   * Check whether a data item is marked optional.
+   * @param {Object} item - Section or capability data
+   * @returns {boolean}
+   */
+  isOptionalItem(item) {
+    if (!item) {
+      return false;
+    }
+    const values = [item.optional, item.isOptional, item.is_optional];
+    return values.some((value) => value === true || value === 'true');
+  }
+
+  /**
    * Create the visual New label used beside section and capability headings.
+   * @param {Object} item - Source item with optional flag
    * @returns {HTMLElement}
    */
-  createNewTag() {
+  createNewTag(item = null) {
     const el = document.createElement('span');
     el.className = 'new-tag';
-    el.textContent = 'New';
+    el.textContent = this.isOptionalItem(item) ? 'New*' : 'New';
     return el;
   }
 
@@ -198,7 +212,7 @@ class FicamSectionRenderer {
    */
   appendStateTags(wrap, item) {
     if (this.isNewItem(item)) {
-      wrap.appendChild(this.createNewTag());
+      wrap.appendChild(this.createNewTag(item));
     }
 
     const status = this.getDisplayStatus(item);
@@ -405,6 +419,9 @@ class FicamSectionRenderer {
     const legendClass = this.getLegendClass(capability.legend_key);
     const legendRamp = this.getLegendRamp(capability.legend_key);
     row.className = `cap-row c-${ramp}${legendClass ? ` ${legendClass} c-${legendRamp}` : ''}`;
+    if (this.isNewItem(capability)) {
+      row.classList.add('has-new-tag');
+    }
 
     const header = document.createElement('div');
     header.className = 'cap-header';

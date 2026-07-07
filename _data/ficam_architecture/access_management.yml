@@ -11,33 +11,39 @@ summary: "The set of practices that enables only those permitted the ability to 
 capabilities:
   - name: "Authentication"
     isnew: false
+    optional: false
     status: none
     detail: "Verifying the identity of a human or NHI user, process, or device, often as a prerequisite to allowing access to resources in an information system"
   
   - name: "Authorization"
     isnew: false
+    optional: false
     status: none
     detail: "The right or a permission that is granted to a system entity to access a system resource."
   
   - name: "Privileged Access Management (PAM)"
     isnew: false
+    optional: false
     status: none
     detail: "Monitoring, controlling and auditing the use of privileged accounts which include local and domain administrative accounts, emergency accounts, application management, and service accounts. Privilege accounts provide elevated, often nonrestricted, access to IT resources and technology."
   
   - name: "Physical Access Systems (PACS)"
     isnew: false
+    optional: false
     status: none
     detail: "a collection of technologies that control physical access at one or more federal agency sites by electronically authenticating employees, contractors, and visitors."
   
   - name: "mPIV authentication"
     legend_key: mpiv
     isnew: true
+    optional: true
     status: none
     detail: "Performed using hardware-backed cryptographic keys and PKI certificates stored within a mobile digital wallet. Relying parties (agencies) verify these credentials via remote online protocols or local wireless connections, e.g., NFC or BLE after the user approves the transaction using a PIN or biometrics."
   
   - name: "FIDO2 authentication"
     legend_key: fido2
     isnew: true
+    optional: false
     status: none
     detail: "FIDO2 is phishing resistant MFA based on public key cryptography combining WebAuthn and the FIDO Alliance's Client to Authenticator Protocol (CTAP2) standard."
 
@@ -50,23 +56,27 @@ capabilities:
   - name: "VC-based authorization"
     legend_key: vc
     isnew: false
+    optional: false
     status: none
     detail: "The holder presents a VC to the resource server; the verifier validates the issuer's signature offline and applies fine-grained ABAC using structured entitlement claims, with no real-time issuer query required."
   
   - name: "Verifiable Credentials / mDLs"
     legend_key: vc
     isnew: true
+    optional: true
     status: none
     detail: "Verifiable Credentials (VCs) are cryptographically signed digital credentials that can be issued by a trusted authority and presented by the holder to a verifier. Mobile Driver Licenses (mDLs) are a specific type of VC that can be used for identity verification and access control."
 
   - name: "Policy DecisionPoint (PDP) / Policy Enforcement Point (PEP)"
     legend_key: vc
     isnew: true
+    optional: false
     status: none
     detail: "Policy Decision Points (PDPs) evaluate access requests and make authorization decisions, while Policy Enforcement Points (PEPs) enforce those decisions by controlling access to resources."
   
   - name: "Digital services / SSO"
     isnew: false
+    optional: false
     status: none
     detail: "An authentication process by which one account and its authenticators are used to access multiple applications in a seamless manner, generally implemented with a federation protocol."
 
