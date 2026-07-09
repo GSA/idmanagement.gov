@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: implement
-title: Federal Identity, Credential, and Access Management Sub Committee
+title: Mapping of NIST SP 800-53 Revision 5 Identification and Authentication Controls to NIST SP 800-63 Draft Version 4
 permalink: /implement/mapping-of-sp800-53-ia-to-sp-800-63/
 sticky_sidenav: true
 sidenav: implement
@@ -45,8 +45,6 @@ version: 2.0
     </table>
   </div>
 </div>
-
-# Mapping of NIST SP 800-53 Revision 5 Identification and Authentication Controls to NIST SP 800-63 Draft Version 4
 
 ## Executive Summary
 
