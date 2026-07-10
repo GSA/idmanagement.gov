@@ -50,6 +50,8 @@ implement:
     href: /implement/outlook/
   - text: FPKI Ecosystem Changes
     href: /fpki/notifications/
+  - text: FPKI Graph
+    href: /fpki/graph/
   - text: FPKI Test Environment
     href: /implement/fpkicite/
   - text: Mapping of SP800-53 IA to SP 800-63
@@ -170,4 +172,3 @@ policy:
     href: /contribute/
   - text: Public Domain License
     href: /license/
-

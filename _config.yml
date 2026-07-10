@@ -85,6 +85,8 @@ primary_navigation:
         url: /implement/outlook/
       - name: FPKI Ecosystem Changes
         url: /fpki/notifications/
+      - name: FPKI Graph
+        url: /fpki/graph/
       - name: FPKI Test Environment
         url: /implement/fpkicite/        
       # - name: FIDO2 and Web Authentication

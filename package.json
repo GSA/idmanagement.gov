@@ -3,6 +3,7 @@
   "version": "1.3.0",
   "scripts": {
     "local": "bundler install && sleep 5 && npm install",
+    "generate:fpki-hierarchy": "ruby scripts/generate_fpki_certificate_hierarchy.rb",
     "build": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",
     "reset": "npx rimraf .git",
