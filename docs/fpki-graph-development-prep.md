@@ -8,7 +8,7 @@ Status: development prep plus active prototype implementation notes.
 - Local branch: `fpki-graph-json-view`
 - Base branch: `staging`
 - Site build command: `npm run build`
-- Current `npm run build`: `bundle exec jekyll build`
+- Current `npm run build`: `npm run generate:fpki-hierarchy && bundle exec jekyll build`
 - Ruby requested by repo: `.ruby-version` = `3.1.3`
 - Jekyll version in `Gemfile`: `4.4.1`
 - Node dependencies are managed with `package-lock.json`; prefer `npm ci` for CI/dev setup.
@@ -167,20 +167,18 @@ Generation command:
 npm run generate:fpki-hierarchy
 ```
 
-## Build Integration Option
+## Build Integration
 
-If Cloud.gov Pages/Federalist runs `npm run build`, update `package.json` like this:
+Cloud.gov Pages/Federalist runs `npm run build`, which now regenerates the hierarchy JSON from the current `.p7b` before Jekyll builds the site:
 
 ```json
 {
   "scripts": {
-    "generate:fpki-graph": "ruby scripts/generate_fpki_graph_data.rb",
-    "build": "npm run generate:fpki-graph && bundle exec jekyll build"
+    "generate:fpki-hierarchy": "ruby scripts/generate_fpki_certificate_hierarchy.rb",
+    "build": "npm run generate:fpki-hierarchy && bundle exec jekyll build"
   }
 }
 ```
-
-If Cloud.gov Pages/Federalist does not run `npm run build`, prefer a Jekyll generator under `_plugins`.
 
 ## Watch Items
 

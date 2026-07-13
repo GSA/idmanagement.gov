@@ -163,13 +163,22 @@
     ].join("");
   }
 
-  function relationshipList(label, certificates, emptyText, direction) {
+  function relationshipCopyButton(name) {
+    return [
+      "<button type=\"button\" class=\"fpki-hierarchy__relationship-copy\" data-fpki-copy-name=\"" + escapeHtml(name) + "\" aria-label=\"Copy " + escapeHtml(name) + "\">",
+      "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"9\" width=\"10\" height=\"10\" rx=\"2\"></rect><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"></path></svg>",
+      "</button>"
+    ].join("");
+  }
+
+  function relationshipList(label, certificates, emptyText, direction, previewMode) {
     var icon = relationshipIcon(direction);
     var items = certificates.map(function (certificate) {
+      var name = certificate.label || certificate.subject || certificate.id;
       return [
         "<li>",
         icon,
-        "<a class=\"usa-link fpki-hierarchy__relationship-link\" href=\"#\" data-fpki-certificate-link=\"" + escapeHtml(certificate.id) + "\" data-fpki-link-direction=\"" + escapeHtml(direction) + "\">" + escapeHtml(certificate.label || certificate.subject || certificate.id) + "</a>",
+        previewMode ? "<span class=\"fpki-hierarchy__relationship-copy-text\">" + escapeHtml(name) + "</span>" + relationshipCopyButton(name) : "<a class=\"usa-link fpki-hierarchy__relationship-link\" href=\"#\" data-fpki-certificate-link=\"" + escapeHtml(certificate.id) + "\" data-fpki-link-direction=\"" + escapeHtml(direction) + "\">" + escapeHtml(name) + "</a>",
         "</li>"
       ].join("");
     }).join("");
@@ -188,7 +197,7 @@
     ].join("");
   }
 
-  function certificateNodeSummary(certificate, certificatesById) {
+  function certificateNodeSummary(certificate, certificatesById, previewMode) {
     var inboundCertificate = certificate.issuer_id ? certificatesById[certificate.issuer_id] : null;
     var outboundCertificates = certificatesIssuedBy(certificate, certificatesById);
     var attributeRows = [
@@ -209,10 +218,10 @@
       attributeRows,
       "</div>",
       "<div class=\"fpki-hierarchy__relationships\">",
-      relationshipList("Inbound Links from", inboundCertificate ? [inboundCertificate] : [], "No inbound issuer link", "inbound"),
-      relationshipList("Outbound Links to", outboundCertificates, "No outbound certificate links", "outbound"),
+      relationshipList("Inbound Links from", inboundCertificate ? [inboundCertificate] : [], "No inbound issuer link", "inbound", previewMode),
+      relationshipList("Outbound Links to", outboundCertificates, "No outbound certificate links", "outbound", previewMode),
       "</div>",
-      "<div class=\"fpki-hierarchy__relationship-preview\" data-fpki-relationship-preview aria-live=\"polite\"></div>",
+      previewMode ? "" : "<div class=\"fpki-hierarchy__relationship-preview\" data-fpki-relationship-preview aria-live=\"polite\"></div>",
       "</div>"
     ].join("");
   }
@@ -233,7 +242,7 @@
       "</div>",
       "</div>",
       "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__root fpki-hierarchy__relationship-preview-result\" aria-multiselectable=\"true\">",
-      topLevelAccordionItem(resultId, certificate.label, hierarchyContent(certificate, certificatesById, idPrefix + "-path"), certificate, certificatesById),
+      topLevelAccordionItem(resultId, certificate.label, hierarchyContent(certificate, certificatesById, idPrefix + "-path", true), certificate, certificatesById),
       "</div>",
       "</div>"
     ].join("");
@@ -268,15 +277,15 @@
     ].join("");
   }
 
-  function hierarchyChain(pathIds, certificatesById, idPrefix, index) {
+  function hierarchyChain(pathIds, certificatesById, idPrefix, index, previewMode) {
     var certificateId = pathIds[index];
     var certificate = certificatesById[certificateId];
     if (!certificate) return "";
 
     var itemId = idPrefix + "-node-" + index + "-" + slug(certificate.id).slice(0, 20);
-    var child = hierarchyChain(pathIds, certificatesById, idPrefix, index + 1);
+    var child = hierarchyChain(pathIds, certificatesById, idPrefix, index + 1, previewMode);
     var issuerCertificate = certificateBody(certificate, itemId, "fpki-hierarchy__issuer-certificate-data");
-    var issuerSummary = certificateNodeSummary(certificate, certificatesById);
+    var issuerSummary = certificateNodeSummary(certificate, certificatesById, previewMode);
     var content = [
       issuerCertificate ? "<div class=\"fpki-hierarchy__issuer-certificate-panel\">" + issuerSummary + issuerCertificate + "</div>" : "",
       child
@@ -290,14 +299,14 @@
     ].join("");
   }
 
-  function hierarchyContent(certificate, certificatesById, idPrefix) {
+  function hierarchyContent(certificate, certificatesById, idPrefix, previewMode) {
     var ids = certificate.path_to_root || [certificate.id];
     var selectedCertificate = certificateBody(certificate, idPrefix + "-selected", "fpki-hierarchy__selected-certificate");
-    var issuerPath = hierarchyChain(ids, certificatesById, idPrefix, 1);
+    var issuerPath = hierarchyChain(ids, certificatesById, idPrefix, 1, previewMode);
     var issuerPathId = idPrefix + "-issuer-path";
     var content = [];
 
-    content.push(certificateSummaryPanel(certificate, certificatesById, idPrefix, selectedCertificate));
+    content.push(certificateSummaryPanel(certificate, certificatesById, idPrefix, selectedCertificate, previewMode));
 
     if (issuerPath) {
       content.push(issuerPathControls(issuerPathId));
@@ -339,7 +348,7 @@
     return fields;
   }
 
-  function certificateSummaryPanel(certificate, certificatesById, id, selectedCertificate) {
+  function certificateSummaryPanel(certificate, certificatesById, id, selectedCertificate, previewMode) {
     var pathIds = certificate.path_to_root || [certificate.id];
     var rootCertificate = certificatesById[pathIds[pathIds.length - 1]] || certificate;
 
@@ -354,7 +363,7 @@
       "<p><strong>Valid to:</strong> " + escapeHtml(certificate.valid_to || "Unavailable") + "</p>",
       "</div>",
       "</div>",
-      certificateNodeSummary(certificate, certificatesById),
+      certificateNodeSummary(certificate, certificatesById, previewMode),
       selectedCertificate || "",
       "</div>"
     ].join("");
@@ -401,11 +410,11 @@
       "<div class=\"fpki-hierarchy__split-filter\">",
       "<div class=\"fpki-hierarchy__filter-input\">",
       "<label class=\"usa-sr-only\" for=\"fpki-hierarchy-filter\">Filter certificate authorities</label>",
-      "<input class=\"usa-input\" id=\"fpki-hierarchy-filter\" type=\"search\" autocomplete=\"off\" placeholder=\"Type 4 or more characters, or check Show all, to display matching certificate data.\">",
+      "<input class=\"usa-input\" id=\"fpki-hierarchy-filter\" type=\"search\" autocomplete=\"off\" placeholder=\"Type 4 or more characters, or turn Show all on, to display matching certificate data.\">",
       "</div>",
       "<div class=\"fpki-hierarchy__show-all\">",
-      "<input class=\"usa-checkbox__input\" id=\"fpki-hierarchy-show-all\" type=\"checkbox\">",
-      "<label class=\"usa-checkbox__label\" for=\"fpki-hierarchy-show-all\">Show all</label>",
+      "<input class=\"usa-checkbox__input\" id=\"fpki-hierarchy-show-all\" type=\"checkbox\" role=\"switch\">",
+      "<label class=\"usa-checkbox__label fpki-hierarchy__toggle-label\" for=\"fpki-hierarchy-show-all\"><span class=\"fpki-hierarchy__toggle-text\">Show all</span><span class=\"fpki-hierarchy__toggle-state fpki-hierarchy__toggle-state--off\">Off</span><span class=\"fpki-hierarchy__toggle-state fpki-hierarchy__toggle-state--on\">On</span></label>",
       "</div>",
       "</div>",
       "<fieldset class=\"usa-fieldset fpki-hierarchy__field-panel\">",
@@ -580,6 +589,17 @@
     });
 
     root.addEventListener("click", function (event) {
+      var copyButton = event.target.closest("[data-fpki-copy-name]");
+      if (copyButton && root.contains(copyButton)) {
+        event.preventDefault();
+        var copyValue = copyButton.getAttribute("data-fpki-copy-name") || "";
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(copyValue);
+        }
+        copyButton.setAttribute("aria-label", "Copied " + copyValue);
+        return;
+      }
+
       var previewExpand = event.target.closest("[data-fpki-preview-expand], [data-fpki-preview-collapse]");
       if (previewExpand && root.contains(previewExpand)) {
         event.preventDefault();

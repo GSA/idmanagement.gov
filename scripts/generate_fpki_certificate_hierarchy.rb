@@ -11,6 +11,8 @@ SOURCE_PATH = "_implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.
 OUTPUT_PATH = "_implement/tools/fpki-certificate-hierarchy.json"
 EXPECTED_ROOT_SHA256 = "5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC"
 
+abort "FPKI certificate source file was not found: #{SOURCE_PATH}" unless File.file?(SOURCE_PATH)
+
 def extension_value(certificate, oid)
   extension = certificate.extensions.find { |item| item.oid == oid }
   extension&.value
