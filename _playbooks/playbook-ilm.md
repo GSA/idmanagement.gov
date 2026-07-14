@@ -41,11 +41,9 @@ subnav:
     href: '#appendix-a-policies-standards-and-guidance'
 ---
 
-# Identity Lifecycle Management Playbook
-
 **The Identity Lifecycle Management Working Group of the Federal Chief Information Security Officer Council ICAM Subcommittee developed this playbook to help federal agencies understand and plan identity lifecycle management initiatives.**
 
-**Date: March 31, 2026 - Version: 2.0**
+**Date: March 31, 2026 - Version: 1.4**
 
 <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
 Date: {{page.pubdate}} - Version: {{page.version}}
@@ -62,7 +60,7 @@ Date: {{page.pubdate}} - Version: {{page.version}}
   </thead>
   <tbody>
   <tr>
-    <th scope='row'>2.0</th>
+    <th scope='row'>1.4</th>
     <td>3/31/2026</td>
     <td>Major update incorporating Enhanced Authentication Standards, Federation Requirements, Privacy Impact Assessment Requirements, Incident Response Framework, and Performance Metrics aligned with NIST 800-63 standards.</td>
   </tr>
