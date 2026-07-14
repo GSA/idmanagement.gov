@@ -365,6 +365,14 @@ These CAs associated with these CA certificates are actively issuing PIV , PIV-I
 - SHA-1 Hash: 68A4E9AB7A1FB8FB85316A770FF9CA874C020724
 - CRL DP: [http://crls.pki.state.gov/crls/DoSADPKIPIVCA2-1.crl](http://crls.pki.state.gov/crls/DoSADPKIPIVCA2-1.crl){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 
+#### U.S. Department of State DPC CA
+- Subject: CN = U.S.-Department-of-State-DPC-CA, DC = derived, DC = state, DC = sbu
+- Issuer: CN = U.S. Department of State AD Root CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu
+- Serial #: 5fc530ec
+- Validity: November 30, 2020 to November 30, 2030
+- SHA-1 Hash: a6e9c11ad29fc006ed65b06db32e36a927cb3a48
+- CRL DP: [http://crls.pki.state.gov/crls/DoSDPCCA.crl](http://crls.pki.state.gov/crls/DoSDPCCA.crl ){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+
 #### U.S. Department of Transportation Agency CA G7
 - Subject: CN = U.S. Department of Transportation CA G7, OU = U.S. Department of Transportation, O = U.S. Government, C = US 
 - Issuer: CN = WidePoint SSP Intermediate CA 2, O = ORC PKI, C = US
