@@ -24,10 +24,14 @@ permalink: /fpki/graph/
 <div class="fpki-graph-wide">
   <div class="fpki-graph-wide__container">
     <div class="fpki-graph-wide__header">
-      <h1>FPKI Graph</h1>
+      <h1>FPKI Graph Data Viewer</h1>
       <p>
         The FPKI Graph displays relationships between certification authorities in the Federal PKI ecosystem.
         This wide-format page runs alongside the graph on the FPKI Ecosystem Changes page.
+      </p>
+      <p id="fpki-graph-accessible-description">
+        The searchable certificate hierarchy provides a text-based alternative to the visual graph, including
+        certificate details, issuer paths, and inbound and outbound certificate relationships.
       </p>
     </div>
 
@@ -36,7 +40,6 @@ permalink: /fpki/graph/
         class="fpki-hierarchy"
         data-fpki-certificate-hierarchy
         data-source="{{ site.baseurl }}/implement/tools/fpki-certificate-hierarchy.json"
-        data-last-update="July 06, 2026"
       >
         <div class="fpki-hierarchy__loader" role="status" aria-live="polite">
           <div class="fpki-hierarchy__loader-mark" aria-hidden="true">GSA</div>
@@ -45,7 +48,7 @@ permalink: /fpki/graph/
       </div>
     </section>
 
-    <section class="fpki-graph-wide__graph" aria-labelledby="fpki-visual-graph-heading">
+    <section class="fpki-graph-wide__graph" aria-labelledby="fpki-visual-graph-heading" aria-describedby="fpki-graph-accessible-description">
       <div class="fpki-graph-wide__graph-header">
         <h2 id="fpki-visual-graph-heading">Visual graph</h2>
       </div>
@@ -57,7 +60,7 @@ permalink: /fpki/graph/
     <div class="fpki-graph-wide__notes">
       <p>
         A P7B file of the weekly FPKI Graph run is available
-        <a class="usa-link" href="{{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b">here</a>.
+        <a class="usa-link" href="{{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b">Download the weekly FPKI certificate bundle (P7B)</a>.
         The graph data currently renders from the existing GEXF file while the JSON/YAML graph view is developed.
       </p>
       <p>

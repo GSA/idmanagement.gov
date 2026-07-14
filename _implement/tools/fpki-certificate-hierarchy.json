@@ -1,7 +1,11 @@
 {
+  "file_name": "FPKI Certificate Hierarchy",
+  "build_date": "July 14, 2026",
+  "used_by": "fpki_graph.md",
   "meta": {
     "source": "_implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b",
     "source_last_modified": "2026-07-09T19:36:18Z",
+    "crawler_last_modified": "2026-07-09T19:36:18Z",
     "certificate_count": 133,
     "root_id": "5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC",
     "root_label": "Federal Common Policy CA G2",

@@ -144,7 +144,21 @@
 
 .fpki-hierarchy__inline-checkbox {
   flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
   margin: 0;
+}
+
+.fpki-hierarchy .usa-checkbox__label {
+  padding-left: 1.55rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.fpki-hierarchy .usa-checkbox__label::before {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.1rem;
 }
 
 .fpki-hierarchy__root > .usa-accordion__content {
@@ -240,6 +254,11 @@
   padding: 0.75rem;
 }
 
+.fpki-hierarchy__root:not(.fpki-hierarchy__relationship-preview-result) > .usa-accordion__content > .fpki-hierarchy__summary-panel,
+.fpki-hierarchy__relationship-preview-result > .usa-accordion__content > .fpki-hierarchy__summary-panel {
+  margin-top: 2px;
+}
+
 .fpki-hierarchy__summary-panel-data {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -331,13 +350,38 @@
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  width: 1.65rem;
-  height: 1.65rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border: 1px solid #c9c9c9;
   border-radius: 50%;
   background: #fff;
   color: #1b1b1b;
   cursor: pointer;
+}
+
+.fpki-hierarchy__relationship-link {
+  appearance: none;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: #005ea2;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.fpki-hierarchy__relationship-link:hover {
+  color: #1a4480;
+}
+
+.fpki-hierarchy__relationship-link:focus-visible,
+.fpki-hierarchy__relationship-copy:focus-visible,
+.fpki-hierarchy__cell-copy:focus-visible,
+.fpki-hierarchy__relationship-preview-action:focus-visible,
+.fpki-hierarchy__relationship-preview-close:focus-visible {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0.2rem;
 }
 
 .fpki-hierarchy__relationship-copy:hover,
@@ -451,8 +495,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.75rem;
+  height: 2.75rem;
   border: 1px solid #565c65;
   border-radius: 50%;
   background: #fff;
@@ -544,7 +588,7 @@
   justify-content: space-between;
   gap: 1rem;
   max-width: calc(100% - 10px);
-  margin: 0 0 3px 10px;
+  margin: 0 0 3px;
   padding: 0.5rem 0.75rem;
   background: #c9c9c9;
   border: 1px solid #c9c9c9;
@@ -664,6 +708,7 @@
 }
 
 .fpki-hierarchy__filter > .usa-accordion__heading > .usa-accordion__button[aria-expanded="false"] {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23ffffff'%20stroke-width='2.5'%20stroke-linecap='round'%3E%3Cpath%20d='M12%205v14M5%2012h14'%2F%3E%3C%2Fsvg%3E");
   border-radius: 10px;
 }
 
@@ -673,7 +718,7 @@
 
 .fpki-hierarchy__filter .usa-accordion__content {
   border-radius: 0 0 10px 10px;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 
 .fpki-hierarchy__filter-summary-row {
@@ -698,12 +743,17 @@
 }
 
 .fpki-hierarchy__last-update {
-  margin: 0.75rem 0 0;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-height: 1.75rem;
+  margin: 0;
   color: #71767a;
   font-size: 0.88rem;
   font-weight: 400;
   line-height: 1.2;
   text-align: right;
+  white-space: nowrap;
 }
 
 .fpki-hierarchy__split-filter {
@@ -718,12 +768,14 @@
 }
 
 .fpki-hierarchy__filter-input {
+  min-width: 0;
   background: #f8f9fa;
   padding: 0.4rem;
 }
 
 .fpki-hierarchy__filter-input .usa-input {
   max-width: none;
+  min-width: 0;
   height: auto;
   width: 100%;
   margin: 0;
@@ -736,87 +788,115 @@
 .fpki-hierarchy__filter-input .usa-input:focus {
   border-color: #86b7fe;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-  outline: 0;
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0;
+}
+
+.fpki-hierarchy__filter-instructions {
+  margin: 0.35rem 0 0;
+  color: #565c65;
+  font-size: 0.88rem;
 }
 
 .fpki-hierarchy__show-all {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   border-left: 1px solid #a9a9a9;
-  background: #c0c0c0;
-  color: #1b1b1b;
+  background: #f1f3f5;
   min-height: 3.05rem;
-  padding: 0.35rem 0.65rem;
+  padding: 0.4rem;
   white-space: nowrap;
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__input {
-  position: absolute;
-  opacity: 0;
+.fpki-hierarchy__show-all-button.usa-button {
+  min-width: 6.5rem;
+  margin: 0;
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__label {
-  display: inline-flex;
+.fpki-hierarchy__field-heading {
+  display: flex;
   align-items: center;
-  gap: 0.3rem;
-  margin-top: 0;
-  border: 1px solid #71767a;
-  border-radius: 999px;
-  background: #f8f9fa;
-  color: #1b1b1b;
-  cursor: pointer;
-  font-size: 0.88rem;
-  font-weight: 700;
-  line-height: 1;
-  min-height: 1.75rem;
-  padding: 0.18rem 0.25rem 0.18rem 0.55rem;
-  white-space: nowrap;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__label::before {
-  display: none;
+.fpki-hierarchy__field-heading-label {
+  margin: 0;
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__input:focus + .usa-checkbox__label {
-  outline: 0.25rem solid #2491ff;
-  outline-offset: 0.15rem;
+.fpki-hierarchy__field-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: 0;
 }
 
-.fpki-hierarchy__toggle-state {
+.fpki-hierarchy__filter-reset-button.usa-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 1.95rem;
-  min-height: 1.3rem;
-  border-radius: 999px;
-  background: #71767a;
-  color: #fff;
-  font-size: 0.72rem;
-  text-transform: uppercase;
+  flex: 0 0 auto;
+  align-self: center;
+  min-height: 1.75rem;
+  margin: 0;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.8rem;
+  line-height: 1.1;
 }
 
-.fpki-hierarchy__toggle-state--on {
-  display: none;
-  background: #1a2e45;
+.fpki-hierarchy__filter-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0.35rem 1rem;
+  margin: 5px;
+  background: #fff;
+  padding: 7px 5px;
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__input:checked + .usa-checkbox__label {
-  border-color: #1a2e45;
-  background: #e7f6f8;
+.fpki-hierarchy__filter-footer::before {
+  position: absolute;
+  top: 0;
+  right: calc(-1rem - 5px);
+  left: calc(-1rem - 5px);
+  border-top: 1px solid #c9c9c9;
+  content: "";
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__input:checked + .usa-checkbox__label .fpki-hierarchy__toggle-state--off {
-  display: none;
+.fpki-hierarchy__filter-footer > * {
+  margin: 0;
 }
 
-.fpki-hierarchy__show-all .usa-checkbox__input:checked + .usa-checkbox__label .fpki-hierarchy__toggle-state--on {
+.fpki-hierarchy__filter-footer .fpki-hierarchy__field-actions {
+  margin: 5px;
+}
+
+.fpki-hierarchy__filter-footer .usa-checkbox__label {
   display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  margin-top: 0;
+}
+
+.fpki-hierarchy__filter-footer .usa-checkbox__label::before {
+  top: 50%;
+  margin-top: 0;
+  transform: translateY(-50%);
+}
+
+.fpki-hierarchy__filter-footer .fpki-hierarchy__field-check {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
 }
 
 .fpki-hierarchy__field-panel {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
 }
 
 .fpki-hierarchy__field-row {
@@ -824,6 +904,8 @@
   flex-wrap: wrap;
   gap: 0.25rem 1rem;
   align-items: center;
+  margin-bottom: 6px;
+  padding-left: 15px;
 }
 
 .fpki-hierarchy__field-check {
@@ -863,9 +945,88 @@
   word-break: normal;
 }
 
+.fpki-hierarchy__details-table .fpki-hierarchy__copy-cell {
+  position: relative;
+  padding-right: 2.75rem;
+}
+
+.fpki-hierarchy__cell-copy {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+.fpki-hierarchy__cell-copy:hover,
+.fpki-hierarchy__cell-copy:focus {
+  background: #e7f6f8;
+}
+
+.fpki-hierarchy__cell-copy[data-fpki-copy-status]::after {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  z-index: 2;
+  width: max-content;
+  max-width: 10rem;
+  border-radius: 3px;
+  background: #1b1b1b;
+  color: #fff;
+  content: attr(data-fpki-copy-status);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.35rem 0.45rem;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.fpki-hierarchy__copy-cell--copied {
+  animation: fpki-copy-cell-success 1.2s ease-out;
+}
+
+@keyframes fpki-copy-cell-success {
+  0%,
+  35% {
+    background-color: #d9f99d;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
+
+.fpki-hierarchy__cell-copy svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .fpki-hierarchy__details-table .fpki-hierarchy__extension-columns > th {
   background: #c9c9c9;
   color: #1b1b1b;
+}
+
+.fpki-hierarchy__details-table .fpki-hierarchy__extension-critical {
+  width: 300px;
+  white-space: nowrap;
+}
+
+.fpki-hierarchy__details-table .fpki-hierarchy__extension-value {
+  width: auto;
 }
 
 .fpki-hierarchy__nested > .usa-accordion__heading > .usa-accordion__button[aria-controls$="-metadata"] {
@@ -920,10 +1081,6 @@
     padding-left: 0;
   }
 
-  .fpki-hierarchy__split-filter {
-    display: block;
-  }
-
   .fpki-hierarchy__filter-summary-row {
     display: block;
   }
@@ -956,14 +1113,34 @@
     margin-top: 0.35rem;
   }
 
-  .fpki-hierarchy__show-all {
-    border-top: 1px solid #a9a9a9;
-    border-left: 0;
+}
+
+@media (max-width: 36em) {
+  .fpki-hierarchy__filter-footer {
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+
+  .fpki-hierarchy__filter-footer .fpki-hierarchy__field-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .fpki-hierarchy__filter-footer .fpki-hierarchy__last-update {
+    flex-basis: auto;
+    justify-content: flex-start;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .fpki-hierarchy__loader-mark::before {
     animation: none;
+  }
+
+  .fpki-hierarchy__copy-cell--copied {
+    animation: none;
+    background-color: #d9f99d;
   }
 }

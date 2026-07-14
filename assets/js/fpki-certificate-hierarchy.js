@@ -14,21 +14,31 @@
     return String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
 
+  function cellCopyButton(label) {
+    var tooltip = "Copy \"" + label + "\" to clipboard";
+    return [
+      "<button type=\"button\" class=\"fpki-hierarchy__cell-copy\" data-fpki-cell-copy data-fpki-copy-label=\"" + escapeHtml(label) + "\" title=\"" + escapeHtml(tooltip) + "\" aria-label=\"" + escapeHtml(tooltip) + "\">",
+      "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"9\" width=\"10\" height=\"10\" rx=\"2\"></rect><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"></path></svg>",
+      "</button>"
+    ].join("");
+  }
+
   function tableRows(rows) {
     return rows.filter(function (row) {
       return row[1] !== null && row[1] !== undefined && String(row[1]).trim() !== "";
     }).map(function (row) {
-      return "<tr><th scope=\"row\">" + escapeHtml(row[0]) + "</th><td colspan=\"2\">" + escapeHtml(row[1]) + "</td></tr>";
+      return "<tr><th scope=\"row\">" + escapeHtml(row[0]) + "</th><td class=\"fpki-hierarchy__copy-cell\" colspan=\"2\"><span data-fpki-copy-source>" + escapeHtml(row[1]) + "</span>" + cellCopyButton(row[0]) + "</td></tr>";
     }).join("");
   }
 
-  function detailsTable(rows, spanningRows) {
+  function detailsTable(rows, spanningRows, caption) {
     var bodyRows = tableRows(rows);
     var extraRows = (spanningRows || []).join("");
     if (!bodyRows && !extraRows) return "";
 
     return [
       "<table class=\"usa-table fpki-hierarchy__table fpki-hierarchy__details-table\">",
+      "<caption class=\"usa-sr-only\">" + escapeHtml(caption) + "</caption>",
       "<tbody>",
       bodyRows,
       extraRows,
@@ -74,6 +84,15 @@
     ].join("");
   }
 
+  function announce(root, message) {
+    var status = root.querySelector("[data-fpki-status]");
+    if (!status) return;
+    status.textContent = "";
+    window.setTimeout(function () {
+      status.textContent = message;
+    }, 20);
+  }
+
   function extensionRows(certificate) {
     if (!certificate.extensions || certificate.extensions.length === 0) return "";
 
@@ -81,8 +100,8 @@
       return [
         "<tr>",
         "<th scope=\"row\">" + escapeHtml(extension.oid) + "</th>",
-        "<td>" + escapeHtml(extension.critical ? "Yes" : "No") + "</td>",
-        "<td><pre class=\"fpki-hierarchy__pre\">" + escapeHtml(extension.value) + "</pre></td>",
+        "<td class=\"fpki-hierarchy__extension-critical\">" + escapeHtml(extension.critical ? "Yes" : "No") + "</td>",
+        "<td class=\"fpki-hierarchy__extension-value fpki-hierarchy__copy-cell\"><pre class=\"fpki-hierarchy__pre\" data-fpki-copy-source>" + escapeHtml(extension.value) + "</pre>" + cellCopyButton(extension.oid) + "</td>",
         "</tr>"
       ].join("");
     }).join("");
@@ -90,8 +109,8 @@
     return [
       "<tr class=\"fpki-hierarchy__extension-columns\">",
       "<th scope=\"col\">Extension</th>",
-      "<th scope=\"col\">Critical</th>",
-      "<th scope=\"col\">Value</th>",
+      "<th class=\"fpki-hierarchy__extension-critical\" scope=\"col\">Critical</th>",
+      "<th class=\"fpki-hierarchy__extension-value\" scope=\"col\">Value</th>",
       "</tr>",
       rows
     ].join("");
@@ -122,12 +141,12 @@
       ["Public key", [certificate.public_key_algorithm, certificate.public_key_bits].filter(Boolean).join(" ")],
       ["Subject key identifier", certificate.subject_key_identifier],
       ["Authority key identifier", certificate.authority_key_identifier]
-    ], spanningRows);
+    ], spanningRows, "Certificate data and extensions for " + (certificate.label || certificate.subject || certificate.id));
 
     if (!metadata) return "";
 
     return [
-      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__nested fpki-hierarchy__certificate-data " + (extraClass || "") + "\" aria-multiselectable=\"true\">",
+      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__nested fpki-hierarchy__certificate-data " + (extraClass || "") + "\">",
       accordionItem(idPrefix + "-metadata", "Certificate Data and Extensions", metadata, 5, false),
       "</div>"
     ].join("");
@@ -178,7 +197,7 @@
       return [
         "<li>",
         icon,
-        previewMode ? "<span class=\"fpki-hierarchy__relationship-copy-text\">" + escapeHtml(name) + "</span>" + relationshipCopyButton(name) : "<a class=\"usa-link fpki-hierarchy__relationship-link\" href=\"#\" data-fpki-certificate-link=\"" + escapeHtml(certificate.id) + "\" data-fpki-link-direction=\"" + escapeHtml(direction) + "\">" + escapeHtml(name) + "</a>",
+        previewMode ? "<span class=\"fpki-hierarchy__relationship-copy-text\">" + escapeHtml(name) + "</span>" + relationshipCopyButton(name) : "<button type=\"button\" class=\"usa-button--unstyled usa-link fpki-hierarchy__relationship-link\" data-fpki-certificate-link=\"" + escapeHtml(certificate.id) + "\" data-fpki-link-direction=\"" + escapeHtml(direction) + "\" aria-expanded=\"false\" aria-label=\"Preview " + escapeHtml(direction) + " certificate " + escapeHtml(name) + "\">" + escapeHtml(name) + "</button>",
         "</li>"
       ].join("");
     }).join("");
@@ -238,10 +257,10 @@
       "<div class=\"fpki-hierarchy__relationship-preview-actions\">",
       "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-action\" data-fpki-preview-expand aria-label=\"Expand all in " + escapeHtml(label.toLowerCase()) + "\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 3H3v5\"></path><path d=\"M16 3h5v5\"></path><path d=\"M8 21H3v-5\"></path><path d=\"M16 21h5v-5\"></path><path d=\"M3 3l7 7\"></path><path d=\"M21 3l-7 7\"></path><path d=\"M3 21l7-7\"></path><path d=\"M21 21l-7-7\"></path></svg></button>",
       "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-action\" data-fpki-preview-collapse aria-label=\"Collapse all in " + escapeHtml(label.toLowerCase()) + "\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10 3v7H3\"></path><path d=\"M14 3v7h7\"></path><path d=\"M10 21v-7H3\"></path><path d=\"M14 21v-7h7\"></path></svg></button>",
-      "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-close\" data-fpki-preview-close aria-label=\"Close " + escapeHtml(label.toLowerCase()) + "\">x</button>",
+      "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-close\" data-fpki-preview-close aria-label=\"Close " + escapeHtml(label.toLowerCase()) + "\">&times;</button>",
       "</div>",
       "</div>",
-      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__root fpki-hierarchy__relationship-preview-result\" aria-multiselectable=\"true\">",
+      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__root fpki-hierarchy__relationship-preview-result\">",
       topLevelAccordionItem(resultId, certificate.label, hierarchyContent(certificate, certificatesById, idPrefix + "-path", true), certificate, certificatesById),
       "</div>",
       "</div>"
@@ -257,20 +276,20 @@
     ].join("");
   }
 
-  function issuerPathControls(id) {
+  function issuerPathControls(id, certificateName) {
     var caOnlyId = id + "-expand-issuer-cas";
     var expandAllId = id + "-expand-issuer-path";
     return [
       "<div class=\"fpki-hierarchy__issuer-path-controls\">",
-      "<h4>Issuer path</h4>",
+      "<h4>Issuer Path</h4>",
       "<div class=\"fpki-hierarchy__issuer-path-control-group\">",
       "<div class=\"fpki-hierarchy__issuer-expand\">",
       "<label class=\"usa-checkbox__label\" for=\"" + caOnlyId + "\">Expand CA name only</label>",
-      "<input class=\"fpki-hierarchy__inline-checkbox\" id=\"" + caOnlyId + "\" type=\"checkbox\" data-fpki-expand-issuer-cas=\"" + id + "\">",
+      "<input class=\"fpki-hierarchy__inline-checkbox\" id=\"" + caOnlyId + "\" type=\"checkbox\" data-fpki-expand-issuer-cas=\"" + id + "\" aria-label=\"Expand issuer CA names only for " + escapeHtml(certificateName) + "\">",
       "</div>",
       "<div class=\"fpki-hierarchy__issuer-expand\">",
       "<label class=\"usa-checkbox__label\" for=\"" + expandAllId + "\">Expand all</label>",
-      "<input class=\"fpki-hierarchy__inline-checkbox\" id=\"" + expandAllId + "\" type=\"checkbox\" data-fpki-expand-issuer-path=\"" + id + "\">",
+      "<input class=\"fpki-hierarchy__inline-checkbox\" id=\"" + expandAllId + "\" type=\"checkbox\" data-fpki-expand-issuer-path=\"" + id + "\" aria-label=\"Expand all issuer details for " + escapeHtml(certificateName) + "\">",
       "</div>",
       "</div>",
       "</div>"
@@ -293,7 +312,7 @@
     var label = certificate.label + (index > 0 ? " (issuer)" : "");
 
     return [
-      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__nested fpki-hierarchy__issuer-node\" aria-multiselectable=\"true\">",
+      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__nested fpki-hierarchy__issuer-node\">",
       accordionItem(itemId, label, content, Math.min(3 + index, 6), false),
       "</div>"
     ].join("");
@@ -309,7 +328,7 @@
     content.push(certificateSummaryPanel(certificate, certificatesById, idPrefix, selectedCertificate, previewMode));
 
     if (issuerPath) {
-      content.push(issuerPathControls(issuerPathId));
+      content.push(issuerPathControls(issuerPathId, certificate.label || certificate.subject || certificate.id));
       content.push("<div id=\"" + issuerPathId + "\" class=\"fpki-hierarchy__issuer-path\">");
       content.push(issuerPath);
       content.push("</div>");
@@ -384,7 +403,7 @@
 
   function renderCertificateAccordions(certificates, certificatesById) {
     return [
-      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__root\" aria-multiselectable=\"true\">",
+      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__root\">",
       certificates.map(function (certificate, index) {
         var idPrefix = "fpki-cert-" + index + "-" + slug(certificate.id).slice(0, 20);
         return topLevelAccordionItem(
@@ -405,20 +424,23 @@
       "<div class=\"fpki-hierarchy__filter-summary\">",
       "<p><strong>Root certificate:</strong> " + escapeHtml(data.meta.root_label) + "</p>",
       "</div>",
-      "<p class=\"fpki-hierarchy__result-count\" data-fpki-hierarchy-count><strong>Certificate count:</strong> " + escapeHtml(data.meta.certificate_count) + "</p>",
+      "<p class=\"fpki-hierarchy__result-count\" data-fpki-hierarchy-count role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"><strong>Certificate count:</strong> " + escapeHtml(data.meta.certificate_count) + "</p>",
       "</div>",
       "<div class=\"fpki-hierarchy__split-filter\">",
       "<div class=\"fpki-hierarchy__filter-input\">",
       "<label class=\"usa-sr-only\" for=\"fpki-hierarchy-filter\">Filter certificate authorities</label>",
-      "<input class=\"usa-input\" id=\"fpki-hierarchy-filter\" type=\"search\" autocomplete=\"off\" placeholder=\"Type 4 or more characters, or turn Show all on, to display matching certificate data.\">",
+      "<input class=\"usa-input\" id=\"fpki-hierarchy-filter\" type=\"search\" autocomplete=\"off\" aria-describedby=\"fpki-hierarchy-filter-instructions\" placeholder=\"Filter certificate authorities\">",
+      "<p class=\"usa-hint fpki-hierarchy__filter-instructions\" id=\"fpki-hierarchy-filter-instructions\">Enter at least 4 characters, or select Show all certificates.</p>",
       "</div>",
       "<div class=\"fpki-hierarchy__show-all\">",
-      "<input class=\"usa-checkbox__input\" id=\"fpki-hierarchy-show-all\" type=\"checkbox\" role=\"switch\">",
-      "<label class=\"usa-checkbox__label fpki-hierarchy__toggle-label\" for=\"fpki-hierarchy-show-all\"><span class=\"fpki-hierarchy__toggle-text\">Show all</span><span class=\"fpki-hierarchy__toggle-state fpki-hierarchy__toggle-state--off\">Off</span><span class=\"fpki-hierarchy__toggle-state fpki-hierarchy__toggle-state--on\">On</span></label>",
+      "<button class=\"usa-button fpki-hierarchy__show-all-button\" id=\"fpki-hierarchy-show-all\" type=\"button\" data-fpki-show-all>Show all certificates</button>",
       "</div>",
       "</div>",
-      "<fieldset class=\"usa-fieldset fpki-hierarchy__field-panel\">",
-      "<legend class=\"usa-legend\">Search within each top-level certificate</legend>",
+      "<div class=\"fpki-hierarchy__field-heading\">",
+      "<p class=\"usa-legend fpki-hierarchy__field-heading-label\" id=\"fpki-hierarchy-field-heading\">Search within each top-level certificate using the filters below:</p>",
+      "</div>",
+      "<fieldset class=\"usa-fieldset fpki-hierarchy__field-panel\" aria-labelledby=\"fpki-hierarchy-field-heading\">",
+      "<legend class=\"usa-sr-only\">Search within each top-level certificate using the filters below</legend>",
       "<div class=\"fpki-hierarchy__field-row\">",
       [
         ["label", "CA name"],
@@ -438,18 +460,31 @@
           "</div>"
         ].join("");
       }).join(""),
-      "<div class=\"usa-checkbox fpki-hierarchy__field-check fpki-hierarchy__field-check-all\">",
-      "<input class=\"usa-checkbox__input\" id=\"fpki-search-check-all\" type=\"checkbox\" data-fpki-search-check-all>",
-      "<label class=\"usa-checkbox__label\" for=\"fpki-search-check-all\">Check all</label>",
-      "</div>",
-      "<div class=\"usa-checkbox fpki-hierarchy__field-check fpki-hierarchy__field-reset\">",
-      "<input class=\"usa-checkbox__input\" id=\"fpki-search-reset\" type=\"checkbox\" data-fpki-search-reset>",
-      "<label class=\"usa-checkbox__label\" for=\"fpki-search-reset\">Reset</label>",
-      "</div>",
       "</div>",
       "</fieldset>",
-      "<p class=\"fpki-hierarchy__last-update\">Last Update: " + escapeHtml(lastUpdate) + "</p>"
+      "<div class=\"fpki-hierarchy__filter-footer\">",
+      "<div class=\"fpki-hierarchy__field-actions\" role=\"group\" aria-label=\"Search field actions\">",
+      "<div class=\"usa-checkbox fpki-hierarchy__field-check fpki-hierarchy__field-check-all\">",
+      "<input class=\"usa-checkbox__input\" id=\"fpki-search-check-all\" type=\"checkbox\" data-fpki-search-check-all>",
+      "<label class=\"usa-checkbox__label\" for=\"fpki-search-check-all\">Select all search fields</label>",
+      "</div>",
+      "<button class=\"usa-button usa-button--outline fpki-hierarchy__filter-reset-button\" id=\"fpki-search-reset\" type=\"button\" data-fpki-search-reset>Reset</button>",
+      "</div>",
+      "<p class=\"fpki-hierarchy__last-update\">Last Crawler Update: " + escapeHtml(lastUpdate) + "</p>",
+      "</div>"
     ].join("");
+  }
+
+  function formatLastUpdate(value) {
+    var date = new Date(value);
+    if (!value || Number.isNaN(date.getTime())) return value || "Unavailable";
+
+    return new Intl.DateTimeFormat("en-US", {
+      day: "2-digit",
+      month: "long",
+      timeZone: "UTC",
+      year: "numeric"
+    }).format(date);
   }
 
   function updateResults(data, root, certificatesById) {
@@ -460,9 +495,10 @@
     var term = input.value.trim().toLowerCase();
     var fields = selectedSearchFields(root);
     var matches = [];
-    var filtering = showAll.checked || term.length > 0;
+    var showingAll = showAll.hasAttribute("data-fpki-showing-all");
+    var filtering = showingAll || term.length > 0;
 
-    if (showAll.checked) {
+    if (showingAll) {
       matches = data.certificates;
     } else if (term.length >= 4) {
       matches = data.certificates.filter(function (certificate) {
@@ -470,8 +506,10 @@
       });
     }
 
-    if (showAll.checked) {
+    if (showingAll) {
       count.innerHTML = "<strong>Certificates visible:</strong> " + matches.length;
+    } else if (term.length > 0 && term.length < 4) {
+      count.innerHTML = "<strong>Search:</strong> Enter at least 4 characters";
     } else if (filtering) {
       count.innerHTML = "<strong>Certificates found:</strong> " + matches.length;
     } else {
@@ -479,12 +517,19 @@
     }
 
     if (matches.length === 0) {
-      results.innerHTML = "";
+      results.innerHTML = term.length >= 4
+        ? "<p class=\"fpki-hierarchy__no-results\">No certificates matched the current filter.</p>"
+        : "";
       return;
     }
 
     results.innerHTML = renderCertificateAccordions(matches, certificatesById);
     syncAccordionHeadingStates(results);
+  }
+
+  function setShowAllButtonState(button, showingAll) {
+    button.toggleAttribute("data-fpki-showing-all", showingAll);
+    button.textContent = showingAll ? "Return to certificate filter" : "Show all certificates";
   }
 
   function setAccordionGroup(control, selector) {
@@ -553,7 +598,7 @@
     }).length;
 
     checkAll.checked = checkedCount === fields.length;
-    checkAll.indeterminate = false;
+    checkAll.indeterminate = checkedCount > 0 && checkedCount < fields.length;
   }
 
   function resetSearchFields(root) {
@@ -564,14 +609,15 @@
   }
 
   function render(data, root) {
-    var lastUpdate = root.getAttribute("data-last-update") || data.meta.source_last_modified || "";
+    var lastUpdate = formatLastUpdate(data.meta.crawler_last_modified || data.meta.source_last_modified || "");
     var certificatesById = {};
     data.certificates.forEach(function (certificate) {
       certificatesById[certificate.id] = certificate;
     });
 
     root.innerHTML = [
-      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__filter\" aria-multiselectable=\"true\">",
+      "<div class=\"usa-sr-only\" data-fpki-status role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></div>",
+      "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__filter\">",
       accordionItem("fpki-hierarchy-filter-panel", "FPKI Certificate Hierarchy Graph Filter", renderFilterControls(data, lastUpdate), 2, true),
       "</div>",
       "<div data-fpki-hierarchy-results></div>"
@@ -582,21 +628,87 @@
       if (event.target.matches("#fpki-hierarchy-filter")) {
         var showAll = root.querySelector("#fpki-hierarchy-show-all");
         if (showAll && event.target.value.trim().length > 3) {
-          showAll.checked = false;
+          setShowAllButtonState(showAll, false);
         }
         updateResults(data, root, certificatesById);
       }
     });
 
     root.addEventListener("click", function (event) {
+      var showAllButton = event.target.closest("[data-fpki-show-all]");
+      if (showAllButton && root.contains(showAllButton)) {
+        event.preventDefault();
+        var showingAll = !showAllButton.hasAttribute("data-fpki-showing-all");
+        var filterInput = root.querySelector("#fpki-hierarchy-filter");
+        setShowAllButtonState(showAllButton, showingAll);
+
+        if (!showingAll && filterInput) {
+          filterInput.value = "";
+        }
+
+        updateResults(data, root, certificatesById);
+        announce(root, showingAll ? "Showing all certificates." : "Certificate filter ready.");
+
+        if (!showingAll && filterInput) {
+          filterInput.focus();
+        }
+        return;
+      }
+
+      var cellCopy = event.target.closest("[data-fpki-cell-copy]");
+      if (cellCopy && root.contains(cellCopy)) {
+        event.preventDefault();
+        var copySource = cellCopy.closest("td").querySelector("[data-fpki-copy-source]");
+        var copyLabel = cellCopy.getAttribute("data-fpki-copy-label") || "value";
+        var copyText = copySource ? copySource.textContent : "";
+        var copyPromise = navigator.clipboard && navigator.clipboard.writeText
+          ? navigator.clipboard.writeText(copyText)
+          : Promise.reject(new Error("Clipboard API unavailable"));
+
+        copyPromise.then(function () {
+          var copyCell = cellCopy.closest("td");
+          if (copyCell) {
+            copyCell.classList.remove("fpki-hierarchy__copy-cell--copied");
+            void copyCell.offsetWidth;
+            copyCell.classList.add("fpki-hierarchy__copy-cell--copied");
+          }
+          cellCopy.setAttribute("data-fpki-copy-status", "Copied");
+          announce(root, "Copied " + copyLabel + " to clipboard.");
+          window.setTimeout(function () {
+            if (copyCell) copyCell.classList.remove("fpki-hierarchy__copy-cell--copied");
+            cellCopy.removeAttribute("data-fpki-copy-status");
+          }, 1200);
+        }).catch(function () {
+          cellCopy.setAttribute("data-fpki-copy-status", "Copy failed");
+          announce(root, "Could not copy " + copyLabel + " to clipboard.");
+          window.setTimeout(function () {
+            cellCopy.removeAttribute("data-fpki-copy-status");
+          }, 1200);
+        });
+        return;
+      }
+
+      var resetButton = event.target.closest("[data-fpki-search-reset]");
+      if (resetButton && root.contains(resetButton)) {
+        event.preventDefault();
+        resetSearchFields(root);
+        updateResults(data, root, certificatesById);
+        announce(root, "Search fields reset to CA name, Subject, and Issuer.");
+        return;
+      }
+
       var copyButton = event.target.closest("[data-fpki-copy-name]");
       if (copyButton && root.contains(copyButton)) {
         event.preventDefault();
         var copyValue = copyButton.getAttribute("data-fpki-copy-name") || "";
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(copyValue);
-        }
-        copyButton.setAttribute("aria-label", "Copied " + copyValue);
+        var relationshipCopy = navigator.clipboard && navigator.clipboard.writeText
+          ? navigator.clipboard.writeText(copyValue)
+          : Promise.reject(new Error("Clipboard API unavailable"));
+        relationshipCopy.then(function () {
+          announce(root, "Copied " + copyValue + " to clipboard.");
+        }).catch(function () {
+          announce(root, "Could not copy " + copyValue + " to clipboard.");
+        });
         return;
       }
 
@@ -609,6 +721,7 @@
         previewRegion.querySelectorAll(".usa-accordion__button").forEach(function (button) {
           setButtonState(button, expanded);
         });
+        announce(root, expanded ? "All preview sections expanded." : "All preview sections collapsed.");
         return;
       }
 
@@ -622,7 +735,12 @@
           preview.innerHTML = "";
           preview.removeAttribute("data-fpki-preview-opener");
         }
-        if (opener) opener.focus();
+        if (opener) {
+          opener.setAttribute("aria-expanded", "false");
+          opener.removeAttribute("aria-controls");
+          opener.focus();
+        }
+        announce(root, "Certificate preview closed.");
         return;
       }
 
@@ -640,12 +758,23 @@
 
       var direction = relationshipLink.getAttribute("data-fpki-link-direction") || "outbound";
       var idPrefix = "fpki-preview-" + slug(certificate.id).slice(0, 20) + "-" + Math.random().toString(36).slice(2, 8);
+      var previousOpenerId = preview.getAttribute("data-fpki-preview-opener");
+      var previousOpener = previousOpenerId ? document.getElementById(previousOpenerId) : null;
+      if (previousOpener && previousOpener !== relationshipLink) {
+        previousOpener.setAttribute("aria-expanded", "false");
+        previousOpener.removeAttribute("aria-controls");
+      }
       preview.setAttribute("data-fpki-preview-opener", relationshipLink.id);
       preview.innerHTML = relationshipPreview(certificate, certificatesById, direction, idPrefix);
+      var previewInner = preview.querySelector(".fpki-hierarchy__relationship-preview-inner");
+      if (previewInner) previewInner.id = idPrefix;
+      relationshipLink.setAttribute("aria-controls", idPrefix);
+      relationshipLink.setAttribute("aria-expanded", "true");
       syncAccordionHeadingStates(preview);
 
       var heading = preview.querySelector(".fpki-hierarchy__relationship-preview-header h5");
       if (heading) heading.focus();
+      announce(root, (direction === "inbound" ? "Inbound" : "Outbound") + " certificate preview opened.");
     });
 
     root.addEventListener("change", function (event) {
@@ -655,17 +784,11 @@
         });
         syncCheckAll(root);
         updateResults(data, root, certificatesById);
-      } else if (event.target.matches("[data-fpki-search-reset]")) {
-        if (event.target.checked) {
-          resetSearchFields(root);
-          updateResults(data, root, certificatesById);
-          event.target.checked = false;
-        }
       } else if (event.target.matches("[data-fpki-expand-issuer-path]")) {
         setIssuerPathGroup(event.target);
       } else if (event.target.matches("[data-fpki-expand-issuer-cas]")) {
         setIssuerCaGroup(event.target);
-      } else if (event.target.matches("#fpki-hierarchy-show-all, [data-fpki-search-field]")) {
+      } else if (event.target.matches("[data-fpki-search-field]")) {
         syncCheckAll(root);
         updateResults(data, root, certificatesById);
       }
@@ -697,18 +820,6 @@
       toggleButton(button);
     });
 
-    root.addEventListener("keydown", function (event) {
-      if (event.key !== "Enter" && event.key !== " ") return;
-
-      var button = event.target.closest(".usa-accordion__button");
-      if (!button || !root.contains(button)) return;
-
-      event.preventDefault();
-      event.stopPropagation();
-      event.stopImmediatePropagation();
-
-      toggleButton(button);
-    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -727,7 +838,7 @@
         render(data, root);
       })
       .catch(function () {
-        root.innerHTML = "<div class=\"usa-alert usa-alert--error\"><div class=\"usa-alert__body\"><p class=\"usa-alert__text\">Certificate hierarchy data could not be loaded.</p></div></div>";
+        root.innerHTML = "<div class=\"usa-alert usa-alert--error\" role=\"alert\"><div class=\"usa-alert__body\"><h2 class=\"usa-alert__heading\">Certificate hierarchy unavailable</h2><p class=\"usa-alert__text\">Certificate hierarchy data could not be loaded. Reload the page to try again.</p></div></div>";
       });
   });
 }());

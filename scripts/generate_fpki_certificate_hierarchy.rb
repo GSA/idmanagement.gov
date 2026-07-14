@@ -8,10 +8,12 @@ require "openssl"
 require "time"
 
 SOURCE_PATH = "_implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b"
+CRAWLER_PATH = "_implement/tools/crawler-lastrun.json"
 OUTPUT_PATH = "_implement/tools/fpki-certificate-hierarchy.json"
 EXPECTED_ROOT_SHA256 = "5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC"
 
 abort "FPKI certificate source file was not found: #{SOURCE_PATH}" unless File.file?(SOURCE_PATH)
+abort "FPKI crawler data file was not found: #{CRAWLER_PATH}" unless File.file?(CRAWLER_PATH)
 
 def extension_value(certificate, oid)
   extension = certificate.extensions.find { |item| item.oid == oid }
@@ -127,9 +129,13 @@ root = cert_records.find { |record| record["is_common_policy_g2"] }
 abort "Expected Federal Common Policy CA G2 root was not found" unless root
 
 payload = {
+  "file_name" => "FPKI Certificate Hierarchy",
+  "build_date" => Time.now.utc.strftime("%B %d, %Y"),
+  "used_by" => "fpki_graph.md",
   "meta" => {
     "source" => SOURCE_PATH,
     "source_last_modified" => File.mtime(SOURCE_PATH).utc.iso8601,
+    "crawler_last_modified" => File.mtime(CRAWLER_PATH).utc.iso8601,
     "certificate_count" => cert_records.length,
     "root_id" => root["id"],
     "root_label" => root["label"],
