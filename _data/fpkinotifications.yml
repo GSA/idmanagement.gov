@@ -31,6 +31,20 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 #
+- notice_date: July 13, 2026
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a new certificate to Entrust Managed Services Root CA on 7/13/2026 with a validity period from 7/13/2026 to 12/31/2035
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 88268ce81a330425f8558f5a12b398f3cf0b6dbe
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
 
 - notice_date: July 2, 2026
   change_type: CA Certificate Issuance
