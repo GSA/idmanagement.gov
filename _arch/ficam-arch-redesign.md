@@ -24,9 +24,9 @@ subnav:
   <div id="verifiable-credentials-layer"></div>
 </div>
 
-<div id="practice-areas" style="margin-bottom:10px;" aria-label="FICAM practice areas"></div>
+<div id="practice-areas" aria-label="FICAM practice areas"></div>
 <div id="document-links"></div>
-<div id="interaction-hint"></div>
+<div id="interaction-hint" style="margin-bottom:10px;"></div>
 
 <script>
 // FICAM Architecture data loaded from Jekyll YAML files
