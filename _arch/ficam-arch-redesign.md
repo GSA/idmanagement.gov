@@ -1,6 +1,6 @@
 ---
 
-layout: page
+layout: wide
 sidenav: arch
 title:  FICAM Arch - Demo
 permalink: /development/
