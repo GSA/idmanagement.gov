@@ -15,7 +15,7 @@ subnav:
 <link rel="stylesheet" href="{{ '/assets/css/ficam-architecture.css' | relative_url }}">
 <script src="{{ '/assets/js/ficam-renderer.js' | relative_url }}"></script>
 
-<p class="subtitle grid-container">Federal Identity, Credential, and Access Management · Tap any section to expand</p>
+<p class="subtitle grid-container" style="text-align: center;">Federal Identity, Credential, and Access Management · Tap any section to expand</p>
 
 <div class="layers grid-container" aria-label="FICAM architecture layers">
   <div id="governance-layer"></div>
