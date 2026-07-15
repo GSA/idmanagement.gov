@@ -17,14 +17,14 @@ subnav:
 
 <p class="subtitle">Federal Identity, Credential, and Access Management · Tap any section to expand</p>
 
-<div class="layers" aria-label="FICAM architecture layers">
+<div class="layers grid-container" aria-label="FICAM architecture layers">
   <div id="governance-layer"></div>
   <div id="federation-layer"></div>
   <div id="post-quantum-layer"></div>
   <div id="verifiable-credentials-layer"></div>
 </div>
 
-<div id="practice-areas" aria-label="FICAM practice areas"></div>
+<div class="grid-container" id="practice-areas" aria-label="FICAM practice areas"></div>
 <div id="document-links"></div>
 <div id="interaction-hint"></div>
 
