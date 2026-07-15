@@ -27,7 +27,7 @@ subnav:
 <div id="practice-areas" aria-label="FICAM practice areas"></div>
 <div id="document-links"></div>
 <div id="interaction-hint"></div>
-
+<br />
 <script>
 // FICAM Architecture data loaded from Jekyll YAML files
 // These are processed by Jekyll and converted to JavaScript objects
