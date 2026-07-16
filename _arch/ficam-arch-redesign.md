@@ -15,11 +15,12 @@ subnav:
 <link rel="stylesheet" href="{{ '/assets/css/ficam-architecture.css' | relative_url }}">
 <script src="{{ '/assets/js/ficam-renderer.js' | relative_url }}"></script>
 
+<div class="grid-container"  aria-label="FICAM architecture layers and practice areas">
 <p class="subtitle grid-container">Federal Identity, Credential, and Access Management · Tap a capability row to expand · tap a heading to collapse</p>
-
-<div class="grid-container" id="architecture-canvas" class="layers" aria-label="FICAM architecture layers and practice areas"></div>
-<div class="grid-container" id="document-links"></div>
-<div class="grid-container" id="interaction-hint"></div>
+  <div id="architecture-canvas" class="layers"></div>
+  <div id="document-links"></div>
+  <div id="interaction-hint"></div>
+</div>
 
 <script>
 // FICAM Architecture data loaded from Jekyll YAML files
