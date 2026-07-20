@@ -560,53 +560,6 @@
             }
         },
         {
-            "subject": "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "serial-number": "2609",
-            "akid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
-            "skid": "13 4f 3c bb db 5d 45 29 a5 94 70 b6 da ac 9e 4c e2 2f c1 0b",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://crl.disa.mil/issuedby/DODROOTCA6_IB.p7c": [
-                    "common_name:DOD DERILITY CA-5,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-80,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-73,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD DERILITY CA-6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-81,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-78,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-79,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-81,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-72,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-78,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-80,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD DERILITY CA-3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-79,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD EMAIL CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD DERILITY CA-4,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD SW CA-74,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-72,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD SW CA-83,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD SW CA-82,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:DOD ID CA-73,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
-                ]
-            },
-            "aia-entries": {
-                "http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:ECA Root CA 5,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "serial-number": "2742",
@@ -696,6 +649,53 @@
                     "common_name:DOD EMAIL CA-65,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
                     "common_name:DOD ID CA-62,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
                     "common_name:DOD ID CA-64,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
+                ]
+            },
+            "aia-entries": {
+                "http://crl.disa.mil/issuedto/DODINTEROPERABILITYROOTCA2_IT.p7c": [
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "issuer": "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+            "serial-number": "3104",
+            "akid": "ff f8 ae 13 8b 92 2b 79 92 41 a3 76 5c 2c 81 9e 9a c5 9c 78",
+            "skid": "13 4f 3c bb db 5d 45 29 a5 94 70 b6 da ac 9e 4c e2 2f c1 0b",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
+            ],
+            "sia-entries": {
+                "http://crl.disa.mil/issuedby/DODROOTCA6_IB.p7c": [
+                    "common_name:DOD DERILITY CA-5,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-80,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-73,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD DERILITY CA-6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-81,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-78,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-79,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-81,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-72,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-78,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-80,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD DERILITY CA-3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-79,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD EMAIL CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD DERILITY CA-4,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD SW CA-74,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-72,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD SW CA-83,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD SW CA-82,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
+                    "common_name:DOD ID CA-73,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -4027,7 +4027,7 @@
         {
             "subject": "common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:US DoD CCEB Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1736",
+            "serial-number": "2230",
             "akid": "16 2b 91 da e2 17 0c 96 ab 5c 7d de 7d 48 f2 5d a8 00 ac e7",
             "skid": "13 4f 3c bb db 5d 45 29 a5 94 70 b6 da ac 9e 4c e2 2f c1 0b",
             "status": "unchecked",
