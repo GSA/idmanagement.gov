@@ -88,7 +88,7 @@ Audits are required annually for supporting functions and elements of each entit
 | Patent and Trademark Office (PTO)	| Affiliate PKI	| October 31 |
 | Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| November 30 |
 | Transglobal Secure Collaboration Program (TSCP)	| Bridge	| July 31 |
-| WidePoint NFI	| Affiliate PKI	| Auguat 31 |
+| WidePoint NFI	| Affiliate PKI	| August 31 |
 | WidePoint SSP	| SSP	| August 31 |
 | xTec NFI | Affiliate PKI | April 28 |
 | xTec SSP | SSP | April 28 |
