@@ -76,20 +76,22 @@ Audits are required annually for supporting functions and elements of each entit
 | Entity	| Type	| Annual Review Package Due Date|
 | ------- | :-----: | :-----------------------------: |
 | CertiPath	| Bridge |	June 30 |
-| DigiCert (ECPS)	| Affiliate PKI	| July 31 |
+| DigiCert (ECPS)	| Affiliate PKI	| October 1 |
 | DigiCert (maintenance)	| Affiliate PKI	| July 31 |
 | DigiCert (maintenance)	| SSP	| July 31 |
 | Department of Defense (DoD)	| Affiliate PKI	| February 28 |
 | Department of State (DOS)	| Affiliate PKI	| October 31 |
 | Department of the Treasury	| SSP	| September 30 |
-| Entrust SSP & NFI	| Combined| November 30 |
-| Exostar	| Affiliate PKI	| June 30 |
-| IdenTrust NFI	| Affiliate PKI	| August 31 |
+| Entrust SSP & NFI	| Combined | November 30 |
+| Exostar	| Affiliate PKI	| September 30 |
+| IdenTrust NFI	| Affiliate PKI	| October 31 |
 | Patent and Trademark Office (PTO)	| Affiliate PKI	| October 31 |
 | Southwest Texas Regional Advisory Council (STRAC)	| Bridge	| November 30 |
 | Transglobal Secure Collaboration Program (TSCP)	| Bridge	| July 31 |
-| WidePoint NFI	| Affiliate PKI	| July 31 |
-| WidePoint SSP	| SSP	| July 31 |
+| WidePoint NFI	| Affiliate PKI	| Auguat 31 |
+| WidePoint SSP	| SSP	| August 31 |
+| xTec NFI | Affiliate PKI | April 28 |
+| xTec SSP | SSP | April 28 |
 
 ## Compliance Test Tools for Annual Reviews
 
