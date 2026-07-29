@@ -51,13 +51,11 @@ We’ve categorized the service providers given below by type of identity and cr
 
 These organizations operate as Federal PKI Shared Service Providers (SSPs) for federal agencies. A subset of Federal PKI SSPs are commercial service providers managed by GSA. These SSPs are called [GSA PKI SSPs]({{site.baseurl}}/gsapkissp/){:rel="noopener noreferrer"}{:class="usa-link"}. A GSA PKI SSP is a commercial PKI provider who has completed Federal PKI compliance activities to receive a certification authority certificate and is listed on the [GSA Multiple Award Schedule - 541519PKI](https://www.gsaelibrary.gsa.gov/ElibMain/sinDetails.do?scheduleNumber=MAS&specialItemNumber=541519PKI&executeQuery=YES){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}. All SSPs operate Certification Authorities, are annually 3rd party audited, and maintain a FISMA Authorization To Operate (ATO). To request a copy of a specific system’s ATO, please contact [fpki@gsa.gov](mailto:fpki@gsa.gov){:class="usa-link"}.
 
-Information on publicly trusted device certificates used for TLS (HTTPS) on the internet, recommendations on government configurations, and which PKI providers/Certification Authorities to use can be found at this [HTTPS guidance website](https://https.cio.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
-
 | Organization | Category | Customer Service | Tech Support|  
 |-----------|:-----------:|:-----------:|:-----------:|  
 | [Department of the Treasury](https://pki.treasury.gov/about_ssp.htm){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}| FPKI SSP |  Greg Elspas or<br/>Joe Gribble<br/>_DL_PKIPolicy at treasury.gov | pki.pmo at fiscal.treasury.gov or<br/>_DL_PKIPolicy at treasury.gov |  
 | Entrust Federal Shared Service Provider |	GSA SSP | Patrick Garritty<br/>(703) 901-1388 |	support at entrust.com |
-| WidePoint Federal Shared Service Provider	| GSA SSP | Jason Holloway or<br/>Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-Info at ORC.widepoint.com	| Jim Manchester<br/>(800) 816-5548<br/>PKIPolicy at ORC.widepoint.com |
+| WidePoint Federal Shared Service Provider	| GSA SSP | Jason Holloway or<br/>Caroline Godfrey<br/>(800) 816-5548<br/>WCSC-pkipolicy at widepoint.com	| Jim Manchester<br/>(800) 816-5548<br/>WCSC-pkipolicy at widepoint.com |
 
 ## Business Identity Services
 
