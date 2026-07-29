@@ -955,6 +955,15 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
+| Validity | July 13, 2026 to December 31, 2035 |
+| Serial Number | 00ba204be03a22075e56051a97c24ae6f4 |
+| SHA-1 Thumbprint | 88268ce81a330425f8558f5a12b398f3cf0b6dbe |
+| SHA-256 Thumbprint | 91272da1cf906991388e068832f5faf236f3f7add94ed863dea831e967635cb1 |
+| Download Location | Click [here]({{site.baseurl}}/implement/certs/Entrust_Managed_Services_Root_CA_rekey_3kRSA.cer){:class="usa-link"} |
+
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
 | Validity | July 14, 2023 to December 28, 2030 |
 | Serial Number | 25da3ccaaa1e16c5050feaad9e712f1b8ca90c3a |
 | SHA-1 Thumbprint | d6be623683f2b47e94452c04fa1ab3ab631e83eb |

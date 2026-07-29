@@ -166,7 +166,7 @@ Every software program that interacts with a certificate either has a native tru
 
 A vendor may also have a public trust program that allows PKI operators to submit their roots for distribution within the vendor’s trust store. Certificates distributed by an application may be called “public certificates” while certificates distributed by your agency or a partner may be called “private certificates.” 
 
-A public trust store program refers to the collection of root certification authority (CA) certificates that are included and distributed by default in many operating systems, browsers, or applications (referred to as application trust store for simplicity). The public root CAs contained in these trust stores must comply with the root stores requirements, including any specific compliance requirements such as a third party audit or specific operational requirements. For more information on public certificates, see the [CIO Council policy on HTTPS](https://https.cio.gov/certificates/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}.
+A public trust store program refers to the collection of root certification authority (CA) certificates that are included and distributed by default in many operating systems, browsers, or applications (referred to as application trust store for simplicity). The public root CAs contained in these trust stores must comply with the root stores requirements, including any specific compliance requirements such as a third party audit or specific operational requirements. 
 
 ### What Are the Most Common Public Trust Stores?
 
