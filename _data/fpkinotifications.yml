@@ -31,6 +31,34 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 #
+- notice_date: July 27, 2026
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA
+  change_description: The CertiPath Bridge CA-G3 issued a renewed cross certificate to the Raytheon Technologies Medium Assurance CA with a validity period of 7/21/2026 to 7/31/27.
+  contact: support at certipath dot com
+  ca_certificate_hash: 9ad6a2c0822acd9ed041bcb566cf8a7a6e4736a4
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Raytheon Technologies Medium Assurance CA, OU=Class3-G3, O=cas, DC=rtx, DC=com
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pki.rtx.com/G3/CRLs/Class3-G3_Full.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: July 27, 2026
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA - G3
+  change_description: CertiPath issued a new cross certificate to the Boeing PCA G3 with a validity period of 7/21/26 to 7/31/27.
+  contact: support at certipath dot com
+  ca_certificate_hash: af90646221154fbec3656b28f7de193cbda5114a
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G3, OU = Certification Authorities, O = CertiPath, C = US
+  ca_certificate_subject: CN = Boeing PCA G3, OU = certservers, O = Boeing, C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://crl.boeing.com/crl/IssuedByBoeingPCAG3.p7c
+  ocsp_uri: N/A
+
 - notice_date: July 13, 2026
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
