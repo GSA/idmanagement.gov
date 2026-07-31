@@ -31,6 +31,21 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 #
+- notice_date: July 30, 2026
+  change_type: Certificate Interoperability Issue
+  system: Department of State PKI
+  change_description: an issue with a PIV authentication certificate profile issued from the US Department of State PIV CA3 may cause authentication errors on some relying party applications.  Specifically, the CRL DP field in affected subscriber certificates includes a CRL Issuer field that may prevent normal revocation checking in a small number of relying party applications.  DoS profiles have been updated and new certificates issued after July 29th should not be impacted.  Remediation of historical impacted subscriber certificates via reissuance is expected in the near term future.
+  contact: TBD
+  ca_certificate_hash: 9ad6a2c0822acd9ed041bcb566cf8a7a6e4736a4
+  ca_certificate_issuer: CN = U.S. Department of State AD Root CA, CN = AIA, CN = Public Key Services, CN = Services, CN = Configuration, DC = state, DC = sbu
+  ca_certificate_subject: OU = U.S. Department of State PIV CA3, OU = Certification Authorities, OU = PIV, OU = Department of State, O = U.S. Government, C = US
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIPIVCA3.crl 
+  ee_ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+
 - notice_date: July 27, 2026
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA
