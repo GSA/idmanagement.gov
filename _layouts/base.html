@@ -19,6 +19,9 @@ The home page uses wide.html layout, since it extends full width of page
   {% include footer.html %}
 
   {% include scripts.html %}
+  {% if page.extra_script %}
+    <script src="{{ site.baseurl }}{{ page.extra_script }}?{{ site.time | date: '%s%N' }}"></script>
+  {% endif %}
 </body>
 
 </html>

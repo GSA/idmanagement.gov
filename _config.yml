@@ -43,6 +43,8 @@ ga:
 primary_navigation:
   - name: Home
     url: /
+  - name: Document Center
+    url: /doccenter/
   - name: FICAM
     children:
       - name: FICAM Architecture
@@ -288,6 +290,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
+  - planning-docs
+  - scripts
 
 assets:
   autoprefixer:

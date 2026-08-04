@@ -9,3 +9,4 @@ node_modules
 .ds_store
 dockerfile
 docker-compose.yml
+planning-docs/

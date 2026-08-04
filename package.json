@@ -2,6 +2,8 @@
   "name": "federalist-uswds-jekyll",
   "version": "1.3.0",
   "scripts": {
+    "generate:documents": "ruby scripts/generate-document-center.rb",
+    "test:document-center": "node scripts/test-document-center.js",
     "local": "bundler install && sleep 5 && npm install",
     "build": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",

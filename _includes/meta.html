@@ -76,6 +76,9 @@ site, this is the place to do it.
   <!-- Custom CSS and USWDS 3.5.0 |================================================== -->
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/uswds.min.css">
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/index.css">
+  {% if page.extra_stylesheet %}
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ page.extra_stylesheet }}?{{ site.time | date: '%s%N' }}">
+  {% endif %}
 
   <!-- Sitemap.xml -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
