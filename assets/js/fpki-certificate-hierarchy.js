@@ -563,7 +563,10 @@
     var control = document.querySelector("[data-fpki-expand-issuer-path=\"" + group.id + "\"]");
     if (!control) return;
 
-    var anyExpanded = Boolean(group.querySelector(".usa-accordion__button[aria-expanded=\"true\"]"));
+    var caOnly = document.querySelector("[data-fpki-expand-issuer-cas=\"" + group.id + "\"]");
+    var anyExpanded = !caOnly || !caOnly.checked
+      ? Boolean(group.querySelector(".usa-accordion__button[aria-expanded=\"true\"]"))
+      : false;
     var label = control.labels && control.labels[0];
     control.checked = anyExpanded;
 
