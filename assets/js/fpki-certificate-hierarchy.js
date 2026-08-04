@@ -468,7 +468,7 @@
       "<input class=\"usa-checkbox__input\" id=\"fpki-search-check-all\" type=\"checkbox\" data-fpki-search-check-all>",
       "<label class=\"usa-checkbox__label\" for=\"fpki-search-check-all\">Select all search fields</label>",
       "</div>",
-      "<button class=\"usa-button usa-button--outline fpki-hierarchy__filter-reset-button\" id=\"fpki-search-reset\" type=\"button\" data-fpki-search-reset>Reset</button>",
+      "<button class=\"usa-button usa-button--outline fpki-hierarchy__filter-reset-button\" id=\"fpki-search-reset\" type=\"button\" data-fpki-search-reset disabled>Reset</button>",
       "</div>",
       "<p class=\"fpki-hierarchy__last-update\">Last Crawler Update: " + escapeHtml(lastUpdate) + "</p>",
       "</div>"
@@ -544,6 +544,8 @@
       content.setAttribute("aria-hidden", control.checked ? "false" : "true");
       syncAccordionHeadingState(button);
     });
+
+    syncIssuerPathControl(group);
   }
 
   function setButtonState(button, expanded) {
@@ -555,15 +557,34 @@
     syncAccordionHeadingState(button);
   }
 
+  function syncIssuerPathControl(group) {
+    if (!group || !group.id) return;
+
+    var control = document.querySelector("[data-fpki-expand-issuer-path=\"" + group.id + "\"]");
+    if (!control) return;
+
+    var anyExpanded = Boolean(group.querySelector(".usa-accordion__button[aria-expanded=\"true\"]"));
+    var label = control.labels && control.labels[0];
+    control.checked = anyExpanded;
+
+    if (label) label.textContent = anyExpanded ? "Collapse all" : "Expand all";
+    control.setAttribute(
+      "aria-label",
+      control.getAttribute("aria-label").replace(/^(Expand|Collapse) all/, anyExpanded ? "Collapse all" : "Expand all")
+    );
+  }
+
+  function syncIssuerPathControls(container) {
+    container.querySelectorAll(".fpki-hierarchy__issuer-path").forEach(syncIssuerPathControl);
+  }
+
   function setIssuerCaGroup(control, forceChecked) {
     var groupId = control.getAttribute("data-fpki-expand-issuer-cas");
     var group = document.getElementById(groupId);
     if (!group) return;
     var checked = forceChecked === undefined ? control.checked : forceChecked;
-    var expandAll = document.querySelector("[data-fpki-expand-issuer-path=\"" + groupId + "\"]");
 
     control.checked = checked;
-    if (checked && expandAll) expandAll.checked = false;
 
     group.querySelectorAll(".fpki-hierarchy__issuer-node > .usa-accordion__heading > .usa-accordion__button").forEach(function (button) {
       setButtonState(button, checked);
@@ -572,6 +593,8 @@
     group.querySelectorAll(".fpki-hierarchy__certificate-data > .usa-accordion__heading > .usa-accordion__button").forEach(function (button) {
       setButtonState(button, false);
     });
+
+    syncIssuerPathControl(group);
   }
 
   function setIssuerPathGroup(control) {
@@ -580,11 +603,7 @@
     if (!group) return;
     var caOnly = document.querySelector("[data-fpki-expand-issuer-cas=\"" + groupId + "\"]");
 
-    if (!control.checked && caOnly && caOnly.checked) {
-      setIssuerCaGroup(caOnly, true);
-      return;
-    }
-
+    if (caOnly) caOnly.checked = false;
     setAccordionGroup(control, "data-fpki-expand-issuer-path");
   }
 
@@ -608,6 +627,22 @@
     syncCheckAll(root);
   }
 
+  function updateResetButtonState(root) {
+    var resetButton = root.querySelector("[data-fpki-search-reset]");
+    var filterInput = root.querySelector("#fpki-hierarchy-filter");
+    if (!resetButton) return;
+
+    var fieldsChanged = Array.prototype.some.call(
+      root.querySelectorAll("[data-fpki-search-field]"),
+      function (input, index) {
+        return input.checked !== (index < 3);
+      }
+    );
+    var hasFilterTerm = filterInput && filterInput.value.length > 0;
+
+    resetButton.disabled = !fieldsChanged && !hasFilterTerm;
+  }
+
   function render(data, root) {
     var lastUpdate = formatLastUpdate(data.meta.crawler_last_modified || data.meta.source_last_modified || "");
     var certificatesById = {};
@@ -620,7 +655,7 @@
       "<div class=\"usa-accordion usa-accordion--bordered fpki-hierarchy__filter\">",
       accordionItem("fpki-hierarchy-filter-panel", "FPKI Certificate Hierarchy Graph Filter", renderFilterControls(data, lastUpdate), 2, true),
       "</div>",
-      "<div data-fpki-hierarchy-results></div>"
+      "<div class=\"fpki-hierarchy__results\" data-fpki-hierarchy-results></div>"
     ].join("");
     syncAccordionHeadingStates(root);
 
@@ -630,6 +665,7 @@
         if (showAll && event.target.value.trim().length > 3) {
           setShowAllButtonState(showAll, false);
         }
+        updateResetButtonState(root);
         updateResults(data, root, certificatesById);
       }
     });
@@ -691,9 +727,14 @@
       var resetButton = event.target.closest("[data-fpki-search-reset]");
       if (resetButton && root.contains(resetButton)) {
         event.preventDefault();
+        var resetFilterInput = root.querySelector("#fpki-hierarchy-filter");
+        var resetShowAll = root.querySelector("#fpki-hierarchy-show-all");
+        if (resetFilterInput) resetFilterInput.value = "";
+        if (resetShowAll) setShowAllButtonState(resetShowAll, false);
         resetSearchFields(root);
+        updateResetButtonState(root);
         updateResults(data, root, certificatesById);
-        announce(root, "Search fields reset to CA name, Subject, and Issuer.");
+        announce(root, "Filter reset to CA name, Subject, and Issuer.");
         return;
       }
 
@@ -721,6 +762,7 @@
         previewRegion.querySelectorAll(".usa-accordion__button").forEach(function (button) {
           setButtonState(button, expanded);
         });
+        syncIssuerPathControls(previewRegion);
         announce(root, expanded ? "All preview sections expanded." : "All preview sections collapsed.");
         return;
       }
@@ -783,6 +825,7 @@
           input.checked = event.target.checked;
         });
         syncCheckAll(root);
+        updateResetButtonState(root);
         updateResults(data, root, certificatesById);
       } else if (event.target.matches("[data-fpki-expand-issuer-path]")) {
         setIssuerPathGroup(event.target);
@@ -790,11 +833,13 @@
         setIssuerCaGroup(event.target);
       } else if (event.target.matches("[data-fpki-search-field]")) {
         syncCheckAll(root);
+        updateResetButtonState(root);
         updateResults(data, root, certificatesById);
       }
     });
 
     syncCheckAll(root);
+    updateResetButtonState(root);
     updateResults(data, root, certificatesById);
   }
 
@@ -807,6 +852,7 @@
       button.setAttribute("aria-expanded", expanded ? "false" : "true");
       content.setAttribute("aria-hidden", expanded ? "true" : "false");
       syncAccordionHeadingState(button);
+      syncIssuerPathControl(button.closest(".fpki-hierarchy__issuer-path"));
     }
 
     root.addEventListener("click", function (event) {

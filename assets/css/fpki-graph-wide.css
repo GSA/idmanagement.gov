@@ -721,6 +721,28 @@
   padding: 1rem 1rem 0;
 }
 
+.fpki-hierarchy__results {
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.fpki-hierarchy__results:empty {
+  display: none;
+}
+
+.fpki-hierarchy__results > .fpki-hierarchy__root {
+  margin-top: 0;
+}
+
+.fpki-hierarchy__results > .fpki-hierarchy__no-results {
+  margin: 0;
+}
+
 .fpki-hierarchy__filter-summary-row {
   display: flex;
   gap: 1rem;
@@ -845,6 +867,17 @@
   padding: 0.3rem 0.65rem;
   font-size: 0.8rem;
   line-height: 1.1;
+}
+
+.fpki-hierarchy__filter-reset-button.usa-button:disabled,
+.fpki-hierarchy__filter-reset-button.usa-button:disabled:hover,
+.fpki-hierarchy__filter-reset-button.usa-button:disabled:active,
+.fpki-hierarchy__filter-reset-button.usa-button:disabled:focus {
+  color: #757575;
+  background-color: #f0f0f0;
+  box-shadow: inset 0 0 0 2px #c9c9c9;
+  cursor: not-allowed;
+  opacity: 0.65;
 }
 
 .fpki-hierarchy__filter-footer {
