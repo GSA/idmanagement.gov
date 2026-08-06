@@ -193,16 +193,26 @@
   function relationshipGraphButton(certificate) {
     var name = certificate.label || certificate.subject || certificate.id;
     return [
-      "<button type=\"button\" class=\"fpki-hierarchy__graph-button\" data-fpki-certificate-graph-id=\"" + escapeHtml(certificate.id) + "\" aria-expanded=\"false\" aria-label=\"View relationship graph for " + escapeHtml(name) + "\" title=\"View certificate relationship graph\">",
+      "<button type=\"button\" class=\"fpki-hierarchy__graph-button\" data-fpki-certificate-graph-id=\"" + escapeHtml(certificate.id) + "\" data-fpki-certificate-name=\"" + escapeHtml(name) + "\" aria-expanded=\"false\" aria-label=\"Show relationship graph for " + escapeHtml(name) + "\" title=\"Show certificate relationship graph\">",
       "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\">",
       "<circle cx=\"12\" cy=\"5\" r=\"2.5\"></circle>",
       "<circle cx=\"5\" cy=\"18\" r=\"2.5\"></circle>",
       "<circle cx=\"19\" cy=\"18\" r=\"2.5\"></circle>",
       "<path d=\"M12 7.5v4M5 15.5v-4h14v4\"></path>",
       "</svg>",
-      "<span>View graph</span>",
+      "<span>Show graph view</span>",
       "</button>"
     ].join("");
+  }
+
+  function setGraphButtonState(button, shown) {
+    if (!button) return;
+    var name = button.getAttribute("data-fpki-certificate-name") || "certificate";
+    var action = shown ? "Hide" : "Show";
+    button.setAttribute("aria-expanded", shown ? "true" : "false");
+    button.setAttribute("aria-label", action + " relationship graph for " + name);
+    button.setAttribute("title", action + " certificate relationship graph");
+    button.querySelector("span").textContent = action + " graph view";
   }
 
   function inlineGraphView(certificate) {
@@ -222,22 +232,23 @@
       "<div class=\"fpki-certificate-graph-modal__canvas\" data-fpki-certificate-graph aria-hidden=\"true\"></div>",
       "<aside class=\"fpki-certificate-graph-modal__details\" data-fpki-certificate-graph-details aria-label=\"Selected certificate graph details\"></aside>",
       "<div class=\"fpki-certificate-graph-modal__controls\" role=\"group\" aria-label=\"Graph layout controls\">",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-force-layout>Force layout</button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-hierarchy-layout>Hierarchy layout</button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-fit>Fit view</button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-reset>Reset graph</button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-motion aria-pressed=\"true\">Pause motion</button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-zoom-out><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"></circle><path d=\"M6.8 10.5h7.4M15.2 15.2 21 21\"></path></svg><span>Zoom out</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-hierarchy-layout><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"2\" width=\"6\" height=\"5\" rx=\"1\"></rect><rect x=\"2\" y=\"17\" width=\"6\" height=\"5\" rx=\"1\"></rect><rect x=\"16\" y=\"17\" width=\"6\" height=\"5\" rx=\"1\"></rect><path d=\"M12 7v5M5 17v-5h14v5\"></path></svg><span>Hierarchy View</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-fit><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5\"></path></svg><span>Fit view</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-print><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3Zm-3 11H8v-5h8v5Zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1ZM18 3H6v4h12V3Z\"></path></svg><span>Print graph</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-reset><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 4v6h6M5.5 9A8 8 0 1 1 4 14\"></path></svg><span>Reset</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-motion aria-pressed=\"true\"><svg class=\"fpki-graph-motion__pause\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 5v14M16 5v14\"></path></svg><svg class=\"fpki-graph-motion__play\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m8 5 11 7-11 7Z\"></path></svg><span>Pause motion</span></button>",
       "</div>",
       "<div class=\"fpki-certificate-graph-view__view-toggles\" role=\"group\" aria-label=\"Graph display controls\">",
       "<button type=\"button\" class=\"fpki-certificate-graph-view__details-toggle\" data-fpki-graph-details-toggle aria-expanded=\"true\">",
       "<svg class=\"fpki-certificate-graph-view__eye-open\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
       "<svg class=\"fpki-certificate-graph-view__eye-closed\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9.9 5.3A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.7 13.7 0 0 1-2.2 2.9M6.6 6.6A14 14 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M2 2l20 20\"></path></svg>",
-      "<span>Show/Hide Info Panel</span>",
+      "<span>Hide Info Panel</span>",
       "</button>",
       "<button type=\"button\" class=\"fpki-certificate-graph-view__details-toggle\" data-fpki-graph-node-names-toggle data-names-hidden aria-pressed=\"false\">",
       "<svg class=\"fpki-certificate-graph-view__eye-open\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
       "<svg class=\"fpki-certificate-graph-view__eye-closed\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9.9 5.3A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.7 13.7 0 0 1-2.2 2.9M6.6 6.6A14 14 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M2 2l20 20\"></path></svg>",
-      "<span>Show/Hide Node Names</span>",
+      "<span>Show Node Names</span>",
       "</button>",
       "</div>",
       "</div>",
@@ -313,8 +324,6 @@
       "<div class=\"fpki-hierarchy__relationship-preview-header\">",
       "<h5 id=\"" + headingId + "\" tabindex=\"-1\">" + escapeHtml(label) + "</h5>",
       "<div class=\"fpki-hierarchy__relationship-preview-actions\">",
-      "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-action\" data-fpki-preview-expand aria-label=\"Expand all in " + escapeHtml(label.toLowerCase()) + "\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 3H3v5\"></path><path d=\"M16 3h5v5\"></path><path d=\"M8 21H3v-5\"></path><path d=\"M16 21h5v-5\"></path><path d=\"M3 3l7 7\"></path><path d=\"M21 3l-7 7\"></path><path d=\"M3 21l7-7\"></path><path d=\"M21 21l-7-7\"></path></svg></button>",
-      "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-action\" data-fpki-preview-collapse aria-label=\"Collapse all in " + escapeHtml(label.toLowerCase()) + "\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10 3v7H3\"></path><path d=\"M14 3v7h7\"></path><path d=\"M10 21v-7H3\"></path><path d=\"M14 21v-7h7\"></path></svg></button>",
       "<button type=\"button\" class=\"fpki-hierarchy__relationship-preview-close\" data-fpki-preview-close aria-label=\"Close " + escapeHtml(label.toLowerCase()) + "\">&times;</button>",
       "</div>",
       "</div>",
@@ -637,7 +646,10 @@
       "<button type=\"button\" class=\"fpki-certificate-graph-modal__copy\" data-fpki-details-copy aria-label=\"Copy selected certificate graph details to clipboard\" title=\"Copy certificate details\">",
       "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"9\" width=\"10\" height=\"10\" rx=\"2\"></rect><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"></path></svg>",
       "</button>",
-      "<h3>Info Panel</h3>",
+      "<button type=\"button\" class=\"fpki-certificate-graph-modal__details-close\" data-fpki-details-close aria-label=\"Hide Info Panel\" title=\"Hide Info Panel\">",
+      "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 6l12 12M18 6 6 18\"></path></svg>",
+      "</button>",
+      "<h3 data-fpki-details-drag-handle title=\"Drag to move the Info Panel\">Info Panel</h3>",
       "<p><strong>Certificate:</strong> " + escapeHtml(certificate.label || certificate.subject || certificate.id) + "</p>",
       "<p><strong>Issued by:</strong> " + escapeHtml(issuer ? issuer.label || issuer.subject || issuer.id : "No resolved issuer") + "</p>",
       "<p><strong>Path to COMMON:</strong> " + escapeHtml(path.join(" → ")) + "</p>",
@@ -647,7 +659,7 @@
         return "<li>" + escapeHtml(item.label || item.subject || item.id) + "</li>";
       }).join("") + "</ul>" : "<p>No issued certificates are represented in this data.</p>",
       "<div class=\"fpki-certificate-graph-modal__font-controls\" role=\"group\" aria-label=\"Information panel font size\">",
-      "<button type=\"button\" data-fpki-details-font-decrease aria-label=\"Decrease information panel font size\" disabled><span aria-hidden=\"true\">A−</span></button>",
+      "<button type=\"button\" data-fpki-details-font-decrease aria-label=\"Decrease information panel font size\"><span aria-hidden=\"true\">A−</span></button>",
       "<span class=\"usa-sr-only\" data-fpki-details-font-status>Default font size</span>",
       "<button type=\"button\" data-fpki-details-font-increase aria-label=\"Increase information panel font size\"><span aria-hidden=\"true\">A+</span></button>",
       "</div>"
@@ -658,16 +670,79 @@
     if (!graphView) return;
     var details = graphView.querySelector("[data-fpki-certificate-graph-details]");
     if (!details) return;
-    var delta = Math.max(0, Math.min(5, graphView.fpkiFontDelta || 0));
+    var delta = Math.max(-1, Math.min(5, graphView.fpkiFontDelta || 0));
     var decrease = details.querySelector("[data-fpki-details-font-decrease]");
     var increase = details.querySelector("[data-fpki-details-font-increase]");
     var status = details.querySelector("[data-fpki-details-font-status]");
 
     graphView.fpkiFontDelta = delta;
-    details.style.setProperty("--fpki-details-font-size", (9 + delta) + "pt");
-    if (decrease) decrease.disabled = delta <= 0;
+    details.style.setProperty("--fpki-details-font-size", (10 + delta) + "pt");
+    if (decrease) decrease.disabled = delta <= -1;
     if (increase) increase.disabled = delta >= 5;
-    if (status) status.textContent = delta === 0 ? "Default font size" : "Font size +" + delta + " points";
+    if (status) {
+      status.textContent = delta === 0
+        ? "Default font size"
+        : "Font size " + (delta > 0 ? "+" : "") + delta + (Math.abs(delta) === 1 ? " point" : " points");
+    }
+  }
+
+  function setDetailsPanelState(graphView, shown) {
+    if (!graphView) return;
+    var details = graphView.querySelector("[data-fpki-certificate-graph-details]");
+    var toggle = graphView.querySelector("[data-fpki-graph-details-toggle]");
+    if (details) details.hidden = !shown;
+    if (!toggle) return;
+    toggle.setAttribute("aria-expanded", shown ? "true" : "false");
+    toggle.toggleAttribute("data-details-hidden", !shown);
+    var label = toggle.querySelector("span");
+    if (label) label.textContent = shown ? "Hide Info Panel" : "Show Info Panel";
+  }
+
+  function bindDetailsDrag(graphView) {
+    if (!graphView) return;
+    var details = graphView.querySelector("[data-fpki-certificate-graph-details]");
+    var stage = graphView.querySelector(".fpki-certificate-graph-view__stage");
+    if (!details || !stage || details.fpkiDragBound) return;
+
+    details.fpkiDragBound = true;
+    details.addEventListener("pointerdown", function (event) {
+      var handle = event.target.closest("[data-fpki-details-drag-handle]");
+      if (!handle || event.button !== 0) return;
+
+      event.preventDefault();
+      var stageRect = stage.getBoundingClientRect();
+      var detailsRect = details.getBoundingClientRect();
+      var startX = event.clientX;
+      var startY = event.clientY;
+      var startLeft = detailsRect.left - stageRect.left;
+      var startTop = detailsRect.top - stageRect.top;
+
+      details.style.left = startLeft + "px";
+      details.style.right = "auto";
+      details.style.top = startTop + "px";
+      details.setAttribute("data-fpki-dragging", "");
+      handle.setPointerCapture(event.pointerId);
+
+      function move(moveEvent) {
+        var maxLeft = Math.max(0, stage.clientWidth - details.offsetWidth);
+        var maxTop = Math.max(0, stage.clientHeight - details.offsetHeight);
+        var left = Math.max(0, Math.min(maxLeft, startLeft + moveEvent.clientX - startX));
+        var top = Math.max(0, Math.min(maxTop, startTop + moveEvent.clientY - startY));
+        details.style.left = left + "px";
+        details.style.top = top + "px";
+      }
+
+      function stop() {
+        details.removeAttribute("data-fpki-dragging");
+        handle.removeEventListener("pointermove", move);
+        handle.removeEventListener("pointerup", stop);
+        handle.removeEventListener("pointercancel", stop);
+      }
+
+      handle.addEventListener("pointermove", move);
+      handle.addEventListener("pointerup", stop);
+      handle.addEventListener("pointercancel", stop);
+    });
   }
 
   function fitHighlightedGraph(graphView) {
@@ -781,6 +856,62 @@
     if (status) status.textContent = statusMessage;
   }
 
+  function printCertificateGraph(graphView) {
+    if (!graphView || !graphView.fpkiGraph || graphView.fpkiGraph.destroyed()) return false;
+    var printWindow = window.open("", "_blank");
+    if (!printWindow) return false;
+    printWindow.opener = null;
+
+    var heading = graphView.querySelector("[data-fpki-certificate-graph-heading]");
+    var details = graphView.querySelector("[data-fpki-certificate-graph-details]");
+    var title = heading ? heading.textContent : "FPKI Certificate Relationship Graph";
+    var detailsHtml = "";
+    if (details && !details.hidden) {
+      var detailsCopy = details.cloneNode(true);
+      detailsCopy.querySelectorAll("button, .fpki-certificate-graph-modal__font-controls, .usa-sr-only").forEach(function (element) {
+        element.remove();
+      });
+      detailsHtml = "<aside class=\"details\" aria-label=\"Selected certificate graph details\">" + detailsCopy.innerHTML + "</aside>";
+    }
+
+    var graphImage;
+    try {
+      graphImage = graphView.fpkiGraph.png({ full: true, scale: 2, bg: "#f7f9fa" });
+    } catch (error) {
+      printWindow.close();
+      return false;
+    }
+
+    printWindow.document.open();
+    printWindow.document.write([
+      "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">",
+      "<title>" + escapeHtml(title) + "</title>",
+      "<style>",
+      "@page{size:landscape;margin:.4in}*{box-sizing:border-box}body{font-family:Arial,sans-serif;color:#1b1b1b;margin:0}",
+      "body{background:#fff;padding:12px}h1{font-size:18pt;margin:0 0 5px}.description{color:#565c65;font-size:10pt;margin:0 0 8px}",
+      ".viewer{border:1px solid #a9aeb1;border-radius:4px;padding:10px}.stage{background:#f7f9fa;border:1px solid #a9aeb1;position:relative}.graph{display:block;height:6.1in;object-fit:contain;width:100%}",
+      ".legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:9pt;margin:7px 0 10px}.legend span{align-items:center;display:inline-flex;gap:5px}",
+      ".key{border:2px solid #162e51;border-radius:50%;display:inline-block;height:12px;width:12px}.selected{background:#005ea2;border-width:3px}.issuer{background:#1a4480}.issued{background:#97d4ea;border-color:#005ea2}.root{background:#8168b3;border:3px double #4c2c92}.other{background:#c9c9c9;border-color:#a9aeb1}",
+      ".details{background:rgba(255,255,255,.88);border:1px solid rgba(86,92,101,.65);border-radius:4px;box-shadow:0 3px 8px rgba(27,27,27,.18);font-size:9pt;max-height:calc(100% - 20px);overflow:hidden;padding:8px;position:absolute;right:10px;top:10px;width:250px}.details h3,.details h4{color:#565c65;margin:0 0 5px}.details p,.details ul{margin:3px 0}",
+      "</style></head><body>",
+      "<h1>" + escapeHtml(title) + "</h1>",
+      "<p class=\"description\">The complete FPKI graph with the current certificate relationships highlighted.</p><div class=\"viewer\">",
+      "<div class=\"legend\" aria-label=\"Graph legend\"><span><i class=\"key selected\"></i>Selected</span><span><i class=\"key issuer\"></i>Issuer path</span><span><i class=\"key issued\"></i>Issued certificate</span><span><i class=\"key root\"></i>COMMON root</span><span><i class=\"key other\"></i>Other certificate</span></div>",
+      "<div class=\"stage\"><img class=\"graph\" alt=\"FPKI certificate relationship graph\" src=\"" + graphImage + "\">" + detailsHtml + "</div></div>",
+      "</body></html>"
+    ].join(""));
+    printWindow.document.close();
+
+    var image = printWindow.document.querySelector(".graph");
+    function openPrintDialog() {
+      printWindow.focus();
+      window.setTimeout(function () { printWindow.print(); }, 150);
+    }
+    if (image && !image.complete) image.addEventListener("load", openPrintDialog, { once: true });
+    else openPrintDialog();
+    return true;
+  }
+
   function renderCertificateGraph(certificate, certificatesById, modal) {
     if (!modal || typeof window.cytoscape !== "function") return;
 
@@ -793,6 +924,7 @@
     heading.textContent = "Relationship graph: " + (certificate.label || certificate.subject || certificate.id);
     details.innerHTML = graphAccessibleDetails(certificate, certificatesById, elements);
     applyDetailsFontSize(modal);
+    bindDetailsDrag(modal);
 
     if (modal.fpkiGraph) modal.fpkiGraph.destroy();
     stopAmbientMotion(modal);
@@ -804,11 +936,14 @@
     if (nodeNamesControl) {
       nodeNamesControl.setAttribute("aria-pressed", "false");
       nodeNamesControl.setAttribute("data-names-hidden", "");
+      var nodeNamesControlLabel = nodeNamesControl.querySelector("span");
+      if (nodeNamesControlLabel) nodeNamesControlLabel.textContent = "Show Node Names";
     }
     if (motionControl) {
       motionControl.disabled = Boolean(reducedMotion);
       motionControl.setAttribute("aria-pressed", reducedMotion ? "false" : "true");
-      motionControl.textContent = reducedMotion ? "Motion reduced" : "Pause motion";
+      var motionControlLabel = motionControl.querySelector("span");
+      if (motionControlLabel) motionControlLabel.textContent = reducedMotion ? "Motion reduced" : "Pause motion";
     }
     modal.fpkiGraph = window.cytoscape({
       container: container,
@@ -1136,8 +1271,18 @@
         var graphCertificate = certificatesById[graphButton.getAttribute("data-fpki-certificate-graph-id")];
         var graphView = graphButton.closest(".fpki-hierarchy__node-summary").querySelector("[data-fpki-certificate-graph-view]");
         if (graphCertificate) {
+          if (!graphView.hidden) {
+            stopAmbientMotion(graphView);
+            if (graphView.fpkiGraph) {
+              graphView.fpkiGraph.destroy();
+              graphView.fpkiGraph = null;
+            }
+            graphView.hidden = true;
+            setGraphButtonState(graphButton, false);
+            return;
+          }
           graphView.hidden = false;
-          graphButton.setAttribute("aria-expanded", "true");
+          setGraphButtonState(graphButton, true);
           graphView.fpkiLastOpener = graphButton;
           renderCertificateGraph(graphCertificate, certificatesById, graphView);
         }
@@ -1223,20 +1368,6 @@
         }).catch(function () {
           announce(root, "Could not copy " + copyValue + " to clipboard.");
         });
-        return;
-      }
-
-      var previewExpand = event.target.closest("[data-fpki-preview-expand], [data-fpki-preview-collapse]");
-      if (previewExpand && root.contains(previewExpand)) {
-        event.preventDefault();
-        var previewRegion = previewExpand.closest("[data-fpki-relationship-preview]");
-        if (!previewRegion) return;
-        var expanded = previewExpand.hasAttribute("data-fpki-preview-expand");
-        previewRegion.querySelectorAll(".usa-accordion__button").forEach(function (button) {
-          setButtonState(button, expanded);
-        });
-        syncIssuerPathControls(previewRegion);
-        announce(root, expanded ? "All preview sections expanded." : "All preview sections collapsed.");
         return;
       }
 
@@ -1361,26 +1492,31 @@
       });
 
     document.addEventListener("click", function (event) {
-      var forceControl = event.target.closest("[data-fpki-graph-force-layout]");
+      var zoomOutControl = event.target.closest("[data-fpki-graph-zoom-out]");
       var hierarchyControl = event.target.closest("[data-fpki-graph-hierarchy-layout]");
       var fitControl = event.target.closest("[data-fpki-graph-fit]");
+      var printControl = event.target.closest("[data-fpki-graph-print]");
       var resetControl = event.target.closest("[data-fpki-graph-reset]");
       var motionControl = event.target.closest("[data-fpki-graph-motion]");
       var fontDecrease = event.target.closest("[data-fpki-details-font-decrease]");
       var fontIncrease = event.target.closest("[data-fpki-details-font-increase]");
       var detailsCopy = event.target.closest("[data-fpki-details-copy]");
+      var detailsClose = event.target.closest("[data-fpki-details-close]");
       var detailsToggle = event.target.closest("[data-fpki-graph-details-toggle]");
       var nodeNamesToggle = event.target.closest("[data-fpki-graph-node-names-toggle]");
       var closeControl = event.target.closest("[data-fpki-graph-close]");
       var graphModal = event.target.closest("[data-fpki-certificate-graph-view]");
 
-      if (forceControl && graphModal) {
-        runGraphLayout(graphModal, forceLayoutOptions(), "Force layout applied. Connected certificates gently influence one another.");
+      if (zoomOutControl && graphModal && graphModal.fpkiGraph) {
+        var nextZoom = Math.max(graphModal.fpkiGraph.minZoom(), graphModal.fpkiGraph.zoom() * 0.8);
+        graphModal.fpkiGraph.animate({ zoom: nextZoom }, { duration: 250 });
+        var zoomStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (zoomStatus) zoomStatus.textContent = "Graph zoomed out.";
         return;
       }
 
       if (hierarchyControl && graphModal) {
-        runGraphLayout(graphModal, hierarchyLayoutOptions(), "Hierarchy layout applied. Certificates remain freely draggable.");
+        runGraphLayout(graphModal, hierarchyLayoutOptions(), "Hierarchy View applied. Certificates remain freely draggable.");
         return;
       }
 
@@ -1404,9 +1540,18 @@
         return;
       }
 
+      if (printControl && graphModal) {
+        var printStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        var printOpened = printCertificateGraph(graphModal);
+        if (printStatus) printStatus.textContent = printOpened
+          ? "Graph print view opened in a new tab. Use the print dialog to save it as a PDF."
+          : "The graph print view could not be opened. Allow pop-ups and try again.";
+        return;
+      }
+
       if ((fontDecrease || fontIncrease) && graphModal) {
         var change = fontIncrease ? 1 : -1;
-        graphModal.fpkiFontDelta = Math.max(0, Math.min(5, (graphModal.fpkiFontDelta || 0) + change));
+        graphModal.fpkiFontDelta = Math.max(-1, Math.min(5, (graphModal.fpkiFontDelta || 0) + change));
         applyDetailsFontSize(graphModal);
         return;
       }
@@ -1438,12 +1583,17 @@
         return;
       }
 
+      if (detailsClose && graphModal) {
+        setDetailsPanelState(graphModal, false);
+        var closeStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (closeStatus) closeStatus.textContent = "Info Panel hidden.";
+        return;
+      }
+
       if (detailsToggle && graphModal) {
         var selectedDetails = graphModal.querySelector("[data-fpki-certificate-graph-details]");
         var shouldShow = selectedDetails.hidden;
-        selectedDetails.hidden = !shouldShow;
-        detailsToggle.setAttribute("aria-expanded", shouldShow ? "true" : "false");
-        detailsToggle.toggleAttribute("data-details-hidden", !shouldShow);
+        setDetailsPanelState(graphModal, shouldShow);
         var toggleStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
         if (toggleStatus) toggleStatus.textContent = shouldShow
           ? "Info Panel shown."
@@ -1457,6 +1607,8 @@
         graphModal.fpkiGraph.nodes(".background").toggleClass("names-visible", shouldShowNodeNames);
         nodeNamesToggle.setAttribute("aria-pressed", shouldShowNodeNames ? "true" : "false");
         nodeNamesToggle.toggleAttribute("data-names-hidden", !shouldShowNodeNames);
+        var nodeNamesLabel = nodeNamesToggle.querySelector("span");
+        if (nodeNamesLabel) nodeNamesLabel.textContent = shouldShowNodeNames ? "Hide Node Names" : "Show Node Names";
         var nodeNamesStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
         if (nodeNamesStatus) nodeNamesStatus.textContent = shouldShowNodeNames
           ? "Unfocused node names shown."
@@ -1479,7 +1631,8 @@
       if (motionControl && graphModal) {
         graphModal.fpkiMotionPaused = !graphModal.fpkiMotionPaused;
         motionControl.setAttribute("aria-pressed", graphModal.fpkiMotionPaused ? "false" : "true");
-        motionControl.textContent = graphModal.fpkiMotionPaused ? "Resume motion" : "Pause motion";
+        var motionLabel = motionControl.querySelector("span");
+        if (motionLabel) motionLabel.textContent = graphModal.fpkiMotionPaused ? "Resume motion" : "Pause motion";
         if (graphModal.fpkiMotionPaused) {
           stopAmbientMotion(graphModal);
         } else {
@@ -1498,7 +1651,7 @@
         graphModal.fpkiGraph = null;
       }
       graphModal.hidden = true;
-      if (opener) opener.setAttribute("aria-expanded", "false");
+      setGraphButtonState(opener, false);
       if (opener) {
         window.setTimeout(function () {
           opener.focus();

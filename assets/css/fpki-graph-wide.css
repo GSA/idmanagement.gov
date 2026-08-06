@@ -384,7 +384,6 @@
 .fpki-hierarchy__relationship-link:focus-visible,
 .fpki-hierarchy__relationship-copy:focus-visible,
 .fpki-hierarchy__cell-copy:focus-visible,
-.fpki-hierarchy__relationship-preview-action:focus-visible,
 .fpki-hierarchy__relationship-preview-close:focus-visible {
   outline: 0.25rem solid #2491ff;
   outline-offset: 0.2rem;
@@ -431,7 +430,7 @@
 }
 
 .fpki-hierarchy__summary-panel .fpki-hierarchy__node-summary {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 .fpki-hierarchy__issuer-certificate-panel .fpki-hierarchy__node-summary {
@@ -496,38 +495,30 @@
   flex: 0 0 auto;
 }
 
-.fpki-hierarchy__relationship-preview-action,
 .fpki-hierarchy__relationship-preview-close {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border: 1px solid #565c65;
-  border-radius: 50%;
-  background: #fff;
-  color: #1b1b1b;
+  background: transparent;
+  border: 0;
+  color: #565c65;
   cursor: pointer;
-  font-size: 1.25rem;
+  display: inline-flex;
+  font-size: 1.75rem;
   font-weight: 700;
+  height: 2rem;
+  justify-content: center;
   line-height: 1;
+  margin: 0;
+  padding: 0;
+  width: 2rem;
 }
 
-.fpki-hierarchy__relationship-preview-action:hover,
-.fpki-hierarchy__relationship-preview-action:focus,
-.fpki-hierarchy__relationship-preview-close:hover,
+.fpki-hierarchy__relationship-preview-close:hover {
+  color: #1a4480;
+}
+
 .fpki-hierarchy__relationship-preview-close:focus {
-  background: #f0f0f0;
-}
-
-.fpki-hierarchy__relationship-preview-action svg {
-  width: 1.05rem;
-  height: 1.05rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  outline: 0.2rem solid #2491ff;
+  outline-offset: 0.1rem;
 }
 
 .fpki-hierarchy__relationship-preview-result {
@@ -839,7 +830,7 @@
 
 .fpki-hierarchy__show-all-button.usa-button {
   min-width: 6.5rem;
-  margin: 0;
+  margin: 0 0 0 1px;
 }
 
 .fpki-hierarchy__field-heading {
@@ -1328,10 +1319,33 @@
 }
 
 .fpki-certificate-graph-modal__controls .usa-button {
+  align-items: center;
   background: rgba(255, 255, 255, 0.7);
+  display: inline-flex;
   font-size: 0.82rem;
+  gap: 0.3rem;
   margin: 0;
   padding: 0.45rem 0.65rem;
+}
+
+.fpki-certificate-graph-modal__controls .usa-button svg {
+  fill: none;
+  height: 1rem;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  width: 1rem;
+}
+
+.fpki-certificate-graph-modal__controls [data-fpki-graph-print] svg {
+  fill: currentColor;
+  stroke: none;
+}
+
+.fpki-certificate-graph-modal__controls [data-fpki-graph-motion][aria-pressed="true"] .fpki-graph-motion__play,
+.fpki-certificate-graph-modal__controls [data-fpki-graph-motion][aria-pressed="false"] .fpki-graph-motion__pause {
+  display: none;
 }
 
 .fpki-certificate-graph-modal__controls .usa-button:hover {
@@ -1368,7 +1382,7 @@
 }
 
 .fpki-certificate-graph-modal__details {
-  --fpki-details-font-size: 9pt;
+  --fpki-details-font-size: 10pt;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(86, 92, 101, 0.65);
   border-radius: 0.25rem;
@@ -1379,7 +1393,7 @@
   max-height: calc(100% - 1.5rem);
   max-width: min(20rem, calc(100% - 1.5rem));
   overflow: auto;
-  padding: 0.6rem 2.65rem 0.6rem 0.7rem;
+  padding: 0.6rem 4.75rem 0.6rem 0.7rem;
   position: absolute;
   right: 0.75rem;
   top: 0.75rem;
@@ -1396,17 +1410,25 @@
 }
 
 .fpki-certificate-graph-modal__details h3 {
+  cursor: grab;
   font-size: 1.55em;
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 0.5rem;
+  touch-action: none;
+  user-select: none;
+}
+
+.fpki-certificate-graph-modal__details[data-fpki-dragging] h3 {
+  cursor: grabbing;
 }
 
 .fpki-certificate-graph-modal__details[hidden] {
   display: none;
 }
 
-.fpki-certificate-graph-modal__copy {
+.fpki-certificate-graph-modal__copy,
+.fpki-certificate-graph-modal__details-close {
   align-items: center;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #71767a;
@@ -1418,22 +1440,32 @@
   justify-content: center;
   padding: 0;
   position: absolute;
-  right: 0.55rem;
   top: 0.55rem;
   width: 1.75rem;
 }
 
-.fpki-certificate-graph-modal__copy:hover {
+.fpki-certificate-graph-modal__copy {
+  right: 2.65rem;
+}
+
+.fpki-certificate-graph-modal__details-close {
+  right: 0.55rem;
+}
+
+.fpki-certificate-graph-modal__copy:hover,
+.fpki-certificate-graph-modal__details-close:hover {
   background: #e7f6f8;
   color: #1a4480;
 }
 
-.fpki-certificate-graph-modal__copy:focus {
+.fpki-certificate-graph-modal__copy:focus,
+.fpki-certificate-graph-modal__details-close:focus {
   outline: 0.2rem solid #2491ff;
   outline-offset: 0.1rem;
 }
 
-.fpki-certificate-graph-modal__copy svg {
+.fpki-certificate-graph-modal__copy svg,
+.fpki-certificate-graph-modal__details-close svg {
   fill: none;
   height: 0.95rem;
   stroke: currentColor;
