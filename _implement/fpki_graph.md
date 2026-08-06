@@ -7,6 +7,7 @@ permalink: /fpki/graph/
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/fpki-graph-wide.css" />
 
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/cytoscape-3.33.1.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/fpki-certificate-hierarchy.js"></script>
 
 <div class="fpki-graph-wide">

@@ -190,6 +190,62 @@
     ].join("");
   }
 
+  function relationshipGraphButton(certificate) {
+    var name = certificate.label || certificate.subject || certificate.id;
+    return [
+      "<button type=\"button\" class=\"fpki-hierarchy__graph-button\" data-fpki-certificate-graph-id=\"" + escapeHtml(certificate.id) + "\" aria-expanded=\"false\" aria-label=\"View relationship graph for " + escapeHtml(name) + "\" title=\"View certificate relationship graph\">",
+      "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\">",
+      "<circle cx=\"12\" cy=\"5\" r=\"2.5\"></circle>",
+      "<circle cx=\"5\" cy=\"18\" r=\"2.5\"></circle>",
+      "<circle cx=\"19\" cy=\"18\" r=\"2.5\"></circle>",
+      "<path d=\"M12 7.5v4M5 15.5v-4h14v4\"></path>",
+      "</svg>",
+      "<span>View graph</span>",
+      "</button>"
+    ].join("");
+  }
+
+  function inlineGraphView(certificate) {
+    return [
+      "<section class=\"fpki-certificate-graph-view\" data-fpki-certificate-graph-view data-fpki-initial-certificate-id=\"" + escapeHtml(certificate.id) + "\" hidden>",
+      "<h4 class=\"fpki-certificate-graph-view__heading\" data-fpki-certificate-graph-heading>Certificate relationship graph</h4>",
+      "<button type=\"button\" class=\"fpki-certificate-graph-view__close\" data-fpki-graph-close aria-label=\"Close certificate relationship graph\" title=\"Close graph\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 6l12 12M18 6 6 18\"></path></svg></button>",
+      "<p class=\"fpki-certificate-graph-view__description\">The complete FPKI graph is shown with this certificate and its relationships highlighted.</p>",
+      "<div class=\"fpki-certificate-graph-modal__legend\" aria-label=\"Graph legend\">",
+      "<span><i class=\"fpki-certificate-graph-modal__key fpki-certificate-graph-modal__key--selected\"></i>Selected</span>",
+      "<span><i class=\"fpki-certificate-graph-modal__key fpki-certificate-graph-modal__key--issuer\"></i>Issuer path</span>",
+      "<span><i class=\"fpki-certificate-graph-modal__key fpki-certificate-graph-modal__key--issued\"></i>Issued certificate</span>",
+      "<span><i class=\"fpki-certificate-graph-modal__key fpki-certificate-graph-modal__key--root\"></i>COMMON root</span>",
+      "<span><i class=\"fpki-certificate-graph-modal__key fpki-certificate-graph-modal__key--background\"></i>Other certificate</span>",
+      "</div>",
+      "<div class=\"fpki-certificate-graph-view__stage\">",
+      "<div class=\"fpki-certificate-graph-modal__canvas\" data-fpki-certificate-graph aria-hidden=\"true\"></div>",
+      "<aside class=\"fpki-certificate-graph-modal__details\" data-fpki-certificate-graph-details aria-label=\"Selected certificate graph details\"></aside>",
+      "<div class=\"fpki-certificate-graph-modal__controls\" role=\"group\" aria-label=\"Graph layout controls\">",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-force-layout>Force layout</button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-hierarchy-layout>Hierarchy layout</button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-fit>Fit view</button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-reset>Reset graph</button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-motion aria-pressed=\"true\">Pause motion</button>",
+      "</div>",
+      "<div class=\"fpki-certificate-graph-view__view-toggles\" role=\"group\" aria-label=\"Graph display controls\">",
+      "<button type=\"button\" class=\"fpki-certificate-graph-view__details-toggle\" data-fpki-graph-details-toggle aria-expanded=\"true\">",
+      "<svg class=\"fpki-certificate-graph-view__eye-open\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
+      "<svg class=\"fpki-certificate-graph-view__eye-closed\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9.9 5.3A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.7 13.7 0 0 1-2.2 2.9M6.6 6.6A14 14 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M2 2l20 20\"></path></svg>",
+      "<span>Show/Hide Info Panel</span>",
+      "</button>",
+      "<button type=\"button\" class=\"fpki-certificate-graph-view__details-toggle\" data-fpki-graph-node-names-toggle data-names-hidden aria-pressed=\"false\">",
+      "<svg class=\"fpki-certificate-graph-view__eye-open\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
+      "<svg class=\"fpki-certificate-graph-view__eye-closed\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9.9 5.3A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.7 13.7 0 0 1-2.2 2.9M6.6 6.6A14 14 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M2 2l20 20\"></path></svg>",
+      "<span>Show/Hide Node Names</span>",
+      "</button>",
+      "</div>",
+      "</div>",
+      "<div class=\"usa-sr-only\" data-fpki-certificate-graph-status role=\"status\" aria-live=\"polite\"></div>",
+      "</section>"
+    ].join("");
+  }
+
   function relationshipList(label, certificates, emptyText, direction, previewMode) {
     var icon = relationshipIcon(direction);
     var items = certificates.map(function (certificate) {
@@ -216,7 +272,7 @@
     ].join("");
   }
 
-  function certificateNodeSummary(certificate, certificatesById, previewMode) {
+  function certificateNodeSummary(certificate, certificatesById, previewMode, includeGraph) {
     var inboundCertificate = certificate.issuer_id ? certificatesById[certificate.issuer_id] : null;
     var outboundCertificates = certificatesIssuedBy(certificate, certificatesById);
     var attributeRows = [
@@ -232,10 +288,12 @@
 
     return [
       "<div class=\"fpki-hierarchy__node-summary\">",
+      includeGraph ? "<div class=\"fpki-hierarchy__node-actions\">" + relationshipGraphButton(certificate) + "</div>" : "",
       "<div class=\"fpki-hierarchy__node-attributes\">",
       "<p class=\"fpki-hierarchy__node-summary-label\"><strong>Attributes</strong></p>",
       attributeRows,
       "</div>",
+      includeGraph ? inlineGraphView(certificate) : "",
       "<div class=\"fpki-hierarchy__relationships\">",
       relationshipList("Inbound Links from", inboundCertificate ? [inboundCertificate] : [], "No inbound issuer link", "inbound", previewMode),
       relationshipList("Outbound Links to", outboundCertificates, "No outbound certificate links", "outbound", previewMode),
@@ -304,7 +362,7 @@
     var itemId = idPrefix + "-node-" + index + "-" + slug(certificate.id).slice(0, 20);
     var child = hierarchyChain(pathIds, certificatesById, idPrefix, index + 1, previewMode);
     var issuerCertificate = certificateBody(certificate, itemId, "fpki-hierarchy__issuer-certificate-data");
-    var issuerSummary = certificateNodeSummary(certificate, certificatesById, previewMode);
+    var issuerSummary = certificateNodeSummary(certificate, certificatesById, previewMode, false);
     var content = [
       issuerCertificate ? "<div class=\"fpki-hierarchy__issuer-certificate-panel\">" + issuerSummary + issuerCertificate + "</div>" : "",
       child
@@ -382,7 +440,7 @@
       "<p><strong>Valid to:</strong> " + escapeHtml(certificate.valid_to || "Unavailable") + "</p>",
       "</div>",
       "</div>",
-      certificateNodeSummary(certificate, certificatesById, previewMode),
+      certificateNodeSummary(certificate, certificatesById, previewMode, !previewMode),
       selectedCertificate || "",
       "</div>"
     ].join("");
@@ -485,6 +543,403 @@
       timeZone: "UTC",
       year: "numeric"
     }).format(date);
+  }
+
+  function graphElements(certificate, certificatesById) {
+    var context = {};
+    var roles = {};
+    var pathIds = certificate.path_to_root || [certificate.id];
+
+    pathIds.forEach(function (id) {
+      if (certificatesById[id]) {
+        context[id] = true;
+        roles[id] = certificatesById[id].is_common_policy_g2 ? "root context" : "issuer context";
+      }
+    });
+
+    certificatesIssuedBy(certificate, certificatesById).forEach(function (issued) {
+      context[issued.id] = true;
+      roles[issued.id] = "issued context";
+    });
+
+    context[certificate.id] = true;
+    roles[certificate.id] = certificate.is_common_policy_g2 ? "selected root context" : "selected context";
+
+    var nodes = Object.keys(certificatesById).map(function (id) {
+      var item = certificatesById[id];
+      var nodeRole = roles[id] || "background";
+      return {
+        data: {
+          id: item.id,
+          label: item.label || item.subject || item.id,
+          role: nodeRole,
+          subject: item.subject,
+          issuer: item.issuer,
+          validTo: item.valid_to
+        },
+        classes: nodeRole
+      };
+    });
+
+    var edges = [];
+    Object.keys(certificatesById).forEach(function (id) {
+      var item = certificatesById[id];
+      if (item.issuer_id && item.issuer_id !== item.id && certificatesById[item.issuer_id]) {
+        var edgeRole = context[item.issuer_id] && context[item.id] ? "context" : "background";
+        edges.push({
+          data: {
+            id: item.issuer_id + "--" + item.id,
+            source: item.issuer_id,
+            target: item.id,
+            role: edgeRole
+          },
+          classes: edgeRole
+        });
+      }
+    });
+
+    return { nodes: nodes, edges: edges };
+  }
+
+  function highlightGraphCertificate(modal, certificate, certificatesById, recenter) {
+    if (!modal || !modal.fpkiGraph || modal.fpkiGraph.destroyed()) return;
+    var elements = graphElements(certificate, certificatesById);
+    var classesById = {};
+
+    elements.nodes.concat(elements.edges).forEach(function (element) {
+      classesById[element.data.id] = element.classes;
+    });
+
+    modal.fpkiGraph.batch(function () {
+      modal.fpkiGraph.elements().forEach(function (element) {
+        element.classes(classesById[element.id()] || "background");
+      });
+      if (modal.fpkiShowBackgroundNodeNames) {
+        modal.fpkiGraph.nodes(".background").addClass("names-visible");
+      }
+    });
+
+    var selectedNode = modal.fpkiGraph.getElementById(certificate.id);
+    if (selectedNode.length && recenter !== false) {
+      modal.fpkiGraph.animate({ center: { eles: selectedNode }, duration: 350 });
+    }
+  }
+
+  function graphAccessibleDetails(certificate, certificatesById, elements) {
+    var issuer = certificate.issuer_id ? certificatesById[certificate.issuer_id] : null;
+    var issued = certificatesIssuedBy(certificate, certificatesById);
+    var path = (certificate.path_to_root || [certificate.id]).map(function (id) {
+      var item = certificatesById[id];
+      return item ? item.label || item.subject || item.id : id;
+    });
+
+    return [
+      "<button type=\"button\" class=\"fpki-certificate-graph-modal__copy\" data-fpki-details-copy aria-label=\"Copy selected certificate graph details to clipboard\" title=\"Copy certificate details\">",
+      "<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"9\" width=\"10\" height=\"10\" rx=\"2\"></rect><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"></path></svg>",
+      "</button>",
+      "<h3>Info Panel</h3>",
+      "<p><strong>Certificate:</strong> " + escapeHtml(certificate.label || certificate.subject || certificate.id) + "</p>",
+      "<p><strong>Issued by:</strong> " + escapeHtml(issuer ? issuer.label || issuer.subject || issuer.id : "No resolved issuer") + "</p>",
+      "<p><strong>Path to COMMON:</strong> " + escapeHtml(path.join(" → ")) + "</p>",
+      "<p><strong>Graph size:</strong> " + elements.nodes.length + " certificates and " + elements.edges.length + " relationships</p>",
+      "<h4>Certificates issued</h4>",
+      issued.length ? "<ul>" + issued.map(function (item) {
+        return "<li>" + escapeHtml(item.label || item.subject || item.id) + "</li>";
+      }).join("") + "</ul>" : "<p>No issued certificates are represented in this data.</p>",
+      "<div class=\"fpki-certificate-graph-modal__font-controls\" role=\"group\" aria-label=\"Information panel font size\">",
+      "<button type=\"button\" data-fpki-details-font-decrease aria-label=\"Decrease information panel font size\" disabled><span aria-hidden=\"true\">A−</span></button>",
+      "<span class=\"usa-sr-only\" data-fpki-details-font-status>Default font size</span>",
+      "<button type=\"button\" data-fpki-details-font-increase aria-label=\"Increase information panel font size\"><span aria-hidden=\"true\">A+</span></button>",
+      "</div>"
+    ].join("");
+  }
+
+  function applyDetailsFontSize(graphView) {
+    if (!graphView) return;
+    var details = graphView.querySelector("[data-fpki-certificate-graph-details]");
+    if (!details) return;
+    var delta = Math.max(0, Math.min(5, graphView.fpkiFontDelta || 0));
+    var decrease = details.querySelector("[data-fpki-details-font-decrease]");
+    var increase = details.querySelector("[data-fpki-details-font-increase]");
+    var status = details.querySelector("[data-fpki-details-font-status]");
+
+    graphView.fpkiFontDelta = delta;
+    details.style.setProperty("--fpki-details-font-size", (9 + delta) + "pt");
+    if (decrease) decrease.disabled = delta <= 0;
+    if (increase) increase.disabled = delta >= 5;
+    if (status) status.textContent = delta === 0 ? "Default font size" : "Font size +" + delta + " points";
+  }
+
+  function fitHighlightedGraph(graphView) {
+    if (!graphView || !graphView.fpkiGraph || graphView.fpkiGraph.destroyed()) return;
+    var container = graphView.querySelector("[data-fpki-certificate-graph]");
+    var width = container ? container.clientWidth : 0;
+    var padding = Math.max(18, Math.min(55, Math.round(width * 0.055)));
+    var highlighted = graphView.fpkiGraph.nodes(".context");
+    graphView.fpkiGraph.fit(highlighted.length ? highlighted : graphView.fpkiGraph.nodes(), padding);
+  }
+
+  function forceLayoutOptions() {
+    return {
+      name: "cose",
+      animate: true,
+      animationDuration: 650,
+      componentSpacing: 70,
+      coolingFactor: 0.96,
+      edgeElasticity: function () { return 80; },
+      fit: true,
+      gravity: 0.18,
+      idealEdgeLength: function () { return 105; },
+      initialTemp: 90,
+      minTemp: 1,
+      nodeOverlap: 18,
+      nodeRepulsion: function () { return 5200; },
+      numIter: 650,
+      padding: 35,
+      randomize: true,
+      refresh: 20
+    };
+  }
+
+  function hierarchyLayoutOptions() {
+    return {
+      name: "breadthfirst",
+      animate: true,
+      animationDuration: 450,
+      directed: true,
+      padding: 35,
+      spacingFactor: 1.15
+    };
+  }
+
+  function stopAmbientMotion(modal) {
+    if (!modal || !modal.fpkiMotionFrame) return;
+    window.cancelAnimationFrame(modal.fpkiMotionFrame);
+    modal.fpkiMotionFrame = null;
+  }
+
+  function captureMotionPositions(modal) {
+    if (!modal || !modal.fpkiGraph || modal.fpkiGraph.destroyed()) return;
+    modal.fpkiGraph.nodes().forEach(function (node, index) {
+      node.scratch("fpkiMotion", {
+        base: { x: node.position("x"), y: node.position("y") },
+        phase: index * 0.78
+      });
+    });
+  }
+
+  function startAmbientMotion(modal) {
+    stopAmbientMotion(modal);
+    if (!modal || !modal.fpkiGraph || modal.fpkiGraph.destroyed() || modal.fpkiMotionPaused) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    captureMotionPositions(modal);
+    var startTime = window.performance.now();
+    var previousFrame = 0;
+    var settleDuration = 1100;
+
+    function move(timestamp) {
+      if (!modal.fpkiGraph || modal.fpkiGraph.destroyed() || modal.fpkiMotionPaused) {
+        stopAmbientMotion(modal);
+        return;
+      }
+
+      if (timestamp - previousFrame >= 45) {
+        var elapsed = (timestamp - startTime) / 1000;
+        var settleProgress = Math.max(0, Math.min(1, (timestamp - startTime) / settleDuration));
+        var settleEasing = settleProgress * settleProgress * (3 - 2 * settleProgress);
+        modal.fpkiGraph.nodes().forEach(function (node) {
+          var motion = node.scratch("fpkiMotion");
+          if (!motion || node.grabbed()) return;
+
+          var influence = Math.min(node.degree(), 5) * 0.16;
+          var amplitude = (node.hasClass("selected") ? 1.15 : 2.5 + influence) * settleEasing;
+          node.position({
+            x: motion.base.x + Math.sin(elapsed * 1.05 + motion.phase) * amplitude,
+            y: motion.base.y + Math.cos(elapsed * 0.82 + motion.phase) * amplitude * 0.7
+          });
+        });
+        previousFrame = timestamp;
+      }
+
+      modal.fpkiMotionFrame = window.requestAnimationFrame(move);
+    }
+
+    modal.fpkiMotionFrame = window.requestAnimationFrame(move);
+  }
+
+  function runGraphLayout(modal, options, statusMessage) {
+    if (!modal || !modal.fpkiGraph || modal.fpkiGraph.destroyed()) return;
+    stopAmbientMotion(modal);
+    modal.fpkiGraph.nodes().unlock();
+    modal.fpkiGraph.one("layoutstop", function () {
+      startAmbientMotion(modal);
+    });
+    modal.fpkiGraph.layout(options).run();
+
+    var status = modal.querySelector("[data-fpki-certificate-graph-status]");
+    if (status) status.textContent = statusMessage;
+  }
+
+  function renderCertificateGraph(certificate, certificatesById, modal) {
+    if (!modal || typeof window.cytoscape !== "function") return;
+
+    var container = modal.querySelector("[data-fpki-certificate-graph]");
+    var details = modal.querySelector("[data-fpki-certificate-graph-details]");
+    var heading = modal.querySelector("[data-fpki-certificate-graph-heading]");
+    var status = modal.querySelector("[data-fpki-certificate-graph-status]");
+    var elements = graphElements(certificate, certificatesById);
+
+    heading.textContent = "Relationship graph: " + (certificate.label || certificate.subject || certificate.id);
+    details.innerHTML = graphAccessibleDetails(certificate, certificatesById, elements);
+    applyDetailsFontSize(modal);
+
+    if (modal.fpkiGraph) modal.fpkiGraph.destroy();
+    stopAmbientMotion(modal);
+    var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var motionControl = modal.querySelector("[data-fpki-graph-motion]");
+    var nodeNamesControl = modal.querySelector("[data-fpki-graph-node-names-toggle]");
+    modal.fpkiMotionPaused = Boolean(reducedMotion);
+    modal.fpkiShowBackgroundNodeNames = false;
+    if (nodeNamesControl) {
+      nodeNamesControl.setAttribute("aria-pressed", "false");
+      nodeNamesControl.setAttribute("data-names-hidden", "");
+    }
+    if (motionControl) {
+      motionControl.disabled = Boolean(reducedMotion);
+      motionControl.setAttribute("aria-pressed", reducedMotion ? "false" : "true");
+      motionControl.textContent = reducedMotion ? "Motion reduced" : "Pause motion";
+    }
+    modal.fpkiGraph = window.cytoscape({
+      container: container,
+      elements: elements.nodes.concat(elements.edges),
+      layout: forceLayoutOptions(),
+      minZoom: 0.35,
+      maxZoom: 2.5,
+      style: [
+        { selector: "node", style: { "background-color": "#73b3e7", "border-color": "#1a4480", "border-width": 2, "color": "#1b1b1b", "font-size": 11, "label": "data(label)", "text-background-color": "#fff", "text-background-opacity": 0.9, "text-background-padding": 4, "text-background-shape": "roundrectangle", "text-max-width": 130, "text-valign": "bottom", "text-wrap": "wrap", "width": 34, "height": 34 } },
+        { selector: "node.background", style: { "background-color": "#c9c9c9", "background-opacity": 0.48, "border-color": "#a9aeb1", "border-opacity": 0.55, "border-width": 1, "font-size": 8, "height": 13, "label": "", "text-background-opacity": 0.68, "text-opacity": 0.72, "width": 13 } },
+        { selector: "node.background.names-visible", style: { "label": "data(label)" } },
+        { selector: "node.issuer", style: { "background-color": "#1a4480", "border-color": "#162e51", "color": "#fff", "text-background-color": "#162e51" } },
+        { selector: "node.issued", style: { "background-color": "#97d4ea", "border-color": "#005ea2" } },
+        { selector: "node.root", style: { "background-color": "#8168b3", "border-color": "#4c2c92", "border-width": 5 } },
+        { selector: "node.selected", style: { "background-color": "#005ea2", "border-color": "#162e51", "border-width": 5, "color": "#fff", "height": 48, "text-background-color": "#005ea2", "width": 48 } },
+        { selector: "edge", style: { "curve-style": "bezier", "line-color": "#565c65", "target-arrow-color": "#565c65", "target-arrow-shape": "triangle", "width": 2 } },
+        { selector: "edge.background", style: { "line-color": "#c9c9c9", "opacity": 0.22, "target-arrow-color": "#c9c9c9", "target-arrow-shape": "none", "width": 0.8 } },
+        { selector: "edge.context", style: { "line-color": "#005ea2", "opacity": 0.95, "target-arrow-color": "#005ea2", "width": 3 } },
+        { selector: "node:active", style: { "overlay-color": "#ffbe2e", "overlay-opacity": 0.25, "overlay-padding": 8 } }
+      ]
+    });
+    modal.fpkiGraph.autoungrabify(false);
+    modal.fpkiGraph.nodes().grabify();
+
+    modal.fpkiGraph.on("tap", "node", function (event) {
+      var selected = certificatesById[event.target.id()];
+      if (!selected) return;
+      var selectedElements = graphElements(selected, certificatesById);
+      details.innerHTML = graphAccessibleDetails(selected, certificatesById, selectedElements);
+      applyDetailsFontSize(modal);
+      heading.textContent = "Relationship graph: " + (selected.label || selected.subject || selected.id);
+      highlightGraphCertificate(modal, selected, certificatesById);
+      status.textContent = "Selected " + (selected.label || selected.subject || selected.id) + ".";
+    });
+
+    modal.fpkiGraph.on("grab", "node", function (event) {
+      stopAmbientMotion(modal);
+      event.target.stop();
+      event.target.neighborhood("node").stop();
+      var position = event.target.position();
+      event.target.scratch("fpkiDrag", {
+        lastPosition: { x: position.x, y: position.y },
+        lastTime: window.performance.now(),
+        velocity: { x: 0, y: 0 }
+      });
+    });
+
+    modal.fpkiGraph.on("drag", "node", function (event) {
+      var node = event.target;
+      var tracking = node.scratch("fpkiDrag");
+      if (!tracking) return;
+
+      var now = window.performance.now();
+      var position = node.position();
+      var elapsed = Math.max(now - tracking.lastTime, 1);
+      var instantX = (position.x - tracking.lastPosition.x) / elapsed;
+      var instantY = (position.y - tracking.lastPosition.y) / elapsed;
+
+      tracking.velocity.x = tracking.velocity.x * 0.35 + instantX * 0.65;
+      tracking.velocity.y = tracking.velocity.y * 0.35 + instantY * 0.65;
+      tracking.lastPosition = { x: position.x, y: position.y };
+      tracking.lastTime = now;
+      node.scratch("fpkiDrag", tracking);
+    });
+
+    modal.fpkiGraph.on("dragfree", "node", function (event) {
+      var movedNode = event.target;
+      var neighbors = movedNode.neighborhood("node");
+      var secondNeighbors = neighbors.neighborhood("node").difference(neighbors).difference(movedNode);
+      var moved = movedNode.position();
+      var drag = movedNode.scratch("fpkiDrag") || { velocity: { x: 0, y: 0 } };
+      var previousMotion = movedNode.scratch("fpkiMotion");
+      var releaseAge = drag.lastTime ? window.performance.now() - drag.lastTime : 0;
+      var releaseStrength = Math.max(0, Math.min(1, 1 - releaseAge / 180));
+      var momentumX = Math.max(-32, Math.min(32, drag.velocity.x * 135 * releaseStrength));
+      var momentumY = Math.max(-32, Math.min(32, drag.velocity.y * 135 * releaseStrength));
+      var destination = { x: moved.x + momentumX, y: moved.y + momentumY };
+
+      movedNode.removeScratch("fpkiDrag");
+      movedNode.animate({ position: destination }, {
+        duration: 440,
+        easing: "ease-out",
+        complete: function () {
+          movedNode.scratch("fpkiMotion", {
+            base: { x: destination.x, y: destination.y },
+            phase: previousMotion ? previousMotion.phase : 0
+          });
+          neighbors.forEach(function (node, index) {
+            var current = node.position();
+            window.setTimeout(function () {
+              node.animate({
+                position: {
+                  x: current.x + momentumX * 0.28 + (destination.x - current.x) * 0.025,
+                  y: current.y + momentumY * 0.28 + (destination.y - current.y) * 0.025
+                },
+                duration: 500,
+                easing: "ease-out"
+              });
+            }, Math.min(index * 18, 120));
+          });
+          secondNeighbors.forEach(function (node, index) {
+            var current = node.position();
+            window.setTimeout(function () {
+              node.animate({
+                position: {
+                  x: current.x + momentumX * 0.1 + (destination.x - current.x) * 0.008,
+                  y: current.y + momentumY * 0.1 + (destination.y - current.y) * 0.008
+                },
+                duration: 620,
+                easing: "ease-out"
+              });
+            }, 80 + Math.min(index * 12, 180));
+          });
+          window.setTimeout(function () {
+            captureMotionPositions(modal);
+            startAmbientMotion(modal);
+          }, 900);
+        }
+      });
+      status.textContent = "Released " + movedNode.data("label") + "; momentum is easing it toward its new floating position.";
+    });
+
+    modal.fpkiGraph.one("layoutstop", function () {
+      startAmbientMotion(modal);
+    });
+
+    window.setTimeout(function () {
+      if (!modal.fpkiGraph || modal.fpkiGraph.destroyed()) return;
+      modal.fpkiGraph.resize();
+      fitHighlightedGraph(modal);
+    }, 150);
   }
 
   function updateResults(data, root, certificatesById) {
@@ -652,6 +1107,7 @@
     data.certificates.forEach(function (certificate) {
       certificatesById[certificate.id] = certificate;
     });
+    root.fpkiCertificatesById = certificatesById;
 
     root.innerHTML = [
       "<div class=\"usa-sr-only\" data-fpki-status role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></div>",
@@ -674,6 +1130,20 @@
     });
 
     root.addEventListener("click", function (event) {
+      var graphButton = event.target.closest("[data-fpki-certificate-graph-id]");
+      if (graphButton && root.contains(graphButton)) {
+        event.preventDefault();
+        var graphCertificate = certificatesById[graphButton.getAttribute("data-fpki-certificate-graph-id")];
+        var graphView = graphButton.closest(".fpki-hierarchy__node-summary").querySelector("[data-fpki-certificate-graph-view]");
+        if (graphCertificate) {
+          graphView.hidden = false;
+          graphButton.setAttribute("aria-expanded", "true");
+          graphView.fpkiLastOpener = graphButton;
+          renderCertificateGraph(graphCertificate, certificatesById, graphView);
+        }
+        return;
+      }
+
       var showAllButton = event.target.closest("[data-fpki-show-all]");
       if (showAllButton && root.contains(showAllButton)) {
         event.preventDefault();
@@ -889,5 +1359,151 @@
       .catch(function () {
         root.innerHTML = "<div class=\"usa-alert usa-alert--error\" role=\"alert\"><div class=\"usa-alert__body\"><h2 class=\"usa-alert__heading\">Certificate hierarchy unavailable</h2><p class=\"usa-alert__text\">Certificate hierarchy data could not be loaded. Reload the page to try again.</p></div></div>";
       });
+
+    document.addEventListener("click", function (event) {
+      var forceControl = event.target.closest("[data-fpki-graph-force-layout]");
+      var hierarchyControl = event.target.closest("[data-fpki-graph-hierarchy-layout]");
+      var fitControl = event.target.closest("[data-fpki-graph-fit]");
+      var resetControl = event.target.closest("[data-fpki-graph-reset]");
+      var motionControl = event.target.closest("[data-fpki-graph-motion]");
+      var fontDecrease = event.target.closest("[data-fpki-details-font-decrease]");
+      var fontIncrease = event.target.closest("[data-fpki-details-font-increase]");
+      var detailsCopy = event.target.closest("[data-fpki-details-copy]");
+      var detailsToggle = event.target.closest("[data-fpki-graph-details-toggle]");
+      var nodeNamesToggle = event.target.closest("[data-fpki-graph-node-names-toggle]");
+      var closeControl = event.target.closest("[data-fpki-graph-close]");
+      var graphModal = event.target.closest("[data-fpki-certificate-graph-view]");
+
+      if (forceControl && graphModal) {
+        runGraphLayout(graphModal, forceLayoutOptions(), "Force layout applied. Connected certificates gently influence one another.");
+        return;
+      }
+
+      if (hierarchyControl && graphModal) {
+        runGraphLayout(graphModal, hierarchyLayoutOptions(), "Hierarchy layout applied. Certificates remain freely draggable.");
+        return;
+      }
+
+      if (fitControl && graphModal && graphModal.fpkiGraph) {
+        var fitCertificateId = graphModal.getAttribute("data-fpki-initial-certificate-id");
+        var fitRoot = graphModal.closest("[data-fpki-certificate-hierarchy]");
+        var fitData = fitRoot && fitRoot.fpkiCertificatesById;
+        var fitCertificate = fitData && fitData[fitCertificateId];
+        if (fitCertificate) {
+          var fitElements = graphElements(fitCertificate, fitData);
+          var fitDetails = graphModal.querySelector("[data-fpki-certificate-graph-details]");
+          var fitHeading = graphModal.querySelector("[data-fpki-certificate-graph-heading]");
+          highlightGraphCertificate(graphModal, fitCertificate, fitData, false);
+          if (fitDetails) fitDetails.innerHTML = graphAccessibleDetails(fitCertificate, fitData, fitElements);
+          if (fitHeading) fitHeading.textContent = "Relationship graph: " + (fitCertificate.label || fitCertificate.subject || fitCertificate.id);
+          applyDetailsFontSize(graphModal);
+        }
+        fitHighlightedGraph(graphModal);
+        var graphStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (graphStatus) graphStatus.textContent = "Graph fitted to the initially selected certificate and its highlighted relationships.";
+        return;
+      }
+
+      if ((fontDecrease || fontIncrease) && graphModal) {
+        var change = fontIncrease ? 1 : -1;
+        graphModal.fpkiFontDelta = Math.max(0, Math.min(5, (graphModal.fpkiFontDelta || 0) + change));
+        applyDetailsFontSize(graphModal);
+        return;
+      }
+
+      if (detailsCopy && graphModal) {
+        var detailsPanel = detailsCopy.closest("[data-fpki-certificate-graph-details]");
+        var copyContent = detailsPanel.cloneNode(true);
+        copyContent.querySelectorAll("button, .fpki-certificate-graph-modal__font-controls, .usa-sr-only").forEach(function (element) {
+          element.remove();
+        });
+        var detailsText = copyContent.textContent.replace(/\s+/g, " ").trim();
+        var detailsPromise = navigator.clipboard && navigator.clipboard.writeText
+          ? navigator.clipboard.writeText(detailsText)
+          : Promise.reject(new Error("Clipboard API unavailable"));
+
+        detailsPromise.then(function () {
+          detailsPanel.classList.remove("fpki-certificate-graph-modal__details--copied");
+          void detailsPanel.offsetWidth;
+          detailsPanel.classList.add("fpki-certificate-graph-modal__details--copied");
+          var copyStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+          if (copyStatus) copyStatus.textContent = "Selected certificate graph details copied to clipboard.";
+          window.setTimeout(function () {
+            detailsPanel.classList.remove("fpki-certificate-graph-modal__details--copied");
+          }, 900);
+        }).catch(function () {
+          var copyStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+          if (copyStatus) copyStatus.textContent = "Could not copy selected certificate graph details.";
+        });
+        return;
+      }
+
+      if (detailsToggle && graphModal) {
+        var selectedDetails = graphModal.querySelector("[data-fpki-certificate-graph-details]");
+        var shouldShow = selectedDetails.hidden;
+        selectedDetails.hidden = !shouldShow;
+        detailsToggle.setAttribute("aria-expanded", shouldShow ? "true" : "false");
+        detailsToggle.toggleAttribute("data-details-hidden", !shouldShow);
+        var toggleStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (toggleStatus) toggleStatus.textContent = shouldShow
+          ? "Info Panel shown."
+          : "Info Panel hidden.";
+        return;
+      }
+
+      if (nodeNamesToggle && graphModal && graphModal.fpkiGraph) {
+        var shouldShowNodeNames = !graphModal.fpkiShowBackgroundNodeNames;
+        graphModal.fpkiShowBackgroundNodeNames = shouldShowNodeNames;
+        graphModal.fpkiGraph.nodes(".background").toggleClass("names-visible", shouldShowNodeNames);
+        nodeNamesToggle.setAttribute("aria-pressed", shouldShowNodeNames ? "true" : "false");
+        nodeNamesToggle.toggleAttribute("data-names-hidden", !shouldShowNodeNames);
+        var nodeNamesStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (nodeNamesStatus) nodeNamesStatus.textContent = shouldShowNodeNames
+          ? "Unfocused node names shown."
+          : "Unfocused node names hidden.";
+        return;
+      }
+
+      if (resetControl && graphModal) {
+        var initialCertificate = graphModal.getAttribute("data-fpki-initial-certificate-id");
+        var hierarchyRoot = graphModal.closest("[data-fpki-certificate-hierarchy]");
+        var hierarchyData = hierarchyRoot && hierarchyRoot.fpkiCertificatesById;
+        if (hierarchyData && hierarchyData[initialCertificate]) {
+          renderCertificateGraph(hierarchyData[initialCertificate], hierarchyData, graphModal);
+          var resetStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+          if (resetStatus) resetStatus.textContent = "Graph reset to the initially selected certificate.";
+        }
+        return;
+      }
+
+      if (motionControl && graphModal) {
+        graphModal.fpkiMotionPaused = !graphModal.fpkiMotionPaused;
+        motionControl.setAttribute("aria-pressed", graphModal.fpkiMotionPaused ? "false" : "true");
+        motionControl.textContent = graphModal.fpkiMotionPaused ? "Resume motion" : "Pause motion";
+        if (graphModal.fpkiMotionPaused) {
+          stopAmbientMotion(graphModal);
+        } else {
+          startAmbientMotion(graphModal);
+        }
+        var motionStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (motionStatus) motionStatus.textContent = graphModal.fpkiMotionPaused ? "Graph motion paused." : "Subtle graph motion resumed.";
+        return;
+      }
+
+      if (!closeControl || !graphModal) return;
+      var opener = graphModal.fpkiLastOpener;
+      stopAmbientMotion(graphModal);
+      if (graphModal.fpkiGraph) {
+        graphModal.fpkiGraph.destroy();
+        graphModal.fpkiGraph = null;
+      }
+      graphModal.hidden = true;
+      if (opener) opener.setAttribute("aria-expanded", "false");
+      if (opener) {
+        window.setTimeout(function () {
+          opener.focus();
+        }, 0);
+      }
+    });
   });
 }());
