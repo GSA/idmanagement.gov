@@ -643,3 +643,12 @@
   validation: Unified Door & Hardware Group AccessNsite 7.9.45 + HID 13.01
   valurl: /docs/apl-10198-hid-validation.pdf
   valapl: 10198
+
+- category: 13.01
+  fipsstatus: Approved
+  infrastructure: MDI SAFEnet 6.216
+  infraurl: /docs/apl-10199-mdi-safenet.pdf
+  infraapl: 10199
+  validation: Identity One Validation System for MDI SAFEnet 6.216
+  valurl: /docs/apl-10200-identity-one-validation.pdf
+  valapl: 10200
