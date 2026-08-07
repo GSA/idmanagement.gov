@@ -16,7 +16,7 @@
     "scss": "^0.2.4"
   },
   "devDependencies": {
-    "pa11y-ci": "^2.4.0",
+    "pa11y-ci": "^4.1.1",
     "rimraf": "^3.0.2"
   }
 }
