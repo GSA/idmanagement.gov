@@ -40,11 +40,12 @@
   state: Update
   teststatus: In-Progress
 
-- position: 2 
-  solution: Honeywell Pro-Watch 6.5.2 + HID pivCLASS 5.33
-  aplnumbers: 10063 & 10064
-  state: Update
-  teststatus: In-Progress
+# Removed on 07/31/2026 per Ben - cjb
+# - position: 2 
+#   solution: Honeywell Pro-Watch 6.5.2 + HID pivCLASS 5.33
+#   aplnumbers: 10063 & 10064
+#   state: Update
+#   teststatus: In-Progress
 
 # Removed on 05/14/2026, per Nick - cjb
 # - position: 3 
@@ -53,46 +54,45 @@
 #   state: New
 #   teststatus: In-Progress
 
-- position: 3 
+- position: 2 
   solution: Motorola - Avigilon
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 4 
+- position: 3 
   solution: Software House - CCURE pivClass
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 5 
+- position: 4 
   solution: Siemens Government Technologies - SiPass
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 6 
+- position: 5 
   solution: Galaxy Systems
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 7 
+- position: 6 
   solution: HIRSCH Secure (Formerly Identiv)
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 8 
-  solution: MDI Security Systems Inc.
-  aplnumbers: New
-  state: New
-  teststatus: In queue
+# Removed on 07/31/2026 per Ben - cjb
+# - position: 8 
+#   solution: MDI Security Systems Inc.
+#   aplnumbers: New
+#   state: New
+#   teststatus: In queue
 
-- position: 9 
+- position: 7 
   solution: Genetec
   aplnumbers: New
   state: New
   teststatus: In queue
-
-
