@@ -232,12 +232,12 @@
       "<div class=\"fpki-certificate-graph-modal__canvas\" data-fpki-certificate-graph aria-hidden=\"true\"></div>",
       "<aside class=\"fpki-certificate-graph-modal__details\" data-fpki-certificate-graph-details aria-label=\"Selected certificate graph details\"></aside>",
       "<div class=\"fpki-certificate-graph-modal__controls\" role=\"group\" aria-label=\"Graph layout controls\">",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-zoom-out><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"></circle><path d=\"M6.8 10.5h7.4M15.2 15.2 21 21\"></path></svg><span>Zoom out</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-zoom-out><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"></circle><path d=\"M6.8 10.5h7.4M15.2 15.2 21 21\"></path></svg><span>Zoom Out</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-fit><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5\"></path></svg><span>Fit View</span></button>",
       "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-hierarchy-layout><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"9\" y=\"2\" width=\"6\" height=\"5\" rx=\"1\"></rect><rect x=\"2\" y=\"17\" width=\"6\" height=\"5\" rx=\"1\"></rect><rect x=\"16\" y=\"17\" width=\"6\" height=\"5\" rx=\"1\"></rect><path d=\"M12 7v5M5 17v-5h14v5\"></path></svg><span>Hierarchy View</span></button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-fit><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5\"></path></svg><span>Fit view</span></button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-print><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3Zm-3 11H8v-5h8v5Zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1ZM18 3H6v4h12V3Z\"></path></svg><span>Print graph</span></button>",
       "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-reset><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 4v6h6M5.5 9A8 8 0 1 1 4 14\"></path></svg><span>Reset</span></button>",
-      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-motion aria-pressed=\"true\"><svg class=\"fpki-graph-motion__pause\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 5v14M16 5v14\"></path></svg><svg class=\"fpki-graph-motion__play\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m8 5 11 7-11 7Z\"></path></svg><span>Pause motion</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-print><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3Zm-3 11H8v-5h8v5Zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1ZM18 3H6v4h12V3Z\"></path></svg><span>Print graph</span></button>",
+      "<button type=\"button\" class=\"usa-button usa-button--outline\" data-fpki-graph-motion aria-pressed=\"true\"><svg class=\"fpki-graph-motion__pause\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M8 5v14M16 5v14\"></path></svg><svg class=\"fpki-graph-motion__play\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m8 5 11 7-11 7Z\"></path></svg><span>Pause Motion</span></button>",
       "</div>",
       "<div class=\"fpki-certificate-graph-view__view-toggles\" role=\"group\" aria-label=\"Graph display controls\">",
       "<button type=\"button\" class=\"fpki-certificate-graph-view__details-toggle\" data-fpki-graph-details-toggle aria-expanded=\"true\">",
@@ -249,6 +249,11 @@
       "<svg class=\"fpki-certificate-graph-view__eye-open\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
       "<svg class=\"fpki-certificate-graph-view__eye-closed\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9.9 5.3A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.7 13.7 0 0 1-2.2 2.9M6.6 6.6A14 14 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M2 2l20 20\"></path></svg>",
       "<span>Show Node Names</span>",
+      "</button>",
+      "<button type=\"button\" class=\"fpki-certificate-graph-view__details-toggle\" data-fpki-graph-background-nodes-toggle aria-pressed=\"true\">",
+      "<svg class=\"fpki-certificate-graph-view__eye-open\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg>",
+      "<svg class=\"fpki-certificate-graph-view__eye-closed\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M9.9 5.3A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a13.7 13.7 0 0 1-2.2 2.9M6.6 6.6A14 14 0 0 0 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M2 2l20 20\"></path></svg>",
+      "<span>Hide Nodes</span>",
       "</button>",
       "</div>",
       "</div>",
@@ -621,10 +626,14 @@
 
     modal.fpkiGraph.batch(function () {
       modal.fpkiGraph.elements().forEach(function (element) {
+        element.show();
         element.classes(classesById[element.id()] || "background");
       });
       if (modal.fpkiShowBackgroundNodeNames) {
         modal.fpkiGraph.nodes(".background").addClass("names-visible");
+      }
+      if (modal.fpkiShowBackgroundNodes === false) {
+        modal.fpkiGraph.nodes(".background").hide();
       }
     });
 
@@ -863,6 +872,8 @@
     printWindow.opener = null;
 
     var heading = graphView.querySelector("[data-fpki-certificate-graph-heading]");
+    var description = graphView.querySelector(".fpki-certificate-graph-view__description");
+    var legend = graphView.querySelector(".fpki-certificate-graph-modal__legend");
     var details = graphView.querySelector("[data-fpki-certificate-graph-details]");
     var title = heading ? heading.textContent : "FPKI Certificate Relationship Graph";
     var detailsHtml = "";
@@ -871,44 +882,55 @@
       detailsCopy.querySelectorAll("button, .fpki-certificate-graph-modal__font-controls, .usa-sr-only").forEach(function (element) {
         element.remove();
       });
-      detailsHtml = "<aside class=\"details\" aria-label=\"Selected certificate graph details\">" + detailsCopy.innerHTML + "</aside>";
+      detailsCopy.removeAttribute("data-fpki-dragging");
+      detailsHtml = detailsCopy.outerHTML;
     }
+
+    var stylesheetLinks = Array.prototype.slice.call(document.querySelectorAll("link[rel=\"stylesheet\"]")).map(function (link) {
+      return "<link rel=\"stylesheet\" href=\"" + escapeHtml(link.href) + "\">";
+    }).join("");
 
     var graphImage;
     try {
-      graphImage = graphView.fpkiGraph.png({ full: true, scale: 2, bg: "#f7f9fa" });
+      graphImage = graphView.fpkiGraph.png({ full: false, scale: 2, bg: "#f7f9fa" });
     } catch (error) {
       printWindow.close();
       return false;
     }
 
+    var printStarted = false;
+    function openPrintDialog() {
+      if (printStarted) return;
+      printStarted = true;
+      printWindow.focus();
+      window.setTimeout(function () { printWindow.print(); }, 150);
+    }
+
+    printWindow.addEventListener("load", openPrintDialog, { once: true });
     printWindow.document.open();
     printWindow.document.write([
       "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">",
       "<title>" + escapeHtml(title) + "</title>",
+      stylesheetLinks,
       "<style>",
-      "@page{size:landscape;margin:.4in}*{box-sizing:border-box}body{font-family:Arial,sans-serif;color:#1b1b1b;margin:0}",
-      "body{background:#fff;padding:12px}h1{font-size:18pt;margin:0 0 5px}.description{color:#565c65;font-size:10pt;margin:0 0 8px}",
-      ".viewer{border:1px solid #a9aeb1;border-radius:4px;padding:10px}.stage{background:#f7f9fa;border:1px solid #a9aeb1;position:relative}.graph{display:block;height:6.1in;object-fit:contain;width:100%}",
-      ".legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:9pt;margin:7px 0 10px}.legend span{align-items:center;display:inline-flex;gap:5px}",
-      ".key{border:2px solid #162e51;border-radius:50%;display:inline-block;height:12px;width:12px}.selected{background:#005ea2;border-width:3px}.issuer{background:#1a4480}.issued{background:#97d4ea;border-color:#005ea2}.root{background:#8168b3;border:3px double #4c2c92}.other{background:#c9c9c9;border-color:#a9aeb1}",
-      ".details{background:rgba(255,255,255,.88);border:1px solid rgba(86,92,101,.65);border-radius:4px;box-shadow:0 3px 8px rgba(27,27,27,.18);font-size:9pt;max-height:calc(100% - 20px);overflow:hidden;padding:8px;position:absolute;right:10px;top:10px;width:250px}.details h3,.details h4{color:#565c65;margin:0 0 5px}.details p,.details ul{margin:3px 0}",
-      "</style></head><body>",
-      "<h1>" + escapeHtml(title) + "</h1>",
-      "<p class=\"description\">The complete FPKI graph with the current certificate relationships highlighted.</p><div class=\"viewer\">",
-      "<div class=\"legend\" aria-label=\"Graph legend\"><span><i class=\"key selected\"></i>Selected</span><span><i class=\"key issuer\"></i>Issuer path</span><span><i class=\"key issued\"></i>Issued certificate</span><span><i class=\"key root\"></i>COMMON root</span><span><i class=\"key other\"></i>Other certificate</span></div>",
-      "<div class=\"stage\"><img class=\"graph\" alt=\"FPKI certificate relationship graph\" src=\"" + graphImage + "\">" + detailsHtml + "</div></div>",
-      "</body></html>"
+      "@page{size:landscape;margin:.4in}",
+      "html,body{background:#fff;margin:0}",
+      "body{padding:.15in}",
+      ".fpki-certificate-graph-view{margin:0}",
+      ".fpki-certificate-graph-view__close,.fpki-certificate-graph-modal__controls,.fpki-certificate-graph-view__view-toggles{display:none!important}",
+      ".fpki-certificate-graph-view__stage{break-inside:avoid;page-break-inside:avoid}",
+      ".fpki-certificate-graph-modal__canvas--print{display:block;object-fit:contain}",
+      "</style></head><body><main class=\"fpki-graph-wide\">",
+      "<section class=\"fpki-certificate-graph-view\">",
+      heading ? heading.outerHTML : "<h1 class=\"fpki-certificate-graph-view__heading\">" + escapeHtml(title) + "</h1>",
+      description ? description.outerHTML : "<p class=\"fpki-certificate-graph-view__description\">The complete FPKI graph with the current certificate relationships highlighted.</p>",
+      legend ? legend.outerHTML : "",
+      "<div class=\"fpki-certificate-graph-view__stage\"><img class=\"fpki-certificate-graph-modal__canvas fpki-certificate-graph-modal__canvas--print\" alt=\"FPKI certificate relationship graph\" src=\"" + graphImage + "\">" + detailsHtml + "</div>",
+      "</section></main></body></html>"
     ].join(""));
     printWindow.document.close();
 
-    var image = printWindow.document.querySelector(".graph");
-    function openPrintDialog() {
-      printWindow.focus();
-      window.setTimeout(function () { printWindow.print(); }, 150);
-    }
-    if (image && !image.complete) image.addEventListener("load", openPrintDialog, { once: true });
-    else openPrintDialog();
+    if (printWindow.document.readyState === "complete") openPrintDialog();
     return true;
   }
 
@@ -931,19 +953,28 @@
     var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var motionControl = modal.querySelector("[data-fpki-graph-motion]");
     var nodeNamesControl = modal.querySelector("[data-fpki-graph-node-names-toggle]");
+    var backgroundNodesControl = modal.querySelector("[data-fpki-graph-background-nodes-toggle]");
     modal.fpkiMotionPaused = Boolean(reducedMotion);
     modal.fpkiShowBackgroundNodeNames = false;
+    modal.fpkiShowBackgroundNodes = true;
     if (nodeNamesControl) {
       nodeNamesControl.setAttribute("aria-pressed", "false");
       nodeNamesControl.setAttribute("data-names-hidden", "");
       var nodeNamesControlLabel = nodeNamesControl.querySelector("span");
       if (nodeNamesControlLabel) nodeNamesControlLabel.textContent = "Show Node Names";
     }
+    if (backgroundNodesControl) {
+      backgroundNodesControl.disabled = false;
+      backgroundNodesControl.setAttribute("aria-pressed", "true");
+      backgroundNodesControl.removeAttribute("data-nodes-hidden");
+      var backgroundNodesControlLabel = backgroundNodesControl.querySelector("span");
+      if (backgroundNodesControlLabel) backgroundNodesControlLabel.textContent = "Hide Nodes";
+    }
     if (motionControl) {
       motionControl.disabled = Boolean(reducedMotion);
       motionControl.setAttribute("aria-pressed", reducedMotion ? "false" : "true");
       var motionControlLabel = motionControl.querySelector("span");
-      if (motionControlLabel) motionControlLabel.textContent = reducedMotion ? "Motion reduced" : "Pause motion";
+      if (motionControlLabel) motionControlLabel.textContent = reducedMotion ? "Motion reduced" : "Pause Motion";
     }
     modal.fpkiGraph = window.cytoscape({
       container: container,
@@ -960,7 +991,7 @@
         { selector: "node.root", style: { "background-color": "#8168b3", "border-color": "#4c2c92", "border-width": 5 } },
         { selector: "node.selected", style: { "background-color": "#005ea2", "border-color": "#162e51", "border-width": 5, "color": "#fff", "height": 48, "text-background-color": "#005ea2", "width": 48 } },
         { selector: "edge", style: { "curve-style": "bezier", "line-color": "#565c65", "target-arrow-color": "#565c65", "target-arrow-shape": "triangle", "width": 2 } },
-        { selector: "edge.background", style: { "line-color": "#c9c9c9", "opacity": 0.22, "target-arrow-color": "#c9c9c9", "target-arrow-shape": "none", "width": 0.8 } },
+        { selector: "edge.background", style: { "line-color": "#898e91", "opacity": 1, "target-arrow-color": "#898e91", "target-arrow-shape": "none", "width": 0.8 } },
         { selector: "edge.context", style: { "line-color": "#005ea2", "opacity": 0.95, "target-arrow-color": "#005ea2", "width": 3 } },
         { selector: "node:active", style: { "overlay-color": "#ffbe2e", "overlay-opacity": 0.25, "overlay-padding": 8 } }
       ]
@@ -1031,15 +1062,26 @@
             base: { x: destination.x, y: destination.y },
             phase: previousMotion ? previousMotion.phase : 0
           });
-          neighbors.forEach(function (node, index) {
-            var current = node.position();
+          var gatheredNeighbors = neighbors.toArray().sort(function (left, right) {
+            var leftPosition = left.position();
+            var rightPosition = right.position();
+            return Math.atan2(leftPosition.y - destination.y, leftPosition.x - destination.x)
+              - Math.atan2(rightPosition.y - destination.y, rightPosition.x - destination.x);
+          });
+          var gatherRadius = Math.min(135, 78 + gatheredNeighbors.length * 4);
+          var gatherStartAngle = gatheredNeighbors.length
+            ? Math.atan2(gatheredNeighbors[0].position("y") - destination.y, gatheredNeighbors[0].position("x") - destination.x)
+            : 0;
+
+          gatheredNeighbors.forEach(function (node, index) {
+            var angle = gatherStartAngle + (Math.PI * 2 * index / Math.max(gatheredNeighbors.length, 1));
             window.setTimeout(function () {
               node.animate({
                 position: {
-                  x: current.x + momentumX * 0.28 + (destination.x - current.x) * 0.025,
-                  y: current.y + momentumY * 0.28 + (destination.y - current.y) * 0.025
+                  x: destination.x + Math.cos(angle) * gatherRadius,
+                  y: destination.y + Math.sin(angle) * gatherRadius
                 },
-                duration: 500,
+                duration: 620,
                 easing: "ease-out"
               });
             }, Math.min(index * 18, 120));
@@ -1063,7 +1105,7 @@
           }, 900);
         }
       });
-      status.textContent = "Released " + movedNode.data("label") + "; momentum is easing it toward its new floating position.";
+      status.textContent = "Released " + movedNode.data("label") + "; connected nodes are regrouping around its new position.";
     });
 
     modal.fpkiGraph.one("layoutstop", function () {
@@ -1147,6 +1189,17 @@
     syncAccordionHeadingState(button);
   }
 
+  function syncIssuerPathDisabledStates(group) {
+    if (!group || !group.id) return;
+
+    var expandAll = document.querySelector("[data-fpki-expand-issuer-path=\"" + group.id + "\"]");
+    var caOnly = document.querySelector("[data-fpki-expand-issuer-cas=\"" + group.id + "\"]");
+    if (!expandAll || !caOnly) return;
+
+    caOnly.disabled = expandAll.checked;
+    expandAll.disabled = caOnly.checked;
+  }
+
   function syncIssuerPathControl(group) {
     if (!group || !group.id) return;
 
@@ -1165,6 +1218,7 @@
       "aria-label",
       control.getAttribute("aria-label").replace(/^(Expand|Collapse) all/, anyExpanded ? "Collapse all" : "Expand all")
     );
+    syncIssuerPathDisabledStates(group);
   }
 
   function syncIssuerPathControls(container) {
@@ -1504,6 +1558,7 @@
       var detailsClose = event.target.closest("[data-fpki-details-close]");
       var detailsToggle = event.target.closest("[data-fpki-graph-details-toggle]");
       var nodeNamesToggle = event.target.closest("[data-fpki-graph-node-names-toggle]");
+      var backgroundNodesToggle = event.target.closest("[data-fpki-graph-background-nodes-toggle]");
       var closeControl = event.target.closest("[data-fpki-graph-close]");
       var graphModal = event.target.closest("[data-fpki-certificate-graph-view]");
 
@@ -1609,10 +1664,40 @@
         nodeNamesToggle.toggleAttribute("data-names-hidden", !shouldShowNodeNames);
         var nodeNamesLabel = nodeNamesToggle.querySelector("span");
         if (nodeNamesLabel) nodeNamesLabel.textContent = shouldShowNodeNames ? "Hide Node Names" : "Show Node Names";
+        var backgroundNodesButton = graphModal.querySelector("[data-fpki-graph-background-nodes-toggle]");
+        if (shouldShowNodeNames) {
+          graphModal.fpkiShowBackgroundNodes = true;
+          graphModal.fpkiGraph.nodes(".background").show();
+        }
+        if (backgroundNodesButton) {
+          backgroundNodesButton.disabled = shouldShowNodeNames;
+          if (shouldShowNodeNames) {
+            backgroundNodesButton.setAttribute("aria-pressed", "true");
+            backgroundNodesButton.removeAttribute("data-nodes-hidden");
+            var backgroundNodesButtonLabel = backgroundNodesButton.querySelector("span");
+            if (backgroundNodesButtonLabel) backgroundNodesButtonLabel.textContent = "Hide Nodes";
+          }
+        }
         var nodeNamesStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
         if (nodeNamesStatus) nodeNamesStatus.textContent = shouldShowNodeNames
           ? "Unfocused node names shown."
           : "Unfocused node names hidden.";
+        return;
+      }
+
+      if (backgroundNodesToggle && graphModal && graphModal.fpkiGraph && !backgroundNodesToggle.disabled) {
+        var shouldShowBackgroundNodes = !graphModal.fpkiShowBackgroundNodes;
+        graphModal.fpkiShowBackgroundNodes = shouldShowBackgroundNodes;
+        if (shouldShowBackgroundNodes) graphModal.fpkiGraph.nodes(".background").show();
+        else graphModal.fpkiGraph.nodes(".background").hide();
+        backgroundNodesToggle.setAttribute("aria-pressed", shouldShowBackgroundNodes ? "true" : "false");
+        backgroundNodesToggle.toggleAttribute("data-nodes-hidden", !shouldShowBackgroundNodes);
+        var backgroundNodesLabel = backgroundNodesToggle.querySelector("span");
+        if (backgroundNodesLabel) backgroundNodesLabel.textContent = shouldShowBackgroundNodes ? "Hide Nodes" : "Show Nodes";
+        var backgroundNodesStatus = graphModal.querySelector("[data-fpki-certificate-graph-status]");
+        if (backgroundNodesStatus) backgroundNodesStatus.textContent = shouldShowBackgroundNodes
+          ? "Background nodes shown."
+          : "Background nodes hidden.";
         return;
       }
 
@@ -1632,7 +1717,7 @@
         graphModal.fpkiMotionPaused = !graphModal.fpkiMotionPaused;
         motionControl.setAttribute("aria-pressed", graphModal.fpkiMotionPaused ? "false" : "true");
         var motionLabel = motionControl.querySelector("span");
-        if (motionLabel) motionLabel.textContent = graphModal.fpkiMotionPaused ? "Resume motion" : "Pause motion";
+        if (motionLabel) motionLabel.textContent = graphModal.fpkiMotionPaused ? "Resume Motion" : "Pause Motion";
         if (graphModal.fpkiMotionPaused) {
           stopAmbientMotion(graphModal);
         } else {
