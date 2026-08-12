@@ -43,8 +43,6 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Document Center
-    url: /doccenter/
   - name: FICAM
     children:
       - name: FICAM Architecture
@@ -129,6 +127,8 @@ primary_navigation:
         url: /university/pm/
       - name: ICAM Policy Matrix
         url: /university/policymatrix/
+      - name: Document Center
+        url: /doccenter/
   - name: Experiments
     children:
       - name: Experiments
