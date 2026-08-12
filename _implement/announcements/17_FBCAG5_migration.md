@@ -47,17 +47,20 @@ Additionally, this will also impact Bridge Affiliate organizations that validate
 ## How do Relying Parties Prepare for the FBCA G5 Migration?
 Relying party applications can ensure continuity of operations with FBCA partner credentials by updating their relevant trust stores to include the FBCA G5 certificate issued from the FCPCAG2 and any other FBCA G5 issued affiliate CA cross-certificates.
 
-Our [Enterprise Trust in the FCPCAG2 Implementation Guide] is undergoing updates to ensure the appropriate FBCA G5 CA certificate is listed and accounted for; however, the actual certificate will not be available for download until August 27th at the earliest, and the FPKI crawler/graph will not reflect the new CAs until September 1st.  This linked implementation guide already includes instructions on how to deploy CA updates to your enterprise Trust Stores to leverage automation to ensure user devices are also updated.
+Our [Enterprise Trust in the FCPCAG2 Implementation Guide](https://www.idmanagement.gov/implement/trust-fcpca/#step-5---distribute-intermediate-certificates){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is undergoing updates to ensure the appropriate FBCA G5 CA certificate is listed and accounted for; however, the actual certificate will not be available for download until August 27th at the earliest, and the FPKI crawler/graph will not reflect the new CAs until September 1st.  This linked implementation guide already includes instructions on how to deploy CA updates to your enterprise Trust Stores to leverage automation to ensure user devices are also updated.
 
-Starting on September 7th, relying parties will be able to download all of the newly issued FBCA G5 and affiliate CA cross-certificates from the [FPKI consolidated p7b] CA certificate bundle.
+Starting on September 7th, relying parties will be able to download all of the newly issued FBCA G5 and affiliate CA cross-certificates from the [FPKI consolidated p7b](https://www.idmanagement.gov/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} CA certificate bundle.
 
 ## Helpful Tips
 Revocation dates with affiliates have been planned to mitigate most customer relying party impacts by allowing the FBCA G4 chains to be valid for some period for trust store updates after reissuances are completed.
-It is recommended that relying parties populate their untrusted CA stores with the FBCA G4 certificate after installing the new FBCA G5 and the new reissued affiliate cross-certificates.  
+
+It is recommended that relying parties populate their untrusted CA stores with the FBCA G4 certificate after installing the new FBCA G5 and the new reissued affiliate cross-certificates. 
+
 It is also recommended that Federal relying parties populate any return cross-certificates (e.g., FBCA G5 → FCPCA G2) to their untrusted CA store.  This should prevent unintended path building.
+
 Concurrent to the FBCA G5 migration, DoD will also be undergoing a migration to a new DoD Interoperability Root CA 3 (IRCA3), which will be replacing the current DoD IRCA2.
-Relying parties that validate DoD CAC up through Common may also need to replace other cross-certificates issued by DoD IRCA2 currently.  The expected IRCA3 SIA is as follows (these will be included in the FPKI consolidated p7b):
- http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c 
+- Relying parties that validate DoD CAC up through Common may also need to replace other cross-certificates issued by DoD IRCA2 currently.
+- The expected IRCA3 SIA is as follows (these will be included in the FPKI consolidated p7b): http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c 
 
 ## Additional Resources
 FPKI plans to generate direct communications to known relying parties (e.g., login.gov, Treasury Fiscal Services, etc.) on this migration to reduce potential impacts to interoperability.
