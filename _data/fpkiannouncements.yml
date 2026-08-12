@@ -11,6 +11,12 @@
 # - status: [string] - (Active)
 
 
+- title: FBCA G5 Migration Plan
+  pubDate: August 12, 2026
+  url: /implement/announcements/FBCAG5/
+  description: The FBCA G5 migration plan, this will impact relying party trust store configurations.
+  status: Active
+
 - title: CCT Tool v1.0.9 Release
   pubDate: October 16, 2024
   url: /implement/announcements/cct-tool-new-release/
