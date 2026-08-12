@@ -29,16 +29,12 @@ The following diagram shows that there will be two parallel trust paths during P
 graphic 1
 
 3. Phase 3 (TBD, but expected within 90 days of phase 2 completion) Revocation of old Affiliate Cross-Certificates - 
-the FBCA G4 will begin revoking affiliate cross-certificates on dates requested by each affiliate.  For systems that conduct revocation checking, this will ensure that older certificate path building will no longer be able to be conducted through the FBCA G4.
-
-The following diagram shows the planned FBCA G4 revocation and the revocation of its issued cross-certificates.  This will ensure path building is only conducted through the new FBCA G5.
+the FBCA G4 will begin revoking affiliate cross-certificates on dates requested by each affiliate.  For systems that conduct revocation checking, this will ensure that older certificate path building will no longer be able to be conducted through the FBCA G4. The following diagram shows the planned FBCA G4 revocation and the revocation of its issued cross-certificates.  This will ensure path building is only conducted through the new FBCA G5.
 
 graphic 2
 
 4. Phase 4 (TBD, but expected by the end of November 2026) FBCA G4 final long term CRL publication and revocation by FCPCA G2 - 
-once the final affiliate cross-certificate has been revoked, the FBCA G4 will revoke its return cross-certificate to the FCPCA G2 and issue a final FBCA G4 signed long-term CRL valid through its natural expiration date of December 6, 2029. This final FBCA G4 CRL will be available at its CRL DP.  Additionally the FCPCA G2 will revoke the FBCA G4 certificate.
-
-The following diagram shows the a sample trust path as it currently exists for USPTO through the FBCA G4 and the updates to CA certificates post-migration:
+once the final affiliate cross-certificate has been revoked, the FBCA G4 will revoke its return cross-certificate to the FCPCA G2 and issue a final FBCA G4 signed long-term CRL valid through its natural expiration date of December 6, 2029. This final FBCA G4 CRL will be available at its CRL DP.  Additionally the FCPCA G2 will revoke the FBCA G4 certificate. The following diagram shows the a sample trust path as it currently exists for USPTO through the FBCA G4 and the updates to CA certificates post-migration:
 
 graphic 3
 
