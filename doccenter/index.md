@@ -6,7 +6,7 @@ extra_stylesheet: /assets/css/document-center.css
 extra_script: /assets/js/document-center.js
 ---
 
-<main id="main-content" class="dc-page" data-document-center data-index-url="{{ site.baseurl }}/assets/data/document-center.json">
+<main id="main-content" class="dc-page" data-document-center data-base-url="{{ site.baseurl }}" data-index-url="{{ site.baseurl }}/assets/data/document-center.json">
   <div class="grid-container">
     <h1 id="dc-heading">Document Center</h1>
     <p class="usa-intro">Find and download IDManagement.gov documents by file type.</p>

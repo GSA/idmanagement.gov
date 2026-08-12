@@ -21,6 +21,7 @@
   var modalBody = document.querySelector("[data-modal-body]");
   var modalOpener = document.querySelector("#dc-modal-opener");
   var modalWrapper = document.querySelector("#dc-document-modal");
+  var baseUrl = root.getAttribute("data-base-url").replace(/\/$/, "");
 
   function escapeHtml(value) {
     return String(value == null ? "" : value).replace(/[&<>"]/g, function (character) {
@@ -49,6 +50,10 @@
     return document.signature ? document.signature.label : "Not applicable";
   }
 
+  function documentUrl(document) {
+    return baseUrl + "/" + document.path.replace(/^\//, "");
+  }
+
   function metadata(document) {
     return '<dl>' +
       '<dt>File type</dt><dd>' + escapeHtml(document.type_label) + '</dd>' +
@@ -70,13 +75,13 @@
 
   function actions(document) {
     var label = document.filename + " (" + document.type_label + ", " + formatSize(document.size_bytes) + ")";
-    return '<div class="dc-downloads"><a class="usa-button" href="' + escapeHtml(document.path) + '" download aria-label="Download ' + escapeHtml(label) + '">Download</a></div>';
+    return '<div class="dc-downloads"><a class="usa-button" href="' + escapeHtml(documentUrl(document)) + '" download aria-label="Download ' + escapeHtml(label) + '">Download</a></div>';
   }
 
   function showInModal(document) {
     modalHeading.textContent = document.filename;
     if (document.type === "pdf") {
-      modalBody.innerHTML = '<iframe class="dc-document-frame" src="' + escapeHtml(document.path) + '" title="Preview of ' + escapeHtml(document.filename) + '"></iframe>' + actions(document);
+      modalBody.innerHTML = '<iframe class="dc-document-frame" src="' + escapeHtml(documentUrl(document)) + '" title="Preview of ' + escapeHtml(document.filename) + '"></iframe>' + actions(document);
     } else {
       modalBody.innerHTML = '<div class="dc-modal-notice"><p>A browser preview is not available for this ' + escapeHtml(document.type_label) + ' document. Download it to open it in its associated application.</p>' + actions(document) + '</div>';
     }

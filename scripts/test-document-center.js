@@ -100,9 +100,11 @@ const puppeteer = require("puppeteer");
     await page.waitForSelector("#dc-document-modal.is-visible");
     const modalState = await page.evaluate(() => ({
       title: document.querySelector("#dc-modal-heading").textContent.trim(),
-      hasFrame: Boolean(document.querySelector(".dc-document-frame"))
+      hasFrame: Boolean(document.querySelector(".dc-document-frame")),
+      previewPath: new URL(document.querySelector(".dc-document-frame").src).pathname,
+      downloadPath: new URL(document.querySelector("[data-modal-body] .dc-downloads a").href).pathname
     }));
-    if (!modalState.title || !modalState.hasFrame) throw new Error(`PDF modal did not initialize: ${JSON.stringify(modalState)}`);
+    if (!modalState.title || !modalState.hasFrame || !modalState.previewPath.startsWith("/docs/") || modalState.downloadPath !== modalState.previewPath) throw new Error(`PDF modal did not initialize: ${JSON.stringify(modalState)}`);
 
     await page.screenshot({ path: "/tmp/document-center-modal.png", fullPage: false });
     await page.$eval("[data-close-modal]", (element) => element.click());
