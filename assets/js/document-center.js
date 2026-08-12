@@ -13,6 +13,7 @@
   var selectedId = null;
   var selectedCategories = [];
   var selectedAdditionalScopes = [];
+  var searchQuery = "";
   var panels = root.querySelector("[data-panels]");
   var status = root.querySelector(".dc-status");
   var details = root.querySelector("[data-details]");
@@ -122,9 +123,8 @@
   }
 
   function matchesSearch(document) {
-    var query = root.querySelector("#dc-search").value.trim().toLowerCase();
-    if (!query) return true;
-    return [document.filename, document.author, document.version, document.relative_path].join(" ").toLowerCase().indexOf(query) !== -1;
+    if (!searchQuery) return true;
+    return [document.filename, document.author, document.version, document.relative_path].join(" ").toLowerCase().indexOf(searchQuery) !== -1;
   }
 
   function filteredDocuments() {
@@ -157,9 +157,8 @@
       return '<tr data-document-id="' + escapeHtml(document.id) + '" tabindex="0"' + selectedClass + '><td class="dc-filename-cell"><button type="button" class="dc-filename" aria-controls="dc-document-modal" aria-haspopup="dialog">' + escapeHtml(document.filename) + '</button>' + scopeMarker + '</td>' +
         '<td class="dc-optional">' + escapeHtml(display(document.author)) + '</td><td class="dc-optional dc-date">' + escapeHtml(formatDate(document.created)) + '</td><td>' + ageStatus(document) + '</td></tr>';
     }).join("");
-    var panelType = activeType || "all";
     var panelLabel = activeType ? labels[activeType] + " documents" : "All documents";
-    panels.innerHTML = '<div id="dc-panel-' + panelType + '" role="tabpanel"' + (activeType ? ' aria-labelledby="dc-tab-' + activeType + '"' : '') + ' class="dc-table-wrap"><table class="dc-table"><caption class="usa-sr-only">' + panelLabel + '</caption><thead><tr>' +
+    panels.innerHTML = '<div class="dc-table-wrap"><table class="dc-table"><caption class="usa-sr-only">' + panelLabel + '</caption><thead><tr>' +
       '<th><button class="dc-sort" data-sort="filename">File Name</button></th><th class="dc-optional"><button class="dc-sort" data-sort="author">Author</button></th><th class="dc-optional"><button class="dc-sort" data-sort="created">Created</button></th><th>3+ years</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
     selectDocument(selected);
   }
@@ -172,8 +171,7 @@
       root.querySelectorAll("[data-type]").forEach(function (button) {
         var selected = button.getAttribute("data-type") === activeType;
         button.classList.toggle("is-active", selected);
-        button.setAttribute("aria-selected", selected ? "true" : "false");
-        button.setAttribute("tabindex", selected || !activeType ? "0" : "-1");
+        button.setAttribute("aria-pressed", selected ? "true" : "false");
       });
       render();
       return;
@@ -245,7 +243,11 @@
     buttons[next].click();
   });
 
-  root.querySelector("#dc-search").addEventListener("input", function () { updateTypeCounts(); render(); });
+  root.querySelector("#dc-search").addEventListener("input", function (event) {
+    searchQuery = event.target.value.trim().toLowerCase();
+    updateTypeCounts();
+    render();
+  });
   function restoreSelectedFocus() {
     var selectedFilename = root.querySelector(".dc-table tbody tr.is-selected .dc-filename");
     if (selectedFilename) window.setTimeout(function () { selectedFilename.focus(); }, 50);
@@ -263,7 +265,6 @@
     .then(function (payload) {
       documents = payload.documents;
       updateTypeCounts();
-      root.querySelectorAll("[data-type]").forEach(function (button, index) { button.setAttribute("tabindex", index ? "-1" : "0"); });
       render();
     })
     .catch(function () { status.textContent = "The document index could not be loaded. Please try again later."; });

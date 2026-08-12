@@ -13,13 +13,21 @@ extra_script: /assets/js/document-center.js
 
     <div class="grid-row grid-gap flex-align-start">
       <section class="tablet:grid-col-8" aria-labelledby="dc-heading">
-        <div class="dc-type-cards" role="tablist" aria-label="Document file types">
+        <div class="dc-controls">
+          <div class="dc-search-control">
+            <label class="usa-label dc-control-heading" for="dc-search">Search documents</label>
+            <div class="dc-search-input-frame">
+              <input class="usa-input" id="dc-search" type="search" autocomplete="off" placeholder="Search file names and metadata">
+            </div>
+          </div>
+        </div>
+
+        <div class="dc-type-cards" role="group" aria-label="Filter by document file type">
           {% assign dc_types = "pdf:PDF:file-pdf.svg,docx:Word:file-word.svg,xlsx:Excel:file-excel.svg,pptx:PowerPoint:file.svg" | split: "," %}
           {% for item in dc_types %}
             {% assign parts = item | split: ":" %}
-            <button class="dc-type-card{% if forloop.first %} is-active{% endif %}" type="button" role="tab"
-              id="dc-tab-{{ parts[0] }}" aria-controls="dc-panel-{{ parts[0] }}"
-              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" data-type="{{ parts[0] }}">
+            <button class="dc-type-card{% if forloop.first %} is-active{% endif %}" type="button"
+              aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" data-type="{{ parts[0] }}">
               <img src="{{ site.baseurl }}/assets/img/{{ parts[2] }}" alt="" width="36" height="48">
               <span>{{ parts[1] }}</span>
               <span class="dc-type-count" data-count-for="{{ parts[0] }}">—</span>
@@ -47,15 +55,6 @@ extra_script: /assets/js/document-center.js
           </div>
           <p class="dc-filter-help">Select one or more filters. Select an active filter again to remove it.</p>
         </section>
-
-        <div class="dc-controls">
-          <div class="dc-search-control">
-            <label class="usa-label dc-control-heading" for="dc-search">Search documents</label>
-            <div class="dc-search-input-frame">
-              <input class="usa-input" id="dc-search" type="search" autocomplete="off" placeholder="Search file names and metadata">
-            </div>
-          </div>
-        </div>
 
         <p class="dc-status" role="status" aria-live="polite">Loading documents…</p>
         <div data-panels></div>

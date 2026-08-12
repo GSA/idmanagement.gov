@@ -19,20 +19,43 @@ const puppeteer = require("puppeteer");
       modifiedHeader: Array.from(document.querySelectorAll("th")).some((cell) => cell.textContent.trim() === "Modified"),
       openButtons: Array.from(document.querySelectorAll(".dc-table a, .dc-table button")).filter((element) => element.textContent.trim() === "Open").length,
       selectedRows: document.querySelectorAll(".dc-table tbody tr.is-selected").length,
+      detailsAlignedWithSearch: (() => {
+        const search = document.querySelector(".dc-controls").getBoundingClientRect();
+        const details = document.querySelector(".dc-details").getBoundingClientRect();
+        return Math.abs(search.top - details.top) <= 1;
+      })(),
+      controlOrder: Array.from(document.querySelector(".tablet\\:grid-col-8").children)
+        .filter((element) => element.matches(".dc-controls, .dc-type-cards, .dc-category-filters"))
+        .map((element) => element.classList.contains("dc-controls") ? "search" : element.classList.contains("dc-type-cards") ? "file-types" : "filters"),
       searchContained: (() => {
         const input = document.querySelector("#dc-search").getBoundingClientRect();
         const container = document.querySelector(".dc-search-control").getBoundingClientRect();
         return input.left >= container.left && input.right <= container.right && input.top >= container.top && input.bottom <= container.bottom;
       })()
     }));
-    if (initial.versionHeader || initial.downloadHeader || initial.modifiedHeader || initial.openButtons || initial.selectedRows !== 1 || !initial.searchContained) throw new Error(`Unexpected initial state: ${JSON.stringify(initial)}`);
+    if (initial.versionHeader || initial.downloadHeader || initial.modifiedHeader || initial.openButtons || initial.selectedRows !== 1 || !initial.detailsAlignedWithSearch || !initial.searchContained || initial.controlOrder.join(",") !== "search,file-types,filters") throw new Error(`Unexpected initial state: ${JSON.stringify(initial)}`);
 
+    for (const type of ["pdf", "docx", "xlsx", "pptx"]) {
+      await page.$eval(`[data-type='${type}']`, (element) => {
+        if (element.getAttribute("aria-pressed") !== "true") element.click();
+      });
+      const typeFilter = await page.evaluate(() => ({
+        selectedTypeButtons: document.querySelectorAll("[data-type][aria-pressed='true']").length,
+        selectedType: document.querySelector("[data-type][aria-pressed='true']")?.getAttribute("data-type"),
+        visibleTypes: Array.from(new Set(Array.from(document.querySelectorAll(".dc-table tbody tr .dc-filename")).map((element) => element.textContent.split(".").pop().toLowerCase()))),
+        rows: document.querySelectorAll(".dc-table tbody tr").length
+      }));
+      if (typeFilter.selectedTypeButtons !== 1 || typeFilter.selectedType !== type || typeFilter.rows < 1 || typeFilter.visibleTypes.length !== 1 || typeFilter.visibleTypes[0] !== type) {
+        throw new Error(`File type filter failed for ${type}: ${JSON.stringify(typeFilter)}`);
+      }
+    }
     await page.$eval("[data-type='pdf']", (element) => element.click());
-    const unfilteredTypes = await page.evaluate(() => ({
-      selectedTypeButtons: document.querySelectorAll("[data-type][aria-selected='true']").length,
-      visibleTypes: new Set(Array.from(document.querySelectorAll(".dc-table tbody tr")).map((row) => row.querySelector(".dc-filename").textContent.split(".").pop().toLowerCase())).size
+    await page.$eval("[data-type='pdf']", (element) => element.click());
+    const unselectedType = await page.evaluate(() => ({
+      selectedTypeButtons: document.querySelectorAll("[data-type][aria-pressed='true']").length,
+      visibleTypes: new Set(Array.from(document.querySelectorAll(".dc-table tbody tr .dc-filename")).map((element) => element.textContent.split(".").pop().toLowerCase())).size
     }));
-    if (unfilteredTypes.selectedTypeButtons !== 0 || unfilteredTypes.visibleTypes < 2) throw new Error(`Type filter did not clear: ${JSON.stringify(unfilteredTypes)}`);
+    if (unselectedType.selectedTypeButtons !== 0 || unselectedType.visibleTypes < 2) throw new Error(`File type filter did not clear: ${JSON.stringify(unselectedType)}`);
     await page.$eval("[data-type='pdf']", (element) => element.click());
 
     const secondRow = ".dc-table tbody tr:nth-child(2)";
@@ -51,6 +74,18 @@ const puppeteer = require("puppeteer");
     await page.$eval("[data-scope-filter='experimental']", (element) => element.click());
     const experimentalMarker = await page.$eval(".dc-experimental-marker", (element) => ({ text: element.textContent.trim(), title: element.title, label: element.getAttribute("aria-label") }));
     if (experimentalMarker.text !== "E" || !experimentalMarker.title.includes("Last modified:") || !experimentalMarker.label.includes("Experimental file")) throw new Error(`Experimental marker is incomplete: ${JSON.stringify(experimentalMarker)}`);
+
+    const rowsBeforeScopeSearch = await page.$$eval(".dc-table tbody tr", (rows) => rows.length);
+    await page.type("#dc-search", "newsletter");
+    const scopedSearch = await page.evaluate(() => ({
+      rows: document.querySelectorAll(".dc-table tbody tr").length,
+      status: document.querySelector(".dc-status").textContent,
+      allMatch: Array.from(document.querySelectorAll(".dc-filename")).every((element) => element.textContent.toLowerCase().includes("newsletter"))
+    }));
+    if (!scopedSearch.rows || scopedSearch.rows >= rowsBeforeScopeSearch || !scopedSearch.allMatch || !scopedSearch.status.includes(`${scopedSearch.rows} PDF`)) {
+      throw new Error(`Search did not update with archived and experimental scopes enabled: ${JSON.stringify({ rowsBeforeScopeSearch, scopedSearch })}`);
+    }
+    await page.$eval("#dc-search", (element) => { element.value = ""; element.dispatchEvent(new Event("input", { bubbles: true })); });
 
     await page.$eval("[data-category-filter='fpki']", (element) => element.click());
     const categoryState = await page.evaluate(() => ({

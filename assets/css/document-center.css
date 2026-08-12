@@ -39,7 +39,7 @@
 .dc-details dl { margin: 0; }
 .dc-details dt { font-weight: 700; margin-top: .65rem; }
 .dc-details dd { margin-left: 0; overflow-wrap: anywhere; }
-.dc-details { align-self: start; background: #f7f9fa; border-radius: .5rem; border-top: .5rem solid #005ea8; margin-top: 2rem; max-height: calc(100vh - 2rem); overflow: auto; padding: 1rem; position: sticky; top: 1rem; }
+.dc-details { align-self: start; background: #f7f9fa; border-radius: .5rem; border-top: .5rem solid #005ea8; margin-top: 0; max-height: calc(100vh - 2rem); overflow: auto; padding: 1rem; position: sticky; top: 1rem; }
 .dc-details h2 { margin-top: 0; }
 .dc-downloads { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .dc-downloads .usa-button { margin: 0; }
@@ -48,5 +48,5 @@
 .dc-document-modal .usa-modal__main { max-width: none; width: 100%; }
 .dc-document-frame { background: #fff; border: 1px solid #a9aeb1; height: min(72vh, 50rem); width: 100%; }
 .dc-modal-notice { background: #f0f0f0; border-radius: .5rem; padding: 1.5rem; }
-@media (max-width: 63.99em) { .dc-details { margin-top: 2rem; max-height: none; overflow: visible; position: static; } }
+@media (max-width: 63.99em) { .dc-details { margin-top: 0; max-height: none; overflow: visible; position: static; } }
 @media (max-width: 39.99em) { .dc-type-cards { grid-template-columns: repeat(2, 1fr); } .dc-table .dc-optional { display: none; } }

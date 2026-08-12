@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
+vendor/bundle
 .bundle
 .jekyll-cache/
 *.code-workspace
