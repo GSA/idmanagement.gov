@@ -24,17 +24,17 @@ the FBCA G5 keys will be generated and a cross certificate will be issued from t
 2. Phase 2 (August 28th - September 4th, 2026) New Affiliate Cross-Certificate Issuance - 
 the FPKIMA has coordinated to reissue 11 affiliate cross certificates which will all be signed by the new FBCA G5.  Each of these new affiliate cross-certificates will be published in the FBCA G5 SIA.  During this phase all relying party application trust stores will need to be updated to trust the new FBCA G5 chains to ensure continued interoperability of bridge affiliate subscriber certificates. The following diagram shows that there will be two parallel trust paths during Phase 2 where bridge affiliate CA certificates issued by FBCA G4 are valid while the FBCA G5 conducts reissuance (note only some affiliates are pictured to do space limitations):
 
-<img src="{{site.baseurl}}/assets/fpki/fbcag5_1.jpeg" alt="A detailed diagram of the FBCA G4 and new FBCA G5 to include issued cross certificates.">
+<img src="{{site.baseurl}}/assets/fpki/fbcag5_1.jpg" alt="A detailed diagram of the FBCA G4 and new FBCA G5 to include issued cross certificates.">
 
 3. Phase 3 (TBD, but expected within 90 days of phase 2 completion) Revocation of old Affiliate Cross-Certificates - 
 the FBCA G4 will begin revoking affiliate cross-certificates on dates requested by each affiliate.  For systems that conduct revocation checking, this will ensure that older certificate path building will no longer be able to be conducted through the FBCA G4. The following diagram shows the planned FBCA G4 revocation and the revocation of its issued cross-certificates.  This will ensure path building is only conducted through the new FBCA G5.
 
-<img src="{{site.baseurl}}/assets/fpki/fbcag5_2.jpeg" alt="A detailed diagram of the revoked FBCA G4, its cross certificates and new FBCA G5 to include newly issued cross certificates.">
+<img src="{{site.baseurl}}/assets/fpki/fbcag5_2.jpg" alt="A detailed diagram of the revoked FBCA G4, its cross certificates and new FBCA G5 to include newly issued cross certificates.">
 
 4. Phase 4 (TBD, but expected by the end of November 2026) FBCA G4 final long term CRL publication and revocation by FCPCA G2 - 
 once the final affiliate cross-certificate has been revoked, the FBCA G4 will revoke its return cross-certificate to the FCPCA G2 and issue a final FBCA G4 signed long-term CRL valid through its natural expiration date of December 6, 2029. This final FBCA G4 CRL will be available at its CRL DP.  Additionally the FCPCA G2 will revoke the FBCA G4 certificate. The following diagram shows the a sample trust path as it currently exists for USPTO through the FBCA G4 and the updates to CA certificates post-migration:
 
-<img src="{{site.baseurl}}/assets/fpki/fbcag5_3.jpeg" alt="A diagram showing sample old FBCA G4 and new FBCA G5 trust chains for a XTec NFI PIV-I.">
+<img src="{{site.baseurl}}/assets/fpki/fbcag5_3.jpg" alt="A diagram showing sample old FBCA G4 and new FBCA G5 trust chains for a XTec NFI PIV-I.">
 
 ## Who will be Impacted?
 This FBCA key-migration and certificate replacement effort has the potential to impact all Federal relying party applications that accept DoD issued Common Access Cards (CAC), DoD External Certification Authority (ECA) credentials, PIV-Interoperable (PIV-I) or other Non-Federally Issued (NFI) certificates for authentication, digital signature, or email encryption with trusted external partner organizations.
