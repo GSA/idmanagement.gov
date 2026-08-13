@@ -70,6 +70,7 @@ Concurrent to the FBCA G5 migration, DoD will also be undergoing a migration to 
   * DoD Root CA 6
   * ECA Root CA 4
   * ECA Root CA 5
+
 - The expected IRCA3 SIA is as follows (these will be included in the FPKI consolidated p7b): [http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c](http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 
 ## Additional Resources
