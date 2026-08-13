@@ -12,7 +12,7 @@ sidenav: fpkiannouncements
       
 ---
 
-In order to maintain the near term security of the Federal Public Key Infrastructure landscape and comply with established cryptographic key migration timelines as outlined in NIST SP 800-57, the Federal Bridge Certification Authority (FBCA) G4, currently leveraging a 2048-bit RSA public key, will be undergoing a replacement and migration to the FBCA G5 which will leverage a 4096-bit RSA public key.
+In order to maintain the near term security of the Federal Public Key Infrastructure landscape and comply with established cryptographic key migration timelines as outlined in NIST SP 800-57, the Federal Bridge Certification Authority (FBCA) G4, currently leveraging a 2048-bit RSA public key, will be undergoing a replacement and migration to the FBCA G5 which will leverage a 4096-bit RSA public key.  Applications and relying parties that leverage the FBCA may need to update their trust stores to ensure continued interoperation with partner PKI credentials.
 
 ## What is the Plan? 
 The migration to the FBCA G5 is planned to happen in the following 4 phases:
