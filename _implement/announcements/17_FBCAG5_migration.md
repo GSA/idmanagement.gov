@@ -22,17 +22,17 @@ the FBCA G5 keys will be generated and a cross certificate will be issued from t
 
 
 2. **Phase 2: New Affiliate Cross-Certificate Issuance** (August 28th - September 4th, 2026) - 
-the FPKIMA has coordinated to reissue 11 affiliate cross certificates which will all be signed by the new FBCA G5.  Each of these new affiliate cross-certificates will be published in the FBCA G5 SIA.  During this phase all relying party application trust stores will need to be updated to trust the new FBCA G5 chains to ensure continued interoperability of bridge affiliate subscriber certificates. The following diagram shows that there will be two parallel trust paths during Phase 2 where bridge affiliate CA certificates issued by FBCA G4 are valid while the FBCA G5 conducts reissuance (note only some affiliates are pictured due to space limitations):
+the FPKIMA has coordinated to reissue 11 affiliate cross certificates which will all be signed by the new FBCA G5.  Each of these new affiliate cross-certificates will be published in the FBCA G5 SIA.  During this phase all relying party application trust stores will need to be updated to trust the new FBCA G5 chains to ensure continued interoperability of bridge affiliate subscriber certificates.  The following diagram shows that there will be two parallel trust paths during Phase 2 where bridge affiliate CA certificates issued by FBCA G4 are valid while the FBCA G5 conducts reissuance (note only some affiliates are pictured due to space limitations):
 
 ![A detailed diagram of the FBCA G4 and new FBCA G5 to include issued cross certificates.]({{site.baseurl}}/assets/fpki/FBCAG5_1.jpg)
 
 3. **Phase 3: Revocation of old Affiliate Cross-Certificates** (TBD, but expected within 90 days of phase 2 completion) - 
-the FBCA G4 will begin revoking affiliate cross-certificates on dates requested by each affiliate.  For systems that conduct revocation checking, this will ensure that older certificate path building will no longer be able to be conducted through the FBCA G4. The following diagram shows the planned FBCA G4 revocation and the revocation of its issued cross-certificates.  This will ensure path building is only conducted through the new FBCA G5.
+the FBCA G4 will begin revoking affiliate cross-certificates on dates requested by each affiliate.  For systems that conduct revocation checking, this will ensure that older certificate path building will no longer be able to be conducted through the FBCA G4.  The following diagram shows the planned FBCA G4 revocation and the revocation of its issued cross-certificates.  This will ensure path building is only conducted through the new FBCA G5.
 
 ![A detailed diagram of the revoked FBCA G4, its cross certificates and new FBCA G5 to include newly issued cross certificates.]({{site.baseurl}}/assets/fpki/FBCAG5_2.jpg)
 
 4. **Phase 4: FBCA G4 final long term CRL publication and revocation by FCPCA G2** (TBD, but expected by the end of November 2026) - 
-once the final affiliate cross-certificate has been revoked, the FBCA G4 will revoke its return cross-certificate to the FCPCA G2 and issue a final FBCA G4 signed long-term CRL valid through its natural expiration date of December 6, 2029. This final FBCA G4 CRL will be available at its CRL DP.  Additionally the FCPCA G2 will revoke the FBCA G4 certificate. The following diagram shows the a sample trust path as it currently exists for USPTO through the FBCA G4 and the updates to CA certificates post-migration:
+once the final affiliate cross-certificate has been revoked, the FBCA G4 will revoke its return cross-certificate to the FCPCA G2 and issue a final FBCA G4 signed long-term CRL valid through its natural expiration date of December 6, 2029. This final FBCA G4 CRL will be available at its CRL DP.  Additionally the FCPCA G2 will revoke the FBCA G4 certificate.  The following diagram shows the a sample trust path as it currently exists for USPTO through the FBCA G4 and the updates to CA certificates post-migration:
 
 ![A diagram showing sample old FBCA G4 and new FBCA G5 trust chains for a XTec NFI PIV-I.]({{site.baseurl}}/assets/fpki/FBCAG5_3.jpg)
 
