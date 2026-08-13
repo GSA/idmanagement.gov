@@ -7,16 +7,20 @@
   var types = ["pdf", "docx", "xlsx", "pptx"];
   var labels = { pdf: "PDF", docx: "Word", xlsx: "Excel", pptx: "PowerPoint" };
   var documents = [];
-  var activeType = "pdf";
+  var activeTypes = [];
   var sortKey = "filename";
   var sortDirection = 1;
   var selectedId = null;
   var selectedCategories = [];
   var selectedAdditionalScopes = [];
   var searchQuery = "";
+  var excludeArchived = true;
   var panels = root.querySelector("[data-panels]");
   var status = root.querySelector(".dc-status");
   var details = root.querySelector("[data-details]");
+  var totalFiles = root.querySelector("[data-total-files]");
+  var statisticsToggle = root.querySelector("[data-statistics-toggle]");
+  var statisticsPanel = root.querySelector("[data-document-statistics]");
   var modalHeading = document.querySelector("#dc-modal-heading");
   var modalBody = document.querySelector("[data-modal-body]");
   var modalOpener = document.querySelector("#dc-modal-opener");
@@ -54,10 +58,56 @@
     return baseUrl + "/" + document.path.replace(/^\//, "");
   }
 
-  function metadata(document) {
+  function countDocumentsBy(keyForDocument) {
+    return documents.reduce(function (counts, document) {
+      var key = keyForDocument(document);
+      counts[key] = (counts[key] || 0) + 1;
+      return counts;
+    }, {});
+  }
+
+  function statisticsList(counts, preferredOrder) {
+    var keys = preferredOrder || Object.keys(counts).sort(function (left, right) {
+      return counts[right] - counts[left] || left.localeCompare(right);
+    });
+    return '<ul class="dc-statistics-list">' + keys.filter(function (key) {
+      return counts[key];
+    }).map(function (key) {
+      return '<li><span>' + escapeHtml(key) + '</span><strong>' + escapeHtml(counts[key]) + '</strong></li>';
+    }).join("") + '</ul>';
+  }
+
+  function renderStatistics() {
+    if (!statisticsPanel) return;
+    var scopeLabels = { active: "Active", archived: "Archived", experimental: "Experimental" };
+    var typeLabels = { pdf: "PDF", docx: "Word", xlsx: "Excel", pptx: "PowerPoint" };
+    var byScope = countDocumentsBy(function (document) { return scopeLabels[document.scope] || document.scope; });
+    var byType = countDocumentsBy(function (document) { return typeLabels[document.type] || document.type; });
+    var byLocation = countDocumentsBy(function (document) {
+      var parts = document.relative_path.split("/");
+      parts.pop();
+      return "/" + parts.join("/");
+    });
+    statisticsPanel.innerHTML = '<h3 id="dc-document-statistics-heading">Document inventory</h3>' +
+      '<p class="dc-statistics-total">' + documents.length + ' total files</p>' +
+      '<h4>By scope</h4>' + statisticsList(byScope, ["Active", "Archived", "Experimental"]) +
+      '<h4>By file type</h4>' + statisticsList(byType, ["PDF", "Word", "Excel", "PowerPoint"]) +
+      '<h4>By location</h4>' + statisticsList(byLocation, ["/docs", "/docs/archived", "/docs/expdocs"]);
+  }
+
+  function primaryMetadata(document) {
     return '<dl>' +
       '<dt>File type</dt><dd>' + escapeHtml(document.type_label) + '</dd>' +
       '<dt>Location</dt><dd>' + escapeHtml(document.relative_path) + '</dd>' +
+      '</dl>';
+  }
+
+  function additionalMetadata(document) {
+    return '<section class="dc-additional-information">' +
+      '<h4 class="dc-additional-information-heading">' +
+      '<button type="button" class="dc-additional-information-toggle" aria-expanded="false" aria-controls="dc-additional-information-panel">Additional Document Details</button>' +
+      '</h4>' +
+      '<div id="dc-additional-information-panel" class="dc-additional-information-panel" hidden><dl>' +
       '<dt>Group</dt><dd>' + escapeHtml(document.scope) + '</dd>' +
       '<dt>File size</dt><dd>' + escapeHtml(formatSize(document.size_bytes)) + '</dd>' +
       '<dt>Version</dt><dd>' + escapeHtml(display(document.version)) + (document.version_source ? ' <small>(' + escapeHtml(document.version_source) + ')</small>' : '') + '</dd>' +
@@ -70,7 +120,7 @@
       (document.signature && document.signature.signer ? '<dt>Signer</dt><dd>' + escapeHtml(document.signature.signer) + '</dd>' : '') +
       (document.signature && document.signature.signing_date ? '<dt>Signing date</dt><dd>' + escapeHtml(formatDate(document.signature.signing_date)) + '</dd>' : '') +
       (document.signature && document.signature.validation_summary ? '<dt>Validation summary</dt><dd>' + escapeHtml(document.signature.validation_summary) + '</dd>' : '') +
-      '</dl>';
+      '</dl></div></section>';
   }
 
   function actions(document) {
@@ -95,36 +145,50 @@
       row.classList.toggle("is-selected", selected);
       row.setAttribute("aria-current", selected ? "true" : "false");
     });
-    details.innerHTML = '<h3>' + escapeHtml(document.filename) + '</h3>' + metadata(document) + actions(document);
+    details.innerHTML = '<h3>' + escapeHtml(document.filename) + '</h3>' + primaryMetadata(document) + actions(document) + additionalMetadata(document);
   }
 
-  function updateTypeCounts() {
-    var showArchived = selectedAdditionalScopes.indexOf("archived") !== -1;
-    var showExperimental = selectedAdditionalScopes.indexOf("experimental") !== -1;
-    types.forEach(function (type) {
-      var activeCount = documents.filter(function (document) { return document.type === type && document.scope === "active" && matchesCategory(document) && matchesSearch(document); }).length;
-      var extras = [];
-      if (showArchived) {
-        extras.push(documents.filter(function (document) { return document.type === type && document.scope === "archived" && matchesCategory(document) && matchesSearch(document); }).length + " archived");
-      }
-      if (showExperimental) {
-        extras.push(documents.filter(function (document) { return document.type === type && document.scope === "experimental" && matchesCategory(document) && matchesSearch(document); }).length + " experimental");
-      }
-      root.querySelector("[data-count-for='" + type + "']").textContent = activeCount + " active";
-      var scopeCount = root.querySelector("[data-scope-count-for='" + type + "']");
-      scopeCount.textContent = extras.join(" • ");
-      scopeCount.hidden = extras.length === 0;
+  details.addEventListener("click", function (event) {
+    var toggle = event.target.closest(".dc-additional-information-toggle");
+    if (!toggle) return;
+
+    var panel = details.querySelector("#" + toggle.getAttribute("aria-controls"));
+    if (!panel) return;
+    var expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+    panel.hidden = expanded;
+  });
+
+  if (statisticsToggle && statisticsPanel) {
+    statisticsToggle.addEventListener("click", function () {
+      var expanded = statisticsToggle.getAttribute("aria-expanded") === "true";
+      statisticsToggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+      statisticsToggle.setAttribute("aria-label", expanded ? "Show document inventory statistics" : "Hide document inventory statistics");
+      statisticsPanel.hidden = expanded;
     });
   }
 
-  function selectedScopes() {
-    return ["active"].concat(selectedAdditionalScopes);
+  function updateTypeCounts() {
+    types.forEach(function (type) {
+      var count = documents.filter(function (document) {
+        return document.type === type && matchesDocumentFilters(document) && matchesSearch(document);
+      }).length;
+      root.querySelector("[data-count-for='" + type + "']").textContent = count + " matching";
+      var scopeCount = root.querySelector("[data-scope-count-for='" + type + "']");
+      scopeCount.textContent = "";
+      scopeCount.hidden = true;
+    });
   }
 
   function matchesCategory(document) {
-    if (!selectedCategories.length) return true;
-    var searchable = [document.filename, document.relative_path].join(" ").toLowerCase();
-    return selectedCategories.some(function (category) { return searchable.indexOf(category) !== -1; });
+    var filename = document.filename.toLowerCase();
+    return selectedCategories.some(function (category) { return filename.indexOf(category) !== -1; });
+  }
+
+  function matchesDocumentFilters(document) {
+    if (!selectedCategories.length && !selectedAdditionalScopes.length) return document.scope === "active";
+    var categoryMatch = matchesCategory(document) && (!excludeArchived || document.scope !== "archived");
+    return categoryMatch || selectedAdditionalScopes.indexOf(document.scope) !== -1;
   }
 
   function matchesSearch(document) {
@@ -133,9 +197,8 @@
   }
 
   function filteredDocuments() {
-    var scopes = selectedScopes();
     return documents.filter(function (document) {
-      return (!activeType || document.type === activeType) && scopes.indexOf(document.scope) !== -1 && matchesCategory(document) && matchesSearch(document);
+      return (!activeTypes.length || activeTypes.indexOf(document.type) !== -1) && matchesDocumentFilters(document) && matchesSearch(document);
     }).sort(function (a, b) {
       var left = (a[sortKey] || "").toString().toLowerCase();
       var right = (b[sortKey] || "").toString().toLowerCase();
@@ -143,9 +206,21 @@
     });
   }
 
+  function hasActiveFilters() {
+    return Boolean(activeTypes.length || searchQuery || selectedCategories.length || selectedAdditionalScopes.length);
+  }
+
   function render() {
+    if (!hasActiveFilters()) {
+      status.textContent = "Search documents or select one or more filters to display files.";
+      panels.innerHTML = "";
+      selectedId = null;
+      details.innerHTML = '<p>No document is selected.</p>';
+      return;
+    }
+
     var matches = filteredDocuments();
-    var activeLabel = activeType ? labels[activeType] + " " : "";
+    var activeLabel = activeTypes.length === 1 ? labels[activeTypes[0]] + " " : "";
     status.textContent = matches.length + " " + activeLabel + "document" + (matches.length === 1 ? "" : "s") + " shown.";
     if (!matches.length) {
       panels.innerHTML = '<div class="dc-empty">No documents match the selected filters.</div>';
@@ -162,7 +237,7 @@
       return '<tr data-document-id="' + escapeHtml(document.id) + '" tabindex="0"' + selectedClass + '><td class="dc-filename-cell"><button type="button" class="dc-filename" aria-controls="dc-document-modal" aria-haspopup="dialog">' + escapeHtml(document.filename) + '</button>' + scopeMarker + '</td>' +
         '<td class="dc-optional">' + escapeHtml(display(document.author)) + '</td><td class="dc-optional dc-date">' + escapeHtml(formatDate(document.created)) + '</td><td>' + ageStatus(document) + '</td></tr>';
     }).join("");
-    var panelLabel = activeType ? labels[activeType] + " documents" : "All documents";
+    var panelLabel = activeTypes.length ? activeTypes.map(function (type) { return labels[type]; }).join(", ") + " documents" : "All documents";
     panels.innerHTML = '<div class="dc-table-wrap"><table class="dc-table"><caption class="usa-sr-only">' + panelLabel + '</caption><thead><tr>' +
       '<th><button class="dc-sort" data-sort="filename">File Name</button></th><th class="dc-optional"><button class="dc-sort" data-sort="author">Author</button></th><th class="dc-optional"><button class="dc-sort" data-sort="created">Created</button></th><th>3+ years</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
     selectDocument(selected);
@@ -172,9 +247,11 @@
     var typeButton = event.target.closest("[data-type]");
     if (typeButton) {
       var requestedType = typeButton.getAttribute("data-type");
-      activeType = activeType === requestedType ? null : requestedType;
+      var requestedTypeIndex = activeTypes.indexOf(requestedType);
+      if (requestedTypeIndex === -1) activeTypes.push(requestedType);
+      else activeTypes.splice(requestedTypeIndex, 1);
       root.querySelectorAll("[data-type]").forEach(function (button) {
-        var selected = button.getAttribute("data-type") === activeType;
+        var selected = activeTypes.indexOf(button.getAttribute("data-type")) !== -1;
         button.classList.toggle("is-active", selected);
         button.setAttribute("aria-pressed", selected ? "true" : "false");
       });
@@ -253,6 +330,11 @@
     updateTypeCounts();
     render();
   });
+  root.querySelector("[data-exclude-archived]").addEventListener("change", function (event) {
+    excludeArchived = event.target.checked;
+    updateTypeCounts();
+    render();
+  });
   function restoreSelectedFocus() {
     var selectedFilename = root.querySelector(".dc-table tbody tr.is-selected .dc-filename");
     if (selectedFilename) window.setTimeout(function () { selectedFilename.focus(); }, 50);
@@ -269,6 +351,8 @@
     .then(function (response) { if (!response.ok) throw new Error("Index request failed"); return response.json(); })
     .then(function (payload) {
       documents = payload.documents;
+      if (totalFiles) totalFiles.textContent = documents.length + " total file" + (documents.length === 1 ? "" : "s");
+      renderStatistics();
       updateTypeCounts();
       render();
     })

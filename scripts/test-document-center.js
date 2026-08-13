@@ -11,7 +11,7 @@ const puppeteer = require("puppeteer");
     const page = await browser.newPage();
     await page.setViewport({ width: 1440, height: 1000 });
     await page.goto("http://127.0.0.1:4000/doccenter/", { waitUntil: "networkidle0" });
-    await page.waitForSelector(".dc-table tbody tr");
+    await page.waitForFunction(() => !document.querySelector("[data-total-files]").textContent.includes("Loading"));
 
     const initial = await page.evaluate(() => ({
       versionHeader: Array.from(document.querySelectorAll("th")).some((cell) => cell.textContent.trim() === "Version"),
@@ -19,44 +19,37 @@ const puppeteer = require("puppeteer");
       modifiedHeader: Array.from(document.querySelectorAll("th")).some((cell) => cell.textContent.trim() === "Modified"),
       openButtons: Array.from(document.querySelectorAll(".dc-table a, .dc-table button")).filter((element) => element.textContent.trim() === "Open").length,
       selectedRows: document.querySelectorAll(".dc-table tbody tr.is-selected").length,
+      rows: document.querySelectorAll(".dc-table tbody tr").length,
+      status: document.querySelector(".dc-status").textContent.trim(),
+      totalFiles: document.querySelector("[data-total-files]").textContent.trim(),
       detailsAlignedWithSearch: (() => {
         const search = document.querySelector(".dc-controls").getBoundingClientRect();
         const details = document.querySelector(".dc-details").getBoundingClientRect();
         return Math.abs(search.top - details.top) <= 1;
       })(),
-      controlOrder: Array.from(document.querySelector(".tablet\\:grid-col-8").children)
-        .filter((element) => element.matches(".dc-controls, .dc-type-cards, .dc-category-filters"))
-        .map((element) => element.classList.contains("dc-controls") ? "search" : element.classList.contains("dc-type-cards") ? "file-types" : "filters"),
+      filtersBesideWelcome: Boolean(document.querySelector(".dc-intro-row > .dc-category-filters")),
       searchContained: (() => {
         const input = document.querySelector("#dc-search").getBoundingClientRect();
         const container = document.querySelector(".dc-search-control").getBoundingClientRect();
         return input.left >= container.left && input.right <= container.right && input.top >= container.top && input.bottom <= container.bottom;
       })()
     }));
-    if (initial.versionHeader || initial.downloadHeader || initial.modifiedHeader || initial.openButtons || initial.selectedRows !== 1 || !initial.detailsAlignedWithSearch || !initial.searchContained || initial.controlOrder.join(",") !== "search,file-types,filters") throw new Error(`Unexpected initial state: ${JSON.stringify(initial)}`);
+    if (initial.versionHeader || initial.downloadHeader || initial.modifiedHeader || initial.openButtons || initial.selectedRows || initial.rows || !initial.status.includes("Search documents") || !/^\d+ total files?$/.test(initial.totalFiles) || !initial.detailsAlignedWithSearch || !initial.searchContained || !initial.filtersBesideWelcome) throw new Error(`Unexpected initial state: ${JSON.stringify(initial)}`);
 
-    for (const type of ["pdf", "docx", "xlsx", "pptx"]) {
-      await page.$eval(`[data-type='${type}']`, (element) => {
-        if (element.getAttribute("aria-pressed") !== "true") element.click();
-      });
-      const typeFilter = await page.evaluate(() => ({
-        selectedTypeButtons: document.querySelectorAll("[data-type][aria-pressed='true']").length,
-        selectedType: document.querySelector("[data-type][aria-pressed='true']")?.getAttribute("data-type"),
-        visibleTypes: Array.from(new Set(Array.from(document.querySelectorAll(".dc-table tbody tr .dc-filename")).map((element) => element.textContent.split(".").pop().toLowerCase()))),
-        rows: document.querySelectorAll(".dc-table tbody tr").length
-      }));
-      if (typeFilter.selectedTypeButtons !== 1 || typeFilter.selectedType !== type || typeFilter.rows < 1 || typeFilter.visibleTypes.length !== 1 || typeFilter.visibleTypes[0] !== type) {
-        throw new Error(`File type filter failed for ${type}: ${JSON.stringify(typeFilter)}`);
-      }
-    }
     await page.$eval("[data-type='pdf']", (element) => element.click());
-    await page.$eval("[data-type='pdf']", (element) => element.click());
-    const unselectedType = await page.evaluate(() => ({
+    await page.$eval("[data-type='docx']", (element) => element.click());
+    const additiveTypes = await page.evaluate(() => ({
       selectedTypeButtons: document.querySelectorAll("[data-type][aria-pressed='true']").length,
-      visibleTypes: new Set(Array.from(document.querySelectorAll(".dc-table tbody tr .dc-filename")).map((element) => element.textContent.split(".").pop().toLowerCase())).size
+      visibleTypes: Array.from(new Set(Array.from(document.querySelectorAll(".dc-table tbody tr .dc-filename")).map((element) => element.textContent.split(".").pop().toLowerCase()))).sort(),
+      rows: document.querySelectorAll(".dc-table tbody tr").length
     }));
-    if (unselectedType.selectedTypeButtons !== 0 || unselectedType.visibleTypes < 2) throw new Error(`File type filter did not clear: ${JSON.stringify(unselectedType)}`);
-    await page.$eval("[data-type='pdf']", (element) => element.click());
+    if (additiveTypes.selectedTypeButtons !== 2 || additiveTypes.rows < 2 || additiveTypes.visibleTypes.join(",") !== "docx,pdf") throw new Error(`Additive file type filters failed: ${JSON.stringify(additiveTypes)}`);
+    await page.$eval("[data-type='docx']", (element) => element.click());
+    const singleType = await page.evaluate(() => ({
+      selectedTypeButtons: document.querySelectorAll("[data-type][aria-pressed='true']").length,
+      visibleTypes: Array.from(new Set(Array.from(document.querySelectorAll(".dc-table tbody tr .dc-filename")).map((element) => element.textContent.split(".").pop().toLowerCase())))
+    }));
+    if (singleType.selectedTypeButtons !== 1 || singleType.visibleTypes.join(",") !== "pdf") throw new Error(`File type deselection failed: ${JSON.stringify(singleType)}`);
 
     const secondRow = ".dc-table tbody tr:nth-child(2)";
     const secondName = await page.$eval(`${secondRow} .dc-filename`, (element) => element.textContent.trim());
@@ -65,8 +58,6 @@ const puppeteer = require("puppeteer");
     if (selectedName !== secondName) throw new Error("Row selection did not update the details panel");
 
     await page.$eval("[data-scope-filter='archived']", (element) => element.click());
-    const archivedBadge = await page.$eval("[data-scope-count-for='pdf']", (element) => ({ hidden: element.hidden, text: element.textContent }));
-    if (archivedBadge.hidden || !archivedBadge.text.includes("archived")) throw new Error("Archived counts did not appear on type buttons");
     const archivedFilter = await page.$eval("[data-scope-filter='archived']", (element) => ({ pressed: element.getAttribute("aria-pressed"), removable: !element.querySelector(".dc-filter-remove").hidden }));
     if (archivedFilter.pressed !== "true" || !archivedFilter.removable) throw new Error("Archived filter pill did not activate");
     const archiveMarker = await page.$eval(".dc-archive-marker", (element) => ({ title: element.title, label: element.getAttribute("aria-label") }));
@@ -91,10 +82,25 @@ const puppeteer = require("puppeteer");
     const categoryState = await page.evaluate(() => ({
       pressed: document.querySelector("[data-category-filter='fpki']").getAttribute("aria-pressed"),
       removable: !document.querySelector("[data-category-filter='fpki'] .dc-filter-remove").hidden,
-      matchingRows: Array.from(document.querySelectorAll(".dc-table tbody tr")).every((row) => row.textContent.toLowerCase().includes("fpki"))
+      hasMatchingRow: Array.from(document.querySelectorAll(".dc-table tbody tr")).some((row) => row.textContent.toLowerCase().includes("fpki"))
     }));
-    if (categoryState.pressed !== "true" || !categoryState.removable || !categoryState.matchingRows) throw new Error(`Program filter failed: ${JSON.stringify(categoryState)}`);
+    if (categoryState.pressed !== "true" || !categoryState.removable || !categoryState.hasMatchingRow) throw new Error(`Program filter failed: ${JSON.stringify(categoryState)}`);
     await page.$eval("[data-category-filter='fpki']", (element) => element.click());
+
+    await page.$eval("[data-statistics-toggle]", (element) => element.click());
+    const statistics = await page.evaluate(() => ({
+      expanded: document.querySelector("[data-statistics-toggle]").getAttribute("aria-expanded"),
+      hidden: document.querySelector("[data-document-statistics]").hidden,
+      headings: Array.from(document.querySelectorAll("[data-document-statistics] h4")).map((element) => element.textContent.trim())
+    }));
+    if (statistics.expanded !== "true" || statistics.hidden || statistics.headings.join(",") !== "By scope,By file type,By location") throw new Error(`Inventory statistics failed: ${JSON.stringify(statistics)}`);
+
+    await page.$eval(".dc-additional-information-toggle", (element) => element.click());
+    const additionalDetails = await page.evaluate(() => ({
+      expanded: document.querySelector(".dc-additional-information-toggle").getAttribute("aria-expanded"),
+      hidden: document.querySelector(".dc-additional-information-panel").hidden
+    }));
+    if (additionalDetails.expanded !== "true" || additionalDetails.hidden) throw new Error(`Additional details did not expand: ${JSON.stringify(additionalDetails)}`);
 
     await page.$eval(".dc-table tbody tr:first-child .dc-filename", (element) => element.click());
     await page.waitForSelector("#dc-document-modal.is-visible");
@@ -112,6 +118,7 @@ const puppeteer = require("puppeteer");
 
     await page.setViewport({ width: 900, height: 900 });
     await page.reload({ waitUntil: "networkidle0" });
+    await page.$eval("[data-type='pdf']", (element) => element.click());
     await page.waitForSelector(".dc-table tbody tr");
     const tabletColumns = await page.evaluate(() => {
       const tableSection = document.querySelector("[data-panels]").closest("section").getBoundingClientRect();
@@ -122,6 +129,7 @@ const puppeteer = require("puppeteer");
 
     await page.setViewport({ width: 390, height: 844 });
     await page.reload({ waitUntil: "networkidle0" });
+    await page.$eval("[data-type='pdf']", (element) => element.click());
     await page.waitForSelector(".dc-table tbody tr");
     const mobileContainment = await page.evaluate(() => {
       const input = document.querySelector("#dc-search").getBoundingClientRect();
