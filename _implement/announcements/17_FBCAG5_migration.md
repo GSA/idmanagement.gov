@@ -66,10 +66,10 @@ It is also recommended that Federal relying parties populate any return cross-ce
 
 Concurrent to the FBCA G5 migration, DoD will also be undergoing a migration to a new DoD Interoperability Root CA 3 (IRCA3), which will be replacing the current DoD IRCA2.
 - Relying parties that validate DoD CAC (or ECA certificates) up to Common may also need to replace other cross-certificates issued by DoD IRCA2 currently.  The DoD IRCA3 is expected to issue cross-certificates to the following CAs:
-      - DoD Root CA 3
-      - DoD Root CA 6
-      - ECA Root CA 4
-      - ECA Root CA 5
+  * DoD Root CA 3
+  * DoD Root CA 6
+  * ECA Root CA 4
+  * ECA Root CA 5
 - The expected IRCA3 SIA is as follows (these will be included in the FPKI consolidated p7b): [http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c](http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} 
 
 ## Additional Resources
