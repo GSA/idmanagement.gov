@@ -25,6 +25,17 @@ subnav:
     href: '#federal-pki-document-archive'
 ---
 
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Upcoming FBCA G5 Migration</h4>
+    <p class="usa-alert__text">
+      The FBCA G4 is going to be replaced by the FBCA G5 starting on August 27th, 2026.  This is to comply with Federal cryptographic strength requirements and may require applications to update their trust stores with new intermediate CA certificates to ensure interoperability with FBCA affiliate issued credentials.<br><br>You can find additional information in the following
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://www.idmanagement.gov/implement/announcements/FBCAG5/">FPKI announcement</a>
+      to include a link containing instructions on distributing needed cross-certificates.
+    </p>
+  </div>
+</div>
+
 This page contains information to help Federal Public Key Infrastructure (FPKI) program managers and auditors.
 - It includes the FPKI policies and profiles as well as the FPKI annual review schedule.
 - It can help auditors assess certification authorities (CAs) operated as part of the FPKI. 
