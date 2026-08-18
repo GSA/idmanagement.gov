@@ -34,13 +34,14 @@
   header: "/assets/playbooks/headers/playbook_02.webp"
   target: _self
 
-- title: Digital Identity Risk Assessment Playbook
-  type: Webpage
-  pubdate: 2025-06
-  description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
-  url: "/playbooks/dira/"
-  header: "/assets/playbooks/headers/playbook_03.webp"
-  target: _self
+# Removal requested by Joe on 08/17/2026 - cjb
+# - title: Digital Identity Risk Assessment Playbook
+#   type: Webpage
+#   pubdate: 2025-06
+#   description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
+#   url: "/playbooks/dira/"
+#   header: "/assets/playbooks/headers/playbook_03.webp"
+#   target: _self
 
 - title: Digital Worker Identity Playbook
   type: Webpage
