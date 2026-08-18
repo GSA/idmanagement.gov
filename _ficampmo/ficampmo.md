@@ -17,14 +17,6 @@ subnav:
     href: '#identity-credential-and-access-management-subcommittee'
   - text: Federal PKI Policy Authority
     href: '#federal-public-key-infrastructure-policy-authority'
-  - text: Membership and Meetings
-    href: '#membership-and-meetings'
-  - text: ICAM Community Listserv
-    href: '#icam-community-listserv'
-  - text: 
-    href: '#'
-
-
 ---
 
 ## Introduction
