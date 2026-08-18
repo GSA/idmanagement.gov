@@ -17,6 +17,14 @@ subnav:
     href: '#identity-credential-and-access-management-subcommittee'
   - text: Federal PKI Policy Authority
     href: '#federal-public-key-infrastructure-policy-authority'
+  - text: Membership and Meetings
+    href: '#membership-and-meetings'
+  - text: ICAM Community Listserv
+    href: '#icam-community-listserv'
+  - text: 
+    href: '#'
+
+
 ---
 
 ## Introduction
@@ -75,17 +83,15 @@ The ICAMSC is co-chaired by the [GSA Office of Government-wide Policy](https://w
 
 Membership is open to federal agency employees with a .gov or .mil email address. Contractors are permitted to join on a case-by-case basis. See the [ICAMSC Meeting Page on Connect.gov](https://community.connect.gov/display/Egov/ICAMSC+Meeting+Materials){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} for more information. Access to the page requires a multifactor authentication using a PIV/CAC. 
 
-<!-- New -->
 **M-26-15 FICAM Architecture Modernization Working Group** 
 
-| On August 12, 2026, an interagency working group was established to update the Federal Identity, Credential, and Access Management (FICAM) architecture pursuant to OMB M-26-15, Execution of the Migration to Post-Quantum Cryptography. The meeting included technical discussions on the primary draft of the modernized FICAM architecture to support Post-Quantum Cryptography (PQC), Non human identities, automation, and other modern identity features. Moving forward, the working group will meet bi-weekly to advance FICAM modernization efforts. The team will publish all group activities within connect gov after each meeting.  |
-| :---- |
+On August 12, 2026, an interagency working group was established to update the Federal Identity, Credential, and Access Management (FICAM) architecture pursuant to OMB M-26-15, Execution of the Migration to Post-Quantum Cryptography. The meeting included technical discussions on the primary draft of the modernized FICAM architecture to support Post-Quantum Cryptography (PQC), Non human identities, automation, and other modern identity features. Moving forward, the working group will meet bi-weekly to advance FICAM modernization efforts. The team will publish all group activities within connect gov after each meeting.
 
-**FIDO CoA** \- The Office of Management and Budget’s Office of the Federal CIO, in partnership with the Identity, Credential, and Access Management Subcommittee and Cybersecurity and Infrastructure Security Agency, have launched a Phishing-Resistant Authentication (FIDO2) Community of Action. This group works with Agencies that plan to rapidly deploy a pilot of FIDO2-based phishing-resistant authenticators within their enterprise, Provide agencies with access to expertise and guidance in achieving this goal, and Documents results to help accelerate the modernization of phishing-resistant MFA throughout the Federal Government.
+**FIDO CoA** - The Office of Management and Budget’s Office of the Federal CIO, in partnership with the Identity, Credential, and Access Management Subcommittee and Cybersecurity and Infrastructure Security Agency, have launched a Phishing-Resistant Authentication (FIDO2) Community of Action. This group works with Agencies that plan to rapidly deploy a pilot of FIDO2-based phishing-resistant authenticators within their enterprise, Provide agencies with access to expertise and guidance in achieving this goal, and Documents results to help accelerate the modernization of phishing-resistant MFA throughout the Federal Government.
 
-**Certificate Policy (CPWG)** \- The Federal Bridge and Common policies advisory group facilitates proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. Members must be Federal employees, designated contractors, and PKI providers involved in the FPKI.
+**Certificate Policy (CPWG)** - The Federal Bridge and Common policies advisory group facilitates proposed Certificate Policy changes, facilitate the FPKI cross-certification process, and address and resolve issues through policy analysis and modification. Members must be Federal employees, designated contractors, and PKI providers involved in the FPKI.
 
-The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC's Connect.gov page](https://community.connect.gov/spaces/Egov/pages/234815732/ICAMSC+Identity+Credential+Access+Management+Subcommittee). Send an email to icam@gsa.gov for more information and join a working group.
+The ICAMSC charters working groups based on a defined-purpose and timeline. See the complete list of active and inactive working groups at the [ICAMSC's Connect.gov page](https://community.connect.gov/spaces/Egov/pages/234815732/ICAMSC+Identity+Credential+Access+Management+Subcommittee){:rel="noopener noreferrer"}{:class="usa-link"}. Send an email to icam@gsa.gov for more information and join a working group.
 
 ### **ICAM Community Listserv**
 
