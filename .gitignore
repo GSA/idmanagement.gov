@@ -3,6 +3,7 @@ _site
 .jekyll-metadata
 node_modules
 .bundle
+vendor/bundle
 .jekyll-cache/
 *.code-workspace
 .idea

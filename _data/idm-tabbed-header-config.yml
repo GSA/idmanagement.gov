@@ -1,0 +1,101 @@
+# IDManagement.gov tabbed header configuration
+#
+# COMPONENT SETTINGS
+# - enabled: Set to true to use the tabbed header. Set to false to allow the
+#   template to render its planned fallback.
+# - autoplay.enabled: Initial state of automatic tab switching. Visitors can
+#   change this with the persistent On/Off toggle to the right of the tabs.
+# - default_interval_seconds: Default number of seconds each tab is displayed.
+# - default_background_image: Local site graphic used across the full-width
+#   hero and tab-row background whenever a tab does not specify its own image.
+# - default_outer_background_color: Optional solid color for the full-width
+#   background and side gutters around the main hero content. Leave blank to use
+#   the component's initial darkest image-matched color, #020711.
+#
+# ADDING OR EDITING A TAB
+# - Add one item beneath tabs for each header entry. Array order controls both
+#   the visual tab order and the automatic switching order.
+# - id: Required unique lowercase kebab-case value used to connect the tab and
+#   its panel. Example: zero-trust.
+# - label: Required short text displayed on the tab.
+# - heading: Required heading displayed in the active panel.
+# - text: Required approved descriptive text. Keep this as plain text; do not
+#   add HTML.
+# - cta.label: Required call-to-action link text.
+# - cta.url: Required link. Use a root-relative path for an internal page.
+# - cta.target: Use _self for internal links. If _blank is required for an
+#   external resource, the template must also add rel="noopener noreferrer".
+# - interval_seconds: Optional time for this entry. If blank or omitted, the
+#   component uses autoplay.default_interval_seconds. Use 5 through 60 seconds.
+# - background_image: Optional full-width hero and tab-row background graphic
+#   for this entry. Leave it blank or omit it to use default_background_image.
+#   The image is centered and scaled to cover, matching the original hero.
+#   Example custom value:
+#   /assets/img/my-topic-hero.jpg
+# - outer_background_color: Optional CSS color that spans the full-width hero
+#   section behind the constrained main content, including its left and right
+#   sides. Use a valid CSS color such as #112e51. Leave it blank or omit it to
+#   use default_outer_background_color. This color sits behind the hero image
+#   and remains useful while the image loads or if it contains transparency.
+# - tab_content_background_color: Required background color used for both the
+#   selected tab and its associated content panel. Keeping these the same makes
+#   the visual relationship clear. Use a tested, WCAG-conforming color.
+# - tab_content_text_color: Required foreground color used on that selected tab
+#   and content panel. The foreground/background pair must have a contrast ratio
+#   of at least 4.5:1 for normal text and 3:1 for large text. The configured
+#   examples use USWDS colors with white text and exceed 4.5:1.
+# - content_background_color: Optional solid color for the constrained content
+#   layer. Leave this blank or omit it to keep that layer transparent so the
+#   full-width hero graphic remains visible behind the heading and text.
+#   When specified, use a valid CSS hex color that meets WCAG contrast with
+#   tab_content_text_color. Example: "#005ea8".
+
+enabled: true
+
+autoplay:
+  enabled: true
+  default_interval_seconds: 10
+  pause_on_hover: true
+  pause_on_focus: true
+  stop_after_manual_selection: true
+  respect_reduced_motion: true
+
+aria_label: Featured identity management topics
+default_background_image: /assets/images/new-background-30-fade.webp
+default_outer_background_color:
+
+tabs:
+  - id: quantum-readiness
+    label: Quantum readiness
+    heading: FICAM Drives Federal Quantum Readiness
+    text: >-
+      Implementing quantum-resistant cryptographic standards that protect
+      digital identities against future quantum computing capabilities.
+    cta:
+      label: Learn more about Post Quantum Cryptography
+      url: /pqc/
+      target: _self
+    interval_seconds: 10
+    background_image:
+    outer_background_color:
+    tab_content_background_color: "#005ea8"
+    tab_content_text_color: "#ffffff"
+    content_background_color:
+
+  - id: zero-trust
+    label: Zero Trust
+    heading: Zero Trust
+    text: >-
+      concept assumes there is no implicit trust granted to assets or user
+      accounts based solely on their physical or network location or based on
+      asset ownership.
+    cta:
+      label: Learn more about Zero Trust
+      url: /zero-trust/
+      target: _self
+    interval_seconds: 10
+    background_image:
+    outer_background_color:
+    tab_content_background_color: "#1a4480"
+    tab_content_text_color: "#ffffff"
+    content_background_color:

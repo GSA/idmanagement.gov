@@ -16,7 +16,12 @@ We recommend splitting apart your site's components into their own smaller secti
 manage in the long term.
 {% endcomment %}
 
-{% include hero.html %}
+{% assign idm_tabbed_header_config = site.data["idm-tabbed-header-config"] %}
+{% if idm_tabbed_header_config.enabled %}
+  {% include idm-tabbed-header.html %}
+{% else %}
+  {% include hero.html %}
+{% endif %}
 <!--
 {% include tagline.html %}
 -->

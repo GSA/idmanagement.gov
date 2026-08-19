@@ -1,0 +1,93 @@
+{% assign config = site.data["idm-tabbed-header-config"] %}
+{% assign tabs = config.tabs %}
+{% if tabs and tabs.size > 0 %}
+{% assign initial_tab = tabs.first %}
+{% assign initial_image = initial_tab.background_image | default: config.default_background_image | default: "/assets/img/hero.jpg" %}
+<section class="idm-tabbed-header"
+  data-idm-tabbed-header
+  data-autoplay-enabled="{{ config.autoplay.enabled | default: false }}"
+  data-default-interval="{{ config.autoplay.default_interval_seconds | default: 10 }}"
+  data-pause-on-hover="{{ config.autoplay.pause_on_hover | default: true }}"
+  data-pause-on-focus="{{ config.autoplay.pause_on_focus | default: true }}"
+  data-stop-after-manual="{{ config.autoplay.stop_after_manual_selection | default: true }}"
+  data-respect-reduced-motion="{{ config.autoplay.respect_reduced_motion | default: true }}"
+  style="--idm-hero-background-image: url('{{ initial_image | relative_url | escape }}');">
+  <div class="grid-container idm-tabbed-header__container">
+    <h2 id="idm-tabbed-header-label" class="usa-sr-only">{{ config.aria_label | default: "Featured identity management topics" | escape }}</h2>
+
+    <div class="idm-tabbed-header__panels">
+      {% for tab in tabs %}
+        {% assign tab_background = tab.tab_content_background_color | default: "#005ea8" %}
+        {% assign tab_text = tab.tab_content_text_color | default: "#ffffff" %}
+        {% assign content_background = tab.content_background_color | default: "transparent" %}
+        {% assign tab_image = tab.background_image | default: config.default_background_image | default: "/assets/img/hero.jpg" %}
+        {% if tab.content_background_color %}
+          {% assign content_layers = "none" %}
+        {% else %}
+          {% capture content_layers %}linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url('{{ tab_image | relative_url | escape }}'){% endcapture %}
+        {% endif %}
+        <div
+          id="idm-panel-{{ tab.id | escape }}"
+          class="idm-tabbed-header__panel"
+          role="tabpanel"
+          aria-labelledby="idm-tab-{{ tab.id | escape }}"
+          tabindex="0"{% unless forloop.first %}
+          hidden{% endunless %}
+          style="--idm-entry-background: {{ tab_background | escape }}; --idm-entry-text: {{ tab_text | escape }}; --idm-content-background: {{ content_background | escape }};">
+          <div class="idm-tabbed-header__panel-content">
+            <div class="idm-tabbed-header__heading-region">
+              <h2 class="idm-tabbed-header__heading">{{ tab.heading | escape }}</h2>
+            </div>
+            <div class="idm-tabbed-header__body-region">
+              <p class="idm-tabbed-header__text">{{ tab.text | escape }}</p>
+              <a class="usa-button idm-tabbed-header__cta"
+                href="{{ tab.cta.url | relative_url }}"
+                target="{{ tab.cta.target | default: '_self' | escape }}"{% if tab.cta.target == '_blank' %}
+                rel="noopener noreferrer"{% endif %}>{{ tab.cta.label | escape }}</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="idm-tabbed-header__controls">
+      <div class="idm-tabbed-header__tablist" role="tablist" aria-labelledby="idm-tabbed-header-label">
+        {% for tab in tabs %}
+          {% assign tab_background = tab.tab_content_background_color | default: "#005ea8" %}
+          {% assign tab_text = tab.tab_content_text_color | default: "#ffffff" %}
+          <button
+            type="button"
+            id="idm-tab-{{ tab.id | escape }}"
+            class="idm-tabbed-header__tab"
+            role="tab"
+            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            aria-controls="idm-panel-{{ tab.id | escape }}"
+            tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
+            data-interval-seconds="{{ tab.interval_seconds | default: config.autoplay.default_interval_seconds | default: 10 }}"
+            data-outer-background-color="{{ tab.outer_background_color | default: config.default_outer_background_color | escape }}"
+            data-background-image="{{ tab_image | relative_url | escape }}"
+            style="--idm-entry-background: {{ tab_background | escape }}; --idm-entry-text: {{ tab_text | escape }};">
+            {{ tab.label | escape }}
+          </button>
+        {% endfor %}
+      </div>
+
+      <button type="button"
+        class="idm-tabbed-header__autoplay-toggle"
+        aria-pressed="{{ config.autoplay.enabled | default: false }}"
+        aria-label="{% if config.autoplay.enabled %}Stop{% else %}Start{% endif %}"
+        data-tooltip="{% if config.autoplay.enabled %}Stop{% else %}Start{% endif %}"
+        data-idm-autoplay-toggle>
+        <span class="idm-tabbed-header__toggle-icon" aria-hidden="true"></span>
+        <span class="usa-sr-only" data-idm-autoplay-label>{% if config.autoplay.enabled %}Stop{% else %}Start{% endif %}</span>
+      </button>
+    </div>
+  </div>
+</section>
+<noscript>
+  <style>
+    .idm-tabbed-header__panel[hidden] { display: flex !important; }
+    .idm-tabbed-header__controls { display: none !important; }
+  </style>
+</noscript>
+{% endif %}
