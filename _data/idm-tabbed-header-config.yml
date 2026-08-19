@@ -5,7 +5,10 @@
 #   template to render its planned fallback.
 # - autoplay.enabled: Initial state of automatic tab switching. Visitors can
 #   change this with the persistent On/Off toggle to the right of the tabs.
-# - default_interval_seconds: Default number of seconds each tab is displayed.
+# - default_interval_seconds: Default number of seconds each tab is displayed
+#   when interval_seconds is omitted. Use 15 seconds for one through four tabs.
+#   When five or more tabs are configured, omitted entry durations
+#   automatically use 10 seconds instead.
 # - default_background_image: Local site graphic used across the full-width
 #   hero and tab-row background whenever a tab does not specify its own image.
 # - default_outer_background_color: Optional solid color for the full-width
@@ -26,7 +29,8 @@
 # - cta.target: Use _self for internal links. If _blank is required for an
 #   external resource, the template must also add rel="noopener noreferrer".
 # - interval_seconds: Optional time for this entry. If blank or omitted, the
-#   component uses autoplay.default_interval_seconds. Use 5 through 60 seconds.
+#   component uses 15 seconds for one through four configured tabs, or 10
+#   seconds when five or more tabs are configured. Use 5 through 60 seconds.
 # - background_image: Optional full-width hero and tab-row background graphic
 #   for this entry. Leave it blank or omit it to use default_background_image.
 #   The image is centered and scaled to cover, matching the original hero.
@@ -54,7 +58,7 @@ enabled: true
 
 autoplay:
   enabled: true
-  default_interval_seconds: 10
+  default_interval_seconds: 15
   pause_on_hover: true
   pause_on_focus: true
   stop_after_manual_selection: true

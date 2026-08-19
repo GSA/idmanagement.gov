@@ -3,10 +3,14 @@
 {% if tabs and tabs.size > 0 %}
 {% assign initial_tab = tabs.first %}
 {% assign initial_image = initial_tab.background_image | default: config.default_background_image | default: "/assets/img/hero.jpg" %}
+{% assign fallback_interval = config.autoplay.default_interval_seconds | default: 15 %}
+{% if tabs.size >= 5 %}
+  {% assign fallback_interval = 10 %}
+{% endif %}
 <section class="idm-tabbed-header"
   data-idm-tabbed-header
   data-autoplay-enabled="{{ config.autoplay.enabled | default: false }}"
-  data-default-interval="{{ config.autoplay.default_interval_seconds | default: 10 }}"
+  data-default-interval="{{ fallback_interval }}"
   data-pause-on-hover="{{ config.autoplay.pause_on_hover | default: true }}"
   data-pause-on-focus="{{ config.autoplay.pause_on_focus | default: true }}"
   data-stop-after-manual="{{ config.autoplay.stop_after_manual_selection | default: true }}"
@@ -63,11 +67,11 @@
             aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
             aria-controls="idm-panel-{{ tab.id | escape }}"
             tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
-            data-interval-seconds="{{ tab.interval_seconds | default: config.autoplay.default_interval_seconds | default: 10 }}"
+            data-interval-seconds="{{ tab.interval_seconds | default: fallback_interval }}"
             data-outer-background-color="{{ tab.outer_background_color | default: config.default_outer_background_color | escape }}"
             data-background-image="{{ tab_image | relative_url | escape }}"
             style="--idm-entry-background: {{ tab_background | escape }}; --idm-entry-text: {{ tab_text | escape }};">
-            {{ tab.label | escape }}
+            <span class="idm-tabbed-header__tab-label" data-full-label="{{ tab.label | escape }}">{{ tab.label | escape }}</span>
           </button>
         {% endfor %}
       </div>
@@ -75,11 +79,11 @@
       <button type="button"
         class="idm-tabbed-header__autoplay-toggle"
         aria-pressed="{{ config.autoplay.enabled | default: false }}"
-        aria-label="{% if config.autoplay.enabled %}Stop{% else %}Start{% endif %}"
-        data-tooltip="{% if config.autoplay.enabled %}Stop{% else %}Start{% endif %}"
+        aria-label="{% if config.autoplay.enabled %}Pause{% else %}Start{% endif %}"
+        data-tooltip="{% if config.autoplay.enabled %}Pause{% else %}Start{% endif %}"
         data-idm-autoplay-toggle>
         <span class="idm-tabbed-header__toggle-icon" aria-hidden="true"></span>
-        <span class="usa-sr-only" data-idm-autoplay-label>{% if config.autoplay.enabled %}Stop{% else %}Start{% endif %}</span>
+        <span class="usa-sr-only" data-idm-autoplay-label>{% if config.autoplay.enabled %}Pause{% else %}Start{% endif %}</span>
       </button>
     </div>
   </div>
