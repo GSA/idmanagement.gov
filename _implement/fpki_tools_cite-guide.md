@@ -143,8 +143,8 @@ The FPKIMA has developed [draft Common PQC Certificate and CRL Profiles]({{site.
 | Test FCPCA G2 | http://cite.fpki.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://cite.fpki.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
 | Test FBCA G5 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag5.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag5.p7c |
 | Test FBCA G4 | http://cite.fpki.gov/bridge/caCertsIssuedByTestfbcag4.p7c | http://cite.fpki.gov/bridge/caCertsIssuedToTestfbcag4.p7c |
-| Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedByDevfcpcaD1.p7c | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedToDevfcpcaD1.p7c |
-| Dev FBCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedByDevfbcaD1.p7c | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedToDevfbcaD1.p7c |
+| Dev FCPCA D1 | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedByDevfcpcaD1.p7c | http://repo.brawl.fpki-lab.gov/fcpca/caCertsIssuedToDevfcpcaD1.p7c |
+| Dev FBCA D1 | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedByDevfbcaD1.p7c | http://repo.brawl.fpki-lab.gov/bridge/caCertsIssuedToDevfbcaD1.p7c |
 
 | Test Partner CRLs | CRL URL |
 | ------------ | ----------- |
