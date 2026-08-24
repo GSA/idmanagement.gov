@@ -4474,9 +4474,7 @@ function toggleHtmlTag(isMobile) {
   const primaryLinks = bigFooter.querySelectorAll(BUTTON);
   primaryLinks.forEach(currentElement => {
     const currentElementClasses = currentElement.getAttribute("class");
-    const requestedTag = currentElement.getAttribute("data-tag");
-    const normalizedTag = (requestedTag || currentElement.tagName || "H4").toUpperCase();
-    const preservedHtmlTag = normalizedTag === "H4" ? "h4" : "h4";
+    const preservedHtmlTag = currentElement.getAttribute("data-tag") || currentElement.tagName;
     const newElementType = isMobile ? "button" : preservedHtmlTag;
 
     // Create the new element

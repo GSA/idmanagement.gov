@@ -622,7 +622,7 @@ Subject:  FPKI System Notification - System Name
       aria-expanded="true"
       aria-controls="n-a1">2026 (Current)</button>
   </h4>
-  <div id="n-a1" class="usa-accordion__content usa-prose">
+  <div id="n-a1" class="usa-accordion__content usa-prose" tabindex="0">
     <div class="usa-width-one-whole">
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}

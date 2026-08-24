@@ -12,7 +12,7 @@ eight.
 				<hr><br>			
 				<ul class="usa-card-group">							
 					<li class="usa-card tablet:grid-col-4">
-						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/vendors/')" onkeydown="navigateTo('{{site.baseurl}}/vendors/')" aria-label="Vendors">
+						<div class="usa-card__container shadow-3 gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}/vendors/')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}/vendors/')" aria-label="Vendors">
 							<div class="usa-card__header" style="padding-bottom: 20px;">
 								<h3 class="gsa-card-heading">Vendors</h3>
 							</div>
@@ -28,7 +28,7 @@ eight.
 						</div>
 					</li>
 					<li class="usa-card tablet:grid-col-4">
-						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/acquisition-professionals/')" onkeydown="navigateTo('{{site.baseurl}}/acquisition-professionals/')" aria-label="Acquisition professionals">
+						<div class="usa-card__container shadow-3 gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}/acquisition-professionals/')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}/acquisition-professionals/')" aria-label="Acquisition professionals">
 							<div class="usa-card__header" style="padding-bottom: 20px;">
 								<h3 class="gsa-card-heading">Acquisition professionals</h3>
 								
@@ -45,7 +45,7 @@ eight.
 						</div>
 					</li>
 					<li class="usa-card tablet:grid-col-4">
-						<div class="usa-card__container shadow-3 gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/program-managers/')" onkeydown="navigateTo('{{site.baseurl}}/program-managers/')" aria-label="Program managers">
+						<div class="usa-card__container shadow-3 gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}/program-managers/')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}/program-managers/')" aria-label="Program managers">
 							<div class="usa-card__header" style="padding-bottom: 20px;">
 								<h3 class="gsa-card-heading">Program managers</h3>
 							</div>
@@ -76,7 +76,7 @@ eight.
 	<div class="desktop:grid-col-12">	<!-- FICAM PMO -->					
 		<ul class="usa-card-group">							
 			<li class="usa-card usa-card--flag desktop:grid-col-12 usa-card--media-left">
-				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0"  tabindex="0" onclick="navigateTo('{{site.baseurl}}/ficam/')" onkeydown="navigateTo('{{site.baseurl}}/ficam/')" aria-label="FICAM program management office">
+				<div class="usa-card__container gsa-card-shadow gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}/ficam/')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}/ficam/')" aria-label="FICAM program management office">
 					<div class="usa-card__header" style="padding-bottom: 20px;">
 						<h3 class="gsa-card-heading">FICAM program management office</h3>
 					</div>
@@ -107,7 +107,7 @@ eight.
 	<div class="desktop:grid-col-12">						
 		<ul class="usa-card-group">		
 			<li class="usa-card tablet:grid-col-4"> <!-- FPKI --->
-				<div class="usa-card__container  gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fpki/')" onkeydown="navigateTo('{{site.baseurl}}/fpki/')" aria-label="Federal public key infrastructure guide">
+				<div class="usa-card__container gsa-card-shadow gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}/fpki/')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}/fpki/')" aria-label="Federal public key infrastructure guide">
 					<div class="usa-card__header">
 						<h3 class="gsa-card-heading" style="padding-bottom: 20px;">Federal public key infrastructure governance</h3>
 					</div>
@@ -131,7 +131,7 @@ eight.
 				</div>
 			</li>
 			<li class="usa-card tablet:grid-col-4"> <!-- FIPS201 EP -->
-				<div class="usa-card__container gsa-card-shadow" tabindex="0" aria-label="FIPS 201 evaluation program">
+				<div class="usa-card__container gsa-card-shadow">
 					<div class="usa-card__header" style="padding-bottom: 20px;">
 						<h3 class="gsa-card-heading">FIPS 201 evaluation program</h3>
 					</div>
@@ -168,7 +168,7 @@ eight.
 				</div>
 			</li>
 			<li class="usa-card tablet:grid-col-4"> <!-- GSA PKI SSP -->
-				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}/gsapkissp/')" onkeydown="navigateTo('{{site.baseurl}}/gsapkissp/')" aria-label="GSA PKI shared service provider program">
+				<div class="usa-card__container gsa-card-shadow gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}/gsapkissp/')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}/gsapkissp/')" aria-label="GSA PKI shared service provider program">
 					<div class="usa-card__header" style="padding-bottom: 20px;">
 						<h3 class="gsa-card-heading">GSA PKI shared service provider program</h3>
 					</div>
@@ -202,7 +202,7 @@ eight.
 			{% assign playbooks = site.data.playbooks | sort: "title" %}
 			{% for playbook in playbooks %}			
 			<li class="usa-card tablet:grid-col-4">
-				<div class="usa-card__container gsa-card-shadow gsa-card" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
+				<div class="usa-card__container gsa-card-shadow gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
 					<div class="usa-card__header"  style="padding-bottom: 20px;">
 						<h3 class="gsa-card-heading">{{playbook.title}}</h3>
 					</div>

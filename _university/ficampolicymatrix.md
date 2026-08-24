@@ -130,10 +130,8 @@ Laws, executive policies, regulations, and government standards drive multiple f
 </style>
 
 <table class="responsive">
+<caption>Policy category key</caption>
 <tbody>
-  <tr>
-    <th scope="row" colspan="5" style="font-weight:700;text-align:center;">Key</th>
-  </tr>
   <tr>
     <th scope="row" id="aocbutton" onclick="location.href='#laws-and-directives'">Act of Congress</th>
     <td id="eobutton" onclick="location.href='#laws-and-directives'">Executive Order</td>
@@ -429,4 +427,3 @@ Some of the documents referenced in this matrix are managed by other agencies an
 | [SP 800-78-5](https://csrc.nist.gov/pubs/sp/800/78/5/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  | Updated |
 
 <br><br>
-
