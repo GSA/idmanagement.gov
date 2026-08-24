@@ -296,8 +296,8 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 
 <!-- Start of New Combined Intrastructure and Validation RPL table -->
 {% assign category = '13.01 PACS and Validation Infrastructure' %}
-<table class="usa-table" aria-labelledby="rpl-caption" aria-describedby="rpl-summary">
-  <caption id="rpl-caption">
+<table class="usa-table" aria-labelledby="rpl-caption-1301" aria-describedby="rpl-summary">
+  <caption id="rpl-caption-1301">
     13.01 PACS and Validation Infrastructure List
   </caption>
   <thead>
@@ -334,8 +334,8 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 <br>
 <!-- Start of 13.02 PACS and Validation Infrastructure Table -->
 {% assign category = '13.02 PACS and Validation Infrastructure' %}
-<table class="usa-table" aria-labelledby="rpl-caption" aria-describedby="rpl-summary">
-  <caption id="rpl-caption">
+<table class="usa-table" aria-labelledby="rpl-caption-1302" aria-describedby="rpl-summary">
+  <caption id="rpl-caption-1302">
     13.02 PACS and Validation Infrastructure List
   </caption>
   <thead>
@@ -372,8 +372,8 @@ Note: GSA will provide the Office of the Federal Chief Information Officer (OFCI
 <br>
 <!-- Start of PIV Card Table -->
 {% assign category = 'PIV Card' %}
-<table class="usa-table" aria-labelledby="rpl-caption" aria-describedby="rpl-summary">
-  <caption id="rpl-caption">{{ category }} Category List</caption>
+<table class="usa-table" aria-labelledby="rpl-caption-piv-card" aria-describedby="rpl-summary">
+  <caption id="rpl-caption-piv-card">{{ category }} Category List</caption>
   <thead>
     <tr>
       <th scope="col" role="columnheader" colspan="6"><b>{{ category }} Category</b></th>
