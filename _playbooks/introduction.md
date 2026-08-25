@@ -19,7 +19,7 @@ subnav:
 {% assign playbooks = site.data.playbooks | sort: "title" %}
 {% for playbook in playbooks %}			
 <li class="usa-card tablet:grid-col-6">
-    <div class="usa-card__container shadow-3 gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}')" onkeydown="if (event.key === 'Enter') navigateTo('{{site.baseurl}}{{playbook.url}}')" aria-label="{{playbook.title}}">
+    <div class="usa-card__container shadow-3 gsa-card" role="link" tabindex="0" onclick="navigateTo('{{site.baseurl}}{{playbook.url}}', event)" onkeydown="navigateTo('{{site.baseurl}}{{playbook.url}}', event)" aria-label="{{playbook.title}}">
         <div class="usa-card__header" style="padding-bottom: 20px;">
             <h3 class="gsa-card-heading">{{playbook.title}}</h3>
         </div>
