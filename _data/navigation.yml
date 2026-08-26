@@ -131,8 +131,8 @@ playbooks:
     href: /playbooks/cloud/
   - text: Delegated Digital Signature Playbook 
     href: /playbooks/dds/ 
-  - text: Digital Identity Risk Assessment Playbook
-    href: /playbooks/dira/ 
+  # - text: Digital Identity Risk Assessment Playbook
+  #   href: /playbooks/dira/ 
   - text: Digitally Sign a Federal Register Notice
     href: /playbooks/signfedregister/
   - text: Digitally Sign a Word Document
