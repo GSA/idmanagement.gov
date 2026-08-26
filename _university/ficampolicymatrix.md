@@ -130,10 +130,8 @@ Laws, executive policies, regulations, and government standards drive multiple f
 </style>
 
 <table class="responsive">
+<caption>Policy category key</caption>
 <tbody>
-  <tr>
-    <th scope="row" colspan="5" style="font-weight:700;text-align:center;">Key</th>
-  </tr>
   <tr>
     <th scope="row" id="aocbutton" onclick="location.href='#laws-and-directives'">Act of Congress</th>
     <td id="eobutton" onclick="location.href='#laws-and-directives'">Executive Order</td>
@@ -232,7 +230,7 @@ Laws are sorted by date, from oldest to newest.
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{document.externalURL}}')" onkeydown="navigateTo('{{document.externalURL}}')" aria-label="{{document.longName}}" tabindex="0" style="border-color: {{lawcolor}};">
+  <div id="gsa-b{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{document.externalURL}}', event)" onkeydown="navigateTo('{{document.externalURL}}', event)" aria-label="{{document.longName}}" tabindex="0" style="border-color: {{lawcolor}};">
         <p>{% if document.published %} Date: {{document.published | date_to_string }} {% endif %}</p>
         <p>
           {{document.description}}
@@ -256,7 +254,7 @@ Laws are sorted by date, from oldest to newest.
       <strong>{{document.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{document.externalURL}}')" onkeydown="navigateTo('{{document.externalURL}}')" aria-label="{{document.longName}}" tabindex="0" style="border-color: {{lawcolor}};">
+  <div id="gsa-a{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{document.externalURL}}', event)" onkeydown="navigateTo('{{document.externalURL}}', event)" aria-label="{{document.longName}}" tabindex="0" style="border-color: {{lawcolor}};">
         <p>{% if document.published %} Date: {{document.published | date_to_string }} {% endif %}</p>
         <p>
           {{document.description}}
@@ -297,7 +295,7 @@ Laws are sorted by date, from oldest to newest.
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policies.externalURL}}')" onkeydown="navigateTo('{{policies.externalURL}}')" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}};">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policies.externalURL}}', event)" onkeydown="navigateTo('{{policies.externalURL}}', event)" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}};">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -318,7 +316,7 @@ Laws are sorted by date, from oldest to newest.
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policies.externalURL}}')" onkeydown="navigateTo('{{policies.externalURL}}')" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}};">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policies.externalURL}}', event)" onkeydown="navigateTo('{{policies.externalURL}}', event)" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}};">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -339,7 +337,7 @@ Laws are sorted by date, from oldest to newest.
       <strong>{{policies.longName}}</strong> 
     </button>
   </h4>
-  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policies.externalURL}}')" onkeydown="navigateTo('{{policies.externalURL}}')" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}};">
+  <div id="gsa-c{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{policies.externalURL}}', event)" onkeydown="navigateTo('{{policies.externalURL}}', event)" aria-label="{{policies.longName}}" tabindex="0" style="border-color: {{polcolor}};">
         <p>{% if policies.published %} Date: {{policies.published | date_to_string }} {% endif %}</p>
         <p>{{policies.description}}</p>
         <hr/>
@@ -390,7 +388,7 @@ This table lists Technical Guidance published under ICAM. They provide technical
       <strong>{{guidance.longName}}</strong> 
     </button>
 </h4>
-  <div id="gsa-e1{% increment innerloop -1 %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{guidance.externalURL}}')" onkeydown="navigateTo('{{guidance.externalURL}}')" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
+  <div id="gsa-e1{% increment innerloop -1 %}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{guidance.externalURL}}', event)" onkeydown="navigateTo('{{guidance.externalURL}}', event)" aria-label="{{guidance.longName}}" tabindex="0" style="border-color: {{guicolor}};">
         <p>{% if guidance.published %} Date: {{guidance.published | date_to_string }} {% endif %}</p>
         <p>{{guidance.description}}</p>
         <hr/>
@@ -429,4 +427,3 @@ Some of the documents referenced in this matrix are managed by other agencies an
 | [SP 800-78-5](https://csrc.nist.gov/pubs/sp/800/78/5/final){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  | Updated |
 
 <br><br>
-
