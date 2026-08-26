@@ -487,6 +487,22 @@
   color: #0000ee; 
 }
 
+// Keep primary navigation text readable while USWDS initializes its desktop
+// menu state. Explicit colors prevent the transparent button transition from
+// producing a low-contrast intermediate state during page load.
+.usa-nav__primary .usa-nav__link,
+.usa-nav__primary .usa-nav__link > span {
+  color: #1b1b1b;
+}
+
+// Accordion headings use a light gray background. The darker foreground
+// exceeds WCAG AA contrast for normal-sized text in every accordion state.
+.usa-accordion__button,
+.usa-accordion__button:hover,
+.usa-accordion__button:focus {
+  color: #1b1b1b;
+}
+
 // 508 Overide #540: # Line Height to 1.5
 .usa-banner__header-text, .usa-identifier__identity-domain, .usa-identifier__identity-disclaimer, .footer-logo-text{
   line-height: 1.5;
@@ -650,6 +666,12 @@
   // Added to fix hero headings on homepage. - cjb  
   margin-top: 5px; 
   margin-bottom: 5px;
+}
+
+// The lower homepage panel has a dark blue background; white provides
+// sufficient contrast for headings regardless of the decorative texture.
+.gsa-icon-panel .hero-heading {
+  color: #ffffff;
 }
 
 
