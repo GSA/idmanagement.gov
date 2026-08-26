@@ -276,7 +276,7 @@ Your agency can group applications according to their major characteristics, sim
 - Where the application resides (e.g., on-premise, cloud-based, or third-party hosted), or
 - Budget cycle and financial priorities (e.g., cost savings) associated with the transition to phishing-resistant, passwordless authentication. 
 
-For example, the [Digital Identity Risk Assessment (DIRA) Playbook]({{site.baseurl}}/playbooks/dira/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and FAL, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
+The Digital Identity Risk Assessment (DIRA) provides a process for identity risk analysis that includes both an application’s level of data sensitivity and its user population (shown in Figure 2). The results are documented in a Digital Identity Assessment Statement (DIAS) which includes the identity, authenticator, and FAL, which agencies can use and integrate as part of their overall Risk Management Framework (RMF) and FISMA processes. 
 
 <img src="{{site.baseurl}}/assets/playbooks/dira-process.png" alt="Five-step DIRA process." width="560" height="462">
 
