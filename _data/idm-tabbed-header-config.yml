@@ -1,8 +1,6 @@
 # IDManagement.gov tabbed header configuration
 #
 # COMPONENT SETTINGS
-# - enabled: Set to true to use the tabbed header. Set to false to allow the
-#   template to render its planned fallback.
 # - autoplay.enabled: Initial state of automatic tab switching. Visitors can
 #   change this with the persistent On/Off toggle to the right of the tabs.
 # - default_interval_seconds: Default number of seconds each tab is displayed
@@ -11,6 +9,8 @@
 #   automatically use 10 seconds instead.
 # - default_background_image: Local site graphic used across the full-width
 #   hero and tab-row background whenever a tab does not specify its own image.
+#   If both values are omitted, the component falls back to
+#   /assets/images/new-background-30-fade.webp.
 # - default_outer_background_color: Optional solid color for the full-width
 #   background and side gutters around the main hero content. Leave blank to use
 #   the component's initial darkest image-matched color, #020711.
@@ -53,8 +53,6 @@
 #   full-width hero graphic remains visible behind the heading and text.
 #   When specified, use a valid CSS hex color that meets WCAG contrast with
 #   tab_content_text_color. Example: "#005ea8".
-
-enabled: true
 
 autoplay:
   enabled: true

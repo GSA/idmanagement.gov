@@ -2,7 +2,7 @@
 {% assign tabs = config.tabs %}
 {% if tabs and tabs.size > 0 %}
 {% assign initial_tab = tabs.first %}
-{% assign initial_image = initial_tab.background_image | default: config.default_background_image | default: "/assets/img/hero.jpg" %}
+{% assign initial_image = initial_tab.background_image | default: config.default_background_image | default: "/assets/images/new-background-30-fade.webp" %}
 {% assign fallback_interval = config.autoplay.default_interval_seconds | default: 15 %}
 {% if tabs.size >= 5 %}
   {% assign fallback_interval = 10 %}
@@ -17,14 +17,14 @@
   data-respect-reduced-motion="{{ config.autoplay.respect_reduced_motion | default: true }}"
   style="--idm-hero-background-image: url('{{ initial_image | relative_url | escape }}');">
   <div class="grid-container idm-tabbed-header__container">
-    <h2 id="idm-tabbed-header-label" class="usa-sr-only">{{ config.aria_label | default: "Featured identity management topics" | escape }}</h2>
+    <div id="idm-tabbed-header-label" class="usa-sr-only">{{ config.aria_label | default: "Featured identity management topics" | escape }}</div>
 
     <div class="idm-tabbed-header__panels">
       {% for tab in tabs %}
         {% assign tab_background = tab.tab_content_background_color | default: "#005ea8" %}
         {% assign tab_text = tab.tab_content_text_color | default: "#ffffff" %}
         {% assign content_background = tab.content_background_color | default: "transparent" %}
-        {% assign tab_image = tab.background_image | default: config.default_background_image | default: "/assets/img/hero.jpg" %}
+        {% assign tab_image = tab.background_image | default: config.default_background_image | default: "/assets/images/new-background-30-fade.webp" %}
         {% if tab.content_background_color %}
           {% assign content_layers = "none" %}
         {% else %}

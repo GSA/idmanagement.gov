@@ -7,21 +7,17 @@ title: Home
 {% comment %} 
 Welcome to official Federalist Jekyll template for the U.S Web Design System 2.0
 
-You'll notice that this page only makes reference to two other html files: hero.html and highlights.html
+The homepage header is provided by idm-tabbed-header.html and its content is
+configured in _data/idm-tabbed-header-config.yml.
 
-To the edit the home page, you can edit those files directly, create new ones or add content directly to
-this page. 
+To edit the lower homepage sections, update highlights.html or add content
+directly to this page.
 
 We recommend splitting apart your site's components into their own smaller section so that its easier to 
 manage in the long term.
 {% endcomment %}
 
-{% assign idm_tabbed_header_config = site.data["idm-tabbed-header-config"] %}
-{% if idm_tabbed_header_config.enabled %}
-  {% include idm-tabbed-header.html %}
-{% else %}
-  {% include hero.html %}
-{% endif %}
+{% include idm-tabbed-header.html %}
 <!--
 {% include tagline.html %}
 -->

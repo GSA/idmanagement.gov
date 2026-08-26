@@ -4,6 +4,7 @@
   var SELECTOR = "[data-idm-tabbed-header]";
   var MIN_INTERVAL_SECONDS = 5;
   var MAX_INTERVAL_SECONDS = 60;
+  var PANEL_FADE_DURATION_MS = 140;
 
   function asBoolean(value, fallback) {
     if (value === "true") return true;
@@ -47,6 +48,7 @@
     this.deadline = 0;
     this.remainingMs = null;
     this.resizeFrame = null;
+    this.panelTransition = 0;
   }
 
   TabbedHeader.prototype.init = function () {
@@ -179,8 +181,8 @@
       var selected = tabIndex === index;
       tab.setAttribute("aria-selected", String(selected));
       tab.setAttribute("tabindex", selected ? "0" : "-1");
-      self.panels[tabIndex].hidden = !selected;
     });
+    this.transitionPanels(index);
 
     var outerColor = validColor(this.tabs[index].dataset.outerBackgroundColor);
     if (outerColor) this.root.style.setProperty("--idm-outer-background", outerColor);
@@ -202,6 +204,44 @@
       this.updateToggle();
     }
     this.schedule();
+  };
+
+  TabbedHeader.prototype.transitionPanels = function (index) {
+    var self = this;
+    var targetPanel = this.panels[index];
+    var outgoingPanel = this.panels.find(function (panel) { return !panel.hidden; });
+    var transitionId = ++this.panelTransition;
+    var reduceMotion = this.respectReducedMotion && this.reducedMotion.matches;
+
+    this.panels.forEach(function (panel) {
+      if (typeof panel.getAnimations === "function") {
+        panel.getAnimations().forEach(function (animation) { animation.cancel(); });
+      }
+    });
+
+    if (!outgoingPanel || outgoingPanel === targetPanel || reduceMotion || typeof targetPanel.animate !== "function") {
+      this.panels.forEach(function (panel) { panel.hidden = panel !== targetPanel; });
+      return;
+    }
+
+    this.panels.forEach(function (panel) {
+      if (panel !== outgoingPanel) panel.hidden = true;
+    });
+
+    outgoingPanel.animate(
+      [{ opacity: 1 }, { opacity: 0 }],
+      { duration: PANEL_FADE_DURATION_MS, easing: "ease-out" }
+    ).finished.then(function () {
+      if (transitionId !== self.panelTransition) return;
+      outgoingPanel.hidden = true;
+      targetPanel.hidden = false;
+      targetPanel.animate(
+        [{ opacity: 0 }, { opacity: 1 }],
+        { duration: PANEL_FADE_DURATION_MS, easing: "ease-in" }
+      );
+    }).catch(function () {
+      // A newer tab selection intentionally cancels the current transition.
+    });
   };
 
   TabbedHeader.prototype.onKeydown = function (event, index) {

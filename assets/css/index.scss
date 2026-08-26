@@ -18,7 +18,7 @@
 .idm-tabbed-header {
   --idm-hero-panel-height: 20rem;
   background-color: var(--idm-outer-background, #020711);
-  background-image: var(--idm-hero-background-image);
+  background-image: linear-gradient(rgba(2, 7, 17, 0.65), rgba(2, 7, 17, 0.65)), var(--idm-hero-background-image);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,13 +37,12 @@
 
 .idm-tabbed-header__controls {
   align-items: stretch;
-  border: 1px solid #dfe1e2;
+  border: 0;
   display: flex;
   gap: 0;
   justify-content: flex-start;
   overflow: visible;
   border-radius: 0 0 0.625rem 0.625rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(27, 27, 27, 0.18);
   box-sizing: border-box;
   left: 0;
   position: absolute;
@@ -53,7 +52,7 @@
 }
 
 .idm-tabbed-header ~ .ficam-page-container {
-  padding-top: 5.5rem !important;
+  padding-top: calc(5.5rem - 15px) !important;
 }
 
 .idm-tabbed-header__tablist {
@@ -82,19 +81,23 @@
 
 .idm-tabbed-header__tab {
   background: #ffffff;
-  border-bottom: 4px solid transparent;
+  box-shadow: 0 0.2rem 0.4rem rgba(27, 27, 27, 0.18);
   color: #005ea8;
   flex: 1 1 0;
   min-width: 0;
   position: relative;
   text-align: center;
+  transform: translateY(-1px);
+  transition: box-shadow 150ms ease, transform 150ms ease;
 }
 
 .idm-tabbed-header__tab-label {
   display: block;
   overflow: hidden;
+  position: relative;
   text-overflow: ellipsis;
   white-space: nowrap;
+  z-index: 1;
 }
 
 .idm-tabbed-header__label-tooltip.usa-tooltip__body {
@@ -141,7 +144,8 @@
 }
 
 .idm-tabbed-header__tab[aria-selected="true"] {
-  background: #005ea8;
+  background: #004b87;
+  box-shadow: 0 0.2rem 0.4rem rgba(27, 27, 27, 0.38);
   color: #ffffff;
   position: relative;
   z-index: 1;
@@ -149,12 +153,13 @@
 
 .idm-tabbed-header__tab[aria-selected="true"]::after {
   animation: idm-tab-progress var(--idm-tab-duration, 10s) linear forwards;
-  background: #5ee15a;
-  bottom: -4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: inherit;
+  bottom: 0;
   content: "";
-  height: 4px;
   left: 0;
   position: absolute;
+  top: 0;
   transform: scaleX(0);
   transform-origin: left center;
   width: 100%;
@@ -171,7 +176,7 @@
 }
 
 .idm-tabbed-header__tab[aria-selected="true"]:hover {
-  background: #005ea8;
+  background: #004b87;
   color: #ffffff;
 }
 
@@ -187,13 +192,20 @@
 .idm-tabbed-header__autoplay-toggle {
   background: #ffffff;
   border-left: 1px solid #c9c9c9;
+  box-shadow: 0 0.2rem 0.4rem rgba(27, 27, 27, 0.18);
   color: #1a4480;
   display: block;
   border-bottom-right-radius: 0.625rem;
   flex: 0 0 auto;
   padding: 0;
   position: relative;
+  transform: translateY(-1px);
+  transition: background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
   width: 44px;
+}
+
+.idm-tabbed-header__autoplay-toggle[aria-pressed="false"] {
+  background: #ffbe2e;
 }
 
 .idm-tabbed-header__autoplay-toggle::after {
@@ -296,6 +308,7 @@
 
 .idm-tabbed-header__heading {
   color: #00bde3;
+  font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
   font-size: clamp(2.25rem, calc(1.5rem + 2vw), 3.5rem);
   line-height: 1.15;
   margin: 0;
@@ -375,7 +388,7 @@
   }
 
   .idm-tabbed-header ~ .ficam-page-container {
-    padding-top: 5.5rem !important;
+    padding-top: calc(5.5rem - 15px) !important;
   }
 }
 
@@ -394,12 +407,9 @@
 }
 
 @media (forced-colors: active) {
-  .idm-tabbed-header__tab[aria-selected="true"] {
-    border-bottom-color: transparent;
-  }
-
   .idm-tabbed-header__tab[aria-selected="true"]::after {
     background: Highlight;
+    opacity: 0.5;
   }
 
   .idm-tabbed-header__tab,
@@ -556,21 +566,6 @@
 }
 
 
-.usa-hero {
-  //background-image: asset_url("new-header-graphic.png");
-  background-image: url("{{site.baseurl}}/assets/images/new-background-30-fade.webp");
-  background-position: 50%;
-  background-size: cover;
-  // height: 380px;
-  height: auto;
-  margin: 0px;
-}
-
-// To make both sides of a slide the same. see: _include/hero.html for element styles
-.splide__slide {
-  padding-left: 50px;
-}
-
 // Back to top button, displays in lower right corner after 500px of scroll.
 .gsa-back-to-top {
   display: none;
@@ -601,35 +596,6 @@
   box-shadow:  0 3px 20px 0 rgba(0, 0, 0, 0.60);
 }
 
-// Responsive Hero for IDManagement
-.gsa-responsive-hero {
-  height:auto;
-  min-width: 220px;
-  padding: 10px;
-}
-
-// Hero text length shortener-er 
-.gsa-text-width {
-  // width: 95%;
-  width: auto;
-}
-
-// GSA Slide positions and height: also see: gsa-responsive-hero
-.gsa-slide {
-  position: relative;
-  // height: 380px;
-  height:auto;
-  display: flex;
-  align-items: center;
-}
-
-
-// Top front panel
-.gsa-top-panel {
-  // background-color: #c8d9f2;
-  background-color: #112e51;
-}
-
 // // Lower front panel
 // .gas-lower-panel {
 //   //background-image: asset_url("new-header-graphic.png");
@@ -656,13 +622,6 @@
   color:rgb(136, 136, 136);
   margin-bottom: 2px;
 }
-// Fix problem with carousel's first slide not displaying at same width as proceeding slides and added tinting to cover busy images that are being selected as headers. 
-.gsa-carousel-fix {
-  width: auto;
-  padding: 20px;
- //background-color: rgba(#000000, 0.7);
-}
-
 // Use this to make accordion headings normal text
 .gsa-normal-text {
   font-weight:500;
@@ -680,11 +639,6 @@
   display: hidden;
 }
 
-.hero-text {
-  color: #ffffff;
-  font-size: 1.4rem;
-}
-
 .hero-heading {
   clear: both;
   font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
@@ -698,12 +652,6 @@
   margin-bottom: 5px;
 }
 
-
-// constrain the height to keep the buttons on screen
-.carousel-content {
-  // height: 370;
-  height: auto;
-}
 
 // Hover for 6 front icon headers natural state and hover  
 .showhover {
@@ -830,21 +778,10 @@
   .paginate-button {
     display: block;
   }
-  // Mobile Carousel adjustments
+  // Mobile homepage heading adjustments
   .hero-heading {
     font-size: 2rem;
   }
-
-  .usa-hero {
-  //background-image: asset_url("new-header-graphic.png");
-  background-image: url("{{site.baseurl}}/assets/images/new-background-30-fade-mobile.webp");
-  background-position: 50%;
-  background-size: cover;
-  // height: 380px;
-  height: auto;
-  margin: 0px;
-}
-
 
   // For bottom panel image on front page, in svg as the background.
 .gsa-icon-panel {
@@ -855,10 +792,6 @@
   //background-repeat: no-repeat;
   //background-size: auto;
 }
-  .hero-text {
-    font-size: 1rem;
-  }
-  
   .usa-button {
     font-size: 0.9rem;
   }
@@ -878,13 +811,9 @@
   .paginate-button {
     display: block;
   }
-  // Mobile Carousel adjustments
+  // Mobile homepage heading adjustments
   .hero-heading {
     font-size: 2rem;
-  }
-  
-  .hero-text {
-    font-size: 1rem;
   }
   
   .usa-button {
