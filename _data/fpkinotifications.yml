@@ -31,6 +31,187 @@
 # ee_cdp_uri:
 # ee_ocsp_uri:
 #
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the XTec NFI SSP Root CA 1 sometime between 8/28 and 9/4/2026.
+  contact:  fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=XTec NFI SSP Root CA 1, OU=Certification Authorities, O=XTec Incorporated, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://aia.xca.xpki.com/AIA/IssuedCertsByXTec_NFI_SSP_Root_CA_1.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the Exostar Federated Identity Service Root CA 2 sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://www.fis.evincible.com/fis/public/ExostarFederatedIdentityServiceRootCA2.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the DoD Interoperability Root CA 3 sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=DoD Interoperability Root CA 3, OU=PKI, O=U.S. Government, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri:  N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the CertiPath Bridge CA-G3 sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=CertiPath Bridge CA-G3, OU=CAs, O=CertiPath, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://aia.certipath.com/IssuedBy-CertiPathBridgeCA-G3.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the WidePoint NFI Root 2 CA sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=WidePoint NFI Root 2, OU=CAs, O=WidePoint, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/caCertsIssuedByWIDEPOINTNFIROOT2.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the TSCP SHA384 Bridge CA sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=TSCP SHA384 Bridge CA, OU=CAs, O=TSCP LLC, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://cacerts.digicert.com/IssuedBy-tscpbcasha384.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.one.digicert.com/tscpbcasha384.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the DigiCert Federated ID CA - G2 sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=DigiCert Federated ID CA - G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the STRAC Bridge Root Certification Authority sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the Entrust Managed Services NFI Root CA sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Entrust Managed Services NFI Root CA, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the IdenTrust Global Common Root CA 1 sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 will issue a new cross-certificate to the USPTO_INTR_CA1 sometime between 8/28 and 9/4/2026.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=USPTO_INTR_CA1, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=uspto, DC=gov
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: http://ipki.uspto.gov/IPKI/CRLs/CombinedCRL4.crl
+  ee_ocsp_uri: N/A
+
+- notice_date: August 14, 2026
+  change_type: Intent to Issue CA Certificate
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 will issue a cross-certificate to the Federal Bridge CA G5 on 8/27/2026.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=Federal Bridge CA G5, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
 - notice_date: July 30, 2026
   change_type: Certificate Interoperability Issue
   system: Department of State PKI

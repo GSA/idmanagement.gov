@@ -21,14 +21,15 @@
    </div>   
    <div id="leftcolumn">
       <div id="unfold">
-          <a href="#" id="aUnfold" class="rightarrow"> </a>
+          <button type="button" id="aUnfold" class="rightarrow" aria-label="Toggle graph controls"></button>
       </div>
       <div id="leftcontent"></div>
    </div>
    <div id="searchbox">			
       <form id="recherche">
+      <label for="searchinput" class="usa-sr-only">Search graph</label>
       <input id="searchinput" class="grey" autocomplete="off" />
-      <input id="searchsubmit" type="submit" />
+      <input id="searchsubmit" type="submit" value="Search" />
       </form>
    </div>
    <div class="overlay"></div>
