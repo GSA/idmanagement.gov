@@ -47,7 +47,7 @@ Announcements older than four years are removed. [Contact us]({{site.baseurl}}/c
     {% if announcement.url == null %}
     <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area" aria-label="{{announcement.name}}" tabindex="0">
     {% else %}
-    <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{announcement.url}}')" onkeydown="navigateTo('{{announcement.url}}')" aria-label="{{announcement.name}}" tabindex="0">
+    <div id="gsa-{{forloop.index}}" class="usa-accordion__content usa-prose gsa-target-accordion-content-area gsa-card" onclick="navigateTo('{{announcement.url}}', event)" onkeydown="navigateTo('{{announcement.url}}', event)" aria-label="{{announcement.name}}" tabindex="0">
     {% endif %}
       <div class="display-flex flex-column flex-align-end">
         <span class="usa-tag">{{announcement.doctype}}</span>

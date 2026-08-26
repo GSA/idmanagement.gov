@@ -13,24 +13,29 @@ console.log("Hi from Federalist");
 //
 // These two function allow you to target a new tab or the same window
 // navigate opens in the same window(_self)
-function navigate(destination) {
-  var type = window.event.type;
-    // check for click or keydown (enter and spacebar) events
-    if (type === 'click' || (type === 'keydown' && event.keyCode === 13 || event.keyCode === 32)) {
-      window.open(destination,"_self");
-      event.preventDefault();
-      event.stopPropagation();
-    } 
+function isCardActivation(event) {
+  if (!event || event.repeat) {
+    return false;
+  }
+
+  return event.type === 'click' ||
+    (event.type === 'keydown' && (event.key === 'Enter' || event.key === ' '));
+}
+
+function navigate(destination, event) {
+  if (isCardActivation(event)) {
+    event.preventDefault();
+    event.stopPropagation();
+    window.open(destination, "_self");
+  }
 }
 // navigateTo open in a new tab or window
-function navigateTo(destination) {
-  var type = window.event.type;
-    // check for click or keydown (enter and spacebar) events
-    if (type === 'click' || (type === 'keydown' && event.keyCode === 13 || event.keyCode === 32) ) {
-      window.open(destination);
-      event.preventDefault();
-      event.stopPropagation();
-    } 
+function navigateTo(destination, event) {
+  if (isCardActivation(event)) {
+    event.preventDefault();
+    event.stopPropagation();
+    window.open(destination, "_blank", "noopener");
+  }
 }
 
 

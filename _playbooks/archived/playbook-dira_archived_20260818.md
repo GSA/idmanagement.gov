@@ -5,7 +5,8 @@ title: Digital Identity Risk Assessment Playbook
 pubdate: 2020-09
 date: September 13, 2021
 type: Markdown
-permalink: /playbooks/dira/
+# Removed on 08/18/2026, see PR #2033 - cjb
+# permalink: /playbooks/dira/
 description: The Digital Identity Risk Assessment playbook is a six-step playbook for completing a digital identity risk assessment as described in OMB Memo 19-17 and NIST Special Publication 800-63-3.
 pdf: "docs/playbook-dira.pdf"
 sidenav: playbooks
