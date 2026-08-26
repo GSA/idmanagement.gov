@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
+/vendor/bundle/
 .bundle
 .jekyll-cache/
 *.code-workspace
@@ -9,3 +10,5 @@ node_modules
 .ds_store
 dockerfile
 docker-compose.yml
+reports
+scripts

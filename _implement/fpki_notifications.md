@@ -74,7 +74,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
 
-**Last Update**: August 03, 2026
+**Last Update**: August 24, 2026
 
 {% include graph.html %}
 
@@ -622,7 +622,7 @@ Subject:  FPKI System Notification - System Name
       aria-expanded="true"
       aria-controls="n-a1">2026 (Current)</button>
   </h4>
-  <div id="n-a1" class="usa-accordion__content usa-prose">
+  <div id="n-a1" class="usa-accordion__content usa-prose" tabindex="0">
     <div class="usa-width-one-whole">
       {% for notification in site.data.fpkinotifications %}
         {% assign nnd = notification.notice_date | split:" " %}
