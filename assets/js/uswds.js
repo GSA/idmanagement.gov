@@ -4475,8 +4475,8 @@ function toggleHtmlTag(isMobile) {
   primaryLinks.forEach(currentElement => {
     const currentElementClasses = currentElement.getAttribute("class");
     const requestedTag = currentElement.getAttribute("data-tag");
-const normalizedTag = (requestedTag || currentElement.tagName || "H4").toUpperCase();
-const preservedHtmlTag = normalizedTag === "H4" ? "h4" : "h4";
+    const normalizedTag = (requestedTag || currentElement.tagName || "H4").toUpperCase();
+    const preservedHtmlTag = normalizedTag === "H4" ? "h4" : "h4";
     const newElementType = isMobile ? "button" : preservedHtmlTag;
 
     // Create the new element

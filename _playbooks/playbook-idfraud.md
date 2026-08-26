@@ -577,63 +577,63 @@ This playbook is a comprehensive guide for agencies to have a common understandi
 </thead>
 <tbody>
   <tr>
-    <th scope="row" headers="acronym">CISA</th>
+    <td headers="acronym">CISA</td>
     <td scope="row" headers="definition">Cybersecurity and Infrastructure Security Agency</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">DARPA</th>
+    <td headers="acronym">DARPA</td>
     <td scope="row" headers="definition">Defense Advanced Research Projects Agency</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">FBI</th>
+    <td headers="acronym">FBI</td>
     <td scope="row" headers="definition">Federal Bureau of Investigation</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">FISMA</th>
+    <td headers="acronym">FISMA</td>
     <td scope="row" headers="definition">Federal Information Security Management Act</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">GAN</th>
+    <td headers="acronym">GAN</td>
     <td scope="row" headers="definition">Generative Adversarial Network</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">GAO</th>
+    <td headers="acronym">GAO</td>
     <td scope="row" headers="definition">Government Accountability Office</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">GSA</th>
+    <td headers="acronym">GSA</td>
     <td scope="row" headers="definition">General Services Agency</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">ICAM</th>
+    <td headers="acronym">ICAM</td>
     <td scope="row" headers="definition">Identity, Credential, and Access Management</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">IRP</th>
+    <td headers="acronym">IRP</td>
     <td scope="row" headers="definition">Incident Response Planning</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">NIST</th>
+    <td headers="acronym">NIST</td>
     <td scope="row" headers="definition">National Institute of Standards and Technology</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">OGP</th>
+    <td headers="acronym">OGP</td>
     <td scope="row" headers="definition">Office of Government-wide Policy</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">OIG</th>
+    <td headers="acronym">OIG</td>
     <td scope="row" headers="definition">Office of Inspector General</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">OMB</th>
+    <td headers="acronym">OMB</td>
     <td scope="row" headers="definition">Office of Management and Budget</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">SemaFor</th>
+    <td headers="acronym">SemaFor</td>
     <td scope="row" headers="definition">Semantic Forensics</td>
   </tr>
   <tr>
-    <th scope="row" headers="acronym">SMS</th>
+    <td headers="acronym">SMS</td>
     <td scope="row" headers="definition">Short Message Service</td>
   </tr>
 </tbody>

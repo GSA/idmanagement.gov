@@ -13,6 +13,30 @@
 # status (archived) - Documents three years or older no longer valid. (document is actually retained in this repository, but not posted to the website.)
 # Remove - Date to change status from post to archive. (This could be three years for change proposals or three years from when a document was replaced.)
 
+- category: FPKIMA Audit Letter
+  numberProposal: 2025
+  name: FPKIMA Audit Letter 2025
+  date: 8/21/2026
+  url: /docs/archived/fpki-fpkima-audit-letter-2025.pdf
+  status: post
+  remove: 8/21/2026
+
+- category: FPKI Trust Infrastructure Certificate Practice Statement
+  numberProposal: 6.7
+  name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.7
+  date: 8/21/2026
+  url: /docs/archived/fpki-fpkima-cps-v67.pdf
+  status: post
+  remove: 8/21/2029
+
+- category: FPKI Trust Infrastructure Certificate Practice Statement
+  numberProposal: 6.6
+  name: X.509 Certificate Practice Statement For the FPKI Trust Infrastructure v6.6
+  date: 8/21/2026
+  url: /docs/archived/fpki-fpkima-cps-v66.pdf
+  status: post
+  remove: 8/21/2029
+
 - category: Federal Public Trust TLS Certificate Policy
   numberProposal: 1.2
   name: U.S. Federal Public Trust TLS Certificate Policy v1.2
