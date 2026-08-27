@@ -7,8 +7,8 @@ extra_script: /assets/js/document-center.js
 ---
 
 <main id="main-content" class="dc-page" data-document-center data-base-url="{{ site.baseurl }}" data-index-url="{{ site.baseurl }}/assets/data/document-center.json">
-  <div class="grid-container">
-    <h1 id="dc-heading">Document Center</h1>
+  <div class="grid-container usa-layout-docs usa-prose">
+    <h1 id="dc-heading" class="dc-page-title">{{ page.title }}</h1>
     <div class="grid-row grid-gap flex-align-start dc-intro-row">
       <div class="tablet:grid-col-8 dc-welcome-text">
         <p>Welcome to the Document Center. Use this tool to quickly discover, review, and download documents published by IDManagement.gov. Start with a search or select one or more filters. Then select a file to review its details, or preview it by clicking its file name. File-type selections can be combined to add matching documents to the document list. Deselecting a filter type removes only its matching files, making it easy to refine the results without starting over.</p>
@@ -31,7 +31,7 @@ extra_script: /assets/js/document-center.js
             Experiments <span class="dc-filter-remove" aria-hidden="true" hidden>×</span>
           </button>
         </div>
-        <p class="dc-filter-help">Select one or more filters. Select an active filter again to remove it.</p>
+        <p class="dc-filter-help">Select one or more filters to filter results, select it again to remove an active filter.</p>
       </section>
     </div>
 

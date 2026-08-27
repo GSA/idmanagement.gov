@@ -82,20 +82,22 @@
   color: #0000ee; 
 }
 
-// Keep primary navigation text readable while USWDS initializes its desktop
-// menu state. Explicit colors prevent the transparent button transition from
-// producing a low-contrast intermediate state during page load.
-.usa-nav__primary .usa-nav__link,
-.usa-nav__primary .usa-nav__link > span {
-  color: #1b1b1b;
-}
+// Restore the desktop primary navigation's inverse hover/selected treatment.
+// Keep this scoped above the USWDS desktop breakpoint so mobile navigation
+// retains its standard light-background colors.
+@media all and (min-width: 64em) {
+  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link:hover,
+  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link.usa-current,
+  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link[aria-expanded="true"],
+  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link[aria-expanded="true"]:hover {
+    background-color: #162e51;
+    color: #fff;
+  }
 
-// Accordion headings use a light gray background. The darker foreground
-// exceeds WCAG AA contrast for normal-sized text in every accordion state.
-.usa-accordion__button,
-.usa-accordion__button:hover,
-.usa-accordion__button:focus {
-  color: #1b1b1b;
+  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link:hover span::after,
+  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link[aria-expanded="true"] span::after {
+    background-color: #fff;
+  }
 }
 
 // 508 Overide #540: # Line Height to 1.5

@@ -1,5 +1,6 @@
-.dc-page { overflow-x: clip; padding: 2rem 0 4rem; }
-.dc-intro-row { margin-bottom: 1rem; }
+.dc-page { overflow-x: clip; padding: 1.875rem 0 4rem; }
+.dc-page .dc-page-title { margin: 0 0 1rem; }
+.dc-intro-row { margin-bottom: .75rem; }
 .dc-welcome-text p { font-size: 1rem; line-height: 1.6; margin: 0 0 .65rem; max-width: 75ch; }
 .dc-help-link, .dc-help-link:visited, .dc-help-link:hover, .dc-help-link:active { align-items: center; color: #1a4480; display: inline-flex; flex: 0 0 auto; font-size: 1rem; gap: .3rem; text-decoration: none; }
 .dc-help-link:focus { outline: .25rem solid #2491ff; outline-offset: .125rem; }
@@ -35,7 +36,7 @@
 .dc-exclude-archived-control { align-items: center; display: inline-flex; flex: 0 0 auto; margin: 0; white-space: nowrap; }
 .dc-exclude-archived-control .usa-checkbox__input + .usa-checkbox__label { font-size: .8rem; line-height: 1rem; margin: 0; padding-left: 1.35rem; }
 .dc-exclude-archived-control .usa-checkbox__input + .usa-checkbox__label::before { height: .9rem; margin-left: 0; margin-top: .05rem; width: .9rem; }
-.dc-filter-help { margin: .75rem 0 0; }
+.dc-filter-help { font-size: .875rem; margin: .75rem 0 0; }
 .dc-status { font-weight: 700; }
 .dc-table-wrap { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; width: 100%; }
 .dc-table { border-collapse: collapse; width: 100%; }
