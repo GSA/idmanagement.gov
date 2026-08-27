@@ -1039,7 +1039,7 @@ The following certificates are published in the Federal Common Policy CA certifi
 
 ### Certificates issued to the Federal Common Policy CA
 
-{% include alert-error.html content="**Prevent Path Building Errors!** The following return cross-certificates are intended for external affiliates to build trust paths from Federally issued PKI certificates to their own private roots, these are not intended for use in Federal relying party applications as they create path building loops to un-trusted root CAs. It is highly recommended that these certificates are placed in untrusted certificate stores to prevent unintended path building errors. %}
+{% include alert-error.html content="**Prevent Path Building Errors!** The following return cross-certificates are intended for external affiliates to build trust paths from Federally issued PKI certificates to their own private roots, these are not intended for use in Federal relying party applications as they create path building loops to un-trusted root CAs. It is highly recommended that these certificates are placed in untrusted certificate stores to prevent unintended path building errors." %}
 
 Distrusting the certificates below will prevent workstations from building a path from the Federal Common Policy CA, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.
 
