@@ -81,7 +81,7 @@ subnav:
   </div>
 </div>
 
-{% include alert-warning.html content="**Non-DoD Applications that Authenticate CAC!** Note that in parallel with the FBCA G5 migration, DoD will be migrating from their Interoperability Root CA 2 to a newer Interoperability Root CA 3. IRCA3 will also be issuing new cross-certificates to the DoD and ECA Root CAs which may need to be included in your application trust stores for continued CAC authentication support. See our [FPKI announcement]({{site.baseurl}}/implement/announcements/FBCAG5){:class=\"usa-link\"} " for additional details and resources to obtain these needed cross-certificates. %}
+{% include alert-warning.html content="**Non-DoD Applications that Authenticate CAC!** Note that in parallel with the FBCA G5 migration, DoD will be migrating from their Interoperability Root CA 2 to a newer Interoperability Root CA 3. IRCA3 will also be issuing new cross-certificates to the DoD and ECA Root CAs which may need to be included in your application trust stores for continued CAC authentication support. See our [FPKI announcement]({{site.baseurl}}/implement/announcements/FBCAG5){:class=\"usa-link\"} for additional details and resources to obtain these needed cross-certificates. %}
 
 This guide provides information on distributing the Federal Common Policy CA G2 (FCPCAG2) certificate to government-furnished workstations and devices as a _trusted root certificate_.
 
