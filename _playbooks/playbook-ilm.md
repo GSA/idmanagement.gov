@@ -45,47 +45,66 @@ subnav:
 
 **Date: March 31, 2026 - Version: 1.4**
 
-<button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
-Date: {{page.pubdate}} - Version: {{page.version}}
-</button>
-<div id="v-a1" class="usa-accordion__content usa-prose">
-<table>
-  <caption>Identity Lifecycle Management version table</caption>
-  <thead>
-  <tr>
-    <th scope='col'>Version Number</th>
-    <th scope='col'>Date</th>
-    <th scope='col'>Change Description</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <th scope='row'>1.4</th>
-    <td>3/31/2026</td>
-    <td>Major update incorporating Enhanced Authentication Standards, Federation Requirements, Privacy Impact Assessment Requirements, Incident Response Framework, and Performance Metrics aligned with NIST 800-63 standards.</td>
-  </tr>
-  <tr>
-    <th scope='row'>1.3</th>
-    <td>6/18/2024</td>
-    <td>Incorporated Zero Trust elements.</td>
-  </tr>
-  <tr>
-    <th scope='row'>1.2</th>
-    <td>12/15/2022</td>
-    <td>Minor editorial updates.</td>
-  </tr>
-  <tr>
-    <th scope='row'>1.1</th>
-    <td>10/11/2022</td>
-    <td>Move 3rd party federation content to the Cloud Identity Playbook federation section.</td>
-  </tr>
-  <tr>
-    <th scope='row'>1.0</th>
-    <td>06/30/2022</td>
-    <td>Initial Draft.</td>
-  </tr>
-  </tbody>
-</table>
+<br>
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-a1" class="usa-accordion__content usa-prose">
+    <table>
+    <caption>Identity Lifecycle Management version table</caption>
+    <thead>
+    <tr>
+        <th scope='col'>
+        Version Number
+        </th>
+        <th scope='col'>
+        Date
+        </th>
+        <th scope='col'>
+        Change Description
+        </th>
+    </tr>
+    </thead>
+     <tr>
+        <th scope='row'>
+        1.4
+        </th>
+        <td>3/31/2026</td>
+        <td>Major update incorporating Enhanced Authentication Standards, Federation Requirements, Privacy Impact Assessment Requirements, Incident Response Framework, and Performance Metrics aligned with NIST 800-63 standards.</td>
+    </tr>
+     <tr>
+        <th scope='row'>
+        1.3
+        </th>
+        <td>6/18/2024</td>
+        <td>Incorporated Zero Trust elements.</td>
+    </tr>
+      <tr>
+        <th scope='row'>
+        1.2
+        </th>
+        <td>12/15/2022</td>
+        <td>Minor editorial updates.</td>
+    </tr>
+    <tr>
+        <th scope='row'>
+        1.1
+        </th>
+        <td>10/11/2022</td>
+        <td>Move 3rd party federation content to the Cloud Identity Playbook federation section.</td>
+    </tr>
+    <tr>
+        <th scope='row'>
+        1.0
+        </th>
+        <td>06/30/2022</td>
+        <td>Initial Draft.</td>
+    </tr>
+    </table>
+  </div>
 </div>
 
 ## Executive Summary

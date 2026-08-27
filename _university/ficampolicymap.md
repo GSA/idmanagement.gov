@@ -36,6 +36,12 @@ sticky_sidenav: true
         text-decoration: none;
       }
 
+      /* SVG link text must not inherit the site's blue anchor color. Black
+         remains readable on every pastel policy-map panel and button. */
+      svg text, svg tspan {
+        fill: #1b1b1b;
+      }
+
     /* Act of Congress Buttons */
       .aocbutton {
         fill: rgb(255, 204, 153);
@@ -1131,4 +1137,3 @@ sticky_sidenav: true
 <!-- End of Policy Matrix (SVG) - CJB -->
   </div> <!-- grid-container -->
 </div> <!-- usa-section --> 
-

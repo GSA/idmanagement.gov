@@ -148,8 +148,8 @@ This section contains information on audits performed on the Federal Common Poli
 
 The FPKIMA Certification Practice Statement (CPS) documents the operational practices required to ensure trusted operations. Additional compliance audit information for the FPKI Trust Infrastructure Systems is also provided below.
 
-- [U.S. FPKI Certification Practice Statement (PDF, September 2025) – Version 6.6]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-- [U.S. FPKI Audit Letter of Compliance (PDF, August 2025)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Results of the August 2024-August 2025 Compliance Audit for the FPKI Trust Infrastructure Systems.
+- [U.S. FPKI Certification Practice Statement (PDF, August 2026) – Version 6.8]({{site.baseurl}}/docs/fpki-fpkima-cps.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
+- [U.S. FPKI Audit Letter of Compliance (PDF, August 2026)]({{site.baseurl}}/docs/fpki-fpkima-audit-letter.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"} – Results of the August 2025-August 2026 Compliance Audit for the FPKI Trust Infrastructure Systems.
 - [FPKI Trust Infrastructure “HTTP.FPKI.Gov” URL Site Map (PDF, September 2022)]({{site.baseurl}}/docs/fpki-fpkima-sitemap.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [Community Interoperability Test Environment (CITE)]({{site.baseurl}}/implement/fpkicite/){:rel="noopener noreferrer"}{:class="usa-link"} - information regarding the test FPKI environment to include test CA respsitory information and test certificate policy object identifiers.
 

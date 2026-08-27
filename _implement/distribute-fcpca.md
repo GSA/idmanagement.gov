@@ -25,7 +25,7 @@ subnav:
     href: '#frequently-asked-questions'
 ---
 
-<div class="usa-accordion" aria-multiselectable="false">
+<div class="usa-accordion">
     <h4 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="v-a1">
         Date: {{page.pubdate}} - Version: {{page.version}}</button>
