@@ -82,24 +82,6 @@
   color: #0000ee; 
 }
 
-// Restore the desktop primary navigation's inverse hover/selected treatment.
-// Keep this scoped above the USWDS desktop breakpoint so mobile navigation
-// retains its standard light-background colors.
-@media all and (min-width: 64em) {
-  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link:hover,
-  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link.usa-current,
-  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link[aria-expanded="true"],
-  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link[aria-expanded="true"]:hover {
-    background-color: #005ea2;
-    color: #fff;
-  }
-
-  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link:hover span::after,
-  .usa-nav__primary > .usa-nav__primary-item > .usa-nav__link[aria-expanded="true"] span::after {
-    background-color: #fff;
-  }
-}
-
 // 508 Overide #540: # Line Height to 1.5
 .usa-banner__header-text, .usa-identifier__identity-domain, .usa-identifier__identity-disclaimer, .footer-logo-text{
   line-height: 1.5;
