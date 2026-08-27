@@ -871,6 +871,7 @@ The steps to distribute an intermediate CA certificate are the same as the steps
 
 The following certificates are published in the Federal Common Policy CA certificate's Subject Information Access extension bundle located at [http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c](http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c){:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
+- [Issued to: Federal Bridge CA G5](#issued-to-federal-bridge-ca-g5){:class="usa-link"}
 - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4){:class="usa-link"}
 - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca){:class="usa-link"}
 - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca){:class="usa-link"}
@@ -883,6 +884,17 @@ The following certificates are published in the Federal Common Policy CA certifi
 - [Issued to: WidePoint SSP Intermediate CA](#issued-to-widepoint-ssp-intermediate-ca-2){:class="usa-link"}
 
 {% include alert-warning.html content="**Important!** To ensure PIV credentials are accepted by systems that are unable to perform dynamic path validation, you'll need to distribute additional intermediate CA certificates. Learn more on our [Frequently Asked Questions](#frequently-asked-questions){:class=\"usa-link\"} page." %}
+
+#### Issued to: Federal Bridge CA G5
+
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | CN=Federal Bridge CA G5, OU=FPKI, O=U.S. Government, C=US    |
+| Validity | August 26, 2026 to TBD, 2035 |
+| Serial Number | TBD  |
+| SHA-1 Thumbprint | TBD |
+| SHA-256 Thumbprint | TBD  |
+| Download Location | Click [here]({{site.baseurl}}/implement/certs/federal_bridge_ca_g5.cer){:class="usa-link"}|
 
 #### Issued to: Federal Bridge CA G4
 
