@@ -77,8 +77,8 @@ primary_navigation:
         url: /implement/scl-ssh/
       - name: Smart Card Logon for Firefox
         url: /implement/scl-firefox/
-      - name: Windows Hello for Business
-        url: /implement/whfb/
+      # - name: Windows Hello for Business
+      #   url: /implement/whfb/
       - name: Certificate-Based Authentication
         url: /implement/cba-azure/
       - name: Sign and Encrypt Email in Outlook
