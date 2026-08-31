@@ -678,52 +678,52 @@ Increasingly, device vendors are adding built-in fingerprint sensors to keyboard
 <br />
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a1">
     What’s the difference between Windows Hello and Windows Hello for Business?</button>
   </h4>
-  <div id="b-a1" class="usa-accordion__content usa-prose">
+  <div id="a1" class="usa-accordion__content usa-prose">
     <p>Windows Hello represents the biometric framework provided in Windows. Windows Hello lets users use biometrics to sign in to their devices by securely storing their user name and password and releasing it for authentication when the user successfully identifies themselves using biometrics. Windows Hello for Business uses asymmetric keys protected by the device’s security module that requires a user gesture (PIN or biometrics) to authenticate.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">Where is the Windows Hello biometrics data stored?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a2">Where is the Windows Hello biometrics data stored?</button>
   </h4>
-  <div id="b-a2" class="usa-accordion__content usa-prose">
+  <div id="a2" class="usa-accordion__content usa-prose">
     <p>When you enroll in Windows Hello, a representation of your biometrics, called an enrollment profile, is created. This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows devices. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn’t roam, never leaves the module, and is never sent to the Microsoft cloud or an external server.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">What happens when a user forgets their PIN?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a3">What happens when a user forgets their PIN?</button>
   </h4>
-  <div id="b-a3" class="usa-accordion__content usa-prose">
+  <div id="a3" class="usa-accordion__content usa-prose">
     <p>If the user can sign in with a password, they can reset their PIN by selecting the I forgot my PIN link in the Settings app. Users can reset their PIN from the lock screen by selecting the I forgot my PIN link on the PIN credential provider. For on-premises deployments, devices must be connected to their on-premises network (domain controllers and/or certificate authority) to reset PINs.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">Can I disable the PIN while using Windows Hello for Business?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a4">Can I disable the PIN while using Windows Hello for Business?</button>
   </h4>
-  <div id="b-a4" class="usa-accordion__content usa-prose">
+  <div id="a4" class="usa-accordion__content usa-prose">
     <p>No. The movement away from passwords is accomplished by gradually reducing the use of the password. In situations where you can’t authenticate by using biometrics, you need a fallback mechanism that isn’t a password. The PIN is the fallback mechanism. Disabling or hiding the PIN credential provider will disable the use of biometrics.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a5">How many users can enroll for Windows Hello for Business on a single Windows device?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a5">How many users can enroll for Windows Hello for Business on a single Windows device?</button>
   </h4>
-  <div id="b-a5" class="usa-accordion__content usa-prose">
+  <div id="a5" class="usa-accordion__content usa-prose">
     <p>The maximum number of supported enrollments on a single device is 10\. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, or for users that sign in to many devices (for example, a support technician), the use of FIDO2 security keys is recommended.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a6">Can I use third-party MFA providers with Windows Hello for Business?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a6">Can I use third-party MFA providers with Windows Hello for Business?</button>
   </h4>
-  <div id="b-a6" class="usa-accordion__content usa-prose">
+  <div id="a6" class="usa-accordion__content usa-prose">
     <p>Yes, if you’re using federated hybrid deployment, you can use any third-party that provides an AD FS MFA adapter.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a7">Is Windows Hello for Business considered multi-factor authentication?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a7">Is Windows Hello for Business considered multi-factor authentication?</button>
   </h4>
-  <div id="b-a7" class="usa-accordion__content usa-prose">
+  <div id="a7" class="usa-accordion__content usa-prose">
     <p>Windows Hello for Business is two-factor authentication based on the observed authentication factors of: something you have, something you know, and something that’s part of you. Windows Hello for Business incorporates two of these factors: something you have (the user’s private key protected by the device’s security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the something you know authentication factor with the something that is a part of you factor, with the assurances that users can fall back to the something you know factor.</p>
   </div>
   <h4 class="usa-accordion__heading">
-    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a8">Can I use both a PIN and biometrics to unlock my device?</button>
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="a8">Can I use both a PIN and biometrics to unlock my device?</button>
   </h4>
-  <div id="b-a8 class="usa-accordion__content usa-prose">
+  <div id="a8" class="usa-accordion__content usa-prose">
     <p>You can use multi-factor unlock to require users to provide an extra factor to unlock their device. Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop.</p>
   </div>
 </div>
