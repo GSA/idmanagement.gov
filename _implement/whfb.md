@@ -675,7 +675,7 @@ Increasingly, device vendors are adding built-in fingerprint sensors to keyboard
 ![Figure 54: Windows Hello for Business Fingerprint Scan Complete]({{site.baseurl}}/assets/playbooks/whfb/54-WHfB-Fingerprint-complete.png)
 
 ## Windows Hello for Business FAQs
-
+<br />
 <div class="usa-accordion usa-accordion--bordered">
   <h4 class="usa-accordion__heading">
     <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
