@@ -74,7 +74,7 @@ subnav:
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Upcoming FBCA G5 Migration</h4>
     <p class="usa-alert__text">
-      The FBCA G4 is going to be replaced by the FBCA G5 starting on August 27th, 2026.  This is to comply with Federal cryptographic strength requirements and may require applications to update their trust stores with new intermediate CA certificates to ensure interoperability with FBCA affiliate issued credentials.<br><br>See the section below on <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://www.idmanagement.gov/implement/trust-fcpca/#step-5---distribute-intermediate-certificates">distributing intermediate certificates</a> for information on this new FBCA cross-certificate.<br><br>You can find additional information regarding the full migration plan in the following
+      The FBCA G4 is going to be replaced by the FBCA G5 starting on August 27th, 2026.  This is to comply with CA certificate lifecycle management and Federal cryptographic strength requirements and may require applications to update their trust stores with new intermediate CA certificates to ensure interoperability with FBCA affiliate issued credentials.<br><br>See the section below on <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://www.idmanagement.gov/implement/trust-fcpca/#step-5---distribute-intermediate-certificates">distributing intermediate certificates</a> for information on this new FBCA cross-certificate.<br><br>You can find additional information regarding the full migration plan in the following
       <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://www.idmanagement.gov/implement/announcements/FBCAG5/">FPKI announcement</a>
       to include a link containing instructions on distributing needed cross-certificates to include the new DoD Interoperability Root CA 3.
     </p>
@@ -903,10 +903,10 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | CN=Federal Bridge CA G5, OU=FPKI, O=U.S. Government, C=US    |
-| Validity | August 26, 2026 to TBD, 2035 |
-| Serial Number | TBD  |
-| SHA-1 Thumbprint | TBD |
-| SHA-256 Thumbprint | TBD  |
+| Validity | September 1, 2026 to August 27, 2036 |
+| Serial Number | 550e44b507da9c9fa4ea0105711f8e47  |
+| SHA-1 Thumbprint | 679386d75f1836dcad3ab129b891d89bf5b50109 |
+| SHA-256 Thumbprint | 67dcfbd9e6c20fdf9b03c7833b3066b3bf828d370ceac14ed0ee38c0273cd579  |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/federal_bridge_ca_g5.cer){:class="usa-link"}|
 
 #### Issued to: Federal Bridge CA G4
@@ -1047,7 +1047,7 @@ Distrusting the certificates below will prevent workstations from building a pat
 
 | Certificate Attribute | Value |
 | :--------  | :-------- |
-| Distinguished Name | CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US |
+| Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
 | Validity | October 15, 2020 to December 6, 2029  |
 | Serial Number | 129217e6c9126fd816babe02d9192ae2b519e231 |
 | SHA-1 Thumbprint | edf2d373f4c56b5186087300638e3c5660c9a090 |
@@ -1058,11 +1058,11 @@ Distrusting the certificates below will prevent workstations from building a pat
 
 | Certificate Attribute | Value |
 | :--------  | :-------- |
-| Distinguished Name | CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US |
-| Validity | August 27, 2026 to TBD  |
-| Serial Number | TBD |
-| SHA-1 Thumbprint | TBD |
-| SHA-256 Thumbprint | TBD |
+| Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
+| Validity | September 1, 2026 to August 27, 2036  |
+| Serial Number | 00aa8e56989f762eaca5940f57d479f463 |
+| SHA-1 Thumbprint | b5e968997b753aff7582950df55bbcf753330ca5 |
+| SHA-256 Thumbprint | 412f1da34d36ba1a2af6a589599ed528439d8d312a63a9c2b72eace584cc2697 |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/Federal_Common_Policy_CA_G2_from_FBCAG5.cer){:class="usa-link"}|
 
 The easiest way to verify your migration to the Federal Common Policy CA G2 (FCPCAG2) is to validate one of your PIV credential certificates.
