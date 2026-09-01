@@ -24,6 +24,19 @@ subnav:
 
 ---
 
+<div class="usa-alert usa-alert--error" role="alert">
+  <div class="usa-alert__body">
+    <h4 class="usa-alert__heading">Upcoming FBCA G5 Migration</h4>
+    <p class="usa-alert__text">
+      The FBCA G4 is going to be replaced by the FBCA G5 starting on August 27th, 2026.  This is to comply with CA certificate lifecycle management and Federal cryptographic strength requirements and may require applications to update their trust stores with new intermediate CA certificates to ensure interoperability with FBCA affiliate issued credentials.<br><br>You can find additional information regarding the full migration plan in the following
+      <a class="usa-link usa-link--external" target="_blank" rel="noopener noreferrer" href="https://www.idmanagement.gov/implement/announcements/FBCAG5/">FPKI announcement</a>
+      to include a link containing instructions on distributing needed cross-certificates to include the new DoD Interoperability Root CA 3.
+    </p>
+  </div>
+</div>
+
+{% include alert-warning.html content="**Non-DoD Applications that Authenticate CAC!** Note that in parallel with the FBCA G5 migration, DoD will be migrating from their Interoperability Root CA 2 to a newer Interoperability Root CA 3. IRCA3 will also be issuing new cross-certificates to the DoD and ECA Root CAs which may need to be included in your application trust stores for continued CAC authentication support." %}
+
 This page contains information that is helpful in identifying changes in the Federal PKI. This includes identifying PIV issuing CA and operational changes such as URL endpoints and system outages.
 
 1. [FPKI Announcements](#fpki-announcements){:class="usa-link"} - Hot topics impact the Federal PKI.
