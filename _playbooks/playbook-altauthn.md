@@ -150,7 +150,7 @@ To help support agencies aggressively replace passwords and other phishable auth
 
 ## Challenges and Lessons Learned
 
-The FIDO2 CoA completed two cohorts, which included eight agencies that either piloted a solution or evolved a pilot to their entire production community. The pilots included a combination of platform authenticators and roaming authenticators like Yubico Yubikey and RSA DS-100.
+The FIDO2 CoA completed two cohorts, which included eight agencies that either piloted a solution or evolved a pilot to their entire production community. The pilots included a combination of platform authenticators like [Windows Hello for Business]({{site.baseurl}}/implement/whfb/){:rel="noopener noreferrer"}{:class="usa-link"} and roaming authenticators like Yubico Yubikey and RSA DS-100.
 
 ### Challenges
 
@@ -163,7 +163,7 @@ The FIDO2 CoA completed two cohorts, which included eight agencies that either p
 ### Lessons Learned
 
 1. **No authenticator type is a silver bullet** - Agencies need a holistic authentication strategy to stop handling access exception policies. There is not a single authenticator type that works across all authentication patterns and is phishing-resistant. Agencies must be comfortable with platform-native phishing-resistant authenticators like FIDO2 to replace the most common exception policy alternatives like passwords and OTP that are not phishing-resistant.
-2. **User training and guidance** - Plan and produce user guidance and adoption campaigns across agency ICAM programs. One of the biggest challenges in deploying new technology is ensuring you don’t lose your users on the journey. Hold office hours and Ask Me Anything sessions, or have on-demand videos to educate users and help them transition to new tools. FIDO brown bag presentations are another good resource for engaging and learning about phishing-resistant authenticator products and services. Contact [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"} to get added to the group. 
+2. **User training and guidance** - Plan and produce user guidance and adoption campaigns across agency ICAM programs. One of the biggest challenges in deploying new technology is ensuring you don’t lose your users on the journey. Hold office hours and Ask Me Anything sessions, or have on-demand videos to educate users and help them transition to new tools. See the [user experience section of the Windows Hello for Business Playbook]({{site.baseurl}}/implement/whfb/#whfb-user-experience){:rel="noopener noreferrer"}{:class="usa-link"} as an example. FIDO brown bag presentations are another good resource for engaging and learning about phishing-resistant authenticator products and services. Contact [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"} to get added to the group. 
 3. **Platform authenticator cost advantage** - FIDO2 platform authenticators provide a more straightforward and cost-efficient approach to meeting broader organization adoption of phishing-resistant authentication for all users. Biometric options such as face and finger recognition are supported in FIDO2 without needing 3rd party middleware but depend on device support and using modern access management tools (e.g., not natively supported in legacy tools such as Active Directory, Active Directory Federation Services, mainframes, and Siteminder).
 4. **Challenge organizational assumptions** - Large organizations with digital identity functions spread across multiple teams experience a high barrier to change. Many commonly believe they must only use a PIV credential or PKI with no alternatives. Challenge those assumptions as you promote more resilient authentication solutions or request a phishing-resistant authentication workshop from the General Services Administration at [icam@gsa.gov](mailto:icam@gsa.gov){:class="usa-link"}.
 
@@ -708,9 +708,10 @@ A PIV credential remains the primary authenticator for federal users, but there 
 2.	[CISA Secure Cloud Business Applications (SCuBA) Hybrid Identity Solutions Architecture - Technical Summary of FIDO2](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3.	[FICAM - Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/){:class="usa-link"}
 4.	[FICAM - PIV-Interoperable 101](https://www.idmanagement.gov/university/pivi/){:class="usa-link"}
-5.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:class="usa-link"}{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-6.	[NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management](https://www.nist.gov/system/files/documents/2020/07/02/800-63B%20Conformance%20Criteria_0620.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-7.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3560788/how-to-protect-against-evolving-phishing-attacks/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5.  [FICAM - Configure Windows Hello for Business in Azure AD](https://www.idmanagement.gov/implement/whfb/){:class="usa-link"}
+6.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:class="usa-link"}{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+7.	[NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management](https://www.nist.gov/system/files/documents/2020/07/02/800-63B%20Conformance%20Criteria_0620.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+8.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3560788/how-to-protect-against-evolving-phishing-attacks/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 # Appendix B - External Resources
 
