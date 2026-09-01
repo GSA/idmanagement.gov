@@ -42,8 +42,8 @@ implement:
     href: /implement/scl-ssh/
   - text: Smart Card Logon for Firefox
     href: /implement/scl-firefox/
-  # - text: Windows Hello for Business
-  #   href: /implement/whfb/
+  - text: Windows Hello for Business
+    href: /implement/whfb/
   - text: Certificate-Based Authentication
     href: /implement/cba-azure/
   - text: Sign and Encrypt Email in Outlook
