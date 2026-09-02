@@ -32,6 +32,21 @@
 # ee_ocsp_uri:
 #
 
+- notice_date: September 2, 2026
+  change_type: Intent to issue CA Certificate
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State will issue a new U.S. Department of State SNAP CA2 certificate. The new CA will be created between September 15 and 18, 2026.
+  contact: newtonpj at state dot gov
+  ca_certificate_hash: TBD
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: OU = U.S. Department of State SNAP CA2, OU = Certification Authorities, OU = SNAP, OU = Department of State, O = U.S. Government, C = US
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: N/A
+  sia_uri: N/A
+  ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+  ee_cdp_uri: http://crls.pki.state.gov/crls/DoSSNAPCA2.crl
+  ee_ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+  
 - notice_date: August 14, 2026
   change_type: Intent to Issue CA Certificate
   system: FPKI Trust Infrastructure - Federal Bridge CA G5
