@@ -708,10 +708,10 @@ A PIV credential remains the primary authenticator for federal users, but there 
 2.	[CISA Secure Cloud Business Applications (SCuBA) Hybrid Identity Solutions Architecture - Technical Summary of FIDO2](https://www.cisa.gov/sites/default/files/2023-03/csso-scuba-guidance_document-hybrid_identity_solutions_architecture-2023.03.14-final.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 3.	[FICAM - Enterprise Single Sign-On Playbook]({{site.baseurl}}/playbooks/sso/){:class="usa-link"}
 4.	[FICAM - PIV-Interoperable 101](https://www.idmanagement.gov/university/pivi/){:class="usa-link"}
-5.	[FICAM - Configure Windows Hello for Business in Azure AD](https://www.idmanagement.gov/implement/whfb/){:class="usa-link"}
-3.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:class="usa-link"}{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-4.	[NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management](https://www.nist.gov/system/files/documents/2020/07/02/800-63B%20Conformance%20Criteria_0620.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-5.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3560788/how-to-protect-against-evolving-phishing-attacks/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+5.  [FICAM - Configure Windows Hello for Business in Azure AD](https://www.idmanagement.gov/implement/whfb/){:class="usa-link"}
+6.	[NIST Digital Identity Guidelines Frequently Asked Questions](https://pages.nist.gov/800-63-FAQ/){:class="usa-link"}{:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+7.	[NIST Conformance Criteria for NIST SP 800-63B Authentication and Lifecycle Management](https://www.nist.gov/system/files/documents/2020/07/02/800-63B%20Conformance%20Criteria_0620.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+8.	[NSA - Selecting Secure Multi-factor Authentication Solutions](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3560788/how-to-protect-against-evolving-phishing-attacks/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 # Appendix B - External Resources
 
