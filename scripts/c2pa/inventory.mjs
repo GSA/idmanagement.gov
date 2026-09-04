@@ -18,6 +18,10 @@ const extensionSets = {
   excluded: new Set(config.excludedExtensions.map(normalizeExtension))
 };
 const excludedDirectories = new Set(config.excludedDirectories ?? []);
+const pageReferencePolicy = config.pageReferencePolicy ?? {};
+const contentExtensions = new Set((pageReferencePolicy.contentExtensions ?? []).map(normalizeExtension));
+const excludedContentDirectories = new Set(pageReferencePolicy.excludedContentDirectories ?? []);
+let contentSource = '';
 
 function normalizeExtension(value) {
   const lower = value.toLowerCase();
@@ -33,9 +37,21 @@ function inside(parent, child) {
   return difference === '' || (!difference.startsWith(`..${sep}`) && difference !== '..' && !isAbsolute(difference));
 }
 
-function classify(extension) {
+function requiresPageReference(path, extension) {
+  if ((pageReferencePolicy.requiredPrefixes ?? []).some((prefix) => path.startsWith(prefix))) return true;
+  return (pageReferencePolicy.requiredExtensionRoots ?? []).some((rule) =>
+    path.startsWith(rule.root) && (rule.extensions ?? []).map(normalizeExtension).includes(extension));
+}
+
+function isPageReferenced(path) {
+  return contentSource.includes(path) || contentSource.includes(`/${path}`);
+}
+
+function classify(extension, path) {
   for (const [classification, extensions] of Object.entries(extensionSets)) {
-    if (extensions.has(extension)) return classification;
+    if (!extensions.has(extension)) continue;
+    if (classification === 'eligible' && requiresPageReference(path, extension) && !isPageReferenced(path)) return 'excluded';
+    return classification;
   }
   return 'unknown';
 }
@@ -50,7 +66,10 @@ function proposedAction(classification) {
   }[classification];
 }
 
-function reasonFor(classification) {
+function reasonFor(classification, path, extension) {
+  if (classification === 'excluded' && requiresPageReference(path, extension) && !isPageReferenced(path)) {
+    return 'USWDS/icon-area asset is not referenced by an IDM content page; excluded from signing.';
+  }
   return {
     eligible: 'Format is in the reviewed c2patool writable candidate allowlist; individual signing and verification are still required.',
     inspect_only: 'The current tool support is read-only for this format.',
@@ -63,6 +82,19 @@ function reasonFor(classification) {
 async function sha256(path) {
   const bytes = await readFile(path);
   return createHash('sha256').update(bytes).digest('hex');
+}
+
+async function collectContentSources(rootPath) {
+  const entries = await readdir(rootPath, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isDirectory() && excludedContentDirectories.has(entry.name)) continue;
+    const path = join(rootPath, entry.name);
+    if (entry.isDirectory()) {
+      await collectContentSources(path);
+    } else if (entry.isFile() && contentExtensions.has(normalizeExtension(extname(entry.name) || '[none]'))) {
+      contentSource += `\n${await readFile(path, 'utf8')}`;
+    }
+  }
 }
 
 async function walk(rootPath, allowedRoot, rows) {
@@ -97,14 +129,19 @@ async function walk(rootPath, allowedRoot, rows) {
     }
 
     const fileStat = await stat(resolvedPath);
+    const repositoryPath = toPosix(relative(repositoryRoot, path));
     const extension = normalizeExtension(extname(entry.name) || '[none]');
-    const classification = classify(extension);
+    const classification = classify(extension, repositoryPath);
+    const pageReferenceRequired = requiresPageReference(repositoryPath, extension);
+    const pageReferenced = pageReferenceRequired ? isPageReferenced(repositoryPath) : null;
     rows.push({
-      path: toPosix(relative(repositoryRoot, path)),
+      path: repositoryPath,
       extension,
       classification,
       proposedAction: proposedAction(classification),
-      reason: reasonFor(classification),
+      reason: reasonFor(classification, repositoryPath, extension),
+      pageReferenceRequired,
+      pageReferenced,
       size: fileStat.size,
       sha256: await sha256(resolvedPath)
     });
@@ -136,7 +173,7 @@ function csvCell(value) {
 }
 
 function renderCsv(rows) {
-  const fields = ['path', 'extension', 'classification', 'proposedAction', 'reason', 'size', 'sha256'];
+  const fields = ['path', 'extension', 'classification', 'proposedAction', 'reason', 'pageReferenceRequired', 'pageReferenced', 'size', 'sha256'];
   return [
     fields.map(csvCell).join(','),
     ...rows.map((row) => fields.map((field) => csvCell(row[field])).join(','))
@@ -163,6 +200,8 @@ function renderMarkdown(summary, metadata) {
   lines.push('', 'No files were modified. Eligibility does not become signed status until c2patool writes and verifies an output.', '');
   return lines.join('\n');
 }
+
+await collectContentSources(repositoryRoot);
 
 const rows = [];
 for (const configuredRoot of config.roots) {

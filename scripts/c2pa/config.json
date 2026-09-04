@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "mode": "sign-source",
   "sourceAssetPolicy": "modify-and-commit",
+  "unsignedBaselineRevision": "623e5fad43429bb52398baf51aadabff0e430216",
   "continueOnAssetError": true,
   "testCredential": true,
   "assetFailureExitPolicy": "complete-with-errors",
@@ -11,6 +12,25 @@
   "unsupportedExtensions": [".docx", ".ico", ".pptx", ".ttf", ".woff", ".woff2", ".xlsx"],
   "excludedExtensions": [".css", ".js", ".json", ".map", ".md", ".old", ".scss", ".wasm"],
   "excludedDirectories": [".c2pa-work", "node_modules", "reports", "vendor", "_site"],
+  "pageReferencePolicy": {
+    "requiredPrefixes": [
+      "assets/c2pa/",
+      "assets/img/favicons/",
+      "assets/img/material-icons/",
+      "assets/img/material-icons-deprecated/",
+      "assets/img/usa-icons/",
+      "assets/img/usa-icons-bg/",
+      "assets/img/uswds-icons/"
+    ],
+    "requiredExtensionRoots": [
+      { "root": "assets/img/", "extensions": [".svg"] }
+    ],
+    "contentExtensions": [".md", ".markdown", ".html"],
+    "excludedContentDirectories": [
+      ".c2pa-work", ".git", "_includes", "_layouts", "_plugins", "_sass", "_site",
+      "assets", "docs", "node_modules", "reports", "scripts", "vendor"
+    ]
+  },
   "existingManifestPolicy": "verify-and-skip-if-current",
   "unknownExtensionPolicy": "review",
   "maxConcurrency": 4,

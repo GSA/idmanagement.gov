@@ -5,8 +5,9 @@ module AssetHelper
     def self.process(site, payload)
         return if @processed
         FileUtils.cp_r('node_modules/@uswds/uswds/dist/js/', 'assets/', verbose: true)
-        # Signed USWDS image assets are committed on the experiment branch. Preserve
-        # those bytes so a normal Jekyll build cannot strip their manifests.
+        # C2PA mode uses the reviewed, committed image tree. Most packaged USWDS
+        # icons are intentionally unsigned; only page-referenced candidates selected
+        # by the inventory may be signed by the reconciliation below.
         unless site.config.dig('c2pa', 'enabled')
             FileUtils.cp_r('node_modules/@uswds/uswds/dist/img/', 'assets/', verbose: true)
         end

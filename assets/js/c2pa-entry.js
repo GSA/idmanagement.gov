@@ -1,7 +1,7 @@
 import { createC2pa } from '@contentauth/c2pa-web';
 
 const supported = new Set(['gif', 'jpeg', 'jpg', 'png', 'svg', 'webp']);
-const minimumOverlayDimension = 96;
+const compactOverlayDimension = 150;
 const resultCache = new Map();
 let sdkPromise;
 let imageModalDisclosure;
@@ -344,7 +344,7 @@ function initialize() {
     const updatePlacement = () => {
       const bounds = image.getBoundingClientRect();
       wrapper.style.width = `${Math.ceil(bounds.width)}px`;
-      wrapper.classList.toggle('c2pa-media--compact', bounds.width < minimumOverlayDimension || bounds.height < minimumOverlayDimension);
+      wrapper.classList.toggle('c2pa-media--compact', bounds.width <= compactOverlayDimension || bounds.height <= compactOverlayDimension);
     };
     updatePlacement();
     image.parentNode.insertBefore(wrapper, image);
