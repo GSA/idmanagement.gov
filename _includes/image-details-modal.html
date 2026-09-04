@@ -1,0 +1,32 @@
+{% if site.c2pa.enabled %}
+<div class="usa-modal usa-modal--lg image-details-modal" id="image-details-modal" aria-labelledby="image-details-title" aria-describedby="image-details-description">
+  <div class="usa-modal__content">
+    <div class="usa-modal__main">
+      <h2 class="usa-modal__heading" id="image-details-title">Image details</h2>
+      <p class="usa-sr-only" id="image-details-description">Image preview with an optional file-information panel.</p>
+      <div class="image-details-layout" id="image-details-layout">
+        <div class="image-details-preview">
+          <img id="image-details-preview" src="" alt="">
+          <div class="image-details-actions">
+            <button class="usa-button image-details-credentials" id="image-details-credentials" type="button" data-close-modal title="View Content Credentials">
+              <img src="{{site.baseurl}}/assets/c2pa/content-credentials-icon.svg" width="36" height="36" alt="" aria-hidden="true">
+              <span class="usa-sr-only">Close image details and view Content Credentials</span>
+            </button>
+            <button class="usa-button image-details-info" id="image-details-info" type="button" aria-expanded="false" aria-controls="image-details-panel" title="Show image information">
+              <span class="image-details-info__glyph" aria-hidden="true">i</span>
+              <span class="usa-sr-only">Show image information</span>
+            </button>
+          </div>
+        </div>
+        <aside class="image-details-panel" id="image-details-panel" aria-label="Image file information" hidden>
+          <h3>File information</h3>
+          <div id="image-details-fields"></div>
+        </aside>
+      </div>
+    </div>
+    <button class="usa-button usa-modal__close" type="button" aria-label="Close image details" data-close-modal>
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#close"></use></svg>
+    </button>
+  </div>
+</div>
+{% endif %}

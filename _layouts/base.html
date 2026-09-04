@@ -9,7 +9,7 @@ The home page uses wide.html layout, since it extends full width of page
 
 {% include meta.html %}
 
-<body>
+<body{% if site.c2pa.enabled %} data-c2pa-enabled="true" data-c2pa-site-url="{{ site.url | escape }}"{% endif %}{% if site.c2pa.test_credential %} data-c2pa-test-credential="true"{% endif %}>
   {% include header.html %}
   
   {% include menu.html primary_navigation=site.primary_navigation  secondary_navigation=site.secondary_navigation %}
@@ -17,6 +17,9 @@ The home page uses wide.html layout, since it extends full width of page
   {{ content }}
 
   {% include footer.html %}
+
+  {% include c2pa-disclosure.html %}
+  {% include image-details-modal.html %}
 
   {% include scripts.html %}
 </body>

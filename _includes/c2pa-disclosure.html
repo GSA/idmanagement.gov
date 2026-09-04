@@ -1,0 +1,17 @@
+{% if site.c2pa.enabled %}
+<div class="usa-modal c2pa-modal" id="c2pa-image-modal" aria-labelledby="c2pa-dialog-title" aria-describedby="c2pa-dialog-description">
+  <div class="usa-modal__content">
+    <div class="usa-modal__main">
+      <div class="c2pa-modal__identity">
+        <img class="c2pa-modal__icon" src="{{site.baseurl}}/assets/c2pa/content-credentials-icon.svg" width="36" height="36" alt="" aria-hidden="true">
+        <h2 class="usa-modal__heading" id="c2pa-dialog-title">Content Credentials</h2>
+      </div>
+      <p id="c2pa-dialog-description" class="c2pa-modal__intro">Provenance and verification summary.</p>
+      <div id="c2pa-dialog-content" class="usa-prose"></div>
+    </div>
+    <button class="usa-button usa-modal__close" type="button" aria-label="Close this window" data-close-modal>
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img"><use href="{{site.baseurl}}/assets/img/sprite.svg#close"></use></svg>
+    </button>
+  </div>
+</div>
+{% endif %}

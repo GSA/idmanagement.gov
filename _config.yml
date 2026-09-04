@@ -39,6 +39,10 @@ dap:
 ga:
   # ua: your-ua
 
+c2pa:
+  enabled: true
+  test_credential: true
+
 # Site Navigation
 primary_navigation:
   - name: Home
@@ -288,6 +292,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
+  - scripts
+  - reports
+  - .c2pa-work
 
 assets:
   autoprefixer:

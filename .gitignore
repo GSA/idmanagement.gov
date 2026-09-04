@@ -11,4 +11,11 @@ node_modules
 dockerfile
 docker-compose.yml
 reports
+reports/c2pa-*
+.c2pa-work/
+*.c2pa.tmp
 scripts
+!scripts/
+scripts/*
+!scripts/c2pa/
+!scripts/c2pa/**

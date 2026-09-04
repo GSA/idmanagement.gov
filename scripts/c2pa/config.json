@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "mode": "sign-source",
+  "sourceAssetPolicy": "modify-and-commit",
+  "continueOnAssetError": true,
+  "testCredential": true,
+  "assetFailureExitPolicy": "complete-with-errors",
+  "roots": ["assets", "docs"],
+  "eligibleExtensions": [".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"],
+  "inspectOnlyExtensions": [".pdf"],
+  "unsupportedExtensions": [".docx", ".ico", ".pptx", ".ttf", ".woff", ".woff2", ".xlsx"],
+  "excludedExtensions": [".css", ".js", ".json", ".map", ".md", ".old", ".scss", ".wasm"],
+  "excludedDirectories": [".c2pa-work", "node_modules", "reports", "vendor", "_site"],
+  "existingManifestPolicy": "verify-and-skip-if-current",
+  "unknownExtensionPolicy": "review",
+  "maxConcurrency": 4,
+  "manifestTemplate": "scripts/c2pa/manifest.json",
+  "tool": {
+    "version": "0.27.18",
+    "linuxX64Url": "https://github.com/contentauth/c2pa-rs/releases/download/c2patool-v0.27.18/c2patool-v0.27.18-x86_64-unknown-linux-gnu.tar.gz",
+    "linuxX64Sha256": "839866d44227a1a09f3cb01ff060bb08700526eaa2a30ea48134e97911ecec1b"
+  }
+}

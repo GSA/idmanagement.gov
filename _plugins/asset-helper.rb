@@ -5,7 +5,11 @@ module AssetHelper
     def self.process(site, payload)
         return if @processed
         FileUtils.cp_r('node_modules/@uswds/uswds/dist/js/', 'assets/', verbose: true)
-        FileUtils.cp_r('node_modules/@uswds/uswds/dist/img/', 'assets/', verbose: true)
+        # Signed USWDS image assets are committed on the experiment branch. Preserve
+        # those bytes so a normal Jekyll build cannot strip their manifests.
+        unless site.config.dig('c2pa', 'enabled')
+            FileUtils.cp_r('node_modules/@uswds/uswds/dist/img/', 'assets/', verbose: true)
+        end
         FileUtils.cp_r('node_modules/@uswds/uswds/dist/fonts/', 'assets/', verbose: true)
         # The below Ruby code copies individual files from the node package to the assets folder /assets/css/.
         # The FileUtils.copy method copies individual uswds files to the site's existing /assets/css/ folder.
@@ -14,6 +18,11 @@ module AssetHelper
         FileUtils.copy('node_modules/@uswds/uswds/dist/css/uswds.css', 'assets/css/', verbose: true)
         FileUtils.copy('node_modules/@uswds/uswds/dist/css/uswds.min.css', 'assets/css/', verbose: true)
         FileUtils.copy('node_modules/@uswds/uswds/dist/css/uswds.min.css.map', 'assets/css/', verbose: true)
+        if site.config.dig('c2pa', 'enabled')
+            puts 'Reconciling C2PA signatures after USWDS assets are copied...'
+            success = system('node', 'scripts/c2pa/sign.mjs')
+            raise 'C2PA signing prerequisite failed' unless success
+        end
         @processed = true
     end
 end
