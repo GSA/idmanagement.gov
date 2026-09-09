@@ -5,12 +5,18 @@
   vertical-align: top;
 }
 
-.c2pa-media > img {
+.c2pa-media > img,
+.c2pa-media > a > img {
   display: block;
   grid-area: 1 / 1;
   height: auto;
   max-width: 100%;
   width: 100%;
+}
+
+.c2pa-media > a {
+  display: block;
+  grid-area: 1 / 1;
 }
 
 .c2pa-media > .usa-tooltip {

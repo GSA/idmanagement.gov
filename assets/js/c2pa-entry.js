@@ -343,7 +343,12 @@ function initialize() {
     const url = image.currentSrc || image.src;
     const path = new URL(url, location.href).pathname;
     if (!image.alt.trim() || image.matches('.usa-icon, .usa-banner__icon') || image.closest('header, nav, footer, [role="navigation"], [data-c2pa-exclude]') || image.dataset.c2paExclude != null || !eligibleUrl(url)) return;
-    if (image.closest('a[href], [role="link"]')) return;
+    const imageLink = image.closest('a[href]');
+    if (image.closest('[role="link"]')) return;
+    // A direct link to the image retains its original action; the disclosure
+    // sits alongside the link so it remains a separate keyboard control.
+    if (imageLink && (imageLink.href !== new URL(url, location.href).href || imageLink.querySelectorAll('img').length !== 1)) return;
+    const preview = imageLink || image;
     const wrapper = el('span', null, 'c2pa-media');
     const updatePlacement = () => {
       const bounds = image.getBoundingClientRect();
@@ -351,10 +356,11 @@ function initialize() {
       wrapper.classList.toggle('c2pa-media--compact', bounds.width <= compactOverlayDimension || bounds.height <= compactOverlayDimension);
     };
     updatePlacement();
-    image.parentNode.insertBefore(wrapper, image);
-    wrapper.append(image);
+    preview.parentNode.insertBefore(wrapper, preview);
+    wrapper.append(preview);
+    if (imageLink) image.style.width = '100%';
     wrapper.append(disclosureButton(url, image.alt.trim()));
-    if (imageViewerEligible(image, url)) enableImageModal(image, url, image.alt.trim());
+    if (!imageLink && imageViewerEligible(image, url)) enableImageModal(image, url, image.alt.trim());
     if ('ResizeObserver' in window) new ResizeObserver(updatePlacement).observe(image);
   });
 
