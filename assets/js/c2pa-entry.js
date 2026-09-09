@@ -273,7 +273,7 @@ function renderSummary(model) {
   const inspectUrl = new URL('https://contentauthenticity.adobe.com/inspect');
   const requestedAsset = new URL(model.url);
   const configuredSiteUrl = document.body.dataset.c2paSiteUrl;
-  const assetOrigin = environment.production ? (configuredSiteUrl || location.origin) : location.origin;
+  const assetOrigin = configuredSiteUrl || location.origin;
   const inspectAsset = new URL(`${requestedAsset.pathname}${requestedAsset.search}`, assetOrigin);
   inspectUrl.searchParams.set('source', inspectAsset.href);
   const link = el('a', 'View L3 in Adobe Inspect', 'usa-button usa-link--external');
@@ -281,10 +281,9 @@ function renderSummary(model) {
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
   link.setAttribute('aria-label', `View detailed Content Credentials for ${model.title} in Adobe Inspect (opens in a new tab)`);
+  view.append(link);
   if (environment.local) {
-    view.append(el('p', 'Local validation is shown above. Adobe Inspect cannot retrieve a localhost URL; deploy the asset or upload it manually for external inspection.', 'c2pa-l3-note'));
-  } else {
-    view.append(link);
+    view.append(el('p', 'Adobe Inspect checks the published asset at the configured site URL. Local changes must be deployed there before they can be inspected.', 'c2pa-l3-note'));
   }
   setView('Content Credentials', view);
 }

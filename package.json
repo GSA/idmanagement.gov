@@ -3,8 +3,8 @@
   "version": "1.3.0",
   "scripts": {
     "local": "bundler install && sleep 5 && npm install",
-    "build": "bundle exec jekyll build",
-    "pages": "npm run c2pa:install-tool && npm run c2pa:dry-run && npm run c2pa:restore-excluded && npm run c2pa:dry-run && npm run c2pa:sign-source && npm run c2pa:ui",
+    "build": "C2PA_LOCAL_SIGNING=1 bundle exec jekyll build",
+    "pages": "node scripts/c2pa/check-viewer.mjs",
     "c2pa:inventory": "node scripts/c2pa/inventory.mjs",
     "c2pa:dry-run": "node scripts/c2pa/inventory.mjs --dry-run",
     "c2pa:dry-run:samples": "node scripts/c2pa/sign-samples.mjs",
@@ -15,10 +15,12 @@
     "c2pa:install-tool": "node scripts/c2pa/install-tool.mjs",
     "clean": "bundle exec jekyll clean",
     "reset": "npx rimraf .git",
-    "start": "bundle exec jekyll serve --livereload",
-    "start-detached": "bundle exec jekyll serve --detach",
+    "start": "C2PA_LOCAL_SIGNING=1 bundle exec jekyll serve --livereload",
+    "start-detached": "C2PA_LOCAL_SIGNING=1 bundle exec jekyll serve --detach",
     "htmlproofer": "bundle exec htmlproofer --no-enforce-https --allow-missing-href _site",
-    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"",
+    "c2pa:prepare-local": "npm run c2pa:install-tool && npm run c2pa:dry-run && npm run c2pa:restore-excluded && npm run c2pa:dry-run && npm run c2pa:sign-source && npm run c2pa:ui && npm run c2pa:export-signed-log",
+    "build:staging": "C2PA_LOCAL_SIGNING=0 bundle exec jekyll build"
   },
   "dependencies": {
     "@contentauth/c2pa-web": "0.14.4",

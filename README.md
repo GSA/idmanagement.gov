@@ -29,3 +29,13 @@ This site is based on GitHub Pages and Jekyll templates.
 
 Special thanks to the teams at [18F](https://18f.gsa.gov/), [18F Pages](https://pages.18f.gov/), and [US Digital Services Playbooks](https://playbook.cio.gov/) for their open and transparent model which benefits citizens, government, and technology.
  
+
+## Local preview and staging C2PA workflow
+
+Run `npm start` to preview or `npm run build` to build locally after installing dependencies. These commands prepare and validate signed assets, build the C2PA viewer, and refresh `../C2PA_SIGNED_ASSET_LOG.md`. Preparation runs once per Jekyll process; rerun `npm run c2pa:prepare-local` or restart after changing media.
+
+Commit signed assets and the generated viewer bundle, source map, and WASM. Staging uses `npm run pages` (checks committed viewer resources only), then `bundle exec jekyll build` or `npm run build:staging`. Leave `C2PA_LOCAL_SIGNING` unset on staging. No signing tool, signing credentials, or viewer bundling runs there; the browser retains C2PA viewing and validation. Direct Jekyll commands also default to this mode; npm local build/start commands explicitly enable signing.
+
+The complete workflow and asset ledger are maintained in the parent workspace's `HOW_IDM_C2PA_WORKS.md` and `C2PA_SIGNED_ASSET_LOG.md`; those files are outside this site's Git repository.
+
+The Adobe Inspect button uses the rendered `site.url` as the asset origin and preserves the asset path (including a deployment `baseurl`) and query. Set `site.url` to the public staging origin in the staging configuration; the repository default is `https://www.idmanagement.gov`. The button also appears locally and inspects the published asset at that configured origin.

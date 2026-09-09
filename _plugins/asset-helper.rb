@@ -7,7 +7,7 @@ module AssetHelper
         FileUtils.cp_r('node_modules/@uswds/uswds/dist/js/', 'assets/', verbose: true)
         # C2PA mode uses the reviewed, committed image tree. Most packaged USWDS
         # icons are intentionally unsigned; only page-referenced candidates selected
-        # by the inventory may be signed by the reconciliation below.
+        # by the local inventory may be signed before publication.
         unless site.config.dig('c2pa', 'enabled')
             FileUtils.cp_r('node_modules/@uswds/uswds/dist/img/', 'assets/', verbose: true)
         end
@@ -19,9 +19,9 @@ module AssetHelper
         FileUtils.copy('node_modules/@uswds/uswds/dist/css/uswds.css', 'assets/css/', verbose: true)
         FileUtils.copy('node_modules/@uswds/uswds/dist/css/uswds.min.css', 'assets/css/', verbose: true)
         FileUtils.copy('node_modules/@uswds/uswds/dist/css/uswds.min.css.map', 'assets/css/', verbose: true)
-        if site.config.dig('c2pa', 'enabled')
-            puts 'Reconciling C2PA signatures after USWDS assets are copied...'
-            success = system('node', 'scripts/c2pa/sign.mjs')
+        if site.config.dig('c2pa', 'enabled') && ENV['C2PA_LOCAL_SIGNING'] == '1'
+            puts 'Preparing local C2PA assets, viewer, and signed asset log...'
+            success = system('npm', 'run', 'c2pa:prepare-local')
             raise 'C2PA signing prerequisite failed' unless success
         end
         @processed = true

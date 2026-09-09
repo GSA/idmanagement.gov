@@ -11,7 +11,7 @@ const outputPath = path.resolve(siteRoot, "../C2PA_SIGNED_ASSET_LOG.md");
 const report = JSON.parse(await readFile(reportPath, "utf8"));
 
 const verified = report.results
-  .filter((result) => ["signed", "already-current"].includes(result.status) && result.activeManifest)
+  .filter((result) => ["signed", "signed-and-verified", "already-current"].includes(result.status) && result.activeManifest)
   .sort((left, right) => left.path.localeCompare(right.path));
 
 if (verified.length !== report.attempted || report.completedWithErrors) {
@@ -32,11 +32,11 @@ const lines = [
   "",
   "Each row represents a source asset whose active manifest was successfully read after signing. `already-current` means the verified signature was already present during the latest idempotent run.",
   "",
-  "| # | Repository-relative asset | Status | Source SHA-256 | Active manifest |",
+  "| # | Repository-relative asset | Status | Signed asset SHA-256 | Active manifest |",
   "| ---: | --- | --- | --- | --- |",
   ...verified.map(
     (result, index) =>
-      `| ${index + 1} | \`${result.path}\` | \`${result.status}\` | \`${result.sourceSha256}\` | \`${result.activeManifest}\` |`,
+      `| ${index + 1} | \`${result.path}\` | \`${result.status}\` | \`${result.outputSha256 ?? result.sourceSha256}\` | \`${result.activeManifest}\` |`,
   ),
   "",
 ];
