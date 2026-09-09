@@ -38,4 +38,6 @@ Commit signed assets and the generated viewer bundle, source map, and WASM. Stag
 
 The complete workflow and asset ledger are maintained in the parent workspace's `HOW_IDM_C2PA_WORKS.md` and `C2PA_SIGNED_ASSET_LOG.md`; those files are outside this site's Git repository.
 
-The Adobe Inspect button uses the rendered `site.url` as the asset origin and preserves the asset path (including a deployment `baseurl`) and query. Set `site.url` to the public staging origin in the staging configuration; the repository default is `https://www.idmanagement.gov`. The button also appears locally and inspects the published asset at that configured origin.
+The Adobe Inspect button uses the rendered `site.url` as the asset origin and preserves the asset path (including a deployment `baseurl`) and query. This experiment sets `site.url` to `https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov`. Cloud.gov supplies `/preview/gsa/idmanagement.gov/0902-idm-c2pa-experiment` as `site.baseurl`; do not also append it to `site.url`. Restore the production origin before promoting this configuration to production. The button also appears locally and inspects the published asset at that configured origin.
+
+C2PA icon and WASM requests use the current deployment origin plus the rendered `site.baseurl`. This keeps browser validation on the staging deployment even when it is hosted under a preview path; `site.url` is used separately for Adobe Inspect links. Commit the regenerated viewer bundle alongside layout changes.

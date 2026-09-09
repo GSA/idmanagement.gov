@@ -2,7 +2,7 @@
 import { stat } from 'node:fs/promises';
 
 // Staging consumes committed browser resources; it never prepares signed assets.
-for (const asset of ['assets/js/c2pa-ui.bundle.js', 'assets/c2pa/c2pa_bg.wasm']) {
+for (const asset of ['assets/js/c2pa-ui.bundle.js', 'assets/c2pa/c2pa_bg.wasm', 'assets/c2pa/content-credentials-icon.svg']) {
   const url = new URL(`../../${asset}`, import.meta.url);
   const file = await stat(url).catch(() => null);
   if (!file?.isFile() || file.size === 0) {

@@ -15,8 +15,8 @@ description: IDManagement.gov is a collaboration between the Federal CIO Council
 baseurl: ""
 repourl: "https://github.com/GSA/idmanagement.gov"
 
-#for site map search
-url: https://www.idmanagement.gov
+# Experiment staging origin; Cloud.gov supplies the preview path as baseurl.
+url: "https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov"
 
 # GitHub information
 # This is used for adding an edit this page link to the footer
@@ -27,7 +27,6 @@ github_info:
 
 # Twitter handle. Only the handle, not the URL.
 # twitter: 18F
-url: "https://www.idmanagement.gov"
 
 dap:
   agency: GSA

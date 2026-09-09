@@ -14,6 +14,11 @@ const el = (name, value, className) => {
 };
 const shown = (value) => value == null || value === '' ? 'Not provided' : String(value);
 
+function viewerResourceUrl(filename) {
+  const basePath = (document.body.dataset.c2paBaseUrl || '').replace(/^\/+|\/+$/g, '');
+  return new URL(`${basePath ? `/${basePath}` : ''}/assets/c2pa/${filename}`, location.origin).href;
+}
+
 async function detectedMime(blob) {
   const bytes = new Uint8Array(await blob.slice(0, 12).arrayBuffer());
   if (bytes.length >= 8 && [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a].every((value, index) => bytes[index] === value)) return 'image/png';
@@ -81,7 +86,7 @@ async function inspect(url, title) {
     const response = await fetch(canonical, { credentials: 'same-origin', cache: 'force-cache' });
     if (!response.ok) throw new Error(`Asset request failed (${response.status})`);
     const blob = await response.blob();
-    sdkPromise ??= createC2pa({ wasmSrc: `${location.origin}/assets/c2pa/c2pa_bg.wasm` });
+    sdkPromise ??= createC2pa({ wasmSrc: viewerResourceUrl('c2pa_bg.wasm') });
     const reader = await (await sdkPromise).reader.fromBlob(await detectedMime(blob), blob);
     if (!reader) return { url: canonical, title, unsigned: true };
     try { return normalize(canonical, title, await reader.manifestStore()); }
@@ -302,7 +307,7 @@ async function open(button) {
 function disclosureButton(url, title) {
   const button = el('button', null, 'c2pa-l1');
   const icon = el('img', null, 'c2pa-l1__icon');
-  icon.src = '/assets/c2pa/content-credentials-icon.svg';
+  icon.src = viewerResourceUrl('content-credentials-icon.svg');
   icon.alt = '';
   icon.width = 36;
   icon.height = 36;
