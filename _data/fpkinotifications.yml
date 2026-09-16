@@ -32,6 +32,21 @@
 # ee_ocsp_uri:
 #
 
+- notice_date: September 16, 2026
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G5
+  change_description: The Federal Bridge CA G5 issued a new cross-certificate to the DoD Interoperability Root CA 3 valid from 9/14/2026 tp 9/14/2029.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: 0a60b830a95e40ff65664d2b4d13f4214d6ecafc
+  ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = DoD Interoperability Root CA 3, OU = PKI, OU = DoD, O = U.S. Government, C = US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
+  sia_uri:  N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA3_IB.p7c
+  ee_ocsp_uri: N/A
+
 - notice_date: September 8, 2026
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G5
@@ -39,7 +54,7 @@
   contact:  fpki dash help at gsa dot gov
   ca_certificate_hash: 9dffa3459126dc6d5ab2242b3ba3a75a9d3a6fff
   ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN=XTec NFI SSP Root CA 1, OU=Certification Authorities, O=XTec Incorporated, C=US 
+  ca_certificate_subject: CN = XTec NFI SSP Root CA 1, OU = Certification Authorities, O = XTec Incorporated, C = US 
   cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
   sia_uri: http://aia.xca.xpki.com/AIA/IssuedCertsByXTec_NFI_SSP_Root_CA_1.p7c
@@ -54,7 +69,7 @@
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 95afba80620e55e3c5e51c1fd49523bc309418e0
   ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US 
+  ca_certificate_subject: CN = Exostar Federated Identity Service Root CA 2, OU = Certification Authorities, O = Exostar LLC, C = US 
   cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
   sia_uri: http://www.fis.evincible.com/fis/public/ExostarFederatedIdentityServiceRootCA2.p7c
@@ -69,7 +84,7 @@
   contact: fpki dash help at gsa.gov
   ca_certificate_hash: 98b4ebd94966b8791ff315bc5af945958913a9cd
   ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN=CertiPath Bridge CA-G3, OU=CAs, O=CertiPath, C=US 
+  ca_certificate_subject: CN = CertiPath Bridge CA-G3, OU = CAs, O = CertiPath, C = US 
   cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
   sia_uri: http://aia.certipath.com/IssuedBy-CertiPathBridgeCA-G3.p7c 
