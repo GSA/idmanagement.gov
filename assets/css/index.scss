@@ -8,6 +8,14 @@
 // @forward "uswds-theme";
 // @forward "uswds-theme-custom-styles";
 
+// Match the initial accordion state before the footer USWDS script runs.
+// The head init script removes this class on load (or after its timeout),
+// so content remains available if JavaScript is disabled or fails to load.
+html.usa-js-loading .usa-accordion__heading:has(> .usa-accordion__button:not([aria-expanded="true"])) + .usa-accordion__content,
+html.usa-js-loading .usa-accordion__button:not([aria-expanded="true"]) + .usa-accordion__content {
+  display: none;
+}
+
 
 // Removed Bootstrap, to defaut to USWDS, 
   // This carried over only one style used from Bootstrap's Reboot

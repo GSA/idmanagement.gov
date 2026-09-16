@@ -2,8 +2,21 @@
   "title": "IDManagement.gov published asset",
   "claim_generator_info": [
     {
-      "name": "IDManagement.gov C2PA staging experiment",
-      "version": "0.1.0"
+      "name": "GSA IDManagement.gov",
+      "version": "0.3.0"
+    }
+  ],
+  "assertions": [
+    {
+      "label": "stds.schema-org.CreativeWork",
+      "data": {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "publisher": {
+          "@type": "Organization",
+          "name": "GSA IDManagement.gov"
+        }
+      }
     }
   ]
 }

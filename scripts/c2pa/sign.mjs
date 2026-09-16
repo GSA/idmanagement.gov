@@ -138,6 +138,13 @@ async function processAsset(asset, index) {
       return;
     }
 
+    // The pinned ZIP handler lacks DEFLATE support. Preserve all OOXML part
+    // bytes while storing the package without compression before signing.
+    if (contentExtension === '.docx') {
+      workingInput = join(workDirectory, `${id}.input.docx`);
+      await run('python3', [join(scriptDirectory, 'prepare-docx.py'), sourcePath, workingInput]);
+    }
+
     temporaryOutput = join(dirname(sourcePath), `.${basename(asset.path, extension)}.${id}.c2pa.tmp${contentExtension}`);
     runtimeManifest = join(workDirectory, `${id}.manifest.json`);
     await rm(temporaryOutput, { force: true });
@@ -149,10 +156,13 @@ async function processAsset(asset, index) {
       private_key: privateKeyPath
     }, null, 2)}\n`, { mode: 0o600 });
 
-    await run(toolPath, [workingInput, '--manifest', runtimeManifest, '--output', temporaryOutput, '--create', 'softwareImage']);
+    await run(toolPath, [workingInput, '--manifest', runtimeManifest, '--output', temporaryOutput]);
     const signedReport = await inspect(temporaryOutput);
     if (!signedReport?.active_manifest || hasValidationError(signedReport)) {
       throw new Error('Signed output did not return a valid active manifest.');
+    }
+    if (contentExtension === '.docx') {
+      await run('python3', [join(scriptDirectory, 'prepare-docx.py'), '--verify', sourcePath, temporaryOutput]);
     }
     const sourceMode = (await stat(sourcePath)).mode;
     await chmod(temporaryOutput, sourceMode);

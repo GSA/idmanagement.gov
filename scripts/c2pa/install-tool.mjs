@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto';
 import { spawn } from 'node:child_process';
-import { access, chmod, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { chmod, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -35,6 +35,7 @@ if (!valid) {
 }
 const actual = await digest(archive);
 if (actual !== config.tool.linuxX64Sha256) throw new Error(`c2patool checksum mismatch: ${actual}`);
-try { await access(binary); } catch { await run('tar', ['-xzf', archive, '-C', join(root, '.c2pa-work', 'bin')]); }
+// Extract the verified pinned archive even when a previous version is installed.
+await run('tar', ['-xzf', archive, '-C', join(root, '.c2pa-work', 'bin')]);
 await chmod(binary, 0o700);
 await run(binary, ['-V']);

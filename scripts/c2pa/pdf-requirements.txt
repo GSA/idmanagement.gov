@@ -1,0 +1,7 @@
+c2pie==0.1.1
+cbor2==5.9.0
+cffi==2.0.0
+cryptography==50.0.1
+pycparser==3.0
+pypdf==6.18.1
+pytz==2024.2

@@ -9,6 +9,14 @@ const siteRoot = path.resolve(scriptDirectory, "../..");
 const reportPath = path.join(siteRoot, "reports/c2pa-signing-report.json");
 const outputPath = path.resolve(siteRoot, "../C2PA_SIGNED_ASSET_LOG.md");
 const report = JSON.parse(await readFile(reportPath, "utf8"));
+try {
+  const pdf = JSON.parse(await readFile(path.join(siteRoot, 'reports/c2pa-pdf-signing-report.json'), 'utf8'));
+  report.results.push(...pdf.results);
+  report.attempted += pdf.attempted;
+  report.completedWithErrors ||= pdf.results.some((item) => item.status.startsWith('failed'));
+  report.toolVersion += `; PDF: ${pdf.toolVersion}`;
+  report.certificateSha256 += `; PDF certificate: ${pdf.certificateSha256}`;
+} catch (error) { if (error.code !== 'ENOENT') throw error; }
 
 const verified = report.results
   .filter((result) => ["signed", "signed-and-verified", "already-current"].includes(result.status) && result.activeManifest)
