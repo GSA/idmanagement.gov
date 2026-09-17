@@ -775,6 +775,6 @@ Security Metrics:
 - Microsoft Intune Identity Protection / Account Protection settings: [https://learn.microsoft.com/en-us/intune/device-security/identity-protection/ref-settings](https://learn.microsoft.com/en-us/intune/device-security/identity-protection/ref-settings){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - Microsoft phishing-resistant passwordless deployment guidance: [https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-deploy-phishing-resistant-passwordless-authentication](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-deploy-phishing-resistant-passwordless-authentication){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 - Microsoft Entra hybrid joined devices: [https://learn.microsoft.com/en-us/entra/identity/devices/concept-hybrid-join](https://learn.microsoft.com/en-us/entra/identity/devices/concept-hybrid-join){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
-- NIST SP 800-63B Table 4: [https://pages.nist.gov/800-63-4/sp800-63b.html\#table-4](https://pages.nist.gov/800-63-4/sp800-63b.html\#table-4){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
+- NIST SP 800-63B Table 4: [https://pages.nist.gov/800-63-4/sp800-63b.html#table-4](https://pages.nist.gov/800-63-4/sp800-63b.html#table-4){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}
 
 
