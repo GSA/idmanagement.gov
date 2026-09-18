@@ -30,46 +30,92 @@ This site is based on GitHub Pages and Jekyll templates.
 Special thanks to the teams at [18F](https://18f.gsa.gov/), [18F Pages](https://pages.18f.gov/), and [US Digital Services Playbooks](https://playbook.cio.gov/) for their open and transparent model which benefits citizens, government, and technology.
  
 
-## Local preview and staging C2PA workflow
+## C2PA local and staging workflow
 
-Run `npm start` to preview or `npm run build` to build locally after installing dependencies. These commands prepare and validate signed assets, build the C2PA viewer, and refresh `../C2PA_SIGNED_ASSET_LOG.md`. Preparation runs once per Jekyll process; rerun `npm run c2pa:prepare-local` or restart after changing media.
+Current as of September 17, 2026. The full operational guide is `../HOW_IDM_C2PA_WORKS.md`; the companion whitepaper is `../IDM_C2PA_Implementation_Whitepaper.docx`. Both are outside this nested site repository, alongside signing/review reports and PDF originals. Retain those records separately from site commits.
 
-Commit signed assets and the generated viewer bundle, source map, and WASM. Staging uses `npm run pages` (checks committed viewer resources only), then `bundle exec jekyll build` or `npm run build:staging`. Leave `C2PA_LOCAL_SIGNING` unset on staging. No signing tool, signing credentials, or viewer bundling runs there; the browser retains C2PA viewing and validation. Direct Jekyll commands also default to this mode; npm local build/start commands explicitly enable signing.
+### Local setup and preparation
 
-The complete workflow and asset ledger are maintained in the parent workspace's `HOW_IDM_C2PA_WORKS.md` and `C2PA_SIGNED_ASSET_LOG.md`; those files are outside this site's Git repository.
+From this repository, install the Node and Ruby dependencies and a Python environment with venv/pip support:
 
-The Adobe Inspect button uses the rendered `site.url` as the asset origin and preserves the asset path (including a deployment `baseurl`) and query. This experiment sets `site.url` to `https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov`. Cloud.gov supplies `/preview/gsa/idmanagement.gov/0902-idm-c2pa-experiment` as `site.baseurl`; do not also append it to `site.url`. Restore the production origin before promoting this configuration to production. The button also appears locally and inspects the published asset at that configured origin.
+```bash
+npm ci
+bundle install
+python3 -m venv .c2pa-work/pdf-venv
+.c2pa-work/pdf-venv/bin/python -m pip install -r scripts/c2pa/pdf-requirements.txt
+npm start
+```
 
-C2PA icon and WASM requests use the current deployment origin plus the rendered `site.baseurl`. This keeps browser validation on the staging deployment even when it is hosted under a preview path; `site.url` is used separately for Adobe Inspect links. Commit the regenerated viewer bundle alongside layout changes.
+`npm start` serves localhost:4000; `npm run build` builds without serving. Both set `C2PA_LOCAL_SIGNING=1`. The asset helper runs preparation once per process: verify/install the checksum-pinned Linux x64 tool; inventory/reconcile excluded assets; sign/check images and DOCX; process the reviewed PDF allowlist; rebuild the signed index, bundle/map and WASM; export the combined ledger. Restart or run `npm run c2pa:prepare-local` after editing assets during a watch session.
 
-### Content Credentials L2 interaction
+Image/Word signing uses c2patool 0.27.22 / Rust SDK 0.90.22. Word support entered that SDK release line in 0.90.20. The selected binary needs DOCX entries stored without compression; original parts are compared before source replacement. Browser SDK `@contentauth/c2pa-web` 0.15.0 reads the signed Word files. The PDF path uses c2pie 0.1.1 and a custom pypdf 6.18.1 incremental adapter, then c2patool validation. It does not use c2pie's default PDF writer, which lost tags/metadata in the pilot.
 
-The CR icon opens an anchored dropdown on click, tap, or keyboard activation. Hover does not open it. Click/tap again to close it; Escape, Close, or an outside click dismisses it. Keyboard users can press Arrow Down to enter the card. The compact L2 summary shows signer, origin, available trusted timestamp/source descriptions, and relevant integrity/trust warnings. The fixed footer opens Adobe Inspect (L3) for the selected asset. Technical details are no longer displayed in L2. Rebuild and commit the viewer bundle with changes to this interaction; staging does not bundle it.
+### Review and staging build
 
-The manifest template records the creation action description `GSA IDManagement.gov created` and the L2 Origin row displays that signed description. The standard `softwareImage` source type remains embedded. A green L2 status bar requires successful signature and media-binding checks; invalid results remain red and incomplete results retain a neutral informational state. SDK test-certificate trust warnings remain visible.
+Commit reviewed signed files, `assets/c2pa/signed-assets.json`, viewer bundle/map, WASM, and related source/configuration together. Keep private keys, `.c2pa-work/`, transient `reports/`, and dependencies out of deployment. Staging runs `npm run pages` to check committed viewer resources, followed by `npm run build:staging` or direct Jekyll with signing disabled. Do not use `npm run build` for staging. No signer, Python signing environment, signing keys, or viewer bundling is needed there. Preserve signed bytes during publication.
 
-The L2 summary follows the C2PA UX guidance for signer, trusted timestamp when available, origin/source disclosures, and concise validation notices. It identifies the selected asset, preserves AI disclosures alongside custom origin text, and flags source-history verification issues. Current-signer success and trust are taken from active-manifest results only. A timestamp requires both `timeStamp.validated` and `timeStamp.trusted`; raw signing dates are not promoted to trusted timestamps. Invalid credentials display an explanation rather than unverified provenance fields. The L3 link remains available. See https://spec.c2pa.org/specifications/specifications/2.2/ux/UX_Recommendations.html#_l2_and_l3_summaries.
+The current index has 993 assets (832 images, 47 DOCX, 114 PDFs). Another 82 hosted linked PDFs remain held. New/changed PDFs require renewed review and allowlist hashes. The 99 external PDF targets are outside this project's signing scope. `c2pa:dry-run` inventories; `c2pa:sign-source` handles images/Word; `c2pa:sign-pdfs` handles allowlisted PDFs; `c2pa:ui` rebuilds the viewer/index. Existing signatures are normally inspected and skipped; a manifest-template edit does not automatically re-sign them.
 
-Local signing uses checksum-pinned c2patool 0.27.22 and includes `.docx` assets under `assets/` and `docs/`. Python 3 prepares Word packages with uncompressed ZIP entries because this tool release lacks DEFLATE support. Original document parts are verified unchanged before replacement; files become larger. Documents with existing Office signature parts are held for separate review. Word signing results are included in `../C2PA_SIGNED_ASSET_LOG.md`; the initial 47-document audit is in `../C2PA_WORD_SIGNING_REPORT.md` and its JSON companion. The current image viewer does not add Word-link controls; browser/Adobe Inspect DOCX support is a separate integration.
+### Viewing and file information
 
-Same-origin PDF and DOCX links in main content retain normal navigation and have adjacent CR and circled-information icons, in that order. For document links, CR opens a Content Credentials modal; information opens the file details modal. PDF details use the image viewer layout: preview, bottom-right CR/info controls, and a collapsible information panel. External document links retain their original appearance. The native modal provides file information, C2PA inspection, a direct link, and an embedded PDF preview. External validation is not attempted in-page. PDF signing remains disabled pending a validated PDF-capable implementation. See `../C2PA_PDF_REVIEW_QUEUE.md` and `../C2PA_PDF_VIEWER_AND_SIGNING_STATUS.md` for review items, testing and accessibility limitations.
+Only indexed signed, same-origin PDF/DOCX links within main content are enhanced. Normal click/Enter opens a credentials modal; modifier clicks retain normal navigation. A compact hover/focus panel contains CR and information controls. Unsigned, external, and explicitly excluded links remain standard anchors. CR opens provenance; information opens the separate file modal.
 
-Document CR/info panels are restricted to locally indexed signed PDF/DOCX assets. The local viewer build generates `assets/c2pa/signed-assets.json` from successful signing records and verifies current file hashes before bundling it. Commit the index and generated bundle for staging. Unsigned PDF links receive no hover panel; all 47 signed DOCX assets are indexed. This index records signing eligibility for UI display, while opening CR still performs browser validation.
+Signed image CR controls open an anchored L2 dropdown on click/tap/keyboard, never hover alone. Eligible images independently open their file preview. L2 shows signature/content-binding status, separate trust warnings, signer, asserted publisher, origin, and available trusted timestamp/source disclosures. Missing inception is `Origin not recorded`; the old blanket `GSA IDManagement.gov created` description is not treated as factual origin. Future signing records publisher through CreativeWork and the SDK edit/open flow. L3 is the external Adobe Inspect action, not a local raw-JSON/history viewer.
 
-### Local PDF signing
+The PDF file modal embeds a titled preview; its left-aligned `Open PDF` button opens the original in a new tab and closes that modal. The Word modal has a centered `Download Document` button and lower `Open Word document in a new tab` button; both are ordinary new-tab links, so the browser/server decides whether to download. X controls remain labelled accessible buttons despite their icon-only appearance. The information panel reports available metadata, not inferred filesystem creation dates.
 
-`npm run c2pa:sign-pdfs` signs only the reviewed paths and original hashes in `scripts/c2pa/pdf-candidates.json`. Local preparation runs it after media/Word signing and before rebuilding the viewer. Staging does not run either signer. A local Python environment is required at `.c2pa-work/pdf-venv`; create it with `python3 -m venv .c2pa-work/pdf-venv` (requires your system's venv/pip support), then install `scripts/c2pa/pdf-requirements.txt` using that environment's pip. Dependencies are c2pie 0.1.1 and pypdf 6.18.1.
+### Deployment URLs and production gaps
 
-PDF signing uses c2pie for C2PA manifests and a custom incremental pypdf embedding step. It preserves original bytes, document catalog structure (including page content and accessibility tags), metadata and pre-existing attachments, then requires c2patool signature and content-binding validation before replacing a source. c2pie's default PDF writer is deliberately not used: it removed accessibility tags in the pilot. The pypdf adapter uses pinned-version internal methods and must be retested on dependency upgrades.
+Same-origin icon/WASM requests use the deployment `baseurl`. Adobe Inspect uses configured `site.url` as origin plus the selected path/query. Cloud.gov staging supplies the preview path as `baseurl`; do not duplicate it in `site.url`. Local paths do not automatically gain a staging prefix, so test external inspection from the actual staging page. Restore the intended production origin before promotion.
 
-PDF credentials use the SDK's PS256 development fixture by default; set `C2PA_PDF_PRIVATE_KEY` and `C2PA_PDF_SIGN_CERT` for an appropriate RSA-PSS signing key and certificate chain. These credentials are not publicly trusted. The existing ES256 image/Word credentials are unchanged. No private keys are committed.
+The SDK development certificates are not publicly trusted. Production needs an approved signing identity, trust-chain validation, protected-key/HSM or remote-signing integration, and rotation/revocation/audit procedures. The current file-key interfaces do not implement HSM signing. The PDF adapter excludes its whole appended revision from the data hash; preserved output structure and successful validation do not prove protection against later changes to excluded structures. Review and adversarial testing are required before production. Manual assistive-technology, Word round-trip, PDF rendering and cross-browser tests remain necessary; no full accessibility or C2PA product-conformance claim is made.
 
-Original PDFs and PDF signing/review reports are outside the site repository, beside the existing logs. The 82 review files are held; they are not included in the PDF signing allowlist. New or changed unsigned PDFs require renewed review and an updated allowlist hash. Previously signed allowlisted PDFs are revalidated and skipped.
+## Host Configuration Blocker: Adobe Inspect PDF access
 
-Normal clicks and Enter on hosted PDF links and signed DOCX links open the C2PA modal. Modifier clicks preserve normal link behavior. The modal includes an explicit original-document link. Hover CR/info controls remain limited to signed assets. C2PA status still uses browser validation, not just the local signed index.
+**Status: Open — hosting configuration required (September 16, 2026).**
 
-### Document viewer update — September 16, 2026
+Adobe Inspect cannot load signed PDFs by URL from the Cloud.gov Pages preview. The staging site’s own C2PA panel can read and validate the same PDF. No PDF re-signing or modal URL change is required to resolve this loading blocker.
 
-The browser SDK is pinned to `@contentauth/c2pa-web` 0.15.0, which reads the signed DOCX assets. Word ZIP packages are supplied with the correct DOCX MIME type even when the server sends application/octet-stream, and collection-hash success is recognized by the status display. Both signed PDF and DOCX links open the C2PA modal and share the hover CR/info panel. Unsigned PDF links receive no event interception or controls. Adobe Inspect and Open original document are styled link buttons; Close uses a labelled, keyboard-accessible SVG icon control.
+### Verified findings
 
-The C2PA summary separates certificate signer, publisher and origin. Publisher is read from the signed CreativeWork publisher assertion; it is omitted when absent. Missing inception data and the older automatically inserted `GSA IDManagement.gov created` description display `Origin not recorded`. Future image/Word signing records the publisher and uses the SDK edit/open workflow, rather than claiming software creation of all assets. Existing assets are not automatically re-signed merely to change these labels.
+On the staging `/fpki/` page, the Adobe Inspect link for `docs/fpki-x509-cert-profile-common.pdf` correctly includes the full preview path. A browser trace showed:
+
+- Adobe’s direct fetch was blocked because the PDF response lacks `Access-Control-Allow-Origin`.
+- Adobe’s fallback proxy returned HTTP 415, `Unsupported media type`.
+- Supplying the missing CORS header only in a diagnostic browser allowed Adobe to read the PDF’s Content Credentials. This test did not change staging.
+- Adobe then displayed separate warnings about the legacy C2PA specification version and the unrecognized development certificate. Fixing CORS does not remove those warnings.
+
+### Required host configuration
+
+Request that Cloud.gov Pages support enable cross-origin GET and HEAD access to public PDFs under `/docs/`, including subdirectories and the corresponding preview paths, with this response header:
+
+```http
+Access-Control-Allow-Origin: https://contentauthenticity.adobe.com
+```
+
+Affected preview:
+
+`https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0902-idm-c2pa-experiment/`
+
+The exact header name is `Access-Control-Allow-Origin`, not `Allow-Origin`. This must be an HTTP response header on the asset. HTML metadata, client-side JavaScript and Jekyll’s `_config.yml` do not configure the hosting server’s response headers. Cloud.gov’s documented custom-header configuration currently lists only `Cache-Control`; do not assume adding CORS to `pages.json` or `federalist.json` will work without confirmation from the platform team.
+
+Owner: site hosting administrator / Cloud.gov Pages support. No hosting change or support request has been made as part of this diagnosis.
+
+### Verification and completion criteria
+
+After the host change, check a representative PDF:
+
+```bash
+curl -I \
+  -H 'Origin: https://contentauthenticity.adobe.com' \
+  'https://federalist-cf03235f-a054-4178-aafb-4e1e61e0d42c.sites.pages.cloud.gov/preview/gsa/idmanagement.gov/0902-idm-c2pa-experiment/docs/fpki-x509-cert-profile-common.pdf'
+```
+
+Confirm HTTP 200 and the requested `Access-Control-Allow-Origin` response header. Then open the staging FPKI page, select the signed PDF and choose “View more in Adobe Inspect.” Confirm the actual GET succeeds without CORS errors and Adobe displays Content Credentials. Repeat with another PDF and a nested document path before closing the blocker.
+
+DOCX support is a separate limitation: Adobe Inspect’s published supported-format list includes PDF but not DOCX. Enabling CORS does not establish Adobe DOCX support; the site’s own browser SDK reads signed DOCX credentials.
+
+References:
+
+- [Cloud.gov Pages custom headers](https://docs.cloud.gov/pages/using-pages/custom-headers/)
+- [Adobe Inspect formats and URL/CORS requirements](https://opensource.contentauthenticity.org/docs/getting-started/inspect/)
