@@ -82,6 +82,16 @@
   color: #0000ee; 
 }
 
+// Accordion headings use a light gray background. The darker foreground
+// exceeds WCAG AA contrast for normal-sized text in every accordion state.
+// Primary navigation buttons are excluded so their USWDS menu colors remain
+// intact, including the white text on an expanded dark-blue menu item.
+.usa-accordion__button:not(.usa-nav__link),
+.usa-accordion__button:not(.usa-nav__link):hover,
+.usa-accordion__button:not(.usa-nav__link):focus {
+  color: #1b1b1b;
+}
+
 // 508 Overide #540: # Line Height to 1.5
 .usa-banner__header-text, .usa-identifier__identity-domain, .usa-identifier__identity-disclaimer, .footer-logo-text{
   line-height: 1.5;
