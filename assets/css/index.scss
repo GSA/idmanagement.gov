@@ -82,19 +82,13 @@
   color: #0000ee; 
 }
 
-// Keep primary navigation text readable while USWDS initializes its desktop
-// menu state. Explicit colors prevent the transparent button transition from
-// producing a low-contrast intermediate state during page load.
-.usa-nav__primary .usa-nav__link,
-.usa-nav__primary .usa-nav__link > span {
-  color: #1b1b1b;
-}
-
 // Accordion headings use a light gray background. The darker foreground
 // exceeds WCAG AA contrast for normal-sized text in every accordion state.
-.usa-accordion__button,
-.usa-accordion__button:hover,
-.usa-accordion__button:focus {
+// Primary navigation buttons are excluded so their USWDS menu colors remain
+// intact, including the white text on an expanded dark-blue menu item.
+.usa-accordion__button:not(.usa-nav__link),
+.usa-accordion__button:not(.usa-nav__link):hover,
+.usa-accordion__button:not(.usa-nav__link):focus {
   color: #1b1b1b;
 }
 
