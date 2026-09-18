@@ -64,6 +64,9 @@ def process(item):
   signed=sign(original,KEY.read_bytes(),CERT.read_bytes());output.write_bytes(signed)
   model=inspect(output);pages=verify_preservation(original,signed)
   backup=OUT/'C2PA_PDF_ORIGINALS'/item['path'];backup.parent.mkdir(parents=True,exist_ok=True)
+  # Retain earlier originals when an updated document reuses its public path.
+  if backup.exists() and digest(backup.read_bytes())!=before:
+   backup=backup.with_name(f'{backup.stem}.{before}{backup.suffix}')
   if backup.exists():assert digest(backup.read_bytes())==before
   else:shutil.copy2(path,backup)
   # Copy into a neighboring temporary file, then atomically replace only verified output.
