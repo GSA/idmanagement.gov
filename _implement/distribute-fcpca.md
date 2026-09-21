@@ -949,8 +949,8 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G6, O=DigiCert, Inc., C=US |
 | Validity | March 16, 2022 to March 16, 2032 |
 | Serial Number | 231eb3199085ee8187df5c7a598ef336b356092f |
-| SHA-1 Thumbprint | 806b3aa2dbeb6a097bf07920bb77bb1eb9fbb2dd |
-| SHA-256 Thumbprint | ac309ffef2da64de1a360c3194b9b78bcdb65dc4863f02c4fa2797f9d71a773b |
+| SHA-1 Thumbprint | 0dd44fd015c1f76327be46661456ce8f6fb346ec |
+| SHA-256 Thumbprint | 72653e7e6aa246b778a07592b4cf09e2b4f629e45994e289090f84d5c054686e |
 | Download Location | Click [here]({{site.baseurl}}/implement/certs/DigiCert_Federal_SSP_Intermediate_CA_-_G6.cer){:class="usa-link"}|
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5 (Maintenance Mode)
