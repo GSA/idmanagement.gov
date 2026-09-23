@@ -4,7 +4,7 @@ collection: experiments
 title: Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
 type: Markdown
 permalink: /experiments/gsa-pqc-phase2/
-sidenav: experiments
+sidenav: papers
 sticky_sidenav: true
 
 subnav:
