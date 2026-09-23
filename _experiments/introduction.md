@@ -27,8 +27,8 @@ subnav:
   href: '#mobile-piv-mpiv-experiment'
 - text: Shatterproof Digital Identity - GSA PQC Experiment
   href: '#shatterproof-digital-identity---gsa-pqc-experiment'
-- text: GSA Phase 2 Post-Quantum Cryptography (PQC) Experiment
-  href: '#gsa-phase-2-post-quantum-cryptography-pqc-experiment'
+- text: Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
+  href: '#phase-2-post-quantum-cryptography---gsa-pqc-experiment'
 
 ---
 
