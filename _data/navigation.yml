@@ -119,6 +119,8 @@ papers:
     href: /experiments/gsa-mpiv-experiment/
   - text: Shatterproof Digital Identity - GSA PQC Experiment
     href: /experiments/gsa-pqc-experiment/
+  - text: Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
+    href: /experiments/gsa-pqc-phase2/
   - text: Coming Soon
     href: /experiments/#coming-soon
 
