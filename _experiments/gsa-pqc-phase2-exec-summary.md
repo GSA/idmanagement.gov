@@ -7,6 +7,9 @@ permalink: /experiments/gsa-pqc-phase2/
 sidenav: papers
 sticky_sidenav: true
 
+pubdate: September 2026
+version: 1.0.0
+
 subnav:
   - text: Overview
     href: '#overview'
@@ -21,9 +24,43 @@ subnav:
 
 ---
 
-## Executive Summary
+{% include alert-warning.html heading="Draft" content="The following document is a Draft and should not be interpreted as a finalized rule." %}
 
-## Overview
+<!-- Start of Header -->
+<div style="margin-bottom: 20px;">
+    <img src="{{site.baseurl}}/assets/logo/logo-gsa.png" style="margin-right: 15px;border:0px;" alt="U.S. General Services Administration Logo">
+    <!-- <img src="{{site.baseurl}}/assets/logo/logo-sandia.png" style="margin-right: 15px;border:0px;" alt="Sandia National Laboratories Logo"> -->
+    <!-- <img src="{{site.baseurl}}/assets/logo/logo-lawrence.png" style="margin-right: 15px;border:0px;" alt="Lawrence Livermore National Laboratory Logo"> -->
+</div>
+
+<div class="usa-accordion usa-accordion--bordered">
+  <h4 class="usa-accordion__heading">
+    <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="v-c1">
+      Date: {{page.pubdate}} - Version: {{page.version}}
+    </button>
+  </h4>
+  <div id="v-c1" class="usa-accordion__content usa-prose">
+    <table>
+      <thead>
+      <tr>
+        <th scope='col' colspan="3">Phase 2 Post-Quantum Cryptography - GSA PQC Experiment</th>
+      </tr>
+      <tr>  
+        <th scope='col'>Version Number</th>
+        <th scope='col'>Date</th>
+        <th scope='col'>Change Description</th>
+      </tr>
+      </thead>
+      <tr>
+        <th scope='row'>1.0.0</th>
+        <td>September 23, 2026</td>
+        <td>First Version</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+## Executive Summary
 Federal agencies face an urgent and mandated timeline to transition away from classical cryptographic algorithms. NIST finalized the first post-quantum cryptographic (PQC) standards in August 2024 (FIPS 203, 204, 205), and both NSM-10 and OMB M-23-02 have made PQC migration a federal requirement. With long-lived federal credentials and the "harvest now, decrypt later" threat, the window for transition is limited.
 
 This document summarizes the **GSA Phase 2 Post-Quantum Cryptography (PQC) Experiment**, which successfully built and validated a production-pattern post-quantum PKI infrastructure. This work demonstrates that agencies do not need to wait for further software maturity to begin building PQC CA hierarchies.
