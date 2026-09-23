@@ -11,8 +11,8 @@ pubdate: September 2026
 version: 1.0.0
 
 subnav:
-  - text: Overview
-    href: '#overview'
+  - text: Executive Summary
+    href: '#executive-summary'
   - text: What We Did
     href: '#what-we-did'
   - text: Phase 2 Outcomes at a Glance
