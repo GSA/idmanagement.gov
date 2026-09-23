@@ -149,6 +149,8 @@ primary_navigation:
         url: /experiments/gsa-mpiv-experiment/
       - name: Shatterproof Digital Identity - GSA PQC Experiment
         url: /experiments/gsa-pqc-experiment/
+      - name: Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
+        url: /experiments/gsa-pqc-phase2/
         
 secondary_navigation:
   - name: Contact Us

@@ -1,7 +1,7 @@
 ---
 layout: page
 collection: experiments
-title: GSA Phase 2 Post-Quantum Cryptography (PQC) Experiment
+title: Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
 type: Markdown
 permalink: /experiments/gsa-pqc-phase2/
 sidenav: arch
