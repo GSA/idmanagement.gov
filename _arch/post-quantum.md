@@ -49,7 +49,7 @@ Phase 1 piloted next-generation PIV technology to improve secure digital identit
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Complete</h4>
     <p class="usa-alert__text">
-      OGP published its [findings from Phase 2]({{site.baseurl}}/experiments/gsa-pqc-phase2/){target:_blank} of the PQC experiment in September 2026. 
+      OGP published its <a href="https://www.idmanagement.gov/experiments/gsa-pqc-phase2/" target="_blank">findings from Phase 2</a> of the PQC experiment in September 2026. 
     </p>
   </div>
 </div>
