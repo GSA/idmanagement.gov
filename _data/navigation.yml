@@ -118,7 +118,7 @@ papers:
   - text: Mobile PIV (mPIV) Experiment
     href: /experiments/gsa-mpiv-experiment/
   - text: Shatterproof Digital Identity - GSA PQC Experiments
-    href: /experiments/gsa-pqc-experiment/
+    href: /pqc/
   - text: Coming Soon
     href: /experiments/#coming-soon
 

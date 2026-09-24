@@ -36,7 +36,7 @@ GSA’s PQC experimentation aligns with federal priorities to prepare for the ad
   <div class="usa-alert__body">
     <h4 class="usa-alert__heading">Complete</h4>
     <p class="usa-alert__text">
-      OGP published its <a href="https://www.idmanagement.gov/experiments/gsa-pqc-experiment/" target="_blank">findings from Phase 1</a> of the PQC experiment in June 2025.
+      OGP published its <a href="/experiments/gsa-pqc-experiment/" target="_blank">findings from Phase 1</a> of the PQC experiment in June 2025.
     </p>
   </div>
 </div>

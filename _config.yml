@@ -148,7 +148,7 @@ primary_navigation:
       - name: Mobile PIV (mPIV) Experiment
         url: /experiments/gsa-mpiv-experiment/
       - name: Shatterproof Digital Identity - GSA PQC Experiments
-        url: /experiments/pqc/
+        url: /pqc/
         
 secondary_navigation:
   - name: Contact Us
