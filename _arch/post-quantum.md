@@ -45,16 +45,16 @@ Phase 1 piloted next-generation PIV technology to improve secure digital identit
 
 **Phase 2**
 
-<div class="usa-alert usa-alert--warning">
+<div class="usa-alert usa-alert--success">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">In Progress</h4>
+    <h4 class="usa-alert__heading">Complete</h4>
     <p class="usa-alert__text">
-      Agencies interested in learning more about the ongoing Phase 2 experimentation should contact <a href="mailto:icam@gsa.gov">icam@gsa.gov</a>.
+      OGP published its [findings from Phase 2]({{site.baseurl}}/experiments/gsa-pqc-phase2/){target:_blank} of the PQC experiment in September 2026. 
     </p>
   </div>
 </div>
 
-Phase 2 seeks to deliver a deployable, standards-aligned, PQC PKI CA service blueprint and an operational pilot that can scale across agencies while maintaining compatibility with Federal PKI trust expectations and existing PIV workflows.
+Phase 2 of the GSA PQC Experiment built and validated a production-pattern post-quantum PKI infrastructure, demonstrating HSM-backed CA signing, automated certificate renewal, and operational post-quantum VPN connections.
 
 ## FPKI Bridge & Root Authority Working Lab
 

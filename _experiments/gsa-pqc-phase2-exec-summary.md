@@ -24,7 +24,7 @@ subnav:
 
 ---
 
-{% include alert-warning.html heading="Draft" content="The following document is a Draft and should not be interpreted as a finalized rule." %}
+{% include alert-warning.html heading="Non-Binding:" content="This resource outlines an exploratory experiment. It reflects our current research and does not constitute official policy or regulatory guidance." %}
 
 <!-- Start of Header -->
 <div style="margin-bottom: 20px;">

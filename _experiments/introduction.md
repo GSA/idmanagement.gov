@@ -25,10 +25,8 @@ subnav:
   href: '#piam-process'
 - text: Mobile PIV (mPIV) Experiment
   href: '#mobile-piv-mpiv-experiment'
-- text: Shatterproof Digital Identity - GSA PQC Experiment
-  href: '#shatterproof-digital-identity---gsa-pqc-experiment'
-- text: Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
-  href: '#phase-2-post-quantum-cryptography---gsa-pqc-experiment'
+- text: Shatterproof Digital Identity - GSA PQC Experiments
+  href: '#shatterproof-digital-identity---gsa-pqc-experiments'
 
 ---
 
@@ -109,16 +107,11 @@ The General Services Administration (GSA) partnered with Unifyia to explore Mobi
 [Read Mobile PIV (mPIV) Experiment]({{site.baseurl}}/experiments/gsa-mpiv-experiment/){:class="usa-button"}
 
 
-## Shatterproof Digital Identity - GSA PQC Experiment
+## Shatterproof Digital Identity - GSA PQC Experiments
 
 Public key cryptography has long served as the cornerstone of digital trust, enabling secure identity verification, encrypted communication, and data integrity—essential elements of Internet security. Algorithms like RSA and Elliptic Curve Cryptography (ECC) form the backbone of today’s digital infrastructure, securing systems such as the federal Personal Identity Verification (PIV) framework.
 
-
-## Phase 2 Post-Quantum Cryptography - GSA PQC Experiment
-
-Federal agencies face an urgent and mandated timeline to transition away from classical cryptographic algorithms. NIST finalized the first post-quantum cryptographic (PQC) standards in August 2024 (FIPS 203, 204, 205), and both NSM-10 and OMB M-23-02 have made PQC migration a federal requirement. With long-lived federal credentials and the "harvest now, decrypt later" threat, the window for transition is limited.
-
-[Read Phase 2 Post-Quantum Cryptography - GSA PQC Experiment]({{site.baseurl}}/experiments/gsa-pqc-phase2/){:class="usa-button"}
+[]({{site.baseurl}}/experiments/pqc/){:class="usa-button"}
 
 ## Coming Soon
 
