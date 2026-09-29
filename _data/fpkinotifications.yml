@@ -32,8 +32,23 @@
 # ee_ocsp_uri:
 #
 
-- notice_date: September 28, 2026
+- notice_date: September 29, 2026
   change_type: Intent to Issue CA Certificate
+  system: CertiPath Bridge CA - G3
+  change_description: Issue return certificate to FBCA G5 from the CertiPath Bridge CA -G3. Valid from 9/22/2026 to 9/30/2029. Proposed publication date 10/2/2026. Federal relying parties will either need to untrust this cross certificate or ignore this notice to prevent unintended PDVAL looping errors.
+  contact: support at certipath dot com
+  ca_certificate_hash: cb28250944c716acf59156ca65a3beb8003e2ba4
+  ca_certificate_issuer: CN=CertiPath Bridge CA-G3, OU=CAs, O=CertiPath, C=US
+  ca_certificate_subject: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag5.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: September 28, 2026
+  change_type: CA Certificate Issuance
   system: U.S. Treasury Root CA
   change_description: Treasury will be rekeying the US Treasury Root CA and issuing a new US Treasury Root CA certificate on October 7, 2026.  The artifacts will be published on October 21, 2026.
   contact: pki dot pmo at fiscal dot treasury dot gov
