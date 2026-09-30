@@ -1,9 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:285489874744374961624233994845554137025"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -2472,7 +2470,6 @@
             ],
             "sia-entries": {
                 "http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c": [
-                    "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
                 ]
             },
@@ -3168,6 +3165,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://cacerts.one.digicert.com/IssuedTo-tscpbcasha384.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -3313,6 +3311,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -3336,6 +3335,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -3359,6 +3359,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -3382,6 +3383,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
@@ -3405,6 +3407,7 @@
             "sia-entries": {},
             "aia-entries": {
                 "http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
