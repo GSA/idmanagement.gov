@@ -140,7 +140,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
                 "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US"
             ],
@@ -165,7 +165,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {},
@@ -194,7 +194,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {},
@@ -223,7 +223,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {
@@ -256,7 +256,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {
@@ -290,7 +290,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {},
@@ -364,7 +364,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {
@@ -397,7 +397,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {},
@@ -426,7 +426,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US"
             ],
             "sia-entries": {
@@ -1800,7 +1800,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US"
             ],
             "sia-entries": {},
@@ -2000,8 +2000,6 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
                 "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
             ],
             "sia-entries": {
@@ -2916,7 +2914,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -2940,7 +2938,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -2964,7 +2962,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -2988,7 +2986,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -3012,7 +3010,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -3036,7 +3034,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -3060,7 +3058,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
             ],
             "sia-entries": {},
@@ -3084,7 +3082,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
                 "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US"
             ],
@@ -3108,7 +3106,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
                 "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US"
             ],
@@ -3132,7 +3130,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
             ],
             "sia-entries": {
@@ -3160,7 +3158,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US"
             ],
             "sia-entries": {},
@@ -3276,7 +3274,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
             ],
             "sia-entries": {
@@ -3306,7 +3304,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
             ],
             "sia-entries": {},
@@ -3330,7 +3328,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
             ],
             "sia-entries": {},
@@ -3354,7 +3352,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
             ],
             "sia-entries": {},
@@ -3378,7 +3376,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
             ],
             "sia-entries": {},
@@ -3402,7 +3400,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
             ],
             "sia-entries": {},
@@ -3514,7 +3512,7 @@
             },
             "path-to-common": [
                 "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                 "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
             ],
             "sia-entries": {},
@@ -4194,6 +4192,18 @@
             }
         },
         {
+            "subject": "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "132909504651575765812721185148367737576559902907",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "f3 ed 39 b9 da 1b 4d 03 3c 26 15 39 d8 33 b5 08 ef 38 3e 39",
+            "status": "Certificate Valid, but no Path to Common",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Unable to build Path"
+            }
+        },
+        {
             "subject": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "issuer": "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "226707821816605250350672067442989724771",
@@ -4242,8 +4252,7 @@
             "skid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
             "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
-                "result": "false",
-                "details": "Unable to build Path"
+                "INFO": "Certificate is a trust anchor, but not the root of the graph"
             }
         },
         {
@@ -4353,9 +4362,9 @@
             "issuer": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "serial-number": "1670195538",
             "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
-            "status": "unchecked",
+            "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
+                "INFO": "Certificate is a trust anchor, but not the root of the graph"
             }
         },
         {
@@ -4378,8 +4387,7 @@
             "skid": "89 ac 36 a8 f6 af 4c 01 1d e7 52 c0 d2 07 75 7d f3 61 44 c7",
             "status": "Certificate Valid, but no Path to Common",
             "pathbuilder-result": {
-                "result": "false",
-                "details": "Unable to build Path"
+                "INFO": "Certificate is a trust anchor, but not the root of the graph"
             }
         },
         {
@@ -4486,6 +4494,8 @@
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
         ],
         [
@@ -4734,49 +4744,49 @@
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3,organization_identifier:NTRNL-27370985,organization_name:Ministerie van Defensie,country_name:NL"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US"
         ],
@@ -4812,123 +4822,123 @@
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Exostar Federated Identity Service Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Exostar LLC,country_name:US",
             "common_name:Exostar Federated Identity Service Signing CA 4,domain_component:evincible,domain_component:com"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC Device CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC Device CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:Leidos FBCA Cloud PKI CA-2,organization_name:Leidos"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:SAIC FBCA Cloud PKI CA 1,organizational_unit_name:IdenTrust Global Common,organization_name:SAIC LLC,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
             "common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
             "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
             "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:WidePoint NFI CA 5,organization_name:ORC PKI,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:WidePoint NFI CA 6,organization_name:ORC PKI,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:Senate PIV-I CA G6,organizational_unit_name:Office of the Sergeant at Arms,organizational_unit_name:U.S. Senate,organization_name:U.S. Government,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US",
             "common_name:XTec NFI SSP CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
             "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US",
             "common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
             "common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US",
             "common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US"
