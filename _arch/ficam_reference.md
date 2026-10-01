@@ -1,7 +1,7 @@
 ---
 layout: wide
 collection: arch
-title:  FICAM Architecture
+title:  FICAM 2026 Reference Architecture
 permalink: /arch/ficam-reference/
 sidenav: arch
 sticky_sidenav: true
