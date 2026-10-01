@@ -13,8 +13,8 @@ subnav:
 
 ---
 <div class="grid-container">
-<img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide1.svg">
+ <img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide1.svg" alt="FICAM 2026 Reference Architecture for Federal Government">
 </div>
 <div class="grid-container">
-<img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide2.svg">
+ <img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide2.svg" alt="FICAM 2026 Reference Architecture Summary">
 </div>
