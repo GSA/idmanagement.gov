@@ -8,12 +8,13 @@ sticky_sidenav: true
 
 subnav:
   - text: Back to FICAM Architecture
-    href: '/arch/'
+    href: '{{site.baseurl}}/arch/'
  
 
 ---
-
+<div class="grid-container">
 <img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide1.svg">
-
+</div>
+<div class="grid-container">
 <img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide2.svg">
-
+</div>
