@@ -252,8 +252,8 @@ Device management enables organizations to administer and maintain devices, incl
 | Assurance Level | WHfB Configuration | Additional Requirements | Use Cases |
 | :---- | :---- | :---- | :---- |
 | AAL1 | WHfB with PIN or biometric | None | Basic access, low-impact systems |
-| AAL2 | WHfB with software or hardware TPM + PIN/biometric | No SMS/push required for WHfB itself when accepted as a multi-factor cryptographic authenticator; configure Entra authentication strength, session, and device policies | Personal data access, moderate-impact systems |
-| AAL3 | WHfB with hardware TPM + PIN/biometric, subject to FIPS 140-2/3 validation and agency risk acceptance | Alternatively use PIV/smart card or FIDO2 security key; require phishing-resistant methods only | High-impact systems where AAL3 is required |
+| AAL2 | WHfB with software or hardware TPM + PIN or biometric | No SMS or push required for WHfB itself when accepted as a multi-factor cryptographic authenticator; configure Entra authentication strength, session, and device policies | Personal data access, moderate-impact systems |
+| AAL3 | WHfB with hardware TPM + PIN or biometric, subject to FIPS 140-2/3 validation and agency risk acceptance | Alternatively use PIV card or FIDO2 security key; require phishing-resistant methods only | High-impact systems where AAL3 is required |
 
 ### **Configuration Requirements by AAL**
 
