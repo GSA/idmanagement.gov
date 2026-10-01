@@ -5,13 +5,10 @@ title:  FICAM 2026 Reference Architecture
 permalink: /arch/ficam-reference/
 sidenav: arch
 sticky_sidenav: true
-
-subnav:
-  - text: Back to FICAM Architecture
-    href: '{{site.baseurl}}/arch/'
  
 
 ---
+<a class="usa-button" href="{{site.baseurl}}/arch/" type="button">Back to FICAM Architecture</a>
 <div class="grid-container">
  <img src="{{site.baseurl}}/assets/arch/ficam-refs/ficam_arch_idm_slide1.svg" alt="FICAM 2026 Reference Architecture for Federal Government">
 </div>
