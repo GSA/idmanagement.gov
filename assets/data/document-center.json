@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T20:08:11Z",
-  "document_count": 448,
+  "generated_at": "2026-10-05T19:12:07Z",
+  "document_count": 456,
   "documents": [
     {
       "id": "docs-autopen-template-decision-document-docx",
@@ -812,17 +812,17 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
-      "size_bytes": 272731,
-      "created": "2026-07-29",
+      "size_bytes": 353096,
+      "created": "2026-09-23",
       "created_source": "embedded metadata",
-      "modified": "2026-07-29",
+      "modified": "2026-09-23",
       "modified_source": "embedded metadata",
       "signature": {
         "status": "validity_unknown",
         "label": "Signed; validity unknown",
         "count": 1,
         "signer": "DocuSign, Inc.",
-        "signing_date": "2026-07-29",
+        "signing_date": "2026-09-23",
         "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
@@ -868,6 +868,28 @@
         "signer": "DocuSign, Inc.",
         "signing_date": "2025-04-09",
         "validation_summary": "Signature is Valid. Certificate has Expired"
+      }
+    },
+    {
+      "id": "docs-archived-apl-10003-10008-26-52-85-pivclass-20260923-pdf",
+      "filename": "apl-10003-10008-26-52-85-pivclass_20260923.pdf",
+      "path": "/docs/archived/apl-10003-10008-26-52-85-pivclass_20260923.pdf",
+      "relative_path": "docs/archived/apl-10003-10008-26-52-85-pivclass_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
+      "size_bytes": 272731,
+      "created": "2026-07-29",
+      "created_source": "embedded metadata",
+      "modified": "2026-07-29",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-07-29",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
     {
@@ -1370,17 +1392,17 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
-      "size_bytes": 316147,
-      "created": "2026-07-29",
+      "size_bytes": 411350,
+      "created": "2026-09-09",
       "created_source": "embedded metadata",
-      "modified": "2026-07-29",
+      "modified": "2026-09-09",
       "modified_source": "embedded metadata",
       "signature": {
         "status": "validity_unknown",
         "label": "Signed; validity unknown",
         "count": 1,
         "signer": "DocuSign, Inc.",
-        "signing_date": "2026-07-29",
+        "signing_date": "2026-09-09",
         "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
@@ -1404,6 +1426,28 @@
         "signer": "MATTHEW ARNOLD",
         "signing_date": "2024-11-21",
         "validation_summary": "Signature is Valid. Certificate has Expired"
+      }
+    },
+    {
+      "id": "docs-archived-apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt-20260923-pdf",
+      "filename": "apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt_20260923.pdf",
+      "path": "/docs/archived/apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt_20260923.pdf",
+      "relative_path": "docs/archived/apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
+      "size_bytes": 316147,
+      "created": "2026-07-29",
+      "created_source": "embedded metadata",
+      "modified": "2026-07-29",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-07-29",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
     {
@@ -1836,17 +1880,17 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
-      "size_bytes": 244268,
-      "created": "2026-07-29",
+      "size_bytes": 353084,
+      "created": "2026-09-09",
       "created_source": "embedded metadata",
-      "modified": "2026-07-29",
+      "modified": "2026-09-09",
       "modified_source": "embedded metadata",
       "signature": {
         "status": "validity_unknown",
         "label": "Signed; validity unknown",
         "count": 1,
         "signer": "DocuSign, Inc.",
-        "signing_date": "2026-07-29",
+        "signing_date": "2026-09-09",
         "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
@@ -1871,6 +1915,28 @@
         "signer": "MATTHEW ARNOLD",
         "signing_date": "2022-06-10",
         "validation_summary": "Signature is Valid. Certificate has Expired"
+      }
+    },
+    {
+      "id": "docs-archived-apl-10063-honeywell-20260923-pdf",
+      "filename": "apl-10063-honeywell_20260923.pdf",
+      "path": "/docs/archived/apl-10063-honeywell_20260923.pdf",
+      "relative_path": "docs/archived/apl-10063-honeywell_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
+      "size_bytes": 244268,
+      "created": "2026-07-29",
+      "created_source": "embedded metadata",
+      "modified": "2026-07-29",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-07-29",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
     {
@@ -2287,6 +2353,28 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
+      "size_bytes": 417990,
+      "created": "2026-09-23",
+      "created_source": "embedded metadata",
+      "modified": "2026-09-23",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-09-23",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
+      }
+    },
+    {
+      "id": "docs-archived-apl-10104-07-19-24-25-47-58-74-80-96-utrust-20260923-pdf",
+      "filename": "apl-10104-07-19-24-25-47-58-74-80-96-utrust_20260923.pdf",
+      "path": "/docs/archived/apl-10104-07-19-24-25-47-58-74-80-96-utrust_20260923.pdf",
+      "relative_path": "docs/archived/apl-10104-07-19-24-25-47-58-74-80-96-utrust_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
       "size_bytes": 428112,
       "created": "2025-03-19",
       "created_source": "embedded metadata",
@@ -2554,6 +2642,28 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
+      "size_bytes": 295082,
+      "created": "2026-09-09",
+      "created_source": "embedded metadata",
+      "modified": "2026-09-09",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-09-09",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
+      }
+    },
+    {
+      "id": "docs-archived-apl-10112-10113-idfactors-20260923-pdf",
+      "filename": "apl-10112-10113-idfactors_20260923.pdf",
+      "path": "/docs/archived/apl-10112-10113-idfactors_20260923.pdf",
+      "relative_path": "docs/archived/apl-10112-10113-idfactors_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
       "size_bytes": 278191,
       "created": "2024-08-06",
       "created_source": "embedded metadata",
@@ -2576,18 +2686,18 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
-      "size_bytes": 339102,
-      "created": "2024-08-06",
+      "size_bytes": 365209,
+      "created": "2026-09-09",
       "created_source": "embedded metadata",
-      "modified": "2024-08-06",
+      "modified": "2026-09-09",
       "modified_source": "embedded metadata",
       "signature": {
         "status": "validity_unknown",
         "label": "Signed; validity unknown",
         "count": 1,
-        "signer": "MATTHEW ARNOLD",
-        "signing_date": "2024-08-06",
-        "validation_summary": "Signature is Valid. Certificate has Expired"
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-09-09",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
     {
@@ -2658,14 +2768,14 @@
       }
     },
     {
-      "id": "docs-apl-10113-level-validation-pdf",
-      "filename": "apl-10113-level-validation.pdf",
-      "path": "/docs/apl-10113-level-validation.pdf",
-      "relative_path": "docs/apl-10113-level-validation.pdf",
+      "id": "docs-archived-apl-10112-lenel-20260923-pdf",
+      "filename": "apl-10112-lenel_20260923.pdf",
+      "path": "/docs/archived/apl-10112-lenel_20260923.pdf",
+      "relative_path": "docs/archived/apl-10112-lenel_20260923.pdf",
       "type": "pdf",
       "type_label": "PDF",
-      "scope": "active",
-      "size_bytes": 275650,
+      "scope": "archived",
+      "size_bytes": 339102,
       "created": "2024-08-06",
       "created_source": "embedded metadata",
       "modified": "2024-08-06",
@@ -2677,6 +2787,28 @@
         "signer": "MATTHEW ARNOLD",
         "signing_date": "2024-08-06",
         "validation_summary": "Signature is Valid. Certificate has Expired"
+      }
+    },
+    {
+      "id": "docs-apl-10113-level-validation-pdf",
+      "filename": "apl-10113-level-validation.pdf",
+      "path": "/docs/apl-10113-level-validation.pdf",
+      "relative_path": "docs/apl-10113-level-validation.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "active",
+      "size_bytes": 307963,
+      "created": "2026-09-09",
+      "created_source": "embedded metadata",
+      "modified": "2026-09-09",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-09-09",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
     {
@@ -2743,6 +2875,28 @@
         "count": 1,
         "signer": "MATTHEW ARNOLD",
         "signing_date": "2023-07-31",
+        "validation_summary": "Signature is Valid. Certificate has Expired"
+      }
+    },
+    {
+      "id": "docs-archived-apl-10113-level-validation-20260923-pdf",
+      "filename": "apl-10113-level-validation_20260923.pdf",
+      "path": "/docs/archived/apl-10113-level-validation_20260923.pdf",
+      "relative_path": "docs/archived/apl-10113-level-validation_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
+      "size_bytes": 275650,
+      "created": "2024-08-06",
+      "created_source": "embedded metadata",
+      "modified": "2024-08-06",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "MATTHEW ARNOLD",
+        "signing_date": "2024-08-06",
         "validation_summary": "Signature is Valid. Certificate has Expired"
       }
     },
@@ -3357,17 +3511,17 @@
       "type": "pdf",
       "type_label": "PDF",
       "scope": "active",
-      "size_bytes": 252334,
-      "created": "2026-07-29",
+      "size_bytes": 327843,
+      "created": "2026-09-09",
       "created_source": "embedded metadata",
-      "modified": "2026-07-29",
+      "modified": "2026-09-09",
       "modified_source": "embedded metadata",
       "signature": {
         "status": "validity_unknown",
         "label": "Signed; validity unknown",
         "count": 1,
         "signer": "DocuSign, Inc.",
-        "signing_date": "2026-07-29",
+        "signing_date": "2026-09-09",
         "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
@@ -3413,6 +3567,28 @@
         "signer": "MATTHEW ARNOLD",
         "signing_date": "2024-08-02",
         "validation_summary": "Signature is Valid. Certificate has Expired"
+      }
+    },
+    {
+      "id": "docs-archived-apl-10134-10137-signo-20260923-pdf",
+      "filename": "apl-10134-10137-signo_20260923.pdf",
+      "path": "/docs/archived/apl-10134-10137-signo_20260923.pdf",
+      "relative_path": "docs/archived/apl-10134-10137-signo_20260923.pdf",
+      "type": "pdf",
+      "type_label": "PDF",
+      "scope": "archived",
+      "size_bytes": 252334,
+      "created": "2026-07-29",
+      "created_source": "embedded metadata",
+      "modified": "2026-07-29",
+      "modified_source": "embedded metadata",
+      "signature": {
+        "status": "validity_unknown",
+        "label": "Signed; validity unknown",
+        "count": 1,
+        "signer": "DocuSign, Inc.",
+        "signing_date": "2026-07-29",
+        "validation_summary": "Signature is Valid. Unknown issue with Certificate or corrupted data."
       }
     },
     {
