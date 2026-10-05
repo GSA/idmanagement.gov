@@ -24,9 +24,7 @@
     "c2pa:sign-pdfs": ".c2pa-work/pdf-venv/bin/python scripts/c2pa/sign-pdfs.py"
   },
   "dependencies": {
-    "@contentauth/c2pa-web": "0.15.0",
-    "@uswds/uswds": "3.13.0",
-    "esbuild": "0.28.2",
+    "@uswds/uswds": "3.14.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {
