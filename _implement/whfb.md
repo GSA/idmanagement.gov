@@ -42,8 +42,8 @@ subnav:
     href: '#user-support-and-redress-procedures'
   - text: WHfB user experience
     href: '#whfb-user-experience'
-  - text: First time setup for new device/PIN creation
-    href: '#first-time-setup-for-new-devicepin-creation'
+  - text: First time setup for new device and PIN creation
+    href: '#first-time-setup-for-new-device-and-pin-creation'
   - text: Windows Hello for Business Microsoft Authenticator Setup for iOS and Android
     href: '#windows-hello-for-business-microsoft-authenticator-setup-for-ios-and-android'
   - text: Android – Microsoft Authenticator setup
@@ -131,13 +131,13 @@ Due to this, the playbook only covers a cloud-join configuration.
 Authentication Factor Classification:
 
 - WHfB uses cryptographic proof of possession of a device-bound private key, combined with local activation by PIN or biometric gesture.  
-- PIN/biometric serves as the user activation factor for the device-bound authenticator and demonstrates user intent/presence.  
-- For AAL2, properly configured WHfB with TPM + PIN/biometric may be treated as a multi-factor cryptographic authenticator. Agencies should configure authentication strengths and reauthentication controls rather than requiring SMS or basic push solely to make WHfB AAL2.
+- PIN or biometric serves as the user activation factor for the device-bound authenticator and demonstrates user intent or presence.  
+- For AAL2, properly configured WHfB with TPM + PIN or biometric may be treated as a multi-factor cryptographic authenticator. Agencies should configure authentication strengths and reauthentication controls rather than requiring SMS or basic push solely to make WHfB AAL2.
 
 Multi-Factor Authentication Requirements:
 
-- AAL2: WHfB with software TPM or hardware TPM \+ PIN/biometric; avoid SMS/basic push as the primary path to phishing-resistant AAL2.  
-- AAL3: WHfB with hardware TPM may be considered when FIPS 140 and agency risk-acceptance requirements are met; FIDO2 security keys and smart cards/PIV are also strong AAL3 options.
+- AAL2: WHfB with software TPM or hardware TPM + PIN or biometric; avoid SMS or basic push as the primary path to phishing-resistant AAL2.  
+- AAL3: WHfB with hardware TPM may be considered when FIPS 140 and agency risk-acceptance requirements are met; FIDO2 security keys and smart cards and PIVs are also strong AAL3 options.
 
 See Section NIST 800-63B Authentication Assurance Level Compliance for complete AAL compliance mapping and configuration guidance.
 
@@ -180,7 +180,7 @@ The available sign-in options for Windows Hello for Business include the followi
 
 - Facial recognition  
 - Fingerprint recognition  
-- PIN (for use as a backup in case the biometric authentication fails or in the absence of camera/fingerprint scanning technology)
+- PIN (for use as a backup in case the biometric authentication fails or in the absence of camera and fingerprint scanning technology)
 
 WHfB PINs may seem similar to passwords at first glance. However, there is a fundamental difference: PINs typically are local to the device and not transmitted over the internet, unlike a Microsoft 365 or Microsoft Entra ID (ME-ID) User Principal Name and Password combination. Device PIN creation establishes a trusted relationship with the identity provider (ME-ID). It also creates an asymmetric key pair that is used for authentication.
 
@@ -266,15 +266,15 @@ AAL1 Configuration (Low-Impact Baseline Only):
 
 AAL2 Configuration (Recommended WHfB Deployment):
 
-- Configure WHfB as a multi-factor cryptographic authenticator using TPM \+ PIN/biometric, plus:  
+- Configure WHfB as a multi-factor cryptographic authenticator using TPM + PIN or biometric, plus:  
 - Microsoft Entra Conditional Access authentication strength for phishing-resistant methods  
-- Fallback/recovery methods defined by agency policy; SMS should be treated as backup/recovery only and not as the primary phishing-resistant method  
+- Fallback and recovery methods defined by agency policy; SMS should be treated as backup and recovery only and not as the primary phishing-resistant method  
 - Risk-based authentication policies
 
-AAL3 Configuration (Hardware-Protected/High Assurance):
+AAL3 Configuration (Hardware-Protected and High Assurance):
 
 - All AAL2 requirements PLUS:  
-- Use WHfB with hardware TPM only where FIPS 140 and agency risk acceptance are satisfied, or use PIV/smart card or FIDO2 security key  
+- Use WHfB with hardware TPM only where FIPS 140 and agency risk acceptance are satisfied, or use PIV or FIDO2 security key  
 - Phishing-resistant verification only  
 - Enhanced monitoring and logging
 
@@ -284,8 +284,8 @@ For AAL2 Compliance in Microsoft Entra ID:
 
 - Create Conditional Access policy  
 - Require an authentication strength that includes phishing-resistant methods  
-- Include WHfB with TPM + PIN/biometric as an allowed phishing-resistant method where accepted by agency policy  
-- Configure session, device compliance, and reauthentication controls; do not require SMS/basic push solely to upgrade WHfB to AAL2  
+- Include WHfB with TPM + PIN or biometric as an allowed phishing-resistant method where accepted by agency policy  
+- Configure session, device compliance, and reauthentication controls; do not require SMS or basic push solely to upgrade WHfB to AAL2  
 - Apply to user groups based on risk assessment
 
 ## Prepare users to use Windows Hello
@@ -448,7 +448,7 @@ In Configuration settings (see Figure 9), configure the following settings: Conf
 **Device Replacement:**
 
 - User receives new device  
-- Old device WHfB credentials must be removed through device retirement, wipe/disable actions, Entra/Intune lifecycle procedures, or documented recovery controls; new device enrollment alone should not be assumed to invalidate the old credential.  
+- Old device WHfB credentials must be removed through device retirement, wipedisable actions, Entra and Intune lifecycle procedures, or documented recovery controls; new device enrollment alone should not be assumed to invalidate the old credential.  
 - User re-enrolls WHfB on new device  
 - Verify successful authentication  
 - Update device inventory records
@@ -472,9 +472,9 @@ This section details the user experience for setting up Windows Hello for Busine
 
 By default, users will be prompted for facial recognition and PIN creation if biometric authentication is enabled. Fingerprints can be added later from the Settings > Accounts > Sign-in options menu.
 
-## First time setup for new device/PIN creation
+## First time setup for new device and PIN creation
 
-Enter the username and password for an Microsoft Entra ID user on a Windows 10 or 11 device, as shown in Figure 14\.
+Enter the username and password for an Microsoft Entra ID user on a Windows 10 or 11 device, as shown in Figure 14.
 
 **Figure 14: Windows Sign-in**
 
@@ -569,7 +569,7 @@ The MFA challenge only occurs on the first sign-in to Windows when setting up Wi
 - Select Work or school account.  
 - Choose Scan a QR code.  
 - Respond Approve to the push notification to approve the sign-in.  
-- If agency policy allows SMS as a fallback/recovery method, enter a phone number when prompted; do not position SMS as the primary phishing-resistant method.  
+- If agency policy allows SMS as a fallback and recovery method, enter a phone number when prompted; do not position SMS as the primary phishing-resistant method.  
 - Enter a valid phone number only if SMS backup is authorized by agency policy; prefer phishing-resistant portable credentials such as FIDO2 security keys, passkeys, or smart cards for primary authentication.  
 - Your security information will now be updated. Treat text messaging as a fallback or recovery method only where agency policy permits.  
 - Congratulations! Multi-factor authentication has now been set up.
