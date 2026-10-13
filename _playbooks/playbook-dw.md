@@ -172,7 +172,7 @@ The ICAM governance structure ensures enterprise identity management policies ar
 <table class="usa-table">
 <thead>
   <tr>
-    <th style="vertical-align:top;">Governance Collaboration Example</th>
+    <th scope="row" style="vertical-align:top;">Governance Collaboration Example</th>
     <td style="background-color:rgb(223 225 226);">Before creating and provisioning a digital worker, the agency ICAM governance structure can collaborate with Information System Security Officers on digital worker identity management. Collaboration may include: <ul><li>Digital worker security and non-functional requirements verification</li><li>Security and privacy assessments</li><li>Executable, vulnerability and other scans</li><li>Digital worker logic and decision-making design documents</li></ul></td>
   </tr>
 </thead>
@@ -187,7 +187,9 @@ Each factor has an associated score, and the sum of these six-factor scores is t
 
 **Table 1: Digital Worker Impact Evaluation Matrix** [^4] 
 
-| Score each factor based on the most applicable scenario |   |
+Score each factor based on the most applicable scenario.
+
+| Factor / Scenario | Score |
 | ----- | :---: |
 | Factor 1 - Is the digital worker attended or unattended? | Score |
 | ● Attended | 0 |
@@ -831,7 +833,7 @@ Table 14 illustrates computation of the impact score for this digital worker usi
 
 **Table 16: Critical Case Study Digital Worker Impact Evaluation Matrix**
 
-| Digital Worker Impact Evaluation Matrix |   |
+| Factor / Scenario | Score / Result |
 | ----- | :---: |
 | Factor 1 - Is the digital worker attended or unattended? | Score |
 | ● Unattended | 10 |
@@ -854,14 +856,19 @@ The hospital digital worker in this case study has a *Critical* adverse impact
 
 **Table 17: Critical Case Study Sponsorship and Validation**
 
-|   | Hospital Digital Worker Sponsorship (SP) |
+**Hospital Digital Worker Sponsorship (SP)**
+
+| ID | Critical Actions |
 | :---: | :---: |
-|    ID    | Critical Actions |
 | SP-1 | The business owner documents the business need to use a digital worker. |
 | SP-2 SP-3  | The CISO reviews the business need and assigns the systems Information Security System Manager (ISSM) as sponsor. The CISO notifies the ISSM, and the ISSM electronically signs an acknowledgment letter every six months. |
 | SP-4 SP-5  | As sponsor, the ISSM assigns and notifies the contractor maintaining the digital worker of their responsibility as custodian. |
 | SP-6  | The contractor, as custodian, acknowledges their assignment and responsibility every six months. |
-|   | Hospital Digital Worker Validation (VD) |
+
+**Hospital Digital Worker Validation (VD)**
+
+| ID | Critical Actions |
+| :---: | :---: |
 | VD-1  | The ISSM, as sponsor, reviews the digital worker design document with the ISSO to verify a level of access that employs least privilege. They verify a standard system account is necessary. |
 | VD-2  | The ISSM and ISSO validate that the standard system account does not create a separation-of-duty conflict with a human user. |
 | VD-3  | The ISSM verifies a code review was conducted with the business owner and sets a reminder to verify a code review every six months. |
@@ -872,7 +879,9 @@ After the sponsorship and validation activities are complete and documented, the
 
 **Table 18: Critical Case Study Data Fields**
 
-|          | Identity Management System Data Fields (DF) |   |
+**Identity Management System Data Fields (DF)**
+
+| ID | Data Field | Example Value |
 | :------: | :---: | ----- |
 |  DF-1   | Digital Worker *(new field)* | True |
 |  DF-2   | Agency Unique User ID *(existing field)* | Diagnosis.DW01@agency.gov |
@@ -881,7 +890,11 @@ After the sponsorship and validation activities are complete and documented, the
 |  DF-5   | Digital Worker Custodian Name *(new field[s])* | Stacy Contractor |
 |  DF-6   | Digital Worker Description *(optional new field)* | N/A |
 |  DF-7   | Responsible Organization *(optional new field)* | Patient Health Division |
-|         | Additional Identity Governance Data Fields |   |
+
+**Additional Identity Governance Data Fields**
+
+| ID | Data Field | Example Value |
+| :------: | :---: | ----- |
 |  DF-8   | DW Sponsor Acknowledgment Date | 09/1/2020 |
 |  DF-9   | DW Sponsor Acknowledgment Recertification Date *(optional)* | 02/1/2021 |
 |  DF-10  | DW Level of Potential Adverse Impact | Critical |
@@ -909,7 +922,7 @@ Table 17 presents the Impact Evaluation Matrix for this digital worker.
 
 **Table 19: Low Case Study Digital Worker Impact Evaluation Matrix**
 
-| Digital Worker Impact Evaluation Matrix |   |
+| Factor / Scenario | Score / Result |
 | ----- | ----- |
 | Factor 1 - Is the digital worker attended or unattended? | Score |
 | ● Unattended | 10 |
