@@ -552,7 +552,7 @@ This Memorandum of Agreement ("Agreement") is entered into by the General Servic
     <hr>
     <pre>
       Name: Dan Pomeroy 
-      Title: Deputy Associate Administrator 
+      Title: Deputy Associate Administrator
       Organization: Ofﬁce of Governmentwide Policy 
       Ofﬁce: Ofﬁce of Technology Policy (OTP) 
     </pre>
