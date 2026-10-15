@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
-    <meta lastmodifieddate="2026-10-06">
+    <meta lastmodifieddate="2026-10-15">
         <creator>py-crawler</creator>
-        <description>Created by Py-Crawler on 2026-10-06</description>
+        <description>Created by Py-Crawler on 2026-10-15</description>
     </meta>
     <graph defaultedgetype="directed" mode="static">
         <nodes>
@@ -211,6 +211,11 @@
                 <viz:color r="153" g="0" b="153"/>
                 <viz:position x="113.0" y="-383.0" z="0.0"/>
             </node>
+            <node id="common_name:DOD SW CA-87,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-87">
+                <size value="10.0"/>
+                <viz:color r="153" g="0" b="153"/>
+                <viz:position x="167.0" y="-363.0" z="0.0"/>
+            </node>
             <node id="common_name:DigiCert Federal SSP Intermediate CA - G5,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Federal SSP Intermediate CA - G5">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
@@ -329,22 +334,22 @@
             <node id="common_name:IdenTrust ECA Component S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA Component S23">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="167.0" y="-363.0" z="0.0"/>
+                <viz:position x="217.0" y="-336.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust ECA Component S24,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA Component S24">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="217.0" y="-336.0" z="0.0"/>
+                <viz:position x="262.0" y="-302.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust ECA S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA S23">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="262.0" y="-302.0" z="0.0"/>
+                <viz:position x="303.0" y="-261.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust ECA S24,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US" label="IdenTrust ECA S24">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
-                <viz:position x="303.0" y="-261.0" z="0.0"/>
+                <viz:position x="337.0" y="-216.0" z="0.0"/>
             </node>
             <node id="common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US" label="IdenTrust Global Common Root CA 1">
                 <size value="10.0"/>
@@ -392,11 +397,6 @@
                 <viz:position x="-150.0" y="-259.0" z="0.0"/>
             </node>
             <node id="common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Signing CA-384">
-                <size value="10.0"/>
-                <viz:color r="153" g="0" b="153"/>
-                <viz:position x="337.0" y="-216.0" z="0.0"/>
-            </node>
-            <node id="common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Signing CA-G2">
                 <size value="10.0"/>
                 <viz:color r="153" g="0" b="153"/>
                 <viz:position x="364.0" y="-166.0" z="0.0"/>
@@ -611,6 +611,9 @@
             <edge id="common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US" source="common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US" target="common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US" label="Boeing Medium Assurance Hardware Issuing CA G3" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
+            <edge id="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Bridge CA G5" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
             <edge id="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Raytheon Technologies Medium Assurance CA,organizational_unit_name:Class3-G3,organization_name:CAs,domain_component:rtx,domain_component:com" label="Raytheon Technologies Medium Assurance CA" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
@@ -624,9 +627,6 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US" label="Carillon Federal Services PIV-I CA3" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
-            <edge id="common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Bridge CA G4" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US" source="common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US" target="common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US" label="Boeing PCA G3" weight="1.0">
@@ -755,6 +755,9 @@
             <edge id="common_name:DOD SW CA-83,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" source="common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:DOD SW CA-83,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-83" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
+            <edge id="common_name:DOD SW CA-87,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" source="common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:DOD SW CA-87,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD SW CA-87" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
             <edge id="common_name:DOD EMAIL CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" source="common_name:DoD Root CA 6,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" target="common_name:DOD EMAIL CA-70,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DOD EMAIL CA-70" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
@@ -839,9 +842,6 @@
             <edge id="organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" source="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US" label="Entrust Managed Services NFI Root CA" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
-            <edge id="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Bridge CA G5" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
             <edge id="common_name:WidePoint ORC SSP 5,organization_name:ORC PKI,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:WidePoint ORC SSP 5,organization_name:ORC PKI,country_name:US" label="WidePoint ORC SSP 5" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
@@ -849,6 +849,9 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:DigiCert Federal SSP Intermediate CA - G6,organization_name:DigiCert, Inc.,country_name:US" label="DigiCert Federal SSP Intermediate CA - G6" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
+            <edge id="common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" label="Federal Bridge CA G4" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu" source="common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu" label="U.S. Department of State AD Root CA" weight="1.0">
@@ -891,9 +894,6 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US" source="common_name:Northrop Grumman Corporate Root CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US" target="common_name:Northrop Grumman Corporate Signing CA-384,organizational_unit_name:Northrop Grumman Enterprise Services,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Signing CA-384" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
-            <edge id="common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US" source="common_name:Northrop Grumman Corporate Root CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US" target="common_name:Northrop Grumman Corporate Signing CA-G2,organizational_unit_name:Northrop Grumman Information Technology,organization_name:Northrop Grumman Corporation,country_name:US" label="Northrop Grumman Corporate Signing CA-G2" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US" source="common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US" target="common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US" label="FTI Certification Authority" weight="1.0">
