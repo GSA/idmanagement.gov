@@ -143,6 +143,12 @@ npm run test:document-center
 - The generator preserves the existing inventory and generation timestamp when document records and counts are unchanged, avoiding commits caused only by a new timestamp.
 - Bot commits made with `GITHUB_TOKEN` do not trigger another push-based GitHub Actions build. The inventory job validates and builds its own output; the site build checks the triggering source commit. Hosted deployment of the generated commit must be checked in cloud.gov Pages; a successful local or Actions build does not establish deployment success.
 
+## GitHub dependency-install failure and correction
+
+The October 15 GitHub runs for commit `9557bd7f` failed in both Site build and Update Document Center index before the build step. `npm ci` rejected an out-of-sync lockfile: package.json required USWDS 3.14.0 while package-lock.json still recorded 3.13.0 and older Lit dependencies. Synchronize and commit package-lock.json whenever package.json dependencies change. Local builds with existing node_modules do not validate a clean dependency installation.
+
+The lockfile was regenerated to match the declared dependencies. A clean-install build also exposed a stale USWDS footer patch in `_plugins/asset-helper.rb`; its expected source fragments were updated for USWDS 3.14.0 while retaining the site’s h4-only restoration rule. An isolated clean `npm ci` completed successfully with Puppeteer downloads disabled, matching the workflow's installation setting. The site build passed after the clean installation and footer-patch correction. Hosted confirmation requires pushing both the corrected lockfile and build helper; rerunning the old commit would still use the old lockfile.
+
 ## Validation for the title and archive updates
 
 - Three successive local Jekyll builds passed.

@@ -2,14 +2,11 @@ require 'fileutils'
 
 # Note: uswds/img and uswds/fonts moved to assets/ folder instead of assets/uswds/, uswds3.0 was looking for things here.
 module AssetHelper
-    FOOTER_TAG_SOURCE = 'const preservedHtmlTag = currentElement.getAttribute("data-tag") || currentElement.tagName;'
-    FOOTER_TAG_REPLACEMENT = <<~JS.strip
-        const requestedTag = currentElement.getAttribute("data-tag");
-        const normalizedTag = (requestedTag || currentElement.tagName || "H4").toUpperCase();
-        const preservedHtmlTag = normalizedTag === "H4" ? "h4" : "h4";
-    JS
-    MINIFIED_FOOTER_TAG_SOURCE = 'r=e.getAttribute("data-tag")||e.tagName,r=document.createElement(a?"button":r)'
-    MINIFIED_FOOTER_TAG_REPLACEMENT = 'r="h4",r=document.createElement(a?"button":r)'
+    # USWDS 3.14.0 validates restored headings; keep this site's stricter h4 rule.
+    FOOTER_TAG_SOURCE = 'const preservedHtmlTag = ALLOWED_TAGS.includes(rawPreservedTag) ? rawPreservedTag : "h4";'
+    FOOTER_TAG_REPLACEMENT = 'const preservedHtmlTag = "h4";'
+    MINIFIED_FOOTER_TAG_SOURCE = 'a=r.includes(a)?a:"h4",a=document.createElement(s?"button":a)'
+    MINIFIED_FOOTER_TAG_REPLACEMENT = 'a="h4",a=document.createElement(s?"button":a)'
 
     def self.harden_footer_tag(file, source, replacement)
         contents = File.read(file)

@@ -120,3 +120,7 @@ If a document does not appear after deployment, check the following:
 7. For archived documents, enable the Archived filter in the Document Center.
 
 The automatic workflow does not eliminate the generated JSON file or make runtime metadata tools necessary. It automates the same generation step maintainers can perform locally and preserves the static deployment model.
+
+## Dependency installation failures
+
+Both workflows use `npm ci`, which requires package.json and package-lock.json to agree. After changing dependencies, run `npm install --package-lock-only --ignore-scripts`, verify a clean `npm ci` and build, and commit the updated lockfile. An existing local node_modules folder can hide a stale lockfile during `npm run build`. The October 15, 2026 failure was caused by USWDS 3.14.0 being declared while the lockfile still specified 3.13.0.
