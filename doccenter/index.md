@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Document Center
+title: IDManagement Doc Center
 permalink: /doccenter/
 extra_stylesheet: /assets/css/document-center.css
 extra_script: /assets/js/document-center.js
@@ -31,7 +31,7 @@ extra_script: /assets/js/document-center.js
             Experiments <span class="dc-filter-remove" aria-hidden="true" hidden>×</span>
           </button>
         </div>
-        <p class="dc-filter-help">Select one or more filters to filter results, select it again to remove an active filter.</p>
+        <p class="dc-filter-help">Select one or more types to show matching documents. Select a type again to remove it.</p>
       </section>
     </div>
 

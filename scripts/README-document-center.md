@@ -6,7 +6,7 @@ The Document Center is a static-site feature. Its searchable inventory is stored
 
 The repository includes `.github/workflows/update-document-center.yml`, named **Update Document Center index** in GitHub Actions. It automates inventory updates after document changes are pushed.
 
-The workflow runs when a push adds, replaces, moves, renames, or removes a file anywhere under `docs/**`. This pattern includes the top-level folder and every nested folder, including:
+The workflow runs when a push changes `scripts/generate-document-center.rb`, its workflow definition, or adds, replaces, moves, renames, or removes a file anywhere under `docs/**`. This pattern includes the top-level folder and every nested folder, including:
 
 - `docs/` and ordinary subfolders, classified as active documents
 - `docs/archived/`, classified as archived documents
@@ -17,12 +17,18 @@ The generator currently indexes PDF, Word (`.docx`), Excel (`.xlsx`), and PowerP
 
 For each qualifying push, the workflow:
 
-1. Checks out the branch and its complete Git history.
+1. Checks out the latest branch head and its complete Git history.
 2. Installs Poppler and `unzip` for document metadata inspection.
 3. Runs `ruby scripts/generate-document-center.rb`.
 4. Parses the generated JSON to confirm that it is valid and runs `git diff --check`.
 5. Commits `assets/data/document-center.json` back to the same branch as `github-actions[bot]` when the inventory changed.
-6. Pushes that generated commit, allowing the site to rebuild with the updated documents and inventory.
+6. Pushes that generated commit. If another commit arrives first, it fetches the newer head and regenerates before retrying (up to three push attempts).
+
+Unchanged document records preserve the existing JSON and generation timestamp, so repeated generation does not create timestamp-only commits.
+
+Both workflows label their build step **Updateing IDManagement Doc Center**, log success or failure, and add build and job results to the Actions run summary. Failed builds fail the workflow; skipped builds indicate an earlier step prevented the build from running.
+
+The **Site build** workflow separately runs `npm run build` on pushes and pull requests. A generated commit pushed with `GITHUB_TOKEN` does not trigger another push-based GitHub Actions workflow. The inventory workflow validates and builds its own output. Cloud.gov Pages deployment is external to these workflows; confirm that its deployed commit includes the generated index rather than assuming Actions success proves publication.
 
 The workflow also supports a manual run from the GitHub Actions interface through `workflow_dispatch`. GitHub normally displays manually dispatchable workflows from the default branch, so this option may not appear in the Actions interface until the workflow has reached that branch. Afterward, an authorized maintainer can select another branch containing the workflow when starting the manual run.
 

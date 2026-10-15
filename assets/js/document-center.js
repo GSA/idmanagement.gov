@@ -186,9 +186,10 @@
   }
 
   function matchesDocumentFilters(document) {
-    if (!selectedCategories.length && !selectedAdditionalScopes.length) return document.scope === "active";
-    var categoryMatch = matchesCategory(document) && (!excludeArchived || document.scope !== "archived");
-    return categoryMatch || selectedAdditionalScopes.indexOf(document.scope) !== -1;
+    if (document.scope === "archived" && excludeArchived) return false;
+    var defaultMatch = !selectedCategories.length &&
+      (document.scope === "active" || (document.scope === "archived" && !excludeArchived));
+    return defaultMatch || matchesCategory(document) || selectedAdditionalScopes.indexOf(document.scope) !== -1;
   }
 
   function matchesSearch(document) {
@@ -207,7 +208,7 @@
   }
 
   function hasActiveFilters() {
-    return Boolean(activeTypes.length || searchQuery || selectedCategories.length || selectedAdditionalScopes.length);
+    return Boolean(!excludeArchived || activeTypes.length || searchQuery || selectedCategories.length || selectedAdditionalScopes.length);
   }
 
   function render() {
@@ -286,6 +287,10 @@
       if (scopeIndex === -1) selectedAdditionalScopes.push(scope);
       else selectedAdditionalScopes.splice(scopeIndex, 1);
       var scopeActive = selectedAdditionalScopes.indexOf(scope) !== -1;
+      if (scope === "archived" && scopeActive) {
+        excludeArchived = false;
+        root.querySelector("[data-exclude-archived]").checked = false;
+      }
       scopeButton.setAttribute("aria-pressed", scopeActive ? "true" : "false");
       scopeButton.querySelector(".dc-filter-remove").hidden = !scopeActive;
       updateTypeCounts();
@@ -332,6 +337,12 @@
   });
   root.querySelector("[data-exclude-archived]").addEventListener("change", function (event) {
     excludeArchived = event.target.checked;
+    if (excludeArchived) {
+      selectedAdditionalScopes = selectedAdditionalScopes.filter(function (scope) { return scope !== "archived"; });
+      var archivedButton = root.querySelector("[data-scope-filter='archived']");
+      archivedButton.setAttribute("aria-pressed", "false");
+      archivedButton.querySelector(".dc-filter-remove").hidden = true;
+    }
     updateTypeCounts();
     render();
   });

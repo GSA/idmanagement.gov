@@ -160,6 +160,14 @@ documents = Dir.glob(DOCS.join("**/*")).select { |path| File.file?(path) }.filte
 end
 
 documents.sort_by! { |document| [document[:type], document[:filename].downcase] }
+if OUTPUT.file?
+  previous = JSON.parse(OUTPUT.read)
+  if previous["documents"] == JSON.parse(JSON.generate(documents)) && previous["document_count"] == documents.length
+    puts "Document Center index is already current."
+    exit
+  end
+end
+
 payload = {
   generated_at: Time.now.utc.iso8601,
   document_count: documents.length,

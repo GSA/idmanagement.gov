@@ -36,6 +36,27 @@ const puppeteer = require("puppeteer");
     }));
     if (initial.versionHeader || initial.downloadHeader || initial.modifiedHeader || initial.openButtons || initial.selectedRows || initial.rows || !initial.status.includes("Search documents") || !/^\d+ total files?$/.test(initial.totalFiles) || !initial.detailsAlignedWithSearch || !initial.searchContained || !initial.filtersBesideWelcome) throw new Error(`Unexpected initial state: ${JSON.stringify(initial)}`);
 
+    if (await page.$eval("h1", (heading) => heading.textContent.trim()) !== "IDManagement Doc Center") throw new Error("Document Center title mismatch");
+    const inventory = await page.evaluate(async () => {
+      const response = await fetch(document.querySelector("[data-document-center]").dataset.indexUrl);
+      return (await response.json()).documents;
+    });
+    const expectedActiveAndArchived = inventory.filter((item) => ["active", "archived"].includes(item.scope)).length;
+    for (const archivedEnabled of [false, true, false]) {
+      if (archivedEnabled || await page.$eval("[data-scope-filter='archived']", (button) => button.getAttribute("aria-pressed") === "true")) {
+        await page.$eval("[data-scope-filter='archived']", (button) => button.click());
+      } else {
+        await page.$eval("[data-exclude-archived]", (checkbox) => checkbox.click());
+      }
+      const state = await page.evaluate(() => ({
+        excluded: document.querySelector("[data-exclude-archived]").checked,
+        rows: document.querySelectorAll(".dc-table tbody tr").length
+      }));
+      if (state.excluded || state.rows !== expectedActiveAndArchived) throw new Error(`Active/archive visibility failed: ${JSON.stringify(state)}`);
+    }
+    await page.$eval("[data-exclude-archived]", (checkbox) => checkbox.click());
+    if (await page.$$eval(".dc-table tbody tr", (rows) => rows.length)) throw new Error("Reset did not restore the empty initial state");
+
     await page.$eval("[data-type='pdf']", (element) => element.click());
     await page.$eval("[data-type='docx']", (element) => element.click());
     const additiveTypes = await page.evaluate(() => ({
@@ -59,6 +80,7 @@ const puppeteer = require("puppeteer");
 
     await page.$eval("[data-scope-filter='archived']", (element) => element.click());
     const archivedFilter = await page.$eval("[data-scope-filter='archived']", (element) => ({ pressed: element.getAttribute("aria-pressed"), removable: !element.querySelector(".dc-filter-remove").hidden }));
+    if (await page.$eval("[data-exclude-archived]", (checkbox) => checkbox.checked)) throw new Error("Archived did not clear exclusion");
     if (archivedFilter.pressed !== "true" || !archivedFilter.removable) throw new Error("Archived filter pill did not activate");
     const archiveMarker = await page.$eval(".dc-archive-marker", (element) => ({ title: element.title, label: element.getAttribute("aria-label") }));
     if (!archiveMarker.title.includes("Last modified:") || !archiveMarker.label.includes("Last modified")) throw new Error(`Archive marker tooltip is incomplete: ${JSON.stringify(archiveMarker)}`);
@@ -140,6 +162,12 @@ const puppeteer = require("puppeteer");
     });
     if (mobileContainment.pageOverflow || !mobileContainment.searchInViewport) throw new Error(`Mobile containment failed: ${JSON.stringify(mobileContainment)}`);
     await page.screenshot({ path: "/tmp/document-center-mobile-latest.png", fullPage: false });
+    await page.goto("http://127.0.0.1:4000/doccenter/help/", { waitUntil: "networkidle0" });
+    const help = await page.evaluate(() => ({
+      title: document.querySelector("h1").textContent.trim(),
+      returnButton: Boolean(document.querySelector("main a.usa-button[href$='/doccenter/']"))
+    }));
+    if (help.title !== "IDManagement Doc Center Help" || !help.returnButton) throw new Error(`Help page mismatch: ${JSON.stringify(help)}`);
     console.log("Document Center browser checks passed");
   } finally {
     await browser.close();

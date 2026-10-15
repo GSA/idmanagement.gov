@@ -1,0 +1,54 @@
+name: Site build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.3'
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install frontend dependencies
+        run: npm ci
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+      - name: Updateing IDManagement Doc Center
+        id: doc-center-build
+        run: |
+          echo "Updateing IDManagement Doc Center"
+          if npm run build && test -s _site/doccenter/index.html && test -s _site/doccenter/help/index.html && test -s _site/assets/data/document-center.json; then
+            echo "::notice::IDManagement Doc Center built successfully."
+          else
+            echo "::error::IDManagement Doc Center build failed. Review the build output above."
+            exit 1
+          fi
+
+      - name: Report IDManagement Doc Center result
+        if: always()
+        env:
+          BUILD_RESULT: ${{ steps.doc-center-build.outcome }}
+          JOB_RESULT: ${{ job.status }}
+        run: |
+          echo "IDManagement Doc Center build: $BUILD_RESULT; workflow job: $JOB_RESULT"
+          {
+            echo "## Updateing IDManagement Doc Center"
+            echo ""
+            echo "Build result: **$BUILD_RESULT**"
+            echo ""
+            echo "Workflow job result: **$JOB_RESULT**"
+            echo ""
+            echo "A skipped build means an earlier step prevented it from running. Review failed steps for error details."
+          } >> "$GITHUB_STEP_SUMMARY"
