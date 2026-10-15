@@ -127,7 +127,7 @@ primary_navigation:
         url: /university/pm/
       - name: ICAM Policy Matrix
         url: /university/policymatrix/
-      - name: Document Center
+      - name: IDM Doc Center
         url: /doccenter/
   - name: Experiments
     children:
