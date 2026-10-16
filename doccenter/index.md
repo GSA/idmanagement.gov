@@ -11,7 +11,7 @@ extra_script: /assets/js/document-center.js
     <h1 id="dc-heading" class="dc-page-title">{{ page.title }}</h1>
     <div class="grid-row grid-gap flex-align-start dc-intro-row">
       <div class="tablet:grid-col-8 dc-welcome-text">
-        <p>Welcome to the Document Center. Use this tool to quickly discover, review, and download documents published by IDManagement.gov. Start with a search or select one or more filters. Then select a file to review its details, or preview it by clicking its file name. File-type selections can be combined to add matching documents to the document list. Deselecting a filter type removes only its matching files, making it easy to refine the results without starting over.</p>
+        <p>Welcome to the Document Center for IDManagement. Use this tool to quickly discover, review, and download documents published by IDManagement.gov. Start with a search or select one or more filters. Then select a file to review its details, or preview it by clicking its file name. File-type selections can be combined to add matching documents to the document list. Deselecting a filter type removes only its matching files, making it easy to refine the results without starting over.</p>
       </div>
 
       <section class="tablet:grid-col-4 dc-category-filters" aria-labelledby="dc-filter-heading">
