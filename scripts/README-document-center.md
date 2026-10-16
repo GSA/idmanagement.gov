@@ -1,5 +1,7 @@
 # Document Center inventory
 
+For the consolidated operating instructions and printable PDF, see the [maintainer guide](../../planning-docs/doc-center-guides/maintainer-guide.md) and its [PDF](../../planning-docs/doc-center-guides/maintainer-guide.pdf).
+
 The Document Center is a static-site feature. Its searchable inventory is stored in `assets/data/document-center.json` and is generated from supported files under `docs/`. The deployed site reads this JSON file in the browser; it does not scan the document folders at runtime.
 
 ## Automatic inventory updates
@@ -26,7 +28,7 @@ For each qualifying push, the workflow:
 
 Unchanged document records preserve the existing JSON and generation timestamp, so repeated generation does not create timestamp-only commits.
 
-Both workflows label their build step **Updateing IDManagement Doc Center**, log success or failure, and add build and job results to the Actions run summary. Failed builds fail the workflow; skipped builds indicate an earlier step prevented the build from running.
+Both workflows label their build step **Updateing IDM Doc Center**, log success or failure, and add build and job results to the Actions run summary. Failed builds fail the workflow; skipped builds indicate an earlier step prevented the build from running.
 
 The **Site build** workflow separately runs `npm run build` on pushes and pull requests. A generated commit pushed with `GITHUB_TOKEN` does not trigger another push-based GitHub Actions workflow. The inventory workflow validates and builds its own output. Cloud.gov Pages deployment is external to these workflows; confirm that its deployed commit includes the generated index rather than assuming Actions success proves publication.
 

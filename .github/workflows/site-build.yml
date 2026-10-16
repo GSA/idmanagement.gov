@@ -25,26 +25,26 @@ jobs:
         run: npm ci
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
-      - name: Updateing IDManagement Doc Center
+      - name: Updateing IDM Doc Center
         id: doc-center-build
         run: |
-          echo "Updateing IDManagement Doc Center"
+          echo "Updateing IDM Doc Center"
           if npm run build && test -s _site/doccenter/index.html && test -s _site/doccenter/help/index.html && test -s _site/assets/data/document-center.json; then
-            echo "::notice::IDManagement Doc Center built successfully."
+            echo "::notice::IDM Doc Center built successfully."
           else
-            echo "::error::IDManagement Doc Center build failed. Review the build output above."
+            echo "::error::IDM Doc Center build failed. Review the build output above."
             exit 1
           fi
 
-      - name: Report IDManagement Doc Center result
+      - name: Report IDM Doc Center result
         if: always()
         env:
           BUILD_RESULT: ${{ steps.doc-center-build.outcome }}
           JOB_RESULT: ${{ job.status }}
         run: |
-          echo "IDManagement Doc Center build: $BUILD_RESULT; workflow job: $JOB_RESULT"
+          echo "IDM Doc Center build: $BUILD_RESULT; workflow job: $JOB_RESULT"
           {
-            echo "## Updateing IDManagement Doc Center"
+            echo "## Updateing IDM Doc Center"
             echo ""
             echo "Build result: **$BUILD_RESULT**"
             echo ""

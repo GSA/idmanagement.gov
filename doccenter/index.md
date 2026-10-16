@@ -1,6 +1,6 @@
 ---
 layout: base
-title: IDManagement Doc Center
+title: IDM Doc Center
 permalink: /doccenter/
 extra_stylesheet: /assets/css/document-center.css
 extra_script: /assets/js/document-center.js
