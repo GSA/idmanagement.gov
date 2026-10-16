@@ -3,6 +3,8 @@ layout: page
 title: Document Center for IDManagement Help
 permalink: /doccenter/help/
 sticky_sidenav: true
+section_class: dc-help-layout
+extra_stylesheet: /assets/css/document-center.css
 sidenav:
   - text: User guide
     href: /doccenter/help/#user-guide
@@ -25,6 +27,17 @@ sidenav:
 ---
 
 <a class="usa-button" href="{{ site.baseurl }}/doccenter/"><svg class="usa-icon" aria-hidden="true" focusable="false"><use href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_back"></use></svg> Return to Document Center</a>
+
+<details class="dc-help-contents">
+  <summary>On this page</summary>
+  <nav aria-label="Help contents">
+    <ul>
+      {% for link in page.sidenav %}
+      <li><a href="{{ link.href | relative_url }}">{{ link.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</details>
 
 ## User guide
 
@@ -65,7 +78,7 @@ To see active and archived documents across all formats, clear the search, clear
 
 Topics and explicit location selections are combined by inclusion. For example, **FPKI + Archived** includes FPKI filename matches plus the archived scope, rather than only archived FPKI documents. Search and file-type selections then narrow that combined list. Experimental files can also appear when their filenames match a selected topic.
 
-An **A** badge identifies an archived file; an **E** badge identifies an experimental file. Their tooltips and accessible labels include the last-modified date. A file's scope comes from its repository location, not an assessment of whether its guidance remains appropriate for your work.
+An **A** badge identifies an archived file; an **E** badge identifies an experimental file. They use the USWDS Tag component. Their tooltips and screen-reader text include the full status and last-modified date. A file's scope comes from its repository location, not an assessment of whether its guidance remains appropriate for your work.
 
 ## Read the list and document details
 
@@ -93,7 +106,7 @@ The total beside the search box covers the entire inventory. Select the statisti
 
 ## Keyboard use and common problems
 
-Use Tab to move between controls. On a focused table row, Enter or Space selects the document. On file-type buttons, Arrow Left, Arrow Right, Home, and End move focus **and toggle the destination type**.
+Use Tab to move between controls. On a focused table row, Enter or Space selects the document. On file-type buttons, Arrow Left, Arrow Right, Home, and End move focus between types. Press Enter or Space to toggle the focused type.
 
 If no files match, clear the search or remove type/topic restrictions. If an archived file is missing, uncheck Exclude Archived. A legacy `.doc`, `.xls`, or `.ppt` file is not indexed; the supported Office formats are `.docx`, `.xlsx`, and `.pptx`.
 

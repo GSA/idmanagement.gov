@@ -25,6 +25,7 @@
   var modalBody = document.querySelector("[data-modal-body]");
   var modalOpener = document.querySelector("#dc-modal-opener");
   var modalWrapper = document.querySelector("#dc-document-modal");
+  var previewTrigger = null;
   var baseUrl = root.getAttribute("data-base-url").replace(/\/$/, "");
 
   function escapeHtml(value) {
@@ -233,15 +234,21 @@
     selectedId = selected.id;
     var rows = matches.map(function (document) {
       var selectedClass = document.id === selectedId ? ' class="is-selected" aria-current="true"' : ' aria-current="false"';
-      var scopeMarker = document.scope === "archived" ? '<span class="dc-scope-marker dc-archive-marker" tabindex="0" title="Archived file — Last modified: ' + escapeHtml(formatDate(document.modified)) + '" aria-label="Archived file. Last modified ' + escapeHtml(formatDate(document.modified)) + '"><span aria-hidden="true">A</span></span>' :
-        document.scope === "experimental" ? '<span class="dc-scope-marker dc-experimental-marker" tabindex="0" title="Experimental file — Last modified: ' + escapeHtml(formatDate(document.modified)) + '" aria-label="Experimental file. Last modified ' + escapeHtml(formatDate(document.modified)) + '"><span aria-hidden="true">E</span></span>' : '';
+      var scopeName = document.scope === "archived" ? "Archived" : document.scope === "experimental" ? "Experimental" : "";
+      var scopeMarker = scopeName ? '<span class="usa-tag dc-scope-marker dc-' + (document.scope === "archived" ? "archive" : "experimental") + '-marker" title="' + scopeName + ' file — Last modified: ' + escapeHtml(formatDate(document.modified)) + '"><span aria-hidden="true">' + scopeName.charAt(0) + '</span><span class="usa-sr-only">' + scopeName + ' file. Last modified ' + escapeHtml(formatDate(document.modified)) + '</span></span>' : '';
       return '<tr data-document-id="' + escapeHtml(document.id) + '" tabindex="0"' + selectedClass + '><td class="dc-filename-cell"><button type="button" class="dc-filename" aria-controls="dc-document-modal" aria-haspopup="dialog">' + escapeHtml(document.filename) + '</button>' + scopeMarker + '</td>' +
         '<td class="dc-optional">' + escapeHtml(display(document.author)) + '</td><td class="dc-optional dc-date">' + escapeHtml(formatDate(document.created)) + '</td><td>' + ageStatus(document) + '</td></tr>';
     }).join("");
     var panelLabel = activeTypes.length ? activeTypes.map(function (type) { return labels[type]; }).join(", ") + " documents" : "All documents";
     panels.innerHTML = '<div class="dc-table-wrap"><table class="dc-table"><caption class="usa-sr-only">' + panelLabel + '</caption><thead><tr>' +
-      '<th><button class="dc-sort" data-sort="filename">File Name</button></th><th class="dc-optional"><button class="dc-sort" data-sort="author">Author</button></th><th class="dc-optional"><button class="dc-sort" data-sort="created">Created</button></th><th>3+ years</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+      sortHeader("filename", "File Name", "") + sortHeader("author", "Author", "dc-optional") + sortHeader("created", "Created", "dc-optional") + '<th scope="col">3+ years</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
     selectDocument(selected);
+  }
+
+  function sortHeader(key, label, className) {
+    var active = sortKey === key;
+    var direction = sortDirection === 1 ? "ascending" : "descending";
+    return '<th scope="col" class="' + className + '"' + (active ? ' aria-sort="' + direction + '"' : '') + '><button type="button" class="dc-sort" data-sort="' + key + '">' + label + (active ? '<span class="dc-sort-direction" aria-hidden="true">' + (sortDirection === 1 ? ' ▲' : ' ▼') + '</span>' : '') + '</button></th>';
   }
 
   root.addEventListener("click", function (event) {
@@ -265,6 +272,7 @@
       sortDirection = sortKey === nextKey ? sortDirection * -1 : 1;
       sortKey = nextKey;
       render();
+      root.querySelector('[data-sort="' + nextKey + '"]').focus();
       return;
     }
     var categoryButton = event.target.closest("[data-category-filter]");
@@ -302,6 +310,12 @@
       var selected = documents.find(function (item) { return item.id === filenameButton.closest("tr").getAttribute("data-document-id"); });
       selectDocument(selected);
       showInModal(selected);
+      previewTrigger = filenameButton;
+      // USWDS replaces the original modal with a wrapper during initialization.
+      // Resolve it at open time rather than observing the original element.
+      modalWrapper = document.querySelector("#dc-document-modal");
+      modalObserver.disconnect();
+      modalObserver.observe(modalWrapper, { attributes: true, attributeFilter: ["class"] });
       modalOpener.click();
       return;
     }
@@ -327,7 +341,6 @@
     var next = event.key === "Home" ? 0 : event.key === "End" ? buttons.length - 1 :
       (current + (event.key === "ArrowRight" ? 1 : -1) + buttons.length) % buttons.length;
     buttons[next].focus();
-    buttons[next].click();
   });
 
   root.querySelector("#dc-search").addEventListener("input", function (event) {
@@ -347,15 +360,17 @@
     render();
   });
   function restoreSelectedFocus() {
-    var selectedFilename = root.querySelector(".dc-table tbody tr.is-selected .dc-filename");
-    if (selectedFilename) window.setTimeout(function () { selectedFilename.focus(); }, 50);
+    var selectedFilename = previewTrigger && previewTrigger.isConnected ? previewTrigger : root.querySelector(".dc-table tbody tr.is-selected .dc-filename");
+    if (selectedFilename) selectedFilename.focus();
   }
 
-  modalWrapper.addEventListener("click", function (event) {
-    if (event.target.closest("[data-close-modal]") || event.target.classList.contains("usa-modal-overlay")) restoreSelectedFocus();
-  });
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && modalWrapper.classList.contains("is-visible")) restoreSelectedFocus();
+  // Observe completion of the USWDS close operation, including removal of
+  // aria-hidden from page content. The hidden proxy opener cannot receive focus.
+  var previewWasVisible = false;
+  var modalObserver = new MutationObserver(function () {
+    var visible = modalWrapper.classList.contains("is-visible");
+    if (previewWasVisible && !visible) restoreSelectedFocus();
+    previewWasVisible = visible;
   });
 
   fetch(root.getAttribute("data-index-url"), { credentials: "same-origin" })

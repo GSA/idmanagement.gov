@@ -1,4 +1,5 @@
 const puppeteer = require("puppeteer");
+const baseUrl = process.env.DC_BASE_URL || "http://127.0.0.1:4000";
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -10,7 +11,7 @@ const puppeteer = require("puppeteer");
   try {
     const page = await browser.newPage();
     await page.setViewport({ width: 1440, height: 1000 });
-    await page.goto("http://127.0.0.1:4000/doccenter/", { waitUntil: "networkidle0" });
+    await page.goto(`${baseUrl}/doccenter/`, { waitUntil: "networkidle0" });
     await page.waitForFunction(() => !document.querySelector("[data-total-files]").textContent.includes("Loading"));
 
     const initial = await page.evaluate(() => ({
@@ -82,10 +83,10 @@ const puppeteer = require("puppeteer");
     const archivedFilter = await page.$eval("[data-scope-filter='archived']", (element) => ({ pressed: element.getAttribute("aria-pressed"), removable: !element.querySelector(".dc-filter-remove").hidden }));
     if (await page.$eval("[data-exclude-archived]", (checkbox) => checkbox.checked)) throw new Error("Archived did not clear exclusion");
     if (archivedFilter.pressed !== "true" || !archivedFilter.removable) throw new Error("Archived filter pill did not activate");
-    const archiveMarker = await page.$eval(".dc-archive-marker", (element) => ({ title: element.title, label: element.getAttribute("aria-label") }));
+    const archiveMarker = await page.$eval(".dc-archive-marker", (element) => ({ title: element.title, label: element.querySelector(".usa-sr-only").textContent }));
     if (!archiveMarker.title.includes("Last modified:") || !archiveMarker.label.includes("Last modified")) throw new Error(`Archive marker tooltip is incomplete: ${JSON.stringify(archiveMarker)}`);
     await page.$eval("[data-scope-filter='experimental']", (element) => element.click());
-    const experimentalMarker = await page.$eval(".dc-experimental-marker", (element) => ({ text: element.textContent.trim(), title: element.title, label: element.getAttribute("aria-label") }));
+    const experimentalMarker = await page.$eval(".dc-experimental-marker", (element) => ({ text: element.querySelector("[aria-hidden]").textContent.trim(), title: element.title, label: element.querySelector(".usa-sr-only").textContent }));
     if (experimentalMarker.text !== "E" || !experimentalMarker.title.includes("Last modified:") || !experimentalMarker.label.includes("Experimental file")) throw new Error(`Experimental marker is incomplete: ${JSON.stringify(experimentalMarker)}`);
 
     const rowsBeforeScopeSearch = await page.$$eval(".dc-table tbody tr", (rows) => rows.length);
@@ -162,7 +163,7 @@ const puppeteer = require("puppeteer");
     });
     if (mobileContainment.pageOverflow || !mobileContainment.searchInViewport) throw new Error(`Mobile containment failed: ${JSON.stringify(mobileContainment)}`);
     await page.screenshot({ path: "/tmp/document-center-mobile-latest.png", fullPage: false });
-    await page.goto("http://127.0.0.1:4000/doccenter/help/", { waitUntil: "networkidle0" });
+    await page.goto(`${baseUrl}/doccenter/help/`, { waitUntil: "networkidle0" });
     const help = await page.evaluate(() => ({
       title: document.querySelector("h1").textContent.trim(),
       returnButton: Boolean(document.querySelector("main a.usa-button[href$='/doccenter/']"))

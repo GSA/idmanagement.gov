@@ -11,4 +11,5 @@ node_modules
 dockerfile
 docker-compose.yml
 reports
-scripts
+/scripts/*
+!/scripts/test-document-center-accessibility.js

@@ -6,7 +6,7 @@ layout: base
 This template is for a single page that does not have a date associated with it. For example, an about page.
 {% endcomment %}
 
-<div class="usa-section gsa-usa-section">
+<div class="usa-section gsa-usa-section{% if page.section_class %} {{ page.section_class | escape }}{% endif %}">
   <div class="grid-container">
     <div class="grid-row grid-gap flex-align-start">
       {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}

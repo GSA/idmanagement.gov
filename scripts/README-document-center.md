@@ -2,6 +2,8 @@
 
 For the consolidated operating instructions and printable PDF, see the [maintainer guide](../../planning-docs/doc-center-guides/maintainer-guide.md) and its [PDF](../../planning-docs/doc-center-guides/maintainer-guide.pdf).
 
+For the complete inventory of feature files, shared dependencies, automation, tests, outputs, and documentation, see the [file and purpose reference](../../planning-docs/doc-center-guides/implementation-reference.md#9-complete-file-and-purpose-reference).
+
 The Document Center is a static-site feature. Its searchable inventory is stored in `assets/data/document-center.json` and is generated from supported files under `docs/`. The deployed site reads this JSON file in the browser; it does not scan the document folders at runtime.
 
 ## Automatic inventory updates
@@ -126,3 +128,9 @@ The automatic workflow does not eliminate the generated JSON file or make runtim
 ## Dependency installation failures
 
 Both workflows use `npm ci`, which requires package.json and package-lock.json to agree. After changing dependencies, run `npm install --package-lock-only --ignore-scripts`, verify a clean `npm ci` and build, and commit the updated lockfile. An existing local node_modules folder can hide a stale lockfile during `npm run build`. The October 15, 2026 failure was caused by USWDS 3.14.0 being declared while the lockfile still specified 3.13.0.
+
+## Accessibility regression checks
+
+After `npm run build`, run `npm run test:document-center-accessibility`. This starts a temporary loopback server for `_site` and uses Chrome with axe-core to check Level A/AA rules, sort focus and direction, USWDS A/E tags, file-type keyboard behavior, modal containment and return focus for all four formats, mobile Help navigation, and reflow/text-spacing at 320, 640, and 1280 CSS pixels. Evidence is written to `/tmp/document-center-accessibility-results.json`; set `DC_A11Y_REPORT` to choose another path. No site is published.
+
+These checks do not establish full WCAG conformance or validate the accessibility of PDF/Office document contents. Screen-reader, production, and browser PDF-viewer checks remain necessary.

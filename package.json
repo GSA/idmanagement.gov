@@ -4,6 +4,7 @@
   "scripts": {
     "generate:documents": "ruby scripts/generate-document-center.rb",
     "test:document-center": "node scripts/test-document-center.js",
+    "test:document-center-accessibility": "node scripts/test-document-center-accessibility.js",
     "local": "bundler install && sleep 5 && npm install",
     "build": "bundle exec jekyll build",
     "clean": "bundle exec jekyll clean",

@@ -1,8 +1,8 @@
-.dc-page { overflow-x: clip; padding: 1.875rem 0 4rem; }
+.dc-page { overflow-wrap: anywhere; padding: 1.875rem 0 4rem; }
 .dc-page .dc-page-title { margin: 0 0 1rem; }
 .dc-intro-row { margin-bottom: .75rem; }
 .dc-welcome-text p { font-size: 1rem; line-height: 1.6; margin: 0 0 .65rem; max-width: 75ch; }
-.dc-help-link, .dc-help-link:visited, .dc-help-link:hover, .dc-help-link:active { align-items: center; color: #1a4480; display: inline-flex; flex: 0 0 auto; font-size: 1rem; gap: .3rem; text-decoration: none; }
+.dc-help-link, .dc-help-link:visited, .dc-help-link:hover, .dc-help-link:active { align-items: center; color: #1a4480; display: inline-flex; flex: 0 0 auto; min-width: 1.5rem; min-height: 1.5rem; justify-content: center; font-size: 1rem; gap: .3rem; text-decoration: none; }
 .dc-help-link:focus { outline: .25rem solid #2491ff; outline-offset: .125rem; }
 .dc-help-link svg { fill: none; height: 1.35rem; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; width: 1.35rem; }
 .dc-help-page { padding: 2rem 0 4rem; }
@@ -24,7 +24,7 @@
 .dc-search-input-frame:focus-within { outline: .25rem solid #2491ff; outline-offset: 0; }
 .dc-search-control .usa-input { border: 0; border-radius: 0; box-sizing: border-box; clear: both; display: block; float: none; height: 2.75rem; inline-size: 100%; margin: 0; max-inline-size: 100%; max-width: 100%; min-width: 0; outline: 0; padding-right: 1.75rem; width: 100%; }
 .dc-search-control input[type="search"]::-webkit-search-cancel-button { margin-right: 3px; position: relative; right: 3px; }
-.dc-search-summary { align-items: center; display: flex; gap: .75rem; justify-content: space-between; margin: .35rem 0 0; padding: 0 .65rem 0 11px; }
+.dc-search-summary { align-items: center; display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; margin: .35rem 0 0; padding: 0 .65rem 0 11px; }
 .dc-search-statistics { align-items: center; display: flex; gap: .15rem; margin-left: auto; }
 .dc-total-files { color: #565c65; font-size: .875rem; margin: 0; text-align: right; }
 .dc-category-filters { background: #f0f0f0; border-radius: .75rem; box-sizing: border-box; margin: 0; padding: 1.25rem; }
@@ -33,8 +33,8 @@
 .dc-filter-button { border-radius: 999px; font-size: .93rem; margin: 0; min-height: 2.5rem; min-width: 0; padding: .5rem .75rem; }
 .dc-filter-button[aria-pressed="true"] { background: #005ea8; color: #fff; }
 .dc-filter-remove { font-size: 1.25em; line-height: 0; margin-left: .35rem; }
-.dc-exclude-archived-control { align-items: center; display: inline-flex; flex: 0 0 auto; margin: 0; white-space: nowrap; }
-.dc-exclude-archived-control .usa-checkbox__input + .usa-checkbox__label { font-size: .8rem; line-height: 1rem; margin: 0; padding-left: 1.35rem; }
+.dc-exclude-archived-control { align-items: center; display: inline-flex; flex: 0 0 auto; margin: 0; white-space: normal; }
+.dc-exclude-archived-control .usa-checkbox__input + .usa-checkbox__label { font-size: .8rem; line-height: 1.5; margin: 0; padding-left: 1.35rem; }
 .dc-exclude-archived-control .usa-checkbox__input + .usa-checkbox__label::before { height: .9rem; margin-left: 0; margin-top: .05rem; width: .9rem; }
 .dc-filter-help { font-size: .875rem; margin: .75rem 0 0; }
 .dc-status { font-weight: 700; }
@@ -49,11 +49,24 @@
 .dc-table tbody tr.is-selected { background: #c7e7f0; box-shadow: inset .4rem 0 #005ea8; }
 .dc-table tbody tr.is-selected:hover { background: #a9d8e6; }
 .dc-sort { background: transparent; border: 0; color: #1a4480; cursor: pointer; font: inherit; font-weight: 700; padding: 0; text-decoration: underline; }
-.dc-filename-cell { padding-right: 1.75rem !important; position: relative; }
+.dc-filename-cell { padding-right: .65rem !important; position: relative; }
 .dc-filename { background: transparent; border: 0; color: #005ea8; cursor: pointer; font: inherit; font-weight: 700; padding: 0; text-align: left; text-decoration: underline; overflow-wrap: anywhere; }
-.dc-scope-marker { align-items: center; background: #162e51; border: 1px solid #162e51; border-radius: .15rem; color: #fff; display: inline-flex; font-family: Georgia, serif; font-size: .65rem; font-weight: 700; height: .875rem; justify-content: center; position: absolute; right: .4rem; top: .4rem; width: .875rem; }
-.dc-experimental-marker { font-style: italic; }
-.dc-scope-marker:focus { outline: .25rem solid #2491ff; outline-offset: .125rem; }
+.dc-scope-marker.usa-tag { margin-left: .4rem; margin-right: 0; vertical-align: baseline; }
+.dc-sort { min-height: 1.5rem; }
+.dc-sort-direction { white-space: nowrap; }
+/* A dark focus ring remains distinct on selected rows and light panels. */
+.dc-page :is(button, a, input, tr[tabindex]):focus-visible,
+.dc-help-layout :is(a, summary):focus-visible { outline: .25rem solid #005ea8; outline-offset: .125rem; }
+.dc-table tbody tr:focus-visible { outline-offset: -.25rem; }
+.dc-search-input-frame:focus-within { outline-color: #005ea8; }
+.dc-help-layout .usa-layout-docs__main { min-width: 0; overflow-wrap: anywhere; }
+.dc-help-layout .usa-layout-docs__main table { width: 100%; table-layout: fixed; }
+.dc-help-layout .usa-button { white-space: normal; }
+.dc-help-contents { display: none; }
+@media (max-width: 64em) {
+  .dc-help-contents { display: block; margin: 1.5rem 0; }
+  .dc-help-contents summary { cursor: pointer; font-weight: 700; }
+}
 .dc-details dl { margin: 0; }
 .dc-details dt { font-weight: 700; margin-top: .65rem; }
 .dc-details dd { margin-left: 0; overflow-wrap: anywhere; }
@@ -85,9 +98,9 @@
 .dc-downloads { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 .dc-downloads .usa-button { margin: 0; }
 .dc-empty { background: #f0f0f0; padding: 1rem; }
-.dc-document-modal { max-width: 75rem; width: min(94vw, 75rem); }
-.dc-document-modal .usa-modal__main { max-width: none; width: 100%; }
-.dc-document-frame { background: #fff; border: 1px solid #a9aeb1; height: min(72vh, 50rem); width: 100%; }
+.dc-document-modal { max-width: 75rem; width: 100%; overflow-wrap: anywhere; }
+.dc-document-modal .usa-modal__main { box-sizing: border-box; min-width: 0; max-width: none; width: 100%; }
+.dc-document-frame { box-sizing: border-box; background: #fff; border: 1px solid #a9aeb1; height: min(72vh, 50rem); width: 100%; }
 .dc-modal-notice { background: #f0f0f0; border-radius: .5rem; padding: 1.5rem; }
 @media (max-width: 63.99em) { .dc-details { margin-top: 0; max-height: none; overflow: visible; position: static; } }
 @media (max-width: 39.99em) { .dc-type-cards { grid-template-columns: repeat(2, 1fr); } .dc-table .dc-optional { display: none; } .dc-help-columns { grid-template-columns: 1fr; } }
