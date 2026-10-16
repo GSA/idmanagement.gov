@@ -14,6 +14,8 @@ sidenav:
     href: /doccenter/help/#search-for-a-document
   - text: Choose file types and topics
     href: /doccenter/help/#choose-file-types-and-topics
+  - text: Use the Document type filter
+    href: /doccenter/help/#use-the-document-type-filter
   - text: Include archived and experimental documents
     href: /doccenter/help/#include-archived-and-experimental-documents
   - text: Read the list and document details
@@ -59,11 +61,41 @@ With no topic or location selections and Exclude Archived checked, a search cons
 
 ## Choose file types and topics
 
-Select **PDF**, **Word**, **Excel**, or **PowerPoint** to show that format. Select additional types to combine formats. Select an active type again to remove that type. When the last selected type is cleared, all formats become eligible if a search or another control still activates the list.
+The **PDF**, **Word**, **Excel**, and **PowerPoint** cards below Search documents filter by file format. They are separate from the **Document type filter** buttons near the introduction.
 
-The **APL**, **FIPS**, **FPKI**, and **PACS** buttons match those letter sequences in filenames. Selecting several topics includes documents matching any selected topic. Topic matching does not inspect document contents or metadata descriptions.
+| File-format card | Included extension |
+| --- | --- |
+| PDF | `.pdf` |
+| Word | `.docx` |
+| Excel | `.xlsx` |
+| PowerPoint | `.pptx` |
 
-Search and file-type selections narrow the combined topic and location results. For example, choose FPKI and PDF to find PDF files whose filenames contain FPKI, then enter part of a filename to narrow the list further.
+Select a card to show that format. Select additional cards to combine formats; for example, **PDF + Word** includes both PDF and Word files. Select an active card again to remove that format. When the last selected card is cleared, all formats become eligible if a search or another control still activates the list. If no search or other filter remains active and Exclude Archived is checked, the list returns to its empty starting state.
+
+Each card’s matching count follows the current search and document-type/location filters, even when the card is not selected. A count is not a promise that the format is currently included in the displayed list.
+
+## Use the Document type filter
+
+The **Document type filter** panel near the introduction contains **APL**, **FIPS**, **FPKI**, **PACS**, **Archived**, and **Experiments**. These buttons select filename categories or repository locations, rather than file formats.
+
+| Button | What it includes |
+| --- | --- |
+| APL | Filenames containing `APL`, ignoring capitalization. |
+| FIPS | Filenames containing `FIPS`, ignoring capitalization. |
+| FPKI | Filenames containing `FPKI`, ignoring capitalization. |
+| PACS | Filenames containing `PACS`, ignoring capitalization. |
+| Archived | Files in `docs/archived/` and its subfolders. Selecting this also unchecks Exclude Archived. |
+| Experiments | Files in `docs/expdocs/` and its subfolders. With no filename categories selected, active documents remain eligible too. |
+
+Select a button to activate it; select it again to remove that selection. An active button has a filled appearance and an **×** beside its text. With a keyboard, use Tab to reach a button and Enter or Space to toggle it; assistive technology receives its pressed state.
+
+The four filename-category buttons match those letter sequences anywhere in the filename. They do not inspect a document’s contents, author, or metadata description. A file can match more than one category.
+
+Selections in this panel are combined by inclusion: **APL + FIPS** includes files matching either filename category. Removing APL leaves FIPS selected; a file that matches both categories remains included through FIPS. **FPKI + Archived** includes FPKI filename matches plus the archived scope, rather than only archived FPKI files. Exclude Archived still prevents archived files from appearing whenever it is checked.
+
+Search and file-format cards narrow the combined results. For example, select **FPKI**, then **PDF**, to show eligible PDFs whose filenames contain FPKI; enter part of a filename to narrow them further. Selecting **Archived** as well adds eligible archived PDFs, including those without FPKI in their names, subject to the same search text.
+
+When no filename categories are selected, active documents remain eligible by default. Archived documents also become eligible when Exclude Archived is unchecked; Experiments adds the experimental scope. Turning Archived off does not recheck Exclude Archived. See the next section for the location controls and badges.
 
 ## Include archived and experimental documents
 

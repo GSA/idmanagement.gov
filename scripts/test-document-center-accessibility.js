@@ -161,9 +161,9 @@ const server = http.createServer((request, response) => {
     await page.click('.dc-help-contents summary');
     assert.ok(await page.$eval('.dc-help-contents', e => e.open));
     assert.equal(await page.$$eval('main h1', e => e.length), 1);
-    assert.equal(await page.$$eval('main h2', e => e.length), 9);
+    assert.equal(await page.$$eval('main h2', e => e.length), 10);
     assert.ok(await page.$eval('main .usa-button', e => e.textContent.trim() === 'Return to Document Center'));
-    evidence.checks.push('Mobile Help contents opens; one H1, nine H2 sections, and named return link.');
+    evidence.checks.push('Mobile Help contents opens; one H1, ten H2 sections, and named return link.');
     const { execFile } = require('node:child_process');
     await new Promise((resolve, reject) => execFile(process.execPath, [path.join(__dirname, 'test-document-center.js')], { env: { ...process.env, DC_BASE_URL: base } }, (error, stdout, stderr) => {
       if (error) reject(new Error(stdout + stderr));
