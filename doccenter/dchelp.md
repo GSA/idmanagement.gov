@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IDM Doc Center Help
+title: Document Center for IDManagement Help
 permalink: /doccenter/help/
 sticky_sidenav: true
 sidenav:
@@ -24,7 +24,7 @@ sidenav:
     href: /doccenter/help/#keyboard-use-and-common-problems
 ---
 
-[Return to IDM Doc Center]({{ site.baseurl }}/doccenter/){: .usa-button}
+[Return to Document Center for IDManagement]({{ site.baseurl }}/doccenter/){: .usa-button}
 
 ## User guide
 

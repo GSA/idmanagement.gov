@@ -36,7 +36,7 @@ const puppeteer = require("puppeteer");
     }));
     if (initial.versionHeader || initial.downloadHeader || initial.modifiedHeader || initial.openButtons || initial.selectedRows || initial.rows || !initial.status.includes("Search documents") || !/^\d+ total files?$/.test(initial.totalFiles) || !initial.detailsAlignedWithSearch || !initial.searchContained || !initial.filtersBesideWelcome) throw new Error(`Unexpected initial state: ${JSON.stringify(initial)}`);
 
-    if (await page.$eval("h1", (heading) => heading.textContent.trim()) !== "IDM Doc Center") throw new Error("Document Center title mismatch");
+    if (await page.$eval("h1", (heading) => heading.textContent.trim()) !== "Document Center for IDManagement") throw new Error("Document Center title mismatch");
     const inventory = await page.evaluate(async () => {
       const response = await fetch(document.querySelector("[data-document-center]").dataset.indexUrl);
       return (await response.json()).documents;
@@ -167,7 +167,7 @@ const puppeteer = require("puppeteer");
       title: document.querySelector("h1").textContent.trim(),
       returnButton: Boolean(document.querySelector("main a.usa-button[href$='/doccenter/']"))
     }));
-    if (help.title !== "IDM Doc Center Help" || !help.returnButton) throw new Error(`Help page mismatch: ${JSON.stringify(help)}`);
+    if (help.title !== "Document Center for IDManagement Help" || !help.returnButton) throw new Error(`Help page mismatch: ${JSON.stringify(help)}`);
     console.log("Document Center browser checks passed");
   } finally {
     await browser.close();
