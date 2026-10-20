@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd" version="1.3">
-    <meta lastmodifieddate="2026-10-15">
+    <meta lastmodifieddate="2026-10-20">
         <creator>py-crawler</creator>
-        <description>Created by Py-Crawler on 2026-10-15</description>
+        <description>Created by Py-Crawler on 2026-10-20</description>
     </meta>
     <graph defaultedgetype="directed" mode="static">
         <nodes>
@@ -812,9 +812,6 @@
             <edge id="common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US" source="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US" label="WidePoint NFI Root 2" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
-            <edge id="common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov" source="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov" label="USPTO_INTR_CA1" weight="1.0">
-                <viz:color r="153" g="0" b="153"/>
-            </edge>
             <edge id="common_name:DigiCert Federated ID L3 CA,organizational_unit_name:www.digicert.com,organization_name:DigiCert Inc,country_name:US" source="common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:DigiCert Federated ID L3 CA,organizational_unit_name:www.digicert.com,organization_name:DigiCert Inc,country_name:US" label="DigiCert Federated ID L3 CA" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
@@ -834,6 +831,9 @@
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US" source="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US" label="TSCP SHA384 Bridge CA" weight="1.0">
+                <viz:color r="153" g="0" b="153"/>
+            </edge>
+            <edge id="common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov" source="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov" label="USPTO_INTR_CA1" weight="1.0">
                 <viz:color r="153" g="0" b="153"/>
             </edge>
             <edge id="common_name:DoD Interoperability Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" source="common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US" target="common_name:DoD Interoperability Root CA 3,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US" label="DoD Interoperability Root CA 3" weight="1.0">
