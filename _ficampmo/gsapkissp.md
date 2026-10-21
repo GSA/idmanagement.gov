@@ -128,7 +128,7 @@ The SSP Program Ofﬁce oversees and guides the business and security practices 
 - Internally, the SSP Program Ofﬁce meets with its GSA counterparts to ensure services are secure and available through the proper contract vehicle.
 - Externally, the ofﬁce meets with federal agencies and SSPs to learn about successes and how processes and service delivery can be improved.
 
-The GSA, Associate Deputy Administrator in the Ofﬁce of Government-wide Policy, [Ofﬁce of Technology](https://www.gsa.gov/policy-regulations/policy/information-technology-policy){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the Authorizing Ofﬁcial of GSA PKI SSP vendor systems and is ultimately responsible for their secure operation. The GSA PKI SSP Program Ofﬁce and Program Manager reside in the [Federal Identity and Cybersecurity Division](https://www.gsa.gov/policy-regulations/policy/information-technology-policy/identity-assurance-and-trusted-access){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  within the Ofﬁce of Technology Policy. The GSA PKI SSP Program Manager has the following responsibilities:
+The GSA,  Deputy Associate Administrator in the Ofﬁce of Government-wide Policy, [Office of Technology Policy](https://www.gsa.gov/policy-regulations/policy/information-technology-policy){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} is the Authorizing Ofﬁcial of GSA PKI SSP vendor systems and is ultimately responsible for their secure operation. The GSA PKI SSP Program Ofﬁce and Program Manager reside in the [Federal Identity and Cybersecurity Division](https://www.gsa.gov/policy-regulations/policy/information-technology-policy/identity-assurance-and-trusted-access){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}  within the Ofﬁce of Technology Policy. The GSA PKI SSP Program Manager has the following responsibilities:
 
 - Direct and coordinate activities between the GSA PKI SSPs, the Federal PKI Policy Authority and GSA supporting ofﬁces, Ofﬁce of the Chief Information Security Ofﬁcer, and the Federal Acquisitions Service.
 - Coordinate customer interest meetings to understand customer needs and challenges, plan service enhancements, and remediate issues. 
@@ -552,7 +552,7 @@ This Memorandum of Agreement ("Agreement") is entered into by the General Servic
     <hr>
     <pre>
       Name: Dan Pomeroy 
-      Title: Deputy Associate Administrator 
+      Title: Deputy Associate Administrator
       Organization: Ofﬁce of Governmentwide Policy 
       Ofﬁce: Ofﬁce of Technology Policy (OTP) 
     </pre>

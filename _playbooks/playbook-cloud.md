@@ -459,7 +459,7 @@ See [NIST Interagency Report 8149](https://csrc.nist.gov/publications/detail/nis
 
 Federation trust frameworks also exist in the Federal Government.
 - [Max Authentication Federated Login](https://login.max.gov/cas/login?service=https%3A%2F%2Fportal.max.gov%2Fhome%2Flogin%2Fcas){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Provides a government-to-government federation service for either access to connect.gov or an agency application. Typically, customer agencies must sign an agreement and use the connect.gov assertion profile.
-- [GSA Login.gov](https://partners.login.gov/product/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Provides primarily a public-to-government federation service. It requires an agency customer agreement and adhering to the [login.gov assertion profile](https://developers.login.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
+- [GSA Login.gov](https://partners.login.gov/hc/en-us/p/our-services){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} - Provides primarily a public-to-government federation service. It requires an agency customer agreement and adhering to the [login.gov assertion profile](https://developers.login.gov/){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"}.
 
 Some government agencies also recognize, participate in, and leverage non-government trust frameworks. Often, these organizations   do not manage identities or credentials directly. Most certify and annually audit services that provide identity proofing and credentialing.
 
