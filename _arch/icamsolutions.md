@@ -204,7 +204,7 @@ Most MAS ICAM solutions can be purchased on GSA eBuy, an online Request for Quot
     <td>USAccess</td>
     <td style="width:350px">The GSA HSPD-12 Managed Service Office (MSO) established the USAccess program as an efficient way for federal agencies to issue common, HSPD-12-approved credentials to their employees and contractors.</td>
     <td>PIV card</td>
-    <td><a class="usa-link usa-link--external" href="http://fedidcard.gov/" target="_blank" rel="noopener noreferrer">fedidcard.gov</a></td>
+    <td><a class="usa-link usa-link--external" href="https://www.gsa.gov/federal-credentialing-services" target="_blank" rel="noopener noreferrer">GSA Federal Credentialing Services</a></td>
   </tr>
   <tr>
     <th scope="row">Credential Management</th>
