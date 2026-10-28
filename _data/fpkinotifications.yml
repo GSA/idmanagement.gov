@@ -32,7 +32,7 @@
 # ee_ocsp_uri:
 #
 
-- notice_date: November 14, 2026
+- notice_date: October 14, 2026
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
   change_description: The Federal Common Policy CA G2 intends to issue a new certificate to U.S. Department of State AD Root CA between 10/29/2026 and 11/04/2026.
