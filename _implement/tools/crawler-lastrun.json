@@ -1,13 +1,16 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": []
+        "new_certs": [
+            "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US:63066892568316077557303467276339909397"
+        ]
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
         "common_name:Boeing PCA G3,organizational_unit_name:certservers,organization_name:Boeing,country_name:US",
         "common_name:Carillon Federal Services PIV-I CA1,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
         "common_name:Carillon Federal Services PIV-I CA3,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
+        "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
         "common_name:Carillon PKI Services G2 Root CA 2,organizational_unit_name:Certification Authorities,organization_name:Carillon Information Security Inc.,country_name:CA",
         "common_name:CertiPath Bridge CA - G3,organizational_unit_name:Certification Authorities,organization_name:CertiPath,country_name:US",
         "common_name:DOD DERILITY CA-1,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
@@ -1926,35 +1929,6 @@
             }
         },
         {
-            "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "126546498029106345695576450243366027392959108778",
-            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
-            "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c": [
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-                    "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
-                ]
-            },
-            "aia-entries": {
-                "http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c": [
-                    "common_name:DoD Interoperability Root CA 2,organizational_unit_name:PKI,organizational_unit_name:DoD,organization_name:U.S. Government,country_name:US",
-                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
             "subject": "common_name:DigiCert Federated ID L3 CA,organizational_unit_name:www.digicert.com,organization_name:DigiCert Inc,country_name:US",
             "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "126798949325924781614211896262831209753503614885",
@@ -1994,6 +1968,7 @@
             ],
             "sia-entries": {
                 "http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c": [
+                    "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US"
                 ]
@@ -2229,6 +2204,7 @@
             ],
             "sia-entries": {
                 "http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c": [
+                    "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US",
                     "common_name:FTI Certification Authority,organizational_unit_name:FTI PKI Trust Infrastructure,organization_name:Foundation for Trusted Identity,country_name:US"
                 ]
@@ -2525,6 +2501,8 @@
             ],
             "sia-entries": {
                 "http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c": [
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
@@ -2707,6 +2685,8 @@
             ],
             "sia-entries": {
                 "http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c": [
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
@@ -2746,8 +2726,7 @@
                     "organizational_unit_name:OCIO CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:DHS CA4,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Homeland Security,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:NASA Operational CA,organizational_unit_name:Certification Authorities,organizational_unit_name:NASA,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US"
+                    "organizational_unit_name:Social Security Administration Certification Authority,organizational_unit_name:SSA,organization_name:U.S. Government,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -2853,6 +2832,8 @@
             ],
             "sia-entries": {
                 "http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c": [
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
@@ -3083,7 +3064,32 @@
             "aia-entries": {
                 "http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c": [
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:STRAC Bridge Root Certification Authority,organizational_unit_name:STRAC PKI Trust Infrastructure,organization_name:STRAC,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US",
+            "issuer": "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
+            "serial-number": "63066892568316077557303467276339909397",
+            "akid": "82 85 44 75 33 61 be 57 80 45 3b e7 65 8e fb 92 f8 f7 24 e0",
+            "skid": "07 c0 56 6c de 1b 67 19 d0 01 0d 2a ad 63 95 54 48 0d 60 85",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://cacerts.one.digicert.com/IssuedTo-tscpbcasha384.p7c": [
+                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
                 ]
             }
         },
@@ -3620,14 +3626,13 @@
             ],
             "sia-entries": {
                 "http://rootweb.managed.entrust.com/SIA/CAcertsIssuedByEMSRootCA.p7c": [
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
                 ]
             },
             "aia-entries": {
@@ -3709,16 +3714,67 @@
             ],
             "sia-entries": {
                 "http://rootweb.managed.entrust.com/SIA/CAcertsIssuedByEMSRootCA.p7c": [
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
                     "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-                    "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+                    "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
                 ]
             },
+            "aia-entries": {
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "serial-number": "1149385265",
+            "akid": "b2 c6 2e a2 25 e6 73 2f 54 68 0b 97 93 aa 0b 4c 56 ef 1e 44",
+            "skid": "c4 ab 10 36 2e 99 24 44 d7 83 94 ef e8 6a 0b cf 0a 04 e2 51",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+            ],
+            "sia-entries": {},
+            "aia-entries": {
+                "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                    "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+                ]
+            }
+        },
+        {
+            "subject": "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "serial-number": "1149385461",
+            "akid": "b2 c6 2e a2 25 e6 73 2f 54 68 0b 97 93 aa 0b 4c 56 ef 1e 44",
+            "skid": "30 bb d8 a2 4e 26 2e 64 1d 70 5e d9 33 92 c2 16 df ad c0 32",
+            "status": "Certificate Valid and Chains to Common",
+            "pathbuilder-result": {
+                "result": "true",
+                "details": "CRL Only Validation"
+            },
+            "path-to-common": [
+                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+                "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+            ],
+            "sia-entries": {},
             "aia-entries": {
                 "http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c": [
                     "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -4105,6 +4161,35 @@
             }
         },
         {
+            "subject": "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "49295812332285290585120376952637054790",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "82 85 44 75 33 61 be 57 80 45 3b e7 65 8e fb 92 f8 f7 24 e0",
+            "status": "Status set to other because we didn't handle an error condition well",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "Path Built but could not be validated"
+            }
+        },
+        {
+            "subject": "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
+            "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "serial-number": "126546498029106345695576450243366027392959108778",
+            "akid": "79 f0 00 49 eb 7f 77 c2 5d 41 02 65 34 8a 90 23 9b 1e 07 6f",
+            "skid": "a0 14 b1 ba 64 4e f3 f9 37 16 db e5 4b 91 c1 84 55 72 84 2e",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:79f00049eb7f77c25d410265348a90239b1e076f",
+            "validity-dates": {
+                "not-before": "2023-10-19 15:01:41+00:00",
+                "not-after": "2026-10-19 15:01:41+00:00"
+            }
+        },
+        {
             "subject": "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "issuer": "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "serial-number": "132909504651575765812721185148367737576559902907",
@@ -4340,74 +4425,14 @@
             }
         },
         {
-            "subject": "common_name:DOE SSP CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of Energy,organization_name:U.S. Government,country_name:US",
-            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "serial-number": "1149291415",
-            "akid": "a9 53 be 64 84 83 4b 5d 26 c6 27 3e 2e d1 84 68 55 3c d0 75",
-            "skid": "42 2a e6 4a c1 2c 3b 0e 71 68 92 97 e0 13 0f 76 0a cb 94 7d",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "serial-number": "1149284737",
-            "akid": "a9 53 be 64 84 83 4b 5d 26 c6 27 3e 2e d1 84 68 55 3c d0 75",
-            "skid": "96 bd 7a 28 f2 0e 83 8a 90 40 ee d2 a4 50 d7 7f 75 a1 96 5c",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US",
-            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "serial-number": "1149278864",
-            "akid": "a9 53 be 64 84 83 4b 5d 26 c6 27 3e 2e d1 84 68 55 3c d0 75",
-            "skid": "e5 89 19 e4 f9 a2 bc e8 4d a1 29 54 16 51 81 c7 d5 c2 8e 9c",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
-            "subject": "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "issuer": "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
-            "serial-number": "1149264853",
-            "akid": "a9 53 be 64 84 83 4b 5d 26 c6 27 3e 2e d1 84 68 55 3c d0 75",
-            "skid": "55 b4 6c 33 3f e3 60 1a a7 ff c3 ed b4 f7 e4 04 da 29 d0 63",
-            "status": "unchecked",
-            "pathbuilder-result": {
-                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
-            }
-        },
-        {
             "subject": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
             "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1144956730",
-            "skid": "68 84 15 48 8c 54 70 7f 2d 12 58 0e ec 1c 78 ef 3c 2e 59 64",
-            "status": "Certificate Valid, but no Path to Common",
+            "serial-number": "1728479794",
+            "akid": "c3 ec 41 5c f8 98 57 64 37 ee bf 2f ab 84 8a 90 8a bb f4 77",
+            "skid": "17 4b b8 26 ba 69 7a ad 12 50 57 45 31 9e 57 bb 74 a5 da 2f",
+            "status": "unchecked",
             "pathbuilder-result": {
-                "INFO": "Certificate is a trust anchor, but not the root of the graph"
-            }
-        },
-        {
-            "subject": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "issuer": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
-            "serial-number": "1460481024",
-            "akid": "17 4b b8 26 ba 69 7a ad 12 50 57 45 31 9e 57 bb 74 a5 da 2f",
-            "skid": "68 84 15 48 8c 54 70 7f 2d 12 58 0e ec 1c 78 ef 3c 2e 59 64",
-            "status": "Certificate Invalid",
-            "pathbuilder-result": {
-                "result": "false",
-                "details": "End Entity Cert expired or not valid"
-            },
-            "parent_path_identifier": "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US:174bb826ba697aad12505745319e57bb74a5da2f",
-            "validity-dates": {
-                "not-before": "2006-08-05 14:16:30+00:00",
-                "not-after": "2026-08-05 14:46:30+00:00"
+                "WARNING": "Certificate is present in SIA of a CA that is not its issuer"
             }
         }
     ],
@@ -4514,6 +4539,16 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "common_name:Entrust Derived Credential SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
+            "organizational_unit_name:Entrust Managed Services SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "organizational_unit_name:Entrust Managed Services Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "common_name:HHS-FPKI-Intermediate-CA-E1,organizational_unit_name:Certification Authorities,organizational_unit_name:HHS,organization_name:U.S. Government,country_name:US"
         ],
         [
@@ -4574,11 +4609,6 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
         ],
         [
@@ -4600,6 +4630,11 @@
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -4820,12 +4855,6 @@
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
-            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
             "common_name:WidePoint ORC NFI 4,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US"
         ],
@@ -4864,6 +4893,12 @@
             "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
+            "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
@@ -5185,6 +5220,12 @@
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust Managed Services NFI Root CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US",
             "organizational_unit_name:Entrust NFI Medium Assurance SSP CA,organizational_unit_name:Certification Authorities,organization_name:Entrust,country_name:US"
+        ],
+        [
+            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
+            "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US",
+            "common_name:Carillon Federal Services PIV-I CA4,organizational_unit_name:Certification Authorities,organization_name:Carillon Federal Services Inc.,country_name:US"
         ]
     ]
 }
