@@ -80,7 +80,7 @@
 - notice_date: November 2, 2026
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description: The Federal Common Policy CA G2 intends to issue a new certificate to U.S. Department of State AD Root CA between 10/29/2026 and 11/04/2026.
+  change_description: The Federal Common Policy CA G2 intends to issue a new certificate to U.S. Department of State AD Root CA valid from 10/29/2026 and 10/29/2029.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 85c443c3ca0f83022ad02eb6bf874bb6d7762bc2
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
