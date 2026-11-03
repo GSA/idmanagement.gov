@@ -925,6 +925,15 @@ The following certificates are published in the Federal Common Policy CA certifi
 | Certificate Attribute | Value |
 | :--------  | :-------- |
 | Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
+| Validity | October 29, 2026 to October 29, 2029 |
+| Serial Number | 2efb491bd42a8998cd2b0aa123138776 |
+| SHA-1 Thumbprint | 85c443c3ca0f83022ad02eb6bf874bb6d7762bc2 |
+| SHA-256 Thumbprint | 0bc43b8ba6e0d57390684201c06b76761cc3299111966c6077ad3f17eec975da |
+| Download Location | Click [here]({{site.baseurl}}/implement/certs/US_Department_of_State_AD_Root_CA_rekey.cer){:class="usa-link"}|
+
+| Certificate Attribute | Value |
+| :--------  | :-------- |
+| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 8, 2023 to November 8, 2026 |
 | Serial Number | 23d03cb4df4c43d5ab11ce630f41ef9d38da7fa1 |
 | SHA-1 Thumbprint | b47df20b16966f65b0e4859d426d05c452b76bd6 |
