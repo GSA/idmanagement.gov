@@ -72,34 +72,17 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 
 ## FPKI Graph
 
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/gexfjs.css" />
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/jquery-ui-1.13.min.css" />
-
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/styleguide.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/accordion.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/respond.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-migrate-3.3.2.min.js"></script>
-
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-ui-1.13.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/gexfjs.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/config.js"></script>
-
 **Last Update**: November 02, 2026
 
 {% include graph.html %}
 
-The FPKI Graph displays the relationships between the certification authorities in the Federal PKI (FPKI) ecosystem. It graphically depicts how each certification authority links to another, through cross-certificates, subordinate certificates, or bridge CAs. **A P7B file of the weekly FPKI Graph run is available [here]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b).** Note that the Common Policy Root Certificate is included in this bundle. Before installing it in a trusted root store, verify the authenticity of the certificate by comparing the thumbprint as documented [here]({{site.baseurl}}/implement/trust-fcpca/#step-1---obtain-and-verify-the-fcpca-root-certificate){:rel="noopener noreferrer"}{:class="usa-link"}
+The FPKI Graph shows certificate relationships between certification authorities (CAs). Federal Common Policy CA G2 (_COMMON_) is the starting point. Arrows show which CA issued a certificate to another CA.
 
-The Federal Common Policy Certification Authority (CA) G2 (_"COMMON"_) is shown at the center of the graph, and the rings of dots represent the outbound CAs.
+- Select a name or point to explore an authority. Hover over or focus deeper points to see their names.
+- Use _Find_ or _Browse_ to locate an authority. Select an issuer's name to follow that relationship; _Back_ retraces your visits and _Whole network_ returns to the overview.
+- Use _Expand graph_ for more room. _Details_ shows the authority's certificate identity and available certificate records.
 
-- Click on any dot in the graph to see a CA's inbound and outbound _CA_ certificates.
-- _Inbound_ means the CA certificate is signed by the _Inbound_ CA.
-- _Outbound_ means the CA has signed the _Outbound_ CA certificate.
-- The _Search_ function is on the upper right-hand corner. 
-- The _Zoom_ scroll bar is in the upper left-hand corner.
+[Download the published certificate bundle (P7B)]({{ site.baseurl }}/implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b). The bundle includes the COMMON root certificate. Before installing it in a trusted root store, [verify its authenticity]({{site.baseurl}}/implement/trust-fcpca/#step-1---obtain-and-verify-the-fcpca-root-certificate){:rel="noopener noreferrer"}{:class="usa-link"}.
 
 You cannot download the certificates from the graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)
 

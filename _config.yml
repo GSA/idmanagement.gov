@@ -280,6 +280,7 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - assets/fpki-graph/README.md
   - CONTRIBUTING.md
   - LICENSE.md
   - degit.json
