@@ -1,5 +1,5 @@
 // Diagram input and temporary name overlay. Never changes navigation on hover.
-import {displayName, officialName, hasDistinctOfficialName} from './model.js';
+import {displayName} from './model.js';
 
 const HIT_PADDING = 5;
 const MIN_HIT_RADIUS = 11;
@@ -124,11 +124,6 @@ export class GraphInteractions {
     const title = document.createElement('strong');
     title.textContent = displayName(node);
     this.tooltip.replaceChildren(title);
-    if (hasDistinctOfficialName(node)) {
-      const exact = document.createElement('span');
-      exact.textContent = 'Official name: ' + officialName(node);
-      this.tooltip.append(exact);
-    }
     this.tooltip.hidden = false;
     this.shown = key;
     this.tooltip.dataset.authority = key;

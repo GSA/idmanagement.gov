@@ -1,6 +1,6 @@
 // Secondary authority details. Keep technical records out of the main plot area.
 import {displayName, escapeHTML as esc} from './model.js';
-import {identityContext, authorityList} from './render.js';
+import {authorityList} from './render.js';
 
 export function formatDate(value) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value || '')) return 'date unavailable';
@@ -45,7 +45,6 @@ export function renderDetails(model, state) {
   const issuers = incoming.get(state.ca), recipients = outgoing.get(state.ca);
   const records = node.records.map(index => model.data.records[index]);
   return {heading: displayName(node), html: `
-    ${identityContext(model, state.ca)}
     <details class="relationship-text">
       <summary>CA relationships as text</summary>
       <div id="named-connections">

@@ -18,6 +18,8 @@ separate application server or graph build step.
 Data flows from loading to the model and renderer; `app.js` coordinates user
 navigation. Change layout/render code rather than generated SVG paths.
 Animation shares the layout geometry and does not change navigation history.
+`render.js` uses one authority header for roots, branches and leaves; counts
+describe the displayed scene, and optional affiliations come from source fields.
 
 ## Data updates
 
@@ -33,9 +35,10 @@ need no manually written profile. Stable keys use the complete source identity.
 Layout and colors are computed in JavaScript, independently of GEXF
 visualization fields.
 
-`labels.js` expands three verified DoD name prefixes; other names stay exact.
-The official identity remains available. Details and affiliation text use
-source fields. Records have no intrinsic capture timestamp, so they do not
+`labels.js` only adjusts display capitalization: `DoD Email`, `DoD ID`,
+`DoD SW` and `DoD Derility`. Abbreviations, source labels and exact official
+identities remain intact in Details. Affiliation text uses source fields.
+Records have no intrinsic capture timestamp, so they do not
 inherit the GEXF date or require a manually updated date/hash registry.
 
 ## Maintenance

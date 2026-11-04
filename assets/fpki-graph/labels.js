@@ -1,14 +1,8 @@
-// DoD categories follow its published Identity, Email and Software CA directories:
-// https://usgovpki.apps.deas.ecs.mil/dod/cas-id/index.html
-// https://usgovpki.apps.deas.ecs.mil/dod/cas-email/index.html
-// https://usgovpki.apps.deas.ecs.mil/dod/cas-sw/index.html
-// Expand the category only; preserve the exact identity and numbered suffix.
-export function authorityNaming(officialName) {
-  const match = /^DOD (ID|EMAIL|SW) CA-(\d+)$/.exec(officialName);
-  const category = match && {ID: 'Identity', EMAIL: 'Email', SW: 'Software'}[match[1]];
-  return {officialName,
-    displayName: match ? `DoD ${category} CA-${match[2]}` : officialName,
-    explanation: match ? `Department of Defense — ${category} Certification Authority ${match[2]}.` : ''};
+// Display-only capitalization; retain source abbreviations and numbered suffixes.
+export function formatAuthorityName(label) {
+  return label.replace(/^DOD\b/, 'DoD')
+    .replace(/^DoD (EMAIL|DERILITY)\b/, (_, category) =>
+      `DoD ${category === 'EMAIL' ? 'Email' : 'Derility'}`);
 }
 
 // Wrap labels without fixed per-authority layout rules.

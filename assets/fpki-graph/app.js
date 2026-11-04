@@ -1,5 +1,5 @@
 // Entry point: selection, history and panel state. Rendering has no navigation side effects.
-import {createModel, searchAuthorities, displayName, officialName, hasDistinctOfficialName, escapeHTML as esc} from './model.js';
+import {createModel, searchAuthorities, displayName, escapeHTML as esc} from './model.js';
 import {globalBranchOwners} from './layout.js';
 import {loadGraph, directoryHTML} from './data.js';
 import {renderAtlas} from './render.js';
@@ -65,8 +65,15 @@ function announce(text) {
 
 function select(key, {focus = false} = {}) {
   if (!model.nodes.has(key)) return;
-  if (state.ca === key && state.view === 'focus') return;
-  if (state.ca !== key || state.view !== 'focus') historyTrail.push(snapshot());
+  if (state.ca === key && state.view === 'focus') {
+    // Reselecting a search result closes the panel without creating a visit.
+    if (overlay) {
+      setPanel();
+      render({focus});
+    }
+    return;
+  }
+  historyTrail.push(snapshot());
   state.ca = key;
   state.view = 'focus';
   setPanel();
@@ -103,12 +110,10 @@ function showSearch(browse = false) {
   element('result-heading').textContent = keys.length === model.nodes.size ? `All ${keys.length} authorities`
     : `${keys.length} ${keys.length === 1 ? 'matching authority' : 'matching authorities'}`;
   element('result-list').innerHTML = keys.length ? keys.map(key => {
-    const exactName = officialName(model.nodes.get(key));
     const issuers = model.incoming.get(key);
     const context = issuers.length ? 'Issued by ' + issuers.map(name).join(' · ')
       : key === model.anchor ? 'COMMON · ecosystem anchor' : 'No issuer recorded in this source';
     return `<li><button type="button" data-select="${key}">${esc(name(key))}
-      ${hasDistinctOfficialName(model.nodes.get(key)) ? `<span>Official name: ${esc(exactName)}</span>` : ''}
       <span>${esc(context)}</span></button></li>`;
   }).join('') : '<li><p class="loading">No matching authorities. Try a shorter name or Browse.</p></li>';
 }

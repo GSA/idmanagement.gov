@@ -1,9 +1,8 @@
 // FPKI certificate relationships
+import {formatAuthorityName} from './labels.js';
+
 export const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-export const displayName = node => node?.naming?.displayName || node?.label || '';
-export const officialName = node => node?.label || '';
-export const hasDistinctOfficialName = node => displayName(node).toLowerCase() !== officialName(node).toLowerCase();
-export const nameExplanation = node => node?.naming?.explanation || '';
+export const displayName = node => formatAuthorityName(node?.label || '');
 
 export function createModel(data) {
   const nodes = new Map(data.authorities.map(n => [n.key, n]));
@@ -46,7 +45,7 @@ export function searchAuthorities(model,query) {
   const normalize=value=>String(value||'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
   const words=normalize(query).split(' ').filter(Boolean);
   return model.sort([...model.nodes.keys()].filter(k=>{
-    const n=model.nodes.get(k),text=normalize([n.label,n.id,displayName(n),nameExplanation(n)].join(' '));
+    const n=model.nodes.get(k),text=normalize([n.label,n.id,displayName(n)].join(' '));
     return words.every(word=>text.includes(word));
   }));
 }

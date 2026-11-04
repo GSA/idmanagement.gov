@@ -1,6 +1,5 @@
 // Adapt the site's published artifacts without introducing a separate data build.
 import {escapeHTML as esc} from './model.js';
-import {authorityNaming} from './labels.js';
 
 const digest = async value => [...new Uint8Array(await crypto.subtle.digest('SHA-256',
   typeof value === 'string' ? new TextEncoder().encode(value) : value))]
@@ -43,8 +42,7 @@ export async function loadGraph({graphUrl, recordsUrl}) {
     const id = node.getAttribute('id'), label = node.getAttribute('label');
     if (!id || !label) throw new Error('Published FPKI graph has an incomplete authority.');
     const key = 'ca-' + (await digest(id)).slice(0, 16);
-    return {id, key, label, identityAttributes: identityAttributes(id), records: [],
-      naming: authorityNaming(label)};
+    return {id, key, label, identityAttributes: identityAttributes(id), records: []};
   }));
   authorities.sort((a, b) => a.label.toLowerCase() < b.label.toLowerCase() ? -1 : a.label.toLowerCase() > b.label.toLowerCase() ? 1 : a.id.localeCompare(b.id));
   const byId = new Map(authorities.map(node => [node.id, node]));

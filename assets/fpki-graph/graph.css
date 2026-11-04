@@ -110,9 +110,6 @@ h1,h2,h3,p{margin:0}
 .atlas-path{padding:8px 16px 0}
 .atlas-path>span:last-child{font-weight:700}
 @media(max-width:600px){.atlas-path{padding-inline:12px}}
-.official-authority-name{font-size:12px;line-height:1.4;color:var(--muted);margin:3px 0;overflow-wrap:anywhere}
-.authority-name-explanation{font-size:13px;line-height:1.45;margin:4px 0;overflow-wrap:anywhere}
-.details-panel .official-authority-name{margin-top:0}
 .current-branch{background:#fff3da!important;border-radius:4px;font-weight:700;cursor:default}
 .radial-svg .selected-point{fill:#f8d78e;stroke:#a4771b;stroke-width:2.5}
 @media(max-width:639px){body[data-narrow=true]:not([data-expanded=true]) .widget{height:auto;min-height:700px}
@@ -160,14 +157,10 @@ body[data-narrow=true]:not([data-expanded=true]) .search-results,body[data-narro
   overflow-wrap: anywhere;
 }
 .node-tooltip strong { display: block; font-weight: inherit; }
-.node-tooltip span {
-  display: block;
-  margin-top: 4px;
-  font-size: 12px;
-  color: var(--muted);
-}
-.atlas-point:focus-visible { outline: none; }
-.atlas-point:focus-visible .point-circle {
+/* SVG focus outlines follow the rectangular bounds, even after pointer clicks.
+   Use the visible circle for keyboard focus instead. */
+.atlas-point:focus { outline: none; }
+.radial-svg .atlas-point:focus-visible .point-circle {
   stroke: #9d6300;
   stroke-width: 3;
 }

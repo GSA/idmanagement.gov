@@ -1,5 +1,5 @@
 // Graph presentation only. Navigation, history and input handling live in app.js.
-import {displayName, officialName, hasDistinctOfficialName, nameExplanation, routeToCommon, escapeHTML as esc} from './model.js';
+import {displayName, routeToCommon, escapeHTML as esc} from './model.js';
 import {rootedGraph, radialEdge} from './layout.js';
 import {wrapLabel} from './labels.js';
 
@@ -23,16 +23,9 @@ export function authorityList(model, keys) {
   return `<div class="relationship-list">${keys.map(key => authorityButton(model, key)).join('')}</div>`;
 }
 
-export function identityContext(model, key) {
-  const node = model.nodes.get(key);
-  return `${hasDistinctOfficialName(node) ? `<p class="official-authority-name">Official name: ${esc(officialName(node))}</p>` : ''}
-    ${nameExplanation(node) ? `<p class="authority-name-explanation">${esc(nameExplanation(node))}</p>` : ''}`;
-}
-
-export function authorityAbout(model, key) {
-  if (key === model.anchor) {
-    return '<div class="authority-about"><p>COMMON is the Federal PKI’s Common Policy root certification authority.</p></div>';
-  }
+// One header for roots, branches and leaves; optional affiliation comes from source fields.
+function authorityHeader(model, state, scene) {
+  const {selected: key, tree, leaf, issuer} = scene;
   const node = model.nodes.get(key);
   const attributes = node.identityAttributes || {};
   const incoming = model.incoming.get(key);
@@ -41,20 +34,24 @@ export function authorityAbout(model, key) {
     ...(attributes.organizational_unit_name || []),
     ...(attributes.organization_name || [])
   ].filter(value => !generic.has(value.toLowerCase()));
-  const affiliation = nameExplanation(node) ? '' : [...new Set(fields)]
+  const affiliation = [...new Set(fields)]
     .filter(value => !node.label.toLowerCase().includes(value.toLowerCase())).join(' · ');
-  const terms = [];
-  if (/\bCA\b/.test(node.label)) terms.push('CA: certification authority');
-  if (/\bSSP\b/.test(node.label)) terms.push('SSP: shared service provider');
-  return `<div class="authority-about">
-    ${identityContext(model, key)}
-    ${affiliation ? `<p class="authority-affiliation">${esc(affiliation)}</p>` : ''}
-    ${incoming.length ? `<p class="issuer-context">CA certificate issued by ${incoming.map(issuer => `
+  const issuers = incoming.length ? incoming.map(issuer => `
       <button type="button" class="issuer-node" data-select="${issuer}" data-atlas-id="${issuer}"
         aria-label="Go to issuer: ${esc(name(model, issuer))}">
         <span class="issuer-dot" aria-hidden="true">↑</span>${esc(name(model, issuer))}
-      </button>`).join(' ')}</p>` : ''}
-    ${terms.length && !nameExplanation(node) ? `<p class="authority-terms">${terms.join(' · ')}</p>` : ''}
+      </button>`).join(' ') : key === model.anchor
+    ? 'No issuer listed · COMMON root authority' : 'No issuer recorded in this source';
+  return `<div class="graph-context">
+    <nav class="context-path atlas-path" aria-label="Certificate issuance sequence">${contextPath(model, state)}</nav>
+    <h2 class="surface-title" data-selected-heading tabindex="-1">${esc(name(model, key))}</h2>
+    <p class="surface-caption">Shown: ${quantity(tree.keys.length, 'authority')} · ${quantity(tree.edges.length, 'directed relationship')}${leaf && issuer ? ' · includes issuer and peers' : ''}</p>
+    <div class="authority-about">
+      ${affiliation ? `<p class="authority-affiliation">Affiliation: ${esc(affiliation)}</p>` : ''}
+      <p class="issuer-context">Certificate issuer: ${issuers}</p>
+      <p class="authority-terms">CA: certification authority · SSP: shared service provider</p>
+    </div>
+    <p id="atlas-keyboard-help" class="sr-only">Use arrow keys to move between graph points. Press Enter to select an authority, or Escape to dismiss its name. Find and Browse also list all authorities.</p>
   </div>`;
 }
 
@@ -148,7 +145,7 @@ function pointMarkup(model, state, scene, owners, point) {
 
 export function renderAtlas(model, state, owners, viewport) {
   const scene = createScene(model, state, viewport);
-  const {selected, root, leaf, issuer, tree, width, height, cx, cy, radius} = scene;
+  const {root, leaf, tree, width, height, cx, cy, radius} = scene;
   const labelMarkup = label => {
     const current = label.key === state.ca;
     const tag = current ? 'span' : 'button';
@@ -174,16 +171,8 @@ export function renderAtlas(model, state, owners, viewport) {
     <g aria-hidden="true">${edges}</g>
     ${[...scene.positions.values()].map(point => pointMarkup(model, state, scene, owners, point)).join('')}
   </svg>`;
-  const caption = leaf && issuer ? 'Shown with its issuer and peer authorities'
-    : `${quantity(tree.keys.length, 'authority')} · ${quantity(tree.edges.length, 'directed relationship')}`;
   return {scene, html: `
-    <div class="graph-context">
-    ${selected !== model.anchor ? `<nav class="context-path atlas-path" aria-label="Certificate issuance sequence">${contextPath(model, state)}</nav>` : ''}
-    <h2 class="surface-title" data-selected-heading tabindex="-1">${esc(name(model, selected))}</h2>
-    <p class="surface-caption">${caption}</p>
-    ${authorityAbout(model, selected)}
-    <p id="atlas-keyboard-help" class="sr-only">Use arrow keys to move between graph points. Press Enter to select an authority, or Escape to dismiss its name. Find and Browse also list all authorities.</p>
-    </div>
+    ${authorityHeader(model, state, scene)}
     <div class="radial-wrap" style="height:${height}px" data-visible-authorities="${tree.keys.length}" data-visible-relationships="${tree.edges.length}">
       ${svg}${scene.flanked ? scene.labels.map(labelMarkup).join('') : ''}
     </div>
