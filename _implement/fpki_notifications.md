@@ -72,7 +72,9 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 
 ## FPKI Graph
 
+<!-- Crawler update marker.
 **Last Update**: November 02, 2026
+-->
 
 {% include graph.html %}
 

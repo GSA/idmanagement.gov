@@ -163,7 +163,7 @@ function render({animate = false, focus = false, resize = false} = {}) {
   const surface = element('surface');
   const scroll = resize ? surface.scrollTop : 0;
   const restoreFocus = resize ? focusSelector(document.activeElement) : null;
-  element('source-date').textContent = `Graph · ${formatDate(model.data.sourceDate)}`;
+  element('source-date').textContent = `Updated ${formatDate(model.data.sourceDate)}`;
   element('back').disabled = !historyTrail.length;
   element('whole').disabled = state.ca === model.anchor && state.view === 'overview';
   if (surface.hidden && overlay) {

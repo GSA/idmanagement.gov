@@ -17,7 +17,7 @@ geometry. Edit these modules rather than generated SVG paths.
   colors are computed in the browser, independently of its visualization fields.
 - Crawler JSON supplies optional certificate records for Details, not graph edges.
 - Preserve the GEXF/JSON/P7B filenames and the notifications page's
-  `**Last Update**:` field used by the existing updater.
+  `**Last Update**:` comment marker used by the existing updater.
 - Selection keys derive from complete source identities. Display formatting only
   adjusts DoD capitalization; exact names remain in Details.
 - Header counts describe the displayed scene, including issuer/peer context for
