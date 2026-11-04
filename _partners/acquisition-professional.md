@@ -46,7 +46,7 @@ The following organizations offer Identity, Credential, and Access Management se
 
 ## Government Identity Services
 
-- [USAccess](https://fedidcard.gov/service.aspx){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Provides agencies with a PIV credentialing service.
+- [USAccess](https://www.gsa.gov/federal-credentialing-services){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link usa-link--external"} – Provides agencies with a PIV credentialing service.
 - [MAX.gov Authentication as a Service](https://portal.max.gov/portal/home){:rel="noopener noreferrer"}{:class="usa-link"} – Single Sign-On (SSO) and 2-Factor Authentication as a Service with PIV credential integration.
 - [FPKI Shared Service Providers]({{site.baseurl}}/trust-services/#government-identity-services){:rel="noopener noreferrer"}{:class="usa-link"} – Digital certificates for Federal agencies.
 
