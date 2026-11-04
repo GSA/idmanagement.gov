@@ -105,3 +105,15 @@
   aplnumbers: New
   state: New
   teststatus: In queue
+
+- position: 13	
+  solution: Gallagher 9.50
+  aplnumbers: New
+  state: New
+  teststatus: In queue
+
+- position: 14	
+  solution: Advantor 6.2.3
+  aplnumbers: New
+  state: New
+  teststatus: In queue
