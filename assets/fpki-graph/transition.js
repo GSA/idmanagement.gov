@@ -1,4 +1,3 @@
-// Visual continuity only. Selection, routes and history remain in app.js.
 import {radialCurve, curvePath} from './layout.js';
 
 const SVG_NAMESPACE = 'http://www.w3.org/2000/svg';
@@ -9,7 +8,6 @@ const mix = (a, b, t) => a + (b - a) * t;
 const ease = t => 1 - (1 - t) ** 3;
 const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
 
-// SVG matrices expose these six affine values across browser implementations.
 function project(matrix, point) {
   return {x: matrix.a * point.x + matrix.c * point.y + matrix.e,
     y: matrix.b * point.x + matrix.d * point.y + matrix.f};
@@ -52,8 +50,7 @@ function readDrawing(scene, svg) {
   return {selected: scene.selected, points, edges};
 }
 
-// Pure plan: track shared identities, project entering/exiting context through a
-// bounded zoom, then settle shared points into the radial layout.
+// Project entering and exiting points around shared identities with bounded zoom.
 export function createRefocusPlan(previous, next) {
   const shared = [...next.points.keys()].filter(key => previous.points.has(key));
   if (!shared.length) return null;
@@ -107,8 +104,7 @@ function interpolateEdge({from, to, exiting}, plan, points, t) {
     mix(inset(source.from, from.curve, 0), inset(source.to, to.curve, 0), t));
   const end = endpoint(points.get(to.target), points.get(to.source),
     mix(inset(target.from, from.curve, 6), inset(target.to, to.curve, 6), t));
-  // Re-clip to the moving circles; independently interpolated endpoints could
-  // drift inside a node as a relationship changes direction.
+  // Clip endpoints to moving circles so arrows do not drift inside nodes.
   const curve = from.curve.map((value, index) => mix(value, to.curve[index], t));
   curve.splice(0, 2, start.x, start.y);
   curve.splice(6, 2, end.x, end.y);
@@ -171,8 +167,7 @@ export class GraphTransition {
     const svg = this.surface.querySelector('.radial-svg');
     const matrix = svg?.getScreenCTM();
     if (!this.current || this.surface.hidden || !usableMatrix(matrix)) return null;
-    // Capture the actual in-flight geometry before cleanup. Screen coordinates
-    // account for header height, scroll position and a changed SVG viewport.
+    // Screen coordinates preserve motion across changes to context height and scroll.
     const points = new Map([...this.current.points].filter(([, point]) => point.opacity > .01));
     const edges = new Map([...this.current.edges].filter(([, edge]) =>
       edge.opacity > .01 && points.has(edge.source) && points.has(edge.target)));
@@ -187,7 +182,7 @@ export class GraphTransition {
     this.current = next;
     if (!previous || this.motion.matches || document.hidden) return;
     const screen = svg.getScreenCTM();
-    // A hidden/zero-size embed has no usable camera space; show its stable view.
+    // Hidden or zero size embeds cannot provide usable screen coordinates.
     if (!usableMatrix(screen)) return;
     const matrix = screen.inverse();
     const from = transformDrawing(previous, point => project(matrix, point), Math.hypot(matrix.a, matrix.b));
@@ -197,7 +192,7 @@ export class GraphTransition {
     const ghosts = document.createElementNS(SVG_NAMESPACE, 'g');
     ghosts.setAttribute('aria-hidden', 'true');
     ghosts.classList.add('transition-context');
-    // Old context is visual only. Real hit targets always belong to next selection.
+    // Exiting shapes are decorative; only current points accept input.
     svg.insertBefore(ghosts, svg.querySelector('.atlas-point'));
     for (const point of plan.points.values()) {
       if (point.exiting) point.to.element = ghostPoint(point.from, ghosts);

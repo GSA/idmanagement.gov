@@ -1,11 +1,9 @@
-// Display-only capitalization; retain source abbreviations and numbered suffixes.
 export function formatAuthorityName(label) {
   return label.replace(/^DOD\b/, 'DoD')
     .replace(/^DoD (EMAIL|DERILITY)\b/, (_, category) =>
       `DoD ${category === 'EMAIL' ? 'Email' : 'Derility'}`);
 }
 
-// Wrap labels without fixed per-authority layout rules.
 export function wrapLabel(text, max) {
   const lines = [''];
   const words = text.split(/\s+/).flatMap(word => word.length > max ? word.match(new RegExp(`.{1,${Math.max(1, max)}}`, 'g')) : [word]);

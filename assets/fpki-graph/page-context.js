@@ -1,4 +1,3 @@
-// FPKI certificate relationships — shared in-place expansion; never reload the graph.
 (() => {
   const shell=document.getElementById('fpki-graph-shell'), frame=document.getElementById('fpki-map-frame'), button=document.getElementById('fpki-expand');
   if(!shell||!frame||!button)return;
@@ -13,8 +12,7 @@
     if(url!==location.pathname+location.search+location.hash)history[replace?'replaceState':'pushState']({},'',url);
     currentSearch=location.search;
   }
-  // Same-origin authority navigation commits before a rapid browser Back action.
-  // Presentation/height messages remain asynchronous and validate their frame source.
+  // Commit navigation synchronously so browser Back sees the current selection.
   window.fpkiCommitState=commitState;
   function presentation(){
     if(expanded){

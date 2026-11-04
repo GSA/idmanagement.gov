@@ -1,4 +1,3 @@
-// FPKI certificate relationships
 import {formatAuthorityName} from './labels.js';
 
 export const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

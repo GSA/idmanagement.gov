@@ -1,4 +1,3 @@
-// FPKI certificate relationships — a spanning tree positions nodes; all source edges remain.
 
 export const branchColors = ['#39728b','#438e88','#927497','#af8649','#5c82a5','#718b64','#ac7866','#747da5','#60959f','#a28c69','#7d8e91'];
 
@@ -39,8 +38,7 @@ export function globalBranchOwners(model) {
   return owners;
 }
 
-// One cubic representation for straight, quadratic and curved relationships.
-// The renderer and transitions share these coordinates; no SVG path parsing.
+// Rendering and animation share cubic coordinates to avoid parsing SVG paths.
 export function radialCurve(source, target, layout, isTree = true) {
   const {cx, cy} = layout;
   const shorten = (node, toward, distance) => {

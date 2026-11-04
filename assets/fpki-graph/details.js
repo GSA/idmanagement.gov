@@ -1,4 +1,3 @@
-// Secondary authority details. Keep technical records out of the main plot area.
 import {displayName, escapeHTML as esc} from './model.js';
 import {authorityList} from './render.js';
 

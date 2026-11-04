@@ -1,4 +1,3 @@
-// Graph presentation only. Navigation, history and input handling live in app.js.
 import {displayName, routeToCommon, escapeHTML as esc} from './model.js';
 import {rootedGraph, radialEdge} from './layout.js';
 import {wrapLabel} from './labels.js';
@@ -23,7 +22,6 @@ export function authorityList(model, keys) {
   return `<div class="relationship-list">${keys.map(key => authorityButton(model, key)).join('')}</div>`;
 }
 
-// One header for roots, branches and leaves; optional affiliation comes from source fields.
 function authorityHeader(model, state, scene) {
   const {selected: key, tree, leaf, issuer} = scene;
   const node = model.nodes.get(key);
@@ -63,13 +61,11 @@ function contextPath(model, state) {
   }).join('');
 }
 
-// Calculate geometry without changing the DOM or navigation state.
 export function createScene(model, state, viewport) {
   const selected = state.view === 'overview' ? model.anchor : state.ca;
   const leaf = !model.outgoing.get(selected).length;
   const issuer = model.incoming.get(selected)[0];
-  // Keep a leaf beside its issuer and peers so selecting it does not produce
-  // an empty diagram. The selected authority still owns the heading and Details.
+  // Show a leaf with its issuer and peers instead of an empty diagram.
   const root = leaf && issuer ? issuer : selected;
   const tree = rootedGraph(model, root);
   if (leaf) {

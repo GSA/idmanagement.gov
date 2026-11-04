@@ -1,4 +1,3 @@
-/* FPKI certificate relationships — graph expansion in the original page. */
 .fpki-graph-shell{position:relative;inset:auto;display:block;width:100%;max-width:none;max-height:none;margin:18px 0 28px;padding:0;border:1px solid #b6cbd4;border-radius:8px;background:#fff;color:#153f55;box-sizing:border-box;overflow:hidden}
 .fpki-graph-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;box-sizing:border-box;padding:5px 12px;background:#f2f6f7;border-bottom:1px solid #d7e3e6;font:15px/1.3 'Source Sans Pro Web',Arial,sans-serif}
 .fpki-graph-bar strong{font-weight:600}

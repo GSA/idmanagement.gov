@@ -1,4 +1,3 @@
-// Adapt the site's published artifacts without introducing a separate data build.
 import {escapeHTML as esc} from './model.js';
 
 const digest = async value => [...new Uint8Array(await crypto.subtle.digest('SHA-256',
@@ -15,15 +14,13 @@ export function identityAttributes(identity) {
 }
 
 async function fetchJSON(url) {
-  // Revalidate published artifacts; unchanged files can use conditional HTTP.
   const response = await fetch(url, {cache: 'no-cache'});
   if (!response.ok) throw new Error('FPKI data could not be loaded.');
   return response.json();
 }
 
 export async function loadGraph({graphUrl, recordsUrl}) {
-  // Only the published graph is required. Optional records must not prevent
-  // published certificate relationships from being explored.
+  // Record failures must not prevent the published graph from loading.
   const [graphResult, recordsResult] = await Promise.allSettled([
     fetch(graphUrl, {cache: 'no-cache'}).then(async response => {
       if (!response.ok) throw new Error('Published FPKI graph could not be loaded.');

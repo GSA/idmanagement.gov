@@ -1,4 +1,3 @@
-// Entry point: selection, history and panel state. Rendering has no navigation side effects.
 import {createModel, searchAuthorities, displayName, escapeHTML as esc} from './model.js';
 import {globalBranchOwners} from './layout.js';
 import {loadGraph, directoryHTML} from './data.js';
@@ -54,7 +53,7 @@ function restore(search) {
     setPanel();
     render({animate: true});
   }
-  // Normalize restored links too, including retired scope parameters.
+  // Replace the URL to match the restored state without adding history.
   write(true);
 }
 
@@ -66,7 +65,7 @@ function announce(text) {
 function select(key, {focus = false} = {}) {
   if (!model.nodes.has(key)) return;
   if (state.ca === key && state.view === 'focus') {
-    // Reselecting a search result closes the panel without creating a visit.
+    // Close the panel without adding a duplicate visit.
     if (overlay) {
       setPanel();
       render({focus});
@@ -179,8 +178,7 @@ function render({animate = false, focus = false, resize = false} = {}) {
   let view = renderAtlas(model, state, owners, viewport);
   surface.innerHTML = view.html;
   if (expanded && viewport.width >= 640) {
-    // Expanded layouts use the actual context height, including wrapped names.
-    // Measure before drawing the transition so it starts at the final size.
+    // Measure wrapped context before calculating the expanded drawing.
     viewport.contextHeight = surface.querySelector('.graph-context').getBoundingClientRect().height;
     view = renderAtlas(model, state, owners, viewport);
     surface.innerHTML = view.html;
@@ -194,8 +192,7 @@ function render({animate = false, focus = false, resize = false} = {}) {
 function scheduleResize() {
   if (!model || element('surface').hidden) return;
   const surface = element('surface');
-  // Below the side-label breakpoint, geometry depends only on width. A taller
-  // context/iframe must not interrupt movement by requesting the same layout.
+  // Narrow layouts depend only on width; height changes must not restart motion.
   const height = surface.clientWidth < 640 ? 0 : surface.clientHeight;
   const size = [surface.clientWidth, height, expanded].join('/');
   if (size === lastSize) return;

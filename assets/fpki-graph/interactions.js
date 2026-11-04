@@ -1,4 +1,3 @@
-// Diagram input and temporary name overlay. Never changes navigation on hover.
 import {displayName} from './model.js';
 
 const HIT_PADDING = 5;
@@ -111,7 +110,6 @@ export class GraphInteractions {
       this.surface.dataset.highlightedAuthority = key;
       this.highlighted = key;
     }
-    // A tooltip must not stay behind while its point moves to another position.
     if (this.surface.dataset.transitioning) this.hideName();
     else if (target?.showName && key !== this.suppressed) this.showName(target);
     else this.hideName();
