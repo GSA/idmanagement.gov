@@ -32,8 +32,68 @@
 # ee_ocsp_uri:
 #
 
-- notice_date: November 14, 2026
+- notice_date: November 2, 2026
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 has revoked a certificate to the CertiPath Bridge CA-G3.
+  contact: fpki dash help at gsa.gov
+  ca_certificate_hash: cb6c8f8c34a176f38cb0cd92c84f708deda980a3
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=CertiPath Bridge CA-G3, OU=CAs, O=CertiPath, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.certipath.com/IssuedBy-CertiPathBridgeCA-G3.p7c 
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: November 2, 2026
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 has revoked a certificate to the XTec NFI SSP Root CA 1. 
+  contact:  fpki dash help at gsa dot gov
+  ca_certificate_hash: f34f74751b21b812b4392d126db6be96891c433b
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=XTec NFI SSP Root CA 1, OU=Certification Authorities, O=XTec Incorporated, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.xca.xpki.com/AIA/IssuedCertsByXTec_NFI_SSP_Root_CA_1.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: November 2, 2026
   change_type: CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The TSCP Bridge CA issued a renewal for a cross-certificate to Carillon Federal Services PIV-I CA2 on October 20,2026.
+  contact: info at tscp dot org
+  ca_certificate_hash: 20e008b4e79c7ed2542d357d088efeee3dee99a9
+  ca_certificate_issuer: CN = TSCP SHA384 Bridge CA, OU=CAs, O = TSCP LLC, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
+  cdp_uri: http://crl.one.digicert.com/tscpbcasha384.crl
+  aia_uri: http://cacerts.one.digicert.com/IssuedTo-tscpbcasha384.p7c
+  sia_uri: N/A
+  ocsp_uri: N/A
+  ee_cdp_uri: http://pub.carillonfedserv.com/CRL/CFSCA2.crl
+  ee_ocsp_uri: http://pub.carillonfedserv.com/ocsp
+
+- notice_date: November 2, 2026
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to issue a new certificate to U.S. Department of State AD Root CA valid from 10/29/2026 and 10/29/2029.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 85c443c3ca0f83022ad02eb6bf874bb6d7762bc2
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri: N/A
+  ee_cdp_uri: N/A
+  ee_ocsp_uri: N/A
+
+- notice_date: October 14, 2026
+  change_type: CA Certificate Issuance Intent
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
   change_description: The Federal Common Policy CA G2 intends to issue a new certificate to U.S. Department of State AD Root CA between 10/29/2026 and 11/04/2026.
   contact: fpki dash help at gsa dot gov
@@ -161,7 +221,7 @@
   ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: CN=DigiCert Federated ID CA - G2, OU=www.digicert.com, O=DigiCert Inc, C=US
   cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
-  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
   sia_uri: N/A
   ocsp_uri: N/A
   ee_cdp_uri: N/A
@@ -356,7 +416,7 @@
   ca_certificate_issuer: CN = Federal Bridge CA G5, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: CN=DigiCert Federated ID CA - G2, OU=www.digicert.com, O=DigiCert Inc, C=US
   cdp_uri: http://repo.fpki.gov/bridge/fbcag5.crl
-  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag5.p7c
   sia_uri: N/A
   ocsp_uri: N/A
   ee_cdp_uri: N/A
