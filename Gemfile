@@ -2,13 +2,16 @@
 
 source "https://rubygems.org"
 
+# Ruby version, see https://www.ruby-lang.org/en/news/2024/06/28/ruby-4-0-9-released/
 ruby "4.0.9"
 
+# Jekyll and related gems, see https://jekyllrb.com/news/2024/06/28/jekyll-4-4-1-released/
 gem "jekyll", "4.4.1" #latest
-gem "execjs", "2.10.2" 
+# Jekyll dependencies for Windows
+gem "execjs", "2.10.2"
 gem "mini_racer" # Fast V8 JS engine runtime wrapper for ExecJS
 gem "autoprefixer-rails", "~> 10.6"
-
+# Jekyll plugins for site generation
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.18.0'
   gem 'jekyll-redirect-from', '~> 0.17.0'
@@ -33,3 +36,5 @@ gem 'csv', '~> 3.3', '>= 3.3.5'
 gem 'base64', '~> 0.3.0'
 gem "bigdecimal", "~> 4.1"
 gem 'logger', '~> 1.7'
+
+# updated: 11/05/2026 - cjb
