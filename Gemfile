@@ -37,7 +37,10 @@ gem "bigdecimal", "~> 4.1"
 # This gem is not required for Jekyll 4.2.2, but it is needed for Windows users to watch files.
 # Uncomment the line below if you are on Windows and need file watching capabilities.
 # Note: The version is set to '~> 0.2.0' to match compatibility with Jekyll 4.2.2. 
-gem 'wdm', '~> 0.2.0' if Gem.win_platform?
+# Previous version: gem 'wdm', '~> 0.2.0' if Gem.win_platform?
+platforms :mswin, :mingw, :x64_mingw do
+  gem 'wdm', '~> 0.2.0'
+end
 
 # Install fiddle gem to avoid warning about missing fiddle when running local server.
 # This gem is not required for Jekyll 4.2.2, but it is needed for Ruby versions that require it.
