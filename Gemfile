@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-# Ruby version, see https://www.ruby-lang.org/en/news/2024/06/28/ruby-4-0-9-released/
-ruby "4.0.9"
+# Ruby version, see: https://docs.cloud.gov/pages/developers/rvm-on-pages/
+ruby "4.0.5"
 
 # Jekyll and related gems, see https://jekyllrb.com/news/2024/06/28/jekyll-4-4-1-released/
 gem "jekyll", "4.4.1" #latest
