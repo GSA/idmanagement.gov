@@ -21,7 +21,7 @@ end
 # Windows platform specific support
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-platforms :mswin, :mingw, :x64_mingw do
+platforms :windows do
   gem 'wdm', '~> 0.2.0'
 end
 
