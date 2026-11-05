@@ -3,24 +3,25 @@ source "https://rubygems.org"
 # gem "jekyll", "4.2.2" # pinned awaiting release of https://github.com/jekyll/jekyll/pull/9304 
 gem "jekyll", "4.4.1" # Upgreaded to the latest stable version
 # gem "execjs", "2.9.1" # Previous version. 
-gem "execjs", "2.10.0" # Latest version as of 07/24/2025 
+gem "execjs", "2.10.2" # Latest version as of 07/24/2025 
 gem "autoprefixer-rails"
 # gem "webrick" # Jekyll 4.4.1 includes webrick by default, so this line is not needed.
 
 group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.17.0'
-  gem 'jekyll-redirect-from', '~> 0.16.0'
+  gem 'jekyll-feed', '~> 0.18.0'
+  gem 'jekyll-redirect-from', '~> 0.17.0'
   gem 'jekyll-paginate-v2', "3.0.0"
   gem 'jekyll-sitemap', '~> 1.4'
-  gem 'jekyll-seo-tag', '~> 2.8'
-  gem 'jekyll-datapage-generator', '~> 1.4'
+  gem 'jekyll-seo-tag', '~> 2.9'
+  gem 'jekyll-datapage-generator'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #gem "html-proofer", "~> 3.19", ">= 3.19.4"
-gem "html-proofer", "~> 3.18"
+# previous version: gem "html-proofer", "~> 3.18"
+gem "html-proofer", "~> 5.2"
 
 # installing csv to silence warning when running local server.
 gem 'csv', '~> 3.3', '>= 3.3.5'
@@ -29,7 +30,8 @@ gem 'csv', '~> 3.3', '>= 3.3.5'
 gem 'base64', '~> 0.3.0'
 
 # Installing bigdecimal gem to avoid warning about missing bigdecimal when running local server.
-gem 'bigdecimal', '~> 3.2', '>= 3.2.2'
+# previous version: gem 'bigdecimal', '~> 3.2', '>= 3.2.2'
+gem "bigdecimal", "~> 4.1"
 
 # Installing wdm gem to avoid warning about missing wdm when running local server on Windows.
 # This gem is not required for Jekyll 4.2.2, but it is needed for Windows users to watch files.
