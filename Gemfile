@@ -1,4 +1,4 @@
-# Update to Ruby 4.0.9 and related gems
+# Update to Ruby 4.0.5 and related gems
 
 source "https://rubygems.org"
 
