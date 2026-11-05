@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "jekyll", "4.4.1" # Upgreaded to the latest stable version
 # gem "execjs", "2.9.1" # Previous version. 
 gem "execjs", "2.10.2" # Latest version as of 07/24/2025 
-gem "autoprefixer-rails"
+gem "autoprefixer-rails", "~> 10.6"
 # gem "webrick" # Jekyll 4.4.1 includes webrick by default, so this line is not needed.
 
 group :jekyll_plugins do
