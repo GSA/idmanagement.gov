@@ -1,11 +1,12 @@
-source "https://rubygems.org"
+# Update to Ruby 4.0.9 and related gems
 
-# gem "jekyll", "4.2.2" # pinned awaiting release of https://github.com/jekyll/jekyll/pull/9304 
-gem "jekyll", "4.4.1" # Upgreaded to the latest stable version
-# gem "execjs", "2.9.1" # Previous version. 
-gem "execjs", "2.10.2" # Latest version as of 07/24/2025 
+source "https://rubygems.org"
+ruby "4.0.9"
+
+gem "jekyll", "4.4.1" #latest
+gem "execjs", "2.10.2" 
+gem "mini_racer" # Fast V8 JS engine runtime wrapper for ExecJS
 gem "autoprefixer-rails", "~> 10.6"
-# gem "webrick" # Jekyll 4.4.1 includes webrick by default, so this line is not needed.
 
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.18.0'
@@ -16,37 +17,18 @@ group :jekyll_plugins do
   gem 'jekyll-datapage-generator'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Windows platform specific support
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#gem "html-proofer", "~> 3.19", ">= 3.19.4"
-# previous version: gem "html-proofer", "~> 3.18"
-gem "html-proofer", "~> 5.2"
-
-# installing csv to silence warning when running local server.
-gem 'csv', '~> 3.3', '>= 3.3.5'
-
-# installing base64 gem to avoid warning about missing base64 when running local server.
-gem 'base64', '~> 0.3.0'
-
-# Installing bigdecimal gem to avoid warning about missing bigdecimal when running local server.
-# previous version: gem 'bigdecimal', '~> 3.2', '>= 3.2.2'
-gem "bigdecimal", "~> 4.1"
-
-# Installing wdm gem to avoid warning about missing wdm when running local server on Windows.
-# This gem is not required for Jekyll 4.2.2, but it is needed for Windows users to watch files.
-# Uncomment the line below if you are on Windows and need file watching capabilities.
-# Note: The version is set to '~> 0.2.0' to match compatibility with Jekyll 4.2.2. 
-# Previous version: gem 'wdm', '~> 0.2.0' if Gem.win_platform?
 platforms :mswin, :mingw, :x64_mingw do
   gem 'wdm', '~> 0.2.0'
 end
 
-# Install fiddle gem to avoid warning about missing fiddle when running local server.
-# This gem is not required for Jekyll 4.2.2, but it is needed for Ruby versions that require it.
-# Uncomment the line below if you need the fiddle gem.
-# Note: The version is set to '~> 1.1' to match compatibility with Jekyll 4.2.2.
-# gem 'fiddle', '~> 1.1', '>= 1.1.8'
+# CI/CD Link Validation Engine
+gem "html-proofer", "~> 5.2"
 
-# Installing logger gem to avoid warning about missing logger when running local server. 
+# Ruby 4.0 Bundled Gems Compatibility Layer
+gem 'csv', '~> 3.3', '>= 3.3.5'
+gem 'base64', '~> 0.3.0'
+gem "bigdecimal", "~> 4.1"
 gem 'logger', '~> 1.7'
