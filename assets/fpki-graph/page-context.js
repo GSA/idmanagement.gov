@@ -8,7 +8,7 @@
     if(source!==frame.contentWindow||typeof search!=='string')return;
     const p=new URLSearchParams(search),safe=new URLSearchParams();
     for(const k of ['ca','view'])if(p.has(k))safe.set(k,p.get(k));
-    const url=location.pathname+'?'+safe+location.hash;
+    const query=safe.toString(), url=location.pathname+(query?'?'+query:'')+location.hash;
     if(url!==location.pathname+location.search+location.hash)history[replace?'replaceState':'pushState']({},'',url);
     currentSearch=location.search;
   }

@@ -4,13 +4,13 @@ title: Certificate relationships
 permalink: /fpki/graph/
 sitemap: false
 ---
-<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <title>Certificate relationships · FPKI</title><link rel="stylesheet" href="{{ '/assets/fpki-graph/graph.css' | relative_url }}"><script type="module" src="{{ '/assets/fpki-graph/app.js' | relative_url }}"></script></head>
 <body><main id="widget" class="widget"
   data-graph-url="{{ '/implement/tools/fpki-certs.gexf' | relative_url }}"
   data-records-url="{{ '/implement/tools/crawler-lastrun.json' | relative_url }}" aria-label="Certificate relationships">
 <h1 class="sr-only">Certificate relationships</h1>
-<div class="toolbar" id="toolbar"><form id="search-form" role="search"><label class="sr-only" for="search">Find a certification authority</label><span class="search-symbol" aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find an authority, e.g. NASA" autocomplete="off" aria-expanded="false" aria-controls="search-results"><button type="submit">Find</button></form><button id="browse" aria-expanded="false" aria-controls="search-results">Browse</button></div>
+<div class="toolbar" id="toolbar"><form id="search-form" role="search"><label class="sr-only" for="search">Find a certification authority</label><span class="search-symbol" aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find an authority, e.g. NASA" autocomplete="off" aria-controls="search-results"><button type="submit">Find</button></form><button id="browse" aria-expanded="false" aria-controls="search-results">Browse</button></div>
 <nav class="navigation" aria-label="Graph navigation"><div class="nav-buttons"><button id="back" disabled aria-label="Previous authority or graph view">← Back</button><button id="whole">Whole network</button></div><span class="direction">Issuer <span aria-hidden="true">→</span> Issued to</span></nav>
 <section id="search-results" class="search-results" aria-label="Authority search results" hidden><header><h2 id="result-heading">Authorities</h2><button id="close-search">Close</button></header><ul id="result-list"></ul></section>
 <section id="surface" class="surface" aria-label="Authority relationships"><p class="loading">Loading certificate relationships…</p></section>
