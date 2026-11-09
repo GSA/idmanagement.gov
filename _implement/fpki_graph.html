@@ -1,0 +1,23 @@
+---
+layout: null
+title: Certificate relationships
+permalink: /fpki/graph/
+sitemap: false
+---
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Certificate relationships · FPKI</title><link rel="stylesheet" href="{{ '/assets/fpki-graph/graph.css' | relative_url }}"><script type="module" src="{{ '/assets/fpki-graph/app.js' | relative_url }}"></script></head>
+<body><main id="widget" class="widget"
+  data-graph-url="{{ '/implement/tools/fpki-certs.gexf' | relative_url }}"
+  data-records-url="{{ '/implement/tools/crawler-lastrun.json' | relative_url }}" aria-label="Certificate relationships">
+<h1 class="sr-only">Certificate relationships</h1>
+<div class="toolbar" id="toolbar"><form id="search-form" role="search"><label class="sr-only" for="search">Find a certification authority</label><span class="search-symbol" aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Find an authority, e.g. NASA" autocomplete="off" aria-controls="search-results"><button type="submit">Find</button></form><button id="browse" aria-expanded="false" aria-controls="search-results">Browse</button></div>
+<nav class="navigation" aria-label="Graph navigation"><div class="nav-buttons"><button id="back" disabled aria-label="Previous authority or graph view">← Back</button><button id="whole">Whole network</button></div><span class="direction">Issuer <span aria-hidden="true">→</span> Issued to</span></nav>
+<section id="search-results" class="search-results" aria-label="Authority search results" hidden><header><h2 id="result-heading">Authorities</h2><button id="close-search">Close</button></header><ul id="result-list"></ul></section>
+<section id="surface" class="surface" aria-label="Authority relationships"><p class="loading">Loading certificate relationships…</p></section>
+<section id="details-panel" class="details-panel" aria-labelledby="details-heading" hidden><header><h2 id="details-heading">Authority details</h2><button id="close-details">Close details</button></header><div id="details-body"></div></section>
+<footer class="widget-footer"><span id="source-date">Published graph</span><div><button id="details" aria-expanded="false" aria-controls="details-panel">Details</button><button id="copy">Copy link</button></div></footer>
+<p class="sr-only" role="status" aria-live="polite" aria-atomic="true" id="live-status"></p>
+</main>
+<noscript><section class="fallback"><h2>Certificate relationships</h2><p>Enable JavaScript to explore the interactive graph. The published source data is also available:</p><ul><li><a href="{{ '/implement/tools/fpki-certs.gexf' | relative_url }}">Published graph data (GEXF)</a></li><li><a href="{{ '/implement/tools/crawler-lastrun.json' | relative_url }}">Captured certificate records (JSON)</a></li></ul></section></noscript>
+<template id="load-fallback"><section class="fallback"><h2>Certificate relationships</h2><p>The interactive graph could not be loaded. You can try reloading the page or view the <a href="{{ '/implement/tools/fpki-certs.gexf' | relative_url }}">published graph data (GEXF)</a>.</p></section></template>
+</body></html>
