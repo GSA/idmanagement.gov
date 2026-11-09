@@ -1,0 +1,260 @@
+# Runs the GSA FPKI crawler, checks the result, and pushes a branch that updates the same four
+# paths as the manual process. It can also open the PR, once the repository lets GitHub Actions
+# create pull requests. A person reviews the PR and merges it.
+name: FPKI crawler update
+
+on:
+  # Manual runs only for now. A weekly schedule is added after the workflow has been compared
+  # with the manual process.
+  workflow_dispatch:
+    inputs:
+      delivery:
+        description: >-
+          What to do with a good result. branch: push the update branch and show a link that
+          opens the PR. pr: push the branch and open the PR (needs the setting "Allow GitHub
+          Actions to create and approve pull requests"). check-only: generate and check only.
+        type: choice
+        default: branch
+        options:
+          - branch
+          - pr
+          - check-only
+
+permissions: {}
+
+concurrency:
+  group: fpki-crawler
+  cancel-in-progress: false
+
+env:
+  CRAWLER_REPOSITORY: GSA/FPKIcrawler
+  CRAWLER_COMMIT: a8b0eee3b8cb2709c4f67b083b144ba27f9683f6
+  JAR_SHA256: 1c26d064e89c1b520213979b74145a75b2db040051d3e3a2397f2128986a2b36
+  ROOT_SHA256: 5f9aecc24616b2191372600dd80f6dd320c8ca5a0ceb7f09c985ebf0696934fc
+  # One attempt while the workflow is being proven: anything unusual fails visibly.
+  # Set to '2' later for a single retry.
+  ATTEMPTS: '1'
+  RETRY_WAIT_SECONDS: '900'
+
+jobs:
+  generate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    permissions:
+      contents: read
+    outputs:
+      result: ${{ steps.crawl.outputs.result }}
+      week: ${{ steps.week.outputs.week }}
+      run_date: ${{ steps.week.outputs.run_date }}
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v7
+        with:
+          ref: staging
+          path: site
+          persist-credentials: false
+
+      - name: Name this week's branch
+        id: week
+        run: |
+          echo "week=$(TZ=America/New_York date +%G-W%V)" >> "$GITHUB_OUTPUT"
+          echo "run_date=$(TZ=America/New_York date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Check out the crawler at the pinned commit
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ env.CRAWLER_REPOSITORY }}
+          ref: ${{ env.CRAWLER_COMMIT }}
+          path: crawler
+          persist-credentials: false
+
+      - name: Verify the root certificate and Java helper
+        run: |
+          echo "$JAR_SHA256  crawler/py-crawler/py_crawler/data/pathbuilder-1.2.jar" | sha256sum -c -
+          echo "$ROOT_SHA256  crawler/py-crawler/py_crawler/data/fcpcag2.crt" | sha256sum -c -
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install locked Python dependencies
+        run: pip install --require-hashes --no-deps -r site/.github/fpki-crawler/requirements.txt
+
+      - name: Record whether revocation servers are reachable
+        run: |
+          # A plain GET only shows whether the server answers. OCSP servers often close the
+          # connection without a reply, curl exit 52, which still means the server is reachable.
+          for url in http://ocsp.disa.mil/ http://crl.disa.mil/ http://repo.fpki.gov/; do
+            read -r status seconds code message <<< "$(curl -s -o /dev/null --max-time 10 \
+              -w '%{http_code} %{time_total} %{exitcode} %{errormsg}' "$url" || true)"
+            case "$code" in
+              0)  result="reachable, HTTP $status" ;;
+              52) result="reachable, closed the connection without a reply" ;;
+              *)  result="not reachable, curl exit $code: $message" ;;
+            esac
+            echo "::notice title=Server check::$url $result, after ${seconds}s"
+          done
+
+      - name: Crawl and check the result
+        id: crawl
+        env:
+          # Java waits 15 seconds for each unreachable OCSP server, but the crawler stops the
+          # Java helper after 10. Accepted certificates are decided by CRLs, so wait 1 second.
+          JAVA_TOOL_OPTIONS: -Dcom.sun.security.ocsp.timeout=1
+        run: |
+          result=fail
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            out="$RUNNER_TEMP/attempt-$attempt"
+            mkdir -p "$out"
+            echo "::group::Attempt $attempt"
+            started=$(date +%s)
+            if (cd crawler/py-crawler && set -o pipefail && OUTPUT_DIR="$out" timeout 30m python -m py_crawler 2>&1 | tee "$out/console.log"); then
+              echo "::notice title=Crawl finished::Attempt $attempt took $(( $(date +%s) - started )) seconds."
+              set +e
+              python site/.github/fpki-crawler/check_run.py "$out" site/_implement/tools \
+                --exclusions crawler/py-crawler/exclude_thumbprints.txt \
+                --note "Crawler ${CRAWLER_REPOSITORY}@${CRAWLER_COMMIT:0:7}. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              code=$?
+              set -e
+            else
+              echo "::error title=Crawler exited with an error::$(tail -n 8 "$out/console.log" 2>/dev/null | tr '\n' ' ' | cut -c1-900)"
+              code=10
+            fi
+            echo "::endgroup::"
+            case "$code" in
+              0)  result=publish; break ;;
+              20) result=review; break ;;
+              1)  result=fail; break ;;
+              10) result=fail
+                  if [ "$attempt" -lt "$ATTEMPTS" ]; then sleep "$RETRY_WAIT_SECONDS"; fi ;;
+            esac
+          done
+          echo "result=$result" >> "$GITHUB_OUTPUT"
+          mkdir -p "$RUNNER_TEMP/final"
+          cp -R "$out/." "$RUNNER_TEMP/final/"
+          { echo "Result: **$result** after $attempt attempt(s)."; echo
+            [ -f "$out/pr-body.md" ] && cat "$out/pr-body.md"; } >> "$GITHUB_STEP_SUMMARY"
+          [ "$result" != fail ]
+
+      - name: Package outputs and logs
+        if: always()
+        # Log and report file names contain colons, which artifact uploads reject.
+        run: tar -czf "$RUNNER_TEMP/crawler-run.tar.gz" -C "$RUNNER_TEMP" $(cd "$RUNNER_TEMP" && ls -d attempt-* final 2>/dev/null)
+
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: crawler-run
+          path: ${{ runner.temp }}/crawler-run.tar.gz
+          retention-days: 90
+
+  publish:
+    needs: generate
+    if: >-
+      (needs.generate.outputs.result == 'publish' || needs.generate.outputs.result == 'review') &&
+      inputs.delivery != 'check-only'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: staging
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: crawler-run
+          path: ${{ runner.temp }}
+
+      - name: Apply the update to exactly four paths
+        run: |
+          tar -xzf "$RUNNER_TEMP/crawler-run.tar.gz" -C "$RUNNER_TEMP"
+          python3 -m pip install --quiet --require-hashes --no-deps -r .github/fpki-crawler/requirements.txt
+          python3 .github/fpki-crawler/prepare_update.py "$RUNNER_TEMP/final" . --date "${{ needs.generate.outputs.run_date }}"
+          changed="$(git status --porcelain | sed 's/^...//' | sort)"
+          allowed="$(printf '%s\n' _implement/fpki_notifications.md \
+            _implement/tools/CACertificatesValidatingToFederalCommonPolicyG2.p7b \
+            _implement/tools/crawler-lastrun.json _implement/tools/fpki-certs.gexf | sort)"
+          echo "$changed"
+          [ -n "$changed" ] && [ -z "$(comm -23 <(echo "$changed") <(echo "$allowed"))" ]
+
+      - name: Commit, push the branch and open or link the PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DELIVERY: ${{ inputs.delivery }}
+          RESULT: ${{ needs.generate.outputs.result }}
+          WEEK: ${{ needs.generate.outputs.week }}
+          RUN_DATE: ${{ needs.generate.outputs.run_date }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          branch="fpki-crawler/$WEEK"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c "$branch"
+          git add _implement/fpki_notifications.md _implement/tools
+          git commit -m "automatic crawler update ($RUN_DATE)"
+          # A branch left by an earlier run this week is replaced, but only if it is still the
+          # version seen here. An empty value means the branch must not exist.
+          seen="$(git ls-remote origin "refs/heads/$branch" | cut -f1)"
+          git push --force-with-lease="refs/heads/$branch:$seen" origin "$branch"
+          commit="$(git rev-parse --short HEAD)"
+          echo "Result: **$RESULT**. Branch \`$branch\` holds commit \`$commit\`." >> "$GITHUB_STEP_SUMMARY"
+
+          title="automatic crawler update, $(date -d "$RUN_DATE" '+%b %-d, %Y')"
+          if [ "$RESULT" = review ]; then title="$title (needs review)"; fi
+          body="$RUNNER_TEMP/final/pr-body.md"
+
+          # An open PR from earlier this week shows the new commit already.
+          pr="$(gh pr list --head "$branch" --state open --json number,isDraft,url \
+            --jq '.[0] | select(.) | "\(.number) \(.isDraft) \(.url)"')"
+          if [ -n "$pr" ]; then
+            read -r number is_draft url <<< "$pr"
+            if [ "$DELIVERY" = pr ]; then
+              gh pr edit "$number" --title "$title" --body-file "$body"
+              if [ "$RESULT" = review ] && [ "$is_draft" = false ]; then gh pr ready "$number" --undo; fi
+              if [ "$RESULT" = publish ] && [ "$is_draft" = true ]; then gh pr ready "$number"; fi
+              echo "::notice title=PR updated::$url now shows commit $commit."
+              echo "[PR #$number]($url) updated with the new commit and summary." >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "::notice title=PR already open::$url now shows commit $commit. Its description still has the earlier summary."
+              echo "[PR #$number]($url) is already open and now shows the new commit. Copy the summary above into its description if needed." >> "$GITHUB_STEP_SUMMARY"
+            fi
+            exit 0
+          fi
+
+          # The link opens GitHub's new PR page with the title and description filled in.
+          # A long summary is left out of the link, since very long URLs can fail.
+          link="$(python3 - "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" "$branch" "$title" "$body" "$RUN_URL" <<'EOF'
+          import sys, urllib.parse
+          repo, branch, title, body_file, run_url = sys.argv[1:]
+          def url(body):
+              query = urllib.parse.urlencode({'quick_pull': 1, 'title': title, 'body': body})
+              return f'{repo}/compare/staging...{branch}?{query}'
+          full = url(open(body_file).read())
+          print(full if len(full) <= 6000 else url(f'The full summary is in the workflow run: {run_url}'))
+          EOF
+          )"
+
+          if [ "$DELIVERY" = pr ]; then
+            draft=""
+            if [ "$RESULT" = review ]; then draft="--draft"; fi
+            if url="$(gh pr create --base staging --head "$branch" --title "$title" --body-file "$body" $draft)"; then
+              echo "::notice title=PR opened::$url"
+              echo "[PR opened]($url)." >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            echo "::error title=Could not open the PR::The branch is pushed. Open the PR with the link in the run summary. If the error says Actions may not create pull requests, the repository setting is off."
+            echo "Could not open the PR. [Open it here]($link): the title and description are filled in." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          echo "::notice title=Branch ready::$branch. Open the PR with the link in the run summary."
+          echo "**Next step:** [open the pull request]($link). The title and description are filled in. Check the files, then select **Create pull request**." >> "$GITHUB_STEP_SUMMARY"
