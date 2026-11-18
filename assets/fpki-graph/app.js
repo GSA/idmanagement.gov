@@ -30,6 +30,8 @@ function read(search) {
 }
 
 function query() {
+  // The default overview needs no parameters, so the host page URL stays clean.
+  if (state.ca === model.anchor && state.view === 'overview') return '';
   return '?' + new URLSearchParams({ca: state.ca, view: state.view});
 }
 
@@ -99,7 +101,6 @@ function setPanel(panel = '', browse = false) {
   element('details-panel').hidden = !details;
   element('surface').hidden = !!panel;
   element('details').setAttribute('aria-expanded', String(details));
-  element('search').setAttribute('aria-expanded', String(search));
   element('browse').setAttribute('aria-expanded', String(search && browse));
 }
 
