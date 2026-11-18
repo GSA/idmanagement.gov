@@ -34,85 +34,80 @@
 #   state: Update
 #   teststatus: In queue
 
-- position: 1	
-  solution: Motorola - Avigilon
-  aplnumbers: New
-  state: New
-  teststatus: In Testing
 
-- position: 2	
+- position: 1	
   solution: Software House - CCURE PACS
   aplnumbers: 10159
   state: Update
-  teststatus: Ready For Testing
+  teststatus: In Testing
 
-- position: 3	
+- position: 2	
   solution: Software House - Certipath PACS
   aplnumbers: New
   state: New
   teststatus: Ready For Testing
 
-- position: 4	
+- position: 3	
   solution: Siemens Government Technologies - SiPass
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 5	
+- position: 4	
   solution: Galaxy Systems
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 6	
+- position: 5	
   solution: HIRSCH Secure (Formerly Identiv)
   aplnumbers: 10103
   state: Update
   teststatus: In queue
 
-- position: 7	
+- position: 6	
   solution: Genetec
   aplnumbers: 10061
   state: Update
   teststatus: In queue
 
-- position: 8	
+- position: 7	
   solution: Schneider Electric
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 9	
+- position: 8	
   solution: Acre Security- Feenics
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 10	
+- position: 9	
   solution: Acre-RS2
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 11	
+- position: 10	
   solution: Acre-DNA
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 12	
+- position: 11	
   solution: Verkada
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 13	
+- position: 12	
   solution: Gallagher 9.50
   aplnumbers: New
   state: New
   teststatus: In queue
 
-- position: 14	
+- position: 13	
   solution: Advantor 6.2.3
   aplnumbers: New
   state: New
