@@ -1,40 +1,13 @@
-<div id="graphzone">   
-   <div id="zonecentre" class="gradient">
-      <canvas id="carte" width="0" height="0"></canvas>      
-      <ul id="ctlzoom">
-          <!--<li>
-              <a href="#" id="zoomPlusButton" title="S'approcher"> </a>
-          </li>-->
-          <li id="zoomSliderzone">
-              <div id="zoomSlider"></div>
-          </li>
-          <!--<li>
-              <a href="#" id="zoomMinusButton" title="S'éloigner"> </a>
-          </li>
-          <li>
-              <a href="#" id="lensButton"> </a>
-          </li>
-          <li>
-              <a href="#" id="edgesButton"> </a>
-          </li>-->
-      </ul>
-   </div>   
-   <div id="leftcolumn">
-      <div id="unfold">
-          <button type="button" id="aUnfold" class="rightarrow" aria-label="Toggle graph controls"></button>
-      </div>
-      <div id="leftcontent"></div>
-   </div>
-   <div id="searchbox">			
-      <form id="recherche">
-      <label for="searchinput" class="usa-sr-only">Search graph</label>
-      <input id="searchinput" class="grey" autocomplete="off" />
-      <input id="searchsubmit" type="submit" value="Search" />
-      </form>
-   </div>
-   <div class="overlay"></div>
-    <ul id="autocomplete"></ul>
-   <div id="overviewzone" class="gradient">
-      <canvas id="overview" width="0" height="0"></canvas>
-   </div>   
-</div>
+<link rel="stylesheet" href="{{ '/assets/fpki-graph/page-context.css' | relative_url }}">
+<dialog open class="fpki-graph-shell" id="fpki-graph-shell" aria-labelledby="fpki-graph-title">
+  <div class="fpki-graph-bar">
+    <strong id="fpki-graph-title">Certificate relationships</strong>
+    <button type="button" id="fpki-expand" aria-expanded="false" aria-controls="fpki-map-frame">Expand graph ↗</button>
+  </div>
+  <iframe id="fpki-map-frame"
+    src="{{ '/fpki/graph/' | relative_url }}"
+    data-widget-src="{{ '/fpki/graph/' | relative_url }}"
+    title="Certification authorities and their connections"
+    width="100%" height="700" loading="eager"></iframe>
+</dialog>
+<script src="{{ '/assets/fpki-graph/page-context.js' | relative_url }}" defer></script>

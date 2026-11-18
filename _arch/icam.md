@@ -40,7 +40,7 @@ ICAM consists of three practice areas and two supporting elements. The supportin
     <td class="tg-0pky"><span style="font-weight:bold">Identity Management</span> is how an agency collects, verifies, and manages attributes to establish and maintain enterprise identities for employees and contractors.</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_⁮ICAM-Credential.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management." width="125"><br></td>
+    <td class="tg-0pky"><img src="{{site.baseurl}}/assets/arch/intro_ICAM-Credential.png" alt="Three hexagons with the letters I, C, and A. The C is highlighted in green for Credential Management." width="125"><br></td>
     <td class="tg-0pky"><span style="font-weight:bold">Credential Management</span> is how an agency issues, manages, and revokes credentials bound to enterprise identities.</td>
   </tr>
   <tr>
