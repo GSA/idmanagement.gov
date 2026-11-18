@@ -1,10 +1,7 @@
 {
     "anchor": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
     "changes": {
-        "new_certs": [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US:62449237138322073094860485755766278006",
-            "common_name:TSCP SHA384 Bridge CA,organizational_unit_name:CAs,organization_name:TSCP LLC,country_name:US:63066892568316077557303467276339909397"
-        ]
+        "new_certs": []
     },
     "issuers": [
         "common_name:Boeing Medium Assurance Hardware Issuing CA G3,organizational_unit_name:CertServers,organization_name:Boeing,country_name:US",
@@ -79,7 +76,6 @@
         "common_name:IdenTrust ECA S23,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:IdenTrust ECA S24,organizational_unit_name:Certification Authorities,organizational_unit_name:ECA,organization_name:U.S. Government,country_name:US",
         "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
-        "common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos",
         "common_name:Leidos FBCA Cloud PKI CA-2,organization_name:Leidos",
         "common_name:Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3,organization_identifier:NTRNL-27370985,organization_name:Ministerie van Defensie,country_name:NL",
         "common_name:NRC PROD G6 Fed SSP CA,organizational_unit_name:U.S. Nuclear Regulatory Commission,organization_name:U.S. Government,country_name:US",
@@ -2433,7 +2429,6 @@
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-                    "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
                     "organizational_unit_name:US Treasury Root CA,organizational_unit_name:Certification Authorities,organizational_unit_name:Department of the Treasury,organization_name:U.S. Government,country_name:US",
                     "common_name:WidePoint ORC SSP 5,organization_name:ORC PKI,country_name:US",
                     "common_name:WidePoint SSP Intermediate CA,organization_name:ORC PKI,country_name:US",
@@ -2495,36 +2490,6 @@
                     "common_name:USPTO_INTR_CA1,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:uspto,domain_component:gov",
                     "common_name:WidePoint NFI Root 2,organizational_unit_name:Certification Authorities,organization_name:WidePoint,country_name:US",
                     "common_name:XTec NFI SSP Root CA 1,organizational_unit_name:Certification Authorities,organization_name:XTec Incorporated,country_name:US"
-                ]
-            },
-            "aia-entries": {
-                "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
-                    "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:U.S. Department of State AD Root CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu",
-            "issuer": "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "serial-number": "204458520264924537816592095775785285153734688673",
-            "akid": "f4 27 5c a9 c3 7c 47 f4 fa a6 a7 b0 59 97 aa dd 35 26 17 e3",
-            "skid": "cc 00 68 61 a6 a5 03 93 10 0a 1b 61 b7 87 18 c1 45 56 da 82",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-            ],
-            "sia-entries": {
-                "http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c": [
-                    "common_name:U.S.-Department-of-State-DPC-CA,domain_component:derived,domain_component:state,domain_component:sbu",
-                    "organizational_unit_name:U.S. Department of State PIV CA3,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
-                    "organizational_unit_name:U.S. Department of State PIV CA2,organizational_unit_name:Certification Authorities,organizational_unit_name:PIV,organizational_unit_name:Department of State,organization_name:U.S. Government,country_name:US",
-                    "common_name:U.S. Department of State AD High Assurance CA,common_name:AIA,common_name:Public Key Services,common_name:Services,common_name:Configuration,domain_component:state,domain_component:sbu"
                 ]
             },
             "aia-entries": {
@@ -2771,30 +2736,6 @@
                 "http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c": [
                     "common_name:Federal Bridge CA G4,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
                     "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US"
-                ]
-            }
-        },
-        {
-            "subject": "common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos",
-            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
-            "serial-number": "13298821034946342746366242524841902082",
-            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
-            "skid": "9d 8e 6c 06 63 9e fc 18 3b 50 2d d3 3b bb da 05 dd 8c a2 8a",
-            "status": "Certificate Valid and Chains to Common",
-            "pathbuilder-result": {
-                "result": "true",
-                "details": "CRL Only Validation"
-            },
-            "path-to-common": [
-                "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
-            ],
-            "sia-entries": {},
-            "aia-entries": {
-                "http://validation.identrust.com/roots/igcrootca1.p7c": [
-                    "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-                    "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US"
                 ]
             }
         },
@@ -4205,6 +4146,23 @@
             }
         },
         {
+            "subject": "common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos",
+            "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
+            "serial-number": "13298821034946342746366242524841902082",
+            "akid": "f8 f9 8b 2f 7f 90 43 9f 8f e6 8c 2c b5 49 b8 4f 92 8b 16 74",
+            "skid": "9d 8e 6c 06 63 9e fc 18 3b 50 2d d3 3b bb da 05 dd 8c a2 8a",
+            "status": "Certificate Invalid",
+            "pathbuilder-result": {
+                "result": "false",
+                "details": "End Entity Cert expired or not valid"
+            },
+            "parent_path_identifier": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US:f8f98b2f7f90439f8fe68c2cb549b84f928b1674",
+            "validity-dates": {
+                "not-before": "2016-11-16 17:16:47+00:00",
+                "not-after": "2026-11-16 17:16:47+00:00"
+            }
+        },
+        {
             "subject": "common_name:VA Patient Direct CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US",
             "issuer": "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "serial-number": "85078257804747722816450229701687880370",
@@ -4704,12 +4662,6 @@
             "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
             "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
             "common_name:IGC Device CA 2,organizational_unit_name:IdenTrust Global Common,organization_name:IdenTrust,country_name:US"
-        ],
-        [
-            "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:Federal Bridge CA G5,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
-            "common_name:IdenTrust Global Common Root CA 1,organization_name:IdenTrust,country_name:US",
-            "common_name:Leidos FBCA Cloud PKI CA-1,organization_name:Leidos"
         ],
         [
             "common_name:Federal Common Policy CA G2,organizational_unit_name:FPKI,organization_name:U.S. Government,country_name:US",
