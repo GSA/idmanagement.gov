@@ -21,8 +21,6 @@ subnav:
     href: '#approved-1302-cloud-topology-pacs-products'
   - text: PACS Readers
     href: '#pacs-readers'
-  - text: PACS Solutions Awaiting Approval
-    href: '#pacs-solutions-awaiting-approval'
   - text: Approved Products - PIV Smart Cards
     href: '#approved-products---piv-smart-cards'
   - text: Removed Product List
@@ -173,39 +171,6 @@ The Physical Access Control System (PACS) products listed under the â€œApprovedâ
 - [Veridt Series Readers]({{site.baseurl}}/docs/apl-10031-35-10092-96-10163-67-10186-87-10194-95-veridt.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [XTec X Series Readers]({{site.baseurl}}/docs/apl-10078-79-80-81-82-xtec.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
 - [WaveLynx Technologies Readers]({{site.baseurl}}/docs/apl-10168-69-70-71-72-73-wavelynx.pdf){:target="_blank"}{:rel="noopener noreferrer"}{:class="usa-link"}
-
-## PACS Solutions Awaiting Approval
-<!-- Start of PACS Solutions Awaiting Approval -->
-<table class="usa-table" aria-labelledby="pacs-caption">
-  <caption id="pacs-caption">
-    PACS Solutions Awaiting Approval List
-  </caption>
-  <thead>
-    <tr>
-      <th role="columnheader" aria-sort="ascending">Position</th>
-      <th role="columnheader">Solution</th>
-      <th role="columnheader">APL Numbers</th>
-      <th role="columnheader">New/Update</th>
-      <th role="columnheader">Testing Status</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% assign pacsawaitlist = site.data.fips201pacs-await-list | sort: "position" %}
-  {% for psaal in pacsawaitlist %}
-    <tr>
-      <th scope="row" role="rowheader" style="text-align: center;">{{ psaal.position }}</th>
-      <td>{{ psaal.solution }}</td>
-      <td>{{ psaal.aplnumbers }}</td>
-      <td>{{ psaal.state }}</td>
-      <td>{{ psaal.teststatus }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-<div class="usa-sr-only usa-table__announcement-region" aria-live="polite"></div>
-<!-- End of PACS Solutions Awaiting Approval -->
-
-Cycle 2 and 3 updates are moved to the front of the test queue once they are installed. While between cycles, solutions may not appear here.
 
 ## Approved Products - PIV Smart Cards
 

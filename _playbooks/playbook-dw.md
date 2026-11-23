@@ -117,7 +117,7 @@ This playbook is iterative, and agencies are encouraged to collaborate, share be
 
 This document uses the following key terms:
 
-- **Digital Worker ** - An automated, software-based tool, application, or agent that performs a business task or process similar to a human user and uses AI or other autonomous decision-making capabilities.[^1]
+- **Digital Worker ** - An automated, software-based tool, application, or agent that performs a business task or process similar to a human user and uses AI or other autonomous decision-making capabilities.<sup id="fnref:1"><a href="#fn:1" class="footnote" role="doc-noteref">1</a></sup>
 
 The list below includes the most common types of digital workers.
 
@@ -127,7 +127,7 @@ The list below includes the most common types of digital workers.
 
 ## Disclaimer
 
-The General Services Administration Office of Government-wide Policy developed this playbook with input from federal IT practitioners. This document should not be interpreted as official policy or mandated action, and it does not provide authoritative definitions for IT terms. Instead, this playbook supplements existing federal IT policies and builds on OMB Memorandum M-19-17[^2], Enabling Mission Delivery Through Improved Identity, Credential, and Access Management and existing federal identity guidance and playbooks. Subject areas with intersecting scope, such as the ethical use and development of digital workers, are considered only to the extent that they relate to digital identity management and credentialing for digital workers. Specific security control implementations are outside the scope of this playbook, as are any elements of data protection requirements and the suitability process for a digital worker sponsor and custodian.
+The General Services Administration Office of Government-wide Policy developed this playbook with input from federal IT practitioners. This document should not be interpreted as official policy or mandated action, and it does not provide authoritative definitions for IT terms. Instead, this playbook supplements existing federal IT policies and builds on OMB Memorandum M-19-17<sup id="fnref:2"><a href="#fn:2" class="footnote" role="doc-noteref">2</a></sup>, Enabling Mission Delivery Through Improved Identity, Credential, and Access Management and existing federal identity guidance and playbooks. Subject areas with intersecting scope, such as the ethical use and development of digital workers, are considered only to the extent that they relate to digital identity management and credentialing for digital workers. Specific security control implementations are outside the scope of this playbook, as are any elements of data protection requirements and the suitability process for a digital worker sponsor and custodian.
 
 ## A Four-Step Process for Digital Worker Identity Management 
 
@@ -141,7 +141,7 @@ The four-step process depicted in Figure 1 is a structured, iterative approach w
 
 - Create or expand the agency ICAM governance structure and policies for digital worker identity management oversight.
 - Score risk using the Digital Worker Impact Assessment.
-- Identify a digital worker adverse impact level.[^3]
+- Identify a digital worker adverse impact level.<sup id="fnref:3"><a href="#fn:3" class="footnote" role="doc-noteref">3</a></sup>
 
 The Digital Worker Impact Evaluation Matrix (Table 1) is a scoring tool. It uses six factors to score the risk of a digital worker’s scope and access. Agencies can use the risk score to determine an overall adverse impact level.
 
@@ -185,7 +185,7 @@ Risk impact requires calculation of a risk score across six factors, based on wo
 
 Each factor has an associated score, and the sum of these six-factor scores is the overall impact score. If multiple criteria within a factor apply to a digital worker, agencies should select the criterion with the highest score.
 
-**Table 1: Digital Worker Impact Evaluation Matrix** [^4] 
+**Table 1: Digital Worker Impact Evaluation Matrix** <sup id="fnref:4"><a href="#fn:4" class="footnote" role="doc-noteref">4</a></sup>
 
 Score each factor based on the most applicable scenario.
 
@@ -276,7 +276,7 @@ Agencies may adjust recertification frequency, but should meet or exceed the rec
 
 
 
-|  ID [^5] | Action    | Low | Moderate | High | Critical |
+|  ID <sup id="fnref:5"><a href="#fn:5" class="footnote" role="doc-noteref">5</a></sup> | Action    | Low | Moderate | High | Critical |
 | :---: | ----- | :---: | :---: | :---: | :---: |
 | SP-1 | Document a business need for the digital worker. | N/A | ✓ | ✓ | ✓ |
 | SP-2 | Assign an organizational sponsor for the digital worker. | N/A | ✓ | ✓ | ✓ Suggested CIO, CISO, or equivalent |
@@ -941,13 +941,25 @@ Table 17 presents the Impact Evaluation Matrix for this digital worker.
 
 This digital worker impact level is Low. The effect of an error or accident is minimal, resulting in negligible impacts. Thus, the digital worker does not require a unique identity. The impact level is documented and a reminder is set to reassess the impact level with any code change.
 
-## Footnotes
-
-{:role="list"}
-[^1]: Digital worker is not synonymous with non-person entity (NPE), as NPE encompasses all entities with a digital identity including organizations, hardware devices, software applications, and information artifacts.  
-[^2]: OMB Memorandum M-19-17 instructs federal agencies to designate an integrated agency-wide ICAM office, team, or other governance structure in support of its Enterprise Risk Management capability to effectively govern and enforce ICAM efforts.  
-[^3]: The adverse impact levels are grounded in NIST Special Publication 800-30, Guide for Conducting Risk Assessments, but do not align with it. Agencies can adjust the impact levels to match agency risk tolerance.  
-[^4]: For more information on the methodology used to develop the Digital Worker Evaluation Matrix, see Appendix A.
-[^5]: The ID number is specific to this playbook and does not map or correlate to requirements in other federal security publications.
+<div class="footnotes" role="doc-endnotes" aria-labelledby="footnotes">
+  <h2 id="footnotes">Footnotes</h2>
+  <ol>
+    <li id="fn:1" role="doc-endnotes">
+      <p>Digital worker is not synonymous with non-person entity (NPE), as NPE encompasses all entities with a digital identity including organizations, hardware devices, software applications, and information artifacts. <a href="#fnref:1" class="reversefootnote" role="doc-backlink" aria-label="Return to reference 1">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnotes">
+      <p>OMB Memorandum M-19-17 instructs federal agencies to designate an integrated agency-wide ICAM office, team, or other governance structure in support of its Enterprise Risk Management capability to effectively govern and enforce ICAM efforts. <a href="#fnref:2" class="reversefootnote" role="doc-backlink" aria-label="Return to reference 2">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnotes">
+      <p>The adverse impact levels are grounded in NIST Special Publication 800-30, Guide for Conducting Risk Assessments, but do not align with it. Agencies can adjust the impact levels to match agency risk tolerance. <a href="#fnref:3" class="reversefootnote" role="doc-backlink" aria-label="Return to reference 3">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnotes">
+      <p>For more information on the methodology used to develop the Digital Worker Evaluation Matrix, see Appendix A. <a href="#fnref:4" class="reversefootnote" role="doc-backlink" aria-label="Return to reference 4">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnotes">
+      <p>The ID number is specific to this playbook and does not map or correlate to requirements in other federal security publications. <a href="#fnref:5" class="reversefootnote" role="doc-backlink" aria-label="Return to reference 5">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 <!-- cjb 04.25.2025 -->
