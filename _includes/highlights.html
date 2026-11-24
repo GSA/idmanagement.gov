@@ -151,7 +151,7 @@ eight.
 				    </p>
 					<hr>
 					<style>
-						.panel-button {
+						.card-button {
 							border: 1px;
 							border-radius: 10px;
 							background-color: #005ea2;
@@ -166,6 +166,27 @@ eight.
 							margin: 10px;
 							font-weight:200;
 						}
+						.card-button:hover {
+							background-color: #006fbf;
+							font-weight:400;
+							color:#f8f9fa;
+						}
+						.panel-button {
+							border: 1px;
+							border-radius: 10px;
+							background-color: #005ea2;
+							color:#f8f9fa;
+							padding: 15px;
+							border-color: #a9aeb1;
+							align-items: center;      /* Keeps child vertically centered */
+							justify-content: center; 
+							text-decoration: none;
+							height: 75px;
+							vertical-align: middle;
+							box-shadow: 0 4px 3px rgba(151, 151, 151, 0.15);
+							margin: 10px;
+							font-weight:200;
+						}
 						.panel-button:hover {
 							background-color: #006fbf;
 							font-weight:400;
@@ -173,11 +194,11 @@ eight.
 						}
 					</style>
 					<p>
-						<a class="panel-button" style="display: block;text-align: center;text-decoration: none;" 
+						<a class="card-button" style="display: block;text-align: center;text-decoration: none;" 
 						href="{{site.baseurl}}/fips201ep/" aria-label="FIPS 201 evaluation program">FIPS 201 EP</a>
-						<a class="panel-button" style="display: block;text-align: center;text-decoration: none;" 
+						<a class="card-button" style="display: block;text-align: center;text-decoration: none;" 
 						href="{{site.baseurl}}/fips201/" aria-label="Approved product list" aria-label="FIPS 201 evaluation program">Approved product list</a>
-						<a class="panel-button" style="display: block;text-align: center;text-decoration: none;" 
+						<a class="card-button" style="display: block;text-align: center;text-decoration: none;" 
 						href="{{site.baseurl}}/fips201/#removed-product-list" aria-label="Approved product list" aria-label="FIPS 201 evaluation program">Removed product list</a>
 					</p>
 					</div>
