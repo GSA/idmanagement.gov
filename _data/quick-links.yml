@@ -37,42 +37,42 @@
 
 - text: FICAM Policy Matrix Map
   alt_text: FICAM Policy Matrix Map
-  url: "https:www.idmanagement.gov/university/policymap/"
+  url: "https//:www.idmanagement.gov/university/policymap/"
   open_in_new_window: true
   external_link: false
   class: panel-button
 
 - text: FPKI Graph
   alt_text: FPKI Graph
-  url: "https:www.idmanagement.gov/fpki/notifications/#fpki-graph"
+  url: "https//:www.idmanagement.gov/fpki/notifications/#fpki-graph"
   open_in_new_window: false
   external_link: false
   class: panel-button
 
 - text: Experiments
   alt_text: Experiments
-  url: "https:www.idmanagement.gov/experiments/"
+  url: "https//:www.idmanagement.gov/experiments/"
   open_in_new_window: false
   external_link: false
   class: panel-button
 
 - text: FPKI Announcements
   alt_text: FPKI Announcements
-  url: "https:www.idmanagement.gov/fpki/notifications/#fpki-announcements"
+  url: "https//:www.idmanagement.gov/fpki/notifications/#fpki-announcements"
   open_in_new_window: false
   external_link: false
   class: panel-button
 
 - text: FPKI Ecosystem Changes
   alt_text: FPKI Ecosystem Changes
-  url: "https:www.idmanagement.gov/fpki/notifications/"
+  url: "https//:www.idmanagement.gov/fpki/notifications/"
   open_in_new_window: false
   external_link: false
   class: panel-button
 
 - text: PIV Card Body Approval Procedures
   alt_text: PIV Card Body Approval Procedures
-  url: "https:www.idmanagement.gov/piv/approval-procedures/"
+  url: "https//:www.idmanagement.gov/piv/approval-procedures/"
   open_in_new_window: false
   external_link: false
   class: panel-button
