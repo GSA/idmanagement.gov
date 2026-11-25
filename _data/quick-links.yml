@@ -1,0 +1,81 @@
+# Name: Quick Links
+# File: quick-links.yml
+# quick-links.yml is used by the Quick Links section in _includes/highlights.html.
+# Entries display in the order listed here. Copy an entry to add a button;
+# the grid automatically wraps into 1 column on mobile, 2 on tablet, and 3 on desktop.
+#
+# Properties:
+#   Note: Aim for 20–40 characters or less for the text property, preferably fitting within
+#     two lines. This is a guideline, not a fixed limit; available space depends
+#     on screen width and letter widths, especially in the tablet layout.
+#
+#   text: Visible button label and mouseover tooltip. Use a short, descriptive name for the destination.
+#     Required; the template does not supply a default label.
+#   alt_text: Optional legacy field; currently unused. The button text supplies
+#     both aria-label and the mouseover tooltip.
+#   url: Link destination. Use a site path ("/example/"), a full external URL
+#     ("https://example.com/"), or a fragment ("#section-id"). The placeholder
+#     default is "#"; keep it quoted because an unquoted # starts a YAML comment.
+#     Required; the template uses this value as written, without adding a base URL.
+#   open_in_new_window: Unquoted true or false. Default entries use false,
+#     opening in the current tab. When true, requests a new tab/window (the browser
+#     decides which), adds rel="noopener noreferrer", and includes screen-reader
+#     text announcing that the link opens in a new window. Omitted means false.
+#   external_link: Unquoted true or false. Default entries use false. When true,
+#     displays a USWDS external-link icon in the lower-right corner with an
+#     "External website" tooltip on icon hover or link keyboard focus. The icon
+#     alt text is "text: url" and also describes the link for screen readers.
+#     This does not change the URL or open a new window; configure those separately.
+#     Omitted means false.
+#   class: Space-separated CSS classes applied to the link. Defaults to
+#     panel-button when omitted or empty. Keep panel-button when adding custom
+#     classes to retain the inline panel styling, for example:
+#     class: "panel-button my-custom-class"
+#     A nonempty value replaces the default class list; it does not append to it.
+## Quote text or URLs containing YAML special characters, such as # or a colon
+# followed by a space. Keep true/false values unquoted so they remain booleans.
+
+- text: FICAM Policy Matrix Map
+  alt_text: FICAM Policy Matrix Map
+  url: "/university/policymap/"
+  open_in_new_window: true
+  external_link: false
+  class: panel-button
+
+- text: FPKI Graph
+  alt_text: FPKI Graph
+  url: "/fpki/notifications/#fpki-graph"
+  open_in_new_window: false
+  external_link: false
+  class: panel-button
+
+- text: Experiments
+  alt_text: Experiments
+  url: "/experiments/"
+  open_in_new_window: false
+  external_link: false
+  class: panel-button
+
+- text: FPKI Announcements
+  alt_text: FPKI Announcements
+  url: "/fpki/notifications/#fpki-announcements"
+  open_in_new_window: false
+  external_link: false
+  class: panel-button
+
+- text: FPKI Ecosystem Changes
+  alt_text: FPKI Ecosystem Changes
+  url: "/fpki/notifications/"
+  open_in_new_window: false
+  external_link: false
+  class: panel-button
+
+- text: PIV Card Body Approval Procedures
+  alt_text: PIV Card Body Approval Procedures
+  url: "/piv/approval-procedures/"
+  open_in_new_window: false
+  external_link: false
+  class: panel-button
+
+
+
