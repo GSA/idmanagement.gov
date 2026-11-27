@@ -646,6 +646,15 @@
 
 - category: 13.01
   fipsstatus: Approved
+  infrastructure: MDI SAFEnet 6.216
+  infraurl: /docs/apl-10199-mdi-safenet.pdf
+  infraapl: 10199
+  validation: Identity One Validation System for MDI SAFEnet 6.216
+  valurl: /docs/apl-10200-identity-one-validation.pdf
+  valapl: 10200
+
+- category: 13.01
+  fipsstatus: Approved
   infrastructure: Motorola Avigilon UA7 v7.22.0.18 
   infraurl: /docs/apl-10201-motorola-avigilon.pdf
   infraapl: 10201
